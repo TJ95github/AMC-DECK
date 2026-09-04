@@ -5833,5 +5833,323 @@
    ]
   },
   "source": "COPD_Exacerbation_2_Case_Tasks_Script_Notability.pdf (Ken Ballard — infective exacerbation, action plan)"
+ },
+ {
+  "id": "MED-46",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice.",
+  "stem": [
+   "You are a general practitioner. Your next patient is Jenny, a 57-year-old woman, who has booked an urgent consultation after she coughed up blood. It happened while she was eating dinner.",
+   "Observations from the examiner on request."
+  ],
+  "tasks": [
+   "Take a history from the patient",
+   "Ask the examiner for the physical examination findings",
+   "Explain your diagnosis and your differentials to the patient"
+  ],
+  "time": "8 minutes. 45 s opening · ten history boxes · examination with ENT added · diagnosis with four reasons, then differentials.",
+  "back": {
+   "dx": "Pulmonary tuberculosis — two teaspoons (~10 mL) of bright red blood with a little phlegm, coughed not vomited, streaks once or twice before; 5 kg over one to two months, appetite down, tired, drenching night sweats, slight cough; missionary work in Cambodia 'to help sick people' (she will never say TB — ask what the work involved); never smoked, no asbestos, one pillow, no clots/thinners/rashes. Examination completely normal (vitals normal, no clubbing/nodes, ENT clear, chest clear) — 'a normal examination doesn't reassure me: early TB and a central lung cancer both examine normally'. Lung cancer must be named aloud (weight loss). Hidden agenda: her late husband died of lung cancer. Three lines that must be said: 'did you cough it up, or vomit it?' · 'any recent travel, contact with people who've been unwell — what did that work involve?' · 'I'm also concerned about the possibility of lung cancer'.",
+   "plan": [
+    [
+     "0:00",
+     "Vitals — RR and SpO2 first, then BP, pulse, temp; open question; the concern statement (safe hands, NOT 'I'm sure it's nothing'); 'please tell me it's not something awful' → 'I can't answer that yet, but I promise I'll tell you exactly what I think before you leave'"
+    ],
+    [
+     "0:45",
+     "The bleed: when, first time, colour, ★ volume with anchors (a few drops or a large amount?), mixed with phlegm; the event: doing what, ★ choking, nosebleed, ★ coughed or vomited"
+    ],
+    [
+     "1:45",
+     "Cancer block: weight → ★ over what period; appetite, lumps, tired, occupation now AND before, asbestos, cough/SOB/noisy breathing, previous cancer, Pancoast pair (hand numbness/weakness, drooping eyelid/pupil)"
+    ],
+    [
+     "2:45",
+     "Infection block: fever/chills, ★ night sweats, sore throat/runny nose/facial pain/PND, ★ travel, sick contacts, animals → ★ 'what did that work involved?' → join it up aloud: sick people in a TB-endemic country + 5 kg + sweats + haemoptysis"
+    ],
+    [
+     "3:45",
+     "Rapid pairs: smoking now/ever; childhood infections/daily phlegm (bronchiectasis); clot (legs, travel, FHx); heart failure (chest pain, exertion, pillows, ankles); blood thinners, bleeding tendency; rashes/joints/haematuria (vasculitis); chest injury; PMHx/meds/allergies/FHx"
+    ],
+    [
+     "5:00",
+     "Examination request incl. ★ ENT (nasal speculum, throat, posterior bleed, sinus tenderness), clubbing, cachexia, cervical/supraclavicular nodes, respiratory with VR, CVS, hepatomegaly, calves, ECG/spirometry → 'a normal examination doesn't reassure me'"
+    ],
+    [
+     "6:00",
+     "Diagnosis: TB with four reasons → ★ lung cancer named → differentials one line each with the reason against → answers (curable; airborne — mask today, public health contact tracing; cancer will be checked) → CXR, bloods, sputum ×3, CT → safety-net → 'any worries or questions?' → husband → summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Before I start, could I have her vital signs — respiratory rate and oxygen saturation first, and also blood pressure, pulse and temperature, since she is bleeding and infection is on my list.' → 'I can see how stressful and scary this must be. I'm going to ask you a few questions and examine you, and I'd like to reassure you that you are in safe hands — we'll work out what's causing this together.'",
+    "When exactly? First time? Bright red or darker? ★ How much — a small amount like a few drops, or a large amount? Mixed with phlegm? What were you doing exactly? ★ Any choking beforehand? Any bleeding from your nose? ★ Did you vomit any blood, or was it definitely coughed up?",
+    "★ Have you lost any weight lately? → 'How much, and over what period of time?' Appetite? Lumps or bumps? Unusually tired? What's your occupation now — and what did you do before that? Asbestos? Cough, breathlessness, noisy breathing? Ever had cancer? And two unusual ones — numbness or weakness in your hands, and a drooping eyelid or a difference in your pupils?",
+    "Fever or chills? ★ Night sweats — waking up drenched? Sore throat, runny nose, facial pain, secretions down the back of the throat? ★ Have you travelled anywhere recently? Contact with people who've been unwell, or with animals? → ★ 'Can I ask what that work involved?' → 'So you've been directly caring for unwell people in a country where tuberculosis is common, you've lost five kilos, you're getting night sweats, and now you've coughed up blood. Those four things together are important, and I'll come back to them.'",
+    "A few quick ones: ever smoked, now or in the past? Repeated chest infections as a child, phlegm most days? Leg swelling or pain, recent long travel, family clots? Chest pain, breathless on exertion or lying flat — how many pillows? Ankle swelling? Blood thinners? Bleeding disorders, bruising, nosebleeds? Rashes or joint pains? Blood in your urine? Chest injury? Other conditions, medicines, allergies, family?",
+    "★ Examiner: 'General appearance — distress, cyanosis, drowsiness, pallor; clubbing, cachexia, cervical or supraclavicular lymphadenopathy. Because bleeding from the nose or throat is on my list I'd like to add an ENT examination: on speculum examination of the nose, any source of bleeding; on examining the throat, any source of bleeding or visible posterior bleed; any sinus tenderness. Respiratory — symmetrical movements, tracheal position, percussion, breath sounds, added sounds, vocal resonance. Cardiovascular — JVP, apex, S1 S2, murmurs, gallop. Abdomen — swelling, tenderness, hepatomegaly. Lower limbs — calf size difference. ECG, and spirometry if available.' → ★ 'A completely normal examination doesn't reassure me here — early tuberculosis and a central lung cancer can both examine normally, so my diagnosis rests on the history and on imaging.'",
+    "★ 'Jenny, the most likely diagnosis is tuberculosis — a type of lung infection. Four reasons: contact with sick people in a country where TB is common; five kilos lost; night sweats; and coughing up blood. I also want to be honest that I'm concerned about the possibility of lung cancer, mainly because of the weight loss, so I'll check for that too — less likely than the infection, but I won't leave it unchecked.'",
+    "'Isn't TB a Victorian disease?' → still common in many parts of the world, we see it here, and it is curable. 'Will I give it to my grandchildren?' → spreads through the air — mask here today; if confirmed, the public health team will offer testing to people close to you; routine, to protect them. 'Is it cancer?' → 'one of the things I have to rule out, and I will — I'm not going to pretend it isn't on my list. But the picture fits an infection best.'"
+   ],
+   "pefe": [
+    "Findings: comfortable, not pale, no clubbing, no nodes · ENT no source of bleeding, no sinus tenderness · chest symmetrical, trachea central, resonant, normal breath sounds, no added sounds, VR normal · JVP not raised, apex undisplaced, dual heart sounds · abdomen soft, no hepatomegaly · calves equal · ECG sinus · spirometry unavailable · vitals RR 16, SpO2 97%, BP 128/78, P 84, T 37.1",
+    "Differentials to the patient with the reason against: bronchiectasis (no childhood infections) · COPD (never smoked) · heart failure (one pillow, no ankle swelling) · PE (no leg swelling, no recent travel) · nose/throat bleed (nothing found) · vasculitis/lupus (no rashes, joints, haematuria) · lung cancer stays ON the list",
+    "Plan today: CXR, FBE/UEC/LFT/CRP/coags, sputum ×3 for AFB smear, culture and NAAT, HIV test with consent, CT chest; mask/airborne precautions today; notifiable if confirmed — SA Health TB Services do contact tracing; safety-net — large volume or breathless → back immediately / 000; review as soon as results are back; Cancer Council SA 13 11 20 if the cancer path opens",
+    "Variant 1 — cancer switch (20/day since 17, hoarse six weeks, never left the country, clubbing + hard fixed left supraclavicular node): warning shot → 'the combination … makes me worried about a growth in the lung — a lung cancer. I don't know that yet' → CXR today, urgent CT, specialist referral, bring someone → questions; Cancer Council SA + lung cancer nurse consultant",
+    "Variant 2 — it was haematemesis (vomited, coffee-grounds with food, epigastric burning, daily ibuprofen, black stools): 'that changes the whole picture — bleeding in the stomach or upper bowel, most likely a peptic ulcer' → observations for shock, FBE/UEC/LFT/coags/group & hold, stop ibuprofen, PPI, urgent gastroscopy VERIFY",
+    "Variant 3 — massive haemoptysis (large volume into a bowl, RR 32, SpO2 88%, BP 92/58, P 124): STOP the history — call for help + ambulance, protect the airway, high-flow O2, two large-bore cannulae, bloods + cross-match, fluid/blood, bleeding side DOWN, reverse anticoagulation, urgent transfer for bronchoscopy or bronchial artery embolisation; rural → MedSTAR 1300 13 12 33 immediately VERIFY · Variant 4 — Pancoast (ulnar-side numbness and hand weakness, ptosis, months of shoulder ache): apex tumour invading lower brachial plexus (C8/T1) and sympathetic chain → Horner's (ptosis, miosis, anhidrosis — NOT 'facial asymmetry'); add Horner's check and C8/T1 upper-limb neuro; urgent CT and referral"
+   ],
+   "fails": [
+    "'I'm sure it's nothing serious' — false reassurance in a 57-year-old with haemoptysis ★",
+    "Never asking coughed vs vomited, or never asking what the Cambodia work involved ★",
+    "Never naming lung cancer aloud ★",
+    "Weight loss not given a time period; volume without the drops-or-large anchor; choking and nosebleed omitted",
+    "No ENT examination request; dropping cancer/clot/heart questions once TB is suspected",
+    "Naming TB and stopping — no reasons, no differentials with reasons against; no sputum ×3, mask, safety-net; never asking her worries (husband)"
+   ],
+   "numbers": [
+    "2 teaspoons ≈ 10 mL · 5 kg over 1–2 months · weight-loss red flag >5% body weight in 6–12 months · massive haemoptysis >100 mL/h or 200–600 mL/24 h, or any volume with compromise → bleeding side DOWN VERIFY",
+    "TB work-up: sputum ×3 AFB smear, culture, NAAT · CXR ± CT · HIV · N95/airborne isolation · notifiable · treatment 6 months: 2 months RHZE then 4 months RH + pyridoxine VERIFY",
+    "Haemoptysis differentials: TB · lung cancer · bronchiectasis · COPD/bronchitis · pneumonia/abscess · PE · heart failure/mitral stenosis · anticoagulation/bleeding disorder · vasculitis (GPA, Goodpasture) · ENT source · trauma",
+    "Pancoast: C8/T1 (ulnar hand) + Horner's = ptosis, miosis, anhidrosis · hoarseness = recurrent laryngeal nerve",
+    "NLCSP: 50–70, ≥30 pack-years, current or quit within 10 years, asymptomatic only — not for a symptomatic patient VERIFY",
+    "Cancer Council SA 13 11 20 · MedSTAR 1300 13 12 33 · SA Health TB Services · TIS 131 450"
+   ]
+  },
+  "source": "Haemoptysis_2_Case_Tasks_Script_Notability.pdf (Jenny Marsden — TB after missionary work; four variants on the back)"
+ },
+ {
+  "id": "MED-47",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Emergency Department. You are the HMO.",
+  "stem": [
+   "Your next patient is a 20-year-old woman with cough and shortness of breath. She developed flu-like symptoms three days ago and is now short of breath and feels feverish.",
+   "Her oxygen saturation is 92% on room air."
+  ],
+  "tasks": [
+   "Take a focused history",
+   "Ask the examiner for your physical examination findings",
+   "Request the investigations you would order",
+   "You are handed a chest X-ray — explain it to the patient",
+   "Explain the diagnosis and differential diagnoses to the patient"
+  ],
+  "time": "8 minutes. Opening + stability 0:50 · complaints to 2:20 · four boxes to 3:50 · examination + investigations to 6:20 · film (≤45 s), diagnosis, differentials, close.",
+  "back": {
+   "dx": "Community-acquired pneumonia, multilobar (right mid zone + smaller left basal patch), severity to be scored — Emily Novak, 20: cold Thursday, cough Saturday, breathless since yesterday, febrile 38.9, RR 26, HR 112, BP 112/68, SpO2 92%; green thick sputum 'a couple of tablespoons at a time', no blood, can lie flat, Panadol helped briefly. Three things NOT volunteered: right-sided pleuritic pain (only if asked) · vapes daily ('I don't smoke' first) · finals in two weeks (only if you ask her concerns). On the combined pill → complete the PE screen, then say aloud why PE is less likely once there is focal consolidation. Housemate had bad flu. PEFE: reduced expansion, dull, bronchial breathing + coarse crackles, INCREASED vocal resonance right mid zone, trachea midline. The task that fails people is investigations: nine relevant items in four headings with reasons (urea = CURB-65, albumin = SMART-COP) — not 'chest X-ray' and stop, and not twenty tests.",
+   "plan": [
+    [
+     "0:00",
+     "Intro; ★ stability statement — 'your oxygen is a little low: resus cubicle, oxygen, full observations'; vitals from the examiner → 'febrile, tachycardic, raised RR, BP maintained'; open question; empathy; 'is it serious?' → 'exactly what I'm going to find out — I'll tell you straight'"
+    ],
+    [
+     "0:50",
+     "Four complaints: cough and SOB — onset, constant, worse; air in vs tightness; rest vs exertion; lie flat; sputum C·C·C·V·O; fever measured, paracetamol response"
+    ],
+    [
+     "2:20",
+     "Box 1 upper airway: sore throat, blocked nose, facial pressure, ear pain/discharge, neck lumps. Box 2 lower: wheeze, haemoptysis, ★ sharp pain on breathing in, ★ calves, asthma ever. Box 3 atypical: diarrhoea/vomiting, headache/confusion, aches, travel/hotels/spas, sick contacts, birds/farm animals/potting mix. Box 4 risk: ★ smoke — or VAPE; alcohol; long-term conditions (asthma, diabetes, heart, kidney, liver); medications incl. steroids/immunosuppressants; ★ the pill; flu and COVID vaccines"
+    ],
+    [
+     "3:50",
+     "Closed examination questions in order (see PEFE) → 'dullness with bronchial breathing and increased vocal resonance over one zone is consolidation'"
+    ],
+    [
+     "4:45",
+     "★ Investigations — four headings, nine items, one breath (bedside · imaging · microbiology · bloods with the urea and albumin reasons); film handed mid-list → 'thank you — before I read this, may I finish my investigations?'"
+    ],
+    [
+     "6:20",
+     "Film in plain English ≤45 s (three colours, heart/spine/airway, normal left, grey shadow right = infection, smaller patch left base = pneumonia). 'Only old people?' → no; admission → won't guess, score severity first. Diagnosis: CAP with the bug groups; differentials in named groups incl. PE and why less likely, sepsis; plan (oxygen, tests, antibiotics after cultures, severity score); safety-net; ★ 'anything else worrying you?' → exams"
+    ]
+   ],
+   "planApprox": false,
+   "ask": [
+    "★ 'Good morning, I'm Dr —, one of the doctors in the Emergency Department. You're Emily, and you're 20? Before anything else I want to make sure you're safe. I'd like to move you into the resuscitation cubicle, put some oxygen on, and get a full set of observations. Then I'll ask some questions, look at your tests, and tell you what I think. Is that all right?' → 'Examiner — could I have the temperature, respiratory rate, pulse and blood pressure?'",
+    "Is it difficulty getting air in, or more a tightness? At rest, or only on moving? Can you lie flat? Dry, or bringing something up — colour, thickness, amount, any blood, any smell? Have you measured your temperature? Taken anything — did it bring it down?",
+    "Sore throat? Runny or blocked nose? Facial pressure? Ear pain or discharge? Lumps in your neck? Any noisy or wheezy breathing? Coughed up any blood? ★ Any sharp pain when you breathe in? ★ Any pain, swelling or tenderness in your calves? Ever had asthma or wheezed before?",
+    "Diarrhoea, nausea, vomiting? Bad headache, felt confused? Aching all over? Recent travel, hotels or spas? Anyone around you unwell? Contact with birds, farm animals, potting mix or compost? ★ Do you smoke — or vape? Alcohol? Long-term conditions — asthma, diabetes, heart, kidney, liver? Medications, including steroids or anything for your immune system? ★ Are you on the pill? Flu and COVID vaccinations up to date?",
+    "★ 'I asked about the pill and your calves because a clot on the lung can look like this.' (after the examination: 'the fever, the green phlegm and a clear patch of infection on the film fit pneumonia much better — I'll keep the clot in mind')",
+    "★ Examiner, closed questions: 'General appearance — respiratory distress? cyanosis? drowsy? dehydrated? ENT — throat redness, swelling, exudate? nasal discharge? ears — discharge, red or bulging drum? Chest — is expansion symmetrical? where is the trachea? is there dullness, and in which zone? are breath sounds vesicular or bronchial, any added sounds? is vocal resonance increased, normal or decreased? Cardiovascular — S1, S2, murmur? Abdomen — distension, tenderness, masses?'",
+    "★ 'At the bedside — full observations including respiratory rate, continuous pulse oximetry, bedside glucose, an ECG, and an arterial blood gas. Imaging — chest X-ray, PA and lateral. Microbiology — sputum Gram stain, culture and sensitivities; two sets of blood cultures before antibiotics; nasopharyngeal swab for respiratory viral PCR including influenza and COVID-19; urinary antigens for pneumococcus and Legionella. Bloods — full blood examination; urea, electrolytes and creatinine — the urea specifically because it is a CURB-65 item; liver function tests including albumin, a SMART-COP item; CRP as a baseline; and a lactate if I'm concerned about sepsis.'",
+    "'Let me show you. Bone is white, soft tissue grey, and air is black. This is your heart, this line your spine, this your main airway. On the left, the normal black lung and a sharp angle at the bottom. On the right, instead of black there's a grey shadow — where the air has been pushed out and replaced by infection. There's a smaller patch at the bottom of the left side too. That is pneumonia — an infection in the lung tissue itself.' → 'Isn't pneumonia only for old people?' → 'Commoner in older people, but healthy young adults get it — which is exactly why we treat it properly.' → 'Am I going to have to stay in? I've got finals' → 'Thank you for telling me — I'll factor it in. I won't guess: your oxygen is low and more than one part of the lung is involved, so once the gas and bloods are back I'll score the severity and give you a straight answer.'"
+   ],
+   "pefe": [
+    "Findings: mild respiratory distress, no cyanosis, alert, hydrated · T 38.9, RR 26, P 112, BP 112/68, SpO2 92% · ENT normal · reduced expansion right mid zone, trachea midline, dull right mid zone, bronchial breathing with coarse crackles right mid zone, increased vocal resonance right mid zone · heart sounds normal, abdomen soft",
+    "Diagnosis to the patient: 'a community-acquired pneumonia — an infection of the lung tissue picked up out in the community rather than in hospital; I can't yet tell you which bug: typical bacteria (pneumococcus, Haemophilus), atypical (Legionella, Mycoplasma), or a virus such as influenza or COVID-19' — attach a severity: to be scored (CURB-65/SMART-COP) before disposition",
+    "Differentials to the patient in groups: above the voice box — throat, tonsils, sinuses (had those first, don't explain low oxygen or the shadow) · in the lungs — asthma, collapsed lung, inhaled object, whooping cough, TB, abscess · circulation — clot on the lung (asked pill, calves, travel; fever + green phlegm + focal patch fit pneumonia better) · overall — sepsis (cultures and lactate). To the examiner, technical order: PE · sepsis · typical CAP · atypical (Legionella, Mycoplasma, Q fever, psittacosis) · viral LRTI · upper airway infection by site · asthma · pneumothorax · abscess/empyema · TB · pertussis · pulmonary oedema · malignancy with post-obstructive pneumonia in an older smoker",
+    "Plan: oxygen 92–96%, tests, empirical antibiotics after cultures (amoxicillin 1 g 8-hourly ± doxycycline for low severity; benzylpenicillin IV + doxycycline for moderate; ceftriaxone + azithromycin for high), severity score → home vs ward; review 48 h; repeat film 6 weeks; vaping — irritates the airway, revisit; safety-net — breathing worse, confused/drowsy, can't keep fluids down, fever won't settle → straight back VERIFY",
+    "Traps: promising she'll be fine; abandoning pneumonia for PE (or ignoring the pleuritic pain + pill); asking which came first (spend it on orthopnoea/exercise tolerance); radiology jargon at the patient; three minutes on the film"
+   ],
+   "fails": [
+    "'Chest X-ray' and stop — or treating the film's arrival as the end of the investigations task ★",
+    "Reciting every test you can name (thyroid, amylase, coags, 'septic screen just in case') ★",
+    "Open 'I'd examine the respiratory system' — no closed questions; omitting vocal resonance ★",
+    "No stability statement despite SpO2 92%; promising she'll be fine",
+    "Accepting 'I don't smoke' without the vaping question; not asking the pill/calves/pleuritic pain — or dropping pneumonia for PE",
+    "Ending on 'you have pneumonia' with no severity, disposition, safety-net; never asking her concern (exams)"
+   ],
+   "numbers": [
+    "CURB-65: confusion · urea >7 · RR ≥30 · BP <90 systolic or ≤60 diastolic · age ≥65 · SMART-COP: SBP <90 (2), multilobar (1), albumin <35 (1), RR ≥25/30 by age (1), tachycardia ≥125 (1), confusion (1), O2 low (2), pH <7.35 (2) → ≥3 = risk of needing intensive respiratory/vasopressor support VERIFY",
+    "Antibiotics (Australian): low severity amoxicillin 1 g PO 8-hourly × 5 days ± doxycycline 100 mg BD; moderate benzylpenicillin 1.2 g IV 6-hourly + doxycycline; high ceftriaxone 1 g IV daily + azithromycin 500 mg IV daily × 7 days; severe penicillin allergy moxifloxacin 400 mg IV daily · antibiotics within 1 h in septic shock · O2 92–96% · review 48 h · repeat CXR 6 weeks VERIFY",
+    "Consolidation signs: dull · bronchial breathing · coarse crackles · INCREASED vocal resonance (effusion: decreased) · trachea midline",
+    "Nine investigations, four headings: bedside (obs, oximetry, BGL, ECG, ABG) · imaging (CXR PA + lateral) · microbiology (sputum MC&S, blood cultures ×2 pre-antibiotic, respiratory viral PCR incl. influenza/COVID, urinary antigens pneumococcus + Legionella) · bloods (FBE, UEC — urea, LFT — albumin, CRP, lactate)",
+    "Atypical clues: diarrhoea/headache/confusion (Legionella), hotels/spas (Legionella), birds (psittacosis), farm animals (Q fever), potting mix (Legionella longbeachae), young adult dry cough (Mycoplasma)",
+    "Version B → MED-48 · Version C → MED-49 · TIS 131 450"
+   ]
+  },
+  "source": "Pneumonia_2_Case_Tasks_Script_Notability.pdf (Version A — Emily Novak, ED HMO, five tasks)"
+ },
+ {
+  "id": "MED-48",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Hospital ward. The patient's daughter is at the bedside; an antibiotic table is on the screen.",
+  "stem": [
+   "A 70-year-old man has been diagnosed with a high-severity community-acquired pneumonia. He is confused and disoriented. eGFR 50. Documented allergy to amoxicillin and penicillin.",
+   "His daughter is with him. An antibiotic table is displayed on the screen."
+  ],
+  "tasks": [
+   "Take a three-minute history (from the daughter)",
+   "Explain the condition and why it is high severity to the daughter",
+   "Explain your antibiotic choice"
+  ],
+  "time": "8 minutes. Consent and role check first · 3-minute collateral history · severity explained with the criteria he meets · the two allergy questions, then the antibiotic with dose, route and duration.",
+  "back": {
+   "dx": "High-severity CAP in a confused 70-year-old with renal impairment and a labelled penicillin allergy — the station is the ALLERGY HISTORY: 'what actually happened, and how soon after the dose?' A rash three days later = non-severe delayed reaction → ceftriaxone is safe (no shared side chain with amoxicillin): ceftriaxone 1 g IV daily + azithromycin 500 mg IV daily × 7 days, step down to oral when stable. Lip/tongue swelling within twenty minutes and an ambulance = anaphylaxis → avoid all beta-lactams → moxifloxacin 400 mg IV daily. Before anything: check she is his substitute decision-maker and has his consent to discuss. Severity: confusion, age ≥65, ± RR/BP/urea/O2/multilobar — name the criteria he meets.",
+   "plan": [
+    [
+     "0:00",
+     "Intro; ★ 'before we talk about your father — can I check you're his substitute decision-maker, and that you have his consent for me to discuss his condition with you?'; acknowledge her worry"
+    ],
+    [
+     "0:30",
+     "Collateral history (3 min): onset and course, cough/sputum/fever/breathlessness, when the confusion started and his baseline cognition, oral intake/urine output, comorbidities (heart, lung, kidney — eGFR 50, diabetes, immunosuppression), medications, smoking/alcohol, vaccinations, recent hospital/antibiotics, travel/animals/potting mix; ★ the allergy: what happened, how soon, how treated, any antibiotics since; advance care wishes"
+    ],
+    [
+     "3:30",
+     "Explain: pneumonia = infection in the lung tissue; 'high severity' = the scoring criteria he meets — confusion, age, breathing rate/oxygen/blood pressure/kidney function as applicable → why that matters: higher risk, needs IV antibiotics, monitoring, possible ICU; honest about the confusion being part of the illness"
+    ],
+    [
+     "5:30",
+     "Antibiotic choice reasoned aloud from the allergy history and the table: ceftriaxone + azithromycin (non-severe delayed rash) OR moxifloxacin (anaphylaxis); dose, route, duration; renal note (eGFR 50 — no ceftriaxone adjustment; check others); cultures before antibiotics; oral switch when stable"
+    ],
+    [
+     "7:00",
+     "Supportive care (oxygen, fluids, monitoring, ICU threshold), what to expect, updates, questions, summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before we talk about your father — can I check you're his substitute decision-maker, and that you have his consent for me to discuss his condition with you?'",
+    "'When did he first become unwell? What has the cough been like — is he bringing anything up, what colour? Fevers, shivers? How is his breathing compared to normal? When did you first notice him confused — and what is he normally like: does he manage at home, remember things, recognise people?'",
+    "'Is he eating and drinking? Passing urine as usual? Any other conditions — heart, lungs, kidneys, diabetes? What medications does he take? Does he smoke or drink? Has he had his flu and pneumonia vaccines? Any recent hospital stays or antibiotics? Any travel, birds, animals, gardening with potting mix?'",
+    "★ 'His notes say he's allergic to penicillin. What actually happened when he took it — a rash, an upset tummy, or swelling of the lips or face, wheezing, collapse? And how soon after the dose — within an hour or two, or days later?'",
+    "'Your father has a pneumonia — an infection in the lung tissue itself. We call it high severity because of the things we score: he's confused, he's over 65, and his breathing/oxygen/blood pressure/kidney results add to that. High severity means a higher risk of the infection spreading to the blood, and that he needs antibiotics through a drip, close monitoring, and possibly the intensive care team if he worsens. The confusion is part of the illness and usually settles as the infection is treated.'",
+    "★ 'That was a rash, three days later — a non-severe delayed reaction. That means I can safely use ceftriaxone: it shares no side chain with amoxicillin. I'd give ceftriaxone 1 gram intravenously daily plus azithromycin 500 milligrams intravenously daily, for seven days, switching to tablets once he's stable.'",
+    "★ 'If instead he'd had swelling and collapse — anaphylaxis — I would avoid all penicillin-type drugs and use moxifloxacin 400 milligrams intravenously daily.'",
+    "'Alongside that: oxygen, fluids through the drip, blood cultures before the first dose, a chest X-ray and bloods, regular observations, and a low threshold to involve intensive care. I'll keep you updated. What questions do you have?'"
+   ],
+   "pefe": [
+    "No examination task; the stem gives the severity label — your job is to justify it with named criteria (CURB-65 ≥3 / SMART-COP ≥3) from the information available and ask for anything missing (RR, BP, SpO2, urea, CXR extent)",
+    "Antibiotic table logic: high-severity CAP = ceftriaxone 1 g IV daily (or benzylpenicillin 1.2 g IV 6-hourly if no allergy) + azithromycin 500 mg IV daily; non-severe delayed penicillin reaction → cephalosporin acceptable; immediate/severe (anaphylaxis, SJS/TEN, DRESS) → no beta-lactams → moxifloxacin 400 mg IV daily; tropical/immunocompromised → add cover per guidelines VERIFY",
+    "eGFR 50: ceftriaxone no adjustment; azithromycin no adjustment; moxifloxacin no adjustment; avoid nephrotoxins, monitor fluids and renal function; dose-adjust if gentamicin ever considered VERIFY",
+    "Supportive: O2 92–96%, IV fluids for hypotension/poor intake, VTE prophylaxis, delirium care (orientation, family presence, avoid sedatives), ICU criteria (SMART-COP ≥5, septic shock, respiratory failure) VERIFY",
+    "SA: ID/respiratory consult; MedSTAR 1300 13 12 33 if in a country hospital and ICU-level care may be needed; TIS 131 450"
+   ],
+   "fails": [
+    "Prescribing before asking what actually happened with the penicillin and when ★",
+    "Discussing him with the daughter without checking her role and his consent ★",
+    "Choosing a beta-lactam after an anaphylaxis history — or refusing ceftriaxone after a mild delayed rash ★",
+    "Antibiotic without dose, route, duration; no cultures before antibiotics; no oral switch plan",
+    "'High severity' without naming the criteria he meets; not explaining the confusion",
+    "History overrunning three minutes; no supportive care; no ICU threshold; no update plan"
+   ],
+   "numbers": [
+    "CURB-65: Confusion · Urea >7 · RR ≥30 · BP <90/≤60 · age ≥65 → ≥3 high severity · SMART-COP ≥3 VERIFY",
+    "Ceftriaxone 1 g IV daily + azithromycin 500 mg IV daily × 7 days · moxifloxacin 400 mg IV daily (severe allergy) · benzylpenicillin 1.2 g IV 6-hourly + doxycycline if no allergy (moderate) VERIFY",
+    "Allergy history: reaction type (rash / GI / angioedema / wheeze / collapse / SJS) · timing (immediate <1–2 h vs delayed days) · treatment needed · tolerated any beta-lactam since · cross-reactivity amoxicillin–cephalosporin driven by side chains; ceftriaxone shares none with amoxicillin VERIFY",
+    "eGFR 50 = CKD 3a — no adjustment for ceftriaxone/azithromycin/moxifloxacin; caution with NSAIDs, gentamicin",
+    "Substitute decision-maker in SA: Advance Care Directive appointee, guardian, or 'person responsible' hierarchy under the Consent to Medical Treatment and Palliative Care Act 1995 VERIFY",
+    "Antibiotics within 1 h in septic shock · review 48 h · CXR repeat 6 weeks · TIS 131 450"
+   ]
+  },
+  "source": "Pneumonia_2_Case_Tasks_Script_Notability.pdf (Version B — high-severity CAP, penicillin allergy, antibiotic table, daughter)"
+ },
+ {
+  "id": "MED-49",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Hospital ward. The patient's son is present.",
+  "stem": [
+   "A 70-year-old man has been admitted with a cough productive of green sputum. His advance care directive requests all treatment, irrespective of outcome. Low blood pressure, low saturation, high temperature, raised respiratory rate.",
+   "Examination: left lower zone dullness, crepitations, reduced expansion. His son is present."
+  ],
+  "tasks": [
+   "Explain the diagnosis, with reasons, to the son",
+   "Advise the immediate and short-term management"
+  ],
+  "time": "8 minutes. Consent and role check · read the directive aloud · diagnosis with reasons (symptoms + observations + signs) · immediate resuscitation-level management · short-term antibiotics and escalation plan. Do NOT offer palliative care — the near-identical recall with a not-for-resuscitation directive is a different station.",
+  "back": {
+   "dx": "Severe community-acquired pneumonia with sepsis (hypotension, hypoxia, fever, tachypnoea; left lower lobe consolidation) in a 70-year-old whose advance care directive requests ALL treatment. The marked behaviour: read the directive aloud and say you will follow it; then immediate management at resuscitation level — resus area, monitoring, IV fluids for the low BP, high-flow oxygen, blood cultures then empirical IV antibiotics without waiting, CXR, ABG, UEC, CRP, lactate; short-term — ceftriaxone + azithromycin IV 7 days with oral switch, ICU if deteriorates, intubation and ventilation within what he has asked for; regular updates to the son. The failure this version tests: offering palliative care.",
+   "plan": [
+    [
+     "0:00",
+     "Intro; ★ check the son's role/consent; acknowledge; ★ 'I have read your father's advance care directive, and I can see he has asked for all treatment that may help him. We will be following that.'"
+    ],
+    [
+     "1:00",
+     "Diagnosis with reasons: green phlegm + fever + fast breathing (the story) · low BP, low oxygen, high temp, raised RR (the observations = severe, infection affecting the whole body — sepsis) · dull, crackles, reduced movement at the left lower lung (the examination = infection in that part of the lung) → 'a severe pneumonia of the left lower lung, with the infection affecting his circulation'"
+    ],
+    [
+     "3:00",
+     "Immediate (say it as happening now): resuscitation area, continuous monitoring; IV access ×2; IV fluids for the low pressure (bolus, reassess); high-flow oxygen for the low saturation; blood cultures ×2 then IV antibiotics straight away — empirical; CXR, ABG, FBE, UEC, LFT, CRP, lactate, glucose, sputum, viral PCR, urinary antigens; catheter/urine output; senior + ICU notified"
+    ],
+    [
+     "5:30",
+     "Short-term: ceftriaxone + azithromycin IV 7 days → oral when stable; reassess response at 48 h; ICU if deteriorates — non-invasive or invasive ventilation, vasopressors — 'within what he has asked for'; VTE prophylaxis, delirium care, nutrition, physio; repeat CXR 6 weeks"
+    ],
+    [
+     "7:00",
+     "Communication: regular updates, involve him in decisions, name the ward/team contact; 'is there anything else I can do to support you?'; summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Before we talk about your father, can I check that you're the person he'd want me to speak with, and that you're comfortable for me to discuss his condition with you?'",
+    "★ 'I have read your father's advance care directive, and I can see he has asked for all treatment that may help him. We will be following that.'",
+    "'Your father has a pneumonia — an infection in the lung tissue. Three reasons: the story — green phlegm, fever and fast breathing; the examination — the lower part of his left lung is dull to tap, crackly to listen to and moving less, which is where the infection sits; and his observations — his blood pressure and oxygen are low and his temperature and breathing rate are high, which tells me the infection is affecting his whole body. That combination makes it a severe pneumonia.'",
+    "★ 'Right now: he goes to the resuscitation area with continuous monitoring. His blood pressure is low, so intravenous fluids. His oxygen is low, so high-flow oxygen. We take blood cultures and then start strong antibiotics into the vein without waiting for results — that's called empirical treatment. And we take a chest X-ray, a blood gas, kidney tests, inflammatory markers and a lactate.'",
+    "★ 'Ceftriaxone and azithromycin into the vein for seven days, switching to tablets once he's stable. If he deteriorates we would move him to intensive care; if his breathing becomes too laboured to sustain we may place a tube in his airway and support his breathing with a machine — and that is within what he has asked for.'",
+    "'I'll keep you in the loop with regular updates and involve you in decisions. Is there anything else I can do to support you?'",
+    "'Is he going to be alright?' → 'He is seriously unwell, and I won't pretend otherwise. Severe pneumonia at his age carries real risk. But we're treating it fully and quickly, exactly as he asked, and many people in his position do recover. I'll tell you straight as things change.'",
+    "Summary: severe left lower lobe pneumonia with sepsis; fluids, oxygen, cultures then IV antibiotics now; ceftriaxone + azithromycin for a week; intensive care and breathing support if needed, in line with his directive; regular updates"
+   ],
+   "pefe": [
+    "Findings are in the stem: hypotension, hypoxia, fever, tachypnoea; left lower zone dullness, crepitations, reduced expansion. Ask for the numbers if not given (BP, SpO2, RR, T, HR, confusion, urine output) to justify severity",
+    "Sepsis bundle: cultures before antibiotics; antibiotics within 1 h; 30 mL/kg crystalloid for hypotension/lactate ≥4 with reassessment; lactate; oxygen; urine output; vasopressors for MAP <65 after fluids (ICU) VERIFY",
+    "Antibiotics: high-severity CAP — ceftriaxone 1 g IV daily + azithromycin 500 mg IV daily (or benzylpenicillin 1.2 g IV 6-hourly + azithromycin) × 7 days; tropical/aspiration/immunocompromised modifications per guidelines VERIFY",
+    "Escalation consistent with the directive: NIV/HFNC, intubation and ventilation, vasopressors, renal support if needed; ICU consult early; document the directive; goals of care reviewed with the treating team AND family but treatment not withheld",
+    "SA: Advance Care Directives Act 2013 — a binding directive requesting treatment guides but does not compel futile treatment; treating team decides clinically appropriate care in line with wishes VERIFY; MedSTAR 1300 13 12 33 for ICU retrieval from a country site; TIS 131 450"
+   ],
+   "fails": [
+    "Offering palliative care / comfort measures in a man whose directive requests all treatment ★",
+    "Not reading or acknowledging the directive aloud ★",
+    "Delaying antibiotics for results; antibiotics before cultures; no IV fluids for hypotension; no oxygen for hypoxia ★",
+    "Diagnosis without the three reasons (story, examination, observations); not naming sepsis/severity",
+    "No ICU/escalation plan; no mention that ventilation is within his wishes",
+    "Not checking the son's role/consent; jargon (empirical, consolidation) untranslated; no update plan"
+   ],
+   "numbers": [
+    "Sepsis: SBP <90 / MAP <65 · lactate ≥2 (≥4 severe) · RR ≥22 · altered mentation (qSOFA) · fluids 30 mL/kg crystalloid then reassess · antibiotics within 1 h VERIFY",
+    "Ceftriaxone 1 g IV daily + azithromycin 500 mg IV daily × 7 days → oral (amoxicillin/doxycycline) when stable · moxifloxacin 400 mg IV daily if severe beta-lactam allergy VERIFY",
+    "CURB-65 here: RR ≥30?, BP <90/≤60 ✓, age ≥65 ✓, ± confusion, ± urea · SMART-COP: SBP <90 (2), O2 low (2), RR (1), multilobar? → ≥5 = ICU consideration VERIFY",
+    "Immediate list: resus area · monitoring · 2× IV · fluids · high-flow O2 (target 92–96%) · cultures ×2 · empirical IV antibiotics · CXR · ABG · FBE/UEC/LFT/CRP/lactate/glucose · sputum · viral PCR · urinary antigens · catheter",
+    "Advance care directive requesting all treatment → follow it; do NOT offer palliation (that is the NFR variant) · O2 92–96% · review 48 h · CXR 6 weeks",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Pneumonia_2_Case_Tasks_Script_Notability.pdf (Version C — severe CAP with sepsis, advance care directive requesting all treatment, son)"
  }
 ]
