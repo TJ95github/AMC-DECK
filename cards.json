@@ -4732,5 +4732,324 @@
    ]
   },
   "source": "Dyspnoea_Case_Logic_2_Case_Tasks_Script_Notability.pdf (variant scripts — pleural effusion case, Version 1 heart failure / Version 2 lung cancer)"
+ },
+ {
+  "id": "MED-32",
+  "cat": "med",
+  "promptAt": 360,
+  "setting": "General practice, rural town.",
+  "stem": [
+   "Robert Hale, 60, a farmer in rural Queensland, presents with shortness of breath. He had a myocardial infarction one year ago treated with thrombolysis, and has had no GP follow-up since.",
+   "Vitals: BP 140/90 · PR 96 · RR 14 · T 36.5 °C · SpO2 99% room air."
+  ],
+  "tasks": [
+   "Take a focused history",
+   "Ask the examiner for the examination findings",
+   "Explain your most likely diagnosis and differentials to the patient"
+  ],
+  "time": "8 minutes. History 6 min online / 4 min face-to-face · leave 2 minutes for task 3.",
+  "back": {
+   "dx": "Congestive heart failure from ischaemic cardiomyopathy — six months of progressive exertional air hunger ('can't get enough air in', NOT tight like the heart attack), stops halfway up the paddock, not at rest unless overdone; orthopnoea on THREE pillows, PND, both ankles swell by evening; no chest pain/palpitations/dizziness; no cough/wheeze/haemoptysis/weight loss. The clue in the stem: thrombolysed MI a year ago at the base hospital — RAN OUT of tablets three or four months in, no script since, no GP (three-hour round trip). Wheat farm + a few hundred cattle, asbestos in the old sheds, never had the Q fever vaccine; 30 pack-years, quit after the MI; father MI at 62. PEFE: JVP >3 cm, displaced apex, parasternal heave, S3 gallop, bibasal creps, hepatomegaly + positive hepatojugular reflux, bilateral pitting oedema to mid-shin. The station turns on 'I was also thinking about…' said once per differential, after you already know it's heart failure. Hidden agenda: can he keep working the farm; guilt about the tablets.",
+   "plan": [
+    [
+     "0:00",
+     "Vitals from the examiner; sit; 'how can I help?'; the fixed acknowledgement line"
+    ],
+    [
+     "0:40",
+     "★ 'Is it more a tightness in your chest, or difficulty getting the air in?' → then how long, constant, worse, better/worse, walk distance then vs now → ★ 'breathless at rest as well?' → cough, wheeze, phlegm"
+    ],
+    [
+     "2:00",
+     "★ The MI: when, treatment then, medications NOW, taking them every day, GP check-ups → thank him, normalise. Then IHD questions (chest pain on exertion, racing, dizzy, blackouts) AND heart failure questions (lying flat, pillows, wake gasping, ankle swelling)"
+    ],
+    [
+     "3:30",
+     "Cancer block anyway: weight, appetite, lumps, sweats, haemoptysis, previous cancer. Occupation: hay/grain/birds, asbestos, cattle/sheep/goats + Q fever vaccine; childhood infections; fever/travel/TB; smoke or did; joints/rash; tired/bleeding; PMHx, allergies, FHx"
+    ],
+    [
+     "4:00/6:00",
+     "'Given the history I'd like to start with the cardiovascular examination' → appearance → JVP → apex, heave → heart sounds, murmurs, gallop/S3 → respiratory (movement, percussion, breath sounds, added, VR) → abdomen (hepatomegaly, hepatojugular reflux) → legs — 'is the oedema pitting?' → ECG + spirometry"
+    ],
+    [
+     "6:00",
+     "Diagnosis in plain words + THREE reasons → 'sounds like the heart's about to stop' → reframe → 'should I have come sooner?' → no blame, fix the follow-up → 'I was also thinking about…' × 8+ → summary to examiner"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Before I begin, could I have the vital signs — blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation? → 'Thank you for coming in to get this assessed today, Robert. I understand this is worrying for you. Let me ask you some questions and examine you, and we'll find the cause together — is that alright?'",
+    "★ Tell me about the breathlessness. First of all — is it more a tightness in your chest, or is it difficulty getting the air in?",
+    "How long have you had it? All the time or comes and goes? Getting worse? What makes it worse and better? How far could you walk six months ago, and how far now? ★ And are you short of breath when you're resting as well? Any cough, wheeze or noisy breathing, any phlegm — what colour?",
+    "★ Can I ask about your heart attack? When did you have it? What treatment did you have at the time? What medications are you on for it now? Are you managing to take them every day? Have you been having regular check-ups with a GP? → 'Thank you for being straight with me — that's more common than you'd think'",
+    "Since the heart attack — chest pain with the breathlessness, especially on exertion? Racing of the heart? Dizziness or blackouts? Is the breathlessness worse when you lie down — how many pillows? Wake in the night gasping? Swelling in your legs or ankles?",
+    "★ Lost weight without trying? Appetite? Lumps or bumps? Night sweats? Have you coughed up any blood? Ever had cancer of any kind?",
+    "What's your occupation? Work with hay, grain or birds? Ever exposed to asbestos? Contact with cattle, sheep or goats — and have you had the Q fever vaccination? Chest infections as a child? Fevers or chills? Travel or TB contact? Smoke, or did you? Joint pains or rashes? Tiredness, bleeding? Other conditions — BP, diabetes, kidneys? Allergies? Family?",
+    "'Given the history, I'd like to start with the cardiovascular examination. General appearance — respiratory distress, cyanosed, drowsy? Inspection — is the JVP raised? Palpation — apex beat displaced? Parasternal heave? Auscultation — first and second heart sounds normal, any murmurs, gallop rhythm or third heart sound? Respiratory — symmetrical movements, percussion, breath sounds and added sounds, vocal resonance? Abdomen — tenderness, hepatomegaly, positive hepatojugular reflux? Lower limbs — oedema, and is it pitting? And two office tests: ECG and spirometry.'"
+   ],
+   "pefe": [
+    "Findings: no distress, not cyanosed, alert · JVP raised >3 cm · apex displaced · parasternal heave · HS normal, no murmurs, gallop with S3 · movements symmetrical, percussion normal, bibasal crepitations, VR normal · hepatomegaly, positive hepatojugular reflux · bilateral pitting oedema to mid-shin · ECG and spirometry requested",
+    "Traps: examining the lungs in detail and the heart briefly · asking leg-size difference (a DVT question — here it's pitting and bilateral) · findings on a printed card → read silently, 'thank you, I've noted the findings', don't narrate",
+    "Diagnosis: 'most likely you have a condition called heart failure. After a heart attack the muscle of the heart is damaged, and the heart doesn't pump blood around the body properly. The reasons: your breathlessness has a very particular pattern — worse lying flat, three pillows; swelling in both legs; and on examination raised pressure in the vein in your neck, an extra heart sound, crackles at the bases of your lungs, an enlarged liver and fluid in your legs'",
+    "'Sounds like the heart's about to stop' → 'I'm glad you said that, because it's a bad name for it. It doesn't mean your heart is about to stop — it isn't pumping as strongly as it should, and there are very good treatments that make people feel better and live longer. Part of why this has happened is you've been without your heart tablets for most of the year, and that's something we can put right' · 'Should I have come sooner?' → 'You've come in now, and that's what matters. I'm not here to give you a hard time about the distance'",
+    "'I was also thinking about…' ischaemic heart disease again (no chest pain/racing — still checking) · rhythm problem · valve problem · lung cancer (smoked; no weight loss/haemoptysis) · COPD and asthma (no wheeze) · hypersensitivity pneumonitis from grain and hay dust · lung scarring · bronchiectasis · infections — pneumonia, Q fever from the cattle, TB · anaemia. Forgot to ask about something (sarcoidosis)? Name it anyway — don't re-take the history",
+    "Summary to examiner: 60-year-old farmer, six months progressive exertional dyspnoea, orthopnoea on three pillows, PND, bilateral ankle oedema, one year post thrombolysed MI with no secondary prevention or follow-up; signs of biventricular failure; CHF from ischaemic cardiomyopathy, recurrent IHD second; ECG, echo, CXR, spirometry, FBE/UEC/glucose/lipids/TFT; restart secondary prevention + guideline HF therapy; cardiac rehab, HF service, telehealth cardiology; Q fever vaccination discussion · SA equivalents: Country Health Connect, PATS, MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "Not asking tightness vs difficulty getting air in ★",
+    "Not exploring the MI — when, treatment then, treatment now, compliance, follow-up ★",
+    "Not asking about haemoptysis ★",
+    "Fewer than six further differentials — stopping after 'heart failure' ★",
+    "Hearing 'better with rest' and not asking about breathlessness at rest; skipping the cancer block because the picture is complete",
+    "Examining lungs in detail and heart briefly; not asking pitting; judgemental about the tablets or the distance ('it's not as simple as that from where I live'); untranslated jargon; no ECG"
+   ],
+   "numbers": [
+    "Vitals BP 140/90 · PR 96 · RR 14 · T 36.5 · SpO2 99% — a normal saturation does not exclude heart failure · JVP abnormal >3 cm above the sternal angle · three pillows · six months progressive · 30 pack-years",
+    "Definitive test: echocardiogram · four pillars of HFrEF: ACE inhibitor or ARNI · beta-blocker (bisoprolol, carvedilol, metoprolol CR, nebivolol) · MRA · SGLT2 inhibitor · frusemide relieves congestion but does not change prognosis VERIFY",
+    "Action plan: >2 kg gain in 2 days → call · fluid restriction ~1.5 L/day if congested · daily weights",
+    "Rural exposures to name: hypersensitivity pneumonitis (grain, hay, birds) · Q fever (cattle, sheep, goats; vaccine Q-VAX) · asbestos in old sheds · history and differentials are separately scored",
+    "Variant 2 — he admits stopping the tablets: 'that's far more common than people admit, and it isn't a telling-off. What got in the way — cost, the trip, side effects, or just life? … longer script, a pharmacy that can post them, telehealth review so you're not driving three hours for five minutes'",
+    "Variant 3 — 'Am I going to be able to keep working the place?' → can't promise today; most people with treated heart failure keep doing a great deal — treatment usually improves what you can do; tests and medication first, then work out the farm together; 'what do you drive, and how far?' (fitness to drive VERIFY)",
+    "Variant 4 — printed card: read silently, 'thank you, I've noted the findings', straight to diagnosis · MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf (Version A — Robert Hale, post-MI farmer)"
+ },
+ {
+  "id": "MED-33",
+  "cat": "med",
+  "promptAt": 360,
+  "setting": "General practice (online format). Stem reconstructed from the variant section — the notes give the findings and the shape of the case, not a verbatim door stem.",
+  "stem": [
+   "A 70-year-old man with a history of hypertension presents with shortness of breath, some chest heaviness, and ankle swelling.",
+   "Examination findings (given when requested): bilateral ankle oedema, tachycardia, a murmur. Nothing else."
+  ],
+  "tasks": [
+   "Take a focused history",
+   "Ask the examiner for the examination findings",
+   "Explain your most likely diagnosis and differentials to the patient, and your investigations to the examiner"
+  ],
+  "time": "8 minutes. Same spine as MED-32; the difference is that the findings do NOT settle the diagnosis, so the explanation must stay honestly broad.",
+  "back": {
+   "dx": "The vague version — cardiovascular disease, cause not yet determinable: chest heaviness in a 70-year-old hypertensive with bilateral oedema, tachycardia and a murmur could be ischaemic heart disease, heart failure, a cardiomyopathy, a valve lesion, or an arrhythmia ('your heart is running fast today'). The mark is for saying 'I don't have enough yet to tell you which, and I'd rather test than guess' — then the lung list with lung cancer at the top, then a targeted investigation set to the examiner. Same history structure as MED-32: tightness vs air hunger, rest breathlessness, IHD and HF questions, cancer block, exposures, smoking.",
+   "plan": [
+    [
+     "0:00",
+     "Vitals; intro; acknowledge; 'tightness or difficulty getting air in?' — here there IS heaviness, so run the ACS questions properly (exertional, radiation, sweating, nausea, duration, at rest)"
+    ],
+    [
+     "1:30",
+     "Timing, course, exertion tolerance, at rest; cough/wheeze/phlegm; HF questions (pillows, PND, oedema); rhythm (racing, dizziness, blackouts); hypertension — how long, treated with what, controlled, compliance, checks"
+    ],
+    [
+     "3:30",
+     "Cancer block, haemoptysis; occupation/exposures; infection/TB; smoking; PMHx incl. diabetes/kidneys; FHx; concerns"
+    ],
+    [
+     "6:00",
+     "CVS examination first by name (JVP, apex, heave, sounds, murmur — where, systolic/diastolic, radiation, gallop), respiratory, abdomen, legs — pitting? → ECG"
+    ],
+    [
+     "6:45",
+     "Diagnosis honestly broad: 'a problem with your heart — cardiovascular disease. Within that it could be…' → lung list → investigations to the examiner → summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Before I begin, could I have the vital signs? → 'Thank you for coming in to get this assessed today. Let me ask some questions and examine you, and we'll find the cause together'",
+    "★ Is it more a tightness in your chest, or difficulty getting the air in? → the heaviness: where, brought on by exertion, travel to arm/jaw, sweating or nausea with it, how long each time, ever at rest?",
+    "How long? Constant? Worse? Walk distance then vs now? ★ Breathless at rest as well? Cough, wheeze, phlegm? Lying flat — pillows? Waking gasping? Ankle swelling — both? Racing heart, dizziness, blackouts?",
+    "Your blood pressure — how long have you had it, what tablets, taking them every day, is it checked, any kidney trouble or diabetes?",
+    "★ Weight loss, appetite, lumps, night sweats, coughed up blood, previous cancer? Occupation, dusts, asbestos, animals? Fevers, travel, TB? Smoke, or did you? Family?",
+    "'Given the history, I'd like to start with the cardiovascular examination — appearance, JVP, apex, heave, heart sounds, any murmur and where it is loudest, whether systolic or diastolic and where it radiates, any gallop; then respiratory, abdomen, and lower limbs — is the oedema pitting and bilateral? And an ECG.'",
+    "'The most likely cause of your breathlessness is a problem with your heart — cardiovascular disease. Within that it could be narrowing of the heart's arteries, it could be heart failure, it could be a problem with the heart muscle, or a rhythm disturbance — your heart is running fast today. I don't have enough yet to tell you which, and I'd rather test than guess. I was also thinking about the lungs: lung cancer at the top of that list, then COPD, asthma, bronchiectasis and scarring of the lungs.'",
+    "To the examiner: 'An ECG, because this could still be ischaemic heart disease; an echocardiogram to assess for heart failure and the murmur; 24-hour ambulatory blood pressure monitoring given his long-standing hypertension; a chest X-ray, which may show cardiomegaly or an effusion as well as screening the lungs; spirometry; and a full blood examination for anaemia.'"
+   ],
+   "pefe": [
+    "Findings: bilateral ankle oedema · tachycardia · a murmur · nothing else — do not invent JVP, S3 or crepitations that weren't given",
+    "Murmur questions to ask the examiner: site, timing (systolic/diastolic), radiation, grade, change with respiration — aortic stenosis vs mitral regurgitation matters for the explanation",
+    "If chest heaviness is current or recent and exertional → say aloud that ACS must be excluded first (ECG now, troponin) before the outpatient work-up",
+    "Investigation logic: ECG (ischaemia, rhythm, LVH) · echo (EF, valves, wall motion) · 24-h ABPM (hypertensive heart disease) · CXR (cardiomegaly, effusion, lung screen) · spirometry · FBE (anaemia) · UEC, BNP, TFT, lipids, HbA1c",
+    "SA: telehealth cardiology; PATS; MedSTAR 1300 13 12 33 if unstable; TIS 131 450"
+   ],
+   "fails": [
+    "Committing to 'heart failure' from oedema + tachycardia alone when the findings don't support it ★",
+    "Not asking tightness vs air hunger; not running ACS questions when heaviness is present ★",
+    "No haemoptysis question; fewer than six differentials; no lung list ★",
+    "Not characterising the murmur; not asking whether the oedema is pitting and bilateral",
+    "Investigations without reasons; no ECG",
+    "False certainty to the patient; jargon (cardiomyopathy, arrhythmia) untranslated"
+   ],
+   "numbers": [
+    "Cardiac causes to keep open: IHD · heart failure · cardiomyopathy · valve disease · arrhythmia (tachycardia present) · hypertensive heart disease",
+    "Lung list: lung cancer → COPD → asthma → bronchiectasis → ILD/scarring → infection/TB → anaemia (non-lung)",
+    "ABPM: hypertension if daytime mean ≥135/85 or 24-h mean ≥130/80 VERIFY · LVH on ECG: Sokolow–Lyon S V1 + R V5/V6 >35 mm VERIFY",
+    "Phrase: 'I don't have enough yet to tell you which, and I'd rather test than guess'",
+    "Echocardiogram is the definitive test for both HF and the murmur · normal SpO2 does not exclude HF",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf (Version B — the vague online case, 70-year-old hypertensive)"
+ },
+ {
+  "id": "MED-34",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "You are the GP.",
+  "stem": [
+   "Lily, 28, presents with shortness of breath since last night, which began while she was sitting on the couch and has not settled.",
+   "Observations on request: BP 118/74 · pulse 104 · RR 22 · SpO2 95% room air · T 37.1 °C."
+  ],
+  "tasks": [
+   "Take a complete history (6 minutes)",
+   "Explain your diagnosis and differentials"
+  ],
+  "time": "8 minutes. History 6 · diagnosis, differentials and disposition 2. Nothing is volunteered.",
+  "back": {
+   "dx": "Pulmonary embolism from a right calf DVT — constant, worsening breathlessness since last night, started at rest on the couch, worse moving but present sitting still, slight dry cough, slight pleuritic ache; FOUR withheld findings, each needing its own specific question: right calf swollen and achy for two days ('thought I'd pulled something') · flew back from the States three days ago AND took a sleeping tablet and slept the whole way (only if you ask what she did on the flight) · on Levlen, a COMBINED pill (only if you ask which) · mum had a DVT after an operation (only if you ask family clots). Not pregnant (LMP two weeks). Hidden agenda: 'do you think it's just a panic attack? work's been stressful' at ~5 min. Described as the highest-failure case in the breathlessness cluster; if you could say one thing to pass: DVT signs and symptoms. Disposition = ambulance to ED today, not an outpatient scan.",
+   "plan": [
+    [
+     "0:00",
+     "Observations → 'mildly tachycardic and tachypnoeic, not shocked'; WIPE; 'short of breath sitting here?'; open question; acknowledge. Don't deliberate acute vs chronic — run the structure"
+    ],
+    [
+     "0:45",
+     "Breathlessness: describe; constant/comes and goes; worse; first time; better/worse — exertion AND at rest; lying flat; ★ 'what were you doing exactly before it started?'; cough, sputum, BLOOD, wheeze, chest pain worse on breathing in"
+    ],
+    [
+     "2:15",
+     "★ 'Any swelling or pain in your calves or legs?' → which leg, when, painful/red/warm, sore to squeeze or walk"
+    ],
+    [
+     "2:45",
+     "★ COST VMPF in under 60 s: Contraception — which one? · Overweight — 'would you say you're currently overweight?' · Surgery/hospital last 1–2 months · Travel — 'and what did you do during the trip?', immobility/illness/cast · Varicose veins · Malignancy/weight loss · Pregnancy — LMP, any chance · Family or personal clots"
+    ],
+    [
+     "3:45",
+     "Rule out the rest: chest injury, smoking; wheeze/night cough/atopy/asthma FHx; fever/chills/sweats; tightness, palpitations, ankle swelling, fainting, sudden deaths <40; rash/itch/lip swelling/new food or drug; tiredness, dizziness, heavy periods, black stools; weight loss/sweats; stress, panic; conditions, meds, allergies, home; 'anything you were worried this might be?'"
+    ],
+    [
+     "6:00",
+     "Diagnosis in plain words LINKED to the leg → three causes stacking (flight asleep, combined pill, mum) → 'none of this is something you did wrong' → differentials briskly with panic last, pending exclusion → ambulance to ED now, no driving; CTPA; anticoagulant ≥3 months; stop the combined pill + alternative → safety-net → someone to meet her → summary → questions"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Before I begin, may I have her observations — BP, pulse, respiratory rate, saturation and temperature? → 'I understand how stressful that must be. Let me ask you some questions and we'll work out the cause together and make a plan.'",
+    "Is it tightness in the chest, difficulty getting the breath in, or not getting enough air? All the time or comes and goes? Getting worse? First time? Worse when you walk — and is it there at rest? Worse lying flat? ★ What were you doing exactly before it started?",
+    "Any cough? Bringing anything up — ★ have you seen any blood in it? Noisy or wheezy breathing? Chest pain — worse when you breathe in deeply?",
+    "★ Have you had any swelling or pain in your calves or legs? — Which leg? When did you first notice it? Painful, red or warm? Sore when you squeeze the calf, or when you walk?",
+    "★ Are you taking any contraceptive pill — do you know which one, or its name? Would you say you're currently overweight? Any surgery or hospital stay in the last month or two? Any long travel recently — and what did you do during the trip? Any days off your feet — illness, a cast, bed rest? Prominent or dilated veins in your legs? Previous cancer, or weight loss you didn't intend? When was your last period — any chance you could be pregnant? Have you, or anyone in your family, ever had a clot in the leg or lung?",
+    "Injury to the chest? Smoke? Wheeze, night cough, hay fever, eczema, asthma in the family? Fever, chills, sweats? Chest tightness, palpitations, ankle swelling, fainting? Sudden deaths in the family under 40? Rash, itching, swelling of lips or tongue — new food or medication? Tiredness, dizziness, heavy periods, black stools? Weight loss, night sweats? Unusual stress, episodes of panic with a racing heart? Other conditions, medications, allergies? Who's at home? Anything you were particularly worried this might be?",
+    "'Lily, most likely you have a condition called a pulmonary embolism — in plain terms, a clot in one of the blood vessels of your lung. The clot almost certainly formed in your leg and then travelled up — which fits with the swelling and ache in your right calf. It formed because you were sitting still for a very long time on that flight, especially having slept through it. Being on a combined contraceptive pill adds to that risk, and so does your mum's history of clots. None of this is something you did wrong — it's a set of things stacking up.'",
+    "★ 'This is serious and it's very treatable, but it has to be dealt with today — not next week. I'm calling an ambulance and sending you to the emergency department now; I don't want you driving. They'll do a CT scan of the blood vessels in your lungs, and if it confirms the clot they'll start a blood-thinning medication, usually a tablet, for at least three months. We'll need to stop your combined pill — stop it now, condoms until we sort a replacement — and I'll make sure you have an alternative arranged.'"
+   ],
+   "pefe": [
+    "No examination task in Version A — vitals only: HR 104, RR 22, SpO2 95%, afebrile, normotensive → stable, still an emergency disposition",
+    "Differentials to the patient: collapsed lung (no injury, no abrupt pain) · asthma attack (no wheeze, no history) · chest infection (no fever, no coloured phlegm) · heart — rhythm, muscle, arteries (no chest pain/palpitations) · severe allergic reaction (no rash/swelling) · low blood count · panic attack — 'which I'd only settle on once the clot has been excluded' · cancer at the far end (age, no weight loss)",
+    "Variant 1 — she offers the panic attack: 'Panic attacks absolutely can cause exactly this, and I'm keeping it on my list. But I want to be honest about why I'm not settling on it today: a swollen painful calf, a very long flight asleep and immobile, and a combined pill. That combination makes a clot in the lung a real possibility. We rule that out first; if it's clear, then we talk properly about the anxiety — which matters too'",
+    "Variant 3 — wants to go home: 'I understand, and I'm sorry — but no. A clot in the lung can be stable one hour and dangerous the next; the risk isn't how you feel in this chair, it's the next few hours. The scan is only at the hospital and the treatment shouldn't wait. I'd rather you didn't drive in case you become more breathless or faint — that's why I'm calling an ambulance. Work will keep. Can I ring your partner to meet you there?'",
+    "Contraception replacement: progestogen-only pill, implant, hormonal IUD all safe; combined pill, patch and ring are the oestrogen risk",
+    "SA: 000; MedSTAR 1300 13 12 33 in a rural site (parallel, not afterwards); TIS 131 450"
+   ],
+   "fails": [
+    "Never asking about the legs ★",
+    "Never running the clotting risk sweep; never asking which pill; never asking what she did on the flight ★",
+    "Agreeing she can go home, hesitating, or arranging an outpatient scan; letting her drive ★",
+    "Never mentioning stopping the combined pill and replacing it ★",
+    "Taking the panic-attack offer; dismissing a young woman's symptoms — or the opposite, never keeping panic on the list",
+    "Not asking pregnancy/LMP; asking her BMI; wasting time deciding acute vs chronic; no safety-net or summary"
+   ],
+   "numbers": [
+    "COST VMPF: Contraception (oestrogen) · Obesity · Surgery · Travel/immobility · Varicose veins · Malignancy · Pregnancy · Family history",
+    "Wells (PE): DVT signs 3 · PE most likely 3 · HR >100 1.5 · immobilisation ≥3 days or surgery within 4 weeks 1.5 · previous VTE 1.5 · haemoptysis 1 · malignancy 1 → >4 PE likely → image; ≤4 → D-dimer · PERC: age <50, HR <100, SpO2 ≥95%, no haemoptysis, no oestrogen, no prior VTE, no unilateral leg swelling, no surgery/trauma within 4 weeks VERIFY",
+    "CTPA investigation of choice · V/Q in pregnancy · rivaroxaban 15 mg BD × 21 days then 20 mg daily · apixaban 10 mg BD × 7 days then 5 mg BD · enoxaparin 1.5 mg/kg daily or 1 mg/kg BD — the only option in pregnancy · warfarin INR 2–3 · ≥3 months when provoked · oxygen if SpO2 <92% VERIFY",
+    "ECG: tachycardia commonest; S1Q3T3 classic but uncommon; a normal ECG does not exclude PE",
+    "Variant 2 — bus not plane: 'the risk factor is immobilisation, not air travel — venous stasis from prolonged sitting; bus, car, bed rest and a cast do the same; still scored as immobilised on Wells'",
+    "Variant 4 — BP 84/52, HR 128, SpO2 87%: massive PE = resuscitation — priority-one ambulance, alert receiving hospital, high-flow O2, two large-bore cannulae, cautious fluid bolus (over-filling worsens RV failure), monitor + defib, 12-lead; systemic thrombolysis with alteplase for haemodynamic instability — discuss with receiving ED now; rural: MedSTAR in parallel; don't delay transfer for imaging VERIFY",
+    "000 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf (Version A — Lily 28, since last night, history only)"
+ },
+ {
+  "id": "MED-35",
+  "cat": "med",
+  "promptAt": 360,
+  "setting": "You are the GP. Same practice as MED-34.",
+  "stem": [
+   "Lily, 28, presents with sudden-onset shortness of breath for two hours.",
+   "Examination findings will appear on screen at 6 minutes. Observations on request."
+  ],
+  "tasks": [
+   "Take a history",
+   "Interpret the examination findings that appear on screen at 6 minutes",
+   "Explain your diagnosis and differentials"
+  ],
+  "time": "8 minutes. History to 6:00 · findings on screen · interpret aloud · diagnosis, differentials, disposition.",
+  "back": {
+   "dx": "Pulmonary embolism with pulmonary infarction — same withheld history as MED-34 (right calf, flight asleep, Levlen combined, mum's DVT) but here she HAS coughed up blood ('red, mixed in with the phlegm'). Findings on screen: dullness left lower lobe · loud P2 · left parasternal systolic murmur. The trap: dullness at a base reads as pneumonia, and the case is built to see whether one sign overturns a history pointing elsewhere. Say aloud: loud P2 = acute pulmonary hypertension; parasternal systolic murmur = tricuspid regurgitation from RV strain; basal dullness = pulmonary infarction ± small effusion rather than consolidation (no bronchial breathing, no increased vocal resonance offered). Hold the diagnosis. Ambulance to ED.",
+   "plan": [
+    [
+     "0:00",
+     "Observations; WIPE; open question; acknowledge; run the breathlessness structure"
+    ],
+    [
+     "0:45",
+     "Describe/timing/exertion/rest/lying flat/what were you doing; cough → sputum → ★ blood → YES, red mixed with phlegm → how much, how many times; wheeze; pleuritic pain"
+    ],
+    [
+     "2:15",
+     "★ Legs; ★ COST VMPF under 60 s incl. which pill, what she did on the flight, family clots, LMP/pregnancy"
+    ],
+    [
+     "3:45",
+     "Rule out the rest (pneumothorax, asthma, infection, cardiac, anaphylaxis, anaemia, cancer, panic); SADMA, PMHx, FHx, home, concerns"
+    ],
+    [
+     "6:00",
+     "Findings on screen → interpret aloud, all three, and say they support rather than contradict PE"
+    ],
+    [
+     "6:45",
+     "Diagnosis linked to the leg; the blood explained (a small area of lung the clot has damaged); differentials briskly, pneumonia specifically addressed; ambulance to ED now; CTPA; anticoagulation ≥3 months; stop combined pill + replacement; safety-net; summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Before I begin, may I have her observations?",
+    "★ Any cough? Bringing anything up — have you seen any blood in it? → 'How much — streaks, a teaspoon, more? How many times? Is it fresh red or dark?'",
+    "★ Have you had any swelling or pain in your calves or legs? Which leg, since when, red/warm/sore to squeeze?",
+    "★ COST VMPF: contraceptive pill — which one? overweight? surgery or hospital in the last two months? long travel — what did you do during the trip? varicose veins? previous cancer or weight loss? last period, any chance of pregnancy? clots in you or the family?",
+    "★ Interpretation aloud: 'A loud P2 reflects acute pulmonary hypertension, and a left parasternal systolic murmur fits tricuspid regurgitation from right ventricular strain — both are recognised in pulmonary embolism. The dullness at the left base is most consistent with pulmonary infarction, possibly with a small associated effusion, rather than consolidation — if it were consolidation I would expect bronchial breathing and increased vocal resonance, and neither is present. Taken with the history, these findings support rather than contradict a pulmonary embolism.'",
+    "'Most likely you have a pulmonary embolism — a clot in one of the blood vessels of your lung. It almost certainly formed in your leg and travelled up, which fits the swelling in your right calf. The blood you coughed up is from a small area of lung the clot has damaged. It formed because you were still for a very long time on that flight, especially asleep; the combined pill and your mum's history add to that. None of this is something you did wrong.'",
+    "'I did consider a chest infection — the examination found some dullness at the bottom of your left lung, which can happen with pneumonia, but you have no fever and the other findings point to the clot. Also a collapsed lung, asthma, a heart problem, a severe allergy, a low blood count, a panic attack which I'd only settle on once the clot is excluded, and at the far end a cancer.'",
+    "★ 'This has to be dealt with today. I'm calling an ambulance to the emergency department now — I don't want you driving. They'll scan the blood vessels in your lungs and start a blood thinner for at least three months. Stop the combined pill now; condoms until we arrange an alternative. Tell the staff straight away if the breathing worsens, you get chest pain, feel faint, or cough up more blood. Who can I call to meet you there?'"
+   ],
+   "pefe": [
+    "On screen at 6:00: respiratory — dullness at the left lower lobe · cardiovascular — loud pulmonary component of S2 · left parasternal systolic murmur. Nothing about bronchial breathing or vocal resonance → not consolidation",
+    "Signs of RV strain in PE: loud P2, RV heave, raised JVP, TR murmur (left lower sternal edge, louder on inspiration), S3/S4 right-sided; tachycardia; hypoxia; pleural rub or basal dullness with infarction VERIFY",
+    "Haemoptysis in PE = pulmonary infarction; Wells +1 for haemoptysis; here Wells: DVT signs 3 + PE most likely 3 + HR >100 1.5 + immobilisation 1.5 + haemoptysis 1 = 10 → image, no D-dimer",
+    "Disposition unchanged by the murmur: ambulance now; in ED — CTPA, ECG, troponin/BNP (RV strain markers), FBE, UEC, coags, β-hCG; anticoagulate on clinical suspicion if imaging delayed and bleeding risk low; thrombolysis only if haemodynamically unstable VERIFY",
+    "SA: 000; MedSTAR 1300 13 12 33 in parallel if rural; TIS 131 450"
+   ],
+   "fails": [
+    "Abandoning PE for pneumonia because of basal dullness ★",
+    "Not interpreting the loud P2 and the parasternal murmur aloud ★",
+    "Never asking about the legs; never running the clotting sweep; never asking which pill or what she did on the flight ★",
+    "Outpatient scan / letting her go home / driving herself; not stopping the combined pill ★",
+    "Not characterising the haemoptysis; not asking pregnancy",
+    "Taking the panic-attack offer; no safety-net; no summary"
+   ],
+   "numbers": [
+    "Loud P2 = pulmonary hypertension · left parasternal systolic murmur louder on inspiration = tricuspid regurgitation (RV strain) · consolidation = dull + bronchial breathing + increased VR; infarction/effusion = dull with reduced/absent BS and reduced VR",
+    "Wells here ≈ 10 (>4 → image) · PERC fails on HR, oestrogen, leg swelling, haemoptysis · CTPA; V/Q if pregnant VERIFY",
+    "Rivaroxaban 15 mg BD × 21 d then 20 mg daily · apixaban 10 mg BD × 7 d then 5 mg BD · enoxaparin 1 mg/kg BD or 1.5 mg/kg daily · ≥3 months, provoked VERIFY",
+    "Massive PE (SBP <90, HR >120, SpO2 <90): resuscitate, priority-one ambulance, alteplase for instability, cautious fluids, MedSTAR in parallel VERIFY",
+    "Bus/car/bed rest/cast = same immobilisation risk as a flight",
+    "000 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf (Version B — two hours, haemoptysis, findings on screen at 6 minutes)"
  }
 ]
