@@ -5051,5 +5051,319 @@
    ]
   },
   "source": "PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf (Version B — two hours, haemoptysis, findings on screen at 6 minutes)"
+ },
+ {
+  "id": "MED-36",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Emergency department. The role-player is a final-year medical student (Alex), not a patient.",
+  "stem": [
+   "A 68-year-old man with tachypnoea. History of hypercholesterolaemia, hypertension and previous myocardial infarction.",
+   "SpO2 89% RA · BP 132/84 · HR 112 · RR 28 · T 36.8 °C. Distended neck veins; apex not displaced; systolic murmur at the apex; S1 and S2 muffled with an S3 gallop; bibasal dullness and crepitations; pitting oedema to the knees."
+  ],
+  "tasks": [
+   "Explain your diagnosis to the medical student",
+   "Explain your immediate management plan"
+  ],
+  "time": "8 minutes. 0:20 name it in full · 0:40 the chain · 2:00 map the signs · 3:30 murmur and muffled sounds · 4:30 investigations · 5:00 numbered management · 7:00 long-term · 7:30 check understanding.",
+  "back": {
+   "dx": "Acute cardiogenic pulmonary oedema secondary to decompensated heart failure — say BOTH halves. The student opens with 'isn't this pneumonia?' and is briefed to ask 'but why does that happen?' whenever you list a sign without joining it. Six-link chain: substrate (HT, cholesterol, old MI) → LV can't eject → pressure backs into LA → pulmonary veins → capillary hydrostatic pressure exceeds oncotic pressure → fluid into interstitium then alveoli → gas exchange fails (RR 28, SpO2 89%). Murmur = functional mitral regurgitation from a dilated annulus. Muffled sounds → test Beck's triad aloud (hypotension, raised JVP, muffled sounds): two of three but BP 132/84 → not tamponade; still ask the echo for pericardial fluid. Management as a NUMBERED sequence with sitting upright first.",
+   "plan": [
+    [
+     "0:00",
+     "'What did you make of him?' → pneumonia → 'reasonable, keep it live — but I think this is acute cardiogenic pulmonary oedema secondary to decompensated heart failure. Here is the chain'"
+    ],
+    [
+     "0:40",
+     "The six links; then 'how do you tell it from consolidation?' → fine, bibasal, symmetrical crackles WITH raised JVP, S3, oedema; consolidation is focal, bronchial breathing, fever"
+    ],
+    [
+     "2:00",
+     "Hang every sign on the chain: JVP + oedema = systemic venous side of the same pressure · S3 = rapid filling into a stiff dilated ventricle · creps = alveoli opening against fluid · basal dullness = transudative effusion"
+    ],
+    [
+     "3:30",
+     "Murmur: systolic, apex (5th ICS MCL), radiates to axilla → functional MR. 'Prolapse?' → click + late systolic murmur, younger patient, not expected. Muffled sounds → Beck's triad → normotensive → not tamponade → echo anyway"
+    ],
+    [
+     "5:00",
+     "Management numbered 1–7; 'why nitrate before frusemide?' → redistribution vs volume, nitrate acts in minutes; 'morphine?' → no longer routine; what I'm NOT doing"
+    ],
+    [
+     "6:00",
+     "Investigations with reasons: ECG + serial troponin (ACS commonest precipitant), FBE/UEC before diuresing, LFT/TFT, gas + lactate, CXR (alveolar oedema, Kerley B, cardiomegaly, upper lobe diversion, effusions), ECHO — EF, wall motion, MR severity, pericardial fluid"
+    ],
+    [
+     "7:00",
+     "Long-term once euvolaemic: four pillars, beta-blocker NOT today; loop diuretic for congestion only; rehab, daily weights 2 kg/2 days, vaccines, device assessment later → summary → 'does that hang together?'"
+    ]
+   ],
+   "planApprox": false,
+   "ask": [
+    "'Hi Alex. Before we go back in, let's take two minutes on this gentleman — what I think is going on and why, then what I want done in the next ten minutes. Stop me whenever. What did you make of him?'",
+    "★ 'My diagnosis is acute cardiogenic pulmonary oedema, secondary to decompensated heart failure. Let me show you how the stem gets us there.'",
+    "★ 'Once pulmonary capillary hydrostatic pressure exceeds the oncotic pressure holding fluid in the vessel, fluid crosses into the interstitium and then into the alveoli. That is the pulmonary oedema, and it is why gas exchange fails — hence the tachypnoea, the tachycardia and the saturation of 89%.'",
+    "'Each sign is a link in the chain, not a separate finding. The third heart sound is rapid filling into a stiff, dilated ventricle.'",
+    "★ 'Beck's triad is hypotension, raised JVP and muffled heart sounds. He has two of three, but he is normotensive, so this is not tamponade. I will still ask the echocardiogram to look for pericardial fluid.'",
+    "★ 'One, sit him upright with his legs dependent — free, immediate, reduces preload. Two, oxygen titrated to 92–96%. Three, IV access, cardiac monitoring, 12-lead ECG. Four, glyceryl trinitrate 300–600 micrograms sublingually or a 400 microgram spray, repeated, provided his systolic stays above 100. Five, IV frusemide 40 mg, or a dose matching his usual daily oral dose, with a catheter to chart urine output. Six, stop any intravenous fluids. Seven, if still hypoxic or working hard, CPAP at 5–10 cm of water — and call cardiology.'",
+    "'Things I am not doing: no IV fluids, no NSAIDs, and I am not starting a beta-blocker today — those go in once he is euvolaemic. Morphine is no longer routine; observational data associate it with worse outcomes, more ventilation and longer stays. I'd reserve it for severe distress or ischaemic pain, at a low dose.'",
+    "'Does that hang together? Anything you want me to go back over?'"
+   ],
+   "pefe": [
+    "Findings are in the stem — no examination task in Version A; the job is interpretation and causal linkage",
+    "Long-term: HFrEF four pillars — ACE inhibitor or sacubitril–valsartan where indicated · beta-blocker with HF evidence (bisoprolol, carvedilol, metoprolol CR, nebivolol) low and slow once euvolaemic · MRA · SGLT2 inhibitor · loop diuretic for congestion = symptom control not disease modification · cardiac rehab · daily weights (2 kg in 2 days trigger) · vaccination · device assessment later VERIFY",
+    "Variant 3 — explain it to the patient instead: switch register completely — 'your heart isn't pumping as strongly as it should, so fluid is backing up into your lungs and that's why you feel breathless. We're going to sit you up, give you oxygen, and give you a water tablet through the drip to shift that fluid. You'll pass a lot of urine and should start to breathe more easily quite quickly' — no hydrostatic pressure, no ejection fraction",
+    "Variant 2 — cardiogenic shock (BP 78/50, cool, lactate 4.2, oliguric): say the words 'cardiogenic shock' aloud — NO nitrate; oxygen and NIV as tolerated; cautious or withheld diuretic until perfusion improves; inotrope/vasopressor; urgent bedside echo; cardiology and ICU immediately; in SA: MedSTAR 1300 13 12 33 for retrieval to a cath lab",
+    "SA: cardiology at RAH/FMC/Lyell McEwin; rural site → MedSTAR early; Country Health Connect HF nurse for follow-up"
+   ],
+   "fails": [
+    "Saying only 'heart failure' — not naming the acute emergency in full ★",
+    "Listing signs without the causal chain; getting hydrostatic vs oncotic wrong ★",
+    "Management as an unordered list; not making 'sit upright' step one ★",
+    "Nitrate without a blood-pressure caveat; frusemide without urine-output monitoring; not stopping IV fluids ★",
+    "Misquoting Beck's triad (it is HYPOtension); calling it tamponade in a normotensive man — or dismissing the muffled sounds without ordering the echo",
+    "Starting a beta-blocker while wet; routine morphine; 'oxygen' without a target; no ECG/troponin for the precipitant; echo without stated reasons"
+   ],
+   "numbers": [
+    "SpO2 target 92–96% (88–92% if CO2 retention risk) · GTN 300–600 microg SL or 400 microg spray, systolic must stay >100 · frusemide 20–40 mg IV or usual daily oral dose · CPAP 5–10 cmH2O · pulsus paradoxus >10 mmHg · action-plan trigger 2 kg in 2 days VERIFY against current Therapeutic Guidelines",
+    "Beck's triad: hypotension · raised JVP · muffled heart sounds · apex 5th ICS mid-clavicular line · functional MR radiates to the axilla · MVP = mid-systolic click + late systolic murmur",
+    "CXR of APO: alveolar (bat-wing) oedema · Kerley B lines · cardiomegaly · upper lobe diversion · pleural effusions",
+    "Four pillars: ACEi/ARNI · beta-blocker · MRA · SGLT2i · beta-blocker only once euvolaemic",
+    "Precipitants to name: ACS (commonest, he has infarcted before) · arrhythmia · non-compliance · fluid load · infection · anaemia · thyroid · NSAIDs · uncontrolled hypertension · valve",
+    "Variant 1 (Version B student argues for fluids) → see MED-37 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf (Version A — ED, ischaemic precipitant, teaching the medical student)"
+ },
+ {
+  "id": "MED-37",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Inpatient ward. The role-player is a final-year medical student.",
+  "stem": [
+   "A 54-year-old man admitted with fever, cough and dizziness; CXR confirms lower lobe pneumonia. MI five years ago, on enoxaparin, has received 3 litres of normal saline. No chest pain but cannot lie flat.",
+   "Observation chart: RR 12→25 · HR 102→124 · systolic 120→104 · SpO2 97–99% on room air · temperature settling."
+  ],
+  "tasks": [
+   "Interpret the observation chart",
+   "Perform the relevant examination",
+   "Explain your differential diagnoses to the medical student"
+  ],
+  "time": "8 minutes. Chart in trends with one synthesis sentence · examination (cardiorespiratory + fluid status) · bucketed differentials · first action is to stop the fluids.",
+  "back": {
+   "dx": "Acute cardiogenic pulmonary oedema from IATROGENIC fluid overload (3 L saline in a man with a previous MI) — leading diagnosis; ACS and arrhythmia next on the cardiac side; respiratory causes stay live (progressive pneumonia, parapneumonic effusion/empyema, PE — prophylactic enoxaparin does not exclude it); others: sepsis with septic cardiomyopathy, ARDS, anaemia. The chart: two rising parameters (RR, HR) and one falling (systolic) = deteriorating, meets escalation criteria; preserved SpO2 97–99% does NOT reassure — early pulmonary oedema is a tachypnoea problem before it is a saturation problem. Orthopnoea is the history clue. The student is briefed to argue for more fluid ('he's septic and his pressure is falling') — that is the trap.",
+   "plan": [
+    [
+     "0:00",
+     "Chart in trends, not numbers: RR 12–15 → 21–25; HR 102 → 124; systolic 120 → 104; SpO2 preserved — 'and I would specifically say that does not reassure me'; temperature settling → 'this patient is deteriorating and meets our criteria for escalation' → call for senior help / MET per local criteria"
+    ],
+    [
+     "1:30",
+     "Examination, stated then performed: general appearance and work of breathing; fluid status — JVP, hepatojugular reflux, peripheral oedema, mucosa; CVS — apex, heave, S3, murmur; respiratory — expansion, percussion (basal dullness, effusion side), breath sounds, crepitations (bibasal vs focal), bronchial breathing, VR; calves; catheter/urine output; bedside echo if available; ECG"
+    ],
+    [
+     "4:00",
+     "Differentials bucketed to the student: respiratory (kept live) → cardiovascular (leading: fluid overload APO; then ACS, arrhythmia) → other (sepsis/septic cardiomyopathy, ARDS, anaemia)"
+    ],
+    [
+     "5:30",
+     "'Shouldn't we give more fluid?' → the trap answered; first action: STOP the saline, sit up, assess filling; small aliquots with reassessment only if genuinely hypovolaemic"
+    ],
+    [
+     "6:30",
+     "Then the APO sequence: sit up, O2 to target, monitor, ECG, GTN if systolic >100 (here 104 — cautious), IV frusemide, catheter, CPAP if needed; investigations — ECG, troponin, FBE/UEC, gas + lactate, CXR, cultures, echo; escalate to registrar/ICU; summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'This is the adult observation and response chart. Working down: respiratory rate has climbed from 12–15 on day one to 21–25 today. Heart rate 102 to 124. Systolic has drifted from 120 to 104. Saturation is preserved at 97–99% on room air — and I would specifically say that does not reassure me, because early pulmonary oedema is a tachypnoea problem before it is a saturation problem. Temperature is settling. Two rising parameters and one falling: this patient is deteriorating and meets our criteria for escalation.'",
+    "'I'll examine him now — general appearance and work of breathing; fluid status: JVP, hepatojugular reflux, oedema; heart: apex, heave, third heart sound, murmur; chest: expansion, percussion, breath sounds, crackles and whether they're bibasal or focal, bronchial breathing, vocal resonance; calves; urine output.'",
+    "★ 'He was admitted with a pneumonia, so I keep respiratory causes live: progressive pneumonia, a parapneumonic effusion or empyema, and pulmonary embolism — prophylactic enoxaparin does not exclude that. But the story has changed: he cannot lie flat, he has had a myocardial infarction, and he has received three litres of saline. So on the cardiovascular side: acute cardiogenic pulmonary oedema from iatrogenic fluid overload — my leading diagnosis — then acute coronary syndrome and arrhythmia. Under other: sepsis with septic cardiomyopathy, ARDS, and anaemia. My first action is to stop the intravenous fluids.'",
+    "★ Student: 'He's septic and his blood pressure is falling — shouldn't we give more fluid?' → 'That is exactly the trap. He has already had three litres, he cannot lie flat, and his respiratory rate is climbing faster than his pressure is falling. In a man with a previous infarct, that combination is fluid overload, not hypovolaemia. I want the saline stopped, him sat up, and an assessment of his filling — JVP, hepatojugular reflux, oedema, and a bedside echo if we have one. If he really were hypovolaemic I would give small aliquots with reassessment after each, never a continued infusion.'",
+    "'Does that hang together? Anything you want me to go back over?'"
+   ],
+   "pefe": [
+    "Perform, don't just request: expected findings in this version are not scripted — describe what you look for and interpret whatever is given: raised JVP + bibasal creps + S3 → overload; focal bronchial breathing + fever → pneumonia progression; stony dull base → effusion (parapneumonic vs transudate → tap); unilateral calf swelling → PE",
+    "Investigations: ECG (ischaemia, AF), troponin, FBE, UEC (before diuresis), CRP, blood cultures, VBG/ABG with lactate, CXR now vs admission (new bilateral interstitial/alveolar shadowing, effusions, cardiomegaly), BNP, echo (EF, wall motion, pericardial fluid); consider CTPA if PE remains plausible after the above",
+    "Management once overload confirmed: stop fluids · sit upright · O2 92–96% · monitor · GTN only if systolic >100 (104 — cautious, reassess) · IV frusemide 40 mg with catheter · CPAP if working hard · continue antibiotics for the pneumonia · escalate — registrar, MET/ICU, cardiology; hold further enoxaparin decisions with the team if effusion needs tapping",
+    "Version C (numbers card): fluid balance +5 L over 48 h — same logic, bigger load",
+    "SA: MET criteria per hospital; rural — MedSTAR 1300 13 12 33 early for a deteriorating post-MI patient"
+   ],
+   "fails": [
+    "Reading every number aloud instead of trends + one synthesis sentence; not calling it deterioration/escalation ★",
+    "Being reassured by SpO2 97–99% ★",
+    "Agreeing to more fluid; not stopping the saline as the first action ★",
+    "Dropping the respiratory bucket because 'it's the heart' — or dropping PE because he's on enoxaparin",
+    "Not asking/eliciting orthopnoea as the pivot; examining chest only, no fluid status",
+    "Continuous fluid infusion for hypotension in an overloaded post-MI patient"
+   ],
+   "numbers": [
+    "Chart: RR 12→25 · HR 102→124 · SBP 120→104 · SpO2 97–99% RA · temp settling · fluid load 3 L (Version C +5 L/48 h)",
+    "Early APO = tachypnoea before desaturation · orthopnoea = the history flag · two rising + one falling = escalate",
+    "Buckets: respiratory (progressive pneumonia · parapneumonic effusion/empyema · PE) · cardiovascular (iatrogenic overload APO · ACS · arrhythmia) · other (sepsis/septic cardiomyopathy · ARDS · anaemia)",
+    "Hypovolaemia vs overload: JVP, hepatojugular reflux, oedema, orthopnoea, bedside echo (IVC, LV) · fluid challenge = 250 mL aliquot with reassessment, never an infusion VERIFY",
+    "APO sequence: sit up → O2 92–96% → monitor/ECG → GTN if SBP >100 → IV frusemide 40 mg + catheter → stop fluids → CPAP 5–10 cmH2O → cardiology VERIFY",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf (Version B — inpatient ward, iatrogenic fluid overload, observation chart)"
+ },
+ {
+  "id": "MED-38",
+  "cat": "med",
+  "promptAt": 300,
+  "setting": "Emergency department, regional South Australia.",
+  "stem": [
+   "Jack Reid, an 18-year-old man, presents with sudden breathlessness while exercising. SpO2 93% — he is already on oxygen.",
+   "Other observations from the examiner on request. A chest X-ray will be shown."
+  ],
+  "tasks": [
+   "Take a history (5 minutes)",
+   "Explain the chest X-ray to the patient",
+   "Explain your diagnosis and differentials"
+  ],
+  "time": "8 minutes. Four beats: stability + opening 35 s · complaint 55 s · acute three then full sweep 3.5 min · film, diagnosis, list, plan 3 min.",
+  "back": {
+   "dx": "Primary spontaneous pneumothorax, trachea central — right side. Positives only: sudden, mid-game an hour ago, constant, not improving, worse moving, breathless AT REST (symptomatic → drives the management branch), slight dry cough, sharp right-sided pleuritic pain. Everything else is NO — no tackle, no calf/travel/family clots, no allergies/rash, no fever/coryza, no palpitations/dizziness/syncope, no family sudden death, no atopy, not tired, doesn't smoke or vape, HEADSS fine. Vitals: BP 118/72, P 104, RR 24, T 36.6, SpO2 93% on 6 L Hudson — react aloud. The discriminating issue is the TRACHEA: on the film, name it in the midline before you describe the black shadow. 'Sudden' in the stem = ask the ACUTE THREE first (pneumothorax, PE, anaphylaxis).",
+   "plan": [
+    [
+     "0:00",
+     "'Examiner, may I have BP, pulse, RR and temperature — I have the saturation in the stem' → 'tachypnoeic and hypoxic, I'd keep the oxygen running'; WIPE; 'I can see you're on oxygen — we'll keep that going'; open question; acknowledge; signpost the pace"
+    ],
+    [
+     "0:35",
+     "Describe (tightness / air in / not enough air); EXACTLY when; constant; worse; better/worse → ★ rest question + breathless at rest → cough, noisy breathing/wheeze"
+    ],
+    [
+     "1:30",
+     "★ ACUTE THREE: knock or tackle to the chest? · calves, long trips/flights, family clots (+ pill and pregnancy in a woman) · known allergies, rash, itch"
+    ],
+    [
+     "2:15",
+     "Infection (fever/chills, sore throat/runny nose, overseas travel — not night sweats in a one-hour history); cardiac — chest pain, racing, dizziness, blackout, ★ 'has anyone in your family died suddenly, particularly young?'; family atopy; tiredness; ★ smoke or vape; weight/appetite; mini-HEADSS LAST and brief (home, school/bullying, mood)"
+    ],
+    [
+     "5:00",
+     "Film ≤1 min: three colours → heart, spine, ★ TRACHEA in the midline 'which matters for how urgently we treat this' → left lung out to the chest wall → right: black shadow between lung and chest wall → 'a pneumothorax'. 'How did air get in?' → two sentences, stop"
+    ],
+    [
+     "6:00",
+     "Diagnosis + two reasons + 'airway central, not under pressure' → differentials each with a reason against from his own answers → plan: O2, analgesia, reassess; needle/tube if still symptomatic, else observe ~4 h then home with repeat film + appointment → red flags → no flying until cleared, never scuba → 'does that make sense?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Examiner, before I begin, may I have the blood pressure, pulse rate, respiratory rate and temperature? I have the oxygen saturation in the stem. → 'He's tachypnoeic and hypoxic, so I'd keep the oxygen running throughout.'",
+    "'Good morning, I'm Dr —. Am I speaking with Jack? I can see you're on oxygen — we'll keep that going. Tell me more about your breathing.' → 'I understand how concerning this must be. Let me ask some questions, we'll work out what's happening and make the best plan together. Some will sound unrelated — with breathlessness this sudden there are a few serious things I need to rule out quickly.'",
+    "Can you describe it — tightness, difficulty getting the breath in, or not getting enough air? ★ Exactly when did it start? Constant or on and off since? Getting worse? Anything make it better or worse? ★ Does rest make it better — and are you breathless at rest, sitting here now? Cough? Noisy breathing or wheeze?",
+    "★ Did you take any knock or injury to the chest — were you tackled or did you land badly? Any pain or swelling in your calves? Long trips or flights? Anyone in the family with blood clots? Any known allergies? Rash or itching anywhere?",
+    "Fevers or chills? Sore throat, runny nose? Travel overseas? Chest pain with this? Racing or pounding heart? Dizziness? Did you black out when it started? ★ And — this one's important — has anyone in your family died suddenly, particularly young?",
+    "Family asthma, eczema, hay fever? Unusually tired lately? ★ Do you smoke — or vape? Lost weight or appetite? How are things at home? Stress at school, anyone giving you a hard time — any bullying? How's your mood been generally?",
+    "★ Film: 'Jack, this is an X-ray of your chest. Three colours — white bone, grey soft tissue, black air. This shadow in the middle is your heart, this is your spine, and this line running down the centre is your main airway. I'm checking that it's sitting in the midline — and it is — because that makes a real difference to how urgently we need to treat this. On your left the lung goes right out to the chest wall, sitting against the inside of the ribs the way it should. But on your right there's a black shadow between the lung and the chest wall — the lung isn't sitting against the ribs any more. That black area is air that's escaped and collected around the lung, and the name we give that is a pneumothorax.'",
+    "'Most often it happens on its own, without any injury. There are tiny bubbles on the surface of the lung that can burst, and air leaks out into the space around it. It's more common in young, tall, slim people, and often during exercise.' — two sentences, stop"
+   ],
+   "pefe": [
+    "No PEFE task in Version A — the film replaces it. Doctor-level read if asked: right pneumothorax with a visible visceral pleural line and absent peripheral lung markings, trachea and mediastinum central, no effusion, no rib fracture",
+    "Diagnosis: 'most likely a pneumothorax — air trapped between your lung and your chest wall. Two reasons: it came on very suddenly during exercise, and — the main one — I can see the air collection on your X-ray. Your main airway is central, so it isn't building up under pressure'",
+    "Differentials each with a reason AGAINST: clot on the lung — no travel, no leg swelling, no family clots · severe allergic reaction — no allergies, rash, itch · chest infection — no fever, no cold symptoms · asthma attack — no wheeze, no family asthma · heart — rhythm, or a thickened heart muscle that runs in families — no palpitations, dizziness, blackout, family sudden death · low in blood — not tired",
+    "Plan: keep oxygen, analgesia, reassess; still symptomatic → aspiration/needle or small-bore intercostal catheter (treat by symptoms and stability, NOT size); settles and stable → observe ~4 h → home with repeat film, follow-up appointment, written red flags; safety-net: suddenly worse, bad chest pain, faint → tell someone now; no flying until cleared; never scuba dive; smoking cessation cuts recurrence; 'can I play footy?' → after review and repeat film; 'will it happen again?' → it can, hence follow-up",
+    "If the bell is close: 'pneumothorax' → one reason → 'I considered a clot, allergic reaction, infection, asthma and heart causes — none fit' → oxygen, analgesia, possible drainage, follow-up",
+    "SA regional: discuss with the receiving hospital; MedSTAR 1300 13 12 33 if intervention needed and not available locally; TIS 131 450"
+   ],
+   "fails": [
+    "Never mentioning the trachea on the film ★",
+    "Never saying the word 'pneumothorax' ★",
+    "Not asking the acute three first — reaching chest injury/calves/allergies at four minutes ★",
+    "Omitting family history of sudden cardiac death; omitting smoking because he's 18 ★",
+    "Not reacting to SpO2 93% / not asking the other vitals; 'you've overdone it'; reassuring before knowing anything",
+    "Differentials without reasons against; jargon (hyperlucency, pleural line); film over a minute; leading with HEADSS; no plan/safety-net/flying-diving advice"
+   ],
+   "numbers": [
+    "Acute three: pneumothorax · PE · anaphylaxis · signs: reduced expansion, hyper-resonant, absent breath sounds, reduced VR · trachea pushed AWAY + hypotension + distress = tension → needle first, film later",
+    "Treat by symptoms and stability, not size · stable + asymptomatic → observe 4 h → discharge + repeat film + appointment + red flags · symptomatic after analgesia or unstable → pleural intervention VERIFY (BTS/local pathway)",
+    "Needle decompression: 2nd ICS mid-clavicular, just above the 3rd rib — or 5th ICS anterior axillary in adults (chest wall thickness) · intercostal catheter: safe triangle — pec major, lat dorsi, 5th ICS · underwater seal",
+    "Advice: no flying until cleared · never scuba dive again · stop smoking/vaping · ECG yes, spirometry NO in the acute patient",
+    "Variant B tension (24 M after a tackle, BP 82/50, P 132, RR 34, neck veins, trachea to the right, absent BS left): 'that changes everything — treating as tension, no X-ray, call for help, high-flow O2, immediate needle decompression left, cannula left in, then intercostal catheter in the safe triangle, reassess'",
+    "Variant C PE (26 F, pleuritic, 3 days post-flight, combined pill, swollen calf): Wells → straight to CTPA, treat while waiting if no contraindication · Variant D HOCM (19 M, collapse at training, uncle died at 32, exertional tightness): ECG today, echo, urgent cardiology, no competitive exercise until assessed, family screening",
+    "Vitals here: BP 118/72 · P 104 · RR 24 · T 36.6 · SpO2 93% on 6 L · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf (Version A — Jack Reid 18, chest X-ray)"
+ },
+ {
+  "id": "MED-39",
+  "cat": "med",
+  "promptAt": 240,
+  "setting": "Your general practice.",
+  "stem": [
+   "Chloe Barrett, 27, presents with sudden onset breathlessness.",
+   "There is no X-ray. Observations from the examiner on request."
+  ],
+  "tasks": [
+   "Take a history (4 minutes)",
+   "Ask the examiner for the examination findings",
+   "Explain your diagnosis and differentials"
+  ],
+  "time": "8 minutes. History 4 min — acute three front-loaded, pill and pregnancy added · PEFE request in a fixed order with the trachea named · diagnosis, differentials with reasons against, plan.",
+  "back": {
+   "dx": "Primary spontaneous pneumothorax, LEFT, trachea central — same near-all-negative history as Jack (sudden, constant, at rest, dry cough, pleuritic pain; no injury/clots/allergy/fever/cardiac/atopy/smoking), but in a woman the PE block must include the contraceptive pill and pregnancy. Findings (only what you ask for): reduced expansion left, trachea CENTRAL, hyper-resonant left, absent breath sounds left, reduced vocal resonance left; CVS normal; abdomen normal; calves equal. Without asking the tracheal position you cannot exclude tension — that is the discriminating item. Don't skip abdomen and lower limbs 'because they aren't respiratory'; don't request spirometry in an acute patient.",
+   "plan": [
+    [
+     "0:00",
+     "Vitals → react; WIPE; open; acknowledge; signpost. 4-minute history: describe, exactly when, constant, worse, modifiers, rest + at rest, cough, wheeze"
+    ],
+    [
+     "1:00",
+     "★ Acute three + the female additions: chest injury · calves, travel, family clots, ★ contraceptive pill (which one), ★ LMP / could you be pregnant · allergies, rash, itch"
+    ],
+    [
+     "2:00",
+     "Fever/coryza/travel; chest pain, palpitations, dizziness, syncope, ★ family sudden death; atopy; tired; ★ smoke/vape; weight; brief HEADSS if time"
+    ],
+    [
+     "4:00",
+     "'Apologies Chloe, I'll just speak with my examiner for a moment' → ordered request incl. ★ tracheal position → interpret aloud → turn back"
+    ],
+    [
+     "5:30",
+     "Diagnosis with reasons (sudden on exertion; reduced expansion, hyper-resonance, absent breath sounds on the left; trachea central so not under pressure) → differentials with reasons against → plan: ED/hospital for CXR, oxygen, analgesia, observe vs intervene; no flying/scuba; safety-net"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "Examiner, before I begin, may I have the blood pressure, pulse rate, respiratory rate, temperature and saturation?",
+    "★ Exactly when did it start? Does rest make it better — and are you breathless at rest now? Did you take any knock or injury to the chest? Any pain or swelling in your calves, long trips or flights, family blood clots? ★ Are you on the contraceptive pill — which one? When was your last period, any chance you could be pregnant? Any known allergies, rash or itching?",
+    "Fevers, chills, sore throat, runny nose, travel? Chest pain, racing heart, dizziness, blackout? ★ Has anyone in your family died suddenly, particularly young? Family asthma/eczema/hay fever? Unusually tired? ★ Do you smoke or vape?",
+    "★ 'Examiner: general appearance — respiratory distress, cyanosis, drowsy? Vital signs. Respiratory — on inspection and palpation, are chest movements symmetrical? What is the tracheal position? Percussion note? Breath sounds and added sounds? Vocal resonance? Cardiovascular — raised JVP, displaced apex, normal first and second heart sounds, any murmur or gallop? Abdomen — swelling, redness, tenderness, masses, palpable liver edge? Lower limbs — any size difference between the calves, or oedema? Office tests — may I have an ECG?'",
+    "★ Interpretation: 'Reduced expansion, hyper-resonance, absent breath sounds and reduced vocal resonance on the left, with a central trachea and normal haemodynamics — that is a left pneumothorax without tension.'",
+    "'Chloe, most likely you have a pneumothorax — air trapped between your lung and your chest wall. It came on very suddenly, and on examination the left side of your chest is moving less, sounds hollow, and I can't hear breath sounds there. Your windpipe is central, which tells me it isn't building up under pressure.'",
+    "'I considered a clot on the lung — no travel, no leg swelling, and your calves are equal; a severe allergic reaction — no allergies or rash; a chest infection — no fever; asthma — no wheeze; heart causes including a thickened heart muscle that runs in families — no palpitations, blackouts or family sudden death; and being low in blood — you're not tired.'",
+    "'You need a chest X-ray today to confirm it and measure it, so I'm sending you to the emergency department now with oxygen and pain relief — I'll ring ahead. If you're still short of breath there they'll let the air out with a small tube or needle; if you settle they'll watch you a few hours and see you back with a repeat film. If your breathing suddenly gets worse, you get severe chest pain or feel faint, tell someone immediately. Don't fly until you've been cleared, and you shouldn't scuba dive after this.'"
+   ],
+   "pefe": [
+    "Expected findings: reduced expansion left · trachea central · hyper-resonant left · absent breath sounds left · reduced vocal resonance left · CVS normal · abdomen normal · calves equal · ECG available",
+    "If the examiner gives 'trachea deviated to the right, BP 82/50, distended neck veins' → tension: no X-ray, call for help, high-flow O2, immediate needle decompression left (2nd ICS MCL or 5th ICS anterior axillary), cannula left in, then intercostal catheter in the safe triangle with underwater seal, reassess; GP setting → 000 and MedSTAR 1300 13 12 33 while decompressing",
+    "Disposition from GP: transfer to ED for CXR (erect PA ± expiratory), not observation in the practice; ambulance if hypoxic/symptomatic; ring ahead",
+    "Traps: not asking the tracheal position · skipping abdomen and lower limbs · requesting spirometry · forgetting the pill and pregnancy in the PE block",
+    "SA regional: nearest ED with chest drain capability; MedSTAR for retrieval if intervention not available locally; TIS 131 450"
+   ],
+   "fails": [
+    "Not asking the tracheal position — cannot exclude tension ★",
+    "Not asking the acute three in the first minute; not asking the pill and pregnancy ★",
+    "Omitting family sudden cardiac death; omitting smoking ★",
+    "Requesting spirometry in an acutely breathless patient; skipping abdomen and legs",
+    "Turning to the examiner without excusing yourself; not interpreting the findings aloud; not turning back",
+    "Differentials without reasons against; no transfer plan; no red flags; no flying/diving advice"
+   ],
+   "numbers": [
+    "Pneumothorax signs: reduced expansion · hyper-resonant · absent breath sounds · reduced VR · trachea central (simple) vs pushed away (tension)",
+    "Tension = clinical diagnosis: distress, hypotension, tachycardia, distended neck veins, deviated trachea → needle first, film later",
+    "Needle: 2nd ICS MCL just above the 3rd rib, or 5th ICS anterior axillary line · ICC: safe triangle (pec major, lat dorsi, 5th ICS)",
+    "Female PE block: combined pill/patch/ring (oestrogen), pregnancy/postpartum, plus calves, travel, surgery, family clots",
+    "Advice: no flying until cleared · never scuba dive · stop smoking/vaping · recurrence ~30% after a first primary spontaneous pneumothorax VERIFY",
+    "Variants C (PE) and D (HOCM) as on MED-38 · MedSTAR 1300 13 12 33 · 000"
+   ]
+  },
+  "source": "Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf (Version B — Chloe Barrett 27, examination from the examiner, no X-ray)"
  }
 ]
