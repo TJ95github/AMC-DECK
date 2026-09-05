@@ -7189,5 +7189,268 @@
    ]
   },
   "source": "Diabetic_Ketoacidosis_2_Case_Tasks_Script_Notability.pdf (Alex Wooten, 17, tiredness on the farm — DKA in new type 1 diabetes)"
+ },
+ {
+  "id": "MED-62",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 360,
+  "setting": "Regional general practice, Wallaroo, South Australia. You are the GP. Version A online: 6-minute history then findings on screen. Version B face to face: 4-minute history then examination from the examiner.",
+  "stem": [
+   "Jane Ellery, a 45-year-old woman, presents to your general practice complaining of tiredness. There is nothing else in the stem."
+  ],
+  "tasks": [
+   "Take a focused history",
+   "You will then be given the physical examination findings",
+   "Explain your diagnosis AND your differentials to the patient — two marked items"
+  ],
+  "time": "8 minutes. Open, acknowledge, contract · define 'tired' and explore (ask even though she volunteered some) · H, then E — cold intolerance is where it turns → switch from screening to PROBING (five key-point questions) · keep sweeping M, I, A, D, C, O, P anyway · menstrual questions exclude the closest mimic · thyroid examination requested by name, pulse, reflex relaxation phase · name it, reason it from her own answers and findings · reason three differentials incl. menopause · TSH, plan, safety net, certificate.",
+  "back": {
+   "dx": "Primary hypothyroidism, probably Hashimoto thyroiditis: months of progressive lack of energy affecting work; cold intolerance, dry skin, constipation, weight gain, hair loss with outer-eyebrow thinning, morning periorbital puffiness; examination — dressed warmly, dry coarse skin, pulse 60, diffuse non-nodular goitre moving on swallowing, no retrosternal extension, no lymphadenopathy, delayed relaxation phase of the ankle reflexes, normal power, office tests normal. Reasons given from her own answers and findings. Differentials reasoned: menopause (regular periods, no hot flushes — the single closest mimic at 45), anaemia (no exertional dyspnoea/palpitations, periods not heavy — still check), depression (mood reasonable, still enjoys things); malignancy — lymphoma/leukaemia (no weight loss, lumps, night sweats); infection — EBV, hepatitis, HIV; then diabetes, coeliac, haemochromatosis, autoimmune (SLE, RA), medications, OSA, heart failure. Plan: TSH (free T4 if abnormal, TPO antibodies for cause) plus FBE, ferritin, HbA1c, coeliac serology, UEC, LFT; levothyroxine once confirmed; recheck TSH 6–8 weeks; certificate. Automatic fails: diagnosing off the single weather-preference answer without probing; never requesting a thyroid examination; abandoning the malignancy/infection screen; omitting the differentials; describing the reflexes as brisk.",
+   "plan": [
+    [
+     "0:00",
+     "Intro, open question; ★ acknowledge ('I understand that can be concerning') and contract ('questions, then examine, then a plan together')"
+    ],
+    [
+     "0:30",
+     "Define: lack of energy / sleepy / feverish · duration · constant · worse · modifiers · impact (sick leave, boss unhappy — 'we'll come back to the work side')"
+    ],
+    [
+     "1:15",
+     "H: tanning, jaundice, dark urine, pale stools · E: polyuria, thirst, ★ 'any weather preference — intolerant of cold or heat?' → 'always cold' → ★ SWITCH TO PROBING: dry skin · constipation · weight gain · hair loss incl. outer third of eyebrows · puffiness of eyelids/face/legs · hoarse voice · neck swelling or dysphagia"
+    ],
+    [
+     "2:45",
+     "★ Keep sweeping: M (weight loss, appetite, lumps, night sweats, cancer history) · I (fever, sore throat, sexual history/safe sex, travel) · A (exertional dyspnoea/palpitations, stiffness, headache, joints, rash) · D (medicines, mood, anhedonia, stress)"
+    ],
+    [
+     "4:00",
+     "C (greasy stools, blood, chest pain, pillows, ankles, cough, smoking) · O (snoring, occupation) · ★ P: LMP, regular, heavy, hot flushes · alcohol, allergies, PMH, FHx · 'anything you were worried this might be?'"
+    ],
+    [
+     "5:00",
+     "Examination: general — dressed for the weather? dry skin? pallor/jaundice/rash · temperature, ★ pulse rate, BP · ★ thyroid examination with consent to expose the neck, chaperone: inspection (swelling, moves on swallowing), palpation (diffuse vs nodular, size, consistency, tenderness), percussion over the manubrium · lymph nodes · CVS · respiratory · abdomen · ★ relaxation phase of the ankle reflexes · proximal power (rise from a chair) · Pemberton's sign · office tests, ★ 'random or fasting glucose?'"
+    ],
+    [
+     "6:15",
+     "★ Name it in one plain line ('the gland in the front of your neck is underactive, not making enough of its hormone — that hormone sets the pace for everything, which is why everything feels like an effort'); ★ reasons from her answers (cold, dry skin, constipation, weight gain, hair loss) and findings (dry skin, slow pulse, enlarged gland, slow-relaxing reflexes)"
+    ],
+    [
+     "7:00",
+     "★ Differentials: menopause, anaemia, depression reasoned; malignancy and infection reasoned; the rest listed · plan: TSH today ('measures how hard your body is pushing the gland') + anaemia, diabetes, coeliac, liver tests; levothyroxine once confirmed, empty stomach, recheck 6–8 weeks; certificate; safety net (neck swelling, dysphagia, chest pain); questions; summary on request"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'I understand that can be concerning. Let me ask you a number of questions, then examine you, and we will make a plan together.' / 'Is it a lack of energy, feeling sleepy, or feeling feverish?'",
+    "★ 'Do you have any weather preference — are you intolerant of cold or of heat?' → 'Thank you, that is helpful. Let me ask a few more about that.'",
+    "★ 'Has your skin been dry?' / ★ 'Have you been constipated?' / ★ 'Have you had any weight gain?' / ★ 'Any hair loss — and have you noticed the outer part of your eyebrows thinning?' / ★ 'Any puffiness of your eyelids, face or legs?' / 'Has your voice become hoarse? Any swelling in your neck or difficulty swallowing?'",
+    "★ 'When was your last period? Are they regular? Any hot flushes?'",
+    "★ 'I would like to perform a thyroid examination — asking her permission to expose the neck and remove any scarf, and offering a chaperone.' / ★ 'What is the relaxation phase of the ankle reflex?' / 'Can she rise from a chair without using her arms?' / 'Pemberton's sign, given the goitre' / 'Is that sugar random or fasting?'",
+    "★ 'Most likely you have hypothyroidism. The gland in the front of your neck is underactive and is not making enough of its hormone.' / ★ 'The reasons I have come to this today are your own answers and what I found when I examined you…'",
+    "★ 'I considered menopause — it can cause exactly this at your age, but it is less likely in you because your periods are regular and you have no hot flushes.' / 'Anaemia — less likely, no breathlessness or palpitations on exertion, periods not heavy, but I will still check.' / 'Depression — less likely, your mood is reasonable and you still enjoy things.'",
+    "'The main test is called TSH, which measures how hard your body is having to push the gland.' / 'Will I be on tablets forever?' → 'Usually yes — one tablet a day, inexpensive, and most people feel like themselves again.' / 'Will the weight come off?' → 'Some usually does — a lot is fluid — but treating the thyroid does not usually take off all the weight on its own; it should give you back the energy to be active.'",
+    "Never say to the patient: TSH unexplained, euthyroid, myxoedema, Woltman sign, or 'your metabolism is slow' without the plain-English version"
+   ],
+   "pefe": [
+    "Examiner: dressed warmly; dry, coarse skin; no pallor/jaundice/rash · T normal, ★ pulse 60 regular, BP 110/70 · ★ diffusely enlarged thyroid, moves on swallowing, no nodules, non-tender, percussion resonant (no retrosternal extension) · no lymphadenopathy · HS normal, chest clear · no hepatosplenomegaly · ★ reflexes present with delayed relaxation phase · power normal · Pemberton negative · random BSL normal, dipstick normal",
+    "If asked what you are looking for mid-thyroid exam: 'a swelling that moves upwards on swallowing — thyroid rather than node or cyst; diffuse vs nodular — a discrete nodule changes the pathway to ultrasound; percussion for retrosternal extension'",
+    "Variant — single firm nodule: thyroid ultrasound ± FNA by sonographic features and size; still TSH first (suppressed TSH → functioning nodule) VERIFY",
+    "Variant — periods stopped 8 months ago with hot flushes: menopause moves to the top, but they overlap and coexist — still check TSH before attributing everything to menopause",
+    "Variant — lithium or amiodarone: both cause hypothyroidism; check TSH (lithium: renal function and level too); discuss with the prescriber rather than stopping it",
+    "Variant — pregnant or planning: requirement rises, targets tighter — urgent TSH, start/increase early, obstetric team, monitor more often VERIFY",
+    "Bloods: TSH first → free T4 if abnormal → TPO antibodies for cause; high TSH + low fT4 = primary; high TSH + normal fT4 = subclinical · plus FBE, ferritin, HbA1c, coeliac serology, UEC, LFT · levothyroxine ~1.6 µg/kg/day full replacement, start 25–50 µg if older or cardiac VERIFY · empty stomach, separate from calcium/iron by ~4 h · recheck TSH 6–8 weeks · SA: TIS 131 450 · PATS >100 km VERIFY"
+   ],
+   "fails": [
+    "Naming hypothyroidism off the single weather-preference answer without the five probing questions ('what makes you say that?') ★",
+    "Never requesting a thyroid examination — running the whole spine and missing the neck ★",
+    "Abandoning the malignancy and infection screen because you already have the diagnosis ★",
+    "Explaining the diagnosis beautifully and omitting the differentials task — one out of two ★",
+    "Describing the reflexes as brisk — they are slow to relax ★",
+    "Not asking the three menstrual questions — menopause is the closest mimic",
+    "The butterfly-gland physiology lecture; starting levothyroxine before the TSH; promising all the weight will come off"
+   ],
+   "numbers": [
+    "Pulse 60 — the bradycardia you expect · 5 key-point probes (dry skin, constipation, weight gain, hair/eyebrows, puffiness) · 9 examination steps · 2 famous signs (delayed reflex relaxation, outer-eyebrow loss)",
+    "TSH first · free T4 if abnormal · TPO antibodies for cause · high TSH + low fT4 = primary; high TSH + normal fT4 = subclinical",
+    "Levothyroxine ~1.6 µg/kg/day; 25–50 µg start if older/cardiac VERIFY · empty stomach · separate from calcium/iron ~4 h · recheck TSH 6–8 weeks",
+    "Three menstrual questions exclude menopause: LMP, regular?, hot flushes?",
+    "TIS 131 450 · PATS >100 km VERIFY"
+   ]
+  },
+  "source": "Hypothyroidism_Tiredness_2_Case_Tasks_Script_Notability.pdf (Jane Ellery, 45, tiredness — primary hypothyroidism)"
+ },
+ {
+  "id": "MED-63",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 420,
+  "setting": "General practice. You are the GP. The patient attends alone. Version 1 — she stopped the prednisolone abruptly.",
+  "stem": [
+   "Samantha (Sam) Doyle, 60, was diagnosed with polymyalgia rheumatica four months ago (some versions: giant cell arteritis; Version 3: sarcoidosis). She attends today concerned about tiredness and, separately, loss of weight."
+  ],
+  "tasks": [
+   "Take a relevant history (7 minutes)",
+   "Give your diagnosis and your differential diagnoses (1 minute)"
+  ],
+  "time": "8 minutes — 7 + 1, the longest history and shortest close in the cluster. Acknowledge the concern · both complaints explored, weight loss quantified (how much, over how long) · the steroid block and the hinge question 'abruptly, or reduced gradually?' · follow the dog into the mood · adrenal features (nausea, abdominal pain, diarrhoea, postural dizziness, salt craving) and steroid-diabetes questions · malignancy red flags and the THREE screening programs · rest of the mnemonic, postmenopausal bleeding, geriatric screen · 60-second answer: name, two-sentence explanation, reasons, then the list fast.",
+  "back": {
+   "dx": "Secondary adrenal insufficiency (not crisis — stable, talking) after abrupt cessation of prednisolone four months into PMR treatment: six weeks of profound fatigue, 5–6 kg unintentional weight loss, poor appetite, nausea, abdominal pain, loose bowels, postural light-headedness; stopped the tablet abruptly six weeks ago after her dog died, nobody told her to taper, missed follow-up; no PMR/GCA relapse features; mood flat since the bereavement (grief; screen, not diagnose). Reasons: tired, weight loss, abrupt cessation after four months, GI features. Differentials (the list is the mark): malignancy — leukaemia, lymphoma, breast, bowel (no lumps, screening up to date); depression/adjustment disorder after the loss; relapse of PMR/GCA; steroid-induced diabetes; thyroid, anaemia, haemochromatosis, hepatitis, coeliac, other autoimmune, medications, heart failure, OSA. Plan: morning cortisol today (short Synacthen if needed), restart prednisolone with a proper taper, steroid card, sick-day rules, emergency advice, mood review next week. Handle 'is it my fault?' without blame.",
+   "plan": [
+    [
+     "0:00",
+     "Intro, 'how would you like me to address you?'; ★ acknowledge the concern in one line; permission to proceed"
+    ],
+    [
+     "0:30",
+     "Tired: feverish / low energy / sleepy → no energy · 6 weeks · constant · worse · nothing helps · can't do housework · ★ weight: 'how many kilograms, and over what period?' → 5–6 kg in 6 weeks, not trying"
+    ],
+    [
+     "1:30",
+     "★ Steroid block: when diagnosed · what treatment · 'are you taking it regularly?' → stopped · why? → the dog · ★ 'did you stop it abruptly, or reduce the dose gradually?' → just stopped · side effects (weight gain) · follow-up (missed) · relapse: shoulder/hip stiffness; GCA: headache, scalp tenderness, jaw claudication, visual change"
+    ],
+    [
+     "3:00",
+     "★ 'I'm so sorry about your dog — how are you coping?' · mood · anhedonia (three questions, twenty seconds)"
+    ],
+    [
+     "3:30",
+     "★ Adrenal features: nausea/vomiting, abdominal pain, diarrhoea, postural dizziness, salt craving · steroid-diabetes: polyuria, polydipsia, recurrent infections"
+    ],
+    [
+     "4:15",
+     "Malignancy: appetite, lumps, night sweats, family cancer · ★ three screening programs: mammogram, cervical screening test, bowel cancer kit"
+    ],
+    [
+     "5:00",
+     "Rest of the mnemonic briskly: tanning/jaundice, heat/cold, exertional dyspnoea/palpitations, joints/rash, fever/travel, bowel change/blood, cough, smoking, snoring, occupation, other meds/OTC, allergies · ★ 'when did your periods stop — any bleeding since?' · geriatric screen: memory, who do you live with, support, falls, who cooks (lives alone, husband died 3 years ago, son in Perth, 'toast mostly') · 'what are you worried about?' (sister — cancer)"
+    ],
+    [
+     "7:00",
+     "★ 60 s: 'adrenal insufficiency — on long-term steroids the adrenal gland stops working; stop suddenly and it can't restart straight away'; reasons; ★ the list, read fast; 'bloods today incl. morning cortisol, restart the steroid with a plan to reduce slowly, a card, sick-day rules; vomiting, very dizzy or confused = ambulance; see you next week about your mood'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'When you say tired — feverish, low in energy, or sleepy?' / ★ 'How many kilograms, and over what period?'",
+    "'When were you diagnosed? What treatment? Are you taking it regularly?' → 'Can I ask why you stopped?' → ★ 'Did you stop it abruptly, or did you reduce the dose gradually?'",
+    "'Any shoulder or hip stiffness? Any headache, scalp tenderness, jaw pain on chewing, or change in your vision?'",
+    "★ 'I'm so sorry about your dog. How are you coping with that?' → 'How has your mood been? Still enjoying the things you used to?'",
+    "★ 'Any nausea or vomiting? Tummy pain? Diarrhoea? Dizziness when you stand? Craving salty food?' / 'Because you've been on steroids — more urine, thirstier, recurrent infections?'",
+    "★ 'Are you up to date with your mammogram, cervical screening test and bowel kit?' / ★ 'When did your periods stop — have you had any bleeding since?'",
+    "'How's your memory? Who do you live with? Enough support? Any falls? Who does the cooking?'",
+    "★ 'When you take steroids for a long time the adrenal gland stops working; if you stop suddenly it can't restart straight away.' / 'My reasons are that you're tired, you've lost weight, you stopped your prednisolone abruptly after four months, and you've had nausea, tummy pain and loose bowels.'",
+    "'So it's my fault for stopping the tablets?' → ★ 'No — nobody explained that these tablets have to be reduced slowly rather than stopped, and that's something we should have made much clearer. It's very treatable.'",
+    "★ 'If you start vomiting, become very dizzy or confused — that's an emergency, call an ambulance.'",
+    "Three phrases that lose marks: 'steroid cessation syndrome' (not a diagnosis) · 'you're in adrenal crisis' (she is stable) · 'it's just the grief' (premature closure with unexplained weight loss)"
+   ],
+   "pefe": [
+    "No examination task. If invited: postural BP, pigmentation (absent in secondary insufficiency), weight, temporal arteries, thyroid, lymph nodes, breasts, abdomen; BSL.",
+    "Investigations (if asked): 8 am cortisol, ± short Synacthen test VERIFY; UEC (secondary: normal potassium, ± low sodium), BSL/HbA1c, FBE, ESR/CRP (PMR relapse), TSH, LFT, ferritin, coeliac serology; CXR; screening as due",
+    "Management: restart prednisolone at the previous or a physiological dose, then taper per PMR plan; steroid alert card; ★ sick-day rule — double the dose when ill; vomiting/unable to take tablets → ED/ambulance; crisis: hydrocortisone 100 mg IV/IM + fluids VERIFY; specialist/GP follow-up re-established; mood review next week; bereavement support",
+    "Version 3 — sarcoidosis instead of PMR: only the complication questions change (cough, breathlessness, rashes, red or painful eyes); diagnosis, reasons and list identical",
+    "SA: My Aged Care 1800 200 422 · Cancer Council SA 13 11 20 · Lifeline 13 11 14 · TIS 131 450"
+   ],
+   "fails": [
+    "Asking 'are you compliant?' and stopping at 'no' — never asking abruptly vs tapered ★",
+    "Not quantifying the weight loss (amount AND period) and treating it as a footnote ★",
+    "Naming 'adrenal crisis' or 'steroid cessation syndrome'; 'it's just the grief' ★",
+    "Skipping the three screening programs, the postmenopausal bleeding question, or the GI/adrenal features",
+    "'Sorry to hear that' and straight to the next system — no mood/coping questions after the dog",
+    "Spending the closing minute on the adrenal gland and never reaching the list; blaming her for stopping",
+    "No PMR/GCA relapse questions; no geriatric screen"
+   ],
+   "numbers": [
+    "7 min history · 1 min answer · weight loss 5–6 kg / 6 weeks · PMR diagnosed 4 months ago · stopped ~6 weeks ago",
+    "HPA suppression after ~3 weeks of steroid; recovery weeks to months VERIFY · secondary insufficiency: no pigmentation, normal potassium",
+    "8 am cortisol · short Synacthen VERIFY · crisis: hydrocortisone 100 mg IV/IM + fluids VERIFY · sick-day rule: double the dose",
+    "PMR prednisolone 12.5–25 mg · GCA 40–60 mg VERIFY",
+    "Screening VERIFY: breast 50–74 two-yearly · cervical 25–74 five-yearly · bowel 45/50–74 two-yearly",
+    "My Aged Care 1800 200 422 · Cancer Council SA 13 11 20 · Lifeline 13 11 14"
+   ]
+  },
+  "source": "Steroid_Cessation_2_Case_Tasks_Script_Notability.pdf (Version 1 — Samantha Doyle, 60, PMR, abrupt prednisolone cessation → adrenal insufficiency; Version 3 sarcoidosis folded in)"
+ },
+ {
+  "id": "MED-64",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 420,
+  "setting": "General practice. You are the GP. Version 2 of the steroid station — she is still taking the prednisolone. Stem reconstructed from the variant section.",
+  "stem": [
+   "Samantha (Sam) Doyle, 60, was diagnosed with polymyalgia rheumatica four months ago and remains on prednisolone. She attends today concerned about tiredness and loss of weight."
+  ],
+  "tasks": [
+   "Take a relevant history (7 minutes)",
+   "Give your diagnosis and your differential diagnoses (1 minute)"
+  ],
+  "time": "8 minutes, 7 + 1. Identical spine to MED-63 — the steroid block comes back clean (compliant, followed up, no relapse, no side effects). Say nothing about the recall; work down the mnemonic until you reach mood, then complete the depression criteria and the safety question. Do NOT do a full psychiatric history — plan the case from the complaint, not the outcome.",
+  "back": {
+   "dx": "Major depressive disorder presenting as tiredness and weight loss in a bereaved 60-year-old widow living alone: low mood, anhedonia, middle-of-the-night waking, poor appetite with weight loss, poor concentration, guilt/worthlessness, fatigue — five or more of nine features over more than two weeks; no suicidal ideation on direct questioning. Steroid history clean (taking it, tapering as planned, follow-up kept, no relapse). Differentials — the same broad list: malignancy (leukaemia, lymphoma, breast, bowel — no lumps, screening up to date), adrenal insufficiency (excluded — never stopped), PMR/GCA relapse, steroid-induced diabetes, thyroid, anaemia, haemochromatosis, hepatitis, coeliac, autoimmune, medications (steroid-induced mood change), heart failure, OSA. The one exception to 'no full psychiatric history' is the safety question — never omit it. If challenged: 'I approached this as undifferentiated tiredness and screened organic causes first; having reached a mood disorder I would complete a full mental state assessment at a dedicated follow-up.'",
+   "plan": [
+    [
+     "0:00",
+     "Intro, name preference, ★ acknowledge the concern, permission"
+    ],
+    [
+     "0:30",
+     "Tired defined, explored; ★ weight loss quantified (amount, period)"
+    ],
+    [
+     "1:30",
+     "Steroid block: diagnosed 4 months ago, prednisolone, taking it regularly (yes), tapering per plan, follow-up kept, side effects, relapse (girdle stiffness) and GCA features — all clean"
+    ],
+    [
+     "2:45",
+     "Adrenal/GI and steroid-diabetes questions (negative) · malignancy red flags · ★ three screening programs · rest of the mnemonic · ★ postmenopausal bleeding · geriatric screen (lives alone, husband died, son in Perth, toast mostly)"
+    ],
+    [
+     "5:00",
+     "★ Mood reached in the sweep: 'how has your mood been? still enjoying things? sleep — trouble getting off, or waking and not getting back? appetite? concentration? feeling guilty or worthless?' → ★ 'have you had any thoughts of harming yourself or anyone else?'"
+    ],
+    [
+     "6:15",
+     "Brief context only: the loss (dog/husband), isolation, alcohol; no mania screen, psychosis, insight or full risk assessment here"
+    ],
+    [
+     "7:00",
+     "★ 'Most likely you have major depressive disorder — an intense low mood and sadness that affects how you function and commonly causes tiredness and weight loss. My reasons are the features you described: low mood, no longer enjoying things, waking in the night, poor appetite, poor concentration, feeling guilty, and the tiredness itself — five or more features over more than two weeks.' Then the list fast; bloods today to exclude organic causes; dedicated follow-up for a full assessment and treatment plan; safety net."
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'When you say tired — feverish, low in energy, or sleepy?' / 'How many kilograms, over what period?'",
+    "'Are you taking the prednisolone regularly? Reducing it as planned? Still under follow-up? Any shoulder or hip stiffness back? Headache, jaw pain, vision change?'",
+    "★ 'How has your mood been? Are you still enjoying the things you used to enjoy? How's your sleep — trouble getting off, or waking in the night and not getting back? Appetite? Concentration? Have you been feeling guilty or worthless?'",
+    "★ 'And have you had any thoughts of harming yourself or anyone else?'",
+    "★ 'Most likely you have major depressive disorder. That is an intense low mood and sadness that affects how you function and commonly causes tiredness and weight loss.'",
+    "'I did consider other things — because of the weight loss, cancers such as leukaemia, lymphoma, breast and bowel, but no lumps and your screening is up to date; a relapse of the polymyalgia; the steroid affecting your mood or your sugar; thyroid disease, anaemia, haemochromatosis, hepatitis, coeliac disease, other autoimmune conditions, heart failure and sleep apnoea.'",
+    "If challenged on the brief psychiatric history: 'I approached this as undifferentiated tiredness and screened for organic causes first. Having reached a mood disorder I would complete a full mental state assessment at a dedicated follow-up.' ADDED",
+    "'Is it just the grief?' → 'Grief is part of it, but what you're describing has gone on longer and deeper than grief alone, and it's treatable — I don't want to leave it.'"
+   ],
+   "pefe": [
+    "No examination task. Bloods to exclude organic contributors: FBE, ferritin, UEC, LFT, TSH, BSL/HbA1c, ESR/CRP, ± morning cortisol if any doubt about steroid adherence VERIFY",
+    "DSM-5 MDD: ≥5 of 9 over ≥2 weeks including depressed mood or anhedonia (sleep, appetite/weight, psychomotor change, fatigue, guilt/worthlessness, concentration, suicidal ideation); use PHQ-9/K10 at follow-up VERIFY",
+    "Steroids can themselves cause mood disturbance — usually early and at higher doses; note it as a differential, do not stop the prednisolone",
+    "Follow-up plan: dedicated appointment for full MSE and risk assessment, Mental Health Treatment Plan (Better Access), psychology referral, consider SSRI (sertraline/escitalopram) after full assessment; bereavement support; social isolation — community links VERIFY",
+    "SA: Lifeline 13 11 14 · Beyond Blue 1300 22 4636 · SA Mental Health Triage 13 14 65 · My Aged Care 1800 200 422 · TIS 131 450"
+   ],
+   "fails": [
+    "Anchoring on the recall and pushing the adrenal story when she is compliant ★",
+    "Omitting the safety question ★",
+    "Doing a full psychiatric history (confidentiality, mania, psychosis, insight, full risk) and never finishing the organic sweep or the list ★",
+    "Not quantifying the weight loss; skipping the screening programs and postmenopausal bleeding",
+    "Naming depression without the criteria drawn from her own answers; 'it's just the grief'",
+    "No dedicated follow-up plan"
+   ],
+   "numbers": [
+    "7 + 1 · MDD: 5 of 9 over 2 weeks, including low mood or anhedonia",
+    "Version 2 positives: low mood, anhedonia, night waking, poor appetite, weight loss, poor concentration, guilt, fatigue · no SI",
+    "Steroid history clean: taking it, tapering, followed up, no relapse",
+    "Lifeline 13 11 14 · Beyond Blue 1300 22 4636 · SA Mental Health Triage 13 14 65"
+   ]
+  },
+  "source": "Steroid_Cessation_2_Case_Tasks_Script_Notability.pdf (Version 2 — Samantha Doyle, 60, still on prednisolone → major depressive disorder; stem reconstructed)"
  }
 ]
