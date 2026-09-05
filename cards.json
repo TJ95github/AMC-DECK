@@ -7727,5 +7727,757 @@
    ]
   },
   "source": "Lymphoma_PFE_2_Case_Tasks_Script_Notability.pdf (Mary Whitfield, 40, B symptoms — examination from the examiner)"
+ },
+ {
+  "id": "MED-68",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Hospital ward, evening shift. TELEPHONE station — no examiner, no role-player in the room; a card says 'please pick up the telephone'. The nurse on the line is the examiner. Your consultant is unavailable. Management is NOT a task.",
+  "stem": [
+   "You are the HMO. Blood results have returned on Mr Arthur Nolan, 78, a resident of a nearby aged-care facility, currently an inpatient. Sodium 118 mmol/L (135–145), chloride low, serum osmolality low. Nothing else is given."
+  ],
+  "tasks": [
+   "Report and explain the investigation results to the nurse",
+   "Take a history from the nurse",
+   "Explain the most likely diagnosis and your differentials to the nurse"
+  ],
+  "time": "8 minutes. Name yourself, who and where · ★ conscious state and fitting BEFORE any number · obs · report in colleague register, name what the low osmolality means · orient: admission, PMHx, ★ the whole chart including long-standing drugs, surgery · symptoms · pseudo screen (glucose, TG, protein) said out loud · three volume blocks announced · ★ ask her to EXAMINE him for fluid state · four SIADH cause groups · three-layer explanation · escalate, safety-net, offer to document.",
+  "back": {
+   "dx": "Drug-induced (thiazide) SIADH → euvolaemic hypotonic hyponatraemia. Na 118, low serum osmolality = true hypotonic (not pseudo; not glucose-driven — glucose 5.4, TG and protein normal). Nurse's examination on request: moist mucosa, no postural drop, no oedema, chest clear, weight stable, fluid chart balanced ~1400/1300 → euvolaemic. Chart: hydrochlorothiazide, paracetamol, atorvastatin — nothing changed since admission (asking only 'new medications' gets 'nothing new' and you miss it). Three-layer explanation: (1) true hypotonic, euvolaemic → SIADH, most likely trigger the thiazide; (2) other SIADH causes — malignancy (lung, lymphoma), infection (pneumonia, TB, meningitis), intracranial (bleed, head injury) — clear CT, no fever/cough/weight loss make them less likely but not excluded on history; (3) outside SIADH — hypothyroidism and adrenal insufficiency (TSH, morning cortisol), hypovolaemic group (losses, poor intake, diuretics), hypervolaemic group (heart, liver, kidney). Confirm with paired serum/urine osmolality + urine sodium. Close: discuss with medical registrar and document — do not change the thiazide over the phone; call back if drowsy, more confused, vomiting, fitting.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'This is Dr [name], the HMO covering the ward tonight. Who am I speaking with, and which ward?' → Jackie, RN 4B, bed 12"
+    ],
+    [
+     "0:20",
+     "★ 'Before I go through the results — is he alert and oriented, or drowsy or more confused than usual? Any fitting? Latest obs?' → alert at baseline, no fits, BP 128/76 HR 78 RR 16 SpO2 97 T 36.6"
+    ],
+    [
+     "0:50",
+     "Report as a colleague: Na 118 vs 135–145, significant; chloride low tracks Na; ★ 'serum osmolality is low — this is a true hypotonic hyponatraemia, not an artefact'. If asked what osmolality means: one technical sentence, no lay translation"
+    ],
+    [
+     "1:30",
+     "Orient: admitted 3 days ago after a fall, no fracture · HTN, OA, mild memory impairment · ★ 'read me the whole chart — everything, including anything started or changed in the last few weeks' → hydrochlorothiazide, paracetamol, atorvastatin · no surgery. Note the thiazide, keep going"
+    ],
+    [
+     "2:30",
+     "Symptoms (confusion vs baseline, drowsiness, headache, nausea/vomiting, unsteadiness/falls) · ★ pseudo screen: glucose 5.4, TG normal, total protein normal → say aloud 'not pseudohyponatraemia, not glucose-driven — true hypotonic; next I need his fluid state'"
+    ],
+    [
+     "3:30",
+     "Three volume blocks, each announced: 1 losing — vomiting, diarrhoea, intake, burns/wounds · 2 retaining — orthopnoea/pillows, ankle swelling, jaundice/dark urine/pale stools, urine output, fluid balance chart → ~1400 in/1300 out · 3 euvolaemic — cold intolerance, constipation, weight gain"
+    ],
+    [
+     "4:45",
+     "★ THE DISCRIMINATING ASK: 'Can I ask you to look at him and tell me what his fluid state looks like — dry mouth/tongue, reduced turgor, postural drop; or ankle oedema, raised JVP, basal crackles? Weight on the chart?' → euvolaemic → say 'that narrows this considerably'"
+    ],
+    [
+     "5:45",
+     "SIADH cause groups, one question each: drugs (have the chart) · infection — fever, cough, SOB, headache, neck stiffness, new drowsiness · malignancy — weight loss, lumps/nodes, night sweats, past cancer · brain — head strike in the fall, imaging → CT clear · 'drinking unusually large volumes?'"
+    ],
+    [
+     "6:45",
+     "Three-layer explanation (dx + cause; other SIADH causes; non-SIADH causes) · paired serum/urine osmolality + urine Na · 'Hold his morning dose?' → ★ 'I'll discuss with the medical registrar and document tonight rather than change it by phone' · safety-net · 'anything you'd like me to go over again?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before I go through the results — is he alert and oriented, or drowsy? Has he had any fitting? Can you give me his latest observations?'",
+    "★ 'His sodium is 118, against a range of 135 to 145. The serum osmolality is low, so this is a true hypotonic hyponatraemia.' / 'What does osmolality mean?' → 'Total concentration of dissolved particles — mostly sodium, with glucose and urea. Low sodium with low osmolality means the sodium is genuinely low.'",
+    "★ 'Can you read me his medication chart — everything on it, including anything started or changed in the last few weeks?' (not 'any new medications?')",
+    "'Can you check whether there are recent results for glucose, triglycerides and total protein?' → 'Then this isn't a pseudohyponatraemia — it's a true hypotonic hyponatraemia. Next I need his fluid state.'",
+    "'First, whether he's losing fluid… Second, whether he's retaining it… Third, the euvolaemic causes…' — three blocks, announced",
+    "★ 'Can I ask you to look at him for me and tell me what his fluid state looks like? Dry mucosa and a postural drop — or oedema, raised JVP and basal crackles? And has his weight changed on the chart?'",
+    "'Four quick groups: infection… malignancy… brain — did he hit his head, has he had imaging?… and has anyone noticed him drinking unusually large amounts of water?'",
+    "★ 'He has a true hypotonic hyponatraemia and he's clinically euvolaemic — that points to SIADH, and given his chart the most likely trigger is the thiazide.' Then layer 2 (malignancy, infection, intracranial) and layer 3 (hypothyroid, adrenal, hypovolaemic, hypervolaemic groups)",
+    "'To confirm it I'd like a paired serum and urine osmolality with a urine sodium.'",
+    "'Do you want me to hold his morning fluid tablet?' → ★ 'I'll discuss that with the medical registrar and document a clear plan tonight rather than change it over the phone. Call me straight away if he becomes drowsy, more confused than baseline, starts vomiting, or has any fitting.'"
+   ],
+   "pefe": [
+    "Nurse's brief: Jackie Moore RN 4B, brisk, four other patients. Withholds volume status unless you ask her to assess fluid state/hydration/oedema/JVP/turgor — 'how does he look?' gets 'well, no different to yesterday'. Never volunteers the thiazide; 'any new meds?' gets 'nothing new since admission'. Goes cool and marks you down if you talk down to her ('a salt in your blood')",
+    "Findings on request: alert at baseline, no fits · BP 128/76, HR 78, RR 16, SpO2 97 RA, T 36.6 · ★ moist mucosa, no postural drop, no oedema, chest clear, weight stable · fluid chart ~1400 in / 1300 out · glucose 5.4, TG and protein normal · CT head on admission clear · no fever, cough, headache, neck stiffness, weight loss, lumps, cancer history · drinking normal",
+    "Register cheat-sheet — to the nurse: hyponatraemia, serum osmolality, euvolaemic, SIADH. To a patient: 'a mineral, or salt, in your blood', 'a hormone that tells your kidneys to hold on to water'. Wrong register for the listener costs marks in both directions",
+    "Variant — nurse rings back an hour later, he has seized: diagnostic problem → emergency. Attend, MET call, airway/oxygen/monitoring, urgent repeat Na and glucose; symptomatic severe hyponatraemia with seizures → small boluses of 3% NaCl to raise Na 4–6 mmol/L, enough to stop the seizure, then stop; medical registrar + ICU from the outset; afterwards correction ≤8 mmol/L per 24 h (osmotic demyelination). VERIFY regimen against Therapeutic Guidelines and local protocol",
+    "Variant — 3-month cough, 6 kg loss, smoker since 17: 'a low sodium of this kind can be caused by a chemical released by a growth in the lung — it's on my list, CXR this week, CT if it shows anything'",
+    "SA: MedSTAR 1300 13 12 33 if retrieval needed · TIS 131 450"
+   ],
+   "fails": [
+    "Discussing a sodium of 118 before asking whether he is alert or has fitted ★",
+    "Never asking the nurse to assess his fluid state — the single commonest failure ★",
+    "Asking only about new medications (misses the long-standing thiazide) ★",
+    "Saying 'SIADH' and offering no differentials ★",
+    "Changing or stopping a medication over the telephone instead of escalating ★",
+    "Hearing the thiazide and stopping the history; not naming what the low osmolality means; running the volume groups without announcing them",
+    "Lay-register explanation to a senior nurse; failing to offer to document and escalate; no safety-net"
+   ],
+   "numbers": [
+    "Na normal 135–145 · severe <125 · here 118 (Version B 120) · serum osmolality <275 mOsm/kg = true hypotonic; normal = pseudo; high = hyperglycaemia",
+    "SIADH: urine osm >100 mOsm/kg, urine Na >30–40, euvolaemic, normal thyroid/adrenal/renal · hypovolaemic hyponatraemia urine Na <20",
+    "Correction ≤8 mmol/L per 24 h · severe symptomatic: 3% NaCl to lift 4–6 mmol/L · SIADH fluid restriction 800–1000 mL/day",
+    "Three drugs first: thiazides · SSRIs · carbamazepine",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version A — Arthur Nolan, 78, telephone station with the ward nurse)"
+ },
+ {
+  "id": "MED-69",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice, face to face — results-discussion station. Stem reconstructed from the Version B script in the source PDF (only the age, sodium, drugs and format are given).",
+  "stem": [
+   "A 50-year-old man attends for the results of routine blood tests. He feels completely well. Sodium 120 mmol/L (135–145), serum osmolality low. He takes citalopram for mood and carbamazepine, which he has had for years for nerve pain."
+  ],
+  "tasks": [
+   "Explain the blood results to the patient",
+   "Take a focused history",
+   "Explain the most likely diagnosis and your differentials to the patient"
+  ],
+  "time": "8 minutes. Why the test, then symptoms (dizziness, confusion, memory, headache, tiredness, balance) · three volume blocks · ★ every medicine — prescribed, over the counter, herbal · five-move patient-register explanation · ★ do NOT tell him to stop the SSRI or the anticonvulsant today — confirm, then plan a substitution with the prescriber.",
+  "back": {
+   "dx": "Drug-induced SIADH (citalopram and carbamazepine are both recognised causes) → euvolaemic hypotonic hyponatraemia, Na 120, asymptomatic. Five-move explanation in patient register: sodium is a mineral/salt kept in careful balance → most likely cause is SIADH, 'syndrome of inappropriate secretion of ADH' → ADH tells the kidneys to hold on to water; too much → extra water dilutes the salt → the trigger is his medication, a side effect not his fault → other causes looked for: certain cancers (lung, lymphoma — CXR normal), infections (chest, lining of the brain), problems inside the head (bleed/injury — brain scan normal) → non-SIADH causes: losing fluid (vomiting, diarrhoea, poor intake), fluid tablets, underactive thyroid (ruled out), heart/liver/kidney problems (results and examination don't support). Next step: confirm with paired serum/urine osmolality and urine sodium, then talk to the prescriber — an SSRI stopped abruptly causes discontinuation symptoms, carbamazepine stopped abruptly risks seizures; plan the change, say so aloud.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'Before we look at them — what prompted the test?' → routine · 'Any dizziness, confusion, memory trouble, headaches, tiredness, change in walking or balance?' → none, 'which is why I'm puzzled you called me in'"
+    ],
+    [
+     "1:00",
+     "Result in lay words: 'your sodium is low — sodium is a mineral, or salt, your body keeps in balance in the blood'; it is a true low (osmolality low) rather than a measurement effect; not an emergency in someone well, but it needs a cause"
+    ],
+    [
+     "1:45",
+     "Three volume blocks announced: losing (vomiting, diarrhoea, intake, burns) · retaining (orthopnoea, ankle swelling, jaundice, urine output) · euvolaemic (cold intolerance, constipation, weight gain)"
+    ],
+    [
+     "3:00",
+     "★ 'Every medicine you take — prescribed, bought over the counter, and anything herbal' → citalopram, carbamazepine for years · SIADH groups: fever/cough/headache/neck stiffness · weight loss/lumps/sweats/past cancer · head injury/imaging · excess water drinking · smoking"
+    ],
+    [
+     "4:15",
+     "Examination by name (or findings on screen): fluid state — mucosa, turgor, postural BP, JVP, oedema, chest bases · thyroid · neuro/conscious state · results already held: CXR normal, brain scan normal, TSH normal"
+    ],
+    [
+     "5:00",
+     "Five-move explanation: low sodium → SIADH named and spelt out → ADH/water mechanism → medication trigger, 'a side effect rather than anything you have done wrong' → other SIADH causes looked for → non-SIADH causes"
+    ],
+    [
+     "6:45",
+     "★ 'The next step is to confirm it, then talk to whoever prescribes your medicines — we don't stop an antidepressant or an anticonvulsant abruptly; we plan the change.' Paired serum/urine osmolality + urine Na · fluid guidance once confirmed · safety-net: headache, confusion, drowsiness, vomiting, fits → ED"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Before we look at them — can I ask what prompted the test in the first place?'",
+    "'Any dizziness, confusion, memory trouble, headaches, tiredness, or any change in your walking or balance?'",
+    "★ 'Can you tell me every medicine you take — prescribed, bought over the counter, and anything herbal?'",
+    "'Your blood test shows a low sodium level. Sodium is a mineral, or a salt, that your body keeps in careful balance in the blood.'",
+    "'The most likely cause is a condition called SIADH — the syndrome of inappropriate secretion of ADH. ADH is a hormone that tells your kidneys to hold on to water. Your body makes more of it than it should, so you hold on to extra water, and that extra water dilutes the salt in your blood.'",
+    "'In your case the most likely trigger is your medication — both citalopram and carbamazepine are recognised causes, and that is a side effect rather than anything you have done wrong.'",
+    "'There are other things that can cause SIADH and I've looked for them: certain cancers, particularly of the lung, and lymphoma — your chest X-ray is normal; infections of the chest or the lining of the brain; and problems inside the head such as a bleed or an injury — your brain scan is normal.'",
+    "'Causes outside SIADH: losing fluid through vomiting, diarrhoea or not drinking enough; fluid tablets; an underactive thyroid, which your test has ruled out; and heart, liver or kidney problems, which your results and examination don't support.'",
+    "★ 'Should I stop them?' → 'Not today. We confirm it first, then I talk to whoever prescribes them — stopping an antidepressant suddenly causes withdrawal symptoms, and stopping carbamazepine suddenly can bring on seizures. We plan the change together.'",
+    "'Come back straight away, or go to the emergency department, if you get a bad headache, become confused or unusually drowsy, start vomiting, or have any fitting.'"
+   ],
+   "pefe": [
+    "Given/held: Na 120, serum osmolality low · well, alert · euvolaemic on examination · CXR normal · brain scan normal · TSH normal · no losses, no oedema · no fever, weight loss, lumps, head injury",
+    "Confirmatory: paired serum and urine osmolality, urine sodium (SIADH: urine osm >100, urine Na >30–40) · TSH, morning cortisol · UEC, glucose, lipids, protein · once confirmed: fluid restriction 800–1000 mL/day, and drug substitution planned with the prescriber (psychiatry/GP for the SSRI; neurology/pain for carbamazepine) VERIFY",
+    "Register cheat-sheet — patient: 'a mineral, or salt, in your blood', 'a hormone that tells your kidneys to hold on to water', 'your body holds on to too much water, which dilutes the salt'. Never 'euvolaemic hypotonic hyponatraemia' to him",
+    "Variant — malignancy version (cough 3 months, 6 kg loss, smoker): name the lung as a possible source, CXR this week, CT if abnormal — 'it's on my list, I'm not telling you that you have it'",
+    "Variant — seizure at home: emergency; 3% NaCl by protocol, 4–6 mmol/L lift then stop, ICU/medical registrar, correction ≤8 mmol/L/24 h VERIFY · MedSTAR 1300 13 12 33",
+    "SA: GP-endocrine/physician referral; TIS 131 450"
+   ],
+   "fails": [
+    "Telling him to stop citalopram or carbamazepine today ★",
+    "'SIADH' with no differentials, or a differential list with no non-SIADH layer ★",
+    "Asking 'any medications?' without over-the-counter and herbal — or never linking the two drugs to the sodium",
+    "Reporting the sodium in colleague register (osmolality, euvolaemic) to the patient",
+    "Declaring the diagnosis without offering a confirmatory paired osmolality",
+    "No safety-net for neurological symptoms in a sodium of 120"
+   ],
+   "numbers": [
+    "Na 120 · normal 135–145 · severe <125 · serum osm <275 = true hypotonic",
+    "SIADH: urine osm >100 mOsm/kg · urine Na >30–40 mmol/L · euvolaemic · normal TSH/cortisol/renal",
+    "Fluid restriction 800–1000 mL/day once confirmed · correction ≤8 mmol/L per 24 h",
+    "Drug triad: thiazides · SSRIs · carbamazepine",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version B — 50-year-old man, Na 120, citalopram + carbamazepine; stem reconstructed)"
+ },
+ {
+  "id": "MED-70",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 240,
+  "setting": "Renal unit of a metropolitan teaching hospital; you are the resident. A 12-lead ECG is supplied with the stem — read it before you enter. Vitals available on request. Older recall adds a fourth task: outline your immediate management.",
+  "stem": [
+   "Mr John Whitfield, 60, known end-stage kidney disease on maintenance haemodialysis, attends for his scheduled session. He has had several days of palpitations and diarrhoea. ECG provided: tall, narrow-based, symmetrical peaked T waves, most marked in the mid-precordial leads; QRS normal; P waves preserved."
+  ],
+  "tasks": [
+   "Take a further focused history (3 minutes)",
+   "Ask the examiner for the relevant investigations",
+   "Explain the condition to the patient"
+  ],
+  "time": "8 minutes: 40 s opening · 3 min history · 45 s investigations · 2.5 min explanation · 45 s safety-net and close. Read the ECG outside and say so · vitals from the examiner · warn about the pace · kidney background, ★ read the drug list ALOUD · symptom sweep in 25 s · ★ four precipitants: diet · missed dialysis · 'new — OR ANY CHANGE to' medications · fluid loss · tissue breakdown in 10 s · three named investigations · ★ diagnosis by its proper name, three causes, symptom linked · safety-net · teach-back.",
+  "back": {
+   "dx": "Acute kidney injury on end-stage kidney disease with hyperkalaemia (K 5.9 with ECG changes = treat as severe) — multifactorial: (1) perindopril dose increased by the GP last week (he can't say which tablet; deduce it from pharmacology — of perindopril, hydrochlorothiazide, erythropoietin, the ACE inhibitor is the one that raises potassium), (2) missed Monday's dialysis — a session's worth of potassium not removed, (3) four days of watery diarrhoea with poor intake and postural dizziness — volume depletion. eGFR 10–12 (baseline ESKD); VBG no significant acidosis → reduced clearance and retention, not a transcellular shift. 'You have hyperkalaemia' is a laboratory state, not a diagnosis — the commonest fail. Explain: 'your kidneys have taken a sudden knock on top of the long-standing damage — an acute injury on chronic kidney disease'; three reasons stacked; potassium controls the heart's electrical rhythm, hence the palpitations. Plan: cardiac monitor, dialysis brought forward to today, hold the perindopril, letter to the GP, don't stop anything else alone. Handle 'my GP did this to me' by explaining the monitoring gap (UEC 1–2 weeks after any ACE-i dose change), not the person.",
+   "plan": [
+    [
+     "0:00",
+     "Outside: 'peaked narrow-based T waves V3–V4, QRS narrow, P waves present — hyperkalaemia, not yet advanced' · ★ 'Examiner, could I have BP, pulse, RR and saturations?' → 132/78, 88 reg, 16, 97% RA, afebrile → 'haemodynamically stable, I'll proceed'"
+    ],
+    [
+     "0:40",
+     "WIPE, confirm identity · ★ 'I've only got a few minutes, so I'm going to ask short, direct questions — is that all right?' · 'My heart's going like a drum — should I be worried?' → name it, park it with a promise, keep the clock"
+    ],
+    [
+     "1:10",
+     "Kidney background: how long (6 y), how often (twice weekly, Mon/Thu), ★ medications — READ THE LIST ALOUD: perindopril, hydrochlorothiazide, erythropoietin · GP and nephrologist follow-up"
+    ],
+    [
+     "1:50",
+     "Symptom sweep as one string, 25 s: tiredness/weakness (yes, legs heavy), numbness/tingling, chest pain (no), SOB, nausea/vomiting (queasy), syncope (no)"
+    ],
+    [
+     "2:15",
+     "★ Four precipitants: 1 diet change? (no, off food) · 2 ★ missed dialysis? (Monday — up all night with diarrhoea) · 3 ★ 'new medications — OR ANY CHANGE to the ones you take, including chemist/herbal?' (GP put one dose up last week; doesn't know which) · 4 diarrhoea: fluids down? vomiting? dizzy standing? (hardly drinking; 6–7/day; light-headed)"
+    ],
+    [
+     "3:20",
+     "Tissue breakdown, 10 s: falls, injuries, severe muscle pain, dark urine → no. To examiner: 'of the three, the one that raises potassium is the perindopril — I'll confirm from the dispensing record'"
+    ],
+    [
+     "3:40",
+     "★ Investigations by analyte: UEC — specifically potassium, plus sodium and bicarbonate; eGFR vs baseline; VBG/ABG for pH, bicarbonate and rapid K; add FBE, Ca, PO4, Mg, BSL → K 5.9, eGFR 10–12, gas normal. 'Why a gas?' → 'acidosis drives potassium out of cells — changes interpretation and management'"
+    ],
+    [
+     "4:30",
+     "Read back: 'mildly elevated by number but he has ECG changes, so significant regardless of level; eGFR fits ESKD; no acidosis → reduced clearance and retention, not shift'"
+    ],
+    [
+     "5:00",
+     "★ Diagnosis by name: 'your kidneys have taken a sudden knock on top of the long-standing damage — an acute injury on chronic kidney disease' · ★ 'three reasons, stacked': perindopril dose up → holds potassium; missed session → not taken off; diarrhoea dried you out · potassium controls the heart's rhythm → your racing heart"
+    ],
+    [
+     "6:30",
+     "'My GP did this to me?' → increased for a good reason; needs a blood test 1–2 weeks later — that's the bit to tighten; I'll write today · plan: monitor, dialysis today, hold perindopril, don't stop anything else alone · safety-net: racing heart, chest pain, faint, weak limbs → tell a nurse now · ★ teach-back: 'what will you tell your wife?' · 'anything still worrying you?' (fear of a heart attack like his brother; fear dialysis is failing)"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before I begin — could I have his blood pressure, pulse, respiratory rate and saturations?' / 'The ECG shows peaked T waves with a narrow QRS, so I'll approach this as hyperkalaemia.'",
+    "★ 'I've only got a few minutes with you, so I'm going to ask short, direct questions — is that all right?'",
+    "'I can hear that it's frightening you, and I promise I'll come back to it properly. A few quick questions first so I get it right.'",
+    "'How long have you had the kidney problem, and how often is dialysis?' / 'What medications are you on?' → read aloud: 'perindopril, hydrochlorothiazide, erythropoietin injections'",
+    "'Has there been any big change in your diet recently?' / ★ 'Have you missed any dialysis sessions?' / ★ 'Any new medications — OR any change to the ones you already take? Including anything from the chemist or anything herbal?'",
+    "'With the diarrhoea — have you been able to keep fluids down? Any vomiting? Dizzy when you stand?' / 'Any falls or injuries, severe muscle pain or dark urine?'",
+    "★ 'Urea, electrolytes and creatinine — specifically the potassium, with sodium and bicarbonate; his eGFR against baseline; and a blood gas for pH, bicarbonate and a rapid potassium.' (never 'renal function tests')",
+    "★ 'Mildly elevated by the number, but he has ECG changes, which makes this significant regardless of the level.'",
+    "★ 'Your kidneys have taken a sudden knock on top of the long-standing damage — we call it an acute injury on top of chronic kidney disease.' / 'Three things caused this, and they've stacked up together.' / 'Potassium is a mineral in the blood, and it controls the heart's electrical rhythm.'",
+    "'So my GP did this to me?' → 'It was increased for a good reason — it protects the heart and blood pressure. With kidneys like yours it needs a blood test a week or two later, and that's the bit we need to tighten. I'll write to him today.' / 'Please don't stop any of your other tablets on your own — we'll work out together which ones stay.' / ★ 'Could you tell me in your own words what you'll say to your wife?'"
+   ],
+   "pefe": [
+    "Role-player: John, 60, retired truck driver, wife, northern suburbs; ESKD 6 y, HD Mon/Thu; carries a printed list (perindopril, hydrochlorothiazide, erythropoietin), takes them reliably, doesn't know what they do; ex-smoker 15 y, 2 beers weekends; 4 days watery diarrhoea 6–7/day no blood, barely eating/drinking, light-headed standing, 3 days palpitations, exhausted, heavy legs; no chest pain, syncope, falls, vomiting. Holds back unless asked directly: missed Monday's dialysis; GP increased one dose last week ('any NEW meds?' → 'no, nothing new'); if asked which tablet — doesn't know. Interrupts at ~1 min 'should I be worried?'; indignant once at 'so my GP did this?'; 'sorry — what does that mean?' at jargon; hidden agenda: brother died of a heart attack at 58, fear dialysis is 'stopping working'",
+    "Examiner returns: BP 132/78, PR 88 reg, RR 16, SpO2 97% RA, T 36.7 · K 5.9 · eGFR 10–12 · VBG essentially normal · ECG peaked T, narrow QRS, P present",
+    "Variant A — four-task version (management, ~90 s of bullets): continuous monitoring, IV access; ECG changes → calcium gluconate 10% 10 mL IV over 2–5 min (stabilises myocardium, does not lower K), repeat if changes persist; insulin–dextrose 10 units short-acting in 50 mL 50% glucose over 15–30 min, hourly BSL × 6 h; nebulised salbutamol 10–20 mg adjunct; definitive = haemodialysis brought forward today; cease perindopril; cautious volume replacement against dry weight; recheck K and ECG",
+    "Variant B — ECG: absent P, broad QRS, rate 44 → 'severe hyperkalaemia with imminent arrest risk — call for help, MET call, calcium gluconate now, insulin–dextrose, renal registrar for immediate dialysis; history alongside, not before' ★ courtesy after recognition",
+    "Variant C — new plant-based diet + low-salt substitute: don't undo a healthy change; salt substitutes are potassium chloride and can be the biggest single source; renal dietitian today · Variant D — mid-north patient missed two sessions, transport failed: not his fault; renal social worker to fix PATS transport before discharge — ask WHY a session was missed, usually logistic",
+    "SA: renal unit/nephrologist; PATS for rural dialysis travel; MedSTAR 1300 13 12 33 for retrieval; recheck UEC 1–2 weeks after any ACE-i/ARB dose change"
+   ],
+   "fails": [
+    "Asking only about NEW medications — the briefed answer is 'no' and you leave without the diagnosis ★",
+    "Never asking about missed dialysis ★",
+    "'You have hyperkalaemia' as the diagnosis instead of AKI on chronic kidney disease ★",
+    "Taking a polite three-minute history while the QRS is broad (Variant B) ★",
+    "Never asking for observations; glancing at the drug list silently instead of reading it aloud",
+    "'I'd do renal function tests' — no analyte named; '5.9 is only mildly high' without the ECG sentence",
+    "Naming one cause instead of three; blaming the GP; no safety-net or teach-back; telling him to stop eating vegetables (Variant C)"
+   ],
+   "numbers": [
+    "K mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · ★ any level with ECG change = severe · here K 5.9, eGFR 10–12, HD twice weekly, ESKD 6 y",
+    "Calcium gluconate 10% 10 mL IV over 2–5 min, repeat if ECG changes persist · insulin–dextrose 10 units in 50 mL 50% glucose over 15–30 min, onset ~15 min, lasts 4–6 h, BSL hourly × 6 h · salbutamol 10–20 mg neb",
+    "Recheck K at 1–2 h and repeat ECG after treatment · UEC 1–2 weeks after any ACE-i dose change",
+    "Timing: 40 s open · 3 min history · 45 s ix · 2.5 min explain · 45 s close",
+    "MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Hyperkalaemia_Dialysis_2_Case_Tasks_Script_Notability.pdf (John Whitfield, 60, ESKD on haemodialysis, palpitations and diarrhoea)"
+ },
+ {
+  "id": "MED-71",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice, regional South Australia. You are the GP. Pre-operative results station; no physical examination.",
+  "stem": [
+   "Mark Ellis, 50, storeman, is booked for elective open right inguinal hernia repair in 10 days and attends for his pre-operative blood results. He feels well and has no complaint. Hypertension for 6 years on a thiazide diuretic. BP 138/84, HR 78 regular, RR 14, SpO2 98% RA, T 36.7. Results: sodium 135 (135–145), potassium 3.1 (3.5–5.2), bicarbonate 30 (22–32), creatinine 82 µmol/L, eGFR >90, anion gap normal."
+  ],
+  "tasks": [
+   "Explain the blood test results to the patient",
+   "Take a focused, relevant history",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient"
+  ],
+  "time": "8 minutes after 2 reading: results 2 min (marks earned in the first three sentences — say the kidneys are normal) · history 4 min (surgical context → ★ hypertension block incl. the dose change → intake → GI loss naming laxatives/teas → renal loss/mineralocorticoid → phaeo triad → other drugs by category, SADMA, FHx) · diagnosis + ★ four differentials aloud 2 min · plan: repeat, ECG, magnesium, replace, review the antihypertensive · answer the operation question · safety-net · summarise.",
+  "back": {
+   "dx": "Mild hypokalaemia (K 3.1) from thiazide-induced renal potassium wasting — the dose was doubled four weeks ago for creeping readings, which fits the timing exactly; bicarbonate 30 at the top of range is consistent. Normal renal function (say so — interpreting creatinine/eGFR is part of 'explain the results'). Four differential buckets, numbered, in plain English: (1) not enough in — restricted diet; (2) losing it through the bowel — vomiting, diarrhoea, laxatives (name tablets, powders, teas); (3) losing extra through the kidneys — a tablet like his, or 'a small gland above the kidney making too much of a hormone that dumps potassium' (primary aldosteronism: cramps, weakness, polyuria, resistant BP); (4) shift into cells — some asthma puffers, insulin, and 'a rare adrenaline-producing tumour' (phaeo triad: headache + sweating + palpitations, patients go pale, not flushed). Plan: repeat U&E to confirm, ECG today (arrhythmia is the consequence that matters 10 days from a GA), magnesium (thiazides waste Mg; low Mg makes K replacement ineffective), oral KCl supplement, review the antihypertensive for a potassium-sparing option, write to surgeon and anaesthetist, recheck in 3–7 days and again before theatre. The operation most likely proceeds — mild, asymptomatic; if it stays low a short delay is for anaesthetic safety. Never tell him to stop the antihypertensive himself. Hidden agenda: daughter's wedding in six weeks — ask an open concerns question early.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE, DOB · 'I've got your results — shall I take you through them?' · ★ 'The good news first: your kidneys are working normally.' Sodium 135 normal, lower end · potassium 3.1, a little below normal · 'the salt that helps your muscles and your heart work properly — worth sorting before an anaesthetic; not an emergency'"
+    ],
+    [
+     "1:30",
+     "'Is that going to stop my operation?' → acknowledge, park explicitly, promise to return · ★ 'Was there anything else you were hoping to cover today?' (wedding) · permission for questions"
+    ],
+    [
+     "2:00",
+     "Surgical context: when diagnosed, painful, ever stuck/hard/tender, bowel change (first GI screen, excludes obstruction) · ★ Hypertension: when, which tablet, dose, ★ 'has the dose been changed recently, or anything added?' → doubled 4 weeks ago · adherence, follow-up, control · chest pain, SOB/PND, vision, focal weakness"
+    ],
+    [
+     "3:30",
+     "Intake: diet change, typical day, fruit/veg, weight, alcohol · GI loss: vomiting, diarrhoea/looser motions, ★ 'laxatives — tablets, powders or teas?', bowel surgery/stoma"
+    ],
+    [
+     "4:15",
+     "Renal loss/mineralocorticoid: cramps, weakness (stairs, chair, lifting), polyuria/nocturia, thirst, paraesthesia, central weight gain/bruising/striae, liquorice · Phaeo: ★ 'episodes of bad headache, breaking out in a sweat and heart racing, all together, sudden then settling? go pale?'"
+    ],
+    [
+     "5:00",
+     "Other drugs by category: puffers (how often), steroids (tablets/creams/injections), insulin/diabetes tablets, OTC/herbal/vitamins, anyone else's fluid tablets, recent antibiotics · smoking 5/day, 6 drinks/weekend, allergies, PMHx (diabetes, thyroid, kidney), FHx (BP young, endocrine)"
+    ],
+    [
+     "5:45",
+     "★ Diagnosis: 'hypokalaemia — potassium lower than normal; most likely your blood pressure tablet — it makes the kidneys pass out salt and water and potassium goes with it; the dose doubling four weeks ago fits the timing exactly'"
+    ],
+    [
+     "6:15",
+     "★ 'But I did think about the other reasons, and that's why I asked all those questions': ONE not enough in · TWO bowel — vomiting, diarrhoea, laxatives · THREE kidneys — a tablet like yours, or a gland above the kidney making too much of a hormone that dumps potassium · FOUR shift into cells — puffers, insulin, a rare adrenaline-producing tumour · 'nothing points to those'"
+    ],
+    [
+     "7:00",
+     "Plan: repeat test, ECG today ('potassium affects the heart's rhythm'), magnesium ('if low, potassium won't come up'), potassium supplement, review the BP tablet · the operation: most likely proceeds, recheck before theatre, letter to surgeon and anaesthetist; if still low a short delay for safety · safety-net: marked weakness, palpitations, fainting, vomiting/diarrhoea → come back · summarise, 'what questions do you have?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'I've got your results here — shall I take you through them?' / ★ 'The good news first: your kidneys are working normally.'",
+    "'There's a salt called potassium, and yours is a little below the normal range. Potassium is the salt that helps your muscles and your heart work properly. It's not an emergency, and it's usually straightforward to fix.'",
+    "'Is that going to stop my operation?' → 'That's exactly what I want to sort out for you, and I'll give you a proper answer — let me ask you some questions first.' / ★ 'Was there anything in particular you were hoping to sort out today?'",
+    "★ 'Has the dose been changed recently, or has anything been added?'",
+    "'Do you use any laxatives — tablets, powders or teas?' / 'Are you passing more urine than usual, or getting up at night to go?' / 'Any puffers, steroid tablets, insulin, anything herbal, or anyone else's fluid tablets?'",
+    "★ 'Do you get episodes of a bad headache, heavy sweating and your heart racing, all together — coming on suddenly and then settling? Do you go pale with them?' (not 'flushing')",
+    "★ 'The most likely cause is your blood pressure tablet — it makes the kidneys pass out potassium in the urine, and the dose was doubled four weeks ago, which fits the timing exactly.'",
+    "★ 'One, not enough in. Two, losing it through the bowel. Three, losing extra through the kidneys. Four, potassium shifting into the cells.'",
+    "'I'd like to repeat the test, do a heart tracing today, and check your magnesium.' / 'I'll write to your surgeon and speak to the anaesthetic team so everyone has the same information.'",
+    "'Should I just stop the blood pressure tablet?' → 'No — please keep taking it for now. I'll review it and there are options that control your pressure without stripping potassium; we'll change it properly, not suddenly.' / 'Come back straight away if you get marked weakness, palpitations or fainting.'"
+   ],
+   "pefe": [
+    "Role-player: Mark, 50, storeman at a rural hardware/grain depot on the Yorke Peninsula; hernia 8 months, reducible, never stuck; thiazide 6 y, dose doubled 4 weeks ago, adherent; no other meds/puffers/steroids/laxatives/herbals/liquorice; smokes 5/day cutting down, 6 drinks/weekend; meat and potatoes, banana most days; father HTN, mother stroke 70s. Pushes 'is this going to stop my operation?' at 1:30 and 4:00; tense at the word heart; hidden agenda — daughter's wedding in six weeks, walking her down the aisle (revealed if asked an open concerns question, else at ~7 min); 'should I just stop the tablet?' if you finish early",
+    "Examiner challenges: 'Why an ECG? he's asymptomatic' → 'the consequence I care about is arrhythmia, ten days from a GA; changes appear without symptoms; finding T–U fusion or ectopy changes my urgency and my discussion with the anaesthetist' · 'Why magnesium?' → 'hypomagnesaemia causes renal K wasting and makes replacement ineffective; thiazides waste both' · 'Normal K range?' → 'laboratory-dependent, commonly ~3.5–5.2; I'd use the report's range; 3.1 is mild on any' · ★ 'Does hypokalaemia raise aldosterone?' → 'No — wrong way round: potassium stimulates aldosterone, so low K suppresses it; excess aldosterone causes renal K wasting, not a shift into cells' CORRECTION",
+    "Variant B — K 2.5, BP 168/98 on two agents, calf cramps, heavy legs on stairs, nocturia ×3–4: primary aldosteronism — 'a small gland above the kidney making too much of a hormone called aldosterone, pushes BP up and potassium down; treatment is different — a particular tablet, sometimes surgery; there's a blood test (ARR — correct K first, adjust interfering antihypertensives VERIFY)'; ECG today; ★ talk to the surgical team about postponing — automatic fail if the plan is unchanged",
+    "Variant C — 34F, K 2.8, 'a herbal regularity tea most nights, that's not really a medicine': senna = laxative = real cause; how often, how long; 'some people use them to manage their weight or how they feel about their body — is any of that part of it? no judgement, I ask everyone'; no moralising; National Alliance for Eating Disorders helpline (not NEDA) VERIFY current Australian service",
+    "Variant D — 68 on digoxin, K 3.2, off food, nauseated, 'the telly looks yellowish': ★ digoxin toxicity potentiated by hypokalaemia — ECG and digoxin level now, repeat UEC/K/Mg, seen today not next week; automatic fail if digoxin is on the list and you neither identify it nor escalate",
+    "SA: letter to surgeon and anaesthetist (regional hospital list); pre-anaesthetic clinic; TIS 131 450 · MedSTAR 1300 13 12 33 (not needed here)"
+   ],
+   "fails": [
+    "Giving the diagnosis and stopping — no four differentials said aloud in patient language ★",
+    "No concrete plan for the operation ★",
+    "Telling him to stop his blood pressure tablet himself ★",
+    "Reassuring him before proposing a repeat test; 'it's definitely just the fluid tablet' ★",
+    "Explaining results for four minutes; skipping 'your kidneys are normal'",
+    "Asking 'what medications?' and stopping — never asking about the dose change; accepting 'no other medications' without naming laxatives, puffers, steroids, insulin",
+    "Asking about 'flushing' for phaeo; 'hyperaldosteronism' or 'transcellular shift' to the patient; 'the operation will be fine, don't worry'"
+   ],
+   "numbers": [
+    "K normal 3.5–5.2 (3.5–5.0 safe answer) · mild 3.0–3.4 · moderate 2.5–2.9 · severe <2.5 · here K 3.1, Na 135, HCO3 30, eGFR >90, normal AG",
+    "ECG once K <~3.0: flat/inverted T → ST depression → prominent U → T–U fusion → ectopy → torsades",
+    "Mg normal ~0.7–1.1 · oral KCl slow-release 600 mg = 8 mmol; effervescent 14 mmol/tab VERIFY · IV KCl needs cardiac monitoring, rate/concentration per local protocol VERIFY",
+    "Recheck U&E + Mg 3–7 days, again before theatre · timing: results 2 · history 4 · dx + DDx 2",
+    "Phaeo triad: headache + sweating + palpitations, pallor not flushing · ARR after correcting K VERIFY"
+   ]
+  },
+  "source": "Hypokalaemia_2_Case_Tasks_Script_Notability.pdf (Mark Ellis, 50, K 3.1, hernia repair in 10 days)"
+ },
+ {
+  "id": "MED-72",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice, regional South Australia. No physical examination; no results provided. The examiner may ask what you would order. Six minutes of history, then explanation.",
+  "stem": [
+   "James Whitfield, 45, warehouse supervisor, married with two children, not seen here for two years, no recorded chronic disease: 'I've been feeling very thirsty and I'm drinking far more water than usual.' Nurse observations: BP 128/78, HR 76 regular, RR 14, SpO2 98%, T 36.8, weight 84 kg, BMI 27; blood glucose not yet done."
+  ],
+  "tasks": [
+   "Take a focused history (6 minutes)",
+   "Explain the most likely cause and the other conditions you considered",
+   "Answer his questions and outline the plan"
+  ],
+  "time": "8 minutes. Elicit his worry in the first minute (diabetes — his dad) · ★ put a number on the litres · ★ 'passing more urine?' — say aloud that no polyuria lowers diabetes · six blocks: sugar · marrow · brain · thyroid · ★ drugs and SUPPLEMENTS · lifestyle · hypercalcaemia sweep · four-link explanation: vitamin D → calcium → kidneys → thirst · ★ 'I can't be certain until I check a calcium' · separate him from his mother · safety-net.",
+  "back": {
+   "dx": "Excessive vitamin D supplementation (4 × 1000 IU = 4000 IU/day for six weeks, started because his mother has osteoporosis with two fractures this year) → probable hypercalcaemia → polydipsia. Ten days of constant worsening thirst, 4–5 L/day up from 2, no polyuria, nocturnal drinking not voiding, bowels sluggish this last week; no weight loss, vision change, infections; no bone pain, fatigue, sweats, bruising; no headache/vision loss; no heat intolerance, loose bowels, palpitations, tremor; no stones, nausea; lifestyle unremarkable. Four-link chain in plain words: vitamin D helps you absorb calcium → too much pushes blood calcium up → high calcium makes the kidneys pass out more water → your body feels that as thirst; the word is hypercalcaemia. Differentials, each with why less likely: diabetes (no polyuria/weight loss; finger-prick today anyway), overactive thyroid, a brain problem with the water-balance hormone (DI), a bone-marrow condition that raises calcium (myeloma — asked bone pain, tiredness, infections), everyday causes (coffee, alcohol, salt, heat). Honest uncertainty: no blood test yet, so no declared 'vitamin D poisoning'. Plan: stop the capsules today, bring the bottle in, BSL now, bloods for calcium, UEC, 25-OH vitamin D, glucose, TSH; drink to thirst 2–3 L; review when results back, phone sooner if needed. Separate him from his mother: her dose was worked out for her bones and her blood test — his wasn't; do not change her treatment.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE, 'can I call you James?' · open · 'I can understand why that would be worrying you' · signpost groups · ★ 'was there anything in particular you were worried this might be?' → diabetes, dad → 'I'll check your sugar before you leave either way'"
+    ],
+    [
+     "0:45",
+     "Explore: duration 10 days, constant, worsening · ★ 'how much are you actually drinking — put a number on it' → 4–5 L, was 2 · better/worse (no) · night — drinking, not voiding · impact (bottle round the warehouse)"
+    ],
+    [
+     "1:45",
+     "Sugar block, five questions: ★ passing more urine? (no) · hungrier? · weight loss? · blurred vision? · recurrent infections? · FHx → ★ say aloud: 'thirst without passing more urine makes diabetes a good deal less likely — I'll still check your sugar'"
+    ],
+    [
+     "2:45",
+     "Marrow (bone/back pain worse at night/rest, fatigue, weight loss/sweats/infections, bruising/bleeding) · brain (morning headache, vomiting, vision) · thyroid (heat, bowels, palpitations, tremor) — four questions each, no more"
+    ],
+    [
+     "3:45",
+     "★ Drugs in this order: 'regular medicines from a doctor?' (no) → 'anything you buy yourself — painkillers, herbal?' → ★ 'any vitamin D, or a multivitamin?' → 'just vitamin D, that's not really a medicine, is it?' → no change of tone: strength per capsule (1000), how many/day (4), how long (6 weeks), anything with calcium (no), ★ 'what made you start?' → mother's osteoporosis, two fractures this year → acknowledge, promise to return"
+    ],
+    [
+     "4:45",
+     "Hypercalcaemia sweep: loin pain/stones, bone ache, nausea/vomiting, abdominal pain/indigestion, ★ constipation (sluggish this week), mood/memory/concentration, weakness/drowsiness · lifestyle: smoking, alcohol, coffee, salt, exercise, hot workplace · PMHx, FHx"
+    ],
+    [
+     "6:00",
+     "Move 1 summarise and check · Move 2 ★ the four-link chain, name 'hypercalcaemia' · Move 3 ★ 'I can't be certain until I check a calcium level' + differentials in plain English with why less likely · Move 4 ★ separate him from his mother"
+    ],
+    [
+     "7:15",
+     "His questions ('I thought vitamins were safe' — stored in fat, builds up; 'have I damaged myself' — almost certainly not, bloods check the kidneys; 'should Mum stop hers' — no, her own GP; 'how long' — halves every 2–3 weeks) · plan · ★ safety-net unprompted: vomiting, bad tummy pain, bad constipation, weakness, confusion or unusual sleepiness → straight back/ED, 'you'd need a drip' · summarise, 'anything I haven't covered?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Was there anything in particular you were worried this might be?' (in the first minute)",
+    "★ 'How much are you actually drinking in a day — can you put a number on it, glasses or bottles?'",
+    "★ 'Are you passing more urine than usual?' → 'Thirst without passing more urine makes diabetes a good deal less likely, and I'll check your sugar with a finger-prick before you leave either way.'",
+    "'Any pain in your bones or your back — worse at night or at rest? Unusually tired? Weight loss, night sweats, infections you've struggled to shake? Easy bruising?' (myeloma, out loud, man over 40)",
+    "★ 'Any medicines from a doctor — and anything you buy yourself, vitamins or supplements?' / 'What does the bottle say — how many units per capsule, and how many a day? For how long? Anything with calcium in it?' / ★ 'What made you start taking it?'",
+    "★ 'Vitamin D helps your body absorb calcium from your food. If you take more than you need, the calcium in your blood can drift up. High calcium makes your kidneys pass out more water, which dries you out — and what your body feels when it's drying out is thirst.'",
+    "★ 'I want to be straight with you — I can't be certain until I check a calcium level in your blood.'",
+    "★ 'Taking it because of your mum was a sensible instinct, not a silly one. The difference is that her dose was worked out for her bones and her blood test. Yours hasn't been.' / 'Please don't change your mum's treatment — that's a conversation for her own GP.'",
+    "'Am I going to end up like Mum?' → 'Osteoporosis isn't something you catch from your mother — family history is one risk among several. The right answer isn't extra vitamin D on spec; it's checking your own level, your other risks, and at the right age a bone density scan. Shall we book a longer appointment once this settles?'",
+    "★ 'Come back straight away, or go to the emergency department, if you start being sick, get bad tummy pain or become badly constipated, feel weak, or if you or your wife notice you're confused or unusually sleepy.'"
+   ],
+   "pefe": [
+    "Role-player: James, 45, air-conditioned warehouse, wife Karen, two teenagers, non-smoker, 4–5 beers/week, 2 coffees, gym twice a week, no prescribed meds. Withholds the vitamin D: 'any medications?' → 'no, nothing from the doctor'; only 'things you buy yourself / vitamins / supplements' gets 'just vitamin D — that's not really a medicine, is it?' — then makes you ask strength and number separately. Fear: diabetes (dad T2DM). Hidden agenda: mum's osteoporosis, two fractures — if never asked, pushes at ~5 min 'is this going to happen to my bones like my mum?'. If blamed: 'I was only trying to look after myself', then flat single words. End question: 'should I tell Mum to stop hers?' — changing her treatment = fail",
+    "Investigations (if the examiner asks): BSL now; corrected calcium (albumin), UEC/eGFR, phosphate, 25-OH vitamin D, PTH (expect suppressed), glucose/HbA1c, TSH · corrected Ca = measured + 0.02 × (40 − albumin)",
+    "Variant B — genuine toxicity: 50 000 IU capsules DAILY for three months (label said weekly), morning nausea, constipation → 'around fifty times what most people need, for months — enough to make the calcium genuinely high; bloods TODAY not next week; stop everything with vitamin D or calcium now; if very high, or vomiting/confused → a drip in hospital for a day or two' · say the ED threshold out loud · remote: MedSTAR 1300 13 12 33",
+    "Variant C — 68, thirsty, worn out, 2 months of night-time mid-back ache, 5 kg loss, no supplements: 'a few conditions raise calcium; one is a condition of the bone marrow, and with your back pain and weight loss I don't want to leave that unchecked — it's on my list, not a diagnosis; this week: calcium, blood count, kidney function, specific protein tests (SPEP/free light chains), imaging of the back' — no 'wear and tear', no blunt 'cancer'",
+    "Variant D — corrected Ca 2.35 (normal): vitamin D is not the explanation; with normal glucose and true polydipsia 4–5 L → paired serum/urine osmolality for diabetes insipidus, TSH, UEC, K, drug review (lithium); dilute urine against raised serum osm → refer for water deprivation test; primary polydipsia last, diagnosis of exclusion; still advise a sensible dose but don't claim causation",
+    "SA: regional GP; pathology courier timing for same-day bloods; MedSTAR 1300 13 12 33 for retrieval; TIS 131 450"
+   ],
+   "fails": [
+    "Never asking about vitamins or supplements — 'any medications?' → 'no' → station unpassable ★",
+    "Never asking whether he is passing more urine ★",
+    "No bone pain / weight loss / infection screen in a man over forty ★",
+    "Declaring vitamin D toxicity as established fact with no blood test ★",
+    "Ending without a named safety-net and a definite review ★",
+    "Leaving his worry to the last thirty seconds; accepting 'more than usual' without litres; spending three minutes on diabetes because of the family history",
+    "Reacting with alarm at the vitamin D, or hearing it and abandoning the rest of the history; implying he's been foolish; changing his mother's treatment"
+   ],
+   "numbers": [
+    "Thirst 10 days · 4–5 L/day (was 2) · vitamin D 4 × 1000 IU = 4000 IU/day × 6 weeks · half-life 2–3 weeks",
+    "25(OH)D: sufficient ≥50 nmol/L · insufficient 30–49 · moderate deficiency 12.5–29 · severe <12.5 · toxicity generally >10 000 IU/day sustained or 25(OH)D >250 · deficiency Rx 1000–2000 IU/day mild; 3000–5000 IU/day 6–12 weeks moderate–severe",
+    "Calcium normal 2.10–2.60 · corrected = measured + 0.02 × (40 − albumin) · mild <3.00 · moderate 3.00–3.40 · severe >3.40 or symptomatic → ED · oral fluids 2–3 L; IV 0.9% NaCl if severe",
+    "Timing: worry asked <0:45 · supplement question reached by 4:15 · history stops at 6:00",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "VitaminD_Thirst_2_Case_Tasks_Script_Notability.pdf (James Whitfield, 45, thirst — vitamin D excess)"
+ },
+ {
+  "id": "MED-73",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice, regional South Australia. Results-discussion station; the examiner interrupts to hand you further results after your investigation list.",
+  "stem": [
+   "Ms Janine Whitfield, 45, teacher's aide, attends to discuss blood tests taken at a routine check-up two weeks ago. Hypothyroidism for eight years on levothyroxine 100 µg daily; no other regular medicines on file; non-smoker; she has no complaint and feels perfectly well. Results: TSH 2.1 (0.4–4.0), free T4 14 (10–20), albumin 31 g/L (low, 35–50), total calcium 2.56 (normal, 2.10–2.60), corrected calcium 2.78 — HIGH."
+  ],
+  "tasks": [
+   "Take a focused, relevant history",
+   "Explain the blood results you already have, in plain language",
+   "Tell the examiner the further investigations you would request, in order of priority",
+   "The examiner will give you those results. Explain your diagnosis and your reasoning to the patient, including the differentials you considered"
+  ],
+  "time": "8 minutes after 2 reading: history 4 · explain current results 1 · investigations 1 · diagnosis + differentials 2. Write 'corrected 2.78 · albumin low · TSH normal · PTH first' and the seven history headings before you speak. Name the abnormal result early and size it · why the test, ever told before · ≥5 hypercalcaemia symptoms · ★ full malignancy screen · supplements, antacids, thiazide/lithium by use, TB/sarcoid, phaeo, thyroid · ICE before explaining · ★ corrected not total · ★ PTH first WITH a reason · four glands, one overworking · not cancer · ≥4 differentials · plan, referral, safety-net, summary.",
+  "back": {
+   "dx": "Primary hyperparathyroidism (single adenoma ~85%) — PTH elevated with corrected calcium 2.78, vitamin D normal, phosphate low-normal, eGFR 88, examination normal. Total calcium 2.56 reads 'normal' only because albumin is 31: corrected = 2.56 + 0.02 × (40 − 31) = 2.74 ≈ 2.78 per report — a station-ending false reassurance if you read the total line. Calcium was 'high last year'; she was told to stop her multivitamin and cut dairy — chronicity makes malignancy less likely but does not exclude it, and diet was never the driver (correct the science kindly without attacking the colleague). Only positive symptom: 'a bit more thirsty, I keep a bottle on my desk'. Malignancy screen clean (weight, appetite, lumps, sweats, breast/mammogram clear last year, cough, smoking, haematuria); mother had breast cancer at 60 — the hidden agenda; ask ICE before you explain. Investigations ranked with BECAUSE: 1 serum PTH (commonest cause; the one test that splits the differential in two) · 2 25-OH vitamin D with phosphate (read as a set; low phosphate supports PTH) · 3 UEC/eGFR (renal function, hypercalcaemic nephropathy) · then CXR (lung Ca, TB, sarcoid), FBE/ESR/SPEP + free light chains (myeloma, lymphoma), 24-h urine calcium (exclude FHH before any surgery), full examination incl. breasts and nodes. Explain: four tiny glands behind the thyroid, different job — keep blood calcium right; one is overworking, pulling calcium from bone; the hormone is raised, which confirms it; not cancer, not the thyroid tablets, not diet. Differentials named: cancers (blood, breast, lung, kidney), vitamin D/calcium antacid excess, fluid tablets, lithium, overactive thyroid (excluded), sarcoid/TB. Refer endocrinology (age <50 → surgery will be discussed, their decision with her); hydrate; do not restrict dairy; safety-net.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE, identity · open question · ★ 'I can see one of the numbers, your calcium, is a little higher than we'd like. It's not an emergency, but it does need explaining. Would it be alright if I asked you some questions first?'"
+    ],
+    [
+     "0:30",
+     "'What made you have the test?' · ★ 'Has anyone ever told you before that your calcium was high?' → yes, last year; multivitamin stopped, dairy cut, nothing else done · 'any further tests or treatment?'"
+    ],
+    [
+     "1:00",
+     "Symptoms ≥5: nausea/vomiting · abdominal pain/constipation · bone/back pain · weakness/tiredness · thirst/polyuria/nocturia (→ 'a bit more thirsty') · stones/loin pain · mood/memory/concentration — 'these cover both the symptoms and the commonest cause'"
+    ],
+    [
+     "1:45",
+     "★ Malignancy screen, full, 'questions I ask everybody with this result': weight, appetite, lumps (neck/axilla/groin), night sweats, breast lump/discharge/mammogram, cough/haemoptysis/smoking, haematuria, cancer in you or family (mother, breast, 60) · 'why are you asking all this?' → stop, turn, explain honestly"
+    ],
+    [
+     "2:45",
+     "Supplements: vitamin D, multivitamin, calcium — dose, duration · antacids (Gaviscon monthly) · health-food products · prescription by USE: 'anything for blood pressure or fluid, or any tablet for your mood' · SOB/chest pain/fevers/TB contact · joint pain/rash/shin lumps · headache-sweating-flushing-palpitations, endocrine FHx · thyroid duration/adherence/tremor/heat · alcohol, smoking, PMHx · ★ ICE: 'anything worrying you about these results?' → mother's cancer"
+    ],
+    [
+     "4:15",
+     "★ Explain: TSH and T4 normal → thyroxine dose right · 'calcium travels two ways — free, and carried by a protein called albumin; your albumin is a bit low so the raw number looks normal; adjusted for the protein the true level is 2.78, we'd want it under 2.60 — genuinely high, mildly' · 'calcium isn't controlled by what you eat; a hormone controls it — the question is which part of that system is out' · 'so the dairy was pointless?' → reasonable first step, but not the fix"
+    ],
+    [
+     "5:15",
+     "★ To the examiner, ranked with reasons: 1 PTH because… 2 25-OH vitamin D + phosphate because… 3 UEC/eGFR because… then CXR; FBE, ESR, SPEP + FLC; 24-h urine calcium; full examination incl. breasts and nodes → PTH elevated, vit D normal, PO4 low-normal, eGFR 88, examination normal"
+    ],
+    [
+     "6:15",
+     "★ 'Behind your thyroid sit four tiny glands called the parathyroid glands — different glands, different job. One appears to be overworking… today's test shows that hormone is raised, which confirms it. It's called primary hyperparathyroidism. It is not a cancer, and it is not caused by your thyroid tablets or by what you eat.' · 'is it my thyroid tablets?' answered"
+    ],
+    [
+     "7:00",
+     "Differentials aloud: cancer (blood, breast, lung, kidney — why I asked, CXR and bloods still) · vitamin D/antacid excess · fluid tablets, lithium · overactive thyroid (excluded) · sarcoid/TB (other reason for CXR) · plan: endocrine referral, surgery discussed because of her age — their decision; drink plenty of water; don't cut dairy · ★ safety-net: very thirsty + lots of urine, vomiting, drowsy/confused, severe abdominal/back/loin pain → same day · review ~1 week · summarise, offer to write it down"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'I can see one of the numbers, your calcium, is a little higher than we'd like. It's not an emergency, but it does need explaining. Would it be alright if I asked you some questions first, so I can work out why?'",
+    "★ 'Has anyone ever told you before that your calcium was high?' / 'Did anyone do any further tests, or start any treatment for it?'",
+    "★ 'I'm going to ask some questions I ask everybody with this result, just to be thorough.' → weight, appetite, lumps, night sweats, breast/mammogram, cough/blood, smoking, urine blood, cancer in you or your family",
+    "'Why are you asking all this?' → 'A high calcium has several possible causes. Most are not serious, and the commonest by far is a small gland problem. But a few cancers can also raise calcium, so I check for them in everybody — not because I suspect it in you. Nothing you've told me so far points that way.'",
+    "'Apart from the thyroid tablet, any other regular medicine — anything for blood pressure or fluid, or any tablet for your mood?' (thiazide, lithium by use) / 'Any vitamin D, multivitamins or calcium tablets? Anything for indigestion — antacid tablets or liquid?'",
+    "★ 'Calcium travels in the blood two ways — some floats free, some is carried by a protein called albumin. Your albumin is low, so the raw number looks normal; once we adjust for it, the true level is high.' / 'Calcium isn't really controlled by what you eat — your body controls it with a hormone.'",
+    "★ 'My first priority is serum parathyroid hormone, because primary hyperparathyroidism is the commonest cause of hypercalcaemia in the community and PTH is the single test that splits the differential in two.' / 'Calcium, phosphate and vitamin D are read as a set.'",
+    "★ 'Behind your thyroid gland sit four tiny glands called the parathyroid glands — different glands, different job. Their only job is keeping your blood calcium right. One of them appears to be overworking, and that pulls extra calcium out of your bones into your blood.' / ★ 'It is not a cancer, and it is not caused by your thyroid tablets or by what you eat.'",
+    "'Is it cancer?' → 'On everything I have so far, no. Your hormone result points to a gland problem, not a cancer. I'm still completing a chest x-ray and a couple of blood tests so that I'm certain rather than nearly certain.' / 'Should I stop dairy?' → 'No — diet isn't the driver, and cutting calcium hard can be bad for your bones. Drink plenty of water.' / 'Will I need an operation?' → 'Possibly — the only definitive treatment, but not everyone needs one; because you're forty-five the specialist will talk it through seriously.'",
+    "★ 'If you become very thirsty and pass a lot of urine, start vomiting, feel drowsy or confused, or get severe tummy, back or loin pain, I want you seen the same day.' / 'To summarise — is there anything I've missed, or anything you'd like me to write down?'"
+   ],
+   "pefe": [
+    "Role-player: Janine, 45, teacher's aide 4 days/week, husband, two teenagers, 40-min drive; levothyroxine 100 µg, never misses; stopped multivitamin last year on advice; Gaviscon ~monthly; no BP/fluid/mood tablets; never smoked, 2 wines Friday; mammogram last year clear; mother breast cancer at 60, alive. Only positive: 'a bit more thirsty, I keep a bottle on my desk' — given only if asked. Brisk, impatient at first; guarded during cancer questions; after the breast question asks 'why are you asking all this?' every time; if you read the total calcium as normal: 'so there's nothing wrong then?'; asks 'is it my thyroid tablets?' and 'will I need an operation?'; if falsely reassured before tests: 'how can you be sure?'. Hidden agenda released on ICE, else volunteered at ~7 min as you summarise",
+    "Examiner returns: PTH elevated · 25-OH vitamin D normal · phosphate low-normal · eGFR 88 · full examination normal · everything else normal. Examiner challenges: 'Why not image the parathyroids?' → 'the diagnosis is biochemical; sestamibi/ultrasound are for the surgeon to localise, not to diagnose' · 'Avoid dairy?' → 'no; severe restriction can worsen bone loss; hydration matters more' · 'Frusemide?' → 'only for overload during rehydration; not a routine calcium-lowering treatment'",
+    "Version B — high-dose health-food vitamin D for 8 months + calcium antacids most nights: examiner gives PTH suppressed <1.0, 25-OH D 310, eGFR 74, PO4 normal → 'a low parathyroid hormone tells me the gland is behaving and being switched off — the extra calcium is coming from somewhere else; your vitamin D is ~4× target — the supplement, probably with the antacids (milk–alkali)' → stop both today, hydrate, recheck 2–4 weeks; ★ suppressed PTH is the MALIGNANCY arm — still complete CXR and bloods · corrected Ca 2.88",
+    "Variant C — 62, corrected Ca 3.15, 6 kg loss since Christmas, night-waking low back ache, worn out; Hb 96, creatinine 148, PTH suppressed, ESR 88 → 'myeloma until proved otherwise': SPEP, serum FLC, urine Bence-Jones, film, LDH, whole-body low-dose CT or MRI spine (not plain films); IV normal saline now; urgent haematology; ★ ask about cord compression (numbness, leg weakness, bladder/bowel) — same-day emergency; warning-shot register, 'today rather than next week'",
+    "Variant D — 58 on indapamide + lithium, corrected 2.72, asymptomatic: switch the thiazide to another antihypertensive, recheck 2–4 weeks; ★ do NOT stop lithium unilaterally — speak with the psychiatrist, decide together; check PTH (lithium can make the glands overactive) · Variant E — 28M, Ca 2.70 pre-employment, father and sister 'high calcium', PTH mildly raised: FHH — 24-h urine calcium and Ca:Cr clearance ratio (<0.01 supports), CaSR gene testing; these patients are harmed by parathyroid surgery",
+    "SA: endocrinology referral (RAH/FMC/Lyell McEwin); PATS for travel; MedSTAR 1300 13 12 33 only if a Version B/C patient needs retrieval; TIS 131 450"
+   ],
+   "fails": [
+    "Saying 'your calcium is actually normal' because you read the total line ★",
+    "PTH not first in the investigation list, or a flat list with no BECAUSE ★",
+    "Never asking a single cancer question; abandoning the malignancy screen because it was 'high last year' ★",
+    "Falsely reassuring ('it's definitely nothing') before any tests; or finishing on the diagnosis with no differentials, plan or safety-net ★",
+    "Jargon: 'PTH-dependent hypercalcaemia secondary to a parathyroid adenoma'",
+    "Endorsing the dairy restriction to avoid contradicting a colleague; asking 'any other medications?' and accepting 'no' without naming thiazide and lithium by use",
+    "Skipping ICE so the mother's cancer lands at minute seven; stopping the supplement in Version B and declaring the case closed; stopping lithium unilaterally in Variant D"
+   ],
+   "numbers": [
+    "Corrected Ca = total + 0.02 × (40 − albumin g/L) · here total 2.56, albumin 31, corrected 2.78 · reference 2.10–2.60 · mild <3.0 · moderate 3.0–3.5 · severe >3.5",
+    "Top three: PTH · 25-OH vitamin D + phosphate · UEC/eGFR · causes 1 and 2: hyperparathyroidism, then malignancy · adenoma ~85% of primary disease",
+    "Surgery triggers: age <50 · Ca >0.25 above upper limit · eGFR <60 · urine Ca >10 mmol/day · stones · T-score ≤−2.5 · FHH: Ca:Cr clearance ratio <0.01 · ECG: short QT",
+    "Severe: saline 4–6 L/24 h · zoledronic acid 4 mg IV over ≥15 min after rehydration · calcitonin 4 units/kg SC/IM 12-hourly · prednisolone 20–40 mg/day if vitamin D–mediated VERIFY",
+    "Timing: 0:00 WIPE/name it · 0:30 why/before · 1:00 symptoms · 1:45 malignancy · 2:45 drugs etc + ICE · 4:15 explain · 5:15 ranked ix · 6:15 dx/DDx/plan · cut the thyroid block, never the malignancy block · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Hypercalcaemia_2_Case_Tasks_Script_Notability.pdf (Janine Whitfield, 45, corrected calcium 2.78 on a routine check)"
+ },
+ {
+  "id": "MED-74",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Suburban general practice; you are the GP. Vitals (including BSL) on request. 9-minute station. RECALL NOTE: the source recording verifies the stem and history; later tasks follow the standard three-task shape.",
+  "stem": [
+   "Marianne Kovac, 50, presents with two days of nausea and vomiting on a week of feeling weak, tired and lethargic. She is holding a vomit bag. Known hypertension and chronic kidney disease. Current medications: perindopril 5 mg daily, hydrochlorothiazide 25 mg daily, ibuprofen 400 mg three times daily."
+  ],
+  "tasks": [
+   "Take a focused history (4 minutes)",
+   "Ask the examiner for the examination findings and investigations you want",
+   "Explain the most likely diagnosis and outline your immediate management"
+  ],
+  "time": "9 minutes: 40 s opening · 4 min history · 1.5 min examination/investigations · 2 min explanation · 45 s safety-net and close. The diagnosis is on the medication list — the marks are for what you ask AFTER you've worked it out: ★ obs incl. BSL · acknowledge the bag, offer water · vomit content · ★ 'when did you start the PAINKILLER, who started it' + OTC/chemist separately · ★ cardiac screen unprompted · abdomen/melaena · ★ urine output, uraemic symptoms · fluid status FIRST · investigations by analyte incl. ECG and troponin · ★ diagnosis by name · triple whammy in plain English · stop, hold, ★ transfer today, no driving · teach-back.",
+  "back": {
+   "dx": "Acute kidney injury on chronic kidney disease (stage 2 — eGFR 45 → 22, creatinine roughly doubled) with hyperkalaemia (K 6.3 + peaked T waves, narrow QRS → treat as severe) and metabolic acidosis (HCO3 18) — the 'triple whammy': NSAID (constricts the afferent arteriole) + ACE inhibitor (dilates the efferent) + thiazide (lowers circulating volume), in a woman with baseline CKD. Ibuprofen 400 mg tds for three weeks for a knee — self-bought at the chemist, then scripted by a locum who didn't have her record; she doesn't call it a medication. Uraemic symptoms: much less urine, postural dizziness, metallic taste; examination — dry mucosa, postural drop 20 systolic, JVP not visible, abdomen soft, no bladder, no asterixis. BSL 5.4 removes DKA at the door; troponin normal and cardiac screen negative (nausea + lethargy without chest pain is a recognised MI presentation in women and CKD). Explain: 'your kidneys were working at about half strength and have taken a sudden extra hit — an acute injury on chronic kidney disease; waste products build up and cause the sickness and exhaustion'; mechanism of the three drugs in plain words; 'you can buy it anywhere' → 'that's exactly why it catches people out'. Plan: ibuprofen stops today and never again without checking; hold (not stop forever) perindopril and the thiazide while unwell; ★ ED today for fluids and potassium treatment — ring ahead, results with her, don't drive; repeat UEC 48–72 h; paracetamol + physiotherapy for the knee; letter to usual GP, flag on file. Hidden agenda: mother died on dialysis — 'not today, and in most cases like yours this is reversible once we take the pressure off'.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'Examiner — BP, pulse, RR, saturations, temperature AND blood sugar?' → 142/86, 72 reg, 16, 98%, afebrile, BSL 5.4 → 'stable, afebrile, normal sugar — a diabetic emergency is unlikely from the outset'"
+    ],
+    [
+     "0:30",
+     "WIPE, 'how would you like me to address you?' · open · ★ 'I'm sorry — that sounds miserable. Would you like some water first?' (the vomit bag is marked)"
+    ],
+    [
+     "1:00",
+     "Symptom package in one block: onset (tiredness 1 week, vomiting 2 days), worse, better/worse · 'tired — low energy, sleepy, or breathless?' · frequency 4–5/day · ★ 'what does the vomit look like — any blood, or anything green?' (UGI bleed vs obstruction; she's on an NSAID) · keeping anything down?"
+    ],
+    [
+     "2:00",
+     "Background: when diagnosed CKD (5 y, 'about half') and HTN (10 y), what for them → perindopril + 'a fluid tablet' · adherence · ★ 'and when did you start the PAINKILLER — who started it, and what was it for?' → ibuprofen ~3 weeks, knee, self-bought then locum script · ★ 'did whoever prescribed it know about your kidneys?' → 'it's only ibuprofen' (don't correct now; save it) · 'anything from the chemist, or herbal?'"
+    ],
+    [
+     "3:00",
+     "★ Cardiac screen, unprompted, 10 s: 'a few quick questions to make sure I'm not missing something serious — chest/arm/jaw/back discomfort, exertional SOB, cold sweats (clammy yesterday), palpitations, blackouts'"
+    ],
+    [
+     "3:20",
+     "Abdomen: pain/where, bowels, ★ black/tarry stools, fevers, jaundice · ★ urine output 'more, less or the same?' → much less · dizzy standing (yes) · confusion, hiccups, itch, ★ metallic taste (yes)"
+    ],
+    [
+     "4:15",
+     "★ Examination — fluid status FIRST: postural BP, mucosa, JVP, cap refill; abdomen (tenderness, guarding, organomegaly, palpable bladder); cardiorespiratory; pallor, pigmentation, oedema, asterixis → dry, postural drop 20, JVP not seen, soft abdomen, no bladder, no asterixis"
+    ],
+    [
+     "5:00",
+     "★ Investigations by name: ECG now (hyperkalaemia AND ischaemia) · UEC/eGFR vs baseline — specifically K, Na, bicarbonate · VBG · troponin · FBE, Ca, PO4, Mg, LFT, lipase, urinalysis → eGFR 22 (baseline 45), creatinine ×2, K 6.3, HCO3 18, troponin normal, peaked T narrow QRS · 'why a troponin with no chest pain?' answered · read back: stage 2 AKI on CKD; K moderate by number, severe by ECG; acidosis shifts K out of cells"
+    ],
+    [
+     "6:15",
+     "★ Diagnosis by name · 'will I need dialysis? my mother died on dialysis' → pause, acknowledge, honest answer · mechanism: three medicines, three directions — painkiller narrows the vessel in, perindopril widens the vessel out, fluid tablet lowers the circulating volume — 'the triple whammy' · 'you can buy it anywhere' → exactly why it catches people out · 'the locum's fault?' → missing record, not the person; letter to usual GP"
+    ],
+    [
+     "7:30",
+     "Plan: 1 ibuprofen stops today, never that class without checking · 2 hold perindopril and the fluid tablet — temporary, don't stop anything else alone · 3 ★ ED today (K affects the heart's rhythm; can't keep fluids down) — ring ahead, results with her · ★ don't drive · red flags en route: chest pain, palpitations, faint, weak muscles → ambulance · repeat UEC 2–3 days · paracetamol + physio for the knee · ★ teach-back · 'anything still worrying you?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Could I have her observations — including a blood sugar?' / 'I'm sorry, that sounds miserable. Would you like some water first?'",
+    "'When you say tired — low in energy, sleepy, or breathless when you move about?' / ★ 'What does the vomit look like — any blood, or anything green?'",
+    "★ 'When did you start the painkiller, and who started it for you?' / 'Anything from the chemist, or anything herbal?' / 'Did whoever prescribed it know about your kidneys?'",
+    "★ 'A few quick questions to make sure I'm not missing something serious. Any discomfort or tightness in the chest, arm, jaw or back?'",
+    "★ 'How much urine have you passed in the last day — more, less, or the same?' / 'Any confusion, hiccups, itch or a metallic taste?'",
+    "★ 'I'd like her fluid status first — postural blood pressure, mucous membranes, JVP and capillary refill.' / 'Why a troponin with no chest pain?' → 'Because nausea and lethargy without chest pain is a recognised presentation of infarction in women and in chronic kidney disease.'",
+    "★ 'Her eGFR has halved from 45 to 22, which meets criteria for a stage 2 acute kidney injury.' / ★ 'The potassium is 6.3, and with ECG changes I treat that as severe regardless of the number.'",
+    "★ 'Your kidneys have taken a sudden extra hit on top of the long-standing damage — an acute kidney injury on top of chronic kidney disease.' / 'Will I need dialysis?' → 'Not today, and in most cases like yours this is reversible once we take the pressure off — that's exactly why we're acting now.'",
+    "★ 'Each of these medicines is sensible on its own. Together, with kidneys like yours, they're too much — in Australia we call it the triple whammy.' / 'But it's only ibuprofen — you can buy it anywhere' → 'You can — and that's exactly why it catches people out. Being sold without a prescription doesn't make it harmless for your kidneys.'",
+    "★ 'The painkiller stops today. The other two we hold while you're unwell — that's temporary.' / ★ 'I'm sending you to the emergency department today. Please don't drive.' / 'Could you tell me back what you'll say when you get to the hospital?'"
+   ],
+   "pefe": [
+    "Role-player: Marianne, 50, school administrator, husband, two grown children; HTN 10 y, CKD 5 y ('about half'), never dialysed; perindopril + 'a fluid tablet' never missed; ibuprofen 400 mg tds ~3 weeks for right knee (self-bought, then locum script; usual GP on leave) — not thought of as a medication; never smoked, wine most weekends; mother died on dialysis. 'What medications?' → 'perindopril and a fluid tablet' and STOP; ibuprofen only for 'painkillers', 'from the chemist', 'over the counter'. Slow, flat, retching; withdraws if not offered water; defensive once 'it's only ibuprofen'; 'is this the locum's fault?'; pushes back once on hospital 'can't I stop the tablets and come back Friday?' — agrees only if you hold firm with a reason; 'sorry — what does that mean?' at jargon; hidden agenda dialysis/mother in the last two minutes unless asked",
+    "Examiner returns: BP 142/86, PR 72, RR 16, SpO2 98, T 36.6, BSL 5.4 · dry mucosa, postural drop 20 systolic, JVP not visible, abdomen soft non-tender, no palpable bladder, HS dual, chest clear, no pallor/oedema/asterixis · eGFR 22 (baseline 45), creatinine ~×2, K 6.3, HCO3 18, troponin normal, ECG peaked T narrow QRS",
+    "Variant A — prevention: visiting gout patient on perindopril + a fluid tablet demands indomethacin → 'I can treat that today — before I write anything, what else are you on, any kidney trouble? …an anti-inflammatory is the one thing I don't want to give you: those three together can shut the kidneys down within days' → colchicine or short prednisolone, check UEC while here VERIFY TG gout dosing/renal cautions",
+    "Variant B — ECG: ST elevation II, III, aVF → 'inferior STEMI presenting as nausea and lethargy without chest pain — ambulance now, aspirin 300 mg chewed, IV access, activate the acute coronary pathway; the renal picture is real but no longer the priority' ★ continuing the triple-whammy talk = automatic fail",
+    "Variant C — coffee-ground vomit + black sticky stools: NSAID upper GI bleed contributing to the AKI → ambulance now, bloods, fluids, PPI, endoscopy · Variant D — refuses (daughter's wedding Saturday): honest risk statement, 'I'd be failing you if I sent you home; may only be hours on a drip'; if still declines: document discussion and specific risks, confirm capacity, written red flags, same-day repeat bloods, defined review, can change her mind any time — never simply agree",
+    "SA: ED (nearest regional/metropolitan); MedSTAR 1300 13 12 33 if retrieval; PATS; TIS 131 450; recheck UEC 48–72 h after stopping, 1–2 weeks after restarting an ACE-i"
+   ],
+   "fails": [
+    "Asking only 'what medications are you on?' — walking past the ibuprofen ★",
+    "No cardiac screen without being prompted ★",
+    "'High potassium' as the diagnosis instead of AKI on CKD; not explaining the three-drug combination in her words ★",
+    "Sending her home to 'come back Friday' with K 6.3 and ECG changes; letting her drive ★",
+    "Continuing to discuss the triple whammy after an ischaemic ECG (Variant B) ★",
+    "Ignoring the vomit bag; asking only how many times, never what the vomit looked like; never asking about urine output or black stools",
+    "'Renal function tests' with no analyte; stopping perindopril and the thiazide forever rather than holding; blaming the locum; deflecting the dialysis fear; no alternative for the knee; no teach-back"
+   ],
+   "numbers": [
+    "Triple whammy = diuretic + NSAID + ACE-i/ARB · here eGFR 45 → 22 · creatinine ~×2 · K 6.3 · HCO3 18 · troponin normal · peaked T, narrow QRS",
+    "AKI staging: stage 1 creatinine ×1.5 · stage 2 ×2 · stage 3 ×3 or dialysis VERIFY against current KDIGO wording · K mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · any ECG change = severe",
+    "Calcium gluconate 10% 10 mL IV over 2–5 min · insulin–dextrose 10 units in 50 mL 50% glucose over 15–30 min, onset ~15 min, 4–6 h, BSL hourly × 6 h · salbutamol 10–20 mg neb",
+    "Recheck UEC 48–72 h after stopping the drugs · 1–2 weeks after restarting an ACE-i · aldosterone rule: hypoaldosteronism → high K; hyperaldosteronism → low K",
+    "Timing: 40 s · 4 min · 1.5 min · 2 min · 45 s (9-minute station) · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Triple_Whammy_AKI_2_Case_Tasks_Script_Notability.pdf (Marianne Kovac, 50, nausea, vomiting and lethargy on perindopril + thiazide + ibuprofen)"
+ },
+ {
+  "id": "MED-75",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 300,
+  "setting": "General practice in Kadina, regional South Australia; you are the GP registrar. A results card is handed to you. Expect a prompt at 5 minutes covering tasks 1 and 2.",
+  "stem": [
+   "Mr Colin Whitfield, 58, semi-retired farm contractor, returns for the results of blood tests taken a fortnight ago when he attended feeling tired. Hypothyroidism for six years on levothyroxine 100 µg daily; no other regular medication recorded. BP 138/82, HR 76 regular, RR 14, SpO2 98%, T 36.7; he looks well. Results: TSH 2.1 (0.4–4.0), free T4 15 (10–20), total calcium 2.58 (2.15–2.60), albumin 28 (low), corrected calcium 2.82 (HIGH), phosphate 0.68 (low, 0.75–1.50), creatinine 88/eGFR >60, FBE and LFT normal, PTH sent — result not yet available."
+  ],
+  "tasks": [
+   "Explain these blood results in language he can understand",
+   "Take a focused, relevant history",
+   "Give your most likely diagnosis and your differentials",
+   "Explain what happens next"
+  ],
+  "time": "8 minutes: results 90 s MAXIMUM (signpost → thyroid in one breath → ★ calcium in four sentences: straight reading normal, stuck to a protein, protein low, corrected is high → check understanding → permission) · history 3½ min in seven blocks: tiredness · ★ stones · bones · groans · moans · ★ cancer · drugs incl. OTC · family/alcohol · ★ ICE before the diagnosis · transition line · four glands, one overactive, usually benign, 'I'm not going to promise you that today' · ★ say the word PTH and what high and low each mean · rest of workup, referral, PATS · fluids, don't cut dairy, avoid diuretics/supplements · safety-net · summary · 'have I missed anything?'",
+  "back": {
+   "dx": "Primary hyperparathyroidism with end-organ disease — corrected calcium 2.82 (total 2.58 + 0.02 × (40 − 28)), phosphate 0.68 low (PTH wastes phosphate — read the whole panel), TSH/T4 normal (dose right, no change), FBE/LFT normal; PTH pending — 'I've already sent that sample, so we won't lose any time'. History: six months of tiredness; ★ renal colic three years ago (overnight at Wallaroo) + nocturia ×2 + thirst; hip ache ('forty years on tractors'); constipation new this year; 'I've been flat' — name low mood as part of the illness, not a weakness; malignancy block clean (weight steady, never smoked, no sweats/lumps/cough); thyroxine only, 'doesn't hold with vitamins'; no FHx of calcium/stones/neck surgery (FHH, MEN 1); beers Friday, more at harvest (explains the low albumin); diet plenty of milk and cheese. Hidden agenda: brother Wayne died of bowel cancer at 55 last year — ask ICE before you explain, then build the explanation around it. Explain: one of four small neck glands behind the thyroid, different job, slightly overactive, pushing calcium out of bone — fits the stone, constipation, thirst, feeling flat; usually benign and treatable; honest middle — 'a couple of other things can raise calcium, one is a cancer somewhere else, which I know you've worried about since your brother'; what makes it less likely: weight steady, never smoked, normal FBE/LFT, no bone pain or lumps. ★ PTH: high → the gland, common, treatable; low → calcium from somewhere else → CXR and further bloods. Workup: vitamin D, magnesium, renal function, 24-h urine calcium, DXA, renal ultrasound (stone history); PTH confirms → endocrinology in Adelaide, PATS via the practice nurse; neck scan only to plan surgery, not to diagnose; some need the gland out, some are watched — decided with the specialist on calcium, kidneys, bone scan. Meanwhile 2–3 L fluids, more in the heat; don't cut dairy; avoid fluid tablets and calcium/vitamin D supplements; safety-net; ring him with the PTH; review two weeks.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE, DOB · ★ signpost: 'Most of them are reassuring, but there is one I want to go through properly with you — and then I'll need to ask you some questions. Is that alright?' · 'the wife reckoned you'd only get me back in if something was up' → one sentence of acknowledgement, then proceed"
+    ],
+    [
+     "0:30",
+     "Thyroid in one breath: 'the TSH tells us whether you're on the right dose — normal, well controlled, T4 normal too, no change to your thyroxine' · 'what's TSH stand for?' → do not take the invitation; one line and move"
+    ],
+    [
+     "0:55",
+     "★ Calcium in four sentences: 'we measured a mineral called calcium; the straight reading came back normal — but it isn't reliable on its own, because a large part of the calcium is stuck to a protein, and your protein is low, so the reading understates it; we do a calculation that corrects for the protein — and once we do, your calcium is high' · 'so is it normal or isn't it?' → 'the corrected number is the one we go on' · ★ 'is that making sense so far?' · 'not an emergency, you look well, but it needs explaining — may I ask some questions?'"
+    ],
+    [
+     "1:40",
+     "Tiredness — two sentences, not two minutes (6 months, done by lunchtime) · ★ stones: 'ever passed a kidney stone, severe back/side pain?' (3 y ago, Wallaroo) · 'passing more urine, up at night?' (×2, thirsty) · bones: aches, fragility fracture, height loss (hips) · groans: constipation (new this year), indigestion/ulcer, nausea/vomiting · moans: mood, memory, concentration, sleep ('flat') → 'that can be part of this picture — not you being difficult'"
+    ],
+    [
+     "3:15",
+     "★ Cancer block: 'questions I ask everyone with a high calcium' — weight, night sweats/fevers/lumps, cough/haemoptysis, smoking → all clean · drugs incl. OTC: fluid tablets, lithium, calcium/vitamin D, antacids, vitamin A/multivitamins → thyroxine only · FHx: high calcium, stones, parathyroid/neck operation, pituitary/pancreas tumour → no · alcohol (Friday beers, more at harvest) · home/work"
+    ],
+    [
+     "4:30",
+     "★ ICE before the diagnosis: 'what did you think might be causing the tiredness? anything you've been particularly worried about?' → brother, bowel cancer, 55 → 'I'm sorry about your brother — and I'm glad you told me, because it changes how I explain the next bit' · ★ transition line: 'I've got what I need. Let me tell you what I think is going on and what I'd like to do about it'"
+    ],
+    [
+     "5:10",
+     "Diagnosis: 'one of four small glands in your neck — the parathyroid glands, behind your thyroid but a completely different job — has become slightly overactive and is pushing calcium out of your bones into your blood; that fits the kidney stone, the constipation, the thirst and feeling flat; usually a benign growth, not a cancer, treatable' · 'but you can't be sure' → ★ 'not today, and I'm not going to pretend otherwise' — the honest middle; why cancer is less likely (weight, never smoked, FBE/LFT normal, no bone pain/lumps); 'I want to prove it rather than assume it'"
+    ],
+    [
+     "6:15",
+     "★ 'There is one blood test that separates those two possibilities, and it's called PTH. If it's high, it's the gland — common and treatable. If it's low, the calcium is coming from somewhere else and I'd look for a cause in the chest and the bones with a chest x-ray and further blood tests. I've already sent that sample' · alongside: vitamin D, magnesium, kidney function, 24-h urine calcium, bone density scan, renal ultrasound (stone) · PTH confirms → endocrinologist in Adelaide, PATS via the practice nurse · 'an operation?' → some do, some are watched; decided with the specialist on calcium, kidneys, bones; neck scan is for surgical planning, not diagnosis"
+    ],
+    [
+     "7:15",
+     "Meanwhile: 2–3 L/day, more in the heat on the property · ★ 'don't cut down on dairy — people assume they should and it makes it worse' · avoid fluid tablets, no calcium/vitamin D supplement without checking · ★ safety-net: very thirsty, vomiting, confused/drowsy, passing much more urine → straight back or ED · 'I'll ring you myself when the PTH is back; see you in two weeks either way' · summary · ★ 'have I missed anything you wanted to ask?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Most of them are reassuring, but there is one I want to go through properly with you.' / 'The main test we look at is the TSH — that tells us whether you're on the right dose. Yours is normal, which means your thyroid is well controlled on your current tablet.'",
+    "★ 'We also measured a mineral in your blood called calcium. The straight calcium level came back in the normal range — but that measurement isn't reliable on its own, because a large part of the calcium in your blood is stuck to a protein, and if that protein is low, as yours is, the reading comes out falsely low. So we do a calculation that corrects for the protein — and once we do that, your calcium is high.'",
+    "'Hang on — so is it normal or isn't it?' → 'The first number is normal. The corrected number — the one that actually reflects what's in your body — is high. It's the corrected one we go on.' / ★ 'Is that making sense so far?' / 'Is it alright if I ask you some questions to work out which cause it is?'",
+    "★ 'Have you ever passed a kidney stone, or had severe pain in the back or side? Any passing more urine than usual, or getting up at night to go?'",
+    "'How has your mood been? Any trouble with memory or concentration?' → 'Thank you for telling me — that can be part of this picture, and it's not you being difficult.'",
+    "★ 'Now some questions I ask everyone with a high calcium. Has your weight changed without trying? Any night sweats, fevers or lumps? Any cough, or coughing blood? Do you or did you smoke?' / 'What tablets are you on, including anything over the counter — fluid tablets, lithium, calcium or vitamin D, indigestion powders?'",
+    "★ 'What did you think might be causing the tiredness? Is there anything you're especially worried about?' (before the diagnosis) / 'I've got what I need. Let me tell you what I think is going on and what I'd like to do about it.'",
+    "★ 'One of four small glands in your neck — the parathyroid glands, which sit behind your thyroid but do a completely different job — has become slightly overactive, and it's pushing calcium out of your bones into your blood.' / ★ 'It is usually a benign growth, and it is treatable — but I'm not going to promise you that today, because a couple of other things can raise calcium, and one of those is a cancer somewhere else, which I know is what you've been worrying about since your brother.'",
+    "★ 'There is one blood test that separates those two possibilities, and it's called PTH — the hormone those neck glands make. If it's high, it's the gland. If it's low, the calcium is coming from somewhere else and I'd look for a cause in the chest and the bones.' / 'Would I need an operation?' → 'Some people do and some are safely watched with regular blood tests. That decision depends on your calcium, your kidneys and your bone scan, and it's made with the specialist.'",
+    "★ 'Keep your fluids up — two to three litres a day, more on hot days out on the property — and don't cut down on dairy; people assume they should and it actually makes it worse.' / ★ 'If you become very thirsty, start vomiting, get confused or drowsy, or you're passing much more urine, don't wait for the appointment — come straight back or go to the emergency department.' / 'I'll ring you myself when the result is back. Have I missed anything you wanted to ask?'"
+   ],
+   "pefe": [
+    "Role-player: Colin, 58, property 20 min outside Kadina, wife Denise, two adult children in Adelaide; seeding/harvest for three neighbours; understated, dry, minimising, watches your face. Levothyroxine only, no supplements ('don't hold with vitamins'), never smoked, 4–5 beers Friday/more at harvest, plenty of milk and cheese. Father MI at 70, mother 84 arthritis, brother Wayne died at 55 of bowel cancer last year. Does not hand over the stone unless asked about stones/urine; constipation only if asked about bowels. Pushes 'so is it normal or isn't it?' once; asks 'is it dangerous?', 'would I need an operation?'; if you lecture physiology: 'you've lost me'; if you use 'cancer' without warning: two-second silence; ★ if you say his calcium is normal he thanks you and stands up to leave — let them fail. Hidden agenda on ICE, else in the last 30 s: 'Doctor — it's not cancer, is it? My brother died of it last year'",
+    "Results card: TSH 2.1, fT4 15, total Ca 2.58, albumin 28, corrected 2.82, PO4 0.68 low, creatinine 88/eGFR >60, FBE/LFT normal, PTH pending. Score out of 14, pass 9; automatic fail: telling him his calcium is normal, or never asking a single cancer question",
+    "Version B — corrected Ca 3.35, weight loss, drowsy: register changes immediately — 'high enough to explain the drowsiness and sickness, and I'm not comfortable sending you home; with the weight loss I need to look in the chest and bones as well as the neck; a drip and scans, this afternoon at the hospital' · 'is it cancer?' → 'one of the things I'm looking for; today's tests will tell us' (never 'no') · stock to feed → help ring someone, cannot wait till Monday · to examiner: admit, IV normal saline, monitor fluids/electrolytes/renal function, no loop diuretic unless overloaded; PTH, PTHrP, SPEP + FLC, ALP, myeloma screen, TSH, vitamin D; CXR, ECG, directed imaging; IV bisphosphonate once rehydrated, dose adjusted for renal function (response 2–4 days), calcitonin if faster needed; transfer to a larger centre, MedSTAR 1300 13 12 33 if deteriorating VERIFY doses against TG",
+    "Version C — corrected 2.74 on indapamide + lithium + a calcium supplement: switch the thiazide, stop the supplement, recheck in a fortnight; ★ 'please don't stop the lithium yourself — I'll speak with your psychiatrist and we decide together'; bones concern → 'a high calcium is doing your bones no favours either; a DXA tells us what you actually need'. ADDED: lithium hypercalcaemia has a high/inappropriately normal PTH and low urinary calcium — mimics both PHPT and FHH; withdraw thiazide and supplement, recheck 2–4 weeks; still up → work up as PHPT; never commit to parathyroid surgery with a thiazide on board",
+    "Rescue line for any variant: 'I don't want to guess at this today. Here is the one test that will tell us, and here is what I'll do with each possible answer'",
+    "SA: endocrinology in Adelaide (RAH/FMC), PATS set up by the practice nurse; Wallaroo Hospital for the stone history; heat/dehydration on a Mid North property is the realistic way he deteriorates before his appointment; MedSTAR 1300 13 12 33 · TIS 131 450"
+   ],
+   "fails": [
+    "Telling him his calcium is normal (reading the total line) ★",
+    "Never asking a single cancer question ★",
+    "Answering 'what's TSH stand for?' with a physiology lecture — history starts at three minutes and the cancer block is never reached",
+    "'Almost certainly nothing sinister' before the PTH is back; or leaving him thinking cancer is likely — the two traps sit two words apart",
+    "'We'll do some more blood tests' — vague and unmarkable; not saying PTH and what high and low each mean",
+    "Promising surgery; scanning the neck to make the diagnosis; telling him to cut dairy; ending on 'see you in two weeks' with no named deterioration symptoms",
+    "Skipping ICE so the brother lands in the last thirty seconds; Version B — negotiating a Monday admission or answering 'is it cancer?' with 'no'; Version C — stopping lithium unilaterally"
+   ],
+   "numbers": [
+    "Corrected Ca = measured + 0.02 × (40 − albumin g/L) · here 2.58 + 0.02 × 12 = 2.82 · reference ~2.15–2.60 · mild <3.0 · moderate 3.0–3.5 · severe >3.5 or symptomatic · ★ >3.0 stops being a GP problem",
+    "Phosphate 0.68 low — PTH wastes phosphate · vitamin D >~50 nmol/L before PTH is interpreted · Ca:Cr clearance ratio <0.01 = FHH, the patient you must not operate on · DXA: lumbar spine, hip, distal one-third radius",
+    "Surgical triggers: age <50 · corrected Ca >0.25 above upper limit · eGFR <60 · stones/nephrocalcinosis · osteoporosis or vertebral fracture VERIFY against TG and the treating unit",
+    "Timing: results 90 s max · history 3½ min in seven blocks · dx/plan/safety-net 3 min · prompt at 5 min",
+    "Fluids 2–3 L/day oral; hospital: normal saline first, bisphosphonate after rehydration · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Hypercalcaemia_Hyperparathyroidism_2_Case_Tasks_Script_Notability.pdf (Colin Whitfield, 58, Kadina, corrected calcium 2.82, PTH pending)"
  }
 ]
