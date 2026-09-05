@@ -7452,5 +7452,280 @@
    ]
   },
   "source": "Steroid_Cessation_2_Case_Tasks_Script_Notability.pdf (Version 2 — Samantha Doyle, 60, still on prednisolone → major depressive disorder; stem reconstructed)"
+ },
+ {
+  "id": "MED-65",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 360,
+  "setting": "General practice. You are the GP. Online: 6-minute history, findings on screen. Face to face: 4 + 2 + 2.",
+  "stem": [
+   "Your next patient is Lily Ferrand, 45, who presents complaining of tiredness and loss of energy. There is nothing else in the stem."
+  ],
+  "tasks": [
+   "Take a focused, relevant history",
+   "Ask the examiner for the physical examination findings you would like",
+   "Explain your most likely diagnosis to the patient, with your reasons",
+   "Give your differential diagnoses"
+  ],
+  "time": "8 minutes. Tiredness in 60 s · screen — two positives arrive together (night sweats, Cairns) · the travel box in FULL, signposted and closed (destination/duration then A B C D E F G S), undeflected by 'we were just on holiday' · come back OUT and finish the screen — that is where the cough and the two failed antibiotics surface · examination with percussion on both sides, RR and SpO2 · lay diagnosis with reasons · TWO differential groups announced as groups · doxycycline or a macrolide, 48-hour review, safety net.",
+  "back": {
+   "dx": "Atypical (community-acquired) pneumonia after four weeks in Far North Queensland: three weeks of dry cough, low-grade fever 37.8, night sweats, back/body aches, exhaustion; two failed beta-lactam courses (amoxicillin then amoxicillin-clavulanate — neither covers Mycoplasma, Chlamydia or Legionella); right middle-zone dullness with crackles, RR 18, SpO2 96%. Four reasons: dry cough for three weeks; low-grade rather than high fever; aches, night sweats and exhaustion; and the antibiotic failure points towards, not away from, this — plus right-sided chest signs. Differentials in two announced groups. Group 1, other causes of persistent cough: typical bacterial pneumonia (chesty cough, high fever, would have responded), tuberculosis (taken seriously — three weeks of cough with night sweats; no weight loss or haemoptysis; CXR and sputum settle it), lung cancer (CXR in any adult with cough >3 weeks, never-smoker or not). Group 2, travel-acquired infections: Q fever, leptospirosis, melioidosis, mosquito-borne viruses — Ross River fits the aches. Then the negative screen: anaemia, thyroid, diabetes, hepatitis, coeliac, autoimmune, medications, mood, OSA. Do not blame the previous doctor. Plan: CXR today, bloods, sputum, atypical PCR swab, travel serology; doxycycline 100 mg bd 5–7 days (macrolide if pregnant or <8 y); review 48 h; named red flags.",
+   "plan": [
+    [
+     "0:00",
+     "Intro, consent; tiredness: low energy, weeks, constant, worse, nothing helps, impact — 60 s, not 90"
+    ],
+    [
+     "1:00",
+     "Checklist: liver, endocrine, malignancy (weight, appetite, lumps, ★ night sweats → YES), infection (fever/chills, flu-like, sore throat, ★ 'have you travelled anywhere recently?' → Cairns) — take BOTH positives"
+    ],
+    [
+     "1:45",
+     "★ 'I'd like to ask about that trip in some detail, because where you went and what you did there can matter a great deal.' Destination and duration → A activities · B bushwalking, bites (insect/tick) · C contacts (animals, unwell people) · D drugs · E exposures (tattoos, piercings, transfusion) · F food and water (street food, unbottled/creek/tank) · G GP before travel (vaccines, tablets) · S sex while away — ask every heading despite 'we were just on holiday'"
+    ],
+    [
+     "3:15",
+     "★ 'Thank you — let me finish the rest of my checklist': PMR/headache, joints and body aches (back ache), bowels, chest pain/ankles, ★ 'any cough?' → ★ five questions: dry or chesty / duration / haemoptysis / smoking / 'has anyone treated you for it already, and did it help?' → amoxicillin then Augmentin, no help"
+    ],
+    [
+     "4:15",
+     "Close: medications (ask about the antibiotics directly if not volunteered), drugs, mood, work, alcohol, smoking; 'what do you think this is?' (hidden agenda: 'something I caught in Cairns')"
+    ],
+    [
+     "4:45",
+     "Examination by name: general · ★ temperature, HR, BP, ★ RR and SpO2 · thyroid, nodes, CVS briefly · full respiratory: expansion, trachea, tactile fremitus, ★ percussion on BOTH sides, air entry and added sounds, ★ vocal resonance · abdomen · office tests"
+    ],
+    [
+     "5:45",
+     "★ 'A chest infection caused by an unusual group of bugs rather than the ordinary ones' — four reasons incl. ★ 'the fact those antibiotics didn't work points towards this, not away from it'; right-sided signs"
+    ],
+    [
+     "6:45",
+     "★ 'I'd like to give my differentials in two groups' — cough list (typical pneumonia, TB reasoned, lung cancer → CXR), travel list (Q fever, leptospirosis, melioidosis, Ross River/arboviruses), then the negative screen · plan: CXR today, bloods, sputum, atypical swab/PCR, travel serology; doxycycline; review 48 h; ★ safety net — breathless, pleuritic pain, haemoptysis, confusion/drowsiness, climbing fever → ED; someone at home?"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'I'm going to run through a checklist quite quickly — most of these will be no.' / ★ 'Have you travelled anywhere recently?'",
+    "★ 'I'd like to ask about that trip in some detail, because where you went and what you did there can matter a great deal.' → 'Where, and how long? What activities? Bushwalking, insect or tick bites? Contact with animals or anyone unwell? Recreational drugs? Tattoos, piercings, transfusions? Street food or unbottled water? Did you see a GP before you went? Any sexual contact while away?'",
+    "★ 'Thank you — let me finish the rest of my checklist.'",
+    "★ 'Is it a dry cough or a chesty one — are you bringing anything up? How long? Ever coughed up blood? Do you smoke? Has anyone treated you for it already, and did it help?'",
+    "★ 'Could I have percussion on both sides, and vocal resonance?' / 'Respiratory rate and oxygen saturation, please.'",
+    "★ 'A lung infection caused by an unusual group of bugs.' / ★ 'Neither antibiotic you were given works against these bugs — the fact they didn't help points towards this, not away from it.'",
+    "'So the other doctor got it wrong?' → 'No — amoxicillin was a reasonable first choice; the response tells us which group of bugs this is.'",
+    "'Is it tuberculosis? My aunt had that.' → 'A fair question and I have thought about it. TB usually causes months of cough with weight loss; yours is three weeks with none. But because of the night sweats I'm not going to guess — the chest X-ray and a sputum sample will settle it. I'd rather check than reassure you wrongly.'",
+    "★ 'I'd like to give my differentials in two groups — other causes of a persistent cough, and infections you could have picked up because of the trip.'",
+    "'Doxycycline covers these bugs; I'd like to see you again in 48 hours. Come back sooner, or go to the emergency department, if you become short of breath, get chest pain on breathing in, cough up blood, become confused or drowsy, or the fever climbs.'"
+   ],
+   "pefe": [
+    "Examiner: tired, not unwell; not pale/jaundiced, no rash · ★ T 37.8, HR 92, BP 118/74, RR 18, SpO2 96% · thyroid, nodes, CVS normal · expansion possibly reduced right, trachea central, ★ dullness to percussion right middle zone, crackles same zone, air entry otherwise equal, vocal resonance normal–mildly increased · no hepatosplenomegaly · office tests unremarkable",
+    "Investigations: CXR today (cough >3 weeks = CXR always), FBE, UEC, LFT, CRP, sputum MCS ± AFB ×3, nasopharyngeal/throat swab for Mycoplasma/Chlamydia/Legionella PCR, Legionella urinary antigen, serology for Q fever, leptospirosis, Ross River/Barmah Forest, ± melioidosis culture/serology; HIV if risk VERIFY",
+    "Treatment: doxycycline 100 mg bd 5–7 days, or a macrolide (azithromycin/clarithromycin); not doxycycline in pregnancy or <8 years — macrolide VERIFY; severity by CURB-65 (confusion, urea >7, RR ≥30, SBP <90/DBP ≤60, age ≥65) / SMART-COP; review 48 h; repeat film at 6 weeks if smoker, >50 or slow to clear VERIFY",
+    "Variant — overseas (SE Asia/Pacific): any fever = malaria testing regardless (thick and thin films + rapid antigen, ×3, 12–24 h apart); typhoid live",
+    "Variant — 22 weeks pregnant: macrolide, not doxycycline; CXR with abdominal shielding — not diagnosing pneumonia is the bigger risk VERIFY",
+    "Variant — deteriorates (RR 30, SpO2 90%, confused, SBP 88): severe CAP — oxygen, IV access, cultures, medical registrar for admission, MedSTAR 1300 13 12 33 if retrieval · Variant — farm/abattoir contact: Q fever serology; ask about Q fever vaccination (needs pre-vaccination screening) ADDED · TIS 131 450"
+   ],
+   "fails": [
+    "A one-question travel history ('where?' and move on) ★",
+    "Never exploring the cough — 'any cough?' 'yes' next question ★",
+    "A single undifferentiated differential list instead of two announced groups ★",
+    "A third beta-lactam (cephalosporin), or 'see how you go in a month' ★",
+    "Taking only the second of two positives (dropping the night sweats from the summary and the TB reasoning)",
+    "Asking only 'any added sounds?' — never percussion on both sides, RR, SpO2",
+    "Blaming the previous doctor; dismissing TB rather than reasoning it; no 48-hour review or named red flags"
+   ],
+   "numbers": [
+    "Cough 3 weeks, dry · cough >3 weeks = CXR always · T 37.8 low grade (typical pneumonia 39–40 with rigors) · Cairns 4 weeks · failed amoxicillin ×2",
+    "Travel box: destination + duration, then A B C D E F G S (activities, bushwalking/bites, contacts, drugs, exposures, food/water, GP pre-travel, sex)",
+    "Doxycycline 100 mg bd 5–7 days, or macrolide VERIFY · not doxycycline in pregnancy or <8 y · review 48 h · repeat film 6 weeks if smoker/>50/slow",
+    "CURB-65: confusion · urea >7 · RR ≥30 · SBP <90 · age ≥65",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Atypical_Pneumonia_2_Case_Tasks_Script_Notability.pdf (Lily Ferrand, 45, tiredness after travel to Far North Queensland)"
+ },
+ {
+  "id": "MED-66",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 360,
+  "setting": "Regional general practice, Wallaroo, South Australia. You are the GP. Booked for routine BP monitoring with the practice nurse; nurse's note: BP 135/85, he has asked to see you because he has been feeling tired.",
+  "stem": [
+   "James Corrigan, 40, has known hypertension on perindopril for six months. He attended for routine blood pressure monitoring with the practice nurse (BP 135/85 mmHg) and has asked for a consultation because he has been feeling tired lately."
+  ],
+  "tasks": [
+   "Take a focused history from the patient (6 minutes)",
+   "Explain your diagnosis and your differentials to the patient",
+   "No management or investigations task — do not drift into either"
+  ],
+  "time": "8 minutes, 6 + 2. Acknowledge, contract · sleepy vs low energy — get the fork right in the first minute · H to D in ~90 s · C: the heart-failure screen you must be HEARD to do (clarify the ambiguous night-waking) · O: snoring/witnessed apnoeas, the sleep probe, weight, alcohol, ★ occupation → ★ sleepy at the wheel · hidden cardiac worry · plain-English diagnosis reasoned from his answers · BP link · three reasoned differentials then the list · non-blanket driving advice, safety net.",
+  "back": {
+   "dx": "Obstructive sleep apnoea in a treated hypertensive commercial driver: months of worsening daytime sleepiness (nodding off at his desk), wife reports chainsaw snoring and witnessed apnoeas, unrefreshing sleep, morning headaches, poor morning concentration, dry mouth, 6 kg weight gain with tighter collar, 4–5 beers nightly up to bed, brief nocturnal arousals that settle in seconds (not PND), grain-haulage truck driver with one or two episodes of sleepiness at the wheel; BP 135/85 on perindopril — close to target, not 'fine'. Reasons drawn from his own answers. BP link: OSA is a recognised cause of hypertension resistant to tablets (nocturnal sympathetic surges); treating the OSA may do more than another tablet. Differentials reasoned: heart failure (no chest pain, one pillow, no oedema — the arousals settle in seconds), lymphoma/leukaemia (no weight loss, lumps, sweats), infections — EBV, COVID, hepatitis, HIV (no fever, travel, risk); then hypothyroidism, diabetes, anaemia, haemochromatosis, coeliac, autoimmune, medications/alcohol, depression, shift work. Driving: no blanket ban, no blanket reassurance — 'I am not taking anything off you today'; do not drive sleepy; sleep study; commercial standards stricter (Austroads), specialist opinion and evidence of treatment; hidden worry is his father's MI at 58.",
+   "plan": [
+    [
+     "0:00",
+     "Intro, open question; ★ acknowledge ('being tired all the time is wearing'); contract; 'some will sound unrelated — I ask everyone'"
+    ],
+    [
+     "0:30",
+     "★ 'Lack of energy, sleepy, or feverish?' → sleepy · months · mornings · worse · worse after beers · nodding off at his desk, stopping more when driving"
+    ],
+    [
+     "1:15",
+     "H → D in 90 s: tanning/jaundice/urine · polyuria/thirst/weather · weight (gained 6 kg), appetite, lumps, sweats, cancer FHx · fever, sore throat, sexual history, travel · exertional dyspnoea/palpitations, stiffness, headaches (mornings only — 'I'll come back to that'), joints, rash · medicines incl. OTC, mood, anhedonia, stress"
+    ],
+    [
+     "2:45",
+     "★ C — heard to do it: greasy stools/diarrhoea/blood · chest pain · pillows · ankle swelling · 'wake at night gasping?' → ★ clarify: 'breathless and needing to sit up, or settles in seconds?' → settles · cough · smoking (quit 8 y)"
+    ],
+    [
+     "3:30",
+     "★ O — the station: 'has anyone ever told you that you snore, or that you stop breathing or gasp during sleep?' → wife: snores, stops breathing · refreshing? · morning headache · morning concentration · dry mouth · weight gain / collar tighter · ★ alcohol — how much and how close to bed · ★ 'what do you do for work?' → truck driver"
+    ],
+    [
+     "4:45",
+     "★ 'Have you ever felt sleepy at the wheel, or had a near miss?' → pause → once or twice, pulled over · 'the gynaecological causes obviously do not apply' · allergies, PMH, FHx (father MI at 58) · ★ 'anything in particular you were worried this might be?' → the heart"
+    ],
+    [
+     "6:00",
+     "Start with the worry ('I've asked the heart questions and they're reassuring'); ★ name OSA in plain English (throat muscles go floppy, airway closes, brief arousals dozens of times, never deep sleep); ★ reasons from his answers; ★ BP link; keep taking the tablet"
+    ],
+    [
+     "7:00",
+     "★ Differentials: heart failure, blood cancers, infections reasoned; the rest listed — 'one blood test covers most' · ★ driving: not taking anything off you today; sleep study; don't drive sleepy, pull over, avoid long stretches alone; no alcohol 3–4 h before bed; weight later with permission · safety net (worse headaches, chest pain, ankle swelling, any episode at the wheel) · questions (mask? licence?) · summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Is it a lack of energy, feeling sleepy, or feeling feverish?' / 'I am going to run through some questions quickly to make sure I am not missing anything.'",
+    "★ 'Has anyone ever told you that you snore, or that you stop breathing or gasp during sleep?' / ★ 'When you wake up, is your sleep refreshing?' / 'Any headache in the morning? Any trouble concentrating in the morning? Dry mouth on waking?'",
+    "★ 'How much alcohol, and how close to bedtime?' / ★ 'What do you do for work?' / ★ 'Have you ever felt sleepy at the wheel, or had a near miss?'",
+    "'When you wake like that — are you breathless and having to sit up, or does it settle in seconds?'",
+    "'The gynaecological causes obviously do not apply here.' / ★ 'Was there anything in particular you were worried this might be?'",
+    "★ 'The muscles at the back of your throat go floppy and the airway closes over. You stop breathing for a few seconds, your body wakes you just enough to open it again, dozens of times a night. You never remember it — but you never get deep sleep, which is why eight hours leaves you wrecked.' / ★ 'The reasons I think this are your own answers…'",
+    "★ 'Sleep apnoea is one of the known reasons a blood pressure will not settle on tablets. Your reading today is close to target — treating the sleep may do more for it than another tablet. Keep taking them.'",
+    "★ 'Because you drive for a living I need to be straight with you. I am not taking anything off you today. The test is a sleep study and I'll get that moving. Until then: do not drive if you feel sleepy, pull over and rest if you do, avoid long stretches alone.'",
+    "'Will I lose my truck licence?' → 'The rules are about sleepiness, not the label. Commercial standards are stricter and need a specialist opinion and evidence that treatment is working. Most people who are treated and controlled keep driving. What I need from you is that you do not drive while sleepy.'",
+    "'I can't afford to stop. I'll push through.' → 'I don't want you to lose your income. But if you keep driving while sleepy I have a duty I cannot ignore — in South Australia doctors are required to report a driver who is unfit. I'd much rather get you treated quickly. Can we agree you won't drive on days you haven't slept?' VERIFY the SA reporting duty before quoting",
+    "'Will I need a mask?' → 'Possibly, and they work very well. If mild, a dental splint may be enough, and weight loss helps more than anything else — could we talk about weight next visit?' Never say OSA, AHI, PSG, CPAP or BMI unexplained."
+   ],
+   "pefe": [
+    "No examination task in this version. If a card is offered: BMI, neck circumference, Mallampati class, BP, nasal patency, thyroid and lymph nodes, CVS and respiratory, abdomen, office tests (BSL, dipstick)",
+    "Variant — pillows, ankle swelling, waking breathless positive: heart failure moves up — ECG, BNP, echocardiogram; consider central sleep apnoea with Cheyne–Stokes rather than purely obstructive",
+    "Variant — weight loss and night sweats mid-sweep: examine every node group and the abdomen for hepatosplenomegaly, urgent bloods — exclude a blood cancer before settling on OSA",
+    "Variant — normal BMI, no witnessed apnoeas: OSA still possible (blocked nose, small jaw, crowded airway); think harder about insufficient sleep, shift work, thyroid, anaemia, depression, narcolepsy; sleep diary",
+    "Next steps (not the task): Epworth (>10 = excessive sleepiness; 0–24 over eight situations), STOP-BANG (≥3 raises risk), sleep study (home or lab polysomnography) via sleep physician; screening bloods and ECG; alcohol 3–4 h clear of bed; 5–10% weight loss measurably lowers AHI; CPAP if moderate–severe (AHI 15–29 moderate, ≥30 severe; 5–14 mild); mandibular advancement splint if mild; review BP after treatment; Austroads fitness to drive — commercial standard VERIFY",
+    "SA: PATS >100 km VERIFY · TIS 131 450 · MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "Never asking about snoring or witnessed apnoeas ★",
+    "Never asking occupation, or hearing 'truck driver' and not asking about sleepiness at the wheel ★",
+    "Missing the malignancy or infection screen entirely ★",
+    "Imposing a blanket driving ban, or blanket reassurance about the licence ★",
+    "Prescribing a sedative ★",
+    "Seizing the ambiguous night-waking as proof of heart failure without clarifying; not being heard to do the cardiac screen",
+    "Telling him the BP is 'fine'; saying 'OSA' to the patient; a 90-second physiology lecture; reasoning no differentials (or all twelve); never eliciting the cardiac worry"
+   ],
+   "numbers": [
+    "BP 135/85 — close to target on treatment, not 'fine' · perindopril 6 months · weight +6 kg / 2 years · 4–5 beers nightly to bedtime",
+    "Epworth >10 = excessive daytime sleepiness (0–24, eight situations) · STOP-BANG ≥3 raises risk · AHI 5–14 mild · 15–29 moderate · ≥30 severe",
+    "5–10% weight loss measurably lowers the AHI · no alcohol 3–4 h before bed · 4 airway levels · 4 Mallampati classes",
+    "Driving: 'I am not taking anything off you today' — rules are about sleepiness, commercial standard stricter (Austroads) VERIFY; SA reporting duty VERIFY",
+    ">100 km PATS VERIFY · TIS 131 450 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Sleep_Apnoea_Tiredness_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 40, treated hypertensive truck driver — obstructive sleep apnoea)"
+ },
+ {
+  "id": "MED-67",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 310,
+  "setting": "Your general practice. Face-to-face station. The role-player is in the room even though there is no history-taking task. Notice on the door: findings are given only if you ask for them specifically.",
+  "stem": [
+   "Mary Whitfield, a 40-year-old woman, has presented complaining of feeling tired, weight loss over the last few months, night sweats and loss of appetite."
+  ],
+  "tasks": [
+   "Ask the examiner for the findings of the physical examination you would perform",
+   "Explain your diagnosis and your differential diagnoses to the patient",
+   "Request your further investigations"
+  ],
+  "time": "8 minutes (2 reading). Greet the patient first, then turn to the examiner. Frame the examination in one sentence · general, vitals (temperature first), hands, face/mouth · ★ all lymph node chains, then the four node characters · thyroid with the reason · bone tenderness · chest · abdomen — name splenomegaly · bedside tests · examination gate 5:10 · turn to her, warning shot, say the word lymphoma · reasons from your findings, not her stem · differentials by group · investigations in order — FBE, film, excisional biopsy, PET-CT — then the rest.",
+  "back": {
+   "dx": "Lymphoma (Hodgkin or non-Hodgkin) presenting with B symptoms: four months of fatigue, ~7 kg weight loss, drenching night sweats, anorexia, generalised pruritus; examination — pallor, thin and unwell, T 37.8, HR 96, scratch marks, ecchymoses, conjunctival pallor, two to three rubbery, fixed, non-tender cervical nodes (largest ~3 cm, skin normal), bone tenderness, splenomegaly 4 cm, thyroid normal, chest clear. Clubbing is present but is NOT a lymphoma sign — it keeps an intrathoracic malignancy on the list (say so). Reasons to the patient led by your findings: rubbery, fixed, non-tender neck glands (infection glands are tender and mobile), enlarged spleen, scratch marks from the itch — plus her B symptoms. Differentials by group: other cancers — leukaemia (ecchymoses, bone tenderness), lung/bowel/breast; infections — TB, HIV, syphilis, EBV, CMV, toxoplasmosis (some need consent); hyperthyroidism (explains fatigue, sweats, weight loss; thyroid normal today). Investigations in order of priority: FBE, blood film today, excisional node biopsy (architecture, not FNA cells), PET-CT staging (or CT neck/chest/abdomen/pelvis); then LDH, ESR/CRP, HIV and syphilis serology with consent, EBV/CMV/toxoplasma serology, IGRA + CXR, TSH. Febrile neutropenia = emergency: cultures and broad-spectrum antibiotics within one hour.",
+   "plan": [
+    [
+     "0:00",
+     "Gel; ★ greet the patient first ('I've been asked to examine you and then talk you through what I think — give me a moment with the examiner'); ★ frame: 'a general examination with a focus on the haematological system, looking for a cause of B symptoms — general appearance, hands, face and mouth, all lymph node groups and thyroid, chest, abdomen, bedside tests'"
+    ],
+    [
+     "0:40",
+     "General: cachexia, pallor, jaundice, rash · ★ vitals, temperature first, then HR, BP, RR, SpO2 · hands: clubbing, scratch marks, ecchymoses, joint swelling → ★ 'pruritus is a recognised feature of lymphoma' · ★ 'clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list' · face/mouth: conjunctival pallor, gum hypertrophy/bleeding, tonsils"
+    ],
+    [
+     "2:00",
+     "★ 'A full lymph node examination, all chains over the whole body — cervical and supraclavicular, axillary, epitrochlear, inguinal' → two to three cervical nodes → ★ 'consistency? mobile or fixed? tender? overlying skin? — I ask about tenderness to separate lymphadenitis from lymphadenopathy' → rubbery, fixed, non-tender, 3 cm → 'that is a malignant pattern'; ask anyway if the examiner deflects"
+    ],
+    [
+     "3:00",
+     "Thyroid with the reason (hyperthyroidism explains tiredness, sweating, weight loss): mass, size, nodularity, tenderness, retrosternal percussion · ★ bone tenderness sternum/spine/long bones · chest: air entry, added sounds, S1 S2, murmur · abdomen: inspection, tenderness, masses, ★ 'specifically hepatomegaly or splenomegaly?' → spleen 4 cm · bedside BSL, dipstick — ★ stop asking at 5:10"
+    ],
+    [
+     "5:10",
+     "Turn the chair fully, lower the voice, eye contact: ★ 'I have finished examining you, and I am afraid I have found some things that concern me. Is it alright if I go through them?' [pause] ★ 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma.' — say the word, stop, let it land"
+    ],
+    [
+     "5:45",
+     "★ Reasons led by findings: rubbery, fixed, non-sore neck glands vs infection glands; enlarged spleen; scratch marks — then her tiredness, weight loss, sweats. 'Am I going to die?' → no number you cannot stand behind; many lymphomas respond very well; not yet a diagnosis until a gland is sampled"
+    ],
+    [
+     "6:30",
+     "★ Differentials by group: other cancers (leukaemia; lung/bowel/breast less likely), infections (TB, HIV, syphilis, EBV/CMV/toxoplasma — 'some need a blood test and your permission'), overactive thyroid; 'why HIV?' answered"
+    ],
+    [
+     "7:00",
+     "★ To the examiner, in order and slowly: FBE · blood film today · excisional biopsy of a cervical node ('lymphoma is classified on nodal architecture; an aspirate gives cells without architecture') · PET-CT staging (or CT N/C/A/P) · then LDH, ESR, CRP; HIV and syphilis with consent; EBV/CMV/toxoplasma; IGRA + CXR; TSH · febrile neutropenia answer if asked · safety net to Mary (fever, breathlessness, face/neck swelling, bleeding → hospital; specialist phoned; results by phone; someone with you; Cancer Council SA 13 11 20)"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Examiner, a general examination with a focus on the haematological system, looking for a cause of this patient's B symptoms.' / 'Vital signs, temperature first, please.'",
+    "★ 'A full lymph node examination, all chains, over the whole body.' → ★ 'Consistency? Mobile or fixed? Tender? And the overlying skin?' / ★ 'I am asking about tenderness because I want to separate lymphadenitis from lymphadenopathy.'",
+    "'Pruritus is a recognised feature of lymphoma.' / ★ 'Clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list.' CORRECTION",
+    "★ 'Specifically, is there hepatomegaly or splenomegaly?' — 'any masses?' gets 'no'",
+    "★ 'I am afraid I have found some things that concern me.' → ★ 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma.'",
+    "★ 'Glands from an infection are usually tender and mobile; yours are rubbery, they do not move under my fingers, and they are not sore. I also found your spleen — an organ on the left side of your abdomen — is bigger than it should be, and I noticed the scratch marks from the itching.'",
+    "'Why HIV?' → 'Because HIV can cause swollen glands, weight loss and sweats, and it is treatable. I test for it in anyone with this picture. I'd need your consent, and the result stays confidential.'",
+    "★ 'My investigations in order of priority: one, full blood examination; two, a blood film today; three, an excisional biopsy of one of the cervical nodes — lymphoma is classified on nodal architecture, so an aspirate is not enough; four, PET-CT to stage.' Then the rest.",
+    "'If she rings tonight with a fever of 39?' → 'A medical emergency until proven otherwise — present immediately; blood cultures and empirical broad-spectrum antibiotics within one hour; haematology involved; MedSTAR 1300 13 12 33 if retrieval is needed.'",
+    "Jargon check: if she says 'sorry, what does that mean?' — translate lymphadenopathy, splenomegaly, excisional on the spot"
+   ],
+   "pefe": [
+    "Examiner holds: pallor, thin, unwell, no jaundice/rash · T 37.8, HR 96 reg, BP 118/74, RR 16, SpO2 98% · hands: scratch marks, clubbing, ecchymoses, no joint swelling · conjunctival pallor, no gum changes, tonsils normal · ★ 2–3 cervical nodes — rubbery, fixed, non-tender, largest ~3 cm, skin normal; no other group · thyroid normal · ★ bone tenderness present · chest clear, HS dual · ★ splenomegaly ~4 cm, no hepatomegaly, no tenderness · BSL 5.4, dipstick negative",
+    "B symptoms: unexplained fever >38°C · drenching night sweats · weight loss >10% over 6 months. Node characters: consistency, mobility/fixation, tenderness, size and overlying skin. Chains: cervical/supraclavicular, axillary, epitrochlear, inguinal.",
+    "Variant — 50-year-old: add pelvic and breast examination (menopause, breast carcinoma on the list); 'menopause would not explain the glands or the spleen'",
+    "Variant — T 38.9, tachycardic, mucosal bleeding, gum hypertrophy, sternal tenderness: acute leukaemia with febrile neutropenia — cultures, empirical broad-spectrum antibiotics within 1 h, urgent FBE/film, haematology now",
+    "Variant — tender mobile nodes, age 24, sore throat, spleen just palpable: infectious mononucleosis — EBV serology, film for atypical lymphocytes, avoid amoxicillin, no contact sport while the spleen is enlarged",
+    "SA: urgent haematology referral (RAH/FMC); excision biopsy via surgical/ENT pathway; PATS; Cancer Council SA 13 11 20 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   ],
+   "fails": [
+    "'I would do a full physical examination' — the generic opening that burns thirty seconds ★",
+    "Not asking for all lymph node chains, or accepting 'enlarged cervical nodes' without the four characters ★",
+    "Not specifically naming splenomegaly ★",
+    "Euphemism instead of the word lymphoma ('a blood problem', 'something in your immune system') ★",
+    "Justifying with her stem symptoms only, not your examination findings ★",
+    "Folding clubbing into the lymphoma justification; a shotgun investigation list; FNA instead of excisional biopsy",
+    "Never greeting the patient before turning to the examiner; pushing on without pausing after the word cancer; giving a survival number"
+   ],
+   "numbers": [
+    "B symptoms: weight loss >10% / 6 months · fever >38°C unexplained · drenching night sweats · here: ~7 kg, T 37.8, soaked 2–3 nights/week",
+    "4 node characters: consistency, mobility, tenderness, skin (+ size) · chains: cervical, axillary, epitrochlear, inguinal · largest node ~3 cm · spleen 4 cm",
+    "Examination gate: stop asking at 5:10 · first four investigations: FBE, film, excisional biopsy, PET-CT",
+    "Febrile neutropenia: antibiotics within 1 hour",
+    "MedSTAR 1300 13 12 33 · Cancer Council SA 13 11 20 · TIS 131 450"
+   ]
+  },
+  "source": "Lymphoma_PFE_2_Case_Tasks_Script_Notability.pdf (Mary Whitfield, 40, B symptoms — examination from the examiner)"
  }
 ]
