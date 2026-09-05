@@ -7008,5 +7008,186 @@
    ]
   },
   "source": "Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf (Version B — Amy Kaur, 24, pregnant; back-to-back pregnancies)"
+ },
+ {
+  "id": "MED-60",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 360,
+  "setting": "General practice, country town. You are the GP. Online: 6-minute history, findings on screen, then diagnosis and differentials. Face to face: 4 + 2 + 2.",
+  "stem": [
+   "Your next patient is John Brennan, 45, complaining of tiredness. He told the receptionist he has been tired for about three weeks and it is getting worse.",
+   "His record notes that he was told as a child that he had a heart murmur. He has no regular medications and has not attended the practice for several years."
+  ],
+  "tasks": [
+   "Take a focused, relevant history from the patient",
+   "Ask the examiner for the physical examination findings you would like",
+   "Explain your most likely diagnosis to the patient, with your reasons",
+   "Give your differential diagnoses"
+  ],
+  "time": "8 minutes. Tiredness in 60 s · the murmur — three 'I don't remember's, then CHANGE TACK (long-course antibiotics, sore throats, follow-up) · screen until 'feverish' → take it as fever · the two endocarditis probes (dental work, marks on the hands) · say the timing match aloud · cardiac failure questions · examination requested by name incl. Osler/Janeway/splinters · 40-second explanation, four reasons · grouped differentials with reasons for the top two · hospital TODAY.",
+  "back": {
+   "dx": "Subacute infective endocarditis on a rheumatic mitral valve (mitral stenosis): childhood murmur with years of antibiotics/injections and constant sore throats and no follow-up (rheumatic fever → RHD), three weeks of worsening fatigue starting at the time of a root canal with no prophylaxis, feverish, splinter haemorrhages; T 38.5, mid-diastolic rumbling murmur at the apex, dipstick blood 1+. Four reasons to the patient: murmur as a child and a murmur today; fever; dental work three weeks ago matching the three weeks of tiredness; marks under the nails. Differentials, grouped with reasons: heart failure on the stenotic valve (less likely — no chest pain, oedema, orthopnoea, PND); blood cancers — leukaemia/lymphoma (no weight loss, lumps, night sweats); other infections — TB, EBV, HIV, hepatitis; thyroid, diabetes, anaemia, autoimmune, medications and mood, coeliac/IBD, OSA. Plan: three sets of blood cultures before any antibiotic, bloods, urine, ECG, CXR, hospital today for echocardiography and IV antibiotics. Discriminating behaviours: changing tack on the murmur, asking about dental work, naming the peripheral stigmata to the examiner.",
+   "plan": [
+    [
+     "0:00",
+     "Intro, consent, 'tell me about the tiredness' → low energy, 3 weeks, constant, worse, nothing helps, can't get out of bed — 60 s"
+    ],
+    [
+     "1:00",
+     "★ 'Before I go further, I want to ask about that heart murmur — it may be important': when, what, treatment → three 'I don't remember's → ★ CHANGE TACK: 'antibiotics for a long time as a child — months or years, injections? lots of sore throats? any follow-up for your heart?' → yes, yes, none"
+    ],
+    [
+     "2:00",
+     "Screen: 'a checklist — most will be no' — liver, endocrine, malignancy… ★ 'any fever or chills?' → 'feverish, hot and cold' → 'have you measured it?' → 'I'll take that as a fever'"
+    ],
+    [
+     "2:45",
+     "★ The two probes: 'any dental work recently — filling, extraction, root canal? other procedures?' → root canal 3 weeks ago → ★ say the timing match aloud · 'antibiotics before it?' → no · ★ 'any rashes, spots or marks on your hands or fingers?' → marks under the nails"
+    ],
+    [
+     "3:30",
+     "Finish the screen in groups: ★ cardiac failure (chest pain, ankle swelling, pillows, PND), exertional dyspnoea/palpitations, joints/headache/rash, cough/snoring, bowels, medications and drugs (injecting), mood, occupation (truck driver), alcohol, smoking; 'what were you worried this might be?' (brother's bowel cancer)"
+    ],
+    [
+     "4:30",
+     "Examination by name: general (pale, jaundiced, rash, unwell) · ★ temperature, HR, BP, RR, SpO2 · thyroid, lymph nodes · CVS: apex visible/displaced, JVP, murmurs, S3, opening snap — timing, site, radiation, character · chest · abdomen (hepatosplenomegaly) · urine dipstick · ★ 'specifically, the hands — Osler nodes, Janeway lesions, clubbing, splinter haemorrhages?' → photograph"
+    ],
+    [
+     "5:45",
+     "★ 40-second explanation: 'infective endocarditis — a valve narrowed since childhood, bacteria from the mouth after the root canal settled on it'; four reasons; no anatomy lecture"
+    ],
+    [
+     "6:30",
+     "Differentials grouped, reasons for the top two (heart failure, blood cancers), then list · ★ plan: three sets of blood cultures before antibiotics, bloods, urine, ECG, CXR, hospital TODAY for echo and IV antibiotics; who can drive you, who to call; respond to the cancer fear"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before I go further, I want to ask about that heart murmur you were told about as a child — it may be important.' → ★ 'Do you remember being on antibiotics for a long time as a child — months or years, maybe injections? Did you get a lot of sore throats? Any follow-up for your heart since?'",
+    "'Have you measured your temperature?' → ★ 'I'll take that as a fever.'",
+    "★ 'Have you had any dental work recently — a filling, an extraction, a root canal? Any other procedures?' → 'Three weeks — the same time your tiredness started. Were you given any antibiotics before it?'",
+    "★ 'Have you noticed any rashes, spots or marks on your hands or fingers?'",
+    "★ To examiner: 'May I look at the hands — Osler nodes, Janeway lesions, clubbing, or splinter haemorrhages?' (never 'any skin changes?')",
+    "'I believe you have infective endocarditis. One of your heart valves is narrowed — that's the murmur from childhood. When you had the root canal, bacteria from the mouth got into the bloodstream and settled on that damaged valve. Four reasons: the murmur then and now; a fever; dental work three weeks ago, the same three weeks you've been tired; and the marks under your fingernails.'",
+    "'The main alternative is heart failure from the long-standing valve problem — less likely because no chest pain, no leg swelling, one pillow, not waking breathless. I also thought about blood cancers like leukaemia and lymphoma — less likely, no weight loss, lumps or night sweats; other infections such as TB, glandular fever, HIV and hepatitis; thyroid, diabetes, anaemia, autoimmune conditions, medications and mood, coeliac and bowel disease, and sleep apnoea.'",
+    "★ 'Three separate sets of blood cultures before any antibiotic, other bloods, a urine test, an ECG and a chest X-ray — then hospital today, because this needs an ultrasound of the heart and antibiotics through a drip.'",
+    "'Is this because of the dentist? Can I sue?' → 'I can hear you're angry. This isn't about anyone doing anything wrong — mouth bacteria enter the bloodstream briefly in all of us. The problem is a valve that was damaged and never followed up. Right now my focus is treating the infection.'",
+    "'I can't go — I'm driving to Adelaide Monday. Give me tablets.' → 'I can't make you go, but this infection sits on a heart valve; untreated it can destroy the valve or throw clots to the brain. Tablets are not enough. Can we ring your wife and sort the driving? If you still decline, I'll do the tests today and see you tomorrow — but I'd be failing you if I didn't say how serious this is.'",
+    "'It's not cancer, is it? My brother…' → honest, one sentence: asked the questions, nothing points that way, bloods will cover it"
+   ],
+   "pefe": [
+    "Examiner: unwell-looking, not pale/jaundiced, no rash · T 38.5, HR 96 regular, BP 118/72, RR 16, SpO2 97% · thyroid and nodes normal · JVP not raised, apex not displaced, mid-diastolic rumbling murmur at the mitral area, no S3 · chest clear · no hepatosplenomegaly · no Osler nodes, no Janeway lesions · photograph of splinter haemorrhages ONLY if asked by name · dipstick blood 1+",
+    "Variant — T 37.4 (2018 face-to-face version): 'a low-grade temperature rather than a frank fever, but subacute endocarditis characteristically runs low-grade; in a symptomatic patient with valve disease I regard it as supportive, not reassuring' — do not say 'afebrile' and abandon infection",
+    "Variant — Aboriginal or Torres Strait Islander patient: RHD far commoner; the follow-up gap is a system failure — involve the Aboriginal Liaison Officer/ACCHS, notify to the SA RHD register, lifelong secondary prophylaxis and echo follow-up",
+    "Variant — injecting drug use, murmur louder on inspiration (Carvallo's sign): right-sided/tricuspid endocarditis, Staphylococcus aureus; look for septic pulmonary emboli on CXR",
+    "Investigations: ★ blood cultures ×3 sets, three sites, before antibiotics; FBE, ESR/CRP, UEC, LFT, urine MCS (microscopic haematuria), ECG (PR prolongation = abscess), CXR; TTE then TOE; Duke criteria — 2 major, 1 major + 3 minor, or 5 minor VERIFY; IV antibiotics 4–6 weeks; surgical referral for heart failure, abscess, embolism, uncontrolled infection VERIFY",
+    "RHD secondary prophylaxis: benzathine benzylpenicillin every 21–28 days VERIFY; dental/procedural prophylaxis for high-risk valve lesions per Therapeutic Guidelines VERIFY; SA: MedSTAR 1300 13 12 33 · RFDS · PATS · TIS 131 450 · SA RHD register"
+   ],
+   "fails": [
+    "Never asking about a portal of entry (dental work/procedures) ★",
+    "Never naming Osler nodes, Janeway lesions and splinter haemorrhages to the examiner — 'any skin changes?' leaves the photograph under the papers ★",
+    "Sending him home with oral antibiotics and a review — hospital TODAY ★",
+    "Running out of time before the differentials ★",
+    "Abandoning the murmur after three 'I don't remember's without changing tack",
+    "Discounting 'feverish' because there is no number; saying 'afebrile' at 37.4 and dropping infection",
+    "Skipping the heart failure questions; explaining four chambers of the heart; naming every cancer separately"
+   ],
+   "numbers": [
+    "Tiredness 3 weeks · root canal 3 weeks — say the match · T 38.5°C (older version 37.4) · Duke minor criterion >38°C",
+    "Murmur: mid-diastolic, rumbling, mitral area — 5th intercostal space, mid-clavicular line",
+    "Blood cultures ×3 sets, three sites, BEFORE antibiotics · Duke: 2 major / 1 major + 3 minor / 5 minor VERIFY · IV antibiotics 4–6 weeks",
+    "RHD prophylaxis: benzathine benzylpenicillin every 21–28 days VERIFY",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "Infective_Endocarditis_2_Case_Tasks_Script_Notability.pdf (John Brennan, 45, tiredness with a childhood murmur)"
+ },
+ {
+  "id": "MED-61",
+  "cat": "med",
+  "promptBell": false,
+  "promptAt": 360,
+  "setting": "Rural general practice clinic with limited facilities. You are the GP. Face to face 4 + 2 + 2; online 6-minute history then findings on screen.",
+  "stem": [
+   "Your next patient is Alex Wooten, 17, who presents complaining of tiredness and feeling unwell. He works on his family's farm and has been complaining that he is not able to keep up with his work."
+  ],
+  "tasks": [
+   "Take a focused, relevant history",
+   "Ask the examiner for the physical examination findings you would like",
+   "Explain your most likely diagnosis to the patient, with your reasons",
+   "Give your differential diagnoses"
+  ],
+  "time": "8 minutes. Acknowledge the concern in the stem within 30 s · tiredness in 60 s · screen until thirst and urine turn positive — record them as symptoms, never argue with his explanation · probe: polyphagia, recurrent infections, vision, feet, ★ abdominal pain/nausea/vomiting, weight · finish the whole differential screen anyway (incl. farm animal contact) · examination incl. dehydration, breathing pattern, BSL and dipstick — 'glucose and ketones' · diagnosis in 25 seconds, two layers · differentials · hospital today.",
+  "back": {
+   "dx": "Diabetic ketoacidosis (ketosis; acidosis still to be confirmed) complicating undiagnosed type 1 diabetes in a lean 17-year-old: months of worsening low energy, polydipsia and polyuria explained away as farm work in the sun, polyphagia, two slow-healing skin infections, weight loss (belt tighter), nausea; aunt with T1DM. Examination: tired, mildly dehydrated, observations normal, breathing not deep or sighing; BSL mid-high teens; dipstick glucose 4+, ketones 3+. Two-layer diagnosis to the patient in 25 seconds: 'diabetic ketoacidosis, a complication of diabetes you didn't know you had — sugar goes up, the body makes chemicals called ketones, which I found in your urine'; reasons: tired for months, passing more urine, drinking more, hungrier, high sugar with sugar and ketones in the urine. Differentials reasoned for two, listed for the rest: leukaemia/lymphoma (no lumps, night sweats, that kind of weight loss); infections — EBV, HIV, Q fever from the animals (no fever/flu-like illness); then hepatitis, thyroid, anaemia, autoimmune, drugs, depression/stress, coeliac/IBD, cardiorespiratory, OSA. Disposition: hospital today — IV access, fluids started, bloods, specialist team phoned. Discriminating behaviours: recording the explained-away thirst/urine as symptoms, 'glucose and ketones' on the dipstick, and a 25-second explanation that leaves time for the differentials.",
+   "plan": [
+    [
+     "0:00",
+     "Intro; ★ 'not being able to keep up with the work must be really frustrating, and I can hear it's weighing on you'; consent; tiredness: low energy vs sleepy, months, constant, worse, nothing helps, impact — 60 s"
+    ],
+    [
+     "1:00",
+     "Checklist — liver, thyroid (weather) … ★ 'passing more urine? more thirsty or drinking more?' → 'only because I work in the sun — that's normal, isn't it?' → 'That does make sense, and I'll still note it.'"
+    ],
+    [
+     "1:45",
+     "★ Probe: hungrier/eating more · recurrent infections (skin, thrush, urine) · blurred vision · numb/tingling feet · ★ tummy pain, nausea, vomiting · weight loss without trying"
+    ],
+    [
+     "2:45",
+     "★ Finish the screen anyway, in groups: malignancy (weight, appetite, lumps, sweats, family cancer) · infection (fever, chills, sore throat, sexual activity, travel, ★ animal contact on the farm — Q fever) · anaemia · autoimmune · drugs/alcohol/smoking · mood, stress at home/school, bullying, brief HEADSS (a bit down — parents think he's lazy; no self-harm) · bowels · cardiorespiratory, snoring · family history (aunt T1DM)"
+    ],
+    [
+     "4:00",
+     "Examination: unwell? ★ dehydration (dry mucosa, turgor, sunken eyes), pale, jaundiced, wasted · T, HR, BP incl. postural, RR, SpO2 · thyroid, nodes · CVS · respiratory — ★ 'is his breathing deep and sighing?' · abdomen (tenderness, organomegaly) · ★ 'blood sugar level and urine dipstick' → 'what are you looking for?' → ★ 'glucose and ketones'; say the observations are normal — ketosis, acidosis needs blood ketone + venous gas"
+    ],
+    [
+     "6:00",
+     "★ Diagnosis in 25 s, two layers, five reasons; no pancreas/insulin/fat metabolism/acidosis. Physiology questions → 'I'll come back to that — let me first tell you what else I've considered and what happens next.'"
+    ],
+    [
+     "6:45",
+     "Differentials: reason two, list the rest · ★ 'You need to go to hospital today — I'll put a drip in, start fluid, take bloods and ring the specialist team now. Very treatable; once controlled there's no reason you can't do the farm work. Who can drive you? Would you like me to call your parents?' · close on the hidden agenda: 'I'll tell Mum it's not because you've been slacking off.'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Not being able to keep up with the work must be really frustrating.'",
+    "★ 'Are you passing more urine than usual? Are you more thirsty, or drinking more?' → ★ 'That does make sense, and I'll still note it.' (never argue)",
+    "'Are you hungrier than usual? Any infections that keep coming back?' / ★ 'Any tummy pain, nausea or vomiting?' / 'Any contact with animals on the farm?'",
+    "★ 'Could I have a blood sugar level and a urine dipstick?' → 'Glucose and ketones.'",
+    "★ 'Alex, I think you have diabetic ketoacidosis, which is a complication of diabetes you didn't know you had. In diabetes the sugar in your blood goes up; when that happens your body starts producing chemicals called ketones — that's what I've found in your urine today. The reasons: tired for months, passing more urine, drinking more, hungrier than usual, and your blood sugar is high with sugar and ketones in your urine.'",
+    "'Diabetes? But I'm not overweight.' → 'This is the type that isn't about weight — the body stops making its own insulin. It can happen to fit people.'",
+    "'Can I still drive the ute and the tractor?' → 'Once you're on insulin there are national driving rules because of the risk of a hypo at the wheel — it doesn't mean you can't drive, it means checking your sugar before you drive and carrying something sugary. Same for machinery. We'll go through it once you're stable.'",
+    "'Do my parents have to know?' → 'What you tell me is confidential, and at 17 you can make your own decisions if you understand what's involved. But this is serious and you'll need help — and knowing you've been unwell will change how they see the last few months. Would you like me to be there when you tell them?' ADDED",
+    "★ 'You need to go to hospital today — but once this is under control there's no reason you can't do your work.'"
+   ],
+   "pefe": [
+    "Examiner: tired, mildly dehydrated, not pale/jaundiced · T 36.5, HR 82, BP 110/70, RR 12, SpO2 normal · thyroid, nodes, CVS, chest, abdomen normal; breathing not deep or sighing · ★ BSL high (mid–high teens mmol/L) · dipstick glucose 4+, ketones 3+",
+    "Variant — frankly acidotic (Kussmaul RR 28, HR 124, abdominal tenderness, drowsy): 'clinical ketoacidosis — large-bore cannula, 0.9% sodium chloride, bloods for glucose, ketones, gas, electrolytes, call retrieval immediately — MedSTAR 1300 13 12 33'",
+    "Variant — 5-year-old known T1DM, vomiting with ketones (online paediatric version): DKA until proven otherwise; cautious fluid resuscitation, insulin infusion without a bolus — cerebral oedema risk",
+    "Variant — glucose 9 with ketones 3+ and eating very little: starvation/dehydration ketosis possible — blood ketone and venous gas before calling it DKA; euglycaemic DKA only if on an SGLT2 inhibitor ADDED",
+    "Management order if asked: fluid → potassium → insulin infusion (0.05–0.1 units/kg/h), no insulin bolus in children; monitor glucose hourly, ketones/gas/K 2-hourly; find the precipitant; specialist team; then education, NDSS registration, sick-day rules, driving rules VERIFY",
+    "SA: MedSTAR 1300 13 12 33 · RFDS · PATS · NDSS · Diabetes SA; adolescent confidentiality and Gillick/mature-minor competence at 17 under SA Consent to Medical Treatment and Palliative Care Act 1995 (16+ may consent) VERIFY"
+   ],
+   "fails": [
+    "Accepting his explanation for the thirst and urine and moving on ★",
+    "Generic dipstick answer ('leucocytes, nitrites, protein, blood') — the answer is glucose and ketones ★",
+    "Explaining ketogenesis and acidosis beautifully and the bell going during the second differential ★",
+    "Treating him in the clinic with fluids and reviewing tomorrow — same-day referral ★",
+    "Not acknowledging the concern in the stem; skipping the differentials because 'it's obviously diabetes'",
+    "Stopping at polyuria/polydipsia — missing polyphagia, infections, complication questions and the DKA questions (abdominal pain, nausea, vomiting)",
+    "Insulin bolus / insulin before fluids if asked for management; not asking farm animal contact"
+   ],
+   "numbers": [
+    "7-Eleven: fasting ≥7.0 mmol/L · random ≥11.1 mmol/L with symptoms · Australia reports mmol/L",
+    "Dipstick here: glucose 4+, ketones 3+ · DKA triad: hyperglycaemia + ketonaemia (blood ketones ≥3.0) + acidosis (venous pH <7.3 or HCO3 <15) VERIFY",
+    "Order: fluid → potassium → insulin · no insulin bolus in children · obs normal here = ketosis, acidosis to confirm",
+    "Timing: diagnosis and mechanism 25 s · reasons 15 s · differentials the rest · watch the clock — ≥60 s left at the start of Task 3",
+    "MedSTAR 1300 13 12 33 · RFDS · PATS · NDSS"
+   ]
+  },
+  "source": "Diabetic_Ketoacidosis_2_Case_Tasks_Script_Notability.pdf (Alex Wooten, 17, tiredness on the farm — DKA in new type 1 diabetes)"
  }
 ]
