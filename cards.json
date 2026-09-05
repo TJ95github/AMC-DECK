@@ -6151,5 +6151,278 @@
    ]
   },
   "source": "Pneumonia_2_Case_Tasks_Script_Notability.pdf (Version C — severe CAP with sepsis, advance care directive requesting all treatment, son)"
+ },
+ {
+  "id": "MED-50",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Surgical ward. You are the medical officer; the nurse has asked you to review. The observation chart is available.",
+  "stem": [
+   "James Whitmore, 45, was admitted after a cholecystectomy performed yesterday. The nurse has recorded a high temperature and has asked you to review him.",
+   "Observation chart: temperature 39.5°C on return to the ward, now 40.0°C · respiratory rate 15–20 initially, now 20–25 · SpO2 95% throughout, now drifting below 95% on room air."
+  ],
+  "tasks": [
+   "Take a relevant history from the patient",
+   "Ask the examiner for the physical examination findings",
+   "Explain your diagnosis and your differentials to the patient",
+   "Outline your management plan"
+  ],
+  "time": "8 minutes. Stability line 0:00 · fever block · post-op review block (pain and analgesia is the diagnosis being handed to you) · chest → heart → urine → wound → legs → cannula → drug/transfusion reaction · examination in fixed order with vocal resonance and the four abdominal asks · diagnosis + differentials grouped by time since surgery · management with analgesia FIRST.",
+  "back": {
+   "dx": "Post-operative day 1 fever with rising RR and falling SpO2, pain limiting deep breathing, decreased air entry and crepitations left mid-zone with vocal resonance NOT increased → atelectasis (the 'wind' of the timeline). Differentials grouped by time since surgery — immediate/first hours: drug or transfusion reaction, malignant hyperthermia, pre-existing infection; early to day 3: atelectasis, pneumonia, cannula thrombophlebitis, necrotising SSI (within 48 h), cardiac event (Version B); late after day 3: UTI (catheter), wound infection, VTE, intra-abdominal collection / bile leak, C. difficile. Antibiotics are withheld and the reason is said aloud. Discriminating behaviour: asking the cardiac questions in a station that 'looks respiratory', and putting analgesia first in the plan.",
+   "plan": [
+    [
+     "0:00",
+     "Gel; ★ stability statement to the examiner ('continuous observations, monitored bed if he deteriorates — I have the chart, I'll proceed'); intro; open question; concern statement"
+    ],
+    [
+     "0:40",
+     "Fever block: feels feverish? rigors/shaking chills? onset? ★ fever before the operation? getting worse?"
+    ],
+    [
+     "1:20",
+     "Post-op review block: nausea/vomiting · bowels/wind · abdominal pain beyond the wound · dizziness · eating and drinking · out of bed · ★ 'are you in pain now — are the painkillers helping?' → react aloud: 'that's really important — I think the pain is part of the cause'"
+    ],
+    [
+     "2:30",
+     "Chest: cough (dry/productive, colour), SOB, noisy breathing, lung disease, smoking. ★ Heart: chest pain or tightness even briefly, palpitations, previous cardiac disease"
+    ],
+    [
+     "3:30",
+     "Urine (dysuria, frequency, offensive, loin pain, ★ catheter), wound (discharge, redness, swelling), legs (calf pain/swelling, pleuritic pain, haemoptysis), travel ('an infection picked up before surgery can present like this'), ★ cannula and WHEN it went in, ★ prior fever after surgery / transfusion / new medicine; PMH, meds, allergies"
+    ],
+    [
+     "4:30",
+     "Examination in order: general (distress, cyanosis, pain) → vitals → respiratory in full incl. ★ vocal resonance → CVS → abdomen with the four asks (★ wound, suprapubic, renal angle, masses) + drain → cannula site → calves → urine dipstick"
+    ],
+    [
+     "5:30",
+     "Diagnosis in plain English: 'because of the pain you haven't breathed deeply and a small part of the lung has collapsed down — common, treatable'. ★ Differentials named to the patient: chest infection (CXR), urine/wound infection, drip site, clot in leg/lung, drug reaction, strain on the heart"
+    ],
+    [
+     "6:45",
+     "Management: ★ analgesia first, paracetamol for fever, CXR + bloods + urine MCS, monitoring with O2 if needed, physio for deep breathing and supported coughing (describe the technique, then the device), sit up and mobilise, no smoking (patches/Quitline), review this afternoon, safety net verbatim, 'any questions or concerns?' (hidden agenda: has something gone wrong, time off work), summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before I begin I'd like this patient on continuous observations, and I'd move him to a monitored bed if he deteriorates. I have the chart, so I'll proceed.'",
+    "'Do you feel feverish yourself? Any shivering or shaking chills? When did you first notice it? Did you have any fever before the operation? Is it getting worse?'",
+    "★ 'Are you in pain right now — are the painkillers helping?' → 'That's really important — I think the pain is part of what's causing this, and we'll fix it.'",
+    "★ 'Any chest pain or tightness, even briefly? Have you noticed your heart racing? Any previous heart trouble?'",
+    "'Any redness or pain at the drip site — and do you know when it was put in?' / 'Have you ever had a fever after an operation, a blood transfusion, or starting a new medicine?'",
+    "★ 'Can I have the vocal resonance, please?' / 'Is there suprapubic tenderness, and is there renal angle tenderness?'",
+    "'I've grouped my differentials by how long it is since the operation.'",
+    "'Collapsed sounds frightening, but it means a small area has gone airless — it re-inflates once you can breathe deeply again.' / 'Do I need antibiotics?' → ★ 'Not for this — antibiotics don't treat a collapsed lung. If the X-ray shows an infection, that changes.'",
+    "Safety net: 'Tell the nurses immediately if your breathing gets worse, you get chest pain, your heart races, the wound leaks or gets much more painful, or you feel faint. I'll be back to review you.' Do not promise a discharge date.",
+    "Summary: day 1 post-cholecystectomy fever, most likely atelectasis from pain-limited breathing; CXR and bloods, better analgesia, physio and mobilising, review this afternoon"
+   ],
+   "pefe": [
+    "Given: uncomfortable not distressed, no cyanosis. Chest movements symmetrical, trachea central; decreased air entry left mid-zone with crepitations; vocal resonance NOT increased. Heart sounds dual, no murmur. Abdomen soft, wound clean and dry, no suprapubic/renal angle tenderness, no masses, drain minimal serous. Cannula site clean. Calves soft and equal. Dipstick negative.",
+    "Variant — the vocal resonance switch (day 3): decreased air entry left base, coarse creps, vocal resonance INCREASED, bronchial breathing, green sputum → consolidation = hospital-acquired pneumonia: sputum + blood cultures, CXR, antibiotics per Therapeutic Guidelines HAP with local resistance in mind VERIFY",
+    "Variant — day 4 bile leak: generalised abdominal tenderness, ileus, bile-stained (green) drain → blood cultures, lactate, FBE/CRP/UEC/LFT/lipase, CT abdomen/pelvis with contrast, fasted + IV fluids, surgical registrar NOW — not physio and reassurance",
+    "Variant — septic turn mid-station (BP 85/50, HR 132): ★ stop the history, name the change, name the pathway, name who you call — high-flow O2, 2× large-bore IV, cultures, lactate, fluid bolus, empirical IV antibiotics within the hour, IDC, surgical reg + ICU, rural: MedSTAR 1300 13 12 33 early",
+    "Investigations: CXR, FBE, CRP, UEC, LFT, blood cultures if rigors/T ≥38.5, urine MCS, sputum if productive; ECG/troponin only if cardiac features (Version B)",
+    "SA: MedSTAR 1300 13 12 33 · Quitline 13 7848 · TIS 131 450"
+   ],
+   "fails": [
+    "Omitting the cardiac questions because the chart 'looks respiratory' ★",
+    "Not asking 'are you in pain / are the painkillers helping', or hearing 'it hurts to breathe in' and not reacting ★",
+    "Naming atelectasis and stopping — no differentials given to the patient ★",
+    "Starting antibiotics for atelectasis, or leading the plan with physiotherapy rather than analgesia ★",
+    "Skipping the stability statement; or spending two minutes on DRS ABC in a history station",
+    "Not asking for vocal resonance, the four abdominal asks, cannula site + date, calves; 'full abdominal examination' and stopping",
+    "Continuing the history through a deteriorating patient (septic variant)"
+   ],
+   "numbers": [
+    "Stem obs: T 39.5 → 40.0°C · RR 15–20 → 20–25 · SpO2 95% → falling",
+    "Timeline: immediate (first hours) · early (to day 3) · late (after day 3) — 'wind, water, wound, walking, wonder drugs' mapped onto it",
+    "Paracetamol 1 g q6h, max 4 g/24 h · SpO2 target 92–96% · cannula resite by 72 h (local policy 72–96 h)",
+    "Escalation: SBP <90 · HR >130 · RR >25 · lactate ≥2 · new confusion · necrotising SSI within 48 h · febrile non-haemolytic transfusion reaction rise ≤1°C · malignant hyperthermia dantrolene 2.5 mg/kg IV · C. difficile oral vancomycin 125 mg QID × 10 days",
+    "'Fever does not exclude a pulmonary embolism.'",
+    "MedSTAR 1300 13 12 33 · Quitline 13 7848 · TIS 131 450"
+   ]
+  },
+  "source": "PostOp_Fever_2_Case_Tasks_Script_Notability.pdf (Version A — James Whitmore, day 1, atelectasis)"
+ },
+ {
+  "id": "MED-51",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "Surgical ward, day 2–3 after cholecystectomy. You are the medical officer. Stem reconstructed from Version B in the variant section — the notes give the changed answers and findings, not a verbatim door stem.",
+  "stem": [
+   "James Whitmore, 45, is two to three days post-cholecystectomy and has developed a fever. The nurse asks you to review him.",
+   "Observations: temperature 38.4°C · pulse 112 · BP 168/96 · respiratory rate 16 · SpO2 97% on room air."
+  ],
+  "tasks": [
+   "Take a relevant history from the patient",
+   "Ask the examiner for the physical examination findings",
+   "Explain your diagnosis and your differentials to the patient",
+   "Outline your management plan"
+  ],
+  "time": "8 minutes. Same nine-box spine as MED-50. The station is won or lost at the cardiac block: he only reveals the chest tightness if you ask. Normal RR, normal saturations and a normal chest mean you cannot call this atelectasis.",
+  "back": {
+   "dx": "Post-operative fever day 2–3 with tachycardia, hypertension, a normal chest, and — only on direct questioning — twenty minutes of chest tightness overnight with palpitations, a father with MI at 50, and antihypertensives withheld peri-operatively. Working diagnosis: peri-operative myocardial infarction / acute coronary syndrome until proven otherwise (post-op MI is often painless or 'indigestion'; fever, tachycardia and hypertension from pain, catecholamines and withheld beta-blocker/ACE-I). Differentials kept in parallel: PE, intra-abdominal complication (bile leak/collection), pneumonia, atelectasis excluded by the normal chest. Discriminating behaviour: refusing the reflex atelectasis label when the respiratory findings are normal, and moving to ECG + serial troponin + monitoring + medical team in the room.",
+   "plan": [
+    [
+     "0:00",
+     "Stability statement · intro · open question · concern statement (as MED-50)"
+    ],
+    [
+     "0:40",
+     "Fever block, then the post-op review block including pain and analgesia"
+    ],
+    [
+     "2:00",
+     "Chest questions — nothing much. ★ Cardiac: 'any chest pain or tightness, even briefly? heart racing? previous heart trouble? family history?' → 'tightness across my chest last night, twenty minutes, thought it was indigestion; heart thumping; Dad had a heart attack at fifty' · ★ 'Which of your usual tablets were stopped for the operation?' → BP tablets withheld"
+    ],
+    [
+     "3:30",
+     "Urine, wound, legs/VTE, travel, cannula + date, reaction history; PMH, meds, allergies"
+    ],
+    [
+     "4:30",
+     "Examination in the fixed order; findings: chest entirely normal, abdomen soft, wound clean, calves soft"
+    ],
+    [
+     "5:15",
+     "★ To the examiner: 'With a normal respiratory rate, normal saturations and no chest findings I can't call this atelectasis. My working diagnosis is a cardiac event until proven otherwise — 12-lead ECG now, serial troponin, cardiac monitoring, medical team; and I want to know which cardiac and antihypertensive medicines were withheld. PE and an intra-abdominal complication stay on the list.'"
+    ],
+    [
+     "6:00",
+     "To the patient in plain English: 'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first because that's the one that can't wait — heart tracing and blood test now, and the medical team to see you.' Differentials named."
+    ],
+    [
+     "7:00",
+     "Management: monitored bed, ECG, troponin now and repeat, aspirin if no surgical contraindication after discussion with surgeon VERIFY, analgesia and antipyretic, restart withheld antihypertensives when safe, CXR/bloods/urine as baseline, medical registrar + cardiology, safety net, summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Any chest pain or tightness, even briefly? Have you noticed your heart racing? Any previous heart trouble, and does anyone in the family have heart disease?'",
+    "★ 'Which of your regular medicines were stopped for the operation, and have they been restarted?'",
+    "★ 'With a normal respiratory rate, normal saturations and no chest findings, I can't call this atelectasis. My working diagnosis is a cardiac event until proven otherwise.'",
+    "'I'd like a 12-lead ECG now, serial troponin, cardiac monitoring, and I'd involve the medical team.'",
+    "'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first, because that's the one that can't wait — so I'm doing a heart tracing and a blood test right now.'",
+    "'I've also thought about a clot in the lung, a problem inside the tummy from the operation, and a chest infection — nothing points to those, but I'm checking.'",
+    "Safety net: 'Tell the nurses immediately if the tightness comes back, you feel your heart racing, you feel faint or short of breath.'"
+   ],
+   "pefe": [
+    "Given: T 38.4, HR 112, BP 168/96, RR 16, SpO2 97%. Chest examination entirely normal. Abdomen soft, wound clean, calves soft.",
+    "Request the same fixed sequence as MED-50 — general, vitals, respiratory in full with vocal resonance, CVS, abdomen with the four asks + drain, cannula, calves, dipstick — the normal chest is the point.",
+    "Investigations: 12-lead ECG now and repeat; troponin now and at 3–6 h (high-sensitivity) VERIFY; FBE, UEC, CRP, LFT, glucose; CXR; blood cultures if rigors; CTPA only if the ECG/troponin do not explain it and PE is suspected",
+    "Peri-operative MI: often silent or atypical; risk peaks day 1–3; withheld beta-blocker/ACE-I and catecholamine surge contribute; management is with cardiology and the surgeon — antiplatelet/anticoagulant decisions weigh surgical bleeding risk VERIFY",
+    "SA: medical registrar / cardiology; rural — MedSTAR 1300 13 12 33 for retrieval to a PCI-capable centre (RAH/FMC/LMH) if STEMI or high-risk NSTEACS VERIFY"
+   ],
+   "fails": [
+    "Calling atelectasis with a normal RR, normal SpO2 and a normal chest ★",
+    "Never asking the cardiac questions — the tightness is only volunteered on direct questioning ★",
+    "Not ordering an ECG and troponin in the room; sending him for physio ★",
+    "Not asking which medicines were withheld peri-operatively",
+    "Dropping PE and intra-abdominal complication from the differential",
+    "Jargon to the patient ('ACS', 'troponin') without translation; no safety net"
+   ],
+   "numbers": [
+    "Version B obs: T 38.4 · HR 112 · BP 168/96 · RR 16 · SpO2 97%",
+    "Changed answers: 20 min chest tightness overnight 'indigestion' · heart thumping · father MI at 50 · BP tablets withheld for surgery",
+    "hs-troponin at 0 and 3–6 h; ECG repeat with any symptoms; monitored bed VERIFY",
+    "Post-op MI peak day 1–3 · fever + tachycardia + hypertension ≠ atelectasis",
+    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   ]
+  },
+  "source": "PostOp_Fever_2_Case_Tasks_Script_Notability.pdf (Version B — day 2–3, cardiac; stem reconstructed from Variant 1)"
+ },
+ {
+  "id": "MED-52",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice. You are the GP. The patient's relative (cousin) gives the history; the patient is beside her, awake but not really talking.",
+  "stem": [
+   "A 40-year-old woman has been brought to the clinic feeling unwell. Her relative is with her and will speak to you.",
+   "Vital signs: BP 85/55 · pulse 122 · respiratory rate 18 · SpO2 93% on room air · temperature 36.8°C."
+  ],
+  "tasks": [
+   "Take a history from the relative",
+   "Ask the examiner for the physical examination findings",
+   "Explain your diagnosis and your differentials"
+  ],
+  "time": "8 minutes. Stability + flat positioning 0:00 · consent gate · unpack 'unwell' · timing · 'what was she doing just before?' (the sting) → treatment sentence and keep going · four anaphylaxis systems · mimic sweep · background · examination airway-first · diagnosis with three reasons + six lay differentials + after-care.",
+  "back": {
+   "dx": "Anaphylaxis to an insect sting (Marie Whitcombe, 40; history from cousin Dawn): sudden onset within minutes of a sting, hypotension with tachycardia (warm shock, CRT 3 s), widespread expiratory wheeze, flushing/pruritus, presyncope, nausea — no upper airway involvement, no stridor, no retained sting, glucose 6.2, ECG sinus tachycardia. Anaphylaxis is a clinical diagnosis; adrenaline IM outer mid-thigh now, flat, ambulance. Differentials swept and named in lay terms with a reason each: septicaemia/meningococcaemia (no fever, blanching rash), cardiac event/arrhythmia (no chest pain, ECG sinus tach), stroke/SAH (normal neuro), ruptured ectopic/AAA/GI bleed (no pain, no bleeding, abdomen soft), hypoglycaemia (6.2), drug reaction (no medicines). Discriminating behaviours: the consent gate before disclosure, asking tongue/throat/voice by name, and airway + sting FIRST in the examination.",
+   "plan": [
+    [
+     "0:00",
+     "Gel; ★ to examiner: 'treatment room, lie her flat, continuous monitoring, a colleague stays with her while I take the history'; intro; 'I can see you're both worried — what has happened?'; concern statement; ★ consent gate: 'has she agreed to my discussing her condition with you?'"
+    ],
+    [
+     "0:50",
+     "Unpack 'unwell' (confused/sleepy, weak, feverish, struggling to breathe) · onset · worsening · ever before · ★ 'what was she doing just before this started?' → sting on the neck"
+    ],
+    [
+     "1:40",
+     "★ Treatment sentence, then keep going: 'I want her lying flat, I'm giving adrenaline into her thigh now, and I'm calling an ambulance.'"
+    ],
+    [
+     "2:00",
+     "Four systems: skin (rash/hives/welts, itch, lip/face/eye swelling) · lower airway (noisy breathing — what sound, SOB, cough) · ★ upper airway by name (tongue swollen? throat tight? voice changed?) · CVS (dizzy, faint, collapse) · GI (nausea, vomiting, abdominal pain)"
+    ],
+    [
+     "3:30",
+     "Mimic sweep, signposted: fever/chills, rash blanches?, headache/neck stiffness/photophobia, recent flu-like illness · chest pain/palpitations · weakness/numbness/slurred speech/gait/thunderclap headache · abdominal/back pain, bleeding, ★ LMP · asthma, allergies, EpiPen, medicines (diabetes, BP)"
+    ],
+    [
+     "5:00",
+     "Examination airway-first: general (distress, cyanosis, rash, conscious state) → ★ lip/tongue swelling, ★ stridor, ★ visible sting — may I remove it? → chest (air entry, added sounds) → CVS (S1 S2, murmurs, CRT, peripheral temperature) → abdomen incl. expansile pulsatile mass → neuro (cranial nerves, fundoscopy, limbs) → bedside ★ glucose, dipstick, 12-lead ECG. Read the findings back before interpreting."
+    ],
+    [
+     "6:15",
+     "Diagnosis with three reasons (minutes after the sting; low BP + fast heart = circulation; wheeze = tightened airways); adrenaline given, repeatable; ambulance; ≥4 h observation in hospital because of biphasic reactions; six differentials in lay language with why each is less likely"
+    ],
+    [
+     "7:20",
+     "Replies: 'is she going to be alright?' · 'never allergic before' (sensitisation) · after-care: two autoinjectors, action plan, training, allergy referral, venom immunotherapy; 'can she go home?' → not before 4 h; 'any questions or concerns?' (hidden agenda: cousin's guilt — reassure, no delay caused harm); summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'With those observations I'd take her to the treatment room, lie her flat and put her on continuous monitoring.'",
+    "★ 'Has she agreed to my discussing her condition with you?' (if 'only her cousin': 'she isn't well enough to consent right now, so I'll share what I need to in order to treat her, and speak to her directly as soon as she's able')",
+    "'Can you describe what you mean by unwell — confused, weak, feverish, or struggling to breathe?' / ★ 'What was she doing just before this started?'",
+    "★ 'That changes what I think is going on. I want her lying flat and not standing up, I'm giving adrenaline into the muscle of her thigh now, and I'm calling an ambulance.'",
+    "★ 'Is her tongue swollen? Does she say her throat feels tight? Has her voice changed?'",
+    "'I'm confident this is an allergic reaction, but I want to be sure I'm not missing an infection, a cardiac problem or a bleed.' / 'Does the rash fade when you press on it?'",
+    "★ To examiner: 'Before the systems — is there swelling of the lips or tongue? Is there stridor? Do I see a sting — if so, may I remove it?' / 'Anaphylaxis is a clinical diagnosis — I'm not waiting for a test.'",
+    "'It's a severe allergic reaction — the sting has made her blood vessels open up and her airways tighten. The treatment is adrenaline into the thigh muscle, which I've given; it works within minutes and we can repeat it.'",
+    "'She needs at least four hours of observation, because occasionally these reactions come back.' / 'She'll go home with two adrenaline pens, a written action plan and training, and a specialist referral — venom immunotherapy can substantially reduce the risk.'",
+    "'Should I walk her through?' → ★ 'No — please keep her lying flat; standing up can drop her blood pressure further.'",
+    "Summary: sudden collapse ten minutes after an insect sting with low BP, fast heart and wheeze — anaphylaxis; adrenaline given, flat, ambulance, hospital observation, specialist follow-up"
+   ],
+   "pefe": [
+    "Given: pale, distressed, no cyanosis, mild chest flushing, alert. No lip/tongue swelling, no stridor. Insect bite on the neck, no retained sting. Air entry equal, widespread expiratory wheeze. Heart sounds dual, no murmur, CRT 3 s, peripheries warm. Abdomen soft, non-tender, no masses. Neuro normal. BSL 6.2. Dipstick negative. ECG sinus tachycardia.",
+    "Variant — airway (stridor, tongue swelling, croaky voice, 'throat closing'): highest-risk anaphylaxis — IM adrenaline now, repeat at 5 min, nebulised adrenaline, high-flow O2, 000 + anaesthetic support, MedSTAR 1300 13 12 33 early; do NOT examine the throat; sit with legs out if flat worsens breathing VERIFY",
+    "Variant — mimic (fever, shivering, non-blanching purpura, headache, photophobia, no sting): meningococcaemia until proven otherwise — adrenaline is NOT the treatment; immediate IM/IV benzylpenicillin or ceftriaxone before transfer, cultures if no delay, fluids, ambulance/retrieval; notifiable — public health for contact prophylaxis VERIFY",
+    "Variant — drug trigger (amoxicillin this morning; card says penicillin allergy, nobody looked): stop the drug, adrenaline IM, flat, O2, fluids, ambulance; then ★ open disclosure — apologise for the event, state known facts, no blame or speculation, commit to incident report, allergy flag, and to coming back ADDED",
+    "Variant — teaching the autoinjector: 'blue to the sky, orange to the thigh' — pull blue cap, orange end firmly into outer thigh until it clicks (through clothing), hold 3 s (EpiPen; Anapen 10 s — CORRECTION to the teaching source's 5 s; check the device), rub 10 s, call 000 and say 'anaphylaxis', keep flat, second pen at 5 min if no better VERIFY",
+    "Post-event: tryptase 15 min–3 h + later baseline; ≥4 h observation (longer if severe, required repeat adrenaline, or asthma); discharge with 2 autoinjectors, ASCIA action plan, allergy referral, venom immunotherapy; TIS 131 450; healthdirect 1800 022 222"
+   ],
+   "fails": [
+    "Disclosing to the relative without the consent gate ★",
+    "Not asking 'what was she doing just before this started?' — the sting is volunteered only on that question ★",
+    "Not naming adrenaline with dose, IM route and outer thigh, or not keeping her flat / letting the cousin stand her up ★",
+    "Asking only about wheeze — omitting tongue swelling, throat tightness and voice change ★",
+    "Examining in textbook order and never reaching the airway/stridor/sting first",
+    "Racing to the diagnosis on 'stung' and dropping the mimic sweep and bedside glucose",
+    "Diagnosis without differentials, or no after-care (4 h observation, two pens, action plan, referral)"
+   ],
+   "numbers": [
+    "Stem obs: BP 85/55 · HR 122 · RR 18 · SpO2 93% · T 36.8°C",
+    "Adrenaline 0.01 mg/kg of 1:1000 IM outer mid-thigh, max 0.5 mg (adult 0.5 mg = 0.5 mL), repeat every 5 min if no improvement",
+    "Autoinjectors: 150 mcg (7.5–20 kg) · 300 mcg (>20 kg / adult) · 500 mcg Anapen (>50 kg where supplied) · EpiPen hold 3 s · Anapen hold 10 s VERIFY",
+    "Fluid bolus 20 mL/kg 0.9% saline if hypotensive · high-flow O2 · observation minimum 4 h · tryptase 15 min–3 h + baseline",
+    "Six lay differentials: blood infection · heart · stroke · bleed inside (ectopic/AAA) · low sugar · medicine reaction",
+    "000 · MedSTAR 1300 13 12 33 · TIS 131 450 · healthdirect 1800 022 222"
+   ]
+  },
+  "source": "Anaphylaxis_2_Case_Tasks_Script_Notability.pdf (Marie Whitcombe, 40, insect sting; history from cousin Dawn Halloran)"
  }
 ]
