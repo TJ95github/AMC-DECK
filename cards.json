@@ -9246,5 +9246,670 @@
    ]
   },
   "source": "Acute_Rhinosinusitis_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 30 — the blank 'unwell' stem → allergic rhinosinusitis + asthma flare)"
+ },
+ {
+  "id": "MED-84",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice. Vitals in the stem. Examination findings on a card when you ask — Version A card (hepatitis) or Version B card (gastroenteritis). Six minutes of history.",
+  "stem": [
+   "Jane Whitmore, 30, has come in feeling unwell. She reports there has been an incident at work. No further detail is given. T 38.1, HR 92, BP 118/72, RR 16, SpO2 98% RA."
+  ],
+  "tasks": [
+   "Take a focused history (6 minutes)",
+   "You will be given the examination findings on screen or card",
+   "Explain your diagnosis and differential diagnoses to the patient"
+  ],
+  "time": "8 minutes: 0:00 open + concern · 0:30 'unwell' in four questions · ★ 1:15 'you mentioned an incident at work — tell me more' · say the exposure back ('urine and faeces') · ★ four exposure questions: PPE · fluid in eyes/mouth · incident report · head injury · 2:15 three infection groups: hepatitis (jaundice, RUQ pain, nausea, dark urine/pale stools) · gastroenteritis (diarrhoea loose vs watery, blood, fever/chills) · leptospirosis (rash, nodes, calf pain, red eyes) · ★ 4:15 PTSD screen — coping, mood, sleep, nightmares, avoidance · 5:00 the rest fast incl. hepatitis vaccination · examination by name incl. urine dipstick and calves · diagnosis with reasons · differential with named organisms + leptospirosis + psychological · safety-net, notification, teach-back.",
+  "back": {
+   "dx": "Version A — acute viral hepatitis (A or E) after falling chest-deep into sewage five days ago while sampling for the water utility (full PPE; doesn't know if fluid entered mouth/eyes; incident report filed; no head injury): five days of fever, aches, night sweats, anorexia, RUQ pain, mild nausea, no diarrhoea; card — no jaundice yet, T 38.1, tender hepatomegaly, RUQ tenderness, no splenomegaly, no rash, no calf tenderness, ★ urine dipstick bilirubin positive (bilirubinuria precedes visible jaundice — the point of the card). Explain: 'acute hepatitis — inflammation of the liver — most probably hepatitis A or a close relative, hepatitis E; both picked up by swallowing something contaminated with sewage; not yellow yet but the pigment is already building up in the urine'; settles over weeks, doesn't become chronic; infectious via the bowel — handwashing, household vaccination. Version B card (no jaundice, no hepatomegaly, mild lower abdominal tenderness, dipstick normal; history of loose stools 4–5/day, lower abdominal pain) → gastroenteritis, said cleanly: 'not hepatitis' — no hedging with 'might be early hepatitis'. Differentials aloud: sewage-borne — gastroenteritis viral (rotavirus, norovirus, adenovirus), bacterial (Salmonella, Shigella, E. coli, Campylobacter), protozoal (Giardia, Cryptosporidium, Entamoeba); leptospirosis (rat urine; no calf pain/red eyes but treatable — test); liver abscess (needs ultrasound); PTSD/adjustment reaction (replaying it, two dreams, hasn't been back down); further down EBV, CMV, HIV, syphilis, travel infections, lymphoma/leukaemia, thyroid, diabetes, anaemia, coeliac, autoimmune ('cancer?' → 'not worried about that here — it's on the list I work through'). Plan: LFTs, clotting, hepatitis and leptospirosis serology, liver ultrasound; rest, fluids, no alcohol; notify hepatitis A; vaccinate household (3-year-old son); employer letter — off work while infectious; ReturnToWorkSA; safety-net confusion/drowsiness, bruising/bleeding, can't keep fluids down, turning yellow; review 2 days, talk about the dreams properly then.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'I understand you've been unwell and something happened at work — I'll ask questions, examine you, then explain' · ★ 'is there anything you're particularly worried this might be?'"
+    ],
+    [
+     "0:30",
+     "'Unwell' — feverish/tired/pain? duration (5 days), constant, worse, better/worse, impact (2 days off) — four questions, then move"
+    ],
+    [
+     "1:15",
+     "★ 'You mentioned an incident at work — can you tell me more?' → slipped climbing into a sewer, fell into sewage → react: 'that sounds horrible, thank you for telling me — so you were exposed to urine and faeces'"
+    ],
+    [
+     "1:40",
+     "★ Four exposure questions: PPE? (full kit) · ★ fluid in eyes or mouth? (doesn't know) · incident report? (yes — 'that matters, it protects you if you need time off') · ★ head injury or other injury? (landed on side)"
+    ],
+    [
+     "2:15",
+     "Hepatitis: jaundice, abdominal pain + site (A: RUQ; B: lower), nausea/vomiting, dark urine/pale stools · gastroenteritis: diarrhoea — loose or watery, blood/mucus (A: none; B: loose ×4–5, no blood), fever/chills · leptospirosis screen: rash, nodes, ★ severe calf aches, ★ red/sore eyes → no (the mark is for asking)"
+    ],
+    [
+     "4:15",
+     "★ 'Falling into a sewer would shake anyone — how have you been coping? Mood? Sleep — nightmares or flashbacks? Avoiding going back? Other stress?' → replaying it, two dreams, hasn't been back — 'thank you, that's important and we'll come back to it'"
+    ],
+    [
+     "5:00",
+     "Fast: weight/appetite/lumps · travel · new partners ('I ask everyone') · chest pain/SOB · PMHx, meds, allergies · alcohol, smoking · ★ 'have you had hepatitis vaccinations for work?' (thinks so, not sure)"
+    ],
+    [
+     "6:00",
+     "★ Examination by name: appearance/hydration · jaundice sclerae and under the tongue · vitals · nodes · abdominal tenderness and site · liver size/tenderness · spleen · ★ calf tenderness, conjunctival suffusion · rash · ★ urine dipstick → Version A card"
+    ],
+    [
+     "6:45",
+     "Diagnosis + reasons (fever, liver pain, tender enlarged liver, bile pigment in urine) · 'serious? damage?' → settles over weeks, not chronic · 'infectious — my little boy?' → bowel route, handwashing, vaccinate family · differentials with named organisms · plan, notification, employer, safety-net · review 2 days + the dreams · teach-back: 'what will you tell your partner tonight?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Is there anything in particular you are worried this might be?' / ★ 'You mentioned an incident at work — can you tell me more about that?' / 'That sounds horrible. Thank you for telling me.' / 'So you were exposed to urine and faeces.'",
+    "★ 'Were you wearing protective equipment?' / ★ 'Did any fluid get into your eyes or your mouth?' / 'Did you file an incident report?' / ★ 'Did you hit your head?'",
+    "'Is the diarrhoea loose, or completely watery? Any blood?' / 'Any severe muscle aches, particularly in your calves? Any red or sore eyes?'",
+    "★ 'Falling into a sewer would shake anyone. How have you been coping?' / ★ 'Any nightmares? Have you been avoiding going back to work?'",
+    "★ 'Could I have the examination findings, including a urine dipstick' — and the calves and conjunctivae by name",
+    "★ 'Acute hepatitis means inflammation of the liver, picked up by swallowing something contaminated. You're not yellow yet, but the urine test shows the pigment is already building up, and that comes first.'",
+    "Version B: 'The examination changes what I think, so let me be clear: you're not yellow, your liver is not enlarged or tender, your urine test is normal — this is not hepatitis. What you have is gastroenteritis — an infection of the bowel, viral, bacterial or protozoal — most likely from a bug you swallowed when you fell in.'",
+    "'Leptospirosis comes from rat urine in sewers — you don't have the severe calf pain or red eyes that usually go with it, but it's treatable, so I want to test for it.' / 'Cancer?' → 'No — I'm not worried about that at all here. I mention it because it's on the list I work through, and nothing points that way.'",
+    "'Will my little boy catch it?' → 'It's infectious through the bowel, so handwashing, not preparing food for others, and I'll arrange vaccination for the people you live with.' / 'If this goes to public health I'll lose my job' → ★ 'Hepatitis A is notifiable and I have to report it — but the notification is what protects you: it confirms this came from work, it supports your ReturnToWorkSA claim, and it gets your workmates checked. It is not a complaint about you.'",
+    "★ 'Come back straight away — or go to hospital — if you become confused or drowsy, if you bruise or bleed, if you cannot keep fluids down, or if you go yellow.' / 'Just to check I explained it clearly — what will you tell your partner tonight?'"
+   ],
+   "pefe": [
+    "Role-player: Jane, 30, sampling technician, regional water utility; partner, 3-year-old son; non-smoker, 4–6 drinks/week; no meds/allergies/PMHx; one partner six years; no travel; thinks she had work hepatitis shots. Fell chest-deep five days ago, full PPE, doesn't know about mouth/eyes, report filed. Embarrassed, disgusted, matter-of-fact; softens and volunteers the dreams if you're warm; keeps them if you're brisk. Hidden agenda: hasn't been back down, two dreams, worried she can't do the job — only if asked about coping/sleep/mood/work, else 'doctor, can I ask you something else?' at the end. Tearful at avoidance",
+    "Cards — Version A: no jaundice, T 38.1, tender hepatomegaly, RUQ tenderness, no splenomegaly, no rash, no calf tenderness, dipstick bilirubin POSITIVE · Version B: no jaundice, no hepatomegaly, mild lower abdominal tenderness, dipstick normal",
+    "Variant 1 — jaundice + calf tenderness + creatinine 210: leptospirosis (Weil's) — 'carried in rat urine, a recognised hazard of sewer work; treatable with antibiotics, start today rather than wait; admit' — doxycycline or benzylpenicillin VERIFY TG · Variant 4 — bloody diarrhoea with high fever: bacterial colitis — stool sample today, UEC; ★ no antibiotics or antidiarrhoeals yet (STEC → HUS risk); wait for the result",
+    "Variant 3 — flat answers, never mentions the dreams: 'That was a frightening thing. Some people find afterwards they replay it, dream about it, or feel uneasy going back — has any of that happened?' → normal in the first weeks, review at a month if persisting (PTSD needs >1 month; before that acute stress reaction); book the review",
+    "Automatic fails: ★ never asks about the incident · ★ never asks fluid in eyes/mouth · ★ never asks head injury · ★ never screens mood/sleep/coping · ★ Version B still diagnoses hepatitis after a normal card · agreeing not to notify (Variant 2)",
+    "SA: notify hepatitis A/E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, STEC; ReturnToWorkSA for the claim; SafeWork SA for the confined space; healthdirect 1800 022 222; TIS 131 450; MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "Never asking about the incident — the lead point of the stem ★",
+    "Never asking whether fluid entered the eyes or mouth; never asking about a head injury ★",
+    "No mood, sleep, nightmare or avoidance screen — or 'how is your mood?' alone ★",
+    "Version B: still calling it hepatitis, or hedging 'it might be early hepatitis', after a normal card ★",
+    "Agreeing not to notify ★",
+    "'An abdominal examination' and stopping — no dipstick, no calves, no conjunctivae; two minutes spent on 'unwell'",
+    "A differential without named organisms, without leptospirosis, without a psychological differential; no reaction when she says what happened"
+   ],
+   "numbers": [
+    "Hepatitis A incubation 15–50 days (mean ~28) · hepatitis E 15–60 days · neither chronic in the immunocompetent VERIFY · jaundice visible at bilirubin ~40–50 µmol/L — bilirubinuria comes first",
+    "PTSD >1 month; before that acute stress reaction; review at 4 weeks · gastro work exclusion until 48 h after symptoms settle, longer for food handlers VERIFY SA Health",
+    "Organisms: rotavirus, norovirus, adenovirus · Salmonella, Shigella, E. coli, Campylobacter · Giardia, Cryptosporidium, Entamoeba · leptospirosis: calves, conjunctival suffusion, jaundice, AKI",
+    "Notifiable SA: hep A/E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, STEC",
+    "MedSTAR 1300 13 12 33 · healthdirect 1800 022 222 · TIS 131 450 · ReturnToWorkSA · SafeWork SA"
+   ]
+  },
+  "source": "Sewer_Exposure_2_Case_Tasks_Script_Notability.pdf (Jane Whitmore, 30, unwell after falling into sewage — Version A hepatitis, Version B gastroenteritis)"
+ },
+ {
+  "id": "MED-85",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice, regional South Australia. Vitals on request. Examination findings on card/screen: febrile, generalised lymphadenopathy, all other systems normal — ask for palms and soles, spleen and mouth. Six minutes of history.",
+  "stem": [
+   "Ben, 27, hospitality, attends alone: feeling unwell for eight days; for the last two days he has noticed a rash. BP 110/71, HR 88, RR 12, SpO2 98%, T 38.5."
+  ],
+  "tasks": [
+   "Take a relevant history (6 minutes)",
+   "Physical examination findings will be provided",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient"
+  ],
+  "time": "8 minutes. ★ 'Is my patient haemodynamically stable?' · define unwell · rash: redness/blisters/bruising, where it started, spread (not 'worse'), itch/pain, ★ blanches? · fever, travel · ★ 'do you use condoms?' → the hinge — 90 s of sexual history, no apologising: stable partner, multiple, ★ male/female/both, ★ oral/vaginal/anal ('tells me which sites to swab'), previous STI, alcohol/drugs · four rapid screens incl. ★ genital sores/ulcers now OR in the past months (the chancre) · meningism ×4 · immunisations, antibiotics · closing sweep — night sweats, lumps, new medications · findings aloud + ★ palms/soles, spleen, mouth · name HIV and syphilis with reasons · pause after the news · grouped differentials · ★ name the HIV test and seek consent · three-site swabs · contact tracing anonymised · safety-net.",
+  "back": {
+   "dx": "HIV seroconversion illness ± secondary syphilis. Eight days of fever, chills, aches, headaches, exhaustion (sick twice), mild early sore throat; two days of a flat red blotchy non-itchy non-painful ★ blanching rash chest → back and upper arms; lumps in neck and axillae, night sweats, appetite down, weight steady. Sexual history: MSM, several casual partners in six months, no stable partner, never condoms, oral and anal insertive and receptive, never diagnosed, alcohol involved, never injected, no travel. ★ Hidden detail: a small painless penile sore ~two months ago that healed alone — the primary chancre, given only to a specific sores/ulcers question. Findings: febrile, generalised lymphadenopathy, ★ lesions on the palms (ask), no splenomegaly, mouth clear. To Ben: 'I'm concerned about a sexually transmitted infection — specifically HIV, or syphilis, or possibly both'; reasons from history (MSM, no condoms, casual partners; eight days of fever/aches/headache/exhaustion, spreading rash) and examination (fever, glands everywhere, rash on the palms — characteristic of syphilis; the painless sore fits); 'they look identical at this stage, which is exactly why we test for both'. Long silence → 'Am I going to die?' → pause, 'what's going through your mind?' (uncle died of AIDS in the 90s) → HIV today is not that illness: treatment, normal lifespan, undetectable = untransmissible; syphilis cured with an injection; don't promise a result you don't have. Differentials grouped: meningococcal (unlikely — blanching, no meningism) · other STIs (herpes, mpox, disseminated gonococcal) · rash viruses (EBV, CMV, toxoplasma, measles) · travel (dengue, Ross River — no travel) · infective endocarditis · leukaemia/lymphoma · drug reaction (nothing new). Plan: bloods today — ★ 'one of them is for HIV and I need your permission for that specifically' — syphilis (treponemal EIA + RPR), hepatitis, FBE; swabs throat, anorectal, first-pass urine; sexual health clinic referral; phone with results; partner notification anonymised via the clinic; safety-net non-blanching rash, headache with stiff neck/photophobia, much worse → 000/ED.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'Examiner, is my patient haemodynamically stable? BP, pulse, RR, sats, temperature?' → stable, T 38.5 · WIPE · 'over a week is a long time, and a new rash is unsettling — questions, findings, then what I think'"
+    ],
+    [
+     "0:45",
+     "'Unwell — low energy, sleepy, or feverish?' · duration 8 days, constant, worse, sick twice · rash: 'redness, blisters, or bruising?' · where it started, has it spread (never 'worse') · itchy/painful (neither) · ★ 'does it fade when you press it?' → yes → aloud: 'a blanching rash makes a serious blood infection much less likely — I'll still check the neck symptoms'"
+    ],
+    [
+     "1:45",
+     "Temperature measured? chills? paracetamol? · travel (none) · sexually active? · ★ 'do you use condoms?' → pause → 'no, not really' → everything now pivots"
+    ],
+    [
+     "2:15",
+     "'Thanks for being straight with me. A few questions about your sex life — routine when someone's unwell with a rash, and it stays between us. Okay?' → stable partner? · multiple? · ★ 'male, female or both?' → men · ★ 'oral, anal, or both — I ask because it tells me which sites to swab' → both, both ways · previous STI? · alcohol/drugs?"
+    ],
+    [
+     "3:15",
+     "Four screens: ★ 'any sores or ulcers on your genitals — now, or in the past few months?' → painless sore two months ago, healed · groin lumps · jaundice/abdominal pain/nausea · discharge/dysuria · scrotal pain · ★ meningism: dizziness, headache (yes), stiff neck, photophobia (no) · childhood immunisations, sore throat/coryza/cough, recent antibiotics, diarrhoea · bites/bushwalking, animals, chest pain/palpitations/dental work, ★ injected drugs (never)"
+    ],
+    [
+     "4:45",
+     "Closing sweep: weight loss (no), appetite (down), lumps (neck, axillae), night sweats (yes), FHx cancer, medications/anything new, allergies, joints, smoking/alcohol — keep leukaemia/lymphoma on the spoken list"
+    ],
+    [
+     "5:30",
+     "'May I have the examination findings?' → say them aloud: febrile, generalised lymphadenopathy, other systems normal → ★ 'can I confirm — rash on the palms or soles? splenomegaly? oral ulceration?' → lesions on the palms; no spleen; mouth clear"
+    ],
+    [
+     "6:00",
+     "★ Name HIV and syphilis with reasons from history and examination · 'I can't tell which by looking — they look identical at this stage, which is why we test for both' · silence → ★ 'that's a lot to hear — what's going through your mind?' · uncle → honest hope, no promised result"
+    ],
+    [
+     "7:00",
+     "Grouped differentials · plan: bloods — ★ HIV test named, consent sought · syphilis, hepatitis, FBE · ★ swabs throat, back passage, urine · sexual health clinic · phone with results · 'do I have to tell anyone?' → partners need testing; clinic does it anonymously · safety-net → summary · 'anything I haven't covered?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Examiner, is my patient haemodynamically stable?' / 'When you say unwell — low in energy, sleepy, or feverish?' / 'Is it redness, blisters, or bruising?' / ★ 'Does it fade when you press on it?'",
+    "'Do you use condoms?' → 'Thank you for being straight with me.' / ★ 'I'm going to ask a few questions about your sex life — they're routine when someone's unwell with a rash, and this stays between us. Is that okay?' (not 'sorry, I have to ask this')",
+    "★ 'Are your partners male, female, or both?' / ★ 'What kind of sex do you have — oral, vaginal, anal? I ask because it tells me which sites to swab.' / 'Have you ever been diagnosed with a sexually transmitted infection? Has any of it happened when you'd been drinking or using drugs?'",
+    "★ 'Any sores or ulcers on your genitals — now, or in the past few months?' / 'Any dizziness, headache, stiff neck, or eyes sensitive to light?' / 'Have you injected any drugs?'",
+    "'So he is febrile with generalised lymphadenopathy and every other system normal. ★ Can I confirm whether there is rash on the palms or soles, whether there is splenomegaly, and whether there is any oral ulceration?'",
+    "'Ben, I'm concerned about the possibility of a sexually transmitted infection — specifically HIV, the human immunodeficiency virus, or syphilis, or possibly both. From your history: you have sex with men, you don't use condoms, several casual partners; eight days of fever, aches, headaches and exhaustion, and a rash that spread from your chest. On examination: a fever, enlarged glands all over, and the rash involves your palms, which is quite characteristic of syphilis. That painless sore two months ago fits too.' / ★ 'I can't tell which of these it is by looking at you, which is exactly why we test for both.'",
+    "'Am I going to die?' → (two-second pause) 'That's a lot to hear. What's going through your mind?' → 'HIV today is not the illness it was in the nineties. With treatment, people live a normal life span and cannot pass it on. And syphilis is cured with an injection. But I don't want to promise you a result I don't have — let's test and find out.'",
+    "'The most serious one I considered is meningococcal disease — but your rash fades when pressed and you've no neck stiffness or light sensitivity, so I think that's unlikely. Then other STIs — herpes, mpox, a spread-out form of gonorrhoea; the rash viruses — glandular fever, CMV, toxoplasmosis, measles; travel infections like dengue and Ross River, much less likely with no travel; infective endocarditis; blood cancers such as leukaemia and lymphoma; and a medication reaction, but you haven't started anything new.'",
+    "★ 'Some blood tests today — one of them is for HIV, and I need your permission for that specifically — plus syphilis, hepatitis and a blood count. And swabs from your throat, your back passage and a urine sample, because we swab every site.' / ★ 'The clinic can notify your partners anonymously — your name does not have to go anywhere. You won't have to make those calls yourself.'",
+    "'If that rash stops fading when you press it, or you get a bad headache with a stiff neck or light hurting your eyes, or you feel much worse — call 000 or go straight to emergency.' / Non-blanching variant: 'I'm going to stop and act on something — that rash doesn't fade, and with your fever and headache that could be meningococcal disease. I'm giving you an antibiotic injection now and calling an ambulance. I'm not waiting for tests, because waiting is the risk.'"
+   ],
+   "pefe": [
+    "Role-player: Ben Whitaker, 27, bar supervisor, share house, regional SA; fit, no meds/allergies; social smoker, weekend drinker. Says 'partners' until asked gender directly. Pauses before 'no, I don't use condoms'. Goes guarded (one-word answers) if you apologise or look uncomfortable. The chancre only to a specific sores/ulcers question — 'any other symptoms?' gets nothing. Hidden agenda: terrified of HIV — uncle died of AIDS in the 90s; if never asked what he's worried about, after the diagnosis: 'my uncle died of that'. If you rush to reassure: 'you're just saying that'. Closes 'thanks for not making me feel like a criminal' only if non-judgemental",
+    "Findings: febrile 38.5 · generalised lymphadenopathy · other systems normal · on request: lesions on the palms, no splenomegaly, no oral lesions. Version B: abnormal observations — the stability question is where you find out",
+    "Tests: 4th-generation HIV Ag/Ab (repeat at 6 weeks; add RNA if seroconversion suspected) · syphilis treponemal EIA + RPR · hepatitis B/C serology · FBE · NAAT throat, anorectal, first-pass urine · secondary syphilis: benzathine benzylpenicillin 1.8 g (2.4 MU) IM single dose; penicillin allergy doxycycline 100 mg bd 14 days VERIFY · meningococcaemia: ceftriaxone 2 g IV/IM immediately VERIFY · PrEP discussion once HIV negative, 3-monthly monitoring",
+    "Variant — 'I'm not sexually active': 'Can I check — have you EVER been sexually active, at any point? And when you were, did you use condoms? Some of these infections can have been there a long time before they make you unwell.' · Variant — amoxicillin five days ago, now a florid rash: EBV to the top of the list; not a penicillin allergy, don't record it as one; still test the rest",
+    "Automatic-fail behaviours: plan without naming the HIV test/consent · 'it's probably just a virus' · apologising through the sexual history · missing the palms (naming HIV alone)",
+    "SA: SHINE SA; Clinic 275; notifiable — HIV, syphilis, gonorrhoea, chlamydia; partner notification via the clinic; TIS 131 450; MedSTAR 1300 13 12 33 if meningococcal in a remote clinic"
+   ],
+   "fails": [
+    "Giving the plan without naming the HIV test and seeking consent ★",
+    "'It's probably just a virus' — premature closure aloud ★",
+    "Hearing 'I don't use condoms' and moving to the next system; never asking partner gender or type of sex",
+    "Never asking about genital sores/ulcers in the past months — the chancre is missed and HIV is named alone",
+    "'Sorry, I have to ask this…' before each sexual question — the history dries up",
+    "Reading the card silently; not asking for palms/soles, spleen, mouth; 'is the rash getting worse?' instead of 'has it spread?'",
+    "Filling the silence after 'HIV' with reassurance; promising a result; dropping leukaemia/lymphoma because weight is steady; not asking for haemodynamic stability"
+   ],
+   "numbers": [
+    "8 min, history 6 · HIV seroconversion 2–4 weeks post-exposure · 4th-gen Ag/Ab, repeat at 6 weeks · syphilis EIA + RPR · secondary syphilis rash 6 weeks–6 months after the chancre, palms and soles",
+    "Benzathine benzylpenicillin 1.8 g (2.4 MU) IM single dose · allergy: doxycycline 100 mg bd 14 d VERIFY · meningococcaemia: ceftriaxone 2 g IV/IM immediately VERIFY",
+    "Swab three sites: throat · anorectum · first-pass urine · PrEP monitoring 3-monthly",
+    "Nine sexual-history questions: active · stable partner · multiple · gender · practices · previous STI · alcohol/drugs · condoms · sores/ulcers",
+    "SHINE SA · Clinic 275 · TIS 131 450 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Fever_and_Rash_2_Case_Tasks_Script_Notability.pdf (Ben Whitaker, 27, eight days unwell with a rash → HIV seroconversion ± secondary syphilis)"
+ },
+ {
+  "id": "MED-86",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice. Examination card at six minutes — three versions: (1) hepatitis card, (2) HIV seroconversion card (scripted here), (3) endocarditis card. Six minutes of history.",
+  "stem": [
+   "Gary, 26, attends alone feeling unwell. He has recently returned from an overseas trip in South-East Asia, and used heroin while he was away."
+  ],
+  "tasks": [
+   "Take a relevant history (6 minutes)",
+   "You will be given a physical examination card",
+   "Explain your diagnosis and your differential diagnoses to the patient"
+  ],
+  "time": "8 minutes. Acknowledge the fear in one sentence · ★ signpost three blocks: the unwellness, the trip, the heroin · define, time, impact · ★ full travel history A B C D E F G S (don't accept 'just fun with mates'); write down 'no sex overseas' · ★ heroin in three steps IN ORDER: open question → route → shared needles · ★ three BBV boxes every time: hepatitis · HIV · injection/endocarditis · ★ go BACK for the sexual history ('ever been sexually active?') · ★ guilt ×3 → mood, anhedonia, self-harm, use since · card — interrogate for jaundice, organomegaly, murmur, injection sites, dipstick · name the version's diagnosis with reasons · grouped differentials · ★ HIV test named, consent · malaria films · harm reduction · confidentiality with the notification caveat · safety-net.",
+  "back": {
+   "dx": "Version 2 — HIV seroconversion illness: a week of no energy and fever, constant, worsening, bed-bound two days; three weeks in Indonesia, back two weeks; one night injected heroin — first ever use — one needle shared between the group, none since; street food nightly; pre-travel GP gave a hepatitis shot; no bites, sick contacts, animals, tattoos, transfusion; 'no sex overseas' — but ever sexually active: yes, never condoms, multiple partners at times, women. HIV box positive: sore throat, chest rash, fever/chills, drenching night sweats, some weight loss, neck lumps; hepatitis box negative; injection box negative. Card: T 38.2, morbilliform rash, generalised lymphadenopathy, exudative tonsillitis; on request — no jaundice, no hepatosplenomegaly, no murmur, injection sites unremarkable, dipstick negative. EBV is the trap answer — say it is the closest mimic. Explain: 'I'm concerned you contracted HIV when you shared that needle — the first stage, seroconversion illness, causes exactly this: fever, sore throat, rash, glands, night sweats, exhaustion — it looks like flu and is very commonly missed'; reasons — the route, the symptoms, the findings. 'I've ruined my life over one stupid night' → pause, 'what's going through your mind?' → concern not result; treatment today — normal lifespan, undetectable = untransmissible. Differentials: EBV/CMV/toxoplasma · hepatitis B and C ('your shot covers A and B; no vaccine for C — curable with tablets 8–12 weeks') · infective endocarditis (no murmur, reassuring) · malaria, dengue, typhoid (films) · syphilis · leukaemia/lymphoma · depression/anxiety. Plan: ★ HIV test with specific permission (4th-gen Ag/Ab ± RNA, repeat 6 weeks), HBV/HCV, syphilis, EBV, LFT, FBE, thick/thin films ×3; sexual health referral; confidentiality honest — notifiable, contacts traced sensitively, name not given; NSP and take-home naloxone 'not because I assume you'll use again'; mood review next week; safety-net confusion/drowsiness, jaundice, chest pain/SOB → ED/000.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'a week of that, and not getting out of bed, is frightening — let's work through it' · ★ 'three things I want to cover: what the unwellness feels like, your trip, and the heroin'"
+    ],
+    [
+     "0:30",
+     "'Low in energy, sleepy, or feverish?' · duration, constant, worse, better with anything, impact (off work, bed-bound)"
+    ],
+    [
+     "1:00",
+     "★ Travel A B C D E F G S: where/how long (Indonesia, 3 weeks) · 'what did you actually DO?' (push past 'fun with mates') · bites/bushwalking · contacts — sick people, animals, farms · drugs (coming) · exposures — tattoos, piercings, dental, surgery, transfusion · food/water (street food nightly) · GP before — vaccines, malaria tablets (hepatitis shot) · sex overseas → 'no' → WRITE IT DOWN"
+    ],
+    [
+     "2:15",
+     "★ Heroin, three steps: 'the notes mention you used heroin — can you tell me more about that?' (let him talk: one night, first time ever, 'I feel so guilty') → 'how did you use it — how did it go in?' (injected) → 'did you share needles?' (one needle between us) · 'thank you for being honest'"
+    ],
+    [
+     "3:00",
+     "★ Three BBV boxes: hepatitis — jaundice, abdominal pain, nausea/vomiting, dark urine/pale stools (no) · HIV — sore throat, rash, fever/chills/night sweats, weight loss, lumps, diarrhoea (yes, yes, soaking, some, neck) · injection/endocarditis — injection-site redness/swelling, chest pain, palpitations, hand/palm marks (no)"
+    ],
+    [
+     "4:15",
+     "★ Go back: 'you told me you didn't have sex while away, and I accept that — but these same infections are also passed on sexually, so if you have picked one up I need to know who else needs testing. Have you EVER been sexually active?' → yes · condoms (never) · multiple (at times) · ★ male/female/both (women)"
+    ],
+    [
+     "5:00",
+     "★ Guilt ×3 picked up: 'how are you coping? mood? still enjoying things? — I ask everyone — any thoughts of harming yourself? any use since you got back?' · meds, allergies, conditions, alcohol/smoking, FHx · 'what were you particularly worried this might be?' → 'something I can't get rid of'"
+    ],
+    [
+     "6:00",
+     "Card read aloud → ★ 'can I also confirm: jaundice? hepatosplenomegaly? murmur? injection sites? dipstick?' → all negative; T 38.2 → excludes versions 1 and 3 out loud"
+    ],
+    [
+     "6:30",
+     "Name HIV seroconversion with reasons · silence → pause → 'what's going through your mind?' → concern not result; treatment today · differentials grouped (EBV closest) · plan: ★ HIV test named + permission · HBV/HCV, syphilis, EBV, LFT, FBE, ★ malaria films · sexual health referral · confidentiality with the notification caveat · NSP + naloxone · mood review next week · safety-net · summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'When you say unwell — low in energy, sleepy, or feverish?' / ★ 'There are three things I want to cover: the unwellness, your trip, and the heroin.'",
+    "★ 'What did you actually do while you were over there?' / 'Any tattoos, piercings, surgery or a blood transfusion while you were away? And did you see a doctor before you went, for vaccinations or malaria tablets?' / 'Any sexual contact while you were away?'",
+    "★ 'Can you tell me more about that?' (first heroin question, then let him talk) / 'Can you tell me how you used it — how it went in?' / 'Did you share needles?' — in that order",
+    "'Thank you for being honest, that helps me a lot. Sharing a needle can pass on infections carried in blood, so I need to check for those.' → hepatitis box, HIV box, injection box",
+    "★ 'These infections are also passed on sexually, so I need to come back to this. Have you ever been sexually active? Do you use condoms? Ever had multiple partners? Male, female, or both?'",
+    "'You've said a few times that you feel guilty. How are you coping with it? How's your mood been? Still enjoying the things you normally enjoy? — I ask everyone this — any thoughts of harming yourself? Any use since you got back?'",
+    "'May I have the examination findings? ★ And can I confirm: any jaundice? Any hepatosplenomegaly? Any murmur? Anything at the injection sites? And the urine dipstick?'",
+    "'Gary, I'm concerned about the possibility that you contracted HIV when you shared that needle. The very first stage is called seroconversion illness, and it causes exactly this picture: fever, sore throat, a rash, swollen glands, night sweats and exhaustion. It looks so like the flu that it's very commonly missed.' → 'I've ruined my life' → (pause) 'That's a hard thing to hear. What's going through your mind?' → 'First, we don't know yet — this is a concern, not a result. Second, if it is HIV, treatment today is extremely effective: a normal life span and, on treatment, cannot pass it on.'",
+    "★ 'The hepatitis shot covers A and B. There is no vaccine for hepatitis C' — 'but it is now curable with tablets, usually over two to three months.' / ★ 'One of these is an HIV test — I need your permission for that specifically.' / 'Also hepatitis B and C, syphilis, glandular fever, liver tests, a blood count and malaria films.'",
+    "'What you tell me is confidential, though some infections have to be reported to public health so contacts can be traced — that's done sensitively and your name isn't given to your contacts.' (never 'everything is completely confidential') / 'I'll give you information about free needle and syringe services and take-home naloxone — not because I assume you'll use again, but because it costs nothing to have.'"
+   ],
+   "pefe": [
+    "Role-player: Gary Whelan, 26, warehouse worker, two housemates; weekend drinker, few cigarettes; no meds/allergies/hospital. Slow, flat, genuinely unwell. Vague on open travel questions — detail only to specific ones. 'No' to sex overseas, then waits; fully forthcoming if you come back. Says 'I feel so guilty' at least three times (a fourth, heavier, if ignored). If 'did you share needles?' is your FIRST heroin question: 'yes' flatly, no guilt, no first-time detail. At the diagnosis: long pause, 'I've ruined my life over one stupid night'; if rushed: 'you're just saying that'. If total confidentiality promised: 'so nobody else will ever know?'. Hidden agenda: 'scared I've given myself something I can't get rid of'",
+    "Card Version 2: T 38.2, morbilliform rash, generalised lymphadenopathy, exudative tonsillitis; no jaundice, no organomegaly, no murmur, injection sites clean, dipstick negative · Version 1: tender hepatomegaly, jaundice, urine bilirubin positive → acute viral hepatitis, most likely B or C via the needle ('if B we vaccinate those around you; if C no vaccine but curable') · Version 3: murmur + raised JVP, bibasal crepitations, ankle oedema → ★ infective endocarditis complicated by heart failure — 'you have heart failure' is the fail; 'endocarditis stays primary because acute valvular regurgitation explains the failure; heart failure alone misses the treatable cause and delays cultures and antibiotics' — hospital today, 3 sets of blood cultures from separate sites before antibiotics, modified Duke",
+    "Tests: 4th-gen HIV Ag/Ab ± HIV RNA, repeat 6 weeks; PEP window 72 h (passed) · HBsAg, anti-HBc IgM, anti-HBs; HCV Ab + RNA · syphilis · EBV/CMV · LFT, FBE, CRP · thick and thin films ×3 · dipstick: urobilinogen normal, bilirubin never normal",
+    "Harm reduction: NSP, take-home naloxone, ADIS 1300 13 1340 VERIFY · mood review next week; Lifeline 13 11 14 · HCV DAA cure typically 8–12 weeks VERIFY",
+    "SA: sexual health (SHINE SA/Clinic 275); notifiable — HIV, hepatitis B/C, malaria; DASSA; TIS 131 450; MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "'Did you share needles?' as the first heroin question — a memorised recall that loses the guilt and the detail ★",
+    "Not coming back for the sexual history after 'no sex overseas' — the most designed trap in the station ★",
+    "Asking only the hepatitis box (the version you revised) — all three boxes, every time",
+    "Hearing 'guilty' four times and never asking about mood or self-harm",
+    "'Everything you tell me is completely confidential' — not for a notifiable disease; 'you have heart failure' in Version 3",
+    "Accepting 'just having fun with mates' as a travel history; reading the card silently without asking for jaundice, organomegaly, murmur, injection sites",
+    "Plan without naming the HIV test and seeking consent; no malaria films; harm reduction omitted or delivered with judgement; rushing past his silence"
+   ],
+   "numbers": [
+    "8 min, history 6 · travel A B C D E F G S · heroin ×3 in order · 3 BBV boxes · HIV seroconversion 2–4 weeks; retest 6 weeks; PEP window 72 h",
+    "Hepatitis: HBsAg, anti-HBc IgM, anti-HBs; HCV Ab + RNA · HCV cure with DAAs 8–12 weeks VERIFY · hepatitis shot = A and B; no vaccine for C",
+    "Endocarditis: 3 sets of blood cultures, separate sites, before antibiotics; modified Duke criteria · malaria: thick and thin films ×3",
+    "Dipstick: urobilinogen normal; bilirubin never normal",
+    "ADIS 1300 13 1340 VERIFY · Lifeline 13 11 14 · TIS 131 450 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Unwell_Traveller_2_Case_Tasks_Script_Notability.pdf (Gary Whelan, 26, back from Indonesia, shared a needle — Version 2 HIV seroconversion; Versions 1 hepatitis and 3 endocarditis on the card)"
+ },
+ {
+  "id": "MED-87",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice, Kadina. Nine-minute station. He coughs harshly and repeatedly throughout — the acting is data. Observations from the examiner include the fifth vital sign. Two headings: infection, and malignancy.",
+  "stem": [
+   "Jack Mullins, 30, has come in feeling unwell and feverish. He is a known case of HIV and stopped his antiretroviral medication six months ago."
+  ],
+  "tasks": [
+   "Take a history from the patient (about 6 minutes)",
+   "Ask the examiner for the relevant physical examination findings, or read them from the card",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient"
+  ],
+  "time": "9 minutes: 0:00 ★ all five observations incl. SpO2 · one empathic sentence · ★ 'I can hear that cough' · unwell and fever explored separately · 1:30 HIV history — diagnosed when, ★ why stopped (no moralising), follow-up, complications · 2:15 ★ signposted whole-body infection screen (breadth not depth; characterise the cough in three questions) incl. sexual history despite HIV, injecting, chest pain · 4:45 ★ open the malignancy heading — weight, appetite, lumps, sweats, mouth ulcers/patches, purple marks, haemoptysis, smoking, asbestos, moles · mood · 5:45 examination in one run incl. vocal resonance and a full node survey · ★ the white patch — painful? scrapes off? colour? where? · ★ 'normal chest but febrile, tachypnoeic, hypoxic — in advanced HIV a normal chest does not exclude pneumonia' · 7:00 pneumonia named and reasoned · opportunistic infection as a concern not a diagnosis · ★ the cancers named honestly, reaction contained · other infections individually · restart ART · safety-net.",
+  "back": {
+   "dx": "Pneumonia in a man with untreated HIV (ART stopped six months ago — felt well, tablets nauseated him, long trip to Adelaide; no specialist review for a year; no prior complications), with opportunistic infection (Pneumocystis, TB) and malignancy on the list. Three to four days feverish with rigors, worsening, paracetamol useless; dry cough; new exertional breathlessness on stairs; everything else negative; smokes 10/day; mood flat. Examiner: alert, no rash/jaundice, mildly dehydrated; T 38.0, HR 104, BP 118/74, RR 24, ★ SpO2 92% RA; ★ a white patch in the mouth — scrapes off, on tongue and buccal mucosa (candidiasis — but describe before naming: Kaposi = violaceous, raised, hard palate, doesn't scrape; OHL = white, corrugated, lateral tongue, doesn't scrape); no lymphadenopathy; ★ respiratory examination entirely normal; HS dual; abdomen and dipstick normal. To the examiner: 'although the chest is normal he is febrile, tachypnoeic and hypoxic — in advanced HIV there isn't enough immune function to produce consolidation, crackles or an effusion, so a normal chest does not exclude pneumonia — the same principle as febrile neutropenia'. To Jack: 'the most likely thing is a pneumonia — fever, cough, unwell, Panadol not helping; on examination your oxygen is low and you're breathing fast — your lungs aren't picking up oxygen properly, even though listening sounded normal'; 'but my chest sounded fine?' → 'the low oxygen tells me more than my stethoscope does'. Opportunistic concern named (Pneumocystis, TB) alongside common causes (COVID-19, influenza, pneumococcus, Legionella, Mycoplasma) — don't call it Pneumocystis with no CD4, viral load, white cells or film. ★ 'HIV also raises the risk of certain cancers, and I have to be honest with you': lung cancer (cough, smoker), Kaposi sarcoma (the patch — exclude), lymphoma, leukaemia → he is shaken → contain: 'I'm not telling you that you have cancer; I'm telling you what I have to rule out; the most likely explanation today is still an infection'. Other infections named individually (tonsillitis, pharyngitis, sinusitis; gastroenteritis; hepatitis; syphilis, herpes, gonorrhoea; meningitis; cellulitis); then low mood/adjustment, anaemia, thyroid, diabetes, coeliac, OSA. Plan: send in today — CXR, bloods incl. CD4/viral load, start treatment; reconnect with the HIV team; ★ restarting ART is one of the most important things we do — and look at what made it hard last time. 'Is this because I stopped my tablets?' — hidden agenda at ~7 min.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'Before I begin, could I have his observations — BP, pulse, RR, temperature AND oxygen saturation?' → 118/74, 104, 24, 38.0, 92% · 'Hello Jack, I'm sorry to hear you've not been well — let's work out what's going on together' · ★ 'I can hear that cough — we'll come to it'"
+    ],
+    [
+     "0:40",
+     "Unwell: sleepy/low energy/feverish? duration (3–4 days), constant, worse, better/worse · fever block: measured? chills? (yes) taken anything, helped? (Panadol, nothing)"
+    ],
+    [
+     "1:30",
+     "HIV: 'when were you diagnosed? (5 y) I know you've stopped your medication — can you tell me what led to that? (felt fine, nausea, long trip to Adelaide) — no judgement here · regular follow-up? (not for a year) · any complications before? (never)'"
+    ],
+    [
+     "2:15",
+     "★ 'I'm going to run through the whole body fairly quickly, area by area — most of these will be a simple no, and that's what I'm hoping for': sore throat/coryza/facial/ear pain · ★ cough — dry or chesty? SOB? noisy breathing? (dry; puffed on the stairs — three questions, keep going) · nausea/vomiting/abdominal pain/diarrhoea · dysuria/frequency · headache/stiff neck/photophobia · ★ sexual health (active in 3 months? condoms? discharge/rash/ulcers/scrotal pain) — despite HIV · jaundice/dark urine/pale stools · rash, hot painful skin · travel · ★ recreational drugs, ever injected? chest pain/palpitations (endocarditis) · animals"
+    ],
+    [
+     "4:45",
+     "★ Malignancy heading: 'a few more — weight loss without trying? appetite? lumps or bumps? night sweats? ulcers or patches in your mouth? new purple or red marks on your skin? ever coughed up blood? do you smoke? (10/day) what work — asbestos? new or changing moles?' · if time: 'how has your mood been?' (flat)"
+    ],
+    [
+     "5:45",
+     "★ Examination in one run: general — alert/drowsy, rash, jaundice, dehydration · all five vitals · throat — swelling/redness, ★ any lesion in the mouth · full lymph node survey, thyroid · respiratory — expansion, percussion both sides, added sounds, ★ vocal resonance ('I'm looking for consolidation') · CVS — S1 S2, murmurs · abdomen — tenderness, splenomegaly · dipstick → 'there is a white patch in his mouth'; respiratory entirely normal"
+    ],
+    [
+     "6:30",
+     "★ The patch, two questions: 'is it painful to touch with a tongue depressor? can it be scraped off? colour? where?' → white, scrapes off, tongue and buccal mucosa → describe first, name second · ★ the normal-chest sentence to the examiner"
+    ],
+    [
+     "7:00",
+     "To Jack: pneumonia named + reasons (fever, cough, unwell, Panadol failed; low oxygen, fast breathing) · 'but my chest sounded fine?' answered · opportunistic concern — Pneumocystis, TB — alongside common viruses/bacteria · ★ 'HIV also raises the risk of certain cancers, and I have to be honest with you about that' — lung, Kaposi (the patch), lymphoma/leukaemia → shaken → ★ 'I'm not telling you that you have cancer; I'm telling you what I have to rule out' · other infections named individually · then low mood, anaemia, thyroid, diabetes, coeliac, OSA"
+    ],
+    [
+     "8:15",
+     "'Is this because I stopped my tablets?' → honest, not blaming · plan: send in today — CXR, bloods incl. a check of the immune system, treatment started · ★ 'restarting your HIV treatment is one of the most important things we can do — and we can look at what made it hard last time' · safety-net: more short of breath, confused/drowsy, severe headache/stiff neck, haemoptysis → ambulance · confidentiality/Adelaide follow-up if he prefers · questions"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'All five observations, including oxygen saturation.' / ★ 'I can hear that cough — tell me about it.' / 'I'm sorry you're feeling like this, Jack. Let me ask you a few questions, and we'll work out what's going on together.'",
+    "'When were you diagnosed? Can you tell me what led to stopping?' / 'Are you still having regular follow-up with your specialist?' / 'Thank you for telling me that, and there's no judgement here.'",
+    "★ 'I'm going to run through the whole body quickly — most of these will be a simple no.' / 'Is the cough dry or chesty? Short of breath? Coughed up blood?' / 'Can I ask about sexual health? Sexually active now or in the last three months? Condoms? Any discharge, rash or ulcers?' / 'Any recreational drugs — have you ever injected? Any chest pain or racing of the heart?'",
+    "★ 'Any weight loss, appetite change, lumps, night sweats, mouth ulcers or patches, new purple or red marks on your skin, coughed-up blood? Do you smoke? Any asbestos at work?'",
+    "'Is vocal resonance increased anywhere — I'm looking for consolidation.' / ★ 'Is the patch painful to touch with a tongue depressor, and can it be scraped off? What colour is it, and where in the mouth?'",
+    "★ 'Examiner, although the respiratory examination is normal, he is febrile, tachypnoeic and hypoxic. In advanced HIV there isn't enough immune function to produce consolidation, crackles or an effusion, so a normal chest does not exclude pneumonia here — the same principle as febrile neutropenia in a child on chemotherapy.'",
+    "★ 'Jack, the most likely thing is a pneumonia — an infection in your lung. Fever, cough, feeling unwell, Panadol not helping — and on examination the oxygen level in your blood is low and you're breathing faster than normal.' / 'But you said my chest sounded fine?' → 'When the immune system is weakened the body can't mount the response I'd normally hear. The low oxygen is telling me more than my stethoscope is.'",
+    "'Because you have HIV there's a higher chance of unusual infections — we call them opportunistic — things like Pneumocystis and tuberculosis. But it could still be a common virus such as COVID-19 or influenza, or a common bacterial pneumonia — pneumococcus, Legionella or Mycoplasma.' / Examiner: 'why not just say Pneumocystis?' → 'Because I have no CD4 count, viral load, white cell count or chest film. I'm calling it a pneumonia, and Pneumocystis is at the top of the list of causes.'",
+    "★ 'I also have to be honest that HIV raises the risk of certain cancers. Because you have a cough I'm thinking about lung cancer. Because of the white patch in your mouth I want to exclude a cancer that occurs specifically in HIV called Kaposi sarcoma. Lymphoma and leukaemia are also more common.' → (shaken) ★ 'I'm not telling you that you have cancer. I'm telling you what I have to rule out, because ruling it out properly is how we make sure nothing is missed. The most likely explanation today is still an infection.'",
+    "★ 'Restarting your HIV treatment is one of the most important things we can do — and we can look at what made it difficult last time.' / 'Am I dying?' → 'I can't answer that today and I'm not going to guess. What I think is happening — an infection in your lung — is treatable, and getting you back on treatment changes your outlook a great deal.' / 'If you become more short of breath, confused or drowsy, develop a severe headache or stiff neck, or cough up blood — that's an ambulance, not a waiting room.'"
+   ],
+   "pefe": [
+    "Role-player: Jack, 30, grain terminal Wallaroo, lives alone in Kadina; 10 cigarettes/day; social drinker; never injected; no meds/allergies. HIV 5 years, did well on ART; stopped 6 months ago (felt well, nausea, long trip to Adelaide); no specialist for a year; never a complication. Coughs harshly mid-sentence throughout. Crisp negatives. If 'cancer' is said: visibly shaken, quiet for a beat — see if you notice and contain. If judged about stopping: defensive, shorter answers for the rest. Hidden agenda: half-suspects it's his fault — 'is this because I stopped my tablets?' at ~7 min if you're warm",
+    "Examiner: alert, no rash, no jaundice, mildly dehydrated · T 38.0, HR 104, BP 118/74, RR 24, SpO2 92% RA · 'there is a white patch in his mouth' → white, scrapes off, tongue and buccal mucosa · no lymphadenopathy, thyroid normal · respiratory examination entirely normal · HS dual, no murmur · abdomen normal · dipstick normal",
+    "Three answers for the patch: candidiasis (white, creamy, scrapes off) · Kaposi sarcoma (violaceous, raised, hard palate, doesn't scrape, painless — AIDS-defining, biopsy; can involve the lung) · oral hairy leukoplakia (white, corrugated, lateral tongue, doesn't scrape). Variant — 'raised violaceous plaque on the hard palate, doesn't scrape': ★ Kaposi, not thrush. CD4 landmarks: <200 Pneumocystis, toxoplasmosis; <50 MAC, CMV retinitis; Kaposi at any count ADDED",
+    "Investigations in hospital: CXR, ABG/VBG, FBE, UEC, LFT, CRP, LDH, CD4 count, HIV viral load, blood cultures, sputum MCS + AFB ×3 (induced sputum/BAL for PJP), COVID/influenza PCR, urinary Legionella/pneumococcal antigen, syphilis serology; PJP empirical treatment if suspected VERIFY TG · TB is notifiable — 'done discreetly; Kadina is a small town — follow-up in Adelaide if you prefer'",
+    "Variant — three weeks of diarrhoea, same stem: structure unchanged — infection screen then malignancy screen; infective: Cryptosporidium, Isospora, microsporidia, CMV colitis, MAC + Campylobacter, Salmonella, Giardia, C. difficile; malignancy: lymphoma, Kaposi of the gut",
+    "SA: admit via regional hospital → RAH ID/HIV service; PATS; MedSTAR 1300 13 12 33 if hypoxic and deteriorating; TIS 131 450"
+   ],
+   "fails": [
+    "Telling him his chest was fine and therefore this was probably not serious ★",
+    "Never mentioning cancer at all — never opening the malignancy heading ★",
+    "'That's thrush' without checking anything — sticking with thrush after being handed 'violaceous' ★",
+    "Lecturing him about stopping his medication ★",
+    "Forgetting the fifth vital sign; ignoring the cough as stage direction",
+    "Turning the cough into a four-minute respiratory history; skipping the sexual history because he already has HIV; omitting the injecting/chest pain questions",
+    "'ENT infections' / 'GI infections' as differentials to the patient — categories are not diagnoses; false reassurance or blunt confirmation to 'am I dying?'"
+   ],
+   "numbers": [
+    "9 min: history 6 · examination 1.2 · dx/DDx 1.8 · checkpoints: HIV history by 2:15, malignancy by 4:45, examination by 6:00",
+    "T 38.0 · HR 104 · RR 24 · SpO2 92% RA · ART stopped 6 months · last review 1 year · sexual history window 3 months · sputum AFB ×3",
+    "CD4 <200: Pneumocystis, toxoplasmosis · <50: MAC, CMV retinitis · Kaposi sarcoma at any count ADDED",
+    "Patch: candidiasis white/creamy/scrapes · Kaposi violaceous/raised/hard palate/no scrape · OHL white/corrugated/lateral tongue/no scrape",
+    "MedSTAR 1300 13 12 33 · PATS · TIS 131 450"
+   ]
+  },
+  "source": "HIV_Fever_Cough_2_Case_Tasks_Script_Notability.pdf (Jack Mullins, 30, HIV off ART, fever and cough — pneumonia with a normal chest)"
+ },
+ {
+  "id": "MED-88",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 240,
+  "setting": "General practice, Moonta. EXAMINATION-FIRST station — no history taking. Findings from the examiner for four minutes; the results card is handed over at exactly four minutes; then you explain results, diagnosis and differentials to Jane.",
+  "stem": [
+   "Jane Whitmore, 40, has come in feeling unwell — tired and nauseated, no fever. She has recently returned from a trip to the Philippines. No sexual activity overseas, no mosquito bites, no needle exposures. Appendicectomy ten years ago."
+  ],
+  "tasks": [
+   "Begin with a physical examination, asking the examiner for the findings — there is no history taking",
+   "At four minutes you are given the investigation results; explain them to the patient",
+   "Explain your diagnosis and differential diagnoses to the patient"
+  ],
+  "time": "8 minutes: ★ 0:00 GREET JANE FIRST — name, role, what will happen, when I'll be back, is that all right (15 s) · 0:20 examination as one run across the differentials, not at the liver: general (jaundice) · four vitals · throat, ears · thyroid, full node survey · chest · heart · abdomen → 'hepatomegaly' → ★ don't accept it: span, tender?, border, shifting dullness, scratch marks, bruising, bowel sounds · DRE · ★ 'with the patient's consent and in the presence of a chaperone' pelvic · ★ two office tests: dipstick (bilirubin) and ★ pregnancy test · 4:00 turn back to Jane, acknowledge the wait · results in three sentences (test → plain English → meaning), under a minute, no numbers, no abbreviations · 5:30 'most likely' hepatitis A + reasons incl. bilirubin in the urine · 6:30 differentials — ★ TRAVEL FIRST, then liver/abdominal incl. cancer, then pregnancy, then the generic tiredness list · plan, notification, hygiene, alcohol, safety-net.",
+  "back": {
+   "dx": "Acute hepatitis A (most likely — confirmatory anti-HAV IgM pending): three weeks in the Philippines with relatives, home cooking and street food, back a fortnight; a week tired, nauseated, off food, afebrile; husband noticed yellow eyes two days ago. Examination: alert, ★ jaundiced, no rash/pallor, mildly dehydrated; BP 120/80, HR 88, RR 12, T 36.9; throat/ears/thyroid/nodes normal; chest clear; HS dual; abdomen not distended, ★ hepatomegaly 3 cm, non-tender, smooth regular border, no splenomegaly, no ascites, no scratch marks/bruising, bowel sounds normal; DRE and pelvic normal; ★ dipstick bilirubin positive, urobilinogen raised; ★ pregnancy test negative. Results card: WCC 13.2, bilirubin 68, ALT 780, AST 640, ALP 130, GGT 110, INR 1.1, albumin 38, HBV and HCV negative — hepatocellular pattern (to the examiner). Explain in three beats each: FBC — white cells, immune cells, raised = fighting infection/inflammation · liver test — enzymes raised = inflammation in the liver · hepatitis B and C negative. 'Damaged?' → 'inflamed rather than damaged; the two numbers that measure how well it's doing its job are normal today'. Diagnosis 'most likely', never certain: enlarged liver, jaundice, bilirubin in the urine ('made by the liver, normally never reaches the urine — finding it there tells me the problem is in your liver'), raised enzymes, B and C negative, recent travel, nausea; spreads via contaminated food/water. Settles over 2–8 weeks, no specific treatment, never chronic, lifelong immunity. Differentials in the order the case demands: (1) travel — malaria, dengue, typhoid, leptospirosis, hepatitis E, EBV, HIV, TB; (2) liver/abdominal — hepatitis B/C (negative), autoimmune hepatitis, drug-induced liver injury, gallstones/cholangitis, ★ cancer of the liver or pancreas ('particularly because your liver was not tender'); (3) pregnancy (tested, negative); (4) anaemia, thyroid, diabetes, coeliac, haemochromatosis, lymphoma/leukaemia, autoimmune, depression, heart failure, OSA. Plan: anti-HAV IgM, liver ultrasound, review this week; no alcohol, check before any medication (paracetamol at reduced dose VERIFY); handwashing, don't prepare food for others, don't share towels; notify — household vaccinated (within 14 days VERIFY); safety-net confusion/drowsiness, bruising/bleeding, worsening jaundice, can't keep fluids down. Hidden agenda: sister died of pancreatic cancer — tearful at the word cancer; name it, proportion it, say what resolves it.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'No questions, thank you. — Hello Jane, I'm Dr [name], one of the doctors here, and I'll be looking after you today. I'm going to speak with my colleague for a few minutes and go through an examination, then I'll come straight back to you and explain everything I've found. Is that all right?'"
+    ],
+    [
+     "0:20",
+     "One continuous run: general — alert/drowsy, ★ jaundice, rash, pallor, dehydration · all four vitals · throat (swelling, redness, exudate), ears (red bulging TM) · thyroid, ★ full lymph node examination every chain · respiratory — air entry, added sounds · CVS — S1 S2, murmurs · abdomen — inspection (distension, redness, bruising), palpation (tenderness, hepatosplenomegaly)"
+    ],
+    [
+     "2:15",
+     "'Hepatomegaly' → ★ 'what is the span? is it tender? border regular or irregular? shifting dullness? scratch marks? bruising? bowel sounds?' → 3 cm, non-tender, smooth, no ascites, no scratch marks/bruises, BS normal"
+    ],
+    [
+     "2:50",
+     "'I would like a digital rectal examination. ★ And with the patient's consent and in the presence of a chaperone, a pelvic examination — inspection for discharge or rash, speculum for cervical discharge, bimanual for cervical motion tenderness, uterine size and tenderness, and the adnexae' → all normal (there IS time here — judge by the clock you're given)"
+    ],
+    [
+     "3:30",
+     "★ 'Two office tests: a urine dipstick — I'm looking particularly for bilirubin — and a urine pregnancy test' → bilirubin positive, urobilinogen raised; pregnancy negative → results card handed over"
+    ],
+    [
+     "4:00",
+     "★ Turn back: 'thank you for waiting, Jane — I've examined you and I have your results; let me talk you through them, then tell you what I think' · three sentences, test → plain English → meaning: white cells raised · liver enzymes raised · hepatitis B and C negative · 'is my liver damaged?' → inflamed, not damaged; the job-numbers (INR, albumin) are normal"
+    ],
+    [
+     "5:30",
+     "'Most likely hepatitis — your liver is inflamed — most likely caused by a virus called hepatitis A' + reasons (enlarged liver, jaundice, bilirubin in the urine, raised enzymes, B and C negative, recent travel, nausea) · 'from the food?' → most likely · 'will I get better?' → 2–8 weeks, no specific medicine, never long-term, immune for life · 'can I pass it on?' → hands, food, towels; notification → household vaccine"
+    ],
+    [
+     "6:30",
+     "★ Differentials, travel FIRST: malaria, dengue, typhoid, leptospirosis, hepatitis E, EBV, HIV, TB · liver/abdomen: B/C negative, autoimmune hepatitis, drug-induced (antibiotics), gallstones/cholangitis, ★ cancer of the liver or pancreas — 'particularly because your liver was not tender' → tearful, sister → name it, proportion it (travel, pattern, bilirubinuria point to a virus), what resolves it · pregnancy — tested · the generic list"
+    ],
+    [
+     "7:30",
+     "Plan: confirmatory blood test, liver ultrasound, review this week · no alcohol, check before any medication ('Panadol for headaches?' → reduced dose, ask me) · handwashing, no food preparation for others, no shared towels · notification, household vaccination · work certificate · safety-net: confused/unusually sleepy, bruising/bleeding, yellowing much worse, can't keep fluids down → hospital · questions"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Hello Jane, I am Doctor [name] — give me a few minutes with my colleague and I will come straight back to you.'",
+    "'Examiner, on general appearance: is she alert or drowsy? Any jaundice? Any rash? Any pallor? Any dehydration?' — findings, not regions",
+    "★ 'What is the span? Is the liver tender? Is the border regular or irregular?' / ★ 'Is there shifting dullness? Any scratch marks? Any bruising?'",
+    "★ 'With the patient's consent and in the presence of a chaperone…' / ★ 'Two office tests: a urine dipstick, looking particularly for bilirubin, and a urine pregnancy test.'",
+    "'The first test is a full blood count. The white blood cells are the cells of your immune system, and they're higher than normal — your body is fighting an infection or inflammation.' / 'Your liver enzymes are raised — that means there is inflammation in your liver.' / 'We tested for two viruses that commonly cause liver inflammation, and both are negative.'",
+    "'Is my liver damaged?' → ★ 'Inflamed rather than damaged. The liver is a remarkably good healer. There are two numbers that tell me how well it's doing its job, and both are normal today.'",
+    "★ 'Bilirubin is made by the liver and normally does not reach the urine at all — finding it there tells me the problem is in your liver.' / To the examiner: 'This is a hepatocellular pattern.'",
+    "'I think you most likely have hepatitis — your liver is inflamed — most likely caused by a virus called hepatitis A.' / 'It settles over two to eight weeks, there's no specific medicine, it does not become long-term, and afterwards you are immune for life.'",
+    "★ 'Because you have been overseas, the first group I thought about was travel-related infections: malaria, dengue fever, typhoid, leptospirosis, and hepatitis E.' / 'Is it cancer?' → 'That's a fair thing to ask, and I'd rather answer it honestly. Cancer of the liver or pancreas is on my list, and one reason it stays there is that your liver wasn't tender. But the whole picture — you've just come back from overseas, the pattern of your blood tests, the bilirubin in your urine — points much more strongly to a viral infection. The blood test I'm arranging should settle it, and the ultrasound looks directly at the liver.'",
+    "'We notify this routinely, which means your household can be offered a vaccine.' / 'Avoid alcohol completely, and check with me before any medication.' / 'Come back straight away, or go to hospital, if you become confused or unusually sleepy, if you start bruising or bleeding easily, if the yellowing gets much worse, or if you cannot keep fluids down.'"
+   ],
+   "pefe": [
+    "Role-player: Jane, 40, council administration, Moonta; husband, two teenagers; a wine most weekends; non-smoker; no meds/allergies; appendicectomy 10 y. Three weeks in the Philippines with relatives, home cooking and street food, no malaria tablets, back a fortnight; a week tired, nauseated, off food, afebrile; yellow eyes noticed two days ago. Composed, tired, quietly frightened; warm if greeted at the door and returned to as promised; if ignored for four minutes: cool, short answers, 'I did not know what was happening, nobody said anything to me'. Asks at least two questions; 'I'm sorry, I don't know what that means' at jargon (hepatocellular, transaminases). Hidden agenda: sister died of pancreatic cancer three years ago — tearful at the word cancer: 'my sister had pancreatic cancer — is that what this is?'",
+    "Findings: alert, jaundiced, no rash/pallor, mildly dehydrated · 120/80, 88, 12, 36.9 · throat/ears/thyroid/nodes normal · chest clear, HS dual · no distension · hepatomegaly 3 cm below the costal margin, non-tender, smooth regular border · no splenomegaly, no shifting dullness, no scratch marks/bruises, BS normal · DRE/pelvic normal · dipstick bilirubin +, urobilinogen raised · pregnancy negative · card: WCC 13.2, bilirubin 68, ALT 780, AST 640, ALP 130, GGT 110, INR 1.1, albumin 38, HBV/HCV negative",
+    "Examiner: 'the raised white cell count?' → CORRECTION: 'a neutrophilia isn't typical of hepatitis A — the count is more often normal or low with a relative lymphocytosis; I'd want the differential and a CRP; afebrile with a non-tender liver and no rigors makes ascending cholangitis unlikely, but that's why I'd check'",
+    "Variant — INR 2.4, drowsy and vague: ★ acute liver failure — check BSL immediately, asterixis, formal conscious state; urgent admission and discussion with a liver unit; do not send her home; 'one of your tests shows your liver isn't doing one of its jobs, and I'm not happy to manage that from here — hospital today; is there someone who can come with you?' — the station stops being a counselling station",
+    "Variant — childcare worker: exclusion until ~1 week after the onset of jaundice VERIFY; public health works with the centre so children and staff can be vaccinated; certificate today · household contacts vaccinated within 14 days VERIFY (HAV vaccine ± immunoglobulin) · work exclusion 7 days after jaundice onset VERIFY",
+    "SA: notify SA Health (hepatitis A); public health contact management; Moonta → Wallaroo Hospital/RAH liver unit if failure; MedSTAR 1300 13 12 33; TIS 131 450"
+   ],
+   "fails": [
+    "Never speaking to Jane until four minutes have passed — walking in and addressing the examiner ★",
+    "A generic tiredness list with travel infections never mentioned — or not said first ★",
+    "'You definitely have hepatitis A' with no confirmatory test ★",
+    "Dismissing the cancer question ('oh no, nothing like that') — or agreeing too heavily ★",
+    "Examining 'at the liver' instead of across the differentials; accepting 'hepatomegaly' without span, tenderness, border, ascites, stigmata; omitting the pregnancy test; omitting consent and chaperone",
+    "Explaining AST/ALT/GGT abbreviations, the three cell lines, reading numbers out — burning the differential minute",
+    "Explaining a diagnosis at length when the INR demands escalation; no hygiene/notification/alcohol advice; no safety-net"
+   ],
+   "numbers": [
+    "8 min: examination 4 · results 1.5 · diagnosis 1 · differentials 1.5 · results card at exactly 4:00 · greeting 15 s",
+    "Hepatomegaly 3 cm, non-tender, regular · WCC 13.2 · bilirubin 68 · ALT 780, AST 640 · ALP 130, GGT 110 · INR 1.1, albumin 38 · HBV/HCV negative — hepatocellular pattern",
+    "Recovery 2–8 weeks · never chronic · lifelong immunity · contacts vaccinated within 14 days VERIFY · work exclusion until 7 days after jaundice onset VERIFY",
+    "Three-beat explanation: test → plain English → significance · differential order: travel → liver/abdomen (incl. cancer) → pregnancy → generic",
+    "MedSTAR 1300 13 12 33 · TIS 131 450 · notify SA Health"
+   ]
+  },
+  "source": "Hepatitis_A_Examination_First_2_Case_Tasks_Script_Notability.pdf (Jane Whitmore, 40, tired and nauseated back from the Philippines — examination first)"
+ },
+ {
+  "id": "MED-89",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 300,
+  "setting": "General practice. Vitals in the stem. Examination findings on screen/card when asked. Five minutes of history. No management task — but a plan and a safety-net still earn marks.",
+  "stem": [
+   "Ben Alderton, 25, has come in feeling unwell. He attends a sauna regularly with friends, and his friends have similar symptoms. He is currently taking PrEP. T 38.4, HR 96, BP 122/76, RR 16, SpO2 98% RA."
+  ],
+  "tasks": [
+   "Take a focused history (5 minutes)",
+   "You will be given the examination findings on screen or card",
+   "Explain your diagnosis and differential diagnoses"
+  ],
+  "time": "8 minutes. Acknowledge the worry · 'unwell' in four questions · ★ open the sauna: how often, ★ 'what do your friends have?', what do you do there (sex) · ★ three water infections: Legionella (cough, SOB, fever, diarrhoea, confusion) · hepatitis A (abdominal pain, nausea/vomiting, jaundice, dark urine/pale stools) · Pseudomonas (itchy spots under swimwear) · ★ PrEP block, three separate marks: adherence · 3-monthly screening · hepatitis A/B vaccination · ★ normalise once, then the full sexual history (partners, number, gender, condoms, practices, previous STI, alcohol/drugs) — don't stop to counsel · STI symptoms incl. ulcers, discharge, scrotum, back passage · the rest · examination by name incl. throat, nodes, palms/soles, genitals, dipstick · acute viral hepatitis WITHOUT guessing the subtype · differentials by exposure: sauna ×3 + crypto, STIs with ★ HIV high on the list despite PrEP · ★ three-site swabs · confidentiality accurately · vaccinate · 3-monthly reviews · safety-net.",
+  "back": {
+   "dx": "Acute viral hepatitis (subtype deliberately not guessed — A via faecal-oral including sexual transmission between men, or B/C via sex) in an MSM on PrEP: a week of fever, anorexia, upper abdominal pain, vomiting, partner says he looks yellow, urine darker; no cough/SOB/diarrhoea/confusion (Legionella less likely), no rash (Pseudomonas less likely). Sauna 2–3×/week, same group, a couple of friends off work with unknown symptoms; 'we have sex there as well' (say it back: both a water exposure and a sexual exposure). PrEP: misses the odd dose when he stays out; last review two months ago but ★ never screened for STIs; doesn't know if he's had hepatitis A/B vaccines. Sexual history: no stable partner, several partners, all men, no condoms, oral and anal, never diagnosed, sometimes after drinks. No STI symptoms. Card: jaundiced, T 38.4, tender hepatomegaly span >13 cm, no splenomegaly, chest clear, no rash, no lymphadenopathy, no genital/perianal lesions or discharge, dipstick bilirubin positive. Differentials grouped by exposure: sauna — Legionella (warm-water spray; no cough/SOB), Pseudomonas folliculitis (no rash), cryptosporidium (chlorine-resistant; no diarrhoea); STIs — ★ HIV high on the list ('PrEP is very effective but not absolute, and it depends on taking it consistently — you miss doses; one blood test'), syphilis, herpes, gonorrhoea and chlamydia (throat and rectum often asymptomatic — urine alone misses them); then EBV/CMV, travel, lymphoma/leukaemia, depression, thyroid/diabetes/anaemia/coeliac. Plan: LFT + clotting, full hepatitis panel, HIV (4th-gen ± RNA), syphilis; ★ swabs throat, anorectal, first-pass urine; rest, fluids, no alcohol, no shared food preparation, no sex until results; hepatitis A/B vaccination if not covered; PrEP reviews back to 3-monthly with a full screen; confidentiality accurate (notifiable as a case, not a name; partner notification anonymised; cousin in town → flag the file, results to a chosen number); safety-net confusion/drowsiness, bruising/bleeding, can't keep fluids, worsening jaundice; review 2 days; teach-back.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'I can hear that you're worried, and I want to get to the bottom of it — questions, examination, then a plan together' · 'unwell' — describe, duration (a week), constant, worse, better/worse, impact (off since Monday)"
+    ],
+    [
+     "0:50",
+     "★ 'Tell me more about the sauna and your friends — how often? do you know what symptoms they have? what do you do there?' → 2–3×/week, same group, couple off work, 'we have sex there as well' → say it back"
+    ],
+    [
+     "1:20",
+     "★ Three water infections: Legionella — cough? SOB? fever/chills? diarrhoea? confused/muddled? · hepatitis A — abdominal pain? nausea/vomiting? yellowing? dark urine/pale stools? → pain across the top, vomited, partner says yellow, darker urine · Pseudomonas — rash, ★ itchy spots where swimwear sits?"
+    ],
+    [
+     "2:20",
+     "★ PrEP, three separate marks: 'taking it every day without missing doses?' (most days) · 'three-monthly sexual health screening and regular review?' (2 months ago; never actually checked for STIs → 'we'll fix that today') · 'hepatitis A and B vaccinations?' (not sure)"
+    ],
+    [
+     "2:50",
+     "★ 'I'm going to ask some personal and quite detailed questions about your sex life. I ask everyone these, they're relevant to working out what's making you unwell, and what you tell me is confidential. Is that all right?' → active · stable partner · multiple · ★ male/female/both · condoms always? · oral/vaginal/anal · previous STI · under alcohol/drugs → note the condoms, keep going"
+    ],
+    [
+     "4:00",
+     "STI symptoms: sore throat, body rash, nodes neck/axilla/groin, night sweats, genital rash/sore/ulcer, penile discharge, scrotal pain/swelling, ★ pain or discharge from the back passage → none · quickly: weight/appetite/lumps/sweats, travel, mood, PMHx, meds (PrEP only), allergies, alcohol, smoking, other drugs"
+    ],
+    [
+     "5:00",
+     "★ Examination by name: appearance/hydration · jaundice sclerae/under tongue · vitals · throat and mouth ulcers · nodes neck/axillae/groins · rash incl. trunk, ★ palms and soles · chest · abdomen — tenderness, liver size/tenderness, spleen · ★ genitals and perianal area — ulcers/discharge · urine dipstick → card"
+    ],
+    [
+     "5:45",
+     "'Most likely acute viral hepatitis — your liver is inflamed, almost certainly from a virus: enlarged, tender liver, yellow skin, bile pigment in the urine' · 'which one — the bad one?' → ★ 'I'm deliberately not going to guess — A through contaminated water/food and also sex between men, or B or C through sex; the blood tests will tell us'"
+    ],
+    [
+     "6:30",
+     "Differentials by exposure: sauna ×3 + crypto, each with why less likely · STIs: ★ 'HIV is high on my list' → 'but I'm on PrEP' answered · syphilis, herpes, gonorrhoea, chlamydia (throat/rectum silent) · then EBV/CMV, travel, blood cancers, depression, generic · 'who else finds out?' → accurate confidentiality · plan: bloods, ★ three-site swabs, rest/fluids/no alcohol/no sex until results, vaccinate A and B, 3-monthly PrEP reviews · safety-net · review 2 days · teach-back: 'what are you going to avoid?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'I can hear that you are worried, and I want to get to the bottom of it.' / ★ 'Tell me more about the sauna and your friends.' / ★ 'Do you know what symptoms your friends are having?'",
+    "'Any cough, breathlessness — and any diarrhoea? Have you felt confused or muddled?' / ★ 'Any itchy spots where your swimwear sits?'",
+    "★ 'Are you taking your PrEP every day without missing doses?' / ★ 'Are you having your three-monthly screening?' / ★ 'Have you had your hepatitis A and B vaccinations?'",
+    "★ 'I'm going to ask some personal questions about your sex life. I ask everyone these, and they are confidential.' / 'What kind of sex do you have — oral, vaginal or anal?'",
+    "'Any sore or ulcer on your private parts, any discharge, any pain or swelling in the scrotum, any pain or discharge from the back passage?'",
+    "'Could I have the examination findings — appearance and hydration, jaundice in the sclerae and under the tongue, vital signs, throat and mouth ulcers, lymph nodes, any rash including palms and soles, chest, abdominal tenderness with liver size and spleen, genitals and perianal area, and a urine dipstick.'",
+    "★ 'Acute viral hepatitis means your liver is inflamed, almost certainly from a virus.' / ★ 'I am deliberately not going to guess which type — the blood tests will tell us.'",
+    "★ 'HIV is high on my list.' → 'But I'm on PrEP, I can't get HIV' → 'PrEP is very effective and taking it was a good decision. But it's not absolute, and how well it works depends on taking it consistently — you've told me you miss doses. Testing costs one blood test. If it's negative we both stop wondering; if it's positive, finding it early makes an enormous difference.'",
+    "★ 'I want swabs from three places — your throat, your back passage and a urine sample — because gonorrhoea and chlamydia in the throat and back passage very often cause no symptoms at all, and a urine test alone misses them.'",
+    "'Who else finds out? My cousin works in this town' → 'What you tell me stays between us. Some infections I have to report to public health, but that goes as a case, not as a name in the community. If something is positive your partners need to know they may have been exposed — there are services that contact them anonymously. I can flag your file so only clinicians see it, and send results to a number you choose.' / 'Rest, fluids, and no alcohol at all until your liver recovers — and hold off sex until we have results.'"
+   ],
+   "pefe": [
+    "Role-player: Ben Alderton, 25, hospitality, share house, MSM; non-smoker, weekend drinker, occasional recreational drugs; PrEP only; no PMHx/allergies. Sauna 2–3×/week; adds 'we have sex there as well' to a second open question or 'what do you do there?'. Never screened for STIs — only if asked directly. Open, sheepish; guarded and marks you down if you hesitate, apologise repeatedly or look uncomfortable — or if your tone changes at 'no condoms'. Hidden agenda: frightened it's HIV and who will find out (cousin in town) — 'can I ask you something?' at the end if never asked about concerns. When HIV is mentioned: 'But I am on PrEP. I cannot get HIV.'",
+    "Card: jaundiced · T 38.4 · tender hepatomegaly, span >12–13 cm · no splenomegaly · chest clear · no rash · no lymphadenopathy · no genital/perianal lesions, no discharge · dipstick bilirubin positive",
+    "Variant 1 — HIV seroconversion card (sore throat, trunk rash, oral ulcers, lymphadenopathy, no hepatomegaly, dipstick normal): 'not hepatitis — a seroconversion illness, the body's first reaction to HIV, a few weeks after unprotected sex'; 4th-gen Ag/Ab + HIV RNA today (antibodies take weeks); same-day sexual health referral if reactive; do NOT simply continue PrEP · Variant 4 — healed painless penile ulcer + palm/sole rash: secondary syphilis; benzathine penicillin after serology VERIFY TG; partners tested",
+    "Variant 2 — Legionella card (cough, SOB, diarrhoea, confusion, Na 126): pneumonia — CXR, urinary Legionella antigen, antibiotics today; hypoxic → admit; ★ notify — the sauna's water system gets investigated, 'that's how we protect your friends' · Variant 3 — 'my brother works on reception' before the history: records confidential, access only for their own work, curiosity = serious breach; flag the file; results to a chosen number — accurate, not 'nobody will ever see anything'",
+    "Automatic fails: ★ no sexual history, or 'are you sexually active?' only · ★ never opening the sauna · ★ HIV 'excluded' because he's on PrEP, or declining to test · ★ urine-only gonorrhoea/chlamydia testing · ★ judgemental about partners or the sauna",
+    "SA: Clinic 275; SHINE SA; notifiable — HIV, syphilis, gonorrhoea, chlamydia, hepatitis A/B/C, legionellosis; PATS; MedSTAR 1300 13 12 33; TIS 131 450; healthdirect 1800 022 222"
+   ],
+   "fails": [
+    "Taking no sexual history — or only 'are you sexually active?' ★",
+    "Never opening the sauna — not asking what the friends have ★",
+    "Saying HIV is excluded because he's on PrEP, or declining to test ★",
+    "Ordering a urine test only for gonorrhoea and chlamydia ★",
+    "Judgemental about his partners or the sauna — a tone change at 'no condoms' fails the communication domain ★",
+    "Naming a hepatitis subtype you cannot prove; recording PrEP as a medication and moving on (adherence, screening interval and vaccination are three marks)",
+    "Stopping the history to counsel about condoms; 'an abdominal examination' without throat, nodes, palms/soles, genitals, dipstick; promising nobody will ever see anything"
+   ],
+   "numbers": [
+    "8 min, history 5 · PrEP review THREE-monthly — script, full STI screen and renal function each time · PrEP protects against HIV only (not syphilis, gonorrhoea, chlamydia, hepatitis, mpox) · monitored adverse effect: renal",
+    "Three-site screen: throat · anorectal · first-pass urine + serology HIV, syphilis, HBV, HCV · HIV 4th-gen Ag/Ab (p24) + RNA if seroconversion suspected; retest 6 weeks and 3 months VERIFY",
+    "Seroconversion 2–4 weeks: fever, sore throat, non-itchy maculopapular rash, nodes, myalgia, mouth/genital ulcers · secondary syphilis palms/soles 6 weeks–6 months after the chancre · liver span >12–13 cm = hepatomegaly",
+    "Water infections: Legionella (pneumonia + diarrhoea, confusion, hyponatraemia) · Pseudomonas folliculitis (itchy pustules under swimwear, self-limiting 7–10 days) · hepatitis A · cryptosporidium (chlorine-resistant)",
+    "Clinic 275 · SHINE SA · MedSTAR 1300 13 12 33 · TIS 131 450 · healthdirect 1800 022 222"
+   ]
+  },
+  "source": "Sauna_PrEP_2_Case_Tasks_Script_Notability.pdf (Ben Alderton, 25, unwell — the sauna and PrEP; acute viral hepatitis with HIV kept on the list)"
+ },
+ {
+  "id": "MED-90",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 240,
+  "setting": "General practice, Wallaroo. Four tasks in eight minutes — examination begins at 4:00, management at 7:00. Observations from the examiner at the door (online: 'I'm taking you through to the treatment room to check your observations').",
+  "stem": [
+   "Mary Ellis, 25, is 20 weeks pregnant. She has come in because she has been feeling unwell for the past few days. First pregnancy; antenatal care so far uncomplicated."
+  ],
+  "tasks": [
+   "Take a focused history (4 minutes)",
+   "Ask the examiner for the relevant physical examination findings (2 minutes)",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient",
+   "Explain your management plan to the patient"
+  ],
+  "time": "8 minutes: observations first, one sentence · empathic sentence · ★ offer the word FEVERISH — she won't volunteer it · fever block: measured, chills, medication · urinary upper and lower: dysuria, frequency, haematuria, nausea/vomiting, ★ flank pain — site and radiation only · sexual health with a permission sentence · other infection: throat, cough, headache/neck, travel · ★ pregnancy-specific: vision, swelling, headache (pre-eclampsia) · thirst and polyuria separately (GDM) · jaundice, dark urine, pale stools, itch (cholestasis/AFLP) · palpitations/SOB (anaemia) · obstetric close — tightenings, fluid/bleeding, movements · ★ allergies BEFORE naming an antibiotic · 4:00 examination as one run: findings not regions, four vitals again, ★ fundal height, uterine tenderness, fetal heart · ★ 'is there any renal angle tenderness?' · dipstick — leucocytes and nitrites · 6:00 pyelonephritis with reasons; the baby question in one sentence; differentials LISTED not explained · 7:00 ★ ED today, admission, IV antibiotics, IV fluids, culture first.",
+  "back": {
+   "dx": "Acute pyelonephritis at 20 weeks: 3–4 days hot and shivery with rigors last night, worsening, paracetamol useless; dysuria and frequency, no visible haematuria; vomited 3–4 times; right flank/back pain radiating to the groin (Version B: low central suprapubic pain — the diagnosis is unchanged when renal angle tenderness is positive). Pregnancy-specific screen negative: no visual blurring, swelling, headache (pre-eclampsia); no thirst/polyuria (GDM); no jaundice, dark urine, pale stools, itch (cholestasis/AFLP); no palpitations/SOB (anaemia); no tightenings, fluid, bleeding; baby moving; pregnancy vitamins only; no allergies. Examiner: alert, flushed, mildly dehydrated; BP 110/70, HR 108, RR 18, ★ T 38.7; throat/chest/heart normal; mild suprapubic tenderness, no RUQ tenderness, no organomegaly; ★ fundal height 20 cm consistent with dates, uterus non-tender, FHR 145; ★ right renal angle tenderness POSITIVE; dipstick leucocytes +++, nitrites +, blood ++, protein trace. To Mary: 'pyelonephritis — an infection in your kidney: burning, going more often, fever, vomiting, tender over your kidney, urine test showing infection'; 'dangerous for the baby?' → 'it can be, which is exactly why we treat it properly and quickly — today is the best thing for both of you'. Differentials LISTED in 25 s: pre-eclampsia, gestational diabetes, other infections (STIs incl. herpes and HIV, throat, chest, meningitis), the liver conditions of pregnancy (cholestasis, acute fatty liver), appendicitis, renal stone, anaemia. Management, the four things first: ★ ED today, expect admission, IV antibiotics + IV fluids ('too serious to treat with tablets at home'), MSU for culture before antibiotics; then oral switch once afebrile 24–48 h, 10–14 days total, test-of-cure culture 1–2 weeks after, obstetric team checks the baby; 'do I have to go?' → sepsis and preterm labour risks; 'safe for the baby?' → yes, well-studied antibiotics. Safety-net: worse, shaking chills, can't keep fluids down, tightenings, bleeding, fluid, reduced movements → straight back.",
+   "plan": [
+    [
+     "0:00",
+     "★ 'Before I begin, could I have her observations — BP, pulse, RR and temperature?' → 110/70, 108, 18, 38.7 · 'Hello Mary, I'm sorry to hear you've not been well — questions, examination, then a plan together. Tell me what's been happening' → 'I'm worried about the baby' → acknowledge"
+    ],
+    [
+     "0:45",
+     "★ 'Can you describe it — are you tired and low in energy, sleepy, or feeling feverish?' → hot then shivery · onset (3–4 days), constant, worse, better/worse · fever block: measured? chills? (badly, last night) taken anything, helped? (Panadol, no)"
+    ],
+    [
+     "1:35",
+     "Urinary: burning/pain passing urine (yes) · frequency (constantly) · blood (no) · nausea/vomiting (3–4×) · abdominal pain · ★ 'any pain in your side or back, around your kidneys — where exactly, and does it travel?' → right flank to groin (site + radiation, then MOVE)"
+    ],
+    [
+     "2:20",
+     "'Can I ask a few confidential questions about sexual health? active? condoms? genital rash/ulcers? discharge? lumps or night sweats?' → husband, no condoms, nothing · other infection: sore throat/coryza/cough, headache/stiff neck, travel"
+    ],
+    [
+     "3:00",
+     "★ Pregnancy-specific: 'blurring of vision? swelling of legs, hands or face? bad headache?' · 'more thirsty? passing large amounts of urine?' (separately) · 'yellowing, darker urine, pale stools, itching?' · 'racing heart or breathlessness on exertion?'"
+    ],
+    [
+     "3:30",
+     "Obstetric and medication close: 'how has the pregnancy been? tightenings, fluid or bleeding from below? baby moving normally? regular medicines? ★ any allergies to antibiotics?' (ask NOW, not after naming a drug)"
+    ],
+    [
+     "4:00",
+     "★ One continuous run: general — alert/drowsy, jaundice, rash, dehydration · all four vitals again · throat — swelling/redness · respiratory — air entry, added sounds · CVS — S1 S2, murmurs · abdomen — inspection; palpation: suprapubic tenderness? RUQ tenderness? hepatomegaly? · ★ 'fundal height? is the uterus tender? fetal heart rate?' → 20 cm, non-tender, 145 · ★ 'is there any renal angle tenderness?' → right positive · ★ 'urine dipstick — leucocytes and nitrites' → leucocytes +++, nitrites +, blood ++, protein trace · no full pelvic — the clock killer"
+    ],
+    [
+     "6:00",
+     "Pyelonephritis named + reasons · 'is the baby all right?' → one sentence, then move · differentials LISTED, 25 s, not explained: pre-eclampsia, GDM, other infections (STIs incl. herpes/HIV, throat, chest, meningitis), cholestasis and acute fatty liver, appendicitis, renal stone, anaemia — 'your picture fits the kidney infection best'"
+    ],
+    [
+     "7:00",
+     "★ 'I'm going to send you to the emergency department today, and I expect you'll be admitted — antibiotics through a drip and fluids through a drip; a kidney infection in pregnancy is too serious to treat with tablets at home. We'll send a urine sample for culture before the antibiotics start.' · 'do I really have to? work tomorrow' → 'untreated, this can spread to the bloodstream and bring on early labour' · 'safe for the baby?' → well-studied antibiotics · if the clock allows: oral switch when afebrile, 10–14 days, test-of-cure, obstetric review · safety-net · summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Could I have her observations — blood pressure, pulse, respiratory rate and temperature?' / ★ 'Are you tired and low in energy, or are you feeling feverish?' / 'Have you measured it? Any chills? Did anything help?'",
+    "'Any burning or pain when you pass urine? Are you going more often? Any blood?' / ★ 'Any pain in your side or back, around your kidneys? Where exactly, and does it travel?'",
+    "'Any blurring of vision? Any swelling of the legs, hands or face?' / 'More thirsty than usual? Passing large amounts of urine?' / 'Any yellowing of your skin, dark urine, pale stools or itching?'",
+    "'How has the pregnancy been? Any tightenings, any fluid or bleeding from below? Is the baby moving normally? Any regular medicines? Any allergies to antibiotics?'",
+    "★ 'Examiner, what is the fundal height, is the uterus tender, and what is the fetal heart rate?' / ★ 'Is there any renal angle tenderness?' / 'Urine dipstick — I am looking for leucocytes and nitrites.'",
+    "★ 'Mary, I think you most likely have pyelonephritis — that is an infection in your kidney. I say that because you have burning when you pass urine, you're going more often, you have a fever, you've vomited, and on examination you're tender over your kidney with a urine test showing infection.'",
+    "'Is that dangerous for the baby?' → 'It can be, which is exactly why we treat it properly and quickly. Treating it today is the best thing we can do for both of you. Let me finish telling you what else I considered, and then what I want to do.'",
+    "'I also thought about pre-eclampsia, a blood pressure condition of pregnancy; gestational diabetes; other infections — sexually transmitted infections including herpes and HIV, an infection in the throat, in the chest, and meningitis; the liver conditions of pregnancy, cholestasis and acute fatty liver; appendicitis; a kidney stone; and anaemia. Your story and examination fit the kidney infection best.' (listed, not explained)",
+    "★ 'I am going to send you to the emergency department today, and I expect you will be admitted. You will need antibiotics through a drip and fluids through a drip, because a kidney infection in pregnancy is too serious to treat with tablets at home. We will send a urine sample for culture before the antibiotics start.' / 'Do I really have to go in? I've got work tomorrow' → 'I would not ask if it were not important. Untreated, this can spread to the bloodstream and can bring on early labour. Both are far less likely if we treat it properly from today.'",
+    "'Are the antibiotics safe for the baby?' → 'Yes. We choose antibiotics that are well studied and safe in pregnancy, and we avoid the ones that are not.' / ★ 'Because you are pregnant we repeat the urine test after treatment to be certain it has cleared.' / 'If you feel worse, get shaking chills, cannot keep fluids down, notice tightenings, bleeding or fluid from below, or the baby moving less — go straight back to hospital, do not wait.'"
+   ],
+   "pefe": [
+    "Role-player: Mary, 25, 20 weeks, first baby, part-time at the Wallaroo supermarket, husband; non-smoker, stopped alcohol; pregnancy vitamins only; no allergies; antenatal care normal. Unwell, a bit tearful; warms if acknowledged, flat and short if not. Does NOT volunteer the word fever — waits to be asked. Hidden agenda: frightened for the baby, worried about work — 'is the baby going to be all right?' at ~6 min if never asked; pushes back once on hospital 'do I really have to? I've got work tomorrow', accepts with a reason",
+    "Examiner: alert, flushed, mildly dehydrated, no jaundice/rash · BP 110/70, HR 108, RR 18, T 38.7 · throat normal · chest clear · HS dual · no distension · mild suprapubic tenderness · no RUQ tenderness, no organomegaly · fundal height 20 cm, uterus non-tender, FHR 145 · right renal angle tenderness POSITIVE · dipstick leucocytes +++, nitrites +, blood ++, protein trace",
+    "Antibiotics: ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly; oral switch cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY TG · NOT in pregnancy: trimethoprim first trimester; nitrofurantoin (no renal tissue penetration — does not treat pyelonephritis at all); quinolones; tetracyclines; NSAIDs from 20 weeks · oral switch after 24–48 h afebrile · total 10–14 days · test-of-cure culture 1–2 weeks · renal ultrasound if no better at 48–72 h",
+    "Version B — 'the pain is low down, in the middle': keep the upper-tract questions; to the examiner ask suprapubic AND renal angle tenderness → positive → 'low pain often points to the bladder, but fever, vomiting and tenderness over your kidney tell me it has travelled up — I'm treating it as the more serious of the two' — deciding it's cystitis after a positive renal angle = automatic fail",
+    "Harder — septic (BP 86/50, HR 128, T 39.4, drowsy): 'haemodynamically unstable — call for help, left lateral tilt, high-flow oxygen, two large-bore cannulas, blood cultures and lactate, fluid bolus, IV antibiotics within the hour, sepsis pathway, urgent retrieval via MedSTAR 1300 13 12 33 with obstetric consultation in parallel' · Harder — declines admission: name the risk plainly, explore the barrier (childcare, work, transport — solve it), keep her engaged, review tomorrow morning, explicit safety-net; neither cave nor refuse to negotiate",
+    "SA: Wallaroo Hospital → WCH/Lyell McEwin obstetric unit; SA Perinatal Practice Guidelines; PATS; MedSTAR 1300 13 12 33; TIS 131 450"
+   ],
+   "fails": [
+    "Sending her home on oral antibiotics ★",
+    "Never reaching the management task ★",
+    "Deciding it is cystitis after hearing renal angle tenderness is positive ★",
+    "Never assessing the baby — no fundal height, uterine tenderness, fetal heart ★",
+    "Exploring 'unwell' for ninety seconds without offering the word feverish; a full pain history when site and radiation are enough",
+    "Naming regions instead of findings; requesting a full pelvic examination (the clock killer); asking allergies after naming an antibiotic",
+    "Explaining each differential — the commonest reason candidates never reach management; a full ABCDE at the door; skipping the empathic sentence"
+   ],
+   "numbers": [
+    "20 weeks · T 38.7 · HR 108 · fundal height 20 cm · FHR 145 (normal 110–160) · four tasks: examination at 4:00, management at 7:00",
+    "Ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly → oral cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY · total 10–14 days · oral switch 24–48 h afebrile · test-of-cure 1–2 weeks · renal US if no better 48–72 h",
+    "Avoid: trimethoprim (T1) · nitrofurantoin (useless in pyelonephritis) · quinolones · tetracyclines · NSAIDs from 20 weeks",
+    "Pregnancy differential list: infection · pre-eclampsia · GDM · liver (cholestasis, AFLP) · anaemia · + appendicitis, stone",
+    "MedSTAR 1300 13 12 33 · SA Perinatal Practice Guidelines · TIS 131 450"
+   ]
+  },
+  "source": "Pyelonephritis_Pregnancy_2_Case_Tasks_Script_Notability.pdf (Mary Ellis, 25, 20 weeks, unwell — acute pyelonephritis in pregnancy)"
  }
 ]
