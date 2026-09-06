@@ -8479,5 +8479,772 @@
    ]
   },
   "source": "Hypercalcaemia_Hyperparathyroidism_2_Case_Tasks_Script_Notability.pdf (Colin Whitfield, 58, Kadina, corrected calcium 2.82, PTH pending)"
+ },
+ {
+  "id": "MED-76",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice. No physical examination and no results — history substitutes for examination. Six minutes of history, two of explanation.",
+  "stem": [
+   "Mrs Jane Halloran, 47, presents having found a lump in her neck. She noticed it while touching her neck and has been reading about it online. She is very worried."
+  ],
+  "tasks": [
+   "Take a focused history from the patient (approximately 6 minutes)",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient"
+  ],
+  "time": "8 minutes: 0:00 open + empathy line · 0:30 the lump — number, ★ 'show me exactly where', 'when did you first notice it', growth, four features (hard/tender/skin/mobile) · 1:30 thyroid box (ask despite lateral site) · 2:00 lymphoma + B symptoms · ★ 2:40 top-down cancer screen scalp → stomach — where all four positives live; do NOT stop at the cough · 4:20 infection box (★ toothache/dentist) · 5:10 travel, animals, sexual health, SADMA · 5:40 ICE · 6:00 'several conditions, not one' — ranked, each with its reason, benign and infective included · plan, timeframe, safety-net.",
+  "back": {
+   "dx": "Right lateral, hard, fixed, painless, enlarging cervical lymph node (~2 weeks) in a 47-year-old smoker (15/day × 30 years) — four buried positives found only by a systematic top-down screen: (1) dry cough for months (lung cancer), (2) non-healing buccal ulcer for two months (oral SCC), (3) food sticking on swallowing, not painful (oesophageal cancer — ask dysphagia and odynophagia separately), (4) aching back tooth, no dentist for years (dental infection with a reactive node — genuinely on the list, but a hard fixed node is not explained by it). Thyroid box negative (no movement on swallowing/tongue protrusion, no thermal intolerance); B symptoms negative — recite as relevant negatives. Explanation: 'I've been thinking about several conditions and I can't tell you today which it is' → most concerned about a cancer, and why: a gland reacting to a cancer in the lung (cough + smoking), the mouth (the ulcer), or the food pipe (food sticking) → the bad tooth as a real alternative → thyroid, other cancers that travel to the neck (skin, nose, stomach, salivary), throat/sinus/skin infections. Plan: examine properly, bloods, neck ultrasound, urgent specialist referral (ENT); organised today, hear within the week; safety-net — rapid growth, trouble breathing or swallowing → straight back. No false reassurance (she is briefed to push 'but you can't actually know that').",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'tell me about it in your own words' · 'it's cancer, isn't it?' → ★ 'I can imagine how frightening that's been, and I'm not going to guess. I'm going to ask quite a lot of questions, because a lump here can come from several different places — then I'll tell you honestly what I'm thinking.'"
+    ],
+    [
+     "0:30",
+     "The lump: one or more · ★ 'show me exactly where' (right lateral, below the jaw angle — midline vs lateral vs supraclavicular is the only substitute for examination) · ★ 'when did you first notice it?' (not 'how long has it been there') · ever before · bigger · hard/soft · tender · skin · mobile/fixed → rock hard, painless, stuck"
+    ],
+    [
+     "1:30",
+     "Thyroid box despite the lateral site: moves on swallowing? on tongue protrusion? heat/cold intolerance, bowels, weight, voice, family thyroid → all no · lymphoma box: weight loss, appetite, lumps elsewhere (axilla, groin), tiredness, drenching night sweats, fevers, cancer in you/family → all no"
+    ],
+    [
+     "2:40",
+     "★ Top-down, signposted: 'I'm going to ask about things that might seem unrelated — they help me work out where the lump has come from': changing moles/sun · nosebleeds/one blocked nostril/one blocked ear · ★ mouth ulcer that hasn't healed → YES · sore throat/hoarseness · ★ 'does food stick? and separately, is swallowing painful?' → sticks, not painful · abdominal pain/melaena · ★ cough — dry or productive, haemoptysis, smoking → dry cough months, 15/day 30 y — KEEP GOING · hand numbness/ptosis · cheek swelling/facial weakness"
+    ],
+    [
+     "4:20",
+     "Infection box: fevers/chills · ★ toothache, pain chewing, last dentist → bad back tooth, years since a dentist · sore throat/runny nose/ear pain · rashes, cuts, boils on head/neck"
+    ],
+    [
+     "5:10",
+     "Travel · animals/pets · 'a confidential question I ask everyone — sexually active, protection?' · alcohol · medications"
+    ],
+    [
+     "5:40",
+     "ICE: 'what were you most worried this might be, and what were you hoping we'd do today?' → cancer; hasn't told her husband"
+    ],
+    [
+     "6:00",
+     "★ 'I've been thinking about several different conditions, and I want to be honest about all of them — I can't tell you today which it is.' Cancer first with reasons: lung (cough + 30 years' smoking), mouth (ulcer), food pipe (food sticking) · ★ the bad tooth — a dental infection alone can swell a gland · thyroid; skin/nose/stomach/salivary cancers; throat/sinus/skin infections · plan: examination, bloods, neck ultrasound, urgent specialist referral · 'how long?' → organised today, hear within the week · safety-net: grows quickly, trouble breathing or swallowing → straight back"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Tell me about it in your own words.' / ★ 'I can imagine how stressful this has been — thank you for coming in to get it checked.' / 'I'm going to ask quite a lot of questions, because a lump here can come from several different places.'",
+    "★ 'Can you show me exactly where it is?' / ★ 'When did you first notice it?' / 'Is it hard or soft? Is it tender? Any change in the skin over it? Does it move freely?'",
+    "'Does it move up and down when you swallow — and when you poke your tongue out?' / 'Do you feel the cold or the heat more than other people?' / 'Any night sweats, the kind that soak the sheets?'",
+    "★ 'I'm going to ask about some things that might seem unrelated to your neck — they help me work out where the lump has come from.'",
+    "★ 'Any ulcer or sore in your mouth that hasn't healed?' / ★ 'Does food stick when you swallow? And separately — is swallowing painful?' / 'Have your motions turned black or tarry?'",
+    "'Any cough — dry or productive? Ever coughed up blood? Do you smoke?' — then keep screening: 'any numbness or pins and needles in your hand? drooping eyelid? swelling in your cheek in front of the ear?'",
+    "★ 'Any toothache, or pain when you chew? When did you last see a dentist?'",
+    "★ 'I've been thinking about several different conditions, and I want to be honest with you about all of them.' / ★ 'I can't tell you today which of these it is, and I don't want to guess.'",
+    "'The one I'm most concerned about is the possibility of a cancer, and I'll tell you why rather than leave you guessing: the lump could be a gland reacting to a cancer in the lung — you've had a cough for months and smoked for thirty years; it could relate to a cancer in the mouth, because of that ulcer; or the food pipe, because food is sticking. But you also told me about the bad tooth — a dental infection on its own can cause a swollen gland, so that's genuinely on my list too.'",
+    "'But you can't actually know that, can you?' → 'No — and I won't pretend to. What I can do is examine you properly, take bloods, get an ultrasound of your neck and have a specialist see you quickly. I'll organise it today and you'll hear from me within the week. If it grows quickly or you have trouble breathing or swallowing before then, come straight back.'"
+   ],
+   "pefe": [
+    "Role-player: Jane, 47, office at a fruit-packing company near Berri; married, two teenagers; smoker 15/day × 30 y; 2–3 wines/week; no meds/allergies/PMHx; no FHx cancer or thyroid. Lump found two nights ago, right side below the jaw angle, ~2 weeks, rock hard, non-tender, skin normal, stuck, maybe bigger, no movement on swallowing. Four buried positives given ONLY to the specific question — 'any other symptoms?' gets 'not really'. Frightened, slightly tearful, calmer once there's a plan; false reassurance makes her more anxious: 'but you can't actually know that, can you?'. Hasn't told her husband",
+    "Referral thresholds: node persisting >4–6 weeks, >2 cm, hard, fixed or supraclavicular; age >40 with smoking or alcohol · hoarseness or mouth ulcer >3 weeks → urgent ENT · first imaging neck ultrasound · FNA does not diagnose lymphoma — core or excisional biopsy · no open node biopsy before ENT assessment · reactive node must be re-checked and resolved in 2–4 weeks",
+    "Variant 1 — two findings only (smoker with dry cough + toothache): 'two things on my mind — a gland reacting to a lung cancer, or the bad tooth; hard and fixed concerns me, so I investigate properly rather than treat the tooth and wait'",
+    "Variant 2 — midline, years, lifts on swallowing AND tongue protrusion: thyroglossal duct cyst — 'a remnant from the way the thyroid forms before birth; not a cancer'; TFTs, ultrasound, surgical referral (usually removed to prevent infection). Discriminator: thyroid moves on swallowing but NOT on tongue protrusion",
+    "Variant 3 — 34-year-old, tender node, red warm skin, fever, painful back tooth, 3 days: reactive lymphadenitis from a dental source → urgent dental + antibiotics ★ AND book the 2–4 week review — the node must be proven to resolve · Variant 4 — 61M, painless left supraclavicular lump 3 weeks, indigestion, weight loss: Virchow's node (Troisier's sign) → below the diaphragm (stomach, oesophagus, pancreas) or lung; gastroscopy + neck US with guided FNA + CT staging",
+    "SA: ENT/head-and-neck via RAH/FMC; PATS from the Riverland; Cancer Council SA 13 11 20; Quitline 13 7848; TIS 131 450 · MedSTAR 1300 13 12 33 not needed unless airway"
+   ],
+   "fails": [
+    "The top-down cancer screen never done — or started after 2:40 and never finished ★",
+    "Closing on one finding (smoker + cough = lung cancer) and stopping — missing the ulcer, the dysphagia and the toothache ★",
+    "False reassurance ★",
+    "No differential list delivered to the patient; the fear never acknowledged ★",
+    "Taking 'a lump in the neck' at face value — never establishing midline vs lateral vs supraclavicular",
+    "Asking 'how long has it been there?'; skipping the thyroid box because she pointed to the side; asking dysphagia and odynophagia as one question",
+    "Treating the toothache and sending her away (Variant 3) without booking the resolution review"
+   ],
+   "numbers": [
+    "8 min: 6 history + 2 explanation · top-down cancer block must START by 2:40 · four boxes: thyroid · generalised nodes · localised cancers · lymphadenitis · four lump features: consistency, tenderness, skin, mobility",
+    "This patient: 47, right lateral, 2 weeks, hard, fixed, painless · 15/day × 30 y = 22.5 pack-years",
+    "Refer: >4–6 weeks · >2 cm · hard/fixed/supraclavicular · >40 + smoking/alcohol · hoarseness or ulcer >3 weeks → urgent ENT",
+    "Neck US first · FNA ≠ lymphoma diagnosis (core/excisional) · no open biopsy before ENT · reactive node re-check 2–4 weeks",
+    "Cancer Council 13 11 20 · Quitline 13 7848 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Neck_Lump_Six_Minute_History_2_Case_Tasks_Script_Notability.pdf (Jane Halloran, 47 — a lump, a cough, an ulcer and a toothache)"
+ },
+ {
+  "id": "MED-77",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 120,
+  "setting": "General practice, Kadina, Yorke Peninsula. Examination findings supplied in the stem. Counselling station — two minutes of history restricted to treatments, then five minutes of talking.",
+  "stem": [
+   "James Whitlock, 27: runny nose for two weeks, getting worse. Known hay fever; mother has asthma. Examination: afebrile, clear watery discharge, enlarged swollen inferior turbinates, respiratory examination normal."
+  ],
+  "tasks": [
+   "Take a history for two minutes, to inquire about the treatments taken",
+   "Explain the diagnosis to the patient",
+   "Counsel the patient about your immediate and long-term management"
+  ],
+  "time": "8 minutes: 2 min treatment-only history (signpost it; he opens with a symptom list — redirect) → five questions: what now · how long/how often · is it helping · what before and did each help · concerns → 45 s diagnosis (name BOTH: rhinitis medicamentosa + hay fever; rebound; reversible) → ★ 'STOP the Otrivin' first, alone, then a pause; warn 1–2 weeks worse → saline/steroid/antihistamine, cost solved → ladder by name → 5-step technique → non-drug → testing THEN immunotherapy 3–5 years → 2-week review, safety-net, summary repeating the stop.",
+  "back": {
+   "dx": "Rhinitis medicamentosa (rebound congestion from two weeks of xylometazoline — Otrivin — 3–4 times a day, both nostrils) on a background of allergic rhinitis. Pattern: brilliant for the first few days, now lasts an hour, nose worse than before he started. Treatment history: antihistamine tablets helped eyes not nose; a steroid spray WORKED but he stopped it because of cost (saving for a house) and switched to Otrivin — so the plan is to restart that drug cheaply, not invent a new one. Concerns: cost; 'have I wrecked my nose?' (mate said so) — answer both explicitly: completely reversible. Explain: decongestant squeezes the vessels in the lining — beautiful for 3–5 days, then the lining becomes reliant, each dose wears off into more swelling; three reasons — two weeks, helped then stopped, swollen with clear discharge and no fever (not infection). Immediate: STOP Otrivin outright (tapering prolongs it; one-nostril-at-a-time compromise only if he can't cope), warn 1–2 weeks worse, saline before a daily steroid spray (prescribed, cheaper brand in class), cetirizine 10 mg to cover. Long-term ladder by name: saline → antihistamine (oral cetirizine/loratadine/fexofenadine for eyes, or intranasal azelastine for the nose) → ★ mometasone 2 sprays each nostril daily, preventer not rescue, no immediate relief, up to 2 weeks → Dymista 1 spray bd (bitter) → montelukast if asthma. Five-step technique. Allergen measures. Allergy testing (specific IgE or skin prick) BEFORE immunotherapy (SC or SL, 3–5 years, allergy clinic in Adelaide, PATS). Review 2 weeks not 6, bring the spray.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE briskly · he launches into sneezing/itchy eyes → ★ 'I can see from your notes you have hay fever, so rather than go back over that, I'd like to spend the next couple of minutes on the treatments you've been using — I suspect that's where the answer is. Is that all right?'"
+    ],
+    [
+     "0:20",
+     "★ 'What medication are you using now?' → Otrivin · ★ 'how long, and how often?' → 2 weeks, both nostrils, 3–4×/day · 'is it helping?' → brilliant then worse ('a telling pattern — I'll come back to it')"
+    ],
+    [
+     "1:00",
+     "'What did you try before? Did those help?' → antihistamine tablets: eyes yes, nose no · steroid spray: worked, too expensive, stopped · ★ 'any concerns about the treatments?' → cost; 'have I damaged something?' · 10 s: other meds incl. BP/pain, decongestant tablets?"
+    ],
+    [
+     "2:00",
+     "'Have you heard of nasal sprays causing a rebound effect?' · name both: hay fever hasn't gone away + rhinitis medicamentosa ('inflammation of the nose caused by a medicine') · rebound mechanism · three reasons · ★ 'completely reversible — you haven't done permanent damage'"
+    ],
+    [
+     "2:45",
+     "★ 'The most important thing, starting today: stop using the Otrivin altogether. Not cut down — stop.' [pause] · ★ 'Your nose will feel worse for one to two weeks — that's the lining recovering; it's why most people give up, so please don't.' · 'wean off?' → no; one-nostril compromise if needed · saline before steroid · daily steroid spray · cetirizine 10 mg daily"
+    ],
+    [
+     "3:30",
+     "Cost: 'it's the reason the steroid stopped working — you stopped taking it; I'll write a prescription and pick a cheaper option in the same class; tell me if it's still a problem'"
+    ],
+    [
+     "4:00",
+     "Ladder by name: 1 saline · 2 antihistamine — oral (cetirizine/loratadine/fexofenadine; fast, good for eyes) or intranasal azelastine (better nose, worse eyes) · 3 ★ mometasone 2 sprays each nostril once daily — preventer not rescue, days to start, 2 weeks for full effect · 4 Dymista 1 spray each nostril bd, bitter · 5 montelukast if asthma emerges"
+    ],
+    [
+     "5:30",
+     "★ Technique, taught: shake · blow nose/saline · look DOWN · opposite hand · aim OUT towards the ear · sniff gently, mouth closed — 'if you taste it you sniffed too hard' (he's been head back, sniffing hard, nosebleeds) · non-drug: pets out of bedroom, mite covers, bedding weekly ≥55 °C, smoke-free house, mask for dust/grain, windows shut and car on recirculate on high-pollen days"
+    ],
+    [
+     "6:45",
+     "Testing first (allergen-specific IgE panel or skin prick) → then immunotherapy: purified allergen in increasing doses, injections or sublingual tablets, ~6-month build-up, ★ 3–5 years, allergy clinic in Adelaide, PATS paperwork · safety-net: fever, facial pain, thick/coloured/bloody discharge, nosebleeds, one-sided blockage, loss of smell, wheeze/SOB · ★ review 2 weeks, bring the spray · summary — ★ repeat 'stop the Otrivin'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'I can see you have hay fever, so rather than go back over all of that, I'd like to spend the next couple of minutes on the treatments you've been using. Is that all right?'",
+    "★ 'Can I ask what medication you are using now? … How long, and how often? … And is it helping?' / 'What did you try before this? … And did those help?' / ★ 'Do you have any concerns about the treatments you've been taking?'",
+    "Can't name it → 'Is it a spray or a tablet? Describe the box — is it on your phone? Does the name start with Otri-, Drix- or Sud-? Does it unblock you within a minute or two?' → instant = decongestant; a steroid spray never works that fast",
+    "'We already know you have hay fever — but there's a second problem on top of it, caused by the spray. It's called rhinitis medicamentosa — inflammation of the nose caused by a medicine.'",
+    "'Used for more than three to five days, each dose wears off into more swelling than you started with. That's rebound congestion.' / ★ 'This is completely reversible. The lining recovers once the spray stops.'",
+    "★ 'The most important thing, starting today, is to stop using the Otrivin altogether. Not cut down — stop.' / ★ 'Your nose will feel worse for one to two weeks. That's the lining recovering, and it's why most people give up — so please don't.'",
+    "'Couldn't I wean off it slowly?' → 'Tapering prolongs the exposure and most people don't get off it. Stopping outright, with a steroid spray started at the same time to cover you, is what works. If you truly can't manage both nostrils at once, we stop one side first so you always have an airway.'",
+    "'I'll write you a prescription and choose a cheaper option in the same class.' / ★ 'Mometasone, two sprays into each nostril once a day, every day — it's a preventer, not a rescue.' / 'It gives no immediate relief — a few days to start, up to two weeks for the full benefit.'",
+    "★ 'Shake it, blow your nose, look down, opposite hand, aim towards your ear, sniff gently.'",
+    "'We'd test first to find your allergen, then consider desensitisation — injections or tablets under the tongue, over three to five years.' / 'Because we're in Kadina that appointment would be in Adelaide, and I'll complete the travel assistance paperwork.'"
+   ],
+   "pefe": [
+    "Role-player: James, 27, warehouse supervisor at a grain depot near Kadina; hay fever since teens; mother asthma; girlfriend, rented carpeted flat, no pets, non-smoker; saving for a house deposit. Opens with a symptom list and keeps going unless redirected. Doesn't volunteer Otrivin or previous treatments until asked. Pushes 'just stop? I can barely breathe' then 'couldn't I wean off?'. If not warned about rebound: 'so it'll be better by tomorrow?'. If only expensive brands named: 'and how much is that one?'. Raises damage fear at the end if never asked. Score: ★ never asked what he's using now = fail; ★ 'stop the Otrivin' omitted = fail",
+    "Stem findings: afebrile, clear watery discharge, enlarged swollen inferior turbinates, chest clear. Decongestant names: Otrivin = xylometazoline · Drixine/Vicks Sinex = oxymetazoline · Spray-Tish = tramazoline · Sudafed = pseudoephedrine (oral)",
+    "Variant 2 — Sudafed tablets 3–4×/day for 3 weeks: NOT rhinitis medicamentosa (rebound is topical imidazolines); oral pseudoephedrine → hypertension, tachyarrhythmia, insomnia, misuse risk — ask palpitations/headache/sleep, check BP and pulse now; still stop it and treat the allergic rhinitis properly",
+    "Variant 3 — refuses to stop ('only thing that lets me sleep'): shared decision-making without capitulating — name the risk ('the spray is no longer treating your blocked nose, it is causing it'), start the steroid now + saline + antihistamine, one-nostril compromise, review at 1 week, document; never prescribe more decongestant, never lecture",
+    "Variant 4 — wheezy at work, night cough: hay fever–asthma link (mother asthmatic) → spirometry, reliever + written action plan if confirmed; thunderstorm asthma advice — stay indoors with windows shut when a spring storm is forecast · Examiner: 'image the sinuses?' → no, CT not indicated in uncomplicated allergic rhinitis · 'oral steroids?' → not first-line; only for severe refractory RM after cessation under INCS cover · 'occasional Otrivin for flights?' → advise against in him (demonstrated dependence); saline + properly dosed INCS instead",
+    "SA: script for a cheaper INCS in class; allergy/clinical immunology clinic Adelaide + PATS; Quitline 13 7848 (household); MedSTAR 1300 13 12 33 not needed"
+   ],
+   "fails": [
+    "Never asking what he is using now ★",
+    "Never saying 'stop the Otrivin' — or burying it halfway down a list, or opening with 'let's cut it down gradually' ★",
+    "'Stop the spray and you'll be fine' — no rebound warning; the patient restarts on day three",
+    "Naming only rhinitis medicamentosa — the task asks for management of both conditions",
+    "'I'll give you some sprays and refer you' — no named drug per rung; recreating his cost barrier with an expensive brand",
+    "'Use it correctly' without the five steps; 'desensitisation takes about six months'; immunotherapy offered without allergy testing first",
+    "Following him into a symptom history and never reaching the drug; a pathophysiology monologue that eats the management time"
+   ],
+   "numbers": [
+    "Topical decongestant max 3–5 days · he has used it 2 weeks · rebound worse 1–2 weeks on stopping · stop abruptly under INCS cover · review 2 weeks (not the usual 4–6)",
+    "Mometasone 50 µg/spray, 2 sprays each nostril once daily · fluticasone furoate 27.5 µg, budesonide 64 µg same regimen · onset days, full effect up to 2 weeks",
+    "Cetirizine 10 mg · loratadine 10 mg · fexofenadine 180 mg daily · azelastine = intranasal antihistamine · Dymista = azelastine + fluticasone propionate, 1 spray each nostril bd · Ryaltris = olopatadine + mometasone",
+    "Technique 5 steps: shake · blow/saline · look down · opposite hand, aim to the ear · sniff gently · testing: allergen-specific IgE or skin prick; no CT · immunotherapy build-up ~6 months, course 3–5 years, SC or SL",
+    "Bedding weekly ≥55 °C · Quitline 13 7848 · PATS for Adelaide"
+   ]
+  },
+  "source": "Rhinitis_Medicamentosa_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 27, two weeks of worsening runny nose on Otrivin)"
+ },
+ {
+  "id": "MED-78",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 240,
+  "setting": "Regional South Australian general practice. No observations recorded. Prompt at 4 minutes to move to examination; a throat photograph is handed over when you request the throat examination.",
+  "stem": [
+   "Jane Whitmore, 25, retail assistant, has come in with a sore throat and is asking for something stronger for the pain."
+  ],
+  "tasks": [
+   "Take a focused history (approximately 4 minutes)",
+   "Ask the examiner for the physical examination findings you want",
+   "Explain your most likely diagnosis, with your reasons, to the patient",
+   "Explain your management plan to the patient"
+  ],
+  "time": "8 minutes. Surface the request in the first minute · ★ 'one side, both, or all the way across?' · ENT screen · ★ red-flag block: saliva/drooling, ★ 'too painful to swallow, or physically won't go down?', muffled voice, noisy breathing, mouth opening, neck, headache/photophobia/rash · cough, gut, ★ spleen, sexual health · ★ rheumatic fever / ATSI as a named question · examination by component with reasons, ★ 'specifically, is there splenomegaly?' · photograph: describe (unilateral palatal swelling, uvula deviated) then diagnose · quinsy in plain words with three reasons · ★ drainage is the treatment — ED by ambulance today · answer the pain request · safety-net · check-back.",
+  "back": {
+   "dx": "Peritonsillar abscess (quinsy). Three days of severe right-sided sore throat (9/10), worse since yesterday, referred otalgia, hot and shivery, true dysphagia (solids won't go down — on soup since yesterday), 'hot potato' muffled voice, trismus (jaw tight opening wide), tender right anterior cervical nodes; no drooling, no stridor. Examiner: alert, hydrated, T 38.5, HR 96, BP 122/76, SpO2 98%, ears/nose/sinuses normal, chest/heart normal, no organomegaly; photograph — unilateral swelling of the soft palate above the tonsil with the uvula deviated to the opposite side. To her: 'the infection in your tonsil has formed a pocket of pus behind it — an abscess is a sac full of pus — pushing your tonsil across; three reasons: one-sided pain, food won't go down, the swelling pushing the little tag across.' Management led by the definitive step: antibiotics alone won't clear pus — ED now by ambulance, ENT today; local anaesthetic, small cut, drainage (dramatically better afterwards), IV antibiotics (benzylpenicillin + metronidazole), IV fluids, strong analgesia. Answer the stem request: regular paracetamol + NSAID now, stronger in hospital, but pain won't settle until drained. Ambulance urgency calibrated honestly ('not an emergency this minute, but today, with people who can look after your breathing'). Hidden agenda: terrified of hospitals — mother died after an admission. Safety-net en route: noisy breathing, can't swallow saliva/drooling → tell the paramedics. Review in a couple of days; recurrent → ENT discusses tonsillectomy.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'I can see you've got a sore throat — that's miserable. May I ask some questions so I know exactly what we're treating? ★ And was there something in particular you were hoping we'd do today?' → stronger pain relief → 'that's exactly what we'll organise; let me work out the cause first'"
+    ],
+    [
+     "0:45",
+     "★ 'One side, both, or all the way across?' → right · duration (3 days, worse since yesterday) · /10 (9) · radiates to the ear (yes) · better/worse, tried (paracetamol, an hour)"
+    ],
+    [
+     "1:30",
+     "ENT screen: fever/chills/sweats (hot, shivery) · ear pain/discharge · nasal discharge colour · facial pain/PND · smell · neck lumps (sore on the right)"
+    ],
+    [
+     "2:00",
+     "★ Red flags: 'can you swallow your own saliva, or are you drooling?' · 'I can't eat' → ★ 'too painful, or does the food physically not go down?' → won't go down · voice muffled? (hot potato) · noisy breathing? · mouth opens fully? (jaw tight) · neck swelling/stiffness · headache, photophobia, rash"
+    ],
+    [
+     "2:45",
+     "Cough (none), SOB/wheeze · nausea/vomiting/diarrhoea · abdominal pain 'especially under the left ribs' · 'two quick sexual health questions I ask everyone' · ★ 'have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? Do you identify as Aboriginal or Torres Strait Islander?' · meds (thyroid/mental health), allergies esp. penicillin, vaccinations, smoking, work"
+    ],
+    [
+     "4:00",
+     "★ Examination by component, in order: general — alert/drowsy, hydration, drooling, stridor, rash · vitals esp. temperature · otoscopy · throat — tonsil size, exudate, symmetry, uvular position, palatal bulge, mouth opening · nose/sinuses · cervical nodes anterior + posterior, neck swelling/stiffness · chest · heart · ★ 'specifically, is there splenomegaly?'"
+    ],
+    [
+     "5:00",
+     "Photograph: ★ 'unilateral swelling of the soft palate above the tonsil; the uvula is deviated to the opposite side' → 'with one-sided pain, referred ear pain, trismus, muffled voice and inability to swallow solids, this is a peritonsillar abscess'"
+    ],
+    [
+     "5:30",
+     "To Jane: quinsy in plain words + three reasons · 'can I just have antibiotics and go home?' → validate, ★ 'antibiotics don't get into a collection of pus — it has to be drained' · ED now by ambulance, ENT today · procedure explained (numb, small cut, drain; strong pain relief, IV antibiotics, fluids) · 'will I be put to sleep?' → usually local"
+    ],
+    [
+     "7:00",
+     "'An ambulance? Is it that bad?' → honest calibration · answer the pain request explicitly · concerns → mother died in hospital: acknowledge, don't rush · safety-net for the paramedics · review in a couple of days; recurrence → ENT and tonsils · summary + 'how would you describe it to your mum?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'Was there something in particular you were hoping we'd do today?' → 'Understood — better pain relief is exactly what we'll organise. Let me work out what's causing it first, because that changes what will actually help.'",
+    "★ 'Is the pain on one side of your throat, both sides, or all the way across?'",
+    "★ 'Can you swallow your own saliva, or are you drooling at all?' / ★ 'Is it too painful to swallow, or does the food physically not go down?' / 'Has your voice changed — does it sound muffled?' / 'Can you open your mouth fully?'",
+    "★ 'Have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? And do you identify as Aboriginal or Torres Strait Islander?'",
+    "★ 'And specifically, is there splenomegaly?' (never 'I'd like to do an ENT examination')",
+    "★ 'There is a unilateral swelling of the soft palate above the tonsil, and the uvula is deviated to the opposite side.' — describe, then diagnose",
+    "'Jane, I think you have what we call a peritonsillar abscess, or quinsy. The infection in your tonsil has formed a pocket of pus behind it — an abscess is a sac full of pus — and that pocket is pushing your tonsil across. Three reasons: the pain is only on the right, you can't swallow solids, and there's a swelling on one side pushing the little tag at the back across.'",
+    "★ 'Antibiotics on their own will not clear a collection of pus. It has to be drained. So rather than a script and a review, I'm sending you to the emergency department now, by ambulance, so the ENT team can see you today.' / 'They'll numb the area, make a small cut and drain it — most people feel dramatically better straight afterwards.'",
+    "'An ambulance? Is it that bad?' → 'It's not an emergency this minute, but it needs treating today and I'd rather you were with people who can look after your breathing if it changes.' / 'You came in for better pain relief, and you'll get it — paracetamol and an anti-inflammatory now, stronger in hospital — but the pain won't settle until the pus is drained.'",
+    "★ 'On the way, if your breathing becomes noisy, or you can't swallow your own spit and start drooling, tell the paramedics straight away.' / 'Can I check I've explained that clearly — how would you describe it to your mum?'"
+   ],
+   "pefe": [
+    "Role-player: Jane, 25, retail assistant, regional SA, flatmate; non-smoker; no meds/allergies/PMHx; not ATSI; no rheumatic fever. Speaks softly, exhausted, mildly irritable at 'pointless' questions, frightened at the word abscess. Says 'I can't eat' and STOPS — reveals 'it won't go down, it feels blocked' only to the precise painful-vs-obstructed question. Hidden agenda: terrified of hospitals — mother went in and didn't come out (tearful) — only if asked about worries/concerns. Marks: 14; automatic fails: managing the abscess with oral antibiotics + review ★ · missing/ignoring airway red flags ★ · antibiotics with no rheumatic fever question ★ · amoxicillin where EBV possible ★ · no safety-net ★",
+    "Examiner findings: alert, well hydrated, no drooling, no stridor, no rash · T 38.5, HR 96, BP 122/76, SpO2 98% · ears normal · nose/sinuses normal · tender enlarged right anterior cervical nodes · chest clear, HS normal · abdomen soft, no organomegaly · photograph: unilateral soft-palate swelling above the tonsil, uvula deviated away",
+    "Quinsy treatment: incision/needle aspiration and drainage by ENT + benzylpenicillin 1.2 g IV 6-hourly with metronidazole 500 mg IV 12-hourly; clindamycin 600 mg IV 8-hourly if severe penicillin allergy VERIFY against current TG · analgesia paracetamol 1 g 4–6 hourly (max 4 g/day), ibuprofen 400 mg tds with food",
+    "Variant 4 — THE AIRWAY TURNS (drooling, leaning forward, noisy breathing): abandon the script — 'I'm going to stop the questions there. Sit upright, stay calm. I am not going to look in your throat with a spatula. Emergency call for anaesthetics and ENT, oxygen, and in our setting MedSTAR retrieval on 1300 13 12 33' — saying it aloud outranks any remaining history mark",
+    "Variant 3 — amoxicillin from after-hours, now a rash: glandular fever, not a true penicillin allergy (get the label right — wrongly recorded allergy limits treatment for life); stop the antibiotic, FBE + EBV serology; ★ no contact/collision sport or heavy lifting 4–6 weeks (splenic rupture); left upper quadrant/left shoulder tip pain or faintness → ED",
+    "SA: ED with ENT (regional hospital → RAH/FMC/Lyell McEwin); SA Ambulance; MedSTAR 1300 13 12 33 if the airway threatens in a remote clinic; review 2–3 days post-drainage; recurrent quinsy → ENT tonsillectomy discussion"
+   ],
+   "fails": [
+    "Managing a peritonsillar abscess with oral antibiotics and a review ★",
+    "Missing or ignoring airway red flags — never saying drooling, one-sided, muffled, mouth opening ★",
+    "Recording 'can't swallow' as ordinary throat pain — never disambiguating painful vs obstructed",
+    "No rheumatic fever question asked as a named question ★",
+    "'I'd like to do an ENT examination' and stopping; not asking for uvular position, trismus, or splenomegaly",
+    "Naming quinsy without the three reasons; leaving the pain request unanswered; over- or under-alarming about the ambulance",
+    "No safety-net ★; capitulating to 'just antibiotics and home'"
+   ],
+   "numbers": [
+    "Centor: Cough absent · Exudate · Nodes tender anterior · Temperature ≥38 °C · here T 38.5, HR 96, pain 9/10, day 3",
+    "Quinsy: drainage + benzylpenicillin 1.2 g IV 6-hourly + metronidazole 500 mg IV 12-hourly; clindamycin 600 mg IV 8-hourly if severe allergy VERIFY",
+    "Analgesia: paracetamol 1 g 4–6 hourly, max 4 g/day · ibuprofen 400 mg tds with food",
+    "EBV: no contact sport 4–6 weeks · never amoxicillin/ampicillin · strep when indicated: phenoxymethylpenicillin 500 mg bd 10 days",
+    "MedSTAR 1300 13 12 33 · review 2–3 days after drainage"
+   ]
+  },
+  "source": "Sore_Throat_2_Case_Tasks_Script_Notability.pdf (Version A — Jane Whitmore, 25, unilateral sore throat requesting painkillers → quinsy)"
+ },
+ {
+  "id": "MED-79",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice. Findings are supplied on a card so four tasks fit the time. Task 3 is to the EXAMINER (diagnosis + differentials); task 4 is counselling.",
+  "stem": [
+   "James Coulter, 25, warehouse storeperson, has come in with a sore throat and is asking you for antibiotics. Examination card: T 36.9, HR 76, BP 118/74; well, no drooling or stridor, no rash; watery nasal discharge, normal tympanic membranes, non-tender sinuses, tonsils and pharynx inflamed with no exudate, uvula midline, full mouth opening; no cervical lymphadenopathy; chest clear; abdomen soft, no organomegaly."
+  ],
+  "tasks": [
+   "Take a focused history",
+   "Read the physical examination findings on the card provided",
+   "Tell the examiner your most likely diagnosis and your differential diagnoses",
+   "Counsel the patient on management"
+  ],
+  "time": "8 minutes. Surface the antibiotic request in the first minute and defer it fairly · ★ one side or both · ENT screen · ★ red-flag block · ★ cough (present — a viral feature and a Centor feature) · gut/spleen, sexual health · ★ rheumatic fever / ATSI named · read the card, name the four features that make it viral · ★ diagnosis + bucketed differential with reasoning to the examiner · ★ reassure before you refuse; two honest options with benefits and harms; elicit his values; recommend · ★ solve the real problem — medical certificate · analgesia doses · safety-net with named red flags · check-back. He pushes for antibiotics three times.",
+  "back": {
+   "dx": "Viral pharyngitis/tonsillitis: 2–3 days bilateral raw scratchy soreness 5/10, felt warm day one only, clear watery coryza, dry cough, no otalgia; swallows fine (painful only); no red flags; smokes 10/day; casual warehouse worker. Card: afebrile 36.9, inflamed tonsils and pharynx with NO exudate, uvula midline, full mouth opening, NO lymphadenopathy, no organomegaly — four features that favour viral: cough, watery coryza, afebrile, no exudate/nodes. To the examiner — most likely viral pharyngitis/tonsillitis; differentials in order of what you would not miss: bacterial streptococcal tonsillitis; peritonsillar abscess; epiglottitis/deep neck space infection; infectious mononucleosis with splenomegaly; gonococcal/chlamydial pharyngitis; scarlet fever; laryngitis and sinusitis with PND; pneumonia; and in a different patient, drug-induced agranulocytosis or head and neck malignancy. Counselling: reassure first ('this will settle by itself — even bacterial ones do; that's why we're careful, not automatic'); two options — symptoms alone, or symptoms + antibiotic: benefit ~1 day; harms — up to 1 in 10 side effects, resistance, EBV rash with amoxicillin; 'what matters most to you?' → recommend no antibiotic; ★ medical certificate solves the real need (hidden agenda: casual, no sick leave, behind on rent); paracetamol 1 g qid, ibuprofen 400 mg tds with food, fluids, salt-water gargle, rest, cut smoking; safety-net: can't swallow saliva/drooling, noisy breathing, voice change, neck swelling/stiffness, rash, not improving 5–7 days; teach-back. If he won't accept it: delayed prescription (fill only if worse in 3 days) or a Thursday review — a compromise, never a first move.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'was there something particular you were hoping we'd do today?' → antibiotics (push 1) → 'you may well be right and I'm not ruling it out — give me three minutes to check a few things, then we decide together what's actually going to help'"
+    ],
+    [
+     "0:45",
+     "★ 'One side, both, or all the way across?' → all over · duration, /10 (5), radiation (no), tried (cold and flu tablets)"
+    ],
+    [
+     "1:20",
+     "ENT: fever (warm day one, not now) · ear pain/discharge · ★ runny nose — clear, watery · facial pain/PND · smell · neck lumps"
+    ],
+    [
+     "1:50",
+     "★ Red flags: saliva/drooling · painful vs won't go down (just painful) · muffled voice (a bit croaky) · noisy breathing · mouth opening · neck swelling/stiffness · headache/photophobia/rash → all no"
+    ],
+    [
+     "2:30",
+     "★ 'Any cough?' → dry, annoying · SOB/wheeze · nausea/vomiting/diarrhoea · abdominal pain esp. under the left ribs · sexual health, two questions with permission ('is that relevant?' → answer it)"
+    ],
+    [
+     "3:10",
+     "★ Rheumatic fever — you, family, household; ATSI · meds (thyroid, mental health), penicillin allergy, vaccinations · smoking 10/day · work: casual warehouse, 'can't afford to be off'"
+    ],
+    [
+     "4:00",
+     "Read the card aloud, extract the four viral features · push 2 'so can I have them now?' → 'let me tell you what I found first, because it changes the answer'"
+    ],
+    [
+     "4:30",
+     "★ To the examiner: most likely viral pharyngitis/tonsillitis · differentials bucketed in order of what I'd not miss · 'I favour viral because: cough, watery coryza, afebrile, no exudate, no nodes or organomegaly'"
+    ],
+    [
+     "5:30",
+     "★ Reassure before refusing · two honest options, benefits and harms · 'knowing that, what matters most to you?' · recommend · push 3 'my mate was back at work in two days' → two honest reasons, no criticism of anyone · ★ 'the part I can actually fix today: a medical certificate' · doses, fluids, gargle, rest, smoking · safety-net with named red flags and 5–7 day timeframe · 'tell me the two you'd act on first'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "'You may well be right, and I'm not ruling it out. Give me three minutes to check a few things, and then we'll decide together what's actually going to help. Is that fair?'",
+    "★ 'Is the pain on one side of your throat, both sides, or all the way across?' / ★ 'Is it too painful to swallow, or does the food physically not go down?' / 'Can you swallow your own saliva, or are you drooling at all?' / 'Has your voice changed — does it sound muffled?'",
+    "★ 'Have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? Do you identify as Aboriginal or Torres Strait Islander?'",
+    "★ To the examiner: 'My most likely diagnosis is viral pharyngitis or tonsillitis. My differentials, in order of what I would not want to miss: bacterial streptococcal tonsillitis; peritonsillar abscess; epiglottitis or another deep neck space infection; infectious mononucleosis with splenomegaly; gonococcal or chlamydial pharyngitis; scarlet fever; laryngitis and sinusitis with post-nasal drip; pneumonia; and in a different patient, drug-induced agranulocytosis or head and neck malignancy. I favour a viral cause because he has a cough and watery coryza, he is afebrile, there is no exudate, and no lymphadenopathy or organomegaly.'",
+    "★ 'James, the good news is this will settle by itself. Even bacterial throat infections settle on their own — that is why we are careful about antibiotics rather than automatic about them.'",
+    "★ 'At best an antibiotic might shorten this by about a day. Against that, up to one person in ten gets side effects — upset stomach, diarrhoea, a rash — and every course makes the bugs more resistant, so the antibiotic is less likely to work when you really need it. And if this were glandular fever, the common antibiotic gives a bad rash.'",
+    "★ 'Knowing all that, what matters most to you here?' → 'My recommendation is that we treat this properly without the antibiotic. Does that feel reasonable?'",
+    "'My mate got them and was back in two days' → 'A fair question — even when it is bacterial the antibiotic only shortens things by about a day; your mate would very likely have got better in the same time.' (never 'the other doctor was wrong')",
+    "★ 'The part I can actually fix today is the work problem — I'll write you a medical certificate.' / 'Paracetamol one gram up to four times a day, and ibuprofen four hundred milligrams three times a day with food; fluids, warm salt-water gargles, rest — cutting the smoking will help it settle faster.'",
+    "★ 'Come straight back if you cannot swallow your saliva, your breathing becomes noisy, your voice changes, or your neck swells or stiffens; a rash; or not improving in five to seven days.' / 'Can you tell me the two you would act on first?' / Won't accept → 'a script you hold and only fill if you're worse in three days — or a review on Thursday; which would you prefer?'"
+   ],
+   "pefe": [
+    "Role-player: James, 25, warehouse storeperson, smokes 10/day, lives with partner; no meds/allergies/PMHx; not ATSI; no rheumatic fever. Brisk, impatient; asks for antibiotics at 1 min, again at 4 min after the card, and a third time after the explanation ('my mate…'). Hidden agenda: casual, no sick leave, behind on rent — only if asked about concerns/expectations/impact, else 'look, I just can't afford to be off' at ~6 min. If you cave and prescribe, accepts happily and marks a fail. Automatic fails: prescribing with no rheumatic fever question ★ · amoxicillin where EBV possible ★ · capitulating, or refusing without explanation ★ · no safety-net ★",
+    "Card: T 36.9, HR 76, BP 118/74 · well, no drooling/stridor/rash · watery nasal discharge · TMs normal · sinuses non-tender · tonsils/pharynx inflamed, no exudate · uvula midline, full mouth opening · no cervical nodes · chest clear · no organomegaly · Centor 0–1",
+    "Variant 2 — high rheumatic fever risk ('my nan lives with us, she has the penicillin needles for her heart'; Aboriginal patient): the answer flips — treat: phenoxymethylpenicillin 500 mg bd for 10 days, finishing all ten days is what protects the heart; single IM benzathine penicillin if adherence is hard; Closing the Gap PBS co-payment; follow-up via the Aboriginal health service/ACCHS; ARF/RHD notifiable in SA VERIFY",
+    "Variant 3 — glandular fever after amoxicillin rash: not a true allergy; stop, FBE + EBV serology; no contact sport/heavy lifting 4–6 weeks; LUQ/left shoulder pain or faintness → ED · Variant 4 — airway turns: stop, sit upright, no spatula, oxygen, anaesthetics + ENT, MedSTAR 1300 13 12 33",
+    "Strep when indicated: phenoxymethylpenicillin 500 mg bd 10 days (child 15 mg/kg to 500 mg); allergy — cefalexin 1 g bd 10 days or azithromycin 500 mg daily 5 days VERIFY · delayed prescribing = accepted stewardship strategy (ADDED) — a compromise, never the first move",
+    "SA: medical certificate; Quitline 13 7848; ACCHS/Closing the Gap where relevant; TIS 131 450; MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "Capitulating to the antibiotic demand — or refusing flatly without explanation ★",
+    "Prescribing antibiotics with no rheumatic fever / ATSI question asked ★",
+    "Prescribing amoxicillin where glandular fever is possible ★",
+    "No safety-net ★",
+    "A bare differential list with no reasoning; not naming the four features (cough, coryza, afebrile, no exudate/nodes) that make it viral",
+    "Leaving the request to minute seven; skipping the cough question; asking 'where is the pain?' instead of one side or both",
+    "The certificate as an afterthought at 7:50; criticising the mate's doctor; 'just a cold'"
+   ],
+   "numbers": [
+    "Centor: cough absent · exudate · tender anterior nodes · T ≥38 °C · this case 0–1 · antibiotic benefit ~1 day · side effects up to 1 in 10",
+    "Paracetamol 1 g 4–6 hourly max 4 g/day · ibuprofen 400 mg tds with food · review if not improving 5–7 days",
+    "Strep when indicated: phenoxymethylpenicillin 500 mg bd × 10 days · allergy: cefalexin 1 g bd 10 d or azithromycin 500 mg daily 5 d VERIFY",
+    "EBV: no contact sport 4–6 weeks · never amoxicillin/ampicillin",
+    "Quitline 13 7848 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Sore_Throat_2_Case_Tasks_Script_Notability.pdf (Version B — James Coulter, 25, bilateral sore throat requesting antibiotics → viral pharyngitis)"
+ },
+ {
+  "id": "MED-80",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 240,
+  "setting": "General practice, regional South Australia. No observations supplied. Prompt at 4 minutes to move to examination; a photograph is handed over when you ask for Horner's syndrome. Indirect laryngoscopy is unavailable.",
+  "stem": [
+   "Margaret Ellis, 45, primary school teacher, presents with a change in her voice — hoarseness."
+  ],
+  "tasks": [
+   "Take a focused history (approximately 4 minutes)",
+   "Ask the examiner for the physical examination findings you want",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient",
+   "Explain the further investigations you would arrange"
+  ],
+  "time": "8 minutes, four tasks — lost on time far more than knowledge. 0:00 short open + agenda · 0:25 ★ timing and pattern: constant, 'does voice rest help?', 'same all day or worse by evening?' — two months is a red flag on its own · 1:15 infection, airway red flags, overuse tested and DISCARDED out loud ('I'm a teacher' is the red herring) · 2:00 cancer screen throat → oesophagus → thyroid → ★ lung: cough, haemoptysis, SOB, shoulder pain, ★ pack-years aloud · ★ the two Pancoast questions (hand numbness ulnar side; droopy eyelid) · 3:20 reflux, myasthenia, hypothyroid, neck surgery, ★ 'steroid inhalers or puffers' by class, alcohol, FHx, ICE · 4:00 examination by component with targets — Horner's, C8–T1 · ★ basal signs = effusion secondary to the apex · 5:20 warning shot, pause, plain words, two reasons · differentials in three buckets · 6:50 ★ three numbered investigations · ownership of the result, safety-net, Quitline.",
+  "back": {
+   "dx": "Pancoast (apical lung) tumour with left recurrent laryngeal nerve involvement, left Horner's syndrome, C8–T1 lower brachial plexus involvement and a secondary left pleural effusion. Two months of constant, slowly worsening hoarseness, no better with two weeks' voice rest at Easter, same morning and night (kills overuse); dry cough three months, puffed on stairs, left shoulder ache 'blamed on marking', couple of kilos lost; 20/day since 20 = 25 pack-years; ★ left hand numb along the ulnar edge, husband said her eye 'looked lazy in a photo'. Examination: not cachectic, no neck mass, T 36.8, throat/nose/nodes/thyroid normal; left lower zone — reduced expansion, dullness, absent breath sounds, reduced vocal resonance (effusion); photograph — partial ptosis, miosis (ask about anhidrosis) = left Horner's → sympathetic chain → lung apex; C8–T1 weakness and sensory loss. Resolve the apparent contradiction before the examiner asks: an apical mass produces no chest signs itself; the basal signs are an effusion caused by it. To her: 'a growth in the upper part of your left lung — a lung cancer; can't be certain today' + two reasons (hoarseness/cough/smoking; fluid around the lung with eye and hand changes fitting a growth at the top pressing on nerves). Never 'Pancoast', 'Horner's', 'pleural effusion' to the patient. Differentials in three buckets with a why: infections (no fever, too long), strain (rest didn't help), growths — cords, thyroid, oesophagus, lung; rarer — reflux, hypothyroid, myasthenia, inhaled steroids. Investigations: 1 CXR today · 2 urgent ENT laryngoscopy · 3 CT chest + biopsy (then PET-CT, MRI thoracic inlet, TFTs, bloods). Own the result: call her personally, see her this week, bring her husband; safety-net; Quitline once, no lecture; Cancer Council 13 11 20. Hidden agenda: mother died of lung cancer at 58 — why she waited.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'that must be difficult when you teach' · ★ 'what's been worrying you about it?' → 'probably nothing, my sister nagged me' (hidden: mother's lung cancer)"
+    ],
+    [
+     "0:25",
+     "★ 'When did you first notice it? Constant or comes and goes? Getting worse? Does it improve if you rest your voice — a weekend, the holidays? Worse by the end of the day, or the same?' → 2 months, constant, worse, holidays no help, same all day — react to two months as a red flag"
+    ],
+    [
+     "1:15",
+     "Fever/chills, sore throat, nose, facial pain · ★ 'three important ones: drooling, difficulty swallowing, noisy breathing?' · overuse: work (teacher, volunteers it warmly), singing, shouting/concert/carnival → ★ 'your work means you use your voice heavily, so that was my first thought — but rest made no difference and it's the same all day, which doesn't fit simple strain, so I want to keep looking'"
+    ],
+    [
+     "2:00",
+     "Cancer screen: dysphagia/food sticking, vomiting, one-sided ear pain, weight loss (couple of kilos), neck lumps, heat/cold intolerance · ★ lung: cough (dry, 3 months), haemoptysis (no), SOB (stairs), wheeze, chest pain, ★ shoulder/interscapular pain (left shoulder, 'marking') · ★ 'how many a day, for how many years? — so that's around 25 pack-years'"
+    ],
+    [
+     "2:50",
+     "★ Two Pancoast questions: 'any numbness, tingling or weakness in your hand, particularly on the little-finger side?' → left hand numb · 'has anyone said one of your eyelids looks droopy, or one side of your face doesn't sweat?' → husband, photo → 'it may be connected — let me finish and examine you'"
+    ],
+    [
+     "3:20",
+     "Reflux/water brash · diplopia by evening, tiring while chewing (myasthenia) · cold, tired, constipated (hypothyroid) · neck surgery/injury · 'do you mean any particular medication?' → ★ 'steroid inhalers or puffers, the sort used for asthma' · alcohol (wine nightly) · FHx cancer → mother, lung, 58"
+    ],
+    [
+     "4:00",
+     "★ Examination by component with targets: general — cachexia, visible neck mass · temperature · throat — masses, swelling/redness/exudate · nose — septum, mucosa · cervical nodes · thyroid — enlargement, nodule · respiratory — expansion, percussion, breath sounds, vocal resonance · ★ 'does she have Horner's syndrome — partial ptosis, small pupil, reduced sweating?' · ★ 'upper limb neurological examination looking specifically for C8–T1 weakness, small-muscle wasting, ulnar sensory loss'"
+    ],
+    [
+     "4:50",
+     "Photograph: 'partial ptosis of the left upper lid, constricted left pupil — I'd ask about sweating — a left Horner's syndrome, localising to the sympathetic chain, in this context the left lung apex' · ★ 'the four signs at the left base are a pleural effusion; with the hoarseness, Horner's and C8–T1 signs the primary lesion is at the apex and the effusion is secondary — a small apical mass would not itself produce chest signs'"
+    ],
+    [
+     "5:20",
+     "★ Warning shot: 'Margaret, I'm afraid the examination has shown something I wasn't expecting, and I need to be honest with you about it.' STOP · 'go on' · ★ 'I'm concerned there may be a growth in the upper part of your left lung — a lung cancer. I can't be certain today.' Two reasons only · she goes quiet, one frightened question → acknowledge, no false reassurance, no outlook number, 'this moves quickly from here'"
+    ],
+    [
+     "6:15",
+     "Differentials in three buckets, each with a why: infections (no fever, too long) · strain (rest didn't help) · growths — cords, thyroid, food pipe, lung; rarer — reflux, underactive thyroid, myasthenia, asthma inhalers — none fit · 'given the smoking, the cough and what I found in your chest, it's the lung I'm most concerned about'"
+    ],
+    [
+     "6:50",
+     "★ 'Three things, in this order: one, a chest X-ray today; two, an urgent ENT referral for a laryngoscopy — a camera to look directly at your vocal cords; three, depending on the X-ray, a CT scan of your chest and a biopsy. Plus bloods including your thyroid.' · ★ 'I will call you personally with the X-ray result and see you this week whatever it shows — bring your husband' · safety-net: noisy/harder breathing, haemoptysis, severe pain → ED · Quitline 13 7848 once, Cancer Council 13 11 20 · summary"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Does it improve if you rest your voice — over a weekend or the holidays?' / ★ 'Is it worse at the end of the day, or the same all day?' / 'Any drooling, any difficulty swallowing, any noisy breathing?'",
+    "★ 'Your work does mean you use your voice heavily — but the pattern doesn't fit simple strain, so I want to keep looking.'",
+    "★ 'How many a day, and for how many years? … So that's around 25 pack-years.'",
+    "★ 'Any numbness, tingling or weakness in your hand, particularly on the little-finger side?' / ★ 'Has anyone said one of your eyelids looks droopy, or that one side of your face doesn't sweat like it used to?'",
+    "'Do you mean any particular medication?' → ★ 'Specifically, any steroid inhalers or puffers — the sort used for asthma. They can cause a hoarse voice.'",
+    "★ 'Does she have Horner's syndrome — partial ptosis, a constricted pupil, reduced sweating on that side?' / ★ 'An upper limb neurological examination, looking specifically for C8 and T1 involvement.'",
+    "★ 'Those findings at the left base are a pleural effusion. I think the primary lesion is at the apex and the effusion is secondary to it.'",
+    "★ 'I'm afraid the examination has shown something I wasn't expecting, and I need to be honest with you about it.' (then stop) / ★ 'I'm concerned there may be a growth in the upper part of your left lung — a lung cancer. I can't be certain today, which is why I want to organise tests urgently.'",
+    "'Am I going to be alright?' → 'I'm sorry to be giving you this today. I honestly can't tell you the outlook until we know exactly what it is — that's what the tests are for, and they'll happen quickly.'",
+    "★ 'Three things, in this order: a chest X-ray today, an urgent ENT referral for a laryngoscopy, and then a CT scan and a biopsy.' / ★ 'I will call you personally with the X-ray result, and I'll see you again this week whatever it shows.' / 'When you're ready, Quitline on 13 7848 — and Cancer Council on 13 11 20 if you'd like someone to talk to.'"
+   ],
+   "pefe": [
+    "Role-player: Margaret, 45, primary teacher, regional SA; husband Peter, two teenagers; 20/day since 20, tried twice; wine nightly; no meds/allergies/PMHx/surgery. Brisk, minimising ('probably nothing'); volunteers 'I'm a teacher' early and warmly — the trap; withholds the hand and eyelid unless asked directly; pushes back once on medications 'do you mean any particular medication?'; calls the clock at 4 and 6; goes QUIET (not tearful) at the warning shot, one frightened question; 'what does that mean?' at Pancoast/Horner's/pleural effusion. Hidden agenda: mother died of lung cancer at 58 — reveal if asked what worried her/why she waited, else at ~6 min. If you finish early: 'so what do you actually think it is?'",
+    "Examiner: not cachectic, no visible neck mass, T 36.8 · throat no masses/swelling/redness/exudate · nose normal · no cervical nodes · thyroid normal · chest: reduced expansion, dullness, absent breath sounds, reduced vocal resonance LEFT LOWER ZONE · left Horner's (photograph) · C8–T1 weakness and sensory loss · indirect laryngoscopy unavailable",
+    "To the examiner if asked for the differential (technical register, what-not-to-miss order): Pancoast tumour with malignant effusion · laryngeal/vocal cord carcinoma · thyroid carcinoma invading the recurrent laryngeal nerve · oesophageal carcinoma · deep neck space infection/epiglottitis · acute laryngitis/URTI · vocal overuse, nodules, polyps · laryngopharyngeal reflux · myasthenia gravis · hypothyroidism · surgical/traumatic RLN injury · inhaled corticosteroids",
+    "Variant 1 — benign (2 weeks since school camp, better mornings, worse by home time): overuse/nodules — voice rest, don't whisper, hydrate, avoid caffeine/alcohol, stop smoking, no antibiotics, speech pathology; ★ 'if still hoarse at three weeks come back — ENT laryngoscopy regardless' — the mark is the built-in review · Variant 2 — 6 weeks post-thyroidectomy: RLN injury; ★ ask stridor/exertional breathlessness first (bilateral palsy = airway emergency); ENT laryngoscopy to document the side, speech pathology, check calcium and TFTs · Variant 3 — voice fades through the day, diplopia and heavy lids by dinner, fine on waking: fatigability → myasthenia gravis; ask chewing fatigue, dysphagia, breathlessness; AChR antibodies, neurology; breathing/swallowing difficulty → ED same day",
+    "Variant 4 — examination-station version (45M smoker, neck lump; task 1 upper limb neuro → C8–T1 loss; task 2 'further relevant examination' → ★ 'a C8–T1 lesion with a neck lump in a smoker makes me think of a lesion at the lung apex involving the lower trunk of the brachial plexus — I'd examine the respiratory system and look for Horner's and cervical nodes' → left basal effusion; task 3 → Pancoast tumour with lower brachial plexus involvement, secondary effusion, metastatic node; CXR, CT chest, tissue diagnosis, lung cancer MDT)",
+    "SA: urgent ENT (RAH/FMC), respiratory/lung cancer MDT, PATS; Quitline 13 7848; Cancer Council 13 11 20; MedSTAR 1300 13 12 33 if the airway is threatened; TIS 131 450"
+   ],
+   "fails": [
+    "Running out of time before the investigations task ★",
+    "Accepting vocal strain as the diagnosis and sending her away ★",
+    "Abandoning the cancer diagnosis when the basal (not apical) chest signs appear ★",
+    "No laryngoscopy anywhere in the plan ★",
+    "Saying 'cancer' with no warning shot ★; no follow-up or ownership of the result ★",
+    "Recording 'two months' and 'smoker' without reacting — no pack-years; not asking the two Pancoast questions because you don't expect a yes",
+    "'I'd like to do an ENT examination'; 'Pancoast', 'Horner's', 'pleural effusion' to the patient; a smoking lecture in the same breath as the diagnosis; explaining each investigation at length"
+   ],
+   "numbers": [
+    "Hoarseness >3 weeks in an adult = laryngoscopy whatever else you find · here 2 months, cough 3 months, ~2 kg lost",
+    "Pack-years = cigarettes/day ÷ 20 × years · 20/day × 25 y = 25 pack-years",
+    "Pancoast: apex + Horner's (partial ptosis, miosis, anhidrosis) + C8–T1 + shoulder pain + hoarseness · Horner's vs III nerve: partial ptosis + small pupil vs complete ptosis + dilated pupil, eye down and out",
+    "Effusion, four signs in order: reduced expansion · stony dullness · absent breath sounds · reduced vocal resonance · massive effusion pushes the trachea away; collapse pulls it towards",
+    "Investigations 1–3: CXR today → direct laryngoscopy → CT chest/abdomen/pelvis + biopsy; then PET-CT, MRI thoracic inlet, TFTs · Quitline 13 7848 · Cancer Council 13 11 20 · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Hoarseness_2_Case_Tasks_Script_Notability.pdf (Margaret Ellis, 45, teacher, two months hoarse, 25 pack-years → Pancoast tumour)"
+ },
+ {
+  "id": "MED-81",
+  "cat": "med",
+  "promptBell": false,
+  "setting": "General practice, regional South Australia. Initial observations supplied. Findings from the examiner on request. History closes at 3:00 — this station is scored in the second half.",
+  "stem": [
+   "Mr Jason Whitfield, 28, warehouse team leader, presents with a three-day sore throat. He told the receptionist he needs something to fix it fast because he cannot afford to miss work. T 37.4, HR 78, RR 14, BP 124/76, SpO2 99% on air."
+  ],
+  "tasks": [
+   "Take a focused history from the patient",
+   "Ask the examiner for your examination findings",
+   "Explain the likely diagnosis and your management to the patient",
+   "Address the patient's concerns"
+  ],
+  "time": "8 minutes: 0:00 greet, ★ agenda question up front, signpost · 0:45 history — course, cough/coryza/hoarseness, fever/nodes, ★ signposted red-flag sweep (saliva, drinking, muffled voice, mouth opening, one-sided, breathing, neck stiffness/rigors), ★ rheumatic fever + ATSI + medications (thyroid/mental health/arthritis), ICE and impact · 3:00 named findings from the examiner · 3:30 diagnosis in plain English — viral and why; never 'just a virus' · 4:30 ★ solve the work problem FIRST — certificate, employer letter, modified duties · 5:15 analgesia doses, fluids, rest · ★ three pillars (no benefit · harm · resistance) · 'how does that sit with you?' · 7:00 six named safety-net symptoms, destination, review 3–4 days, teach-back. He pushes three times; the 'just in case' script is a fail.",
+  "back": {
+   "dx": "Viral pharyngitis: three days, 6/10, bilateral, dry cough and runny/blocked nose from the start, voice normal, swallows and drinks fine, felt warm the first night only, no red flags, no rheumatic fever/ATSI risk, no meds (paracetamol irregularly), no allergies. Examiner: T 37.4, pharynx and tonsils erythematous without exudate, uvula midline, no lymphadenopathy, no trismus, normal voice, no rash, spleen not palpable — Centor 0–1. Explain: 'everything points to a virus — the same family that causes a cold: red inflamed throat but no pus, no swollen glands, normal temperature; the cough and blocked nose actually tell me it's viral; settles over 3–5 days, throat last to go' — and ★ 'viral doesn't mean mild; these can knock you flat.' Hidden agenda: short-staffed, supervisor questioning his reliability, frightened of losing the team-leader role — solve it BEFORE antibiotics: medical certificate, a short letter to the employer (unwell, infectious, rest gets him back faster), or duties away from the team; the register softens and the antibiotic request loses its force. Symptomatic: paracetamol 1 g qid max 4 g, ibuprofen 200–400 mg tds with food, fluids, rest, gargles/lozenges. Three pillars: wouldn't work (kills bacteria, not a virus — not a day shorter); can harm (~1 in 10 diarrhoea/rash; amoxicillin-clavulanate hepatitis/jaundice); costs later (resistance when he genuinely needs one). 'Last time I was better in two days' → validate natural history, never criticise the prior GP ('every throat is different'). No 'just in case' script — offer review in 3 days and name what would change your mind. Safety-net six symptoms + destination + review 3–4 days + teach-back.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · ★ 'before we get into it — is there anything in particular you were hoping we'd sort out today? I'd rather know now' → 'antibiotics' (push 1) → 'fair enough — I might well be able to help with that; can I ask a few questions first so I know what we're dealing with?'"
+    ],
+    [
+     "0:45",
+     "Course: onset, better/worse, /10 · cough, blocked nose, hoarseness (cough + coryza = viral evidence) · fever/shakes, neck lumps"
+    ],
+    [
+     "1:30",
+     "★ Signposted: 'a few quick questions to make sure this isn't something more serious' — swallow saliva? managing to drink? voice muffled? mouth opens fully? much worse on one side? trouble/noisy breathing? neck stiffness, shakes and shivers? → all no"
+    ],
+    [
+     "2:15",
+     "★ 'A couple of routine background questions I ask everyone with a sore throat' — rheumatic fever or heart-valve problem? Aboriginal or Torres Strait Islander? regular medications — thyroid, mental health, arthritis? allergies? · ICE + impact: 'how's it affecting you day to day, and what were you worried it might be?' → work, short-staffed, team falls apart"
+    ],
+    [
+     "3:00",
+     "★ 'Examiner, may I have my findings: temperature and observations; the tonsils and whether there is exudate; asymmetry or deviation of the uvula; anterior cervical nodes; trismus or a muffled voice; any rash; and whether the spleen is palpable' → viral picture"
+    ],
+    [
+     "3:30",
+     "'Everything points to a virus…' with the four features · 'it should settle over three to five days, the throat can be the last thing to go' · 'so it's just a cold?' → ★ 'it's a viral infection, and viral doesn't mean mild — it can floor you for a few days' · 'does that make sense so far?'"
+    ],
+    [
+     "4:30",
+     "★ 'Now, you mentioned work, and I want to deal with that first because I suspect that's the bit really weighing on you' — certificate for the days he needs; a short letter to the employer; or duties away from the team while infectious — 'which would be most useful?' → register softens"
+    ],
+    [
+     "5:15",
+     "Analgesia with doses, fluids, rest, gargles/lozenges · ★ three pillars, signposted: 'you asked about antibiotics and I want to give you a proper answer rather than just saying no' — 1 wouldn't work · 2 can harm · 3 costs later · push 2 'better in two days last time' → natural history, no criticism · push 3 'some to have on hand?' → ★ no script; review in three days and what would change my mind"
+    ],
+    [
+     "7:00",
+     "★ 'How does that sit with you?' · safety-net: can't swallow saliva/drooling; muffled voice/can't open mouth; much worse on one side; high fever with shakes; dizzy/can't keep fluids down; short of breath → back or ED · not clearly improving 3–4 days → book back · ★ 'could you tell me back the ones you'd act on?'"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Before we start — is there anything in particular you were hoping we'd sort out today?' / 'I might well be able to help with that. Can I ask a few questions first?'",
+    "★ 'I'm going to ask a few quick questions to make sure this isn't something more serious.' / ★ 'Can you swallow your own saliva? Has your voice changed? Can you open your mouth fully? Is it much worse on one side?'",
+    "★ 'A couple of routine background questions I ask everyone — have you ever been told you had rheumatic fever? Do you identify as Aboriginal or Torres Strait Islander? Any regular medications — anything for thyroid, mental health or arthritis?'",
+    "★ 'Examiner, may I have my findings — observations, tonsils and exudate, uvular position, cervical nodes, trismus or voice change, rash, and spleen?'",
+    "'Everything points to a virus — the same family of bugs that causes a cold. Your throat is red and inflamed, but there's no pus on the tonsils, no swollen glands, and your temperature is normal. The cough and the blocked nose actually help me here.' / ★ 'Viral doesn't mean mild. These can knock you flat for a few days.'",
+    "★ 'Let me deal with work first, because I think that's the real worry.' / 'I can write you a medical certificate, and a letter to your employer if that would help — or we could ask about duties away from the team while you're infectious. Which would be most useful?'",
+    "★ 'I want to give you a proper answer rather than just saying no. First, they wouldn't work — antibiotics kill bacteria; they do nothing to a virus. Second, they can do harm — around one in ten get diarrhoea or a rash, and occasionally they inflame the liver. Third, they cost you later — every unnecessary course makes the bacteria more resistant, so next time you genuinely need one it's less likely to work.'",
+    "'Last time I was better in two days' → 'That's a really common experience and it makes sense — most sore throats settle in about that time either way, so it's hard to tell what did the work. If I thought an antibiotic would get you back to work faster, I'd write it right now.' (never criticise the previous prescriber)",
+    "'Some to have on hand, just in case?' → 'I'd rather see you again in three days than give you a script to hold. What would change my mind is pus on the tonsils, swollen glands, a real fever, or the cough disappearing — if any of that happens, I'll treat it.'",
+    "★ 'How does that sit with you — is there anything about it you're not comfortable with?' / 'Come straight back, or go to the emergency department, if you can't swallow your saliva or start drooling; your voice goes muffled or you can't open your mouth; the pain gets much worse on one side; a high fever with shakes; dizzy or can't keep fluids down; or short of breath. Otherwise if not clearly better in three to four days, book back in.' / ★ 'Could you tell me back the ones you'd act on?'"
+   ],
+   "pefe": [
+    "Role-player: Jason, 28, team leader at a produce distribution centre outside Renmark; partner, child of three; non-smoker, 4–5 beers weekends; paracetamol irregularly; no PMHx; not ATSI; grew up in Adelaide. Blunt, impatient, not rude. Three pushes: opening line; 'better in two days last time' (defensive if you criticise 'my GP for years'); 'some on hand in case?' — accepts a script with thanks then marks a fail. If work is solved first: drops to one push, 'oh — that'd actually help a lot'. 'Just a virus' → 'it doesn't feel like just anything, mate'. If never asked about concerns: at ~7 min, flat, 'so what am I supposed to tell work?'",
+    "Examiner: T 37.4, other obs normal · pharynx/tonsils erythematous, no exudate · uvula midline, no asymmetry · no cervical lymphadenopathy · no trismus, normal voice · no rash · spleen not palpable · Centor 0–1",
+    "Variant 1 — findings turn bacterial (exudate both tonsils, tender anterior nodes, T 38.5, no cough; Centor 4): 'bacterial rather than viral' — and the Australian nuance: still not automatic antibiotics in a healthy adult (shortens ~1 day); treat if very unwell, scarlet-fever rash, or high ARF risk; symptomatic + review 3 days · Variant 2 — scarlet fever (sandpaper rash, flushed cheeks with circumoral pallor, strawberry tongue): treat — phenoxymethylpenicillin bd 10 full days; not infectious after ~24 h of treatment",
+    "Variant 3 — 19-year-old Aboriginal man, exudative tonsillitis, 38.6, grew up in a remote community: high ARF risk → treat 'to protect the heart, not the throat': swab, phenoxymethylpenicillin 500 mg bd 10 days (or single IM benzathine benzylpenicillin); Closing the Gap PBS; Aboriginal Liaison Officer/ACCHS follow-up with permission; ARF/RHD notifiable in SA VERIFY",
+    "Variant 4 — 34F, 4 days sore throat + fevers, 'something for an overactive thyroid' → ★ carbimazole: agranulocytosis warning sign — FBE today, stop carbimazole until the result, phone the endocrinologist; low neutrophils = febrile neutropenia → urgent assessment, cultures, empirical antibiotics. Treating as viral = automatic fail",
+    "SA: medical certificate; employer letter; ACCHS/Closing the Gap where relevant; SA Health notification for ARF/RHD; TIS 131 450; MedSTAR 1300 13 12 33"
+   ],
+   "fails": [
+    "No signposted red-flag sweep — six minutes on the character of the pain, never saying drooling, one-sided, muffled or mouth opening ★",
+    "A flat refusal with no exploration of why he wants them ★",
+    "An antibiotic prescribed to end the argument — including a 'just in case' script ★",
+    "Agranulocytosis (carbimazole) or quinsy missed in a variant ★",
+    "No safety-netting — 'come back if it gets worse' without the six symptoms, destination and review date ★",
+    "Skipping rheumatic fever and medication questions because it 'looks viral'; not naming uvular deviation and trismus in the examiner request",
+    "'Just a cold'; criticising the previous prescriber; the certificate as an afterthought; announcing the plan instead of 'how does that sit with you?'"
+   ],
+   "numbers": [
+    "8 min; history closes at 3:00; counselling from 3:30 · Centor: exudate · tender anterior nodes · fever >38 · no cough; age 3–14 +1, 15–44 0, ≥45 −1 · this case 0–1",
+    "Natural history 3–7 days · antibiotics shorten strep throat by ~1 day · harm ~1 in 10 diarrhoea/rash",
+    "Paracetamol 1 g up to qid, max 4 g/24 h · ibuprofen 200–400 mg tds with food · review 3–4 days · persisting >3 weeks → think malignancy",
+    "Phenoxymethylpenicillin 500 mg bd 10 days when indicated (child 15 mg/kg to 500 mg) VERIFY",
+    "Six safety-net symptoms: drooling/can't swallow saliva · muffled voice/trismus · severe one-sided pain · high fever with rigors · dizziness/can't keep fluids · SOB · MedSTAR 1300 13 12 33"
+   ]
+  },
+  "source": "Sore_Throat_Viral_Pharyngitis_Antibiotic_Request_2_Case_Tasks_Script_Notability (1).pdf (Jason Whitfield, 28 — three days of sore throat, and a roster)"
+ },
+ {
+  "id": "MED-82",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice, Kadina, Yorke Peninsula. Vitals on the card. Examination findings from the examiner (Version A: all normal; Version B: boggy pale mucosa). Online variant adds a mechanism explanation task.",
+  "stem": [
+   "Ms Denise Harmer, 45, part-time office worker at a grain-handling depot: blocked and runny nose, continuously for the past six months. T 36.6, BP 122/78, HR 72, RR 14, SpO2 99% RA, BMI 26; afebrile, systemically well."
+  ],
+  "tasks": [
+   "Take a focused, relevant history (approximately 6 minutes)",
+   "Ask the examiner for the physical examination findings",
+   "Explain your most likely diagnosis and your differential diagnoses to the patient",
+   "Online variant: explain the mechanism of the condition in lay terms"
+  ],
+  "time": "8 minutes: 6 history → 20 s PEFE → 90 s explanation. 0:00 frustration line + early ICE · timing, ★ 'one nostril or both?' (say the answer back), CCVO — colour, consistency, volume, odour, blood · better/worse, ★ season AND place, impact · atopic package — nose, eyes, chest, skin + personal/family atopy · triggers ×4 — home, work, ★ drugs incl. nasal sprays by name and duration, smoke · ★ signposted sinusitis screen · ★ signposted malignancy screen — do NOT reassure before it · PEFE by component; 'normal' doesn't change the diagnosis · hay fever + three reasons + two differentials excluded · mechanism in four plain sentences · plan, safety-net, summary.",
+  "back": {
+   "dx": "Allergic rhinitis (hay fever) — perennial (cat on the bed, dust mite in an older fully carpeted house, grain dust at the depot, partner smoking indoors) with a spring pollen flare; persistent and moderate–severe by ARIA (sleep, work, taste, embarrassment). Six months, intermittent weeks, ★ bilateral, clear watery copious discharge, no smell, no blood; worse in spring, worse at home in the mornings and in bed; chemist antihistamines help for hours. Atopic package: itchy nose, sneezing fits, red streaming eyes, itchy throat, no chest symptoms (harder version: night cough, puffed at netball → asthma), childhood eczema, sister asthma, mother hay fever. Occasional decongestant spray ('not really a medication') — a week here and there: counsel the 5-day limit, stop it. Two exclusions signposted and clean: chronic rhinosinusitis (no facial pain/pressure, fever, PND, upper toothache, smell loss) and sinonasal/nasopharyngeal malignancy (no epistaxis, weight loss, neck lumps, unilateral ear blockage, diplopia, facial numbness). Hidden agenda: aunt had 'a growth in her nose' — surfaces at the red-flag questions; reassure with the specific negatives, after the screen. PEFE normal → 'a normal examination doesn't change my diagnosis — it reassures me there's no infection, polyp or growth; hay fever is diagnosed on the story'. Three reasons: clear watery bilateral discharge; the travelling symptoms (sneeze, itch, eyes); trigger exposure + family atopy. 'Why all year?' → perennial (mite, cat) plus seasonal (pollen). Mechanism: allergen → mast cell → histamine → inflammation and leaky dilated vessels → blockage and watery discharge (two waves: early histamine = itch/sneeze/run, antihistamines work; late inflammatory cells = blockage, needs the steroid, 1–2 weeks). Plan: cat out of the bedroom, mite covers, hot-wash bedding, lift/vacuum the carpet, recirculate on pollen days; mometasone 2 sprays each nostril daily (technique, 2 weeks); cetirizine 10 mg; eye drops; stop the decongestant; smoke-free home, Quitline; review 4–6 weeks with the spray; escalate to combination spray or testing/immunotherapy if uncontrolled.",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · ★ 'I'm very sorry you've been having such a difficult time — six months is a long while, and being told it's a cold each time must be frustrating. I'll ask some questions to find the cause, then we'll make the best plan. Is that all right?' · ★ 'was there anything in particular you were worried this might be?' (she deflects — note it, move on)"
+    ],
+    [
+     "0:45",
+     "Timing: constant or comes and goes, worse · ★ 'one nostril, or both?' → both → ★ 'that's reassuring — a one-sided blockage would make me look for a different set of causes' · CCVO: clear or green/yellow; watery or thick; a lot or a little; smell; blood"
+    ],
+    [
+     "1:45",
+     "Better/worse · ★ 'a particular time of year?' (spring) · ★ 'a particular place — home, work, outdoors?' (home, mornings, bed) · impact — sleep, work, concentration, taste, embarrassment"
+    ],
+    [
+     "2:30",
+     "Atopic package, four addresses: nose — itch, sneezing · eyes — itchy/red/watery · throat itch · chest — cough at night/exercise, wheeze, SOB · skin — eczema · own allergies · family asthma/eczema/hay fever"
+    ],
+    [
+     "3:15",
+     "Triggers ×4: home — pets (cat on the bed), carpets/bedding/curtains, dust, damp/mould (older carpeted house 8 months) · work — grain dust, harvest · ★ 'any medications, including over the counter — any nasal sprays, which one, how long?' → 'a spray, not really a medication' → pursue: decongestant, a week here and there · smoke — partner indoors"
+    ],
+    [
+     "4:15",
+     "★ Signposted sinusitis screen: 'to make sure this isn't a sinus infection, because that's treated quite differently' — headaches; pain/pressure cheeks, forehead, behind the eyes, bending forward; fevers; PND; upper toothache; smell → all no"
+    ],
+    [
+     "4:45",
+     "★ Signposted malignancy screen: 'questions I ask everybody with a blocked nose this long, to be sure I'm not missing anything serious' — nosebleeds, weight/appetite, neck lumps, unusual tiredness, one ear blocked/muffled, double vision, facial numbness → all no → 'why are you asking — could it be cancer? my aunt had a growth' → thank her, validate, reassure WITH the negatives (bilateral, clear, no blood, no bleeds, weight stable, no lumps, hearing normal) · close: PMHx/surgery/nasal injury, alcohol, anything else"
+    ],
+    [
+     "6:00",
+     "PEFE by component: general/vitals · external nose, sinus tenderness · anterior rhinoscopy — mucosa, turbinates, septum, polyp/mass, discharge · oropharynx — PND, cobblestoning · eyes — conjunctival injection · otoscopy — effusion · neck nodes · chest — wheeze → 'all normal' → ★ rescue sentence"
+    ],
+    [
+     "6:30",
+     "'Has anyone mentioned hay fever before?' · allergic rhinitis named · three reasons · two differentials (sinusitis — why not; growth — what I checked) · 'why all year?' → perennial + seasonal · mechanism in four sentences if asked · management, stop the decongestant, Quitline for the partner, review 4–6 weeks with the spray · safety-net: one-sided, nosebleeds, thick/coloured/bloody, facial pain/fever, smell loss, one ear, neck lump, weight loss · summary, questions"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'I'm very sorry to hear you've been having such a difficult time with this. I'll ask you some questions to try to find the cause, and then we'll make the best management plan for you. Is that all right with you?' / 'Before I start — was there anything in particular you were worried this might be?'",
+    "★ 'Is the blocking and the discharge coming from one nostril, or both?' → 'Both sides — that's reassuring, because a one-sided blockage would make me look for a different set of causes.'",
+    "'Is it clear, or green or yellow? Watery, or thick and sticky? A lot or a little? Any bad smell? Any blood?' / 'Is there a particular time of year, or a particular place, that makes it worse?'",
+    "'These conditions often travel together — so let me ask about your eyes, your chest and your skin.' / ★ 'Any nasal sprays — which one, and for how long?' ('that's not really a medication, is it?' → 'it certainly counts')",
+    "★ 'I'd like to ask a few questions to make sure this isn't a sinus infection, because that's treated quite differently.' / ★ 'And a few questions I ask everybody with a blocked nose this long, to be sure I'm not missing anything serious.'",
+    "'Do you think it could be cancer? My aunt had a growth in her nose' → 'Thank you for telling me — I'm glad you have, because it explains why you've been so worried, and it's exactly what those questions were for. Nothing you've told me points that way: it's on both sides, the discharge is clear with no blood, no nosebleeds, your weight and appetite are unchanged, no lumps, hearing normal. Let me examine you and then I'll tell you what I think.'",
+    "★ 'A normal examination doesn't change my diagnosis — it reassures me there's no infection, no polyp and no growth. Hay fever is diagnosed on the story.'",
+    "★ 'Most likely you have allergic rhinitis, which most people know as hay fever. Three reasons: the discharge is clear, watery and from both sides; you have the symptoms that travel with it — sneezing, itchy nose, red watery eyes; and you're around the common triggers — a cat on your bed, an older carpeted house full of dust mite, grain dust at work, smoke in the house — with hay fever and asthma in the family.' / 'Yours is year-round from the cat and the dust mite, with a spring flare from pollen.'",
+    "Mechanism: ★ 'An allergen activates a mast cell, which releases histamine, which causes inflammation and widens the small blood vessels in the lining of your nose — that swelling and leaking is the blockage and the watery discharge, and it's why antihistamines help.' / 'Why don't antihistamines fix the blockage?' → 'Two waves — the first is histamine, itch and sneeze; the second, hours later, is inflammatory cells arriving, which causes the blockage; that's what the steroid spray is for, and why it takes a week or two.'",
+    "★ 'Use it every day, not just on bad days — aim it outwards towards your ear, don't sniff hard, and give it up to two weeks.' / 'Can I ask you to stop the decongestant spray? Used more than about five days it makes the blockage worse.' / ★ 'Come back sooner if it becomes one-sided, nosebleeds, coloured or bloody discharge, facial pain or fever, loss of smell, one ear blocking, or a lump in your neck.'"
+   ],
+   "pefe": [
+    "Role-player: Denise, 45, admin at a grain depot near Kadina; partner smokes indoors; a cat; older fully carpeted house 8 months; chemist antihistamines + an occasional decongestant spray she doesn't count; childhood eczema; sister asthma, mother severe hay fever; no surgery/injury/allergies. Frustrated and clipped — softens if the six months is acknowledged; if not, three-word answers and 'is this going to be another cold, then?' (also pushes once at ~4 min). Withholds cat, carpet, depot dust, smoking partner, family history and the spray unless asked directly. Hidden agenda: aunt's nasal growth — deflects if asked in the first two minutes; reveals at the red-flag questions ('why are you asking all that?'); if reassured before the screen: 'how can you know that already?'",
+    "PEFE Version A: all normal · Version B: nasal mucosa swollen, boggy and pale bilaterally with clear watery secretions; everything else normal → 'the classic appearance in allergic rhinitis; no polyp, mass or purulent discharge — against sinusitis and against anything sinister'",
+    "Variant 2 — 'it's the left one really; a bit of blood on the tissue': STOP the hay-fever line. Complete red flags (ear, neck lumps, facial numbness, diplopia, weight) → ★ 'because this is one side only with some blood I'm not treating it as hay fever — a one-sided blocked nose in an adult needs a specialist to look inside with a camera; urgent ENT, nasendoscopy ± scan; Adelaide, PATS today'. Examiner 'why not treat and review in 6 weeks?' → unilateral obstruction + epistaxis in an adult is a red flag for sinonasal/nasopharyngeal malignancy; a therapeutic trial delays diagnosis; nasendoscopy isn't available to me in GP",
+    "Variant 3 — decongestant every day for four months, wears off in an hour: rhinitis medicamentosa on top — rebound explained, stop it, ★ warn 1–2 weeks worse, INCS started at the same time, review 2 weeks not 6 (cross-ref MED-77) · Variant 4 — night cough + puffed at netball in spring: asthma in the same allergic family → spirometry, reliever + written action plan, thunderstorm asthma advice",
+    "Examiner: 'why not simply an antihistamine?' → persistent, moderate–severe by ARIA (sleep and work), obstruction dominant; antihistamines control early-phase itch/sneeze; obstruction is late-phase inflammation → INCS first-line regularly, antihistamine added for itch/eyes · 'allergy testing?' → not routinely — clinical diagnosis, triggers evident; skin prick or specific IgE if the trigger is unclear, avoidance decisions depend on it, or uncontrolled and considering immunotherapy (clinical immunology, Adelaide)",
+    "SA: Kadina GP; ENT/immunology Adelaide with PATS; Quitline 13 7848 for the partner; TIS 131 450; MedSTAR 1300 13 12 33 not needed"
+   ],
+   "fails": [
+    "Never asking one nostril or both ★",
+    "Omitting the signposted malignancy red-flag screen ★",
+    "Reassuring her before gathering the negatives — 'don't worry, it's just an allergy' ★",
+    "'The examination is normal, so I'm not sure what this is' — losing your nerve",
+    "'IgE-mediated type 1 hypersensitivity of the nasal mucosa' — immunology vocabulary to the patient",
+    "Starting closed questions without acknowledging the frustration; leaving ICE to the last thirty seconds; hearing 'worse in spring' and never asking the place question; stopping the trigger list at the cat",
+    "Accepting 'no medications' — never pursuing the spray by name and duration; skipping the chest so the asthma variant is missed"
+   ],
+   "numbers": [
+    "Stem 45F, 6 months · 8 min: 6 history · 4 atopic addresses · 4 trigger groups · 2 exclusions · CCVO",
+    "Chronic rhinosinusitis: ≥12 weeks, 2+ of obstruction, discharge, facial pain, reduced smell · ARIA intermittent <4 days/week or <4 weeks; otherwise persistent",
+    "Mometasone 50 µg 2 sprays each nostril daily (fluticasone furoate 27.5 µg, budesonide 64 µg same) · onset days, full effect up to 2 weeks · review 4–6 weeks",
+    "Cetirizine 10 mg · loratadine 10 mg · fexofenadine 180 mg · desloratadine 5 mg daily · azelastine + fluticasone 1 spray bd · olopatadine 0.1% 1 drop each eye bd · topical decongestant max 5 days",
+    "Bedding weekly ≥55 °C · immunotherapy 3–5 years · Quitline 13 7848 · PATS from MM5"
+   ]
+  },
+  "source": "Allergic_Rhinitis_2_Case_Tasks_Script_Notability.pdf (Denise Harmer, 45, six months of blocked and runny nose)"
+ },
+ {
+  "id": "MED-83",
+  "cat": "med",
+  "promptBell": true,
+  "promptAt": 360,
+  "setting": "General practice, Kadina. The blank 'unwell' stem — no vitals, no duration, no system. No examination will be given. Six minutes of history, then diagnosis and differentials.",
+  "stem": [
+   "James Corrigan, 30: feeling unwell. That is the entire stem."
+  ],
+  "tasks": [
+   "Take a history for six minutes",
+   "No examination will be given",
+   "State your most likely diagnosis",
+   "State your differential diagnoses"
+  ],
+  "time": "8 minutes: 6 history → 1 diagnosis with reasons → 1 differentials. ★ 'What do you mean by unwell — low energy, sleepy, feverish, or something specific?' (offer categories or he stays vague) → re-anchor out loud · timing, ★ side — nose AND eyes, CCVO · ENTS sweep incl. ★ 'show me where' (cheekbones = maxillary sinuses — the S that upgrades rhinitis to rhinosinusitis) and ★ smell · ★ five red-flag groups, signposted: systemic, orbit, intracranial, rash, airway · ★ chest → past asthma → the borrowed Ventolin (clue AND safety issue) · atopic package, triggers ×4 · travel, sexual health with a preamble, malignancy · ★ TWO diagnoses, four reasons, the link, assess and treat the asthma now, no antibiotics with the three criteria · grouped differentials.",
+  "back": {
+   "dx": "Two diagnoses running at once — (1) acute rhinosinusitis, most likely allergic: 2–3 days, constant, worsening, bilateral blocked nose and bilateral watery eyes, clear watery copious discharge, no fever (checked), bilateral cheekbone ache worse leaning forward (maxillary), no PND, smell intact, no ear/neck symptoms; sneezing, itchy nose and eyes, spring hay fever, mother hay fever, sister asthma; pets, carpet throughout, dust, partner smokes indoors — four reasons: no fever, clear watery discharge, the whole atopic picture with family history, heavy trigger exposure (not fever absence alone); (2) acute asthma exacerbation: dry cough, wheeze and SOB especially at night, childhood asthma 'grown out of' (gave up hockey — exercise-induced), sister's Ventolin yesterday helped — relapse of childhood asthma triggered by the allergic flare; the two are linked (same allergic tendency, nose and chest). Red flags all negative; explain them honestly when he asks 'what are you worried about?'. No antibiotics — only if much more unwell, >10 days without improvement, or double worsening. Assess and treat the asthma NOW: RR, SpO2, peak flow; salbutamol via spacer; ± oral prednisolone; his own reliever + spacer, written action plan, spirometry with reversibility once settled — not his sister's inhaler. Differentials grouped: viral URTI (cold, pharyngitis, tonsillitis, laryngitis, influenza, COVID-19, EBV); bacterial (strep tonsillitis, bacterial rhinosinusitis, chlamydial/gonococcal pharyngitis); serious upper airway (epiglottitis, quinsy — excluded: no drooling, dysphagia, voice change); LRTI (pneumonia, pertussis, TB); structural (polyps); STI incl. HIV seroconversion; complications (orbital cellulitis, meningitis, sepsis — screened, negative).",
+   "plan": [
+    [
+     "0:00",
+     "WIPE · 'I'll ask some questions to work out what's going on, then we'll make a plan together' · ★ 'can you describe what you mean by unwell — low in energy, sleepy, feverish, or is there something specific bothering you?' → 'stuffy nose and watery eyes' → ★ 'so the main problem is your nose and your eyes — let me focus there'"
+    ],
+    [
+     "1:00",
+     "Duration 2–3 days, constant, worse · ★ 'one nostril or both — and one eye or both?' → both/both · CCVO: clear, watery, a lot, no smell"
+    ],
+    [
+     "1:45",
+     "ENTS: fever/chills/shivers (checked — none) · ear pain/discharge/hearing · sore throat/odynophagia (scratchy) · ★ 'any pain or pressure over your face — could you show me where?' → presses both cheekbones → ★ 'over your cheekbones — that's where your maxillary sinuses sit' · PND · ★ smell · neck lumps"
+    ],
+    [
+     "2:45",
+     "★ Signpost: 'to make sure this isn't spreading anywhere it shouldn't' — 1 systemic: confusion, dizziness/faint, shaking chills · 2 orbit: eye swelling, double/blurred vision, painful eye movement · 3 intracranial: severe headache, photophobia, stiff neck, vomiting · 4 rash · 5 airway: drooling, dysphagia, voice change, noisy breathing → all no · 'what are you worried about?' → 'occasionally spreads to the tissues around the eye or towards the brain — nothing suggests that, but I check rather than assume'"
+    ],
+    [
+     "3:45",
+     "★ Chest: cough (dry), SOB, wheeze (night), chest pain → ★ 'any past history of wheezing, or of asthma?' → childhood asthma, hockey, sister's Ventolin helped → ★ 'that it helped tells me a great deal — we'll get you a puffer of your own; I'd rather you weren't using someone else's prescription'"
+    ],
+    [
+     "4:30",
+     "Atopic package: sneezing, itchy nose, itchy eyes, eczema, own allergies (spring pollen), FHx (mum hay fever, sister asthma) · triggers ×4: pets/carpet/dust/damp; work; medications incl. OTC; smoke (partner indoors)"
+    ],
+    [
+     "5:15",
+     "Screening: travel, sick/animal contacts, night sweats, weight loss/appetite, lumps · ★ sexual health with a preamble: 'I ask everybody in this situation — it's confidential — some infections that make people feel generally unwell are passed on sexually; sexually active? unprotected sex in the last few months?' ('bit personal?' → fair, you don't have to answer; HIV, chlamydia, gonorrhoea can cause a flu-like illness)"
+    ],
+    [
+     "6:00",
+     "★ 'Most likely acute rhinosinusitis — inflammation in the lining of your nose and in some air-filled cavities in your skull called sinuses, exactly where you pointed; allergic, viral or bacterial — most likely allergic' + four reasons · 'antibiotics?' → no, three criteria · ★ 'there's a second thing happening at the same time — an acute flare-up of your asthma; the two are connected' · adult relapse is common · ★ 'before you go I'll check RR, oxygen and a peak flow, treat with a reliever through a spacer, possibly a short course of steroid tablets; your own puffer, an action plan, spirometry once settled'"
+    ],
+    [
+     "7:00",
+     "Differentials by group name: viral URTI · bacterial URTI · serious upper airway (excluded and why) · LRTI · structural · STI/HIV seroconversion · complications screened — sacrifice examples, never the asthma"
+    ]
+   ],
+   "planApprox": true,
+   "ask": [
+    "★ 'Can you describe what you mean by unwell? Do you mean low in energy, or sleepy, or feverish — or is there something specific bothering you?' / ★ 'So the main problem is your nose and your eyes. Let me focus there.'",
+    "★ 'Is it one nostril or both — and one eye or both?' / 'Clear or green? Watery or thick? A lot or a little? Any bad smell?'",
+    "★ 'Any pain or pressure over your face — could you show me where?' → 'So over your cheekbones — that's where your maxillary sinuses sit.' / ★ 'Any change or loss in your sense of smell?'",
+    "★ 'I'd like to ask a few questions to make sure this isn't spreading anywhere it shouldn't.' / 'Any swelling around your eye, double vision, or pain on moving the eye?' / 'Have you noticed any rash anywhere on your body?' / 'Any drooling, difficulty swallowing, change in your voice, or noisy breathing?'",
+    "'What are you worried about?' → 'Sinus infections are usually straightforward, but very occasionally they spread to the tissues around the eye or towards the brain. Nothing you've told me suggests that — but it's important I check rather than assume.'",
+    "★ 'Do you have any past history of wheezing, or of asthma?' / ★ 'That it helped tells me a great deal — we'll get you a puffer of your own. I'd rather you weren't using someone else's prescription, because it means nobody's checking the dose or how you're going on it.'",
+    "'One more that I ask everybody in this situation — it's confidential, and it's because some infections that make people feel generally unwell are passed on sexually. Are you sexually active? Any unprotected sex in the last few months?'",
+    "★ 'Most likely you have acute rhinosinusitis — inflammation of the lining of your nose and of some air-filled cavities in your skull called sinuses. In your case most likely allergic, for four reasons: no fever; clear watery discharge rather than thick and coloured; the whole allergy picture — sneezing, itchy nose and eyes, your own pollen allergy, hay fever in your mother and asthma in your sister; and a lot of triggers at home.'",
+    "★ 'There's a second thing happening at the same time — an acute flare-up of your asthma. They're connected: the same allergic tendency, affecting your nose and your chest at once.' / 'It's common for childhood asthma to settle and then return in adulthood, often triggered by exactly this sort of allergy flare.'",
+    "★ 'Antibiotics don't help this, even when the discharge looks coloured — I'd only consider them if you were much more unwell, if it dragged past ten days, or if you improved and then got worse again.'"
+   ],
+   "pefe": [
+    "Role-player: James, 30, machinery parts salesman near Kadina; partner smokes indoors; pets, carpet throughout, dusty; spring hay fever; childhood asthma on medication, 'grew out of it', gave up hockey; mum hay fever, sister asthma; long-term relationship; no meds/PMHx/allergies. Genuinely cannot articulate 'unwell' — abstract question gets 'I don't know… just unwell. Rough.' Only offered categories or a targeted question produce 'stuffy nose and watery eyes'. Presses both cheekbones ONLY when asked to show where ('any facial pain?' → 'a bit, yes' and nothing more). Sister's Ventolin only if asked about past asthma or medications tried. If the chest is never asked: 'what about this cough, though?' at the end. Blunt sexual health question → 'that's a bit personal, isn't it?'. Asks once during red flags 'why — what are you worried about?'. No hidden agenda",
+    "No examination given. If asked what you'd assess before disposition: RR, SpO2, HR, peak flow, work of breathing, speech; salbutamol 4–12 puffs via spacer, repeat as needed; oral prednisolone if moderate–severe; reassess; spirometry with reversibility once settled; own reliever + spacer + written action plan · rhinosinusitis: saline, INCS (mometasone 2 sprays each nostril daily), cetirizine 10 mg, analgesia, topical decongestant max 3–5 days",
+    "Variant 1 — puffy left eye, painful lateral gaze, diplopia: EMERGENCY — orbital (post-septal) cellulitis until imaging proves otherwise: ABC, obs incl. temperature; visual acuity, pupils/RAPD, eye movements, proptosis; IV access, blood cultures, FBE, CRP; empirical IV antibiotics without waiting for imaging; urgent CT sinuses/orbits, same-day ENT + ophthalmology; from Kadina ★ MedSTAR 1300 13 12 33 — start treatment locally while retrieval is arranged. 'Could it just be periorbital?' → painful eye movement, diplopia and proptosis = post-septal; changes oral → IV, mandates imaging and specialist review",
+    "Variant 2 — purple spots on the legs + shocking headache: non-blanching purpura in an unwell adult = meningococcal disease — immediate IV/IM benzylpenicillin or ceftriaxone before transfer; cultures only if no delay; IV fluids; MedSTAR; notify public health, contact prophylaxis · Variant 3 — muffled, leaning forward, drooling: epiglottitis/quinsy — no throat examination or instrumentation, upright, calm, oxygen, ENT + anaesthetics for airway in a controlled setting, IV antibiotics + steroids, retrieval called early",
+    "Variant 4 — day 12, improved around day 6 then worse: thick green discharge, severe right cheek pain, fever two nights → double worsening + fever + severe unilateral pain + >10 days = bacterial rhinosinusitis → amoxicillin, saline, analgesia, review 3 days · Examiner: 'allergic with no fever? plenty of colds are afebrile' → can't exclude viral (leading alternative); favour allergic on atopy, itch/sneeze, clear discharge, triggers — and a virus commonly triggers both flares · 'image the sinuses?' → no; clinical diagnosis; image urgently only for orbital/intracranial suspicion · 'asthma secure on a borrowed inhaler?' → supportive not diagnostic — spirometry once settled; treat the exacerbation now on clinical grounds · 'why sexual history for a blocked nose?' → the complaint was undifferentiated malaise; HIV seroconversion, chlamydial/gonococcal pharyngitis and conjunctivitis",
+    "SA: Kadina GP; MedSTAR 1300 13 12 33 for orbital/meningococcal/airway; SHINE SA; Quitline 13 7848; PATS; TIS 131 450"
+   ],
+   "fails": [
+    "Never converting 'unwell' into a system — a top-to-toe review still running at four minutes ★",
+    "Omitting the five red-flag groups — or asking two and calling it a screen ★",
+    "Naming only one diagnosis ('this is hay fever') — the single commonest fail ★",
+    "'He's also having an asthma flare' — named, then nothing done about it",
+    "'There's no fever, so it's definitely allergic' — defending allergic on absence of fever alone; 'I'd start him on amoxicillin'",
+    "Missing the S — never asking him to point; omitting loss of smell; forgetting to ask laterality of the eyes; 'rhinitis' or 'sinusitis' and flip-flopping instead of rhinosinusitis",
+    "Filing the wheeze under 'the cold'; accepting 'I grew out of it'; treating the borrowed inhaler as a clue only; skipping the sexual health question or asking it with no preamble; a flat run of fifteen organisms with no group names"
+   ],
+   "numbers": [
+    "Rhinosinusitis = 2 or more of 4: blockage · discharge · facial pain/pressure · reduced smell · acute <12 weeks, chronic ≥12 · allergic, viral or bacterial · this stem 2–3 days",
+    "ENTS = ear · nose · throat · sinuses + fever/chills + neck lumps · 5 red-flag groups: systemic/sepsis · orbit · intracranial · rash · airway",
+    "Antibiotics only if severe illness, >10 days without improvement, or double worsening — first-line amoxicillin · topical decongestant max 3–5 days · mometasone 2 sprays each nostril daily · cetirizine 10 mg",
+    "Asthma flare: salbutamol 4–12 puffs via spacer, repeat as needed · oral prednisolone if moderate–severe · reassess before disposition · spirometry with reversibility once settled; own reliever, spacer, written action plan",
+    "MedSTAR 1300 13 12 33 · SHINE SA · Quitline 13 7848 · PATS"
+   ]
+  },
+  "source": "Acute_Rhinosinusitis_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 30 — the blank 'unwell' stem → allergic rhinosinusitis + asthma flare)"
  }
 ]
