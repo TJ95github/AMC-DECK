@@ -92,6 +92,7 @@
   .tl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:14px}
   .tl b{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink-2);white-space:nowrap}
   .src{font-size:12px;color:var(--ink-3);margin-top:14px;padding-top:10px;border-top:1px dashed var(--line);word-break:break-all}
+  .drive{font-size:10px;color:var(--ink-3);opacity:.75;margin-top:4px;word-break:break-all}
   .approx{font-size:12px;color:var(--ink-3);font-weight:400}
 
   /* ratings */
@@ -161,7 +162,7 @@ const CATS = {
 
 /* ===================== Built-in stations =====================
    Front: verbatim door stem + tasks only. Back: the brief.
-   Each has "source" = the Part 2 PDF in Drive it was taken from. */
+   Each has "source" = the Part 2 PDF in Drive it was taken from, and "drive" = its Google Drive folder path › filename (shown small on the back). */
 let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
@@ -346,7 +347,7 @@ function render(){
         ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         ${b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         ${b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
-        <div class="src">Source: ${esc(c.source||"")}</div>
+        <div class="src">Source: ${esc(c.source||"")}</div>${c.drive?`<div class="drive">Google Drive: ${esc(c.drive)}</div>`:""}
       </div>${wide?"":rateHtml}`;
     }
     h+=`</div>${wide?"":navHtml}</div>`;
