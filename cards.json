@@ -14760,5 +14760,638 @@
       ]
     },
     "source": "Telehealth_Vomiting_Obstruction_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 60, telephone request for an antiemetic — bowel obstruction with no flatus, anuria on metformin and an antihypertensive, refusal negotiated)"
+  },
+  {
+    "id": "MED-148",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "General practice/ED. Four-minute history, PEFE from the examiner, diagnosis + differentials, investigations. The fever answer completes Charcot's triad — if you never ask, you diagnose 'cancer' and fail. Ask the fever question at the end of every liver block. Version A (50 F, epigastric pain, tea-coloured urine, no fever, 6 kg loss, father with colon cancer) is obstructive jaundice without the infection — folded in.",
+    "stem": [
+      "Colin Harding, 66, presents with abdominal pain and fever. BP 128/76 · HR 104 · RR 20 · T 38.5 · SpO2 97%."
+    ],
+    "tasks": [
+      "Take a focused history (about 4 minutes)",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis and differential diagnoses to the patient",
+      "Explain the further investigations you would arrange"
+    ],
+    "time": "8 min. 'May I have his vital signs?' → 'febrile and tachycardic — I'll keep sepsis in mind throughout' · intro, open · pain: where (upper middle), /10 (7), character (deep boring), constant/intermittent, worse, ★ 'through to your back?' (yes), ★ related to eating/any particular food (worse after any food) · ★ urine colour ('dark like tea, all the way through'), ★ 'have your stools gone pale?', N/V, bowels · ★ red flags quantified: weight loss — how much/what period/intentional (5–6 kg/2 months/no), appetite (gone), lumps, tiredness, FHx bowel/liver/pancreas/stomach cancer · liver blocks: yellowing (wife says yellow), itching · alcohol, recent antibiotics, transfusions/tattoos/piercings/IVDU/travel/unusual food, occupation · ★ fatty-meal pain, ★ operations (cholecystectomy 8 y) · ★ 'and have you had any fever or shaking chills? did you measure it?' (38-something at home, 2 days) · PEFE named: jaundice, cachexia, scratch marks, conscious level; vitals esp temperature; abdomen — symmetry/distension/★ scars; tenderness ± guarding/rigidity/rebound; ★ hepatomegaly/splenomegaly, tender edge; ★ shifting dullness; bowel sounds; ★ dipstick bilirubin/blood/protein → jaundiced, unwell, RUQ tenderness, liver 2 cm mildly tender, cholecystectomy scars, dipstick bilirubin + · ★ 'I believe you have acute cholangitis' → the triad → ★ 'I am also concerned about what is blocking those tubes' — pancreas/bile duct/liver cancer, not certain, scan tells · DDx grouped · bloods incl ★ cultures before antibiotics, lipase, coags · ★ imaging ladder USS → CT/MRCP → ERCP · admit, fluids, IV antibiotics, drainage, escalation.",
+    "back": {
+      "dx": "Acute cholangitis secondary to malignant biliary obstruction (Charcot's triad: fever 38.5 with rigors ×2 days, jaundice, RUQ/epigastric pain) on a four-week history of deep boring epigastric pain through to the back worse after any food, tea-coloured urine, pale stools, itch, 5–6 kg unintentional loss over two months with appetite gone — most likely carcinoma of the head of the pancreas, possibly cholangiocarcinoma (bile ducts remain after cholecystectomy) or a hepatic lesion; a retained/new duct stone or a post-cholecystectomy stricture are the benign alternatives. PEFE: jaundiced, unwell, RUQ tenderness without peritonism, liver 2 cm mildly tender, no splenomegaly, no ascites, cholecystectomy scars, dipstick bilirubin positive. Admit today: cultures then IV antibiotics per TG, fluids, bloods, USS first → CT/MRCP → ERCP to look and drain; antibiotics buy time, drainage is the treatment.",
+      "plan": [
+        [
+          "0:00",
+          "'Before I begin, may I have his vital signs?' → 128/76, 104, 20, 38.5, 97% → 'he is febrile and tachycardic, so I will keep sepsis in mind throughout' · 'I'm Dr —; am I speaking with Mr Harding? is it all right if I ask some questions? how can I help?' → month of upper pain, hot and shivery, wife says yellow → 'that combination is important and I'm glad you came in'"
+        ],
+        [
+          "0:45",
+          "Pain: 'where exactly? how bad out of ten? sharp or dull? constant or coming and going, getting worse? ★ does it go through to your back? ★ is it related to eating — any particular food?' → middle, high; 7; deep boring; on and off 4 weeks, more frequent; through to the back; worse after any food"
+        ],
+        [
+          "1:30",
+          "★ 'Can you describe the colour of your urine? dark throughout the stream? ★ have your stools gone pale?' (tea, all through; very pale) · nausea/vomiting (nausea) · bowels"
+        ],
+        [
+          "2:00",
+          "★ Red flags quantified: 'lost weight without trying — how much, over what period, any of it intentional?' (5–6 kg, 2 months, no) · appetite (gone) · lumps · tiredness (very) · FHx bowel/liver/pancreas/stomach cancer (none)"
+        ],
+        [
+          "2:45",
+          "Liver blocks: yellowing (wife says), itching (some) · alcohol (2 beers/wk), recent antibiotics, transfusions/tattoos/piercings/IVDU/travel/unusual food (none), occupation (retired electrician) · ★ 'ever had pain after a large fatty meal? ★ any operations, particularly on your abdomen?' (gallbladder out 8 y) · ★ 'and have you had any fever or shaking chills? measured it? anything bring it down?' → hot and shivering 2 days, 38-something · concerns"
+        ],
+        [
+          "4:00",
+          "★ Examiner: 'general appearance — jaundiced, cachectic, scratch marks, level of consciousness · vital signs, particularly temperature · abdomen — inspection: symmetry with respiration, distension, ★ surgical scars · superficial and deep palpation — tenderness, and if present guarding, rigidity, rebound; masses, specifically ★ hepatomegaly and splenomegaly, is the liver edge tender · percussion — ★ shifting dullness · auscultation · office test — ★ urine dipstick for bilirubin, blood and protein' → jaundiced, unwell, T 38.5, RUQ tenderness, no guarding/rebound, liver 2 cm below the margin mildly tender, no splenomegaly, no shifting dullness, cholecystectomy scars, dipstick bilirubin +"
+        ],
+        [
+          "5:15",
+          "★ 'Mr Harding, I believe you have a condition called acute cholangitis. That means there is a bacterial infection in the tubes that drain bile from your liver. I'm saying that because you have the three things we look for together: a fever, yellow discolouration, and pain in the upper right side of your tummy. ★ I am also concerned about what is blocking those tubes and allowing the infection to build up. Given that you have lost weight without trying and your appetite has gone, I am worried this may be caused by a cancer — most likely in the pancreas, possibly in the bile ducts or the liver. I cannot tell which from examining you, and that is why you need scans. This is serious and you need to be in hospital today.' · [3 s silence] · 'I'm sorry to have to raise that — I want to be straight rather than have you find out later. It is not certain: it could be a stone left behind or a narrowing from your old operation. What is certain is that the infection needs treating today.' · DDx grouped: duct stone or post-operative stricture · pancreatitis (pain to the back) · viral/alcohol/drug hepatitis (nothing points there) · ulcer, reflux, heart, basal pneumonia"
+        ],
+        [
+          "6:45",
+          "★ Investigations in order: 'blood — cultures before we start antibiotics, FBC, kidney function, liver tests including clotting, inflammatory markers, and a lipase because the pancreas sits next to the bile duct. Scans — an ultrasound of the upper abdomen first, because the first question is whether the drainage tubes are swollen and whether there is a stone or a mass; then depending on that a CT, an MRCP to map the tubes, and then ERCP — a camera passed down to the drainage opening, which lets us both look and relieve the blockage.' · 'into hospital now; fluids through a drip; IV antibiotics straight after the cultures; surgical and gastroenterology teams today about draining the blockage' · ★ escalation: 'tell the nurses immediately if you feel faint, confused, or the shivering gets worse — the infection spreading into the bloodstream' · summary; 'how long will I be in?'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Does the pain go through to your back?' / ★ 'Is it related to eating, and does any particular food bring it on?' / ★ 'Can you describe the colour of your urine — is it dark throughout the stream? Have your stools gone pale?' / ★ 'How much weight, over what period, and was any of it intentional?'",
+        "★ 'Have you had any operations, particularly on your abdomen?' / ★ 'And have you had any fever or shaking chills? Did you measure your temperature at home?'",
+        "★ To examiner: '…surgical scars … masses, specifically hepatomegaly and splenomegaly, and is the liver edge tender … percussion for shifting dullness … urine dipstick for bilirubin, blood and protein.'",
+        "★ 'Mr Harding, I believe you have a condition called acute cholangitis. That means there is a bacterial infection in the tubes that drain bile from your liver. I am saying that because you have the three things we look for together: a fever, yellow discolouration, and pain in the upper right side of your tummy.' / ★ 'I am also concerned about what is blocking those tubes and allowing the infection to build up. Given that you have lost weight without trying and your appetite has gone, I am worried this may be caused by a cancer — most likely in the pancreas, possibly in the bile ducts or the liver. I cannot tell which from examining you, and that is why you need scans.'",
+        "★ 'I would start with an ultrasound, because the first question is whether the tubes are swollen.' / ★ 'ERCP lets us both look and relieve the blockage.' / 'Cultures before antibiotics.' / ★ 'Tell the nurses straight away if you feel faint or confused, or the shivering worsens.'",
+        "Version A (afebrile, 50 F, father with colon cancer): 'You have what we call obstructive jaundice. Something is blocking the tubes that drain bile from your liver, which is why your skin and eyes are yellow, your urine is dark and your stools are pale. Three reasons: that combination of findings; the six kilos you have lost without trying; and your father's bowel cancer. I am worried the blockage may be caused by a cancer — most likely the pancreas, possibly the bile ducts or the liver. I cannot tell which without a scan, and I want that urgently. You do not have a fever, which reassures me there is no infection in the tubes at the moment.'",
+        "Examiner challenges: 'post-cholecystectomy syndrome?' → 'a description, not a cause — surgical stricture, a retained or new duct stone, or a new obstructing tumour; with unintentional weight loss and anorexia I am most concerned about the third.' / 'no gallbladder, so cholangiocarcinoma is out?' → 'No — cholecystectomy excludes gallbladder carcinoma; cholangiocarcinoma arises from the bile-duct epithelium, which remains. It stays on my list with carcinoma of the head of the pancreas and a hepatic lesion.' / 'antibiotics and review?' → 'antibiotics alone do not treat an obstructed, infected biliary system — the pressure keeps driving bacteria into the bloodstream; the duct must be decompressed, usually by ERCP, and usually early. Antibiotics buy time; drainage is the treatment.' / antibiotics by name → 'IV empirical Gram-negative and anaerobic biliary cover per Therapeutic Guidelines after cultures, adjusted for renal function and local resistance — and drainage.'"
+      ],
+      "pefe": [
+        "Role-player: Colin Harding, 66, retired electrician, married; four weeks of deep boring epigastric pain through to the back, worse after any food; two days hot and shivering (38-something at home) — gives fever ONLY when asked directly; wife says yellow; tea urine, pale stools, itch; 5–6 kg over 2 months unintentional, appetite gone, very tired; nausea; 2 beers/wk; cholecystectomy 8 y (only to a surgical question); no fatty-meal pain; no FHx. Stoic, tired; suspects cancer from reading online — silent 3 s when named, then 'how long have I got?'; if never named, at ~7 min 'is this cancer?'. If you say 'cancer' and never 'cholangitis' → fail behaviour",
+        "PEFE: jaundiced, unwell, T 38.5, HR 104, BP 128/76 · RUQ tenderness, no guarding/rebound · liver 2 cm below costal margin, mildly tender · no splenomegaly · no shifting dullness · cholecystectomy scars · dipstick bilirubin +. Courvoisier (palpable non-tender gallbladder) not elicitable after cholecystectomy",
+        "Charcot's triad → Reynolds' pentad (+ hypotension, altered mental state). Malignant obstruction clues: painless or dull persistent jaundice, weight loss, anorexia, age, pain to the back (pancreatic head), new-onset diabetes, Courvoisier. Investigations: cultures, FBE, UEC, LFT (obstructive: bilirubin, ALP, GGT ↑↑, ALT mild), coags/INR (vitamin K), CRP, lipase, lactate; USS → CT pancreas protocol/MRCP → ERCP with stent/brush cytology; CA19-9 (not diagnostic); EUS-guided biopsy; staging CT; MDT. Management: sepsis bundle, IV antibiotics within 1 h (e.g. amoxicillin + gentamicin ± metronidazole, or piperacillin-tazobactam VERIFY TG), fluids, analgesia, vitamin K if INR up, biliary decompression within 24 h (earlier if severe), then oncological pathway — Whipple if resectable (~20%), stenting/chemotherapy if not; palliative care involvement; Cancer Council 13 11 20",
+        "Version A findings: normal temperature; 6 kg loss over a few months; father colon cancer; obstructive jaundice → urgent USS/CT, LFT/coags/CA19-9, referral within days; no antibiotics needed without fever; safety-net for fever/rigors (cholangitis) · SA: MedSTAR 1300 13 12 33 · TIS 131 450"
+      ],
+      "fails": [
+        "★ Never asking about fever/rigors — 'cancer' with no cholangitis; or 'cholangitis' with no cause sought",
+        "Accepting 'dark urine' without asking pale stools; not quantifying weight loss or asking intent; missing the cholecystectomy",
+        "'Abdominal examination' without naming scars, hepatomegaly/splenomegaly, shifting dullness, dipstick bilirubin",
+        "'You have cancer' as certainty; or softening until the concern is never named; no pause",
+        "Antibiotics without cultures first; CT/MRCP before ultrasound; no ERCP/drainage; no escalation criteria; not admitting today"
+      ],
+      "numbers": [
+        "History 4 min · vitals 128/76 · 104 · 20 · 38.5 · Charcot's triad / Reynolds' pentad · liver 2 cm mildly tender · 5–6 kg over 2 mo · cholecystectomy 8 y",
+        "Cultures → antibiotics within 1 h VERIFY · USS → CT/MRCP → ERCP within 24 h · obstructive LFTs: bili, ALP, GGT ↑↑ · INR/vit K · CA19-9 not diagnostic · resectable ~20%",
+        "MedSTAR 1300 13 12 33 · Cancer Council 13 11 20 · TIS 131 450"
+      ]
+    },
+    "source": "Obstructive_Jaundice_Cholangitis_2_Case_Tasks_Script_Notability.pdf (Colin Harding, 66, a month of epigastric pain to the back with jaundice, weight loss and two days of rigors — cholangitis on malignant obstruction; Version A afebrile folded in)"
+  },
+  {
+    "id": "MED-149",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "General practice. THIRD-PARTY history from the husband — the patient is not in the room (do not ask the examiner for her vitals) and consent is given in the stem (acknowledge in one sentence, move on). Six-minute history, then diagnosis and differentials with reasons. The single behaviour that separates pass from fail: re-asking about alcohol despite the stem saying she stopped.",
+    "stem": [
+      "Mrs Margaret Doyle, 72, not present, was diagnosed with alcohol-related cirrhosis two years ago and has not consumed alcohol since. Her husband, Brian, has come because he has observed memory and behaviour change; she refused to attend. He has authority to discuss her care."
+    ],
+    "tasks": [
+      "Take a focused history from the husband (6 minutes)",
+      "Explain the likely diagnosis and the differentials, with your reasons"
+    ],
+    "time": "8 min. 'Am I speaking with Mr Doyle? I understand you have your wife's authority to discuss her care, thank you. How can I help?' → ★ 'I'm so sorry to hear that, and I can hear how worrying it has been. Can I ask a few questions to understand the situation?' · ★ 'what exactly do you mean — doesn't remember things, doesn't recognise you, or behaving oddly?' · onset, constant/intermittent, worse, better/worse · ★ four cirrhosis questions: treatment, ★ taking it as prescribed, follow-up GP/specialist (stopped a year ago) · complications in order — decompensation: jaundice, itch, bruising (yes), tiredness · ★ encephalopathy: sleep reversal (yes), weakness/numbness, balance/walking, vision · SBP/cancer/kidney/lung/bleeding: abdominal pain, N/V, fever, diarrhoea; weight/appetite/lumps; ★ urine output; SOB/cough; haematemesis/melaena → ★ 'her tummy has got bigger' (ascites — offered casually; collect it) · ★ six triggers: 'I know the notes say she stopped — can I just confirm, is she drinking any alcohol at all at the moment?' → beer cans hidden → 'thank you — that took some courage' · new medications, recent illness, ★ constipation (yes), vomiting/diarrhoea/dehydration, (bleeding already asked) · geriatric 30 s: falls, support, diet, ADLs, mood · dx hepatic encephalopathy, plain English, the trigger, ★ DDx in two named groups — cirrhosis complications first, then causes of confusion in an older person · 'is she losing her mind?' → treatable, reversible, not dementia · plan; 'she won't come' → home visit, community nursing, 'you're not doing this alone'.",
+    "back": {
+      "dx": "Hepatic encephalopathy precipitated by a return to alcohol (beer cans hidden in the cupboard) and constipation — a few weeks of fluctuating, worsening forgetfulness (glasses, whether she's eaten; recognises him), day–night sleep reversal, intermittent confusion, in a woman with alcohol-related cirrhosis who has stopped specialist follow-up and may not be taking her tablets; also easy bruising, an enlarging abdomen (ascites), poor intake; no fever, no jaundice, no bleeding, no oliguria. Two differential groups: (1) other cirrhosis complications — spontaneous bacterial peritonitis, hepatocellular carcinoma, hepatorenal and hepatopulmonary syndromes, variceal bleeding; (2) other causes of confusion in an older person — infection (chest/urine), medications/withdrawal, intracranial (subdural after a fall, stroke, tumour), dementia (Alzheimer's, Lewy body), electrolytes/glucose. Usually treatable and often reversible once the trigger is corrected: lactulose, assessment (bloods, abdominal examination, ascitic tap to exclude SBP), alcohol support.",
+      "plan": [
+        [
+          "0:00",
+          "'Good morning, I'm Dr —. Am I speaking with Mr Doyle? I understand you have your wife's authority to discuss her care, thank you. How can I help you today?' → 'cirrhosis two years ago; acting strangely, memory problems, very worried' → ★ 'I'm so sorry to hear that, and I can hear how worrying it has been. Can I ask you a few questions so I can understand the situation better and work out what's going on?'"
+        ],
+        [
+          "0:40",
+          "★ 'You've told me memory problems and strange behaviour — can you describe exactly what you mean? Is it that she doesn't remember things, or doesn't recognise you, or is behaving oddly?' → forgets glasses/meals, knows him; sleepy all day, up wandering at night · 'when did it start? constant or comes and goes? gradually worse? anything better or worse?' → few weeks, fluctuating, worse"
+        ],
+        [
+          "1:40",
+          "★ 'I know she was diagnosed two years ago — what treatment is she on? is she taking it as prescribed? regular follow-up with her GP and specialist?' → tablets (can't name), not sure she takes them, stopped the specialist a year ago"
+        ],
+        [
+          "2:20",
+          "Complications: 'any yellowing of skin or eyes? itching? bruising? unusually tired?' (bruises easily) · ★ 'how is her sleep — sleeping in the day and awake at night? any weakness or numbness? balance, walking normally? vision?' · 'abdominal pain? nausea/vomiting? fever or chills? diarrhoea?' (no fever… ★ 'her tummy has got quite a bit bigger') → 'thank you, that's helpful' (collect it — ascites) · 'lost weight or appetite? lumps?' (eats very little) · ★ 'any decrease in the amount of urine she passes?' · 'breathlessness or cough?' · 'vomited blood, black or bloody stools?' → no"
+        ],
+        [
+          "4:00",
+          "★ Six triggers — alcohol first: 'I'd like to ask about things that can tip someone with liver disease into becoming unwell. I know from the notes that she stopped drinking when she was diagnosed. Can I just confirm with you — as far as you're aware, is she drinking any alcohol at all at the moment?' → 'I think she might be — I found a few cans of beer in the cupboard, I think she's hiding it' → ★ 'thank you for telling me. That took some courage, and it's genuinely important.' · 'any new medications recently? any recent illness or flu-like symptoms? ★ has she been constipated? any vomiting, diarrhoea or trouble keeping fluids down?' → constipated, yes"
+        ],
+        [
+          "5:15",
+          "Geriatric, 30 s: falls (no), support at home (just him), diet (very little), ADLs (he helps more), mood (low) · summarise"
+        ],
+        [
+          "6:00",
+          "★ 'Most likely your wife has a condition called hepatic encephalopathy. It's a complication of cirrhosis, which means liver failure. The liver can no longer clear certain toxins out of the blood, and those toxins affect the brain — that's what is causing the memory problems, the confusion and the changes in her sleep and behaviour.' · 'is that permanent? is she losing her mind?' → ★ 'I understand why you'd fear that. This is usually treatable and often reversible once we find and correct what has triggered it. It is not the same thing as dementia, although that's one of the things I'll want to rule out.' · ★ trigger: 'from what you've told me about the beer cans, the most likely trigger is that she has started drinking again — a liver in her condition simply cannot process alcohol. Her constipation may also be contributing, which is why one of the treatments is a laxative.'"
+        ],
+        [
+          "7:00",
+          "★ DDx in two named groups: 'First, other complications of her cirrhosis: an infection in the fluid in her abdomen — spontaneous bacterial peritonitis; a cancer in the liver, commoner with cirrhosis; and conditions where the liver disease affects the kidneys or the lungs; bleeding from swollen veins. Second, the other causes of confusion in an older person: any infection such as chest or urine; medications or withdrawal; a bleed inside the head after a fall, a stroke or a tumour; early dementia — Alzheimer's or Lewy body; and problems with salts or blood sugar.' · plan: she needs to be seen — bloods (LFT, INR, UEC, ammonia not needed, FBE, glucose, cultures), abdominal examination, ascitic tap if fluid to exclude SBP; start lactulose; review medicines; alcohol support · 'she won't come — what do I do?' → ★ 'let's work on that together — a home visit, community nursing; if she becomes drowsy or very confused, ring an ambulance. You are not doing this alone.' — carer support · summary, questions"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'I understand you have your wife's authority to discuss her care, thank you.' / ★ 'I am so sorry to hear that, and I can hear how worrying it has been. Can I ask you a few questions so I can understand the situation better?' / ★ 'Can you describe exactly what you mean by that?'",
+        "★ 'How is her sleep — is she sleeping in the day and awake at night?' / ★ 'Is she taking her medication as prescribed?' / ★ 'Have you noticed any decrease in the amount of urine she passes?'",
+        "★ 'I know the notes say she stopped drinking. Can I just confirm — is she drinking any alcohol at all at the moment?' → ★ 'Thank you for telling me. That took some courage.' / ★ 'Has she been constipated?'",
+        "★ 'The liver can no longer clear certain toxins from the blood, and those toxins affect the brain.' / ★ 'This is usually treatable, and often reversible, once we correct what has triggered it.' / ★ 'I considered other complications of her cirrhosis first, and then the other causes of confusion.' / ★ 'You are not doing this alone.'",
+        "'She will not come. What do I do?' → 'Let us work on that together — a home visit is an option, and I can also arrange community nursing support. If she becomes drowsy or very confused, please ring an ambulance.'"
+      ],
+      "pefe": [
+        "Role-player: Brian Doyle, 74, retired carpenter; wife Margaret 72, alcohol-related cirrhosis 2 y; anxious, tired, quietly devoted; exhausted caring alone. Never volunteers the beer cans — only to a direct alcohol question ('the notes say she stopped, so I won't ask' → silence). Volunteers the bigger tummy casually mid-answer. ~6 min voice cracks: 'is she losing her mind, doctor?'; end: 'she won't come in — what do I do?'. If asked for her BP/pulse: 'she is not here, doctor'",
+        "No examination. Findings by proxy: fluctuating forgetfulness with intact recognition, sleep reversal, intermittent confusion, easy bruising, abdominal distension (ascites), constipation, poor intake, low mood, no falls; non-adherence, lost to follow-up; hidden alcohol",
+        "Hepatic encephalopathy: West Haven grades 1–4 (sleep reversal/subtle → lethargy/disorientation → somnolence/confusion → coma); asterixis, fetor; ammonia not required for diagnosis. Six precipitants: alcohol, infection (SBP, UTI, chest), medications (sedatives, opioids, diuretics), constipation, GI bleeding, dehydration/electrolytes (also hypokalaemia, TIPS, HCC). Treatment: identify/treat the trigger; lactulose titrated to 2–3 soft stools/day; rifaximin for recurrence VERIFY; avoid sedatives; nutrition (don't restrict protein); thiamine. SBP: ascitic neutrophils ≥250/mm³ → IV ceftriaxone VERIFY, albumin, prophylaxis. HCC surveillance 6-monthly USS ± AFP. Standard drink 10 g; NHMRC ≤10/week. Cirrhosis follow-up: 6-monthly, varices screening, vaccinations",
+        "Version B (45 M, leg swelling, bruising, restarted wine five glasses/day six months, enlarging abdomen; card: fever, jaundice, ascites, non-tender hepatomegaly, parotid enlargement; results: low albumin, low platelets, raised INR, low Hb, raised WCC/neutrophils) = MED-150 · Carer support: Carer Gateway 1800 422 737 · DASSA/ADIS 1300 13 1340 · Country Health Connect · TIS 131 450"
+      ],
+      "fails": [
+        "Asking the examiner for the patient's vitals; spending time establishing consent",
+        "Accepting 'memory problems' without asking what he means; no sleep-reversal question",
+        "★ Not re-asking about alcohol because the stem says she stopped; missing constipation; not using the abdominal distension as ascites in the reasoning",
+        "Leading the differential with dementia; a flat list without the two named groups",
+        "Not answering 'is she losing her mind?' with treatability/reversibility; no plan for a patient who refuses to attend; no carer support"
+      ],
+      "numbers": [
+        "History 6 min · six triggers: alcohol · infection · medications · constipation · bleeding · dehydration · lactulose to 2–3 soft stools/day · SBP ascitic PMN ≥250/mm³",
+        "Encephalopathy order: sleep reversal → memory → confusion → slurred speech/ataxia → coma · standard drink 10 g · NHMRC ≤10/wk · HCC surveillance 6-monthly USS",
+        "Carer Gateway 1800 422 737 · ADIS 1300 13 1340 · MedSTAR 1300 13 12 33 · TIS 131 450"
+      ]
+    },
+    "source": "Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf Version A (Brian Doyle, 74, third-party history of his wife's confusion and sleep reversal two years after alcohol cirrhosis — hepatic encephalopathy from hidden drinking and constipation)"
+  },
+  {
+    "id": "MED-150",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "General practice/ED. Version B of the chronic liver disease document (reconstructed stem). Four-minute history, examination findings on a card, then explain the results and the diagnosis. The opening statement hands you three findings in one sentence — acknowledge all three aloud before questioning. Four reasons for SBP; confirm with an ascitic tap.",
+    "stem": [
+      "A 45-year-old man presents with bruising and swelling of his legs. 'I started drinking again about six months ago — about five glasses of wine a day. And my tummy is getting bigger.' Results: albumin low · platelets low · INR raised · haemoglobin low · WCC raised with neutrophilia."
+    ],
+    "tasks": [
+      "Take a focused history (4 minutes)",
+      "Interpret the examination findings card",
+      "Explain the results and your diagnosis"
+    ],
+    "time": "8 min. Intro, open → three findings → ★ 'thank you — so there are three things there I want to come back to: the bruising and swelling, the drinking, and the tummy getting bigger' · leg swelling: how long, worse, one/both, how far up, better lying down · bruising: how long, ★ 'only when you knock yourself, or with no injury at all?' (spontaneous = severity) · the same five boxes: cirrhosis known? treatment/adherence/follow-up · decompensation: jaundice, itch, tiredness · encephalopathy: sleep reversal, confusion, tremor · SBP/cancer/kidney/lung/bleeding: abdominal pain, N/V, ★ fever/chills, diarrhoea, weight/appetite, urine output, SOB, haematemesis/melaena · ★ alcohol quantified (5 glasses/day ≈ 50/week for 6 months; previous history), withdrawal symptoms, other triggers (drugs, illness, constipation) · risk factors (viral, IVDU), meds (NSAIDs, paracetamol) · social · card: fever, jaundice, ascites/shifting dullness, non-tender hepatomegaly, parotid enlargement → interpret (non-tender = chronic alcoholic enlargement; parotids = chronic alcohol) · results in plain words, then dx SBP with four reasons → ascitic tap.",
+    "back": {
+      "dx": "Spontaneous bacterial peritonitis on decompensated alcohol-related cirrhosis — six months back on ~5 glasses of wine a day (≈50 SD/week), new leg oedema, spontaneous bruising, enlarging abdomen; card: fever, jaundice, ascites (shifting dullness), non-tender hepatomegaly (chronic alcoholic enlargement, not acute inflammation/congestion), parotid enlargement (chronic alcohol use); bloods: low albumin (synthetic failure), low platelets (hypersplenism/marrow), raised INR (clotting factor failure → bruising), low Hb, raised WCC with neutrophilia (bacterial infection). Four reasons: fever; neutrophilia; ascites; a clear reason for decompensation — alcohol. Confirm with a diagnostic ascitic tap (PMN ≥250/mm³, culture); admit, IV antibiotics (ceftriaxone VERIFY), albumin, thiamine, withdrawal management, diuretics/salt restriction once stable, alcohol support.",
+      "plan": [
+        [
+          "0:00",
+          "Intro, open → 'bruising and swelling in my legs; started drinking again six months ago, five glasses a day; tummy getting bigger' → ★ 'thank you — so there are three things there I want to come back to'"
+        ],
+        [
+          "0:40",
+          "Swelling: how long, worse, one or both legs, how far up, better lying down, other triggers · ★ bruising: how long, 'only when you knock yourself, or with no injury at all?' (spontaneous), gums/nosebleeds"
+        ],
+        [
+          "1:30",
+          "Liver: known cirrhosis? treatment, adherence, follow-up · jaundice, itch, tiredness · sleep reversal, confusion, tremor · ★ abdominal pain, N/V, ★ fever/chills, diarrhoea · weight/appetite, lumps · urine output · SOB/cough · haematemesis/melaena"
+        ],
+        [
+          "2:45",
+          "★ Alcohol: what, how much, how many days, since when, previous pattern and abstinence, withdrawal symptoms in the morning (shakes, sweats), seizures ever; why restarted; other drugs · viral risk (transfusion, tattoos, IVDU), medications incl paracetamol/NSAIDs/herbal · social: who's at home, work, driving, mood · summarise"
+        ],
+        [
+          "4:00",
+          "★ Card: 'fever, jaundice, shifting dullness — ascites, non-tender hepatomegaly, parotid enlargement' → 'the liver is enlarged but not tender, which fits chronic alcoholic enlargement rather than acute inflammation or congestion; parotid enlargement reflects chronic alcohol use rather than the liver disease itself; the fever with ascites is what concerns me most'"
+        ],
+        [
+          "5:00",
+          "★ Results in plain words: 'as you know, you have cirrhosis — the tissue of your liver has been damaged by long-term alcohol. Albumin is the main protein your liver makes and it's low — your liver isn't producing proteins properly. Platelets are tiny particles that help your blood clot, and they're low. Your liver has also stopped making the factors that clot your blood, so your blood takes longer to clot — that's what the INR shows, and it's why you're bruising. Haemoglobin, which carries oxygen, is low. More importantly, your white cells are raised, which means there's an infection somewhere, and the type — the neutrophils — points to a bacterial infection.'"
+        ],
+        [
+          "6:15",
+          "★ 'That brings me to what I think is going on. I'm suspecting spontaneous bacterial peritonitis — an infection in the fluid that has collected in your abdomen because your liver isn't working properly. Four reasons: you have a fever; your white cells and neutrophils are raised, pointing to a bacterial infection; on examination you have fluid in your abdomen; and you have a clear reason for your liver to have got worse — you've started drinking again. To confirm it we need to take a small sample of that fluid with a needle.' · plan: admit, ascitic tap (cell count, culture, protein), blood cultures, IV antibiotics, IV albumin, thiamine before glucose, monitor for withdrawal (CIWA, diazepam), correct K/Mg, avoid sedatives/NSAIDs, then salt restriction + spironolactone/frusemide, gastroscopy for varices, hepatology; alcohol — honest, non-judgemental, supported cessation; safety-net"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Thank you — so there are three things there I want to come back to.' / 'How long have you had the swelling, and is it getting worse? One leg or both? How far up does it come? Better when you lie down?' / ★ 'Does the bruising happen only when you knock yourself, or does it come up with no injury at all?'",
+        "'Any fever or chills? Any tummy pain? Any confusion, or sleeping in the day and awake at night? Any vomiting of blood or black stools? Any change in the amount of urine you pass?' / 'What do you drink, how much each day, and how many days a week — and how long had you been off it before?'",
+        "★ 'Albumin is the main protein your liver makes, and it is low — your liver is no longer producing proteins properly. Platelets are tiny particles that help your blood clot, and they are low. Your liver has also stopped making the factors that clot your blood, so your blood takes longer to clot — that is what the INR shows, and it is why you are bruising. Your white cells are raised, which means there is an infection somewhere, and the neutrophils point to a bacterial infection.'",
+        "★ 'I am suspecting spontaneous bacterial peritonitis — an infection in the fluid that has collected in your abdomen because your liver is not working properly. My reasons are: you have a fever; your white cells and neutrophils are raised; on examination you have fluid in your abdomen; and you have a clear reason for your liver to have got worse — you have started drinking again. To confirm it we need to take a small sample of that fluid with a needle.'",
+        "Examiner 'why is the liver non-tender?' → 'chronic alcoholic enlargement — fatty change and cirrhosis — rather than acute inflammation or congestion, which stretch the capsule and hurt.' / 'what do the parotids signify?' → 'chronic alcohol use — sialadenosis — not the liver disease itself.'"
+      ],
+      "pefe": [
+        "Role-player (reconstructed): 45 M; leg oedema and spontaneous bruising, abdomen enlarging; back on ~5 glasses of wine/day for 6 months; known cirrhosis presumed; volunteers the three findings in the opening line",
+        "Card: fever · jaundice · ascites/positive shifting dullness · hepatomegaly, non-tender · parotid enlargement. Bloods: albumin ↓, platelets ↓, INR ↑, Hb ↓, WCC ↑ with neutrophilia",
+        "SBP: diagnostic paracentesis — ascitic PMN ≥250/mm³ (culture often negative); treat IV ceftriaxone 2 g daily (or cefotaxime) 5 days VERIFY TG; IV albumin 1.5 g/kg day 1 and 1 g/kg day 3 reduces hepatorenal syndrome VERIFY; secondary prophylaxis (norfloxacin/trimethoprim-sulfamethoxazole) VERIFY; beware hepatorenal syndrome, encephalopathy, variceal bleeding. Other decompensation causes: alcoholic hepatitis (Maddrey's DF, prednisolone if severe VERIFY), GI bleed, HCC, portal vein thrombosis. Child-Pugh (bilirubin, albumin, INR, ascites, encephalopathy); MELD",
+        "Alcohol: 5 glasses/day ≈ 7 SD/day ≈ 50/week (NHMRC ≤10); withdrawal risk — thiamine 300 mg IV/IM before glucose VERIFY, diazepam per CIWA, seizures 6–48 h, DTs 48–96 h; never abrupt unsupported cessation at this level; DASSA/ADIS 1300 13 1340; driving/work; family",
+        "SA: admit — MedSTAR 1300 13 12 33 from a rural site if septic · hepatology (RAH/FMC) · TIS 131 450"
+      ],
+      "fails": [
+        "Not acknowledging the three findings in the opening line; running only a leg-swelling history",
+        "Not asking whether bruising is spontaneous; not asking fever/abdominal pain (the SBP questions)",
+        "Reading the card without interpreting non-tender hepatomegaly and parotid enlargement; reciting results without plain-English meaning",
+        "Naming 'decompensated cirrhosis' without the infection; no ascitic tap; no alcohol withdrawal plan/thiamine",
+        "Moralising about the drinking"
+      ],
+      "numbers": [
+        "History 4 min · 5 glasses/day ≈ 50 SD/wk · SBP PMN ≥250/mm³ · ceftriaxone 5 d VERIFY · albumin 1.5 g/kg d1, 1 g/kg d3 VERIFY",
+        "Thiamine 300 mg before glucose VERIFY · withdrawal seizures 6–48 h, DTs 48–96 h · Child-Pugh: bili, albumin, INR, ascites, encephalopathy · ADIS 1300 13 1340"
+      ]
+    },
+    "source": "Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf §6 Version B (45-year-old man back on wine with bruising, leg swelling, fever and ascites — spontaneous bacterial peritonitis; stem reconstructed)"
+  },
+  {
+    "id": "MED-151",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "General practice. Six-minute history (predominant), then diagnosis and differentials to the patient. She hands you street food at travel question F — the commonest failure is stopping there. 'That is very helpful and I will come back to it' — and finish G. An incomplete travel history fails the station even with the right diagnosis. Version B (AST/ALT 800, no travel — contact with an unwell toddler) folded in.",
+    "stem": [
+      "Mary Bennett, 40, presents with abdominal pain. Vital signs on request: BP 118/74 · HR 78 · RR 16 · T 36.9 · SpO2 99%."
+    ],
+    "tasks": [
+      "Take a focused history (6 minutes)",
+      "Explain your most likely diagnosis to the patient",
+      "Explain your differential diagnoses to the patient"
+    ],
+    "time": "8 min. 'Before I start, may I have her vital signs?' → stable · intro, permission, open → RUQ pain 3–4 d, husband says eyes yellow, back from Vietnam 2 wk → acknowledge, ★ finish the pain first: where, /10 (6), sharp/dull (dull), when, constant, worse, ★ radiation (shoulder/back — no), better/worse (fatty food worse) · ★ travel A–G signposted: where/how long (Vietnam + Cambodia, 3 wk, back 2 wk) · activities, bushwalking, bites · sick/animal contacts · drugs · tattoos/piercings/transfusions/procedures · ★ food and water (street food — 'very helpful, I'll come back to it') · ★ pre-travel GP/vaccines/malaria tablets (none) · GI screen: N/V, bloating, wind, D/C · ★ 'any fever or chills?' (none) · red flags: weight, appetite, lumps, tiredness, FHx bowel/liver/pancreas/stomach cancer · hepatitis cluster: yellow eyes, itch, dark urine, pale stools · fatty-meal pain before, ★ operations (cholecystectomy 6 y) · remaining: alcohol, antibiotics, occupation (teacher), sexual (condoms, contact overseas), NSAIDs, chest symptoms · stop at 6:00 · dx acute hepatitis, most likely hepatitis A, with reasons; 'settles on its own, not long-term' · grouped DDx incl why not cholangitis (no fever) · bloods, serology, USS, no alcohol, safety-net, ★ notification and contact vaccination.",
+    "back": {
+      "dx": "Acute hepatitis A (hepatocellular pattern) — 3–4 days of dull RUQ ache 6/10, worse with fatty food, jaundice noticed by her husband, itch, tea-coloured urine, pale stools, nausea, tiredness, no fever; three weeks in Vietnam/Cambodia eating street food, no pre-travel vaccination, home two weeks (incubation 2–6 weeks); no blood/sexual exposures; cholecystectomy six years ago (retained/new duct stone stays on the list). Differentials: hepatitis B/C (no exposures), cholangitis (no fever/rigors), choledocholithiasis/stricture, drug/alcohol hepatitis (none), pancreatic/biliary/liver cancer (no red flags), malaria/dengue (travel). Hidden agenda: neighbour's brother died of liver cancer.",
+      "plan": [
+        [
+          "0:00",
+          "'Before I start, may I have her vital signs?' → stable · 'I'm Dr —; am I speaking with Mary? is it all right if I ask some questions? how can I help?' → pain, yellow eyes, Vietnam → 'that sounds unsettling and I can see it's worried you — I'll ask a series of questions to work out the cause, then explain'"
+        ],
+        [
+          "0:45",
+          "★ Pain first: where (under the right ribs), /10 (6), sharp/dull (dull), when (3–4 d), constant, worse (same), ★ 'move anywhere — shoulder or through to the back?' (no), better/worse (fatty food worse)"
+        ],
+        [
+          "1:45",
+          "★ 'I'd like to ask about your trip in some detail, because it changes what I need to look for. A — where and how long? B — activities, bushwalking, insect or tick bites? C — contact with anyone unwell, or animals? D — any drugs while away? E — tattoos, piercings, transfusions, medical or dental procedures? F — food and water: street food, shellfish, untreated water? → street food → ★ 'that's very helpful and I'll come back to it' → G — did you see a GP before you left for vaccinations or malaria tablets?' (no)"
+        ],
+        [
+          "3:15",
+          "GI: nausea (yes), vomiting, bloating, wind, D/C · ★ 'any fever or chills?' (none) · red flags: weight loss, appetite (down), lumps, tiredness (yes), FHx cancer (none)"
+        ],
+        [
+          "4:00",
+          "Hepatitis cluster: ★ 'yellowing of the skin or whites of the eyes? itching? urine gone dark? stools gone pale?' (all yes) · 'ever had pain after a large fatty meal before? ★ any operations, particularly on the abdomen?' (gallbladder out 6 y)"
+        ],
+        [
+          "4:45",
+          "'I've already covered blood, piercings, food and travel — a few more: alcohol (2 glasses weekends), antibiotics in the last month or two (no), occupation (primary teacher), sexually active — condoms, any contact overseas? (married, none), anti-inflammatories, heartburn/chest pain/SOB/cough' · concerns ('could this be cancer?') · summarise · stop at 6:00"
+        ],
+        [
+          "6:00",
+          "★ 'Mary, most likely you have a condition called acute hepatitis, which means inflammation in your liver. The most likely cause is a virus called hepatitis A, which you catch from contaminated food or water — and you ate street food while you were away. The inflamed liver cannot clear a yellow pigment called bilirubin properly, and that's why your eyes have gone yellow, your urine dark and your stools pale. The good news is that hepatitis A almost always settles on its own over a few weeks and does not become a long-term liver problem.' · 'is my liver damaged for good?' → no carrier state; confirm it and check the liver is coping"
+        ],
+        [
+          "6:45",
+          "★ DDx grouped, ruled through: 'other hepatitis viruses B and C spread through blood or sex — no exposures; a serious bile-duct infection called cholangitis — almost always with fever and shaking chills, and you've had none; because your gallbladder is out I keep a stone or narrowing in the ducts in mind; some medications and heavy alcohol inflame the liver — neither applies; I always keep cancers of the pancreas, bile ducts and liver on the list, though no weight loss and no family history reassures me; and because you've travelled — malaria and dengue' · plan: LFTs, INR/coags, hepatitis A IgM (+ B/C serology), FBE, malaria films if febrile, USS today; no alcohol; avoid paracetamol excess; ★ safety-net: drowsy/confused, bruising/bleeding, can't keep fluids down, fever with rigors → straight back; ★ 'because hepatitis A spreads by food, I'll notify the health department and offer vaccination to your close contacts'; off work (food-handling/childcare exclusion) VERIFY; summary"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Before I start, may I have her vital signs?' / 'Does the pain move anywhere, to your shoulder or through to your back?' / ★ 'I would like to ask about your trip in detail, because it changes what I need to look for.' / ★ 'That is very helpful and I will come back to it.'",
+        "★ 'Did you see a GP before you left for vaccinations or malaria tablets?' / ★ 'And have you had any fever or shaking chills?' / ★ 'Have you noticed any yellowing of the whites of your eyes? Any itching? Has your urine gone dark? Have your stools gone pale?' / 'Have you ever had pain like this after a large fatty meal? Any operations, particularly on your abdomen?'",
+        "'I have already covered blood, piercings, food and travel, so I just need a few more: alcohol, recent antibiotics, your occupation, and a sexual history — do you use condoms, and was there any contact overseas?'",
+        "★ 'Most likely you have acute hepatitis, which means inflammation in your liver. The most likely cause is a virus called hepatitis A, which you catch from contaminated food or water — and you told me you ate street food while you were away. The inflamed liver cannot clear a yellow pigment called bilirubin properly, and that is why your eyes have gone yellow, your urine has gone dark and your stools have gone pale. Hepatitis A almost always settles on its own over a few weeks and does not become a long-term liver problem.'",
+        "★ 'I did think about other causes and ruled them through as I went … a serious infection of the bile ducts called cholangitis, but that almost always comes with fever and shaking chills, and you have had none.' / ★ 'Come back straight away if you become drowsy or confused, if you start bruising or bleeding easily, if you cannot keep fluids down, or if you develop a fever with shaking chills. Because hepatitis A is spread by food, I will need to notify the health department and offer vaccination to your close contacts.'",
+        "Version B (AST/ALT ~800, bilirubin up, ALP mildly up, no travel): 'I have your blood results and will go through them shortly — first, so they make sense, some questions.' / ★ 'Has anyone around you been unwell, particularly with vomiting, diarrhoea or yellowing? Do you have contact with young children, childcare or food handling?' → the neighbour's toddler with diarrhoea / to patient: 'two liver enzymes are very high — around twenty times what we expect — and the yellow pigment is raised; that tells me the liver cells themselves are inflamed rather than a blockage in the drainage tubes' / to examiner: 'a hepatocellular pattern — transaminases more than ten times the upper limit with only a mild alkaline phosphatase rise; given faecal–oral contact with an unwell toddler, acute hepatitis A.'"
+      ],
+      "pefe": [
+        "Role-player: Mary Bennett, 40, primary school teacher, married, two children; back two weeks from three weeks in Vietnam/Cambodia; 3–4 days of dull RUQ ache; husband says eyes yellow; 2 glasses of wine weekends; occasional paracetamol; cholecystectomy 6 y; monogamous, no contact overseas. Street food ONLY when asked about food/diet overseas; stays quiet if you stop the travel block early. Hidden: neighbour's brother died of liver cancer — only if asked concerns, else ~7 min 'could this be cancer?'; tearful only if 'cancer' is used without warning. Pushes once: 'will my liver recover?'",
+        "No examination in the standard station; vitals normal, afebrile. Version B stem gives AST/ALT ~800 (≈20× ULN), raised bilirubin, mildly raised ALP — hepatocellular",
+        "LFT patterns: AST/ALT normal ~<40/45; hepatocellular >8–10× ULN; mild 2–5× suggests alcohol/fatty liver; AST:ALT >2 favours alcohol; bilirubin normal <20 µmol/L; INR >1.5 with encephalopathy = acute liver failure. Hepatitis A: faecal–oral, incubation ~2–6 weeks, anti-HAV IgM diagnostic, self-limiting, no chronicity, rare fulminant (esp. with chronic liver disease); notifiable in SA (notify on clinical suspicion); contacts — HAV vaccine (or immunoglobulin within 2 weeks for high-risk) VERIFY; exclusion from work/school/food handling until 7 days after jaundice onset VERIFY; supportive care, no alcohol, rest; hepatitis B (anti-HBc IgM/HBsAg), C (RNA), E (travel), EBV/CMV in the differential",
+        "Travel A–G: A where/how long · B activities, bushwalking, bites · C sick/animal contacts · D drugs · E tattoos/piercings/transfusions/procedures · F food/water · G pre-travel GP/vaccines/malaria prophylaxis. Fever + travel → malaria films/antigen; dengue serology/NS1 · SA Communicable Disease Control Branch 1300 232 272 · MedSTAR 1300 13 12 33 (fulminant) · TIS 131 450"
+      ],
+      "fails": [
+        "Jumping to travel before characterising the pain (leaves the pain box unscored)",
+        "★ Stopping the travel history at street food — letters A–G incomplete fails the station even with the right diagnosis",
+        "Never asking fever explicitly — so cholangitis cannot be excluded aloud; missing the cholecystectomy",
+        "'Hepatocellular pattern' to the patient; 'definitely hepatitis A' before serology; 'cancer' without a warning shot",
+        "No notification/contact vaccination; no alcohol advice; no safety-net for liver failure; only asking 'have you travelled?' in Version B (missing the toddler contact)"
+      ],
+      "numbers": [
+        "History 6 min · vitals 118/74 · 78 · 36.9 · HAV incubation 2–6 wk · hepatocellular >8–10× ULN · mild 2–5× alcohol/fatty · AST:ALT >2 alcohol · bili <20 · INR >1.5 + encephalopathy = ALF",
+        "Notify SA CDCB 1300 232 272 · contacts vaccine (Ig within 2 wk if high risk) VERIFY · exclusion 7 d after jaundice VERIFY · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "Acute_Hepatitis_Jaundice_2_Case_Tasks_Script_Notability.pdf (Mary Bennett, 40, RUQ pain and jaundice two weeks after street food in Vietnam — acute hepatitis A with the full A–G travel history; Version B toddler-contact folded in)"
+  },
+  {
+    "id": "MED-152",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "Hospital/clinic. The news was already broken yesterday — this is a continuation. Do not open with 'how can I help you today?'. Budget: 2:00 what he understood, 3:00 colon cancer history, 3:00 plan — if still in history at 5:30, stop mid-block. The plan has four ordered steps and the single commonest failure is starting at step three (palliation) before confirming the source.",
+    "stem": [
+      "James Whitlock, 68, had colon cancer treated two years ago. His abdominal CT shows liver metastases; he was informed of the result yesterday."
+    ],
+    "tasks": [
+      "Identify what he understood yesterday",
+      "Take a further history (5 minutes for tasks 1 and 2 together)",
+      "Explain your management plan"
+    ],
+    "time": "8 min. ★ 'I've been through your file and I can see you were here yesterday — I imagine yesterday was a hard day. How are you feeling today?' · ★ 'can you tell me a little more about yesterday — what were you told?' → 'metastasis — what does that mean?' → ★ plain English: 'a cancer that started in one part of the body has spread to another; most likely the bowel cancer has spread to your liver' → ★ 'would you like anyone with you? how are you feeling right now? I understand this may be shocking — I wish I had better news' → water, tissues, silence → 'my team and I are here to support you' · history — ★ four cancer questions: when diagnosed (2 y), treatment (operation; told no chemo/RT), ★ follow-up (never went back — say it back without blame), complications · red flags: weight (6 kg), appetite, lumps, tiredness, cough, bone pain · liver: jaundice (eyes a bit yellow), itch, dark urine, pale stools · ★ 'do you have enough support at home?' (alone; daughter in Perth) · 5:00 plan ★ in order: (1) THE TEAM — oncologist, surgeon, cancer care nurse, psychologist, social worker (2) ★ CONFIRM THE SOURCE — biopsy ± liver MRI; 'it's important not to assume' (3) PALLIATIVE INTENT explained honestly — symptom control, chemotherapy/RT/surgery to control not cure; 'is that giving up?' → no (4) ★ ADVANCE CARE DIRECTIVE + substitute decision-maker while well; living alone → cancer care nurse, social worker, community palliative care · summary, questions.",
+    "back": {
+      "dx": "Stage IV colorectal cancer — liver metastases two years after resection with no adjuvant therapy and no surveillance (no follow-up, no CEA, no imaging since); six months of 6 kg weight loss, anorexia, fatigue, early jaundice and itch; lives alone, daughter in Perth. The communication task: explain 'metastasis' plainly, offer support, an empathic line, silence, and reassurance of care. The management task in order: multidisciplinary team → confirm the liver lesion is colorectal in origin (biopsy/MRI liver; CEA) before committing to palliation → palliative intent explained honestly (symptom control; systemic therapy to prolong and control, not cure; selected patients may be candidates for liver resection — the MDT decides) → advance care directive and substitute decision-maker now, plus practical supports for a man living alone.",
+      "plan": [
+        [
+          "0:00",
+          "★ 'Good morning, I'm Dr —, the doctor looking after you today. Am I speaking with James? I've been through your file and I can see you were here yesterday. I imagine yesterday was a hard day. How are you feeling today?' → 'not great, didn't sleep' → 'I'm sorry to hear that'"
+        ],
+        [
+          "0:30",
+          "★ 'Can you tell me a little more about yesterday — what were you told?' → 'something in my liver; they said metastasis — what does that actually mean?' → ★ 'Metastasis means a cancer that started in one part of the body has spread to another part. In your case I think it is most likely that the bowel cancer you were treated for has spread to your liver.' → [quiet] → ★ 'Before we go further, would you like anyone to be with you while we talk about this? How are you feeling right now? I understand this may be shocking news. I wish I had better news for you today.' [water, tissues, a few seconds] → ★ 'What I do want to say is that my team and I are here to support you, and we will provide the best care we can.'"
+        ],
+        [
+          "2:00",
+          "'Is it all right if I ask some questions? ★ When were you diagnosed with the bowel cancer? What treatment did you receive? Have you been having regular follow-up with your GP and your specialist?' → 2 y; operation, told no chemo/RT; ★ never went back → 'thank you for telling me — that's important, because follow-up is how we pick up any return early' (no blame; if gently asked why: 'felt well, hate hospitals — I suppose I should have')"
+        ],
+        [
+          "3:00",
+          "'Lost weight recently, change in appetite? lumps? unusual tiredness? any cough, or bone pain?' → 6 kg, poor, very tired; no cough/bone pain · 'yellowing of skin or eyes, itching, dark urine, pale stools?' → eyes a bit yellow, a bit itchy · pain, bowels, bleeding · ★ 'do you have enough support at home?' → alone; daughter in Perth · mood, sleep; who else knows"
+        ],
+        [
+          "5:00",
+          "★ Step 1 — the team: 'James, let me tell you how we're going to look after you. First, you will not be doing this alone. You'll be cared for by a team — myself, an oncologist who specialises in cancer treatment, a surgeon, a cancer care nurse, a psychologist and a social worker.'"
+        ],
+        [
+          "5:40",
+          "★ Step 2 — confirm the source: 'The first thing we need to do is be sure the lump in your liver has come from your bowel cancer. It's important not to assume. We may take a small sample using a needle passed through the skin, and arrange a special MRI scan of the liver to look more closely.' → 'could it be something else?' → 'most likely from the bowel cancer, so I don't want to raise your hopes — but it's important we confirm it, because a different cause would mean a different treatment'"
+        ],
+        [
+          "6:20",
+          "★ Step 3 — palliative intent: 'Once we know where it's come from, the aim of treatment is to control your symptoms and keep you as comfortable and as well as possible. We call that palliative care. That means good pain relief, medication for nausea if you need it, and sometimes chemotherapy, radiotherapy or an operation — used to control symptoms and slow things down rather than to cure the cancer.' → 'so chemo wouldn't cure it' → 'No, it would not. I'm sorry. Its purpose would be to slow things down and keep you feeling better for longer.' → 'is palliative care giving up?' → 'No — it's active care focused on you living as well as possible for as long as possible.'"
+        ],
+        [
+          "7:00",
+          "★ Step 4 — plan ahead: 'I'd also recommend we make an advance care directive — a document recording what treatment you would and wouldn't want — and that you choose someone as your substitute decision-maker in case there comes a time when you can't tell us yourself. Now, while you're well, is the right time.' · ★ 'You told me you live alone, so I'll also arrange a cancer care nurse and a social worker, and community palliative care support at home' — and offer to help contact his daughter · summary: 'the scan shows the cancer has most likely spread to your liver; we'll confirm where it's come from; a team will look after you; treatment will focus on keeping you comfortable; and we'll plan ahead together. Is there anything you'd like to ask me?'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'I have been through your file, and I imagine yesterday was a hard day. How are you feeling today?' / ★ 'Can you tell me a little more about yesterday — what were you told?' / ★ 'Metastasis means a cancer that started in one part of the body has spread to another part.'",
+        "★ 'Would you like anyone to be with you while we talk about this?' / ★ 'I am so sorry to have to give you this news. I wish I had better news today.' / 'Take a sip of water. Take your time.' / 'My team and I are here to support you, and we will provide the best care we can.'",
+        "★ 'Have you been having regular follow-up with your GP and your specialist?' / ★ 'Do you have enough support at home?'",
+        "★ 'You will be cared for by a team, and you will not be doing this alone.' / ★ 'First we need to be sure this has come from your bowel cancer.' / ★ 'The aim of treatment is to control your symptoms — we call that palliative care.' / ★ 'I would recommend an advance care directive and a substitute decision-maker.'",
+        "Version A (multiple lesions, no known cancer, Jenny — indigestion, iron deficiency, back pain): [turn the scan toward her] 'This is a slice through your liver. I can see a number of rounded areas that look different from the surrounding tissue, which suggests there are lumps or growths there. Jenny, unfortunately I do not have good news for you today. Would you like anyone to be with you?' → 'We usually see this picture when a cancer has spread to the liver — we call that metastasis. Based on your indigestion and the iron deficiency in your blood, which tells me you've been losing blood somewhere, the most likely source is a cancer in your bowel or your stomach. I'm also concerned your back pain may mean spread to the bones.' → gastroscopy + colonoscopy with biopsies, PET, bone scan, liver MRI/biopsy",
+        "Version D (incidental lesion, no cancer history — gallstones, liver lesion, diverticula): good news → concern → irrelevant finding: 'gallbladder — a few stones, none blocking the tubes, no inflammation; liver — a lump that looks darker than the surrounding tissue, with a few possible causes; bowel — small pouches called diverticula, not the cause of your pain and not inflamed.' → 'stones can cause short-lived pain — biliary colic — but this is your first episode and there's no inflammation, so I don't think that's the whole story. I'm concerned about the lump in your liver. It could be a cancer starting in the liver, or one that has spread there, but it could equally be benign — an adenoma, a cyst, an abscess or a haemangioma. I can't tell from this scan, and that's exactly why I want to investigate it.' → contrast MRI liver, ± biopsy, LFTs, AFP, colonoscopy + gastroscopy, chase lipase/amylase, FBE, CRP"
+      ],
+      "pefe": [
+        "Role-player: James Whitlock, 68, retired shearer, widowed, alone on a property outside town, daughter in Perth; ex-smoker; bowel cancer resected 2 y ago, told no chemo/RT, never returned for follow-up (felt well, hates hospitals); 6 kg loss, anorexia, fatigue; sister-in-law says eyes yellow; some itch. Flat, tired; asks 'what does metastasis mean?' early; quiet and looks down rather than crying — stays silent for seconds if no support/pause is offered; 'could it be something else?' (hopeful); 'will chemotherapy cure it?' (wants a straight answer); 'is palliative care giving up?' at ~6 min if the phrase is unexplained; defensive and closed if blamed for missing follow-up; at 7 min if never asked: 'doctor, I do live on my own, you know'. Hidden: frightened of dying alone; ashamed about follow-up",
+        "No examination task. Colorectal spread: liver > lung > nodes > peritoneum; bone less often. Markers: CEA (colorectal), AFP (HCC). Best lesion imaging: multiphase contrast MRI; staging PET-CT; bone scan if bone pain. Biopsy if it changes management (or if the primary is unknown). Selected patients with limited liver-only metastases may be candidates for resection/ablation with curative intent — the MDT decides; do not promise. Systemic therapy (FOLFOX/FOLFIRI ± biologics) for palliative control; symptom control; early palliative care improves quality of life",
+        "SA Advance Care Directive; substitute decision-maker; enduring power of attorney; SA Health palliative care services; Cancer Council SA 13 11 20; Country Health Connect; social work; PATS; My Aged Care; Lifeline 13 11 14 if distress; TIS 131 450. Explanation of a result ≤90 s. Iron deficiency (Version A): low Hb, MCV, MCH, MCHC, ferritin; anisocytosis = size, poikilocytosis = shape",
+        "Version C (single lesion with a bowel cancer history, two-minute history): four cancer questions plus a red-flag sweep only — no full pain history; the marks are in the explanation"
+      ],
+      "fails": [
+        "Opening with 'how can I help you today?'; skipping straight to history because 'he already knows' — losing the whole communication domain (no plain-English metastasis, no support offer, no empathic line, no silence, no reassurance)",
+        "Blaming him for missing follow-up; not saying the missed surveillance back and using it",
+        "Not asking about support at home; not addressing living alone in the plan",
+        "★ Starting the plan at palliation — assuming the source, skipping the team, never reaching advance care planning",
+        "Promising a cure from chemotherapy; using 'palliative care' without explaining it; giving a prognosis timeframe; no summary or invitation for questions"
+      ],
+      "numbers": [
+        "Tasks 1+2 in 5 min · plan 3 min · four steps: team → confirm source → palliative intent → advance care directive/SDM (+ supports for living alone)",
+        "Spread: liver, lung, nodes, peritoneum · CEA colorectal, AFP HCC · multiphase contrast MRI · PET for staging · bone scan if pain · result explanation ≤90 s",
+        "Cancer Council SA 13 11 20 · SA Advance Care Directive · Lifeline 13 11 14 · TIS 131 450"
+      ]
+    },
+    "source": "Liver_Lesions_on_CT_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 68, liver metastases two years after colon cancer resection told yesterday — what he understood, focused history, four-step management plan; Versions A, C, D folded in)"
+  },
+  {
+    "id": "MED-153",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "General practice. Four-minute history, PEFE from the examiner, diagnosis, differentials. The stem's 'sore throat two weeks ago' is designed to pull you to post-streptococcal glomerulonephritis. The question that decides the station is asked by 1:20: 'have your stools become pale?' — commit the branch aloud. Then: 'did you see a doctor, and were you given any antibiotics?' The antibiotic is the diagnosis.",
+    "stem": [
+      "Jenny Marsh, 45, presents with dark urine. She had a sore throat two weeks ago."
+    ],
+    "tasks": [
+      "Take a focused history (about 4 minutes)",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis to the patient",
+      "Explain your differential diagnoses"
+    ],
+    "time": "8 min. 'May I have her vital signs?' → stable · intro, permission, open · characterise the urine: ★ colour exactly (Coca-Cola, brown, dark yellow — 'strong tea'), ★ through the stream or start/end, blood/clots, smell, when, every time, worse · ★ by 1:20: 'along with the dark urine, have your stools become pale or clay-coloured?' → yes → ★ commit: 'dark urine with pale stools tells me this is very likely the liver or the drainage tubes rather than the kidneys — let me just check a few kidney questions: burning, fever, leg swelling, injury?' → none → 'I'll focus on the liver' · red flags: weight, appetite, lumps, tiredness, FHx cancer · ★ yellowing (eyes yes), itching (all over, worse at night) · risk factors ABP FIT NO SEX: alcohol (barely), ★ 'you mentioned a sore throat — did you see a doctor, and were you given any medication or antibiotics?' (Augmentin, finished a week ago), blood transfusions/piercings/tattoos, food/water, IVDU, travel, occupation, sexual · gallbladder: fatty-meal pain, operations · ★ fever/chills (none) · concerns (mother died of liver failure — transplant fear) · PEFE named: jaundice, scratch marks, cachexia, conscious level; vitals esp temperature; abdomen — symmetry, distension; tenderness ± guarding/rigidity/rebound; ★ hepatomegaly/splenomegaly; ★ shifting dullness; bowel sounds; ★ dipstick bilirubin, blood, protein → jaundiced, RUQ tenderness, enlarged liver, no spleen, no ascites, bilirubin +, blood −, protein − · dx drug-induced cholestatic hepatitis with three reasons · large liver list, small kidney list · stop and document the drug, bloods, USS, safety-net.",
+    "back": {
+      "dx": "Antibiotic-induced cholestatic hepatitis (amoxicillin–clavulanate) — four to five days of tea-coloured urine dark throughout the stream, pale stools, yellow sclerae and generalised itch worse at night, one week after finishing a course of Augmentin for a sore throat; no fever, no fatty-meal pain, no operations, no viral risk factors, barely drinks. PEFE: jaundiced, afebrile, RUQ tenderness without peritonism, tender enlarged liver, no splenomegaly, no ascites; dipstick bilirubin positive, blood and protein negative. Three reasons: the dark urine/pale stools/yellow eyes combination localises to liver/ducts; a well-known culprit drug with the right timing; a tender enlarged liver with bilirubinuria and no fever (cholangitis unlikely). Stop and document the drug (never again), LFTs/coags/hepatitis serology/USS, most recover fully over weeks; safety-net for fever with rigors, drowsiness/confusion, bruising/bleeding, deepening jaundice. Version A (32 F, stools normal, sore throat 3 days ago, no antibiotics, BP 152/94, dipstick blood + protein −) = IgA nephropathy — MED-154.",
+      "plan": [
+        [
+          "0:00",
+          "'May I have her vital signs?' → 124/78, 76, 14, 36.8 · 'I'm Dr —; am I speaking with Jenny? is it all right if I ask a few questions? how can I help?' → dark urine, worried → 'that would worry me too, and I'm glad you came in — I'll ask some questions, examine you, then explain'"
+        ],
+        [
+          "0:30",
+          "★ 'Can you describe the colour exactly — Coca-Cola, brown, or dark yellow? Does the change happen right through the stream, or only at the start or the end? Any actual blood or clots? Has the smell changed? When did it start, does it happen every time, is it getting worse?' → strong tea; all the way through; no blood/clots; smell same; 4–5 days, every time, darker"
+        ],
+        [
+          "1:20",
+          "★ 'Along with the dark urine, have your stools become pale or clay coloured?' → yes → ★ 'Thank you, that's important. Dark urine together with pale stools tells me this is very likely coming from your liver or the drainage tubes rather than your kidneys. Let me just check a few kidney questions first — any burning passing urine, any fever, any swelling of your legs, any injury to your tummy?' → none → 'Good. I'll focus on your liver now.'"
+        ],
+        [
+          "2:00",
+          "Red flags: weight loss, appetite, lumps, tiredness, FHx bowel/liver/pancreas cancer → none · ★ 'any yellowing of your skin or the whites of your eyes? any itching?' → eyes yellow; itching all over, worse at night"
+        ],
+        [
+          "2:40",
+          "★ Risk factors — ABP FIT NO SEX: 'do you drink alcohol, how much?' (barely) · ★ 'you mentioned a sore throat — did you see a doctor, and were you given any medication or antibiotics?' → Augmentin, finished about a week ago → 'thank you, very helpful' · blood transfusions, piercings, tattoos · street food/unusual water · injected drugs · travel · occupation (admin) · sexually active, condoms (married, monogamous) · 'ever had pain after a large fatty meal? any operations, particularly abdominal? ★ any fever or shaking chills?' → no, no, none · concerns → mother died of liver failure"
+        ],
+        [
+          "4:00",
+          "★ Examiner: 'general appearance — is she jaundiced, scratch marks, cachectic, level of consciousness · vital signs, particularly temperature · abdomen — inspection: moving symmetrically, distension; superficial and deep palpation — tenderness, and if so guarding, rigidity, rebound; masses, specifically ★ hepatomegaly or splenomegaly; percussion — ★ shifting dullness; auscultation · office test — ★ urine dipstick for bilirubin, and also blood and protein' → jaundiced, no cachexia, T 36.8, BP 124/78, RUQ tenderness without guarding/rebound, liver palpable and enlarged, no splenomegaly, no shifting dullness, dipstick bilirubin +, blood −, protein −"
+        ],
+        [
+          "5:15",
+          "★ 'Jenny, I think you have inflammation of your liver, and the most likely trigger is the antibiotic you took for your throat. Some antibiotics — and amoxicillin–clavulanate is the best known — can inflame the liver as a side effect and slow the flow of bile. When bile cannot drain, the yellow pigment backs up into your blood and spills into your urine, which is why your urine is dark; and because it is not reaching your bowel, your stools have gone pale. The itching comes from the same backing up. Three reasons: the combination of dark urine, pale stools and yellow eyes tells me the problem is in the liver or the bile ducts; you took an antibiotic well known for this, and the timing fits; and on examining you I found a tender enlarged liver and bilirubin in your urine, with no fever, which makes a serious duct infection unlikely.' · 'is my liver damaged permanently?' → uncommon but well recognised; most recover completely once the drug is stopped, though it can take several weeks; 'I'm stopping it now and recording it so you're never given it again' · the mother/transplant fear addressed"
+        ],
+        [
+          "6:45",
+          "★ Two lists: 'in the liver and bile ducts — viral hepatitis A, B and C; alcohol; autoimmune hepatitis; gallstones causing blockage, gallbladder inflammation, or a duct infection called cholangitis — unlikely with no fever; and cancers of the pancreas, bile ducts or liver, which I keep on the list although no weight loss and no family history. In the kidneys and bladder, which I checked briefly at the start — infection, stones, inflammation of the kidney filters, and cancer — all made unlikely by your normal stream, no burning or fever, and no blood on the dipstick.' · plan: stop + document (allergy/adverse reaction record; TGA report), LFTs (cholestatic: ALP/GGT/bilirubin ↑), INR, hepatitis serology, FBE, USS to exclude obstruction; avoid alcohol/paracetamol excess; itch — cholestyramine/antihistamine VERIFY · ★ safety-net: fever with rigors, drowsiness/confusion, bruising/bleeding, deepening jaundice → straight back · review with results · summary"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Can you describe the colour exactly — Coca-Cola, brown, or dark yellow?' / ★ 'Does the change happen right through the stream, or at the beginning or the end?' / ★ 'Along with the dark urine, have your stools become pale?' → ★ 'That tells me this is coming from the liver rather than the kidney.'",
+        "★ 'You mentioned a sore throat — did you see a doctor for that, and were you given any medication or antibiotics?' / ★ 'And have you had any fever or shaking chills?'",
+        "★ To examiner: 'Specifically, is there hepatomegaly or splenomegaly, and is there shifting dullness? … I would like a urine dipstick, looking for bilirubin, blood and protein.'",
+        "★ 'When bile cannot drain, the yellow pigment backs up into your blood and spills into your urine, which is why your urine is dark; and because it is not reaching your bowel, your stools have gone pale. The itching comes from the same backing up.' / ★ 'I am stopping that antibiotic and recording it so it is never given again.' / 'Most people recover completely once the drug is stopped, but it can take several weeks.'",
+        "★ 'Come back straight away if you get a fever with shaking chills, if you become drowsy or confused, if you start bruising or bleeding easily, or if the yellowing gets worse.' / examiner 'cholestasis or cholestatic hepatitis?' → 'the same process — drug-induced cholestatic hepatitis; I keep the jargon for you, not the patient.'"
+      ],
+      "pefe": [
+        "Role-player: Jenny Marsh, 45, administration officer, married, one teenager; 4–5 days of strong-tea urine, pale stools, yellow eyes, itch worse at night; sore throat 2 weeks ago → Augmentin, finished a week ago; rarely drinks; no exposures, operations, fatty-meal pain, fever, weight loss, FHx. Anxious but composed; relieved when told the liver usually recovers; 'sorry, what does that mean?' once to jargon. Pale stools ONLY when asked directly. Antibiotic ONLY to 'did you see a doctor / were you given medication or antibiotics' — 'when was the sore throat?' → 'about two weeks ago' and nothing more. Hidden: mother died of liver failure — 'is that going to happen to me? will I need a transplant?' if asked concerns or at ~7 min. Pushes once: 'will my liver recover?'",
+        "PEFE: jaundiced, no cachexia · T 36.8, BP 124/78 · RUQ tenderness, no guarding/rebound · liver palpable, enlarged · no splenomegaly · no shifting dullness · dipstick bilirubin +, blood −, protein −",
+        "Drug-induced liver injury: amoxicillin–clavulanate is the commonest cause in Australia (cholestatic/mixed, onset up to weeks after finishing); also flucloxacillin, dicloxacillin (cholestatic), erythromycin, statins, methotrexate, anti-TB drugs, herbal/supplements. Cholestatic LFTs: ALP/GGT ↑↑, bilirubin ↑, ALT mild; R-ratio (ALT/ULN ÷ ALP/ULN) <2 cholestatic, >5 hepatocellular VERIFY. Work-up: stop the drug, LFTs/INR, hepatitis A/B/C serology, EBV/CMV, autoimmune screen (ANA, SMA, AMA), USS for duct dilatation; refer if INR up, encephalopathy, bilirubin very high or not improving over weeks; document as adverse drug reaction (never re-challenge); TGA report. Dipstick three pads: blood, protein, bilirubin; urobilinogen alone is normal; bilirubin normal <20 µmol/L",
+        "Kidney branch (Version A): IgA nephropathy — visible haematuria 1–3 days after a URTI ('synpharyngitic'), normal complement; post-streptococcal GN 1–3 weeks after a throat/3–6 weeks after skin infection, low C3; visible haematuria >40 needs cancer exclusion regardless of a benign finding · SA: MedSTAR 1300 13 12 33 · TIS 131 450"
+      ],
+      "fails": [
+        "Not characterising the urine (colour, stream, clots, smell); ★ never asking pale stools, or asking late; not committing the branch aloud",
+        "★ Asking only 'when was the sore throat?' — collecting the wrong variable and chasing post-streptococcal GN",
+        "Not asking fever; a generic 'abdominal examination' without hepatomegaly, shifting dullness and the bilirubin pad",
+        "'Cholestasis' to the patient untranslated; no three reasons; not stopping and documenting the drug",
+        "No large liver list + small kidney list; no bloods/USS; no safety-net for liver failure; the mother's fear unaddressed"
+      ],
+      "numbers": [
+        "History 4 min · pale-stool question by 1:20 · Augmentin finished 1 wk ago · dipstick: bilirubin + / blood − / protein − · bilirubin normal <20 µmol/L",
+        "Culprits: amoxicillin–clavulanate, flucloxacillin, dicloxacillin · cholestatic: ALP/GGT ↑↑ · R-ratio <2 VERIFY · IgA nephropathy 1–3 d post-URTI · PSGN 1–3 wk throat / 3–6 wk skin, low C3 · visible haematuria >40 → exclude cancer",
+        "MedSTAR 1300 13 12 33 · TIS 131 450"
+      ]
+    },
+    "source": "Dark_Urine_Liver_or_Kidney_2_Case_Tasks_Script_Notability.pdf Version B (Jenny Marsh, 45, tea-coloured urine and pale stools a week after Augmentin for a sore throat — drug-induced cholestatic hepatitis)"
+  },
+  {
+    "id": "MED-154",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "General practice. Version A of the dark-urine document (reconstructed stem). Same opening and characterisation; the pale-stool answer flips to 'no' — commit the other way, cross-check jaundice/itch, then run the kidney blocks and change the examination request (ballot the kidneys, bladder, renal angle, blood pressure). The examiner will ask how you distinguish IgA nephropathy from post-streptococcal GN.",
+    "stem": [
+      "A 32-year-old woman presents with dark urine for a few days."
+    ],
+    "tasks": [
+      "Take a focused history (about 4 minutes)",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis to the patient",
+      "Explain your differential diagnoses"
+    ],
+    "time": "8 min. Vitals · intro, open · characterise: ★ colour (Coca-Cola), ★ stream (throughout), blood/clots, smell, when, every time · ★ 'have your stools become pale?' → no → ★ commit: 'because your stools are a normal colour, this is more likely your kidneys or bladder — let me check two things: any yellowing? itching?' → no → 'I'll focus on your kidneys' · kidney blocks: red flags (weight, appetite, lumps, tiredness, ★ FHx kidney/bladder cancer) · infection: fever, dysuria, frequency · stones: flank pain, previous stones, FHx · ★ 'any recent flu-like illness or sore throat — exactly when? any antibiotics for it? any swelling of your legs?' → sore throat 3 days ago, nearly gone, nothing taken · exercise (rhabdo), ★ medications (statins, rifampicin, NSAIDs), trauma · smoking (bladder cancer), occupation · periods (LMP — menstrual contamination), sexual · PEFE named: pallor, jaundice, ★ oedema; ★ BP; temperature; abdomen — distension, tenderness, masses, ★ ballot both kidneys, ★ palpate the bladder, ★ renal angle tenderness; bowel sounds; ★ dipstick blood/protein/bilirubin → no pallor/jaundice/oedema, BP 152/94, afebrile, abdomen soft, kidneys not ballotable, bladder not palpable, no renal angle tenderness, dipstick blood +, protein −, bilirubin − · dx IgA nephropathy with reasons (synpharyngitic timing, blood without protein, raised BP) · DDx: post-streptococcal GN (interval, low C3), UTI, stones, cancer, other GN, menstrual, exercise, drugs, rhabdo · plan: MSU, UEC, FBE, C3/C4, ASOT, ANA, urine ACR/microscopy (dysmorphic RBCs/casts), USS, BP recheck, nephrology.",
+    "back": {
+      "dx": "IgA nephropathy — Coca-Cola urine throughout the stream starting within a few days of a sore throat (synpharyngitic haematuria, 1–3 days after the URTI rather than 1–3 weeks), no pale stools, no jaundice, no itch, no dysuria/fever/flank pain; PEFE: no oedema, BP 152/94, kidneys not ballotable, bladder not palpable, no renal angle tenderness, dipstick blood positive, protein negative, bilirubin negative. Distinguish from post-streptococcal glomerulonephritis by the interval (1–3 weeks after throat, 3–6 weeks after skin) and complement (C3 low in PSGN, normal in IgA) — only renal biopsy is definitive. Work-up: urine microscopy (dysmorphic red cells, casts), ACR, MSU, UEC/eGFR, FBE, C3/C4, ASOT/anti-DNase B, ANA/ANCA, USS; recheck BP; nephrology referral; visible haematuria over 40 (or with risk factors) needs urological cancer exclusion regardless.",
+      "plan": [
+        [
+          "0:00",
+          "Vitals (BP 152/94 may be given) · intro, permission, open"
+        ],
+        [
+          "0:30",
+          "★ Characterise: colour exactly (Coca-Cola/brown), through the stream or start/end (throughout), blood/clots, smell, when (few days), every time, worse"
+        ],
+        [
+          "1:20",
+          "★ 'Have your stools become pale or clay coloured?' → 'no, completely normal' → ★ 'Thank you. Because your stools are a normal colour, this is more likely coming from your kidneys or bladder. I'll check two things to be sure — any yellowing of your skin or eyes, any itching?' → no → 'I'll focus on your kidneys.'"
+        ],
+        [
+          "2:00",
+          "Kidney blocks: weight loss, appetite, lumps, tiredness, ★ FHx kidney/bladder cancer or kidney disease · fever, burning/pain passing urine, frequency · flank/tummy pain, previous stones, FHx stones · ★ 'any recent flu-like illness or sore throat — and exactly when? did you take any antibiotics for it? any swelling of your legs or puffiness around the eyes?' → sore throat 3 days ago, nearly gone; nothing taken; no swelling · heavy exercise recently · ★ medications — cholesterol tablets, anti-inflammatories, rifampicin, anticoagulants · injury to tummy/back · smoking, occupation (dyes/rubber) · LMP — could it be menstrual? · sexual history · concerns"
+        ],
+        [
+          "4:00",
+          "★ Examiner: 'general appearance — pale, jaundiced, any oedema (legs, periorbital) · vital signs, particularly temperature and ★ blood pressure · abdomen — inspection for distension; superficial and deep palpation for tenderness and masses; specifically ★ ballot both kidneys and palpate the bladder; ★ renal angle tenderness; auscultation · office test — urine dipstick for blood, protein and bilirubin' → no pallor/jaundice/oedema; BP 152/94; afebrile; abdomen soft, non-tender, no masses; kidneys not ballotable; bladder not palpable; no renal angle tenderness; dipstick blood +, protein −, bilirubin −"
+        ],
+        [
+          "5:15",
+          "★ 'I think the blood in your urine is coming from the filters in your kidneys. After an infection like your sore throat, the immune system makes particles called antibodies, and in some people those antibodies settle in the kidney filters and cause inflammation. That lets blood leak into the urine, which is why it looks like Coca-Cola. The condition is called IgA nephropathy. I'm saying this because your dark urine started within a few days of the throat infection rather than two or three weeks later, your dipstick shows blood without protein, and your blood pressure is up, which fits inflammation in the kidney.' · honest: 'the test that confirms it is a kidney biopsy — the specialist decides whether that's needed; many people have mild disease, some need long-term follow-up for blood pressure and kidney function'"
+        ],
+        [
+          "6:30",
+          "★ DDx: 'a similar inflammation that follows a strep throat by two or three weeks — post-streptococcal glomerulonephritis; a urine infection — no burning, no fever; a kidney stone — no pain; other kidney inflammations (lupus, vasculitis); cancer of the kidney or bladder — unlikely at 32 without smoking, but visible blood always gets checked; blood from a period; strenuous exercise or muscle breakdown; medications that colour the urine' · plan: urine microscopy for dysmorphic red cells and casts, protein:creatinine ratio, MSU culture, bloods — UEC/eGFR, FBE, C3/C4, ASOT/anti-DNase B, ANA/ANCA, ± hepatitis/HIV; renal ultrasound; recheck BP; nephrology referral; avoid NSAIDs; ★ safety-net: swelling, breathlessness, reduced urine, headache/very high BP, blood clots → urgent review; follow-up 1 week"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Have your stools become pale or clay coloured?' → ★ 'Because your stools are a normal colour, this is more likely coming from your kidneys or bladder. I will check two things to be sure — any yellowing of your skin or eyes, any itching?'",
+        "★ 'Have you had any recent flu-like illness or sore throat, and exactly when? Did you take any antibiotics for it? Any swelling of your legs or puffiness around your eyes?' / 'Any unusually heavy exercise recently? Any medications, particularly cholesterol tablets or anti-inflammatories? Could this be related to your period?'",
+        "★ To examiner: 'Is there any oedema? Blood pressure? … specifically I would like to ballot both kidneys and palpate the bladder; then renal angle tenderness … urine dipstick for blood, protein and bilirubin.'",
+        "★ 'I think the blood in your urine is coming from the filters in your kidneys. After an infection like your sore throat, the immune system makes antibodies, and in some people those settle in the kidney filters and cause inflammation. That lets blood leak into the urine, which is why it looks like Coca-Cola. The condition is called IgA nephropathy. Your dark urine started within a few days of the throat infection rather than two or three weeks later, your dipstick shows blood without protein, and your blood pressure is up.'",
+        "Examiner 'how do you distinguish this from post-streptococcal glomerulonephritis?' → ★ 'The interval — IgA nephropathy causes visible haematuria one to three days after the throat infection; post-streptococcal disease follows one to three weeks after a throat infection or three to six weeks after a skin infection. Complement C3 is characteristically low in post-streptococcal disease and normal in IgA nephropathy. Only a renal biopsy is definitive.'"
+      ],
+      "pefe": [
+        "Role-player (reconstructed): 32 F; a few days of Coca-Cola urine throughout the stream; stools completely normal; sore throat 3 days ago, nearly gone, took nothing; no dysuria/fever/flank pain/leg swelling; no drugs; not menstruating",
+        "PEFE: no pallor, no jaundice, no oedema · BP 152/94 · afebrile · abdomen soft, non-tender, no masses · kidneys not ballotable · bladder not palpable · no renal angle tenderness · dipstick blood +, protein −, bilirubin −",
+        "Haematuria DDx: glomerular (IgA nephropathy — commonest GN worldwide; PSGN; lupus nephritis; ANCA vasculitis; Alport/thin basement membrane) — dysmorphic RBCs, casts, proteinuria, hypertension; non-glomerular (UTI, stones, trauma, exercise, urothelial/renal cancer, BPH, cystic disease, anticoagulants); pseudo-haematuria (myoglobin, haemoglobin, beetroot, rifampicin, menstrual). IgA: episodic visible haematuria with URTI, persistent microscopic haematuria ± proteinuria; management — BP control (ACEi/ARB if proteinuria), monitor eGFR/proteinuria, nephrology; steroids/immunosuppression in selected cases VERIFY; ~20–40% progress to CKD over decades",
+        "Investigations: urine microscopy (dysmorphic RBCs, red cell casts), urine ACR/PCR, MSU, UEC/eGFR, FBE, C3/C4, ASOT/anti-DNase B, ANA/anti-dsDNA/ANCA, hepatitis B/C, renal USS; cystoscopy/CT urogram for visible haematuria over 40 or with risk factors; renal biopsy per nephrology. Red flags: nephrotic/nephritic features, AKI, uncontrolled BP, oliguria → urgent · SA: nephrology via LHN · MedSTAR 1300 13 12 33 · TIS 131 450"
+      ],
+      "fails": [
+        "Not asking pale stools, or not committing the branch aloud; running the liver blocks anyway",
+        "Not asking exactly when the sore throat was (the interval is the whole reasoning); not asking oedema/BP",
+        "Not requesting kidney ballottement, bladder, renal angle, BP, dipstick by name",
+        "Calling it post-streptococcal GN without the interval reasoning; no complement/biopsy nuance when challenged",
+        "No urine microscopy/ACR/UEC; no nephrology pathway; no safety-net for nephritic deterioration"
+      ],
+      "numbers": [
+        "History 4 min · pale-stool question by 1:20 · IgA: haematuria 1–3 d after throat, C3 normal · PSGN: 1–3 wk throat / 3–6 wk skin, C3 low · BP 152/94",
+        "Dipstick: blood + / protein − / bilirubin − · visible haematuria >40 → cancer exclusion · IgA → CKD ~20–40% over decades VERIFY · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "Dark_Urine_Liver_or_Kidney_2_Case_Tasks_Script_Notability.pdf §6 Version A (32-year-old woman with Coca-Cola urine three days after a sore throat, normal stools, BP 152/94 — IgA nephropathy; stem reconstructed)"
+  },
+  {
+    "id": "MED-155",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "General practice. No presenting complaint — he is here for his LFT results (AST ~95, ALT ~40–50, GGT raised, ALP/bilirubin near normal). Four-minute history first ('so the results make more sense'), PEFE, diagnosis, differentials. Two failures live in the alcohol question: never quantifying, and getting the arithmetic wrong — a 750 mL bottle at 13% is about 7.7 standard drinks. Moralise and he closes down. Version B (35 M, RUQ pain, transaminases <2× with raised lipids, no alcohol — fatty liver) folded in.",
+    "stem": [
+      "James Petrou, 40, attends to discuss his liver function test results. AST ~95 (ref <40) · ALT ~40–50 (ref <45) · GGT elevated · ALP and bilirubin near normal. No presenting complaint."
+    ],
+    "tasks": [
+      "Take a history (about 4 minutes)",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis to the patient",
+      "Explain your differential diagnoses"
+    ],
+    "time": "8 min. Vitals · intro, open → 'just here for my results' → ★ the bridge: 'I do have them and I'll go through them — before I do, may I ask a few questions so the results make more sense? then we'll look at them together' · symptoms: jaundice, itch, dark urine, pale stools · red flags: weight, appetite, lumps, tiredness, FHx cancer · ★ alcohol done properly: 'do you drink?' → 'a drink most nights — restaurant, goes with the job' → ★ 'what do you drink, roughly how much on those nights, how many nights a week?' → a bottle of wine, every night → ★ 'how long at that level?' → 20 years → ★ convert aloud without judgement: 'a bottle is about 7–8 standard drinks, so roughly fifty a week; the recommended maximum is ten — I'm not saying that to make you feel bad, it's directly relevant to the result' · ABP FIT NO SEX: antibiotics, transfusions/tattoos/piercings/IVDU/travel/food, occupation/needle-stick, sexual, ★ regular/OTC/herbal/gym supplements · fatty-meal pain, operations · ★ fever · PEFE named: jaundice, cachexia, scratch marks, oedema, ★ stigmata of chronic liver disease (spider naevi, palmar erythema); temperature; abdomen — distension, scars, tenderness, ★ hepatomegaly/splenomegaly, ★ shifting dullness; dipstick bilirubin → all normal · results explained: enzymes leak when the liver is irritated — mildly up; ★ one more than twice the other = alcohol · alcoholic hepatitis → cirrhosis if continued; ★ largely reversible now · three reasons · DDx: fatty liver, viral B/C, drugs/herbal, autoimmune, iron/copper, gallstones, cancers · ★ don't stop suddenly alone — supported withdrawal, thiamine, bloods, USS, review 2 weeks, safety-net, 'how do you feel about it?'",
+    "back": {
+      "dx": "Alcoholic hepatitis (alcohol-related liver disease, early) — asymptomatic 40-year-old restaurant owner drinking a bottle of wine every night for ~20 years (≈7.7 SD/night ≈ 54/week vs NHMRC ≤10), with a mild transaminase rise (<5× ULN) and AST:ALT ≈2.4 (>2 favours alcohol), raised GGT, normal examination (no stigmata, no hepatomegaly, no ascites, no jaundice). Three reasons: amount and duration; exclusion of viral risk factors, medications, gallbladder symptoms, travel, family history; the test pattern — mild rise with ratio >2 (a viral hepatitis would give a far larger rise). Still test: hepatitis B/C serology, iron studies, autoimmune screen, lipids/glucose, USS; stage with FIB-4 ± elastography. Largely reversible if the alcohol stops — supported reduction (withdrawal can be dangerous after 20 years), thiamine, brief intervention, review in a fortnight. Hidden agenda: his wife has been saying he drinks too much.",
+      "plan": [
+        [
+          "0:00",
+          "'May I have his vital signs?' → normal · 'I'm Dr —; am I speaking with James? how can I help?' → 'just here for my blood results' → ★ 'thank you for coming in for them. I do have your results here and I will go through them with you. Before I do, may I ask a few questions so the results make more sense when we get to them? Then we'll look at them together.'"
+        ],
+        [
+          "0:40",
+          "Symptoms: yellowing of skin/eyes, itching, dark urine, pale stools → none · red flags: weight loss, appetite, lumps, tiredness (works 14-hour days), FHx bowel/liver/pancreas/stomach cancer → none"
+        ],
+        [
+          "1:20",
+          "★ 'Do you drink alcohol?' → 'a drink most nights — I own a restaurant, it goes with the job' → ★ 'that's helpful — can I ask a bit more precisely: what do you drink, roughly how much on those nights, and how many nights a week?' → 'if I'm honest, a bottle of wine, most nights — probably every night' → 'thank you for being straight with me — that helps a great deal' → ★ 'and how long have you been drinking at that sort of level?' → 20 years · ★ 'so that we're working with the same picture: a bottle of wine is about seven to eight standard drinks, so that's roughly fifty in a week. The recommended maximum for a healthy adult is ten a week. I'm not saying that to make you feel bad — it's directly relevant to the result I'm about to show you.' → 'I didn't realise it added up like that' · morning shakes/sweats, previous attempts to cut down, CAGE"
+        ],
+        [
+          "2:45",
+          "ABP FIT NO SEX: recent antibiotics · transfusions, tattoos, piercings, injected drugs, travel, unusual food · occupation, needle-stick risk · sexually active, condoms (married, monogamous) · ★ regular medications including over-the-counter, herbal or gym supplements (none) · fatty-meal pain, operations (none) · ★ fever or chills (no) · concerns → 'my wife says I drink too much — is that what this is?'"
+        ],
+        [
+          "4:00",
+          "★ Examiner: 'general appearance — jaundice, cachexia, scratch marks, oedema, ★ any stigmata of chronic liver disease such as spider naevi or palmar erythema · vital signs, particularly temperature · abdomen — inspection for distension and scars; superficial and deep palpation for tenderness and masses, specifically ★ hepatomegaly and splenomegaly; percussion for ★ shifting dullness; auscultation · office test — urine dipstick for bilirubin' → no jaundice, no stigmata, afebrile, no hepatomegaly, no splenomegaly, no shifting dullness, dipstick normal → 'the examination is normal, which is reassuring'"
+        ],
+        [
+          "5:00",
+          "★ Results: 'Let me show you what we found. We measured your liver enzymes — chemicals that leak out of liver cells when the liver is irritated. Yours are up, but only mildly. There's a second thing I look at: the relationship between two of those enzymes. In your case one is more than twice the other, and that particular pattern is very characteristic of alcohol. The condition is alcoholic hepatitis — inflammation of the liver caused by drinking. In the long run, if the inflammation continues, it leads to scarring — cirrhosis — and at that point the liver stops working properly. The important part is that at this stage it is largely reversible if the alcohol stops.' · 'is my liver damaged?' → 'a warning rather than a catastrophe; at the stage you're at, largely reversible — that's genuinely good news' · ★ three reasons: amount and duration; the other causes ruled out; the pattern — mild rise with ratio above two, where a virus gives a far larger rise"
+        ],
+        [
+          "6:30",
+          "DDx: 'I'll test for them — fatty liver from cholesterol and weight can look identical on this test; viral hepatitis B and C; medications including over-the-counter and herbal; autoimmune inflammation; inherited conditions such as iron overload or a copper problem; gallstone disease and blocked drainage tubes; and cancers of the liver, gallbladder and pancreas — though no weight loss and no family history' · ★ 'the most useful thing I can offer today is help to stop. Because you've been drinking heavily for a long time, I don't want you to stop suddenly on your own — withdrawal can be dangerous. Let's plan it together, and I can involve a service that supports people through it.' → thiamine, bloods (hepatitis B/C, iron studies, autoimmune screen, lipids, glucose, FBE/platelets, INR), USS, review in a fortnight · ★ safety-net: yellow, tummy swelling, bruising/bleeding, vomiting blood/black stools, confusion → sooner · 'how do you feel about what we've discussed?' → 'I can try — hard with the restaurant' → practical plan; summary"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'I do have your results here and I will go through them with you. May I ask a few questions first, so the results make more sense?' / ★ 'What do you drink, roughly how much, and how many nights a week?' / ★ 'And how long have you been drinking at that sort of level?' / ★ 'Thank you for being straight with me — that helps a great deal.'",
+        "★ 'A bottle of wine is about seven to eight standard drinks, so that is roughly fifty in a week. The recommended maximum for a healthy adult is ten a week. I am not saying that to make you feel bad — it is directly relevant to the result I am about to show you.'",
+        "★ To examiner: 'any stigmata of chronic liver disease such as spider naevi or palmar erythema … specifically hepatomegaly and splenomegaly … percussion for shifting dullness … urine dipstick for bilirubin.'",
+        "★ 'Liver enzymes are chemicals that leak out of liver cells when the liver is irritated. Yours are up, but only mildly. One enzyme is more than twice the other, and that pattern points to alcohol.' / ★ 'At this stage it is largely reversible if the alcohol stops.' / 'A viral hepatitis would have given a far larger rise.'",
+        "★ 'I do not want you to stop suddenly on your own — withdrawal can be dangerous. Let us plan it together.' / ★ 'Come back sooner if you turn yellow, your tummy swells, you bruise or bleed easily, you vomit blood or pass black stools, or you become confused.' / 'How do you feel about what we have discussed?'",
+        "Version B (35 M, RUQ pain, transaminases <2×, raised triglycerides/cholesterol, no alcohol): 'We checked your liver enzymes — yours are up, but only mildly, less than twice what we expect. We also checked the fat in your blood: cholesterol and triglycerides are both higher than we'd like. When there's a lot of fat circulating, some is stored in the liver, and that stored fat causes the irritation — fatty liver, also called non-alcoholic steatohepatitis.' / lifestyle: 'describe your diet on a typical day — what you actually eat and drink from morning to night? sugary drinks or takeaway? do you exercise regularly?' ('pretty healthy' → press for a typical day: coffee and pastry, takeaway lunch, big late dinner, 2–3 soft drinks, no exercise) / examiner 'fatty liver doesn't cause abdominal pain' → 'Correct — usually asymptomatic and not a recognised cause of abdominal pain; I'd treat the steatosis on its merits and keep looking for a separate cause of the pain — biliary disease, peptic ulcer, reflux.' / 'why no lifestyle history in Version A?' → 'fatty liver is a diagnosis of exclusion; the alcohol history and the ratio already identified a cause.' / 'how would you stage him?' → 'enzymes don't indicate fibrosis — FIB-4 (age, transaminases, platelets) and transient elastography where available; low platelets, low albumin, rising INR or splenomegaly suggest cirrhosis and change follow-up to variceal and HCC surveillance.'"
+      ],
+      "pefe": [
+        "Role-player: James Petrou, 40, restaurant owner, married, two young kids; feels well; bloods as a general check; a bottle of wine most nights — every night — for ~20 years, doesn't think of himself as a heavy drinker; non-smoker; no meds at all; no exposures/operations/fatty-meal pain/fever/FHx; married, monogamous. Relaxed, slightly impatient; deflects the first alcohol question — quantity only to a specific, non-judgemental follow-up; if 'a drink most nights' is accepted → fail; if moralised at ('you need to stop drinking' without asking how he feels) → one-word answers. Worried at 'cirrhosis'; asks once 'is my liver damaged?' — accept a clear answer mentioning reversibility. Hidden: wife says he drinks too much",
+        "PEFE: no jaundice, no stigmata of CLD, afebrile, no hepatomegaly/splenomegaly, no shifting dullness, dipstick normal. Results: AST ~95, ALT ~40–50, GGT ↑, ALP/bilirubin ~normal → ratio ≈2.4",
+        "Numbers: AST <~40, ALT <~45, GGT <~50 · mild <5× ULN, marked >10× · AST:ALT >2 favours alcohol; NAFLD typically ALT > AST until cirrhosis · standard drink 10 g; 750 mL at 13% ≈ 7.7 SD; nightly ≈ 54/week; NHMRC ≤10/week, ≤4/day · CAGE ≥2 significant; AUDIT-C · triglycerides <1.7, cholesterol <5.5 mmol/L · FIB-4, elastography for fibrosis · Work-up for raised transaminases: hepatitis B/C serology, iron studies/ferritin (haemochromatosis), lipids/HbA1c (MASLD), autoimmune (ANA, SMA, immunoglobulins), caeruloplasmin if <40–50 (Wilson's), coeliac serology, TSH, medications/supplements, USS",
+        "Alcohol management: brief intervention (FRAMES), AUDIT; withdrawal risk after 20 years — supervised reduction/diazepam-based detox, never abrupt unsupported cessation; thiamine 100 mg daily VERIFY; naltrexone/acamprosate for maintenance VERIFY; DASSA/ADIS 1300 13 1340; Drink Wise; review 2 weeks; repeat LFTs in 4–8 weeks of abstinence — normalisation supports the diagnosis; occupational context (restaurant) acknowledged; family (his wife) as an ally · TIS 131 450"
+      ],
+      "fails": [
+        "Going straight to the results without the bridge; reciting numbers without plain-English meaning",
+        "★ 'Do you drink?' 'yes' and moving on; ★ arithmetic wrong (12–14 drinks a bottle); not asking duration",
+        "Moralising, lecturing, 'you need to stop drinking' without asking how he feels — he closes down",
+        "Not asking OTC/herbal/gym supplements; no stigmata/hepatomegaly/shifting dullness/dipstick by name",
+        "Diagnosis without the ratio and magnitude reasoning; no plan to test the other causes; advising abrupt cessation; no thiamine; no review/safety-net"
+      ],
+      "numbers": [
+        "History 4 min · AST ~95 / ALT ~45 → ratio ~2.4 · mild <5× · marked >10× · AST:ALT >2 = alcohol · bottle 750 mL @13% ≈ 7.7 SD · nightly ≈ 54/wk · NHMRC ≤10/wk, ≤4/day",
+        "CAGE ≥2 · TG <1.7 · cholesterol <5.5 · FIB-4/elastography for staging · thiamine 100 mg VERIFY · review 2 wk · ADIS 1300 13 1340 · TIS 131 450"
+      ]
+    },
+    "source": "Deranged_LFT_Alcohol_or_Fat_2_Case_Tasks_Script_Notability.pdf Version A (James Petrou, 40, restaurant owner reviewing mildly raised LFTs with AST:ALT >2 — alcoholic hepatitis; Version B fatty liver folded in)"
   }
 ]
