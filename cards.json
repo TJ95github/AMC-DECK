@@ -15393,5 +15393,652 @@
       ]
     },
     "source": "Deranged_LFT_Alcohol_or_Fat_2_Case_Tasks_Script_Notability.pdf Version A (James Petrou, 40, restaurant owner reviewing mildly raised LFTs with AST:ALT >2 — alcoholic hepatitis; Version B fatty liver folded in)"
+  },
+  {
+    "id": "MED-156",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 270,
+    "setting": "General practice. Focused history, PEFE from the examiner (name every step incl. Rovsing/obturator, pelvic examination with consent and chaperone — speculum before bimanual — and the urine pregnancy test), then diagnosis and differentials. The station is built on one question: 'did the pain start where it is now, or somewhere else and move?' and one hinge: LMP 5 weeks only means 'overdue' once you have asked the cycle length. Three automatic fails: no pregnancy test; pelvic exam without consent/chaperone; a finding claimed that was never requested.",
+    "stem": [
+      "Lily Barrett, 27, presents with right lower abdominal pain for four days, much worse in the last 24 hours, vomiting, feels hot."
+    ],
+    "tasks": [
+      "Take a focused history",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis and differential diagnoses"
+    ],
+    "time": "8 min. Intro, open → 'that sounds unpleasant and I can see you're uncomfortable' · 'in pain now — want something?' · ★ permission early: 'some questions will be personal, about your periods and about sex — they matter for working out what this is; is that alright?' · pain: show me, ★ 1–10 with anchors (7), sharp (yes), when/constant/worse, night waking, radiation, food/position, ★ 'did it start where it is now, or somewhere else and move?' (same spot — the stated reason for downgrading appendicitis) · GI: N/V (×3 → ★ 'what colour — any green?'), bloating, wind, diarrhoea (→ how many, blood/mucus), constipation, fever (→ ★ 'measured? chills or shaking?') · red flags · KUB three · groin lump · ★ 3:15 O&G in three sub-groups: symptoms (vaginal bleeding, discharge) · periods (★ LMP 5 weeks → ★ 'regular or irregular, how often?' → 4–6 weeks; ★ 'any chance you could be pregnant?') · sexual (active, contraception, safe sex, ★ previous STI — chlamydia) · SADMA, ops · summarise · ★ examiner: appearance, four vitals incl temperature, inspection, palpation (tenderness/guarding/rigidity/rebound/mass), percussion, BS, ★ Rovsing + obturator, inguinal + DRE, ★ 'with the patient's consent and a chaperone present, a pelvic examination — inspection, speculum, bimanual for cervical motion tenderness, uterine size, adnexal tenderness', ★ urine pregnancy test + dipstick · ★ 'two things: the test shows you are pregnant' [pause] → 'I am concerned the pregnancy is growing in the wrong place — the tube' → reasons → grouped DDx → hospital today, βhCG, TVUS, group and hold, gynaecology; methotrexate or laparoscopy · shoulder-tip/faint → ambulance.",
+    "back": {
+      "dx": "Ectopic pregnancy — four days of sharp RIF pain 7/10 that never moved, worse over 24 h, vomiting ×3 (never green), loose motions, subjective fever (T 37.5), LMP five weeks ago on an irregular 4–6-week cycle (late for her own cycle), inconsistent contraception, previous treated chlamydia; PEFE: RIF tenderness with guarding, rigidity and rebound, no mass, bowel sounds present, Rovsing and obturator negative, cervical motion tenderness, uterus normal size and empty, right adnexal tenderness, urine pregnancy test POSITIVE, dipstick normal. Reasons: late for her cycle, positive test, empty normal-sized uterus, CMT + right adnexal tenderness, pain that never migrated (against appendicitis). DDx: PID (previous chlamydia, tender exam — stays on the list), appendicitis (no migration, not off food, special tests negative), ovarian cyst torsion/rupture, UTI/stone (no burning, dipstick clear), hernia. Hospital today: serum βhCG, transvaginal ultrasound, blood group/anti-D, gynaecology — methotrexate or laparoscopy; unstable → theatre.",
+      "plan": [
+        [
+          "0:00",
+          "'Am I speaking with Lily? How can I help?' → 'that sounds unpleasant and I can see you're uncomfortable. I'll ask some questions, examine you, then tell you what I think. Are you in pain now — would you like something for it? ★ Some of my questions will be personal — about your periods and about sex — they matter for working out what this is. Is that alright?'"
+        ],
+        [
+          "0:45",
+          "Pain: 'show me where · one to ten, ten the worst pain you've ever felt, one the least — how bad? (7) · sharp or dull? (sharp) · when, constant, worse? (4 d, much worse since yesterday) · woken you at night? · travel? · food or position? · ★ did the pain start where it is now, or somewhere else and move?' → 'same spot the whole time'"
+        ],
+        [
+          "1:45",
+          "GI: N/V (×3) → ★ 'what colour — any green?' (food then yellow) · bloating, wind · diarrhoea (a bit) → 'how many, blood or mucus?' · constipation · fever (hot and shivery) → ★ 'have you actually measured it? chills or shaking?' (not measured) · red flags: weight, appetite, lumps, PR blood, habit, FHx · KUB: burning, frequency, haematuria · groin lump → all no"
+        ],
+        [
+          "3:15",
+          "★ O&G: symptoms — 'any bleeding from the vagina? any discharge?' (no) · periods — 'when was your last period?' (about 5 weeks) → ★ 'are your periods regular or irregular, and how often do you get them?' (irregular, 4–6 weeks) → ★ 'is there any chance you could be pregnant?' ('I suppose so — we don't always use anything') · sexual — 'sexually active? contraception? safe sex? ★ ever diagnosed with a sexually transmitted infection?' (chlamydia years ago, treated) · smoking (social), alcohol, drugs, meds, allergies, operations, PMHx/FHx · ★ summarise back"
+        ],
+        [
+          "4:45",
+          "★ Examiner, every step: 'general appearance — alert, distressed, dehydrated, pale · all four vital signs including temperature · inspection — movement with respiration, scars, distension · superficial and deep palpation — tenderness, guarding, rigidity, rebound, masses · percussion tenderness · bowel sounds · special tests — ★ Rovsing's sign and the obturator sign · inguinal region and rectal examination · ★ with the patient's consent and a chaperone present, a pelvic examination — inspection, then speculum for the cervix and vaginal walls, then bimanual for cervical motion tenderness, uterine size and adnexal tenderness · office tests — ★ urine pregnancy test and urine dipstick' → T 37.5, obs normal; RIF tenderness with guarding, rigidity, rebound; no mass; BS present; Rovsing −, obturator −; groin/rectum normal; speculum normal; CMT +, uterus normal size and empty, right adnexal tenderness; ★ UPT positive; dipstick normal"
+        ],
+        [
+          "6:15",
+          "★ 'Lily, I have two things to tell you and I'd like you to hear them both. The first is that the test today shows you are pregnant.' [pause — 'pregnant? I wasn't expecting that'] → 'I know that's a lot to take in. ★ The second thing is that I am concerned the pregnancy is growing in the wrong place — in the tube rather than in the womb. That's called an ectopic pregnancy.' · 'is that dangerous?' → 'it can be, and that's why I'm acting today rather than tomorrow — the tube can't stretch the way the womb can, so it can bleed. My reasons: your period is late for your own cycle, the test is positive, your womb is a normal size and empty, and both the neck of the womb and your right side were tender.'"
+        ],
+        [
+          "7:00",
+          "DDx with a reason each: 'a pelvic infection — you've had chlamydia before and the examination was tender, so it stays on my list; appendicitis — but your pain never moved, you're not off your food and the two special tests were negative; a twisted or burst ovarian cyst; a urine infection or a stone — no burning, no frequency, urine clear; a hernia in the groin, which I couldn't feel' · plan: 'hospital today — a blood test for the pregnancy hormone, an internal ultrasound to find where the pregnancy is, your blood group, and the gynaecology team; treatment is either an injection called methotrexate or keyhole surgery' · 'will I still be able to have children?' → honest: most do; one tube is enough; future ectopic risk higher — early scan next time · 'is there someone who can go with you?' · ★ 'if on the way you get severe pain, pain at the tip of your shoulder, feel faint or pass out — call an ambulance rather than driving'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Some of my questions will be personal, about your periods and about sex — they matter for working out what this is. Is that alright?' / ★ 'Did the pain start where it is now, or did it start somewhere else and move?' / ★ 'What colour was the vomit — was any of it green?' / ★ 'Have you actually measured your temperature?'",
+        "★ 'When was your last period? Are your periods regular or irregular, and how often do you get them? Is there any chance you could be pregnant?' / ★ 'Have you ever been diagnosed with a sexually transmitted infection?'",
+        "★ To examiner: 'special tests — Rovsing's sign and the obturator sign … with the patient's consent and a chaperone present, a pelvic examination — inspection, then speculum for the cervix and vaginal walls, then bimanual for cervical motion tenderness, uterine size and adnexal tenderness. Office tests — a urine pregnancy test and urine dipstick.'",
+        "★ 'Lily, two things. The test today shows you are pregnant.' [pause] / ★ 'I am concerned this pregnancy is growing in the wrong place, in the tube rather than the womb. We call that an ectopic pregnancy.' / 'The tube can't stretch the way the womb can, so it can bleed — that's why I'm acting today rather than tomorrow.'",
+        "'Each month an egg grows inside a small sac on the ovary. Around day 14 that sac bursts to release the egg, and a little fluid and blood escape into the tummy — in some women that stings for a day or two. That is mid-cycle pain. If the egg is fertilised it should travel down the tube and settle in the womb. If it settles in the tube instead, that is an ectopic pregnancy.'",
+        "Version B (Mittelschmerz — LMP exactly 14 days ago, regular 28-day cycle, two previous identical self-limiting episodes, mild pain settling with rest and paracetamol, no vomiting): 'The most likely explanation is mid-cycle pain — Mittelschmerz — pain from releasing an egg: your last period was exactly 14 days ago, which is when the egg is released; the pain is mild and settles with rest and simple painkillers; you've had the same thing before and it went away; and the warning signs are all absent. But I want to be careful: the single most important thing in any woman with lower tummy pain is to be sure she is not pregnant, so if I could do one test today it would be a urine pregnancy test. If that's negative and it settles over the next day or two as before, no further tests are needed.' / Ruptured-ectopic variant (pale, tachycardic, shoulder-tip pain): 'two large-bore cannulae, fluids, cross-match, call the surgical or gynaecology team — and in a country hospital, MedSTAR' — say the sequence aloud; the history no longer matters"
+      ],
+      "pefe": [
+        "Role-player: Lily Barrett, 27, hospitality worker in Kadina, shares a house, boyfriend of eight months; social smoker; no meds/allergies/ops. Uncomfortable, embarrassed; honest about personal questions if warned first — no warning → hesitates, glances away, short answers. Hasn't seriously considered pregnancy; contraception unreliable. Told she's pregnant: shocked, then frightened — 'is that dangerous?', 'will I lose the baby?', 'will I still be able to have children?'. LMP '5 weeks' — does NOT volunteer cycle length. Vomit never green. Fever not measured",
+        "PEFE: T 37.5 (working threshold 37.4), other obs normal · RIF tenderness with guarding, rigidity, rebound; no mass; BS present · Rovsing −, obturator − · groin and rectum normal · speculum normal · bimanual: CMT +, uterus normal size and empty, right adnexal tenderness · UPT positive · dipstick normal. Version C (Jane Alcorta, 24 — ultrasound explanation) = MED-157",
+        "Ectopic: risk — previous PID/chlamydia, tubal surgery, previous ectopic, IUD in situ, IVF, smoking; TVUS with discriminatory βhCG ~1500 IU/L (no intrauterine sac above that = ectopic until proven otherwise) VERIFY; management — unstable → theatre; stable → methotrexate (βhCG <5000, no fetal heart, mass <3.5 cm, reliable follow-up) or laparoscopic salpingectomy/salpingotomy VERIFY; anti-D if rhesus negative; serial βhCG; future pregnancy — early scan at 6 weeks; fertility counselling; psychological support. Ovulation day 14; Mittelschmerz mid-cycle, self-limiting, UPT negative",
+        "SA: WCH/Yorke and Northern LHN gynaecology · MedSTAR 1300 13 12 33 if rupture from a rural site · TIS 131 450 · SHINE SA for contraception/STI follow-up (chlamydia re-screen)"
+      ],
+      "fails": [
+        "Launching into the sexual history with no permission sentence",
+        "Never asking whether the pain moved; recording 'fever' from 'I feel hot'; not probing vomit colour",
+        "Recording 'LMP 5 weeks' without asking cycle length — never realising she is overdue; not asking previous STI",
+        "★ No urine pregnancy test; ★ 'a pelvic exam' as one item or without consent/chaperone; stopping at the abdominal examination; ★ claiming a finding never requested",
+        "No pause after 'pregnant'; dodging the fertility question; not arranging hospital today/βhCG/TVUS; no rupture safety-net (shoulder tip, faint → ambulance)"
+      ],
+      "numbers": [
+        "O&G block by 3:15 · LMP 5 wk on a 4–6 wk cycle · T 37.5 (threshold 37.4) · ovulation day 14 · TVUS discriminatory βhCG ~1500 VERIFY",
+        "Ectopic: unstable → theatre · stable → methotrexate (βhCG <5000, no FH, <3.5 cm) or laparoscopy VERIFY · anti-D if Rh− · early scan next pregnancy · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "RLQ_Pelvic_Pain_2_Case_Tasks_Script_Notability.pdf Version A (Lily Barrett, 27, four days of right lower quadrant pain, LMP five weeks on an irregular cycle — ectopic pregnancy; Mittelschmerz Version B folded in)"
+  },
+  {
+    "id": "MED-157",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "General practice. Version C of the RLQ/pelvic pain document (reconstructed stem). Five-minute history, then explain the ultrasound report (three findings in order: the ruptured follicle, the quiet gallstones, the appendix not seen), then diagnosis and differentials. Her worry is her mother's gallbladder surgery.",
+    "stem": [
+      "Jane Alcorta, 24, presents with right-sided lower abdominal pain since this morning. LMP exactly 14 days ago; two previous similar episodes. Ultrasound report: small ruptured right ovarian follicle with a little free fluid; gallstones with a normal gallbladder wall and no duct dilatation; appendix not visualised."
+    ],
+    "tasks": [
+      "Take a focused history (5 minutes)",
+      "Explain the ultrasound report to the patient",
+      "Explain your diagnosis and differentials"
+    ],
+    "time": "8 min. Intro, analgesia offer, permission for personal questions · pain: RIF, mild (4/10), since this morning, ★ never moved, settles with rest/paracetamol, no vomiting, no fever measured · GI screen, red flags, KUB, groin · ★ O&G: bleeding/discharge (no), ★ LMP exactly 14 days, regular 28-day cycle, pregnancy chance, contraception, sexual history/STI · ★ 'had this before?' (two identical self-limiting episodes) · biliary specifics (fatty-meal pain, RUQ, shoulder blade — none) · SADMA · ★ concerns → 'my mum had gallstones and needed surgery' · 5:00 → ★ USS in three parts: (1) 'a small sac on your right ovary has burst and released some fluid — that's what's causing your pain, a normal part of releasing an egg' (2) 'a few stones in your gallbladder — not blocking anything, wall not thickened, no inflammation; not causing this pain, and you don't need your gallbladder out' (3) 'the scan couldn't see your appendix — that sounds worrying but it's very common on ultrasound and doesn't mean anything is wrong with it' · dx Mittelschmerz with four reasons · answer 'mum had surgery', 'how do you know it's not my appendix?', 'will it happen again?' · UPT today · safety-net.",
+    "back": {
+      "dx": "Mittelschmerz (mid-cycle ovulation pain) — mild RIF pain since this morning that never moved, LMP exactly 14 days ago on a regular 28-day cycle, two previous identical self-limiting episodes, no vomiting, no fever; ultrasound: ruptured right ovarian follicle with free fluid. Incidental findings: quiet gallstones (normal wall, no duct dilatation — not the cause, no cholecystectomy needed) and a non-visualised appendix (50–85% of normal appendices are not seen on ultrasound — not a finding). Still do a urine pregnancy test today. DDx: ectopic (UPT), appendicitis (no migration, not off food, no vomiting, no fever, mild and cyclical), ovarian cyst torsion/rupture, PID, UTI, biliary colic (pattern wrong). Rest, heat pack, simple analgesia; recurs mid-cycle; safety-net for severe pain, fever, unusual bleeding.",
+      "plan": [
+        [
+          "0:00",
+          "Intro, 'in pain now?', permission for personal questions"
+        ],
+        [
+          "0:30",
+          "Pain: where (RIF), 1–10 with anchors (4), sharp/dull, since this morning, constant/intermittent, ★ moved? (no), radiation, better/worse (rest and paracetamol help) · N/V (none), bowels, fever (none, not measured) · red flags · KUB · groin"
+        ],
+        [
+          "2:00",
+          "★ O&G: bleeding/discharge · ★ 'when was your last period?' (exactly 14 days) · 'regular? how often?' (28 days) · 'chance of pregnancy?' · contraception, sexual activity, STI · ★ 'have you had this before?' (twice, went away on its own) · biliary: fatty-meal attacks, RUQ, shoulder-blade pain (none) · ops, meds, allergies, smoking/alcohol · ★ 'anything you were worried about?' → mum's gallbladder surgery"
+        ],
+        [
+          "5:00",
+          "★ 'Jane, the scan shows three things and I want to go through all of them. First, a small sac on your right ovary has burst and released some fluid — that is what is causing your pain, and it is a normal part of releasing an egg. Second, there are a few stones in your gallbladder. They are there, but they are not blocking anything, the wall is not thickened and there is no inflammation, so they are not causing this pain — and you do not need your gallbladder out. Third, the scan could not see your appendix. That sounds worrying but it is actually very common on ultrasound and it does not mean there is anything wrong with it.'"
+        ],
+        [
+          "6:00",
+          "★ Dx: 'the most likely explanation is mid-cycle pain — Mittelschmerz — pain from releasing an egg. Four reasons: your last period was exactly 14 days ago, which is when the egg is released; the pain is mild and settles with rest and simple painkillers; you've had the same thing before and it went away; and the warning signs are all absent.' · 'but my mum had stones and needed surgery' → 'your mum needed surgery because her stones were causing symptoms; stones that sit quietly are very common and we leave them alone — I'll tell you the warning signs to watch for' · 'how do you know it's not my appendix?' → 'your pain never moved from where it started, you haven't gone off your food, you haven't been sick, you have no fever, and the pain is mild and comes and goes with your cycle — appendicitis doesn't behave like that' · 'will it happen again?' → 'it can, around the middle of your cycle — rest, a heat pack and simple painkillers usually settle it'"
+        ],
+        [
+          "7:15",
+          "DDx: ectopic → ★ 'the single most important thing is to be sure you're not pregnant — a urine pregnancy test today'; ovarian cyst torsion/rupture; pelvic infection; UTI; biliary colic (wrong pattern) · gallstone warning signs: attacks of severe pain after fatty food lasting hours, fever, yellow eyes · ★ 'come straight back if it becomes severe, you get a fever or unusual bleeding, or you faint' · questions"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "'When was your last period — and are your periods regular, how often?' / 'Have you had this before?' / 'Was there anything you were worried about?'",
+        "★ 'The scan shows three things … First, a small sac on your right ovary has burst and released some fluid — that is what is causing your pain, and it is a normal part of releasing an egg. Second, there are a few stones in your gallbladder — they are not blocking anything, the wall is not thickened and there is no inflammation, so they are not causing this pain, and you do not need your gallbladder out. Third, the scan could not see your appendix — that is very common on ultrasound and does not mean there is anything wrong with it.'",
+        "★ 'Your pain never moved from where it started, you haven't gone off your food, you have not been sick, you have no fever, and the pain is mild and comes and goes with your cycle. Appendicitis does not behave like that.' / 'If I could do one test today it would be a urine pregnancy test.'"
+      ],
+      "pefe": [
+        "Role-player (reconstructed): Jane Alcorta, 24; mild right-sided pain since this morning (4/10), settles with rest and paracetamol; LMP exactly 14 days ago, regular 28-day cycle; two previous identical episodes; no vomiting, no fever; worry — mother had gallstones and a cholecystectomy (if asked concerns, else in the last minute)",
+        "USS: ruptured right ovarian follicle with small free fluid; gallstones, normal wall, no duct dilatation, no inflammation; appendix not visualised (50–85% of normal appendices not seen on ultrasound). No examination task in this version; UPT should be requested/arranged",
+        "Mittelschmerz: mid-cycle, unilateral, hours to 1–2 days, may alternate sides, small free fluid on USS; management — reassurance, NSAID/paracetamol, heat; COCP suppresses ovulation if recurrent and troublesome. Asymptomatic gallstones — no cholecystectomy; counsel warning signs. Ectopic must be excluded in any woman with lower abdominal pain — UPT",
+        "SA: healthdirect 1800 022 222 · SHINE SA"
+      ],
+      "fails": [
+        "Explaining the ultrasound by leading with the gallstones or the missing appendix as problems; recommending cholecystectomy",
+        "Not asking whether the pain moved, previous episodes, or cycle timing; no pregnancy test",
+        "Not addressing her mother's surgery or 'how do you know it's not my appendix?' with the reasons",
+        "No safety-net for severe pain/fever/bleeding"
+      ],
+      "numbers": [
+        "History 5 min · LMP day 14 · appendix not seen on USS 50–85% · two previous episodes · UPT today",
+        "Asymptomatic gallstones: leave alone; warn — hours-long post-fatty-food attacks, fever, jaundice · healthdirect 1800 022 222"
+      ]
+    },
+    "source": "RLQ_Pelvic_Pain_2_Case_Tasks_Script_Notability.pdf Version C (Jane Alcorta, 24, mid-cycle right-sided pain with an ultrasound showing a ruptured follicle, quiet gallstones and an unseen appendix — Mittelschmerz; stem reconstructed)"
+  },
+  {
+    "id": "MED-158",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "General practice. Stem A (2023–24): 60 F, bloating and constipation, 6-minute history, examination findings + investigations on a card. Stem B (2025): 65 F, abdominal discomfort, 5-minute history, ultrasound result given. Three automatic fails: never asking to examine the abdomen; offering an image-guided biopsy of the suspicious cyst; breaking the news with no warning shot. Both weight answers are misdirection — gain (ascites) or 'intentional' loss.",
+    "stem": [
+      "Margaret Hollis, 65, presents with abdominal discomfort for six months (Stem B). Ultrasound: right ovarian mass with solid and cystic components. Examination: abdominal distension with shifting dullness; a firm mass in the right iliac fossa arising from the pelvis.",
+      "Stem A: 60 F, bloating and constipation; card — shifting dullness/ascites, right ovarian mass with septations."
+    ],
+    "tasks": [
+      "Take a focused history (5–6 minutes)",
+      "Interpret the examination findings / investigation card",
+      "Explain your diagnosis and differentials to the patient"
+    ],
+    "time": "8 min. Intro, 'months is a long time — I'm glad you came', signpost (discomfort, bowels, waterworks, periods, family, then examine), concerns ('just my age') · Stem B: pain structure — one finger (low right), character, radiation, /10, six months, ★ persistent, worse, night, better/worse · Stem A: define bloating (burping/wind/swollen) · GI screen: N/V, ★ constipation (new? how long? blood?), ★ passing wind (obstruction), fever · ★ red flags: 'lost OR gained weight without meaning to?' → 'lost 5 kg but on purpose' → ★ challenge: 'over how long, and were you trying that hard?' · appetite ('not the best') · lumps, tired, blood, habit, FHx bowel · ★ girth: 'has your tummy actually got bigger — clothes or waistband tighter?' (skirts don't do up) · ★ KUB: frequency/urgency (yes), burning, blood · ★ early satiety: 'full very quickly after a small amount?' (half what I used to eat) · ★ menstrual: 'when did periods stop? any bleeding or spotting since? discharge?' · ★ FHx 'ovarian — OR breast cancer, at what age?' (mother, forties) · obstetric (no children), endometriosis, HRT/pill · SOB, smoking/alcohol · ★ 'who's at home?' · ★ 'I'd like to examine your tummy, and offer an internal examination with a chaperone, because some of these symptoms can come from the ovaries' → card · ★ warning shot → support → plain words → pause → reasoning → plan → DDx to examiner, no biopsy.",
+    "back": {
+      "dx": "Ovarian cancer — a persistent six-month non-specific cluster (low right dull ache, bloating most days, new constipation, early satiety, urinary frequency), 5 kg 'intentional' loss with poor appetite and a waistband that no longer does up (ascites), postmenopausal (53), nulliparous, mother with breast cancer in her forties; examination: distension with shifting dullness, firm RIF mass arising from the pelvis; ultrasound: right ovarian mass with solid and cystic components (Stem A: septations + ascites). Break it with a warning shot, support, plain words, silence, reasoning ('vague symptoms — you've done nothing wrong'), then the plan: urgent gynaecological oncology referral, CA-125, CT chest/abdomen/pelvis; tissue diagnosis at surgical staging — no percutaneous biopsy (spillage/upstaging). DDx: bowel cancer, endometrial cancer, gastric/pancreatic malignancy, benign complex cyst/fibroid/endometrioma, non-malignant ascites (liver/heart/nephrotic), functional/dietary bloating last.",
+      "plan": [
+        [
+          "0:00",
+          "'Am I speaking with Margaret? What's brought you along?' → 'discomfort six months, probably nothing, husband nagged me' → 'I'm glad he did — six months is a long time. I'll ask about the discomfort, your bowels and waterworks, then your periods and family, and then I'd like to examine you. Is that all right? Anything in particular you were worried about?' ('just my age')"
+        ],
+        [
+          "0:40",
+          "Stem B pain: 'where exactly — point with one finger; what does it feel like; does it spread; how bad out of ten?' (low right, dull, no, 3–4) · 'constant or comes and goes? worse? wake you? better or worse with anything?' (always there, not worse, no) · Stem A: 'burping, extra wind, or your tummy actually looking swollen?'"
+        ],
+        [
+          "1:40",
+          "GI: N/V (queasy), bowels (constipated most of the time → new? how long?), ★ passing wind (yes), fever · ★ 'these I ask everybody: lost or gained weight without meaning to?' → 'lost 5 kg — on purpose, dieting' → ★ 'over how long, and were you actively trying that hard?' (4 months; 'honestly I wasn't trying that hard') · appetite (not the best) · lumps, tiredness, blood, lasting habit change, FHx bowel cancer · ★ 'has your tummy itself got bigger — clothes or waistband tighter?' → 'skirts don't do up — odd if I'm losing weight'"
+        ],
+        [
+          "3:15",
+          "★ Ovarian block by 4:45: 'burning passing urine, or going more often or more urgently?' (more often) · ★ 'do you feel full very quickly — full after only a small amount of food?' (half what I used to) · ★ 'some of these are more personal — when did your periods stop, and have you had any bleeding or spotting at all since? any discharge? how many pregnancies?' (53; none; none; never had children) · ★ 'has anyone in your family had ovarian cancer — or breast cancer, and at what age?' (mother, forties) · endometriosis, HRT, the pill · SOB · smoking, alcohol · ★ 'who's at home with you?' (husband, waiting room)"
+        ],
+        [
+          "4:45",
+          "★ 'I'd like to examine your tummy now, and I'd also like to offer you an internal examination with a chaperone present, because some of these symptoms can come from the ovaries. Would that be all right?' → card: distension with shifting dullness, firm RIF mass arising from the pelvis; USS right ovarian mass with solid and cystic components"
+        ],
+        [
+          "5:30",
+          "★ Warning shot: 'Margaret, I have the results of your scan here, and I'm afraid it isn't what we were hoping for. Is your husband still outside — would you like me to bring him in?' [pause] → 'no, just tell me' → ★ 'The scan has shown a growth on your right ovary. There are features on it that concern me — it isn't a simple, harmless cyst. Together with the symptoms you've described, I'm worried this could be a cancer of the ovary.' [★ pause — do not fill it] → 'I know that's a very frightening thing to hear.' · 'cancer? I've only had a bit of bloating — how did nobody pick this up?' → ★ 'that's the hardest part of this cancer, and you've done nothing wrong. It causes only vague symptoms — bloating, feeling full, constipation, going to the toilet more — which is why it's so often found late. You came in and we've found it.' [pause] 'take your time'"
+        ],
+        [
+          "6:45",
+          "★ Plan: 'I'm referring you urgently today to a specialist team in Adelaide who deal only with these cancers. They'll arrange a CT scan and a blood test, and the definite answer comes from an operation, where they take the tissue and examine it. I'll ring you as soon as I have a date, and we can arrange travel help through the patient transport scheme. Is there anything you'd like to ask? Would you like me to write this down, and would you like your husband to come in now?' · 'am I going to die?' → 'I can't answer that yet, and I'm not going to give you a number I can't stand behind — a great deal depends on what the specialists find; there are effective treatments; a team who do this every day; I'll be here throughout' · summary · ★ to examiner: dx with reasons; DDx by group; CA-125 + CT C/A/P; urgent gynae-oncology; ★ 'I would not arrange a percutaneous biopsy of the cyst because of the risk of spillage and upstaging'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Have you lost or gained weight without meaning to?' → ★ 'Five kilos over how long, and were you actively trying that hard?' / ★ 'Has your tummy actually got bigger? Have your clothes or waistband got tighter?' / ★ 'Weight change in either direction with persistent bloating still concerns me.'",
+        "★ 'Do you feel full very quickly — full after only a small amount of food, earlier than you'd expect?' / 'Are you passing urine more often, or more urgently?' / ★ 'When did your periods stop, and have you had any bleeding or spotting at all since then?' / ★ 'Has anyone in your family had ovarian cancer — or breast cancer? At what age were they diagnosed?'",
+        "★ 'I'd like to examine your tummy now, and I'd also like to offer you an internal examination with a chaperone present, because some of these symptoms can come from the ovaries. Would that be all right?'",
+        "★ 'Margaret, I have the results of your scan here, and I'm afraid it isn't what we were hoping for. Is there someone with you today, or someone you'd like me to call?' [pause] / ★ 'The scan has shown a growth on your right ovary. There are features on it that concern me — it isn't a simple, harmless cyst. Together with the symptoms you've described, I'm worried this could be a cancer of the ovary.' [pause] / ★ 'I know that's a very frightening thing to hear.' / ★ 'You've done nothing wrong — this cancer causes only vague symptoms.'",
+        "'What happens next is that I refer you urgently to a specialist team who deal only with these cancers. They'll arrange a CT scan and a blood test, and the definite answer comes from an operation, where they take the tissue and examine it under the microscope. I'll make that referral today and ring you once I have a date. Would you like me to write this down for you?'",
+        "★ To examiner: 'My most likely diagnosis is ovarian cancer, based on a persistent non-specific abdominal and urinary symptom cluster in a postmenopausal woman, ascites on examination, and an adnexal mass with malignant features on ultrasound. Differentials: bowel cancer — colonoscopy; endometrial cancer, particularly with postmenopausal bleeding; gastric or pancreatic malignancy causing early satiety; benign gynaecological causes — a complex but benign cyst, fibroids, an endometrioma; non-malignant ascites from liver disease, heart failure or nephrotic syndrome; and functional and dietary causes last — new bowel symptoms after fifty should not be labelled irritable bowel syndrome. CA-125 and CT chest, abdomen and pelvis, urgent gynaecological oncology referral. I would not arrange a percutaneous biopsy of the cyst because of the risk of spillage and upstaging.'",
+        "Stem A 'I've put weight on' → 'That's useful, and I don't want you to think weight gain rules anything out. Is it that you feel heavier all over, or mainly your tummy? Have your clothes got tighter around the middle in particular? Sometimes fluid collects in the abdomen and shows up on the scales as weight — that's something I'd want to examine for.' / 'Is it cancer?' asked early → 'That's a very reasonable question and I'm not going to dodge it. I don't know yet, and I won't guess. These questions and the tests I'm arranging are exactly the ones that check for the serious causes, and I'll tell you honestly as soon as I know.'"
+      ],
+      "pefe": [
+        "Role-player: Margaret Hollis, 65, retired school administrator, Moonta; husband in the waiting room; never had children; non-smoker, a glass of wine most evenings; periods stopped at 53, no bleeding since; mother breast cancer in her forties; stoical, apologetic, 'just my age'. Understates everything; weight loss offered with 'but that was on purpose' — concedes only if pushed; tighter waistband, early satiety and the mother's breast cancer each ONLY when asked directly (family history only if breast cancer is named as well as ovarian). If never asked to examine — says nothing; automatic fail. At the news: quiet, then 'cancer? but I've only had a bit of bloating — how did nobody pick this up?' tearful; marks down talking through the silence; later 'am I going to die?'",
+        "Card (Stem B): distension with shifting dullness; firm RIF mass arising from the pelvis; USS right ovarian mass with solid and cystic components. Stem A: shifting dullness/ascites; right ovarian mass with septations; weight gain, not loss",
+        "Ovarian symptom index: persistent, frequent (>12 days/month VERIFY) — bloating/distension, early satiety, pelvic/abdominal pain, urinary frequency/urgency; new after 50. USS malignant features: wall >3 mm, thick septations, solid/papillary components, bilateral, ascites, Doppler flow; RMI = U × M × CA-125 (M 1 premenopausal, 3 postmenopausal; refer >200 VERIFY); CA-125 raised in only ~half of early-stage disease — not a screening test; shifting dullness detects ~1.5 L. Risk factors: age, nulliparity, BRCA1/2 (breast + ovarian FHx), Lynch, endometriosis, HRT; protective — parity, OCP, breastfeeding. Management: gynaecological oncology MDT, CT C/A/P, surgical staging/debulking ± platinum chemotherapy; genetic testing (BRCA) with implications for family; no percutaneous biopsy of a resectable ovarian mass (spillage/upstaging); image-guided biopsy of omental/peritoneal disease only under specialist direction when neoadjuvant chemotherapy is planned",
+        "Timing: ovarian block by 4:45; stop at 5:00 (B) / 6:00 (A) · Cancer Council SA 13 11 20 · PATS · Ovarian Cancer Australia · TIS 131 450"
+      ],
+      "fails": [
+        "★ Never asking to examine the abdomen (or offer the pelvic examination with a chaperone) in a 'history' station",
+        "Accepting 'intentional' weight loss or 'weight gain' at face value; not asking girth/waistband; putting frequency down to age; never asking early satiety",
+        "Omitting the menstrual/postmenopausal bleeding history; asking only about ovarian (not breast) cancer in the family",
+        "★ No warning shot; talking through the silence; jargon; false reassurance ('I'm sure it's nothing serious')",
+        "★ Offering an image-guided biopsy of the cyst; labelling it IBS after 50; no CA-125/CT/urgent referral; no written information or support person"
+      ],
+      "numbers": [
+        "Symptom cluster >12 days/month VERIFY · USS red flags: wall >3 mm, septations, solid/papillary, bilateral, ascites, Doppler · RMI = U × M × CA-125, M=3 postmenopausal, refer >200 VERIFY",
+        "CA-125 raised in ~half of early disease (not screening) · shifting dullness ~1.5 L · menopause 53 · mother breast cancer 40s (BRCA) · ovarian block by 4:45",
+        "Cancer Council SA 13 11 20 · PATS · TIS 131 450"
+      ]
+    },
+    "source": "Ovarian_Cancer_2_Case_Tasks_Script_Notability.pdf (Margaret Hollis, 65, six months of vague abdominal discomfort, 'intentional' weight loss and a tight waistband — ovarian cancer with ascites; Stem A bloating/weight-gain version folded in)"
+  },
+  {
+    "id": "MED-159",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "General practice. Version A (online): six-minute history, then diagnosis and differentials — the history IS the station. Version B (face-to-face, long stem with discharge stated): three-minute history, PEFE, diagnosis, management. The single behaviour the station tests: hearing 'yes, I have discharge' and stopping to characterise it — colour, consistency, volume, odour, then itch, blood, cycle timing, after sex. Three management sentences carry the marks: treat empirically today; partners from six months tested and treated; no sex until seven days after treatment and partners treated.",
+    "stem": [
+      "Mary, 19, presents with lower abdominal pain on the right for about a week, not getting better. (Version B stem adds: vaginal discharge, bowels normal, no medications.)"
+    ],
+    "tasks": [
+      "Take a focused history (6 minutes — Version A; 3 minutes — Version B)",
+      "Explain the most likely diagnosis and your differential diagnoses to the patient",
+      "(Version B) Ask the examiner for the physical examination findings; outline your management"
+    ],
+    "time": "8 min. ★ 'Examiner, is my patient haemodynamically stable, and could I have the vital signs?' (118/72, 92, 16, 37.6) · intro, permission, open → ★ respond to the opening statement ('a whole week — that must be wearing') · pain: where, ★ where did it start/moved? (no), one side, /10 (5), dull, constant, worse, travel, better/worse — movement, period, bowels, ★ sex ('deep inside') · groups as headings: GI (N/V, appetite, bloating, bowels, ★ fever/chills — hot and shivery two nights) · red flags · urinary (burning, frequency, blood) · ★ 'any vaginal discharge?' → yes → ★ STOP: 'what colour? thin and watery or thick? how much — pad or liner? does it smell? any itch? any blood in it? worse at any time of the month, or after sex?' (yellow, watery, liner, smells, no itch, spotting after sex) · ★ permission sentence then menstrual/obstetric/sexual in one run: LMP + regular, bleeding between/after sex, pregnancy chance, ever pregnant, contraception/IUD, sexually active, ★ partners in 6 months (two), condoms (sometimes), STI ever, cervical screening (never) · 'thank you for being so open' · dx PID, four reasons, ★ fertility question answered honestly · DDx grouped incl ★ ectopic — pregnancy test today anyway · V-B: PEFE incl pelvic with consent/chaperone (three tenderness signs, mucopurulent cervicitis, contact bleeding), βhCG, dipstick, swabs → ★ management minute.",
+    "back": {
+      "dx": "Pelvic inflammatory disease — a week of constant dull right lower abdominal pain 5/10 that never moved, deep dyspareunia, post-coital spotting, yellow watery offensive discharge needing a liner, hot and shivery two nights, slight frequency; two male partners in six months, condoms sometimes, on the pill, never screened; T 37.6, HR 92. Version B PEFE: lower abdominal tenderness worse on the right, no peritonism; discharge at the introitus; mucopurulent cervical discharge, contact bleeding; cervical motion tenderness, uterine tenderness, right adnexal tenderness, no mass; βhCG negative, dipstick clear. Any one of the three tenderness signs is enough to start treatment. Management: swabs (chlamydia/gonorrhoea NAAT), full STI screen (HIV, syphilis, hepatitis B), treat empirically today — ceftriaxone 500 mg IM stat + doxycycline 100 mg bd + metronidazole 400 mg bd for 14 days VERIFY TG — partners from six months, no sex until seven days after treatment and partners treated, review 48–72 h, retest at three months, first cervical screening test, admission criteria.",
+      "plan": [
+        [
+          "0:00",
+          "★ 'Examiner, is my patient haemodynamically stable, and could I have the vital signs, please?' → stable, T 37.6 · 'Hello Mary, I'm Dr —, is it all right if I ask some questions? what's brought you in?' → ★ 'I'm sorry you've been dealing with that for a whole week — that must be wearing. I'd like to ask some questions to work out what's causing it, then explain what I think.'"
+        ],
+        [
+          "0:45",
+          "Pain: 'show me · ★ where did it start — always there? · one side or both? · out of ten? · sharp or dull? · constant? · worse? · travel? · anything better or worse — movement, your period, opening your bowels, sex?' → right, there from the start, 5, dull, constant, slowly worse, [quietly] 'it hurts when we have sex — deep inside' → 'thank you for telling me — that's helpful'"
+        ],
+        [
+          "1:45",
+          "GI: nausea/vomiting, appetite (fine), bloating, bowels, ★ fever/chills (hot and shivery two nights) · red flags: weight, lumps, dizziness, PR blood, habit · urinary: burning (no), frequency (a little more), blood"
+        ],
+        [
+          "3:00",
+          "★ 'Have you noticed any vaginal discharge?' → 'yes, I have actually' → ★ STOP and probe: 'what colour? thin and watery or thick? how much — a pad or a liner? does it have a smell? any itch? any blood in it? worse at any time of the month, or after sex?' → yellow, thin/watery, liner, smells unpleasant ('partly why I came'), no itch, spotting after sex"
+        ],
+        [
+          "4:00",
+          "★ 'Mary, I need to ask a few personal questions about your periods and your sexual health, because some causes of this pain start in that area. Everything you tell me is confidential. Is that all right?' → 'last period, regular? bleeding between periods or after sex? any chance you could be pregnant? ever been pregnant? contraception — a coil or IUD in place? sexually active? ★ how many partners in the last six months? condoms — always, sometimes, or not usually? have you or a partner ever been told you had an STI? when was your last cervical screening test?' → 2 wk ago, regular; spotting after sex; on the pill, no coil; never pregnant; two partners; sometimes; never; never screened → 'thank you for being so open with me — that helps a great deal' · PMHx, meds (pill), allergies"
+        ],
+        [
+          "6:00",
+          "★ 'Mary, most likely you have a condition we call pelvic inflammatory disease. That means an infection has travelled up from the neck of the womb into the womb and the tubes.' · 'is that serious? will I still be able to have children?' → ★ 'It is treatable, and we're going to start treatment today. I'll be honest: if it's left untreated, or happens again and again, it can scar the tubes, and that can make it harder to get pregnant later. That's exactly why we treat it early and why finishing all the tablets matters. Most women who are treated properly go on to have normal pregnancies.' · four reasons: pain a week, never moved (different from appendicitis); yellow discharge with a smell; painful deep sex and bleeding after; risk pattern — 'more than one partner recently and condoms not every time — not a judgement, just how these infections spread' (+ hot and shivery)"
+        ],
+        [
+          "7:00",
+          "DDx grouped: 'a pregnancy in the tube — serious, so I want a pregnancy test today even though your period was normal; appendicitis — usually starts near the belly button and moves, and your appetite is fine; a cyst or twisted ovary — sudden and severe, yours built up over a week; a bladder infection — no burning; an infection of the vagina alone, thrush or bacterial vaginosis — doesn't usually cause this much pain or a fever' · ★ close: 'the next steps are swabs, a pregnancy test, and starting treatment today — we don't wait for the swab results, because treating early protects your tubes; I'll also talk with you about your partners being tested and treated, and there are ways to do that that keep your name out of it' · 'do I have to tell my partner?' → confidentiality; anonymous notification"
+        ],
+        [
+          "V-B",
+          "Examiner: general appearance + vitals incl temperature (uncomfortable, not septic, 37.8) · abdomen — inspection, tenderness (lower, worse right), guarding/rigidity/rebound (none), mass, percussion, BS · ★ 'with the patient's consent and a chaperone present, a pelvic examination — inspection of the vulva (rash, ulcers, warts, lumps, discharge); speculum — cervix appearance, discharge from the os, contact bleeding; bimanual — cervical motion tenderness, uterine size and tenderness, adnexal tenderness or mass; bedside — urinary βhCG, dipstick, swabs with the speculum' → discharge at introitus; mucopurulent cervical discharge, bleeds on contact; CMT +, uterus tender, right adnexal tenderness, no mass; βhCG −, dipstick clear · ★ management minute in order: tests (endocervical/vaginal NAAT chlamydia + gonorrhoea, full screen — HIV, syphilis, hep B; pregnancy test done) → ★ treatment today, not waiting (IM injection now, two tablets bd × 14 days, finish every one) → ★ partners from six months tested and treated even if well (anonymous service) → ★ no sex until 7 days after finishing and partners treated → review 48–72 h, retest 3 months (reinfection), first CST → admit if high fever/shakes, vomiting, worse pain, faint (IV antibiotics)"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Examiner, is my patient haemodynamically stable, and could I have the vital signs, please?' / 'I'm sorry you've been dealing with that for a week — that must be wearing.' / 'Anything that makes it better or worse — movement, your period, opening your bowels, or sex?'",
+        "★ 'Have you noticed any vaginal discharge?' → ★ 'What colour is it? Is it thin and watery or thick? How much — do you need a pad or a liner? Does it have a smell? Any itch? Any blood in it? Is it worse at any point in the month, or after sex?'",
+        "★ 'I need to ask a few personal questions about your periods and your sexual health, because some causes of this pain start in that area. Everything you tell me is confidential. Is that all right?' / ★ 'How many partners in the last six months?' / ★ 'Do you use condoms — always, sometimes, or not usually?' / 'Have you or a partner ever been told you had a sexually transmitted infection? When was your last cervical screening test?' / 'Thank you for being so open with me — that helps a great deal.'",
+        "★ 'Mary, most likely you have a condition we call pelvic inflammatory disease. That means an infection has travelled up from the neck of the womb into the womb and the tubes. There are four reasons I think that …' / ★ 'Most women who are treated properly go on to have normal pregnancies. That's exactly why finishing the tablets matters.' / 'This is a common infection, it's treatable, and we're starting treatment today.'",
+        "★ To examiner (V-B): 'With the patient's consent and with a chaperone present, I would like to perform a pelvic examination … on bimanual — is there cervical motion tenderness, is the uterus of normal size and is it tender, and is there adnexal tenderness or a mass? And bedside tests — a urinary βhCG and a urine dipstick, with swabs taken at the same time as the speculum.'",
+        "★ 'I'm not going to wait for the results — I'd treat empirically today.' / ★ 'Partners from the last six months need testing and treatment, whether or not they have symptoms.' / ★ 'No sex until seven days after treatment is finished and partners are treated.' / 'I won't contact anyone without your permission — and there are anonymous ways to let a partner know.' / 'Come back sooner with a high fever, vomiting, worse pain, or feeling faint — that would mean antibiotics through a drip in hospital.'"
+      ],
+      "pefe": [
+        "Role-player: Mary, 19, retail assistant and part-time student; embarrassed, doesn't want to be judged; truthful when asked directly, volunteers nothing — except 'it hurts when we have sex, deep inside' when asked what makes the pain worse. 'Any discharge?' → 'yes, I have actually' and STOPS — colour/thickness/amount/smell each only when asked separately. Hesitates before partner questions; if the doctor pauses, frowns or sounds disapproving → 'a couple, I suppose' and vaguer. Once diagnosed: 'is that serious? will I still be able to have children?'; near the end: 'do I have to tell my partner?'; 'sorry, what does that mean?' to PID/adnexal/ectopic",
+        "Vitals 118/72 · 92 · 16 · 37.6 · 99%. V-B PEFE: uncomfortable, not septic, T 37.8; abdomen moves normally, lower tenderness worse right, no guarding/rigidity/mass, BS normal; vulva normal with discharge at the introitus; mucopurulent discharge from the os, contact bleeding; CMT +, uterus tender, right adnexal tenderness, no mass; βhCG −, dipstick clear",
+        "PID: ascending polymicrobial infection (chlamydia, gonorrhoea, Mycoplasma genitalium, anaerobes/BV organisms); clinical diagnosis — lower abdominal pain + any one of CMT/uterine/adnexal tenderness, after excluding pregnancy; low threshold to treat (sequelae: tubal factor infertility, ectopic, chronic pelvic pain, tubo-ovarian abscess, Fitz-Hugh–Curtis). Investigations: βhCG, endocervical/vaginal NAAT (chlamydia, gonorrhoea, M. genitalium), HVS (BV, trichomonas), HIV/syphilis/hep B serology, FBE/CRP if unwell, pelvic USS if mass/severe. Treatment VERIFY TG: ceftriaxone 500 mg IM stat + doxycycline 100 mg bd 14 d + metronidazole 400 mg bd 14 d (azithromycin alternative); IUD may usually remain if improving VERIFY; admit for IV therapy if febrile/septic, vomiting, pregnant, TOA, peritonitis, not improving at 48–72 h. Partner notification: contacts from 6 months (chlamydia) — Let Them Know; chlamydia and gonorrhoea notifiable; abstain 7 days post-treatment and until partners treated; retest 3 months; contraception review (pill + condoms); first cervical screening test from 25",
+        "SA: Adelaide Sexual Health Centre (Clinic 275) · SHINE SA · Let Them Know · MedSTAR 1300 13 12 33 if septic from a rural site · TIS 131 450"
+      ],
+      "fails": [
+        "Moving straight from her opening sentence to 'when did it start?' (the response to the opening statement is separately marked online)",
+        "★ Hearing 'yes, I have discharge' and moving to the next screening question — never characterising it",
+        "Sexual history without the permission/confidentiality sentence; visible judgement (she goes vague); not asking partners in six months, condoms, previous STI, IUD, screening",
+        "Differentials without ectopic and a pregnancy test 'anyway'; finishing on the differentials with no 'what happens next'",
+        "V-B: waiting for swab results before treating; no partner notification; no abstinence advice; no review/retest; no admission criteria; pelvic exam without consent and chaperone"
+      ],
+      "numbers": [
+        "V-A history 6 min · V-B history 3 min, management from ~6:00 · three tenderness signs — any one = treat · probe: colour · consistency · volume · odour → itch, blood, timing, after sex",
+        "Ceftriaxone 500 mg IM stat + doxycycline 100 mg bd 14 d + metronidazole 400 mg bd 14 d VERIFY · partners 6 months · no sex until 7 d after treatment + partners treated · review 48–72 h · retest 3 mo",
+        "Admit: febrile/septic, vomiting, pregnant, TOA, peritonitis, no improvement 48–72 h · Clinic 275 · SHINE SA · Let Them Know · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "PID_2_Case_Tasks_Script_Notability.pdf (Mary, 19, a week of right lower abdominal pain with deep dyspareunia and a yellow offensive discharge — pelvic inflammatory disease; Version B examination and management minute)"
+  },
+  {
+    "id": "MED-160",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "General practice. Six-minute history (hard stop), examination findings on a card ('a mass is felt in the right iliac fossa' — name the sequence you would have performed, including a chaperone and a bimanual pelvic examination, before you take it), then diagnosis and differentials in TWO lists. Automatic fails: never saying ovarian cancer; diagnosing IBS despite a mass; only one differential list; false reassurance; no red flags.",
+    "stem": [
+      "Jenny Marsden, 55, is worried that her tummy is getting bigger (also recalled as 'abdominal distension' / 'enlarged tummy'). Card: a mass is felt in the right iliac fossa; observations normal."
+    ],
+    "tasks": [
+      "Take a focused history (6 minutes)",
+      "Physical examination findings will be given on a card — you do not examine",
+      "Explain your most likely diagnosis and your differential diagnoses to the patient"
+    ],
+    "time": "8 min. Intro, 'glad you came in rather than waiting' · ★ define by 1:20: 'bloated and full of wind, or has your tummy actually got bigger — waistband tighter, clothes not doing up?' (both — skirts stopped doing up) · timing (3–4 months), constant vs intermittent (constant now), worse, food, ★ better after bowels? (no) · pain, N/V, bowels → ★ 'constipated — is that new? how long? any blood?' · ★ red flags unconditional by 3:10: weight (put a couple of kilos ON — ascites), ★ appetite ('feel full really quickly' = early satiety), blood/black stools, lumps, tiredness, fever/sweats · ★ ovarian cluster by 4:30: early satiety confirmed, pelvic/dragging pain, urinary frequency/urgency + duration, ★ LMP/postmenopausal bleeding, post-coital bleeding/discharge, cervical screening + mammogram, ★ FHx bowel/ovarian/breast/uterine (mother breast cancer at 50) · rest of GI fast: groin lump, operations, ★ passing wind (obstruction), dairy/gluten, greasy stools, IBD ×4, travel · weight-gain sweep: cold intolerance, chest pain/SOB lying flat, leg swelling, jaundice, purple striae, medications incl OTC, diet/activity, mood · ★ 'what were YOU worried this might be?' (friend had ovarian cancer) · card → 'I would have examined with a chaperone — appearance/obs, inspection for distension and distended veins, palpation for tenderness/masses/organomegaly, percussion for shifting dullness and fluid thrill, bimanual pelvic' · ★ warning shot → 'a lump in the lower right' + 'I'm concerned about the possibility of a cancer of the ovary' → STOP, five seconds → three reasons → two lists → CA-125 + USS both urgent, phone the results, gynae-oncology, PATS, obstruction safety-net, support person.",
+    "back": {
+      "dx": "Ovarian cancer until proven otherwise — 3–4 months of progressive distension (wind AND girth — skirts stopped doing up), new constipation, early satiety, dragging pelvic ache, urinary frequency/urgency for two months, a couple of kilos gained (ascites), postmenopausal four years with no bleeding, mother with breast cancer at 50; card: RIF mass, observations normal. Three reasons: bloating/girth (wind and fluid), the persistent symptom cluster (early satiety, constipation, frequency — nothing alone, together and lasting this long they matter), and the lump. Two lists: bowel — bowel cancer (no bleeding), coeliac/lactose, IBD, obstruction (passing wind, no surgery), IBS ('a label I can't use when there's a lump'); other causes of a bigger tummy — fluid from heart/kidney/liver, hypothyroidism, hormonal (Cushing's), medications, ordinary weight gain. Plan: CA-125 and pelvic/abdominal ultrasound together, both urgent; phone the results; gynaecological oncology; PATS; obstruction safety-net; support person.",
+      "plan": [
+        [
+          "0:00",
+          "'Am I speaking with Jenny? Thanks for coming in — what's brought you along?' → 'my tummy keeps getting bigger' → 'thank you for telling me — I'm glad you came in rather than waiting. ★ Can I check exactly what you mean? Do you feel bloated and full of wind, or has your tummy actually got bigger — waistband tighter, clothes not doing up?' → both; skirts stopped doing up"
+        ],
+        [
+          "1:20",
+          "'How long? (3–4 months) all the time, or comes and goes? (constant now; used to come and go) getting worse? (yes) anything better or worse — a particular food, ★ better after you open your bowels? (no)' · pain, N/V · 'how are your bowels?' → constipated → ★ 'is that new for you? how long? any blood or black stools?' (couple of months, not like me, no blood) · stool shape · fever"
+        ],
+        [
+          "2:45",
+          "★ 'A few questions I ask everybody: lost any weight without trying?' (no — put a couple of kilos on) · 'appetite?' → ★ 'strange — I feel full really quickly' (register: early satiety) · lumps, tiredness (blames work), fever/night sweats"
+        ],
+        [
+          "3:30",
+          "★ Ovarian cluster: 'you mentioned feeling full quickly — full after only a small amount?' · 'any pain low in the tummy or pelvis?' (dragging ache) · 'passing urine more often, or a sudden urge? how long?' (couple of months) · ★ 'when was your last period? any bleeding at all since?' (4 y; none) · post-coital bleeding, discharge · 'up to date with cervical screening and mammogram?' (both) · ★ 'anyone in the family with bowel, ovarian, breast or uterine cancer?' (mum — breast cancer at 50) → 'that's relevant — breast and ovarian cancer can run together in families'"
+        ],
+        [
+          "4:30",
+          "Fast: groin lump, operations, ★ 'still passing wind normally?' (yes) · dairy/bread-pasta, greasy stools, mouth ulcers/joints/rash/eyes, travel · weight-gain sweep: 'feel the cold? chest pain, breathless lying flat? leg swelling? yellowing? purple stretch marks? medications incl OTC? (BP tablet) diet or activity changed? mood?' · ★ 'can I ask — what were you worried this might be?' → 'my friend had ovarian cancer — it started like this' → 'thank you for telling me — I'm going to be straight with you about what I'm thinking, but first let me get the examination findings'"
+        ],
+        [
+          "6:00",
+          "★ 'Examiner, may I have the physical examination findings? I would examine her with a chaperone present, starting with general appearance and vital signs, then inspection of the abdomen for distension and distended veins, palpation for tenderness, masses and organomegaly, percussion for shifting dullness and a fluid thrill, and then a bimanual pelvic examination.' → card: mass in the right iliac fossa; observations normal"
+        ],
+        [
+          "6:30",
+          "★ 'Jenny, I've got the examination findings here, and there is something in them I do need to explain. Is it alright if we go through it now? … When your tummy was examined there was a lump in the lower right part of your abdomen. Putting that together with everything you've told me, I'm concerned about the possibility of a cancer of the ovary.' [★ STOP — five seconds; 'that's what I was afraid of'] → 'I know. And I want to be clear — I don't know that yet. It's the thing I have to rule out first, and I don't want to waste any time doing it. Would it help if I explained why I'm thinking it?' → ★ three reasons: 'the bloating and your tummy getting bigger — this condition causes both, partly wind and partly fluid collecting; the pattern of the other symptoms — feeling full quickly, the constipation, passing urine more often — on their own each is nothing, together and lasting this long they matter; and the lump'"
+        ],
+        [
+          "7:15",
+          "★ Two lists: 'in the bowel — a bowel cancer, less likely with no bleeding; food problems like coeliac or lactose intolerance, which don't fit; inflammation of the bowel; a blockage — no, you're passing wind normally and have had no surgery; and irritable bowel, a label people often get but which I can't use when there's a lump. Then the things that make a tummy bigger for other reasons — fluid from the heart, kidneys or liver; an underactive thyroid; hormone conditions; medications; and ordinary weight gain. None fit as well.' · plan: 'today a blood test called CA-125 and an ultrasound of your tummy and pelvis — both marked urgent — and I'll ring you as soon as they're back rather than waiting for you to book. Depending on what they show I'll refer you to a specialist team who deal specifically with cancers of the ovary; if you need to travel to Adelaide there's a scheme for travel and accommodation.' · ★ safety-net: 'straight to emergency if the pain becomes severe, you start vomiting, you stop passing wind or opening your bowels, or your tummy becomes hard and tender; ring me if any bleeding' · 'is there someone you'd like with you when we go through the results?' (daughter — video if needed) · 'am I going to be alright?' → speed and process, not outcome; written information"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Do you feel bloated and full of wind, or has your tummy actually got bigger?' / ★ 'There are two sorts of things that make a tummy get bigger — problems in the bowel, and things that cause weight or fluid to build up. I'm going to ask about both.' / ★ 'Is that new for you? How long? Any blood?'",
+        "★ 'Do you feel full after only a small amount of food?' / 'Any pain low in the tummy or the pelvis? Are you passing urine more often than you used to, or getting a sudden urge to go?' / ★ 'When was your last period? Have you had any bleeding at all since then?' / ★ 'Has anyone in the family had bowel, ovarian, breast or uterine cancer?' / ★ 'What were you worried this might be?'",
+        "★ 'Examiner, may I have the physical examination findings? I would examine her with a chaperone present, starting with general appearance and vital signs, then inspection of the abdomen for distension and distended veins, palpation for tenderness, masses and organomegaly, percussion for shifting dullness and a fluid thrill, and then a bimanual pelvic examination.'",
+        "★ 'I've got the examination findings here and there is something I do need to explain. Is it alright if we go through it now?' / ★ 'I'm concerned about the possibility of a cancer of the ovary.' [five seconds of silence] / ★ 'I don't know that yet, and that's exactly why I'm arranging these tests today.' / ★ 'On their own each of those is nothing. Together, and lasting this long, they matter.' / ★ 'Irritable bowel is a label people often get given, but I can't use it when there's a lump.'",
+        "★ 'I'll ring you as soon as they're back rather than waiting for you to book.' / ★ 'Is there someone you'd like with you when we go through the results?' / 'Come straight to the emergency department if the pain becomes severe, if you start vomiting, if you stop passing wind or opening your bowels altogether, or if your tummy becomes hard and tender.'",
+        "Variant B (ascites + weight loss on the card — shifting dullness and fluid thrill): 'before I go on — what's your understanding of why we did the examination today?' → 'I'm afraid the findings are more serious than I'd hoped, and I'd rather tell you properly than skate over it. As well as the lump, there is fluid collecting in your abdomen — that's what has made it swell so quickly, and it's also why you've lost weight elsewhere without noticing. Together, I'm concerned this is an ovarian cancer that has already spread within the abdomen. I'm arranging for you to be seen this week; the team will drain some of that fluid, which will make you more comfortable, and testing it tells them a lot. Would you like me to ring your daughter now?' (add ascitic tap for cytology/SAAG, VTE risk, nutrition, pain) / Variant C (came on over three days, vomiting, no wind since yesterday): 'thank you — that changes things. I'm going to stop the questions there. I'm concerned your bowel may be blocked, which needs looking at today. I'll examine you now, put a drip in, keep you nil by mouth and speak to the surgical team.'"
+      ],
+      "pefe": [
+        "Role-player: Jenny Marsden, 55, school administration officer in a country town, married to Peter, daughter in Adelaide; postmenopausal 4 y; practical, self-deprecating; put it off assuming 'just my age' — opens with it if given an opening (a weak candidate agrees). Does NOT volunteer early satiety — only 'I feel full really quickly' if appetite is asked (never the words 'early satiety'). Mother breast cancer at 50. Hidden: close friend's ovarian cancer started like this — only if asked what she's worried about, else ~7 min. At the news: 'that's what I was afraid of' then silent for a full five seconds — marks down talking through it. 'Am I going to be alright?' — mark down 'I'm sure it's nothing serious'. Asks about her daughter",
+        "Card: a mass is felt in the right iliac fossa; observations normal; no other abnormality recorded. Variant B: + shifting dullness and fluid thrill; weight loss",
+        "Six Fs of a big abdomen: fat, fluid, flatus, faeces, foetus, (fatal) growth. Ovarian cluster >12 times/month, persistent, new after 50 → CA-125 + TVUS together; RMI = U × M × CA-125 (refer >200 VERIFY); CA-125 normal in ~half of early ovarian cancer — never use it to exclude; shifting dullness needs ~1500 mL (roll 45°, wait 15–30 s). Screening status: CST 5-yearly 25–74; iFOBT 2-yearly 45–74 VERIFY; BreastScreen 2-yearly 50–74. Breast + ovarian FHx → BRCA — genetics referral. Obstruction from peritoneal disease is a real complication — flatus question and obstruction safety-net",
+        "Timing: define by 1:20 · red flags by 3:10 · ovarian cluster by 4:30 · stop at 6:00 · Cancer Council SA 13 11 20 · PATS · TIS 131 450"
+      ],
+      "fails": [
+        "Running a generic wind/bloating history without defining girth — never reaching the ovarian cluster; hearing 'constipated' and moving on",
+        "Accepting weight gain as reassurance; missing 'I feel full really quickly'; diverting into a UTI history at 'frequency'",
+        "Taking the card in silence — not naming the sequence, chaperone and pelvic examination",
+        "★ Never saying ovarian cancer; ★ IBS despite a mass; ★ one differential list; ★ false reassurance; filling the five-second silence",
+        "Ending on the referral — no support person, no written information, no obstruction safety-net; CA-125 or ultrasound alone rather than both, urgent, with results phoned"
+      ],
+      "numbers": [
+        "Cluster >12/month, persistent, new >50 · CA-125 + TVUS together · RMI = U × M × CA-125, refer >200 VERIFY · CA-125 normal in ~½ early disease · shifting dullness ~1500 mL",
+        "Define by 1:20 · red flags 3:10 · ovarian cluster 4:30 · stop 6:00 · silence 5 s · CST 25–74 5-yearly · iFOBT 45–74 2-yearly · BreastScreen 50–74 2-yearly",
+        "Cancer Council SA 13 11 20 · PATS · TIS 131 450"
+      ]
+    },
+    "source": "Abdominal_Girth_Ovarian_2_Case_Tasks_Script_Notability.pdf (Jenny Marsden, 55, 'my tummy keeps getting bigger' — early satiety, new constipation, frequency, a right iliac fossa mass on the card — ovarian cancer; ascites and obstruction variants folded in)"
+  },
+  {
+    "id": "MED-161",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "General practice. Six-minute history (stops at 6:00), no examination, then diagnosis and differentials. Red flags first — malignancy and infection before the comfortable groups — because she looks fit and well. Ask intake and training load SEPARATELY (hours and days), and the consequences (periods, bones, performance). Automatic fails: stopping the history at 'athlete'; never asking purging or fear of weight gain in words; presenting the finding as good news; prescribing intake or training numbers across the desk.",
+    "stem": [
+      "Anna Petrides, 35, is worried about losing weight."
+    ],
+    "tasks": [
+      "Take a focused history (6 minutes)",
+      "No physical examination is performed or provided",
+      "Explain your most likely diagnosis and your differential diagnoses to the patient"
+    ],
+    "time": "8 min. Intro · ★ signpost the breadth: 'weight loss can come from a lot of directions, so I'm going to ask about quite a few areas — some will feel like they've come out of nowhere' · ★ quantify by 1:24: kilos, period, previous weight, ★ trying?, first noticed, impact (6 kg/4–5 mo, 58→52, not trying; tired, cold) · ★ malignancy first: appetite, lumps (neck/axilla/groin/breast), tiredness, night sweats/fevers, bleeding (bowel/urine/between periods/after sex), cervical screening, FHx cancer · ★ infection normalised: fevers/chills/sweats, travel, sexually active/condoms, IVDU/transfusion/tattoo, TB contact, cough >3 weeks, jaundice — 'why HIV?' → answer once, plainly, continue · endocrine/gut/autoimmune fast: heat intolerance, palpitations, tremor, thirst/polyuria, postural dizziness; bowels, blood, greasy stools, pain, mouth ulcers; joints, rash, dry eyes · ★ psychiatric/eating screen in words: mood, sleep, enjoyment; 'questions I ask everyone about weight — nothing about you prompted them: intense fear of gaining weight? how do you feel about your body/shape? ever vomiting, laxatives, fluid tablets, appetite suppressants? exercise specifically to make up for eating?' · ★ energy in AND out: typical day's food, changed?, ★ 'who decides what you eat?' (dietitian + coach); ★ 'what does training look like — what, how many hours, how many days?' (~8 h/day, 6 days), changed? (up since February) · ★ consequences: periods (stopped 4 months), pregnancy, stress fractures (foot last year), infections, ★ performance (slower this season — the opening) · ★ one respiratory question: haemoptysis, cough, shoulder/inner-arm pain · 6:00 → explain the energy gap without making it good news; 2.5–5 h/week comparison; why it still needs treating; nine grouped DDx; bloods + CXR; sports physician + sports dietitian; DEXA; coach; safety-net; open door on eating.",
+    "back": {
+      "dx": "Low energy availability from excessive training with dietary restriction (relative energy deficiency in sport) — 6 kg (10%) unintentional loss over 4–5 months (58→52 kg), tired, cold, training ~8 h/day 6–7 days/week (up since February for trials) on reduced portions set by a programme dietitian and coach; amenorrhoea 4 months; stress fracture last year; performance slower this season (her real fear); no red flags for malignancy or infection; no fear of weight gain, no purging, no compensatory exercise ('I train because it's the job') — denial of intent excludes one criterion, not the spectrum. Explain the gap (adult guideline 2.5–5 h/WEEK), say clearly it is common in athletes and still harmful — the amenorrhoea is bone risk and the stress fracture is the evidence. Still exclude the serious causes: bloods (FBE, ESR/CRP, UEC, LFT, TSH, glucose/HbA1c, coeliac serology, iron, B12/folate, HIV/hepatitis/TB testing as indicated, βhCG), chest X-ray; sports physician + accredited sports dietitian (no numbers across the desk); DEXA after 6 months of amenorrhoea or any stress fracture; speak with the coach; open door on eating; Butterfly Foundation if the eating side surfaces.",
+      "plan": [
+        [
+          "0:00",
+          "'Am I speaking with Anna? Thanks for coming in — what's brought you along?' → 'losing weight, don't know why' → ★ 'I understand why that's worrying you, and I'm glad you came in to have it looked at properly. Weight loss can come from a lot of different directions, so I'm going to ask about quite a few areas — some will feel like they've come out of nowhere. Is that alright?'"
+        ],
+        [
+          "0:40",
+          "★ Quantify: 'how many kilos, over what period? what did you weigh before? ★ have you been trying to lose weight? when did you first notice? how is it affecting you day to day?' → 6 kg, 4–5 months, 58→52, no, tired and cold"
+        ],
+        [
+          "1:24",
+          "★ 'I'm going to start with the things I most want to rule out': appetite (fine — 'I eat what I'm given'), lumps — neck/armpits/groin/breast, tiredness, night sweats/fevers, bleeding — bowels/urine/between periods/after sex, cervical screening (up to date), FHx cancer (none)"
+        ],
+        [
+          "2:20",
+          "★ 'Now some questions about infections — I ask these of everyone with unexplained weight loss': fevers/chills/sweats, travel, sexually active + condoms (one partner, both tested), IVDU/transfusion/tattoo, TB contact, cough >3 weeks, jaundice → 'why are you asking about HIV?' → ★ 'because infections are one of the groups I have to rule out when someone loses weight without meaning to — I ask everyone. Is that alright?' (no apology, continue)"
+        ],
+        [
+          "3:10",
+          "Fast, one per group: heat intolerance, palpitations, tremor · thirst/polyuria · postural dizziness → 'no — I'm cold all the time' · bowels, diarrhoea/blood, greasy stools, tummy pain, mouth ulcers · joints, rash, dry eyes → all no"
+        ],
+        [
+          "3:50",
+          "★ Psychiatric/eating in words: 'how has your mood been? sleep? still enjoying things?' (mood okay; sleep poor — early training) · ★ 'now some questions I ask everyone who comes in about their weight — nothing about you in particular has prompted them: do you have an intense fear of gaining weight? how do you feel about your body and your shape? have you ever tried to control your weight by making yourself vomit, or using laxatives, fluid tablets or appetite suppressants? do you ever exercise specifically to make up for something you've eaten?' → no ('I need the weight for power'; 'I train because it's the job')"
+        ],
+        [
+          "4:40",
+          "★ Energy in: 'talk me through what you'd eat on a normal day — has that changed? ★ who decides what you eat?' (smaller portions; dietitian, part of the programme; dietitian + coach) · ★ energy out: 'what does your training look like — what do you do, how many hours, how many days a week? has that changed recently?' → ~8 h/day, 6 days, sometimes 7; up since February for trials (write it down — don't react, don't lecture) · ★ consequences: 'have your periods changed or stopped? any chance you're pregnant? stress fractures or bone injuries? more infections, or has your performance dropped?' → stopped 4 months ('just the training'); no; foot last year; ★ 'honestly, I've been slower this season' · ★ 'last thing — ever coughed up blood? any cough? shoulder or inner-arm pain?' → no · supplements (multivitamin, protein powder), alcohol, smoking"
+        ],
+        [
+          "6:00",
+          "★ 'Anna, I think I know why you're losing weight, and I want to explain it properly rather than just reassure you. You're training around eight hours a day, six days a week — the general recommendation for adults is somewhere between two and a half and five hours a WEEK. At the same time your portions have come down. So you're taking in less energy than your body is using, and the weight loss is your body making up the difference from its own reserves.' · 'but I'm an athlete, that's normal' / 'my dietitian set the plan' → ★ 'it's common in athletes — and it's still a clinical problem; those are different statements' · ★ why it matters: 'when that gap goes on for months the body shuts down what it treats as optional. That's why your periods have stopped — and that isn't a side issue, because the hormone that drives your cycle is also what keeps your bones strong. That stress fracture last year fits the same picture. If this continues: more fractures, more infections, and — the part that usually gets athletes' attention — performance going backwards no matter how hard you train.' → 'I have been slower this season' → use the opening"
+        ],
+        [
+          "7:00",
+          "★ DDx grouped, why less likely: cancers (no lumps/sweats/bleeding, screening current) · infections — HIV, TB, hepatitis (no risk factors; test anyway — can't afford to miss) · thyroid, diabetes · coeliac, IBD · autoimmune · depression and eating disorders ('I asked about those and I'll keep the door open') · medications/supplements · (respiratory screened) · plan: 'those blood tests and a chest X-ray, so the serious things are excluded rather than assumed; referral to a sports physician and an accredited sports dietitian so your intake is matched to your training by someone who does this properly — I don't want to hand you a number across the desk; a bone density scan because of the periods; ★ would you be willing for me to speak with your coach?' ('my coach won't like it' → 'that's exactly why I asked — this works far better as a conversation between all of us than as me telling you to train less') · safety-net: faint/near-faint on standing, palpitations, bone pain that doesn't settle, fevers/sweats, haemoptysis — 'and come back sooner if you find the eating side of this harder than you've told me today' · 'so I'm not sick?' → 'you haven't got the serious illnesses I was looking for — the tests confirm rather than assume — but I don't want you to hear \"it's just the training\" and go away, because the pattern is doing you harm; your periods and that fracture are the evidence'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Weight loss can come from a lot of different directions, so I'm going to ask about quite a few areas.' / 'How many kilos have you lost, and over what period? What did you weigh before? Have you been trying to lose weight?' / 'That's helpful, thank you — I'll come back to it. First I want to rule out a few things.'",
+        "★ 'I ask everyone with unexplained weight loss — infections are one of the things I have to rule out.' / ★ 'These are questions I ask everyone who comes in about their weight — there's nothing about you in particular that's prompted them. Do you have an intense fear of gaining weight? How do you feel about your body and your shape? Have you ever tried to control your weight by making yourself vomit, or by using laxatives or fluid tablets? Do you ever exercise specifically to make up for something you've eaten?'",
+        "★ 'Talk me through what you'd eat on a normal day. Has that changed? Who decides what you eat?' / ★ 'And what does your training look like — what do you do, how many hours, how many days a week? Has that changed recently?' / ★ 'Have your periods changed, or stopped? Any stress fractures or bone injuries? Are you getting more infections, or has your performance dropped?' / 'Last thing — have you ever coughed up any blood? Any cough at all? Any shoulder or inner-arm pain?'",
+        "★ 'I want to explain it properly rather than just reassure you.' / ★ 'The recommendation for adults is two and a half to five hours a week.' / ★ 'Your periods stopping isn't a side issue — the hormone that drives your cycle is what keeps your bones strong.' / ★ 'I'm not saying you have an eating disorder. I'm saying this pattern is doing you harm.' / ★ 'I don't want to hand you a number across the desk.' / ★ 'Would you be willing for me to speak with your coach?'",
+        "Variant B (legacy Pancoast — 'a bit of blood in the tissue a couple of times, and my right shoulder's been aching for months … down the inside of my arm to my little finger'): 'that distribution is C8–T1, not a rotator cuff' → examiner: 'the respiratory examination including the apices, the small muscles of the hands, and the eyes for ptosis and pupillary asymmetry' → reduced air entry/dullness right apex, small-muscle wasting right hand, right ptosis with a constricted pupil → 'an apical lung finding, wasting in the C8–T1 distribution and Horner syndrome on the same side makes me concerned about a tumour at the top of the lung — a Pancoast tumour; chest X-ray today, CT chest, urgent referral' → warning shot, name the concern, pause, reasons, plan, support person",
+        "Variant C ('I wouldn't say fear — I just think about it a lot' / 'if I've had a bad day with food I'll add an extra session'): 'thank you for telling me that — it's not an easy thing to say. Can you tell me a bit more about what that's like?' → acknowledge, one open question, continue the screen; then: specialist eating-disorder assessment, check medical stability (postural BP and pulse, ECG for bradycardia/prolonged QT, electrolytes), psychology, Butterfly Foundation 1800 33 4673; no weight or intake targets from you; training not made conditional on a number"
+      ],
+      "pefe": [
+        "Role-player: Anna Petrides, 35, competitive athlete (swimmer/rower/dancer) training for national trials, part-time coach, lives with partner; articulate, disciplined, slightly impatient, doesn't see herself as a patient; multivitamin and protein powder, no alcohol in season, never smoked. Does NOT volunteer the training — 'do you exercise?' → 'yes, I'm an athlete' and stops; the eight hours only to 'how many hours and how many days'. Pushes back once on HIV ('why are you asking?') — apologising/backing off/skipping is marked down. Defends the programme ('normal for athletes', 'my dietitian set the plan'). Hidden: her performance has dropped and it frightens her more than the weight — only if asked directly about performance, or ~7 min with rapport; softens the moment it's connected. 'My coach won't like it' near the end — mark up offering to speak to the coach",
+        "No examination. Findings by history: 6 kg (10%) over 4–5 months unintentional; fatigue, cold intolerance; secondary amenorrhoea 4 months; stress fracture last year; performance decline; training ~48 h/week; reduced intake; all red-flag groups negative; eating screen negative (Variant C positive)",
+        "Significant weight loss: >5% in 6–12 months. Adult activity guideline 150–300 min moderate or 75–150 min vigorous per week. RED-S/low energy availability: energy availability <30 kcal/kg fat-free mass/day; consequences — hypothalamic amenorrhoea, low bone density/stress fractures, immune suppression, iron deficiency, low mood, performance decline, bradycardia/hypotension in severe cases; DEXA after 6 months of amenorrhoea or any stress fracture; management — increase energy availability (sports dietitian), reduce training load (sports physician + coach), consider transdermal oestrogen for bone in persistent amenorrhoea (specialist) VERIFY — the OCP masks the problem; monitor return of menses. Work-up for unintentional weight loss: FBE, ESR/CRP, UEC, LFT, Ca, TSH, glucose/HbA1c, coeliac serology (tTG-IgA + total IgA on gluten), iron/B12/folate, βhCG, HIV/hepatitis serology, TB screening if risk, CXR (cough >3 weeks), urinalysis; targeted imaging by findings",
+        "Eating disorder screen (SCOFF-style, in plain words): fear of weight gain, body image, purging, laxatives/diuretics/appetite suppressants, compensatory exercise, binge/loss of control; medical instability — bradycardia <50, postural drop, hypothermia, electrolytes, QT; anorexia nervosa needs intent/fear — denial excludes one criterion, not the spectrum (atypical AN, ARFID, OSFED). Butterfly Foundation 1800 33 4673 · Sports Medicine Australia · TIS 131 450 · timing: quantify by 1:24 · malignancy + infection by 3:24 · psychiatric + lifestyle by 6:00"
+      ],
+      "fails": [
+        "Not signposting — the HIV and eating questions land as accusations; apologising for or dropping the HIV question when she pushes back",
+        "Accepting 'some weight'; leaving cancer and infection to the end because she looks fit",
+        "★ Stopping at 'I'm an athlete' — never asking hours and days; asking only diet or only exercise; not asking who sets the plan; missing periods, bones, performance",
+        "★ Never asking purging or fear of weight gain in words; treating a negative answer as proof; sacrificing the psychiatric group for the autoimmune one",
+        "★ Presenting the finding as good news / 'normal for athletes'; ★ prescribing intake or training numbers across the desk; no bloods/CXR ('excluded rather than assumed'); no DEXA; no coach offer; no open door on eating; missing the performance opening"
+      ],
+      "numbers": [
+        "Significant loss >5% in 6–12 mo (hers 10%) · 58→52 kg · training ~8 h/day × 6–7 = ~48 h/wk vs guideline 150–300 min/wk · amenorrhoea 4 mo · stress fracture last year",
+        "DEXA at 6 months amenorrhoea or any stress fracture · chronic cough >3 wk → CXR · coeliac tTG-IgA + total IgA on gluten · EA <30 kcal/kg FFM/day (RED-S) VERIFY",
+        "Butterfly Foundation 1800 33 4673 · TIS 131 450 · quantify by 1:24 · red flags by 3:24 · psych + lifestyle by 6:00"
+      ]
+    },
+    "source": "Weight_Loss_Energy_Deficit_2_Case_Tasks_Script_Notability.pdf (Anna Petrides, 35, athlete losing 6 kg with amenorrhoea and a stress fracture — low energy availability; Pancoast and eating-disorder variants folded in)"
+  },
+  {
+    "id": "MED-162",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "General practice. He is here about weight gain; the bloods are already done (HbA1c 5.7%, AST/ALT mildly raised <2–3× ULN, triglycerides just over 2, everything else normal) — flag them in the first minute, explain them at the end. History to 5:00, examination request (BMI and waist FIRST), then a two-part explanation: lifestyle causes the weight gain; fatty liver explains the bloods — never inverted. Automatic fails: saying fatty liver causes weight gain; naming 'non-alcoholic' without an alcohol history; never asking BMI or waist; false reassurance.",
+    "stem": [
+      "James Whitlock, 60, presents with progressive weight gain. Bloods: HbA1c 5.7% · AST and ALT mildly raised (<2–3× ULN) · triglycerides just over 2 mmol/L · FBE, UEC, ALP, bilirubin, albumin, TFT, other lipids normal."
+    ],
+    "tasks": [
+      "Take a relevant focused history",
+      "Ask the examiner for the physical examination findings",
+      "Explain your most likely diagnosis and your differential diagnoses to the patient"
+    ],
+    "time": "8 min. Intro, open → 'that sounds frustrating — ★ I can also see you've had blood tests and there are one or two things in there I want to go through with you before you leave. Questions first, then examine, then we'll talk it all through' · ★ quantify: kilos, period, previous weight, weighed or clothes?, first noticed, ★ trigger (new medication, injury, work change) → 'nothing's changed' → 'let's go through it anyway — these things creep up so slowly people genuinely don't notice' · impact · ★ named groups aloud: thyroid (cold, constipation, slowed) · heart/kidney (chest pain, exertional SOB — ★ don't accept his attribution: orthopnoea? PND?; leg swelling; frothy urine/passing less) · Cushing (purple striae, bruising, proximal weakness, ★ steroids — tablets/puffers/creams/injections) · ★ all medications incl OTC/herbal, started/changed · ★ eating screen even in a 60 M: fear of weight gain, vomiting/laxatives/diuretics, ★ binge/loss of control, mood · ★ lifestyle open then specific: a typical day of food; ★ 'what do you drink — soft drink, juice, energy drinks?' (2 L Coke/day — only if drinks asked separately); exercise; work (desk); ★ sleep — snoring/apnoea (wife moved out) · ★ liver group: jaundice, dark urine, pale stools, itch, tummy swelling; ★ 'do you drink alcohol at all? … not even socially, nothing on weekends?' (none — gave it away 15 y); transfusions/tattoos/IVDU/needle-stick; ever tested for hepatitis · joints; FHx diabetes (dad — lost toes) · 5:00 examiner: ★ BMI and waist first (38; 91 cm — 'discordant — I'd re-measure at the iliac crest at end-expiration'), four vitals esp BP, Cushingoid features, acanthosis nigricans, thyroid, CVS (JVP, HS, gallop, oedema), resp bases, abdomen (hepatomegaly, splenomegaly, shifting dullness), BSL, dipstick → normal · ★ two things, connected but not the same → bloods → DDx → plan.",
+    "back": {
+      "dx": "Lifestyle weight gain (6–7 kg over six months, 105→112 kg, BMI 38 class II obesity) with MASLD (metabolic dysfunction-associated steatotic liver disease — 'fatty liver'): skipped breakfast, servo lunch, takeaway 4–5 nights, ~2 L Coke a day, no exercise, desk job, loud snoring (probable OSA), father with type 2 diabetes; no alcohol for 15 years (asked twice); no thyroid, cardiac, renal, Cushingoid, medication or eating-disorder cause; examination normal apart from BMI. Bloods: mild transaminase rise (<3× — fatty-liver band, AST:ALT <1), triglycerides >2, HbA1c 5.7% (top of normal; 6.0–6.4 high risk). Two-part explanation — lifestyle causes the weight; fatty liver explains the bloods; 'it's not about fault'. Plan: liver ultrasound, hepatitis B/C serology, iron studies, FIB-4 (refer >2.67); 5–10% weight loss (6–11 kg) settles the enzymes; dietitian + exercise physiologist via a chronic disease plan; the two litres of Coke as the single win; sleep apnoea assessment; diabetes prevention (his hidden fear — 'am I turning diabetic like Dad?'); review 4–6 weeks; safety-net.",
+      "plan": [
+        [
+          "0:00",
+          "'Am I speaking with James? What's brought you along?' → 'keep putting on weight' → ★ 'that sounds frustrating, and I'm glad you came in. I can also see you've had blood tests done and there are one or two things in there I want to go through with you before you leave. Can I ask some questions first, then examine you, then we'll sit down and talk about it all together?'"
+        ],
+        [
+          "0:40",
+          "★ Quantify: kilos and period (6–7 kg, 6 months) · previous weight, weighed or clothes (105→112, weighs himself) · first noticed · ★ 'anything going on around then — new medication, injury, change at work?' → 'nothing's changed' → ★ 'let's go through it anyway — these things creep up so slowly people genuinely don't notice' · impact (clothes, puffed on stairs, embarrassed)"
+        ],
+        [
+          "1:30",
+          "★ 'I'm going to run through the different things that can cause weight gain, so some will seem to come out of nowhere. First the thyroid — feel the cold more than others? constipation? slowed down? Now the heart and kidneys — chest pain? breathless walking uphill? (puffed on stairs — 'the weight') → ★ breathless lying flat, or waking at night short of breath? leg or ankle swelling? frothy urine, passing less?' → no, sleeps flat"
+        ],
+        [
+          "2:30",
+          "Cushing: purple stretch marks (pale, years old), easy bruising, trouble out of a low chair · ★ 'steroids — tablets, puffers, creams, injections?' · ★ 'medications altogether, including over the counter or herbal — anything started or changed in the last year?' (one BP tablet) · ★ 'a couple I ask everybody about weight: intense fear of gaining weight? ever tried to control it by vomiting, laxatives or fluid tablets? episodes of eating a large amount in a short time and feeling out of control? how's your mood?' (no; 'bit flat about the weight')"
+        ],
+        [
+          "3:30",
+          "★ Lifestyle: 'talk me through what you'd eat on a normal day — breakfast, lunch, dinner, in between' (skip breakfast, servo lunch, takeaway 4–5 nights — wife works late) · ★ 'what do you drink through the day — soft drink, juice, energy drinks?' → Coke, ~2 L/day (write it down, no reaction) · exercise (none), work (desk) · ★ 'how's your sleep — do you snore, or has anyone said you stop breathing at night?' (snores like a train; wife in the spare room; tired afternoons)"
+        ],
+        [
+          "4:15",
+          "★ Liver group: 'because of one of your results — yellowing of eyes or skin? dark urine, pale stools? itching? tummy swelling?' · ★ 'do you drink alcohol at all?' → 'no — gave it away 15 years ago' → ★ 'not even socially, nothing on weekends?' → 'not a drop' · transfusions, tattoos, piercings, injected drugs, needle-stick; ever tested for hepatitis (never) · joint pain (knees) · FHx diabetes/heart/liver (dad T2DM, lost toes; mum stroke) · smoking (10/day, 30 y) · concerns → 'am I turning diabetic like Dad?'"
+        ],
+        [
+          "5:00",
+          "★ 'Examiner, the physical examination findings please. First, general appearance — specifically his BMI and his waist circumference. Then all four vital signs, in particular the blood pressure. Then Cushingoid features — moon face, interscapular fat pad, purple striae, proximal weakness, bruising — and skin changes, particularly acanthosis nigricans in the neck and axillae. A thyroid examination. Cardiovascular — JVP, heart sounds, murmur or gallop, peripheral oedema. A brief respiratory examination for bibasal crackles. The abdomen — distension, tenderness, hepatomegaly, splenomegaly, shifting dullness. Office tests — bedside glucose and urine dipstick.' → BMI 38, waist 91 cm, obs normal, no Cushingoid features, thyroid normal, CVS/resp normal, abdomen soft, no organomegaly, no shifting dullness, dipstick negative → ★ 'a waist of 91 cm is discordant with a BMI of 38 — I'd re-measure at the iliac crest at the end of normal expiration before using it for risk'"
+        ],
+        [
+          "6:00",
+          "★ 'James, I've got two things to tell you, and they're connected but they're not the same thing. The first is the weight itself. I went looking for a medical cause and I couldn't find one — your thyroid is normal, nothing suggests a heart, kidney or hormone problem, and none of your medications do this. What I did find is that you're having takeaway most nights, about two litres of soft drink a day, and you're not getting much movement. That combination is the most likely reason the weight is going up.' → 'so it's my fault then' → ★ 'It's not about fault. Weight is driven by a lot of things people don't choose — your job, your sleep, your genes. What I'm telling you is which parts we can actually change.'"
+        ],
+        [
+          "6:45",
+          "★ 'The second thing is your blood tests. Three results are mildly off — two liver enzymes, your blood fats, and your sugar is sitting at the top of the normal range. Together that pattern points to something called fatty liver. When there's more fat around than the body can store in the usual places, some of it goes into the liver, and that irritates it — that irritation is what those enzymes are showing. The important part is that at this stage it is reversible.' → 'is my liver damaged? my uncle died of liver failure' → ★ 'It isn't damaged. There's fat in it, and at this stage that's reversible. What I want to know is whether there's any scarring — I can work that out from a score using bloods you've already had, plus an ultrasound; if it's up, a liver specialist; if not, we manage it here, together.' · DDx grouped: hormone — hypothyroidism (test normal), Cushing's (no signs); fluid — heart, kidneys, advanced liver disease (no swelling, no orthopnoea, normal exam); medications (none cause gain); eating patterns and mood (asked); ★ hepatitis — 'which is why I want a couple of blood tests' · 'am I turning diabetic like Dad?' → honest: HbA1c 5.7 is not diabetes; this is exactly the moment prevention works; recheck"
+        ],
+        [
+          "7:20",
+          "Plan: liver ultrasound; hepatitis B and C serology; iron studies; FIB-4 from existing bloods (refer >2.67) · ★ 'the treatment for both problems is the same one: gradual weight loss — around 5–10% of your body weight, for you roughly 6–11 kg — and the liver enzymes usually settle. Dietitian and exercise physiologist through a chronic disease plan. And honestly — if the soft drink is the only thing you change this month, that alone would be a big win.' ('I could probably do that') · sleep study referral (snoring, daytime tiredness); smoking cessation; BP/lipids/HbA1c recheck; knees · ★ safety-net: yellow eyes/skin, tummy or leg swelling, breathlessness, vomiting blood/black stools, confusion → sooner · review 4–6 weeks · 'what questions have you got?'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'I can also see you've had bloods done, and there are one or two things in there I want to go through with you.' / ★ 'Let's go through it anyway — these things creep up so slowly people genuinely don't notice.' / ★ 'I'm going to run through the different causes of weight gain, so some of these questions will seem to come out of nowhere.'",
+        "'Do you get breathless lying flat, or wake at night short of breath?' / 'Are you on any steroid tablets, puffers, creams or injections?' / 'Do you ever have episodes where you eat a large amount of food in a short time and feel out of control while you're doing it?' / ★ 'Talk me through what you'd eat on a normal day … And what do you drink? Any soft drink, juice or energy drinks?' / 'Do you snore, or has anyone told you that you stop breathing at night?'",
+        "★ 'Do you drink alcohol at all? … Not even socially, nothing on weekends?' / ★ 'Examiner, first — his BMI and his waist circumference.'",
+        "★ 'I've got two things to tell you, and they're connected but they're not the same thing.' / ★ 'It's not about fault. Weight is driven by a lot of things people don't choose — your job, your sleep, your genes. What I'm telling you is which parts we can actually change.' / ★ 'When there's more fat around than the body can store in the usual places, some of it goes into the liver, and that irritates it.'",
+        "★ 'It isn't damaged. There's fat in it, and at this stage that's reversible.' / ★ 'What I want to know is whether there's any scarring, and I can work that out from a score plus an ultrasound.' / ★ 'If the only thing that changed this month was the soft drink, that would already be a big win.' / ★ 'Come back sooner if your eyes go yellow, your tummy or legs swell, or you become confused.'",
+        "Variant B (he drinks — 'a few beers after work' → six to eight cans, every night, twenty years): 'Thanks for being straight with me — that helps a lot. That works out at around eleven standard drinks a night, which is more than the national guideline suggests in a whole week. I think that's the main thing affecting your liver, and I'm telling you because it's also the one change that would make the biggest difference. Can we talk about what cutting back might look like for you?' → alcohol-related liver disease (AST:ALT >2, stigmata), dependence/withdrawal assessment, thiamine, brief intervention, DASSA/ADIS 1300 13 1340 / Variant C ('can't you just give me one of those weight-loss injections?'): 'They exist and they can work. Two things: they aren't subsidised for weight loss in Australia, so they're a private cost, and they work alongside the diet and activity changes rather than instead of them. Let's start the plan and get your results, then talk properly about whether medication or a surgical referral makes sense for you.'"
+      ],
+      "pefe": [
+        "Role-player: James Whitlock, 60, dispatch supervisor (desk) for a grain handler outside Port Pirie, married to Denise, two adult children; pleasant, blunt, mildly embarrassed; not anxious about the bloods (doesn't know they matter). Skips breakfast, servo lunch, takeaway 4–5 nights; Coke ~2 L/day ONLY if drinks asked separately ('do you eat healthily?' → 'not too bad'); no exercise; snores badly (Denise in the spare room), afternoon tiredness; no alcohol for 15 years — doesn't soften on re-asking; 10 cigs/day × 30 y; knees ache; pale old striae; one BP tablet. Pushes at the lifestyle explanation: 'so it's my fault then' (flat — takes the blame out vs lectures); sits forward at the liver: 'is my liver damaged? my uncle died of liver failure' (marks down 'don't worry'). Hidden: father T2DM, lost two toes — 'am I turning diabetic like Dad?' if asked concerns or ~7 min",
+        "Examiner: BMI 38 · waist 91 cm (discordant — re-measure) · obs normal · no Cushingoid features · thyroid normal · CVS/resp normal · abdomen soft, non-tender, no organomegaly, no shifting dullness · dipstick negative. Bloods: HbA1c 5.7%, AST/ALT <2–3× ULN (AST:ALT <1), TG just over 2, rest normal",
+        "Numbers: HbA1c 6.0–6.4% high risk, ≥6.5% diabetes (Australia) · TG >1.7–2.0 raised · BMI 30–34.9 class I, 35–39.9 class II, ≥40 class III · waist men 94/102 cm, women 80/88 · transaminases <5× = fatty-liver band · AST:ALT >2 alcohol, <1 fatty liver · FIB-4 <1.3 low, 1.3–2.67 indeterminate, >2.67 refer (elastography if available) · weight loss 5% improves steatosis, 7–10% inflammation, ≥10% fibrosis; for 112 kg ≈ 6–11 kg · NHMRC ≤10 SD/week, ≤4/day; a 375 mL full-strength can ≈ 1.4 SD (8 cans ≈ 11 SD) · activity 150–300 min/week moderate · review 4–6 weeks",
+        "MASLD work-up: USS (steatosis), hepatitis B/C serology, iron studies/ferritin, FIB-4 ± elastography, lipids, HbA1c/OGTT, coeliac/autoimmune if atypical; manage cardiometabolic risk (BP, lipids — statins safe, diabetes prevention/metformin per guidelines), OSA assessment (STOP-Bang, sleep study), smoking cessation; GLP-1 agonists — private cost for weight; bariatric surgery referral criteria (BMI ≥40, or ≥35 with comorbidity) VERIFY · binge-eating disorder is the commonest eating disorder in Australia, under-recognised in men · SA: Country Health Connect dietitian/exercise physiologist; Quitline 13 7848; ADIS 1300 13 1340; TIS 131 450"
+      ],
+      "fails": [
+        "Not flagging the bloods in the first minute (ambush at 6:00) — or explaining them before the history; accepting 'nothing's changed' and skipping lifestyle",
+        "Accepting exertional breathlessness as 'the weight' without asking orthopnoea/PND; skipping the eating-disorder screen because he's a 60-year-old man; 'do you eat healthily?' — drinks never asked separately",
+        "★ Naming non-alcoholic fatty liver without asking (and re-asking) about alcohol; ★ never asking BMI or waist; arguing with the card",
+        "★ Saying fatty liver causes the weight gain (inverting the two parts); lecturing or blaming; 'don't worry' about the liver; ★ false reassurance",
+        "No ultrasound/viral serology/fibrosis score; no 5–10% target; no allied health; no sleep apnoea thought; no safety-net; not answering the diabetes fear"
+      ],
+      "numbers": [
+        "History to 5:00 · BMI 38 (class II) · waist 91 (re-measure; men 94/102) · HbA1c 5.7 (6.0–6.4 high risk; ≥6.5 diabetes) · TG >2 · transaminases <3× · AST:ALT <1",
+        "FIB-4 >2.67 refer · weight loss 5–10% (6–11 kg) · 2 L Coke ≈ 200 g sugar/day · activity 150–300 min/wk · can of beer ≈ 1.4 SD · review 4–6 wk",
+        "Quitline 13 7848 · ADIS 1300 13 1340 · TIS 131 450"
+      ]
+    },
+    "source": "Weight_Gain_MASLD_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 60, progressive weight gain with mildly raised transaminases and triglycerides — lifestyle weight gain with fatty liver, two-part explanation; drinker and drug-request variants folded in)"
+  },
+  {
+    "id": "MED-163",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "Rural SA general practice (MM5). Version A: 4-minute history (hard stop — three tasks still carry marks), PEFE, diagnosis and differentials, investigations. Version B: explain the CT (orient before you point), diagnosis, management — say the infection/renal-function fork before 4:15 and ALWAYS both size pathways. The pain has already improved — do not open with painkillers. Automatic fails: the word 'fever' never used; no urine dipstick; diagnosis switched to pyelonephritis on loin tenderness + blood; one management pathway; infection never excluded.",
+    "stem": [
+      "James Whitmore, 40, storeman at the grain terminal, presents with sudden-onset abdominal pain this morning; the pain has now improved. T 36.8 · HR 88 · BP 128/78 · RR 16 · SpO2 98%.",
+      "Version B: pain began in the right flank and now radiates to the groin. Dipstick: blood ++, nitrites −, leucocytes −. Non-contrast CT KUB done — film on the desk; no stone size reported."
+    ],
+    "tasks": [
+      "Take a focused history (4 minutes)",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis and differentials to the patient",
+      "Request further investigations",
+      "(Version B) Explain the CT scan; explain the diagnosis; explain your management plan"
+    ],
+    "time": "8 min. 'Am I speaking with James? before we start — comfortable enough to talk now? tell me what's been happening' → 'that sounds horrible, and you're not being silly at all' · 'may I have his vital signs, in particular his temperature?' · SICORA: ★ 'where exactly did it start — point with one finger? and where is it now?' (flank → groin), /10 (9), sharp, sudden, ★ 'all the time, or in waves?' (waves), travel (groin/testicles), better/worse (nothing — pacing), painkillers taken · GI: N/V (once), appetite, bowels, bloating/wind, ★ 'any fevers, chills or shaking episodes?' (no) · ★ the pivot aloud: 'one side, in waves, travelling to your groin — makes me want to ask about your waterworks next' → eight: burning (stinging), frequency (yes), ★ blood (pink this morning — goes tense), dribbling/hesitancy, urgency, nocturia, amounts, ★ 'you or anyone in your family ever had a kidney stone?' (dad, twice) · right-sided extras: jaundice, pale stools, fatty-meal pain; groin lump; testicular pain/swelling · background if time: smoking, alcohol, meds, gout/high calcium, kidney surgery/solitary kidney, ★ fluid intake (hardly any water — hot shed) · ★ 4:00 hard stop — 'was there something you were worried this might be?' (uncle died of bladder cancer at 58) → acknowledge, no false reassurance, commit to answering · ★ examiner: appearance, vitals (temperature first), full abdominal incl pulsatile mass, distended bladder, renal bruits, inguinal/genitalia/DRE, ★ 'as a special test — renal angle tenderness both sides; as an office test — a urine dipstick' · dx ureteric colic, three reasons · ★ the discriminating sentence: tender kidney + blood can suggest infection, but no fever, no nitrites, no leucocytes → not hospital today · cancer worry answered honestly · grouped DDx · three investigations with reasons: CT KUB non-contrast, urine MCS, UEC/eGFR · safety-net, summary.",
+    "back": {
+      "dx": "Ureteric colic — an obstructing stone (Version B: at the vesicoureteric junction, the last centimetre before the bladder): sudden 9/10 sharp right flank pain this morning, in waves, migrating to the groin, pacing, vomited once, now improved; stinging, frequency, pink urine, urgency, some dribbling; father had stones twice; hot shed, drinks almost no water; afebrile. PEFE: settled, T 36.8, mild right-sided tenderness, no peritonism/mass, BS normal, right renal angle tender, groin and scrotum normal, dipstick blood ++, nitrites −, leucocytes −, protein trace. Three reasons: flank-to-groin path, waves, blood in the urine. The fork: loin tenderness + haematuria could mean pyelonephritis — no fever, no nitrites, no leucocytes → no infection → not hospital today. Investigations: non-contrast CT KUB (site and size), urine MCS (no infection behind the block), UEC/eGFR (kidney function changes the plan). Management by size: ≤5 mm — home, NSAID first (± opioid), antiemetic, tamsulosin, strain the urine, normal fluids (don't force), review 2–3 days; >7 mm — urology (ureteroscopy + laser for a low stone, ESWL, PCNL for large renal stones, stent if the kidney needs relieving). Long term: 2.5–3 L/day, low salt, normal calcium/dairy, stone analysis, metabolic work-up. Hidden agenda: uncle died of bladder cancer at 58.",
+      "plan": [
+        [
+          "0:00",
+          "'I'm Dr —; am I speaking with James? Before we start — are you comfortable enough to talk to me now? … Tell me what's been happening.' → 'pain out of nowhere loading the truck, worst ever, pacing the yard; eased off now — feel a bit stupid coming in' → ★ 'that sounds horrible, and you're not being stupid at all — that kind of pain always deserves looking at. I'm glad it has eased. I'll ask a series of questions to work out what caused it.' · 'Examiner, may I have his vital signs, in particular his temperature?' → afebrile, stable"
+        ],
+        [
+          "0:40",
+          "★ 'Where exactly did it start — point with one finger? … And where is it now?' (high right flank → right groin) · 'how bad at its worst, out of ten? (9) sharp, dull, cramping? (sharp, stabbing) when did it start — suddenly? (2 h ago, instant) ★ there all the time, or coming and going in waves? (waves) travel — back, groin, testicles? (groin, top of the leg) anything better or worse — moving, lying still, eating? painkillers?' (nothing; couldn't sit still; two Panadol did nothing)"
+        ],
+        [
+          "2:10",
+          "GI: nausea/vomiting (once), appetite (off), bowels, bloating/wind · ★ 'and have you had any fevers, chills or shaking episodes?' → no → 'good — that matters more here than you'd think'"
+        ],
+        [
+          "2:50",
+          "★ Pivot: 'the way you've described that — one side, coming in waves, travelling to your groin — makes me want to ask about your waterworks next.' → 'burning or stinging? (a bit) passing urine more often? (a lot) ★ any blood — pink, red or tea-coloured?' → 'pink this morning — that's really why I came' (tense) → 'thank you for telling me — important, we'll come back to it' · 'dribbling at the end, trouble starting? sudden urges you can't hold? up at night? passing normal amounts? ★ have you, or anyone in your family, ever had a kidney stone?' (dad, twice, about my age)"
+        ],
+        [
+          "3:50",
+          "'Two quick ones — yellowing of the eyes or skin, pale stools, cramping after fatty food? any lump in your groin, or pain/swelling in your testicles?' (no) · if the clock allows: smoking (10/day), alcohol, meds/allergies, gout/high calcium, operations/kidney surgery, one kidney?, ★ 'how much fluid do you drink in a day?' ('hardly any water — hot in that shed') · ★ 4:00 HARD STOP: 'before I examine you — was there something in particular you were worried this might be?' → [pause] 'my uncle died of bladder cancer at 58 — when I saw the blood I thought, that's it' → ★ 'thank you for telling me. That must have been a frightening morning. I can't promise you anything before I've examined you and done a scan, but I will tell you honestly what I think, and we will not leave that question hanging.'"
+        ],
+        [
+          "4:15",
+          "★ Examiner: 'general appearance — distress, restlessness, dehydration, pallor, jaundice · vital signs, temperature first · full abdominal examination — inspection for distension and scars; palpation superficial then deep for tenderness, guarding, rigidity, rebound, organomegaly and any pulsatile mass; percussion for tenderness and a distended bladder; auscultation for bowel sounds and renal bruits · inguinal region, external genitalia, digital rectal examination · ★ as a special test — renal angle tenderness on both sides · ★ as an office test — a urine dipstick' → uncomfortable but settled; T 36.8; abdomen soft, mild right-sided tenderness, no guarding/rebound, no mass, BS normal; right renal angle tender; groin/scrotum normal; dipstick blood ++, nitrites −, leucocytes −, protein trace"
+        ],
+        [
+          "5:40",
+          "★ 'James, I think you have what we call a ureteric colic — most people say a kidney stone. A small stone has formed in your kidney and started moving down the narrow tube that carries urine to your bladder. It presses on the wall of that tube and blocks it, and that is what causes the pain. Three things point to it: where the pain is — it started in your flank and travelled toward your groin, exactly the path that tube takes; it comes in waves, which is typical; and there's blood in your urine, which happens as the stone scrapes its way down.' · ★ discriminating sentence: 'I also want to be clear about something. You're tender over your kidney and there's blood in your urine, and those can suggest a kidney infection. But you have no fever, and your dipstick shows no nitrites and no white cells, so there's no sign of infection — and that's important, because a stone with an infection would mean hospital today.' · ★ the cancer worry: 'I can't rule anything out until the scan is back, and I won't pretend otherwise. But blood in the urine with this exact pattern of pain, at forty, with your father's history, points strongly to a stone. The scan will settle it.' · DDx by group: kidney/bladder — pyelonephritis, less likely a growth; liver/gallbladder (right-sided) — gallstones, inflammation, hepatitis; bowel — appendicitis, inflammation, rarely a growth; groin/testicle — hernia, torsion/epididymitis (excluded); the main abdominal blood vessel — very unlikely at forty"
+        ],
+        [
+          "7:20",
+          "★ 'Three tests. One, a special CT scan of the kidneys, ureters and bladder without dye — the best test we have; it shows me where the stone is and how big. Two, your urine to the laboratory for culture, because I want to be certain there's no infection sitting behind the blockage. Three, a blood test — UEC — to check your kidney function, because if the kidney is struggling that changes what I recommend.' (pushed: FBE/CRP if infection suspected, cultures if febrile, calcium/urate if recurrent; ultrasound if pregnant) · ★ safety-net: 'come straight back, or go to the emergency department, if you get a fever or shakes, if the pain becomes uncontrollable despite the tablets, if you stop passing urine, or if you're vomiting so much you can't keep fluids down' · analgesia now (NSAID) · summary: 'sudden severe colicky right pain, flank to groin, blood in the urine, no fever — most likely a kidney stone on the move; scan, check for infection and kidney function, then decide together how to get it out. What questions do you have?' ('how long? work? will it happen again?')"
+        ],
+        [
+          "V-B",
+          "'I have your scan here — let me take you through what it shows, then what it means, then what we do' · ★ orient: 'this is a slice through your lower tummy, looking from your feet upward; these bright white shapes either side are your hip bones; this big grey circle in the middle is your bladder' → 'two narrow tubes carry urine from your kidneys into the bladder — the ureters. This small bright dot is a stone, sitting in one of those tubes right where it joins your bladder — the vesicoureteric junction, or simply the last centimetre before the bladder' · dx: 'a kidney stone on the move — I can see it, and your story fits exactly' · ★ the fork before 4:15: 'what we do next depends on how big the stone is. But before any of that, two things: I need to be certain there's no infection sitting behind the blockage — urine for culture; a stone and an infection together is the one combination that means hospital the same day. And a blood test for kidney function, because that changes what I recommend.' · ★ small (≤5 mm): home — NSAID first (ibuprofen 400 mg tds with food / indometacin 100 mg PR), oxycodone 5 mg if inadequate, ondansetron, tamsulosin 400 mcg daily (light-headed on standing — get up slowly) VERIFY, ★ strain the urine and catch the stone, ★ drink normally — don't force water, review 2–3 days · ★ large (>7 mm): urology — ureteroscopy + laser (suits a low stone), ESWL, PCNL for large renal stones, stent if the kidney needs relieving; analgesia and tamsulosin meanwhile · long term: 2.5–3 L/day especially in the heat, low salt, ★ keep dairy/calcium normal ('cutting calcium out makes stones more likely'), stone analysis, blood/urine tests · safety-net · 'how big is it?' → 'the report doesn't give a measurement and I'm not going to guess from the picture — so here are both possibilities'"
+        ]
+      ],
+      "planApprox": true,
+      "ask": [
+        "★ 'Before we start — are you comfortable enough to talk to me right now?' / ★ 'I'm glad it has eased. We'll come back to pain relief at the end — first I need to work out what caused it.' / ★ 'Where exactly did it start? … And where is it now?' / ★ 'Is it there all the time, or does it come and go in waves?' / ★ 'Have you had any fevers, chills or shaking episodes?'",
+        "★ 'The way you've described that — one side, coming in waves, travelling to your groin — makes me want to ask about your waterworks next.' / 'Any burning? Passing urine more often? Any blood — pink, red or tea-coloured? Dribbling or trouble starting? Sudden urges? Up at night? Normal amounts?' / ★ 'Have you or anyone in your family ever had a kidney stone?' / 'How much fluid do you drink in a day?'",
+        "★ To examiner: '…auscultation for bowel sounds and renal bruits; then the inguinal region, external genitalia and a digital rectal examination. As a special test I'd like renal angle tenderness on both sides. And as an office test, a urine dipstick.'",
+        "★ 'A small stone has started moving down the narrow tube from your kidney to your bladder, and the pressure on that tube is what causes the pain.' / ★ 'You have no fever, and no nitrites or white cells on the dipstick, so there is no sign of infection — and that matters, because a stone with an infection would mean hospital today.' / 'I can't rule anything out until the scan is back, and I won't pretend otherwise. But blood in the urine with this exact pattern of pain, at forty, with your father's history, points strongly to a stone. The scan will settle it.'",
+        "★ 'What we do next depends on how big the stone is — but before any of that, I need to be certain there is no infection and to check your kidney function.' / ★ 'If it is small, most stones pass on their own … if it is larger, it is unlikely to pass and I'd refer you to a urologist.' / ★ 'Strain your urine and catch the stone, so we can analyse what it is made of.' / 'Please don't force large amounts of water — it won't push the stone out and it makes the pain worse.' / 'Keep your dairy and calcium normal — cutting calcium out actually makes stones more likely.' / ★ 'Come back straight away if you get a fever or shakes, if the pain becomes uncontrollable, or if you stop passing urine.'",
+        "Variant 1 (T 38.7, rigor, HR 118, BP 96/58, nitrites + leucocytes +): ★ 'This changes things completely — an obstructing stone with evidence of infection is an infected obstructed kidney, a urological emergency. James, the picture has changed: a stone blocking the tube with signs of infection behind it; antibiotics alone will not fix it — the blockage has to be relieved. Hospital today: IV fluids, blood cultures, IV antibiotics, urgent urological decompression — a stent up the tube or a drain through the back into the kidney — and from here that means MedSTAR on 1300 13 12 33.' / Variant 3 ('just give me the Endone'): 'I'm not going to leave you in pain. The most effective drug for this particular pain is actually an anti-inflammatory, so I'll start there; if that isn't enough I'll add something stronger — a short course, and you must not drive or operate the forklift on it.' / Variant 4 (24 weeks pregnant): ultrasound not CT; paracetamol ± opioid, no NSAIDs; obstetrics + urology early; UTI commoner and more serious VERIFY / Variant 5 (solitary kidney, anuria, creatinine 210): 'size is irrelevant — an obstructing stone in a solitary kidney with a rising creatinine needs urology today for decompression.'"
+      ],
+      "pefe": [
+        "Role-player: James Whitmore, 40, storeman/forklift driver in a hot shed outside Wallaroo, married, two children; 10 cigs/day × 20 y; 4–6 beers weekends; almost no water at work (sheepish); two Panadol this morning; no PMHx/ops; two kidneys; father stones twice in his forties; mother hypertension; uncle died of bladder cancer at 58. Relieved, slightly embarrassed; tense and short-sentenced once blood is mentioned. Fever: answers 'no' plainly — never offered if not asked. Hidden: convinced the pink urine is bladder cancer — releases it to 'was there something you were worried this might be?'; if never asked, at ~6 min 'Doctor — can I ask you something? Is this cancer?'; false reassurance ('definitely not cancer') → 'how can you know that without a scan?'. End questions: 'how long till it comes out? can I still go to work? will it happen again?'",
+        "Examiner: uncomfortable but settled; T 36.8; abdomen soft, mild right-sided tenderness, no guarding/rebound/mass; BS normal; right renal angle tender; groin and scrotum normal; dipstick blood ++, nitrites −, leucocytes −, protein trace. Version B CT: stone at the right VUJ; no size reported (don't guess — give both pathways)",
+        "Stone size: ≤5 mm usually passes (~70–90%) · 5–7 mm grey zone · >7 mm unlikely — refer · not passed by 4 weeks → urology VERIFY. Drugs VERIFY TG: ibuprofen 400 mg tds with food or indometacin 100 mg PR; oxycodone 5 mg PO if inadequate; ondansetron 4–8 mg; tamsulosin 400 mcg daily (medical expulsive therapy for distal stones ≥5 mm — evidence strongest 5–10 mm). Tests: non-contrast CT KUB (gold standard; low-dose protocols), urine MCS, UEC/eGFR; ultrasound if pregnant; FBE/CRP/cultures if infection; Ca/PO4/PTH/urate and 24-h urine (calcium, oxalate, citrate, urate) for recurrence; stone analysis. Urology now: infected obstructed kidney (stent/nephrostomy), solitary kidney, AKI, uncontrolled pain/vomiting, bilateral obstruction. Prevention: 2.5–3 L/day (urine >2 L), low salt, normal dietary calcium (1000–1200 mg), limit oxalate/animal protein, citrate; thiazide/allopurinol/potassium citrate by stone type (specialist)",
+        "Automatic fails: fever never asked · no dipstick · pyelonephritis on loin tenderness + blood · Version B one pathway / infection never excluded · 'definitely not cancer' before a scan · 'drink as much water as possible' · 'cut out calcium/dairy' · history past 4:00 and investigations never reached. Visible haematuria >40 with risk factors needs urothelial cancer exclusion once the stone episode is over (smoker) — cystoscopy/CT urogram VERIFY · SA: MedSTAR 1300 13 12 33 · TIS 131 450 · review 48–72 h"
+      ],
+      "fails": [
+        "Opening with painkillers when the pain has settled; accepting 'my side' — never asking where it is NOW; not asking waves vs constant",
+        "★ The word fever never used; ★ no urine dipstick / renal angle not named ('an abdominal examination'); ★ diagnosis switched to pyelonephritis on loin tenderness + blood",
+        "History running past 4:00 — investigations never reached; never asking family history of stones or fluid intake; never eliciting the cancer worry, or 'definitely not cancer' before any scan",
+        "★ Version B: one management pathway; ★ infection/renal function fork never said before 4:15; estimating stone size off the film; going from 'you have a stone' straight to painkillers",
+        "'Drink as much water as possible'; 'cut out calcium/dairy'; no strain-the-urine; no review interval; no safety-net (fever, uncontrolled pain, anuria, vomiting)"
+      ],
+      "numbers": [
+        "History 4 min (hard stop) · say 'infection' by 4:15 (V-B) · stone ≤5 mm passes · 5–7 mm grey · >7 mm refer · not passed by 4 wk → urology VERIFY",
+        "Ibuprofen 400 mg tds / indometacin 100 mg PR · oxycodone 5 mg if needed · ondansetron 4–8 mg · tamsulosin 400 mcg daily VERIFY · CT KUB non-contrast · urine MCS · UEC/eGFR · USS if pregnant",
+        "Review 48–72 h · fluids 2.5–3 L/day · low salt · normal calcium · stone analysis + Ca/PO4/PTH/urate + 24-h urine · MedSTAR 1300 13 12 33 · TIS 131 450"
+      ]
+    },
+    "source": "Ureteric_Colic_2_Case_Tasks_Script_Notability.pdf (James Whitmore, 40, sudden loin-to-groin pain with pink urine and no fever — ureteric colic; Version B CT explanation with both size pathways; febrile, pregnant, opioid-request and solitary-kidney variants folded in)"
   }
 ]
