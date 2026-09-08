@@ -17183,5 +17183,400 @@
     },
     "source": "Nerves_Thyroid_vs_Psych_2_Case_Tasks_Script_Notability.pdf (Jenny Wilcox, 52, 'something wrong with my nerves' — six-minute history that separates thyrotoxicosis from anxiety, with the risk question, the thyroid run and differentials each with a because; mixed, panic-disorder and suicidal-disclosure variants folded in)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Medicine Misc › Nerves_Thyroid_vs_Psych_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "MED-176",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 1 of 6 — inferior MI. Lives in chest-pain stations; the reciprocal sentence is part of the mark.",
+    "stem": [
+      "ECG handed to you in a chest-pain station: regular rhythm ~65–70, P before every QRS, ST elevation in II, III and aVF with ST depression in aVL; no elevation in V1."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "Outline your immediate management"
+    ],
+    "time": "Rate (~4½ large squares → 65–70) · regular · P before every QRS → sinus · PR ~4 small squares normal · QRS ~2 small squares narrow · ★ 'ST elevation in II, III and aVF — the inferior leads — with reciprocal ST depression in aVL: my differentiating factor from pericarditis' (both halves in one breath) · V1 no elevation → ★ 'I would request right-sided leads, particularly V4R, for right ventricular involvement' · T waves unremarkable · ★ 'My overall impression is an acute inferior myocardial infarction' → move straight to the pathway.",
+    "back": {
+      "dx": "Acute inferior ST-elevation myocardial infarction (right coronary territory): territorial elevation II, III, aVF with reciprocal depression in aVL/I; check V4R for RV infarct (preload-dependent — fluids, avoid nitrates); watch for bradycardia/AV block. Management: aspirin 300 mg chewed, second antiplatelet and anticoagulation per protocol, analgesia, oxygen only if hypoxic, continuous monitoring; reperfusion — primary PCI if deliverable promptly, otherwise thrombolysis after contraindication check with simultaneous MedSTAR retrieval to a PCI centre and discussion with the receiving cardiologist.",
+      "plan": [
+        [
+          "0:00",
+          "'The rate is around 65 to 70 — about four and a half large squares between R waves.'"
+        ],
+        [
+          "0:10",
+          "'The rhythm is regular, and there is a P wave before every QRS, so this is sinus rhythm.'"
+        ],
+        [
+          "0:20",
+          "'The PR interval is about four small squares — normal. The QRS duration is about two small squares — narrow.'"
+        ],
+        [
+          "0:30",
+          "★ 'Regarding the ST segments: there is ST elevation in II, III and aVF, the inferior leads. I can see reciprocal ST depression in aVL — that is my differentiating factor from pericarditis.'"
+        ],
+        [
+          "0:45",
+          "★ 'I have looked at V1 and there is no elevation there; I would request right-sided leads, particularly V4R, to assess for right ventricular involvement. The T waves are unremarkable.'"
+        ],
+        [
+          "0:55",
+          "★ 'My overall impression is an acute inferior myocardial infarction.' → do not wait to be asked: management"
+        ],
+        [
+          "1:00",
+          "To the patient: 'Your heart tracing shows that one of the arteries supplying your heart muscle is blocked — that is a heart attack. We need to act now to open that artery. I'm starting treatment immediately and calling the heart team.' · 'Am I going to die?' → 'This is serious and we're treating it as an emergency — but you're in the right place, we've found it early, and the treatments are very effective. I'll stay with you and keep you informed.'"
+        ],
+        [
+          "1:30",
+          "To the examiner: 'aspirin 300 mg chewed, a second antiplatelet and anticoagulation per protocol, analgesia, oxygen only if hypoxic. Reperfusion is the priority — primary angioplasty if it can be delivered promptly, otherwise thrombolysis and urgent transfer. Right-sided leads — if the right ventricle is involved I avoid nitrates and give fluid, since he is preload dependent. Continuous monitoring for arrhythmia and heart block, and urgent cardiology.' · country hospital four hours from a cath lab → 'thrombolysis here after checking contraindications, MedSTAR retrieval to a PCI centre arranged at the same time, discussing with the receiving cardiologist while treatment is given'"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "★ 'There is ST elevation in [leads], with reciprocal ST depression in [leads].' / ★ 'That is my differentiating factor from pericarditis.' / ★ 'I would request right-sided leads, particularly V4R, to assess for right ventricular involvement.' / ★ 'My overall impression is…'",
+        "'Why not pericarditis?' → 'Because the elevation is confined to one territory — the inferior leads — and there is reciprocal depression in aVL; pericarditis gives widespread concave elevation across territories with no reciprocal change.' / 'How much elevation counts?' → 'About one millimetre in the limb leads and two in the chest leads, in two contiguous leads — the formal criteria vary slightly by age and sex, but this degree is clearly significant.' / 'You didn't mention the axis' → 'I can assess it — but I prioritised rate, rhythm, intervals and ST segments as the findings that change management here.'",
+        "★ The mismatch (pericarditis-shaped history, infarct tracing): 'I want to acknowledge that the history was strongly suggestive of pericarditis. However, this tracing shows elevation confined to the inferior leads with reciprocal depression in aVL — a territorial pattern with reciprocal change, which is an infarct rather than pericarditis, where I would expect widespread concave elevation without reciprocal change. I am treating this as an acute inferior myocardial infarction. This is exactly why an ECG and troponin form part of the pericarditis work-up.' → to the patient: 'Your tracing shows something more serious than the story first suggested — one of the arteries supplying your heart muscle is blocked, a heart attack. I know the pain didn't feel typical, but the tracing is clear, and we need to act now.'"
+      ],
+      "pefe": [
+        "Station context (full role-play): Marek Sadowski, 61, ED, 90 min of heavy central chest pain 8/10 to the jaw and left arm, sweating, nausea, mild SOB; 30 pack-years, hypertension, cholesterol, brother stented at 58; pulse 58, BP 118/70, SpO2 96%. Four-minute focused history → ECG mid-station → explain and manage. Stability first ('mildly bradycardic, not hypotensive'), analgesia offered while talking; PE screen (calf, travel, pleuritic/positional) in one line",
+        "Squares: small 0.04 s (1 mm), large 0.20 s (5 mm), strip 10 s · regular rate = 300 ÷ large squares (1→300, 2→150, 3→100, 4→75, 5→60, 6→50) · irregular rate = complexes × 6 · PR 0.12–0.20 s (3–5 small) · QRS <0.12 s (<3 small) · ST elevation ≥1 mm limb, ≥2 mm chest, two contiguous leads; ignore aVR · inferior II, III, aVF → reciprocals I, aVL · RV infarct: V4R elevation — preload-dependent, avoid nitrates, fluids · inferior MI complications: sinus bradycardia, AV block (RCA — AV node), RV infarct, hypotension",
+        "STEMI: aspirin 300 mg chewed; ticagrelor/clopidogrel per protocol; heparin/enoxaparin; fentanyl/morphine; O2 only if SpO2 <94% (<90% VERIFY); GTN unless RV infarct/hypotension/PDE5; primary PCI if door-to-balloon achievable (~90–120 min from first medical contact) else fibrinolysis (tenecteplase) within 30 min then transfer for angiography · SA: MedSTAR 1300 13 12 33 · rural thrombolysis pathway · cardiology on call"
+      ],
+      "fails": [
+        "Stopping after 'elevation in II, III and aVF' — the reciprocal change is part of the mark",
+        "Blurting 'inferior MI' before the seven steps; narrating name/date/calibration",
+        "Not asking for right-sided leads; nitrates in an RV infarct",
+        "Explaining an infarct tracing away because the history said pericarditis; offering three diagnoses",
+        "Going back to history-taking after the tracing instead of straight into the pathway; not naming thrombolysis + retrieval in the rural version"
+      ],
+      "numbers": [
+        "Rate ~65–70 (4½ large squares) · PR ~4 small · QRS ~2 small · elevation II, III, aVF · reciprocal aVL · V4R for RV",
+        "Aspirin 300 mg chewed · O2 only if hypoxic · PCI if prompt, else thrombolysis + MedSTAR 1300 13 12 33 · readout ≤90 s"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 1 — inferior myocardial infarction, with the Marek Sadowski chest-pain role-play and the history–tracing mismatch script)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
+  },
+  {
+    "id": "MED-177",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 2 of 6 — anterolateral MI. Find the most obvious elevation first, map it, then check the opposite territory; chest-lead elevation should be about two small squares before you call it.",
+    "stem": [
+      "ECG handed to you in a chest-pain station (quality may be poor): regular ~85, sinus, ST elevation V2–V6 plus I and aVL; ST depression in III and aVF."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "Outline your immediate management"
+    ],
+    "time": "Rate (~3½ large squares → ~85) · regular, P before each QRS → sinus · PR and QRS normal · ★ 'ST elevation in V2, V3, V4, V5 and V6, and also in lead I and aVL — reciprocal ST depression in III and aVF' · ★ 'My overall impression is an acute anterolateral myocardial infarction' → pathway.",
+    "back": {
+      "dx": "Acute anterolateral ST-elevation MI (left anterior descending ± circumflex): elevation V2–V6, I, aVL with reciprocal depression III, aVF — large territory, higher risk of LV failure, cardiogenic shock and ventricular arrhythmia. Management as any STEMI: aspirin 300 mg chewed, second antiplatelet, anticoagulation, analgesia, oxygen if hypoxic, monitoring, reperfusion (PCI or thrombolysis + retrieval), cardiology; watch for pulmonary oedema and shock.",
+      "plan": [
+        [
+          "0:00",
+          "'The rate is about 85 — roughly three and a half large squares between R waves.'"
+        ],
+        [
+          "0:10",
+          "'The rhythm is regular with a P wave before each QRS — sinus rhythm.'"
+        ],
+        [
+          "0:20",
+          "'The PR interval and the QRS duration both look normal.'"
+        ],
+        [
+          "0:30",
+          "★ 'Regarding the ST segments: there is ST elevation in V2, V3, V4, V5 and V6, and also in lead I and aVL. I can see reciprocal ST depression in III and aVF.'"
+        ],
+        [
+          "0:50",
+          "★ 'My overall impression is an acute anterolateral myocardial infarction.'"
+        ],
+        [
+          "1:00",
+          "Patient: 'one of the arteries supplying your heart muscle is blocked — a heart attack; we need to act now to open that artery; I'm starting treatment and calling the heart team' · Examiner: aspirin 300 mg chewed, second antiplatelet, anticoagulation, analgesia, O2 only if hypoxic, monitoring; primary PCI if prompt else thrombolysis + MedSTAR; cardiology; anticipate LV failure/shock"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "'The tracing quality is limited, but in the leads I can read clearly…' / ★ 'There is ST elevation in V2 to V6, I and aVL, with reciprocal ST depression in III and aVF.' / 'Why not pericarditis?' → 'territorial — anterior and lateral leads with reciprocal inferior depression; pericarditis is widespread, concave and non-reciprocal.'"
+      ],
+      "pefe": [
+        "Anterior V1–V4 (LAD), lateral I, aVL, V5–V6 (circumflex/diagonal); anterolateral V2–V6 + I, aVL → reciprocals II, III, aVF · one small square of chest-lead elevation is milder — describe it as such · poor tracing: find the clearest elevation, map, check the opposite wall · complications: LV failure/pulmonary oedema, cardiogenic shock, VT/VF, LV thrombus/aneurysm, septal rupture",
+        "Same STEMI pathway as MED-176 · consider Killip class · echo · MedSTAR 1300 13 12 33"
+      ],
+      "fails": [
+        "Panicking at a poor-quality tracing; calling one small square of chest-lead elevation an infarct without qualifying it",
+        "Omitting the reciprocal inferior depression; naming 'anterior' and missing I/aVL",
+        "Blurting the label; free-associating; going back to history"
+      ],
+      "numbers": [
+        "Rate ~85 (3½ large squares) · elevation V2–V6 + I, aVL · reciprocal III, aVF · chest-lead threshold ~2 small squares"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 2 — anterolateral myocardial infarction)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
+  },
+  {
+    "id": "MED-178",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 3 of 6 — pericarditis. Distribution, concavity and absent reciprocals get you there; don't hunt for PR depression you can't see and run out of time.",
+    "stem": [
+      "ECG handed to you in a chest-pain station (positional, post-viral history): regular ~100, sinus, concave ST elevation in I, II, aVF, V5 and V6; no reciprocal depression (ignoring aVR); ± PR depression."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "Convince the examiner it is not an infarct"
+    ],
+    "time": "Rate ~100 · regular, P before every QRS → sinus · PR and QRS normal · ★ 'ST elevation in I, II, aVF, V5 and V6 — widespread, involving inferior AND lateral leads — these do not correspond to a single territory; the elevation is concave; ignoring aVR I see no reciprocal ST depression' · if visible: 'PR depression across the leads' · ★ 'My overall impression is acute pericarditis — the widespread non-territorial distribution, the concave elevation and the absence of reciprocal change take me away from an infarct.' → still send a troponin.",
+    "back": {
+      "dx": "Acute pericarditis: widespread concave ('saddle') ST elevation across inferior and lateral territories without reciprocal depression, ± PR depression (PR elevation and ST depression in aVR), sinus tachycardia; sharp central pain worse lying flat, better sitting forward, often post-viral, ± rub. Management: ECG + troponin (myopericarditis) + CRP + echo (effusion); NSAID (ibuprofen/aspirin) plus colchicine, restrict exertion; red flags for admission — fever >38, subacute onset, large effusion/tamponade, anticoagulation, immunosuppression, trauma, troponin rise, failure of NSAID at a week VERIFY.",
+      "plan": [
+        [
+          "0:00",
+          "'The rate is around 100.'"
+        ],
+        [
+          "0:10",
+          "'The rhythm is regular, with a P wave before every QRS — sinus rhythm.'"
+        ],
+        [
+          "0:20",
+          "'The PR interval and QRS duration both look normal.'"
+        ],
+        [
+          "0:30",
+          "★ 'Regarding the ST segments: I can see elevation in lead I, in II, in aVF, and in V5 and V6. So I have widespread ST elevation involving both the inferior and lateral leads — these do not correspond to a single territory. The elevation is concave in shape. Ignoring aVR, I am not seeing any reciprocal ST depression.' [if visible: 'There is also PR depression across the leads.']"
+        ],
+        [
+          "0:55",
+          "★ 'My overall impression is acute pericarditis — the widespread non-territorial distribution, the concave elevation and the absence of reciprocal change are what take me away from an infarct.'"
+        ],
+        [
+          "1:05",
+          "Patient: 'Your tracing shows inflammation of the lining around the heart — the sac the heart sits in. That's why the pain is worse lying flat and better leaning forward, and it often follows a viral illness. It's not a heart attack, and it usually settles with anti-inflammatory treatment.' · plan: troponin (to exclude the infarct/myocarditis), CRP, echo for effusion; NSAID + colchicine; rest; review; return for breathlessness, faintness, fever"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "★ 'I have widespread ST elevation that does not correspond to a single territory, it is concave, and there is no reciprocal depression.' / 'Convince me it is not an infarct' → 'three things: the elevation crosses territories rather than sitting in one; it is concave rather than convex; and there is no reciprocal depression — an infarct would give territorial, convex elevation with reciprocal change. I would still send a troponin, because that is what excludes the infarct.'",
+        "Reverse mismatch (ischaemic-sounding history, pericarditic tracing): name the conflict, follow the tracing, and still send a troponin"
+      ],
+      "pefe": [
+        "Pericarditis vs STEMI: widespread vs territorial · concave vs convex · no reciprocal vs reciprocal · PR depression (± aVR PR elevation) · ST/T ratio in V6 >0.25 favours pericarditis VERIFY · stages: I diffuse ST↑/PR↓ → II normalisation → III T inversion → IV normal · benign early repolarisation mimics (young, V2–V5, notched J point)",
+        "Management VERIFY TG: ibuprofen 600 mg tds 1–2 weeks (or aspirin 750–1000 mg tds post-MI) + colchicine 0.5 mg daily/bd for 3 months; exercise restriction until symptom-free; PPI cover; admit if red flags; tamponade — Beck's triad, pulsus paradoxus → urgent echo/pericardiocentesis"
+      ],
+      "fails": [
+        "Hunting for PR depression you cannot see and running out of time",
+        "Calling territorial elevation 'pericarditis' because the history was positional (the mismatch fail)",
+        "'Pericarditis' without the three discriminators; not sending a troponin",
+        "Jargon to the patient ('ST elevation', lead names)"
+      ],
+      "numbers": [
+        "Rate ~100 · elevation I, II, aVF, V5, V6 · concave · no reciprocals (ignore aVR) · ± PR depression · troponin always",
+        "NSAID + colchicine 3 mo VERIFY · admit red flags: fever >38, effusion/tamponade, anticoagulation, troponin rise"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 3 — acute pericarditis)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
+  },
+  {
+    "id": "MED-179",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 4 of 6 — SVT. The trap is calling the T wave a P wave and reporting sinus tachycardia: a P and a T must both be present and separate.",
+    "stem": [
+      "ECG handed to you in a palpitations station: regular, rate 150 (two large squares between R waves), narrow QRS, no visible P wave separate from the T wave, ST segments normal."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "Outline your immediate management"
+    ],
+    "time": "Rate 150 (two large squares) — a tachycardia · regular · ★ 'I am looking for a P wave separate from the T wave: the deflection after each QRS is the T wave, and there is no visible P wave — at this rate it is buried in the QRS. So this is not sinus rhythm.' · 'PR not measurable, because there is no P wave' · QRS narrow · ST normal · ★ 'So I have a regular, narrow-complex tachycardia at 150 with no visible P waves. My overall impression is a supraventricular tachycardia.'",
+    "back": {
+      "dx": "Supraventricular tachycardia (AVNRT/AVRT): regular narrow-complex tachycardia at ~150 with no discernible P waves. Management: stable → vagal manoeuvres (modified Valsalva — strain 15 s then legs raised; carotid massage if no bruit) → adenosine 6 mg rapid IV push with flush, then 12 mg (warn about the horrible transient feeling; caution asthma; monitor, record the strip) → verapamil/diltiazem if no pre-excitation VERIFY; unstable (hypotension, chest pain, altered mentation, heart failure) → synchronised DC cardioversion under sedation. Afterwards: 12-lead in sinus for pre-excitation (WPW — avoid AV-nodal blockers in pre-excited AF), TSH, electrolytes, caffeine/stimulants, cardiology/EP referral for recurrence (ablation).",
+      "plan": [
+        [
+          "0:00",
+          "'The rate is 150 — two large squares between R waves — so this is a tachycardia. The rhythm is regular.'"
+        ],
+        [
+          "0:15",
+          "★ 'I am looking for a P wave separate from the T wave: the deflection after each QRS is the T wave, and there is no visible P wave — at this rate it is buried in the QRS. So this is not sinus rhythm.'"
+        ],
+        [
+          "0:30",
+          "'The PR interval is not measurable, because there is no P wave. The QRS complexes are narrow. The ST segments look normal — no significant elevation or depression.'"
+        ],
+        [
+          "0:45",
+          "★ 'So I have a regular, narrow-complex tachycardia at 150 with no visible P waves. My overall impression is a supraventricular tachycardia.'"
+        ],
+        [
+          "1:00",
+          "Patient: 'You have a condition called supraventricular tachycardia — a type of arrhythmia: your heart is beating faster than usual, but still regularly. It happens because of abnormal electrical signalling in the heart. It's uncomfortable but usually not dangerous, and we can stop it — first with a breathing manoeuvre, and if that doesn't work a quick-acting medicine through the drip that briefly feels very unpleasant for a few seconds.' · Examiner: stability check → vagal manoeuvres → adenosine 6 → 12 mg with continuous strip → verapamil if needed → synchronised cardioversion if unstable; then WPW check, TSH, triggers, EP referral"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "★ 'The deflection after each QRS is the T wave — there is no visible P wave.' / ★ 'The PR interval is not measurable, as there is no P wave.' / ★ 'I have a regular, narrow-complex tachycardia at 150 with no visible P waves.' / 'Is that a P wave?' → 'No — it follows the QRS at a fixed interval and there is no separate deflection before the next QRS; it is the T wave.'"
+      ],
+      "pefe": [
+        "Regular narrow tachycardia DDx: sinus tachycardia (P visible, rate varies), SVT (AVNRT/AVRT — abrupt onset/offset, ~150–250), atrial flutter with 2:1 block (rate ~150 — look for sawtooth, especially after adenosine unmasks it), atrial tachycardia · broad + regular = VT until proven otherwise · modified Valsalva converts ~40% · adenosine 6 mg → 12 mg (→ 12 mg) rapid push via a large proximal vein with 20 mL flush; contraindicated in severe asthma; theophylline reduces effect, dipyridamole potentiates",
+        "Unstable → synchronised DC 50–100 J (VERIFY) · WPW: short PR, delta wave — pre-excited AF: no adenosine/verapamil/digoxin, use procainamide/amiodarone or cardioversion · SA: MedSTAR 1300 13 12 33 if unstable and rural"
+      ],
+      "fails": [
+        "Calling the T wave a P wave → 'sinus tachycardia'",
+        "Not stating the PR is unmeasurable; not saying 'narrow'",
+        "Adenosine before assessing stability; adenosine without a strip running; missing WPW afterwards",
+        "Jargon to the patient"
+      ],
+      "numbers": [
+        "Rate 150 (2 large squares) · regular · narrow · no P · modified Valsalva → adenosine 6/12/12 mg · unstable → sync DC"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 4 — supraventricular tachycardia)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
+  },
+  {
+    "id": "MED-180",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 5 of 6 — atrial fibrillation. Because the rhythm is irregular, count complexes across the ten-second strip and multiply by six; irregularly irregular with no clear P waves is AF — stop arguing with the baseline.",
+    "stem": [
+      "ECG handed to you in a palpitations station: irregularly irregular rhythm, no P waves, fibrillatory baseline, narrow QRS, unremarkable ST segments."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "Outline your immediate management"
+    ],
+    "time": "★ 'Because the rhythm is irregular, I would count the complexes across the whole ten-second strip and multiply by six rather than using the R-R interval' · ★ 'The rhythm is irregularly irregular. I can see no P waves — the wobble on the baseline is fibrillatory activity in the atria, not organised P waves. There is therefore no measurable PR interval.' · QRS normal · ST unremarkable · ★ 'My overall impression is atrial fibrillation.' Sawtooth — mention only if confident; it doesn't change the impression.",
+    "back": {
+      "dx": "Atrial fibrillation (rapid or rate-controlled depending on the count): irregularly irregular, no P waves, fibrillatory baseline, narrow QRS. Management: stability — unstable → synchronised DC cardioversion; stable → rate control (beta-blocker or diltiazem; digoxin if hypotensive/heart failure) and anticoagulation decision (CHA₂DS₂-VA — stroke risk; bleeding risk), rhythm control if onset <48 h or after anticoagulation/TOE; find the cause — thyroid, alcohol, infection, PE, valve disease, ischaemia, electrolytes; echo; cardiology.",
+      "plan": [
+        [
+          "0:00",
+          "★ 'For the rate — because the rhythm is irregular, I would count the complexes across the whole ten-second strip and multiply by six rather than using the R-R interval.' (state the number)"
+        ],
+        [
+          "0:15",
+          "★ 'The rhythm is irregularly irregular. I can see no P waves. The wobble on the baseline is fibrillatory activity in the atria, not organised P waves. There is therefore no measurable PR interval.'"
+        ],
+        [
+          "0:35",
+          "'The QRS duration looks normal, and the ST segments look unremarkable.'"
+        ],
+        [
+          "0:45",
+          "★ 'My overall impression is atrial fibrillation.'"
+        ],
+        [
+          "1:00",
+          "Patient: 'You have a condition called atrial fibrillation. The top chambers of the heart are firing off in a disorganised way, so instead of a steady beat your heart is fast and irregular. It's treatable, but it does raise the risk of stroke, so part of the plan is deciding whether you need a blood thinner.' · Examiner: stable? → rate control (metoprolol/diltiazem), anticoagulation by CHA₂DS₂-VA, look for the cause (TSH, FBE, UEC, troponin if pain, CXR, echo), rhythm control if <48 h or after 3 weeks' anticoagulation/TOE; unstable → sync DC"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "★ 'Because the rhythm is irregular, I'd count the complexes across the ten-second strip and multiply by six.' / ★ 'The rhythm is irregularly irregular and I can see no P waves — the baseline activity is fibrillatory, not organised P waves.' / 'Is that flutter rather than fibrillation?' → 'It may be — the rhythm is irregularly irregular with no organised P waves, and my management of the rate and stroke risk would be the same either way.'"
+      ],
+      "pefe": [
+        "Rate = complexes in 10 s × 6 · irregularly irregular DDx: AF, atrial flutter with variable block, multifocal atrial tachycardia (≥3 P morphologies), frequent ectopics · AF causes: hypertension, IHD, valvular (mitral), thyrotoxicosis, alcohol ('holiday heart'), sepsis, PE, post-op, OSA, electrolytes",
+        "CHA₂DS₂-VA (Australian 2024 — no sex criterion VERIFY): CHF, hypertension, age ≥75 (2), diabetes, stroke/TIA (2), vascular disease, age 65–74 → anticoagulate if ≥2 (consider at 1) with a DOAC (apixaban/rivaroxaban/dabigatran; warfarin if mechanical valve/mitral stenosis) · rate target <110 at rest (lenient) · rhythm control: flecainide (no structural heart disease), amiodarone, DC cardioversion; ablation · unstable → sync DC 120–200 J VERIFY · MedSTAR 1300 13 12 33"
+      ],
+      "fails": [
+        "Using the R-R interval for the rate; arguing whether a wobble is a P wave",
+        "'Irregular' without 'irregularly irregular'; not saying 'no measurable PR'",
+        "Rate control without the stroke-risk/anticoagulation decision; cardioverting an unknown-duration AF without anticoagulation/TOE",
+        "Jargon to the patient; omitting the stroke conversation"
+      ],
+      "numbers": [
+        "Rate = complexes × 6 · irregularly irregular · no P · CHA₂DS₂-VA ≥2 → DOAC · rate target <110 · cardioversion if <48 h or after 3 wk anticoagulation/TOE"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 5 — atrial fibrillation)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
+  },
+  {
+    "id": "MED-181",
+    "cat": "med",
+    "promptBell": true,
+    "promptAt": 90,
+    "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 6 of 6 — hyperkalaemia. Lives in the electrolyte station: chronic kidney disease with a recently increased medication. Read it as an emergency, not an interesting finding.",
+    "stem": [
+      "ECG handed to you in an electrolyte station (CKD, recent dose increase of an ACE inhibitor/potassium-sparing diuretic): regular rhythm, flattened/absent P waves, prolonged PR, widened QRS, tall peaked narrow-based T waves across the leads."
+    ],
+    "tasks": [
+      "Interpret this ECG to the examiner",
+      "Explain the findings to the patient",
+      "State what you do first"
+    ],
+    "time": "Rate [X] · regular · ★ 'P waves flattened and difficult to identify — in more advanced hyperkalaemia they disappear altogether' · 'PR prolonged' · 'QRS widened' · ★ 'The most striking abnormality is in the T waves: tall, peaked and narrow-based — tented T waves, seen across the leads' · ★ 'My overall impression is an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level.' → 'what do you do first?' → calcium.",
+    "back": {
+      "dx": "Severe hyperkalaemia with ECG changes (tented T waves, flattened P, prolonged PR, widened QRS — progressing to sine wave, VF/asystole) in CKD after a medication increase (ACEi/ARB, spironolactone, potassium supplements, NSAIDs, trimethoprim). Treat now: (1) protect — IV calcium gluconate 10% 10 mL over 5–10 min (or calcium chloride), repeat if ECG changes persist; (2) shift — insulin 10 units IV with 25 g glucose (BGL monitoring), nebulised salbutamol 10–20 mg, ± sodium bicarbonate if acidotic; (3) remove — resonium/patiromer, loop diuretic if passing urine, dialysis if refractory/anuric/severe; (4) stop the offending drug; continuous monitoring, repeat K⁺ and ECG, treat the cause; renal/ICU. VERIFY doses against TG.",
+      "plan": [
+        [
+          "0:00",
+          "'The rate is around [X] and the rhythm is regular.'"
+        ],
+        [
+          "0:10",
+          "★ 'Looking at the P waves: they are flattened and difficult to identify — in more advanced hyperkalaemia they disappear altogether. The PR interval is prolonged.'"
+        ],
+        [
+          "0:25",
+          "'The QRS duration is widened.'"
+        ],
+        [
+          "0:35",
+          "★ 'The most striking abnormality is in the T waves: they are tall, peaked and narrow-based — tented T waves, seen across the leads.'"
+        ],
+        [
+          "0:50",
+          "★ 'My overall impression is an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level.'"
+        ],
+        [
+          "1:00",
+          "'What do you do first?' → ★ 'Calcium — IV calcium gluconate to protect the heart, with continuous monitoring — then insulin with glucose and salbutamol to shift potassium into the cells, then a binder or dialysis to remove it, and I stop the drug that caused it.' · Patient: 'The potassium level in your blood is too high, and I can see its effect on your heart tracing. Potassium is a salt your body needs, but at high levels it interferes with the heart's electrical activity, which can be dangerous. We're going to treat it straight away, and stop the tablet that is contributing.'"
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
+      "ask": [
+        "★ 'Tall, peaked, narrow-based — tented — T waves across the leads.' / ★ 'I would treat this as a medical emergency without waiting for a repeat level.' / ★ 'Calcium to protect, insulin with glucose and salbutamol to shift, binder or dialysis to remove, and stop the offending drug.'"
+      ],
+      "pefe": [
+        "Progression: tented T (K ~5.5–6.5) → flat P, long PR (6.5–7.5) → wide QRS, bradyarrhythmia (>7.5) → sine wave → VF/asystole · thresholds: treat urgently if K ≥6.5 or any ECG change VERIFY · causes: CKD/AKI, ACEi/ARB/spironolactone/amiloride, NSAIDs, trimethoprim, K supplements/salt substitutes, rhabdomyolysis, tumour lysis, acidosis, Addison's; exclude pseudohyperkalaemia (haemolysed sample) but never delay treatment when the ECG is abnormal",
+        "Doses VERIFY TG: calcium gluconate 10% 10 mL IV over 5–10 min (repeat ×2 if ECG unchanged); insulin 10 U short-acting IV + 25 g glucose (50 mL 50%), BGL hourly for 6 h; salbutamol 10–20 mg nebulised; NaHCO₃ 8.4% 50 mmol if acidotic; sodium zirconium/patiromer/resonium; frusemide if euvolaemic and passing urine; dialysis for refractory/anuric/ESKD · cardiac monitoring throughout · SA: renal on call; MedSTAR 1300 13 12 33 for rural transfer"
+      ],
+      "fails": [
+        "Reading tented T waves as an interesting finding rather than an emergency; waiting for a repeat level",
+        "Not naming calcium first; insulin without glucose/BGL monitoring; forgetting to stop the drug",
+        "Missing the flattened P/prolonged PR/wide QRS progression; not mentioning monitoring/dialysis"
+      ],
+      "numbers": [
+        "Tented T → flat P/long PR → wide QRS → sine wave · treat K ≥6.5 or any ECG change VERIFY · calcium gluconate 10% 10 mL → insulin 10 U + 25 g glucose → salbutamol 10–20 mg neb → binder/dialysis → stop the drug"
+      ]
+    },
+    "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 6 — hyperkalaemia)",
+    "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf"
   }
 ]
