@@ -18295,5 +18295,575 @@
     },
     "source": "Paediatric_Respiratory_Exam_2_Case_Tasks_Script_Notability.pdf (Version A: 5-year-old asthmatic with neck discomfort and a left pneumothorax on the film — trachea midline, parental consent, expected findings on the mannequin, vocal resonance the fifth step; Version B infant video and doll with the eleven distress features folded in)",
     "drive": "AMC Clinical Notability › PE › AMC PE › Respi PE › Paediatric_Respiratory_Exam_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-10",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 390,
+    "setting": "PHYSICAL EXAMINATION — ED. The most failed physical examination station in the whole exam, and it is not failed on knowledge. Gloves are given and there is no hand sanitiser in the room. Everything turns on one discipline: she screams at the first light touch, and you must still test THREE quadrants before the word 'generalised' leaves your mouth, then narrate every omission with its reason. Automatic fails: announcing generalised peritonitis after the first scream; pressing again without apologising, explaining and asking permission; skipping deep palpation, rebound and percussion silently; deciding a 52-year-old does not need a pelvic examination.",
+    "stem": [
+      "Emergency department. A 52-year-old woman with sudden onset abdominal pain, already given analgesia by the nurse; observations are in the notes. BP 104/62 — HR 112 — RR 22 — T 37.9. Gloves are provided and you will be told to put them on; there is no hand sanitiser in the room; the bed is in the centre of the station."
+    ],
+    "tasks": [
+      "Perform a focused abdominal examination, with a running commentary to your examiner",
+      "State your most likely diagnosis, with your reasons",
+      "Give your differential diagnoses"
+    ],
+    "time": "DOOR: gloves on, 'may I have the vital signs · blood pressure, pulse rate, respiratory rate and temperature?' → name the abnormality out loud ('tachycardic at 112 with a soft blood pressure · I will keep that in mind') · never accept 'stable' silently · WIPE 30-45 s: name and date of birth, four steps (look, gently feel, gently tap, listen), expose whole tummy, wash hands, and offer analgesia; she says 'you do it' → 'is it all right if I lower your trousers a little so I can see the whole tummy?' · peripheries (do NOT skip · dehydration and blood loss are the point, and one recall scores hydration separately): general appearance, CRT, turgor, palmar creases, cold peripheries, pulse volume, sunken eyes, dry mucous membranes, conjunctival pallor · inspection: Cullen and Grey Turner BY NAME in every case, scars, distension, masses, redness, then bend down and look across the abdomen · cough: 'could you cough and tell me if it hurts, and where?' → 'I can't' → don't push; 'she is unable to cough, which itself suggests significant peritonism' · superficial palpation starting away from the pain → she SCREAMS on the lightest touch → apologise, offer more analgesia, explain why you must press again, ask permission · switch maps out loud: 'given the severity I will assess by quadrant rather than nine regions' → quadrant 2 tender, quadrant 3 tender → 'I am not going to test the fourth. There is guarding; there is no rigidity.' · the skip, spoken in full: 'I am stopping superficial palpation here, skipping deep palpation and rebound and skipping percussion, because they would add nothing and cause unnecessary pain' · what still costs her nothing: auscultate, request groins, request DRE with consent and chaperone, and offer a PELVIC examination with consent and chaperone, naming all the bimanual items · diagnosis with reasons → causes as rupture / progressed obstruction / ischaemia / pancreatitis → plan.",
+    "back": {
+      "dx": "Generalised peritonitis — she was unable to cough and had severe tenderness with guarding in three separate quadrants on LIGHT palpation (guarding present, rigidity absent); on the verbal pelvic examination, cervical motion tenderness with bilateral adnexal tenderness. Causes, grouped: rupture — perforated peptic ulcer (she takes ibuprofen most days), perforated appendix or diverticulum, ruptured abdominal aortic aneurysm, and in a woman a ruptured ovarian cyst, tubo-ovarian abscess or, if younger, a ruptured ectopic pregnancy; obstruction that has progressed — tumour, strangulated hernia, faecal impaction; then mesenteric ischaemia and acute pancreatitis. Plan: nil by mouth, two large-bore cannulae, bloods with lactate and beta-hCG, fluid resuscitation, adequate analgesia, erect chest X-ray and CT abdomen and pelvis, surgical referral now; at a rural SA site start all of that and call MedSTAR 1300 13 12 33 while the workup runs.",
+      "plan": [
+        [
+          "0:00",
+          "Gloves on. 'Good morning, Examiner. Before I begin, may I have the vital signs, please — blood pressure, pulse rate, respiratory rate and temperature?' → 'BP 104/62, pulse 112, RR 22, temperature 37.9' (or 'all observations are stable' / 'assume they are normal'). Say what you heard: 'Thank you — she is tachycardic at 112 with a soft blood pressure; I will keep that in mind as I examine her.' Move to the patient's right side."
+        ],
+        [
+          "0:30",
+          "WIPE: 'Hello, I'm Dr -, one of the doctors in the emergency department. Can I check your name and date of birth? Thank you, Jane. I've been asked to examine your tummy — I'll look at it, gently feel it, gently tap on it, and at the end listen with my stethoscope. I'll need to see the whole tummy, so could you pull your top up and lower your trousers a little? You can stay lying as you are. Let me wash my hands — and before I start, are you in pain now? Would you like something for it?' → 'the nurse gave me morphine twenty minutes ago, it hasn't touched it' → 'I'm sorry — I'll ask her to review that as soon as we finish.' → 'you do it' → ask, then act: 'Of course. Is it all right if I lower your trousers a little so I can see the whole tummy?'"
+        ],
+        [
+          "1:30",
+          "Peripheral survey — do not skip it: 'Examiner, on general appearance she is alert but in obvious pain and distress, lying very still, guarding her abdomen. No pallor. Jane, may I see your hands? Capillary refill under two seconds, skin turgor normal, no pale palmar creases, no cold peripheries, radial pulse of good volume. Face — no sunken eyes, no dry mucous membranes. Look up for me — no conjunctival pallor.' ('skip the peripheries' → stop mid-sentence and move on.)"
+        ],
+        [
+          "2:30",
+          "Inspection, exposing xiphisternum to below the umbilicus: 'No Cullen sign, no Grey Turner sign, no scars, no distension, no visible masses, no redness. Bending down to look across the abdomen — movement with respiration is shallow and symmetrical.' Then the cough: 'Jane, could you give me a cough, and tell me if it hurts and where?' → 'I can't. I really can't.' → 'That's absolutely fine, don't force it. Examiner — she is unable to cough, which in itself suggests significant peritonism. The stem does not localise the pain, so I will begin superficial palpation in one corner and work across.'"
+        ],
+        [
+          "3:15",
+          "The scream and the recovery script. Lightest touch, left upper quadrant → 'AAH! Don't — please don't!' → 'Jane, I am so sorry. I did not realise you were in that much pain. Would you like some more pain relief before I go on? I do need to feel your tummy once or maybe twice more, so that I can understand what is happening inside. I know it hurts, and I will be as gentle as I can. Is that all right?' → '...Alright. Be quick.' (Ask 'shall I continue?' without explaining and she hands it back: 'It's your call, doctor.')"
+        ],
+        [
+          "4:15",
+          "Switch maps OUT LOUD and test three quadrants: 'Examiner, given the severity I am going to assess by quadrant rather than by nine regions. Second quadrant -' (scream) '- tender. Third quadrant -' (scream) '- tender again. I am not going to test the fourth, because I am now confident this is generalised and I do not want to cause unnecessary pain. There is guarding; there is no rigidity.'"
+        ],
+        [
+          "5:00",
+          "The skip, spoken in full: 'Examiner — on that basis I am stopping superficial palpation here. I am skipping deep palpation and rebound tenderness, and I am skipping percussion, because they would add nothing and would cause unnecessary pain. I will continue with the rest of the examination.'"
+        ],
+        [
+          "5:30",
+          "What still costs her nothing: 'Jane, I'm just going to listen with my stethoscope — this won't hurt. Examiner, bowel sounds are present. I would like to inspect the inguinal regions for hernias' → 'normal'; 'a digital rectal examination, with consent and a chaperone' → 'normal'; 'and as this is a woman with lower abdominal pain, a pelvic examination, with consent and a chaperone: on inspection — bleeding, discharge, rash or swelling? On speculum — bleeding or discharge from the cervix, tissue at the os, is the vaginal wall normal? On bimanual — cervical motion tenderness, uterine size and tenderness, adnexal masses or tenderness? And a urine dipstick.' → CMT present, uterus normal size, bilateral adnexal tenderness, dipstick negative."
+        ],
+        [
+          "6:30",
+          "Diagnosis with reasons, then grouped causes, then plan (see dx). Examiner probes and the answers: 'why no pulsatile mass?' → 'the aorta lies deep and I cannot reach it without a deep palpation this patient cannot tolerate — I would exclude an aneurysm with a bedside ultrasound.' 'Why no shifting dullness if you think there is free blood?' → 'both shifting dullness and a fluid thrill require percussion, and percussion here would be uninterpretable as well as painful.' 'Would you do the appendicitis tests?' → 'no — once peritonism is generalised, localising it to the appendix does not change the management, which is theatre.' Her worry, if it surfaces: 'Am I going to need an operation? My husband's at home on his own.'"
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet, Version C",
+      "ask": [
+        "'May I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature?' / 'She is tachycardic at 112 with a soft blood pressure.' / 'I'll look at your tummy, gently feel it, gently tap on it, and listen with my stethoscope.' / 'Are you in pain now — would you like something for it?' / 'Is it all right if I lower your trousers a little, so I can see the whole tummy?'",
+        "'No Cullen sign, no Grey Turner sign.' / 'Bending down to look across the abdomen — it moves symmetrically with respiration.' / 'Could you cough for me, and tell me if it hurts and where?' / 'I'll start away from the sore side and finish there.' / 'No tenderness, no guarding, no rigidity.' / 'I'm going to take my hand away — tell me if you get a stab of pain.'",
+        "The four that carry the station: 'I am so sorry — I did not realise you were in that much pain.' / 'I do need to feel your tummy once or maybe twice more, so I can understand what is happening inside.' / 'I am not going to test the fourth quadrant — there is guarding, there is no rigidity.' / 'I am stopping here, and this is what I am skipping and why.'",
+        "'Bowel sounds are present.' / 'I would like to inspect the inguinal regions for hernias, and to perform a digital rectal examination with consent and a chaperone.' / 'This is a woman with lower abdominal pain, so I would like a pelvic examination.'",
+        "Variants: Version A (localised, mild-moderate) — everything unchanged; at the tender area press, hold, WARN, release in one movement, then percuss for tenderness, auscultate, groins, rectum, and finish with the special test matching the quadrant: 'tenderness in the right lower quadrant, rebound negative, tenderness on percussion — that is localised peritonitis.' / Version B (localised, screams on DEEP palpation) — correct to proceed to deep palpation, because that pain is necessary; still take rebound on that single press: 'severe tenderness with rebound in the right upper quadrant. I am going to skip percussion, because peritonism is already established and percussion would only add pain.' The Version-B error is asking her permission to move from superficial to deep — she will say 'it's your call' and you lose both the mark and the time."
+      ],
+      "pefe": [
+        "Role-player: Jane Hollis, 52, retired teacher. Sudden severe pain across the WHOLE abdomen three hours ago while watching television, 10/10, unmoved since; no vomiting; bowels opened normally yesterday; ibuprofen most days for her knees and occasional indigestion (Gaviscon); periods stopped four years ago; no operations; rarely drinks, never smoked. Frightened and exhausted, not difficult — lies very still, knees slightly drawn up, breathing shallowly. Asked to cough: 'I can't' (pushed twice: 'I really can't, it's too sore'). Screams loudly and immediately at the FIRST touch anywhere; screams again on the second and third quadrant, tensing the abdominal muscles — that tensing is the guarding. Apologise + explain + ask → 'Alright. Be quick.' Ask without explaining → 'It's your call, doctor. I don't know.' Asked to expose → 'you do it' the first time. 'At my age? No' to pregnancy. If nobody asks her worry: 'Am I going to need an operation? My husband's at home on his own.'",
+        "Numbers and technique: capillary refill under 2 s — postural drop >=20 mmHg systolic or >=10 mmHg diastolic — normal liver span 8-12 cm (not tested here) — bowel sounds listened for 2-3 minutes before being called absent VERIFY — THREE quadrants before the word generalised — WIPE in 30-45 s — diagnosis spoken by 7:00. Rebound is press, hold, warn, release in one movement — never lift off and come back to test it separately, that is the same pain inflicted twice.",
+        "Four scored domains, only one of which is knowledge: (1) choice and technique of examination — below 4 here and the station fails whatever else you do; (2) accuracy — a press-and-yelp is not a Murphy sign and a shallow prod is not deep palpation; (3) approach to the patient — consent, warning, apology, offer of analgesia, stopping when you have what you need; (4) diagnosis and differentials — structured, by system, delivered before the bell."
+      ],
+      "fails": [
+        "★ Announcing generalised peritonitis after the FIRST scream — the commonest automatic fail in the station; you have not tested for what you are claiming",
+        "★ Pressing again without apologising, explaining why and asking permission; or asking 'shall I continue?' with no explanation and losing the mark to 'it's your call'",
+        "Skipping deep palpation, rebound and percussion SILENTLY — every omission is narrated with its reason",
+        "Skipping the peripheral survey as 'not relevant to the abdomen'; naming only general inspection findings and never Cullen and Grey Turner; insisting on the cough three times and treating the refusal as non-cooperation rather than a finding",
+        "Deciding she is 52 and therefore needs no pelvic examination; never offering groins or rectum; a flat list of diagnoses instead of grouped causes"
+      ],
+      "numbers": [
+        "3 quadrants before 'generalised' · 14 steps · WIPE 30-45 s · CRT <2 s · postural drop >=20/10 mmHg · bowel sounds 2-3 min before called absent VERIFY · diagnosis by 7:00",
+        "BP 104/62 · HR 112 · RR 22 · T 37.9 · guarding present, rigidity absent · nil by mouth, 2 large cannulae, lactate + beta-hCG, erect CXR, CT abdomen/pelvis, surgical referral now · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "Acute_Abdomen_Examination_2_Case_Tasks_Script_Notability.pdf (Jane Hollis, 52, sudden generalised abdominal pain — generalised peritonitis; the scream, the recovery script, three quadrants before 'generalised', and the narrated skip; Versions A and B folded in)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › Acute_Abdomen_Examination_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-11",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 390,
+    "setting": "PHYSICAL EXAMINATION — ED. The fever at the door chooses the diagnosis, and the Murphy sign is the scored moment: out, press, IN — in that order, or the role-player is briefed to give you nothing. Look for jaundice TWICE (general appearance, then sclerae). Palpate for the liver EDGE but do not drift into the chronic liver disease station — no liver span here. Automatic fails: taking the temperature and not reacting to it; refusing to go on to deep palpation because superficial hurt; pressing first and then asking for a breath out; leaving out the ECG and the respiratory examination in upper abdominal pain.",
+    "stem": [
+      "Emergency department. A 35-year-old man with pain in the right upper abdomen that began after dinner last night, constant and severe, radiating to the right shoulder blade. He has vomited once and feels feverish. BP 118/74 — HR 104 — RR 18 — T 38.4.",
+      "Common variant: a 45-year-old woman, same history, with mild scleral jaundice."
+    ],
+    "tasks": [
+      "Perform an abdominal examination with a running commentary to your examiner",
+      "State your diagnosis and differential diagnoses"
+    ],
+    "time": "DOOR: vitals including TEMPERATURE → 'he is febrile at 38.4 and mildly tachycardic, which makes an inflammatory or infective cause more likely than simple biliary colic' · WIPE, expose whole tummy, wash, offer analgesia · jaundice twice: 'on general appearance he is not jaundiced' then 'look up for me · no conjunctival pallor and no scleral icterus' · inspection Cullen/Grey Turner, scars, distension, masses, bend down · cough → he points under the right ribs · superficial palpation starting away: mild RUQ tenderness with guarding, no rigidity → PROCEED to deep palpation (mild superficial tenderness is a reason to continue, not to stop) → he screams → keep the hand still, warn, release in ONE movement → 'severe tenderness with guarding and positive rebound in the RUQ; I am going to skip percussion, because localised peritonism is established and percussion would only add pain' · liver EDGE from the RIF upward on each expiration ('not palpable, no palpable gallbladder') · NO liver span · auscultate, groins, DRE with consent and chaperone · MURPHY: warn, 'breathe all the way out... and out... pressing in under your right ribs... now take a deep breath in' → arrested inspiration → 'Murphy sign is positive; repeating on the left produced no pain, so the sign is specific' · the two closing offers: ECG (inferior MI) and respiratory examination (right lower lobe pneumonia) · plain-language explanation, then diagnosis with system-grouped differentials.",
+    "back": {
+      "dx": "Acute cholecystitis — right upper quadrant pain radiating to the right scapula, fever 38.4 with tachycardia, RUQ guarding with positive rebound, a positive Murphy sign, and no jaundice. Differentials by system: biliary — biliary colic, ascending cholangitis; gastrointestinal — pancreatitis, peptic ulcer disease, perforation, hepatitis; cardiorespiratory — inferior myocardial infarction, right lower lobe pneumonia, pulmonary embolism; urinary — right pyelonephritis, renal colic. Investigations: ECG, bloods with LFTs and lipase, FBC/CRP, right upper quadrant ultrasound; expect raised WCC and CRP with normal or mildly deranged LFTs — a markedly raised bilirubin and ALP point to a stone in the common bile duct or cholangitis, a raised lipase to pancreatitis. Management: nil by mouth, IV fluids, analgesia, IV antibiotics and surgical referral for cholecystectomy VERIFY TG; rural SA — discuss transfer with the receiving unit and MedSTAR 1300 13 12 33 if unwell.",
+      "plan": [
+        [
+          "0:00",
+          "Gloves on. 'Examiner, may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature?' → '118/74, pulse 104, RR 18, temperature 38.4.' → 'Thank you — he is febrile at 38.4 and mildly tachycardic, which makes an inflammatory or infective cause more likely than simple biliary colic.' (Taking the numbers and moving on loses the mark: the fever is the fact that chooses the diagnosis.)"
+        ],
+        [
+          "0:30",
+          "WIPE: name and date of birth, the four steps, 'I'll need to see the whole tummy — could you pull your top up and lower your trousers a little? Let me wash my hands. Are you in pain now — would you like something for it?' → 'It's bad. They gave me something twenty minutes ago.'"
+        ],
+        [
+          "1:15",
+          "Jaundice twice, and the peripheries: 'Examiner — on general appearance he is alert, in obvious pain, lying still, NOT JAUNDICED and not pale. Jake, may I see your hands? Capillary refill under two seconds, turgor normal, no pale palmar creases, no cold peripheries, pulse of good volume. Could you look up for me? No conjunctival pallor, and NO SCLERAL ICTERUS.'"
+        ],
+        [
+          "2:00",
+          "Inspection and cough: 'No Cullen sign, no Grey Turner sign, no scars, no distension, no masses, no redness. Bending down — the abdomen moves symmetrically with respiration. Jake, could you cough for me and tell me where it hurts?' → 'Ah! Up here, under my right ribs.'"
+        ],
+        [
+          "2:45",
+          "Superficial then deep — do not stop: 'I'll feel your tummy very gently, starting on the far side. Tell me the moment it hurts.' → 'ooh, there. That's sore.' → 'Examiner — mild tenderness in the right upper quadrant on superficial palpation, with guarding and no rigidity. Jake, I need to press a bit deeper now to feel underneath. Tell me if it hurts.' → he SCREAMS → 'I'm so sorry. I'm keeping my hand exactly where it is for a second... now I'm taking it away. Tell me if you get a stab of pain.' → 'Ow! Yes, that was worse.' → 'Severe tenderness with guarding and positive rebound in the right upper quadrant. I'm going to skip percussion, as localised peritonism is established and percussion would only add pain.'"
+        ],
+        [
+          "4:15",
+          "Liver edge — not a span: 'Starting in the right iliac fossa and moving up towards the costal margin on each expiration — the liver edge is not palpable and there is no palpable gallbladder.' Then 'auscultating below the umbilicus — bowel sounds are present. I'd like to inspect the inguinal regions for hernias' → 'normal' — 'and a digital rectal examination, with consent and a chaperone' → 'skip that.' (Percussing a liver span here costs you the minute you need for Murphy and the differentials.)"
+        ],
+        [
+          "5:30",
+          "THE MURPHY SIGN, in three named steps: 'Jake, one more test. I'll ask you to breathe all the way out, then I'll press in under your right ribs, then I'll ask you to take a deep breath in. It may be uncomfortable — is that all right? ... Breathe all the way out for me... and out... good. Pressing in under the ribs now... and take a deep breath in.' → he starts to inhale, catches his breath and stops: 'Ah — ! No, I can't.' → 'Thank you, I'm sorry. Examiner — Murphy sign is positive: he arrested inspiration as the gallbladder descended on to my fingers. Repeating the manoeuvre on the left produces no pain, so the sign is specific.'"
+        ],
+        [
+          "6:30",
+          "The two offers, then the explanation: 'Examiner, given the site of the pain I would also like an ECG, because an inferior myocardial infarction can present as upper abdominal pain, and I would like to examine the respiratory system for a right lower lobe pneumonia.' → 'Jake, I think your gallbladder is inflamed — that's a small bag under your liver that stores bile to help digest fat. If a small stone blocks its outlet the bag gets inflamed and infected. That fits everything: pain after a meal, the temperature, and catching your breath when I pressed. I'd like blood tests and an ultrasound. You'll need antibiotics through a drip and most likely an operation to take the gallbladder out.' → 'Do I have to have the operation?' → 'The surgical team will discuss it, but a gallbladder that has made one stone usually makes more, so removing it is the usual advice — you can live perfectly well without it.'"
+        ],
+        [
+          "7:15",
+          "Present: most likely acute cholecystitis, with the system-grouped differential list and the investigations (see dx)."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet",
+      "ask": [
+        "'May I have the vital signs, including the temperature?' / 'He is febrile at 38.4 — that makes an inflammatory cause more likely than simple colic.' / 'On general appearance he is not jaundiced.' / 'No conjunctival pallor and no scleral icterus.'",
+        "'I'm keeping my hand exactly where it is — now I'm taking it away.' / 'I am going to skip percussion, and this is why.' / 'Moving up from the right iliac fossa on each expiration — the liver edge is not palpable.'",
+        "The Murphy lines: 'Breathe all the way out... pressing in... now take a deep breath in.' / 'Murphy sign is positive — he arrested inspiration.' / 'Repeating on the left produces no pain, so the sign is specific.' / 'Given the site of the pain I would also like an ECG and to examine the respiratory system.'",
+        "Variants: jaundiced and rigoring → 'RUQ pain, fever with rigors and scleral icterus — that is Charcot triad, and my diagnosis is ascending cholangitis. He is also hypotensive and confused, which makes this Reynolds pentad. I would resuscitate, take blood cultures, start IV antibiotics and arrange urgent biliary drainage by ERCP — antibiotics alone will not treat an obstructed, infected biliary tree.' / settled and afebrile with a negative Murphy → 'more consistent with biliary colic: outpatient ultrasound, dietary advice about fatty food, and referral for elective laparoscopic cholecystectomy.' / 'how can the abdominal examination be normal in a myocardial infarction?' → 'because the pain is referred — visceral afferents from the inferior wall enter the cord at the same levels as upper abdominal structures, so the patient localises it to the epigastrium even though nothing in the abdomen is inflamed. That is why a soft, non-tender abdomen does not reassure me and why I want the ECG.' / 'what would you expect on the bloods?' → raised WCC and CRP with normal or mildly deranged LFTs; markedly raised bilirubin and ALP → CBD stone or cholangitis; raised lipase → pancreatitis."
+      ],
+      "pefe": [
+        "Role-player: Jake Morrissey, 35, diesel mechanic. Fish and chips last night, severe pain under the right ribs an hour later, constant, 8/10, radiating to the right shoulder blade; vomited once; hot and shivery; two or three milder episodes this year after big meals, always settling in a couple of hours; four or five beers on a Friday, non-smoker, no medicines, allergies or operations. In real pain, slightly impatient, not hostile. Coughs, winces, points under the right ribs. Superficial RUQ: 'ooh, that's sore', nothing elsewhere. Deep RUQ: SCREAMS and says stop, tensing the muscles. On release: 'ow — that was worse.' THE MURPHY IS THE KEY MOMENT — he reacts ONLY if you ask him to breathe out first, then press, then ask him to breathe in; if you simply press and ask if it hurts he says 'yes' and nothing more. Repeat on the left → 'no, that's fine.' Worry near the end: 'Am I going to need an operation? I've got work on Monday.'",
+        "Numbers: gallbladder wall over 3 mm on ultrasound — common bile duct over 6 mm VERIFY — biliary colic settles in 1-6 hours; cholecystitis is constant beyond six hours with fever — Charcot triad is three (RUQ pain, fever/rigors, jaundice), Reynolds pentad is five (plus hypotension and confusion) — Murphy done by 6:30, diagnosis started by 7:00. Three biliary syndromes to keep separate: biliary colic, acute cholecystitis, ascending cholangitis.",
+        "Scored behaviours: asked for the temperature and commented on the fever — jaundice commented on TWICE — proceeded to deep palpation despite superficial tenderness — rebound taken in a single movement — percussion skipped OUT LOUD with a reason — liver edge palpated and no span measured — groins and rectum requested — Murphy in the correct order with the left-sided control — ECG and respiratory examination offered — plain-language explanation plus a system-grouped list."
+      ],
+      "fails": [
+        "★ Taking the vitals and not reacting to the fever — it is the fact that chooses the diagnosis",
+        "★ Reporting jaundice only once; the sclerae are a separate observation and yellowing appears there first",
+        "Stopping at superficial palpation because it hurt — mild superficial tenderness is a reason to continue to deep palpation, not to stop; or lifting off and coming back to test rebound separately",
+        "Murphy performed in the wrong order (press first, then ask for a breath out) — the gallbladder has to be out of reach before your hand goes in; and never testing the left side to show specificity",
+        "Drifting into a liver span and the chronic liver disease examination; leaving out the ECG and the respiratory examination in upper abdominal pain"
+      ],
+      "numbers": [
+        "T 38.4 the fever · 2 looks for jaundice · 3 steps in Murphy (out, press, in) · 3 biliary syndromes · Charcot 3 / Reynolds 5 · Murphy by 6:30, diagnosis by 7:00",
+        "GB wall >3 mm · CBD >6 mm VERIFY · colic settles 1-6 h, cholecystitis constant >6 h with fever · ECG + respiratory exam offered · USS RUQ, LFTs, lipase"
+      ]
+    },
+    "source": "RUQ_Pain_Cholecystitis_2_Case_Tasks_Script_Notability.pdf (Jake Morrissey, 35, RUQ pain radiating to the right scapula after dinner — acute cholecystitis; the fever at the door, jaundice looked for twice, and the technically correct Murphy sign; cholangitis and biliary colic variants folded in)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › RUQ_Pain_Cholecystitis_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-12",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 390,
+    "setting": "PHYSICAL EXAMINATION — ED, VERSION A of the RLQ-pain-in-a-woman document: the pregnancy-positive version. The pelvic examination is the station, and the UTERINE SIZE is the single fact that separates an ectopic pregnancy from an intrauterine pregnancy with a separate adnexal problem — read the findings back before you commit. Automatic fails: never offering a pelvic examination in a woman with lower abdominal pain; never asking for a urine pregnancy test; hearing 'uterus enlarged, about ten weeks' and still saying ectopic; spending the last minute on Rovsing and obturator and reaching the bell without a diagnosis.",
+    "stem": [
+      "Emergency department. A 27-year-old woman with pain in the right lower abdomen for one week — intermittent at first, now constant, 6/10. Nauseated, vomited twice. A home urine pregnancy test was weakly positive. BP 110/70 with no postural drop — HR 80 — RR 12 — T 36.5. The pelvic examination will be given to you verbally if you ask for it."
+    ],
+    "tasks": [
+      "Perform an abdominal examination with a running commentary to your examiner",
+      "Explain your diagnosis and differential diagnoses"
+    ],
+    "time": "DOOR: vitals INCLUDING temperature (fever moves PID up the list) · WIPE, expose ('you do it' → 'is it all right if I lower your trousers a little?'), wash, offer analgesia · peripheral survey and inspection in 40 s: general appearance, CRT, turgor, palmar creases, peripheries, pulse volume, sunken eyes, dry mucous membranes, conjunctival pallor; Cullen and Grey Turner by name, scars, distension, masses, bend down and look across · cough → she localises to the RLQ · superficial palpation of all nine regions starting away from the pain: no tenderness, no guarding, no rigidity → deep palpation: RLQ tenderness → rebound in ONE movement (press, hold, WARN, release) → Version A: rebound NEGATIVE · percussion for tenderness, auscultate below the umbilicus, groins, DRE with consent and chaperone (tender? stool? blood on the glove?) · THE PELVIC EXAMINATION, unprompted, with consent and a chaperone: inspection / speculum / bimanual naming all four items (cervical motion tenderness, uterine SIZE, uterine tenderness and contour, adnexal masses and tenderness) + urine pregnancy test and dipstick · read the findings back, then commit: normal-sized uterus + CMT + adnexal tenderness + positive test = ectopic; uterus enlarged to ten weeks = intrauterine pregnancy with a separate adnexal problem · four-bucket differential (GI / O&G / KUB / MSK) · special tests only if time remains.",
+    "back": {
+      "dx": "Findings set 1 — inspection and speculum normal, cervical motion tenderness POSITIVE, uterus NORMAL SIZE, right adnexal tenderness, urine pregnancy test positive: ectopic pregnancy. 'The pregnancy is not where it should be.' Serum beta-hCG, urgent transvaginal ultrasound, gynaecology now. Findings set 2 — CMT negative, uterus ENLARGED to about ten weeks, right adnexal tenderness, test positive: an intrauterine pregnancy with a SEPARATE adnexal problem — ovarian cyst, haemorrhagic cyst or its rupture, ovarian torsion, salpingitis, and rarely a heterotopic pregnancy; urgent ultrasound and gynaecology review. Four-bucket differential: gastrointestinal — appendicitis, inflammatory bowel disease, mesenteric adenitis, strangulated hernia, bowel cancer in an older patient; obstetric and gynaecological — ectopic pregnancy, ovarian torsion, ovarian cyst or rupture, pelvic inflammatory disease; urinary — ureteric colic, urinary tract infection, pyelonephritis; musculoskeletal — septic arthritis of the hip, rectus sheath haematoma. If she is shocked with a positive test and peritonism: treat as a ruptured ectopic — two large cannulae, bloods with cross-match, fluid resuscitation, massive transfusion protocol if needed, gynaecology and theatre now, no delay for ultrasound; rural SA — MedSTAR 1300 13 12 33 while resuscitating.",
+      "plan": [
+        [
+          "0:00",
+          "'Examiner, may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature?' → '110/70, no postural drop, pulse 80, RR 12, temperature 36.5.' → 'Thank you — she is afebrile and haemodynamically stable.' (Not asking for the temperature is the trap: fever moves pelvic inflammatory disease up the list.)"
+        ],
+        [
+          "0:30",
+          "WIPE: name and date of birth, the four steps, 'I'll need to see the whole tummy, so could you pull your top up and lower your trousers a little? Stay lying as you are. Let me wash my hands. Are you in pain now — would you like something for it?' → 'You'll have to do the clothes' → 'Of course. Is it all right if I lower your trousers a little so I can see the whole tummy?'"
+        ],
+        [
+          "1:10",
+          "Peripheral survey and inspection (four scored steps, forty seconds — do not rush it to get to the pelvis): 'Alert, in mild discomfort, not pale, not jaundiced. Hands — capillary refill under two seconds, turgor normal, no pale palmar creases, no cold peripheries, pulse of good volume. Face — no sunken eyes, no dry mucous membranes, no conjunctival pallor. Abdomen — no Cullen sign, no Grey Turner sign, no scars, no distension, no masses, no redness. Bending down — it moves symmetrically with respiration.'"
+        ],
+        [
+          "2:15",
+          "Cough, then palpation: 'Jane, could you cough for me and tell me if you feel any pain, and where?' → 'Yes — down here on the right.' → 'I'll feel your tummy very gently now, starting away from the sore side.' → 'Superficial palpation of all nine regions: no tenderness, no guarding, no rigidity.' → 'I'll press a little deeper this time.' → 'Ah — yes, that's sore.' → rebound in ONE movement: 'I'm going to keep my hand exactly where it is... and now take it away — tell me if you get a stab of pain.' → Version A: 'No, that's alright' = rebound negative."
+        ],
+        [
+          "3:30",
+          "'Jane, I'll tap gently over the sore area — tell me if it hurts. Examiner — tenderness on percussion of the right lower quadrant is present/absent. Auscultating below the umbilicus — bowel sounds are present. I would like to inspect the inguinal regions for hernias' → 'normal' — 'and a digital rectal examination with consent and a chaperone — is it tender, can I feel stool, and is there blood on the glove?' (Asking is the mark; a 'skip that' does not excuse never having asked.)"
+        ],
+        [
+          "4:30",
+          "THE PELVIC EXAMINATION, offered unprompted: 'Examiner, as this is a woman with lower abdominal pain I would like to perform a pelvic examination, with the patient's consent and with a chaperone present. On inspection — any bleeding, discharge, rash, swelling or mass? On speculum — any bleeding or discharge from the cervix, any tissue at the os, is the vaginal wall normal? On bimanual — is there cervical motion tenderness? What is the SIZE of the uterus, is it tender, and is the contour regular? And in the adnexae — masses or tenderness? Finally, a urine pregnancy test and a urine dipstick, please.'"
+        ],
+        [
+          "5:45",
+          "READ THE FINDINGS BACK before committing. Set 1: 'CMT positive, uterus normal size, right adnexal tenderness, pregnancy test positive — my most likely diagnosis is an ectopic pregnancy: the pregnancy is not where it should be. Serum beta-hCG, urgent transvaginal ultrasound, and I would involve gynaecology now.' Set 2: 'the uterus is enlarged to about ten weeks, so this is an intrauterine pregnancy with a separate adnexal problem — most likely an ovarian cyst, a haemorrhagic cyst or its rupture, ovarian torsion or salpingitis, and rarely a heterotopic pregnancy. Urgent ultrasound and gynaecology review.'"
+        ],
+        [
+          "6:45",
+          "The four-bucket differential (see dx), then her worry if it has not surfaced: 'Doctor, is the baby all right?' → answer honestly and without abandoning the plan. Special tests (Rovsing, obturator) ONLY if time remains — if the bell goes here in Version A you have lost the diagnosis, and nobody fails an ectopic station for omitting an obturator sign."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's Version A sequence, built on the Version B run sheet",
+      "ask": [
+        "'May I have the vital signs — blood pressure, pulse, respiratory rate and temperature?' / 'Is it all right if I lower your trousers a little?' / 'No Cullen sign, no Grey Turner sign.' / 'I'll start away from the sore side.' / 'No tenderness, no guarding, no rigidity.' / 'I'm going to take my hand away — tell me if you get a stab of pain.'",
+        "'I would like to inspect the inguinal regions for hernias.' / 'A digital rectal examination, with consent and a chaperone.' / 'As this is a woman with lower abdominal pain I would like a pelvic examination, with consent and a chaperone.' / 'Cervical motion tenderness, uterine size, uterine tenderness, adnexal masses and tenderness.' / 'A urine pregnancy test and a urine dipstick, please.' / 'My differentials, by system, are...'",
+        "Examiner probes: 'why still do a bimanual if you suspect an ectopic?' → 'because the examination is the tool I use to reach the diagnosis, not to confirm one I already hold. Without it I cannot tell an ectopic from an intrauterine pregnancy with an adnexal problem, from pelvic inflammatory disease, or from ovarian torsion — and I have no ultrasound at the bedside. I would be gentle and I would stop if she asked me to.' / McBurney's point → 'one third along a line from the right anterior superior iliac spine to the umbilicus; I palpated it as part of the right lower quadrant and do not treat it as a separate special test.' / psoas sign → 'roll her on to her left side and extend the right hip, stretching psoas; pain suggests a retrocaecal appendix. I have not performed it because it requires repositioning a patient in pain and I judged the obturator sign the better use of time.'",
+        "If she is shocked with a positive test: 'Examiner, she is tachycardic and hypotensive with a positive pregnancy test and peritonism. I am treating this as a ruptured ectopic pregnancy: two large cannulae, bloods with a cross-match, fluid resuscitation, activate the massive transfusion protocol if needed, and gynaecology and theatre now. I would not delay for an ultrasound.'"
+      ],
+      "pefe": [
+        "Role-player: Jane Kelleher, 27, primary school teacher, lives with her partner. Version A — a dull ache low on the right for a week, intermittent then constant for two days, about 6/10; nauseated, vomited twice; period about two weeks late; home pregnancy test yesterday with a FAINT second line; a little brown spotting; one partner for three years, no contraception; no medicines, allergies or operations. Anxious but composed, and FRIGHTENED about the pregnancy — she will not mention it unless asked, or until the end. Asked to expose: 'you do it' the first time. Coughs and points to the right lower abdomen. No pain on superficial palpation; on deep RLQ palpation she winces — 'that's sore' — she does not scream. On release in Version A: no extra pain. If the doctor never mentions a pelvic examination she does not prompt them — that omission is the point of the station. Near the end: 'Doctor, is the baby all right?'",
+        "Numbers and rules: any positive pregnancy test is positive — uterine size at ten weeks is the fork — four bimanual items — four differential buckets — capillary refill under 2 s — abdomen finished by 5:00, pelvis by 6:30, diagnosis started by 7:00. Rebound is press, hold, warn, release in ONE movement; lifting off and returning inflicts the same pain twice.",
+        "Scored behaviours: vitals including temperature — full WIPE with consent, exposure and an offer of analgesia — Cullen and Grey Turner named and the bend-down look — cough — palpation started away from the pain — rebound in a single movement — percussion for tenderness and auscultation below the umbilicus — groins and rectum requested — pelvic examination offered UNPROMPTED with consent and chaperone — all four bimanual items including uterine size — urine pregnancy test asked for — diagnosis with reasons and a four-bucket list before the bell."
+      ],
+      "fails": [
+        "★ Never offering a pelvic examination in a woman with lower abdominal pain, or offering it only after the examiner prompts",
+        "★ Never asking for a urine pregnancy test; omitting uterine SIZE from the bimanual items",
+        "Hearing 'uterus enlarged, about ten weeks' and still saying ectopic pregnancy — read the findings back before you commit",
+        "Rebound tested by lifting the hand off and coming back — the same pain inflicted twice; rushing the peripheral survey to get to the pelvis",
+        "Spending the closing minute on Rovsing and obturator and reaching the bell with no diagnosis; a fifteen-item gastrointestinal list instead of four buckets"
+      ],
+      "numbers": [
+        "2 versions · 4 bimanual items (CMT, uterine size, uterine tenderness/contour, adnexae) · 4 differential buckets · uterus 10 weeks = the fork · abdomen by 5:00, pelvis by 6:30, diagnosis by 7:00",
+        "BP 110/70 no postural drop · HR 80 · T 36.5 · CRT <2 s · set 1: CMT+, uterus normal, adnexal tenderness, hCG+ = ectopic · set 2: uterus 10/40 = IUP + adnexal problem · shocked: cross-match, MTP, theatre, no ultrasound delay"
+      ]
+    },
+    "source": "RLQ_Pain_Woman_2_Case_Tasks_Script_Notability.pdf Version A (Jane Kelleher, 27, one week of RLQ pain with a weakly positive home pregnancy test — the pelvic examination, and uterine size as the fork between ectopic pregnancy and an intrauterine pregnancy with an adnexal problem)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › RLQ_Pain_Woman_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-13",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 390,
+    "setting": "PHYSICAL EXAMINATION — ED, VERSION B of the RLQ-pain-in-a-woman document: last period three weeks ago, bowels opened normally today, she coughs and localises to the right lower quadrant. The absent pregnancy makes this an appendicitis station — but it does NOT excuse you from the pelvic examination. Complete the whole acute abdomen structure BEFORE adding Rovsing and obturator, and perform both from her right side. Automatic fails: skipping the pelvic examination because the pregnancy test is negative; testing rebound as a separate second press; special tests done before the rectal and pelvic examinations.",
+    "stem": [
+      "Emergency department. A 27-year-old woman with lower abdominal pain. She opened her bowels normally today. Her last menstrual period was three weeks ago. BP 110/70 with no postural drop — HR 80 — RR 12 — T 36.9. The pain started yesterday around the umbilicus and has moved to the right lower quadrant; no appetite."
+    ],
+    "tasks": [
+      "Perform an abdominal examination with a running commentary to your examiner",
+      "Explain your diagnosis and differential diagnoses"
+    ],
+    "time": "DOOR: vitals including temperature → 'afebrile and haemodynamically stable' · WIPE, expose ('you do it'), wash, offer analgesia · peripheral survey and inspection: CRT, turgor, palmar creases, peripheries, pulse volume, sunken eyes, mucous membranes, conjunctival pallor; Cullen and Grey Turner by name, scars, distension, masses, bend down · cough → 'ow · down here on the right' · superficial palpation of all nine regions starting away, LUQ first and RLQ last: no tenderness, no guarding, no rigidity → deep palpation: RLQ tenderness → press, hold, WARN, release in one movement → 'ow, that was worse' = REBOUND POSITIVE · percussion over the sore area: tender → 'which supports localised peritonitis' · auscultate, groins, DRE with consent and chaperone · PELVIC EXAMINATION offered anyway, with consent and chaperone, four bimanual items + urine pregnancy test and dipstick → all normal, test NEGATIVE · only now the special tests, from her right side: Rovsing (press the LEFT lower quadrant, pain felt on the RIGHT) and obturator (flex the right hip and knee, internally rotate by moving the ankle outwards) · plain-language explanation of appendicitis with the three reasons, then the four-bucket differential.",
+    "back": {
+      "dx": "Acute appendicitis — pain that began periumbilically and migrated to the right lower quadrant, anorexia, RLQ tenderness on deep palpation with POSITIVE rebound and tenderness on percussion, Rovsing positive and obturator positive; pelvic examination and urine pregnancy test normal/negative, which is what allows the diagnosis to stand. Explain in plain language: the appendix is a small pouch where the small bowel joins the large bowel, low down on the right; it hurt when I pressed there, it hurt more when I let go, and both extra tests brought the pain back to that spot. Usual treatment is an operation to remove it — bloods, imaging, and the surgical team to see her now. Four-bucket differential: gastrointestinal — inflammatory bowel disease, mesenteric adenitis, strangulated hernia, bowel cancer in an older patient; obstetric and gynaecological — ectopic pregnancy, ovarian torsion, ovarian cyst or rupture, pelvic inflammatory disease; urinary — ureteric colic, urinary tract infection, pyelonephritis; musculoskeletal — septic arthritis of the hip, rectus sheath haematoma. Rural SA: if theatre is not available on site, keep her nil by mouth, cannulate, analgese, discuss with the receiving surgical unit and arrange transfer (MedSTAR 1300 13 12 33), PATS for the family's follow-up travel.",
+      "plan": [
+        [
+          "0:00",
+          "'Examiner, may I have the vital signs — blood pressure, pulse, respiratory rate and temperature?' → '110/70, no postural drop. Pulse 80. RR 12. Temperature 36.9.' → 'Thank you — she is afebrile and haemodynamically stable.'"
+        ],
+        [
+          "0:30",
+          "WIPE and consent: the four steps, expose the whole tummy, wash hands, offer analgesia. 'It's sore. They gave me some paracetamol an hour ago. You'll have to do the clothes, I don't want to move.' → 'Of course. Is it all right if I lower your trousers a little so I can see the whole tummy?'"
+        ],
+        [
+          "1:10",
+          "Peripheral survey and inspection: 'Alert, in mild discomfort, not pale, not jaundiced. Hands — CRT under two seconds, turgor normal, no pale palmar creases, no cold peripheries, pulse of good volume. Face — no sunken eyes, no dry mucous membranes; look up for me — no conjunctival pallor. Abdomen — no Cullen sign, no Grey Turner sign, no scars, no distension, no visible masses, no redness. Bending down to look across — it moves symmetrically with respiration.'"
+        ],
+        [
+          "2:15",
+          "Cough and palpation: 'Jane, could you give me a cough and tell me if it hurts, and where?' → 'Ow — yes. Down here on the right.' → superficial, nine regions, left upper quadrant first and right lower quadrant last: 'no tenderness, no guarding and no rigidity.' → 'I'll press a little deeper this time, to feel for anything underneath. Tell me if it hurts and I'll stop.' → 'Aah — yes, there. That's sore.' → 'I'm sorry. I'm going to keep my hand exactly where it is for a moment... and now I'm going to take it away. Tell me if you get a stab of pain.' → 'Ow! Yes — that was worse.' → 'Tenderness on deep palpation of the right lower quadrant, with positive rebound tenderness. No masses elsewhere.'"
+        ],
+        [
+          "3:45",
+          "Percussion and auscultation: 'Jane, I'll tap gently on that area — tell me if it hurts.' → 'Yes, it does.' → 'Tenderness on percussion of the right lower quadrant, which supports localised peritonitis. Auscultating below the umbilicus — bowel sounds are present. I would like to inspect the inguinal regions for hernias' → 'normal' — 'and a digital rectal examination, with consent and a chaperone' → 'it is normal.'"
+        ],
+        [
+          "4:45",
+          "The pelvic examination anyway: 'As this is a woman with lower abdominal pain, I would like a pelvic examination with consent and a chaperone. On inspection — bleeding, discharge, rash or swelling? On speculum — the cervix and the vaginal wall? On bimanual — cervical motion tenderness, the size, tenderness and contour of the uterus, and adnexal masses or tenderness? And office tests — a urine pregnancy test and a urine dipstick.' → 'Inspection, speculum and bimanual all normal. Pregnancy test negative. Dipstick negative.'"
+        ],
+        [
+          "5:45",
+          "Special tests LAST, from her right side: 'Jane, I'm going to press on the left lower side of your tummy now. Tell me if you feel any pain, and where.' → 'Yes — but it hurts over on the right.' → 'Examiner, Rovsing sign is positive.' → 'I'm now going to bend your right hip and knee and gently move your ankle outwards. Is that all right?' → 'Ooh. That hurts, down low.' → 'Obturator sign is positive.'"
+        ],
+        [
+          "6:45",
+          "Explain and present: 'Jane, I think you most likely have appendicitis... The reasons are that it hurt when I pressed there, it hurt more when I let go, and both of the extra tests I did brought the pain back to that spot. The usual treatment is an operation to take it out.' → 'Will I need surgery today?' → 'Most likely, yes. I'll take some blood tests and arrange a scan, and I'm going to ask the surgical team to see you now.' Then the four-bucket differential to the examiner (see dx)."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet, Version B",
+      "ask": [
+        "'May I have the vital signs — blood pressure, pulse, respiratory rate and temperature?' / 'Is it all right if I lower your trousers a little?' / 'No Cullen sign, no Grey Turner sign.' / 'I'll start away from the sore side.' / 'No tenderness, no guarding, no rigidity.'",
+        "'I'm going to take my hand away — tell me if you get a stab of pain.' / 'Tenderness on percussion supports localised peritonitis.' / 'I would like to inspect the inguinal regions for hernias.' / 'A digital rectal examination, with consent and a chaperone.' / 'As this is a woman with lower abdominal pain I would like a pelvic examination, with consent and a chaperone.'",
+        "'Cervical motion tenderness, uterine size, uterine tenderness, adnexal masses and tenderness.' / 'A urine pregnancy test and a urine dipstick, please.' / 'Rovsing sign is positive.' / 'Obturator sign is positive.' / 'My differentials, by system, are...'",
+        "Examiner probes: McBurney's point → 'one third along a line from the right anterior superior iliac spine to the umbilicus; I palpated it as part of the right lower quadrant rather than as a separate special test.' / psoas sign → 'roll her on to the left side and extend the right hip to stretch psoas; pain suggests a retrocaecal appendix — I judged obturator the better use of the time in a patient in pain.' / 'why a pelvic examination when the test is negative?' → 'because the examination is how I reach the diagnosis rather than confirm one I hold; ovarian torsion, a cyst and pelvic inflammatory disease all sit in my differential and none of them needs a positive pregnancy test.'"
+      ],
+      "pefe": [
+        "Role-player: Jane Kelleher, 27. Version B — pain started yesterday around the belly button and moved down to the right; no appetite; feels sick; last period three weeks ago and normal; bowels opened normally this morning; urine normal; no bleeding or discharge; one partner for three years; no medicines, allergies or operations. Anxious but composed. Asked to expose: 'you do it' the first time. Coughs and points to the right lower abdomen. No pain on superficial palpation; deep RLQ — winces, 'that's sore', does not scream. On release: 'ow, that was worse.' Version B only: pressing the LEFT lower side → the pain is felt on the RIGHT; moving the right ankle outwards → 'ooh, that hurts, down low.' If the doctor never mentions a pelvic examination she does not prompt — that omission is the point. Near the end: 'Will I need an operation today?'",
+        "Technique: Rovsing — press the left lower quadrant, positive if the pain is felt on the RIGHT. Obturator — flex the right hip and knee to 90 degrees and internally rotate the hip by moving the ankle outwards; pain suggests a pelvic appendix. Psoas — left lateral position, extend the right hip; pain suggests a retrocaecal appendix. Both special tests performed from the patient's RIGHT side, and AFTER the rectal and pelvic examinations. Rebound: press, hold, warn, release in one movement. Abdomen finished by 5:00, pelvis by 6:30, diagnosis started by 7:00.",
+        "Scored behaviours: vitals with temperature — full WIPE with consent, exposure, offer of analgesia — Cullen and Grey Turner named plus the bend-down look — asked her to cough — started away from the pain — rebound in a single movement — percussed for tenderness and auscultated below the umbilicus — requested groins and rectum — offered the pelvic examination UNPROMPTED with all four bimanual items and a pregnancy test — Rovsing and obturator performed accurately and from her right side — diagnosis with reasons and a four-bucket list before the bell."
+      ],
+      "fails": [
+        "★ Skipping the pelvic examination because the pregnancy test is negative or because 'this is clearly appendicitis'",
+        "★ Doing Rovsing and obturator BEFORE the rectal and pelvic examinations, or from the wrong side",
+        "Lifting the hand off and returning to test rebound separately — the same pain inflicted twice",
+        "Naming only general inspection findings and never Cullen and Grey Turner; skipping the peripheral survey",
+        "A flat fifteen-item gastrointestinal differential instead of the four buckets; no plain-language explanation to the patient"
+      ],
+      "numbers": [
+        "9 regions superficially, LUQ first and RLQ last · rebound in 1 movement · 2 special tests, done LAST · 4 bimanual items · 4 differential buckets · abdomen by 5:00, pelvis by 6:30, diagnosis by 7:00",
+        "Rovsing: press left, pain on the right · obturator: flex hip and knee, ankle outwards · psoas: left lateral, extend the right hip (retrocaecal) · McBurney's: one third from the right ASIS to the umbilicus · T 36.9, hCG negative"
+      ]
+    },
+    "source": "RLQ_Pain_Woman_2_Case_Tasks_Script_Notability.pdf Version B (Jane Kelleher, 27, periumbilical pain migrating to the right lower quadrant with a negative pregnancy test — acute appendicitis, positive rebound, Rovsing and obturator, and the pelvic examination you still have to offer)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › RLQ_Pain_Woman_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-14",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 390,
+    "setting": "PHYSICAL EXAMINATION — medical outpatient clinic. This is NOT an acute abdomen: the whole point of the station is the examination the acute abdomen station forbids. Three starred items outrank everything else — a MEASURED liver span in centimetres, SHIFTING DULLNESS, and a FLUID THRILL with her own hand in the midline. A candidate who names twenty peripheral signs and never measures a span has failed; a candidate who names six and does all three has passed. Automatic fails: no liver span number; percussing only for tenderness (the acute abdomen habit); a flapping tremor held for three seconds; exposing only to the umbilicus.",
+    "stem": [
+      "Medical outpatient clinic. A 55-year-old man referred with abdominal swelling over the past three months. He drinks heavily. He is not acutely unwell and his observations are stable and afebrile."
+    ],
+    "tasks": [
+      "Perform an abdominal examination, with a running commentary to your examiner",
+      "Explain your findings, your diagnosis and your differentials to the examiner"
+    ],
+    "time": "WIPE with the DIFFERENT exposure · 'I'll need to see you from the chest down to the hips, so could you take your shirt off and lower your trousers a little?' (spider naevi, gynaecomastia and body hair need the chest) · hands: leukonychia, clubbing, palmar erythema, Dupuytren, palmar creases → FLAPPING TREMOR held 15-30 s ('arms straight out, bend your hands back as if stopping traffic, spread your fingers, hold that') · arms: bruising, scratch marks, spider naevi COUNTED (>5 abnormal, blanch from the centre), proximal power ('lift both arms above your head') · face: scleral icterus, conjunctival pallor, xanthelasma, PAROTIDS in front of and below both ears, glossitis, fetor hepaticus · chest: gynaecomastia, loss of body hair, left supraclavicular node · peripheries done by 3:30 · abdomen: flank fullness, everted umbilicus, caput medusae, no scars, bend down; superficial and deep palpation soft and non-tender · LIVER: radial border of the index finger from the RIF up on each expiration, edge 3 cm below the costal margin, firm, smooth, non-tender, regular; percuss DOWN from above the nipple in the MCL for the upper border (dull at the 5th ICS); span 15 cm, normal 8-12 · spleen from the RIF towards the left costal margin, roll right lateral to confirm, Castell's point; ballotte kidneys · SHIFTING DULLNESS: percuss umbilicus to left flank, mark the dull point with your finger, roll her towards you, WAIT ~30 s, re-percuss = resonant · FLUID THRILL with the patient's own hand edge in the midline · auscultate bowel sounds and for a bruit over liver/epigastrium · to complete: legs, testes with consent and chaperone, rectum, and a formal encephalopathy assessment · explain in plain language, then diagnosis and differentials.",
+    "back": {
+      "dx": "Decompensated chronic liver disease with ascites and portal hypertension, most likely alcohol-related cirrhosis: leukonychia, palmar erythema, a Dupuytren contracture, six spider naevi (more than five is abnormal), proximal myopathy, scleral icterus, bilateral parotid enlargement, gynaecomastia and loss of body hair; flank fullness, everted umbilicus and caput medusae; liver edge 3 cm below the costal margin with a span of 15 cm (normal 8-12), spleen 2 cm below the left costal margin with a dull Castell's point, shifting dullness present, fluid thrill present, pitting oedema to the mid-shin. Differentials for the liver disease: viral hepatitis B or C, fatty liver disease, haemochromatosis, autoimmune liver disease, hepatocellular carcinoma. Differentials for the ascites itself: malignancy, right heart failure, nephrotic syndrome. Plan: bloods including coagulation profile and albumin, DIAGNOSTIC ascitic tap for cell count, culture and cytology, ultrasound with Doppler, endoscopic variceal screening, salt restriction with spironolactone and frusemide VERIFY TG, and referral for alcohol support — abrupt unsupported cessation is dangerous, so assess withdrawal risk first. SA: drug and alcohol service, Country Health Connect, PATS for travel to a specialist unit, TIS National 131 450 if an interpreter is needed.",
+      "plan": [
+        [
+          "0:00",
+          "'May I have his vital signs — blood pressure, pulse, respiratory rate and temperature?' → 'all within normal limits, afebrile.' WIPE: 'Hello, I'm Dr -. I've been asked to examine your tummy today. I'll start by looking at your hands and your face, then I'll look at your tummy, gently feel it, gently tap on it, and listen with my stethoscope. I'll need to see you from the CHEST down to the HIPS, so could you take your shirt off and lower your trousers a little? Let me wash my hands. Are you in any pain?' → 'No pain. It's just the size of it — my ankles have gone up too.'"
+        ],
+        [
+          "1:00",
+          "Hands and the flap: 'Leukonychia is present; no clubbing; palmar erythema; a Dupuytren contracture of the right ring finger; no pale palmar creases. Could you hold both arms straight out, bend your hands back at the wrists as if stopping traffic, and spread your fingers? Hold that for me.' HOLD 15-30 SECONDS. 'Examiner, after thirty seconds there is no flapping tremor.' → 'what does a flap indicate?' → 'hepatic encephalopathy; I would hold the position fifteen to thirty seconds. It is not specific to the liver — it also occurs in carbon dioxide retention and in uraemia.'"
+        ],
+        [
+          "2:00",
+          "Arms, face, chest (do not spend more than three minutes here — everything after this is worth more): 'No bruising or scratch marks; I count six spider naevi over the upper chest and arms, which is more than the five that can be normal, and they blanch from the centre. Could you lift both arms above your head?' → 'that's hard work, they feel heavy' → 'there is proximal weakness, consistent with an alcohol-related proximal myopathy.' 'Look up — there is scleral icterus; no conjunctival pallor; no xanthelasma. Feeling in front of and below both ears — bilateral parotid enlargement. Open your mouth and put your tongue out — no glossitis, no fetor hepaticus. Chest — gynaecomastia and loss of body hair. Left supraclavicular fossa — no lymphadenopathy.'"
+        ],
+        [
+          "3:30",
+          "Abdomen: 'The abdomen is distended with fullness in the flanks, the umbilicus is everted, and there are dilated veins radiating from it — caput medusae. No scars. Bending down to look across — it moves symmetrically with respiration. Superficial palpation of all nine regions — soft, no tenderness, no guarding. Deep palpation — no discrete masses.'"
+        ],
+        [
+          "4:15",
+          "THE LIVER SPAN: 'Could you take some deep breaths in and out for me? Starting in the right iliac fossa and moving up towards the costal margin on each expiration, using the radial border of my index finger — the liver edge is palpable three centimetres below the costal margin, firm, smooth, non-tender, with a regular edge. Now percussing downwards from above the nipple in the mid-clavicular line for the upper border — resonant... resonant... dull, at the fifth intercostal space. Measuring between the two, the liver span is fifteen centimetres — enlarged; normal is eight to twelve.' If you cannot feel the edge, SAY SO and still give a number: 'the liver edge is not palpable below the costal margin, so I will take the costal margin as my lower border and measure from there.'"
+        ],
+        [
+          "5:15",
+          "Spleen and kidneys: 'Palpating for the spleen FROM THE RIGHT ILIAC FOSSA towards the left costal margin on expiration — the spleen is palpable two centimetres below the left costal margin. I'll roll him towards me into the right lateral position and feel again to confirm. Percussing Castell's point in the lowest left intercostal space in the anterior axillary line — it becomes dull on inspiration, supporting splenomegaly. Ballotting both kidneys — not enlarged.' (Starting at the umbilicus means palpating straight over a large spleen.)"
+        ],
+        [
+          "6:00",
+          "THE TWO ASCITES TESTS: 'I'm going to tap on your tummy and then ask you to roll on to your side — is that all right? Percussing from the umbilicus out to the left flank — resonant, resonant, dull here. I'll keep my finger exactly on that spot. Could you roll towards me on to your right side?' WAIT ABOUT THIRTY SECONDS, re-percuss the marked point: 'it is now resonant — shifting dullness is present.' Then: 'one more test — could you place the edge of your own hand firmly down the middle of your tummy? That stops the wave travelling through the fat instead of the fluid. I'll place my hand flat on one side and flick the other... a fluid thrill is present.'"
+        ],
+        [
+          "6:45",
+          "Auscultation and the three offers: 'Bowel sounds present. Listening over the liver and the epigastrium — no bruit. To complete I would examine the legs for pitting oedema, examine the external genitalia for testicular atrophy with consent and a chaperone, perform a digital rectal examination for melaena and haemorrhoids, and formally assess for hepatic encephalopathy.' → 'legs show pitting oedema to the mid-shin.'"
+        ],
+        [
+          "7:15",
+          "Explain, then present: 'The swelling is fluid, not fat or wind — two of the tests I did show that clearly. Fluid builds up when the liver becomes scarred and stiff, so blood can't flow through it easily and the pressure backs up. We call that cirrhosis... The single most important treatment is stopping alcohol completely, because the liver can recover if the damage stops. Stopping suddenly on your own can be dangerous, so I'd like to arrange proper support.' → 'I've tried before.' → 'That's very common, and trying before makes the next attempt more likely to work, not less.' Then the examiner presentation and plan (see dx)."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet",
+      "ask": [
+        "'I'll need to see you from the chest down to the hips.' / 'Hold both arms out, bend your hands back, spread your fingers, and hold that.' / 'Could you lift both arms above your head?' / 'Feeling in front of and below both ears — parotid enlargement.' / 'Six spider naevi — more than five is abnormal, and they blanch from the centre.'",
+        "'Fullness in the flanks and an everted umbilicus.' / 'Dilated veins radiating from the umbilicus — caput medusae.' / 'Radial border of the index finger, advancing on each expiration.' / 'Percussing downwards from above the nipple for the upper border.' / 'The liver span is 15 centimetres; normal is 8 to 12.' / 'Palpating for the spleen from the right iliac fossa.'",
+        "'I'll keep my finger exactly on that spot — could you roll towards me?' / 'Could you place the edge of your own hand down the middle of your tummy?' / 'Shifting dullness is present and a fluid thrill is present.' / 'To complete: legs, testes, rectum, and an encephalopathy assessment.'",
+        "Examiner probes: 'why the hand in the midline?' → 'it prevents an impulse being transmitted through subcutaneous fat and giving a false positive.' / 'which is more sensitive?' → 'shifting dullness detects smaller volumes; a fluid thrill is more specific and suggests a large volume VERIFY — neither is as sensitive as ultrasound, which is what I would use to confirm, while a diagnostic tap tells me the cause.' / 'why are you doing tests the acute abdomen station forbids?' → 'because the question is different: there I am looking for peritonism, so I percuss only for tenderness; here I am looking for free fluid and organomegaly in a patient who is not in pain.' / alcohol history → 'quantify in standard drinks per week rather than accept social, ask about morning drinking, withdrawal symptoms and previous attempts, screen with AUDIT-C, and assess withdrawal risk before advising abrupt cessation.'",
+        "If he is confused and flapping → 'hepatic encephalopathy; I would look for a precipitant — infection including spontaneous bacterial peritonitis, gastrointestinal bleeding, constipation, dehydration, electrolyte disturbance and sedating drugs — treat with lactulose titrated to two or three soft stools daily, add rifaximin for recurrent episodes, and avoid sedatives.' VERIFY TG / if the ascites is tender and he is febrile → 'spontaneous bacterial peritonitis, diagnosed by a diagnostic tap: neutrophils above 250 per cubic millimetre is diagnostic regardless of culture VERIFY. Start empirical IV antibiotics immediately rather than wait for the culture, and give albumin to reduce the risk of hepatorenal syndrome.'"
+      ],
+      "pefe": [
+        "Role-player: Martin Byrne, 55, former shearing contractor, sitting on an outpatient couch. Three months of abdominal swelling so he cannot fasten his trousers, ankles swollen, no pain, breathless lying flat, arms and shoulders thinner while the belly has grown; wife says his eyes look yellow; dozes off in the afternoons; no haematemesis or melaena. Twenty-five years of heavy drinking — a bottle of rum over two or three days plus beer most nights — but he says 'socially, like anyone' unless asked to walk through a typical WEEK; a nip in the morning steadies him; two failed attempts to stop. No tattoos, injecting drug use, transfusions or overseas travel; no regular medicines, Nurofen for his back. Resigned, a little defensive, engages if you are blunt but kind. Holds the flap position steady with NO flap — and says nothing if released after three seconds, because that is the omission being tested. Arms above the head: 'that's hard work, they feel heavy.' No pain anywhere. Rolls cooperatively and stays there. Asks: 'So what's causing it?' and later 'I've tried to stop before.'",
+        "Numbers: liver span 8-12 cm normal VERIFY (his is 15) — flapping tremor held 15-30 s — more than 5 spider naevi is abnormal — ascitic neutrophils above 250/mm3 = spontaneous bacterial peritonitis VERIFY — serum-ascites albumin gradient >=11 g/L indicates portal hypertension VERIFY — hepatocellular carcinoma surveillance six-monthly — peripheries finished by 3:30, span by 5:30, ascites tests by 6:30. Castell's point: lowest left intercostal space in the anterior axillary line, dull on inspiration with splenomegaly.",
+        "The five commonly omitted peripheral signs the examiner is watching for: flapping tremor (held properly), leukonychia, proximal myopathy, parotid enlargement, and conscious level. The three starred items outrank all of them: a measured span, shifting dullness done properly (mark, roll, WAIT, re-percuss), and a fluid thrill with the patient's own hand in the midline."
+      ],
+      "fails": [
+        "★ Never measuring a liver span, or hunting silently for an edge you cannot find instead of narrating it and using the costal margin",
+        "★ Percussing only for tenderness — the acute abdomen habit — and never testing shifting dullness or a fluid thrill",
+        "Holding the flapping tremor for three seconds; omitting leukonychia, proximal power, parotids or conscious level",
+        "Exposing only to the umbilicus, so spider naevi, gynaecomastia and loss of body hair are never seen; spending more than three minutes on the peripheries",
+        "Starting splenic palpation at the umbilicus; forgetting the three offers (legs, testes with chaperone, rectum) and the encephalopathy assessment; accepting 'socially' as an alcohol history"
+      ],
+      "numbers": [
+        "3 starred items (span, shifting dullness, fluid thrill) · span 15 cm vs normal 8-12 VERIFY · flap held 15-30 s · >5 spider naevi abnormal · roll and WAIT ~30 s · peripheries by 3:30, span by 5:30, ascites tests by 6:30",
+        "Liver edge 3 cm below the costal margin, upper border dull at the 5th ICS MCL · spleen 2 cm below the left costal margin, Castell's dull on inspiration · SBP neutrophils >250/mm3 VERIFY · SAAG >=11 g/L VERIFY · HCC surveillance 6-monthly · spironolactone + frusemide, salt restriction VERIFY TG"
+      ]
+    },
+    "source": "Chronic_Liver_Disease_1_Study_Notes / _2_Case_Tasks_Script_Notability (1).pdf, Abdo PE folder (Martin Byrne, 55, three months of abdominal swelling on a heavy drinking history — alcohol-related cirrhosis with ascites; the liver span, shifting dullness and fluid thrill, and the five commonly omitted peripheral signs). Distinct from the GI-folder Chronic Liver Disease history stations (MED-149, MED-150)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › Chronic_Liver_Disease_2_Case_Tasks_Script_Notability (1).pdf"
+  },
+  {
+    "id": "PE-15",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "PHYSICAL EXAMINATION + RADIOLOGY — ED. A mannequin torso on the bed and a PERSON IN A CHAIR — and in one recall that person is not the patient, it is his son. One clarifying question at the door costs five seconds and prevents the whole station going wrong. Hands to the mannequin, words to the person; 'does that hurt?' now goes to the EXAMINER. Automatic fails: guessing who the patient is; inventing findings on the mannequin; never asking about FLATUS; skipping inspection because it is a plastic torso (the appendicectomy scar is on the model, and the scar is your cause); saying 'obstruction' without naming a cause.",
+    "stem": [
+      "Emergency department. A 60-year-old man with abdominal pain and constipation — no bowel motion for two days, vomiting. He had an appendicectomy in his twenties. Observations are stable. Inside the room: a mannequin torso on the bed and a person seated in a chair. An abdominal X-ray is on the wall or handed to you.",
+      "The recall variant: the person in the chair is the patient's SON, and the patient is the mannequin."
+    ],
+    "tasks": [
+      "Perform an abdominal examination",
+      "Explain your findings and your diagnosis to the examiner",
+      "Interpret the abdominal X-ray provided"
+    ],
+    "time": "DOOR: vitals + 'may I confirm · am I examining the model on the bed, and is this gentleman the patient?' → 'that is his son' · WIPE to whoever is there; in the son variant add 'Examiner, I would confirm the patient's own consent for the examination and for discussing his care with his son' · history WHILE you work: last bowel motion? FLATUS since then? vomiting · how many times and what colour? distension? weight loss or blood? WHAT OPERATIONS? · inspection of the mannequin: no Cullen/Grey Turner, RIF SCAR consistent with an open appendicectomy, distended, no visible peristalsis, no mass, bend down (symmetrical generalised distension) · superficial nine regions: no tenderness, guarding or rigidity; ask the EXAMINER about deep tenderness; 'as there is no tenderness, rebound cannot meaningfully be assessed' · percuss four quadrants: resonant throughout, consistent with gaseous distension · auscultate: 'bowel sounds are present' → 'are they normal?' → 'I report them as present or absent; if abnormal I would describe the character · high-pitched and tinkling in mechanical obstruction, absent in ileus or a late obstruction' · groins AND scrotum for an obstructed hernia; DRE with consent and chaperone · empty or loaded? mass? blood? · THE FILM: supine AXR, confirm identity and date, systematic · dilated loops CENTRAL, valvulae conniventes crossing the FULL width = small bowel, over 3 cm, no gas in the rectum, no free gas, no calcification, bones and lung bases clear → small bowel obstruction · plain-language explanation and drip-and-suck plan.",
+    "back": {
+      "dx": "Simple (not strangulated) small bowel obstruction, most likely ADHESIONAL from the previous open appendicectomy — absolute constipation with no flatus, bilious vomiting, generalised symmetrical distension, a soft non-tender resonant abdomen, an empty rectum, and a supine film showing centrally placed dilated loops over 3 cm with valvulae conniventes crossing the full width of the lumen and no rectal gas. Differentials: obstructing malignancy, an obstructed hernia, and in the large bowel a volvulus or faecal impaction. Plan — drip and suck: nil by mouth, IV fluid resuscitation, nasogastric tube, urinary catheter, bloods including a lactate, erect chest X-ray and CT abdomen and pelvis, surgical referral; adhesional obstruction may be given about 48 hours of conservative management if there is no peritonism VERIFY. Operate immediately for: peritonism, fever, tachycardia, a rising lactate, free gas on the erect film, a strangulated hernia, or a caecum beyond about 9 cm. Rural SA: start all of it locally and call MedSTAR 1300 13 12 33 and the receiving unit together; PATS for the family's travel.",
+      "plan": [
+        [
+          "0:00",
+          "'Examiner, may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature? And may I confirm — am I examining the model on the bed, and is this gentleman the patient?' → 'Observations are stable. That is the patient's son. The patient is the mannequin.' (Guessing here is how the whole station goes wrong.)"
+        ],
+        [
+          "0:30",
+          "WIPE to the son: 'Hello, I'm Dr -, one of the doctors here. Are you Mr Hallam's son? Thank you for coming in, Danny. I've been asked to examine your dad's tummy — I'll look at it, gently feel it, gently tap on it, and listen with my stethoscope at the end. I'll ask you a few questions as I go, because you may know things he hasn't been able to tell us. Is that all right? Examiner — I would confirm the patient's own consent for the examination and for discussing his care with his son. Let me wash my hands.' → 'He has consented. Please continue.'"
+        ],
+        [
+          "1:15",
+          "History while you work: 'When did your dad last open his bowels?' → 'Tuesday.' 'And HAS HE PASSED ANY WIND since then?' → 'No — he said that's what's bothering him.' 'What's the vomiting been like — how often, and what colour?' → 'Six or seven times since yesterday. It's gone green.' 'Has his tummy been swollen?' → 'Like a drum.' 'Any weight loss, or blood in the motions?' → 'No.' 'And what operations has he had?' → 'He had his appendix out when he was young.'"
+        ],
+        [
+          "2:30",
+          "Inspection of the mannequin — do not skip it: 'Exposing from the xiphisternum to below the umbilicus. No Cullen sign, no Grey Turner sign. There is a RIGHT ILIAC FOSSA SCAR consistent with an open appendicectomy. The abdomen is distended. No visible peristalsis, no obvious mass. Bending down to look across — the distension is symmetrical and generalised.'"
+        ],
+        [
+          "3:15",
+          "Palpation, percussion, auscultation without inventing anything: 'Superficial palpation of all nine regions — no tenderness, no guarding, no rigidity. Examiner, is there any tenderness on deep palpation?' → 'No tenderness anywhere.' → 'Deep palpation of all nine regions — no tenderness, no palpable mass. As there is no tenderness, rebound cannot meaningfully be assessed. Percussing all four quadrants — resonant throughout, consistent with gaseous distension, no tenderness on percussion. Auscultating below the umbilicus — bowel sounds are present.' → 'What sort of bowel sounds?' → 'I report them as present or absent. If they were abnormal I would describe the character — high-pitched and tinkling in mechanical obstruction, and absent in ileus or a late, exhausted obstruction.' (Never 'hyperactive'.)"
+        ],
+        [
+          "4:30",
+          "Groins and rectum: 'I would inspect and palpate both inguinal regions and the SCROTUM for a hernia, since an obstructed hernia is a cause I can find at the bedside.' → 'No hernia.' → 'And a digital rectal examination with consent and a chaperone — is the rectum empty or loaded, is there a mass, and is there blood on the glove?' → 'The rectum is empty. No mass, no blood.' → 'An empty rectum supports a mechanical obstruction proximally rather than faecal impaction.'"
+        ],
+        [
+          "5:30",
+          "THE FILM: 'This is a supine plain abdominal radiograph of an adult, marked right, and I would confirm the patient's identity and the date. Reviewing systematically — the bowel gas pattern shows multiple dilated loops which are CENTRALLY placed, with mucosal folds crossing the FULL WIDTH of the lumen, so these are valvulae conniventes and this is small bowel. The loops measure over three centimetres. There is no gas in the rectum. There is no free gas and no abnormal calcification. The solid organ outlines, the bones and the lung bases are unremarkable. The appearances are of small bowel obstruction.'"
+        ],
+        [
+          "6:45",
+          "Explain to the son, then present: 'There's a blockage in his bowel, Danny. The loops above it have filled with gas and fluid and swollen up, and there's nothing beyond it. Given he had his appendix out years ago, the most likely reason is scar tissue forming bands that kink the bowel — adhesions. The reassuring part is that his tummy is soft and not tender, which suggests the blood supply is still all right.' → 'Does he need an operation?' → 'Possibly, but not necessarily. First we rest the bowel completely — nothing to eat or drink — put a drip in for fluids, and pass a small tube through his nose into his stomach to drain what's building up. That stops the vomiting and takes the pressure off, and quite often the blockage settles by itself over a day or two. The surgical team will see him; if it doesn't settle, or if we become worried about the blood supply, he'd need surgery and we'd transfer him to Adelaide.' Then the examiner presentation and plan (see dx)."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet, the son variant",
+      "ask": [
+        "'Am I examining the model, and is this gentleman the patient?' / 'I would confirm the patient's own consent for the examination and for discussing his care.' / 'Has he passed any wind since then?' / 'What operations has he had?'",
+        "'There is a right iliac fossa scar consistent with an open appendicectomy.' / 'The abdomen is distended and resonant but soft and non-tender.' / 'As there is no tenderness, rebound cannot meaningfully be assessed.' / 'High-pitched and tinkling in mechanical obstruction, absent in ileus.' / 'An obstructed hernia is a cause I can find at the bedside.' / 'Is the rectum empty or loaded?'",
+        "Film lines: 'Dilated loops, centrally placed, with folds crossing the full width — valvulae conniventes.' / 'There is no gas in the rectum and no free gas under the diaphragm.' / 'A simple, rather than a strangulated, obstruction.' / 'Nil by mouth, fluids, nasogastric tube, catheter — drip and suck.' Large bowel differs: peripherally placed loops, haustra that do NOT cross the full width, dilated over 6 cm (caecum over 9 cm) VERIFY; an erect film is for air-fluid levels and free gas under the diaphragm; the commonest cause of small bowel obstruction in the developed world is adhesions.",
+        "Variants: the COFFEE-BEAN film → 'a single massively dilated loop with a dense line running through its centre where the two limbs lie against each other — the coffee-bean sign. It arises from the pelvis with its apex towards the left upper quadrant, so this is a sigmoid volvulus. Resuscitate, nil by mouth, and arrange flexible sigmoidoscopic decompression with a flatus tube; peritonism, fever or a raised lactate means ischaemia and theatre. Recurrence is common, so elective sigmoid colectomy is usually discussed.' / loop arising from the right iliac fossa → 'caecal volvulus, in younger patients with a mobile caecum; endoscopic decompression is usually unsuccessful, so management is operative.' / the FAECAL LOADING film → 'mottled faecal material throughout the colon down to the rectum, gas in the rectum, no dilated small bowel loops — faecal loading rather than obstruction, fitting the loaded rectum. Review medications, particularly opioids and anticholinergics, treat with suppositories or an enema and if needed manual evacuation, then a regular bowel regimen, mobility and fluids.' / 'what would make you operate immediately?' → peritonism, fever, tachycardia, rising lactate, free gas, a strangulated hernia, or a caecum beyond about 9 cm."
+      ],
+      "pefe": [
+        "Role-player, either role. Role 1 — Ray Hallam, 60, retired grain handler, the patient in the chair. Role 2 — Danny Hallam, the son, reporting about his father, who is the mannequin; worried and a bit impatient, and if the doctor talks only to the mannequin and never to him he SAYS NOTHING, because that omission is the point of the variant. Facts either way: crampy waves of pain for three days, vomited six or seven times since yesterday and it has turned green, no bowel motion since Tuesday and NO FLATUS (only volunteered if asked directly), abdomen like a drum and the belt will not fasten, appendix out at 22 (this is the cause of the whole case), no weight loss, no blood, a normal bowel screening kit a couple of years ago, no regular medicines. Reports NO PAIN on any palpation and does not soften it. Asked about confidentiality in Role 2: 'Dad said it was fine to talk to me.' Asks at some point: 'Does he need an operation?'",
+        "Numbers: small bowel dilated over 3 cm — colon over 6 cm — caecum over 9 cm VERIFY — adhesional obstruction may be given 48 hours of conservative management if there is no peritonism VERIFY — examination finished by 6:00, film read by 7:00. Four cardinal features of obstruction: pain, vomiting, distension and absolute constipation (no faeces AND no flatus — the flatus question is what separates obstruction from constipation).",
+        "Scored behaviours: clarified at the start who the patient was — introduced, explained the four steps, gained consent, mentioned hand hygiene — mentioned the PATIENT'S OWN consent in the son variant — asked about flatus, not just bowel motions — asked about previous operations — inspected the mannequin and named the scar and the distension — bent down and looked across — palpated all nine regions superficially and deeply — percussed four quadrants — auscultated and answered the bowel-sound challenge correctly — requested inguinal regions AND scrotum — requested a rectal examination and interpreted empty versus loaded — read the film systematically and reached small versus large bowel — named a CAUSE, not just 'obstruction' — explained in plain language with a clear plan."
+      ],
+      "fails": [
+        "★ Guessing who the patient is instead of asking one clarifying question at the door; refusing to speak to the son at all on confidentiality grounds, or discussing everything without ever mentioning the patient's consent",
+        "★ Inventing findings on the mannequin — it is not tender, so report that, and ask the examiner about deep tenderness",
+        "Never asking about flatus — absolute constipation means no faeces AND no flatus, and it is what separates obstruction from constipation",
+        "Skipping inspection because it is a plastic torso — the appendicectomy scar is on the model and the scar is your cause; calling bowel sounds 'hyperactive'",
+        "Never requesting the scrotum with the groins; saying 'obstruction' without naming a cause; reading the film unsystematically or missing the absent rectal gas"
+      ],
+      "numbers": [
+        "Small bowel >3 cm · colon >6 cm · caecum >9 cm VERIFY · 4 cardinal features (pain, vomiting, distension, absolute constipation) · valvulae conniventes cross the full width, haustra do not · exam by 6:00, film by 7:00",
+        "Adhesions the commonest cause after previous surgery · 48 h conservative if no peritonism VERIFY · drip and suck: NBM, IV fluids, NGT, catheter, lactate, erect CXR, CT A/P · operate now for peritonism, fever, rising lactate, free gas, strangulated hernia, caecum >9 cm · MedSTAR 1300 13 12 33"
+      ]
+    },
+    "source": "Mannequin_Abdomen_Obstruction_2_Case_Tasks_Script_Notability.pdf (Ray Hallam, 60, two days of absolute constipation with bilious vomiting and a previous appendicectomy — adhesional small bowel obstruction with the supine film; the son-in-the-chair variant, plus sigmoid volvulus and faecal loading films folded in)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › Mannequin_Abdomen_Obstruction_2_Case_Tasks_Script_Notability.pdf"
+  },
+  {
+    "id": "PE-16",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "PHYSICAL EXAMINATION — ED. Hydration is a full structured examination in its own right and is scored SEPARATELY from the abdomen. The single most commonly omitted item in the station is the POSTURAL blood pressure — it is not among the routine observations, so 'the observations are stable' never includes it: ask again, specifically. Then choose ONE dominant complaint for the differential list rather than hunting for a single diagnosis that explains all four symptoms, and offer gastroenteritis as a diagnosis of exclusion with the dangerous mimics named first. Automatic fails: accepting 'stable' and never getting a standing pressure; reporting dry LIPS as dry mucous membranes; skipping the abdominal examination because you expect it to be normal.",
+    "stem": [
+      "Version A: Emergency department. A 35-year-old man with abdominal pain, fever, vomiting and diarrhoea for two days; observations in the notes. Lying BP 118/76, pulse 92; standing 96/64, pulse 112 — RR 16 — T 37.8.",
+      "Version B (February 2026 recall): Emergency department. A patient with vomiting and diarrhoea. Your ONLY task is to assess hydration status and report your findings — same eight minutes for a quarter of the work."
+    ],
+    "tasks": [
+      "Assess his hydration status",
+      "Perform a focused abdominal examination",
+      "Explain your diagnosis and differential diagnoses to the examiner"
+    ],
+    "time": "DOOR: 'for the hydration assessment may I have the vital signs · and may I have the LYING AND STANDING blood pressures, please?' → fobbed off with 'stable' → ask again: 'may I specifically have the standing blood pressure? A normal lying pressure does not exclude significant volume depletion' → 118/76 lying, 96/64 standing, pulse 92 to 112 = a drop of 22 systolic and 12 diastolic with a compensatory tachycardia · SAY THE TECHNIQUE OUT LOUD: supine rest 5 minutes, systolic by palpation first then auscultation to avoid an auscultatory gap, stand and repeat at ONE and THREE minutes recording the pulse each time, and ask him to say if he feels dizzy · WIPE · hydration items: conscious level, CRT (prolonged at 3 s), skin turgor (the fold tents), pulse volume (low), peripheries warm and dry, sunken eyes, 'could you OPEN YOUR MOUTH for me' · dry mucous membranes and no pooled saliva · charts: fluid balance, urine output, a recorded weight to compare · GRADE it and say what the grade changes: 'moderate dehydration · he needs intravenous rather than oral rehydration' · abdomen in full even though you expect it to be normal: Cullen/Grey Turner, scars, distension, masses, bend down, cough, superficial nine regions, deep (mild generalised crampy discomfort only), no tenderness on percussion, auscultate, groins, DRE with consent and chaperone looking for BLOOD · then 'I will take abdominal pain as the dominant complaint' and the system list.",
+    "back": {
+      "dx": "Acute infective gastroenteritis with MODERATE dehydration — postural hypotension (22 systolic / 12 diastolic) with compensatory tachycardia, prolonged capillary refill at 3 seconds, reduced turgor, low-volume pulse, sunken eyes, dry mucous membranes, negative balance of about 1.5 L and poor urine output; abdomen soft and non-tender with only generalised crampy discomfort, and no blood on the rectal examination. Announce ONE dominant complaint — abdominal pain — then: the two other diagnoses that would explain all four symptoms are appendicitis and inflammatory bowel disease; by system — gastrointestinal: diverticulitis, pancreatitis, bowel obstruction, C. difficile colitis, bowel cancer; urinary: pyelonephritis, renal calculus, urinary tract infection; obstetric and gynaecological in a woman: ectopic pregnancy, pelvic inflammatory disease, ovarian torsion; metabolic: diabetic ketoacidosis. Plan: bloods with a lactate, capillary glucose and ketones, urine dipstick, beta-hCG in a woman, IV sodium chloride 0.9% and an antiemetic; NOT antibiotics routinely; stool sample if blood or mucus, prolonged or severe illness, recent antibiotics or hospital, travel, immunosuppression, or a suspected outbreak. Safety-net: return if unable to keep fluids down, blood, severe or localising pain, or no urine output. Public health: exclusion from food handling until 48 hours symptom-free VERIFY.",
+      "plan": [
+        [
+          "0:00",
+          "'Examiner, for the hydration assessment may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature? And may I have the lying and standing blood pressures, please?' → '118/76, pulse 92, RR 16, temperature 37.8.' → ASK AGAIN: 'Thank you — may I specifically have the standing blood pressure and standing pulse? A normal lying pressure doesn't exclude significant volume depletion.' → 'Standing, 96/64, pulse 112.' → 'The systolic falls by 22 and the diastolic by 12 with a rise in pulse rate — that is postural hypotension and it indicates significant intravascular volume depletion.'"
+        ],
+        [
+          "0:45",
+          "The technique, spoken (this paragraph is most of the technique mark, and in Version B most of the spare five minutes): 'I would rest him supine for five minutes and take the pressure, taking the systolic by palpation first and then confirming by auscultation so I do not miss an auscultatory gap. I would then stand him and repeat at one minute and at three minutes, recording the pulse each time, and I would ask him to tell me if he feels dizzy.'"
+        ],
+        [
+          "1:30",
+          "WIPE: 'Hello, I'm Dr -. I've been asked to check how dehydrated you are and then to examine your tummy. I'll look at your hands and your face, then look at, feel, tap and listen to your tummy. Could you pull your top up and lower your trousers a little? Let me wash my hands. Are you in pain at the moment — would you like anything for it?' → 'It's just crampy. It comes and goes. I feel awful, though — dizzy when I stand up.'"
+        ],
+        [
+          "2:15",
+          "The hydration examination itself: 'Examiner, he is alert and orientated. May I see your hands? Capillary refill is prolonged at three seconds. Pinching a fold of skin on the forearm — turgor is reduced, the fold tents. The radial pulse is of low volume. The peripheries are warm and dry. Looking at the face — the eyes are sunken. COULD YOU OPEN YOUR MOUTH FOR ME?' → 'It's like sandpaper in there.' → 'The mucous membranes are dry and there is no pooled saliva.' (Dry lips are not dry mucous membranes.)"
+        ],
+        [
+          "3:15",
+          "The charts and the grade: 'Examiner, may I see the fluid balance chart and the urine output, and does he have a recorded weight I can compare?' → 'Negative balance of about a litre and a half. Urine output has been poor. No weight available.' → 'Putting that together — postural hypotension with a compensatory tachycardia, prolonged capillary refill, reduced turgor, sunken eyes, dry mucous membranes and reduced urine output — this is MODERATE dehydration, and he needs intravenous rather than oral rehydration.'"
+        ],
+        [
+          "4:15",
+          "The abdomen in full, despite expecting it to be normal: 'No Cullen sign, no Grey Turner sign, no scars, no distension, no masses. Bending down — it moves symmetrically with respiration. Could you cough for me and tell me if it hurts?' → 'It pulls a bit but it doesn't really hurt.' → 'Superficial palpation of all nine regions, starting away from the pain — soft, no tenderness, no guarding, no rigidity. Deep palpation — mild generalised crampy discomfort only, no localised tenderness, no rebound and no masses. No tenderness on percussion. Auscultating below the umbilicus — bowel sounds are present. I would inspect the inguinal regions for hernias, and I would like a digital rectal examination with consent and a chaperone, looking in particular for BLOOD on the glove.' → 'Groins normal, rectal normal, no blood.' (Report the normal abdomen as a finding, not apologetically — it is what removes appendicitis, obstruction and diverticulitis from the top of the list.)"
+        ],
+        [
+          "6:00",
+          "Explain: 'The good news is that your tummy is soft and not tender, which makes something surgical like appendicitis much less likely. I think this is most likely a tummy bug — an infection of the gut, usually viral. What does concern me is how much fluid you've lost: your blood pressure dropped when you stood, your mouth is dry and your skin is slow to spring back. I'd like to put a drip in, give you fluid and something for the sickness, and take some blood tests.' → 'How long will I be here?' → 'A few hours at least, until you can keep fluids down and your blood pressure stays up when you stand.' Safety-net in plain words."
+        ],
+        [
+          "7:00",
+          "Present: 'Rather than looking for one diagnosis that explains all four symptoms, I'll take abdominal pain as the dominant complaint...' then the list and the plan (see dx), ending with 'I would not give antibiotics routinely.'"
+        ],
+        [
+          "V-B",
+          "VERSION B — filling the spare five minutes, in order and out loud: the full technique for the postural reading; palpatory then auscultatory systolic; readings at one and three minutes with the pulse; symptoms on standing; then EVERY peripheral sign with its normal value stated; then the jugular venous pressure from the sternal angle; then the fluid balance chart, urine output and a weight; then the grading; then what the grade changes. Finish by offering the bedside tests — capillary glucose and ketones, urine dipstick, and a pregnancy test in a woman. Candidates who finish in three minutes and stand in silence lose marks they could have collected."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run sheet, Version A, with the Version B filler as the last row",
+      "ask": [
+        "'May I have the lying and standing blood pressures?' / 'A normal lying pressure does not exclude significant volume depletion.' / 'Palpatory first, then auscultatory, to avoid an auscultatory gap.' / 'Repeat at one minute and at three minutes.'",
+        "'Capillary refill is prolonged at three seconds.' / 'Skin turgor is reduced — the fold tents.' / 'Could you open your mouth for me?' / 'May I see the fluid balance chart and the urine output?' / 'This is moderate dehydration, and he needs intravenous rather than oral rehydration.'",
+        "'The abdomen is soft and non-tender throughout.' / 'Looking in particular for blood on the glove.' / 'I will take abdominal pain as the dominant complaint.' / 'I would not give antibiotics routinely.'",
+        "Examiner probes: 'why can turgor mislead?' → 'skin elasticity falls with age, so an older patient can tent without being dehydrated, and an obese patient can have normal turgor while significantly depleted — I would weight the postural blood pressure, the urine output and the mucous membranes more heavily.' / 'how would you rehydrate?' → 'mild — oral rehydration solution in small frequent volumes; the glucose and sodium content matters, so plain water or soft drink is not equivalent. Moderate to severe, or persistent vomiting — IV sodium chloride 0.9%, with a bolus of about 20 mL/kg if shocked VERIFY, then reassessment. Check electrolytes before adding potassium, and reassess the postural blood pressure and urine output rather than working to a fixed volume.' / 'could this be something else entirely?' → 'three that are easy to miss: diabetic ketoacidosis, which is why I want a capillary glucose and ketones; ectopic pregnancy in any woman, which is why I want a beta-hCG; and in an older patient, sepsis from any source, where the only sign may be confusion and a postural drop.'"
+      ],
+      "pefe": [
+        "Role-player: Aaron Doyle, 35, shearer. Two days of crampy generalised abdominal pain about 4/10 that moves around, fever, four or five vomits keeping almost nothing down, watery diarrhoea about eight times a day with NO blood; two workmates have the same thing; ate at a roadhouse three days ago; no travel, no recent antibiotics or hospital; has not passed urine since this morning and it was dark; dizzy on standing; very thirsty; no medicines, allergies or operations. Flat and tired, not distressed. VOLUNTEERS the dizziness on standing early — a gift to a candidate who has not thought about the postural blood pressure. Asked to open his mouth: 'it's like sandpaper in there'; if they only look at his lips he says nothing. Coughs — 'it pulls a bit, doesn't really hurt.' No pain on superficial palpation; on deep palpation 'that's just the crampy feeling, nowhere in particular' — never localises, never guards. Worry near the end: 'Do I need to be admitted? I'm meant to be back at work Monday.'",
+        "Numbers: postural drop >=20 mmHg systolic or >=10 mmHg diastolic within three minutes VERIFY — capillary refill under 2 s — supine rest 5 minutes before the lying reading — moderate dehydration 5-10% of body weight VERIFY — resuscitation bolus 20 mL/kg of sodium chloride 0.9% VERIFY — C. difficile: oral vancomycin 125 mg QID for 10 days VERIFY — exclusion from food handling until 48 hours symptom-free VERIFY. Fourteen hydration items: conscious level, CRT, turgor, pulse volume, peripheries, sunken eyes, mucous membranes, pooled saliva, thirst, postural BP, postural pulse, urine output, fluid balance chart, weight.",
+        "Scored behaviours: asked for the STANDING blood pressure — and asked AGAIN when told the observations were stable — described the postural technique fully — reported level of consciousness — CRT, turgor, pulse volume, peripheries — asked him to open his mouth — looked for sunken eyes — asked for the fluid balance chart and urine output — GRADED the dehydration and said what the grade changes — did the whole abdominal examination despite expecting it to be normal — requested groins and a rectal examination mentioning blood — announced ONE dominant complaint before listing differentials — named appendicitis and inflammatory bowel disease near the top — mentioned glucose, ketones and a pregnancy test in a woman — said antibiotics are not routine."
+      ],
+      "fails": [
+        "★ Letting 'the observations are stable' stand — the standing pressure is never included in the routine observations, so you must ask for it specifically",
+        "★ Saying nothing about the postural TECHNIQUE, especially in Version B where it is most of the spare five minutes",
+        "Reporting dry lips as dry mucous membranes — ask him to open his mouth",
+        "Listing hydration findings without grading them or saying what the grade changes; skipping the abdominal examination, or reporting a normal abdomen apologetically",
+        "Hunting for one diagnosis that explains all four symptoms instead of announcing a dominant complaint; giving gastroenteritis without naming the dangerous mimics first; giving antibiotics routinely"
+      ],
+      "numbers": [
+        "14 hydration items · postural drop >=20/10 mmHg within 3 min VERIFY · supine rest 5 min · readings at 1 and 3 min · CRT prolonged at 3 s · moderate dehydration 5-10% body weight VERIFY · 1 dominant complaint, 4 complaints given",
+        "Lying 118/76 HR 92, standing 96/64 HR 112 (fall 22/12) · negative balance ~1.5 L · IV NaCl 0.9%, bolus 20 mL/kg if shocked VERIFY · glucose, ketones, dipstick, beta-hCG · no routine antibiotics · C. difficile oral vancomycin 125 mg QID 10 days VERIFY · food-handling exclusion 48 h symptom-free VERIFY"
+      ]
+    },
+    "source": "Gastroenteritis_Hydration_2_Case_Tasks_Script_Notability.pdf, Abdo PE folder (Aaron Doyle, 35, two days of pain, fever, vomiting and diarrhoea — gastroenteritis with moderate dehydration; the postural drop, the fourteen hydration items and one dominant complaint, with the Version B hydration-only recall folded in)",
+    "drive": "AMC Clinical Notability › PE › AMC PE › Abdo PE › Gastroenteritis_Hydration_2_Case_Tasks_Script_Notability.pdf"
   }
 ]
