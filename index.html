@@ -79,6 +79,8 @@
   .peFt th{width:34%;font-weight:600;color:var(--ink-2);font-size:13px}
   .peFt td{color:var(--ink)}
   @media (max-width:520px){ .peFt th{width:40%} .peFt th,.peFt td{padding:6px 10px;font-size:13.5px} }
+  .framing,.runsheet{font-size:15px;line-height:1.55;margin:0 0 14px;color:var(--ink)}
+  .runsheet{color:var(--ink-2)}
   .timenote{font-size:13.5px;color:var(--ink-2);padding-top:8px;border-top:1px solid var(--line)}
 
   /* timer */
@@ -347,15 +349,16 @@ function render(){
     h+=`<div class="cols"><div class="main"><div class="station" style="--c:${col}">
       <div class="meta"><span class="cat">${CATS[c.cat]?CATS[c.cat].name:c.cat}</span><span class="idn">${esc(c.id)} · ${idx+1} of ${queue.length}${p.seen?` · seen ${p.seen}×`:""}</span></div>`;
     if(!flipped){
-      h+=`<div class="setting">${esc(c.setting||"")}</div><div class="stem">${(c.stem||[]).map(s=>`<p>${esc(s)}</p>`).join("")}</div>
+      h+=`<div class="stem">${(c.stem||[]).map(s=>`<p>${esc(s)}</p>`).join("")}</div>
         <ol class="tasks">${(c.tasks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ol>
         ${c.findings?`<details class="peF"><summary>${esc(c.findingsLabel||"Examination findings — open only when you would ask the examiner")}</summary><table class="peFt">${c.findings.map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</table></details>`:""}
-        <div class="timenote">${esc(c.time||"8 minutes.")}</div>
         ${wide?"":timerHtml}`;
     } else {
       const b=c.back||{};
       h+=`<div class="back">
+        ${c.setting?`<h3>How the station runs</h3><p class="framing">${esc(c.setting)}</p>`:""}
         <h3>Diagnosis</h3><p class="dx">${esc(b.dx||"")}</p>
+        ${c.time?`<h3>The eight minutes, end to end</h3><p class="runsheet">${esc(c.time)}</p>`:""}
         ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span>${esc(x)}</span>`).join("")}</div>`:""}
         ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
