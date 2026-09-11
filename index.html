@@ -103,6 +103,13 @@
   .back h3{font-size:13.5px;font-weight:600;margin:16px 0 6px;color:var(--c,var(--ink));letter-spacing:.005em}
   .back h3:first-child{margin-top:0}
   .dx{font-family:Georgia,serif;font-size:18px;line-height:1.4;margin:0}
+  .dxlead{font-family:Georgia,serif;font-size:18px;line-height:1.38;margin:0 0 9px;font-weight:600;color:var(--ink)}
+  .ptl{list-style:none;margin:0;padding:0}
+  .ptl li{position:relative;padding-left:15px;margin:0 0 8px;font-size:15px;line-height:1.5;color:var(--ink)}
+  .ptl li:last-child{margin-bottom:0}
+  .ptl li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--c,var(--ink-3));opacity:.55}
+  .ptl.dxp li{font-size:15.5px;line-height:1.52}
+  .ptl.runp li{color:var(--ink-2)}
   .back ul{margin:0;padding-left:18px;font-size:14.5px}
   .back li{margin:3px 0}
   .fail li::marker{color:var(--bad)}
@@ -358,9 +365,9 @@ function render(){
     } else {
       const b=c.back||{};
       h+=`<div class="back">
-        ${c.setting?`<h3>How the station runs</h3><p class="framing">${esc(c.setting)}</p>`:""}
-        <h3>Diagnosis</h3><p class="dx">${esc(b.dx||"")}</p>
-        ${c.time?`<h3>The eight minutes, end to end</h3><p class="runsheet">${esc(c.time)}</p>`:""}
+        ${c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
+        <h3>Diagnosis</h3>${(()=>{const p=points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${esc(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"");})()}
+        ${c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
         ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span>${esc(x)}</span>`).join("")}</div>`:""}
         ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
@@ -450,6 +457,62 @@ document.getElementById("resetBtn").onclick=async()=>{
 
 const mq=window.matchMedia("(min-width:900px)");
 (mq.addEventListener?mq.addEventListener("change",()=>render()):mq.addListener(()=>render()));
+
+/* ---- prose to points: split long blocks into readable bullets ---- */
+function _sent(s){
+  const out=[]; let cur="";
+  for(let i=0;i<s.length;i++){
+    const ch=s[i]; cur+=ch;
+    if(ch==="."||ch==="!"||ch==="?"){
+      const prev=s[i-1]||"";
+      let j=i+1;
+      while(j<s.length&&(s[j]==="'"||s[j]==='"')){ cur+=s[j]; j++; }
+      const nx=s[j]||"", nx2=s[j+1]||"";
+      if(/\d/.test(prev)&&/\d/.test(nx)){ i=j-1; continue; }
+      if(nx===" "&&/[A-Z'"(\u2018\u201C]/.test(nx2)){ out.push(cur.trim()); cur=""; i=j; }
+      else { i=j-1; }
+    }
+  }
+  if(cur.trim()) out.push(cur.trim());
+  return out;
+}
+function _chop(t,max){
+  if(t.length<=max) return [t];
+  const semi=t.indexOf("; ")>-1, sep=semi?"; ":" \u2014 ";
+  const bits=t.split(semi?/;\s+/:/\s+\u2014\s+/);
+  if(bits.length<2) return [t];
+  const out=[]; let cur="";
+  for(const b of bits){
+    if(!cur) cur=b;
+    else if((cur+sep+b).length<=max) cur+=sep+b;
+    else { out.push(cur); cur=b; }
+  }
+  if(cur) out.push(cur);
+  return out;
+}
+function points(s,min,max){
+  min=min||150; max=max||340;
+  const raw=[];
+  for(const t of _sent(s||"")){
+    const caps=/^[A-Z][A-Z0-9'\u2014 ,-]{2,}/.test(t);
+    if(!raw.length){ raw.push(t); continue; }
+    const cur=raw[raw.length-1];
+    if((caps&&cur.length>60)||cur.length>=min) raw.push(t);
+    else raw[raw.length-1]=cur+" "+t;
+  }
+  const out=[]; raw.forEach(t=>_chop(t,max).forEach(x=>out.push(x)));
+  return out;
+}
+function ptlist(s,cls,min,max){
+  const p=points(s,min,max);
+  if(!p.length) return "";
+  return `<ul class="ptl ${cls||""}">${p.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+}
+function runpoints(s){
+  const bits=(s||"").split(/\s+\u00b7\s+/).map(x=>x.trim()).filter(Boolean);
+  const src=bits.length>2?bits:points(s,130,300);
+  return `<ul class="ptl runp">${src.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+}
 
 /* ===================== Boot ===================== */
 async function loadBuiltin(){
