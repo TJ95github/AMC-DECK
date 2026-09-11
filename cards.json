@@ -34886,5 +34886,138 @@
     "source": "Paediatric_Neck_Lump_2_Case_Tasks_Script_Notability.pdf (an 11-year-old with a midline neck lump and a cousin who had lymphoma — an infected thyroglossal duct cyst; the midline-or-lateral question the mother withholds, character taken as history, tongue protrusion as the discriminator, the malignancy screen that lets you close her fear with evidence, and specific named differentials; the 4-year-old post-viral lymphadenopathy version with the full examination request, plus the red-flag node, lymphadenitis and cat-scratch variants folded in)",
     "drive": "AMC Clinical Notability › Pediatric › Paediatric_Neck_Lump_2_Case_Tasks_Script_Notability.pdf",
     "findingsLabel": "What she holds back, and the examination — open when you would ask"
+  },
+  {
+    "id": "PAEDS-33",
+    "cat": "paeds",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "HISTORY, EXAMINATION REQUEST, DIAGNOSIS WITH REASONS AND DIFFERENTIALS — ED or GP. TREAT IT AS AN EYE COMPLAINT UNTIL THE URINE TELLS YOU OTHERWISE. NAME THE THREE BUCKETS OUT LOUD IN THE FIRST THIRTY SECONDS — THE EYE ITSELF, ALLERGY, OR FLUID — then ask ONE EYE OR BOTH, AND ONE LID OR BOTH, which deletes most of the differential in ten seconds. TWO QUESTIONS DECIDE THE STATION: PAIN ON EYE MOVEMENT, which is fatal to miss in the orbital cellulitis version, and IS THE URINE FROTHY OR DARK LIKE COLA — frothy is protein and nephrotic, cola is blood and nephritic. EXAMINE THE EYE FIRST, and on the dipstick NAME TWO PADS, NOT TEN.",
+    "stem": [
+      "Emergency department or general practice. A 4-YEAR-OLD BOY comes in with his father complaining of SWELLING OF THE EYES. HE HAD AN UPPER RESPIRATORY TRACT INFECTION TWO WEEKS AGO, WHICH HAS SINCE RESOLVED.",
+      "Take a history, ask the examiner for the physical examination findings, EXPLAIN YOUR DIAGNOSIS WITH YOUR REASONS, and give your differential diagnoses. Some sittings ask for investigations instead. 8 minutes. THE VARIANTS FORK AT THE EXAMINATION CARD: nephrotic syndrome, POST-STREPTOCOCCAL GLOMERULONEPHRITIS, ORBITAL CELLULITIS or preseptal cellulitis."
+    ],
+    "tasks": [
+      "Take a history from the father",
+      "Ask the examiner for the physical examination findings",
+      "Explain your diagnosis, with your reasons",
+      "Give your differential diagnoses — or, in some sittings, request further investigations"
+    ],
+    "time": "FRAME IT IN EIGHT SECONDS: 'swelling around a child's eye comes from ONE OF THREE PLACES · a problem in THE EYE OR EYELID ITSELF, AN ALLERGIC REACTION, or FLUID THE BODY IS HOLDING ONTO · so I'm going to ask about each of those in turn' · CHARACTERISE: when did it start, has it happened before, is it getting worse, ONE EYE OR BOTH, ONE EYELID OR BOTH, AND IS IT WORSE AT ANY PARTICULAR TIME OF DAY · BUCKET 1, THE EYE, NEVER SKIPPED: blurring or bumping into things, PAIN IN THE EYE, PAIN WHEN HE MOVES HIS EYE, REDNESS IN THE LIDS AND IN THE EYE ITSELF, discharge or stuck shut, itch, FEVER OR CHILLS, blocked nose, headache or facial pain · BUCKET 2, ALLERGY, IN FORTY-FIVE SECONDS: what was he doing before it started, new food or medicine, INSECT BITE OR STING, known allergies, asthma, eczema or hay fever, rash, AND THE ANAPHYLAXIS SCREEN · LIP OR TONGUE SWELLING AND NOISY BREATHING · BUCKET 3, FLUID, THE LONGEST BLOCK: HOW MUCH WEE, IS IT FROTHY OR BUBBLY, IS IT DARK LIKE COLA OR TEA, A SORE THROAT OR SKIN SORES AND HOW LONG BEFORE THE SWELLING, and whether antibiotics were taken · then LEG SWELLING, breathlessness or going blue, JAUNDICE AND PALE STOOLS, cold intolerance and constipation, AND TUMMY PAIN OR ABDOMINAL SWELLING · THEN THE EXAMINATION WITH THE EYE FIRST, BLOOD PRESSURE AND TEMPERATURE BOTH NAMED, AND A DIPSTICK · then the diagnosis with SUPPORTING AND EXCLUDING findings, and the differentials IN THREE GROUPS.",
+    "findings": [
+      [
+        "VERSION A card — general",
+        "ALERT, WELL GROWN, no rash, no stridor — HR 96, RR 24, BP 96/60, T 36.8, SpO2 98%"
+      ],
+      [
+        "The eyes",
+        "PERIORBITAL OEDEMA OF ALL FOUR LIDS — NO redness, NO discharge, NO PROPTOSIS — ACUITY NORMAL, pupils normal, EYE MOVEMENTS FULL AND PAINLESS"
+      ],
+      [
+        "Chest",
+        "REDUCED AIR ENTRY AND DULLNESS AT BOTH BASES — pleural effusions"
+      ],
+      [
+        "Abdomen",
+        "DISTENDED WITH SHIFTING DULLNESS — no masses, no organomegaly"
+      ],
+      [
+        "Limbs",
+        "PITTING OEDEMA TO MID-SHIN"
+      ],
+      [
+        "URINE DIPSTICK",
+        "PROTEIN 4+, BLOOD NEGATIVE — and when the examiner asks what you were looking for, the answer is TWO WORDS: PROTEIN AND BLOOD"
+      ],
+      [
+        "The two findings the father withholds",
+        "THE URINE IS REALLY BUBBLY IN THE TOILET, given ONLY if you ask frothy or bubbly; and HIS TUMMY HAS LOOKED BLOATED FOR A FEW DAYS, given ONLY if you ask about abdominal swelling"
+      ],
+      [
+        "The preceding illness",
+        "A RUNNY NOSE AND COUGH A FORTNIGHT AGO — NO SORE THROAT, NO SKIN SORES"
+      ],
+      [
+        "VERSION A2 card — PSGN",
+        "BP 128/82 — URINE BLOOD POSITIVE, PROTEIN TRACE TO 1+ — passing less urine — AND THE FATHER NOW RECALLS A SORE THROAT TWO WEEKS AGO"
+      ],
+      [
+        "VERSION B card — orbital cellulitis",
+        "TEMPERATURE 38.9 — RIGHT EYE ONLY — THE EYE IS RED — AND THERE IS PAIN ON EYE MOVEMENT"
+      ],
+      [
+        "Version B-minus — preseptal",
+        "The same unilateral swelling, BUT the eye is WHITE, movements FULL AND PAINLESS, acuity normal, and the child is WELL"
+      ]
+    ],
+    "back": {
+      "dx": "VERSION A — NEPHROTIC SYNDROME. TO THE FATHER, IN PLAIN WORDS: 'THE KIDNEYS WORK LIKE A VERY FINE FILTER — THEY LET WASTE OUT AND KEEP PROTEIN IN. In this condition THE FILTER BECOMES LEAKY AND PROTEIN ESCAPES INTO THE URINE. PROTEIN IS WHAT HOLDS FLUID INSIDE THE BLOOD VESSELS, so when it drops THE FLUID SEEPS OUT INTO THE TISSUES — AND IT SHOWS FIRST WHERE THE SKIN IS THINNEST, AROUND THE EYES.' Never say albumin, oncotic pressure or proteinuria to a parent — the role-player looks blank and says 'sorry, I didn't follow that'. THE REASONS, WHICH THE TASK EXPLICITLY DEMANDS: A LARGE AMOUNT OF PROTEIN AND NO BLOOD on the dipstick; the swelling is BILATERAL AND WORSE IN THE MORNING; there is FLUID IN THE ABDOMEN AND AT BOTH LUNG BASES; and THE BLOOD PRESSURE IS NORMAL, WHICH ARGUES AGAINST THE OTHER KIDNEY CONDITION. THE DIFFERENTIALS IN THREE GROUPS, NOT AS A LIST: (1) THE EYE — ORBITAL CELLULITIS, excluded because the eye is white with FULL PAINLESS MOVEMENTS and he is afebrile; PRESEPTAL CELLULITIS, for the same reasons; and a STYE OR CHALAZION, which would be ONE LID, NOT FOUR. (2) ALLERGY — a reaction or ANGIOEDEMA, against which there is NO TRIGGER, NO ITCH AND NO RASH, and you screened for anaphylaxis. (3) FLUID RETENTION — renal, and within that NEPHROTIC SYNDROME, POST-STREPTOCOCCAL GLOMERULONEPHRITIS and IgA NEPHROPATHY; then CARDIAC FAILURE, CHRONIC LIVER DISEASE, HYPOTHYROIDISM and PROTEIN-LOSING ENTEROPATHY. MANAGEMENT AND REASSURANCE: 'IT ISN'T ANYTHING YOU DID. It is serious enough that HE NEEDS TO COME INTO HOSPITAL, but the common form in four-year-olds — ABOUT NINE IN TEN — USUALLY RESPONDS WELL TO STEROID TREATMENT.' Confirm with a URINE PROTEIN:CREATININE RATIO on a first-morning sample, SERUM ALBUMIN and bloods, with nephrology involved today. VERSION A2 — POST-STREPTOCOCCAL GLOMERULONEPHRITIS: 'after a throat infection with a particular bacterium, THE IMMUNE SYSTEM MAKES ANTIBODIES, and A COUPLE OF WEEKS LATER those can INFLAME THE FILTERS in the kidney. That's why there's BLOOD in the urine, why he's PASSING LESS, why his BLOOD PRESSURE IS UP, and why he's swollen.' Investigations: urine microscopy for RED CELL CASTS, electrolytes, C3 LOW WITH NORMAL C4, ASOT or anti-DNase B, throat swab. Management: SALT AND FLUID RESTRICTION, DAILY WEIGHTS, blood pressure monitoring, a diuretic if overloaded — most children recover fully, and RECHECK C3 AT EIGHT WEEKS. VERSION B — ORBITAL CELLULITIS: 'I'm concerned about AN INFECTION IN THE TISSUES BEHIND THE EYE. It usually STARTS IN THE SINUSES AND SPREADS THROUGH A VERY THIN PIECE OF BONE into the eye socket. The reasons are that it is ONLY ONE EYE, the eye itself is RED, he has A FEVER, and ABOVE ALL IT HURTS HIM TO MOVE IT — THAT IS WHAT TELLS ME THE INFECTION IS BEHIND THE EYE RATHER THAN IN THE LID.' Admit; IV ANTIBIOTICS STARTED NOW, NOT AFTER THE SCAN; urgent CT ORBITS AND SINUSES WITH CONTRAST; blood cultures and inflammatory markers; ophthalmology and ENT today; HOURLY ACUITY, COLOUR VISION AND PUPIL CHECKS; and surgery for an abscess or no improvement at 24-48 hours. VERSION B-MINUS — PRESEPTAL: 'this is an infection of THE EYELID TISSUE IN FRONT OF THE EYE, NOT BEHIND IT. I can say that because HIS EYE MOVES FREELY AND IT DOESN'T HURT HIM TO MOVE IT, his vision is normal and THE EYE ITSELF ISN'T RED' — oral antibiotics, review tomorrow, NO SCAN, and return sooner if it spreads, the eye becomes red or painful to move, vision changes, or he becomes febrile. BEING ABLE TO SEPARATE THOSE TWO OUT LOUD, WITH THE REASON ATTACHED, IS THE HIGHEST-VALUE THIRTY SECONDS IN THE STATION.",
+      "plan": [
+        [
+          "0:00",
+          "FRAME THE THREE BUCKETS — it costs eight seconds: 'I can see his eyes are puffy. SWELLING AROUND A CHILD'S EYE COMES FROM ONE OF THREE PLACES — A PROBLEM IN THE EYE OR THE EYELID ITSELF, AN ALLERGIC REACTION, OR FLUID THE BODY IS HOLDING ONTO — so I'm going to ask about each of those in turn, then examine him, then tell you what I think.'"
+        ],
+        [
+          "0:30",
+          "CHARACTERISE, AND ASK LATERALITY BEFORE ANYTHING ELSE: 'when did it start? Has it happened before? Is it getting worse? IS IT ONE EYE OR BOTH? IS IT ONE EYELID OR BOTH EYELIDS? IS IT WORSE AT ANY PARTICULAR TIME OF DAY?' → both eyes, all four lids, WORST FIRST THING IN THE MORNING and better by the afternoon. (Taking a full history without ever establishing laterality is the first trap — those two questions delete most of the differential in ten seconds.)"
+        ],
+        [
+          "1:45",
+          "BUCKET 1, THE EYE — NEVER SKIPPED: 'any blurring of his vision, or bumping into things? ANY PAIN IN THE EYE? ANY PAIN WHEN HE MOVES HIS EYE OR LOOKS AROUND? Any redness — IN THE LIDS, AND IN THE EYE ITSELF? Any discharge, or stuck shut in the mornings? Are they itchy? ANY FEVER OR CHILLS? Any blocked nose, headache or pain in the face?' (Skipping straight to the kidney is what examiners have watched candidates do for years — and in the orbital cellulitis version it is the difference between a pass and a miss.)"
+        ],
+        [
+          "3:00",
+          "BUCKET 2, ALLERGY — forty-five seconds that buy you an explicit anaphylaxis screen AND one of the three differential groups: 'what was he doing just before it started? Any new food or medicine? ANY INSECT BITE OR STING? Any known allergies, asthma, eczema or hay fever? Any rash anywhere? ANY SWELLING OF HIS LIPS OR TONGUE? ANY NOISY BREATHING?'"
+        ],
+        [
+          "3:45",
+          "BUCKET 3, FLUID — RENAL FIRST, AND ASKED PRECISELY: 'any change in HOW MUCH WEE he's passing? IS IT FROTHY OR BUBBLY? IS IT DARK, OR BLOODY — LIKE COLA OR TEA? Has he had A SORE THROAT OR ANY SKIN SORES recently — AND HOW LONG BEFORE THE SWELLING STARTED? Did he see a doctor or take antibiotics for it?' → he is going less, AND IT'S BEEN REALLY BUBBLY — given only because you asked. (Accepting 'his wee's a funny colour' without splitting FROTHY from DARK is the named trap: frothy is protein and nephrotic, cola is blood and glomerulonephritis — different diseases, different treatments.)"
+        ],
+        [
+          "4:45",
+          "THE REST OF BUCKET 3: 'any swelling of his legs or feet? Any chest pain or breathlessness when he runs and plays? DOES HE EVER GO BLUE? Any yellowing of his eyes or skin? Any pale stools or dark urine? Is he bothered by the cold? Constipated? Dry skin? Any tummy pain, vomiting or diarrhoea? HAS HIS TUMMY LOOKED SWOLLEN?' → ankles puffy in the evening, AND HIS TUMMY HAS LOOKED BLOATED FOR A FEW DAYS — the second withheld finding."
+        ],
+        [
+          "5:30",
+          "THE EXAMINATION, AND THE ORDER IS THE POINT: 'general appearance — alert or drowsy, any rash, ANY STRIDOR, and his growth? ALL THE VITAL SIGNS, PARTICULARLY THE BLOOD PRESSURE AND THE TEMPERATURE. I'D LIKE TO EXAMINE THE EYE FIRST: any redness, any discharge, ANY PROPTOSIS? VISUAL ACUITY? Pupils? ARE THE EYE MOVEMENTS FULL, AND IS THERE PAIN ON MOVEMENT? Thyroid. Respiratory — equal air entry, added sounds, ANY DULLNESS AT THE BASES? Cardiovascular. Abdomen — distension, tenderness, organomegaly, ballotable kidneys, SHIFTING DULLNESS? Lower limbs for PITTING OEDEMA. AND A URINE DIPSTICK.' → 'WHAT WERE YOU LOOKING FOR ON THE DIPSTICK?' → 'TWO THINGS: PROTEIN AND BLOOD.' (Asking for the abdomen before the eye, or reciting every dipstick pad, both lose marks. And missing the blood pressure leaves you unable to separate nephritic from nephrotic.)"
+        ],
+        [
+          "6:45",
+          "THE DIAGNOSIS IN PLAIN WORDS, WITH SUPPORTING AND EXCLUDING REASONS (see dx) → 'IS THAT SERIOUS? IS IT SOMETHING WE DID?' → no, and the hospital admission with the nine-in-ten steroid response."
+        ],
+        [
+          "7:20",
+          "THE DIFFERENTIALS IN THREE GROUPS, NOT AS A LIST (see dx), each with the reason it is excluded. → and late, if never invited: 'SHOULD I HAVE BROUGHT HIM IN EARLIER?'"
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run, Version A",
+      "ask": [
+        "'Swelling around a child's eye comes from ONE OF THREE PLACES — the eye itself, an allergic reaction, or fluid.' / 'IS IT ONE EYE OR BOTH? AND ONE EYELID OR BOTH?' / 'IS THERE ANY PAIN WHEN HE MOVES HIS EYE?' / 'Any redness — in the lids, AND IN THE EYE ITSELF?'",
+        "'IS THE URINE FROTHY AND BUBBLY, OR IS IT DARK LIKE COLA?' / 'How long between the sore throat and the swelling?' / 'Has his tummy looked swollen?' / 'EXAMINER, I'D LIKE TO EXAMINE THE EYE FIRST.' / 'Blood pressure and temperature, please — THE BLOOD PRESSURE FOR THE KIDNEY, THE TEMPERATURE FOR INFECTION.' / 'On the dipstick I'm looking for TWO THINGS: PROTEIN AND BLOOD.'",
+        "'The kidneys work like A VERY FINE FILTER, and this filter HAS BECOME LEAKY.' / 'PROTEIN IS WHAT HOLDS FLUID INSIDE THE BLOOD VESSELS.' / 'It shows up first WHERE THE SKIN IS THINNEST, which is around the eyes.' / 'About NINE IN TEN children this age have the form that responds well to steroids.' / 'IT HURTS HIM TO MOVE THAT EYE — THAT TELLS ME THE INFECTION IS BEHIND THE EYE, NOT JUST IN THE LID.' / 'WE'LL START THE ANTIBIOTICS NOW; WE WON'T WAIT FOR THE SCAN.'",
+        "VERSION A2 — PSGN: 'this is a different kidney condition. After a throat infection with a particular bacterium, THE IMMUNE SYSTEM MAKES ANTIBODIES, and a couple of weeks later those can INFLAME THE FILTERS in the kidney. That's why there's BLOOD in the urine, why he's passing less, WHY HIS BLOOD PRESSURE IS UP, and why he's swollen.' Investigations: urine microscopy for RED CELL CASTS, electrolytes, C3 AND C4, ASOT or anti-DNase B, throat swab. Management: SALT AND FLUID RESTRICTION, DAILY WEIGHTS, blood pressure monitoring, diuretic if overloaded, and RECHECK C3 AT EIGHT WEEKS. TIMING: PSGN follows a sore throat by 1-2 WEEKS and a skin infection by 3-6 WEEKS — whereas IgA NEPHROPATHY gives haematuria 1-2 DAYS INTO THE ILLNESS, so calling a two-day post-viral haematuria post-streptococcal is wrong.",
+        "VERSION B — ORBITAL CELLULITIS: 'THIS CHANGES THINGS' — then the explanation (see dx), then ADMIT, IV ANTIBIOTICS NOW NOT AFTER THE SCAN, urgent CT ORBITS AND SINUSES WITH CONTRAST, blood cultures, ophthalmology and ENT today, HOURLY ACUITY, COLOUR VISION AND PUPIL CHECKS, and surgery for an abscess or no improvement at 24-48 hours. / VERSION B-MINUS — PRESEPTAL: oral antibiotics, review tomorrow, NO SCAN, with return criteria. / IF ASKED FOR INVESTIGATIONS INSTEAD OF DIFFERENTIALS, ANSWER THE WHOLE CHILD: 'bedside — urine dipstick, A URINE PROTEIN:CREATININE RATIO ON A FIRST-MORNING SAMPLE, microscopy and culture. Bloods — electrolytes and creatinine, SERUM ALBUMIN, full blood count, lipids, C3 AND C4, ASOT or anti-DNase B, liver function, TSH, AND HEPATITIS AND VARICELLA SEROLOGY BEFORE ANY STEROID. Imaging — renal ultrasound if there is renal impairment or an atypical picture. AND A KIDNEY BIOPSY IS NOT FIRST-LINE IN A TYPICAL FOUR-YEAR-OLD — it is for atypical features or steroid resistance, and that decision belongs with nephrology.'"
+      ],
+      "pefe": [
+        "Role-player: Daniel, 36, works in logistics; partner at home with the baby; father of Sam, 4. He has brought Sam in because HIS EYES HAVE BEEN PUFFY FOR ABOUT A WEEK AND THE CHILDCARE CENTRE COMMENTED ON IT. REGISTER: CALM, COOPERATIVE, SLIGHTLY PUZZLED RATHER THAN FRIGHTENED — HE HALF EXPECTS TO BE TOLD IT IS AN ALLERGY, and becomes concerned ONLY WHEN THE DOCTOR MENTIONS HOSPITAL. HIDDEN AGENDA: he is quietly worried he missed something, because it has been a week and he did not come sooner — raised late: 'SHOULD I HAVE BROUGHT HIM IN EARLIER?'",
+        "THE DETAILS HE HOLDS BACK — THE TWO FINDINGS THAT MAKE THE CASE: THE BUBBLY URINE AND THE BLOATED TUMMY. DO NOT VOLUNTEER EITHER. Give the urine detail ONLY if asked whether it is FROTHY OR BUBBLY; give the tummy ONLY if asked about ABDOMINAL SWELLING OR TUMMY PAIN. IF ASKED A VAGUE 'ANYTHING ELSE?', SAY NO. If asked 'is his urine normal?', say 'I THINK SO' — and only if they ask frothy or bubbly do you say yes. Background: Sam is otherwise well, MILD ECZEMA, immunised, no medicines or allergies, growing normally, NO family history of kidney disease; he had a runny nose and cough a fortnight ago, NO sore throat, NO skin sores.",
+        "HOW TO PLAY IT: answer only what is asked, and answer briefly. IF THEY ASK ABOUT THE EYE AT ALL, BE CLEARLY REASSURING — no pain, no redness, normal vision, normal movements. IF THEY NEVER ASK A SINGLE QUESTION ABOUT THE EYE ITSELF, SAY NOTHING AND MARK THEM DOWN. IF THEY USE WORDS LIKE ALBUMIN, ONCOTIC PRESSURE OR PROTEINURIA, LOOK BLANK AND SAY 'SORRY, I DIDN'T FOLLOW THAT.' When they mention hospital, become worried: 'HOSPITAL? IS IT SERIOUS?' Ask 'IS IT SOMETHING WE DID?' once the diagnosis is given, and close with 'WHAT HAPPENS NEXT?' MARK OUT OF 10: framed the history naming the three groups; ONE EYE OR BOTH AND ONE LID OR BOTH; AT LEAST FOUR EYE QUESTIONS INCLUDING PAIN ON EYE MOVEMENT; asked whether THE EYE ITSELF was red, separately from the lids; screened allergy INCLUDING LIPS, TONGUE AND NOISY BREATHING; ASKED WHETHER THE URINE WAS FROTHY AND FOUND IT; ASKED ABOUT ABDOMINAL SWELLING AND FOUND IT; asked for THE EYE EXAMINATION FIRST plus blood pressure and temperature; asked for a dipstick AND NAMED PROTEIN AND BLOOD; and gave the diagnosis WITH REASONS AND EXCLUDED THE ALTERNATIVES OUT LOUD. AUTOMATIC FAIL: asked nothing about the eye itself; never asked for a urine dipstick; named a diagnosis with no supporting reasons; or in Version B, did not recognise orbital cellulitis or sent the child home on oral antibiotics."
+      ],
+      "fails": [
+        "★ Going straight to the abdomen and the dipstick because 'it's the kidney case', and asking nothing about the eye itself",
+        "★ Never asking about pain on eye movement — fatal in the orbital cellulitis version",
+        "Recording 'funny coloured urine' without splitting frothy from cola — different diseases with different treatments",
+        "Naming the diagnosis and stopping, when the task explicitly says WITH REASONS — both supporting and excluding findings",
+        "Asking for the abdomen before the eye; reciting every dipstick pad instead of naming protein and blood; missing the blood pressure, which is what separates nephritic from nephrotic; explaining oncotic pressure to a father instead of 'a leaky filter'; and calling a two-day post-viral haematuria post-streptococcal, when that interval is IgA nephropathy"
+      ],
+      "numbers": [
+        "PSGN follows a SORE THROAT BY 1-2 WEEKS and a SKIN INFECTION BY 3-6 WEEKS · IgA NEPHROPATHY gives haematuria 1-2 DAYS INTO the illness · C3 LOW WITH NORMAL C4 in PSGN, and C3 should normalise BY 8 WEEKS · NEPHROTIC: dipstick 3+ TO 4+ PROTEIN with albumin under about 25 g/L",
+        "90% OF CHILDHOOD NEPHROTIC SYNDROME IS MINIMAL CHANGE DISEASE · prednisolone 60 mg/m2/day, max 60-80 mg, for 4-6 weeks then an alternate-day taper VERIFY · urine PROTEIN:CREATININE RATIO on a FIRST-MORNING sample · ORBITAL CELLULITIS: CT orbits and sinuses WITH CONTRAST, IV ANTIBIOTICS BEFORE THE SCAN, surgical review at 24-48 hours · PRESEPTAL: oral antibiotics, review at 24 hours, NO IMAGING · PSGN is more common in Aboriginal children and often follows SKIN SORES, so ask about them explicitly"
+      ]
+    },
+    "source": "Paediatric_Eye_Swelling_2_Case_Tasks_Script_Notability.pdf (a 4-year-old with bilateral periorbital swelling two weeks after a viral illness — nephrotic syndrome; the three-bucket framing, laterality asked before anything else, the eye bucket never skipped, frothy split from cola-coloured urine, the eye examined before the abdomen, two dipstick pads named, and differentials delivered in three groups with exclusions; the PSGN, orbital cellulitis and preseptal versions folded in)",
+    "drive": "AMC Clinical Notability › Pediatric › Paediatric_Eye_Swelling_2_Case_Tasks_Script_Notability.pdf",
+    "findingsLabel": "The card and what he withholds — open when you would ask"
   }
 ]
