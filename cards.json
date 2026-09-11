@@ -37877,5 +37877,136 @@
     "source": "DIOS_CF_9mo_2_Case_Tasks_Script_Notability.pdf (Max, 9 months, with cystic fibrosis and two days of vomiting — distal intestinal obstruction syndrome; the CF taken as the lead point in four questions, the newborn laparotomy named back as meconium ileus, the last stool and passing wind, the two precipitants of new solids and guessed enzyme doses, the right lower quadrant mass requested by name, the film described in three colours, and management ordered nil by mouth and NG, fluids, washout, surgeon; the stool-free film and the escalation-criteria viva folded in)",
     "drive": "AMC Clinical Notability › Pediatric › Abdo GI › DIOS_CF_9mo_2_Case_Tasks_Script_Notability.pdf",
     "findingsLabel": "Vitals, examination, the film and the two precipitants"
+  },
+  {
+    "id": "PAEDS-55",
+    "cat": "paeds",
+    "promptBell": true,
+    "promptAt": 360,
+    "setting": "HISTORY AND DIAGNOSIS WITH REASONS — regional ED, AND THE MOTHER HANDS YOU THE TEACHER'S NOTE. USE IT, THEN ASK WHAT IS MISSING FROM IT. TWO AUTOMATIC FAILS: LABELLING IT EPILEPSY, AND LABELLING IT A FEBRILE CONVULSION — AND A THIRD IF YOU ASK NO CAUSES-OF-SEIZURE QUESTIONS AT ALL. 'HE HAD FITS WITH FEVERS AS A BABY' IS PLANTED TO PULL YOU TO FEBRILE CONVULSION: ASK WHETHER HE HAS A FEVER TODAY, RECORD THE OLD FITS, AND KEEP GOING. THE REASONS FOR YOUR DIAGNOSIS ARE THE EXCLUDED CAUSES, SAID IN PLAIN WORDS, ONE BY ONE.",
+    "stem": [
+      "You are the HMO in the emergency department at Wallaroo Hospital. ETHAN, 7 YEARS, was brought in AFTER HAVING A FIT AT SCHOOL THIS MORNING. His mother Amanda is here to talk to you; Ethan is being observed by the nurses. HR 96 — BP 100/64 — RR 20 — SpO2 99% — T 36.9.",
+      "History from the mother 6 minutes, then EXPLAIN THE MOST LIKELY DIAGNOSIS WITH REASONS. NO NEED TO DISCUSS INVESTIGATIONS OR MANAGEMENT. VARIANTS: a 15-year-old shaking after being accused of shoplifting; A RIGHT-ARM-ONLY SEIZURE LASTING SEVEN MINUTES WITH THREE WEEKS OF MORNING VOMITING; and a 12-month-old with a febrile convulsion to counsel."
+    ],
+    "tasks": [
+      "Take a history from the mother (6 minutes)",
+      "Explain the most likely diagnosis to the mother, with reasons"
+    ],
+    "time": "VITALS AND A BEDSIDE GLUCOSE, THEN ADDRESS THE CONCERN AND READ THE NOTE ALOUD · THEN THE GAPS IN IT: WAS IT ALL FOUR LIMBS OR JUST ONE SIDE; DID HE BITE HIS TONGUE, ANY FROTHING; WAS HE BLUE OR BREATHING STRANGELY; HAS ANYTHING LIKE THIS HAPPENED BEFORE, INCLUDING STARING SPELLS OR BLANKING OUT · THEN THE FOUR BEFORE-QUESTIONS, WHICH ARE THE SCORED BLOCK: WHAT WAS HE DOING JUST BEFORE; WAS THERE ANY WARNING · A FUNNY FEELING, A SMELL, DIZZINESS; ANY HEAD INJURY OR FALL RECENTLY; HAD HE MISSED ANY MEALS, DID HE HAVE BREAKFAST · plus FEVER OR RASH IN THE LAST FEW DAYS, MEDICINES OR ANYTHING HE COULD HAVE GOT INTO, and SLEEP, STRESS, SCREENS OR FLASHING LIGHTS · THEN AFTER: WAS HE CONFUSED AND DROWSY AND FOR HOW LONG, DID HE WAKE STRAIGHT AWAY OR GRADUALLY, DOES HE REMEMBER IT, ANY WEAKNESS ON ONE SIDE · THEN THE SCREENS, WHICH COME FOURTH AND NOT SECOND: neurological · headaches, blurred vision, weakness, numbness, speech; CARDIAC · CHEST PAIN, RACING HEART, BREATHLESSNESS; gastrointestinal; THE TUMOUR QUESTIONS · LONG-STANDING HEADACHES, MORNING VOMITING, WEIGHT LOSS; and home, school, bullying AND WAS HE BREATHING FAST BEFORE IT STARTED · THEN BACKGROUND: development, other problems, immunisations, AND FAMILY HISTORY OF SEIZURES OR EPILEPSY, ANYONE WHO DIED SUDDENLY YOUNG OR DROWNED.",
+    "findings": [
+      [
+        "Vitals and glucose",
+        "HR 96 — BP 100/64 — RR 20 — SpO2 99% — T 36.9 — BSL 5.4"
+      ],
+      [
+        "THE TEACHER'S NOTE",
+        "'10:30 am, in class. Ethan said HE FELT SICK. He fell off his chair and had JERKING OF HIS ARMS AND LEGS, EYES ROLLED BACK, LASTED ABOUT 1 MINUTE. HE WET HIMSELF. SLEEPY AND CONFUSED FOR ABOUT 15 MINUTES afterwards, then back to normal. NO FEVER, no injury that we saw'"
+      ],
+      [
+        "WHAT IS NOT ON THE NOTE",
+        "WHETHER ALL FOUR LIMBS JERKED — TONGUE BITE — WHAT HE WAS DOING BEFORE — BREAKFAST — RECENT ILLNESS — ANYTHING ABOUT HOME. Those are the questions you ask"
+      ],
+      [
+        "The gaps, filled",
+        "ALL FOUR LIMBS — NO tongue bite seen, no frothing — PALE, NOT BLUE — and nothing like it before"
+      ],
+      [
+        "THE PLANTED HISTORY",
+        "'HE HAD FITS WITH FEVERS WHEN HE WAS A BABY, AT SIX MONTHS AND A YEAR' — and the reply is to ask about fever TODAY: NO FEVER, COMPLETELY WELL THIS WEEK. AGE 7 AND AFEBRILE IS NOT A FEBRILE CONVULSION"
+      ],
+      [
+        "The four before-questions",
+        "SITTING IN CLASS DOING MATHS — only that HE FELT SICK — NO head injury or fall — HE HAD BREAKFAST, WEET-BIX"
+      ],
+      [
+        "The rest of the before-block",
+        "NO fever or rash, NO medicines and nothing in the house he could have taken, SLEEPS FINE, happy, normal screen time"
+      ],
+      [
+        "After",
+        "SLEEPY AND CONFUSED FOR ABOUT FIFTEEN MINUTES then himself — WOKE GRADUALLY — HE DOESN'T REMEMBER ANY OF IT — NO WEAKNESS, he walked to the car"
+      ],
+      [
+        "The screens",
+        "A MILD HEADACHE AFTER, now gone — no vision, weakness or speech problems — NO chest symptoms — NO morning vomiting or weight loss — home and school fine, no bullying — THE TEACHER DIDN'T MENTION FAST BREATHING"
+      ],
+      [
+        "THE FAMILY HISTORY",
+        "'HIS DAD HAD ONE SEIZURE AT 19 AFTER A BIG NIGHT, NEVER AGAIN, NO TREATMENT' — AND NOBODY DIED YOUNG OR DROWNED"
+      ],
+      [
+        "Her hidden question",
+        "'IS IT EPILEPSY LIKE HIS DAD?' — raised once at family history, and again if you name the diagnosis without explaining"
+      ],
+      [
+        "If you never ask what worries her",
+        "At minute five: 'WHAT IF IT HAPPENS AT SCHOOL AGAIN?'"
+      ]
+    ],
+    "back": {
+      "dx": "A SINGLE UNPROVOKED SEIZURE — NOT EPILEPSY, AND NOT A FEBRILE CONVULSION. NAME IT AND DEFINE IT: 'Ethan has had what we call AN UNPROVOKED SEIZURE. A SEIZURE IS A SUDDEN BURST OF ABNORMAL ELECTRICAL ACTIVITY IN THE BRAIN. THE JERKING OF ALL FOUR LIMBS, THE EYES ROLLING BACK, WETTING HIMSELF AND BEING CONFUSED AFTERWARDS ARE ALL TYPICAL OF A SEIZURE.' THEN THE REASONS — AND THE REASONS ARE THE EXCLUDED CAUSES, SAID ONE BY ONE IN PLAIN WORDS: 'WHEN A CHILD HAS A SEIZURE WE ALWAYS LOOK FOR A REASON. HE HASN'T HAD A HEAD INJURY. HE HASN'T HAD A FEVER, SO I'M NOT WORRIED ABOUT AN INFECTION OF THE BRAIN LIKE MENINGITIS. HE'D EATEN, SO A LOW SUGAR IS UNLIKELY — AND HIS SUGAR HERE IS NORMAL. HE'S NOT ON ANY MEDICINES. HE HASN'T HAD THE LONG-STANDING HEADACHES OR MORNING VOMITING THAT WOULD MAKE ME THINK OF A GROWTH IN THE BRAIN. AND THERE'S NOTHING TO SUGGEST STRESS IS BEHIND IT. WHEN WE LOOK AND FIND NOTHING, WE CALL IT UNPROVOKED.' THEN HER THREE QUESTIONS, ANSWERED IN ORDER: 'THE FITS HE HAD AS A BABY WERE WITH FEVERS, WHICH IS A DIFFERENT THING AND VERY COMMON; TODAY THERE WAS NO FEVER. EPILEPSY MEANS REPEATED UNPROVOKED SEIZURES, AND ETHAN HAS HAD ONE. HIS DAD'S SINGLE SEIZURE IS WORTH KNOWING BUT DOESN'T MEAN ETHAN HAS EPILEPSY. MOST CHILDREN WHO HAVE ONE SEIZURE DON'T GO ON TO HAVE EPILEPSY, THOUGH SOME DO HAVE ANOTHER — THAT'S WHY HE'LL BE SEEN BY THE CHILDREN'S SPECIALISTS. AND NO — NOTHING YOU DID CAUSED THIS.' DIFFERENTIALS, BRIEFLY: 'I've also considered other things that CAN LOOK LIKE A FIT — A FAINT, A HEART RHYTHM PROBLEM, A STRESS-RELATED EPISODE, A SEVERE MIGRAINE — and none of them fit what happened today.' THEN STAY INSIDE THE TASK: 'I'M NOT GOING TO GO INTO TESTS TODAY; THE SPECIALISTS WILL DECIDE ABOUT THOSE. What's your biggest worry?' → 'THAT IT'LL HAPPEN AT SCHOOL AGAIN AND NO ONE WILL KNOW WHAT TO DO' → THE WRITTEN PLAN: 'STAY CALM, NOTHING IN HIS MOUTH, PROTECT HIM FROM INJURY, DON'T HOLD HIM DOWN, ROLL HIM ON HIS SIDE WHEN IT STOPS, AND CALL 000 IF IT LASTS MORE THAN FIVE MINUTES OR HE DOESN'T WAKE UP.' VARIANT B — THE 15-YEAR-OLD ACCUSED OF SHOPLIFTING: ask whether HER EYES WERE OPEN OR CLOSED, whether she WET HERSELF, and WHETHER SHE REMEMBERS ALL OF IT. Then: 'WHAT HAPPENED TO YOU WAS REAL AND FRIGHTENING, AND YOU DIDN'T FAKE IT. Because you COULD HEAR EVERYTHING, YOUR EYES WERE CLOSED, YOU WERE BREATHING VERY FAST BEFOREHAND AND IT CAME ON AT A MOMENT OF INTENSE STRESS, I think this was your body's response to overwhelming stress rather than an electrical seizure. IT'S CALLED A NON-EPILEPTIC SEIZURE. It's treatable, and IT DOESN'T NEED EPILEPSY MEDICINES.' Then the safety and mood screen, INCLUDING THOUGHTS OF SELF-HARM. NEVER SAY 'FAKE' OR 'PSEUDO'; never dismiss the shoplifting accusation, which is the stressor; AND DO NOT MAKE THE REVERSE ERROR of calling a genuine seizure psychogenic because a teenager was upset — AN ECG AND A PROPER HISTORY STILL APPLY. VARIANT C — RIGHT ARM ONLY, SEVEN MINUTES, THREE WEEKS OF MORNING VOMITING: 'THREE THINGS CONCERN ME: THE JERKING WAS ON ONE SIDE ONLY, IT WENT ON FOR SEVEN MINUTES, AND HE HAS BEEN VOMITING IN THE MORNINGS WITH HEADACHES FOR WEEKS. Together those make me want to LOOK AT HIS BRAIN TODAY RATHER THAN WAIT — a scan, and the children's neurologist. These are the signs WE NEVER LEAVE FOR LATER.' Examine the fundi and gait. 'Unprovoked seizure, first seizure clinic in six weeks' is the fail here. VARIANT D — THE 12-MONTH-OLD WITH A FEBRILE CONVULSION: 'a SIMPLE FEBRILE CONVULSION. I call it simple because ALL FOUR LIMBS WERE INVOLVED, IT LASTED UNDER FIFTEEN MINUTES, IT ONLY HAPPENED ONCE, AND SHE WOKE UP STRAIGHT AWAY — and because she has NO HISTORY OF FITS WITHOUT FEVER AND NO DEVELOPMENTAL PROBLEMS. I've also checked the things that matter: NO RASH, NO VOMITING, SHE'S ALERT, WET NAPPIES NORMAL — so I'm not worried about meningitis. BECAUSE IT'S SIMPLE, SHE NEEDS NO TESTS TODAY — NO SCAN, NO BLOOD TEST.' Find and treat the source of the fever, paracetamol for comfort, fluids. 'IT CAN HAPPEN AGAIN WITH ANOTHER FEVER, AND PARACETAMOL DOESN'T PREVENT THAT, BUT MOST CHILDREN GROW OUT OF IT AND IT IS NOT EPILEPSY.' Then the same first-aid plan. The traps there are saying 'febrile convulsion' WITHOUT FIRST RULING OUT THE SOURCE, ordering an EEG, and PROMISING IT WILL NOT RECUR.",
+      "plan": [
+        [
+          "0:00",
+          "VITALS AND A BEDSIDE GLUCOSE, THEN THE CONCERN AND THE NOTE: 'may I have his vital signs AND A BEDSIDE GLUCOSE?' Then: 'Ethan is being watched by our nurses. How can I help you today?' → 'the school rang — he had a fit in class. I'M SO WORRIED. HERE, THE TEACHER WROTE IT ALL DOWN. IS IT EPILEPSY? HIS DAD HAD ONE.' → 'I'm sorry — THAT'S A FRIGHTENING CALL TO GET. He's in safe hands. Thank you for the note; let me read it... THAT'S VERY HELPFUL. A FEW THINGS AREN'T ON IT, SO I'LL ASK YOU THOSE.'"
+        ],
+        [
+          "1:00",
+          "THE GAPS IN THE NOTE: 'it says his arms and legs were jerking — DID THE TEACHER SAY WHETHER IT WAS ALL FOUR LIMBS, OR JUST ONE SIDE? DID HE BITE HIS TONGUE? ANY FROTHING? WAS HE BLUE OR BREATHING STRANGELY? HAS ANYTHING LIKE THIS HAPPENED BEFORE — INCLUDING STARING SPELLS OR BLANKING OUT?' → all four limbs, no tongue bite, pale not blue — AND 'HE HAD FITS WITH FEVERS WHEN HE WAS A BABY.' → 'DID HE HAVE A FEVER TODAY OR THIS WEEK?' → NO. → record it and KEEP GOING."
+        ],
+        [
+          "2:00",
+          "THE FOUR BEFORE-QUESTIONS — THE SCORED BLOCK: 'WHAT WAS HE DOING JUST BEFORE IT HAPPENED? The note says he felt sick — DID HE SAY ANYTHING ELSE, A FUNNY FEELING, A SMELL, DIZZINESS? ANY HEAD INJURY OR FALL RECENTLY? HAD HE MISSED ANY MEALS — DID HE HAVE BREAKFAST?' Then: 'any fever or rash in the last few days? Is he on any medicines — COULD HE HAVE GOT INTO ANYTHING AT HOME? Sleeping badly? Any stress? A lot of screens or flashing lights?'"
+        ],
+        [
+          "3:15",
+          "AFTER: 'when he woke, WAS HE CONFUSED AND DROWSY — HOW LONG FOR? DID HE WAKE STRAIGHT AWAY OR GRADUALLY? DOES HE REMEMBER IT? ANY WEAKNESS ON ONE SIDE AFTERWARDS?' → fifteen minutes, gradual, no memory, no weakness."
+        ],
+        [
+          "4:00",
+          "THE SCREENS, WHICH BELONG HERE AND NOT EARLIER: neurological — headaches, blurred vision, weakness, numbness, speech; CARDIAC — chest pain, racing heart, breathlessness; gastrointestinal; THE TUMOUR QUESTIONS — LONG-STANDING HEADACHES, VOMITING IN THE MORNINGS, WEIGHT LOSS; then home, who lives there, stress, school and bullying, AND 'WAS HE BREATHING FAST BEFORE IT STARTED?' (Running the symptom screens BEFORE the four before-questions is the ordering trap — the checklist is INCIDENT, BEFORE, AFTER, THEN SCREENS.)"
+        ],
+        [
+          "5:15",
+          "BACKGROUND: 'any concerns about his development? Any other medical problems? Immunisations up to date? ANY FAMILY HISTORY OF SEIZURES OR EPILEPSY — YOU MENTIONED HIS DAD? ANYONE WHO DIED SUDDENLY YOUNG, OR DROWNED?' → the father's single seizure at 19 after heavy drinking, never repeated."
+        ],
+        [
+          "6:00",
+          "NAME IT AND DEFINE IT, THEN GIVE THE EXCLUDED CAUSES ONE BY ONE AS THE REASONS (see dx). (A diagnosis with no reasons fails — AND SO DOES 'IT'S EPILEPSY' OR 'IT'S JUST A FEBRILE FIT'.)"
+        ],
+        [
+          "7:00",
+          "HER THREE QUESTIONS, THE BRIEF DIFFERENTIALS, AND STAYING INSIDE THE TASK (see dx) → 'BUT HE HAD FITS AS A BABY, AND HIS DAD HAD ONE — IS IT EPILEPSY?' → the febrile fits were different, EPILEPSY MEANS REPEATED UNPROVOKED SEIZURES AND HE HAS HAD ONE. Then: 'WHAT'S YOUR BIGGEST WORRY?' → the school → the written first-aid plan, and a summary."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run, Version A",
+      "ask": [
+        "'May I have his vital signs AND A BEDSIDE BLOOD GLUCOSE?' / 'Thank you for the note — A FEW THINGS AREN'T ON IT, SO I'LL ASK YOU THOSE.' / 'ALL FOUR LIMBS, OR JUST ONE SIDE?' / 'Did he complain of ANY WARNING before it happened?' / 'ANY RECENT HEAD INJURY? HAD HE MISSED ANY MEALS? ANY FEVER OR RASH?' / 'WAS HE CONFUSED AND DROWSY WHEN HE WOKE — FOR HOW LONG?' / 'LONG-STANDING HEADACHES, VOMITING IN THE MORNINGS, WEIGHT LOSS?' / 'Was he breathing fast before it started?'",
+        "'AN UNPROVOKED SEIZURE — A SUDDEN BURST OF ABNORMAL ELECTRICAL ACTIVITY IN THE BRAIN.' / 'WE LOOK FOR A REASON; WHEN WE LOOK AND FIND NOTHING, WE CALL IT UNPROVOKED.' / 'EPILEPSY MEANS REPEATED SEIZURES; ETHAN HAS HAD ONE.' / 'THOSE WERE FITS WITH FEVER — A DIFFERENT THING; TODAY THERE WAS NO FEVER.' / 'MOST CHILDREN WHO HAVE ONE SEIZURE DON'T GO ON TO HAVE EPILEPSY.' / 'STAY CALM, NOTHING IN THE MOUTH, PROTECT, DON'T RESTRAIN, ROLL ON THE SIDE, 000 AFTER FIVE MINUTES.'",
+        "VARIANT B — THE 15-YEAR-OLD AFTER A SHOPLIFTING ACCUSATION: ask 'WERE YOUR EYES OPEN OR CLOSED? DID YOU WET YOURSELF? DO YOU REMEMBER ALL OF IT?' → closed, no, yes. → 'WHAT HAPPENED TO YOU WAS REAL AND FRIGHTENING, AND YOU DIDN'T FAKE IT. Because you could hear everything, your eyes were closed, YOU WERE BREATHING VERY FAST BEFOREHAND and it came on at a moment of intense stress, I think this was YOUR BODY'S RESPONSE TO OVERWHELMING STRESS rather than an electrical seizure. IT'S CALLED A NON-EPILEPTIC SEIZURE. It's treatable, and it doesn't need epilepsy medicines. Can I ask how things have been at home — AND WHETHER YOU'VE HAD THOUGHTS OF HURTING YOURSELF?' (Never say FAKE or PSEUDO; never skip the safety and mood screen; never dismiss the accusation, which IS the stressor; and never make the reverse error of calling a genuine seizure psychogenic because a teenager was upset.)",
+        "VARIANT C — RIGHT ARM ONLY, SEVEN MINUTES, MORNING VOMITING FOR THREE WEEKS: 'THREE THINGS CONCERN ME: THE JERKING WAS ON ONE SIDE ONLY, IT WENT ON FOR SEVEN MINUTES, AND HE HAS BEEN VOMITING IN THE MORNINGS WITH HEADACHES FOR WEEKS. Together those make me want to LOOK AT HIS BRAIN TODAY RATHER THAN WAIT — a scan, and the children's neurologist in Adelaide. I'm not saying it is anything serious yet, BUT THESE ARE THE SIGNS WE NEVER LEAVE FOR LATER.' Examine the fundi and gait. ('Unprovoked seizure, first seizure clinic in six weeks' is the fail.)",
+        "VARIANT D — THE 12-MONTH-OLD, SIMPLE FEBRILE CONVULSION: 'I call it SIMPLE because ALL FOUR LIMBS WERE INVOLVED, IT LASTED UNDER FIFTEEN MINUTES, IT ONLY HAPPENED ONCE, AND SHE WOKE UP STRAIGHT AWAY — and because she has no history of fits without fever and no developmental problems. I've also checked the things that matter: NO RASH, NO VOMITING, SHE'S ALERT, WET NAPPIES NORMAL — so I'm not worried about meningitis. BECAUSE IT'S SIMPLE, SHE NEEDS NO TESTS TODAY — NO SCAN, NO BLOOD TEST.' Find and treat the fever source; paracetamol 15 mg/kg for comfort and fluids. 'IT CAN HAPPEN AGAIN WITH ANOTHER FEVER, AND PARACETAMOL DOESN'T PREVENT THAT, BUT MOST CHILDREN GROW OUT OF IT AND IT IS NOT EPILEPSY.' (The traps: saying febrile convulsion WITHOUT first ruling out the source, ordering an EEG, and promising it will not recur.)"
+      ],
+      "pefe": [
+        "Role-player: AMANDA, 36, Ethan's mother, works at the council office; married to Dave, a fitter at the port; daughter Mia, 4. ETHAN is a healthy, happy Year 2 boy — NO medications or allergies, immunised, NORMAL DEVELOPMENT, doing well at school, no bullying, sleeps well. HE HAD TWO BRIEF FEBRILE CONVULSIONS AS A BABY at 6 and 12 months, both simple. DAVE HAD ONE SEIZURE AT 19 AFTER A NIGHT OF HEAVY DRINKING — investigated, no treatment, never recurred. NO SUDDEN DEATHS IN THE FAMILY.",
+        "YOU HAVE THE TEACHER'S NOTE — read it out or hand it over when asked about the event. From the teacher you know: ALL FOUR LIMBS JERKED, EYES ROLLED BACK, ABOUT A MINUTE, WET HIMSELF, PALE NOT BLUE, NO TONGUE BITE SEEN, SLEEPY AND CONFUSED FOR FIFTEEN MINUTES then normal. HE SAID 'I FEEL SICK' JUST BEFORE. He had WEET-BIX for breakfast, NO fever or illness this week, NO head injury, nothing in the house he could have taken. MILD HEADACHE AFTERWARDS, now gone. No vomiting, no chest symptoms, NO MORNING VOMITING, no weight loss, no weakness.",
+        "REGISTER: anxious, controlled, factual. YOUR HIDDEN QUESTION IS 'IS IT EPILEPSY LIKE HIS DAD?' — RAISE IT ONCE WHEN ASKED ABOUT FAMILY HISTORY, AND AGAIN IF THE DOCTOR NAMES THE DIAGNOSIS WITHOUT EXPLAINING. IF NEVER ASKED ABOUT CONCERNS, VOLUNTEER AT MINUTE FIVE: 'WHAT IF IT HAPPENS AT SCHOOL AGAIN?' Score them on: vitals and glucose; concern addressed; USES THE NOTE AND ASKS WHAT IS MISSING; all four limbs versus one side; tongue, frothing, incontinence; previous events; FEVER TODAY; activity before; WARNING; HEAD INJURY; MISSED MEALS; fever and rash; medications and ingestion; sleep, stress and lights; POST-ICTAL CONFUSION; memory; the neurological screen; the cardiac screen; the gastrointestinal screen; THE TUMOUR QUESTIONS; home, school and hyperventilation; development; FAMILY HISTORY INCLUDING SUDDEN DEATH; SAYS 'UNPROVOKED SEIZURE'; DEFINES SEIZURE; THE REASONS ARE THE CAUSES EXCLUDED ONE BY ONE; handles 'febrile' and 'epilepsy' correctly; offers differentials; STAYS WITHIN THE TASK with no investigation lecture; and invites questions. AUTOMATIC FAIL: NO CAUSES-OF-SEIZURE QUESTIONS; LABELS IT EPILEPSY OR FEBRILE CONVULSION."
+      ],
+      "fails": [
+        "★ Labelling it epilepsy, or labelling it a febrile convulsion — both are automatic fails",
+        "★ Asking no causes-of-seizure questions at all, or naming the diagnosis with no reasons when the reasons ARE the excluded causes",
+        "Being pulled to febrile convulsion by the infant fits — ask about fever today, record the old fits, and keep going, because age 7 and afebrile is not a febrile convulsion",
+        "Running the symptom screens before the four before-questions — the checklist is incident, then before, then after, then screens",
+        "Not asking what is missing from the teacher's note; skipping the tumour questions or the sudden-death family history; and drifting into investigations and management when the task explicitly excludes them"
+      ],
+      "numbers": [
+        "THE FOUR BEFORE-QUESTIONS: WHAT HE WAS DOING, ANY WARNING, HEAD INJURY, MISSED MEALS · SEIZURE OVER 5 MINUTES = TREAT, with MIDAZOLAM 0.15 mg/kg to a MAXIMUM OF 10 mg · EPILEPSY = TWO UNPROVOKED SEIZURES MORE THAN 24 HOURS APART · RECURRENCE AFTER ONE ABOUT 40-50%",
+        "ABOUT 8% OF CHILDREN HAVE A SEIZURE BY 15 · FEBRILE CONVULSION 6 MONTHS TO 6 YEARS; SIMPLE MEANS UNDER 15 MINUTES, GENERALISED, AND ONCE PER ILLNESS · CALL 000 IF OVER 5 MINUTES OR NOT WAKING · paracetamol 15 mg/kg · MedSTAR 1300 13 12 33 VERIFY"
+      ]
+    },
+    "source": "Paediatric_First_Seizure_2_Case_Tasks_Script.pdf (Ethan, 7, after a fit at school with the teacher's note handed over — a single unprovoked seizure; using the note then asking what is missing from it, the infant febrile fits refused as an explanation at age 7 and afebrile, the four before-questions asked before the symptom screens, and a diagnosis whose reasons are the excluded causes said one by one; the psychogenic, focal-and-prolonged, and simple febrile convulsion versions folded in)",
+    "drive": "AMC Clinical Notability › Pediatric › Seizure and unresponsive › Paediatric_First_Seizure_2_Case_Tasks_Script.pdf",
+    "findingsLabel": "The note, the gaps in it, and what she tells you"
   }
 ]
