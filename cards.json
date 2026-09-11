@@ -38415,5 +38415,137 @@
     "source": "Paed_Fever_Febrile_Neutropenia_2_Case_Tasks_Script_Notability.pdf (a 6-year-old with leukaemia, fever eight days after chemotherapy, looking well and playing on an iPad — febrile neutropenia; the context named in the opening, the last chemotherapy dated and the nadir said aloud, the full source hunt run despite a coryzal story, the port site and perianal inspection added to the examination, the mild card refused with 'a mild-looking ear doesn't mean a mild infection', and management of cultures then IV antibiotics within the hour without waiting for the count; the septic-shock version and the carbimazole equivalent folded in)",
     "drive": "AMC Clinical Notability › Pediatric › Fever cluster › Paed_Fever_Febrile_Neutropenia_2_Case_Tasks_Script_Notability.pdf",
     "findingsLabel": "Vitals, the card and the leukaemia block"
+  },
+  {
+    "id": "PAEDS-59",
+    "cat": "paeds",
+    "promptBell": true,
+    "promptAt": 240,
+    "setting": "HISTORY, EXAMINATION REQUEST AND DIAGNOSIS — general practice. THE FATHER WILL NOT MENTION THE KNEE UNLESS YOU ASK ABOUT JOINTS: HIS BRIDGE IS 'HE SCREAMS WHENEVER I PICK HIM UP', SAID ONCE AND THEN HE WAITS. THE MOMENT YOU HEAR IT, ASK ABOUT SORENESS, JOINTS, STANDING AND CRAWLING. ON EXAMINATION, INSPECT THEN PALPATE THEN LOCATE: 'IS THE TENDERNESS ACROSS THE JOINT LINE OR OVER THE TIBIAL TUBEROSITY?' — WITHOUT THAT QUESTION, VERSION B IS SCORED AS A WRONG DIAGNOSIS. AND DO NOT ASK TO MOVE THE KNEE: THE EXAMINER SAYS 'HE WILL NOT LET YOU' AND YOU HAVE WASTED TWENTY SECONDS.",
+    "stem": [
+      "General practice, Wallaroo. A 13-MONTH-OLD BOY brought in by his father, WHO IS CONCERNED ABOUT A FEVER OF 39. NO OTHER INFORMATION — ASK FOR THE VITAL SIGNS.",
+      "History from the father 4 minutes, examination findings from the examiner, then the most likely diagnosis and differentials. VERSION A: ONE KNEE SWOLLEN, RED, WARM AND TENDER ACROSS THE JOINT — SEPTIC ARTHRITIS. VERSION B: the same swollen red warm leg BUT TENDERNESS OVER THE TIBIAL TUBEROSITY, NOT THE JOINT — OSTEOMYELITIS, with septic arthritis second. NO MANAGEMENT TASK IN THE RECALL, but the examiner may ask what you would do now."
+    ],
+    "tasks": [
+      "Take a focused history from the father (4 minutes)",
+      "Ask the examiner for the physical examination findings you want",
+      "Explain your most likely diagnosis and the differential diagnoses to the father"
+    ],
+    "time": "VITALS FIRST, THEN ACKNOWLEDGE · THE FEVER: measured, since when, constant or on and off, getting worse, what have you given and IS IT HELPING, ANY SHIVERING · THEN THE SOURCE HUNT, SIGNPOSTED AS 'THE PLACES AN INFECTION CAN HIDE': EARS AND THROAT · pulling at his ears, runny nose, DROOLING, CHANGE IN HIS CRY, neck lumps, rash; CHEST · cough, difficulty breathing, noisy breathing; TUMMY · vomiting, diarrhoea, DRAWING HIS LEGS UP; NAPPIES · smelly wee, crying at changes; JOINTS AND SKIN · ANY SWOLLEN OR RED JOINTS, IS HE STANDING AND CRAWLING AS USUAL, ANY RASH · AND THE MOMENT HE SAYS HE SCREAMS WHEN PICKED UP, FOLLOW IT: DOES ANY PART OF HIM SEEM SORE · THEN EXPLORE THE KNEE FULLY: WHICH ONE, SINCE WHEN, RED, HOT, DOES HE LET YOU TOUCH IT, ANY FALL OR BUMP, WHO HAS BEEN LOOKING AFTER HIM, ANY OTHER JOINT, ANY RASH NEAR IT · THEN MENINGITIS, THE WELL-BABY QUESTIONS AND CIST: drowsy or floppy, feeding, WET NAPPIES; travel, sick contacts, AND IMMUNISATIONS INCLUDING THE 12-MONTH ONES · THEN THE EXAMINATION IN THE ORDER INSPECT, PALPATE, LOCATE · AND ASK ABOUT THE HIP ON THAT SIDE.",
+    "findings": [
+      [
+        "Vitals",
+        "T 39.0 — HR 150 — RR 32 — CRT 2 SECONDS. NOTE THE TACHYCARDIA ALOUD, BUT DO NOT LABEL IT SHOCK"
+      ],
+      [
+        "General",
+        "ALERT BUT IRRITABLE — MILDLY DEHYDRATED — NO RASH — THE RIGHT LEG IS HELD STILL"
+      ],
+      [
+        "Everything else",
+        "ENT, chest, heart and abdomen normal — NO NECK STIFFNESS — DIPSTICK NEGATIVE — NO LYMPHADENOPATHY"
+      ],
+      [
+        "VERSION A — THE KNEE",
+        "RIGHT KNEE SWOLLEN AND RED — WARM TO TOUCH — TENDER TO TOUCH ACROSS THE JOINT — EFFUSION PRESENT — HIP AND OTHER JOINTS NORMAL"
+      ],
+      [
+        "VERSION B — THE SAME LEG",
+        "SWOLLEN AND RED AT THE KNEE, WARM — BUT TENDERNESS MAXIMAL OVER THE TIBIAL TUBEROSITY, AND THE JOINT LINE IS NOT TENDER"
+      ],
+      [
+        "The question that separates them",
+        "'IS THE TENDERNESS ACROSS THE JOINT LINE OR OVER THE TIBIAL TUBEROSITY?' — and without it Version B is scored as a wrong diagnosis"
+      ],
+      [
+        "What not to ask for",
+        "DO NOT ASK TO MOVE THE KNEE — the examiner says 'HE WILL NOT LET YOU'"
+      ],
+      [
+        "The fever",
+        "SINCE YESTERDAY, 39 ON THE FOREHEAD THERMOMETER ONCE — PARACETAMOL HELPS FOR A FEW HOURS THEN IT COMES BACK — HE SHIVERED LAST NIGHT"
+      ],
+      [
+        "THE BRIDGE",
+        "'HE SCREAMS WHENEVER I PICK HIM UP — I THOUGHT HE WAS JUST BEING GRUMPY' — said ONCE, unprompted, after the tummy or nappy questions, AND THEN HE WAITS"
+      ],
+      [
+        "THE KNEE, ONLY IF YOU ASK",
+        "RIGHT KNEE PUFFY AND PINK SINCE THIS MORNING, WARM, HE CRIES IF TOUCHED — HE WON'T STAND ON IT AND ISN'T CRAWLING"
+      ],
+      [
+        "The couch fall",
+        "'HE FELL OFF THE COUCH LAST WEEK, BUT HE WAS FINE AFTER' — given if you ask about a fall, TO SEE WHETHER YOU DROP THE INFECTION IDEA"
+      ],
+      [
+        "Well-baby and CIST",
+        "AWAKE BUT MISERABLE, HARDLY DRINKING, THREE WET NAPPIES TODAY — no travel, colds at daycare, IMMUNISATIONS UP TO DATE INCLUDING THE 12-MONTH ONES"
+      ]
+    ],
+    "back": {
+      "dx": "SEPTIC ARTHRITIS OF THE KNEE — HOSPITAL TODAY, CULTURES BEFORE ANTIBIOTICS. VERSION A: 'Tom most likely has a condition called SEPTIC ARTHRITIS IN HIS RIGHT KNEE. Put simply, THAT IS AN INFECTION INSIDE THE JOINT. The reasons I think this are THE FEVER, WHICH TELLS ME THERE IS AN INFECTION; THE SWELLING YOU NOTICED; and when I examined the knee IT WAS RED, WARM AND PAINFUL TO TOUCH, AND HE WON'T PUT WEIGHT ON IT.' VERSION B: '...most likely has OSTEOMYELITIS — AN INFECTION IN THE BONE JUST BELOW THE KNEE. The reasons are the fever, the swelling and redness, and that WHEN I EXAMINED HIM THE MOST PAINFUL SPOT WAS ON THE BONE RATHER THAN THE JOINT ITSELF. THE INFECTION CAN SPREAD INTO THE JOINT, SO SEPTIC ARTHRITIS IS MY SECOND CONCERN.' THE DIFFERENTIALS, WITH OSTEOMYELITIS AND CELLULITIS NAMED BEFORE THE GROUP LIST: 'AN INFECTION IN THE BONE NEXT TO THE JOINT, CALLED OSTEOMYELITIS; AN INFECTION IN THE SKIN OVER THE KNEE, CALLED CELLULITIS; AN IRRITABLE JOINT AFTER A COLD, WHICH IS USUALLY MILDER THAN THIS; AND AN INJURY. I have also checked for the usual infections of the ears, throat, chest, tummy and urine, AND FOR MENINGITIS, and I didn't find any.' NEVER GIVE ORGANISMS — NOT STAPH, NOT KINGELLA — AS DIFFERENTIALS. HIS QUESTIONS: 'HOW DID HE GET THAT?' → 'usually BACTERIA FROM A SMALL SKIN BREAK OR FROM THE BLOODSTREAM SETTLE IN THE JOINT; IT ISN'T ANYONE'S FAULT.' 'CAN'T YOU JUST GIVE HIM ANTIBIOTICS?' → 'ANTIBIOTICS ARE ESSENTIAL, BUT THEY NEED TO GO INTO A VEIN IN HOSPITAL, AND THE JOINT USUALLY NEEDS TO BE WASHED OUT SO THE INFECTION DOESN'T DAMAGE THE CARTILAGE.' 'WILL HE WALK PROPERLY?' → 'TREATED QUICKLY, MOST CHILDREN WALK NORMALLY AFTERWARDS — WHICH IS WHY WE ACT TODAY.' AND THE COUCH FALL: 'THAT MAY WELL BE PART OF IT, AND I'LL ASK THE HOSPITAL TO X-RAY THE LEG. BUT A HOT, SWOLLEN JOINT WITH A FEVER OF 39 HAS TO BE TREATED AS AN INFECTION UNTIL THE TESTS PROVE OTHERWISE — WAITING WOULD RISK THE JOINT.' MANAGEMENT IF ASKED: 'Tom needs to go to the Women's and Children's Hospital TODAY. I'll RING THE ORTHOPAEDIC AND PAEDIATRIC TEAMS NOW and arrange the ambulance. PLEASE DON'T GIVE HIM ANYTHING TO EAT OR DRINK FROM NOW, IN CASE HE NEEDS A SHORT ANAESTHETIC TO TAKE FLUID FROM THE KNEE. In hospital they will take BLOOD TESTS AND BLOOD CULTURES FIRST, do AN ULTRASOUND, and then START ANTIBIOTICS THROUGH A DRIP AND WASH OUT THE JOINT.' PATS for travel, and practice follow-up. NO ORAL ANTIBIOTICS FROM THE SURGERY. THE VARIANTS: A FREELY MOBILE JOINT IN A CHILD WHO HAS JUST WALKED ACROSS THE ROOM — 'A FREELY MOBILE JOINT WITH SPREADING SKIN REDNESS MAKES CELLULITIS MORE LIKELY THAN SEPTIC ARTHRITIS. I'd still CHECK INFLAMMATORY MARKERS TODAY AND ARRANGE REVIEW WITHIN 24 HOURS, and I would refer IF HE STOPS WEIGHT-BEARING OR THE FEVER PERSISTS.' THE WELL-BABY ANSWERS TURNING BAD — FLOPPY, MOTTLED, CRT 4 SECONDS: 'THIS IS NOW SEPSIS UNTIL PROVEN OTHERWISE. I'm calling MedSTAR for retrieval, GAINING IV ACCESS, TAKING CULTURES AND GIVING THE FIRST DOSE OF IV ANTIBIOTICS HERE BEFORE TRANSFER.'",
+      "plan": [
+        [
+          "0:00",
+          "VITALS, THEN ACKNOWLEDGE: 'Examiner, the vital signs please?' → 39.0, HR 150, CRT 2 s. → 'he is FEBRILE AND HIS HEART RATE IS UP, BUT HE IS PERFUSING WELL.' Then: 'tell me what's been happening.' → fever since yesterday, grizzly, off his food. → 'A FEVER OF 39 IN A ONE-YEAR-OLD IS WORRYING, I UNDERSTAND.'"
+        ],
+        [
+          "0:40",
+          "THE FEVER: measured, since when, constant or on and off, getting worse, what have you given and does it help, ANY SHIVERING. → paracetamol helps for a few hours, AND HE SHIVERED LAST NIGHT. (A helpful antipyretic response IS THE NORMAL PATTERN AND DOES NOT MAKE THE CHILD SAFE.)"
+        ],
+        [
+          "1:20",
+          "THE SOURCE HUNT, GROUPS ONE TO FOUR: ears and throat — pulling at his ears, runny nose, DROOLING, CHANGE IN HIS CRY, neck lumps, rash; chest — cough, difficulty breathing, noisy breathing; tummy — vomiting, diarrhoea, DRAWING HIS LEGS UP; nappies — smelly wee, crying at changes. → all negative, BUT: 'HE DOES SCREAM WHENEVER I PICK HIM UP, THOUGH. I THOUGHT HE WAS JUST BEING GRUMPY.'"
+        ],
+        [
+          "2:10",
+          "FOLLOW THE BRIDGE IMMEDIATELY — THIS IS THE STATION: 'that's important, thank you. WHEN YOU PICK HIM UP, DOES ANY PART OF HIM SEEM SORE? HAVE YOU NOTICED ANY SWOLLEN OR RED JOINTS? IS HE STANDING AND CRAWLING THE WAY HE NORMALLY DOES?' → THE RIGHT KNEE IS PUFFY AND PINK. Then explore it fully: 'WHICH KNEE? SINCE WHEN? RED? HOT? DOES HE LET YOU TOUCH IT? ANY FALL OR BUMP? WHO'S BEEN LOOKING AFTER HIM? ANY OTHER JOINT? ANY RASH NEAR IT?'"
+        ],
+        [
+          "3:10",
+          "MENINGITIS, WELL-BABY AND CIST: headache signs are hard at this age, so ask about DROWSY OR FLOPPY, feeding and drinking, WET NAPPIES; then travel, anyone unwell at home or daycare, AND IMMUNISATIONS INCLUDING THE 12-MONTH ONES."
+        ],
+        [
+          "4:00",
+          "THE EXAMINATION — GENERAL FIRST, THEN INSPECT, PALPATE, LOCATE: 'general appearance: alert or drowsy? Dehydration? Rash? IS HE HOLDING A LEG STILL? Vitals. ENT. Chest. Heart. Abdomen. NECK STIFFNESS. DIPSTICK. Lymph nodes. NOW THE JOINTS: ON INSPECTION, IS ANY JOINT SWOLLEN OR RED, AND WHICH? ON PALPATION, IS IT WARM TO TOUCH AND TENDER TO TOUCH? WHERE IS THE TENDERNESS — ACROSS THE JOINT LINE OR OVER THE TIBIAL TUBEROSITY? EFFUSION? OTHER JOINTS AND THE HIP ON THAT SIDE?' (Asking to MOVE the knee wastes twenty seconds; NOT asking WHERE it is tender loses Version B.)"
+        ],
+        [
+          "5:45",
+          "THE DIAGNOSIS WITH ITS REASONS, THEN OSTEOMYELITIS AND CELLULITIS BEFORE THE GROUP LIST (see dx) → 'AN INFECTION IN THE JOINT? HOW DID HE GET THAT?' / 'CAN'T YOU JUST GIVE HIM ANTIBIOTICS?'"
+        ],
+        [
+          "6:45",
+          "THE COUCH FALL REFUSED AS THE EXPLANATION, AND MANAGEMENT IF ASKED (see dx): hospital today, ring the orthopaedic team, NIL BY MOUTH FOR A POSSIBLE ANAESTHETIC, cultures and ultrasound before IV antibiotics and washout, PATS. → 'MY WIFE IS AT WORK — CAN I RING HER?' → yes, while you make the calls. Then summarise to the examiner."
+        ]
+      ],
+      "planApprox": false,
+      "planNote": "the source's eight-minute run, Version A",
+      "ask": [
+        "'Could I have the vital signs please?' / 'I'M GOING TO GO THROUGH THE PLACES AN INFECTION CAN HIDE.' / 'ANY SWOLLEN OR RED JOINTS? IS HE STANDING AND CRAWLING AS USUAL? ANY RASH?' / 'WHEN YOU PICK HIM UP, DOES ANY PART OF HIM SEEM SORE?' / 'ANY FALL OR BUMP? WHO HAS BEEN LOOKING AFTER HIM?' / 'Alert or drowsy? Feeding? Wet nappies?'",
+        "'ON INSPECTION, IS ANY JOINT SWOLLEN OR RED — WHICH ONE?' / 'ON PALPATION, IS IT WARM TO TOUCH AND TENDER TO TOUCH?' / 'IS THE TENDERNESS ACROSS THE JOINT LINE OR OVER THE TIBIAL TUBEROSITY?' / 'IS THE HIP ON THAT SIDE NORMAL?'",
+        "'SEPTIC ARTHRITIS — AN INFECTION INSIDE THE JOINT.' / 'OSTEOMYELITIS — AN INFECTION IN THE BONE.' / 'THE REASONS I THINK THIS ARE...' / 'ANTIBIOTICS INTO A VEIN IN HOSPITAL, AND THE JOINT WASHED OUT, TODAY.' / 'Bacteria from a small skin break or the bloodstream settle in the joint — IT ISN'T ANYONE'S FAULT.' / 'TREATED QUICKLY, MOST CHILDREN WALK NORMALLY AFTERWARDS.'",
+        "THE COUCH FALL: 'he fell off the couch yesterday, THAT'S ALL IT IS.' → 'THAT MAY WELL BE PART OF IT, AND I'LL ASK THE HOSPITAL TO X-RAY THE LEG. BUT A HOT, SWOLLEN JOINT WITH A FEVER OF 39 HAS TO BE TREATED AS AN INFECTION UNTIL THE TESTS PROVE OTHERWISE — WAITING WOULD RISK THE JOINT.' / MANAGEMENT IF ASKED: 'the Women's and Children's TODAY. I'll ring the orthopaedic and paediatric teams now and arrange the ambulance. PLEASE DON'T GIVE HIM ANYTHING TO EAT OR DRINK, IN CASE HE NEEDS A SHORT ANAESTHETIC TO TAKE FLUID FROM THE KNEE. They'll take BLOOD TESTS AND CULTURES FIRST, do AN ULTRASOUND, then START ANTIBIOTICS THROUGH A DRIP AND WASH OUT THE JOINT.'",
+        "VARIANT — A FREELY MOBILE JOINT IN A CHILD WHO HAS JUST WALKED ACROSS THE ROOM: 'A FREELY MOBILE JOINT WITH SPREADING SKIN REDNESS MAKES CELLULITIS MORE LIKELY THAN SEPTIC ARTHRITIS. I'd still check inflammatory markers today and arrange REVIEW WITHIN 24 HOURS, and I would refer IF HE STOPS WEIGHT-BEARING OR THE FEVER PERSISTS.' / VARIANT — THE WELL-BABY ANSWERS TURN BAD, FLOPPY AND MOTTLED WITH CRT 4 SECONDS: 'THIS IS NOW SEPSIS UNTIL PROVEN OTHERWISE. I'm calling MedSTAR on 1300 13 12 33 for retrieval, GAINING IV ACCESS, TAKING CULTURES AND GIVING THE FIRST DOSE OF IV ANTIBIOTICS HERE BEFORE TRANSFER.'"
+      ],
+      "pefe": [
+        "Role-player: MARK, 34, Tom's father, A DIESEL MECHANIC IN KADINA; his wife is a nurse on shift and TOLD HIM TO BRING TOM IN. TOM IS 13 MONTHS, born at term, FULLY IMMUNISED INCLUDING THE 12-MONTH VACCINES, at daycare two days a week. He has felt hot since yesterday — 39 ON THE FOREHEAD THERMOMETER ONCE, otherwise not measured. Paracetamol helps for a few hours. HE SHIVERED LAST NIGHT. He is grizzly, HARDLY DRINKING, THREE WET NAPPIES TODAY, awake but miserable. HIS RIGHT KNEE LOOKED PUFFY AND PINK THIS MORNING AND FEELS WARM; HE CRIES IF YOU TOUCH IT; HE WILL NOT STAND OR CRAWL. No fall that you know of. Runny nose last week, gone.",
+        "HIDDEN AGENDA: YOU FEEL GUILTY THAT YOU DID NOT NOTICE THE KNEE EARLIER AND WORRY YOUR WIFE WILL BLAME YOU. REGISTER: practical, a bit embarrassed, BECOMES ANXIOUS WHEN HOSPITAL IS MENTIONED. HOW TO PLAY IT: VOLUNTEER ONLY THE FEVER AND THE GRIZZLINESS. SAY 'HE SCREAMS WHENEVER I PICK HIM UP' ONCE, UNPROMPTED, AFTER THE TUMMY OR NAPPY QUESTIONS — THEN WAIT. MENTION THE KNEE ONLY IF ASKED ABOUT JOINTS, SORENESS, STANDING OR CRAWLING. IF THE DOCTOR SUGGESTS ANTIBIOTIC SYRUP AND REVIEW TOMORROW, ASK 'IS THAT ENOUGH?' IF ASKED ABOUT A FALL, SAY 'HE FELL OFF THE COUCH LAST WEEK, BUT HE WAS FINE AFTER' AND SEE WHETHER THE DOCTOR DROPS THE INFECTION IDEA. If not asked about worries by minute six, say 'IS IT SOMETHING I DID?'",
+        "Score them on: ASKED VITALS FIRST; acknowledged your worry; explored the fever — measured, medication, whether it helps; NAMED THE GROUPS — ENT, chest, tummy, nappies, JOINTS AND SKIN, meningitis, sepsis; RESPONDED TO 'SCREAMS WHEN PICKED UP' WITH JOINT AND SORENESS QUESTIONS; EXPLORED THE KNEE — which, since when, red, warm, touch, standing, other joints, rash, FALL, CARERS; the well-baby questions; travel, contacts and immunisation; THE EXAMINATION AS INSPECT, PALPATE, THEN WHERE TENDER — DID NOT ASK TO MOVE IT — AND ASKED ABOUT THE HIP; SAID 'SEPTIC ARTHRITIS — INFECTION INSIDE THE JOINT' WITH REASONS; DIFFERENTIALS OSTEOMYELITIS AND CELLULITIS THEN THE GROUPS; HOSPITAL TODAY, NO ORAL ANTIBIOTICS, NIL BY MOUTH; DID NOT ACCEPT THE COUCH FALL AS THE EXPLANATION; and summarised to the examiner."
+      ],
+      "fails": [
+        "★ Not following 'he screams whenever I pick him up' with joint and soreness questions — the father says it once and then waits, and the knee never appears unless you ask",
+        "★ Not asking where the tenderness is — across the joint line or over the tibial tuberosity — which makes Version B a wrong diagnosis",
+        "Accepting the couch fall as the explanation and dropping the infection idea",
+        "Offering oral antibiotics and review tomorrow, when he asks 'is that enough?' and the answer is hospital today",
+        "Asking to move the knee, which wastes twenty seconds; forgetting to ask about the hip on that side; and giving organisms such as Staph or Kingella as differentials instead of osteomyelitis and cellulitis"
+      ],
+      "numbers": [
+        "FEVER 38.0 OR ABOVE · HEART RATE CEILING AT 1 YEAR ABOUT 150, RR 40 VERIFY · PEAK AGE UNDER 3 YEARS · TWO SETS OF BLOOD CULTURES BEFORE ANTIBIOTICS · ZERO ORAL ANTIBIOTICS FROM THE SURGERY · A LIMP REQUIRES WALKING, SO ABOUT 18 MONTHS AND OVER",
+        "IV FLUCLOXACILLIN 50 mg/kg SIX-HOURLY VERIFY · DURATION ABOUT 3 WEEKS FOR A JOINT, 3-6 WEEKS FOR BONE VERIFY · KOCHER CRITERIA FOR THE HIP: fever, NON-WEIGHT-BEARING, ESR over 40, WCC over 12 · MedSTAR 1300 13 12 33, TIS 131 450"
+      ]
+    },
+    "source": "Paed_Fever_Septic_Arthritis_2_Case_Tasks_Script_Notability.pdf (a 13-month-old with fever and a swollen knee — septic arthritis; the father's 'he screams when I pick him up' followed immediately into joints, the knee explored in nine parts, the examination run as inspect-palpate-locate with the joint-line versus tibial-tuberosity question that decides the version, osteomyelitis and cellulitis named before the group list, and the couch fall refused as the explanation; the cellulitis and septic-shock variants folded in)",
+    "drive": "AMC Clinical Notability › Pediatric › Fever cluster › Paed_Fever_Septic_Arthritis_2_Case_Tasks_Script_Notability.pdf",
+    "findingsLabel": "Vitals, the examiner's findings and the bridge"
   }
 ]
