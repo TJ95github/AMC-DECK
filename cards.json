@@ -60721,5 +60721,152 @@
     "source": "Medication_Chart_2B_Tramadol_Cease_Oxycodone_Case_Tasks_Script_Notability.pdf (a prescribing station with no role-player — chart tramadol IV as a PRN, then, in the March 2025 version, cease it in both places it is written in a man taking citalopram and replace it with subcutaneous oxycodone, explaining serotonin syndrome to the examiner in forty seconds)",
     "drive": "AMC Clinical Notability › PE › Medication List › Medication_Chart_2B_Tramadol_Cease_Oxycodone_Case_Tasks_Script_Notability.pdf",
     "findingsLabel": "Both entries, one line and two lines, and the word CEASED"
+  },
+  {
+    "id": "PE-98",
+    "cat": "pe",
+    "promptBell": true,
+    "promptAt": 300,
+    "setting": "'STAT' MEANS THE ONCE-ONLY BOX ON THE FRONT PAGE. EVERY MEDICAL OFFICER WHO CHARTED IT AS A REGULAR MEDICINE FOR ONE DAY AND CROSSED OUT THE REST FAILED IN 2025. THE OTHER HALF OF THE STATION IS PER-KILOGRAM DOSING: CALCULATE IT, WRITE THE ANSWER IN MILLIGRAMS RATHER THAN THE FORMULA, AND PUT THE WEIGHT IN THE ID BOX WHERE THE PHARMACIST WILL LOOK FOR IT.",
+    "stem": [
+      "EMERGENCY DEPARTMENT. YOU ARE THE INTERN. A BLANK NIMC, THE AMH AND A PEN. NO ROLE-PLAYER.",
+      "YOUR NEXT PATIENT HAS BEEN DIAGNOSED WITH PYELONEPHRITIS AND ADMITTED FOR TREATMENT. HIS eGFR IS 60 AND HIS WEIGHT IS 60 kg. IDENTIFIERS ARE SUPPLIED — NAME, URN, DOB, NO ADDRESS. NO ALLERGIES GIVEN AND NO REGULAR MEDICINES. Task: CHART GENTAMICIN INTRAVENOUSLY STAT."
+    ],
+    "tasks": [
+      "Chart gentamicin intravenously stat"
+    ],
+    "time": "DECIDE THE BOX BEFORE YOU WRITE — STAT MEANS ONCE-ONLY, FRONT PAGE · THEN THE FIVE HOUSEKEEPING BOXES, WITH THE WEIGHT ADDED TO THE ID BOX BECAUSE THE DOSE IS PER KILOGRAM · THEN THE AMH FOR THE RENAL BAND AND ONE MULTIPLICATION · THEN A SINGLE ORDER THAT TAKES THIRTY SECONDS TO WRITE · AND THEN SPEND THE SPARE TIME RE-CHECKING, WHICH IS THE HABIT BEING TRAINED.",
+    "findings": [
+      [
+        "STAT IS THE ONCE-ONLY BOX, FRONT PAGE",
+        "The stem says STAT — A SINGLE DOSE — AND THAT IS THE ONCE-ONLY AND NURSE-INITIATED BOX ON THE FRONT PAGE. 'IN OUR HOSPITAL WE CHART A STAT DOSE AS A REGULAR MEDICINE AND CROSS OUT THE REST' EARNED A FAIL IN 2025. Decide it while holding the chart, before the pen moves"
+      ],
+      [
+        "TREAT eGFR AS CrCl AND READ THE BAND",
+        "The AMH gentamicin page doses BY CREATININE CLEARANCE, and the stem gives eGFR — TREAT THEM AS THE SAME NUMBER, AND NO CALCULATOR IS NEEDED. CrCl ABOVE 60 IS 5 TO 7 mg/kg; CrCl 30 TO 60 IS 4 TO 5 mg/kg. eGFR 60 SITS ON THE BOUNDARY, AND 5 mg/kg IS IN BOTH BANDS — WHICH IS WHY IT IS THE SAFE CHOICE"
+      ],
+      [
+        "ONE MULTIPLICATION, AND WRITE THE ANSWER",
+        "5 mg/kg × 60 kg = 300 mg. WRITE '300 mg' — NOT '5 mg/kg', WHICH IS A FAIL, AND NOT '300' WITHOUT A UNIT, WHICH IS ALSO A FAIL"
+      ],
+      [
+        "THE WEIGHT GOES IN THE ID BOX",
+        "BECAUSE THIS IS PER-KILOGRAM DOSING, WRITE 'WEIGHT (kg): 60' IN THE ID BOX — WHERE THE PHARMACIST WILL LOOK FOR IT. Omitting it is amber to some examiners and a fail to others"
+      ],
+      [
+        "THE ID BOX FRONT",
+        "URN AS GIVEN · FAMILY NAME · GIVEN NAMES · ADDRESS ONLY IF GIVEN · DOB · SEX TICKED · AND 'FIRST PRESCRIBER TO PRINT PATIENT NAME' IS THE PATIENT'S NAME, NOT YOURS — THE LABEL IS CHECKED AGAINST THE WRISTBAND, AND WRITING YOUR OWN NAME THERE IS A FAIL"
+      ],
+      [
+        "TURN THE CHART OVER IMMEDIATELY",
+        "THE BACK ID BOX IS COMPLETED WITH THE SAME IDENTIFIERS AND THE PATIENT'S NAME PRINTED AGAIN — DO IT RIGHT AFTER THE FRONT BOX AND BEFORE THE ALLERGY BOX, BECAUSE MORE THAN HALF THE ROOM NEVER TURNS THE CHART OVER. MISSING IT IS A FAIL. The year on the PRN page is optional unless you are charting a PRN"
+      ],
+      [
+        "ALLERGIES — A SILENT STEM STILL NEEDS A TICK",
+        "TICK NIL KNOWN, INITIAL, SIGN, PRINT, DATE. Leaving the box untouched because 'the stem didn't say' is the trap — A SILENT STEM MEANS TICK A BOX AND SIGN IT"
+      ],
+      [
+        "MEDICINES PRIOR TO PRESENTATION, AND VTE",
+        "NO HOME MEDICINES ARE LISTED, SO LEAVE THAT BOX EMPTY — AND NEVER PUT TODAY'S INPATIENT ORDERS THERE · VTE: TICK PROPHYLAXIS NOT REQUIRED, SIGN AND DATE. LEAVING THE VTE BOX BLANK IS A FAIL, AND WRITING A THERAPEUTIC ANTICOAGULANT INTO IT IS WORSE"
+      ],
+      [
+        "THE ONCE-ONLY ORDER, FIELD BY FIELD",
+        "DATE PRESCRIBED · MEDICINE gentamicin, GENERIC NAME PRINTED · ROUTE IV · DOSE 300 mg · DATE AND TIME OF DOSE — for example today at 1400, ROUGHLY THE TIME YOU THINK IT IS — OR THE WORD 'STAT' · PRESCRIBER SIGNATURE, SMALL, BECAUSE THE BOX IS SMALL · AND YOUR PRINTED NAME"
+      ],
+      [
+        "THE FIELDS THAT ARE NOT YOURS",
+        "'GIVEN BY', 'TIME GIVEN' AND THE PHARMACY COLUMN STAY EMPTY — THEY BELONG TO THE NURSE AND THE PHARMACIST. Filling them is an amber mark. 'MEDICATION CHART 1 OF 1' IS OPTIONAL IF THERE IS TIME"
+      ],
+      [
+        "DATE AND TIME VERSUS 'STAT'",
+        "THE NEWER CHART ASKS FOR A DATE AND TIME RATHER THAN A FREQUENCY WORD, SO A DATE AND AN APPROXIMATE TIME IS THE FORMAL ANSWER — BUT 'STAT' IS STILL ACCEPTED AND BOTH PASS"
+      ],
+      [
+        "THE RE-CHECK, SAID OUT LOUD",
+        "'ID FRONT AND THE WEIGHT — YES. ID BACK — YES. ALLERGY TICKED AND SIGNED — YES. VTE — YES. ONCE-ONLY BOX, NOT REGULAR — YES. DOSE IN MILLIGRAMS — YES.' The order itself takes thirty seconds once the dose is found; THE SPARE TIME IS FOR THIS, AND THE MARKER NOTES WHETHER YOU DID IT"
+      ]
+    ],
+    "back": {
+      "dx": "A ONCE-ONLY PRESCRIBING STATION — THE FIRST STAT ORDER THE AMC HAS SET — TESTING THREE THINGS AT ONCE: THAT YOU KNOW WHICH BOX A STAT DOSE LIVES IN, THAT YOU CAN DOSE PER KILOGRAM WITHIN A RENAL BAND, AND THAT THE HOUSEKEEPING BOXES ARE STILL COMPLETED WHEN THE STEM IS SILENT. THE NUMBERS: GENTAMICIN AT CrCl ABOVE 60 IS 5 TO 7 mg/kg, AND AT CrCl 30 TO 60 IT IS 4 TO 5 mg/kg · eGFR 60 IS TREATED AS CrCl 60 FOR THE EXAM · 5 mg/kg × 60 kg = 300 mg IV · THE ONCE-ONLY BOX IS ON THE FRONT PAGE · AND THE WEIGHT OF 60 kg GOES IN THE ID BOX VERIFY ALL AGAINST THE AMH AND LOCAL PROTOCOL. THE MARKING BRIEF'S OUTRIGHT FAILS: CHARTING GENTAMICIN IN THE REGULAR BOX FOR ONE DAY, WHICH IS THE 2025 FAILING MOVE · WRITING '5 mg/kg' OR '300' WITH NO UNIT · WRITING YOUR OWN NAME AS THE PATIENT · MISSING THE ID BOX ON THE BACK · AND LEAVING THE VTE BOX BLANK. OMITTING THE WEIGHT IS AMBER TO SOME EXAMINERS AND A FAIL TO OTHERS, AND FILLING IN 'GIVEN BY' OR 'TIME GIVEN' IS AMBER. BOTH 'STAT' AND A DATE WITH AN APPROXIMATE TIME PASS. CHOOSING 4 mg/kg FOR 240 mg, OR 7 mg/kg FOR 420 mg, PASSES IF THE BAND IS DEFENSIBLE AND YOU CAN JUSTIFY IT — SO KNOW WHY YOU PICKED YOUR NUMBER. AND IF YOU ASK THE EXAMINER WHETHER eGFR EQUALS CrCl, THEY ARE BRIEFED TO SHRUG AND SAY NOTHING. THE VARIANTS. eGFR 45 AT 80 kg PUTS YOU IN THE 30 TO 60 BAND — 5 × 80 = 400 mg, OR 4 × 80 = 320 mg, AND YOU WRITE THE MILLIGRAMS. 'CHART GENTAMICIN DAILY FOR THREE DAYS' MAKES IT A REGULAR ORDER ON PAGE 3 WITH A DAILY FREQUENCY, A TIME SUCH AS 0800, THREE DATED COLUMNS AND THE REST BLOCKED — A COURSE NEEDING LEVELS COULD SIT IN THE VARIABLE-DOSE BOX, BUT FOR THE EXAM A FIXED DAILY DOSE FOR THREE DAYS IS REGULAR. IF YOU CHART IT AS REGULAR BY MISTAKE, THE CORRECTION IS ONE LINE, TWO LINES, 'CEASED — WRITTEN IN ERROR', DATE AND SIGNATURE, THEN RE-CHART IN THE ONCE-ONLY BOX — DO NOT PANIC, BECAUSE THE EXAMINER SEES A CORRECT CORRECTION. AND FOR A ONE-WORD SLIP SUCH AS IM WRITTEN FOR IV, A SINGLE LINE THROUGH THE WRONG WORD, INITIALLED, WITH THE CORRECT WORD BESIDE IT IS ENOUGH — FULL RE-ORDERING IS FOR ANYTHING LARGER. THE PRINCIPLE UNDERNEATH THIS STATION, WHICH GENERALISES TO EVERY CHART: THE BOX YOU CHOOSE IS ITSELF A CLINICAL DECISION. A STAT DOSE IN THE REGULAR SECTION READS AS A COURSE; A COURSE IN THE ONCE-ONLY BOX READS AS ONE DOSE; AND THE PERSON WHO HAS TO INTERPRET IT IS NOT IN THE ROOM WITH YOU.",
+      "plan": [
+        [
+          "0:00",
+          "OUTSIDE THE DOOR: 'GENTAMICIN IV STAT — ONCE-ONLY BOX, FRONT PAGE. eGFR 60, WEIGHT 60 — PER KILOGRAM, RENAL BAND, WEIGHT IN THE ID BOX. FIVE BOXES, THEN ONE ORDER.'"
+        ],
+        [
+          "0:30",
+          "ID BOX FRONT — URN, NAME, DOB, SEX, NO ADDRESS GIVEN — AND THE PATIENT'S NAME IN THE PRINT LINE."
+        ],
+        [
+          "1:00",
+          "ADD THE WEIGHT TO THE ID BOX, THEN TURN THE CHART OVER AND COMPLETE THE BACK ID BOX."
+        ],
+        [
+          "1:30",
+          "ALLERGIES — NIL KNOWN, INITIALLED, SIGNED, PRINTED, DATED."
+        ],
+        [
+          "2:00",
+          "MEDICINES PRIOR TO PRESENTATION LEFT EMPTY · VTE — PROPHYLAXIS NOT REQUIRED, SIGNED AND DATED."
+        ],
+        [
+          "2:30",
+          "OPEN THE AMH AT GENTAMICIN VIA THE BACK INDEX AND FIND THE ADULT DOSING BY CREATININE CLEARANCE."
+        ],
+        [
+          "3:10",
+          "READ THE TWO BANDS, PLACE eGFR 60 ON THE BOUNDARY, AND CHOOSE 5 mg/kg BECAUSE IT SITS IN BOTH."
+        ],
+        [
+          "3:40",
+          "DO THE MULTIPLICATION AND FIX THE ANSWER: 300 mg."
+        ],
+        [
+          "4:00",
+          "THE ONCE-ONLY BOX, FIRST LINE — DATE, GENTAMICIN, IV, 300 mg, DATE AND TIME OF DOSE, SMALL SIGNATURE, PRINTED NAME."
+        ],
+        [
+          "4:40",
+          "STOP — LEAVE 'GIVEN BY', 'TIME GIVEN' AND THE PHARMACY COLUMN EMPTY."
+        ],
+        [
+          "5:00",
+          "ADD 'MEDICATION CHART 1 OF 1' IF THERE IS TIME."
+        ],
+        [
+          "5:20",
+          "RE-CHECK EVERY BOX OUT LOUD IN ORDER BEFORE LEAVING — THE MARKER IS WATCHING FOR THIS."
+        ]
+      ],
+      "planApprox": true,
+      "planNote": "one order in an 8-minute station - the source says 30 seconds once the dose is found, so the design is deliberately about housekeeping and re-checking",
+      "ask": [
+        "THE ORDER, EXACTLY AS WRITTEN: 'gentamicin · IV · 300 mg' with the date and an approximate time — or the word 'stat'.",
+        "THE TWO ID-BOX ITEMS THAT CARRY FAILS: THE PATIENT'S NAME IN THE PRINT LINE, AND 'WEIGHT (kg): 60'.",
+        "THE HOUSEKEEPING TICKS: 'NIL KNOWN' AND 'PROPHYLAXIS NOT REQUIRED' — both signed and dated even though the stem mentions neither.",
+        "THE DOSE REASONING, IN ONE BREATH: 'eGFR 60 EQUALS CrCl 60 · ABOVE 60 IS 5 TO 7, 30 TO 60 IS 4 TO 5 · FIVE SITS IN BOTH · FIVE TIMES SIXTY IS THREE HUNDRED.'",
+        "CHALLENGES: an examiner who shrugs and says nothing if you ask whether eGFR equals CrCl · a request to justify 4 or 7 mg/kg if you chose one · and the variants — eGFR 45 at 80 kg, 'daily for three days', and correcting your own order charted in the wrong box."
+      ],
+      "pefe": [
+        "THERE IS NO PATIENT AND NO EXAMINATION. THE ONLY 'FINDINGS' ARE THE TWO NUMBERS IN THE STEM — eGFR 60 AND WEIGHT 60 kg — AND THEY EXIST TO BE USED: ONE SELECTS THE BAND, THE OTHER MULTIPLIES. A STEM THAT GIVES YOU A WEIGHT IS TELLING YOU THE DOSE IS PER KILOGRAM.",
+        "THE FIVE HOUSEKEEPING BOXES ARE MARKED HERE EXACTLY AS IN EVERY OTHER CHART STATION, AND THE SILENCE OF THE STEM IS NOT AN EXCUSE: ID FRONT WITH THE PATIENT'S NAME PRINTED AND THE WEIGHT ADDED · ID BACK · ALLERGIES · MEDICINES PRIOR TO PRESENTATION · AND VTE PROPHYLAXIS.",
+        "HOW TO REHEARSE IT: give a partner the stem with eGFR 60 and weight 60 kg, a blank NIMC and the AMH, AND HAVE THEM SAY NOTHING ELSE — THEN WATCH WHERE THE PEN GOES FIRST AFTER THE ID BOXES. That first movement is the whole test.",
+        "EVERY RED ITEM IS A FAIL ON ITS OWN AND TWO AMBER ITEMS TOGETHER ALSO FAIL — SO THE STATION IS LOST IN SMALL PLACES: A MISSING UNIT, AN UNTURNED PAGE, A BLANK VTE BOX, A NAME IN THE WRONG LINE. The re-check before leaving is what catches all four."
+      ],
+      "fails": [
+        "★ Charting the stat dose as a regular medicine for one day and crossing out the rest — the documented 2025 failing move",
+        "★ Writing '5 mg/kg' as the dose, or '300' with no unit",
+        "Printing your own name where the patient's name belongs, or never turning the chart over to complete the back ID box",
+        "Leaving the VTE box blank, leaving the allergy box untouched because the stem was silent, or omitting the weight from the ID box when the dose is per kilogram",
+        "Filling in 'given by' or 'time given', which belong to the nurse — or leaving without re-checking, which is the habit the station exists to train"
+      ],
+      "numbers": [
+        "GENTAMICIN: CrCl ABOVE 60 → 5 TO 7 mg/kg · CrCl 30 TO 60 → 4 TO 5 mg/kg · eGFR 60 IS TREATED AS CrCl 60 FOR THE EXAM, AND SITS ON THE BOUNDARY WHERE 5 mg/kg IS IN BOTH BANDS · 5 mg/kg × 60 kg = 300 mg IV",
+        "VARIANTS: eGFR 45 AT 80 kg → 4 TO 5 mg/kg BAND, SO 320 TO 400 mg · ONCE-ONLY BOX IS THE FRONT PAGE, AND A FIXED DAILY DOSE FOR THREE DAYS IS A REGULAR ORDER ON PAGE 3 · WEIGHT IN THE ID BOX · SMALL SIGNATURE IN A SMALL BOX · 'MEDICATION CHART 1 OF 1' IF TIME · VERIFY ALL AGAINST THE AMH AND LOCAL PROTOCOL"
+      ]
+    },
+    "source": "Medication_Chart_2C_Gentamicin_Stat_Case_Tasks_Script_Notability.pdf (an intern in emergency asked to chart gentamicin IV stat for pyelonephritis with an eGFR of 60 and a weight of 60 kg — the first once-only order the AMC has set, where charting it as a regular medicine for one day failed in 2025, the dose is calculated per kilogram within a renal band, and the weight goes in the ID box)",
+    "drive": "AMC Clinical Notability › PE › Medication List › Medication_Chart_2C_Gentamicin_Stat_Case_Tasks_Script_Notability.pdf",
+    "findingsLabel": "Stat means the front page, milligrams not mg/kg, and the weight in the ID box"
   }
 ]
