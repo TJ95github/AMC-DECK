@@ -369,7 +369,7 @@ function render(){
         ${wide?"":timerHtml}`;
     } else {
       const b=c.back||{};
-    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
+    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/^(FAIL|SAY|DO) — /,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
     const isMust=(t)=>{const k=(t||"").replace(/★/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60);return k.length>20&&mustKeys.has(k);};
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${esc(t)}</li>`;
       h+=`<div class="back">
