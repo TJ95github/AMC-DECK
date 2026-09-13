@@ -102,6 +102,11 @@
   /* back */
   .back h3{font-size:13.5px;font-weight:600;margin:16px 0 6px;color:var(--c,var(--ink));letter-spacing:.005em}
   .back h3:first-child{margin-top:0}
+  .must{background:#fff3b0;border:2px solid #d00;border-radius:10px;padding:12px 16px;margin:0 0 14px}
+  .must h3{margin:0 0 6px;color:#b00000;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+  .must ol{margin:0;padding-left:22px}
+  .must li{color:#b00000;font-weight:700;font-size:15.5px;line-height:1.45;margin:4px 0}
+  .hl{background:#fff3b0;color:#b00000;font-weight:700;border-radius:3px;padding:0 3px}
   .dx{font-family:Georgia,serif;font-size:18px;line-height:1.4;margin:0}
   .dxlead{font-family:Georgia,serif;font-size:18px;line-height:1.38;margin:0 0 9px;font-weight:600;color:var(--ink)}
   .ptl{list-style:none;margin:0;padding:0}
@@ -364,14 +369,18 @@ function render(){
         ${wide?"":timerHtml}`;
     } else {
       const b=c.back||{};
+    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
+    const isMust=(t)=>{const k=(t||"").replace(/★/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60);return k.length>20&&mustKeys.has(k);};
+    const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${esc(t)}</li>`;
       h+=`<div class="back">
+        ${c.must&&c.must.length?`<div class="must"><h3>6 must remember</h3><ol>${c.must.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div>`:""}
         ${c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
         <h3>Diagnosis</h3>${(()=>{const p=points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${esc(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"");})()}
         ${c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
-        ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span>${esc(x)}</span>`).join("")}</div>`:""}
-        ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
-        ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
-        ${b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+        ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span${isMust(x)?' class="hl"':''}>${esc(x)}</span>`).join("")}</div>`:""}
+        ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(li).join("")}</ul>`:""}
+        ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(li).join("")}</ul>`:""}
+        ${b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(li).join("")}</ul>`:""}
         ${b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         <div class="src">Source: ${esc(c.source||"")}</div>${c.drive?`<div class="drive">Google Drive: ${esc(c.drive)}</div>`:""}
       </div>${wide?"":rateHtml}`;
