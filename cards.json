@@ -2674,12 +2674,12 @@
     "source": "Medicine AMC Clinical/Thyroid_Nodule_2_Case_Tasks_Script_Notability.pdf",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Thyroid_Nodule_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "DO — I do have your results here, and I want to tell you what they show before anything else",
-      "DO — Ever had radiotherapy or radiation treatment to your head or neck, at any age? Occupation now and before — worked around radiation? Cancer yourself? Thyroid cancer in the family? Breast cancer? Bowel cancer?",
-      "DO — What's been going through your mind since that letter came? → 'I'm sorry — that must make this letter very frightening to open'",
-      "FAIL — No question about swallowing or voice (single-item fail)",
-      "FAIL — Never asking about radiotherapy/radiation — the role-player never volunteers it",
-      "FAIL — Listing tests without saying what you are looking for"
+      "SAY — 'I do have your results here, and I want to tell you what they show before anything else' — the heads-up by 0:45, before any question",
+      "FAIL — No question about swallowing or voice — a single-item automatic fail; ask them as a pair",
+      "FAIL — Never asking about radiotherapy or radiation to the head or neck — the role-player never volunteers it, and the case turns on it",
+      "FAIL — Listing tests without first naming the kinds of nodule you are looking for — 'a cyst, an overgrowth, inflammation, a benign tumour; a small number are cancers'",
+      "DO — Examination first, then TSH — 'that one test decides what comes next' — uptake scan if low, ultrasound if normal, FNA only if suspicious",
+      "FAIL — Promising it is harmless — 'I can't promise you which side of that you're on today, and I won't pretend I can'"
     ]
   },
   {
@@ -2779,12 +2779,12 @@
     "source": "Amiodarone_Thyroid_2_Case_Tasks_Script_Notability.pdf",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Amiodarone_Thyroid_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "FAIL — Assuming what 'nervous' means and launching a thyroid history without asking",
-      "FAIL — Agreeing 'it's just the tablet' — false reassurance that abandons the normal TSH",
-      "FAIL — Skipping 'why was the flecainide changed?'",
-      "FAIL — Asking mood and sleep but NOT self-harm — marked down hardest",
-      "FAIL — Not asking headache and vision (the pituitary track)",
-      "FAIL — Giving one diagnosis instead of two, in order"
+      "SAY — 'Normally, when the thyroid hormones go up, the TSH should come down. Yours has stayed normal' — the mismatch, said to the patient and to the examiner (2 marks)",
+      "FAIL — Asking mood and sleep but not self-harm — the item marked down hardest (2 marks)",
+      "FAIL — Giving one diagnosis instead of two, in order — pituitary adenoma first, then amiodarone — each with its reason",
+      "SAY — 'Please do not stop the amiodarone — I will speak to your cardiologist myself'",
+      "FAIL — Assuming what 'nervous' means and launching a thyroid history — ask stressed, shaking, or racing heart first",
+      "FAIL — Agreeing 'it's just the tablet' — false reassurance that abandons the normal TSH; first investigation is a repeat assay on a different platform"
     ]
   },
   {
@@ -2889,12 +2889,12 @@
     ],
     "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
     "must": [
-      "DO — Weight loss, feeling hot when others don't, tremor, loose bowels, neck lump?",
-      "FAIL — Taking the dizziness road (vertigo/presyncope/postural drop) and running out of time",
-      "FAIL — Not establishing duration and whether continuous",
-      "FAIL — Not eliciting the exertional chest pain",
-      "FAIL — Freezing on the rate step — counting boxes, never recovering",
-      "FAIL — Over-reading up-sloping ST in V2–V3 as infarct"
+      "FAIL — Not establishing duration and whether continuous — three days continuous is over 48 hours, and that fact dictates the whole rhythm answer",
+      "FAIL — Not eliciting the exertional chest pain — it only comes out if you ask associated symptoms, and it is the cause you must name",
+      "FAIL — Freezing on the rate step — say 'as the rhythm is irregular, I'd count the QRS complexes across ten seconds and multiply by six' and move on",
+      "FAIL — Giving the label without a named cause — every recall hands you one: ischaemia, caffeine and alcohol, or untreated hypertension",
+      "FAIL — Taking the dizziness road (vertigo, presyncope, postural drop) and running out of time — palpitations is the structure",
+      "FAIL — Over-reading up-sloping ST in V2–V3 as an infarct"
     ]
   },
   {
@@ -3114,12 +3114,12 @@
     ],
     "findingsLabel": "Examination findings — open only when you would ask the examiner",
     "must": [
-      "FAIL — Closing on coronary disease on 'exertional pain in a 62-year-old' and running on autopilot",
-      "FAIL — Not asking rest/night pain — what grades it stable rather than ACS",
-      "FAIL — Never asking the five anaemia questions",
-      "FAIL — attributing all breathlessness to angina",
-      "FAIL — Hearing 'black stools' and moving on without characterising/excluding iron and bismuth",
-      "FAIL — Accepting 'no medications' — never asking about OTC painkillers"
+      "FAIL — Diagnosing angina and moving to statins and stress tests without asking why — the role-player lets you, and marks it a fail",
+      "SAY — 'Have you noticed your bowel motions turning black or tarry?' — the question that unlocks the case; then characterise it and exclude iron and bismuth",
+      "DO — The five anaemia questions: tiredness, exertional breathlessness, dizziness, palpitations, pallor — twenty seconds, never volunteered",
+      "FAIL — Accepting 'no medications' — ask about painkillers and anything bought at the chemist or supermarket; the ibuprofen only comes out then",
+      "FAIL — Not requesting the rectal examination, with consent and a chaperone — the melaena confirms the whole chain",
+      "FAIL — Telling him to keep taking the ibuprofen, or never addressing it — stop it today, paracetamol and a gel instead"
     ]
   },
   {
@@ -3199,12 +3199,12 @@
     "source": "Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf (Case 2 — the infarct ECG)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "FAIL — Calling it pericarditis because the history fits — territorial ST elevation with reciprocal change is an infarct",
-      "FAIL — Not obtaining right-sided leads",
-      "FAIL — Delaying reperfusion to complete the history",
-      "FAIL — Not naming the history–ECG mismatch to the examiner",
-      "FAIL — Reassuring the patient it's 'just inflammation'",
-      "DO — Where is the pain, what's it like, does it change with position — worse lying flat, better leaning forward?"
+      "FAIL — Calling it pericarditis because the history fits — territorial ST elevation with reciprocal change is an infarct, and the ECG overrides the story",
+      "FAIL — Not obtaining right-sided leads (V4R) for right ventricular involvement",
+      "DO — If the right ventricle is involved, no nitrates — give fluids, because he is preload dependent",
+      "FAIL — Delaying reperfusion to complete the history — aspirin 300 mg chewed, then PCI if prompt, otherwise thrombolysis and retrieval",
+      "SAY — Name the mismatch to the examiner: 'the history suggested pericarditis, but the ECG overrides it — I am treating this as an infarct'",
+      "FAIL — Reassuring the patient it is 'just inflammation'"
     ]
   },
   {
