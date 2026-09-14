@@ -11564,12 +11564,12 @@
     ],
     "findingsLabel": "Examination findings — open only when you would ask the examiner",
     "must": [
-      "SAY — 'Examiner, is my patient haemodynamically stable? BP, pulse, RR, sats, temperature?' → stable, T 38.5 · WIPE · 'over a week is a long time, and a new rash is unsettling — questions, findings, then what I think'",
-      "SAY — 'Unwell — low energy, sleepy, or feverish?' · duration 8 days, constant, worse, sick twice · rash: 'redness, blisters, or bruising?' · where it started, has it spread (never 'worse').",
-      "DO — Temperature measured? chills? paracetamol? · travel (none) · sexually active? · 'do you use condoms?' → pause → 'no, not really' → everything now pivots",
-      "SAY — 'Thanks for being straight with me. A few questions about your sex life — routine when someone's unwell with a rash, and it stays between us. Okay?' → stable partner? · multiple?'",
-      "DO — Four screens: 'any sores or ulcers on your genitals — now, or in the past few months?' → painless sore two months ago, healed · groin lumps · jaundice/abdominal pain/nausea · discharge/dysuria.",
-      "SAY — 'May I have the examination findings?' → say them aloud: febrile, generalised lymphadenopathy, other systems normal → 'can I confirm'"
+      "FAIL — Giving the plan without naming the HIV test — 'one of these tests is for HIV, and I need your permission for that specifically'; naming it is the consent, and its absence is an automatic fail in a sexual-health station (★)",
+      "FAIL — Hearing 'no, I don't use condoms' and moving to the next system — that answer is the hinge of the station; the next ninety seconds are sexual history: stable partner, multiple partners, male, female or both, oral/vaginal/anal ('it tells me which sites to swab'), previous STI, drugs or alcohol — asked the way you'd ask about smoking; 'sorry, I have to ask this' shuts him down",
+      "FAIL — Not asking specifically about sores or ulcers on the genitals, now or in the past few months — the painless sore two months ago is the primary chancre, volunteered only to that question, and it is what makes syphilis more than a differential; miss it and you name HIV alone",
+      "FAIL — Reading the findings card silently — say them aloud and ask the targeted extras: rash on the palms or soles? splenomegaly? oral ulceration? — the palms are what turn 'probably HIV' into 'HIV and syphilis, and here is why'",
+      "FAIL — Not asking 'is my patient haemodynamically stable?' at the start (the examiner is holding the numbers, and in Version B they are abnormal), 'is the rash getting worse?' (a rash spreads — he answers 'I don't know what you mean'), or 'it's probably just a virus' — characterise it: redness, blisters or bruising; where it started; spread; itch or pain; does it fade when pressed; then the four meningism questions",
+      "DO — Name HIV and syphilis with reasons from history and examination ('they look identical at this stage, which is why we test for both'), then let the silence sit ('what's going through your mind?'), grouped differentials with meningococcal excluded on blanching, swabs from all three sites, sexual health referral, anonymous contact tracing, and the non-blanching/stiff-neck safety net"
     ]
   },
   {
@@ -11670,12 +11670,12 @@
     "source": "Unwell_Traveller_2_Case_Tasks_Script_Notability.pdf (Gary Whelan, 26, back from Indonesia, shared a needle — Version 2 HIV seroconversion; Versions 1 hepatitis and 3 endocarditis on the card)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Unwell › Unwell_Traveller_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "DO — WIPE · 'a week of that, and not getting out of bed, is frightening — let's work through it' · 'three things I want to cover: what the unwellness feels like, your trip, and the heroin'",
-      "DO — Travel A B C D E F G S: where/how long (Indonesia, 3 weeks) · 'what did you actually DO?' (push past 'fun with mates') · bites/bushwalking · contacts — sick people, animals, farms · drugs (coming).",
-      "DO — Heroin, three steps: 'the notes mention you used heroin — can you tell me more about that?' (let him talk: one night, first time ever, 'I feel so guilty') → 'how did you use it.",
-      "DO — Three BBV boxes: hepatitis — jaundice, abdominal pain, nausea/vomiting, dark urine/pale stools (no) · HIV.",
-      "DO — Go back: 'you told me you didn't have sex while away, and I accept that — but these same infections are also passed on sexually, so if you have picked one up I need to know who else needs testing.",
-      "DO — Guilt ×3 picked up: 'how are you coping? mood? still enjoying things? — I ask everyone — any thoughts of harming yourself? any use since you got back?' · meds, allergies, conditions, alcohol/smoking, FHx."
+      "FAIL — Not coming back for the sexual history — the single most designed trap in the station: he says 'no' to sex overseas and waits; 'these same infections are also passed on sexually, so I need to come back to this — have you EVER been sexually active?' unlocks no condoms, multiple partners; the mark is simply waiting for you",
+      "FAIL — 'Did you share needles?' as the first heroin question — it announces a memorised recall and he answers 'yes' flatly with nothing else; open it ('the notes mention heroin — can you tell me more?'), let him talk, then route, then sharing — the guilt, the first-time detail and whether use has continued come free",
+      "FAIL — Hearing 'I feel so guilty' three or four times and never asking about mood — it is a deliberate cue; coping, mood, anhedonia, and 'I ask everyone — any thoughts of harming yourself?' — twenty seconds",
+      "FAIL — Asking only the hepatitis box because that's the version you revised — all three blood-borne boxes every time: hepatitis (jaundice, pain, nausea, urine, stools), HIV (sore throat, rash, fever, night sweats, weight, nodes, diarrhoea), injection-related (site, chest pain, palpitations, marks on the hands); then interrogate the card for the four absences: jaundice, organomegaly, murmur, injection sites",
+      "FAIL — 'Everything you tell me is completely confidential' — HIV, hepatitis and malaria are notifiable; 'some infections have to be reported to public health so contacts can be traced — done sensitively, your name isn't given to your contacts'; he asks 'so nobody else will ever know?' if you overpromise",
+      "DO — Signpost the three blocks, run the full travel mnemonic past 'just fun with mates', name the HIV test and seek consent, glandular fever as the closest mimic (the trap answer), 'the hepatitis shot covers A and B — there is no vaccine for C', endocarditis excluded on no murmur, malaria films, harm reduction without judgement (needle services, naloxone), and never 'you have heart failure' in Version 3 — it is endocarditis complicated by failure"
     ]
   },
   {
@@ -11805,12 +11805,12 @@
     ],
     "findingsLabel": "Examination findings — open only when you would ask the examiner",
     "must": [
-      "SAY — 'Before I begin, could I have his observations — BP, pulse, RR, temperature AND oxygen saturation?' → 118/74, 104, 24, 38.0, 92% · 'Hello Jack, I'm sorry to hear you've not been well'",
-      "SAY — 'I'm going to run through the whole body fairly quickly, area by area — most of these will be a simple no, and that's what I'm hoping for': sore throat/coryza/facial/ear pain · cough'",
-      "DO — Malignancy heading: 'a few more — weight loss without trying? appetite? lumps or bumps? night sweats? ulcers or patches in your mouth? new purple or red marks on your skin? ever coughed up blood? do you smoke?",
-      "DO — Examination in one run: general — alert/drowsy, rash, jaundice, dehydration · all five vitals · throat — swelling/redness, any lesion in the mouth · full lymph node survey, thyroid · respiratory.",
-      "DO — The patch, two questions: 'is it painful to touch with a tongue depressor? can it be scraped off? colour? where?' → white, scrapes off, tongue and buccal mucosa → describe first, name second.",
-      "DO — To Jack: pneumonia named + reasons (fever, cough, unwell, Panadol failed"
+      "FAIL — Telling him his chest is fine and therefore this is probably not serious — 'although your chest sounded normal, the oxygen in your blood is low and you are breathing fast, so I think the problem is in your lung'; in advanced HIV there isn't enough immune function to produce consolidation, so a normal chest does not exclude pneumonia — ask for all five observations, oxygen saturation is the finding the station is built around (★)",
+      "FAIL — Never opening the malignancy heading at all — the single most common way to score poorly in a station otherwise run well; weight, appetite, lumps, night sweats, mouth ulcers or patches, purple or red marks on the skin, haemoptysis, smoking, asbestos; and 'HIV also raises the risk of certain cancers, and I have to be honest with you about that' — lung cancer, Kaposi sarcoma, lymphoma; then contain the reaction: 'I'm not telling you that you have cancer; I'm telling you what I have to rule out' (★)",
+      "FAIL — 'That is thrush' without checking anything — describe first, name second: 'is the patch painful to touch with a tongue depressor? can it be scraped off? what colour, and where?' — candidiasis scrapes off; Kaposi sarcoma is violaceous, raised, hard palate; hairy leukoplakia is corrugated on the lateral tongue (★)",
+      "FAIL — Lecturing him about stopping his medication — 'you really should not have stopped' costs the approach mark and closes him down; 'can you tell me what led to that?' then at the end 'restarting your treatment is one of the most important things we can do, and we can look at what made it hard last time' (★)",
+      "DO — Notice and name the cough ('I can hear that cough — tell me about it'), signpost the screen ('I'll run through the whole body quickly — most will be a simple no'), characterise the cough in three questions then keep breadth, take the sexual history despite the HIV (syphilis produces this picture), ask injecting for endocarditis, screen mood",
+      "DO — Name pneumonia despite the normal chest with reasons; opportunistic infection as a concern not a diagnosis (Pneumocystis, TB — 'I have no CD4, no film; naming an organism would be premature'); specific organisms not categories ('ENT infections' scores nothing); send in today for CXR, bloods and immune check; safety-net: more breathless, confused, headache and stiff neck, haemoptysis → ambulance"
     ]
   },
   {
