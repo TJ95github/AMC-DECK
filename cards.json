@@ -8544,12 +8544,12 @@
     "source": "Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf (Version A — Margaret Hollis, 50, iron deficiency anaemia with GI red flags)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "DO — Intro, confirm name, 'how can I help you today?' before any numbers; 'I have them in front of me — let's go through them together'",
-      "DO — Permission",
-      "DO — Examination request: conjunctival pallor, koilonychia, angular cheilitis, glossitis",
-      "SAY — 'Iron deficiency can have several causes. In your case I am concerned about the possibility of a cancer in the bowel or the stomach'",
-      "SAY — 'The first and most important step is to find the cause and treat the cause — I'm referring you to a gastroenterologist for both an endoscopy and a colonoscopy' (explain both in lay terms, samples if growth or'",
-      "SAY — 'Can you just give me iron tablets?' → 'We will absolutely replace your iron — but not first'"
+      "FAIL — Leading the management with iron — 'I'll start you on iron and then arrange a scope', in that order, fails the station; 'the first and most important step is to find the cause and treat the cause' (★)",
+      "FAIL — Advising colonoscopy only, or endoscopy only, or a faecal occult blood test instead of scoping — both scopes, urgent, and no FOBT in a symptomatic patient (★)",
+      "FAIL — Accepting 'healthy and balanced' — ask 'do you eat red meat?'; and accepting 'fine' about her bowels — ask 'any dark or black stools?'; both hidden findings come only to the specific question (★)",
+      "FAIL — Accepting 'no medications' — 'anything you buy yourself for pain or your joints — Nurofen, Voltaren?' finds the daily NSAID; and weight loss quantified: six kilos in two months",
+      "SAY — 'Iron deficiency can have several causes. In your case I am concerned about the possibility of a cancer in the bowel or the stomach — because you've been losing weight and you have dark stools' — then sit with the five-second silence; peptic ulcer named as the differential",
+      "DO — Results in six lines under ninety seconds (aniso = size, poikilo = shape; no white cells or platelets), 'how can I help you today?' before any numbers, rectal examination with consent, stop the NSAID, safety-net for haematemesis and melaena, teach-back"
     ]
   },
   {
@@ -8633,12 +8633,12 @@
     "source": "Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf (Version B — Amy Kaur, 24, pregnant; back-to-back pregnancies)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "DO — Permission",
-      "SAY — 'Amy, the most likely cause is the three pregnancies you've had in the last two years. In each pregnancy your body has to build extra blood, and the baby needs a large amount of iron.",
-      "DO — Management: 'because we can't wait for tablets to work slowly in pregnancy, an iron infusion is usually preferred, and I'll recheck your blood afterwards'",
-      "SAY — 'Will this happen again?' → 'It can — so we'll check your iron after this baby, top it up before you're pregnant again, and talk about spacing.'",
-      "FAIL — Never asking the number and spacing of pregnancies — the cause is the interval",
-      "FAIL — Leading with iron before asking the six cause questions, or referring for scopes with no red flags"
+      "FAIL — Never asking the number and spacing of pregnancies — three in two years is the cause; 'we usually suggest waiting so your stores can rebuild — if the next pregnancy starts soon after, you begin it already low'",
+      "FAIL — Leading with iron before the six cause questions — red meat, bleeding and surgery, dark stools, over-the-counter anti-inflammatories, weight loss and screening, malabsorption — run them briefly even here",
+      "FAIL — Referring for scopes with no red flags — the rule is iron deficiency without an obvious cause; hers has one",
+      "FAIL — Taking a full obstetric history — the stem says the pregnancy is uneventful; every minute there is a mark lost elsewhere",
+      "DO — 'Because we can't wait for tablets to work slowly in pregnancy, an iron infusion is usually preferred, and I'll recheck your blood afterwards'",
+      "DO — Explain the results the same six-line way, then the plan for after this baby: check the iron post-partum, top it up before the next pregnancy, and spacing"
     ]
   },
   {
@@ -8768,12 +8768,12 @@
     ],
     "findingsLabel": "Examination findings — open only when you would ask the examiner",
     "must": [
-      "SAY — 'Before I go further, I want to ask about that heart murmur — it may be important': when, what, treatment → three 'I don't remember's → CHANGE TACK: 'antibiotics for a long time as a child.",
-      "DO — Screen: 'a checklist — most will be no' — liver, endocrine, malignancy… 'any fever or chills?' → 'feverish, hot and cold' → 'have you measured it?' → 'I'll take that as a fever'",
-      "DO — The two probes: 'any dental work recently — filling, extraction, root canal? other procedures?' → root canal 3 weeks ago → say the timing match aloud · 'antibiotics before it?' → no.",
-      "DO — Finish the screen in groups: cardiac failure (chest pain, ankle swelling, pillows, PND), exertional dyspnoea/palpitations, joints/headache/rash, cough/snoring, bowels, medications and drugs (injecting), mood,.",
-      "DO — Examination by name: general (pale, jaundiced, rash, unwell) · temperature, HR, BP, RR, SpO2 · thyroid, lymph nodes · CVS: apex visible/displaced, JVP, murmurs, S3, opening snap.",
-      "DO — 40-second explanation: 'infective endocarditis — a valve narrowed since childhood, bacteria from the mouth after the root canal settled on it'"
+      "FAIL — Never asking about a portal of entry — 'any dental work recently — a filling, an extraction, a root canal?' is the question this station was built around; then say the three-week timing match out loud, a free mark (★)",
+      "FAIL — 'Any skin changes?' — the examiner asks what you are looking for; name Osler nodes, Janeway lesions, clubbing and splinter haemorrhages, or the photograph stays under the papers; the single most reliable discriminator (★)",
+      "FAIL — Sending him home with oral antibiotics and a review — automatic fail and lethal; three sets of blood cultures before any antibiotic, then hospital today for echo and IV antibiotics",
+      "FAIL — Abandoning the murmur after three 'I don't remember's — change tack: 'antibiotics for a long time as a child, injections? lots of sore throats? any follow-up?' — that is how rheumatic heart disease is retrieved",
+      "FAIL — Hearing 'feverish' without a number and discounting it — 'I'll take that as a fever'; and skipping the cardiac failure questions, because heart failure on a stenotic valve is the second differential you must reason against",
+      "FAIL — Running out of time before the differentials — one sentence of what it is, two of how, four reasons, stop; then grouped differentials with heart failure and blood cancers reasoned; and answer the cancer fear if he raises his brother"
     ]
   },
   {
