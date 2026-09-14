@@ -9539,12 +9539,12 @@
     ],
     "findingsLabel": "Examination findings — open only when you would ask the examiner",
     "must": [
-      "DO — Gel",
-      "DO — General: cachexia, pallor, jaundice, rash · vitals, temperature first, then HR, BP, RR, SpO2 · hands: clubbing, scratch marks, ecchymoses, joint swelling → 'pruritus is a recognised feature of lymphoma'",
-      "SAY — 'A full lymph node examination, all chains over the whole body — cervical and supraclavicular, axillary, epitrochlear, inguinal' → two to three cervical nodes → 'consistency? mobile or fixed? tender?'",
-      "DO — Thyroid with the reason (hyperthyroidism explains tiredness, sweating, weight loss): mass, size, nodularity, tenderness, retrosternal percussion · bone tenderness sternum/spine/long bones.",
-      "DO — Turn the chair fully, lower the voice, eye contact: 'I have finished examining you, and I am afraid I have found some things that concern me.",
-      "DO — Reasons led by findings: rubbery, fixed, non-sore neck glands vs infection glands"
+      "FAIL — The generic opening ('I would do a full physical examination') — it invites 'what are you looking for?' and burns thirty seconds; name the system and the reason: 'a general examination with a focus on the haematological system, looking for a cause of B symptoms'; greet the patient before turning to the examiner",
+      "FAIL — Accepting 'two to three enlarged cervical nodes' and moving on — the four characters are two marks and come only if you ask: consistency, mobile or fixed, tender, overlying skin; 'I ask about tenderness to separate lymphadenitis from lymphadenopathy'; ask again if the examiner deflects",
+      "FAIL — 'Any masses?' on the abdomen — gets 'no'; splenomegaly must be named specifically, and it is one of your three reasons",
+      "FAIL — The euphemism — 'a blood problem', 'something in your immune system'; turn the chair, lower the voice, warning shot, then 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma', and let it land",
+      "FAIL — Quoting the stem back as your reasons — lead with what you collected: rubbery, fixed, non-tender glands ('glands from an infection are tender and mobile'), the spleen, the scratch marks; and say 'clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list'",
+      "FAIL — The shotgun investigation list — the first four in order before anything else: FBE, blood film today, excisional biopsy of a cervical node ('lymphoma is classified on nodal architecture, an aspirate gives cells without it'), PET–CT; then LDH, HIV and syphilis with consent, EBV/CMV/toxo, IGRA and CXR, TSH"
     ]
   },
   {
@@ -9642,12 +9642,12 @@
     "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version A — Arthur Nolan, 78, telephone station with the ward nurse)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "SAY — 'This is Dr [name], the HMO covering the ward tonight. Who am I speaking with, and which ward?' → Jackie, RN 4B, bed 12",
-      "SAY — 'Before I go through the results — is he alert and oriented, or drowsy or more confused than usual? Any fitting? Latest obs?' → alert at baseline, no fits, BP 128/76 HR 78 RR 16 SpO2 97 T 36.6",
-      "DO — Report as a colleague: Na 118 vs 135–145, significant",
-      "DO — Orient: admitted 3 days ago after a fall, no fracture · HTN, OA, mild memory impairment · 'read me the whole chart.",
-      "DO — Symptoms (confusion vs baseline, drowsiness, headache, nausea/vomiting, unsteadiness/falls).",
-      "DO — THE DISCRIMINATING ASK: 'Can I ask you to look at him and tell me what his fluid state looks like — dry mouth/tongue, reduced turgor, postural drop."
+      "FAIL — Discussing a sodium of 118 before asking whether he is alert — 'before I go through the results: is he alert and oriented, or drowsy? any fitting? his latest observations?' — a sodium of 118 can seize, and this is the safety domain (★)",
+      "FAIL — Never asking the nurse to assess his fluid state — 'can I ask you to look at him and tell me what his fluid state looks like? dry mouth, reduced turgor, postural drop — or oedema, raised neck veins, basal crackles? has his weight changed?' — the single commonest failure in the station; she will never offer it (★)",
+      "FAIL — Asking only about new medications — 'read me the whole chart, including anything started or changed'; the thiazide is long-standing and she reads it plainly only when asked for everything (★)",
+      "FAIL — Naming SIADH with no differentials — three layers: SIADH and its likely trigger; the other SIADH causes (malignancy, infection, intracranial); the causes outside SIADH (thyroid, adrenal, hypovolaemic, hypervolaemic) — with a paired serum and urine osmolality and urine sodium to confirm (★)",
+      "FAIL — Changing or stopping the thiazide over the telephone — 'I'll discuss that with the medical registrar and document a plan tonight'; safety-net: call me if drowsy, more confused, vomiting, fitting (★)",
+      "FAIL — The wrong register — she is a senior colleague: 'sodium 118 against 135–145, low osmolality means true hypotonic hyponatraemia', not 'a salt in your blood'; exclude pseudohyponatraemia (glucose, triglycerides, protein) and say the conclusion out loud; hearing the thiazide, note it and keep going"
     ]
   },
   {
@@ -9736,12 +9736,12 @@
     "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version B — 50-year-old man, Na 120, citalopram + carbamazepine; stem reconstructed)",
     "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf",
     "must": [
-      "SAY — 'Every medicine you take — prescribed, bought over the counter, and anything herbal' → citalopram, carbamazepine for years · SIADH groups: fever/cough/headache/neck stiffness.",
-      "SAY — 'The next step is to confirm it, then talk to whoever prescribes your medicines — we don't stop an antidepressant or an anticonvulsant abruptly",
-      "SAY — 'Before we look at them — can I ask what prompted the test in the first place?'",
-      "SAY — 'Causes outside SIADH: losing fluid through vomiting, diarrhoea or not drinking enough'",
-      "SAY — 'Should I stop them?' → 'Not today. We confirm it first, then I talk to whoever prescribes them'",
-      "FAIL — Telling him to stop citalopram or carbamazepine today"
+      "FAIL — Telling him to stop citalopram or carbamazepine today — abrupt SSRI cessation causes discontinuation symptoms, abrupt carbamazepine cessation risks seizures; 'we confirm it first, then I talk to whoever prescribes them and we plan the change'",
+      "FAIL — Asking only about new medicines — 'every medicine you take, prescribed, over the counter and anything herbal'; both drugs are long-standing and both are recognised causes",
+      "SAY — The five moves in patient register: 'sodium is a mineral, or salt, kept in careful balance' → 'SIADH — a hormone that tells your kidneys to hold on to water; your body makes too much, the extra water dilutes the salt' → 'the most likely trigger is your medication, a side effect, not anything you did' → the other SIADH causes checked (lung cancer, lymphoma, infection, head — X-ray and scan normal) → the causes outside SIADH",
+      "FAIL — Saying 'SIADH' and offering no other causes — the differentials are a separate marked item in both versions",
+      "DO — 'What prompted the test in the first place?' then symptoms (confusion, headache, balance, tiredness) and the three volume blocks even though he 'feels completely fine' — you cannot call him euvolaemic without them",
+      "DO — Confirm with a paired serum and urine osmolality and a urine sodium, TSH and cortisol; in the smoker with a three-month cough and weight loss, name the lung and arrange the film this week"
     ]
   },
   {
