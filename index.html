@@ -144,6 +144,8 @@
   .sheet p{font-size:14px;color:var(--ink-2);margin:6px 0 10px}
   .sheet label{display:flex;align-items:center;gap:10px;font-size:15px;padding:10px 0;border-top:1px solid var(--line)}
   .sheet input[type=checkbox]{width:20px;height:20px}
+  .sheet input[type=password],.sheet input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace;margin:0 0 8px}
+  .hint{font-size:13px;color:#667085;margin:0 0 8px}
   textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace}
   .stats{display:grid;grid-template-columns:1fr auto auto auto;gap:4px 12px;font-size:14px;margin:8px 0 14px}
   .stats span{font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-2)}
@@ -169,6 +171,10 @@
     <label><input type="checkbox" id="optBell"> Bells: 5:00 prompt (where the station has one), 6:00 two-minute warning, 8:00 finish</label>
     <label><input type="checkbox" id="optStudy"> Study mode: allow flipping without the timer</label>
     <label><input type="checkbox" id="optShuffle"> Shuffle order</label>
+    <h2 style="margin-top:18px">Sync across devices</h2>
+    <p class="hint" id="syncState">Not connected — ratings stay on this device only.</p>
+    <input id="syncTok" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="GitHub token with gist access">
+    <div class="row"><button class="btn" id="syncConnect">Connect</button><button class="btn ghost" id="syncBtn">Sync now</button><button class="btn ghost" id="syncOff">Disconnect</button></div>
     <h2 style="margin-top:18px">Add stations</h2>
     <p>Paste a JSON block of stations here, or the progress JSON copied from another copy of this deck. Stations with the same id are replaced; progress is merged, newest rating wins.</p>
     <textarea id="importBox" placeholder='[{"id":"MED-01","cat":"med", ...}]'></textarea>
@@ -195,7 +201,7 @@ const CATS = {
 let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
-const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts";
+const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync";
 let progress={}, custom=[], opts={bell:true, study:false, shuffle:false};
 let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
 let timerId=null, remaining=480, timerDone=false, fired={};
@@ -211,7 +217,7 @@ const store=(()=>{
 const hasStore = store.kind!=="none";
 
 async function load(){
-  for (const [k,fn] of [[KEY_PROG,v=>progress=v],[KEY_CUSTOM,v=>custom=v],[KEY_OPTS,v=>opts=Object.assign(opts,v)]]){
+  for (const [k,fn] of [[KEY_PROG,v=>progress=v],[KEY_CUSTOM,v=>custom=v],[KEY_OPTS,v=>opts=Object.assign(opts,v)],[KEY_SYNC,v=>sync=Object.assign(sync,v)]]){
     try{ const r=await store.get(k); if(r) fn(JSON.parse(r)); }catch(e){ /* key absent on first run */ }
   }
 }
@@ -219,6 +225,104 @@ async function save(k,v){
   try{ await store.set(k,JSON.stringify(v)); }catch(e){ console.error("save failed",k,e); setStatus("Could not save — storage unavailable"); }
 }
 function today(){ return new Date().toISOString().slice(0,10); }
+
+/* ===================== Cross-device sync (private GitHub gist) =====================
+   Ratings are mirrored to a secret gist on your own GitHub account. The token is
+   typed in on each device and kept in that device's storage only — it is never part
+   of this file and never reaches the repo. Merge rule: per station, the rating with
+   the newer timestamp wins, so a stale device can never wipe a fresher one. */
+const GIST_FILE="amc-deck-progress.json", GIST_DESC="AMC-DECK progress sync (do not delete)";
+let sync={token:"",gistId:"",last:""}, syncTimer=null, syncBusy=false, syncLastAuto=0;
+function syncOn(){ return !!sync.token; }
+
+async function gh(path,o){
+  o=o||{};
+  const hd=Object.assign({"Authorization":"Bearer "+sync.token,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"},o.headers||{});
+  const r=await fetch("https://api.github.com"+path,Object.assign({},o,{headers:hd}));
+  if(!r.ok) throw new Error(r.status===401?"token rejected":r.status===403||r.status===404?"token lacks gist access":"HTTP "+r.status);
+  return r.json();
+}
+
+async function ensureGist(){
+  if(sync.gistId) return sync.gistId;
+  const list=await gh("/gists?per_page=100");
+  const found=(list||[]).find(g=>g.files&&g.files[GIST_FILE]);
+  if(found) sync.gistId=found.id;
+  else{
+    const g=await gh("/gists",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({description:GIST_DESC,public:false,files:{[GIST_FILE]:{content:JSON.stringify({progress:{},custom:[],at:new Date().toISOString()})}}})});
+    sync.gistId=g.id;
+  }
+  await save(KEY_SYNC,sync);
+  return sync.gistId;
+}
+
+function mergeRemote(remote){
+  let n=0;
+  Object.entries(remote||{}).forEach(([id,p])=>{
+    const cur=progress[id];
+    if(p && (!cur || ((p.at||"") > (cur.at||"")))){ progress[id]=p; n++; }
+  });
+  return n;
+}
+
+async function syncPull(){
+  const id=await ensureGist();
+  const g=await gh("/gists/"+id);
+  const f=g.files&&g.files[GIST_FILE]; if(!f) return 0;
+  let txt=f.content;
+  if(f.truncated&&f.raw_url){ const r=await fetch(f.raw_url,{cache:"no-store"}); txt=await r.text(); }
+  const data=JSON.parse(txt||"{}");
+  const n=mergeRemote(data.progress);
+  if(Array.isArray(data.custom)&&data.custom.length){
+    const map=new Map(data.custom.map(c=>[c.id,c])); custom.forEach(c=>map.set(c.id,c)); custom=[...map.values()];
+    await save(KEY_CUSTOM,custom);
+  }
+  return n;
+}
+
+async function syncPush(){
+  const id=await ensureGist();
+  await gh("/gists/"+id,{method:"PATCH",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({files:{[GIST_FILE]:{content:JSON.stringify({progress,custom,at:new Date().toISOString()})}}})});
+  sync.last=new Date().toISOString(); await save(KEY_SYNC,sync);
+}
+
+async function syncNow(quiet){
+  if(!syncOn()||syncBusy) return;
+  syncBusy=true; syncLastAuto=Date.now();
+  if(!quiet) setStatus("Syncing…");
+  try{
+    const n=await syncPull();
+    if(n){ await save(KEY_PROG,progress); buildCards(); buildQueue(); render(); }
+    await syncPush();
+    setStatus(n?("Synced — "+n+" station"+(n===1?"":"s")+" brought in from your other device"):"Synced");
+  }catch(e){ setStatus("Sync failed — "+e.message); }
+  finally{ syncBusy=false; renderSyncState(); }
+}
+
+function syncSoon(){
+  if(!syncOn()) return;
+  clearTimeout(syncTimer);
+  syncTimer=setTimeout(()=>{ syncPush().then(renderSyncState).catch(e=>setStatus("Sync failed — "+e.message)); },2500);
+}
+
+async function armSyncFromHash(){
+  const m=/[#&]sync=([^&]*)/.exec(location.hash||""); if(!m) return;
+  const v=decodeURIComponent(m[1]||"").trim(); if(!v) return;
+  const i=v.indexOf(":");
+  sync.token = i<0 ? v : v.slice(0,i);
+  if(i>=0 && v.slice(i+1)) sync.gistId=v.slice(i+1);
+  await save(KEY_SYNC,sync);
+  try{ history.replaceState(null,"",location.pathname+location.search); }catch(e){ location.hash=""; }
+}
+
+function renderSyncState(){
+  const el=document.getElementById("syncState"); if(!el) return;
+  if(!syncOn()){ el.textContent="Not connected — ratings stay on this device only."; return; }
+  el.textContent="Connected"+(sync.gistId?" · gist "+sync.gistId.slice(0,8):"")+(sync.last?" · last synced "+sync.last.slice(0,16).replace("T"," "):"");
+}
+
 
 function buildCards(){
   const map=new Map(BUILTIN.map(c=>[c.id,c]));
@@ -248,7 +352,7 @@ function rate(r){
   else { ease=ease+0.15; interval=interval===0?3:Math.round(interval*ease*1.3); }
   const d=new Date(); d.setDate(d.getDate()+interval);
   progress[c.id]={reps:p.reps+1,ease,interval,due:interval===0?today():d.toISOString().slice(0,10),last:r,seen:(p.seen||0)+1,at:new Date().toISOString()};
-  save(KEY_PROG,progress);
+  save(KEY_PROG,progress); syncSoon();
   // Again keeps the card in this session: move it to the end of the queue
   if(r==="again"){ queue.push(queue.splice(idx,1)[0]); }
   else { idx++; }
@@ -430,6 +534,7 @@ function openDrawer(){
   const seen=Object.values(progress).filter(p=>p.seen).length;
   s+=`<div>Reviewed at least once</div><span>${seen}</span><span></span><span></span>`;
   st.innerHTML=s;
+  renderSyncState();
 }
 function closeDrawer(){ const d=document.getElementById("drawer"); d.classList.remove("open"); d.setAttribute("aria-hidden","true"); }
 document.getElementById("closeBtn").onclick=closeDrawer;
@@ -463,6 +568,22 @@ document.getElementById("resetBtn").onclick=async()=>{
   if(!confirm("Reset all ratings and due dates? Stations are kept.")) return;
   progress={}; await save(KEY_PROG,progress); buildQueue(); render(); document.getElementById("importMsg").textContent="Progress reset."; openDrawer();
 };
+document.getElementById("syncConnect").onclick=async()=>{
+  const box=document.getElementById("syncTok"), t=(box.value||"").trim();
+  if(!t){ document.getElementById("syncState").textContent="Paste a token into the box first."; return; }
+  sync.token=t; sync.gistId=""; await save(KEY_SYNC,sync); box.value="";
+  await syncNow();
+};
+document.getElementById("syncBtn").onclick=()=>syncNow();
+document.getElementById("syncOff").onclick=async()=>{
+  if(!confirm("Disconnect sync on this device? Your ratings stay on this device and in the gist.")) return;
+  sync={token:"",gistId:"",last:""}; await save(KEY_SYNC,sync); renderSyncState(); setStatus("Sync disconnected");
+};
+document.addEventListener("visibilitychange",()=>{
+  if(!syncOn()) return;
+  if(document.visibilityState==="hidden"){ clearTimeout(syncTimer); syncPush().catch(()=>{}); }
+  else if(Date.now()-syncLastAuto>30000){ syncNow(true); }
+});
 
 const mq=window.matchMedia("(min-width:900px)");
 (mq.addEventListener?mq.addEventListener("change",()=>render()):mq.addListener(()=>render()));
@@ -531,7 +652,7 @@ async function loadBuiltin(){
     const d=await r.json(); if(Array.isArray(d)) BUILTIN=d;
   }catch(e){ console.error("cards.json not loaded",e); setStatus("Could not load cards.json — open the deck from its web address"); }
 }
-(async()=>{ await Promise.all([load(),loadBuiltin()]); buildCards(); buildQueue(); render(); })();
+(async()=>{ await Promise.all([load(),loadBuiltin()]); await armSyncFromHash(); buildCards(); buildQueue(); render(); if(syncOn()) syncNow(true); })();
 </script>
 </body>
 </html>
