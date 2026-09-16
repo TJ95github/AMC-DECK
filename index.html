@@ -93,6 +93,9 @@
   .ring .fg{stroke:var(--c,var(--ink));fill:none;stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset .25s linear}
   .ring .t{position:absolute;inset:0;display:grid;place-items:center;font-size:27px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:.01em}
   .ring.warn .fg{stroke:var(--warn)} .ring.done .fg{stroke:var(--bad)}
+  .ring.read .fg{stroke:#2f6fb0} .ring .ph{position:absolute;left:0;right:0;bottom:26px;text-align:center;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+  .ring .t{padding-bottom:6px}
+  .bar.read .bt{color:#2f6fb0}
   .tbtns{display:flex;flex-direction:column;gap:8px;flex:1}
   .btn{padding:11px 14px;border-radius:10px;font-size:15px;font-weight:600;background:var(--ink);color:#fff;text-align:center}
   .btn.ghost{background:#fff;border:1.5px solid var(--line);color:var(--ink-2);font-weight:500}
@@ -168,6 +171,7 @@
     <h2>Progress</h2>
     <div class="stats" id="stats"></div>
     <h2>Settings</h2>
+    <label><input type="checkbox" id="optPrep"> Reading time: 2 minutes before each station, with a bell to start</label>
     <label><input type="checkbox" id="optBell"> Bells: 5:00 prompt (where the station has one), 6:00 two-minute warning, 8:00 finish</label>
     <label><input type="checkbox" id="optStudy"> Study mode: allow flipping without the timer</label>
     <label><input type="checkbox" id="optShuffle"> Shuffle order</label>
@@ -202,9 +206,11 @@ let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
 const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync";
-let progress={}, custom=[], opts={bell:true, study:false, shuffle:false};
+let progress={}, custom=[], opts={bell:true, study:false, shuffle:false, prep:true};
 let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
-let timerId=null, remaining=480, timerDone=false, fired={};
+let timerId=null, remaining=480, timerDone=false, fired={}, phase="station";
+const PREP=120, STATION=480;
+const phaseTotal=()=>phase==="prep"?PREP:STATION;
 /* Storage adapter: Claude artifact storage when present; otherwise the browser's own
    storage when the file is opened directly in Safari/Chrome; otherwise memory only. */
 const store=(()=>{
@@ -380,11 +386,18 @@ async function keepAwake(){ try{ if("wakeLock" in navigator && !wakeLock){ wakeL
 function releaseWake(){ try{ if(wakeLock){ wakeLock.release(); wakeLock=null; } }catch(e){} }
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"){ if(timerId) keepAwake(); tick(); } });
 
-function resetTimer(){ clearInterval(timerId); timerId=null; endAt=null; remaining=480; timerDone=false; fired={}; releaseWake(); }
+function resetTimer(){ clearInterval(timerId); timerId=null; endAt=null; phase=opts.prep?"prep":"station"; remaining=phaseTotal(); timerDone=false; fired={}; releaseWake(); }
+function beginStation(run){ phase="station"; remaining=STATION; fired={}; if(run){ endAt=Date.now()+STATION*1000; } }
+function skipReading(){ if(phase!=="prep") return; const wasRunning=!!timerId; beginStation(wasRunning); if(wasRunning){ render(); } else { startTimer(); } }
 function tick(){
   if(!timerId||endAt===null) return;
   // derive from the clock, so the count stays right if the tab is throttled or the screen locks
   const left=Math.max(0,Math.round((endAt-Date.now())/1000));
+  if(phase==="prep"){
+    remaining=left;
+    if(left<=0){ const base=endAt; beep(740,0.5,2); buzz([250,120,250]); phase="station"; fired={}; endAt=base+STATION*1000; remaining=Math.max(0,Math.round((endAt-Date.now())/1000)); render(); return; }
+    updateTimerUI(); return;
+  }
   const c=queue[idx];
   const pAt=c?(c.promptAt?480-c.promptAt:(c.promptBell?180:0)):0;
   if(pAt&&left<=pAt&&!fired.p){ fired.p=1; beep(660,0.5,1); buzz([300]); }
@@ -418,10 +431,12 @@ function updateTimerUI(){
   const t=document.getElementById("tt"), fg=document.getElementById("fg"), ring=document.getElementById("ring");
   if(!t) return;
   t.textContent=fmt(remaining);
-  const C=2*Math.PI*52; fg.style.strokeDashoffset=C*(1-remaining/480);
-  ring.className="ring"+(timerDone?" done":remaining<=120?" warn":"");
+  const C=2*Math.PI*52; fg.style.strokeDashoffset=C*(1-remaining/phaseTotal());
+  const warn=phase==="station"&&remaining<=120;
+  ring.className="ring"+(timerDone?" done":phase==="prep"?" read":warn?" warn":"");
+  const ph=document.getElementById("ph"); if(ph) ph.textContent=phase==="prep"?"Reading":"Station";
   const t2=document.getElementById("tt2"), bar=document.getElementById("bar");
-  if(t2){ t2.textContent=fmt(remaining); bar.className="bar"+(timerDone?" done":remaining<=120?" warn":""); }
+  if(t2){ t2.textContent=fmt(remaining); bar.className="bar"+(timerDone?" done":phase==="prep"?" read":warn?" warn":""); }
 }
 
 /* ===================== Render ===================== */
@@ -446,14 +461,15 @@ function render(){
     h+=`<div class="empty">${msg}</div>`;
   } else {
     const col=CATS[c.cat]?CATS[c.cat].color:"var(--ink-3)", p=prog(c.id);
-    const timerHtml=`<div class="timer"><div class="ring" id="ring"><svg viewBox="0 0 118 118"><circle class="bg" cx="59" cy="59" r="52"/><circle class="fg" id="fg" cx="59" cy="59" r="52" stroke-dasharray="${2*Math.PI*52}" stroke-dashoffset="0"/></svg><div class="t" id="tt">${fmt(remaining)}</div></div>
+    const timerHtml=`<div class="timer"><div class="ring" id="ring"><svg viewBox="0 0 118 118"><circle class="bg" cx="59" cy="59" r="52"/><circle class="fg" id="fg" cx="59" cy="59" r="52" stroke-dasharray="${2*Math.PI*52}" stroke-dashoffset="0"/></svg><div class="t" id="tt">${fmt(remaining)}</div><div class="ph" id="ph">${phase==="prep"?"Reading":"Station"}</div></div>
           <div class="tbtns">
             ${timerDone?`<button class="btn" id="flip">Turn the card</button>`:
-              timerId?`<button class="btn ghost" id="pause">Pause</button>`:`<button class="btn" id="start">${remaining<480?"Resume":"Start 8 minutes"}</button>`}
+              timerId?`<button class="btn ghost" id="pause">Pause</button>`:`<button class="btn" id="start">${remaining<phaseTotal()?"Resume":phase==="prep"?"Start 2-minute reading":"Start 8 minutes"}</button>`}
+            ${phase==="prep"&&!timerDone?`<button class="btn ghost" id="skipRead">Skip reading — start 8 minutes</button>`:""}
             <button class="btn ghost" id="reset">Reset timer</button>
             ${opts.study&&!timerDone?`<button class="btn ghost" id="flip">Turn the card now</button>`:""}
           </div></div>
-        <div class="marks">${c.promptAt?`Prompt at ${fmt(c.promptAt)} · `:c.promptBell?"Prompt bell at 5:00 · ":""}Two-minute warning at 6:00 · Finish at 8:00${opts.bell?"":" (bells off)"}</div>`;
+        <div class="marks">${opts.prep?"2-minute reading · ":""}${c.promptAt?`Prompt at ${fmt(c.promptAt)} · `:c.promptBell?"Prompt bell at 5:00 · ":""}Two-minute warning at 6:00 · Finish at 8:00${opts.bell?"":" (bells off)"}</div>`;
     const rateHtml=`<div class="rate">
         <button class="again" data-r="again">Again<small>repeat now</small></button>
         <button class="hard" data-r="hard">Hard<small>${fmtIv(p,"hard")}</small></button>
@@ -492,8 +508,9 @@ function render(){
     h+=`</div>${wide?"":navHtml}</div>`;
     h+=`<div class="side">${wide?(flipped?`<div class="station" style="--c:${col}">${rateHtml}</div>`:`<div class="station" style="--c:${col}">${timerHtml}</div>`)+navHtml:""}</div></div>`;
     if(!wide&&!flipped){
-      h+=`<div class="bar" id="bar" style="--c:${col}"><div class="bt" id="tt2">${fmt(remaining)}</div>
-        ${timerDone?`<button class="btn" id="flip2">Turn the card</button>`:timerId?`<button class="btn ghost" id="pause2">Pause</button>`:`<button class="btn" id="start2">${remaining<480?"Resume":"Start"}</button>`}
+      h+=`<div class="bar${phase==="prep"?" read":""}" id="bar" style="--c:${col}"><div class="bt" id="tt2">${fmt(remaining)}</div>
+        ${timerDone?`<button class="btn" id="flip2">Turn the card</button>`:timerId?`<button class="btn ghost" id="pause2">Pause</button>`:`<button class="btn" id="start2">${remaining<phaseTotal()?"Resume":phase==="prep"?"Read":"Start"}</button>`}
+        ${phase==="prep"&&!timerDone?`<button class="btn ghost" id="skipRead2" style="flex:0 0 auto">Skip</button>`:""}
         <button class="btn ghost" id="reset2" style="flex:0 0 auto">Reset</button></div>`;
     }
   }
@@ -506,6 +523,7 @@ function render(){
   app.querySelectorAll(".modes button").forEach(b=>b.onclick=()=>{ mode=b.dataset.mode; buildQueue(); render(); });
   const on=(id,fn)=>{ const el=document.getElementById(id); if(el) el.onclick=fn; };
   on("start",startTimer); on("pause",pauseTimer); on("reset",()=>{resetTimer();render();});
+  on("skipRead",skipReading); on("skipRead2",skipReading);
   on("start2",startTimer); on("pause2",pauseTimer); on("reset2",()=>{resetTimer();render();});
   on("flip2",()=>{ const f=document.getElementById("flip"); if(f) f.click(); });
   on("flip",()=>{ flipped=true; clearInterval(timerId); timerId=null; render(); window.scrollTo({top:0}); });
@@ -527,7 +545,7 @@ function fmtIv(p,r){
 /* ===================== Drawer ===================== */
 function openDrawer(){
   const d=document.getElementById("drawer"); d.classList.add("open"); d.setAttribute("aria-hidden","false");
-  document.getElementById("optBell").checked=opts.bell; document.getElementById("optStudy").checked=opts.study; document.getElementById("optShuffle").checked=opts.shuffle;
+  document.getElementById("optPrep").checked=opts.prep; document.getElementById("optBell").checked=opts.bell; document.getElementById("optStudy").checked=opts.study; document.getElementById("optShuffle").checked=opts.shuffle;
   const st=document.getElementById("stats");
   let s=`<div class="h">Category</div><span class="h">stations</span><span class="h">due</span><span class="h">hard</span>`;
   Object.entries(CATS).forEach(([k,v])=>{ const cs=cards.filter(c=>c.cat===k); s+=`<div style="color:${v.color};font-weight:600">${v.name}</div><span>${cs.length}</span><span>${cs.filter(isDue).length}</span><span>${cs.filter(isHard).length}</span>`; });
@@ -539,7 +557,7 @@ function openDrawer(){
 function closeDrawer(){ const d=document.getElementById("drawer"); d.classList.remove("open"); d.setAttribute("aria-hidden","true"); }
 document.getElementById("closeBtn").onclick=closeDrawer;
 document.getElementById("drawer").addEventListener("click",e=>{ if(e.target.id==="drawer") closeDrawer(); });
-["optBell","optStudy","optShuffle"].forEach(id=>document.getElementById(id).onchange=e=>{ opts[id.slice(3).toLowerCase()]=e.target.checked; save(KEY_OPTS,opts); if(id==="optShuffle") buildQueue(); render(); });
+["optPrep","optBell","optStudy","optShuffle"].forEach(id=>document.getElementById(id).onchange=e=>{ opts[id.slice(3).toLowerCase()]=e.target.checked; save(KEY_OPTS,opts); if(id==="optShuffle") buildQueue(); if(id==="optPrep"&&!timerId&&!flipped) resetTimer(); render(); });
 document.getElementById("importBtn").onclick=async()=>{
   const box=document.getElementById("importBox"), msg=document.getElementById("importMsg");
   try{
