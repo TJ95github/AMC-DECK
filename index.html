@@ -105,6 +105,17 @@
   /* back */
   .back h3{font-size:13.5px;font-weight:600;margin:16px 0 6px;color:var(--c,var(--ink));letter-spacing:.005em}
   .back h3:first-child{margin-top:0}
+  .vers{border:2px solid #4a5568;border-radius:10px;padding:10px 12px;margin:0 0 14px;background:#f7f9fc}
+  .vers h3{margin:0 0 4px;color:#2d3748;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+  .vers .door{font-size:14px;line-height:1.45;margin:0 0 8px;color:#1a202c}
+  .vers .door b{color:#b00000}
+  .vers table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .vers th,.vers td{border-top:1px solid #cbd5e0;padding:5px 6px;vertical-align:top;text-align:left}
+  .vers th{width:64px;white-space:nowrap;color:#2d3748}
+  .vers td.dxc{font-weight:700;color:#1a202c;width:31%}
+  .vers tr.thisv{background:#fff3b0}
+  .vers tr.thisv th:after{content:" ← this card";color:#b00000;font-weight:700;white-space:nowrap}
+  .vers .vnote{font-size:12.5px;color:#4a5568;margin:8px 0 0;line-height:1.4}
   .must{background:#fff3b0;border:2px solid #d00;border-radius:10px;padding:12px 16px;margin:0 0 14px}
   .must h3{margin:0 0 6px;color:#b00000;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
   .must ol{margin:0;padding-left:22px}
@@ -494,6 +505,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${esc(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>6 must remember</h3><ol>${c.must.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${esc(v)}</th><td>${esc(clue)}</td><td class="dxc">${esc(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
         ${c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
         <h3>Diagnosis</h3>${(()=>{const p=points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${esc(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"");})()}
         ${c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
