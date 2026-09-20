@@ -19564,8 +19564,8 @@
  {
   "id": "MED-71",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, regional South Australia. You are the GP. Pre-operative results station; no physical examination.",
   "stem": [
    "Mark Ellis, 50, storeman, is booked for elective open right inguinal hernia repair in 10 days and attends for his pre-operative blood results. He feels well and has no complaint. Hypertension for 6 years on a thiazide diuretic. BP 138/84, HR 78 regular, RR 14, SpO2 98% RA, T 36.7. Results: sodium 135 (135–145), potassium 3.1 (3.5–5.2), bicarbonate 30 (22–32), creatinine 82 µmol/L, eGFR >90, anion gap normal."
   ],
@@ -19574,95 +19574,206 @@
    "Take a focused, relevant history",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes after 2 reading: results 2 min (marks earned in the first three sentences — say the kidneys are normal) · history 4 min (surgical context → ★ hypertension block incl. the dose change → intake → GI loss naming laxatives/teas → renal loss/mineralocorticoid → phaeo triad → other drugs by category, SADMA, FHx) · diagnosis + ★ four differentials aloud 2 min · plan: repeat, ECG, magnesium, replace, review the antihypertensive · answer the operation question · safety-net · summarise.",
+  "findings": [
+   [
+    "The pre-operative results — handed to you",
+    "SODIUM 135 (135–145) — normal, at the LOW end · POTASSIUM 3.1 (3.5–5.2) — MILD hypokalaemia · BICARBONATE 30 (22–32) — the ALKALOSIS · CREATININE 82, eGFR ABOVE 90 — NORMAL kidneys · ANION GAP NORMAL"
+   ],
+   [
+    "Vital signs",
+    "BP 138/84 — CONTROLLED on one agent · HR 78 regular · RR 14 · SpO2 98% RA · T 36.7 · BMI 27. HE FEELS COMPLETELY WELL AND HAS NO COMPLAINT"
+   ],
+   [
+    "Interpreting the numbers aloud",
+    "Normal kidneys + low-normal sodium + LOW POTASSIUM + RAISED BICARBONATE with a NORMAL ANION GAP = HYPOCHLORAEMIC METABOLIC ALKALOSIS consistent with RENAL POTASSIUM LOSS. Say the kidneys are normal — interpreting the creatinine and eGFR is part of 'explain the investigations'"
+   ],
+   [
+    "THE ANSWER HE GIVES ONLY IF YOU ASK ABOUT A CHANGE",
+    "'What medications are you on?' → 'a fluid tablet.' AND HE STOPS. Only 'HAS THE DOSE BEEN CHANGED RECENTLY, OR ANYTHING ADDED?' gets 'THE DOCTOR DOUBLED IT ABOUT FOUR WEEKS AGO.' That is the answer to WHY NOW, and there is a mark on the sheet for it"
+   ],
+   [
+    "Version A negatives — quote them back",
+    "NO vomiting, NO diarrhoea, NO laxatives. NO cramps, NO weakness, up once a night AS ALWAYS. NO liquorice. NO puffers, steroids or insulin. Diet unchanged, banana most days, weight steady. NO episodic headache-sweating-palpitations"
+   ],
+   [
+    "VERSION B — the pivot",
+    "K 2.5 · BICARBONATE 33 · SODIUM 141 · BP 168/98 AND STILL HIGH ON TWO AGENTS FOR TWO YEARS. He volunteers LEG CRAMPS, GENERALISED WEAKNESS, and NOCTURIA THREE TO FOUR TIMES A NIGHT. THE THIAZIDE IS A DECOY. Resistant hypertension + spontaneous hypokalaemia + metabolic alkalosis = PRIMARY ALDOSTERONISM until proven otherwise"
+   ],
+   [
+    "His hidden agenda",
+    "HIS DAUGHTER'S WEDDING IS IN SIX WEEKS and he has promised to walk her down the aisle. He is quietly terrified the operation will be pushed back. He asks 'IS THIS GOING TO STOP MY OPERATION?' at about 1:30 — and AGAIN at 4:00 if you brush it off. If you never ask an open concerns question, he raises the wedding at about seven minutes"
+   ],
+   [
+    "The ECG you should request",
+    "FLATTENED OR INVERTED T WAVES · ST DEPRESSION · PROMINENT U WAVES that FUSE with the T, best seen in the mid-praecordial leads. T–U FUSION makes the QT look long and is the substrate for TORSADES — report it as 'apparent QT prolongation with T–U fusion'"
+   ],
+   [
+    "What to say about the ECG threshold",
+    "'Changes are usually seen once potassium falls below about 3.0, BUT THERE IS NO RELIABLE THRESHOLD — the ECG can be normal with a low level and abnormal with a modest one, SO I WOULD NOT USE IT TO EXCLUDE SIGNIFICANT HYPOKALAEMIA'"
+   ],
+   [
+    "The three safety items candidates omit",
+    "REPEAT THE SAMPLE before treating — an isolated unexplained low potassium in a well patient is repeated, not treated · ECG, because he is TEN DAYS FROM A GENERAL ANAESTHETIC · SERUM MAGNESIUM, because LOW MAGNESIUM DRIVES RENAL POTASSIUM WASTING AND MAKES REPLACEMENT FAIL"
+   ]
+  ],
+  "findingsLabel": "The results, the dose change he withholds, and the Version B pivot",
+  "must": [
+   "FAIL — 'It's your fluid tablet' and straight to the plan, with no differential spoken aloud.",
+   "FAIL — Version B: blaming the thiazide for K 2.5 with resistant hypertension, plan unchanged.",
+   "FAIL — Ignoring the operation question, or telling him to stop the antihypertensive himself.",
+   "FAIL — Reassuring before proposing a repeat sample; or missing digoxin in the variant.",
+   "ASK — Has the dose been changed recently, or has anything been added?",
+   "ASK — Any cramps, weakness, or passing more urine and getting up at night?"
+  ],
   "back": {
-   "dx": "Mild hypokalaemia (K 3.1) from thiazide-induced renal potassium wasting — the dose was doubled four weeks ago for creeping readings, which fits the timing exactly; bicarbonate 30 at the top of range is consistent. Normal renal function (say so — interpreting creatinine/eGFR is part of 'explain the results'). Four differential buckets, numbered, in plain English: (1) not enough in — restricted diet; (2) losing it through the bowel — vomiting, diarrhoea, laxatives (name tablets, powders, teas); (3) losing extra through the kidneys — a tablet like his, or 'a small gland above the kidney making too much of a hormone that dumps potassium' (primary aldosteronism: cramps, weakness, polyuria, resistant BP); (4) shift into cells — some asthma puffers, insulin, and 'a rare adrenaline-producing tumour' (phaeo triad: headache + sweating + palpitations, patients go pale, not flushed). Plan: repeat U&E to confirm, ECG today (arrhythmia is the consequence that matters 10 days from a GA), magnesium (thiazides waste Mg; low Mg makes K replacement ineffective), oral KCl supplement, review the antihypertensive for a potassium-sparing option, write to surgeon and anaesthetist, recheck in 3–7 days and again before theatre. The operation most likely proceeds — mild, asymptomatic; if it stays low a short delay is for anaesthetic safety. Never tell him to stop the antihypertensive himself. Hidden agenda: daughter's wedding in six weeks — ask an open concerns question early.",
+   "dx": [
+    "**Mild THIAZIDE-INDUCED HYPOKALAEMIA in an otherwise well man due for elective surgery.** Thiazides block Na/Cl reabsorption in the distal tubule, **more sodium reaches the collecting duct, and aldosterone-driven Na–K exchange wastes potassium** — producing a **hypochloraemic metabolic alkalosis.**",
+    "**THE DISCRIMINATING ISSUE: the diagnosis is written into the stem, so NO MARKS LIVE THERE.** Candidates read it, feel clever, say 'it's your fluid tablet' and stop — **and fail.** **Every remaining mark sits in (1) a STRUCTURED DIFFERENTIAL SPOKEN ALOUD in plain English and (2) the patient's real agenda — his operation.**",
+    "**THE FOUR BUCKETS, NUMBERED, IN PATIENT LANGUAGE: ONE — not taking enough in, if the diet is very restricted. TWO — losing it through the bowel: vomiting, diarrhoea or laxatives. THREE — losing extra through the kidneys, either from a tablet like yours or from a small gland above the kidney making too much of a hormone that dumps potassium. FOUR — potassium moving out of the blood into the cells, which some puffers, insulin and a rare adrenaline-producing tumour can do.** Then: **'nothing you've told me points to those — but they're the reasons I asked.'**",
+    "**Severity: MILD 3.0–3.4 · MODERATE 2.5–2.9 · SEVERE below 2.5, or symptomatic or ECG change AT ANY LEVEL.** **Normal range is laboratory-dependent — commonly 3.5–5.2; use the range printed on the report, not a memorised figure.**",
+    "**Management: repeat the sample · ECG · MAGNESIUM · oral potassium — slow-release KCl 600 mg = 8 mmol, or effervescent = 14 mmol per tablet.** VERIFY doses. **Replace magnesium CONCURRENTLY if low, or potassium will not rise.**",
+    "**FIX THE CAUSE, and in a hypertensive man this is elegant: reduce the thiazide or SWITCH CLASS — an ACE inhibitor or ARB, or add a POTASSIUM-SPARING agent (amiloride, or spironolactone if aldosteronism is suspected) — which treats the blood pressure AND raises potassium at once.** **Never tell him to stop the tablet himself.**",
+    "**Surgical timing: discuss with the anaesthetist. Hypokalaemia RAISES ARRHYTHMIA RISK, POTENTIATES NON-DEPOLARISING NEUROMUSCULAR BLOCKERS and CAN CAUSE ILEUS.** **Mild, corrected, asymptomatic hypokalaemia usually PROCEEDS; moderate to severe or symptomatic is a reason to DEFER an elective list.**",
+    "**VERSION B, scripted: 'that combination — a low potassium with a blood pressure that's hard to control — makes me think about a specific, TREATABLE condition: a small gland above the kidney making too much of a hormone called ALDOSTERONE, which pushes blood pressure UP and potassium DOWN. It's commoner than people used to think, and the treatment is different — a particular tablet, or sometimes surgery.'** **Correct K and magnesium first, adjust interfering antihypertensives, then the ALDOSTERONE–RENIN RATIO.** VERIFY washout periods.",
+    "**CORRECTION — primary aldosteronism causes RENAL POTASSIUM WASTING, not a shift into cells.** **Only the beta-2 adrenergic causes, including phaeochromocytoma, work by shift.**",
+    "**CORRECTION — 'potassium down, aldosterone up' is a mnemonic, not physiology.** **Potassium is itself a STIMULUS for aldosterone release, so hypokalaemia SUPPRESSES aldosterone.** **The true rule is ONE-WAY: excess aldosterone lowers potassium. Do not offer the reverse to an examiner.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, DOB · 'I've got your results — shall I take you through them?' · ★ 'The good news first: your kidneys are working normally.' Sodium 135 normal, lower end · potassium 3.1, a little below normal · 'the salt that helps your muscles and your heart work properly — worth sorting before an anaesthetic; not an emergency'"
+     "**WIPE, confirm identity, and straight to the task: 'I can see you're booked for your hernia repair in about ten days and we did some blood tests to get you ready — I have those results here and I'd like to go through them with you.'**"
     ],
     [
-     "1:30",
-     "'Is that going to stop my operation?' → acknowledge, park explicitly, promise to return · ★ 'Was there anything else you were hoping to cover today?' (wedding) · permission for questions"
+     "0:30",
+     "**Explain the results in NINETY SECONDS AND NO MORE. Good news first — THE KIDNEYS ARE NORMAL. Sodium 135, normal at the low end. POTASSIUM 3.1, a little below normal. 'Potassium is the salt that helps your MUSCLES AND YOUR HEART work properly, so it's worth sorting out — particularly before an anaesthetic. IT'S NOT AN EMERGENCY.'** Then **permission to ask questions.** **Do NOT teach renal physiology — the explanation mark is already in the bag.**"
     ],
     [
      "2:00",
-     "Surgical context: when diagnosed, painful, ever stuck/hard/tender, bowel change (first GI screen, excludes obstruction) · ★ Hypertension: when, which tablet, dose, ★ 'has the dose been changed recently, or anything added?' → doubled 4 weeks ago · adherence, follow-up, control · chest pain, SOB/PND, vision, focal weakness"
+     "**Signpost and ask the agenda: 'was there anything in particular you were hoping to sort out today?'** This is where **'will my op be cancelled?'** comes out. **If it comes early, acknowledge and PARK it explicitly — 'that's exactly what I want to sort out, and I'll answer it properly once I've asked you a few things' — then COME BACK TO IT.**"
+    ],
+    [
+     "2:15",
+     "**Block 1, surgical context, 30 seconds: when was the hernia diagnosed · is it painful · HAS IT EVER BECOME STUCK OR GONE HARD AND TENDER · ANY CHANGE IN YOUR BOWEL MOTIONS?** The bowel question **doubles as your first GI-loss screen** and excludes obstruction before an elective list."
+    ],
+    [
+     "2:45",
+     "**Block 2, the hypertension — highest yield: when diagnosed · WHAT TABLET AND WHAT DOSE · HAS THE DOSE BEEN CHANGED RECENTLY, OR ANYTHING ADDED · do you take it every day · who follows it up · HAVE THE READINGS BEEN UNDER CONTROL?** Then **complications: chest pain · breathlessness or waking at night breathless · blurring of vision · weakness or numbness down one side.**"
     ],
     [
      "3:30",
-     "Intake: diet change, typical day, fruit/veg, weight, alcohol · GI loss: vomiting, diarrhoea/looser motions, ★ 'laxatives — tablets, powders or teas?', bowel surgery/stoma"
+     "**Block 3, reduced intake: any recent changes to your diet · TALK ME THROUGH A TYPICAL DAY · any fruit and vegetables · have you lost weight without trying · how much alcohol?**"
     ],
     [
-     "4:15",
-     "Renal loss/mineralocorticoid: cramps, weakness (stairs, chair, lifting), polyuria/nocturia, thirst, paraesthesia, central weight gain/bruising/striae, liquorice · Phaeo: ★ 'episodes of bad headache, breaking out in a sweat and heart racing, all together, sudden then settling? go pale?'"
+     "3:50",
+     "**Block 4, GI loss: any VOMITING and for how long · any DIARRHOEA or looser motions · DO YOU USE ANY LAXATIVES — TABLETS, POWDERS OR TEAS · any stoma, tube feeds or bowel surgery?** **Name laxatives explicitly — patients do not count senna, Coloxyl or 'regularity tea' as medication.**"
     ],
     [
-     "5:00",
-     "Other drugs by category: puffers (how often), steroids (tablets/creams/injections), insulin/diabetes tablets, OTC/herbal/vitamins, anyone else's fluid tablets, recent antibiotics · smoking 5/day, 6 drinks/weekend, allergies, PMHx (diabetes, thyroid, kidney), FHx (BP young, endocrine)"
+     "4:20",
+     "**Block 5, renal loss and mineralocorticoid excess: any MUSCLE CRAMPS · any WEAKNESS, trouble with stairs or lifting at work · ARE YOU PASSING MORE URINE, OR GETTING UP AT NIGHT · any excessive thirst or pins and needles · any weight gain around the middle, easy bruising, purple stretch marks · DO YOU EAT LIQUORICE REGULARLY?**"
+    ],
+    [
+     "4:50",
+     "**Block 6, phaeochromocytoma: 'do you get episodes of HEADACHE, HEAVY SWEATING and YOUR HEART RACING — ALL TOGETHER, coming on suddenly and settling? Do you go PALE or feel anxious during them?'** **The triad is headache, sweating and palpitations — NOT flushing. Phaeochromocytoma patients typically go PALE; flushing points to carcinoid or menopause.**"
+    ],
+    [
+     "5:10",
+     "**Block 7, the rest of the drug history BY CATEGORY: any other prescription medicines · ANY PUFFERS, how many times a day · ANY STEROID tablets, creams or injections · INSULIN or diabetes tablets · any over-the-counter, HERBAL, vitamin or protein products · HAVE YOU EVER TAKEN ANYONE ELSE'S FLUID TABLETS · any recent antibiotics or antifungals?**"
+    ],
+    [
+     "5:30",
+     "**SADMA, past history — diabetes, thyroid, kidney disease, eating disorder — family history of young hypertension, sudden death or endocrine tumours, and impact on work and the surgery.** **If you have not started Task 3 by 5:45, STOP the history mid-block and move on — the differential is worth more than the last two questions.**"
     ],
     [
      "5:45",
-     "★ Diagnosis: 'hypokalaemia — potassium lower than normal; most likely your blood pressure tablet — it makes the kidneys pass out salt and water and potassium goes with it; the dose doubling four weeks ago fits the timing exactly'"
+     "**Name it plainly and give the mechanism in one sentence, ANCHORING THE TIMING: 'the dose was doubled four weeks ago, which fits the timing exactly.'**"
     ],
     [
      "6:15",
-     "★ 'But I did think about the other reasons, and that's why I asked all those questions': ONE not enough in · TWO bowel — vomiting, diarrhoea, laxatives · THREE kidneys — a tablet like yours, or a gland above the kidney making too much of a hormone that dumps potassium · FOUR shift into cells — puffers, insulin, a rare adrenaline-producing tumour · 'nothing points to those'"
+     "**THE FOUR BUCKETS, NUMBERED, OUT LOUD — the pass point.** Numbered so the examiner can tick four things, in patient language, **and explicitly saying why you asked the questions**, which converts your history into visible reasoning."
     ],
     [
      "7:00",
-     "Plan: repeat test, ECG today ('potassium affects the heart's rhythm'), magnesium ('if low, potassium won't come up'), potassium supplement, review the BP tablet · the operation: most likely proceeds, recheck before theatre, letter to surgeon and anaesthetist; if still low a short delay for safety · safety-net: marked weakness, palpitations, fainting, vomiting/diarrhoea → come back · summarise, 'what questions do you have?'"
+     "**The plan: REPEAT the blood test · a HEART TRACING TODAY · check MAGNESIUM · start a potassium supplement · REVIEW THE BLOOD PRESSURE TABLET.** Then **answer the operation question with a concrete plan and commit to contacting the surgeon and anaesthetic team.**"
+    ],
+    [
+     "7:30",
+     "**Safety-net: marked muscle weakness, palpitations, fainting, or vomiting or diarrhoea that will not settle → come back immediately.** Then **recheck in 3–7 days and again before theatre**, summarise, and invite questions."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'I've got your results here — shall I take you through them?' / ★ 'The good news first: your kidneys are working normally.'",
-    "'There's a salt called potassium, and yours is a little below the normal range. Potassium is the salt that helps your muscles and your heart work properly. It's not an emergency, and it's usually straightforward to fix.'",
-    "'Is that going to stop my operation?' → 'That's exactly what I want to sort out for you, and I'll give you a proper answer — let me ask you some questions first.' / ★ 'Was there anything in particular you were hoping to sort out today?'",
-    "★ 'Has the dose been changed recently, or has anything been added?'",
-    "'Do you use any laxatives — tablets, powders or teas?' / 'Are you passing more urine than usual, or getting up at night to go?' / 'Any puffers, steroid tablets, insulin, anything herbal, or anyone else's fluid tablets?'",
-    "★ 'Do you get episodes of a bad headache, heavy sweating and your heart racing, all together — coming on suddenly and then settling? Do you go pale with them?' (not 'flushing')",
-    "★ 'The most likely cause is your blood pressure tablet — it makes the kidneys pass out potassium in the urine, and the dose was doubled four weeks ago, which fits the timing exactly.'",
-    "★ 'One, not enough in. Two, losing it through the bowel. Three, losing extra through the kidneys. Four, potassium shifting into the cells.'",
-    "'I'd like to repeat the test, do a heart tracing today, and check your magnesium.' / 'I'll write to your surgeon and speak to the anaesthetic team so everyone has the same information.'",
-    "'Should I just stop the blood pressure tablet?' → 'No — please keep taking it for now. I'll review it and there are options that control your pressure without stripping potassium; we'll change it properly, not suddenly.' / 'Come back straight away if you get marked weakness, palpitations or fainting.'"
-   ],
    "pefe": [
-    "Role-player: Mark, 50, storeman at a rural hardware/grain depot on the Yorke Peninsula; hernia 8 months, reducible, never stuck; thiazide 6 y, dose doubled 4 weeks ago, adherent; no other meds/puffers/steroids/laxatives/herbals/liquorice; smokes 5/day cutting down, 6 drinks/weekend; meat and potatoes, banana most days; father HTN, mother stroke 70s. Pushes 'is this going to stop my operation?' at 1:30 and 4:00; tense at the word heart; hidden agenda — daughter's wedding in six weeks, walking her down the aisle (revealed if asked an open concerns question, else at ~7 min); 'should I just stop the tablet?' if you finish early",
-    "Examiner challenges: 'Why an ECG? he's asymptomatic' → 'the consequence I care about is arrhythmia, ten days from a GA; changes appear without symptoms; finding T–U fusion or ectopy changes my urgency and my discussion with the anaesthetist' · 'Why magnesium?' → 'hypomagnesaemia causes renal K wasting and makes replacement ineffective; thiazides waste both' · 'Normal K range?' → 'laboratory-dependent, commonly ~3.5–5.2; I'd use the report's range; 3.1 is mild on any' · ★ 'Does hypokalaemia raise aldosterone?' → 'No — wrong way round: potassium stimulates aldosterone, so low K suppresses it; excess aldosterone causes renal K wasting, not a shift into cells' CORRECTION",
-    "Variant B — K 2.5, BP 168/98 on two agents, calf cramps, heavy legs on stairs, nocturia ×3–4: primary aldosteronism — 'a small gland above the kidney making too much of a hormone called aldosterone, pushes BP up and potassium down; treatment is different — a particular tablet, sometimes surgery; there's a blood test (ARR — correct K first, adjust interfering antihypertensives VERIFY)'; ECG today; ★ talk to the surgical team about postponing — automatic fail if the plan is unchanged",
-    "Variant C — 34F, K 2.8, 'a herbal regularity tea most nights, that's not really a medicine': senna = laxative = real cause; how often, how long; 'some people use them to manage their weight or how they feel about their body — is any of that part of it? no judgement, I ask everyone'; no moralising; National Alliance for Eating Disorders helpline (not NEDA) VERIFY current Australian service",
-    "Variant D — 68 on digoxin, K 3.2, off food, nauseated, 'the telly looks yellowish': ★ digoxin toxicity potentiated by hypokalaemia — ECG and digoxin level now, repeat UEC/K/Mg, seen today not next week; automatic fail if digoxin is on the list and you neither identify it nor escalate",
-    "SA: letter to surgeon and anaesthetist (regional hospital list); pre-anaesthetic clinic; TIS 131 450 · MedSTAR 1300 13 12 33 (not needed here)"
+    "**No physical examination in this station — the examiner gives findings only if asked.**",
+    "**Do now: REPEAT U&E on a fresh, promptly processed sample — confirm before treating · ECG · SERUM MAGNESIUM · bicarbonate or venous gas, glucose, calcium, phosphate · CHECK THE LIST FOR DIGOXIN and other QT-prolonging drugs.**",
+    "**Do next: SPOT URINE POTASSIUM:CREATININE RATIO or 24 h urinary K, which separates RENAL loss from GI loss or poor intake · ALDOSTERONE–RENIN RATIO if hypertensive with renal wasting · TFTs if thyrotoxic features · METANEPHRINES if the episodic triad is present · repeat potassium before the operation, copied to the pre-admission clinic.**",
+    "**Before any of that, exclude a SPURIOUS result — a delayed or haemolysed sample, a very high white cell count, or blood taken shortly after insulin.**",
+    "**Escalate to IV replacement with cardiac monitoring if K is below 2.5, or at ANY level with weakness, palpitations, arrhythmia or ECG change, or if he is on DIGOXIN. Peripheral concentration and rate are capped; higher rates need central access and a monitored bed.** VERIFY local protocol.",
+    "**Do not miss: HYPOMAGNESAEMIA · primary aldosteronism in hypertension with spontaneous hypokalaemia · ECG changes and arrhythmia risk under GA · DIGOXIN co-prescription, where hypokalaemia precipitates toxicity · thiazide-induced hyponatraemia alongside the low potassium.**",
+    "**Avoid: rapid or concentrated IV potassium peripherally · oral potassium alone when magnesium is low · anchoring on the thiazide without voicing a differential · blanket reassurance about the surgery before the recheck.**"
    ],
-   "fails": [
-    "Giving the diagnosis and stopping — no four differentials said aloud in patient language ★",
-    "No concrete plan for the operation ★",
-    "Telling him to stop his blood pressure tablet himself ★",
-    "Reassuring him before proposing a repeat test; 'it's definitely just the fluid tablet' ★",
-    "Explaining results for four minutes; skipping 'your kidneys are normal'",
-    "Asking 'what medications?' and stopping — never asking about the dose change; accepting 'no other medications' without naming laxatives, puffers, steroids, insulin",
-    "Asking about 'flushing' for phaeo; 'hyperaldosteronism' or 'transcellular shift' to the patient; 'the operation will be fine, don't worry'"
-   ],
-   "numbers": [
-    "K normal 3.5–5.2 (3.5–5.0 safe answer) · mild 3.0–3.4 · moderate 2.5–2.9 · severe <2.5 · here K 3.1, Na 135, HCO3 30, eGFR >90, normal AG",
-    "ECG once K <~3.0: flat/inverted T → ST depression → prominent U → T–U fusion → ectopy → torsades",
-    "Mg normal ~0.7–1.1 · oral KCl slow-release 600 mg = 8 mmol; effervescent 14 mmol/tab VERIFY · IV KCl needs cardiac monitoring, rate/concentration per local protocol VERIFY",
-    "Recheck U&E + Mg 3–7 days, again before theatre · timing: results 2 · history 4 · dx + DDx 2",
-    "Phaeo triad: headache + sweating + palpitations, pallor not flushing · ARR after correcting K VERIFY"
+   "ddx": [
+    [
+     "**Thiazide (or loop) diuretic** — the answer",
+     "**In the stem; ALKALOSIS; low-normal sodium; RECENT DOSE INCREASE**",
+     "Dose, duration, **dose change**, adherence, **anyone else's tablets**",
+     "Withhold or change agent, replace K, recheck"
+    ],
+    [
+     "Beta-2 agonists · insulin · theophylline · corticosteroids · high-dose penicillins · amphotericin · **liquorice**",
+     "**Frequent salbutamol; steroid course; liquorice habit**",
+     "**Puffs per day**, tremor, steroid course, herbal products",
+     "Medication review; stop or reduce the offending agent"
+    ],
+    [
+     "Vomiting · diarrhoea · **laxative misuse** · NG suction · fistula · villous adenoma · VIPoma",
+     "**Vomiting → ALKALOSIS. Diarrhoea → NORMAL-ANION-GAP ACIDOSIS**",
+     "Duration, frequency, **laxatives BY NAME**, blood or mucus, weight loss",
+     "Stool history; **urine chloride — LOW in vomiting**"
+    ],
+    [
+     "**Primary aldosteronism (Conn)** · renovascular disease · Cushing syndrome",
+     "**HYPERTENSION + SPONTANEOUS HYPOKALAEMIA + ALKALOSIS; resistant BP; cramps; NOCTURIA**",
+     "BP control on 2 or more agents, cramps, weakness, polyuria, Cushingoid features",
+     "**ALDOSTERONE–RENIN RATIO after correcting K and adjusting interfering drugs** — do not miss"
+    ],
+    [
+     "**Hypomagnesaemia**",
+     "**REFRACTORY low K; alcohol; PPI or diuretic use**",
+     "Alcohol, PPI, diuretics",
+     "**SERUM MAGNESIUM — potassium will not correct until magnesium does** — do not miss"
+    ],
+    [
+     "Renal tubular acidosis (types 1 and 2) · Bartter · Gitelman · post-obstructive diuresis",
+     "**Normal-AG acidosis (RTA); YOUNG AND NORMOTENSIVE (Bartter/Gitelman)**",
+     "Family history; growth and BP history",
+     "Venous gas and bicarbonate; **urine pH**; spot urine K:creatinine ratio"
+    ],
+    [
+     "**Phaeochromocytoma**",
+     "**EPISODIC headache, SWEATING and PALPITATIONS together — and they go PALE, not flushed**",
+     "The episodic triad; wildly variable BP readings",
+     "**Plasma or 24 h urinary metanephrines** — do not miss"
+    ],
+    [
+     "**Thyrotoxicosis and thyrotoxic periodic paralysis** · familial hypokalaemic periodic paralysis",
+     "**Attacks after a CARBOHYDRATE MEAL or EXERCISE**; heat intolerance, tremor, weight loss",
+     "The episodic weakness, tremor, family history",
+     "**TFTs. Recognise it as a SHIFT, not a deficit** — do not miss"
+    ],
+    [
+     "Refeeding syndrome · alkalosis",
+     "**Recent starvation then feeding**",
+     "Diet history, recent hospital or restrictive intake",
+     "Monitor K on refeeding"
+    ],
+    [
+     "Malnutrition — alcohol use disorder, restrictive or 'detox' diets, anorexia nervosa",
+     "Poor diet, weight loss, social isolation, alcohol",
+     "Typical day's food, weight, alcohol, mood, living situation",
+     "Dietary and social assessment; dietitian; nutritional bloods"
+    ]
    ]
   },
   "source": "Hypokalaemia_2_Case_Tasks_Script_Notability.pdf (Mark Ellis, 50, K 3.1, hernia repair in 10 days)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hypokalaemia_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Giving the diagnosis and stopping — 'explain your differentials' is an explicit task; four causes out loud in plain English: not enough in, losing it through the bowel, losing extra through the kidneys (the tablet, or a gland above the kidney), potassium shifting into the cells (puffers, insulin, a rare adrenaline tumour) — the pass point (★)",
-   "FAIL — Telling him to stop the blood pressure tablet on his own, or 'it's definitely just the fluid tablet' (★)",
-   "FAIL — 'What medications are you on?' and stopping there — 'has the dose been changed recently, or anything added?' finds the doubling four weeks ago, and that is the answer to 'why now?'",
-   "FAIL — Accepting 'no other medicines' — name them: laxatives (tablets, powders, teas), puffers, steroid tablets or creams, insulin, herbal products, anyone else's fluid tablets",
-   "FAIL — Reassuring him before proposing a repeat test, or no concrete plan for the operation — repeat sample, ECG today, magnesium, potassium supplement, review the antihypertensive, recheck before theatre and write to the surgeon and anaesthetist; 'most likely it goes ahead' (★)",
-   "DO — Results in three sentences with 'your kidneys are working normally' said, an open concerns question early (the wedding), the phaeochromocytoma triad asked correctly (headache, sweating, palpitations — pale, not flushing), and the surgical context including bowel change"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hypokalaemia_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-72",
