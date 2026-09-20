@@ -17703,9 +17703,8 @@
  {
   "id": "MED-62",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 360,
-  "setting": "Regional general practice, Wallaroo, South Australia. You are the GP. Version A online: 6-minute history then findings on screen. Version B face to face: 4-minute history then examination from the examiner.",
   "stem": [
    "Jane Ellery, a 45-year-old woman, presents to your general practice complaining of tiredness. There is nothing else in the stem."
   ],
@@ -17714,114 +17713,211 @@
    "You will then be given the physical examination findings",
    "Explain your diagnosis AND your differentials to the patient — two marked items"
   ],
-  "time": "8 minutes. Open, acknowledge, contract · define 'tired' and explore (ask even though she volunteered some) · H, then E — cold intolerance is where it turns → switch from screening to PROBING (five key-point questions) · keep sweeping M, I, A, D, C, O, P anyway · menstrual questions exclude the closest mimic · thyroid examination requested by name, pulse, reflex relaxation phase · name it, reason it from her own answers and findings · reason three differentials incl. menopause · TSH, plan, safety net, certificate.",
+  "findings": [
+   [
+    "General appearance",
+    "Comfortable. DRY, COARSE SKIN. DRESSED WARMLY FOR THE WEATHER. No pallor, no jaundice, no rash"
+   ],
+   [
+    "Vital signs",
+    "Temperature normal. PULSE 60, REGULAR — the bradycardia you expect. BP 110/70"
+   ],
+   [
+    "Thyroid — ask for it explicitly, and with consent",
+    "DIFFUSELY ENLARGED. NO discrete nodules. MOVES ON SWALLOWING, which tells you it is thyroid rather than a node or cyst. PERCUSSION OVER THE MANUBRIUM IS RESONANT — no retrosternal extension. Non-tender. Say 'I would ask her to expose the neck and remove any scarf, with her permission, and I would offer a chaperone' — that request is itself a mark"
+   ],
+   [
+    "Lymph nodes, CVS, respiratory, abdomen",
+    "No lymphadenopathy. Heart sounds normal, no murmur. Air entry equal. No hepatosplenomegaly"
+   ],
+   [
+    "REFLEXES — and the correction",
+    "PRESENT WITH A DELAYED RELAXATION PHASE — the WOLTMAN SIGN, seen best at the ankle. The contraction is normal or brisk; it is the RELAXATION that is slow. CORRECTION: HYPOTHYROIDISM DOES NOT CAUSE HYPERREFLEXIA — brisk reflexes point the other way, to thyrotoxicosis"
+   ],
+   [
+    "Proximal power — the second famous sign",
+    "NORMAL here. Ask: CAN SHE RISE FROM A CHAIR WITHOUT USING HER ARMS? When the examiner asks for 'two more signs', the answers are DELAYED RELAXATION and PROXIMAL MYOPATHY"
+   ],
+   [
+    "Pemberton's sign — and what it actually means",
+    "NEGATIVE. CORRECTION: IT IS NOT A HYPOTHYROID SIGN. It is a sign of RETROSTERNAL EXTENSION of a goitre causing thoracic inlet obstruction — arms elevated beside the head for about a minute, face becomes plethoric and congested. Worth requesting BECAUSE SHE HAS A GOITRE, not because she is hypothyroid"
+   ],
+   [
+    "Office tests — and the question to ask",
+    "Blood sugar normal, urine dipstick normal. VERIFY: ASK WHETHER THE SUGAR IS RANDOM OR FASTING. 6.5 random is unremarkable; 6.5 FASTING is above range and sits in the impaired fasting glucose band — confirm with an HbA1c"
+   ],
+   [
+    "The screening question that opens it",
+    "'DO YOU HAVE ANY WEATHER PREFERENCE — ARE YOU INTOLERANT OF COLD OR OF HEAT?' → 'Yes, I'm cold intolerant. I'm always cold these days.' ON ITS OWN THIS DOES NOT EARN THE DIAGNOSIS MARK"
+   ],
+   [
+    "The five key-point probes — ask the moment 'cold' comes back",
+    "1 HAS YOUR SKIN BEEN DRY? → extremely dry for months · 2 HAVE YOU BEEN CONSTIPATED? → always · 3 ANY WEIGHT GAIN? → yes · 4 ANY HAIR LOSS — SCALP, AND HAS THE OUTER PART OF YOUR EYEBROWS THINNED? → losing a lot, and the eyebrows have thinned at the edges · 5 ANY PUFFINESS OF EYELIDS, FACE OR LEGS? → puffy in the mornings. Then: HOARSE VOICE · NECK SWELLING · DIFFICULTY SWALLOWING — all negative"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — and the five probes that turn a guess into a diagnosis",
+  "must": [
+   "FAIL — Diagnosing off the single weather-preference question with no probing.",
+   "FAIL — A perfect nine-step examination request in a thyroid case that never asks for the thyroid.",
+   "FAIL — Abandoning the malignancy and infection sweep once the diagnosis is obvious.",
+   "FAIL — Omitting the differentials task, or describing the reflexes as brisk.",
+   "ASK — Do you have any weather preference — intolerant of cold or of heat?",
+   "ASK — When was your last period? Are they regular? Any hot flushes?"
+  ],
   "back": {
-   "dx": "Primary hypothyroidism, probably Hashimoto thyroiditis: months of progressive lack of energy affecting work; cold intolerance, dry skin, constipation, weight gain, hair loss with outer-eyebrow thinning, morning periorbital puffiness; examination — dressed warmly, dry coarse skin, pulse 60, diffuse non-nodular goitre moving on swallowing, no retrosternal extension, no lymphadenopathy, delayed relaxation phase of the ankle reflexes, normal power, office tests normal. Reasons given from her own answers and findings. Differentials reasoned: menopause (regular periods, no hot flushes — the single closest mimic at 45), anaemia (no exertional dyspnoea/palpitations, periods not heavy — still check), depression (mood reasonable, still enjoys things); malignancy — lymphoma/leukaemia (no weight loss, lumps, night sweats); infection — EBV, hepatitis, HIV; then diabetes, coeliac, haemochromatosis, autoimmune (SLE, RA), medications, OSA, heart failure. Plan: TSH (free T4 if abnormal, TPO antibodies for cause) plus FBE, ferritin, HbA1c, coeliac serology, UEC, LFT; levothyroxine once confirmed; recheck TSH 6–8 weeks; certificate. Automatic fails: diagnosing off the single weather-preference answer without probing; never requesting a thyroid examination; abandoning the malignancy/infection screen; omitting the differentials; describing the reflexes as brisk.",
+   "dx": [
+    "**Primary hypothyroidism, most commonly autoimmune (Hashimoto) thyroiditis** — insufficient thyroid hormone production causing a generalised slowing of metabolic processes.",
+    "**READ THE TASK WORDING TWICE: 'explain your diagnosis AND your differentials' is TWO MARKED ITEMS, not one.** Candidates routinely explain the diagnosis beautifully, stop, and score one out of two.",
+    "**THE DISCRIMINATING ISSUE: a screening question is not a probing question.** Two candidates both ask weather preference, both hear 'I feel the cold', both say hypothyroidism. **Only the one who then asks the five probes and quotes all five back passes.** **A diagnosis made off one screening question is a guess that happened to be right.**",
+    "**The shape of the explanation: NAME IT → ONE LINE of lay explanation → THE REASONS.** **The explanation is worth least; the reasons are worth most.** **'The gland in the front of your neck is underactive and is not making enough of its hormone, and that hormone sets the pace of everything in your body — which is why everything feels like an effort.'** **No butterfly gland, no thyroxine, no feedback loops.**",
+    "**Then quote her own answers back: 'you told me you feel the cold, your skin has become dry, you are constipated, you have gained weight and you are losing hair. And on examination your skin is dry, your pulse is slow, your thyroid is enlarged, and your reflexes are slow to relax.'**",
+    "**FINDING IT IS NOT PASSING IT.** A candidate who names hypothyroidism at three minutes and stops **has not excluded a cancer, an infection or an anaemia in a woman who could have all three alongside a goitre.** Keep sweeping M, I, A, D, C, O and P at speed.",
+    "**MENOPAUSE is the closest mimic in a 45-year-old woman, and THREE QUESTIONS exclude it: last period, regularity, hot flushes.** Quote the answers back: **'less likely, because your periods are regular and you have no hot flushes.'** **FSH is unreliable in perimenopause and is not routinely needed.**",
+    "**Tests: TSH FIRST · free T4 if TSH is abnormal · TPO ANTIBODIES to establish an autoimmune cause.** **High TSH with low free T4 = primary hypothyroidism; high TSH with normal free T4 = SUBCLINICAL.** Add **FBE, ferritin, HbA1c, U&E, LFT and coeliac serology.** **Do not start treatment on symptoms alone.**",
+    "**LEVOTHYROXINE: full replacement in a healthy adult is about 1.6 micrograms per kilogram per day; START LOWER — 25–50 microg daily — in older patients or anyone with ischaemic heart disease, and titrate up.** **Empty stomach, separated from CALCIUM, IRON and ANTACIDS by about four hours.** **RECHECK TSH AT 6–8 WEEKS, not sooner, because TSH lags.** VERIFY.",
+    "**Treat subclinical disease if TSH is substantially raised, if she is symptomatic, if TPO antibodies are positive, or IN PREGNANCY — where requirements rise, targets are tighter and the dose is usually increased early.** **Refer for a nodule, compressive symptoms, suspected retrosternal goitre, or failure to respond.** **She is missing work under pressure from her employer — OFFERING A MEDICAL CERTIFICATE is a small, human, marked act.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open question; ★ acknowledge ('I understand that can be concerning') and contract ('questions, then examine, then a plan together')"
+     "**Introduce, open question, then ACKNOWLEDGE AND CONTRACT: 'I am sorry to hear that, Jane. I understand that can be concerning. Let me ask you a number of questions, then examine you, and we will work out the cause and make a plan together.'** Both are marked, both take five seconds."
     ],
     [
-     "0:30",
-     "Define: lack of energy / sleepy / feverish · duration · constant · worse · modifiers · impact (sick leave, boss unhappy — 'we'll come back to the work side')"
+     "0:25",
+     "**Explore: CAN YOU DESCRIBE WHAT YOU MEAN BY TIRED — LACK OF ENERGY, SLEEPY, OR FEVERISH · how long · constant or coming and going · getting worse · anything better or worse · HOW IS THIS AFFECTING YOUR LIFE?** → missing work, sick leave, boss unhappy. **Reflect it back — it is a marked item and it matters for the certificate.**"
     ],
     [
-     "1:15",
-     "H: tanning, jaundice, dark urine, pale stools · E: polyuria, thirst, ★ 'any weather preference — intolerant of cold or heat?' → 'always cold' → ★ SWITCH TO PROBING: dry skin · constipation · weight gain · hair loss incl. outer third of eyebrows · puffiness of eyelids/face/legs · hoarse voice · neck swelling or dysphagia"
+     "1:10",
+     "**H — liver and iron: any tanning of the skin · yellowing of the eyes or skin · dark urine or pale stools?**"
     ],
     [
-     "2:45",
-     "★ Keep sweeping: M (weight loss, appetite, lumps, night sweats, cancer history) · I (fever, sore throat, sexual history/safe sex, travel) · A (exertional dyspnoea/palpitations, stiffness, headache, joints, rash) · D (medicines, mood, anhedonia, stress)"
+     "1:25",
+     "**E — endocrine, and this is where it turns: passing more urine · more thirsty · DO YOU HAVE ANY WEATHER PREFERENCE, ARE YOU INTOLERANT OF COLD OR OF HEAT?**"
     ],
     [
-     "4:00",
-     "C (greasy stools, blood, chest pain, pillows, ankles, cough, smoking) · O (snoring, occupation) · ★ P: LMP, regular, heavy, hot flushes · alcohol, allergies, PMH, FHx · 'anything you were worried this might be?'"
+     "1:40",
+     "**SWITCH GEAR IMMEDIATELY. The five key-point questions: HAS YOUR SKIN BEEN DRY · HAVE YOU BEEN CONSTIPATED · ANY WEIGHT GAIN · ANY HAIR LOSS, AND HAVE THE OUTER PART OF YOUR EYEBROWS THINNED · ANY PUFFINESS OF EYELIDS, FACE OR LEGS?** Then, if time: **hoarse voice · proximal weakness getting out of a chair.** And **never omit: ANY SWELLING IN YOUR NECK · ANY DIFFICULTY SWALLOWING?**"
     ],
     [
-     "5:00",
-     "Examination: general — dressed for the weather? dry skin? pallor/jaundice/rash · temperature, ★ pulse rate, BP · ★ thyroid examination with consent to expose the neck, chaperone: inspection (swelling, moves on swallowing), palpation (diffuse vs nodular, size, consistency, tenderness), percussion over the manubrium · lymph nodes · CVS · respiratory · abdomen · ★ relaxation phase of the ankle reflexes · proximal power (rise from a chair) · Pemberton's sign · office tests, ★ 'random or fasting glucose?'"
+     "2:30",
+     "**M — malignancy, swept anyway: lost weight · appetite · lumps or bumps · night sweats · any cancer in you or the family?**"
     ],
     [
-     "6:15",
-     "★ Name it in one plain line ('the gland in the front of your neck is underactive, not making enough of its hormone — that hormone sets the pace for everything, which is why everything feels like an effort'); ★ reasons from her answers (cold, dry skin, constipation, weight gain, hair loss) and findings (dry skin, slow pulse, enlarged gland, slow-relaxing reflexes)"
+     "2:50",
+     "**I — infection, swept anyway: fevers or chills · sore throat or flu-like illness · sexually active, safe sex · any travel?**"
     ],
     [
-     "7:00",
-     "★ Differentials: menopause, anaemia, depression reasoned; malignancy and infection reasoned; the rest listed · plan: TSH today ('measures how hard your body is pushing the gland') + anaemia, diabetes, coeliac, liver tests; levothyroxine once confirmed, empty stomach, recheck 6–8 weeks; certificate; safety net (neck swelling, dysphagia, chest pain); questions; summary on request"
+     "3:10",
+     "**A — anaemia and autoimmune: short of breath or heart racing on exertion · stiffness in the shoulders or hips · headaches, joint pain, rashes. D — drugs and mood: any medicines · how has your mood been, still enjoying things · any stress at home or work?**"
+    ],
+    [
+     "3:35",
+     "**C — coeliac and cardiopulmonary: greasy stools · blood in the stool · chest pain · pillows · ankle swelling · cough · smoking. O — sleep and occupation: snoring or gasping · what is your occupation?**"
+    ],
+    [
+     "3:55",
+     "**P — and the cheapest exclusion in the station: WHEN WAS YOUR LAST PERIOD · ARE THEY REGULAR · ARE THEY HEAVY · ANY HOT FLUSHES?** Then **SADMA and 'was there anything you were worried this might be?'**"
+    ],
+    [
+     "4:20",
+     "**The examination request. General appearance — IS SHE DRESSED APPROPRIATELY FOR THE WEATHER, is the skin dry, any rash, pallor or jaundice · vital signs, PARTICULARLY THE PULSE RATE.**"
+    ],
+    [
+     "4:40",
+     "**'I WOULD LIKE TO PERFORM A THYROID EXAMINATION'** — with consent to expose the neck and a chaperone offered. **Inspection for swelling and movement on swallowing · palpation for DIFFUSE versus NODULAR, size, consistency, tenderness · PERCUSSION OVER THE MANUBRIUM for retrosternal extension.**"
+    ],
+    [
+     "5:10",
+     "**Continue the spine: full lymph nodes · cardiovascular · respiratory · abdomen for hepatosplenomegaly.** Then **the two specific things: THE RELAXATION PHASE OF THE ANKLE REFLEXES, and PROXIMAL MUSCLE POWER — can she rise from a chair without using her arms?** Plus **PEMBERTON'S SIGN given the goitre**, and **office tests — IS THE SUGAR RANDOM OR FASTING?**"
+    ],
+    [
+     "6:00",
+     "**Name it, one line of lay explanation, then THE REASONS from her own answers and your findings.**"
+    ],
+    [
+     "6:40",
+     "**The differentials — REASON THE TOP THREE against her own answers: MENOPAUSE, less likely because periods are regular and there are no hot flushes · ANAEMIA, less likely with no exertional symptoms and light periods, but still check · DEPRESSION, less likely with preserved mood and enjoyment.** Then **cancers and infections, kept on the list because you never want to miss one**, then a fast list: diabetes, coeliac, haemochromatosis, lupus and rheumatoid, medications, sleep apnoea, heart failure."
+    ],
+    [
+     "7:30",
+     "**The plan: TSH today with free T4 and TPO antibodies, plus FBE, ferritin, HbA1c, coeliac serology, U&E and LFT · levothyroxine once confirmed, once daily on an empty stomach · RECHECK TSH AT 6–8 WEEKS.** **Offer the medical certificate.** **Safety-net: neck swelling, difficulty swallowing, chest pain.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'I understand that can be concerning. Let me ask you a number of questions, then examine you, and we will make a plan together.' / 'Is it a lack of energy, feeling sleepy, or feeling feverish?'",
-    "★ 'Do you have any weather preference — are you intolerant of cold or of heat?' → 'Thank you, that is helpful. Let me ask a few more about that.'",
-    "★ 'Has your skin been dry?' / ★ 'Have you been constipated?' / ★ 'Have you had any weight gain?' / ★ 'Any hair loss — and have you noticed the outer part of your eyebrows thinning?' / ★ 'Any puffiness of your eyelids, face or legs?' / 'Has your voice become hoarse? Any swelling in your neck or difficulty swallowing?'",
-    "★ 'When was your last period? Are they regular? Any hot flushes?'",
-    "★ 'I would like to perform a thyroid examination — asking her permission to expose the neck and remove any scarf, and offering a chaperone.' / ★ 'What is the relaxation phase of the ankle reflex?' / 'Can she rise from a chair without using her arms?' / 'Pemberton's sign, given the goitre' / 'Is that sugar random or fasting?'",
-    "★ 'Most likely you have hypothyroidism. The gland in the front of your neck is underactive and is not making enough of its hormone.' / ★ 'The reasons I have come to this today are your own answers and what I found when I examined you…'",
-    "★ 'I considered menopause — it can cause exactly this at your age, but it is less likely in you because your periods are regular and you have no hot flushes.' / 'Anaemia — less likely, no breathlessness or palpitations on exertion, periods not heavy, but I will still check.' / 'Depression — less likely, your mood is reasonable and you still enjoy things.'",
-    "'The main test is called TSH, which measures how hard your body is having to push the gland.' / 'Will I be on tablets forever?' → 'Usually yes — one tablet a day, inexpensive, and most people feel like themselves again.' / 'Will the weight come off?' → 'Some usually does — a lot is fluid — but treating the thyroid does not usually take off all the weight on its own; it should give you back the energy to be active.'",
-    "Never say to the patient: TSH unexplained, euthyroid, myxoedema, Woltman sign, or 'your metabolism is slow' without the plain-English version"
-   ],
    "pefe": [
-    "Examiner: dressed warmly; dry, coarse skin; no pallor/jaundice/rash · T normal, ★ pulse 60 regular, BP 110/70 · ★ diffusely enlarged thyroid, moves on swallowing, no nodules, non-tender, percussion resonant (no retrosternal extension) · no lymphadenopathy · HS normal, chest clear · no hepatosplenomegaly · ★ reflexes present with delayed relaxation phase · power normal · Pemberton negative · random BSL normal, dipstick normal",
-    "If asked what you are looking for mid-thyroid exam: 'a swelling that moves upwards on swallowing — thyroid rather than node or cyst; diffuse vs nodular — a discrete nodule changes the pathway to ultrasound; percussion for retrosternal extension'",
-    "Variant — single firm nodule: thyroid ultrasound ± FNA by sonographic features and size; still TSH first (suppressed TSH → functioning nodule) VERIFY",
-    "Variant — periods stopped 8 months ago with hot flushes: menopause moves to the top, but they overlap and coexist — still check TSH before attributing everything to menopause",
-    "Variant — lithium or amiodarone: both cause hypothyroidism; check TSH (lithium: renal function and level too); discuss with the prescriber rather than stopping it",
-    "Variant — pregnant or planning: requirement rises, targets tighter — urgent TSH, start/increase early, obstetric team, monitor more often VERIFY",
-    "Bloods: TSH first → free T4 if abnormal → TPO antibodies for cause; high TSH + low fT4 = primary; high TSH + normal fT4 = subclinical · plus FBE, ferritin, HbA1c, coeliac serology, UEC, LFT · levothyroxine ~1.6 µg/kg/day full replacement, start 25–50 µg if older or cardiac VERIFY · empty stomach, separate from calcium/iron by ~4 h · recheck TSH 6–8 weeks · SA: TIS 131 450 · PATS >100 km VERIFY"
+    "**It is remarkable how many candidates run a flawless nine-step request in a thyroid case and never ask for the thyroid.** Say it explicitly and early, as step three.",
+    "**The thyroid examination, with what each step is for: INSPECTION — a swelling that moves upwards on swallowing, which tells you it is thyroid rather than a node or cyst · PALPATION — diffuse or nodular, because a discrete nodule changes the pathway to ultrasound · PERCUSSION — retrosternal extension.**",
+    "**The two signs to name when asked for 'two more': DELAYED RELAXATION OF THE ANKLE REFLEX (Woltman) and PROXIMAL MYOPATHY.** Good third answers: **periorbital and pretibial NON-PITTING oedema** — boggy myxoedema from mucopolysaccharide deposition, **not the pitting oedema of heart or renal failure** — **dry coarse skin, and loss of the outer third of the eyebrow (madarosis).**",
+    "**TSH is the screening test; free T4 interprets it; TPO antibodies establish the cause.**",
+    "**Thyroid ultrasound is NOT required for a diffuse goitre with a clear biochemical diagnosis** — order it for a discrete nodule or compressive symptoms. **Over-ordering leads to incidentaloma cascades.**",
+    "**If a discrete nodule is reported, the plan changes: thyroid ultrasound, and fine-needle aspiration depending on sonographic features and size — but check TSH first, because a suppressed TSH points to a functioning nodule.**",
+    "**Ask whether the office glucose is random or fasting before accepting it as normal.**"
    ],
-   "fails": [
-    "Naming hypothyroidism off the single weather-preference answer without the five probing questions ('what makes you say that?') ★",
-    "Never requesting a thyroid examination — running the whole spine and missing the neck ★",
-    "Abandoning the malignancy and infection screen because you already have the diagnosis ★",
-    "Explaining the diagnosis beautifully and omitting the differentials task — one out of two ★",
-    "Describing the reflexes as brisk — they are slow to relax ★",
-    "Not asking the three menstrual questions — menopause is the closest mimic",
-    "The butterfly-gland physiology lecture; starting levothyroxine before the TSH; promising all the weight will come off"
-   ],
-   "numbers": [
-    "Pulse 60 — the bradycardia you expect · 5 key-point probes (dry skin, constipation, weight gain, hair/eyebrows, puffiness) · 9 examination steps · 2 famous signs (delayed reflex relaxation, outer-eyebrow loss)",
-    "TSH first · free T4 if abnormal · TPO antibodies for cause · high TSH + low fT4 = primary; high TSH + normal fT4 = subclinical",
-    "Levothyroxine ~1.6 µg/kg/day; 25–50 µg start if older/cardiac VERIFY · empty stomach · separate from calcium/iron ~4 h · recheck TSH 6–8 weeks",
-    "Three menstrual questions exclude menopause: LMP, regular?, hot flushes?",
-    "TIS 131 450 · PATS >100 km VERIFY"
+   "ddx": [
+    [
+     "**Primary hypothyroidism (Hashimoto)** — the answer",
+     "**Cold intolerance, dry skin, constipation, weight gain, hair loss**, hoarse voice, puffy eyelids, bradycardia, goitre",
+     "Weather preference, **then the five key-point questions**; thyroid examination; **reflex relaxation**",
+     "**TSH first; free T4 if abnormal; TPO antibodies**"
+    ],
+    [
+     "**Menopause / perimenopause — the closest mimic**",
+     "**Age 45, irregular or absent periods, HOT FLUSHES**, night sweats, sleep disturbance, mood change",
+     "**Last menstrual period, regularity, hot flushes — the three questions that exclude it**",
+     "**Clinical diagnosis. FSH is unreliable in perimenopause and not routinely needed**"
+    ],
+    [
+     "Diabetes mellitus",
+     "Polyuria, polydipsia, weight loss, blurred vision, thrush",
+     "Urine volume, thirst, recurrent infections",
+     "Fasting glucose or HbA1c; **urine dipstick in the room**"
+    ],
+    [
+     "**Lymphoma, leukaemia, solid tumour**",
+     "Weight loss, night sweats, lumps, anorexia, bone pain",
+     "The four M questions; **every node group; spleen and liver**",
+     "FBE and film, ESR, LDH, imaging by history — **urgent if positive, must not miss**"
+    ],
+    [
+     "**EBV, CMV, COVID, HIV, hepatitis, TB**",
+     "Fever, sore throat, risk exposure, travel",
+     "Fevers, flu-like illness, **sexual history, travel — asked of everyone**",
+     "Serology by history; **offer an HIV test explicitly** — same week, must not miss"
+    ],
+    [
+     "Anaemia — iron deficiency most likely",
+     "Pallor, breathlessness and palpitations on exertion, **heavy periods**, poor diet",
+     "Menstrual loss, diet, blood loss, pica",
+     "FBE and ferritin; **coeliac serology if iron deficient**"
+    ],
+    [
+     "Depression",
+     "Low mood, anhedonia, poor sleep, poor concentration — **it overlaps hypothyroidism heavily**",
+     "Mood, enjoyment, stressors, sleep pattern",
+     "PHQ-2 then PHQ-9. **Treat the thyroid first and reassess**"
+    ],
+    [
+     "Polymyalgia rheumatica · SLE · rheumatoid arthritis",
+     "Girdle stiffness, joint pain, photosensitive rash, morning stiffness",
+     "Shoulder and hip stiffness, joints, rash",
+     "ESR and CRP; ANA, dsDNA, RF and anti-CCP if indicated"
+    ],
+    [
+     "Coeliac disease · hepatitis · haemochromatosis",
+     "Greasy stools, bloating, jaundice, dark urine, **skin tanning**, arthralgia",
+     "Bowel habit, skin colour, alcohol",
+     "Coeliac serology on gluten; LFT; iron studies and transferrin saturation"
+    ],
+    [
+     "**Drug-induced hypothyroidism** · OSA · shift work · heart failure",
+     "**LITHIUM and AMIODARONE**; snoring; night shifts; orthopnoea and ankle swelling",
+     "**Full medication list**; snoring, occupation, pillows, ankles",
+     "**TSH, and for lithium renal function and a level — discuss with the prescriber rather than stopping it yourself**"
+    ]
    ]
   },
   "source": "Hypothyroidism_Tiredness_2_Case_Tasks_Script_Notability.pdf (Jane Ellery, 45, tiredness — primary hypothyroidism)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Hypothyroidism_Tiredness_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "DRESSED WARMLY; DRY, COARSE SKIN; no pallor, jaundice or rash"
-   ],
-   [
-    "Observations",
-    "Temperature normal · PULSE 60 REGULAR · BP 110/70"
-   ],
-   [
-    "Thyroid",
-    "DIFFUSELY ENLARGED, MOVES ON SWALLOWING, NO NODULES, NON-TENDER; percussion RESONANT — no retrosternal extension"
-   ],
-   [
-    "Nodes",
-    "No lymphadenopathy"
-   ],
-   [
-    "Heart and chest",
-    "Heart sounds normal; chest clear"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Diagnosing off the single weather-preference question with no probing — switch gear the moment she says cold intolerant: dry skin? constipation? weight gain? hair loss and the outer eyebrows? puffy eyelids? hoarse voice? neck swelling? — this is the whole station, and the role-player asks 'what makes you say that?'",
-   "FAIL — Never requesting a thyroid examination — consent to expose the neck, chaperone, inspection and movement on swallowing, diffuse or nodular, percussion over the manubrium; plus the pulse rate and the relaxation phase of the ankle reflexes",
-   "FAIL — Describing the reflexes as brisk — they are slow to relax, the opposite finding",
-   "FAIL — Abandoning the malignancy and infection screen because you already have the diagnosis — the commonest reason a candidate with the correct answer still fails",
-   "FAIL — Not asking last period, regularity and hot flushes — menopause is the single closest mimic at 45, three questions exclude it, and you quote the answers back in the differentials",
-   "FAIL — Omitting the differentials task, or the physiology lecture in its place — one plain line ('the gland in your neck is underactive'), reasons from her own answers and findings, then menopause, anaemia and depression each excluded by one finding, then the list; TSH first, never levothyroxine before the result"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-63",
