@@ -46,6 +46,19 @@
   .top .sub{font-size:12.5px;color:var(--ink-3)}
   .iconbtn{width:38px;height:38px;border-radius:10px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:18px}
 
+  /* daily target band — first thing on the page */
+  .goal{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r);padding:12px 14px;margin:0 0 12px}
+  .goal.done{border-color:var(--ok);background:#F2F8F5}
+  .goal .g1{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .goal .lbl{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .goal .num{font-size:27px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+  .goal .num .of{font-size:16px;font-weight:600;color:var(--ink-3)}
+  .goal.done .num{color:var(--ok)}
+  .goal .gbar{height:9px;border-radius:999px;background:var(--line);margin:9px 0 7px;overflow:hidden}
+  .goal .gbar i{display:block;height:100%;background:var(--ok);border-radius:999px;transition:width .25s}
+  .goal .g2{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-3)}
+  .goal .g2 .left{color:var(--ink-2)} .goal .g2 .left b{font-size:15px;color:var(--ink)}
+
   /* filters */
   .filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
   .chip{padding:6px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-size:13px;color:var(--ink-2);display:flex;align-items:center;gap:6px}
@@ -164,6 +177,7 @@
   .sheet p{font-size:14px;color:var(--ink-2);margin:6px 0 10px}
   .sheet label{display:flex;align-items:center;gap:10px;font-size:15px;padding:10px 0;border-top:1px solid var(--line)}
   .sheet input[type=checkbox]{width:20px;height:20px}
+  .sheet input[type=number]{width:88px;border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;font:16px/1.4 inherit;text-align:center;font-variant-numeric:tabular-nums}
   .sheet input[type=password],.sheet input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace;margin:0 0 8px}
   .hint{font-size:13px;color:#667085;margin:0 0 8px}
   textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace}
@@ -192,6 +206,7 @@
     <label><input type="checkbox" id="optBell"> Bells: 5:00 prompt (where the station has one), 6:00 two-minute warning, 8:00 finish</label>
     <label><input type="checkbox" id="optStudy"> Study mode: allow flipping without the timer</label>
     <label><input type="checkbox" id="optShuffle"> Shuffle order</label>
+    <label style="justify-content:space-between"><span>Daily target &mdash; stations a day, counted on the Adelaide day</span><input type="number" id="optGoal" min="1" max="500" step="5" inputmode="numeric"></label>
     <h2 style="margin-top:18px">Sync across devices</h2>
     <p class="hint" id="syncState">Not connected — ratings stay on this device only.</p>
     <input id="syncTok" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="GitHub token with gist access">
@@ -223,7 +238,7 @@ let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
 const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync";
-let progress={}, custom=[], opts={bell:true, study:false, shuffle:false, prep:true};
+let progress={}, custom=[], opts={bell:true, study:false, shuffle:false, prep:true, goal:60};
 let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
 let timerId=null, remaining=480, timerDone=false, fired={}, phase="station";
 const PREP=120, STATION=480;
@@ -247,7 +262,28 @@ async function load(){
 async function save(k,v){
   try{ await store.set(k,JSON.stringify(v)); }catch(e){ console.error("save failed",k,e); setStatus("Could not save — storage unavailable"); }
 }
-function today(){ return new Date().toISOString().slice(0,10); }
+/* The day rolls over at midnight in Adelaide, not UTC and not on the device clock,
+   so a card rated at 11pm counts for that day on the laptop and the iPad alike. */
+const TZ="Australia/Adelaide";
+function localDay(d){
+  d=d||new Date();
+  try{
+    const p={};
+    new Intl.DateTimeFormat("en-US",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit"})
+      .formatToParts(d).forEach(x=>{p[x.type]=x.value;});
+    if(p.year&&p.month&&p.day) return p.year+"-"+p.month+"-"+p.day;
+  }catch(e){}
+  const z=n=>String(n).padStart(2,"0");
+  return d.getFullYear()+"-"+z(d.getMonth()+1)+"-"+z(d.getDate());
+}
+function today(){ return localDay(); }
+/* stations rated today, Adelaide time — one per station, however many times it was turned */
+function doneToday(){
+  const t=today(); let n=0;
+  Object.values(progress).forEach(p=>{ if(p&&p.at&&localDay(new Date(p.at))===t) n++; });
+  return n;
+}
+function dailyGoal(){ return Math.max(1,parseInt(opts.goal,10)||60); }
 
 /* ===================== Cross-device sync (private GitHub gist) =====================
    Ratings are mirrored to a secret gist on your own GitHub account. The token is
@@ -374,7 +410,7 @@ function rate(r){
   else if(r==="good"){ interval=interval===0?2:Math.round(interval*ease); }
   else { ease=ease+0.15; interval=interval===0?3:Math.round(interval*ease*1.3); }
   const d=new Date(); d.setDate(d.getDate()+interval);
-  progress[c.id]={reps:p.reps+1,ease,interval,due:interval===0?today():d.toISOString().slice(0,10),last:r,seen:(p.seen||0)+1,at:new Date().toISOString()};
+  progress[c.id]={reps:p.reps+1,ease,interval,due:interval===0?today():localDay(d),last:r,seen:(p.seen||0)+1,at:new Date().toISOString()};
   save(KEY_PROG,progress); syncSoon();
   // Again keeps the card in this session: move it to the end of the queue
   if(r==="again"){ queue.push(queue.splice(idx,1)[0]); }
@@ -461,12 +497,29 @@ const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
+function goalHTML(){
+  const g=dailyGoal(), n=doneToday(), left=Math.max(0,g-n), pct=Math.min(100,Math.round(n/g*100));
+  const unseen=cards.filter(c=>!(progress[c.id]&&progress[c.id].seen)).length;
+  return `<div class="g1"><span class="lbl">Today &middot; Adelaide</span><span class="num">${n} <span class="of">/ ${g}</span></span></div>
+    <div class="gbar"><i style="width:${pct}%"></i></div>
+    <div class="g2"><span class="left">${left?`<b>${left}</b> still to do today`:`Target met &mdash; ${n} done today`}</span>
+    <span>${unseen} never turned &middot; ${cards.length} in the deck</span></div>`;
+}
+function paintGoal(){
+  const el=document.getElementById("goal"); if(!el) return;
+  el.className="goal"+(doneToday()>=dailyGoal()?" done":"");
+  el.innerHTML=goalHTML();
+}
+/* keeps the count honest if the app is left open across midnight */
+setInterval(paintGoal,30000);
+
 function render(){
   const app=document.getElementById("app");
   const counts={}; Object.keys(CATS).forEach(k=>counts[k]={all:0,due:0,hard:0});
   cards.forEach(c=>{ if(!counts[c.cat]) return; counts[c.cat].all++; if(isDue(c)) counts[c.cat].due++; if(isHard(c)) counts[c.cat].hard++; });
 
-  let h=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile</div></div>
+  let h=`<div class="goal${doneToday()>=dailyGoal()?" done":""}" id="goal">${goalHTML()}</div>`;
+  h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile</div></div>
     <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
   h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
   h+=`<div class="modes"><button data-mode="due" class="${mode==="due"?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"?"on":""}">Hard pile</button><button data-mode="all" class="${mode==="all"?"on":""}">All</button></div>`;
@@ -566,18 +619,24 @@ function fmtIv(p,r){
 /* ===================== Drawer ===================== */
 function openDrawer(){
   const d=document.getElementById("drawer"); d.classList.add("open"); d.setAttribute("aria-hidden","false");
+  document.getElementById("optGoal").value=dailyGoal();
   document.getElementById("optPrep").checked=opts.prep; document.getElementById("optBell").checked=opts.bell; document.getElementById("optStudy").checked=opts.study; document.getElementById("optShuffle").checked=opts.shuffle;
   const st=document.getElementById("stats");
   let s=`<div class="h">Category</div><span class="h">stations</span><span class="h">due</span><span class="h">hard</span>`;
   Object.entries(CATS).forEach(([k,v])=>{ const cs=cards.filter(c=>c.cat===k); s+=`<div style="color:${v.color};font-weight:600">${v.name}</div><span>${cs.length}</span><span>${cs.filter(isDue).length}</span><span>${cs.filter(isHard).length}</span>`; });
   const seen=Object.values(progress).filter(p=>p.seen).length;
   s+=`<div>Reviewed at least once</div><span>${seen}</span><span></span><span></span>`;
+  s+=`<div>Done today &middot; target ${dailyGoal()}</div><span>${doneToday()}</span><span></span><span></span>`;
   st.innerHTML=s;
   renderSyncState();
 }
 function closeDrawer(){ const d=document.getElementById("drawer"); d.classList.remove("open"); d.setAttribute("aria-hidden","true"); }
 document.getElementById("closeBtn").onclick=closeDrawer;
 document.getElementById("drawer").addEventListener("click",e=>{ if(e.target.id==="drawer") closeDrawer(); });
+document.getElementById("optGoal").onchange=e=>{
+  opts.goal=Math.min(500,Math.max(1,parseInt(e.target.value,10)||60));
+  e.target.value=opts.goal; save(KEY_OPTS,opts); paintGoal();
+};
 ["optPrep","optBell","optStudy","optShuffle"].forEach(id=>document.getElementById(id).onchange=e=>{ opts[id.slice(3).toLowerCase()]=e.target.checked; save(KEY_OPTS,opts); if(id==="optShuffle") buildQueue(); if(id==="optPrep"&&!timerId&&!flipped) resetTimer(); render(); });
 document.getElementById("importBtn").onclick=async()=>{
   const box=document.getElementById("importBox"), msg=document.getElementById("importMsg");
