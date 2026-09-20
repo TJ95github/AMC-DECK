@@ -14818,8 +14818,8 @@
  {
   "id": "MED-50",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Surgical ward. You are the medical officer; the nurse has asked you to review. The observation chart is available.",
   "stem": [
    "James Whitmore, 45, was admitted after a cholecystectomy performed yesterday. The nurse has recorded a high temperature and has asked you to review him.",
    "Observation chart: temperature 39.5°C on return to the ward, now 40.0°C · respiratory rate 15–20 initially, now 20–25 · SpO2 95% throughout, now drifting below 95% on room air."
@@ -14830,126 +14830,212 @@
    "Explain your diagnosis and your differentials to the patient",
    "Outline your management plan"
   ],
-  "time": "8 minutes. Stability line 0:00 · fever block · post-op review block (pain and analgesia is the diagnosis being handed to you) · chest → heart → urine → wound → legs → cannula → drug/transfusion reaction · examination in fixed order with vocal resonance and the four abdominal asks · diagnosis + differentials grouped by time since surgery · management with analgesia FIRST.",
+  "findings": [
+   [
+    "The observation chart on the door",
+    "T 39.5 ON RETURN TO WARD → 40.0 NOW · RR 15–20 → 20–25 · SpO2 95% → DRIFTING BELOW 95% on room air. Read it out loud: 'fever of 40, tachypnoea and falling saturation — that points me at the chest, but it does not close the case'"
+   ],
+   [
+    "General appearance",
+    "Uncomfortable but NOT in respiratory distress, no cyanosis, IN PAIN. In this station PAIN replaces 'drowsy' as the third item you ask for"
+   ],
+   [
+    "Respiratory — inspection and palpation",
+    "Chest movements SYMMETRICAL, trachea CENTRAL"
+   ],
+   [
+    "Respiratory — percussion and auscultation",
+    "DECREASED AIR ENTRY AT THE LEFT MID-ZONE with CREPITATIONS over the same area. Percussion dull. Identical to pneumonia so far"
+   ],
+   [
+    "VOCAL RESONANCE — the whole station",
+    "NOT INCREASED. Ask for it as the last item of the respiratory request, EVERY time, and say both branches aloud: 'if it is normal or reduced I'll favour atelectasis; if it is increased I'll be treating this as a pneumonia.' Airless lung transmits voice poorly; solid lung conducts it better"
+   ],
+   [
+    "Cardiovascular",
+    "S1 and S2 dual and normal, NO MURMUR, no gallop"
+   ],
+   [
+    "Abdomen — four specific asks",
+    "Surgical site CLEAN AND DRY, no discharge or erythema · NO SUPRAPUBIC TENDERNESS · NO RENAL ANGLE TENDERNESS · no masses, no distension, drain MINIMAL SEROUS. 'A full abdominal examination' earns nothing — these four do"
+   ],
+   [
+    "Cannula site",
+    "CLEAN. Ask WHEN IT WENT IN — the date is the answer, not the appearance. Inserted yesterday, so not thrombophlebitis"
+   ],
+   [
+    "Lower limbs and bedside test",
+    "Calves SOFT AND EQUAL, no oedema, no calf tenderness. URINE DIPSTICK NEGATIVE"
+   ],
+   [
+    "VERSION — the vocal resonance switch",
+    "Day 3, INCREASED VOCAL RESONANCE with BRONCHIAL BREATHING and green sputum → HOSPITAL-ACQUIRED PNEUMONIA. Change your diagnosis out loud, send sputum and blood cultures, and start antibiotics per Therapeutic Guidelines"
+   ]
+  ],
+  "findingsLabel": "The chart and the examination · open when you would ask",
+  "must": [
+   "FAIL — No cardiac question at all. Box 4 is compulsory in every post-operative fever.",
+   "FAIL — Diagnosing atelectasis with no chest X-ray, or starting antibiotics for it.",
+   "FAIL — Dropping VTE because he is febrile. PE causes a low-grade fever.",
+   "FAIL — Treating the fever and saying nothing about the analgesia.",
+   "ASK — Are you in pain right now, and are the painkillers helping? Then: been out of bed?",
+   "ASK — Can I have the vocal resonance, please? Last item of the respiratory request."
+  ],
   "back": {
-   "dx": "Post-operative day 1 fever with rising RR and falling SpO2, pain limiting deep breathing, decreased air entry and crepitations left mid-zone with vocal resonance NOT increased → atelectasis (the 'wind' of the timeline). Differentials grouped by time since surgery — immediate/first hours: drug or transfusion reaction, malignant hyperthermia, pre-existing infection; early to day 3: atelectasis, pneumonia, cannula thrombophlebitis, necrotising SSI (within 48 h), cardiac event (Version B); late after day 3: UTI (catheter), wound infection, VTE, intra-abdominal collection / bile leak, C. difficile. Antibiotics are withheld and the reason is said aloud. Discriminating behaviour: asking the cardiac questions in a station that 'looks respiratory', and putting analgesia first in the plan.",
+   "dx": [
+    "**Post-operative atelectasis on day 1.** Splinting from wound pain → shallow tidal volumes → alveolar collapse, basal or mid-zone, with fever, tachypnoea and desaturation. **Loss of lung volume from collapse of alveoli that are no longer being inflated — not an infection, though it predisposes to one.**",
+    "**Nobody is marked on knowing the answer.** You are marked on **a differential list generated by the post-operative TIMELINE**, on including **the two things that kill — myocardial infarction and venous thromboembolism** — and on **asking for the one finding that separates collapse from consolidation**.",
+    "**Say the list in this shape: in the first few hours — the inflammatory response itself, drug or transfusion reaction, malignant hyperthermia, or an infection he brought in with him. In the first three days — atelectasis and pneumonia, myocardial infarction, UTI, early wound infection, VTE. After day three — wound infection, a surgery-specific complication such as a collection or bile leak, thrombophlebitis, hospital-acquired infection, drug fever. He is on day one, so my list narrows to the middle group.**",
+    "**Vocal resonance is the discriminator. NORMAL OR REDUCED = atelectasis. INCREASED = consolidation.** Air entry, crepitations and a dull percussion note are **identical in both**.",
+    "**Pain is a respiratory question.** A painful abdominal wound means no deep breath, and shallow breathing without periodic sighs collapses dependent alveoli within hours — **which is why analgesia is the first line of treatment, not physiotherapy.**",
+    "Management, in this order: **1 optimised multimodal analgesia — paracetamol 1 g every 6 h, max 4 g in 24 h, an NSAID if renal function and the surgical team allow, an opioid or PCA for breakthrough · 2 paracetamol also treats the fever · 3 continuous saturation, oxygen to 92–96% · 4 chest physiotherapy TODAY — deep breathing and effective cough with wound support · 5 sit up and mobilise, which is also VTE prophylaxis · 6 smoking cessation now, Quitline 13 7848 · 7 review in a few hours.**",
+    "**ANTIBIOTICS ARE NOT INDICATED FOR ATELECTASIS.** Say it deliberately — prescribing them is the reasoning error the examiner is watching for.",
+    "**CORRECTION — it is malignant HYPERthermia**, a pharmacogenetic hypermetabolic crisis triggered by volatile agents and suxamethonium, treated with **dantrolene 2.5 mg/kg IV**. **CORRECTION — ask for FBE and CRP, not ESR**: ESR rises non-specifically after any surgery and lags by days, and CRP is raised by the operation itself on day 1, so use the trend.",
+    "**The Five Ws are second-best**: Wind d1–2 · Water d3–5 · Walking d4–6 · Wound d5–7 · Wonder drugs d7+. **They omit myocardial infarction and anastomotic or bile leak entirely** — the two things that will actually fail you. Use the timeline, keep the Ws as a cross-check.",
+    "**Escalate tonight for: systolic under 90 · heart rate over 130 · respiratory rate over 25 despite oxygen · new confusion · lactate 2 or more · bilious drain output · generalised abdominal tenderness.** **MedSTAR 1300 13 12 33 · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Gel; ★ stability statement to the examiner ('continuous observations, monitored bed if he deteriorates — I have the chart, I'll proceed'); intro; open question; concern statement"
+     "**To the examiner first: 'before I begin I'd like this patient on continuous observations, and I'd move him to a monitored bed if he deteriorates. I have the chart, so I'll proceed.'** Six seconds, and it is a scored line. Then gel, introduce, open question."
+    ],
+    [
+     "0:20",
+     "**The concern statement — do not skip it**: **'I completely understand why a temperature after an operation is worrying. Let me ask you some questions and examine you, then we'll work out the cause together and I'll tell you exactly what we're going to do.'**"
     ],
     [
      "0:40",
-     "Fever block: feels feverish? rigors/shaking chills? onset? ★ fever before the operation? getting worse?"
+     "**Box 1, the fever itself: do you feel feverish? any shivering or shaking chills? when did it start? DID YOU HAVE ANY FEVER BEFORE THE OPERATION? is it getting worse?** Rigors point to bacteraemia rather than collapse; fever before the list means the infection came in with him."
     ],
     [
      "1:20",
-     "Post-op review block: nausea/vomiting · bowels/wind · abdominal pain beyond the wound · dizziness · eating and drinking · out of bed · ★ 'are you in pain now — are the painkillers helping?' → react aloud: 'that's really important — I think the pain is part of the cause'"
+     "**Box 2, the post-operative review — the block everyone skips: any nausea or vomiting? have your bowels worked, have you passed wind? any tummy pain apart from the wound? any dizziness? have you started eating and drinking? HAVE YOU BEEN OUT OF BED? ARE YOU IN PAIN RIGHT NOW — AND ARE THE PAINKILLERS HELPING?** When he says it hurts to breathe in, **react to it in the room**: 'that's really important — I think the pain is part of what's causing this.'"
     ],
     [
-     "2:30",
-     "Chest: cough (dry/productive, colour), SOB, noisy breathing, lung disease, smoking. ★ Heart: chest pain or tightness even briefly, palpitations, previous cardiac disease"
+     "2:20",
+     "**Box 3, chest: any cough — dry or bringing anything up, what colour? any shortness of breath? any noisy breathing? ever had a lung condition? do you smoke, or have you ever?**"
     ],
     [
-     "3:30",
-     "Urine (dysuria, frequency, offensive, loin pain, ★ catheter), wound (discharge, redness, swelling), legs (calf pain/swelling, pleuritic pain, haemoptysis), travel ('an infection picked up before surgery can present like this'), ★ cannula and WHEN it went in, ★ prior fever after surgery / transfusion / new medicine; PMH, meds, allergies"
+     "2:50",
+     "**Box 4, heart — the box that decides Version B and the single most dangerous omission: ANY CHEST PAIN OR TIGHTNESS, EVEN BRIEFLY? have you noticed your heart racing or thumping? any previous heart trouble, heart attack or angina?** If he has known ischaemic disease, **which cardiac medicines were withheld for surgery** — abrupt beta-blocker cessation causes rebound ischaemia."
+    ],
+    [
+     "3:20",
+     "**Box 5, urine: any burning or pain passing urine? going more often? cloudy or offensive? any back or loin pain? HAVE YOU HAD A CATHETER?**"
+    ],
+    [
+     "3:40",
+     "**Box 6, the wound: any discharge or weeping? any redness or swelling? is it more painful than yesterday?** Discharge is the discriminating symptom — some redness after a fresh incision is normal, **escalating pain is not**."
+    ],
+    [
+     "4:00",
+     "**Box 7, legs: any swelling or pain in the calves? any sharp chest pain on breathing in, or coughed up blood? have you had the blood-thinning injection each day?**"
+    ],
+    [
+     "4:15",
+     "**Box 8, travel — and say why: 'did you travel anywhere in the weeks before the operation? I ask because an infection picked up before surgery can present like this'** — not because you are chasing a clot."
     ],
     [
      "4:30",
-     "Examination in order: general (distress, cyanosis, pain) → vitals → respiratory in full incl. ★ vocal resonance → CVS → abdomen with the four asks (★ wound, suprapubic, renal angle, masses) + drain → cannula site → calves → urine dipstick"
+     "**Box 9, lines, drugs and blood: any redness or pain around the drip site — AND WHEN WAS IT PUT IN? have you ever had a fever after an operation before, after a blood transfusion, or after starting a new medicine?** That last sentence ticks off drug fever, transfusion reaction and a family history of malignant hyperthermia at once."
     ],
     [
-     "5:30",
-     "Diagnosis in plain English: 'because of the pain you haven't breathed deeply and a small part of the lung has collapsed down — common, treatable'. ★ Differentials named to the patient: chest infection (CXR), urine/wound infection, drip site, clot in leg/lung, drug reaction, strain on the heart"
+     "4:45",
+     "**Closure: any other medical conditions, regular medicines, allergies, anything in the family? And is there anything you were hoping I'd ask that I haven't?**"
     ],
     [
-     "6:45",
-     "Management: ★ analgesia first, paracetamol for fever, CXR + bloods + urine MCS, monitoring with O2 if needed, physio for deep breathing and supported coughing (describe the technique, then the device), sit up and mobilise, no smoking (patches/Quitline), review this afternoon, safety net verbatim, 'any questions or concerns?' (hidden agenda: has something gone wrong, time off work), summary"
+     "4:50",
+     "**The examination request, specific not generic**: general appearance · 'I have the vital signs, so I'll move on' — **say it, don't silently skip it** · **respiratory in full ending with VOCAL RESONANCE** · cardiovascular · **abdomen with the four asks — wound, suprapubic, renal angle, masses, plus distension and drain** · **cannula site, I'm looking for thrombophlebitis** · **lower limbs for oedema, calf size difference and tenderness** · **urine dipstick**."
+    ],
+    [
+     "6:00",
+     "**Say 'I've grouped my differentials by how long it is since the operation'**, deliver the timeline list, **then** name atelectasis in plain English — **'because of the pain you haven't been breathing deeply, and a small part of your lung has collapsed down'** — and **name the differentials to the patient** so he could repeat them back."
+    ],
+    [
+     "7:20",
+     "**Management with ANALGESIA FIRST**, then paracetamol for the fever, chest X-ray and bloods, urine to the lab, monitoring and oxygen, **physiotherapy today**, sitting up and out of bed, no smoking, **'antibiotics don't treat a collapsed lung'**, review this afternoon, and the safety-net: **breathing worse, chest pain, racing heart, wound leaking or much more painful, feeling faint — tell the nurses immediately.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I begin I'd like this patient on continuous observations, and I'd move him to a monitored bed if he deteriorates. I have the chart, so I'll proceed.'",
-    "'Do you feel feverish yourself? Any shivering or shaking chills? When did you first notice it? Did you have any fever before the operation? Is it getting worse?'",
-    "★ 'Are you in pain right now — are the painkillers helping?' → 'That's really important — I think the pain is part of what's causing this, and we'll fix it.'",
-    "★ 'Any chest pain or tightness, even briefly? Have you noticed your heart racing? Any previous heart trouble?'",
-    "'Any redness or pain at the drip site — and do you know when it was put in?' / 'Have you ever had a fever after an operation, a blood transfusion, or starting a new medicine?'",
-    "★ 'Can I have the vocal resonance, please?' / 'Is there suprapubic tenderness, and is there renal angle tenderness?'",
-    "'I've grouped my differentials by how long it is since the operation.'",
-    "'Collapsed sounds frightening, but it means a small area has gone airless — it re-inflates once you can breathe deeply again.' / 'Do I need antibiotics?' → ★ 'Not for this — antibiotics don't treat a collapsed lung. If the X-ray shows an infection, that changes.'",
-    "Safety net: 'Tell the nurses immediately if your breathing gets worse, you get chest pain, your heart races, the wound leaks or gets much more painful, or you feel faint. I'll be back to review you.' Do not promise a discharge date.",
-    "Summary: day 1 post-cholecystectomy fever, most likely atelectasis from pain-limited breathing; CXR and bloods, better analgesia, physio and mobilising, review this afternoon"
-   ],
    "pefe": [
-    "Given: uncomfortable not distressed, no cyanosis. Chest movements symmetrical, trachea central; decreased air entry left mid-zone with crepitations; vocal resonance NOT increased. Heart sounds dual, no murmur. Abdomen soft, wound clean and dry, no suprapubic/renal angle tenderness, no masses, drain minimal serous. Cannula site clean. Calves soft and equal. Dipstick negative.",
-    "Variant — the vocal resonance switch (day 3): decreased air entry left base, coarse creps, vocal resonance INCREASED, bronchial breathing, green sputum → consolidation = hospital-acquired pneumonia: sputum + blood cultures, CXR, antibiotics per Therapeutic Guidelines HAP with local resistance in mind VERIFY",
-    "Variant — day 4 bile leak: generalised abdominal tenderness, ileus, bile-stained (green) drain → blood cultures, lactate, FBE/CRP/UEC/LFT/lipase, CT abdomen/pelvis with contrast, fasted + IV fluids, surgical registrar NOW — not physio and reassurance",
-    "Variant — septic turn mid-station (BP 85/50, HR 132): ★ stop the history, name the change, name the pathway, name who you call — high-flow O2, 2× large-bore IV, cultures, lactate, fluid bolus, empirical IV antibiotics within the hour, IDC, surgical reg + ICU, rural: MedSTAR 1300 13 12 33 early",
-    "Investigations: CXR, FBE, CRP, UEC, LFT, blood cultures if rigors/T ≥38.5, urine MCS, sputum if productive; ECG/troponin only if cardiac features (Version B)",
-    "SA: MedSTAR 1300 13 12 33 · Quitline 13 7848 · TIS 131 450",
-    "Cannula site — Clean"
+    "Request it in this order: **general appearance — respiratory distress, cyanosis, IS HE IN PAIN · vital signs (say you have them) · respiratory — symmetrical movements, tracheal position, percussion note, breath sounds and added sounds, AND VOCAL RESONANCE · cardiovascular — S1, S2, murmurs, gallop · abdomen — the surgical site, SUPRAPUBIC tenderness, RENAL ANGLE tenderness, masses, distension and what is in the drain · cannula site for erythema, tenderness or discharge · lower limbs for oedema, calf size difference and calf tenderness · and a urine dipstick.**",
+    "**Do now, before you leave the room: full observations with a repeat temperature · urine dipstick · 12-lead ECG if any chest pain, palpitations, tachycardia or hypertension · inspect the wound, cannula and drain yourself · oxygen to 92–96% · and FIX THE ANALGESIA NOW rather than deferring it to the plan.**",
+    "**Do next: CHEST X-RAY — the single most useful test, separating collapse from consolidation · FBE and CRP · urine MCS, because a UTI can be present with a negative dipstick · two sets of blood cultures if septic or rigoring · serial troponin if the ECG or history raises cardiac concern · U&E, LFT and lipase with abdominal signs, and CT abdomen with contrast if a collection or bile leak is suspected · venous lactate if any sepsis features.**",
+    "**Do not order more than this** — a scattergun panel reads as absent reasoning, and you still have to talk about management.",
+    "**D-dimer is unreliable post-operatively** — go to compression ultrasound or CTPA. **Dipstick alone misses infection and is unreliable with a catheter.**",
+    "**Cannulae are reviewed daily and generally resited by 72 hours** unless clinically indicated sooner. VERIFY against local SA Health policy — some sites work to 72–96 hours or replace on clinical indication only.",
+    "**Avoid: diagnosing atelectasis without a chest X-ray · antibiotics 'just in case' · treating the fever and ignoring the pain · 'the physio will sort it out' as your whole plan.**"
    ],
-   "fails": [
-    "Omitting the cardiac questions because the chart 'looks respiratory' ★",
-    "Not asking 'are you in pain / are the painkillers helping', or hearing 'it hurts to breathe in' and not reacting ★",
-    "Naming atelectasis and stopping — no differentials given to the patient ★",
-    "Starting antibiotics for atelectasis, or leading the plan with physiotherapy rather than analgesia ★",
-    "Skipping the stability statement; or spending two minutes on DRS ABC in a history station",
-    "Not asking for vocal resonance, the four abdominal asks, cannula site + date, calves; 'full abdominal examination' and stopping",
-    "Continuing the history through a deteriorating patient (septic variant)"
-   ],
-   "numbers": [
-    "Stem obs: T 39.5 → 40.0°C · RR 15–20 → 20–25 · SpO2 95% → falling",
-    "Timeline: immediate (first hours) · early (to day 3) · late (after day 3) — 'wind, water, wound, walking, wonder drugs' mapped onto it",
-    "Paracetamol 1 g q6h, max 4 g/24 h · SpO2 target 92–96% · cannula resite by 72 h (local policy 72–96 h)",
-    "Escalation: SBP <90 · HR >130 · RR >25 · lactate ≥2 · new confusion · necrotising SSI within 48 h · febrile non-haemolytic transfusion reaction rise ≤1°C · malignant hyperthermia dantrolene 2.5 mg/kg IV · C. difficile oral vancomycin 125 mg QID × 10 days",
-    "'Fever does not exclude a pulmonary embolism.'",
-    "MedSTAR 1300 13 12 33 · Quitline 13 7848 · TIS 131 450"
+   "ddx": [
+    [
+     "**Atelectasis** — the answer",
+     "**Day 1**, abdominal wound, **poorly controlled pain**, tachypnoea, mild desaturation; fever can reach 40",
+     "Shallow breathing, minimal cough, decreased air entry with crepitations, **vocal resonance NORMAL OR REDUCED**",
+     "**Chest X-ray — volume loss, linear or plate collapse, no consolidation. Analgesia and physiotherapy** — routine, but review"
+    ],
+    [
+     "Pneumonia",
+     "**Day 2–5**, purulent sputum, prolonged intubation, aspiration risk, higher CRP",
+     "**Bronchial breathing, INCREASED vocal resonance**, purulent sputum",
+     "CXR consolidation, sputum and blood cultures; treat per Therapeutic Guidelines for hospital-acquired pneumonia — urgent"
+    ],
+    [
+     "**Myocardial infarction**",
+     "Day 1–3, **chest pain or none at all**, palpitations, tachycardia, hypertension, cardiac risk factors, **withheld cardiac medicines**",
+     "Chest tightness, dyspnoea, diaphoresis, new arrhythmia; **may be entirely silent**",
+     "**12-lead ECG and serial troponin. Do not wait to be asked** — immediate"
+    ],
+    [
+     "**DVT and pulmonary embolism**",
+     "Immobility, pelvic or abdominal surgery, calf pain, pleuritic pain, sudden desaturation. **PE DOES cause fever**",
+     "Unilateral calf swelling and tenderness, haemoptysis, unexplained tachycardia",
+     "**Wells score → D-dimer is unreliable post-operatively; go to compression ultrasound or CTPA** — immediate"
+    ],
+    [
+     "Urinary tract infection",
+     "Catheter in situ, dysuria, frequency, offensive urine, suprapubic or loin tenderness",
+     "Dysuria and frequency; **loin pain with nausea and vomiting → pyelonephritis**",
+     "**Urine dipstick then MCS — dipstick alone misses infection and is unreliable with a catheter** — urgent"
+    ],
+    [
+     "**Surgical site infection**",
+     "Usually day 3–7; discharge, **escalating** wound pain, spreading erythema",
+     "Purulent discharge, fluctuance; **within 48 h with pain out of proportion or crepitus → NECROTISING**",
+     "Inspect and swab, involve the surgical team. **Necrotising infection needs theatre, not antibiotics alone** — immediate"
+    ],
+    [
+     "**Surgery-specific complication**",
+     "Day 3+, abdominal surgery, distension, ileus, **bile-stained drain**, generalised tenderness",
+     "After cholecystectomy: **bile leak, subhepatic collection, retained CBD stone, visceral injury**",
+     "**FBE, CRP, U&E, LFT, lipase; CT abdomen with contrast; surgical registrar NOW** — immediate"
+    ],
+    [
+     "Thrombophlebitis and line sepsis",
+     "**Cannula in for over 72 h**, erythema and tenderness along the vein",
+     "Red, tender, palpable cord at the cannula site",
+     "**Remove and resite**; culture the tip if purulent; blood cultures if septic — same day"
+    ],
+    [
+     "Nosocomial infection",
+     "Day 3+, antibiotics given, diarrhoea, catheter in situ",
+     "Hospital-acquired pneumonia, catheter-associated UTI, **C. difficile**",
+     "Culture the site. **C. difficile: oral vancomycin 125 mg QID for 10 days** — metronidazole is no longer first line — urgent"
+    ],
+    [
+     "Drug and transfusion reaction · malignant hyperthermia · other",
+     "New antibiotic or antiepileptic; transfusion within hours; **rigidity and masseter spasm within hours of anaesthesia**; alcohol withdrawal day 2–4",
+     "Rash, eosinophilia; **febrile transfusion reaction is a rise of 1°C or less**; family history of anaesthetic problems",
+     "Chart review — **a diagnosis of exclusion, never your first answer**. **Malignant hyperthermia: dantrolene 2.5 mg/kg IV, cooling, ICU** — immediate"
+    ]
    ]
   },
   "source": "PostOp_Fever_2_Case_Tasks_Script_Notability.pdf (Version A — James Whitmore, day 1, atelectasis)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › PostOp_Fever_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Uncomfortable but not distressed, no cyanosis"
-   ],
-   [
-    "Chest",
-    "Movements symmetrical, trachea central; DECREASED AIR ENTRY LEFT MID-ZONE WITH CREPITATIONS; vocal resonance NOT increased"
-   ],
-   [
-    "Heart sounds",
-    "Dual, no murmur"
-   ],
-   [
-    "Abdomen and wound",
-    "Soft; wound clean and dry; no suprapubic or renal angle tenderness; no masses; drain minimal serous"
-   ],
-   [
-    "Legs",
-    "Calves soft and equal"
-   ],
-   [
-    "Bedside tests",
-    "Urine dipstick negative"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Omitting the cardiac block because the chart 'looks respiratory' — 'any chest pain or tightness, even briefly? heart racing? previous heart trouble?' is the single most common structural failure in this station, and the entire point of Version B",
-   "FAIL — Hearing 'it hurts to take a deep breath' and not reacting — that sentence is the diagnosis and the first treatment: 'that's really important — I think the pain is part of what's causing this'",
-   "FAIL — 'A full abdominal examination' and stopping, or forgetting vocal resonance — ask wound, suprapubic tenderness, renal angle tenderness, masses and drain; cannula site with the date it went in; calves; dipstick",
-   "FAIL — Leading with physiotherapy — analgesia first, because pain is the cause; then paracetamol, CXR, bloods, urine, oxygen if it drops, physio for deep breathing with wound support, sit up and mobilise",
-   "FAIL — Naming atelectasis and stopping — differentials to the patient (chest infection, urine, wound, drip site, clot, drug reaction, cardiac strain) and antibiotics withheld with the reason: 'antibiotics don't treat a collapsed lung; if the X-ray shows infection, that changes'",
-   "SAY — 'I'd like continuous observations, and I'd move him to a monitored bed if he deteriorates' even though the chart is in the stem; and 'I've grouped my differentials by how long it is since the operation'"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › PostOp_Fever_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-51",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Surgical ward, day 2–3 after cholecystectomy. You are the medical officer. Stem reconstructed from Version B in the variant section — the notes give the changed answers and findings, not a verbatim door stem.",
   "stem": [
    "James Whitmore, 45, is two to three days post-cholecystectomy and has developed a fever. The nurse asks you to review him.",
    "Observations: temperature 38.4°C · pulse 112 · BP 168/96 · respiratory rate 16 · SpO2 97% on room air."
@@ -14960,105 +15046,198 @@
    "Explain your diagnosis and your differentials to the patient",
    "Outline your management plan"
   ],
-  "time": "8 minutes. Same nine-box spine as MED-50. The station is won or lost at the cardiac block: he only reveals the chest tightness if you ask. Normal RR, normal saturations and a normal chest mean you cannot call this atelectasis.",
-  "back": {
-   "dx": "Post-operative fever day 2–3 with tachycardia, hypertension, a normal chest, and — only on direct questioning — twenty minutes of chest tightness overnight with palpitations, a father with MI at 50, and antihypertensives withheld peri-operatively. Working diagnosis: peri-operative myocardial infarction / acute coronary syndrome until proven otherwise (post-op MI is often painless or 'indigestion'; fever, tachycardia and hypertension from pain, catecholamines and withheld beta-blocker/ACE-I). Differentials kept in parallel: PE, intra-abdominal complication (bile leak/collection), pneumonia, atelectasis excluded by the normal chest. Discriminating behaviour: refusing the reflex atelectasis label when the respiratory findings are normal, and moving to ECG + serial troponin + monitoring + medical team in the room.",
-   "plan": [
-    [
-     "0:00",
-     "Stability statement · intro · open question · concern statement (as MED-50)"
-    ],
-    [
-     "0:40",
-     "Fever block, then the post-op review block including pain and analgesia"
-    ],
-    [
-     "2:00",
-     "Chest questions — nothing much. ★ Cardiac: 'any chest pain or tightness, even briefly? heart racing? previous heart trouble? family history?' → 'tightness across my chest last night, twenty minutes, thought it was indigestion; heart thumping; Dad had a heart attack at fifty' · ★ 'Which of your usual tablets were stopped for the operation?' → BP tablets withheld"
-    ],
-    [
-     "3:30",
-     "Urine, wound, legs/VTE, travel, cannula + date, reaction history; PMH, meds, allergies"
-    ],
-    [
-     "4:30",
-     "Examination in the fixed order; findings: chest entirely normal, abdomen soft, wound clean, calves soft"
-    ],
-    [
-     "5:15",
-     "★ To the examiner: 'With a normal respiratory rate, normal saturations and no chest findings I can't call this atelectasis. My working diagnosis is a cardiac event until proven otherwise — 12-lead ECG now, serial troponin, cardiac monitoring, medical team; and I want to know which cardiac and antihypertensive medicines were withheld. PE and an intra-abdominal complication stay on the list.'"
-    ],
-    [
-     "6:00",
-     "To the patient in plain English: 'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first because that's the one that can't wait — heart tracing and blood test now, and the medical team to see you.' Differentials named."
-    ],
-    [
-     "7:00",
-     "Management: monitored bed, ECG, troponin now and repeat, aspirin if no surgical contraindication after discussion with surgeon VERIFY, analgesia and antipyretic, restart withheld antihypertensives when safe, CXR/bloods/urine as baseline, medical registrar + cardiology, safety net, summary"
-    ]
-   ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Any chest pain or tightness, even briefly? Have you noticed your heart racing? Any previous heart trouble, and does anyone in the family have heart disease?'",
-    "★ 'Which of your regular medicines were stopped for the operation, and have they been restarted?'",
-    "★ 'With a normal respiratory rate, normal saturations and no chest findings, I can't call this atelectasis. My working diagnosis is a cardiac event until proven otherwise.'",
-    "'I'd like a 12-lead ECG now, serial troponin, cardiac monitoring, and I'd involve the medical team.'",
-    "'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first, because that's the one that can't wait — so I'm doing a heart tracing and a blood test right now.'",
-    "'I've also thought about a clot in the lung, a problem inside the tummy from the operation, and a chest infection — nothing points to those, but I'm checking.'",
-    "Safety net: 'Tell the nurses immediately if the tightness comes back, you feel your heart racing, you feel faint or short of breath.'"
-   ],
-   "pefe": [
-    "Given: T 38.4, HR 112, BP 168/96, RR 16, SpO2 97%. Chest examination entirely normal. Abdomen soft, wound clean, calves soft.",
-    "Request the same fixed sequence as MED-50 — general, vitals, respiratory in full with vocal resonance, CVS, abdomen with the four asks + drain, cannula, calves, dipstick — the normal chest is the point.",
-    "Investigations: 12-lead ECG now and repeat; troponin now and at 3–6 h (high-sensitivity) VERIFY; FBE, UEC, CRP, LFT, glucose; CXR; blood cultures if rigors; CTPA only if the ECG/troponin do not explain it and PE is suspected",
-    "Peri-operative MI: often silent or atypical; risk peaks day 1–3; withheld beta-blocker/ACE-I and catecholamine surge contribute; management is with cardiology and the surgeon — antiplatelet/anticoagulant decisions weigh surgical bleeding risk VERIFY",
-    "SA: medical registrar / cardiology; rural — MedSTAR 1300 13 12 33 for retrieval to a PCI-capable centre (RAH/FMC/LMH) if STEMI or high-risk NSTEACS VERIFY"
-   ],
-   "fails": [
-    "Calling atelectasis with a normal RR, normal SpO2 and a normal chest ★",
-    "Never asking the cardiac questions — the tightness is only volunteered on direct questioning ★",
-    "Not ordering an ECG and troponin in the room; sending him for physio ★",
-    "Not asking which medicines were withheld peri-operatively",
-    "Dropping PE and intra-abdominal complication from the differential",
-    "Jargon to the patient ('ACS', 'troponin') without translation; no safety net"
-   ],
-   "numbers": [
-    "Version B obs: T 38.4 · HR 112 · BP 168/96 · RR 16 · SpO2 97%",
-    "Changed answers: 20 min chest tightness overnight 'indigestion' · heart thumping · father MI at 50 · BP tablets withheld for surgery",
-    "hs-troponin at 0 and 3–6 h; ECG repeat with any symptoms; monitored bed VERIFY",
-    "Post-op MI peak day 1–3 · fever + tachycardia + hypertension ≠ atelectasis",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
-   ]
-  },
-  "source": "PostOp_Fever_2_Case_Tasks_Script_Notability.pdf (Version B — day 2–3, cardiac; stem reconstructed from Variant 1)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › PostOp_Fever_2_Case_Tasks_Script_Notability.pdf",
   "findings": [
    [
     "Observations",
-    "T 38.4 · HR 112 · BP 168/96 · RR 16 · SpO2 97%"
+    "T 38.4 · PULSE 112 · BP 168/96 · RR 16 · SpO2 97% ON ROOM AIR. THE RESPIRATORY RATE AND SATURATION ARE NORMAL — that is the entire point of this version"
    ],
    [
-    "Chest",
-    "Entirely normal"
+    "Chest examination",
+    "ENTIRELY NORMAL. Air entry equal, NO crepitations, percussion normal, vocal resonance normal. THERE ARE NO CHEST SIGNS"
    ],
    [
-    "Abdomen and wound",
-    "Soft; wound clean"
+    "Abdomen and limbs",
+    "Abdomen soft, wound clean and dry. Calves soft and equal"
    ],
    [
-    "Legs",
-    "Calves soft"
+    "The history that flips the station",
+    "CHEST TIGHTNESS FOR ABOUT TWENTY MINUTES OVERNIGHT — 'I thought it was indigestion' · HEART THUMPING · FATHER HAD A HEART ATTACK AT 50 · HIS BLOOD PRESSURE TABLETS WERE WITHHELD FOR SURGERY. None of it is volunteered unless you ask Box 4"
+   ],
+   [
+    "What you do before anything else",
+    "12-LEAD ECG NOW and SERIAL TROPONIN, on cardiac monitoring, and involve the medical team. Post-operative MI is frequently SILENT OR ATYPICAL"
+   ],
+   [
+    "The honest caveat if pressed",
+    "This pilot case was never definitively resolved. Do not invent an answer: 'with normal respiratory observations and no chest signs I cannot call this atelectasis. My working diagnosis is a cardiac event until the ECG and troponin say otherwise, and I would also want to exclude an intra-abdominal complication given the abdominal surgery.' That answer scores whatever the truth was"
+   ],
+   [
+    "VERSION — day 4, the bile leak",
+    "Pain spread across the WHOLE abdomen, no flatus since yesterday, vomiting, DRAIN BAG HAS GONE GREEN, mild jaundice → BILE LEAK or subhepatic collection. Blood cultures and lactate, FBE, CRP, U&E, LFT, lipase, CT abdomen and pelvis with contrast, fasted with IV fluids, SURGICAL REGISTRAR NOW. Not physiotherapy and reassurance"
+   ],
+   [
+    "VERSION — the septic turn mid-station",
+    "The nurse reports BP 85/50 and heart rate 132. STOP THE HISTORY. High-flow oxygen, two large-bore cannulae, blood cultures, venous lactate, fluid bolus, empirical IV antibiotics within the hour, catheterise for urine output, escalate to the surgical registrar and intensive care, MedSTAR 1300 13 12 33 EARLY"
    ]
   ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "Observations and what the absences mean",
   "must": [
-   "FAIL — Calling atelectasis with a normal respiratory rate, normal saturations and a normal chest — 'I can't call this atelectasis; my working diagnosis is a cardiac event until proven otherwise'",
-   "FAIL — Never asking the cardiac questions — the twenty minutes of chest tightness last night is only volunteered on direct questioning",
-   "FAIL — Not ordering a 12-lead ECG and serial troponin in the room, with cardiac monitoring and the medical team involved",
-   "DO — Ask which of his usual cardiac and antihypertensive medicines were withheld peri-operatively — the stopped blood pressure tablets are part of the case",
-   "DO — Keep pulmonary embolism and an intra-abdominal complication on the list in parallel; 'fever does not exclude a pulmonary embolism'",
-   "SAY — 'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first, because that's the one that can't wait — a heart tracing and a blood test right now'"
-  ]
+   "FAIL — Diagnosing atelectasis with a normal respiratory rate, normal saturation and no chest signs.",
+   "FAIL — A differential list with no cardiac entry. That is why this version exists.",
+   "FAIL — Continuing the history through a deteriorating patient instead of naming the pathway.",
+   "FAIL — Inventing a definitive diagnosis when the honest answer scores better.",
+   "ASK — Any chest pain or tightness, even briefly? Have you noticed your heart racing?",
+   "ASK — Which of your usual cardiac and blood pressure tablets were withheld for surgery?"
+  ],
+  "back": {
+   "dx": [
+    "**A cardiac event until proven otherwise — post-operative myocardial infarction.** Fever, tachycardia and hypertension **with a normal respiratory rate, normal saturation and no chest findings is not atelectasis.**",
+    "**This version was piloted once and almost nobody diagnosed it**, because candidate differential lists for post-operative fever traditionally contain **no cardiac entry at all**. **Keep MI on the list in every post-operative fever station you ever sit.**",
+    "**Surgery is a major physiological stressor, and post-operative MI is frequently silent or atypical.** In a 45-year-old with cardiovascular risk it is **the single most dangerous omission in this station**.",
+    "**ECG and serial troponin before anything else**, cardiac monitoring, and involve the medical team. **Do not wait to be asked.**",
+    "**Ask which cardiac and antihypertensive medicines were withheld peri-operatively** — **abrupt beta-blocker cessation causes rebound ischaemia**.",
+    "**The same observations also fit a surgery-specific complication** — **bile leak or subhepatic collection** — and that must be voiced in an abdominal case, alongside **pulmonary embolism**, which fever does not exclude.",
+    "**The honest caveat scores**: 'with normal respiratory observations and no chest signs I cannot call this atelectasis. My working diagnosis is a cardiac event until the ECG and troponin say otherwise, and I would also want to exclude an intra-abdominal complication.' **Do not invent a final diagnosis.**",
+    "**Say it to the patient without frightening him**: **'I'm concerned the operation may have put strain on your heart. I want to rule out a heart attack first, because that's the one that can't wait — so I'm doing a heart tracing and a blood test right now, and asking the medical team to see you.'**",
+    "**Escalation triggers: systolic under 90 · heart rate over 130 · respiratory rate over 25 · new confusion · lactate 2 or more · bilious drain output · generalised abdominal tenderness.** **Never keep taking a history through a deteriorating patient** — name the change, name the pathway, name who you are calling.",
+    "**The timeline still drives the list: day 2–3 is the EARLY group** — atelectasis and pneumonia, **myocardial infarction**, UTI, early wound infection, VTE. **The Five Ws omit MI and anastomotic leak entirely.** **MedSTAR 1300 13 12 33.**"
+   ],
+   "plan": [
+    [
+     "0:00",
+     "**Stability statement to the examiner**, then gel, introduce, open question, **and the concern statement.** Note the observations aloud: **fever with tachycardia and hypertension, but a NORMAL respiratory rate and saturation.**"
+    ],
+    [
+     "0:20",
+     "**Box 1, the fever: feverish yourself? shivering or shaking chills? when did it start? any fever before the operation? getting worse?**"
+    ],
+    [
+     "1:20",
+     "**Box 2, the post-operative review — the block everyone skips: any nausea or vomiting? have your bowels worked, have you passed wind? any tummy pain apart from the wound? any dizziness? have you started eating and drinking? HAVE YOU BEEN OUT OF BED? ARE YOU IN PAIN RIGHT NOW — AND ARE THE PAINKILLERS HELPING?** When he says it hurts to breathe in, **react to it in the room**: 'that's really important — I think the pain is part of what's causing this.'"
+    ],
+    [
+     "2:20",
+     "**Box 3, chest: any cough — dry or bringing anything up, what colour? any shortness of breath? any noisy breathing? ever had a lung condition? do you smoke, or have you ever?**"
+    ],
+    [
+     "2:50",
+     "**Box 4, heart — the box that decides Version B and the single most dangerous omission: ANY CHEST PAIN OR TIGHTNESS, EVEN BRIEFLY? have you noticed your heart racing or thumping? any previous heart trouble, heart attack or angina?** If he has known ischaemic disease, **which cardiac medicines were withheld for surgery** — abrupt beta-blocker cessation causes rebound ischaemia."
+    ],
+    [
+     "3:20",
+     "**Box 5, urine: any burning or pain passing urine? going more often? cloudy or offensive? any back or loin pain? HAVE YOU HAD A CATHETER?**"
+    ],
+    [
+     "3:40",
+     "**Box 6, the wound: any discharge or weeping? any redness or swelling? is it more painful than yesterday?** Discharge is the discriminating symptom — some redness after a fresh incision is normal, **escalating pain is not**."
+    ],
+    [
+     "4:00",
+     "**Box 7, legs: any swelling or pain in the calves? any sharp chest pain on breathing in, or coughed up blood? have you had the blood-thinning injection each day?**"
+    ],
+    [
+     "4:15",
+     "**Box 8, travel — and say why: 'did you travel anywhere in the weeks before the operation? I ask because an infection picked up before surgery can present like this'** — not because you are chasing a clot."
+    ],
+    [
+     "4:30",
+     "**Box 9, lines, drugs and blood: any redness or pain around the drip site — AND WHEN WAS IT PUT IN? have you ever had a fever after an operation before, after a blood transfusion, or after starting a new medicine?** That last sentence ticks off drug fever, transfusion reaction and a family history of malignant hyperthermia at once."
+    ],
+    [
+     "4:45",
+     "Closure and the concerns question."
+    ],
+    [
+     "4:50",
+     "**The examination request, specific not generic** — general appearance · respiratory in full **including vocal resonance**, which will be normal · **cardiovascular in detail here, not briefly** · abdomen with the four asks and the drain · cannula site · lower limbs · urine dipstick."
+    ],
+    [
+     "5:45",
+     "**Name what the findings do NOT support**: with a normal respiratory rate, normal saturations and no chest signs, **this is not atelectasis.** Then **'my working diagnosis is a cardiac event until proven otherwise.'**"
+    ],
+    [
+     "6:15",
+     "**To the patient, plainly**: strain on the heart, ruling out a heart attack first because it is the one that cannot wait, a heart tracing and a blood test **right now**, medical team to see him. Then the others still on the list — a chest problem, a urine infection, a clot, a problem at the operation site."
+    ],
+    [
+     "7:10",
+     "**The plan: 12-lead ECG and serial troponin, cardiac monitoring, medical review, and ask which cardiac medicines were withheld.** In parallel keep **PE and an intra-abdominal complication** live. Safety-net and review."
+    ]
+   ],
+   "pefe": [
+    "**ECG and serial troponin first**, then everything else. **Cardiac monitoring.** Ask **which cardiac and antihypertensive medicines were withheld peri-operatively.**",
+    "Request the examination in the same nine-part order as Version A, but **cardiovascular is central here, not brief** — S1 and S2, murmurs, added sounds, gallop rhythm.",
+    "**Ask for vocal resonance anyway** — it will be normal, and saying so is what lets you exclude the chest confidently rather than by assumption.",
+    "**Still ask the four abdominal items — wound, suprapubic, renal angle, masses — plus distension and drain output**, because the same observations fit a bile leak or subhepatic collection after cholecystectomy.",
+    "Bloods: **FBE and CRP** (not ESR — it rises non-specifically after surgery and lags by days) **· U&E, LFT, lipase if abdominal signs · venous lactate if any sepsis features · two sets of blood cultures if rigoring or septic.** **CT abdomen with contrast** if a collection or leak is suspected.",
+    "**D-dimer is unreliable post-operatively** — go to compression ultrasound or CTPA if VTE is suspected.",
+    "**Escalate rather than review in the morning** for MI, PE, anastomotic or bile leak, necrotising surgical site infection, or sepsis of any source."
+   ],
+   "ddx": [
+    [
+     "**Atelectasis** — the answer",
+     "**Day 1**, abdominal wound, **poorly controlled pain**, tachypnoea, mild desaturation; fever can reach 40",
+     "Shallow breathing, minimal cough, decreased air entry with crepitations, **vocal resonance NORMAL OR REDUCED**",
+     "**Chest X-ray — volume loss, linear or plate collapse, no consolidation. Analgesia and physiotherapy** — routine, but review"
+    ],
+    [
+     "Pneumonia",
+     "**Day 2–5**, purulent sputum, prolonged intubation, aspiration risk, higher CRP",
+     "**Bronchial breathing, INCREASED vocal resonance**, purulent sputum",
+     "CXR consolidation, sputum and blood cultures; treat per Therapeutic Guidelines for hospital-acquired pneumonia — urgent"
+    ],
+    [
+     "**Myocardial infarction**",
+     "Day 1–3, **chest pain or none at all**, palpitations, tachycardia, hypertension, cardiac risk factors, **withheld cardiac medicines**",
+     "Chest tightness, dyspnoea, diaphoresis, new arrhythmia; **may be entirely silent**",
+     "**12-lead ECG and serial troponin. Do not wait to be asked** — immediate"
+    ],
+    [
+     "**DVT and pulmonary embolism**",
+     "Immobility, pelvic or abdominal surgery, calf pain, pleuritic pain, sudden desaturation. **PE DOES cause fever**",
+     "Unilateral calf swelling and tenderness, haemoptysis, unexplained tachycardia",
+     "**Wells score → D-dimer is unreliable post-operatively; go to compression ultrasound or CTPA** — immediate"
+    ],
+    [
+     "Urinary tract infection",
+     "Catheter in situ, dysuria, frequency, offensive urine, suprapubic or loin tenderness",
+     "Dysuria and frequency; **loin pain with nausea and vomiting → pyelonephritis**",
+     "**Urine dipstick then MCS — dipstick alone misses infection and is unreliable with a catheter** — urgent"
+    ],
+    [
+     "**Surgical site infection**",
+     "Usually day 3–7; discharge, **escalating** wound pain, spreading erythema",
+     "Purulent discharge, fluctuance; **within 48 h with pain out of proportion or crepitus → NECROTISING**",
+     "Inspect and swab, involve the surgical team. **Necrotising infection needs theatre, not antibiotics alone** — immediate"
+    ],
+    [
+     "**Surgery-specific complication**",
+     "Day 3+, abdominal surgery, distension, ileus, **bile-stained drain**, generalised tenderness",
+     "After cholecystectomy: **bile leak, subhepatic collection, retained CBD stone, visceral injury**",
+     "**FBE, CRP, U&E, LFT, lipase; CT abdomen with contrast; surgical registrar NOW** — immediate"
+    ],
+    [
+     "Thrombophlebitis and line sepsis",
+     "**Cannula in for over 72 h**, erythema and tenderness along the vein",
+     "Red, tender, palpable cord at the cannula site",
+     "**Remove and resite**; culture the tip if purulent; blood cultures if septic — same day"
+    ],
+    [
+     "Nosocomial infection",
+     "Day 3+, antibiotics given, diarrhoea, catheter in situ",
+     "Hospital-acquired pneumonia, catheter-associated UTI, **C. difficile**",
+     "Culture the site. **C. difficile: oral vancomycin 125 mg QID for 10 days** — metronidazole is no longer first line — urgent"
+    ],
+    [
+     "Drug and transfusion reaction · malignant hyperthermia · other",
+     "New antibiotic or antiepileptic; transfusion within hours; **rigidity and masseter spasm within hours of anaesthesia**; alcohol withdrawal day 2–4",
+     "Rash, eosinophilia; **febrile transfusion reaction is a rise of 1°C or less**; family history of anaesthetic problems",
+     "Chart review — **a diagnosis of exclusion, never your first answer**. **Malignant hyperthermia: dantrolene 2.5 mg/kg IV, cooling, ICU** — immediate"
+    ]
+   ]
+  },
+  "source": "PostOp_Fever_2_Case_Tasks_Script_Notability.pdf (Version B — day 2–3, cardiac; stem reconstructed from Variant 1)",
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › PostOp_Fever_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-52",
