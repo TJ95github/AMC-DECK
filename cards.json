@@ -88329,7 +88329,6 @@
   "cat": "med",
   "promptBell": false,
   "promptAt": 480,
-  "setting": "The abdomen and GI clustered flow sheet — four pages of one-line pattern-to-diagnosis-to-action, clustered by where it hurts and what the symptom is, with an automatic-fail line at the foot of every page. It is a reference card, not a role-play: the value is the discriminating feature for each pair that candidates confuse, and the kill list decided in the first five minutes.",
   "stem": [
    "Page one — acute abdominal pain by site: the kill list, then right iliac fossa, left iliac fossa, epigastric, right upper quadrant, loin to groin, and the central, diffuse and medical mimics.",
    "Page two — upper GI: dyspepsia, swallowing, vomiting and obstruction, bleeding, the telehealth format and the endoscopy counselling script. Page three — lower GI: acute and chronic diarrhoea, rectal bleeding and bowel habit, perianal disease, screening. Page four — jaundice, deranged LFTs and chronic liver disease, pelvic pain in a woman, girth and weight change."
@@ -88339,74 +88338,181 @@
    "Step zero on each page is what is marked every time",
    "The automatic-fail line on each page is the checklist"
   ],
-  "time": "Not a timed station. Use the kill list as a five-minute decision set, and each page's step zero as the things that are marked in every station in that cluster",
   "back": {
-   "dx": "A REFERENCE CARD. THE PATTERNS WORTH HOLDING IN ONE PLACE: BOWEL OBSTRUCTION — small bowel is early vomiting with previous surgery and a 48-hour conservative trial for adhesions; large bowel is distension and absolute constipation first with late faeculent vomiting and an assumed obstructing tumour; fever, tachycardia, localised tenderness or a rising lactate in an obstructed patient is strangulation and ends the conservative trial. Upper GI bleeding — resuscitate first, diagnose second: two large-bore cannulas, crossmatch, reverse anticoagulation, Glasgow-Blatchford; varices get terlipressin and ceftriaxone before endoscopy and banding within 12 hours; a peptic ulcer bleed gets IV PPI and endoscopy within 24 hours. Diarrhoea — no antibiotics and no loperamide where shiga-toxin E. Coli is possible; C. Difficile after antibiotics or hospital, treated with oral vancomycin and contact precautions; coeliac serology only while still eating gluten and biopsy before any gluten-free diet. Rectal bleeding — describe the blood precisely, on the paper, dripping, or mixed through; never blame piles in an over-50 without a colonoscopy. Perianal — an abscess is incision and drainage, antibiotics alone are not treatment; fissures off the midline, multiple and deep are Crohn disease; crepitus and spreading erythema in a diabetic is fournier gangrene. Jaundice — ducts dilated with pain, fever and rigors is cholangitis needing drainage within 24 to 48 hours; ducts dilated and painless with weight loss and a palpable gallbladder is a pancreatic head cancer; isolated unconjugated bilirubin in a well patient is gilbert and needs no follow-up. Liver — AST:ALT over 2 with a high GGT and macrocytosis is alcohol; a modest ALT rise with metabolic risk and a bright liver is MASLD stratified by FIB-4; ALP up with a normal GGT is bone, not liver; ascites gets a diagnostic tap before antibiotics, with neutrophils over 250 meaning spontaneous bacterial peritonitis; everyone with cirrhosis leaves with six-monthly ultrasound, variceal screening, vaccination, and no NSAIDs or sedatives. Pelvis — ectopic is transvaginal ultrasound with quantitative βhCG, unstable means theatre not a scan, anti-D if rhesus negative; torsion is not excluded by normal Doppler flow; PID is treated empirically on suspicion; postmenopausal bleeding of any volume is endometrial cancer until excluded. Telehealth — name the limitation, ask surrogate questions, set an explicit ED threshold, document and book face-to-face review. VERIFY every threshold and drug choice.",
+   "dx": [
+    "**STEP 0, BEFORE YOU NARROW ANYTHING**: **A to E, observations, IV access, and ANALGESIA OFFERED EARLY AND OUT LOUD.** Then the **three moves that are marked every time**: **URINE βhCG in every woman of reproductive age · ECG in anyone over 40 with upper abdominal pain · HERNIAL ORIFICES AND EXTERNAL GENITALIA in every patient, because TESTICULAR TORSION REFERS TO THE LOWER ABDOMEN.** **Bloods: FBE, UEC, LFT, LIPASE, CRP, LACTATE, glucose, group and hold. Erect CXR if peritonitic.**",
+    "**THE KILL LIST — decide these in the first five minutes. Every one of them kills through DELAY, not through diagnostic difficulty.** **Rigid silent abdomen, shock, free gas → PERFORATION.** **Pulsatile expansile mass, back pain, collapse, man over 65 → RUPTURED AAA — bedside USS, and DO NOT SEND AN UNSTABLE PATIENT TO CT.** **Pain far out of proportion to a soft abdomen, AF or vascular disease, rising lactate → MESENTERIC ISCHAEMIA.** **Positive βhCG with pain, faintness, shoulder-tip pain → RUPTURED ECTOPIC — resuscitate and theatre, NOT a formal scan.** **Irreducible tender groin lump with obstruction → STRANGULATED HERNIA — STOP attempting reduction.** **Fever, hypotension, delirium with an abdominal source → INTRA-ABDOMINAL SEPSIS: cultures then antibiotics WITHIN THE HOUR, and source control.**",
+    "**RIGHT ILIAC FOSSA — in a woman this is a GYNAECOLOGICAL problem until the pregnancy test AND the ovary have been cleared.** Central pain migrating to the RIF with anorexia, low fever and rebound at McBurney → **appendicitis** (Alvarado or AIR score; **USS first in young women and pregnancy**, CT if inconclusive). Sudden severe unilateral pain in waves with an adnexal mass, afebrile → **ovarian torsion — and NORMAL DOPPLER FLOW DOES NOT EXCLUDE IT.** Bilateral low pain with discharge, deep dyspareunia and cervical excitation → **PID: treat EMPIRICALLY, don't wait for swabs.**",
+    "**LEFT ILIAC FOSSA**: pain, fever, altered habit, over 50, previous identical episodes → **diverticulitis** (CT, Hinchey grade, **colonoscopy at 6–8 weeks**). Guarding, rigidity or free gas → **perforated diverticulitis.** **Blood MIXED THROUGH stool with weight loss and iron deficiency → COLORECTAL CANCER.** Older patient with AF, sudden pain then bloody diarrhoea that settles → **ischaemic colitis.** **Pain reproduced with the abdominal wall TENSED → ABDOMINAL WALL PAIN, Carnett sign positive — stop investigating the viscera.**",
+    "**EPIGASTRIC — character and what relieves it separates the four.** Boring through to the back, better leaning forward, alcohol or gallstones → **pancreatitis (lipase >3× ULN).** Gnawing burning eased by food or antacid → **peptic ulcer.** **Pressure with sweating and nausea, exertional, risk factors → INFERIOR MI — ECG WITH POSTERIOR AND RIGHT-SIDED LEADS.** Hard infrequent stool on opioids or iron → constipation, **and exclude overflow on PR.**",
+    "**RIGHT UPPER QUADRANT — DURATION OF THE EPISODE IS THE DISCRIMINATOR.** **Settles fully within 6 hours, no fever → BILIARY COLIC.** **Constant beyond 6 hours with fever and a positive Murphy → CHOLECYSTITIS** (USS wall >3 mm, pericholecystic fluid; **surgery same admission**). **Pain + fever + JAUNDICE → ASCENDING CHOLANGITIS; add confusion and hypotension for the pentad — ERCP drainage within 24–48 h.** And **fever with pleuritic pain and cough, especially a child → RIGHT BASAL PNEUMONIA: chest examination and CXR, antibiotics not laparotomy.**",
+    "**LOIN TO GROIN — ask about FEVER. That one answer separates an analgesia problem from a DECOMPRESSION EMERGENCY.** Sudden colic, **restless and unable to lie still**, dipstick haematuria → **ureteric colic** (non-contrast CT KUB; **USS first in pregnancy**). **Colic PLUS rigors and hypotension with a stone → OBSTRUCTED INFECTED SYSTEM: a urological emergency needing NEPHROSTOMY OR STENT — ANTIBIOTICS ALONE FAIL.** **First episode of loin and back pain in a man over 60 → LEAKING AAA: do not anchor on renal colic.**",
+    "**CENTRAL AND DIFFUSE — and the MEDICAL MIMICS that get taken to theatre.** Colicky central pain, vomiting, absolute constipation, distension, previous surgery → **bowel obstruction.** **DKA — vomiting, thirst, polyuria, deep sighing breathing: bedside ketones and a venous gas, FLUIDS AND INSULIN, NOT THEATRE.** **Hypercalcaemia** — confusion, constipation, thirst, bone pain. **Adrenal crisis** — postural hypotension, pigmentation, hyponatraemia, steroid withdrawal: **hydrocortisone BEFORE the result.** **RUQ pain with hypertension and proteinuria over 20 weeks → PRE-ECLAMPSIA or HELLP.**",
+    "**UPPER GI — the ALARM features decide who gets scoped and when**: **A**naemia · **L**oss of weight · **A**norexia · **R**ecent onset and progressive · **M**elaena or haematemesis · **S**wallowing difficulty · **age over 55.** Any one, or persistent vomiting, an epigastric mass or a family history → **urgent gastroscopy rather than another PPI script.** **Iron deficiency anaemia in a man or a postmenopausal woman is investigated at BOTH ENDS.** **A gastric ulcer is biopsied AND re-scoped — they can be malignant.**",
+    "**LOWER GI — two rules govern the whole page.** **An abdominal examination without a PR here is INCOMPLETE — offer it, with a chaperone, and document that you offered.** And **separate functional from organic on the red flags: weight loss, rectal bleeding, iron deficiency anaemia, nocturnal symptoms, fever, a mass, onset after 50, or a family history of bowel or ovarian cancer. Any one of them and this is NOT irritable bowel.** **SYMPTOMS ALWAYS TRUMP SCREENING — never use a faecal occult blood test to reassure a symptomatic patient.**"
+   ],
    "plan": [
     [
-     "PAGE 1",
-     "Acute pain by site — step zero, the kill list, then RIF, LIF, epigastric, RUQ, loin-to-groin, and the central and medical mimics: obstruction, DKA, hypercalcaemia, adrenal crisis, pre-eclampsia or HELLP."
+     "PAGE 1 · site",
+     "**Acute abdominal pain clustered by WHERE IT HURTS.** Step 0 first, then the kill list, then the six site clusters: **RIF · LIF · epigastric · RUQ · loin-to-groin · central and diffuse with the medical mimics.**"
     ],
     [
-     "PAGE 2",
-     "Upper GI — alarm features, dyspepsia by pattern, dysphagia's two opening questions, vomiting and obstruction with the paediatric entries, haematemesis and melaena resuscitated first, the endoscopy counselling script, and the telehealth format."
+     "PAGE 2 · upper GI",
+     "**Dyspepsia, swallowing, vomiting, bleeding.** Alarm features → scope. **DYSPHAGIA opens on two questions: SOLIDS ONLY or solids AND liquids from the start, and TROUBLE STARTING the swallow versus food STICKING AFTER it.** **Obstruction biochemistry is a hypochloraemic hypokalaemic metabolic alkalosis with AKI.**"
     ],
     [
-     "PAGE 3",
-     "Lower GI — PR and red flags as the two rules, acute diarrhoea under two weeks, chronic diarrhoea and bloating beyond four, rectal bleeding and bowel habit, screening versus symptoms, and perianal pain, lump and discharge diagnosed on inspection."
+     "PAGE 3 · lower GI",
+     "**Diarrhoea, bleeding, bowel habit, perianal.** **Describe the blood precisely — on the paper, dripping into the pan, or mixed through the stool — then EXAMINE.** Perianal: **consent, chaperone, left lateral with knees drawn up, good light. INSPECT BEFORE YOU TOUCH — most of this is diagnosed on inspection. NEVER force a PR on a fissure.**"
     ],
     [
-     "PAGE 4",
-     "Jaundice split by urine and stool colour then by duct dilatation, deranged LFTs by pattern, chronic liver disease and its complications, pelvic pain in a woman in the marked order, and girth and weight change."
+     "PAGE 4 · liver, pelvis, whole patient",
+     "**Jaundice opens on urine colour, stool colour and itch.** **Liver bloods: NAME THE PATTERN before ordering anything.** **Pelvic pain: urine βhCG BEFORE ANYTHING ELSE.** **Girth and weight: documented weights, then percuss for shifting dullness.**"
     ],
     [
-     "FAILS",
-     "Each page ends with its automatic-fail line and the South Australian services to name — read that line before any station in the cluster."
+     "The jaundice split",
+     "**Urine and stool colour split it into thirds; then ask the ultrasound ONE question — ARE THE BILE DUCTS DILATED?** Dilated with pain, fever and rigors → **stone with cholangitis.** **Dilated, PAINLESS, weight loss, palpable non-tender gallbladder → PANCREATIC HEAD CANCER.** Not dilated with raised ALP and GGT in a middle-aged woman with itch → primary biliary cholangitis."
+    ],
+    [
+     "Liver function versus liver injury",
+     "**ALT and ALP describe INJURY. INR, ALBUMIN and BILIRUBIN describe FUNCTION — and only those change management urgently.** **AST:ALT above 2 with high GGT and macrocytosis → alcohol-related.** **ALP up with a NORMAL GGT → BONE, NOT LIVER.**"
+    ],
+    [
+     "Girth — six causes",
+     "**FAT · FLUID · FLATUS · FAECES · FETUS · a MASS.** **Any woman of reproductive age with rising girth gets a βhCG before anything else.** **New persistent bloating with early satiety and urinary urgency in a woman over 50 → OVARIAN CANCER — the classic trap, and it is NOT irritable bowel.**"
+    ],
+    [
+     "Weight loss — divide by appetite",
+     "**REDUCED appetite → malignancy, chronic infection, psychosocial.** **PRESERVED appetite → thyrotoxicosis, diabetes, malabsorption.** Full examination including **breast, testes, nodes and PR.**"
+    ],
+    [
+     "Telehealth format",
+     "**A recurring station shape. You cannot examine, so the SAFETY NET carries the weight.** **Say plainly what you cannot do.** Ask **surrogate questions: fluid tolerance, urine output, alertness, colour of the vomit, whether wind is passing.** **Set an EXPLICIT threshold: bilious or faeculent vomit, severe constant pain, no wind or stool, blood, drowsiness, cannot keep fluids down.** Then **document, book face-to-face review, and confirm transport and distance in a country setting.**"
+    ],
+    [
+     "Endoscopy counselling — the script, asked in its own right",
+     "**WHAT AND WHY** — a thin flexible camera through the mouth to look at gullet, stomach and the first part of the bowel, and take painless biopsies. **PREPARATION** — nil by mouth 6 hours for food, 2 for clear fluids; **withhold the PPI for 2 weeks if testing H. pylori**; plan anticoagulants and diabetes drugs. **RISKS** — sore throat and bloating common, bleeding uncommon, **perforation about 1 in 10,000**, sedation risks. **AFTERWARDS** — **no driving, work or legal documents for 24 hours**, escort home, biopsies back in about a week."
     ]
    ],
-   "planApprox": true,
-   "planNote": "pages, not minutes — this card is read before a station, not performed in one",
-   "ask": [
-    "The two dysphagia questions that open the whole tree: 'Is it solids only, or solids and liquids from the start?' and 'Is the trouble starting the swallow, or does food stick after it?'",
-    "The jaundice opener: 'What colour is your urine? What colour are your stools? Is there any itch?' — and the one question for the ultrasound: 'Are the bile ducts dilated?'",
-    "The rectal bleeding question, precisely: 'Is the blood on the paper, dripping into the pan, or mixed through the stool?'",
-    "The endoscopy counselling script in order: what and why — a thin flexible camera through the mouth with painless biopsies · preparation — nil by mouth six hours for food and two for clear fluids, PPI withheld two weeks if testing h. Pylori, anticoagulants and diabetes drugs planned · risks — sore throat and bloating common, bleeding uncommon, perforation about 1 in 10,000, sedation · recovery — no driving, work or legal documents for 24 hours, an escort home, biopsies back in about a week.",
-    "The telehealth close: 'I can't examine you or take your observations, which limits how certain I can be. Go straight to the emergency department if the vomit turns green or smells of faeces, the pain becomes severe and constant, you stop passing wind or stool, there is any blood, you become drowsy, or you cannot keep fluids down.'"
-   ],
    "pefe": [
-    "Not a role-play. Use the card in three ways: read the relevant page's step zero and automatic-fail line before practising any station in that cluster · check a discriminator when two diagnoses blur · and pull the next step for a diagnosis the station lands on.",
-    "The automatic-fail lines across the four pages: no βhCG · no ECG · hernial orifices and scrotum not examined · analgesia withheld to preserve signs · an unstable patient sent to the scanner · antibiotics alone for an obstructed infected kidney · ketoacidosis taken to theatre · alarm features answered with a repeat PPI · a gastric ulcer without biopsy or re-scope · iron deficiency investigated at one end only · a stroke patient left eating before a swallow assessment · pyloric stenosis to theatre before the electrolytes are fixed · a bleeding patient transferred before resuscitation · no antibiotics in a variceal bleed · no PR · a telehealth consult with no return threshold · antibiotics or loperamide in possible shiga-toxin E. Coli · coeliac serology after gluten was stopped · piles blamed for bleeding in an older patient · a faecal occult blood test on a symptomatic patient · IBS diagnosed in a woman over 50 with new bloating · an abscess on antibiotics alone · cholangitis mistaken for biliary colic · painless jaundice with weight loss treated as hepatitis · a staggered paracetamol ingestion missed · antibiotics before the ascitic tap · an NSAID in cirrhosis · waiting for a scan in an unstable woman with a positive test · torsion excluded on normal Doppler · PID treatment withheld until swabs return · postmenopausal bleeding not investigated · no chaperone · not asking about intimate partner violence alone.",
-    "South Australian services across the pages: MedSTAR 1300 13 12 33 · RFDS · PATS · country health connect · RAH, TQEH and WCH receiving units, the RAH liver and transplant unit · SA pathology · SA health communicable disease notification · SHINE SA · SA bowel screening · pregnancy advisory centre · 1800respect · drug and alcohol services SA · ACCHS and closing the gap · TIS National 131 450.",
-    "The companion history scaffold is med-253, the abdominal pain structure drill card. This sheet supplies the diagnoses and next steps that the drill card's groups are filled with.",
-    "Page one step zero — before you narrow anything — A to E, observations, IV access, analgesia offered early and out loud. Then three moves marked every time: urine βhCG in every woman of reproductive age · ECG in anyone over 40 with upper abdominal pain · hernial orifices and external genitalia in every patient, because torsion refers to the lower abdomen. Bloods: FBE, UEC, LFT, lipase, CRP, lactate, glucose, group and hold. Erect CXR if peritonitic",
-    "The kill list — decided in the first five minutes — Rigid silent abdomen with shock and free gas → perforation · pulsatile expansile mass, back pain, collapse in a man over 65 → ruptured AAA, bedside USS, never CT while unstable · pain out of proportion to a soft abdomen with AF and a rising lactate → mesenteric ischaemia · positive βhCG with pain, faintness, shoulder-tip pain → ruptured ectopic, theatre not a scan · irreducible tender groin lump with obstruction → strangulated hernia, stop reducing · fever, hypotension, delirium with an abdominal source → sepsis, cultures then antibiotics within the hour. Every one kills through delay, not diagnostic difficulty",
-    "The discriminators candidates confuse — RUQ: duration splits biliary colic (Settles fully, no fever) from cholecystitis (Constant beyond six hours, fever, Murphy) from cholangitis (Add jaundice) · loin: one question, fever, separates an analgesia problem (Ureteric colic) from a decompression emergency (Obstructed infected system) · epigastric: character and what relieves it separates pancreatitis (Boring to the back, better forward), peptic ulcer (Gnawing, eased by food or antacid), inferior MI (Pressure with sweating, exertional) and abdominal wall pain (Carnett positive) · RIF in a woman is gynaecological until the pregnancy test and the ovary are cleared",
-    "Page two step zero — alarm features decide who gets scoped — Anaemia · loss of weight · anorexia · recent onset and progressive · melaena or haematemesis · swallowing difficulty · age over 55. Any one means urgent gastroscopy rather than another PPI script. Iron deficiency in a man or a postmenopausal woman is investigated at both ends. Dysphagia opens on two questions: solids only or solids and liquids from the start, and trouble starting the swallow or food sticking after it. Melaena with no vomiting is still upper GI — confirm on PR, same pathway",
-    "Page three step zero — two rules — An abdominal examination without a PR is incomplete here — offer it with a chaperone and document that you offered. And separate functional from organic on the red flags: weight loss, rectal bleeding, iron deficiency, nocturnal symptoms, fever, a mass, onset after 50, family history of bowel or ovarian cancer. Any one and this is not irritable bowel. Symptoms always trump screening — never use a faecal occult blood test to reassure a symptomatic patient. New bloating in a woman over 50 is ovarian cancer until ca 125 and ultrasound say otherwise",
-    "Page four step zero — the opening question for each cluster — Jaundice: what colour is the urine, what colour are the stools, is there itch — then ask the ultrasound one question, are the ducts dilated · liver bloods: name the pattern before ordering anything — ALT and ALP describe injury, INR, albumin and bilirubin describe function, and only function changes management urgently · pelvic pain: βhCG before anything else, whatever she says about contraception — pregnancy test, then stability, then the scan, and that order is what is marked · girth: fat, fluid, flatus, faeces, fetus, mass; weight loss divided by appetite"
+    "**This is a framework card, not a station — there is no patient and no examiner.** Run it against any abdominal or GI stem in the deck.",
+    "**The three marked moves, again, because they are the ones people skip**: **βhCG · ECG over 40 with upper abdominal pain · hernial orifices and external genitalia.** **Testicular torsion refers to the lower abdomen, and the scrotum does not examine itself.**",
+    "**Offer analgesia EARLY and OUT LOUD.** Withholding it to preserve signs is on the automatic-fail list, and it is also wrong.",
+    "**Resuscitate first, diagnose second in a GI bleed**: two large-bore cannulas, crossmatch, **reverse anticoagulation, Glasgow-Blatchford score, call gastroenterology and surgery.** **Terlipressin PLUS ceftriaxone BEFORE endoscopy in suspected varices** — no antibiotics in a variceal bleed is a named fail.",
+    "**Coeliac serology must be taken WHILE STILL EATING GLUTEN** — tTG IgA with total IgA, then duodenal biopsy **before any gluten-free diet.** Starting the diet first is a named fail and it costs the diagnosis.",
+    "**Never give antibiotics or loperamide in possible shiga toxin E. coli** — bloody diarrhoea in a child with pallor, bruising or falling urine output is **haemolytic uraemic syndrome.**",
+    "**The ascitic tap comes BEFORE the antibiotics** in suspected spontaneous bacterial peritonitis — **neutrophils above 250, then ceftriaxone plus albumin.** **SAAG above 11 g/L means portal hypertension.**",
+    "**Everyone with cirrhosis, before they leave**: **six-monthly USS ± AFP · endoscopy for varices · hepatitis A and B, influenza and pneumococcal vaccination · AVOID NSAIDs and sedatives.** SA — **MedSTAR 1300 13 12 33 · RFDS · PATS for metropolitan endoscopy · RAH liver and transplant unit · WCH for paediatric surgery · SHINE SA · SA Bowel Screening · 1800RESPECT · TIS National 131 450 · ACCHS and Closing the Gap.**"
    ],
-   "fails": [
-    "★ No βhCG in a woman of reproductive age, no ECG in upper abdominal pain over 40, hernial orifices and scrotum not examined",
-    "★ An unstable patient sent to the scanner; antibiotics alone for an obstructed infected kidney; ketoacidosis taken to theatre",
-    "★ Alarm features answered with a repeat PPI; iron deficiency investigated at one end only; piles blamed in an over-50 without colonoscopy",
-    "★ Coeliac serology after gluten was stopped; antibiotics or loperamide in possible shiga-toxin E. coli; an abscess on antibiotics alone",
-    "Cholangitis mistaken for biliary colic; painless jaundice with weight loss treated as hepatitis; antibiotics before the ascitic tap; torsion excluded on normal Doppler; PID withheld until swabs return; no chaperone; no PR; a telehealth consult with no return threshold"
-   ],
-   "numbers": [
-    "Alarm features: anaemia, weight loss, anorexia, recent progressive onset, melaena or haematemesis, dysphagia, age over 55 · lipase over 3× ULN for pancreatitis · biliary colic 30 minutes to 6 hours after a fatty meal; cholecystitis constant beyond 6 hours with gallbladder wall over 3 mm · cholangitis drainage within 24–48 hours · variceal banding within 12 hours, ulcer endoscopy within 24 · SBP: ascitic neutrophils over 250, SAAG over 11 g/L means portal hypertension · adhesional obstruction 48-hour conservative trial · endoscopy perforation about 1 in 10,000, NBM 6 hours food and 2 clear fluids, PPI off 2 weeks before h. Pylori testing · VERIFY",
-    "Screening: free iFOBT every two years from 45; a positive needs colonoscopy, not a repeat · diverticulitis colonoscopy at 6–8 weeks · cirrhosis surveillance six-monthly USS ± AFP · IBS: Rome IV, under 45, no red flags · lactose intolerance symptoms 30 minutes to 2 hours after dairy · pyloric stenosis 3–6 weeks, hypochloraemic hypokalaemic alkalosis corrected before theatre · HUS: shiga-toxin E. Coli, no antibiotics, no loperamide · VERIFY all"
+   "ddx": [
+    [
+     "**KILL LIST · perforation · ruptured AAA · mesenteric ischaemia**",
+     "Rigid silent abdomen with shock; pulsatile expansile mass in a man over 65; **pain far out of proportion to a soft abdomen with AF and rising lactate**",
+     "Free gas on erect CXR; bedside USS; serial lactate",
+     "**Resuscitate, antibiotics, theatre. DO NOT send an unstable patient to CT. CT angiogram for mesenteric — mortality is driven by delay.** Emergency"
+    ],
+    [
+     "**KILL LIST · ruptured ectopic · strangulated hernia · intra-abdominal sepsis**",
+     "Positive βhCG with faintness and shoulder-tip pain; irreducible tender groin lump with obstruction; fever, hypotension and delirium",
+     "**βhCG FIRST**; hernial orifices; perfusion and conscious state",
+     "**Theatre, not a formal scan. STOP attempting reduction. Cultures then antibiotics within the hour plus source control.** Emergency"
+    ],
+    [
+     "Appendicitis · ovarian torsion · PID",
+     "Central pain migrating to the RIF with anorexia; sudden unilateral pain in waves with an adnexal mass; bilateral low pain with discharge and cervical excitation",
+     "Rebound at McBurney; **Doppler flow — NORMAL FLOW DOES NOT EXCLUDE TORSION**; new partner, dyspareunia",
+     "**Alvarado or AIR; USS first in young women and pregnancy. TV USS with Doppler then laparoscopy. Treat PID empirically — NAAT, full STI screen, contact tracing.** Urgent"
+    ],
+    [
+     "Diverticulitis · ischaemic colitis · colorectal cancer",
+     "Over 50 with LIF pain, fever and altered habit; AF with sudden pain then bloody diarrhoea that settles; **blood MIXED THROUGH stool with weight loss and iron deficiency**",
+     "Guarding or rigidity (perforation); embolic source; **PR examination**",
+     "**CT with Hinchey grade and colonoscopy at 6–8 weeks. Colonoscopy with biopsy, CEA, staging CT, MDT.** Urgent"
+    ],
+    [
+     "Pancreatitis · peptic ulcer · **inferior MI** · abdominal wall pain",
+     "Boring to the back, better leaning forward; gnawing burning eased by food; **pressure with sweating, exertional, risk factors**; pain reproduced with the wall tensed",
+     "**Lipase >3× ULN; H. pylori; ECG WITH POSTERIOR AND RIGHT-SIDED LEADS; CARNETT SIGN**",
+     "**An ECG in anyone over 40 with upper abdominal pain is an automatic-fail item if omitted.** Varies"
+    ],
+    [
+     "**Biliary colic vs cholecystitis vs cholangitis — duration decides**",
+     "**Settles fully within 6 h, no fever** · **constant beyond 6 h with fever and positive Murphy** · **pain + fever + JAUNDICE, ± confusion and hypotension**",
+     "USS: wall >3 mm, pericholecystic fluid, duct dilatation; cholestatic LFT; blood cultures",
+     "**Elective lap chole · IV antibiotics and surgery same admission · ERCP DRAINAGE WITHIN 24–48 HOURS.** Escalating"
+    ],
+    [
+     "**Ureteric colic vs obstructed infected system**",
+     "Sudden colic, **restless and unable to lie still**, dipstick haematuria · **the same PLUS rigors and hypotension**",
+     "**FEVER — that one answer separates them**",
+     "**Non-contrast CT KUB, NSAID first line, strain the urine. An infected obstructed system needs NEPHROSTOMY OR STENT — ANTIBIOTICS ALONE FAIL.** Emergency"
+    ],
+    [
+     "**The medical mimics taken to theatre**",
+     "**DKA** — vomiting, thirst, polyuria, deep sighing breathing · **hypercalcaemia** · **adrenal crisis** · **pre-eclampsia or HELLP**",
+     "Bedside ketones and venous gas; corrected calcium; postural BP and pigmentation; **BP and urine protein over 20 weeks**",
+     "**Fluids and insulin, not theatre. Hydrocortisone BEFORE the result. Urgent obstetric referral.** Emergency"
+    ],
+    [
+     "Bowel obstruction — small, large, strangulating, volvulus",
+     "**Colicky central pain with EARLY vomiting and previous surgery** · **distension and absolute constipation first, vomiting LATE and faeculent** · **fever, tachycardia, localised tenderness, rising lactate** · elderly and constipated with a coffee-bean loop",
+     "Tinkling bowel sounds; hernial orifices; **hypochloraemic hypokalaemic alkalosis with AKI**",
+     "**CT for level, cause and ischaemia. 48-hour conservative trial for adhesions — STRANGULATION ENDS IT. Flexible sigmoidoscopy and flatus tube for volvulus.** Urgent"
+    ],
+    [
+     "Paediatric — pyloric stenosis · intussusception · mesenteric adenitis",
+     "**3–6 weeks, projectile NON-BILIOUS vomiting, hungry straight after, olive mass** · **toddler with colicky screaming, legs drawn up, redcurrant-jelly stool, sausage mass** · child with abdominal pain plus a sore throat, tender but soft",
+     "USS in both; **a diagnosis of exclusion for adenitis**",
+     "**CORRECT THE ALKALOSIS AND POTASSIUM BEFORE THEATRE. Air enema reduction. Observe and re-examine rather than discharge.** Urgent"
+    ],
+    [
+     "Dysphagia — **two questions open the tree**",
+     "**Coughing or choking within a second, nasal regurgitation, wet voice, recent stroke** · solids first then liquids, progressive, weight loss, smoker · solids only, intermittent for years · **solids AND liquids equally from the OUTSET with regurgitation of undigested food**",
+     "Solids only vs both; trouble STARTING vs sticking AFTER",
+     "**Speech pathology and video fluoroscopy, NBM until assessed · urgent OGD for cancer · dilatation for stricture · manometry for achalasia. A gurgling neck lump means BARIUM SWALLOW, NOT BLIND ENDOSCOPY.** Varies"
+    ],
+    [
+     "Acute diarrhoea — viral · bacterial · **HUS** · C. difficile · giardia · overflow",
+     "Household cluster without blood · fever with blood or mucus and travel · **child with pallor, bruising, falling urine output** · recent antibiotics with offensive stool · sulphurous belching and greasy stool · **constipated older person with liquid stool leaking around it**",
+     "Blood, antibiotics, travel, contacts; **PR examination settles overflow in one move**",
+     "**NO ANTIBIOTICS AND NO LOPERAMIDE IN POSSIBLE SHIGA TOXIN E. COLI. Stool toxin PCR and oral vancomycin for C. difficile. Notifiable where relevant.** Varies"
+    ],
+    [
+     "Rectal bleeding and bowel habit",
+     "**On the paper with severe pain during and after defecation** · **painless, dripping into the pan, a lump that reduces** · **blood MIXED THROUGH with altered habit and weight loss** · blood with mucus, urgency, tenesmus, nocturnal stools · **sudden large painless bleed in an elderly patient that stops**",
+     "**Describe the blood precisely, then PR and proctoscopy**",
+     "**NEVER blame piles in an over-50 without a colonoscopy. Stool culture BEFORE calprotectin in suspected IBD. CT angiogram while bleeding.** Varies"
+    ],
+    [
+     "Chronic diarrhoea and bloating — **and the classic trap**",
+     "Blood, nocturnal stools, weight loss, young · bloating with iron or folate deficiency and an itchy blistering rash · relief on defecation, under 45, no red flags · **NEW persistent bloating, early satiety, girth and urinary urgency in a woman over 50**",
+     "**Red flags separate functional from organic**; tTG IgA **while still eating gluten**",
+     "**IBS is a POSITIVE Rome IV diagnosis, not a label of last resort — but never in a woman over 50 with new bloating. CA 125 with TV and abdominal USS.** Varies"
+    ],
+    [
+     "Perianal — abscess · thrombosed pile · fistula · **Fournier** · anal cancer",
+     "Constant throbbing with fever and a tender fluctuant swelling · sudden blue-black lump over hours · persistent discharge with recurrent abscesses · **crepitus and spreading erythema in a diabetic** · indurated ulcer or mass with HPV or HIV risk",
+     "**Inspect before you touch. Fissures OFF the midline, multiple and deep → perianal Crohn**",
+     "**EUA with incision and drainage — ANTIBIOTICS ALONE ARE NOT TREATMENT. Fournier is a surgical emergency. Biopsy anything that does not look benign and offer HIV testing.** Emergency to routine"
+    ],
+    [
+     "Pelvic pain in a woman — **order of operations is what is marked**",
+     "**βhCG, THEN stability, THEN the scan.** Ectopic · miscarriage · torsion · PID · mittelschmerz · endometriosis · fibroids · **postmenopausal bleeding**",
+     "**Offer a chaperone; use an interpreter, not a family member; ask about intimate partner violence ALONE**",
+     "**Unstable with a positive test means THEATRE, not a scan. A normal ultrasound does not exclude endometriosis. POSTMENOPAUSAL BLEEDING OF ANY VOLUME IS ENDOMETRIAL CANCER UNTIL EXCLUDED.** Emergency to routine"
+    ]
    ]
   },
   "source": "Abdomen_and_GI_Clustered_Flow_Sheet_Notability.pdf (a four-page reference sheet clustered by site and symptom — acute abdominal pain with the kill list and the discriminators for each region; upper GI with alarm features, dysphagia, obstruction, bleeding, endoscopy counselling and the telehealth format; lower GI with the PR and red-flag rules, diarrhoea, bleeding, screening and perianal disease; and jaundice, deranged LFTs, chronic liver disease, pelvic pain in a woman and girth and weight change — each page ending with its automatic-fail line and the South Australian services to name)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Abdomen_and_GI_Clustered_Flow_Sheet_Notability.pdf",
   "must": [
-   "FAIL — No betaHCG in a woman of reproductive age, no ECG in upper abdominal pain over 40, hernial orifices and scrotum not examined, or analgesia withheld to preserve the signs",
-   "FAIL — An unstable patient sent to the scanner — and antibiotics alone for an obstructed infected kidney, which needs decompression, or ketoacidosis taken to theatre",
-   "FAIL — Alarm features answered with a repeat PPI script, a gastric ulcer left without biopsy and re-scope, or iron deficiency anaemia investigated at one end only",
-   "FAIL — Coeliac serology taken after gluten was stopped, antibiotics or loperamide in possible shiga toxin E. coli, or a faecal occult blood test used to reassure a symptomatic patient",
-   "FAIL — NO PR EXAMINATION, no chaperone offered or documented, or piles blamed for bleeding in a patient over 50 — the PR appears on two of the four automatic-fail lists",
-   "DO — The jaundice opener: 'What colour is your urine? What colour are your stools? Is there any itch?' — then the one question for the ultrasound, ARE THE BILE DUCTS DILATED? And cholangitis is never biliary colic: fever and rigors with a stone means decompression"
-  ]
+   "FAIL — No βhCG. In any woman of reproductive age, whatever she says about contraception or her last period.",
+   "FAIL — No ECG in anyone over 40 with upper abdominal pain; hernial orifices and external genitalia not examined.",
+   "FAIL — Withholding analgesia to preserve signs, or sending an unstable patient to the scanner.",
+   "FAIL — An abdominal examination with no PR offered and documented; antibiotics alone for an obstructed infected kidney; ketoacidosis taken to theatre.",
+   "ASK — What colour is your urine, what colour are your stools, and is there any itch? The jaundice tree splits on that one answer.",
+   "ASK — Is the blood on the paper, dripping into the pan, or mixed through the stool?"
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-63",
