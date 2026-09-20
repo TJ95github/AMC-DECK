@@ -59,6 +59,33 @@
   .goal .g2{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-3)}
   .goal .g2 .left{color:var(--ink-2)} .goal .g2 .left b{font-size:15px;color:var(--ink)}
 
+  /* backlog rail — what did not get done, stacking up on the right edge */
+  .bk{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;background:var(--card);
+      border:1.5px solid var(--line);border-right:0;border-radius:12px 0 0 12px;box-shadow:0 2px 14px rgba(0,0,0,.09);
+      padding:10px 8px;width:58px;text-align:center;cursor:pointer;font-variant-numeric:tabular-nums;transition:width .18s}
+  .bk[hidden]{display:none}
+  .bk .bkn{font-size:22px;font-weight:700;color:var(--bad);line-height:1}
+  .bk .bkl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin-top:3px}
+  .bk .ticks{display:flex;gap:2px;justify-content:center;align-items:flex-end;margin-top:8px}
+  .bk .ticks i{width:4px;background:var(--line);border-radius:2px;display:block;position:relative}
+  .bk .ticks i span{position:absolute;bottom:0;left:0;right:0;background:var(--ok);border-radius:2px;display:block}
+  .bk.open{width:268px;max-width:86vw;text-align:left;padding:14px;cursor:default}
+  .bk .panel{display:none} .bk.open .panel{display:block} .bk.open .mini{display:none}
+  .bk h4{margin:0 0 3px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .bk .tot{font-size:30px;font-weight:700;color:var(--bad);line-height:1.05}
+  .bk .tot small{font-size:13px;font-weight:600;color:var(--ink-3)}
+  .bk .paid{font-size:12.5px;color:var(--ok);font-weight:600;margin-top:3px}
+  .bk .hint{font-size:11.5px;color:var(--ink-3);margin-top:6px;line-height:1.35}
+  .bk table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:9px}
+  .bk td{padding:3px 0;border-top:1px solid var(--line);color:var(--ink-2)}
+  .bk td.d{color:var(--ink-3)} .bk td.s{text-align:right;font-weight:700;color:var(--bad)}
+  .bk td.s.z{color:var(--ok)}
+  .bk .bkbtn{display:flex;gap:8px;margin-top:10px}
+  .bk .bkbtn button{flex:1;min-height:36px;font-size:12.5px;border:1px solid var(--line);border-radius:9px;background:var(--paper);padding:6px}
+  @media (max-width:899px){ .bk{width:46px;padding:8px 6px} .bk .bkn{font-size:18px} }
+  body.hasbk .app{padding-right:calc(70px + env(safe-area-inset-right))}
+  @media (max-width:899px){ body.hasbk .app{padding-right:calc(56px + env(safe-area-inset-right))} }
+
   /* filters */
   .filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
   .chip{padding:6px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-size:13px;color:var(--ink-2);display:flex;align-items:center;gap:6px}
@@ -205,6 +232,7 @@
 </head>
 <body>
 <div class="app" id="app"></div>
+<aside class="bk" id="bk" hidden aria-label="Backlog"></aside>
 
 <div class="drawer" id="drawer" aria-hidden="true">
   <div class="sheet" role="dialog" aria-label="Settings">
@@ -246,8 +274,8 @@ const CATS = {
 let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
-const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync";
-let progress={}, custom=[], opts={bell:true, study:false, shuffle:false, prep:true, goal:60};
+const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync", KEY_DAYS="amc_osce_days";
+let progress={}, custom=[], days={}, opts={bell:true, study:false, shuffle:false, prep:true, goal:60, debtFrom:null};
 let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
 let timerId=null, remaining=480, timerDone=false, fired={}, phase="station";
 const PREP=120, STATION=480;
@@ -264,7 +292,7 @@ const store=(()=>{
 const hasStore = store.kind!=="none";
 
 async function load(){
-  for (const [k,fn] of [[KEY_PROG,v=>progress=v],[KEY_CUSTOM,v=>custom=v],[KEY_OPTS,v=>opts=Object.assign(opts,v)],[KEY_SYNC,v=>sync=Object.assign(sync,v)]]){
+  for (const [k,fn] of [[KEY_PROG,v=>progress=v],[KEY_CUSTOM,v=>custom=v],[KEY_DAYS,v=>days=v],[KEY_OPTS,v=>opts=Object.assign(opts,v)],[KEY_SYNC,v=>sync=Object.assign(sync,v)]]){
     try{ const r=await store.get(k); if(r) fn(JSON.parse(r)); }catch(e){ /* key absent on first run */ }
   }
 }
@@ -293,6 +321,56 @@ function doneToday(){
   return n;
 }
 function dailyGoal(){ return Math.max(1,parseInt(opts.goal,10)||60); }
+
+/* ===================== Backlog =====================
+   A day that falls short of the target leaves its shortfall behind, and the
+   shortfalls stack up. A day that overshoots pays some of the pile back. The
+   ledger is per-day and local to the device: only today's figure is recomputed
+   from progress, so past days stay frozen once they roll over. */
+let bkOpen=false;
+function dayMs(d){ const a=String(d).split("-").map(Number); return Date.UTC(a[0],a[1]-1,a[2],2,0,0); }
+function markToday(){
+  const t=today(), n=doneToday(), was=days[t]||0;
+  if(n>was){ days[t]=n; save(KEY_DAYS,days); }
+  else if(!(t in days)){ days[t]=n; save(KEY_DAYS,days); }
+}
+function backlogInfo(){
+  const g=dailyGoal(), t=today(), from=opts.debtFrom||t;
+  let running=0, rows=[], ms=dayMs(from), guard=0;
+  while(guard++<600){
+    const d=localDay(new Date(ms)); if(d>=t) break;
+    const n=days[d]||0, short=Math.max(0,g-n);
+    running=Math.max(0,running+(g-n));
+    rows.push([d,n,short]);
+    ms+=86400000;
+  }
+  const surplus=Math.max(0,doneToday()-g);
+  return {total:running, net:Math.max(0,running-surplus), surplus, rows:rows.slice(-14)};
+}
+const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+function backlogHTML(b){
+  const g=dailyGoal();
+  const last=b.rows.slice(-7);
+  const ticks=(last.length?last:[["",0,0]]).map(r=>{
+    const h=Math.max(2,Math.round(Math.min(1,(r[1]||0)/g)*22));
+    return `<i style="height:22px"><span style="height:${h}px"></span></i>`;
+  }).join("");
+  const lbl=d=>WD[new Date(dayMs(d)).getUTCDay()]+" "+d.slice(8);
+  return `<div class="mini"><div class="bkn">${b.net}</div><div class="bkl">behind</div><div class="ticks">${ticks}</div></div>
+  <div class="panel"><h4>Backlog &middot; Adelaide</h4>
+    <div class="tot">${b.net} <small>station${b.net===1?"":"s"} owed</small></div>
+    ${b.surplus?`<div class="paid">&minus;${b.surplus} paid back today</div>`:""}
+    <table>${b.rows.slice().reverse().map(r=>`<tr><td class="d">${lbl(r[0])}</td><td>${r[1]} / ${g}</td><td class="s ${r[2]?"":"z"}">${r[2]?"+"+r[2]:"clear"}</td></tr>`).join("")}</table>
+    <p class="hint">Days over the target pay the pile down. Wiping the slate starts the count again from today.</p>
+    <div class="bkbtn"><button id="bkClear">Wipe the slate</button><button id="bkClose">Close</button></div></div>`;
+}
+function paintBacklog(){
+  const el=document.getElementById("bk"); if(!el) return;
+  const b=backlogInfo();
+  if(!b.total && !bkOpen){ el.hidden=true; el.className="bk"; el.innerHTML=""; document.body.classList.remove("hasbk"); return; }
+  el.hidden=false; el.className="bk"+(bkOpen?" open":""); document.body.classList.add("hasbk");
+  el.innerHTML=backlogHTML(b);
+}
 
 /* ===================== Cross-device sync (private GitHub gist) =====================
    Ratings are mirrored to a secret gist on your own GitHub account. The token is
@@ -422,7 +500,7 @@ function rate(r){
   else { ease=ease+0.15; interval=interval===0?3:Math.round(interval*ease*1.3); }
   const d=new Date(); d.setDate(d.getDate()+interval);
   progress[c.id]={reps:p.reps+1,ease,interval,due:interval===0?today():localDay(d),last:r,seen:(p.seen||0)+1,at:new Date().toISOString()};
-  save(KEY_PROG,progress); syncSoon();
+  save(KEY_PROG,progress); markToday(); syncSoon();
   // Again keeps the card in this session: move it to the end of the queue
   if(r==="again"){ queue.push(queue.splice(idx,1)[0]); }
   else { idx++; }
@@ -520,9 +598,10 @@ function paintGoal(){
   const el=document.getElementById("goal"); if(!el) return;
   el.className="goal"+(doneToday()>=dailyGoal()?" done":"");
   el.innerHTML=goalHTML();
+  paintBacklog();
 }
 /* keeps the count honest if the app is left open across midnight */
-setInterval(paintGoal,30000);
+setInterval(()=>{ markToday(); paintGoal(); paintBacklog(); },30000);
 
 function render(){
   const app=document.getElementById("app");
@@ -646,6 +725,11 @@ function openDrawer(){
 function closeDrawer(){ const d=document.getElementById("drawer"); d.classList.remove("open"); d.setAttribute("aria-hidden","true"); }
 document.getElementById("closeBtn").onclick=closeDrawer;
 document.getElementById("drawer").addEventListener("click",e=>{ if(e.target.id==="drawer") closeDrawer(); });
+document.getElementById("bk").addEventListener("click",e=>{
+  if(e.target.id==="bkClear"){ opts.debtFrom=today(); save(KEY_OPTS,opts); bkOpen=false; paintBacklog(); return; }
+  if(e.target.id==="bkClose"){ bkOpen=false; paintBacklog(); return; }
+  if(!bkOpen){ bkOpen=true; paintBacklog(); }
+});
 document.getElementById("optGoal").onchange=e=>{
   opts.goal=Math.min(500,Math.max(1,parseInt(e.target.value,10)||60));
   e.target.value=opts.goal; save(KEY_OPTS,opts); paintGoal();
@@ -763,7 +847,9 @@ async function loadBuiltin(){
     const d=await r.json(); if(Array.isArray(d)) BUILTIN=d;
   }catch(e){ console.error("cards.json not loaded",e); setStatus("Could not load cards.json — open the deck from its web address"); }
 }
-(async()=>{ await Promise.all([load(),loadBuiltin()]); await armSyncFromHash(); buildCards(); buildQueue(); render(); if(syncOn()) syncNow(true); })();
+(async()=>{ await Promise.all([load(),loadBuiltin()]); await armSyncFromHash();
+  if(!opts.debtFrom){ opts.debtFrom=today(); save(KEY_OPTS,opts); }
+  markToday(); buildCards(); buildQueue(); render(); paintBacklog(); if(syncOn()) syncNow(true); })();
 </script>
 </body>
 </html>
