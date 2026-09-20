@@ -12423,8 +12423,8 @@
  {
   "id": "MED-36",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Emergency department. The role-player is a final-year medical student (Alex), not a patient.",
   "stem": [
    "A 68-year-old man with tachypnoea. History of hypercholesterolaemia, hypertension and previous myocardial infarction.",
    "SpO2 89% RA · BP 132/84 · HR 112 · RR 28 · T 36.8 °C. Distended neck veins; apex not displaced; systolic murmur at the apex; S1 and S2 muffled with an S3 gallop; bibasal dullness and crepitations; pitting oedema to the knees."
@@ -12433,90 +12433,188 @@
    "Explain your diagnosis to the medical student",
    "Explain your immediate management plan"
   ],
-  "time": "8 minutes. 0:20 name it in full · 0:40 the chain · 2:00 map the signs · 3:30 murmur and muffled sounds · 4:30 investigations · 5:00 numbered management · 7:00 long-term · 7:30 check understanding.",
+  "findings": [
+   [
+    "Observations",
+    "SpO2 89% ON ROOM AIR · BP 132/84 · HR 112 · RR 28 · T 36.8. Tachypnoeic, tachycardic and hypoxic — and NORMOTENSIVE, which is the finding that settles the tamponade question"
+   ],
+   [
+    "Neck veins",
+    "DISTENDED — the systemic venous side of the same raised pressure"
+   ],
+   [
+    "Apex beat",
+    "NOT DISPLACED"
+   ],
+   [
+    "Heart sounds",
+    "FIRST AND SECOND HEART SOUNDS MUFFLED, with a THIRD HEART SOUND PRESENT — GALLOP RHYTHM. The S3 is rapid filling into a stiff, dilated ventricle"
+   ],
+   [
+    "Murmur",
+    "SYSTOLIC MURMUR AT THE APEX — expect radiation to the axilla. FUNCTIONAL (SECONDARY) MITRAL REGURGITATION from a dilated ischaemic ventricle, NOT mitral valve prolapse"
+   ],
+   [
+    "Chest",
+    "DULLNESS TO PERCUSSION AT BOTH BASES with BIBASAL CREPITATIONS. Fine, bibasal and SYMMETRICAL — the dullness is transudative pleural effusion"
+   ],
+   [
+    "Legs",
+    "PITTING OEDEMA TO THE KNEES"
+   ],
+   [
+    "Test Beck's triad out loud",
+    "HYPOTENSION · RAISED JVP · MUFFLED HEART SOUNDS. He has TWO OF THREE — but at 132/84 he is NORMOTENSIVE, so THIS IS NOT TAMPONADE. Order the echocardiogram anyway to answer the pericardium"
+   ],
+   [
+    "VERSION — cardiogenic shock",
+    "BP 78/50, cool peripheries, lactate 4.2, oliguric. NO NITRATE — it will drop him further. Oxygen and non-invasive ventilation, cautious or withheld diuretic until perfusion improves, INOTROPE OR VASOPRESSOR, urgent bedside echo, cardiology and intensive care now. SAY THE WORDS CARDIOGENIC SHOCK"
+   ],
+   [
+    "VERSION — the flash one",
+    "Two hours of severe breathlessness, BP 210/120, lungs clear yesterday, NEW LOUD PANSYSTOLIC MURMUR three days after an inferior infarct → PAPILLARY MUSCLE RUPTURE with acute severe mitral regurgitation. Urgent echo and cardiothoracic surgery"
+   ]
+  ],
+  "findingsLabel": "Findings given in the stem · open before you teach",
+  "must": [
+   "FAIL — Half a diagnosis. 'Heart failure' alone, or 'pulmonary oedema' alone.",
+   "FAIL — Calling tamponade in a normotensive man. Beck's triad is HYPOTENSION.",
+   "FAIL — Leaving him flat, or a management list that opens with oxygen or frusemide.",
+   "FAIL — No ECG and no troponin after a previous infarct; or starting a beta-blocker today.",
+   "ASK — the student first: what did you make of him? Then teach, don't recite.",
+   "ASK — at the end: does that hang together? Anything you want me to go back over?"
+  ],
   "back": {
-   "dx": "Acute cardiogenic pulmonary oedema secondary to decompensated heart failure — say BOTH halves. The student opens with 'isn't this pneumonia?' and is briefed to ask 'but why does that happen?' whenever you list a sign without joining it. Six-link chain: substrate (HT, cholesterol, old MI) → LV can't eject → pressure backs into LA → pulmonary veins → capillary hydrostatic pressure exceeds oncotic pressure → fluid into interstitium then alveoli → gas exchange fails (RR 28, SpO2 89%). Murmur = functional mitral regurgitation from a dilated annulus. Muffled sounds → test Beck's triad aloud (hypotension, raised JVP, muffled sounds): two of three but BP 132/84 → not tamponade; still ask the echo for pericardial fluid. Management as a NUMBERED sequence with sitting upright first.",
+   "dx": [
+    "**Acute cardiogenic pulmonary oedema, secondary to decompensated heart failure.** **Say the whole phrase** — 'heart failure' alone misses the emergency, 'pulmonary oedema' alone misses the cause.",
+    "**The chain, six links, not a list**: hypertension, cholesterol and a previous infarct are the substrate → **the left ventricle cannot eject enough** → pressure backs into the left atrium and the pulmonary veins → **pulmonary capillary hydrostatic pressure exceeds the oncotic pressure holding fluid in the vessel** → fluid crosses into the interstitium and then the alveoli → **gas exchange fails**.",
+    "**Hang every sign on a link.** Raised JVP and pitting oedema = the systemic venous side of the same pressure. **S3 = rapid filling into a stiff dilated ventricle.** Crepitations = alveoli opening against fluid. Basal dullness = **transudative effusion**.",
+    "**Crackles are not pneumonia when they are fine, bibasal and symmetrical and sit beside a raised JVP, an S3 and oedema.** Consolidation is focal, with bronchial breathing and a fever.",
+    "**CORRECTION — the murmur is functional mitral regurgitation, not mitral valve prolapse**: annular dilatation and papillary muscle displacement in a dilated ischaemic ventricle. **Prolapse gives a mid-systolic click with a late systolic murmur, usually in a younger patient.**",
+    "**CORRECTION — Beck's triad is HYPOTENSION, raised JVP, muffled heart sounds** (plus **pulsus paradoxus over 10 mmHg** and electrical alternans). **Reversing it to hypertension is a hard fail.** Muffled sounds are far more often obesity, hyperinflation or crackles drowning them.",
+    "**Seven ordered steps, numbered aloud: 1 sit him upright with legs dependent · 2 oxygen to 92–96% (88–92% if CO2 retention is a risk) · 3 IV access, cardiac monitoring, 12-lead ECG · 4 GTN 300–600 microg sublingual or 400 microg spray, repeated while systolic stays above 100 · 5 IV frusemide 20–40 mg or the usual daily oral dose, with a catheter to chart output · 6 STOP ANY IV FLUIDS · 7 CPAP 5–10 cmH2O if still hypoxic, and call cardiology.**",
+    "**Nitrate before diuretic when the pressure allows** — much of the acute picture is **redistribution rather than total body overload**, and nitrates drop preload and afterload within minutes while the diuretic only addresses volume.",
+    "**Deliberately not doing: no IV fluids · no NSAIDs · no beta-blocker today.** **CORRECTION — morphine is no longer routine**; observational data associate it with worse outcomes, more ventilation and longer stay. Reserve it for severe distress or ischaemic pain.",
+    "**Four pillars of HFrEF once euvolaemic: ACE inhibitor or ARNI · a beta-blocker with heart failure evidence — bisoprolol, carvedilol, metoprolol CR, nebivolol, started low and slow · a mineralocorticoid receptor antagonist · an SGLT2 inhibitor.** A loop diuretic sits alongside for congestion, **not as disease-modifying therapy**. **Action plan: 2 kg in 2 days. MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'What did you make of him?' → pneumonia → 'reasonable, keep it live — but I think this is acute cardiogenic pulmonary oedema secondary to decompensated heart failure. Here is the chain'"
+     "**Frame it in fifteen seconds**: **'let's take two minutes on this gentleman before we go back in. I'll tell you what I think is going on and why, then what I want done in the next ten minutes. Stop me at any point. WHAT DID YOU MAKE OF HIM?'**"
+    ],
+    [
+     "0:20",
+     "**Name it in full: acute cardiogenic pulmonary oedema, secondary to decompensated heart failure.** He will say he thought it was pneumonia because of the crackles — **praise the thought, then answer it with what goes WITH the crackles.**"
     ],
     [
      "0:40",
-     "The six links; then 'how do you tell it from consolidation?' → fine, bibasal, symmetrical crackles WITH raised JVP, S3, oedema; consolidation is focal, bronchial breathing, fever"
+     "**The chain, six links, cause to consequence** — substrate, failing ejection, backward pressure, hydrostatic exceeding oncotic, fluid into interstitium then alveoli, gas exchange failing. **'That is his respiratory rate of 28 and his saturation of 89%.'**"
     ],
     [
      "2:00",
-     "Hang every sign on the chain: JVP + oedema = systemic venous side of the same pressure · S3 = rapid filling into a stiff dilated ventricle · creps = alveoli opening against fluid · basal dullness = transudative effusion"
+     "**Map the signs onto the links, one at a time**, and say the framing sentence: **'each sign is a link in the chain, not a separate finding.'**"
     ],
     [
      "3:30",
-     "Murmur: systolic, apex (5th ICS MCL), radiates to axilla → functional MR. 'Prolapse?' → click + late systolic murmur, younger patient, not expected. Muffled sounds → Beck's triad → normotensive → not tamponade → echo anyway"
+     "**The murmur and the muffled sounds.** Systolic, apex, radiating to the axilla → **functional mitral regurgitation**. Then **test tamponade properly out loud**: recite Beck's triad, **say which element is absent**, and **order the echo anyway**."
+    ],
+    [
+     "4:30",
+     "**Investigations with reasons attached**: **ECG and SERIAL TROPONIN** for the precipitant · **FBE, UEC before diuresis, LFT, TFT, glucose** · **blood gas and lactate** · **chest film — Alveolar oedema, Kerley B lines, Cardiomegaly, upper lobe Diversion, Effusions** · **echocardiogram: ejection fraction, regional wall motion, severity of the mitral regurgitation, and pericardial fluid.**"
     ],
     [
      "5:00",
-     "Management numbered 1–7; 'why nitrate before frusemide?' → redistribution vs volume, nitrate acts in minutes; 'morphine?' → no longer routine; what I'm NOT doing"
-    ],
-    [
-     "6:00",
-     "Investigations with reasons: ECG + serial troponin (ACS commonest precipitant), FBE/UEC before diuresing, LFT/TFT, gas + lactate, CXR (alveolar oedema, Kerley B, cardiomegaly, upper lobe diversion, effusions), ECHO — EF, wall motion, MR severity, pericardial fluid"
+     "**The seven steps, numbered as a sequence**, with **sitting upright as step one — free, immediate, and it reduces preload.** Then say what you are **deliberately not doing** and why."
     ],
     [
      "7:00",
-     "Long-term once euvolaemic: four pillars, beta-blocker NOT today; loop diuretic for congestion only; rehab, daily weights 2 kg/2 days, vaccines, device assessment later → summary → 'does that hang together?'"
+     "**The four pillars, once he is stable and euvolaemic** — and **'the beta-blocker does not go in today, while he is wet.'** Plus cardiac rehabilitation, daily weights with the 2 kg in 2 days trigger, vaccination, device assessment later."
+    ],
+    [
+     "7:30",
+     "**Summarise and check understanding: 'does that hang together? Anything you want me to go back over?'** If asked to explain it to the patient instead, **switch register completely** — no hydrostatic pressure, no ejection fraction."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "'Hi Alex. Before we go back in, let's take two minutes on this gentleman — what I think is going on and why, then what I want done in the next ten minutes. Stop me whenever. What did you make of him?'",
-    "★ 'My diagnosis is acute cardiogenic pulmonary oedema, secondary to decompensated heart failure. Let me show you how the stem gets us there.'",
-    "★ 'Once pulmonary capillary hydrostatic pressure exceeds the oncotic pressure holding fluid in the vessel, fluid crosses into the interstitium and then into the alveoli. That is the pulmonary oedema, and it is why gas exchange fails — hence the tachypnoea, the tachycardia and the saturation of 89%.'",
-    "'Each sign is a link in the chain, not a separate finding. The third heart sound is rapid filling into a stiff, dilated ventricle.'",
-    "★ 'Beck's triad is hypotension, raised JVP and muffled heart sounds. He has two of three, but he is normotensive, so this is not tamponade. I will still ask the echocardiogram to look for pericardial fluid.'",
-    "★ 'One, sit him upright with his legs dependent — free, immediate, reduces preload. Two, oxygen titrated to 92–96%. Three, IV access, cardiac monitoring, 12-lead ECG. Four, glyceryl trinitrate 300–600 micrograms sublingually or a 400 microgram spray, repeated, provided his systolic stays above 100. Five, IV frusemide 40 mg, or a dose matching his usual daily oral dose, with a catheter to chart urine output. Six, stop any intravenous fluids. Seven, if still hypoxic or working hard, CPAP at 5–10 cm of water — and call cardiology.'",
-    "'Things I am not doing: no IV fluids, no NSAIDs, and I am not starting a beta-blocker today — those go in once he is euvolaemic. Morphine is no longer routine; observational data associate it with worse outcomes, more ventilation and longer stays. I'd reserve it for severe distress or ischaemic pain, at a low dose.'",
-    "'Does that hang together? Anything you want me to go back over?'"
-   ],
    "pefe": [
-    "Findings are in the stem — no examination task in Version A; the job is interpretation and causal linkage",
-    "Long-term: HFrEF four pillars — ACE inhibitor or sacubitril–valsartan where indicated · beta-blocker with HF evidence (bisoprolol, carvedilol, metoprolol CR, nebivolol) low and slow once euvolaemic · MRA · SGLT2 inhibitor · loop diuretic for congestion = symptom control not disease modification · cardiac rehab · daily weights (2 kg in 2 days trigger) · vaccination · device assessment later VERIFY",
-    "Variant 3 — explain it to the patient instead: switch register completely — 'your heart isn't pumping as strongly as it should, so fluid is backing up into your lungs and that's why you feel breathless. We're going to sit you up, give you oxygen, and give you a water tablet through the drip to shift that fluid. You'll pass a lot of urine and should start to breathe more easily quite quickly' — no hydrostatic pressure, no ejection fraction",
-    "Variant 2 — cardiogenic shock (BP 78/50, cool, lactate 4.2, oliguric): say the words 'cardiogenic shock' aloud — NO nitrate; oxygen and NIV as tolerated; cautious or withheld diuretic until perfusion improves; inotrope/vasopressor; urgent bedside echo; cardiology and ICU immediately; in SA: MedSTAR 1300 13 12 33 for retrieval to a cath lab",
-    "SA: cardiology at RAH/FMC/Lyell McEwin; rural site → MedSTAR early; Country Health Connect HF nurse for follow-up"
+    "**The examination has already been performed for you** — this station is the explanation and the management, not the examining.",
+    "**ECG and serial troponin in every acute pulmonary oedema.** A mild rise occurs in any decompensation; **a rising trend means ACS**, the commonest precipitant, and he has infarcted before.",
+    "**Echocardiogram is the key investigation — and never order it without saying what for: ejection fraction · regional wall motion · the severity of the mitral regurgitation · pericardial fluid**, which is what answers the muffled sounds.",
+    "**Chest X-ray: A B C D E — Alveolar bat-wing oedema · Kerley B lines · Cardiomegaly · upper lobe Diversion · Effusions.** **Do not delay escalation waiting for the film.**",
+    "**FBE, UEC, LFT, TFT, glucose** — anaemia and thyroid as precipitants, **renal function before you diurese**. **Venous or arterial gas with lactate** before non-invasive ventilation.",
+    "**BNP or NT-proBNP is most useful for its negative predictive value when the diagnosis is uncertain.** VERIFY Medicare access is restricted.",
+    "**Avoid: lying him flat even briefly for a procedure · IV fluids · NSAIDs · introducing or up-titrating a beta-blocker while congested** (continue an established dose unless shocked) **· routine morphine · delaying escalation for imaging.**"
    ],
-   "fails": [
-    "Saying only 'heart failure' — not naming the acute emergency in full ★",
-    "Listing signs without the causal chain; getting hydrostatic vs oncotic wrong ★",
-    "Management as an unordered list; not making 'sit upright' step one ★",
-    "Nitrate without a blood-pressure caveat; frusemide without urine-output monitoring; not stopping IV fluids ★",
-    "Misquoting Beck's triad (it is HYPOtension); calling it tamponade in a normotensive man — or dismissing the muffled sounds without ordering the echo",
-    "Starting a beta-blocker while wet; routine morphine; 'oxygen' without a target; no ECG/troponin for the precipitant; echo without stated reasons"
-   ],
-   "numbers": [
-    "SpO2 target 92–96% (88–92% if CO2 retention risk) · GTN 300–600 microg SL or 400 microg spray, systolic must stay >100 · frusemide 20–40 mg IV or usual daily oral dose · CPAP 5–10 cmH2O · pulsus paradoxus >10 mmHg · action-plan trigger 2 kg in 2 days VERIFY against current Therapeutic Guidelines",
-    "Beck's triad: hypotension · raised JVP · muffled heart sounds · apex 5th ICS mid-clavicular line · functional MR radiates to the axilla · MVP = mid-systolic click + late systolic murmur",
-    "CXR of APO: alveolar (bat-wing) oedema · Kerley B lines · cardiomegaly · upper lobe diversion · pleural effusions",
-    "Four pillars: ACEi/ARNI · beta-blocker · MRA · SGLT2i · beta-blocker only once euvolaemic",
-    "Precipitants to name: ACS (commonest, he has infarcted before) · arrhythmia · non-compliance · fluid load · infection · anaemia · thyroid · NSAIDs · uncontrolled hypertension · valve",
-    "Variant 1 (Version B student argues for fluids) → see MED-37 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Acute cardiogenic pulmonary oedema** — the answer",
+     "Orthopnoea, risk factors, **S3, raised JVP, bibasal creps, oedema**",
+     "Gallop rhythm, hepatojugular reflux, positive fluid balance",
+     "**CXR, BNP or NT-proBNP, echocardiogram** — immediate"
+    ],
+    [
+     "**Acute coronary syndrome as the trigger**",
+     "Prior infarct, risk factors, **may be entirely painless**",
+     "New ECG changes, arrhythmia",
+     "**ECG and troponin in every case** — immediate"
+    ],
+    [
+     "**Acute severe mitral regurgitation**",
+     "**Flash oedema, new loud pansystolic murmur, recent MI**",
+     "Thrill, hyperdynamic apex, cardiogenic shock",
+     "**Urgent echocardiogram, cardiothoracic referral** — immediate"
+    ],
+    [
+     "**Cardiac tamponade**",
+     "**Muffled sounds, raised JVP** — the bait in this stem",
+     "**Beck's triad, pulsus paradoxus over 10 mmHg**, quiet precordium",
+     "**Echocardiogram; pericardiocentesis if positive. He is NORMOTENSIVE, so not tamponade** — immediate"
+    ],
+    [
+     "Arrhythmia, commonly atrial fibrillation",
+     "Irregular pulse, abrupt decompensation",
+     "Rate, rhythm, apex-radial deficit",
+     "ECG; rate or rhythm control — urgent"
+    ],
+    [
+     "Progressive pneumonia or parapneumonic effusion",
+     "Fever, purulent sputum, focal signs",
+     "**Unilateral dullness with bronchial breathing** — not what he has",
+     "Repeat CXR, ultrasound, inflammatory markers — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Hypoxia out of proportion, immobility, malignancy",
+     "Pleuritic pain, calf signs, loud P2",
+     "**Wells score, CTPA. Prophylactic enoxaparin does not exclude it** — immediate"
+    ],
+    [
+     "**ARDS — non-cardiogenic oedema**",
+     "Sepsis, aspiration, no cardiac history",
+     "**Bilateral infiltrates with a NORMAL JVP**",
+     "**Echocardiogram showing normal filling pressures** — immediate"
+    ],
+    [
+     "Sepsis with septic cardiomyopathy",
+     "Fever, a source, warm peripheries then shock",
+     "Lactate, source of infection",
+     "Cultures, lactate, sepsis pathway — immediate"
+    ],
+    [
+     "Anaemia · thyrotoxicosis · renal failure",
+     "Precipitants of decompensation",
+     "Pallor, tremor, uraemia, oliguria",
+     "FBE, TFT, UEC — urgent"
+    ]
    ]
   },
   "source": "Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf (Version A — ED, ischaemic precipitant, teaching the medical student)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Saying only 'heart failure' — name the acute emergency in full: acute cardiogenic pulmonary oedema, secondary to decompensated heart failure",
-   "FAIL — Listing the signs without the causal chain — the student is briefed to ask 'but why does that happen?'; JVP and oedema are the venous side of the same pressure, S3 is rapid filling into a stiff dilated ventricle, crackles are alveoli opening against fluid, basal dullness is transudate",
-   "FAIL — Getting hydrostatic versus oncotic wrong — fluid crosses when pulmonary capillary hydrostatic pressure exceeds the oncotic pressure holding it in the vessel",
-   "SAY — 'Beck's triad is hypotension, raised JVP and muffled heart sounds. He has two of three, but he is normotensive, so this is not tamponade' — and still ask the echo to look for pericardial fluid",
-   "FAIL — Management as an unordered list, or anything other than 'sit him upright with his legs dependent' as step one — then oxygen to a target of 92–96%, access/monitor/ECG, GTN while systolic stays above 100, IV frusemide 40 mg with a catheter, stop IV fluids, CPAP 5–10 cmH2O, cardiology",
-   "DO — Say what you are not doing: no IV fluids, no NSAIDs, no beta-blocker today (once euvolaemic), morphine no longer routine; ECG and troponin for the precipitant, echo for ejection fraction, wall motion, the MR and pericardial fluid"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-37",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Inpatient ward. The role-player is a final-year medical student.",
   "stem": [
    "A 54-year-old man admitted with fever, cough and dizziness; CXR confirms lower lobe pneumonia. MI five years ago, on enoxaparin, has received 3 litres of normal saline. No chest pain but cannot lie flat.",
    "Observation chart: RR 12→25 · HR 102→124 · systolic 120→104 · SpO2 97–99% on room air · temperature settling."
@@ -12526,90 +12624,169 @@
    "Perform the relevant examination",
    "Explain your differential diagnoses to the medical student"
   ],
-  "time": "8 minutes. Chart in trends with one synthesis sentence · examination (cardiorespiratory + fluid status) · bucketed differentials · first action is to stop the fluids.",
+  "findings": [
+   [
+    "Orient to the chart first",
+    "'This is the adult observation and response chart. Patient identifiers, and these columns are day one and day two.' Then go ROW BY ROW GIVING THE TREND, NOT THE NUMBER"
+   ],
+   [
+    "Respiratory rate",
+    "12–15 on day one → 21–25 today. RISING — and in early pulmonary oedema this moves BEFORE the saturation does"
+   ],
+   [
+    "Heart rate",
+    "102 → 124. RISING"
+   ],
+   [
+    "Blood pressure",
+    "Systolic 120 → 104. DRIFTING DOWN. On the chart the upper arrow is systolic, the lower diastolic"
+   ],
+   [
+    "Oxygen saturation",
+    "97–99% ON ROOM AIR — PRESERVED. Say explicitly that this DOES NOT REASSURE YOU: early pulmonary oedema is a tachypnoea problem before it is a saturation problem"
+   ],
+   [
+    "Temperature",
+    "Settling — the pneumonia is being treated"
+   ],
+   [
+    "The synthesis sentence",
+    "TWO RISING PARAMETERS AND ONE FALLING: THIS PATIENT IS DETERIORATING. Score it and escalate — 'this triggers a clinical review under our ADDS criteria and I would escalate to the registrar now.' VERIFY local thresholds"
+   ],
+   [
+    "The precipitant in the stem",
+    "THREE LITRES OF NORMAL SALINE, in a man who had an MI five years ago and CANNOT LIE FLAT. STOP THE INTRAVENOUS FLUIDS — say it first, it is a scored action"
+   ],
+   [
+    "The examination you would perform",
+    "JVP at 45 degrees from the sternal angle and HEPATOJUGULAR REFLUX with sustained right upper quadrant pressure for 15 seconds · apex beat position and character · S3 or gallop, and the murmur's timing, site and radiation · percussion for basal dullness and auscultation for bibasal fine inspiratory crepitations FRONT AND BACK · tender pulsatile hepatomegaly and ascites · dependent oedema at ANKLES AND SACRUM, pressed for 10 seconds. Plus a bedside ECG, the fluid balance chart and daily weights"
+   ],
+   [
+    "VERSION C — the fluid balance chart",
+    "Day 1: 4 L in, 1 L out. Day 2: 3 L in, 1 L out. A POSITIVE BALANCE OF 5 LITRES OVER 48 HOURS. That is the cause. Post-hemicolectomy — also consider PE and atelectasis, and say why they are less likely"
+   ]
+  ],
+  "findingsLabel": "The observation chart, read as trends · open when you would read it",
+  "must": [
+   "FAIL — Never mentioning the three litres. 'Stop the fluids' is a scored action, said first.",
+   "FAIL — Reading the chart as numbers rather than trends, with no escalation score.",
+   "FAIL — Being reassured by a saturation of 97–99% on room air.",
+   "FAIL — Giving more fluid because the blood pressure is drifting down.",
+   "ASK — Can he lie flat? He cannot, and that is the pivot of the whole case.",
+   "ASK — What is his fluid balance, and what are his daily weights?"
+  ],
   "back": {
-   "dx": "Acute cardiogenic pulmonary oedema from IATROGENIC fluid overload (3 L saline in a man with a previous MI) — leading diagnosis; ACS and arrhythmia next on the cardiac side; respiratory causes stay live (progressive pneumonia, parapneumonic effusion/empyema, PE — prophylactic enoxaparin does not exclude it); others: sepsis with septic cardiomyopathy, ARDS, anaemia. The chart: two rising parameters (RR, HR) and one falling (systolic) = deteriorating, meets escalation criteria; preserved SpO2 97–99% does NOT reassure — early pulmonary oedema is a tachypnoea problem before it is a saturation problem. Orthopnoea is the history clue. The student is briefed to argue for more fluid ('he's septic and his pressure is falling') — that is the trap.",
+   "dx": [
+    "**Acute cardiogenic pulmonary oedema from IATROGENIC FLUID OVERLOAD, on a background of decompensated heart failure — while the pneumonia is also real and still being treated.**",
+    "**The sentence that passes it**: he was admitted with a pneumonia, **but he is now breathless for a second reason** — **three litres of saline, a previous myocardial infarction, and he cannot lie flat**, with a rising respiratory rate and heart rate and a falling blood pressure.",
+    "**First action, said before anything else: STOP THE INTRAVENOUS FLUIDS.** Then sit him up, oxygen, and treat this as pulmonary oedema while continuing to treat the pneumonia.",
+    "**Read the chart as trends with one synthesis sentence, then escalate.** **Two rising parameters and one falling is a deteriorating patient**, and naming the escalation — **an ADDS clinical review, registrar now** — is worth more than any individual number.",
+    "**A preserved saturation is not reassurance.** Early pulmonary oedema is **a tachypnoea problem before it is a saturation problem**, and saying so unprompted is the marked observation.",
+    "**Prophylactic enoxaparin does not exclude pulmonary embolism** — keep it live, with **Wells and CTPA** if the picture fits. **Hypoxia out of proportion with a clear-ish chest** points there.",
+    "**If the student argues for more fluid because the pressure is falling: that is the trap.** In a man with a previous infarct who has had three litres and cannot lie flat, with the respiratory rate climbing faster than the pressure is falling, **this is overload, not hypovolaemia**. Assess filling — **JVP, hepatojugular reflux, oedema, bedside echo** — and if he genuinely were hypovolaemic, **small aliquots with reassessment after each, never a continued infusion**.",
+    "Management: **sit up · oxygen to 92–96% · IV access, monitoring, 12-lead ECG · GTN while systolic stays above 100 · IV frusemide 20–40 mg with a catheter to chart output · FLUIDS STOPPED · CPAP 5–10 cmH2O if still hypoxic · cardiology early.**",
+    "**ECG and serial troponin in every case** — acute coronary syndrome is the commonest precipitant and he has infarcted before. **Echocardiogram for ejection fraction, wall motion, valves and pericardial fluid.**",
+    "**Do not start or up-titrate a beta-blocker while he is congested** — continue an established dose unless shocked, and introduce only once euvolaemic. **No NSAIDs. Morphine is not routine. Chart intake, output and daily weights from now on.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Chart in trends, not numbers: RR 12–15 → 21–25; HR 102 → 124; systolic 120 → 104; SpO2 preserved — 'and I would specifically say that does not reassure me'; temperature settling → 'this patient is deteriorating and meets our criteria for escalation' → call for senior help / MET per local criteria"
+     "Frame it with the student, then **orient to the chart before interpreting it** — what chart it is, the identifiers, and which columns are which days."
+    ],
+    [
+     "0:30",
+     "**Row by row, trend not number**: **respiratory rate 12–15 → 21–25 · heart rate 102 → 124 · systolic 120 → 104 · saturation 97–99% on room air, preserved · temperature settling.**"
     ],
     [
      "1:30",
-     "Examination, stated then performed: general appearance and work of breathing; fluid status — JVP, hepatojugular reflux, peripheral oedema, mucosa; CVS — apex, heave, S3, murmur; respiratory — expansion, percussion (basal dullness, effusion side), breath sounds, crepitations (bibasal vs focal), bronchial breathing, VR; calves; catheter/urine output; bedside echo if available; ECG"
+     "**The synthesis sentence and the escalation**: two rising, one falling, **this patient is deteriorating and meets the criteria for escalation** — and **say that the preserved saturation does not reassure you, and why.**"
     ],
     [
-     "4:00",
-     "Differentials bucketed to the student: respiratory (kept live) → cardiovascular (leading: fluid overload APO; then ACS, arrhythmia) → other (sepsis/septic cardiomyopathy, ARDS, anaemia)"
+     "2:00",
+     "**The pivot, out loud**: admitted with a pneumonia, which is real — **but now breathless for a second reason. Three litres of saline. A previous MI. He cannot lie flat.** **'My first action is to stop the intravenous fluids.'**"
     ],
     [
-     "5:30",
-     "'Shouldn't we give more fluid?' → the trap answered; first action: STOP the saline, sit up, assess filling; small aliquots with reassessment only if genuinely hypovolaemic"
+     "2:45",
+     "**State the examination you would perform**, in order: **end of the bed — work of breathing, can he lie flat, is he shut down · JVP at 45 degrees and the hepatojugular reflux for 15 seconds · apex position and character · S3 or gallop, and the murmur's timing, site and radiation · percussion and auscultation front and back · tender pulsatile hepatomegaly and ascites · dependent oedema at ankles AND SACRUM, pressed 10 seconds.** Then **ECG, fluid balance chart and daily weights.**"
     ],
     [
-     "6:30",
-     "Then the APO sequence: sit up, O2 to target, monitor, ECG, GTN if systolic >100 (here 104 — cautious), IV frusemide, catheter, CPAP if needed; investigations — ECG, troponin, FBE/UEC, gas + lactate, CXR, cultures, echo; escalate to registrar/ICU; summary"
+     "4:30",
+     "**The differentials, bucketed.** Respiratory stay live: **progressive pneumonia, parapneumonic effusion or empyema, and PE — prophylactic enoxaparin does not exclude it.** Cardiovascular: **acute cardiogenic pulmonary oedema from fluid overload, leading · then ACS and arrhythmia.** Other: **sepsis with septic cardiomyopathy, ARDS, anaemia.**"
+    ],
+    [
+     "6:00",
+     "Management as an ordered sequence — **fluids stopped, sit up, oxygen, monitor and ECG, nitrate if the pressure allows, IV frusemide with output charted, CPAP if needed, cardiology** — plus **ECG and troponin for the precipitant and an echo with its reasons.**"
+    ],
+    [
+     "7:00",
+     "If the student pushes for fluids because the pressure is falling, **name it as the trap and answer it**: overload, not hypovolaemia; assess filling; small aliquots with reassessment only if genuinely dry."
+    ],
+    [
+     "7:30",
+     "**Check understanding and summarise**: 'does that hang together? Anything you want me to go back over?'"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'This is the adult observation and response chart. Working down: respiratory rate has climbed from 12–15 on day one to 21–25 today. Heart rate 102 to 124. Systolic has drifted from 120 to 104. Saturation is preserved at 97–99% on room air — and I would specifically say that does not reassure me, because early pulmonary oedema is a tachypnoea problem before it is a saturation problem. Temperature is settling. Two rising parameters and one falling: this patient is deteriorating and meets our criteria for escalation.'",
-    "'I'll examine him now — general appearance and work of breathing; fluid status: JVP, hepatojugular reflux, oedema; heart: apex, heave, third heart sound, murmur; chest: expansion, percussion, breath sounds, crackles and whether they're bibasal or focal, bronchial breathing, vocal resonance; calves; urine output.'",
-    "★ 'He was admitted with a pneumonia, so I keep respiratory causes live: progressive pneumonia, a parapneumonic effusion or empyema, and pulmonary embolism — prophylactic enoxaparin does not exclude that. But the story has changed: he cannot lie flat, he has had a myocardial infarction, and he has received three litres of saline. So on the cardiovascular side: acute cardiogenic pulmonary oedema from iatrogenic fluid overload — my leading diagnosis — then acute coronary syndrome and arrhythmia. Under other: sepsis with septic cardiomyopathy, ARDS, and anaemia. My first action is to stop the intravenous fluids.'",
-    "★ Student: 'He's septic and his blood pressure is falling — shouldn't we give more fluid?' → 'That is exactly the trap. He has already had three litres, he cannot lie flat, and his respiratory rate is climbing faster than his pressure is falling. In a man with a previous infarct, that combination is fluid overload, not hypovolaemia. I want the saline stopped, him sat up, and an assessment of his filling — JVP, hepatojugular reflux, oedema, and a bedside echo if we have one. If he really were hypovolaemic I would give small aliquots with reassessment after each, never a continued infusion.'",
-    "'Does that hang together? Anything you want me to go back over?'"
-   ],
    "pefe": [
-    "Perform, don't just request: expected findings in this version are not scripted — describe what you look for and interpret whatever is given: raised JVP + bibasal creps + S3 → overload; focal bronchial breathing + fever → pneumonia progression; stony dull base → effusion (parapneumonic vs transudate → tap); unilateral calf swelling → PE",
-    "Investigations: ECG (ischaemia, AF), troponin, FBE, UEC (before diuresis), CRP, blood cultures, VBG/ABG with lactate, CXR now vs admission (new bilateral interstitial/alveolar shadowing, effusions, cardiomegaly), BNP, echo (EF, wall motion, pericardial fluid); consider CTPA if PE remains plausible after the above",
-    "Management once overload confirmed: stop fluids · sit upright · O2 92–96% · monitor · GTN only if systolic >100 (104 — cautious, reassess) · IV frusemide 40 mg with catheter · CPAP if working hard · continue antibiotics for the pneumonia · escalate — registrar, MET/ICU, cardiology; hold further enoxaparin decisions with the team if effusion needs tapping",
-    "Version C (numbers card): fluid balance +5 L over 48 h — same logic, bigger load",
-    "SA: MET criteria per hospital; rural — MedSTAR 1300 13 12 33 early for a deteriorating post-MI patient",
-    "How this one works — PERFORM, don't just request — the findings are NOT scripted; describe what you look for and interpret whatever you are given",
-    "Stony dull base — EFFUSION — parapneumonic versus transudate, so tap it"
+    "**Orient, then trends, then one synthesis sentence, then escalate.** Reciting every value on the chart is a documented fail.",
+    "**SA Health uses the Adult Deterioration Detection System (ADDS) observation and response chart**, with colour-coded zones and defined escalation to a clinical review or a MET call. VERIFY local thresholds vary by site.",
+    "**Ask for the fluid balance chart and the daily weights** — in Version C they are the entire diagnosis: **4 L in / 1 L out then 3 L in / 1 L out = +5 litres over 48 hours.**",
+    "**ECG and serial troponin in every case**; **FBE, UEC, LFT, TFT, glucose**; **gas and lactate**; **chest X-ray** (A B C D E), **and an echocardiogram named with its reasons.**",
+    "**Prophylactic enoxaparin does not exclude PE** — Wells and CTPA if hypoxia is out of proportion to the chest findings.",
+    "**Do not delay escalation while waiting for the chest film**, and **do not lie him flat**, even briefly for a procedure."
    ],
-   "fails": [
-    "Reading every number aloud instead of trends + one synthesis sentence; not calling it deterioration/escalation ★",
-    "Being reassured by SpO2 97–99% ★",
-    "Agreeing to more fluid; not stopping the saline as the first action ★",
-    "Dropping the respiratory bucket because 'it's the heart' — or dropping PE because he's on enoxaparin",
-    "Not asking/eliciting orthopnoea as the pivot; examining chest only, no fluid status",
-    "Continuous fluid infusion for hypotension in an overloaded post-MI patient"
-   ],
-   "numbers": [
-    "Chart: RR 12→25 · HR 102→124 · SBP 120→104 · SpO2 97–99% RA · temp settling · fluid load 3 L (Version C +5 L/48 h)",
-    "Early APO = tachypnoea before desaturation · orthopnoea = the history flag · two rising + one falling = escalate",
-    "Buckets: respiratory (progressive pneumonia · parapneumonic effusion/empyema · PE) · cardiovascular (iatrogenic overload APO · ACS · arrhythmia) · other (sepsis/septic cardiomyopathy · ARDS · anaemia)",
-    "Hypovolaemia vs overload: JVP, hepatojugular reflux, oedema, orthopnoea, bedside echo (IVC, LV) · fluid challenge = 250 mL aliquot with reassessment, never an infusion VERIFY",
-    "APO sequence: sit up → O2 92–96% → monitor/ECG → GTN if SBP >100 → IV frusemide 40 mg + catheter → stop fluids → CPAP 5–10 cmH2O → cardiology VERIFY",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Iatrogenic fluid overload → acute cardiogenic pulmonary oedema** — the answer",
+     "**Three litres of saline**, previous MI, **cannot lie flat**, rising RR and HR with falling BP",
+     "Positive balance, rising weight, raised JVP, S3, bibasal creps",
+     "**STOP THE FLUIDS.** Chart intake, output and weight; CXR, echo — immediate"
+    ],
+    [
+     "Progressive pneumonia or parapneumonic effusion or empyema",
+     "**Admitted with a confirmed lower lobe pneumonia**",
+     "**Unilateral dullness with bronchial breathing**, purulent sputum, rigors",
+     "Repeat CXR, ultrasound, inflammatory markers — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Hypoxia out of proportion, immobility on a ward, malignancy",
+     "Pleuritic pain, calf signs, loud P2",
+     "**Wells, CTPA. Prophylactic enoxaparin DOES NOT exclude it** — immediate"
+    ],
+    [
+     "**Acute coronary syndrome**",
+     "**MI five years ago**; may be entirely painless",
+     "New ECG change, arrhythmia",
+     "**ECG and serial troponin in every case** — immediate"
+    ],
+    [
+     "Arrhythmia, commonly atrial fibrillation",
+     "Abrupt decompensation, irregular pulse",
+     "Rate, rhythm, deficit",
+     "ECG; rate or rhythm control — urgent"
+    ],
+    [
+     "**Sepsis with septic cardiomyopathy**",
+     "Fever, a source, warm peripheries then shock",
+     "Lactate, source, falling blood pressure",
+     "Cultures, lactate, sepsis pathway — **but do not answer a falling BP with more saline here** — immediate"
+    ],
+    [
+     "**ARDS — non-cardiogenic oedema**",
+     "Sepsis or aspiration, no cardiac history",
+     "**Bilateral infiltrates with a NORMAL JVP**",
+     "**Echocardiogram showing normal filling pressures** — immediate"
+    ],
+    [
+     "Anaemia · thyrotoxicosis · renal failure",
+     "Precipitants of decompensation",
+     "Pallor, tremor, uraemia, oliguria",
+     "FBE, TFT, UEC — urgent"
+    ]
    ]
   },
   "source": "Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf (Version B — inpatient ward, iatrogenic fluid overload, observation chart)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Raised JVP + bibasal crackles + S3",
-    "Fluid overload"
-   ],
-   [
-    "Focal bronchial breathing + fever",
-    "Pneumonia progressing"
-   ],
-   [
-    "Unilateral calf swelling",
-    "Pulmonary embolism"
-   ]
-  ],
-  "findingsLabel": "Examination — you perform it; here is how to read what you are given",
-  "must": [
-   "FAIL — Reading every number aloud — give the trends and one synthesis sentence: RR 12 to 25, HR 102 to 124, systolic 120 to 104; 'two rising and one falling — he is deteriorating and meets criteria for escalation'",
-   "FAIL — Being reassured by a saturation of 97–99% — say out loud that it does not reassure you: early pulmonary oedema is a tachypnoea problem before it is a saturation problem",
-   "FAIL — Not stopping the saline as the first action — three litres in a man with a previous infarct who cannot lie flat is iatrogenic fluid overload, and that is the leading diagnosis",
-   "SAY — Bucket the differentials: respiratory kept live (progressive pneumonia, parapneumonic effusion or empyema, PE — prophylactic enoxaparin does not exclude it), cardiovascular (fluid overload, ACS, arrhythmia), other (sepsis with septic cardiomyopathy, ARDS, anaemia)",
-   "SAY — When the student argues for more fluid: 'that is exactly the trap — he has had three litres, cannot lie flat, and his respiratory rate is climbing faster than his pressure is falling; assess filling — JVP, hepatojugular reflux, oedema, bedside echo — and if hypovolaemic, small aliquots with reassessment, never a running infusion'",
-   "DO — Examine for the answer: JVP, S3, bibasal crepitations, oedema, hepatojugular reflux; then sit him up, oxygen to target, ECG and troponin, CXR, echo, and call for help"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_Pulmonary_Oedema_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-38",
