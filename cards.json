@@ -11683,8 +11683,8 @@
  {
   "id": "MED-32",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "General practice, rural town.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Robert Hale, 60, a farmer in rural Queensland, presents with shortness of breath. He had a myocardial infarction one year ago treated with thrombolysis, and has had no GP follow-up since.",
    "Vitals: BP 140/90 · PR 96 · RR 14 · T 36.5 °C · SpO2 99% room air."
@@ -11694,123 +11694,198 @@
    "Ask the examiner for the examination findings",
    "Explain your most likely diagnosis and differentials to the patient"
   ],
-  "time": "8 minutes. History 6 min online / 4 min face-to-face · leave 2 minutes for task 3.",
+  "findings": [
+   [
+    "Vital signs",
+    "BP 140/90 · PR 96 · RR 14 · T 36.5 · SpO2 99% on room air. A NORMAL SATURATION DOES NOT EXCLUDE HEART FAILURE"
+   ],
+   [
+    "General appearance",
+    "No respiratory distress, not cyanosed, alert"
+   ],
+   [
+    "CVS — inspection",
+    "JVP RAISED, MORE THAN 3 cm above the sternal angle. Say you are starting with the cardiovascular examination, and why"
+   ],
+   [
+    "CVS — palpation",
+    "APEX BEAT DISPLACED. PARASTERNAL HEAVE PRESENT"
+   ],
+   [
+    "CVS — auscultation",
+    "First and second heart sounds normal, NO MURMUR. GALLOP RHYTHM WITH AN AUDIBLE THIRD HEART SOUND. Ask for the gallop and the S3 by name"
+   ],
+   [
+    "Respiratory",
+    "Chest movements symmetrical. Percussion NORMAL. BIBASAL CREPITATIONS. Vocal resonance NORMAL"
+   ],
+   [
+    "Abdomen",
+    "HEPATOMEGALY with a POSITIVE HEPATOJUGULAR REFLUX"
+   ],
+   [
+    "Lower limbs",
+    "BILATERAL PITTING OEDEMA TO MID-SHIN. Ask whether it PITS and whether it is BILATERAL — a size difference is a DVT question, not this one"
+   ],
+   [
+    "Office tests — ECG",
+    "Sinus rhythm around 75. PATHOLOGICAL Q WAVES IN V1 AND V2 with POOR R WAVE PROGRESSION — a previous septal infarct. Also look for LVH, LBBB, AF and ischaemic ST or T change"
+   ],
+   [
+    "If the findings arrive on a printed card",
+    "READ IT SILENTLY. Do not read it aloud and do not narrate it back. Absorb it and move on"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — vitals and the examination findings · open when you would ask",
+  "must": [
+   "FAIL — A thin differential list. History and differentials are scored separately.",
+   "FAIL — Not opening the stem's clue: when, treated how, on what now, compliant, followed up.",
+   "FAIL — Never asking about haemoptysis, weight loss or the farm exposures.",
+   "FAIL — Asking whether it is tightness or difficulty getting the air in, and skipping it.",
+   "ASK — Are you managing to take them every day? The key question of this case.",
+   "ASK — Are you short of breath when you're resting as well? The severity question."
+  ],
   "back": {
-   "dx": "Congestive heart failure from ischaemic cardiomyopathy — six months of progressive exertional air hunger ('can't get enough air in', NOT tight like the heart attack), stops halfway up the paddock, not at rest unless overdone; orthopnoea on THREE pillows, PND, both ankles swell by evening; no chest pain/palpitations/dizziness; no cough/wheeze/haemoptysis/weight loss. The clue in the stem: thrombolysed MI a year ago at the base hospital — RAN OUT of tablets three or four months in, no script since, no GP (three-hour round trip). Wheat farm + a few hundred cattle, asbestos in the old sheds, never had the Q fever vaccine; 30 pack-years, quit after the MI; father MI at 62. PEFE: JVP >3 cm, displaced apex, parasternal heave, S3 gallop, bibasal creps, hepatomegaly + positive hepatojugular reflux, bilateral pitting oedema to mid-shin. The station turns on 'I was also thinking about…' said once per differential, after you already know it's heart failure. Hidden agenda: can he keep working the farm; guilt about the tablets.",
+   "dx": [
+    "**Congestive heart failure from ischaemic cardiomyopathy after a thrombolysed MI**, in a man on no secondary prevention who has had no follow-up for a year.",
+    "**A patient one year post-MI who takes nothing and sees nobody has TWO complications waiting: heart failure, and RECURRENT ISCHAEMIC HEART DISEASE.** Ask about both — the second is the one candidates forget.",
+    "**The discriminating issue is the differential list you give after you already know the answer.** You can score six of seven on history, score one on differentials, and fail. **Name eight to ten, one reason each.**",
+    "**The question that splits heart from lung, asked first: 'is it more a tightness in your chest, or difficulty getting the air in?'** In a man with known IHD, tightness reopens another coronary event.",
+    "The stock AMC line is **six months, worse on walking, better with rest, walking less far** — **do not stop there. 'Are you short of breath when you're resting as well?'**",
+    "Heart failure signs: **raised JVP over 3 cm · displaced apex · S3 gallop · bibasal creps · hepatomegaly with positive hepatojugular reflux · bilateral pitting oedema.** **Definitive test: echocardiogram.**",
+    "**Four pillars of HFrEF: ACE inhibitor (or ARB or sacubitril–valsartan) · a beta-blocker licensed for heart failure — bisoprolol, carvedilol, metoprolol CR, nebivolol · a mineralocorticoid receptor antagonist · an SGLT2 inhibitor.** Start low, titrate slowly, monitor potassium and renal function. **Frusemide relieves congestion but does not change prognosis.**",
+    "Self-management: **daily weights with an action plan for a gain over 2 kg in 2 days · fluid restriction around 1.5 L daily if congested · salt reduction · cardiac rehabilitation · influenza, pneumococcal and COVID vaccination.** Plus the **secondary prevention he has been missing — aspirin, a high-intensity statin, blood pressure control.**",
+    "The rural exposures the stem plants: **wheat, hay and birds → hypersensitivity pneumonitis · cattle, sheep and goats → Q fever, and the vaccine needs PRE-VACCINATION SKIN TESTING AND SEROLOGY because vaccinating someone already exposed can cause a severe reaction · old sheds → asbestos and mesothelioma.**",
+    "**Reframe the name when he reacts to it**: it does not mean the heart is about to stop, it means it is not pumping as strongly as it should, and treatment makes people feel better and live longer. **Ask what he drives** — Austroads: symptoms at rest or on minimal exertion means not fit for an unconditional licence. **MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals from the examiner; sit; 'how can I help?'; the fixed acknowledgement line"
+     "**'Before I start, could I have the vital signs — blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation?'** Then introduce, open question, and your own fixed acknowledgement line: **'thank you for coming in to get this assessed today. Let me ask some questions and examine you, and we'll find the cause together.'**"
     ],
     [
      "0:40",
-     "★ 'Is it more a tightness in your chest, or difficulty getting the air in?' → then how long, constant, worse, better/worse, walk distance then vs now → ★ 'breathless at rest as well?' → cough, wheeze, phlegm"
+     "**Character first: 'is it more a tightness in your chest, or difficulty getting the air in?'** Then **how long · constant or coming and going · getting worse · what makes it worse and better · how far could you walk six months ago and how far now · AND ARE YOU SHORT OF BREATH AT REST AS WELL?**"
     ],
     [
-     "2:00",
-     "★ The MI: when, treatment then, medications NOW, taking them every day, GP check-ups → thank him, normalise. Then IHD questions (chest pain on exertion, racing, dizzy, blackouts) AND heart failure questions (lying flat, pillows, wake gasping, ankle swelling)"
+     "1:30",
+     "**Cough and noisy breathing** — cough, wheeze, phlegm and colour. Cheap, and it closes off asthma and COPD before you open the clue."
     ],
     [
-     "3:30",
-     "Cancer block anyway: weight, appetite, lumps, sweats, haemoptysis, previous cancer. Occupation: hay/grain/birds, asbestos, cattle/sheep/goats + Q fever vaccine; childhood infections; fever/travel/TB; smoke or did; joints/rash; tired/bleeding; PMHx, allergies, FHx"
+     "1:50",
+     "**The stem's clue — the heart of this station.** **When did you have your heart attack · what treatment did you have at the time · what medications are you on for it NOW · ARE YOU MANAGING TO TAKE THEM EVERY DAY · have you had regular follow-up with a GP?** → ran out at three or four months, never got a new script, three-hour round trip. **Thank him and normalise it; do not judge.**"
     ],
     [
-     "4:00/6:00",
-     "'Given the history I'd like to start with the cardiovascular examination' → appearance → JVP → apex, heave → heart sounds, murmurs, gallop/S3 → respiratory (movement, percussion, breath sounds, added, VR) → abdomen (hepatomegaly, hepatojugular reflux) → legs — 'is the oedema pitting?' → ECG + spirometry"
+     "2:40",
+     "**Both post-MI complications.** Recurrent IHD: **any chest pain with the breathlessness, especially on exertion · racing of the heart · dizziness or blackouts?** Heart failure: **worse lying down · HOW MANY PILLOWS · waking at night gasping · swelling in the legs or ankles?**"
+    ],
+    [
+     "3:20",
+     "**The cancer block, done anyway**: **weight loss without trying · appetite · lumps or bumps · night sweats · HAVE YOU COUGHED UP ANY BLOOD · any previous cancer?**"
+    ],
+    [
+     "3:50",
+     "**Occupation and exposures**: **what's your occupation · do you work with hay, grain or birds · ever exposed to ASBESTOS · contact with cattle, sheep or goats — and HAVE YOU HAD THE Q FEVER VACCINATION?**"
+    ],
+    [
+     "4:15",
+     "The remaining sweep: **childhood chest infections or repeated pneumonias · fevers or chills · recent cold or flu · travel or TB contact · joint pains or rashes · bruising, tiredness, bowel change or black stools.** Then **SADMA with pack-years and quit date, past history, family history.**"
+    ],
+    [
+     "4:45",
+     "**'Given the history, I'd like to start with the cardiovascular examination'** — say why. Then **JVP · apex and parasternal heave · heart sounds, murmurs, GALLOP OR THIRD HEART SOUND** → respiratory → **hepatomegaly and hepatojugular reflux** → **oedema, and is it pitting** → **ECG and spirometry.**"
     ],
     [
      "6:00",
-     "Diagnosis in plain words + THREE reasons → 'sounds like the heart's about to stop' → reframe → 'should I have come sooner?' → no blame, fix the follow-up → 'I was also thinking about…' × 8+ → summary to examiner"
+     "**Diagnosis with THREE reasons**: the pattern of the breathlessness and the three pillows · the swelling in both legs · the examination findings named one by one. Then reframe the term if he reacts to it."
+    ],
+    [
+     "6:45",
+     "**'I was also thinking about…' — said once per differential.** Recurrent IHD, arrhythmia, valve disease; then lung cancer, COPD, asthma, hypersensitivity pneumonitis from the grain, ILD, bronchiectasis, pneumonia and Q fever, TB, and anaemia. **If you realise you forgot to ask something, name it as a differential anyway — do not go back and re-take history.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I begin, could I have the vital signs — blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation? → 'Thank you for coming in to get this assessed today, Robert. I understand this is worrying for you. Let me ask you some questions and examine you, and we'll find the cause together — is that alright?'",
-    "★ Tell me about the breathlessness. First of all — is it more a tightness in your chest, or is it difficulty getting the air in?",
-    "How long have you had it? All the time or comes and goes? Getting worse? What makes it worse and better? How far could you walk six months ago, and how far now? ★ And are you short of breath when you're resting as well? Any cough, wheeze or noisy breathing, any phlegm — what colour?",
-    "★ Can I ask about your heart attack? When did you have it? What treatment did you have at the time? What medications are you on for it now? Are you managing to take them every day? Have you been having regular check-ups with a GP? → 'Thank you for being straight with me — that's more common than you'd think'",
-    "Since the heart attack — chest pain with the breathlessness, especially on exertion? Racing of the heart? Dizziness or blackouts? Is the breathlessness worse when you lie down — how many pillows? Wake in the night gasping? Swelling in your legs or ankles?",
-    "★ Lost weight without trying? Appetite? Lumps or bumps? Night sweats? Have you coughed up any blood? Ever had cancer of any kind?",
-    "What's your occupation? Work with hay, grain or birds? Ever exposed to asbestos? Contact with cattle, sheep or goats — and have you had the Q fever vaccination? Chest infections as a child? Fevers or chills? Travel or TB contact? Smoke, or did you? Joint pains or rashes? Tiredness, bleeding? Other conditions — BP, diabetes, kidneys? Allergies? Family?",
-    "'Given the history, I'd like to start with the cardiovascular examination. General appearance — respiratory distress, cyanosed, drowsy? Inspection — is the JVP raised? Palpation — apex beat displaced? Parasternal heave? Auscultation — first and second heart sounds normal, any murmurs, gallop rhythm or third heart sound? Respiratory — symmetrical movements, percussion, breath sounds and added sounds, vocal resonance? Abdomen — tenderness, hepatomegaly, positive hepatojugular reflux? Lower limbs — oedema, and is it pitting? And two office tests: ECG and spirometry.'"
-   ],
    "pefe": [
-    "Findings: no distress, not cyanosed, alert · JVP raised >3 cm · apex displaced · parasternal heave · HS normal, no murmurs, gallop with S3 · movements symmetrical, percussion normal, bibasal crepitations, VR normal · hepatomegaly, positive hepatojugular reflux · bilateral pitting oedema to mid-shin · ECG and spirometry requested",
-    "Traps: examining the lungs in detail and the heart briefly · asking leg-size difference (a DVT question — here it's pitting and bilateral) · findings on a printed card → read silently, 'thank you, I've noted the findings', don't narrate",
-    "Diagnosis: 'most likely you have a condition called heart failure. After a heart attack the muscle of the heart is damaged, and the heart doesn't pump blood around the body properly. The reasons: your breathlessness has a very particular pattern — worse lying flat, three pillows; swelling in both legs; and on examination raised pressure in the vein in your neck, an extra heart sound, crackles at the bases of your lungs, an enlarged liver and fluid in your legs'",
-    "'Sounds like the heart's about to stop' → 'I'm glad you said that, because it's a bad name for it. It doesn't mean your heart is about to stop — it isn't pumping as strongly as it should, and there are very good treatments that make people feel better and live longer. Part of why this has happened is you've been without your heart tablets for most of the year, and that's something we can put right' · 'Should I have come sooner?' → 'You've come in now, and that's what matters. I'm not here to give you a hard time about the distance'",
-    "'I was also thinking about…' ischaemic heart disease again (no chest pain/racing — still checking) · rhythm problem · valve problem · lung cancer (smoked; no weight loss/haemoptysis) · COPD and asthma (no wheeze) · hypersensitivity pneumonitis from grain and hay dust · lung scarring · bronchiectasis · infections — pneumonia, Q fever from the cattle, TB · anaemia. Forgot to ask about something (sarcoidosis)? Name it anyway — don't re-take the history",
-    "Summary to examiner: 60-year-old farmer, six months progressive exertional dyspnoea, orthopnoea on three pillows, PND, bilateral ankle oedema, one year post thrombolysed MI with no secondary prevention or follow-up; signs of biventricular failure; CHF from ischaemic cardiomyopathy, recurrent IHD second; ECG, echo, CXR, spirometry, FBE/UEC/glucose/lipids/TFT; restart secondary prevention + guideline HF therapy; cardiac rehab, HF service, telehealth cardiology; Q fever vaccination discussion · SA equivalents: Country Health Connect, PATS, MedSTAR 1300 13 12 33"
+    "**Vitals before you sit down**, then **cardiovascular FIRST and say why** — changing the order signals you are adapting to the case rather than reciting a template.",
+    "The order: **general appearance — distress, cyanosis, drowsiness · JVP · apex beat and parasternal heave · heart sounds, murmurs, GALLOP AND THIRD HEART SOUND · respiratory — symmetrical movement, percussion, breath sounds and added sounds, vocal resonance · abdomen — hepatomegaly and HEPATOJUGULAR REFLUX · lower limbs — oedema, AND IS IT PITTING · office tests — ECG and spirometry.**",
+    "**ECG always, even when heart failure is obvious** — prior infarction, LVH, atrial fibrillation, bundle branch block. **A pathological Q wave is at least 40 ms wide or deeper than 25% of the following R wave, in two or more contiguous leads**, and is permanent. **Small narrow septal Q waves under 40 ms in I, aVL, V5 and V6 are normal — do not call those an old infarct.**",
+    "**Echocardiogram is the definitive test** — ejection fraction, regional wall motion abnormality, valves, chamber sizes.",
+    "**Chest X-ray**, read as **A B C D E — Alveolar oedema (bat-wing) · Kerley B lines · Cardiomegaly · Dilated upper lobe vessels · Effusions.** **The cardiothoracic ratio over 0.5 is only valid on a PA film at full inspiration** — on an AP or portable film say the ratio cannot be assessed reliably. **And screen the lungs while you are there.**",
+    "**Spirometry** for obstructive versus restrictive. Bloods: **FBE for anaemia, UEC and eGFR, LFT, fasting glucose or HbA1c, lipids, TSH, iron studies.** **24-hour ambulatory BP** where hypertension is part of the picture.",
+    "**A natriuretic peptide 'if available to me'** — BNP and NT-proBNP are guideline tests to rule out heart failure but community access in Australia is limited and they are not universally MBS-rebated. **Echocardiography is definitive regardless.**",
+    "**Avoid the shotgun list.** Relevance scores, not length — and do not stop at 'chest X-ray' as an entire investigation answer."
    ],
-   "fails": [
-    "Not asking tightness vs difficulty getting air in ★",
-    "Not exploring the MI — when, treatment then, treatment now, compliance, follow-up ★",
-    "Not asking about haemoptysis ★",
-    "Fewer than six further differentials — stopping after 'heart failure' ★",
-    "Hearing 'better with rest' and not asking about breathlessness at rest; skipping the cancer block because the picture is complete",
-    "Examining lungs in detail and heart briefly; not asking pitting; judgemental about the tablets or the distance ('it's not as simple as that from where I live'); untranslated jargon; no ECG"
-   ],
-   "numbers": [
-    "Vitals BP 140/90 · PR 96 · RR 14 · T 36.5 · SpO2 99% — a normal saturation does not exclude heart failure · JVP abnormal >3 cm above the sternal angle · three pillows · six months progressive · 30 pack-years",
-    "Definitive test: echocardiogram · four pillars of HFrEF: ACE inhibitor or ARNI · beta-blocker (bisoprolol, carvedilol, metoprolol CR, nebivolol) · MRA · SGLT2 inhibitor · frusemide relieves congestion but does not change prognosis VERIFY",
-    "Action plan: >2 kg gain in 2 days → call · fluid restriction ~1.5 L/day if congested · daily weights",
-    "Rural exposures to name: hypersensitivity pneumonitis (grain, hay, birds) · Q fever (cattle, sheep, goats; vaccine Q-VAX) · asbestos in old sheds · history and differentials are separately scored",
-    "Variant 2 — he admits stopping the tablets: 'that's far more common than people admit, and it isn't a telling-off. What got in the way — cost, the trip, side effects, or just life? … longer script, a pharmacy that can post them, telehealth review so you're not driving three hours for five minutes'",
-    "Variant 3 — 'Am I going to be able to keep working the place?' → can't promise today; most people with treated heart failure keep doing a great deal — treatment usually improves what you can do; tests and medication first, then work out the farm together; 'what do you drive, and how far?' (fitness to drive VERIFY)",
-    "Variant 4 — printed card: read silently, 'thank you, I've noted the findings', straight to diagnosis · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Heart failure — ischaemic cardiomyopathy**",
+     "Previous MI, **no secondary prevention**, progressive exertional dyspnoea, orthopnoea, ankle swelling",
+     "Pillows, PND, oedema, raised JVP, S3, displaced apex, bibasal creps, hepatomegaly",
+     "**Echocardiogram**; ECG, CXR, natriuretic peptide if available — high"
+    ],
+    [
+     "**Recurrent ischaemic heart disease**",
+     "Chest tightness on exertion, prior MI, **a year off aspirin and statin**",
+     "Exertional chest pain, palpitations, dizziness",
+     "ECG, troponin if acute, stress testing or angiography — high"
+    ],
+    [
+     "Arrhythmia, especially AF · valvular disease",
+     "Palpitations, irregular pulse, murmur, tachycardia",
+     "Rate and rhythm, murmur character",
+     "ECG, Holter, echocardiogram — high"
+    ],
+    [
+     "**Lung cancer or mesothelioma**",
+     "Smoking history, **asbestos in the old sheds**, weight loss, haemoptysis",
+     "Weight, appetite, lumps, night sweats, clubbing, lymphadenopathy",
+     "**CXR then CT chest; urgent referral** — immediate"
+    ],
+    [
+     "COPD · asthma",
+     "Long smoking history; wheeze, diurnal variation, atopy, family history",
+     "Noisy breathing, sputum, reversibility",
+     "Spirometry with bronchodilator response"
+    ],
+    [
+     "**Hypersensitivity pneumonitis · ILD**",
+     "**Wheat farm, mouldy hay, birds**; dry cough, symptoms tied to the work shed",
+     "Exposure timing, fine inspiratory crackles, clubbing",
+     "CXR, **HRCT**, spirometry with gas transfer"
+    ],
+    [
+     "Bronchiectasis",
+     "Recurrent childhood chest infections, chronic productive cough with large sputum volumes",
+     "Sputum volume and colour, coarse crackles",
+     "HRCT chest, sputum culture"
+    ],
+    [
+     "**Pneumonia, atypicals, Q fever, TB**",
+     "Fever, sweats, **livestock contact**, travel or TB contact",
+     "Fevers, rigors, **unvaccinated farm or abattoir work**",
+     "CXR, sputum culture, **Q fever and atypical serology**, sputum for AFB — high"
+    ],
+    [
+     "PE · pleural effusion",
+     "Sudden onset, pleuritic pain, immobility, malignancy",
+     "Calf pain, unilateral findings, dullness at a base",
+     "CTPA; CXR then diagnostic tap — immediate"
+    ],
+    [
+     "Anaemia · thyrotoxicosis · CKD overload · drug effect",
+     "Fatigue, pallor, bleeding; tremor and weight loss; known kidney disease; **calcium channel blocker oedema**",
+     "Pallor, thyroid signs, **the medication list**",
+     "FBE and iron studies, TSH, UEC and eGFR, medication review"
+    ]
    ]
   },
   "source": "SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf (Version A — Robert Hale, post-MI farmer)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "No distress, not cyanosed, alert"
-   ],
-   [
-    "JVP",
-    "RAISED, more than 3 cm above the sternal angle"
-   ],
-   [
-    "Praecordium",
-    "Apex displaced · parasternal heave"
-   ],
-   [
-    "Heart sounds",
-    "Normal, no murmurs, GALLOP WITH AN S3"
-   ],
-   [
-    "Chest",
-    "Movements symmetrical, percussion normal, BIBASAL CREPITATIONS, vocal resonance normal"
-   ],
-   [
-    "Abdomen",
-    "HEPATOMEGALY with a POSITIVE hepatojugular reflux"
-   ],
-   [
-    "Legs",
-    "Bilateral pitting oedema to mid-shin"
-   ],
-   [
-    "Bedside tests",
-    "ECG and spirometry requested"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Not asking 'is it more a tightness in your chest, or difficulty getting the air in?' — in a man with known IHD, tightness means another coronary event, and the examiner is listening for it (★)",
-   "FAIL — Not exploring the MI because it is printed in the stem — when, treatment then, medications now, taking them every day, GP follow-up; compliance is the key question of the case, and 'I ran out' is the real cause (★)",
-   "FAIL — Never asking about haemoptysis, or dropping the cancer block because the heart-failure picture is complete — lung cancer and mesothelioma stay live in a 60-year-old ex-smoker with asbestos sheds (★)",
-   "FAIL — Fewer than six further differentials after 'heart failure' — 'I was also thinking about…' once per differential; name hypersensitivity pneumonitis and Q fever for the farm (★)",
-   "DO — 'Are you short of breath when you're resting as well?' — the severity marker most candidates omit; then orthopnoea, pillows, PND, oedema",
-   "DO — 'Given the history, I'd like to start with the cardiovascular examination' — JVP, apex, heave, gallop or S3 by name, hepatojugular reflux, 'is the oedema pitting?' — then the diagnosis with three reasons"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-33",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "General practice (online format). Stem reconstructed from the variant section — the notes give the findings and the shape of the case, not a verbatim door stem.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "A 70-year-old man with a history of hypertension presents with shortness of breath, some chest heaviness, and ankle swelling."
   ],
@@ -11819,92 +11894,177 @@
    "Ask the examiner for the examination findings",
    "Explain your most likely diagnosis and differentials to the patient, and your investigations to the examiner"
   ],
-  "time": "8 minutes. Same spine as MED-32; the difference is that the findings do NOT settle the diagnosis, so the explanation must stay honestly broad.",
+  "findings": [
+   [
+    "Pulse",
+    "TACHYCARDIC"
+   ],
+   [
+    "JVP",
+    "NOT RAISED"
+   ],
+   [
+    "Apex beat and heaves",
+    "Not displaced, no parasternal heave"
+   ],
+   [
+    "Auscultation",
+    "A MURMUR is present. NO GALLOP, NO THIRD HEART SOUND"
+   ],
+   [
+    "Respiratory",
+    "NO CREPITATIONS. Percussion and vocal resonance normal"
+   ],
+   [
+    "Abdomen",
+    "NO HEPATOMEGALY, no hepatojugular reflux"
+   ],
+   [
+    "Lower limbs",
+    "BILATERAL LOWER-LIMB OEDEMA"
+   ],
+   [
+    "What the absences mean",
+    "The sparse findings are DELIBERATE. With no raised JVP, no gallop, no crepitations and no hepatomegaly, 'heart failure' is OVER-CALLING IT. Oedema alone could be a calcium channel blocker such as amlodipine"
+   ],
+   [
+    "The answer to give",
+    "CARDIOVASCULAR DISEASE — and then say what it could be within that: narrowing of the arteries, heart failure, a problem with the muscle itself, or a rhythm disturbance. 'I'd rather test than guess'"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the sparse findings, and what the absences mean",
+  "must": [
+   "FAIL — Over-calling it. Do not say 'heart failure' on oedema, tachycardia and a murmur.",
+   "FAIL — Skipping the respiratory differentials because the picture looks cardiac.",
+   "FAIL — Never asking about haemoptysis, weight loss or previous cancer.",
+   "FAIL — An investigation answer that stops at 'chest X-ray', or a shotgun list with no reasons.",
+   "ASK — Are you short of breath when you're resting as well? And how many pillows?",
+   "ASK — What medications are you on — and are you managing to take them every day?"
+  ],
   "back": {
-   "dx": "The vague version — cardiovascular disease, cause not yet determinable: chest heaviness in a 70-year-old hypertensive with bilateral oedema, tachycardia and a murmur could be ischaemic heart disease, heart failure, a cardiomyopathy, a valve lesion, or an arrhythmia ('your heart is running fast today'). The mark is for saying 'I don't have enough yet to tell you which, and I'd rather test than guess' — then the lung list with lung cancer at the top, then a targeted investigation set to the examiner. Same history structure as MED-32: tightness vs air hunger, rest breathlessness, IHD and HF questions, cancer block, exposures, smoking.",
+   "dx": [
+    "**Cardiovascular disease — and that is the answer.** Months of exertional breathlessness, chest heaviness, ankle swelling and long-standing hypertension, in a man in his seventies with **no previous MI**.",
+    "**The vagueness is the design.** The sparse findings exist so that the investigation task has something to do. **Refusing to over-call it is what is being marked.**",
+    "Say it as a range within cardiovascular disease: **narrowing of the heart's arteries · heart failure · a problem with the heart muscle itself · a rhythm disturbance — the heart is running fast today. 'I don't yet have enough to tell you which, and I'd rather test than guess.'**",
+    "**Bilateral oedema alone is not heart failure.** With **no raised JVP, no gallop, no crepitations and no hepatomegaly**, the commonest innocent explanation is a **calcium channel blocker such as amlodipine** — so take the medication list seriously.",
+    "**Long-standing hypertension is the thread**: it drives ischaemic heart disease, hypertensive heart disease with diastolic dysfunction, and atrial fibrillation. **24-hour ambulatory BP monitoring earns its place here.**",
+    "A murmur with tachycardia keeps **valvular disease — especially aortic stenosis in this age group — and arrhythmia** live. **Echocardiogram answers both.**",
+    "**The lung list still has to be said**: **lung cancer at the top, then COPD, asthma, bronchiectasis and interstitial lung disease.** History and differentials are separately scored.",
+    "Investigations, with a reason attached to each: **ECG because this could still be ischaemic heart disease · echocardiogram for heart failure and the murmur · 24-hour ambulatory BP given the hypertension · chest X-ray, which may show cardiomegaly or an effusion and screens the lungs · spirometry · FBE for anaemia.**",
+    "**Avoid the shotgun list** — 'FBE, ESR, CRP, LFT, TFT, renal function and an echo'. **Relevance is what scores, not length.**",
+    "If the tests confirm HFrEF, the **four pillars** follow: **ACE inhibitor or ARNI · a beta-blocker licensed for heart failure · a mineralocorticoid receptor antagonist · an SGLT2 inhibitor**, with **frusemide for congestion only**. Until then, **investigate rather than commit**."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals; intro; acknowledge; 'tightness or difficulty getting air in?' — here there IS heaviness, so run the ACS questions properly (exertional, radiation, sweating, nausea, duration, at rest)"
+     "Vitals from the examiner, introduce, open question, and the acknowledgement line."
+    ],
+    [
+     "0:40",
+     "**Character first: 'is it more a tightness in your chest, or difficulty getting the air in?'** Then **how long · constant or intermittent · getting worse · aggravating and relieving · how far could you walk before and now · AND AT REST?**"
     ],
     [
      "1:30",
-     "Timing, course, exertion tolerance, at rest; cough/wheeze/phlegm; HF questions (pillows, PND, oedema); rhythm (racing, dizziness, blackouts); hypertension — how long, treated with what, controlled, compliance, checks"
+     "The **chest heaviness** — treat it as angina until proven otherwise: **on exertion, relieved by rest, how long does an episode last, any radiation, sweating or nausea, any racing heart, dizziness or blackouts?**"
     ],
     [
-     "3:30",
-     "Cancer block, haemoptysis; occupation/exposures; infection/TB; smoking; PMHx incl. diabetes/kidneys; FHx; concerns"
+     "2:10",
+     "Heart failure questions: **worse lying down · HOW MANY PILLOWS · waking at night gasping · swelling in the legs, and is it both sides?**"
     ],
     [
-     "6:00",
-     "CVS examination first by name (JVP, apex, heave, sounds, murmur — where, systolic/diastolic, radiation, gallop), respiratory, abdomen, legs — pitting? → ECG"
+     "2:40",
+     "**The hypertension thread**: **how long have you had it · what are you taking for it · ARE YOU TAKING IT EVERY DAY · when was it last checked · any kidney trouble, diabetes or high cholesterol?** And go through **the whole medication list by name** — the oedema may be in it."
+    ],
+    [
+     "3:20",
+     "**The cancer block, done anyway**: **weight loss without trying · appetite · lumps or bumps · night sweats · HAVE YOU COUGHED UP ANY BLOOD · any previous cancer?**"
+    ],
+    [
+     "3:50",
+     "The respiratory and exposure sweep: **cough, wheeze, sputum · occupation now and before · ASBESTOS by name · birds, hay or grain · childhood chest infections · fevers, travel, TB contact.** Then **smoking in pack-years**, alcohol, allergies, past and family history."
+    ],
+    [
+     "4:45",
+     "Examination request, **cardiovascular first and say why** — JVP, apex, heave, heart sounds and **murmur character**, gallop or S3; then respiratory, abdomen, **oedema and is it pitting**; then **ECG**."
+    ],
+    [
+     "5:45",
+     "**The explanation that refuses to over-call it**, with the four possibilities named inside cardiovascular disease, then **the lung list**, then **'I'd rather test than guess.'**"
     ],
     [
      "6:45",
-     "Diagnosis honestly broad: 'a problem with your heart — cardiovascular disease. Within that it could be…' → lung list → investigations to the examiner → summary"
+     "**The investigations, each with its reason** — ECG, echocardiogram, 24-hour ambulatory BP, chest X-ray, spirometry, FBE. Then safety-net, follow-up and a summary."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I begin, could I have the vital signs? → 'Thank you for coming in to get this assessed today. Let me ask some questions and examine you, and we'll find the cause together'",
-    "★ Is it more a tightness in your chest, or difficulty getting the air in? → the heaviness: where, brought on by exertion, travel to arm/jaw, sweating or nausea with it, how long each time, ever at rest?",
-    "How long? Constant? Worse? Walk distance then vs now? ★ Breathless at rest as well? Cough, wheeze, phlegm? Lying flat — pillows? Waking gasping? Ankle swelling — both? Racing heart, dizziness, blackouts?",
-    "Your blood pressure — how long have you had it, what tablets, taking them every day, is it checked, any kidney trouble or diabetes?",
-    "★ Weight loss, appetite, lumps, night sweats, coughed up blood, previous cancer? Occupation, dusts, asbestos, animals? Fevers, travel, TB? Smoke, or did you? Family?",
-    "'Given the history, I'd like to start with the cardiovascular examination — appearance, JVP, apex, heave, heart sounds, any murmur and where it is loudest, whether systolic or diastolic and where it radiates, any gallop; then respiratory, abdomen, and lower limbs — is the oedema pitting and bilateral? And an ECG.'",
-    "'The most likely cause of your breathlessness is a problem with your heart — cardiovascular disease. Within that it could be narrowing of the heart's arteries, it could be heart failure, it could be a problem with the heart muscle, or a rhythm disturbance — your heart is running fast today. I don't have enough yet to tell you which, and I'd rather test than guess. I was also thinking about the lungs: lung cancer at the top of that list, then COPD, asthma, bronchiectasis and scarring of the lungs.'",
-    "To the examiner: 'An ECG, because this could still be ischaemic heart disease; an echocardiogram to assess for heart failure and the murmur; 24-hour ambulatory blood pressure monitoring given his long-standing hypertension; a chest X-ray, which may show cardiomegaly or an effusion as well as screening the lungs; spirometry; and a full blood examination for anaemia.'"
-   ],
    "pefe": [
-    "Findings: bilateral ankle oedema · tachycardia · a murmur · nothing else — do not invent JVP, S3 or crepitations that weren't given",
-    "Murmur questions to ask the examiner: site, timing (systolic/diastolic), radiation, grade, change with respiration — aortic stenosis vs mitral regurgitation matters for the explanation",
-    "If chest heaviness is current or recent and exertional → say aloud that ACS must be excluded first (ECG now, troponin) before the outpatient work-up",
-    "Investigation logic: ECG (ischaemia, rhythm, LVH) · echo (EF, valves, wall motion) · 24-h ABPM (hypertensive heart disease) · CXR (cardiomegaly, effusion, lung screen) · spirometry · FBE (anaemia) · UEC, BNP, TFT, lipids, HbA1c",
-    "SA: telehealth cardiology; PATS; MedSTAR 1300 13 12 33 if unstable; TIS 131 450",
-    "Everything else — NOTHING ELSE IS GIVEN — do not invent a raised JVP, an S3 or crepitations"
+    "Ask for the examination **cardiovascular first, and say why**: **JVP · apex beat and parasternal heave · heart sounds, MURMUR CHARACTER, gallop or third heart sound · respiratory — movement, percussion, added sounds, vocal resonance · abdomen — hepatomegaly and hepatojugular reflux · lower limbs — oedema, and is it pitting and bilateral · ECG.**",
+    "**Note the negatives out loud.** No raised JVP, no gallop, no crepitations and no hepatomegaly are findings, and they are what stop you calling this heart failure.",
+    "**ECG** — because this could still be ischaemic heart disease, and it screens for LVH, AF and bundle branch block.",
+    "**Echocardiogram** — ejection fraction, regional wall motion, and **the murmur**. It answers heart failure and valve disease in one test.",
+    "**24-hour ambulatory blood pressure monitoring**, given the long-standing hypertension.",
+    "**Chest X-ray** — cardiomegaly, upper lobe venous diversion, interstitial oedema, effusion, **and a lung mass**. **Spirometry** for obstructive versus restrictive.",
+    "**Bloods: FBE for anaemia, UEC and eGFR, LFT, fasting glucose or HbA1c, lipids, TSH, iron studies.** A natriuretic peptide **if available to me**."
    ],
-   "fails": [
-    "Committing to 'heart failure' from oedema + tachycardia alone when the findings don't support it ★",
-    "Not asking tightness vs air hunger; not running ACS questions when heaviness is present ★",
-    "No haemoptysis question; fewer than six differentials; no lung list ★",
-    "Not characterising the murmur; not asking whether the oedema is pitting and bilateral",
-    "Investigations without reasons; no ECG",
-    "False certainty to the patient; jargon (cardiomyopathy, arrhythmia) untranslated"
-   ],
-   "numbers": [
-    "Cardiac causes to keep open: IHD · heart failure · cardiomyopathy · valve disease · arrhythmia (tachycardia present) · hypertensive heart disease",
-    "Lung list: lung cancer → COPD → asthma → bronchiectasis → ILD/scarring → infection/TB → anaemia (non-lung)",
-    "ABPM: hypertension if daytime mean ≥135/85 or 24-h mean ≥130/80 VERIFY · LVH on ECG: Sokolow–Lyon S V1 + R V5/V6 >35 mm VERIFY",
-    "Phrase: 'I don't have enough yet to tell you which, and I'd rather test than guess'",
-    "Echocardiogram is the definitive test for both HF and the murmur · normal SpO2 does not exclude HF",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Cardiovascular disease, cause not yet defined**",
+     "Exertional breathlessness, **chest heaviness**, oedema, **long-standing hypertension**, tachycardia, a murmur",
+     "The four sub-possibilities named: arteries, pump, muscle, rhythm",
+     "**ECG, echocardiogram, 24-hour ambulatory BP.** Test rather than guess"
+    ],
+    [
+     "Ischaemic heart disease",
+     "**Chest heaviness on exertion** in a hypertensive man in his seventies",
+     "Exertional pattern, duration, radiation, sweating, relief with rest",
+     "ECG, stress testing or CTCA; treat risk factors"
+    ],
+    [
+     "Heart failure",
+     "Breathlessness and bilateral oedema — **but the confirming signs are ABSENT here**",
+     "JVP, gallop, crepitations, hepatomegaly — **all negative**",
+     "**Echocardiogram.** Do not diagnose it on oedema alone"
+    ],
+    [
+     "Valvular disease, especially aortic stenosis",
+     "**A murmur**, exertional breathlessness, age over 70, chest heaviness, syncope",
+     "Murmur character and radiation, exertional syncope",
+     "**Echocardiogram**"
+    ],
+    [
+     "Arrhythmia, especially AF",
+     "**Tachycardia**, palpitations, irregular pulse",
+     "Rate and rhythm, palpitations, dizziness",
+     "ECG, Holter monitor"
+    ],
+    [
+     "**Calcium channel blocker oedema**",
+     "**Bilateral ankle oedema with no other heart failure signs**, on amlodipine",
+     "**The full medication list by name**",
+     "**Medication review** — the innocent explanation you must not miss"
+    ],
+    [
+     "**Lung cancer**",
+     "Smoking history, weight loss, haemoptysis, age",
+     "Weight, appetite, lumps, night sweats, haemoptysis, asbestos",
+     "**CXR then CT chest; urgent referral** — immediate"
+    ],
+    [
+     "COPD · asthma · bronchiectasis · ILD",
+     "Smoking, wheeze, sputum, occupational exposure, dry cough with crackles",
+     "Noisy breathing, sputum volume, exposures, clubbing",
+     "Spirometry with reversibility; HRCT where the picture fits"
+    ],
+    [
+     "Anaemia · thyroid disease · CKD overload",
+     "Fatigue, pallor, bleeding; tremor or weight change; known kidney disease",
+     "Pallor, thyroid signs, bleeding, medication list",
+     "FBE and iron studies, TSH, UEC and eGFR"
+    ]
    ]
   },
   "source": "SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf (Version B — the vague online case, 70-year-old hypertensive)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › SOB_Heart_vs_Lung_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Legs",
-    "Bilateral ankle oedema"
-   ],
-   [
-    "Pulse",
-    "Tachycardia"
-   ],
-   [
-    "Heart sounds",
-    "A MURMUR — ask its site, timing, radiation, grade and change with respiration"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "SAY — 'The most likely cause of your breathlessness is a problem with your heart — cardiovascular disease'",
-   "FAIL — Committing to 'heart failure' from oedema + tachycardia alone when the findings don't support it",
-   "FAIL — Not asking tightness vs air hunger",
-   "FAIL — not running ACS questions when heaviness is present",
-   "FAIL — fewer than six differentials",
-   "FAIL — Not characterising the murmur"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-34",
