@@ -12069,8 +12069,8 @@
  {
   "id": "MED-34",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "You are the GP.",
   "stem": [
    "Lily, 28, presents with shortness of breath since last night, which began while she was sitting on the couch and has not settled."
   ],
@@ -12078,100 +12078,171 @@
    "Take a complete history (6 minutes)",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes. History 6 · diagnosis, differentials and disposition 2. Nothing is volunteered.",
+  "findings": [
+   [
+    "Observations from the examiner",
+    "BP 118/74 · PULSE 104 · RR 22 · SpO2 95% on room air · T 37.1. Say it back: MILDLY TACHYCARDIC AND TACHYPNOEIC BUT NOT SHOCKED. TACHYPNOEA AND TACHYCARDIA ARE THE COMMONEST SIGNS OF PE"
+   ],
+   [
+    "Physical examination",
+    "NOT PART OF THIS VERSION — six minutes of history, then diagnosis and differentials. Every finding that makes the diagnosis is disclosed ONLY if you ask the specific question"
+   ],
+   [
+    "What an examination would show",
+    "EXAMINATION IS OFTEN ENTIRELY NORMAL IN PE. A normal examination, a normal ECG and a normal chest X-ray DO NOT EXCLUDE IT"
+   ],
+   [
+    "Wells score for this patient",
+    "AT LEAST 7.5 — DVT signs and symptoms 3 · PE the most likely diagnosis 3 · immobilisation 3 or more days 1.5. Over 4 = PE LIKELY → IMAGE. NO D-DIMER"
+   ],
+   [
+    "PERC, if the examiner raises it",
+    "SHE FAILS ON AT LEAST THREE COUNTS — oestrogen use, unilateral leg swelling, heart rate over 100. PERC only applies when PE is unlikely and suspicion is low"
+   ],
+   [
+    "VERSION — haemodynamically unstable",
+    "BP 84/52 · HR 128 · SpO2 87%. HIGH-RISK (MASSIVE) PE — this is a resuscitation. Priority-one ambulance, high-flow oxygen, two large-bore cannulae, CAUTIOUS fluid (over-filling worsens right ventricular failure), monitoring with a defibrillator, ECG, and discuss THROMBOLYSIS. MedSTAR in parallel, not afterwards. DO NOT DELAY TRANSFER FOR IMAGING"
+   ]
+  ],
+  "findingsLabel": "Observations and the scoring · open when you would ask",
+  "must": [
+   "FAIL — Never asking about the legs. The swollen calf is the entire case.",
+   "FAIL — No clotting risk sweep. Run COST VMPF as a named block, under 60 seconds.",
+   "FAIL — Sending her home, or arranging an outpatient scan. Ambulance, ED, today.",
+   "FAIL — Settling on a panic attack before PE is excluded in a woman on the pill.",
+   "ASK — Which pill, and do you know its name? The risk is the oestrogen.",
+   "ASK — What did you do during the flight? That is what converts travel into immobility."
+  ],
   "back": {
-   "dx": "Pulmonary embolism from a right calf DVT — constant, worsening breathlessness since last night, started at rest on the couch, worse moving but present sitting still, slight dry cough, slight pleuritic ache; FOUR withheld findings, each needing its own specific question: right calf swollen and achy for two days ('thought I'd pulled something') · flew back from the States three days ago AND took a sleeping tablet and slept the whole way (only if you ask what she did on the flight) · on Levlen, a COMBINED pill (only if you ask which) · mum had a DVT after an operation (only if you ask family clots). Not pregnant (LMP two weeks). Hidden agenda: 'do you think it's just a panic attack? work's been stressful' at ~5 min. Described as the highest-failure case in the breathlessness cluster; if you could say one thing to pass: DVT signs and symptoms. Disposition = ambulance to ED today, not an outpatient scan.",
+   "dx": [
+    "**Pulmonary embolism, provoked** — prolonged immobilisation on a long-haul flight plus an **oestrogen-containing pill**, on a background family history of clotting.",
+    "**This is the highest-failure case in the breathlessness cluster**, because there is no image and no examination — **the calf, the flight, the sleeping tablet, the pill and the family history are each disclosed only if you ask a specific question.**",
+    "**If you could say only one phrase in this station it would be 'DVT signs and symptoms.'** The leg is the source, it is a Wells criterion worth three points, and here it is positive.",
+    "**Since last night is neither acute nor chronic — do not deliberate.** Run the same breathlessness structure you always run, and add **'what were you doing exactly before it started?'** as your open hunt for a trigger.",
+    "**COST VMPF, as a named block: Contraception · Obesity · Surgery · Travel and immobility · Varicose veins · Malignancy · Pregnancy · Family history.** Under 60 seconds.",
+    "**The oestrogen is the risk.** Combined pills, patches and rings count; **progestogen-only pills, implants and hormonal IUDs do not.** And **it is the immobility, not the aeroplane** — a long bus or car trip, bed rest or a leg cast all count.",
+    "**Wells, two-tier: DVT signs 3 · PE most likely 3 · HR over 100 1.5 · immobilisation 3 or more days or surgery within 4 weeks 1.5 · previous VTE 1.5 · haemoptysis 1 · malignancy 1. Over 4 = likely → image. 4 or less → D-dimer.** **Do not order a D-dimer when PE is already likely** — a positive changes nothing and a negative will not reassure you.",
+    "**CTPA is the investigation of choice. V/Q if pregnant**, in contrast allergy or significant renal impairment. **Check a β-hCG in any woman of childbearing age before imaging.**",
+    "**Stable, non-pregnant adult: rivaroxaban 15 mg twice daily for 21 days then 20 mg daily, or apixaban 10 mg twice daily for 7 days then 5 mg twice daily.** Alternative **enoxaparin 1.5 mg/kg daily or 1 mg/kg twice daily** bridging to warfarin, **target INR 2–3**. **In pregnancy LMWH only — DOACs and warfarin are contraindicated.** **At least 3 months when provoked.**",
+    "**Stop the combined pill and arrange the replacement — do not leave her uncovered.** Condoms now; mini-pill, implant or IUD at follow-up. **Disposition is worth as much as the diagnosis: ambulance, emergency department, today, not driving herself.** **000 · MedSTAR 1300 13 12 33 · PATS for metropolitan follow-up.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Observations → 'mildly tachycardic and tachypnoeic, not shocked'; WIPE; 'short of breath sitting here?'; open question; acknowledge. Don't deliberate acute vs chronic — run the structure"
+     "**'Before I begin, may I have her observations — blood pressure, pulse, respiratory rate, oxygen saturation and temperature?'** Then WIPE, **confirm name and date of birth**, **'are you comfortable, and are you short of breath just sitting here?'**, open question, and **'I understand how stressful that must be — let me ask you some questions and we'll find the cause together.'**"
     ],
     [
      "0:45",
-     "Breathlessness: describe; constant/comes and goes; worse; first time; better/worse — exertion AND at rest; lying flat; ★ 'what were you doing exactly before it started?'; cough, sputum, BLOOD, wheeze, chest pain worse on breathing in"
+     "Explore it: **is it tightness in the chest, difficulty getting the breath in, or not getting enough air · constant or coming and going · is it getting worse · is this the first time · worse on exertion, AND IS IT THERE AT REST · worse lying flat · AND WHAT WERE YOU DOING EXACTLY BEFORE IT STARTED?**"
+    ],
+    [
+     "1:45",
+     "Cough and chest: **any cough · bringing anything up, what colour · HAVE YOU SEEN ANY BLOOD IN IT · any noisy or wheezy breathing · any chest pain, and is it worse when you breathe in deeply?**"
     ],
     [
      "2:15",
-     "★ 'Any swelling or pain in your calves or legs?' → which leg, when, painful/red/warm, sore to squeeze or walk"
+     "**The question that decides the station: 'have you had any swelling or pain in your calves or legs?'** Then chase it — **which leg · when did you first notice it · is it painful, red or warm · is it sore to squeeze the calf, or when you walk?**"
     ],
     [
      "2:45",
-     "★ COST VMPF in under 60 s: Contraception — which one? · Overweight — 'would you say you're currently overweight?' · Surgery/hospital last 1–2 months · Travel — 'and what did you do during the trip?', immobility/illness/cast · Varicose veins · Malignancy/weight loss · Pregnancy — LMP, any chance · Family or personal clots"
+     "**COST VMPF, under 60 seconds.** **C — are you taking any contraceptive pill, and do you know which one? · O — would you say you're currently overweight? · S — any surgery or hospital stay in the last month or two? · T — any long travel recently, AND WHAT DID YOU DO DURING THE TRIP, any period off your feet for days? · V — any prominent or dilated veins in your legs? · M — any previous cancer, or weight loss you didn't intend? · P — when was your last period, and is there any chance you could be pregnant? · F — have you or anyone in your family ever had a clot in the leg or lung?**"
     ],
     [
      "3:45",
-     "Rule out the rest: chest injury, smoking; wheeze/night cough/atopy/asthma FHx; fever/chills/sweats; tightness, palpitations, ankle swelling, fainting, sudden deaths <40; rash/itch/lip swelling/new food or drug; tiredness, dizziness, heavy periods, black stools; weight loss/sweats; stress, panic; conditions, meds, allergies, home; 'anything you were worried this might be?'"
+     "Rule out the rest: **any injury or blow to the chest, do you smoke · any wheeze, night cough, hay fever, eczema or asthma in the family · any fever, chills, sweats or unwell contacts · any chest tightness, palpitations, ankle swelling or fainting, any sudden death in the family under 40 · any rash, itch or swelling of the lips or tongue, any new food or medication · any tiredness, dizziness, heavy periods or black stools · any weight loss or night sweats.**"
     ],
     [
-     "6:00",
-     "Diagnosis in plain words LINKED to the leg → three causes stacking (flight asleep, combined pill, mum) → 'none of this is something you did wrong' → differentials briskly with panic last, pending exclusion → ambulance to ED now, no driving; CTPA; anticoagulant ≥3 months; stop the combined pill + alternative → safety-net → someone to meet her → summary → questions"
+     "4:45",
+     "Mood and close: **how have things been generally, any unusual stress, any episodes of panic with a racing heart and a feeling of dread** → then **other conditions, medications including over the counter, allergies, smoking and alcohol, who's at home, and WAS THERE ANYTHING YOU WERE PARTICULARLY WORRIED THIS MIGHT BE?** → she offers the panic attack. **Keep it on the list, explicitly last, pending exclusion.**"
+    ],
+    [
+     "5:30",
+     "**The diagnosis in plain words, linked to the leg**: a clot in one of the blood vessels of the lung, which **almost certainly formed in your leg and travelled up** — the flight, having slept through it, the combined pill, and her mother's clot. **'None of this is something you did wrong — it's a set of things stacking up.'**"
+    ],
+    [
+     "6:30",
+     "**The differentials, briskly, each with one reason**: collapsed lung, asthma, chest infection, a heart problem, severe allergic reaction, low blood count, panic attack — **only settled on once the clot is excluded** — and cancer at the far end."
+    ],
+    [
+     "7:00",
+     "**Disposition, which is the other half of the marks: 'this needs dealing with today, not next week. I'm calling an ambulance — I don't want you driving.'** CTPA at the hospital, blood thinner for at least three months, **stop the combined pill and arrange the alternative**, safety-net, **'is there someone I can call to meet you there?'**, summary."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I begin, may I have her observations — BP, pulse, respiratory rate, saturation and temperature? → 'I understand how stressful that must be. Let me ask you some questions and we'll work out the cause together and make a plan.'",
-    "Is it tightness in the chest, difficulty getting the breath in, or not getting enough air? All the time or comes and goes? Getting worse? First time? Worse when you walk — and is it there at rest? Worse lying flat? ★ What were you doing exactly before it started?",
-    "Any cough? Bringing anything up — ★ have you seen any blood in it? Noisy or wheezy breathing? Chest pain — worse when you breathe in deeply?",
-    "★ Have you had any swelling or pain in your calves or legs? — Which leg? When did you first notice it? Painful, red or warm? Sore when you squeeze the calf, or when you walk?",
-    "★ Are you taking any contraceptive pill — do you know which one, or its name? Would you say you're currently overweight? Any surgery or hospital stay in the last month or two? Any long travel recently — and what did you do during the trip? Any days off your feet — illness, a cast, bed rest? Prominent or dilated veins in your legs? Previous cancer, or weight loss you didn't intend? When was your last period — any chance you could be pregnant? Have you, or anyone in your family, ever had a clot in the leg or lung?",
-    "Injury to the chest? Smoke? Wheeze, night cough, hay fever, eczema, asthma in the family? Fever, chills, sweats? Chest tightness, palpitations, ankle swelling, fainting? Sudden deaths in the family under 40? Rash, itching, swelling of lips or tongue — new food or medication? Tiredness, dizziness, heavy periods, black stools? Weight loss, night sweats? Unusual stress, episodes of panic with a racing heart? Other conditions, medications, allergies? Who's at home? Anything you were particularly worried this might be?",
-    "'Lily, most likely you have a condition called a pulmonary embolism — in plain terms, a clot in one of the blood vessels of your lung. The clot almost certainly formed in your leg and then travelled up — which fits with the swelling and ache in your right calf. It formed because you were sitting still for a very long time on that flight, especially having slept through it. Being on a combined contraceptive pill adds to that risk, and so does your mum's history of clots. None of this is something you did wrong — it's a set of things stacking up.'",
-    "★ 'This is serious and it's very treatable, but it has to be dealt with today — not next week. I'm calling an ambulance and sending you to the emergency department now; I don't want you driving. They'll do a CT scan of the blood vessels in your lungs, and if it confirms the clot they'll start a blood-thinning medication, usually a tablet, for at least three months. We'll need to stop your combined pill — stop it now, condoms until we sort a replacement — and I'll make sure you have an alternative arranged.'"
-   ],
    "pefe": [
-    "No examination task in Version A — vitals only: HR 104, RR 22, SpO2 95%, afebrile, normotensive → stable, still an emergency disposition",
-    "Differentials to the patient: collapsed lung (no injury, no abrupt pain) · asthma attack (no wheeze, no history) · chest infection (no fever, no coloured phlegm) · heart — rhythm, muscle, arteries (no chest pain/palpitations) · severe allergic reaction (no rash/swelling) · low blood count · panic attack — 'which I'd only settle on once the clot has been excluded' · cancer at the far end (age, no weight loss)",
-    "Variant 1 — she offers the panic attack: 'Panic attacks absolutely can cause exactly this, and I'm keeping it on my list. But I want to be honest about why I'm not settling on it today: a swollen painful calf, a very long flight asleep and immobile, and a combined pill. That combination makes a clot in the lung a real possibility. We rule that out first; if it's clear, then we talk properly about the anxiety — which matters too'",
-    "Variant 3 — wants to go home: 'I understand, and I'm sorry — but no. A clot in the lung can be stable one hour and dangerous the next; the risk isn't how you feel in this chair, it's the next few hours. The scan is only at the hospital and the treatment shouldn't wait. I'd rather you didn't drive in case you become more breathless or faint — that's why I'm calling an ambulance. Work will keep. Can I ring your partner to meet you there?'",
-    "Contraception replacement: progestogen-only pill, implant, hormonal IUD all safe; combined pill, patch and ring are the oestrogen risk",
-    "SA: 000; MedSTAR 1300 13 12 33 in a rural site (parallel, not afterwards); TIS 131 450",
-    "Interpretation — Stable — but still an emergency disposition"
+    "**Stability first: blood pressure, pulse, respiratory rate, oxygen saturation and temperature.** If no examiner is available, say it to the patient — the observations are still your first move.",
+    "**Examination is often entirely normal in PE.** When signs are present: **tachypnoea and tachycardia (commonest) · DVT signs in one leg · LOUD P2 from acute pulmonary hypertension · raised JVP · S3 gallop and hypotension in massive PE · a systolic murmur at the tricuspid area · low-grade fever · pleural rub, and dullness where infarction or a small effusion has occurred.**",
+    "**Calculate the Wells score out loud**, then **CTPA — the investigation of choice. V/Q if pregnant, contrast allergy or significant renal impairment.** **D-dimer only where PE is unlikely.**",
+    "**ECG: tachycardia with non-specific ST and T change is by far the commonest.** Also **right bundle branch block, right axis deviation, T-wave inversion V1–V4, atrial fibrillation**. **S1Q3T3 is classic, genuinely uncommon, and neither sensitive nor specific.** **A normal ECG does not exclude PE.**",
+    "**CTPA description to say aloud: 'filling defects within the contrast-opacified pulmonary arteries, consistent with pulmonary emboli.'** An accompanying pleural effusion is not evidence against it.",
+    "Bloods: **FBE, UEC, LFT, coagulation profile, β-hCG.** **CXR to exclude alternatives. ABG if hypoxic. Leg ultrasound if DVT is suspected. Bedside echocardiogram if unstable — right heart strain.**",
+    "**Thrombophilia testing is not done acutely or while anticoagulated, and rarely changes management.**",
+    "**Oxygen if saturation is below 92%.** IV access, continuous monitoring, 12-lead ECG, analgesia for pleuritic pain."
    ],
-   "fails": [
-    "Never asking about the legs ★",
-    "Never running the clotting risk sweep; never asking which pill; never asking what she did on the flight ★",
-    "Agreeing she can go home, hesitating, or arranging an outpatient scan; letting her drive ★",
-    "Never mentioning stopping the combined pill and replacing it ★",
-    "Taking the panic-attack offer; dismissing a young woman's symptoms — or the opposite, never keeping panic on the list",
-    "Not asking pregnancy/LMP; asking her BMI; wasting time deciding acute vs chronic; no safety-net or summary"
-   ],
-   "numbers": [
-    "COST VMPF: Contraception (oestrogen) · Obesity · Surgery · Travel/immobility · Varicose veins · Malignancy · Pregnancy · Family history",
-    "Wells (PE): DVT signs 3 · PE most likely 3 · HR >100 1.5 · immobilisation ≥3 days or surgery within 4 weeks 1.5 · previous VTE 1.5 · haemoptysis 1 · malignancy 1 → >4 PE likely → image; ≤4 → D-dimer · PERC: age <50, HR <100, SpO2 ≥95%, no haemoptysis, no oestrogen, no prior VTE, no unilateral leg swelling, no surgery/trauma within 4 weeks VERIFY",
-    "CTPA investigation of choice · V/Q in pregnancy · rivaroxaban 15 mg BD × 21 days then 20 mg daily · apixaban 10 mg BD × 7 days then 5 mg BD · enoxaparin 1.5 mg/kg daily or 1 mg/kg BD — the only option in pregnancy · warfarin INR 2–3 · ≥3 months when provoked · oxygen if SpO2 <92% VERIFY",
-    "ECG: tachycardia commonest; S1Q3T3 classic but uncommon; a normal ECG does not exclude PE",
-    "Variant 2 — bus not plane: 'the risk factor is immobilisation, not air travel — venous stasis from prolonged sitting; bus, car, bed rest and a cast do the same; still scored as immobilised on Wells'",
-    "Variant 4 — BP 84/52, HR 128, SpO2 87%: massive PE = resuscitation — priority-one ambulance, alert receiving hospital, high-flow O2, two large-bore cannulae, cautious fluid bolus (over-filling worsens RV failure), monitor + defib, 12-lead; systemic thrombolysis with alteplase for haemodynamic instability — discuss with receiving ED now; rural: MedSTAR in parallel; don't delay transfer for imaging VERIFY",
-    "000 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Pulmonary embolism** — must not miss",
+     "**Immobilisation, oestrogen, unilateral calf swelling**, pleuritic pain, haemoptysis, tachycardia, tachypnoea",
+     "**DVT symptoms, COST VMPF**, loud P2, raised JVP",
+     "**Wells → CTPA; D-dimer only if PE unlikely; V/Q if pregnant** — immediate"
+    ],
+    [
+     "Acute coronary syndrome",
+     "Crushing central chest pain, radiation, sweating, risk factors",
+     "Chest pain character, diaphoresis",
+     "ECG and troponin — immediate"
+    ],
+    [
+     "**Pneumothorax**",
+     "Sudden onset, tall thin young person, trauma, smoking",
+     "Trauma, sudden onset, hyper-resonance, absent breath sounds, **tracheal deviation if tension**",
+     "**CXR; decompress immediately if tension** — immediate"
+    ],
+    [
+     "Asthma",
+     "Wheeze, atopy, family history, diurnal variation, trigger exposure",
+     "Noisy breathing, previous puffers",
+     "Peak flow, spirometry with reversibility — urgent"
+    ],
+    [
+     "Pneumonia",
+     "Fever, purulent sputum, pleuritic pain, **dullness WITH bronchial breathing and INCREASED vocal resonance**",
+     "Fever, sweats, sputum colour",
+     "CXR, CRP, cultures — **note PE can also cause fever and dullness** — urgent"
+    ],
+    [
+     "**Anaphylaxis**",
+     "Rash, itch, lip or tongue swelling, new food or drug, stridor",
+     "Exposure, urticaria, angioedema",
+     "**Clinical — adrenaline 0.5 mg IM immediately** — immediate"
+    ],
+    [
+     "Arrhythmia · heart failure · pericarditis · tamponade",
+     "Palpitations, syncope, orthopnoea, positional pleuritic pain",
+     "Rate and rhythm, JVP, pulsus paradoxus",
+     "ECG, echocardiogram — urgent"
+    ],
+    [
+     "Anaemia · thyrotoxicosis · metabolic acidosis",
+     "Tiredness, dizziness, heavy periods, black stools; tremor and weight loss",
+     "Pallor, thyroid signs, bleeding",
+     "FBE and iron studies, TSH, blood gas"
+    ],
+    [
+     "**Panic attack**",
+     "Sudden breathlessness with palpitations, tingling and dread, at rest, watching television; prior episodes",
+     "Stressors, mood, previous attacks",
+     "**A diagnosis of exclusion — NEVER before PE is excluded in a woman on the pill**"
+    ]
    ]
   },
   "source": "PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf (Version A — Lily 28, since last night, history only)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Observations (on request)",
-    "BP 118/74 · pulse 104 · RR 22 · SpO2 95% room air · T 37.1"
-   ],
-   [
-    "Examination",
-    "No examination task in Version A: vitals only"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking about the legs — 'have you had any swelling or pain in your calves or legs?' — the single question that decides the station; the swollen right calf is never volunteered",
-   "FAIL — Never running the clotting sweep — COST VMPF under 60 seconds: contraception, overweight, surgery, travel, veins, malignancy, pregnancy, family clots",
-   "FAIL — Recording 'on the pill' without asking which — Levlen is combined and must stop today with condoms and an alternative arranged; and never mentioning stopping it is a fail",
-   "FAIL — Noting the flight but never asking 'what did you do during the flight?' — the sleeping tablet and eight hours immobile is what converts travel into a risk factor; ask 'would you say you're overweight?', never her BMI",
-   "FAIL — Taking the panic attack she offers at five minutes — keep it on the list, explicitly last, pending exclusion of the clot",
-   "FAIL — Agreeing she can go home, hesitating, or arranging an outpatient scan — 'this needs dealing with today; I'm calling an ambulance and I don't want you driving'"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-35",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "You are the GP. Same practice as MED-34.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Lily, 28, presents with sudden-onset shortness of breath for two hours.",
    "Examination findings will appear on screen at 6 minutes. Observations on request."
@@ -12181,89 +12252,173 @@
    "Interpret the examination findings that appear on screen at 6 minutes",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes. History to 6:00 · findings on screen · interpret aloud · diagnosis, differentials, disposition.",
+  "findings": [
+   [
+    "Observations",
+    "Tachycardic and tachypnoeic. Ask for BP, pulse, respiratory rate, saturation and temperature before you begin"
+   ],
+   [
+    "History extra in this version",
+    "COUGH WITH HAEMOPTYSIS — red sputum with blood mixed through it. Haemoptysis is a feature of PE as well as a cancer red flag, and it is a WELLS POINT worth 1"
+   ],
+   [
+    "Respiratory — on screen at 6 minutes",
+    "DULLNESS AT THE LEFT LOWER LOBE. NO bronchial breathing and NO increased vocal resonance are offered — and if this were consolidation you would expect BOTH. This is the deliberate distractor"
+   ],
+   [
+    "Cardiovascular — on screen",
+    "LOUD PULMONARY COMPONENT OF THE SECOND HEART SOUND (LOUD P2) — acute pulmonary hypertension"
+   ],
+   [
+    "Cardiovascular — on screen",
+    "LEFT PARASTERNAL SYSTOLIC MURMUR — tricuspid regurgitation from right ventricular strain"
+   ],
+   [
+    "The interpretation you must say aloud",
+    "The loud P2 and the parasternal murmur are recognised in PE. The dullness is most consistent with PULMONARY INFARCTION, possibly with a small associated effusion, rather than consolidation. THESE FINDINGS SUPPORT RATHER THAN CONTRADICT THE DIAGNOSIS"
+   ],
+   [
+    "Wells score for this patient",
+    "DVT signs 3 · PE most likely 3 · immobilisation 1.5 · HAEMOPTYSIS 1 · HR over 100 1.5 — well over 4. PE LIKELY → CTPA, NO D-DIMER"
+   ],
+   [
+    "ECG",
+    "Tachycardia with non-specific ST and T change is commonest. RBBB, right axis deviation, T inversion V1–V4, AF. S1Q3T3 classic but uncommon. A NORMAL ECG DOES NOT EXCLUDE PE"
+   ],
+   [
+    "CTPA",
+    "FILLING DEFECTS within the contrast-opacified pulmonary arteries. An accompanying pleural effusion is NOT evidence against PE"
+   ]
+  ],
+  "findingsLabel": "Findings on screen at 6 minutes · open when they appear",
+  "must": [
+   "FAIL — Derailed by the dullness into 'left lower lobe pneumonia'. Infarction causes dullness.",
+   "FAIL — Never asking about the legs, or skipping the COST VMPF sweep.",
+   "FAIL — Sending her home, or arranging an outpatient scan. Ambulance, ED, today.",
+   "FAIL — Ordering a D-dimer when PE is already likely on Wells.",
+   "ASK — Any blood in what you're coughing up? It is a Wells point, not just a cancer flag.",
+   "ASK — Which pill? And what did you do during the flight?"
+  ],
   "back": {
-   "dx": "Pulmonary embolism with pulmonary infarction — same withheld history as MED-34 (right calf, flight asleep, Levlen combined, mum's DVT) but here she HAS coughed up blood ('red, mixed in with the phlegm'). Findings on screen: dullness left lower lobe · loud P2 · left parasternal systolic murmur. The trap: dullness at a base reads as pneumonia, and the case is built to see whether one sign overturns a history pointing elsewhere. Say aloud: loud P2 = acute pulmonary hypertension; parasternal systolic murmur = tricuspid regurgitation from RV strain; basal dullness = pulmonary infarction ± small effusion rather than consolidation (no bronchial breathing, no increased vocal resonance offered). Hold the diagnosis. Ambulance to ED.",
+   "dx": [
+    "**Pulmonary embolism, provoked** — and the whole of this version is whether **one examination finding can overturn a history that points elsewhere. It cannot.**",
+    "**Dullness at a lung base reads as pneumonia.** But **consolidation gives dullness WITH bronchial breathing and INCREASED vocal resonance** — neither is offered here. **Dullness in PE means pulmonary infarction, possibly with a small effusion.**",
+    "**Loud P2 = acute pulmonary hypertension. Left parasternal systolic murmur = tricuspid regurgitation from right ventricular strain.** Both are recognised PE findings — **say what each one means out loud.**",
+    "**Haemoptysis is a feature of PE, not only a cancer red flag — and it is a Wells point worth 1.** Ask for it inside the sputum question and again in the cancer block.",
+    "**COST VMPF as a named block: Contraception · Obesity · Surgery · Travel and immobility · Varicose veins · Malignancy · Pregnancy · Family history.** **The oestrogen is the risk; the immobility, not the aeroplane.**",
+    "**Wells, two-tier: DVT signs 3 · PE most likely 3 · HR over 100 1.5 · immobilisation or recent surgery 1.5 · previous VTE 1.5 · haemoptysis 1 · malignancy 1. Over 4 → image. 4 or less → D-dimer.** She is well over. **A D-dimer here adds nothing.**",
+    "**CTPA is the investigation of choice. V/Q if pregnant, contrast allergy or renal impairment. β-hCG before imaging in any woman of childbearing age.**",
+    "**Rivaroxaban 15 mg twice daily for 21 days then 20 mg daily, or apixaban 10 mg twice daily for 7 days then 5 mg twice daily. Enoxaparin 1.5 mg/kg daily or 1 mg/kg twice daily — the only option in pregnancy. Warfarin target INR 2–3. At least 3 months when provoked. Thrombolysis only for haemodynamic instability.**",
+    "**Red flags making this high-risk: hypotension, syncope, heart rate over 110, saturation under 92%, cyanosis, raised JVP with an S3, altered conscious state, pregnancy, massive haemoptysis.** That is resuscitation and thrombolysis, not an outpatient pathway.",
+    "**Stop the combined pill and arrange the replacement.** **Ambulance, emergency department, today — she does not drive herself.** Future long journeys: **walk hourly, calf exercises, hydration, and discuss compression stockings with her treating team.** **000 · MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Observations; WIPE; open question; acknowledge; run the breathlessness structure"
+     "Observations from the examiner, WIPE, **name and date of birth**, **'are you short of breath just sitting here?'**, open question, acknowledgement."
     ],
     [
      "0:45",
-     "Describe/timing/exertion/rest/lying flat/what were you doing; cough → sputum → ★ blood → YES, red mixed with phlegm → how much, how many times; wheeze; pleuritic pain"
+     "Explore: **describe it · constant or intermittent · getting worse · first time · worse on exertion AND AT REST · worse lying flat · WHAT WERE YOU DOING EXACTLY BEFORE IT STARTED?** — two hours, sudden onset."
     ],
     [
-     "2:15",
-     "★ Legs; ★ COST VMPF under 60 s incl. which pill, what she did on the flight, family clots, LMP/pregnancy"
+     "1:30",
+     "Cough and chest: **any cough · what are you bringing up, what colour · HAVE YOU SEEN ANY BLOOD IN IT** → red blood mixed with phlegm · **any wheeze · any chest pain worse on breathing in deeply?**"
     ],
     [
-     "3:45",
-     "Rule out the rest (pneumothorax, asthma, infection, cardiac, anaphylaxis, anaemia, cancer, panic); SADMA, PMHx, FHx, home, concerns"
+     "2:00",
+     "**'Have you had any swelling or pain in your calves or legs?'** Then **which leg · when · painful, red or warm · sore to squeeze the calf or when you walk?**"
+    ],
+    [
+     "2:30",
+     "**COST VMPF, under 60 seconds.** **C — are you taking any contraceptive pill, and do you know which one? · O — would you say you're currently overweight? · S — any surgery or hospital stay in the last month or two? · T — any long travel recently, AND WHAT DID YOU DO DURING THE TRIP, any period off your feet for days? · V — any prominent or dilated veins in your legs? · M — any previous cancer, or weight loss you didn't intend? · P — when was your last period, and is there any chance you could be pregnant? · F — have you or anyone in your family ever had a clot in the leg or lung?**"
+    ],
+    [
+     "3:30",
+     "Rule out the rest: **chest injury, smoking · wheeze, hay fever, eczema, family asthma · fever, chills, sweats, unwell contacts · chest tightness, palpitations, ankle swelling, fainting, family sudden death under 40 · rash, itch, lip or tongue swelling, new food or drug · tiredness, dizziness, heavy periods, black stools · weight loss, night sweats.** Then **mood and stress, SADMA, past and family history, who's at home, and what she was worried it might be.**"
     ],
     [
      "6:00",
-     "Findings on screen → interpret aloud, all three, and say they support rather than contradict PE"
+     "**The findings appear on screen. Interpret them aloud before you say anything to the patient** — loud P2 is acute pulmonary hypertension, the parasternal murmur is tricuspid regurgitation from right heart strain, and **the dullness is infarction, not consolidation, because bronchial breathing and increased vocal resonance are absent.**"
     ],
     [
-     "6:45",
-     "Diagnosis linked to the leg; the blood explained (a small area of lung the clot has damaged); differentials briskly, pneumonia specifically addressed; ambulance to ED now; CTPA; anticoagulation ≥3 months; stop combined pill + replacement; safety-net; summary"
+     "6:30",
+     "**The diagnosis, linked to the leg**, in plain words — then the line for the screen finding: **'the dullness most likely reflects a small area of lung damaged by the clot cutting off its blood supply. It doesn't change my diagnosis; if anything it supports it.'**"
+    ],
+    [
+     "7:10",
+     "Differentials briskly with one reason each, then **disposition: ambulance to the emergency department today, CTPA, anticoagulation for at least three months, stop the combined pill and arrange the alternative**, safety-net, offer to call someone, summarise."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I begin, may I have her observations?",
-    "★ Any cough? Bringing anything up — have you seen any blood in it? → 'How much — streaks, a teaspoon, more? How many times? Is it fresh red or dark?'",
-    "★ Have you had any swelling or pain in your calves or legs? Which leg, since when, red/warm/sore to squeeze?",
-    "★ COST VMPF: contraceptive pill — which one? overweight? surgery or hospital in the last two months? long travel — what did you do during the trip? varicose veins? previous cancer or weight loss? last period, any chance of pregnancy? clots in you or the family?",
-    "★ Interpretation aloud: 'A loud P2 reflects acute pulmonary hypertension, and a left parasternal systolic murmur fits tricuspid regurgitation from right ventricular strain — both are recognised in pulmonary embolism. The dullness at the left base is most consistent with pulmonary infarction, possibly with a small associated effusion, rather than consolidation — if it were consolidation I would expect bronchial breathing and increased vocal resonance, and neither is present. Taken with the history, these findings support rather than contradict a pulmonary embolism.'",
-    "'Most likely you have a pulmonary embolism — a clot in one of the blood vessels of your lung. It almost certainly formed in your leg and travelled up, which fits the swelling in your right calf. The blood you coughed up is from a small area of lung the clot has damaged. It formed because you were still for a very long time on that flight, especially asleep; the combined pill and your mum's history add to that. None of this is something you did wrong.'",
-    "'I did consider a chest infection — the examination found some dullness at the bottom of your left lung, which can happen with pneumonia, but you have no fever and the other findings point to the clot. Also a collapsed lung, asthma, a heart problem, a severe allergy, a low blood count, a panic attack which I'd only settle on once the clot is excluded, and at the far end a cancer.'",
-    "★ 'This has to be dealt with today. I'm calling an ambulance to the emergency department now — I don't want you driving. They'll scan the blood vessels in your lungs and start a blood thinner for at least three months. Stop the combined pill now; condoms until we arrange an alternative. Tell the staff straight away if the breathing worsens, you get chest pain, feel faint, or cough up more blood. Who can I call to meet you there?'"
-   ],
    "pefe": [
-    "On screen at 6:00: respiratory — dullness at the left lower lobe · cardiovascular — loud pulmonary component of S2 · left parasternal systolic murmur. Nothing about bronchial breathing or vocal resonance → not consolidation",
-    "Signs of RV strain in PE: loud P2, RV heave, raised JVP, TR murmur (left lower sternal edge, louder on inspiration), S3/S4 right-sided; tachycardia; hypoxia; pleural rub or basal dullness with infarction VERIFY",
-    "Haemoptysis in PE = pulmonary infarction; Wells +1 for haemoptysis; here Wells: DVT signs 3 + PE most likely 3 + HR >100 1.5 + immobilisation 1.5 + haemoptysis 1 = 10 → image, no D-dimer",
-    "Disposition unchanged by the murmur: ambulance now; in ED — CTPA, ECG, troponin/BNP (RV strain markers), FBE, UEC, coags, β-hCG; anticoagulate on clinical suspicion if imaging delayed and bleeding risk low; thrombolysis only if haemodynamically unstable VERIFY",
-    "SA: 000; MedSTAR 1300 13 12 33 in parallel if rural; TIS 131 450",
-    "Signs of RV strain in PE — Loud P2, RV heave, raised JVP, TR murmur (left lower sternal edge, louder on inspiration), S3/S4 right-sided; tachycardia; hypoxia; pleural rub or basal dullness with infarction VERIFY",
-    "SA — 000; MedSTAR 1300 13 12 33 in parallel if rural; TIS 131 450"
+    "**Observations before you begin** — blood pressure, pulse, respiratory rate, saturation and temperature.",
+    "**Interpret the on-screen findings aloud, one at a time, with what each means** — that is the marked moment in this version.",
+    "**Consolidation would give dullness WITH bronchial breathing and INCREASED vocal resonance.** Neither is offered, so this is **infarction with a possible small effusion**, not pneumonia.",
+    "**Calculate Wells out loud → CTPA. No D-dimer when PE is already likely.** **V/Q if pregnant, contrast allergy or significant renal impairment; β-hCG first.**",
+    "**ECG** — tachycardia with non-specific change commonest; RBBB, right axis deviation, T inversion V1–V4, AF; **S1Q3T3 classic but uncommon**. **A normal ECG does not exclude PE.**",
+    "Bloods: **FBE, UEC, LFT, coagulation profile, β-hCG.** **CXR to exclude alternatives, ABG if hypoxic, leg ultrasound if DVT suspected, bedside echocardiogram if unstable.**",
+    "**Oxygen if saturation is below 92%**, IV access, continuous monitoring, analgesia for the pleuritic pain."
    ],
-   "fails": [
-    "Abandoning PE for pneumonia because of basal dullness ★",
-    "Not interpreting the loud P2 and the parasternal murmur aloud ★",
-    "Never asking about the legs; never running the clotting sweep; never asking which pill or what she did on the flight ★",
-    "Outpatient scan / letting her go home / driving herself; not stopping the combined pill ★",
-    "Not characterising the haemoptysis; not asking pregnancy",
-    "Taking the panic-attack offer; no safety-net; no summary"
-   ],
-   "numbers": [
-    "Loud P2 = pulmonary hypertension · left parasternal systolic murmur louder on inspiration = tricuspid regurgitation (RV strain) · consolidation = dull + bronchial breathing + increased VR; infarction/effusion = dull with reduced/absent BS and reduced VR",
-    "Wells here ≈ 10 (>4 → image) · PERC fails on HR, oestrogen, leg swelling, haemoptysis · CTPA; V/Q if pregnant VERIFY",
-    "Rivaroxaban 15 mg BD × 21 d then 20 mg daily · apixaban 10 mg BD × 7 d then 5 mg BD · enoxaparin 1 mg/kg BD or 1.5 mg/kg daily · ≥3 months, provoked VERIFY",
-    "Massive PE (SBP <90, HR >120, SpO2 <90): resuscitate, priority-one ambulance, alteplase for instability, cautious fluids, MedSTAR in parallel VERIFY",
-    "Bus/car/bed rest/cast = same immobilisation risk as a flight",
-    "000 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Pulmonary embolism with infarction** — the answer",
+     "**Sudden onset, haemoptysis, unilateral calf swelling, immobility, oestrogen**; loud P2; parasternal murmur",
+     "**DVT symptoms, COST VMPF**, and whether the dullness has bronchial breathing with it",
+     "**Wells → CTPA, anticoagulate, ambulance today** — immediate"
+    ],
+    [
+     "**Pneumonia — the deliberate distractor**",
+     "**Dullness at the left base**, low-grade fever",
+     "**Bronchial breathing and INCREASED vocal resonance — both ABSENT here**; purulent sputum; rigors",
+     "CXR, CRP, cultures. **Absent supporting signs is what stops you** — urgent"
+    ],
+    [
+     "Pleural effusion",
+     "Dullness with reduced breath sounds",
+     "Reduced expansion, **reduced** vocal resonance",
+     "CXR then diagnostic tap — **a small effusion accompanies PE and is not evidence against it**"
+    ],
+    [
+     "**Acute coronary syndrome**",
+     "Chest discomfort, tachycardia",
+     "Crushing central pain, radiation, sweating, risk factors",
+     "ECG and troponin — immediate"
+    ],
+    [
+     "**Pneumothorax**",
+     "Sudden onset breathlessness in a young adult",
+     "Trauma, **hyper-resonance**, absent breath sounds, tracheal deviation if tension",
+     "**CXR; decompress immediately if tension** — immediate"
+    ],
+    [
+     "**Lung cancer**",
+     "**Haemoptysis**",
+     "Weight loss, night sweats, smoking, previous cancer",
+     "CXR then CT chest. **Unlikely at 28 but it stays on the list**"
+    ],
+    [
+     "Asthma",
+     "Breathlessness, possible wheeze",
+     "Atopy, family history, diurnal variation, previous puffers",
+     "Peak flow, spirometry with reversibility"
+    ],
+    [
+     "Arrhythmia · heart failure · pericarditis · tamponade",
+     "Palpitations, syncope, pleuritic positional pain, raised JVP",
+     "Rate and rhythm, JVP, rub, pulsus paradoxus",
+     "ECG, echocardiogram — urgent"
+    ],
+    [
+     "**Panic attack**",
+     "Sudden breathlessness with dread and tingling; a stressful period",
+     "Stressors, previous episodes",
+     "**Exclusion only — never before PE is excluded in a woman on the pill**"
+    ]
    ]
   },
   "source": "PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf (Version B — two hours, haemoptysis, findings on screen at 6 minutes)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › PE_Sudden_Breathlessness_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Disposition unchanged by the murmur",
-    "Ambulance now; in ED — CTPA, ECG, troponin/BNP (RV strain markers), FBE, UEC, coags, β-hCG; anticoagulate on clinical suspicion if imaging delayed and bleeding risk low; thrombolysis only if haemodynamically unstable VERIFY"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Abandoning PE for pneumonia because of basal dullness — consolidation would give bronchial breathing and increased vocal resonance, and neither is offered; the dullness is infarction with a small effusion",
-   "FAIL — Not interpreting the loud P2 and the left parasternal murmur aloud — pulmonary hypertension and tricuspid regurgitation from right ventricular strain; 'these findings support rather than contradict a pulmonary embolism'",
-   "FAIL — Never asking about the legs — the swollen calf is the source and a three-point Wells criterion, and it is only given to a direct question",
-   "FAIL — Not asking which pill, or what she did during the flight — combined pill plus sleeping through a long-haul flight; then family clots, and last period or pregnancy",
-   "SAY — 'Most likely you have a pulmonary embolism — a clot in one of the blood vessels of your lung. It almost certainly formed in your leg and travelled up. None of this is something you did wrong'",
-   "FAIL — Anything short of ambulance to the emergency department today — CTPA there, anticoagulation for at least three months, the combined pill stopped and replaced"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-36",
