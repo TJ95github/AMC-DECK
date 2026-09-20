@@ -17279,9 +17279,8 @@
  {
   "id": "MED-60",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 360,
-  "setting": "General practice, country town. You are the GP. Online: 6-minute history, findings on screen, then diagnosis and differentials. Face to face: 4 + 2 + 2.",
   "stem": [
    "Your next patient is John Brennan, 45, complaining of tiredness. He told the receptionist he has been tired for about three weeks and it is getting worse.",
    "His record notes that he was told as a child that he had a heart murmur. He has no regular medications and has not attended the practice for several years."
@@ -17292,124 +17291,203 @@
    "Explain your most likely diagnosis to the patient, with your reasons",
    "Give your differential diagnoses"
   ],
-  "time": "8 minutes. Tiredness in 60 s · the murmur — three 'I don't remember's, then CHANGE TACK (long-course antibiotics, sore throats, follow-up) · screen until 'feverish' → take it as fever · the two endocarditis probes (dental work, marks on the hands) · say the timing match aloud · cardiac failure questions · examination requested by name incl. Osler/Janeway/splinters · 40-second explanation, four reasons · grouped differentials with reasons for the top two · hospital TODAY.",
+  "findings": [
+   [
+    "General appearance",
+    "UNWELL-LOOKING. Not jaundiced, not pale, no rash"
+   ],
+   [
+    "Vital signs",
+    "TEMPERATURE 38.5 — an unambiguous fever, and a Duke MINOR criterion is above 38. HR 96 regular · BP 118/72 · RR 16 · SpO2 97% on air"
+   ],
+   [
+    "Thyroid and lymph nodes",
+    "NORMAL"
+   ],
+   [
+    "Cardiovascular",
+    "JVP NOT raised, apex NOT displaced. MID-DIASTOLIC RUMBLING MURMUR AT THE MITRAL AREA — fifth intercostal space, mid-clavicular line. NO third heart sound. That murmur is MITRAL STENOSIS, and rheumatic heart disease is the commonest cause worldwide"
+   ],
+   [
+    "Respiratory and abdomen",
+    "Chest clear. NO hepatosplenomegaly"
+   ],
+   [
+    "THE HANDS — and the photograph the examiner is hiding",
+    "NO Osler nodes, NO Janeway lesions. THE EXAMINER PHYSICALLY HOLDS A PHOTOGRAPH OF SPLINTER HAEMORRHAGES AND WILL NOT PRODUCE IT UNLESS YOU ASK FOR THEM BY NAME. 'Any skin changes?' gets 'what are you looking for?' — and a vague answer leaves the photograph under the papers"
+   ],
+   [
+    "Urine dipstick",
+    "BLOOD 1+. Microscopic haematuria is common — immune-complex glomerulonephritis or renal microemboli — and is worth a MINOR Duke criterion. If the dipstick is 'unavailable', say 'I would still send urine for microscopy' and move on"
+   ],
+   [
+    "What he gives only when you change tack",
+    "The murmur questions get 'I don't remember' THREE TIMES. DO NOT ABANDON IT — switch to the ANSWERABLE questions: LONG-COURSE ANTIBIOTICS AS A CHILD ('years of them, I think I had needles for a while') · RECURRENT SORE THROATS ('all the time') · FOLLOW-UP ('no — they said I was fine and discharged me'). That is how rheumatic heart disease is retrieved from a man who cannot name his own diagnosis"
+   ],
+   [
+    "The two probes this station exists for",
+    "'HAVE YOU HAD ANY DENTAL WORK RECENTLY — a filling, an extraction, A ROOT CANAL?' → YES, THREE WEEKS AGO. 'WERE YOU GIVEN ANTIBIOTICS BEFORE IT?' → NO. And 'ANY RASHES, SPOTS OR MARKS ON YOUR HANDS OR FINGERS?' → 'little marks under my nails, they don't hurt'"
+   ],
+   [
+    "His hidden fear",
+    "HE IS FRIGHTENED IT IS CANCER — his brother was diagnosed with bowel cancer last year. Offered only if you ask what worries him, or at the very end: 'Doctor — it's not cancer, is it?'"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — and the photograph you only get by asking",
+  "must": [
+   "FAIL — Never asking about a portal of entry. Dental work and procedures, once fever is positive.",
+   "FAIL — 'Any skin changes?' without naming Osler nodes, Janeway lesions and splinter haemorrhages.",
+   "FAIL — Running out of time before the differentials, or sending him home on oral antibiotics.",
+   "FAIL — Starting antibiotics before three sets of blood cultures in a stable patient.",
+   "ASK — Have you had any dental work recently? And were you given antibiotics before it?",
+   "ASK — Do you remember long-course antibiotics as a child, and a lot of sore throats?"
+  ],
   "back": {
-   "dx": "Subacute infective endocarditis on a rheumatic mitral valve (mitral stenosis): childhood murmur with years of antibiotics/injections and constant sore throats and no follow-up (rheumatic fever → RHD), three weeks of worsening fatigue starting at the time of a root canal with no prophylaxis, feverish, splinter haemorrhages; T 38.5, mid-diastolic rumbling murmur at the apex, dipstick blood 1+. Four reasons to the patient: murmur as a child and a murmur today; fever; dental work three weeks ago matching the three weeks of tiredness; marks under the nails. Differentials, grouped with reasons: heart failure on the stenotic valve (less likely — no chest pain, oedema, orthopnoea, PND); blood cancers — leukaemia/lymphoma (no weight loss, lumps, night sweats); other infections — TB, EBV, HIV, hepatitis; thyroid, diabetes, anaemia, autoimmune, medications and mood, coeliac/IBD, OSA. Plan: three sets of blood cultures before any antibiotic, bloods, urine, ECG, CXR, hospital today for echocardiography and IV antibiotics. Discriminating behaviours: changing tack on the murmur, asking about dental work, naming the peripheral stigmata to the examiner.",
+   "dx": [
+    "**Subacute infective endocarditis on a rheumatic mitral valve, following a dental procedure — most probably a VIRIDANS GROUP STREPTOCOCCUS.** Infection of the endocardial surface producing a vegetation of platelets, fibrin and organisms.",
+    "**It needs TWO things: a DAMAGED OR ABNORMAL SURFACE for organisms to stick to, and a BACTERAEMIA to deliver them.** **The triad: abnormal valve + bacteraemia + PORTAL OF ENTRY.**",
+    "**The pass is in the LINK.** Fever is found on screening, so candidates correctly reach 'an infection' — and stop. **A damaged valve, plus a fever, plus a recent portal of entry is the whole case.** **Say the timeline match out loud: tiredness three weeks, root canal three weeks.**",
+    "**The four reasons, to the patient: you had a murmur in childhood and I can still hear one today · you have a fever · you had dental work three weeks ago, the same three weeks your tiredness has been going on · and there are small marks under your fingernails that fit with this.**",
+    "**CORRECTION — do not ask for a 'gallop rhythm' here.** A third heart sound is the added sound of a **dilated, failing ventricle** or mitral regurgitation. **In significant mitral STENOSIS the third heart sound is characteristically ABSENT; you listen for a LOUD FIRST HEART SOUND and an OPENING SNAP.**",
+    "**CORRECTION — antibiotic prophylaxis before dental work is NOT for all valve disease.** Australian guidance restricts it to **a prosthetic valve or prosthetic repair material · PREVIOUS infective endocarditis · specified congenital heart disease · cardiac transplantation with valvulopathy · and RHEUMATIC HEART DISEASE IN ABORIGINAL AND TORRES STRAIT ISLANDER PEOPLE.** **Isolated rheumatic mitral stenosis in a non-Indigenous adult does not by itself qualify.** VERIFY.",
+    "**CORRECTION — secondary prophylaxis is not 'antibiotics until 18, then discharge'.** It is **BENZATHINE BENZYLPENICILLIN G intramuscularly EVERY 21 TO 28 DAYS**, with duration set by **the severity of the valve lesion, not a single age cut-off** — and **established rheumatic heart disease needs ongoing echocardiographic surveillance.** VERIFY against RHD Australia.",
+    "**Do now: THREE SETS OF BLOOD CULTURES FROM THREE SEPARATE SITES, BEFORE ANY ANTIBIOTIC · FBC, CRP and ESR, U&E, LFT, coagulation · urinalysis for blood and protein · ECG, noting the BASELINE PR INTERVAL · chest X-ray · SAME-DAY referral. Do not send him home on oral antibiotics.**",
+    "**Do next: TRANSTHORACIC ECHOCARDIOGRAM, transoesophageal if negative and suspicion remains or a prosthesis is involved · apply the MODIFIED DUKE CRITERIA — 2 major, or 1 major plus 3 minor, or 5 minor · IV antibiotics in hospital, culture-directed, for 4–6 WEEKS · SERIAL ECGs looking for a LENGTHENING PR INTERVAL, the sign of an aortic root or perivalvular abscess · cardiothoracic opinion for heart failure, abscess, large vegetation or recurrent emboli.**",
+    "**Do not miss: HEART FAILURE from acute valve destruction, the commonest cause of death · SYSTEMIC EMBOLISATION — stroke, splenic or renal infarct, mycotic aneurysm · PERIVALVULAR ABSCESS — persistent fever on treatment with a lengthening PR interval · SEPSIS, where antibiotics must not wait for the echo · GLOMERULONEPHRITIS.** **Do NOT anticoagulate for a vegetation — it does not prevent embolism and increases intracranial bleeding.** **MedSTAR 1300 13 12 33 · PATS · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, consent, 'tell me about the tiredness' → low energy, 3 weeks, constant, worse, nothing helps, can't get out of bed — 60 s"
+     "**Introduce, confirm the name, and contract: 'I'd like to ask you some questions, then examine you, so I can work out what's going on and we can make a plan together.'** Twenty seconds, no more."
     ],
     [
-     "1:00",
-     "★ 'Before I go further, I want to ask about that heart murmur — it may be important': when, what, treatment → three 'I don't remember's → ★ CHANGE TACK: 'antibiotics for a long time as a child — months or years, injections? lots of sore throats? any follow-up for your heart?' → yes, yes, none"
+     "0:20",
+     "**Explore the tiredness — seven questions, sixty seconds: describe it for me · how long · constant or intermittent · getting better or worse · anything make it better or worse · HOW IS IT AFFECTING YOUR LIFE · WHAT WORRIES YOU MOST?** 'Low in energy' separates it from true sleepiness; **'I haven't been able to get out of bed for days' is the red flag — say so out loud.**"
     ],
     [
-     "2:00",
-     "Screen: 'a checklist — most will be no' — liver, endocrine, malignancy… ★ 'any fever or chills?' → 'feverish, hot and cold' → 'have you measured it?' → 'I'll take that as a fever'"
+     "1:20",
+     "**'Before I go further, I want to ask about THAT HEART MURMUR you were told about as a child — it may be important. When were you diagnosed? What did they say it was? Were you ever on any treatment?'** Three 'I don't remember's — **do not press a fourth time.**"
     ],
     [
-     "2:45",
-     "★ The two probes: 'any dental work recently — filling, extraction, root canal? other procedures?' → root canal 3 weeks ago → ★ say the timing match aloud · 'antibiotics before it?' → no · ★ 'any rashes, spots or marks on your hands or fingers?' → marks under the nails"
+     "1:45",
+     "**CHANGE TACK to the answerable questions: 'do you remember being on ANTIBIOTICS FOR A LONG TIME as a child — months or years, perhaps INJECTIONS? · did you get A LOT OF SORE THROATS when you were young? · are you having any REGULAR FOLLOW-UP for your heart?'** **Plus: was there a hole in the heart or a valve you were born with, and DO YOU IDENTIFY AS ABORIGINAL OR TORRES STRAIT ISLANDER?**"
     ],
     [
-     "3:30",
-     "Finish the screen in groups: ★ cardiac failure (chest pain, ankle swelling, pillows, PND), exertional dyspnoea/palpitations, joints/headache/rash, cough/snoring, bowels, medications and drugs (injecting), mood, occupation (truck driver), alcohol, smoking; 'what were you worried this might be?' (brother's bowel cancer)"
+     "2:25",
+     "**Signpost the screen: 'I'm going to run through a checklist quite quickly now, to make sure I'm not missing anything. Most will be no.'** **ENDOCRINE: weather preference, more urine, more thirst. LIVER AND GUT: yellowing of the eyes, dark urine, pale stools, itching, tanning, bowel habit, greasy stools, blood.**"
     ],
     [
-     "4:30",
-     "Examination by name: general (pale, jaundiced, rash, unwell) · ★ temperature, HR, BP, RR, SpO2 · thyroid, lymph nodes · CVS: apex visible/displaced, JVP, murmurs, S3, opening snap — timing, site, radiation, character · chest · abdomen (hepatosplenomegaly) · urine dipstick · ★ 'specifically, the hands — Osler nodes, Janeway lesions, clubbing, splinter haemorrhages?' → photograph"
+     "2:50",
+     "**MALIGNANCY: weight loss, appetite, lumps or bumps, night sweats, cancers in the family. INFECTION: ANY FEVER OR CHILLS · flu-like illness or sore throat · recent travel · sexually active, condoms?** → **'I've been feeling feverish.'** Ask **'have you measured your temperature?'** → no thermometer. **RECORD IT AS FEVER AND CHANGE DIRECTION.**"
     ],
     [
-     "5:45",
-     "★ 40-second explanation: 'infective endocarditis — a valve narrowed since childhood, bacteria from the mouth after the root canal settled on it'; four reasons; no anatomy lecture"
+     "3:20",
+     "**THE TWO ENDOCARDITIS PROBES. 'HAVE YOU HAD ANY DENTAL WORK DONE RECENTLY — a filling, an extraction, a root canal? Any other procedures or operations?'** → root canal three weeks ago. **'WERE YOU GIVEN ANY ANTIBIOTICS BEFORE IT?'** → no. **Then say the timeline match aloud.** Then **'HAVE YOU NOTICED ANY RASHES, SPOTS OR MARKS ON YOUR HANDS OR FINGERS?'** — **the question itself is the mark, whatever the answer.**"
     ],
     [
-     "6:30",
-     "Differentials grouped, reasons for the top two (heart failure, blood cancers), then list · ★ plan: three sets of blood cultures before antibiotics, bloods, urine, ECG, CXR, hospital TODAY for echo and IV antibiotics; who can drive you, who to call; respond to the cancer fear"
+     "3:50",
+     "**Heart failure questions — you cannot call it unlikely unless you ask: any chest pain · swelling in the ankles · HOW MANY PILLOWS do you sleep on · do you wake up breathless · any cough · breathless or heart racing on exertion?**"
+    ],
+    [
+     "4:10",
+     "**The rest, in groups: joint, shoulder or hip pain, headaches, rashes · snoring or gasping · medications and recreational drugs · mood and anhedonia · occupation, alcohol, smoking.**"
+    ],
+    [
+     "4:40",
+     "**The examination request, BY NAME: general appearance · TEMPERATURE, heart rate, BP, respiratory rate, saturations · thyroid and full lymph nodes · CVS — visible apex, JVP, displaced apex, murmurs AND ADDED SOUNDS, SPECIFICALLY A THIRD HEART SOUND OR AN OPENING SNAP, plus the murmur's timing, site, radiation and character · respiratory · abdomen for hepatosplenomegaly.**"
+    ],
+    [
+     "5:20",
+     "**Then the sentence that opens the photograph: 'SPECIFICALLY FOR THIS PATIENT, may I look at the hands — are there OSLER NODES on the finger pulps, JANEWAY LESIONS on the palms or soles, CLUBBING, or SPLINTER HAEMORRHAGES in the nail beds? And could I have a URINE DIPSTICK?'**"
+    ],
+    [
+     "6:00",
+     "**The explanation — one sentence of what it is, two of mechanism, four reasons, then STOP.** **Do not take the tour of the four chambers.** Every second on anatomy comes out of the differentials, which are worth a whole domain."
+    ],
+    [
+     "6:45",
+     "**The differentials, GROUPED, with reasons for the top two: HEART FAILURE from long-standing valve disease — no chest pain, no ankle swelling, one pillow, no waking breathless · BLOOD CANCERS, leukaemia and lymphoma — no weight loss, no lumps, no night sweats.** Then rapid-fire: other infections (TB, EBV, HIV, hepatitis), thyroid, diabetes, anaemia, autoimmune, medications, mood, coeliac and bowel disease, sleep apnoea."
+    ],
+    [
+     "7:30",
+     "**Close safely even if not asked: THREE SETS OF BLOOD CULTURES BEFORE ANY ANTIBIOTIC, bloods, urine, ECG, chest X-ray — and SEEN IN HOSPITAL TODAY for an echocardiogram and IV antibiotics.** **'Is there someone who can drive you, and anyone you'd like me to call?'** And **answer the cancer fear if he raises it.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I go further, I want to ask about that heart murmur you were told about as a child — it may be important.' → ★ 'Do you remember being on antibiotics for a long time as a child — months or years, maybe injections? Did you get a lot of sore throats? Any follow-up for your heart since?'",
-    "'Have you measured your temperature?' → ★ 'I'll take that as a fever.'",
-    "★ 'Have you had any dental work recently — a filling, an extraction, a root canal? Any other procedures?' → 'Three weeks — the same time your tiredness started. Were you given any antibiotics before it?'",
-    "★ 'Have you noticed any rashes, spots or marks on your hands or fingers?'",
-    "★ To examiner: 'May I look at the hands — Osler nodes, Janeway lesions, clubbing, or splinter haemorrhages?' (never 'any skin changes?')",
-    "'I believe you have infective endocarditis. One of your heart valves is narrowed — that's the murmur from childhood. When you had the root canal, bacteria from the mouth got into the bloodstream and settled on that damaged valve. Four reasons: the murmur then and now; a fever; dental work three weeks ago, the same three weeks you've been tired; and the marks under your fingernails.'",
-    "'The main alternative is heart failure from the long-standing valve problem — less likely because no chest pain, no leg swelling, one pillow, not waking breathless. I also thought about blood cancers like leukaemia and lymphoma — less likely, no weight loss, lumps or night sweats; other infections such as TB, glandular fever, HIV and hepatitis; thyroid, diabetes, anaemia, autoimmune conditions, medications and mood, coeliac and bowel disease, and sleep apnoea.'",
-    "★ 'Three separate sets of blood cultures before any antibiotic, other bloods, a urine test, an ECG and a chest X-ray — then hospital today, because this needs an ultrasound of the heart and antibiotics through a drip.'",
-    "'Is this because of the dentist? Can I sue?' → 'I can hear you're angry. This isn't about anyone doing anything wrong — mouth bacteria enter the bloodstream briefly in all of us. The problem is a valve that was damaged and never followed up. Right now my focus is treating the infection.'",
-    "'I can't go — I'm driving to Adelaide Monday. Give me tablets.' → 'I can't make you go, but this infection sits on a heart valve; untreated it can destroy the valve or throw clots to the brain. Tablets are not enough. Can we ring your wife and sort the driving? If you still decline, I'll do the tests today and see you tomorrow — but I'd be failing you if I didn't say how serious this is.'",
-    "'It's not cancer, is it? My brother…' → honest, one sentence: asked the questions, nothing points that way, bloods will cover it"
-   ],
    "pefe": [
-    "Examiner: unwell-looking, not pale/jaundiced, no rash · T 38.5, HR 96 regular, BP 118/72, RR 16, SpO2 97% · thyroid and nodes normal · JVP not raised, apex not displaced, mid-diastolic rumbling murmur at the mitral area, no S3 · chest clear · no hepatosplenomegaly · no Osler nodes, no Janeway lesions · photograph of splinter haemorrhages ONLY if asked by name · dipstick blood 1+",
-    "Variant — T 37.4 (2018 face-to-face version): 'a low-grade temperature rather than a frank fever, but subacute endocarditis characteristically runs low-grade; in a symptomatic patient with valve disease I regard it as supportive, not reassuring' — do not say 'afebrile' and abandon infection",
-    "Variant — Aboriginal or Torres Strait Islander patient: RHD far commoner; the follow-up gap is a system failure — involve the Aboriginal Liaison Officer/ACCHS, notify to the SA RHD register, lifelong secondary prophylaxis and echo follow-up",
-    "Variant — injecting drug use, murmur louder on inspiration (Carvallo's sign): right-sided/tricuspid endocarditis, Staphylococcus aureus; look for septic pulmonary emboli on CXR",
-    "Investigations: ★ blood cultures ×3 sets, three sites, before antibiotics; FBE, ESR/CRP, UEC, LFT, urine MCS (microscopic haematuria), ECG (PR prolongation = abscess), CXR; TTE then TOE; Duke criteria — 2 major, 1 major + 3 minor, or 5 minor VERIFY; IV antibiotics 4–6 weeks; surgical referral for heart failure, abscess, embolism, uncontrolled infection VERIFY",
-    "RHD secondary prophylaxis: benzathine benzylpenicillin every 21–28 days VERIFY; dental/procedural prophylaxis for high-risk valve lesions per Therapeutic Guidelines VERIFY; SA: MedSTAR 1300 13 12 33 · RFDS · PATS · TIS 131 450 · SA RHD register",
-    "Variant — T 37.4 — a LOW-GRADE temperature; subacute endocarditis characteristically runs low-grade, so treat it as supportive, not reassuring"
+    "**The discriminating issue is whether your examination requests are GENERATED BY THE DIAGNOSIS you already reached in the history.** A generic sweep does not open the photograph.",
+    "**Name all three peripheral signs: OSLER NODES — tender, raised, purplish nodules on the FINGER PULPS (Osler = Ouchy) · JANEWAY LESIONS — flat, PAINLESS, red macules on the PALMS and soles · SPLINTER HAEMORRHAGES — fine linear haemorrhages under the nails.** Add **clubbing**, and **fundoscopy for Roth spots** if there is time.",
+    "**If the examiner offers only 'there is a murmur', the five characteristics are yours to ask for: timing, site, radiation, character, and added sounds.**",
+    "**Ask for the URINE DIPSTICK** — haematuria is a minor Duke criterion.",
+    "**Three sets of blood cultures, three separate venepuncture sites, BEFORE any antibiotic.** Starting antibiotics in a stable patient **can render cultures negative for weeks and is the single most damaging thing you can do.** The only exception is the shocked patient.",
+    "**Note the BASELINE PR INTERVAL on the ECG, then serial ECGs** — a lengthening PR interval signals an aortic root or perivalvular abscess.",
+    "**Avoid: reassurance or a 'come back in a week' plan · anticoagulating for a vegetation · spending explanation time on cardiac anatomy.**"
    ],
-   "fails": [
-    "Never asking about a portal of entry (dental work/procedures) ★",
-    "Never naming Osler nodes, Janeway lesions and splinter haemorrhages to the examiner — 'any skin changes?' leaves the photograph under the papers ★",
-    "Sending him home with oral antibiotics and a review — hospital TODAY ★",
-    "Running out of time before the differentials ★",
-    "Abandoning the murmur after three 'I don't remember's without changing tack",
-    "Discounting 'feverish' because there is no number; saying 'afebrile' at 37.4 and dropping infection",
-    "Skipping the heart failure questions; explaining four chambers of the heart; naming every cancer separately"
-   ],
-   "numbers": [
-    "Tiredness 3 weeks · root canal 3 weeks — say the match · T 38.5°C (older version 37.4) · Duke minor criterion >38°C",
-    "Murmur: mid-diastolic, rumbling, mitral area — 5th intercostal space, mid-clavicular line",
-    "Blood cultures ×3 sets, three sites, BEFORE antibiotics · Duke: 2 major / 1 major + 3 minor / 5 minor VERIFY · IV antibiotics 4–6 weeks",
-    "RHD prophylaxis: benzathine benzylpenicillin every 21–28 days VERIFY",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Infective endocarditis** — the answer",
+     "**Childhood murmur, fever, dental procedure 3 weeks ago with NO prophylaxis, splinter haemorrhages**",
+     "**Portal of entry; Osler nodes, Janeway lesions, splinter haemorrhages; new or changed murmur**",
+     "**THREE SETS OF BLOOD CULTURES plus echocardiogram; modified Duke criteria** — emergency"
+    ],
+    [
+     "**Heart failure from rheumatic valve disease** — the second differential",
+     "**Long-standing valve lesion is the commonest route to late heart failure**",
+     "Exertional breathlessness, orthopnoea, **PILLOWS**, paroxysmal nocturnal dyspnoea, ankle swelling",
+     "**Absent here. Chest X-ray, BNP, echocardiogram** — urgent"
+    ],
+    [
+     "Acute rheumatic fever, or recurrence",
+     "Sore throat then **migratory arthritis, carditis, chorea**",
+     "Recent sore throat, joint pain, rash, involuntary movements",
+     "**Jones criteria; ASOT and anti-DNase B; ECG for PR prolongation** — urgent"
+    ],
+    [
+     "Tuberculosis · EBV, CMV, acute HIV, hepatitis",
+     "Subacute constitutional illness with fever and sweats",
+     "Cough, weight loss, night sweats, contacts, country of birth, nodes, sexual history, needle exposure",
+     "Chest X-ray and sputum; EBV, HIV and hepatitis serology — urgent"
+    ],
+    [
+     "**Leukaemia or lymphoma**",
+     "Fever, sweats and fatigue in an adult; **weight loss, lumps, bruising, bone pain**",
+     "The four red flags; examine nodes, liver and spleen",
+     "**FBC with film; LDH** — urgent"
+    ],
+    [
+     "Anaemia",
+     "Fatigue with exertional breathlessness or palpitations",
+     "Bleeding, diet, bowel habit, pallor",
+     "FBC, film and iron studies. **Note that anaemia of chronic disease ACCOMPANIES endocarditis**"
+    ],
+    [
+     "Thyroid disease · diabetes · hepatitis · coeliac disease",
+     "Fatigue is the commonest presentation of all of these",
+     "Weather preference, thirst, urinary frequency, jaundice, dark urine, greasy stools",
+     "TSH, HbA1c, LFT, coeliac serology"
+    ],
+    [
+     "SLE · polymyalgia rheumatica",
+     "**Add fever and aches** to the fatigue",
+     "Joint pain, morning stiffness, scalp tenderness, rash",
+     "ESR and CRP, antinuclear antibody"
+    ],
+    [
+     "Medication effect · alcohol · depression · obstructive sleep apnoea",
+     "**Very common and always worth naming**",
+     "Medication list, alcohol, mood and anhedonia, snoring and witnessed apnoeas",
+     "Review medicines; AUDIT-C; two-question depression screen; STOP-BANG"
+    ],
+    [
+     "**Variants that change the organism**",
+     "**Injecting drug use with a murmur LOUDER ON INSPIRATION (Carvallo's sign)**; prosthetic material; **S. gallolyticus (bovis)** in an older man",
+     "Injecting use; prior valve surgery; anaemia with weight loss",
+     "**Tricuspid endocarditis, S. aureus — look for septic pulmonary emboli. S. gallolyticus MANDATES COLONOSCOPY** — emergency"
+    ]
    ]
   },
   "source": "Infective_Endocarditis_2_Case_Tasks_Script_Notability.pdf (John Brennan, 45, tiredness with a childhood murmur)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Infective_Endocarditis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Unwell-looking; not pale or jaundiced; no rash"
-   ],
-   [
-    "Observations",
-    "T 38.5 · HR 96 regular · BP 118/72 · RR 16 · SpO2 97%"
-   ],
-   [
-    "Thyroid and nodes",
-    "Normal"
-   ],
-   [
-    "Cardiovascular",
-    "JVP not raised; apex not displaced; A MID-DIASTOLIC RUMBLING MURMUR AT THE MITRAL AREA; no S3"
-   ],
-   [
-    "Chest",
-    "Clear"
-   ],
-   [
-    "Abdomen",
-    "No hepatosplenomegaly"
-   ],
-   [
-    "Peripheral stigmata",
-    "No Osler nodes, no Janeway lesions"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking about a portal of entry — 'any dental work recently — a filling, an extraction, a root canal?' is the question this station was built around; then say the three-week timing match out loud, a free mark (★)",
-   "FAIL — 'Any skin changes?' — the examiner asks what you are looking for; name Osler nodes, Janeway lesions, clubbing and splinter haemorrhages, or the photograph stays under the papers; the single most reliable discriminator (★)",
-   "FAIL — Sending him home with oral antibiotics and a review — automatic fail and lethal; three sets of blood cultures before any antibiotic, then hospital today for echo and IV antibiotics",
-   "FAIL — Abandoning the murmur after three 'I don't remember's — change tack: 'antibiotics for a long time as a child, injections? lots of sore throats? any follow-up?' — that is how rheumatic heart disease is retrieved",
-   "FAIL — Hearing 'feverish' without a number and discounting it — 'I'll take that as a fever'; and skipping the cardiac failure questions, because heart failure on a stenotic valve is the second differential you must reason against",
-   "FAIL — Running out of time before the differentials — one sentence of what it is, two of how, four reasons, stop; then grouped differentials with heart failure and blood cancers reasoned; and answer the cancer fear if he raises his brother"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-61",
