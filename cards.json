@@ -3626,7 +3626,6 @@
   "id": "MED-05",
   "cat": "med",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "You are the doctor in a general practice. Ray Docherty, 62, has come in with chest pain for the past two to three months. It comes on when he walks up the hill to the shops and settles when he stops.",
    "Vitals: T 36.6 · HR 96 · BP 132/78 · RR 16 · SpO2 98% · BMI 27."
@@ -3637,132 +3636,196 @@
    "Explain your diagnosis and differentials to the patient",
    "Outline your investigations and initial management"
   ],
-  "time": "10 minutes. History 6:00 · examination 1:00 · diagnosis and differentials 1:30 · investigations and management 1:15 · close 0:15.",
   "back": {
-   "dx": "Stable typical angina BECAUSE OF iron-deficiency anaemia BECAUSE OF a bleeding NSAID ulcer — a three-link chain. Findings: pale, conjunctival pallor · P 96 regular, no postural drop · soft ejection systolic FLOW murmur · chest clear · mild epigastric tenderness · PR: MELAENA · ECG sinus tachycardia, no acute ischaemia · BSL 5.4. Hidden: black tarry offensive stools for a month (only if asked); supermarket ibuprofen most days for 8 months for his knees (only if asked about OTC painkillers after 'nothing really, just a blood pressure tablet'). Agenda: brother's bypass at 64; once melaena surfaces, fear of cancer.",
+   "dx": [
+    "**Stable angina secondary to iron deficiency anaemia, caused by an NSAID-induced bleeding peptic ulcer.** 'Stable angina' on its own is a third of the answer.",
+    "The chain, said out loud: **anti-inflammatory → peptic ulcer → chronic gastrointestinal blood loss → iron deficiency anaemia → less oxygen delivered and more cardiac work → angina.** Every part of the management follows from a different link.",
+    "Mechanism: angina is a **supply–demand mismatch**. Usually the supply falls because a coronary artery is narrowed; here **there is not enough haemoglobin to carry the oxygen**, and the heart compensates by beating faster and harder, raising demand at the same time. **Coronary disease may coexist and must still be assessed.**",
+    "Typical and **stable**: central, heavy, radiating to the left arm and jaw, **brought on by exertion and relieved by rest within minutes** — and, the graded question, **no rest pain, no night pain, no crescendo pattern**.",
+    "Three links, three treatments: **stop the ibuprofen** (paracetamol, a topical anti-inflammatory, physiotherapy, weight management for his knees) → **proton pump inhibitor at a standard healing dose** → **iron replacement**, oral once bleeding is controlled or IV if not tolerated → **eradicate Helicobacter pylori if positive**.",
+    "**Transfuse only if he is symptomatic at rest, haemodynamically compromised, or the haemoglobin is very low.** Restrictive threshold around **70 g/L**, around **80 g/L** with cardiovascular disease — safe wording is 'a restrictive threshold, a slightly higher one given his cardiac symptoms, discussed with the senior clinician'. VERIFY",
+    "**The antiplatelet conflict — raise it, never resolve it silently.** Aspirin protects the heart and harms the ulcer: **'aspirin thins the blood and irritates the stomach, and right now you're bleeding from your stomach, so I'm not going to start it today.'** Treat the ulcer, correct the count, then decide **jointly with cardiology and gastroenterology, with PPI cover**.",
+    "**Cardiac assessment after the haemoglobin recovers** — a stress test in a profoundly anaemic man is uninterpretable and carries risk. Meanwhile: **short-acting nitrate spray for episodes**, consider a beta-blocker, plus statin and blood pressure management.",
+    "**Say cancer aloud, calmly, with the plan attached.** **Iron deficiency anaemia in an older adult is scoped regardless of a plausible cause** — no weight loss and no change in bowel habit is reassuring, not exclusionary. 'I'd rather know than guess.'",
+    "SA — gastroscopy and colonoscopy from MM5 need **Country Health Connect** referral and **PATS**; **healthdirect 1800 022 222**; acute rebleed or haemodynamic compromise is **MedSTAR 1300 13 12 33**; **TIS National 131 450**."
+   ],
    "plan": [
     [
      "0:00",
-     "'May I have his vital signs, including a postural BP?' → open question → acknowledge → signpost: 'questions that might seem unrelated to your chest — they matter'"
+     "To the examiner: **'before I begin, may I have his vital signs, including a postural blood pressure?'**"
+    ],
+    [
+     "0:15",
+     "WIPE, open question, acknowledge — then **signpost the odd questions before you ask them**: **'I'll ask about the pain first, then some questions that might seem unrelated to your chest — they matter, I promise.'**"
     ],
     [
      "0:45",
-     "Characterise: site/radiation, character, provoked/relieved, duration, REST OR NIGHT PAIN, crescendo, associated sweating/nausea/SOB/palpitations → typical and stable"
+     "Characterise the pain: **where exactly, and does it go anywhere · what's it like, heavy, tight, sharp, burning · what brings it on and what makes it go away · how long does it last · do you ever get it at rest, or at night, or does it wake you · has it changed, coming on with less effort than it used to · any sweating, nausea, breathlessness or palpitations with it?**"
     ],
     [
-     "2:15",
-     "CV risk factors; other chest pain groups in one sweep (fever/viral, leaning forward, travel/calf, haemoptysis, injury/pressing, rash, heartburn)"
+     "2:00",
+     "Cardiovascular risk factors: **do you smoke, or have you ever · any high blood pressure, diabetes or high cholesterol · any heart attacks or strokes in the family, and at what age · how active are you · how much alcohol?**"
+    ],
+    [
+     "2:45",
+     "The other chest pain groups, one fast sweep: **any fever or recent viral illness, is it better leaning forward · any long travel or calf swelling · coughing up blood · any injury to the chest, or pain on pressing · any rash · any heartburn or acid taste?** If the history runs long, shorten **this** — **never the two bolt-on blocks**."
     ],
     [
      "3:15",
-     "ANAEMIA BLOCK: tired, more breathless doing usual things, dizzy, palpitations, told you look pale"
+     "**Bolt-on 1 — the anaemia screen**, twenty seconds and it opens the case: **have you been more tired than usual · more breathless doing things you used to manage easily · any dizziness or light-headedness · any palpitations · has anyone said you look pale · any craving to chew ice?**"
     ],
     [
      "3:45",
-     "UPPER GI BLOCK — the pivot: dyspepsia and relation to food; BLACK OR TARRY MOTIONS → characterise (how long, sticky, offensive) and exclude iron/bismuth; haematemesis/coffee grounds; dysphagia; weight/appetite; bowel habit/fresh blood; family GI cancer"
+     "**Bolt-on 2 — the upper gastrointestinal screen, the pivot**: **any indigestion, burning or gnawing pain in the upper tummy, and is it related to eating · have you noticed your bowel motions turning black or tarry · have you ever vomited blood, or anything like coffee grounds · any difficulty swallowing · any weight loss or loss of appetite · any change in bowel habit or fresh blood · any bowel or stomach cancer in the family?**"
     ],
     [
      "4:45",
-     "Meds asked twice: 'what medications?' then 'anything for pain or joints — including bought at the chemist or supermarket? Ibuprofen, Nurofen, Voltaren, aspirin? How much, how long?' Previous ulcer/H. pylori; allergies; concerns"
+     "Do not hear 'black stools' and move on. **Characterise it: how long, how often, are they sticky and offensive-smelling** — and **exclude iron tablets and bismuth, which also darken stool**. Then say out loud what it means."
+    ],
+    [
+     "5:15",
+     "Medications, **asked twice**. 'What medications are you on?' gets 'nothing really'. Then: **'are you taking anything at all for pain or for your joints — including anything you buy yourself at the chemist or the supermarket? Ibuprofen, Nurofen, Voltaren or aspirin? How much, and for how long?'** Then **previous ulcer or Helicobacter treatment**, allergies, and **'is there anything in particular you're worried about?'**"
     ],
     [
      "6:00",
-     "PEFE box by box incl. PR with consent + chaperone → 'pallor, flow murmur and melaena fit together'"
+     "Examination from the examiner — **name each box and wait**, and **request the rectal examination explicitly, with consent and a chaperone**. Interpret the murmur rather than labelling it: in an anaemic patient a soft systolic murmur is usually a **flow murmur**."
     ],
     [
      "7:00",
-     "Chain in three linked steps; differentials incl. honest malignancy; Ix and Mx; the aspirin conflict said out loud; safety-net"
+     "Diagnosis as **three linked steps** in plain English — the pain is angina · the reason is that you are anaemic · the reason for that is slow blood loss from the stomach, most likely an ulcer from the anti-inflammatory tablets. Then the differentials, **naming malignancy honestly, with the reassuring features and the plan attached**."
+    ],
+    [
+     "8:30",
+     "Investigations and management by link: **bloods and cross-match · ECG · gastroscopy with H. pylori testing · colonoscopy · stop the NSAID with alternative analgesia · PPI · iron**. Then **defer the cardiac testing and the aspirin decision, and say why**."
+    ],
+    [
+     "9:45",
+     "Safety net and summarise: **chest pain at rest or that doesn't settle, vomiting blood, the black motions getting worse, or feeling faint → come straight back or go to the emergency department.** 'Does that all make sense?'"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Where exactly, does it go anywhere, what's it like — heavy, tight, sharp, burning?",
-    "What brings it on and what makes it go? How long does it last?",
-    "Do you ever get it at rest, or at night, or does it wake you? ★ Is it coming on with less effort than it used to?",
-    "Smoking, BP, diabetes, cholesterol; family heart attacks/strokes and at what age; activity; alcohol",
-    "More tired than usual? More breathless doing things you used to manage? Dizzy? Palpitations? Anyone said you look pale?",
-    "Any indigestion, burning or gnawing upper tummy pain — related to eating?",
-    "Have you noticed your bowel motions turning black or tarry? ★ Sticky, offensive? How long? Iron tablets or Pepto-Bismol?",
-    "Vomited blood or coffee grounds? Difficulty swallowing? Weight loss/appetite? Bowel habit or fresh blood? Family bowel or stomach cancer?",
-    "What medications are you on? … Anything at all for pain or your joints, including bought over the counter? ★ Ever had an ulcer or Helicobacter treatment?",
-    "Anything in particular you're worried about?"
-   ],
    "pefe": [
-    "General: pale? conjunctival/palmar pallor, glossitis, angular stomatitis, koilonychia",
-    "Vitals: pulse rate and rhythm, BP lying and standing",
-    "CVS: heart sounds, murmurs (soft ESM = flow murmur in anaemia — say you'd confirm with echo; keep AS open), JVP, oedema, heart failure signs",
-    "Respiratory: air entry, added sounds",
-    "Abdomen: epigastric tenderness, masses, organomegaly",
-    "'With his consent and a chaperone, may I perform a rectal examination — melaena or mass?' ★",
-    "Office tests: ECG, BSL, urine dipstick"
+    "Ask for **vital signs including a postural blood pressure** before you begin.",
+    "Name each box and wait: **general appearance and anaemia signs · pulse and postural BP · heart sounds, murmurs, JVP, oedema · chest · abdomen · rectal examination · office tests**.",
+    "**Request the rectal examination explicitly, with consent and a chaperone.** Candidates skip it because it feels unrelated to a chest pain station — it is the finding that confirms the chain.",
+    "Interpret, do not label: a soft systolic murmur in an anaemic patient is usually a **flow murmur**, but **confirm with an echocardiogram** and keep aortic stenosis open.",
+    "Bloods in priority order: **FBE — expect microcytic, hypochromic · iron studies — low ferritin, low transferrin saturation · UEC, where the urea is often raised in upper GI bleeding · LFT · coagulation profile · group and hold or cross-match**.",
+    "**ECG now. Troponin only if anything suggests an acute coronary syndrome.**",
+    "**Gastroscopy with Helicobacter pylori testing** — the definitive investigation for the bleeding source.",
+    "**Colonoscopy as well.** Iron deficiency anaemia in an older adult warrants evaluation of **both tracts**; a plausible cause does not exclude a second, more serious one.",
+    "Cardiovascular workup: **lipids, HbA1c, blood pressure — and functional cardiac testing only once the anaemia is corrected**, since testing him now would mislead you."
    ],
-   "fails": [
-    "Closing on coronary disease on 'exertional pain in a 62-year-old' and running on autopilot",
-    "Not asking rest/night pain — what grades it stable rather than ACS",
-    "Never asking the five anaemia questions; attributing all breathlessness to angina",
-    "Hearing 'black stools' and moving on without characterising/excluding iron and bismuth",
-    "Accepting 'no medications' — never asking about OTC painkillers ★",
-    "Not requesting the rectal examination ★",
-    "Calling the murmur aortic stenosis outright",
-    "'It's just the anti-inflammatories' — never naming malignancy honestly",
-    "Telling him to keep taking the ibuprofen, or never addressing it ★",
-    "Starting aspirin, or omitting it silently, instead of naming the conflict",
-    "Ordering cardiac stress testing while still anaemic"
-   ],
-   "numbers": [
-    "Chain: NSAID → ulcer → chronic blood loss → iron-deficiency anaemia → reduced O2 delivery + increased cardiac work → angina",
-    "Bloods: FBC (microcytic hypochromic), iron studies (low ferritin), UEC (urea raised in upper GI bleed), LFT, coags, group and hold/cross-match, ECG ± troponin",
-    "Scopes: gastroscopy + H. pylori testing; colonoscopy too — iron deficiency in an older adult warrants both tracts",
-    "Treatment order: stop NSAID → PPI → iron → transfuse only if symptomatic at rest/compromised (restrictive threshold, slightly higher in cardiac disease — discuss with senior, don't commit to a number) → eradicate H. pylori → GTN spray for episodes → cardiac functional testing AFTER Hb recovers",
-    "Knees: paracetamol + topical anti-inflammatory gel + physio",
-    "Aspirin: defer; decide jointly with cardiology and gastroenterology with gastroprotection in place",
-    "'Is this ACS?' — no: purely exertional, relieved by rest, no rest/night pain, no acute ECG change; low threshold for troponin if anything changes",
-    "Safety-net: rest pain that doesn't settle, haematemesis, worsening melaena, faint → ED"
+   "ddx": [
+    [
+     "**Stable angina secondary to anaemia**",
+     "Typical exertional pain with tiredness, breathlessness, pallor, **melaena**, and regular NSAID use",
+     "Anaemia screen, GI screen, pallor, flow murmur, **rectal examination**",
+     "FBE and iron studies, ECG, **gastroscopy**. Treat the anaemia and the ulcer, then reassess the angina — same day"
+    ],
+    [
+     "Stable angina from coronary artery disease",
+     "The same typical pain, risk factors, age",
+     "Risk factor profile, ECG, exercise or functional testing",
+     "**May coexist — it is not either/or.** Assess formally once the haemoglobin is corrected"
+    ],
+    [
+     "**Acute coronary syndrome**",
+     "**Rest or night pain, crescendo pattern**, a prolonged episode, autonomic features",
+     "Pain at rest, ECG changes, troponin",
+     "**ECG and troponin now**; admit — immediate"
+    ],
+    [
+     "Peptic ulcer disease",
+     "NSAID use, epigastric gnawing pain related to meals, melaena",
+     "Epigastric tenderness, melaena on rectal examination",
+     "Gastroscopy and **H. pylori** testing; stop the NSAID, start a proton pump inhibitor"
+    ],
+    [
+     "**Upper or lower GI malignancy — not to miss**",
+     "Any melaena or iron deficiency in an adult over 50",
+     "Weight loss, appetite, dysphagia, bowel habit change, family history",
+     "**Iron deficiency anaemia in an older adult requires endoscopic evaluation even when an NSAID explains it** — urgent referral"
+    ],
+    [
+     "Aortic stenosis",
+     "Exertional chest pain, breathlessness, syncope; ejection systolic murmur radiating to the carotids",
+     "Murmur character, slow-rising pulse, exertional syncope",
+     "**Echocardiogram** — and note that anaemia also produces a flow murmur; do not confuse the two"
+    ],
+    [
+     "Pericarditis",
+     "Positional pleuritic pain, recent viral illness, friction rub",
+     "ECG: widespread concave elevation with PR depression; troponin",
+     "Troponin and echocardiogram — same day"
+    ],
+    [
+     "Gastro-oesophageal reflux",
+     "Burning, acid taste, worse lying flat, relieved by antacids",
+     "Waterbrash, relationship to meals",
+     "Trial of therapy **after cardiac exclusion**"
+    ],
+    [
+     "Musculoskeletal · pulmonary embolism · pneumothorax · anxiety",
+     "Reproducible pain; pleuritic pain with immobility; sudden pleuritic pain; situational",
+     "Palpation, travel and calf questions, trauma",
+     "Screen briefly in every chest pain history"
+    ]
    ]
   },
   "source": "Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf (Case 1)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf",
   "findings": [
    [
-    "General",
-    "Pale? conjunctival/palmar pallor, glossitis, angular stomatitis, koilonychia"
+    "Vital signs, with a postural BP",
+    "T 36.6 · HR 96 regular · BP 132/78 with NO POSTURAL DROP · RR 16 · SpO2 98% · BMI 27"
    ],
    [
-    "Vitals",
-    "Pulse rate and rhythm, BP lying and standing"
+    "General appearance and anaemia signs",
+    "PALE, with CONJUNCTIVAL PALLOR. No koilonychia, no glossitis, no angular stomatitis"
    ],
    [
-    "CVS",
-    "Heart sounds, murmurs (soft ESM = flow murmur in anaemia — say you'd confirm with echo; keep AS open), JVP, oedema, heart failure signs"
+    "Cardiovascular",
+    "Heart sounds normal with a SOFT EJECTION SYSTOLIC MURMUR at the left sternal edge — a FLOW murmur. JVP not raised, no oedema, no signs of heart failure"
    ],
    [
     "Respiratory",
-    "Air entry, added sounds"
+    "Normal — chest clear, air entry equal, no added sounds"
    ],
    [
     "Abdomen",
-    "Epigastric tenderness, masses, organomegaly"
+    "MILD EPIGASTRIC TENDERNESS. No mass, no organomegaly"
    ],
    [
-    "Office tests",
-    "ECG, BSL, urine dipstick"
+    "Rectal examination, with consent and a chaperone",
+    "MELAENA PRESENT, no mass. The request candidates skip — and the finding that confirms the whole chain"
+   ],
+   [
+    "ECG",
+    "Sinus tachycardia. No acute ischaemic change"
+   ],
+   [
+    "Blood glucose",
+    "BSL 5.4"
+   ],
+   [
+    "Urine dipstick",
+    "Normal"
    ]
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Diagnosing angina and moving to statins and stress tests without asking WHY — the role-player lets you, and marks it as a fail; the chain is NSAID → ulcer → chronic blood loss → iron deficiency anaemia → reduced oxygen delivery with increased cardiac work → ANGINA, and it is explained to the patient as THREE LINKED STEPS rather than one diagnosis (★)",
-   "SAY — 'Have you noticed your bowel motions turning black or tarry?' — the question that unlocks the case, asked of a man who came in with CHEST PAIN; then CHARACTERISE it rather than moving on: how long, how often, sticky and offensive-smelling, no haematemesis or coffee grounds, no dysphagia, no weight loss, no change in bowel habit or fresh blood, no family history — and exclude the MIMICS, because IRON TABLETS and BISMUTH also blacken stool; preface the whole block so it does not seem random ('I'll ask about the pain first, then some questions that might seem unrelated to your chest — they matter, I promise') (★)",
-   "DO — The FIVE anaemia questions: tiredness, exertional breathlessness, dizziness, palpitations, and whether anyone has said he looks pale — twenty seconds, and they open the case; attributing all the breathlessness to the angina and never asking them is how candidates miss the second thread, because he puts the exhaustion down to age and it is his wife who says he looks washed out; and grade the angina as STABLE by asking the question the examiner is listening for — 'do you ever get it at rest, or at night, or does it wake you?' — which is what makes this stable angina rather than an acute coronary syndrome",
-   "FAIL — Accepting 'no medications' — patients do not classify supermarket painkillers as medication, so ask AGAIN and specifically: 'are you taking anything at all for pain or for your joints, including anything you buy yourself at the chemist or the supermarket — ibuprofen, Nurofen, Voltaren, aspirin? How much, and for how long?' → ibuprofen most days for eight months for his knees; this one follow-up question is the difference between a complete and an incomplete answer, and it is the culprit in the chain (★)",
-   "FAIL — Not requesting the RECTAL EXAMINATION, with consent and a chaperone — the melaena confirms the whole chain, and candidates skip it because it feels unrelated to a chest pain station; ask for the findings box by box and wait after each: general appearance with conjunctival and palmar pallor, glossitis, angular stomatitis and koilonychia; pulse and a POSTURAL blood pressure; heart sounds, murmurs, JVP and oedema; chest; abdomen for epigastric tenderness, masses and organomegaly; then the rectal examination; then office tests — ECG, glucose and urine dipstick; and call the soft systolic murmur a FLOW MURMUR of anaemia rather than aortic stenosis, while saying you would confirm with an echocardiogram (★)",
-   "FAIL — Telling him to keep taking the ibuprofen, or never addressing it — STOP IT TODAY, with paracetamol and a topical anti-inflammatory gel for his knees instead and a physiotherapy referral; then the rest of the plan — full blood count and iron studies, urea and electrolytes (urea is raised in upper gastrointestinal bleeding), liver function, coagulation and a GROUP AND HOLD, with an ECG and a troponin if there is any concern; a PROTON PUMP INHIBITOR to let the ulcer heal and IRON to rebuild the count, transfusing only if he is symptomatic at rest or compromised, on a restrictive threshold set slightly higher given his cardiac symptoms; GASTROSCOPY with H. pylori testing, and a COLONOSCOPY as well, because iron deficiency in an older adult warrants evaluation of BOTH tracts and a plausible cause does not exclude a second, more serious one; DEFER formal cardiac functional testing until the haemoglobin recovers, because testing him while anaemic gives a misleading result; and RAISE THE ASPIRIN CONFLICT rather than starting it or omitting it silently, because he asks — 'aspirin protects the heart, but it thins the blood and irritates the stomach, and right now you're bleeding from your stomach, so not today; we'll treat the ulcer, get your blood count up, and decide about aspirin together with the heart and stomach specialists, with stomach protection in place'; name MALIGNANCY honestly among the differentials rather than saying 'it's just the anti-inflammatories', with the reassuring features and the plan attached; and safety-net chest pain at rest or that does not settle, vomiting blood, worsening black motions, or feeling faint"
-  ]
+   "FAIL — Stopping at 'stable angina'. Name it, then ask **why**.",
+   "FAIL — Never asking whether the bowel motions have turned black or tarry.",
+   "FAIL — Accepting 'no medications'. Ask again about anything bought for pain.",
+   "FAIL — Not requesting the rectal examination, with consent and a chaperone.",
+   "ASK — Any pain at rest, or at night, or that wakes you? That grades it **stable**.",
+   "ASK — More tired? More breathless doing what you used to manage? Look pale?"
+  ],
+  "v2": true
  },
  {
   "id": "MED-06",
   "cat": "med",
   "promptBell": false,
-  "setting": "Emergency Department.",
   "stem": [
    "Alan Prosser, 58, presents to the Emergency Department with central chest pain worse lying flat and better sitting forward, with a flu-like illness a week ago.",
    "Vitals: T 37.2 · HR 88 · BP 128/76 · RR 18 · SpO2 97%.",
@@ -3773,81 +3836,167 @@
    "Interpret the ECG",
    "Explain the diagnosis and immediate management"
   ],
-  "time": "8 minutes. The history sounds like pericarditis; the ECG overrides it.",
   "back": {
-   "dx": "Acute INFERIOR STEMI — territorial ST elevation (II, III, aVF) with reciprocal change (I, aVL) = infarct, whatever the story. Pericarditis history + infarct ECG: treat the infarct. Name the mismatch to the examiner: this is exactly why ECG and troponin are part of the pericarditis work-up. Obtain V4R for right ventricular involvement → if RV involved, NO nitrates, give fluid (preload dependent).",
+   "dx": [
+    "**Acute inferior ST-elevation myocardial infarction.** The pericarditic history is a **mimic, not the diagnosis** — and this is precisely why an ECG and a troponin are part of the pericarditis workup.",
+    "The read, aloud and in order: **rate 88, sinus rhythm, normal axis. ST elevation in leads II, III and aVF — the inferior leads — with reciprocal ST depression in I and aVL. No widespread elevation and no PR depression. That is a territorial pattern with reciprocal change.**",
+    "The discriminator: **pericarditis = widespread concave elevation crossing territories, PR depression (PR elevation in aVR), no reciprocal change, troponin normal or mildly raised, positional pleuritic pain relieved by leaning forward.** **Infarction = territorial, often convex, reciprocal change present, troponin substantially raised and rising.**",
+    "Name the mismatch to the examiner rather than explaining it away: **'the history was suggestive of pericarditis — positional pain relieved by leaning forward, after a viral illness. But the ECG overrides it. I am treating this as an infarct.'**",
+    "To the patient: **'your heart tracing shows something more serious than the story first suggested. One of the arteries supplying your heart muscle is blocked — that's a heart attack. I know the pain didn't feel typical, but the tracing is clear, and we need to act now to open that artery.'**",
+    "Immediate: **resuscitation area, continuous monitoring, IV access, aspirin 300 mg chewed, a second antiplatelet and anticoagulation per protocol, and analgesia. Oxygen only if he is hypoxic.** VERIFY doses against current protocol.",
+    "**Reperfusion is the priority: primary percutaneous coronary intervention if it can be delivered promptly, otherwise thrombolysis and urgent transfer.** **ST elevation with a consistent story is enough — do not wait for the troponin.**",
+    "**Right-sided leads (V4R): up to a third of inferior infarcts involve the right ventricle.** If they do, he is **preload dependent — avoid nitrates, which can cause profound hypotension, and give fluid instead**.",
+    "**Continuous monitoring for arrhythmia and heart block**, both of which inferior infarcts produce. Senior and cardiology involvement now, not later.",
+    "SA — in rural South Australia primary angioplasty is usually not immediately available: **thrombolysis here after checking contraindications, plus MedSTAR 1300 13 12 33 retrieval** to a PCI-capable centre, **discussing the case with the receiving cardiologist while treatment is being given**."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals; open question; characterise the pain (positional, pleuritic?, viral prodrome), risk factors, other chest pain groups briefly"
+     "To the examiner: **'may I have his vital signs?'** — T 37.2, HR 88, BP 128/76, RR 18, SpO2 97%. Stable for now, which buys you the history."
+    ],
+    [
+     "0:20",
+     "WIPE, open question, then characterise: **where is the pain, what is it like, does it go anywhere, what brings it on and what eases it, how long has this episode lasted?**"
+    ],
+    [
+     "1:00",
+     "The pericarditis track — **note it, do not commit**: **is it worse lying flat and better sitting forward · any fever or recent viral illness · any sharp pain on breathing?**"
+    ],
+    [
+     "1:45",
+     "The infarct track in the same breath: **any sweating, nausea or vomiting · any breathlessness · does it radiate to the arm, shoulder or jaw · any pain at rest before today · any dizziness or blackouts?**"
+    ],
+    [
+     "2:30",
+     "Risk factors and the other groups: **smoking, blood pressure, diabetes, cholesterol, family history of heart attack or stroke · any long travel or calf swelling · any chest injury or pain on pressing · any heartburn or acid taste.**"
+    ],
+    [
+     "3:30",
+     "SADMA, past medical history, allergies — **and 'is there anything in particular you're worried about?'**"
     ],
     [
      "4:00",
-     "ECG aloud: 'Rate 88, sinus, normal axis. ST elevation in II, III, aVF — the inferior leads — with reciprocal ST depression in I and aVL. No widespread elevation, no PR depression. Territorial pattern with reciprocal change = acute inferior STEMI, not pericarditis. I would obtain right-sided leads.'"
+     "**'Examiner, may I interpret the ECG?'** Read it aloud in order and **commit**: territorial elevation in II, III and aVF with reciprocal depression in I and aVL is an **inferior STEMI**."
     ],
     [
-     "5:00",
-     "To the examiner: acknowledge the history suggested pericarditis; the ECG overrides it; treating as infarct"
+     "4:45",
+     "**Name the mismatch out loud, calmly, without panicking** — and say why the tracing wins over the story. Candidates who committed to pericarditis in the first three minutes explain the ECG away; that is the fail."
     ],
     [
-     "5:30",
-     "To the patient: tracing shows something more serious — an artery supplying your heart is blocked, a heart attack; the pain didn't feel typical but the tracing is clear; acting now, calling cardiology"
+     "5:15",
+     "To the patient in plain words, then: **'I'm starting treatment immediately and calling the cardiology team.'** No jargon, no delay."
     ],
     [
-     "6:15",
-     "Immediate management: resus area, monitoring, O2 only if hypoxic, IV access, aspirin 300 mg chewed, second antiplatelet + anticoagulation per protocol, analgesia; reperfusion — primary PCI if prompt, otherwise thrombolysis + urgent transfer; V4R → avoid nitrates/give fluid if RV; watch for arrhythmia and heart block"
+     "6:00",
+     "Immediate management, spoken as a list: **resus area, monitoring, oxygen only if hypoxic, IV access, aspirin 300 mg chewed, second antiplatelet and anticoagulation per protocol, analgesia.**"
     ],
     [
-     "7:30",
-     "Rural SA: thrombolyse here after checking contraindications, simultaneous MedSTAR retrieval to a PCI centre, discuss with receiving cardiologist while treating"
+     "7:00",
+     "**Right-sided leads** — and if the right ventricle is involved, **fluids, not nitrates**. Continuous monitoring for **arrhythmia and heart block**."
+    ],
+    [
+     "7:45",
+     "Disposition: **primary PCI if it can be delivered promptly; otherwise thrombolysis here after checking contraindications, with MedSTAR retrieval arranged simultaneously** and the receiving cardiologist on the phone during treatment."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Where is the pain, what's it like, does it change with position — worse lying flat, better leaning forward?",
-    "Any flu-like illness recently? Fever?",
-    "Sweating, nausea, breathlessness? Any pain on exertion before this?",
-    "Smoking, BP, diabetes, cholesterol, family history",
-    "Any bleeding history, recent surgery, stroke, anticoagulants (thrombolysis contraindications)"
-   ],
    "pefe": [
-    "ECG in order: rate → rhythm → axis → ST by territory → reciprocal change → PR segment → impression",
-    "Right-sided leads (V4R) for RV involvement",
-    "Troponin; continuous monitoring",
-    "Variant — the ECG really IS pericarditis: widespread concave ST elevation across territories with PR depression and no reciprocal change → still send troponin and arrange echo (exclude infarction and effusion); treat with NSAID plus colchicine"
+    "**Vital signs first** — and blood pressure in both arms if dissection is on your list.",
+    "**12-lead ECG immediately**, read in order before you commit to anything.",
+    "**Right-sided leads (V4R) in every inferior infarct** — the single step that changes whether nitrates are safe.",
+    "**Troponin: send it, do not wait for it.** Substantially raised and rising in infarction; normal or mildly raised in pericarditis.",
+    "Bloods: **FBE · UEC · coagulation profile · lipids · glucose**, plus a group and hold.",
+    "**CXR**; and where pericarditis genuinely is the answer, an **echocardiogram** to exclude an effusion and confirm the diagnosis.",
+    "Examine for **a new murmur, bradycardia or hypotension, a friction rub, and signs of heart failure**.",
+    "**Continuous cardiac monitoring for arrhythmia and heart block** while the reperfusion pathway runs."
    ],
-   "fails": [
-    "Calling it pericarditis because the history fits — territorial ST elevation with reciprocal change is an infarct ★",
-    "Not obtaining right-sided leads / giving nitrates to an RV infarct",
-    "Delaying reperfusion to complete the history",
-    "Not naming the history–ECG mismatch to the examiner",
-    "Reassuring the patient it's 'just inflammation'"
-   ],
-   "numbers": [
-    "Inferior leads II, III, aVF; reciprocal I and aVL; V4R for RV involvement",
-    "Pericarditis pattern: widespread concave STE + PR depression, no reciprocal change",
-    "Aspirin 300 mg chewed; second antiplatelet and anticoagulant per local protocol — VERIFY",
-    "Primary PCI if it can be delivered promptly; otherwise thrombolysis and urgent transfer",
-    "MedSTAR 1300 13 12 33 — retrieval to a PCI centre (RAH/FMC); country hospital without a cath lab thrombolyses first",
-    "RV infarct: preload dependent — fluids, no nitrates"
+   "ddx": [
+    [
+     "**Inferior STEMI — not to miss**",
+     "**ST elevation in II, III and aVF with reciprocal depression in I and aVL**, often convex; troponin rising",
+     "Right-sided leads; bradycardia, hypotension, new murmur",
+     "**Reperfusion now — PCI or thrombolysis. Do not wait for the troponin** — immediate"
+    ],
+    [
+     "Pericarditis",
+     "Positional pleuritic pain, better sitting forward, recent viral illness, friction rub",
+     "**Widespread concave elevation with PR depression and no reciprocal change**",
+     "Troponin and echocardiogram; **NSAID plus colchicine** — same day"
+    ],
+    [
+     "Myocarditis",
+     "Recent viral illness, breathlessness, arrhythmia, raised troponin without a territorial pattern",
+     "Heart failure signs, arrhythmia, troponin out of keeping with the ECG",
+     "Troponin, echocardiogram, cardiology — same day"
+    ],
+    [
+     "Acute coronary syndrome without ST elevation",
+     "Rest or crescendo pain, autonomic features, dynamic ECG change",
+     "**Serial ECGs and troponins**",
+     "Admit; antiplatelet and anticoagulation per protocol — immediate"
+    ],
+    [
+     "**Aortic dissection**",
+     "Tearing pain radiating to the back, pulse or blood pressure differential, widened mediastinum",
+     "**BP in both arms**, peripheral pulses, new aortic regurgitation",
+     "**CT aortogram** — immediate, and it changes the anticoagulation decision"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, dyspnoea, calf swelling, immobility or long travel",
+     "Wells score, hypoxia, tachycardia",
+     "**CTPA** — emergency"
+    ],
+    [
+     "Pneumothorax · musculoskeletal · gastro-oesophageal reflux",
+     "Sudden pleuritic pain with breathlessness; pain reproducible on palpation; burning with an acid taste",
+     "Breath sounds, chest wall palpation, relationship to meals",
+     "CXR; trial of therapy **after cardiac exclusion**"
+    ]
    ]
   },
   "source": "Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf (Case 2 — the infarct ECG)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Angina_and_Anaemia_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Calling it pericarditis because the HISTORY fits — positional pain relieved by leaning forward after a viral illness a week ago is exactly the story, and the ECG overrides it: TERRITORIAL ST elevation in II, III and aVF WITH RECIPROCAL ST depression in I and aVL, no widespread concave elevation and no PR depression, is an ACUTE INFERIOR ST-ELEVATION MYOCARDIAL INFARCTION (★)",
-   "FAIL — Not obtaining RIGHT-SIDED LEADS (V4R) for right ventricular involvement — an inferior infarct mandates them, and the answer changes what you give (★)",
-   "DO — If the right ventricle is involved, NO NITRATES — give FLUIDS, because he is PRELOAD DEPENDENT and nitrates will drop his blood pressure; and keep him on continuous monitoring for arrhythmia and heart block, which inferior infarcts produce",
-   "FAIL — Delaying reperfusion to complete the history — resuscitation area, continuous monitoring, oxygen ONLY if his saturations are low, IV access, ASPIRIN 300 MG CHEWED, a second antiplatelet and anticoagulation per protocol, and analgesia; then REPERFUSION as the priority — primary PCI if it can be delivered promptly, otherwise THROMBOLYSIS after checking contraindications with urgent transfer, and from a country hospital with no catheter laboratory you thrombolyse THERE while simultaneously arranging MedSTAR retrieval and speaking to the receiving cardiologist during treatment (★)",
-   "SAY — Name the MISMATCH to the examiner rather than hoping nobody noticed: 'I want to acknowledge that the history was suggestive of pericarditis — positional pain relieved by leaning forward, after a viral illness — but the ECG overrides it; this is exactly why an ECG and troponin are part of the pericarditis workup, because infarction mimics pericarditis and the investigations exist to catch it, so I am treating this as an infarct'; read the ECG aloud in full first (rate, rhythm, axis, then the territorial elevation and the reciprocal change, then the two absent pericarditis features) before you commit (★)",
-   "FAIL — Reassuring the patient it is 'just inflammation' — tell him plainly and act: 'your heart tracing shows something more serious than the story first suggested; it shows that one of the arteries supplying your heart muscle is blocked — that's a heart attack; I know the pain didn't feel typical, but the tracing is clear, and we need to act now to open that artery, so I'm starting treatment immediately and calling the cardiology team'; and if the ECG really IS pericarditis — WIDESPREAD CONCAVE ST elevation across territories WITH PR depression and NO reciprocal change — you still send a troponin and arrange an echocardiogram to exclude infarction and an effusion, treating with a non-steroidal anti-inflammatory plus colchicine"
-  ]
+   "FAIL — Diagnosing pericarditis because the story fitted. **The tracing decides.**",
+   "FAIL — Waiting for a troponin result before treating ST elevation.",
+   "FAIL — Explaining away the ST elevation instead of naming the mismatch aloud.",
+   "FAIL — Nitrates in an inferior infarct with right ventricular involvement.",
+   "ASK — Fever, recent viral illness, better leaning forward? Note it, don't commit.",
+   "ASK — Right-sided leads (**V4R**) in every inferior infarct."
+  ],
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs",
+    "T 37.2 · HR 88 · BP 128/76 · RR 18 · SpO2 97%"
+   ],
+   [
+    "12-lead ECG, provided",
+    "Rate 88, sinus rhythm, normal axis. ST ELEVATION IN II, III AND aVF with RECIPROCAL ST DEPRESSION IN I AND aVL. No widespread concave elevation, NO PR DEPRESSION"
+   ],
+   [
+    "Right-sided leads (V4R), if you ask",
+    "Looking for right ventricular involvement — up to a THIRD of inferior infarcts. If involved he is PRELOAD DEPENDENT"
+   ],
+   [
+    "Cardiovascular examination",
+    "Look for a NEW MURMUR, BRADYCARDIA or HYPOTENSION (right ventricular involvement), a friction rub, and signs of heart failure"
+   ],
+   [
+    "Troponin",
+    "Substantially raised and rising in infarction; normal or mildly raised in pericarditis. Send it — but DO NOT WAIT FOR IT"
+   ],
+   [
+    "Variant — when the ECG really is pericarditis",
+    "Widespread CONCAVE elevation across territories, PR DEPRESSION, and NO reciprocal change"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-07",
   "cat": "med",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "Jenny Hollis, 58, presents to your general practice with palpitations.",
    "Vitals: T 36.7 · HR 150 · BP 124/78 · RR 16 · SpO2 98% · alert and comfortable.",
@@ -3858,114 +4007,210 @@
    "Interpret the ECG to the examiner",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "10 minutes. History 6:00 · ECG 1:00 · diagnosis 0:45 · differentials 1:30 · plan and close 0:45.",
   "back": {
-   "dx": "Supraventricular tachycardia — regular narrow-complex tachycardia at 150 with no visible P waves (the single deflection between QRSs is the T wave, not a P). Stable. Two planted findings you must earn: EIGHT cups of coffee a day (only the number if asked how much; 'a fair bit' if asked vaguely) and blood pressure once found raised and never followed up (only if asked about BP/PMH). Positional trigger: standing quickly or bending. She refuses to tap the rhythm — ask once, accept, move on. Agenda: neighbour died of a heart attack last year — 'is it a heart attack?' whatever you've said.",
+   "dx": [
+    "**Supraventricular tachycardia** — a **fast, regular, narrow-complex rhythm arising above the ventricles**, in a patient with a heavy stimulant load.",
+    "Strictly SVT is an umbrella term covering atrial fibrillation, flutter, AVNRT and AVRT. **For this strip the answer they want is 'supraventricular tachycardia'; AVNRT is also acceptable.** **'PSVT' simply means paroxysmal — do not get drawn into the distinction.**",
+    "To the patient in three parts: **name it → 'your heart is beating faster than usual, but still regularly' → 'because of abnormal electrical signalling: your heart has its own wiring that sets the pace, and here an extra circuit takes over and drives it much faster than it should.'**",
+    "Then the contributing factor you found: **eight cups of coffee a day is very likely provoking it.** And **the planted hidden finding — a blood pressure she was told was raised once and never followed up** — which needs **its own line in the plan**, not a dismissal because 'it's just an SVT'.",
+    "**Address the stated fear before she asks again**: **'this is not a heart attack. There's nothing on your tracing to suggest one, and you don't have the symptoms that go with it — no chest pain, no sweating, no nausea. It's a rhythm problem, and it's very treatable.'**",
+    "**Unstable** = hypotension, altered conscious state, ischaemic chest pain or ECG change, breathlessness at rest or pulmonary oedema, syncope, a rate that will not settle, **a broad-complex tachycardia**, or known structural or ischaemic disease → **senior help and synchronised DC cardioversion**, not a leisurely history.",
+    "Stable: **continuous monitoring, IV access, 12-lead ECG → vagal manoeuvres first.** The **modified Valsalva** — blow against resistance, then lie flat with the legs raised — is **more effective than the standard technique**. **Carotid sinus massage only with care, and never with a bruit or a previous stroke.**",
+    "**Adenosine if vagal manoeuvres fail: rapid intravenous push through a large proximal vein with an immediate saline flush, 6 mg then 12 mg.** Warn her it causes **brief, very unpleasant flushing and chest tightness that passes within seconds**. **Avoid in severe asthma.** VERIFY against local protocol, with senior involvement.",
+    "Long term: **reduce or stop the stimulants · teach her to perform the vagal manoeuvres herself · refer for electrophysiology assessment, since catheter ablation is curative for recurrent SVT.** And **recheck the blood pressure, arrange follow-up, and assess absolute cardiovascular risk**.",
+    "SA — **adenosine only where resuscitation facilities and monitoring are available**; discuss early with the receiving cardiology service; **MedSTAR 1300 13 12 33** if she is unstable or needs repeated cardioversion. **Electrophysiology and ablation are metropolitan** — referral means a trip to Adelaide, so raise travel, **PATS** and support when counselling a country patient."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals INCLUDING RHYTHM ('you don't know that yet' — accept); state stable; open question; acknowledge"
+     "To the examiner: **'before I begin, may I have her vital signs — blood pressure, pulse rate, and the rhythm if it's available, respiratory rate, oxygen saturation and temperature?'** If told you don't have the rhythm yet, **accept it without fluster** — the mark is for asking, and the ECG is coming."
     ],
     [
-     "0:30",
-     "BOX 1: what do you mean — fast, irregular, missing a beat? Tap it out? (refusal → move on)"
+     "0:20",
+     "WIPE, open question, acknowledge: **'I understand how concerning this must be. Let me ask you some questions and look at your heart tracing, and we'll find the cause together. Is that all right?'**"
     ],
     [
-     "1:00",
-     "BOX 2: onset, constant vs episodic, how long and how it stops, first time, worsening"
+     "0:45",
+     "**Box 1 — describe it**: **can you describe what you mean by palpitations — is your heart beating fast, does it feel irregular, or does it feel like it's missing or skipping a beat? · could you tap out on the desk what the rhythm feels like?** **Expect the refusal. Ask once, accept it, move on** — role-players have declined to tap since 2019."
+    ],
+    [
+     "1:15",
+     "**Box 2 — timing and course**: **when did it start · is it there all the time or does it come and go · how long does an episode last, and how does it stop · is this the first time, or have you had episodes before · is it getting worse or more frequent?**"
     ],
     [
      "1:45",
-     "BOX 3: better/worse; standing/bending/lying; exertion vs rest; situation"
+     "**Box 3 — triggers**: **is there anything that makes it better or worse · do you notice it more when you stand up, bend forward or lie down · is it worse on exertion, and do you get it at rest as well · is there a particular place or situation that brings it on?** The positional trigger is classic for SVT; **exertion-only points to ischaemia and changes the case.**"
     ],
     [
-     "2:30",
-     "GROUP 1 full CV block: chest pain/SOB/nausea/sweating; dizzy/syncope; oedema/orthopnoea/pillows; murmur/valve/heart attack; FHx; BP/sugar/lipids (→ untreated BP); smoking/alcohol; fever/viral illness"
+     "2:15",
+     "**Group 1 — the full cardiovascular block, five sub-blocks, not one**: **any chest pain with the palpitations, any breathlessness, nausea or sweating · do you feel dizzy, have you ever fainted or blacked out · any swelling in your legs, any breathlessness lying flat, how many pillows · ever been told you have a murmur or valve problem, or had a heart attack · any family history of heart attack or stroke, any high blood pressure, high blood sugar or cholesterol, do you smoke, how much alcohol · any fever or recent flu-like illness?**"
     ],
     [
-     "4:00",
-     "Groups 2–4: cough/wheeze; calves/travel/clots; heat intolerance/weight loss/diarrhoea/tremor; STIMULANTS QUANTIFIED — cups per day; drugs; puffers; nasal sprays; takeaway/MSG"
+     "3:30",
+     "Groups 2 to 4: **any cough, noisy breathing or wheeze · any swelling or pain in your calves, recent long travel, previous clots in you or the family · any weather preference, do you find hot weather hard to tolerate, any weight loss, diarrhoea or tremor · how much coffee, tea or energy drink in a day · any recreational drugs · any asthma puffers or nasal decongestant sprays · any Chinese takeaway or very salty food before it started?**"
     ],
     [
-     "5:00",
-     "Groups 5–8: stress/mood/fear of dying; tiredness/exertional SOB; headache/sweats/tremor; missed meals/diabetes drugs; LMP/flushes; allergies; concerns"
+     "4:45",
+     "Groups 5 to 8, compressed to one question each if the clock is tight — **but never at the expense of the cardiovascular block or the stimulant count**: **any stress at home or work · how has your mood been · during an episode did you ever feel you were going to die · unusually tired, or more breathless on exertion · any headaches, sweating episodes or tremor · did you miss any meals before it started, any diabetes treatment · when was your last period, and any hot flushes?**"
+    ],
+    [
+     "5:45",
+     "Close the history — almost everything is already done: **any allergies · any other medical conditions or medications I haven't asked about · and is there anything in particular you're worried about?**"
     ],
     [
      "6:00",
-     "ECG seven steps → 'regular narrow-complex tachycardia at 150, no visible P waves — SVT'"
+     "ECG to the examiner, **seven steps aloud in order**, landing on **one clean impression**. If your nerve goes, **describe rather than label**."
     ],
     [
      "7:00",
-     "Name it, define it plainly, give the reason (coffee); address the heart-attack fear with reasons; differentials BY SYSTEM; plan incl. BP follow-up and referral; safety-net"
+     "**Name it, define it, explain it** in plain words — then **address the heart-attack fear with your reasons, before she raises it again**."
+    ],
+    [
+     "7:45",
+     "**Differentials as the causes of palpitations, by system** — cardiovascular, respiratory, thyroid, stimulants, psychogenic, anaemia, phaeochromocytoma, hypoglycaemia — with **the negatives said out loud** so the examiner hears the sweep. **Never a catalogue of arrhythmias.**"
+    ],
+    [
+     "9:15",
+     "Plan and close: **monitoring and IV access · vagal manoeuvres, then adenosine · bloods including thyroid function · cut the coffee down substantially · recheck and follow up the blood pressure · electrophysiology referral given recurrent episodes.** Safety net: **chest pain, feeling faint, blacking out, or breathlessness with it → come back straight away.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "May I have her vital signs — BP, pulse rate and the rhythm if available, RR, sats, temperature?",
-    "Can you describe what you mean by palpitations — fast, irregular, or missing a beat? Could you tap it out on the desk?",
-    "When did it start? All the time or comes and goes? How long, how does it stop? First time? Getting more frequent?",
-    "Do you notice it more when you stand up, bend forward or lie down? ★ Worse on exertion — and at rest as well? ★ Any particular place or situation?",
-    "Chest pain, SOB, nausea, sweating? Dizzy, ever fainted? Leg swelling, breathless lying flat, how many pillows? Murmur, valve, heart attack? Family heart attacks/strokes? High BP, sugar, fats? ★ Smoke, alcohol? Fever or flu-like illness?",
-    "Cough, wheeze? Calf swelling/pain, long travel, previous clots?",
-    "Weather preference — hot weather hard to tolerate? Weight loss? Diarrhoea, tremor?",
-    "How many cups of coffee, tea or energy drink a day? ★ Recreational drugs? Asthma puffers or nasal decongestant sprays? Salty takeaway before it started?",
-    "Stress at home/work? Mood? During an episode, did you ever feel you were going to die?",
-    "Unusually tired or breathless on exertion? Headaches, sweating episodes, hand tremor? Missed meals, diabetes treatment? Last period, hot flushes?",
-    "Allergies? Other conditions or medications? Anything in particular you're worried about?"
-   ],
    "pefe": [
-    "ECG seven steps: rate (two large squares → 150) → regular? (equal R-R) → P waves? (only one deflection between QRSs = T wave; P buried in QRS) → PR not measurable → QRS ~1.5 squares, narrow → ST normal → impression",
-    "If your nerve goes: DESCRIBE — 'a regular narrow-complex tachycardia at 150 without visible P waves' earns most of the mark",
-    "Bloods: FBC, electrolytes with Mg and Ca, TFTs, glucose ± troponin ± metanephrines",
-    "Stable: modified Valsalva → adenosine 6 mg rapid push with flush, then 12 mg, monitored, per protocol with senior — VERIFY; long term: cut stimulants, teach vagal manoeuvres, EP referral for ablation",
-    "Unstable (hypotension, ischaemic pain, heart failure, altered conscious state): stop the history — resus, monitoring, O2 if hypoxic, IV, senior help, synchronised DC cardioversion with sedation",
-    "If your nerve goes — DESCRIBE — 'a regular narrow-complex tachycardia at 150 without visible P waves' earns most of the mark",
-    "Stable — Modified Valsalva → adenosine 6 mg rapid push with flush, then 12 mg, monitored, per protocol with senior — VERIFY; long term: cut stimulants, teach vagal manoeuvres, EP referral for ablation"
+    "**Ask for the rhythm in the vital signs.** The mark is for asking, even when the examiner withholds it.",
+    "**12-lead ECG read in seven steps: rate → regular? → P waves? → PR interval → QRS duration → ST segments → impression.**",
+    "**The rule at step 3: a P wave and a T wave must both be present and separate.** If there is only one deflection between QRS complexes at 150, **it is the T wave** and there is no P — the commonest error on this strip.",
+    "If you are unsure of the rhythm name, **describe what you see**: 'a regular narrow-complex tachycardia at 150 without visible P waves' earns most of the mark before you attach any label.",
+    "**ECG during symptoms wherever possible** — the single most useful test. **Holter or event monitor** for paroxysmal symptoms with a normal resting tracing.",
+    "Bloods: **FBC · electrolytes including magnesium and calcium · thyroid function in every palpitations case · glucose**.",
+    "**Echocardiogram** if there is a murmur, a structural concern or an abnormal ECG.",
+    "**Troponin only if ischaemia is suspected. Metanephrines only if the phaeochromocytoma triad is present. Exercise testing where the symptoms are exertional.**"
    ],
-   "fails": [
-    "Not asking for the rhythm with the vitals",
-    "Being derailed by the refusal to tap",
-    "Skipping exertion vs rest",
-    "Skipping the full CV block / missing the untreated hypertension",
-    "Accepting 'a bit' of coffee — not quantifying cups per day ★",
-    "Pointing at the T wave, calling it a P, reporting sinus tachycardia ★",
-    "Differentials given as a list of other arrhythmias — fail ★ (they are causes of palpitations, by system)",
-    "Not addressing 'is it a heart attack?' with reasons",
-    "Never returning to the blood pressure in the plan ★"
-   ],
-   "numbers": [
-    "Three exploring boxes: describe ± tap · onset/episodic/first time/worsening · position/exertion vs rest/situation",
-    "Eight groups: CV (ischaemia, HF, valvular, cardiomyopathy, peri/myocarditis, risk factors) · respiratory (PE, COPD) · thyroid · stimulants · psychogenic · anaemia · phaeochromocytoma · hypoglycaemia; plus menopause and fever",
-    "Stimulant list: coffee, tea, energy drinks, alcohol, nicotine, illicit stimulants, salbutamol puffers, nasal decongestants, MSG",
-    "Phaeo triad: headache, sweating, palpitations",
-    "Broad-complex tachycardia = VT until proven otherwise",
-    "'SVT or PSVT?' — paroxysmal describes the episodic pattern; report SVT; AVNRT commonest mechanism",
-    "'Do I have to give up coffee completely?' — cut down substantially; 8 cups may be enough on its own",
-    "Variant — ECG is AF instead: irregularly irregular, no P, fibrillatory baseline, ~130 → plan changes: rate/rhythm control, echo, TFTs, stroke risk assessment (AF carries stroke risk SVT does not)",
-    "Variant — situational only ('when I present at work') → social anxiety, but complete the organic screen and ECG first",
-    "Safety-net: chest pain, faint/black out, breathless → back straight away"
+   "ddx": [
+    [
+     "**Supraventricular tachycardia**",
+     "Abrupt fast regular palpitations, **often positional onset**, episodes that start and stop suddenly",
+     "The positional trigger; the stimulant load",
+     "**ECG is diagnostic.** Vagal manoeuvres, then adenosine; cardioversion if unstable — same day"
+    ],
+    [
+     "Atrial fibrillation or flutter",
+     "Irregularly irregular pulse; alcohol, hypertension, thyroid disease, age",
+     "ECG: **irregular, absent P waves with a fibrillatory baseline**",
+     "ECG; rate versus rhythm control **and a stroke risk assessment** — same day"
+    ],
+    [
+     "**Ischaemic heart disease**",
+     "**Palpitations on exertion, absent at rest**, with chest pain, breathlessness, sweating; risk factors",
+     "The exertional pattern, ECG changes, troponin",
+     "ECG, troponin, functional testing; treat the risk factors — urgent"
+    ],
+    [
+     "Heart failure · valvular disease · cardiomyopathy",
+     "Orthopnoea, oedema, murmur, known valve disease, family history of sudden death",
+     "Pillows, leg swelling, murmur on examination",
+     "**Echocardiogram** — this is the substrate that causes the arrhythmia"
+    ],
+    [
+     "Pericarditis or myocarditis",
+     "Fever, recent viral illness, positional chest pain",
+     "**The only place fever gets asked** in this history",
+     "ECG, troponin, echocardiogram — same day"
+    ],
+    [
+     "Pulmonary embolism",
+     "Tachycardia, breathlessness, pleuritic pain, calf swelling, immobility",
+     "Leg symptoms, long travel, saturations",
+     "**Wells score, CTPA** — urgent"
+    ],
+    [
+     "COPD",
+     "Smoker, chronic cough, wheeze, breathlessness",
+     "Cough, noisy breathing, pack-years",
+     "Spirometry"
+    ],
+    [
+     "**Hyperthyroidism**",
+     "Heat intolerance, weight loss, diarrhoea, tremor, anxiety; may also cause atrial fibrillation",
+     "**Weather preference, weight, goitre, tremor, lid lag**",
+     "**Thyroid function tests in every palpitations case** — AMC favours this differential heavily"
+    ],
+    [
+     "**Stimulants and drugs**",
+     "Caffeine, energy drinks, alcohol, nicotine, illicit stimulants, salbutamol, nasal decongestants, MSG",
+     "**Quantify each; ask about puffers and sprays by name**",
+     "History; reduce and reassess. **There is almost always at least one positive**"
+    ],
+    [
+     "Panic attack · anxiety · phobia",
+     "Situational trigger, **fear of dying**, tingling, derealisation",
+     "Stress, mood, situational trigger, the fear-of-dying question",
+     "A diagnosis made **after organic exclusion**"
+    ],
+    [
+     "Anaemia",
+     "Tiredness, exertional breathlessness, pallor",
+     "Fatigue, pallor, flow murmur",
+     "Full blood count and iron studies"
+    ],
+    [
+     "Phaeochromocytoma",
+     "**Headache, sweating and palpitations in episodes**, with hypertension",
+     "The triad, plus tremor and pallor during episodes",
+     "**Plasma or urinary metanephrines** if suspected"
+    ],
+    [
+     "Hypoglycaemia",
+     "Missed meals, diabetes treatment, relief with eating",
+     "Meal timing, sweating, tremor, confusion",
+     "**Blood glucose during an episode** — same day"
+    ],
+    [
+     "Menopause",
+     "Woman around 45–55, hot flushes, irregular or ceased periods",
+     "Menstrual history, flushes, sweats",
+     "Clinical diagnosis — **exclude thyroid disease first**"
+    ]
    ]
   },
   "source": "Palpitations_SVT_2_Case_Tasks_Script_Notability.pdf (Version A)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Palpitations_SVT_2_Case_Tasks_Script_Notability.pdf",
   "findings": [
    [
-    "ECG seven steps",
-    "Rate (two large squares → 150) → regular? (equal R-R) → P waves? (only one deflection between QRSs = T wave; P buried in QRS) → PR not measurable → QRS ~1.5 squares, narrow → ST normal → impression"
+    "Vital signs, including the rhythm",
+    "T 36.7 · HR 150 · BP 124/78 · RR 16 · SpO2 98%. Alert and comfortable. 'You don't have the rhythm yet' — accept it without fluster; THE MARK IS FOR ASKING"
    ],
    [
-    "Bloods",
-    "FBC, electrolytes with Mg and Ca, TFTs, glucose ± troponin ± metanephrines"
+    "12-lead ECG, handed to you",
+    "Rate 150 · REGULAR R-R intervals · NO VISIBLE P WAVES — the deflection after each QRS is the T WAVE · PR not measurable · NARROW QRS · ST segments normal"
+   ],
+   [
+    "Examiner challenge — SVT or PSVT?",
+    "Paroxysmal just describes the episodic pattern. Report it as a supraventricular tachycardia; AVNRT is the commonest mechanism"
+   ],
+   [
+    "Examiner challenge — what if the QRS were broad?",
+    "Treat it as VENTRICULAR TACHYCARDIA until proven otherwise, and manage accordingly"
+   ],
+   [
+    "Examiner challenge — what if she becomes hypotensive?",
+    "That makes her UNSTABLE — senior help and synchronised cardioversion rather than drug therapy"
+   ],
+   [
+    "Bloods, if you request them",
+    "FBC · electrolytes with magnesium and calcium · THYROID FUNCTION · glucose. Troponin only if ischaemia is suspected; metanephrines only with the phaeochromocytoma triad"
+   ],
+   [
+    "Unstable variant",
+    "BP 82/50 · clammy · chest pain · drowsy · rate 190 — stop taking a history"
    ]
   ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Not asking for the rhythm with the vitals — the mark is for asking, even if the examiner says 'you don't know that yet'",
-   "FAIL — Being derailed by the refusal to tap — ask once, accept it, move on; role-players have declined since 2019",
-   "FAIL — Skipping the full cardiovascular block — it holds the planted finding, the blood pressure that was 'up once and never followed up', which must reappear in the plan",
-   "FAIL — Accepting 'a fair bit' of coffee — quantify cups per day; the stimulant is always positive and it is eight cups here",
-   "FAIL — Pointing at the T wave, calling it a P, and reporting sinus tachycardia — at 150 with one deflection between complexes, it is the T",
-   "FAIL — Answering the differentials with a list of other arrhythmias — the role-player marks it a fail; give causes of palpitations by system"
+   "FAIL — Answering the differentials task with a list of **other arrhythmias**.",
+   "FAIL — Calling the T wave a P wave and reporting sinus tachycardia.",
+   "FAIL — Taking a leisurely six-minute history from an unstable patient.",
+   "FAIL — Hearing the untreated blood pressure and never putting it in the plan.",
+   "ASK — How many cups of coffee, tea or energy drink a day? **Quantify it.**",
+   "ASK — Heat intolerance, weight loss, diarrhoea, tremor. The thyroid three, always."
   ],
   "versions": {
    "doorStem": "General practice. A patient presents with palpitations — the online exam rotates the age, the sex and the wording ('palpitations', 'racing heart', 'awareness of my heartbeat', 'my heart is skipping'). Tasks are IDENTICAL across versions: focused history (~6 min) → interpret the ECG to the examiner → explain diagnosis and differentials to the patient.",
@@ -3983,13 +4228,13 @@
    ],
    "note": "Same ECG and same diagnosis in both; what changes is which hidden point you are being marked on. The rule carrying every version: when asked for differentials, give the CAUSES of palpitations by system (CVS · RS · endocrine · stimulants · psychogenic · anaemia · phaeochromocytoma · hypoglycaemia, plus menopause and fever) — NOT a list of other arrhythmias. That is a starred automatic fail. Teaching-only scenarios in the source (thyroid version, situational/panic version, exertional IHD version, unstable version) are practice cards, not recalls.",
    "thisCard": "A"
-  }
+  },
+  "v2": true
  },
  {
   "id": "MED-08",
   "cat": "med",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "Jack Ferris, 27, presents to your general practice complaining of awareness of his heartbeat, worried he is having a heart attack.",
    "History yields two to three coffees a day, a pack of cigarettes a day, five glasses of wine most nights. Same SVT on ECG (rate 150, regular, no visible P waves, narrow QRS)."
@@ -3999,72 +4244,177 @@
    "Interpret the ECG to the examiner",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "10 minutes. Same shape as MED-07. The stated fear is named and answered BEFORE the differentials.",
   "back": {
-   "dx": "Supraventricular tachycardia in a 27-year-old, driven by a stimulant combination — coffee, a pack of cigarettes a day, five glasses of wine most nights. The general rule this version teaches: whenever the stem states a concern about a specific condition (heart attack here; brain tumour in a headache case; cancer in a weight-loss case) you name it and address it with reasons before the patient asks again — never a bare reassurance.",
+   "dx": [
+    "**Supraventricular tachycardia — the same strip as version A**, in a 27-year-old carrying **the full stimulant package: two to three coffees a day, a pack of cigarettes a day, and five glasses of wine most nights**.",
+    "**The extra requirement in this version: address the stated fear before you give differentials, and give reasons rather than a bare reassurance.** **'Jack, I know you came in today worried that you were having a heart attack. I don't believe you are — and I'll tell you why.'**",
+    "The reasons: **'your heart tracing doesn't show any of the changes we see with a heart attack, and you don't have the symptoms that go with one — no chest pain, no sweating, no nausea. What you do have is a fast heart rhythm, which is a different problem and a treatable one.'**",
+    "**The general rule this version teaches:** whenever the stem states a concern about a specific condition — a heart attack here, a brain tumour in a headache case, cancer in a weight-loss case — **you name it and address it before the patient asks again**.",
+    "Adapt Box 1 to the wording: **'can you describe what you mean by being aware of your heartbeat? Do you simply feel it, or does it feel like it's beating faster, or irregular?'** The stem rotates age, sex and wording every year; **the structure never changes — three boxes, eight groups, seven steps**.",
+    "The stimulant conversation, all three together: **'each of those alone can set off a fast rhythm; together they make it much more likely. I'd like to work through reducing all three with you, and I can help with the smoking and the drinking specifically if you'd like.'**",
+    "Name it, define it, explain it: **supraventricular tachycardia · your heart is beating faster than usual but still regularly · because an extra electrical circuit takes over and drives it faster than it should.**",
+    "Stable management: **continuous monitoring, IV access, 12-lead ECG → vagal manoeuvres, the modified Valsalva → adenosine 6 mg then 12 mg by rapid push through a large proximal vein with an immediate saline flush**, warning him of **brief, very unpleasant flushing and chest tightness that passes in seconds**. **Avoid in severe asthma.** VERIFY against local protocol.",
+    "**Unstable — hypotension, ischaemic chest pain, heart failure, altered conscious state → stop taking a history: senior help and synchronised DC cardioversion with sedation**, rather than attempting drug therapy first. Long term: **cut the stimulants, teach him the vagal manoeuvres, and refer for electrophysiology — ablation is curative**.",
+    "SA — **Quitline 13 7848** for a pack a day, plus a brief intervention for the alcohol; **adenosine only where resuscitation facilities and monitoring exist**; ablation services are metropolitan, so raise travel and **PATS**; **MedSTAR 1300 13 12 33** if he is unstable."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals incl. rhythm; open; acknowledge the fear early"
+     "To the examiner: **'may I have his vital signs — blood pressure, pulse rate, and the rhythm if it's available, respiratory rate, oxygen saturation and temperature?'** State stability out loud before you start."
     ],
     [
-     "0:30",
-     "BOX 1 adapted: 'what do you mean by being aware of your heartbeat — do you simply feel it, or is it faster, or irregular?' Then boxes 2–3"
+     "0:20",
+     "WIPE, open question, acknowledge the fear he has already declared — but **do not resolve it yet; you need the tracing first**."
     ],
     [
-     "2:30",
-     "Eight groups as MED-07 — stimulants QUANTIFIED: coffees/day, cigarettes/day, standard drinks/night; drugs, puffers, sprays"
+     "0:45",
+     "**Box 1, adapted to his wording**: **what do you mean by being aware of your heartbeat — do you simply feel it, or does it feel like it's beating faster, or irregular? · could you tap out what it feels like?** Ask once, accept a refusal, move on."
+    ],
+    [
+     "1:15",
+     "**Box 2 — timing**: **when did it start · constant or does it come and go · how long does an episode last and how does it stop · first time, or episodes before · getting worse or more frequent?**"
+    ],
+    [
+     "1:45",
+     "**Box 3 — triggers**: **anything make it better or worse · more when you stand up, bend forward or lie down · worse on exertion, and do you get it at rest as well · any particular place or situation?** A situational-only trigger would redirect the whole case toward anxiety."
+    ],
+    [
+     "2:15",
+     "**Group 1 — the full cardiovascular block**: **chest pain with it, breathlessness, nausea or sweating · dizziness, ever fainted or blacked out · leg swelling, breathless lying flat, how many pillows · ever told you have a murmur, valve problem or heart condition · family history of heart attack or stroke, blood pressure, blood sugar, cholesterol · any fever or recent flu-like illness?**"
+    ],
+    [
+     "3:30",
+     "Groups 2 to 4, and **this is where his case lives**: **cough or wheeze · calf swelling or pain, long travel, previous clots · weather preference, heat tolerance, weight loss, diarrhoea, tremor · how many coffees, teas or energy drinks a day · how many cigarettes · how much alcohol, and how many nights a week · recreational drugs · asthma puffers or nasal decongestant sprays?**"
+    ],
+    [
+     "4:45",
+     "Groups 5 to 8: **stress at home, work or university · how has your mood been · during an episode did you ever feel you were going to die · unusually tired or more breathless on exertion · headaches, sweating episodes, tremor · missed meals, diabetes treatment?**"
+    ],
+    [
+     "5:45",
+     "Close: **allergies, other conditions or medications, and 'is there anything in particular you're worried about?'** — he will name the heart attack again if you have not already dealt with it."
     ],
     [
      "6:00",
-     "ECG seven steps → SVT"
+     "ECG in **seven steps aloud**, ending in one impression: **a regular, narrow-complex tachycardia at 150 with no visible P waves — a supraventricular tachycardia.**"
     ],
     [
      "7:00",
-     "THE EXTRA STEP before differentials: 'I know you came in worried you were having a heart attack. I don't believe you are: the tracing doesn't show the changes we see with a heart attack, and you don't have the symptoms — no chest pain, sweating, nausea. What you have is a fast heart rhythm — different, and very treatable.'"
+     "**The fear first, with reasons, before anything else** — then name it, define it, explain it in plain words."
     ],
     [
      "7:45",
-     "Differentials by system; the stimulant conversation — each alone can set it off, together much more likely; offer help with smoking and drinking; plan, referral, safety-net"
+     "**Differentials as the causes of palpitations, by system**, with the negatives said out loud. **Never a list of arrhythmias.**"
+    ],
+    [
+     "8:45",
+     "**The stimulant conversation**, all three named together and reduction offered as help rather than instruction — **Quitline for the smoking, and a specific offer on the drinking**."
+    ],
+    [
+     "9:15",
+     "Plan and close: **monitoring and IV access · vagal manoeuvres taught to him · adenosine if they fail · bloods including thyroid function · electrophysiology referral.** Safety net: **chest pain, feeling faint, blacking out, or breathlessness with it → come back straight away.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "What do you mean by being aware of your heartbeat — do you simply feel it, is it faster, or irregular?",
-    "How many coffees a day? How many cigarettes a day? How many glasses of wine, how many nights?",
-    "Any recreational drugs, puffers or nasal sprays?",
-    "During an episode, did you ever feel you were going to die? Any particular situation?",
-    "What are you most worried about?"
-   ],
    "pefe": [
-    "ECG as MED-07: regular narrow-complex tachycardia at 150, no visible P waves — SVT",
-    "Bloods: FBC, electrolytes with Mg/Ca, TFTs, glucose",
-    "Vagal manoeuvres taught; adenosine if needed per protocol; EP referral if recurrent",
-    "Offer Quitline 13 7848 and alcohol reduction support"
+    "**Ask for the rhythm in the vital signs**, and state whether he is stable before taking any history.",
+    "**12-lead ECG in seven steps: rate → regular? → P waves? → PR interval → QRS duration → ST segments → impression.**",
+    "**A P wave and a T wave must both be present and separate.** One deflection between complexes at 150 **is the T wave** — do not report sinus tachycardia.",
+    "**Describe rather than label if unsure**: 'a regular narrow-complex tachycardia at 150 without visible P waves.'",
+    "Bloods: **FBC · electrolytes including magnesium and calcium · thyroid function · glucose**. **Troponin only if ischaemia is suspected**; metanephrines only with the phaeochromocytoma triad.",
+    "**Holter or event monitor** where the episodes are paroxysmal and the resting tracing is normal.",
+    "**Echocardiogram** for a murmur, a structural concern, or an abnormal ECG.",
+    "If the strip were **atrial fibrillation** instead, the workup adds **an echocardiogram, thyroid function and a stroke risk assessment** — the decision SVT does not require."
    ],
-   "fails": [
-    "Not naming and answering the heart-attack fear with reasons before the differentials ★",
-    "Bare reassurance ('you're fine') without the ECG and symptom reasons",
-    "Not quantifying all three stimulants",
-    "Differentials as a list of arrhythmias",
-    "Lecturing about the smoking and alcohol instead of offering to work through reducing all three"
-   ],
-   "numbers": [
-    "Coffee 2–3/day · cigarettes 20/day · wine 5 glasses most nights — the combination is the cause",
-    "Same eight differential groups; same seven ECG steps",
-    "Unstable variant (BP 82/50, clammy, chest pain, drowsy, rate 190): stop history, synchronised cardioversion",
-    "Quitline 13 7848 · Alcohol and Drug Information Service SA 1300 13 1340 — VERIFY · TIS 131 450"
+   "ddx": [
+    [
+     "**Supraventricular tachycardia**",
+     "Abrupt fast regular palpitations, often positional onset, episodes starting and stopping suddenly",
+     "The positional trigger; **the stimulant load, which is the whole story here**",
+     "**ECG is diagnostic.** Vagal manoeuvres, then adenosine; cardioversion if unstable — same day"
+    ],
+    [
+     "Atrial fibrillation or flutter",
+     "Irregularly irregular pulse; **alcohol**, hypertension, thyroid disease, age",
+     "ECG: irregular, absent P waves with a fibrillatory baseline",
+     "ECG; rate versus rhythm control **and a stroke risk assessment** — same day"
+    ],
+    [
+     "Ischaemic heart disease",
+     "Palpitations **on exertion, absent at rest**, with chest pain, breathlessness, sweating; risk factors",
+     "The exertional pattern, ECG changes, troponin",
+     "ECG, troponin, functional testing; treat the risk factors — urgent"
+    ],
+    [
+     "Heart failure · valvular disease · cardiomyopathy",
+     "Orthopnoea, oedema, murmur, known valve disease, family history of sudden death",
+     "Pillows, leg swelling, murmur",
+     "**Echocardiogram** — the substrate behind the arrhythmia"
+    ],
+    [
+     "Pericarditis or myocarditis",
+     "Fever, recent viral illness, positional chest pain",
+     "The only place fever gets asked",
+     "ECG, troponin, echocardiogram — same day"
+    ],
+    [
+     "Pulmonary embolism",
+     "Tachycardia, breathlessness, pleuritic pain, calf swelling, immobility",
+     "Leg symptoms, long travel, saturations",
+     "**Wells score, CTPA** — urgent"
+    ],
+    [
+     "COPD",
+     "**Smoker — a pack a day here**, chronic cough, wheeze, breathlessness",
+     "Cough, noisy breathing, pack-years",
+     "Spirometry"
+    ],
+    [
+     "Hyperthyroidism",
+     "Heat intolerance, weight loss, diarrhoea, tremor, anxiety",
+     "Weather preference, weight, goitre, tremor, lid lag",
+     "**Thyroid function tests in every palpitations case**"
+    ],
+    [
+     "**Stimulants and drugs**",
+     "**Caffeine, nicotine and alcohol together — the full package in this version**; also energy drinks, illicit stimulants, salbutamol, nasal decongestants, MSG",
+     "**Quantify each by number per day; ask about puffers and sprays by name**",
+     "History; **reduce all three and reassess** — there is almost always at least one positive"
+    ],
+    [
+     "Panic attack · anxiety · social phobia",
+     "**Situational trigger**, fear of dying, tingling, derealisation",
+     "Stress, mood, the situational question, the fear-of-dying question",
+     "Diagnosis **after organic exclusion** — but complete the screen and check the tracing first"
+    ],
+    [
+     "Anaemia",
+     "Tiredness, exertional breathlessness, pallor",
+     "Fatigue, pallor, flow murmur",
+     "Full blood count and iron studies"
+    ],
+    [
+     "Phaeochromocytoma",
+     "Headache, sweating and palpitations **in episodes**, with hypertension",
+     "The triad, plus tremor and pallor during episodes",
+     "**Plasma or urinary metanephrines** if suspected"
+    ],
+    [
+     "Hypoglycaemia",
+     "Missed meals, diabetes treatment, relief with eating",
+     "Meal timing, sweating, tremor, confusion",
+     "**Blood glucose during an episode** — same day"
+    ]
    ]
   },
   "source": "Palpitations_SVT_2_Case_Tasks_Script_Notability.pdf (Version B)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Palpitations_SVT_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Not naming and answering the heart-attack fear with reasons before the differentials",
-   "FAIL — Bare reassurance ('you're fine') without the ECG and symptom reasons",
-   "FAIL — Not quantifying all three stimulants",
-   "FAIL — Differentials as a list of arrhythmias",
-   "FAIL — Lecturing about the smoking and alcohol instead of offering to work through reducing all three",
-   "DO — What do you mean by being aware of your heartbeat — do you simply feel it, is it faster, or irregular?"
+   "FAIL — Not addressing the stated heart-attack fear **before** the differentials.",
+   "FAIL — Answering the differentials task with a list of **other arrhythmias**.",
+   "FAIL — Calling the T wave a P wave and reporting sinus tachycardia.",
+   "FAIL — Accepting 'a fair bit' for the stimulants instead of quantifying each.",
+   "ASK — What do you mean by awareness of your heartbeat: felt, faster, or irregular?",
+   "ASK — Coffee, cigarettes and alcohol, each **by number per day**."
   ],
   "versions": {
    "doorStem": "General practice. A patient presents with palpitations — the online exam rotates the age, the sex and the wording ('palpitations', 'racing heart', 'awareness of my heartbeat', 'my heart is skipping'). Tasks are IDENTICAL across versions: focused history (~6 min) → interpret the ECG to the examiner → explain diagnosis and differentials to the patient.",
@@ -4082,7 +4432,39 @@
    ],
    "note": "Same ECG and same diagnosis in both; what changes is which hidden point you are being marked on. The rule carrying every version: when asked for differentials, give the CAUSES of palpitations by system (CVS · RS · endocrine · stimulants · psychogenic · anaemia · phaeochromocytoma · hypoglycaemia, plus menopause and fever) — NOT a list of other arrhythmias. That is a starred automatic fail. Teaching-only scenarios in the source (thyroid version, situational/panic version, exertional IHD version, unstable version) are practice cards, not recalls.",
    "thisCard": "B"
-  }
+  },
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs, including the rhythm",
+    "Tachycardic, haemodynamically stable. Ask for BP, pulse rate AND THE RHYTHM, RR, saturations and temperature by name — the mark is for asking"
+   ],
+   [
+    "12-lead ECG, handed to you",
+    "THE SAME STRIP AS VERSION A — rate 150 · REGULAR · NO VISIBLE P WAVES (that deflection is the T WAVE) · PR not measurable · NARROW QRS · ST segments normal"
+   ],
+   [
+    "What the history yields in this version",
+    "The FULL STIMULANT PACKAGE — two to three coffees a day, A PACK OF CIGARETTES A DAY, FIVE GLASSES OF WINE MOST NIGHTS"
+   ],
+   [
+    "Examiner challenge — which drug, what dose?",
+    "Adenosine by rapid IV push with an immediate flush, 6 mg then 12 mg, in a MONITORED setting, following local protocol with senior involvement"
+   ],
+   [
+    "Variant — the ECG is atrial fibrillation instead",
+    "Rate about 130 · IRREGULARLY IRREGULAR · no discernible P waves, fibrillatory baseline · narrow QRS. The plan then adds a STROKE RISK ASSESSMENT, which SVT does not need"
+   ],
+   [
+    "Variant — the situational trigger",
+    "'It only happens when I have to present at work' — with sweating and shakiness, that points to SOCIAL ANXIETY rather than a primary rhythm disturbance"
+   ],
+   [
+    "Unstable variant",
+    "BP 82/50 · clammy · chest pain · drowsy · rate 190 — stop the history, senior help, synchronised cardioversion with sedation"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-09",
