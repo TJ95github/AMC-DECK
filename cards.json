@@ -25506,9 +25506,8 @@
  {
   "id": "MED-134",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version A of the RUQ pain set (B = MED-135). Not in pain now; examination normal — and a normal examination between attacks is exactly what you'd expect. Version D (examination-first, no history permitted) and Version E (hard nodular non-tender liver with weight loss) are folded in.",
   "stem": [
    "Nadia Haddad, 42, presents with months of episodic right upper abdominal pain after fatty meals, radiating to the right shoulder blade, settling by itself. She is well today.",
    "Version D: 40-year-old woman with RUQ pain — no history permitted; ask for examination findings, then investigations, then explain the diagnosis with possible causes, then immediate management."
@@ -25518,98 +25517,196 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis, differentials and management"
   ],
-  "time": "8 min. Stability (normal) · intro, open · ★ biliary specifics: 'does it come on after fatty or rich food, and how long after?' (1–2 h after curry/fish and chips) · 'how long does an episode last?' (a couple of hours, then goes) · 'travel to your right shoulder blade or the tip of the shoulder?' (yes) · 'had exactly this before?' (~6 times over months) · 'constant now, or comes and goes?' (fine now) · /10 during attacks, nausea/vomiting with attacks · ★ four jaundice questions: yellow eyes/skin, dark urine, pale stools, itching (no) · ★ infection: fevers, ★ rigors, confusion (no) · liver risk: alcohol, transfusions/tattoos/IVDU/travel, paracetamol/herbal, FHx liver · GI red flags: weight loss (intent), appetite, dysphagia, haematemesis, melaena, lumps · ★ chest: cough, phlegm, SOB, pleuritic pain (right lower lobe pneumonia mimics) · risk factors: the 4 Fs, OCP, pregnancy, rapid weight loss · SADMA, ★ LMP/pregnancy · examiner every step named incl scleral icterus, Murphy's sign, liver edge character, chest bases, DRE stool colour, dipstick, βhCG → all normal · dx biliary colic with reasons · explain: one picture, three diseases · DDx · plan: USS + LFTs/FBE/lipase, low-fat diet, analgesia for attacks, ★ safety-net for cholecystitis/cholangitis, surgical referral for elective laparoscopic cholecystectomy; answer 'dissolve?', 'must I have surgery?', 'what if I do nothing?'",
+  "findings": [
+   [
+    "Observations",
+    "All NORMAL. She is not in pain now, afebrile, anicteric"
+   ],
+   [
+    "General appearance",
+    "Well. NO scleral icterus, no jaundice of the skin, no scratch marks"
+   ],
+   [
+    "Inspection and palpation",
+    "NO tenderness, no guarding, no rebound. NO palpable gallbladder. Liver not enlarged"
+   ],
+   [
+    "MURPHY'S SIGN",
+    "NEGATIVE. Name the sign, describe the technique, and state what makes it positive — describing the manoeuvre WITHOUT NAMING IT is a documented fail"
+   ],
+   [
+    "Percussion, auscultation, chest",
+    "Liver span normal, no shifting dullness. Bowel sounds normal. CHEST BASES CLEAR — ask for them, because a RIGHT LOWER LOBE PNEUMONIA presents as RUQ pain and is the differential nobody offers"
+   ],
+   [
+    "Office tests",
+    "Urine dipstick normal, blood sugar normal, PREGNANCY TEST in a woman of reproductive age"
+   ],
+   [
+    "A NORMAL EXAMINATION DOES NOT EXCLUDE IT",
+    "Say it out loud: 'your examination today is normal, and THAT IS EXACTLY WHAT I WOULD EXPECT — between attacks there is nothing to find. THE DIAGNOSIS COMES FROM THE STORY.' Treating a normal examination as exclusion is a documented fail"
+   ],
+   [
+    "Bloods",
+    "FBC, LFT and LIPASE — EXPECT ALL NORMAL in biliary colic"
+   ],
+   [
+    "Ultrasound",
+    "BRIGHT ECHOGENIC FOCI in the gallbladder lumen casting DARK ACOUSTIC SHADOWS. WALL THIN (under 3 mm), NO pericholecystic fluid → CHOLELITHIASIS, supporting biliary colic rather than cholecystitis"
+   ],
+   [
+    "VERSION D — examination first, NO history permitted",
+    "Run the seven-step request slowly and name everything, INCLUDING Murphy's technique in full. Then NAME TWO INVESTIGATIONS AND WHY: LIVER FUNCTION TESTS (bilirubin, ALP, GGT — do they show obstruction?) and ABDOMINAL ULTRASOUND (stones, wall thickness, pericholecystic fluid, duct dilatation). BLOODS FIRST, IMAGING SECOND. Naming ultrasound without LFTs is a documented fail"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — a normal examination, and what it does not exclude",
+  "must": [
+   "FAIL — Treating a normal examination as excluding gallstones. Colic is diagnosed on the story.",
+   "FAIL — Never asking the jaundice block because she does not look yellow to you.",
+   "FAIL — Describing Murphy's manoeuvre without naming the sign.",
+   "FAIL — In Version D, naming ultrasound without liver function tests.",
+   "ASK — Does the pain come on after fatty or rich food, and how long after?",
+   "ASK — Any yellowing of the eyes, dark urine, pale stools, or itching?"
+  ],
   "back": {
-   "dx": "Biliary colic from gallstones — about six episodes over months, each 1–2 h after a fatty meal, lasting a couple of hours and settling, radiating to the right scapula, no fever, no jaundice, well between attacks with a normal examination (Murphy negative, no icterus, obs normal). Diagnosis from the story; ultrasound confirms stones and checks wall thickness and duct calibre; LFTs tell you whether the duct is obstructed. Only cure is laparoscopic cholecystectomy — her decision; dissolving tablets work poorly and stones recur; doing nothing risks a stone getting properly stuck (cholecystitis, cholangitis, pancreatitis).",
+   "dx": [
+    "**Biliary colic — transient obstruction of the cystic duct by a stone, causing pain without infection or inflammation. The stone falls back and the pain settles.**",
+    "**Explain the three as a PROGRESSION, not a list: a stone in the neck of the gallbladder that FALLS BACK gives biliary colic · a stone that STAYS gives cholecystitis · a stone that MOVES ON into the common bile duct and obstructs it gives cholangitis.** Said in that order the differences look inevitable rather than memorised.",
+    "**Biliary colic: episodes UNDER 6 HOURS · after fatty food · radiating to the RIGHT SHOULDER BLADE · no fever, no jaundice · normal bloods · normal examination between attacks.**",
+    "**The diagnosis is made on the history of the episodes, and a normal examination does not rule it out** — say that to the patient explicitly, because she will otherwise hear 'normal' as 'nothing wrong'.",
+    "**Ask the jaundice block in EVERY right upper quadrant station, whatever the vital signs say**: yellowing, dark urine, pale stools, itching. **Scleral icterus appears before skin jaundice, and in an examination-report format you never see the patient at all.**",
+    "**The layman explanation, one picture for three diseases**: **'your gallbladder is a small bag under the liver that stores bile, the fluid that helps digest fat. When you eat something fatty the bag squeezes. If there are stones in it, one can block the outlet — that gives pain for an hour or two until it falls back. If the stone stays stuck the bag becomes inflamed and infected. And if a stone escapes into the main drainage tube and blocks it, bile backs up into the blood, which turns you yellow, and the tube gets infected — that is the most dangerous of the three.'**",
+    "**Management: analgesia · reassurance · low-fat diet advice to reduce the frequency · ULTRASOUND to confirm the stones and LFTs to check the liver · then ELECTIVE LAPAROSCOPIC CHOLECYSTECTOMY, which is the only definitive treatment.**",
+    "**Her three questions, answered: dissolving tablets exist but work poorly, take a long time and the stones usually come back · she does not have to have surgery, it is her decision · but if she does nothing the attacks tend to continue and a stone may get properly stuck, which causes the more serious problems.** **You can live perfectly well without a gallbladder.**",
+    "**Courvoisier's law: in a jaundiced patient, a palpable but NON-TENDER gallbladder is unlikely to be gallstones** — chronic stone disease scars and shrinks the gallbladder. **Suspect malignant obstruction, typically carcinoma of the head of the pancreas or a periampullary tumour.** Say the law by name.",
+    "**A previous cholecystectomy does not close the biliary tree** — stones can remain in or form in the common bile duct, so **choledocholithiasis and cholangitis stay on the list.** **SA: elective cholecystectomy is a PATS-supported metropolitan referral; TIS National 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Stability · intro, open, concerns"
+     "**'Examiner, may I confirm the patient is haemodynamically stable — blood pressure, heart rate, respiratory rate, temperature and saturations?'** Then introduce, **offer analgesia if she is in pain**, and open."
     ],
     [
-     "0:45",
-     "★ Biliary specifics: 'show me where · out of ten during an attack · does it come on after fatty or rich food, and how long after? · how long does an episode last? · does it travel to your right shoulder blade or the tip of the shoulder? · have you had exactly this before — how many times? · is it constant now, or comes and goes?' · nausea/vomiting with attacks · what settles it"
+     "0:30",
+     "**The pain, full SICORA with the biliary specifics: show me where · out of ten · DOES IT COME ON AFTER FATTY OR RICH FOOD, AND HOW LONG AFTER · HOW LONG DOES AN EPISODE LAST · DOES IT TRAVEL TO YOUR RIGHT SHOULDER BLADE or the tip of the shoulder · have you had EXACTLY this before · is it constant now, or does it come and go?**"
+    ],
+    [
+     "1:30",
+     "**The jaundice block — four questions, never skipped:** **have you or anyone else noticed any YELLOWING OF YOUR EYES OR SKIN · has your URINE GONE DARK · have your STOOLS GONE PALE or clay-coloured · ANY ITCHING?**"
     ],
     [
      "2:00",
-     "★ Jaundice ×4: 'have you or anyone noticed yellowing of your eyes or skin? urine gone dark? stools pale or clay-coloured? any itching?' · ★ infection ×2: 'any fevers — and any shaking chills or rigors, teeth chattering? any confusion, drowsiness, dizziness on standing?' → no"
+     "**The infection block: any fevers · ANY SHAKING CHILLS OR RIGORS, the sort where your teeth chatter and you cannot stop shivering · any confusion or drowsiness · any dizziness on standing?** The last two take you from Charcot's triad to Reynolds' pentad."
     ],
     [
-     "2:45",
-     "Liver risk: alcohol (standard drinks/week), transfusions, tattoos, piercings, IVDU, overseas travel, paracetamol dose, herbal/OTC, FHx liver disease · GI red flags: weight loss — on purpose?, appetite, dysphagia, haematemesis, melaena, lumps · ★ chest: cough, phlegm, breathlessness, pain on a deep breath · risk factors: OCP/HRT, pregnancies, rapid weight loss/bariatric, diabetes, FHx gallstones, haemolysis · smoking, drugs, meds, allergies, PMHx/ops, ★ LMP and pregnancy possibility · summarise"
+     "2:30",
+     "**The liver risk block: how much alcohol in a usual week, in standard drinks · any blood transfusions, tattoos, piercings, injecting drug use or travel overseas · how much paracetamol, and any herbal or over-the-counter medicines · any liver disease in the family?**"
     ],
     [
-     "4:30",
-     "★ Examiner, every step named: 'general appearance — alert, distressed, dehydrated, ★ any scleral icterus or jaundice of the skin · four vitals incl temperature · inspection — scars, distension, movement with respiration, scratch marks · palpation — tenderness, guarding, rigidity, rebound, ★ palpable gallbladder or liver edge; if enlarged, smooth or nodular, tender or non-tender · ★ Murphy's sign · percussion — tenderness, liver span, shifting dullness · auscultation — bowel sounds, ★ chest bases · groin and rectal — stool colour on the glove · office tests — dipstick, BSL, ★ pregnancy test' → everything normal, Murphy negative, no jaundice"
+     "3:10",
+     "**GI general and red flags: nausea, vomiting, bloating, wind, bowel habit · any WEIGHT LOSS and was it intentional · appetite · difficulty swallowing · vomiting blood · black tarry motions · any lumps?**"
     ],
     [
-     "5:45",
-     "★ 'Nadia, this is biliary colic — gallstones. Pain an hour or two after fatty food, lasting a couple of hours then settling, going to the right shoulder blade, recurring over months, no fever, no jaundice — and a normal examination between attacks, which is expected. I want to be clear that a normal examination today does not mean nothing is wrong; with gallstones, between attacks there's usually nothing to find. Your diagnosis comes from the story, and the story is a textbook one.' · ★ one picture, three diseases: 'your gallbladder is a small bag under the liver that stores bile, which helps digest fat. When you eat something fatty the bag squeezes; if there are stones, one can block the outlet — pain for an hour or two until it falls back. If the stone stays stuck, the bag becomes inflamed and infected — more serious, needs hospital. If a stone escapes into the main drainage tube and blocks it, bile backs up into the blood, you turn yellow, and the tube gets infected — the most dangerous of the three.' · DDx: PUD, GORD, pancreatitis, hepatitis, right lower lobe pneumonia, renal colic, IBS, cardiac"
+     "3:45",
+     "**The chest questions, because a RIGHT LOWER LOBE PNEUMONIA presents as RUQ pain: any cough, phlegm, breathlessness, or pain when you take a deep breath?** Then **SADMA**, past medical and surgical history, family history."
     ],
     [
-     "7:00",
-     "Plan: ultrasound to confirm stones (wall thickness, pericholecystic fluid, CBD diameter) + LFTs (bilirubin, ALP, GGT — obstruction?), FBE, lipase · low-fat diet reduces attacks · analgesia plan for an attack (paracetamol ± NSAID/opioid VERIFY) · ★ surgical referral for elective laparoscopic cholecystectomy — the only cure; 'you can live perfectly well without it' · 'dissolve the stones?' → 'tablets exist but work poorly, take a long time and stones come back' · 'must I?' → 'your decision' · 'do nothing?' → 'attacks tend to continue and a stone can get properly stuck' · ★ safety-net: 'pain lasting more than six hours, fever or shaking chills, yellow eyes, dark urine, pale stools, vomiting you can't stop → emergency department' · review with results; PATS if surgery is in Adelaide"
+     "4:20",
+     "**Summarise back, then request the examination, naming every step:** **general appearance — alert, distressed, dehydrated, AND IS THERE SCLERAL ICTERUS OR JAUNDICE OF THE SKIN · all four vital signs including temperature · inspection for scars, distension, movement with respiration, scratch marks · palpation for tenderness, guarding, rigidity, rebound, a palpable gallbladder or LIVER EDGE, AND IF ENLARGED IS IT SMOOTH OR NODULAR, TENDER OR NON-TENDER · MURPHY'S SIGN, named · percussion for tenderness, liver span and shifting dullness · auscultation, bowel sounds AND THE CHEST BASES · groin and rectal examination with STOOL COLOUR ON THE GLOVE · office tests — urine dipstick, blood sugar, and a PREGNANCY TEST in a woman of reproductive age**"
+    ],
+    [
+     "5:20",
+     "**Murphy's sign, named and described:** **'I would perform Murphy's sign.' With the patient lying flat and the abdomen exposed, place your hand at the RIGHT COSTAL MARGIN in the MID-CLAVICULAR LINE. Ask her to BREATHE ALL THE WAY OUT, press your fingers DEEPLY IN UNDER THE COSTAL MARGIN, then ask her to TAKE A DEEP BREATH IN. As the diaphragm descends it pushes the inflamed gallbladder onto your fingers. POSITIVE if she CATCHES HER BREATH AND STOPS INSPIRATION — and to be valid, THE SAME MANOEUVRE ON THE LEFT SHOULD NOT DO THAT.**"
+    ],
+    [
+     "6:00",
+     "**Diagnose on the story and say the normal examination changes nothing.** Then the layman explanation — one picture, three diseases — and the reasons: **pain an hour or two after fatty food, lasting a couple of hours then settling, radiating to the right shoulder blade, recurrent over months, no fever, no jaundice, normal examination between attacks.**"
+    ],
+    [
+     "7:10",
+     "**Management: ultrasound and liver function tests · analgesia · low-fat diet · referral for ELECTIVE LAPAROSCOPIC CHOLECYSTECTOMY** — then answer the three questions she asks about dissolving, choice and doing nothing, and safety-net for **constant pain over six hours, fever with rigors, or yellow eyes.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Does the pain come on after fatty or rich food, and how long after? How long does an episode last? Does it travel to your right shoulder blade or the tip of your shoulder? Have you had exactly this before? Is it constant now, or does it come and go?'",
-    "★ 'Have you or anyone else noticed any yellowing of your eyes or your skin? Has your urine gone dark? Have your stools gone pale or clay-coloured? Any itching?' / ★ 'Any fevers — and any shaking chills or rigors, the sort where your teeth chatter and you can't stop shivering?'",
-    "'Any cough, phlegm, breathlessness, or pain when you take a deep breath?' / 'Any chance you could be pregnant?'",
-    "★ To examiner: '…is there any scleral icterus or jaundice of the skin? … any palpable gallbladder or liver edge, and if the liver is enlarged is it smooth or nodular, tender or non-tender? Murphy's sign. … the chest bases … stool colour on the glove … and a pregnancy test in a woman of reproductive age.'",
-    "★ 'Nadia, I've examined you and everything is normal today. I want to be clear that this does not mean nothing is wrong — with gallstones, between attacks there is usually nothing to find. Your diagnosis comes from the story, and the story is a textbook one. The next step is an ultrasound to confirm the stones and blood tests to check your liver. Meanwhile, cutting down fatty and fried food will reduce how often this happens. The only cure is keyhole surgery to remove the gallbladder, and I'd like to refer you to discuss that.'",
-    "'Can't you just dissolve the stones?' → 'Dissolving tablets exist but they work poorly, take a long time and the stones usually come back, so we rarely use them.' / 'Do I have to have surgery?' → 'You don't have to — it's your decision. But if you do nothing, the attacks tend to continue, and there is a risk that a stone gets properly stuck, which causes the more serious problems I mentioned. Removing the gallbladder is a common keyhole operation and you can live perfectly well without it.'",
-    "Version D (examination first, no history) — investigations in the right order: ★ 'Two investigations. First, liver function tests — bilirubin, alkaline phosphatase and gamma-GT — because a rise tells me whether the bile duct is obstructed, which changes this from a gallbladder problem to a duct problem; plus FBC, CRP and lipase. Second, an abdominal ultrasound — stones, gallbladder wall thickness, fluid around the gallbladder, and whether the common bile duct is dilated. Bloods tell me whether it is obstructed; the ultrasound tells me why.' / Version E (hard, nodular, non-tender hepatomegaly, weight loss): 'the liver is enlarged, hard and knobbly but not tender — that pattern suggests a cancer that has spread to the liver; a smooth tender liver would suggest congestion, hepatitis or abscess. With weight loss this needs urgent imaging to find the primary.'"
-   ],
    "pefe": [
-    "Role-player: Nadia, 42; six episodes over a few months, each 1–2 h after a curry or fish and chips, lasting a couple of hours, to the right shoulder blade, settling by itself; completely well today; no fever, no jaundice, no weight loss. Asks 'can't you just dissolve the stones?', 'do I have to have surgery?', 'what if I do nothing?'",
-    "Numbers: biliary colic <6 h; cholecystitis >6 h; GB wall normal <3 mm; cholecystitis fever 38–38.5; cholangitis 39 with rigors; CBD normal ≤6 mm (age-adjusted); obstructive picture = bilirubin, ALP, GGT up, ALT mildly up. Risk factors: female, forty, fertile, fat, FHx, OCP, rapid weight loss, diabetes, haemolysis, Aboriginal women. Complications: cholecystitis, choledocholithiasis, cholangitis, gallstone pancreatitis, gallstone ileus, Mirizzi, GB cancer (porcelain)",
-    "Harder variants: no gallbladder — stones still form in/remain in the CBD (choledocholithiasis, cholangitis stay on the list) · painless jaundice + weight loss + palpable gallbladder = Courvoisier's law — malignant obstruction (head of pancreas) until proven otherwise; say the law by name · septic diabetic/elderly with mild signs → acalculous cholecystitis (higher gangrene/perforation rate) · right lower lobe pneumonia presents as RUQ pain with fever — two questions and a CXR",
-    "SA: surgical referral (Yorke and Northern LHN / Adelaide) · PATS · MedSTAR 1300 13 12 33 if cholecystitis/cholangitis from a rural site · TIS 131 450",
-    "Standard version — EVERYTHING NORMAL — no tenderness, MURPHY NEGATIVE, no jaundice, observations normal",
-    "Version E — A HARD NODULAR NON-TENDER liver edge"
+    "**Bloods first, imaging second, and both said out loud.** **LIVER FUNCTION TESTS — bilirubin, ALP and GGT — because a rise tells you the duct is obstructed, which changes this from a gallbladder problem to a duct problem.** Add **FBC, CRP and LIPASE**.",
+    "**ABDOMINAL ULTRASOUND — to look for stones, to MEASURE THE GALLBLADDER WALL (normal under 3 mm), to look for PERICHOLECYSTIC FLUID, and to see whether the COMMON BILE DUCT IS DILATED.** **Bloods tell you whether it is obstructed; the ultrasound tells you why.**",
+    "**Biliary colic on ultrasound: stones with a THIN wall and NO fluid.** **Cholecystitis: stones, wall OVER 3 mm, pericholecystic fluid, a stone impacted in the neck, and a sonographic Murphy.**",
+    "**Ask for the liver edge CHARACTER, never just 'hepatomegaly': HARD, NODULAR and NON-TENDER is malignant infiltration, most often metastatic. SMOOTH and TENDER is congestion, hepatitis or an abscess.**",
+    "**Include a chest X-ray in the differential list** — right lower lobe pneumonia irritates the diaphragm and presents as RUQ pain, and almost nobody offers it.",
+    "**If the duct is dilated but no stone is seen: MRCP.** **If jaundice with weight loss and a palpable non-tender gallbladder: CT chest, abdomen and pelvis, tumour markers, biopsy.**"
    ],
-   "fails": [
-    "Skipping the jaundice block because she doesn't look yellow (scleral icterus appears first; in the report format you never see her)",
-    "Not asking the biliary specifics (fatty food, duration, radiation, previous episodes); treating a normal examination as 'nothing wrong'",
-    "★ Describing Murphy without naming it; not asking for scleral icterus in the general-appearance step; ★ claiming a finding never requested",
-    "No chest questions/CXR thought; no pregnancy test; no safety-net for cholecystitis/cholangitis",
-    "Promising dissolution therapy; not naming cholecystectomy as the only cure; not respecting her decision"
-   ],
-   "numbers": [
-    "Biliary colic <6 h · cholecystitis >6 h, T 38–38.5, Murphy +, WCC/CRP up · cholangitis 39 + rigors + jaundice · GB wall <3 mm normal · CBD ≤6 mm",
-    "Investigations: LFTs (bili, ALP, GGT) + FBE/CRP/lipase → USS · cholecystectomy within 72 h for cholecystitis VERIFY · antibiotics within 1 h and ERCP within 24 h for cholangitis",
-    "Courvoisier's law · 4 Fs · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Biliary colic** — the answer",
+     "**Episodic pain after fatty meals, UNDER 6 hours**, to the right shoulder blade, afebrile, anicteric, normal bloods",
+     "Fatty-food trigger, duration, radiation, previous identical episodes",
+     "**Ultrasound: stones, thin wall, no fluid. Elective laparoscopic cholecystectomy** — routine"
+    ],
+    [
+     "**Acute cholecystitis**",
+     "**Constant pain OVER 6 hours, fever, Murphy positive, raised white cells and CRP, NO jaundice**",
+     "Is the pain constant now? Fever? Murphy?",
+     "**Ultrasound: wall over 3 mm, pericholecystic fluid. Admit, antibiotics, cholecystectomy within 72 hours** — same day"
+    ],
+    [
+     "**Ascending cholangitis**",
+     "**Charcot's triad — pain, fever WITH RIGORS, and jaundice.** Obstructive liver tests",
+     "**The jaundice block. Hypotension and confusion add Reynolds' pentad**",
+     "**Blood cultures; ultrasound then MRCP; ERCP WITHIN 24 HOURS** — emergency"
+    ],
+    [
+     "Choledocholithiasis without infection",
+     "**Jaundice, dark urine, pale stools — but NO fever**",
+     "The jaundice block with a normal temperature",
+     "Dilated common bile duct on ultrasound; MRCP; ERCP — urgent"
+    ],
+    [
+     "Hepatitis — viral, alcoholic, drug",
+     "Malaise, anorexia, jaundice, **tender SMOOTH liver**, risk factors",
+     "Alcohol, transfusions, tattoos, injecting use, travel, paracetamol",
+     "Hepatitis serology, alcohol history, paracetamol level"
+    ],
+    [
+     "**Hepatobiliary malignancy**",
+     "**Weight loss, HARD NODULAR NON-TENDER liver, painless jaundice**",
+     "**Courvoisier: jaundice with a palpable NON-TENDER gallbladder**",
+     "**CT chest, abdomen and pelvis; tumour markers; biopsy** — urgent"
+    ],
+    [
+     "Peptic ulcer and pancreatitis",
+     "Epigastric pain, NSAIDs, alcohol, pain boring to the back",
+     "NSAID use, alcohol, relation to meals",
+     "**Lipase**; endoscopy; H. pylori"
+    ],
+    [
+     "**Right lower lobe pneumonia**",
+     "**Cough, fever, pleuritic pain, breathlessness** — the differential nobody offers",
+     "One respiratory question, and the chest bases on auscultation",
+     "**Chest X-ray** — same day"
+    ],
+    [
+     "Right renal colic or pyelonephritis",
+     "Loin to groin pain, dysuria, haematuria",
+     "Renal angle tenderness, urine dipstick",
+     "Urine dipstick and MSU; CT KUB — same day"
+    ],
+    [
+     "Acalculous cholecystitis",
+     "**Critically ill, diabetic or post-operative patient with a septic picture and mild abdominal signs**",
+     "Comorbidity and recent illness or surgery",
+     "Ultrasound. **Higher rate of gangrene and perforation** — same day"
+    ]
    ]
   },
   "source": "RUQ_Biliary_Pain_2_Case_Tasks_Script_Notability (1).pdf Version A (Nadia Haddad, 42, recurrent post-prandial RUQ pain to the right scapula with a normal examination — biliary colic; Versions C, D, E folded in)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › RUQ_Biliary_Pain_2_Case_Tasks_Script_Notability (1).pdf",
-  "findings": [
-   [
-    "Version C — acute cholecystitis",
-    "Constant pain over a day · T 38.5 · HR 96 · RUQ TENDERNESS WITH GUARDING · MURPHY POSITIVE · no jaundice · WCC and CRP raised"
-   ],
-   [
-    "PEFE: everything normal",
-    "no tenderness, Murphy negative, no jaundice, obs normal. Version C (acute cholecystitis): constant pain >1 day, T 38.5, HR 96, RUQ tenderness with guarding, Murphy positive, no jaundice, WCC/CRP raised → admit, NBM, IV fluids, analgesia, IV antibiotics (amoxicillin + gentamicin, or amoxicillin-clavulanate VERIFY TG), USS, laparoscopic cholecystectomy within 72 h/same admission VERIFY. Version E: hard nodular non-tender hepatomegaly + 6 kg loss → metastatic malignancy; urgent CT, LFTs, tumour markers, find the primary"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Describing Murphy's sign without naming it — 'I would perform Murphy's sign' and ask for it by name in the examination request; and claiming a finding never requested (★)",
-   "DO — The biliary specifics: 'show me where; out of ten during an attack; does it come on after fatty or rich food, and how long after? how long does an episode last? does it travel to your right shoulder blade? have you had exactly this before? is it constant now or does it come and go?' → an hour or two after curry or fish and chips, lasts a couple of hours then goes, under the right shoulder blade, six times over months, fine today",
-   "DO — The four jaundice questions even though she doesn't look yellow (scleral icterus appears before skin jaundice, and in the report format you never see her): 'yellowing of the eyes or skin? urine gone dark? stools pale or clay-coloured? any itching?'; then fevers and 'shaking chills or rigors — teeth chattering, couldn't stop?'; all negative in Version A — and the negatives are what separate colic from cholecystitis and cholangitis",
-   "DO — Liver risk (alcohol in standard drinks, transfusions, tattoos, piercings, IVDU, travel, paracetamol dose, herbal and OTC, family liver disease); GI red flags with weight loss intent qualified; the two chest questions — a right lower lobe pneumonia irritates the diaphragm and presents as RUQ pain, 'a differential the examiners actively look for and almost nobody offers'; examiner request with every step named incl. scleral icterus in general appearance, palpable gallbladder or liver edge and its character, Murphy's sign, liver span, chest bases, stool colour on the glove, dipstick, pregnancy test",
-   "SAY — 'Nadia, this is biliary colic — gallstones; pain an hour or two after fatty food, lasting a couple of hours then settling, to the right shoulder blade, recurrent over months, no fever, no jaundice, and a normal examination between attacks — which is exactly what I'd expect; this does not mean nothing is wrong: with gallstones, between attacks there is usually nothing to find; the diagnosis comes from the story'; the one-picture explanation of the three diseases (the bag squeezes, a stone blocks the outlet for an hour or two; stays stuck → inflamed and infected; escapes into the main tube → yellow and infected, the most dangerous)",
-   "DO — Ultrasound to confirm stones and LFTs; cut fatty and fried food meanwhile; the only cure is laparoscopic cholecystectomy — refer; answer all three: 'can't you dissolve them?' (tablets work poorly, slowly, stones return), 'do I have to have surgery?' (your decision), 'what if I do nothing?' (attacks continue, and a stone may get properly stuck); safety-net for constant pain over six hours, fever, rigors, yellowing, dark urine → hospital"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-135",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED, rural SA (Moonta/Wallaroo). Version B of the RUQ set. T 39.1 with rigors: take the vitals and VISIBLY change gear — fluids, cultures, antibiotics within the hour — or the examiner records that you did not recognise sepsis. The jaundice block is the station: he does not volunteer yellow eyes, dark urine, pale stools or itching. Murphy is positive in both cholecystitis and cholangitis — the jaundice and the obstructive LFTs decide it.",
   "stem": [
    "Mr Okoye, 58, presents with constant right upper quadrant pain for two days and a temperature of 39 °C with rigors. T 39.1 · HR 112 · BP 108/64 · RR 22 · SpO2 96%."
   ],
@@ -25618,104 +25715,191 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis, differentials and immediate management"
   ],
-  "time": "8 min. ★ Stability → 'those observations concern me and I'll be moving quickly' · analgesia, open · pain: /10 (8), after dinner, ★ constant now, to the back/shoulder blade, ★ 'had anything like this before?' (a couple of shorter episodes last year) · ★ jaundice ×4: yellow eyes (wife noticed), dark tea-coloured urine, pale stools, itching · ★ 'was the shivering a proper rigor — teeth chattering, couldn't stop?' · confusion, drowsiness, dizziness on standing (light-headed) · N/V, bowels · weight loss/intent, dysphagia, haematemesis, melaena, lumps · liver risk: alcohol, transfusions/tattoos/IVDU/travel, paracetamol/herbal, FHx · ★ chest ×2 · SADMA, ops (none) · summarise · ★ examiner every step incl scleral icterus, scratch marks, palpable GB/liver character, ★ Murphy's, chest bases, DRE stool colour, dipstick → unwell, jaundiced, RUQ tender with guarding, Murphy +, liver not enlarged, chest clear, dipstick bilirubin; WCC 18, CRP 210, bili 74, ALP/GGT clearly raised, ALT mildly, lipase normal · ★ 'Murphy positive tells me the gallbladder is inflamed — true in cholecystitis and cholangitis — before I commit: is there scleral icterus, and what is the bilirubin?' · dx ascending cholangitis (Charcot's triad) · honest about seriousness · management spoken: drip ×2, cultures, ★ antibiotics within the hour, fluids, analgesia/antiemetic, USS, ★ ERCP within 24 h, MedSTAR transfer, cholecystectomy after recovery · DDx.",
+  "findings": [
+   [
+    "Observations — and visibly change gear",
+    "T 39.1 · HR 112 · BP 108/64 · RR 22 · SpO2 96%. IF YOU TAKE THESE AND DO NOT CHANGE GEAR — fluids, cultures, antibiotics — THE EXAMINER RECORDS THAT YOU DID NOT RECOGNISE SEPSIS"
+   ],
+   [
+    "General appearance",
+    "UNWELL AND JAUNDICED, with SCLERAL ICTERUS. Ask for scleral icterus by name in your general-appearance step — it is the single finding that converts cholecystitis into cholangitis"
+   ],
+   [
+    "Abdominal palpation",
+    "TENDER RIGHT UPPER QUADRANT WITH GUARDING. NO mass. LIVER NOT ENLARGED"
+   ],
+   [
+    "MURPHY'S SIGN",
+    "POSITIVE — and this is the TRAP. It tells you the gallbladder is inflamed; it tells you NOTHING about whether the duct is blocked. MURPHY IS POSITIVE IN BOTH CHOLECYSTITIS AND CHOLANGITIS"
+   ],
+   [
+    "The follow-up question that decides the station",
+    "'You have told me Murphy's sign is positive, which tells me the gallbladder is inflamed. BEFORE I COMMIT, IS THERE ANY SCLERAL ICTERUS, AND WHAT IS THE BILIRUBIN?'"
+   ],
+   [
+    "Chest and dipstick",
+    "CHEST CLEAR. Urine dipstick shows BILIRUBIN"
+   ],
+   [
+    "Bloods",
+    "WCC 18 · CRP 210 · BILIRUBIN 74 · ALP AND GGT CLEARLY RAISED · ALT mildly raised · LIPASE NORMAL. An OBSTRUCTIVE picture"
+   ],
+   [
+    "What he gives ONLY if you ask",
+    "YELLOW EYES (his wife noticed) · URINE DARK LIKE TEA · PALE STOOLS · ITCHING · a TRUE RIGOR last night, teeth chattering, shaking the bed · light-headed on standing this morning. HE NEVER VOLUNTEERS ANY OF IT"
+   ],
+   [
+    "Charcot and Reynolds",
+    "CHARCOT'S TRIAD = RUQ PAIN + FEVER WITH RIGORS + JAUNDICE. REYNOLDS' PENTAD adds HYPOTENSION and ALTERED MENTAL STATE — suppurative cholangitis with septic shock, needing resuscitation and EMERGENCY decompression rather than a morning ERCP list"
+   ],
+   [
+    "Ultrasound then MRCP",
+    "Ultrasound first for stones and a dilated common bile duct. MRCP IF THE DUCT IS DILATED BUT NO STONE IS SEEN. Do NOT wait for local imaging before making the retrieval call"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — Murphy is the trap, jaundice is the answer",
+  "must": [
+   "FAIL — Saying cholecystitis because Murphy's sign is positive, in a jaundiced patient.",
+   "FAIL — Never asking the jaundice block: yellow eyes, dark urine, pale stools, itching.",
+   "FAIL — Taking a temperature of 39 with rigors and not visibly changing gear.",
+   "FAIL — Claiming a finding you never requested, or describing Murphy without naming it.",
+   "ASK — Is there any scleral icterus, and what is the bilirubin?",
+   "ASK — Was that a proper rigor — teeth chattering, couldn't stop? Any confusion or dizziness standing?"
+  ],
   "back": {
-   "dx": "Ascending cholangitis — Charcot's triad: constant RUQ pain (two days, 8/10, after dinner, round to the right back, previous shorter episodes = prior biliary colic), fever 39.1 with a true rigor, and obstructive jaundice (yellow sclerae per his wife, tea-coloured urine, pale stools, itching); light-headed on standing (early Reynolds' — hypotension/confusion make the pentad). PEFE: unwell, scleral icterus, RUQ tenderness with guarding, Murphy positive, liver not enlarged, chest clear, dipstick bilirubin; WCC 18, CRP 210, bilirubin 74, ALP/GGT clearly raised, ALT mildly raised, lipase normal. Sepsis from an obstructed, infected duct — almost certainly a stone. Antibiotics within the hour, biliary decompression by ERCP within 24 h (not available locally → MedSTAR), cholecystectomy on the same admission once recovered.",
+   "dx": [
+    "**Ascending cholangitis — infection of an obstructed biliary tree, usually by a stone in the common bile duct. A life-threatening emergency.**",
+    "**The discriminating behaviour: ask about jaundice, dark urine and pale stools in EVERY right upper quadrant station, and do not let a positive Murphy's sign stop you asking.** **Murphy is positive in cholecystitis AND in cholangitis. Jaundice is what separates them — and jaundice is what changes the treatment from an operating list to an emergency ERCP.**",
+    "**The sentence that rescues the station: 'Examiner, you have told me Murphy's sign is positive, which tells me the gallbladder is inflamed. Before I commit to cholecystitis, may I ask — is there any scleral icterus or jaundice, and what is the bilirubin?'** Then: **'that changes my diagnosis. With right upper quadrant pain, fever with rigors and jaundice, this is Charcot's triad and I am treating this as ascending cholangitis.'**",
+    "**CHARCOT'S TRIAD = pain + fever with rigors + jaundice. REYNOLDS' PENTAD adds hypotension and altered mental state** — suppurative cholangitis with septic shock.",
+    "**Treat it as sepsis: resuscitate · BLOOD CULTURES · IV ANTIBIOTICS WITHIN ONE HOUR · fluids · analgesia and an antiemetic · correct coagulopathy · VBG with lactate · HDU if unstable.**",
+    "**The definitive treatment is BILIARY DECOMPRESSION BY ERCP WITHIN 24 HOURS** — urgently if there is shock or failure to improve. **Cholecystectomy afterwards, on the same admission where possible.**",
+    "**The obstructive picture: bilirubin, ALP and GGT up, ALT mildly up.** **Lipase normal excludes pancreatitis.** **Ultrasound first, then MRCP if the duct is dilated but no stone is seen.**",
+    "**Say it to the patient straight without frightening him: 'you have an infection in the drainage tubes of your liver, which are blocked — almost certainly by a gallstone. It is serious, and you are already showing signs the infection is affecting your whole body. But it is very treatable and we are going to start straight away.'** To **'serious how?'**: **serious enough to be in hospital now and on antibiotics within the hour** — then name the three things that told you.",
+    "**SA: ERCP is not available on Yorke Peninsula. Suspected cholangitis is a TIME-CRITICAL RETRIEVAL — blood cultures and IV antibiotics within the hour at Wallaroo or Kadina, fluids, then MedSTAR 1300 13 12 33 and the receiving unit at TQEH or the Royal Adelaide. DO NOT WAIT FOR LOCAL IMAGING BEFORE YOU MAKE THE CALL.** RFDS for fixed-wing transfer.",
+    "**Courvoisier's law: jaundice with a palpable NON-TENDER gallbladder is malignant obstruction until proven otherwise** — typically carcinoma of the head of the pancreas. **And a previous cholecystectomy does not close the biliary tree: stones remain in or form in the common bile duct.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Examiner, may I confirm he is haemodynamically stable — all four observations and saturations?' → 39.1, 112, 108/64, 22, 96% → ★ 'those observations concern me and I'll be moving quickly' · 'I'm Dr —. Would you like something for the pain before we start? Tell me what's been happening.'"
+     "**'Examiner, may I confirm he is haemodynamically stable — all four observations and saturations?'** → T 39.1, HR 112, BP 108/64. **Say it out loud: 'those observations concern me and I'll be moving quickly.'** Then **offer analgesia before you start.**"
     ],
     [
-     "0:45",
-     "Pain: where (under the right ribs), /10 (8), after a meal (dinner), ★ 'travel to your right shoulder blade?' (round to the back), ★ 'constant, or comes and goes?' (constant now), ★ 'had anything like this before?' (couple of times last year, went in an hour or two)"
+     "0:40",
+     "**The pain: show me where · out of ten · did it come on after a meal · DOES IT TRAVEL TO YOUR RIGHT SHOULDER BLADE or round to the back · is it constant now · HAVE YOU HAD EXACTLY THIS BEFORE?** → a couple of shorter episodes over the past year that settled — the colic that preceded it."
     ],
     [
-     "1:45",
-     "★ 'Now some important questions. Have you or anyone else noticed any yellowing of your eyes or skin? Has your urine gone dark? Have your stools gone pale? Any itching?' → wife says eyes yellow; tea-coloured urine; pale stools; itching → 'thank you, that's very important' · ★ 'the shivering last night — a proper rigor, teeth chattering, couldn't stop?' (shaking the bed) · 'any confusion, drowsiness, or dizziness when you stand?' (light-headed this morning)"
+     "1:30",
+     "**The jaundice block, four questions, and he volunteers none of it:** **have you or anyone else noticed any YELLOWING OF YOUR EYES OR SKIN · has your URINE GONE DARK · have your STOOLS GONE PALE or clay-coloured · ANY ITCHING?**"
+    ],
+    [
+     "2:10",
+     "**The infection block: any fevers · WAS THAT A PROPER RIGOR — teeth chattering, shaking the bed, couldn't stop · any confusion or drowsiness · any dizziness on standing?** The last two are what take you to Reynolds' pentad."
     ],
     [
      "2:45",
-     "N/V (sick twice), bloating, wind, D/C · weight loss — on purpose?, dysphagia, haematemesis, melaena, lumps → no · liver risk: alcohol (2 beers weekend), transfusions, tattoos, IVDU, overseas travel, paracetamol, herbal/OTC, FHx liver → none · ★ chest: cough, phlegm, SOB, pain on deep breath → none · smoking, meds (BP tablet), allergies, ops (none), PMHx · ★ summarise back"
+     "**The liver risk block: alcohol in standard drinks per week · blood transfusions, tattoos, piercings, injecting drug use, travel · paracetamol and any herbal or over-the-counter medicines · family history of liver disease.**"
     ],
     [
-     "4:15",
-     "'Am I alright?' → 'I'm going to be honest with you shortly — let me get the examination findings first' · ★ examiner: 'general appearance — distressed, dehydrated, ★ scleral icterus or skin jaundice · inspection — scars, distension, ★ scratch marks · palpation — tenderness, guarding, rigidity, rebound, ★ palpable gallbladder, liver edge and its character · ★ Murphy's sign · percussion — tenderness, liver span · bowel sounds and ★ chest bases · rectal — stool colour · dipstick' → unwell, jaundiced with scleral icterus; RUQ tender with guarding, no mass; Murphy +; liver not enlarged; chest clear; dipstick bilirubin; WCC 18, CRP 210, bili 74, ALP/GGT clearly up, ALT mildly, lipase normal"
+     "3:20",
+     "**GI red flags and the chest: nausea and vomiting, bowels, appetite · any weight loss, intentional or not · difficulty swallowing, vomiting blood, black motions, lumps · ANY COUGH, PHLEGM, BREATHLESSNESS OR PAIN ON DEEP BREATHING?** Then **SADMA**."
     ],
     [
-     "5:30",
-     "★ 'Murphy's sign positive tells me the gallbladder is inflamed — but that is true in cholecystitis and in cholangitis, so it is the jaundice and the obstructive liver tests that decide this.' → to patient: ★ 'Mr Okoye, I want to be straightforward. You have an infection in the drainage tubes of your liver, which are blocked — almost certainly by a gallstone. The medical name is ascending cholangitis. It is serious, and you are already showing signs the infection is affecting your whole body. But it is very treatable and we are going to start straight away.' · 'serious how?' → 'serious enough that you need to be in hospital now and on antibiotics within the hour. The three things that told me were the pain, the fever with the shaking, and the yellow colour — a recognised pattern we treat urgently. The good news is we know exactly what to do.'"
+     "4:00",
+     "**Summarise back, then request the examination, naming every step:** **general appearance — alert, distressed, dehydrated, AND IS THERE SCLERAL ICTERUS OR JAUNDICE OF THE SKIN · all four vital signs including temperature · inspection for scars, distension, movement with respiration, scratch marks · palpation for tenderness, guarding, rigidity, rebound, a palpable gallbladder or LIVER EDGE, AND IF ENLARGED IS IT SMOOTH OR NODULAR, TENDER OR NON-TENDER · MURPHY'S SIGN, named · percussion for tenderness, liver span and shifting dullness · auscultation, bowel sounds AND THE CHEST BASES · groin and rectal examination with STOOL COLOUR ON THE GLOVE · office tests — urine dipstick, blood sugar, and a PREGNANCY TEST in a woman of reproductive age**"
     ],
     [
-     "6:45",
-     "★ Plan spoken: 'a drip in each arm, blood cultures, IV antibiotics within the hour, fluids to bring your blood pressure up, pain relief and something for nausea. An ultrasound to confirm where the blockage is. Then the key treatment — unblocking the tube: a camera passed down through the mouth to the drainage tube, an ERCP; we aim to do that within 24 hours. That isn't done here, so I'm arranging transfer to Adelaide and speaking with the retrieval service now.' · 'and the gallbladder?' → 'once you've recovered, it should come out — ideally the same admission — so this can't happen again' · DDx: cholecystitis alone, a duct stone without infection, hepatitis, pancreatitis (lipase normal), liver abscess — 'the fever, the rigor and the pattern of your liver tests point to an infected, blocked duct' · 'is there someone we should call?'"
+     "5:00",
+     "**Murphy's sign, named and described in full:** **'I would perform Murphy's sign.' With the patient lying flat and the abdomen exposed, place your hand at the RIGHT COSTAL MARGIN in the MID-CLAVICULAR LINE. Ask her to BREATHE ALL THE WAY OUT, press your fingers DEEPLY IN UNDER THE COSTAL MARGIN, then ask her to TAKE A DEEP BREATH IN. As the diaphragm descends it pushes the inflamed gallbladder onto your fingers. POSITIVE if she CATCHES HER BREATH AND STOPS INSPIRATION — and to be valid, THE SAME MANOEUVRE ON THE LEFT SHOULD NOT DO THAT.** **Then, on being told it is positive, ASK THE FOLLOW-UP about scleral icterus and bilirubin rather than committing.**"
+    ],
+    [
+     "5:40",
+     "**Reason out loud: Murphy positive tells me the gallbladder is inflamed — but that is true in cholecystitis and in cholangitis, so it is THE JAUNDICE AND THE OBSTRUCTIVE LIVER TESTS that decide this. This is Charcot's triad: ascending cholangitis.**"
+    ],
+    [
+     "6:15",
+     "**Tell the patient plainly**, answer 'serious how?' with the three findings that told you, then **the differentials: cholecystitis alone, a duct stone without infection, and hepatitis — and why each is less likely.**"
+    ],
+    [
+     "7:00",
+     "**Immediate management, in order: a drip in each arm · BLOOD CULTURES · IV ANTIBIOTICS WITHIN THE HOUR · fluids · analgesia and an antiemetic · correct coagulopathy · ULTRASOUND to confirm · then ERCP WITHIN 24 HOURS for biliary decompression, and cholecystectomy afterwards on the same admission.** **In a rural setting, MedSTAR is being phoned while that is happening.** Offer to call someone for him."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Examiner, may I confirm the patient is haemodynamically stable — blood pressure, heart rate, respiratory rate, temperature and saturations?' → 'Thank you — those observations concern me and I'll be moving quickly.'",
-    "★ 'Have you or anyone else noticed any yellowing of your eyes or your skin? Has your urine gone dark? Have your stools gone pale or clay-coloured? Any itching?' / ★ 'Any fevers — and any shaking chills or rigors, the sort where your teeth chatter and you can't stop shivering? Any confusion, drowsiness or dizziness on standing?'",
-    "★ To examiner: 'General appearance — is he alert, distressed, dehydrated, and is there any scleral icterus or jaundice of the skin? … Murphy's sign … the chest bases … stool colour on the glove.' / ★ 'Thank you — you have told me Murphy's sign is positive, which tells me the gallbladder is inflamed. Before I commit, is there any scleral icterus, and what is the bilirubin?'",
-    "★ 'This is ascending cholangitis — the tube draining the liver is blocked and has become infected. Charcot's triad: right upper quadrant pain, fever with rigors, and jaundice; dark urine and pale stools; an obstructive liver picture. Murphy is positive in both conditions; the jaundice is what makes this cholangitis.'",
-    "★ 'Mr Okoye, I want to be straightforward with you. You have an infection in the drainage tubes of your liver, which are blocked — almost certainly by a gallstone. The medical name is ascending cholangitis. It is serious, and you are already showing signs the infection is affecting your whole body. But it is very treatable and we are going to start straight away.'",
-    "★ 'You are seriously unwell and I'm treating this as an infection in the bloodstream. Right now: a drip, blood cultures, antibiotics within the hour, fluids, and pain relief. Then an ultrasound to confirm the blockage. The key treatment is unblocking the tube, which is done with a camera passed through the mouth into the drainage tube, called an ERCP — we aim to do that within 24 hours. Once you've recovered, your gallbladder will need to come out.' / 'Because that isn't done here, I'll be arranging transfer to Adelaide and speaking with the retrieval service now.'"
-   ],
    "pefe": [
-    "Role-player: Mr Okoye, 58, retired shearer near Moonta, married; one BP tablet, no allergies, no operations; two beers on the weekend, non-smoker; no tattoos/transfusions/travel. Understated country manner, minimises, frightened but won't say; sits still, winces, sounds tired. Does NOT volunteer yellow eyes, dark urine, pale stools or itching — only when asked directly (if never asked, never mentioned — the whole station). 'Am I alright?' midway; 'serious how?' and 'and the gallbladder?' after the diagnosis",
-    "PEFE: unwell, jaundiced, scleral icterus · RUQ tender with guarding, no mass · Murphy + · liver not enlarged · chest clear · dipstick bilirubin · bloods: WCC 18, CRP 210, bilirubin 74, ALP + GGT clearly raised, ALT mildly raised, lipase normal. Vitals 39.1 · 112 · 108/64 · 22 · 96%",
-    "Cholangitis: Charcot's triad (pain, fever/rigors, jaundice) → Reynolds' pentad adds hypotension + confusion (severe). Tokyo criteria (systemic inflammation + cholestasis + imaging). Causes: choledocholithiasis (commonest), strictures, malignancy, post-ERCP, stents. Management: sepsis bundle — two large-bore IVs, cultures, lactate, ★ IV antibiotics within 1 h (e.g. amoxicillin + gentamicin ± metronidazole, or piperacillin-tazobactam/ceftriaxone + metronidazole VERIFY TG), fluids (30 mL/kg if hypotensive), analgesia, antiemetic, NBM, monitor urine output; USS (dilated CBD, stones); ★ biliary decompression — ERCP with sphincterotomy/stent within 24 h (urgent if severe/not improving), PTC or surgery if ERCP fails; correct coagulopathy (vitamin K); cholecystectomy same admission after recovery. Beware paracetamol dosing in liver dysfunction; no NSAIDs if renal impairment",
-    "Cholecystitis vs cholangitis: both Murphy +; cholangitis has jaundice + obstructive LFTs + higher fever/rigors; cholecystitis fever 38–38.5, no jaundice (unless Mirizzi), treated with antibiotics + early cholecystectomy. Gallstone pancreatitis: raised lipase (his is normal). Hepatitis: ALT dominant. Liver abscess: fever, tender hepatomegaly, imaging",
-    "SA: MedSTAR 1300 13 12 33 — ring now, not after the ultrasound; ERCP is in Adelaide · TIS 131 450 · family notified"
+    "**Vital signs first, and visibly act on them.** A temperature of 39 with rigors and a heart rate of 112 is sepsis until proven otherwise.",
+    "**Ask for SCLERAL ICTERUS by name in the general-appearance step** — it appears before skin jaundice and it is the finding that converts cholecystitis into cholangitis.",
+    "**Bloods: FBC and CRP · LIVER FUNCTION TESTS looking for an OBSTRUCTIVE pattern — bilirubin, ALP and GGT up, ALT mildly up · LIPASE to exclude pancreatitis · BLOOD CULTURES · VBG WITH LACTATE · coagulation profile.**",
+    "**Imaging: ULTRASOUND FIRST — stones, wall thickness, pericholecystic fluid, and whether the COMMON BILE DUCT IS DILATED. MRCP if the duct is dilated but no stone is seen.** **Do not wait for imaging before starting antibiotics or making the retrieval call.**",
+    "**Ask for the liver edge character** — hard, nodular and non-tender is malignancy; smooth and tender is congestion, hepatitis or abscess.",
+    "**Ask for the chest bases** — right lower lobe pneumonia presents as RUQ pain with fever and is the differential nobody offers.",
+    "**Antibiotics within 1 hour. ERCP within 24 hours. Cholecystectomy within 72 hours is the CHOLECYSTITIS number — do not confuse them.** VERIFY local timing policy."
    ],
-   "fails": [
-    "★ Diagnosing cholecystitis in a jaundiced patient; ★ never asking the jaundice block; ★ describing Murphy without naming it; ★ claiming a finding never requested",
-    "Taking the vitals and not changing gear — no fluids/cultures/antibiotics until the end; antibiotics not within the hour; no ERCP within 24 h; no retrieval mentioned",
-    "Not asking rigors specifically, or confusion/postural dizziness; not asking previous episodes",
-    "False reassurance, or frightening him without a plan; forgetting the gallbladder needs to come out; not offering to call someone"
-   ],
-   "numbers": [
-    "Vitals 39.1 · 112 · 108/64 · 22 · 96% · WCC 18 · CRP 210 · bili 74 · ALP/GGT ↑↑ · ALT mild · lipase normal",
-    "Charcot's triad → Reynolds' pentad (+ hypotension, confusion) · antibiotics within 1 h · ERCP within 24 h · cholecystectomy same admission · cholangitis fever 39 + rigors vs cholecystitis 38–38.5",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Biliary colic** — the answer",
+     "**Episodic pain after fatty meals, UNDER 6 hours**, to the right shoulder blade, afebrile, anicteric, normal bloods",
+     "Fatty-food trigger, duration, radiation, previous identical episodes",
+     "**Ultrasound: stones, thin wall, no fluid. Elective laparoscopic cholecystectomy** — routine"
+    ],
+    [
+     "**Acute cholecystitis**",
+     "**Constant pain OVER 6 hours, fever, Murphy positive, raised white cells and CRP, NO jaundice**",
+     "Is the pain constant now? Fever? Murphy?",
+     "**Ultrasound: wall over 3 mm, pericholecystic fluid. Admit, antibiotics, cholecystectomy within 72 hours** — same day"
+    ],
+    [
+     "**Ascending cholangitis**",
+     "**Charcot's triad — pain, fever WITH RIGORS, and jaundice.** Obstructive liver tests",
+     "**The jaundice block. Hypotension and confusion add Reynolds' pentad**",
+     "**Blood cultures; ultrasound then MRCP; ERCP WITHIN 24 HOURS** — emergency"
+    ],
+    [
+     "Choledocholithiasis without infection",
+     "**Jaundice, dark urine, pale stools — but NO fever**",
+     "The jaundice block with a normal temperature",
+     "Dilated common bile duct on ultrasound; MRCP; ERCP — urgent"
+    ],
+    [
+     "Hepatitis — viral, alcoholic, drug",
+     "Malaise, anorexia, jaundice, **tender SMOOTH liver**, risk factors",
+     "Alcohol, transfusions, tattoos, injecting use, travel, paracetamol",
+     "Hepatitis serology, alcohol history, paracetamol level"
+    ],
+    [
+     "**Hepatobiliary malignancy**",
+     "**Weight loss, HARD NODULAR NON-TENDER liver, painless jaundice**",
+     "**Courvoisier: jaundice with a palpable NON-TENDER gallbladder**",
+     "**CT chest, abdomen and pelvis; tumour markers; biopsy** — urgent"
+    ],
+    [
+     "Peptic ulcer and pancreatitis",
+     "Epigastric pain, NSAIDs, alcohol, pain boring to the back",
+     "NSAID use, alcohol, relation to meals",
+     "**Lipase**; endoscopy; H. pylori"
+    ],
+    [
+     "**Right lower lobe pneumonia**",
+     "**Cough, fever, pleuritic pain, breathlessness** — the differential nobody offers",
+     "One respiratory question, and the chest bases on auscultation",
+     "**Chest X-ray** — same day"
+    ],
+    [
+     "Right renal colic or pyelonephritis",
+     "Loin to groin pain, dysuria, haematuria",
+     "Renal angle tenderness, urine dipstick",
+     "Urine dipstick and MSU; CT KUB — same day"
+    ],
+    [
+     "Acalculous cholecystitis",
+     "**Critically ill, diabetic or post-operative patient with a septic picture and mild abdominal signs**",
+     "Comorbidity and recent illness or surgery",
+     "Ultrasound. **Higher rate of gangrene and perforation** — same day"
+    ]
    ]
   },
   "source": "RUQ_Biliary_Pain_2_Case_Tasks_Script_Notability (1).pdf Version B (Mr Okoye, 58, two days of RUQ pain with rigors and hidden jaundice — ascending cholangitis)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › RUQ_Biliary_Pain_2_Case_Tasks_Script_Notability (1).pdf",
-  "findings": [
-   [
-    "General",
-    "Unwell, JAUNDICED with scleral icterus"
-   ],
-   [
-    "Observations",
-    "T 39.1 · HR 112 · BP 108/64 · RR 22 · SpO2 96%"
-   ],
-   [
-    "Abdomen",
-    "RUQ TENDER WITH GUARDING, no mass; MURPHY POSITIVE; liver NOT enlarged"
-   ],
-   [
-    "Chest",
-    "Clear"
-   ],
-   [
-    "Urine dipstick",
-    "BILIRUBIN present"
-   ],
-   [
-    "Bloods",
-    "WCC 18 · CRP 210 · bilirubin 74 · ALP and GGT CLEARLY RAISED · ALT mildly raised · LIPASE NORMAL"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Diagnosing cholecystitis in a jaundiced patient — Murphy's sign is positive in both cholecystitis and cholangitis; the jaundice and the obstructive liver picture (bilirubin, ALP and GGT clearly raised, ALT mildly) are what decide it; on hearing 'Murphy positive', don't commit: 'before I commit — is there any scleral icterus, and what is the bilirubin?' (★)",
-   "FAIL — Never asking the jaundice block — he does not volunteer the yellow eyes, dark urine, pale stools or itching; 'have you or anyone else noticed yellowing of your eyes or skin? has your urine gone dark? have your stools gone pale? any itching?' — if you never ask, he never mentions them, and that is the whole point of the station (★)",
-   "FAIL — Taking the vital signs (39.1, 112, 108/64) and not visibly changing gear — 'those observations concern me and I'll be moving quickly'; if you don't say fluids, cultures and antibiotics within the hour, the examiner records that you did not recognise sepsis; Charcot's triad named (pain, fever with rigors, jaundice); Reynolds' pentad adds hypotension and confusion",
-   "FAIL — Describing Murphy without naming it, or claiming a finding never requested — every step named: scleral icterus in general appearance, palpable gallbladder, liver edge and character, Murphy's sign, liver span, chest bases, rectal with stool colour, dipstick",
-   "DO — Stability first, analgesia offered; pain (under the right ribs, 8/10, after dinner, round to the back on the right, constant now, a couple of shorter episodes last year); 'was the shivering a proper rigor — teeth chattering, couldn't stop?'; confusion, drowsiness, dizziness on standing; GI red flags, liver risk block, the two chest questions, SADMA; summarise back; 'am I alright?' → 'I'm going to be honest with you shortly — let me get the examination findings first'",
-   "SAY — 'You have an infection in the drainage tubes of your liver, which are blocked — almost certainly by a gallstone; ascending cholangitis; it is serious and already affecting your whole body, but very treatable and we start straight away'; plan: a drip in each arm, blood cultures, IV antibiotics within the hour, fluids, analgesia, antiemetic, ultrasound to confirm the blockage, ERCP within 24 hours to decompress the duct — 'not done here, so I'm speaking with the retrieval service now'; cholecystectomy once recovered, ideally the same admission; differentials named and argued (cholecystitis alone, a stone without infection, hepatitis); no gallbladder does not close the biliary tree; painless jaundice with weight loss and a palpable gallbladder — Courvoisier's law, say it by name; a hard, nodular, non-tender liver is malignant infiltration"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-136",
