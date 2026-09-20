@@ -18527,9 +18527,8 @@
  {
   "id": "MED-66",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 360,
-  "setting": "Regional general practice, Wallaroo, South Australia. You are the GP. Booked for routine BP monitoring with the practice nurse; nurse's note: BP 135/85, he has asked to see you because he has been feeling tired.",
   "stem": [
    "James Corrigan, 40, has known hypertension on perindopril for six months. He attended for routine blood pressure monitoring with the practice nurse (BP 135/85 mmHg) and has asked for a consultation because he has been feeling tired lately."
   ],
@@ -18538,92 +18537,207 @@
    "Explain your diagnosis and your differentials to the patient",
    "No management or investigations task — do not drift into either"
   ],
-  "time": "8 minutes, 6 + 2. Acknowledge, contract · sleepy vs low energy — get the fork right in the first minute · H to D in ~90 s · C: the heart-failure screen you must be HEARD to do (clarify the ambiguous night-waking) · O: snoring/witnessed apnoeas, the sleep probe, weight, alcohol, ★ occupation → ★ sleepy at the wheel · hidden cardiac worry · plain-English diagnosis reasoned from his answers · BP link · three reasoned differentials then the list · non-blanket driving advice, safety net.",
+  "findings": [
+   [
+    "NO EXAMINATION TASK in the usual version",
+    "History 6 minutes, then diagnosis and differentials. NO MANAGEMENT TASK, NO INVESTIGATIONS TASK — DO NOT DRIFT INTO EITHER. The failure mode is not running out of time; it is spending five minutes on sleep and never sweeping the rest of the mnemonic"
+   ],
+   [
+    "VERSION — if an examination card is offered",
+    "MALLAMPATI CLASS III · BMI 32 · NECK CIRCUMFERENCE 43 cm · BP 135/85 · afebrile · thyroid normal · no lymphadenopathy · heart sounds normal, no murmur · air entry equal, no added sounds · no hepatosplenomegaly · BSL and urine dipstick normal"
+   ],
+   [
+    "What to request if the card appears",
+    "BMI AND NECK CIRCUMFERENCE · MALLAMPATI CLASS · blood pressure · IS THE NOSE PATENT — nasal obstruction is a genuine treatable contributor and costs three seconds to ask · thyroid and lymph nodes · cardiovascular and respiratory · abdomen for hepatosplenomegaly · office tests"
+   ],
+   [
+    "The number in the stem, and what it is NOT",
+    "BP 135/85. It is UNDER 140/90 — but a SINGLE CLINIC READING IN A TREATED PATIENT IS NOT PROOF OF CONTROL. Say 'CLOSE TO TARGET', never 'fine'. Home or ambulatory readings are more reliable"
+   ],
+   [
+    "What he volunteers freely",
+    "SLEEPY, not low in energy — 'I could fall asleep at my desk at eleven.' A few months, mostly mornings, getting worse. WORSE AFTER A FEW BEERS. Six kilos gained over two years. MORNING HEADACHES that wear off by ten"
+   ],
+   [
+    "What he gives ONLY when asked directly",
+    "SNORING AND WITNESSED APNOEAS — 'my wife says I snore like a chainsaw, and she's said I stop breathing for a second or two.' HE VOLUNTEERS NOTHING ABOUT SNORING UNLESS ASKED"
+   ],
+   [
+    "The rest of the probe, once snoring is positive",
+    "SLEEP NOT REFRESHING — 'eight hours and I feel like I've had two' · POOR MORNING CONCENTRATION · DRY MOUTH on waking · COLLAR GOT TIGHTER · FOUR OR FIVE BEERS MOST NIGHTS, RIGHT UP TO BEDTIME"
+   ],
+   [
+    "The occupation — the reason the case was written",
+    "HE DRIVES A TRUCK, grain haulage, Yorke Peninsula to Port Adelaide. If you never ask his occupation he says at the very end: 'is this going to be a problem for work? I drive a truck'"
+   ],
+   [
+    "The safety answer, after a pause",
+    "'HAVE YOU EVER FELT SLEEPY AT THE WHEEL, OR HAD A NEAR MISS?' → (pause) 'ONCE OR TWICE ON THE COPPER COAST ROAD. I PULLED OVER'"
+   ],
+   [
+    "The deliberately ambiguous answer",
+    "'I sometimes wake at night WITH A START, like I've been holding my breath.' THIS FITS BOTH paroxysmal nocturnal dyspnoea AND an apnoeic arousal. DO NOT SEIZE IT AS HEART FAILURE — clarify: 'when you wake like that, are you BREATHLESS AND NEEDING TO SIT UP, or does it SETTLE IN SECONDS?' → settles straight away"
+   ]
+  ],
+  "findingsLabel": "What he volunteers, and what he gives only when asked",
+  "must": [
+   "FAIL — Never asking about snoring or witnessed apnoeas.",
+   "FAIL — Never asking occupation or driving, then sending a sleepy truck driver back out.",
+   "FAIL — Missing the malignancy or infection screen because the snoring answer arrived early.",
+   "FAIL — A blanket driving ban, or prescribing a sedative for 'poor sleep'.",
+   "ASK — Has anyone told you that you snore, or that you stop breathing or gasp during sleep?",
+   "ASK — What do you do for work? And have you ever felt sleepy at the wheel?"
+  ],
   "back": {
-   "dx": "Obstructive sleep apnoea in a treated hypertensive commercial driver: months of worsening daytime sleepiness (nodding off at his desk), wife reports chainsaw snoring and witnessed apnoeas, unrefreshing sleep, morning headaches, poor morning concentration, dry mouth, 6 kg weight gain with tighter collar, 4–5 beers nightly up to bed, brief nocturnal arousals that settle in seconds (not PND), grain-haulage truck driver with one or two episodes of sleepiness at the wheel; BP 135/85 on perindopril — close to target, not 'fine'. Reasons drawn from his own answers. BP link: OSA is a recognised cause of hypertension resistant to tablets (nocturnal sympathetic surges); treating the OSA may do more than another tablet. Differentials reasoned: heart failure (no chest pain, one pillow, no oedema — the arousals settle in seconds), lymphoma/leukaemia (no weight loss, lumps, sweats), infections — EBV, COVID, hepatitis, HIV (no fever, travel, risk); then hypothyroidism, diabetes, anaemia, haemochromatosis, coeliac, autoimmune, medications/alcohol, depression, shift work. Driving: no blanket ban, no blanket reassurance — 'I am not taking anything off you today'; do not drive sleepy; sleep study; commercial standards stricter (Austroads), specialist opinion and evidence of treatment; hidden worry is his father's MI at 58.",
+   "dx": [
+    "**Obstructive sleep apnoea** — repeated collapse of the pharyngeal airway in sleep causing apnoeas and hypopnoeas, with desaturation and arousal, and daytime consequences.",
+    "**To the patient, in plain English and NEVER as an abbreviation: 'when you fall asleep, the muscles at the back of your throat relax and the airway narrows or closes over. You stop breathing for a few seconds, your body wakes you just enough to open it again, and that can happen dozens of times an hour. YOU NEVER REMEMBER IT — but you never get proper deep sleep, which is why eight hours leaves you exhausted.'**",
+    "**Then the reasons, from HIS OWN ANSWERS: his wife has seen him snore loudly and stop breathing · his sleep is not refreshing · he has morning headaches and cannot concentrate in the mornings · he has gained weight and his collar has tightened · and it is WORSE AFTER ALCOHOL, which relaxes those muscles further.**",
+    "**SENTENCE ONE THAT PASSES THIS STATION — the blood pressure link, said unprompted: 'sleep apnoea is one of the known causes of a blood pressure that will not settle on tablets. Every time the airway closes overnight your body releases a surge of stress hormones, and that keeps the pressure up. So TREATING THE SLEEP APNOEA MAY DO MORE FOR YOUR BLOOD PRESSURE THAN ADDING ANOTHER TABLET.'** That is the answer to 'why did the stem give me a blood pressure?'",
+    "**SENTENCE TWO — occupation and driving. 'I AM NOT TAKING ANYTHING OFF YOU TODAY. But until we have measured this and started treatment, you must not drive if you feel sleepy, and please do not drive long distances alone. Once it is treated, most people drive normally.'**",
+    "**CORRECTION — a blanket driving ban is WRONG and saying it is a management error.** Under **Austroads Assessing Fitness to Drive, fitness turns on SLEEPINESS, not on the diagnosis.** A conditional private licence may be granted where the condition is **treated and controlled with no excessive daytime sleepiness**. Driving stops where there is **excessive daytime sleepiness — particularly at the wheel — or a sleepiness-related crash.** **Commercial standards are stricter and require specialist input and documented treatment adherence.** VERIFY.",
+    "**If challenged: 'I would not impose a blanket ban on the diagnosis alone. I would advise him not to drive while sleepy, assess sleepiness formally, expedite the sleep study, and review fitness to drive against Austroads once treated. In South Australia I am also aware of the statutory reporting duty under the Motor Vehicles Act 1959, which I would use only if he continued to drive against advice.'**",
+    "**Screening stratifies; it does not diagnose. EPWORTH — eight everyday situations, score 0–24, above 10 suggests excessive daytime sleepiness. STOP-BANG — Snoring, Tiredness, Observed apnoeas, Pressure, BMI, Age, Neck, Gender.** **THE SLEEP STUDY IS THE DIAGNOSTIC TEST.** **Severity by AHI: 5–14 mild · 15–29 moderate · 30 or more severe.**",
+    "**Treatment, if asked: WEIGHT LOSS is the only intervention that can CURE it — even 5–10% of body weight measurably lowers the AHI · alcohol avoided 3–4 hours before bed, and sedatives and opioids reviewed · positional therapy where the study shows positional disease · CPAP for moderate to severe, and for mild with significant symptoms · a mandibular advancement splint as an alternative · ENT referral for correctable nasal or tonsillar obstruction · AND RE-CHECK THE BLOOD PRESSURE AFTER TREATMENT rather than escalating the perindopril.**",
+    "**Do not miss: sleepiness at the wheel · a witnessed apnoea in someone with heart failure · weight loss or night sweats hiding behind the snoring · morning headache with a very high BMI, which raises OBESITY HYPOVENTILATION.** **Avoid: framing weight as a moral failing · promising a sleep study 'next week' in a rural practice · taking 135/85 as proof the hypertension is solved.** **PATS · Country Health Connect · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open question; ★ acknowledge ('being tired all the time is wearing'); contract; 'some will sound unrelated — I ask everyone'"
+     "**Introduce, ask if he is comfortable, open question. Then ACKNOWLEDGE — four seconds, and it is a marked item: 'I am sorry to hear that, that sounds wearing.'** Then contract: **'some of these questions will sound unrelated — I ask everyone.'**"
     ],
     [
      "0:30",
-     "★ 'Lack of energy, sleepy, or feverish?' → sleepy · months · mornings · worse · worse after beers · nodding off at his desk, stopping more when driving"
+     "**Explore, six questions, sixty seconds: IS IT A LACK OF ENERGY, FEELING SLEEPY, OR FEELING FEVERISH · how long · constant or coming and going · getting worse · anything better or worse · HOW IS IT AFFECTING YOUR LIFE — WORK, FAMILY, DRIVING?** **Get the fork right in the first minute.**"
     ],
     [
-     "1:15",
-     "H → D in 90 s: tanning/jaundice/urine · polyuria/thirst/weather · weight (gained 6 kg), appetite, lumps, sweats, cancer FHx · fever, sore throat, sexual history, travel · exertional dyspnoea/palpitations, stiffness, headaches (mornings only — 'I'll come back to that'), joints, rash · medicines incl. OTC, mood, anhedonia, stress"
+     "1:30",
+     "**Signpost, then sweep at speed — about ninety seconds for the whole block. H: tanning, jaundice, dark urine, pale stools. E: more urine, more thirsty, hot or cold weather preference.**"
     ],
     [
-     "2:45",
-     "★ C — heard to do it: greasy stools/diarrhoea/blood · chest pain · pillows · ankle swelling · 'wake at night gasping?' → ★ clarify: 'breathless and needing to sit up, or settles in seconds?' → settles · cough · smoking (quit 8 y)"
+     "1:50",
+     "**M: any weight loss · appetite · lumps or bumps · night sweats · any cancer in you or the family? I: fevers or chills · sore throat or flu-like illness · sexually active, condoms · any travel?**"
+    ],
+    [
+     "2:20",
+     "**A: short of breath or heart racing on exertion · stiffness in the shoulders or hips · headaches · joint pains · rashes? D: any medicines including over the counter · how has your mood been · still enjoying things · any stress at home or work?**"
+    ],
+    [
+     "2:50",
+     "**C — the heart failure screen you must be HEARD to do: greasy stools, diarrhoea or blood · ANY CHEST PAIN · HOW MANY PILLOWS DO YOU SLEEP ON · ANY SWELLING IN YOUR LEGS · DO YOU EVER WAKE AT NIGHT GASPING FOR BREATH · any cough · do you smoke?**"
+    ],
+    [
+     "3:20",
+     "**Clarify the ambiguous answer rather than seizing it: 'when you wake like that, are you breathless and needing to sit up, or does it settle in seconds?'**"
     ],
     [
      "3:30",
-     "★ O — the station: 'has anyone ever told you that you snore, or that you stop breathing or gasp during sleep?' → wife: snores, stops breathing · refreshing? · morning headache · morning concentration · dry mouth · weight gain / collar tighter · ★ alcohol — how much and how close to bed · ★ 'what do you do for work?' → truck driver"
+     "**O — PROBE, DO NOT SCREEN. The highest-yield question in the station: 'HAS ANYONE EVER TOLD YOU THAT YOU SNORE, OR THAT YOU STOP BREATHING OR GASP DURING SLEEP?'** Ask for **the partner's account**, not his own."
     ],
     [
-     "4:45",
-     "★ 'Have you ever felt sleepy at the wheel, or had a near miss?' → pause → once or twice, pulled over · 'the gynaecological causes obviously do not apply' · allergies, PMH, FHx (father MI at 58) · ★ 'anything in particular you were worried this might be?' → the heart"
+     "3:50",
+     "**Then, in order: WHEN YOU WAKE UP, IS YOUR SLEEP REFRESHING · ANY MORNING HEADACHES · DIFFICULTY CONCENTRATING IN THE MORNING · DRY MOUTH OR SORE THROAT ON WAKING · HAVE YOU GAINED WEIGHT, HAS YOUR COLLAR GOT TIGHTER · HOW MUCH ALCOHOL, AND HOW CLOSE TO BEDTIME?**"
+    ],
+    [
+     "4:30",
+     "**WHAT DO YOU DO FOR WORK — DO YOU DRIVE AS PART OF YOUR JOB?** Then, whatever he says: **'HAVE YOU EVER FELT SLEEPY AT THE WHEEL, OR HAD A NEAR MISS?'** **Then RETURN TO THE LIST — you still owe the blocks you have not finished.**"
+    ],
+    [
+     "5:00",
+     "**P — say it even though it does not apply: 'the gynaecological causes obviously do not apply here.'** That one clause tells the examiner you ran the whole list rather than forgetting a block. Then **SADMA, family history, and 'was there anything you were worried this might be?'** → **his father's heart attack at 58.**"
     ],
     [
      "6:00",
-     "Start with the worry ('I've asked the heart questions and they're reassuring'); ★ name OSA in plain English (throat muscles go floppy, airway closes, brief arousals dozens of times, never deep sleep); ★ reasons from his answers; ★ BP link; keep taking the tablet"
+     "**Address the hidden worry FIRST: 'let me start there, because it is a fair worry. I have asked the questions I would ask for a heart problem — chest pain, pillows, ankle swelling — and they are all reassuring.'** Then **name it, explain it in plain English, and give the reasons from his own answers.**"
     ],
     [
-     "7:00",
-     "★ Differentials: heart failure, blood cancers, infections reasoned; the rest listed — 'one blood test covers most' · ★ driving: not taking anything off you today; sleep study; don't drive sleepy, pull over, avoid long stretches alone; no alcohol 3–4 h before bed; weight later with permission · safety net (worse headaches, chest pain, ankle swelling, any episode at the wheel) · questions (mask? licence?) · summary"
+     "6:45",
+     "**The blood pressure sentence, unprompted.** Then **'keep taking the tablets — we will review the dose once the sleep is treated.'**"
+    ],
+    [
+     "7:10",
+     "**The differentials, TOP THREE REASONED against his own negatives: heart failure — no chest pain, one pillow, no ankle swelling · lymphoma or leukaemia — no weight loss, no lumps, no night sweats · infections including glandular fever, hepatitis and HIV — no fever, no travel, no unsafe sex.** Then a quick list: thyroid, diabetes, anaemia, haemochromatosis, coeliac, autoimmune, medications and alcohol, depression, shift work."
+    ],
+    [
+     "7:40",
+     "**The driving conversation — neither a blanket ban nor blanket reassurance — and the safety-net: worse headaches, chest pain, ankle swelling, or any episode at the wheel.** **'What questions do you have?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Is it a lack of energy, feeling sleepy, or feeling feverish?' / 'I am going to run through some questions quickly to make sure I am not missing anything.'",
-    "★ 'Has anyone ever told you that you snore, or that you stop breathing or gasp during sleep?' / ★ 'When you wake up, is your sleep refreshing?' / 'Any headache in the morning? Any trouble concentrating in the morning? Dry mouth on waking?'",
-    "★ 'How much alcohol, and how close to bedtime?' / ★ 'What do you do for work?' / ★ 'Have you ever felt sleepy at the wheel, or had a near miss?'",
-    "'When you wake like that — are you breathless and having to sit up, or does it settle in seconds?'",
-    "'The gynaecological causes obviously do not apply here.' / ★ 'Was there anything in particular you were worried this might be?'",
-    "★ 'The muscles at the back of your throat go floppy and the airway closes over. You stop breathing for a few seconds, your body wakes you just enough to open it again, dozens of times a night. You never remember it — but you never get deep sleep, which is why eight hours leaves you wrecked.' / ★ 'The reasons I think this are your own answers…'",
-    "★ 'Sleep apnoea is one of the known reasons a blood pressure will not settle on tablets. Your reading today is close to target — treating the sleep may do more for it than another tablet. Keep taking them.'",
-    "★ 'Because you drive for a living I need to be straight with you. I am not taking anything off you today. The test is a sleep study and I'll get that moving. Until then: do not drive if you feel sleepy, pull over and rest if you do, avoid long stretches alone.'",
-    "'Will I lose my truck licence?' → 'The rules are about sleepiness, not the label. Commercial standards are stricter and need a specialist opinion and evidence that treatment is working. Most people who are treated and controlled keep driving. What I need from you is that you do not drive while sleepy.'",
-    "'I can't afford to stop. I'll push through.' → 'I don't want you to lose your income. But if you keep driving while sleepy I have a duty I cannot ignore — in South Australia doctors are required to report a driver who is unfit. I'd much rather get you treated quickly. Can we agree you won't drive on days you haven't slept?' VERIFY the SA reporting duty before quoting",
-    "'Will I need a mask?' → 'Possibly, and they work very well. If mild, a dental splint may be enough, and weight loss helps more than anything else — could we talk about weight next visit?' Never say OSA, AHI, PSG, CPAP or BMI unexplained."
-   ],
    "pefe": [
-    "No examination task in this version. If a card is offered: BMI, neck circumference, Mallampati class, BP, nasal patency, thyroid and lymph nodes, CVS and respiratory, abdomen, office tests (BSL, dipstick)",
-    "Variant — pillows, ankle swelling, waking breathless positive: heart failure moves up — ECG, BNP, echocardiogram; consider central sleep apnoea with Cheyne–Stokes rather than purely obstructive",
-    "Variant — weight loss and night sweats mid-sweep: examine every node group and the abdomen for hepatosplenomegaly, urgent bloods — exclude a blood cancer before settling on OSA",
-    "Variant — normal BMI, no witnessed apnoeas: OSA still possible (blocked nose, small jaw, crowded airway); think harder about insufficient sleep, shift work, thyroid, anaemia, depression, narcolepsy; sleep diary",
-    "Next steps (not the task): Epworth (>10 = excessive sleepiness; 0–24 over eight situations), STOP-BANG (≥3 raises risk), sleep study (home or lab polysomnography) via sleep physician; screening bloods and ECG; alcohol 3–4 h clear of bed; 5–10% weight loss measurably lowers AHI; CPAP if moderate–severe (AHI 15–29 moderate, ≥30 severe; 5–14 mild); mandibular advancement splint if mild; review BP after treatment; Austroads fitness to drive — commercial standard VERIFY",
-    "SA: PATS >100 km VERIFY · TIS 131 450 · MedSTAR 1300 13 12 33"
+    "**There is no examination or investigations task — do not drift into either.** If asked, the in-room work needs **no equipment: EPWORTH · STOP-BANG · BMI, NECK CIRCUMFERENCE, BLOOD PRESSURE, MALLAMPATI · and asking about driving before he leaves the room.**",
+    "**The sleep study is the diagnostic test** — laboratory polysomnography, or a home study where appropriate. **Epworth and STOP-BANG stratify risk; they do not diagnose.**",
+    "**Bloods to exclude the differentials: FBE, ferritin, TSH, HbA1c or fasting glucose, U&E, LFT, CRP.** **ECG, plus BNP and echocardiogram if heart failure is on the list — and it is.** **Lipids and cardiovascular risk calculation — he is 40 with treated hypertension.**",
+    "**Consider a daytime capillary or arterial blood gas if OBESITY HYPOVENTILATION is suspected** — morning headache with a very high BMI.",
+    "**Four airway levels: NOSE · PALATE · TONSILS · TONGUE BASE.** **Ask 'is your nose usually blocked?' — nasal obstruction is genuine, treatable, and costs three seconds.**",
+    "**SA: no local sleep laboratory. A home (Level 2) study is usually the practical first step; laboratory polysomnography means travel to Adelaide, with PATS subsidising travel over 100 km.** **Respiratory or sleep services at TQEH or the RAH; Country Health Connect; a GP Management Plan for dietetics.**",
+    "**Sleep apnoea can be non-obese: a blocked nose, a small jaw or a crowded airway causes it at a normal BMI.** **Do not exclude it on BMI.**"
    ],
-   "fails": [
-    "Never asking about snoring or witnessed apnoeas ★",
-    "Never asking occupation, or hearing 'truck driver' and not asking about sleepiness at the wheel ★",
-    "Missing the malignancy or infection screen entirely ★",
-    "Imposing a blanket driving ban, or blanket reassurance about the licence ★",
-    "Prescribing a sedative ★",
-    "Seizing the ambiguous night-waking as proof of heart failure without clarifying; not being heard to do the cardiac screen",
-    "Telling him the BP is 'fine'; saying 'OSA' to the patient; a 90-second physiology lecture; reasoning no differentials (or all twelve); never eliciting the cardiac worry"
-   ],
-   "numbers": [
-    "BP 135/85 — close to target on treatment, not 'fine' · perindopril 6 months · weight +6 kg / 2 years · 4–5 beers nightly to bedtime",
-    "Epworth >10 = excessive daytime sleepiness (0–24, eight situations) · STOP-BANG ≥3 raises risk · AHI 5–14 mild · 15–29 moderate · ≥30 severe",
-    "5–10% weight loss measurably lowers the AHI · no alcohol 3–4 h before bed · 4 airway levels · 4 Mallampati classes",
-    "Driving: 'I am not taking anything off you today' — rules are about sleepiness, commercial standard stricter (Austroads) VERIFY; SA reporting duty VERIFY",
-    ">100 km PATS VERIFY · TIS 131 450 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Obstructive sleep apnoea** — the answer",
+     "**Snoring, WITNESSED APNOEAS, unrefreshing sleep, morning headache and poor concentration**, obesity, alcohol, male, hypertension",
+     "**The partner's account**, morning cluster, neck size, Mallampati, **occupation**",
+     "**SLEEP STUDY. Epworth and STOP-BANG stratify but do not diagnose** — semi-urgent"
+    ],
+    [
+     "**Heart failure** — the one the whole class will name",
+     "**Exertional dyspnoea, ORTHOPNOEA, ankle swelling, nocturnal gasping**, chest pain, known hypertension",
+     "**Pillows, ankles, chest pain, exercise tolerance, PND**",
+     "**ECG, BNP, echocardiogram. Central apnoea with a Cheyne–Stokes pattern can COEXIST** — same week"
+    ],
+    [
+     "**Lymphoma, leukaemia, solid tumour**",
+     "Weight loss, night sweats, lumps, anorexia",
+     "The four M questions, plus personal and family cancer history",
+     "FBE and film, ESR/CRP, LDH, all node groups, imaging by history — **urgent if positive**"
+    ],
+    [
+     "**EBV, CMV, COVID, HIV, hepatitis, TB**",
+     "Fever, sore throat, risk exposure, travel, unsafe sex",
+     "**Fevers, flu-like illness, sexual history, travel — asked of everyone**",
+     "Serology by history; **offer an HIV test explicitly** — urgent if febrile"
+    ],
+    [
+     "Hypothyroidism · diabetes",
+     "Cold intolerance, dry skin, constipation, weight gain; or polyuria and polydipsia",
+     "Weather preference, bowels, thirst, urine volume",
+     "**TSH; fasting glucose or HbA1c. Both cheap, both explain tiredness**"
+    ],
+    [
+     "**COPD · obesity hypoventilation**",
+     "Smoker; **morning headache with a VERY high BMI**",
+     "Pack-years, breathlessness, cough",
+     "Spirometry; **daytime blood gas if obesity hypoventilation is suspected**"
+    ],
+    [
+     "Coeliac disease · iron deficiency",
+     "Greasy stool, bloating, pallor, poor diet, blood loss",
+     "Bowel habit, blood in stool, diet",
+     "Coeliac serology on gluten; FBE and ferritin"
+    ],
+    [
+     "**Alcohol · sedatives · opioids · beta-blockers**",
+     "**Evening drinking**, benzodiazepines, opioid analgesia",
+     "Full medication list including over-the-counter and complementary",
+     "**Rationalise. Alcohol and sedatives also WORSEN the apnoea itself**"
+    ],
+    [
+     "Narcolepsy · periodic limb movement · restless legs",
+     "**Sleep attacks mid-conversation, cataplexy**, kicking noted by the partner",
+     "'Do you ever fall asleep mid-sentence?'",
+     "Sleep physician referral, not primary-care testing"
+    ],
+    [
+     "Shift work · insufficient sleep · depression",
+     "Night shifts, short sleep opportunity, low mood, anhedonia",
+     "Occupation, **actual hours in bed**, mood screen",
+     "Sleep diary; PHQ-2"
+    ]
    ]
   },
   "source": "Sleep_Apnoea_Tiredness_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 40, treated hypertensive truck driver — obstructive sleep apnoea)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Sleep_Apnoea_Tiredness_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never asking 'has anyone ever told you that you snore, or that you stop breathing or gasp during sleep?' — this is the station, and nothing about snoring is volunteered (★)",
-   "FAIL — Never asking the occupation, or hearing 'truck driver' and not following with 'have you ever felt sleepy at the wheel, or had a near miss?' — the occupation answer is the reason the case was written (★)",
-   "FAIL — Imposing a blanket driving ban, or blanket reassurance — 'I am not taking anything off you today; the rules are about sleepiness, not the label; do not drive if you feel sleepy'; commercial standards are stricter and need the sleep study (★)",
-   "FAIL — Missing the malignancy or infection screen because you found the snoring — you still owe M, I and the rest; and never prescribe a sedative (★)",
-   "FAIL — Seizing 'I wake with a start' as heart failure — clarify: 'breathless and needing to sit up, or does it settle in seconds?'; then be heard to do the full cardiac screen because his hidden worry is his father's heart attack at 58, and you open the explanation there",
-   "SAY — Plain English, no 'OSA': 'the muscles at the back of your throat go floppy and the airway closes over' with reasons from his own answers (witnessed apnoeas, unrefreshing sleep, morning headaches, collar size, alcohol to bedtime) and the link: 'sleep apnoea is one of the known reasons a blood pressure will not settle on tablets' — never call 135/85 'fine'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-67",
