@@ -80118,7 +80118,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 60,
-  "setting": "A ward emergency where the first sentence is the station. 'Stop the transfusion' comes before any question and before any examination — and the second half is a disclosure station in disguise, because the cause is an identification error and the patient has to be told plainly that she was given the wrong unit.",
   "stem": [
    "Medical ward, regional hospital. You are the HMO. Helen Marsh, 45, admitted with symptomatic iron-deficiency anaemia (Hb 62) from menorrhagia, is receiving her second unit of packed red cells.",
    "Thirty minutes into the unit the nurse calls you: Helen has a headache, feels hot and anxious, has lower back pain and flushed cheeks. Pre-transfusion obs were T 36.8, HR 84, BP 128/80. Now: T 38.7 · HR 118 · BP 96/58 · RR 24 · SpO2 95% on room air.",
@@ -80129,89 +80128,175 @@
    "Take a brief focused history and ask the examiner for examination findings (4 minutes total)",
    "Explain the likely diagnosis and differentials, and your management, to the patient"
   ],
-  "time": "One minute of immediate actions given as numbered orders to the nurse, starting with stop · three minutes of history and examination in which the symptom sequence, the anaphylaxis screen and the taco and trali screen are three questions each · then four minutes on the diagnosis, the five reactions, the renal protection plan and an open disclosure with an apology",
-  "findingsLabel": "The examination, the urine, and the label check that names the cause",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "findings": [
    [
-    "The urine, which you have to ask for",
-    "The catheter bag contains dark red-brown urine — haemoglobinuria. Ask for it by name and send it for free haemoglobin"
+    "Observations — before, and now",
+    "PRE-TRANSFUSION: T 36.8 · HR 84 · BP 128/80. NOW, 30 MINUTES INTO THE SECOND UNIT: T 38.7 · HR 118 · BP 96/58 · RR 24 · SpO2 95% on room air"
+   ],
+   [
+    "General",
+    "FLUSHED, ANXIOUS, RIGORS"
+   ],
+   [
+    "The anaphylaxis screen — ask it, because it is what you are excluding",
+    "CHEST CLEAR, NO WHEEZE OR STRIDOR, NO URTICARIA, NO LIP SWELLING. Three questions and anaphylaxis is off the list"
+   ],
+   [
+    "Abdomen",
+    "Soft, with LOIN TENDERNESS BILATERALLY"
+   ],
+   [
+    "IV site",
+    "Normal"
+   ],
+   [
+    "THE URINE — ask for the catheter bag by name",
+    "DARK RED-BROWN. That is HAEMOGLOBINURIA, and it is the finding that names the reaction"
+   ],
+   [
+    "THE IDENTITY CHECK — the second discriminator",
+    "The unit is labelled for ‘HELEN MARSH’ BUT THE HOSPITAL NUMBER DIFFERS FROM HER WRISTBAND. THE UNIT IS NOT HERS. Check the wristband against the pack label AND the compatibility form, WITH THE NURSE, AT THE BEDSIDE"
+   ],
+   [
+    "Bloods — FROM THE OTHER ARM",
+    "FBE and BLOOD FILM · repeat GROUP AND CROSSMATCH · DIRECT ANTIGLOBULIN TEST · UEC · LDH · BILIRUBIN · HAPTOGLOBIN · COAGULATION SCREEN WITH FIBRINOGEN · BLOOD CULTURES ×2 · URINE FOR HAEMOGLOBIN"
+   ],
+   [
+    "The pack and giving set",
+    "SEND THEM TO THE BLOOD BANK for culture and re-crossmatch. DO NOT DISCARD THEM — keeping the pack is part of the first sentence"
+   ],
+   [
+    "ECG and monitoring",
+    "ECG FOR HYPERKALAEMIA from haemolysis · obs every 15 minutes · strict fluid balance · HOURLY URINE MEASURES · repeat UEC, coags, fibrinogen, LDH and bilirubin 4–6 hourly"
    ]
   ],
   "back": {
-   "dx": "ACUTE HAEMOLYTIC TRANSFUSION REACTION FROM ABO INCOMPATIBILITY — a mis-identified unit — with fever, rigors, hypotension, loin and back pain and haemoglobinuria within the first 15-30 minutes, and DIC and acute kidney injury to follow. The five reactions, each with its clue and its answer: acute haemolytic — fever, rigors, hypotension, loin pain, haemoglobinuria, oozing, identity mismatch; saline to a urine output of at least 1 mL/kg/h, monitor UEC and coags, DIC support, ICU, blood bank, incident report · febrile non-haemolytic — a rise of at least 1 degree with chills but no hypotension in a well patient; stop, exclude the others, paracetamol, leucodepleted products · mild allergic — urticaria and itch with nothing systemic; pause, antihistamine, restart if it settles · anaphylaxis — wheeze, stridor, angioedema and hypotension within minutes; adrenaline IM, fluids, IgA level, washed products · bacterial contamination, especially platelets — high fever, rigors and shock; cultures from patient and pack, broad-spectrum IV antibiotics, ICU · taco — dyspnoea with hypertension, raised JVP and crackles in an elderly or cardiac patient; sit up, oxygen, furosemide, slower future rates · and trali — hypoxia with bilateral infiltrates and hypotension within 6 hours; oxygen and ventilatory support, not diuretics, and report to the blood service. Management of the haemolytic reaction: resuscitate with saline and run fluids to keep urine output above 1 mL/kg/h, which is what protects the kidney from free haemoglobin, with hourly measured output and furosemide only if oliguric despite filling · observations every 15 minutes, an ECG for hyperkalaemia from haemolysis, strict fluid balance, and repeat UEC, coags, fibrinogen, LDH and bilirubin 4-6 hourly · escalate to the registrar and ICU, with MedSTAR if deteriorating rurally and haematology advice through the blood service · blood products for DIC only under haematology guidance · no further blood until the investigation is complete · notify the blood bank and Australian red cross Lifeblood, return the unit and giving set, file the incident report and expect a root-cause analysis of the identification error · and treat the underlying anaemia later with correctly crossmatched blood or IV iron while the menorrhagia is managed. Open disclosure is scored: tell her what happened, that an error occurred and will be investigated and that she will be told the findings, apologise, document it, and offer to call her husband.",
+   "dx": [
+    "**Acute haemolytic transfusion reaction — ABO incompatibility from a MIS-IDENTIFIED UNIT.** **Fever, rigors, hypotension, loin or back pain and haemoglobinuria WITHIN THE FIRST 15–30 MINUTES.** **DIC and acute kidney injury follow.**",
+    "**THE FIRST SENTENCE MUST BE ‘STOP THE TRANSFUSION’ — before questions, before examination.** Then, in order, to the nurse: **‘Disconnect the giving set and KEEP THE PACK AND SET — don't discard them.’ · ‘Keep the cannula, flush with saline and start 0.9% saline VIA A NEW GIVING SET.’ · ‘ABC: oxygen if saturations under 94, full obs every 15 minutes, call the registrar and notify the blood bank.’ · ‘Check the patient's wristband against the blood pack label and the compatibility form WITH ME NOW.’**",
+    "**The three discriminators, in order**: **(1) STOP, first sentence. (2) CHECK THE IDENTITY of unit and patient and recognise the mismatch as the cause. (3) OPEN DISCLOSURE — tell Helen plainly that THE WRONG UNIT WAS GIVEN, rather than hiding behind ‘a reaction’.**",
+    "**THE FIVE REACTIONS** VERIFY — **ACUTE HAEMOLYTIC (ABO)**: fever, rigors, hypotension, loin or back pain, haemoglobinuria, oozing, identity mismatch. **FEBRILE NON-HAEMOLYTIC**: fever rise ≥1°C, chills, **no hypotension, otherwise well.** **ALLERGIC (mild)**: urticaria and itch, no systemic features. **ANAPHYLAXIS**: wheeze, stridor, angioedema, hypotension within minutes. **BACTERIAL CONTAMINATION (especially platelets)**: high fever, rigors, shock. **TACO**: dyspnoea, **HYPERTENSION**, raised JVP, crackles, elderly or cardiac. **TRALI**: hypoxia, bilateral infiltrates, fever, hypotension within 6 hours.",
+    "**TIME COURSE sorts them**: **haemolytic and anaphylaxis — MINUTES** · FNHTR — during or within 4 hours · **TACO and TRALI — within 6 hours** · **delayed haemolytic — 3 to 14 days.**",
+    "**RENAL PROTECTION, QUANTIFIED — this is a scored item, not a gesture.** **IV 0.9% saline bolus 500 mL to 1 L, then an infusion to maintain URINE OUTPUT ABOVE 1 mL/kg/h** — free haemoglobin is what damages the kidney. **Catheter and HOURLY urine measures.** **Consider furosemide 40 mg IV ONLY if oliguric DESPITE adequate filling.** VERIFY",
+    "**Escalate and report**: registrar and physician, **ICU or HDU review**; **MedSTAR 1300 13 12 33** if deteriorating at a rural site; haematology advice via the blood service. **DIC — FFP, cryoprecipitate and platelets UNDER HAEMATOLOGY GUIDANCE ONLY.** **Notify the blood bank and Australian Red Cross Lifeblood, RETURN the unit and set, file an incident report, and expect a root-cause analysis of the identification error.**",
+    "**DO NOT RESTART ANY BLOOD until a full investigation is complete.** Re-crossmatch new units when needed. **Treat the anaemia later with correctly crossmatched blood or IV iron, and manage the menorrhagia that caused it.**",
+    "**OPEN DISCLOSURE, in these words**: **‘Helen, I need to explain what's happened. The blood you were being given was NOT the unit matched for you — the label has a different hospital number. Your immune system is breaking down those blood cells, which is causing the fever, the back pain and the dark urine. We've stopped it, we're giving you fluid to protect your kidneys, and we'll watch your blood counts, clotting and kidney function closely with the senior team. I'M SORRY THIS HAS HAPPENED; IT'S AN ERROR, AND IT WILL BE FULLY INVESTIGATED AND YOU'LL BE TOLD THE FINDINGS.’**",
+    "**Answering ‘Am I going to be all right?’**: **‘Most people recover with the treatment we've started, and we've caught it early. The next hours matter, so you'll be closely monitored, possibly in the high-dependency unit. No more blood will be given until everything has been re-checked. Would you like us to call your husband?’** **Then document, and inform next of kin with consent.**"
+   ],
    "plan": [
     [
-     "0:00",
-     "THE ORDERS TO THE NURSE, IN THIS ORDER: 'STOP THE TRANSFUSION NOW. DISCONNECT THE GIVING SET AND KEEP THE PACK AND THE SET — DO NOT DISCARD THEM.' Then keep the cannula, flush it and start 0.9% saline through a NEW giving set."
+     "0:00 — to the NURSE, before anything else",
+     "**‘STOP THE TRANSFUSION NOW. Disconnect the giving set and keep the pack and set — don't throw them away. Keep the cannula, flush it and start normal saline through a new giving set. Oxygen if her sats drop below 94, obs every 15 minutes, and call the registrar and the blood bank. I'm coming.’**"
     ],
     [
-     "0:20",
-     "ABC and help: oxygen if saturations fall below 94, observations every 15 minutes, call the registrar and notify the blood bank — then 'Check her wristband against the pack label and the compatibility form with me now.'"
+     "0:30",
+     "**‘Helen, I'm Dr ___. We've stopped the blood. Tell me what you're feeling.’** Let her give the sequence: **hot and shivery, then the back ache, then the pounding head, and she is frightened.**"
     ],
     [
      "1:00",
-     "The bloods, from the other arm, named in full: FBE and film · repeat group and crossmatch · direct antiglobulin test · UEC · LDH · bilirubin · haptoglobin · coagulation screen with fibrinogen · two sets of blood cultures · urine for free haemoglobin · and the pack and set to the blood bank for culture and re-crossmatch."
+     "**The anaphylaxis screen in one question**: **‘Any chest tightness, trouble breathing, itching or hives, swelling of the lips?’** → no. **That is TACO, TRALI and anaphylaxis screened in a single breath.**"
+    ],
+    [
+     "1:20",
+     "**Timing and the first unit**: **‘How far into this unit did it start? How was the first unit?’** → about half an hour; the first was fine. **The first unit being uneventful is what makes a unit-specific problem likely.**"
+    ],
+    [
+     "1:40",
+     "**Previous transfusions, pregnancies and allergies** — **pregnancies matter because of alloantibodies.** Then known antibodies, previous reactions, **IgA deficiency**, cardiac or renal disease for fluid tolerance, medications."
     ],
     [
      "2:00",
-     "The history, which is short and diagnostic: what she felt and in what order — hot, rigors, headache, loin pain — and how many minutes into the unit, and how the first unit went."
+     "**‘Nurse, let's check her wristband against the pack together.’** Then to the examiner: **‘May I have the examination, THE URINE IN THE CATHETER BAG, and THE PACK LABEL CHECK?’** **Not asking for the urine and the label is a named trap.**"
     ],
     [
-     "2:45",
-     "The two screens, three questions each: chest tightness, breathlessness, itch, hives or lip swelling for anaphylaxis · and dyspnoea or chest pain for taco and trali · plus previous transfusions, pregnancies and known antibodies, allergies and IgA deficiency, and cardiac or renal disease."
+     "2:30",
+     "**Name it the moment the mismatch appears**: **‘This is an acute haemolytic transfusion reaction — the unit is not hers.’** Then the bloods **from the other arm**, the urine for haemoglobin, and **the pack and giving set to the blood bank.**"
     ],
     [
      "3:30",
-     "The examination and the label check, asked for together — including the urine in the catheter bag and the pack label against the wristband (see findings)."
+     "**The fluid order, with a number**: **‘Give a 500 mL saline bolus now and then run fluids to keep her urine output above about 70 mL an hour; measure it hourly. ECG for potassium.’** Then **call the physician and ICU, and notify the blood bank and the incident system.**"
     ],
     [
      "4:30",
-     "Name it to the patient and give the renal protection plan in numbers: a 500 mL saline bolus now, then fluids to keep urine output above about 70 mL an hour, measured hourly, with an ECG for potassium and ICU review."
+     "**Open disclosure — the apology, the mechanism in plain words, the plan, and the promise that she will be told the findings.**"
     ],
     [
-     "6:00",
-     "OPEN DISCLOSURE, IN PLAIN WORDS AND WITH AN APOLOGY: 'THE BLOOD YOU WERE BEING GIVEN WAS NOT THE UNIT MATCHED FOR YOU — THE LABEL HAS A DIFFERENT HOSPITAL NUMBER. I AM SORRY THIS HAS HAPPENED; IT IS AN ERROR, IT WILL BE FULLY INVESTIGATED AND YOU WILL BE TOLD THE FINDINGS.' Then no further blood until everything is re-checked, an offer to call her husband, and a commitment to come back with results."
+     "6:30",
+     "**Answer ‘will I be all right’ honestly, offer to call Tom, and say you will come back as results arrive.** Then the examiner presentation if asked."
     ]
    ],
-   "planApprox": false,
-   "planNote": "the first sentence is the whole first task — stop, keep the pack, saline through a new line — and the last two minutes are an open disclosure, not a summary",
-   "ask": [
-    "The first sentence, which must come before any question: 'Stop the transfusion now. Keep the pack.'",
-    "The bedside action that names the cause: 'Check her wristband against the pack with me.'",
-    "The physiology in one line, which justifies the fluids: 'Fluids to keep her urine output up, to protect her kidneys from the broken-down blood cells.'",
-    "THE DISCLOSURE, SAID WITHOUT HEDGING: 'THE BLOOD WAS NOT THE UNIT MATCHED FOR YOU. I AM SORRY — IT WILL BE INVESTIGATED.' Hiding behind 'a reaction to the blood' is the failure the station is built to catch.",
-    "Challenges: 'Am I going to be all right?' · 'Why did this happen?' and, if you are evasive, 'Was it the wrong bag?' · and if you slow the rate and give paracetamol, 'My back is getting worse.'"
-   ],
    "pefe": [
-    "Role-player: Helen Marsh, 45, admitted for anaemia from heavy periods. Thirty minutes into her second bag she feels hot and shivery, her lower back aches badly, her head pounds and she is frightened. No breathing trouble, no itch, no lip swelling. The first bag was fine. Two pregnancies, never transfused before, no allergies, no cardiac or renal disease. Her husband is Tom.",
-    "The traps she springs: if the doctor does not tell her the wrong blood was given she asks 'Why did this happen?' and then 'Was it the wrong bag?' · if the doctor slows the rate and gives paracetamol she says her back is getting worse · she asks 'Am I going to be all right?' after the diagnosis and asks for Tom to be called.",
-    "MARK THEM AGAINST THESE: STOPPED THE TRANSFUSION AS THE FIRST ACTION · KEPT THE PACK AND GIVING SET · started saline through a new line while keeping the cannula · called for senior help and notified the blood bank · CHECKED THE WRISTBAND AGAINST THE PACK AND NAMED THE MISMATCH AS THE CAUSE · ASKED FOR THE URINE COLOUR · screened for wheeze, stridor, urticaria and lip swelling · asked about previous transfusions and pregnancies · SENT DAT, REPEAT CROSSMATCH, COAGS, HAPTOGLOBIN, LDH, CULTURES AND URINE HAEMOGLOBIN · GAVE A FLUID PLAN WITH A URINE OUTPUT TARGET · escalated to ICU and did not restart any blood · AND TOLD THE PATIENT PLAINLY THAT AN ERROR HAD OCCURRED, APOLOGISED AND PROMISED THE FINDINGS.",
-    "The patient — Flushed, anxious, rigors · chest clear with no wheeze and no stridor · no urticaria, no lip swelling — which is how anaphylaxis is excluded out loud · abdomen soft with bilateral loin tenderness · IV site normal",
-    "The check that makes the diagnosis — The blood pack is labelled for 'Helen marsh' but the hospital number differs from her wristband. The unit is not hers. Checking the wristband against the pack at the bedside, with the nurse, is a separately marked action",
-    "The time course that sorts the differentials — Haemolytic and anaphylactic reactions come on in minutes · febrile non-haemolytic during or within 4 hours · taco and trali within 6 hours · delayed haemolytic at 3-14 days"
+    "**The examination is short and targeted — you are excluding the other four reactions, not performing a full survey.** General appearance and rigors · **chest for wheeze, stridor and crackles** · **skin for urticaria and lip swelling** · abdomen for **loin tenderness** · the IV site · **the urine in the catheter bag** · **and the pack label against the wristband.**",
+    "**Ask for the urine colour and the label check EXPLICITLY.** They are the two findings that make the diagnosis, and the examiner gives what you ask for.",
+    "**VARIANT — urticaria and itch only**: pause, antihistamine, **restart slowly if resolved**, document.",
+    "**VARIANT — fever 38.2, otherwise well, identity CORRECT**: febrile non-haemolytic reaction **after excluding haemolysis and contamination**; paracetamol; **leucodepleted products and slower future units.**",
+    "**VARIANT — wheeze, stridor, BP 80**: **ANAPHYLAXIS — adrenaline 0.5 mg IM, repeated five-minutely, fluids, IgA and anti-IgA levels, washed products in future.** VERIFY",
+    "**VARIANT — dyspnoea, BP 170, crackles in a 78-year-old**: **TACO — sit up, oxygen, furosemide, slower rates with a prophylactic diuretic in future.** **Note the blood pressure is HIGH, which is what separates it from the others.**",
+    "**VARIANT — TRALI**: hypoxia with bilateral infiltrates within 6 hours. **Oxygen and ventilatory support — NOT diuretics** — and report to the blood service."
    ],
-   "fails": [
-    "★ Not stopping the transfusion immediately — including 'slowing it down'",
-    "★ Not checking the patient and unit identity, and so never naming the cause",
-    "★ Giving paracetamol and continuing as a febrile reaction",
-    "★ Concealing the error from the patient, or describing it only as 'a reaction to the blood'",
-    "Not sending the pack, giving set and bloods to the blood bank; no fluid strategy and no urine output target to protect the kidneys; forgetting the ECG for hyperkalaemia or the DIC and AKI monitoring"
-   ],
-   "numbers": [
-    "Pre-transfusion T 36.8, HR 84, BP 128/80 · now T 38.7, HR 118, BP 96/58, RR 24, SpO2 95% · onset 30 minutes into the unit · Hb 62 on admission · urine output target at least 1 mL/kg/h, about 70 mL an hour for her, measured hourly VERIFY",
-    "Saline bolus 500 mL to 1 L then infusion VERIFY · furosemide 40 mg IV only if oliguric despite adequate filling VERIFY · adrenaline 0.5 mg IM if anaphylaxis, repeated 5-minutely VERIFY · fnhtr is a rise of at least 1 degree without hypotension · repeat UEC, coags, fibrinogen, LDH and bilirubin 4-6 hourly · MedSTAR 1300 13 12 33 · VERIFY all"
+   "ddx": [
+    [
+     "**Acute haemolytic reaction (ABO) — the answer**",
+     "**Fever, rigors, hypotension, LOIN OR BACK PAIN, HAEMOGLOBINURIA, oozing — within 15–30 minutes**; IDENTITY MISMATCH",
+     "Wristband against pack label and compatibility form; urine colour; loin tenderness",
+     "**Stop; saline to urine output ≥1 mL/kg/h; monitor UEC and coags; DIC support; ICU; blood bank; incident report.** VERIFY Emergency"
+    ],
+    [
+     "**Bacterial contamination — especially platelets**",
+     "**HIGH fever, rigors, SHOCK**",
+     "Temperature, perfusion, conscious state",
+     "**Stop; cultures from patient AND pack; broad-spectrum IV antibiotics; ICU.** Emergency"
+    ],
+    [
+     "**Anaphylaxis**",
+     "**WHEEZE, STRIDOR, ANGIOEDEMA, hypotension — within MINUTES**",
+     "Chest, lips and tongue, urticaria",
+     "**Stop; ADRENALINE 0.5 mg IM; fluids; IgA level; washed products in future.** VERIFY Emergency"
+    ],
+    [
+     "Febrile non-haemolytic reaction",
+     "**Fever rise ≥1°C with chills, NO hypotension, otherwise well**",
+     "Blood pressure; identity check CORRECT",
+     "Stop, exclude the others, paracetamol; **may restart slowly if mild after review**; leucodepleted products. Urgent"
+    ],
+    [
+     "Mild allergic reaction",
+     "**Urticaria and itch, NO systemic features**",
+     "Skin; blood pressure normal",
+     "Pause, antihistamine, restart if settled. Routine"
+    ],
+    [
+     "**TACO — transfusion-associated circulatory overload**",
+     "Dyspnoea, **HYPERTENSION**, raised JVP, crackles; elderly or cardiac patient",
+     "Blood pressure **high, not low**; JVP; chest",
+     "Stop; sit up; oxygen; **furosemide**; slower future rates. Urgent"
+    ],
+    [
+     "**TRALI**",
+     "**Hypoxia with BILATERAL INFILTRATES**, fever, hypotension — within 6 hours",
+     "Saturations, chest X-ray",
+     "Stop; oxygen and ventilatory support; **NOT diuretics**; report to the blood service. Emergency"
+    ],
+    [
+     "Delayed haemolytic reaction",
+     "Falling haemoglobin, jaundice, **3 to 14 DAYS** after transfusion",
+     "Bilirubin, LDH, DAT",
+     "Direct antiglobulin test and repeat crossmatch; usually supportive. Soon"
+    ]
    ]
   },
   "source": "Acute_Transfusion_Reaction_Notability.pdf (Helen Marsh, 45, febrile, hypotensive and in loin pain 30 minutes into her second unit of red cells, with haemoglobinuria and a hospital number on the pack that does not match her wristband — a ward emergency where the first sentence is 'stop the transfusion' and the last two minutes are an open disclosure)",
   "drive": "AMC Clinical Notability › Extra cases › Acute_Transfusion_Reaction_Notability.pdf",
   "must": [
-   "FAIL — Not stopping the transfusion immediately, or 'slowing it down' — the first sentence, before questions, before examination: 'stop the transfusion now; disconnect the giving set and keep the pack and set — don't discard; keep the cannula, flush with saline and start 0.9% saline via a NEW giving set; ABC, oxygen if sats under 94, full obs every 15 minutes, call the registrar and notify the blood bank'; if you say 'slow it down and give paracetamol' she says 'my back is getting worse' (★)",
-   "FAIL — Not checking patient and unit identity — the second discriminator: 'check the patient's wristband against the blood pack label and the compatibility form with me now' → the unit is labelled Helen Marsh but the hospital number differs from her wristband — recognise the mismatch as the cause; and not asking for the urine and the pack ('I want a urine sample and the bag inspected for colour; catheter if not in situ' → dark red-brown urine) (★)",
-   "FAIL — Giving paracetamol and continuing as a 'febrile reaction' — fever, rigors, hypotension (128/80 → 96/58), tachycardia, loin and back pain and haemoglobinuria within the first 15–30 minutes of a unit is an acute haemolytic transfusion reaction from ABO incompatibility; FNHTR is a rise ≥1 °C with chills, NO hypotension, otherwise well, ID correct — and only after excluding haemolysis and contamination; the five reactions differentiated in three screening questions ('any chest tightness, trouble breathing, itching or hives, swelling of the lips?'): anaphylaxis (wheeze, stridor, angioedema, hypotension within minutes → adrenaline 0.5 mg IM repeated five-minutely, fluids, IgA and anti-IgA, washed products), bacterial contamination (high fever, rigors, shock, esp. platelets → cultures of patient and pack, broad-spectrum IV antibiotics, ICU), TACO (dyspnoea, hypertension, raised JVP, crackles, elderly or cardiac → sit up, oxygen, furosemide), TRALI (hypoxia, bilateral infiltrates, fever, hypotension within 6 h → oxygen and ventilatory support, NOT diuretics, report to the blood service); delayed haemolytic at 3–14 days (★)",
-   "FAIL — No fluid strategy to protect the kidneys and no urine output target, or not sending the pack and bloods to the blood bank — 'bloods from the OTHER arm: FBE and film, repeat group and crossmatch, direct antiglobulin test, UEC, LDH, bilirubin, haptoglobin, coags with fibrinogen, two sets of blood cultures; urine for haemoglobin; send the pack and giving set to the blood bank for culture and re-crossmatch'; 'a 500 mL to 1 L saline bolus, then fluids to keep her urine output above 1 mL/kg/h — about 70 mL an hour — measured hourly with a catheter; furosemide 40 mg IV only if oliguric despite filling'; obs every 15 minutes, an ECG for hyperkalaemia from haemolysis, repeat UEC, coags, fibrinogen, LDH and bilirubin 4–6-hourly; DIC products only under haematology; no further blood until a full investigation is complete; registrar, physician, ICU/HDU review; MedSTAR from a rural site; blood bank and Lifeblood notified, the unit returned, an incident report and root-cause analysis of the identification error (★)",
-   "FAIL — Concealing the error from the patient — the third discriminator is open disclosure, not hiding behind 'a reaction to blood'; if you don't say it she asks 'why did this happen?' and then 'was it the wrong bag?'; 'Helen, I need to explain what's happened: the blood you were being given was not the unit matched for you — the label has a different hospital number; your immune system is breaking down those blood cells, which is causing the fever, the back pain and the dark urine; we've stopped it, we're giving you fluid to protect your kidneys, and we'll watch your blood counts, clotting and kidney function closely with the senior team; I'm sorry this has happened; it's an error, and it will be fully investigated and you'll be told the findings'; 'am I going to be all right?' → 'most people recover with the treatment we've started, and we've caught it early; the next hours matter, so you'll be closely monitored, possibly in high-dependency; no more blood until everything has been re-checked'; document; inform next of kin with consent ('would you like us to call Tom?') (★)",
-   "DO — Time budget: 0–1 stop, disconnect, saline, ABC, help, identity check; 1–4 the history (what she felt and in what order — hot, rigors, headache, back and loin pain, chest tightness, breathlessness, itch, hives, a feeling of doom; how many minutes into the unit; how the first unit went; previous transfusions and pregnancies — alloantibodies; known antibodies or reactions; allergies, IgA deficiency; cardiac or renal disease for fluid tolerance; medications) and the PEFE (flushed, anxious, rigors; chest clear, no wheeze, stridor or urticaria, no lip swelling; abdomen soft with bilateral loin tenderness; IV site; the urine; the label check); 4–8 diagnosis, differentials, management, disclosure; the examiner presentation: '45-year-old receiving red cells for IDA developed fever, rigors, hypotension, loin pain and haemoglobinuria 30 minutes into the second unit, with a unit–wristband identifier mismatch — acute haemolytic transfusion reaction from ABO incompatibility; differentials: bacterial contamination, anaphylaxis, FNHTR, TACO, TRALI; management: transfusion stopped, saline via a new line, ABC and senior help, identity check, bloods incl. DAT, repeat crossmatch, coags, UEC, haptoglobin and cultures, urine for haemoglobin, fluids to maintain urine output, ICU review, blood bank notified and unit returned, incident report and open disclosure'; the anaemia treated later with correctly crossmatched blood or IV iron, and the menorrhagia managed"
-  ]
+   "FAIL — Not stopping the transfusion immediately, or ‘slowing it down’. The first sentence must be STOP, before any question and before any examination.",
+   "FAIL — Not checking the identity of patient and unit, or not recognising the mismatch as the cause.",
+   "FAIL — Giving paracetamol and continuing as a ‘febrile reaction’; not sending the pack and bloods to the blood bank.",
+   "FAIL — No fluid strategy to protect the kidneys and no urine output target; or concealing the error from the patient.",
+   "ASK — Nurse, check her wristband against the blood pack label and the compatibility form with me now.",
+   "ASK — Any chest tightness, trouble breathing, itching or hives, swelling of the lips? Three questions, and anaphylaxis is excluded."
+  ],
+  "v2": true
  },
  {
   "id": "OG-83",
@@ -80724,7 +80809,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "A rural access problem wearing a dental infection. Two things are scored that have nothing to do with the antibiotic: screening for the spread that closes an airway, and actually getting a health care card holder 90 km from a dentist into a chair this week. 'Amoxicillin and see a dentist' fails on both.",
   "stem": [
    "General practice, rural South Australia — nearest dentist 90 km, public dental clinic in the regional centre. Wayne cole, 40, a seasonal farm worker on a health care card, presents with 3 days of severe throbbing pain in a lower left back tooth, now with swelling of the left cheek and jaw, difficulty opening his mouth fully and a bad taste.",
    "He has had a broken tooth 'For months', has not seen a dentist for 10 years and smokes 20 a day. T 38.2 · HR 96 · BP 130/84.",
@@ -80735,92 +80819,181 @@
    "Ask the examiner for the examination findings",
    "State your diagnosis and differentials, and outline management including the most important safety considerations"
   ],
-  "time": "Four minutes of history in which the airway screen comes second, not last, and the analgesic and access questions both get asked · one minute of examination requested with the floor of mouth, tongue position, trismus, swallowing and voice named explicitly · three minutes on the diagnosis, the antibiotics-are-not-the-cure message, the dental pathway and the red flags",
-  "findingsLabel": "The findings — and the negatives you have to say out loud",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "findings": [
    [
-    "The tooth and the swelling",
-    "Left facial swelling over the mandible, warm and tender, with a fluctuant area intra-orally buccal to the lower left first molar · the tooth grossly carious with a fractured crown and exquisitely tender to percussion · gingiva swollen, foul halitosis · left submandibular node 1.5 cm and tender"
+    "Observations",
+    "T 38.2 · HR 96 · BP 130/84. CAPILLARY GLUCOSE 6.4 — ask for it: undiagnosed diabetes belongs on the list"
    ],
    [
-    "The airway negatives, which are the mark",
-    "Floor of mouth soft · tongue not elevated · no sublingual or submandibular board-like swelling · no drooling, swallowing saliva normally · voice normal · no stridor. Saying these aloud is how you demonstrate you excluded Ludwig's angina rather than just not finding it"
+    "Face and intra-oral",
+    "LEFT FACIAL SWELLING over the mandible, WARM and TENDER. A FLUCTUANT area intra-orally BUCCAL TO THE LOWER LEFT FIRST MOLAR. The tooth is GROSSLY CARIOUS with a FRACTURED CROWN, EXQUISITELY TENDER TO PERCUSSION. Gingiva swollen. FOUL HALITOSIS"
+   ],
+   [
+    "Mouth opening",
+    "ABOUT 25 mm — MILD TRISMUS. Ask it as ‘how many fingers can you fit between your teeth?’ — about two"
+   ],
+   [
+    "THE AIRWAY SCREEN — and SAY THE NEGATIVES OUT LOUD",
+    "FLOOR OF MOUTH SOFT · TONGUE NOT ELEVATED · NO sublingual or submandibular BOARD-LIKE swelling · NO DROOLING · SWALLOWING SALIVA · VOICE NORMAL · NO STRIDOR. This is the discriminator, and stating it aloud is the mark"
+   ],
+   [
+    "Lymph nodes",
+    "LEFT SUBMANDIBULAR NODE 1.5 cm, TENDER"
+   ],
+   [
+    "Periorbital region",
+    "NO periorbital swelling — screens cavernous sinus thrombosis and orbital cellulitis, which belong to UPPER teeth"
+   ],
+   [
+    "Chest",
+    "Clear"
+   ],
+   [
+    "Analgesia history — ask it, or you will miss the overdose",
+    "ABOUT TEN PANADOL A DAY. THAT IS OVER THE SAFE LIMIT. He will not volunteer it"
+   ],
+   [
+    "Bloods, if systemically unwell",
+    "FBE, CRP, GLUCOSE AND HbA1c as a NEW DIABETES SCREEN, UEC. OPG X-ray if available"
+   ],
+   [
+    "THE DEEP-SPACE CARD — if ANY of these appear",
+    "BOARD-LIKE SUBMANDIBULAR SWELLING, TONGUE ELEVATED, DROOLING, VOICE CHANGE, SEVERE TRISMUS → LUDWIG'S ANGINA. Sit up, OXYGEN, IV access, IV antibiotics, MedSTAR 1300 13 12 33, ENT and maxillofacial, anaesthetic-capable airway. NEVER LIE HIM FLAT"
    ]
   ],
   "back": {
-   "dx": "Acute periapical (Dentoalveolar) abscess of the lower left first molar with localised buccal-space cellulitis, systemic features and mild trismus. The explanation to Wayne: 'You have an abscess — a pocket of pus — at the root of that broken tooth, and the infection has spread into the cheek. The tooth is dead and infected, and antibiotics alone will not fix it: the pus has to be drained and the tooth root-treated or, more likely, taken out by a dentist. The one thing I have checked carefully is that the infection has not spread under your tongue or into your neck, because that can block the airway — yours has not.' Differentials: Ludwig's angina — bilateral submandibular and sublingual board-like swelling with tongue elevation and drooling, an airway emergency · parapharyngeal or retropharyngeal abscess — severe trismus, dysphagia, neck pain, toxic · pericoronitis around a partially erupted wisdom tooth · submandibular sialadenitis or stone — swelling with meals, pus from the duct · mumps or parotitis — parotid and often bilateral · cavernous sinus thrombosis from upper teeth — periorbital swelling, proptosis, cranial nerve signs, an emergency · mandibular osteomyelitis — chronic, sequestra, numb lip · and TMJ dysfunction or trigeminal neuralgia, which have neither swelling nor fever. Management: analgesia first and properly — regular paracetamol plus ibuprofen with food, which in combination outperforms either alone for dental pain, with the 4 g daily paracetamol ceiling spelled out because he is already taking ten tablets a day, and no escalating opioids VERIFY · antibiotics as an adjunct only, justified here by spreading swelling and fever: amoxicillin with metronidazole, or clindamycin if penicillin-allergic, with the alcohol warning for metronidazole VERIFY · incision and drainage under local if fluctuant and accessible intra-orally, otherwise the extraction is the drainage · warm salt-water rinses, soft diet, fluids, hygiene · bloods if systemically unwell with FBE, CRP, UEC and a glucose or HbA1c as a new-diabetes screen, and an opg if available · and the part the station is really about: the health care card makes him eligible for SA dental service emergency care, so phone the regional community dental clinic from the room for an appointment inside 24-48 hours, name the private cost alternative honestly, offer PATS if he is referred to the Adelaide dental hospital, and sort transport — his brother can drive, or community transport. Safety-netting is specific to deep neck infection: straight to emergency, day or night, for swelling under the tongue or into the neck, inability to swallow saliva, drooling, voice change, mouth opening less than two fingers, swelling towards the eye, rigors or confusion. Then 48-hour review, smoking cessation with Quitline 13 7848, sugar and oral hygiene advice, and a medical certificate.",
+   "dx": [
+    "**Acute periapical (dentoalveolar) abscess of the lower left first molar, with LOCALISED BUCCAL-SPACE CELLULITIS, systemic features and MILD TRISMUS.**",
+    "**THE THREE DISCRIMINATORS**: **(1) check the airway-threatening spread — floor of mouth, tongue elevation, drooling, dysphagia, voice change, stridor, severe trismus = LUDWIG'S ANGINA or a deep neck space infection, and that is an emergency.** **(2) Recognise that THE GP CANNOT CURE A DENTAL ABSCESS — antibiotics are an adjunct; definitive treatment is DRAINAGE or EXTRACTION by a dentist.** **(3) SOLVE THE ACCESS PROBLEM — public dental emergency pathway, cost, transport, PATS.**",
+    "**‘Candidates who write amoxicillin and “see a dentist” fail on BOTH counts.’** Say the negatives of the airway screen out loud, then say plainly that the dentist is the treatment, **and show him how he gets there.**",
+    "**Explaining it**: **‘You have an abscess — a pocket of pus — at the root of that broken tooth, and the infection has spread into the cheek. The tooth is DEAD and infected, and ANTIBIOTICS ALONE WON'T FIX IT: the pus has to be drained and the tooth root-treated or, more likely, taken out by a dentist. What I can do today is get the infection under control, get you pain relief that's safe, and get you to a dentist quickly and affordably. The one thing I've checked carefully is that the infection hasn't spread under your tongue or into your neck, because that can block the airway — yours hasn't.’**",
+    "**ANALGESIA — the combination, and it beats either alone for dental pain**: **paracetamol 1 g QID PLUS ibuprofen 400 mg TDS with food.** VERIFY **Warn of the paracetamol maximum of 4 g a day — he is taking ten tablets daily.** **AVOID escalating opioids.**",
+    "**ANTIBIOTICS AS ADJUNCT, because of the spreading swelling and fever**: **amoxicillin 500 mg TDS for 5 days PLUS metronidazole 400 mg BD for 5 days.** VERIFY **NO ALCOHOL with metronidazole.** **Clindamycin 300 mg 8-hourly if penicillin allergic.** **IV benzylpenicillin, amoxicillin-clavulanate or clindamycin AND admission if systemic toxicity, more than moderate trismus, or deep space involvement.**",
+    "**THE ACCESS PLAN, which is half the station**: **Health Care Card → eligible for SA DENTAL SERVICE EMERGENCY CARE. PHONE THE REGIONAL COMMUNITY DENTAL CLINIC NOW for an urgent appointment within 24–48 hours.** Explain the private alternative and its cost. **PATS if referred to the Adelaide Dental Hospital.** Aboriginal dental programs where applicable. **ASK ABOUT TRANSPORT — community transport, or family.** *His brother can drive him.*",
+    "**Also**: warm salt-water mouth rinses, soft diet, fluids, keep hygiene up · **if fluctuant and accessible intra-orally, incision and drainage can be done under local anaesthetic; otherwise extraction IS the drainage** · **review in 48 hours, or by phone** · **medical certificate.**",
+    "**THE RED FLAGS, given verbatim**: **‘Go straight to emergency, day or night, if the swelling moves UNDER YOUR TONGUE or INTO YOUR NECK, you CAN'T SWALLOW YOUR SPIT, you DROOL, your VOICE CHANGES, you CAN'T OPEN YOUR MOUTH TWO FINGERS, the swelling reaches your EYE, or you get SHAKING CHILLS.’**",
+    "**Prevention, raised without moralising**: **smoking cessation (Quitline 13 7848) — ‘the smoking is the biggest thing for your gums, when you're ready’** · sugar reduction · brushing and fluoride · regular dental checks."
+   ],
    "plan": [
     [
      "0:00",
-     "The pain and the swelling: site, throbbing character, worse lying flat or at night, duration, previous episodes, the broken tooth, and the spread — cheek, under the jaw, neck, eye — plus bad taste or spontaneous discharge."
+     "**The pain** — site, character (throbbing, **worse lying down and at night**, hot or cold sensitivity), duration, previous episodes, **the broken tooth history**, and **the over-the-counter analgesia with doses.**"
     ],
     [
-     "1:00",
-     "The airway and deep-space screen, asked early: difficulty swallowing saliva · drooling · a muffled hot-potato voice · the tongue feeling pushed up · neck stiffness · breathing difficulty or trouble lying flat · and how many fingers he can fit between his teeth."
+     "0:45",
+     "**The swelling** — onset, **spread: cheek, under the jaw, neck, eye** · **trismus in finger widths** · bad taste or discharge, which means spontaneous drainage."
+    ],
+    [
+     "1:15 ★",
+     "**THE AIRWAY AND DEEP-SPACE SCREEN, asked as the SECOND question of the consultation**: **‘Any trouble swallowing your spit? Any drooling? Any muffled or “hot potato” voice? Does your tongue feel pushed up? Any neck stiffness? Any difficulty breathing, or lying flat?’**"
     ],
     [
      "1:45",
-     "WHAT HE HAS BEEN TAKING — AND HE IS ON ABOUT TEN PARACETAMOL A DAY, WHICH IS OVER THE CEILING. Finding this is a mark; correcting it is another."
+     "**Systemic**: fever, rigors, malaise, appetite. *He was hot and sweaty last night.*"
+    ],
+    [
+     "2:00",
+     "**Dental history and the barriers**: last visit, hygiene, other bad teeth, dentures — **and then the barriers explicitly: cost, distance, fear.** *Ten years, cost, and 90 km.*"
     ],
     [
      "2:30",
-     "Medical background that changes the plan: diabetes or immunosuppression · valve disease or a prosthetic valve · anticoagulants or bleeding disorders before any extraction · penicillin allergy · medications."
+     "**Medical**: **diabetes, immunosuppression** · **heart valve disease or a prosthetic valve** for endocarditis considerations · **bleeding disorders or anticoagulants**, because extraction is coming · allergies, particularly penicillin · medications."
     ],
     [
-     "3:15",
-     "The barriers, asked out loud: last dental visit and what has stopped him — cost, distance, fear · health care card status · transport · work impact · smoking, alcohol, sugary drinks, methamphetamine."
+     "3:00",
+     "**Social and habits**: smoking, alcohol, sugar-sweetened drinks, **methamphetamine — ‘meth mouth’** · **Health Care Card status for public dental eligibility** · transport · work impact · living alone."
     ],
     [
      "4:00",
-     "The examination request with the airway items named: facial and intra-oral findings, floor of mouth, tongue position, trismus, swallowing, voice, neck and periorbital swelling, vitals and a fingerprick glucose (see findings)."
+     "**Ask for the examination, naming the airway items**: **‘I'd like the facial and intra-oral findings, SPECIFICALLY the floor of the mouth, tongue position, trismus, swallowing, voice, and any neck or periorbital swelling, plus vitals and a fingerprick glucose.’**"
     ],
     [
      "5:00",
-     "The diagnosis and the central message: antibiotics are an adjunct, the dentist is the treatment — then the analgesic plan correcting his paracetamol use, and the antibiotics with the alcohol warning (see dx)."
+     "**Name it, state the airway negatives out loud, and say plainly that antibiotics won't cure it.** Then the differentials."
     ],
     [
-     "6:30",
-     "Solve the access problem in the room: phone the community dental clinic for an urgent appointment on the health care card, arrange transport, mention PATS for Adelaide — then the deep neck red flags, a 48-hour review, the diabetes screen and Quitline, and ask him to repeat the plan."
+     "6:00",
+     "**The access plan — phone the clinic in the room** — then the analgesia correction, the antibiotics, the rinses, the bloods, the 48-hour review, and the red flags."
     ]
    ],
-   "planApprox": false,
-   "planNote": "four minutes of history with the airway screen asked second and the cost and transport barriers asked as clinical questions, because the plan collapses without them",
-   "ask": [
-    "The screen that comes before anything else: 'Any trouble swallowing your spit, drooling, or your voice changing? Is your tongue feeling pushed up? How many fingers between your teeth?'",
-    "The sentence the station is built around: 'Antibiotics alone will not cure this — the pus needs draining by a dentist, and that tooth probably needs to come out.'",
-    "The answer to 'I can't afford a dentist': 'With your health care card this is treated as a dental emergency through the public service — I will phone the clinic now and ask for you to be seen in the next day or two.'",
-    "The analgesic correction, said without alarm: 'Ten Panadol a day is over the safe limit — two tablets four times a day, no more than eight, plus ibuprofen with food. Together they work better than either alone.'",
-    "Challenges: 'I can't afford a dentist' and, if you offer no solution, 'So it's just the antibiotics then?' · and he asks what to do if it gets worse over the weekend, which is your opening for the deep neck red flags."
-   ],
    "pefe": [
-    "Role-player: Wayne cole, 40, seasonal farm worker on a health care card. A broken lower left back tooth for months; three days of throbbing pain worse at night, left cheek swollen, mouth opens about two fingers, foul taste, hot and sweaty last night. Swallowing fine, voice normal, no neck or tongue swelling. No dentist for ten years because of cost and 90 km. Smokes 20 a day, a few beers, no known diabetes, no allergies. His brother can drive him.",
-    "What he withholds: the ten paracetamol a day — he does not mention it unless asked what he has been taking. He says 'I can't afford a dentist' as soon as one is mentioned, and if no solution follows he settles for 'So it's just the antibiotics then?'",
-    "Mark them against these: asked the airway and deep-space questions early · asked how wide he can open · asked what analgesia he has taken and corrected it · asked about diabetes, valves, anticoagulants and allergies · asked why he has not seen a dentist and addressed cost and distance · requested floor of mouth, tongue, trismus, swallowing and voice by name · stated the airway negatives out loud · named a periapical abscess with buccal cellulitis · gave Ludwig's and parapharyngeal abscess as the must-excludes · said plainly that antibiotics are not the cure · prescribed paracetamol with ibuprofen rather than an opioid · added metronidazole for spreading infection with the alcohol warning · arranged urgent public dental care and transport in the room · screened for diabetes · gave deep neck red flags and a 48-hour review · and raised smoking without lecturing.",
-    "The trismus, measured — Mouth opening about 25 mm — mild, roughly two fingers. Severe trismus would point to deep neck space involvement and change the disposition entirely",
-    "The rest of the screen — No periorbital swelling, which is what you look for with upper teeth and cavernous sinus spread · chest clear · capillary glucose 6.4, which still leaves an HbA1c worth doing"
+    "**Ask for the airway items BY NAME or you will not be given them.** **‘Floor of mouth, tongue position, trismus, swallowing, voice, and any neck or periorbital swelling.’** **Asking only about the tooth is the named trap.**",
+    "**Then state the negatives aloud as part of your reasoning**: **floor of mouth soft, tongue not raised, swallowing saliva, voice normal, mouth opens two fingers.** That sentence is the discriminator.",
+    "**Bloods if systemically unwell**: FBE, CRP, **glucose and HbA1c as a new diabetes screen**, UEC. **OPG X-ray if available.**",
+    "**VARIANT — board-like submandibular swelling, drooling, tongue up**: **LUDWIG'S ANGINA. Sit up, oxygen, IV benzylpenicillin plus metronidazole or clindamycin** VERIFY **, IV dexamethasone** VERIFY **, MedSTAR, ENT and maxillofacial, an airway plan. NEVER LIE FLAT.**",
+    "**VARIANT — upper canine with periorbital swelling**: **cavernous sinus thrombosis or orbital cellulitis risk — IV antibiotics, CT, urgent transfer.**",
+    "**VARIANT — anticoagulated on warfarin needing extraction**: **check the INR; a dentist can usually extract with local measures if the INR is under about 3.5–4** VERIFY **; DO NOT stop warfarin without advice.**",
+    "**VARIANT — child with a dental abscess**: paediatric dosing; **SA Dental Service is free for children**; check nutrition and sugar intake."
    ],
-   "fails": [
-    "★ Not screening for Ludwig's angina and airway compromise — the swelling that kills in this station is the one under the tongue",
-    "★ Treating antibiotics as definitive and giving no dental plan",
-    "★ Not addressing cost and transport for a Health Care Card holder 90 km from a dentist",
-    "★ Reaching for opioids first line instead of the paracetamol and ibuprofen combination",
-    "Missing the paracetamol overuse; no diabetes or immunosuppression screen; no red flags, or generic ones that are not specific to deep neck infection"
-   ],
-   "numbers": [
-    "T 38.2, HR 96, BP 130/84 · mouth opening 25 mm, about two fingers · submandibular node 1.5 cm · capillary glucose 6.4 · he is taking about 10 paracetamol daily against a 4 g ceiling",
-    "Amoxicillin 500 mg 8-hourly for 5 days, plus metronidazole 400 mg 12-hourly if spreading or systemic; clindamycin 300 mg 8-hourly if penicillin-allergic VERIFY · paracetamol 1 g QID plus ibuprofen 400 mg TDS with food VERIFY · IV therapy and admission for systemic toxicity, more than moderate trismus or deep space involvement VERIFY · public dental emergency appointment within 24-48 hours · MedSTAR 1300 13 12 33 · Quitline 13 7848 · VERIFY all"
+   "ddx": [
+    [
+     "**Periapical abscess with buccal cellulitis — the answer**",
+     "Carious tooth, **percussion tenderness**, fluctuant buccal swelling, fever, mild trismus",
+     "Intra-oral fluctuance, foul halitosis, tender regional node",
+     "**Analgesia combination, antibiotics as ADJUNCT, and DENTAL DRAINAGE OR EXTRACTION.** Urgent dental"
+    ],
+    [
+     "**Ludwig's angina**",
+     "**BILATERAL submandibular and sublingual BOARD-LIKE swelling, TONGUE ELEVATION, DROOLING** — airway emergency",
+     "Floor of mouth, tongue position, drooling, voice, stridor, severe trismus",
+     "**Sit up, oxygen, IV antibiotics, MedSTAR, ENT/maxfax, airway plan. NEVER LIE FLAT.** Emergency"
+    ],
+    [
+     "Parapharyngeal / retropharyngeal abscess",
+     "**SEVERE trismus, dysphagia, neck pain, toxic**",
+     "Mouth opening, neck tenderness, systemic state",
+     "CT neck, IV antibiotics, urgent ENT. Emergency"
+    ],
+    [
+     "**Cavernous sinus thrombosis**",
+     "**UPPER teeth**, periorbital swelling, proptosis, cranial nerve signs",
+     "Periorbital region, eye movements, pupils",
+     "**IV antibiotics, CT, urgent transfer.** Emergency"
+    ],
+    [
+     "Pericoronitis",
+     "**Partially erupted third molar with an operculum**",
+     "Inspect around the wisdom teeth",
+     "Irrigation, analgesia, dental review. Routine"
+    ],
+    [
+     "Submandibular sialadenitis or stone",
+     "**Swelling WITH MEALS**, stone palpable, pus from the duct",
+     "Bimanual palpation of the duct, milking the gland",
+     "Ultrasound; sialogogues, hydration, antibiotics if infected. Soon"
+    ],
+    [
+     "Mumps / parotitis",
+     "**PAROTID**, often bilateral, viral prodrome",
+     "Site of swelling — in front of and below the ear",
+     "Clinical; serology if needed. Routine"
+    ],
+    [
+     "Osteomyelitis of the mandible",
+     "**Chronic**, sequestra, **NUMB LIP**",
+     "Duration, lip sensation",
+     "Imaging, prolonged antibiotics, maxillofacial referral. Urgent"
+    ],
+    [
+     "Trigeminal neuralgia · TMJ dysfunction",
+     "**NO swelling, NO fever**; electric-shock pain, or clicking and locking",
+     "Absence of systemic features; joint palpation",
+     "Clinical. Routine"
+    ]
    ]
   },
   "source": "Dental_Abscess_Rural_Notability.pdf (Wayne Cole, 40, a Health Care Card holder 90 km from a dentist with a periapical abscess, buccal cellulitis, fever and mild trismus — a station scored on the Ludwig's angina screen stated out loud, on saying antibiotics are not the cure, and on actually getting him into a dental chair this week)",
   "drive": "AMC Clinical Notability › Extra cases › Dental_Abscess_Rural_Notability.pdf",
   "must": [
-   "FAIL — Not screening for Ludwig's angina and airway compromise — the airway questions in the SECOND question of the history and the negative findings stated aloud: 'any trouble swallowing your spit, drooling, your voice sounding different, your tongue feeling pushed up, swelling under the jaw or in the neck, trouble breathing or lying flat?'; 'how many fingers can you fit between your teeth?' (two = mild trismus); at examination ask explicitly for the floor of the mouth, tongue position, trismus, swallowing, voice, neck and periorbital swelling — 'floor of mouth soft, tongue not raised, swallowing saliva, voice normal, mouth opens two fingers'; the variant (board-like bilateral submandibular swelling, drooling, tongue up) → sit up, never lie flat, oxygen, IV access, IV benzylpenicillin plus metronidazole or clindamycin, IV dexamethasone, MedSTAR 1300 13 12 33, ENT/maxillofacial, an anaesthetic-capable airway plan; an upper canine with periorbital swelling → cavernous sinus thrombosis or orbital cellulitis — IV antibiotics, CT, urgent transfer (★)",
-   "FAIL — Antibiotics as definitive treatment with no dental plan, or not addressing cost and transport for a Health Care Card holder — 'antibiotics and see a dentist' fails on both counts; 'antibiotics alone won't cure this — the tooth is dead and infected, the pus has to be drained and the tooth root-treated or, more likely, taken out by a dentist; what I can do today is get the infection under control, get you pain relief that's safe, and get you to a dentist quickly and affordably'; 'I can't afford a dentist' → 'with your Health Care Card you're eligible for the SA Dental Service, and infections like this are treated as emergencies — I'll phone the community dental clinic in town now and ask for you to be seen in the next day or two; if you needed the Dental Hospital in Adelaide, PATS helps with travel; can someone drive you, or should we look at community transport?' (his brother can); give no solution and he asks 'so it's just the antibiotics then?' — the trap (★)",
-   "FAIL — Opioids as first-line analgesia, or missing the paracetamol overuse — 'what painkillers have you taken?' → 'Panadol, probably ten a day' (not mentioned unless asked) → 'that's over the safe limit; we'll fix the plan'; paracetamol 1 g QID (max eight tablets, 4 g/day) PLUS ibuprofen 400 mg TDS with food — 'together they work better than either alone'; antibiotics as an adjunct because of spreading swelling and fever: amoxicillin 500 mg TDS 5 days plus metronidazole 400 mg BD 5 days ('no alcohol with the metronidazole'), clindamycin if penicillin-allergic; IV and admission if systemically toxic, more than moderate trismus, or deep-space involvement (★)",
-   "FAIL — Missing the diabetes and immunosuppression screen, or no red flags — 'diabetes, heart valve problems, blood thinners, allergies to antibiotics? smoking, drinking?'; a fingerprick glucose in the room (6.4) and bloods if unwell — FBE, CRP, glucose or HbA1c as a new-diabetes screen, UEC; OPG if available; 'go straight to emergency, day or night, if the swelling moves under your tongue or into your neck, you can't swallow your spit, you drool, your voice changes, you can't open your mouth two fingers, the swelling reaches your eye, or you get shaking chills'; 'what if it gets worse over the weekend?' is asked — answer it; review in 48 hours or by phone (★)",
-   "DO — Pain (throbbing, worse lying and at night, hot and cold), the broken tooth 'for months', previous episodes, analgesia used; swelling (onset, spread to cheek, under the jaw, neck, eye), trismus in finger widths, bad taste or discharge (spontaneous drainage); fever, rigors, malaise; dental history (last visit ten years ago, hygiene, other bad teeth, dentures; barriers — cost, 90 km, fear); medical (diabetes, immunosuppression, valve disease — endocarditis considerations, bleeding disorders or anticoagulants for extraction, penicillin allergy); smoking 20/day, alcohol, sugary drinks, methamphetamine; social (the Health Care Card, transport, work, a certificate); the examination — left facial swelling over the mandible, a warm tender fluctuant area buccal to the lower left first molar, a grossly carious tooth with a fractured crown exquisitely tender to percussion, foul halitosis, a tender submandibular node; differentials with discriminators (Ludwig's — bilateral board-like submandibular swelling, tongue elevation, drooling; parapharyngeal abscess — severe trismus, dysphagia, neck pain, toxic; pericoronitis — a partially erupted third molar; sialadenitis — swelling with meals, a stone, pus from the duct; mumps; cavernous sinus thrombosis; mandibular osteomyelitis — chronic, a numb lip; TMJ or trigeminal neuralgia — no swelling, no fever)",
-   "SAY — 'You have an abscess — a pocket of pus — at the root of that broken tooth, and the infection has spread into the cheek; the fever tells me your body's fighting it; the one thing I've checked carefully is that the infection hasn't spread under your tongue or into your neck, because that can block the airway — yours hasn't'; incision and drainage intra-orally under local if fluctuant and accessible, otherwise extraction is the drainage; warm salt-water rinses, soft diet, fluids, hygiene; prevention when it settles — 'the smoking is the biggest thing for your gums — Quitline 13 7848 when you're ready', sugar reduction, brushing and fluoride, regular checks; a medical certificate; the examiner presentation: '40-year-old smoker with a grossly carious lower left first molar, three days of throbbing pain, buccal-space swelling, fever and mild trismus, no deep-space or airway signs — acute periapical abscess with localised cellulitis; differentials Ludwig's, parapharyngeal abscess, pericoronitis, sialadenitis; plan — paracetamol plus ibuprofen, amoxicillin and metronidazole, salt-water rinses, urgent public dental appointment for drainage or extraction via the Health Care Card, glucose screen, 48-hour review, airway red flags, smoking cessation'; warfarin needing extraction → check the INR, usually extractable with local measures if under 3.5–4, don't stop warfarin without advice; a child → SA Dental Service is free, paediatric dosing, check nutrition and sugar"
-  ]
+   "FAIL — Not screening for Ludwig's angina and airway compromise.",
+   "FAIL — Antibiotics offered as definitive treatment with no dental plan. Antibiotics are an adjunct; the dentist is the treatment.",
+   "FAIL — Not addressing cost and transport for a Health Care Card holder 90 km from a dentist.",
+   "FAIL — Opioids as first-line analgesia; missing the diabetes or immunosuppression screen; no red flags given.",
+   "ASK — Any trouble swallowing your spit, drooling, or your voice sounding different? Is your tongue feeling pushed up?",
+   "ASK — What painkillers have you taken, and how many a day? Ten Panadol daily is over the limit and he will not tell you otherwise."
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-85",
@@ -81039,7 +81212,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "A dermatology station scored on potency. She has been using 1% hydrocortisone on lichenified elbows and it has never worked — prescribe it again and you have repeated the failed plan, which she will say out loud. Two more marks sit on the photo itself: the honey-coloured crusts, and the wet work that keeps her hands in it all day.",
   "stem": [
    "General practice, regional South Australia. Emily Ross, 24, a hairdresser, presents with a 3-month itchy rash in the elbow creases, behind the knees and on the neck and eyelids, worse at night. She scratches until it bleeds and sleeps poorly.",
    "She has hay fever and had 'Baby eczema'. She has been using a supermarket moisturiser and a 1% hydrocortisone cream 'When it's bad'. A photograph of the antecubital fossae is provided: ill-defined erythematous, excoriated, lichenified plaques with some crusting.",
@@ -81050,96 +81222,181 @@
    "Describe the rash to the examiner and state your diagnosis with differentials",
    "Explain the diagnosis and management to the patient"
   ],
-  "time": "Four minutes of history that must establish exactly what she has been using and how much, her occupation, and how she feels about steroids · one minute describing the photograph in a fixed formula and naming three differentials with discriminators · three minutes on the barrier explanation, the two pillars with potencies and quantities, the infection, the gloves and the herpeticum red flag",
-  "findingsLabel": "The photograph, described to formula — and the rest of the skin",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "findings": [
    [
-    "The photograph, said aloud",
-    "Symmetrical, bilateral antecubital fossae · ill-defined erythematous plaques with lichenification — thickened skin with accentuated markings · multiple linear excoriations · and on the left, several honey-coloured crusts suggesting secondary bacterial infection · no vesicles, no pustules, no scale, no punched-out erosions"
+    "THE PHOTOGRAPH — describe it with the formula, do not say ‘red itchy rash’",
+    "SITE → DISTRIBUTION → MORPHOLOGY (macule/papule/plaque) → COLOUR → SURFACE (scale, crust, excoriation, lichenification) → BORDER → SECONDARY CHANGE → ASSOCIATED FEATURES"
+   ],
+   [
+    "The description, word for word",
+    "‘SYMMETRICAL, BILATERAL ANTECUBITAL FOSSAE. ILL-DEFINED ERYTHEMATOUS PLAQUES with LICHENIFICATION — thickened skin with accentuated markings — multiple LINEAR EXCORIATIONS, and on the left several HONEY-COLOURED CRUSTS suggesting SECONDARY BACTERIAL INFECTION. No vesicles, pustules or scale, no punched-out erosions. In keeping with chronic flexural atopic dermatitis with impetiginisation’"
+   ],
+   [
+    "Skin examination on request",
+    "Flexural lichenified plaques with excoriations. A FEW HONEY-COLOURED CRUSTS on the LEFT antecubital fossa. NO VESICLES. No pustules"
+   ],
+   [
+    "The negatives that exclude the differentials",
+    "NAIL PITTING ABSENT · NO SCALY SCALP · PALMS CLEAR · NO BURROWS IN THE WEB SPACES. Those four exclude psoriasis, seborrhoeic dermatitis and scabies in one sweep"
+   ],
+   [
+    "Vitals and nodes",
+    "TEMPERATURE 36.8, NO LYMPHADENOPATHY — she is not systemically unwell"
+   ],
+   [
+    "What you are LOOKING FOR and did NOT find",
+    "NO MONOMORPHIC PUNCHED-OUT VESICLES OR EROSIONS. That is ECZEMA HERPETICUM, and excluding it explicitly is part of the description"
+   ],
+   [
+    "The treatment history — ask exactly what, how much, how often, how long",
+    "A SUPERMARKET MOISTURISER ‘when I remember’ and 1% HYDROCORTISONE ‘when it's bad’. THAT IS UNDER-TREATMENT, and it is why it ‘never works’. You cannot diagnose under-treatment without asking HOW MUCH"
+   ],
+   [
+    "Steroid phobia — ask it DIRECTLY",
+    "‘How do you feel about steroid creams?’ → ‘I've read they thin your skin.’ If you do not ask, she will not tell you, and she will not use what you prescribe"
+   ],
+   [
+    "The occupation",
+    "HAIRDRESSER — WET HANDS ALL DAY, rarely gloves. Long hot showers. Irritant and allergic contact overlap, and a patch-test question"
+   ],
+   [
+    "Swab and bloods",
+    "SWAB THE CRUSTED AREA FIRST, then treat. No routine bloods"
    ]
   ],
   "back": {
-   "dx": "ADULT ATOPIC DERMATITIS — chronic, flexural and lichenified — with secondary staphylococcal impetiginisation of the left antecubital fossa, on an atopic background of infantile eczema, hay fever and family asthma, and an occupational wet-work trigger. The explanation: 'Eczema is a condition where the skin barrier is leaky and the immune system in the skin over-reacts — it is not an infection and not an allergy to one thing. It runs with hay fever and asthma. It is controlled rather than cured, and it has not been controlled because the treatment has been too weak and too little.' Differentials with discriminators: allergic or irritant contact dermatitis, which in a hairdresser can coexist — hands and forearms in a pattern matching exposure, confirmed on patch testing · scabies — burrows in the web spaces and wrists, nocturnal itch, itchy contacts, genital papules · psoriasis — extensor, well-demarcated, silvery scale, nail pitting, scalp · seborrhoeic dermatitis — greasy scalp, nasolabial and chest scale · tinea incognito — asymmetric with an annular edge lost after steroid use, diagnosed on scraping · eczema herpeticum — monomorphic punched-out vesicles and erosions with fever, an emergency · and cutaneous t-cell lymphoma for persistent atypical plaques in an older adult that never respond. The treatment ladder is where the marks are VERIFY: emollient first — thick and fragrance-free, twice daily to the whole body and after every wash, quantified at 250-500 g a week for an adult, with a soap substitute, short lukewarm showers, patting dry and cotton clothing · then a topical corticosteroid matched to site and used until clear and then stopped: moderate to potent on trunk and limbs, such as methylprednisolone aceponate 0.1% or mometasone 0.1% once daily, and mild to moderate on face, eyelids and neck, such as hydrocortisone 1% or desonide — a fingertip unit of each, daily for one to two weeks, then twice-weekly weekend maintenance on the spots that keep flaring · the infected elbow swabbed and treated with oral flucloxacillin, or cephalexin if penicillin-allergic, with dilute bleach baths twice weekly for recurrent infection · a sedating antihistamine at night short term for sleep rather than for the itch itself, nails kept short, wet wraps for a severe flare · a calcineurin inhibitor such as pimecrolimus or tacrolimus if the face or eyelids need more than two weeks of steroid · the occupational layer, which is separately scored: nitrile gloves with cotton liners for wet work, hand emollient at every break, occupational advice or workcover, and dermatology patch testing for PPD, fragrance and preservatives · and step-up to dermatology for phototherapy, methotrexate, ciclosporin or dupilumab under PBS criteria. Finish with a written eczema action plan, review at two weeks, and the red flags: fever, a rapidly spreading painful rash, clusters of small blisters or punched-out erosions, or eye involvement — same day.",
+   "dx": [
+    "**Adult atopic dermatitis — flexural, lichenified — with likely SECONDARY STAPHYLOCOCCAL INFECTION (impetiginisation) of the left elbow.**",
+    "**THE FIVE DISCRIMINATORS**: **(1) describe the rash SYSTEMATICALLY; (2) recognise the atopic triad and the FLEXURAL pattern; (3) treat with the RIGHT-POTENCY topical steroid, NOT 1% hydrocortisone, plus a proper emollient regimen; (4) spot the IMPETIGINISED patch and treat it; (5) the OCCUPATIONAL trigger — wet work as a hairdresser.**",
+    "**THE EXAMINER IS LISTENING FOR POTENCY.** **Naming a MODERATE–POTENT steroid for the body and a MILD one for the face, used DAILY UNTIL CLEAR, alongside a QUANTIFIED emollient regimen.** **Candidates who prescribe ‘hydrocortisone cream and moisturiser’ repeat the failed plan.**",
+    "**Explaining it**: **‘Eczema is a condition where the SKIN BARRIER IS LEAKY and the immune system in the skin OVER-REACTS — it isn't an infection or an allergy to one thing. It runs with hay fever and asthma. It's CONTROLLED RATHER THAN CURED, and the two pillars are restoring the barrier with moisturiser and calming the flare with the right-strength steroid cream used properly.’**",
+    "**PILLAR ONE — EMOLLIENT, QUANTIFIED**: thick, fragrance-free (sorbolene with glycerine, or an ointment), **twice daily to the WHOLE BODY and after every wash — 250 to 500 g PER WEEK for an adult.** VERIFY **Soap substitute, short lukewarm showers, pat dry, cotton clothing.** To her: **‘a 500-gram tub should last about a week or two.’**",
+    "**PILLAR TWO — POTENCY MATCHED TO SITE**: **TRUNK AND LIMBS — moderate/potent: methylprednisolone aceponate 0.1% or mometasone 0.1% ONCE DAILY.** **FACE, EYELIDS AND NECK — mild to moderate: hydrocortisone 1% or desonide.** VERIFY **Use ENOUGH — a fingertip unit — daily for one to two weeks until clear, then TWICE-WEEKLY ‘weekend’ maintenance on trouble spots.** **1% hydrocortisone on lichenified elbows is too weak, and that is why it never works.**",
+    "**Answering steroid phobia with a SPECIFIC safety explanation, not reassurance**: **‘Skin thinning happens with STRONG steroids used CONTINUOUSLY on THIN skin for MONTHS. Used this way — to clear a flare and then stopped — it's safe, and the untreated scratching does more damage.’**",
+    "**THE INFECTION**: the crusted left elbow — **swab first, then flucloxacillin 500 mg QID for 7 days** VERIFY **(cephalexin if penicillin allergic).** **Dilute bleach baths twice weekly for recurrent infection.** VERIFY",
+    "**The rest**: **sedating antihistamine at night SHORT TERM — for sleep, NOT for the itch itself** · keep nails short · **wet wraps for a severe flare** · **face and eyelids: if a steroid is needed beyond two weeks, a calcineurin inhibitor — pimecrolimus 1% or tacrolimus** VERIFY · **OCCUPATION: nitrile gloves with COTTON LINERS for wet work, hand emollient at every break, consider occupational advice, and PATCH TESTING via dermatology for PPD, fragrance and preservatives.**",
+    "**Step-up via dermatology**: phototherapy, methotrexate or ciclosporin, **dupilumab under PBS criteria.** VERIFY **Give a WRITTEN ECZEMA ACTION PLAN and review in 2 weeks.** **RED FLAGS — same day: fever, a rapidly spreading painful rash, CLUSTERS OF SMALL BLISTERS OR PUNCHED-OUT SORES (eczema herpeticum), and eye involvement.**"
+   ],
    "plan": [
     [
      "0:00",
-     "The rash itself: onset, sites over time, itch severity and timing, sleep loss, bleeding or weeping — then the infection and herpeticum questions: crusting, oozing, pain, spreading redness, any clusters of small blisters, fever, cold sores in the household."
+     "**The rash** — onset, **sites over time**, **itch severity and timing**, **sleep loss**, bleeding or weeping, **any blisters**, **fever or feeling unwell** (herpeticum)."
+    ],
+    [
+     "0:45",
+     "**The atopic background** — childhood eczema, asthma, hay fever, food allergy, **family atopy.** *Baby eczema, spring hay fever, mother has asthma.*"
     ],
     [
      "1:15",
-     "The atopic background: childhood eczema, asthma, hay fever, food allergy and family atopy."
+     "**Triggers** — heat, sweat, wool, soaps, **hot showers**, stress, seasonal — **and the occupation: hairdresser, wet work, shampoos, dyes, gloves?**"
     ],
     [
-     "1:45",
-     "The treatment history in detail — exactly what, how much, how often and for how long. '1% hydrocortisone when it's bad' is the answer that explains the whole presentation, and asking how much emollient she uses is a mark in itself."
+     "1:45 ★",
+     "**TREATMENTS — EXACTLY what, HOW MUCH, HOW OFTEN, HOW LONG.** *Supermarket moisturiser ‘when I remember’, 1% hydrocortisone ‘when it's bad’.* **That answer IS the diagnosis of under-treatment.** Also emollient type and frequency, over-the-counter or ‘natural’ remedies, previous steroid courses."
     ],
     [
-     "2:30",
-     "The triggers and the occupation: heat, sweat, wool, soaps, hot showers, stress, season — and the hairdressing, with wet work, shampoos, dyes and whether she wears gloves."
+     "2:15",
+     "**Infection** — crusting, oozing, pain, spreading redness, **cold sores in the household.**"
     ],
     [
-     "3:15",
-     "THE QUESTION MOST CANDIDATES SKIP: 'HOW DO YOU FEEL ABOUT STEROID CREAMS?' She has read that they thin the skin, and if you do not surface it she will not use what you prescribe. Then impact on work, mood and cost, plus pregnancy plans, medications and allergies."
+     "2:35",
+     "**Impact and background** — work, relationships, mood, cost · PMHx, medications, allergies, **pregnancy plans, because they affect therapy choice** · smoking and alcohol."
+    ],
+    [
+     "3:00 ★",
+     "**Steroid phobia, asked directly**: **‘How do you feel about steroid creams?’** → *‘I've read they thin your skin.’* **Surface it now, answer it in the management block — do not discover it after you have prescribed.**"
     ],
     [
      "4:00",
-     "Describe the photograph to formula, ask for the rest of the skin and the vitals, then give the diagnosis and three differentials with discriminators (see findings)."
+     "**Describe the photograph to the examiner using the formula**, then ask for the rest of the skin examination and vitals."
     ],
     [
      "5:00",
-     "The explanation and Pillar one: the barrier concept, controlled not cured, and a quantified emollient regimen with a soap substitute and shower advice."
+     "**State the diagnosis with the differentials and their discriminators**, including **‘I've looked for eczema herpeticum and not found it.’**"
     ],
     [
-     "6:00",
-     "Pillar two with potency by site and an explicit answer to the steroid fear, then the infected elbow swabbed and treated, the night sedation, the gloves and patch testing, the written action plan, two-week review, the herpeticum red flag and a teach-back (see dx)."
+     "5:30",
+     "**The barrier explanation → emollient with a QUANTITY → the right-potency steroid with the phobia answered → the infection → the occupation → written action plan → the herpeticum red flag → ‘what's your plan when you get home?’**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "four minutes of history in which two questions do the work — what exactly she has been using, and how she feels about steroids — then a plan that fixes potency and quantity rather than repeating them",
-   "ask": [
-    "The question that explains the failure: 'What are you putting on it, how often, and how much?'",
-    "The one that decides whether she uses your prescription: 'How do you feel about steroid creams?' — answered specifically: 'Skin thinning happens with strong steroids used continuously on thin skin for months. Used this way — strong enough, long enough, then stop — it is safe, and the untreated scratching does more damage.'",
-    "The quantified instructions that separate a pass from 'Moisturise and steroid': 'A 500-gram tub should last a week or two' and 'Mometasone once a day, a fingertip amount, every day until the skin is smooth, then just on weekends where it flares.'",
-    "The explanation in her language: 'Leaky skin barrier, over-reacting skin immune system' and 'Controlled rather than cured.'",
-    "Challenges: 'I've read they thin your skin' · 'And the weepy bit?' if you have not addressed the crusting · and, if you prescribe hydrocortisone for the body again, 'That's what I've been using.'"
-   ],
    "pefe": [
-    "Role-player: Emily Ross, 24, hairdresser. Three months of intensely itchy rash in the elbow creases, behind the knees, neck and eyelids, scratching until it bleeds, sleeping badly. The left elbow has been crusty and weepy this week. Baby eczema, spring hay fever, mother has asthma. Supermarket moisturiser occasionally and 1% hydrocortisone when bad, which never works so she stops. Wet hands all day and rarely gloves. Long hot showers. Not pregnant, no medications, no allergies.",
-    "How she plays it: when steroids are mentioned she says she has read they thin the skin and stays reluctant until it is explained how they will be used and stopped. She asks about the weepy elbow if it is not addressed, and points out that hydrocortisone is what she has already been using.",
-    "Mark them against these: asked how much cream and how often · asked about crusting, blisters and fever · asked about the atopic background and family history · asked about her occupation and gloves · asked about steroid fears directly · described the rash systematically rather than calling it a red itchy rash · named the honey-coloured crusts as secondary infection · asked for web spaces, nails and scalp · stated that eczema herpeticum was looked for and excluded · gave at least three differentials with discriminators · explained the barrier concept · quantified the emollient · prescribed a moderate-potent steroid for the body and a mild one for the face · gave a stop rule and weekend maintenance · answered the thinning fear specifically · swabbed and treated the infection · addressed gloves and patch testing · and gave a written action plan, two-week review and the herpeticum red flag.",
-    "The description formula — Site → distribution → morphology → colour → surface → border → secondary change → associated features. 'Red itchy rash' scores nothing",
-    "The rest of the skin, asked for by name — No burrows in the web spaces, which addresses scabies · no nail pitting and no scaly scalp, which addresses psoriasis · palms clear · afebrile at 36.8 with no lymphadenopathy",
-    "What you are looking for and did not find — Monomorphic punched-out vesicles or erosions with fever and an unwell patient would be eczema herpeticum — a same-day diagnosis. Stating that you looked for it and excluded it is the safety mark"
+    "**Describe before you diagnose, and use the formula every time**: **site → distribution → morphology → colour → surface → border → secondary change → associated features.** **‘Red itchy rash’ scores nothing.**",
+    "**The four negatives that clear the field in one sweep**: **no burrows in the web spaces** (scabies) · **no nail pitting and no scaly scalp** (psoriasis) · **palms clear** · **no monomorphic punched-out vesicles** (eczema herpeticum).",
+    "**Swab the crusted area before starting the antibiotic.** No routine bloods.",
+    "**VARIANT — eczema herpeticum**: fever with **monomorphic punched-out vesicles or erosions** → **oral aciclovir or valaciclovir** VERIFY **, ophthalmology if periocular, hospital if unwell, and STOP the topical steroid until treated.**",
+    "**VARIANT — hand eczema only, in a hairdresser**: **irritant contact dermatitis.** Gloves, emollient, **potent steroid OINTMENT**, patch testing, occupational health.",
+    "**VARIANT — child with widespread eczema**: wet wraps, bleach baths, a family action plan, **growth check**, and **food allergy referral ONLY if there is a clear correlation.**",
+    "**VARIANT — pregnant**: **emollient plus a mild or moderate steroid is safe; avoid systemic agents; discuss dupilumab with a specialist.**"
    ],
-   "fails": [
-    "★ Prescribing 1% hydrocortisone for lichenified limb eczema — repeating the plan that has already failed for three months",
-    "★ Missing the honey-coloured crusts and leaving the impetiginisation untreated",
-    "★ Not quantifying the emollient or giving no frequency, so 'moisturise more' means nothing",
-    "★ Missing the eczema herpeticum red flags, or never mentioning them as return advice",
-    "Not asking about occupation and wet work; never surfacing steroid phobia, so the prescription goes unused; describing the rash as 'red and itchy' instead of to formula"
-   ],
-   "numbers": [
-    "Emollient 250-500 g per week for an adult, twice daily and after every wash VERIFY · one fingertip unit per application · topical steroid daily until clear, usually 1-2 weeks, then twice-weekly maintenance VERIFY · review at 2 weeks",
-    "Body: methylprednisolone aceponate 0.1% or mometasone 0.1% once daily VERIFY · face, eyelids and neck: hydrocortisone 1% or desonide, with pimecrolimus or tacrolimus if more than 2 weeks is needed VERIFY · flucloxacillin 500 mg QID for 7 days, cephalexin if penicillin-allergic, swab first VERIFY · dilute bleach baths twice weekly for recurrent infection VERIFY · step-up options phototherapy, methotrexate, ciclosporin, dupilumab on PBS criteria VERIFY · VERIFY all"
+   "ddx": [
+    [
+     "**Atopic dermatitis — the answer**",
+     "**FLEXURAL, itchy, chronic, atopic history, LICHENIFIED**",
+     "Atopic triad, family atopy, distribution, lichenification and excoriation",
+     "**Clinical.** Emollient plus potency-matched topical steroid; **treat the impetiginisation.** Routine"
+    ],
+    [
+     "**Allergic / irritant contact dermatitis — occupational**",
+     "**Hands and forearms, pattern matching the exposure**; patch test positive",
+     "**Occupation — wet work, shampoos, dyes, gloves**",
+     "Patch testing for PPD, fragrance, preservatives. **IT CAN COEXIST — this is not either/or.** Soon"
+    ],
+    [
+     "Scabies",
+     "**Burrows in the web spaces and wrists, NOCTURNAL itch, ITCHY CONTACTS**, papules on the genitals",
+     "Web spaces, wrists, genitals; ask about household itch",
+     "Skin scraping; permethrin for the patient and all contacts. Soon"
+    ],
+    [
+     "Psoriasis",
+     "**EXTENSOR** surfaces, **well-demarcated SILVERY SCALE**, **NAIL PITTING**, scalp involvement",
+     "Nails, scalp, extensor surfaces, umbilicus, natal cleft",
+     "Clinical. **Flexural and ill-defined here — the opposite pattern.** Routine"
+    ],
+    [
+     "Seborrhoeic dermatitis",
+     "**GREASY scale** on scalp, nasolabial folds and chest",
+     "Scalp, face, chest distribution",
+     "Clinical; antifungal and mild steroid. Routine"
+    ],
+    [
+     "Tinea incognito",
+     "**ASYMMETRIC**, annular edge lost after steroid use",
+     "Asymmetry; previous steroid application",
+     "**Skin scraping for mycology** — and stop the steroid. Routine"
+    ],
+    [
+     "**Eczema herpeticum**",
+     "**MONOMORPHIC PUNCHED-OUT vesicles or erosions, FEVER, unwell, rapidly spreading and PAINFUL**",
+     "Morphology of the vesicles; fever; cold sores in the household",
+     "**SAME-DAY aciclovir and urgent review; ophthalmology if periocular; stop the topical steroid.** VERIFY Emergency"
+    ],
+    [
+     "Cutaneous T-cell lymphoma",
+     "**Persistent atypical plaques in an OLDER adult, unresponsive to treatment**",
+     "Age, duration, failure of appropriate therapy",
+     "Skin biopsy; dermatology. **Consider when ‘eczema’ does not behave like eczema.** Urgent"
+    ]
    ]
   },
   "source": "Adult_Atopic_Dermatitis_Notability.pdf (Emily Ross, 24, a hairdresser with three months of flexural lichenified eczema, an impetiginised left elbow and steroid phobia, treated so far with 1% hydrocortisone when bad — a station scored on potency by site, quantified emollient, catching the infection on the photograph and managing the wet work)",
   "drive": "AMC Clinical Notability › Extra cases › Adult_Atopic_Dermatitis_Notability.pdf",
   "must": [
-   "FAIL — Prescribing 1% hydrocortisone for lichenified limb eczema — that is the failed plan she walked in with ('that's what I've been using'); the examiner is listening for POTENCY matched to site: 'for the elbows, knees and neck I'll give you mometasone (or methylprednisolone aceponate) once a day, a good fingertip amount, every day until the skin is smooth — usually one to two weeks — then just on weekends to the places that flare; for the eyelids a mild one, hydrocortisone or desonide, for a few days only'; 'strong enough, long enough, then stop'; 1% hydrocortisone on lichenified elbows is too weak — that is why it 'never works' (★)",
-   "FAIL — Not quantifying emollient use or frequency — 'what are you putting on it, how often and how much?' → a supermarket moisturiser 'when I remember'; the plan: 'a thick, fragrance-free moisturiser over your whole body twice a day and after every wash — a 500-gram tub should last about a week or two' (250–500 g a week for an adult); a soap-free wash, short lukewarm showers (she has long hot ones), pat dry, cotton clothing; 'moisturise and steroid' without amounts repeats the failed plan (★)",
-   "FAIL — Missing the crusts and the infection on the photo — 'several honey-coloured crusts on the left antecubital fossa suggesting secondary bacterial infection'; 'the left elbow's got crusty and weepy this week' → 'that's a skin infection with the golden staph that lives on eczema; I'll swab it and start flucloxacillin 500 mg QID for a week' (cephalexin if penicillin-allergic); dilute bleach baths twice weekly for recurrent infection; if you don't address it she asks 'and the weepy bit?' (★)",
-   "FAIL — Not asking about occupation or steroid phobia, not describing the rash systematically, or missing the eczema herpeticum red flags — 'what's your work?' → a hairdresser, hands wet all day, rarely gloves (irritant and allergic contact overlap — nitrile gloves with cotton liners for wet work, hand emollient at every break, patch testing via dermatology for PPD, fragrance and preservatives, occupational advice); 'how do you feel about steroid creams?' → 'I've read they thin your skin' → 'skin thinning happens with strong steroids used continuously on thin skin for months; used this way to clear a flare and then stopped, it's safe, and the untreated scratching does more damage'; the rash formula — site → distribution → morphology → colour → surface (scale, crust, excoriation, lichenification) → border → secondary change: 'symmetrical, bilateral antecubital fossae; ill-defined erythematous plaques with lichenification — thickened skin with accentuated markings — multiple linear excoriations, and on the left several honey-coloured crusts; no vesicles, pustules or scale, no punched-out erosions; in keeping with chronic flexural atopic dermatitis with impetiginisation' ('red itchy rash' scores nothing); the red flag: 'if you get clusters of small blisters or punched-out sores, fever, or the rash spreads fast and is painful, come the same day — that can be a cold-sore virus infection of the eczema' (oral aciclovir or valaciclovir, ophthalmology if periocular, hospital if unwell, stop the topical steroid until treated) (★)",
-   "DO — The history: onset, sites over time, itch severity and timing (worse at night, scratches till it bleeds, hardly sleeping), blisters, fever or unwell; the atopic triad (baby eczema, spring hay fever, mum's asthma); triggers (heat, sweat, wool, soaps, hot showers, stress, seasonal, work); treatments exactly — what, how much, how often, how long; infection signs; cold sores in the household; impact on work, relationships, mood, cost; pregnancy plans (affects therapy); the examination requested for the rest of the skin — no burrows in the web spaces (scabies), no nail pitting or scaly scalp (psoriasis), palms clear, afebrile, no nodes; differentials with discriminators — occupational contact dermatitis (hands and forearms, pattern matching exposure, patch test — can coexist), scabies (burrows, nocturnal itch, itchy contacts, genital papules), psoriasis (extensor, well-demarcated silvery scale, nails, scalp), seborrhoeic dermatitis (greasy scale, scalp, nasolabial), tinea incognito (asymmetric, the annular edge lost after steroid — scraping), eczema herpeticum, cutaneous T-cell lymphoma in an older adult",
-   "SAY — 'Eczema is a condition where the skin barrier is leaky and the immune system in the skin over-reacts — it isn't an infection or an allergy to one thing; it runs with hay fever and asthma; it's controlled rather than cured, and it hasn't been controlled because the treatment has been too weak and too little; two pillars — restoring the barrier with moisturiser, and calming the flare with the right-strength steroid cream used properly'; itch and sleep — a sedating antihistamine at night short term (for sleep, not the itch itself), nails short, wet wraps for a severe flare; face and eyelids needing steroid beyond two weeks → a calcineurin inhibitor (pimecrolimus or tacrolimus); step-up via dermatology — phototherapy, methotrexate or ciclosporin, dupilumab; a written eczema action plan, review two weeks; teach-back ('what's your plan when you get home?' → 'the big tub, moisturise twice a day, mometasone every day on the body till clear, hydrocortisone on the eyelids, antibiotics, gloves at work'); the examiner presentation: '24-year-old hairdresser with three months of flexural lichenified itchy plaques on an atopic background — chronic adult atopic dermatitis with secondary impetiginisation of the left antecubital fossa; differentials occupational contact dermatitis, scabies, psoriasis, tinea incognito; eczema herpeticum excluded clinically; plan — emollient regimen, moderate-potent topical steroid to the body and mild to the face daily until clear with weekend maintenance, oral flucloxacillin, trigger and occupational measures, written action plan, review two weeks, dermatology if uncontrolled'; pregnant → emollient plus mild or moderate steroid is safe, avoid systemics"
-  ]
+   "FAIL — Prescribing 1% hydrocortisone for lichenified limb eczema. That is the failed plan she came in on.",
+   "FAIL — Not quantifying emollient use or frequency; not asking how much cream she actually applies.",
+   "FAIL — Missing the honey-coloured crusts and the secondary infection.",
+   "FAIL — Not asking about occupation or steroid phobia; not describing the rash systematically; missing the red flags for eczema herpeticum.",
+   "ASK — How do you feel about steroid creams? Steroid phobia is common and she will not raise it herself.",
+   "ASK — What are you putting on it, how often, and how much? Under-treatment is the diagnosis within the diagnosis."
+  ],
+  "v2": true
  },
  {
   "id": "MED-233",
   "cat": "med",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "The shin lumps are a sign, not a diagnosis. She has had three months of bloody diarrhoea and put it down to stress — she mentions it only when asked about her bowels, hesitantly. Treat the legs and you miss the station; reach for prednisolone before stool cultures and she will ask you about it herself.",
   "stem": [
    "General practice, regional South Australia. Zoe Martin, 28, a primary teacher, presents with 2 weeks of painful red lumps on both shins. On questioning she admits to 3 months of loose stools up to six times a day with blood and mucus, urgency, crampy lower abdominal pain, 4 kg weight loss and aching knees and ankles. No recent travel.",
    "A photograph shows several 2-4 cm tender erythematous, poorly demarcated nodules on the anterior shins, some bruise-like in colour. T 37.6 · HR 88.",
@@ -81150,92 +81407,194 @@
    "Describe the lesions to the examiner and state the diagnosis with its likely underlying cause and differentials",
    "Explain to the patient what you think is going on, the investigations, and initial management"
   ],
-  "time": "Four minutes of history that characterises the lesions, runs the whole erythema nodosum cause list, and then asks about the bowels — and once it opens, grades the colitis by frequency, nocturnal stools and orthostatic symptoms · one minute describing the lesions and naming the three-layer differential · three minutes on the explanation, the investigations, stopping the ibuprofen and the red flags",
-  "findingsLabel": "The lesions, and the findings that name the underlying disease",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "findings": [
    [
-    "The shins, described to formula",
-    "Bilateral, symmetrical, tender, warm erythematous subcutaneous nodules 2-4 cm on the anterior shins · poorly demarcated · non-ulcerated · some evolving to a bruise-like yellow-purple colour · no scale. That is erythema nodosum — septal panniculitis"
+    "Observations",
+    "T 37.6 · HR 88. NOTE BOTH — they are the severity assessment, not scenery"
    ],
    [
-    "The abdomen and rectum",
-    "Mild left lower quadrant tenderness, no mass, no peritonism · PR shows blood and mucus with no fissure and no fistula. The rectal examination has to be asked for"
+    "THE SHIN LESIONS — describe, do not label",
+    "BILATERAL, SYMMETRICAL, TENDER, WARM, ERYTHEMATOUS SUBCUTANEOUS NODULES 2–4 cm on the ANTERIOR SHINS, POORLY DEMARCATED, NON-ULCERATED, some evolving to a BRUISE-LIKE YELLOW-PURPLE colour. NO ulceration. NO scale"
+   ],
+   [
+    "Abdomen and PR",
+    "Mild LEFT LOWER QUADRANT tenderness, NO mass, NO peritonism. PR: BLOOD AND MUCUS, no fissure or fistula"
+   ],
+   [
+    "Mouth",
+    "ONE APHTHOUS ULCER — an extra-intestinal manifestation, and a reason to look at the bowel"
+   ],
+   [
+    "Eyes",
+    "No redness. You are screening for UVEITIS and EPISCLERITIS"
+   ],
+   [
+    "Joints",
+    "MILD BILATERAL KNEE EFFUSION, ANKLES TENDER, no deformity — peripheral arthritis, another extra-intestinal sign"
+   ],
+   [
+    "General",
+    "PALE CONJUNCTIVAE — iron deficiency from chronic blood loss. No lymphadenopathy. Chest clear"
+   ],
+   [
+    "SEVERITY — Truelove–Witts, and it decides outpatient versus admission",
+    "SIX bloody stools a day, but HR 88 and T 37.6 → MODERATE. SEVERE is ≥6 BLOODY STOOLS PLUS any of HR >90, T >37.8, Hb <105, or raised CRP/ESR → ADMIT VERIFY"
+   ],
+   [
+    "Investigations",
+    "FBE, CRP/ESR, UEC, LFT, IRON STUDIES, B12/folate, ALBUMIN · ASOT/anti-DNase B · CXR · β-hCG · Quantiferon if TB risk · STOOL MCS, C. DIFFICILE TOXIN, ova/cysts/parasites · FAECAL CALPROTECTIN · coeliac serology · COLONOSCOPY WITH BIOPSIES via gastroenterology. EN biopsy ONLY if atypical"
+   ],
+   [
+    "What she is already taking — ask, and stop it",
+    "IBUPROFEN for the leg pain. NSAIDs ARE USUALLY FIRST LINE FOR ERYTHEMA NODOSUM — BUT NOT HERE: they worsen IBD. Use paracetamol. The EN settles as the colitis is treated"
    ]
   ],
   "back": {
-   "dx": "ERYTHEMA NODOSUM AS AN EXTRA-INTESTINAL MANIFESTATION OF NEW INFLAMMATORY BOWEL DISEASE — bloody diarrhoea with urgency, left lower quadrant pain, weight loss, an aphthous ulcer and peripheral arthritis favour ulcerative colitis, with Crohn's colitis the alternative. The differential is best built in three layers. What are the lumps: erythema nodosum · cellulitis, which is unilateral and spreading · superficial thrombophlebitis or DVT · nodular vasculitis and erythema induratum, which sit on the posterior calves, ulcerate and link to TB · insect bites · other panniculitis. Why has she got it: IBD here · streptococcal pharyngitis two to three weeks earlier · sarcoidosis, with lofgren syndrome as hilar nodes plus ankle arthritis · drugs, particularly the combined pill and sulfonamides · TB · pregnancy · Mycoplasma, yersinia or campylobacter · behcet · lymphoma · and idiopathic in up to half. What is the bowel disease: ulcerative colitis · Crohn's colitis · infective colitis from campylobacter, salmonella, shigella, E. Coli o157, C. Difficile or amoebiasis · coeliac disease · microscopic colitis · colorectal cancer by age and family history · and not IBS, which does not bleed or cause weight loss. Investigations VERIFY: FBE, CRP and ESR, UEC, LFT, iron studies, B12 and folate, albumin · ASOT or anti-DNase B · chest x-ray for sarcoid and TB · beta-hCG · quantiferon if TB risk · stool MCS, C. Difficile toxin, ova cysts and parasites, and faecal calprotectin · coeliac serology · and colonoscopy with biopsies through gastroenterology, with a skin biopsy only if the nodules are atypical. Management: grade the colitis today and admit if severe or systemically unwell · send the bloods and stools before any immunosuppression, because infective colitis looks identical · urgent gastroenterology referral for colonoscopy, with PATS for travel · treatment after diagnosis is usually oral plus rectal mesalazine, with oral prednisolone for moderate to severe flares, started on gastro advice once stool results return VERIFY · for the skin: rest, leg elevation and compression, and paracetamol rather than NSAIDs — NSAIDs are usually first line for erythema nodosum but are avoided here because they flare colitis, and she is already taking ibuprofen for her legs correction · iron replacement once bleeding is controlled, intravenous if oral is not tolerated · dietitian input without restrictive diets · and, before any immunosuppression, a vaccination review covering influenza, pneumococcal, COVID, hepatitis B, HPV and varicella status, plus TB and hepatitis screening, with contraception counselling and smoking status documented. Then support: Crohn's and colitis Australia, a work certificate, a mood check, and an honest account of a relapsing-remitting chronic disease with later cancer surveillance. Review in one week with results, and safety-net to emergency for fever, more than eight stools a day, severe pain or distension, heavy bleeding or dizziness.",
+   "dx": [
+    "**Erythema nodosum — a SEPTAL PANNICULITIS — as an EXTRA-INTESTINAL MANIFESTATION of NEW INFLAMMATORY BOWEL DISEASE.** Bloody diarrhoea, urgency, left lower quadrant pain, weight loss, an oral ulcer and peripheral arthritis **favour ulcerative colitis (or Crohn's colitis).**",
+    "**THE EXAMINER IS SCORING WHETHER YOU TREAT THE SHIN LUMPS AS A SIGN, NOT A DIAGNOSIS.** The bowel history must be taken **PROACTIVELY**, and the EN cause list run through. **The second scoring point is INFECTION BEFORE IMMUNOSUPPRESSION — stool cultures and C. difficile before steroids — and a SEVERITY ASSESSMENT to decide outpatient versus admission.**",
+    "**THE THREE-LAYER DIFFERENTIAL — think in this order.** **WHAT ARE THE LUMPS?** erythema nodosum · cellulitis (unilateral, spreading) · superficial thrombophlebitis or DVT · **nodular vasculitis / erythema induratum (POSTERIOR calves, they ULCERATE, TB)** · insect bites · other panniculitis. **WHY HAS SHE GOT EN?** **IBD · streptococcal pharyngitis · sarcoidosis · drugs (OCP, sulfonamides) · TB · PREGNANCY · mycoplasma, Yersinia, Campylobacter · Behçet · lymphoma · IDIOPATHIC in up to half.** **WHAT IS THE BOWEL DISEASE?** ulcerative colitis · Crohn's colitis · infective colitis · coeliac · microscopic colitis · colorectal cancer · **and IBS does NOT bleed or cause weight loss.**",
+    "**The description, word for word**: **‘Bilateral, symmetrical, tender, warm, erythematous subcutaneous nodules 2 to 4 cm in diameter on the anterior shins, poorly demarcated, non-ulcerated, some evolving to a bruise-like yellow-purple colour — the appearance of erythema nodosum. Combined with three months of bloody diarrhoea, weight loss, an aphthous ulcer and peripheral arthritis, the likely underlying cause is inflammatory bowel disease, probably ulcerative colitis.’**",
+    "**Explaining it to Zoe**: **‘The lumps on your shins are called erythema nodosum — inflammation of the fat under the skin. They're NOT DANGEROUS THEMSELVES and they fade like bruises over a few weeks, but they're A SIGNAL THAT SOMETHING IS INFLAMED ELSEWHERE, and the bowel symptoms you've described are the likely reason. Three months of bloody diarrhoea with urgency, weight loss, mouth ulcers and joint pains fits inflammatory bowel disease — most likely ulcerative colitis, where the lining of the large bowel becomes inflamed. IT'S A LONG-TERM CONDITION BUT VERY TREATABLE, and people live full lives with it.’**",
+    "**SEVERITY TODAY, out loud**: six stools a day with blood, **but HR 88 and T 37.6 → MODERATE.** **Check Hb, CRP and albumin.** **ADMIT if severe criteria are met: ≥6 bloody stools PLUS HR >90, T >37.8, Hb <105, or raised CRP/ESR.** VERIFY **Ask the severity questions directly: nocturnal stools, fever, dizziness on standing, inability to keep fluids down.**",
+    "**DO NOT START STEROIDS before infection is excluded and gastroenterology is contacted, unless she is severe.** **Initial UC treatment after diagnosis is usually ORAL PLUS RECTAL 5-ASA (mesalazine), with ORAL PREDNISOLONE 40 mg for moderate–severe flares** VERIFY **— and that can begin on gastro advice once the stool tests are back.**",
+    "**THE NSAID TRAP, and it is specific to this case**: **NSAIDs are usually first line for erythema nodosum — but AVOID THEM HERE, because they worsen IBD.** **Stop her ibuprofen, use paracetamol, and manage the EN with REST, LEG ELEVATION and COMPRESSION STOCKINGS. The EN settles as the colitis is treated.**",
+    "**Before immunosuppression — a whole block candidates forget**: **vaccination review (influenza, pneumococcal, COVID, hepatitis B, HPV, varicella status), TB and hepatitis screening, contraception counselling, and document the smoking status.** **Smoking is PROTECTIVE in UC and HARMFUL in Crohn's — ask.** **Iron replacement (IV if intolerant or severe) once the bleeding is controlled. Dietitian — and AVOID RESTRICTIVE DIETS.**",
+    "**Support and safety-net**: **Crohn's & Colitis Australia**, a work certificate, a mental-health check, and an explanation of the **chronic flare–remission course and later cancer surveillance.** **Review in 1 week with results, sooner if worse.** **RED FLAGS TO ED: fever, more than 8 stools a day, severe pain or distension, dizziness, heavy bleeding.** SA — gastroenterology via **RAH or FMC outpatients or telehealth, with PATS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "The lesions: onset, number, pain, the bruise-like colour change, ulceration, previous episodes, and any fever, malaise or arthralgia prodrome."
+     "**The lesions first** — onset, number, pain, **the bruise-like colour change**, ulceration, previous episodes, **fever, malaise or arthralgia prodrome.**"
     ],
     [
-     "0:45",
-     "The erythema nodosum cause screen, run before the bowels so the bowel answer lands as the finding: sore throat two to three weeks ago · cough, breathlessness or red painful eyes · TB contact, travel or country of birth · medications including the combined pill and sulfonamides · last menstrual period and pregnancy · night sweats or lymph nodes."
+     "0:45 ★",
+     "**THE EN CAUSE SCREEN — ask it BEFORE the bowel history, so the bowel disclosure lands as the ANSWER**: **‘Any sore throat in the weeks before?’** (strep) · **‘Any cough or breathlessness, red or painful eyes?’** (sarcoid) · **‘Any new medicines — including the pill or antibiotics?’** · **‘When was your last period — any chance you're pregnant?’** · TB contact, travel, country of birth · night sweats and lymph nodes (lymphoma)."
     ],
     [
-     "1:45",
-     "'AND YOUR BOWELS — ANY CHANGE IN THE LAST FEW MONTHS?' Then stool frequency day and night, blood mixed or coating, mucus, urgency, tenesmus, incontinence, abdominal pain, weight, appetite, and perianal pain or discharge for Crohn's."
+     "1:30 ★",
+     "**‘And your bowels — any change in the last few months?’** *Hesitantly: three months of diarrhoea up to six times a day, blood and mucus, urgency, left lower cramps, 4 kg lost. She thought it was stress.* **She mentions it ONLY when asked.**"
     ],
     [
-     "2:45",
-     "Grade it: six or more bloody stools a day, nocturnal stools, fever, tachycardia, dizziness on standing, and whether she can keep fluids down."
+     "2:00",
+     "**The full bowel history**: stool frequency **day AND night**, blood (mixed or coating), mucus, urgency, **tenesmus**, incontinence, abdominal pain, weight, appetite, **perianal pain or discharge (fistula, Crohn's)**, **family history of IBD.** *Her uncle has Crohn's.*"
     ],
     [
-     "3:15",
-     "The rest of the extra-intestinal and risk history: joints, eyes, mouth ulcers, skin, jaundice or itch for PSC · family history of IBD or bowel cancer · smoking, which cuts both ways · NSAID use and recent antibiotics · and vaccination status before immunosuppression."
+     "2:40",
+     "**SEVERITY**: **‘Are you going at night? Any fever, dizziness, feeling faint? Can you keep fluids down?’** *Once or twice at night; lightheaded on standing.*"
+    ],
+    [
+     "3:00",
+     "**Extra-intestinal manifestations**: **joints — which, swelling, back stiffness** · **eyes — red, painful, photophobia (uveitis, episcleritis)** · **mouth ulcers** · skin (pyoderma gangrenosum) · **jaundice or itch (primary sclerosing cholangitis).**"
+    ],
+    [
+     "3:30",
+     "**Drugs and habits that matter here**: **smoking — protective in UC, harmful in Crohn's, so ASK** · **NSAID use, which flares IBD** · **recent antibiotics (C. difficile)** · contraception · **vaccination status before immunosuppression.**"
     ],
     [
      "4:00",
-     "Describe the lesions to the examiner, ask for skin, abdomen, rectal, mouth, eye and joint findings, and give the three-layer differential (see findings)."
+     "**Describe the lesions to the examiner**, then ask for **skin, abdominal, RECTAL, mouth, eye and joint findings and vitals.**"
     ],
     [
      "5:00",
-     "Explain it in her words — the lumps as a signal, the likely colitis, long-term but very treatable — and answer the cancer question directly when she asks."
+     "**Name EN, name IBD as the cause with the reasons, and list the other EN causes you have excluded.** Then answer **‘Is it cancer?’** directly: **‘Very unlikely at 28 with this picture, and the camera test will check.’**"
     ],
     [
      "6:00",
-     "Investigations and the plan: bloods, chest x-ray, pregnancy test, stool cultures and calprotectin, urgent gastroenterology for colonoscopy · stop the ibuprofen · paracetamol and leg elevation · vaccines, dietitian, certificate and support · one-week review and the emergency red flags, with a teach-back."
+     "**The plan: bloods and CXR and β-hCG today · STOOL TESTS BEFORE ANY STRONG TREATMENT · faecal calprotectin · URGENT gastroenterology for colonoscopy with biopsies · STOP THE IBUPROFEN, use paracetamol, legs up · vaccinations checked now · dietitian · certificate · Crohn's & Colitis Australia · ED red flags · review in a week.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "four minutes of history in which the cause list comes before the bowel question, and a plan that sends stool cultures before anybody reaches for steroids",
-   "ask": [
-    "THE QUESTION THE WHOLE STATION HANGS ON: 'AND YOUR BOWELS — ANY CHANGE IN THE LAST FEW MONTHS?' She has had three months of bloody diarrhoea and thought it was stress.",
-    "The framing sentence: 'The lumps are a signal that something else is inflamed' — and its companion, 'Long-term but very treatable.'",
-    "The safety principle, said before any treatment plan: 'We must rule out an infection that can look exactly the same before any strong treatment.'",
-    "The correction she needs today: 'Stop the ibuprofen — anti-inflammatories can make colitis worse. Use paracetamol and rest with your legs up.'",
-    "Challenges: 'Is it cancer?' when IBD is explained · if you treat only the legs she prompts 'Could it be connected to my stomach? I've had diarrhoea for months' · and if you offer prednisolone today without stool tests, 'Don't I need to check for a bug first?'"
-   ],
    "pefe": [
-    "Role-player: Zoe Martin, 28, primary teacher. Two weeks of painful hot red lumps on both shins, some turning purple. Three months of diarrhoea up to six times a day with blood and mucus, urgency, left lower cramps, 4 kg lost, occasional night stools and lightheadedness on standing — she assumed stress. A mouth ulcer now, aching knees and ankles, an uncle with Crohn's. Same pill for years, period two weeks ago. No sore throat, cough or eye trouble. Non-smoker, no travel, no recent antibiotics.",
-    "What she withholds: the bowel history, given hesitantly and only when asked — and the ibuprofen she has been taking for her legs, which is the thing to stop. She asks whether it is cancer, and prompts towards her bowels if the doctor stays on the skin.",
-    "Mark them against these: described the nodules systematically and named erythema nodosum · ran the cause list including strep, sarcoid, drugs, pregnancy and TB · asked about the bowels proactively · graded the colitis with frequency, nocturnal stools and postural symptoms · asked about perianal disease, family history and smoking · asked about NSAID use and stopped the ibuprofen · asked for abdominal, rectal, mouth, eye and joint findings · gave the three-layer differential · sent stool cultures and C. Difficile before any immunosuppression · ordered FBE, CRP, iron, albumin, CXR and beta-hCG · named colonoscopy and urgent gastroenterology · did not start steroids today · addressed iron deficiency and the dietitian · checked vaccination status before immunosuppression · answered the cancer question directly · and gave admission red flags and a one-week review.",
-    "The extra-intestinal signs that clinch it — One aphthous mouth ulcer · mild bilateral knee effusions with tender ankles and no deformity · eyes not red, so no uveitis or episcleritis today · pale conjunctivae, which is the iron deficiency",
-    "The severity numbers — Six bloody stools a day with occasional nocturnal stools and lightheadedness on standing, but T 37.6 and HR 88 — moderate, not severe. Truelove and witts severe is six or more bloody stools plus fever, tachycardia, anaemia or raised inflammatory markers, and means admission"
+    "**Describe the lesions before naming them, and examine well beyond the shins**: abdomen, **rectal**, mouth, eyes, joints, conjunctivae for pallor, and lymph nodes.",
+    "**The EN cause screen is an EXAMINATION as well as a history** — **CXR for bilateral hilar lymphadenopathy (sarcoid, Löfgren syndrome)**, throat, and a pregnancy test.",
+    "**Erythema induratum is the one that catches people out**: **POSTERIOR calves, and it ULCERATES** — and it is associated with TB. EN is anterior and does not ulcerate.",
+    "**EN biopsy only if atypical.** The diagnosis is clinical; the work is finding the cause.",
+    "**VARIANT — sore throat 3 weeks ago, normal bowels**: **post-streptococcal EN.** ASOT and throat swab; **NSAIDs are fine here**; self-limiting over 3–6 weeks; treat strep if present.",
+    "**VARIANT — cough with hilar nodes on CXR and ankle arthritis**: **LÖFGREN SYNDROME (sarcoidosis).** ACE, calcium, respiratory referral; **good prognosis.**",
+    "**VARIANT — started the OCP 6 weeks ago**: **drug-induced EN.** Stop the pill and arrange alternative contraception.",
+    "**VARIANT — 10 bloody stools a day, HR 110, T 38.5**: **SEVERE ulcerative colitis — ADMIT TODAY. IV hydrocortisone** VERIFY **, VTE prophylaxis, gastroenterology and surgical review, MedSTAR if rural.**"
    ],
-   "fails": [
-    "★ Treating the shins in isolation — antibiotics for 'cellulitis' or NSAIDs — without ever asking about the bowels",
-    "★ Starting steroids before stool cultures and C. difficile exclude an infective colitis",
-    "★ Prescribing NSAIDs for the erythema nodosum in a patient with active colitis",
-    "★ Not assessing colitis severity, so the admit-or-not decision is never made",
-    "Not asking about pregnancy, the pill or a preceding sore throat; never mentioning colonoscopy or gastroenterology; missing the iron deficiency"
-   ],
-   "numbers": [
-    "Nodules 2-4 cm, bilateral anterior shins, present 2 weeks · 6 bloody stools a day for 3 months with 4 kg weight loss · T 37.6, HR 88 — moderate · truelove and witts severe: 6 or more bloody stools plus HR over 90, T over 37.8, Hb under 105 or raised CRP and ESR, which means admit VERIFY · erythema nodosum is idiopathic in up to 50% and fades over 3-6 weeks",
-    "Investigations: FBE, CRP and ESR, UEC, LFT, iron studies, B12 and folate, albumin, ASOT or anti-DNase B, CXR, beta-hCG, quantiferon if at risk · stool MCS, C. Difficile toxin, ova cysts and parasites, faecal calprotectin · coeliac serology · colonoscopy with biopsies VERIFY · treatment after diagnosis is oral plus rectal mesalazine, with prednisolone 40 mg for moderate to severe flares on gastro advice, and IV hydrocortisone with VTE prophylaxis for severe colitis VERIFY · MedSTAR 1300 13 12 33 · VERIFY all"
+   "ddx": [
+    [
+     "**Erythema nodosum from IBD — the answer**",
+     "Tender bruise-like ANTERIOR shin nodules **plus** 3 months of bloody diarrhoea, urgency, weight loss, aphthous ulcer, peripheral arthritis",
+     "Bowel history taken PROACTIVELY; mouth, eyes, joints, PR",
+     "**Stool tests first, then urgent gastroenterology for COLONOSCOPY WITH BIOPSIES.** Urgent"
+    ],
+    [
+     "**Infective colitis**",
+     "**Campylobacter, Salmonella, Shigella, E. coli O157, C. difficile, amoebiasis** — can look identical",
+     "Travel, recent antibiotics, contacts, duration",
+     "**STOOL MCS, C. DIFFICILE TOXIN, ova/cysts/parasites — BEFORE any immunosuppression.** Urgent"
+    ],
+    [
+     "**Severe / fulminant colitis · toxic megacolon**",
+     "**≥6 bloody stools a day PLUS fever, tachycardia or anaemia**; distension, severe pain",
+     "**HR, temperature, Hb, CRP, albumin — Truelove–Witts**",
+     "**ADMIT. IV steroids, VTE prophylaxis, gastro and surgical review.** VERIFY Emergency"
+    ],
+    [
+     "Post-streptococcal erythema nodosum",
+     "**Sore throat 2–3 weeks earlier**, otherwise well",
+     "Throat history, ASOT/anti-DNase B",
+     "Self-limiting over 3–6 weeks; **NSAIDs acceptable here**. Routine"
+    ],
+    [
+     "**Sarcoidosis — Löfgren syndrome**",
+     "**Cough, breathlessness, uveitis, ankle arthritis, BILATERAL HILAR LYMPHADENOPATHY**",
+     "Respiratory symptoms, eyes, **CXR**",
+     "CXR, ACE, calcium; respiratory referral. **Good prognosis.** Soon"
+    ],
+    [
+     "Drug-induced EN",
+     "**Combined OCP, sulfonamides, penicillins** — onset weeks after starting",
+     "**Full medication history including the pill**",
+     "Stop the culprit; alternative contraception. Routine"
+    ],
+    [
+     "**Tuberculosis** · pregnancy · lymphoma",
+     "TB contact, travel, country of birth; missed period; **night sweats and painless nodes**",
+     "**Quantiferon if TB risk · β-hCG in every woman of reproductive age · node survey**",
+     "Quantiferon, CXR; pregnancy test; **investigate lymphadenopathy.** Urgent"
+    ],
+    [
+     "**Cellulitis — the commonest misdiagnosis**",
+     "**UNILATERAL, spreading, well-defined advancing edge, fever, a portal of entry**",
+     "Laterality and symmetry — **EN is BILATERAL and symmetrical**",
+     "Clinical. **Treating this with antibiotics and going home is the named fail.** Soon"
+    ],
+    [
+     "DVT · superficial thrombophlebitis",
+     "Unilateral calf swelling; a tender cord over a superficial vein",
+     "Calf circumference, Wells score, palpable cord",
+     "Compression ultrasound. Urgent"
+    ],
+    [
+     "**Erythema induratum / nodular vasculitis**",
+     "**POSTERIOR calves, and the lesions ULCERATE**; associated with TB",
+     "**Site and ulceration — EN is anterior and does not ulcerate**",
+     "Biopsy; TB screening. Soon"
+    ],
+    [
+     "Coeliac disease · microscopic colitis · colorectal cancer",
+     "Chronic diarrhoea; watery non-bloody stools in microscopic colitis; age and family history for cancer",
+     "Coeliac serology; colonoscopy with biopsies",
+     "**Colonoscopy answers all three. IBS does NOT bleed or cause weight loss.** Soon"
+    ]
    ]
   },
   "source": "Erythema_Nodosum_IBD_Notability.pdf (Zoe Martin, 28, two weeks of tender bruise-like shin nodules on three months of undisclosed bloody diarrhoea — a station scored on treating the skin sign as a signal, running the erythema nodosum cause list, grading the colitis, and sending stool cultures before anyone reaches for steroids)",
   "drive": "AMC Clinical Notability › Extra cases › Erythema_Nodosum_IBD_Notability.pdf",
   "must": [
-   "FAIL — Treating the shins in isolation — cellulitis antibiotics or NSAIDs without asking about bowels; the shin lumps are a SIGN, not a diagnosis; run the erythema nodosum cause list before the bowel history so the disclosure lands as the answer: 'any sore throat in the weeks before? cough or breathlessness, red or painful eyes? new medicines — including the pill or antibiotics? when was your last period — any chance you're pregnant? TB contact or travel?' then 'and your bowels — any change in the last few months?' → (hesitant) three months of diarrhoea up to six times a day with blood and mucus, urgency, left lower cramps, four kilos lost — 'I thought it was stress' (mentioned only when asked); if you only treat the legs she asks 'could it be connected to my stomach?' (★)",
-   "FAIL — Not excluding infective colitis before suggesting steroids — 'stool samples for infections that can mimic this — we must rule those out before any strong treatment' (stool MCS, C. difficile toxin, ova cysts and parasites, faecal calprotectin); offer prednisolone today without stool tests and she asks 'don't I need to check for a bug first?'; 'do not start steroids before infection is excluded and gastro contacted unless severe'; initial UC treatment after diagnosis is oral plus rectal mesalazine, oral prednisolone 40 mg for a moderate–severe flare on gastro advice once stool tests are back (★)",
-   "FAIL — Prescribing NSAIDs for erythema nodosum in a patient with colitis — NSAIDs are usually first-line for EN, but 'please stop the ibuprofen — anti-inflammatories can make colitis worse; use paracetamol, and rest with your legs up' (compression stockings; the EN settles as the colitis is treated); she is taking ibuprofen for the legs — ask about NSAIDs, recent antibiotics (C. difficile) and smoking (protective in UC, harmful in Crohn's) (★)",
-   "FAIL — Not assessing colitis severity, or not mentioning colonoscopy and gastroenterology — severity today: stools per day (six), blood, nocturnal stools ('once or twice at night'), fever, tachycardia, dizziness ('a bit lightheaded on standing'), fluids; HR 88 and T 37.6 = moderate; Truelove–Witts severe = ≥6 bloody stools plus HR >90, T >37.8, Hb <105 or raised CRP/ESR → admit (10 bloody stools, HR 110, T 38.5 → admit today, IV hydrocortisone, VTE prophylaxis, gastro and surgical review, MedSTAR if rural); 'I'm referring you urgently to a gastroenterologist for a colonoscopy with biopsies — that confirms the diagnosis and its extent' (RAH/FMC, telehealth, PATS); red flags → ED: fever, more than eight bloody stools a day, severe pain or a swollen tummy (toxic megacolon), heavy bleeding, faint (★)",
-   "DO — Describe to the examiner: 'bilateral, symmetrical, tender, warm, erythematous subcutaneous nodules 2 to 4 cm on the anterior shins, poorly demarcated, non-ulcerated, some evolving to a bruise-like yellow-purple colour — the appearance of erythema nodosum; combined with three months of bloody diarrhoea, weight loss, an aphthous ulcer and peripheral arthritis, the likely underlying cause is inflammatory bowel disease, probably ulcerative colitis'; the three-layer differential — what are the lumps (EN; cellulitis — unilateral, spreading; thrombophlebitis or DVT; nodular vasculitis — posterior calves, ulcerate, TB; bites), why has she got EN (IBD; streptococcal pharyngitis — ASOT, throat swab; sarcoidosis — CXR for bilateral hilar nodes, Löfgren; drugs — the OCP, sulfonamides; TB; pregnancy; mycoplasma, Yersinia, Campylobacter; Behçet; lymphoma; idiopathic up to half), what is the bowel disease (UC, Crohn's colitis, infective colitis, coeliac, microscopic colitis, colorectal cancer by age and family history — IBS does not bleed or lose weight); the extra-intestinal screen (joints — which, swelling, back stiffness; eyes — red, painful, photophobia; mouth ulcers; pyoderma; jaundice or itch for PSC); perianal pain or discharge (fistula — Crohn's); family history (an uncle with Crohn's); the examination requested — skin, abdomen (LLQ tenderness, no mass, no peritonism), PR (blood and mucus, no fissure or fistula), mouth, eyes, joints (knee effusions, tender ankles), pale conjunctivae",
-   "SAY — 'The lumps on your shins are called erythema nodosum — inflammation of the fat under the skin; they're not dangerous themselves and they fade like bruises over a few weeks, but they're a signal that something is inflamed elsewhere, and the bowel symptoms you've described are the likely reason; three months of bloody diarrhoea with urgency, weight loss, mouth ulcers and joint pains fits inflammatory bowel disease — most likely ulcerative colitis, where the lining of the large bowel becomes inflamed; it's a long-term condition but very treatable, and people live full lives with it; I need to confirm it, rule out an infection that can look the same, and check how severe it is'; 'is it cancer?' → 'very unlikely at 28 with this picture, and the camera test will check'; investigations — FBE, CRP/ESR, UEC, LFT, iron studies, B12 and folate, albumin, ASOT, CXR, β-hCG, Quantiferon if TB risk, stool tests, calprotectin, coeliac serology; iron replacement once bleeding is controlled; a dietitian ('don't cut out food groups'); before immunosuppression — vaccination review (influenza, pneumococcal, COVID, hepatitis B, HPV, varicella), TB and hepatitis screening, contraception counselling, smoking documented; Crohn's & Colitis Australia, a work certificate, a mood check, the flare–remission course and later cancer surveillance; review in one week with results; variants — sore throat three weeks ago with normal bowels = post-streptococcal EN (NSAIDs fine, self-limiting 3–6 weeks); cough with hilar nodes and ankle arthritis = Löfgren syndrome (ACE, calcium, respiratory referral, good prognosis); the OCP started six weeks ago = drug-induced — stop it, alternative contraception"
-  ]
+   "FAIL — Treating the shins in isolation with cellulitis antibiotics or NSAIDs, without ever asking about the bowels.",
+   "FAIL — Not excluding infective colitis before suggesting steroids; stool cultures and C. difficile come first.",
+   "FAIL — Prescribing NSAIDs for the erythema nodosum in a patient with colitis.",
+   "FAIL — Not asking about pregnancy or the pill or a sore throat; not assessing colitis severity; never mentioning colonoscopy or gastroenterology.",
+   "ASK — And your bowels — any change in the last few months? She assumed it was stress and mentions it only when asked.",
+   "ASK — Any sore throat in the weeks before? New medicines including the pill? Any chance you're pregnant?"
+  ],
+  "v2": true
  },
  {
   "id": "MED-234",
