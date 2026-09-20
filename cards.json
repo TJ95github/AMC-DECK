@@ -20216,8 +20216,8 @@
  {
   "id": "MED-74",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Suburban general practice; you are the GP. Vitals (including BSL) on request. 9-minute station. RECALL NOTE: the source recording verifies the stem and history; later tasks follow the standard three-task shape.",
   "stem": [
    "Marianne Kovac, 50, presents with two days of nausea and vomiting on a week of feeling weak, tired and lethargic. She is holding a vomit bag. Known hypertension and chronic kidney disease. Current medications: perindopril 5 mg daily, hydrochlorothiazide 25 mg daily, ibuprofen 400 mg three times daily."
   ],
@@ -20226,127 +20226,210 @@
    "Ask the examiner for the examination findings and investigations you want",
    "Explain the most likely diagnosis and outline your immediate management"
   ],
-  "time": "9 minutes: 40 s opening · 4 min history · 1.5 min examination/investigations · 2 min explanation · 45 s safety-net and close. The diagnosis is on the medication list — the marks are for what you ask AFTER you've worked it out: ★ obs incl. BSL · acknowledge the bag, offer water · vomit content · ★ 'when did you start the PAINKILLER, who started it' + OTC/chemist separately · ★ cardiac screen unprompted · abdomen/melaena · ★ urine output, uraemic symptoms · fluid status FIRST · investigations by analyte incl. ECG and troponin · ★ diagnosis by name · triple whammy in plain English · stop, hold, ★ transfer today, no driving · teach-back.",
+  "findings": [
+   [
+    "Vital signs — ask for the BLOOD SUGAR in the same breath",
+    "BP 142/86 · PULSE 72 regular · RR 16 · SpO2 98% RA · T 36.6 · BSL 5.4. She is AFEBRILE AND HAEMODYNAMICALLY STABLE — say so. The normal sugar is a cheap move that QUIETLY CLOSES OFF DIABETIC KETOACIDOSIS without spending a history question on it"
+   ],
+   [
+    "The visual cue in the room",
+    "SHE IS HOLDING A VOMIT BAG. Acknowledge it — 'I'm sorry, that sounds miserable. Would you like some water first?' costs three seconds and is MARKED. But DO NOT let it push you into a purely gastrointestinal frame"
+   ],
+   [
+    "Fluid status — ask for it FIRST",
+    "DRY MUCOUS MEMBRANES · POSTURAL DROP OF 20 SYSTOLIC · JVP NOT VISIBLE. It is the finding that EXPLAINS THE MECHANISM and the one candidates forget to request"
+   ],
+   [
+    "The rest of the examination",
+    "Abdomen SOFT AND NON-TENDER, no palpable bladder. Heart sounds dual, chest clear. NO pallor, NO pigmentation, NO oedema, NO ASTERIXIS"
+   ],
+   [
+    "The bloods",
+    "eGFR 22, DOWN FROM A BASELINE OF 45 · CREATININE ROUGHLY DOUBLED · POTASSIUM 6.3 · BICARBONATE 18 · TROPONIN NOT RAISED. A doubled creatinine meets criteria for a STAGE 2 ACUTE KIDNEY INJURY — saying the stage aloud is a cheap mark"
+   ],
+   [
+    "The ECG — done in the clinic, before she leaves",
+    "PEAKED T WAVES WITH A NARROW QRS. Request it for BOTH hyperkalaemia AND ischaemia. K 6.3 is MODERATE BY NUMBER, but WITH ECG CHANGES IT IS TREATED AS SEVERE"
+   ],
+   [
+    "THE DRUG SHE DOES NOT CALL A MEDICATION",
+    "'What medications are you on?' → 'PERINDOPRIL AND A FLUID TABLET.' AND SHE STOPS. Only 'ANY PAINKILLERS?' or 'ANYTHING FROM THE CHEMIST, or not on prescription?' gets IBUPROFEN 400 mg THREE TIMES A DAY FOR THREE WEEKS for her knee — bought herself at first, then a LOCUM wrote a script because her own GP was away"
+   ],
+   [
+    "The follow-up questions that complete it",
+    "'WHO STARTED IT, AND WHEN?' → the locum, about a fortnight ago. 'DID WHOEVER PRESCRIBED IT KNOW ABOUT YOUR KIDNEYS?' → 'I don't think it came up. IT'S ONLY IBUPROFEN'"
+   ],
+   [
+    "What she gives only on direct questioning",
+    "MUCH LESS URINE than usual — the single most useful volume question, and candidates skip it constantly. DIZZY ON STANDING. EVERYTHING TASTES OF METAL — a free uraemia mark. Vomit is FOOD AND FLUID ONLY, no blood, nothing green. She FELT CLAMMY YESTERDAY and blamed the vomiting"
+   ],
+   [
+    "Her hidden fear",
+    "HER MOTHER DIED ON DIALYSIS. She volunteers it only in the last two minutes, or when you ask what worries her. She also pushes back once on the transfer: 'DO I REALLY HAVE TO GO TODAY? Can't I just stop the tablets and come back Friday?'"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — and the painkiller she does not call a medication",
+  "must": [
+   "FAIL — Never screening for ACS. Four minutes of renal questions and no cardiac question.",
+   "FAIL — Missing the NSAID by asking only 'what medications are you on?'",
+   "FAIL — Sending her home with K 6.3 and ECG changes to 'come back Friday'.",
+   "FAIL — Saying hyperaldosteronism causes hyperkalaemia. It causes HYPOkalaemia.",
+   "ASK — When did you start the painkiller, and who started it for you?",
+   "ASK — Any discomfort or tightness in the chest, arm, jaw or back?"
+  ],
   "back": {
-   "dx": "Acute kidney injury on chronic kidney disease (stage 2 — eGFR 45 → 22, creatinine roughly doubled) with hyperkalaemia (K 6.3 + peaked T waves, narrow QRS → treat as severe) and metabolic acidosis (HCO3 18) — the 'triple whammy': NSAID (constricts the afferent arteriole) + ACE inhibitor (dilates the efferent) + thiazide (lowers circulating volume), in a woman with baseline CKD. Ibuprofen 400 mg tds for three weeks for a knee — self-bought at the chemist, then scripted by a locum who didn't have her record; she doesn't call it a medication. Uraemic symptoms: much less urine, postural dizziness, metallic taste; examination — dry mucosa, postural drop 20 systolic, JVP not visible, abdomen soft, no bladder, no asterixis. BSL 5.4 removes DKA at the door; troponin normal and cardiac screen negative (nausea + lethargy without chest pain is a recognised MI presentation in women and CKD). Explain: 'your kidneys were working at about half strength and have taken a sudden extra hit — an acute injury on chronic kidney disease; waste products build up and cause the sickness and exhaustion'; mechanism of the three drugs in plain words; 'you can buy it anywhere' → 'that's exactly why it catches people out'. Plan: ibuprofen stops today and never again without checking; hold (not stop forever) perindopril and the thiazide while unwell; ★ ED today for fluids and potassium treatment — ring ahead, results with her, don't drive; repeat UEC 48–72 h; paracetamol + physiotherapy for the knee; letter to usual GP, flag on file. Hidden agenda: mother died on dialysis — 'not today, and in most cases like yours this is reversible once we take the pressure off'.",
+   "dx": [
+    "**Acute kidney injury on chronic kidney disease, with HYPERKALAEMIA and URAEMIA — caused by the TRIPLE WHAMMY: an ACE inhibitor, a diuretic and an NSAID taken together.**",
+    "**The mechanism, in one sentence: the NSAID CONSTRICTS THE AFFERENT arteriole by blocking prostaglandins · the ACE inhibitor DILATES THE EFFERENT arteriole by blocking angiotensin II · the diuretic DROPS THE CIRCULATING VOLUME. Perfusion pressure across the glomerulus collapses.** **Each drug alone is reasonable; together they remove every compensatory mechanism the glomerulus has.**",
+    "**SPOTTING THREE DRUGS IS NOT THE MARK. EXPLAINING WHY THOSE THREE TOGETHER BREAK A KIDNEY IS THE MARK.**",
+    "**THE TRAP THIS STATION WAS BUILT AROUND: the medication list is DELIBERATELY OBVIOUS.** Candidates who spot it in the first ten seconds **spend the remaining four minutes confirming what they already believe and never ask a single question about her heart.** **Work out the diagnosis early, then say NOTHING about it until you have spent sixty seconds actively trying to DISPROVE it — the examiner is marking the disproving.**",
+    "**THING TWO: nausea, vomiting and lethargy WITHOUT chest pain is a recognised presentation of MYOCARDIAL INFARCTION in women and in people with kidney disease.** Say it out loud: **'although the drug combination makes acute kidney injury far the most likely explanation, I have screened for it and I WOULD NOT DISCHARGE HER WITHOUT AN ECG AND A TROPONIN.'** **That demonstrates you can hold a likely diagnosis and a dangerous one at the same time — which is the whole assessment.**",
+    "**To the patient, in plain English: 'the painkiller NARROWS THE VESSEL BRINGING BLOOD IN, the perindopril WIDENS THE VESSEL TAKING BLOOD OUT, and the fluid tablet LOWERS THE AMOUNT OF FLUID IN YOUR CIRCULATION. Each is sensible on its own. Together, with kidneys like yours, they're too much. In Australia we have a name for it: the TRIPLE WHAMMY.'**",
+    "**To 'it's only ibuprofen, you can buy it anywhere': 'you can — and THAT'S EXACTLY WHY IT CATCHES PEOPLE OUT. Being sold without a prescription doesn't make it harmless for your kidneys.'**",
+    "**STOP THE IBUPROFEN PERMANENTLY. WITHHOLD the perindopril and hydrochlorothiazide — a temporary SICK-DAY HOLD, framed as temporary, NOT a permanent stop, because the ACE inhibitor has long-term renal and cardiac benefit.** **With K 6.3 and ECG changes this is an EMERGENCY DEPARTMENT TRANSFER TODAY, not a clinic recheck. Arrange transport; DO NOT LET HER DRIVE.**",
+    "**CORRECTION — the aldosterone rule runs in ONE DIRECTION ONLY. Aldosterone makes the kidney EXCRETE potassium. So HYPOaldosteronism → HYPERkalaemia; HYPERaldosteronism → HYPOkalaemia.** **Primary aldosteronism classically presents with hypertension and a LOW potassium with metabolic alkalosis. If a source lists hyperaldosteronism as a cause of hyperkalaemia, that is an error — do not repeat it to an examiner.**",
+    "**The blame moment: 'he was treating your knee, and ibuprofen is a perfectly ordinary choice for most people. The problem is THE COMBINATION with the two medicines you were already on, and that is exactly the kind of thing that gets missed WHEN A DOCTOR DOESN'T HAVE YOUR FULL RECORD. What matters now is that we've found it. I'll write to your usual GP today and put a note on your file.'** **Never say the other doctor was negligent.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Examiner — BP, pulse, RR, saturations, temperature AND blood sugar?' → 142/86, 72 reg, 16, 98%, afebrile, BSL 5.4 → 'stable, afebrile, normal sugar — a diabetic emergency is unlikely from the outset'"
+     "**To the examiner: 'before I begin, could I have her blood pressure, pulse, respiratory rate, oxygen saturation, temperature AND BLOOD SUGAR?'** Then **say what it means: 'stable, afebrile, and a normal sugar, which makes a diabetic emergency unlikely from the outset.'**"
     ],
     [
-     "0:30",
-     "WIPE, 'how would you like me to address you?' · open · ★ 'I'm sorry — that sounds miserable. Would you like some water first?' (the vomit bag is marked)"
+     "0:25",
+     "**Greet, ask how she would like to be addressed, and ACKNOWLEDGE the bag: 'I'm sorry you've been feeling so unwell — that sounds miserable. Would you like some water first? Let me ask you some questions and I'll work out what's causing it.'**"
     ],
     [
-     "1:00",
-     "Symptom package in one block: onset (tiredness 1 week, vomiting 2 days), worse, better/worse · 'tired — low energy, sleepy, or breathless?' · frequency 4–5/day · ★ 'what does the vomit look like — any blood, or anything green?' (UGI bleed vs obstruction; she's on an NSAID) · keeping anything down?"
+     "0:45",
+     "**BLOCK 1, the symptom package in ONE block — do not run SOCRATES four times: when did all of this start · is it getting worse · anything better or worse · WHEN YOU SAY TIRED, DO YOU MEAN LOW IN ENERGY, SLEEPY, OR BREATHLESS ON EXERTION?**"
+    ],
+    [
+     "1:10",
+     "**Then the vomiting: how many times · WHAT DOES THE VOMIT LOOK LIKE, ANY BLOOD OR IS IT GREEN · have you been able to keep anything down · DID PAIN COME BEFORE THE VOMITING OR AFTER?** **Content of the vomitus is the highest-yield vomiting question — blood or coffee-grounds points to an upper GI bleed in someone on an NSAID; bilious or faeculent points to obstruction. Pain first suggests a surgical cause.**"
+    ],
+    [
+     "1:40",
+     "**BLOCK 2, background: when were you diagnosed with the kidney problem and the high blood pressure · what treatment, and are you taking it regularly · are you up to date with your GP and kidney specialist reviews?**"
     ],
     [
      "2:00",
-     "Background: when diagnosed CKD (5 y, 'about half') and HTN (10 y), what for them → perindopril + 'a fluid tablet' · adherence · ★ 'and when did you start the PAINKILLER — who started it, and what was it for?' → ibuprofen ~3 weeks, knee, self-bought then locum script · ★ 'did whoever prescribed it know about your kidneys?' → 'it's only ibuprofen' (don't correct now; save it) · 'anything from the chemist, or herbal?'"
+     "**THE KEY QUESTION: 'WHEN DID YOU START THE PAINKILLER — AND WHO STARTED IT FOR YOU? What was it for, and how much are you taking? ANYTHING ELSE AT ALL — ANYTHING FROM THE CHEMIST, OR ANYTHING HERBAL?'** Then, neutrally: **'did whoever prescribed it know about your kidneys?'**"
     ],
     [
-     "3:00",
-     "★ Cardiac screen, unprompted, 10 s: 'a few quick questions to make sure I'm not missing something serious — chest/arm/jaw/back discomfort, exertional SOB, cold sweats (clammy yesterday), palpitations, blackouts'"
+     "2:30",
+     "**BLOCK 3, RULE OUT THE HEART — ten seconds, and SAY WHY YOU ARE DOING IT: 'a few quick questions to make sure I'm not missing something serious. Any discomfort or TIGHTNESS IN THE CHEST, ARM, JAW OR BACK · any BREATHLESSNESS, especially on exertion or lying flat · any COLD SWEATS · palpitations · blackouts?'**"
     ],
     [
-     "3:20",
-     "Abdomen: pain/where, bowels, ★ black/tarry stools, fevers, jaundice · ★ urine output 'more, less or the same?' → much less · dizzy standing (yes) · confusion, hiccups, itch, ★ metallic taste (yes)"
+     "2:50",
+     "**BLOCK 4, rule out the abdomen in four questions: any tummy pain and WHERE · any change in your bowels, any diarrhoea, HAVE YOU STOPPED PASSING WIND · ANY BLACK OR TARRY MOTIONS · any fevers or chills · any yellowing of the eyes or skin?**"
     ],
     [
-     "4:15",
-     "★ Examination — fluid status FIRST: postural BP, mucosa, JVP, cap refill; abdomen (tenderness, guarding, organomegaly, palpable bladder); cardiorespiratory; pallor, pigmentation, oedema, asterixis → dry, postural drop 20, JVP not seen, soft abdomen, no bladder, no asterixis"
+     "3:15",
+     "**BLOCK 5, metabolic and fluid status: any excessive thirst or passing more urine · HOW MUCH URINE HAVE YOU PASSED IN THE LAST DAY, MORE, LESS OR THE SAME · any DIZZINESS ON STANDING · any ankle swelling · any CONFUSION, HICCUPS, ITCH OR A METALLIC TASTE?** The last line **screens for uraemia.**"
     ],
     [
-     "5:00",
-     "★ Investigations by name: ECG now (hyperkalaemia AND ischaemia) · UEC/eGFR vs baseline — specifically K, Na, bicarbonate · VBG · troponin · FBE, Ca, PO4, Mg, LFT, lipase, urinalysis → eGFR 22 (baseline 45), creatinine ×2, K 6.3, HCO3 18, troponin normal, peaked T narrow QRS · 'why a troponin with no chest pain?' answered · read back: stage 2 AKI on CKD; K moderate by number, severe by ECG; acidosis shifts K out of cells"
+     "3:45",
+     "**BLOCK 6, close: any past medical problems I haven't covered · any allergies · AND IS THERE ANYTHING YOU'RE PARTICULARLY WORRIED ABOUT?** **The final question is scored — if time runs out, carry it into the explanation.**"
     ],
     [
-     "6:15",
-     "★ Diagnosis by name · 'will I need dialysis? my mother died on dialysis' → pause, acknowledge, honest answer · mechanism: three medicines, three directions — painkiller narrows the vessel in, perindopril widens the vessel out, fluid tablet lowers the circulating volume — 'the triple whammy' · 'you can buy it anywhere' → exactly why it catches people out · 'the locum's fault?' → missing record, not the person; letter to usual GP"
+     "4:00",
+     "**Examination request, FLUID STATUS FIRST: postural blood pressure, mucous membranes, JVP, capillary refill · abdomen for tenderness, guarding, organomegaly and a palpable bladder · cardiorespiratory · and a look for PALLOR, PIGMENTATION, OEDEMA AND ASTERIXIS.**"
     ],
     [
-     "7:30",
-     "Plan: 1 ibuprofen stops today, never that class without checking · 2 hold perindopril and the fluid tablet — temporary, don't stop anything else alone · 3 ★ ED today (K affects the heart's rhythm; can't keep fluids down) — ring ahead, results with her · ★ don't drive · red flags en route: chest pain, palpitations, faint, weak muscles → ambulance · repeat UEC 2–3 days · paracetamol + physio for the knee · ★ teach-back · 'anything still worrying you?'"
+     "4:45",
+     "**Investigations, NAMED: an ECG HERE IN THE CLINIC NOW, for both hyperkalaemia and ischaemia · UEC with eGFR, SPECIFICALLY THE POTASSIUM, SODIUM AND BICARBONATE, AGAINST HER BASELINE · a venous or arterial blood gas · a TROPONIN · then FBC, calcium, phosphate, magnesium, LFTs, lipase, BSL · urinalysis and bladder scan if oliguric.**"
+    ],
+    [
+     "5:30",
+     "**Read the numbers back and NAME THE STAGE: 'her eGFR has halved from 45 to 22 with a roughly doubled creatinine, which meets criteria for a STAGE 2 acute kidney injury. The potassium of 6.3 is moderate by number BUT SHE HAS ECG CHANGES, so I treat it as severe. The bicarbonate of 18 indicates a metabolic acidosis, which itself drives potassium out of the cells.'**"
+    ],
+    [
+     "6:00",
+     "**Name the diagnosis and answer the dialysis fear HONESTLY rather than deflecting: 'not today, and in most cases like yours this is REVERSIBLE once we take the pressure off — that's exactly why we're acting now.'** Then **the mechanism in plain English, and handle the blame moment.**"
+    ],
+    [
+     "7:00",
+     "**THREE THINGS: the IBUPROFEN STOPS TODAY and never again without checking · we HOLD the perindopril and the fluid tablet while you're unwell, TEMPORARILY, and don't stop anything else on your own · your potassium is high enough to affect the heart's rhythm and you can't keep fluids down, so YOU'RE GOING TO THE EMERGENCY DEPARTMENT TODAY. I'll ring ahead and send the results with you.**"
+    ],
+    [
+     "8:00",
+     "**SAFETY-NET: don't drive, is there someone who can take you · on the way, CHEST PAIN, PALPITATIONS, FEELING FAINT, OR MUSCLE WEAKNESS means call an ambulance rather than waiting.** Then **the follow-up: repeat renal bloods in 2–3 days, a WRITTEN SICK-DAY PLAN, and a safer plan for the knee — PARACETAMOL first line and physiotherapy.** Then **TEACH-BACK: 'could you tell me back what you'll say when you get to the hospital?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Could I have her observations — including a blood sugar?' / 'I'm sorry, that sounds miserable. Would you like some water first?'",
-    "'When you say tired — low in energy, sleepy, or breathless when you move about?' / ★ 'What does the vomit look like — any blood, or anything green?'",
-    "★ 'When did you start the painkiller, and who started it for you?' / 'Anything from the chemist, or anything herbal?' / 'Did whoever prescribed it know about your kidneys?'",
-    "★ 'A few quick questions to make sure I'm not missing something serious. Any discomfort or tightness in the chest, arm, jaw or back?'",
-    "★ 'How much urine have you passed in the last day — more, less, or the same?' / 'Any confusion, hiccups, itch or a metallic taste?'",
-    "★ 'I'd like her fluid status first — postural blood pressure, mucous membranes, JVP and capillary refill.' / 'Why a troponin with no chest pain?' → 'Because nausea and lethargy without chest pain is a recognised presentation of infarction in women and in chronic kidney disease.'",
-    "★ 'Her eGFR has halved from 45 to 22, which meets criteria for a stage 2 acute kidney injury.' / ★ 'The potassium is 6.3, and with ECG changes I treat that as severe regardless of the number.'",
-    "★ 'Your kidneys have taken a sudden extra hit on top of the long-standing damage — an acute kidney injury on top of chronic kidney disease.' / 'Will I need dialysis?' → 'Not today, and in most cases like yours this is reversible once we take the pressure off — that's exactly why we're acting now.'",
-    "★ 'Each of these medicines is sensible on its own. Together, with kidneys like yours, they're too much — in Australia we call it the triple whammy.' / 'But it's only ibuprofen — you can buy it anywhere' → 'You can — and that's exactly why it catches people out. Being sold without a prescription doesn't make it harmless for your kidneys.'",
-    "★ 'The painkiller stops today. The other two we hold while you're unwell — that's temporary.' / ★ 'I'm sending you to the emergency department today. Please don't drive.' / 'Could you tell me back what you'll say when you get to the hospital?'"
-   ],
    "pefe": [
-    "Role-player: Marianne, 50, school administrator, husband, two grown children; HTN 10 y, CKD 5 y ('about half'), never dialysed; perindopril + 'a fluid tablet' never missed; ibuprofen 400 mg tds ~3 weeks for right knee (self-bought, then locum script; usual GP on leave) — not thought of as a medication; never smoked, wine most weekends; mother died on dialysis. 'What medications?' → 'perindopril and a fluid tablet' and STOP; ibuprofen only for 'painkillers', 'from the chemist', 'over the counter'. Slow, flat, retching; withdraws if not offered water; defensive once 'it's only ibuprofen'; 'is this the locum's fault?'; pushes back once on hospital 'can't I stop the tablets and come back Friday?' — agrees only if you hold firm with a reason; 'sorry — what does that mean?' at jargon; hidden agenda dialysis/mother in the last two minutes unless asked",
-    "Examiner returns: BP 142/86, PR 72, RR 16, SpO2 98, T 36.6, BSL 5.4 · dry mucosa, postural drop 20 systolic, JVP not visible, abdomen soft non-tender, no palpable bladder, HS dual, chest clear, no pallor/oedema/asterixis · eGFR 22 (baseline 45), creatinine ~×2, K 6.3, HCO3 18, troponin normal, ECG peaked T narrow QRS",
-    "Variant A — prevention: visiting gout patient on perindopril + a fluid tablet demands indomethacin → 'I can treat that today — before I write anything, what else are you on, any kidney trouble? …an anti-inflammatory is the one thing I don't want to give you: those three together can shut the kidneys down within days' → colchicine or short prednisolone, check UEC while here VERIFY TG gout dosing/renal cautions",
-    "Variant B — ECG: ST elevation II, III, aVF → 'inferior STEMI presenting as nausea and lethargy without chest pain — ambulance now, aspirin 300 mg chewed, IV access, activate the acute coronary pathway; the renal picture is real but no longer the priority' ★ continuing the triple-whammy talk = automatic fail",
-    "Variant C — coffee-ground vomit + black sticky stools: NSAID upper GI bleed contributing to the AKI → ambulance now, bloods, fluids, PPI, endoscopy · Variant D — refuses (daughter's wedding Saturday): honest risk statement, 'I'd be failing you if I sent you home; may only be hours on a drip'; if still declines: document discussion and specific risks, confirm capacity, written red flags, same-day repeat bloods, defined review, can change her mind any time — never simply agree",
-    "SA: ED (nearest regional/metropolitan); MedSTAR 1300 13 12 33 if retrieval; PATS; TIS 131 450; recheck UEC 48–72 h after stopping, 1–2 weeks after restarting an ACE-i",
-    "Other — No pallor, no oedema, NO ASTERIXIS"
+    "**Ask for FLUID STATUS FIRST — it is the finding that explains the mechanism.**",
+    "**'Renal function tests' scores nothing. Name the analyte, and name the baseline you are comparing against.**",
+    "**If challenged on the troponin in a patient with no chest pain: 'because nausea and lethargy WITHOUT chest pain is a recognised presentation of infarction in women and in patients with chronic kidney disease.'**",
+    "**In the emergency department: CALCIUM GLUCONATE 10%, 10 mL IV over 2–5 minutes if ECG changes are present — MYOCARDIAL PROTECTION ONLY, it does not lower potassium, repeat if changes persist · INSULIN–DEXTROSE, 10 units short-acting in 50 mL of 50% glucose over 15–30 min, onset about 15 min, lasts 4–6 h, HOURLY SUGARS FOR 6 HOURS · SALBUTAMOL 10–20 mg nebulised as an adjunct · sodium bicarbonate only for significant acidosis · isotonic fluid titrated to fluid status · dialysis if refractory, anuric or severely acidotic.** VERIFY.",
+    "**Repeat the potassium at 1–2 HOURS after any shifting agent — it rebounds. Recheck renal function 48–72 HOURS after stopping the drugs, and 1–2 WEEKS after restarting an ACE inhibitor.**",
+    "**Avoid: ANY NSAID, including topical, over-the-counter and COX-2 selective agents — the renal risk is a CLASS EFFECT from prostaglandin inhibition, not COX-1 selectivity · resins as the acute answer, since binders are for ongoing control · stopping the perindopril PERMANENTLY by default.**",
+    "**The analgesia alternative, ready to offer: PARACETAMOL first line · physiotherapy, weight management, a walking aid, specialist referral for intra-articular options · topical NSAIDs still best avoided in significant CKD · OPIOIDS are a poor answer for chronic osteoarthritis and ACCUMULATE in renal impairment.**"
    ],
-   "fails": [
-    "Asking only 'what medications are you on?' — walking past the ibuprofen ★",
-    "No cardiac screen without being prompted ★",
-    "'High potassium' as the diagnosis instead of AKI on CKD; not explaining the three-drug combination in her words ★",
-    "Sending her home to 'come back Friday' with K 6.3 and ECG changes; letting her drive ★",
-    "Continuing to discuss the triple whammy after an ischaemic ECG (Variant B) ★",
-    "Ignoring the vomit bag; asking only how many times, never what the vomit looked like; never asking about urine output or black stools",
-    "'Renal function tests' with no analyte; stopping perindopril and the thiazide forever rather than holding; blaming the locum; deflecting the dialysis fear; no alternative for the knee; no teach-back"
-   ],
-   "numbers": [
-    "Triple whammy = diuretic + NSAID + ACE-i/ARB · here eGFR 45 → 22 · creatinine ~×2 · K 6.3 · HCO3 18 · troponin normal · peaked T, narrow QRS",
-    "AKI staging: stage 1 creatinine ×1.5 · stage 2 ×2 · stage 3 ×3 or dialysis VERIFY against current KDIGO wording · K mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · any ECG change = severe",
-    "Calcium gluconate 10% 10 mL IV over 2–5 min · insulin–dextrose 10 units in 50 mL 50% glucose over 15–30 min, onset ~15 min, 4–6 h, BSL hourly × 6 h · salbutamol 10–20 mg neb",
-    "Recheck UEC 48–72 h after stopping the drugs · 1–2 weeks after restarting an ACE-i · aldosterone rule: hypoaldosteronism → high K; hyperaldosteronism → low K",
-    "Timing: 40 s · 4 min · 1.5 min · 2 min · 45 s (9-minute station) · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**AKI on CKD from the triple whammy** — the answer",
+     "**ACE inhibitor + diuretic + NSAID; known CKD; recent NSAID start; OLIGURIA**",
+     "**Drug list AND START DATES; urine output; fluid status**",
+     "**UEC and eGFR AGAINST BASELINE** — high"
+    ],
+    [
+     "**Acute coronary syndrome** — the one that kills her",
+     "**Female, 50, hypertension, CKD; NAUSEA AND LETHARGY CAN BE THE ONLY FEATURES**",
+     "**Chest, arm, jaw or back discomfort; exertional breathlessness; sweating**",
+     "**ECG AND TROPONIN — you cannot exclude it on history alone in this patient group** — immediate"
+    ],
+    [
+     "DKA or hyperglycaemic state",
+     "Thirst, polyuria, weight loss, abdominal pain",
+     "Diabetes history; **Kussmaul breathing; ketotic breath**",
+     "**BSL and ketones — 5.4 here, excluded in the opening thirty seconds** — high"
+    ],
+    [
+     "Acute abdomen",
+     "**PAIN PRECEDING VOMITING**; localised tenderness; fever; bowels not opening",
+     "Site of pain, bowel habit, **flatus**, jaundice",
+     "Examination, FBC, lipase, imaging — high"
+    ],
+    [
+     "**NSAID gastritis or upper GI bleed**",
+     "**Weeks of ibuprofen; epigastric pain; COFFEE-GROUND VOMIT; MELAENA**",
+     "**Vomit CONTENT; black stools**; dyspepsia",
+     "FBC, iron studies, gastroscopy. **The bleeding also drives the AKI** — high"
+    ],
+    [
+     "Addison's disease",
+     "Lethargy, nausea, **postural drop, PIGMENTATION, hyponatraemia WITH hyperkalaemia**",
+     "Weight loss, salt craving, skin and buccal pigmentation",
+     "Sodium, morning cortisol"
+    ],
+    [
+     "Hypercalcaemia · anaemia · malignancy",
+     "Bone pain, constipation, weight loss, pallor",
+     "Weight, appetite, night sweats",
+     "Calcium, FBC"
+    ],
+    [
+     "Other drugs",
+     "**Digoxin, opioids, trimethoprim, potassium supplements, SALT SUBSTITUTES, spironolactone, heparin, non-selective beta-blockers**",
+     "Full medication reconciliation",
+     "Levels where relevant; cease the culprit"
+    ],
+    [
+     "Tissue breakdown",
+     "**Rhabdomyolysis, crush injury, trauma, burns, tumour lysis, haemolysis**",
+     "Falls, a long lie, muscle pain, dark urine",
+     "CK, urine myoglobin"
+    ],
+    [
+     "**Pseudohyperkalaemia**",
+     "**Well patient, NORMAL ECG, haemolysis flagged by the laboratory**; prolonged tourniquet, fist clenching, high platelet or white cell count",
+     "**Read the laboratory comment**",
+     "**Repeat the sample — check FIRST, before any of the above**"
+    ]
    ]
   },
   "source": "Triple_Whammy_AKI_2_Case_Tasks_Script_Notability.pdf (Marianne Kovac, 50, nausea, vomiting and lethargy on perindopril + thiazide + ibuprofen)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Triple_Whammy_AKI_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Observations",
-    "BP 142/86 · PR 72 · RR 16 · SpO2 98% · T 36.6 · BSL 5.4"
-   ],
-   [
-    "Hydration",
-    "DRY MUCOSA with a POSTURAL DROP of 20 systolic; JVP not visible"
-   ],
-   [
-    "Abdomen",
-    "Soft, non-tender; NO palpable bladder — so not obstructive"
-   ],
-   [
-    "Heart and chest",
-    "Heart sounds dual; chest clear"
-   ],
-   [
-    "Bloods",
-    "eGFR 22 (baseline 45) · creatinine roughly DOUBLED · POTASSIUM 6.3 · bicarbonate 18 · troponin normal"
-   ],
-   [
-    "ECG",
-    "Peaked T waves with a narrow QRS"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — 'What medications are you on?' and walking past the diagnosis — she names the two prescribed and stops; ask about painkillers by that word, and anything from the chemist separately; then 'who started it, when, and did they know about your kidneys?' (★)",
-   "FAIL — Skipping the cardiac screen because the diagnosis is on the medication list — 'a few quick questions to make sure I'm not missing something serious: chest, arm, jaw or back? breathless? clammy? palpitations? blackouts?' — this is what the station is testing, and ask for a troponin: nausea and lethargy without chest pain is a recognised presentation of infarction in women and in CKD (★)",
-   "FAIL — 'High potassium' as the diagnosis — it is an acute kidney injury on chronic kidney disease; eGFR halved from 45 to 22 is a stage 2 AKI, 6.3 with ECG changes is severe regardless of the number",
-   "SAY — 'The painkiller narrows the vessel bringing blood in, the perindopril widens the vessel taking blood out, and the fluid tablet lowers your circulating volume — each sensible alone; together, with kidneys like yours, too much. We call it the triple whammy' — and 'you can buy it anywhere' deserves a direct answer; don't blame the locum, explain the missing record (★)",
-   "FAIL — 'Stop the tablets and come back Friday' with a potassium of 6.3 and ECG changes — an automatic fail however good the rest; emergency department today, ring ahead, don't drive, ambulance if chest pain, palpitations, faintness or weakness on the way (★)",
-   "DO — Ask what the vomit looks like (blood or green — she is on an NSAID), urine output ('more, less or the same?'), the metallic taste; request fluid status first, then named analytes and an ECG; stop the ibuprofen, hold — not stop forever — the other two; answer the dialysis fear honestly; teach-back"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Triple_Whammy_AKI_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-75",
