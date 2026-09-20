@@ -16443,8 +16443,8 @@
  {
   "id": "MED-56",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "Regional general practice, Wallaroo, South Australia.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Jane Sotiris, a 35-year-old woman, presents to your general practice complaining of tiredness. Nothing else is given in the stem.",
    "Version A (online): history 6 minutes, then examination findings appear on screen. Version B (face to face): history 4 minutes, then physical examination from the examiner."
@@ -16454,124 +16454,199 @@
    "You will then be given the physical examination findings",
    "Explain your diagnosis and your differentials to the patient"
   ],
-  "time": "8 minutes. Exploration is five questions, not a conversation; the marks are in the M probe, the four node words, the word cancer, one feelings check, and excision biopsy.",
+  "findings": [
+   [
+    "General appearance and vitals",
+    "Sitting comfortably. NO pallor, NO jaundice, NO cachexia, NO rash or bruising, no scratch marks. Temperature NORMAL, pulse and BP normal"
+   ],
+   [
+    "Thyroid",
+    "NORMAL"
+   ],
+   [
+    "Lymph nodes — request EVERY chain by name",
+    "OCCIPITAL · PRE- AND POST-AURICULAR · SUBMENTAL · SUBMANDIBULAR · ANTERIOR AND POSTERIOR CERVICAL · SUPRACLAVICULAR · AXILLARY · EPITROCHLEAR · INGUINAL · POPLITEAL. Eight seconds, and it is a marked item"
+   ],
+   [
+    "What you are given",
+    "TWO ENLARGED LYMPH NODES IN THE LEFT AXILLA. No other group enlarged. THEN THE EXAMINER WAITS to see whether you characterise them"
+   ],
+   [
+    "THE FOUR CHARACTERISING WORDS",
+    "SIZE — about 2 cm · CONSISTENCY — STONY HARD, not rubbery · MOBILITY — FIXED · TENDERNESS — NON-TENDER. That is the MALIGNANT end of the spectrum, and it is the reason the word cancer has to be said out loud. ACCEPTING 'TWO ENLARGED NODES' AND MOVING ON IS AN AUTOMATIC FAIL"
+   ],
+   [
+    "The breast examination — NOT optional",
+    "BOTH BREASTS AND THE AXILLARY TAIL, and INSPECT THE SKIN OF THAT ARM. NORMAL here. An AXILLARY node in a 35-year-old woman is a BREAST question until proved otherwise — a hard fixed node can be the presenting sign of breast cancer with an IMPALPABLE primary"
+   ],
+   [
+    "Cardiovascular, respiratory, abdomen",
+    "Heart sounds normal, no murmur. Air entry equal, no added sounds. NO HEPATOMEGALY, NO SPLENOMEGALY"
+   ],
+   [
+    "Bone tenderness",
+    "Ask for it over the STERNUM AND SPINE — NONE here. Sternal tenderness would push you towards leukaemia"
+   ],
+   [
+    "Office tests",
+    "Blood sugar NORMAL · urine dipstick NORMAL · URINE PREGNANCY TEST NEGATIVE"
+   ],
+   [
+    "What she gives only on probing",
+    "Weight loss: 'about five kilos over a few months, and I haven't been trying.' Lumps: TWO IN THE LEFT ARMPIT, two months, SLIGHTLY BIGGER, PAINLESS. Night sweats: 'I have to change my nightie' — DRENCHING. NO fevers, no itching, no alcohol-induced pain, no breast lumps, NO FAMILY HISTORY OF CANCER. Her hidden fear: 'my friend had lumps and it turned out to be cancer'"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the nodes, and the four words you must ask for",
+  "must": [
+   "FAIL — Never saying the word cancer. 'Swollen glands, we'll do some tests' is avoidance.",
+   "FAIL — Never characterising the nodes. Four words: size, consistency, mobility, tenderness.",
+   "FAIL — No malignancy screen, or offering fine-needle aspiration as the diagnostic test.",
+   "FAIL — Giving a prognosis or cure rate, or false reassurance on a negative family history.",
+   "ASK — Have you lost weight recently? How much, and over what period?",
+   "ASK — Any night sweats — do you have to change the sheets or your nightclothes?"
+  ],
   "back": {
-   "dx": "Lymphoma — four months of constant, worsening lack of energy (not sleepiness); 5 kg unintentional weight loss over a few months, appetite fine; two lumps in the LEFT axilla for two months, slightly bigger, painless; drenching night sweats (changes her nightie); no fever, no itch, no alcohol-induced pain; no breast lumps; no family cancer; screening two years ago; one cat, no scratches; safe sex; no travel. Examination: two 2 cm HARD, FIXED, NON-TENDER left axillary nodes, no other chain, breasts normal, no hepatosplenomegaly, no bone tenderness, afebrile, office tests and pregnancy test normal. Hidden agenda: a friend had lumps that were cancer. Must say 'lymphoma, which is a type of cancer of the lymph glands'; excision of a whole node, not a needle. Automatic fails: never saying cancer/lymphoma · never characterising the nodes · no malignancy screen · prognosis or cure rate · FNA as the test · false reassurance.",
+   "dx": [
+    "**Lymphoma — Hodgkin or non-Hodgkin — with LEUKAEMIA alongside it.** Malignant clonal proliferation of lymphocytes, usually presenting as **painless lymphadenopathy with or without systemic B symptoms**.",
+    "**The triad you are handed: WEIGHT LOSS + PAINLESS HARD FIXED NODES + DRENCHING NIGHT SWEATS.**",
+    "**The sentence that passes: 'Jane, tiredness can have many different causes. In your case, I am concerned about the possibility of LYMPHOMA, WHICH IS A TYPE OF CANCER OF THE LYMPH GLANDS. I am not certain yet — a biopsy is what confirms it — but I would not be honest with you if I said anything less.'** Then **ONE feelings check**, then **the reasons**, then **move on to the differentials.**",
+    "**B symptoms have a definition. 'Night sweats' alone is not one. The three are: unexplained fever above 38°C · DRENCHING night sweats · unintentional weight loss of MORE THAN 10% of body weight over SIX MONTHS.** Say 'she has weight loss and drenching sweats, which are B symptoms' and you sound like a clinician rather than a list.",
+    "**FINDINGS OUTRANK A REASSURING HISTORY.** No family history, no fever, no exposures — none of that touches the diagnosis, because you can feel two hard fixed nodes. **A history that fails to support a finding does not cancel the finding.** **And most lymphoma is SPORADIC — a negative family history reassures you about nothing.**",
+    "**An axillary node in a 35-year-old woman is a breast question until proved otherwise.** Asking about breast lumps in the history is not enough — **REQUEST A BREAST EXAMINATION**. If challenged: 'I keep lymphoma at the top of my list, but the site of the node obliges me to examine both breasts and the skin of that arm before I settle on it.'",
+    "**EXCISION BIOPSY OF A WHOLE NODE is the diagnostic test — NEVER fine-needle aspiration, which cannot show nodal architecture and delays the diagnosis.** **A node over 1 cm persisting beyond 4 weeks without an explanation warrants biopsy.** VERIFY local criteria.",
+    "**Do not miss: a LEFT SUPRACLAVICULAR NODE (Virchow) — name it every time · CYTOPENIAS or blasts on the film · SUPERIOR VENA CAVA OBSTRUCTION, which is facial swelling, distended neck veins and breathlessness lying flat, and is a same-day emergency · STERNAL TENDERNESS · an impalpable breast primary.**",
+    "**Do NOT run a full SPIKES sequence.** There are two minutes left and a differentials task still to complete, and **the role-player is briefed not to give a strong emotional reaction — if you wait for one, you lose the time to silence.** **Do not give a prognosis or cure rate: you have no histology, no subtype and no stage.**",
+    "**Plan: FBE and blood film — the single most useful test · LDH, ESR or CRP, U&E, LFT, calcium, urate · HIV, EBV and CMV serology, plus hepatitis B and C before any chemotherapy · chest radiograph then CT neck, chest, abdomen and pelvis · URGENT referral for excision biopsy, phoned through, not a routine letter.** **Cancer Council SA 13 11 20 · PATS · RAH or TQEH haematology · MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open, ★ acknowledge the worry she volunteers, contract, 'some questions will sound unrelated'"
+     "**'Good morning, I'm Dr [name], one of the doctors here. What has brought you in today?'** She volunteers the worry in her first sentence — **acknowledge it back or you lose a communication mark in the opening ten seconds.** Then the contract: **'some questions will sound unrelated — I ask everyone. Is that all right?'**"
     ],
     [
      "0:30",
-     "Five questions: lack of energy vs sleepy vs feverish · how long · constant · worse · better/worse · impact"
+     "**Explore in five questions, not a conversation: IS IT A LACK OF ENERGY, FEELING SLEEPY, OR FEELING FEVERISH · how long · constant or coming and going · getting worse · anything better or worse · how is it affecting your life?** **Energy rather than sleepiness moves anaemia, thyroid, malignancy and mood UP and sleep apnoea DOWN.**"
     ],
     [
      "1:15",
-     "H and E in ten seconds each (all no)"
+     "**H — liver and iron: any tanning of the skin · yellowing of the eyes · dark urine or pale stools? E — endocrine: passing more urine · more thirsty · do you prefer hot or cold weather?** **Ten seconds each when the answer is no. Do not slow down on negatives.**"
     ],
     [
-     "1:45",
-     "★ M: weight → YES 5 kg → PROBE, do not move on: appetite, lumps → two in the armpit → how long, bigger, painful; night sweats — change the sheets?; fevers; itching without rash; alcohol pain; breast lumps/dimpling/discharge; cancer in you/family; last cervical screen"
+     "1:35",
+     "**M — AND THIS IS WHERE THE STATION IS WON. 'HAVE YOU LOST WEIGHT RECENTLY — HOW MUCH, AND OVER WHAT PERIOD?'** → five kilos. **Now STOP AND PROBE, do not move to the next letter.**"
     ],
     [
-     "3:15",
-     "I: fever/chills, sore throat/flu-like, sexually active + safe sex (HIV can present exactly like this — ask everyone), travel, pets — cat scratches on that arm, TB contact"
+     "1:50",
+     "**The probe, eleven questions: appetite · ANY LUMPS OR BUMPS ANYWHERE · how long, getting bigger, painful · ANY NIGHT SWEATS, DO YOU HAVE TO CHANGE THE SHEETS OR YOUR NIGHTCLOTHES · any fevers that come and go · any ITCHING ALL OVER WITHOUT A RASH · do the lumps ACHE AFTER ALCOHOL · ANY BREAST LUMPS, SKIN DIMPLING OR NIPPLE DISCHARGE · any cancer in you or your family · when did you last have a cervical screening test?**"
+    ],
+    [
+     "2:40",
+     "**I — the second-place group, so do it properly: any fevers or chills · sore throat or flu-like illness recently · ARE YOU SEXUALLY ACTIVE, DO YOU USE CONDOMS · any travel · any pets, ANY CAT SCRATCHES OR BITES ON THAT ARM · anyone around you with tuberculosis?** **Do not skip the sexual history — HIV can present exactly like this.**"
+    ],
+    [
+     "3:10",
+     "**A — breathless or heart racing on exertion · shoulder or hip stiffness · headaches, joint pains, rashes. D — any medicines · how has your mood been, still enjoying things, any stress. C — greasy stools · blood in the stool · chest pain · how many pillows · ankle swelling · cough, do you smoke.**"
+    ],
+    [
+     "3:35",
+     "**O — has anyone said you snore or gasp · what is your occupation. P — WHEN WAS YOUR LAST PERIOD, are they regular, are they heavy, ANY CHANCE YOU COULD BE PREGNANT?** Then **'was there anything you were worried this might be?'** → her friend's lumps."
     ],
     [
      "4:00",
-     "A, AD, D, C, O, P in one run; alcohol/allergies/PMHx/FHx; ★ 'was there anything you were worried this might be?' → friend → 'thank you — I'll examine you and be straight with you'"
+     "**Request the examination, naming every chain**: general appearance including **bruising, petechiae and scratch marks** · vitals, particularly temperature · thyroid · **the full node examination by chain.**"
     ],
     [
-     "5:30/6:00",
-     "Examination: general (pallor, jaundice, cachexia, bruising/petechiae, scratch marks) · temperature · thyroid · ★ full lymph node examination by chain → 'two enlarged in the left axilla' → ★ immediately: size, stony hard or rubbery, fixed or mobile, tender → breasts + axillary tail, skin of the arm → CVS, resp → abdomen hepatosplenomegaly → bone tenderness sternum/spine → BSL, dipstick, urine pregnancy test"
+     "4:40",
+     "**The examiner gives you two axillary nodes and WAITS. Immediately, without pausing: 'HOW LARGE ARE THEY? ARE THEY STONY HARD OR RUBBERY? ARE THEY FIXED OR MOBILE? ARE THEY TENDER?'** Then **both breasts and the axillary tail, the skin of that arm, cardiovascular, respiratory, abdomen for hepatosplenomegaly, BONE TENDERNESS over sternum and spine, and office tests including a URINE PREGNANCY TEST.**"
+    ],
+    [
+     "6:00",
+     "**Name it. ONE feelings check — 'how are you feeling about what I have just said?' — then CONTINUE.** Then **the reasons from her own findings: five kilos without trying · two lumps that are hard and not moving · drenching night sweats. Those three together point that way.**"
     ],
     [
      "6:45",
-     "Name it → ★ one feelings check → three reasons from her findings → differentials reasoned (breast cancer; infections incl. HIV — offer the test; pregnancy excluded) then rapid list → plan: bloods today, CXR, urgent haematology referral in Adelaide for excision biopsy, phoned today; Cancer Council SA 13 11 20 + travel → safety-net → support person → questions → 'is it curable?' → no numbers before type/stage"
+     "**The differentials, top three REASONED against her findings, the rest rapid-fire: breast cancer — examination normal today but imaging anyway · infections, EBV, HIV, toxoplasmosis, TB, cat-scratch — no fever, no travel, safe sex, but INCLUDE AN HIV TEST · pregnancy — excluded today.** Then thyroid, diabetes, anaemia, hepatitis, haemochromatosis, coeliac, autoimmune, medications, depression, sleep apnoea, heart failure."
+    ],
+    [
+     "7:20",
+     "**The plan: bloods today, chest X-ray, URGENT referral for a small operation to remove one gland WHOLE — 'a needle sample is not enough' — phoned through today.** **Cancer Council SA 13 11 20** for information and travel. **Safety-net: fever, facial or neck swelling, breathless lying flat, bruising or bleeding → straight back or to hospital.** **'Is there someone who can come with you?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Good morning, my name is Dr —, one of the doctors here. What has brought you in today?' → 'I am sorry to hear that, and I can understand why it is worrying you. Let me ask a number of questions to find the cause, then examine you and explain what I think. Some questions will sound unrelated; I ask everyone.'",
-    "Can you describe what you mean by tired — a lack of energy, feeling sleepy, or feeling feverish? How long? Constant or coming and going? Getting worse? Anything making it better or worse? How is it affecting your life?",
-    "★ Have you lost weight recently? → 'That is important, let me ask more. Has your appetite changed? Have you noticed any lumps or bumps anywhere in your body? How long have they been there, are they getting bigger, are they painful? Any night sweats — do you have to change the sheets or your nightclothes? Any fevers? Any itching all over without a rash? Do the lumps ache after alcohol? Any breast lumps, skin dimpling or nipple discharge? Any cancer in you or your family? When did you last have a cervical screening test?'",
-    "Any fevers or chills, sore throat or flu-like illness? Are you sexually active — do you practise safe sex? Any recent travel? Any pets — any cat scratches or bites on that arm? Anyone around you with tuberculosis?",
-    "Short of breath or heart racing on exertion? Stiffness in your shoulders or hips? Headaches, joint pains, rashes? Any medicines at all? Mood — still enjoying things, any stress? Greasy stools or blood in the stool? Chest pain? How many pillows? Ankle swelling? Cough, do you smoke? Has anyone said you snore or gasp? Occupation? Last period — regular, heavy, any chance of pregnancy? Alcohol, allergies, other medical problems, family history? ★ Was there anything you were worried this might be?",
-    "★ Examiner: 'On general appearance — pallor, jaundice, cachexia, bruising or petechiae, scratch marks? Vital signs, the temperature particularly. A thyroid examination. Then a full lymph node examination of every chain: occipital, pre- and post-auricular, submental, submandibular, anterior and posterior cervical, supraclavicular, axillary, epitrochlear, inguinal and popliteal.' → ★ 'How large are they? Stony hard, or rubbery? Fixed or mobile? Tender? I would also like to examine both breasts and the axillary tail and inspect the skin of that arm. Cardiovascular — heart sounds and murmurs. Respiratory — air entry and added sounds. Abdomen — hepatomegaly or splenomegaly? Bone tenderness over the sternum or spine? Office tests — blood sugar, urine dipstick, and a urine pregnancy test.'",
-    "★ 'Jane, tiredness can have many different causes. In your case, I am concerned about the possibility of lymphoma, which is a type of cancer of the lymph glands. I am not certain yet — a biopsy is what confirms it — but I would not be honest if I said anything less. How are you feeling about what I have just said?' [one check-in, then continue] 'The reasons I am concerned: you have lost about five kilograms without trying; the two lumps in your armpit are hard and not moving when I examine them; and you have drenching night sweats. Those three things together point that way.'",
-    "'Because the lumps are in your armpit and you are 35, I also have to think about other cancers, particularly breast cancer — your examination was normal, but I will still arrange imaging. Then infections: glandular fever, HIV, toxoplasmosis, tuberculosis and cat-scratch disease — less likely because you have no fever, no travel and no unsafe sexual practice, but I would like to include an HIV test. Then pregnancy — excluded today. Beyond those: underactive thyroid, diabetes, anaemia, hepatitis, haemochromatosis, coeliac disease, autoimmune conditions such as lupus and rheumatoid arthritis, medications, depression, sleep apnoea and heart failure.' → 'Which do you think?' → 'The lymphoma is the one I am acting on today.' ★ 'Blood tests today, a chest x-ray, and an urgent referral to a blood specialist in Adelaide for a small operation to remove one gland whole and look at it under the microscope — a needle sample is not enough. I will phone the referral through today. Cancer Council SA on 13 11 20 can help with information and the travel. Come straight back or to hospital if you get a fever, your face or neck swells, you become breathless lying flat, or you start bruising or bleeding. Is there someone who can come with you? What questions do you have?' → 'Is it curable?' → 'I cannot give you numbers before we know which type this is, and many lymphomas respond very well to treatment. Let me get the biopsy done.'"
-   ],
    "pefe": [
-    "Findings: well, no pallor/jaundice/cachexia/rash/bruising · afebrile, P and BP normal · thyroid normal · two enlarged left axillary nodes ~2 cm, hard, fixed, non-tender; no other group · breasts and arm skin normal · heart and chest normal · no hepatosplenomegaly · no bone tenderness · BSL, dipstick, pregnancy test normal",
-    "Summary to the examiner: 35 F, four months progressive fatigue, 5 kg unintentional loss, two painless left axillary lumps, drenching night sweats; two hard fixed non-tender left axillary nodes, no other lymphadenopathy, no hepatosplenomegaly, no bruising or scratch marks, afebrile, breasts normal, office tests normal → most likely lymphoma, leukaemia alongside, metastatic breast carcinoma not excluded; EBV, CMV, HIV, toxoplasmosis, TB; then the general causes. Plan: FBE with film, LDH, ESR, HIV and EBV serology, CXR, urgent referral for excision biopsy",
-    "Variants: 4-minute face-to-face → one question per block, keep the M probe intact, move on the prompt mid-sentence · 'is it cancer?' at 90 s → one of the things I need to rule out; three more minutes · rubbery and mobile → more typical of lymphoma than of spread — still biopsy · left supraclavicular node → Virchow's — look for an abdominal/chest primary (stomach, pancreas, lung, ovary) → CT chest/abdomen/pelvis · bruising and bleeding gums → leukaemia equally — FBE and film today, phone the haematology registrar · facial swelling + breathless lying flat → SVC obstruction — hospital today · declines Adelaide (children) → PATS covers travel/accommodation, Cancer Council SA can arrange; find a date",
-    "Never say to the patient: lymphadenopathy, B symptoms, FNA, excisional biopsy unexplained, 'probably nothing'",
-    "SA: urgent haematology at RAH/FMC; PATS (>100 km); Cancer Council SA 13 11 20; MedSTAR 1300 13 12 33 if SVC obstruction; TIS 131 450",
-    "Bones — No bone tenderness"
+    "**Name every node chain out loud** — occipital, pre- and post-auricular, submental, submandibular, anterior and posterior cervical, supraclavicular, axillary, epitrochlear, inguinal, popliteal. **'Are there any lymph nodes?' is not a request.**",
+    "**Characterise what you are given, in four words: size, consistency, mobility, tenderness.** **Stony hard, fixed and non-tender is the malignant end; rubbery and mobile is more typical of lymphoma than of metastatic spread — but it does not change what you do.**",
+    "**Request BOTH BREASTS and the axillary tail, and inspect the skin of the arm.** A hard fixed axillary node in a woman of this age can be breast cancer with an impalpable primary.",
+    "**Do now: full node examination, breast examination, abdomen for hepatosplenomegaly, bone tenderness over sternum and spine, temperature, urine pregnancy test.**",
+    "**Do next: FBE AND BLOOD FILM — the single most useful test, because cytopenias or blasts change everything today · LDH, ESR or CRP, U&E, LFT, calcium, urate · HIV, EBV, CMV serology and hepatitis B and C · chest radiograph then CT neck, chest, abdomen and pelvis · EXCISION BIOPSY OF A WHOLE NODE.**",
+    "**Avoid: fine-needle aspiration as the diagnostic test · a 'trial of antibiotics' in a hard fixed node · telling her it is 'probably just glands' · promising a timeframe you cannot control.**",
+    "**If a chest film appears, read it systematically before interpreting. Bulky mediastinal nodes also raise SVC obstruction, which is an emergency.**"
    ],
-   "fails": [
-    "Never saying cancer or lymphoma ('swollen glands') ★",
-    "Never characterising the nodes — accepting 'two enlarged nodes' and going to the diagnosis ★",
-    "No malignancy screen; hearing 'weight loss' and moving to the next letter ★",
-    "Giving a prognosis or cure rate; offering fine-needle aspiration as the diagnostic test; false reassurance ★",
-    "Skipping the sexual history because she 'sounds married'; being reassured by a negative family history (most lymphoma is sporadic)",
-    "Not eliciting the hidden concern; waiting in silence >5 s after naming cancer; more than a minute on the exploration; no breast examination request"
-   ],
-   "numbers": [
-    "5 kg unintentional · 2 nodes · left axilla · 2 cm · hard, fixed, non-tender · four months · night sweats changing nightclothes",
-    "B symptoms: fever >38 °C · drenching night sweats · weight loss >10% in 6 months · node >1 cm persisting >4 weeks without explanation → biopsy VERIFY local criteria",
-    "Four characterising words: size · consistency · mobility · tenderness (+ overlying skin, matting) · excision biopsy of a whole node — NOT FNA (architecture needed) · FBE/film, LDH, ESR, EBV/CMV/HIV/toxo serology, CXR, then staging CT/PET after diagnosis VERIFY",
-    "Lymph node chains: occipital, pre/post-auricular, submental, submandibular, anterior/posterior cervical, supraclavicular, axillary, epitrochlear, inguinal, popliteal · Virchow's = left supraclavicular",
-    "Axillary node differentials: lymphoma · leukaemia · breast cancer (metastatic) · melanoma/skin cancer of the arm · cat-scratch · EBV/CMV/HIV/toxo · TB · reactive",
-    "Cancer Council SA 13 11 20 · PATS >100 km · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Lymphoma — Hodgkin or non-Hodgkin** — the answer",
+     "**Painless hard or rubbery nodes, weight loss, drenching sweats**, fever, pruritus, alcohol-induced nodal pain",
+     "**Every node chain, spleen and liver, B symptoms**",
+     "**EXCISION BIOPSY OF A WHOLE NODE. FBE and film, LDH, ESR, CT neck/chest/abdomen/pelvis** — urgent"
+    ],
+    [
+     "**Leukaemia**",
+     "**Bruising, bleeding, infections, pallor, sternal or bone tenderness**",
+     "Bruising, petechiae, gum bleeding, sternal tenderness",
+     "**FBE with film — blasts; urgent haematology referral** — emergency if cytopenic"
+    ],
+    [
+     "**Metastatic carcinoma — breast until excluded**",
+     "**Hard, fixed, non-tender node in a 35-year-old woman's AXILLA**",
+     "**Breast examination, skin of the arm**, thyroid, chest",
+     "**Mammography and breast ultrasound; core biopsy; CT for a primary** — urgent"
+    ],
+    [
+     "EBV · CMV · toxoplasmosis",
+     "Fever, sore throat, malaise, **TENDER nodes**, splenomegaly",
+     "Flu-like illness, cat exposure, undercooked meat",
+     "Monospot or EBV serology, CMV and Toxoplasma serology — same week"
+    ],
+    [
+     "**HIV**",
+     "**Generalised lymphadenopathy, weight loss, sweats, thrush — can be clinically identical**",
+     "**Sexual history and injecting drug use, asked of EVERYONE**",
+     "**Offer an HIV antigen/antibody test explicitly** — same week"
+    ],
+    [
+     "Tuberculosis · cat-scratch disease · local sepsis",
+     "**Matted or fluctuant nodes**, sinus, country of birth, contacts; **a scratch or bite on that arm**",
+     "Country of birth, TB contacts, pets, breaks in the skin",
+     "Chest radiograph, IGRA, node aspirate for culture; Bartonella serology — same week"
+    ],
+    [
+     "Hypothyroidism · diabetes",
+     "Cold intolerance, dry skin, constipation, weight gain; or polyuria and thirst",
+     "Weather preference, bowels, thirst",
+     "**TSH; fasting glucose or HbA1c** — on every tiredness screen"
+    ],
+    [
+     "Anaemia · coeliac · haemochromatosis · hepatitis",
+     "Pallor, heavy periods, greasy stools, **tanning**, jaundice",
+     "Menstrual loss, diet, bowel habit, skin colour",
+     "FBE and ferritin, coeliac serology, iron studies, LFT and hepatitis serology"
+    ],
+    [
+     "Pregnancy · autoimmune disease · depression",
+     "Missed or late period; joint pain and rash; low mood and anhedonia",
+     "Last menstrual period, joints, rash, mood screen",
+     "**Urine pregnancy test**; ANA and dsDNA if indicated; PHQ-2"
+    ],
+    [
+     "Drugs — phenytoin, carbamazepine, allopurinol",
+     "Drug-induced pseudolymphoma or hypersensitivity",
+     "**Full medication list including recent starts**",
+     "Cease the suspect agent — **but still biopsy if the node persists**"
+    ]
    ]
   },
   "source": "Lymphoma_Tiredness_2_Case_Tasks_Script_Notability.pdf (Jane Sotiris — left axillary nodes; six variants on the back)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Lymphoma_Tiredness_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Well; no pallor, jaundice, cachexia, rash or bruising"
-   ],
-   [
-    "Observations",
-    "Afebrile; pulse and BP normal"
-   ],
-   [
-    "Thyroid",
-    "Normal"
-   ],
-   [
-    "Nodes",
-    "TWO ENLARGED LEFT AXILLARY NODES about 2 cm — HARD, FIXED, NON-TENDER; no other group involved"
-   ],
-   [
-    "Breasts and arm skin",
-    "Normal"
-   ],
-   [
-    "Heart and chest",
-    "Normal"
-   ],
-   [
-    "Abdomen",
-    "No hepatosplenomegaly"
-   ],
-   [
-    "Bedside tests",
-    "BSL, dipstick and pregnancy test all normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never saying 'cancer' or 'lymphoma' — 'swollen glands' is a fail; 'I am concerned about the possibility of lymphoma, which is a type of cancer of the lymph glands — a biopsy confirms it, but I would not be honest if I said anything less'",
-   "FAIL — Accepting 'two enlarged nodes' and moving on — ask size, stony hard or rubbery, fixed or mobile, tender; the three words hard, fixed, non-tender are what you build the explanation on, and you only get them if you ask",
-   "FAIL — Hearing 'five kilos' and continuing to the next letter — the probe is the mark: appetite, lumps (how long, bigger, painful), night sweats that soak the nightclothes, fevers, itch, alcohol pain, breast lumps, cancer history",
-   "FAIL — Offering fine-needle aspiration, or giving a prognosis or cure rate — a needle sample is not enough; a whole node is removed; 'I cannot give you numbers before we know which type this is'",
-   "FAIL — False reassurance, or skipping the sexual history because she sounds married — HIV presents exactly like this; ask everyone and offer the test; and a full lymph node examination by chain plus both breasts and the axillary tail",
-   "DO — Name it, one feelings check ('how are you feeling about what I've just said?'), three reasons from her own findings, differentials reasoned (breast cancer with imaging, infections), then urgent haematology referral for excision biopsy, Cancer Council SA, and the safety net: fever, face or neck swelling, breathless lying flat, bruising"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-57",
