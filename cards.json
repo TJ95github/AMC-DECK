@@ -10633,8 +10633,8 @@
  {
   "id": "MED-27",
   "cat": "med",
-  "promptAt": 300,
-  "setting": "General practice.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Gerald Munro, 60, presents with shortness of breath for three months. The previous doctor has already requested a full blood count, thyroid, liver and renal function — all normal. Spirometry has also been requested and will be given to you.",
    "Spirometry: FEV1 predicted 2.60 L, pre-bronchodilator 1.35 (52%), post 1.37 (53%) · FVC predicted 3.35, pre 2.50, post 2.54 · FEV1/FVC predicted 0.83, measured 0.54."
@@ -10644,82 +10644,180 @@
    "Interpret the spirometry — to the examiner face-to-face, to the patient online",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes. History 5 · chart 1.5 · explanation 1.5.",
+  "findings": [
+   [
+    "Vital signs from the examiner",
+    "BP 138/82 · P 84 · RR 18 · T 36.6 · SpO2 95% on room air. Ask for them even with a 3-month history — chronic disease presents acutely"
+   ],
+   [
+    "The spirometry chart — layout",
+    "PRE- and POST-bronchodilator columns, predicted values, and % predicted in brackets. TAKE FIVE SECONDS OF SILENCE and name the columns before interpreting"
+   ],
+   [
+    "FEV1",
+    "Predicted 2.60 · PRE 1.35 (52%) · POST 1.37 (53%) — a change of 0.02 L = 20 mL, about 1.5%"
+   ],
+   [
+    "FVC",
+    "Predicted 3.35 · pre 2.50 · post 2.54"
+   ],
+   [
+    "FEV1/FVC ratio",
+    "Predicted 0.83 · MEASURED 0.54 — DECREASED, so OBSTRUCTION IS CERTAIN. Post-BD ratio stays BELOW 0.70, which formally confirms COPD"
+   ],
+   [
+    "Interpretation",
+    "OBSTRUCTIVE with NON-SIGNIFICANT REVERSIBILITY — under 200 mL and under 12%. COPD, not asthma. Post-BD FEV1 53% predicted = MODERATE airflow limitation"
+   ],
+   [
+    "VERSION A — the occupational chart",
+    "Ratio 0.90 against predicted 0.79 — INCREASED. FEV1 and FVC BOTH around half predicted → RESTRICTIVE PATTERN. Stonemason cutting engineered benchtops → silicosis"
+   ],
+   [
+    "VERSION — the reversible chart",
+    "Ratio 0.67 against predicted 0.71 — decreased. FEV1 3.00 → 3.70 = +700 mL and +23%, OVER BOTH THRESHOLDS → ASTHMA"
+   ],
+   [
+    "VERSION C — 'spirometry is pending'",
+    "The examiner blocks it and hands you a CHEST X-RAY: FLATTENED HEMIDIAPHRAGMS · HYPERLUCENT lung fields from air trapping · LONG NARROW TUBULAR HEART that hangs rather than sits · more than 6 anterior ribs. Describe it feature by feature BEFORE naming COPD"
+   ],
+   [
+    "VERSION — the normal chart",
+    "Ratio normal, FEV1 and FVC at or above predicted. A NORMAL test — marks are for not forcing a diagnosis onto it. Normal spirometry does NOT exclude asthma"
+   ]
+  ],
+  "findingsLabel": "Vitals and the spirometry chart · open when you would ask for it",
+  "must": [
+   "FAIL — An answer with no workings. 'This is COPD', then silence when asked how.",
+   "FAIL — Comparing the ratio pre and post. Once the ratio shows obstruction, only FEV1 matters.",
+   "FAIL — Giving the pattern as the diagnosis. 'Restrictive pattern' is a chart, not a disease.",
+   "FAIL — Using one threshold, or confusing litres and millilitres. Both are needed: 200 mL AND 12%.",
+   "ASK — You don't smoke now — did you ever? How much, and for how long? Then pack-years aloud.",
+   "ASK — Any blood in the phlegm? Weight, appetite, lumps, night sweats — and the occupation."
+  ],
   "back": {
-   "dx": "Moderate COPD — 40 pack-years ('gave it up two years back' — you must ask 'did you ever?'), three months of progressive exertional air hunger (stops at the top of the drive), not at rest, morning cough with clear phlegm; fitter at the works forty years with asbestos in the old sheds (ask occupation); no red flags, one pillow, no oedema, one BP tablet; father had emphysema. Chart: ratio 0.54 vs predicted 0.83 → obstructive; FEV1 1.35 → 1.37 = 20 mL, 1.5% → not reversible (<200 mL and <12%) → COPD not asthma; post-BD ratio <0.70 confirms; post-BD FEV1 53% = moderate. The examiner marks the WORKINGS: 'step one, the ratio measured against predicted…'. Hidden agenda: he blames himself and is frightened of ending up like his father.",
+   "dx": [
+    "**COPD — moderate airflow limitation** in a 60-year-old ex-smoker with **40 pack-years** and three months of progressive exertional dyspnoea with a productive morning cough.",
+    "**The mark is the workings, not the answer.** 'Ratio 0.54, FEV1 1.35, FVC 2.5, I think this is COPD' tells the examiner you cannot interpret anything. **Narrate every comparison.**",
+    "**Three numbers only: FEV1 · FVC · FEV1/FVC (FER).** **% predicted = measured ÷ predicted × 100.** Labels vary — predicted may print as normal range or LLN, measured as best, actual, baseline or pre-bronchodilator.",
+    "**Step 1 is always the ratio, measured against the PREDICTED ratio** — not a memorised cut-off. **Decreased → obstructive, left branch. Normal or increased → right branch.**",
+    "**Step 2 left: FEV1 pre versus post bronchodilator.** Predicted values and the ratio are now irrelevant. **200 mL AND 12% or more → asthma; under both → COPD.** **Step 2 right: FEV1 and FVC against predicted — both down with a preserved ratio = restrictive pattern.**",
+    "**Charts are in litres. 0.02 L is 20 mL; 200 mL is 0.2 L.** Say the conversion out loud. **True reversibility = (post − pre) ÷ pre × 100** — subtracting % predicted is a screen, not the calculation.",
+    "**Spirometry cannot diagnose restriction.** A reduced FVC with a preserved ratio also comes from poor effort, obesity, neuromuscular weakness or a large effusion. Say: **'I would confirm true restriction with formal lung volumes and gas transfer, and arrange an HRCT chest.'**",
+    "**Convert the pattern into a named disease with two reasons.** COPD: **a pack a day for forty years**, and **narrowing that barely improved with the puffer**. ILD: **a high-risk occupation**, and **a restriction in how the lungs move and exchange gas**.",
+    "**COPD severity on post-BD FEV1 % predicted: 80 or more mild · 50–79 moderate · 30–49 severe · under 30 very severe.** The ratio makes the diagnosis and **never grades it**. Chronic respiratory failure: **PaO2 under 60 mmHg ± PaCO2 over 50 mmHg**.",
+    "Plan: **chest X-ray, and HRCT given the asbestos history · reinforce abstinence · inhaled bronchodilator · pulmonary rehabilitation · influenza, pneumococcal and COVID vaccination · a written COPD action plan and review.** **Silicosis is notifiable** — SafeWork SA, a ReturnToWorkSA claim, and screening of co-workers."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals even though it's 'three months'; intro; 'how can I help?'; acknowledge the frustration of a pile of normal bloods and no answer; agenda"
+     "**'Before I start, could I have the vital signs?'** Then WIPE and set the agenda: **'let me ask some questions, then we'll look at your breathing test together and I'll explain what it shows.'**"
     ],
     [
-     "0:45",
-     "Heart or lung: tightness vs difficulty getting air in; duration; constant; worse?; better/worse; at rest?; cough, wheeze, phlegm"
+     "0:30",
+     "Character first — **heart or lung**: **'is it more a tightness in your chest, or difficulty getting the air in?'** Then **how long · constant or coming and going · getting worse · better or worse with what · ARE YOU SHORT OF BREATH AT REST · cough, wheeze, noisy breathing, phlegm?**"
     ],
     [
-     "1:45",
-     "Cancer and occupation: weight, appetite, lumps, sweats, haemoptysis, previous cancer; occupation now and before; dust, fumes, stone, asbestos, mask"
+     "1:30",
+     "**The cancer questions, which are separately marked and which the normal bloods do not excuse you from**: **weight loss without trying · appetite · lumps or bumps · night sweats · HAVE YOU COUGHED UP ANY BLOOD · any previous cancer?**"
     ],
     [
-     "2:45",
-     "'Do you smoke, or did you?' → 'did you ever? how much, how long?' → say '40 pack-years' aloud; chest pain, palpitations, dizziness; pillows, ankle swelling; childhood infections; atopy/family asthma; fevers, sweats, travel, TB; joints, rashes; tiredness, bleeding; medications, allergies, FHx (father — emphysema)"
+     "2:15",
+     "**The two questions that carry this station.** **'Do you smoke?'** → 'no, gave it up' → **'did you ever? How much, and for how long?'** → **say the pack-years out loud**. Then **'what is your occupation, and what did you do before? Have you worked with dust, fumes, stone or asbestos? Did you use a mask or respirator?'** → asbestos in the old sheds, mentioned only if asked."
+    ],
+    [
+     "3:15",
+     "Cardiac, **asked even though the stem says cardiac causes were excluded — you are marked on your history**: **chest pain on exertion · palpitations · dizziness · worse lying flat, how many pillows · ankle swelling.**"
+    ],
+    [
+     "4:00",
+     "The rest of the sweep: **childhood chest infections or repeated pneumonias · hay fever, eczema, asthma in the family · fevers, sweats, travel, TB contact · joint pains or rashes · tiredness or bleeding · medications including anything long-term, allergies, family history.**"
     ],
     [
      "5:00",
-     "Chart: FIVE SECONDS OF SILENCE → name the columns → step 1 ratio vs predicted → obstructive → step 2 FEV1 pre vs post (never the ratio again) → 0.02 L = 20 mL, 1.5% → below both thresholds → COPD → post-BD ratio <0.70 confirms → 53% = moderate"
+     "**Take the chart. Five seconds of silence.** Then **orientate before interpreting**: **'I can see pre- and post-bronchodilator columns, with predicted values and the percentage predicted in brackets, and I have all three values I need.'**"
     ],
     [
-     "6:30",
-     "Diagnosis with TWO reasons (40 pack-years; airway narrowing that barely moved with Ventolin) → 'is it going to get worse?' honest: doesn't reverse, slope is in our hands, stopped smoking already, inhalers, pulmonary rehab, vaccines → differentials with one reason each (~8) → plan and summary to examiner"
+     "5:20",
+     "**Step one, spoken**: **'the measured ratio is 0.54 against a predicted of 0.83. That is decreased, so there is an obstructive pattern, and obstruction is now certain.'**"
+    ],
+    [
+     "5:45",
+     "**Step two, spoken**: **'because the ratio is decreased, I compare FEV1 before and after the bronchodilator — 1.35 to 1.37 litres, 0.02 litres, that is 20 millilitres, about one and a half per cent. Under 200 millilitres and under 12 per cent, so no significant reversibility — COPD rather than asthma.'** Then **the post-BD ratio under 0.70 confirms it, and 53% predicted makes it moderate.**"
+    ],
+    [
+     "6:15",
+     "**The disease, with two reasons**, in plain words. Then answer **'is it going to get worse?'** honestly: **COPD does not reverse, but how fast it progresses is in our hands, and stopping smoking changes the slope more than any tablet.**"
+    ],
+    [
+     "7:00",
+     "**Differentials — scored separately. Name eight or so with one reason each**: lung cancer, ischaemic heart disease, heart failure, asthma, interstitial lung disease from the asbestos, bronchiectasis, infection including TB, sarcoidosis, anaemia. Then the plan and the summary."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I start, could I have the vital signs — BP, pulse, respiratory rate, temperature and oxygen saturation?",
-    "Tell me about the breathlessness — is it more a tightness in your chest, or difficulty getting the air in? How long, constant or comes and goes, getting worse? What makes it better or worse — and are you short of breath at rest as well? Cough, wheeze, noisy breathing, phlegm?",
-    "★ Lost weight without trying? Appetite? Lumps or bumps, night sweats? Have you coughed up any blood? Any previous cancer?",
-    "★ What is your occupation, and what did you do before that? Worked with dust, fumes or stone? Asbestos? Mask or respirator?",
-    "★ Do you smoke, or did you? → 'gave it up' → 'And before that — how much, and for how long?' → 'That's forty pack-years, which is important and I'll come back to it'",
-    "Chest pain on exertion, palpitations, dizziness? Worse lying flat — how many pillows? Ankle swelling? Childhood chest infections or repeated pneumonias? Hay fever, eczema, asthma in the family? Fevers, sweats, travel, TB contact? Joint pains, rashes? Tiredness, bleeding? Medications incl. anything long-term? Allergies? Family history?",
-    "Chart to the examiner: 'Before I interpret this, let me orientate myself to what I've been given: pre- and post-bronchodilator columns, predicted values, percentage predicted in brackets, and all three values I need — FEV1, FVC and the ratio. Step one, the ratio measured against predicted: 0.54 against 0.83 — decreased, so an obstructive pattern; obstruction is now certain. Step two, because the ratio is decreased, I compare FEV1 before and after the bronchodilator — the predicted values and the ratio are no longer relevant. 1.35 to 1.37 litres: 0.02 litres, that is 20 millilitres, about 1.5 per cent. Under 200 mL and under 12 per cent — no significant reversibility, so COPD rather than asthma. Post-bronchodilator ratio remains below 0.70, which confirms COPD; post-bronchodilator FEV1 53 per cent predicted = moderate airflow limitation.'",
-    "To the patient (online): 'Three numbers — total air you can blow out, air in the first second, and the ratio. Your ratio is lower than expected for your age and height — narrowing in your airways. We gave you a puff of Ventolin and repeated it; your numbers barely moved, about 20 millilitres. Asthma usually improves a lot with that puffer, this hasn't. So the pattern fits COPD.'"
-   ],
    "pefe": [
-    "No examination task",
-    "Diagnosis: 'most likely COPD — chronic obstructive pulmonary disease. In plain terms your lungs have been damaged by many years of smoking. Two reasons: a pack a day for forty years, the single biggest cause; and your breathing test shows narrowing that barely improved with the puffer — that pattern points to COPD rather than asthma'",
-    "'Is it going to get worse?' → 'I'll be honest: COPD doesn't reverse. But how fast it progresses is very much in our hands — the biggest thing is you've already stopped smoking, which changes the slope more than any tablet. Inhalers make day-to-day breathing easier, pulmonary rehabilitation genuinely improves what people can do, vaccinations keep you out of hospital'",
-    "Differentials, one reason each: lung cancer (no weight loss, no haemoptysis — still CXR) · IHD and heart failure (no chest pain, no oedema, sleeps flat) · asthma (puffer test) · interstitial lung disease from asbestos (HRCT, keep an eye) · bronchiectasis · infections incl. TB · sarcoidosis · anaemia (FBC normal)",
-    "Summary to examiner: CXR; consider HRCT for the asbestos history; reinforce abstinence; inhaled bronchodilator (LAMA first-line; LAMA/LABA if still symptomatic); pulmonary rehabilitation; influenza, pneumococcal, COVID vaccination; written COPD action plan; review; Lung Foundation resources VERIFY",
-    "SA: pulmonary rehab via Country Health Connect / local hospital; Quitline 13 7848 (already quit — relapse prevention); PATS for respiratory review; TIS 131 450"
+    "**The two investigations you always name in chronic breathlessness: chest X-ray and spirometry.** If one is blocked, ask for the other — Version C turns entirely on having the second answer ready.",
+    "**Orientate to the chart layout before interpreting.** Predicted may be printed as predicted, normal range or LLN; measured as measured, best, actual, baseline or pre-bronchodilator. **This, not the algorithm, is the commonest cause of panic in the room.**",
+    "**Bronchodilator response is measured 10 to 15 minutes after a rapid-acting bronchodilator.** Australian criteria (National Asthma Council): **FEV1 up by 12% AND 200 mL**. The 2022 ATS/ERS standard proposes more than 10% of predicted instead — acknowledge it and say you applied the Australian criteria.",
+    "**A normal spirometry does not exclude asthma** — airflow is often normal between episodes. If the history is convincing, offer **FeNO (40 ppb or more supports asthma) or a bronchial challenge test**. FeNO is mainly in accredited labs, so quote it as an adjunct.",
+    "Restrictive pattern → **formal lung volumes (TLC) and gas transfer (DLCO), plus HRCT chest**, and an occupational physician.",
+    "**Flow-volume loops** if shown instead of the table: **the obstructive loop is scooped out on the descending limb; the restrictive loop is a tall thin version of normal**, shifted to lower volumes.",
+    "**Hyperinflation on the film**: **flattened hemidiaphragms · hyperlucent lung fields · long narrow tubular heart · more than 6 anterior or 10 posterior ribs above the diaphragm** (the least reliable — lead with the diaphragms and the lucency) **· increased retrosternal airspace on the lateral**.",
+    "Then the rest: **FBE and iron studies, TSH, ECG and echocardiogram** where the cardiac questions raise it, sputum culture and AFB for TB, diagnostic tap for an effusion."
    ],
-   "fails": [
-    "Reading numbers out and appending a guess — 'ratio 0.54, FEV1 1.35, I think COPD' ★",
-    "Comparing the ratio pre and post bronchodilator instead of FEV1 ★",
-    "Quoting one threshold, or getting the units wrong (0.02 L is 20 mL, not 0.02 mL) ★",
-    "Not asking 'did you ever smoke?' — missing 40 pack-years ★",
-    "Dropping the cancer questions / haemoptysis because the bloods were normal ★",
-    "Not pausing to read the chart layout; naming the pattern not the disease; fewer than six differentials; breezy 'nothing to worry about' ('my father died of this'); jargon ('you've lost me, doc')"
-   ],
-   "numbers": [
-    "Three values only: FEV1 · FVC · FEV1/FVC · % predicted = measured ÷ predicted × 100 · reversibility = (post − pre) ÷ pre × 100 · significant = ≥200 mL AND ≥12% · bronchodilator repeated after 10–15 min VERIFY",
-    "This chart: ratio 0.54 vs 0.83 · FEV1 1.35 → 1.37 L = 20 mL, 1.5% · post-BD ratio <0.70 = COPD · severity on post-BD FEV1 %: ≥80 mild · 50–79 moderate · 30–49 severe · <30 very severe → 53% moderate VERIFY (GOLD)",
-    "Pack-years = packs/day × years: 1 × 40 = 40 · FeNO ≥40 ppb supports asthma · mesothelioma latency 20–40 years VERIFY",
-    "Variant 1 restrictive (45-yo stonemason, engineered benchtops): ratio 0.90 vs 0.79 = increased → not obstructive; FEV1 and FVC both ~half predicted → restrictive; confirm with lung volumes and gas transfer, HRCT; ILD/silicosis; notify SafeWork SA, ReturnToWorkSA claim, screen co-workers; engineered stone prohibited nationally VERIFY",
-    "Variant 2 reversible: FEV1 3.00 → 3.70 = 700 mL, 23% → exceeds both thresholds → asthma",
-    "Variant 3 spirometry pending, CXR handed over: flattened hemidiaphragms, hyperlucent fields, long narrow tubular heart, >6 anterior ribs above the diaphragm → hyperinflation, emphysema/COPD — describe first, don't just say 'COPD'",
-    "Variant 4 normal chart: doesn't exclude asthma (normal between episodes) → FeNO or bronchial challenge; revisit cardiac and non-respiratory causes"
+   "ddx": [
+    [
+     "**COPD**",
+     "Heavy smoking history, progressive exertional dyspnoea, chronic cough and sputum",
+     "**Pack-years**, wheeze, morning sputum, exacerbations",
+     "**Post-bronchodilator ratio under 0.70**; CXR for hyperinflation"
+    ],
+    [
+     "Asthma",
+     "Variable and episodic, night and early morning, triggers, atopy, family history",
+     "Diurnal variation, wheeze, hay fever, eczema",
+     "**12% AND 200 mL reversibility**; FeNO; bronchial challenge"
+    ],
+    [
+     "**Occupational ILD — silicosis, asbestosis, coal worker's pneumoconiosis**",
+     "**Mining, boilermaking, engineered stone benchtops, dry cutting without a respirator**",
+     "**Exact job, materials, years, protective equipment**, fine crackles, clubbing",
+     "**Restrictive pattern → HRCT, lung volumes and DLCO; occupational physician. Silicosis is NOTIFIABLE** — high urgency"
+    ],
+    [
+     "**Mesothelioma or lung cancer**",
+     "**Asbestos exposure with a 20–40 year latency**; smoking; haemoptysis, weight loss",
+     "Weight, appetite, lumps, night sweats, pleuritic pain, clubbing",
+     "**CXR then CT chest; urgent referral** — immediate"
+    ],
+    [
+     "Bronchiectasis · TB · pleural effusion",
+     "Large-volume sputum, childhood infections; fevers, sweats, travel or contact; unilateral dullness",
+     "Sputum volume and colour, fevers, TB contact",
+     "HRCT; sputum culture and AFB; CXR then diagnostic tap — high"
+    ],
+    [
+     "Heart failure · IHD · arrhythmia · valvular disease",
+     "Orthopnoea, ankle swelling, exertional chest tightness, palpitations",
+     "**Pillows, PND, oedema, murmur — ask even if the stem says cardiac causes are excluded**",
+     "ECG, echocardiogram, CXR — high"
+    ],
+    [
+     "Drug-induced lung disease",
+     "**Amiodarone, methotrexate, nitrofurantoin, bleomycin** — a restrictive chart with no occupational story",
+     "Full medication history **including duration**",
+     "HRCT; cease the drug; respiratory referral — high"
+    ],
+    [
+     "Anaemia · thyroid disease · obesity and deconditioning · anxiety",
+     "Fatigue and pallor; tremor or weight change; a restrictive chart with a high BMI; situational breathlessness",
+     "Pallor, thyroid signs, BMI, panic symptoms",
+     "FBE and iron studies, TSH — **a diagnosis of exclusion**"
+    ]
    ]
   },
   "source": "Spirometry_2_Case_Tasks_Script_Notability.pdf",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Spirometry_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Reading the numbers out and appending a guess ('ratio 0.54, FEV1 1.35, I think COPD') — five seconds of silence, name the columns, then the steps; the examiner is marking the workings",
-   "SAY — 'Step one, I look at the ratio and compare the measured with the predicted — 0.54 against 0.83, decreased, so an obstructive pattern' (★)",
-   "FAIL — Comparing the ratio pre and post bronchodilator — once obstruction is established you never look at the ratio again; step two is FEV1 pre versus post (★)",
-   "FAIL — Quoting one threshold, or getting the units wrong — both ≥200 mL AND ≥12% are needed; 0.02 L is 20 mL, said out loud (★)",
-   "FAIL — Letting 'I don't smoke' end the question — 'did you ever?' and convert to pack-years aloud: a pack a day for forty years is 40 pack-years; and never dropping haemoptysis and the cancer questions because the bloods were normal (★)",
-   "FAIL — Stopping at 'COPD' — name the disease with two reasons, then at least six differentials with one reason each; a missed starred item fails the station (★)"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-28",
