@@ -81,6 +81,12 @@
   .peFt th{width:34%;font-weight:600;color:var(--ink-2);font-size:13px}
   .peFt td{color:var(--ink)}
   @media (max-width:520px){ .peFt th{width:40%} .peFt th,.peFt td{padding:6px 10px;font-size:13.5px} }
+  .ddxw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 6px}
+  .ddx{width:100%;min-width:540px;border-collapse:collapse;font-size:13.5px}
+  .ddx th,.ddx td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .ddx th{background:rgba(127,127,127,.13);font-weight:600;font-size:12.5px;letter-spacing:.02em}
+  .ddx td.ddxn{font-weight:700;width:20%}
+  @media (max-width:520px){ .ddx{font-size:12.5px} .ddx th,.ddx td{padding:5px 7px} }
   .framing,.runsheet{font-size:15px;line-height:1.55;margin:0 0 14px;color:var(--ink)}
   .runsheet{color:var(--ink-2)}
   .timenote{font-size:13.5px;color:var(--ink-2);padding-top:8px;border-top:1px solid var(--line)}
@@ -452,6 +458,7 @@ function updateTimerUI(){
 
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
 function render(){
@@ -500,20 +507,22 @@ function render(){
         ${wide?"":timerHtml}`;
     } else {
       const b=c.back||{};
-    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/^(FAIL|SAY|DO) — /,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
+    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/^(FAIL|SAY|DO|ASK) — /,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
     const isMust=(t)=>{const k=(t||"").replace(/★/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60);return k.length>20&&mustKeys.has(k);};
-    const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${esc(t)}</li>`;
+    const V2=c.v2===true;
+    const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
-        ${c.must&&c.must.length?`<div class="must"><h3>6 must remember</h3><ol>${c.must.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div>`:""}
-        ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${esc(v)}</th><td>${esc(clue)}</td><td class="dxc">${esc(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
-        ${c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
-        <h3>Diagnosis</h3>${(()=>{const p=points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${esc(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"");})()}
-        ${c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
-        ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span${isMust(x)?' class="hl"':''}>${esc(x)}</span>`).join("")}</div>`:""}
-        ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(li).join("")}</ul>`:""}
+        ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
+        ${!V2&&c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
+        <h3>Diagnosis</h3>${(()=>{const p=Array.isArray(b.dx)?b.dx.filter(Boolean):points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${escb(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${escb(x)}</li>`).join("")}</ul>`:"");})()}
+        ${!V2&&c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
+        ${b.plan?`<h3>Time plan ${!V2&&b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${escb(t)}</b><span${isMust(x)?' class="hl"':''}>${escb(x)}</span>`).join("")}</div>`:""}
+        ${!V2&&b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(li).join("")}</ul>`:""}
         ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(li).join("")}</ul>`:""}
-        ${b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(li).join("")}</ul>`:""}
-        ${b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+        ${b.ddx&&b.ddx.length?`<h3>Differentials</h3><div class="ddxw"><table class="ddx"><tr><th>Differential</th><th>Clues supporting</th><th>Ask / look for</th><th>Next step</th></tr>${b.ddx.map(r=>`<tr><td class="ddxn">${escb(r[0]||"")}</td><td>${escb(r[1]||"")}</td><td>${escb(r[2]||"")}</td><td>${escb(r[3]||"")}</td></tr>`).join("")}</table></div>`:""}
+        ${!V2&&b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(li).join("")}</ul>`:""}
+        ${!V2&&b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         <div class="src">Source: ${esc(c.source||"")}</div>${c.drive?`<div class="drive">Google Drive: ${esc(c.drive)}</div>`:""}
       </div>${wide?"":rateHtml}`;
     }

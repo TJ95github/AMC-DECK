@@ -81,6 +81,12 @@
   .peFt th{width:34%;font-weight:600;color:var(--ink-2);font-size:13px}
   .peFt td{color:var(--ink)}
   @media (max-width:520px){ .peFt th{width:40%} .peFt th,.peFt td{padding:6px 10px;font-size:13.5px} }
+  .ddxw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 6px}
+  .ddx{width:100%;min-width:540px;border-collapse:collapse;font-size:13.5px}
+  .ddx th,.ddx td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .ddx th{background:rgba(127,127,127,.13);font-weight:600;font-size:12.5px;letter-spacing:.02em}
+  .ddx td.ddxn{font-weight:700;width:20%}
+  @media (max-width:520px){ .ddx{font-size:12.5px} .ddx th,.ddx td{padding:5px 7px} }
   .framing,.runsheet{font-size:15px;line-height:1.55;margin:0 0 14px;color:var(--ink)}
   .runsheet{color:var(--ink-2)}
   .timenote{font-size:13.5px;color:var(--ink-2);padding-top:8px;border-top:1px solid var(--line)}
@@ -105,6 +111,17 @@
   /* back */
   .back h3{font-size:13.5px;font-weight:600;margin:16px 0 6px;color:var(--c,var(--ink));letter-spacing:.005em}
   .back h3:first-child{margin-top:0}
+  .vers{border:2px solid #4a5568;border-radius:10px;padding:10px 12px;margin:0 0 14px;background:#f7f9fc}
+  .vers h3{margin:0 0 4px;color:#2d3748;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+  .vers .door{font-size:14px;line-height:1.45;margin:0 0 8px;color:#1a202c}
+  .vers .door b{color:#b00000}
+  .vers table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .vers th,.vers td{border-top:1px solid #cbd5e0;padding:5px 6px;vertical-align:top;text-align:left}
+  .vers th{width:64px;white-space:nowrap;color:#2d3748}
+  .vers td.dxc{font-weight:700;color:#1a202c;width:31%}
+  .vers tr.thisv{background:#fff3b0}
+  .vers tr.thisv th:after{content:" ← this card";color:#b00000;font-weight:700;white-space:nowrap}
+  .vers .vnote{font-size:12.5px;color:#4a5568;margin:8px 0 0;line-height:1.4}
   .must{background:#fff3b0;border:2px solid #d00;border-radius:10px;padding:12px 16px;margin:0 0 14px}
   .must h3{margin:0 0 6px;color:#b00000;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
   .must ol{margin:0;padding-left:22px}
@@ -441,6 +458,7 @@ function updateTimerUI(){
 
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
 function render(){
@@ -489,19 +507,22 @@ function render(){
         ${wide?"":timerHtml}`;
     } else {
       const b=c.back||{};
-    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/^(FAIL|SAY|DO) — /,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
+    const mustKeys=new Set((c.must||[]).map(m=>m.replace(/^(FAIL|SAY|DO|ASK) — /,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60)));
     const isMust=(t)=>{const k=(t||"").replace(/★/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase().slice(0,60);return k.length>20&&mustKeys.has(k);};
-    const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${esc(t)}</li>`;
+    const V2=c.v2===true;
+    const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
-        ${c.must&&c.must.length?`<div class="must"><h3>6 must remember</h3><ol>${c.must.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div>`:""}
-        ${c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
-        <h3>Diagnosis</h3>${(()=>{const p=points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${esc(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"");})()}
-        ${c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
-        ${b.plan?`<h3>Time plan ${b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${esc(t)}</b><span${isMust(x)?' class="hl"':''}>${esc(x)}</span>`).join("")}</div>`:""}
-        ${b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(li).join("")}</ul>`:""}
+        ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
+        ${!V2&&c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
+        <h3>Diagnosis</h3>${(()=>{const p=Array.isArray(b.dx)?b.dx.filter(Boolean):points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${escb(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${escb(x)}</li>`).join("")}</ul>`:"");})()}
+        ${!V2&&c.time?`<h3>The eight minutes, end to end</h3>${runpoints(c.time)}`:""}
+        ${b.plan?`<h3>Time plan ${!V2&&b.planApprox?`<span class="approx">(approximate — ${esc(b.planNote||"the source gives no minute plan")})</span>`:""}</h3><div class="tl">${b.plan.map(([t,x])=>`<b>${escb(t)}</b><span${isMust(x)?' class="hl"':''}>${escb(x)}</span>`).join("")}</div>`:""}
+        ${!V2&&b.ask?`<h3>Must-ask questions</h3><ul>${b.ask.map(li).join("")}</ul>`:""}
         ${b.pefe?`<h3>Examination / investigations to request</h3><ul>${b.pefe.map(li).join("")}</ul>`:""}
-        ${b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(li).join("")}</ul>`:""}
-        ${b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+        ${b.ddx&&b.ddx.length?`<h3>Differentials</h3><div class="ddxw"><table class="ddx"><tr><th>Differential</th><th>Clues supporting</th><th>Ask / look for</th><th>Next step</th></tr>${b.ddx.map(r=>`<tr><td class="ddxn">${escb(r[0]||"")}</td><td>${escb(r[1]||"")}</td><td>${escb(r[2]||"")}</td><td>${escb(r[3]||"")}</td></tr>`).join("")}</table></div>`:""}
+        ${!V2&&b.fails?`<h3>Immediate fails</h3><ul class="fail">${b.fails.map(li).join("")}</ul>`:""}
+        ${!V2&&b.numbers?`<h3>Numbers and lines</h3><ul>${b.numbers.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
         <div class="src">Source: ${esc(c.source||"")}</div>${c.drive?`<div class="drive">Google Drive: ${esc(c.drive)}</div>`:""}
       </div>${wide?"":rateHtml}`;
     }
@@ -3560,7 +3581,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Giving the LABEL without a NAMED CAUSE — every recall hands you one in the stem or the history (ischaemia, caffeine and alcohol, or untreated hypertension), so find yours and say it back, because a diagnosis without a cause reads as incomplete reasoning: 'atrial fibrillation is usually a sign of something else, so the important question is WHY it has happened to you — given the chest tightness and breathlessness walking uphill, I'm concerned this may relate to narrowing of the arteries supplying your heart, and the caffeine, alcohol and smoking are contributing too'; then the differentials given AS CAUSES — thyrotoxicosis, hypertension, valve disease, pericarditis or infection, pulmonary embolism, and rarely a hormone-producing tumour, with anxiety, hypoglycaemia and anaemia excluded by the tracing itself (★)",
    "FAIL — Taking the DIZZINESS road and running out of time — palpitations is the structure, because the dizziness road owes the examiner vertigo, presyncope, syncope and a postural drop and you will still be there at the bell; one clarifying question settles it ('is it a spinning feeling, or more like you're about to faint? Have you actually fainted?'); ask for the VITAL SIGNS before you begin, name the irregular pulse before you touch the ECG, characterise the palpitations by asking her to TAP OUT the beat, and sweep the causes by system — cardiac, respiratory, thyroid, then habits and family history — because the examiner is scoring the SWEEP rather than the guess, and the sweep is what produces the cause",
    "FAIL — Over-reading up-sloping ST in V2–V3 as an infarct — keep the read at essential level and commit, with the defence ready if challenged: 'that elevation is UP-SLOPING, which is the trace ramping into the T wave at a fast rate, rather than a horizontal or convex injury pattern — and the thresholds in V2–V3 are higher than elsewhere and vary with age and sex, so I'd not call an infarct on that'; ST elevation is 1 mm in two contiguous leads, with V2–V3 requiring 2 mm in men 40 and over, 2.5 mm in men under 40 and 1.5 mm in women; a large square is 0.2 seconds so ten seconds is fifty large squares, and a normal QRS is under three small squares; ask about her concerns, because her father had a heart attack in his fifties and she is frightened she has the same thing, and she will not say so unless asked; and the UNSTABLE variant stops being a counselling station altogether — hypotension, a rate of 165, clamminess, ischaemic chest pain and syncope mean an ambulance, oxygen if hypoxic, IV access, bloods including troponin, continuous monitoring and URGENT SYNCHRONISED DC CARDIOVERSION under sedation"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice. A woman presents with palpitations. TWO recall versions with different stem lengths and different task weighting — version A is history-weighted and short, version B is a full-page stem that has already done the history for you and is management-weighted.",
+   "rows": [
+    [
+     "A · short stem",
+     "37-year-old woman, palpitations and dizziness for 3 days. Volunteers exertional chest pain and dyspnoea relieved by rest. Tasks: history 4–5 min → interpret ECG → explain diagnosis and differentials. Tests whether you pick palpitations (not dizziness) as the organising complaint, and whether you attach a cause to the label.",
+     "AF secondary to ISCHAEMIC HEART DISEASE · CHA₂DS₂-VA = 0, so do NOT anticoagulate"
+    ],
+    [
+     "B · long stem",
+     "55-year-old woman, palpitations. Full-page stem: heavy coffee, alcohol most nights, smoking, hypertension diagnosed years ago and never followed up. Tasks: interpret ECG → explain diagnosis → explain management. The stem length is deliberate — the history is handed to you so management is the predominant assessment area.",
+     "AF secondary to ALCOHOL, CAFFEINE, SMOKING and UNTREATED HYPERTENSION · CHA₂DS₂-VA = 1 (hypertension) → consider, in practice give"
+    ]
+   ],
+   "note": "Other recalls substitute the cause: coffee/alcohol/smoking, or untreated hypertension, instead of ischaemic heart disease. Every recall version hands you a cause — name it back to the patient; 'you have atrial fibrillation', full stop, is a listed fail. Structure beats recall: sweep CVS → RS → Endocrine → Drugs → Infection → Other and the causes assemble themselves on a stem you have never seen. Teaching-only scenarios in the source (unstable version, thyrotoxic AF, valvular AF, asymptomatic screening AF) are practice cards, not recalls.",
+   "thisCard": "A"
+  }
  },
  {
   "id": "MED-04",
@@ -3649,7 +3687,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Not naming RATE CONTROL, or not explaining the 48-HOUR RULE WITH THE REASON — pillar three is rate first, then rhythm: a BETA BLOCKER to slow the heart and settle the palpitations and dizziness, then 'if it had been present for less than two days we could safely correct the rhythm straight away, but once it has been present MORE THAN 48 HOURS — or when we simply don't know how long — a clot may already have formed, and CORRECTING THE RHYTHM COULD PUSH THAT CLOT OUT AND CAUSE A STROKE'; the reason is the mark, not the number (★)",
    "FAIL — Giving only ONE duration pathway — give BOTH, even though only one applies, because it demonstrates the knowledge and protects you if your stem says one day instead of three: either a TRANSOESOPHAGEAL ECHO to look directly for clot and cardiovert early, or THREE WEEKS of anticoagulation first — and FOUR WEEKS of anticoagulation afterwards either way; then name the two methods of cardioversion (electrical under brief sedation, or pharmacological) with the echo deciding which; and on anticoagulant choice, warfarin needs regular blood tests while a DOAC such as apixaban does not, with the echo deciding again, because valvular disease makes warfarin the safer choice (metoprolol 25–50 mg BD, apixaban 5 mg BD, warfarin INR 2.0–3.0) (★)",
    "FAIL — Label without a CAUSE — in Version B the stem hands you UNTREATED HYPERTENSION, diagnosed years ago and never followed up, and you say it back: 'I think the main driver here is your blood pressure, which hasn't been treated or followed up — high blood pressure over years stretches the heart and makes this rhythm much more likely, and the coffee and alcohol are adding to it'; and the same finding scores again in pillar two, because hypertension is a point on the score, so a 55-year-old with hypertension alone reaches ONE — discuss it, and recommend starting a thinner because the stroke benefit outweighs the risk — while any added diabetes, vascular disease or heart failure reaches TWO and you anticoagulate without further debate; close with the SAFETY NET in her words — chest pain, severe breathlessness, fainting, or weakness or drooping on one side of the face or body means calling 000, because those last ones are stroke symptoms and time matters enormously — then summarise and invite questions; if she REFUSES the thinner because her mother bruised on warfarin, do not argue: offer the DOAC, respect the decision, ask to go through the actual numbers together, and say she can change her mind at any time"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice. A woman presents with palpitations. TWO recall versions with different stem lengths and different task weighting — version A is history-weighted and short, version B is a full-page stem that has already done the history for you and is management-weighted.",
+   "rows": [
+    [
+     "A · short stem",
+     "37-year-old woman, palpitations and dizziness for 3 days. Volunteers exertional chest pain and dyspnoea relieved by rest. Tasks: history 4–5 min → interpret ECG → explain diagnosis and differentials. Tests whether you pick palpitations (not dizziness) as the organising complaint, and whether you attach a cause to the label.",
+     "AF secondary to ISCHAEMIC HEART DISEASE · CHA₂DS₂-VA = 0, so do NOT anticoagulate"
+    ],
+    [
+     "B · long stem",
+     "55-year-old woman, palpitations. Full-page stem: heavy coffee, alcohol most nights, smoking, hypertension diagnosed years ago and never followed up. Tasks: interpret ECG → explain diagnosis → explain management. The stem length is deliberate — the history is handed to you so management is the predominant assessment area.",
+     "AF secondary to ALCOHOL, CAFFEINE, SMOKING and UNTREATED HYPERTENSION · CHA₂DS₂-VA = 1 (hypertension) → consider, in practice give"
+    ]
+   ],
+   "note": "Other recalls substitute the cause: coffee/alcohol/smoking, or untreated hypertension, instead of ischaemic heart disease. Every recall version hands you a cause — name it back to the patient; 'you have atrial fibrillation', full stop, is a listed fail. Structure beats recall: sweep CVS → RS → Endocrine → Drugs → Infection → Other and the causes assemble themselves on a stem you have never seen. Teaching-only scenarios in the source (unstable version, thyrotoxic AF, valvular AF, asymptomatic screening AF) are practice cards, not recalls.",
+   "thisCard": "B"
+  }
  },
  {
   "id": "MED-05",
@@ -3995,7 +4050,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Accepting 'a fair bit' of coffee — quantify cups per day; the stimulant is always positive and it is eight cups here",
    "FAIL — Pointing at the T wave, calling it a P, and reporting sinus tachycardia — at 150 with one deflection between complexes, it is the T",
    "FAIL — Answering the differentials with a list of other arrhythmias — the role-player marks it a fail; give causes of palpitations by system"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice. A patient presents with palpitations — the online exam rotates the age, the sex and the wording ('palpitations', 'racing heart', 'awareness of my heartbeat', 'my heart is skipping'). Tasks are IDENTICAL across versions: focused history (~6 min) → interpret the ECG to the examiner → explain diagnosis and differentials to the patient.",
+   "rows": [
+    [
+     "A · the classic",
+     "Jenny Hollis, 58. History yields eight cups of coffee a day, and she was told once that her blood pressure was high and never followed it up. Everything else negative. She is 45–55+, so ask the menopause questions too. The untreated BP is planted — it needs its own line in the plan.",
+     "SVT on a heavy stimulant load · hidden point = the UNFOLLOWED HYPERTENSION"
+    ],
+    [
+     "B · the reworded stem",
+     "Jack Ferris, 27, 'awareness of my heartbeat', worried he is having a HEART ATTACK. History yields the full stimulant package — 2–3 coffees, a pack a day, five glasses of wine most nights. Same SVT on the ECG. Extra requirement: address the heart-attack fear explicitly, straight after the diagnosis and BEFORE the differentials.",
+     "SVT on a heavy stimulant load · hidden point = ADDRESS THE STATED FEAR unprompted"
+    ]
+   ],
+   "note": "Same ECG and same diagnosis in both; what changes is which hidden point you are being marked on. The rule carrying every version: when asked for differentials, give the CAUSES of palpitations by system (CVS · RS · endocrine · stimulants · psychogenic · anaemia · phaeochromocytoma · hypoglycaemia, plus menopause and fever) — NOT a list of other arrhythmias. That is a starred automatic fail. Teaching-only scenarios in the source (thyroid version, situational/panic version, exertional IHD version, unstable version) are practice cards, not recalls.",
+   "thisCard": "A"
+  }
  },
  {
   "id": "MED-08",
@@ -4077,7 +4149,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Differentials as a list of arrhythmias",
    "FAIL — Lecturing about the smoking and alcohol instead of offering to work through reducing all three",
    "DO — What do you mean by being aware of your heartbeat — do you simply feel it, is it faster, or irregular?"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice. A patient presents with palpitations — the online exam rotates the age, the sex and the wording ('palpitations', 'racing heart', 'awareness of my heartbeat', 'my heart is skipping'). Tasks are IDENTICAL across versions: focused history (~6 min) → interpret the ECG to the examiner → explain diagnosis and differentials to the patient.",
+   "rows": [
+    [
+     "A · the classic",
+     "Jenny Hollis, 58. History yields eight cups of coffee a day, and she was told once that her blood pressure was high and never followed it up. Everything else negative. She is 45–55+, so ask the menopause questions too. The untreated BP is planted — it needs its own line in the plan.",
+     "SVT on a heavy stimulant load · hidden point = the UNFOLLOWED HYPERTENSION"
+    ],
+    [
+     "B · the reworded stem",
+     "Jack Ferris, 27, 'awareness of my heartbeat', worried he is having a HEART ATTACK. History yields the full stimulant package — 2–3 coffees, a pack a day, five glasses of wine most nights. Same SVT on the ECG. Extra requirement: address the heart-attack fear explicitly, straight after the diagnosis and BEFORE the differentials.",
+     "SVT on a heavy stimulant load · hidden point = ADDRESS THE STATED FEAR unprompted"
+    ]
+   ],
+   "note": "Same ECG and same diagnosis in both; what changes is which hidden point you are being marked on. The rule carrying every version: when asked for differentials, give the CAUSES of palpitations by system (CVS · RS · endocrine · stimulants · psychogenic · anaemia · phaeochromocytoma · hypoglycaemia, plus menopause and fever) — NOT a list of other arrhythmias. That is a starred automatic fail. Teaching-only scenarios in the source (thyroid version, situational/panic version, exertional IHD version, unstable version) are practice cards, not recalls.",
+   "thisCard": "B"
+  }
  },
  {
   "id": "MED-09",
@@ -4740,7 +4829,24 @@ const EMBEDDED_CARDS = [
    "FAIL — No hourly glucose monitoring, unprompted — insulin 10 units in 50 mL 50% glucose, hourly BGL for six hours; hypoglycaemia is the commonest complication and is delayed (★)",
    "FAIL — Not withholding ramipril and spironolactone, and not telling the patient not to restart them (★)",
    "FAIL — Naming one cause and stopping — there are four: CKD, AKI on top, ACE inhibitor plus spironolactone, and the acidosis; then ask NSAIDs, trimethoprim, salt substitutes. To the patient explain the effect, never quote 7.2"
-  ]
+  ],
+  "versions": {
+   "doorStem": "A results-interpretation station: a potassium result is handed to you. Tasks are the same in both versions — interpret the results and any further investigation to the examiner → state the likely causes → outline immediate management → explain the situation to the patient. The two versions land on DIFFERENT answers.",
+   "rows": [
+    [
+     "A · the sick one",
+     "68-year-old man, CKD stage 4, rural ED, two days of lethargy and generalised muscle weakness after gastroenteritis last week, drinking little. On ramipril, spironolactone, metformin, atorvastatin. BP 104/62, PR 52. K⁺ 7.2, urea 24.1, creatinine 312, eGFR 16, bicarbonate 16. ECG: bradycardic, flat P, long PR, broad QRS, peaked T.",
+     "SEVERE HYPERKALAEMIA with ECG changes — MULTIFACTORIAL: CKD sets the floor, acute illness and dehydration precipitate, ACE inhibitor plus spironolactone are additive, acidosis shifts K⁺ out of cells. Treat now."
+    ],
+    [
+     "B · the well one",
+     "44-year-old woman, entirely well, routine bloods before a minor procedure. Lab phones K⁺ 6.1. No symptoms, no relevant medications, normal renal function, lab comments 'specimen haemolysed'. ECG normal.",
+     "PSEUDOHYPERKALAEMIA — repeat the sample properly. But get the ECG FIRST and confirm it is normal before concluding the result is spurious, not after."
+    ]
+   ],
+   "note": "The trap in version B splits candidates two ways and both fail: treating a haemolysed sample with insulin–dextrose in a well patient, or dismissing it as artefact with no ECG and no repeat. ECG first, repeat second, treat only if confirmed. Severity: mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · ANY level with ECG change = severe, and that row overrides the rest. A normal ECG at 7.2 is not reassurance. Practice cards in the source (crush injury/rhabdomyolysis, Addison, trimethoprim interaction, tumour lysis, dialysis patient with broad-complex tachycardia) are partner drills, not recalls.",
+   "thisCard": "A"
+  }
  },
  {
   "id": "MED-15",
@@ -4838,7 +4944,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Implying you will wait for the troponin — 'we are not waiting for the blood test; the tracing is enough to act on'",
    "FAIL — Putting a normoxic patient on oxygen — state the threshold: only if saturations fall below 92%",
    "FAIL — Saying 'percutaneous coronary intervention' and stopping — translate it (a fine tube from the wrist, a balloon or a stent) and give the target: within 90 minutes"
-  ]
+  ],
+  "versions": {
+   "doorStem": "A man with chest pain of one hour, starting during exertion. BOTH versions carry the SAME ECG — ST elevation in I, aVL and V2–V6 with reciprocal depression in III and aVF, an anterolateral STEMI — and the same first six treatment steps. Everything that separates them is ONE sentence in the stem about time and distance.",
+   "rows": [
+    [
+     "A · metropolitan",
+     "52-year-old man, HMO in a metropolitan ED, pain began while chopping wood. BP 135/85, pulse 78, RR 18, SpO₂ 97% room air. 'No history of bleeding disorders.' Tasks: interpret the ECG → explain your management plan to the patient.",
+     "Anterolateral STEMI → PRIMARY PCI. Say the number: first-medical-contact to device ≤90 min. Clopidogrel 600 mg (ticagrelor 180 mg commoner in Australian practice). Activate the cardiac team before you take bloods."
+    ],
+    [
+     "B · rural, 400 km out",
+     "55-year-old man brought by ambulance, HMO in a rural hospital, nearest tertiary centre 400 km. Known hypertension. BP 160/95, pulse 88, RR 20, SpO₂ 93% on oxygen. Tasks: interpret the ECG (to examiner or medical student) → explain your diagnosis → explain your management.",
+     "Anterolateral STEMI with NO PCI ACCESS → FIBRINOLYSIS within 30 min. Screen the four bleeding questions out loud first. Lytic PLUS an anticoagulant and dual antiplatelets; clopidogrel 300 mg (75 mg, no load, if over 75) — never ticagrelor or prasugrel with lysis. Monitor, serial ECG/troponin, transfer for angiography at 3–24 h, or immediately if lysis fails."
+    ]
+   ],
+   "note": "The trap built into version B: this case became so well known that the AMC began writing 'you do not have access to PCI' explicitly into the stem. Talking about arranging a catheter laboratory means you failed to read the case written to test whether you can read it. Starred fails common to both: no doses, not screening lysis contraindications, giving a nitrate without asking about sildenafil, waiting for the troponin. Practice scenarios in the source (the nitrate/sildenafil trap, the inferior/RV version, the recent bleeding ulcer who cannot be lysed, the silent MI in a diabetic woman) are partner drills, not recalls.",
+   "thisCard": "A"
+  }
  },
  {
   "id": "MED-16",
@@ -4932,7 +5055,24 @@ const EMBEDDED_CARDS = [
    "FAIL — Never saying 'heart attack' — a separately marked task in this version",
    "FAIL — GTN without the sildenafil question, or any drug without dose and route — alteplase bolus then infusion, always with enoxaparin",
    "DO — Aspirin 300 mg chewed and clopidogrel 300 mg with lysis (600 mg is the PCI dose), oxygen only below 92%, monitoring for reperfusion arrhythmias"
-  ]
+  ],
+  "versions": {
+   "doorStem": "A man with chest pain of one hour, starting during exertion. BOTH versions carry the SAME ECG — ST elevation in I, aVL and V2–V6 with reciprocal depression in III and aVF, an anterolateral STEMI — and the same first six treatment steps. Everything that separates them is ONE sentence in the stem about time and distance.",
+   "rows": [
+    [
+     "A · metropolitan",
+     "52-year-old man, HMO in a metropolitan ED, pain began while chopping wood. BP 135/85, pulse 78, RR 18, SpO₂ 97% room air. 'No history of bleeding disorders.' Tasks: interpret the ECG → explain your management plan to the patient.",
+     "Anterolateral STEMI → PRIMARY PCI. Say the number: first-medical-contact to device ≤90 min. Clopidogrel 600 mg (ticagrelor 180 mg commoner in Australian practice). Activate the cardiac team before you take bloods."
+    ],
+    [
+     "B · rural, 400 km out",
+     "55-year-old man brought by ambulance, HMO in a rural hospital, nearest tertiary centre 400 km. Known hypertension. BP 160/95, pulse 88, RR 20, SpO₂ 93% on oxygen. Tasks: interpret the ECG (to examiner or medical student) → explain your diagnosis → explain your management.",
+     "Anterolateral STEMI with NO PCI ACCESS → FIBRINOLYSIS within 30 min. Screen the four bleeding questions out loud first. Lytic PLUS an anticoagulant and dual antiplatelets; clopidogrel 300 mg (75 mg, no load, if over 75) — never ticagrelor or prasugrel with lysis. Monitor, serial ECG/troponin, transfer for angiography at 3–24 h, or immediately if lysis fails."
+    ]
+   ],
+   "note": "The trap built into version B: this case became so well known that the AMC began writing 'you do not have access to PCI' explicitly into the stem. Talking about arranging a catheter laboratory means you failed to read the case written to test whether you can read it. Starred fails common to both: no doses, not screening lysis contraindications, giving a nitrate without asking about sildenafil, waiting for the troponin. Practice scenarios in the source (the nitrate/sildenafil trap, the inferior/RV version, the recent bleeding ulcer who cannot be lysed, the silent MI in a diabetic woman) are partner drills, not recalls.",
+   "thisCard": "B"
+  }
  },
  {
   "id": "MED-17",
@@ -18049,7 +18189,44 @@ const EMBEDDED_CARDS = [
    "FAIL — Reassuring before excluding — 'it's nothing to worry about' before the red flags is a fail in any version ('but how do you know?'); the full cancer screen despite a five-day history: weight loss quantified, appetite, lumps, tiredness, blood, family history — and 'how old was he when he was diagnosed?' (71 — given only if asked; a diagnosis under 50 changes the screening advice), 'have you done the bowel screening test?' (★)",
    "DO — Respond to the worry in the opening statement before questioning; the timing box incl. 'does it ever wake you at night?' (the red flag most often omitted — a yes moves IBD and malignancy up and rules IBS out); CCCVO — count, watery or loose, blood, bulky, offensive; the general screen incl. 'were you constipated before it started?'; the differential blocks as headings — hepatitis (jaundice, itch, dark urine), IBD (joints, eyes, rash, mouth ulcers), coeliac (greasy, floats, hard to flush, family), lactose, medications, thyroid (heat, palpitations), sexual screen ('I'm gay and my partner has this too' converts the station), IBS (settles after opening bowels, alternating, stress); never 'Bali belly' or 'traveller's diarrhoea' — neither is a diagnosis",
    "DO — Ask his concern ('is this cancer? my dad had it' arrives at six minutes otherwise); summarise back; 'I'm not going to guess the exact bug — knowing which doesn't change what we do first'; fluids (Hydralyte), avoid Gastro-Stop for now, stool test, review in two to three days; safety-net fever, blood, severe pain, faint → ED; numbers — acute under 14 days, persistent 14–30, chronic over 4 weeks; C. difficile onset during the course or up to 8 weeks after; iFOBT two-yearly 45–74"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice, regional South Australia. Your next patient is a 37-year-old woman who presents complaining of diarrhoea. The duration is DELIBERATELY NOT GIVEN on the door — you will not know whether this is acute, semi-acute or chronic until you ask.",
+   "thisCard": "B",
+   "rows": [
+    [
+     "A · 2022-24",
+     "Diarrhoea 6 days. Just back from Bali, ate street food, did not follow travel advice. Needs a complete ABCDEFS travel history, not two questions.",
+     "Gastroenteritis — 'an infection in your bowel'"
+    ],
+    [
+     "B · 2022-24",
+     "Diarrhoea a few days. Bali six weeks ago. Amoxicillin for a sore throat finished days ago. Father had bowel cancer. Three findings at once — rank them, do not panic.",
+     "Antibiotic-associated diarrhoea, then pseudomembranous colitis, then gastroenteritis, then cancer as unlikely"
+    ],
+    [
+     "C · 2022-24",
+     "Five to six episodes a day, slimy, cramps. Takeaway from a restaurant used for 15 years. Antibiotics 5 days ago, also on Nexium. Recognise the PPI; the cramps add acute abdomen.",
+     "Antibiotic-associated diarrhoea or pseudomembranous colitis, then gastroenteritis, then PPI, then acute abdomen"
+    ],
+    [
+     "D · older",
+     "Alternating constipation and diarrhoea, bloating, stress, no red flags. Confirm the absence of every red flag out loud.",
+     "Irritable bowel syndrome — only ever a diagnosis of exclusion"
+    ],
+    [
+     "E · 2025",
+     "Three months of loose stools starting after returning from Bali. Street food and unbottled water. Add a named group: travellers' infections.",
+     "Gastroenteritis, then hepatitis A, then travellers' infections as a group"
+    ],
+    [
+     "F · 2025",
+     "Six months of diarrhoea. Not leaving home for fear of leaking, avoiding work and shopping. Greasy stools that float and stick. 5 kg unintentional weight loss. Ask 'how is this affecting your life?' — the answer is scripted.",
+     "Coeliac disease, then bowel cancer, then the rest"
+    ]
+   ],
+   "note": "Do not build a different history for acute and for chronic diarrhoea. Build one list of differentials ordered acute at the top and chronic at the bottom, and run the whole list whether the patient says three days or six months. The version changes what the patient answers; it does not change what you ask. Listed fail risk: premature closure on the recall."
+  }
  },
  {
   "id": "MED-137",
@@ -18118,7 +18295,44 @@ const EMBEDDED_CARDS = [
    "DO — Timing (constant vs intermittent, worse, nocturnal — no), CCCVO with the stool character asked directly (bulky, greasy, floats, hard to flush, offensive, blood — no), general GI screen, the blocks as headings — IBD extraintestinal, lactose, medications, thyroid, travel, sexual, IBS; red flags — appetite, lumps, tiredness (anaemia), blood, family history with age, bowel screening; anaemia and osteoporosis as complications to check (FBE, iron, B12, folate, vitamin D)",
    "SAY — 'The most likely explanation is coeliac disease — a condition where the lining of the bowel reacts to gluten, a protein in wheat, barley and rye, so food isn't absorbed properly; that's what makes the stools greasy and floating, and it explains the weight loss; I'd like to confirm it with a blood test'",
    "SAY — 'My other thoughts are bowel cancer — less likely because you have no bleeding and no family history, but weight loss always makes me consider it — along with inflammatory bowel disease, an infection, medications, and an overactive thyroid'; every diagnosis named justified from something she said; then a gastroscopy with biopsies, a dietitian, first-degree relatives tested, Coeliac Australia; safety-net"
-  ]
+  ],
+  "versions": {
+   "doorStem": "General practice, regional South Australia. Your next patient is a 37-year-old woman who presents complaining of diarrhoea. The duration is DELIBERATELY NOT GIVEN on the door — you will not know whether this is acute, semi-acute or chronic until you ask.",
+   "thisCard": "F",
+   "rows": [
+    [
+     "A · 2022-24",
+     "Diarrhoea 6 days. Just back from Bali, ate street food, did not follow travel advice. Needs a complete ABCDEFS travel history, not two questions.",
+     "Gastroenteritis — 'an infection in your bowel'"
+    ],
+    [
+     "B · 2022-24",
+     "Diarrhoea a few days. Bali six weeks ago. Amoxicillin for a sore throat finished days ago. Father had bowel cancer. Three findings at once — rank them, do not panic.",
+     "Antibiotic-associated diarrhoea, then pseudomembranous colitis, then gastroenteritis, then cancer as unlikely"
+    ],
+    [
+     "C · 2022-24",
+     "Five to six episodes a day, slimy, cramps. Takeaway from a restaurant used for 15 years. Antibiotics 5 days ago, also on Nexium. Recognise the PPI; the cramps add acute abdomen.",
+     "Antibiotic-associated diarrhoea or pseudomembranous colitis, then gastroenteritis, then PPI, then acute abdomen"
+    ],
+    [
+     "D · older",
+     "Alternating constipation and diarrhoea, bloating, stress, no red flags. Confirm the absence of every red flag out loud.",
+     "Irritable bowel syndrome — only ever a diagnosis of exclusion"
+    ],
+    [
+     "E · 2025",
+     "Three months of loose stools starting after returning from Bali. Street food and unbottled water. Add a named group: travellers' infections.",
+     "Gastroenteritis, then hepatitis A, then travellers' infections as a group"
+    ],
+    [
+     "F · 2025",
+     "Six months of diarrhoea. Not leaving home for fear of leaking, avoiding work and shopping. Greasy stools that float and stick. 5 kg unintentional weight loss. Ask 'how is this affecting your life?' — the answer is scripted.",
+     "Coeliac disease, then bowel cancer, then the rest"
+    ]
+   ],
+   "note": "Do not build a different history for acute and for chronic diarrhoea. Build one list of differentials ordered acute at the top and chronic at the bottom, and run the whole list whether the patient says three days or six months. The version changes what the patient answers; it does not change what you ask. Listed fail risk: premature closure on the recall."
+  }
  },
  {
   "id": "MED-138",
@@ -72249,7 +72463,24 @@ const EMBEDDED_CARDS = [
    "DO — Read the ECG systematically in order — rate, P, PR, QRS, T: 'the rate is 52 and bradycardic; I cannot clearly identify P waves — flattened and of low amplitude; the PR interval is prolonged; the QRS is broad at around 130 ms without a typical bundle branch morphology; the T waves are tall, narrow-based, symmetrical and peaked, most marked in the mid-precordial leads; taken together these are the changes of severe hyperkalaemia'; 'could the T waves be ischaemic?' → hyperacute T waves of infarction are broad-based and asymmetrical — the combination with flat P waves, a long PR and a wide QRS makes hyperkalaemia the explanation; in Version A read the panel as AKI on CKD (urea 24, creatinine 312, eGFR 16, a prerenal component), metabolic acidosis (HCO3 16 — shifts potassium out of cells), mild hyponatraemia fitting volume depletion; causes are multifactorial — name all four (stage 4 CKD as the baseline; AKI from gastroenteritis and poor intake; ramipril plus spironolactone — additive potassium retention; acidosis) and ask specifically about over-the-counter anti-inflammatories (ibuprofen for his knee, admitted only if asked), recent trimethoprim and potassium-based salt substitutes; 'his ECG had been normal — would you still have treated?' → yes at this level; the well dialysis patient at 6.9 with a normal ECG — chronic tolerance is not permission to wait: monitor, treat, bring dialysis forward",
    "SAY — To the patient, explain the effect, never the number (quote 7.2 and he says 'is that bad?'): 'your blood tests show a salt called potassium is much higher than it should be; potassium helps your nerves and muscles work, but when it gets too high it upsets the electrical rhythm of your heart — and your heart tracing is already showing that; that is why I am treating it now rather than waiting; three things: calcium first — it does not lower the potassium, it protects your heart while the rest works; then insulin with sugar, which pushes the potassium back into your cells; and a nebuliser that helps do the same; then we work on clearing it from your body — and because your kidneys are not doing that well, you may need dialysis, which means transferring you; two of your tablets — the blood pressure one and the fluid one — hold potassium in; I am stopping both today; please do not restart them until you are reviewed'; 'am I going to have a heart attack?' → 'not a heart attack in the usual sense — this affects the rhythm rather than blocking an artery; but I don't want to understate it: at this level the rhythm can become dangerous, which is exactly why you're on a monitor'; 'is it something I did?' → 'you have not done anything wrong'; 'do I have to go to Adelaide?' → 'possibly — I'm arranging that conversation now rather than waiting; is there someone you'd like me to call?'",
    "DO — Variants: the sine wave (K 8.4, QRS merging with T, drowsy, hypotensive) → peri-arrest — calcium immediately and repeated, insulin–dextrose and salbutamol simultaneously not sequentially, call for help and the arrest trolley, emergency dialysis; digoxin toxicity (K 6.4, nausea, yellow-green vision) → hyperkalaemia is a marker of severity and the indication for digoxin-specific antibody fragments — avoid calcium as a reflex, discuss with toxicology; DKA (K 5.9, glucose 28, ketones 5.2, pH 7.12) → total body potassium is depleted despite the high serum level — once insulin and fluids start it falls rapidly; follow the DKA protocol and replace potassium once below 5.5 and passing urine — 'the one hyperkalaemia you treat with potassium'; the angry patient ('you lot gave me those tablets — now they nearly killed me?') → 'a fair thing to be upset about; both were prescribed for good reasons — they protect your heart and kidneys; what has changed is that your kidneys have taken a hit from being unwell, and at that point the same tablets become a problem; not the wrong choice — they need reviewing when things change; I'm stopping them today and we'll work out a safer plan together'"
-  ]
+  ],
+  "versions": {
+   "doorStem": "A results-interpretation station: a potassium result is handed to you. Tasks are the same in both versions — interpret the results and any further investigation to the examiner → state the likely causes → outline immediate management → explain the situation to the patient. The two versions land on DIFFERENT answers.",
+   "rows": [
+    [
+     "A · the sick one",
+     "68-year-old man, CKD stage 4, rural ED, two days of lethargy and generalised muscle weakness after gastroenteritis last week, drinking little. On ramipril, spironolactone, metformin, atorvastatin. BP 104/62, PR 52. K⁺ 7.2, urea 24.1, creatinine 312, eGFR 16, bicarbonate 16. ECG: bradycardic, flat P, long PR, broad QRS, peaked T.",
+     "SEVERE HYPERKALAEMIA with ECG changes — MULTIFACTORIAL: CKD sets the floor, acute illness and dehydration precipitate, ACE inhibitor plus spironolactone are additive, acidosis shifts K⁺ out of cells. Treat now."
+    ],
+    [
+     "B · the well one",
+     "44-year-old woman, entirely well, routine bloods before a minor procedure. Lab phones K⁺ 6.1. No symptoms, no relevant medications, normal renal function, lab comments 'specimen haemolysed'. ECG normal.",
+     "PSEUDOHYPERKALAEMIA — repeat the sample properly. But get the ECG FIRST and confirm it is normal before concluding the result is spurious, not after."
+    ]
+   ],
+   "note": "The trap in version B splits candidates two ways and both fail: treating a haemolysed sample with insulin–dextrose in a well patient, or dismissing it as artefact with no ECG and no repeat. ECG first, repeat second, treat only if confirmed. Severity: mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · ANY level with ECG change = severe, and that row overrides the rest. A normal ECG at 7.2 is not reassurance. Practice cards in the source (crush injury/rhabdomyolysis, Addison, trimethoprim interaction, tumour lysis, dialysis patient with broad-complex tachycardia) are partner drills, not recalls.",
+   "thisCard": "B"
+  }
  },
  {
   "id": "MED-240",
