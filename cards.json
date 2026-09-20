@@ -2586,8 +2586,8 @@
  {
   "id": "MED-01",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Your general practice, a country town on the Yorke Peninsula.",
   "stem": [
    "Ben Halloran, 60, here to discuss the results of a scan.",
    "Background. Ben had an ischaemic stroke some months ago. As part of that work-up he had a CT angiogram of the head and neck. The radiologist has reported an incidental nodule in the left lobe of the thyroid gland. He has no complaint today and no symptoms were recorded.",
@@ -2597,90 +2597,146 @@
    "Take a relevant history from the patient",
    "Explain to the patient the investigations you would request"
   ],
-  "time": "8 minutes.",
+  "must": [
+   "FAIL — Blanket reassurance, or diagnosing a cancer you do not have. Probability, never a promise.",
+   "FAIL — An entire investigation plan explained without the word cancer appearing once.",
+   "FAIL — A list of tests. Name the kinds of nodule first, then the order with the branch.",
+   "FAIL — Nuclear scan with a normal TSH, FNA before ultrasound, or repeating the CT.",
+   "ASK — Any difficulty swallowing? Any change in your voice? Never drop one of the pair.",
+   "ASK — Any radiotherapy to your head or neck, at any age? He volunteers it only if asked."
+  ],
   "back": {
-   "dx": "Incidental thyroid nodule — clinically euthyroid and asymptomatic, no compressive or red-flag features, but hidden risk factors: radiotherapy to the left neck at 22 after a skin cancer, eleven years as an industrial radiographer, male, 60. Hidden agenda: brother-in-law Trev died of throat cancer, eight months start to finish — he hasn't slept since the letter. Discriminating move: name the kinds of nodule BEFORE listing the tests; TSH always first, then the branch.",
+   "dx": [
+    "**Incidental thyroid nodule in a euthyroid 60-year-old man** — most likely benign, and the station is proving that without ever promising it.",
+    "**90–95% of thyroid nodules are benign**; malignancy roughly **5–10%**, higher in **men, age under 20 or over 60, and after neck irradiation**. VERIFY",
+    "Name the kinds of nodule before any test: **a fluid-filled cyst · an area of overgrowth (colloid or hyperplastic) · inflamed gland tissue · a benign adenoma, some of which switch themselves on · and a small number that are cancers**.",
+    "Cancer types: **papillary (commonest, best prognosis) · follicular · medullary (MEN 2) · anaplastic · lymphoma on a background of Hashimoto · metastasis**.",
+    "The risk factors this man carries: **male, aged 60, and therapeutic radiotherapy to the left neck at 22** — plus eleven years as an industrial radiographer. He volunteers none of it unless asked.",
+    "Red flags: **hoarseness · dysphagia · stridor or orthopnoea · rapid growth · hard fixed lump that does not move on swallowing · cervical or supraclavicular node**.",
+    "CORRECTION — hoarseness is **recurrent laryngeal nerve palsy**; dysphagia is **mechanical oesophageal compression**, not vagal invasion. Both raise suspicion.",
+    "Order, always: **examination → TSH → branch → uptake scan (TSH low) or ultrasound (TSH normal or high) → ultrasound-guided FNA if indicated → cytology-directed management**.",
+    "Say the odds as probability: **'something like nine in ten of these are not cancer. I can't promise you which side of that you're on today, and I won't pretend I can.'**",
+    "SA — ultrasound and FNA mean travel: **PATS**, Country Health Connect, endocrine surgery at **RAH / FMC / TQEH**, **Cancer Council SA 13 11 20**, TIS **131 450**; airway obstruction is **MedSTAR 1300 13 12 33**."
+   ],
    "plan": [
     [
-     "by 0:45",
-     "Open; heads-up in plain words (a lump in the thyroid, found by chance, most harmless, needs checking); permission to ask questions"
+     "0:00",
+     "WIPE, name, open question — then **the heads-up before a single question**: **'The scan picked up a lump in the thyroid gland. It turned up by chance. Most of these are harmless, but we do need to check it properly — is it all right if I ask you some questions first?'**"
     ],
     [
      "0:45",
-     "Ever told you had a thyroid lump or problem? Scanned or tested?"
+     "**Have you ever been told you had a lump or a problem with your thyroid before? Has anyone ever scanned or tested it?** Ten seconds, and it can close the whole block."
     ],
     [
      "0:55",
-     "Local: swelling, pain, skin change"
+     "Local neck symptoms: **any swelling you have noticed yourself · any pain or discomfort · any change in the skin over the front of the neck**. Pain points to thyroiditis or a bleed into a cyst, not carcinoma."
     ],
     [
      "1:10",
-     "Thyroid function both directions: heat/cold, bowels, palpitations/tremor/sweating/sleep, weight, energy, mood, skin, hair"
+     "Thyroid function, **asked both directions**: **do you feel the heat or the cold more than others · any change in your bowels · palpitations, tremor, sweating, trouble sleeping · weight, energy, mood, skin and hair**."
     ],
     [
      "2:00",
-     "Cancer questions; the pair: difficulty swallowing? change in voice? plus noisy breathing/lying flat"
+     "Cancer questions, then **the two red-flag questions as a pair**: **unintentional weight loss · appetite · night sweats or fevers · other lumps, especially above the collarbones** → **'any difficulty swallowing — does food or drink ever catch?'** and **'has anyone noticed a change in your voice?'** → **'any noisy breathing, or trouble breathing lying flat?'**"
     ],
     [
      "3:00",
-     "Risk factors one at a time: radiotherapy to head/neck? occupation now and before, radiation? cancer yourself? thyroid cancer in family? breast cancer? bowel cancer?"
+     "Risk factors, **one question at a time, never stacked**: **radiotherapy or radiation to the head or neck at any age · occupation now and before · any cancer yourself · thyroid cancer in the family · breast cancer · bowel cancer**. → radiotherapy at 22, industrial radiographer, mother breast cancer at 62, cousin bowel cancer at 50."
     ],
     [
      "4:00",
-     "The stroke, medications and adherence, reviews, smoking, alcohol, allergies; 'what's been going through your mind since that letter came?' → respond to Trev"
+     "The stroke, then ICE: **when was it and what were you left with · what medications, and are you taking them every day · still having your reviews · smoking, alcohol, allergies** → **'what's been going through your mind since that letter came?'** → Trev, throat cancer, eight months. **Name it: 'that must make an envelope like that very frightening to open.'**"
     ],
     [
      "4:40",
-     "STOP the history. Name the kinds of nodule → examination → TSH → branch (uptake scan if fast; ultrasound if normal) → FNA only if suspicious → PATS, safety-net, ring him with the result, check understanding, questions"
+     "**Hard stop on the history, whatever is unasked** — task 2 carries more marks. Then the discriminating move: **name the kinds of nodule before a single test**, ending **'so the whole point of the tests is to work out which of those this is, in the right order.'**"
+    ],
+    [
+     "5:30",
+     "The plan, **numbered out loud, with the branch**: first **examine the neck and the nodes**; second **a TSH — the one test that decides what comes next**; third **a nuclear scan if the gland is running fast, an ultrasound if it is normal**; fourth **a fine needle sample, only if the ultrasound looks suspicious**."
+    ],
+    [
+     "7:20",
+     "Check understanding, **PATS for the travel to a larger centre**, then safety-net: **lump growing quickly · voice going hoarse · food catching · any trouble breathing**. **'I'll ring you myself with the blood result rather than leave you waiting.'** Any other questions?"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "I do have your results here, and I want to tell you what they show before anything else",
-    "Have you ever been told you had a lump or a problem with your thyroid before?",
-    "Noticed any swelling in the front of your neck? Pain? Change in the skin?",
-    "How do you cope with the weather — heat or cold more than others? Bowels changed? Palpitations, tremor, sweating, trouble sleeping? Weight? Energy, mood, skin, hair?",
-    "Lost weight without meaning to? Appetite? Night sweats or fevers? Other lumps, especially above the collarbones?",
-    "Two questions I ask everyone with a lump here: any difficulty swallowing? any change in your voice? — ask as a pair; plus noisy breathing or trouble lying flat",
-    "Ever had radiotherapy or radiation treatment to your head or neck, at any age? Occupation now and before — worked around radiation? Cancer yourself? Thyroid cancer in the family? Breast cancer? Bowel cancer? — one at a time, never stacked",
-    "The stroke: when, what were you left with, medications, taking them every day?, reviews; smoke, alcohol, allergies",
-    "What's been going through your mind since that letter came? → 'I'm sorry — that must make this letter very frightening to open'"
-   ],
    "pefe": [
-    "Name the kinds first: fluid-filled cyst · overgrown area · inflamed tissue · benign tumour, some of which switch themselves on · a small number are cancers (papillary commonest; follicular, medullary) · very occasionally a cancer from elsewhere",
-    "If he asks the odds: 'something like nine in ten are not cancer. I can't promise you which side of that you're on, and I won't pretend I can'",
-    "Numbered plan: FIRST examine the neck — size, firmness, tenderness, moves on swallowing, nodes in neck and above the collarbones · SECOND blood test TSH — 'that one test decides what comes next' · THIRD the branch: gland running fast → nuclear (radioiodine uptake) scan, a hot lump is reassuring; TSH normal/low-normal → ultrasound of the neck (what it's made of, how worrying, nearby glands) · FOURTH only if the ultrasound looks suspicious → ultrasound-guided fine-needle sample under local",
-    "Wrap: most people are simply watched; bloods here, ultrasound and FNA at a larger centre — PATS; safety-net: grows quickly, voice hoarse, food catching, trouble breathing → sooner or 000; 'I'll ring you myself with the blood result'; check understanding; also address stroke-prevention adherence",
-    "Summary to examiner: incidental left nodule on CTA, euthyroid, asymptomatic, no compressive/red-flag features, prior neck irradiation + male + 60; excluding carcinoma; exam → TSH → uptake scan if suppressed or ultrasound with risk stratification → US-guided FNA if indicated; would not repeat CT"
+    "**No examination findings are given and there is no examination task** — but the neck examination is still step one of the plan, so say what you would feel for.",
+    "Neck examination: **size, consistency, tenderness, mobility on swallowing, tethering**, then **cervical and supraclavicular nodes**, and **the voice**. Stridor or orthopnoea is a same-day problem, not an outpatient pathway.",
+    "**TSH first, always** — it decides the branch. Add **fT4 ± fT3 if abnormal** and **TPO antibodies if the TSH is raised**.",
+    "**TSH low** → **radionuclide uptake scan**. **Hot** = functioning autonomous nodule, malignancy uncommon, FNA not routine. **Cold** → cross to ultrasound; most cold nodules are still benign.",
+    "**TSH normal or high** → **ultrasound of the neck** — the only test that characterises the nodule and surveys the nodes at the same sitting. In practice almost everyone gets one.",
+    "**Ultrasound-guided FNA** where the sonographic pattern, the size or an abnormal node warrants it, reported by the **Bethesda system**. FNA cannot separate follicular adenoma from follicular carcinoma → **diagnostic hemithyroidectomy**.",
+    "Suspicious ultrasound: **solid and hypoechoic · taller-than-wide · irregular or lobulated margin · microcalcification · extrathyroidal extension · abnormal node**. VERIFY current TI-RADS size thresholds.",
+    "**Laryngoscopy** before any thyroid surgery, and immediately if the voice has changed.",
+    "**Never**: CT to characterise the nodule · an uptake scan with a normal TSH · FNA before ultrasound · **thyroglobulin as a diagnostic test** · routine calcitonin.",
+    "Read the rest of the CT report — it was done for a stroke, and **carotid stenosis is the more urgent finding**. The **iodinated contrast** can make an uptake scan uninterpretable for weeks and rarely precipitates thyrotoxicosis (**Jod–Basedow**)."
    ],
-   "fails": [
-    "No question about swallowing or voice (single-item fail)",
-    "Never asking about radiotherapy/radiation — the role-player never volunteers it",
-    "Listing tests without saying what you are looking for",
-    "Promising it is harmless",
-    "Triple-barrelled family cancer question; starting questions cold before the heads-up; ending on the FNA with no safety-net"
-   ],
-   "numbers": [
-    "Order: examination → TSH → branch → uptake scan (TSH low) or ultrasound (TSH normal/high) → US-guided FNA if indicated",
-    "Malignancy ~5–10% of nodules; higher in men, age <20 or >60, after neck irradiation VERIFY · hot = functioning, malignancy uncommon, FNA not routine · cold → ultrasound ± FNA, most still benign",
-    "Cytology: Bethesda; FNA cannot separate follicular adenoma from carcinoma → diagnostic hemithyroidectomy · US suspicion: solid hypoechoic, taller-than-wide, irregular margin, microcalcification, extrathyroidal extension, abnormal node",
-    "Types: papillary (commonest, best prognosis) · follicular · medullary (MEN 2) · anaplastic · lymphoma · metastasis · syndromes: Cowden (breast), FAP (bowel), MEN 2",
-    "Never: CT to characterise · uptake scan with normal TSH · FNA before ultrasound · thyroglobulin as a diagnostic test · blanket reassurance",
-    "Clock: heads-up by 0:45 · stop history at 4:40 · last 40 s for understanding, safety-net, follow-up",
-    "Variants: TSH suppressed (hot, sweating, 6 kg loss, tremor, loose bowels) → toxic adenoma, nuclear scan not ultrasound, beta-blocker, ECG; recent iodinated contrast — discuss uptake-scan timing with nuclear medicine (Jod–Basedow) · red flags (hoarse 6 wk, food catching, supraclavicular node) → concerned not diagnostic, scan + FNA this week, laryngoscopy, ring him, bring someone · angry patient (letter, 3 weeks, 'cut it out today') → validate, don't defend; surgery risks recurrent laryngeal nerve and parathyroids, only when tests say so · sibling recall: adrenal incidentaloma — metanephrines, dexamethasone suppression, aldosterone–renin if hypertensive/hypokalaemic; dedicated adrenal CT; never needle before phaeo excluded VERIFY",
-    "SA: PATS · Country Health Connect · RAH/FMC/TQEH endocrine surgery · Cancer Council SA 13 11 20 · TIS 131 450 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "Colloid or hyperplastic nodule",
+     "The commonest single answer — asymptomatic, euthyroid, no growth, often part of a multinodular gland",
+     "No red flags; often several nodules on ultrasound",
+     "TSH then ultrasound; frequently no FNA needed"
+    ],
+    [
+     "Thyroid cyst",
+     "May have appeared suddenly, sometimes painful if it has bled into itself",
+     "Sudden onset, tender",
+     "Ultrasound — purely cystic lesions are almost always benign"
+    ],
+    [
+     "Follicular adenoma",
+     "Solitary, well-defined, slow-growing, euthyroid",
+     "Nothing on history distinguishes it",
+     "**FNA cannot separate adenoma from follicular carcinoma** → diagnostic hemithyroidectomy"
+    ],
+    [
+     "Toxic (functioning) adenoma",
+     "Heat intolerance, weight loss despite appetite, palpitations, tremor, loose bowels",
+     "Thyrotoxic symptoms; **TSH suppressed**",
+     "Radionuclide uptake scan — a **hot** nodule. FNA not routine; beta-blocker, antithyroid drug, then radioiodine or surgery"
+    ],
+    [
+     "Thyroiditis — Hashimoto or subacute (de Quervain)",
+     "Hashimoto: tired, cold, dry skin. Subacute: painful tender gland after a viral illness",
+     "Tenderness on palpation; preceding URTI; TSH high in Hashimoto",
+     "TSH, TPO antibodies, ESR/CRP; NSAIDs for de Quervain"
+    ],
+    [
+     "**Thyroid carcinoma**",
+     "Hoarseness, dysphagia, rapid growth, hard fixed lump, node, prior irradiation, male, age over 60",
+     "Lump not moving on swallowing; hard supraclavicular node; stridor",
+     "**Ultrasound with risk stratification, then guided FNA; urgent endocrine surgery**"
+    ],
+    [
+     "Thyroid lymphoma",
+     "Rapidly enlarging gland on a background of Hashimoto; B symptoms",
+     "Night sweats, weight loss, fever, other node groups",
+     "**Core or excisional biopsy — FNA alone cannot subtype lymphoma**"
+    ],
+    [
+     "Metastasis to the thyroid",
+     "Known primary — renal, melanoma, breast, lung. Rare",
+     "Prior cancer history, which is why you ask it",
+     "FNA; hunt the primary"
+    ],
+    [
+     "Not thyroid at all — node, thyroglossal or branchial cyst, lipoma, parathyroid adenoma",
+     "Lateral position; or midline and rises on tongue protrusion; thirst, bones, stones and groans",
+     "**Does not move on swallowing**",
+     "Ultrasound settles it; calcium and PTH if the picture fits"
+    ],
+    [
+     "Suppurative thyroiditis or tuberculous node",
+     "Fever with a tender hot swelling; or overseas-born with matted nodes and weight loss",
+     "Fever, sick contacts, birthplace, travel",
+     "Bloods, ultrasound, aspiration, chest X-ray and IGRA"
+    ]
    ]
   },
   "source": "Medicine AMC Clinical/Thyroid_Nodule_2_Case_Tasks_Script_Notability.pdf",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Thyroid_Nodule_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — No question about SWALLOWING or VOICE — a single-item automatic fail; ask them as a PAIR, prefaced so he knows it is routine: 'two questions I ask everyone with a lump in this spot — any difficulty swallowing, does food or drink ever catch or go down slowly? And has anyone noticed any change in your voice: hoarse, weaker, tiring by the end of the day?', adding noisy breathing and trouble lying flat (★)",
-   "FAIL — Never asking about RADIOTHERAPY or radiation to the head or neck — the role-player never volunteers it, and the case turns on it: he had radiotherapy to the left side of his neck at 22 after a skin cancer behind the ear, and he spent ELEVEN YEARS as an industrial radiographer; ask the risk factors ONE AT A TIME rather than stacked, because a triple-barrelled question earns one 'no' and one mark while three separate questions earn three — prior irradiation, occupation now and previously, personal cancer history, thyroid cancer in the family, then breast and bowel cancer separately (Cowden, FAP, MEN 2) (★)",
-   "FAIL — Listing tests without first naming the KINDS of nodule you are looking for — 'a cyst, an overgrowth, inflammation, a benign tumour and some of those make hormone and switch themselves on; a small number are cancers, the commonest called papillary' — because the examiner is marking the REASON, not the list, and this single move is where the station is won: 'before I tell you what tests I want, let me tell you what we're looking for, because it explains everything else' (★)",
-   "FAIL — Promising it is harmless — he pushes once with 'you can be sure of that, can you?', and the honest answer keeps the reassurance without the promise: 'the great majority — something like nine in ten — turn out not to be cancer; I can't promise you which side of that you're on today, and I won't pretend I can, but I can find out properly and quickly'; the corresponding error is the euphemism, so give the finding BEFORE the questions, by 0:45, in plain words — 'I do have your results here, and I want to tell you what they show before anything else: the scan picked up a lump in the thyroid gland, in the front of your neck; it wasn't what we were looking for, it turned up by chance, and most of these are harmless, but we do need to check it properly' (★)",
-   "DO — Examination FIRST, then TSH — 'that one test decides what comes next': a LOW TSH branches to a radionuclide UPTAKE SCAN, because a hot, functioning nodule is rarely cancer, while a NORMAL or high TSH branches to ULTRASOUND with risk stratification, and only a suspicious ultrasound leads to an ULTRASOUND-GUIDED FINE-NEEDLE ASPIRATION; never order a CT to characterise a nodule, never an uptake scan with a normal TSH, never an FNA before the ultrasound, and never thyroglobulin as a diagnostic test; ultrasound features of concern are solid and hypoechoic, taller-than-wide, an irregular margin, microcalcification, extrathyroidal extension and an abnormal node; cytology is reported by the Bethesda system, and FNA CANNOT separate follicular adenoma from follicular carcinoma, which is why that answer is a diagnostic hemithyroidectomy; and if the recent CT used iodinated contrast, say you would discuss the timing of an uptake scan with nuclear medicine, because the iodine load can make it uninterpretable for weeks",
-   "SAY — Ask what has been on his mind, because his brother-in-law Trev died of throat cancer in eight months and he has not slept since the letter arrived — and if you never ask, he saves it for the final thirty seconds ('so — it's not like Trev's, then?'), which is the timing test; name it when it comes ('I'm sorry, that must make an envelope like that very frightening to open'); open the history with the question that can close the whole block ('has anyone ever told you before that you had a lump or a problem with your thyroid?'), and do not treat 'no pain' as reassuring, because most thyroid cancers are painless while pain points towards thyroiditis or a bleed into a cyst; ask thyroid function in BOTH directions rather than only heat intolerance; stop the history at 4:40, keep the last forty seconds for understanding, safety-netting and follow-up, and cover the incidental finding that is also his — imperfect adherence to secondary stroke prevention after a stroke fourteen months ago; safety net — the lump growing quickly, the voice going hoarse, food catching, or any trouble breathing; PATS covers the travel for the ultrasound and the needle test, and you ring him yourself with the blood result; variants — a SUPPRESSED TSH with heat intolerance, weight loss and tremor is a toxic adenoma, so the branch changes to the uptake scan with a beta blocker and an ECG; and HOARSENESS with dysphagia and a supraclavicular node changes the URGENCY visibly — imaging and sampling this week rather than next month, laryngoscopy for the vocal cords, a personal phone call, and 'is there someone who can come with you?' — without ever saying 'you've got thyroid cancer', which you do not know"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Thyroid_Nodule_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-02",
