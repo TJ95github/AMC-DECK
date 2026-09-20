@@ -12791,8 +12791,8 @@
  {
   "id": "MED-38",
   "cat": "med",
-  "promptAt": 300,
-  "setting": "Emergency department, regional South Australia.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Jack Reid, an 18-year-old man, presents with sudden breathlessness while exercising. SpO2 93% — he is already on oxygen.",
    "Other observations from the examiner on request. A chest X-ray will be shown."
@@ -12802,88 +12802,197 @@
    "Explain the chest X-ray to the patient",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes. Four beats: stability + opening 35 s · complaint 55 s · acute three then full sweep 3.5 min · film, diagnosis, list, plan 3 min.",
+  "findings": [
+   [
+    "Observations from the examiner",
+    "BP 118/72 · PULSE 104 regular · RR 24 · T 36.6 · SpO2 93% ON 6 L VIA HUDSON MASK. REACT TO THEM OUT LOUD: 'he's tachypnoeic and hypoxic, so I'd keep the oxygen running throughout.' Silence here reads as not having noticed"
+   ],
+   [
+    "Film — three colours",
+    "White is bone, grey is soft tissue, black is air. Say it to the patient in those words, not in jargon"
+   ],
+   [
+    "Film — landmarks and THE TRACHEA",
+    "Heart, spine, and THE TRACHEA RUNNING DOWN THE CENTRE — CENTRAL. This is the discriminating item of the whole station and it is step 2, not an afterthought"
+   ],
+   [
+    "Film — the normal side first",
+    "On the left the lung goes right out to the chest wall, sitting against the inside of the ribs the way it should"
+   ],
+   [
+    "Film — the abnormal side",
+    "On the RIGHT, a BLACK SHADOW between lung and chest wall. PLEURAL LINE with ABSENT LUNG MARKINGS BEYOND IT — uniform blackness. NAME IT: PNEUMOTHORAX"
+   ],
+   [
+    "How to find it on a poor film",
+    "Do NOT hunt for the pleural line. Pick a side, find the fine peripheral lung markings, FOLLOW THEM OUTWARDS — on a normal side they reach the inner rib margin. WHERE THEY STOP SHORT is the pleural line; beyond it, blackness. Then compare sides"
+   ],
+   [
+    "The two-line branch",
+    "TRACHEA CENTRAL → simple pneumothorax → management by SYMPTOMS AND STABILITY. TRACHEA PUSHED AWAY from the black side → TENSION → IMMEDIATE NEEDLE DECOMPRESSION, before imaging, before anything else"
+   ],
+   [
+    "Orientation, every time",
+    "The patient's left is on the RIGHT of the image. Describe it in THEIR sides. Adapt the script to whichever side you actually see"
+   ],
+   [
+    "VERSION — the tension",
+    "24 M after a tackle. BP 82/50 · pulse 132 · RR 34 · distressed · DISTENDED NECK VEINS · TRACHEA DEVIATED TO THE RIGHT with absent left breath sounds. ORDERING A FILM FIRST IS THE FAIL"
+   ],
+   [
+    "VERSION — the athlete's heart",
+    "19 M, brief COLLAPSE at training then breathlessness, months of exertional chest tightness, UNCLE DIED SUDDENLY AT 32 → hypertrophic cardiomyopathy. ECG today, echocardiogram, urgent cardiology, NO strenuous exercise meanwhile, and screen the family"
+   ]
+  ],
+  "findingsLabel": "Observations and the chest film · open when you would look",
+  "must": [
+   "FAIL — Never mentioning the trachea. Step 2 of the film script, every single time.",
+   "FAIL — Ordering a film in a hypotensive patient with a deviated trachea. Tension is clinical.",
+   "FAIL — Reordering by DELETING. Smoking, family sudden death and the mini-HEADSS still get asked.",
+   "FAIL — Naming the pneumothorax and stopping. Task 3 wants differentials with reasons against.",
+   "ASK — Did you take any knock or injury to the chest? Were you tackled, or did you land badly?",
+   "ASK — Has anyone in your family died suddenly, particularly young? One sentence, and it catches HOCM."
+  ],
   "back": {
-   "dx": "Primary spontaneous pneumothorax, trachea central — right side. Positives only: sudden, mid-game an hour ago, constant, not improving, worse moving, breathless AT REST (symptomatic → drives the management branch), slight dry cough, sharp right-sided pleuritic pain. Everything else is NO — no tackle, no calf/travel/family clots, no allergies/rash, no fever/coryza, no palpitations/dizziness/syncope, no family sudden death, no atopy, not tired, doesn't smoke or vape, HEADSS fine. Vitals: BP 118/72, P 104, RR 24, T 36.6, SpO2 93% on 6 L Hudson — react aloud. The discriminating issue is the TRACHEA: on the film, name it in the midline before you describe the black shadow. 'Sudden' in the stem = ask the ACUTE THREE first (pneumothorax, PE, anaphylaxis).",
+   "dx": [
+    "**Primary spontaneous pneumothorax, trachea central** — air in the pleural space with no underlying lung disease and no trauma, in the classic **tall, thin, young, mid-exertion** phenotype.",
+    "**The word SUDDEN in the stem reorders the list: pneumothorax · pulmonary embolism · anaphylaxis to the front.** Ask about them first.",
+    "**Acute reorders the list; it does not delete anything.** Asthma, infection, the cancer red flags, smoking and the mini-HEADSS all still get asked — **the smoking question lives in the COPD box, and smoking is a genuine risk factor for spontaneous pneumothorax and for recurrence.**",
+    "**The trachea is the discriminating issue.** **Central → simple → treat by symptoms and stability. Deviated AWAY from the affected side, with hypotension, distended neck veins and distress → TENSION → needle decompression within seconds, before any imaging.**",
+    "**CORRECTION — guidance has changed. Management is decided by CLINICAL INSTABILITY AND PERSISTENT SYMPTOMS, not by measured size on the film.** If challenged: 'current Australian guidance is symptom- and stability-based rather than size-based; a small pneumothorax in a symptomatic patient still warrants pleural intervention.'",
+    "**Stable and asymptomatic → observe 4 hours → discharge with a follow-up film, an appointment and red-flag advice. Unstable, or still symptomatic after analgesia → pleural intervention regardless of size.** **Oxygen if hypoxic, and analgesia — pneumothorax hurts, and pain drives the respiratory rate.**",
+    "**Needle decompression: 2nd intercostal space midclavicular line, entering JUST ABOVE THE THIRD RIB to avoid the neurovascular bundle — or the 5th space in the anterior axillary line, which many now prefer in adults because the anterior chest wall is often too thick.** Leave the cannula, withdraw the needle, then a **definitive intercostal catheter in the SAFE TRIANGLE — pectoralis major laterally, latissimus dorsi anteriorly, the 5th intercostal space below.**",
+    "**CORRECTION — the fine peripheral markings you trace are vascular and airway markings. Kerley B lines are a different entity**, seen in interstitial pulmonary oedema. Do not use the two interchangeably.",
+    "**The differentials task is a real task.** Each one with a reason against, drawn from his own answers: **clot — no travel, no leg swelling, no family clots · allergic reaction — no allergies, no rash, no itch · infection — no fever, no coryza · asthma — no wheeze, no family atopy · rhythm problem or a thickened heart muscle that runs in families — no palpitations, no blackouts, no family sudden death · anaemia — not unusually tired.**",
+    "Advice: **no air travel until resolved and cleared · NEVER scuba dive again after a spontaneous pneumothorax · smoking cessation markedly reduces recurrence.** **ECG yes; spirometry NO in an acutely breathless or painful patient.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, may I have BP, pulse, RR and temperature — I have the saturation in the stem' → 'tachypnoeic and hypoxic, I'd keep the oxygen running'; WIPE; 'I can see you're on oxygen — we'll keep that going'; open question; acknowledge; signpost the pace"
+     "**'Examiner, before I begin, may I have the blood pressure, pulse rate, respiratory rate and temperature? I have the saturation in the stem.'** Then WIPE, note the oxygen — **'I can see you're on oxygen, and I'd like to keep that going'** — open question, and address the concern he voices."
     ],
     [
      "0:35",
-     "Describe (tightness / air in / not enough air); EXACTLY when; constant; worse; better/worse → ★ rest question + breathless at rest → cough, noisy breathing/wheeze"
+     "**The signposting line that buys you speed: 'I'm going to run through a number of quick questions — some will sound unrelated, but with breathlessness this sudden there are a few serious things I need to rule out straight away.'**"
+    ],
+    [
+     "0:45",
+     "Explore it: **is it tightness, difficulty getting the breath in, or not getting enough air · EXACTLY WHEN did it start · constant or on and off · getting worse · what makes it better or worse?** — 'sudden, an hour ago, mid-exertion' is the most diagnostic sentence in the case."
+    ],
+    [
+     "1:15",
+     "**The rest question, which is the severity marker and is POSITIVE here: 'does rest make it better — and are you breathless at rest, just sitting here now?'** Then **any cough · any noisy breathing or wheeze?**"
     ],
     [
      "1:30",
-     "★ ACUTE THREE: knock or tackle to the chest? · calves, long trips/flights, family clots (+ pill and pregnancy in a woman) · known allergies, rash, itch"
+     "**THE ACUTE THREE, front-loaded.** **Pneumothorax — did you take any knock or injury to the chest, were you tackled or did you land badly? · Clot — any pain or swelling in your calves? any long trips or flights? anyone in the family with blood clots? · Allergy — do you have any known allergies? any rash or itching anywhere?** In a **female** patient add **the combined pill and pregnancy** here."
     ],
     [
-     "2:15",
-     "Infection (fever/chills, sore throat/runny nose, overseas travel — not night sweats in a one-hour history); cardiac — chest pain, racing, dizziness, blackout, ★ 'has anyone in your family died suddenly, particularly young?'; family atopy; tiredness; ★ smoke or vape; weight/appetite; mini-HEADSS LAST and brief (home, school/bullying, mood)"
+     "2:45",
+     "Infection: **any fevers or chills · sore throat or runny nose recently · any travel overseas?** (Night sweats make no sense in a one-hour history — travel covers TB.)"
+    ],
+    [
+     "3:10",
+     "Cardiac, and **the question that catches what kills young athletes**: **any chest pain with this · any racing or pounding of your heart · any dizziness · did you black out when it started · AND HAS ANYONE IN YOUR FAMILY DIED SUDDENLY, PARTICULARLY YOUNG?**"
+    ],
+    [
+     "3:50",
+     "Airways, anaemia and smoking: **any family history of asthma, eczema or hay fever · have you been unusually tired lately · DO YOU SMOKE, OR VAPE?**"
+    ],
+    [
+     "4:15",
+     "Red flags then **mini-HEADSS, last and brief**: **any weight or appetite loss without trying · how are things at home · any stress at school, anyone giving you a hard time, any bullying · how has your mood been?** **Never lead with anxiety.**"
     ],
     [
      "5:00",
-     "Film ≤1 min: three colours → heart, spine, ★ TRACHEA in the midline 'which matters for how urgently we treat this' → left lung out to the chest wall → right: black shadow between lung and chest wall → 'a pneumothorax'. 'How did air get in?' → two sentences, stop"
+     "**The film in under a minute: three colours → heart, spine, TRACHEA and say it is central and why that matters → the NORMAL side first → the abnormal side → SAY THE WORD PNEUMOTHORAX.** Then two sentences on how it happens — tiny bubbles on the lung surface bursting, commonest in young tall slim people, often during exercise — **and stop.**"
     ],
     [
      "6:00",
-     "Diagnosis + two reasons + 'airway central, not under pressure' → differentials each with a reason against from his own answers → plan: O2, analgesia, reassess; needle/tube if still symptomatic, else observe ~4 h then home with repeat film + appointment → red flags → no flying until cleared, never scuba → 'does that make sense?'"
+     "**Diagnosis with reasons**, then **the differential list, each with a reason against drawn from his own answers**, then **plan and safety-net**: oxygen, analgesia, reassess; intervention if still symptomatic; otherwise observe four hours and home with a repeat film. **Sudden worsening, bad chest pain or feeling faint — tell someone immediately.** **No flying until cleared; never scuba dive.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Examiner, before I begin, may I have the blood pressure, pulse rate, respiratory rate and temperature? I have the oxygen saturation in the stem. → 'He's tachypnoeic and hypoxic, so I'd keep the oxygen running throughout.'",
-    "'Good morning, I'm Dr —. Am I speaking with Jack? I can see you're on oxygen — we'll keep that going. Tell me more about your breathing.' → 'I understand how concerning this must be. Let me ask some questions, we'll work out what's happening and make the best plan together. Some will sound unrelated — with breathlessness this sudden there are a few serious things I need to rule out quickly.'",
-    "Can you describe it — tightness, difficulty getting the breath in, or not getting enough air? ★ Exactly when did it start? Constant or on and off since? Getting worse? Anything make it better or worse? ★ Does rest make it better — and are you breathless at rest, sitting here now? Cough? Noisy breathing or wheeze?",
-    "★ Did you take any knock or injury to the chest — were you tackled or did you land badly? Any pain or swelling in your calves? Long trips or flights? Anyone in the family with blood clots? Any known allergies? Rash or itching anywhere?",
-    "Fevers or chills? Sore throat, runny nose? Travel overseas? Chest pain with this? Racing or pounding heart? Dizziness? Did you black out when it started? ★ And — this one's important — has anyone in your family died suddenly, particularly young?",
-    "Family asthma, eczema, hay fever? Unusually tired lately? ★ Do you smoke — or vape? Lost weight or appetite? How are things at home? Stress at school, anyone giving you a hard time — any bullying? How's your mood been generally?",
-    "★ Film: 'Jack, this is an X-ray of your chest. Three colours — white bone, grey soft tissue, black air. This shadow in the middle is your heart, this is your spine, and this line running down the centre is your main airway. I'm checking that it's sitting in the midline — and it is — because that makes a real difference to how urgently we need to treat this. On your left the lung goes right out to the chest wall, sitting against the inside of the ribs the way it should. But on your right there's a black shadow between the lung and the chest wall — the lung isn't sitting against the ribs any more. That black area is air that's escaped and collected around the lung, and the name we give that is a pneumothorax.'",
-    "'Most often it happens on its own, without any injury. There are tiny bubbles on the surface of the lung that can burst, and air leaks out into the space around it. It's more common in young, tall, slim people, and often during exercise.' — two sentences, stop"
-   ],
    "pefe": [
-    "No PEFE task in Version A — the film replaces it. Doctor-level read if asked: right pneumothorax with a visible visceral pleural line and absent peripheral lung markings, trachea and mediastinum central, no effusion, no rib fracture",
-    "Diagnosis: 'most likely a pneumothorax — air trapped between your lung and your chest wall. Two reasons: it came on very suddenly during exercise, and — the main one — I can see the air collection on your X-ray. Your main airway is central, so it isn't building up under pressure'",
-    "Differentials each with a reason AGAINST: clot on the lung — no travel, no leg swelling, no family clots · severe allergic reaction — no allergies, rash, itch · chest infection — no fever, no cold symptoms · asthma attack — no wheeze, no family asthma · heart — rhythm, or a thickened heart muscle that runs in families — no palpitations, dizziness, blackout, family sudden death · low in blood — not tired",
-    "Plan: keep oxygen, analgesia, reassess; still symptomatic → aspiration/needle or small-bore intercostal catheter (treat by symptoms and stability, NOT size); settles and stable → observe ~4 h → home with repeat film, follow-up appointment, written red flags; safety-net: suddenly worse, bad chest pain, faint → tell someone now; no flying until cleared; never scuba dive; smoking cessation cuts recurrence; 'can I play footy?' → after review and repeat film; 'will it happen again?' → it can, hence follow-up",
-    "If the bell is close: 'pneumothorax' → one reason → 'I considered a clot, allergic reaction, infection, asthma and heart causes — none fit' → oxygen, analgesia, possible drainage, follow-up",
-    "SA regional: discuss with the receiving hospital; MedSTAR 1300 13 12 33 if intervention needed and not available locally; TIS 131 450"
+    "**Stability first — blood pressure, pulse, respiratory rate and temperature — and REACT to them out loud.**",
+    "**The film, four steps, one minute: three colours · heart, spine and THE TRACHEA · the normal side · the abnormal side, named.** Anything longer comes straight out of your diagnosis time.",
+    "**The tracing technique for a poor-quality film**: follow the fine peripheral markings outwards; **where they stop short is the pleural line**; beyond it, uniform blackness with no markings; then compare sides.",
+    "**Tension is a CLINICAL diagnosis** — deviated trachea, hypotension, distended neck veins, severe distress. **Decompress first, image afterwards.**",
+    "Investigations by differential: **CXR and the trachea for pneumothorax · Wells, D-dimer or CTPA for PE · IM adrenaline for anaphylaxis, treat do not investigate · CXR, FBC and CRP for infection · peak flow for asthma · ECG and echocardiography for HOCM, arrhythmia or valvular disease · FBC and iron studies for anaemia.**",
+    "**ECG yes. Spirometry NO** in an acutely breathless or painful patient — unsafe and unobtainable.",
+    "**Do the abdomen and the lower limbs anyway** — a displaced liver edge is relevant in tension physiology, and calf asymmetry argues against PE. Skipping them because they 'aren't respiratory' is a documented miss."
    ],
-   "fails": [
-    "Never mentioning the trachea on the film ★",
-    "Never saying the word 'pneumothorax' ★",
-    "Not asking the acute three first — reaching chest injury/calves/allergies at four minutes ★",
-    "Omitting family history of sudden cardiac death; omitting smoking because he's 18 ★",
-    "Not reacting to SpO2 93% / not asking the other vitals; 'you've overdone it'; reassuring before knowing anything",
-    "Differentials without reasons against; jargon (hyperlucency, pleural line); film over a minute; leading with HEADSS; no plan/safety-net/flying-diving advice"
-   ],
-   "numbers": [
-    "Acute three: pneumothorax · PE · anaphylaxis · signs: reduced expansion, hyper-resonant, absent breath sounds, reduced VR · trachea pushed AWAY + hypotension + distress = tension → needle first, film later",
-    "Treat by symptoms and stability, not size · stable + asymptomatic → observe 4 h → discharge + repeat film + appointment + red flags · symptomatic after analgesia or unstable → pleural intervention VERIFY (BTS/local pathway)",
-    "Needle decompression: 2nd ICS mid-clavicular, just above the 3rd rib — or 5th ICS anterior axillary in adults (chest wall thickness) · intercostal catheter: safe triangle — pec major, lat dorsi, 5th ICS · underwater seal",
-    "Advice: no flying until cleared · never scuba dive again · stop smoking/vaping · ECG yes, spirometry NO in the acute patient",
-    "Variant B tension (24 M after a tackle, BP 82/50, P 132, RR 34, neck veins, trachea to the right, absent BS left): 'that changes everything — treating as tension, no X-ray, call for help, high-flow O2, immediate needle decompression left, cannula left in, then intercostal catheter in the safe triangle, reassess'",
-    "Variant C PE (26 F, pleuritic, 3 days post-flight, combined pill, swollen calf): Wells → straight to CTPA, treat while waiting if no contraindication · Variant D HOCM (19 M, collapse at training, uncle died at 32, exertional tightness): ECG today, echo, urgent cardiology, no competitive exercise until assessed, family screening",
-    "Vitals here: BP 118/72 · P 104 · RR 24 · T 36.6 · SpO2 93% on 6 L · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Primary spontaneous pneumothorax** — the answer",
+     "**Sudden onset mid-exertion**, tall thin young patient, pleuritic pain, breathless at rest",
+     "**Any injury or knock to the chest?**, smoking, build, **THE TRACHEA**",
+     "**CXR, erect film, tracheal position. Tension is clinical** — immediate"
+    ],
+    [
+     "**Tension pneumothorax** — must not miss",
+     "**Trachea deviated AWAY, hypotension, distended neck veins, severe distress**",
+     "Tracheal position — ask it as its own question",
+     "**IMMEDIATE NEEDLE DECOMPRESSION. Do not wait for a film** — immediate"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Calf swelling or pain, long travel, family clotting, **the pill**, immobility, pleuritic pain, haemoptysis",
+     "Calves, travel, clotting history, contraception",
+     "**Wells score, D-dimer, CTPA** — immediate"
+    ],
+    [
+     "**Anaphylaxis**",
+     "Known allergies, rash, itch, lip or tongue swelling, stridor, exposure",
+     "Allergies, rash, itch",
+     "**IM adrenaline — treat, do not investigate** — immediate"
+    ],
+    [
+     "**Hypertrophic cardiomyopathy**",
+     "Exertional symptoms, chest pain, palpitations, dizziness, **syncope**, and the key one — **family history of sudden cardiac death**",
+     "The four cardiac questions plus the family sudden-death question",
+     "**ECG, echocardiography, cardiology referral, no exertion meanwhile** — urgent"
+    ],
+    [
+     "Arrhythmia · valvular disease",
+     "Racing heart, dizziness, loss of consciousness",
+     "Palpitations, dizziness, syncope",
+     "ECG, echocardiography"
+    ],
+    [
+     "Pneumonia or upper respiratory infection",
+     "Fever, chills, sore throat, runny nose, cough; travel for TB",
+     "Fevers, coryza, travel",
+     "CXR, FBC, CRP"
+    ],
+    [
+     "Asthma exacerbation",
+     "Noisy breathing, known triggers, family atopy",
+     "Wheeze, family asthma, eczema, hay fever",
+     "Peak flow; **spirometry later, not acutely**"
+    ],
+    [
+     "Anaemia",
+     "Tiredness, palpitations on exertion, pallor",
+     "Tiredness, pallor",
+     "FBC, iron studies"
+    ],
+    [
+     "Anxiety or panic attack · lung cancer · cystic fibrosis",
+     "Stressors, bullying, exam-related episodes; weight loss; recurrent childhood infections",
+     "Mini-HEADSS; weight and appetite; childhood chest infections",
+     "**Diagnosis of exclusion — organic causes first. Never lead with anxiety**"
+    ]
    ]
   },
   "source": "Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf (Version A — Jack Reid 18, chest X-ray)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never mentioning the trachea on the film — 'this line down the centre is your main airway; it's sitting in the midline, which matters for how urgently we treat this' — the one finding that separates simple from tension",
-   "FAIL — Never saying the word 'pneumothorax', or saying 'hyperlucency' and 'visceral pleural line' to an 18-year-old — three colours, heart, spine, trachea, normal side, abnormal side, name it, under a minute",
-   "FAIL — Running the chronic-breathlessness order and reaching the acute three at four minutes — the word SUDDEN means ask first: a knock or tackle to the chest; calves, travel, family clots; allergies, rash, itch",
-   "FAIL — Omitting 'has anyone in your family died suddenly, particularly young?' — the one sentence that catches hypertrophic cardiomyopathy, the condition that kills young athletes",
-   "FAIL — Deleting the smoking question because he is 18, or skipping the rest question — breathless at rest makes him symptomatic, which drives the management branch; mini-HEADSS last and brief",
-   "FAIL — Differentials without a reason against each drawn from his own answers, and no plan — oxygen and analgesia, then drain if still symptomatic or observe four hours; no flying until cleared, never scuba dive; react to the hypoxia out loud"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-39",
   "cat": "med",
-  "promptAt": 240,
-  "setting": "Your general practice.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Chloe Barrett, 27, presents with sudden onset breathlessness.",
    "There is no X-ray. Observations from the examiner on request."
@@ -12893,86 +13002,178 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes. History 4 min — acute three front-loaded, pill and pregnancy added · PEFE request in a fixed order with the trachea named · diagnosis, differentials with reasons against, plan.",
+  "findings": [
+   [
+    "General appearance",
+    "Ask first: is there respiratory distress, cyanosis, or is she drowsy?"
+   ],
+   [
+    "Vital signs",
+    "Blood pressure, pulse, respiratory rate, temperature and saturation — request them, they are not in the stem"
+   ],
+   [
+    "Chest movements",
+    "REDUCED CHEST EXPANSION ON THE AFFECTED SIDE — the first objective sign"
+   ],
+   [
+    "TRACHEAL POSITION",
+    "CENTRAL. ASK IT AS ITS OWN QUESTION — 'is it central or deviated, and if deviated, in which direction relative to the affected side?' THERE IS NO X-RAY IN THIS VERSION, so the trachea is available ONLY if you ask, and without it you cannot exclude tension"
+   ],
+   [
+    "Percussion note",
+    "HYPER-RESONANT on the affected side — air in the pleural space"
+   ],
+   [
+    "Breath sounds",
+    "ABSENT on the affected side (absent more often than merely reduced)"
+   ],
+   [
+    "Vocal resonance",
+    "REDUCED — this completes the quartet: reduced expansion · hyper-resonant · absent breath sounds · reduced vocal resonance"
+   ],
+   [
+    "Cardiovascular",
+    "JVP not raised, apex not displaced, heart sounds normal, no murmur or gallop — argues against tension and against cardiac causes"
+   ],
+   [
+    "Abdomen and lower limbs",
+    "No tenderness, no masses, no displaced liver edge. NO SIZE DIFFERENCE BETWEEN THE CALVES and no oedema — argues against PE. Do them anyway; skipping them because they 'aren't respiratory' is a documented miss"
+   ],
+   [
+    "Office tests",
+    "ECG yes. SPIROMETRY NO — unsafe and unobtainable in an acutely breathless, painful patient"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the examination, in the order you ask",
+  "must": [
+   "FAIL — A fluent respiratory examination with no tracheal request. Ask it as its own question.",
+   "FAIL — Ordering imaging when the trachea is deviated and she is hypotensive. Decompress first.",
+   "FAIL — Reordering by deleting. Smoking, family sudden death and the red flags still get asked.",
+   "FAIL — Naming the diagnosis without differentials, each with a reason against.",
+   "ASK — She is a woman of reproductive age: the combined pill and pregnancy, in the PE block.",
+   "ASK — Does rest help, and are you breathless at rest? Then: any knock or injury to the chest?"
+  ],
   "back": {
-   "dx": "Primary spontaneous pneumothorax, LEFT, trachea central — same near-all-negative history as Jack (sudden, constant, at rest, dry cough, pleuritic pain; no injury/clots/allergy/fever/cardiac/atopy/smoking), but in a woman the PE block must include the contraceptive pill and pregnancy. Findings (only what you ask for): reduced expansion left, trachea CENTRAL, hyper-resonant left, absent breath sounds left, reduced vocal resonance left; CVS normal; abdomen normal; calves equal. Without asking the tracheal position you cannot exclude tension — that is the discriminating item. Don't skip abdomen and lower limbs 'because they aren't respiratory'; don't request spirometry in an acute patient.",
+   "dx": [
+    "**Primary spontaneous pneumothorax, trachea central** — same diagnosis as the film version, **but the trachea is available only if you ask the examiner for it.**",
+    "**Four minutes of history, not five.** Compress the sweep, **keep the acute three intact**, and accept that you will probably not reach SADMA. **Do not sacrifice the trachea for it.**",
+    "**The examination quartet: reduced expansion · hyper-resonant percussion · absent breath sounds · reduced vocal resonance** — plus **tracheal position**, which is the one that decides the management.",
+    "**She is 27 and female, so the PE block gains two items: the COMBINED ORAL CONTRACEPTIVE PILL and PREGNANCY.** Five seconds, and a genuinely scored item.",
+    "**Acute reorders the list; it does not delete anything.** Smoking still gets asked — **it lives in the COPD box and is a real risk factor for spontaneous pneumothorax and recurrence.** So does **family history of sudden cardiac death**.",
+    "**CORRECTION — management is decided by clinical instability and persistent symptoms, NOT by size on the film.** Old notes teach the old size thresholds.",
+    "**Stable and asymptomatic → observe 4 hours → discharge with a follow-up film, an appointment and red flags. Unstable or still symptomatic after analgesia → pleural intervention regardless of size.** Oxygen if hypoxic, and **analgesia, because pain drives the respiratory rate**.",
+    "**Tension: trachea deviated AWAY, hypotension, distended neck veins, distress → immediate needle decompression, 2nd ICS midclavicular just above the third rib, or 5th ICS anterior axillary in adults — then a definitive intercostal catheter in the SAFE TRIANGLE.**",
+    "**Differentials with a reason against for each**, drawn from her own answers — clot, anaphylaxis, infection, asthma, arrhythmia, hypertrophic cardiomyopathy, anaemia, panic attack. **Panic is a diagnosis of exclusion and goes last.**",
+    "Advice: **no flying until cleared · never scuba dive again · smoking cessation cuts recurrence.** **ECG yes; spirometry no.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals → react; WIPE; open; acknowledge; signpost. 4-minute history: describe, exactly when, constant, worse, modifiers, rest + at rest, cough, wheeze"
+     "**'Examiner, may I have the blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation?'** Then WIPE, open question, address the concern, and **signpost the pace** — some questions will sound unrelated, but sudden breathlessness has a few serious causes to rule out quickly."
     ],
     [
-     "1:00",
-     "★ Acute three + the female additions: chest injury · calves, travel, family clots, ★ contraceptive pill (which one), ★ LMP / could you be pregnant · allergies, rash, itch"
+     "0:35",
+     "Explore: **describe it · EXACTLY when did it start · constant or on and off · getting worse · better or worse with what · DOES REST HELP, AND ARE YOU BREATHLESS AT REST · any cough · any noisy breathing or wheeze?**"
     ],
     [
-     "2:00",
-     "Fever/coryza/travel; chest pain, palpitations, dizziness, syncope, ★ family sudden death; atopy; tired; ★ smoke/vape; weight; brief HEADSS if time"
+     "1:30",
+     "**THE ACUTE THREE, front-loaded — and for a woman of reproductive age the clot block gains two items.** **Pneumothorax — did you take any knock or injury to the chest, were you tackled or did you land badly? · Clot — any pain or swelling in your calves? any long trips or flights? anyone in the family with blood clots? · Allergy — do you have any known allergies? any rash or itching anywhere?** **Plus: are you on the contraceptive pill, and is there any chance you could be pregnant?**"
+    ],
+    [
+     "2:30",
+     "Infection: **fevers or chills · sore throat or runny nose · travel overseas.** Then cardiac: **chest pain · racing heart · dizziness · did you black out · HAS ANYONE IN YOUR FAMILY DIED SUDDENLY, PARTICULARLY YOUNG?**"
+    ],
+    [
+     "3:20",
+     "Airways, anaemia, smoking and red flags, compressed: **family asthma, eczema or hay fever · unusually tired · DO YOU SMOKE OR VAPE · any weight or appetite loss without trying?** Then a brief **mini-HEADSS** if there is time — **it goes last, never first.**"
     ],
     [
      "4:00",
-     "'Apologies Chloe, I'll just speak with my examiner for a moment' → ordered request incl. ★ tracheal position → interpret aloud → turn back"
+     "**'Apologies Chloe, I'll just speak with my examiner for a moment.'** Then the full request in order: **general appearance · vital signs · symmetrical chest movements · WHAT IS THE TRACHEAL POSITION · percussion note · breath sounds and added sounds · vocal resonance · JVP, apex, heart sounds, murmur or gallop · abdomen for tenderness, masses and liver edge · lower limbs for calf size difference or oedema · and may I have an ECG?**"
     ],
     [
      "5:30",
-     "Diagnosis with reasons (sudden on exertion; reduced expansion, hyper-resonance, absent breath sounds on the left; trachea central so not under pressure) → differentials with reasons against → plan: ED/hospital for CXR, oxygen, analgesia, observe vs intervene; no flying/scuba; safety-net"
+     "**Convert the findings into the diagnosis out loud**, and **state the tracheal position explicitly** — central means simple, and simple means the management branch is symptoms and stability."
+    ],
+    [
+     "6:00",
+     "**Diagnosis with reasons**, then **the differential list, each with a reason against**, then **plan and safety-net** — oxygen, analgesia, reassess, intervention if still symptomatic, otherwise four hours of observation and discharge with a repeat film. **No flying until cleared; never scuba dive.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Examiner, before I begin, may I have the blood pressure, pulse rate, respiratory rate, temperature and saturation?",
-    "★ Exactly when did it start? Does rest make it better — and are you breathless at rest now? Did you take any knock or injury to the chest? Any pain or swelling in your calves, long trips or flights, family blood clots? ★ Are you on the contraceptive pill — which one? When was your last period, any chance you could be pregnant? Any known allergies, rash or itching?",
-    "Fevers, chills, sore throat, runny nose, travel? Chest pain, racing heart, dizziness, blackout? ★ Has anyone in your family died suddenly, particularly young? Family asthma/eczema/hay fever? Unusually tired? ★ Do you smoke or vape?",
-    "★ 'Examiner: general appearance — respiratory distress, cyanosis, drowsy? Vital signs. Respiratory — on inspection and palpation, are chest movements symmetrical? What is the tracheal position? Percussion note? Breath sounds and added sounds? Vocal resonance? Cardiovascular — raised JVP, displaced apex, normal first and second heart sounds, any murmur or gallop? Abdomen — swelling, redness, tenderness, masses, palpable liver edge? Lower limbs — any size difference between the calves, or oedema? Office tests — may I have an ECG?'",
-    "★ Interpretation: 'Reduced expansion, hyper-resonance, absent breath sounds and reduced vocal resonance on the left, with a central trachea and normal haemodynamics — that is a left pneumothorax without tension.'",
-    "'Chloe, most likely you have a pneumothorax — air trapped between your lung and your chest wall. It came on very suddenly, and on examination the left side of your chest is moving less, sounds hollow, and I can't hear breath sounds there. Your windpipe is central, which tells me it isn't building up under pressure.'",
-    "'I considered a clot on the lung — no travel, no leg swelling, and your calves are equal; a severe allergic reaction — no allergies or rash; a chest infection — no fever; asthma — no wheeze; heart causes including a thickened heart muscle that runs in families — no palpitations, blackouts or family sudden death; and being low in blood — you're not tired.'",
-    "'You need a chest X-ray today to confirm it and measure it, so I'm sending you to the emergency department now with oxygen and pain relief — I'll ring ahead. If you're still short of breath there they'll let the air out with a small tube or needle; if you settle they'll watch you a few hours and see you back with a repeat film. If your breathing suddenly gets worse, you get severe chest pain or feel faint, tell someone immediately. Don't fly until you've been cleared, and you shouldn't scuba dive after this.'"
-   ],
    "pefe": [
-    "Expected findings: reduced expansion left · trachea central · hyper-resonant left · absent breath sounds left · reduced vocal resonance left · CVS normal · abdomen normal · calves equal · ECG available",
-    "If the examiner gives 'trachea deviated to the right, BP 82/50, distended neck veins' → tension: no X-ray, call for help, high-flow O2, immediate needle decompression left (2nd ICS MCL or 5th ICS anterior axillary), cannula left in, then intercostal catheter in the safe triangle with underwater seal, reassess; GP setting → 000 and MedSTAR 1300 13 12 33 while decompressing",
-    "Disposition from GP: transfer to ED for CXR (erect PA ± expiratory), not observation in the practice; ambulance if hypoxic/symptomatic; ring ahead",
-    "Traps: not asking the tracheal position · skipping abdomen and lower limbs · requesting spirometry · forgetting the pill and pregnancy in the PE block",
-    "SA regional: nearest ED with chest drain capability; MedSTAR for retrieval if intervention not available locally; TIS 131 450",
-    "Disposition from GP — Transfer to ED for CXR (erect PA ± expiratory), not observation in the practice; ambulance if hypoxic/symptomatic; ring ahead",
-    "Traps — Not asking the tracheal position · skipping abdomen and lower limbs · requesting spirometry · forgetting the pill and pregnancy in the PE block",
-    "SA regional — Nearest ED with chest drain capability; MedSTAR for retrieval if intervention not available locally; TIS 131 450"
+    "**There is no X-ray in this version.** The tracheal position exists only if you ask for it, and **without it you cannot exclude tension**.",
+    "Request it in this order: **general appearance — distress, cyanosis, drowsiness · vital signs including saturation · inspection and palpation, are chest movements symmetrical · WHAT IS THE TRACHEAL POSITION · percussion note · breath sounds and added sounds · vocal resonance · cardiovascular — JVP, apex, heart sounds, murmur or gallop · abdomen — tenderness, masses, palpable liver edge · lower limbs — calf size difference or oedema · office tests — may I have an ECG?**",
+    "**If the answer is 'deviated to the right with a left-sided pneumothorax', STOP EXAMINING AND SAY SO** — that changes the management from observation to emergency decompression.",
+    "**ECG yes, spirometry no.** Spirometry is unsafe and unobtainable in an acutely breathless or painful patient.",
+    "**Do the abdomen and lower limbs.** Tenderness, masses and a displaced liver edge are relevant in tension physiology; calf asymmetry argues against PE.",
+    "Investigations by differential: **CXR and tracheal position · Wells, D-dimer or CTPA · IM adrenaline for anaphylaxis, treat do not investigate · CXR, FBC, CRP · peak flow · ECG and echocardiography · FBC and iron studies.**"
    ],
-   "fails": [
-    "Not asking the tracheal position — cannot exclude tension ★",
-    "Not asking the acute three in the first minute; not asking the pill and pregnancy ★",
-    "Omitting family sudden cardiac death; omitting smoking ★",
-    "Requesting spirometry in an acutely breathless patient; skipping abdomen and legs",
-    "Turning to the examiner without excusing yourself; not interpreting the findings aloud; not turning back",
-    "Differentials without reasons against; no transfer plan; no red flags; no flying/diving advice"
-   ],
-   "numbers": [
-    "Pneumothorax signs: reduced expansion · hyper-resonant · absent breath sounds · reduced VR · trachea central (simple) vs pushed away (tension)",
-    "Tension = clinical diagnosis: distress, hypotension, tachycardia, distended neck veins, deviated trachea → needle first, film later",
-    "Needle: 2nd ICS MCL just above the 3rd rib, or 5th ICS anterior axillary line · ICC: safe triangle (pec major, lat dorsi, 5th ICS)",
-    "Female PE block: combined pill/patch/ring (oestrogen), pregnancy/postpartum, plus calves, travel, surgery, family clots",
-    "Advice: no flying until cleared · never scuba dive · stop smoking/vaping · recurrence ~30% after a first primary spontaneous pneumothorax VERIFY",
-    "Variants C (PE) and D (HOCM) as on MED-38 · MedSTAR 1300 13 12 33 · 000"
+   "ddx": [
+    [
+     "**Primary spontaneous pneumothorax** — the answer",
+     "**Sudden onset mid-exertion**, tall thin young patient, pleuritic pain, breathless at rest",
+     "**Any injury or knock to the chest?**, smoking, build, **THE TRACHEA**",
+     "**CXR, erect film, tracheal position. Tension is clinical** — immediate"
+    ],
+    [
+     "**Tension pneumothorax** — must not miss",
+     "**Trachea deviated AWAY, hypotension, distended neck veins, severe distress**",
+     "Tracheal position — ask it as its own question",
+     "**IMMEDIATE NEEDLE DECOMPRESSION. Do not wait for a film** — immediate"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Calf swelling or pain, long travel, family clotting, **the pill**, immobility, pleuritic pain, haemoptysis",
+     "Calves, travel, clotting history, contraception",
+     "**Wells score, D-dimer, CTPA** — immediate"
+    ],
+    [
+     "**Anaphylaxis**",
+     "Known allergies, rash, itch, lip or tongue swelling, stridor, exposure",
+     "Allergies, rash, itch",
+     "**IM adrenaline — treat, do not investigate** — immediate"
+    ],
+    [
+     "**Hypertrophic cardiomyopathy**",
+     "Exertional symptoms, chest pain, palpitations, dizziness, **syncope**, and the key one — **family history of sudden cardiac death**",
+     "The four cardiac questions plus the family sudden-death question",
+     "**ECG, echocardiography, cardiology referral, no exertion meanwhile** — urgent"
+    ],
+    [
+     "Arrhythmia · valvular disease",
+     "Racing heart, dizziness, loss of consciousness",
+     "Palpitations, dizziness, syncope",
+     "ECG, echocardiography"
+    ],
+    [
+     "Pneumonia or upper respiratory infection",
+     "Fever, chills, sore throat, runny nose, cough; travel for TB",
+     "Fevers, coryza, travel",
+     "CXR, FBC, CRP"
+    ],
+    [
+     "Asthma exacerbation",
+     "Noisy breathing, known triggers, family atopy",
+     "Wheeze, family asthma, eczema, hay fever",
+     "Peak flow; **spirometry later, not acutely**"
+    ],
+    [
+     "Anaemia",
+     "Tiredness, palpitations on exertion, pallor",
+     "Tiredness, pallor",
+     "FBC, iron studies"
+    ],
+    [
+     "Anxiety or panic attack · lung cancer · cystic fibrosis",
+     "Stressors, bullying, exam-related episodes; weight loss; recurrent childhood infections",
+     "Mini-HEADSS; weight and appetite; childhood chest infections",
+     "**Diagnosis of exclusion — organic causes first. Never lead with anxiety**"
+    ]
    ]
   },
   "source": "Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf (Version B — Chloe Barrett 27, examination from the examiner, no X-ray)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Acute_SOB_Pneumothorax_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Expected findings",
-    "Reduced expansion left · trachea central · hyper-resonant left · absent breath sounds left · reduced vocal resonance left · CVS normal · abdomen normal · calves equal · ECG available"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — Not asking the tracheal position from the examiner — without it you cannot exclude tension, and there is no X-ray in this version",
-   "FAIL — Forgetting the contraceptive pill (which one), last period and pregnancy in a woman with sudden breathlessness — the PE questions change with the sex of the patient",
-   "FAIL — Skipping the abdomen and the lower limbs because they 'aren't respiratory', and requesting spirometry in an acutely breathless patient — ask for an ECG instead",
-   "SAY — 'Apologies Chloe, I'll just speak with my examiner for a moment' → general appearance, vitals, chest movements, tracheal position, percussion, breath sounds, vocal resonance, JVP and heart sounds, abdomen, calves, ECG → interpret: 'reduced expansion, hyper-resonance, absent breath sounds and reduced vocal resonance on the left with a central trachea — a simple pneumothorax'",
-   "FAIL — Front-loading the acute three: chest injury; calves, travel, family clots; allergies and rash — then family sudden cardiac death and smoking regardless of age",
-   "SAY — 'You need a chest X-ray today to confirm it and measure it, so I'm sending you to the emergency department now with a letter' — and if the trachea were deviated with hypotension: needle first, film later"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-40",
