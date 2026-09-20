@@ -64,7 +64,9 @@
       border:1.5px solid var(--line);border-right:0;border-radius:12px 0 0 12px;box-shadow:0 2px 14px rgba(0,0,0,.09);
       padding:10px 8px;width:58px;text-align:center;cursor:pointer;font-variant-numeric:tabular-nums;transition:width .18s}
   .bk[hidden]{display:none}
-  .bk .bkn{font-size:22px;font-weight:700;color:var(--bad);line-height:1}
+  .bk .bkn{font-size:22px;font-weight:700;color:var(--ink);line-height:1}
+  .bk .bkn.bad{color:var(--bad)} .bk .bkn.ok{color:var(--ok)}
+  .bk .bkc{font-size:10px;font-weight:700;color:var(--bad);margin-top:4px;line-height:1.2}
   .bk .bkl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin-top:3px}
   .bk .ticks{display:flex;gap:2px;justify-content:center;align-items:flex-end;margin-top:8px}
   .bk .ticks i{width:4px;background:var(--line);border-radius:2px;display:block;position:relative}
@@ -73,6 +75,7 @@
   .bk .panel{display:none} .bk.open .panel{display:block} .bk.open .mini{display:none}
   .bk h4{margin:0 0 3px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
   .bk .tot{font-size:30px;font-weight:700;color:var(--bad);line-height:1.05}
+  .bk .tot.ok{color:var(--ok)}
   .bk .tot small{font-size:13px;font-weight:600;color:var(--ink-3)}
   .bk .paid{font-size:12.5px;color:var(--ok);font-weight:600;margin-top:3px}
   .bk .hint{font-size:11.5px;color:var(--ink-3);margin-top:6px;line-height:1.35}
@@ -336,40 +339,51 @@ function markToday(){
 }
 function backlogInfo(){
   const g=dailyGoal(), t=today(), from=opts.debtFrom||t;
-  let running=0, rows=[], ms=dayMs(from), guard=0;
+  let carried=0, rows=[], ms=dayMs(from), guard=0;
   while(guard++<600){
     const d=localDay(new Date(ms)); if(d>=t) break;
-    const n=days[d]||0, short=Math.max(0,g-n);
-    running=Math.max(0,running+(g-n));
-    rows.push([d,n,short]);
+    const n=days[d]||0;
+    carried=Math.max(0,carried+(g-n));
+    rows.push([d,n,Math.max(0,g-n)]);
     ms+=86400000;
   }
-  const surplus=Math.max(0,doneToday()-g);
-  return {total:running, net:Math.max(0,running-surplus), surplus, rows:rows.slice(-14)};
+  const n=doneToday(), todayLeft=Math.max(0,g-n), surplus=Math.max(0,n-g);
+  /* what is owed at this moment: everything carried in, less anything paid back today,
+     plus whatever is still outstanding on today's target */
+  return {carried:Math.max(0,carried-surplus), todayLeft, doneToday:n, surplus,
+          owed:Math.max(0,carried-surplus)+todayLeft, rows:rows.slice(-14)};
 }
 const WD=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 function backlogHTML(b){
-  const g=dailyGoal();
+  const g=dailyGoal(), clear=b.owed===0;
   const last=b.rows.slice(-7);
   const ticks=(last.length?last:[["",0,0]]).map(r=>{
     const h=Math.max(2,Math.round(Math.min(1,(r[1]||0)/g)*22));
     return `<i style="height:22px"><span style="height:${h}px"></span></i>`;
   }).join("");
   const lbl=d=>WD[new Date(dayMs(d)).getUTCDay()]+" "+d.slice(8);
-  return `<div class="mini"><div class="bkn">${b.net}</div><div class="bkl">behind</div><div class="ticks">${ticks}</div></div>
-  <div class="panel"><h4>Backlog &middot; Adelaide</h4>
-    <div class="tot">${b.net} <small>station${b.net===1?"":"s"} owed</small></div>
-    ${b.surplus?`<div class="paid">&minus;${b.surplus} paid back today</div>`:""}
-    <table>${b.rows.slice().reverse().map(r=>`<tr><td class="d">${lbl(r[0])}</td><td>${r[1]} / ${g}</td><td class="s ${r[2]?"":"z"}">${r[2]?"+"+r[2]:"clear"}</td></tr>`).join("")}</table>
+  return `<div class="mini">
+      <div class="bkn${clear?" ok":(b.carried?" bad":"")}">${clear?"&#10003;":b.owed}</div>
+      <div class="bkl">${clear?"clear":"to clear"}</div>
+      ${b.carried?`<div class="bkc">${b.carried} carried</div>`:""}
+      <div class="ticks">${ticks}</div></div>
+  <div class="panel"><h4>Still to clear &middot; Adelaide</h4>
+    <div class="tot${clear?" ok":""}">${b.owed} <small>station${b.owed===1?"":"s"}</small></div>
+    <table>
+      <tr><td class="d">Today</td><td>${b.doneToday} / ${g}</td><td class="s ${b.todayLeft?"":"z"}">${b.todayLeft?"+"+b.todayLeft:"done"}</td></tr>
+      ${b.carried?`<tr><td class="d">Carried in</td><td>from earlier days</td><td class="s">+${b.carried}</td></tr>`:""}
+    </table>
+    ${b.surplus?`<div class="paid">&minus;${b.surplus} over target today, paying the pile down</div>`:""}
+    ${b.rows.length?`<h4 style="margin-top:12px">Past days</h4><table>${b.rows.slice().reverse().map(r=>`<tr><td class="d">${lbl(r[0])}</td><td>${r[1]} / ${g}</td><td class="s ${r[2]?"":"z"}">${r[2]?"+"+r[2]:"clear"}</td></tr>`).join("")}</table>`:`<p class="hint">Days that fall short start stacking up here from tomorrow.</p>`}
     <p class="hint">Days over the target pay the pile down. Wiping the slate starts the count again from today.</p>
     <div class="bkbtn"><button id="bkClear">Wipe the slate</button><button id="bkClose">Close</button></div></div>`;
 }
 function paintBacklog(){
   const el=document.getElementById("bk"); if(!el) return;
   const b=backlogInfo();
-  if(!b.total && !bkOpen){ el.hidden=true; el.className="bk"; el.innerHTML=""; document.body.classList.remove("hasbk"); return; }
-  el.hidden=false; el.className="bk"+(bkOpen?" open":""); document.body.classList.add("hasbk");
+  el.hidden=false; el.className="bk"+(bkOpen?" open":"");
   el.innerHTML=backlogHTML(b);
+  document.body.classList.add("hasbk");
 }
 
 /* ===================== Cross-device sync (private GitHub gist) =====================
@@ -699,6 +713,7 @@ function render(){
   app.querySelectorAll(".rate button").forEach(b=>b.onclick=()=>rate(b.dataset.r));
   on("gear",openDrawer);
   updateTimerUI();
+  paintBacklog();
 }
 function fmtIv(p,r){
   let {ease,interval}=p, iv;
