@@ -139,6 +139,15 @@
   .must h3{margin:0 0 6px;color:#b00000;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
   .must ol{margin:0;padding-left:22px}
   .must li{color:#b00000;font-weight:700;font-size:15.5px;line-height:1.45;margin:4px 0}
+  .mnem{border:2px solid #2563eb;border-radius:10px;padding:10px 14px;margin:0 0 14px;background:#eff6ff}
+  .mnem h3{margin:0 0 6px;color:#1d4ed8;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+  .mnem table{width:100%;border-collapse:collapse;font-size:14px}
+  .mnem th,.mnem td{border-top:1px solid #bfdbfe;padding:5px 7px;vertical-align:top;text-align:left}
+  .mnem tr:first-child th,.mnem tr:first-child td{border-top:0}
+  .mnem th{width:1%;white-space:nowrap;color:#1d4ed8;font-weight:800;font-size:13.5px;letter-spacing:.02em;padding-left:0}
+  .mnem td{color:#12243a;line-height:1.5}
+  .mnem td b{color:#1d4ed8}
+  .mnem .mnote{font-size:12.5px;color:#3b5573;margin:8px 0 0;line-height:1.45}
   .hl{background:#fff3b0;color:#b00000;font-weight:700;border-radius:3px;padding:0 3px}
   .dx{font-family:Georgia,serif;font-size:18px;line-height:1.4;margin:0}
   .dxlead{font-family:Georgia,serif;font-size:18px;line-height:1.38;margin:0 0 9px;font-weight:600;color:var(--ink)}
@@ -566,6 +575,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
         ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
         ${!V2&&c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
         <h3>Diagnosis</h3>${(()=>{const p=Array.isArray(b.dx)?b.dx.filter(Boolean):points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${escb(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${escb(x)}</li>`).join("")}</ul>`:"");})()}
