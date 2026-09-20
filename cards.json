@@ -4640,7 +4640,6 @@
   "id": "OG-24",
   "cat": "og",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "Your next patient is a 24-year-old woman who has presented for routine antenatal care. She has had a positive home pregnancy test."
   ],
@@ -4649,82 +4648,220 @@
    "Physical examination findings will be given to you on a card",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "Eight minutes. General practice. The examination card is handed over after the history.",
   "back": {
-   "dx": "Rheumatic mitral stenosis, asymptomatic, at 8–10 weeks in a planned first pregnancy. Hidden: childhood murmur after fever and migratory joint pain, monthly injections for years, stopped at ~15, never followed up — she mentions the murmur only when asked about medical conditions. Card: pulse 88 regular, BP 112/70, JVP not raised, tapping undisplaced apex, loud S1, opening snap, low-pitched rumbling MID-DIASTOLIC murmur at the apex, bell, left lateral, held expiration, presystolic accentuation; chest clear, no oedema. Discriminating issue: say out loud that no diastolic murmur is normal in pregnancy, before committing. Hidden fear: being told to end the pregnancy.",
+   "dx": [
+    "**Rheumatic mitral stenosis, previously undiagnosed or lost to follow-up, presenting in early pregnancy.** It is **a timing question dressed as an obstetrics case** — everything else is scaffolding around whether you can tell a systolic murmur from a diastolic one.",
+    "**The sentence to write on your palm: 'NO DIASTOLIC MURMUR IS PHYSIOLOGICAL IN PREGNANCY.'** Even if the site and quality desert you under pressure, that one sentence stops you calling a pathological murmur normal. **Say it out loud BEFORE you commit to the diagnosis.**",
+    "**Decoding the card, item by item**: **mid-diastolic** — after S2, in the filling phase · **low-pitched and rumbling** — low-velocity flow across a narrow orifice, heard with the **bell** · **apex, 5th intercostal space midclavicular line** — the mitral area · **loud S1** — thickened leaflets still wide open when systole begins, slamming shut · **opening snap** — the stiff leaflets opening · **tapping apex** — a palpable S1, not a displaced ventricle · **presystolic accentuation** — atrial contraction, **which disappears once she goes into atrial fibrillation**.",
+    "**Why pregnancy unmasks it.** She has lived with the valve for twenty years because her heart had time to fill. **Plasma volume rises 40–50% and cardiac output 30–50%**, with a resting pulse about 15 beats faster — **so diastole shortens exactly when she needs it to lengthen**. Risk peaks in the **late second trimester, in labour, and in the first 48 hours after birth**.",
+    "**Severity is the only branch point, and it comes from the echocardiogram. Normal valve area about 4–6 cm² · mild above 1.5 cm², gradient under 5 mmHg · moderate 1.0–1.5 cm², gradient 5–10 · severe below 1.0 cm², gradient above 10.** VERIFY",
+    "CORRECTION — **the extra sound in mitral stenosis is a loud S1 and an opening snap, not a gallop.** **An S3 is a feature of volume overload and a dilated, failing ventricle — not of a tight mitral valve, where the ventricle is UNDER-filled.** If challenged: **'an S3 would make me think about a dilated cardiomyopathy or mitral regurgitation rather than stenosis.'**",
+    "CORRECTION — two naming slips. **'Constrictive cardiomyopathy' is not a category** — the cardiomyopathies are **dilated, hypertrophic and restrictive**; constrictive pericarditis is a pericardial disease. **In pregnancy add peripartum cardiomyopathy.** And the procedure is **percutaneous balloon mitral valvuloplasty** (balloon mitral commissurotomy), **not 'percutaneous valve surgery'** — say it in full.",
+    "**Drugs and prophylaxis. Metoprolol, not atenolol** — atenolol is avoided in pregnancy because of fetal growth restriction. **The aim is to slow the heart and lengthen diastole, not to lower the blood pressure.** **If she develops atrial fibrillation: low molecular weight heparin in pregnancy** (outside pregnancy, rheumatic mitral stenosis with AF is a **warfarin** indication, **not a DOAC** one). **Restart secondary prophylaxis — benzathine benzylpenicillin every 21–28 days, not strictly 'monthly'** — duration set by valve severity, and safe in pregnancy. VERIFY. **Diuretics cautiously** for congestive symptoms. **Endocarditis prophylaxis is NOT routine** for isolated rheumatic mitral stenosis under current Australian guidance.",
+    "**The birth is a bigger haemodynamic insult than the pregnancy.** Pain and contractions raise heart rate and output, and **the uterus auto-transfuses about half a litre immediately after birth**. **Vaginal birth with early regional analgesia and an assisted second stage** is generally preferred; **caesarean for obstetric indications or specific severe disease**. Keep her **sitting up**, avoid fluid overload, and give **oxytocin as a slow infusion rather than a bolus** — a bolus causes vasodilatation and reflex tachycardia. **Excellent pain relief is a cardiac intervention here, not a comfort measure.** **Balloon valvuloplasty, if needed, is best done in the second trimester with abdominal shielding.**",
+    "**Ask the equity question — 'do you identify as Aboriginal or Torres Strait Islander?'** Acute rheumatic fever and rheumatic heart disease fall far more heavily on Aboriginal and Torres Strait Islander communities, and it changes **both the pre-test probability and the pathway**. SA: no local echo from an MM5 practice — refer through the **Yorke and Northern LHN** to cardiology; **PATS** covers metropolitan echo and cardiology travel, and **the travel is the barrier that stops rural women attending**. Moderate or severe disease means birth at a **tertiary centre with adult cardiac services — RAH or TQEH with the WCH — planned well in advance, never as an emergency transfer**. **MedSTAR 1300 13 12 33**, in utero wherever safe. **Check the state rheumatic heart disease register** so recall for prophylaxis actually happens; **Closing the Gap PBS**; **TIS National 131 450**."
+   ],
    "plan": [
     [
-     "0:00–2:30",
-     "Ordinary antenatal history: planned? → congratulate; five Ps one per turn; medical conditions/medication → she says 'murmur' → STOP the five Ps"
+     "0:00",
+     "WIPE, confirm identity, **'how can I help you today?'** She has a positive home test and has come for the routine checks. **'Was this a planned pregnancy?'** — and only then **'congratulations, that must be exciting for you and your partner.'** Signpost."
     ],
     [
-     "2:30–4:00",
-     "The murmur ladder: when diagnosed? treatment? (if vague: 'antibiotics for a long time, or injections?') regular follow-up? ever caused problems? → complications hunt: chest pain, SOB exertion, leg swelling, orthopnoea/PND/pillows, palpitations, haemoptysis"
+     "0:30",
+     "**The five Ps, one question per turn.** **Periods** — when was your last period, are your cycles regular. **Pregnancy symptoms** — any tiredness, any nausea or vomiting, **how often are you vomiting** (once a day on some days is normal). **Partner** — stable relationship, supportive, how are things at home, ever told you had an STI."
     ],
     [
-     "4:00–4:45",
-     "Finish the frame: Aboriginal or Torres Strait Islander?, family history, diet/exercise/alcohol/smoking, mood; 'I'd particularly like to listen to your heart' → card"
+     "1:30",
+     "**Previous pregnancies** — is this your first. **Pap** — up to date with cervical screening. Then the question that turns the case: **'do you have any medical conditions, or are you taking any medication?'**"
     ],
     [
-     "4:45–5:15",
-     "Read the card aloud — pulse regular, BP normal, chest clear, no swelling; extra sound at the bottom left of the heart 'at a particular point in the heartbeat'"
+     "2:30",
+     "**She says 'when I was younger, my GP told me I have a murmur.' STOP THE FIVE PS.** Ploughing on through the remaining questions fails the reasoning domain. **Acknowledge, park the rest, and run the four questions.**"
     ],
     [
-     "5:15–8:00",
-     "Diagnosis in plain words (gateway, narrowed, rheumatic fever fits); some murmurs are normal in pregnancy but come at a different point — yours is not one; her questions honestly; differentials in eight groups ending with why the pregnancy murmur doesn't fit; echo first, then ECG, joint clinic; safety-net"
+     "2:40",
+     "**The four questions, one per turn: 1. when were you diagnosed · 2. what treatment did you have · 3. are you having follow-up · 4. has it ever caused any problems.** In this station **the answers to one, two and four ARE the diagnosis**."
+    ],
+    [
+     "3:00",
+     "**When she is vague about treatment — 'I don't really remember' — PROMPT.** **'Do you remember having antibiotics for a long time, or injections?'** *'Oh — yes, injections every month for years. I hated them.'* **Ask the open question first, the closed one second. If you never prompt, she never remembers.**"
+    ],
+    [
+     "3:20",
+     "**The rheumatic fever thread, directly**: **'do you remember what led to it being found — were you unwell at the time?' · 'did you have a bad sore throat before that?' · 'did you have fever and painful swollen joints that moved from joint to joint?' · 'any jerky movements you couldn't control, or a rash?'** Then **'when did the injections stop?'** — fifteen, and nobody chased her up. **Do not criticise the previous doctor** — 'we'll get it properly checked now.'"
+    ],
+    [
+     "3:50",
+     "**Complications — you are hunting heart failure AND atrial fibrillation**: **any chest pain · any breathlessness on exertion · any swelling in your legs · any breathlessness lying flat or waking you at night, how many pillows · ANY RACING OR FLUTTERING OF YOUR HEART · have you ever coughed up blood.** She is asymptomatic apart from being puffed running for the bus — **explore that once, then move on**."
+    ],
+    [
+     "4:20",
+     "**'Do you identify as Aboriginal or Torres Strait Islander?'** Then close the frame: **family history of heart conditions, sudden death or genetic conditions · diet, exercise tolerance, alcohol, smoking, other drugs · mood and coping.**"
+    ],
+    [
+     "4:45",
+     "**'I'd like to examine you now — and I'd particularly like to listen to your heart.'** Take the card."
+    ],
+    [
+     "5:00",
+     "**Read the card out loud before you commit**: pulse regular at 88, blood pressure normal, chest clear, no swelling — **'but when I listened to your heart I could hear an extra sound at the bottom left of the heart, and it comes at a particular point in the heartbeat.'** **You need not say 'diastolic' to her, but you must show you noticed it.**"
+    ],
+    [
+     "5:30",
+     "**The diagnosis, in plain words. Gateway, not valve. Narrowing, not stenosis.** **'There is a gateway in your heart that we call the mitral valve. In your case that gateway has become narrowed, so blood has to squeeze through a smaller opening than it should.'** Then link it: **'this is usually the long-term damage from a throat infection in childhood — rheumatic fever — which fits with the fever and sore joints you had, and the injections afterwards.'**"
+    ],
+    [
+     "6:00",
+     "**Say the rule to her, in her language**: **'some heart murmurs are normal in pregnancy, because the heart is pumping much more blood than usual. But those normal ones come at a different point in the heartbeat from yours. Yours is not one of the normal ones.'**"
+    ],
+    [
+     "6:20",
+     "**Answer the three questions she will ask, in order.** **'Is that serious?'** — important rather than an emergency; nothing is going wrong today. **'Is my baby going to be all right?'** — most women with this have a healthy pregnancy; what matters is how narrow it is. **'Do I have to stop the pregnancy?'** — **'nothing I've found today says that.'** **Do not over-promise and do not panic.**"
+    ],
+    [
+     "6:50",
+     "**The differentials, in eight named groups, nine seconds each**: other valve problems · congenital heart disease · cardiomyopathies and heart failure · irregular rhythms · infection on a damaged valve · anaemia · overactive thyroid · **and the normal murmur of pregnancy — finishing with WHY it does not fit, because it comes at a different point in the heartbeat.** **That closing sentence is the highest-scoring moment in the task. If you are short of time, cut examples, never groups.**"
+    ],
+    [
+     "7:30",
+     "**Echocardiogram FIRST**, then ECG, then bloods; **referral to a joint obstetric and cardiology clinic**; flag that the **prophylaxis injections need specialist review**. Safety-net: **breathless at rest · breathless lying flat · heart racing · coughing up blood — same day.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Was this a planned pregnancy? → congratulations",
-    "LMP, regular, tiredness, nausea/vomiting (how many times), relationship/support/home, STI, first pregnancy, cervical screening",
-    "Do you have any medical conditions, or take any medication? → 'murmur' → Do you remember when you were diagnosed? (which joints, did it move?) Any treatment? → Antibiotics for a long time, or injections? When did they stop? Regular follow-up? Ever caused problems?",
-    "Chest pain? Shortness of breath on exertion (explore 'not fit' once)? Leg swelling? Breathless at night or lying flat — pillows? Racing or fluttering heart? Ever coughed up blood?",
-    "Do you identify as Aboriginal or Torres Strait Islander? Family heart or genetic conditions? Diet, exercise, alcohol, smoking, drugs? Mood and coping? — hidden agenda at ~7:00: 'are you going to tell me I can't have this baby?'"
-   ],
    "pefe": [
-    "Card read aloud, then: 'I think you have a condition called mitral stenosis. There is a gateway in your heart called the mitral valve; that gateway has become narrowed… usually long-term damage from a throat infection in childhood — rheumatic fever — which fits the fever, sore joints and the injections'",
-    "'Some heart murmurs are normal in pregnancy, but those come at a different point in the heartbeat from yours. Yours is not one of the normal ones.'",
-    "Her questions: serious? — important rather than an emergency · the baby? — most women have a healthy pregnancy; the scan tells us how narrow · stop the pregnancy? — nothing found today says that; scan first · why not told? — can stay quiet for years, pregnancy strains the heart · operation? — most don't need one; keyhole option if severe",
-    "Differentials in groups (one example each): other valves (aortic) · congenital · cardiomyopathy/heart failure · irregular rhythms (why the ECG) · infection on the valve · anaemia · overactive thyroid · the normal pregnancy murmur — different point in the heartbeat, so doesn't explain yours",
-    "Plan: echocardiogram (severity, function) then ECG (AF — the complication that changes management), FBC, TFT; cardiology + obstetrics joint clinic, birth planned at a tertiary centre; safety-net: breathless at rest, lying flat, racing heart, coughing blood — same day",
-    "What it means — MITRAL STENOSIS — 'a gateway in your heart called the mitral valve has become narrowed', usually long-term damage from a childhood throat infection (rheumatic fever), which fits the fever, sore joints and the injections",
-    "How the findings arrive — READ ALOUD FROM A CARD — you do not examine"
+    "**Auscultate for this murmur properly and say how**: **the bell, at the apex, with the patient in the LEFT LATERAL position, in held expiration.** Naming the manoeuvre is a scored item.",
+    "**Read the timing word before you react.** **Systolic** in pregnancy is usually a flow murmur from the 40–50% rise in plasma volume. **Diastolic is never explained that way.**",
+    "**Echocardiogram first — it is the word the examiner is waiting for**, because **severity decides everything downstream**: exercise, fluid, drugs, procedures, and where she gives birth. Transthoracic; **valve area and mean gradient grade the severity**, plus ventricular function and pulmonary pressures.",
+    "**Then ECG — looking for atrial fibrillation.** It is the single complication that changes the whole management: it collapses cardiac output and mandates anticoagulation.",
+    "**Then FBC and thyroid function** — anaemia and hyperthyroidism are the high-output causes of a murmur, and both are worth excluding in early pregnancy.",
+    "**Echo appearances if asked**: thickened anterior and posterior leaflets with the anterior leaflet **doming into the ventricle in diastole — the 'hockey stick'**; **subvalvular thickening of the chordae**, a rheumatic feature that affects whether balloon valvuloplasty is possible; and on short axis a **'fish mouth' orifice**, traced by **planimetry** to give the valve area.",
+    "**Routine antenatal screen alongside** — this is still an obstetrics station: booking bloods, blood group and antibodies, rubella and varicella, infection screen with consent, midstream urine, dating scan.",
+    "**Modified WHO classification** is the framework for heart disease in pregnancy — broadly, **mild sits at low-to-moderate risk and can be shared care; moderate needs specialist care throughout; severe is the highest-risk class, where pregnancy is discouraged and, if it occurs, is managed in a specialist centre with formal counselling**. VERIFY the current class boundaries before quoting them.",
+    "**Restarting secondary prophylaxis needs specialist review** — **benzathine benzylpenicillin every 21–28 days**, duration set by valve severity, safe in pregnancy. **Check the state rheumatic heart disease register** so the recall actually happens.",
+    "**Escalate for**: breathlessness at rest, orthopnoea, paroxysmal nocturnal dyspnoea, palpitations, haemoptysis, syncope or oedema."
    ],
-   "fails": [
-    "Calling the murmur physiological ★",
-    "Not stopping the five Ps when she says 'murmur' ★",
-    "Differentials not grouped, or not finishing with why the pregnancy murmur doesn't fit ★",
-    "Accepting 'I don't remember' without prompting for antibiotics or injections",
-    "Missing palpitations; echo not before ECG; promising or threatening termination"
-   ],
-   "numbers": [
-    "Mitral area 5th ICS midclavicular line · bell · left lateral · expiration",
-    "Mild >1.5 cm² · moderate 1.0–1.5 · severe <1.0 cm² VERIFY",
-    "Plasma volume rises 40–50% · beta blocker metoprolol, not atenolol · secondary prophylaxis benzathine penicillin every 21–28 days",
-    "Management variant (by severity): echo + ECG → mild: watch, see more often, birth in a big hospital with good analgesia and monitoring · more severe: salt and fluid restriction, no strenuous exercise, rate-slowing tablet, birth where cardiologists are on site · keyhole balloon valvuloplasty in pregnancy if medicines fail · mode of birth decided by specialists — no rule of caesarean; excellent pain relief",
-    "AF variant (irregular 120, palpitations, breathless on stairs): less efficient, clot risk → rate control, anticoagulant injection, cardiology today",
-    "Summary to examiner: childhood murmur after fever and migratory arthralgia, prolonged prophylaxis stopped in adolescence, asymptomatic; tapping apex, loud S1, opening snap, rumbling mid-diastolic murmur with presystolic accentuation; rheumatic MS; echo, ECG, FBC, TFT, joint clinic, tertiary birth",
-    "Score /10; three starred items"
+   "ddx": [
+    [
+     "**Rheumatic mitral stenosis**",
+     "Childhood fever with **migratory joint pain**, years of injections stopped in adolescence, no follow-up since",
+     "**Mid-diastolic rumble at the apex, loud S1, opening snap, tapping apex, presystolic accentuation**",
+     "**Echocardiogram for valve area and gradient**, then ECG. **This is the diagnosis — a diastolic murmur is never physiological.** Prompt"
+    ],
+    [
+     "Other valve lesions",
+     "Aortic stenosis or regurgitation, mitral regurgitation, tricuspid disease",
+     "**Timing, site and radiation of the murmur**",
+     "Echocardiogram grades all of them at once. **Aortic regurgitation is the other diastolic murmur — early diastolic, at the left sternal edge**"
+    ],
+    [
+     "Congenital heart disease",
+     "Present from birth, never picked up; cyanosis, clubbing",
+     "General appearance; the murmur's character",
+     "Echocardiogram. Routine unless symptomatic"
+    ],
+    [
+     "**Cardiomyopathy and heart failure**",
+     "Breathlessness, orthopnoea, oedema, **an S3 gallop**",
+     "**S3 means a dilated, failing ventricle — NOT a tight mitral valve, where the ventricle is under-filled**",
+     "Echocardiogram. **The cardiomyopathies are dilated, hypertrophic and restrictive — plus peripartum in pregnancy.** Urgent if symptomatic"
+    ],
+    [
+     "**Atrial fibrillation**",
+     "**Irregularly irregular pulse**, palpitations, sudden breathlessness; **presystolic accentuation disappears**",
+     "**'Any racing or fluttering of your heart?'**; the pulse rhythm on the card",
+     "**ECG. The single complication that changes everything** — rate control plus **low molecular weight heparin** in pregnancy. Urgent"
+    ],
+    [
+     "Infective endocarditis",
+     "Fever, malaise, new or changing murmur on a damaged valve",
+     "Fever, splinter haemorrhages, embolic phenomena",
+     "Blood cultures and echocardiography. **Prophylaxis is NOT routine for isolated rheumatic mitral stenosis.** Urgent"
+    ],
+    [
+     "Anaemia",
+     "Common in pregnancy; fatigue, pallor — **a high-output SYSTOLIC flow murmur**",
+     "FBC",
+     "**Does not explain a diastolic murmur — and saying so is the scoring move.** Routine"
+    ],
+    [
+     "Hyperthyroidism",
+     "Tremor, heat intolerance, tachycardia — again a **high-output SYSTOLIC murmur**",
+     "Thyroid function tests",
+     "**Also does not explain a diastolic murmur.** Routine"
+    ],
+    [
+     "**Physiological flow murmur of pregnancy**",
+     "**Soft, SYSTOLIC**, from the 40–50% rise in plasma volume; present in most pregnant women",
+     "**The timing word — this is the discrimination the whole station is built on**",
+     "**Finish the differential list with this one and say WHY it does not fit. That sentence is the highest-scoring moment in the task**"
+    ]
    ]
   },
   "source": "Mitral_Stenosis_in_Pregnancy_2_Case_Tasks_Script_Notability.pdf",
   "drive": "AMC Clinical Notability › Obstetrics › Mitral_Stenosis_in_Pregnancy_2_Case_Tasks_Script_Notability.pdf",
   "findings": [
    [
-    "The murmur",
-    "A murmur that is NOT one of the normal murmurs of pregnancy — it comes at a different point in the heartbeat"
+    "General appearance",
+    "Well, comfortable at rest. No cyanosis, no clubbing"
+   ],
+   [
+    "Pulse",
+    "88 beats per minute, REGULAR, normal volume — regular matters, because atrial fibrillation is the complication that changes everything"
+   ],
+   [
+    "Blood pressure",
+    "112/70 mmHg"
+   ],
+   [
+    "Jugular venous pressure",
+    "Not raised"
+   ],
+   [
+    "Apex beat",
+    "Not displaced; TAPPING in character — a palpable S1, not a displaced ventricle"
+   ],
+   [
+    "Heart sounds",
+    "LOUD S1, followed by an OPENING SNAP after S2 — the shorter the S2-to-snap interval, the tighter the valve"
+   ],
+   [
+    "Murmur",
+    "Low-pitched, RUMBLING, MID-DIASTOLIC murmur at the 5th intercostal space in the midclavicular line, loudest with the BELL, in the LEFT LATERAL position, in held expiration. No radiation. PRESYSTOLIC ACCENTUATION present"
+   ],
+   [
+    "Chest",
+    "Clear, no crackles"
+   ],
+   [
+    "Peripheries",
+    "No ankle oedema, no calf tenderness"
+   ],
+   [
+    "Abdomen",
+    "Soft; uterus not palpable per abdomen at this gestation"
+   ],
+   [
+    "Version C — the mirror image",
+    "A soft MID-SYSTOLIC murmur at the left sternal edge, everything else normal. That is a physiological flow murmur and the station is chest discomfort with reflux — do NOT switch to mitral stenosis just because a murmur appears"
+   ],
+   [
+    "Variant — atrial fibrillation",
+    "Pulse IRREGULARLY IRREGULAR at 120, with palpitations and breathlessness on stairs. Rate control, low molecular weight heparin, urgent cardiology — no longer a routine visit"
+   ],
+   [
+    "Variant — severe disease",
+    "Echo already done: valve area 0.8 cm², mean gradient 14 mmHg, breathless washing the dishes. Rest, salt and fluid restriction, metoprolol, discuss balloon valvuloplasty, tertiary birth planning"
    ]
   ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "Physical examination findings — given to you on a card",
   "must": [
-   "FAIL — Calling the murmur physiological — say out loud that NO DIASTOLIC MURMUR IS NORMAL IN PREGNANCY before you commit; she accepts a wrong answer happily and marks it a fail",
-   "FAIL — Not stopping the five Ps the moment she says 'murmur' — go straight to the ladder: when it was diagnosed, what treatment, regular follow-up, any problems since",
-   "FAIL — Accepting 'I don't remember' about the treatment without prompting 'antibiotics for a long time, or INJECTIONS?' — that closed question, asked second and never first, is what unlocks the rheumatic fever history",
-   "FAIL — Differentials not grouped, or not FINISHING with why the pregnancy murmur doesn't fit — that closing sentence is the highest-scoring moment in the task, because everything else on the list is systolic",
-   "FAIL — Promising or threatening termination — the fear under every question she asks is that she will be told to end the pregnancy, and she raises it herself at about seven minutes: 'nothing I've found today says that'",
-   "DO — Ask about PALPITATIONS alongside the heart-failure questions, because atrial fibrillation travels with valve disease and is the one complication that changes the whole management — then ECHO FIRST for severity, ECG for rhythm, and say GATEWAY, NARROWED and RHEUMATIC FEVER in plain words"
-  ]
+   "FAIL — Calling a **diastolic murmur physiological**. **The only truly dangerous error available in this station**, and it catches a large minority every sitting.",
+   "FAIL — Hearing **'murmur'** and ploughing on through the five Ps without stopping for the **four questions**.",
+   "FAIL — Accepting a vague answer about treatment. **Prompt: 'antibiotics for a long time, or injections?'** — that is what unlocks the rheumatic fever history.",
+   "FAIL — Not naming **echocardiogram first**; or frightening her; or promising a normal pregnancy **before you know the severity**.",
+   "ASK — **Do you remember having antibiotics for a long time, or injections?**",
+   "ASK — **Any racing or fluttering of your heart?** — atrial fibrillation is the complication that changes the whole management."
+  ],
+  "v2": true
  },
  {
   "id": "OG-25",
