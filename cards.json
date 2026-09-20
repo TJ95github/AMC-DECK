@@ -59067,7 +59067,6 @@
   "cat": "og",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "A counselling station with a four-minute history hiding inside it, and the counselling is two of the three tasks. Three boxes decide the history — screening and vaccination, symptoms, sexual history — in that order, because the third is the one people run out of time for. The stem says 'Address her concerns', which means a mark is attached to them, and she has a second concern she will only give if asked. If you never find out what she is worried about, you cannot pass.",
   "stem": [
    "Your general practice, rural South Australia. Your next patient is a 26-year-old woman who has received a letter from the government inviting her to start cervical screening. She has come in to discuss some concerns about it.",
    "Tasks: take a history for four minutes — explain the procedure — address her concerns. 8 minutes. Her scripted concern: 'I got this letter, but I want to know — is this the same pap smear my mum has always had? Why is the government asking me to do a different test?'"
@@ -59077,98 +59076,165 @@
    "Explain the procedure",
    "Address her concerns"
   ],
-  "time": "Ask for the concern explicitly in the first minute — 'Is there anything in particular you are worried about, or anything you were hoping I would explain today?' — because the one she opened with is not her only one · then box one, screening and vaccination history · then box two, symptoms, which is the box most often skipped and the one that decides whether this is a screening consultation at all · then box three, sexual history with confidentiality named · then the immunosuppression question · then the counselling, which is the longer job: what changed and why in three changes, the procedure in the order it happens to her, and the self-collection choice with its limitation · if you are still taking history at five minutes you will not finish.",
   "back": {
-   "dx": "NOT A DIAGNOSIS — a counselling script in three parts, and the station is passed by answering the question she actually asked. The failure mode is a competent generic explanation of cervical screening that never says 'Your mum's pap smear looked at the cells; this test looks for the virus first'. Part A, what changed and why, and three keywords must leave your mouth — HPV, liquid-based, cytology. Frame it: 'Your mum is right that it used to be called a pap smear. A few years ago the programme changed, and what we do now is better at picking up risk early. Let me take you through the three differences.' Change one, age: 'It used to start at 18. It now starts at 25 and runs to 74. Cervical cancer is very rare under 25, young immune systems clear the virus on their own, and years of testing that age group never actually reduced the number of cancers. We also now vaccinate against the virus at school, which has brought the numbers down further.' Change two, interval: 'It used to be every two years. It is now every five. That is safe because we are now testing for the virus that causes the changes rather than waiting for the changes themselves — and it takes that virus ten to fifteen years to cause a cancer.' Change three, the main one: 'Your mum's test looked at the cells under a microscope, and sometimes by the time the cells looked abnormal the changes were well advanced. The new test looks first for a virus called human papillomavirus, or HPV, which causes the great majority of cervical cancers. The sample goes into a bottle of liquid, and if the virus is found the laboratory automatically goes back to the same sample and checks the cells — that part is called cytology. So you only get one test, and you only come once.' Correction — why the starting age moved to 25. The lecture gives high vaccination coverage as the explanation; it is a contributing reason, not the main one, and the change was made before the vaccinated cohorts reached screening age. The primary reasons are that cervical cancer is rare under 25, that HPV infection in that age group usually clears spontaneously, and that screening under 25 was shown not to reduce incidence or mortality while generating harm from over-investigation. Give the patient the simple version; give the examiner the real one. Added — how to talk about HPV without shaming her, because she may hear it as an accusation: 'HPV is extremely common — most people who have ever been sexually active will pick it up at some point, and the great majority clear it themselves without ever knowing. Finding it does not tell us when you got it or from whom, because it can lie dormant for years — so it says nothing about you or your partner.' Examiner challenge, 'She asks if her husband has cheated' → 'I would explain that HPV can be dormant for many years, so a positive result is not evidence of recent infection or infidelity.' Part B, the procedure, in the order it happens to her: 'I will step out and give you privacy to undress from the waist down, and there is a sheet to cover yourself with. You will lie on your back, bend your knees, and let them fall out to the sides. I can have a chaperone present — one of our nurses — and you are also welcome to bring someone with you. Would you like that? I will gently insert a speculum into the vagina and open it so I can see the cervix, the opening of the womb. I use a small soft brush — it looks a bit like a tiny broom — and rotate it against the cervix to collect some cells. It should not be painful — most women describe some pressure or mild discomfort. Tell me at any point and I will stop. I rinse the brush into the bottle of liquid and send it to the laboratory. Some light spotting afterwards is normal. Results take about a week or two; we will contact you either way, and your result also goes on the national register, which sends you a reminder when you are next due.' Part C, self-collection offered as a real choice: 'I give you a swab, a bit like a long cotton bud, and you go behind the curtain or to the toilet, insert it two to three centimetres into the vagina, rotate it for about twenty to thirty seconds, and hand it back. Anyone who has used a tampon can do it. They are equally good at detecting the virus. The one difference: your own sample is a vaginal sample, so it can only be tested for the virus, not the cells. If the virus is found and it is not one of the two highest-risk types, you would need to come back so I can take a sample from the cervix for the cell part. Which would you prefer?' Added — small things that make the examination tolerable and are worth saying: use the smallest comfortable speculum, warm it, and use warm water only rather than lubricant for a screening test · offer her the choice to insert the speculum herself if she prefers · tell her she can stop at any moment and that stopping is a completely acceptable outcome · and for a woman with a history of sexual assault, or with vaginismus, self-collection is the right first offer rather than a second-best option. The three extras, in priority order if time remains: safe sex and an offer to screen for other sexually transmitted infections at the same time, since you have been talking about a sexually transmitted virus · the symptom safety net, which is short and is the one an examiner is most likely to be listening for: 'A normal result is reassuring but it is not a guarantee — if you ever get bleeding after sex, bleeding between periods or an unusual discharge, come back to me whatever your last result said' · and the results timeline with the register reminder. South Australian localisation: results and recall through the national cancer screening register; self-collection in general practice and through SHINE SA; colposcopy by referral to a metropolitan service with PATS travel support from a rural site; local ACCHS with an Aboriginal health worker or liaison officer if she would like one and closing the gap PBS co-payment; interpreters through TIS National 131 450, offered rather than using a family member; information and support through cancer council SA 13 11 20. VERIFY all contacts and intervals before the exam.",
+   "dx": [
+    "**A counselling station with a four-minute history hiding inside it — and the patient arrives with a NAMED concern.** The failure mode is a candidate who delivers a competent generic explanation of cervical screening and **never says the words 'your mum's pap smear looked at the cells; this test looks for the virus first'.**",
+    "**Her question, as scripted**: **'I got this letter, but I want to know — is this the same pap smear my mum has always had? Why is the government asking me to do a different test?'** **Everything you know about the programme exists to answer that one sentence.**",
+    "**The second discriminator is the symptoms box. Screening applies ONLY to asymptomatic women**, and a candidate who counsels a woman about screening without ever asking whether she has bleeding after sex **has not shown the examiner they understand what screening is.**",
+    "**The three changes, with their reasons. 1. Age: was 18, now 25 to 74. 2. Interval: was every 2 years, now every 5. 3. What is tested: the old test looked at the CELLS under a microscope; the new test looks first for HUMAN PAPILLOMAVIRUS, the sample goes into a bottle of LIQUID, and if the virus is found the laboratory automatically checks the cells on the same sample — that part is CYTOLOGY.** **All three keywords must leave your mouth.**",
+    "**The interval explanation is what makes five years feel safe to her**: **'it takes that virus ten to fifteen years to cause a cancer, so finding it early gives us an enormous margin, and five years is a short time within that.'** She will say five years sounds like a long gap — that is the cue.",
+    "CORRECTION — **why the starting age moved to 25.** The source gives **high vaccination coverage** as the explanation. **It is a contributing reason, not the main one — and the change was made BEFORE the vaccinated cohorts reached screening age.** The primary reasons: **cervical cancer is rare under 25, HPV infection in that age group usually clears spontaneously, and screening under 25 was shown not to reduce incidence or mortality while generating harm from over-investigation.** **Give the patient the simple version; give the examiner the real one.**",
+    "**Talk about HPV without shaming her — defuse it in one sentence before she asks**: **'HPV is extremely common — most people who have ever been sexually active will pick it up at some point, and the great majority clear it themselves without ever knowing. It can lie dormant for years, so finding it tells us nothing about when you got it or from whom.'** If she asks whether her partner has cheated: **'HPV can be dormant for many years, so a positive result is not evidence of recent infection or infidelity.'**",
+    "**Self-collection is offered as a REAL choice, not a second best**: a swab like a long cotton bud, **inserted 2–3 cm into the vagina and rotated for 20–30 seconds**; anyone who has used a tampon can do it. **They are equally good at detecting the virus.** **The one limitation, which must be said: her own sample is a VAGINAL sample, so it can be tested only for the virus, NOT the cells. If the virus is found and it is not one of the two highest-risk types, she has to come back for a cervical sample for the cytology.**",
+    "**ADDED — small things that make the examination tolerable and are worth saying: use the smallest comfortable speculum, warm it, and use warm water rather than lubricant for a screening test. Offer her the choice to insert the speculum herself. Tell her she can stop at any moment and that stopping is a completely acceptable outcome. For a woman with a history of sexual assault, or with vaginismus, self-collection is the RIGHT FIRST OFFER rather than a second-best one.**",
+    "**If she has never been sexually active**: **'screening is not recommended for you at this stage, because the virus we're looking for is passed on through sexual contact. If that changes, come back and we'll start then'** — and check she has had the HPV vaccination. **Saying so is a mark.** **If she is immunocompromised** — steroids, arthritis or bowel disease medication, transplant — **she screens more frequently and does not get the same watch-and-wait arms of the algorithm.** VERIFY the current interval. SA: results and recall through the **National Cancer Screening Register**; self-collection in general practice and through **SHINE SA**; colposcopy metropolitan with **PATS**; ACCHS, **Closing the Gap PBS**; **TIS National 131 450**, never a family member; **Cancer Council SA 13 11 20**."
+   ],
    "plan": [
     [
      "0:00",
-     "Open, then ask for the concern explicitly before anything else: 'That is a very good question and I will answer it properly. Before I do — is there anything else you are worried about, or anything else you were hoping I would explain today?' → the second concern, which is nervousness about the examination itself."
+     "WIPE, **open question**. She gives the pap smear question straight away. **'That's a very good question and I'll answer it properly.'**"
+    ],
+    [
+     "0:20",
+     "**Ask for the concern EXPLICITLY — the stem says 'address her concerns', so a mark is attached, and do not assume the one she opened with is the only one**: **'before I start — is there anything else you're worried about, or anything you were hoping I'd explain today?'** *'I suppose I'm a bit nervous about the test itself. I've never had one.'* **She gives this only if asked.**"
     ],
     [
      "0:40",
-     "Box one, screening and prevention: 'Have you ever had a cervical screening test or a pap smear before?' — 'Do you remember having the HPV, Gardasil, vaccination at school?' — 'Have you ever been told you had an abnormal result, or any problem with your cervix?' — 'Any family history of cervical cancer or cancer of the womb?'"
+     "**Box 1 — screening and prevention**: **'have you ever had a cervical screening test or a pap smear before?' · 'do you remember having the HPV — Gardasil — vaccination at school?' · 'have you ever been told you had an abnormal result, or any problem with your cervix?' · 'any family history of cervical cancer, or cancer of the womb?'**"
     ],
     [
-     "1:30",
-     "Box two, symptoms — compulsory, and the box that decides whether this is a screening consultation at all: 'Any bleeding after sex? Any unusual vaginal discharge? Any pain during sex? Any bleeding between your periods? Any weight loss, loss of appetite, lumps or unusual tiredness?' then say why it mattered rather than just ticking it."
+     "1:20",
+     "**Box 2 — symptoms, the box most often skipped and the one that is compulsory**: **'have you had any bleeding after sex?' · 'any unusual vaginal discharge?' · 'any pain during sex?' · 'any bleeding between your periods?' · 'any weight loss, loss of appetite, lumps or unusual tiredness?'**"
     ],
     [
-     "2:20",
-     "Box three, sexual history, with confidentiality named first: 'I need to ask a few personal questions, and everything stays confidential. Are you sexually active, or have you ever been?' then stable relationship, condoms, multiple partners, previous STI. If she has never been sexually active, screening is not indicated and saying so is a mark."
+     "2:00",
+     "**Say why it mattered, out loud — do not just tick the box**: **'good, that matters, and I'll explain why in a moment.'** **Screening is for women WITHOUT symptoms; any yes here turns this into a diagnostic consultation — co-test, examination, and colposcopy if there is a lesion.**"
     ],
     [
-     "3:20",
-     "The immunity question, which almost nobody asks: 'Do you have any medical conditions, or take any medications that affect your immune system — steroids, or medications for arthritis, inflammatory bowel disease, or after a transplant?' then the five Ps only if time remains, and never at the cost of boxes two and three."
+     "2:15",
+     "**Box 3 — sexual history, with confidentiality named**: **'I need to ask a few personal questions, and everything stays confidential. Are you sexually active? Have you ever been?'** Then **'are you in a stable relationship? Do you practise safe sex and use condoms? Have you ever had multiple partners, or been diagnosed with a sexually transmitted infection?'** **HPV is sexually transmitted — the sexual history is the reason this test exists, and asking it is a mark.**"
     ],
     [
-     "4:00",
-     "Part A — the three changes, with all three keywords said: age 18 to 25 with its reasons · interval two years to five, justified by the 10 to 15 year progression · and what is tested, which is HPV first, on a liquid-based sample, with cytology done reflexly on the same sample (see dx). → 'Five years sounds like a long gap.'"
+     "2:50",
+     "**Box 4 — the extra question**: **'do you have any medical conditions, or take any medications that affect your immune system — steroids, or medications for arthritis, inflammatory bowel disease, or after a transplant?'**"
     ],
     [
-     "5:10",
-     "→ 'Is that a sexually transmitted thing? Should I be worried about my boyfriend?' — normalise it without blame: extremely common, usually cleared unknowingly, can lie dormant for years, and says nothing about the relationship."
+     "3:10",
+     "**Five Ps only if time remains — periods, contraception, pregnancies, briefly. Never at the cost of boxes 2 and 3.** **If you are still taking history at five minutes you will not finish the counselling, and the counselling is two of the three tasks.**"
     ],
     [
-     "5:40",
-     "Part B — the procedure from privacy to laboratory (see dx), with the chaperone offered, the discomfort described honestly, and the right to stop stated. → 'Is there any way to avoid the speculum?'"
+     "3:30",
+     "**Part A — frame it, then the three changes.** **'Your mum is right that it used to be called a pap smear. A few years ago the programme changed, and what we do now is better at picking up risk early. Let me take you through the three differences.'**"
     ],
     [
-     "6:40",
-     "Part C — self-collection offered as a real choice and not a second best, with its limitation stated before she chooses: a vaginal sample can be tested for the virus but not the cells, so a non-16/18 result means coming back."
+     "3:50",
+     "**Change 1 — age**: was 18, now **25 to 74**. Cervical cancer is very rare under 25, young immune systems clear the virus on their own, and testing that age group never reduced the number of cancers. **Change 2 — interval**: was two years, now **five**."
     ],
     [
-     "7:20",
-     "The extras in priority order: safe sex and an offer of STI screening · the symptom safety net regardless of result, which is the short one the examiner is listening for · and results in one to two weeks with contact either way and a register reminder when she is next due."
+     "4:20",
+     "**Change 3 — the main one, and it answers her question directly**: **'your mum's test looked at the CELLS under a microscope, and sometimes by the time the cells looked abnormal the changes were well advanced. This test looks first for the virus — human papillomavirus, or HPV. The sample goes into a bottle of LIQUID, and if the virus is found, the laboratory automatically goes back to the same sample and checks the cells — that part is called CYTOLOGY. So it's one sample and one visit.'**"
+    ],
+    [
+     "5:00",
+     "**When she says five years sounds like a long gap** — that is the cue for the **10–15 year** explanation. **When she asks about HPV and her boyfriend** — normalise it without blame, in the terms above."
+    ],
+    [
+     "5:30",
+     "**Part B — the procedure, in the order it happens to her**: privacy to undress with a sheet · lie on her back, knees bent and falling outwards · **offer a chaperone, and that she may bring someone** · speculum inserted gently and opened to see the cervix · **a small soft brush, a bit like a tiny broom, rotated against the cervix** · **'it shouldn't be painful — most women describe pressure or mild discomfort. Tell me at any point and I'll stop.'** · the brush rinsed into the bottle, light spotting afterwards is normal."
+    ],
+    [
+     "6:30",
+     "**Results**: about **one to two weeks**, contacted either way, and the result goes on the **national register**, which sends a reminder when she is next due."
+    ],
+    [
+     "6:45",
+     "**Part C — self-collection, offered as a real choice**: the swab, **2–3 cm, rotated 20–30 seconds**, anyone who has used a tampon can do it, **equally good at detecting the virus** — **and then the limitation: a vaginal sample can be tested only for the virus, not the cells, so if the virus is found and it isn't one of the two highest-risk types she comes back for a cervical sample.** **'Which would you prefer?'**"
+    ],
+    [
+     "7:30",
+     "**Close with the extras, in priority order**: **safe sex and an offer to screen for other infections at the same time**, and **the symptom safety-net** — **'a normal result is reassuring, but it isn't a guarantee: if you ever get bleeding after sex, bleeding between periods, or an unusual discharge, come back to me whatever your last result said.'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's clock - four minutes of history and four of counselling, and the counselling is the longer job",
-   "ask": [
-    "'BEFORE I START — IS THERE ANYTHING IN PARTICULAR YOU ARE WORRIED ABOUT, OR ANYTHING YOU WERE HOPING I WOULD EXPLAIN TODAY?' — the question that unlocks her second concern, and a mark is attached to it.",
-    "'Your mum's test looked at the cells; this one looks for the virus that causes the changes.' / 'It takes that virus ten to fifteen years to cause a cancer, which is why five years is safe.' / the three keywords that must be said: HPV · liquid-based · cytology.",
-    "'It should not be painful — tell me at any point and I will stop.' / 'I can have a chaperone present, and you are welcome to bring someone.' / 'Doing it yourself is a proper option, not a second best.'",
-    "'HPV is extremely common, and it can lie dormant for years — so finding it says nothing about you or your partner.' / 'A normal result is reassuring but it is not a guarantee — if you ever get bleeding after sex, bleeding between periods or an unusual discharge, come back whatever your last result said.'",
-    "THE FIVE DRILLS FROM THE SOURCE: deliver the three changes — age, interval, what is tested — in 60 seconds using all three keywords · explain the procedure from privacy to laboratory in 45 seconds · offer self-collection with its limitation in 30 seconds · answer 'should I be worried about my boyfriend?' in 20 seconds without blame · change the history so she reports bleeding after sex, and say out loud how the consultation now changes."
-   ],
    "pefe": [
-    "No examination is performed in this station — the procedure is described, not done, and the description is the marked task. The steps in order: privacy to undress with a sheet · position on her back, knees bent and falling outwards · chaperone offered and a support person welcomed · speculum inserted gently and opened to see the cervix · a small soft broom-like brush rotated against the cervix · what it feels like, and the right to stop at any point · the brush rinsed into the liquid and sent off, with light spotting afterwards normal · results in one to two weeks with contact either way and a register reminder.",
-    "Role-player: Karen Boyle, 26, an office worker who has received her first invitation letter. Her mother had pap smears every two years from her late teens and has told her about them. Healthy, boyfriend of two years, on the pill, no condoms, a couple of partners before him, no infections. Gardasil at school in year 8. No previous test, no abnormal result, no family history, no symptoms, no immunosuppression. Quietly nervous about the examination.",
-    "How to play it: polite, a little anxious, genuinely curious. Ask your three questions at the points marked — after the interval, when HPV is mentioned, and after the procedure — because they are the openings the doctor is being tested on. If the doctor never asks whether you have any other concerns, keep the nervousness to yourself and answer flatly. If offered self-collection, take it.",
-    "MARKING PROMPTS: open question · ADDITIONAL CONCERNS ASKED FOR · previous screening and Gardasil · personal and family history of cervical abnormality · ALL FOUR SYMPTOM QUESTIONS · SEXUAL HISTORY WITH CONFIDENTIALITY NAMED · immunosuppression asked · THE PAP SMEAR COMPARISON ANSWERED DIRECTLY · age change with reason · interval change with the 10 to 15 year explanation · HPV, LIQUID-BASED AND CYTOLOGY ALL SAID · HPV NORMALISED WITHOUT BLAME · procedure explained step by step · CHAPERONE OFFERED · discomfort and the right to stop mentioned · SELF-COLLECTION OFFERED WITH ITS LIMITATION · safe sex advice · SYMPTOM SAFETY NET · results timeline.",
-    "The scripted concern, and the one behind it — 'Is this the same pap smear my mum has always had? Why is the government asking me to do a different test?' — and then, only if you ask whether there is anything else: 'I suppose I am a bit nervous about the test itself. I have never had one.' if you never ask, she keeps the nervousness to herself and answers flatly",
-    "Box one — screening and vaccination — Never had a screening test or pap smear · had the Gardasil vaccine at school, 'Year 8 I think' · no previous abnormal result or cervical problem · no family history of cervical or womb cancer",
-    "Box two — symptoms, the box most often skipped — No bleeding after sex · no unusual discharge · no pain during sex · no bleeding between periods · no weight loss, appetite change, lumps or tiredness. All negative — which is why she stays on the screening pathway, and saying that out loud is the mark",
-    "Box three — sexual history, with confidentiality named first — Sexually active, boyfriend of two years, stable · no condoms because she is on the pill · a couple of partners before him · no previous STI. This is the reason the test exists, and asking it is a mark",
-    "The immunity question — NO MEDICAL CONDITIONS AND NO IMMUNOSUPPRESSIVE MEDICATIONS — no steroids, no arthritis or bowel disease treatment, no transplant. Immunocompromised women screen more frequently, commonly three-yearly VERIFY, and do not get the watch-and-wait arms",
-    "Her three questions, in the order she asks them — After the interval is explained: 'Five years sounds like a long gap' · when HPV is mentioned: 'Is that a sexually transmitted thing? Should I be worried about my boyfriend?' · after the procedure: 'Is there any way to avoid the speculum?' — each one is an opening you are being tested on",
-    "If offered self-collection — 'I WILL DO IT MYSELF, I THINK' — and the correct response treats that as a proper option rather than a second best",
-    "Alternate run — symptomatic — She answers yes to bleeding after sex, twice in the last two months. This stops being a screening consultation: examine her, arrange a co-test rather than a screening test, and refer for colposcopy if the cervix looks abnormal",
-    "Alternate run — never sexually active — No to both sexual-activity questions → 'In that case screening is not recommended for you at this stage, because the virus we are looking for is passed on through sexual contact. If that changes, come back and we will start then. Either way, let us make sure you have had the HPV vaccination'",
-    "Alternate run — previous abnormality — She is 38, and at 25 was told she had 'The virus and some changes' which cleared. Take a careful history of that episode and check the national cancer screening register for what was actually found and where she sits now"
+    "**No examination in this station** — the test is what you are explaining, not performing. The 'investigations' here are the screening pathway itself.",
+    "**The programme: ages 25–74, five-yearly if HPV is not detected, with the test at 70–74 as the exit test.** Previously from **18, every 2 years**. **Primary HPV testing, with cytology done reflexly on the same sample only if HPV is detected.**",
+    "**Numbers to have exact: HPV takes 10–15 years to cause a cancer · over 100 HPV types, with 16 and 18 the highest risk · self-collection 2–3 cm, rotated 20–30 seconds · results in about 1–2 weeks.** VERIFY",
+    "**Self-collection limitation, stated BEFORE she chooses**: a vaginal sample can be tested for **the virus only, not the cells**. If HPV is detected and it is **not type 16 or 18**, she must return for a clinician-collected cervical sample for cytology.",
+    "**If she is symptomatic, this stops being a screening consultation.** She needs a **co-test** rather than a screening test, a speculum examination, and **colposcopy if there is a visible lesion — regardless of the HPV result.**",
+    "**If she has never been sexually active, screening is not indicated at all** — say so, and offer vaccination instead.",
+    "**If she is immunocompromised** — long-term steroids, immunomodulators for arthritis or inflammatory bowel disease, post-transplant — **she screens more frequently and the watch-and-wait arms of the algorithm do not apply.** VERIFY the current interval.",
+    "**Practical measures worth saying aloud**: smallest comfortable speculum, warmed, **warm water rather than lubricant** for a screening sample; offer that she insert the speculum herself; state that she can stop at any moment.",
+    "**For a woman with a history of sexual assault or vaginismus, self-collection is the right FIRST offer**, not a fallback.",
+    "**Offer concurrent STI screening** — you have just spent the consultation discussing a sexually transmitted virus, and it is the natural moment."
    ],
-   "fails": [
-    "★ Never asking about symptoms before offering screening — box two is compulsory, because symptoms move her off the screening pathway and onto a diagnostic one",
-    "★ Not answering the concern in the stem. Name the pap smear comparison explicitly; a fluent generic explanation that never makes the comparison fails the station",
-    "Skipping the sexual history, which is the reason the test exists and is itself a mark; and omitting any of the three keywords — HPV, liquid-based, cytology",
-    "Not offering self-collection, which is the answer to 'can I avoid the speculum?' — or offering it without its limitation, since a vaginal sample gives the virus only and no cytology",
-    "Forgetting the chaperone offer; saying a normal result means she is safe forever rather than safety-netting on symptoms whatever the result; and letting HPV sound like an accusation instead of common, usually cleared, and often dormant for years"
-   ],
-   "numbers": [
-    "Ages 25 to 74, every 5 years · previously from 18, every 2 years · HPV to cancer takes 10 to 15 years · over 100 HPV types, with 16 and 18 the highest risk · self-collection: insert 2 to 3 cm, rotate 20 to 30 seconds · results in about 1 to 2 weeks VERIFY",
-    "The three keywords: HPV · liquid-based · cytology · the three history boxes: screening and vaccination, symptoms, sexual history — in that order · immunocompromised screen more often, commonly 3-yearly VERIFY · national cancer screening register · SHINE SA · PATS · TIS National 131 450 · cancer council SA 13 11 20"
+   "ddx": [
+    [
+     "**Asymptomatic woman due to start screening**",
+     "First invitation letter at 25–26, no symptoms, sexually active",
+     "**All four symptom questions — and they are all negative here**",
+     "**Routine screening: HPV test, five-yearly. Clinician-collected or self-collected, her choice.** This is the case"
+    ],
+    [
+     "**Symptomatic woman — screening does not apply**",
+     "**Bleeding after sex, intermenstrual bleeding, unusual discharge, pain with sex**",
+     "**Box 2 — the box most often skipped**",
+     "**Co-test, not a screening test. Speculum examination, and colposcopy if there is a lesion regardless of the HPV result.** Not to miss"
+    ],
+    [
+     "Never sexually active",
+     "No sexual contact ever",
+     "**'Are you sexually active? Have you ever been?'**",
+     "**Screening is NOT indicated — and saying so is a mark.** Offer HPV vaccination; start if that changes"
+    ],
+    [
+     "Previous abnormal result",
+     "Told she had 'the virus and some changes' at a previous test",
+     "**'Have you ever been told you had an abnormal result?'**; the national register",
+     "**Changes her pathway entirely.** Take a careful history of that episode and check the register"
+    ],
+    [
+     "**Immunocompromised**",
+     "Long-term steroids, immunomodulators, post-transplant",
+     "**'Any medications that affect your immune system?'**",
+     "**Screens more frequently; the watch-and-wait arms do not apply.** VERIFY the interval"
+    ],
+    [
+     "HPV detected, types 16 or 18",
+     "The two highest-risk types",
+     "The result",
+     "**Direct referral for colposcopy**, regardless of the cytology"
+    ],
+    [
+     "HPV detected, other high-risk types",
+     "Not 16 or 18",
+     "The result, plus the reflex cytology",
+     "**Cytology on the same sample decides: repeat at 12 months, or colposcopy.** A self-collected sample has no cytology, so she must return"
+    ],
+    [
+     "Anxiety about the examination itself",
+     "**'I'm a bit nervous about the test itself. I've never had one.'** — given only if you ask for other concerns",
+     "**'Is there anything else you were hoping I'd explain today?'**",
+     "**Step-by-step explanation, chaperone offered, right to stop stated, and self-collection offered as a real alternative**"
+    ],
+    [
+     "Fear that HPV implies infidelity",
+     "**'Should I be worried about my boyfriend?'**",
+     "Her reaction when HPV is named",
+     "**Normalise without blame: extremely common, usually cleared, can lie dormant for years — not evidence of recent infection or infidelity**"
+    ]
    ]
   },
   "source": "GYN_08_Cervical_Screening_Counselling_Notability.pdf (Karen, 26, with her first government invitation letter and her mother's pap smears as the comparison — a counselling station with a four-minute history inside it: the concern asked for explicitly so the second one surfaces, the three history boxes with symptoms as the compulsory one, the three changes delivered with HPV, liquid-based and cytology all said aloud, HPV normalised without blame, the procedure described in the order it happens to her with the chaperone and the right to stop, and self-collection offered as a real choice with the cytology limitation stated before she chooses)",
   "drive": "AMC Clinical Notability › Gynecology › GYN_08_Cervical_Screening_Counselling_Notability.pdf",
   "must": [
-   "FAIL — Never asking about SYMPTOMS before offering screening — box two is compulsory, because bleeding after sex, unusual discharge, pain with sex or bleeding between periods move her off the screening pathway onto a diagnostic one",
-   "FAIL — Not answering the concern in the stem — name the pap smear comparison explicitly: 'your mum's test looked at the CELLS; this one looks first for the VIRUS that causes the changes'",
-   "FAIL — Skipping the sexual history, which is the reason the test exists and is itself a mark — and if she has NEVER been sexually active, screening is not indicated yet, and saying so scores",
-   "FAIL — Omitting the three keywords that must leave your mouth — HPV · LIQUID-BASED · CYTOLOGY — and the reason five years is safe: the virus takes ten to fifteen years to cause a cancer",
-   "FAIL — Not offering SELF-COLLECTION, or offering it without its limitation — a vaginal sample is tested for the virus only, so a non-16/18 result means coming back for a clinician-collected sample",
-   "DO — Ask for the second concern explicitly ('anything else you were hoping I would explain?'), because she is nervous about the examination and says so only if asked — then offer the chaperone, and normalise HPV without blame: common, usually cleared, dormant for years, so it says nothing about her partner"
-  ]
+   "FAIL — Never asking about **symptoms** before offering screening. Symptoms move her to a **diagnostic** pathway, not a screening one.",
+   "FAIL — Not answering **the concern in the stem**. Name the pap smear comparison explicitly.",
+   "FAIL — Omitting any of the three keywords: **HPV · liquid-based · cytology**.",
+   "FAIL — Not offering **self-collection**, or offering it **without its limitation**.",
+   "ASK — **Is there anything else you're worried about, or anything you were hoping I'd explain today?**",
+   "ASK — **Have you had any bleeding after sex?** and the rest of the symptoms box."
+  ],
+  "v2": true
  },
  {
   "id": "OG-36",
