@@ -72583,7 +72583,6 @@
   "cat": "og",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "A telephone call twenty minutes after delivery, and the only information you are given is one blood pressure reading. The two special questions are what medications she has had — named, because 'Any medications?' Gets 'The usual for the third stage' — and how much IV fluid. The explanation must be a list with the most likely first and postpartum pre-eclampsia kept open, not one cause.",
   "stem": [
    "You are the doctor on duty in a rural South Australian maternity unit, with the obstetric registrar and consultant reachable by phone and MedSTAR for retrieval. The midwife calls: a 32-year-old woman delivered 20 minutes ago and her blood pressure is 190/100. She was diagnosed with gestational hypertension at 39½ weeks, had an induction for it, and has lost 250 mL of blood.",
    "You have one reading and nothing else until you ask. Tasks: talk to the midwife and take a history, including the examination findings you direct her to obtain — explain the reason for the high blood pressure and the likely causes — explain your management plan. 8 minutes."
@@ -72593,128 +72592,248 @@
    "Explain the likely causes of the high blood pressure",
    "Explain your management plan"
   ],
-  "time": "Thirty seconds to introduce and ask an open question · ninety seconds of resuscitation checklist · two and a half minutes across four history boxes and the directed examination · a minute on the causes, most likely first · and two and a half minutes of management, the consultant call, monitoring and a closed-loop read-back.",
   "findings": [
    [
-    "What comes back, and the grade you say out loud",
-    "Awake, talking, HOLDING THE BABY · RR 18, SATS 98 · PULSE 88, TEMP 37.1 · TWO READINGS FIVE MINUTES APART, 190/100 AND 186/102 · cannula already in from the induction. SAY IT: 'SO THIS IS SEVERE HYPERTENSION.' THE CUFF VARIANT EXISTS — one reading only, and on a large cuff it repeats at 148/92"
+    "Her opening",
+    "'Sarah, the midwife. I've got a 32-year-old who delivered 20 minutes ago. Her BP is 190 over 100 and I'm worried. She had gestational hypertension from 39½ weeks and was induced. She's lost about 250 mL.' THEN NOTHING MORE until you ask"
    ],
    [
-    "The directed examination, through her hands",
-    "Is she fully alert · any rash or bruising · are you able to do fundoscopy — she cannot · right upper quadrant tenderness · the uterus, firm and tender or not · 'Please check her reflexes and for ankle clonus' — normal, no clonus · a urine dipstick for protein when she next passes urine · and the cord blood group, because she is O negative"
+    "Resuscitation answers",
+    "Awake, talking, holding the baby · airway fine, RR 18, sats 98% · pulse 88, temp 37.1 · TWO readings five minutes apart, 190/100 and 186/102 · IV cannula already in from the induction"
    ],
    [
-    "Bloods and the antihypertensive, by name and dose",
-    "Bloods from the cannula: UEC with creatinine and eGFR, full blood count with platelets and haemoglobin, liver function, and a spot urine protein as well as the dipstick · then labetalol 20 mg IV over two minutes; if still above 160/110 at ten minutes, 40 mg, then 80 mg · if labetalol is unavailable or she is asthmatic, hydralazine 5 to 10 mg IV repeated every 20 minutes · aiming below 160/110 first, then towards 110–140/80–85. Doses without a repeat interval is the trap, and she will ask 'What do you want me to give, doctor?' if you are vague"
+    "The pregnancy",
+    "Uncomplicated until 39½ weeks — BP 150/95 at a clinic visit, started on ORAL LABETALOL and booked for induction. PRE-ECLAMPSIA SCREEN NEGATIVE: urine protein negative, kidney and liver bloods and platelets normal. First baby"
+   ],
+   [
+    "The delivery",
+    "Normal vaginal at 40 weeks after a FOURTEEN-HOUR INDUCTION. No instruments, no episiotomy — a SECOND-DEGREE TEAR, not yet sutured"
+   ],
+   [
+    "★ IF YOU ASK 'ANY MEDICATIONS?' VAGUELY",
+    "'The usual for the third stage' — AND SHE WAITS. The midwife answers what you ask. She knows what an NSAID is; NAME THE DRUGS"
+   ],
+   [
+    "★ IF YOU NAME THEM",
+    "'SYNTOMETRINE at the birth — and I gave her DICLOFENAC about ten minutes ago for the tear.' Both raise blood pressure"
+   ],
+   [
+    "★ IF YOU NEVER ASK ABOUT DRUGS BY 4:30",
+    "She prompts: 'Do you want to know what she's had?' — you have already lost the mark"
+   ],
+   [
+    "The fluid, the pain, the bleeding",
+    "About 2.5 LITRES of IV fluid with the Syntocinon · pain 6/10 from the tear and afterpains, 'a bit shaky' · bleeding HAS STOPPED, uterus FIRM and contracted below the umbilicus"
+   ],
+   [
+    "The baby",
+    "3.5 kg, APGARS 9 AND 9, skin to skin. A reassuring Apgar closes the box in ten seconds"
+   ],
+   [
+    "Symptom sweep — all negative",
+    "No headache, no visual problems, no dizziness, no chest pain, no breathlessness, no right upper quadrant pain, no nausea"
+   ],
+   [
+    "Directed examination",
+    "Fully alert · no rash or bruising · 'I CAN'T DO FUNDOSCOPY, sorry' — an acceptable answer, say you will do it on arrival · no RUQ tenderness · uterus firm, not tender · REFLEXES NORMAL, NO CLONUS · dipstick when she next passes urine"
+   ],
+   [
+    "The detail that earns five seconds",
+    "Mother is O NEGATIVE — so ask for the CORD BLOOD GROUP, and if the baby is Rh positive she needs anti-D 625 IU IM within 72 hours with a Kleihauer"
+   ],
+   [
+    "If you are vague about treatment",
+    "'What do you want me to give, doctor?' — she pushes back ONCE on a vague plan"
+   ],
+   [
+    "CARD 3 — clonus",
+    "'Her head is pounding and she's seeing flashing lights. Reflexes brisk, THREE BEATS OF CLONUS.' PRE-ECLAMPSIA WITH SEVERE FEATURES — magnesium sulfate NOW, 4 g over 20 min then 1 g/h, labetalol as planned, hourly reflexes/RR/urine output, calcium gluconate at the bedside, consultant and MedSTAR"
+   ],
+   [
+    "CARD 4 — the uterus is soft",
+    "'It's not stopping — the uterus feels boggy and she's soaked another pad.' This becomes the PPH station: fundal massage, empty the bladder, OXYTOCIN 10 units IV — NO ERGOMETRINE with this pressure — second cannula, group and hold, weigh the pads, MTP at a litre"
+   ],
+   [
+    "CARD 5 — day 5 at home",
+    "Community midwife: BP 165/105 with a headache. DAYS 3–6 IS THE PEAK WINDOW for postpartum pre-eclampsia. She comes to hospital NOW — by ambulance if the headache is severe or there are visual symptoms. Do NOT manage it by phone"
+   ],
+   [
+    "CARD 6 — the wrong cuff",
+    "Repeat on a large cuff reads 148/92 with no symptoms. STILL investigate — oral agent and monitoring, not a shrug"
    ]
   ],
   "back": {
-   "dx": "SEVERE POSTPARTUM HYPERTENSION ON A BACKGROUND OF GESTATIONAL HYPERTENSION, DRIVEN BY PAIN, DRUGS AND FLUID — WITH POSTPARTUM PRE-ECLAMPSIA NOT YET EXCLUDED. THE NUMBERS: HYPERTENSION IS 140/90 OR ABOVE AND SEVERE IS 160 SYSTOLIC AND/OR 110 DIASTOLIC OR ABOVE, WITH A TARGET OF 110–140 OVER 80–85 · LABETALOL 20 THEN 40 THEN 80 mg IV AT TEN-MINUTE INTERVALS TO A MAXIMUM OF 300 mg · HYDRALAZINE 5 TO 10 mg IV EVERY 20 MINUTES · NIFEDIPINE 10 TO 20 mg ORALLY · PARACETAMOL 1 g · MAGNESIUM SULFATE 4 g OVER 15 TO 20 MINUTES THEN 1 g PER HOUR, WITH TOXICITY MONITORED BY REFLEXES, A RESPIRATORY RATE UNDER 12 AND URINE OUTPUT UNDER 100 mL IN 4 HOURS, AND CALCIUM GLUCONATE 10% 10 mL AT THE BEDSIDE · BLOODS ARE UEC AND eGFR, URINE PROTEIN, FBE WITH PLATELETS AND HAEMOGLOBIN, AND LFTs · OBSERVATIONS EVERY 15 MINUTES UNTIL BELOW 160/110 · ANTI-D 625 IU WITHIN 72 HOURS IF THE BABY IS RHESUS POSITIVE · FOLLOW-UP IN 3 TO 7 DAYS AND WITH THE GP AT 6 WEEKS · MedSTAR 1300 13 12 33 VERIFY ALL. NOTE ALSO THAT 250 mL IS NOT A POSTPARTUM HAEMORRHAGE — PPH IS 500 mL OR MORE — WHICH IS WHY THE FLUID QUESTION MATTERS AND WHY A BOLUS IS WRONG HERE. THE VARIANT CARDS CHANGE THE STATION COMPLETELY. CLONUS: 'she has just told me her head is pounding and she is seeing flashing lights; reflexes are brisk and there are THREE BEATS OF CLONUS' → 'THEN THIS IS PRE-ECLAMPSIA WITH SEVERE FEATURES UNTIL PROVEN OTHERWISE AND SHE IS AT RISK OF A SEIZURE. MAGNESIUM SULFATE NOW — 4 g IV OVER 20 MINUTES THEN 1 g AN HOUR — and the labetalol as planned. Check reflexes, respiratory rate and urine output hourly, CALCIUM GLUCONATE AT THE BEDSIDE. Consultant now, and I am calling MedSTAR for retrieval. DIM THE LIGHTS, ONE-TO-ONE CARE, KEEP THE BABY WITH A SUPPORT PERSON.' THE SOFT UTERUS: 'actually it is not stopping — the uterus feels boggy and she has soaked another pad' → 'Then we have A POSTPARTUM HAEMORRHAGE ON TOP OF THE HYPERTENSION. Fundal massage now, empty the bladder, OXYTOCIN 10 UNITS IV — NO ERGOMETRINE WITH THIS PRESSURE — second cannula, bloods including group and hold, WEIGH THE PADS, and I am coming now. If it reaches a litre we activate the massive transfusion protocol.' AND DAY FIVE AT HOME, called by the community midwife with a BP of 165/105 and a headache → 'DAY THREE TO SIX IS THE PEAK FOR POSTPARTUM PRE-ECLAMPSIA. She needs to come to hospital now — BY AMBULANCE IF THE HEADACHE IS SEVERE OR SHE HAS VISUAL SYMPTOMS — for bloods, urine protein and IV treatment. PLEASE DO NOT MANAGE THIS AT HOME.' WHAT THE EXAMINER IS ASSESSING, STATED PLAINLY IN THE SOURCE: a structured telephone assessment with each phase announced · WHETHER YOU ASK THE TWO SPECIAL QUESTIONS — medications by name and how much fluid · whether you ask about PAIN and whether the BLEEDING HAS STOPPED · whether you KEEP POSTPARTUM PRE-ECLAMPSIA ON THE LIST and screen for it with symptoms, reflexes, urine and bloods · and whether you NAME SEVERE HYPERTENSION, GIVE AN IV ANTIHYPERTENSIVE BY NAME, AND CALL THE CONSULTANT. AND THE LAST TRAP IS THE EASIEST ONE TO FALL INTO: 'I'LL COME AND SEE HER' IS NOT A PLAN — THE PLAN IS WHAT HAPPENS BEFORE YOU ARRIVE.",
+   "dx": [
+    "**Severe postpartum hypertension — 190/100 — on a background of gestational hypertension, most likely exacerbated by PAIN after a long induced labour, by a DRUG (ergometrine or an NSAID), and by FLUID — with postpartum pre-eclampsia NOT YET EXCLUDED.**",
+    "**THE DISCRIMINATING BEHAVIOUR IS A PAIR OF QUESTIONS THAT ORDINARY HYPERTENSION HISTORY-TAKING DOES NOT CONTAIN: 'what medication has she had — was she given ergometrine? Any NSAIDs?' and 'how much IV fluid has she received?'** — **asked BY NAME, to a midwife who knows what they are, and followed by 'is she in pain?' and 'has the bleeding stopped?'** **Candidates who run the antenatal pre-eclampsia script and never ask these explain the blood pressure wrongly and manage only half of it.**",
+    "**Three phases, ANNOUNCED: RESUSCITATE → GATHER (pregnancy, delivery, baby, symptoms) → MANAGE.** The source calls this case 'a mess' unless you divide it — and the spine is identical to the primary PPH telephone station with the content swapped.",
+    "**Thresholds: hypertension ≥140/90 on two readings. SEVERE ≥160 systolic AND/OR ≥110 diastolic. Target once treated around 110–140 / 80–85.** VERIFY",
+    "CORRECTION — **SOMANZ defines severe as ≥160 systolic and/or ≥110 diastolic, NOT 160/100. Her 190 systolic puts her there.** If challenged: **'the severe threshold is 160 or 110; her systolic of 190 puts her there.'**",
+    "CORRECTION — **the uterotonic that raises blood pressure is ERGOMETRINE (and Syntometrine, which contains it). 'Ergotamine' is a migraine drug.** If challenged: **'the third-stage drug I'm asking about is ergometrine; it causes vasoconstriction and is avoided in hypertensive women.'**",
+    "**Keep POSTPARTUM PRE-ECLAMPSIA on the list and screen for it. The same definition applies after birth — hypertension plus proteinuria or organ involvement — and signs first appear postpartum in a significant minority of cases, most often DAYS 3–6 but up to six weeks.** VERIFY the quoted percentages; **say 'a significant minority' unless you have checked them.** Screen with **symptoms, reflexes, clonus, dipstick and bloods.**",
+    "**The causes, named MOST LIKELY FIRST: exacerbated gestational hypertension · pain · ergometrine or Syntometrine · NSAIDs · fluid overload with the loss of pregnancy vasodilation · postpartum pre-eclampsia or HELLP, not excluded · and, in one sentence at the END, phaeochromocytoma, thyrotoxicosis and renal disease.** **Opening with phaeochromocytoma is a named error.**",
+    "**MANAGEMENT WITH NAMES AND DOSES. Bloods: UEC, creatinine, eGFR · FBE with platelets and haemoglobin · LFT · urine protein (dipstick now, spot PCR). LABETALOL 20 mg IV over 2 minutes, then 40, then 80 at 10-minute intervals, max 300 — or HYDRALAZINE 5–10 mg IV repeated every 20 minutes — or oral NIFEDIPINE 10–20 mg if no IV. PARACETAMOL 1 g for the pain. STOP the ergometrine, WITHHOLD NSAIDs until renal function and platelets are known, and repair the tear with good local anaesthetic. Call the CONSULTANT. Discuss MAGNESIUM SULFATE — 4 g IV over 15–20 min then 1 g/hour — which becomes mandatory if she develops headache, visual symptoms or clonus.** VERIFY",
+    "**Monitoring and follow-up: BP every 15 minutes until below 160/110, then half-hourly · neuro observations · strict fluid balance with NO further boluses · fundus and lochia checks · baby stays with her.** **Oral maintenance once controlled: labetalol 100–200 mg tds, nifedipine XR 20–30 mg daily, or enalapril — all compatible with breastfeeding.** **Before discharge: written safety-net — headache, visual disturbance, RUQ pain, breathlessness, swelling, fits. Community BP check within 3–7 days, GP at 6 weeks. Long term, hypertensive disorders of pregnancy roughly double later cardiovascular risk.** SA: **MedSTAR 1300 13 12 33** for retrieval to a level 5–6 unit if uncontrolled or severe features develop; **Country Health Connect**; ACCHS and Aboriginal Family Birthing Program; **TIS National 131 450**."
+   ],
    "plan": [
     [
      "0:00",
-     "Introduce yourself, ask who you are speaking with, and ask what has happened — then announce the three phases."
+     "**Open the call**: **'Hello, this is Dr ___, the doctor on duty. Who am I speaking with?'** then **'thanks for calling, Sarah. Can you tell me what has happened so far?'** **Do not launch into drugs — the opening earns rapport and the detail she is scripted to add.**"
     ],
     [
      "0:30",
-     "Alert and responsive · send for help and notify registrar and consultant · airway, breathing, respiratory rate and sats."
+     "**Announce the three phases**: **'I'm going to do three things: make sure she's safe right now, then ask you some questions, then give you a plan. First — is she alert and responsive?'**"
     ],
     [
-     "1:00",
-     "Pulse and temperature · how many BP readings and repeat it on the correct cuff · IV access, and no fluids for now."
+     "0:45",
+     "**Phase 1, in order**: **'please send for help — notify the obstetric registrar and the consultant'** · airway patent, breathing, **respiratory rate and saturations** · **pulse and temperature** · **'how many times has the blood pressure been checked? Please repeat it now, correct cuff size'** · **'does she have an IV line? No fluids for the moment.'**"
     ],
     [
-     "1:40",
-     "Say 'This is severe hypertension' out loud, then signpost the history: pregnancy, delivery, baby."
+     "1:45",
+     "**Say the number back**: **'so this is severe hypertension — 190 systolic.'** Then signpost into the history: **'she's stable for now — can I ask about the pregnancy first, then the delivery, then the baby?'**"
     ],
     [
      "2:00",
-     "The pregnancy box — complications, when the hypertension was diagnosed and how treated, the pre-eclampsia screen, previous pregnancies."
+     "**Box 1, PREGNANCY**: complications — blood pressure, sugars, kidneys · **'when was the hypertension diagnosed, and was she TREATED?'** · **'was she investigated for pre-eclampsia — urine protein, kidney function, liver tests?'** · **'any previous pregnancies, and any high blood pressure in them, especially AFTER the birth?'**"
     ],
     [
      "2:40",
-     "THE DELIVERY BOX — route, term, duration, instruments, tears · THEN ERGOMETRINE OR SYNTOMETRINE AND NSAIDs BY NAME · AND HOW MUCH IV FLUID."
+     "**Box 2, DELIVERY — where the special questions live**: route, term, **how long was the labour**, instruments, cuts or tears."
     ],
     [
-     "3:20",
-     "Pain and anxiety · has the bleeding stopped and is the uterus firm · then the baby and the apgar."
+     "3:00",
+     "**★ THE TWO SPECIAL QUESTIONS, BY NAME**: **'what medications has she had? Was she given ERGOMETRINE or SYNTOMETRINE for the third stage? Any NSAIDs — ibuprofen, diclofenac?'** and **'HOW MUCH IV FLUID has she received?'** **Asking 'any medications?' gets 'the usual' and nothing more.**"
     ],
     [
-     "3:50",
-     "THE PRE-ECLAMPSIA SYMPTOM SWEEP — headache, vision, dizziness, chest pain, breathlessness, RIGHT UPPER QUADRANT PAIN, nausea."
+     "3:25",
+     "**Then the two that complete the box**: **'is she in pain right now? Is she anxious or worried about anything?'** and **'you said 250 mL — HAS THE BLEEDING STOPPED? Is the uterus firm?'** **Say it out loud: 'so this is not a haemorrhage — I'm treating the pressure.' 250 mL is below the 500 mL PPH threshold.**"
     ],
     [
-     "4:10",
-     "THE DIRECTED EXAMINATION — alertness, rash, fundoscopy, RUQ tenderness, uterus, REFLEXES AND CLONUS, DIPSTICK, AND CORD BLOOD GROUP."
+     "3:45",
+     "**Box 3, BABY — ten seconds**: **'how is the baby doing? What was the Apgar? Weight? Is the baby with her?'** 3.5 kg, Apgars 9 and 9."
     ],
     [
-     "4:30",
-     "Explain the causes as a list, most likely first, with pre-eclampsia kept open (see findings)."
+     "3:55",
+     "**Box 4, SYMPTOM SWEEP — brain, heart, lungs, liver in one breath**: **'headache, blurred vision, dizziness? Any chest pain or shortness of breath? Any abdominal pain, particularly under the right ribs? Nausea?'**"
     ],
     [
-     "5:30",
-     "Bloods named, then labetalol with dose and repeat interval and the target, with hydralazine as the alternative."
+     "4:15",
+     "**DIRECTED EXAMINATION — six things, not a systems review**: **'is she fully alert? Any rash, bruising or petechiae? Are you able to do fundoscopy — if not that's fine, I'll do it when I arrive. Please check for right upper quadrant tenderness, and the uterus — firm and contracted, tender? Please check her REFLEXES and for ANKLE CLONUS. And a dipstick for protein when she next passes urine.'**"
     ],
     [
-     "6:20",
-     "Treat the causes — paracetamol 1 g, hold the NSAID, no ergometrine, repair the tear with good local, no further boluses."
+     "4:40",
+     "**The five-second addition**: **'and she's O negative — please send the cord blood group. If the baby is Rh positive she'll need anti-D within 72 hours.'**"
     ],
     [
-     "6:50",
-     "Call the consultant and raise magnesium sulfate · then monitoring: 15-minutely BP, neuro obs, strict fluid balance, fundus and lochia, baby stays."
+     "4:50",
+     "**TASK 2 — the causes, MOST LIKELY FIRST**: **'she already has gestational hypertension, and it has become severe. The most likely reasons it has spiked now are pain after a long labour and a tear, the fluid she had in labour, and — if she had them — ergometrine or anti-inflammatories, which both push the blood pressure up.'**"
     ],
     [
-     "7:30",
-     "MedSTAR if uncontrolled or severe features develop · ask her to explain it to the woman · and ask her to read the plan back."
+     "5:15",
+     "**Keep pre-eclampsia open, explicitly**: **'I can't yet exclude pre-eclampsia developing after the birth — it can show up for the first time postpartum — which is why we're checking symptoms, reflexes, urine and bloods.'** Then **one sentence at the end**: thyroid or adrenal causes are possible but much less likely today."
+    ],
+    [
+     "5:35",
+     "**TASK 3 — bloods first**: **'please take bloods from the cannula: electrolytes, creatinine and eGFR; full blood count with platelets and haemoglobin; liver function. And a spot urine protein as well as the dipstick.'**"
+    ],
+    [
+     "5:55",
+     "**The IV antihypertensive, BY NAME AND DOSE**: **'labetalol 20 mg IV over two minutes; if still above 160 over 110 after ten minutes, 40 mg, then 80 mg. If labetalol isn't available or she's asthmatic, hydralazine 5 to 10 mg IV every 20 minutes. Aiming initially below 160 over 110, then towards 110–140 over 80–85.'**"
+    ],
+    [
+     "6:30",
+     "**Treat the CAUSE as well as the number**: **'paracetamol 1 gram now, oral or IV. No NSAIDs until we have her kidney function and platelets, and no ergometrine. Get that tear repaired with good local anaesthetic.'** **No further fluid boluses; start a fluid balance chart.**"
+    ],
+    [
+     "7:00",
+     "**The consultant, and magnesium**: **'I'm calling the consultant now. I'll discuss magnesium sulfate with them — with a pressure this high it may be indicated even without pre-eclampsia features, and it becomes mandatory if she develops headache, visual symptoms or clonus.'**"
+    ],
+    [
+     "7:25",
+     "**Monitoring and the closed loop**: **BP every 15 minutes until below 160/110 then half-hourly, neuro obs, strict fluid balance, fundus and lochia checks, baby stays with her.** Add **MedSTAR if it cannot be controlled or severe features develop.** Then **'can you read that back to me?'** and **'please tell her what we're doing and why — I'm on my way.'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source gives an explicit clock - 30 s open, 90 s resuscitation, 2.5 min history and examination, 1 min causes, 2.5 min management",
-   "ask": [
-    "The two special questions, asked by name: 'Was she given ergometrine or Syntometrine for the third stage? Any NSAIDs — ibuprofen, diclofenac?' and 'How much IV fluid has she received?'",
-    "The two that are easy to forget entirely: 'Is she in pain right now?' and 'Has the bleeding stopped — is the uterus firm?'",
-    "The one-line formulation: 'She has severe hypertension on a background of gestational hypertension, most likely driven by pain, drugs and fluid; pre-eclampsia isn't excluded yet.'",
-    "The drug line with its ladder and target: 'Labetalol 20 mg IV over two minutes, then 40, then 80 if needed — aiming below 160 over 110.' and the non-drug half: 'Paracetamol 1 g; no NSAIDs, no ergometrine.'",
-    "CHALLENGES: 'give her something for the pressure' → she will ask WHAT do you want me to give · 'so should I hold the diclofenac?' → yes, and no ergometrine · 'do you want to know what she's had?' at 4:30 if you never asked about drugs · brisk reflexes with THREE BEATS OF CLONUS → magnesium now and retrieval · a BOGGY UTERUS AND ANOTHER SOAKED PAD → PPH on top, oxytocin NOT ergometrine · and DAY FIVE AT HOME WITH 165/105 AND A HEADACHE → hospital now, not managed at home."
-   ],
    "pefe": [
-    "There is no patient in front of you — the examination is directed through the midwife, and the sequence is alertness, rash, fundi, right upper quadrant, uterus, reflexes and clonus, dipstick. She cannot do fundoscopy, and saying so is part of the script rather than a failure of the request. The cord blood group is asked for because she is O negative.",
-    "Role-player: SARAH, a midwife with ten years' experience, CALM AND COMPETENT. Her patient is 32, FIRST BABY, normal vaginal birth at 40 weeks AFTER A 14-HOUR INDUCTION for gestational hypertension diagnosed at 39½ weeks at 150/95, with oral labetalol started and A NEGATIVE PRE-ECLAMPSIA SCREEN. SYNTOMETRINE AT THE BIRTH, DICLOFENAC TEN MINUTES AGO for a second-degree tear, ABOUT 2.5 LITRES OF IV FLUID IN LABOUR. Loss 250 mL and stopped, uterus firm. Baby 3.5 kg, Apgars 9 and 9. MOTHER O NEGATIVE.",
-    "How she plays it: she answers only what is asked, volunteers the stem sentence and nothing more. If asked 'Any medications?' Without names she says 'The usual for the third stage' and waits. If drugs have not come up by 4:30 she prompts: 'Do you want to know what she's had?' She pushes back once on a vague plan — 'What do you want me to give, doctor?' — and will read the plan back accurately if asked.",
-    "THE CHECKLIST: introduced self and asked who, with an open question · ANNOUNCED THE THREE PHASES · responsiveness, then help, then airway and breathing, then pulse, sats and temperature, then REPEAT BP, then IV · asked whether the hypertension was TREATED and whether she was SCREENED FOR PRE-ECLAMPSIA · delivery route, duration, instruments, tears · ASKED ERGOMETRINE AND NSAIDs BY NAME · ASKED HOW MUCH FLUID, WHETHER SHE IS IN PAIN, AND WHETHER THE BLEEDING HAS STOPPED · asked about the baby and Apgar · SYMPTOM SWEEP FOR PRE-ECLAMPSIA · DIRECTED EXAMINATION INCLUDING REFLEXES AND CLONUS · EXPLAINED CAUSES WITH THE MOST LIKELY FIRST AND PRE-ECLAMPSIA KEPT OPEN · BLOODS NAMED AND IV DRUG NAMED WITH DOSE · paracetamol given and the offending drugs stopped · CALLED THE CONSULTANT AND DISCUSSED MAGNESIUM · monitoring plan and CLOSED-LOOP READ-BACK.",
-    "Open, then announce the three phases — 'Hello, this is Dr [name], the doctor on duty. WHO AM I SPEAKING WITH? … Thanks for calling, Sarah. CAN YOU TELL ME WHAT HAS HAPPENED SO FAR? … I'M GOING TO DO THREE THINGS: MAKE SURE SHE IS SAFE RIGHT NOW, ASK YOU SOME QUESTIONS, THEN GIVE YOU A PLAN.' Launching into drugs is the trap — the opening earns rapport and the extra detail the role-player is scripted to add",
-    "Phase 1 — resuscitation, in this order — IS SHE ALERT AND RESPONSIVE · SEND FOR HELP, NOTIFY THE REGISTRAR AND CONSULTANT · airway, breathing, RESPIRATORY RATE AND SATURATION · PULSE AND TEMPERATURE · 'HOW MANY TIMES HAS THE BLOOD PRESSURE BEEN CHECKED? PLEASE REPEAT IT NOW, CORRECT CUFF SIZE' · AND DOES SHE HAVE IV ACCESS — 'if not, put one in now. NO FLUIDS FOR THE MOMENT.' Acting on one reading, or ordering a fluid bolus for a bleed that has stopped, is the trap",
-    "The pregnancy box — Complications — blood pressure, sugars, kidney problems · when was the hypertension diagnosed and was she treated · was she investigated for pre-eclampsia — urine protein, kidney function, liver tests · previous pregnancies and any high blood pressure in them, especially after the birth. Answers: uncomplicated until 39½ weeks at 150/95, started on oral labetalol and booked for induction, pre-eclampsia screen negative, first baby",
-    "The delivery box — the two special questions live here — Route, term, how long the labour, instruments, cuts · then: 'What medications has she had? Was she given ergometrine or Syntometrine for the third stage? Any NSAIDs — ibuprofen, diclofenac?' · and 'How much IV fluid has she received?' Ask vaguely and she says 'The usual for the third stage' and waits. Ask by name and you get Syntometrine at the birth and diclofenac ten minutes ago for the tear, plus about 2.5 litres of IV fluid",
-    "The two questions people forget to ask at all — 'Is she in pain right now? Is she anxious or worried about anything?' → the tear is sore and she has afterpains, 6 out of 10, and she is a bit shaky · and 'You said 250 mL — has the bleeding stopped? Is the uterus firm?' → stopped, firm and contracted below the umbilicus",
-    "The baby and the pre-eclampsia symptom sweep — How is the baby, WHAT WAS THE APGAR — 3.5 kg, 9 AND 9, skin to skin · THEN: HEADACHE, BLURRED VISION, DIZZINESS · CHEST PAIN OR BREATHLESSNESS · ABDOMINAL PAIN ESPECIALLY UNDER THE RIGHT RIBS · NAUSEA. All negative here apart from the afterpains",
-    "The explanation — a list, not one cause — 'She ALREADY HAS GESTATIONAL HYPERTENSION AND IT HAS BECOME SEVERE — 190 systolic. The most likely reasons it has spiked now are PAIN AFTER A LONG LABOUR AND A TEAR, THE FLUID SHE HAD IN LABOUR, AND THE ERGOMETRINE AND ANTI-INFLAMMATORIES, WHICH BOTH PUSH BLOOD PRESSURE UP. I CANNOT YET EXCLUDE PRE-ECLAMPSIA DEVELOPING AFTER THE BIRTH — IT CAN SHOW UP FOR THE FIRST TIME POSTPARTUM — which is why we are checking symptoms, reflexes, urine and bloods. Thyroid or adrenal causes are possible but much less likely today.' Explaining only pre-eclampsia, or only pain, is the trap",
-    "Treat the causes you just named — Paracetamol 1 g for the pain now, oral or IV · no more NSAIDs until you have kidney function and platelets, and no ergometrine · get the tear repaired with good local anaesthetic · and no further fluid boluses. She asks 'So should I hold the diclofenac?' and the answer is yes",
-    "The consultant, monitoring and the close — 'I am calling the consultant now, and I will discuss magnesium sulfate with them — with a pressure this high it may be indicated even without pre-eclampsia features, and it becomes mandatory if she develops headache, visual symptoms or clonus' · blood pressure every 15 minutes until below 160/110, then half-hourly · neuro observations · strict fluid balance with no boluses · keep checking fundus and lochia · baby stays with her · MedSTAR if it cannot be controlled · and 'Please tell her what we are doing and why — I am on my way.' then ask her to read it back"
+    "**You cannot examine — you DIRECT. Ask for six things, not a systems review: consciousness · rash or bruising · fundi (a 'can't' answer is acceptable) · right upper quadrant and the uterus · reflexes and ankle clonus · a urine dipstick for protein.**",
+    "**Midwives check reflexes and clonus routinely for magnesium monitoring — so ask. CLONUS means severe features.**",
+    "**Repeat the blood pressure on the CORRECT CUFF SIZE before acting.** One reading is not a diagnosis, and a small cuff on a large arm is a real differential.",
+    "**BLOODS: UEC, creatinine and eGFR · FBE with platelets and haemoglobin · LFT · urine protein — dipstick now, spot protein:creatinine ratio.** **Proteinuria converts gestational hypertension into pre-eclampsia.**",
+    "**LABETALOL 20 mg IV over 2 min → 40 mg → 80 mg at 10-minute intervals, max 300 mg. HYDRALAZINE 5–10 mg IV, repeat every 20 minutes. NIFEDIPINE 10–20 mg orally if no IV access.** VERIFY",
+    "**MAGNESIUM SULFATE 4 g IV over 15–20 minutes, then 1 g/hour.** Toxicity monitoring: **reflexes, respiratory rate below 12, urine output below 100 mL in 4 hours** — antidote **calcium gluconate 10%, 10 mL.** VERIFY",
+    "**PARACETAMOL 1 g for pain. STOP ergometrine. WITHHOLD NSAIDs until renal function and platelets are known** — SOMANZ permits them in selected women, UpToDate avoids them, **so say paracetamol first.** VERIFY",
+    "**AVOID: acting on one reading · further IV fluid boluses · a 'pee-fee' of irrelevant systems with the midwife · opening with phaeochromocytoma · giving magnesium without a consultant discussion.**",
+    "**ADD IN FIVE SECONDS: she is O negative — cord blood group, and anti-D 625 IU IM within 72 hours with a Kleihauer if the baby is Rh positive.**",
+    "**Oral maintenance once controlled: labetalol 100–200 mg tds, nifedipine XR 20–30 mg daily, or enalapril — all compatible with breastfeeding.** **Follow-up: BP check within 3–7 days, GP at 6 weeks, wean as it settles; annual cardiovascular review long term; low-dose aspirin from 12 weeks next pregnancy if this proves to be pre-eclampsia.**"
    ],
-   "fails": [
-    "★ Asking 'any medications?' without naming ergometrine and NSAIDs — she answers 'the usual for the third stage' and waits, and the drug cause is never found",
-    "★ Explaining only pre-eclampsia, or only pain — the examiner wants the list with the most likely first and postpartum pre-eclampsia kept open",
-    "Acting on a single blood pressure reading, or giving a fluid bolus for a 250 mL loss that has already stopped",
-    "Giving a drug name without a dose, repeat interval and target, or discussing magnesium sulfate without involving the consultant",
-    "Never asking about pain or whether the bleeding has stopped; skipping reflexes and clonus; or finishing with 'I'll come and see her', which is not a plan — the plan is what happens before you arrive"
-   ],
-   "numbers": [
-    "Hypertension ≥140/90 · severe ≥160 systolic and/or ≥110 diastolic · target 110–140/80–85 · this case 190/100 then 186/102, 20 minutes postpartum, loss 250 mL (PPH is ≥500) · labetalol 20 → 40 → 80 mg IV at 10-minute intervals, max 300 mg · hydralazine 5 to 10 mg IV every 20 minutes · nifedipine 10 to 20 mg orally · paracetamol 1 g",
-    "Magnesium sulfate 4 g over 15 to 20 minutes then 1 g/h · toxicity: reflexes, RR <12, urine <100 ml/4 h · calcium gluconate 10% 10 mL at the bedside · bloods: UEC and eGFR, urine protein, FBE with platelets and Hb, LFTs · obs every 15 minutes until <160/110 · anti-D 625 IU within 72 h if baby Rh positive · follow-up 3 to 7 days, GP at 6 weeks · MedSTAR 1300 13 12 33 · VERIFY all"
+   "ddx": [
+    [
+     "**Exacerbated gestational hypertension**",
+     "Diagnosed at 39½ weeks, treated with oral labetalol; **pre-eclampsia screen NEGATIVE antenatally**",
+     "**'Was she treated? Was she investigated for pre-eclampsia?'**",
+     "**Normal bloods and urine; responds to the IV agent.** The most likely answer — but treat the number regardless. High"
+    ],
+    [
+     "**Pain**",
+     "**Fourteen-hour induction, an unsutured second-degree tear, afterpains 6/10**",
+     "**'Is she in pain right now? Is she anxious?'**",
+     "**Paracetamol 1 g, repair the tear with good local, then re-check the BP.** One of the two things the case is designed around"
+    ],
+    [
+     "**Ergometrine / Syntometrine**",
+     "**Given for the third stage** — vasoconstrictor, avoided in hypertensive women",
+     "**Ask it BY NAME; 'any medications?' gets 'the usual'**",
+     "**Stop it, note it, re-check.** 'Ergotamine' is a migraine drug — do not say it"
+    ],
+    [
+     "**NSAIDs**",
+     "**Ibuprofen or diclofenac given for the tear or afterpains**",
+     "**'Any anti-inflammatories — ibuprofen, diclofenac?'**",
+     "**Withhold until renal function and platelets are known.** Paracetamol first"
+    ],
+    [
+     "**Postpartum pre-eclampsia / HELLP**",
+     "**Headache, visual symptoms, RUQ pain, clonus, low platelets, proteinuria**; peak days 3–6 but up to six weeks",
+     "**The symptom sweep, reflexes, clonus, dipstick**",
+     "**UEC, LFT, FBE/platelets, urine PCR; MAGNESIUM SULFATE if features.** DO NOT MISS"
+    ],
+    [
+     "**Fluid overload**",
+     "**Litres of IV fluid in an induced labour**, plus loss of pregnancy vasodilation",
+     "**'How much IV fluid has she received?'** — 2.5 L here",
+     "**Fluid balance chart; NO further boluses.** Moderate"
+    ],
+    [
+     "**Ongoing postpartum haemorrhage**",
+     "**Soft boggy uterus, continuing loss** — 250 mL is NOT a PPH (threshold 500 mL)",
+     "**'Has the bleeding stopped? Is the uterus firm?'** — close the loop",
+     "**If it has not stopped this becomes the PPH station — and NO ERGOMETRINE with this pressure.** Urgent"
+    ],
+    [
+     "Phaeochromocytoma, thyrotoxicosis, renal disease",
+     "Paroxysms with sweating and palpitations; goitre; known chronic kidney disease",
+     "Mention in ONE sentence **after** the obstetric list",
+     "Metanephrines, TSH, renal work-up later. **Opening with these is a named error.** Low today"
+    ],
+    [
+     "**Anxiety, white-coat, or the wrong cuff**",
+     "**ONE reading; a small cuff on a large arm**",
+     "**'How many readings? Which cuff? Please repeat it now.'**",
+     "**Repeat with the correct cuff, both arms — but still investigate. Not a shrug.** Exclude first"
+    ]
    ]
   },
   "source": "Postpartum_Hypertension_2_Case_Tasks_Script_Notability.pdf (a telephone station — 32-year-old 20 minutes after delivery with a blood pressure of 190/100 on a background of gestational hypertension induced at 39½ weeks; the pass is a structured phone assessment, asking ergometrine and NSAIDs by name and how much fluid, asking about pain and whether the bleeding has stopped, explaining the causes as a list with pre-eclampsia kept open, and naming an IV antihypertensive with its ladder before you arrive)",
   "drive": "AMC Clinical Notability › Obstetrics › Postpartum_Hypertension_2_Case_Tasks_Script_Notability.pdf",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "What the midwife gives you — she answers ONLY what you ask",
   "must": [
-   "FAIL — Asking 'any medications?' without naming ERGOMETRINE or Syntometrine and NSAIDs — she answers 'the usual for the third stage' and waits, so the Syntometrine and the diclofenac given ten minutes ago are never found; and not asking HOW MUCH IV FLUID she has had",
-   "FAIL — Acting on a single blood pressure reading rather than repeating it on the correct cuff, or giving a fluid bolus for a 250 mL loss that has already stopped",
-   "FAIL — Explaining only pre-eclampsia, or only pain — give the list with the most likely FIRST: pain after a long labour and a tear, the fluid, and the drugs — while keeping postpartum PRE-ECLAMPSIA open, because it can appear for the first time after birth",
-   "FAIL — Not screening for pre-eclampsia through her: headache, visual symptoms, right upper quadrant pain, nausea · REFLEXES AND ANKLE CLONUS · urine protein · and bloods — UEC and eGFR, full blood count with platelets, liver function",
-   "FAIL — Giving a drug name without a dose, repeat interval and target — LABETALOL 20 mg IV over two minutes, then 40, then 80 at ten-minute intervals; hydralazine 5-10 mg IV every 20 minutes if she is asthmatic; aim under 160/110 first, then 110-140 over 80-85 — or discussing magnesium sulfate without involving the consultant",
-   "FAIL — Opening with an order instead of 'who am I speaking with?', or ending on 'I'll come and see her', which is not a plan — the plan is what happens before you arrive: paracetamol 1 g, hold the diclofenac and no ergometrine, repair the tear, BP every 15 minutes until below 160/110, neuro obs, strict fluid balance, and a READ-BACK"
-  ]
+   "FAIL — **Never asking about drugs BY NAME.** 'Any medications?' gets 'the usual for the third stage' and nothing more.",
+   "FAIL — **No IV antihypertensive named, with a dose.** 'Bring the pressure down' is not a plan.",
+   "FAIL — **Never calling the consultant** for a systolic of 190 managed down a telephone.",
+   "FAIL — **Acting on one reading**, or **leaving pre-eclampsia off the list** — no symptom sweep, no reflexes, no urine.",
+   "ASK — **Was she given ergometrine or Syntometrine for the third stage? Any NSAIDs — ibuprofen, diclofenac?**",
+   "ASK — **How much IV fluid has she received?** and **is she in pain? Has the bleeding stopped, is the uterus firm?**"
+  ],
+  "v2": true
  },
  {
   "id": "OG-71",
