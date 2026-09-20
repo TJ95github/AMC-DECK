@@ -3245,7 +3245,6 @@
   "id": "OG-17",
   "cat": "og",
   "promptBell": false,
-  "setting": "General practice, regional South Australia.",
   "stem": [
    "You are a general practitioner in a regional South Australian practice. Your next patient is Lily Marchetti, a 24-year-old woman, who has booked an urgent appointment today. She thinks she is pregnant. She works at a childcare centre. The centre has notified staff that a child attending has a confirmed case of rubella. She has been in contact with that child and is frightened about what this means for her and for the pregnancy."
   ],
@@ -3254,87 +3253,166 @@
    "Arrange the relevant investigations, explaining them to the patient",
    "Counsel the patient"
   ],
-  "time": "You have 8 minutes. No physical examination is required. No investigation results will be provided.",
   "back": {
-   "dx": "Rubella exposure in early pregnancy (about 8 weeks by LMP), significant exposure — indoors, 4–5 h/day all week, symptomatic child, immunity status unknown. Three investigations: beta-hCG, rubella IgM and IgG, dating scan. Repeat serology at 2–3 weeks. MMR after delivery, never now. Any decision is hers.",
+   "dx": [
+    "**Rubella contact in a childcare worker who thinks she is pregnant — and you are given NO results on purpose.** Every other counselling station hands you a result to explain. This one asks whether you can lay out **the branching future** clearly enough that a frightened woman leaves knowing exactly what happens next.",
+    "**Three things are deliberately built into the stem.** **'She THINKS she is pregnant'** — it is not confirmed, and if she is not, the problem largely disappears. **The child's case IS confirmed** — so you do not have to establish that, but you must establish **what kind of contact**. And **'urgent appointment'** — she will be visibly anxious from the first second, so **address that once, properly, early**.",
+    "**Congenital rubella syndrome.** Classic triad **sensorineural deafness · cataract · patent ductus arteriosus**, plus **microcephaly and intellectual disability, growth restriction, hepatosplenomegaly, thrombocytopenia with purpuric rash, bone lesions**.",
+    "**The timing rule, which is why the dating scan is not an afterthought. Under 11 weeks: fetal infection ~80%, defects ~85–90%. 11–16 weeks: deafness predominates. Beyond 20 weeks: very rare.** VERIFY. Say it plainly: **'at eight weeks I'd be worried; at twenty-two weeks I'd be reassuring you. I need to know which conversation we're having.'**",
+    "**Subclinical in 25–50%.** **Never say 'you have no rash and no fever, so you are fine.'** She will volunteer the false reassurance herself — correct it gently before she builds on it. **Incubation 14–21 days**; infectious from about 7 days before to 7 days after rash onset. VERIFY",
+    "**Three investigations, each justified in one sentence.** **Serum beta-hCG** — confirm she is pregnant. **Rubella IgM and IgG** — immunity and recent infection. **Dating ultrasound** — the one candidates forget and the one the examiner is waiting for, because everything in the counselling depends on gestational age. Add **parvovirus B19 serology** in a childcare worker with a rash-illness exposure — naming it marks you out.",
+    "**The four-square grid. IgG positive / IgM negative = immune, stop — the only square that lets her go home reassured. EVERYTHING ELSE IS REPEATED AT 2–3 WEEKS.** A single positive IgM can be false; **seroconversion is persisting IgM PLUS a rising IgG titre**. Both negative still gets repeated — **testing too soon after contact is negative before antibodies have formed**. VERIFY local protective thresholds (rubella IgG conventionally about 10 IU/mL). CORRECTION — **the 10 IU/L figure for hepatitis B surface antibody is a separate number; do not transfer it to rubella by analogy.**",
+    "**MMR is live: never in pregnancy, always after delivery** — usually before hospital discharge, **safe in breastfeeding**, and **avoid pregnancy for 28 days afterwards**. The examiner is specifically listening for the words **'after delivery'**.",
+    "**Termination is move six, not move one.** Raise it **proactively but not first**, frame it as an option, **state explicitly that the decision is hers**, and **immediately return to the present**: **'I'm only telling you now so it isn't the first time you've heard it. Let's wait for the results — it is far too early to be worrying about that.'** **If she says she could never do it, accept it immediately and completely** — redirect to surveillance, paediatric and audiology follow-up. **Arguing the figures at her is a communication failure, not thoroughness.**",
+    "**Rubella is notifiable** — a confirmed case goes to the **SA Communicable Disease Control Branch**. **Occupational advice**: avoid febrile or rash-illness children pending results; if infected, **exclusion until four days after rash onset**. VERIFY. **Immunoglobulin is NOT routine prophylaxis** — it does not reliably prevent fetal infection and is considered only where termination is declined, on specialist advice. SA: **Termination of Pregnancy Act 2021 — on request to 22 weeks + 6 days**, two practitioners beyond; **medical termination to 63 days (9 weeks)**, surgical thereafter. VERIFY. Maternal–fetal medicine at the **WCH and FMC**; **SHINE SA** and the **SA Pregnancy Advisory Centre**; **PATS** for scan travel; **TIS National 131 450**; **healthdirect 1800 022 222**."
+   ],
    "plan": [
     [
-     "0:00–0:30",
-     "Open and empathise — one clear empathic statement; the bridge to questions"
+     "0:00",
+     "WIPE, confirm name and date of birth. **'How can I help you today?'** She explains, quickly and anxiously, and interrupts early with **'is the baby going to be alright?'**"
     ],
     [
-     "0:30–2:00",
-     "The exposure: confirmed? where? how long? when? child's symptoms? her vaccination status?"
+     "0:15",
+     "**Do the empathy once, properly**: **'I can see how worried you are, and I do understand — this is a very stressful thing to be told. You have done exactly the right thing coming in today.'** Then bridge to questions. **Do NOT say 'I'm sure it will be fine'** — say **'I can't answer that yet, and I'm not going to guess. What I can do is tell you exactly how we're going to find out.'**"
     ],
     [
-     "2:00–2:45",
-     "Her symptoms: fever, rash, joint pain, lymph nodes, eyes"
+     "0:30",
+     "**The exposure, explored like a presenting complaint — this is the most commonly missed key point.** **Has the child's rubella actually been confirmed with a blood test, or is it a suspicion? · Where were you in contact — indoors in a room, or outside in the yard? · How long — minutes, or the whole session? · When was that, what day? · Did the child have symptoms at the time, a fever or a rash?**"
     ],
     [
-     "2:45–3:30",
-     "The 5 Ps — LMP and cycle regularity first, then the rest"
+     "1:30",
+     "**'Are you up to date with your vaccinations? Childcare workers are usually asked to prove immunity — do you remember being checked?'** She thinks she had everything as a child but never provided her records."
     ],
     [
-     "3:30–4:45",
-     "Investigations — beta-hCG, rubella IgM and IgG, dating scan — each with a reason"
+     "2:00",
+     "**Her own symptoms**: **any fever · any rash anywhere · any joint pains or aching · any swollen glands, particularly behind the ears or in the neck · any red or gritty eyes**."
     ],
     [
-     "4:45–7:30",
-     "Counselling: antibodies, CRS, the scenarios, the repeat, termination, MMR after delivery"
+     "2:30",
+     "**When she says she feels completely fine, correct it gently and out loud**: **'I'm glad you feel well — but between a quarter and a half of people who catch rubella never get any symptoms at all. So feeling well doesn't settle it, and that's exactly why we test rather than guess.'**"
     ],
     [
-     "7:30–8:00",
-     "Close — 'too early to worry', written information, support, follow-up"
+     "2:45",
+     "**The 5 Ps, led by dates**: **when was your last period, are your cycles regular · any pregnancy symptoms, tiredness, nausea, breast tenderness · is your partner supportive · is this your first pregnancy** (if not — **'were the blood tests at the start of that pregnancy normal? Were you told you were immune to German measles?'**) · **cervical screening if she is 25 or over**."
+    ],
+    [
+     "3:30",
+     "**Three investigations, each with its reason.** **beta-hCG** — 'to confirm you actually are pregnant, because if you're not, most of this worry goes away.' **Rubella serology** — 'whether you're already protected, and whether there's any sign of recent infection.'"
+    ],
+    [
+     "4:00",
+     "**The dating scan, and say why**: **'everything we talk about next depends on how many weeks pregnant you are. At eight weeks I'd be worried; at twenty-two weeks I'd be reassuring you. I need to know which conversation we're having.'** Offering only the serology and the beta-hCG is the named omission."
+    ],
+    [
+     "4:45",
+     "**Move 1 — explain what antibodies are BEFORE you use the words.** **'IgM shows a recent infection. IgG shows immunity — either from a vaccine, or from having had it in the past.'** **Move 2 — say why you are concerned**, and name **congenital rubella syndrome**: hearing, eyes, heart."
+    ],
+    [
+     "5:20",
+     "**Move 4 — walk her through every scenario.** **IgG+ / IgM− = immune, no risk to the baby even though she was exposed — the result you are hoping for.** **IgM+ (either IgG) = possible recent infection, not confirmed, false positives happen — repeat in 2–3 weeks and look for persisting IgM with a rising IgG.** **Both negative = still repeat in 2–3 weeks, because testing this soon can be negative before antibodies have formed.**"
+    ],
+    [
+     "6:15",
+     "**Move 5 — if there is no infection.** Avoid febrile or rash-illness children for now, and **'I'll write to your workplace.'** Then: **'we will vaccinate you — but after the baby is born, not now. It's a live vaccine and we don't give live vaccines in pregnancy. It's usually given before you leave hospital and it's safe while breastfeeding.'**"
+    ],
+    [
+     "6:45",
+     "**Move 6 — if infection is confirmed in the first trimester.** Fetal testing — **a sample from the afterbirth tissue or the fluid around the baby**, which carry their own small risk, **'so we'd only do them if the answer would change what you decide.'** Then **the option of ending the pregnancy**, with medication or a procedure depending on gestation."
+    ],
+    [
+     "7:15",
+     "**'I want to be very clear: that would be entirely your decision. Nobody would make it for you, and if you chose to continue, we would support you and look after you and the baby properly.'** Pause for the crying. **If she says she could never do it — accept it immediately, redirect to specialist surveillance and post-natal hearing, eye and heart checks. Do not argue.**"
+    ],
+    [
+     "7:40",
+     "Close with the return to the present: **'let's wait for the results. It is far too early to be worrying about that.'** Written information, **offer to bring her partner for the results**, and a plan to ring as soon as the bloods and the scan are back."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Do not answer 'is the baby alright?' with 'I'm sure it will be fine' — 'I can't answer that yet, and I'm not going to guess; I can tell you exactly how we'll find out'",
-    "Has the child's rubella been confirmed with a blood test, or is it a suspicion?",
-    "Indoors in a room, or outside in the yard? How long — minutes or whole sessions? What day? Did the child have a fever or rash?",
-    "Are you up to date with your vaccinations — were you checked when you started at the centre?",
-    "Any fever? Rash? Aching joints? Swollen glands behind the ears/neck? Red or gritty eyes?",
-    "LMP, cycles regular, pregnancy symptoms; partner supportive; first pregnancy? (if previous: was rubella immunity documented?)",
-    "When she says 'I feel fine so I must be okay' — say that a quarter to a half of people with rubella never get symptoms"
-   ],
    "pefe": [
-    "Investigations, each with a reason: beta-hCG (confirm pregnancy) · rubella serology IgM and IgG (immune? recent infection?) · dating scan ('at eight weeks I'd be worried; at twenty-two weeks I'd be reassuring you — I need to know which conversation we're having')",
-    "Counsel in six moves: what antibodies are (IgM recent, IgG immunity) → why we care (congenital rubella syndrome: hearing, eyes, heart) → the two questions the tests answer → every scenario aloud (IgG+/IgM− immune, no risk · IgM+ possible recent infection, false positives, repeat 2–3 wk, rising IgG confirms · both negative still repeat) → if no infection: avoid febrile/rash children, letter to work, MMR after the baby is born (live vaccine) → if confirmed in first 12 weeks: fetal testing (CVS/amniocentesis, own risk), option of termination, entirely her decision, support either way",
-    "If she says she would never end a pregnancy: accept immediately, plan surveillance with specialists and hearing/eyes/heart checks after birth",
-    "Close: sorry, written information, bring partner for results, ring when results are back"
+    "**No physical examination, and NO results are provided.** The investigations are what you arrange and explain — the station is scored on the explanation, not on interpretation.",
+    "**1. Serum beta-hCG** — confirm the pregnancy. The stem says she *thinks* she is pregnant; if she is not, the problem largely goes away.",
+    "**2. Rubella serology, IgM and IgG** — immunity and recent infection. Explain both markers in lay terms **before** you use the letters.",
+    "**3. Dating ultrasound** (transvaginal in early pregnancy) — **the forgotten one**. Everything in the counselling depends on gestational age, so **say why you want it**.",
+    "**Add parvovirus B19 serology** in a childcare worker with a rash-illness exposure — it is the other transmissible fetal risk in that setting (fetal anaemia and hydrops). **Naming it alongside rubella marks you out.**",
+    "**Full antenatal booking screen if the pregnancy is confirmed**: FBE, blood group and antibodies, ferritin, HIV, syphilis, hepatitis B and C, **varicella IgG**, urine MCS, cervical screening if due.",
+    "**Repeat serology at 2–3 weeks for every result except IgG positive with IgM negative.** That is the single rule to hold.",
+    "**Fetal testing: rubella PCR on chorionic villus or amniotic fluid sampling.** **Fetal IgM is unreliable until late in pregnancy**, and amniocentesis is generally deferred several weeks after maternal infection and beyond about 20 weeks — **which limits its usefulness when the decision is time-critical**. VERIFY",
+    "**Two things to do today beyond the tests**: **notify** the confirmed case to public health, and give **occupational advice** — avoid febrile or rash-illness children pending results, with a letter to the employer.",
+    "**Avoid**: MMR now · acting on a single positive IgM · excluding infection because she is asymptomatic · **routine immunoglobulin prophylaxis**, which does not reliably prevent fetal infection and is not standard Australian practice."
    ],
-   "fails": [
-    "Offering MMR today (live vaccine — single-item fail regardless of everything else)",
-    "Not exploring the exposure — confirmed, place, duration, date, symptoms",
-    "Agreeing that feeling well means she is fine",
-    "Forgetting the dating scan",
-    "Falsely reassuring that the baby will be fine; arguing when she refuses termination"
-   ],
-   "numbers": [
-    "25–50% of rubella infections are subclinical · incubation 14–21 days",
-    "Under 11 weeks: fetal infection ~80%, defects ~85–90% · 11–16 weeks deafness predominates · >20 weeks very rare",
-    "Repeat serology 2–3 weeks · rubella IgG protective ~10 IU/mL VERIFY",
-    "Medical termination to 63 days (9 weeks); SA termination on request to 22 weeks + 6 days VERIFY",
-    "Avoid pregnancy 28 days after MMR · work exclusion until 4 days after rash onset VERIFY",
-    "Variants at 5 min: IgG+/IgM− → immune, no further rubella testing, still dating scan; IgM+/IgG− → repeat 2–3 wk before any serious conversation; confirmed seroconversion at 8 wk → pause, tissues, fetal testing or termination, refer with partner, no decision today; confirmed at 24 wk → lead with reassurance, no termination talk, hearing checked after birth"
+   "ddx": [
+    [
+     "**Rubella**",
+     "Confirmed contact; low-grade fever, **fine pink maculopapular rash spreading face-to-trunk**, **tender posterior auricular and suboccipital nodes**, arthralgia (common in adult women), conjunctivitis",
+     "**The exposure in detail**, then fever, rash, joint pain, nodes, eyes — **and absence of all of it proves nothing**",
+     "**Rubella IgM and IgG, repeated at 2–3 weeks** unless IgG+/IgM−. Notifiable"
+    ],
+    [
+     "**Parvovirus B19 (fifth disease)**",
+     "**Also a childcare exposure**; slapped-cheek rash, arthralgia; causes **fetal anaemia and hydrops**",
+     "Rash in the centre; joint pains",
+     "**Parvovirus B19 serology. Naming this alongside rubella marks you out.** Fetal surveillance with MCA Doppler if positive"
+    ],
+    [
+     "Measles",
+     "Fever, cough, coryza, conjunctivitis, **Koplik spots**, then a confluent rash",
+     "Vaccination status; the pattern and spread of the rash",
+     "Serology and PCR. Notifiable. Risks preterm birth and fetal loss rather than malformation"
+    ],
+    [
+     "Cytomegalovirus",
+     "Often **asymptomatic** or a glandular-fever-like illness; childcare is a recognised exposure",
+     "Contact with young children's secretions",
+     "CMV IgM, IgG and **avidity**. The commonest congenital infection"
+    ],
+    [
+     "Varicella",
+     "Vesicular rash in crops, fever; **maternal pneumonitis** is the danger",
+     "**Varicella IgG** status; the rash description",
+     "VZIG if non-immune and within the window; aciclovir. VERIFY"
+    ],
+    [
+     "Enterovirus",
+     "Fever with a non-specific rash, hand-foot-and-mouth pattern",
+     "Seasonal pattern; oral and palmar lesions",
+     "Usually clinical; supportive"
+    ],
+    [
+     "Drug eruption",
+     "Rash following a new medicine",
+     "**Any new medications** in the preceding weeks",
+     "Withdraw and observe"
+    ],
+    [
+     "**Rubella reinfection**",
+     "**IgG positive AND IgM positive**, with previous documented immunity or vaccination",
+     "Vaccination history; a previous pregnancy's documented IgG",
+     "**Repeat and look for a rise. Fetal risk very low but hard to quantify** — reassure while still involving maternal–fetal medicine"
+    ],
+    [
+     "Not pregnant at all",
+     "**'She THINKS she is pregnant'** — a home test only",
+     "**Last menstrual period, cycle regularity**",
+     "**Serum beta-hCG. If she is not pregnant, the problem largely disappears** — which is why it is investigation one"
+    ]
    ]
   },
   "source": "Rubella_Exposure_Pregnancy_2_Case_Tasks_Script_Notability (1).pdf",
   "drive": "AMC Clinical Notability › Obstetrics › Rubella_Exposure_Pregnancy_2_Case_Tasks_Script_Notability (1).pdf",
   "must": [
-   "FAIL — Offering MMR today: a live vaccine, and a single-item fail regardless of everything else — the examiner is listening for the words AFTER DELIVERY, and she asks for it at about seven minutes if you never raise it",
-   "FAIL — Not exploring the exposure as the presenting complaint — confirmed on a blood test? indoors or outside? how long? which day? did the child have a rash or fever? — plus her own vaccination status",
-   "FAIL — Agreeing that feeling well means she is fine — say it out loud: BETWEEN A QUARTER AND A HALF of people who catch rubella never get any symptoms at all",
-   "FAIL — Ordering only the serology and the beta-hCG — the DATING SCAN is the one candidates forget: 'at eight weeks I'd be worried; at twenty-two weeks I'd be reassuring you, and I need to know which conversation we're having'",
-   "FAIL — Not stating explicitly that the decision would be HERS, or arguing when she says she could never end a pregnancy — accept it at once and redirect to close surveillance and checking the baby's hearing, eyes and heart after birth",
-   "SAY — Never 'I'm sure it will be fine': 'I can't answer that yet, and I'm not going to guess — what I can do is tell you exactly how we'll find out' — then every serology scenario with the REPEAT AT TWO TO THREE WEEKS, including when both are negative"
-  ]
+   "FAIL — Offering **MMR now**. It is a **live vaccine**, contraindicated in pregnancy, and this fails the station regardless of everything else.",
+   "FAIL — Excluding infection because she **feels well**. **A quarter to a half of rubella infections are subclinical.**",
+   "FAIL — Never **exploring the exposure** — confirmed? where? how long? when? the child's symptoms?",
+   "FAIL — Forgetting the **dating scan**; or never raising **termination** at all; or **directing** the decision.",
+   "ASK — **Has the child's rubella been confirmed with a blood test? Indoors or outside? How long? What day?**",
+   "ASK — **When was your last period, and are your cycles regular?**"
+  ],
+  "v2": true
  },
  {
   "id": "OG-18",
   "cat": "og",
   "promptBell": false,
-  "setting": "General practice, regional South Australia.",
   "stem": [
    "You are a general practitioner in a regional South Australian practice. Your next patient is Jenny Marsden, a 28-year-old woman who is pregnant. She has attended for the results of the antenatal screening blood tests you arranged last week. The results are: syphilis serology — negative; hepatitis B surface antigen — negative; hepatitis C antibody — negative; HIV antibody — POSITIVE; confirmatory testing — POSITIVE. This is confirmed HIV infection."
   ],
@@ -3343,87 +3421,173 @@
    "Take a further, focused history",
    "Counsel the patient"
   ],
-  "time": "You have 8 minutes. No physical examination is required.",
   "back": {
-   "dx": "Breaking bad news: newly diagnosed HIV at ~12 weeks in a planned pregnancy. Hidden history: injected drugs and shared needles six years ago; several partners before Ryan, condoms not always; Ryan never tested. Discriminating move: close the empathy phase at ~3 minutes — 'would you prefer we talk about the rest in another consultation?' — then ask permission to continue. Two-thirds of the marks are in the counselling.",
+   "dx": [
+    "**Confirmed HIV infection diagnosed on antenatal screening.** This is **a breaking-bad-news station wearing an obstetric coat**, and the single commonest way to fail it is **to spend eight minutes being kind**. Empathy is scored once; the seven counselling key points are scored seven times.",
+    "**Three people, three goals — say it out loud early and the rest organises itself. One: HER — treat and suppress the virus. Two: THE BABY — prevent vertical transmission. Three: HER PARTNERS — trace, test, treat.**",
+    "**The number that reassures: transmission is roughly 25–30% without intervention, and under 1–2% with antiretroviral therapy, the right mode of delivery, infant prophylaxis and formula feeding.** VERIFY. **Say this number** — it is the single most reassuring thing you can offer her.",
+    "**Say MANAGEABLE, not CURABLE.** Antiretroviral therapy **suppresses, it does not eradicate**. Manageable, effective treatment, **normal life expectancy** — honest and equally reassuring. **'Curable' is a factual error the examiner will catch.**",
+    "CORRECTION — **Western blot has been largely retired in Australian practice.** The current algorithm is a **fourth-generation antigen/antibody screen followed automatically by supplemental testing** — a second immunoassay, an HIV-1/HIV-2 differentiation assay and/or HIV RNA. **The diagnosis is confirmed before it reaches you; your job is to deliver it, not to arrange a further test.** VERIFY",
+    "**Stage 1, today: viral load, CD4 count and resistance testing · notification** (confidential, to the SA Communicable Disease Control Branch, who can also notify partners **anonymously**) · **partner testing** · **referral to a high-risk pregnancy clinic with an obstetrician and, above all, an infectious diseases physician**. **HIV has NO look-back window** — unlike chlamydia (6 months), gonorrhoea (2 months), primary syphilis (3 months).",
+    "**Stage 2, pregnancy.** CORRECTION — older teaching says start ART in the second trimester; **current practice is to start as soon as possible at any gestation**, because time with a suppressed viral load is what reduces transmission. VERIFY. **Viral load at 2–4 weeks after starting or changing, then at least once each trimester and again near delivery.** **No amniocentesis, no chorionic villus sampling**; caution with external cephalic version. **Ultrasound is completely safe.** Goal: **undetectable by delivery.**",
+    "**Stage 3, the birth — and 'it is not always a caesarean' is a marked point, so say it explicitly. Mode is decided around 36 weeks on the viral load: suppressed → vaginal birth is appropriate; unsuppressed (conventionally above about 1000 copies/mL) → elective caesarean.** VERIFY. **No fetal scalp electrodes, no fetal blood sampling, avoid instrumental delivery. Avoid prolonged rupture of membranes and do not rupture artificially without indication. IV antiretroviral cover in labour only if unsuppressed** — routine intrapartum zidovudine is no longer required for women established on combination therapy with suppression.",
+    "**Stage 4, postpartum. Infant antiretrovirals within 6 HOURS of birth — for EVERY baby, before any test result.** We treat first and confirm after. **No breastfeeding** — formula is the Australian recommendation; **cabergoline** for lactation suppression. VERIFY. **Clamp the cord early, towel dry, wipe secretions and blood from the eyes and skin.** CORRECTION — the infant is diagnosed by **virological testing (HIV DNA or RNA PCR)**, not antibody, because **maternal antibody crosses the placenta**; **antibody seroreversion by 18 months** is the final confirmation. Frame it as **'early tests can look positive because of YOUR antibodies, not because the baby is infected.'**",
+    "**If time is short, protect these in order: viral load · specialist referral · ART · mode of delivery depends on viral load · infant treatment within 6 hours · no breastfeeding · partner testing.** Then the closing reassurance. **Cord clamping and eye-wiping are the least important — drop them first.** SA: notification and anonymous contact tracing through **CDCB** and **SAMESH**; **SHINE SA** for sexual health; antenatal HIV care at the **WCH and RAH** infectious diseases service, **FMC** as an alternative — refer **at diagnosis, not at the next routine visit**. **PATS** raised early, because travel cost is a real barrier to adherence in country SA. **Name the confidentiality problem in a small town explicitly** and offer choices: where pathology is collected, which pharmacy dispenses, local versus Adelaide follow-up, telehealth ID review through Country Health Connect. **TIS National 131 450**; **healthdirect 1800 022 222**."
+   ],
    "plan": [
     [
-     "0:00–0:40",
-     "Open, rapport, normals — identity; one exchange of rapport; syphilis and hepatitis results named, 'negative is the good result'"
+     "0:00",
+     "WIPE, confirm name and date of birth. **'How are you today?'** She is cheerful and here for results. **One exchange of rapport — 'was this a planned pregnancy? Congratulations' — then move.**"
     ],
     [
-     "0:40–1:10",
-     "Warning shot and set-up — 'I don't have good news'; offer to bring her partner in"
+     "0:25",
+     "**The normals first — this is the news sandwich, and it is scored**: **'your syphilis test was negative. Your hepatitis B and hepatitis C were negative. Those are all normal, and negative is the good result there.'**"
     ],
     [
-     "1:10–1:30",
-     "The news — 'Both tests positive. You have the HIV infection.' Stop."
+     "0:40",
+     "**The warning shot**: **'we also tested for HIV. I'm afraid I don't have good news about that one.'** Then **'before I go on — would you like your partner, or anyone else, to be here with you?'** The warning shot buys **one beat, not a conversation** — once she says 'just tell me', tell her in the next sentence."
     ],
     [
-     "1:30–2:45",
-     "Empathy and reframe — name it, tissues, water, silence; manageable (not curable), normal life expectancy; normal pregnancy, healthy baby"
+     "1:10",
+     "**The news, in short sentences, no hedging**: **'Jenny, I wish I had better news. The two tests we've done for HIV have both come back positive. That means you have the HIV infection.'** She begins to cry. **Stop talking.**"
     ],
     [
-     "2:45–3:00",
-     "★ The transition — offer another consultation; ask permission for questions"
+     "1:30",
+     "**The empathy phase, four things in order**: **1. Name it — 'I know this is very difficult to hear. I'm so sorry.' 2. Tissues. 3. Water. 4. SILENCE — several seconds. Do not talk over her crying; the silence is scored.**"
     ],
     [
-     "3:00–4:30",
-     "Focused history — transfusion, drugs and needle sharing, occupation/needlestick, tattoos/overseas treatment, sexual history and partner testing, previous STI, symptoms"
+     "2:00",
+     "Answer the two questions she will ask. **'Am I going to die?'** — manageable condition, very effective treatment, **normal life expectancy**. **'Have I given it to my baby?'** — **'without treatment around one in four babies would be affected; with everything we can do, that falls to below one or two in a hundred.'**"
     ],
     [
-     "4:30–7:40",
-     "Counselling — three goals; four stages; seven key points"
+     "2:25",
+     "**The reframe**: **'HIV today is a manageable condition... and the thing I most want you to hear: you can have a normal pregnancy and deliver a healthy baby. There is a great deal we can do, and I'm going to take you through all of it.'**"
     ],
     [
-     "7:40–8:00",
-     "Close — 'normal pregnancy, healthy baby'; support; written information; follow-up with Ryan"
+     "2:45",
+     "**THE TRANSITION — the discriminating move, at about three minutes.** **'Jenny, I know this is a great deal to take in. Would you prefer that we talk about the rest of it in another consultation?'** She says no. **'Then is it alright if I ask you a few questions, and then I'll take you through everything we're going to do?'** **She is not going to stop crying by herself — this hands her control AND gives you permission to move.**"
+    ],
+    [
+     "3:00",
+     "**Preface the history**: **'some of these are personal questions, and I ask them of everyone in this situation — it helps me understand where this may have come from, and who else may need testing.'**"
+    ],
+    [
+     "3:15",
+     "**Acquisition risk**: **any blood transfusion, here or overseas · do you use any drugs — AND have you ever shared needles with anyone · what do you do for work, any needlestick injury · any tattoos or piercings, or medical or dental care overseas**. **Injecting alone does not transmit HIV — sharing equipment does. Ask the second question.**"
+    ],
+    [
+     "3:50",
+     "**Sexual history**: **are you in a stable relationship now · is your partner supportive · have you had other partners, now or in the past · do you use condoms · HAS YOUR PARTNER EVER BEEN TESTED · ever been diagnosed with a sexually transmitted infection**."
+    ],
+    [
+     "4:15",
+     "**Symptoms of established disease**: **weight loss without trying · lumps or swollen glands · night sweats soaking the sheets · unusual tiredness · rashes, thrush, diarrhoea or cough**. **Do NOT moralise about the drug use** — acknowledge, do not judge, use it for contact tracing. If she asks how she got it: **'we often can't say with certainty, and knowing wouldn't change what we do next.'**"
+    ],
+    [
+     "4:40",
+     "**The three goals, named out loud**, then **signpost the four stages** — 'what happens now, during the pregnancy, at the birth, and afterwards'. **Signposting is worth a mark on its own and stops you losing your place.**"
+    ],
+    [
+     "5:10",
+     "**Stage 1 — today**: **viral load** (explain it: 'how much virus is in your blood, and it's the number that guides everything else') · **notification**, confidential, with **anonymous partner notification** available · **referral to the high-risk clinic with obstetrics and infectious diseases**. If she says she can't tell them: **'you don't have to do it yourself... and I can't tell anybody your result without your permission. That is yours.'**"
+    ],
+    [
+     "5:50",
+     "**Stage 2 — pregnancy**: **ART started as soon as we can** · **viral load at 2–4 weeks, then each trimester and near the birth** · **no amniocentesis or afterbirth sampling, because they can carry the virus across — ultrasounds are completely safe**."
+    ],
+    [
+     "6:20",
+     "**Stage 3 — the birth**: **'this is not always a caesarean.'** Decided at **36 weeks on the viral load** — low → vaginal; high → caesarean. **No clips on the baby's scalp, no blood samples from the baby, avoid forceps or suction.** **IV antiviral through a drip in labour if still unsuppressed.**"
+    ],
+    [
+     "6:55",
+     "**Stage 4 — after the birth**: **baby started on antiviral medicine within six hours, every baby, before any result** · **do not breastfeed — the virus passes in breast milk; formula, with medication to stop the milk coming in** · **repeated tests over the first year, using a test that looks for the virus itself rather than antibodies** · **cord clamped early, baby dried, secretions wiped**."
+    ],
+    [
+     "7:40",
+     "**Close on the reassurance, not the restrictions**: **'you can have a normal pregnancy and deliver a healthy baby, and there is a whole team who will support you the whole way.'** Ring the clinic today, print information, offer a review later that week with her partner."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Was this a planned pregnancy? Congratulations (one exchange)",
-    "Would you like your partner, or anyone else, to be here with you?",
-    "'Have I given it to my baby?' → without treatment ~1 in 4; with the full package below 1–2 in 100",
-    "Would you prefer that we talk about the rest of it in another consultation? → Is it alright if I ask you a few questions?",
-    "Blood transfusion, here or overseas? Any drugs? Ever shared needles? Work — needlestick? Tattoos, piercings, treatment overseas?",
-    "Stable relationship? Partner supportive? Other partners, now or past? Condoms? Has your partner ever been tested? Previous STI?",
-    "Weight loss, lumps/glands, night sweats, tiredness, rashes, thrush, diarrhoea, cough?",
-    "'How did I get it?' → often can't say; it wouldn't change what we do next. Never moralise"
-   ],
    "pefe": [
-    "Three goals: her (suppress the virus) · the baby (prevent transmission) · Ryan and previous partners (offer testing)",
-    "TODAY: viral load ('the number that guides everything'); confidential notification, anonymous partner notification available; referral to high-risk pregnancy clinic — GP, obstetrician, infectious diseases specialist",
-    "DURING: antiretroviral therapy as soon as possible; viral load 2–4 wk after starting, then each trimester and near birth; avoid amniocentesis and CVS; ultrasound safe",
-    "BIRTH: mode decided ~36 weeks on viral load — not always a caesarean; low → vaginal; high → caesarean + IV antivirals in labour; no scalp electrodes, no fetal blood sampling, avoid forceps/vacuum",
-    "AFTER: infant antivirals within 6 hours (every baby); no breastfeeding — formula, lactation suppression; infant tests over the first year — early antibody tests can look positive from her antibodies, virus test used, certain by ~18 months; early cord clamping, dry and wipe",
-    "If time is short protect in order: viral load · specialist referral · ART · delivery depends on viral load · infant treatment 6 h · no breastfeeding · partner testing"
+    "**No physical examination.** The results are on the door and the diagnosis is already confirmed — **Australian laboratories run supplemental testing automatically, so a reactive screen is never released as a diagnosis.**",
+    "**Today: viral load, CD4 count and resistance testing.** The **viral load** is the thread through the whole case — it is sent today, monitored through the pregnancy, and **decides the mode of delivery and whether she needs IV antiretrovirals in labour**.",
+    "**Viral load monitoring: 2–4 weeks after starting or changing therapy, then at least once each trimester, and again near delivery.** Goal: **undetectable by delivery**.",
+    "**Avoid amniocentesis and chorionic villus sampling** — they can carry the virus across. Caution with external cephalic version. **Ultrasound is completely safe and proceeds as normal.**",
+    "**Mode of delivery is decided around 36 weeks on the viral load at that time.** Suppressed → vaginal. **Unsuppressed, conventionally above about 1000 copies/mL → elective caesarean.** VERIFY",
+    "**In labour: no fetal scalp electrodes, no fetal blood sampling, avoid instrumental delivery, avoid prolonged rupture of membranes.** IV antiretroviral cover **only if unsuppressed** — routine intrapartum zidovudine is no longer needed for women established on combination therapy with suppression.",
+    "**Infant: antiretrovirals within 6 hours of birth, for every baby, before any result.** VERIFY the current regimen and duration with infectious diseases. Stopped later if the infant is shown to be uninfected — **treatment first, diagnosis after**.",
+    "**Infant diagnosis is by HIV DNA or RNA PCR, not antibody**, at birth and at intervals over the first months. **Maternal antibody crosses the placenta and makes antibody testing uninterpretable**; **seroreversion by 18 months** is the final confirmation. VERIFY the exact schedule.",
+    "**Notification** is a legal requirement, confidential, to the SA Communicable Disease Control Branch — who also provide **anonymous partner notification**. **HIV has no defined look-back period**; be guided by her sexual history and the public health unit.",
+    "**Co-infection screening matters even though it is negative here** — syphilis, hepatitis B and hepatitis C are on the same panel and would each change management substantially if positive."
    ],
-   "fails": [
-    "No warning shot; ploughing on through the crying; eight minutes of empathy with no plan",
-    "Never closing the empathy phase / asking permission to continue",
-    "Saying HIV is curable",
-    "Moralising about the drug use",
-    "Not sending a viral load; saying it is always a caesarean; not saying no to breastfeeding clearly; missing infant treatment within 6 hours; promising absolute confidentiality without qualification"
-   ],
-   "numbers": [
-    "Transmission 25–30% without intervention; <1–2% with the full package VERIFY",
-    "Viral load recheck 2–4 wk after starting/changing, then at least each trimester; delivery decision at 36 wk; elective caesarean if unsuppressed ~>1000 copies/mL VERIFY",
-    "Infant ART within 6 h; antibody seroreversion by 18 months",
-    "Contact tracing for contrast: chlamydia 6 mo, gonorrhoea 2 mo, primary syphilis 3 mo, HIV none",
-    "Variants: 'don't tell Ryan, he'll kill me' → safety first, cannot disclose without permission, notification confidential, anonymous partner notification; known positive undetectable → keep treatment, ID check regimen, plan vaginal birth, infant meds, formula; stopped ART 6 months ago → explore barrier, ID team today; sister breastfed in England → Australian recommendation is formula, raise with ID rather than close down VERIFY; 34 weeks at diagnosis → treat today, may need caesarean, still infant meds and formula"
+   "ddx": [
+    [
+     "**Confirmed HIV, asymptomatic, newly diagnosed**",
+     "Positive screen **and** supplemental testing; no constitutional symptoms",
+     "**Weight loss, night sweats, glands, thrush, diarrhoea, cough — all negative here**",
+     "**This is the case.** Viral load, CD4, resistance; ART as soon as possible; the full four-stage plan"
+    ],
+    [
+     "**Acute seroconversion illness**",
+     "**Fever, rash, lymphadenopathy, sore throat NOW**; a recent high-risk exposure",
+     "That symptom set, asked by name",
+     "**Viral load will be very high and transmission risk is at its PEAK.** Urgent infectious diseases involvement"
+    ],
+    [
+     "**Advanced disease**",
+     "**Weight loss, drenching night sweats, oral candidiasis, chronic diarrhoea, breathlessness**",
+     "The constitutional symptom block",
+     "**Urgent ID involvement, not routine referral.** CD4 and opportunistic infection screen"
+    ],
+    [
+     "Known HIV, on therapy, suppressed",
+     "She tells you she is already on treatment and undetectable",
+     "Adherence; the current regimen; the last viral load",
+     "**No bad news today.** Continue therapy without a break; ID checks the regimen is pregnancy-safe; plan for **vaginal birth**"
+    ],
+    [
+     "Treatment interruption / non-adherence",
+     "**Stopped antiretrovirals months ago** — side effects, access, or cost",
+     "**'What made you stop — side effects, getting to appointments, or the cost?'**",
+     "**Explore the barrier without judgement, then act.** Urgent ID **today**, not next week; expect a high viral load"
+    ],
+    [
+     "Late diagnosis in the third trimester",
+     "Presenting at, say, 34 weeks",
+     "The gestation",
+     "**Move faster: ART today, expect an unsuppressed viral load at delivery, plan elective caesarean with IV cover.** Infant treatment and formula unchanged"
+    ],
+    [
+     "False-positive screen",
+     "A **reactive screen with no supplemental testing**",
+     "Whether supplemental testing was performed",
+     "**Not the situation here** — Australian labs run supplemental testing automatically. The diagnosis is confirmed before it reaches you"
+    ],
+    [
+     "Co-infection — syphilis, hepatitis B or C",
+     "The same antenatal panel",
+     "**All three are negative here** — but check, and say so",
+     "Each changes management substantially if positive; hepatitis B also needs infant immunoglobulin and vaccination at birth"
+    ],
+    [
+     "**Disclosure fear / safety concern**",
+     "**'Please don't tell my partner — he'll kill me.'**",
+     "**'Are you safe at home? Has he ever hurt you or frightened you?'**",
+     "**A safety issue before it is a contact-tracing issue.** Explore first; then offer **anonymous notification** through public health. **Never promise unqualified confidentiality, and never override her**"
+    ]
    ]
   },
   "source": "Antenatal_HIV_Counselling_2_Case_Tasks_Script_Notability.pdf",
   "drive": "AMC Clinical Notability › Obstetrics › Antenatal › Antenatal_HIV_Counselling_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Never firing a WARNING SHOT before the diagnosis — normals first, 'negative is the good result there', then 'I'm afraid I don't have good news about that one', and offer to bring her partner in",
-   "FAIL — Ploughing on through the crying, or never closing the empathy phase — at about three minutes ask 'would you prefer we talk about the rest in another consultation?'; she declines, and that is how you earn permission to move on",
-   "FAIL — Eight minutes of empathy with no plan, however kind — and saying HIV is curable; it is MANAGEABLE, with normal life expectancy, a normal pregnancy and a healthy baby",
-   "FAIL — Moralising about the drug use — she discloses the shared needles quietly and is watching your face, and judgement closes her down for the rest of the station",
-   "FAIL — Missing the starred management items: send the VIRAL LOAD and use that number through the plan · mode of delivery decided at 36 WEEKS and NOT ALWAYS A CAESAREAN · infant antiretrovirals within SIX HOURS · advise against breastfeeding",
-   "SAY — The numbers she settles on: without treatment about one in four babies affected; with the full package BELOW ONE OR TWO IN A HUNDRED — and 'how did I get it?' is answered 'we often can't say, and it wouldn't change what we do next'"
-  ]
+   "FAIL — **Never leaving the empathy phase.** Eight minutes of tissues and kindness with no management plan.",
+   "FAIL — Never saying **viral load**. It is the spine of the case and it appears at every stage.",
+   "FAIL — Missing **infant antiretrovirals within 6 hours**, or **not advising against breastfeeding**.",
+   "FAIL — No **warning shot** before the diagnosis; or saying HIV is **curable** (it is manageable, not cured).",
+   "ASK — **Do you use any drugs?** and **have you ever shared needles with anyone?**",
+   "ASK — **Has your partner ever been tested?**"
+  ],
+  "v2": true
  },
  {
   "id": "OG-19",
