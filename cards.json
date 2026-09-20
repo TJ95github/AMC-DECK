@@ -23751,9 +23751,8 @@
  {
   "id": "MED-90",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "General practice, Wallaroo. Four tasks in eight minutes — examination begins at 4:00, management at 7:00. Observations from the examiner at the door (online: 'I'm taking you through to the treatment room to check your observations').",
   "stem": [
    "Mary Ellis, 25, is 20 weeks pregnant. She has come in because she has been feeling unwell for the past few days. First pregnancy; antenatal care so far uncomplicated."
   ],
@@ -23763,126 +23762,219 @@
    "Explain your most likely diagnosis and your differential diagnoses to the patient",
    "Explain your management plan to the patient"
   ],
-  "time": "8 minutes: observations first, one sentence · empathic sentence · ★ offer the word FEVERISH — she won't volunteer it · fever block: measured, chills, medication · urinary upper and lower: dysuria, frequency, haematuria, nausea/vomiting, ★ flank pain — site and radiation only · sexual health with a permission sentence · other infection: throat, cough, headache/neck, travel · ★ pregnancy-specific: vision, swelling, headache (pre-eclampsia) · thirst and polyuria separately (GDM) · jaundice, dark urine, pale stools, itch (cholestasis/AFLP) · palpitations/SOB (anaemia) · obstetric close — tightenings, fluid/bleeding, movements · ★ allergies BEFORE naming an antibiotic · 4:00 examination as one run: findings not regions, four vitals again, ★ fundal height, uterine tenderness, fetal heart · ★ 'is there any renal angle tenderness?' · dipstick — leucocytes and nitrites · 6:00 pyelonephritis with reasons; the baby question in one sentence; differentials LISTED not explained · 7:00 ★ ED today, admission, IV antibiotics, IV fluids, culture first.",
+  "findings": [
+   [
+    "FOUR TASKS IN EIGHT MINUTES — the clock is the station",
+    "History 4 min → examination 2 min → diagnosis and differentials 1 min → MANAGEMENT 1 min. A candidate scoring 7, 7, 7 WHO NEVER REACHES MANAGEMENT FAILS. A candidate scoring 4, 4, 4, 4 PASSES. The moment you read FOUR TASKS on the door, decide to move faster than usual and PROTECT THE LAST TWO MINUTES"
+   ],
+   [
+    "ASK FOR OBSERVATIONS AT THE DOOR",
+    "Normally you would NOT open an unwell case with a stability check. You do it here BECAUSE THE DIFFERENTIAL LIST IS GENUINELY DANGEROUS AND SHE IS PREGNANT. Eight seconds, and it reads as clinical judgement. Online there is no examiner — say it to the patient: 'I'm going to take you through to the treatment room first so we can check your observations'"
+   ],
+   [
+    "The findings",
+    "T 38.7 · HR 108 · BP 110/70 MAINTAINED · RR 18 · SpO2 98% · FLUSHED, MILDLY DEHYDRATED, alert, no jaundice, no rash. Throat normal · chest clear · heart sounds dual. Abdomen: MILD SUPRAPUBIC TENDERNESS · RIGHT RENAL ANGLE TENDERNESS POSITIVE · no RUQ tenderness · no organomegaly"
+   ],
+   [
+    "THE UTERUS — three questions, ten seconds",
+    "FUNDAL HEIGHT 20 cm, CONSISTENT WITH DATES · UTERUS NON-TENDER · FETAL HEART RATE 145. These are the difference between a candidate who examined A WOMAN and one who examined A PREGNANT WOMAN. Fundal height larger or smaller than dates matters; A TENDER UTERUS RAISES CHORIOAMNIONITIS OR ABRUPTION; NORMAL FETAL HEART RATE IS 110–160"
+   ],
+   [
+    "The dipstick — ask for it BY NAME",
+    "'I'd like a URINE DIPSTICK. I'M LOOKING FOR LEUCOCYTES AND NITRITES.' Result: LEUCOCYTES +++ · NITRITES POSITIVE · BLOOD ++ · protein trace · glucose negative"
+   ],
+   [
+    "VERSION A versus VERSION B",
+    "VERSION A: RIGHT FLANK PAIN RADIATING TOWARDS THE GROIN — looks like pyelonephritis from the history. VERSION B: SUPRAPUBIC PAIN ONLY, low central abdomen — LOOKS LIKE SIMPLE CYSTITIS. IN BOTH, RENAL ANGLE TENDERNESS IS POSITIVE AND THE DIAGNOSIS IS UNCHANGED"
+   ],
+   [
+    "THE RULE THAT DECIDES VERSION B",
+    "RENAL ANGLE TENDERNESS ON EXAMINATION OVERRIDES THE SITE OF PAIN THE PATIENT DESCRIBED. Hearing suprapubic pain, deciding it is cystitis, and stopping asking is the trap"
+   ],
+   [
+    "What she asks, and the answers to have ready",
+    "'IS THE BABY GOING TO BE ALL RIGHT?' → 'That's exactly what I want to check. TREATING THIS QUICKLY IS THE BEST THING WE CAN DO FOR YOUR BABY, and I'll listen to the baby's heartbeat as part of my examination.' 'DO I REALLY NEED TO GO TO HOSPITAL?' → DO NOT SOFTEN IT"
+   ],
+   [
+    "The rest of the history findings",
+    "Feverish with CHILLS for a few days, GETTING WORSE · PARACETAMOL UNHELPFUL · VOMITED THREE OR FOUR TIMES · BURNING AND FREQUENCY. NO discharge, NO rash, NO sore throat, NO cough, NO headache, NO travel · NO visual symptoms, NO swelling · NO jaundice, NO itch · BABY MOVING NORMALLY"
+   ],
+   [
+    "She has almost certainly NOT measured her temperature",
+    "'No, I haven't measured it, I JUST FEEL HOT' — the answer is almost always no. ASK ANYWAY: THE FEVER BLOCK IS WHAT LICENSES YOU TO LEAD WITH INFECTION. Without it your differential list LOOKS MEMORISED RATHER THAN DERIVED"
+   ]
+  ],
+  "findingsLabel": "Four tasks in eight minutes — the uterus, the dipstick, and the sign that overrides the pain",
+  "must": [
+   "FAIL — Never reaching the management task. The bell goes on your fourth differential.",
+   "FAIL — Discharging her on oral antibiotics.",
+   "FAIL — Downgrading to cystitis in Version B because the pain is suprapubic.",
+   "FAIL — Not assessing the fetus: no fundal height, uterine tenderness or fetal heart rate.",
+   "ASK — Is there any renal angle tenderness?",
+   "ASK — Any allergies to antibiotics, and what happened?"
+  ],
   "back": {
-   "dx": "Acute pyelonephritis at 20 weeks: 3–4 days hot and shivery with rigors last night, worsening, paracetamol useless; dysuria and frequency, no visible haematuria; vomited 3–4 times; right flank/back pain radiating to the groin (Version B: low central suprapubic pain — the diagnosis is unchanged when renal angle tenderness is positive). Pregnancy-specific screen negative: no visual blurring, swelling, headache (pre-eclampsia); no thirst/polyuria (GDM); no jaundice, dark urine, pale stools, itch (cholestasis/AFLP); no palpitations/SOB (anaemia); no tightenings, fluid, bleeding; baby moving; pregnancy vitamins only; no allergies. Examiner: alert, flushed, mildly dehydrated; BP 110/70, HR 108, RR 18, ★ T 38.7; throat/chest/heart normal; mild suprapubic tenderness, no RUQ tenderness, no organomegaly; ★ fundal height 20 cm consistent with dates, uterus non-tender, FHR 145; ★ right renal angle tenderness POSITIVE; dipstick leucocytes +++, nitrites +, blood ++, protein trace. To Mary: 'pyelonephritis — an infection in your kidney: burning, going more often, fever, vomiting, tender over your kidney, urine test showing infection'; 'dangerous for the baby?' → 'it can be, which is exactly why we treat it properly and quickly — today is the best thing for both of you'. Differentials LISTED in 25 s: pre-eclampsia, gestational diabetes, other infections (STIs incl. herpes and HIV, throat, chest, meningitis), the liver conditions of pregnancy (cholestasis, acute fatty liver), appendicitis, renal stone, anaemia. Management, the four things first: ★ ED today, expect admission, IV antibiotics + IV fluids ('too serious to treat with tablets at home'), MSU for culture before antibiotics; then oral switch once afebrile 24–48 h, 10–14 days total, test-of-cure culture 1–2 weeks after, obstetric team checks the baby; 'do I have to go?' → sepsis and preterm labour risks; 'safe for the baby?' → yes, well-studied antibiotics. Safety-net: worse, shaking chills, can't keep fluids down, tightenings, bleeding, fluid, reduced movements → straight back.",
+   "dx": [
+    "**ACUTE PYELONEPHRITIS IN PREGNANCY — ascending bacterial infection of the renal pelvis and parenchyma, most often ESCHERICHIA COLI, in a woman whose URETERS ARE DILATED BY PROGESTERONE AND COMPRESSED BY THE GRAVID UTERUS.** That urinary stasis is why ascending infection is **both MORE COMMON and MORE SEVERE in pregnancy.**",
+    "**THE DISCRIMINATING ISSUE: REACHING THE MANAGEMENT TASK, AND OPENING IT WITH ADMISSION FOR INTRAVENOUS ANTIBIOTICS.** **The station is scored TASK BY TASK. A beautiful history, a complete examination and a polished differential list followed by the bell scores highly on three domains and ZERO on the fourth — and fails.**",
+    "**THE COROLLARY: DO NOT REASON YOUR DIFFERENTIALS ALOUD. LISTING THEM IS THE TASK. EXPLAINING EACH ONE IS A CHOICE TO SPEND YOUR MANAGEMENT TIME ON SOMETHING YOU WERE NOT ASKED TO DO.** **Cap the list at TWENTY-FIVE SECONDS — time it — and DO NOT ADD A REASON TO ANY ITEM.**",
+    "**SAY THESE FOUR FIRST AND YOU HAVE PASSED THE MANAGEMENT TASK: 1 REFER TO THE EMERGENCY DEPARTMENT AND ADMIT · 2 INTRAVENOUS ANTIBIOTICS · 3 INTRAVENOUS FLUIDS · 4 SEND A URINE MICROSCOPY AND CULTURE BEFORE THE FIRST DOSE. Everything else is bonus, said only if the clock allows.**",
+    "**The history must be driven by A PREGNANCY-SPECIFIC DIFFERENTIAL LIST, not a generic tiredness mnemonic — that is where candidates who know the answer still lose the diagnostic domain.** **MUST-NOT-MISS, SAID OUT LOUD: PRE-ECLAMPSIA · CHORIOAMNIONITIS · ACUTE FATTY LIVER OF PREGNANCY · APPENDICITIS · SEPSIS. Naming these is worth marks even though none is the answer.**",
+    "**CORRECTION — the lecture calls pre-eclampsia 'a little too early' at 20 weeks. TWENTY WEEKS IS THE DEFINITIONAL THRESHOLD, so it is LEGITIMATELY ON THE LIST FROM TODAY ONWARDS, not prematurely.**",
+    "**CORRECTION — the lecture attributes more renal stones in pregnancy to progesterone. PROGESTERONE-RELATED BILIARY STASIS DOES INCREASE GALLSTONES; the incidence of RENAL CALCULI IS NOT MEANINGFULLY RAISED — although urinary stasis makes AN EXISTING STONE MORE LIKELY TO OBSTRUCT AND BECOME INFECTED. Asking about haematuria remains correct.**",
+    "**ANTIBIOTICS: empirical IV CEFTRIAXONE 1 g DAILY, or CEFAZOLIN 2 g 8-HOURLY. Oral switch once AFEBRILE AND STABLE FOR 24–48 HOURS — CEFALEXIN 500 mg 6-HOURLY or AMOXICILLIN-CLAVULANATE 875/125 12-HOURLY, directed by sensitivities. TOTAL 10–14 DAYS, counting IV and oral together.** VERIFY.",
+    "**NOT IN PREGNANCY: TRIMETHOPRIM, a FOLATE ANTAGONIST, avoid in the first trimester · NITROFURANTOIN, which DOES NOT REACH RENAL TISSUE SO IT DOES NOT TREAT PYELONEPHRITIS AT ALL, and is avoided at term · QUINOLONES and TETRACYCLINES, contraindicated · NSAIDs FROM 20 WEEKS ONWARDS · gentamicin only on specialist advice.**",
+    "**TEST-OF-CURE URINE MCS ONE TO TWO WEEKS AFTER FINISHING — PREGNANCY IS ONE OF THE FEW SITUATIONS WHERE IT IS REQUIRED — then MONTHLY CULTURE for the remainder of the pregnancy.** **STARTING ANTIBIOTICS WITHOUT A CULTURE: pregnancy is an ABSOLUTE INDICATION to send one first.** **MedSTAR 1300 13 12 33 · PATS · Wallaroo Hospital with obstetric escalation to the WCH or Lyell McEwin.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Before I begin, could I have her observations — BP, pulse, RR and temperature?' → 110/70, 108, 18, 38.7 · 'Hello Mary, I'm sorry to hear you've not been well — questions, examination, then a plan together. Tell me what's been happening' → 'I'm worried about the baby' → acknowledge"
+     "**AT THE DOOR: 'before I start, could you give me her observations, please? BLOOD PRESSURE, PULSE, RESPIRATORY RATE AND TEMPERATURE.'**"
     ],
     [
-     "0:45",
-     "★ 'Can you describe it — are you tired and low in energy, sleepy, or feeling feverish?' → hot then shivery · onset (3–4 days), constant, worse, better/worse · fever block: measured? chills? (badly, last night) taken anything, helped? (Panadol, no)"
+     "0:10",
+     "**Introduce and SIGNPOST ONCE — then do not re-signpost between blocks, you do not have the seconds.**"
+    ],
+    [
+     "0:30",
+     "**BLOCK 1 — CONVERT VAGUE INTO SPECIFIC, and the fourth question of the consultation is the one that matters: 'are you feeling TIRED AND LOW IN ENERGY, are you feeling SLEEPY, OR ARE YOU FEELING FEVERISH?'** Then **when did it start · constant or coming and going · getting worse · anything better or worse.**"
+    ],
+    [
+     "1:15",
+     "**BLOCK 2 — THE FEVER QUESTIONS: HAVE YOU MEASURED YOUR TEMPERATURE · ANY CHILLS OR SHIVERS · have you taken anything for it, AND DID IT HELP?**"
     ],
     [
      "1:35",
-     "Urinary: burning/pain passing urine (yes) · frequency (constantly) · blood (no) · nausea/vomiting (3–4×) · abdominal pain · ★ 'any pain in your side or back, around your kidneys — where exactly, and does it travel?' → right flank to groin (site + radiation, then MOVE)"
+     "**'I'm going to ask a series of quick questions now, and MOST OF THEM WILL BE A SIMPLE YES OR NO.' CYSTITIS: any burning or pain passing urine · passing urine MORE OFTEN · ANY BLOOD IN YOUR URINE?**"
     ],
     [
-     "2:20",
-     "'Can I ask a few confidential questions about sexual health? active? condoms? genital rash/ulcers? discharge? lumps or night sweats?' → husband, no condoms, nothing · other infection: sore throat/coryza/cough, headache/stiff neck, travel"
+     "1:50",
+     "**PYELONEPHRITIS: any NAUSEA OR VOMITING · any tummy pain · ANY PAIN IN YOUR SIDE OR BACK, AROUND WHERE YOUR KIDNEYS ARE?** Then **WHERE EXACTLY, AND DOES IT GO ANYWHERE — site and radiation only, you do not have time for a full pain history.**"
+    ],
+    [
+     "2:10",
+     "**STI, with permission: are you sexually active at the moment · do you use condoms · ANY RASH OR ULCERS in the genital area · ANY VAGINAL DISCHARGE? HIV AND SYSTEMIC: any LUMPS OR BUMPS anywhere · any NIGHT SWEATS?**"
+    ],
+    [
+     "2:30",
+     "**OTHER INFECTION: any sore throat, runny nose or cough · any HEADACHE OR STIFF NECK · any travel recently?**"
+    ],
+    [
+     "2:45",
+     "**PRE-ECLAMPSIA: any BLURRING OF VISION OR SEEING SPOTS · any SWELLING of legs, hands or face · any BAD HEADACHE · ANY RIGHT UPPER ABDOMINAL PAIN?**"
     ],
     [
      "3:00",
-     "★ Pregnancy-specific: 'blurring of vision? swelling of legs, hands or face? bad headache?' · 'more thirsty? passing large amounts of urine?' (separately) · 'yellowing, darker urine, pale stools, itching?' · 'racing heart or breathlessness on exertion?'"
+     "**GESTATIONAL DIABETES, as TWO SEPARATE QUESTIONS: have you been MORE THIRSTY than usual · are you PASSING LARGE AMOUNTS of urine?** **Polyuria and frequency are different questions.**"
     ],
     [
-     "3:30",
-     "Obstetric and medication close: 'how has the pregnancy been? tightenings, fluid or bleeding from below? baby moving normally? regular medicines? ★ any allergies to antibiotics?' (ask NOW, not after naming a drug)"
+     "3:10",
+     "**LIVER: any YELLOWING of skin or eyes · is your urine DARKER · are your stools PALE · ANY ITCHING, ESPECIALLY OF YOUR HANDS AND FEET? ANAEMIA: any racing of your heart or breathlessness on exertion?**"
+    ],
+    [
+     "3:25",
+     "**OBSTETRIC BACKGROUND: how many weeks are you · any problems in the pregnancy so far · ANY TIGHTENINGS, ANY FLUID OR BLEEDING FROM BELOW · IS THE BABY MOVING NORMALLY?**"
+    ],
+    [
+     "3:45",
+     "**MEDICATIONS AND ALLERGIES — ASKED NOW, BEFORE YOU PROPOSE AN ANTIBIOTIC, NOT AFTER: any regular medicines · ANY ALLERGIES TO ANTIBIOTICS, AND WHAT HAPPENED?**"
     ],
     [
      "4:00",
-     "★ One continuous run: general — alert/drowsy, jaundice, rash, dehydration · all four vitals again · throat — swelling/redness · respiratory — air entry, added sounds · CVS — S1 S2, murmurs · abdomen — inspection; palpation: suprapubic tenderness? RUQ tenderness? hepatomegaly? · ★ 'fundal height? is the uterus tender? fetal heart rate?' → 20 cm, non-tender, 145 · ★ 'is there any renal angle tenderness?' → right positive · ★ 'urine dipstick — leucocytes and nitrites' → leucocytes +++, nitrites +, blood ++, protein trace · no full pelvic — the clock killer"
+     "**EXAMINATION — NAME THE FINDING, NEVER THE REGION. General appearance: alert or drowsy, jaundice, rash, dehydration. ALL FOUR VITAL SIGNS AGAIN — she may be septic. Throat: swelling or redness. Chest: air entry equal, added sounds. Heart sounds and murmurs.**"
     ],
     [
-     "6:00",
-     "Pyelonephritis named + reasons · 'is the baby all right?' → one sentence, then move · differentials LISTED, 25 s, not explained: pre-eclampsia, GDM, other infections (STIs incl. herpes/HIV, throat, chest, meningitis), cholestasis and acute fatty liver, appendicitis, renal stone, anaemia — 'your picture fits the kidney infection best'"
+     "4:45",
+     "**ABDOMEN: any bruising, swelling or distension · ANY SUPRAPUBIC TENDERNESS · ANY RIGHT UPPER QUADRANT TENDERNESS · any hepatosplenomegaly?** Then **THE UTERUS: FUNDAL HEIGHT · IS THE UTERUS TENDER · FETAL HEART RATE?**"
     ],
     [
-     "7:00",
-     "★ 'I'm going to send you to the emergency department today, and I expect you'll be admitted — antibiotics through a drip and fluids through a drip; a kidney infection in pregnancy is too serious to treat with tablets at home. We'll send a urine sample for culture before the antibiotics start.' · 'do I really have to? work tomorrow' → 'untreated, this can spread to the bloodstream and bring on early labour' · 'safe for the baby?' → well-studied antibiotics · if the clock allows: oral switch when afebrile, 10–14 days, test-of-cure, obstetric review · safety-net · summary"
+     "5:15",
+     "**THE SPECIAL TEST: 'IS THERE ANY RENAL ANGLE TENDERNESS?' Then THE DIPSTICK BY NAME.** **Pelvic ONLY if time — INSPECTION ONLY, six words, or skip it. A full speculum and bimanual at 5:30 is the commonest way to lose management.**"
+    ],
+    [
+     "5:45",
+     "**READ THE FINDINGS BACK OUT LOUD, then NAME PYELONEPHRITIS with the reasons — burning, frequency, fever, vomiting, TENDERNESS OVER YOUR KIDNEY, and the urine test.** In Version B add: **'your pain has been LOW DOWN, which often points to a bladder infection. But on examination YOU'RE TENDER OVER YOUR KIDNEY, with a fever and vomiting — that combination tells me THE INFECTION HAS GONE UP FROM THE BLADDER TO THE KIDNEY.'**"
+    ],
+    [
+     "6:30",
+     "**THE DIFFERENTIAL LIST, NAMED NOT EXPLAINED, 25 SECONDS.** Then **MANAGEMENT: emergency department today, admission, ANTIBIOTICS THROUGH A DRIP AND FLUIDS THROUGH A DRIP, culture before the antibiotics start, oral switch once stable, 10–14 days total, THE REPEAT URINE TEST A WEEK OR TWO AFTER FINISHING, and OBSTETRIC REVIEW OF THE BABY.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Could I have her observations — blood pressure, pulse, respiratory rate and temperature?' / ★ 'Are you tired and low in energy, or are you feeling feverish?' / 'Have you measured it? Any chills? Did anything help?'",
-    "'Any burning or pain when you pass urine? Are you going more often? Any blood?' / ★ 'Any pain in your side or back, around your kidneys? Where exactly, and does it travel?'",
-    "'Any blurring of vision? Any swelling of the legs, hands or face?' / 'More thirsty than usual? Passing large amounts of urine?' / 'Any yellowing of your skin, dark urine, pale stools or itching?'",
-    "'How has the pregnancy been? Any tightenings, any fluid or bleeding from below? Is the baby moving normally? Any regular medicines? Any allergies to antibiotics?'",
-    "★ 'Examiner, what is the fundal height, is the uterus tender, and what is the fetal heart rate?' / ★ 'Is there any renal angle tenderness?' / 'Urine dipstick — I am looking for leucocytes and nitrites.'",
-    "★ 'Mary, I think you most likely have pyelonephritis — that is an infection in your kidney. I say that because you have burning when you pass urine, you're going more often, you have a fever, you've vomited, and on examination you're tender over your kidney with a urine test showing infection.'",
-    "'Is that dangerous for the baby?' → 'It can be, which is exactly why we treat it properly and quickly. Treating it today is the best thing we can do for both of you. Let me finish telling you what else I considered, and then what I want to do.'",
-    "'I also thought about pre-eclampsia, a blood pressure condition of pregnancy; gestational diabetes; other infections — sexually transmitted infections including herpes and HIV, an infection in the throat, in the chest, and meningitis; the liver conditions of pregnancy, cholestasis and acute fatty liver; appendicitis; a kidney stone; and anaemia. Your story and examination fit the kidney infection best.' (listed, not explained)",
-    "★ 'I am going to send you to the emergency department today, and I expect you will be admitted. You will need antibiotics through a drip and fluids through a drip, because a kidney infection in pregnancy is too serious to treat with tablets at home. We will send a urine sample for culture before the antibiotics start.' / 'Do I really have to go in? I've got work tomorrow' → 'I would not ask if it were not important. Untreated, this can spread to the bloodstream and can bring on early labour. Both are far less likely if we treat it properly from today.'",
-    "'Are the antibiotics safe for the baby?' → 'Yes. We choose antibiotics that are well studied and safe in pregnancy, and we avoid the ones that are not.' / ★ 'Because you are pregnant we repeat the urine test after treatment to be certain it has cleared.' / 'If you feel worse, get shaking chills, cannot keep fluids down, notice tightenings, bleeding or fluid from below, or the baby moving less — go straight back to hospital, do not wait.'"
-   ],
    "pefe": [
-    "Role-player: Mary, 25, 20 weeks, first baby, part-time at the Wallaroo supermarket, husband; non-smoker, stopped alcohol; pregnancy vitamins only; no allergies; antenatal care normal. Unwell, a bit tearful; warms if acknowledged, flat and short if not. Does NOT volunteer the word fever — waits to be asked. Hidden agenda: frightened for the baby, worried about work — 'is the baby going to be all right?' at ~6 min if never asked; pushes back once on hospital 'do I really have to? I've got work tomorrow', accepts with a reason",
-    "Examiner: alert, flushed, mildly dehydrated, no jaundice/rash · BP 110/70, HR 108, RR 18, T 38.7 · throat normal · chest clear · HS dual · no distension · mild suprapubic tenderness · no RUQ tenderness, no organomegaly · fundal height 20 cm, uterus non-tender, FHR 145 · right renal angle tenderness POSITIVE · dipstick leucocytes +++, nitrites +, blood ++, protein trace",
-    "Antibiotics: ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly; oral switch cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY TG · NOT in pregnancy: trimethoprim first trimester; nitrofurantoin (no renal tissue penetration — does not treat pyelonephritis at all); quinolones; tetracyclines; NSAIDs from 20 weeks · oral switch after 24–48 h afebrile · total 10–14 days · test-of-cure culture 1–2 weeks · renal ultrasound if no better at 48–72 h",
-    "Version B — 'the pain is low down, in the middle': keep the upper-tract questions; to the examiner ask suprapubic AND renal angle tenderness → positive → 'low pain often points to the bladder, but fever, vomiting and tenderness over your kidney tell me it has travelled up — I'm treating it as the more serious of the two' — deciding it's cystitis after a positive renal angle = automatic fail",
-    "Harder — septic (BP 86/50, HR 128, T 39.4, drowsy): 'haemodynamically unstable — call for help, left lateral tilt, high-flow oxygen, two large-bore cannulas, blood cultures and lactate, fluid bolus, IV antibiotics within the hour, sepsis pathway, urgent retrieval via MedSTAR 1300 13 12 33 with obstetric consultation in parallel' · Harder — declines admission: name the risk plainly, explore the barrier (childcare, work, transport — solve it), keep her engaged, review tomorrow morning, explicit safety-net; neither cave nor refuse to negotiate",
-    "SA: Wallaroo Hospital → WCH/Lyell McEwin obstetric unit; SA Perinatal Practice Guidelines; PATS; MedSTAR 1300 13 12 33; TIS 131 450"
+    "**NEVER NAME A REGION — NAME THE FINDING. 'I'd like to examine the abdomen' earns you 'what are you looking for?' and costs FIFTEEN SECONDS. 'On palpation of the abdomen, is there any SUPRAPUBIC TENDERNESS?' earns you an answer.**",
+    "**Do not sacrifice management for a pelvic examination. You have ALREADY EXCLUDED discharge and rash on history. IF YOU MENTION THE PELVIC EXAMINATION AND NEVER MENTION MANAGEMENT, YOU FAIL.**",
+    "**Investigations: URINE MCS BEFORE THE FIRST DOSE · FBE, UEC, CRP · BLOOD CULTURES IF FEBRILE OR RIGORS · paracetamol for fever and pain · an antiemetic for vomiting · OBSTETRIC REVIEW for fetal wellbeing and assessment for preterm labour.**",
+    "**What results change management: RESISTANT ORGANISM → change the antibiotic, DO NOT WAIT FOR CLINICAL FAILURE · NOT IMPROVING AT 48–72 HOURS → RENAL TRACT ULTRASOUND looking for OBSTRUCTION, PYONEPHROSIS OR A RENAL ABSCESS · POSITIVE BLOOD CULTURES → longer IV course and infectious diseases · UTERINE TENDERNESS OR FETAL TACHYCARDIA → CHORIOAMNIONITIS UNTIL PROVEN OTHERWISE · PROTEINURIA WITH RAISED BLOOD PRESSURE → a SECOND diagnosis, investigate for pre-eclampsia in parallel.**",
+    "**Escalate for: SYSTOLIC BELOW 90 · PULSE ABOVE 120 · RIGORS · CONFUSION · OLIGURIA · UTERINE TENDERNESS · FETAL HEART RATE OUTSIDE 110–160 · REGULAR CONTRACTIONS · severe headache with visual disturbance · jaundice.**",
+    "**If she resists admission, DO NOT SOFTEN IT: 'the reason I won't treat this with tablets at home is that a kidney infection in pregnancy CAN SPREAD INTO THE BLOODSTREAM AND CAN BRING ON EARLY LABOUR. Both are far less likely if we treat it properly from today. IS THERE SOMETHING AT HOME I CAN HELP YOU ORGANISE so that going in is possible?'**",
+    "**After the episode: consider SUPPRESSIVE PROPHYLAXIS — for example CEFALEXIN 250 mg AT NIGHT — after a SECOND episode.** VERIFY."
    ],
-   "fails": [
-    "Sending her home on oral antibiotics ★",
-    "Never reaching the management task ★",
-    "Deciding it is cystitis after hearing renal angle tenderness is positive ★",
-    "Never assessing the baby — no fundal height, uterine tenderness, fetal heart ★",
-    "Exploring 'unwell' for ninety seconds without offering the word feverish; a full pain history when site and radiation are enough",
-    "Naming regions instead of findings; requesting a full pelvic examination (the clock killer); asking allergies after naming an antibiotic",
-    "Explaining each differential — the commonest reason candidates never reach management; a full ABCDE at the door; skipping the empathic sentence"
-   ],
-   "numbers": [
-    "20 weeks · T 38.7 · HR 108 · fundal height 20 cm · FHR 145 (normal 110–160) · four tasks: examination at 4:00, management at 7:00",
-    "Ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly → oral cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY · total 10–14 days · oral switch 24–48 h afebrile · test-of-cure 1–2 weeks · renal US if no better 48–72 h",
-    "Avoid: trimethoprim (T1) · nitrofurantoin (useless in pyelonephritis) · quinolones · tetracyclines · NSAIDs from 20 weeks",
-    "Pregnancy differential list: infection · pre-eclampsia · GDM · liver (cholestasis, AFLP) · anaemia · + appendicitis, stone",
-    "MedSTAR 1300 13 12 33 · SA Perinatal Practice Guidelines · TIS 131 450"
+   "ddx": [
+    [
+     "**Acute pyelonephritis in pregnancy** — the answer",
+     "**Fever, RIGORS, VOMITING, FLANK PAIN, dysuria, frequency**",
+     "**RENAL ANGLE TENDERNESS; dipstick LEUCOCYTES AND NITRITES**",
+     "**Urine MCS; ADMIT FOR IV ANTIBIOTICS** — ADMIT TODAY"
+    ],
+    [
+     "Cystitis",
+     "Dysuria, frequency, suprapubic pain, **NO fever or vomiting**",
+     "**SUPRAPUBIC tenderness only, RENAL ANGLE NEGATIVE**",
+     "Urine MCS; oral antibiotics — **STILL NEEDS A TEST OF CURE** — same day"
+    ],
+    [
+     "**Pre-eclampsia**",
+     "**HEADACHE, VISUAL DISTURBANCE, OEDEMA, EPIGASTRIC OR RIGHT UPPER QUADRANT PAIN**",
+     "**BP 140/90 OR ABOVE with PROTEINURIA**",
+     "**BP, urine protein-creatinine ratio, bloods for HELLP.** **20 weeks IS the definitional threshold — it is on the list from today** — EMERGENCY"
+    ],
+    [
+     "**Chorioamnionitis**",
+     "**FEVER WITH UTERINE TENDERNESS, OFFENSIVE DISCHARGE, FETAL TACHYCARDIA**",
+     "**Ask about RUPTURED MEMBRANES and discharge**",
+     "**Obstetric review — THIS IS A DELIVERY DECISION** — EMERGENCY"
+    ],
+    [
+     "**Acute fatty liver of pregnancy**",
+     "**Nausea, vomiting, malaise, JAUNDICE, right upper quadrant pain**",
+     "**Jaundice, HYPOGLYCAEMIA, CONFUSION**",
+     "**LFT, GLUCOSE, coagulation profile; URGENT obstetric referral** — EMERGENCY"
+    ],
+    [
+     "Intrahepatic cholestasis of pregnancy",
+     "**ITCH, ESPECIALLY PALMS AND SOLES, usually WITHOUT a rash**",
+     "Jaundice, dark urine, pale stools",
+     "**LFT and SERUM BILE ACIDS** — urgent"
+    ],
+    [
+     "**Appendicitis**",
+     "**MIGRATORY pain; IN PREGNANCY THE APPENDIX IS DISPLACED UPWARDS**",
+     "**Right-sided tenderness HIGHER THAN EXPECTED, guarding**; sterile pyuria on dipstick",
+     "**Surgical review; ultrasound. DO NOT ANCHOR ON THE URINE** — EMERGENCY"
+    ],
+    [
+     "Gestational diabetes",
+     "**Thirst, POLYURIA, fatigue, glycosuria**",
+     "**Ask thirst and polyuria as SEPARATE questions from frequency**",
+     "Oral glucose tolerance test at 24–28 weeks"
+    ],
+    [
+     "**Renal or ureteric calculus**",
+     "**COLICKY LOIN-TO-GROIN pain, MACROSCOPIC HAEMATURIA**",
+     "**MAY COEXIST WITH INFECTION — a dangerous combination**",
+     "**Ultrasound; urology if OBSTRUCTED AND INFECTED** — urgent"
+    ],
+    [
+     "STI · anaemia of pregnancy · other infection",
+     "Discharge, genital ulcer or rash, new partner; or fatigue, exertional breathlessness, palpitations; or sore throat, cough, neck stiffness, travel",
+     "**FIRST-EPISODE GENITAL HERPES CAN PRESENT AS SYSTEMIC ILLNESS**; pallor; one screening question per system",
+     "Swabs, first-pass urine NAAT, serology. FBE and ferritin. Directed by whichever screen is positive"
+    ]
    ]
   },
   "source": "Pyelonephritis_Pregnancy_2_Case_Tasks_Script_Notability.pdf (Mary Ellis, 25, 20 weeks, unwell — acute pyelonephritis in pregnancy)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Unwell › Pyelonephritis_Pregnancy_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Alert, FLUSHED, mildly dehydrated; no jaundice or rash"
-   ],
-   [
-    "Observations",
-    "BP 110/70 · HR 108 · RR 18 · T 38.7"
-   ],
-   [
-    "Throat, chest, heart",
-    "Throat normal; chest clear; heart sounds dual"
-   ],
-   [
-    "Abdomen",
-    "No distension; MILD SUPRAPUBIC TENDERNESS; no RUQ tenderness, no organomegaly"
-   ],
-   [
-    "Uterus",
-    "Fundal height 20 cm; uterus NON-TENDER; FHR 145"
-   ],
-   [
-    "Renal angle",
-    "Right renal angle tenderness positive"
-   ],
-   [
-    "Urine dipstick",
-    "LEUCOCYTES +++ · NITRITES + · blood ++ · protein trace"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Sending her home on oral antibiotics — an automatic fail whatever else you did; 'I'm going to send you to the emergency department today; I expect you'll be admitted for antibiotics through a drip and fluids through a drip — a kidney infection in pregnancy is too serious to treat with tablets at home'; urine culture before the antibiotics (★)",
-   "FAIL — Never reaching the management task — four tasks in eight minutes: examination at 4:00, management at 7:00; explaining each differential is 'the station killer' — list them in twenty-five seconds (pre-eclampsia, gestational diabetes, other infections incl. STIs, throat, chest, meningitis, the liver conditions of pregnancy, appendicitis, stone, anaemia) and move (★)",
-   "FAIL — Never assessing the baby — fundal height, uterine tenderness, fetal heart rate: ten seconds, and the difference between examining a woman and examining a pregnant woman; in the history: tightenings, fluid or bleeding, baby moving normally (★)",
-   "FAIL — Deciding it's cystitis after hearing renal angle tenderness is positive — in Version B the pain is suprapubic and the examiner still gives you the renal angle: 'the infection has travelled up from the bladder to the kidney, and I'm treating it as the more serious of the two'; ask 'is there any renal angle tenderness?' by name (★)",
-   "DO — Convert 'unwell' by offering the word: 'tired and low in energy, sleepy, or feeling feverish?' — she will not volunteer fever, and the word licenses infection as the lead; then the fever block (measured, chills, medication), urinary upper and lower (site and radiation only — no full pain history), the pregnancy-specific screen (vision, swelling, headache; thirst and polyuria separately; jaundice and itch), sexual health with permission, allergies asked in the history before you name an antibiotic",
-   "DO — Observations at the door in one sentence (not a full ABCDE), the empathic sentence for the visibly worried actor, findings not regions ('I'd like to examine the abdomen' gets 'what are you looking for?'), dipstick for leucocytes and nitrites, skip the full pelvic (the clock killer); answer 'is the baby all right?' in one sentence then move; 'do I really have to go in?' — untreated it can spread to the bloodstream and bring on early labour; ten to fourteen days, test-of-cure culture, safety-net"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-91",
