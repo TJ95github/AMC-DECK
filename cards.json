@@ -13799,8 +13799,8 @@
  {
   "id": "MED-43",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Your general practice.",
   "stem": [
    "Peter Callaghan, a 62-year-old man, has had three months of increasing breathlessness and a cough. He has lost about 6 kg without trying. He has smoked around 20 cigarettes a day for forty years and worked as a boilermaker in his twenties. You have already taken a history and examined him. His chest X-ray is on the screen in front of you."
   ],
@@ -13810,108 +13810,186 @@
    "Explain your diagnosis and differential diagnoses to the patient",
    "Outline your management plan"
   ],
-  "time": "8 minutes (2 min reading). The film is task 2 of four — keep it to 60–90 seconds. Seven moves: permission → three colours → airway midline → normal side → abnormal side → name it → next step.",
+  "findings": [
+   [
+    "Examination findings you were given",
+    "No distress at rest, no cyanosis. REDUCED CHEST EXPANSION AT THE LEFT BASE. TRACHEA CENTRAL. DULLNESS TO PERCUSSION at the left base. ABSENT BREATH SOUNDS there. REDUCED VOCAL RESONANCE. Cardiovascular normal, no leg oedema — the four signs of an effusion. TIE THE FILM BACK TO THEM"
+   ],
+   [
+    "Film — details and RIPE quality",
+    "PA ERECT chest radiograph. Confirm name and date, compare with old films. NOT ROTATED — sternal ends of the clavicles equidistant from the spinous processes. ADEQUATE INSPIRATION — six anterior ribs (5–6 anterior or 8–10 posterior). ADEQUATELY EXPOSED — hemidiaphragm just visible through the cardiac shadow. QUALITY BEFORE FINDINGS, so you have somewhere to retreat to"
+   ],
+   [
+    "Film — soft tissue, bones, AIRWAY",
+    "Bones and soft tissues unremarkable, no rib fracture, no surgical emphysema. TRACHEA CENTRAL, mediastinum not widened, no hilar mass or lymphadenopathy. THE TRACHEA IS THE MOST COMMONLY OMITTED COMMENT IN THIS TASK, IN BOTH REGISTERS"
+   ],
+   [
+    "Film — the NORMAL side first",
+    "RIGHT LUNG FIELD CLEAR — dark all the way down, costophrenic angle sharp and pointed. Naming the normal side first costs five seconds and buys the comparison mark"
+   ],
+   [
+    "Film — the abnormal side",
+    "HOMOGENEOUS OPACIFICATION OF THE LEFT LOWER ZONE with a BLUNTED COSTOPHRENIC ANGLE and a RISING LATERAL MENISCUS, and NO AIR BRONCHOGRAM"
+   ],
+   [
+    "Why it is fluid and not consolidation",
+    "THE MENISCUS AND THE ABSENCE OF AN AIR BRONCHOGRAM. Consolidation is confined by fissures and CONTAINS air bronchograms — air-filled bronchi standing out against fluid-filled alveoli, an AIR-SPACE process. Say BOTH"
+   ],
+   [
+    "Film — circulation and diaphragm",
+    "LEFT HEART BORDER OBSCURED, so CARDIAC SIZE CANNOT BE RELIABLY ASSESSED — say that rather than guessing. Right hemidiaphragm normally sits HIGHER than the left, by up to about one interspace, because of the liver. No lines, drains or devices"
+   ],
+   [
+    "Conclusion",
+    "A LEFT-SIDED PLEURAL EFFUSION. In a 62-year-old smoker with 6 kg of weight loss, the principal concern is a MALIGNANT effusion"
+   ],
+   [
+    "VERSION — a mass instead",
+    "A ROUND WHITE SHADOW, golf-ball sized, in the upper zone → LUNG MASS UNTIL PROVEN OTHERWISE. WARN, PAUSE, NAME, PAUSE — never narrate your way into a cancer diagnosis by accident"
+   ],
+   [
+    "VERSION — the normal film",
+    "Reported NORMAL. A NORMAL FILM IS A FINDING, NOT AN ENDING: 'it's reassuring, but a chest X-ray can miss small cancers, early scarring and clots, so given your symptoms I still want a CT.' 'Your x-ray is clear, so there's nothing to worry about' is the single most dangerous sentence in this station"
+   ]
+  ],
+  "findingsLabel": "The examination findings and the film, read in order",
+  "must": [
+   "FAIL — Naming a cancer with no warning shot and no pause, or hiding from it entirely.",
+   "FAIL — Never mentioning the trachea, or pouncing on the abnormality without the normal side.",
+   "FAIL — Describing without diagnosing, or false reassurance on a normal film.",
+   "FAIL — Four minutes on the film, so the diagnosis-and-management task goes unfinished.",
+   "ASK — Before I go on, is there anyone you'd like to have with you?",
+   "ASK — What's going through your mind? Then let the silence sit."
+  ],
   "back": {
-   "dx": "Left pleural effusion — homogeneous opacification of the left lower zone, blunted costophrenic angle, rising lateral meniscus, no air bronchogram, trachea central, right lung clear, left heart border obscured — AND the concern about why it is there: lung cancer most likely (6 kg, 40 pack-years), then heart failure, infection incl. TB, mesothelioma (boilermaker — asbestos lagging), liver/kidney causes. Peter is flat and guarded, arms folded, has looked it up and is convinced it's cancer, hasn't told Denise; hidden agenda: will he see his first grandchild, due in April. 'Airway midline' is the sentence nobody says. Naming the effusion and stopping answers half the question.",
+   "dx": [
+    "**A left-sided pleural effusion — and the diagnosis you must say out loud is 'a pleural effusion, AND I am concerned about what is causing it'.** Naming the effusion and stopping answers half the question.",
+    "**Three densities: WHITE is bone · GREY is soft tissue · BLACK is air.** Every finding is one of those appearing where it should not, or missing where it should be.",
+    "**Two registers, two scripts — decide which before you open your mouth. For the PATIENT, seven moves: orientate → three colours → landmarks → THE AIRWAY IS MIDLINE → the NORMAL side → the abnormal side → a name → a next step.** **For the EXAMINER or a student: Details · RIPE · Soft tissue and bones · Airway · Breathing · Circulation · Diaphragm · Extras · impression.** **Never deliver RIPE to a patient.**",
+    "**Keep the film to 60–90 SECONDS.** It is a sub-task inside a bigger station and **the marks are in the plan.**",
+    "**Words to swap out: opacity → white area · consolidation → infection filling the air spaces · effusion → fluid around the lung · costophrenic angle → the angle where the lung meets the chest wall · hyperinflation → the lungs are over-blown and can't empty · cardiomegaly → the heart is bigger than it should be · pneumothorax → air has leaked out into the space around the lung · hilar lymphadenopathy → swollen glands at the centre of the lungs.**",
+    "**The warning shot: 'before I go on — is there anyone you'd like to have with you?' → 'the fluid isn't the whole problem; the question is why it's there' → PAUSE → 'putting together the fluid, the weight you've lost and your smoking history, the possibility I'm most concerned about is a cancer in the lung. I'm sorry to have to say that, and we do not know it yet.' → PAUSE, AND DO NOT FILL THE SILENCE.**",
+    "**The differentials given to HIM, not just the examiner: a heart problem with fluid backing up · an infection including tuberculosis · MESOTHELIOMA, linked to the asbestos he met as a boilermaker · liver or kidney problems making the body hold fluid.**",
+    "**To 'how long have I got?': 'I'm not going to give you a number I can't stand behind. What matters is the type and whether it has spread, and that's exactly what the scan and the sample will tell us. I won't keep anything from you.'**",
+    "**Plan: ULTRASOUND-GUIDED DIAGNOSTIC PLEURAL ASPIRATION — protein, LDH, cytology, Gram stain and culture, applying LIGHT'S CRITERIA · CT CHEST AND UPPER ABDOMEN · bloods · respiratory referral and the LUNG CANCER MDT — all this week.** **Safety-net: worse breathing, haemoptysis, chest pain or fever → emergency department, not the appointment.**",
+    "**Offer Cancer Council SA 13 11 20 — he can ring without giving his name.** Hand the disclosure question back with support attached, offer his wife at the next appointment, and offer **smoking cessation — Quitline, nicotine replacement, varenicline.** **PATS for travel · TIS 131 450 — never explain a film through a family member.**"
+   ],
    "plan": [
     [
      "0:00",
-     "To the examiner if asked: PA erect, name/date/old films, RIPE quality (not rotated, six anterior ribs, adequate exposure), trachea central, bones/soft tissues, the left lower zone finding with meniscus and no air bronchogram, right clear, left heart border obscured → left pleural effusion"
+     "**Ask permission before showing him: 'your x-ray is back and I've had a good look at it. I'd like to show it to you, because it's easier to follow when you can see it. Is that all right?'**"
+    ],
+    [
+     "0:15",
+     "**Orientate BEFORE naming anything abnormal — twelve seconds that buys you the rest: 'this is a picture of your chest. There are really only three colours. WHITE IS BONE — ribs, collarbone, spine. GREY IS SOFT TISSUE, like your heart here in the middle. And BLACK IS AIR, which is what healthy lung looks like.'** **Point as you speak, even online.**"
+    ],
+    [
+     "0:35",
+     "**The airway — the sentence nobody says: 'this dark line running down the centre is your main airway, your windpipe, and IT IS SITTING STRAIGHT DOWN THE MIDDLE, WHICH IS WHAT WE WANT.'**"
     ],
     [
      "0:45",
-     "Permission: 'I'd like to show it to you, because it's easier to understand when you can see it' → three colours → ★ 'this dark line down the centre is your main airway — sitting straight down the middle, which is what we want' → normal RIGHT side first, sharp angle → left: angle filled in, white curving up → 'fluid around the outside of the lung, pressing on it — why you've been so breathless — a pleural effusion' → tie it to the examination (dull, no breath sounds)"
+     "**The NORMAL side first: 'let me show you this side first — your right. The lung is dark all the way down, and this sharp little angle right at the bottom, where the lung meets the chest wall, is nice and pointed. THAT SIDE LOOKS NORMAL TO ME.'**"
     ],
     [
-     "2:15",
-     "'So you drain it and I'm fixed?' → 'we will take fluid off and that will help — but I have to be honest with you about something first' → support person? → ★ 'the fluid isn't the whole problem — the question is why it's there' → pause → cancer named, apology, 'we don't know it yet' → silence → 'what's going through your mind?'"
+     "1:00",
+     "**The abnormal side, named plainly: 'on your left, that same angle isn't sharp any more. It's filled in, it's white, and the white curves up like this. THAT WHITE IS FLUID, sitting around the outside of the lung and pressing on it — and that is why you've been so short of breath. The name for it is a PLEURAL EFFUSION.'** Then **tie it back to the examination: that side was dull when I tapped it, and I couldn't hear the breath sounds.**"
     ],
     [
-     "4:00",
-     "'How long have I got?' → no number → differentials to the patient: heart backing fluid up · infection incl. TB · mesothelioma — asbestos as a boilermaker · liver/kidney fluid retention"
+     "1:30",
+     "**The warning shot, the pause, the word cancer, and the second pause.** Then **'what's going through your mind?'** and **wait.** If he asks how long, **do not invent a number.**"
+    ],
+    [
+     "2:45",
+     "**The differentials, given to him in plain words** — heart, infection including TB, mesothelioma from the asbestos, liver and kidney. **'The tests are designed to tell those apart.'**"
+    ],
+    [
+     "3:30",
+     "**The plan with a timeframe: ultrasound-guided sample of the fluid · CT chest and upper abdomen · bloods · respiratory referral this week.** **'This is not something we wait on.'**"
+    ],
+    [
+     "4:30",
+     "**Safety-net: worse breathing, coughing up blood, chest pain or fever → straight to the emergency department, don't wait for the appointment.** Then **'should I tell my wife?'** handed back with support attached, and **Cancer Council SA 13 11 20.**"
     ],
     [
      "5:30",
-     "Plan: ultrasound-guided fluid sample (inflammatory vs pressure fluid; cancer cells; infection) → CT chest + upper abdomen → bloods → respiratory referral, MDT — all this week → safety-net → 'should I tell Denise?' → his decision, welcome her at results, Cancer Council SA 13 11 20 → concerns (grandchild) → smoking help → summary"
+     "**Smoking cessation offered concretely**, then **summarise and offer to see him with his wife once the results are back.** **Do not go back and take more history.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Thanks for waiting, Peter. Your X-ray is back and I've had a good look at it. I'd like to show it to you, because it's easier to follow when you can see it. Is that all right?'",
-    "'This is a picture of your chest. There are really only three colours. White is bone — ribs, collarbone, spine. Grey is soft tissue, like your heart here in the middle. And black is air, which is what healthy lung looks like.'",
-    "★ 'This dark line running down the centre is your main airway — your windpipe. It's sitting straight down the middle, and that is exactly what we want. Now this side first — your right. The lung is dark all the way down, and this sharp little angle at the bottom, where the lung meets the chest wall, is nice and pointed. That side looks normal to me.'",
-    "★ 'But on this side — your left — that same angle isn't sharp any more. It's filled in and it's white, and the white goes up in a curve like this. That white is fluid, sitting around the outside of the lung and pressing on it — and that's why you've been getting so short of breath. The medical name is a pleural effusion, which just means fluid around the lung. It matches what I found when I examined you — that side was dull when I tapped it and I couldn't hear the breath sounds.'",
-    "★ 'Before I go on — is there anyone you'd like to have with you, or would you rather I keep going? … The fluid isn't the whole problem. The question is why it's there, and that's what decides what happens next. [pause] Putting together the fluid, the six kilos you've lost and forty years of smoking, the possibility I'm most concerned about is a cancer in the lung. I'm sorry to have to say that to you. We don't know it yet — but I'm not going to pretend it isn't what I'm thinking.' [pause — don't fill it]",
-    "'That's a lot to take in. What's going through your mind?' → 'How long have I got?' → 'I'm not going to give you a number I can't stand behind. What matters is what type this is and whether it has spread — and that's exactly what the scan and the sample will tell us. What I can promise is that I won't keep anything from you.'",
-    "'The other explanations I'm thinking about: a heart problem, where fluid backs up into the lungs; an infection, including tuberculosis; a condition of the lining of the lung called mesothelioma, which is linked to the asbestos you may have met as a boilermaker; and problems of the liver or kidneys that make the body hold fluid. The tests are designed to tell those apart.'",
-    "'Here's what I'm going to do. First, a small sample of the fluid with a fine needle, guided by ultrasound so it's safe — it tells us whether it's inflammatory fluid or fluid from pressure, and we look for cancer cells and infection. Second, a CT scan of your chest and upper abdomen. Third, blood tests. Fourth, a referral to the respiratory team — and if this is what I'm worried about, a specialist team who manage exactly this. All this week; this is not something we wait on. If your breathing gets worse, you cough up blood, or get chest pain or fever — straight to the emergency department. And I'd like to see you again when the results are back so we go through them together.'"
-   ],
    "pefe": [
-    "Examination is given in the stem: reduced expansion, dull, absent breath sounds, reduced VR at the left base, trachea central = effusion; CVS normal, no oedema → against heart failure",
-    "Examiner-register film read: 'PA erect adult film; confirm name and date, compare old films; adequate — not rotated, six anterior ribs, adequately exposed; trachea central; bones and soft tissues unremarkable; homogeneous opacification of the left lower zone with a blunted costophrenic angle and a rising lateral meniscus, no air bronchogram; right lung clear; left heart border obscured so cardiac size unreliable; conclusion — left pleural effusion'. Consolidation would show an air bronchogram and no meniscus — say both",
-    "Effusion work-up: ultrasound-guided tap → protein, LDH, cytology ×3, Gram stain/culture, pH; Light's criteria; CT chest + upper abdomen; FBE, UEC, LFT, albumin, Ca; drain ≤1–1.5 L per sitting; respiratory referral; lung cancer MDT; PATS for travel from Yorke Peninsula",
-    "Disclosure: 'Denise doesn't know I'm here — should I tell her?' → his decision, no right answer today, most find it harder alone, welcome her at results; Cancer Council SA 13 11 20 (anonymous). 'Will you tell me straight?' → yes. Grandchild in April → acknowledge what he actually wants to know without promising",
-    "Smoking: 'should I stop?' → yes, and concrete help — Quitline 13 7848, NRT, varenicline — no lecture. Don't go back and take more history",
-    "Variants: (1) mass instead of effusion — 'a round white shadow in the upper part of the lung, about golf-ball size … I'm afraid that shouldn't be there … concerned this could be a cancer' · (2) pneumothorax — 'a fine line is the edge of your lung; everything outside it is black with none of the normal markings — air has leaked out, the lung has partly collapsed; very treatable'; hypotensive + deviated trachea → don't describe the film: 'tension pneumothorax, clinical diagnosis, decompress before imaging' · (3) cardiomegaly to a student — erect PA first, CTR >0.5; in a 5-year-old two weeks after a sore throat → acute rheumatic fever with carditis; look for venous diversion, Kerley B, effusions; pericardial effusion mimics — echo · (4) normal film, patient not — 'normal and reassuring, but a chest X-ray can miss small cancers, early scarring and clots; given the weight loss and cough I still want a CT'"
+    "**Quality before findings.** Commenting on rotation, inspiration and exposure first gives you permission to say **'this heart looks large but the film is AP'** or **'there is apparent basal shadowing but this is a poor inspiration'**. Candidates who pounce have nowhere to retreat.",
+    "**RIPE: Rotation — clavicle sternal ends equidistant from the spinous process · Inspiration — 5–6 anterior or 8–10 posterior ribs · Picture — PA or AP, erect or supine · Exposure — hemidiaphragm just visible through the heart.** **CTR over 0.5 is cardiomegaly on an ERECT PA FILM ONLY.**",
+    "**Effusion workup: ULTRASOUND-GUIDED TAP with protein, LDH, cytology, Gram stain and culture, applying LIGHT'S CRITERIA · CT CHEST AND UPPER ABDOMEN.** **A few hundred millilitres are needed to blunt the costophrenic angle on a PA film; far less shows on a lateral or on ultrasound.**",
+    "**Two signs worth naming: the AIR BRONCHOGRAM — branching black airways against white alveolar filling, so the process is in the AIR SPACES, pointing to consolidation and AWAY from an effusion or mass. The SILHOUETTE SIGN — lost right heart border = right middle lobe; lost left heart border = lingula; lost hemidiaphragm = lower lobe.**",
+    "**Trachea PUSHED AWAY: tension pneumothorax, massive effusion. PULLED TOWARDS: lobar collapse, fibrosis, pneumonectomy. Central with a big white hemithorax → think consolidation rather than collapse.**",
+    "**Tension pneumothorax is a CLINICAL diagnosis — decompress before imaging.** Saying that out loud is worth a mark on its own. **Free gas under the diaphragm on an erect film is a perforated viscus — make the diaphragm and what lies beneath it a fixed step.**",
+    "**Do not miss: a small APICAL pneumothorax above the clavicles · a mass hidden BEHIND THE HEART or the diaphragm · a rib lesion or pathological fracture · a Pancoast tumour at the apex · an incidental breast lesion.** **A repeat film at 6 weeks after pneumonia in a smoker over 50.**"
    ],
-   "fails": [
-    "Missing the warning shot, or never saying the word cancer ★",
-    "Naming the effusion and stopping — not saying 'and I'm concerned about why it's there' ★",
-    "Starting the film with the abnormality; omitting 'airway midline'; abnormal side before normal ★",
-    "Calling it consolidation (no meniscus/air-bronchogram reasoning); jargon (opacity, effusion, costophrenic — 'you've lost me')",
-    "Filling the silence; inventing a prognosis; false reassurance in variant 4 ('your X-ray is clear so there's nothing to worry about')",
-    "Fewer than three other causes; no asbestos/mesothelioma; no fluid sample and CT; no timeframe; no safety-net; film over 90 seconds"
-   ],
-   "numbers": [
-    "Three densities: white bone · grey soft tissue · black air · RIPE: Rotation (clavicles equidistant from spinous process), Inspiration (5–6 anterior / 8–10 posterior ribs), Picture (PA erect), Exposure (hemidiaphragm just visible through the heart)",
-    "CTR >0.5 = cardiomegaly, erect PA only · right hemidiaphragm higher (liver) · meniscus + no air bronchogram = effusion · air bronchogram = consolidation · trachea pushed away: tension pneumothorax, massive effusion · pulled towards: collapse, fibrosis, pneumonectomy",
-    "Silhouette sign: right heart border = right middle lobe · left heart border = lingula · hemidiaphragm = lower lobe",
-    "Light's criteria: protein ratio >0.5 · LDH ratio >0.6 · pleural LDH >⅔ ULN → exudate · drain ≤1–1.5 L per sitting VERIFY · mesothelioma latency 20–40 years",
-    "Lay-sentence bank: consolidation 'cloudy white area is infection filling the tiny air sacs' · pneumothorax 'fine line is the edge of your lung, air has leaked out' · cardiomegaly 'heart shadow takes more than half the width' · hyperinflation 'lungs over-blown, diaphragm pushed flat' · mass 'round white shadow that shouldn't be there' · hilar nodes 'swollen glands at the centre of both lungs' · oedema 'fluid backed up because the heart isn't pumping it forward' · free gas 'air where there shouldn't be — something has perforated' · normal 'reassuring but doesn't rule everything out, I still want a scan'",
-    "Pass guide: 17+ of 23 with every bold item; missing the warning shot or the word cancer fails on its own · Cancer Council SA 13 11 20 · Quitline 13 7848 · TIS 131 450 · PATS"
+   "ddx": [
+    [
+     "**Malignant pleural effusion** — the concern",
+     "**62, 40 pack-years, 6 kg weight loss**, effusion with a meniscus",
+     "Weight, haemoptysis, clubbing, hoarseness, bone pain, supraclavicular node",
+     "**Ultrasound-guided tap with CYTOLOGY; CT chest and upper abdomen; lung cancer MDT** — immediate"
+    ],
+    [
+     "**Mesothelioma**",
+     "**Boilermaker — asbestos lagging with no protection**, 20–40 year latency, chest wall ache, pleural thickening",
+     "**Asbestos BY NAME — trades, lagging, brake linings, old sheds**",
+     "CT chest, pleural biopsy; **ReturnToWorkSA dust diseases pathway** — urgent"
+    ],
+    [
+     "Heart failure",
+     "Orthopnoea, pillow count, ankle swelling, known ischaemia",
+     "Pillows, PND, oedema, JVP, gallop",
+     "**Transudate on Light's criteria.** Echocardiogram, BNP — urgent"
+    ],
+    [
+     "Parapneumonic effusion or empyema",
+     "Fever, pleuritic pain, purulent sputum",
+     "Fevers, rigors, sputum colour",
+     "**Exudate; pH and Gram stain on the tap; drainage if complicated** — immediate"
+    ],
+    [
+     "Tuberculosis",
+     "Fevers, night sweats, weight loss, contact or overseas birth",
+     "TB contact, birthplace, travel",
+     "**AFB and culture on the fluid**, CXR, sputum — urgent"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, calf swelling, immobility, malignancy",
+     "Calf pain, flights, surgery, previous clot",
+     "**Wells score, CTPA** — exudative effusion — immediate"
+    ],
+    [
+     "Consolidation rather than effusion",
+     "**Air bronchograms, confined by fissures, no meniscus**",
+     "The silhouette sign to localise the lobe",
+     "CURB-65, bloods and cultures, antibiotics; **repeat film at 6 weeks in smokers**"
+    ],
+    [
+     "Cirrhosis · nephrotic syndrome · hypothyroidism",
+     "**Transudates** — oedema, ascites, frothy urine, fatigue",
+     "Alcohol, liver disease, urine frothing, thyroid symptoms",
+     "LFT and albumin, urine protein-creatinine ratio, TSH"
+    ],
+    [
+     "**Tension pneumothorax · free subdiaphragmatic gas**",
+     "**Hypotension with a deviated trachea and absent breath sounds**; rigid abdomen with peritonism",
+     "Tracheal position; look BELOW the domes",
+     "**Decompress before imaging. Nil by mouth, fluids, antibiotics, urgent surgical referral** — immediate"
+    ],
+    [
+     "**Normal film in a symptomatic smoker**",
+     "Film reported normal, symptoms persist",
+     "Weight loss, haemoptysis, duration",
+     "**A normal film does not exclude cancer, PE or early interstitial disease — still get the CT**"
+    ]
    ]
   },
   "source": "Chest_Xray_2_Case_Tasks_Script_Notability.pdf (Peter Callaghan — left pleural effusion; four variant films on the back)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Chest_Xray_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "No distress at rest; not cyanosed"
-   ],
-   [
-    "Chest — expansion",
-    "Reduced at the left base"
-   ],
-   [
-    "Trachea",
-    "Central"
-   ],
-   [
-    "Percussion",
-    "DULL at the left base"
-   ],
-   [
-    "Breath sounds",
-    "ABSENT at the left base"
-   ],
-   [
-    "Vocal resonance",
-    "REDUCED there — the combination that makes it an effusion, not consolidation"
-   ],
-   [
-    "Cardiovascular",
-    "NORMAL, no leg oedema — which argues against heart failure"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Missing the warning shot, or never saying the word cancer — a fail on its own: 'is there anyone you'd like with you?' → 'the fluid isn't the whole problem — the question is why it's there' → the word → 'I'm sorry' → silence",
-   "FAIL — Omitting the airway — 'this dark line down the centre is your main airway, and it's sitting straight down the middle, which is what we want' — two seconds, the most commonly skipped comment in the task",
-   "FAIL — Starting with the abnormality — orientate first (three colours, heart, spine), then the normal side, then the abnormal side; it shows the examiner you compared rather than pounced",
-   "FAIL — A description with no name — 'there's a white area' scores almost nothing; 'that's fluid around the lung — a pleural effusion' then tie it back to the dull, silent base you found on examination",
-   "FAIL — Calling it consolidation — the meniscus and the absence of an air bronchogram separate fluid in the pleural space from fluid in the air spaces; say both",
-   "FAIL — Filling the silence or inventing a prognosis — then differentials (heart, infection incl. TB, mesothelioma from the boilermaking, liver or kidney), and the plan this week: ultrasound-guided tap, CT chest and upper abdomen, respiratory referral, safety-net"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Chest_Xray_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-44",
