@@ -22409,9 +22409,8 @@
  {
   "id": "MED-84",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Vitals in the stem. Examination findings on a card when you ask — Version A card (hepatitis) or Version B card (gastroenteritis). Six minutes of history.",
   "stem": [
    "Jane Whitmore, 30, has come in feeling unwell. She reports there has been an incident at work. No further detail is given. T 38.1, HR 92, BP 118/72, RR 16, SpO2 98% RA."
   ],
@@ -22420,104 +22419,215 @@
    "You will be given the examination findings on screen or card",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes: 0:00 open + concern · 0:30 'unwell' in four questions · ★ 1:15 'you mentioned an incident at work — tell me more' · say the exposure back ('urine and faeces') · ★ four exposure questions: PPE · fluid in eyes/mouth · incident report · head injury · 2:15 three infection groups: hepatitis (jaundice, RUQ pain, nausea, dark urine/pale stools) · gastroenteritis (diarrhoea loose vs watery, blood, fever/chills) · leptospirosis (rash, nodes, calf pain, red eyes) · ★ 4:15 PTSD screen — coping, mood, sleep, nightmares, avoidance · 5:00 the rest fast incl. hepatitis vaccination · examination by name incl. urine dipstick and calves · diagnosis with reasons · differential with named organisms + leptospirosis + psychological · safety-net, notification, teach-back.",
+  "findings": [
+   [
+    "Vitals in the stem — your first check",
+    "T 38.1 · HR 92 · BP 118/72 · RR 16 · SpO2 98% RA. SHE IS NOT SEPTIC AND NOT DEHYDRATED — but CHECK THE VITALS AGAINST A SEPSIS PATHWAY before settling on a benign diagnosis"
+   ],
+   [
+    "THE INCIDENT — open it, or fail the approach domain",
+    "'You mentioned an incident at work. CAN YOU TELL ME MORE ABOUT IT?' → 'My job is COLLECTING SAMPLES FROM THE SEWER. I was climbing in, I SLIPPED, AND I FELL INTO THE SEWAGE.' SAY IT ALOUD: 'so you were EXPOSED TO URINE AND FAECES.' That sentence is the pivot of the case"
+   ],
+   [
+    "THE FOUR EXPOSURE QUESTIONS",
+    "1 WERE YOU WEARING PROTECTIVE EQUIPMENT? 2 DID ANY FLUID GET INTO YOUR EYES OR YOUR MOUTH? 3 DID YOU FILE AN INCIDENT REPORT? 4 DID YOU HIT YOUR HEAD, or injure yourself anywhere else? PPE DOES NOT PROTECT THE MOUTH RELIABLY, and the whole faecal-oral route runs through the mouth — the eyes-and-mouth question is what JUSTIFIES YOUR DIFFERENTIAL LIST"
+   ],
+   [
+    "What she says about PPE — and why it changes nothing",
+    "'I WAS WEARING PROTECTIVE EQUIPMENT' and 'I took all the measures I had to.' DO NOT REFRAME THE DIFFERENTIAL. Ask the eyes-and-mouth question anyway — SHE CANNOT REMEMBER. And CONFIRM AND REINFORCE the incident report: IT IS WHAT OPENS HER ReturnToWorkSA CLAIM"
+   ],
+   [
+    "VERSION A CARD — the recalled version",
+    "TENDER HEPATOMEGALY · BILIRUBIN POSITIVE ON URINE DIPSTICK · NO VISIBLE JAUNDICE. History: fever, NIGHT SWEATS, RIGHT UPPER QUADRANT PAIN. BILIRUBIN APPEARS IN THE URINE BEFORE THE SKIN TURNS YELLOW — so no jaundice does NOT exclude hepatitis"
+   ],
+   [
+    "VERSION B CARD — written to catch the recall",
+    "NO JAUNDICE · NO HEPATOMEGALY · NORMAL URINE DIPSTICK. History: fever, chills, night sweats, LOWER ABDOMINAL PAIN, NON-BLOODY DIARRHOEA, nausea without vomiting. THE EXAMINERS WROTE THIS VERSION BECAUSE EVERYONE KNOWS THIS AS 'THE SEWER HEPATITIS CASE' — AND STILL HEAR CANDIDATES ANNOUNCE HEPATITIS"
+   ],
+   [
+    "The hepatitis group — ask it in full",
+    "ANY YELLOWING OF SKIN OR EYES · ANY TUMMY PAIN, WHERE · NAUSEA OR VOMITING · HAS YOUR URINE GONE DARK, OR YOUR STOOLS GONE PALE?"
+   ],
+   [
+    "The gastroenteritis group — TWO stool questions only",
+    "ANY DIARRHOEA · IS IT LOOSE OR COMPLETELY WATERY · ANY BLOOD IN IT · ANY MUCUS · ANY FEVER OR CHILLS? CONSISTENCY GRADES SEVERITY and BLOOD SEPARATES INVASIVE BACTERIAL COLITIS from viral and toxin-mediated illness. SKIP VOLUME AND ODOUR — they add nothing you will act on and cost you a question you cannot afford"
+   ],
+   [
+    "The water-contact group — the sewer-specific organism",
+    "ANY RASH · ANY LUMPS OR BUMPS in neck, armpits or groin · ANY SEVERE MUSCLE ACHES, ESPECIALLY IN YOUR CALVES · ANY RED OR SORE EYES? LEPTOSPIROSIS comes from RODENT URINE — the classic sewer vector. CALF MYALGIA plus CONJUNCTIVAL SUFFUSION, and in WEIL DISEASE jaundice with acute kidney injury"
+   ],
+   [
+    "THE PSYCHOLOGICAL SCREEN — a scored omission if skipped",
+    "'FALLING INTO A SEWER WOULD SHAKE ANYONE. HOW HAVE YOU BEEN COPING SINCE?' Then MOOD · SLEEP, ANY NIGHTMARES OR FLASHBACKS · HAVE YOU AVOIDED GOING BACK TO WORK · any other stress. THE NIGHTMARE AND AVOIDANCE QUESTIONS are what tell the examiner you are screening for PTSD rather than depression"
+   ]
+  ],
+  "findingsLabel": "The incident, the four exposure questions, and the card that overrules the recall",
+  "must": [
+   "FAIL — Never asking about the incident. Straight from 'unwell' into jaundice questions.",
+   "FAIL — Diagnosing hepatitis in Version B when the card says no jaundice, no hepatomegaly, normal dipstick.",
+   "FAIL — Missing the head injury question after a fall into a confined space.",
+   "FAIL — Omitting the psychological screen in a frankly traumatic incident.",
+   "ASK — Did any of the fluid get into your eyes or your mouth?",
+   "ASK — Did you hit your head, or injure yourself anywhere else?"
+  ],
   "back": {
-   "dx": "Version A — acute viral hepatitis (A or E) after falling chest-deep into sewage five days ago while sampling for the water utility (full PPE; doesn't know if fluid entered mouth/eyes; incident report filed; no head injury): five days of fever, aches, night sweats, anorexia, RUQ pain, mild nausea, no diarrhoea; card — no jaundice yet, T 38.1, tender hepatomegaly, RUQ tenderness, no splenomegaly, no rash, no calf tenderness, ★ urine dipstick bilirubin positive (bilirubinuria precedes visible jaundice — the point of the card). Explain: 'acute hepatitis — inflammation of the liver — most probably hepatitis A or a close relative, hepatitis E; both picked up by swallowing something contaminated with sewage; not yellow yet but the pigment is already building up in the urine'; settles over weeks, doesn't become chronic; infectious via the bowel — handwashing, household vaccination. Version B card (no jaundice, no hepatomegaly, mild lower abdominal tenderness, dipstick normal; history of loose stools 4–5/day, lower abdominal pain) → gastroenteritis, said cleanly: 'not hepatitis' — no hedging with 'might be early hepatitis'. Differentials aloud: sewage-borne — gastroenteritis viral (rotavirus, norovirus, adenovirus), bacterial (Salmonella, Shigella, E. coli, Campylobacter), protozoal (Giardia, Cryptosporidium, Entamoeba); leptospirosis (rat urine; no calf pain/red eyes but treatable — test); liver abscess (needs ultrasound); PTSD/adjustment reaction (replaying it, two dreams, hasn't been back down); further down EBV, CMV, HIV, syphilis, travel infections, lymphoma/leukaemia, thyroid, diabetes, anaemia, coeliac, autoimmune ('cancer?' → 'not worried about that here — it's on the list I work through'). Plan: LFTs, clotting, hepatitis and leptospirosis serology, liver ultrasound; rest, fluids, no alcohol; notify hepatitis A; vaccinate household (3-year-old son); employer letter — off work while infectious; ReturnToWorkSA; safety-net confusion/drowsiness, bruising/bleeding, can't keep fluids down, turning yellow; review 2 days, talk about the dreams properly then.",
+   "dx": [
+    "**VERSION A — ACUTE VIRAL HEPATITIS, most probably HEPATITIS A, with HEPATITIS E named alongside it.** Both are **faecal-orally transmitted and there is NO WAY TO SEPARATE THEM on history and examination alone. Say 'hepatitis A or E' and move on.** **VERSION B — INFECTIVE GASTROENTERITIS, viral, bacterial or protozoal, acquired from the sewage. NOT hepatitis.**",
+    "**THE DISCRIMINATING ISSUE: whether you let the EXAMINATION CARD OVERRULE THE RECALL.** Almost every candidate knows this as 'the sewer hepatitis case' — **the examiners know that too, which is why Version B exists. READING THE CARD AND CHANGING YOUR ANSWER IS THE SINGLE BEHAVIOUR BEING TESTED.**",
+    "**ITS TWIN: whether you OPENED THE INCIDENT AT ALL. A candidate who diagnoses hepatitis correctly WITHOUT ASKING ONE QUESTION ABOUT THE SEWER has failed the approach and differential domains even with the right diagnosis.**",
+    "**Do NOT hedge with 'it's probably EARLY hepatitis' in Version B. It reads as an UNWILLINGNESS TO ABANDON THE RECALL and costs you the diagnosis domain.** If challenged 'why not hepatitis?': **'no jaundice, no hepatomegaly and NO BILIRUBIN IN THE URINE. In acute hepatitis I would expect at least BILIRUBINURIA, since conjugated bilirubin appears in urine BEFORE the skin discolours.'**",
+    "**If asked 'could it be both?': 'it could — A SINGLE SEWAGE EXPOSURE CAN TRANSMIT MORE THAN ONE ORGANISM. I would still call gastroenteritis the leading diagnosis and check liver function and hepatitis serology to be sure.'**",
+    "**NAME THE ORGANISMS — a bare 'gastroenteritis' scores far less than a specific list. VIRAL: rotavirus, norovirus, adenovirus. BACTERIAL: Salmonella, Shigella, E. coli, Campylobacter. PROTOZOAL: Giardia, Cryptosporidium, Entamoeba.** One or two from each subgroup, every time.",
+    "**Hepatitis A incubation 15–50 days, average about 28. Hepatitis E 15–60 days. BOTH faecal-oral, and NEITHER becomes chronic in an immunocompetent adult.** **Jaundice becomes visible at a bilirubin of roughly 40–50 micromol/L — BILIRUBINURIA COMES FIRST.** VERIFY.",
+    "**PTSD REQUIRES SYMPTOMS PERSISTING BEYOND ONE MONTH — before that it is an ACUTE STRESS REACTION.** Screen in the room, review at four weeks, and offer **a mental health treatment plan** if symptoms persist.",
+    "**Hepatitis A or E management: SUPPORTIVE — rest, oral fluids, AVOID ALCOHOL AND HEPATOTOXIC DRUGS, small frequent meals. NOTIFY. EXCLUDE FROM WORK while infectious, and she is a sewage worker. VACCINATE CLOSE CONTACTS and offer immunoglobulin where indicated. REVIEW IN 48–72 HOURS with repeat LFT and INR.** **Gastroenteritis: oral rehydration, hygiene advice, WORK EXCLUSION UNTIL 48 HOURS AFTER SYMPTOMS SETTLE, faecal testing given the occupational source, antibiotics only if a specific treatable organism is identified.** VERIFY.",
+    "**Explain it in plain words: 'PICKED UP BY SWALLOWING SOMETHING CONTAMINATED WITH SEWAGE' — not 'faecal-oral transmission of hepatotropic viruses'.** **NOTIFIABLE in SA: hepatitis A and E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, Shiga-toxin E. coli.** **The incident report opens a ReturnToWorkSA claim; SafeWork SA has jurisdiction over the confined-space entry. MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'I understand you've been unwell and something happened at work — I'll ask questions, examine you, then explain' · ★ 'is there anything you're particularly worried this might be?'"
+     "**WIPE — and in the online format SAY IT: 'I would normally wash my hands here.' Introduce, confirm the name, and frame it: 'I understand you've been feeling unwell and that SOMETHING HAPPENED AT WORK. I'd like to ask you some questions, then examine you, and we'll talk about what I think it is.'**"
     ],
     [
-     "0:30",
-     "'Unwell' — feverish/tired/pain? duration (5 days), constant, worse, better/worse, impact (2 days off) — four questions, then move"
+     "0:15",
+     "**AGENDA — eight seconds, and a marked item: 'before I start — is there anything in particular you're worried this might be?'**"
     ],
     [
-     "1:15",
-     "★ 'You mentioned an incident at work — can you tell me more?' → slipped climbing into a sewer, fell into sewage → react: 'that sounds horrible, thank you for telling me — so you were exposed to urine and faeces'"
+     "0:25",
+     "**BLOCK 1, explore 'unwell' in FOUR questions, 45 seconds: can you describe what you mean by feeling unwell — tiredness, feverish, pain, or something else · how long, constant or coming and going, getting worse · anything better or worse · how is it affecting your day-to-day life?**"
     ],
     [
-     "1:40",
-     "★ Four exposure questions: PPE? (full kit) · ★ fluid in eyes or mouth? (doesn't know) · incident report? (yes — 'that matters, it protects you if you need time off') · ★ head injury or other injury? (landed on side)"
+     "1:10",
+     "**BLOCK 2, THE INCIDENT — open question FIRST: 'you mentioned an incident at work. CAN YOU TELL ME MORE ABOUT IT?'** Then **SAY THE EXPOSURE BACK: 'so you were exposed to urine and faeces.'**"
     ],
     [
-     "2:15",
-     "Hepatitis: jaundice, abdominal pain + site (A: RUQ; B: lower), nausea/vomiting, dark urine/pale stools · gastroenteritis: diarrhoea — loose or watery, blood/mucus (A: none; B: loose ×4–5, no blood), fever/chills · leptospirosis screen: rash, nodes, ★ severe calf aches, ★ red/sore eyes → no (the mark is for asking)"
+     "1:30",
+     "**THE FOUR EXPOSURE QUESTIONS, signposted: 'I want to ask a few specific questions about that, because it changes what I need to test for.' PPE · FLUID IN EYES OR MOUTH · INCIDENT REPORT · OTHER INJURIES AND HEAD STRIKE.**"
+    ],
+    [
+     "1:55",
+     "**Confirm and reinforce the report: 'that's important — it's what opens your compensation claim. Keep a copy yourself.'**"
+    ],
+    [
+     "2:05",
+     "**BLOCK 3, signpost the symptom groups: 'I'm going to run through some symptoms quickly — mostly yes or no.' HEPATITIS GROUP: yellowing of skin or eyes · tummy pain, WHERE · nausea or vomiting · DARK URINE OR PALE STOOLS?**"
+    ],
+    [
+     "2:35",
+     "**GASTROENTERITIS GROUP: any diarrhoea · LOOSE OR COMPLETELY WATERY · ANY BLOOD · any mucus · any fever or chills?**"
+    ],
+    [
+     "3:00",
+     "**WATER-CONTACT AND RARER GROUP: any rash · LUMPS OR BUMPS in neck, armpits or groin · SEVERE MUSCLE ACHES, ESPECIALLY IN THE CALVES · RED OR SORE EYES?** That is **leptospirosis, CMV and toxoplasmosis in one block.**"
+    ],
+    [
+     "3:30",
+     "**BLOCK 4, THE PSYCHOLOGICAL SCREEN — 45 seconds, five questions. Open it without implying she is imagining her symptoms: 'FALLING INTO A SEWER WOULD SHAKE ANYONE. HOW HAVE YOU BEEN COPING SINCE?'** Then **mood · sleep, NIGHTMARES OR FLASHBACKS · AVOIDING GOING BACK TO WORK · other stress.**"
     ],
     [
      "4:15",
-     "★ 'Falling into a sewer would shake anyone — how have you been coping? Mood? Sleep — nightmares or flashbacks? Avoiding going back? Other stress?' → replaying it, two dreams, hasn't been back — 'thank you, that's important and we'll come back to it'"
+     "**MALIGNANCY, then TRAVEL AND SEXUAL HISTORY: weight loss, night sweats, lumps, bruising · recent travel · sexual history if the picture fits.**"
     ],
     [
-     "5:00",
-     "Fast: weight/appetite/lumps · travel · new partners ('I ask everyone') · chest pain/SOB · PMHx, meds, allergies · alcohol, smoking · ★ 'have you had hepatitis vaccinations for work?' (thinks so, not sure)"
+     "4:45",
+     "**The rest of the unwellness list as far as time allows, then past history, medications, allergies, alcohol and smoking.** **At five minutes: 'a last few quick questions, then I'll examine you.'**"
+    ],
+    [
+     "5:30",
+     "**Take the card and READ IT BEFORE YOU COMMIT.** **Let the findings decide which version you are in.**"
     ],
     [
      "6:00",
-     "★ Examination by name: appearance/hydration · jaundice sclerae and under the tongue · vitals · nodes · abdominal tenderness and site · liver size/tenderness · spleen · ★ calf tenderness, conjunctival suffusion · rash · ★ urine dipstick → Version A card"
+     "**VERSION A: 'you have a fever, pain over your liver, your liver is ENLARGED AND TENDER when I press, and there is BILE PIGMENT IN YOUR URINE. The most likely diagnosis is ACUTE HEPATITIS — inflammation of the liver, most probably HEPATITIS A, or a closely related one called HEPATITIS E. Both are picked up by swallowing something contaminated with sewage, which fits exactly with what happened to you.'**"
+    ],
+    [
+     "6:00",
+     "**VERSION B: 'I want to be careful here, because THE EXAMINATION CHANGES WHAT I THINK. You are not yellow, your liver is not enlarged or tender, and your urine test is normal — SO THIS IS NOT HEPATITIS. What you have is GASTROENTERITIS: an infection of the bowel, most likely from a bug you swallowed when you fell into the sewage.'**"
     ],
     [
      "6:45",
-     "Diagnosis + reasons (fever, liver pain, tender enlarged liver, bile pigment in urine) · 'serious? damage?' → settles over weeks, not chronic · 'infectious — my little boy?' → bowel route, handwashing, vaccinate family · differentials with named organisms · plan, notification, employer, safety-net · review 2 days + the dreams · teach-back: 'what will you tell your partner tonight?'"
+     "**The differentials IN ORDER OF THE EXPOSURE, with organisms named: LEPTOSPIROSIS · liver abscess · gastroenteritis with named viral, bacterial and protozoal organisms · other infections including EBV, CMV, HIV and syphilis · PTSD, screened for and relevant here · malignancy · and the general causes of feeling unwell.**"
+    ],
+    [
+     "7:30",
+     "**SAFETY-NET: return immediately for CONFUSION OR DROWSINESS · vomiting that prevents fluids · BLEEDING OR BRUISING · worsening jaundice · REDUCED URINE OUTPUT · blood in the stool.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Is there anything in particular you are worried this might be?' / ★ 'You mentioned an incident at work — can you tell me more about that?' / 'That sounds horrible. Thank you for telling me.' / 'So you were exposed to urine and faeces.'",
-    "★ 'Were you wearing protective equipment?' / ★ 'Did any fluid get into your eyes or your mouth?' / 'Did you file an incident report?' / ★ 'Did you hit your head?'",
-    "'Is the diarrhoea loose, or completely watery? Any blood?' / 'Any severe muscle aches, particularly in your calves? Any red or sore eyes?'",
-    "★ 'Falling into a sewer would shake anyone. How have you been coping?' / ★ 'Any nightmares? Have you been avoiding going back to work?'",
-    "★ 'Could I have the examination findings, including a urine dipstick' — and the calves and conjunctivae by name",
-    "★ 'Acute hepatitis means inflammation of the liver, picked up by swallowing something contaminated. You're not yellow yet, but the urine test shows the pigment is already building up, and that comes first.'",
-    "Version B: 'The examination changes what I think, so let me be clear: you're not yellow, your liver is not enlarged or tender, your urine test is normal — this is not hepatitis. What you have is gastroenteritis — an infection of the bowel, viral, bacterial or protozoal — most likely from a bug you swallowed when you fell in.'",
-    "'Leptospirosis comes from rat urine in sewers — you don't have the severe calf pain or red eyes that usually go with it, but it's treatable, so I want to test for it.' / 'Cancer?' → 'No — I'm not worried about that at all here. I mention it because it's on the list I work through, and nothing points that way.'",
-    "'Will my little boy catch it?' → 'It's infectious through the bowel, so handwashing, not preparing food for others, and I'll arrange vaccination for the people you live with.' / 'If this goes to public health I'll lose my job' → ★ 'Hepatitis A is notifiable and I have to report it — but the notification is what protects you: it confirms this came from work, it supports your ReturnToWorkSA claim, and it gets your workmates checked. It is not a complaint about you.'",
-    "★ 'Come back straight away — or go to hospital — if you become confused or drowsy, if you bruise or bleed, if you cannot keep fluids down, or if you go yellow.' / 'Just to check I explained it clearly — what will you tell your partner tonight?'"
-   ],
    "pefe": [
-    "Role-player: Jane, 30, sampling technician, regional water utility; partner, 3-year-old son; non-smoker, 4–6 drinks/week; no meds/allergies/PMHx; one partner six years; no travel; thinks she had work hepatitis shots. Fell chest-deep five days ago, full PPE, doesn't know about mouth/eyes, report filed. Embarrassed, disgusted, matter-of-fact; softens and volunteers the dreams if you're warm; keeps them if you're brisk. Hidden agenda: hasn't been back down, two dreams, worried she can't do the job — only if asked about coping/sleep/mood/work, else 'doctor, can I ask you something else?' at the end. Tearful at avoidance",
-    "Cards — Version A: no jaundice, T 38.1, tender hepatomegaly, RUQ tenderness, no splenomegaly, no rash, no calf tenderness, dipstick bilirubin POSITIVE · Version B: no jaundice, no hepatomegaly, mild lower abdominal tenderness, dipstick normal",
-    "Variant 1 — jaundice + calf tenderness + creatinine 210: leptospirosis (Weil's) — 'carried in rat urine, a recognised hazard of sewer work; treatable with antibiotics, start today rather than wait; admit' — doxycycline or benzylpenicillin VERIFY TG · Variant 4 — bloody diarrhoea with high fever: bacterial colitis — stool sample today, UEC; ★ no antibiotics or antidiarrhoeals yet (STEC → HUS risk); wait for the result",
-    "Variant 3 — flat answers, never mentions the dreams: 'That was a frightening thing. Some people find afterwards they replay it, dream about it, or feel uneasy going back — has any of that happened?' → normal in the first weeks, review at a month if persisting (PTSD needs >1 month; before that acute stress reaction); book the review",
-    "Automatic fails: ★ never asks about the incident · ★ never asks fluid in eyes/mouth · ★ never asks head injury · ★ never screens mood/sleep/coping · ★ Version B still diagnoses hepatitis after a normal card · agreeing not to notify (Variant 2)",
-    "SA: notify hepatitis A/E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, STEC; ReturnToWorkSA for the claim; SafeWork SA for the confined space; healthdirect 1800 022 222; TIS 131 450; MedSTAR 1300 13 12 33",
-    "Automatic fails — ★ never asks about the incident · ★ never asks fluid in eyes/mouth · ★ never asks head injury · ★ never screens mood/sleep/coping · ★ Version B still diagnoses hepatitis after a normal card · agreeing not to notify (Variant 2)",
-    "SA — Notify hepatitis A/E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, STEC; ReturnToWorkSA for the claim; SafeWork SA for the confined space; healthdirect 1800 022 222; TIS 131 450; MedSTAR 1300 13 12 33"
+    "**Do now: VITAL SIGNS and HYDRATION, with a POSTURAL blood pressure if she has been vomiting or has diarrhoea · URINE DIPSTICK for BILIRUBIN, blood and protein · a NEUROLOGICAL SCREEN if she struck her head.**",
+    "**Bloods: FBE, UEC, LFT, INR, CRP, LIPASE, blood glucose.** **Serology: ANTI-HAV IgM, HEPATITIS E IgM, hepatitis B surface antigen and core IgM, hepatitis C antibody.** **FAECAL PCR or MCS in Version B, and in either version if there is diarrhoea.** **LEPTOSPIRA SEROLOGY AND PCR — because of the sewer.**",
+    "**What the results change: ALT and AST in the HUNDREDS OR THOUSANDS with a modest ALP means HEPATOCELLULAR injury · a RISING INR OR FALLING ALBUMIN means FAILING SYNTHETIC FUNCTION, and THAT is the finding that turns an outpatient into an inpatient · anti-HAV IgM positive confirms acute hepatitis A · bloody stool with acute kidney injury and anaemia means HAEMOLYTIC URAEMIC SYNDROME · an ULTRASOUND collection means LIVER ABSCESS, not hepatitis.**",
+    "**Do not miss: FULMINANT HEPATIC FAILURE — confusion, drowsiness, ASTERIXIS, rising INR, HYPOGLYCAEMIA · LEPTOSPIROSIS, the sewer-specific and TREATABLE diagnosis · HEAD INJURY from the fall · SEPSIS · PTSD, which unscreened is a scored omission.**",
+    "**Avoid: ANTIBIOTICS for undifferentiated diarrhoea, and specifically IF SHIGA-TOXIN E. COLI IS POSSIBLE · ANTIMOTILITY AGENTS such as loperamide in BLOODY OR FEBRILE diarrhoea · paracetamol above the reduced ceiling in acute hepatitis, and ALCOHOL ENTIRELY · naming a hepatitis subtype you cannot prove on history · reassuring her the sewage was harmless.** VERIFY the paracetamol ceiling in liver impairment.",
+    "**Treat leptospirosis EMPIRICALLY with DOXYCYCLINE or BENZYLPENICILLIN if suspected — do not wait for serology.**",
+    "**If she struck her head: STOP the infection history and assess — loss of consciousness, amnesia, vomiting, headache — with CT brain if any Canadian CT head rule criterion is met.**"
    ],
-   "fails": [
-    "Never asking about the incident — the lead point of the stem ★",
-    "Never asking whether fluid entered the eyes or mouth; never asking about a head injury ★",
-    "No mood, sleep, nightmare or avoidance screen — or 'how is your mood?' alone ★",
-    "Version B: still calling it hepatitis, or hedging 'it might be early hepatitis', after a normal card ★",
-    "Agreeing not to notify ★",
-    "'An abdominal examination' and stopping — no dipstick, no calves, no conjunctivae; two minutes spent on 'unwell'",
-    "A differential without named organisms, without leptospirosis, without a psychological differential; no reaction when she says what happened"
-   ],
-   "numbers": [
-    "Hepatitis A incubation 15–50 days (mean ~28) · hepatitis E 15–60 days · neither chronic in the immunocompetent VERIFY · jaundice visible at bilirubin ~40–50 µmol/L — bilirubinuria comes first",
-    "PTSD >1 month; before that acute stress reaction; review at 4 weeks · gastro work exclusion until 48 h after symptoms settle, longer for food handlers VERIFY SA Health",
-    "Organisms: rotavirus, norovirus, adenovirus · Salmonella, Shigella, E. coli, Campylobacter · Giardia, Cryptosporidium, Entamoeba · leptospirosis: calves, conjunctival suffusion, jaundice, AKI",
-    "Notifiable SA: hep A/E, leptospirosis, salmonellosis, shigellosis, campylobacteriosis, STEC",
-    "MedSTAR 1300 13 12 33 · healthdirect 1800 022 222 · TIS 131 450 · ReturnToWorkSA · SafeWork SA"
+   "ddx": [
+    [
+     "**Acute viral hepatitis A or E** — Version A",
+     "**Faecal-oral exposure, fever, RIGHT UPPER QUADRANT pain, malaise**",
+     "Jaundice, DARK URINE, PALE STOOLS, nausea, **TENDER HEPATOMEGALY, BILIRUBIN ON DIPSTICK**",
+     "**LFT with a HEPATOCELLULAR pattern; ANTI-HAV IgM and HEPATITIS E IgM** — urgent, NOTIFIABLE"
+    ],
+    [
+     "**Infective gastroenteritis** — Version B",
+     "**Diarrhoea, LOWER abdominal pain, nausea, fever, NO JAUNDICE**",
+     "**WATERY versus LOOSE stool, BLOOD, mucus, hydration state, NORMAL liver**",
+     "**Faecal PCR or MCS if bloody, prolonged, severe or OCCUPATIONALLY ACQUIRED** — urgent"
+    ],
+    [
+     "**Leptospirosis — the sewer-specific diagnosis**",
+     "**THE SEWER ITSELF — RODENT URINE is the classic vector**",
+     "**SEVERE CALF MYALGIA, CONJUNCTIVAL SUFFUSION, headache; JAUNDICE WITH ACUTE KIDNEY INJURY in WEIL DISEASE**",
+     "**Serology and PCR; TREAT EMPIRICALLY with DOXYCYCLINE or benzylpenicillin if suspected** — IMMEDIATE"
+    ],
+    [
+     "**Invasive bacterial colitis — Salmonella, Shigella, Campylobacter, Shiga-toxin E. coli**",
+     "**BLOODY diarrhoea, HIGH fever, tenesmus**",
+     "Blood in stool, systemic toxicity; **falling urine output and pallor suggest HAEMOLYTIC URAEMIC SYNDROME**",
+     "**Faecal MCS and PCR; AVOID ANTIBIOTICS if Shiga-toxin E. coli is possible** — IMMEDIATE"
+    ],
+    [
+     "Protozoal infection — Giardia, Cryptosporidium, Entamoeba",
+     "**PERSISTENT OR RELAPSING diarrhoea, bloating, weight loss**",
+     "**GREASY stools, prolonged course BEYOND TWO WEEKS**",
+     "Faecal PCR panel; three specimens if microscopy is used"
+    ],
+    [
+     "**Liver abscess**",
+     "Fever with right upper quadrant pain and tenderness",
+     "**SWINGING FEVER, RIGORS, POINT TENDERNESS**, raised inflammatory markers",
+     "**CANNOT BE SEPARATED FROM HEPATITIS ON HISTORY ALONE — ULTRASOUND** — urgent"
+    ],
+    [
+     "**PTSD or acute stress reaction**",
+     "**A FRANKLY TRAUMATIC INCIDENT**",
+     "**NIGHTMARES, FLASHBACKS, AVOIDANCE OF WORK, hyperarousal, mood change**",
+     "**Screen in the room; REVIEW AT FOUR WEEKS — PTSD requires symptoms BEYOND ONE MONTH** — same week"
+    ],
+    [
+     "Other infection — CMV, EBV, toxoplasmosis, HIV, syphilis, travel-related",
+     "Febrile illness with LYMPHADENOPATHY and RASH",
+     "Lumps and bumps, rash, sore throat, sexual and travel history",
+     "Monospot, CMV and EBV serology, HIV and syphilis serology"
+    ],
+    [
+     "Malignancy — lymphoma, leukaemia",
+     "**Persistent unwellness that PREDATES the incident**",
+     "Weight loss, night sweats, lumps and bumps, bruising",
+     "FBE and film, LDH, examination for nodes and organomegaly — same week"
+    ],
+    [
+     "**Head injury from the fall**",
+     "**A FALL INTO A CONFINED SPACE**",
+     "**LOSS OF CONSCIOUSNESS, AMNESIA, VOMITING, headache**",
+     "**Neurological examination; CT BRAIN if any Canadian CT head rule criterion is met** — IMMEDIATE"
+    ]
    ]
   },
   "source": "Sewer_Exposure_2_Case_Tasks_Script_Notability.pdf Version A (Jane Whitmore, 30, unwell after falling into sewage — tender hepatomegaly and bilirubinuria on the card, landing on acute hepatitis A or E; Version B, the normal card landing on gastroenteritis, is MED-243)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Unwell › Sewer_Exposure_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Cards",
-    "Version A: no jaundice, T 38.1, tender hepatomegaly, RUQ tenderness, no splenomegaly, no rash, no calf tenderness, dipstick bilirubin POSITIVE · Version B: no jaundice, no hepatomegaly, mild lower abdominal tenderness, dipstick normal"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — Never asking about the incident — 'you mentioned an incident at work — can you tell me more?' is the lead point of the stem and the commonest reason candidates fail; react like a person ('that sounds horrible'), then name the exposure aloud: 'so you were exposed to urine and faeces' (★)",
-   "FAIL — Never asking whether fluid got into her eyes or mouth, and never asking about a head injury — the four exposure questions: protective equipment? fluid in eyes or mouth? incident report filed? hit your head or hurt anywhere else? (★)",
-   "FAIL — Never screening mood, sleep or coping — 'falling into a sewer would shake anyone; how have you been coping? mood? sleep — any nightmares or flashbacks? avoiding going back?' — the nightmare and avoidance questions are what make it a PTSD-directed screen; she volunteers the dreams only if you are warm (★)",
-   "DO — Three infection groups by name: hepatitis (jaundice, abdominal pain AND where, nausea, dark urine, pale stools), gastroenteritis (diarrhoea loose or watery, blood, fever, chills), water-contact (rash, nodes, severe calf pain, red eyes — the leptospirosis screen earns the mark even when negative); hepatitis vaccination asked",
-   "FAIL — In Version B, still diagnosing hepatitis after a normal card — no jaundice, no hepatomegaly, dipstick normal → 'this is not hepatitis; this is gastroenteritis'; 'it might be early hepatitis' reads as unwillingness to let go of the recall; in Version A the bilirubinuria before jaundice is the whole point of the card (★)",
-   "DO — Examination by name incl. the urine dipstick and the calves; differentials with named organisms (rotavirus and norovirus; Salmonella, Shigella, E. coli, Campylobacter; Giardia, Cryptosporidium), leptospirosis, liver abscess, and a psychological differential; notify hepatitis A — agreeing not to notify is an automatic fail — vaccinate the household, no alcohol, safety-net for confusion, bleeding, vomiting, jaundice"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-85",
