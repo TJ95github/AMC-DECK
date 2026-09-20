@@ -24201,8 +24201,8 @@
  {
   "id": "MED-92",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Emergency Department. Vitals on request. The stem is deliberately silent on loss of consciousness — establishing it is your first job. Version A (aortic stenosis) scripted; Variants B–F on the card. Cluster master card for the whole syncope spine.",
   "stem": [
    "Bill Hartley, 62, has come in because he had a fall yesterday afternoon."
   ],
@@ -24211,104 +24211,214 @@
    "Ask the examiner for relevant physical examination findings",
    "Explain your provisional diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes: 4–5 history · findings · ~1 explanation. Syncope spine: vitals · WIPE · ★ 'complete LOC or aware of your surroundings?' · witnessed · ★ seizure screen ×3 (jerking, tongue bite, incontinence) · duration, first time, ★ describe EACH episode · context ×5 (doing, hot/humid, position change, prolonged standing, emotion) · BEFORE ×4 (★ any warning, meals/fluids, head injury, fever/rash) · AFTER ×3 (★ confusion vs tiredness, pallor, injuries) · signpost 'before, after, or not at all' → CNS → CVS (palpitations follow-up) → RS → GI → travel/jaundice/thermal → drugs incl. ★ recently stopped → psychogenic last → PMHx → ★ FHx sudden death · PEFE: postural BP + pulse rhythm (only what's missing), neuro, CVS (★ murmur — react to it), RS, abdomen, glucose, dipstick, ECG · diagnosis + mechanism · differentials across systems · admit · ★ driving + occupational advice · 000.",
+  "findings": [
+   [
+    "THE STEM DOES NOT SAY SYNCOPE",
+    "It does not say how many falls, and it does not say why. ALMOST EVERY AMC SYNCOPE CASE ARRIVES DISGUISED AS A FALL. Ask the examiner for BP, PULSE, RESPIRATORY RATE AND TEMPERATURE before you start — get this EVEN IN A RECURRENT-FALLS CASE, because he may have struck his head"
+   ],
+   [
+    "THE DEFINING QUESTION — ask it in the first ninety seconds",
+    "'DID YOU LOSE CONSCIOUSNESS COMPLETELY, OR WERE YOU AWARE OF YOUR SURROUNDINGS?' BLACKED OUT, REMEMBERS NOTHING → syncope structure. AWARE, COULD HEAR PEOPLE → RECURRENT FALLS structure — STOP AND CHANGE. Candidates fail by PICKING A STRUCTURE FROM THE WORD 'FALL' AND COMMITTING TO IT"
+   ],
+   [
+    "VERSION A — the cardiac ending",
+    "BLACKED OUT WHILE WALKING UP THE DRIVEWAY. NO WARNING AT ALL. Brief. Some EXERTIONAL CHEST TIGHTNESS AND BREATHLESSNESS recently. Examination: EJECTION SYSTOLIC MURMUR RADIATING TO THE CAROTIDS, SLOW-RISING PULSE → AORTIC STENOSIS. Same package with PALPITATIONS instead of a murmur = ARRHYTHMIA; with FAMILY SUDDEN DEATH IN THE 20s–30s = HOCM or LONG QT"
+   ],
+   [
+    "VERSION B — reflex",
+    "STANDING FOR TWO HOURS AT A PARADE ON A HOT DAY. DIZZY, SWEATY, NAUSEATED FIRST. Witnesses say HE WENT PALE. TIRED BUT NOT CONFUSED afterwards → VASOVAGAL. Situational variants: WHILE COUGHING, STRAINING AT STOOL, OR PASSING URINE"
+   ],
+   [
+    "VERSION C — not syncope at all",
+    "JERKY MOVEMENTS OF ARMS AND LEGS · BIT THE TONGUE · WET HIMSELF · CONFUSED FOR 20 MINUTES afterwards → SEIZURE. Switch structures and HUNT THE CAUSE OF THE SEIZURE"
+   ],
+   [
+    "VERSION D — the one that caught candidates out",
+    "LONG-HAUL FLIGHT LAST WEEK · CALF SWELLING · PLEURITIC CHEST PAIN AND BREATHLESSNESS → PULMONARY EMBOLISM. It caught people because THEY ONLY HAD NEURO AND CARDIAC DIFFERENTIALS"
+   ],
+   [
+    "VERSION E and F",
+    "E: RECENTLY STOPPED A REGULAR MEDICATION, or INCREASED a sedative or antihypertensive → drug-induced or WITHDRAWAL syncope. F: 'I WAS AWARE THE WHOLE TIME' — tripped on a rug, THIRD FALL THIS YEAR → RECURRENT FALLS, a completely different station"
+   ],
+   [
+    "THE SIGNPOST THAT SAVES TWO MINUTES — verbatim",
+    "CHEST PAIN MATTERS BOTH BEFORE AND AFTER. So does headache. SAY THIS ONCE, OUT LOUD, BEFORE THE DIFFERENTIALS: 'I'm going to run through some symptoms now. FOR EACH ONE, COULD YOU TELL ME WHETHER YOU HAD IT BEFORE THIS HAPPENED, AFTER IT, OR NOT AT ALL? That way I won't have to ask you everything twice'"
+   ],
+   [
+    "THE FINDING THAT IS AN ABSENCE",
+    "MOST SYNCOPE COMES WITH WARNING. CARDIAC SYNCOPE CHARACTERISTICALLY DOES NOT. Ask 'DID YOU HAVE ANY WARNING AT ALL — did you know you were about to go down, any dizziness, sweating, nausea, or a racing heart?' AND LISTEN FOR 'NOTHING'. ABSENCES ARE EASY TO MISS BECAUSE NOTHING IS VOLUNTEERED"
+   ],
+   [
+    "RED FLAGS — THIS PATIENT DOES NOT GO HOME",
+    "SYNCOPE ON EXERTION · SYNCOPE WHILE LYING FLAT OR SEATED · NO PRODROME AT ALL · PALPITATIONS IMMEDIATELY BEFORE · FAMILY SUDDEN CARDIAC DEATH UNDER 40 · known structural heart disease or heart failure · ABNORMAL ECG · new chest pain, breathlessness, headache or focal neurology · SIGNIFICANT INJURY · AGE OVER 60 · RECURRENT EPISODES OVER A SHORT PERIOD"
+   ]
+  ],
+  "findingsLabel": "Six endings from one stem — the defining question, and the finding that is an absence",
+  "must": [
+   "FAIL — Running the wrong structure: a syncope work-up on someone who never lost consciousness.",
+   "FAIL — Discharging exertional or unheralded syncope as 'probably just a faint'.",
+   "FAIL — Never asking about warning symptoms. The single highest-yield question in the cluster.",
+   "FAIL — Missing the seizure screen, or confusing tiredness with postictal confusion.",
+   "ASK — Did you lose consciousness completely, or were you aware of your surroundings?",
+   "ASK — Has anyone in your family died suddenly and unexpectedly, especially young?"
+  ],
   "back": {
-   "dx": "Cardiac (exertional) syncope from aortic stenosis. 'Out cold', <1 min, witnessed by his wife, no jerking/tongue bite/incontinence, not confused after (shaken only), grazed elbow, no head strike. ★ Walking up the driveway with the shopping (exertion), ★ no warning at all, prior light-headedness twice on the golf course walking uphill, months of chest tightness and breathlessness on hills 'put down to age' — the AS triad. No meds, none stopped; no FHx sudden death. PEFE: no postural drop, pulse regular slow-rising (ask: low volume? heave? thrill?), ESM RUSE radiating to the carotids, soft S2, neuro normal, glucose 5.6, ECG SR with LVH. To Bill: 'not a trip — a blackout from the heart rather than a simple faint: no warning (faints almost always give a few seconds of dizziness or sweating), and it happened on exertion; a murmur — a narrowed, stiff valve, the door blood leaves the heart through; on exertion the body asks for more blood, the valve can't let enough through, the brain briefly goes short'. Differentials: arrhythmia (still needs excluding), cardiomyopathy, PE, stroke/seizure. Plan: admit to a monitored bed, bloods, echo, cardiology; if severe → valve replacement, works very well. ★ 'Please don't drive until the specialists have assessed you' (Austroads; SA Registrar of Motor Vehicles; notification duty) · no heights, machinery, swimming alone · 000 if recurrent, chest pain, palpitations, severe SOB. Hidden agenda: brother-in-law's stroke; 'can I drive home and come back tomorrow?' — always asked.",
+   "dx": [
+    "**SYNCOPE is TRANSIENT COMPLETE LOSS OF CONSCIOUSNESS from GLOBAL CEREBRAL HYPOPERFUSION, with RAPID ONSET, SHORT DURATION and SPONTANEOUS COMPLETE RECOVERY.** **A SEIZURE is abnormal cortical electrical activity — jerking, tongue bite, incontinence, and a CONFUSED POSTICTAL PHASE. RECURRENT FALLS means consciousness was PRESERVED — an entirely different structure.**",
+    "**TWO DISCRIMINATORS, ARRIVING WITHIN NINETY SECONDS OF EACH OTHER. ONE: SYNCOPE OR FALL — the stem will not tell you, so ASK THEN CHOOSE. TWO: THE MISSING PRODROME — no prodrome, on exertion, supine onset, or palpitations first, EQUALS CARDIAC.**",
+    "**WHY THE MNEMONICS FAIL HERE: the published lists are built for COMPLETENESS, NOT FOR AN EIGHT-MINUTE STATION. BUILD IT FROM MECHANISM. Consciousness fails for TWO reasons: THE BRAIN ISN'T WORKING, or THE HEART ISN'T DELIVERING BLOOD TO IT. Then bolt on REFLEX, METABOLIC, DRUGS, INFECTION and, LAST OF ALL, PSYCHOGENIC.**",
+    "**CONFUSION VERSUS TIREDNESS DECIDES CASES. 'When you came round, WERE YOU CONFUSED, OR JUST TIRED?' CONFUSION IS POSTICTAL AND MEANS SEIZURE. TIREDNESS ALONE IS COMPATIBLE WITH VASOVAGAL AND IS NOT A POSTICTAL PHASE.**",
+    "**SAY THE NEGATIVES — THEY ARE HALF THE REASONING. 'No jerking, no tongue bite, no incontinence, no postictal confusion' is WHAT EXCLUDES SEIZURE; 'NO PRODROME' is WHAT MAKES IT CARDIAC. Say them explicitly rather than assuming the examiner infers them.**",
+    "**ASK ABOUT INJURIES EVEN WHEN THE ANSWER IS NO. If he STRUCK HIS HEAD and later has an intracranial bleed, NOBODY CAN TELL WHETHER THE BLEED CAUSED THE COLLAPSE OR THE COLLAPSE CAUSED THE BLEED.** Also ask **whether he had hit his head BEFORE the event.**",
+    "**THE AORTIC STENOSIS TRIAD: SYNCOPE, ANGINA AND DYSPNOEA ON EXERTION. Once ANY of these appears, PROGNOSIS WITHOUT INTERVENTION IS POOR and the patient needs URGENT ECHOCARDIOGRAPHY and cardiology referral for valve replacement.**",
+    "**IF PRESSED ON THE NEUROLOGICAL DIFFERENTIALS: keep them on the list for completeness, but have the nuance ready — TIA AND STROKE ARE UNCOMMON CAUSES OF ISOLATED TRANSIENT LOSS OF CONSCIOUSNESS, BECAUSE A FOCAL DEFICIT DOES NOT USUALLY IMPAIR CONSCIOUSNESS. The exceptions worth naming are VERTEBROBASILAR EVENTS and SUBARACHNOID HAEMORRHAGE.**",
+    "**DRIVING IS THE MARK MOST CANDIDATES LEAVE ON THE TABLE. Advise NO DRIVING until assessed, and name that fitness to drive after a blackout is governed by the AUSTROADS standard, with non-driving periods depending on the cause, whether it was treated, and whether the licence is PRIVATE OR COMMERCIAL — COMMERCIAL STANDARDS ARE CONSIDERABLY STRICTER.** **In SA the licensing authority is the REGISTRAR OF MOTOR VEHICLES, and doctors here carry A LEGAL DUTY TO NOTIFY where a patient is unfit and continues to drive — a duty that DOES NOT EXIST IN THE SAME FORM IN EVERY OTHER STATE.** VERIFY.",
+    "**Scripting each ending. CARDIAC: 'I'm concerned this came from YOUR HEART rather than a simple faint, because YOU HAD NO WARNING AT ALL and it happened WHILE YOU WERE EXERTING YOURSELF.' VASOVAGAL: 'this looks like a simple faint — but I'LL STILL DO A HEART TRACING TO BE SAFE.' UNCERTAIN: 'I CAN'T TELL YOU THE CAUSE YET, AND I'M NOT GOING TO GUESS. What I CAN tell you is WHICH SERIOUS CAUSES I NEED TO RULE OUT FIRST, AND HOW.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Before I begin, could I have the vital signs?' → 128/78, 64 reg, 16, 36.7 · WIPE · 'tell me more about what happened' · one empathy line"
+     "**Ask the examiner for the vital signs FIRST.** Then **WIPE, open question, and EMPATHY EXACTLY ONCE: 'I'm so sorry to hear that, and that's a very reasonable thing to be worried about. Let's work out together what's going on.'**"
     ],
     [
      "0:30",
-     "★ 'Before I go further: did you lose consciousness completely, or were you aware of your surroundings the whole time?' → out cold (aware = switch to the falls structure, Variant F) · witnessed? (wife) · ★ 'jerky movements? bite your tongue? wet or soil yourself?'"
+     "**THE DEFINING QUESTION.** Then **'DID ANYONE SEE IT HAPPEN?' — in the OSCE the answer is ALWAYS YES, and THAT WITNESS IS YOUR SOURCE for the jerking, the pallor and the duration, NONE OF WHICH THE PATIENT CAN REPORT THEMSELVES.**"
     ],
     [
-     "1:15",
-     "Duration (<1 min) · first time? → first blackout but light-headed twice on the golf course (pause on it) · ★ 'what were you actually doing?' → walking up the driveway with shopping = EXERTION · hot/humid, position change, prolonged standing, emotion → no"
+     "1:00",
+     "**THE SEIZURE SCREEN, THREE QUESTIONS, IMMEDIATELY: any JERKY MOVEMENTS of your arms or legs · DID YOU BITE YOUR TONGUE · DID YOU WET OR SOIL YOURSELF?** **Three noes → continue down syncope. Three yeses → this is a seizure and you are now looking for its cause.**"
     ],
     [
-     "2:15",
-     "★ BEFORE: 'any warning at all — dizziness, sweating, nausea, blurred vision, racing heart?' → none, 'that's what frightened me' (react) · meals/fluids · head injury before · fever/rash · AFTER: ★ 'confused, or just tired?' → not confused · pale? · injuries → elbow, no head strike"
+     "1:25",
+     "**TIMING: HOW LONG WERE YOU UNCONSCIOUS — seconds to a minute is typical, BEYOND A FEW MINUTES IS ALARMING · IS THIS THE FIRST TIME · CAN YOU DESCRIBE EACH EPISODE?** **Role-players are briefed with detail on EVERY episode — ask, and they hand you the pattern.**"
     ],
     [
-     "3:15",
-     "Signpost 'before, after, or not at all' · CNS: headache, vision, speech, weakness, numbness → no · CVS: chest pain → ★ tightness and puffed on hills for months · palpitations no · SOB, cough, leg swelling · GI · travel, jaundice, thermal intolerance · alcohol, drugs · ★ 'medications regularly, or recently stopped any?' · breathing fast/stress → no"
+     "1:50",
+     "**CONTEXT, five questions: WHAT WERE YOU DOING when it happened · were you in a HOT OR HUMID place · did it happen AFTER CHANGING POSITION · had you been STANDING FOR A LONG TIME · did it follow any STRONG EMOTION, FEAR OR PAIN?** **Exercise → cardiac. Coughing, straining, passing urine → situational. SUPINE → CARDIAC, because gravity isn't the problem when supine, so THE PUMP IS.**"
     ],
     [
-     "4:30",
-     "PMHx (diabetes, heart, epilepsy), allergies · ★ 'has anyone in your family died suddenly and unexpectedly, especially young?' → no (HOCM/LQTS question — ask at 62 too)"
+     "2:25",
+     "**BEFORE — FOUR QUESTIONS, KEY POINTS ONLY: WARNING SYMPTOMS · had you MISSED MEALS, were you DRINKING NORMALLY · had you HIT YOUR HEAD AT ALL BEFORE this happened · any FEVER OR RASH beforehand?**"
+    ],
+    [
+     "2:55",
+     "**AFTER — THREE QUESTIONS: were you CONFUSED, OR JUST TIRED · DID ANYONE SAY YOU LOOKED PALE · DID YOU INJURE YOUR HEAD, OR ANY OTHER PART OF YOUR BODY, WHEN YOU FELL?**"
+    ],
+    [
+     "3:20",
+     "**THE DISCIPLINE RULE: NO SYMPTOMS IN THE BEFORE/AFTER BLOCK. Headache, chest pain, palpitations and nausea belong in the DIFFERENTIALS step, asked ONCE, with the signpost. Asking them here means asking them AGAIN later — and that duplication is exactly what runs candidates out of time.**"
+    ],
+    [
+     "3:30",
+     "**GIVE THE BEFORE-OR-AFTER SIGNPOST, then CNS: headache · blurred vision · SLURRED SPEECH · weakness in any part of your body · numbness?**"
+    ],
+    [
+     "3:55",
+     "**CVS AND RESPIRATORY: CHEST PAIN · RACING OF THE HEART · shortness of breath · cough · SWELLING IN THE LEGS?** **Leg swelling covers BOTH heart failure AND the DVT behind a PE.**"
+    ],
+    [
+     "4:20",
+     "**GI: nausea or vomiting, abdominal pain if time. THE ADDED THREE: ANY LONG TRAVEL RECENTLY — PE · any YELLOWING of skin or eyes — hepatic encephalopathy · DO YOU FEEL THE COLD OR THE HEAT MORE THAN OTHERS — thyroid.**"
     ],
     [
      "4:45",
-     "PEFE in order: general — alert, pallor, hydration, rash · 'I have BP and pulse — may I have the ★ postural BP and pulse rhythm?' · neuro — cranial nerves, fundi, limbs · CVS — S1 S2, murmurs, added sounds · RS · abdomen · office — glucose, dipstick, 12-lead ECG → ★ 'that murmur is very significant — is the pulse low volume as well as slow-rising, and is there a heave or thrill?'"
+     "**DRUGS, with the two-in-one: alcohol, how much · recreational drugs · 'DO YOU TAKE ANY MEDICATIONS REGULARLY, OR HAVE YOU RECENTLY STOPPED ANY?' — catches BOTH overdose AND withdrawal.**"
     ],
     [
-     "6:00",
-     "Diagnosis + mechanism in plain words · two reasons: no warning, on exertion · explains the chest tightness and hill breathlessness · 'serious?' → serious and treatable · differentials: rhythm, heart muscle, clot on the lung, stroke/seizure — rhythm still to exclude"
+     "5:05",
+     "**PAST HISTORY: DIABETES — autonomic neuropathy and hypoglycaemia · known heart disease or previous heart attack · epilepsy · psychiatric history. FAMILY: anyone with similar episodes, and HAS ANYONE DIED SUDDENLY AND UNEXPECTEDLY, ESPECIALLY YOUNG?**"
     ],
     [
-     "7:00",
-     "Admit — monitored bed, bloods, echo, cardiology; valve repair/replacement if severe · 'drive home and come back tomorrow?' → ★ no driving until assessed — Austroads, notification · no heights/machinery/swimming alone · 000 for recurrence, chest pain, racing heart, severe SOB · summary · questions"
+     "5:25",
+     "**PSYCHOGENIC LAST, ALWAYS, AND ONLY TWO QUESTIONS: 'were you BREATHING FAST before it happened?' and 'was there anything STRESSFUL going on?' HYPERVENTILATION AND TRIGGER — NOT A MOOD ASSESSMENT.**"
+    ],
+    [
+     "5:40",
+     "**EXAMINATION from the examiner — the generic syncope sequence, ending with THE THREE OFFICE TESTS.**"
+    ],
+    [
+     "6:30",
+     "**NAME THE DIAGNOSIS with the ending's script, and SAY THE NEGATIVES that carry the reasoning.** Then **the differentials across MORE THAN ONE SYSTEM — CNS, CVS, RS, reflex, endocrine, drugs, infection.**"
+    ],
+    [
+     "7:30",
+     "**DISPOSITION AND THE SAFETY-NET: 'if you BLACK OUT AGAIN, or get CHEST PAIN, A RACING HEART, SEVERE BREATHLESSNESS, A SUDDEN SEVERE HEADACHE, or ANY WEAKNESS OR NUMBNESS — CALL AN AMBULANCE ON TRIPLE ZERO.'** Then **DON'T DRIVE, DON'T WORK AT HEIGHTS OR WITH MACHINERY, DON'T SWIM ALONE.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Before I start, could I please have the vital signs — blood pressure, pulse rate, respiratory rate and temperature?' / 'I'm sorry to hear that, and that's a very reasonable thing to be worried about. Let's work out what's going on together.'",
-    "★ 'Did you lose consciousness completely, or were you aware of your surroundings?' / 'Did anyone see it happen?' / ★ 'Did you have any jerky movements of your arms or legs? Did you bite your tongue? Did you wet or soil yourself?'",
-    "'How long were you unconscious? Is this the first time? Can you describe each episode for me?' / ★ 'What were you doing when it happened?' / ★ 'Did you have any warning at all — did you know you were about to go down?'",
-    "'Had you missed any meals, and were you drinking normally that day?' / ★ 'When you came round, were you confused, or just tired?' / 'Did you injure your head, or any other part of you, when you fell?'",
-    "'For the next few questions, tell me whether you had it before this happened, after it, or not at all — I won't ask you everything twice.' / ★ 'Do you take any medications regularly, or have you recently stopped any?' / ★ 'Has anyone in your family died suddenly and unexpectedly, especially at a young age?'",
-    "★ 'Examiner, I have the blood pressure and pulse rate — may I have the postural blood pressure and the pulse rhythm?' / 'That murmur is very significant. Is the pulse volume low as well as slow-rising, and is there a heave or thrill?'",
-    "'What you had wasn't a trip — you blacked out, and I think the blackout came from your heart rather than being a simple faint. Two things point me there: you had no warning at all — simple faints almost always give a few seconds of dizziness or sweating first — and it happened while you were exerting yourself.'",
-    "'There's a murmur — an extra sound — which suggests one of the valves has become narrowed and stiff. That valve is the door blood leaves your heart through. When you exert yourself your body asks for more blood, the narrowed valve can't let enough through, your brain briefly goes short, and you black out. It also explains the chest tightness and breathlessness on hills.'",
-    "'Is it serious?' → 'I want to be straight with you: blacking out with this kind of valve problem is serious, and it's treatable. I'd like to admit you today to a bed with heart monitoring, do bloods, and arrange an echo to see exactly how narrow that valve is. If it's significantly narrowed the treatment is to repair or replace it, which works very well.'",
-    "★ 'Please don't drive until the specialists have assessed you — and don't work at heights, use machinery, or swim alone.' / Examiner on driving: 'Austroads Assessing Fitness to Drive — the non-driving period depends on cause, treatment and licence type; commercial stricter; I'd check the current standard rather than quote from memory; in SA the Registrar of Motor Vehicles, and doctors carry a duty to notify where a patient is unfit and continues to drive.'"
-   ],
    "pefe": [
-    "Role-player: Bill, 62, retired council worker, wife Maureen, Saturday golf. Two clues never volunteered: (1) no warning at all — only to a direct question, with feeling; (2) months of chest tightness/breathlessness on hills + twice light-headed on the seventh hole — only if asked chest pain, SOB, previous episodes. If never asked about LOC, keeps saying 'I had a fall' — the omission should cost. If told 'probably a faint' or offered home: 'oh good, so I can get back to golf on Saturday?' (one chance to correct). Always asks to drive home in the last minute. Hidden agenda: brother-in-law's stroke last year. Gruff, minimising, warmer if you're direct",
-    "Examiner: alert, not pale, hydrated, no rash · no postural drop · pulse regular, slow-rising · neuro normal, fundi normal · ESM loudest RUSE radiating to the carotids, soft S2 · chest clear · abdomen soft · glucose 5.6 · dipstick negative · ECG sinus rhythm, LVH by voltage",
-    "Variant B — vasovagal (2 h standing in the sun at a parade, dizzy/sweaty/nauseated, grey vision, white as a sheet, wiped out but oriented): explain pooling and over-correction; ECG anyway; counter-pressure (lie down legs up; cross legs and tense; grip and pull); fluids, meals, heat; 'if you ever black out without warning, or sitting, lying or exerting — that's a different problem, come straight back' · Variant C — seizure (2 min jerking, tongue bite, incontinence, 20 min confusion): announce the change of track; causes — head injury, alcohol/drugs/withdrawal, missed AEDs, infection, Na/Ca, hypoglycaemia, SOL; glucose, EUC + Ca/Mg, FBC, CT head, neurology/EEG, first-seizure driving advice",
-    "Variant D — PE (flew back from London 5 days ago, swollen sore right calf, pleuritic pain, SOB): Wells, ECG (tachycardia, right heart strain), CXR, CTPA per pathway; empirical anticoagulation if high suspicion and no contraindication · Variant E — ran out of a tablet a fortnight ago + antihypertensive doubled: withdrawal and over-treatment; postural BP, full medication review incl. cessations; adjust rather than add · Variant F — 'awake the whole time, caught my foot on the rug, third time this year': ★ switch structures OUT LOUD to a falls assessment — gait/balance, vision, footwear, postural dizziness, all medications, hearing, memory, continence, home hazards (rugs, cords, lighting, stairs, rails)",
-    "Red flags: during exertion · supine · no prodrome · palpitations first · FHx sudden death <40–50 · abnormal ECG · injury. ECG items to name: QTc, delta wave, Brugada, LVH with deep TWI, AV block. ECG and glucose in every patient; β-hCG in every woman of childbearing age",
-    "SA: admit regional ED → cardiology (RAH/FMC/Lyell McEwin), echo; Registrar of Motor Vehicles (Motor Vehicles Act 1959 SA mandatory reporting); PATS; MedSTAR 1300 13 12 33; 000",
-    "Red flags — During exertion · supine · no prodrome · palpitations first · FHx sudden death <40–50 · abnormal ECG · injury. ECG items to name: QTc, delta wave, Brugada, LVH with deep TWI, AV block. ECG and glucose in every patient; β-hCG in every woman of childbearing age",
-    "SA — Admit regional ED → cardiology (RAH/FMC/Lyell McEwin), echo; Registrar of Motor Vehicles (Motor Vehicles Act 1959 SA mandatory reporting); PATS; MedSTAR 1300 13 12 33; 000"
+    "**The generic syncope sequence: general appearance — alert or drowsy, PALLOR, dehydration, RASH · vital signs REVISITED WITH TWO ADDITIONS ONLY, since you already have BP and pulse rate: 'IS THERE A POSTURAL DROP IN BLOOD PRESSURE?' and 'WHAT IS THE PULSE RHYTHM?'**",
+    "**Then NEUROLOGICAL — cranial nerves, FUNDOSCOPY for papilloedema, tone, power, reflexes, sensation, coordination · CARDIOVASCULAR — S1 and S2, murmurs or added sounds, and IF A MURMUR IS REPORTED, CHARACTERISE IT AND CHECK FOR RADIATION TO THE CAROTIDS · RESPIRATORY · ABDOMINAL.** **If a cause declares itself, DEEPEN THAT SYSTEM rather than continuing at survey level.**",
+    "**OFFICE TESTS: BLOOD GLUCOSE, URINE DIPSTICK, and A 12-LEAD ECG IN EVERY SINGLE PATIENT. Plus POSTURAL BP, and BETA-hCG IN ANY WOMAN OF CHILDBEARING AGE.**",
+    "**POSTURAL DROP IS 20 mmHg SYSTOLIC OR MORE, or 10 mmHg DIASTOLIC OR MORE, WITHIN 3 MINUTES OF STANDING.**",
+    "**WHAT TO LOOK FOR ON THAT ECG: rate and rhythm · HEART BLOCK OR PAUSES · PROLONGED QTc — above about 450 ms in men, 470 ms in women, and ABOVE 500 ms IS HIGH RISK · SHORT PR WITH A DELTA WAVE for pre-excitation · LVH for aortic stenosis and HOCM · ischaemic changes · RIGHT HEART STRAIN for PE · BRUGADA PATTERN IN V1–V2.**",
+    "**Bloods: FBC, EUC with CALCIUM AND MAGNESIUM, LFT, TSH, TROPONIN if ischaemic features, D-DIMER ONLY IF PE IS GENUINELY BEING CONSIDERED. Targeted: ECHOCARDIOGRAM if a murmur, cardiac history or exertional syncope · HOLTER or extended monitoring if arrhythmia is suspected · CT HEAD ONLY for focal neurology, significant head injury, anticoagulation or thunderclap headache — NOT ROUTINELY.**",
+    "**Avoid: labelling it vasovagal BECAUSE THE PATIENT LOOKS WELL · discharging exertional or unheralded syncope · GIVING NITRATES OR OTHER VASODILATORS IN SUSPECTED SEVERE AORTIC STENOSIS · reaching for psychogenic before organic causes are excluded · a reflex CT head.** **PATS and cardiology telehealth in MM5; MedSTAR coordinates retrieval if unstable.**"
    ],
-   "fails": [
-    "Committing to a structure on the word 'fall' — never asking complete LOC vs aware ★",
-    "Never asking about warning symptoms — the absence is the diagnosis and nobody volunteers a symptom they didn't have ★",
-    "Reassuring and discharging exertional syncope with a murmur ★",
-    "No driving advice — the safety mark almost everyone drops ★",
-    "'Walking up the driveway' written down as scenery; 'tired' accepted as postictal confusion; skipping the injury question; leaving the seizure screen to the end",
-    "Asking for all the vitals again when you have them; collecting the murmur without visibly changing gear",
-    "Skipping the sudden-death question because he's 62; forgetting 'or recently stopped'; differentials from one system only"
-   ],
-   "numbers": [
-    "BEFORE 4: warning · meals/fluids · head injury · fever/rash · AFTER 3: confusion vs tiredness · pallor · injuries · CONTEXT 5: doing · hot/humid · position · prolonged standing · emotion · SEIZURE 3 + postictal confusion",
-    "LOC beyond a few minutes ≠ simple reflex syncope · postural drop ≥20 systolic or ≥10 diastolic within 3 min · QTc >~450 men, ~470 women; >500 high risk",
-    "AS triad: syncope, angina, exertional dyspnoea · FHx sudden death <40 → HOCM, LQTS, familial cardiomyopathy",
-    "ECG + bedside glucose in everyone · β-hCG every woman of childbearing age · Austroads; SA Registrar of Motor Vehicles",
-    "000 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Aortic stenosis · HOCM · other structural**",
+     "**SYNCOPE ON EXERTION, NO PRODROME. Exertional ANGINA and DYSPNOEA. EJECTION SYSTOLIC MURMUR TO THE CAROTIDS, SLOW-RISING PULSE**",
+     "**HOCM: family sudden death, MURMUR LOUDER ON VALSALVA**",
+     "**Auscultation, ECG for LVH, ECHOCARDIOGRAM, urgent cardiology** — EMERGENCY"
+    ],
+    [
+     "**Symptomatic arrhythmia — brady, tachy, AF, complete heart block, long QT**",
+     "**PALPITATIONS IMMEDIATELY BEFORE; syncope WHILE SEATED OR SUPINE; ABRUPT ONSET AND OFFSET; young patient with syncope ON STARTLE OR EMOTION**",
+     "ECG in every patient; QTc",
+     "**Holter or extended monitoring; electrolytes** — EMERGENCY"
+    ],
+    [
+     "Acute coronary syndrome · pericarditis",
+     "Chest pain, sweating, dyspnoea, nausea; risk factors",
+     "The before-or-after chest pain question",
+     "ECG, troponin — EMERGENCY"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "**LONG TRAVEL OR IMMOBILITY, CALF SWELLING, PLEURITIC PAIN, breathlessness, tachycardia**",
+     "**'Any long travel recently?' and LEG SWELLING**",
+     "**Wells score, D-dimer or CTPA. SYNCOPE CAN BE THE PRESENTING FEATURE OF A LARGE PE** — EMERGENCY"
+    ],
+    [
+     "**Seizure · stroke or TIA · intracranial haemorrhage · tumour · meningitis**",
+     "**JERKING, TONGUE BITE, INCONTINENCE, POSTICTAL CONFUSION**; focal deficit; **THUNDERCLAP headache**; fever, neck stiffness, rash",
+     "The seizure screen; the CNS bucket; fever and rash before the event",
+     "**Neurological examination; CT head if FOCAL SIGNS, HEAD INJURY or ANTICOAGULATED; LP if indicated** — EMERGENCY"
+    ],
+    [
+     "**Vasovagal · situational · carotid sinus hypersensitivity**",
+     "**PROLONGED STANDING, HEAT, EMOTION, PAIN, COUGH, MICTURITION, DEFECATION. CLEAR PRODROME, PALLOR, TIREDNESS BUT NO CONFUSION**",
+     "The five context questions; pallor from the witness",
+     "**CLINICAL DIAGNOSIS OF EXCLUSION. STILL DO AN ECG**"
+    ],
+    [
+     "**Orthostatic hypotension**",
+     "**Occurs ON STANDING UP. Antihypertensives, diuretics, dehydration, DIABETIC AUTONOMIC NEUROPATHY, PARKINSON DISEASE**",
+     "'Did it happen after changing position?'",
+     "**POSTURAL BP: drop 20 mmHg systolic or 10 mmHg diastolic within 3 minutes**"
+    ],
+    [
+     "**Hypoglycaemia · DKA · thyroid disease · adrenal insufficiency**",
+     "**Diabetes on INSULIN OR SULFONYLUREA, MISSED MEALS, sweating and tremor before**; polyuria and thirst; weather intolerance; **postural drop with PIGMENTATION**",
+     "Missed meals and fluids; the weather-preference question",
+     "**BEDSIDE BLOOD GLUCOSE IN EVERY PATIENT**, ketones, EUC, TSH, morning cortisol — EMERGENCY"
+    ],
+    [
+     "**Drugs — antihypertensives, sedatives, opioids, alcohol, QT-prolonging agents, WITHDRAWAL**",
+     "**NEW OR INCREASED DOSE; RECENTLY CEASED A REGULAR DRUG; polypharmacy**",
+     "**'Do you take any medications regularly, OR HAVE YOU RECENTLY STOPPED ANY?' — one question, both directions**",
+     "Medication review including recent changes AND CESSATIONS — urgent"
+    ],
+    [
+     "**Sepsis · anaemia or GI bleeding · pregnancy including ectopic** · psychogenic",
+     "Fever, rash, tachycardia; **PALLOR, MELAENA, heavy periods**; **ANY WOMAN OF CHILDBEARING AGE**; or hyperventilation with an identifiable stressor",
+     "Fever and rash; PR examination; **BETA-hCG**",
+     "Septic screen, FBC, beta-hCG — EMERGENCY. **PSYCHOGENIC IS ALWAYS LAST, made only after organic causes are excluded**"
+    ]
    ]
   },
   "source": "Syncope_2_Case_Tasks_Script_Notability.pdf (Bill Hartley, 62, 'I had a fall' — the structured syncope approach; Version A aortic stenosis, Variants B–F)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Syncope_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Examiner",
-    "Alert, not pale, hydrated, no rash · no postural drop · pulse regular, slow-rising · neuro normal, fundi normal · ESM loudest RUSE radiating to the carotids, soft S2 · chest clear · abdomen soft · glucose 5.6 · dipstick negative · ECG sinus rhythm, LVH by voltage"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Committing to a structure on the word 'fall' — 'before I go any further: did you lose consciousness completely, or were you aware of your surroundings the whole time?'; recurrent falls and syncope are different stations with different scoresheets; if he never clarifies it, keeps saying 'I had a fall' and the omission costs you (★)",
-   "FAIL — Not asking about warning symptoms — 'did you have any warning at all — dizziness, sweating, nausea, blurred vision, a racing heart?'; the absence is the diagnosis, nobody volunteers a symptom they didn't have, and he says 'none — that's what frightened me' only if asked (★)",
-   "FAIL — Writing 'walking up the driveway with the shopping' down as scene-setting — that is exertion, and exertional syncope is a red flag; pause on 'light-headed twice on the golf course' too; the chest tightness and puffing on hills only come from the CVS bucket, and together they are the aortic stenosis triad (★)",
-   "FAIL — Reassuring and discharging — 'probably just a faint' gets 'oh good, so I can get back to the golf?' and one chance to correct yourself; exertional syncope with a slow-rising pulse and an ejection systolic murmur radiating to the carotids is admission today, monitored bed, echo, cardiology — and react to the murmur visibly (pulse volume? thrill?) rather than transcribing it (★)",
-   "FAIL — Finishing without driving advice — he always asks 'can I just drive home and come back tomorrow?' in the last minute as a deliberate test; 'I need you not to drive until the specialists have assessed you — there are national rules and notification requirements'; no heights, no machinery, don't swim alone; 000 if it happens again (★)",
-   "DO — Seizure screen in the first thirty seconds (jerking, tongue bite, incontinence) not at the end; 'confused, or just tired?' afterwards (tiredness is normal, confusion is the seizure marker); injuries to the head; 'has anyone in your family died suddenly and unexpectedly, especially young?' even at 62; 'any medications regularly, or recently stopped any?'; to the examiner: postural BP and pulse rhythm by name, glucose and ECG; differentials across more than one system"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Syncope_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-93",
