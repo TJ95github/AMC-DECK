@@ -22810,9 +22810,8 @@ const EMBEDDED_CARDS = [
  {
   "id": "MED-82",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice, Kadina, Yorke Peninsula. Vitals on the card. Examination findings from the examiner (Version A: all normal; Version B: boggy pale mucosa). Online variant adds a mechanism explanation task.",
   "stem": [
    "Ms Denise Harmer, 45, part-time office worker at a grain-handling depot: blocked and runny nose, continuously for the past six months. T 36.6, BP 122/78, HR 72, RR 14, SpO2 99% RA, BMI 26; afebrile, systemically well."
   ],
@@ -22822,112 +22821,225 @@ const EMBEDDED_CARDS = [
    "Explain your most likely diagnosis and your differential diagnoses to the patient",
    "Online variant: explain the mechanism of the condition in lay terms"
   ],
-  "time": "8 minutes: 6 history → 20 s PEFE → 90 s explanation. 0:00 frustration line + early ICE · timing, ★ 'one nostril or both?' (say the answer back), CCVO — colour, consistency, volume, odour, blood · better/worse, ★ season AND place, impact · atopic package — nose, eyes, chest, skin + personal/family atopy · triggers ×4 — home, work, ★ drugs incl. nasal sprays by name and duration, smoke · ★ signposted sinusitis screen · ★ signposted malignancy screen — do NOT reassure before it · PEFE by component; 'normal' doesn't change the diagnosis · hay fever + three reasons + two differentials excluded · mechanism in four plain sentences · plan, safety-net, summary.",
+  "findings": [
+   [
+    "Observations on the card",
+    "T 36.6 · BP 122/78 · HR 72 regular · RR 14 · SpO2 99% RA · BMI 26. AFEBRILE AND SYSTEMICALLY WELL. NO HANDS-ON EXAMINATION IS PERFORMED — the findings are handed to you on a card"
+   ],
+   [
+    "VERSION A — the card says ENT EXAMINATION ENTIRELY NORMAL",
+    "THE DIAGNOSIS DOES NOT CHANGE. The rescue sentence: 'A NORMAL NASAL EXAMINATION DOESN'T CHANGE MY DIAGNOSIS. What it does is reassure me there is NO SINUS INFECTION, NO POLYP AND NO MASS — ALLERGIC RHINITIS IS A DIAGNOSIS MADE ON THE HISTORY'"
+   ],
+   [
+    "VERSION B — the card describes the mucosa",
+    "SWOLLEN, BOGGY, PALE OR BLUISH MUCOSA BILATERALLY with CLEAR WATERY SECRETIONS. Describe it in exactly those words, then LINK IT TO THE HISTORY — candidates describe the finding and never connect it"
+   ],
+   [
+    "What to ask the examiner for",
+    "General appearance and vitals · EXTERNAL NOSE AND FACE for tenderness over the FRONTAL AND MAXILLARY SINUSES · ANTERIOR RHINOSCOPY for mucosa, turbinates, septum, ANY POLYP OR MASS and the nature of the discharge · OROPHARYNX for post-nasal drip and COBBLESTONING · EYES for conjunctival injection · OTOSCOPY for a MIDDLE-EAR EFFUSION · NECK for lymphadenopathy · CHEST for wheeze"
+   ],
+   [
+    "The discharge, characterised CCVO",
+    "COLOUR: clear, never green or yellow. CONSISTENCY: watery, 'like water'. VOLUME: 'some days it runs down LIKE A TAP — a box of tissues'. ODOUR: none. BLOOD: none. Asking 'what's the discharge like?' as ONE open question gets a vague answer and covers none of the four"
+   ],
+   [
+    "THE LATERALITY QUESTION — ask it in the first two minutes",
+    "'IS THE BLOCKING AND THE DISCHARGE COMING FROM ONE NOSTRIL, OR BOTH?' → BOTH. SAY THE ANSWER BACK: 'that's reassuring, because a ONE-SIDED blockage would make me look for a different set of causes.' UNILATERAL obstruction in an adult is TUMOUR, POLYP, FOREIGN BODY or CSF LEAK until proven otherwise"
+   ],
+   [
+    "What she withholds until asked directly",
+    "A CAT THAT SLEEPS ON THE BED · moved into an OLDER FULLY CARPETED HOUSE eight months ago, ORIGINAL BEDROOM CARPET · office at a GRAIN DEPOT, 'the dust gets everywhere, worse at harvest' · PARTNER SMOKES INDOORS · sister with asthma, mother with severe hay fever · CHILDHOOD ECZEMA"
+   ],
+   [
+    "The spray she does not count as a medication",
+    "'Just chemist antihistamines. OH — AND A SPRAY. BUT THAT'S NOT REALLY A MEDICATION, IS IT?' ASK ABOUT NASAL SPRAYS BY NAME AND BY DURATION — it is the only way RHINITIS MEDICAMENTOSA gets found. In the harder variant she has used a decongestant DAILY FOR FOUR MONTHS"
+   ],
+   [
+    "THE HIDDEN AGENDA — and when it arrives",
+    "HER AUNT HAD A GROWTH IN HER NOSE and she is frightened this is cancer. If asked about worries in the first two minutes she DEFLECTS ONCE: 'no, not really.' IT ARRIVES DURING THE RED-FLAG QUESTIONS, quietly: 'WHY ARE YOU ASKING ALL THAT? DO YOU THINK IT COULD BE CANCER?' If you never ask the red flags, she raises it at the very end"
+   ],
+   [
+    "Her opening register",
+    "'I'M AT THE END OF MY TETHER. Six months and NOBODY CAN TELL ME WHAT'S WRONG. I've been told it's a cold three separate times.' IF YOU SKIP THE FRUSTRATION LINE she stays clipped, answers in three or four words, and asks once: 'IS THIS GOING TO BE ANOTHER COLD, THEN?'"
+   ]
+  ],
+  "findingsLabel": "The card, the laterality question, and the fear she withholds",
+  "must": [
+   "FAIL — Never asking whether it is one nostril or both.",
+   "FAIL — No malignancy red-flag screen, and premature reassurance that it is 'just hay fever'.",
+   "FAIL — Reassuring before the negatives are gathered.",
+   "FAIL — Abandoning the diagnosis because the examination card says normal.",
+   "ASK — Is the blocking and the discharge coming from one nostril, or both?",
+   "ASK — Any nasal sprays — which one, and for how long?"
+  ],
   "back": {
-   "dx": "Allergic rhinitis (hay fever) — perennial (cat on the bed, dust mite in an older fully carpeted house, grain dust at the depot, partner smoking indoors) with a spring pollen flare; persistent and moderate–severe by ARIA (sleep, work, taste, embarrassment). Six months, intermittent weeks, ★ bilateral, clear watery copious discharge, no smell, no blood; worse in spring, worse at home in the mornings and in bed; chemist antihistamines help for hours. Atopic package: itchy nose, sneezing fits, red streaming eyes, itchy throat, no chest symptoms (harder version: night cough, puffed at netball → asthma), childhood eczema, sister asthma, mother hay fever. Occasional decongestant spray ('not really a medication') — a week here and there: counsel the 5-day limit, stop it. Two exclusions signposted and clean: chronic rhinosinusitis (no facial pain/pressure, fever, PND, upper toothache, smell loss) and sinonasal/nasopharyngeal malignancy (no epistaxis, weight loss, neck lumps, unilateral ear blockage, diplopia, facial numbness). Hidden agenda: aunt had 'a growth in her nose' — surfaces at the red-flag questions; reassure with the specific negatives, after the screen. PEFE normal → 'a normal examination doesn't change my diagnosis — it reassures me there's no infection, polyp or growth; hay fever is diagnosed on the story'. Three reasons: clear watery bilateral discharge; the travelling symptoms (sneeze, itch, eyes); trigger exposure + family atopy. 'Why all year?' → perennial (mite, cat) plus seasonal (pollen). Mechanism: allergen → mast cell → histamine → inflammation and leaky dilated vessels → blockage and watery discharge (two waves: early histamine = itch/sneeze/run, antihistamines work; late inflammatory cells = blockage, needs the steroid, 1–2 weeks). Plan: cat out of the bedroom, mite covers, hot-wash bedding, lift/vacuum the carpet, recirculate on pollen days; mometasone 2 sprays each nostril daily (technique, 2 weeks); cetirizine 10 mg; eye drops; stop the decongestant; smoke-free home, Quitline; review 4–6 weeks with the spray; escalate to combination spray or testing/immunotherapy if uncontrolled.",
+   "dx": [
+    "**ALLERGIC RHINITIS (hay fever) — persistent, perennial pattern with a seasonal spring exacerbation, with associated ALLERGIC CONJUNCTIVITIS.** IgE-mediated inflammation of the nasal mucosa triggered by inhaled allergen.",
+    "**THE DISCRIMINATING ISSUE: this station LOOKS EASY and fails candidates at a high rate for ONE reason — they collect hay-fever positives and NEVER AUDIBLY EXCLUDE the two conditions that are not hay fever. ASKING ABOUT CATS AND CARPETS IS NOT A PASS.** The examiner is waiting to hear you **SIGNPOST and complete TWO NEGATIVE SCREENS — CHRONIC RHINOSINUSITIS and SINONASAL MALIGNANCY.**",
+    "**Signpost them OUT LOUD. Before the sinusitis questions: 'I'd now like to ask a few questions to make sure this ISN'T A SINUS INFECTION, because that's treated quite differently.' Before the red flags: 'and a few questions I ask EVERYBODY with a long-standing blocked nose, to be sure I'm not missing anything serious.'**",
+    "**Then CLOSE THE LOOP in the explanation: 'I also specifically checked for a sinus infection and for anything more serious — you have NO facial pain, NO fever, NO loss of smell, NO nosebleeds, NO weight loss and NO lumps, and the blockage is ON BOTH SIDES. So I'm confident this is hay fever.'**",
+    "**THE ATOPIC PACKAGE IS ONE DISEASE WITH FOUR ADDRESSES: NOSE → allergic rhinitis · EYES → allergic conjunctivitis · CHEST → ASTHMA · SKIN → eczema. Every positive in a second address STRENGTHENS the diagnosis in the first — and a positive CHEST answer changes management completely.**",
+    "**FOUR TRIGGER GROUPS, in a fixed order so you cannot forget one: HOME — pets, carpets, bedding, dust, damp · WORK — dust, grain, hay, pollen, fumes · DRUGS — including OVER-THE-COUNTER NASAL SPRAYS, aspirin and NSAIDs, vasodilator antihypertensives, the combined pill · SMOKE.**",
+    "**ARIA SEVERITY, graded ALOUD: INTERMITTENT is fewer than 4 days a week OR fewer than 4 consecutive weeks; otherwise PERSISTENT. MODERATE–SEVERE means SLEEP DISTURBANCE, impairment of work or daily activities, or troublesome symptoms.** **She is PERSISTENT, MODERATE–SEVERE — which is precisely why she needs A NASAL STEROID, NOT JUST TABLETS.** **Impact is not a courtesy question; it sets the grade, and the grade justifies the drug.**",
+    "**THE MECHANISM IN FOUR SENTENCES, then STOP: an ALLERGEN — dust, dust mite, pollen or cat fur — activates a MAST CELL. That cell releases HISTAMINE. Histamine causes INFLAMMATION and WIDENS THE SMALL BLOOD VESSELS in the lining of the nose. That SWELLING AND LEAKING produces the blockage and the watery discharge — and it is why ANTIHISTAMINES HELP.** **No 'IgE-mediated type 1 hypersensitivity', no 'degranulation', no 'cross-linking'.**",
+    "**USE THE MECHANISM TO SELL THE TREATMENT: the EARLY PHASE, within minutes and histamine-driven, causes ITCH, SNEEZE AND WATERY DISCHARGE — antihistamines fix these. The LATE PHASE, 4–8 hours and cellular, causes THE BLOCKAGE — antihistamines BARELY TOUCH IT, which is why she needs a nasal steroid and why it takes days to work.**",
+    "**Treatment: ALLERGEN MINIMISATION — cat off the bed, bedding weekly at 55 degrees or above, mite-resistant covers, bedroom carpet up, windows shut and car air on recirculate on high-pollen days · SALINE irrigation first · MOMETASONE 50 microg, TWO SPRAYS EACH NOSTRIL ONCE DAILY, regularly not when-required, AIM OUTWARD TOWARDS THE EAR with the opposite hand, DO NOT SNIFF HARD, allow UP TO TWO WEEKS · CETIRIZINE 10 mg daily · OLOPATADINE 0.1% one drop each eye twice daily · combination azelastine with fluticasone if inadequate · REVIEW AT 4–6 WEEKS, checking TECHNIQUE AND ADHERENCE BEFORE CHANGING THE DRUG.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · ★ 'I'm very sorry you've been having such a difficult time — six months is a long while, and being told it's a cold each time must be frustrating. I'll ask some questions to find the cause, then we'll make the best plan. Is that all right?' · ★ 'was there anything in particular you were worried this might be?' (she deflects — note it, move on)"
+     "**WIPE, confirm her name and how she likes to be addressed, check comfort, then the open question.**"
+    ],
+    [
+     "0:15",
+     "**THE FRUSTRATION LINE, verbatim — the role-player is briefed to become terse if you skip it: 'I'm VERY SORRY to hear you've been having such a difficult time with this — six months is a long while to put up with something. What I'll do today is ask you some questions to try to find the cause, and then we'll make the best management plan for you. Is that all right with you?'**"
+    ],
+    [
+     "0:35",
+     "**ICE AT THE FRONT, NOT THE BACK: 'before I start — was there anything in particular you were worried this might be?'** She may deflect. **Note it and move on rather than pressing.** **Leaving concerns to minute seven means no time to answer them, and addressing the concern is a SCORED item.**"
     ],
     [
      "0:45",
-     "Timing: constant or comes and goes, worse · ★ 'one nostril, or both?' → both → ★ 'that's reassuring — a one-sided blockage would make me look for a different set of causes' · CCVO: clear or green/yellow; watery or thick; a lot or a little; smell; blood"
+     "**SIGNPOST THE STRUCTURE: 'I'm going to start with the nose itself, then your eyes, chest and skin, then what you're exposed to at home and at work. Some questions may seem unrelated — they help me rule out a few other causes.'**"
     ],
     [
-     "1:45",
-     "Better/worse · ★ 'a particular time of year?' (spring) · ★ 'a particular place — home, work, outdoors?' (home, mornings, bed) · impact — sleep, work, concentration, taste, embarrassment"
+     "1:00",
+     "**TIMING AND SIDE: how long · is it there ALL THE TIME or does it COME AND GO — constant leans sinusitis, on and off leans allergic · is it getting worse · AND IS THE BLOCKING AND DISCHARGE FROM ONE NOSTRIL OR BOTH?** **Say the answer back out loud.**"
     ],
     [
-     "2:30",
-     "Atopic package, four addresses: nose — itch, sneezing · eyes — itchy/red/watery · throat itch · chest — cough at night/exercise, wheeze, SOB · skin — eczema · own allergies · family asthma/eczema/hay fever"
+     "1:30",
+     "**CHARACTER — CCVO, as four separate questions: COLOUR, clear or green or yellow · CONSISTENCY, watery or thick and sticky · VOLUME, a large amount or only a little · ODOUR, any bad smell · plus ANY BLOOD.**"
     ],
     [
-     "3:15",
-     "Triggers ×4: home — pets (cat on the bed), carpets/bedding/curtains, dust, damp/mould (older carpeted house 8 months) · work — grain dust, harvest · ★ 'any medications, including over the counter — any nasal sprays, which one, how long?' → 'a spray, not really a medication' → pursue: decongestant, a week here and there · smoke — partner indoors"
+     "2:00",
+     "**BETTER AND WORSE — general, then TWO SPECIFIC: 'is there a particular TIME OF YEAR when it's worse?' AND 'is there a particular PLACE that sets it off — at home, at work, outdoors?'** **Hearing 'worse in spring' and stopping misses the bedroom, the carpet and the depot.**"
     ],
     [
-     "4:15",
-     "★ Signposted sinusitis screen: 'to make sure this isn't a sinus infection, because that's treated quite differently' — headaches; pain/pressure cheeks, forehead, behind the eyes, bending forward; fevers; PND; upper toothache; smell → all no"
+     "2:20",
+     "**IMPACT: 'how is this affecting your day-to-day life — your SLEEP, your WORK, your CONCENTRATION?'**"
+    ],
+    [
+     "2:40",
+     "**THE ATOPIC PACKAGE, four addresses: NOSE — itch, sneezing · EYES — itchy, red or watery · THROAT — itch at the back · CHEST — COUGH ESPECIALLY AT NIGHT OR WITH EXERCISE, WHEEZE, SHORTNESS OF BREATH · SKIN — itchy rashes or eczema.** Then **personal allergies and FAMILY history of asthma, eczema or hay fever.**"
+    ],
+    [
+     "3:20",
+     "**TRIGGERS, four groups in a fixed order. HOME: any pets · carpets, older bedding or soft furnishings · much dust, damp or mould? WORK: what does the job involve, and any exposure to DUST, GRAIN, HAY, POLLEN, FUMES or chemicals?**"
+    ],
+    [
+     "3:50",
+     "**DRUGS: 'are you taking any medications at all, INCLUDING ANYTHING YOU BUY OVER THE COUNTER — ANY NASAL SPRAYS, AND FOR HOW LONG?' SMOKE: 'do you smoke, or does anyone at home smoke indoors?'**"
+    ],
+    [
+     "4:10",
+     "**SIGNPOST, then THE SINUSITIS SCREEN: any headaches · PAIN OR PRESSURE over cheeks, forehead or behind the eyes, ESPECIALLY BENDING FORWARD · any fevers · SECRETIONS RUNNING DOWN THE BACK OF YOUR THROAT · any UPPER TOOTHACHE · ear blocking or popping · AND ANY CHANGE OR LOSS IN YOUR SENSE OF SMELL — the forgotten one.**"
     ],
     [
      "4:45",
-     "★ Signposted malignancy screen: 'questions I ask everybody with a blocked nose this long, to be sure I'm not missing anything serious' — nosebleeds, weight/appetite, neck lumps, unusual tiredness, one ear blocked/muffled, double vision, facial numbness → all no → 'why are you asking — could it be cancer? my aunt had a growth' → thank her, validate, reassure WITH the negatives (bilateral, clear, no blood, no bleeds, weight stable, no lumps, hearing normal) · close: PMHx/surgery/nasal injury, alcohol, anything else"
+     "**SIGNPOST, then THE RED-FLAG SCREEN: ANY NOSEBLEEDS or blood in the discharge · ANY WEIGHT LOSS, how is your appetite · ANY LUMPS, ESPECIALLY IN THE NECK · unusually tired · ANY BLOCKAGE OR HEARING LOSS IN ONE EAR · ANY DOUBLE VISION OR NUMBNESS OF THE FACE?**"
+    ],
+    [
+     "5:15",
+     "**When the cancer fear arrives, DO NOT RUSH THE REASSURANCE: thank her, validate it, then reassure WITH THE SPECIFIC NEGATIVES — both sides, clear discharge, no blood, no nosebleeds, weight and appetite unchanged, no lumps, hearing normal.**"
+    ],
+    [
+     "5:30",
+     "**Close the history: past medical and surgical history including NASAL SURGERY OR SEPTAL INJURY · alcohol · 'is there anything else you think I should know?'**"
     ],
     [
      "6:00",
-     "PEFE by component: general/vitals · external nose, sinus tenderness · anterior rhinoscopy — mucosa, turbinates, septum, polyp/mass, discharge · oropharynx — PND, cobblestoning · eyes — conjunctival injection · otoscopy — effusion · neck nodes · chest — wheeze → 'all normal' → ★ rescue sentence"
+     "**Ask the examiner for the findings, then SAY WHAT THEY MEAN — the rescue sentence for Version A, or the boggy-pale description for Version B.**"
     ],
     [
      "6:30",
-     "'Has anyone mentioned hay fever before?' · allergic rhinitis named · three reasons · two differentials (sinusitis — why not; growth — what I checked) · 'why all year?' → perennial + seasonal · mechanism in four sentences if asked · management, stop the decongestant, Quitline for the partner, review 4–6 weeks with the spray · safety-net: one-sided, nosebleeds, thick/coloured/bloody, facial pain/fever, smell loss, one ear, neck lump, weight loss · summary, questions"
+     "**Check understanding first — 'has anyone mentioned hay fever to you before?' — then NAME IT, then GIVE THE THREE REASONS BACK TO HER: clear watery BILATERAL discharge · the symptoms that travel with it · the triggers she is exposed to, plus family atopy.** Then **the two differentials in TEN SECONDS, not thirty.**"
+    ],
+    [
+     "7:20",
+     "**If asked, THE MECHANISM in four plain sentences and check understanding.** Then **the plan, SPRAY TECHNIQUE, the 5-day decongestant limit, Quitline 13 7848 for her partner, review at 4–6 weeks with the spray brought in, and the SAFETY-NET: one-sided, nosebleeds, coloured or bloody discharge, facial pain or fever, lost smell, one ear blocked, a neck lump or unintended weight loss.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I'm very sorry to hear you've been having such a difficult time with this. I'll ask you some questions to try to find the cause, and then we'll make the best management plan for you. Is that all right with you?' / 'Before I start — was there anything in particular you were worried this might be?'",
-    "★ 'Is the blocking and the discharge coming from one nostril, or both?' → 'Both sides — that's reassuring, because a one-sided blockage would make me look for a different set of causes.'",
-    "'Is it clear, or green or yellow? Watery, or thick and sticky? A lot or a little? Any bad smell? Any blood?' / 'Is there a particular time of year, or a particular place, that makes it worse?'",
-    "'These conditions often travel together — so let me ask about your eyes, your chest and your skin.' / ★ 'Any nasal sprays — which one, and for how long?' ('that's not really a medication, is it?' → 'it certainly counts')",
-    "★ 'I'd like to ask a few questions to make sure this isn't a sinus infection, because that's treated quite differently.' / ★ 'And a few questions I ask everybody with a blocked nose this long, to be sure I'm not missing anything serious.'",
-    "'Do you think it could be cancer? My aunt had a growth in her nose' → 'Thank you for telling me — I'm glad you have, because it explains why you've been so worried, and it's exactly what those questions were for. Nothing you've told me points that way: it's on both sides, the discharge is clear with no blood, no nosebleeds, your weight and appetite are unchanged, no lumps, hearing normal. Let me examine you and then I'll tell you what I think.'",
-    "★ 'A normal examination doesn't change my diagnosis — it reassures me there's no infection, no polyp and no growth. Hay fever is diagnosed on the story.'",
-    "★ 'Most likely you have allergic rhinitis, which most people know as hay fever. Three reasons: the discharge is clear, watery and from both sides; you have the symptoms that travel with it — sneezing, itchy nose, red watery eyes; and you're around the common triggers — a cat on your bed, an older carpeted house full of dust mite, grain dust at work, smoke in the house — with hay fever and asthma in the family.' / 'Yours is year-round from the cat and the dust mite, with a spring flare from pollen.'",
-    "Mechanism: ★ 'An allergen activates a mast cell, which releases histamine, which causes inflammation and widens the small blood vessels in the lining of your nose — that swelling and leaking is the blockage and the watery discharge, and it's why antihistamines help.' / 'Why don't antihistamines fix the blockage?' → 'Two waves — the first is histamine, itch and sneeze; the second, hours later, is inflammatory cells arriving, which causes the blockage; that's what the steroid spray is for, and why it takes a week or two.'",
-    "★ 'Use it every day, not just on bad days — aim it outwards towards your ear, don't sniff hard, and give it up to two weeks.' / 'Can I ask you to stop the decongestant spray? Used more than about five days it makes the blockage worse.' / ★ 'Come back sooner if it becomes one-sided, nosebleeds, coloured or bloody discharge, facial pain or fever, loss of smell, one ear blocking, or a lump in your neck.'"
-   ],
    "pefe": [
-    "Role-player: Denise, 45, admin at a grain depot near Kadina; partner smokes indoors; a cat; older fully carpeted house 8 months; chemist antihistamines + an occasional decongestant spray she doesn't count; childhood eczema; sister asthma, mother severe hay fever; no surgery/injury/allergies. Frustrated and clipped — softens if the six months is acknowledged; if not, three-word answers and 'is this going to be another cold, then?' (also pushes once at ~4 min). Withholds cat, carpet, depot dust, smoking partner, family history and the spray unless asked directly. Hidden agenda: aunt's nasal growth — deflects if asked in the first two minutes; reveals at the red-flag questions ('why are you asking all that?'); if reassured before the screen: 'how can you know that already?'",
-    "PEFE Version A: all normal · Version B: nasal mucosa swollen, boggy and pale bilaterally with clear watery secretions; everything else normal → 'the classic appearance in allergic rhinitis; no polyp, mass or purulent discharge — against sinusitis and against anything sinister'",
-    "Variant 2 — 'it's the left one really; a bit of blood on the tissue': STOP the hay-fever line. Complete red flags (ear, neck lumps, facial numbness, diplopia, weight) → ★ 'because this is one side only with some blood I'm not treating it as hay fever — a one-sided blocked nose in an adult needs a specialist to look inside with a camera; urgent ENT, nasendoscopy ± scan; Adelaide, PATS today'. Examiner 'why not treat and review in 6 weeks?' → unilateral obstruction + epistaxis in an adult is a red flag for sinonasal/nasopharyngeal malignancy; a therapeutic trial delays diagnosis; nasendoscopy isn't available to me in GP",
-    "Variant 3 — decongestant every day for four months, wears off in an hour: rhinitis medicamentosa on top — rebound explained, stop it, ★ warn 1–2 weeks worse, INCS started at the same time, review 2 weeks not 6 (cross-ref MED-77) · Variant 4 — night cough + puffed at netball in spring: asthma in the same allergic family → spirometry, reliever + written action plan, thunderstorm asthma advice",
-    "Examiner: 'why not simply an antihistamine?' → persistent, moderate–severe by ARIA (sleep and work), obstruction dominant; antihistamines control early-phase itch/sneeze; obstruction is late-phase inflammation → INCS first-line regularly, antihistamine added for itch/eyes · 'allergy testing?' → not routinely — clinical diagnosis, triggers evident; skin prick or specific IgE if the trigger is unclear, avoidance decisions depend on it, or uncontrolled and considering immunotherapy (clinical immunology, Adelaide)",
-    "SA: Kadina GP; ENT/immunology Adelaide with PATS; Quitline 13 7848 for the partner; TIS 131 450; MedSTAR 1300 13 12 33 not needed",
-    "Version A — All normal",
-    "Everything else — Normal",
-    "What that means — The classic appearance in ALLERGIC RHINITIS — no polyp, mass or purulent discharge, which argues against sinusitis and against anything sinister"
+    "**No hands-on examination — the findings come on a card. Ask for them BY REGION AND TARGET.**",
+    "**NO INVESTIGATIONS ARE NEEDED to make this diagnosis — say that clearly. It is a CLINICAL diagnosis.**",
+    "**SKIN-PRICK TESTING or ALLERGEN-SPECIFIC IgE (RAST) ONLY if the trigger is unclear, if avoidance decisions hinge on it, or if IMMUNOTHERAPY is being considered — via clinical immunology and allergy.**",
+    "**TOTAL IgE, FBC EOSINOPHILS AND PLAIN SINUS X-RAYS ARE NOT USEFUL — do not order them.**",
+    "**SPIROMETRY with bronchodilator reversibility if there are ANY chest symptoms. NASENDOSCOPY with or without CT sinuses ONLY for red flags, unilateral disease, or failure to respond to adequate treatment.**",
+    "**Do not miss: UNILATERAL symptoms, epistaxis, unilateral ear blockage or a neck node → URGENT ENT · UNDIAGNOSED ASTHMA hiding behind the rhinitis · THUNDERSTORM ASTHMA risk in anyone with spring hay fever · RHINITIS MEDICAMENTOSA from a spray she does not think of as a medication.**",
+    "**Avoid: topical decongestants BEYOND 5 DAYS · SEDATING antihistamines, which impair driving and work · ANTIBIOTICS, which have no role · routine oral or depot corticosteroids.** **MONTELUKAST is SECOND-LINE only, usually where asthma coexists — the TGA carries a BOXED WARNING for neuropsychiatric effects including agitation, mood change and suicidal ideation.**"
    ],
-   "fails": [
-    "Never asking one nostril or both ★",
-    "Omitting the signposted malignancy red-flag screen ★",
-    "Reassuring her before gathering the negatives — 'don't worry, it's just an allergy' ★",
-    "'The examination is normal, so I'm not sure what this is' — losing your nerve",
-    "'IgE-mediated type 1 hypersensitivity of the nasal mucosa' — immunology vocabulary to the patient",
-    "Starting closed questions without acknowledging the frustration; leaving ICE to the last thirty seconds; hearing 'worse in spring' and never asking the place question; stopping the trigger list at the cat",
-    "Accepting 'no medications' — never pursuing the spray by name and duration; skipping the chest so the asthma variant is missed"
-   ],
-   "numbers": [
-    "Stem 45F, 6 months · 8 min: 6 history · 4 atopic addresses · 4 trigger groups · 2 exclusions · CCVO",
-    "Chronic rhinosinusitis: ≥12 weeks, 2+ of obstruction, discharge, facial pain, reduced smell · ARIA intermittent <4 days/week or <4 weeks; otherwise persistent",
-    "Mometasone 50 µg 2 sprays each nostril daily (fluticasone furoate 27.5 µg, budesonide 64 µg same) · onset days, full effect up to 2 weeks · review 4–6 weeks",
-    "Cetirizine 10 mg · loratadine 10 mg · fexofenadine 180 mg · desloratadine 5 mg daily · azelastine + fluticasone 1 spray bd · olopatadine 0.1% 1 drop each eye bd · topical decongestant max 5 days",
-    "Bedding weekly ≥55 °C · immunotherapy 3–5 years · Quitline 13 7848 · PATS from MM5"
+   "ddx": [
+    [
+     "**Allergic rhinitis** — the answer",
+     "**BILATERAL, CLEAR, WATERY, PROFUSE; sneezing; ITCH of nose and eyes; SEASONAL and PLACE-related; pet, carpet, family atopy**",
+     "The atopic package at all four sites; the trigger screen; **boggy pale mucosa OR a normal nose**",
+     "**CLINICAL diagnosis.** Allergen testing only if the trigger is unclear or immunotherapy is planned"
+    ],
+    [
+     "**Chronic rhinosinusitis — the main rival**",
+     "**CONSTANT rather than episodic; THICK COLOURED discharge; FACIAL PAIN or pressure; HYPOSMIA; POST-NASAL DRIP**",
+     "**12 WEEKS OR MORE of TWO OR MORE of: obstruction, discharge, facial pain, reduced smell**",
+     "**Negative sinusitis screen here.** If positive: saline, intranasal steroid, ENT with CT sinuses; antibiotics only for bacterial features"
+    ],
+    [
+     "**Sinonasal or nasopharyngeal carcinoma — must not miss**",
+     "**UNILATERAL blockage or discharge; RECURRENT EPISTAXIS; UNILATERAL BLOCKED EAR; NECK NODE; FACIAL NUMBNESS; weight loss**",
+     "**All the red-flag questions; neck examination; OTOSCOPY for a unilateral effusion**",
+     "**URGENT ENT for nasendoscopy with CT or MRI and biopsy. NEVER reassure on history alone** — urgent"
+    ],
+    [
+     "Nasal polyps",
+     "**Persistent BLOCKAGE dominant, HYPOSMIA, POOR RESPONSE TO ANTIHISTAMINES**; asthma with aspirin sensitivity",
+     "Anterior rhinoscopy: **PALE GREY MOBILE INSENSATE masses**",
+     "Nasendoscopy. Intranasal steroid; ENT referral. **A UNILATERAL polyp goes to ENT, always**"
+    ],
+    [
+     "**Rhinitis medicamentosa**",
+     "**REBOUND blockage; prolonged use of an over-the-counter DECONGESTANT spray; 'it wears off after an hour'**",
+     "**'Any nasal sprays — WHICH ONE, and FOR HOW LONG?'**",
+     "**STOP the decongestant; intranasal corticosteroid to cover the rebound; WARN IT TAKES 1–2 WEEKS and review at 2 weeks**"
+    ],
+    [
+     "Other drug-induced rhinitis",
+     "**Aspirin and NSAIDs, vasodilator antihypertensives, ACE inhibitors, the COMBINED PILL, some antidepressants**",
+     "Full medication list including over-the-counter",
+     "Temporal relation to starting the drug; review with the prescriber"
+    ],
+    [
+     "Non-allergic / vasomotor rhinitis",
+     "**Triggered by COLD AIR, STRONG SMELLS, ALCOHOL, SPICY FOOD; NO itch, NO sneezing, NO atopy**",
+     "A NEGATIVE atopic package",
+     "**Diagnosis of exclusion.** Intranasal IPRATROPIUM helps a watery drip"
+    ],
+    [
+     "Foreign body · CSF rhinorrhoea",
+     "**UNILATERAL OFFENSIVE discharge (FB); unilateral CLEAR drip WORSE ON LEANING FORWARD after head trauma (CSF)**",
+     "'One side only? Any bad smell? Any head injury or surgery?'",
+     "ENT for removal; **BETA-2-TRANSFERRIN and imaging** if CSF is suspected — prompt"
+    ],
+    [
+     "**Undiagnosed asthma**",
+     "**COUGH AT NIGHT or with exercise, breathlessness playing sport, WORSE IN SPRING**; childhood eczema",
+     "The CHEST address of the atopic package",
+     "**SPIROMETRY with reversibility; reliever and a WRITTEN ACTION PLAN; THUNDERSTORM ASTHMA advice**"
+    ],
+    [
+     "**Treatment failure from technique, not drug failure**",
+     "**'The spray did nothing' — used TWICE A WEEK when bad, SNIFFING HARD, aimed at the MIDDLE of the nose, and it caused NOSEBLEEDS**",
+     "**Ask HOW she used it, and watch her use it**",
+     "**CHECK TECHNIQUE AND ADHERENCE BEFORE ESCALATING.** Aim outward, opposite hand, daily, up to two weeks"
+    ]
    ]
   },
   "source": "Allergic_Rhinitis_2_Case_Tasks_Script_Notability.pdf (Denise Harmer, 45, six months of blocked and runny nose)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Allergic_Rhinitis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Version B — nose",
-    "Nasal mucosa swollen, boggy and pale bilaterally with clear watery secretions"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking 'is it one nostril, or both?' — an automatic fail on its own; ask it in the first two minutes, say the answer back ('both sides is reassuring — a one-sided blockage would make me look for a different set of causes'); in the variant with one side and blood, stop the hay-fever line and refer urgently for nasendoscopy (★)",
-   "FAIL — Reassuring her before gathering the negatives — 'don't worry, it's just an allergy' before the red-flag screen fails; she asks 'how can you know that already?'; when the cancer fear surfaces (her aunt's growth), thank her, then reassure with the specific negatives (★)",
-   "FAIL — Not signposting the two exclusions out loud — 'to make sure this isn't a sinus infection, because that's treated quite differently' (headache, facial pain, fever, post-nasal drip, smell, toothache) and 'questions I ask everybody with a blocked nose this long, to be sure I'm not missing anything serious' (nosebleeds, weight, lumps, one ear blocked, diplopia, facial numbness) — the examiner must hear the malignancy screen (★)",
-   "FAIL — Launching into closed questions before the frustration line — she has been told 'it's a cold' three times; 'six months is a long while to put up with' or she stays terse for two minutes you can't spare; and ask her worry early, not in the last thirty seconds",
-   "FAIL — 'What's the discharge like?' as one open question, or hearing 'worse in spring' and stopping — colour, consistency, volume, odour, blood each asked; season AND place (home, mornings, in bed → the cat, the original bedroom carpet, the grain depot, the partner smoking indoors); all four atopic addresses (nose, eyes, chest, skin); and the nasal spray by name and duration — 'that's not really a medication, is it?'",
-   "FAIL — 'The examination is normal, so I'm not sure what this is' — 'a normal examination doesn't change my diagnosis; it reassures me there's no infection, no polyp and no growth — hay fever is diagnosed on the story'; three reasons in her words, two differentials excluded in ten seconds, the mechanism in four plain sentences (allergen → mast cell → histamine → swelling and leaking), never 'IgE-mediated type 1 hypersensitivity'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-83",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice, Kadina. The blank 'unwell' stem — no vitals, no duration, no system. No examination will be given. Six minutes of history, then diagnosis and differentials.",
   "stem": [
    "James Corrigan, 30: feeling unwell. That is the entire stem."
   ],
@@ -22937,95 +23049,219 @@ const EMBEDDED_CARDS = [
    "State your most likely diagnosis",
    "State your differential diagnoses"
   ],
-  "time": "8 minutes: 6 history → 1 diagnosis with reasons → 1 differentials. ★ 'What do you mean by unwell — low energy, sleepy, feverish, or something specific?' (offer categories or he stays vague) → re-anchor out loud · timing, ★ side — nose AND eyes, CCVO · ENTS sweep incl. ★ 'show me where' (cheekbones = maxillary sinuses — the S that upgrades rhinitis to rhinosinusitis) and ★ smell · ★ five red-flag groups, signposted: systemic, orbit, intracranial, rash, airway · ★ chest → past asthma → the borrowed Ventolin (clue AND safety issue) · atopic package, triggers ×4 · travel, sexual health with a preamble, malignancy · ★ TWO diagnoses, four reasons, the link, assess and treat the asthma now, no antibiotics with the three criteria · grouped differentials.",
+  "findings": [
+   [
+    "NO EXAMINATION WILL BE GIVEN — do not ask for one",
+    "The entire stem is 'FEELING UNWELL'. No vitals, no duration, no system, no context. A one-word complaint is the AMC testing whether you have A STRUCTURE for 'unwell' that does not depend on knowing the answer in advance. IN THE READING TIME YOU CANNOT NARROW IT — walk in with a method"
+   ],
+   [
+    "THE UNLOCKING QUESTION — and why it must offer categories",
+    "'CAN YOU DESCRIBE WHAT YOU MEAN BY UNWELL? DO YOU MEAN LOW IN ENERGY, OR SLEEPY, OR FEVERISH — OR IS THERE SOMETHING SPECIFIC BOTHERING YOU?' Asked WITHOUT categories he answers 'I DON'T KNOW… JUST UNWELL. ROUGH.' HE GENUINELY CANNOT ARTICULATE IT — that is the whole point of the case"
+   ],
+   [
+    "What the unlocking question yields",
+    "'A STUFFY NOSE AND WATERY EYES.' RE-ANCHOR OUT LOUD: 'so the main problem is your nose and your eyes — let me focus there.' At three minutes you do not need a diagnosis, YOU NEED A SYSTEM"
+   ],
+   [
+    "The complaint, explored",
+    "2–3 DAYS · CONSTANT · GETTING WORSE · BOTH NOSTRILS, BOTH EYES — ask laterality of the NOSE AND THE EYES separately · CCVO: CLEAR · WATERY · PROFUSE, 'going through tissues constantly' · NO ODOUR"
+   ],
+   [
+    "THE GESTURE THAT MAKES THE DIAGNOSIS",
+    "'ANY PAIN OR PRESSURE OVER YOUR FACE — COULD YOU SHOW ME WHERE?' HE PRESSES BOTH CHEEKBONES: 'here, doctor, and it's worse when I lean forward.' THAT IS THE MAXILLARY SINUS, AND IT IS WHAT UPGRADES RHINITIS TO RHINOSINUSITIS. Asked only 'any facial pain?' he answers 'a bit, yes' and nothing more"
+   ],
+   [
+    "The rest of the ENTS sweep",
+    "NO fevers or chills — he checked. EARS fine. THROAT scratchy but not sore. NO post-nasal drip. SMELL INTACT — the FOURTH CARDINAL SYMPTOM and the most forgotten question in the station. NO neck lumps"
+   ],
+   [
+    "All five red-flag groups NEGATIVE",
+    "SYSTEMIC: no confusion, dizziness or rigors. ORBIT: eyes water but NO swelling, vision fine, no pain on eye movement. INTRACRANIAL: no severe headache, photophobia, neck stiffness or vomiting. RASH: none. AIRWAY: no drooling, dysphagia, voice change or noisy breathing. He asks once: 'WHY — WHAT ARE YOU WORRIED ABOUT?'"
+   ],
+   [
+    "THE CHEST — where the second diagnosis appears",
+    "'Yes actually — a DRY COUGH, and I've been WHEEZY AND SHORT OF BREATH, ESPECIALLY AT NIGHT.' DO NOT FILE THIS UNDER 'PART OF THE COLD'"
+   ],
+   [
+    "The follow-up question that makes it",
+    "'DO YOU HAVE ANY PAST HISTORY OF WHEEZING, OR OF ASTHMA?' → 'I had asthma as a kid. I was on medication but I GREW OUT OF IT. I gave up HOCKEY because exercise set it off. AND I USED MY SISTER'S VENTOLIN YESTERDAY — IT HELPED.' He mentions the inhaler ONLY if asked about past asthma or medications tried"
+   ],
+   [
+    "Atopy and triggers — all positive",
+    "SNEEZING CONSTANTLY, nose and eyes BOTH ITCH, OWN POLLEN HAY FEVER most springs. MOTHER hay fever, SISTER asthma. PETS, CARPET THROUGHOUT, ALWAYS DUSTY, PARTNER SMOKES INDOORS. Travel, contacts, night sweats, weight and sexual health screens all negative"
+   ]
+  ],
+  "findingsLabel": "A one-word stem — the question that unlocks it, and the gesture that names it",
+  "must": [
+   "FAIL — Naming only one diagnosis. There are two, and this is the commonest reason for failure.",
+   "FAIL — No red-flag sweep: orbit, headache, rash and swallowing never mentioned.",
+   "FAIL — Never converting 'unwell' into a system; a top-to-toe review that lands nowhere.",
+   "FAIL — Diagnosing the asthma flare and then doing nothing about it.",
+   "ASK — Any pain or pressure over your face? Could you show me where?",
+   "ASK — Do you have any past history of wheezing, or of asthma?"
+  ],
   "back": {
-   "dx": "Two diagnoses running at once — (1) acute rhinosinusitis, most likely allergic: 2–3 days, constant, worsening, bilateral blocked nose and bilateral watery eyes, clear watery copious discharge, no fever (checked), bilateral cheekbone ache worse leaning forward (maxillary), no PND, smell intact, no ear/neck symptoms; sneezing, itchy nose and eyes, spring hay fever, mother hay fever, sister asthma; pets, carpet throughout, dust, partner smokes indoors — four reasons: no fever, clear watery discharge, the whole atopic picture with family history, heavy trigger exposure (not fever absence alone); (2) acute asthma exacerbation: dry cough, wheeze and SOB especially at night, childhood asthma 'grown out of' (gave up hockey — exercise-induced), sister's Ventolin yesterday helped — relapse of childhood asthma triggered by the allergic flare; the two are linked (same allergic tendency, nose and chest). Red flags all negative; explain them honestly when he asks 'what are you worried about?'. No antibiotics — only if much more unwell, >10 days without improvement, or double worsening. Assess and treat the asthma NOW: RR, SpO2, peak flow; salbutamol via spacer; ± oral prednisolone; his own reliever + spacer, written action plan, spirometry with reversibility once settled — not his sister's inhaler. Differentials grouped: viral URTI (cold, pharyngitis, tonsillitis, laryngitis, influenza, COVID-19, EBV); bacterial (strep tonsillitis, bacterial rhinosinusitis, chlamydial/gonococcal pharyngitis); serious upper airway (epiglottitis, quinsy — excluded: no drooling, dysphagia, voice change); LRTI (pneumonia, pertussis, TB); structural (polyps); STI incl. HIV seroconversion; complications (orbital cellulitis, meningitis, sepsis — screened, negative).",
+   "dx": [
+    "**TWO DIAGNOSES RUNNING AT ONCE: ACUTE RHINOSINUSITIS, MOST LIKELY ALLERGIC — and AN ACUTE EXACERBATION OF ASTHMA.** **Candidates gather every finding and then name only ONE. Say both.**",
+    "**RHINOSINUSITIS is defined by TWO OR MORE of FOUR cardinal symptoms: NASAL BLOCKAGE or congestion · NASAL DISCHARGE, anterior or posterior · FACIAL PAIN OR PRESSURE · REDUCTION OR LOSS OF THE SENSE OF SMELL, the one candidates forget.** **ACUTE is under 12 weeks, CHRONIC is 12 weeks or more.**",
+    "**Use the word RHINOSINUSITIS — not 'rhinitis', not 'sinusitis'. It is the Therapeutic Guidelines term, because the nasal and sinus mucosa are CONTINUOUS and almost always inflamed together — and it resolves the label confusion the case is designed to create.**",
+    "**FOUR REASONS for the allergic call, not one: NO FEVER · the discharge is CLEAR AND WATERY rather than thick and coloured · the WHOLE ALLERGY PICTURE — sneezing, itchy nose, itchy watery eyes, his own pollen allergy, hay fever in his mother, asthma in his sister · and HEAVY TRIGGER EXPOSURE at home.**",
+    "**BE HONEST ABOUT THE ALLERGIC-VERSUS-VIRAL CALL. Absence of fever makes allergic more likely but DOES NOT EXCLUDE viral — viral is the commonest cause overall and adults are often afebrile.** If challenged: **'I can't exclude a viral rhinosinusitis and it remains my leading alternative. I favour allergic because of the atopy, the itch and sneezing, the clear watery discharge and the trigger exposure — and the two can COEXIST, since a viral illness is a common trigger for both a rhinosinusitis flare and an asthma flare.'**",
+    "**THE EXPLICIT TRANSITION: 'THERE'S A SECOND THING HAPPENING AT THE SAME TIME. Your cough, wheeze and breathlessness, in someone who had asthma as a child and who improved with a Ventolin puffer, tell me you're having an ACUTE FLARE-UP OF YOUR ASTHMA. They're CONNECTED — the same allergic tendency affecting your nose and sinuses AND your chest at once, which is why they came on together.'**",
+    "**Three things to do with 'I grew out of it'. ONE — treat it with SCEPTICISM: childhood asthma frequently remits and RELAPSES in adulthood, often triggered by allergen exposure or a viral illness. TWO — response to salbutamol is DIAGNOSTICALLY USEFUL but does NOT replace objective testing; arrange SPIROMETRY WITH BRONCHODILATOR REVERSIBILITY once settled. THREE — USING ANOTHER PERSON'S PRESCRIPTION IS A SAFETY ISSUE. Name it kindly and prescribe his own.**",
+    "**THIS IS AN ACUTE EXACERBATION, IN THE ROOM. No examination is offered, but SAY OUT LOUD that you would assess severity NOW — ability to speak in full sentences, respiratory rate, heart rate, saturations, accessory muscle use, PEAK FLOW against best or predicted — and treat: SALBUTAMOL 4–12 PUFFS VIA SPACER, repeated as needed, or nebulised if severe; oxygen to target; ORAL PREDNISOLONE for a moderate or severe exacerbation; REASSESS BEFORE DISPOSITION.** **A candidate who diagnoses the flare and does nothing has spotted the finding and missed the point.**",
+    "**ANTIBIOTICS ARE NOT INDICATED — say so explicitly. Most acute rhinosinusitis is viral or allergic, and COLOUR ALONE DOES NOT INDICATE BACTERIAL INFECTION.** Consider them **only for SEVERE ILLNESS, symptoms persisting BEYOND ABOUT 10 DAYS without improvement, or DOUBLE WORSENING — initial improvement then deterioration — or a suspected complication. AMOXICILLIN is first-line.**",
+    "**Deliver the differentials BY GROUP, not as a flat run of fifteen organisms: VIRAL UPPER · BACTERIAL UPPER · SERIOUS UPPER AIRWAY · LOWER TRACT · STRUCTURAL · SEXUALLY TRANSMITTED · COMPLICATIONS.** **If time is short, SACRIFICE THE DIFFERENTIAL EXAMPLES, NEVER THE SECOND DIAGNOSIS.** **MedSTAR 1300 13 12 33 · SHINE SA · Quitline 13 7848.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'I'll ask some questions to work out what's going on, then we'll make a plan together' · ★ 'can you describe what you mean by unwell — low in energy, sleepy, feverish, or is there something specific bothering you?' → 'stuffy nose and watery eyes' → ★ 'so the main problem is your nose and your eyes — let me focus there'"
+     "**Write TWO BOXES on your paper during reading time: UPPER and LOWER. Every finding goes in one of them. The upper box becomes rhinosinusitis; the lower box becomes asthma.**"
+    ],
+    [
+     "0:05",
+     "**WIPE, confirm the name, open question. Then empathy and a plan: 'I'm sorry to hear that. I'll ask you some questions to work out what's going on, and then we'll make a plan together — is that all right?'**"
+    ],
+    [
+     "0:25",
+     "**THE UNLOCKING QUESTION, WITH CATEGORIES OFFERED.** Then **RE-ANCHOR OUT LOUD to the system.** **Fifty seconds gone, and the complaint has converted.**"
     ],
     [
      "1:00",
-     "Duration 2–3 days, constant, worse · ★ 'one nostril or both — and one eye or both?' → both/both · CCVO: clear, watery, a lot, no smell"
+     "**Explore: how long · constant or coming and going · getting worse · ONE NOSTRIL OR BOTH — AND ONE EYE OR BOTH?** **Unilateral changes the differential completely — a one-sided nose means tumour, polyp or foreign body; a one-sided red eye means you are thinking about the eye itself.**"
+    ],
+    [
+     "1:20",
+     "**CCVO as four questions: COLOUR clear or green · CONSISTENCY watery or thick · VOLUME a lot or a little · ODOUR any bad smell.**"
     ],
     [
      "1:45",
-     "ENTS: fever/chills/shivers (checked — none) · ear pain/discharge/hearing · sore throat/odynophagia (scratchy) · ★ 'any pain or pressure over your face — could you show me where?' → presses both cheekbones → ★ 'over your cheekbones — that's where your maxillary sinuses sit' · PND · ★ smell · neck lumps"
+     "**Signpost the ENTS sweep. FEVER, chills or shivers. E — EAR: pain, discharge, change in hearing. N — NOSE: already covered. T — THROAT: sore throat, pain on swallowing.**"
     ],
     [
-     "2:45",
-     "★ Signpost: 'to make sure this isn't spreading anywhere it shouldn't' — 1 systemic: confusion, dizziness/faint, shaking chills · 2 orbit: eye swelling, double/blurred vision, painful eye movement · 3 intracranial: severe headache, photophobia, stiff neck, vomiting · 4 rash · 5 airway: drooling, dysphagia, voice change, noisy breathing → all no · 'what are you worried about?' → 'occasionally spreads to the tissues around the eye or towards the brain — nothing suggests that, but I check rather than assume'"
+     "2:05",
+     "**S — SINUSES, and DO NOT SKIP IT: ANY PAIN OR PRESSURE OVER YOUR FACE, COULD YOU SHOW ME WHERE · ANY SECRETIONS RUNNING DOWN THE BACK OF YOUR THROAT · ANY CHANGE OR LOSS IN YOUR SENSE OF SMELL?** Then **NECK: any lumps or bumps?** **Name the finding out loud: 'so the pain is over your cheekbones — that's where your maxillary sinuses sit.'**"
+    ],
+    [
+     "2:40",
+     "**SIGNPOST THE RED FLAGS: 'I'd now like to ask a few questions to make sure this isn't spreading anywhere it shouldn't. Some may sound unrelated, but they matter.' SYSTEMIC: confusion, muddled, dizzy or faint, shaking chills?**"
+    ],
+    [
+     "2:55",
+     "**ORBIT: swelling around your eye · double or blurred vision · IS IT PAINFUL TO MOVE YOUR EYE? INTRACRANIAL: severe headache · do bright lights hurt · stiff neck or vomiting?**"
+    ],
+    [
+     "3:15",
+     "**RASH: have you noticed any rash anywhere on your body? AIRWAY: any drooling · difficulty swallowing · change in your voice · noisy breathing?**"
+    ],
+    [
+     "3:30",
+     "**If he asks what you are worried about, answer honestly: 'sinus infections are usually straightforward, but very occasionally they spread to the tissues around the eye or towards the brain. Nothing you've told me suggests that — but it's important I check rather than assume.'**"
     ],
     [
      "3:45",
-     "★ Chest: cough (dry), SOB, wheeze (night), chest pain → ★ 'any past history of wheezing, or of asthma?' → childhood asthma, hockey, sister's Ventolin helped → ★ 'that it helped tells me a great deal — we'll get you a puffer of your own; I'd rather you weren't using someone else's prescription'"
+     "**THE CHEST: any cough, dry or bringing anything up · any shortness of breath · ANY WHEEZING or noisy breathing · any chest pain?** Then immediately **the follow-up about past asthma.**"
+    ],
+    [
+     "4:15",
+     "**Register BOTH the diagnostic clue AND the safety issue: 'that it helped tells me a great deal. We'll get you a puffer of your own — I'd rather you weren't using someone else's prescription, because it means nobody's checking the dose or how you're going on it.'**"
     ],
     [
      "4:30",
-     "Atopic package: sneezing, itchy nose, itchy eyes, eczema, own allergies (spring pollen), FHx (mum hay fever, sister asthma) · triggers ×4: pets/carpet/dust/damp; work; medications incl. OTC; smoke (partner indoors)"
+     "**ATOPIC PACKAGE: sneezing · itchy nose · itchy eyes as well as watery · past eczema · own allergies · family asthma, eczema or hay fever. TRIGGERS, four groups: HOME pets, carpets, dust, damp · WORK dust, grain, fumes · DRUGS including over-the-counter sprays · SMOKE.**"
     ],
     [
-     "5:15",
-     "Screening: travel, sick/animal contacts, night sweats, weight loss/appetite, lumps · ★ sexual health with a preamble: 'I ask everybody in this situation — it's confidential — some infections that make people feel generally unwell are passed on sexually; sexually active? unprotected sex in the last few months?' ('bit personal?' → fair, you don't have to answer; HIV, chlamydia, gonorrhoea can cause a flu-like illness)"
+     "5:10",
+     "**SCREENING QUESTIONS — use spare time HERE, not on more nasal detail: recent TRAVEL · contact with anyone unwell or with ANIMALS · NIGHT SWEATS · WEIGHT LOSS and appetite · LUMPS anywhere.**"
+    ],
+    [
+     "5:30",
+     "**SEXUAL HEALTH, WITH A PREAMBLE: 'one more that I ask everybody in this situation — it's confidential, and it's because some infections that make people feel generally unwell are passed on sexually. Are you sexually active? Any unprotected sex in the last few months?'** **HIV seroconversion is an expected differential in an undifferentiated unwell adult.**"
     ],
     [
      "6:00",
-     "★ 'Most likely acute rhinosinusitis — inflammation in the lining of your nose and in some air-filled cavities in your skull called sinuses, exactly where you pointed; allergic, viral or bacterial — most likely allergic' + four reasons · 'antibiotics?' → no, three criteria · ★ 'there's a second thing happening at the same time — an acute flare-up of your asthma; the two are connected' · adult relapse is common · ★ 'before you go I'll check RR, oxygen and a peak flow, treat with a reliever through a spacer, possibly a short course of steroid tablets; your own puffer, an action plan, spirometry once settled'"
+     "**NAME BOTH DIAGNOSES — rhinosinusitis with FOUR REASONS, then the explicit transition to the asthma flare and THE LINK between them.** Then **state you would assess and treat the exacerbation NOW, and that ANTIBIOTICS ARE NOT INDICATED, with the three criteria that would change that.**"
     ],
     [
      "7:00",
-     "Differentials by group name: viral URTI · bacterial URTI · serious upper airway (excluded and why) · LRTI · structural · STI/HIV seroconversion · complications screened — sacrifice examples, never the asthma"
+     "**The differentials, GROUPED, about sixty seconds — lead with the group name each time.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Can you describe what you mean by unwell? Do you mean low in energy, or sleepy, or feverish — or is there something specific bothering you?' / ★ 'So the main problem is your nose and your eyes. Let me focus there.'",
-    "★ 'Is it one nostril or both — and one eye or both?' / 'Clear or green? Watery or thick? A lot or a little? Any bad smell?'",
-    "★ 'Any pain or pressure over your face — could you show me where?' → 'So over your cheekbones — that's where your maxillary sinuses sit.' / ★ 'Any change or loss in your sense of smell?'",
-    "★ 'I'd like to ask a few questions to make sure this isn't spreading anywhere it shouldn't.' / 'Any swelling around your eye, double vision, or pain on moving the eye?' / 'Have you noticed any rash anywhere on your body?' / 'Any drooling, difficulty swallowing, change in your voice, or noisy breathing?'",
-    "'What are you worried about?' → 'Sinus infections are usually straightforward, but very occasionally they spread to the tissues around the eye or towards the brain. Nothing you've told me suggests that — but it's important I check rather than assume.'",
-    "★ 'Do you have any past history of wheezing, or of asthma?' / ★ 'That it helped tells me a great deal — we'll get you a puffer of your own. I'd rather you weren't using someone else's prescription, because it means nobody's checking the dose or how you're going on it.'",
-    "'One more that I ask everybody in this situation — it's confidential, and it's because some infections that make people feel generally unwell are passed on sexually. Are you sexually active? Any unprotected sex in the last few months?'",
-    "★ 'Most likely you have acute rhinosinusitis — inflammation of the lining of your nose and of some air-filled cavities in your skull called sinuses. In your case most likely allergic, for four reasons: no fever; clear watery discharge rather than thick and coloured; the whole allergy picture — sneezing, itchy nose and eyes, your own pollen allergy, hay fever in your mother and asthma in your sister; and a lot of triggers at home.'",
-    "★ 'There's a second thing happening at the same time — an acute flare-up of your asthma. They're connected: the same allergic tendency, affecting your nose and your chest at once.' / 'It's common for childhood asthma to settle and then return in adulthood, often triggered by exactly this sort of allergy flare.'",
-    "★ 'Antibiotics don't help this, even when the discharge looks coloured — I'd only consider them if you were much more unwell, if it dragged past ten days, or if you improved and then got worse again.'"
-   ],
    "pefe": [
-    "Role-player: James, 30, machinery parts salesman near Kadina; partner smokes indoors; pets, carpet throughout, dusty; spring hay fever; childhood asthma on medication, 'grew out of it', gave up hockey; mum hay fever, sister asthma; long-term relationship; no meds/PMHx/allergies. Genuinely cannot articulate 'unwell' — abstract question gets 'I don't know… just unwell. Rough.' Only offered categories or a targeted question produce 'stuffy nose and watery eyes'. Presses both cheekbones ONLY when asked to show where ('any facial pain?' → 'a bit, yes' and nothing more). Sister's Ventolin only if asked about past asthma or medications tried. If the chest is never asked: 'what about this cough, though?' at the end. Blunt sexual health question → 'that's a bit personal, isn't it?'. Asks once during red flags 'why — what are you worried about?'. No hidden agenda",
-    "No examination given. If asked what you'd assess before disposition: RR, SpO2, HR, peak flow, work of breathing, speech; salbutamol 4–12 puffs via spacer, repeat as needed; oral prednisolone if moderate–severe; reassess; spirometry with reversibility once settled; own reliever + spacer + written action plan · rhinosinusitis: saline, INCS (mometasone 2 sprays each nostril daily), cetirizine 10 mg, analgesia, topical decongestant max 3–5 days",
-    "Variant 1 — puffy left eye, painful lateral gaze, diplopia: EMERGENCY — orbital (post-septal) cellulitis until imaging proves otherwise: ABC, obs incl. temperature; visual acuity, pupils/RAPD, eye movements, proptosis; IV access, blood cultures, FBE, CRP; empirical IV antibiotics without waiting for imaging; urgent CT sinuses/orbits, same-day ENT + ophthalmology; from Kadina ★ MedSTAR 1300 13 12 33 — start treatment locally while retrieval is arranged. 'Could it just be periorbital?' → painful eye movement, diplopia and proptosis = post-septal; changes oral → IV, mandates imaging and specialist review",
-    "Variant 2 — purple spots on the legs + shocking headache: non-blanching purpura in an unwell adult = meningococcal disease — immediate IV/IM benzylpenicillin or ceftriaxone before transfer; cultures only if no delay; IV fluids; MedSTAR; notify public health, contact prophylaxis · Variant 3 — muffled, leaning forward, drooling: epiglottitis/quinsy — no throat examination or instrumentation, upright, calm, oxygen, ENT + anaesthetics for airway in a controlled setting, IV antibiotics + steroids, retrieval called early",
-    "Variant 4 — day 12, improved around day 6 then worse: thick green discharge, severe right cheek pain, fever two nights → double worsening + fever + severe unilateral pain + >10 days = bacterial rhinosinusitis → amoxicillin, saline, analgesia, review 3 days · Examiner: 'allergic with no fever? plenty of colds are afebrile' → can't exclude viral (leading alternative); favour allergic on atopy, itch/sneeze, clear discharge, triggers — and a virus commonly triggers both flares · 'image the sinuses?' → no; clinical diagnosis; image urgently only for orbital/intracranial suspicion · 'asthma secure on a borrowed inhaler?' → supportive not diagnostic — spirometry once settled; treat the exacerbation now on clinical grounds · 'why sexual history for a blocked nose?' → the complaint was undifferentiated malaise; HIV seroconversion, chlamydial/gonococcal pharyngitis and conjunctivitis",
-    "SA: Kadina GP; MedSTAR 1300 13 12 33 for orbital/meningococcal/airway; SHINE SA; Quitline 13 7848; PATS; TIS 131 450"
+    "**No examination is given in this station — do not ask for one. But SAY WHAT YOU WOULD ASSESS for the asthma: speech in full sentences, respiratory rate, heart rate, saturations, accessory muscle use, PEAK EXPIRATORY FLOW against predicted or best.**",
+    "**Acute rhinosinusitis is a CLINICAL diagnosis. NO imaging, NO swabs, NO bloods are needed in an uncomplicated case.**",
+    "**CT PARANASAL SINUSES only for red flags, a suspected complication, or failure to respond — NOT for uncomplicated disease.**",
+    "**SPIROMETRY with bronchodilator reversibility once the acute episode settles. ALLERGEN-SPECIFIC IgE or skin prick testing if the trigger is unclear or immunotherapy is considered. HIV and STI testing if the sexual health screen was positive — SHINE SA.**",
+    "**The anatomy behind the red flags: the ETHMOID sinuses are separated from the ORBIT by the paper-thin LAMINA PAPYRACEA, which is the usual route to ORBITAL CELLULITIS. The FRONTAL and SPHENOID sinuses sit against the cranial fossae, giving MENINGITIS, SUBDURAL EMPYEMA, CAVERNOUS SINUS THROMBOSIS and POTT'S PUFFY TUMOUR.**",
+    "**If ANY red-flag group is positive the station changes character entirely — it is no longer diagnosis-and-differentials but an EMERGENCY. Assess airway and haemodynamics, oxygen, IV access, BLOOD CULTURES, EMPIRICAL IV ANTIBIOTICS, urgent imaging and ENT or ophthalmology. START TREATMENT LOCALLY WHILE RETRIEVAL IS ARRANGED — do not wait for transfer.**",
+    "**Rhinosinusitis treatment: saline irrigation, simple analgesia, fluids and rest · MOMETASONE 50 microg, 2 sprays each nostril once daily · CETIRIZINE 10 mg daily · allergen minimisation and a smoke-free home · TOPICAL DECONGESTANTS NO MORE THAN 3–5 DAYS or you create rhinitis medicamentosa.**"
    ],
-   "fails": [
-    "Never converting 'unwell' into a system — a top-to-toe review still running at four minutes ★",
-    "Omitting the five red-flag groups — or asking two and calling it a screen ★",
-    "Naming only one diagnosis ('this is hay fever') — the single commonest fail ★",
-    "'He's also having an asthma flare' — named, then nothing done about it",
-    "'There's no fever, so it's definitely allergic' — defending allergic on absence of fever alone; 'I'd start him on amoxicillin'",
-    "Missing the S — never asking him to point; omitting loss of smell; forgetting to ask laterality of the eyes; 'rhinitis' or 'sinusitis' and flip-flopping instead of rhinosinusitis",
-    "Filing the wheeze under 'the cold'; accepting 'I grew out of it'; treating the borrowed inhaler as a clue only; skipping the sexual health question or asking it with no preamble; a flat run of fifteen organisms with no group names"
-   ],
-   "numbers": [
-    "Rhinosinusitis = 2 or more of 4: blockage · discharge · facial pain/pressure · reduced smell · acute <12 weeks, chronic ≥12 · allergic, viral or bacterial · this stem 2–3 days",
-    "ENTS = ear · nose · throat · sinuses + fever/chills + neck lumps · 5 red-flag groups: systemic/sepsis · orbit · intracranial · rash · airway",
-    "Antibiotics only if severe illness, >10 days without improvement, or double worsening — first-line amoxicillin · topical decongestant max 3–5 days · mometasone 2 sprays each nostril daily · cetirizine 10 mg",
-    "Asthma flare: salbutamol 4–12 puffs via spacer, repeat as needed · oral prednisolone if moderate–severe · reassess before disposition · spirometry with reversibility once settled; own reliever, spacer, written action plan",
-    "MedSTAR 1300 13 12 33 · SHINE SA · Quitline 13 7848 · PATS"
+   "ddx": [
+    [
+     "**Acute rhinosinusitis, allergic** — first diagnosis",
+     "**Bilateral clear watery profuse discharge, NO fever, MAXILLARY facial pain, full atopic package, heavy trigger exposure**",
+     "**Two of four cardinal symptoms; ask him to POINT**",
+     "**Clinical diagnosis. Saline, intranasal corticosteroid, antihistamine. NO antibiotics**"
+    ],
+    [
+     "**Acute exacerbation of asthma** — second diagnosis",
+     "**Cough, WHEEZE, breathlessness worse at night; CHILDHOOD ASTHMA with exercise symptoms; RELIEF FROM BORROWED SALBUTAMOL**",
+     "**'Any past history of wheezing or asthma?'**",
+     "**ASSESS AND TREAT NOW — salbutamol via spacer, prednisolone if moderate–severe. Spirometry once settled; own reliever and ACTION PLAN**"
+    ],
+    [
+     "**Viral upper respiratory infection**",
+     "**Commonest cause overall, and ADULTS ARE OFTEN AFEBRILE**",
+     "Duration, contacts, systemic symptoms",
+     "**Remains the leading ALTERNATIVE — clinical, self-limiting. Rhinovirus, influenza, COVID-19, EBV**"
+    ],
+    [
+     "**Bacterial rhinosinusitis**",
+     "**DOUBLE WORSENING — improvement then deterioration; beyond 10 DAYS; FEVER; THICK discharge; severe UNILATERAL cheek pain**",
+     "The trajectory of the illness, not the colour alone",
+     "**AMOXICILLIN first-line when those criteria are met** — not this patient"
+    ],
+    [
+     "Bacterial tonsillitis or pharyngitis",
+     "Group A streptococcus; in adults also **chlamydial and gonococcal pharyngitis**",
+     "Sore throat, exudate, tender nodes, fever",
+     "Clinical; swab in high-risk groups"
+    ],
+    [
+     "**Orbital cellulitis**",
+     "**PERIORBITAL SWELLING, PROPTOSIS, PAINFUL OR RESTRICTED EYE MOVEMENT, DIPLOPIA, reduced acuity**",
+     "**Swelling around the eye, double vision, pain on eye movement**",
+     "**IV access, blood cultures, EMPIRICAL IV ANTIBIOTICS WITHOUT WAITING FOR IMAGING, urgent CT sinuses and orbits, ENT and ophthalmology. Post-septal, not pre-septal** — EMERGENCY"
+    ],
+    [
+     "**Meningitis · intracranial abscess · meningococcaemia**",
+     "**Severe headache, PHOTOPHOBIA, NECK STIFFNESS, vomiting; NON-BLANCHING PURPURIC RASH**",
+     "**'Does the rash fade when you press on it?'**",
+     "**IMMEDIATE parenteral benzylpenicillin or ceftriaxone BEFORE transfer — do not delay for imaging or LP. Notify public health; contact tracing** — EMERGENCY"
+    ],
+    [
+     "**Epiglottitis · quinsy**",
+     "**DROOLING, DYSPHAGIA, MUFFLED VOICE, TRISMUS, noisy breathing, leaning forward**",
+     "The airway red-flag group",
+     "**DO NOT EXAMINE OR INSTRUMENT THE THROAT. Upright, oxygen, urgent ENT and anaesthetics** — EMERGENCY"
+    ],
+    [
+     "Lower tract infection · structural causes",
+     "Pneumonia, pertussis, tuberculosis; or **NASAL POLYPS, deviated septum, foreign body if UNILATERAL**",
+     "Cough character, sputum, contacts; unilateral blockage and anosmia",
+     "Chest imaging and sputum as indicated; nasendoscopy for unilateral disease"
+    ],
+    [
+     "**HIV seroconversion illness**",
+     "**Flu-like illness with SORE THROAT, FEVER, MALAISE and LYMPHADENOPATHY in an undifferentiated unwell adult**",
+     "**One preambled sexual health screening question**",
+     "**HIV serology with consent; STI screening via the practice or SHINE SA**"
+    ]
    ]
   },
   "source": "Acute_Rhinosinusitis_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 30 — the blank 'unwell' stem → allergic rhinosinusitis + asthma flare)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Acute_Rhinosinusitis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never converting 'unwell' — 'what do you mean by unwell?' with no categories gets 'just… rough'; offer them: 'low in energy, sleepy, feverish — or something specific?' → 'a stuffy nose and watery eyes'; then re-anchor out loud and stay in that system, not a top-to-toe review (★)",
-   "FAIL — Naming only one diagnosis — the single commonest reason candidates fail; 'this is hay fever' fails; acute rhinosinusitis AND an acute asthma flare, explicitly linked: 'the same allergic tendency affecting your nose and your chest at once' (★)",
-   "FAIL — Missing the S — ask ear, nose, throat AND sinuses: 'any pain or pressure over your face — could you show me where?' (he presses both cheekbones only to that question) → 'that's where your maxillary sinuses sit'; and 'any change or loss in your sense of smell?' — the fourth cardinal symptom and the most forgotten question",
-   "FAIL — Two of the five red-flag groups called a screen — signpost 'to make sure this isn't spreading anywhere it shouldn't', then all five: systemic (confusion, dizziness, rigors), orbit (swelling, diplopia, pain on eye movement), intracranial (severe headache, photophobia, stiff neck, vomiting), rash, airway (drooling, dysphagia, voice, stridor) (★)",
-   "FAIL — Filing the wheeze under 'part of the cold' — 'any past history of wheezing, or of asthma?'; don't accept 'I grew out of it'; the borrowed Ventolin is both the clue and a safety issue ('we'll get you a puffer of your own'); and 'he's also having an asthma flare' named then nothing done fails — assess and treat it now",
-   "FAIL — 'I'd start him on amoxicillin', or 'no fever so definitely allergic' — antibiotics only if much more unwell, past ten days, or double worsening; four reasons for allergic (no fever, clear watery discharge, the atopic picture, the triggers); use 'rhinosinusitis' and don't flip-flop; sexual health with a preamble in an undifferentiated unwell adult; differentials by group"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-84",
@@ -55742,7 +55978,6 @@ const EMBEDDED_CARDS = [
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "Three tasks in eight minutes — history, diagnosis and risk — in a man whose wife interrupted him this morning. Explore the attempt first and fully, and ask the question most candidates assume the answer to: did you swallow any before she stopped you — any ingestion means the emergency department now. The guilt is tested, not labelled: the coroner found you weren't at fault, how do you make sense of that. And the risk word is high, not moderate — he had a plan, the means, a time and a note.",
   "stem": [
    "General practice. Ben, 32, has been brought in by his wife, who found him taking some tablets. He is a nurse and was recently involved in the care of a patient with meningococcaemia who later died. The coroner has cleared him of any fault.",
    "Tasks: take a history — about 6 minutes — explain the diagnosis and differentials, then discuss the risk of self-harm. Version B: a veterinarian whose patient died, cleared by an independent review. Variants: he did swallow some; he refuses to go; and his wife asks what happens next."
@@ -55752,106 +55987,130 @@ const EMBEDDED_CARDS = [
    "Explain the diagnosis and the differential diagnoses to the patient",
    "Discuss the risk of self-harm with the patient"
   ],
-  "time": "Confidentiality, the open question, and then the attempt · not the mood checklist: your wife found you with some tablets this morning, can you tell me more, and what were you planning · then the ingestion question: did you swallow any before she stopped you, what were they, and how many · then means, timing, note, previous attempts and current intent: where did you get them, where are they now, had you picked a time, did you leave a note or put things in order, have you ever tried before, and how do you feel now that you were stopped · then mood, sleep with its type, appetite and weight · then hallucinations, followed up rather than noted: what does it say, whose voice, does it tell you to do anything · then the guilt test · then delusions, the remaining criteria and the mania screen · then context, insight, judgement and background: wife, work, alcohol and drugs, headaches and head injury, do you think you need help, the fire question, past mental health and family history · then name it with reasons, five differentials, and the risk in four steps ending in hospital today.",
   "back": {
-   "dx": "MAJOR DEPRESSIVE DISORDER, SEVERE, WITH MOOD-CONGRUENT PSYCHOTIC FEATURES — after an interrupted overdose. Name it with its reasons, because naming without reasons is the trap: 'Ben, I think you have major depressive disorder with psychotic features. It's a mood illness — persistent low mood and other symptoms — where some people also hear voices or have beliefs that feel completely real. I say this because your mood is low, you can't sleep or eat, you're exhausted, can't concentrate, have lost interest and want to die. You're also hearing a voice, and the guilt you feel is unusually strong — it stays even after the coroner cleared you.' The differentials: 'I also thought about bipolar disorder, but you've never been high; schizoaffective disorder or schizophrenia, but the depression is what dominates; PTSD after a traumatic event; and physical causes like thyroid problems, which we'll test for.' then the risk, in four steps, and the word is high: 'I'm very worried about your safety. You had a plan, the tablets, a time, and you wrote a note — you were about to do it. That puts you at high risk right now.' Saying 'Moderate risk' is the named trap. Then the factors and the disposition: 'The voice, the guilt, not sleeping, being off work and depression in the family add to that risk. Your wife's support really helps — but it isn't enough to keep you safe today. I'd like you to go to hospital now to be safe and start treatment.' → 'Will my wife come?' → 'Yes, she can come with you. I'll stay with you until the ambulance arrives, and I'll call the mental health team now.' Letting him leave is the fail. The variants. Version B, the vet: 'The practice review found nothing you did caused the cat's death. How do you make sense of that?' → 'I should have seen it. I killed her.' and then the means question that is specific to him: 'Do you have access to drugs at work that could be used to end your life?' → 'We keep the euthanasia drugs' → add that to means restriction. He did swallow some: 'Thank you for telling me. Even if you feel well now, some tablets cause serious harm hours later, so you need to go to the emergency department by ambulance for blood tests and treatment. I'll stay with you.' He refuses to go: 'I understand you don't want to go. Right now I'm worried your illness is stopping you from seeing how unsafe you are. Because you have a mental illness, you are at serious risk, and there is no safer way to treat you, the law lets me arrange a short admission for assessment. A psychiatrist will review you within a day, and you have the right to a second opinion and to appeal.' and his wife, with his consent: 'Ben is very unwell and needs to be in hospital today. Please keep all medicines at home locked away or removed. You did exactly the right thing this morning — and please look after yourself too.'",
+   "dx": [
+    "**MAJOR DEPRESSIVE DISORDER, SEVERE, WITH MOOD-CONGRUENT PSYCHOTIC FEATURES — an INTERRUPTED overdose.** Ben, 32, a nurse; a patient with meningococcal sepsis died six weeks ago and **the coroner cleared him of fault. He believes it was entirely his fault and nothing will change his mind.**",
+    "**Explore the attempt FIRST and completely, before any mood checklist: what were you planning · DID YOU SWALLOW ANY BEFORE SHE STOPPED YOU · what were they and how many · where did you get them and where are they now · had you picked a time · DID YOU LEAVE A NOTE · ever tried before · HOW DO YOU FEEL NOW THAT YOU WERE STOPPED?**",
+    "**Never assume he swallowed nothing. ANY ingestion → emergency department now, because some tablets cause serious harm hours later even when he feels well.**",
+    "**THE GUILT TEST IS THE DIAGNOSTIC MOVE: 'do you feel guilty about anything?' → 'the patient that died, it was all my fault.' Then TEST IT: 'THE CORONER FOUND YOU WEREN'T AT FAULT. HOW DO YOU MAKE SENSE OF THAT?' → 'I don't care what the coroner says.'** **That unshakeability is what makes it a DELUSION rather than ordinary guilt — and calling it a delusion without testing it is a fail.**",
+    "**Characterise the voice: whose voice · what does it say · DOES IT TELL YOU TO DO ANYTHING.** A man's voice calling him murderer, several times a day, **mood-congruent** and without commands.",
+    "**Count the criteria — he has eight of nine: low mood, anhedonia, early waking at three, appetite loss with weight loss, fatigue, poor concentration, worthlessness and guilt, and suicidal ideation with a plan.**",
+    "**Always screen mania before naming a unipolar depression: 'have you ever felt the opposite — extremely high and full of energy?'** → never.",
+    "**Name it with reasons: a mood illness where the low mood is persistent and severe, and some people ALSO hear voices or hold beliefs that feel completely real — then list his own findings back, including the unshakeable guilt.** **Differentials: bipolar (never high), schizoaffective or schizophrenia (the depression dominates), PTSD after a traumatic event, and organic causes such as thyroid disease.**",
+    "**THE RISK STATEMENT, in order and with the word HIGH: 'you had a plan, the tablets, a time, and you wrote a note — you were about to do it. That puts you at HIGH RISK right now.' Then the risk factors — the voice, the guilt, not sleeping, off work, family history. Then protective factors honestly: 'your wife's support really helps, but IT ISN'T ENOUGH TO KEEP YOU SAFE TODAY.'**",
+    "**Disposition: hospital TODAY. 'I'll stay with you until the ambulance arrives, and I'll call the mental health team now.' His wife can come.** **With his consent, tell her to remove or lock away all medicines at home, and that she did exactly the right thing.**"
+   ],
    "plan": [
     [
      "0:00",
-     "CONFIDENTIALITY, THE OPEN QUESTION, THEN STRAIGHT TO THE ATTEMPT: 'what we discuss stays between us unless I'm worried about your safety. HOW CAN I HELP TODAY?' → 'I don't want to live anymore.' → 'I'M REALLY SORRY YOU'RE FEELING LIKE THAT. YOU'RE SAFE HERE. YOUR WIFE FOUND YOU WITH SOME TABLETS THIS MORNING — CAN YOU TELL ME ABOUT THAT? WHAT WERE YOU PLANNING?' (One question and then 'how is your mood?' is the trap.)"
+     "**Confidentiality with its limit, open question.** → 'I don't want to live anymore.' **'I'm really sorry you're feeling like that. You're safe here.'**"
     ],
     [
-     "0:45",
-     "The ingestion question, which most candidates assume the answer to: 'Did you swallow any before she stopped you? What were they, and how many?' (Any ingestion means the emergency department now.)"
+     "0:30",
+     "**THE ATTEMPT: your wife found you with some tablets — tell me about that · what were you planning?**"
     ],
     [
-     "1:10",
-     "Means, timing, note, previous attempts and current intent: 'Where did you get them? Where are they now? Had you picked a time? Did you leave a note, or put things in order? Ever tried before? How do you feel now that you were stopped?' → the note, which is one of the four things you will quote back."
+     "1:00",
+     "**INGESTION: 'did you swallow any before she stopped you?' · what were they · how many · where are they now.**"
+    ],
+    [
+     "1:30",
+     "**Means, timing, note, history, intent: where did you get them · had you picked a time · DID YOU LEAVE A NOTE · ever tried before · how do you feel now that you were stopped.**"
     ],
     [
      "2:00",
-     "MOOD, SLEEP WITH ITS TYPE, APPETITE AND WEIGHT: 'how has your mood been? Sleep — GETTING OFF, OR WAKING EARLY? Appetite? ANY WEIGHT LOSS?' → waking at three, clothes loose."
+     "**Mood, sleep with the type, appetite and weight — following up every positive.**"
     ],
     [
-     "2:45",
-     "Hallucinations, followed up rather than noted: 'Some routine questions. Do you hear, see or feel things other people don't? What does it say? Whose voice? Does it tell you to do anything?' → a man's voice calling him murderer."
+     "2:40",
+     "**Hallucinations, characterised: whose voice · what does it say · does it tell you to do anything.**"
     ],
     [
-     "3:20",
-     "The guilt test — and this is what makes it a delusion rather than a feeling: 'Do you feel guilty about anything?' → 'The patient that died — it was all my fault.' → 'The coroner found you weren't at fault. How do you make sense of that?' → 'I don't care what the coroner says.'"
+     "3:10",
+     "**THE GUILT TEST against the coroner's finding.** Then the remaining delusion screen — strange ideas, control, special powers."
     ],
     [
      "3:50",
-     "DELUSIONS, THE REMAINING CRITERIA AND MANIA: strange ideas, anyone harming or controlling you, special powers; concentration, energy, enjoyment; AND 'HAVE YOU EVER FELT EXTREMELY HIGH OR ENERGETIC?'"
+     "**The remaining criteria — concentration, energy, interest — then the MANIA screen.**"
     ],
     [
      "4:40",
-     "CONTEXT, INSIGHT, JUDGEMENT AND BACKGROUND: wife, work, alcohol and drugs, headaches and head injury, 'DO YOU THINK YOU NEED HELP?', the fire question, past mental health problems, and family history. → at about five minutes, 'I'M JUST TIRED OF THIS TALK.'"
+     "**Context, insight, background: wife · work · alcohol and drugs · headaches and head injury · do you think you need help · the fire question · past psychiatric history · family history.**"
     ],
     [
      "6:00",
-     "Name it with its reasons, then the five differentials (see dx) → 'So I'm going mad.'"
+     "**Name the diagnosis with reasons, then the differentials.**"
     ],
     [
      "7:00",
-     "THE RISK IN FOUR STEPS, ENDING IN HOSPITAL TODAY (see dx) — the plan, tablets, time and note quoted back as HIGH RISK; the voice, guilt, sleep, leave and family history as added factors; the wife's support named but NOT ENOUGH; then transport, the wife coming, and staying with him until the ambulance arrives."
+     "**THE RISK TASK: high risk and why · risk factors · protective factors, honestly · hospital today · 'I'll stay with you until the ambulance arrives.'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's station clock, Version A",
-   "ask": [
-    "'I'm really sorry you're feeling like that. You're safe here.' / 'Your wife found you with some tablets. Can you tell me about that?' / 'Did you swallow any before she stopped you?' / 'Did you leave a note, or put things in order?' / 'How do you feel now that you were stopped?'",
-    "'Whose voice is it? Does it tell you to do anything?' / 'The coroner found you weren't at fault. How do you make sense of that?' / 'Have you ever felt the opposite — extremely high and full of energy?'",
-    "'A mood illness where some people also hear voices or have beliefs that feel completely real.' / 'That puts you at high risk right now.' / 'Your wife's support helps — but it isn't enough to keep you safe today.' / 'I'd like you to go to hospital now.' / 'I'll stay with you until the ambulance arrives.'",
-    "The variants: version B, the vet → 'The practice review found nothing you did caused the cat's death. How do you make sense of that?' and then 'Do you have access to drugs at work that could be used to end your life?' — the euthanasia drugs go into means restriction. / he did swallow some → 'Even if you feel well now, some tablets cause serious harm hours later, so you need to go to the emergency department by ambulance for blood tests and treatment. I'll stay with you.'",
-    "He refuses to go → 'Right now I'm worried your illness is stopping you from seeing how unsafe you are. Because you have a mental illness, you are at serious risk, and there is no safer way to treat you, the law lets me arrange a short admission for assessment. A psychiatrist will review you within a day, and you have the right to a second opinion and to appeal.' / his wife, with his consent → 'Please keep all medicines at home locked away or removed. You did exactly the right thing this morning — and please look after yourself too.'"
-   ],
    "pefe": [
-    "Role-player: Ben, 32, registered nurse. Married, lives with his wife, who is kind and supportive. No children. Six weeks ago he cared for a young patient with meningococcal sepsis who died. The coroner found no fault. He believes it was entirely his fault and nothing will change his mind. Since then: low mood, waking at 3 a.m., no appetite, clothes loose, exhausted, can't focus, lost interest in everything. On leave from work. A man's voice calls him 'Murderer', several times a day.",
-    "THIS MORNING he planned to take his sleeping tablets. HE WROTE HIS WIFE A NOTE. SHE FOUND IT AND TOOK THE TABLETS BEFORE HE SWALLOWED ANY. NEVER TRIED BEFORE. No alcohol, no drugs, no past mental illness. HIS MUM HAD DEPRESSION. NEVER FELT HIGH.",
-    "How to play it: slow, quiet, long pauses, eyes down. Tearful when the patient's death comes up. Open with 'I don't want to live anymore.' Only mention the note if asked what you did or whether you left anything. When the coroner is raised: 'I don't care what the coroner says. It was my fault.' At about five minutes: 'I'm just tired of this talk.' if told you need hospital: 'Will my wife come?' — then accept if the doctor is kind. Mark them on: explored the attempt first and fully; asked if you swallowed anything; the note and previous attempts; mood, sleep type, appetite and weight; the voice — content and commands; tested the guilt with the coroner; concentration, energy, interest and mania; wife, work, drugs and family history; named MDD with psychotic features with reasons; sensible differentials; said high risk and why; and hospital today, not home.",
-    "The opening — 'I DON'T WANT TO LIVE ANYMORE' — slumped, eyes down, speaking slowly with long pauses. ONE QUESTION THEN 'HOW IS YOUR MOOD?' IS THE TRAP",
-    "The attempt — 'I wanted to end it today' — 'Take my pills and end the misery'",
-    "The ingestion question — 'No. She took them off me' — but assuming the answer is the trap, and any ingestion means the emergency department now",
-    "Means, timing and the note — Sleeping tablets from home, his wife has them — this morning — 'I left a note for my wife. She found it' — never tried before — and 'I don't know. I just want it to stop'",
-    "Why the note matters — Plan, means, a chosen time and a note are the four things you quote back when you say high risk — and the note comes only if you ask",
-    "The depression criteria — Sad — 'I wake at three and that's it' — not hungry — 'My clothes are loose' — can't focus — always tired — nothing interests him. Eight of nine",
-    "The voice — 'THERE'S A VOICE CALLING ME MURDERER' — A MAN'S VOICE, SEVERAL TIMES A DAY, NO COMMANDS. Not following up a positive answer is the named trap",
-    "The guilt test — 'The patient that died — it was all my fault' → 'The coroner found you weren't at fault. How do you make sense of that?' → 'I don't care what the coroner says. It was my fault'",
-    "Why you test it — Calling it a delusion without testing it is the trap — the unshakeability is what makes it one",
-    "The rest — NO other delusions — NEVER FELT HIGH — WIFE LOVELY AND VERY SUPPORTIVE — ON LEAVE SINCE IT HAPPENED — no alcohol or drugs — MUM HAD DEPRESSION — and to the fire question, 'RUN AWAY'",
-    "What he says at five minutes — 'I'm just tired of this talk'",
-    "What he says to hospital — 'I DON'T WANT TO GO' / 'WILL MY WIFE COME?' — and he accepts if the doctor is kind. LETTING HIM LEAVE IS THE FAIL"
+    "**If he swallowed anything: emergency department by ambulance for bloods and treatment — a paracetamol level at 4 hours or later, and treat before the result if more than 8 hours have passed.**",
+    "**Investigations: FBE, EUC, LFT, TSH, glucose, paracetamol and salicylate levels, ECG, urine drug screen.**",
+    "**Thresholds: MDD 5 of 9 over ≥2 weeks — Ben has 8 of 9. Psychotic features here are MOOD-CONGRUENT (guilt, worthlessness, deserved punishment).** VERIFY.",
+    "**Treatment: an antidepressant PLUS an antipsychotic, or ECT where a rapid response is needed. Inpatient care while the risk is this high.**",
+    "**MEANS RESTRICTION, with consent: all medicines at home removed or locked. In the VETERINARIAN version, ask specifically about ACCESS TO DRUGS AT WORK — 'we keep the euthanasia drugs' — and add it to the means restriction.**",
+    "**If he refuses admission: 'I'm worried your illness is stopping you from seeing how unsafe you are. Because you have a mental illness, you are at serious risk, and there is no safer way to treat you, the law lets me arrange a short admission for assessment. A psychiatrist will review it within a day, and you have the right to a second opinion and to appeal.'**",
+    "**Numbers: SA mental health triage 13 14 65 · Lifeline 13 11 14 · Suicide Call Back Service 1300 659 467 · Nurse and Midwife Support 1800 667 877.** VERIFY."
    ],
-   "fails": [
-    "★ Assuming he swallowed nothing instead of asking — any ingestion means the emergency department now",
-    "★ Saying 'moderate risk' when he had a plan, the means, a chosen time and a note",
-    "Calling the guilt a delusion without testing it against the coroner's finding",
-    "Letting him go home — and if he refuses and the criteria are met, the Mental Health Act applies",
-    "One question then a mood checklist, so the attempt is never explored; not following up the voice for content and commands; naming the diagnosis without giving the reasons; and skipping the mania screen in an obviously depressed man"
-   ],
-   "numbers": [
-    "8 of 9 MDD criteria · minimum duration 2 weeks · the four things that make it high risk: a plan, the means, a chosen time and a note · paracetamol level at 4 hours if anything was swallowed",
-    "SA mental health triage 13 14 65 · Lifeline 13 11 14 · Suicide Call Back Service 1300 659 467 · Nurse and Midwife Support 1800 667 877 VERIFY · A LEVEL 1 ORDER IS REVIEWED BY A PSYCHIATRIST WITHIN 24 HOURS"
+   "ddx": [
+    [
+     "**MDD, severe, with psychotic features** — the answer",
+     "**Eight of nine criteria over six weeks; a mood-congruent voice calling him murderer; UNSHAKEABLE guilt surviving the coroner's finding; an interrupted overdose with a note**",
+     "**The guilt test against the coroner; the voice's content and commands**",
+     "**Hospital TODAY; antidepressant plus antipsychotic, or ECT; means restriction**"
+    ],
+    [
+     "**Bipolar depression**",
+     "**Any past episode of elevated mood or reduced need for sleep**",
+     "**The mania screen — asked before naming unipolar depression**",
+     "**Never high. Missing it risks driving a bipolar illness with an antidepressant**"
+    ],
+    [
+     "Schizoaffective disorder or schizophrenia",
+     "Psychosis prominent and persisting outside mood episodes",
+     "Whether the psychosis predates or outlasts the depression",
+     "**The depression dominates and the psychosis is mood-congruent**"
+    ],
+    [
+     "**Post-traumatic stress disorder**",
+     "**A traumatic death witnessed at work; flashbacks, nightmares, avoidance**",
+     "**Re-experiencing and avoidance, asked directly**",
+     "**Considered — the picture here is depressive, not re-experiencing**"
+    ],
+    [
+     "**Adjustment disorder / normal grief-and-guilt**",
+     "**A clear stressor with an out-of-proportion reaction, but NOT a fixed belief**",
+     "**The coroner test — ordinary guilt yields to evidence**",
+     "**Excluded: his belief does not move**"
+    ],
+    [
+     "Organic cause",
+     "Thyroid disease, head injury, substances",
+     "Weather tolerance, head injury, alcohol and drugs",
+     "**TSH and baseline bloods**"
+    ]
    ]
   },
   "source": "MDD_Psychotic_Features_2_Case_Tasks_Script_Notability.pdf (Ben, 32, a nurse brought in by his wife after she interrupted him taking tablets following a patient death he was cleared of — major depressive disorder with mood-congruent psychotic features; the attempt explored first and fully, the ingestion question asked rather than assumed, means, timing, note and current intent taken in order, the voice followed up for content and commands, the guilt tested against the coroner's finding rather than labelled, and a risk statement that says high and ends in hospital today; the veterinarian, the swallowed dose, the refusal and the wife's questions folded in)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › MDD_Psychotic_Features_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — One question then a mood checklist, so the attempt is never explored — it comes FIRST and fully: what he was planning, where the tablets came from, where they are now, whether he had chosen a time, whether he left a note or put things in order, previous attempts, and how he feels now that he was stopped",
-   "FAIL — Assuming he swallowed nothing instead of asking — 'did you swallow any before she stopped you?'. Any ingestion means the emergency department NOW, by ambulance, for bloods and treatment, even if he feels well, because some tablets cause serious harm hours later",
-   "FAIL — Not following up the voice for content and commands — whose voice, what does it say, does it tell him to do anything. A man's voice calling him murderer is mood-congruent psychosis, and a positive answer that is never characterised scores nothing",
-   "FAIL — Calling the guilt a delusion without testing it against the coroner's finding — 'the coroner found you weren't at fault; how do you make sense of that?'. He says he doesn't care what the coroner says, and THAT is what makes it delusional. Screen for mania too, because it decides unipolar versus bipolar",
-   "FAIL — Naming the diagnosis without reasons — major depressive disorder with psychotic features, a mood illness where some people also hear voices or hold beliefs that feel completely real; then count his: low mood, no sleep, no appetite with weight loss, exhaustion, poor concentration, lost interest, wanting to die, the voice and the fixed guilt. Differentials: bipolar (never high), schizoaffective or schizophrenia (the depression dominates), PTSD, and thyroid",
-   "FAIL — Saying 'moderate risk' when he had a plan, the means, a chosen time and a note — say HIGH risk and why, add the factors (the voice, the guilt, the insomnia, being off work, family history), name the wife's support as protective but not enough to keep him safe today, and do not let him go home. If he refuses, the Mental Health Act applies with psychiatrist review within a day"
-  ]
+   "FAIL — Not asking whether he swallowed any before she stopped him.",
+   "FAIL — Calling the guilt a delusion without TESTING it against the coroner's finding.",
+   "FAIL — Saying 'moderate risk'. He had plan, means, time and a note — this is HIGH risk.",
+   "FAIL — Letting him go home. If he refuses and criteria are met, the Mental Health Act applies.",
+   "ASK — Did you leave a note, or put things in order? Have you ever tried before?",
+   "SAY — Your wife's support helps, but it isn't enough to keep you safe today."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-26",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 300,
-  "setting": "Pure counselling — the diagnosis is given in the stem, and the task is to explain it and manage it. She came for the baby's six-week check and has a plan to smother him. Admission today, led by safety — offering outpatient review is the trap. The sentence she is waiting for is 'This doesn't mean we're separating you', because her first question is whether you are taking her baby. And the mental health act is raised only after she has refused — leading with it makes her withdraw.",
   "stem": [
    "General practice. Jane, 28, has come for her son's six-week check. His vaccinations and examination are normal. She seems depressed: low mood, poor sleep for two weeks, poor appetite and 3 kg weight loss in two weeks. She hears voices telling her she is a horrible mother and feels guilty about being a bad mother. Her husband is supportive. She has had thoughts of killing her baby by pressing a pillow on his face on Saturday night. Insight is poor. Her husband is waiting outside with the baby.",
    "The diagnosis is already made: postpartum depression with psychotic features. Tasks: explain the condition to the patient, then explain the immediate and long-term management. Variants: she stands up to leave with the pram; her husband asks what is wrong with her; 'Will I get this again?'; and she is alone with two children."
@@ -55860,102 +56119,128 @@ const EMBEDDED_CARDS = [
    "Explain the condition to the patient",
    "Explain the immediate and the long-term management"
   ],
-  "time": "Open with the baby's check and how she is feeling, then empathy, then confidentiality with its safety limit · then ask what she has understood so far · then name it in plain words, say what it is, why it happens, and that it is not her fault · then the two parts: depression, and psychotic features defined as losing touch with reality · then link it to her own symptoms and reassure her, because the guilt is the delusion · then ask about harm to herself as well · then the concern and the admission, led by safety and offered as a mother and baby unit · then the baby: not separation, husband for now, supervised time together every day · then treatment: a psychiatrist, medicines or ECT, and the breastfeeding answer · then psychology, a family meeting, discharge follow-up, PANDA and future pregnancy planning · then, only if she refuses, the mental health act · then a safety-net and a teach-back.",
   "back": {
-   "dx": "POSTPARTUM DEPRESSION WITH PSYCHOTIC FEATURES, WITH RISK OF HARM TO THE BABY — and the diagnosis is given, so the station is the explanation and the plan. Name it in plain words, say why, and remove the blame: 'You have a condition called postpartum depression with psychotic features. It's a serious but treatable mental health condition that affects some mothers after birth. It happens because of the big changes your body and mind go through, and the exhaustion of caring for a newborn. It is not your fault.' Never say 'Baby blues'. Then the two parts: 'One part is depression — feeling low, not sleeping or eating, and sometimes thoughts of harming yourself or the baby. The other part is psychotic features — losing touch with reality, hearing things that aren't there, or strong beliefs that aren't true. Does that make sense?' then her own symptoms, and the reassurance that is a separate mark because the guilt is the delusion: 'You've told me your mood is low, you can't sleep or eat and you've lost weight. You hear a voice saying you're a horrible mother, you feel very guilty, and you've had thoughts of harming your baby. I want you to know you're doing a good job — that voice is the illness, not the truth.' and add the question the stem does not cover: 'Have you had any thoughts of harming yourself as well?' then the admission, led by safety: 'I'm extremely concerned about the safety of you and your baby. That's why I'd like you to be admitted to hospital today — ideally a unit where mothers and babies are cared for together. How do you feel about that?' Offering outpatient review is the trap. Then the sentence she is waiting for: 'This doesn't mean we're separating you. Your baby will stay with your husband for now, and you'll have time together every day with staff there to help, so you're both safe.' then treatment: 'A psychiatrist will see you in hospital and decide on treatment. There are two main options: medicines — an antidepressant for the low mood and an antipsychotic for the voice — or ECT, done under a short anaesthetic, which works faster than tablets, and that matters with a new baby.' and the breastfeeding answer: 'Usually yes — we'll choose medicines that suit feeding, and not treating you is a much bigger risk than the small amount that reaches your milk. Your husband can help with night feeds so you can sleep.' then the long term: a psychologist; a family meeting with her husband; discharge when she and the baby are safe, often two to three weeks, with follow-up from the perinatal team, the GP and the child and family health nurse; PANDA on 1300 726 306; and planning ahead with a specialist before any future pregnancy. Then, only if she refuses, the act: 'I'd much rather you came in willingly. But I have to be honest: because you have an illness, there's a serious risk to your baby and to you, and there's no safer way to treat you right now, if you decided not to come in I would have to arrange admission under the mental health act. A psychiatrist would review that within a day.' Raising the act before she has refused is the trap. Close with a safety-net and a teach-back: 'If at any point you feel you might harm yourself or your baby, tell staff or call 000. Can you tell me in your own words what's going to happen?' The variants. She stands up to leave with the pram: 'Jane, please sit with me for a moment. I can't let you leave alone with your baby today, because I'm worried about both of you. Your husband will take him while we talk' — call for help, do not physically block her, and ask staff to stay with the baby and father. Her husband asks what is wrong, with her consent: 'Jane has a serious but treatable illness that can happen after birth. She needs to be in hospital today. For now, please look after your son and don't leave him alone with her until the team says it's safe. You've been a great support — and please look after yourself too.' 'Will I get this again?': 'There is a higher chance after another birth, so if you plan another pregnancy, we'll see a perinatal psychiatrist beforehand, keep a close eye on you, and have a plan ready.' and if she is alone with two children: 'Who else can be with the children today? If there isn't anyone, I need to make sure they're safe, and that may include contacting child protection services. My job is to keep all of you safe' — CARL 13 14 78.",
+   "dx": [
+    "**POSTPARTUM DEPRESSION WITH PSYCHOTIC FEATURES, with RISK OF HARM TO THE BABY — and the diagnosis is already made in the stem. This is a COUNSELLING station: explain it, then manage it.** Jane, 28, at her son's six-week check; **she planned to press a pillow on his face on Saturday night.**",
+    "**Open with her, not the illness: 'your little boy's check went really well. HOW ARE YOU FEELING TODAY?' Then empathy, then confidentiality with the safety limit — 'unless I'm worried about the safety of you or your baby.' Then ASK WHAT SHE UNDERSTANDS so far.** → 'I'm just a bad mother.'",
+    "**Name it in plain words and say WHY it happens: a serious but treatable mental health condition that affects some mothers after birth, caused by the big changes in body and mind and the exhaustion of a newborn. IT IS NOT YOUR FAULT.** **Never say 'baby blues'.**",
+    "**Explain it in TWO PARTS: the DEPRESSION — low mood, not sleeping or eating, sometimes thoughts of harming yourself or the baby — and the PSYCHOTIC FEATURES — losing touch with reality, hearing things that aren't there, or strong beliefs that aren't true. Then check: 'does that make sense?'**",
+    "**Link it to HER OWN symptoms, then give the reassurance that treats the delusion: 'you're doing a good job. THAT VOICE IS PART OF THE ILLNESS, AND IT ISN'T TELLING YOU THE TRUTH.'** **Skipping this is a fail — the guilt and worthlessness are the psychotic content.**",
+    "**Ask about harm to HERSELF as well, not only the baby** → 'sometimes I think they'd be better off without me.'",
+    "**ADMISSION TODAY, led by safety: 'I'm extremely concerned about the safety of you and your baby. That's why I'd like you to be admitted to hospital today — ideally a MOTHER AND BABY UNIT where you're cared for together.'** **Outpatient review is a fail.**",
+    "**Answer the question she is actually afraid of, before she asks it twice: 'THIS DOESN'T MEAN WE'RE SEPARATING YOU. For now he'll stay with your husband, and you'll have time together EVERY DAY with staff there to help, so you're both safe.'**",
+    "**Treatment: a psychiatrist decides in hospital — an ANTIDEPRESSANT plus an ANTIPSYCHOTIC, or ECT under a short anaesthetic, which works faster and matters with a new baby.** **Breastfeeding: usually yes — medicines are chosen to suit feeding, and NOT TREATING HER IS THE BIGGER RISK. Her husband taking night feeds protects her sleep.**",
+    "**Long term: psychologist · FAMILY MEETING with her husband · discharge with perinatal team, GP and child and family health nurse follow-up · PANDA 1300 726 306 · and planning ahead before any future pregnancy because it can recur.** **THE MENTAL HEALTH ACT IS RAISED ONLY AFTER SHE REFUSES — and then gently, with the 24-hour psychiatrist review. Close by asking her to say the plan back in her own words.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Open with the baby, then her, then empathy and confidentiality with its safety limit: 'Your little boy's check went really well. How are you feeling today?' → 'Just sad, it doesn't matter.' → 'It does matter. I can see you're going through a really hard time, and I know how overwhelming this can be. What we talk about stays between us, unless I'm worried about the safety of you or your baby.' then: 'What have you understood so far about what's been happening to you?' → 'I'm a bad mother.' (Launching straight into the diagnosis is the trap.)"
+     "**'Your little boy's check went really well. How are you feeling today?' Then empathy, then CONFIDENTIALITY WITH THE SAFETY LIMIT.**"
+    ],
+    [
+     "0:30",
+     "**'What have you understood so far about what's been happening to you?'** → 'I'm a bad mother.'"
     ],
     [
      "0:45",
-     "NAME IT, SAY WHAT IT IS AND WHY, AND REMOVE THE BLAME (see dx) — and never say 'baby blues'. → 'SO I'M MAD?'"
+     "**NAME IT, say what it is and why it happens, and say IT IS NOT YOUR FAULT.**"
     ],
     [
-     "1:45",
-     "The two parts — depression, and psychotic features defined as losing touch with reality (see dx) → 'I suppose.'"
+     "1:30",
+     "**The two parts — depression and psychotic features — then 'does that make sense?'**"
     ],
     [
-     "2:30",
-     "Link it to her own symptoms, then reassure — a separate mark, because the guilt is the delusion (see dx) → tearful, 'I did think about it.' → 'Thank you for telling me — that took courage.' then add the question the stem does not give you: 'Have you had any thoughts of harming yourself as well?'"
+     "2:15",
+     "**Link it to her symptoms: low mood, no sleep, no appetite, 3 kg lost, the voice, the guilt, and Saturday night. Thank her for telling you.**"
+    ],
+    [
+     "2:45",
+     "**THE REASSURANCE: you're doing a good job; that voice is the illness, not the truth.** Then ask about thoughts of harming HERSELF."
     ],
     [
      "3:15",
-     "The concern and the admission, led by safety (see dx) → 'Are you going to take my baby away?' → the separation sentence: not separating you, husband for now, time together every day with staff there."
+     "**ADMISSION TODAY, led by safety — and a mother and baby unit if available. 'How do you feel about that?'**"
+    ],
+    [
+     "3:45",
+     "**THE BABY: not separating you · he stays with your husband for now · time together every day with staff present.**"
     ],
     [
      "4:15",
-     "TREATMENT: a psychiatrist in hospital, MEDICINES OR ECT with ECT explained as faster and why that matters with a newborn (see dx) → 'CAN I STILL BREASTFEED?' → usually yes, NOT TREATING YOU IS THE BIGGER RISK, and the husband can take night feeds."
+     "**Treatment: psychiatrist in hospital · antidepressant plus antipsychotic, or ECT · BREASTFEEDING usually continues · husband helps with night feeds so she can sleep.**"
     ],
     [
      "5:00",
-     "PSYCHOLOGY, A FAMILY MEETING, AND THE DISCHARGE PLAN: a psychologist for these feelings; a family meeting with her husband; home when she and the baby are safe, OFTEN TWO TO THREE WEEKS, with the perinatal team, the GP and the child and family health nurse; PANDA; and PLANNING AHEAD BEFORE ANY FUTURE PREGNANCY."
+     "**Psychologist, and a FAMILY MEETING with her husband.**"
     ],
     [
-     "6:15",
-     "ONLY IF SHE REFUSES, THE MENTAL HEALTH ACT, EXPLAINED GENTLY (see dx) → 'I DON'T REALLY WANT TO GO TO HOSPITAL.' → the honest version, with the 24-hour review. (Raising the Act before she has refused is the trap, and it makes her withdraw.)"
+     "5:45",
+     "**Long term: discharge with perinatal team, GP and child and family health nurse · PANDA · planning ahead for a future pregnancy.**"
     ],
     [
-     "7:15",
-     "The safety-net and the teach-back: 'If at any point you feel you might harm yourself or your baby, tell staff or call 000. Can you tell me in your own words what's going to happen?' → 'I go to hospital. He stays with my husband. I see him every day.'"
+     "6:45",
+     "**ONLY IF SHE REFUSES: the Mental Health Act, explained gently, with the 24-hour review. Then the safety net — tell staff or call 000 — and CHECK UNDERSTANDING in her own words.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute station clock",
-   "ask": [
-    "'Your little boy's check went really well. How are you feeling today?' / 'What we talk about stays between us, unless I'm worried about the safety of you or your baby.' / 'What have you understood so far?' / 'Have you had any thoughts of harming yourself as well?'",
-    "'A serious but treatable mental health condition that affects some mothers after birth.' / 'It is not your fault.' / 'Losing touch with reality — hearing things that aren't there.' / 'That voice is part of the illness, and it isn't telling you the truth.'",
-    "'I'm extremely concerned about the safety of you and your baby.' / 'A unit where mothers and babies are cared for together.' / 'This doesn't mean we're separating you.' / 'Not treating you is a much bigger risk than the small amount that reaches your milk.' / 'If you decided not to come in, I would have to arrange admission under the mental health act.' / 'Can you tell me in your own words what's going to happen?'",
-    "The variants: she stands up to leave with the pram → 'Jane, please sit with me for a moment. I can't let you leave alone with your baby today, because I'm worried about both of you. Your husband will take him while we talk' — call for help, do not physically block her. / the husband, with her consent → 'Please look after your son and don't leave him alone with her until the team says it's safe. You've been a great support — and please look after yourself too.'",
-    "'Will I get this again?' → 'There is a higher chance after another birth, so if you plan another pregnancy, we'll see a perinatal psychiatrist beforehand and have a plan ready.' / she is alone with two children → 'Who else can be with the children today? If there isn't anyone, I need to make sure they're safe, and that may include contacting child protection services' — CARL 13 14 78."
-   ],
    "pefe": [
-    "Role-player: Jane, 28. First baby, a boy, six weeks old. Married; her husband is kind and says she's doing a great job, and he is outside with the baby. For two weeks: very low, not sleeping, not eating, lost 3 kg. A woman's voice says she is a horrible mother, and she believes it. Terrible guilt. She has thought of putting a pillow over her baby's face on Saturday night, and has not told her husband. If asked about herself: 'Sometimes I think they'd be better off without me' — no plan. No drugs or alcohol, no past mental illness. She is breastfeeding.",
-    "How to play it: slow, quiet, eyes down, very few words, long pauses, looking at your hands. You do not think you are ill — you think you are bad. When admission is mentioned: 'Are you going to take my baby away?' when medicine is mentioned: 'Can I still breastfeed?' Near the end: 'I don't really want to go to hospital.' Agree to go if the doctor is kind, honest about the baby and explains the act gently. If the doctor threatens the act first, become more withdrawn.",
-    "Mark them on: asked how you were feeling first; confidentiality with the safety limit; asked what you understood; named the condition in plain words; explained both parts and why it happens; linked it to your symptoms; said it's not your fault and you're not a bad mother; admission today led by safety; the baby with your husband and supervised contact; medicines and ECT with the breastfeeding answer; psychology, family meeting, follow-up and PANDA; and the mental health act only after you refused.",
-    "The opening — 'JUST SAD' / 'IT DOESN'T MATTER' — or silence. Slow, quiet, eyes down, long pauses, looking at her hands",
-    "What she understands — 'I'm just a bad mother' — she does not think she is ill; she thinks she is bad",
-    "What she says to the diagnosis — SILENCE, THEN 'SO I'M MAD?' — and 'baby blues' is the named trap",
-    "Her symptoms — Low mood, not sleeping, not eating, 3 kg lost — a woman's voice saying she is a horrible mother, and she believes it — terrible guilt",
-    "The plan she has not told her husband — Thoughts of putting a pillow over her baby's face on Saturday night — and when you raise it, tearful: 'I did think about it'",
-    "What she says if you ask about herself — 'Sometimes I think they'd be better off without me' — no plan. Ask it; the stem only gives you risk to the baby",
-    "Her first question to admission — 'ARE YOU GOING TO TAKE MY BABY AWAY?' — which is what the separation sentence answers",
-    "Her second question — 'CAN I STILL BREASTFEED?' — asked as soon as medicines are mentioned",
-    "Near the end — 'I don't really want to go to hospital' — and she agrees if you are kind, honest about the baby, and explain the act gently",
-    "If you threaten the Act first — She becomes more withdrawn",
-    "What closes the station — 'I go to hospital. He stays with my husband. I see him every day' — her own words, given back",
-    "The variant that tests your nerve — She stands up to leave with the pram"
+    "**The baby's six-week check is normal — say so first; it is the opening.**",
+    "**Her MSE: unkempt, no eye contact · slow, quiet, monosyllabic speech · mood low, affect flat, restricted and congruent · AUDITORY HALLUCINATIONS · DELUSION OF GUILT · a PLAN to harm the baby · insight and judgement impaired.**",
+    "**Investigations: FBE, TSH, iron studies, B12 and folate, glucose — postpartum thyroiditis and anaemia mimic this; and a drug screen if indicated.**",
+    "**Treatment: admission, ideally to a MOTHER AND BABY UNIT · antidepressant plus antipsychotic · ECT where a rapid response is needed · psychology · family meeting. Length often two to three weeks — 'until you're well and it's safe'.** VERIFY.",
+    "**Numbers: SA mental health triage 13 14 65 · PANDA 1300 726 306 · CaFHS 1300 733 606 · CARL 13 14 78 · Lifeline 13 11 14 · 000.**",
+    "**IF SHE STANDS UP TO LEAVE WITH THE PRAM: 'please sit with me for a moment. I can't let you leave alone with your baby today.' Call for help, do NOT physically block her, and have staff stay with the baby and father.**",
+    "**With her consent, tell the husband: she has a serious but treatable illness, she needs hospital today, and NOT TO LEAVE THE BABY ALONE WITH HER until the team says it is safe — and to look after himself too.** **If she is alone with other children and no one can be with them, child protection may need to be contacted — CARL 13 14 78.**"
    ],
-   "fails": [
-    "★ Offering outpatient review instead of admission today — the admission is led by safety and it is not negotiable",
-    "★ Raising the Mental Health Act before she has refused, which makes her withdraw",
-    "Never saying 'this doesn't mean we're separating you' — her first question is whether you are taking her baby",
-    "Saying 'baby blues', or launching straight into the diagnosis without asking how she feels and what she already understands",
-    "Skipping the reassurance that she is doing a good job and that the voice is the illness — the guilt is the delusion, and it is a separate mark; and never asking about thoughts of harming herself, which the stem does not give you"
-   ],
-   "numbers": [
-    "Six-week check · two weeks of symptoms and 3 kg lost · the plan was Saturday night · admission today, ideally a mother and baby unit · often 2 to 3 weeks · a level 1 order is reviewed within 24 hours",
-    "SA mental health triage 13 14 65 · PANDA 1300 726 306 · CaFHS 1300 733 606 · CARL 13 14 78 · Lifeline 13 11 14 · 000 in an emergency · higher recurrence risk after another birth, so plan preconception VERIFY"
+   "ddx": [
+    [
+     "**Postpartum depression with psychotic features** — the answer",
+     "**Two weeks of low mood, insomnia, 3 kg weight loss; a voice calling her a horrible mother; a delusion of guilt; a PLAN to smother the baby; impaired insight**",
+     "**Ask about harm to the baby AND to herself; characterise the voice**",
+     "**Admission today, mother and baby unit; antidepressant plus antipsychotic or ECT; supervised contact**"
+    ],
+    [
+     "**Postpartum psychosis**",
+     "**Abrupt onset, fluctuating confusion, grandiose or bizarre delusions, elevated or labile mood — a psychiatric emergency**",
+     "**Onset, course, confusion, mood polarity**",
+     "**Same urgent pathway; ECT is often the rapid option**"
+    ],
+    [
+     "Baby blues",
+     "**Tearfulness and lability peaking around days 3–5, resolving within two weeks, no psychosis and no risk**",
+     "Timing and severity",
+     "**NEVER use this term here. Two weeks of symptoms with psychosis and a plan is not the blues**"
+    ],
+    [
+     "**Postpartum thyroiditis or anaemia**",
+     "**Fatigue, low mood, weight change after delivery**",
+     "**TSH, FBE, iron studies**",
+     "**Check them — but they do not explain the psychosis**"
+    ],
+    [
+     "Bipolar disorder presenting postpartum",
+     "Past elevated mood; a strong family history; postpartum onset in bipolar I",
+     "Previous highs and family history",
+     "**Changes the medication choice — the psychiatrist decides in hospital**"
+    ]
    ]
   },
   "source": "Postpartum_Depression_Psychotic_2_Case_Tasks_Script_Notability.pdf (Jane, 28, at her son's six-week check with a voice calling her a horrible mother and a plan to smother him — postpartum depression with psychotic features; the diagnosis given so the station is the explanation and the plan, her understanding asked before anything is named, the illness explained in two parts with the blame removed, the guilt reassured because it is the delusion, self-harm asked because the stem only gives risk to the baby, admission today led by safety with the separation sentence, the breastfeeding answer, and the Mental Health Act raised only after refusal; the pram, the husband, recurrence and the mother alone with two children folded in)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › Postpartum_Depression_Psychotic_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Saying 'baby blues', or launching straight into the diagnosis without asking how she feels and what she already understands — she says 'I'm a bad mother', and that is where the explanation starts",
-   "FAIL — Not explaining the condition in TWO PARTS, which is task one — postpartum depression with psychotic features: a serious but treatable illness affecting some mothers after birth, caused by the changes her body and mind go through and the exhaustion of a newborn, and NOT her fault. The depression part, then the psychotic part (losing touch with reality, hearing things that aren't there, beliefs that aren't true), then linked back to HER symptoms",
-   "FAIL — Skipping the reassurance that she is doing a good job and that the voice is the illness — the guilt IS the delusion, and it is a separate mark. Ask about harm to herself too, because 'sometimes I think they'd be better off without me' only comes if you ask",
-   "FAIL — Offering outpatient review instead of admission today — the admission is led by safety and it is not negotiable; ideally a unit where mothers and babies are cared for together",
-   "FAIL — Never saying 'this doesn't mean we're separating you' — her first question is whether you are taking her baby. He stays with her husband for now, with time together every day and staff present",
-   "FAIL — Raising the Mental Health Act before she has refused, which makes her withdraw — and leaving out the treatment and the long-term plan: an antidepressant and an antipsychotic, or ECT which works faster; breastfeeding usually continues because not treating her is the bigger risk; a psychologist, a family meeting, perinatal follow-up, CaFHS, PANDA 1300 726 306, and planning ahead before any future pregnancy. Finish with teach-back"
-  ]
+   "FAIL — Calling it 'baby blues', or launching into the diagnosis before asking how she feels.",
+   "FAIL — Offering outpatient review. She needs admission TODAY.",
+   "FAIL — Raising the Mental Health Act BEFORE she has refused.",
+   "FAIL — Skipping the reassurance. The guilt and 'bad mother' belief ARE the delusion.",
+   "SAY — It is not your fault, and you are not a bad mother.",
+   "SAY — This doesn't mean we're separating you."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-27",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 300,
-  "setting": "History from the mother and an explanation of investigations — ED toxicology. Three things she will not volunteer, each behind a specific question: the time, the formulation, and the note. She says 'I don't know' to when he took them — anchor it with when did you last see him well. She names osteo only if you ask the type, and modified release changes the testing. And the note appears only in the psychological box. He is more than eight hours out, so acetylcysteine starts now rather than waiting for the level.",
   "stem": [
    "Emergency department. Liam, 20, brought in by his mother, who found he had taken multiple paracetamol tablets last night.",
    "Tasks: take a history from the mother — the ingestion and relevant medical conditions — then explain the investigations you would order. Variants: paracetamol plus alprazolam; presents at 90 minutes and alert; he wakes and wants to leave; a 19-year-old woman; and a staggered ingestion over two days."
@@ -55964,7 +56249,6 @@ const EMBEDDED_CARDS = [
    "Take a history from the mother — the ingestion and relevant medical conditions",
    "Explain the investigations you would order"
   ],
-  "time": "Empathy and a stability statement before any question · I'll make sure he's in the resuscitation area with his vital signs checked and that he's stable · then the open question · then the incident: when did you last see him well and do you know when he took them; what type, regular Panadol or the slow-release osteo kind; how many packets were empty; anything else · other tablets, alcohol, drugs; do you know why; and roughly how much does he weigh · then the hepatotoxicity risk factors, which lower your treatment threshold: has he been taking paracetamol regularly, how much does he usually drink, any regular medicines including epilepsy tablets or ST John's wort or other herbals, has he been eating properly, and any liver problems · then the symptoms: vomiting, tummy pain, sweating, and was he confused when you found him · then the psychological box, which is where the note lives: has he ever harmed himself before, do you think this could have been an attempt to end his life, did he leave a note or say anything, how has his mood and sleep been, any recent stresses, does he use drugs, and who does he have for support · then the investigations in plain words with the level first, the repeat at four hours for modified release, and the antidote started now.",
   "findings": [
    [
     "The picture you are dealing with",
@@ -55972,87 +56256,112 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "A deliberate overdose of probably modified-release paracetamol, roughly twelve hours ago, with alcohol, fasting and a suicide note — and more than eight hours out, so the antidote does not wait. The investigations, in plain words and with the level first: 'The most important test is the level of paracetamol in his blood. We plot it against the time he took the tablets, and that tells us how much treatment he needs. Because the osteo tablets release slowly, we'll repeat it four hours later. We'll check his liver tests and how well his blood clots, because paracetamol can damage the liver. We'll check his kidneys, his blood sugar and a blood gas to see how his body is coping, a full blood count, and a heart tracing. Because it's more than eight hours since he took them, we'll start the antidote, acetylcysteine, straight after the bloods rather than waiting. I'll also be talking to the poisons information centre.' Listing 'Lfts' without the level first, or explaining the nomogram in jargon, are the two traps. Her questions: 'Is there an antidote?' → 'Yes — acetylcysteine, and it's very effective.' 'Will his liver be okay?' → 'I can't promise, but the antidote is very effective, and we'll monitor his liver closely over the next day or two. I'll keep you updated.' and finish with safety: 'Once he's physically well, the mental health team will see him, and someone will stay with him to keep him safe.' To the examiner, if asked to summarise: 'This is a deliberate overdose of probably modified-release paracetamol — amount unknown but potentially toxic — roughly twelve hours ago, with alcohol, fasting and a note. He's more than eight hours out, so I'd start acetylcysteine immediately.' The variants. Paracetamol plus alprazolam: 'His GCS is fluctuating, most likely from the alprazolam. Airway first — recovery position, oxygen, and intubation if he can't protect it. No charcoal unless his airway is secured. I would not give flumazenil. Acetylcysteine follows the paracetamol pathway as usual.' Presents at 90 minutes, alert: 'Because you've come in early and you're alert, we can give you activated charcoal to stop more paracetamol being absorbed. We'll take a level at four hours and decide on the antidote from that.' He wakes and wants to leave: 'I'm glad you're awake. The tablets you took can damage your liver silently over the next few days, and the treatment works best now. Can you tell me what you understand about that?' — that is a capacity assessment — 'I'm also worried about your safety after the note — I'd like you to stay while we treat you and talk things through.' A 19-year-old woman: 'Is there any chance she could be pregnant — do you know when her last period was?' — add a pregnancy test; acetylcysteine is safe in pregnancy and given the same way, and the obstetric team is involved because paracetamol crosses the placenta. Staggered ingestion over two days: 'Because he took them over two days rather than all at once, the chart we use can't be applied. We'll check his paracetamol level and liver tests now, and if either is raised we'll give the antidote.' The examiner's one-liners: when to stop acetylcysteine — 'At the end of the infusion if the ALT is normal or improving and the paracetamol level is low; otherwise continue.' An adverse reaction to acetylcysteine — 'Flushing, rash, wheeze — pause, antihistamine, restart at a slower rate; it is not a true allergy.' Signs of severe liver injury — 'Rising INR, acidosis, hypoglycaemia, encephalopathy and a rising creatinine — discuss with a liver unit.'",
+   "dx": [
+    "**DELIBERATE overdose of probably MODIFIED-RELEASE paracetamol (Panadol Osteo), quantity unknown but potentially toxic, about 12 hours ago, with ALCOHOL, FASTING and A NOTE.** The history is taken from his mother, Sue.",
+    "**Open with the primary survey and empathy, not with questions: 'I'm so sorry — this must be very frightening. Before we talk, I'll make sure he's in the resuscitation area, check his vital signs and that he's stable. Is that okay?'**",
+    "**SHE SAYS 'I DON'T KNOW' TO WHEN HE TOOK THEM — anchor it instead: 'WHEN DID YOU LAST SEE HIM WELL?' → 8 to 8:30 last night. 'When did you find him?' → 7:30 this morning. That window is what you plot against.**",
+    "**ASK THE FORMULATION BY NAME: 'regular Panadol or the slow-release OSTEO kind?' → the Osteo, hers, for her knees. Modified release changes everything — TWO levels four hours apart, because a single level can be falsely reassuring.**",
+    "**The rest of the incident: how many packets were empty · anything else, other tablets or ALCOHOL (there were beer cans) · do you know why · and HIS WEIGHT, about 70 kg.**",
+    "**THE HEPATOTOXICITY RISK FACTORS ARE THE BOX CANDIDATES DROP: regular paracetamol use · ALCOHOL (most nights lately) · enzyme inducers, epilepsy tablets, ST JOHN'S WORT and herbals · FASTING or poor eating (hardly eating) · known liver disease. Alcohol and fasting both raise his risk and LOWER YOUR TREATMENT THRESHOLD.** **Plus symptoms: vomiting, abdominal pain, sweating, confusion.**",
+    "**THE PSYCHOLOGICAL BOX, and the note only appears if you ask: ever harmed himself before · could this have been an attempt to end his life · DID HE LEAVE A NOTE or say anything · mood, sleep, appetite · recent stresses · drugs · who supports him.** → a note saying 'Sorry Mum', a break-up and a failed exam.",
+    "**INVESTIGATIONS IN PLAIN WORDS, LEVEL FIRST: the paracetamol level, plotted against the time he took them, repeated FOUR HOURS LATER because of the slow-release tablets · LIVER tests and CLOTTING · kidneys · blood sugar · a blood gas · full blood count · ECG.** **Listing 'LFTs' without the level first is the ordering error.**",
+    "**BECAUSE IT IS MORE THAN EIGHT HOURS, START ACETYLCYSTEINE STRAIGHT AFTER THE BLOODS RATHER THAN WAITING — and say you will speak to the POISONS INFORMATION CENTRE on 13 11 26.**",
+    "**Close with safety and honest reassurance: once he is physically well the mental health team will see him, someone will stay with him, and 'I can't promise, but the antidote is very effective and we'll monitor his liver closely over the next day or two.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "EMPATHY AND THE STABILITY STATEMENT BEFORE ANY QUESTION: 'I'm Dr -, and I'm looking after your son. I'M SO SORRY — THIS MUST BE VERY FRIGHTENING. BEFORE WE TALK, I'LL MAKE SURE HE'S IN THE RESUSCITATION AREA, CHECK HIS VITAL SIGNS AND THAT HE'S STABLE. IS THAT OKAY?' Then: 'CAN YOU TELL ME WHAT HAPPENED?' (Starting with questions before the stability statement, or skipping the empathy, are the opening traps — AND SHE BECOMES MORE DISTRESSED IF YOU ARE COLD OR RUSHED.)"
+     "**Introduce, empathise, STABILITY STATEMENT — resus, vital signs, monitored — then an open question.**"
     ],
     [
      "1:00",
-     "The incident — and anchor the time rather than accepting 'I don't know': 'When did you last see him well? Do you know when he took them? Do you know what type — regular Panadol or the slow-release osteo kind? How many packets were empty? Anything else — other tablets, alcohol, drugs? Do you know why he took them? Roughly how much does he weigh?' → 8 to 8:30, the osteo tablets, two packets, beer cans, about 70 kg."
+     "**THE INCIDENT: when did you last see him well · when did you find him · WHAT TYPE, regular or Osteo · how many packets · anything else or alcohol · why · his weight.**"
     ],
     [
      "2:30",
-     "The hepatotoxicity risk factors, which lower your treatment threshold: 'Has he been taking paracetamol regularly? How much does he usually drink? Any regular medicines — epilepsy tablets, ST John's wort or other herbal products? Has he been eating properly? Any liver problems?' → drinking most nights and hardly eating. (Not asking about fasting and alcohol is the named trap.) then the symptoms: vomiting, tummy pain, sweating, and was he confused when you found him."
+     "**RISK FACTORS: regular paracetamol · alcohol intake · regular medicines, epilepsy tablets, ST JOHN'S WORT or herbals · has he been eating · any liver problems.** Then **symptoms: vomiting, abdominal pain, sweating, confusion when found.**"
     ],
     [
      "3:30",
-     "The psychological box, where the note lives: 'I need to ask some difficult questions. Has he ever harmed himself before? Do you think this could have been an attempt to end his life? Did he leave a note or say anything? How has his mood been — sleep, appetite? Any recent stresses? Does he use drugs? Who does he have for support?' → the note. → 'Thank you for telling me — I know how hard that is.' (Stopping at 'Accident or deliberate?' Is the trap — the note only appears if you ask.)"
+     "**THE PSYCHOLOGICAL BOX: previous self-harm · was this an attempt to end his life · A NOTE · mood, sleep, appetite · recent stresses · drugs · supports.**"
     ],
     [
      "5:00",
-     "The investigations in plain words, level first, with the repeat at four hours and the antidote started now (see dx) → 'Is there an antidote?' / 'Is his liver going to fail?'"
+     "**Formulate it aloud to the examiner: deliberate overdose of probably modified-release paracetamol, unknown but potentially toxic amount, about 12 hours ago, with alcohol, fasting and a note — more than 8 hours out, so acetylcysteine starts immediately.**"
     ],
     [
-     "7:00",
-     "Safety and honest reassurance: 'Once he's physically well, the mental health team will see him, and someone will stay with him to keep him safe.' → 'I can't promise, but the antidote is very effective, and we'll monitor his liver closely over the next day or two. I'll keep you updated. Is there anything you'd like to ask?' → 'Can I see him?'"
+     "5:30",
+     "**INVESTIGATIONS, level first and in plain words, then liver and clotting, kidneys, glucose, blood gas, FBC and ECG — with the four-hour repeat explained.**"
+    ],
+    [
+     "6:45",
+     "**Acetylcysteine now rather than waiting; Poisons Information Centre.**"
+    ],
+    [
+     "7:15",
+     "**Safety: mental health team once medically well, and someone stays with him. Then honest, calibrated reassurance and 'is there anything you'd like to ask?'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute consultation map",
-   "ask": [
-    "'Let me make sure he's stable first.' / 'When did you last see him well?' / 'Were they the slow-release osteo tablets?' / 'How many packets were empty?' / 'Could he have taken anything else, or alcohol?' / 'How much does he weigh?' / 'Has he been eating properly?'",
-    "'Do you think this could have been an attempt to end his life?' / 'Did he leave a note?' / 'Thank you for telling me — I know how hard that is.'",
-    "'The key test is the paracetamol level, plotted against time.' / 'Because the osteo tablets release slowly, we'll repeat it four hours later.' / 'We'll start the antidote now rather than wait.' / 'I'll be speaking to the poisons information centre.' / 'Someone will stay with him to keep him safe.' / 'I can't promise, but the treatment is very effective.'",
-    "The variants: paracetamol plus alprazolam → 'Airway first — recovery position, oxygen, and intubation if he can't protect it. No charcoal unless the airway is secured. I would not give flumazenil.' / at 90 minutes and alert → activated charcoal, then a level at four hours. / he wakes and wants to leave → 'The tablets can damage your liver silently over the next few days, and the treatment works best now. Can you tell me what you understand about that?' — a capacity assessment — plus the safety concern about the note.",
-    "A 19-year-old woman → add a pregnancy test; acetylcysteine is safe in pregnancy and given the same way, with the obstetric team involved. / staggered over two days → 'The chart we use can't be applied. We'll check his level and liver tests now, and if either is raised we'll give the antidote.' / examiner one-liners: stopping nac — 'At the end of the infusion if the ALT is normal or improving and the level is low.' / a reaction to nac — 'Flushing, rash, wheeze: pause, antihistamine, restart slower — not a true allergy.' / severe liver injury — 'Rising INR, acidosis, hypoglycaemia, encephalopathy, rising creatinine.'"
-   ],
    "pefe": [
-    "Role-player: SUE, 48, HIS MOTHER. Nurse's aide, single parent. Her son LIAM, 20, is a university student who lives at home. HIS GIRLFRIEND LEFT HIM THREE WEEKS AGO AND HE FAILED AN EXAM LAST WEEK. He's been quiet, DRINKING BEER MOST NIGHTS, HARDLY EATING, sleeping badly. LAST NIGHT HE CAME HOME ABOUT 8 TO 8:30 PM AND WENT TO HIS ROOM. AT 7:30 THIS MORNING SHE FOUND HIM BARELY ROUSABLE WITH TWO EMPTY PACKETS OF HER PANADOL OSTEO — SHE DOESN'T REMEMBER THE PACK SIZE — AND SEVERAL BEER CANS. HE VOMITED IN THE AMBULANCE. A NOTE ON HIS DESK SAID 'SORRY MUM'. No previous self-harm, no medical problems, no regular medicines, occasional cannabis. ABOUT 70 kg.",
-    "How to play it: frightened, guilty, tearful. Open with 'I found him this morning.' if asked what time he took them, say 'I don't know' — give 8 to 8:30 only if asked when you last saw him. Only name 'Osteo' if asked about the type. Reveal the note only if asked about intent or a note. Ask 'Is his liver going to fail?' During the investigations, and 'Can I see him?' At the end. If the doctor is cold or rushed, become more distressed.",
-    "Mark them on: empathy; the stability statement; the last-seen time; the formulation; the amount; co-ingestants; intent; weight; alcohol, enzyme inducers, fasting and liver disease; symptoms; previous attempts; the note; mood and stressors; the paracetamol level explained first; liver, clotting and kidney tests; the antidote started now; poisons information; keeping him safe; and honest reassurance.",
-    "The opening — 'I found him in his room this morning with empty Panadol packets. He was so drowsy I couldn't wake him properly' — and 'I should have checked on him last night'",
-    "The time, anchored — 'I don't know' to when he took them — and '8 or 8:30 last night' only if you ask when she last saw him well. Accepting 'I don't know' is the trap",
-    "The formulation — 'Maybe the osteo ones — they're mine for my knees' — given only if you ask the type, and modified release means two levels four hours apart",
-    "Amount and co-ingestion — Two packets, both empty, pack size unknown — and there were beer cans. About 70 kg",
-    "The risk factors that lower the threshold — 'HE'S BEEN DRINKING MOST NIGHTS LATELY' AND 'HE'S HARDLY BEEN EATING' — no regular medicines, no herbals, no liver problems",
-    "Symptoms — He vomited once in the ambulance",
-    "The note — 'I FOUND A NOTE ON HIS DESK... IT SAID SORRY' — GIVEN ONLY IF YOU ASK ABOUT INTENT OR A NOTE. Stopping at 'accident or deliberate?' is the trap",
-    "The psychosocial picture — NEVER HARMED HIMSELF BEFORE — QUIET, NOT SLEEPING — THE BREAKUP THREE WEEKS AGO AND A FAILED EXAM LAST WEEK — some cannabis — support from her and his mate Josh",
-    "What she asks — 'Is there an antidote?' — 'Is his liver going to fail?' During the investigations — and 'Can I see him?' At the end",
-    "Her register — Frightened, guilty, tearful — and she becomes more distressed if the doctor is cold or rushed"
+    "**Numbers: toxic ≥10 g or ≥200 mg/kg · massive ≥30 g or ≥500 mg/kg · the treatment line is 1000 µmol/L at 4 hours · a level is only interpretable from 4 HOURS post-ingestion · beyond 8 HOURS start acetylcysteine BEFORE the result · modified release needs TWO levels 4 hours apart · Panadol Osteo is 665 mg per tablet.** VERIFY.",
+    "**Acetylcysteine regimen: 200 mg/kg over 4 hours, then 100 mg/kg over 16 hours.** **Activated charcoal only within about 2 hours for immediate-release, and only with a protected airway.** VERIFY.",
+    "**Bloods: paracetamol level (repeat at 4 h) · LFT and INR · UEC · BSL · venous blood gas · FBC · ECG. Add β-hCG in a woman of reproductive age — acetylcysteine is safe in pregnancy and given the same way.**",
+    "**Stopping acetylcysteine: at the end of the infusion if ALT is normal or improving and the level is low; otherwise continue.** **Adverse reaction — flushing, rash, wheeze: pause, antihistamine, restart slower. It is not a true allergy.** VERIFY.",
+    "**Severe liver injury: rising INR, acidosis, HYPOGLYCAEMIA, encephalopathy, rising creatinine → discuss with a liver unit.**",
+    "**Poisons Information Centre 13 11 26 · SA mental health triage 13 14 65 · Lifeline 13 11 14.**",
+    "**Staggered ingestion over two days: the nomogram CANNOT be applied — check the level and LFTs now and treat if either is raised.** **Co-ingested alprazolam: airway first, recovery position, oxygen, intubate if he can't protect it; no charcoal without a secured airway; DO NOT give flumazenil.**"
    ],
-   "fails": [
-    "★ Accepting 'I don't know' for the time instead of anchoring it with when she last saw him well",
-    "★ Not asking the formulation — she names Osteo only if asked, and modified release means two levels four hours apart",
-    "Stopping at 'was it an accident or deliberate?' — the note appears only in the psychological box, and only if you ask for it",
-    "Listing liver tests without the paracetamol level first, or explaining the nomogram in jargon",
-    "Starting with questions before the stability statement and the empathy, which makes her more distressed; not asking about fasting and alcohol, which both raise his risk and lower the treatment threshold; and forgetting that at more than eight hours the antidote starts now rather than waiting for the level"
-   ],
-   "numbers": [
-    "Toxic at 10 g or 200 mg/kg · massive at 30 g or 500 mg/kg · the nomogram line is 1000 micromol/L at 4 hours · level from 4 hours onward · beyond 8 hours, start acetylcysteine now · Panadol osteo is 665 mg and modified release, so two levels four hours apart",
-    "Acetylcysteine 200 mg/kg over 4 hours, then 100 mg/kg over 16 hours VERIFY · activated charcoal within 2 hours for immediate-release · poisons information 13 11 26 · no flumazenil with benzodiazepine co-ingestion · acetylcysteine is safe in pregnancy"
+   "ddx": [
+    [
+     "**Modified-release paracetamol overdose** — the answer",
+     "**Two empty Panadol Osteo packets, last seen well 12 hours ago, alcohol, fasting, a note, vomiting in the ambulance**",
+     "**Formulation by name; last-seen-well time; the four-hour repeat level**",
+     "**Acetylcysteine NOW (>8 h) · paired levels · LFT, INR, UEC, BSL, VBG · Poisons Information**"
+    ],
+    [
+     "**Co-ingestion — alcohol, benzodiazepines, other analgesics**",
+     "**Beer cans; drowsiness out of proportion; fluctuating GCS**",
+     "**'Could he have taken anything else?'; salicylate level; drug screen**",
+     "**Airway first; no flumazenil; treat the paracetamol pathway regardless**"
+    ],
+    [
+     "**Established hepatotoxicity**",
+     "**Presenting late; nausea, vomiting, right upper quadrant pain; rising ALT and INR**",
+     "**LFT, INR, glucose, blood gas, creatinine**",
+     "**Acetylcysteine regardless of level; liver unit if INR rises or he becomes encephalopathic**"
+    ],
+    [
+     "Accidental therapeutic excess",
+     "Repeated supratherapeutic doses for pain rather than a single act",
+     "Regular paracetamol use; the note; stated intent",
+     "**The note makes this deliberate — but ask, don't assume**"
+    ],
+    [
+     "**Underlying major depression**",
+     "**Three weeks of low mood after a break-up and a failed exam, drinking most nights, not eating, not sleeping**",
+     "**Mood, sleep, stressors, supports — from the mother**",
+     "**Mental health team once medically stable; 1:1 observation meanwhile**"
+    ]
    ]
   },
   "source": "Paracetamol_Poisoning_2_Case_Tasks_Script_Notability.pdf (Sue, whose 20-year-old son was found barely rousable with two empty packets of her Panadol Osteo — a deliberate modified-release paracetamol overdose about twelve hours old; the stability statement and empathy before any question, the ingestion time anchored to when he was last seen well, the formulation asked because Osteo changes the testing, alcohol and fasting taken as threshold-lowering risk factors, the suicide note found in the psychological box, and investigations explained with the level first and the antidote started rather than awaited; the alprazolam co-ingestion, the early presentation, the patient wanting to leave, the pregnant patient and the staggered ingestion folded in)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › Paracetamol_Poisoning_2_Case_Tasks_Script_Notability.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Starting with questions before the stability statement, or skipping the empathy — 'I'm so sorry, this must be frightening; let me make sure he's stable first', then an open question",
-   "FAIL — Accepting 'I don't know' for the time instead of anchoring it with when she last saw him well — 8 to 8:30 last night against found at 7:30 this morning gives you a usable window of about twelve hours",
-   "FAIL — Not asking the formulation — she names Osteo only if asked, and modified release means TWO levels four hours apart, because the nomogram cannot be applied to a single one. Also ask how many packets, co-ingestants and alcohol, the reason, and his weight",
-   "FAIL — Not asking about fasting and alcohol, which both raise his risk and lower your treatment threshold — plus regular paracetamol use, enzyme inducers and herbals, liver disease, and the symptoms so far: vomiting, abdominal pain, sweating, confusion",
-   "FAIL — Stopping at 'was it an accident or deliberate?' — the note appears only in the psychological box, and only if you ask for it. Then previous self-harm, mood and sleep, the stressors, drugs, and who supports him",
-   "FAIL — Listing liver tests without the paracetamol level FIRST, or explaining the nomogram in jargon — the level plotted against the time he took them, then LFTs and clotting, kidneys, blood sugar, a blood gas, a full blood count and an ECG. At more than eight hours, start acetylcysteine straight after the bloods rather than waiting; ring Poisons Information 13 11 26; and someone stays with him"
-  ]
+   "FAIL — Accepting 'I don't know' for the time. Anchor it: last seen well versus found.",
+   "FAIL — Not asking the formulation. Slow-release Osteo needs TWO levels four hours apart.",
+   "FAIL — Waiting for the level. Beyond 8 hours, acetylcysteine starts NOW.",
+   "FAIL — Stopping at 'accident or deliberate?' — the note only appears if you ask for it.",
+   "ASK — Has he been eating properly? How much does he usually drink?",
+   "DO — Open with a stability statement before any history."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-28",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 300,
-  "setting": "Perform the MMSE, then give a diagnosis and a management plan — the sequel to the MMSE station, where recall is the only impaired domain. Normal findings first, then the abnormal one, then the interpretation — short-term memory, never long-term and never confused. Then decline the word dementia with a reason, because she asks for it directly. And management comes in two steps: find out why, then what we do once we know — with thiamine started today, because omitting it is a patient-safety failure.",
   "stem": [
    "GP clinic. Helen, 60, long history of heavy alcohol use, abstinent two weeks, complaining of memory problems.",
    "Tasks: explain and perform the MMSE; then, with the results showing recall impaired, give your diagnosis; then outline your management. Variants: signs of Wernicke's; the daughter demands the diagnosis; results six months later; and she insists on driving to the shops."
@@ -56062,7 +56371,6 @@ const EMBEDDED_CARDS = [
    "Give your diagnosis",
    "Outline your management"
   ],
-  "time": "Explain the test as a screening test, take consent, say questions are answered at the end, and do not be drawn into conversation mid-test · then report the result: normal findings first, then the harder part, then the interpretation in plain words · then the diagnosis: this is a screening test, it tells us there is a short-term memory problem but not the cause, so I am not saying you have dementia; alcohol can affect memory, especially when the body is low in thiamine; and other causes include thyroid or vitamin problems, low mood, medicines, a bleed from a fall, or conditions like Alzheimer's · some of these are treatable · then management in two steps. Step one, finding out why, grouped rather than listed: a full history and, with permission, a collateral from family; a physical examination; a more detailed cognitive test; bloods · blood count, kidneys, liver, sugar, calcium, thyroid, B12 and folate; a brain scan to rule out a bleed or a growth; and mood, eyesight, hearing, falls risk, a medication review and how she is managing at home · then the alcohol: thiamine today, abstinence support, and repeat the test in a few months · then step two, once we know: geriatrician, aged-care assessment, dementia Australia, advance care directive and substitute decision-maker, and driving.",
   "findings": [
    [
     "The MMSE result",
@@ -56070,80 +56378,108 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "AN ISOLATED SHORT-TERM MEMORY IMPAIRMENT ON A SCREENING TEST, MOST LIKELY ALCOHOL-RELATED — and not a diagnosis of dementia. The result, normal first: 'Thank you, you did well. Most of it was normal — you knew the date and place, repeated the three words straight away, and your concentration, reading, writing and drawing were fine. The part that was harder was remembering the three words a few minutes later. That shows some difficulty with your short-term memory.' Saying 'Long-term memory' or 'Confused' are both marked as incorrect interpretations. The diagnosis, with the word declined and a reason given: 'This is a screening test. It tells me you have a short-term memory problem, but not the cause — so I'm not saying you have dementia. Alcohol can affect memory, especially when the body is low in thiamine. Other possible causes include thyroid or vitamin problems, low mood, some medicines, a bleed from a fall, or conditions like Alzheimer's. Some of these are treatable, and memory affected by alcohol can improve after stopping.' Agreeing it is dementia, or blaming alcohol and stopping there, are the two diagnostic traps. Management, step one — finding out why, and grouped rather than listed: 'A full history, and with your permission a chat with a family member. A physical examination. A more detailed memory questionnaire, the GPCOG. Blood tests — blood count, kidneys, liver, sugar, calcium, thyroid, B12 and folate. A brain scan to rule out a bleed or a growth. I'll check your mood, eyesight, hearing and risk of falls, go through your medicines, and see how you're managing at home.' and when she mentions the diazepam: 'That can affect memory, so we'll look at reducing it safely.' The alcohol, and thiamine is not optional: 'I'd like to start you on thiamine today to protect your brain. Staying off alcohol is the best thing for your memory — I can help with counselling, a medicine for cravings, and the alcohol and drug service. We'll repeat the memory test in a few months, because it often improves.' Step two — once we know: 'If the assessments show a condition like dementia, I'd refer you to a geriatrician, who may consider a medicine for some types; arrange an aged-care assessment through my aged care for help at home; and put you and your family in touch with dementia Australia. We'd talk about an advance care directive and choosing someone to make decisions if you ever can't. And we'd review driving safety.' Leading with donepezil is the trap — medication follows a diagnosis, and does not suit alcohol-related impairment. Her questions: 'Will I lose my licence?' → 'Only if the assessment shows it isn't safe; we'd discuss it first.' 'Will my memory come back?' → 'Often it improves, sometimes a lot. I can't promise how much, but stopping gives it the best chance — and we'll track it together.' The variants. Signs of Wernicke's: 'She's confused, unsteady and has nystagmus — that's Wernicke's encephalopathy until proven otherwise. I'd give parenteral thiamine urgently, before any glucose, and transfer her to hospital.' The daughter demanding a diagnosis: 'I understand you want an answer. This test shows a short-term memory problem, and alcohol may be part of it. We need blood tests, a scan and a more detailed assessment — with your help, because your view of how she manages day to day is really valuable.' Results six months later: 'Your memory tests are better than six months ago, which fits alcohol-related memory problems improving with abstinence. Let's keep going — and keep taking the thiamine.' and the curveballs: mid-test 'What's the point of this?' → 'It checks different parts of memory — I'll explain everything at the end', then continue. Refusing to write a sentence → encourage once, then note it as not completed and move on. The daughter answering for her → 'I'd like to hear Helen's own answers for this part — thank you.' 'Am I going mad?' → 'No — this shows a short-term memory problem, and we'll find out why.' A drink this morning → note possible intoxication, retest when sober, thiamine, and revisit abstinence support. Insisting on driving → assessment first, and if unsafe, South Australian doctors must notify the registrar — discussed openly. The examiner's one-liners: why thiamine before glucose — 'Glucose can precipitate Wernicke's in thiamine-deficient patients.' What korsakoff's is — 'A chronic amnestic syndrome, anterograde amnesia with confabulation, after thiamine deficiency.' when dementia is diagnosed — 'Cognitive decline affecting daily function, after excluding delirium, depression, medicines and physical causes.'",
+   "dx": [
+    "**ISOLATED SHORT-TERM MEMORY IMPAIRMENT on MMSE in a 60-year-old two weeks abstinent after twenty years of heavy drinking — with an unfinished cause.** **The task is to explain the result, give the diagnosis, and outline management. The answer is NOT 'dementia'.**",
+    "**GIVE THE NORMAL FINDINGS FIRST, then the abnormal: 'most of it was normal — you knew the date and place, repeated the three words straight away, and your concentration, reading, writing and drawing were fine. The part that was harder was REMEMBERING THE THREE WORDS A FEW MINUTES LATER.'**",
+    "**Name the finding correctly: SHORT-TERM MEMORY. 'Long-term memory' and 'confused' are both marked as incorrect interpretations.**",
+    "**Then decline the label with a reason: 'this is a SCREENING TEST. It tells me you have a short-term memory problem, BUT NOT THE CAUSE — so I'm not saying you have dementia.'**",
+    "**Give a BROAD differential linked to her: alcohol, especially when the body is low in THIAMINE · thyroid or vitamin problems · LOW MOOD, which can look like memory loss · some MEDICINES — she is still on diazepam from the detox · a BLEED from a fall — she has had two · and conditions like Alzheimer's. SOME OF THESE ARE TREATABLE, and alcohol-related memory problems often improve after stopping.**",
+    "**MANAGEMENT HAS TWO STEPS, and the examiner wants the categories. STEP 1 — FIND OUT WHY: a full history and, with permission, a COLLATERAL from her daughter · a physical examination · a more detailed cognitive test such as the GPCOG · BLOODS (FBE, UEC, LFT, glucose, calcium, TSH, B12, folate) · a BRAIN SCAN to exclude a bleed or a growth · plus mood, vision, hearing, falls risk, a MEDICATION REVIEW and how she is managing at home.**",
+    "**THE ALCOHOL LIMB, and thiamine is not optional: START THIAMINE TODAY to protect her brain · staying off alcohol is the best thing for her memory · offer counselling, a medicine for cravings and the alcohol and drug service · and REPEAT THE TEST IN A FEW MONTHS, because it often improves.**",
+    "**STEP 2 — ONCE WE KNOW: if the assessment shows dementia, refer to a GERIATRICIAN who may consider medication for some types · arrange an aged-care assessment through MY AGED CARE · connect her and her family with DEMENTIA AUSTRALIA · discuss an ADVANCE CARE DIRECTIVE and a substitute decision-maker · and review DRIVING SAFETY.**",
+    "**Answer 'will my memory come back?' honestly: often it improves, sometimes a lot. 'I can't promise how much, but stopping gives it the best chance — and we'll track it together.'**",
+    "**If she is confused, unsteady and has NYSTAGMUS, this is WERNICKE'S ENCEPHALOPATHY until proven otherwise: PARENTERAL THIAMINE URGENTLY, BEFORE ANY GLUCOSE, and transfer to hospital.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Explain and perform the test: 'I'd like to do a short memory test called the MMSE — a screening test that checks different parts of memory and thinking. It takes about five to ten minutes; some questions are easy, some harder. I'll answer questions at the end. Is that okay?' — then all six steps without chatting. → 'What's this for?' → 'It checks different parts of memory — I'll explain everything at the end.'"
+     "**Explain the MMSE briefly — a screening test of memory and thinking, five to ten minutes, questions answered AT THE END — take consent, and administer it without being drawn into conversation.**"
     ],
     [
      "5:00",
-     "THE RESULT — NORMAL FIRST, THEN THE HARDER PART, THEN THE INTERPRETATION (see dx). ('Long-term memory' and 'confused' are both marked as incorrect.)"
+     "**Thank her. NORMAL FINDINGS FIRST, then the impaired recall. Name it SHORT-TERM MEMORY.**"
     ],
     [
      "5:30",
-     "THE DIAGNOSIS — SCREENING TEST, NOT DEMENTIA, WITH A BROAD CAUSE LIST AND 'SOME OF THESE ARE TREATABLE' (see dx) → 'SO I'VE GOT DEMENTIA?' → no, not from this test. → 'IT'S THE DRINK, ISN'T IT?' → possibly, AND WE'LL CHECK OTHER CAUSES TOO. (Blaming alcohol and stopping there makes her defensive: 'I'VE STOPPED, YOU KNOW.')"
+     "**Decline the dementia label with the screening-test reason, then give the broad differential — alcohol and thiamine, thyroid and vitamins, low mood, medicines, a bleed from a fall, Alzheimer's — and say SOME ARE TREATABLE.**"
     ],
     [
      "6:30",
-     "MANAGEMENT STEP ONE — FINDING OUT WHY, GROUPED RATHER THAN LISTED (see dx): history and collateral; examination; GPCOG; bloods; A BRAIN SCAN; and mood, vision, hearing, falls, medicines and function. → 'I'VE HAD A COUPLE OF FALLS' → that is one reason for the scan. → 'I'M ON DIAZEPAM SINCE THE DETOX' → 'THAT CAN AFFECT MEMORY, SO WE'LL LOOK AT REDUCING IT SAFELY.'"
+     "**STEP 1, grouped: history plus COLLATERAL with permission · examination · GPCOG · bloods (FBE, UEC, LFT, glucose, calcium, TSH, B12, folate) · brain scan · mood, vision, hearing, falls, MEDICATION REVIEW, function at home.**"
     ],
     [
      "7:00",
-     "THE ALCOHOL: THIAMINE TODAY — omitting it is a patient-safety failure — abstinence support with counselling, a craving medicine and the alcohol and drug service, AND REPEAT THE TEST IN A FEW MONTHS BECAUSE IT OFTEN IMPROVES."
+     "**THE ALCOHOL LIMB: thiamine TODAY · abstinence is the best thing for her memory · counselling, anti-craving medication, the alcohol and drug service · repeat the test in a few months.**"
     ],
     [
      "7:30",
-     "MANAGEMENT STEP TWO — ONCE WE KNOW (see dx): geriatrician, MY AGED CARE, DEMENTIA AUSTRALIA, an Advance Care Directive and substitute decision-maker, and DRIVING. → 'WILL MY MEMORY COME BACK IF I STAY OFF THE GROG?' → honest: often it improves, sometimes a lot, and stopping gives it the best chance."
+     "**STEP 2 — once we know: geriatrician · My Aged Care · Dementia Australia · Advance Care Directive and substitute decision-maker · DRIVING.**"
+    ],
+    [
+     "7:50",
+     "**Answer 'will my memory come back?' honestly, and invite questions.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute consultation map for this variant",
-   "ask": [
-    "'Most of the test was normal.' / 'The harder part was remembering the three words a few minutes later.' / 'That shows some trouble with your short-term memory.' / 'It's a screening test — it doesn't tell us the cause.' / 'I'm not saying you have dementia.' / 'Some causes are very treatable.'",
-    "'To find out why, I'd like to...' / 'With your permission, I'd like to speak with a family member.' / 'A brain scan to rule out a bleed or a growth.' / 'Depression can look like memory loss.' / 'That diazepam can affect memory, so we'll look at reducing it safely.'",
-    "'I'd like to start thiamine today.' / 'Stopping alcohol gives your memory the best chance to recover.' / 'Once we know the cause...' / 'My aged care, dementia Australia, an advance care directive.' / 'Often it improves, sometimes a lot. I can't promise how much, but stopping gives it the best chance.'",
-    "The variants: signs of Wernicke's → 'Confused, unsteady and nystagmus is Wernicke's encephalopathy until proven otherwise. Parenteral thiamine urgently, before any glucose, and transfer to hospital.' / the daughter demands a diagnosis → 'We need blood tests, a scan and a more detailed assessment — with your help, because your view of how she manages day to day is really valuable.' / six months later → 'Your memory tests are better, which fits alcohol-related memory problems improving with abstinence.'",
-    "The curveballs and the one-liners: refuses to write a sentence → encourage once, then note it as not completed. / the daughter answers for her → 'I'd like to hear Helen's own answers for this part.' / a drink this morning → possible intoxication; retest when sober. / insists on driving → assessment first, and if unsafe, SA doctors must notify the registrar. / why thiamine before glucose — 'Glucose can precipitate Wernicke's in thiamine-deficient patients.' / korsakoff's — 'Anterograde amnesia with confabulation after thiamine deficiency.' / when dementia is diagnosed — 'Cognitive decline affecting daily function, after excluding delirium, depression, medicines and physical causes.'"
-   ],
    "pefe": [
-    "Role-player: HELEN, 60, retired hospitality worker, divorced, LIVES ALONE; her daughter visits weekly. DRANK A BOTTLE OF WINE A DAY FOR TWENTY YEARS. TWO WEEKS AGO SHE COMPLETED A COMMUNITY DETOX AND HAS NOT DRUNK SINCE. STILL TAKING DIAZEPAM FROM THE DETOX. She has noticed FORGETTING APPOINTMENTS AND CONVERSATIONS, AND LEFT THE STOVE ON TWICE. TWO FALLS IN THE LAST SIX MONTHS WHILE DRINKING. Mood 'a bit flat', no suicidal thoughts.",
-    "During the MMSE: orientation, registration, serial sevens, language and drawing all correct; recall 1 of 3 words. Register: anxious, embarrassed about the drinking, a little defensive. Cooperative but interrupt once — 'What's this for?' Afterwards ask 'So I've got dementia?' if the doctor blames only alcohol, get defensive: 'I've stopped, you know.' Mention the falls only if asked about falls or head injuries. Mention the diazepam only if asked about medicines. Near the end: 'Will my memory come back?' and you drive to the shops.",
-    "Mark them on: the MMSE explained and done without chatting; normal findings first; 'Short-term memory'; not dementia; differentials; history and collateral; examination; GPCOG; bloods including TSH, B12, folate and calcium; imaging; mood; medicines; function, vision, hearing and falls; thiamine; abstinence support and reassessment; geriatrician; my aged care; dementia Australia; advance care directive; and driving.",
-    "What she says during the test — She interrupts once — 'What's this for?' — and being drawn into conversation mid-test is the trap",
-    "Her first question afterwards — 'So I've got dementia?'",
-    "Her second — 'It's the drink, isn't it?' — and if you blame only alcohol she gets defensive: 'I've stopped, you know'",
-    "The two things she mentions only if asked — TWO FALLS IN THE LAST SIX MONTHS WHILE DRINKING — AND DIAZEPAM FROM THE DETOX. Both change the plan: imaging and a medication review",
-    "Her history — A bottle of wine a day for twenty years — community detox two weeks ago, no fits, and nothing since — forgetting appointments and conversations, left the stove on twice",
-    "Function and the rest — Managing mostly, daughter helps with shopping — SHE DRIVES TO THE SHOPS — needs new glasses — MOOD A BIT FLAT, no suicidal thoughts, sleep not great",
-    "Who the collateral is — HER DAUGHTER KATE, who visits weekly",
-    "Her register — Anxious, embarrassed about the drinking, a little defensive",
-    "What she asks at the end — 'Will my memory come back if I stay off the grog?'",
-    "The curveballs — 'What's the point of this?' Mid-test — refusing to write a sentence — the daughter answering for her — 'Am I going mad?' — a drink this morning — and insisting on driving"
+    "**Physical examination, including gait, eye movements (NYSTAGMUS), and signs of chronic liver disease.**",
+    "**Bloods: FBE, UEC, LFT, glucose, CALCIUM, TSH, B12 and FOLATE. Imaging: CT or MRI brain to exclude a subdural haematoma or space-occupying lesion — she has had two falls.**",
+    "**Cognitive: a more detailed instrument such as the GPCOG, plus a collateral history. MMSE is out of 30; a score at or below about 24 warrants further assessment, adjusted for education.** VERIFY.",
+    "**THIAMINE FIRST, AND ALWAYS BEFORE GLUCOSE — glucose can precipitate Wernicke's in a thiamine-deficient patient.** **Korsakoff's is the chronic amnestic syndrome — anterograde amnesia with confabulation — following thiamine deficiency.**",
+    "**MEDICATION REVIEW: she is still on DIAZEPAM from the detox, which impairs memory — reduce it safely rather than abruptly.**",
+    "**Reassess after about three months of abstinence — alcohol-related impairment often improves.** **Dementia is diagnosed only when cognitive decline affects daily function AND delirium, depression, medicines and physical causes have been excluded.**",
+    "**Numbers: My Aged Care 1800 200 422 · Dementia Australia 1800 100 500 · DASSA ADIS 1300 13 1340 · Carer Gateway 1800 422 737 · TIS National 131 450.** **DRIVING: assessment first; if unsafe, SA doctors must notify the Registrar — discuss it openly with her.** VERIFY."
    ],
-   "fails": [
-    "★ Saying 'long-term memory' or 'confused' — both are marked as incorrect interpretations of an isolated recall deficit",
-    "★ Agreeing it is dementia when she asks, instead of declining the word with a reason — or blaming alcohol and stopping there, which makes her defensive",
-    "Not starting thiamine, which is a patient-safety omission",
-    "Leading with donepezil — medication follows a diagnosis, and does not suit alcohol-related impairment",
-    "Being drawn into conversation mid-test; listing tests without grouping them into the lecture's categories; and missing the falls and the diazepam, which are mentioned only if asked and which change the plan to include imaging and a medication review"
-   ],
-   "numbers": [
-    "The MMSE is 30 points · further assessment at 24 or below, adjusted for education VERIFY · reassess after about 3 months of abstinence · recall impaired alone is short-term memory, not dementia",
-    "Thiamine before any glucose · my aged care 1800 200 422 · dementia Australia 1800 100 500 · DASSA ADIS 1300 13 1340 · carer gateway 1800 422 737 · TIS 131 450 · if driving is unsafe, SA doctors must notify the registrar"
+   "ddx": [
+    [
+     "**Alcohol-related cognitive impairment** — the leading cause here",
+     "**A bottle of wine daily for 20 years; isolated short-term memory impairment with intact language and construction; two weeks abstinent**",
+     "**Quantify the drinking; collateral from her daughter**",
+     "**THIAMINE today; abstinence support; repeat cognitive testing in a few months**"
+    ],
+    [
+     "**Wernicke's encephalopathy**",
+     "**Confusion, ataxia, ophthalmoplegia or nystagmus**",
+     "**Gait and eye movements**",
+     "**PARENTERAL THIAMINE URGENTLY, BEFORE GLUCOSE, and transfer to hospital**"
+    ],
+    [
+     "**Medication effect — benzodiazepines**",
+     "**Still on diazepam from the detox**",
+     "**'Any regular medicines?' — she volunteers it only if asked**",
+     "**Reduce safely; do not stop abruptly**"
+    ],
+    [
+     "**Subdural haematoma**",
+     "**Two falls in six months while drinking; fluctuating or progressive impairment**",
+     "**'Any falls or head injuries?' and a brain scan**",
+     "**CT or MRI — one reason imaging is not optional**"
+    ],
+    [
+     "**Depression (pseudodementia)**",
+     "**Low or flat mood, poor effort, recent life change**",
+     "**Mood, anhedonia, sleep, and effort during the test**",
+     "**Treat and retest — depression can look like memory loss**"
+    ],
+    [
+     "**Reversible metabolic causes and dementia**",
+     "**Hypothyroidism, B12 or folate deficiency, hypercalcaemia; or a neurodegenerative process**",
+     "**TSH, B12, folate, calcium; GPCOG; function over time**",
+     "**Geriatrician, My Aged Care, Dementia Australia, Advance Care Directive and driving IF confirmed**"
+    ]
    ]
   },
   "source": "MMSE_Diagnosis_Management_2_Case_Tasks_Script_Notability.pdf (Helen, 60, two weeks abstinent after twenty years of heavy drinking, with recall impaired on the MMSE — an isolated short-term memory deficit, not a diagnosis of dementia; normal findings reported before the abnormal one, the interpretation named as short-term memory, the word dementia declined with a reason and a broad treatable differential given, management structured as find-out-why then once-we-know, thiamine started today, and the falls and diazepam elicited because they change the plan; Wernicke's, the demanding daughter, the six-month review and the driving question folded in)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › MMSE_Diagnosis_Management_2_Case_Tasks_Script_Notability.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Giving the abnormal result first — normal findings come FIRST (she knew the date and place, registered the three words, concentration, language and drawing were fine), then the part that was harder: remembering the three words a few minutes later",
-   "FAIL — Saying 'long-term memory' or 'confused' — both are marked as incorrect interpretations of an isolated recall deficit. The finding is short-term memory impairment",
-   "FAIL — Agreeing it is dementia when she asks, instead of declining the word with a reason — it is a SCREENING test, so it shows a memory problem but not the cause. And blaming alcohol and stopping there makes her defensive ('I've stopped, you know'): list the others too — thiamine deficiency, thyroid, B12 and folate, low mood, medicines including her diazepam, a bleed after a fall, and Alzheimer's. Some are treatable",
-   "FAIL — Not starting thiamine, which is a patient-safety omission — plus abstinence support (counselling, anti-craving medication, the alcohol and drug service) and repeating the memory test in a few months, because alcohol-related memory problems often improve",
-   "FAIL — Listing tests without grouping them into 'to find out WHY' — a full history with collateral from her daughter (with permission), examination, a more detailed cognitive test such as the GPCOG, bloods (blood count, kidneys, liver, glucose, calcium, TSH, B12 and folate), brain imaging to exclude a bleed or a growth, plus mood, medication review, vision, hearing, falls and how she manages at home",
-   "FAIL — Leading with donepezil — medication follows a diagnosis and does not suit alcohol-related impairment. 'Once we know' is the second half: geriatrician referral, an aged-care assessment through My Aged Care, Dementia Australia, an Advance Care Directive and substitute decision-maker, and a driving review. And if she is confused, unsteady and has nystagmus, that is Wernicke's until proven otherwise: parenteral thiamine BEFORE any glucose"
-  ]
+   "FAIL — Agreeing it is dementia, or saying 'long-term memory' or 'confused'.",
+   "FAIL — Blaming the alcohol and stopping there, without the other treatable causes.",
+   "FAIL — No thiamine. That is a patient-safety omission.",
+   "FAIL — Leading with donepezil. Medication follows a diagnosis and doesn't suit alcohol-related impairment.",
+   "SAY — Most of the test was normal. The harder part was remembering the three words.",
+   "SAY — It's a screening test — it doesn't tell us the cause."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-29",
