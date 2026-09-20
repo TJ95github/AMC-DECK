@@ -9855,8 +9855,8 @@
  {
   "id": "MED-24",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "You are a general practitioner.",
   "stem": [
    "Your next patient is Margaret Doyle, 65, who was admitted two weeks ago with pneumonia, treated with antibiotics, discharged, and is now well. She has a permanent pacemaker for a bradyarrhythmia and uses CPAP for obstructive sleep apnoea. She plans to travel interstate in two weeks. Two chest X-rays are available: the admission film and a repeat film taken this week.",
    "Observations: T 36.6 °C · P 72 regular · BP 128/78 · RR 16 · SpO2 97% room air."
@@ -9866,91 +9866,189 @@
    "Take a relevant focused history",
    "Counsel her about the risks of travelling and advise her accordingly"
   ],
-  "time": "8 minutes. 0:30 films · 1:30 pneumonia box · 2:30 pacemaker/CPAP · 3:45 risk factors/SADMA · 4:30 the trip · 5:15 verdict and counselling · 7:30 summary and safety-net.",
+  "findings": [
+   [
+    "Observations at the door",
+    "T 36.6 · P 72 REGULAR · BP 128/78 · RR 16 · SpO2 97% on room air · weight steady. SHE LOOKS WELL"
+   ],
+   [
+    "Physical examination",
+    "NOT REQUIRED in this station. The films and the history are the whole of it"
+   ],
+   [
+    "Admission chest film",
+    "DENSE WHITE PATCH in the middle of the RIGHT lung — right middle lobe consolidation — with the RIGHT HEART BORDER BLURRED beside it. Left lung uniformly black and normal"
+   ],
+   [
+    "The pacemaker on the film",
+    "Box with TWO WIRES running into the heart, CORRECTLY SITED, wires intact. Name it — she can see it, and not naming it costs the systematic-review mark"
+   ],
+   [
+    "Repeat film taken this week",
+    "The area that was white is BLACK AGAIN. Heart border SHARP again. COMPLETE RADIOGRAPHIC RESOLUTION. Same pacemaker, unchanged"
+   ],
+   [
+    "VERSION — the film has not cleared",
+    "Right mid-zone shadow persists and she has a lingering dry cough → DEFER TRAVEL, bloods and CT chest. She is 65 and smokes"
+   ],
+   [
+    "VERSION — the red-flag one",
+    "Two episodes of FRESH HAEMOPTYSIS and 4 kg WEIGHT LOSS → this is now a suspected lung cancer station. Urgent CT chest and respiratory referral; travel is not the priority"
+   ],
+   [
+    "VERSION — the cardiac one",
+    "Two episodes of NEAR-FAINTING while shopping since discharge → ECG and URGENT PACEMAKER INTERROGATION before she flies. Driving advice changes too"
+   ]
+  ],
+  "findingsLabel": "Observations and the two films · open when you would look",
+  "must": [
+   "FAIL — Radiology jargon at the patient. White, grey, black. Patch. Air. Nothing else.",
+   "FAIL — Describing the two films as separate events. Say 'compared with the first film' out loud.",
+   "FAIL — Never asking how many nights she actually uses the CPAP, or dropping the smoking.",
+   "FAIL — Forbidding travel with no basis, or a safety net with nothing written in it.",
+   "ASK — How many nights a week do you actually use the CPAP? A closed question gets 'yes'.",
+   "ASK — What are you planning to do while you're up there? The dive only surfaces here."
+  ],
   "back": {
-   "dx": "Fit to travel — resolved right middle lobe pneumonia (admission film: dense white patch right mid-zone, pacemaker box with two leads; this week's film: cleared, sharp heart border), symptoms settled, SpO2 97%. Two things she will NOT volunteer: CPAP only two nights a week (mask digs into her nose) and ten cigarettes a day for forty years. 'Somac' = pantoprazole — say it. Cairns, ten days, three-hour flight, staying with sister Anne — and a beginner scuba dive is booked (surfaces only if you ask what she'll do). Discriminating behaviours: hold the verdict until the history is done; ask 'how many nights a week' not 'do you use it'; ask what she plans to do; letter + written red flags because she'll be 2,500 km away.",
+   "dx": [
+    "**Community-acquired pneumonia, fully resolved**, in a 65-year-old with **obstructive sleep apnoea and poor CPAP adherence**, a **pacemaker for bradyarrhythmia**, and **ongoing smoking** — seeking pre-travel advice.",
+    "**There is no validated risk score for travel after pneumonia. Say so, then show a system.** CURB-65 and SMART-COP assess severity in acute disease, not fitness to travel.",
+    "**The four boxes, named aloud**: **has the pneumonia truly resolved · are her comorbidities controlled · what makes another infection likely · what does the trip involve?**",
+    "**Radiographic clearance normally lags clinical recovery by 4 to 6 weeks; hers has cleared at two.** Say that is genuinely reassuring. The usual **6-week film in a smoker over 50** is not needed because this one is already normal.",
+    "**Two modifiable risks are buried in the brief and she will not volunteer either: CPAP two nights a week because the mask digs in, and ten cigarettes a day for forty years.** Find both, manage both, and you pass.",
+    "**Somac is pantoprazole**, a proton pump inhibitor — say so without hesitating. **Long-term PPI use is itself a modest risk factor for pneumonia.**",
+    "**The verdict, plainly: yes, she can go** — symptoms settled, saturation normal, film clear. **There is no rule that you must wait a set time after a pneumonia**, and forbidding travel without a basis is a hard fail.",
+    "**Steer her off the scuba dive**: pressure change so soon after a pneumonia risks lung injury. **Snorkelling on the surface is fine; a real dive needs a formal dive medical first.**",
+    "Safety net must be **written**: a **letter** covering the admission, the organism, the antibiotics, the pacemaker model and the CPAP settings; **red flags** — cough returning or worsening, more breathless, fever or chills, chest pain, haemoptysis, feeling faint — **see a doctor, call 000 if severe**; and **tell the sister so she can act if Margaret can't**.",
+    "Before she goes: **influenza vaccine today**, check **pneumococcal and COVID-19** status. Up north: **no untreated creek or river water · cover cuts and avoid mud in the wet season (melioidosis) · repellent for dengue, Ross River, Barmah Forest · hydrate and walk the aisle in flight.** **Quitline 13 7848 · healthdirect 1800 022 222.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, confirm name; open question; agenda: films → recovery, heart and sleep apnoea, the trip → clear answer + something in writing"
+     "WIPE, confirm **name and date of birth**, then **acknowledge and signpost to buy your time**: **'I can already tell you the X-rays look encouraging. Let me go through both films, ask about your recovery, your heart and sleep apnoea and the trip, then give you a clear answer and something in writing.'**"
     ],
     [
      "0:30",
-     "Films: three colours → heart, spine, windpipe → normal left lung first → right mid-zone white patch → NAME the pacemaker → second film: black again, sharp heart border → 'cleared completely' → 'I think the answer will be yes — let me check a few things first'"
+     "The films, **in five steps**: **details — this one on admission, this one this week · three colours — white is bone, grey is soft tissue, black is air · landmarks — heart, spine, windpipe · THE NORMAL SIDE FIRST — your left lung is uniformly black, that is normal · then the right**."
+    ],
+    [
+     "1:00",
+     "The abnormal side, then **name the pacemaker**, then **the comparison out loud**: **'compared with the first film, the area that was white is black again, and the heart edge is sharp again. Your pneumonia has cleared completely.'**"
     ],
     [
      "1:30",
-     "Box 1 pneumonia: admitted/discharged, days of antibiotics and finished?, cough, sputum, BLOOD, SOB walking/lying flat, fever/chills/sweats, chest pain, appetite and WEIGHT"
+     "**Promise the answer, do not give it yet** — **'I think the answer will be yes. Before I commit, let me ask a few things.'** Once she has her answer she stops giving you information."
+    ],
+    [
+     "1:30",
+     "**Box 1, the pneumonia itself**: **when admitted and when home · how many days of antibiotics, did you finish the course · still coughing, bringing anything up · ANY BLOOD IN IT · short of breath walking or lying flat · fever, chills or night sweats since · chest pain on breathing in · energy, appetite, WEIGHT.**"
     ],
     [
      "2:30",
-     "Box 2: pacemaker — when, last check, tablets, racing/fluttering, dizzy spells/blackouts; CPAP — 'how many nights a week do you actually use it?' → two → acknowledge, flag you'll come back"
+     "**Box 2, her two known diseases** — for each: when diagnosed, treatment, compliance, follow-up, complications. **Pacemaker: when put in, when last checked, any heart tablets and do you take them, any racing or fluttering, any dizzy spells or blackouts.** **Then the question that decides the station: 'how many nights a week do you actually use the CPAP?'** plus daytime sleepiness, morning headaches, concentration."
     ],
     [
      "3:45",
-     "Box 3: asthma/emphysema, diabetes, kidney/liver, cancer, steroids, stroke/memory/choking; medications (Somac = pantoprazole); flu and pneumonia vaccines; smoke — how much; alcohol; occupation"
+     "**Box 3, why she got a pneumonia at all**: **asthma, emphysema, scarring · steroid tablets or inhalers, regular medications · diabetes, kidney or liver trouble, cancer · stroke, memory problems, choking on food · flu and pneumococcal vaccination.** Then **SADMA — and quantify the cigarettes.**"
     ],
     [
      "4:30",
-     "Box 4: where, when, how long; flying or driving; who with, staying with whom; WHAT will you do; insurance, enough medication"
+     "**Box 4, the trip**: **where, when, how long · flying or driving, how long a flight · who with and who are you staying with · WHAT ARE YOU PLANNING TO DO WHILE YOU'RE UP THERE · diving, boating, bushwalking, camping · travel insurance and enough medication · is there anything in particular that worries you?**"
     ],
     [
      "5:15",
-     "Verdict: yes — 'no rule that you must wait a set time after a pneumonia'. Letter (admission, antibiotics, pacemaker, CPAP settings). Red flags + 000 + tell your sister. No scuba (snorkelling fine; formal dive medical if she insists, later). CPAP: consequences, mask refit/nasal pillows/humidifier, sleep service referral, take it on the plane. Smoking: ask-advise-assess-assist-arrange in 90 s, Quitline 13 7848, NRT. Flu vaccine today, check pneumococcal and COVID. Tropical advice, flight advice"
+     "**The verdict, plainly, with the reasons.** Then **the letter**, **the red flags with 000**, **tell the sister**, and **steer her off the dive**."
     ],
     [
-     "7:30",
-     "Summary in one breath; 'have I missed anything you were worried about?'"
+     "6:15",
+     "**Return to the CPAP as promised**: **'two nights a week gives you the discomfort without the benefit'** — oxygen dips overnight, blood pressure runs higher, strain on a heart that already needs a pacemaker, more chest infections. **Fix the mask, not the machine**: different size, nasal pillows, humidifier, sleep-service refit. **Take it on the plane — airlines carry it as medical equipment.**"
+    ],
+    [
+     "7:00",
+     "**Smoking, brief and structured — ask, advise, assess, assist, arrange. Ninety seconds, never moralise.** **Quitline 13 7848**, combination nicotine replacement, and a review in a fortnight. Then **flu vaccine today**, the travel advice, and summarise: **'have I missed anything you were worried about?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'On an X-ray there are really only three colours: white is bone, grey is soft tissue like heart and muscle, black is air. Here is your heart, your spine, your windpipe down the middle. Your left lung is completely black — normal. Compare the right: a dense white patch here in the middle — that's where the infection was. And this box with two wires into your heart is your pacemaker, correctly placed, wires intact.'",
-    "'Second film — same colours, same landmarks, same pacemaker — but the area that was white is black again, and the heart edge is sharp. Your pneumonia has cleared completely. I think the answer will be yes; before I commit, let me ask about your recovery, your heart and sleep apnoea, and the trip.'",
-    "When admitted, when home? Days of antibiotics — finished? Still coughing, bringing anything up? ★ Any blood in it? Breathless walking or lying flat? Fever, chills, night sweats since? Chest pain? Appetite and weight?",
-    "Pacemaker — when put in, last checked? Any heart tablets, taken daily? Racing, fluttering, funny beating? Dizzy spells or blackouts? ★ 'And the sleep apnoea — how many nights a week do you actually use the CPAP?' → 'Thank you for being honest — I want to come back to that, there are things we can do about the mask'",
-    "Asthma or emphysema? Diabetes, kidney, liver, cancer? Steroid tablets? Stroke, memory trouble, choking on food or drink? What medications? ('Somac is pantoprazole — that settles acid') Flu and pneumonia vaccinations up to date? ★ Do you smoke, how much? Alcohol? What did you do for work?",
-    "★ Where are you going, when, how long? Flying or driving? Who with, staying with whom? What are you planning to do while you're there? Travel insurance, enough of your medications?",
-    "'Yes, you can make this trip. Symptoms settled, oxygen normal, repeat film clear — there is no rule you must wait a set time after a pneumonia; what matters is that you've recovered, and you have.'",
-    "'One thing I'd steer you away from: the scuba dive. Diving puts the lungs under pressure and so soon after a pneumonia there's a real risk of lung injury. Snorkelling on the surface is fine. If you genuinely want to dive you need a formal dive medical first — and I'd rather that waited.'"
-   ],
    "pefe": [
-    "No examination task. If the examiner asks for a doctor-level read: erect PA films; admission — right middle lobe consolidation with loss of the right heart border, dual-chamber pacemaker in situ with leads in the right atrium and right ventricle, no effusion; repeat — resolution of consolidation, right heart border restored",
-    "The letter: admission dates, antibiotic given, pacemaker (model/date), CPAP settings, medications, allergies, GP contact; hand over to any doctor in Cairns",
-    "Red flags, written: cough returning or worsening · more breathless · fever or chills · chest pain · coughing up blood · feeling faint → see a doctor; severe → 000; tell Anne so she can act if you can't",
-    "CPAP counselling: two nights a week = the discomfort without the benefit; untreated OSA → repeated overnight desaturation, higher BP, strain on a heart that already needs a pacemaker, more chest infections; fixes — different mask size, nasal pillows, humidifier; refer back to the sleep service for a refit; take the machine on the plane (airlines carry it as medical equipment — noted in the letter)",
-    "Smoking, 90 seconds: 'I won't lecture you, but at ten a day smoking is the biggest single thing making another pneumonia likely — and the one thing we can change. Have you thought about stopping?' → Quitline 13 7848 (they ring you back), nicotine patch + lozenge/gum, review a fortnight after she's home. Never moralise; if she says 'after the trip', accept it as a start",
-    "Vaccines and travel: influenza today (adjuvanted from 65), check pneumococcal (funded at 70; from 50 Aboriginal and Torres Strait Islander; earlier with risk conditions) and COVID booster; up there — avoid coughs and crowded indoor places while the lungs finish healing, repellent, don't drink from creeks, wet season keep cuts covered and out of mud; on the flight drink water and walk about",
-    "SA: Country Health Connect for the sleep-service referral pathway if rural; healthdirect 1800 022 222; TIS 131 450"
+    "**No physical examination is required.** The observations are handed to you at the door and the two films are on the desk.",
+    "**Compare the films, never describe them separately.** The mark is for the comparison — say **'compared with the first film'** before every observation on the second.",
+    "**Name the pacemaker on the film** and say it is correctly sited with intact wires.",
+    "For the examiner, not the patient: **radiographic clearance normally takes 4 to 6 weeks** and **a repeat film at 6 weeks is standard in a smoker over 50** to exclude a lesion behind the pneumonia. Hers is already clear, so the six-week film is not needed — **but keep a low threshold given the smoking**.",
+    "Investigations only if the picture changes: **not clearing or still symptomatic → bloods and CT chest · haemoptysis or weight loss → urgent CT chest and respiratory referral · presyncope or syncope → ECG and pacemaker interrogation before flying · swinging fever and pleuritic pain → ultrasound and CT for empyema.**",
+    "**Severity tools, if the examiner pushes**: **CURB-65 — confusion, urea over 7, RR 30 or more, BP under 90 systolic or 60 or less diastolic, age 65 or over, one point each.** **SMART-COP, the Australian tool for predicting need for intensive respiratory or vasopressor support — 3 or more is high risk.** VERIFY cut-offs. **Neither is validated for travel risk.**",
+    "**Fitness to fly**: cabins are pressurised to roughly **1500 to 2500 m equivalent altitude**, so arterial oxygen falls in everyone. **There is no fixed interval after pneumonia** — the standard is clinical recovery with an improved film. Formal in-flight oxygen assessment is for chronic lung disease or resting hypoxaemia. VERIFY current aviation guidance.",
+    "**Pacemaker and airport screening**: carry the **identification card**, walk through the archway at normal pace and **do not linger**, ask for a hand search if preferred, **handheld wands should not be held over the device**. Aircraft systems do not interfere with modern pacemakers."
    ],
-   "fails": [
-    "Answering 'yes, off you go' after the films and losing the history — or never giving a clear verdict at all ★",
-    "Accepting 'yes I've got the machine' — never asking how many nights ★",
-    "Never asking about smoking, or not quantifying it",
-    "Not asking what she'll do on the trip — the dive advice is the only patient-specific advice in the station",
-    "Safety-net with nothing written; no letter; no red flags; no 000",
-    "Starting the film with the abnormality; not naming the pacemaker; not comparing the two films; turning smoking into a full cessation consult; lecturing (she becomes defensive: 'I've heard all this before')"
-   ],
-   "numbers": [
-    "Quitline 13 7848 · healthdirect 1800 022 222 · TIS 131 450 · 000",
-    "Radiographic clearance normally 4–6 weeks · repeat film at 6 weeks in smokers over 50 · CURB-65 and SMART-COP ≥3 are severity tools at presentation, NOT travel tools · cabin altitude equivalent 1,500–2,500 m VERIFY",
-    "Influenza annually, adjuvanted from 65 · pneumococcal funded at 70 (50 for Aboriginal and Torres Strait Islander adults; earlier with risk conditions) VERIFY current NIP",
-    "Long-term PPI is a modest pneumonia risk factor · OSA untreated → hypertension, arrhythmia, higher infection risk · CPAP adherence target ≥4 h/night on ≥70% of nights VERIFY",
-    "Variant 1 examiner: 'what is her risk score?' → 'there is no validated risk score for travel after pneumonia; I assessed her under four headings — complete resolution, comorbidity control, ongoing risk factors, demands of the trip — and she is fit, with two modifiable risks addressed'",
-    "Variant 2 still symptomatic, shadow not cleared: 'my advice is different from what you hoped' — persistent cough and incomplete clearance at 65 with a smoking history → bloods and CT chest before travel to be certain nothing sits behind the infection; postpone a few weeks; book the scan this week",
-    "Variant 3 overseas: destination vaccines, food/water, mosquitoes, insurance with declared pre-existing conditions, medications in hand luggage with a letter, nearest reliable facility"
+   "ddx": [
+    [
+     "**Fully resolved CAP** — the answer",
+     "Asymptomatic, film clear, well at rest",
+     "No cough, no fever, normal saturation",
+     "Nothing further — **document and advise**"
+    ],
+    [
+     "Incomplete or slowly resolving pneumonia",
+     "Persisting cough, fatigue, low-grade fever",
+     "Symptoms not improving by 2 to 3 weeks",
+     "Repeat film, bloods, consider CT — semi-urgent"
+    ],
+    [
+     "**Lung cancer behind the pneumonia** — must not miss",
+     "**Age 65, current smoker, non-resolving shadow**",
+     "**Haemoptysis, weight loss, hoarseness, clubbing**",
+     "**Her film is clear, so say so. Otherwise CT chest**"
+    ],
+    [
+     "Empyema or lung abscess",
+     "Swinging fever, pleuritic pain, ongoing sepsis",
+     "Fever after discharge, foul sputum",
+     "CXR, ultrasound, CT, **drainage** — urgent"
+    ],
+    [
+     "Bronchiectasis",
+     "Recurrent infections, daily purulent sputum",
+     "How many chest infections in the last two years",
+     "HRCT chest"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Hospital admission, immobility, **an upcoming long flight**",
+     "Pleuritic pain, calf swelling, sudden dyspnoea",
+     "**Wells score, CTPA** — urgent"
+    ],
+    [
+     "Decompensating heart failure",
+     "Orthopnoea, ankle swelling, weight gain",
+     "Pillows at night, PND, JVP, oedema",
+     "BNP, echocardiogram — urgent"
+    ],
+    [
+     "**Pacemaker malfunction or arrhythmia**",
+     "Palpitations, presyncope, blackouts",
+     "Date of the last device check, 'funny' beats",
+     "**ECG and device interrogation** — urgent, and before she flies"
+    ],
+    [
+     "**Untreated OSA driving all of it**",
+     "**Non-adherent CPAP**, daytime somnolence",
+     "**Nights per week of actual use**, morning headache",
+     "**Sleep physician review and an adherence download** — important"
+    ],
+    [
+     "Proton pump inhibitor use",
+     "On pantoprazole (Somac)",
+     "Indication, duration, ongoing need",
+     "Review the indication; deprescribe if able"
+    ],
+    [
+     "Aspiration",
+     "Stroke, dementia, dysphagia, poor dentition",
+     "Choking or coughing on food or drink",
+     "Speech pathology swallow assessment"
+    ]
    ]
   },
   "source": "Post_Pneumonia_Travel_2_Case_Tasks_Script_Notability.pdf",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Post_Pneumonia_Travel_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Answering 'yes, off you go' after the films — once she has her answer she stops giving you information; 'I think the answer will be yes — let me check a few things first'",
-   "FAIL — Accepting 'yes, I've got the machine' — ask how many nights a week she actually uses the CPAP; two nights is the hidden agenda and it is fixable (mask refit, nasal pillows, humidifier)",
-   "FAIL — Never asking about smoking, or not quantifying it — ten a day for forty years, the single biggest thing making another pneumonia likely; ask, advise, Quitline 13 7848, ninety seconds, no lecture",
-   "FAIL — Not asking what she will do on the trip — the dive is the only patient-specific advice in the station: no scuba so soon after a pneumonia, snorkelling on the surface is fine",
-   "FAIL — Accepting 'the cough has gone' and skipping haemoptysis and weight loss — 65 and a smoker; those two questions are what stop this being a missed cancer",
-   "DO — The X-rays in order: three colours, landmarks, normal side, abnormal side, name the pacemaker, then compare the films; and a written letter with red flags and 000 — 'come back if worried' is not a safety net 2500 km away"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Post_Pneumonia_Travel_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-25",
