@@ -19345,9 +19345,8 @@
  {
   "id": "MED-70",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Renal unit of a metropolitan teaching hospital; you are the resident. A 12-lead ECG is supplied with the stem — read it before you enter. Vitals available on request. Older recall adds a fourth task: outline your immediate management.",
   "stem": [
    "Mr John Whitfield, 60, known end-stage kidney disease on maintenance haemodialysis, attends for his scheduled session. He has had several days of palpitations and diarrhoea. ECG provided: tall, narrow-based, symmetrical peaked T waves, most marked in the mid-precordial leads; QRS normal; P waves preserved."
   ],
@@ -19356,99 +19355,211 @@
    "Ask the examiner for the relevant investigations",
    "Explain the condition to the patient"
   ],
-  "time": "8 minutes: 40 s opening · 3 min history · 45 s investigations · 2.5 min explanation · 45 s safety-net and close. Read the ECG outside and say so · vitals from the examiner · warn about the pace · kidney background, ★ read the drug list ALOUD · symptom sweep in 25 s · ★ four precipitants: diet · missed dialysis · 'new — OR ANY CHANGE to' medications · fluid loss · tissue breakdown in 10 s · three named investigations · ★ diagnosis by its proper name, three causes, symptom linked · safety-net · teach-back.",
+  "findings": [
+   [
+    "The ECG, handed to you OUTSIDE the room",
+    "TALL, NARROW-BASED, SYMMETRICAL PEAKED T WAVES, most marked in the mid-precordial leads. QRS DURATION NORMAL. P WAVES PRESERVED. You do NOT have to request it — you are expected to have interpreted it BEFORE you sit down, and to say so in your first sentence"
+   ],
+   [
+    "Vital signs — ask for them by name",
+    "BP 132/78 · PULSE 88 REGULAR · RR 16 · SpO2 97% RA · T 36.7. HE IS HAEMODYNAMICALLY STABLE — SAY SO OUT LOUD. Candidates who never ask are marked down even when the patient is well"
+   ],
+   [
+    "Investigation 1 — UEC",
+    "POTASSIUM 5.9. Ask for it by ANALYTE: 'urea, electrolytes and creatinine — SPECIFICALLY THE POTASSIUM, along with sodium and bicarbonate.' 'Renal function tests' scores NOTHING"
+   ],
+   [
+    "Investigation 2 — eGFR against baseline",
+    "eGFR 10–12, consistent with his known end-stage disease"
+   ],
+   [
+    "Investigation 3 — blood gas",
+    "ESSENTIALLY NORMAL. Ask for arterial or venous, 'for the pH, bicarbonate and a RAPID potassium'. If challenged: 'ACIDOSIS DRIVES POTASSIUM OUT OF THE CELLS, so it changes both my interpretation and my management'"
+   ],
+   [
+    "Reading the numbers back",
+    "'The potassium is 5.9 — MILDLY ELEVATED BY THE NUMBER, BUT HE HAS ECG CHANGES, WHICH MAKES THIS SIGNIFICANT REGARDLESS OF THE LEVEL. The gas shows no significant acidosis, so this is REDUCED CLEARANCE AND INCREASED RETENTION rather than a shift out of the cells.' Saying '5.9 is only mildly high' without the ECG sentence reads as false reassurance"
+   ],
+   [
+    "The medication list, handed to you on paper",
+    "PERINDOPRIL · HYDROCHLOROTHIAZIDE · ERYTHROPOIETIN. READ IT ALOUD — if you glance at it silently the examiner cannot mark that you registered the ACE inhibitor"
+   ],
+   [
+    "THE TWO FACTS HE WITHHOLDS",
+    "1 HE MISSED MONDAY'S DIALYSIS — given only if you ask about MISSED OR SKIPPED SESSIONS. 2 HIS GP INCREASED THE DOSE OF ONE TABLET LAST WEEK — given ONLY if you ask about A CHANGE to existing medication. ASK ONLY ABOUT 'NEW' MEDICATIONS AND THE BRIEFED ANSWER IS A FLAT 'NO'. Asked which tablet, he does not know"
+   ],
+   [
+    "The third precipitant",
+    "FOUR DAYS OF WATERY DIARRHOEA six or seven times a day, HARDLY DRINKING ANYTHING, LIGHT-HEADED ON STANDING — volume depletion causing AKI on CKD. No vomiting, no falls, no muscle pain, no dark urine"
+   ],
+   [
+    "His hidden fear",
+    "HE THINKS HE IS HAVING A HEART ATTACK — his brother died that way at 58. He interrupts at about one minute: 'MY HEART'S BEEN GOING LIKE A DRUM — SHOULD I BE WORRIED?' Name it, park it with a promise, and come back to it"
+   ]
+  ],
+  "findingsLabel": "The ECG, the numbers, and the two facts he withholds",
+  "must": [
+   "FAIL — Calling hyperkalaemia the diagnosis. It is a laboratory state, not a diagnosis.",
+   "FAIL — Asking only about NEW medications, so the dose increase is never found.",
+   "FAIL — Never asking about missed dialysis, or not arranging dialysis today.",
+   "FAIL — A full SOCRATES of the diarrhoea, so three minutes buys no precipitant.",
+   "ASK — Any new medications, OR ANY CHANGE to the ones you already take?",
+   "ASK — Have you missed any dialysis sessions?"
+  ],
   "back": {
-   "dx": "Acute kidney injury on end-stage kidney disease with hyperkalaemia (K 5.9 with ECG changes = treat as severe) — multifactorial: (1) perindopril dose increased by the GP last week (he can't say which tablet; deduce it from pharmacology — of perindopril, hydrochlorothiazide, erythropoietin, the ACE inhibitor is the one that raises potassium), (2) missed Monday's dialysis — a session's worth of potassium not removed, (3) four days of watery diarrhoea with poor intake and postural dizziness — volume depletion. eGFR 10–12 (baseline ESKD); VBG no significant acidosis → reduced clearance and retention, not a transcellular shift. 'You have hyperkalaemia' is a laboratory state, not a diagnosis — the commonest fail. Explain: 'your kidneys have taken a sudden knock on top of the long-standing damage — an acute injury on chronic kidney disease'; three reasons stacked; potassium controls the heart's electrical rhythm, hence the palpitations. Plan: cardiac monitor, dialysis brought forward to today, hold the perindopril, letter to the GP, don't stop anything else alone. Handle 'my GP did this to me' by explaining the monitoring gap (UEC 1–2 weeks after any ACE-i dose change), not the person.",
+   "dx": [
+    "**Acute kidney injury on end-stage kidney disease, with hyperkalaemia — MULTIFACTORIAL.** Precipitated by **(1) an INCREASED DOSE OF HIS ACE INHIBITOR, perindopril · (2) a MISSED DIALYSIS SESSION · (3) VOLUME DEPLETION from days of diarrhoea and poor intake.**",
+    "**THE DISCRIMINATING ISSUE: hyperkalaemia is a STATE, not a diagnosis.** Everyone finds the high potassium — it is handed to you on the ECG before you enter. **The mark is for naming a DIAGNOSIS and attaching a CAUSE.** **Fails: 'you have a condition called hyperkalaemia.' Passes: 'you have an ACUTE KIDNEY INJURY ON TOP OF YOUR LONG-STANDING KIDNEY DISEASE, and it has pushed your potassium up.' Distinguishes: the same sentence PLUS 'and the main reason is the increase in your blood pressure tablet.'**",
+    "**A three-minute history is NOT a shortened long history — it is a DIFFERENT TASK.** Pathway one, analysing the diarrhoea and palpitations in full, **uses the entire three minutes and reaches no cause.** Pathway two, accepting the presenting complaints as given and spending the time on **WHY THE POTASSIUM ROSE**, passes.",
+    "**THE FOUR PRECIPITANT QUESTIONS: 1 any big change in your DIET · 2 have you MISSED ANY DIALYSIS SESSIONS · 3 any new medications OR ANY CHANGE to the ones you already take, including anything from the chemist or herbal · 4 with the diarrhoea, can you KEEP FLUIDS DOWN, any vomiting, DIZZY ON STANDING?** **The words 'or any change' are worth more than any other five words in this station.**",
+    "**THE THIAZIDE TRAP.** Candidates routinely blame the thiazide. **Thiazides are potassium-DEPLETING** — they are combined with ACE inhibitors precisely because the two effects OPPOSE each other, which is also why **spironolactone with an ACE inhibitor is the dangerous combination.** **Erythropoietin does not cause hyperkalaemia.** By mechanism and by elimination, **it is the perindopril.**",
+    "**CORRECTION — diarrhoea causes potassium LOSS, so it does not raise potassium directly.** It contributes by **causing volume depletion and an AKI, and by losing bicarbonate and worsening acidosis.** **Do not tell the patient the high potassium is causing his diarrhoea — the diarrhoea came first and helped cause the hyperkalaemia.**",
+    "**Thresholds: MILD 5.5–5.9 · MODERATE 6.0–6.4 · SEVERE 6.5 or above — BUT ANY LEVEL WITH ECG CHANGE IS TREATED AS SEVERE.** **ECG order of progression: PEAKED T → FLAT P → LONG PR → WIDE QRS → SINE WAVE → VF or asystole.**",
+    "**Management: continuous cardiac monitoring and IV access · CALCIUM GLUCONATE 10%, 10 mL IV over 2–5 MINUTES if there are ECG changes, repeated if they persist — it STABILISES THE MEMBRANE and DOES NOT LOWER THE POTASSIUM · INSULIN–DEXTROSE, 10 units short-acting in 50 mL of 50% glucose over 15–30 min, onset about 15 min, lasts 4–6 h, with HOURLY BSL FOR 6 HOURS because LATE HYPOGLYCAEMIA is the commonest complication · SALBUTAMOL 10–20 mg nebulised as an ADJUNCT, which may worsen his palpitations so warn him · HAEMODIALYSIS is DEFINITIVE, and he already has access.** VERIFY.",
+    "**STOP THE PERINDOPRIL and document why, so it is not restarted by default. Bring dialysis forward to TODAY. Recheck potassium at 1–2 HOURS because shifting agents wear off and it rebounds. Repeat the ECG after treatment, before you reassure him.** **Recheck U&E 1–2 weeks after any ACE inhibitor dose change.**",
+    "**The blame moment: 'I can understand why it feels that way. That medicine was increased FOR A GOOD REASON — to protect your heart and your blood pressure — and in most people it is entirely safe. In someone whose kidneys are as far along as yours, it needs A BLOOD TEST A WEEK OR TWO AFTERWARDS, and that's the part we need to tighten up. I'll write to your GP today. PLEASE DON'T STOP ANY OF YOUR OTHER TABLETS ON YOUR OWN.'** **Never say 'your GP made a mistake.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "Outside: 'peaked narrow-based T waves V3–V4, QRS narrow, P waves present — hyperkalaemia, not yet advanced' · ★ 'Examiner, could I have BP, pulse, RR and saturations?' → 132/78, 88 reg, 16, 97% RA, afebrile → 'haemodynamically stable, I'll proceed'"
+     "**Outside the room, read the ECG: peaked, narrow-based T waves, QRS narrow, P waves present.** Then **to the examiner: 'before I begin, could I have his blood pressure, pulse rate, respiratory rate and oxygen saturation? And I NOTE THE ECG PROVIDED SHOWS PEAKED T WAVES WITH A NORMAL QRS, so I will be treating this as hyperkalaemia from the outset.'**"
+    ],
+    [
+     "0:20",
+     "**Greet, confirm identity, and WARN ABOUT THE PACE: 'I've only got a few minutes, so I'm going to ask some quick, direct questions — is that all right?'** That gives you permission to be brisk without appearing rude. **Do not open with 'tell me all about it' — in a three-minute history that single question can eat fifty seconds.**"
     ],
     [
      "0:40",
-     "WIPE, confirm identity · ★ 'I've only got a few minutes, so I'm going to ask short, direct questions — is that all right?' · 'My heart's going like a drum — should I be worried?' → name it, park it with a promise, keep the clock"
+     "**Block 1, the kidney background: HOW LONG have you had the kidney problem · WHAT TREATMENT, how often is dialysis and WHICH DAYS · WHAT MEDICATIONS are you on · are you seeing your GP and your kidney specialist regularly?** **READ THE MEDICATION LIST ALOUD.**"
     ],
     [
-     "1:10",
-     "Kidney background: how long (6 y), how often (twice weekly, Mon/Thu), ★ medications — READ THE LIST ALOUD: perindopril, hydrochlorothiazide, erythropoietin · GP and nephrologist follow-up"
+     "1:15",
+     "**Block 2, symptoms of hyperkalaemia — a rapid string, 25 seconds, no analysis: apart from the racing heart, any unusual TIREDNESS OR WEAKNESS · any NUMBNESS OR TINGLING, or weakness in your arms or legs · any CHEST PAIN or shortness of breath · have you felt SICK or been vomiting · have you FAINTED or come close?**"
+    ],
+    [
+     "1:40",
+     "**Block 3, the four precipitants — THE MARKS LIVE HERE. 1 HAS THERE BEEN ANY BIG CHANGE IN YOUR DIET RECENTLY?**"
     ],
     [
      "1:50",
-     "Symptom sweep as one string, 25 s: tiredness/weakness (yes, legs heavy), numbness/tingling, chest pain (no), SOB, nausea/vomiting (queasy), syncope (no)"
+     "**2 HAVE YOU MISSED ANY DIALYSIS SESSIONS?** → Monday. **Acknowledge without lecturing: 'that's important — it means a whole session's worth of potassium hasn't been removed.'** **And if it is a rural case, ASK WHY — the barrier is usually logistic, not wilful.**"
     ],
     [
-     "2:15",
-     "★ Four precipitants: 1 diet change? (no, off food) · 2 ★ missed dialysis? (Monday — up all night with diarrhoea) · 3 ★ 'new medications — OR ANY CHANGE to the ones you take, including chemist/herbal?' (GP put one dose up last week; doesn't know which) · 4 diarrhoea: fluids down? vomiting? dizzy standing? (hardly drinking; 6–7/day; light-headed)"
+     "2:05",
+     "**3 ANY NEW MEDICATIONS — OR ANY CHANGE TO THE ONES YOU ALREADY TAKE? Including anything from the chemist, or herbal.** → the GP put the dose up on one. Ask which; he does not know; **reason it out aloud to the examiner: 'of the three, the one that raises potassium is the perindopril. I'll confirm from his dispensing record.'**"
     ],
     [
-     "3:20",
-     "Tissue breakdown, 10 s: falls, injuries, severe muscle pain, dark urine → no. To examiner: 'of the three, the one that raises potassium is the perindopril — I'll confirm from the dispensing record'"
+     "2:25",
+     "**4 WITH THE DIARRHOEA — have you been able to KEEP FLUIDS DOWN · any vomiting · DO YOU FEEL DIZZY WHEN YOU STAND?**"
     ],
     [
-     "3:40",
-     "★ Investigations by analyte: UEC — specifically potassium, plus sodium and bicarbonate; eGFR vs baseline; VBG/ABG for pH, bicarbonate and rapid K; add FBE, Ca, PO4, Mg, BSL → K 5.9, eGFR 10–12, gas normal. 'Why a gas?' → 'acidosis drives potassium out of cells — changes interpretation and management'"
+     "2:45",
+     "**Block 4, tissue breakdown — ten seconds, and do NOT open a falls assessment: any FALLS, INJURIES or a LONG LIE recently · any SEVERE MUSCLE PAIN or DARK URINE?**"
     ],
     [
-     "4:30",
-     "Read back: 'mildly elevated by number but he has ECG changes, so significant regardless of level; eGFR fits ESKD; no acidosis → reduced clearance and retention, not shift'"
+     "3:00",
+     "**Three named investigations: UEC, SPECIFICALLY THE POTASSIUM with sodium and bicarbonate · eGFR COMPARED WITH BASELINE · ARTERIAL OR VENOUS BLOOD GAS for pH, bicarbonate and a rapid potassium.** Then, flagged as secondary: **FBC, calcium, phosphate and magnesium, BSL, CK if any fall, stool MCS if the diarrhoea persists.**"
     ],
     [
-     "5:00",
-     "★ Diagnosis by name: 'your kidneys have taken a sudden knock on top of the long-standing damage — an acute injury on chronic kidney disease' · ★ 'three reasons, stacked': perindopril dose up → holds potassium; missed session → not taken off; diarrhoea dried you out · potassium controls the heart's rhythm → your racing heart"
+     "3:45",
+     "**Read the numbers back with the ECG sentence attached.**"
+    ],
+    [
+     "4:15",
+     "**Name the DIAGNOSIS, not the number: 'your kidneys have taken a further, sudden knock on top of the long-standing damage — an ACUTE INJURY ON TOP OF CHRONIC KIDNEY DISEASE.'**"
+    ],
+    [
+     "4:45",
+     "**Say 'THREE REASONS' and then give three: the PERINDOPRIL dose went up and it makes the body hold on to potassium, a mineral in the blood · you MISSED A DIALYSIS SESSION, so a whole session's worth wasn't taken off · the DIARRHOEA HAS DRIED YOU OUT.**"
+    ],
+    [
+     "5:30",
+     "**Link it to HIS symptom: 'the potassium is now high, and THAT is what's causing the racing of your heart — potassium controls the heart's electrical rhythm, which is why we take it seriously. But we can bring it down today, and you're in exactly the right place.'** Then **handle the blame moment if it comes.**"
     ],
     [
      "6:30",
-     "'My GP did this to me?' → increased for a good reason; needs a blood test 1–2 weeks later — that's the bit to tighten; I'll write today · plan: monitor, dialysis today, hold perindopril, don't stop anything else alone · safety-net: racing heart, chest pain, faint, weak limbs → tell a nurse now · ★ teach-back: 'what will you tell your wife?' · 'anything still worrying you?' (fear of a heart attack like his brother; fear dialysis is failing)"
+     "**The plan: heart monitor · DIALYSIS BROUGHT FORWARD TO TODAY · HOLD THE PERINDOPRIL · a letter to the GP · 'don't stop any of your other tablets on your own.'** Then **SAFETY-NET: racing heart again, chest pain, feeling faint, or weak limbs → tell a nurse straight away.**"
+    ],
+    [
+     "7:20",
+     "**TEACH-BACK: 'would you mind telling me in your own words what you'll say to your wife?'** Then **'is there anything you're still worried about?'** — and if the cardiac fear has not surfaced, this is where it does."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I begin — could I have his blood pressure, pulse, respiratory rate and saturations?' / 'The ECG shows peaked T waves with a narrow QRS, so I'll approach this as hyperkalaemia.'",
-    "★ 'I've only got a few minutes with you, so I'm going to ask short, direct questions — is that all right?'",
-    "'I can hear that it's frightening you, and I promise I'll come back to it properly. A few quick questions first so I get it right.'",
-    "'How long have you had the kidney problem, and how often is dialysis?' / 'What medications are you on?' → read aloud: 'perindopril, hydrochlorothiazide, erythropoietin injections'",
-    "'Has there been any big change in your diet recently?' / ★ 'Have you missed any dialysis sessions?' / ★ 'Any new medications — OR any change to the ones you already take? Including anything from the chemist or anything herbal?'",
-    "'With the diarrhoea — have you been able to keep fluids down? Any vomiting? Dizzy when you stand?' / 'Any falls or injuries, severe muscle pain or dark urine?'",
-    "★ 'Urea, electrolytes and creatinine — specifically the potassium, with sodium and bicarbonate; his eGFR against baseline; and a blood gas for pH, bicarbonate and a rapid potassium.' (never 'renal function tests')",
-    "★ 'Mildly elevated by the number, but he has ECG changes, which makes this significant regardless of the level.'",
-    "★ 'Your kidneys have taken a sudden knock on top of the long-standing damage — we call it an acute injury on top of chronic kidney disease.' / 'Three things caused this, and they've stacked up together.' / 'Potassium is a mineral in the blood, and it controls the heart's electrical rhythm.'",
-    "'So my GP did this to me?' → 'It was increased for a good reason — it protects the heart and blood pressure. With kidneys like yours it needs a blood test a week or two later, and that's the bit we need to tighten. I'll write to him today.' / 'Please don't stop any of your other tablets on your own — we'll work out together which ones stay.' / ★ 'Could you tell me in your own words what you'll say to your wife?'"
-   ],
    "pefe": [
-    "Role-player: John, 60, retired truck driver, wife, northern suburbs; ESKD 6 y, HD Mon/Thu; carries a printed list (perindopril, hydrochlorothiazide, erythropoietin), takes them reliably, doesn't know what they do; ex-smoker 15 y, 2 beers weekends; 4 days watery diarrhoea 6–7/day no blood, barely eating/drinking, light-headed standing, 3 days palpitations, exhausted, heavy legs; no chest pain, syncope, falls, vomiting. Holds back unless asked directly: missed Monday's dialysis; GP increased one dose last week ('any NEW meds?' → 'no, nothing new'); if asked which tablet — doesn't know. Interrupts at ~1 min 'should I be worried?'; indignant once at 'so my GP did this?'; 'sorry — what does that mean?' at jargon; hidden agenda: brother died of a heart attack at 58, fear dialysis is 'stopping working'",
-    "Examiner returns: BP 132/78, PR 88 reg, RR 16, SpO2 97% RA, T 36.7 · K 5.9 · eGFR 10–12 · VBG essentially normal · ECG peaked T, narrow QRS, P present",
-    "Variant A — four-task version (management, ~90 s of bullets): continuous monitoring, IV access; ECG changes → calcium gluconate 10% 10 mL IV over 2–5 min (stabilises myocardium, does not lower K), repeat if changes persist; insulin–dextrose 10 units short-acting in 50 mL 50% glucose over 15–30 min, hourly BSL × 6 h; nebulised salbutamol 10–20 mg adjunct; definitive = haemodialysis brought forward today; cease perindopril; cautious volume replacement against dry weight; recheck K and ECG",
-    "Variant B — ECG: absent P, broad QRS, rate 44 → 'severe hyperkalaemia with imminent arrest risk — call for help, MET call, calcium gluconate now, insulin–dextrose, renal registrar for immediate dialysis; history alongside, not before' ★ courtesy after recognition",
-    "Variant C — new plant-based diet + low-salt substitute: don't undo a healthy change; salt substitutes are potassium chloride and can be the biggest single source; renal dietitian today · Variant D — mid-north patient missed two sessions, transport failed: not his fault; renal social worker to fix PATS transport before discharge — ask WHY a session was missed, usually logistic",
-    "SA: renal unit/nephrologist; PATS for rural dialysis travel; MedSTAR 1300 13 12 33 for retrieval; recheck UEC 1–2 weeks after any ACE-i/ARB dose change"
+    "**Ask for the observations before you start** — ten seconds, always, even in a stable patient.",
+    "**Name the ANALYTE, not the category. The three: UEC with potassium, sodium and bicarbonate · eGFR against baseline · blood gas for pH, bicarbonate and a rapid potassium.**",
+    "**Secondary, if invited: FBC — anaemia of CKD, and a platelet or white cell count that raises PSEUDOhyperkalaemia · calcium, phosphate and magnesium · BSL · CK if any fall · stool MCS if the diarrhoea persists.**",
+    "**Do not miss: any ECG change BEYOND peaked T waves — flat P, long PR, wide QRS, sine wave · bradycardia or a broad-complex rhythm · syncope, chest pain or profound weakness · ongoing large-volume fluid loss with no access to dialysis.**",
+    "**Avoid: RESINS ALONE acutely — too slow to matter, and modern binders (sodium zirconium cyclosilicate, patiromer) are for ONGOING control, not the emergency · SODIUM BICARBONATE as a routine step, reserved for significant acidosis because the sodium load is poorly tolerated in ESKD · LARGE-VOLUME SALINE in an anuric dialysis patient — replace cautiously against DRY WEIGHT, not litres · telling him to stop all his tablets.**",
+    "**Do NOT ask in this station: a full SOCRATES of the diarrhoea or palpitations · a complete SADMA · a full family history · a travel and food-poisoning screen.** All defensible; **none earns a mark here, and each costs you a precipitant.**",
+    "**If the ECG deteriorates — absent P waves, broad QRS, bradycardia — RECOGNITION PRECEDES COURTESY: call for help and a MET call, give calcium NOW, start insulin–dextrose, and speak to the renal registrar for immediate dialysis. Take the history ALONGSIDE that, not before it.**"
    ],
-   "fails": [
-    "Asking only about NEW medications — the briefed answer is 'no' and you leave without the diagnosis ★",
-    "Never asking about missed dialysis ★",
-    "'You have hyperkalaemia' as the diagnosis instead of AKI on chronic kidney disease ★",
-    "Taking a polite three-minute history while the QRS is broad (Variant B) ★",
-    "Never asking for observations; glancing at the drug list silently instead of reading it aloud",
-    "'I'd do renal function tests' — no analyte named; '5.9 is only mildly high' without the ECG sentence",
-    "Naming one cause instead of three; blaming the GP; no safety-net or teach-back; telling him to stop eating vegetables (Variant C)"
-   ],
-   "numbers": [
-    "K mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · ★ any level with ECG change = severe · here K 5.9, eGFR 10–12, HD twice weekly, ESKD 6 y",
-    "Calcium gluconate 10% 10 mL IV over 2–5 min, repeat if ECG changes persist · insulin–dextrose 10 units in 50 mL 50% glucose over 15–30 min, onset ~15 min, lasts 4–6 h, BSL hourly × 6 h · salbutamol 10–20 mg neb",
-    "Recheck K at 1–2 h and repeat ECG after treatment · UEC 1–2 weeks after any ACE-i dose change",
-    "Timing: 40 s open · 3 min history · 45 s ix · 2.5 min explain · 45 s close",
-    "MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**ACE inhibitor dose increase** — the answer",
+     "**Recent prescription CHANGE; on perindopril; ESKD removes the reserve**",
+     "**'Any change to your existing medicines?'** Read the script aloud",
+     "Confirm from GP letter or dispensing history — **high**"
+    ],
+    [
+     "**Missed dialysis**",
+     "**Unwell at home; a session skipped this week**",
+     "**'Have you missed any sessions?'** — and ASK WHY",
+     "Check the unit attendance record — **high**"
+    ],
+    [
+     "**Volume depletion → AKI on CKD**",
+     "**Days of diarrhoea, poor intake, postural symptoms**",
+     "Fluid intake, vomiting, **dizziness on standing**, weight below dry weight",
+     "Urea:creatinine pattern, postural BP — **high**"
+    ],
+    [
+     "Dietary potassium load",
+     "**Sudden switch to a plant-heavy diet; SALT SUBSTITUTES, which are potassium chloride**; fruit juices",
+     "'Any big change in your diet?' and **ask about 'low-salt' products**",
+     "Dietary history and **renal dietitian** — moderate"
+    ],
+    [
+     "Metabolic acidosis — transcellular shift",
+     "ESKD; **diarrhoea losing bicarbonate**",
+     "Kussmaul breathing, low bicarbonate",
+     "**ABG or VBG and bicarbonate** — moderate"
+    ],
+    [
+     "**Rhabdomyolysis / tissue breakdown**",
+     "**Fall, LONG LIE, muscle pain, dark urine**",
+     "'Any falls or injuries?'; bruising",
+     "**CK, urine myoglobin** — moderate"
+    ],
+    [
+     "Other potassium-retaining drugs",
+     "**SPIRONOLACTONE with an ACE inhibitor is the dangerous combination**; NSAIDs, trimethoprim, non-selective beta-blockers, potassium supplements",
+     "Full list **including over-the-counter and herbal**",
+     "Medication reconciliation; cease the culprit"
+    ],
+    [
+     "Hypoaldosteronism · Addison's · type 4 RTA",
+     "Hyponatraemia, hypotension, pigmentation, diabetes",
+     "Postural drop, weight loss, pigmentation",
+     "Sodium, morning cortisol — **low here**"
+    ],
+    [
+     "**Pseudohyperkalaemia**",
+     "**Well patient, NORMAL ECG, haemolysed sample noted**",
+     "Read the lab comment; tourniquet time; fist clenching",
+     "Repeat sample and ECG. **EXCLUDED HERE — the ECG is abnormal**"
+    ],
+    [
+     "**Deteriorating hyperkalaemia**",
+     "**Absent P waves, broad QRS, bradycardia, sine wave**",
+     "The ECG progression at every reassessment",
+     "**IV CALCIUM IMMEDIATELY, MET call, renal registrar, immediate dialysis** — emergency"
+    ]
    ]
   },
   "source": "Hyperkalaemia_Dialysis_2_Case_Tasks_Script_Notability.pdf (John Whitfield, 60, ESKD on haemodialysis, palpitations and diarrhoea)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyperkalaemia_Dialysis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Asking only about new medications — the briefed answer is a flat 'no'; 'any new medications — or any change to the ones you already take?' — those five words are worth more than any others in the station; he doesn't know which one, so reason it aloud: the perindopril (★)",
-   "FAIL — Never asking 'have you missed any dialysis sessions?' — Monday's missed session is never volunteered (★)",
-   "FAIL — 'You have a condition called hyperkalaemia' as the diagnosis — that is a laboratory state; the diagnosis is an acute kidney injury on chronic kidney disease, and this is the single commonest reason candidates fail (★)",
-   "FAIL — 'I'd do renal function tests' — scores nothing; name the analytes: potassium with sodium and bicarbonate, eGFR against baseline, a blood gas; then say 5.9 is 'mildly elevated by the number but he has ECG changes, which makes it significant regardless'",
-   "FAIL — Naming one cause — say 'three reasons' and give three: the dose increase, the missed session, the diarrhoea drying him out; then link the potassium to the racing heart",
-   "DO — Read the medication list aloud, observations first, warn about the pace ('short, direct questions'), park his fear with a promise, then: monitor, dialysis brought forward to today, hold the perindopril but 'don't stop any of your other tablets on your own', safety-net and teach-back"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-71",
