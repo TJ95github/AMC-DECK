@@ -14196,8 +14196,8 @@
  {
   "id": "MED-45",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, country town.",
   "stem": [
    "You are a general practitioner. Your next patient is Ken Ballard, a 60-year-old man, with fever, cough and shortness of breath for three days, coughing up yellow phlegm, more than usual. He has known COPD and uses puffers. Investigations are available.",
    "T 37.8 °C · SpO2 93% RA · RR 22 · HR 92 · BP 130/80 · WCC 14.5 · CRP raised · COVID-19 PCR negative · CXR: hyperinflated, no consolidation."
@@ -14207,81 +14207,194 @@
    "Explain the reasons for his condition",
    "Explain your further management"
   ],
-  "time": "8 minutes. 0:30 agenda + his concern · 2:30 results ending on 'no consolidation' · 4:00 flare-up and trigger · 6:30 three medicines, inhaler check, written plan · 7:15 red flags and follow-up · 8:00 smoking, vaccines, rehab, summary.",
+  "findings": [
+   [
+    "Temperature",
+    "37.8 — LOW-GRADE FEVER, consistent with a flare-up"
+   ],
+   [
+    "Oxygen saturation",
+    "93% ON ROOM AIR. ACCEPTABLE IN COPD — not a reason to panic and not a reason to give oxygen. ASK WHAT HIS USUAL READING IS (he says 93 or 94). If oxygen is ever needed, TARGET 88–92% — but NEVER WITHHOLD IT FROM A GENUINELY HYPOXIC PATIENT"
+   ],
+   [
+    "Respiratory rate and pulse",
+    "RR 22 and HR 92 — both MILDLY RAISED. BP 130/80 normal"
+   ],
+   [
+    "White cell count and CRP",
+    "WCC 14.5 and CRP RAISED. NON-SPECIFIC — the cells that fight infection, so the body is responding to something. IT DOES NOT ON ITS OWN TELL YOU HOW SICK HE IS"
+   ],
+   [
+    "COVID-19 PCR",
+    "NEGATIVE. SAY IT OUT LOUD — he will want it"
+   ],
+   [
+    "Chest X-ray — finding 1",
+    "HYPERINFLATED — bigger and blacker than usual, FLATTENED DIAPHRAGMS. This is CHRONIC. It tells you he has COPD; IT PROVES NOTHING ABOUT TODAY. Describing it and stopping is the trap"
+   ],
+   [
+    "Chest X-ray — THE PIVOT OF THE WHOLE STATION",
+    "NO CONSOLIDATION. Say the words out loud even if nobody asks: 'THERE IS NO WHITE PATCH ANYWHERE ON THIS FILM — NO CONSOLIDATION, WHICH IS WHAT WE'D SEE IF YOU HAD PNEUMONIA. SO YOU DO NOT HAVE PNEUMONIA.' MANAGING THIS AS A PNEUMONIA FAILS THE STATION"
+   ],
+   [
+    "The three cardinal symptoms — ANTHONISEN",
+    "INCREASED BREATHLESSNESS · INCREASED SPUTUM VOLUME · INCREASED SPUTUM PURULENCE. TWO OF THREE, PROVIDED ONE IS PURULENCE, is the usual threshold for antibiotics. KEN HAS ALL THREE. Naming the framework lifts the answer above 'yellow sputum so amoxicillin'"
+   ],
+   [
+    "What he hides unless you ask",
+    "HE IS FRIGHTENED THIS IS PNEUMONIA — HIS FATHER DIED OF IT. Given only if you ask what he was worried about. And the BROWN PREVENTER: 'most mornings' → only if you ask HOW MANY MORNINGS A WEEK does he admit HALF THE TIME, and HE HAS NEVER USED A SPACER"
+   ],
+   [
+    "VERSION — the deteriorating one",
+    "DROWSY, CONFUSED SINCE LUNCHTIME, SpO2 88% → POSSIBLE TYPE 2 RESPIRATORY FAILURE. Controlled oxygen to 88–92%, ARTERIAL BLOOD GAS, and ADMIT. NIV if pH below 7.35 with PaCO2 above 45. MedSTAR 1300 13 12 33 from a country site"
+   ]
+  ],
+  "findingsLabel": "The results handed to you at the door",
+  "must": [
+   "FAIL — Treating it as a pneumonia. Say 'no consolidation' before you go near management.",
+   "FAIL — A good verbal plan with nothing handed over, or no red flags and no 000 trigger.",
+   "FAIL — Panicking at 93%, or promising high-flow oxygen.",
+   "FAIL — Ignoring confusion or drowsiness, or missing pneumothorax, PE, heart failure or cancer.",
+   "ASK — What were you most worried it might be? Before you touch the results.",
+   "ASK — Can you show me how you take your puffer? I ask everyone."
+  ],
   "back": {
-   "dx": "Infective exacerbation of COPD without consolidation — all three Anthonisen cardinal symptoms (more breathless, more phlegm, purulent) → antibiotic + prednisolone + reliever; meets no admission criteria → home with a written three-zone action plan. Hidden: he thinks it's pneumonia (father died of it); the brown preventer is taken 'most mornings' = half the time, never used a spacer; still smokes 15/day for 40 years (three quit attempts, longest six weeks). Baseline SpO2 93–94% — ask it. Three things that must physically happen: say 'no consolidation — this is not a pneumonia'; watch him use his inhaler and correct it; write and hand over a three-zone plan with doses and a 000 trigger.",
+   "dx": [
+    "**An acute exacerbation of COPD, most likely triggered by a chest infection.** To the examiner: **'infective exacerbation of COPD, WITHOUT RADIOGRAPHIC CONSOLIDATION'.** Both halves matter — a flare-up of a condition he already has, with an identifiable trigger.",
+    "**An exacerbation is defined CLINICALLY, not radiologically. The three ANTHONISEN cardinal symptoms: increased breathlessness · increased sputum VOLUME · increased sputum PURULENCE. Two of three, provided one is purulence, is the antibiotic threshold.**",
+    "**Three things must physically happen: 1 you SAY 'no consolidation — this is not a pneumonia' · 2 you WATCH him use his inhaler and correct it · 3 you WRITE AND HAND OVER a three-zone plan with doses and a 000 trigger.** Everything else is recoverable; these three are not.",
+    "**The three medicines, with numbers: SALBUTAMOL 4–8 PUFFS THROUGH A SPACER every 3–4 hours while unwell, then as needed — a pMDI with a spacer is as effective as a nebuliser and is preferred · PREDNISOLONE 30–50 mg each morning for 5 DAYS, NO TAPER needed for a course of 14 days or less · AMOXICILLIN 500 mg three times daily for 5 days, or DOXYCYCLINE 100 mg twice daily (200 mg on day 1) for 5 days if penicillin-allergic.** VERIFY.",
+    "**The written THREE-ZONE plan, said aloud as you write it: GREEN when well — usual breathlessness, usual phlegm, sleeping through; keep the daily preventer, reliever as needed, off the cigarettes, vaccinations current. AMBER, a flare-up starting — more breathless, more phlegm, colour change; reliever 4–8 puffs every 3–4 hours, start the prednisolone, start the amoxicillin, and ring us for review in 48–72 hours. RED, an emergency — breathless at rest or when talking, reliever not helping or needed sooner than every three hours, chest pain, drowsy, confused, or blue lips: RING 000.**",
+    "**Admission criteria — give the list and say which he does not meet: marked increase in symptoms or breathlessness at rest · severe underlying COPD or frequent prior exacerbations · new cyanosis, new peripheral oedema, confusion or drowsiness · failure to respond to initial treatment · significant comorbidity · INSUFFICIENT SUPPORT AT HOME, the criterion that decides most rural cases · diagnostic uncertainty.**",
+    "**Blood gas if saturation is below 92%, if he is drowsy, or before considering NIV. NIV is for a RESPIRATORY ACIDOSIS — pH below 7.35 with PaCO2 above 45 mmHg — NOT for hypoxia alone.**",
+    "**Causes of an exacerbation: INFECTIVE, about 70% — viral (rhinovirus commonest, influenza, RSV, coronaviruses) and bacterial (H. influenzae, S. pneumoniae, M. catarrhalis; Pseudomonas in severe or bronchiectatic disease). NON-INFECTIVE — smoking and smoke exposure, pollution, cold air, NOT TAKING THE MAINTENANCE INHALER or poor technique, sedatives and opioids, decompensating comorbidity.** **Up to a third have no identifiable trigger.**",
+    "**If the film HAD shown consolidation it becomes a different station**: community-acquired pneumonia, **CURB-65 or SMART-COP, amoxicillin 1 g three times daily for 5 days** with atypical cover where indicated, and **a much lower threshold for admission**. Different antibiotic, different dose, different disposition.",
+    "**Do NOT change maintenance therapy or start rehabilitation during the flare** — that is a review-appointment job. **At the 48–72 hour review and then at 4–6 weeks: smoking cessation with Quitline 13 7848 and PBS nicotine replacement, vaccination, maintenance reassessment, pulmonary rehabilitation.** **healthdirect 1800 022 222 after hours.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, identity, consent; agenda covering all three tasks + 'something written to take home'; ★ 'what were you most worried it might be?' → pneumonia → 'I'll answer that directly'"
+     "**Introduce, confirm identity, consent — then SET THE AGENDA covering all three tasks: 'I'd like to go through the results, explain what I think has caused this, then agree a plan including SOMETHING WRITTEN DOWN to take home.'** Then **'before I start — WHAT WERE YOU MOST WORRIED IT MIGHT BE?'** → pneumonia, his father died of it. **Answering it explicitly is scored.**"
     ],
     [
      "0:30",
-     "Results in lay terms: T 37.8 fits infection · SpO2 93% — 'for your lungs a reasonable number — what does it usually sit at?' → same as baseline, no oxygen today · WCC 14.5 = infection-fighting cells responding, not a danger measure · CRP raised · COVID negative · CXR: hyperinflation = chronic, not new; ★ 'no white patch anywhere — you do not have pneumonia'"
+     "**Results one at a time, chunk and check. Temperature 37.8, slightly up, fits an infection. Oxygen 93 per cent — for someone with your lungs that's a reasonable number — CAN I ASK WHAT IT USUALLY SITS AT WHEN YOU'RE WELL?** Then **white cells 14.5, the cells that fight infection, so your body is responding to something — IT DOESN'T ON ITS OWN TELL ME HOW SICK YOU ARE.** Then **the COVID swab is negative.**"
+    ],
+    [
+     "1:40",
+     "**The X-ray, two things. First: 'your lungs look bigger and blacker than usual and your diaphragms are flattened — that means your lungs are holding on to air they can't push out. THAT IS YOUR COPD, AND IT HAS BEEN THERE A LONG TIME; IT ISN'T NEW TODAY.'**"
+    ],
+    [
+     "2:10",
+     "**Second, and the sentence the station is built around: 'this is what I was looking hardest for. THERE IS NO WHITE PATCH ANYWHERE ON THIS FILM — no consolidation, which is what we'd see if you had pneumonia. SO YOU DO NOT HAVE PNEUMONIA.'** Then **'anything you want me to go back over?'**"
     ],
     [
      "2:30",
-     "Flare-up explained: airways permanently narrowed and inflamed (smoking) → infection → swell, more phlegm, narrower → temporarily much worse than normal; trigger named: three changes together = infective flare-up = why antibiotic. 'Why do I keep getting these?' → smoking, adherence/technique, vaccination, rehab — sort at review"
+     "**Task 2 — what a flare-up IS: 'your airways are permanently narrowed and inflamed, mostly from years of smoking. Day to day you have a level you live at. A flare-up is when something irritates or infects those airways, so they swell, make more phlegm and narrow further. NOTHING ABOUT YOUR UNDERLYING LUNGS HAS SUDDENLY CHANGED — but they are temporarily much worse than your normal.'**"
+    ],
+    [
+     "3:15",
+     "**Name HIS trigger and the three changes: 'three things have changed together — you're MORE SHORT OF BREATH, you're bringing up MORE PHLEGM, and that phlegm HAS TURNED YELLOW. Those three together are what tell me this is an infective flare-up, and they are the reason I'm giving you an antibiotic as well.'**"
+    ],
+    [
+     "3:45",
+     "**'Why do I keep getting these?' — smoking first, then whether the daily preventer is actually being taken AND getting into his lungs, then vaccination, then pulmonary rehabilitation. 'I'd like to sort those out at your review, not today while you're unwell.'**"
     ],
     [
      "4:00",
-     "'Do I need hospital?' → admission criteria listed (breathless at rest, confusion/drowsiness, cyanosis, new leg swelling, not responding, nobody at home) → meets none → home, wife present"
+     "**Admission criteria named, and which he does not meet** — then **'I'm happy to treat you at home, provided you have the written plan and someone with you tonight.'**"
     ],
     [
      "4:30",
-     "Three medicines with numbers: salbutamol 4–8 puffs via spacer q3–4 h then PRN · prednisolone 50 mg mane × 5 days, no wean, side effects named (sleep, appetite, mood, sugar) · amoxicillin 500 mg TDS × 5 days because colour changed. 'Do I have to take steroids?' → short course, benefit, side effects short-lived, his call"
+     "**The three medicines WITH NUMBERS: reliever 4–8 puffs through a spacer every 3–4 hours, then back to as needed — the spacer gets far more in · prednisolone 50 mg each morning for 5 days, then STOP, no weaning, and name the side effects: sleep, appetite, mood, blood sugar · amoxicillin 500 mg three times a day for 5 days, because the phlegm has changed colour.**"
+    ],
+    [
+     "5:30",
+     "**'Before you go — CAN YOU SHOW ME HOW YOU TAKE YOUR PUFFER? I ask everyone; it's the commonest reason treatment doesn't work.'** Then correct what you see: **shake, upright, seal the lips, SLOW AND DEEP for a pMDI (fast and forceful for a dry powder device), hold ten seconds, wait before the second puff, always a spacer, rinse after any inhaled steroid.**"
     ],
     [
      "6:00",
-     "★ 'Show me how you take your puffer — I ask everyone' → correct: shake, slow deep breath, hold 10 s, spacer given. ★ Write green/amber/red with doses; red = breathless at rest/talking, reliever not helping or <3-hourly, chest pain, drowsy/confused/blue lips → 000. Review 48–72 h booked; healthdirect 1800 022 222 after hours. Later: Quitline 13 7848 + PBS pharmacotherapy (no lecture), flu/pneumococcal vaccines, pulmonary rehab. Summary + 'what have I not covered?'"
+     "**The written plan, handed over, chunked with a check after each zone: 'I'm writing this down for you, because at two in the morning nobody remembers what the doctor said. Three boxes — GREEN when you're well, AMBER when a flare-up starts, RED when it's an emergency.'** **Read the red zone slowly, and name 000.**"
+    ],
+    [
+     "7:00",
+     "**Follow-up in 48 to 72 hours, booked now, sooner if worse. healthdirect 1800 022 222 after hours.** Then **smoking without a lecture — ask permission, assess readiness, offer Quitline 13 7848 and PBS nicotine replacement, book a dedicated appointment** — plus vaccination and rehabilitation at review. **Summarise and check: 'what have I not covered?'**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "'Ken, I've got all your results. I'd like to go through them, explain what I think has caused this, then agree a plan — including something written for you to take home. Before I start, what were you most worried it might be?'",
-    "'Your oxygen level is 93 per cent — for someone with your lungs that's a reasonable number. Can I ask what it usually sits at when you're well?' 'Is that low? Do I need oxygen?' → 'It's the same as your usual, which is reassuring — and no, not today. In COPD we're happy with a number in that range.' 'Fourteen — dangerous?' → 'Higher than normal, but a sign your immune system is working, not a measure of danger on its own.'",
-    "★ 'Two things on the X-ray. First, your lungs look bigger and blacker than usual with flattened diaphragms — they're holding on to air they can't push out. That's your COPD; it's been there a long time, it isn't new today. Second — and this is what I was looking hardest for — there is no white patch anywhere on this film. That's what we'd see with pneumonia. You do not have pneumonia.'",
-    "'This is a flare-up of your COPD, set off by an infection in the airways. Three things have changed together: more short of breath, more phlegm, and the phlegm has turned yellow. Those three together are what tell me it's an infective flare-up — and they're the reason you're getting an antibiotic as well as everything else.'",
-    "★ 'The things that would make me admit someone are being breathless at rest, confusion or drowsiness, blue lips, new swelling in the legs, not responding to treatment, or having nobody at home. You don't meet any of those, so I'm happy to treat you at home — provided you take the plan with you and someone is around tonight.'",
-    "★ 'Three things, starting today. One, your reliever — 4 to 8 puffs through a spacer, every 3 to 4 hours while you're like this, then back to as needed. Two, prednisolone, 50 milligrams each morning for 5 days — settles the swelling; five days then stop, no weaning; it can affect sleep, appetite and mood and push your sugar up for a few days. Three, amoxicillin, 500 milligrams three times a day for 5 days, because that phlegm has changed colour.'",
-    "★ 'Before you go, can you show me how you take your puffer? I ask everyone — it's the commonest reason treatment doesn't work.' → 'That's close. Two changes: shake it first, and breathe in slowly and deeply rather than fast, then hold for about ten seconds. And always through the spacer — I'll give you one today.'",
-    "★ 'I'm writing this down for you, because at two in the morning nobody remembers what the doctor said. Green — well: usual breathlessness and phlegm, daily preventer, reliever as needed, off cigarettes. Amber — flare-up starting: more breathless, more phlegm, or colour change → reliever 4–8 puffs every 3–4 hours, prednisolone 50 mg each morning for 5 days, start the amoxicillin, ring us. Red — breathless at rest or talking, reliever not helping or needed sooner than three hours, chest pain, drowsy, confused or blue lips — that's 000. I'll see you in 48 to 72 hours either way; after hours healthdirect 1800 022 222.'"
-   ],
    "pefe": [
-    "No examination task beyond the inhaler technique check; findings are the investigations in the stem",
-    "Why not admit: no rest dyspnoea, no confusion, no cyanosis, no oedema, SpO2 at baseline, supportive wife at home; reassess at 48–72 h",
-    "Variant 1 — 'why can't I just have the antibiotic?': 'You are getting one because the phlegm has changed colour. But the antibiotic only deals with one part — the swelling in the airways is what's making you breathless, and that's what the steroid and reliever treat. Antibiotic alone and you stay breathless longer.' If only ONE cardinal symptom and no purulence → no antibiotic; bronchodilator + prednisolone, explain, safety-net",
-    "Variant 2 — deteriorating (drowsy, confused since lunch, SpO2 88%): possible type 2 respiratory failure → controlled oxygen 88–92%, ABG, ADMIT; nebulised bronchodilators, IV/oral steroid, antibiotics, NIV if pH <7.35 with PaCO2 >45; country site → ring receiving physician early, MedSTAR 1300 13 12 33",
-    "Variant 3 — present to the examiner instead: 'infective exacerbation of COPD without radiographic consolidation, all three Anthonisen cardinal symptoms present, meeting no admission criteria' → three drugs with doses, inhaler check, written action plan, 48–72 h review",
-    "Smoking: 'most people who succeed have several goes first — that isn't failure, it's the normal pattern' → proper appointment, medication support, Quitline 13 7848; if lectured he shuts down"
+    "**There is no examination task and no examiner presentation — everything is said to the patient.** If asked to present instead, **switch register**: infective exacerbation of COPD without radiographic consolidation, all three Anthonisen cardinal symptoms, meeting no admission criteria.",
+    "**Read the film before you open your mouth. Hyperinflation is chronic. The absence of consolidation is the examinable finding.**",
+    "**Get an arterial blood gas if SpO2 is below 92%, if he is drowsy, or before considering NIV.** **NIV for pH below 7.35 with PaCO2 above 45 — not for hypoxia alone.**",
+    "**Oxygen: 93% needs none. If required, target 88–92% delivered in a controlled way — and DO NOT WITHHOLD OXYGEN FROM A HYPOXIC PATIENT for fear of CO2 retention.**",
+    "**Say the alternatives as excluded, with the reason: PNEUMONIA — no consolidation on the film · PNEUMOTHORAX — sudden onset, unilateral hyperresonance and absent breath sounds in a bullous lung · PULMONARY EMBOLISM — hypoxia out of proportion, pleuritic pain, unilateral calf swelling, commonly missed in COPD · HEART FAILURE — orthopnoea, raised JVP, oedema · LUNG CANCER in a smoker over 50 · TYPE 2 RESPIRATORY FAILURE — drowsy, confused, flapping tremor.**",
+    "**Avoid: uncontrolled high-flow oxygen · sedatives, benzodiazepines and opioids, which suppress respiratory drive · prescribing without watching him use the inhaler · antibiotics with no purulence and only one cardinal symptom · sending him home with a verbal plan and nothing written.**",
+    "**Language rules: never say consolidation, hyperinflation, exacerbation or purulent without translating on the spot.** Say **flare-up · a patch of infection · your lungs are holding more air than they should · the phlegm has changed colour.**"
    ],
-   "fails": [
-    "Never saying 'no consolidation — this is not pneumonia' — describing hyperinflation and stopping ★",
-    "Not watching and correcting inhaler technique; no spacer ★",
-    "No written three-zone plan, or a plan without doses or a 000 trigger ★",
-    "'Steroids and antibiotics' without doses/durations; not saying no taper; side effects unnamed",
-    "Panicking at 93% or promising oxygen; not asking baseline saturation",
-    "Not asking his concern; admission criteria not given; no 48–72 h review; lecturing about smoking"
-   ],
-   "numbers": [
-    "Salbutamol 4–8 puffs via spacer q3–4 h · prednisolone 30–50 mg mane × 5 days, no taper · amoxicillin 500 mg TDS × 5 days, or doxycycline 200 mg day 1 then 100 mg BD × 5 days · oxygen target 88–92% · ABG if SpO2 <92% or drowsy · NIV if pH <7.35 with PaCO2 >45 VERIFY",
-    "Anthonisen cardinal symptoms: ↑ dyspnoea · ↑ sputum volume · ↑ purulence → antibiotic if 2 of 3 including purulence (here all 3)",
-    "Admission criteria: dyspnoea at rest · confusion/drowsiness · cyanosis · new peripheral oedema · failure to respond · inadequate home support · significant comorbidity · SpO2 well below baseline",
-    "Review 48–72 h · rehab and maintenance review 4–6 weeks · brown preventer taken half the time — adherence and technique addressed at review",
-    "Prednisolone side effects at 5 days: insomnia, appetite, mood, hyperglycaemia — short-lived; no adrenal suppression concern at this duration VERIFY",
-    "Quitline 13 7848 · healthdirect 1800 022 222 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Infective exacerbation of COPD** — the answer",
+     "**Three cardinal symptoms**, known COPD, low-grade fever",
+     "Wheeze, prolonged expiration, **no focal signs**",
+     "**Clinical diagnosis. CXR to exclude consolidation and pneumothorax** — same day"
+    ],
+    [
+     "**Community-acquired pneumonia**",
+     "Higher fever, rigors, pleuritic pain, focal signs",
+     "Bronchial breathing, focal crackles, dullness",
+     "**CXR — here it shows NO consolidation. CURB-65 if positive** — urgent"
+    ],
+    [
+     "**Pneumothorax**",
+     "**Sudden onset in a bullous, hyperinflated lung**, tall thin build",
+     "**Unilateral hyperresonance, absent breath sounds, tracheal shift**",
+     "CXR. **Tension is a clinical diagnosis — decompress before imaging** — immediate"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "**Hypoxia out of proportion**, pleuritic pain, immobility, malignancy",
+     "Unilateral calf swelling, tachycardia, **clear chest**",
+     "**Wells score, D-dimer or CTPA. COMMONLY MISSED IN COPD** — immediate"
+    ],
+    [
+     "**Lung cancer**",
+     "**Smoker over 50 with new or changed symptoms**, weight loss, haemoptysis",
+     "Clubbing, lymphadenopathy, monophonic wheeze",
+     "**CT chest; refer on the cancer pathway** — urgent"
+    ],
+    [
+     "Bronchiectasis",
+     "Chronic daily purulent sputum, recurrent infections",
+     "Coarse crackles, clubbing",
+     "High-resolution CT, sputum culture"
+    ],
+    [
+     "**Heart failure — frequently coexists**",
+     "Orthopnoea, paroxysmal nocturnal dyspnoea, oedema",
+     "**Raised JVP, S3, bibasal fine crepitations**",
+     "BNP or NT-proBNP, echocardiogram, CXR — urgent"
+    ],
+    [
+     "Arrhythmia, commonly atrial fibrillation",
+     "Palpitations, abrupt worsening",
+     "Irregularly irregular pulse",
+     "ECG — urgent"
+    ],
+    [
+     "**Type 2 respiratory failure**",
+     "**Drowsy, confused, headache, flapping tremor**",
+     "Bounding pulse, reduced consciousness",
+     "**Arterial blood gas. NIV if pH under 7.35 with PaCO2 over 45** — immediate"
+    ],
+    [
+     "**Poor inhaler technique or non-adherence · sedatives**",
+     "**Repeated flare-ups, unused repeats, 'most mornings'**; new opioid or benzodiazepine",
+     "**Watch him use the device**; pinpoint pupils, drowsiness",
+     "**Demonstrate and check technique at EVERY visit.** Medication review"
+    ]
    ]
   },
   "source": "COPD_Exacerbation_2_Case_Tasks_Script_Notability.pdf (Ken Ballard — infective exacerbation, action plan)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › COPD › COPD_Exacerbation_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "SAY — 'There is no white patch anywhere on this film — that's what pneumonia looks like. You do not have pneumonia' — hyperinflation is chronic and proves nothing about today; the absence of consolidation is the examinable finding",
-   "FAIL — Not watching him use his inhaler and correcting it — 'show me how you take your puffer, I ask everyone'; shake, slow deep breath, hold ten seconds, spacer given",
-   "FAIL — No written three-zone plan handed over with doses and a 000 trigger — 'at two in the morning nobody remembers what the doctor said'",
-   "FAIL — Launching into results without 'what were you most worried it might be?' — pneumonia, because his father died of it; answering that explicitly is a scored item",
-   "FAIL — 'Steroids and antibiotics' without numbers — salbutamol 4–8 puffs via spacer every 3–4 hours; prednisolone 50 mg mane for 5 days, no taper, side effects named; amoxicillin 500 mg tds for 5 days because the three cardinal symptoms have changed together",
-   "DO — Ask his baseline saturation and don't promise oxygen at 93%; list the admission criteria and say he meets none; review in 48–72 hours; Quitline, vaccines and rehab offered without lecturing"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › COPD › COPD_Exacerbation_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-46",
