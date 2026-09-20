@@ -7756,8 +7756,8 @@
  {
   "id": "MED-14",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "You are the doctor on duty at a rural hospital.",
   "stem": [
    "Bernard Hollis, 68, has attended with two days of lethargy and generalised muscle weakness following an episode of gastroenteritis last week. He has chronic kidney disease stage 4 and takes ramipril, spironolactone, metformin and atorvastatin. His blood results have just returned and are on the desk.",
    "K⁺ 7.2 · Na⁺ 134 · urea 24.1 · creatinine 312 · eGFR 16 · HCO₃ 16 · corrected Ca 2.18. BP 104/62 · PR 52."
@@ -7768,86 +7768,177 @@
    "Outline your immediate management",
    "Explain the situation to the patient"
   ],
-  "time": "8 minutes. The ECG is only handed over if you ask for it.",
+  "findings": [
+   [
+    "Observations",
+    "BP 104/62 · PR 52 — BRADYCARDIC, a late and ominous sign · RR 16 · SpO2 97% RA · T 36.4"
+   ],
+   [
+    "Was the sample haemolysed?",
+    "VERSION A: 'Not haemolysed.' Ask it in your first sentence anyway — it is a scored item. VERSION B: the lab reports the specimen WAS haemolysed"
+   ],
+   [
+    "12-lead ECG — rate and rhythm",
+    "Rate 52, BRADYCARDIC. Ask for the ECG and cardiac monitoring BEFORE you finish reading the panel — not asking is a fail on its own"
+   ],
+   [
+    "ECG — P waves and PR",
+    "P WAVES FLATTENED and of low amplitude, hard to identify. PR INTERVAL PROLONGED"
+   ],
+   [
+    "ECG — QRS",
+    "BROAD at about 130 ms, with NO typical bundle branch morphology"
+   ],
+   [
+    "ECG — T waves",
+    "TALL, NARROW-BASED, SYMMETRICAL AND PEAKED, most marked in the mid-precordial leads. Hyperacute T waves of infarction are broad-based and asymmetrical"
+   ],
+   [
+    "ECG — conclusion",
+    "The changes of SEVERE HYPERKALAEMIA. This patient needs treatment now"
+   ],
+   [
+    "Biochemistry on the desk",
+    "K 7.2 (3.5–5.2) · Na 134 · urea 24.1 · creatinine 312 · eGFR 16 · HCO3 16 · corrected Ca 2.18. AKI on CKD with a METABOLIC ACIDOSIS and mild hyponatraemia fitting volume depletion"
+   ],
+   [
+    "Medication history on direct questioning",
+    "Ramipril, spironolactone, metformin, atorvastatin. He calls them 'a blood pressure one and a fluid one'. ASK BY NAME: he admits IBUPROFEN for his knee only if asked, and never volunteers it. Also ask trimethoprim and salt substitutes"
+   ],
+   [
+    "VERSION B — the well 44-year-old",
+    "ECG NORMAL, observations normal, no symptoms, normal renal function, no relevant medications. Specimen HAEMOLYSED → pseudohyperkalaemia. ECG first, repeat second, conclude third"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — observations, the ECG and the panel · open when you would ask",
+  "must": [
+   "FAIL — Not asking for an ECG and cardiac monitoring. A fail on its own, whatever else you score.",
+   "FAIL — Saying calcium lowers the potassium. It protects; it does not lower.",
+   "FAIL — Treating acutely and leaving him on ramipril and spironolactone.",
+   "FAIL — Being reassured by a normal ECG, or treating a haemolysed sample before repeating it.",
+   "ASK — Was the sample haemolysed? In your first sentence, before you read the panel.",
+   "ASK — Anti-inflammatories, trimethoprim, salt substitutes — by name, or he won't tell you."
+  ],
   "back": {
-   "dx": "Severe hyperkalaemia with ECG changes — AKI on CKD 4 (prerenal from gastroenteritis), ACE inhibitor + spironolactone, metabolic acidosis; hidden ibuprofen for his knee (only if you ask about NSAIDs). ECG (must be requested): rate 52, P waves flattened/low amplitude, PR prolonged, QRS broad ~130 ms without bundle-branch morphology, tall narrow-based symmetrical peaked T waves in mid-precordial leads. The station is decided by your FIRST sentence: monitor + 12-lead ECG immediately, and 'was the sample haemolysed?' — before you finish reading the panel.",
+   "dx": [
+    "**Severe hyperkalaemia, K 7.2, WITH ECG changes** — acute-on-chronic kidney injury in stage 4 CKD. **The number is not the emergency; the ECG is.**",
+    "**Severity: mild 5.5–5.9 · moderate 6.0–6.4 · severe 6.5 or more · ANY level with ECG change is severe.** That last row overrides every row above it.",
+    "ECG progression: **tall peaked T waves → flat P and long PR → wide QRS → P waves lost → sine wave → VF or asystole**. A normal ECG at 7.2 is **not reassurance**.",
+    "**Four mechanisms at once, and saying all four is what separates a good answer from a list**: **stage 4 CKD sets the baseline · gastroenteritis and poor intake have caused an AKI on top · ramipril and spironolactone together are additive · the acidosis (HCO3 16) shifts potassium out of cells.**",
+    "**Three jobs, and know which drug does which. PROTECT · SHIFT · REMOVE.** The follow-up question is asked almost every time.",
+    "**PROTECT: calcium gluconate 10%, 10 mL IV over 2–3 minutes** on the monitor, **repeat at 5 minutes if the ECG has not improved**. **It does not lower the potassium** — it stabilises the myocardium for **30 to 60 minutes**.",
+    "**SHIFT: 10 units of short-acting insulin in 50 mL of 50% glucose IV over 15–30 minutes** — onset 15–30 min, lasts 4–6 h. **Hourly BGL for at least 6 hours, said unprompted** — delayed hypoglycaemia is the commonest complication. Plus **salbutamol 10–20 mg nebulised**, additive. **Bicarbonate only if acidotic**, and the evidence is weak.",
+    "**REMOVE: haemodialysis is definitive here** — oliguric, eGFR 16. **Involve renal and retrieval NOW, not after two failed rounds** — transfer time is the rate-limiting step. Loop diuretic only if passing urine and not volume deplete. **Modern binders, not resonium, and never as the acute answer.**",
+    "**Withhold ramipril and spironolactone**, and sweep the class list: **ACEi/ARB · potassium-sparing diuretics · NSAIDs · trimethoprim · heparin · beta-blockers · ciclosporin and tacrolimus · digoxin in toxicity · supplements and salt substitutes.** **Recheck K at 1–2 hours** on continuous monitoring.",
+    "To the patient, **explain the effect, never the number**: **'a salt called potassium is much higher than it should be · when it gets too high it upsets the electrical rhythm of your heart · the calcium does not lower it, it protects your heart while the rest works · two of your tablets hold potassium in, I am stopping both today, please do not restart them until you are reviewed.'**"
+   ],
    "plan": [
     [
-     "Reading time",
-     "Write five things: ECG + monitor now, ask haemolysis · PROTECT · SHIFT · REMOVE · doses · stop ramipril/spironolactone/NSAIDs/trimethoprim · four causes"
+     "0:00",
+     "**The single highest-scoring sentence in the station, before you read the rest of the panel: 'Examiner, before I go through these results in full — the potassium is 7.2, which is in the severe range. I would attach cardiac monitoring and obtain a 12-lead ECG immediately, and I would check whether the sample was reported as haemolysed.'**"
     ],
     [
-     "First sentence",
-     "'The potassium is 7.2 — severe. I'd attach cardiac monitoring and get a 12-lead ECG immediately, and check whether the sample was haemolysed'"
+     "0:45",
+     "Read the ECG **in order — rate · P · PR · QRS · T — then conclude**. A short ordered read-out beats a list of adjectives. If challenged on ischaemia: **hyperacute T waves are broad-based and asymmetrical; it is the company they keep — flat P, long PR, wide QRS — that makes the diagnosis.**"
     ],
     [
-     "ECG",
-     "Rate · P · PR · QRS · T, in that order → 'changes of severe hyperkalaemia, needs treatment now'. If asked 'ischaemic T waves?' — hyperacute T waves are broad-based and asymmetrical; the flat P, long PR and wide QRS make hyperkalaemia the explanation"
+     "1:45",
+     "The biochemistry: **severe hyperkalaemia · creatinine 312 and eGFR 16 = advanced renal impairment · urea 24 with that creatinine suggests a prerenal component, so AKI on CKD · bicarbonate 16 is a metabolic acidosis, which itself shifts potassium out of cells · mild hyponatraemia fits volume depletion.**"
     ],
     [
-     "Biochemistry",
-     "Creatinine 312 / eGFR 16 = advanced renal impairment; urea 24 with prerenal pattern = AKI on CKD; HCO₃ 16 = metabolic acidosis shifting K⁺ out of cells; mild hyponatraemia fits volume depletion"
+     "2:45",
+     "**The causes — all four, not one.** Then add the three questions you must ask by name: **over-the-counter anti-inflammatories · recent trimethoprim · potassium-based salt substitutes.** He is taking ibuprofen for his knee and will not mention it unless asked."
     ],
     [
-     "Causes",
-     "Four at once: CKD 4 baseline · AKI on top (gastro, poor intake) · ramipril + spironolactone additive · acidosis. Then ask: OTC NSAIDs, recent trimethoprim, potassium salt substitutes"
+     "3:45",
+     "Management as **three jobs, naming which drug does which**. Protect, then shift, then remove — and say **'this does not lower the potassium'** as you say calcium, before the examiner can ask."
     ],
     [
-     "Management",
-     "Three jobs: PROTECT calcium gluconate 10% 10 mL IV over 2–3 min on the monitor, repeat at 5 min if ECG unchanged, lasts 30–60 min, does NOT lower K⁺ · SHIFT 10 units short-acting insulin in 50 mL 50% glucose IV over 15–30 min, hourly BGL for ≥6 h unprompted, plus salbutamol 10–20 mg neb; consider bicarbonate given HCO₃ 16 (weak evidence) · REMOVE oliguric, eGFR 16 → haemodialysis is definitive, renal team + retrieval now. Withhold ramipril and spironolactone, cautious volume, recheck K⁺ at 1–2 h"
+     "5:00",
+     "Say unprompted: **hourly BGL for 6 hours · recheck K at 1–2 hours · continuous monitoring · withhold ramipril and spironolactone · cautious volume replacement · renal referral and retrieval now.** Rurally, a **point-of-care blood gas** gives a potassium in minutes — treat on the ECG while awaiting the formal result. **MedSTAR 1300 13 12 33.**"
     ],
     [
-     "Patient",
-     "Explain the effect, never the number: 'a salt called potassium is much higher than it should be … upsets the electrical rhythm of your heart … calcium protects the heart while the rest works … two of your tablets hold potassium in — stopping both today, don't restart until reviewed'. Answer heart attack / my fault / Adelaide honestly; offer to call someone"
+     "6:00",
+     "Explain to the patient in plain words. **Never quote 7.2** — he will look blank and say 'is that bad?'. Effect, then what you are doing, then the two tablets you are stopping."
+    ],
+    [
+     "7:00",
+     "His three questions, in order. **'Am I going to have a heart attack?'** → not in the usual sense, this affects the rhythm rather than blocking an artery, **but do not understate it**. **'Is it something I did?'** → **'you have not done anything wrong.'** **'Do I have to go to Adelaide?'** → possibly, and **'I am arranging that conversation now rather than waiting. Is there someone you would like me to call?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ Examiner, before I go through these in full — the potassium is 7.2, which is in the severe range. I would attach cardiac monitoring and obtain a 12-lead ECG immediately, and I would check whether the sample was reported as haemolysed.",
-    "Examiner's three questions after management, in order: 'Does the calcium lower his potassium?' → No — stabilises the myocardium, serum level unchanged, must always be given alongside something that shifts or removes K⁺, never instead. 'Commonest complication of your treatment?' → hypoglycaemia from insulin, often delayed, hence hourly BGL for 6 h. 'ECG had been normal — would you still treat?' → yes, K⁺ 7.2 is treated on the level; a normal ECG is not permission to wait",
-    "To the patient: 'Am I going to have a heart attack?' → 'Not a heart attack in the usual sense — this affects the rhythm rather than blocking an artery. I don't want to understate it — at this level the rhythm can become dangerous, which is why you're on a monitor and I'm treating you now. It is very treatable.'",
-    "'Is it something I did? I couldn't keep anything down.' → 'You have not done anything wrong. Being unwell and dehydrated strained kidneys that were already struggling, and two of your tablets hold potassium in — that combination caused this.'",
-    "'Do I have to go to Adelaide?' → 'Possibly. If the potassium doesn't come down with treatment, dialysis is the most effective way to remove it and that means transferring you. I'm arranging that conversation now so we aren't delayed. Is there someone you'd like me to call?'",
-    "If he looks blank at '7.2 — is that bad?' you have quoted the number instead of the effect — restart in lay terms"
-   ],
    "pefe": [
-    "No history or examination task — results, causes, management, explanation",
-    "Investigations to name: 12-lead ECG + continuous monitoring first; haemolysis check; repeat K⁺ at 1–2 h; VBG/ABG; urine output; BGL hourly ×6 h; consider digoxin level if relevant",
-    "Drugs to stop: ramipril, spironolactone, NSAIDs, trimethoprim; hold metformin with eGFR 16 and acute illness VERIFY",
-    "Version B run (K⁺ 6.1, well 44-year-old woman, pre-procedure bloods): order of operations — ECG and observations FIRST, ask about haemolysis/delayed processing/platelet and white cell counts, THEN repeat with wide-bore needle, no prolonged tourniquet or fist clenching, prompt transport — THEN conclude pseudohyperkalaemia; do not treat and do not cancel the procedure until a clean result; if repeat high, it's real → renal function, medications, adrenal causes",
-    "SA: renal team and MedSTAR retrieval early rather than after failed medical therapy; PATS for the transfer; family call",
-    "No history or examination task — Results, causes, management, explanation",
-    "Investigations to name — 12-lead ECG + continuous monitoring first; haemolysis check; repeat K⁺ at 1–2 h; VBG/ABG; urine output; BGL hourly ×6 h; consider digoxin level if relevant",
-    "Drugs to stop — Ramipril, spironolactone, NSAIDs, trimethoprim; hold metformin with eGFR 16 and acute illness VERIFY",
-    "SA — Renal team and MedSTAR retrieval early rather than after failed medical therapy; PATS for the transfer; family call"
+    "**ECG and cardiac monitoring in your first sentence** — before you finish reading the panel. Not asking for an ECG is a fail on its own regardless of the total.",
+    "**Ask whether the sample was haemolysed**, whether processing was delayed, and what the platelet and white cell counts were — **but only as an exclusion after the ECG, never as an opening assumption**.",
+    "Three questions to ask every time: **was it haemolysed · is the patient passing urine** (anuria removes your safest route and moves dialysis up) **· is anything still making it worse** — rhabdomyolysis, tumour lysis, or a drug still in the system.",
+    "**Point-of-care blood gas** for a potassium in minutes where you are. **Recheck the potassium at 1–2 hours.** **Hourly BGL for at least 6 hours** after insulin.",
+    "Causes of a **falsely high** result: **haemolysis** (red cells hold potassium at about 25 times plasma) **· tight tourniquet or fist clenching · delayed processing or a cold sample · marked thrombocytosis or leucocytosis — a plasma rather than serum sample resolves it · contamination from a drip upstream**.",
+    "**Version B: ECG first, repeat the sample second, conclude third.** Repeat with a **wider-bore needle, no prolonged tourniquet, no fist clenching, straight to the laboratory**. Do not treat and do not cancel her procedure until a clean result is back."
    ],
-   "fails": [
-    "Not asking for an ECG and monitoring in the first response — a fail regardless of the total ★",
-    "Calcium gluconate without dose and route; or not stating that calcium does NOT lower potassium ★",
-    "No hourly glucose monitoring, unprompted ★",
-    "Not withholding ramipril and spironolactone ★",
-    "Naming one cause and stopping; reading the whole panel before asking for the ECG; quoting '7.2' at the patient; false reassurance on the heart-attack question",
-    "Not naming dialysis as definitive here; not involving renal / retrieval early"
-   ],
-   "numbers": [
-    "Calcium gluconate 10% 10 mL IV over 2–3 min, repeat at 5 min, protects 30–60 min · insulin 10 u short-acting + 50 mL 50% glucose over 15–30 min, hourly BGL ≥6 h · salbutamol 10–20 mg neb (additive) · sodium bicarbonate considered when acidotic, weak evidence · dialysis definitive VERIFY",
-    "Severe ≥6.5 or any ECG change; moderate 6.0–6.4 (Version B 6.1) VERIFY · recheck K⁺ 1–2 h",
-    "ECG sequence: peaked T → flat P → long PR → wide QRS → sine wave → VF/asystole",
-    "Four causes here: CKD 4 · AKI on CKD (urea 24, creatinine 312, eGFR 16, prerenal) · ACEi + spironolactone · acidosis HCO₃ 16 · plus hidden ibuprofen",
-    "Variant 1 sine wave K⁺ 8.4, drowsy, hypotensive = peri-arrest: calcium immediately and repeated, insulin–dextrose and salbutamol simultaneously, call for help + arrest trolley, emergency dialysis · Variant 2 digoxin toxicity K⁺ 6.4, nausea, yellow-green vision: hyperkalaemia marks severity → digoxin-specific antibody fragments definitive; avoid reflex calcium, discuss with toxicology · Variant 3 DKA K⁺ 5.9, glucose 28, pH 7.12: total body K⁺ depleted, follow DKA protocol, replace K⁺ once <5.5 and passing urine · Variant 4 well dialysis patient K⁺ 6.9, normal ECG, dialysis tomorrow: chronic tolerance, not permission to wait — monitor, treat medically, bring dialysis forward · Variant 5 angry patient ('your tablets nearly killed me'): validate, both tablets prescribed for good reasons, kidneys took a hit, they need reviewing when things change",
-    "Pass guide: 17/22 items and all five starred · MedSTAR 1300 13 12 33 · Poisons Information 13 11 26 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Spurious — pseudohyperkalaemia**",
+     "**Always consider it first.** A well patient, an implausible result, a lab haemolysis comment",
+     "Difficult venepuncture, tight tourniquet, fist clenching, delayed or cold sample, high platelets or white cells, drip-arm contamination",
+     "**ECG first, then repeat the sample properly.** Exclusion is a conclusion, not an opening assumption"
+    ],
+    [
+     "**Reduced excretion — CKD and AKI**",
+     "**Creatinine 312, eGFR 16, urea 24** with a prerenal pattern; gastroenteritis and poor intake",
+     "Urine output, volume state, recent illness, nephrotoxins",
+     "**Volume replacement, stop contributors, dialysis if refractory or anuric**"
+    ],
+    [
+     "**Drugs — the additive combination**",
+     "**Ramipril AND spironolactone together** in advanced CKD — classic and avoidable",
+     "**ACEi/ARB · potassium-sparing diuretics · NSAIDs · trimethoprim · heparin · beta-blockers · ciclosporin, tacrolimus · digoxin**",
+     "**Withhold every contributor.** Ask about NSAIDs, trimethoprim and salt substitutes **by name**"
+    ],
+    [
+     "**Shift out of cells — metabolic acidosis**",
+     "**Bicarbonate 16**",
+     "Acidosis, DKA or insulin deficiency, hyperosmolality",
+     "Treat the acidosis; **bicarbonate only where the acidosis is significant**"
+    ],
+    [
+     "Rhabdomyolysis",
+     "Crush or prolonged immobility, dark urine, very high CK",
+     "Muscle pain, the circumstances of the injury",
+     "**Aggressive fluids — and expect it to rise again as muscle keeps breaking down**"
+    ],
+    [
+     "Tumour lysis syndrome",
+     "24–48 hours after chemotherapy; high phosphate and urate, low calcium",
+     "Recent chemotherapy, bulky disease",
+     "**Hydration, rasburicase, involve renal early**"
+    ],
+    [
+     "Addison disease and hypoaldosteronism",
+     "**Low sodium with high potassium**, weight loss, pigmentation, postural dizziness, low glucose",
+     "Postural BP, pigmentation, fatigue",
+     "**Hydrocortisone and fluids** — the hyperkalaemia is the clue, not the diagnosis. Also type 4 RTA"
+    ],
+    [
+     "Digoxin toxicity",
+     "Nausea, yellow-green visual disturbance, on digoxin",
+     "Digoxin level, renal function, recent dose change",
+     "**Digoxin-specific antibody fragments are definitive.** Discuss calcium with toxicology rather than improvising"
+    ],
+    [
+     "Increased intake",
+     "**Rarely sufficient alone** — only in someone who already cannot excrete",
+     "Salt substitutes, supplements, large transfusions of stored blood",
+     "Stop the source; treat the excretion problem underneath it"
+    ],
+    [
+     "**Hyperkalaemia mimicking VT**",
+     "**Broad complex regular tachycardia in a dialysis patient**",
+     "Missed dialysis sessions, known renal failure",
+     "**Calcium first, and get him dialysed.** Treating it as VT alone misses the cause"
+    ]
    ]
   },
   "source": "Hyperkalaemia_2_Case_Tasks_Script_Notability.pdf (Version A — K⁺ 7.2 with ECG changes; Version B pseudohyperkalaemia on the back)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Hyperkalaemia_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Not asking for an ECG and cardiac monitoring in your first sentence, before you finish reading the panel — a fail on its own regardless of the total (★)",
-   "FAIL — Calcium gluconate without dose and route — 10% 10 mL IV over 2–3 minutes on the monitor, repeated at 5 minutes if the ECG has not improved (★)",
-   "FAIL — Not stating that calcium does NOT lower potassium — it stabilises the myocardium for 30–60 minutes and must be given alongside something that shifts or removes (★)",
-   "FAIL — No hourly glucose monitoring, unprompted — insulin 10 units in 50 mL 50% glucose, hourly BGL for six hours; hypoglycaemia is the commonest complication and is delayed (★)",
-   "FAIL — Not withholding ramipril and spironolactone, and not telling the patient not to restart them (★)",
-   "FAIL — Naming one cause and stopping — there are four: CKD, AKI on top, ACE inhibitor plus spironolactone, and the acidosis; then ask NSAIDs, trimethoprim, salt substitutes. To the patient explain the effect, never quote 7.2"
-  ],
   "versions": {
    "doorStem": "A results-interpretation station: a potassium result is handed to you. Tasks are the same in both versions — interpret the results and any further investigation to the examiner → state the likely causes → outline immediate management → explain the situation to the patient. The two versions land on DIFFERENT answers.",
    "rows": [
