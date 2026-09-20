@@ -17492,9 +17492,8 @@
  {
   "id": "MED-61",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 360,
-  "setting": "Rural general practice clinic with limited facilities. You are the GP. Face to face 4 + 2 + 2; online 6-minute history then findings on screen.",
   "stem": [
    "Your next patient is Alex Wooten, 17, who presents complaining of tiredness and feeling unwell. He works on his family's farm and has been complaining that he is not able to keep up with his work."
   ],
@@ -17504,95 +17503,202 @@
    "Explain your most likely diagnosis to the patient, with your reasons",
    "Give your differential diagnoses"
   ],
-  "time": "8 minutes. Acknowledge the concern in the stem within 30 s · tiredness in 60 s · screen until thirst and urine turn positive — record them as symptoms, never argue with his explanation · probe: polyphagia, recurrent infections, vision, feet, ★ abdominal pain/nausea/vomiting, weight · finish the whole differential screen anyway (incl. farm animal contact) · examination incl. dehydration, breathing pattern, BSL and dipstick — 'glucose and ketones' · diagnosis in 25 seconds, two layers · differentials · hospital today.",
+  "findings": [
+   [
+    "General appearance",
+    "LOOKS TIRED AND MILDLY DEHYDRATED. Not pale or jaundiced, not wasted. ASK SPECIFICALLY for DRY MUCOUS MEMBRANES, REDUCED SKIN TURGOR and SUNKEN EYES"
+   ],
+   [
+    "Vital signs",
+    "T 36.5 · HR 82 · BP 110/70 (ask for a POSTURAL reading) · RR 12 · saturations normal. ALL NORMAL — say so"
+   ],
+   [
+    "Breathing pattern — ask for it by name",
+    "NOT DEEP OR SIGHING. NO KUSSMAUL BREATHING. That absence is why this is ketosis rather than proven acidosis"
+   ],
+   [
+    "Thyroid, nodes, CVS, respiratory, abdomen",
+    "ALL NORMAL. No tenderness, no hepatosplenomegaly"
+   ],
+   [
+    "Office test 1 — blood sugar",
+    "HIGH — in the MID TO HIGH TEENS in mmol/L"
+   ],
+   [
+    "Office test 2 — urine dipstick",
+    "GLUCOSE 4+ · KETONES 3+. The examiner asks 'WHAT ARE YOU LOOKING FOR ON THE DIPSTICK?' → THE ANSWER IS GLUCOSE AND KETONES. 'Leucocytes, nitrites, protein and blood' is the generic answer and it is WRONG HERE"
+   ],
+   [
+    "CORRECTION — the glucose number and its units",
+    "The teaching case quotes '80', which is a mg/dL figure and equals about 4.4 mmol/L — NORMAL. AUSTRALIA REPORTS IN mmol/L. Read it as a HIGH mmol/L value. Thresholds: FASTING 7.0 OR ABOVE · RANDOM 11.1 OR ABOVE with symptoms"
+   ],
+   [
+    "CORRECTION — normal observations plus 3+ ketonuria is NOT yet proven DKA",
+    "In established ketoacidosis you would expect TACHYCARDIA, TACHYPNOEA or KUSSMAUL BREATHING, and dehydration. URINE KETONES ALONE DO NOT DIAGNOSE DKA — it needs HYPERGLYCAEMIA plus KETONAEMIA plus METABOLIC ACIDOSIS. Say: 'to confirm ketoacidosis I would want a BLOOD KETONE LEVEL and a VENOUS BLOOD GAS for pH and bicarbonate. Either way he needs referral today'"
+   ],
+   [
+    "What he explains away — and you record anyway",
+    "'Yeah, I'm passing more urine — BUT ONLY BECAUSE I'M DRINKING MORE. I work in the sun. That's normal, isn't it?' HE DOES NOT KNOW WHAT POLYDIPSIA AND POLYURIA MEAN. YOU DO. Do not argue — say 'that does make sense, and I'll still note it', then PROBE"
+   ],
+   [
+    "What the probe yields",
+    "EATING HEAPS (polyphagia) · TWO SKIN INFECTIONS THAT TOOK AGES TO CLEAR · BELT ON A TIGHTER NOTCH (weight loss) · STOMACH A BIT OFF, FELT SICK TWICE. No blurred vision, no numb feet. AND: CATTLE AND SHEEP EVERY DAY — the farm animal contact"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the two office tests, and what he explains away",
+  "must": [
+   "FAIL — Over-explaining the diagnosis, so the bell goes during the second differential.",
+   "FAIL — Accepting his explanation for the thirst and urine and moving on.",
+   "FAIL — A generic dipstick answer instead of glucose and ketones.",
+   "FAIL — Treating him in the clinic and reviewing tomorrow. This is a same-day referral.",
+   "ASK — Are you passing more urine? Are you more thirsty, or drinking more?",
+   "ASK — Any tummy pain, nausea or vomiting? That is how ketoacidosis presents."
+  ],
   "back": {
-   "dx": "Diabetic ketoacidosis (ketosis; acidosis still to be confirmed) complicating undiagnosed type 1 diabetes in a lean 17-year-old: months of worsening low energy, polydipsia and polyuria explained away as farm work in the sun, polyphagia, two slow-healing skin infections, weight loss (belt tighter), nausea; aunt with T1DM. Examination: tired, mildly dehydrated, observations normal, breathing not deep or sighing; BSL mid-high teens; dipstick glucose 4+, ketones 3+. Two-layer diagnosis to the patient in 25 seconds: 'diabetic ketoacidosis, a complication of diabetes you didn't know you had — sugar goes up, the body makes chemicals called ketones, which I found in your urine'; reasons: tired for months, passing more urine, drinking more, hungrier, high sugar with sugar and ketones in the urine. Differentials reasoned for two, listed for the rest: leukaemia/lymphoma (no lumps, night sweats, that kind of weight loss); infections — EBV, HIV, Q fever from the animals (no fever/flu-like illness); then hepatitis, thyroid, anaemia, autoimmune, drugs, depression/stress, coeliac/IBD, cardiorespiratory, OSA. Disposition: hospital today — IV access, fluids started, bloods, specialist team phoned. Discriminating behaviours: recording the explained-away thirst/urine as symptoms, 'glucose and ketones' on the dipstick, and a 25-second explanation that leaves time for the differentials.",
+   "dx": [
+    "**Diabetic ketoacidosis complicating PREVIOUSLY UNDIAGNOSED TYPE 1 DIABETES.** **Say it as TWO LAYERS: 'diabetic ketoacidosis, which is a complication of diabetes you didn't know you had.'** Not 'you have diabetes', and not 'you have DKA' — **naming both is scored.**",
+    "**THE DISCRIMINATING ISSUE IS THE LENGTH OF THE EXPLANATION.** Every other station in this cluster rewards a thorough answer; **this one punishes it.** The reported score pattern is **5 for approach, 5 for history, 5 for examination, 1 or 2 for diagnosis and differentials, and an overall fail.** **The explanation is worth ONE mark. The differentials are worth a DOMAIN.**",
+    "**Twenty-five seconds, then stop. NO pancreas. NO insulin. NO fat metabolism. NO acidosis.** The whole thing: **'in diabetes the amount of sugar in your blood goes up. When that happens your body starts producing some chemicals called ketones. That's what I've found in your urine today.'** Then **the reasons: tired for months, passing more urine, drinking more, hungrier, and a high blood sugar with sugar and ketones in the urine.**",
+    "**If he asks a question that would take you into physiology: 'I'll come back to that — let me first tell you what else I've considered and what happens next.'**",
+    "**THE FOUR Ps: POLYURIA · POLYDIPSIA · POLYPHAGIA · plus WEIGHT LOSS.** Then **recurrent infections.**",
+    "**Abdominal pain, nausea and vomiting are asked HERE and nowhere else in a tiredness structure** — which is why candidates miss them. **In a young person with hyperglycaemia they are the presenting features of ketoacidosis: a teenager with 'gastro that isn't settling' is DKA until you have checked a glucose and a ketone.** **Vision and feet are asked to DATE the illness, not because you expect complications after a few months.**",
+    "**DKA is a TRIAD, not a dipstick: hyperglycaemia + ketonaemia + metabolic acidosis.** Typical thresholds: **glucose above 11, blood ketones 3.0 mmol/L or more, venous pH below 7.3 or bicarbonate below 15.** VERIFY.",
+    "**ORDER OF TREATMENT: FLUID, then POTASSIUM, then INSULIN. NO INSULIN BOLUS IN CHILDREN** — it raises the risk of cerebral oedema. **CEREBRAL OEDEMA is the leading cause of death in paediatric DKA: headache, falling conscious level, BRADYCARDIA WITH HYPERTENSION.** VERIFY.",
+    "**The stem says RURAL CLINIC WITH LIMITED FACILITIES — say that out loud. Stabilise, do not definitively treat:** IV access, 0.9% sodium chloride, bedside tests, and **an early call to the paediatric or medical registrar BEFORE you start anything else.** **MedSTAR 1300 13 12 33 · RFDS · Women's and Children's Hospital · PATS.**",
+    "**Three things the teaching case leaves out: a brief HEADSS sweep in a 17-year-old, one or two questions, since the stem already says his parents are unhappy · FARM SAFETY — he operates machinery and drives on the property, and Austroads standards apply once he is on insulin · Q FEVER VACCINATION, recommended for at-risk occupations after pre-vaccination screening.** **Register with the NDSS for subsidised strips; GP Management Plan for a diabetes educator and dietitian.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro; ★ 'not being able to keep up with the work must be really frustrating, and I can hear it's weighing on you'; consent; tiredness: low energy vs sleepy, months, constant, worse, nothing helps, impact — 60 s"
+     "**Introduce, then ACKNOWLEDGE THE CONCERN THE STEM PUT THERE: 'I'm sorry to hear that — not being able to keep up with the work must be really frustrating, and I can hear it's weighing on you.'** There are communication marks for naming it back in the first thirty seconds, and you **close on it at the end.**"
     ],
     [
-     "1:00",
-     "Checklist — liver, thyroid (weather) … ★ 'passing more urine? more thirsty or drinking more?' → 'only because I work in the sun — that's normal, isn't it?' → 'That does make sense, and I'll still note it.'"
+     "0:30",
+     "**Explore, six questions, sixty seconds: describe it — LACK OF ENERGY OR SLEEPINESS · how long · constant or intermittent · getting worse · anything better or worse · how is it affecting you?** A few **MONTHS** is longer than most tiredness stations — long enough for type 1 to have been building quietly."
     ],
     [
-     "1:45",
-     "★ Probe: hungrier/eating more · recurrent infections (skin, thrush, urine) · blurred vision · numb/tingling feet · ★ tummy pain, nausea, vomiting · weight loss without trying"
+     "1:30",
+     "**Signpost the screen, then HEMIADCOP. H — liver: tanning, yellowing, dark urine, pale stools, itching. E — ENDOCRINE, and this is where it turns: any change in how you cope with HOT OR COLD WEATHER · ARE YOU PASSING MORE URINE THAN USUAL · ARE YOU MORE THIRSTY, OR DRINKING MORE?**"
     ],
     [
-     "2:45",
-     "★ Finish the screen anyway, in groups: malignancy (weight, appetite, lumps, sweats, family cancer) · infection (fever, chills, sore throat, sexual activity, travel, ★ animal contact on the farm — Q fever) · anaemia · autoimmune · drugs/alcohol/smoking · mood, stress at home/school, bullying, brief HEADSS (a bit down — parents think he's lazy; no self-harm) · bowels · cardiorespiratory, snoring · family history (aunt T1DM)"
+     "2:00",
+     "**He explains it away. Do NOT argue: 'that does make sense, and I'll still note it.' Then PROBE: ARE YOU HUNGRIER THAN USUAL, OR EATING MORE · ANY INFECTIONS THAT KEEP COMING BACK — skin infections, thrush, urine infections · ANY BLURRING OF YOUR VISION · ANY NUMBNESS OR TINGLING IN YOUR FEET · ANY TUMMY PAIN, NAUSEA OR VOMITING · HAVE YOU LOST ANY WEIGHT WITHOUT TRYING?**"
     ],
     [
-     "4:00",
-     "Examination: unwell? ★ dehydration (dry mucosa, turgor, sunken eyes), pale, jaundiced, wasted · T, HR, BP incl. postural, RR, SpO2 · thyroid, nodes · CVS · respiratory — ★ 'is his breathing deep and sighing?' · abdomen (tenderness, organomegaly) · ★ 'blood sugar level and urine dipstick' → 'what are you looking for?' → ★ 'glucose and ketones'; say the observations are normal — ketosis, acidosis needs blood ketone + venous gas"
+     "2:40",
+     "**M — malignancy: weight loss, appetite, lumps and bumps, night sweats, personal or family cancer history.**"
     ],
     [
-     "6:00",
-     "★ Diagnosis in 25 s, two layers, five reasons; no pancreas/insulin/fat metabolism/acidosis. Physiology questions → 'I'll come back to that — let me first tell you what else I've considered and what happens next.'"
+     "3:00",
+     "**I — infection, and the case-specific key point: fever, chills, flu-like illness, sore throat, sexually active, travel — AND, BECAUSE HE WORKS ON A FARM, ANY CONTACT WITH ANIMALS?** → cattle and sheep daily. **That is the Q fever question.**"
     ],
     [
-     "6:45",
-     "Differentials: reason two, list the rest · ★ 'You need to go to hospital today — I'll put a drip in, start fluid, take bloods and ring the specialist team now. Very treatable; once controlled there's no reason you can't do the farm work. Who can drive you? Would you like me to call your parents?' · close on the hidden agenda: 'I'll tell Mum it's not because you've been slacking off.'"
+     "3:20",
+     "**A — anaemia and autoimmune: breathless or heart racing on exertion · joint, shoulder or hip pain, headaches, rashes. D — drugs and mood: any medicines or recreational drugs · how has your mood been, still enjoying things · ANY STRESS AT HOME OR SCHOOL, ANY BULLYING** — a brief HEADSS sweep, one or two questions."
+    ],
+    [
+     "3:45",
+     "**C — coeliac and cardiopulmonary: greasy stools, blood, diarrhoea · chest pain, ankle swelling, cough, smoking. O — sleep and occupation: snoring or gasping at night.** **Do NOT skip these because you already have the diagnosis — the station IS the differentials.**"
+    ],
+    [
+     "4:10",
+     "**The examination request: general appearance and SPECIFICALLY IS HE DEHYDRATED — dry mucous membranes, reduced skin turgor, sunken eyes · vitals including a POSTURAL blood pressure · thyroid and full lymph nodes · cardiovascular · respiratory, AND IS HIS BREATHING DEEP AND SIGHING · abdomen for tenderness and hepatosplenomegaly.**"
+    ],
+    [
+     "4:50",
+     "**The two office tests, named: 'could I have A BLOOD SUGAR LEVEL, and A URINE DIPSTICK?'** When asked what you are looking for: **'GLUCOSE AND KETONES.'**"
+    ],
+    [
+     "5:20",
+     "**Note the observations are NORMAL and say what that means: this is ketosis with new diabetes, and confirming acidosis needs a blood ketone and a venous gas.**"
+    ],
+    [
+     "5:40",
+     "**The diagnosis in TWENTY-FIVE SECONDS, timed against a clock: two layers, two sentences of mechanism, then the reasons. STOP.**"
+    ],
+    [
+     "6:20",
+     "**The differentials at speed — REASON THE FIRST TWO ONLY: blood cancers, leukaemia and lymphoma — no lumps, no night sweats · infections, glandular fever, HIV and Q FEVER FROM THE FARM ANIMALS — no fevers or flu-like symptoms.** Then **list the rest quickly**: hepatitis, thyroid, anaemia, autoimmune, medications and drugs, depression and stress, coeliac and bowel disease, heart and lung, sleep apnoea. **One named representative per group.**"
+    ],
+    [
+     "7:20",
+     "**Close safely: 'this isn't something I can treat here — YOU NEED TO GO TO HOSPITAL TODAY. I'm going to put a drip in and start some fluid, take blood tests, and ring the specialist team now.'** Then **the reassurance that answers the stem: 'once it's under control there's no reason you can't do your work on the farm.'** **'Is there someone who can drive you, and would you like me to call your parents?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Not being able to keep up with the work must be really frustrating.'",
-    "★ 'Are you passing more urine than usual? Are you more thirsty, or drinking more?' → ★ 'That does make sense, and I'll still note it.' (never argue)",
-    "'Are you hungrier than usual? Any infections that keep coming back?' / ★ 'Any tummy pain, nausea or vomiting?' / 'Any contact with animals on the farm?'",
-    "★ 'Could I have a blood sugar level and a urine dipstick?' → 'Glucose and ketones.'",
-    "★ 'Alex, I think you have diabetic ketoacidosis, which is a complication of diabetes you didn't know you had. In diabetes the sugar in your blood goes up; when that happens your body starts producing chemicals called ketones — that's what I've found in your urine today. The reasons: tired for months, passing more urine, drinking more, hungrier than usual, and your blood sugar is high with sugar and ketones in your urine.'",
-    "'Diabetes? But I'm not overweight.' → 'This is the type that isn't about weight — the body stops making its own insulin. It can happen to fit people.'",
-    "'Can I still drive the ute and the tractor?' → 'Once you're on insulin there are national driving rules because of the risk of a hypo at the wheel — it doesn't mean you can't drive, it means checking your sugar before you drive and carrying something sugary. Same for machinery. We'll go through it once you're stable.'",
-    "'Do my parents have to know?' → 'What you tell me is confidential, and at 17 you can make your own decisions if you understand what's involved. But this is serious and you'll need help — and knowing you've been unwell will change how they see the last few months. Would you like me to be there when you tell them?' ADDED",
-    "★ 'You need to go to hospital today — but once this is under control there's no reason you can't do your work.'"
-   ],
    "pefe": [
-    "Examiner: tired, mildly dehydrated, not pale/jaundiced · T 36.5, HR 82, BP 110/70, RR 12, SpO2 normal · thyroid, nodes, CVS, chest, abdomen normal; breathing not deep or sighing · ★ BSL high (mid–high teens mmol/L) · dipstick glucose 4+, ketones 3+",
-    "Variant — frankly acidotic (Kussmaul RR 28, HR 124, abdominal tenderness, drowsy): 'clinical ketoacidosis — large-bore cannula, 0.9% sodium chloride, bloods for glucose, ketones, gas, electrolytes, call retrieval immediately — MedSTAR 1300 13 12 33'",
-    "Variant — 5-year-old known T1DM, vomiting with ketones (online paediatric version): DKA until proven otherwise; cautious fluid resuscitation, insulin infusion without a bolus — cerebral oedema risk",
-    "Variant — glucose 9 with ketones 3+ and eating very little: starvation/dehydration ketosis possible — blood ketone and venous gas before calling it DKA; euglycaemic DKA only if on an SGLT2 inhibitor ADDED",
-    "Management order if asked: fluid → potassium → insulin infusion (0.05–0.1 units/kg/h), no insulin bolus in children; monitor glucose hourly, ketones/gas/K 2-hourly; find the precipitant; specialist team; then education, NDSS registration, sick-day rules, driving rules VERIFY",
-    "SA: MedSTAR 1300 13 12 33 · RFDS · PATS · NDSS · Diabetes SA; adolescent confidentiality and Gillick/mature-minor competence at 17 under SA Consent to Medical Treatment and Palliative Care Act 1995 (16+ may consent) VERIFY",
-    "Management order if asked — Fluid → potassium → insulin infusion (0.05–0.1 units/kg/h), no insulin bolus in children; monitor glucose hourly, ketones/gas/K 2-hourly; find the precipitant; specialist team; then education, NDSS registration, sick-day rules, driving rules VERIFY",
-    "SA — MedSTAR 1300 13 12 33 · RFDS · PATS · NDSS · Diabetes SA; adolescent confidentiality and Gillick/mature-minor competence at 17 under SA Consent to Medical Treatment and Palliative Care Act 1995 (16+ may consent) VERIFY"
+    "**Do now: BEDSIDE GLUCOSE and BLOOD KETONES · VENOUS BLOOD GAS for pH and bicarbonate if available · U&E, PARTICULARLY POTASSIUM, creatinine, FBC, septic screen if febrile · IV access and 0.9% sodium chloride if dehydrated · TELEPHONE THE PAEDIATRIC OR MEDICAL REGISTRAR NOW, before you start anything else · ECG if potassium is abnormal.**",
+    "**Do next: transfer for inpatient fluids, an INSULIN INFUSION, potassium replacement and hourly monitoring · confirm the type with HbA1c and GAD and IA-2 ANTIBODIES · diabetes educator, dietitian and a written SICK-DAY PLAN · screen the associated conditions — THYROID and COELIAC · driving and farm-machinery advice · NDSS registration.**",
+    "**HbA1c 6.5% (48 mmol/mol) or above is also diagnostic — but NOT in suspected type 1 or in acute illness.** VERIFY.",
+    "**Do not miss: CEREBRAL OEDEMA · HYPOKALAEMIA, because total body potassium is always depleted and falls further once insulin starts · PRECIPITANTS — infection, appendicitis, or a missed insulin dose in a known diabetic · DEPRESSION OR SELF-HARM in a 17-year-old with a new lifelong diagnosis · the abdominal pain that IS ketoacidosis rather than a surgical abdomen.**",
+    "**Avoid: an insulin bolus · rapid or excessive fluid in a child · managing this in the clinic and reviewing next week · calling it 'just diabetes' when ketones are 3+ · a long physiological explanation.**",
+    "**If ketones are present but glucose only mildly raised: ketones can come from STARVATION or DEHYDRATION, so do not call it ketoacidosis on the dipstick alone — get a blood ketone and a venous gas, and consider EUGLYCAEMIC ketoacidosis if he were on an SGLT2 inhibitor.**"
    ],
-   "fails": [
-    "Accepting his explanation for the thirst and urine and moving on ★",
-    "Generic dipstick answer ('leucocytes, nitrites, protein, blood') — the answer is glucose and ketones ★",
-    "Explaining ketogenesis and acidosis beautifully and the bell going during the second differential ★",
-    "Treating him in the clinic with fluids and reviewing tomorrow — same-day referral ★",
-    "Not acknowledging the concern in the stem; skipping the differentials because 'it's obviously diabetes'",
-    "Stopping at polyuria/polydipsia — missing polyphagia, infections, complication questions and the DKA questions (abdominal pain, nausea, vomiting)",
-    "Insulin bolus / insulin before fluids if asked for management; not asking farm animal contact"
-   ],
-   "numbers": [
-    "7-Eleven: fasting ≥7.0 mmol/L · random ≥11.1 mmol/L with symptoms · Australia reports mmol/L",
-    "Dipstick here: glucose 4+, ketones 3+ · DKA triad: hyperglycaemia + ketonaemia (blood ketones ≥3.0) + acidosis (venous pH <7.3 or HCO3 <15) VERIFY",
-    "Order: fluid → potassium → insulin · no insulin bolus in children · obs normal here = ketosis, acidosis to confirm",
-    "Timing: diagnosis and mechanism 25 s · reasons 15 s · differentials the rest · watch the clock — ≥60 s left at the start of Task 3",
-    "MedSTAR 1300 13 12 33 · RFDS · PATS · NDSS"
+   "ddx": [
+    [
+     "**DKA on new type 1 diabetes** — the answer",
+     "**Months of fatigue, polyuria, polydipsia, polyphagia, recurrent infections, weight loss; GLUCOSE 4+ and KETONES 3+**",
+     "**Abdominal pain, nausea, vomiting, DEEP SIGHING BREATHING, dehydration**",
+     "**Bedside glucose and blood ketones, venous blood gas, U&E; SAME-DAY REFERRAL** — emergency"
+    ],
+    [
+     "Type 2 diabetes · thyroid disease",
+     "**Type 2 is possible at 17 with obesity or a strong family history**; thyroid causes fatigue with weather intolerance",
+     "Family history, weight and habitus, **ACANTHOSIS NIGRICANS**; weather preference, tremor, bowel habit",
+     "**HbA1c; GAD and IA-2 ANTIBODIES to separate type 1 from type 2**; TSH — urgent"
+    ],
+    [
+     "**Leukaemia and lymphoma**",
+     "Months of fatigue in a teenager; **bone pain**, and relapse of a childhood leukaemia is age-relevant",
+     "Weight loss, night sweats, lumps, bruising, bone pain, cancer history",
+     "**FBC and film; examine nodes, liver and spleen** — urgent, must not miss"
+    ],
+    [
+     "**Q fever**",
+     "**Works on a farm with daily animal contact** — the case-specific key point",
+     "**Animal contact, abattoir work, unpasteurised milk**",
+     "**Q fever serology. NOTIFIABLE. Vaccination needs pre-vaccination screening** — urgent"
+    ],
+    [
+     "EBV · HIV · hepatitis",
+     "**EBV is the classic teenage fatigue infection**",
+     "Sore throat, nodes, rash, sexual history, travel",
+     "EBV serology; HIV and hepatitis serology — urgent"
+    ],
+    [
+     "Anaemia · coeliac disease · inflammatory bowel disease",
+     "Fatigue with exertional breathlessness; any bowel symptom. **Coeliac is ASSOCIATED with type 1 diabetes**",
+     "Breathlessness or racing heart on exertion, diet, greasy stools, diarrhoea, blood, growth",
+     "FBC and iron studies, coeliac serology, faecal calprotectin"
+    ],
+    [
+     "**Depression and psychosocial stress**",
+     "**Extremely common at this age, and the stem already flags conflict with his parents**",
+     "Mood, anhedonia, sleep, school, bullying, drugs and alcohol — **and ASK DIRECTLY ABOUT SELF-HARM**",
+     "Two-question mood screen; brief HEADSS — urgent"
+    ],
+    [
+     "Medications and recreational drugs · obstructive sleep apnoea",
+     "Always worth naming, and cheap to exclude",
+     "Medication list, alcohol and other drugs; snoring, gasping, daytime sleepiness",
+     "Medication review; STOP-BANG"
+    ],
+    [
+     "Chronic fatigue after infection",
+     "Prolonged fatigue following a viral illness",
+     "Preceding infection, post-exertional malaise",
+     "**A diagnosis of exclusion only**"
+    ],
+    [
+     "**Hyperosmolar hyperglycaemic state — the mimic**",
+     "**Older patient, profound thirst and confusion, glucose very high, KETONES NEGATIVE**",
+     "Age, conscious state, ketone level",
+     "**Slower correction, higher mortality, no significant ketosis** — emergency"
+    ]
    ]
   },
   "source": "Diabetic_Ketoacidosis_2_Case_Tasks_Script_Notability.pdf (Alex Wooten, 17, tiredness on the farm — DKA in new type 1 diabetes)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Diabetic_Ketoacidosis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Examiner",
-    "Tired, mildly dehydrated, not pale/jaundiced · T 36.5, HR 82, BP 110/70, RR 12, SpO2 normal · thyroid, nodes, CVS, chest, abdomen normal; breathing not deep or sighing · ★ BSL high (mid–high teens mmol/L) · dipstick glucose 4+, ketones 3+"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — Accepting his explanation for the thirst and urine ('I work in the sun, so of course') — record the symptoms, not his interpretation; 'that does make sense, and I'll still note it' — never argue, just probe (★)",
-   "FAIL — The generic dipstick answer — when the examiner asks what you are looking for, 'leucocytes, nitrites, protein and blood' is wrong; the answer is glucose and ketones (★)",
-   "FAIL — Explaining ketogenesis and acidosis beautifully while the bell goes during the second differential — the best-documented failure here; two layers, five reasons, 25 seconds: 'diabetic ketoacidosis, a complication of diabetes you didn't know you had' (★)",
-   "FAIL — Skipping the rest of the differential screen because you already have the diagnosis — the station is about the differentials; even a partial structured list scores, skipping scores nothing (★)",
-   "FAIL — 'I'll start some fluids and see you tomorrow' — new diabetes with ketones is a same-day hospital referral; if asked, the order is fluid → potassium → insulin, no insulin bolus",
-   "DO — Acknowledge the concern in the stem in the first thirty seconds (can't keep up with the farm work), probe polyphagia, recurrent infections, abdominal pain, nausea and vomiting, weight loss — and ask about animal contact on the farm for Q fever"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-62",
