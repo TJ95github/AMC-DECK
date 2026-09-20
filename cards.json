@@ -19997,8 +19997,8 @@
  {
   "id": "MED-73",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, regional South Australia. Results-discussion station; the examiner interrupts to hand you further results after your investigation list.",
   "stem": [
    "Ms Janine Whitfield, 45, teacher's aide, attends to discuss blood tests taken at a routine check-up two weeks ago. Hypothyroidism for eight years on levothyroxine 100 µg daily; no other regular medicines on file; non-smoker; she has no complaint and feels perfectly well. Results: TSH 2.1 (0.4–4.0), free T4 14 (10–20), albumin 31 g/L (low, 35–50), total calcium 2.56 (normal, 2.10–2.60), corrected calcium 2.78 — HIGH."
   ],
@@ -20008,95 +20008,210 @@
    "Tell the examiner the further investigations you would request, in order of priority",
    "The examiner will give you those results. Explain your diagnosis and your reasoning to the patient, including the differentials you considered"
   ],
-  "time": "8 minutes after 2 reading: history 4 · explain current results 1 · investigations 1 · diagnosis + differentials 2. Write 'corrected 2.78 · albumin low · TSH normal · PTH first' and the seven history headings before you speak. Name the abnormal result early and size it · why the test, ever told before · ≥5 hypercalcaemia symptoms · ★ full malignancy screen · supplements, antacids, thiazide/lithium by use, TB/sarcoid, phaeo, thyroid · ICE before explaining · ★ corrected not total · ★ PTH first WITH a reason · four glands, one overworking · not cancer · ≥4 differentials · plan, referral, safety-net, summary.",
+  "findings": [
+   [
+    "The results already in front of you",
+    "TSH 2.1 (0.4–4.0) NORMAL · FREE T4 14 (10–20) NORMAL · ALBUMIN 31 g/L — LOW (35–50) · TOTAL CALCIUM 2.56 — LOOKS NORMAL (2.10–2.60) · CORRECTED CALCIUM 2.78 — HIGH"
+   ],
+   [
+    "READ THE ALBUMIN, NOT JUST THE CALCIUM",
+    "CORRECTED Ca = total + 0.02 x (40 − albumin in g/L) = 2.56 + 0.02 x 9 = 2.78. ACT ON THE CORRECTED VALUE ONLY. Saying 'your calcium is actually normal, so there's nothing to worry about' is a STATION-ENDING false reassurance. A LOW ALBUMIN IS ITSELF WORTH A SENTENCE — it can point to malignancy, liver disease or nephrotic syndrome"
+   ],
+   [
+    "The severity band",
+    "MILD, below 3.00 — usually asymptomatic, outpatient work-up. MODERATE 3.00–3.50 — symptoms likely, look hard for malignancy. SEVERE above 3.50 — confusion, dehydration, arrhythmia, ADMIT"
+   ],
+   [
+    "THE HOOK — the question that turns a number into a story",
+    "'HAS ANYONE EVER TOLD YOU BEFORE THAT YOUR CALCIUM WAS HIGH?' → 'Yes — last year. My GP told me to stop my supplements and cut back on dairy, and I did. AND HERE I AM, IT'S STILL HIGH.' CHRONICITY makes hyperparathyroidism far more likely than an acute malignancy — but it does NOT exclude it"
+   ],
+   [
+    "What the history returns — Version A",
+    "ALL NEGATIVE except a little more thirst ('I keep a bottle on my desk') — give it only if asked. No nausea, vomiting, constipation, bone or back pain, stones, mood change. No weight loss, lumps, night sweats, breast change, cough, haemoptysis, haematuria. Mammogram clear last year. Never smoked. NO supplements now, Gaviscon once a month. No thiazide, no lithium. No TB contact, no rash, no joint pain, no phaeo episodes"
+   ],
+   [
+    "Her hidden agenda — and when she releases it",
+    "HER MOTHER HAD BREAST CANCER AT 60. If you ask ICE at any point she gives it quietly. IF YOU NEVER ASK, SHE VOLUNTEERS IT AT ABOUT MINUTE SEVEN, just as you are summarising, so you must handle it under time pressure. She also challenges mid-station after the breast question: 'WHY ARE YOU ASKING ALL THIS?'"
+   ],
+   [
+    "What the examiner hands back — Version A",
+    "PTH ELEVATED · VITAMIN D NORMAL · PHOSPHATE LOW-NORMAL · eGFR 88 · FULL EXAMINATION NORMAL. PTH high or INAPPROPRIATELY NORMAL confirms primary hyperparathyroidism"
+   ],
+   [
+    "VERSION B — the flip",
+    "Same stem, but on direct questioning she takes a HIGH-DOSE VITAMIN D from a health-food shop and chews CALCIUM ANTACIDS daily. Corrected Ca 2.88. The examiner returns: PTH SUPPRESSED below 1.0 · 25-OH VITAMIN D 310 nmol/L · eGFR 74. DIAGNOSIS FLIPS TO VITAMIN D TOXICITY, with milk-alkali. A SUPPRESSED PTH IS THE MALIGNANCY ARM — finish the work-up anyway"
+   ],
+   [
+    "The ECG, if asked",
+    "HYPERCALCAEMIA SHORTENS THE QT — the ST segment is almost abolished so the T wave appears to arise straight off the QRS. Severe cases also show OSBORN (J) WAVES and bradyarrhythmia"
+   ],
+   [
+    "The levothyroxine red herring",
+    "It is in the stem ONLY TO TEMPT YOU. A NORMAL TSH MEANS THE DOSE IS CORRECT. Levothyroxine raises calcium only if it causes frank thyrotoxicosis — and then the TSH would be SUPPRESSED. Two questions on the thyroid — how long, taking it as prescribed — then MOVE ON"
+   ]
+  ],
+  "findingsLabel": "The results, the hook, and what the examiner hands back",
+  "must": [
+   "FAIL — Never saying PTH, or burying it at position nine in an unranked list.",
+   "FAIL — No malignancy screen: no weight, no lumps, no night sweats.",
+   "FAIL — Acting on the total calcium and reassuring her that it is normal.",
+   "FAIL — Blaming the levothyroxine and reducing the dose on a normal TSH.",
+   "ASK — Has anyone ever told you before that your calcium was high?",
+   "ASK — Was there anything in particular worrying you about these results?"
+  ],
   "back": {
-   "dx": "Primary hyperparathyroidism (single adenoma ~85%) — PTH elevated with corrected calcium 2.78, vitamin D normal, phosphate low-normal, eGFR 88, examination normal. Total calcium 2.56 reads 'normal' only because albumin is 31: corrected = 2.56 + 0.02 × (40 − 31) = 2.74 ≈ 2.78 per report — a station-ending false reassurance if you read the total line. Calcium was 'high last year'; she was told to stop her multivitamin and cut dairy — chronicity makes malignancy less likely but does not exclude it, and diet was never the driver (correct the science kindly without attacking the colleague). Only positive symptom: 'a bit more thirsty, I keep a bottle on my desk'. Malignancy screen clean (weight, appetite, lumps, sweats, breast/mammogram clear last year, cough, smoking, haematuria); mother had breast cancer at 60 — the hidden agenda; ask ICE before you explain. Investigations ranked with BECAUSE: 1 serum PTH (commonest cause; the one test that splits the differential in two) · 2 25-OH vitamin D with phosphate (read as a set; low phosphate supports PTH) · 3 UEC/eGFR (renal function, hypercalcaemic nephropathy) · then CXR (lung Ca, TB, sarcoid), FBE/ESR/SPEP + free light chains (myeloma, lymphoma), 24-h urine calcium (exclude FHH before any surgery), full examination incl. breasts and nodes. Explain: four tiny glands behind the thyroid, different job — keep blood calcium right; one is overworking, pulling calcium from bone; the hormone is raised, which confirms it; not cancer, not the thyroid tablets, not diet. Differentials named: cancers (blood, breast, lung, kidney), vitamin D/calcium antacid excess, fluid tablets, lithium, overactive thyroid (excluded), sarcoid/TB. Refer endocrinology (age <50 → surgery will be discussed, their decision with her); hydrate; do not restrict dairy; safety-net.",
+   "dx": [
+    "**Primary hyperparathyroidism** — a single parathyroid adenoma in about 85%, four-gland hyperplasia in most of the rest. **The commonest cause of hypercalcaemia in the community, and the answer here.**",
+    "**THE DISCRIMINATING ISSUE: this is a REASONING-OUT-LOUD station, not a history station.** Everything hinges on one thirty-second turn — **when the examiner asks what you would request, do you deliver a RANKED list with PTH at the top and a REASON attached to each item, or an unranked recitation?**",
+    "**THE SCORING REALITY: divide 100 marks across the list. PTH, vitamin D with phosphate, and renal function take about NINETY; everything else shares the last ten. A candidate who lists twenty tests and never says PTH does not pass.** **The word that buys the mark is BECAUSE.**",
+    "**'My first priority is SERUM PARATHYROID HORMONE, because primary hyperparathyroidism is the commonest cause in the community and PTH IS THE SINGLE TEST THAT DIVIDES THE DIFFERENTIAL IN TWO. Second, 25-HYDROXY VITAMIN D with SERUM PHOSPHATE — calcium, phosphate and vitamin D are read as a set, and a low phosphate would support hyperparathyroidism. Third, UEC AND eGFR, for renal function and any hypercalcaemic nephropathy.'**",
+    "**PTH HIGH OR INAPPROPRIATELY NORMAL → PTH-dependent → the GLAND. PTH SUPPRESSED → PTH-independent → hunt CANCER, VITAMIN D and GRANULOMA.**",
+    "**Explain the glands in plain English: 'you already know about your thyroid gland, here in the front of your neck. SITTING BEHIND IT ARE FOUR TINY GLANDS called the PARATHYROID glands — DIFFERENT GLANDS, DIFFERENT JOB. Their only job is to keep the calcium in your blood at the right level. One of them appears to be OVERWORKING, and that pulls extra calcium OUT OF YOUR BONES into your blood.'** Then: **'it is NOT a cancer, and it is NOT caused by your thyroid tablets or by what you eat.'**",
+    "**'Calcium isn't really controlled by what you eat — your body controls it with a HORMONE.'** **Do NOT endorse a low-calcium diet: dietary calcium is not the driver, and severe restriction can WORSEN bone loss. Adequate hydration matters more.**",
+    "**Surgery indications in asymptomatic primary disease — ANY ONE of: AGE UNDER 50 · corrected calcium MORE THAN 0.25 mmol/L above the upper limit · eGFR BELOW 60 · 24-hour urine calcium ABOVE 10 mmol/day · stones or nephrocalcinosis · T-SCORE MINUS 2.5 OR LOWER, or a vertebral fracture.** **She is 45, so AGE ALONE already makes her a surgical candidate — a strong point to make.** VERIFY.",
+    "**CORRECTION — localisation imaging does NOT make the diagnosis.** It is a **TECHNETIUM-99m SESTAMIBI scan and neck ultrasound, with 4D-CT if they disagree — ordered BY THE SURGEON to plan the operation.** If challenged: **'the diagnosis is BIOCHEMICAL; imaging is for surgical planning.'**",
+    "**CORRECTION — thiazides cause HYPOnatraemia and HYPOkalaemia, together with HYPERcalcaemia, hyperuricaemia and hyperglycaemia.** Some notes have this the wrong way round. **And EXCLUDE FAMILIAL HYPOCALCIURIC HYPERCALCAEMIA with a urine Ca:Cr clearance ratio below 0.01 BEFORE anyone is referred for surgery — those patients are HARMED by it.** **MedSTAR 1300 13 12 33 · PATS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, identity · open question · ★ 'I can see one of the numbers, your calcium, is a little higher than we'd like. It's not an emergency, but it does need explaining. Would it be alright if I asked you some questions first?'"
+     "**WIPE, confirm identity, and ASK AN OPEN QUESTION FIRST — never lead with the abnormal number.** Then **name it early and size it honestly: 'I can see one of the numbers, your calcium, is a little higher than we'd like. IT ISN'T AN EMERGENCY, but it does need explaining. Would it be alright if I asked you some questions first, so I can work out why?'** That converts a no-complaint stem into a consultation and **buys you four minutes of history.**"
     ],
     [
      "0:30",
-     "'What made you have the test?' · ★ 'Has anyone ever told you before that your calcium was high?' → yes, last year; multivitamin stopped, dairy cut, nothing else done · 'any further tests or treatment?'"
+     "**The two questions that open the story: 'WHAT MADE YOU HAVE THE BLOOD TEST IN THE FIRST PLACE?' and 'HAS ANYONE EVER TOLD YOU BEFORE THAT YOUR CALCIUM WAS HIGH?'** Then **'did anyone do further tests, or start any treatment for it?'**"
     ],
     [
      "1:00",
-     "Symptoms ≥5: nausea/vomiting · abdominal pain/constipation · bone/back pain · weakness/tiredness · thirst/polyuria/nocturia (→ 'a bit more thirsty') · stones/loin pain · mood/memory/concentration — 'these cover both the symptoms and the commonest cause'"
+     "**BLOCK 1, symptoms of hypercalcaemia — STONES, BONES, GROANS, MOANS, THRONES, at least five: nausea or vomiting · tummy pain or CONSTIPATION · BONE OR BACK PAIN · muscle WEAKNESS or unusual tiredness · MORE THIRSTY or PASSING MORE URINE, especially at night · kidney stones or loin pain · change in MOOD, MEMORY OR CONCENTRATION?** **This block is also your ENTIRE history for hyperparathyroidism — say so when you present.**"
     ],
     [
      "1:45",
-     "★ Malignancy screen, full, 'questions I ask everybody with this result': weight, appetite, lumps (neck/axilla/groin), night sweats, breast lump/discharge/mammogram, cough/haemoptysis/smoking, haematuria, cancer in you or family (mother, breast, 60) · 'why are you asking all this?' → stop, turn, explain honestly"
+     "**BLOCK 2, THE MALIGNANCY SCREEN — 60 seconds, never skip. Signpost it: 'I'm going to ask some questions I ask everybody with this result, just to be thorough.' Weight loss without meaning to · change in appetite · LUMPS in neck, armpits or groin · NIGHT SWEATS that soak the sheets · fevers.**"
+    ],
+    [
+     "2:15",
+     "**Organ-directed: any LUMP OR CHANGE IN EITHER BREAST or nipple discharge, are MAMMOGRAMS up to date · a COUGH THAT WON'T GO or HAEMOPTYSIS, do you smoke or have you ever · BLOOD IN YOUR URINE · BACK PAIN ESPECIALLY AT NIGHT · any cancer in you or your family?** **Myeloma needs back pain, fatigue and infections; RENAL CELL CARCINOMA secretes PTHrP, so ask haematuria and loin pain.**"
     ],
     [
      "2:45",
-     "Supplements: vitamin D, multivitamin, calcium — dose, duration · antacids (Gaviscon monthly) · health-food products · prescription by USE: 'anything for blood pressure or fluid, or any tablet for your mood' · SOB/chest pain/fevers/TB contact · joint pain/rash/shin lumps · headache-sweating-flushing-palpitations, endocrine FHx · thyroid duration/adherence/tremor/heat · alcohol, smoking, PMHx · ★ ICE: 'anything worrying you about these results?' → mother's cancer"
+     "**If she challenges — 'why are you asking all this?' — STOP, TURN TOWARDS HER, and answer honestly: 'a high calcium has several possible causes. Most are not serious, and the commonest by far is a small gland problem. But a few cancers can also raise calcium, so I check for them IN EVERYBODY — not because I suspect it in you.'**"
     ],
     [
-     "4:15",
-     "★ Explain: TSH and T4 normal → thyroxine dose right · 'calcium travels two ways — free, and carried by a protein called albumin; your albumin is a bit low so the raw number looks normal; adjusted for the protein the true level is 2.78, we'd want it under 2.60 — genuinely high, mildly' · 'calcium isn't controlled by what you eat; a hormone controls it — the question is which part of that system is out' · 'so the dairy was pointless?' → reasonable first step, but not the fix"
+     "3:00",
+     "**BLOCK 3, SUPPLEMENTS — question three, not question nine, because it is the only immediately reversible cause and in Version B it is the answer: any VITAMIN D, multivitamins or CALCIUM TABLETS, what dose and how long · anything for INDIGESTION OR HEARTBURN, antacid tablets or liquid, how often · anything else you buy yourself, herbal or health-food-shop?**"
+    ],
+    [
+     "3:30",
+     "**BLOCK 4, prescription drugs — name them BY THEIR USE, not their class: 'apart from the thyroid tablet, any other regular medicine — ANYTHING FOR BLOOD PRESSURE OR FLUID, or ANY TABLET FOR YOUR MOOD?'** That is **thiazide and lithium.**"
+    ],
+    [
+     "3:50",
+     "**BLOCK 5, lung, TB and SARCOID: any cough, breathlessness or chest pain · fevers or night sweats · contact with TUBERCULOSIS or living where it is common · ANY JOINT PAINS, OR ANY RASH, PARTICULARLY TENDER RED LUMPS ON YOUR SHINS?** **Erythema nodosum plus hilar lymphadenopathy plus hypercalcaemia is SARCOIDOSIS.**"
+    ],
+    [
+     "4:10",
+     "**BLOCK 6, phaeo and MEN, 15 seconds: episodes of HEADACHE WITH SWEATING, FLUSHING OR YOUR HEART RACING · FAMILY HISTORY OF THYROID OR PARATHYROID PROBLEMS, or tumours of the adrenal gland?** **The family-history question is the one that scores — MEN links hyperparathyroidism to phaeochromocytoma and medullary thyroid cancer.**"
+    ],
+    [
+     "4:25",
+     "**BLOCK 7, thyroid in TWO questions then close: how long, taking it as prescribed · any tremor, heat intolerance or palpitations?** Then **SADMA and, crucially, ICE: 'is there anything you were hoping we'd cover today, or anything worrying you?'** **ICE BEFORE you explain, not after.**"
+    ],
+    [
+     "4:45",
+     "**Explain the results: the thyroid is normal so the dose is right. Then the calcium: 'some floats free, some is carried by a protein called ALBUMIN. Your albumin is a bit low, so the RAW number looks normal — but once we adjust for that protein, the true level is 2.78, and we'd expect it under 2.60.'** Then **check understanding.**"
     ],
     [
      "5:15",
-     "★ To the examiner, ranked with reasons: 1 PTH because… 2 25-OH vitamin D + phosphate because… 3 UEC/eGFR because… then CXR; FBE, ESR, SPEP + FLC; 24-h urine calcium; full examination incl. breasts and nodes → PTH elevated, vit D normal, PO4 low-normal, eGFR 88, examination normal"
+     "**Turn to the examiner and deliver THE RANKED LIST, with a reason on each — PTH first.** Then the lower-priority items: **chest X-ray · FBC, ESR, protein electrophoresis and free light chains · 24-hour urine calcium · and a full examination including breasts and lymph nodes.**"
     ],
     [
      "6:15",
-     "★ 'Behind your thyroid sit four tiny glands called the parathyroid glands — different glands, different job. One appears to be overworking… today's test shows that hormone is raised, which confirms it. It's called primary hyperparathyroidism. It is not a cancer, and it is not caused by your thyroid tablets or by what you eat.' · 'is it my thyroid tablets?' answered"
+     "**Take the results, turn back, and give the diagnosis in lay terms — four glands, one overworking, and IT IS NOT A CANCER.** Then **check understanding before moving on.**"
     ],
     [
      "7:00",
-     "Differentials aloud: cancer (blood, breast, lung, kidney — why I asked, CXR and bloods still) · vitamin D/antacid excess · fluid tablets, lithium · overactive thyroid (excluded) · sarcoid/TB (other reason for CXR) · plan: endocrine referral, surgery discussed because of her age — their decision; drink plenty of water; don't cut dairy · ★ safety-net: very thirsty + lots of urine, vomiting, drowsy/confused, severe abdominal/back/loin pain → same day · review ~1 week · summarise, offer to write it down"
+     "**Name the differentials you excluded and WHY — cancer, vitamin D and antacids, fluid tablets and lithium, overactive thyroid excluded on the normal TSH, sarcoidosis and TB.** Then **the plan: specialist referral, generous oral fluids, and at 45 the age-based surgical indication.**"
+    ],
+    [
+     "7:30",
+     "**SAFETY-NET by named symptom: 'if you become very thirsty and are passing a lot of urine, if you start VOMITING, become DROWSY OR CONFUSED, or develop severe tummy, back or loin pain, I want you seen THE SAME DAY.'** Then **summarise and offer to write it down.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I can see one of the numbers, your calcium, is a little higher than we'd like. It's not an emergency, but it does need explaining. Would it be alright if I asked you some questions first, so I can work out why?'",
-    "★ 'Has anyone ever told you before that your calcium was high?' / 'Did anyone do any further tests, or start any treatment for it?'",
-    "★ 'I'm going to ask some questions I ask everybody with this result, just to be thorough.' → weight, appetite, lumps, night sweats, breast/mammogram, cough/blood, smoking, urine blood, cancer in you or your family",
-    "'Why are you asking all this?' → 'A high calcium has several possible causes. Most are not serious, and the commonest by far is a small gland problem. But a few cancers can also raise calcium, so I check for them in everybody — not because I suspect it in you. Nothing you've told me so far points that way.'",
-    "'Apart from the thyroid tablet, any other regular medicine — anything for blood pressure or fluid, or any tablet for your mood?' (thiazide, lithium by use) / 'Any vitamin D, multivitamins or calcium tablets? Anything for indigestion — antacid tablets or liquid?'",
-    "★ 'Calcium travels in the blood two ways — some floats free, some is carried by a protein called albumin. Your albumin is low, so the raw number looks normal; once we adjust for it, the true level is high.' / 'Calcium isn't really controlled by what you eat — your body controls it with a hormone.'",
-    "★ 'My first priority is serum parathyroid hormone, because primary hyperparathyroidism is the commonest cause of hypercalcaemia in the community and PTH is the single test that splits the differential in two.' / 'Calcium, phosphate and vitamin D are read as a set.'",
-    "★ 'Behind your thyroid gland sit four tiny glands called the parathyroid glands — different glands, different job. Their only job is keeping your blood calcium right. One of them appears to be overworking, and that pulls extra calcium out of your bones into your blood.' / ★ 'It is not a cancer, and it is not caused by your thyroid tablets or by what you eat.'",
-    "'Is it cancer?' → 'On everything I have so far, no. Your hormone result points to a gland problem, not a cancer. I'm still completing a chest x-ray and a couple of blood tests so that I'm certain rather than nearly certain.' / 'Should I stop dairy?' → 'No — diet isn't the driver, and cutting calcium hard can be bad for your bones. Drink plenty of water.' / 'Will I need an operation?' → 'Possibly — the only definitive treatment, but not everyone needs one; because you're forty-five the specialist will talk it through seriously.'",
-    "★ 'If you become very thirsty and pass a lot of urine, start vomiting, feel drowsy or confused, or get severe tummy, back or loin pain, I want you seen the same day.' / 'To summarise — is there anything I've missed, or anything you'd like me to write down?'"
-   ],
    "pefe": [
-    "Role-player: Janine, 45, teacher's aide 4 days/week, husband, two teenagers, 40-min drive; levothyroxine 100 µg, never misses; stopped multivitamin last year on advice; Gaviscon ~monthly; no BP/fluid/mood tablets; never smoked, 2 wines Friday; mammogram last year clear; mother breast cancer at 60, alive. Only positive: 'a bit more thirsty, I keep a bottle on my desk' — given only if asked. Brisk, impatient at first; guarded during cancer questions; after the breast question asks 'why are you asking all this?' every time; if you read the total calcium as normal: 'so there's nothing wrong then?'; asks 'is it my thyroid tablets?' and 'will I need an operation?'; if falsely reassured before tests: 'how can you be sure?'. Hidden agenda released on ICE, else volunteered at ~7 min as you summarise",
-    "Examiner returns: PTH elevated · 25-OH vitamin D normal · phosphate low-normal · eGFR 88 · full examination normal · everything else normal. Examiner challenges: 'Why not image the parathyroids?' → 'the diagnosis is biochemical; sestamibi/ultrasound are for the surgeon to localise, not to diagnose' · 'Avoid dairy?' → 'no; severe restriction can worsen bone loss; hydration matters more' · 'Frusemide?' → 'only for overload during rehydration; not a routine calcium-lowering treatment'",
-    "Version B — high-dose health-food vitamin D for 8 months + calcium antacids most nights: examiner gives PTH suppressed <1.0, 25-OH D 310, eGFR 74, PO4 normal → 'a low parathyroid hormone tells me the gland is behaving and being switched off — the extra calcium is coming from somewhere else; your vitamin D is ~4× target — the supplement, probably with the antacids (milk–alkali)' → stop both today, hydrate, recheck 2–4 weeks; ★ suppressed PTH is the MALIGNANCY arm — still complete CXR and bloods · corrected Ca 2.88",
-    "Variant C — 62, corrected Ca 3.15, 6 kg loss since Christmas, night-waking low back ache, worn out; Hb 96, creatinine 148, PTH suppressed, ESR 88 → 'myeloma until proved otherwise': SPEP, serum FLC, urine Bence-Jones, film, LDH, whole-body low-dose CT or MRI spine (not plain films); IV normal saline now; urgent haematology; ★ ask about cord compression (numbness, leg weakness, bladder/bowel) — same-day emergency; warning-shot register, 'today rather than next week'",
-    "Variant D — 58 on indapamide + lithium, corrected 2.72, asymptomatic: switch the thiazide to another antihypertensive, recheck 2–4 weeks; ★ do NOT stop lithium unilaterally — speak with the psychiatrist, decide together; check PTH (lithium can make the glands overactive) · Variant E — 28M, Ca 2.70 pre-employment, father and sister 'high calcium', PTH mildly raised: FHH — 24-h urine calcium and Ca:Cr clearance ratio (<0.01 supports), CaSR gene testing; these patients are harmed by parathyroid surgery",
-    "SA: endocrinology referral (RAH/FMC/Lyell McEwin); PATS for travel; MedSTAR 1300 13 12 33 only if a Version B/C patient needs retrieval; TIS 131 450"
+    "**Do now: CONFIRM IT IS REAL — repeat corrected calcium with albumin on a fresh, properly taken sample · then SERUM PTH (intact), said FIRST every time · 25-OH VITAMIN D and PHOSPHATE · UEC and eGFR · review every medicine and supplement · FULL EXAMINATION INCLUDING BREASTS AND LYMPH NODES.**",
+    "**Do next: CHEST X-RAY for lung cancer, TB, sarcoidosis and lymphoma · FBC, ESR, LFT, LDH · SERUM PROTEIN ELECTROPHORESIS and FREE LIGHT CHAINS for myeloma · 24-HOUR URINE CALCIUM or Ca:Cr clearance ratio to exclude FHH · ECG for a short QT. Once diagnosed: DEXA and renal tract ultrasound.**",
+    "**In THIS station you do nothing intravenous — 2.78 is mild and asymptomatic. Stop any contributor, repeat the calcium, request PTH, encourage generous oral fluids, arrange bloods and review, and refer once PTH confirms it.**",
+    "**If severe: SALINE 0.9%, commonly 4–6 L over 24 hours titrated to cardiac and renal reserve — this alone brings most of the fall · stop the contributors · ZOLEDRONIC ACID 4 mg IV over at least 15 minutes AFTER rehydration, onset 2–4 days so NOT the first move · calcitonin 4 units/kg 12-hourly when a fast fall is needed · PREDNISOLONE 20–40 mg daily for VITAMIN D-MEDIATED and granulomatous causes · dialysis if refractory.**",
+    "**Do not miss: MALIGNANCY, especially myeloma in anyone with anaemia, renal impairment or back pain · corrected calcium above 3.5, or confusion, vomiting or dehydration at any level · FHH before referring for surgery · LITHIUM as the cause · a LOW ALBUMIN as a clue in its own right.**",
+    "**Avoid: acting on the total calcium · a long undifferentiated list instead of a priority order · advising a low-calcium diet as treatment · ROUTINE FRUSEMIDE, which is only for fluid overload during rehydration · a bisphosphonate BEFORE rehydration · localisation imaging to make the diagnosis.**",
+    "**Never stop lithium unilaterally — it needs PTH measurement and psychiatric liaison.**"
    ],
-   "fails": [
-    "Saying 'your calcium is actually normal' because you read the total line ★",
-    "PTH not first in the investigation list, or a flat list with no BECAUSE ★",
-    "Never asking a single cancer question; abandoning the malignancy screen because it was 'high last year' ★",
-    "Falsely reassuring ('it's definitely nothing') before any tests; or finishing on the diagnosis with no differentials, plan or safety-net ★",
-    "Jargon: 'PTH-dependent hypercalcaemia secondary to a parathyroid adenoma'",
-    "Endorsing the dairy restriction to avoid contradicting a colleague; asking 'any other medications?' and accepting 'no' without naming thiazide and lithium by use",
-    "Skipping ICE so the mother's cancer lands at minute seven; stopping the supplement in Version B and declaring the case closed; stopping lithium unilaterally in Variant D"
-   ],
-   "numbers": [
-    "Corrected Ca = total + 0.02 × (40 − albumin g/L) · here total 2.56, albumin 31, corrected 2.78 · reference 2.10–2.60 · mild <3.0 · moderate 3.0–3.5 · severe >3.5",
-    "Top three: PTH · 25-OH vitamin D + phosphate · UEC/eGFR · causes 1 and 2: hyperparathyroidism, then malignancy · adenoma ~85% of primary disease",
-    "Surgery triggers: age <50 · Ca >0.25 above upper limit · eGFR <60 · urine Ca >10 mmol/day · stones · T-score ≤−2.5 · FHH: Ca:Cr clearance ratio <0.01 · ECG: short QT",
-    "Severe: saline 4–6 L/24 h · zoledronic acid 4 mg IV over ≥15 min after rehydration · calcitonin 4 units/kg SC/IM 12-hourly · prednisolone 20–40 mg/day if vitamin D–mediated VERIFY",
-    "Timing: 0:00 WIPE/name it · 0:30 why/before · 1:00 symptoms · 1:45 malignancy · 2:45 drugs etc + ICE · 4:15 explain · 5:15 ranked ix · 6:15 dx/DDx/plan · cut the thyroid block, never the malignancy block · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Primary hyperparathyroidism** — the answer",
+     "**Middle-aged woman; calcium ALSO HIGH PREVIOUSLY; asymptomatic or vague tiredness and constipation; PHOSPHATE LOW**",
+     "Stones, bones, groans, moans, thrones. **No cancer symptoms**",
+     "**PTH HIGH OR INAPPROPRIATELY NORMAL confirms it.** Add phosphate, 25-OH vitamin D, eGFR, urine calcium"
+    ],
+    [
+     "**Malignancy — myeloma, lymphoma, breast, lung, renal**",
+     "**Weight loss, night sweats, lumps, BONE OR BACK PAIN, ANAEMIA, RENAL IMPAIRMENT, calcium above 3.0, SHORT history**",
+     "Weight, appetite, lumps, night sweats, breast lump, cough, haemoptysis, **haematuria**, back pain",
+     "**PTH SUPPRESSED. FBC, ESR, LDH, chest X-ray, PROTEIN ELECTROPHORESIS and FREE LIGHT CHAINS, imaging** — must not miss"
+    ],
+    [
+     "**Vitamin D excess · calcium antacids (milk-alkali)**",
+     "**High-dose supplement or health-food product; heavy antacid use — VERSION B**",
+     "**Exact preparation, dose, duration.** Alkalosis and renal impairment suggest milk-alkali",
+     "**25-OH VITAMIN D MARKEDLY RAISED, PTH SUPPRESSED.** Stop the product; recheck at 2–4 weeks — reversible"
+    ],
+    [
+     "**Thiazide · lithium**",
+     "Hypertension or bipolar disorder on the list",
+     "**'Any tablet for blood pressure or for mood?'**",
+     "Withhold or substitute the thiazide and recheck in 2–4 weeks. **LITHIUM needs PTH and PSYCHIATRIC LIAISON — never stop it unilaterally**"
+    ],
+    [
+     "**Tuberculosis · sarcoidosis**",
+     "Cough, fevers, night sweats, **JOINT PAIN, ERYTHEMA NODOSUM**, TB contact or endemic origin",
+     "Respiratory and constitutional symptoms; **rash on the shins**; eye symptoms",
+     "**Chest X-ray — HILAR LYMPHADENOPATHY or apical change. PTH suppressed, 1,25-OH vitamin D RAISED.** Sputum for AFB — urgent if TB"
+    ],
+    [
+     "Thyrotoxicosis",
+     "Weight loss, tremor, heat intolerance, palpitations; over-replacement",
+     "Dose, adherence, symptoms of excess",
+     "**TSH suppressed. HERE THE TSH IS NORMAL — excluded on the paper in front of you**"
+    ],
+    [
+     "**Familial hypocalciuric hypercalcaemia**",
+     "**LIFELONG mild hypercalcaemia; FAMILY MEMBERS with high calcium; no complications**",
+     "Family history of high calcium; normal results decades ago",
+     "**LOW urinary calcium — Ca:Cr clearance ratio BELOW 0.01. Genetic testing (CASR). DO NOT OPERATE**"
+    ],
+    [
+     "Phaeochromocytoma and MEN",
+     "Episodic headache, sweating, flushing, palpitations; **family history of endocrine tumours**",
+     "**The family-history question is the one that scores**",
+     "Metanephrines. **MEN 2A links parathyroid with phaeo and medullary thyroid cancer; MEN 1 with pituitary and pancreatic tumours**"
+    ],
+    [
+     "CKD → tertiary hyperparathyroidism · immobility",
+     "Long-standing secondary disease becoming autonomous, usually advanced CKD or dialysis",
+     "Renal history, dialysis, prolonged immobility",
+     "Treat the renal disease; **calcimimetic (cinacalcet) or surgery under specialist care**"
+    ],
+    [
+     "**Spurious result**",
+     "**Prolonged tourniquet, dehydration, raised serum proteins**",
+     "How was the sample taken? Was she fasting or unwell?",
+     "**REPEAT the corrected calcium on a fresh, properly taken sample BEFORE doing anything else** — do first"
+    ]
    ]
   },
   "source": "Hypercalcaemia_2_Case_Tasks_Script_Notability.pdf (Janine Whitfield, 45, corrected calcium 2.78 on a routine check)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hypercalcaemia_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Reading the total calcium line and saying 'your calcium is actually normal' — station-ending false reassurance; the albumin is low, the corrected value is 2.78: 'calcium travels two ways, free and stuck to a protein; once we adjust for the protein it is genuinely high'",
-   "FAIL — A flat investigation list with no ranking and no reasons — 'my first priority is parathyroid hormone, BECAUSE primary hyperparathyroidism is the commonest cause and PTH splits the differential in two'; then vitamin D with phosphate, then eGFR; if PTH is not first you fail on that turn alone",
-   "FAIL — Hearing 'it was high last year', concluding hyperparathyroidism and abandoning the cancer screen — chronicity makes malignancy less likely, it does not exclude it; weight, appetite, lumps, night sweats, breasts and mammogram, cough and haemoptysis, smoking, haematuria, family cancer — never skip, never rush",
-   "FAIL — 'Any other medications?' and accepting 'no' — name them by use: vitamin D, multivitamins, calcium tablets, antacids (how often), anything for blood pressure or fluid, anything for mood (thiazides and lithium)",
-   "FAIL — 'PTH-dependent hypercalcaemia secondary to a parathyroid adenoma' — a fail sentence; 'four tiny glands behind the thyroid, different job, one is overworking and pulling calcium out of your bones; it is not a cancer, and not your thyroid tablets or your diet'; and never say 'definitely not cancer' before the work-up",
-   "FAIL — Finishing on the diagnosis with no differentials, no plan and no safety-net — and skipping ICE before you explain (her mother's breast cancer surfaces at minute seven if you never ask); correct the dairy advice kindly without criticising the colleague"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hypercalcaemia_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-74",
