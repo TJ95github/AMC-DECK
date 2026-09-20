@@ -190,7 +190,7 @@
   .sheet input[type=password],.sheet input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace;margin:0 0 8px}
   .hint{font-size:13px;color:#667085;margin:0 0 8px}
   textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radius:10px;padding:10px;font:16px/1.4 ui-monospace,Menlo,Consolas,monospace}
-  .stats{display:grid;grid-template-columns:1fr auto auto auto;gap:4px 12px;font-size:14px;margin:8px 0 14px}
+  .stats{display:grid;grid-template-columns:1fr auto auto auto auto;gap:4px 10px;font-size:14px;margin:8px 0 14px}
   .stats span{font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-2)}
   .stats .h{color:var(--ink-3);font-size:12px}
   /* phone/iPad-portrait: a slim bar pinned to the bottom so the clock stays visible while the stem scrolls */
@@ -400,11 +400,13 @@ function buildCards(){
 function prog(id){ return progress[id]||{reps:0,ease:2.5,interval:0,due:null,last:null,seen:0}; }
 function isDue(c){ const p=prog(c.id); return !p.due || p.due<=today(); }
 function isHard(c){ const p=prog(c.id); return p.last==="again"||p.last==="hard"; }
+function isOk(c){ const p=prog(c.id); return p.last==="good"||p.last==="easy"; }
 
 function buildQueue(){
   let list=cards.filter(c=>catSel.has(c.cat));
   if(mode==="due") list=list.filter(isDue);
   else if(mode==="hard") list=list.filter(isHard);
+  else if(mode==="ok") list=list.filter(isOk);
   if(opts.shuffle){ for(let i=list.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [list[i],list[j]]=[list[j],list[i]]; } }
   else list.sort((a,b)=>a.id.localeCompare(b.id));
   queue=list; idx=0; flipped=false; resetTimer();
@@ -528,16 +530,17 @@ function render(){
   cards.forEach(c=>{ if(!counts[c.cat]) return; counts[c.cat].all++; if(isDue(c)) counts[c.cat].due++; if(isHard(c)) counts[c.cat].hard++; });
 
   let h=`<div class="goal${doneToday()>=dailyGoal()?" done":""}" id="goal">${goalHTML()}</div>`;
-  h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile</div></div>
+  h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile &middot; ${cards.filter(isOk).length} good or easy</div></div>
     <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
   h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
-  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"?"on":""}">Hard pile</button><button data-mode="all" class="${mode==="all"?"on":""}">All</button></div>`;
+  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"?"on":""}">Good &amp; easy</button><button data-mode="all" class="${mode==="all"?"on":""}">All</button></div>`;
 
   const c=queue[idx];
   if(!c){
     const msg = cards.length===0 ? "No stations yet. Open settings to add a block." :
       mode==="due" ? "Nothing due in the selected categories. Switch to All to keep practising, or come back tomorrow." :
-      mode==="hard" ? "The hard pile is empty for these categories." : "No stations in the selected categories.";
+      mode==="hard" ? "The hard pile is empty for these categories." :
+      mode==="ok" ? "Nothing marked good or easy in these categories yet." : "No stations in the selected categories.";
     h+=`<div class="empty">${msg}</div>`;
   } else {
     const col=CATS[c.cat]?CATS[c.cat].color:"var(--ink-3)", p=prog(c.id);
@@ -632,11 +635,11 @@ function openDrawer(){
   document.getElementById("optGoal").value=dailyGoal();
   document.getElementById("optPrep").checked=opts.prep; document.getElementById("optBell").checked=opts.bell; document.getElementById("optStudy").checked=opts.study; document.getElementById("optShuffle").checked=opts.shuffle;
   const st=document.getElementById("stats");
-  let s=`<div class="h">Category</div><span class="h">stations</span><span class="h">due</span><span class="h">hard</span>`;
-  Object.entries(CATS).forEach(([k,v])=>{ const cs=cards.filter(c=>c.cat===k); s+=`<div style="color:${v.color};font-weight:600">${v.name}</div><span>${cs.length}</span><span>${cs.filter(isDue).length}</span><span>${cs.filter(isHard).length}</span>`; });
+  let s=`<div class="h">Category</div><span class="h">stations</span><span class="h">due</span><span class="h">hard</span><span class="h">good/easy</span>`;
+  Object.entries(CATS).forEach(([k,v])=>{ const cs=cards.filter(c=>c.cat===k); s+=`<div style="color:${v.color};font-weight:600">${v.name}</div><span>${cs.length}</span><span>${cs.filter(isDue).length}</span><span>${cs.filter(isHard).length}</span><span>${cs.filter(isOk).length}</span>`; });
   const seen=Object.values(progress).filter(p=>p.seen).length;
-  s+=`<div>Reviewed at least once</div><span>${seen}</span><span></span><span></span>`;
-  s+=`<div>Done today &middot; target ${dailyGoal()}</div><span>${doneToday()}</span><span></span><span></span>`;
+  s+=`<div>Reviewed at least once</div><span>${seen}</span><span></span><span></span><span></span>`;
+  s+=`<div>Done today &middot; target ${dailyGoal()}</div><span>${doneToday()}</span><span></span><span></span><span></span>`;
   st.innerHTML=s;
   renderSyncState();
 }
