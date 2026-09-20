@@ -11300,8 +11300,8 @@
  {
   "id": "MED-30",
   "cat": "med",
-  "promptAt": 300,
-  "setting": "General practice.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Your next patient is Ron Petrie, a 66-year-old man, who has presented to you complaining of shortness of breath.",
    "Spirometry report provided: FEV1/FVC ratio reduced · post-bronchodilator FEV1 improvement of 3% and 120 mL from baseline · pattern obstructive, without significant reversibility."
@@ -11312,106 +11312,186 @@
    "Ask the examiner for the physical examination findings (or read them from the screen)",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes (2 min reading). Spirometry ≤90 s · history to 5:00 · PEFE ~1 min · explanation ~2 min.",
+  "findings": [
+   [
+    "Spirometry in the stem",
+    "FEV1/FVC RATIO REDUCED → obstructive. Post-bronchodilator FEV1 improves by 3% and 120 mL — FAILS BOTH thresholds (12% AND 200 mL). A textbook COPD report, and it is genuinely correct"
+   ],
+   [
+    "General appearance",
+    "CLUBBING PRESENT. No distress, no cyanosis, no cachexia, NO lymphadenopathy — ask for cervical and supraclavicular nodes by name"
+   ],
+   [
+    "Observations",
+    "BP 132/78 · P 82 regular · RR 18 · T 36.7 · SpO2 95% on room air"
+   ],
+   [
+    "Inspection and palpation",
+    "REDUCED CHEST EXPANSION. Trachea MIDLINE"
+   ],
+   [
+    "Percussion",
+    "NORMAL"
+   ],
+   [
+    "Auscultation — breath sounds and added sounds",
+    "Breath sounds present. CRACKLES IN THE MID ZONE — LOCALISED, NOT GENERALISED. You are only told this if you ask whether they are localised or generalised. Most candidates never ask, and the answer is the case"
+   ],
+   [
+    "Vocal resonance",
+    "NORMAL"
+   ],
+   [
+    "Cardiovascular",
+    "JVP not raised, apex undisplaced, heart sounds dual, no murmur or gallop"
+   ],
+   [
+    "Lower limbs",
+    "No oedema, no calf tenderness"
+   ],
+   [
+    "Office tests",
+    "Spirometry as in the stem. ECG SINUS RHYTHM"
+   ]
+  ],
+  "findingsLabel": "Spirometry and the examination findings · open when you would ask",
+  "must": [
+   "FAIL — Closing on COPD because the spirometry says COPD. The report is one finding.",
+   "FAIL — Hearing 'clubbing' and saying thank you. Clubbing is not a feature of COPD.",
+   "FAIL — Never asking whether the added sounds are localised or generalised.",
+   "FAIL — Burying the cancer, or naming it with no warning shot and no pause.",
+   "ASK — Have you lost any weight without trying? He will never volunteer it.",
+   "ASK — Has there ever been blood in it? And asbestos, by name."
+  ],
   "back": {
-   "dx": "Lung cancer on a background of COPD — 'AND ALSO', not 'it's COPD'. Spirometry is genuinely COPD (obstructive, +3%/+120 mL fails both thresholds). History: 3 years of slowly worsening exertional breathlessness, dry cough, courier driver (before that roadworks, before that a workshop with old lagging), 10/day since age 20, NO haemoptysis, one pillow, no oedema, no fever — and 6–7 kg unintentional weight loss over a few months, trousers loose, appetite down (NOT volunteered). PEFE: CLUBBING, reduced expansion, trachea midline, percussion normal, vocal resonance normal, crackles mid-zone LOCALISED (only if you ask localised vs generalised), SpO2 95%, CVS normal. Three findings COPD cannot explain: weight loss, clubbing, localised crackles. Belief: 'it's the smoking catching up with me'. Hidden agenda: losing his licence = losing the job, three years off the pension.",
+   "dx": [
+    "**Lung cancer on a background of COPD.** The spirometry is genuinely COPD — and **COPD does not explain the weight loss, the clubbing or the localised crackles.**",
+    "The sentence that passes: **'You do have COPD, and we will treat it — and there are things here that COPD does not explain, so I am also concerned about a cancer.'** **Two diagnoses, neither buried, neither trivialised.**",
+    "**Clubbing is NOT a feature of COPD.** Bucketed: **RS — lung cancer, bronchiectasis, ILD, empyema and abscess, cystic fibrosis, mesothelioma, TB · CVS — infective endocarditis, cyanotic congenital heart disease, atrial myxoma · GI — IBD, cirrhosis, coeliac · thyroid acropachy · familial and idiopathic.**",
+    "**Localised added sounds mean a localised lesion** — tumour with distal collapse or infection, bronchiectasis, or fibrosis. **In COPD you expect them generalised.**",
+    "**Weight loss argues against heart failure**: decompensation is a fluid-retaining state, so the expected trajectory is **weight GAIN**, and daily weights are how we monitor it. **Cardiac cachexia is real but late and in established disease.**",
+    "**Reversibility is 12% AND 200 mL from the measured baseline** — both, calculated on baseline, not by subtracting percentages of predicted. **COPD is confirmed by a post-bronchodilator FEV1/FVC under 0.7.**",
+    "**Give the spirometry 90 seconds, not four minutes.** Five minutes covers the spirometry and the history together, and **the history is where the weight loss lives**.",
+    "Plan: **chest X-ray and bloods today · CT chest and upper abdomen this week · then tissue — bronchoscopy, EBUS or CT-guided biopsy · PET-CT for staging · lung cancer MDT.** Alongside: **smoking cessation, vaccination, pulmonary rehabilitation, a written COPD action plan.**",
+    "**Do not invent a prognosis**: **'I'm not going to give you a number I can't stand behind.'** Offer to have someone with him, and **Cancer Council SA 13 11 20 — he can ring without giving his name.**",
+    "Safety-net: **haemoptysis, sudden worsening of breathing, chest pain or fever → straight to the emergency department.** **Quitline 13 7848 · PATS for travel to CT, bronchoscopy and MDT · TIS 131 450 · healthdirect 1800 022 222.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Spirometry in 90 s: two things measured; proportion out in the first second reduced = resistance = obstructive; reliever repeated — improved only 3%/120 mL, we need ≥12% AND ≥200 mL; didn't reverse → in a smoker = COPD; if it had reversed → asthma"
+     "Greeting, then the spirometry in plain words: **it measures how much air you can blow out in total and how much comes out in the first second · the proportion in the first second is reduced, so the air is meeting resistance on the way out — an OBSTRUCTIVE PATTERN · we gave a reliever and repeated it · it improved by 3% and 120 mL, and we look for at least 12% AND 200 mL · so the narrowing did not reverse, and narrowing that does not reverse in someone who has smoked is COPD.**"
     ],
     [
      "1:40",
-     "'Even though that test points to COPD, I don't want to assume it explains everything' → breathlessness: how long, constant, worse, walking distance then vs now, lie flat/pillows, waking, ankle swelling, cough dry/productive, blood, wheeze"
+     "**The pivot that keeps the station open: 'even though that test points to COPD, I don't want to assume it explains everything.'** Then explore: **how long · constant or coming and going · getting worse · how far could you walk a year ago and how far now · WORSE LYING FLAT, HOW MANY PILLOWS · waking at night gasping · ankle swelling.**"
     ],
     [
-     "2:45",
-     "★ Cancer block: weight without trying → how much, over how long → appetite; lumps neck/collarbones; sweats/fevers; bone pain; voice; job now — and before that — and before that; asbestos by name (construction, mining, welding, shipping, lagging, brake linings); previous cancer"
+     "2:20",
+     "Cough and noise: **dry or productive · colour and volume · HAS THERE EVER BEEN BLOOD IN IT · any whistle or wheeze?**"
     ],
     [
-     "3:45",
-     "Briskly: chest pain/palpitations/dizziness; asthma/hay fever; recurrent infections/daily phlegm; joints/rash/dry eyes; fever/travel/TB; calf/flights/surgery; tired/pale/bleeding; cigarettes and years, tried to stop; medicines; past; family; home and work; 'what do you think is going on, what worries you most?'"
+     "2:40",
+     "**The cancer block, where this case is won. 'There are questions I ask everybody with these symptoms.'** **HAVE YOU LOST ANY WEIGHT WITHOUT TRYING — how much, over how long · appetite · lumps or bumps, especially neck and above the collarbones · unusually tired · night sweats or fevers · bone pain · has your voice changed · what is your job NOW and what did you do BEFORE · HAVE YOU EVER WORKED WITH ASBESTOS, or in mining, welding or construction · any cancer of any kind?**"
+    ],
+    [
+     "3:40",
+     "Cardiac: **chest pain or tightness on exertion · does your heart race or pound · dizziness or blackouts · ever been told you have a heart problem, high blood pressure, cholesterol or diabetes?**"
+    ],
+    [
+     "4:00",
+     "The rest, briskly: **asthma or hay fever · recurrent chest infections or years of daily phlegm · joint pains, rashes, dry eyes · fever, travel, TB contact · calf pain or swelling, long flights, recent surgery · pale or unusually tired, any bleeding.** Then **closure — smoking in pack-years, medicines including amiodarone, methotrexate and nitrofurantoin, allergies, past history, family, home and work — and 'what do you think is going on, and what worries you most?'** → **'it's the smoking catching up with me'**, the belief you will work against later."
     ],
     [
      "4:40",
-     "'Give me one moment — I'll ask my examiner and come straight back' → ordered request incl. clubbing, nodes, 'are the added sounds localised or generalised?', vocal resonance → INTERPRET BEFORE TURNING BACK: clubbing is not a feature of COPD → lung cancer top of the list; localised crackles → localised lesion; with weight loss → leading diagnosis lung cancer on a background of COPD"
+     "**'Give me one moment — I'll ask my examiner for the findings and come straight back.'** Then the request as **one fluent ordered block**, ending with **'and are the added sounds localised or generalised?'** and the office tests."
+    ],
+    [
+     "5:30",
+     "**Interpret BEFORE you turn back — this is the marked moment**: **'Clubbing is not a feature of COPD, so it obliges me to look for another cause, and top of that list is lung cancer. The added sounds are localised; in COPD I'd expect them generalised. With the weight loss, my leading diagnosis is a lung cancer on a background of COPD.'**"
     ],
     [
      "5:50",
-     "Support person? → 'Your test does show COPD, and you were right about the smoking — we'll treat that' [pause] → 'But COPD doesn't explain everything: 6–7 kg, the fingertip changes, crackles in one area' [pause] → 'what I'm most concerned about is a cancer in the lung. I'm sorry to have to say that. We don't know it yet' → silence → other differentials: bronchiectasis, interstitial lung disease, TB — all can club"
+     "**'Before I go on — is there anyone you'd like with you?'** Then COPD first and seriously, **pause**, then **the three things COPD does not explain**, **pause**, then **the word cancer with an apology and the honest 'we don't know yet.'** **Let the silence sit — do not fill it.**"
+    ],
+    [
+     "6:45",
+     "The other differentials named for him: **bronchiectasis — damaged, widened airways · scarring of the lungs, interstitial lung disease · tuberculosis. All of those cause the fingertip changes too.** To **'how long have I got?'** → **'I'm not going to give you a number I can't stand behind.'**"
     ],
     [
      "7:15",
-     "Plan: CXR + bloods today; CT chest/upper abdomen this week; bronchoscopy/biopsy if positive; specialist team. COPD: Quitline 13 7848, NRT/varenicline, vaccines, pulmonary rehab. 'Should I tell Denise?' → his call, welcome her at the scan visit; Cancer Council SA 13 11 20. Safety-net: blood, sudden worsening, chest pain, fever → ED. Summary: two diagnoses"
+     "The plan with a **timeframe**, the **COPD treatment offered properly**, **Quitline 13 7848**, whether to tell his wife, **Cancer Council SA 13 11 20**, the safety-net, and a summary."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "'This test measures how much air you can blow out in total, and how much of it you can get out in the very first second. In your case the proportion coming out in the first second is reduced — the air is meeting resistance on the way out; the airways are narrowed. We call that an obstructive pattern. Then we gave you a reliever puffer and repeated it. It improved by only about three per cent, a hundred and twenty millilitres — we look for at least twelve per cent and two hundred millilitres before we call that a real response. Narrowing that does not reverse, in someone who has smoked, is COPD.'",
-    "★ 'Now, even though that test points to COPD, I don't want to assume it explains everything.'",
-    "★ 'There are some questions I ask everybody with these symptoms. Have you lost any weight without trying to? … How much, over how long? … How is your appetite?'",
-    "Lumps in the neck or above the collarbones? Night sweats, fevers? Bone pain? Voice changed? What's your job now — and what did you do before that? Ever worked around asbestos — lagging, old brake linings, construction, welding? Ever had a cancer? Has there ever been any blood in the phlegm?",
-    "How many cigarettes, for how many years? Tried to stop? And finally — what do you think might be going on, and what are you most worried about?",
-    "★ To the examiner: 'General appearance — respiratory distress, cyanosis, cachexia, clubbing, palpable cervical or supraclavicular lymphadenopathy? Vitals incl. saturation on room air. Respiratory — chest movements symmetrical, trachea midline, percussion note, breath sounds, added sounds — and are they localised or generalised? — vocal resonance. Cardiovascular — JVP, apex, heart sounds, murmur or gallop. Lower limbs — oedema, calf tenderness.'",
-    "★ 'Thank you. Two of those findings are significant. Clubbing is not a feature of COPD — in a patient with obstructive lung disease it obliges me to look for another cause, and top of that list is lung cancer. And the added sounds are localised; in COPD I would expect them generalised, so localised crackles point to a localised lesion. Taken with the weight loss, my leading diagnosis is now a lung cancer on a background of COPD.'",
-    "'You do have COPD, and we will treat it — and there are things here that COPD does not explain, so I am also concerned about a cancer.' → 'From my fingers?' → 'It sounds strange, I know. But clubbing is a signal the body gives, and it's one we take seriously. What's going through your mind?'"
-   ],
    "pefe": [
-    "Findings given only when asked and only what you ask for: clubbing present; no cyanosis, distress, cachexia or lymphadenopathy; BP 132/78, P 82, RR 18, T 36.7, SpO2 95% RA; reduced expansion, trachea midline, percussion normal, breath sounds present with crackles in the mid zone — localised; vocal resonance normal; JVP not raised, apex undisplaced, dual heart sounds; no oedema; ECG sinus",
-    "'How long have I got?' → no number; type and spread decide; the scan will tell us; 'I won't keep anything from you'",
-    "Plan with timeframes: CXR and bloods today · CT chest and upper abdomen this week · sample through a camera into the airways if positive · specialist MDT · COPD: stopping smoking is the single thing that changes its course — Quitline 13 7848, patches, tablets · influenza/pneumococcal/COVID · pulmonary rehab · review as soon as the scan is back, wife welcome",
-    "Driving: the licence worry — don't pre-empt; if he raises it, acknowledge honestly that fitness to drive depends on what is found and how he is, and that you'll help him through Austroads/ReturnToWork if needed VERIFY",
-    "SA: Cancer Council SA 13 11 20 (anonymous); Yorke Peninsula → PATS for CT/respiratory in Adelaide; Country Health Connect; TIS 131 450",
-    "Given only when asked — And only what you ask for"
+    "Request it as one fluent block: **general appearance — respiratory distress, cyanosis, CACHEXIA, CLUBBING, cervical or supraclavicular lymphadenopathy · vital signs including saturation on room air · inspection and palpation — symmetrical chest movements, trachea midline · percussion note · auscultation — breath sounds, added sounds, AND ARE THEY LOCALISED OR GENERALISED · vocal resonance · cardiovascular — JVP, apex beat, heart sounds, murmur or gallop · lower limbs for oedema or calf tenderness · and any office tests — ECG, spirometry, peak flow.**",
+    "**Repeat every abnormal finding back with its meaning attached**, out loud, before you turn to the patient.",
+    "Do now: **observations including saturation, and saturation on walking · CHEST X-RAY, the highest-yield test in all three versions · ECG · spirometry with bronchodilator reversibility.** **A normal chest X-ray does not exclude cancer.**",
+    "Suspected cancer: **CT chest and upper abdomen, then tissue — bronchoscopy, EBUS or CT-guided biopsy · PET-CT for staging · lung cancer MDT** (Royal Adelaide, Flinders, The Queen Elizabeth).",
+    "Bloods: **FBE — do not forget anaemia as a cause of breathlessness · UEC, LFT, TSH · BNP or NT-proBNP** if heart failure is live.",
+    "Suspected ILD: **high-resolution CT and diffusing capacity.** Suspected heart failure: **echocardiogram.**",
+    "**Clubbing objectively: Lovibond angle over 180 degrees, Schamroth's window obliterated.**",
+    "Occupational exposure: say **ReturnToWorkSA and the Dust Diseases pathway** out loud in a boilermaker, miner or workshop worker."
    ],
-   "fails": [
-    "'It's COPD' — diagnosing COPD and stopping ★",
-    "Never asking about weight loss (it is not volunteered) ★",
-    "Hearing 'clubbing' and saying 'thank you' — not interpreting it ★",
-    "Never asking whether the crackles are localised or generalised ★",
-    "Four minutes on the spirometry; wrong reversibility threshold; skipping the differential blocks because 'we already know'",
-    "Cancer buried ('a few possibilities, we'll run tests') or announced with no warning shot; filling the silence; inventing a prognosis; no safety-net; no plan timeframe"
-   ],
-   "numbers": [
-    "Reversibility ≥12% AND ≥200 mL from measured baseline — this case +3%/+120 mL fails both · COPD = post-BD FEV1/FVC <0.7 · chronic cough >8 weeks",
-    "Clubbing: Lovibond angle >180°, Schamroth's window obliterated · causes to name: lung cancer, bronchiectasis, ILD/fibrosis, TB/empyema/abscess (NOT COPD) · localised crackles = localised lesion; COPD crackles generalised",
-    "Effusion: reduced expansion, stony dull, absent BS, reduced VR · consolidation: dull, bronchial breathing, increased VR · Light's: protein ratio >0.5, LDH ratio >0.6, LDH >⅔ ULN VERIFY",
-    "Effusion variant Version 1 (no weight loss, orthopnoea, more pillows): heart failure with transudative effusion first, COPD second — still sample the fluid · Version 2 (weight loss added): malignant effusion first, HF second, COPD third — weight loss is incompatible with the fluid retention of decompensated HF (cardiac cachexia is late) → see MED-31",
-    "Pass guide: 20+ of 28 with every bold item; missing the weight-loss question or hearing clubbing without interpreting it fails on its own",
-    "Quitline 13 7848 · Cancer Council SA 13 11 20 · healthdirect 1800 022 222 · My Aged Care 1800 200 422 · TIS 131 450"
+   "ddx": [
+    [
+     "**Lung cancer on a background of COPD**",
+     "**Weight loss · clubbing · LOCALISED crackles** in a long-term smoker",
+     "Weight and timeframe, appetite, lumps, voice change, bone pain, haemoptysis, asbestos by name",
+     "**CT chest and upper abdomen, then tissue diagnosis, staging, MDT** — urgent"
+    ],
+    [
+     "COPD",
+     "Smoking history, progressive exertional dyspnoea, obstructive spirometry without reversibility",
+     "Pack-years, wheeze, sputum, exacerbations",
+     "**Post-bronchodilator FEV1/FVC under 0.7.** Real here — but it is not the whole answer"
+    ],
+    [
+     "Bronchiectasis",
+     "**Also causes clubbing.** Years of daily purulent sputum, recurrent infections",
+     "Sputum volume and colour, childhood infections",
+     "HRCT chest"
+    ],
+    [
+     "Interstitial lung disease",
+     "**Also causes clubbing.** Fine end-inspiratory crackles, dry cough, occupational exposure",
+     "Exact job, materials, years, respirator use; amiodarone, methotrexate, nitrofurantoin",
+     "**HRCT and diffusing capacity.** A normal film does not exclude it"
+    ],
+    [
+     "Tuberculosis",
+     "**Also causes clubbing.** Fevers, night sweats, weight loss, contact or travel",
+     "TB contact, birthplace, travel, fevers",
+     "CXR, sputum culture and AFB"
+    ],
+    [
+     "Mesothelioma",
+     "**Asbestos exposure with a 20–40 year latency**, chest wall ache, pleural thickening",
+     "Asbestos by name — lagging, brake linings, old workshops",
+     "CT chest; **ReturnToWorkSA and the dust diseases pathway**"
+    ],
+    [
+     "Heart failure",
+     "Orthopnoea, pillow count, PND, ankle swelling — **and weight GAIN, not loss**",
+     "Pillows, PND, oedema, JVP, gallop",
+     "Echocardiogram, BNP. **Weight loss points away from it**"
+    ],
+    [
+     "Anaemia",
+     "Tiredness, pallor, bleeding — **a full respiratory workup with no FBE is a documented miss**",
+     "Pallor, bowel bleeding, heavy indigestion",
+     "FBE and iron studies"
+    ]
    ]
   },
   "source": "Dyspnoea_Case_Logic_2_Case_Tasks_Script_Notability.pdf (August 2024 case — Ron Petrie, COPD AND lung cancer)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Dyspnoea_Case_Logic_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "CLUBBING PRESENT; no cyanosis, distress, cachexia or lymphadenopathy"
-   ],
-   [
-    "Observations",
-    "BP 132/78 · P 82 · RR 18 · T 36.7 · SpO2 95% RA"
-   ],
-   [
-    "Chest",
-    "REDUCED EXPANSION; trachea midline; percussion normal; breath sounds present with CRACKLES IN THE MID ZONE — localised, not bibasal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — 'It's COPD' — correct as far as it goes and the reason most candidates fail; the spirometry is real, but weight loss, clubbing and localised crackles are not COPD",
-   "SAY — 'Even though that test points to COPD, I don't want to assume it explains everything' — then run the full structure; keep the spirometry under 90 seconds (12% AND 200 mL, both, from baseline)",
-   "FAIL — Never asking about weight loss — it is not volunteered, and missing it is a fail on its own; then chase it: how much, over how long, appetite, haemoptysis again",
-   "FAIL — Hearing 'clubbing' and saying 'thank you' — 'clubbing is not a feature of COPD; top of the list is lung cancer' — a fail on its own if not interpreted",
-   "FAIL — Not asking whether the added sounds are localised or generalised — the examiner will not volunteer it, and that omission is the point of the case",
-   "SAY — 'You do have COPD, and we will treat it — and there are things here COPD does not explain, so I am also concerned about a cancer' — both diagnoses named, warning shot, the word, the pause; no prognosis number"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-31",
   "cat": "med",
-  "promptAt": 300,
-  "setting": "General practice. (Stem reconstructed from the variant section — the notes give findings and history, not a verbatim door stem.)",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "A 50-year-old man who smokes presents with shortness of breath, worse lying flat, and a productive cough. He has been using more pillows.",
    "Version 1: no weight loss. Version 2: significant unintentional weight loss added — one line in the history changes the whole ranking."
@@ -11421,89 +11501,184 @@
    "Ask the examiner for the physical examination findings",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Same spine as MED-30; the examination findings are identical in both versions — the history decides the answer.",
+  "findings": [
+   [
+    "General appearance and observations",
+    "Ask for distress, cyanosis, CACHEXIA, CLUBBING, and cervical and supraclavicular nodes by name — then vitals including saturation on room air"
+   ],
+   [
+    "Chest expansion",
+    "DECREASED on the LEFT"
+   ],
+   [
+    "Trachea",
+    "CENTRAL — not pulled towards (collapse) or pushed away (tension)"
+   ],
+   [
+    "Percussion",
+    "DULL at the LEFT LOWER ZONE — stony dull"
+   ],
+   [
+    "Breath sounds",
+    "ABSENT at the left base"
+   ],
+   [
+    "Vocal resonance",
+    "DECREASED"
+   ],
+   [
+    "The interpretation you must say out loud",
+    "Those FOUR SIGNS TOGETHER ARE A LEFT PLEURAL EFFUSION. Say the pathology before you turn back to the patient — reporting the signs without converting them is a documented fail"
+   ],
+   [
+    "Cardiovascular and lower limbs",
+    "Ask JVP, apex beat, heart sounds, murmur or gallop; then oedema and calf tenderness. Office tests: ECG, spirometry, peak flow"
+   ],
+   [
+    "VERSION 1 — no weight loss",
+    "HEART FAILURE with a secondary TRANSUDATIVE effusion. COPD second, given the smoking and productive cough. Lung cancer third — AND YOU STILL TAP THE FLUID"
+   ],
+   [
+    "VERSION 2 — weight loss added",
+    "Nothing on examination changes. ONE LINE in the history reorders everything: LUNG CANCER with a malignant effusion first, heart failure second, COPD third"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the four chest signs · open when you would ask",
+  "must": [
+   "FAIL — Not sampling the effusion. Any new effusion in a smoker gets a diagnostic tap.",
+   "FAIL — Closing on heart failure because there is orthopnoea, or on COPD because he smokes.",
+   "FAIL — Reporting the four signs without converting them into a pathology.",
+   "FAIL — Giving one diagnosis when the case is built around three.",
+   "ASK — Have you lost any weight without trying? That one line moves cancer to the top.",
+   "ASK — How many pillows? Waking at night gasping? Any ankle swelling?"
+  ],
   "back": {
-   "dx": "Findings in both versions: reduced chest expansion at the LEFT base, dull to percussion, absent breath sounds, reduced vocal resonance, trachea central = left pleural effusion. VERSION 1 (orthopnoea, increasing pillows, NO weight loss): heart failure with a secondary transudative effusion first, COPD second (smoking, productive cough) — still sample the fluid because malignancy stays on the list. VERSION 2 (weight loss added): malignant pleural effusion secondary to lung cancer first, heart failure second, COPD third — weight loss is not compatible with the fluid retention of decompensated heart failure (cardiac cachexia is late and in established disease). Same four signs, different ranking; the marks are in saying why, out loud, to the examiner.",
+   "dx": [
+    "**A left pleural effusion — and the answer depends on one line of history.** **No weight loss → heart failure with a secondary effusion. Weight loss → lung cancer straight to the top.**",
+    "**The four signs of an effusion: reduced expansion · stony dullness · absent breath sounds · reduced vocal resonance.** Say **'those four findings together are a pleural effusion'** before you turn back.",
+    "Compare: **consolidation — dull, BRONCHIAL BREATHING, INCREASED vocal resonance · pneumothorax — hyper-resonant, absent breath sounds, trachea pushed away if tension · collapse — dull, trachea PULLED TOWARDS.**",
+    "**Weight loss is not compatible with decompensated heart failure**, which is a fluid-retaining state causing weight GAIN. **Cardiac cachexia is late and in established disease — not the explanation for new weight loss in an undiagnosed smoker.**",
+    "**Rank three out loud, with reasons: 'My first diagnosis is X because… my second is Y, which I have not excluded because… and I am also considering Z.'** Structure said aloud beats a correct single answer said silently.",
+    "**Light's criteria — an exudate if ANY ONE is true: pleural/serum protein ratio over 0.5 · pleural/serum LDH ratio over 0.6 · pleural LDH over two-thirds of the upper limit of normal serum LDH.**",
+    "**Transudates** (pressure-driven): **heart failure · cirrhosis · nephrotic syndrome · hypothyroidism · constrictive pericarditis · peritoneal dialysis.** **Exudates**: **parapneumonic and empyema · malignancy · TB · PE · rheumatoid and SLE · pancreatitis · chylothorax.**",
+    "**Diagnostic tap always. Therapeutic drainage if symptomatic — but do not remove too much at once, because of re-expansion pulmonary oedema.** Recurrent malignant effusion: **indwelling pleural catheter or pleurodesis.**",
+    "Heart failure management: **echocardiogram for ejection fraction · diuretic for congestion · then ACE inhibitor or ARNI, a mineralocorticoid receptor antagonist and an SGLT2 inhibitor.** **Beta-blocker up-titration is DEFERRED until euvolaemic** — starting one in a congested patient makes them worse. Daily weights, fluid and salt advice, cardiac rehabilitation.",
+    "Say cancer properly even in Version 1: **'whenever there is fluid like this in someone who has smoked, I must rule out a cancer — so I'm going to take a sample of the fluid and arrange a scan.'** **Cancer Council SA 13 11 20 · Quitline 13 7848 · PATS · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals; WIPE; open question; acknowledge"
+     "**'Examiner, could I have his vital signs?'** Then WIPE, open question, and the empathy line: **'I'm sorry, that sounds like it's been really limiting. I'm going to ask a series of questions so I can work out the cause, then we'll make a plan together.'**"
     ],
     [
-     "0:45",
-     "Breathlessness: duration, course, exertion, ★ orthopnoea and pillow count, PND, ankle swelling; cough — colour, blood; wheeze"
+     "0:30",
+     "Explore: **what does it actually feel like · how long · constant or coming and going · getting worse · what brings it on and what helps · at rest or only on activity · HOW FAR COULD YOU WALK SIX MONTHS AGO AND HOW FAR NOW · WORSE LYING FLAT · HOW MANY PILLOWS · do you wake at night gasping · any ankle swelling?**"
+    ],
+    [
+     "1:30",
+     "Cough and noise: **cough, dry or productive · colour and volume · HAS THERE EVER BEEN BLOOD IN IT · any whistle or wheeze?**"
     ],
     [
      "2:00",
-     "★ Cancer block: weight loss — ask it, quantify it; appetite; lumps; sweats; haemoptysis; occupation/asbestos; smoking pack-years; cardiac — chest pain, palpitations, previous MI/hypertension; infection; VTE; concerns"
+     "**The cancer block, asked FIRST among the differential blocks.** **HAVE YOU LOST ANY WEIGHT WITHOUT TRYING, how much over how long · appetite · lumps or bumps, neck and above the collarbones · unusually tired · night sweats or fevers · bone pain · voice change · job NOW and BEFORE · ASBESTOS BY NAME, mining, welding, construction · any previous cancer?**"
+    ],
+    [
+     "3:00",
+     "Cardiac: **chest pain or tightness on exertion · racing or pounding heart · dizziness or blackouts · ever been told you have a heart problem, high blood pressure, high cholesterol or diabetes?**"
+    ],
+    [
+     "3:30",
+     "The remaining systems: **asthma or hay fever · recurrent infections or years of daily phlegm · joint pains, rashes, dry eyes · fever, travel, TB contact · calf pain or swelling, long flights, recent surgery · pale or unusually tired, any bleeding.**"
     ],
     [
      "4:30",
-     "Excuse yourself → examiner block (appearance, clubbing, nodes, vitals, expansion, trachea, percussion, breath sounds, added sounds localised/generalised, vocal resonance, JVP, apex, heart sounds, oedema) → interpret: 'the four signs of a pleural effusion at the left base' → RANK with reasons before turning back"
+     "Closure: **smoking in pack-years and attempts to stop · medicines, specifically amiodarone, methotrexate, nitrofurantoin · allergies · past history and operations · family · who is at home and how is this affecting work · and what do you think is going on, and what worries you most?**"
+    ],
+    [
+     "5:00",
+     "Request the examination as **one fluent ordered block**, then **convert the four signs into a pathology out loud before turning back**, and **rank the three diagnoses with reasons**."
     ],
     [
      "6:00",
-     "Version 1 to the patient: fluid around the left lung → with breathless lying flat and extra pillows, most likely the heart isn't pumping as strongly, fluid backs up — heart failure, treatable; also COPD; 'whenever there's fluid like this in someone who's smoked I have to rule out a cancer — sample and scan'. Version 2: support person → warning shot → fluid → 'because you've also lost weight without trying, and your smoking history, the possibility I'm most concerned about is a cancer in the lung. I'm sorry. We don't know it yet' → HF and COPD also → sample + CT this week"
+     "**Version 1**: fluid around the left lung → **heart failure, treatable** → COPD second → **and be straight: with fluid like this in a smoker I have to rule out a cancer, so I'll sample the fluid and arrange a scan.**"
     ],
     [
-     "7:15",
-     "Plan: pleural aspiration (protein, LDH, cytology), CXR, CT chest, echo + BNP, ECG, FBE/UEC/LFT/TFT; diuretic and cardiology if HF; urgent respiratory referral if Version 2; smoking cessation; safety-net; summary"
+     "6:00",
+     "**Version 2**: **'before I go on — is there anyone you'd like with you?'** → the fluid → **pause** → **because you have also lost weight without trying, and because of the smoking, what I am most concerned about is a cancer in the lung** → **pause** → then heart failure and COPD as the others the tests will tell apart."
+    ],
+    [
+     "7:00",
+     "The plan with a timeframe — **diagnostic tap this week with protein, LDH, glucose, pH, Gram stain, culture, AFB and cytology; CT chest and upper abdomen** — then the safety-net and a summary. **Protect these last two minutes: cut a history block, never the explanation.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Is the breathlessness worse lying flat? How many pillows — has that number gone up? Do you wake at night gasping? Ankle swelling? Any chest pain, palpitations, previous heart problems or high blood pressure?",
-    "★ Have you lost any weight without trying? How much, over how long? Appetite? (Version 1: no. Version 2: yes — significant)",
-    "Cough — what colour, any blood ever? Do you smoke — how many, how long? What work — asbestos, dust, fumes?",
-    "★ Examiner: '…percussion note, breath sounds, added sounds — localised or generalised — and the vocal resonance? Is the trachea central?'",
-    "★ Version 1 interpretation: 'Reduced expansion, dullness, absent breath sounds and reduced vocal resonance at the left base are the four signs of a pleural effusion. With orthopnoea and increasing pillow use, and no weight loss, my leading diagnosis is heart failure with a secondary transudative effusion. COPD is second given the smoking and productive cough. I would still sample the fluid, because malignancy remains on my list.'",
-    "★ Version 2 interpretation: 'The same four signs give a left pleural effusion. However, in a 50-year-old smoker with significant unintentional weight loss, my leading diagnosis is now a malignant pleural effusion secondary to lung cancer. Heart failure is second and COPD third. Weight loss is not compatible with the fluid retention of decompensated heart failure — cardiac cachexia occurs, but late and in established disease.'",
-    "Version 1 to the patient: 'What I found is fluid collected around the bottom of your left lung, and that's what's making you breathless. Together with being breathless lying flat and needing extra pillows, I think the most likely cause is that your heart isn't pumping as strongly as it should, which lets fluid back up — we call that heart failure, and it's treatable. I'm also considering damage from smoking, COPD. And I have to be straight with you: whenever there's fluid like this in someone who's smoked, I have to rule out a cancer, so I'm going to take a sample of the fluid and arrange a scan.'",
-    "Version 2 to the patient: 'Before I go on — is there anyone you'd like with you? … What I found is fluid around your left lung. [pause] Because you've also lost weight without trying, and because of your smoking history, the possibility I am most concerned about is a cancer in the lung. I'm sorry to have to say that, and we don't know it yet. I'm also thinking about a heart problem, and about COPD. The tests are designed to tell them apart — a sample of the fluid, and a CT scan, both this week.'"
-   ],
    "pefe": [
-    "Findings (both versions): reduced expansion left base · dull · absent breath sounds · reduced vocal resonance · trachea central. Also ask JVP, apex, gallop, oedema — raised JVP/S3/oedema push toward HF; clubbing/nodes/cachexia push toward cancer",
-    "Transudate causes: heart failure, cirrhosis, nephrotic, hypothyroidism · exudate: malignancy, infection/empyema, TB, PE, connective tissue · Light's criteria decide",
-    "Version 1 plan: CXR, ECG, echo, BNP, UEC/FBE/TFT/LFT, pleural aspiration (still), loop diuretic, daily weights, fluid/salt advice, cardiology, smoking cessation, spirometry for COPD; safety-net — worsening breathlessness, chest pain, haemoptysis",
-    "Version 2 plan: urgent CT chest with contrast, urgent respiratory referral, pleural aspiration for cytology ×3, MDT; echo/BNP still to exclude HF as contributor; warning shot, pause, no prognosis; support person; Cancer Council 13 11 20",
-    "SA: MedSTAR 1300 13 12 33 if hypoxic/unstable in a rural site; PATS; TIS 131 450",
-    "Also ask for — JVP, apex, gallop, oedema — raised JVP, an S3 or oedema push toward heart failure",
-    "And ask for — Clubbing, nodes, cachexia — these push toward malignancy"
+    "Request it as one fluent block: **general appearance — distress, cyanosis, CACHEXIA, CLUBBING, cervical or supraclavicular lymphadenopathy · vitals including saturation on room air · symmetrical chest movements and trachea position · percussion note · breath sounds, added sounds AND WHETHER LOCALISED OR GENERALISED · vocal resonance · cardiovascular — JVP, apex beat, heart sounds, murmur or gallop · lower limbs for oedema or calf tenderness · then office tests — ECG, spirometry, peak flow.**",
+    "Do now: **observations including saturation, and saturation on walking · CHEST X-RAY, the highest-yield test in all three versions · ECG · spirometry with bronchodilator reversibility.**",
+    "**The effusion: ultrasound and a DIAGNOSTIC TAP — protein, LDH, glucose, pH, Gram stain, culture, AFB and cytology — and apply Light's criteria.** Saying **'I would apply Light's criteria'** shows you know why you are sending the sample.",
+    "Suspected cancer: **CT chest and upper abdomen, then tissue — bronchoscopy, EBUS or CT-guided biopsy · PET-CT for staging · lung cancer MDT.**",
+    "Suspected heart failure: **echocardiogram**, plus **BNP or NT-proBNP**. Bloods: **FBE — anaemia is on the list for a reason — UEC, LFT, TSH.**",
+    "**A normal chest X-ray does not exclude cancer**, and **an effusion in a smoker must be sampled whatever else you think is going on**."
    ],
-   "fails": [
-    "Reaching the wrong ranking without stating the reasoning — you can be wrong and pass, you cannot pass without visible reasoning ★",
-    "Version 1: not still sampling the fluid / not saying cancer is still on the list in a smoker ★",
-    "Version 2: not asking about weight loss, or hearing it and leaving heart failure on top ★",
-    "Not asking pillows/orthopnoea; not requesting vocal resonance; not interpreting the four signs aloud",
-    "Version 2 cancer named without warning shot or buried; prognosis invented",
-    "Running the two versions back to back with a partner — use separate days (from the notes)"
-   ],
-   "numbers": [
-    "Four effusion signs: reduced expansion · stony dull · absent breath sounds · reduced vocal resonance · trachea central (small) or pushed away (large)",
-    "Heart failure = fluid-retaining state → weight GAIN (hence diuretics and daily weights); unintentional weight LOSS argues against decompensated HF; cardiac cachexia is late",
-    "Light's criteria: protein ratio >0.5 · LDH ratio >0.6 · pleural LDH >⅔ ULN → exudate if any one VERIFY · HF effusions usually bilateral, right > left; a unilateral left effusion is less typical for HF — another reason to sample VERIFY",
-    "BNP/NT-proBNP and echo for HF; CXR — cardiomegaly, upper lobe diversion, Kerley B, bilateral effusions",
-    "Ranking Version 1: HF → COPD → (malignancy still on list) · Version 2: lung cancer → HF → COPD",
-    "Quitline 13 7848 · Cancer Council SA 13 11 20 · TIS 131 450"
+   "ddx": [
+    [
+     "**Heart failure with a secondary effusion**",
+     "Orthopnoea, increasing pillow use, **NO weight loss**",
+     "Pillows, PND, ankle swelling, JVP, displaced apex, gallop",
+     "**Echocardiogram, BNP.** Transudate on Light's criteria — but still tap it"
+    ],
+    [
+     "**Lung cancer with a malignant effusion**",
+     "**Unintentional weight loss** in a smoker; haemoptysis; clubbing; supraclavicular node",
+     "Weight and timeframe, appetite, lumps, voice, bone pain, asbestos by name",
+     "**Cytology on the tap, CT chest and upper abdomen, tissue, staging, MDT** — urgent"
+    ],
+    [
+     "COPD",
+     "20 years of smoking, productive morning cough, progressive exertional dyspnoea",
+     "Pack-years, sputum colour and volume, exacerbations",
+     "**Post-bronchodilator FEV1/FVC under 0.7.** Does not cause an effusion by itself"
+    ],
+    [
+     "Parapneumonic effusion or empyema",
+     "Fever, pleuritic pain, purulent sputum, systemic upset",
+     "Fevers, rigors, sputum colour",
+     "**Exudate; pH and Gram stain on the tap; drainage if complicated** — urgent"
+    ],
+    [
+     "Tuberculosis",
+     "Fevers, night sweats, weight loss, contact or overseas birth",
+     "TB contact, birthplace, travel",
+     "**AFB and culture on the fluid**, CXR, sputum"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, calf swelling, immobility, recent surgery or long flight",
+     "Calf pain or swelling, flights, surgery, previous clot",
+     "**Wells score, CTPA** — exudative effusion"
+    ],
+    [
+     "Mesothelioma",
+     "**Asbestos with a 20–40 year latency**, chest wall ache, pleural thickening on the film",
+     "Asbestos by name — lagging, old sheds, brake linings",
+     "CT chest, pleural biopsy; **ReturnToWorkSA dust diseases pathway**"
+    ],
+    [
+     "Cirrhosis · nephrotic syndrome · hypothyroidism",
+     "**Transudates** — peripheral oedema, ascites, frothy urine, fatigue",
+     "Alcohol, liver disease, urine frothing, thyroid symptoms",
+     "LFT and albumin, urine protein-creatinine ratio, TSH"
+    ],
+    [
+     "Anaemia",
+     "Breathlessness with pallor and fatigue, no chest signs",
+     "Bowel bleeding, heavy periods, indigestion",
+     "**FBE and iron studies** — a full workup with no FBE is a documented miss"
+    ]
    ]
   },
   "source": "Dyspnoea_Case_Logic_2_Case_Tasks_Script_Notability.pdf (variant scripts — pleural effusion case, Version 1 heart failure / Version 2 lung cancer)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › SOB › Dyspnoea_Case_Logic_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Chest",
-    "Reduced expansion at the left base · dull · absent breath sounds · reduced vocal resonance · trachea central"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "SAY — To the examiner first: 'reduced expansion, dullness, absent breath sounds and reduced vocal resonance at the left base are the four signs of a pleural effusion' — then rank the causes with reasons; you can be wrong and pass, you cannot pass without visible reasoning",
-   "FAIL — Version 2: never asking about weight loss, or hearing it and leaving heart failure on top — weight loss is not compatible with the fluid retention of decompensated heart failure; cancer first, heart failure second",
-   "FAIL — Version 1: orthopnoea and rising pillows with no weight loss make heart failure the leading diagnosis, COPD second — but not still sampling the fluid, because malignancy stays on the list",
-   "DO — Ask orthopnoea and pillow count, PND and ankle swelling — and weight loss, quantified — before you rank; those two answers decide which version you are in",
-   "SAY — 'Before I go on — is there anyone you'd like with you?' then: 'what I found is fluid around your left lung' — pause — the concern named as a possibility, not a verdict",
-   "DO — Both versions end the same way: a sample of the fluid and a CT this week; 'whenever there's fluid like this in someone who has smoked, I have to rule out a cancer'"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-32",
