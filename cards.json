@@ -9493,9 +9493,8 @@
  {
   "id": "MED-23",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 240,
-  "setting": "You are a GP at a suburban general practice in Australia.",
   "stem": [
    "Mr Daniel Reid, a 40-year-old man, has presented today complaining of chest pain.",
    "Vital signs recorded by the practice nurse: temp 37.8 °C · HR 88 · BP 128/78 · RR 16 · SpO2 98% RA · BGL not done. Haemodynamically stable — you may proceed with a focused consultation."
@@ -9506,110 +9505,201 @@
    "Explain your provisional diagnosis and differential diagnoses to the patient",
    "Outline your investigations and initial management, including safety-netting"
   ],
-  "time": "8 minutes. About 4 minutes of history, then findings, explanation, plan and safety-net.",
-  "back": {
-   "dx": "Herpes zoster of the right T4 dermatome — sharp stabbing pain from the right nipple round to the back, same side, never crossing the midline, started last night, 8–9/10, constant, worse overnight, ALLODYNIA (the bedsheet brushing the skin), burning/itching for a day or two before, flu last week, feverish and tired. Co-diagnosis the station is built around: why is a 40-year-old reactivating varicella? — 5 kg weight loss, night sweats, exhaustion, a lump under the right arm (firm 2 cm axillary node on exam) → lymphoma/leukaemia screen. Childcare worker; pregnant sister staying at home. Version B trap (2019): examiner says 'no rash' — the pain precedes the rash by 2–3 days; the diagnosis stands. Findings on screen: low-grade fever; vesicular rash on one side of the chest not crossing the midline (= dermatomal — decode it); CVS and resp normal; ECG normal.",
-   "plan": [
-    [
-     "0:00",
-     "Vitals acknowledged → wash → intro, name/DOB → open question → empathy → consent; chest exposure with privacy and chaperone offer"
-    ],
-    [
-     "0:40",
-     "SOCRATES: point to it → 'does it ever cross to the other side?' → sharp/stabbing → allodynia → 'tingling, burning or numb?' → severity, sleep"
-    ],
-    [
-     "1:45",
-     "Exclude the killers even though you 'know': exertional? to jaw/arm, sweating, nausea? SOB, haemoptysis? calf, travel, surgery? ★ 'you had the flu — worse lying flat, better sitting forward?' (pericarditis) · heartburn, meals, swallowing · injury, lifting, coughing"
-    ],
-    [
-     "2:45",
-     "Shingles layer: rash or blisters seen? ★ occupation ★ contacts (pregnant, newborns, young children, immunosuppressed) → ★ malignancy red flags: weight loss, drenching sweats, lumps in neck/armpit/groin, bruising/bleeding, fevers, tiredness → diabetes symptoms → steroids/immunosuppressants → HIV/BBV risk with a preface → chickenpox as a child, previous shingles, vaccine → eye/ear symptoms"
-    ],
-    [
-     "3:45",
-     "SADMA, PMHx (DM, cancer, HIV, autoimmune, transplant, renal), FHx, who's at home, 'what were you most worried this might be?' (heart attack — address it first later)"
-    ],
-    [
-     "4:15",
-     "Findings: decode 'vesicles one side, not crossing midline' = dermatomal, right T4; note the axillary node. Version B: ask by name (general/cachexia, vitals + BGL, lymph nodes + hepatosplenomegaly, CVS incl. rub, resp, chest wall — rash? crosses midline? tenderness incl. light touch, neuro with dermatomal sensory testing, abdomen, ECG, urinalysis)"
-    ],
-    [
-     "5:15",
-     "Heart worry first (exam + ECG normal, pattern doesn't fit) → shingles in plain words → DDx → the second conversation: why now, honest 'is it cancer?' → investigations → four-part management → contacts, work, notification → safety-net incl. PHN → summary, written info, review 2–3 days"
-    ]
-   ],
-   "planApprox": true,
-   "ask": [
-    "Show me exactly where. Does it ever cross over to the other side of your chest? Tight or heavy, or sharp? ★ 'Even the bedsheet hurts' → is the skin also tingling, burning or numb? Out of ten, and has it stopped you doing anything?",
-    "Does it come on when you exert yourself? Spread to jaw, neck, left arm? Sweating, nausea, faint? Shortness of breath, coughing blood? Calf swelling or pain, long flights, surgery, time in bed? ★ You had the flu — is it worse lying flat and better sitting forward? Heartburn, related to eating, difficulty swallowing? Injury, heavy lifting, hard coughing?",
-    "Noticed any rash or blisters on that area? ★ What do you do for work — children or healthcare? ★ Contact with anyone pregnant, any newborns or young children, anyone with a weak immune system?",
-    "★ 'Some questions may seem unrelated' — lost weight without trying? Drenching night sweats? Lumps in neck, armpits or groin? Unusual bruising or bleeding? Persistent fevers? More tired than usual? Drinking or passing urine more? Known diabetes? Steroids, chemotherapy, arthritis or bowel-disease drugs, injections affecting the immune system? 'I ask everyone — anything in your background that might affect your immune system, such as blood-borne virus risk?' Chickenpox as a child? Shingles before? Vaccinated? Rash near the eye, forehead, tip of nose, eye pain, vision change? Ear pain, hearing, dizziness, facial weakness?",
-    "Smoke, alcohol, drugs, medications, allergies? Past conditions? Family — heart disease, clots, cancer? Who's at home? What were you most worried this might be?",
-    "'Is it cancer?' → 'I can't tell you today and I don't want to alarm you. These symptoms need proper investigation rather than ignoring. Some causes are straightforward — diabetes, a recent infection. Others involve the blood or lymph glands, and those are the ones I want to find or rule out, because finding them early matters.'"
-   ],
-   "pefe": [
-    "Version B ordered request: 1 general — distress, cyanosis, pallor, drowsy, cachexia 2 full vitals incl. BGL 3 lymph nodes cervical/supraclavicular/axillary/inguinal + hepatosplenomegaly 4 full CVS incl. JVP and pericardial rub, calves 5 resp 6 chest wall — 'is there any rash? does it cross the midline? tenderness on palpation and to light touch?' 7 neuro upper/lower limbs + dermatomal sensory testing over the band 8 abdomen 9 ECG, BGL, urinalysis",
-    "'No rash' answer: 'The absence of a rash does not exclude shingles — the pain typically precedes the rash by a few days. My provisional diagnosis remains herpes zoster, and I would warn him a rash is likely over the next 2–3 days and review within 48–72 h so antivirals start inside the window'",
-    "Explain: heart worry first → 'shingles — when you had chickenpox the virus went to sleep in the nerve roots near your spine; years later it can wake up and travel along one nerve — that's why the pain is a band on one side that stops dead in the middle, and why the skin is so sensitive. The pain usually comes first and the rash a few days later.' DDx: heart, clot on the lung, sac around the heart, lung infection, reflux, chest-wall cartilage — unlikely on history, exam and ECG",
-    "Investigations — two jobs, say both: (1) confirm/exclude mimics: ECG (mandatory), swab from a de-roofed vesicle for VZV PCR (don't wait for it — clinical diagnosis), troponin only if ischaemic suspicion (2) why now: FBE + film, BGL/HbA1c, HIV serology with consent, ESR/CRP, LDH, UEC (antiviral dosing), LFT, CXR (mediastinal nodes) → urgent haematology if abnormal",
-    "Management: 1 antiviral — famciclovir 500 mg TDS × 7 days (or valaciclovir 1 g TDS × 7, or aciclovir 800 mg five times daily × 7); within 72 h of rash if immunocompetent, any duration if immunocompromised; renal dose adjustment VERIFY 2 analgesia — not paracetamol alone: regular paracetamol + NSAID, paracetamol/codeine for breakthrough with constipation advice, early amitriptyline/gabapentin/pregabalin if severe 3 skin — cool compresses, calamine, clean/dry, loose clothing, non-adherent dressing, don't scratch 4 contacts — until every blister has crusted avoid pregnant women who haven't had chickenpox, newborns, unvaccinated young children, immunosuppressed; cover, hand-wash, no shared towels; 'the fluid gives chickenpox, not shingles' · off work while lesions can't be covered, medical certificate, check childcare requirements · notifiable in SA (say you'll comply) VERIFY · review 2–3 days · Shingrix once recovered if eligible (NIP ≥65, ATSI ≥50, immunocompromised ≥18) VERIFY",
-    "Safety-net: rash near eye/forehead/nose tip (Hutchinson's) or eye pain/vision → same-day ophthalmology · rash spreads, crosses midline, >20 lesions → disseminated, admit IV aciclovir · facial weakness, hearing, vertigo → Ramsay Hunt, ENT · hot red spreading skin/pus · high fever, confusion, new SOB, worsening chest pain. PHN warning: 'the rash settles but the nerve pain can outlast it — come back, there are specific medicines'"
-   ],
-   "fails": [
-    "Not exploring an underlying cause for zoster at 40 — no concern over weight loss and tiredness, no malignancy/immunosuppression screen — documented CRITICAL ERROR ★",
-    "Ruling out shingles because the examiner says 'no rash' ★",
-    "No ECG in a chest pain station; committing to shingles before excluding ACS, PE, pericarditis",
-    "Paracetamol alone for severe neuropathic pain; delaying antivirals for the PCR",
-    "No contact advice, no occupation question, no notification; exposing the chest without consent/chaperone offer",
-    "'It's only a rash'; jargon (herpes zoster, dermatomal, dorsal root ganglion) untranslated; no PHN warning, no review date"
-   ],
-   "numbers": [
-    "72 hours — antiviral window from rash onset (immunocompetent); any duration if immunocompromised (diabetes, steroids, malignancy, HIV count)",
-    "Famciclovir 500 mg 8-hourly × 7 · valaciclovir 1 g 8-hourly × 7 · aciclovir 800 mg five times daily × 7 · reduce in renal impairment · IV aciclovir if disseminated/immunocompromised VERIFY",
-    "Dermatomes: T4 nipple · T6 xiphisternum · T10 umbilicus · C6 thumb · L4 medial malleolus — name 'right T4' to the examiner",
-    "Rash: grouped vesicles on an erythematous base → pustules → crusts over 7–10 days; pain precedes rash by 2–3 days (up to a week); infectious until crusted",
-    "Red-flag distributions: ophthalmic (Hutchinson's sign, nose tip) · Ramsay Hunt (ear vesicles + facial palsy) · disseminated (>20 lesions outside the dermatome / crossing midline)",
-    "Shingrix NIP: ≥65, Aboriginal and Torres Strait Islander ≥50, immunocompromised ≥18 VERIFY · SA Health notification · PATS/Country Health Connect · ACCHS · TIS National 131 450"
-   ]
-  },
-  "source": "Herpes Zoster.pdf (Version A on-screen findings; Version B 'no rash' on the back)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › Herpes Zoster.pdf",
   "findings": [
    [
-    "1. General",
-    "Distress, cyanosis, pallor, drowsiness, cachexia"
+    "General appearance",
+    "Comfortable at rest, not distressed, no cyanosis or pallor — but he LOOKS THIN. Ask for cachexia by name: you are looking for malignancy"
    ],
    [
-    "2. Observations",
-    "Full vitals INCLUDING blood glucose"
+    "Full vital signs",
+    "T 37.8 · HR 88 · BP 128/78 · RR 16 · SpO2 98% RA · BGL 5.4. Haemodynamically stable"
    ],
    [
-    "3. Nodes and abdomen",
-    "Cervical, supraclavicular, axillary and inguinal chains; hepatosplenomegaly"
+    "Lymph nodes and organomegaly",
+    "FIRM 2 cm RIGHT AXILLARY NODE. Cervical, supraclavicular and inguinal groups clear. No hepatosplenomegaly"
    ],
    [
-    "4. Cardiovascular",
-    "Full, including JVP, a PERICARDIAL RUB, and the calves"
+    "Cardiovascular",
+    "Normal. NO PERICARDIAL RUB, no murmur, JVP normal, no oedema, no calf tenderness or swelling"
    ],
    [
-    "5. Respiratory",
-    "Full"
+    "Respiratory",
+    "Normal. Trachea central, expansion equal, no consolidation, effusion, pneumothorax or pleural rub"
    ],
    [
-    "6. Chest wall",
-    "'Is there any rash? Does it cross the midline?' — and NO RASH DOES NOT EXCLUDE SHINGLES, since the pain precedes the rash by days"
+    "Chest wall and skin — VERSION A",
+    "GROUP OF VESICLES ON AN ERYTHEMATOUS BASE ON THE RIGHT SIDE OF THE CHEST, NOT CROSSING THE MIDLINE. EXQUISITELY TENDER TO LIGHT TOUCH. Say it back as a unilateral dermatomal eruption, right T4"
+   ],
+   [
+    "Chest wall and skin — VERSION B",
+    "'NO RASH.' Do not deflate and do not change the diagnosis — the pain precedes the eruption by 2 to 3 days. This single answer is the whole station"
+   ],
+   [
+    "Neurological",
+    "Upper and lower limbs normal. Dermatomal sensory testing over the painful band: ALLODYNIA AND HYPERAESTHESIA in the right T4 distribution"
+   ],
+   [
+    "Abdomen",
+    "Soft, non-tender, no organomegaly, no masses"
+   ],
+   [
+    "Office and bedside tests",
+    "ECG SINUS RHYTHM, no ischaemic or pericarditic changes. BGL 5.4. Urinalysis normal"
    ]
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Not asking why a 40-year-old is reactivating varicella — weight loss, night sweats, lumps, diabetes, steroids, HIV; failing to show concern over the weight loss and tiredness is a documented critical error",
-   "FAIL — Ruling out shingles because the examiner says 'no rash' — the pain precedes the rash by 2–3 days; 'my provisional diagnosis remains herpes zoster, and I would warn him a rash is likely over the next few days'",
-   "FAIL — No ECG in a chest pain station — exclude ACS, PE and pericarditis (he had the flu last week) before settling on shingles",
-   "FAIL — Spotting the dermatomal band in the first 30 seconds and skipping the rest of the chest pain structure — the station is designed to punish exactly this",
-   "DO — Occupation and contacts, then the advice they drive: childcare worker, pregnant sister at home — avoid pregnant women, newborns, young children and the immunosuppressed until every blister has crusted; notify",
-   "DO — Antiviral within 72 hours of the rash (any duration if immunocompromised) — famciclovir 500 mg tds for 7 days — and analgesia that is not paracetamol alone; warn about post-herpetic neuralgia"
-  ]
+   "FAIL — Not doing or requesting an ECG. Mandatory in any chest pain station.",
+   "FAIL — Not asking why a 40-year-old is reactivating varicella. The documented critical error.",
+   "FAIL — Ruling out shingles because the examiner says there is no rash.",
+   "FAIL — Committing to shingles before excluding ACS, PE and pericarditis; or paracetamol alone for this pain.",
+   "ASK — Weight loss, night sweats, lumps in the neck, armpits or groin, bruising, tiredness?",
+   "ASK — What do you do for work? Anyone pregnant, newborn, or immunosuppressed at home?"
+  ],
+  "back": {
+   "dx": [
+    "**Herpes zoster of the right T4 dermatome** — reactivation of latent varicella-zoster virus in the dorsal root ganglion. **Name the dermatome: T4 is the nipple line.**",
+    "**The co-diagnosis is the station.** Why is a 40-year-old reactivating varicella? Weight loss, night sweats, exhaustion and a **firm right axillary node** → **lymphoma or leukaemia**. Also diabetes, steroids, HIV.",
+    "Discriminators: **a unilateral band from nipple to back that stops dead at the midline · sharp and stabbing · ALLODYNIA, the bedsheet hurts · burning or tingling for a day or two beforehand**.",
+    "**No rash does not exclude it.** The neuropathic pain precedes the eruption by **2 to 3 days, up to about a week**. This is what wrecked the 2019 face-to-face candidates.",
+    "Clinical diagnosis. A **dry swab from the base of a de-roofed vesicle for VZV PCR** confirms it — **never delay antivirals waiting for the result**.",
+    "**72 hours from rash onset** is the antiviral window in the immunocompetent. **Immunocompromised: treat regardless of duration.** Pre-eruptive: the window has not opened — review promptly and start when the rash appears.",
+    "**Famciclovir 500 mg 8-hourly for 7 days**, or **valaciclovir 1 g 8-hourly for 7 days**, or **aciclovir 800 mg five times daily for 7 days**. Reduce the dose in renal impairment; IV aciclovir and admission if disseminated or immunocompromised.",
+    "Analgesia must be adequate: **regular paracetamol plus an NSAID**, stepping up to a **paracetamol-codeine combination** for breakthrough with constipation advice, and **amitriptyline, gabapentin or pregabalin** if it stays severe. Cool compresses, calamine, loose clothing, do not scratch. **No routine oral steroids, no topical antivirals.**",
+    "Contacts — **until every blister has crusted over**, avoid **pregnant women who have not had chickenpox, newborns, young children, and anyone immunosuppressed**. The blister fluid gives them **chickenpox, not shingles**. Off childcare work while lesions cannot be covered. **Notifiable in all jurisdictions except NSW.**",
+    "Do not miss: **zoster ophthalmicus — forehead, eyelid or tip of nose, Hutchinson's sign · Ramsay Hunt — ear vesicles with facial palsy · disseminated zoster — crossing the midline or over 20 lesions outside the dermatome · post-herpetic neuralgia**, and warn him the pain can outlast the rash."
+   ],
+   "plan": [
+    [
+     "0:00",
+     "**'Before I begin, may I have the blood pressure, pulse, respiratory rate, oxygen saturation and temperature?'** Then WIPE, confirm **full name and date of birth**, agenda, and empathy — this is 8 or 9 out of 10 pain."
+    ],
+    [
+     "0:45",
+     "SOCRATES: **where exactly, can you point to it · when did it start, sudden or gradual · what is it like, tight or sharp · does it travel anywhere · DOES IT EVER CROSS TO THE OTHER SIDE · constant or coming and going · out of ten, and what has it stopped you doing?**"
+    ],
+    [
+     "1:45",
+     "The discriminating question: **'anything make it worse — moving, breathing, exertion, lying flat, touching the skin?'** → the bedsheet. Follow it: **'is the skin there also tingling, burning or numb?'**"
+    ],
+    [
+     "2:15",
+     "Exclude the killers, out loud, even though you have spotted it. **ACS — exertional, central, crushing, jaw or arm, sweating, nausea, risk factors. PE — sudden breathlessness, haemoptysis, calf swelling, travel, surgery, immobility. Pericarditis — WORSE LYING FLAT, BETTER SITTING FORWARD, recent viral illness. Pneumothorax. Pneumonia. Reflux. Dissection — tearing to the back, maximal at onset.**"
+    ],
+    [
+     "3:15",
+     "The shingles layer: **what do you do for work — do you work with children or in healthcare?** and **do you have contact with anyone pregnant, any newborns or young children, or anyone with a weak immune system?** You cannot give the advice later if you did not ask now."
+    ],
+    [
+     "3:45",
+     "**Why now — the critical block.** **Have you lost weight without trying · drenching night sweats · lumps in the neck, armpits or groin · unusual bruising or bleeding · persistent fevers · more tired than usual?** Then **diabetes — thirst, passing more urine**; **steroids, chemotherapy, arthritis or bowel medicines, injections affecting the immune system**; and with a preface, **'I ask everyone this — anything that might affect your immune system, such as risk of blood-borne viruses?'**"
+    ],
+    [
+     "4:15",
+     "**Any rash near the eye, forehead or tip of the nose? Any eye pain or change in vision? Any ear pain, hearing change, dizziness or facial weakness?** Then **did you have chickenpox as a child, ever had shingles, any vaccination?**"
+    ],
+    [
+     "4:40",
+     "**SADMA** — medications matter twice, as a cause and for renal dosing. Past history, family history, home and who is there, then **'what were you most worried this might be?'** → a heart attack. Name it."
+    ],
+    [
+     "5:00",
+     "Consent and drape before exposing the chest, offer a chaperone, then **request the examination in order** and finish with **the ECG**."
+    ],
+    [
+     "6:00",
+     "Explain, and **answer his fear first**: the heart examination and the ECG are normal and this is not the pattern of a heart attack. Then shingles in plain English — **the chickenpox virus went to sleep in the nerve roots and has woken up along one nerve**, which is why the band stops in the middle and why the sheet hurts. Then the differentials, and why each is less likely."
+    ],
+    [
+     "7:00",
+     "**The second conversation** — say it straight: shingles at 40 with weight loss, night sweats and that lump means **I want to look for a reason your immune system is under strain**. To **'is it cancer?'**: you cannot say today, some causes are straightforward, and **finding it early genuinely matters**."
+    ],
+    [
+     "7:30",
+     "Antiviral with the **72-hour rationale said aloud**, combination analgesia, skin care, **contact and work advice**, notification, **review in 2 to 3 days**, the **post-herpetic neuralgia warning**, safety-net, summary, teach-back, written information."
+    ]
+   ],
+   "pefe": [
+    "Ask in this order, framed as **'my examination is still aimed at a patient with chest pain, so I'd like to start generally and then focus'**: **general appearance including CACHEXIA · full vitals including BGL · lymph nodes, cervical, supraclavicular, axillary and inguinal, plus hepatosplenomegaly · full cardiovascular including JVP and a PERICARDIAL RUB · brief respiratory · chest wall — IS THERE A RASH AND DOES IT CROSS THE MIDLINE, and tenderness to light touch · DERMATOMAL SENSORY TESTING across the painful band · abdomen · ECG, blood glucose and urinalysis.**",
+    "**The ECG is mandatory** — it excludes ischaemia and pericarditis. **Widespread saddle-shaped ST elevation with PR depression** would be pericarditis.",
+    "Confirmatory: a **dry swab from the base of a de-roofed vesicle for VZV PCR**, only possible if a rash is present, and it **rarely changes management**.",
+    "The underlying-cause screen, and say this purpose out loud: **FBE and film** for lymphocytosis, blasts or cytopenias · **BGL and HbA1c** · **HIV serology with consent and pre-test discussion** · **ESR/CRP, LDH, U&E, LFT and a chest X-ray** for mediastinal nodes.",
+    "**Renal function before dosing the antiviral.** **Troponin and CXR only if the history or the ECG raises ischaemic suspicion.**",
+    "Rash features to name if present: **unilateral, band-like, one dermatome, stopping abruptly at the midline · grouped vesicles on an erythematous base, becoming pustules then crusts over 7 to 10 days · marked allodynia and hyperaesthesia**.",
+    "Red-flag distributions: **ophthalmic division — forehead, eyelid, tip of the nose (Hutchinson's sign) · ear canal with facial weakness (Ramsay Hunt) · over 20 lesions outside the dermatome or crossing the midline (disseminated)**."
+   ],
+   "ddx": [
+    [
+     "**Herpes zoster** — most likely",
+     "Unilateral dermatomal band; sharp, stabbing, burning; **allodynia**; low-grade fever; viral prodrome",
+     "Rash not crossing the midline; sensory change over the dermatome; normal CVS and respiratory examination",
+     "**Clinical diagnosis.** VZV PCR on a de-roofed vesicle if a rash is present. **Do not delay treatment** — same day"
+    ],
+    [
+     "Acute coronary syndrome",
+     "Age 40 with chest pain — never assume it away",
+     "Exertional, central, crushing, radiating to jaw or arm; sweating, nausea, dyspnoea; cardiac risk factors",
+     "**ECG ± troponin.** Pain reproduced by light touch of the skin is not ischaemic — immediate"
+    ],
+    [
+     "Pericarditis",
+     "**Viral illness last week**; sharp pain; fever",
+     "**Worse lying flat, better sitting forward**; pericardial rub; pain to the trapezius ridge",
+     "ECG — widespread saddle ST elevation with PR depression; echo if effusion suspected — immediate"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic unilateral chest pain",
+     "Sudden dyspnoea, haemoptysis, calf swelling, tachycardia, immobility, travel, surgery, malignancy, OCP",
+     "**Wells score → D-dimer or CTPA.** The malignancy screen overlaps here — immediate"
+    ],
+    [
+     "Pneumothorax",
+     "Sudden unilateral pain",
+     "Sudden dyspnoea, reduced expansion, hyper-resonance, absent breath sounds",
+     "Examination and CXR. A normal respiratory examination makes it very unlikely — immediate"
+    ],
+    [
+     "Pneumonia or pleurisy",
+     "Fever, recent viral illness",
+     "Productive cough, pleuritic pain on deep breath, crackles, bronchial breathing",
+     "Examination, CXR ± inflammatory markers — urgent"
+    ],
+    [
+     "Gastro-oesophageal — GORD, oesophageal spasm",
+     "Chest discomfort, nocturnal symptoms",
+     "Burning, retrosternal, related to meals or lying flat, regurgitation, dysphagia",
+     "Trial of PPI; endoscopy if alarm features. **Not band-like, not allodynic**"
+    ],
+    [
+     "Costochondritis or musculoskeletal",
+     "Sharp, localised chest pain",
+     "Reproducible tenderness at the costochondral junctions; worse on movement; recent strain or cough",
+     "Palpation. **Zoster pain is triggered by light touch of skin, not deep pressure on cartilage**"
+    ],
+    [
+     "Rib fracture or trauma",
+     "Localised pain",
+     "History of trauma, cough, or pathological fracture risk",
+     "History and focal bony tenderness ± imaging"
+    ],
+    [
+     "Psychogenic or anxiety-related",
+     "Diagnosis of exclusion",
+     "Panic symptoms, stressors, paraesthesiae, hyperventilation, no organic findings",
+     "**Only after organic causes are excluded. Never the first explanation offered**"
+    ],
+    [
+     "**Underlying immunosuppression or malignancy** — the co-diagnosis",
+     "**Zoster at 40; weight loss; tiredness; night sweats**",
+     "**Lymphadenopathy, especially axillary**; hepatosplenomegaly; cachexia; pallor; bruising",
+     "**FBE and film, BGL/HbA1c, HIV serology, ± LDH, CXR; refer if abnormal. DO NOT MISS**"
+    ]
+   ]
+  },
+  "source": "Herpes Zoster.pdf (Version A on-screen findings; Version B 'no rash' on the back)",
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › Herpes Zoster.pdf",
+  "promptAt": 240
  },
  {
   "id": "MED-24",
