@@ -22395,7 +22395,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 90,
-  "setting": "ECG skill card. 60–90 seconds: seven steps aloud in the same order — rate (with a method), regularity, P waves, PR, QRS, ST segments by lead name with reciprocal change, T waves — ending in ONE overall impression. No housekeeping (name, date, calibration), no invented findings, no free-associating on every wave. Two habits to break: blurting the label before the steps, and commenting on everything you can see. If the label won't come: describe first, label second. Tracing 6 of 6 — hyperkalaemia. Lives in the electrolyte station: chronic kidney disease with a recently increased medication. Read it as an emergency, not an interesting finding.",
   "stem": [
    "ECG handed to you in an electrolyte station (CKD, recent dose increase of an ACE inhibitor/potassium-sparing diuretic): regular rhythm, flattened/absent P waves, prolonged PR, widened QRS, tall peaked narrow-based T waves across the leads."
   ],
@@ -22404,63 +22403,150 @@
    "Explain the findings to the patient",
    "State what you do first"
   ],
-  "time": "Rate [X] · regular · ★ 'P waves flattened and difficult to identify — in more advanced hyperkalaemia they disappear altogether' · 'PR prolonged' · 'QRS widened' · ★ 'The most striking abnormality is in the T waves: tall, peaked and narrow-based — tented T waves, seen across the leads' · ★ 'My overall impression is an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level.' → 'what do you do first?' → calcium.",
   "back": {
-   "dx": "Severe hyperkalaemia with ECG changes (tented T waves, flattened P, prolonged PR, widened QRS — progressing to sine wave, VF/asystole) in CKD after a medication increase (ACEi/ARB, spironolactone, potassium supplements, NSAIDs, trimethoprim). Treat now: (1) protect — IV calcium gluconate 10% 10 mL over 5–10 min (or calcium chloride), repeat if ECG changes persist; (2) shift — insulin 10 units IV with 25 g glucose (BGL monitoring), nebulised salbutamol 10–20 mg, ± sodium bicarbonate if acidotic; (3) remove — resonium/patiromer, loop diuretic if passing urine, dialysis if refractory/anuric/severe; (4) stop the offending drug; continuous monitoring, repeat K⁺ and ECG, treat the cause; renal/ICU. VERIFY doses against TG.",
+   "dx": [
+    "**Hyperkalaemia on the ECG — a medical emergency, treated before the level is repeated.** In a patient with **chronic kidney disease and a recently increased medication**, that is the whole story.",
+    "**Tall, peaked, narrow-based ‘tented’ T waves** across the leads are the earliest and most characteristic change.",
+    "Then in order as the potassium rises: **P waves flatten and disappear · the PR interval lengthens · the QRS widens progressively.** The late change is a **broad sine-wave pattern**.",
+    "The impression, in one sentence: **‘an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level.’**",
+    "Management in three moves: **calcium (gluconate or chloride) to protect the myocardium → insulin with glucose ± nebulised salbutamol to shift it intracellularly → a potassium binder or dialysis to remove it.** VERIFY",
+    "**Stop the offending drug** — most often a **potassium-sparing diuretic, an ACE inhibitor or an angiotensin receptor blocker**.",
+    "To the patient, no lead names: **‘the potassium level in your blood is too high, and I can see its effect on your heart tracing. At high levels it interferes with the heart’s electrical activity, which can be dangerous. We’re going to treat it straight away, and stop the tablet that is contributing.’**",
+    "The seven steps, always in this order: **rate → regular? → P waves? → PR interval → QRS duration → ST segments and T waves → one overall impression.** Two of the seven are rhythm, which is why some people count six.",
+    "Numbers: **small square 0.04 s (1 mm) · large square 0.20 s (5 mm) · full strip 10 seconds · normal rate 60–100 · PR 0.12–0.20 s (3–5 small squares) · QRS under 0.12 s (under 3 small squares).**",
+    "If the label will not come, **describe before you label**: **‘a [regular/irregular], [narrow/broad] complex rhythm at [rate], with [P waves present / no visible P waves], and [ST changes described]’** — the description alone earns most of the mark."
+   ],
    "plan": [
     [
      "0:00",
-     "'The rate is around [X] and the rhythm is regular.'"
+     "Five seconds silently first: **what is the most obvious abnormality, and does it map to a territory?** Here it does not — the abnormality is in the **T waves**. Then start the steps out loud. Do not merge the silent look with the spoken read."
     ],
     [
      "0:10",
-     "★ 'Looking at the P waves: they are flattened and difficult to identify — in more advanced hyperkalaemia they disappear altogether. The PR interval is prolonged.'"
+     "**Rate**, with its method stated: **‘there are about X large squares between R waves, so the rate is around Y.’**"
     ],
     [
-     "0:25",
-     "'The QRS duration is widened.'"
+     "0:20",
+     "**Rhythm — regular?** ‘The R-R intervals are equal throughout.’ **Rhythm — P waves?** Here they are **flattened and difficult to identify**. Say that; do not invent one."
     ],
     [
      "0:35",
-     "★ 'The most striking abnormality is in the T waves: they are tall, peaked and narrow-based — tented T waves, seen across the leads.'"
+     "**PR interval — prolonged.** If the P waves have gone: **‘the PR interval is not measurable, as there is no P wave.’**"
     ],
     [
-     "0:50",
-     "★ 'My overall impression is an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level.'"
+     "0:45",
+     "**QRS duration — widened.** Normal is **under 3 small squares (0.12 s)**."
     ],
     [
-     "1:00",
-     "'What do you do first?' → ★ 'Calcium — IV calcium gluconate to protect the heart, with continuous monitoring — then insulin with glucose and salbutamol to shift potassium into the cells, then a binder or dialysis to remove it, and I stop the drug that caused it.' · Patient: 'The potassium level in your blood is too high, and I can see its effect on your heart tracing. Potassium is a salt your body needs, but at high levels it interferes with the heart's electrical activity, which can be dangerous. We're going to treat it straight away, and stop the tablet that is contributing.'"
+     "0:55",
+     "**The T waves — tall, peaked and narrow-based, tented, seen across the leads.** This is the striking abnormality, and it is the step the whole tracing turns on."
+    ],
+    [
+     "1:10",
+     "**One overall impression, no hedging** — hyperkalaemia, **treated as an emergency without waiting for a repeat level**, in a patient with CKD and a recent medication increase."
+    ],
+    [
+     "1:30",
+     "Task 2 — to the patient. **Name it → say what it means in one sentence → say what happens next.** No lead names, no ‘ST elevation’, no ‘QRS’."
+    ],
+    [
+     "2:00",
+     "Task 3 — **‘what do you do first?’** → **calcium to protect**, then **shift**, then **remove**, then **stop the offending drug**. Reading the ECG and then carrying on with the history is a fail — an acute tracing changes the station."
     ]
    ],
-   "planApprox": true,
-   "planNote": "ECG readout timing — steps at ~10 s each, impression by 60–75 s",
-   "ask": [
-    "★ 'Tall, peaked, narrow-based — tented — T waves across the leads.' / ★ 'I would treat this as a medical emergency without waiting for a repeat level.' / ★ 'Calcium to protect, insulin with glucose and salbutamol to shift, binder or dialysis to remove, and stop the offending drug.'"
-   ],
    "pefe": [
-    "Progression: tented T (K ~5.5–6.5) → flat P, long PR (6.5–7.5) → wide QRS, bradyarrhythmia (>7.5) → sine wave → VF/asystole · thresholds: treat urgently if K ≥6.5 or any ECG change VERIFY · causes: CKD/AKI, ACEi/ARB/spironolactone/amiloride, NSAIDs, trimethoprim, K supplements/salt substitutes, rhabdomyolysis, tumour lysis, acidosis, Addison's; exclude pseudohyperkalaemia (haemolysed sample) but never delay treatment when the ECG is abnormal",
-    "Doses VERIFY TG: calcium gluconate 10% 10 mL IV over 5–10 min (repeat ×2 if ECG unchanged); insulin 10 U short-acting IV + 25 g glucose (50 mL 50%), BGL hourly for 6 h; salbutamol 10–20 mg nebulised; NaHCO₃ 8.4% 50 mmol if acidotic; sodium zirconium/patiromer/resonium; frusemide if euvolaemic and passing urine; dialysis for refractory/anuric/ESKD · cardiac monitoring throughout · SA: renal on call; MedSTAR 1300 13 12 33 for rural transfer"
+    "**There is no physical examination task** — the tracing is handed over and the station is the readout. What must be requested is the **structured interpretation**, not findings.",
+    "**The ECG is the confirmation, not the screening test.** Treat on the tracing; **do not wait for a repeat potassium level.**",
+    "The history that belongs with this tracing is a **renal and medication history**, not a chest pain history: **chronic kidney disease, and which drug was recently increased.**",
+    "Housekeeping earns nothing and burns the time you need: **name, date, calibration, paper speed, axis, R wave progression.** Go straight to rate.",
+    "If the tracing is deliberately poor quality, say so **once** — **‘the tracing quality is limited, but in the leads I can read clearly…’** — then work with the readable leads and do not stall.",
+    "If challenged on what you left out: **‘I can assess the axis — but I prioritised rate, rhythm, intervals and ST segments as the findings that change management here.’**"
    ],
-   "fails": [
-    "Reading tented T waves as an interesting finding rather than an emergency; waiting for a repeat level",
-    "Not naming calcium first; insulin without glucose/BGL monitoring; forgetting to stop the drug",
-    "Missing the flattened P/prolonged PR/wide QRS progression; not mentioning monitoring/dialysis"
-   ],
-   "numbers": [
-    "Tented T → flat P/long PR → wide QRS → sine wave · treat K ≥6.5 or any ECG change VERIFY · calcium gluconate 10% 10 mL → insulin 10 U + 25 g glucose → salbutamol 10–20 mg neb → binder/dialysis → stop the drug"
+   "ddx": [
+    [
+     "**Hyperkalaemia**",
+     "Tall peaked narrow-based tented T waves; flat or absent P waves; long PR; wide QRS",
+     "CKD, and a recently increased **ACE inhibitor, ARB or potassium-sparing diuretic**",
+     "**Calcium → insulin with glucose ± salbutamol → binder or dialysis.** Stop the drug"
+    ],
+    [
+     "Inferior MI",
+     "ST elevation in **II, III and aVF** — the triangle at the bottom of the tracing",
+     "**Reciprocal depression in I and aVL**; check V1 and request **right-sided leads, particularly V4R**",
+     "Aspirin **300 mg** chewed, second antiplatelet, anticoagulation, analgesia; reperfusion. **No nitrates if the right ventricle is involved — give fluid**"
+    ],
+    [
+     "Anterolateral MI",
+     "ST elevation **V2–V6 plus I and aVL**",
+     "Reciprocal depression in **III and aVF**; chest-lead elevation about **2 small squares** before you call it",
+     "Same STEMI pathway — primary angioplasty, or **thrombolysis plus MedSTAR retrieval** from a rural site"
+    ],
+    [
+     "Pericarditis",
+     "Widespread **concave** elevation **crossing territories**, ± PR depression in all leads except aVR",
+     "**No reciprocal depression** (ignore aVR). Does the elevation map to one territory? If not — pericarditis",
+     "Troponin and echocardiogram to exclude infarction and effusion; **NSAID plus colchicine**"
+    ],
+    [
+     "Supraventricular tachycardia",
+     "**Regular, narrow-complex, 150**, no visible P waves",
+     "**A P and a T must both be present and separate** — the deflection after each QRS is the T wave",
+     "Stable: vagal manoeuvres, then adenosine. Unstable: **synchronised cardioversion**"
+    ],
+    [
+     "Atrial fibrillation",
+     "**Irregularly irregular**, no P waves",
+     "The baseline wobble is **fibrillatory activity, not organised P waves**. Rate = complexes across the strip **× 6**",
+     "Rate versus rhythm control, thyroid function and echocardiogram, and a **stroke risk assessment for anticoagulation**"
+    ]
    ]
   },
   "source": "ECG_Interpretation_2_Scripts_Practice_Notability.pdf (Readout 6 — hyperkalaemia)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › ECG_Interpretation_2_Scripts_Practice_Notability.pdf",
   "must": [
-   "FAIL — Reading tented T waves as an interesting finding rather than an emergency — 'my overall impression is an ECG consistent with hyperkalaemia, which in this patient with chronic kidney disease and a recent medication increase I would treat as a medical emergency without waiting for a repeat level' (★)",
-   "FAIL — Waiting for a repeat level, or not stopping the drug — the ECG is the indication; the recently increased medicine (an ACE inhibitor, spironolactone, a potassium supplement) is stopped now and named as the cause (★)",
-   "SAY — The seven steps still run: rate and regular rhythm; 'looking at the P waves: they are flattened and difficult to identify — in more advanced hyperkalaemia they disappear altogether; the PR interval is prolonged; the QRS duration is widened; the most striking abnormality is in the T waves: they are tall, peaked and narrow-based — tented T waves, seen across the leads'; one impression",
-   "SAY — 'What do you do first?' → calcium: IV calcium gluconate to protect the myocardium with continuous monitoring — then insulin with glucose (± nebulised salbutamol) to shift potassium into cells — then a binder or dialysis to remove it — and stop the offending drug; the order is protect → shift → remove → stop; repeat the ECG and the level after treatment; renal referral",
-   "SAY — To the patient, no jargon: 'the potassium level in your blood is too high, and I can see its effect on your heart tracing; potassium is a salt your body needs, but at high levels it interferes with the heart's electrical activity, which can be dangerous; we're going to treat it straight away, and stop the tablet that is contributing'; honest if asked whether it's serious, with the plan attached",
-   "DO — Where it lives: an electrolyte station, classically chronic kidney disease with a recently increased medication; the mismatch principle still applies — an objective finding overrules the clinical impression; the safety line if the label won't come — describe the rhythm, the intervals and the T waves, then commit to one conclusion"
-  ]
+   "FAIL — Reading tented T waves as an interesting finding rather than an emergency.",
+   "FAIL — Pattern-recognising out loud instead of running the seven steps.",
+   "FAIL — Giving a PR interval, or calling a deflection a P wave, when the P waves have flattened away.",
+   "FAIL — Hedging across three impressions instead of committing to one.",
+   "ASK — What medication was recently increased, and when? That drug has to be named and stopped.",
+   "ASK — Rate with its method, then regularity, then P waves — before you touch the T waves."
+  ],
+  "findings": [
+   [
+    "Rate",
+    "Any rate — state it with the method you used: **300 ÷ large squares** if regular, **complexes across the 10-second strip × 6** if irregular"
+   ],
+   [
+    "Rhythm — regular?",
+    "Regular"
+   ],
+   [
+    "Rhythm — P waves?",
+    "FLATTENED AND DIFFICULT TO IDENTIFY — and absent altogether as the potassium rises"
+   ],
+   [
+    "PR interval",
+    "PROLONGED — and once the P waves have gone, ‘not measurable, as there is no P wave’ rather than a number"
+   ],
+   [
+    "QRS duration",
+    "WIDENED, progressively"
+   ],
+   [
+    "ST segments and T waves",
+    "TALL, PEAKED, NARROW-BASED TENTED T WAVES across the leads — the earliest and most characteristic change. Late: a broad sine-wave pattern"
+   ],
+   [
+    "Clinical context given with the tracing",
+    "Chronic kidney disease with a RECENT INCREASE IN THE MEDICATION DOSE"
+   ],
+   [
+    "Potassium level",
+    "Not needed before treating — treat on the tracing, do not wait for a repeat level"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "v2": true
  },
  {
   "id": "PE-01",
@@ -46439,7 +46525,6 @@
   "id": "MED-182",
   "cat": "med",
   "promptBell": false,
-  "setting": "Not a case — the spine for every headache station, acute or chronic, adult or adolescent. The context of the case makes minor changes; it does not make a second structure. Three things pass these stations: differentials, as many and as specific as you can — 'Infections' earns nothing, while meningitis, sinusitis and dental abscess earns three ticks; structure, because under stress you cannot recall sixty questions but you can recall four steps; and the key points of your provisional diagnosis, because knowing the recall is not the same as asking them.",
   "stem": [
    "The four history steps: introduction under 45 seconds — explore the pain with CICORA, finished — the differential sweep, one specific question each — then a good closure. Step 3 is the only thing that separates you: everyone does an open question, CICORA and a closure.",
    "The order within step 3: your provisional diagnosis first, with every key point — five or six questions over two minutes, no apology — then the space-occupying lesion red flags in full — then the rest of the list, one question each. Do not run a head-to-toe list of associated symptoms: an examiner marking forty candidates a day recognises it instantly, and a medical student can do it."
@@ -46449,98 +46534,178 @@
    "Physical examination from the examiner — five steps, stopped at 2:00",
    "Diagnosis and differentials in 90 seconds"
   ],
-  "time": "At the door, before you sit down, ask the examiner for the blood pressure, pulse, temperature and respiratory rate as one sentence · then the open question, and stop talking · then address the concern, which is where approach-to-patient is scored · then CICORA, finished, because in nine out of ten headache stations the provisional diagnosis falls out of it: site · show me where it is, one side or both; intensity · out of ten, ten being the worst pain of your life; character · throbbing or pulsating, or dull, or sharp; onset · how long, on and off or constant, getting worse; radiation · does it travel anywhere; aggravating · anything make it better or worse; and affect · how is it affecting your life, in chronic cases · then the differential sweep in order: your provisional diagnosis in full, the tumour red flags in full, and then one specific question for each remaining condition · then closure, with past medical and family history first because they occasionally yield something, and SADMA last and least · then the examination, stopped at two minutes whatever is left · then ninety seconds of diagnosis and differentials.",
   "back": {
-   "dx": "THE NINETY SECONDS AT THE END, IN THREE MOVES. MOVE ONE — name the diagnosis, explain it in five seconds, then reason it from your key points, because the reasoning is what is scored and not the explanation: 'Most likely you have a condition called migraine. Migraine happens because of changes in the blood vessels and nerves in the brain. The reasons I think that are: your headache is one-sided and throbbing, you get flashing lights before it, you're sensitive to light and noise, wine sets it off, and your mother has it too.' Move two — answer the stated concern explicitly, with the negatives, because if they came in worried about a brain tumour and you never say the words they will ask at the end and the mark is gone: 'You came in worried about a brain tumour, so let me answer that directly. It is unlikely, and here is why: the headache doesn't wake you at night, you haven't lost weight, there's no vomiting in the mornings, no weakness or numbness, no change in your vision, and it doesn't get worse when you cough or sneeze.' Move three — the differential run, reasoning three or four and then reading the rest as a list, because speed is the skill and every named condition is a tick: 'I was also thinking about tension headache — a stress-related headache — but you have no stress at home or work. Sinusitis, an infection in the cavities of the skull — but nothing running down the back of your throat. Subarachnoid haemorrhage, a bleed around the brain — but your pain didn't start suddenly and isn't the worst of your life. And I also considered cluster headache, trigeminal neuralgia, medication-overuse headache, dental infection, temporomandibular joint problems, glaucoma, neck-related headache and meningitis, none of which fit your story.' Never say 'It could be migraine or tension headache' — that is not a diagnosis. Name one and defend it; a candidate who diagnosed both because stress was present failed, since stress is a migraine trigger too. The five-second explanations to have ready: migraine is 'Changes in the blood vessels and nerves of the brain'; tension-type is 'A stress-related headache — the muscles of the neck and scalp tighten up'; meningitis is 'An infection and inflammation of the covering of the brain'; giant cell arteritis is 'Inflammation of a blood vessel on the side of your head'; sinusitis is 'An infection in the air cavities inside your skull'; benign intracranial hypertension is 'The pressure of the fluid around your brain is too high, without any tumour causing it'; subarachnoid haemorrhage is 'A bleed into the space around the brain, usually from a weak spot in a vessel'; and a space-occupying lesion is 'A growth inside the skull taking up room that isn't there to spare.'",
+   "dx": [
+    "**One headache structure for every headache station** — acute or chronic, adult or adolescent. The context of the case makes minor changes; it does not make a second structure.",
+    "**Three things pass this station: differentials, structure, key points.** ‘Infections’ earns nothing — **meningitis, sinusitis, dental abscess** earns three ticks. As many as you can, as specific as you can, and all of them good.",
+    "**Step 1 — intro, under 45 seconds.** Vitals at the door (**blood pressure, pulse, temperature, respiratory rate**), open question then **stop talking**, acknowledge the concern once, promise a plan.",
+    "**Step 2 — CICORA, finished**: **site · intensity out of ten · character · onset, pattern and progression · radiation · aggravating and relieving · affect on life.** In **nine out of ten** headache stations the provisional diagnosis falls out here. The exception is **giant cell arteritis**, where CICORA gives you nothing.",
+    "**Step 3 is the only thing that separates you** — everyone does an open question, CICORA and a closure. Order within it: **provisional diagnosis key points first** (five or six questions, **two minutes, no apology**) → **space-occupying lesion red flags in full** → the rest of the list, **one specific question each**.",
+    "**Step 4 — closure**: past medical history then family history; **SADMA last and least.** If you run out of time before SADMA you have lost nothing — anything in it that mattered was already asked as a key point.",
+    "**The thirteen, in memorised order**: **space-occupying lesion · migraine · tension-type · cluster · trigeminal neuralgia · subarachnoid haemorrhage · other intracranial haemorrhage · benign intracranial hypertension · meningitis, encephalitis, abscess · sinusitis · dental · cervicogenic · glaucoma.** Plus **TMJ dysfunction, medication-overuse headache**, and **giant cell arteritis only if over 50**.",
+    "**Glaucoma, not refractive error.** By the time you reach the eye you have asked about vision four times — for tumour, aura, arteritis and deficit. **‘Have you had a red eye?’** is a question you have not asked, and it is specific.",
+    "**Diagnosis in 90 seconds, three moves**: name it, explain it in five seconds, **reason it from your key points** → **answer the stated concern by name, with the negatives** → reason three or four differentials, then **list the rest until the bell.** Every named condition is a tick; an eloquent explanation of differential two is two ticks you did not collect.",
+    "**Context switches**: over 50 → add giant cell arteritis · sudden and severe → subarachnoid to the top · fever → meningitis and encephalitis · young woman, raised BMI, acne treatment → benign intracranial hypertension · any fall at any age → intracranial haemorrhage, chronic subdural in the elderly · under 25 → drop arteritis."
+   ],
    "plan": [
     [
-     "0:00",
-     "The intro, under 45 seconds. At the door: 'Examiner, before I start — can you tell me the blood pressure, pulse rate, temperature and respiratory rate?' then 'Hello, I'm one of the doctors here. How can I help you today?' and stop talking. Then address the concern once: 'I understand why that is worrying you. Let me ask you some questions, examine you, and we'll work out the cause together and make a plan.' (Spending a minute on the brother's cancer is a fail risk — one sentence of sympathy, then move.)"
+     "Door",
+     "**‘Examiner, before I start — can you tell me the blood pressure, pulse rate, temperature and respiratory rate?’** One sentence, before you sit down."
+    ],
+    [
+     "0:15",
+     "**‘Hello, I’m one of the doctors here. How can I help you today?’** Then **stop talking** and let the opening statement land."
+    ],
+    [
+     "0:30",
+     "Address the concern — this is where approach-to-patient is scored: **‘I understand why that is worrying you. Let me ask you some questions, examine you, and we’ll work out the cause together and make a plan. Does that sound alright?’** Then **‘are you in any pain now?’** — almost always no."
     ],
     [
      "0:45",
-     "CICORA, FINISHED — SITE, INTENSITY, CHARACTER, ONSET, RADIATION, AGGRAVATING, AFFECT. Nine out of ten headache stations hand you the provisional diagnosis here; GIANT CELL ARTERITIS IS THE EXCEPTION."
+     "**CICORA, finished.** **‘Show me where it is — one side or both?’ · ‘Out of ten, ten being the worst pain of your life?’ · ‘Throbbing or pulsating, or dull, or sharp?’ · ‘How long? On and off or constant? Getting worse?’ · ‘Does it travel anywhere?’ · ‘Anything make it better or worse?’ · ‘How is it affecting your life?’** The **progression** question is the one that gets skipped."
     ],
     [
      "2:00",
-     "Step 3, which decides the station — your provisional diagnosis first, every key point, five or six questions, two minutes, no apology."
+     "**Key points of the provisional diagnosis** — five or six questions, two minutes, **no apology for the depth**. Knowing the recall is not the same as asking the key points."
     ],
     [
      "4:00",
-     "THEN THE SPACE-OCCUPYING LESION RED FLAGS IN FULL (see findings) — PROBING, NOT SCREENING. These are the most important questions in the station."
+     "**Space-occupying lesion red flags, probing depth, every one**: **‘Any weight loss? Loss of appetite? Lumps or bumps? Feeling tired?’ · ‘Does the pain wake you at night?’ · ‘Any early-morning headache with vomiting?’ · ‘Any blurring of vision? Weakness? Numbness or pins and needles? Trouble walking?’ · ‘Is it worse when you cough, sneeze or bend forward?’**"
     ],
     [
-     "4:45",
-     "THEN THE REST OF THE THIRTEEN, ONE SPECIFIC QUESTION EACH, AND MOVE ON (see findings). (A head-to-toe list of associated symptoms is recognised instantly and earns nothing.)"
+     "5:00",
+     "**The sweep — one specific question each.** Tension: **home and work separately**. Meningitis: **fever, sore neck, rash**. Subarachnoid: **sudden onset, worst ever**. Cluster: **watery eye or runny nose on that side**. Trigeminal: **set off by talking, smiling, shaving, touching the cheek**. Sinusitis: **secretions down the back of the throat**. Dental: **toothache, last dentist**. BIH and overuse: **medications, painkiller days a month**. Haemorrhage: **injury, trauma or fall**. Glaucoma: **red eye**. Cervicogenic: **neck pain**."
     ],
     [
-     "6:00",
-     "CLOSURE: PAST MEDICAL AND FAMILY HISTORY FIRST, THEN SADMA LAST AND LEAST. If you run out of time before SADMA you have lost nothing — anything in it that mattered was already asked as a key point. (Candidates under stress ask SADMA twice or three times as a comfort ritual; those are the seconds meant for the aura question.)"
+     "Closure",
+     "PMHx, then FHx, **SADMA last**. Never ask SADMA twice — under stress it becomes a comfort ritual, and those are the seconds that were meant for the aura question."
     ],
     [
-     "BELL",
-     "THE EXAMINATION FROM THE EXAMINER, TWO MINUTES AND NO MORE (see pefe) — STOP AT 2:00 WHATEVER YOU HAVE NOT ASKED. A candidate who runs out of time before the differentials fails; a candidate with a slightly thin examination does not."
+     "Bell → +2:00",
+     "**PEFE, hard stop at 2:00.** General appearance → **all four vitals** → cranial nerves → **fundoscopy asked separately** → limbs → neck → **ENT and dental** → chest and heart in ten seconds. A thin examination does not fail; running past the bell does."
     ],
     [
-     "+2:00",
-     "The diagnosis and differentials, ninety seconds, three moves (see dx) — name and reason it, answer the stated concern by name with its negatives, then reason three differentials and list the rest until the bell."
+     "Last 90s",
+     "**Name it and reason it → answer the stated concern with its negatives → three reasoned differentials, then list the rest.** Never two diagnoses, never a scan to reassure, never ‘infections’ as a differential."
     ]
    ],
-   "planApprox": true,
-   "planNote": "the document's own clock - the bell falls after the history, then you own two minutes for the examination and ninety seconds for the diagnosis",
-   "ask": [
-    "The door and the opening: 'Examiner, before I start — can you tell me the blood pressure, pulse rate, temperature and respiratory rate?' / 'How can I help you today?' then silence / 'I understand why that is worrying you. Let me ask you some questions, examine you, and we'll work out the cause together and make a plan. Does that sound alright?'",
-    "CICORA, asked like this: 'Show me where it is. Is it one side or both sides?' / 'Out of ten, ten being the worst pain of your life?' / 'Is it throbbing or pulsating, or dull, or sharp?' / 'How long? On and off or constant? Getting worse?' / 'Does it travel anywhere?' / 'Anything make it better or worse?' / 'How is it affecting your life?'",
-    "THE FUNDOSCOPY RULE: ASK FOR IT SEPARATELY. 'SEPARATELY, I WOULD LIKE TO PERFORM FUNDOSCOPY — DO I SEE ANY PAPILLOEDEMA?' It is the single highest-yield request in the cluster; it is technically cranial nerve II, but asked inside 'cranial nerves' you will simply be told normal AND LOSE THE FINDING.",
-    "The correction on polymyalgia rheumatica: it is often taught as proximal myopathy, but it causes pain-limited movement with preserved power, not true weakness. Ask for proximal girdle pain and stiffness, and if pressed: 'I would expect tenderness and restriction from pain, with power preserved — true weakness would make me think of an inflammatory myopathy instead.'",
-    "Never: two diagnoses at once — a scan offered to reassure — 'Infections' as a differential — or SADMA twice."
-   ],
    "pefe": [
-    "The five-step spine: general appearance with three or four relevant items rather than the priccled ritual — vital signs, all four, every time — the core systems in depth — the other systems fast, two questions each, because an intern writes two pages not two lines — and office tests only if genuinely relevant. The headache core is neurological examination plus ENT plus neck, and most candidates forget the ENT.",
-    "In these words: general appearance — is the patient alert or drowsy, any rash, any ptosis, and if over 50 a visible or thickened temporal artery. Cranial nerves — 'Are the pupils symmetrical and the light reflexes normal? Are the eye movements full? Is sensation over the three divisions of the face normal? Are the facial movements symmetrical?' — pupils, III, IV and VI together, trigeminal and facial; skip the rest. Then fundoscopy, asked separately. Limbs — 'Power in the myotomes, sensation, and the reflexes' — power and sensation are the two that matter. Neck — 'Any tenderness over the spinous processes or paraspinal muscles? Are neck movements painful? Is there neck stiffness?' ENT and dental — 'Any dental caries, or redness and swelling of the gums? Any post-nasal drip? Is there sinus tenderness?' — three questions, fifteen seconds, three differentials closed. Then chest and heart in ten seconds.",
-    "Key-point add-ons if the history has pointed you somewhere: meningitis — 'Is Kernig's positive? Is Brudzinski's positive?' after neck stiffness. Giant cell arteritis — 'Is there tenderness over the temporal region? Is the artery thickened or pulseless? Is there proximal shoulder and hip girdle tenderness?' Raised pressure of any cause — fundoscopy, then blood pressure and pulse again, looking for a Cushing response. And on office tests: blood glucose and dipstick are not relevant here and earn 'Unavailable' and no marks, though a urine pregnancy test is defensible in a woman of reproductive age.",
-    "The thirteen, in order — 1 space-occupying lesion — 2 migraine — 3 tension-type — 4 cluster — 5 trigeminal neuralgia — 6 subarachnoid haemorrhage — 7 other intracranial haemorrhage, subdural or extradural — 8 benign intracranial hypertension — 9 meningitis, encephalitis or abscess — 10 sinusitis — 11 dental infection — 12 cervicogenic — 13 glaucoma. Plus TMJ dysfunction, medication-overuse headache, and giant cell arteritis only if over 50",
-    "Why it is differential one in every case — If you do not ask its red flags and do not name it, the station fails however elegant the rest was. The patient may only have tension headache — but did you exclude the serious cause? That is what is being scored",
-    "MIGRAINE — five key points — 'Any nausea or vomiting with it?' / 'Are you light and noise sensitive?' / 'Do you see flashing or sparkling lights before it?' / 'Does alcohol set it off? Any food like cheese or bananas?' / 'Are you on the contraceptive pill?' / 'Anyone in the family?' — the pill question is why the migraine recall is almost always a woman",
-    "Tension-type — 'TELL ME ABOUT HOME — ANY STRESS THERE? AND WHAT DO YOU DO FOR WORK, ANY STRESS THERE?' — ASK HOME AND WORK SEPARATELY, because one AMC version hid bullying at work behind an initial 'stress is fine'",
-    "GIANT CELL ARTERITIS, over 50 only — 'Have you noticed a painful cord on the side of your head?' / 'Any blurring of vision?' / 'Is it worse on chewing, or combing your hair?' / 'Any shoulder or hip pain or stiffness?' — in the recall the first three are negative and the last is positive, so do not stop at three. And CICORA gives you nothing here — it is the one exception",
-    "Meningitis — 'ANY FEVER OR CHILLS?' / 'ANY SORENESS IN YOUR NECK?' / 'ANY RASH?' — 'SORE NECK' BEATS 'NECK STIFFNESS' because patients understand it, and the rash question also screens shingles",
-    "The rest, one question each — Trigeminal neuralgia: 'Is the pain set off by sudden movements of your face — talking, smiling, shaving, or just touching your cheek?' / subarachnoid: 'Did the pain start suddenly?' and 'Is this the worst headache of your life?' — the only place the sudden question belongs / BIH and medication overuse: 'Are you on any medication? Any painkillers — and how many days a month?'",
-    "And the last five — Sinusitis: 'Any secretions running down the back of your throat?' — better than facial pain, which site already covered / dental: 'Any toothache? When did you last see a dentist?' / cluster: 'Do you get a watery eye or a runny nose on that side when the pain comes?' — autonomic features are the discriminator, not severity / haemorrhage: 'Any recent injury, trauma or fall?' — say falls specifically in an older patient / cervicogenic: 'Any neck pain?'",
-    "Why glaucoma and not refractive error — By the time you reach the eye you have asked about vision four times — for tumour, aura, arteritis and neurological deficit. A fifth vision question earns nothing. 'Have you had a red eye?' Is one you have not asked, and it is specific",
-    "How the one structure bends — Over 50 → add giant cell arteritis as a probing block, because a new headache over 50 is not migraine until arteritis is excluded / acute and severe → subarachnoid rises to the TOP, asked early / fever → meningitis and encephalitis become probing blocks and the station becomes an emergency",
-    "The rest of the switches — Young woman, overweight, on acne treatment → benign intracranial hypertension, and the trigger set is isotretinoin, doxycycline, minocycline, the pill and vitamin a / any fall or head injury, any age → intracranial haemorrhage, and in the elderly chronic subdural / under 25 → drop arteritis, keep everything else",
-    "SPACE-OCCUPYING LESION — ask ALL of these — 'Any weight loss? Any loss of appetite? Any lumps or bumps? Feeling tired?' / 'Does the pain wake you at night?' / 'Any early-morning headache with vomiting?' / 'Any blurring of vision? Any weakness? Any numbness or pins and needles? Any trouble walking?' / 'Is it worse when you cough, sneeze or bend forward?' — the last one is raised intracranial pressure"
+    "**The five-step spine, every PEFE, every cluster**: general appearance (three or four relevant items, **not the PRICCLED ritual**) → **all four vital signs, every time** → the core system in depth → the other systems fast, **two questions each** → office tests **only if genuinely relevant**.",
+    "**Headache core = neurological examination + ENT + neck.** Most candidates forget the ENT.",
+    "General appearance in a headache case: **alert or drowsy · any rash · any ptosis · if over 50, a visible or thickened temporal artery.**",
+    "Cranial nerves, in these words: **‘are the pupils symmetrical and the light reflexes normal? Are the eye movements full? Is sensation over the three divisions of the face normal? Are the facial movements symmetrical?’** — pupils, III/IV/VI together, trigeminal, facial. Skip the rest.",
+    "**Fundoscopy, always, and asked separately: ‘do I see any papilloedema?’** The single highest-yield request in the cluster. Asked inside ‘cranial nerves’ you will simply be told ‘normal’ and lose the finding.",
+    "Limbs: **power in the myotomes, sensation, and the reflexes.** Reflexes and coordination if time; **skip tone and inspection**.",
+    "Neck: **tenderness over the spinous processes or paraspinal muscles · painful movements · neck stiffness** — cervicogenic, spondylosis, metastasis, and meningism.",
+    "**ENT and dental — the part almost everyone drops**: **‘any dental caries, or redness and swelling of the gums? Any post-nasal drip? Is there sinus tenderness?’** Three questions, fifteen seconds, three differentials closed.",
+    "Office tests: **blood glucose and dipstick are not relevant and earn ‘unavailable’ and no marks.** A **urine pregnancy test** is defensible in a woman of reproductive age.",
+    "**Conditional add-ons only on a positive finding** — meningism → **Kernig’s and Brudzinski’s**; over 50 → **temporal tenderness, thickened or pulseless artery, girdle tenderness**; raised pressure → fundoscopy, then **blood pressure and pulse again for a Cushing response**. Asking them unprompted tells the examiner you are reciting.",
+    "CORRECTION — polymyalgia rheumatica is often taught as ‘proximal myopathy’. It causes **pain-limited movement with preserved power**, not true weakness. If pressed: **‘I would expect tenderness and restriction from pain, with power preserved — true weakness would make me think of an inflammatory myopathy instead.’**"
    ],
-   "fails": [
-    "★ Never naming a space-occupying lesion — it is differential one in every headache station regardless of age, and omitting it fails the station however elegant the rest was",
-    "★ Running out of time before the differentials — stop the examination at 2:00, because the bell is not negotiable",
-    "Running a head-to-toe list of associated symptoms instead of ruling out named conditions with one specific question each",
-    "Knowing the recall but never asking the key points — most reported migraine failures are candidates who knew it was migraine and never asked about aura, photophobia, triggers or family history",
-    "Leaving the patient's stated concern unanswered; diagnosing two conditions at once; and asking SADMA twice or three times as a comfort ritual"
-   ],
-   "numbers": [
-    "13 differentials in the core list, plus TMJ dysfunction, medication-overuse headache and giant cell arteritis over 50 · 4 history steps · the intro under 45 seconds · the examination stopped at 2:00 · 90 seconds for the diagnosis and differentials · medication overuse is roughly 15 or more days a month VERIFY",
-    "The BIH trigger set: isotretinoin, doxycycline, minocycline, the contraceptive pill and vitamin a · CICORA gives the provisional diagnosis in 9 of 10 headache stations, the exception being giant cell arteritis · a new headache over 50 is not migraine until arteritis is excluded · under 25, drop arteritis"
+   "ddx": [
+    [
+     "**Space-occupying lesion — always first, all ages**",
+     "Progressive headache, night waking, early-morning headache with vomiting, focal deficit, known primary cancer",
+     "**Probing, not screening — ask all of them**: weight, appetite, lumps, tiredness · wakes at night · morning vomiting · vision, weakness, numbness, gait · **worse on cough, sneeze or bending** (raised intracranial pressure)",
+     "**AUTO-FAIL if never named.** Normal neurology and fundoscopy; **CT or MRI if any flag is positive**"
+    ],
+    [
+     "Migraine",
+     "Unilateral, throbbing, worse on routine activity, nausea, photophobia",
+     "**‘Any nausea or vomiting with it?’ · ‘Sensitive to light and noise?’ · ‘Flashing or sparkling lights before it?’ · ‘Does alcohol set it off? Any food — cheese, bananas?’ · ‘Are you on the contraceptive pill?’ · ‘Anyone in the family?’**",
+     "Five key points. **The pill question is why this recall is almost always a woman** — ‘changes in the blood vessels and nerves of the brain’"
+    ],
+    [
+     "Tension-type headache",
+     "Bilateral, pressing or tightening, mild to moderate, not worse on activity",
+     "**‘Tell me about home — any stress there? And what do you do for work, any stress there?’** — asked separately",
+     "One AMC version hid **bullying at work** behind an initial ‘stress is fine’. ‘A stress headache — the scalp and neck muscles tighten’"
+    ],
+    [
+     "Cluster headache",
+     "Strictly unilateral periorbital, excruciating, in bouts, patient restless",
+     "**‘Do you get a watery eye or a runny nose on that side when the pain comes?’**",
+     "**Autonomic features are the discriminator, not severity**"
+    ],
+    [
+     "Trigeminal neuralgia",
+     "Brief electric-shock facial pain",
+     "**‘Is the pain set off by sudden movements of your face — talking, smiling, shaving, or just touching your cheek?’**",
+     "Coughing, sneezing and chewing trigger it too, but you have asked those already"
+    ],
+    [
+     "Subarachnoid haemorrhage",
+     "Thunderclap, peaks in seconds, neck stiffness, vomiting",
+     "**‘Did the pain start suddenly?’ · ‘Is this the worst headache of your life?’**",
+     "**The only place the ‘sudden’ question belongs.** Thunderclap = sudden **and** worst ever. Emergency"
+    ],
+    [
+     "Other intracranial haemorrhage — subdural, extradural",
+     "Older patient, fall, anticoagulant, fluctuating symptoms",
+     "**‘Any recent injury, trauma or fall?’** — in an older patient say **falls** specifically, and over months",
+     "Urgent imaging"
+    ],
+    [
+     "Benign intracranial hypertension · medication-overuse headache",
+     "Young woman, raised BMI, visual obscurations, pulsatile tinnitus; or headache on most days with frequent analgesia",
+     "**‘Are you on any medication?’ · ‘Any painkillers — and how many days a month?’**",
+     "Trigger set is the **acne treatments: isotretinoin, doxycycline, minocycline, the pill, vitamin A**. Overuse ≈ **15+ days a month** VERIFY"
+    ],
+    [
+     "Meningitis · encephalitis · intracranial abscess",
+     "Fever, unwell, photophobia, rash",
+     "**‘Any fever or chills?’ · ‘Any soreness in your neck?’ · ‘Any rash?’**",
+     "**‘Sore neck’ beats ‘neck stiffness’** — patients understand it. The rash question also screens shingles. Emergency"
+    ],
+    [
+     "Sinusitis",
+     "Facial pressure, blocked nose, worse bending forward",
+     "**‘Any secretions running down the back of your throat?’**",
+     "Better than ‘facial pain’ — you already asked site. ‘An infection in the air cavities inside your skull’"
+    ],
+    [
+     "Dental infection · TMJ dysfunction",
+     "Pain on chewing, toothache, joint clicking",
+     "**‘Any toothache? When did you last see a dentist?’**",
+     "**‘Worse on chewing’ was already asked under arteritis** and covers this and TMJ"
+    ],
+    [
+     "Cervicogenic / referred neck pain",
+     "Neck pain precedes the headache, provoked by posture, side-locked",
+     "**‘Any neck pain?’**",
+     "Already half-covered by ‘sore neck’ and by radiation"
+    ],
+    [
+     "Acute angle-closure glaucoma",
+     "Severe unilateral headache with a red painful eye, haloes, vomiting",
+     "**‘Have you had a red eye?’**",
+     "**Vision has been asked four times already; redness has not.** Emergency"
+    ],
+    [
+     "Giant cell arteritis — **only if over 50**",
+     "New headache over 50; scalp tenderness, jaw claudication, girdle stiffness",
+     "**‘A painful cord on the side of your head?’ · ‘Any blurring of vision?’ · ‘Worse on chewing, or combing your hair?’ · ‘Any shoulder or hip pain or stiffness?’**",
+     "In the AMC recall **the first three are negative and the last is positive — do not stop at three.** Under 25, drop it entirely"
+    ]
    ]
   },
   "source": "AMC_Headache_Master_Structure.pdf (the one-document spine for every headache station — not a case; the four history steps, CICORA finished, the thirteen-differential list in its memorised order with one word-for-word question each, the space-occupying lesion red flags that must be asked and named or the station fails, the five-step examination stopped at two minutes with fundoscopy requested separately, and the ninety-second close of naming and reasoning one diagnosis, answering the stated concern with its negatives, and running the differentials until the bell)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Neuro › AMC_Headache_Master_Structure.pdf",
   "must": [
-   "FAIL — Never naming a space-occupying lesion — differential one in every headache station regardless of age; the patient may only have tension headache, but 'did you exclude the serious cause?' is what is scored; ask ALL its red flags at probing depth: 'any weight loss? loss of appetite? lumps or bumps? feeling tired?' · 'does the pain wake you at night?' · 'any early-morning headache with vomiting?' · 'any blurring of vision? weakness? numbness or pins and needles? trouble walking?' · 'is it worse when you cough, sneeze or bend forward?' (★)",
-   "FAIL — Running out of time before the differentials — stop the examination at 2:00 whatever you have not asked; the bell is not negotiable; a thin examination does not fail, no differentials does; and never leaving the stated concern unanswered — if she came in worried about a tumour and you never say the words, she asks at the end and the mark is gone (★)",
-   "FAIL — A head-to-toe list of associated symptoms — an examiner marking forty candidates recognises it instantly; rule out named conditions with one specific question each: tension — stress at home AND at work, asked separately; GCA (over 50 only) — painful cord, vision, chewing or combing, shoulder and hip stiffness (the recall's first three are negative and the fourth positive — do not stop at three); meningitis — fever, 'sore neck', rash; trigeminal — set off by talking, smiling, touching the face; SAH — 'did it start suddenly? worst of your life?' (the only place the sudden question belongs); BIH/overuse — medications (isotretinoin, doxycycline, minocycline, the pill), painkiller days a month (~15+); sinusitis — secretions down the back of the throat; dental — toothache, last dentist; cluster — watery eye or runny nose on that side; haemorrhage — injury, trauma, falls; glaucoma — 'have you had a red eye?' (vision has been asked four times already — redness hasn't); cervicogenic — neck pain; 'infections' as a differential earns nothing — meningitis, sinusitis, dental abscess earns three ticks (★)",
-   "FAIL — Knowing the recall but never asking the key points — most reported migraine failures knew it was migraine and never asked aura, photophobia, triggers or family history; CICORA gives the provisional diagnosis in nine out of ten stations (the exception is GCA), then the key points of that diagnosis come BEFORE anything else — probing questions for the provisional diagnosis, screening questions for the rest; and diagnosing two conditions at once — commit to one and reason it; stress is a migraine trigger too (★)",
-   "DO — The four steps: intro under 45s (stability at the door in one sentence — BP, pulse, temperature, RR; 'how can I help you today?' then stop talking; acknowledge the concern once and promise a plan; 'any pain now?'); CICORA finished — site one side or both, intensity out of ten, character throbbing/dull/sharp, onset and progression ('getting worse?' separates migraine from a tumour), radiation, aggravating/relieving, affect on life; the differential sweep in order — provisional diagnosis key points → SOL red flags in full → one question each; closure — PMH and family history first, SADMA last and least (candidates ask it twice as a comfort ritual — those seconds were for the aura question); the PEFE five-step spine — alert/drowsy, rash, ptosis (over 50: temporal artery) → four vitals → cranial nerves (pupils, III/IV/VI, trigeminal, facial) → 'SEPARATELY, I would like to perform fundoscopy — do I see any papilloedema?' (asked inside 'cranial nerves' you are told 'normal' and lose the finding) → limbs (power, sensation, reflexes) → neck (tenderness, movements, stiffness) → ENT/dental (caries, gums, post-nasal drip, sinus tenderness — the part almost everyone drops) → chest and heart in ten seconds; add-ons — Kernig's and Brudzinski's after neck stiffness; temporal artery and girdle over 50; glucose and dipstick earn 'unavailable'",
-   "SAY — Diagnosis in 90 seconds, three moves: name it with a five-second explanation and reason it from HER key points; answer the stated concern by name with the negatives ('you came in worried about a brain tumour, so let me answer that directly — it is unlikely, and here is why: it doesn't wake you at night, no weight loss, no morning vomiting, no weakness or numbness, no change in vision, not worse on cough or sneeze'); reason three or four differentials, then list the rest until the bell — every named condition is a tick; the five-second explanations: migraine 'changes in the blood vessels and nerves of the brain'; tension 'a stress headache — the scalp and neck muscles tighten'; meningitis 'infection and inflammation of the covering of the brain'; GCA 'inflammation of a blood vessel on the side of your head'; sinusitis 'an infection in the air cavities inside your skull'; BIH 'the pressure of the fluid around the brain is too high, with no tumour causing it'; SAH 'a bleed into the space around the brain, from a weak spot in a vessel'; SOL 'a growth inside the skull taking up room that isn't there to spare'; context switches — over 50 add GCA; sudden and severe → SAH to the top; fever → meningitis/encephalitis; young woman, raised BMI, acne treatment → BIH; any fall → haemorrhage, chronic subdural in the elderly; under 25 drop GCA; never a scan to reassure"
-  ]
+   "FAIL — Never naming a space-occupying lesion. It is differential one in every headache station, at every age.",
+   "FAIL — Running out of time before the differential run. Stop the PEFE at 2:00 whatever is unasked.",
+   "FAIL — A head-to-toe list of associated symptoms instead of ruling out named conditions one by one.",
+   "FAIL — Diagnosing two conditions at once because stress is present. Commit to one and reason it.",
+   "ASK — Every tumour red flag: weight, appetite, lumps, tiredness, night waking, morning vomiting, vision, weakness, numbness, gait, worse on cough or bending.",
+   "ASK — Home stress and work stress separately — then re-ask work a different way if the first answer is a flat no."
+  ],
+  "v2": true
  },
  {
   "id": "MED-183",
   "cat": "med",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "The history station everyone thinks they have already passed. The stem is deliberately bare — no timeline, no severity, nothing — precisely so the whole diagnosis has to come out of your history. Everyone in the room reaches the word migraine, because the recall is public. What separates pass from fail is whether the examiner heard you ask the five key points — nausea, photophobia and phonophobia, aura, triggers, family history — and then reason the diagnosis back from them. The predominant assessment area is history taking: build the history, do not chase the recall.",
   "stem": [
    "Your next patient is a 30-year-old woman who has presented to your general practice complaining of headache. Nothing else is given. Tasks: take a complete six-minute history — explain your diagnosis with reasons to the patient — and explain your differential diagnoses to the patient. There is no examination task, so every second of the first six minutes is history and there is no excuse for a thin differential sweep.",
    "Version B — the management station: a 35-year-old woman, six months of headaches with photophobia and nausea, getting worse; a colleague arranged an MRI which was normal; she is on the combined pill. Tasks: history for three minutes only, then the diagnosis without differentials, then immediate and long-term management. Version C: menstrual migraine. Version D: the same stem with red flags positive, which is no longer this station."
@@ -46550,104 +46715,184 @@
    "Explain your diagnosis, with reasons, to the patient",
    "Explain your differential diagnoses to the patient"
   ],
-  "time": "Vitals at the door, then the open question and silence, then acknowledge the worry once and promise a plan · then CICORA, finished, which hands you migraine by ninety seconds: one side or both, out of ten, throbbing or dull or sharp, how long and on-off or constant and getting worse, does it travel, better or worse with anything, and how is it affecting your life · then the five key points immediately, which is where the marks are: nausea or vomiting, light and noise sensitivity, flashing or sparkling lights before it, alcohol and food triggers, the contraceptive pill, and family history · then the space-occupying lesion red flags in full, at probing depth · then the sweep, one specific question each for tension, meningitis, subarachnoid, cluster, trigeminal neuralgia, sinusitis, dental, benign intracranial hypertension and medication overuse, intracranial haemorrhage, glaucoma and cervicogenic · but not giant cell arteritis, because she is 30 · then closure if the clock allows, with SADMA last · then ninety seconds of diagnosis, the tumour concern answered by name, and the differential run.",
   "findings": [
    [
-    "The scan test",
-    "If you offer a scan without being asked, she accepts it happily — and marks you down for it"
+    "Vital signs at the door",
+    "BP 118/74 · pulse 72 · temperature 36.6 · respiratory rate 14 — all normal"
+   ],
+   [
+    "Physical examination",
+    "THERE IS NO EXAMINATION TASK IN VERSION A. All six minutes are history; there is no excuse for a thin differential sweep"
    ]
   ],
   "back": {
-   "dx": "Migraine with aura. The reasoning sentence, which is the shape to learn: 'Most likely you have migraine, and specifically migraine with aura. It happens because of changes in the blood vessels and nerves of the brain. I'm saying that because your headache is one-sided and throbbing, you get flashing lights first, you're sensitive to light and noise, you feel sick with it, wine brings it on, and your mother had the same thing.' then the concern, answered by name and with its negatives: 'I also want to say clearly — I don't think this is a brain tumour: it doesn't wake you at night, there's no morning vomiting, no weight loss, no weakness or numbness, and it doesn't get worse when you cough or strain.' then the differential run — reason three, list the rest: 'I was also thinking about tension headache — a stress-related tightening headache — but yours is one-sided and throbbing with vomiting, which tension headache isn't. Cluster headache — but you don't get a watery eye or blocked nose with it. Bleeding around the brain — but it didn't come on suddenly and isn't the worst headache of your life. And I also considered meningitis, raised pressure in the brain, medication-overuse headache, sinusitis, dental problems, jaw joint problems, neck-related headache, glaucoma and trigeminal neuralgia — none of which fit.' if the examiner presses on stress: 'Stress is present, but stress is a recognised trigger for migraine as much as a cause of tension headache. The unilateral throbbing quality, the aura, the photophobia and the vomiting all point to migraine, so I am committing to one diagnosis rather than two.' The management, which is version B's whole task. First and above all: stop the combined pill, because migraine with aura raises ischaemic stroke risk and the combined pill compounds it — omitting this fails the station. Then the acute attack: aspirin, ibuprofen or paracetamol taken early and at an adequate dose, plus an antiemetic — metoclopramide or an ondansetron wafer — which also improves absorption of the analgesic; and if simple analgesia fails, a triptan such as sumatriptan or rizatriptan as tablet, wafer or nasal spray. Non-pharmacological: a dark quiet room, an ice pack to the forehead, gentle neck stretches. Then a headache diary recording date, duration, what she ate, what she was doing and what she took, to find her real triggers, and avoid the ones it actually shows. Limit acute analgesia to fewer than about 15 days a month to prevent medication-overuse headache. Preventive therapy if attacks are frequent or disabling: propranolol, amitriptyline, candesartan or topiramate. Plus sleep regularity, meals, hydration and graded aerobic exercise, then a safety-net and review. And the things to avoid: opioids and codeine-containing compounds, which worsen nausea and drive overuse; and ordering an MRI to reassure, which teaches the patient that the scan rather than your assessment is the answer. A correction to the source: it explains migraine as 'Dilation of blood tubes in your brain', which is the older vascular model. Keep the simple sentence for the patient, but if an examiner presses: 'I simplified it for the patient — the current model is neurovascular, involving cortical spreading depression and the trigeminovascular system.' Version C, menstrual migraine — attacks clustered in the two days before and the first three days of menstruation: same diagnosis and same acute plan, with short-term perimenstrual prevention across the window added, and the pill question still coming first. Version D, red flags positive: this is no longer the migraine station, it is the space-occupying lesion station — say so out loud, arrange urgent CT and MRI, and do not reassure.",
+   "dx": [
+    "**Migraine with aura in a 30-year-old woman** — recurrent unilateral throbbing headache, **4–72 hours** untreated, worse on routine activity, with nausea, photophobia and phonophobia, relieved by sleep in a dark quiet room, triggers and a family history. VERIFY",
+    "**The stem is deliberately bare** — no timeline, no severity, nothing acute or chronic — precisely so the whole diagnosis has to come out of your history. **Build the history, do not chase the recall.**",
+    "**Aura is present in around one third** of migraine sufferers; typically **5–60 minutes**, resolving as the headache begins. VERIFY Do not let the aura answer contaminate the red-flag vision answer — **clarify which one she means.**",
+    "The reasoning sentence: **‘Most likely you have migraine, and specifically migraine with aura. It happens because of changes in the blood vessels and nerves of the brain. I’m saying that because your headache is one-sided and throbbing, you get flashing lights before it starts, you’re sensitive to light and noise, you feel sick with it, wine sets it off, and your mother had the same thing.’**",
+    "**Aura plus the combined oral contraceptive pill is the management point of the whole station** — migraine with aura raises ischaemic stroke risk and the combined pill compounds it. **Stop the pill today** and replace the method. VERIFY",
+    "Acute attack: **aspirin or ibuprofen or paracetamol, taken early and at an adequate dose**, plus an **antiemetic — metoclopramide or an ondansetron wafer**, which also improves absorption of the analgesic. If that fails, a **triptan (sumatriptan, rizatriptan)** as tablet, wafer or nasal spray. VERIFY",
+    "**Avoid opioids and codeine-containing compounds** — they worsen nausea and drive overuse. **Cap acute analgesia below roughly 15 days a month** (10 for triptans or combination analgesics) to prevent medication-overuse headache. VERIFY",
+    "**No imaging, and say why**: **‘a scan wouldn’t tell us anything your story and examination haven’t already told us. If any of those warning signs appear, we scan the same day.’** Ordering an MRI to reassure teaches her the scan, not your assessment, is the answer.",
+    "Non-drug and prevention: **headache diary — date, duration, what she ate, what she was doing, medication taken**; identify and avoid the triggers it actually shows; dark quiet room, ice pack, gentle neck stretches; **sleep regularity, meals, hydration, graded aerobic exercise**. Prevention at roughly **4 or more disabling attacks a month**: **propranolol, amitriptyline, candesartan or topiramate**. VERIFY",
+    "SA — **SHINE SA** or the practice for progesterone-only or non-hormonal contraception; neurology via **Country Health Connect** telehealth with **PATS** travel support, no transfer needed for routine migraine; **healthdirect 1800 022 222** after hours; **TIS National 131 450**; ACCHS and **Closing the Gap** PBS co-payment; sudden severe headache at home → **000**, remote → **MedSTAR 1300 13 12 33**."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals at the door, then the open question and stop talking: 'Examiner, before I begin — could you tell me the blood pressure, pulse rate, temperature and respiratory rate?' then 'Hello, I'm one of the doctors here. How can I help you today?' → six months of headaches and a worry. → 'I can see this has been getting to you. Let me ask you some questions, and by the end I'll tell you what I think is going on and what we do about it.' (A second open question is the trap — she is briefed to answer one and then only specifics.)"
+     "Door: **‘Examiner, before I begin — blood pressure, pulse rate, temperature and respiratory rate?’** Then **‘Hello, I’m one of the doctors here. How can I help you today?’** and stop talking. **A second open question buys you ‘no, nothing else’ and costs ten seconds.**"
     ],
     [
-     "0:45",
-     "CICORA, FINISHED — INCLUDING THE PROGRESSION QUESTION (see findings). Ninety seconds gone, and the provisional diagnosis is already made."
+     "0:20",
+     "Acknowledge once: **‘I can see this has been getting to you. Let me ask you some questions, and by the end I’ll tell you what I think is going on and what we do about it.’** Then **‘are you in any pain right now?’**"
+    ],
+    [
+     "0:30",
+     "**CICORA, finished** — **‘one side or both?’ · ‘out of ten?’ · ‘throbbing or pulsating, or dull or sharp?’ · ‘how long — on and off or constant — and are they getting worse?’ · ‘does it travel?’ · ‘better or worse with anything?’ · ‘how is it affecting your life?’** Ninety seconds and the provisional diagnosis is made. **Do not stop once you ‘have it’ — the progression question is the one that separates migraine from a tumour.**"
     ],
     [
      "1:30",
-     "The five key points, immediately and without exception: 'Do you get any nausea or vomiting with it? When you have it, are you sensitive to light and to noise? Do you see any flashing or sparkling lights before the headache starts? Does alcohol set it off — or any food like cheese or chocolate? Are you on the contraceptive pill? Does anyone in your family get migraines?' → aura and the pill, which are the management point of the whole station."
+     "**The five key points, immediately, no exceptions**: **‘Do you get nausea or vomiting with it?’ · ‘Are you sensitive to light and to noise?’ · ‘Do you see flashing or sparkling lights before it starts?’ · ‘Does alcohol set it off? Any food — cheese, chocolate, bananas?’ · ‘Are you on the contraceptive pill?’ — here, not in SADMA · ‘Does anyone in your family get migraines?’**"
     ],
     [
      "3:00",
-     "The tumour red flags, in full and unhurried: 'Now some questions to make sure I'm not missing something serious. Any weight loss, appetite loss, lumps or bumps, unusual tiredness? Does it wake you at night? Any early-morning headache with vomiting? Any blurred vision, weakness, numbness or trouble walking? Is it worse when you cough, sneeze or bend forward?' (Clarify the vision answer against the aura.)"
+     "**Every tumour red flag, probing depth**: **‘Any weight loss? Loss of appetite? Lumps or bumps? Unusual tiredness?’ · ‘Does the headache wake you at night?’ · ‘Any early-morning headache with vomiting?’ · ‘Any blurring of vision, weakness, numbness, pins and needles, trouble walking?’ · ‘Is it worse when you cough, sneeze or bend forward?’**"
     ],
     [
-     "4:00",
-     "THE SWEEP, ONE SPECIFIC QUESTION EACH: home and work stress SEPARATELY; fever, sore neck, rash; sudden onset and worst-ever; watery eye or blocked nose; triggered by talking, smiling or touching the face; post-nasal drip; toothache and last dentist visit; medications and PAINKILLER DAYS A MONTH; injury, trauma or fall; red eye; neck pain. NOT giant cell arteritis — she is 30."
+     "4:15",
+     "**The sweep, one specific question each** — tension (**home and work separately**) · meningitis (**fever, sore neck, rash**) · subarachnoid (**sudden, worst ever**) · cluster (**watery eye or runny nose**) · trigeminal (**talking, smiling, touching the face**) · sinusitis (**post-nasal secretions**) · dental (**toothache, last dentist**) · BIH and overuse (**medications, painkiller days a month**) · haemorrhage (**injury or fall**) · glaucoma (**red eye**) · cervicogenic (**neck pain**). **Not giant cell arteritis — she is 30, and naming it costs credibility.**"
     ],
     [
      "5:30",
-     "CLOSURE IF THE CLOCK ALLOWS: past medical history, then family history, THEN SADMA LAST — the two items that mattered, the pill and analgesic use, are already asked."
+     "Closure if the clock allows: **PMHx, then FHx, SADMA last** — the two items that mattered, the pill and analgesic use, are already asked."
     ],
     [
-     "6:00",
-     "The diagnosis, named and reasoned from the key points (see dx) — then the tumour concern answered explicitly with its negatives, before she has to ask."
+     "Bell",
+     "**Diagnosis with reasons**, then **answer the tumour concern by name before she raises it**: **‘I don’t think this is a brain tumour: it doesn’t wake you at night, there’s no morning vomiting, no weight loss, no weakness or numbness, no change in vision, and it doesn’t get worse when you cough or strain.’**"
     ],
     [
-     "7:00",
-     "The differential run — reason three, list the rest until the bell (see dx) — then the pill: 'Because you get aura and you're on the combined pill, I'd like to stop that pill today.' and the safety-net: a sudden, severe, worst-ever headache, or weakness, or trouble speaking is 000."
+     "+0:40",
+     "**Differentials — reason three, then list the rest until the bell.** Tension (one-sided, throbbing, vomiting — not tension) · cluster (no watery eye or blocked nose) · subarachnoid (not sudden, not worst ever) · then **meningitis, raised brain pressure, medication-overuse, sinusitis, dental, TMJ, cervicogenic, glaucoma, trigeminal neuralgia.** Every named condition is a tick."
+    ],
+    [
+     "+1:30",
+     "**The pill, before she leaves**: **‘because you get aura and you’re on the combined pill, I’d like to stop that pill today and talk about a different method — the combination slightly raises the risk of stroke.’** Then the safety-net: **sudden worst-ever headache, weakness or trouble speaking → 000.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's run - six minutes of history, the prompt bell, then about two minutes for diagnosis and differentials",
-   "ask": [
-    "'Is it on one side or both sides?' / 'Are you sensitive to light and to noise when you have it?' / 'Do you see any flashing or sparkling lights before it starts?' / 'Are you on the contraceptive pill?' / 'Does the headache wake you at night?' / 'Any early-morning headache with vomiting?' / 'Is it worse when you cough, sneeze or bend forward?'",
-    "'Migraine comes from changes in the blood vessels and nerves of the brain.' / 'A brain tumour is unlikely here, and these are the reasons.' / 'Because you have aura and you're on the combined pill, I'd like to stop that pill today.' / 'A scan wouldn't add anything your story and examination haven't already told us.' / 'If you get a sudden, worst-ever headache, that's 000, not an appointment.'",
-    "The model 40-second answer to the examiner: 'A 30-year-old woman with a six-month history of recurrent, unilateral, throbbing headaches lasting several hours, with nausea, photophobia and phonophobia, preceded by visual aura, triggered by alcohol, with a positive family history, relieved by sleep in a dark room. Important negatives: no night waking, no morning vomiting, no progression, no neurological deficit, no worsening on cough or strain, no fever, neck stiffness or rash, and no sudden or worst-ever headache. My most likely diagnosis is migraine with aura.'",
-    "If pressed on stress: 'Stress is a recognised trigger for migraine as much as a cause of tension headache — I am committing to one diagnosis rather than two.' / if pressed on arteritis: 'I deliberately left it out — it is a disease of people over fifty.' / if pressed on the mechanism: 'I simplified it for the patient — the current model is neurovascular, involving cortical spreading depression and the trigeminovascular system.'",
-    "The rural and South Australian context: progesterone-only or non-hormonal contraception through the practice or SHINE SA — neurology from a rural site through country health connect and telehealth, with travel support via PATS, and a routine migraine referral does not need transfer — healthdirect 1800 022 222 after hours — for an Aboriginal or Torres Strait Islander patient, the local ACCHS and the closing the gap PBS co-payment measure — TIS National 131 450 — and 000, or MedSTAR 1300 13 12 33 in a remote setting, for a sudden severe headache."
-   ],
    "pefe": [
-    "Role-player: Sarah Whitlock, 30, a primary school teacher. Headaches for about six months, roughly twice a month, each lasting most of a day. Always on the left, throbbing, about 7 out of 10. Before each one she sees zigzag flashing lines for about twenty minutes — she has never mentioned this because she didn't think it was related. Nauseated, has vomited twice. Light and noise unbearable. Red wine reliably brings one on. Her mother had migraines. On the combined pill for years. Paracetamol four or five days a month. Otherwise well, non-smoker, two standard drinks on a weekend, home settled, work busy but not unusually stressful.",
-    "Her hidden agenda: she is frightened this is a brain tumour because a colleague was diagnosed with one last year. How to play it: give the opening statement warmly and then answer only what is asked. If the candidate asks a second open question, say 'No, nothing else I can think of'. Volunteer the zigzag lines only if asked about aura or flashing lights — if they never ask, never say it. Same with the pill. If they reach the explanation without mentioning a tumour, ask 'So it's not a tumour?' with visible anxiety. If they offer a scan without being asked, accept it happily — and mark them down for it.",
-    "Mark them on: all seven CICORA elements including progression; all five migraine key points; the contraceptive pill question; every tumour red flag rather than a sample; one specific question for at least eight other differentials; migraine named and reasoned from the key points; the tumour concern answered explicitly with negatives; at least eight differentials named before the bell; the combined pill stopped because of aura; and a safety-net for sudden severe headache.",
-    "CICORA — Always the left side — about seven out of ten — throbbing, 'Like a pulse behind my eye' — six months, twice a month, most of a day each, and not getting worse — no radiation — a dark quiet room and sleep settles it — three days off work this year",
-    "Why you finish CICORA anyway — Stopping once you 'Have it' is the trap — the progression question, is it getting worse, is what separates migraine from a tumour, and candidates who guess early skip it",
-    "The five key points — 'I feel really sick, I've thrown up twice' — 'Both, I can't stand the TV on' — 'Zigzag lines, about twenty minutes before' — 'Red wine, every time' — 'Yes, I've been on the pill for years' — and 'Mum had migraines'",
-    "The pair that is the whole station — Aura plus the combined pill. Hearing yes to both and not connecting them is the named trap — and ask the pill question here, in the key points, not in SADMA",
-    "What she never volunteers — She has never mentioned the zigzag lines to anyone because she didn't think they were related — she gives them only if you ask about aura or flashing lights. Same with the pill",
-    "The red flags, all negative — NO weight loss, appetite loss, lumps or tiredness — IT NEVER WAKES HER, IT STARTS IN THE AFTERNOON — NO early-morning vomiting — NO deficit — AND NO worsening on cough, sneeze or bending",
-    "The trap inside the red flags — Letting the aura answer contaminate the vision red flag. Aura is transient, positive, and resolves before or as the headache begins; persistent or progressive visual loss is a different animal — clarify which she means",
-    "The decoy — 'Work has been very stressful' — stress triggers migraine as readily as it causes tension headache. Ask home and work properly, but do not diagnose two conditions",
-    "The rest of the sweep — Home fine, work busy but no worse — NO fever, sore neck or rash — 'NO, THEY BUILD UP OVER AN HOUR' — no watery eye or blocked nose — not triggered by touching her face — no post-nasal drip, toothache, injury, red eye or neck pain — PARACETAMOL FOUR OR FIVE DAYS A MONTH",
-    "Her hidden agenda — She is frightened this is a brain tumour because a colleague was diagnosed with one last year — and if you reach the explanation without mentioning a tumour, she asks 'So it's not a tumour?' with visible anxiety",
-    "Why giant cell arteritis is not on the list — It is essentially confined to people over 50. Naming it for a 30-year-old is not thoroughness, it is noise, and an examiner hears a list recited without thought. If challenged: 'I deliberately left it out — it is a disease of people over fifty and would be a very unusual diagnosis at thirty'"
+    "**Version A has no examination task.** The only examiner interaction is the **haemodynamic check at the door — blood pressure, pulse, temperature, respiratory rate** — asked as one sentence before you sit down.",
+    "**No imaging.** Migraine with a normal examination and no red flags does not need a scan, and the station scores you for saying so **and giving the reason**.",
+    "The diagnosis is **clinical, on criteria**, with a **normal examination between attacks**.",
+    "If she asks for a scan: **‘a scan wouldn’t tell us anything your story and examination haven’t already told us. If any of those warning signs appear, we scan the same day.’** Agreeing to imaging to make the conversation easier is scored against you — **the role-player accepts it happily and marks you down.**",
+    "What would change that: **a new headache, a changed headache, or any neurological deficit — that is imaging, not reassurance.**",
+    "In Version B the **MRI has already been done and is normal** — that is AMC telling you the red flags are excluded for you. **Ask the key points only.**"
    ],
-   "fails": [
-    "★ Reaching the diagnosis and never asking the key points — hearing 'dark quiet room', saying migraine, then filling four minutes with SADMA, and being unable to say why it is migraine rather than tension headache slept off in the same dark room",
-    "★ Missing the combined pill with aura — it is the single scored item in the management version, and omitting it fails the station",
-    "Never naming a space-occupying lesion, which is differential one in every headache station regardless of age",
-    "Diagnosing migraine and tension headache together because stress is present — stress is a migraine trigger too; commit to one and reason it",
-    "Offering a scan to reassure with no red flags; leaving the stated tumour concern unanswered; running a head-to-toe symptom list instead of one named question per differential; and running out of time after four differentials when speed is the skill"
-   ],
-   "numbers": [
-    "A migraine attack lasts 4 to 72 hours untreated VERIFY · aura is typically 5 to 60 minutes, resolving as the headache begins VERIFY · aura is present in about a third of sufferers · medication-overuse threshold is roughly 15 days a month, or 10 for triptans and combination analgesics VERIFY · prevention is considered at about 4 or more disabling attacks a month VERIFY",
-    "Her figures: six months, twice a month, left-sided, 7 out of 10, aura for 20 minutes, paracetamol 4 to 5 days a month · 2:00 is the maximum for any examination task and 90 seconds is all you get for diagnosis and differentials · acute: early adequate-dose simple analgesia plus an antiemetic, then a triptan · preventives: propranolol, amitriptyline, candesartan or topiramate VERIFY · no opioids or codeine"
+   "ddx": [
+    [
+     "**Migraine — the answer**",
+     "Unilateral, throbbing, **4–72 h**, worse on routine activity, nausea, photophobia, aura, family history, alcohol trigger",
+     "Aura, photophobia and phonophobia, nausea, triggers, family history",
+     "**Clinical diagnosis on criteria.** Normal examination between attacks. Routine"
+    ],
+    [
+     "**Space-occupying lesion**",
+     "Progressive headache, morning vomiting, night waking, focal deficit, seizure, personality change",
+     "All red flags, weight loss, a known primary cancer",
+     "Normal neurological examination and fundoscopy; **CT or MRI if any flag is positive.** Urgent"
+    ],
+    [
+     "Tension-type headache",
+     "Bilateral, pressing or tightening, mild to moderate, not worse on activity, no vomiting",
+     "**Stress at home and at work, asked separately**",
+     "Bilateral quality and absence of migraine features. **Stress is a migraine trigger too — do not diagnose both.** Routine"
+    ],
+    [
+     "Cluster headache",
+     "Strictly unilateral periorbital, excruciating, **15–180 min**, in bouts, patient restless",
+     "Ipsilateral lacrimation, red eye, nasal blockage, ptosis",
+     "Autonomic features absent here. Semi-urgent"
+    ],
+    [
+     "Medication-overuse headache",
+     "Headache on most days in someone already using analgesia frequently",
+     "**Painkiller days per month**",
+     "Fewer than roughly **15 days a month** VERIFY . Routine"
+    ],
+    [
+     "Subarachnoid haemorrhage",
+     "Sudden, worst-ever, peaks in seconds, neck stiffness, vomiting",
+     "**Sudden onset and worst-ever questions**",
+     "Not sudden, not worst-ever, recurrent stereotyped pattern. **Emergency**"
+    ],
+    [
+     "Meningitis",
+     "Fever, sore neck, photophobia, rash, unwell",
+     "Fever, neck soreness, rash",
+     "Afebrile, well between attacks, no meningism. **Emergency**"
+    ],
+    [
+     "Benign intracranial hypertension",
+     "Young woman, raised BMI, acne treatment or the pill, visual obscurations, pulsatile tinnitus",
+     "Medication list, transient visual blurring on bending",
+     "No papilloedema, no visual obscurations. Urgent"
+    ],
+    [
+     "Sinusitis",
+     "Facial pressure, post-nasal drip, blocked nose, worse bending forward",
+     "Post-nasal secretions, nasal congestion",
+     "No nasal symptoms, no sinus tenderness. Routine"
+    ],
+    [
+     "Dental infection · TMJ dysfunction",
+     "Pain on chewing, toothache, joint clicking",
+     "Toothache, dental hygiene, chewing",
+     "Nil dental symptoms. Routine"
+    ],
+    [
+     "Cervicogenic headache",
+     "Neck pain precedes the headache, provoked by posture, side-locked",
+     "Neck pain, occupation and posture",
+     "No neck pain, no restriction. Routine"
+    ],
+    [
+     "Acute angle-closure glaucoma",
+     "Severe unilateral headache with a red painful eye, haloes, vomiting",
+     "**The red eye question**",
+     "White quiet eyes, no haloes. **Emergency**"
+    ],
+    [
+     "Trigeminal neuralgia",
+     "Brief electric-shock facial pain triggered by light touch, talking, shaving",
+     "Triggered by facial movement or touch",
+     "Not triggered by touch, and the pain lasts hours not seconds. Routine"
+    ],
+    [
+     "Giant cell arteritis — **deliberately not on this list**",
+     "Essentially confined to people over 50",
+     "She is 30 — naming it is noise, not thoroughness",
+     "If challenged: **‘I deliberately left giant cell arteritis out — it is a disease of people over fifty and would be a very unusual diagnosis at thirty.’**"
+    ]
    ]
   },
   "source": "AMC_Headache_01_Migraine.pdf (Sarah, 30, with six months of left-sided throbbing headaches from a deliberately bare stem — migraine with aura; CICORA finished including the progression question, the five key points asked immediately because everyone reaches the word migraine and only the key points earn the marks, the contraceptive pill asked inside them rather than in SADMA so that aura plus the combined pill is caught, the tumour red flags asked in full and the aura answer kept separate from the vision flag, giant cell arteritis deliberately omitted at 30, and a close that reasons the diagnosis back from the key points, answers the tumour fear by name with its negatives, runs the differentials, and stops the pill; the three-minute management version, menstrual migraine and the red-flags-positive version folded in)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Neuro › AMC_Headache_01_Migraine.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Reaching the diagnosis and never asking the key points — hearing 'dark quiet room', saying migraine, then filling four minutes with SADMA; tension headache is also slept off in a dark room; the five key points asked aloud immediately after CICORA: 'any nausea or vomiting with it?' · 'are you sensitive to light and to noise?' · 'do you see flashing or sparkling lights before it starts?' (the zigzags are volunteered ONLY if asked — 'I didn't know that was connected') · 'does alcohol set it off? any food — cheese, chocolate?' · 'are you on the contraceptive pill?' (here, not in SADMA) · 'does anyone in your family get migraines?' (★)",
-   "FAIL — Missing the combined pill with aura — the single scored item in the management version (35F, MRI already normal, three-minute history — AMC saying 'I have excluded the red flags for you, ask the key points only'): 'because you get aura and you're on the combined pill, I'd like to stop that pill today and talk about a different method — the combination raises the risk of stroke'; progesterone-only or non-hormonal via the practice or SHINE SA (★)",
-   "FAIL — Never naming a space-occupying lesion, or leaving the tumour concern unanswered — her hidden agenda is a colleague diagnosed last year; if you reach the explanation without saying it, she asks 'so it's not a tumour?' with visible anxiety; 'I don't think this is a brain tumour: it doesn't wake you at night, there's no morning vomiting, no weight loss, no weakness or numbness, and it doesn't get worse when you cough or strain'; every red flag asked, not a sample — and clarify the aura answer doesn't contaminate the vision red flag (transient positive zigzags that resolve vs persistent or progressive loss) (★)",
-   "FAIL — Diagnosing migraine and tension headache together because stress is present — 'stress is a recognised trigger for migraine as much as a cause of tension headache; the unilateral throbbing quality, the aura, the photophobia and the vomiting all point to migraine, so I am committing to one diagnosis'; and offering a scan to reassure — 'my friend had a scan, shouldn't I?' → 'a scan wouldn't tell us anything your story and examination haven't already; if any of those warning signs appear, we scan the same day'; accept it and she accepts happily and marks you down (★)",
-   "DO — Stability at the door; one open question only (a second buys 'no, nothing else' and costs ten seconds); CICORA unabbreviated incl. progression ('about the same, not worse'); the sweep one question each — tension (home and work separately), meningitis, SAH ('build up over an hour'), cluster, trigeminal, sinusitis, dental, BIH/overuse (paracetamol four or five days a month), haemorrhage, glaucoma, cervicogenic; NOT giant cell arteritis at 30 — 'naming it is noise, not thoroughness'; if challenged: 'I deliberately left it out — a disease of people over fifty'",
-   "SAY — 'Most likely you have migraine, specifically migraine with aura; it comes from changes in the blood vessels and nerves of the brain; I'm saying that because your headache is one-sided and throbbing, you get flashing lights first, you're sensitive to light and noise, you feel sick with it, wine brings it on, and your mother had the same thing'; then the concern answered, then three reasoned differentials (tension — one-sided and throbbing with vomiting; cluster — no watery eye or blocked nose; SAH — not sudden, not worst ever) and the rest listed until the bell; management version in order — stop the pill; acute paracetamol or ibuprofen early plus an antiemetic (ondansetron wafer or metoclopramide), a triptan if inadequate; dark room, ice pack, neck stretches; a headache diary to find real triggers; prevention if frequent (propranolol, amitriptyline, candesartan, topiramate) with a ceiling on analgesic days (~15) to avoid overuse; no opioids or codeine; safety-net — 'a sudden, worst-ever headache, weakness or trouble speaking is 000, not an appointment'; if the examiner presses on 'blood vessels' — 'I simplified it; the current model is neurovascular — cortical spreading depression and the trigeminovascular system'"
-  ]
+   "FAIL — Reaching ‘migraine’ without asking aura, photophobia or triggers. The commonest reported failure in this station.",
+   "FAIL — Never naming a space-occupying lesion as a differential.",
+   "FAIL — Missing the combined pill with aura, or diagnosing migraine and tension headache together because stress is present.",
+   "FAIL — Offering imaging as reassurance with no red flags, or never addressing the stated tumour concern.",
+   "ASK — Nausea · light and noise · flashing lights before it · alcohol and food · the contraceptive pill · family history. All five key points, immediately after CICORA.",
+   "ASK — Is it getting worse? The progression question inside CICORA is what separates migraine from a tumour."
+  ],
+  "v2": true
  },
  {
   "id": "MED-184",
   "cat": "med",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "The commonest headache in the population, dressed up as something frightening. This station is built around a stated concern: his brother has just been diagnosed with a brain tumour. A candidate who takes a flawless history, examines properly and then says only 'You have tension headache' will be asked 'Doctor, are you sure I don't have a brain tumour?' — and by then the mark is gone. Answer it by name, with the specific negatives, before he raises it again. Reassurance without reasons is not reassurance; it is a guess the patient is asked to trust.",
   "stem": [
    "Your next patient is a 45-year-old man who has come to your general practice complaining of headache. His brother has recently been diagnosed with a brain tumour and he is worried he has the same thing.",
    "Tasks: take a history for four minutes, with a prompt bell — ask the examiner for the physical examination, where findings are given only if you ask specifically — then explain your diagnosis with reasons and your differentials to the patient. After the bell you own the remaining four minutes and must split them yourself: two minutes maximum on the examination, then stop and talk. Variants: stress denied then bullying disclosed; pericranial tenderness on examination; and red flags positive."
@@ -46657,100 +46902,200 @@
    "Ask the examiner for the physical examination — findings given only if you ask specifically",
    "Explain your diagnosis with reasons and your differentials to the patient"
   ],
-  "time": "Vitals at the door, the open question, then one sentence of sympathy and one question about the brother · and then move · then CICORA, which gives you tension in ninety seconds · then go deeper than usual on the key point, which is stress: who do you live with and how are things at home, what do you do for work and is there any stress there, and if the answer is a flat no, re-ask it a different way · any problems at work, with colleagues or with your manager · then one question on mood · then every tumour red flag, announced out loud because he asked you to: weight loss, appetite, lumps, tiredness, night waking, early-morning headache with vomiting, vision, weakness, numbness, gait, and worse on coughing or sneezing or bending · then screen until the bell, knowing you will not finish the list: migraine, infection, sinusitis, dental, cluster, and then whatever time allows · then the examination in two minutes flat · then the concern answered, the diagnosis committed to, the differentials run, and a safety-net.",
   "findings": [
    [
-    "The examination",
-    "Alert, no ptosis, no rash — vitals unchanged — cranial nerves normal — no papilloedema — limbs normal — nothing dental, no post-nasal drip, sinuses non-tender — neck non-tender with painless movements and no stiffness — chest and heart normal"
+    "Vital signs — at the door, and again on asking",
+    "BP 128/80 · pulse 76 · temperature 36.5 · respiratory rate 14. On re-asking: ‘same as before’ — ten seconds, and it costs you nothing"
+   ],
+   [
+    "General appearance",
+    "Alert. NO PTOSIS. NO RASH. If the examiner says ‘as you can see’, that means normal — restate it and move"
+   ],
+   [
+    "Cranial nerves",
+    "Normal"
+   ],
+   [
+    "Fundoscopy — asked SEPARATELY",
+    "NO PAPILLOEDEMA. Asked inside ‘cranial nerves’ you are simply told ‘normal’ and lose the explicit tick"
+   ],
+   [
+    "Upper and lower limb neurological examination",
+    "Normal — power, sensation and reflexes"
+   ],
+   [
+    "ENT and dental",
+    "Normal — no caries, no gum redness or swelling, NO POST-NASAL DRIP, sinuses non-tender"
+   ],
+   [
+    "Neck",
+    "NO TENDERNESS over the spinous processes or paraspinal muscles. MOVEMENTS PAINLESS. NO NECK STIFFNESS — so do not ask Kernig or Brudzinski"
+   ],
+   [
+    "Chest and heart",
+    "Normal — air entry equal, no added sounds, heart sounds normal, no murmur. Abdomen may be dropped without penalty"
    ],
    [
     "VERSION C — pericranial tenderness",
-    "The examiner reports tenderness of the pericranial, paravertebral and trapezius muscles with everything else normal. That is the classic positive sign of tension-type headache and it makes the diagnosis stronger, not weaker — say so, and add stretching and physiotherapy"
+    "TENDERNESS OF THE PERICRANIAL, PARAVERTEBRAL AND TRAPEZIUS MUSCLES, everything else normal. The classic positive sign of tension-type headache — it makes the diagnosis STRONGER. Add stretching and physiotherapy"
+   ],
+   [
+    "VERSION D — red flags positive",
+    "PROGRESSIVE HEADACHE, NIGHT WAKING, MORNING VOMITING, or PAPILLOEDEMA reported. This is no longer the tension station — say so out loud, arrange urgent CT and MRI, do not reassure"
    ]
   ],
   "back": {
-   "dx": "TENSION-TYPE HEADACHE — bilateral, pressing or tightening and non-pulsatile, mild to moderate, not aggravated by routine activity, no vomiting, at most one of photophobia or phonophobia, often radiating into the neck and relieved by simple analgesia, with stress as the key point. The order matters: answer the concern first. 'Jacob, you came in worried about a brain tumour, so let me answer that directly. I do not think you have one, and these are my reasons: the headache doesn't wake you at night, you have no early-morning headache or vomiting, no weight loss or appetite change, no weakness, numbness or change in vision, and it doesn't get worse when you cough or bend. Your neurological examination is completely normal, and I looked into the back of your eyes — the pressure signs we'd expect with a tumour are not there.' then commit: 'What I think you do have is a tension-type headache — a stress-related headache, where the muscles of the scalp and neck tighten up. I'm saying that because it's on both sides, it's a dull tightening ache rather than a throbbing one, it's four or five out of ten, it runs down into your neck, paracetamol helps, and it started when work got very stressful.' then the differentials: 'I was also thinking about migraine — but yours is both sides, dull, with no nausea, light sensitivity or flashing lights. Cluster headache — no watery eye or blocked nose. Medication-overuse headache — you're only taking painkillers three or four days a month. Neck-related headache — your neck moves freely and isn't tender. And I also considered sinusitis, dental and jaw-joint problems, meningitis, bleeding around the brain and glaucoma — none of which fit.' The scan request: 'I understand why you'd want one, but a scan wouldn't tell us anything your story and examination haven't already told us, and a normal scan wouldn't stop the headaches. What I'd rather do is treat what's actually causing them — the pressure at work — and see you again in a month.' The management: simple analgesia used sparingly; address the stressor, because the work stress is the treatment target rather than the headache; sleep, regular meals, hydration, aerobic exercise, and screen and posture breaks; physiotherapy or neck and shoulder stretching if there is a postural component; psychological therapy and a mental health treatment plan if indicated; analgesia capped below roughly 15 days a month; a headache diary and review in four to six weeks. And the safety-net, which is not optional: 'If anything changes — if the headache starts waking you, if you're vomiting in the mornings, if you get weakness, numbness or trouble with your vision, or a sudden worst-ever headache — come straight back or go to hospital. And I'd like to see you again in a month either way.' Avoid the word 'Just': six months of real pain is not 'Just tension', and it reads as dismissal to both the patient and the examiner. The variants. Version B, stress denied then bullying disclosed later: re-ask the stress question a second way rather than accepting the first no, and once it is disclosed, act on it — acknowledge it, screen mood and safety in one question each, and name SafeWork SA and a mental health treatment plan in the management. Screening and then ignoring the answer scores worse than never asking. Version C, pericranial tenderness: 'The tenderness in the muscles at the back of your head and neck is exactly what we find in tension headache.' Version D, red flags positive: this is no longer the tension station — say so out loud, arrange urgent CT and MRI, and do not reassure.",
+   "dx": [
+    "**Tension-type headache in a 45-year-old man whose brother has just been diagnosed with a brain tumour** — bilateral, pressing or tightening, **4–5/10**, not aggravated by routine activity, radiating into the neck, relieved by simple analgesia, with **work stress as the key point**.",
+    "**The commonest headache in the population, and the commonest headache the AMC dresses up as something frightening.** At most **one** of photophobia or phonophobia, and **no vomiting** — or it is not tension-type. VERIFY",
+    "**The discriminating issue is answering the brother out loud, with reasons, before he asks.** Reassurance without reasons is not reassurance; it is a guess the patient is asked to trust.",
+    "The sentence that wins it: **‘Jacob, you came in worried about a brain tumour, so let me answer that directly. I do not think you have one, and these are my reasons: the headache doesn’t wake you at night, you have no early-morning headache or vomiting, no weight loss or appetite change, no weakness, numbness or change in vision, and it doesn’t get worse when you cough or bend. Your neurological examination is completely normal, and I looked into the back of your eyes — the pressure signs we’d expect with a tumour are not there.’**",
+    "Then commit: **‘What I think you do have is a tension-type headache — a stress-related headache, where the muscles of the scalp and neck tighten up. I’m saying that because it’s on both sides, it’s a dull tightening ache rather than a throbbing one, it’s four or five out of ten, it runs down into your neck, paracetamol helps, and it started when work got very stressful.’**",
+    "**Name the trigger as the treatment target — the work stress, not the headache.** Address the stressor: workload, hours, and **the bullying if it is disclosed**. Screening for it and then not acting on it is worse than never asking.",
+    "Management: **simple analgesia used sparingly** VERIFY · sleep, regular meals, hydration, aerobic exercise, **screen and posture breaks** · **physiotherapy or neck and shoulder stretching** if there is a postural component · **psychological therapy and a mental health treatment plan** if indicated VERIFY · **cap analgesia below roughly 15 days a month** VERIFY · **review in 4–6 weeks with a headache diary**.",
+    "**No imaging, and justify it**: a normal neurological examination, no red flags and no papilloedema. **‘A scan wouldn’t tell us anything your story and examination haven’t already told us, and a normal scan wouldn’t stop the headaches.’**",
+    "**Never the word ‘just’.** ‘It’s just tension’ dismisses six months of real pain, and reads as dismissal to both the patient and the examiner.",
+    "SA — **SafeWork SA** and **ReturnToWorkSA** for workplace stress or bullying; psychology via a **GP mental health treatment plan** with telehealth through **Country Health Connect**; **Beyond Blue 1300 22 4636**, **Lifeline 13 11 14**; **TIS National 131 450**; ACCHS with **Closing the Gap** PBS co-payment; urgent imaging through the regional hospital in Yorke and Northern LHN, **MedSTAR 1300 13 12 33** for retrieval if a red flag emerges."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals at the door, the open question, and the concern handled in two sentences: 'I'm very sorry to hear about your brother. How is he doing?' then 'I understand why this is worrying you. Let me ask you some questions, examine you, and we'll find the cause and make a plan together.' (Do not explore his treatment, staging or prognosis.)"
+     "Door: **‘Examiner, before I start — blood pressure, pulse rate, temperature and respiratory rate, please?’** Then **‘Hello Jacob, I’m one of the doctors here. How can I help you today?’**"
+    ],
+    [
+     "0:15",
+     "The concern, **once**: **‘I’m very sorry to hear about your brother. How is he doing? … I understand why this is worrying you. Let me ask you some questions, examine you, and we’ll find the cause and make a plan together.’** **Do not follow the brother down the rabbit hole** — his staging and treatment earn nothing and cost you the sweep."
     ],
     [
      "0:30",
-     "CICORA, CONFIRMING LATERALITY RATHER THAN ASSUMING IT — and add PAINKILLER DAYS A MONTH to the 'better or worse' answer, because medication-overuse headache lives there."
+     "**CICORA** — **‘one side or both?’ · ‘out of ten?’ · ‘throbbing or pulsating, or dull or sharp?’ · ‘how long, on and off or constant, getting worse?’ · ‘does it travel anywhere?’ · ‘better or worse with anything?’ · ‘how many days a month are you taking painkillers?’ · ‘how is it affecting your life?’** Ninety seconds and the provisional diagnosis is made."
     ],
     [
      "1:30",
-     "The key point, deeper than usual: 'Who do you live with at home, and how are things going there? Any stress at home?' then 'What do you do for work — and is there any stress there?' → a flat no → re-ask: 'Any problems at work — with colleagues or with your manager?' then one question on mood."
+     "**Go deeper on stress than you would elsewhere — it is the key point.** **‘Who do you live with at home, and how are things going there? Any stress at home?’** then separately **‘What do you do for work — and is there any stress there?’** If the first answer is a flat no: **‘Any problems at work — with colleagues, or with your manager?’** Then **‘and how has your mood been?’** — one question, no more."
     ],
     [
-     "2:15",
-     "EVERY TUMOUR RED FLAG, ANNOUNCED: 'YOU'RE WORRIED ABOUT A BRAIN TUMOUR, SO I'M GOING TO ASK YOU EVERY QUESTION I'D ASK TO LOOK FOR ONE.' — weight, appetite, lumps, tiredness; night waking; early-morning headache with vomiting; vision, weakness, numbness, gait; AND WORSE ON COUGH, SNEEZE OR BENDING."
+     "2:30",
+     "**Every tumour red flag, out loud, prefaced**: **‘You’re worried about a brain tumour, so I’m going to ask you every question I’d ask to look for one.’** Weight loss · appetite · lumps and bumps · tiredness · **wakes at night** · **early-morning headache with vomiting** · vision · weakness · numbness · gait · **worse on coughing, sneezing or bending forward**."
     ],
     [
-     "3:15",
-     "SCREENING UNTIL THE BELL — you will not finish the list, AND THAT IS EXPECTED: migraine's three; fever and sore neck; post-nasal drip; toothache and last dentist; watery eye or runny nose; then TMJ, painkiller days, head injury and red eye if time. NOT giant cell arteritis — he is 45."
+     "3:20",
+     "**Screening until the bell — you will not finish the list, and that is expected.** Migraine (**nausea, light and noise, flashing lights**) · infection (**fever, sore neck, rash**) · sinusitis (**post-nasal secretions**) · dental (**toothache, chewing, last dentist**) · cluster (**watery eye or runny nose**) · then if time TMJ, painkiller days, head injury or fall, red eye. **Not giant cell arteritis — he is 45.**"
     ],
     [
-     "4:00 BELL",
-     "The examination, two minutes flat and no long farewell (see PEFE) — general appearance, vitals, cranial nerves, fundoscopy asked separately, limbs, ENT and dental, neck, then chest and heart in ten seconds."
+     "4:00 — bell",
+     "**You now own the remaining four minutes and must split them yourself.** No long courteous farewell to the role-player: **‘Jacob, I’ll be back in a moment.’** Those seconds are the ones you need."
+    ],
+    [
+     "4:00 → 6:00",
+     "**PEFE, hard stop at 2:00.** General appearance → vitals → cranial nerves → **fundoscopy separately, naming papilloedema** → limbs → **ENT and dental** → neck → chest and heart in ten seconds. **Neck stiffness negative means you do not ask Kernig or Brudzinski** — say that out loud."
     ],
     [
      "6:00",
-     "The concern answered first, by name and with its negatives (see dx) — then commit to tension-type and reason it from the CICORA findings."
+     "**Answer the concern first, by name, with the negatives** — before he raises it. Then **commit to tension-type and reason it from the CICORA findings.**"
     ],
     [
-     "7:00",
-     "The differential run, then the scan declined with an explanation, then the safety-net and review in four to six weeks (see dx). (Never say 'It's just tension'.)"
+     "6:45",
+     "**Differentials — at least eight.** Migraine (both sides, dull, no nausea or photophobia or aura) · cluster (no watery eye or blocked nose) · medication-overuse (**only three or four days a month**) · cervicogenic (neck moves freely, not tender) · then **sinusitis, dental, TMJ, meningitis, subarachnoid, glaucoma.** Then **decline the scan with an explanation** and give the safety-net: **night waking, morning vomiting, weakness, numbness, vision change, or a sudden worst-ever headache → come straight back or go to hospital.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's run - four minutes of history, then four minutes you split yourself between the examination and the talking",
-   "ask": [
-    "'I'm very sorry about your brother. How is he doing?' — then move. / 'Is it on one side or both sides?' / 'Any problems at work — with colleagues, or with your manager?' / 'Because you're worried about a tumour, I'm going to ask every question I'd ask to look for one.'",
-    "'Separately, fundoscopy — is there any papilloedema?' / 'Neck stiffness was negative, so I won't ask for Kernig's or Brudzinski's.' / 'How many days a month would you be taking painkillers?'",
-    "'I don't think you have a brain tumour, and these are my reasons...' / 'No sign of raised pressure at the back of your eyes.' / 'Tension-type headache — the muscles of the scalp and neck tighten up.' / 'A scan wouldn't tell us anything your story and examination haven't already told us.' / 'If anything changes, come straight back — and I'd like to see you in a month regardless.'",
-    "The model 40-second answer: 'A 45-year-old man with six months of bilateral, dull, tightening headache, four to five out of ten, once a week, non-progressive, radiating into the neck, relieved by paracetamol, coinciding with significant work stress. Important negatives: no night waking, no early-morning vomiting, no weight loss, no neurological deficit, no worsening on strain, no nausea, photophobia or aura, afebrile with no neck stiffness or rash. Examination normal throughout with no papilloedema. My most likely diagnosis is tension-type headache.'",
-    "The South Australian and rural context: workplace stress and bullying — SafeWork SA, and ReturnToWorkSA if there is a work-related claim — psychology from a rural site via a GP mental health treatment plan with telehealth through country health connect — Beyond Blue 1300 22 4636 and Lifeline 13 11 14 — TIS National 131 450 — the local ACCHS with closing the gap PBS co-payment — and MedSTAR 1300 13 12 33 for retrieval if a red flag emerges."
-   ],
    "pefe": [
-    "Ask in this order, and in these words: 'Is he alert or drowsy? Any ptosis? Any rash?' — if the examiner says 'As you can see', that means normal, so restate it and move. 'Vital signs the same as at the door?' — ten seconds. 'Cranial nerve examination, please.' then, separately: 'Fundoscopy — is there any papilloedema?' 'Upper and lower limb neurological examination — power, sensation, reflexes.' 'Any dental caries? Redness or swelling of the gums? Any post-nasal drip? Is there sinus tenderness?' — fifteen seconds, three differentials closed, and the part nearly everyone drops. 'Neck — tenderness over the spinous processes and paraspinal muscles? Are neck movements painful? Any neck stiffness?' then chest and heart in ten seconds; abdomen may be dropped without penalty.",
-    "Role-player: Jacob Enright, 45, an accountant, married with two children. Six months of headaches, about once a week, lasting a few hours — all over, both sides, a dull vague ache like a tight band, four or five out of ten, running down the back of his neck. Paracetamol takes the edge off, three or four days a month. Not getting worse. End of financial year, team two people down, sixty-hour weeks. Home settled. Mood flat and tired but not depressed, no self-harm. No medications or medical problems, non-smoker. His brother was diagnosed with a brain tumour two months ago and is having treatment.",
-    "How to play it: open with the concern about your brother, anxiously. If the doctor asks about his treatment or staging, answer briefly and do not elaborate — but note that they wasted time. Say 'Work is fine' the first time you are asked about stress, and only describe the sixty-hour weeks if they ask a second time or ask specifically about your occupation. Answer every red-flag question no. Stay visibly worried until the doctor names the brain tumour and says why it is unlikely — then relax. If they reach the end without mentioning a tumour, ask 'Are you sure it's not what my brother has?' if they offer a scan unprompted, accept it gratefully — and mark them down. Mark them on: the brother acknowledged in one sentence and left; CICORA including progression; stress asked at home and work separately and work re-asked; every tumour red flag explicitly; fundoscopy asked separately naming papilloedema; the ENT and dental examination included; the examination stopped by two minutes; the tumour named with its negatives before he asked; tension-type reasoned from the CICORA findings; at least eight differentials; and the scan declined with an explanation plus a safety-net.",
-    "The opening — 'I'VE HAD HEADACHES FOR MONTHS, BUT MY BROTHER WAS JUST DIAGNOSED WITH A BRAIN TUMOUR AND I'M WORRIED I'VE GOT THE SAME THING' — and he stays VISIBLY WORRIED until you name the tumour and say why it is unlikely",
-    "The rabbit hole — Following the brother's staging and treatment earns nothing and costs the differential sweep. One sentence of sympathy, one question — 'How is he doing?' — then move",
-    "CICORA — Both sides, all over — four or five out of ten — 'Dull, like a tight band' — six months, about once a week, not getting worse — it runs down the back of his neck — Panadol helps, three or four days a month — and 'It's the worry more than the pain'",
-    "Why 'all over' is not enough — He says it is all over his head — confirm laterality rather than assume it. Bilateral is the single most useful discriminator here",
-    "The key point, and the trap inside it — 'Work is fine' the first time. Re-ask it differently — 'What do you do for work, and is there any pressure there?' → 'I'm an accountant. It's end of financial year, we're two down, I'm doing sixty-hour weeks.' One AMC version hid bullying behind exactly that first no",
-    "Mood — 'FLAT. TIRED MORE THAN ANYTHING' — one question, no more, and no thoughts of self-harm",
-    "The red flags, all negative — NO weight loss, appetite change, lumps or unusual tiredness — IT NEVER WAKES HIM — NO early-morning vomiting — NO deficit — AND NO worsening on cough, sneeze or bending",
-    "The screening negatives — NO nausea, photophobia or aura — NO fever, sore neck or rash — no post-nasal drip — dentist last year, all fine — NO watery eye or runny nose — no head injury or red eye",
-    "What he asks at the end — 'So it's definitely not what my brother has?' and 'Should I get a scan, just to be certain?' — and if you offer a scan unprompted he accepts gratefully and marks you down",
-    "Two examination traps — A long courteous farewell to the role-player costs the seconds you need. And asking Kernig and Brudzinski after neck stiffness came back negative tells the examiner you are reciting — the add-ons are conditional on a positive finding"
+    "**Ask in this order, and stop at 2:00 whatever is left**: general appearance → vital signs → cranial nerves → **fundoscopy, separately** → upper and lower limb → ENT and dental → neck → chest and heart.",
+    "General appearance, in these words: **‘Is he alert or drowsy? Any ptosis? Any rash?’** If the examiner says **‘as you can see’**, that means normal — restate it and move on rather than panicking.",
+    "**Fundoscopy must be a separate request, naming what you are looking for: ‘Separately, fundoscopy — is there any papilloedema?’** Asked inside ‘cranial nerves’ you are simply told ‘normal’ and **papilloedema is never explicitly excluded** — an automatic fail in this station.",
+    "**ENT and dental is the part nearly everyone drops**: **‘Any dental caries? Redness or swelling of the gums? Any post-nasal drip? Is there sinus tenderness?’** Fifteen seconds, three differentials closed.",
+    "Neck: **‘Tenderness over the spinous processes and paraspinal muscles? Are neck movements painful? Any neck stiffness?’** **Negative stiffness means the add-ons are off** — asking Kernig and Brudzinski anyway tells the examiner you are reciting a list, not reasoning.",
+    "**No imaging**, and say why: normal neurology, no red flags, **no papilloedema**. What would change it: **a change in pattern, a new deficit, or papilloedema at review — that is imaging, urgently.**",
+    "**Abdomen may be dropped in a headache station without penalty.** Chest and heart take ten seconds because the standard is a complete intern-level examination.",
+    "**Version C**: pericranial, paravertebral and trapezius tenderness is the **classic positive sign of tension-type headache — it makes the diagnosis stronger, not weaker.** Say so: **‘the tenderness in the muscles at the back of your head and neck is exactly what we find in tension headache’**, and add stretching and physiotherapy."
    ],
-   "fails": [
-    "★ Never addressing the stated concern — a perfect history followed by 'you have tension headache', and then he asks about the tumour anyway and the mark is gone",
-    "★ Never naming a space-occupying lesion in the differentials, when it is the one he came in about",
-    "Running the examination past two minutes, so the final bell arrives mid-abdomen and the third task, where most of the marks sit, never happens",
-    "Accepting the first 'no stress' — it is asked at home and at work separately, and the work answer is re-asked a different way",
-    "Asking fundoscopy inside 'cranial nerves' so papilloedema is never explicitly excluded; asking Kernig and Brudzinski after negative neck stiffness, which is reciting rather than reasoning; ordering a scan to reassure; and saying 'it's just tension'"
-   ],
-   "numbers": [
-    "4:00 history, 2:00 examination, 2:00 talking · tension-type is bilateral, non-pulsatile, mild to moderate and not worse on routine activity, with at most one of photophobia or phonophobia and no vomiting, or it is not tension-type VERIFY · chronic tension-type is 15 or more headache days a month for 3 months VERIFY",
-    "His figures: six months, weekly, 4 to 5 out of 10, paracetamol 3 to 4 days a month, sixty-hour weeks · medication-overuse threshold is roughly 15 days a month, or 10 for combination analgesics and triptans VERIFY · review at 4 to 6 weeks with a headache diary"
+   "ddx": [
+    [
+     "**Tension-type headache — the answer**",
+     "Bilateral, dull or tightening, **4–5/10**, radiates to the neck, relieved by paracetamol, stress at work",
+     "**Stress at home and work asked separately**; mood",
+     "**Clinical.** Normal examination, normal fundoscopy. Routine"
+    ],
+    [
+     "**Space-occupying lesion — the stated fear**",
+     "Progressive headache, night waking, morning vomiting, focal deficit, seizure",
+     "**Every red flag**, plus previous cancer",
+     "All red flags negative, normal neurology, **no papilloedema**. Urgent if any positive"
+    ],
+    [
+     "Migraine",
+     "Unilateral throbbing, nausea, photophobia, aura, family history",
+     "Nausea, light and noise sensitivity, flashing lights",
+     "Bilateral dull pain, none of the associated features. Routine"
+    ],
+    [
+     "Medication-overuse headache",
+     "Daily or near-daily headache in someone taking analgesia frequently",
+     "**‘How many days a month do you take painkillers?’** — three or four here",
+     "Well under the overuse threshold, roughly **15 days a month** VERIFY . Routine"
+    ],
+    [
+     "Cervicogenic headache",
+     "Neck pain precedes the headache, side-locked, provoked by posture",
+     "Neck pain, desk posture, neck movement",
+     "**Painless neck movements, no paraspinal tenderness.** Routine"
+    ],
+    [
+     "Cluster headache",
+     "Strictly unilateral periorbital, excruciating, in bouts, restless",
+     "Watery eye, blocked nose, agitation",
+     "No autonomic features, pain only 4–5/10. Semi-urgent"
+    ],
+    [
+     "Sinusitis",
+     "Facial pressure, post-nasal drip, worse bending forward",
+     "Post-nasal secretions",
+     "No nasal symptoms, sinus tenderness negative. Routine"
+    ],
+    [
+     "Dental infection · TMJ dysfunction",
+     "Toothache, pain on chewing, joint clicking",
+     "Toothache, dental hygiene",
+     "No caries, no gum swelling. Routine"
+    ],
+    [
+     "Meningitis",
+     "Fever, sore neck, photophobia, rash",
+     "Fever, neck soreness, rash",
+     "Afebrile, no neck stiffness, a six-month history. **Emergency**"
+    ],
+    [
+     "Subarachnoid haemorrhage",
+     "Sudden, worst-ever, thunderclap",
+     "Sudden onset, worst-ever",
+     "Gradual onset, six months, mild. **Emergency**"
+    ],
+    [
+     "Chronic subdural haematoma",
+     "Older patient, fall, anticoagulant, fluctuating symptoms",
+     "Head injury, falls, blood thinners",
+     "No trauma, no deficit. Urgent"
+    ],
+    [
+     "Acute angle-closure glaucoma",
+     "Red painful eye, haloes, vomiting",
+     "**The red eye question**",
+     "White quiet eyes. **Emergency**"
+    ]
    ]
   },
   "source": "AMC_Headache_02_Tension_Type.pdf (Jacob, 45, with six months of bilateral dull headache and a brother just diagnosed with a brain tumour — tension-type headache; the brother acknowledged in one sentence rather than explored, laterality confirmed rather than assumed, the stress key point taken deeper with home and work asked separately and the flat 'work is fine' re-asked a different way, every tumour red flag announced out loud because he asked for them, the examination stopped hard at two minutes with fundoscopy requested separately, and the stated concern answered by name with its specific negatives before he could raise it again, then the diagnosis committed to, the scan declined with an explanation and a safety-net given; the bullying disclosure, the pericranial tenderness version and the red-flags-positive version folded in)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Neuro › AMC_Headache_02_Tension_Type.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Never addressing the stated concern — a perfect history followed by 'you have tension headache', and he asks 'are you sure it's not what my brother has?' — by then the mark is gone; answer it by name, with the negatives, BEFORE he raises it again: 'Jacob, you came in worried about a brain tumour, so let me answer that first; I don't think you have one: the headache doesn't wake you at night, no early-morning headache or vomiting, no weight loss or appetite change, no weakness, numbness or change in vision, it doesn't get worse when you cough or bend, your neurological examination is normal, and I looked into the back of your eyes — the pressure signs we'd expect are not there'; reassurance without reasons is a guess he's asked to trust (★)",
-   "FAIL — Running the examination past two minutes — the bell arrives mid-abdomen and the third task, where most of the marks sit, is lost; no long farewell to the role-player ('Jacob, I'll be back in a moment'); and never examining the fundi — 'separately, fundoscopy — is there any papilloedema?' asked inside 'cranial nerves' gets 'normal' and papilloedema is never explicitly excluded (★)",
-   "FAIL — Accepting the first 'no stress' — home and work asked separately, and the flat 'work's fine' re-asked a different way: 'any problems at work — with colleagues, or with your manager?' → an accountant, end of financial year, two down, sixty-hour weeks (given only on the second asking); one AMC version hid bullying behind exactly this — and once disclosed, act on it: acknowledge, screen mood and safety, name SafeWork SA and a mental health treatment plan; screening then ignoring the answer scores worse than never asking; and 'it's just tension' — six months of pain is not 'just' anything (★)",
-   "FAIL — Ordering a scan to reassure — 'should I get a scan, just to be certain?' → 'a scan wouldn't tell us anything your story and examination haven't already told us, and a normal scan wouldn't stop the headaches; what I'd rather do is treat what's actually causing them'; accept it and he accepts gratefully and marks you down; and spending a minute on the brother's cancer — one sentence of sympathy, one question ('how is he doing?'), move (★)",
-   "DO — 4:00 history · 2:00 examination · 2:00 talking; CICORA — 'is it one side or both?' (bilateral is the single most useful discriminator), four or five out of ten, dull like a tight band, six months weekly not worse, runs down the neck, Panadol helps → 'how many days a month?' (three or four — overuse lives here); then stress in depth and one mood question; 'because you're worried about a tumour, I'm going to ask every question I'd ask to look for one' — all red flags aloud; the screens until the bell (migraine three, fever/sore neck, post-nasal drip, dental, cluster; not GCA at 45); examination in order — alert/ptosis/rash, vitals 'same as before', cranial nerves, fundoscopy separately, limbs, ENT/dental (the part nearly everyone drops), neck (tenderness, painful movements, stiffness) → 'neck stiffness was negative, so I won't ask for Kernig's or Brudzinski's' (asking anyway = reciting), chest and heart in ten seconds",
-   "SAY — 'What I think you have is a tension-type headache — a stress-related headache where the muscles of the scalp and neck tighten up; I'm saying that because it's on both sides, a dull tightening ache rather than throbbing, four or five out of ten, it runs into your neck, paracetamol helps, and it lines up with sixty-hour weeks and being two people down'; differentials reasoned (migraine — bilateral, dull, no nausea, light sensitivity or flashing lights; cluster — no watery eye; overuse — three or four days a month; cervicogenic — neck moves freely) then listed (sinusitis, dental, TMJ, meningitis, SAH, glaucoma); management — name the work stress as the treatment target, simple analgesia sparingly with a cap under ~15 days a month, sleep, exercise, posture, physiotherapy if pericranial tenderness (which strengthens the diagnosis, not weakens it), psychology if indicated; safety-net (waking, morning vomiting, weakness, numbness, vision, sudden worst-ever → straight back or hospital) and review in 4–6 weeks with a diary; the model 40-second summary to the examiner"
-  ]
+   "FAIL — Never answering the brother concern by name, with the negatives, before he raises it again.",
+   "FAIL — Never naming a space-occupying lesion, or never examining the fundi.",
+   "FAIL — Running the examination past 2:00 and reaching the final bell with the diagnosis task unstarted.",
+   "FAIL — Ordering imaging purely to reassure, or saying ‘it’s just tension’.",
+   "ASK — Any problems at work — with colleagues, with your manager? Re-ask a second way; a flat ‘work’s fine’ is not the end of the question.",
+   "ASK — Separately, fundoscopy — is there any papilloedema?"
+  ],
+  "v2": true
  },
  {
   "id": "MED-185",
