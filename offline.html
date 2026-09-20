@@ -24608,9 +24608,8 @@ const EMBEDDED_CARDS = [
  {
   "id": "MED-90",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "General practice, Wallaroo. Four tasks in eight minutes — examination begins at 4:00, management at 7:00. Observations from the examiner at the door (online: 'I'm taking you through to the treatment room to check your observations').",
   "stem": [
    "Mary Ellis, 25, is 20 weeks pregnant. She has come in because she has been feeling unwell for the past few days. First pregnancy; antenatal care so far uncomplicated."
   ],
@@ -24620,132 +24619,225 @@ const EMBEDDED_CARDS = [
    "Explain your most likely diagnosis and your differential diagnoses to the patient",
    "Explain your management plan to the patient"
   ],
-  "time": "8 minutes: observations first, one sentence · empathic sentence · ★ offer the word FEVERISH — she won't volunteer it · fever block: measured, chills, medication · urinary upper and lower: dysuria, frequency, haematuria, nausea/vomiting, ★ flank pain — site and radiation only · sexual health with a permission sentence · other infection: throat, cough, headache/neck, travel · ★ pregnancy-specific: vision, swelling, headache (pre-eclampsia) · thirst and polyuria separately (GDM) · jaundice, dark urine, pale stools, itch (cholestasis/AFLP) · palpitations/SOB (anaemia) · obstetric close — tightenings, fluid/bleeding, movements · ★ allergies BEFORE naming an antibiotic · 4:00 examination as one run: findings not regions, four vitals again, ★ fundal height, uterine tenderness, fetal heart · ★ 'is there any renal angle tenderness?' · dipstick — leucocytes and nitrites · 6:00 pyelonephritis with reasons; the baby question in one sentence; differentials LISTED not explained · 7:00 ★ ED today, admission, IV antibiotics, IV fluids, culture first.",
+  "findings": [
+   [
+    "FOUR TASKS IN EIGHT MINUTES — the clock is the station",
+    "History 4 min → examination 2 min → diagnosis and differentials 1 min → MANAGEMENT 1 min. A candidate scoring 7, 7, 7 WHO NEVER REACHES MANAGEMENT FAILS. A candidate scoring 4, 4, 4, 4 PASSES. The moment you read FOUR TASKS on the door, decide to move faster than usual and PROTECT THE LAST TWO MINUTES"
+   ],
+   [
+    "ASK FOR OBSERVATIONS AT THE DOOR",
+    "Normally you would NOT open an unwell case with a stability check. You do it here BECAUSE THE DIFFERENTIAL LIST IS GENUINELY DANGEROUS AND SHE IS PREGNANT. Eight seconds, and it reads as clinical judgement. Online there is no examiner — say it to the patient: 'I'm going to take you through to the treatment room first so we can check your observations'"
+   ],
+   [
+    "The findings",
+    "T 38.7 · HR 108 · BP 110/70 MAINTAINED · RR 18 · SpO2 98% · FLUSHED, MILDLY DEHYDRATED, alert, no jaundice, no rash. Throat normal · chest clear · heart sounds dual. Abdomen: MILD SUPRAPUBIC TENDERNESS · RIGHT RENAL ANGLE TENDERNESS POSITIVE · no RUQ tenderness · no organomegaly"
+   ],
+   [
+    "THE UTERUS — three questions, ten seconds",
+    "FUNDAL HEIGHT 20 cm, CONSISTENT WITH DATES · UTERUS NON-TENDER · FETAL HEART RATE 145. These are the difference between a candidate who examined A WOMAN and one who examined A PREGNANT WOMAN. Fundal height larger or smaller than dates matters; A TENDER UTERUS RAISES CHORIOAMNIONITIS OR ABRUPTION; NORMAL FETAL HEART RATE IS 110–160"
+   ],
+   [
+    "The dipstick — ask for it BY NAME",
+    "'I'd like a URINE DIPSTICK. I'M LOOKING FOR LEUCOCYTES AND NITRITES.' Result: LEUCOCYTES +++ · NITRITES POSITIVE · BLOOD ++ · protein trace · glucose negative"
+   ],
+   [
+    "VERSION A versus VERSION B",
+    "VERSION A: RIGHT FLANK PAIN RADIATING TOWARDS THE GROIN — looks like pyelonephritis from the history. VERSION B: SUPRAPUBIC PAIN ONLY, low central abdomen — LOOKS LIKE SIMPLE CYSTITIS. IN BOTH, RENAL ANGLE TENDERNESS IS POSITIVE AND THE DIAGNOSIS IS UNCHANGED"
+   ],
+   [
+    "THE RULE THAT DECIDES VERSION B",
+    "RENAL ANGLE TENDERNESS ON EXAMINATION OVERRIDES THE SITE OF PAIN THE PATIENT DESCRIBED. Hearing suprapubic pain, deciding it is cystitis, and stopping asking is the trap"
+   ],
+   [
+    "What she asks, and the answers to have ready",
+    "'IS THE BABY GOING TO BE ALL RIGHT?' → 'That's exactly what I want to check. TREATING THIS QUICKLY IS THE BEST THING WE CAN DO FOR YOUR BABY, and I'll listen to the baby's heartbeat as part of my examination.' 'DO I REALLY NEED TO GO TO HOSPITAL?' → DO NOT SOFTEN IT"
+   ],
+   [
+    "The rest of the history findings",
+    "Feverish with CHILLS for a few days, GETTING WORSE · PARACETAMOL UNHELPFUL · VOMITED THREE OR FOUR TIMES · BURNING AND FREQUENCY. NO discharge, NO rash, NO sore throat, NO cough, NO headache, NO travel · NO visual symptoms, NO swelling · NO jaundice, NO itch · BABY MOVING NORMALLY"
+   ],
+   [
+    "She has almost certainly NOT measured her temperature",
+    "'No, I haven't measured it, I JUST FEEL HOT' — the answer is almost always no. ASK ANYWAY: THE FEVER BLOCK IS WHAT LICENSES YOU TO LEAD WITH INFECTION. Without it your differential list LOOKS MEMORISED RATHER THAN DERIVED"
+   ]
+  ],
+  "findingsLabel": "Four tasks in eight minutes — the uterus, the dipstick, and the sign that overrides the pain",
+  "must": [
+   "FAIL — Never reaching the management task. The bell goes on your fourth differential.",
+   "FAIL — Discharging her on oral antibiotics.",
+   "FAIL — Downgrading to cystitis in Version B because the pain is suprapubic.",
+   "FAIL — Not assessing the fetus: no fundal height, uterine tenderness or fetal heart rate.",
+   "ASK — Is there any renal angle tenderness?",
+   "ASK — Any allergies to antibiotics, and what happened?"
+  ],
   "back": {
-   "dx": "Acute pyelonephritis at 20 weeks: 3–4 days hot and shivery with rigors last night, worsening, paracetamol useless; dysuria and frequency, no visible haematuria; vomited 3–4 times; right flank/back pain radiating to the groin (Version B: low central suprapubic pain — the diagnosis is unchanged when renal angle tenderness is positive). Pregnancy-specific screen negative: no visual blurring, swelling, headache (pre-eclampsia); no thirst/polyuria (GDM); no jaundice, dark urine, pale stools, itch (cholestasis/AFLP); no palpitations/SOB (anaemia); no tightenings, fluid, bleeding; baby moving; pregnancy vitamins only; no allergies. Examiner: alert, flushed, mildly dehydrated; BP 110/70, HR 108, RR 18, ★ T 38.7; throat/chest/heart normal; mild suprapubic tenderness, no RUQ tenderness, no organomegaly; ★ fundal height 20 cm consistent with dates, uterus non-tender, FHR 145; ★ right renal angle tenderness POSITIVE; dipstick leucocytes +++, nitrites +, blood ++, protein trace. To Mary: 'pyelonephritis — an infection in your kidney: burning, going more often, fever, vomiting, tender over your kidney, urine test showing infection'; 'dangerous for the baby?' → 'it can be, which is exactly why we treat it properly and quickly — today is the best thing for both of you'. Differentials LISTED in 25 s: pre-eclampsia, gestational diabetes, other infections (STIs incl. herpes and HIV, throat, chest, meningitis), the liver conditions of pregnancy (cholestasis, acute fatty liver), appendicitis, renal stone, anaemia. Management, the four things first: ★ ED today, expect admission, IV antibiotics + IV fluids ('too serious to treat with tablets at home'), MSU for culture before antibiotics; then oral switch once afebrile 24–48 h, 10–14 days total, test-of-cure culture 1–2 weeks after, obstetric team checks the baby; 'do I have to go?' → sepsis and preterm labour risks; 'safe for the baby?' → yes, well-studied antibiotics. Safety-net: worse, shaking chills, can't keep fluids down, tightenings, bleeding, fluid, reduced movements → straight back.",
+   "dx": [
+    "**ACUTE PYELONEPHRITIS IN PREGNANCY — ascending bacterial infection of the renal pelvis and parenchyma, most often ESCHERICHIA COLI, in a woman whose URETERS ARE DILATED BY PROGESTERONE AND COMPRESSED BY THE GRAVID UTERUS.** That urinary stasis is why ascending infection is **both MORE COMMON and MORE SEVERE in pregnancy.**",
+    "**THE DISCRIMINATING ISSUE: REACHING THE MANAGEMENT TASK, AND OPENING IT WITH ADMISSION FOR INTRAVENOUS ANTIBIOTICS.** **The station is scored TASK BY TASK. A beautiful history, a complete examination and a polished differential list followed by the bell scores highly on three domains and ZERO on the fourth — and fails.**",
+    "**THE COROLLARY: DO NOT REASON YOUR DIFFERENTIALS ALOUD. LISTING THEM IS THE TASK. EXPLAINING EACH ONE IS A CHOICE TO SPEND YOUR MANAGEMENT TIME ON SOMETHING YOU WERE NOT ASKED TO DO.** **Cap the list at TWENTY-FIVE SECONDS — time it — and DO NOT ADD A REASON TO ANY ITEM.**",
+    "**SAY THESE FOUR FIRST AND YOU HAVE PASSED THE MANAGEMENT TASK: 1 REFER TO THE EMERGENCY DEPARTMENT AND ADMIT · 2 INTRAVENOUS ANTIBIOTICS · 3 INTRAVENOUS FLUIDS · 4 SEND A URINE MICROSCOPY AND CULTURE BEFORE THE FIRST DOSE. Everything else is bonus, said only if the clock allows.**",
+    "**The history must be driven by A PREGNANCY-SPECIFIC DIFFERENTIAL LIST, not a generic tiredness mnemonic — that is where candidates who know the answer still lose the diagnostic domain.** **MUST-NOT-MISS, SAID OUT LOUD: PRE-ECLAMPSIA · CHORIOAMNIONITIS · ACUTE FATTY LIVER OF PREGNANCY · APPENDICITIS · SEPSIS. Naming these is worth marks even though none is the answer.**",
+    "**CORRECTION — the lecture calls pre-eclampsia 'a little too early' at 20 weeks. TWENTY WEEKS IS THE DEFINITIONAL THRESHOLD, so it is LEGITIMATELY ON THE LIST FROM TODAY ONWARDS, not prematurely.**",
+    "**CORRECTION — the lecture attributes more renal stones in pregnancy to progesterone. PROGESTERONE-RELATED BILIARY STASIS DOES INCREASE GALLSTONES; the incidence of RENAL CALCULI IS NOT MEANINGFULLY RAISED — although urinary stasis makes AN EXISTING STONE MORE LIKELY TO OBSTRUCT AND BECOME INFECTED. Asking about haematuria remains correct.**",
+    "**ANTIBIOTICS: empirical IV CEFTRIAXONE 1 g DAILY, or CEFAZOLIN 2 g 8-HOURLY. Oral switch once AFEBRILE AND STABLE FOR 24–48 HOURS — CEFALEXIN 500 mg 6-HOURLY or AMOXICILLIN-CLAVULANATE 875/125 12-HOURLY, directed by sensitivities. TOTAL 10–14 DAYS, counting IV and oral together.** VERIFY.",
+    "**NOT IN PREGNANCY: TRIMETHOPRIM, a FOLATE ANTAGONIST, avoid in the first trimester · NITROFURANTOIN, which DOES NOT REACH RENAL TISSUE SO IT DOES NOT TREAT PYELONEPHRITIS AT ALL, and is avoided at term · QUINOLONES and TETRACYCLINES, contraindicated · NSAIDs FROM 20 WEEKS ONWARDS · gentamicin only on specialist advice.**",
+    "**TEST-OF-CURE URINE MCS ONE TO TWO WEEKS AFTER FINISHING — PREGNANCY IS ONE OF THE FEW SITUATIONS WHERE IT IS REQUIRED — then MONTHLY CULTURE for the remainder of the pregnancy.** **STARTING ANTIBIOTICS WITHOUT A CULTURE: pregnancy is an ABSOLUTE INDICATION to send one first.** **MedSTAR 1300 13 12 33 · PATS · Wallaroo Hospital with obstetric escalation to the WCH or Lyell McEwin.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Before I begin, could I have her observations — BP, pulse, RR and temperature?' → 110/70, 108, 18, 38.7 · 'Hello Mary, I'm sorry to hear you've not been well — questions, examination, then a plan together. Tell me what's been happening' → 'I'm worried about the baby' → acknowledge"
+     "**AT THE DOOR: 'before I start, could you give me her observations, please? BLOOD PRESSURE, PULSE, RESPIRATORY RATE AND TEMPERATURE.'**"
     ],
     [
-     "0:45",
-     "★ 'Can you describe it — are you tired and low in energy, sleepy, or feeling feverish?' → hot then shivery · onset (3–4 days), constant, worse, better/worse · fever block: measured? chills? (badly, last night) taken anything, helped? (Panadol, no)"
+     "0:10",
+     "**Introduce and SIGNPOST ONCE — then do not re-signpost between blocks, you do not have the seconds.**"
+    ],
+    [
+     "0:30",
+     "**BLOCK 1 — CONVERT VAGUE INTO SPECIFIC, and the fourth question of the consultation is the one that matters: 'are you feeling TIRED AND LOW IN ENERGY, are you feeling SLEEPY, OR ARE YOU FEELING FEVERISH?'** Then **when did it start · constant or coming and going · getting worse · anything better or worse.**"
+    ],
+    [
+     "1:15",
+     "**BLOCK 2 — THE FEVER QUESTIONS: HAVE YOU MEASURED YOUR TEMPERATURE · ANY CHILLS OR SHIVERS · have you taken anything for it, AND DID IT HELP?**"
     ],
     [
      "1:35",
-     "Urinary: burning/pain passing urine (yes) · frequency (constantly) · blood (no) · nausea/vomiting (3–4×) · abdominal pain · ★ 'any pain in your side or back, around your kidneys — where exactly, and does it travel?' → right flank to groin (site + radiation, then MOVE)"
+     "**'I'm going to ask a series of quick questions now, and MOST OF THEM WILL BE A SIMPLE YES OR NO.' CYSTITIS: any burning or pain passing urine · passing urine MORE OFTEN · ANY BLOOD IN YOUR URINE?**"
     ],
     [
-     "2:20",
-     "'Can I ask a few confidential questions about sexual health? active? condoms? genital rash/ulcers? discharge? lumps or night sweats?' → husband, no condoms, nothing · other infection: sore throat/coryza/cough, headache/stiff neck, travel"
+     "1:50",
+     "**PYELONEPHRITIS: any NAUSEA OR VOMITING · any tummy pain · ANY PAIN IN YOUR SIDE OR BACK, AROUND WHERE YOUR KIDNEYS ARE?** Then **WHERE EXACTLY, AND DOES IT GO ANYWHERE — site and radiation only, you do not have time for a full pain history.**"
+    ],
+    [
+     "2:10",
+     "**STI, with permission: are you sexually active at the moment · do you use condoms · ANY RASH OR ULCERS in the genital area · ANY VAGINAL DISCHARGE? HIV AND SYSTEMIC: any LUMPS OR BUMPS anywhere · any NIGHT SWEATS?**"
+    ],
+    [
+     "2:30",
+     "**OTHER INFECTION: any sore throat, runny nose or cough · any HEADACHE OR STIFF NECK · any travel recently?**"
+    ],
+    [
+     "2:45",
+     "**PRE-ECLAMPSIA: any BLURRING OF VISION OR SEEING SPOTS · any SWELLING of legs, hands or face · any BAD HEADACHE · ANY RIGHT UPPER ABDOMINAL PAIN?**"
     ],
     [
      "3:00",
-     "★ Pregnancy-specific: 'blurring of vision? swelling of legs, hands or face? bad headache?' · 'more thirsty? passing large amounts of urine?' (separately) · 'yellowing, darker urine, pale stools, itching?' · 'racing heart or breathlessness on exertion?'"
+     "**GESTATIONAL DIABETES, as TWO SEPARATE QUESTIONS: have you been MORE THIRSTY than usual · are you PASSING LARGE AMOUNTS of urine?** **Polyuria and frequency are different questions.**"
     ],
     [
-     "3:30",
-     "Obstetric and medication close: 'how has the pregnancy been? tightenings, fluid or bleeding from below? baby moving normally? regular medicines? ★ any allergies to antibiotics?' (ask NOW, not after naming a drug)"
+     "3:10",
+     "**LIVER: any YELLOWING of skin or eyes · is your urine DARKER · are your stools PALE · ANY ITCHING, ESPECIALLY OF YOUR HANDS AND FEET? ANAEMIA: any racing of your heart or breathlessness on exertion?**"
+    ],
+    [
+     "3:25",
+     "**OBSTETRIC BACKGROUND: how many weeks are you · any problems in the pregnancy so far · ANY TIGHTENINGS, ANY FLUID OR BLEEDING FROM BELOW · IS THE BABY MOVING NORMALLY?**"
+    ],
+    [
+     "3:45",
+     "**MEDICATIONS AND ALLERGIES — ASKED NOW, BEFORE YOU PROPOSE AN ANTIBIOTIC, NOT AFTER: any regular medicines · ANY ALLERGIES TO ANTIBIOTICS, AND WHAT HAPPENED?**"
     ],
     [
      "4:00",
-     "★ One continuous run: general — alert/drowsy, jaundice, rash, dehydration · all four vitals again · throat — swelling/redness · respiratory — air entry, added sounds · CVS — S1 S2, murmurs · abdomen — inspection; palpation: suprapubic tenderness? RUQ tenderness? hepatomegaly? · ★ 'fundal height? is the uterus tender? fetal heart rate?' → 20 cm, non-tender, 145 · ★ 'is there any renal angle tenderness?' → right positive · ★ 'urine dipstick — leucocytes and nitrites' → leucocytes +++, nitrites +, blood ++, protein trace · no full pelvic — the clock killer"
+     "**EXAMINATION — NAME THE FINDING, NEVER THE REGION. General appearance: alert or drowsy, jaundice, rash, dehydration. ALL FOUR VITAL SIGNS AGAIN — she may be septic. Throat: swelling or redness. Chest: air entry equal, added sounds. Heart sounds and murmurs.**"
     ],
     [
-     "6:00",
-     "Pyelonephritis named + reasons · 'is the baby all right?' → one sentence, then move · differentials LISTED, 25 s, not explained: pre-eclampsia, GDM, other infections (STIs incl. herpes/HIV, throat, chest, meningitis), cholestasis and acute fatty liver, appendicitis, renal stone, anaemia — 'your picture fits the kidney infection best'"
+     "4:45",
+     "**ABDOMEN: any bruising, swelling or distension · ANY SUPRAPUBIC TENDERNESS · ANY RIGHT UPPER QUADRANT TENDERNESS · any hepatosplenomegaly?** Then **THE UTERUS: FUNDAL HEIGHT · IS THE UTERUS TENDER · FETAL HEART RATE?**"
     ],
     [
-     "7:00",
-     "★ 'I'm going to send you to the emergency department today, and I expect you'll be admitted — antibiotics through a drip and fluids through a drip; a kidney infection in pregnancy is too serious to treat with tablets at home. We'll send a urine sample for culture before the antibiotics start.' · 'do I really have to? work tomorrow' → 'untreated, this can spread to the bloodstream and bring on early labour' · 'safe for the baby?' → well-studied antibiotics · if the clock allows: oral switch when afebrile, 10–14 days, test-of-cure, obstetric review · safety-net · summary"
+     "5:15",
+     "**THE SPECIAL TEST: 'IS THERE ANY RENAL ANGLE TENDERNESS?' Then THE DIPSTICK BY NAME.** **Pelvic ONLY if time — INSPECTION ONLY, six words, or skip it. A full speculum and bimanual at 5:30 is the commonest way to lose management.**"
+    ],
+    [
+     "5:45",
+     "**READ THE FINDINGS BACK OUT LOUD, then NAME PYELONEPHRITIS with the reasons — burning, frequency, fever, vomiting, TENDERNESS OVER YOUR KIDNEY, and the urine test.** In Version B add: **'your pain has been LOW DOWN, which often points to a bladder infection. But on examination YOU'RE TENDER OVER YOUR KIDNEY, with a fever and vomiting — that combination tells me THE INFECTION HAS GONE UP FROM THE BLADDER TO THE KIDNEY.'**"
+    ],
+    [
+     "6:30",
+     "**THE DIFFERENTIAL LIST, NAMED NOT EXPLAINED, 25 SECONDS.** Then **MANAGEMENT: emergency department today, admission, ANTIBIOTICS THROUGH A DRIP AND FLUIDS THROUGH A DRIP, culture before the antibiotics start, oral switch once stable, 10–14 days total, THE REPEAT URINE TEST A WEEK OR TWO AFTER FINISHING, and OBSTETRIC REVIEW OF THE BABY.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Could I have her observations — blood pressure, pulse, respiratory rate and temperature?' / ★ 'Are you tired and low in energy, or are you feeling feverish?' / 'Have you measured it? Any chills? Did anything help?'",
-    "'Any burning or pain when you pass urine? Are you going more often? Any blood?' / ★ 'Any pain in your side or back, around your kidneys? Where exactly, and does it travel?'",
-    "'Any blurring of vision? Any swelling of the legs, hands or face?' / 'More thirsty than usual? Passing large amounts of urine?' / 'Any yellowing of your skin, dark urine, pale stools or itching?'",
-    "'How has the pregnancy been? Any tightenings, any fluid or bleeding from below? Is the baby moving normally? Any regular medicines? Any allergies to antibiotics?'",
-    "★ 'Examiner, what is the fundal height, is the uterus tender, and what is the fetal heart rate?' / ★ 'Is there any renal angle tenderness?' / 'Urine dipstick — I am looking for leucocytes and nitrites.'",
-    "★ 'Mary, I think you most likely have pyelonephritis — that is an infection in your kidney. I say that because you have burning when you pass urine, you're going more often, you have a fever, you've vomited, and on examination you're tender over your kidney with a urine test showing infection.'",
-    "'Is that dangerous for the baby?' → 'It can be, which is exactly why we treat it properly and quickly. Treating it today is the best thing we can do for both of you. Let me finish telling you what else I considered, and then what I want to do.'",
-    "'I also thought about pre-eclampsia, a blood pressure condition of pregnancy; gestational diabetes; other infections — sexually transmitted infections including herpes and HIV, an infection in the throat, in the chest, and meningitis; the liver conditions of pregnancy, cholestasis and acute fatty liver; appendicitis; a kidney stone; and anaemia. Your story and examination fit the kidney infection best.' (listed, not explained)",
-    "★ 'I am going to send you to the emergency department today, and I expect you will be admitted. You will need antibiotics through a drip and fluids through a drip, because a kidney infection in pregnancy is too serious to treat with tablets at home. We will send a urine sample for culture before the antibiotics start.' / 'Do I really have to go in? I've got work tomorrow' → 'I would not ask if it were not important. Untreated, this can spread to the bloodstream and can bring on early labour. Both are far less likely if we treat it properly from today.'",
-    "'Are the antibiotics safe for the baby?' → 'Yes. We choose antibiotics that are well studied and safe in pregnancy, and we avoid the ones that are not.' / ★ 'Because you are pregnant we repeat the urine test after treatment to be certain it has cleared.' / 'If you feel worse, get shaking chills, cannot keep fluids down, notice tightenings, bleeding or fluid from below, or the baby moving less — go straight back to hospital, do not wait.'"
-   ],
    "pefe": [
-    "Role-player: Mary, 25, 20 weeks, first baby, part-time at the Wallaroo supermarket, husband; non-smoker, stopped alcohol; pregnancy vitamins only; no allergies; antenatal care normal. Unwell, a bit tearful; warms if acknowledged, flat and short if not. Does NOT volunteer the word fever — waits to be asked. Hidden agenda: frightened for the baby, worried about work — 'is the baby going to be all right?' at ~6 min if never asked; pushes back once on hospital 'do I really have to? I've got work tomorrow', accepts with a reason",
-    "Examiner: alert, flushed, mildly dehydrated, no jaundice/rash · BP 110/70, HR 108, RR 18, T 38.7 · throat normal · chest clear · HS dual · no distension · mild suprapubic tenderness · no RUQ tenderness, no organomegaly · fundal height 20 cm, uterus non-tender, FHR 145 · right renal angle tenderness POSITIVE · dipstick leucocytes +++, nitrites +, blood ++, protein trace",
-    "Antibiotics: ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly; oral switch cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY TG · NOT in pregnancy: trimethoprim first trimester; nitrofurantoin (no renal tissue penetration — does not treat pyelonephritis at all); quinolones; tetracyclines; NSAIDs from 20 weeks · oral switch after 24–48 h afebrile · total 10–14 days · test-of-cure culture 1–2 weeks · renal ultrasound if no better at 48–72 h",
-    "Version B — 'the pain is low down, in the middle': keep the upper-tract questions; to the examiner ask suprapubic AND renal angle tenderness → positive → 'low pain often points to the bladder, but fever, vomiting and tenderness over your kidney tell me it has travelled up — I'm treating it as the more serious of the two' — deciding it's cystitis after a positive renal angle = automatic fail",
-    "Harder — septic (BP 86/50, HR 128, T 39.4, drowsy): 'haemodynamically unstable — call for help, left lateral tilt, high-flow oxygen, two large-bore cannulas, blood cultures and lactate, fluid bolus, IV antibiotics within the hour, sepsis pathway, urgent retrieval via MedSTAR 1300 13 12 33 with obstetric consultation in parallel' · Harder — declines admission: name the risk plainly, explore the barrier (childcare, work, transport — solve it), keep her engaged, review tomorrow morning, explicit safety-net; neither cave nor refuse to negotiate",
-    "SA: Wallaroo Hospital → WCH/Lyell McEwin obstetric unit; SA Perinatal Practice Guidelines; PATS; MedSTAR 1300 13 12 33; TIS 131 450"
+    "**NEVER NAME A REGION — NAME THE FINDING. 'I'd like to examine the abdomen' earns you 'what are you looking for?' and costs FIFTEEN SECONDS. 'On palpation of the abdomen, is there any SUPRAPUBIC TENDERNESS?' earns you an answer.**",
+    "**Do not sacrifice management for a pelvic examination. You have ALREADY EXCLUDED discharge and rash on history. IF YOU MENTION THE PELVIC EXAMINATION AND NEVER MENTION MANAGEMENT, YOU FAIL.**",
+    "**Investigations: URINE MCS BEFORE THE FIRST DOSE · FBE, UEC, CRP · BLOOD CULTURES IF FEBRILE OR RIGORS · paracetamol for fever and pain · an antiemetic for vomiting · OBSTETRIC REVIEW for fetal wellbeing and assessment for preterm labour.**",
+    "**What results change management: RESISTANT ORGANISM → change the antibiotic, DO NOT WAIT FOR CLINICAL FAILURE · NOT IMPROVING AT 48–72 HOURS → RENAL TRACT ULTRASOUND looking for OBSTRUCTION, PYONEPHROSIS OR A RENAL ABSCESS · POSITIVE BLOOD CULTURES → longer IV course and infectious diseases · UTERINE TENDERNESS OR FETAL TACHYCARDIA → CHORIOAMNIONITIS UNTIL PROVEN OTHERWISE · PROTEINURIA WITH RAISED BLOOD PRESSURE → a SECOND diagnosis, investigate for pre-eclampsia in parallel.**",
+    "**Escalate for: SYSTOLIC BELOW 90 · PULSE ABOVE 120 · RIGORS · CONFUSION · OLIGURIA · UTERINE TENDERNESS · FETAL HEART RATE OUTSIDE 110–160 · REGULAR CONTRACTIONS · severe headache with visual disturbance · jaundice.**",
+    "**If she resists admission, DO NOT SOFTEN IT: 'the reason I won't treat this with tablets at home is that a kidney infection in pregnancy CAN SPREAD INTO THE BLOODSTREAM AND CAN BRING ON EARLY LABOUR. Both are far less likely if we treat it properly from today. IS THERE SOMETHING AT HOME I CAN HELP YOU ORGANISE so that going in is possible?'**",
+    "**After the episode: consider SUPPRESSIVE PROPHYLAXIS — for example CEFALEXIN 250 mg AT NIGHT — after a SECOND episode.** VERIFY."
    ],
-   "fails": [
-    "Sending her home on oral antibiotics ★",
-    "Never reaching the management task ★",
-    "Deciding it is cystitis after hearing renal angle tenderness is positive ★",
-    "Never assessing the baby — no fundal height, uterine tenderness, fetal heart ★",
-    "Exploring 'unwell' for ninety seconds without offering the word feverish; a full pain history when site and radiation are enough",
-    "Naming regions instead of findings; requesting a full pelvic examination (the clock killer); asking allergies after naming an antibiotic",
-    "Explaining each differential — the commonest reason candidates never reach management; a full ABCDE at the door; skipping the empathic sentence"
-   ],
-   "numbers": [
-    "20 weeks · T 38.7 · HR 108 · fundal height 20 cm · FHR 145 (normal 110–160) · four tasks: examination at 4:00, management at 7:00",
-    "Ceftriaxone 1 g IV daily or cefazolin 2 g IV 8-hourly → oral cefalexin 500 mg 6-hourly or amoxicillin–clavulanate 875/125 mg 12-hourly VERIFY · total 10–14 days · oral switch 24–48 h afebrile · test-of-cure 1–2 weeks · renal US if no better 48–72 h",
-    "Avoid: trimethoprim (T1) · nitrofurantoin (useless in pyelonephritis) · quinolones · tetracyclines · NSAIDs from 20 weeks",
-    "Pregnancy differential list: infection · pre-eclampsia · GDM · liver (cholestasis, AFLP) · anaemia · + appendicitis, stone",
-    "MedSTAR 1300 13 12 33 · SA Perinatal Practice Guidelines · TIS 131 450"
+   "ddx": [
+    [
+     "**Acute pyelonephritis in pregnancy** — the answer",
+     "**Fever, RIGORS, VOMITING, FLANK PAIN, dysuria, frequency**",
+     "**RENAL ANGLE TENDERNESS; dipstick LEUCOCYTES AND NITRITES**",
+     "**Urine MCS; ADMIT FOR IV ANTIBIOTICS** — ADMIT TODAY"
+    ],
+    [
+     "Cystitis",
+     "Dysuria, frequency, suprapubic pain, **NO fever or vomiting**",
+     "**SUPRAPUBIC tenderness only, RENAL ANGLE NEGATIVE**",
+     "Urine MCS; oral antibiotics — **STILL NEEDS A TEST OF CURE** — same day"
+    ],
+    [
+     "**Pre-eclampsia**",
+     "**HEADACHE, VISUAL DISTURBANCE, OEDEMA, EPIGASTRIC OR RIGHT UPPER QUADRANT PAIN**",
+     "**BP 140/90 OR ABOVE with PROTEINURIA**",
+     "**BP, urine protein-creatinine ratio, bloods for HELLP.** **20 weeks IS the definitional threshold — it is on the list from today** — EMERGENCY"
+    ],
+    [
+     "**Chorioamnionitis**",
+     "**FEVER WITH UTERINE TENDERNESS, OFFENSIVE DISCHARGE, FETAL TACHYCARDIA**",
+     "**Ask about RUPTURED MEMBRANES and discharge**",
+     "**Obstetric review — THIS IS A DELIVERY DECISION** — EMERGENCY"
+    ],
+    [
+     "**Acute fatty liver of pregnancy**",
+     "**Nausea, vomiting, malaise, JAUNDICE, right upper quadrant pain**",
+     "**Jaundice, HYPOGLYCAEMIA, CONFUSION**",
+     "**LFT, GLUCOSE, coagulation profile; URGENT obstetric referral** — EMERGENCY"
+    ],
+    [
+     "Intrahepatic cholestasis of pregnancy",
+     "**ITCH, ESPECIALLY PALMS AND SOLES, usually WITHOUT a rash**",
+     "Jaundice, dark urine, pale stools",
+     "**LFT and SERUM BILE ACIDS** — urgent"
+    ],
+    [
+     "**Appendicitis**",
+     "**MIGRATORY pain; IN PREGNANCY THE APPENDIX IS DISPLACED UPWARDS**",
+     "**Right-sided tenderness HIGHER THAN EXPECTED, guarding**; sterile pyuria on dipstick",
+     "**Surgical review; ultrasound. DO NOT ANCHOR ON THE URINE** — EMERGENCY"
+    ],
+    [
+     "Gestational diabetes",
+     "**Thirst, POLYURIA, fatigue, glycosuria**",
+     "**Ask thirst and polyuria as SEPARATE questions from frequency**",
+     "Oral glucose tolerance test at 24–28 weeks"
+    ],
+    [
+     "**Renal or ureteric calculus**",
+     "**COLICKY LOIN-TO-GROIN pain, MACROSCOPIC HAEMATURIA**",
+     "**MAY COEXIST WITH INFECTION — a dangerous combination**",
+     "**Ultrasound; urology if OBSTRUCTED AND INFECTED** — urgent"
+    ],
+    [
+     "STI · anaemia of pregnancy · other infection",
+     "Discharge, genital ulcer or rash, new partner; or fatigue, exertional breathlessness, palpitations; or sore throat, cough, neck stiffness, travel",
+     "**FIRST-EPISODE GENITAL HERPES CAN PRESENT AS SYSTEMIC ILLNESS**; pallor; one screening question per system",
+     "Swabs, first-pass urine NAAT, serology. FBE and ferritin. Directed by whichever screen is positive"
+    ]
    ]
   },
   "source": "Pyelonephritis_Pregnancy_2_Case_Tasks_Script_Notability.pdf (Mary Ellis, 25, 20 weeks, unwell — acute pyelonephritis in pregnancy)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Unwell › Pyelonephritis_Pregnancy_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Alert, FLUSHED, mildly dehydrated; no jaundice or rash"
-   ],
-   [
-    "Observations",
-    "BP 110/70 · HR 108 · RR 18 · T 38.7"
-   ],
-   [
-    "Throat, chest, heart",
-    "Throat normal; chest clear; heart sounds dual"
-   ],
-   [
-    "Abdomen",
-    "No distension; MILD SUPRAPUBIC TENDERNESS; no RUQ tenderness, no organomegaly"
-   ],
-   [
-    "Uterus",
-    "Fundal height 20 cm; uterus NON-TENDER; FHR 145"
-   ],
-   [
-    "Renal angle",
-    "Right renal angle tenderness positive"
-   ],
-   [
-    "Urine dipstick",
-    "LEUCOCYTES +++ · NITRITES + · blood ++ · protein trace"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Sending her home on oral antibiotics — an automatic fail whatever else you did; 'I'm going to send you to the emergency department today; I expect you'll be admitted for antibiotics through a drip and fluids through a drip — a kidney infection in pregnancy is too serious to treat with tablets at home'; urine culture before the antibiotics (★)",
-   "FAIL — Never reaching the management task — four tasks in eight minutes: examination at 4:00, management at 7:00; explaining each differential is 'the station killer' — list them in twenty-five seconds (pre-eclampsia, gestational diabetes, other infections incl. STIs, throat, chest, meningitis, the liver conditions of pregnancy, appendicitis, stone, anaemia) and move (★)",
-   "FAIL — Never assessing the baby — fundal height, uterine tenderness, fetal heart rate: ten seconds, and the difference between examining a woman and examining a pregnant woman; in the history: tightenings, fluid or bleeding, baby moving normally (★)",
-   "FAIL — Deciding it's cystitis after hearing renal angle tenderness is positive — in Version B the pain is suprapubic and the examiner still gives you the renal angle: 'the infection has travelled up from the bladder to the kidney, and I'm treating it as the more serious of the two'; ask 'is there any renal angle tenderness?' by name (★)",
-   "DO — Convert 'unwell' by offering the word: 'tired and low in energy, sleepy, or feeling feverish?' — she will not volunteer fever, and the word licenses infection as the lead; then the fever block (measured, chills, medication), urinary upper and lower (site and radiation only — no full pain history), the pregnancy-specific screen (vision, swelling, headache; thirst and polyuria separately; jaundice and itch), sexual health with permission, allergies asked in the history before you name an antibiotic",
-   "DO — Observations at the door in one sentence (not a full ABCDE), the empathic sentence for the visibly worried actor, findings not regions ('I'd like to examine the abdomen' gets 'what are you looking for?'), dipstick for leucocytes and nitrites, skip the full pelvic (the clock killer); answer 'is the baby all right?' in one sentence then move; 'do I really have to go in?' — untreated it can spread to the bloodstream and bring on early labour; ten to fourteen days, test-of-cure culture, safety-net"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-91",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, regional South Australia. Counselling station — the assessment is already done and summarised in the stem; no history task. 'Can I get temazepam?' arrives when you ask for her concerns at the start, or at minute seven if you never ask. Cross-reference MED-57 (sleep history version).",
   "stem": [
    "Jane Miller, 17, Year 12 student, presenting with tiredness over two to three months. Your completed assessment: recent examinations with considerable stress; bed after 1 am, up at 6:30; easy-going personality; mood normal, no anxiety disorder; three to four cups of coffee every night while studying. No weight loss, fever, night sweats, lumps or travel; no snoring or witnessed apnoeas; no medications, alcohol or drugs; periods regular and not heavy. Examination and vital signs normal."
   ],
@@ -24754,95 +24846,214 @@ const EMBEDDED_CARDS = [
    "Counsel her regarding your management plan",
    "Answer the patient's questions"
   ],
-  "time": "8 minutes. 30 s: open question, empathy, ★ 'anything you were hoping we'd sort out today?' (the temazepam line — park it explicitly), ★ 'is it all right if I explain what I think, then we make a plan together?' · Task 1, four blocks, three minutes: NAME it (sleep restriction) · DEFINE it (8–10 h needed; she gets ~5) · REASON it (exam trigger, pattern persisting, caffeine) · SAY WHAT YOU EXCLUDED · teach-back · Task 2, eight headings one sentence each: hygiene · diary · ★ CBT-I first line · caffeine · relaxation · lifestyle · named organisation · review 4 weeks + conditional bloods/sleep study · Task 3, ★ VALIDATE → DECLINE with ≥2 reasons → SUBSTITUTE (not second best) → CONTRACT (four weeks, a date) · safety-net incl. mood/self-harm · driving.",
+  "findings": [
+   [
+    "THE STEM IS DELIBERATELY ENORMOUS — DO NOT RE-TAKE THE HISTORY",
+    "ALMOST ALL OF IT IS NEGATIVE FINDINGS, placed there SO THAT YOU CAN CONFIDENTLY CLOSE DOWN the other causes of tiredness. EVERYTHING ON THE CARD IS YOURS TO QUOTE BACK AS EVIDENCE"
+   ],
+   [
+    "The arithmetic that IS the diagnosis",
+    "BED AFTER 1 am, UP AT 6:30 = ABOUT FIVE HOURS. AN ADOLESCENT NEEDS EIGHT TO TEN. Say the subtraction out loud — it is the whole explanation"
+   ],
+   [
+    "The caffeine, as chemistry not as a lifestyle failing",
+    "THREE TO FOUR CUPS EVERY NIGHT while studying. CAFFEINE HALF-LIFE IS ABOUT 5 HOURS (range 3–7), so ABOUT HALF IS STILL CIRCULATING AT BEDTIME. Four evening cups is roughly 380 mg. Instant coffee 60–100 mg a cup · espresso shot 60–120 mg · 250 mL energy drink about 80 mg"
+   ],
+   [
+    "Negatives handed to you in the stem",
+    "NO weight loss · NO fever or night sweats · NO lumps · NO travel · NO SNORING OR WITNESSED PAUSES · NO medications · NO alcohol or other drugs · PERIODS REGULAR AND NOT HEAVY · MOOD NORMAL, NO ANXIETY DISORDER · EXAMINATION AND VITAL SIGNS NORMAL"
+   ],
+   [
+    "THE QUESTION THE STATION IS BUILT AROUND",
+    "'CAN I HAVE TEMAZEPAM? MY FRIEND TAKES IT AND IT HELPS HER.' And the follow-ups: 'JUST A FEW, FOR EXAMS' · 'MY FRIEND'S DOCTOR GAVE IT TO HER' · 'SO THERE'S NOTHING WRONG WITH ME?'"
+   ],
+   [
+    "THE ONE QUESTION THAT SEPARATES THE MIMIC",
+    "'ON SCHOOL HOLIDAYS, WHEN YOU CAN SLEEP WHENEVER YOU LIKE, DO YOU SLEEP WELL AND WAKE UP FEELING FINE?' YES, ONCE I CATCH UP → INSUFFICIENT SLEEP. 'I sleep well BUT ONLY IF I GO TO BED AT 3 AND GET UP AT 11' → DELAYED SLEEP-WAKE PHASE DISORDER, managed with TIMED MORNING BRIGHT LIGHT and a gradual schedule shift, NOT hygiene alone"
+   ],
+   [
+    "VERSION B — she is already taking them",
+    "TAKING HER MOTHER'S TEMAZEPAM NIGHTLY FOR THREE WEEKS, or buying it online, and wants a script of her own. Becomes a RISK AND DEPENDENCE consultation: HOW MUCH, HOW LONG, SOURCE, other sedatives, DRIVING, mood and self-harm. DO NOT STOP ABRUPTLY — supervised taper with her regular GP"
+   ],
+   [
+    "VERSION C — the escalation",
+    "BMI 34 · LOUD SNORING · MOTHER REPORTS SHE STOPS BREATHING · falls asleep in class. NOW there is a positive feature of a specific sleep disorder, and POLYSOMNOGRAPHY IS GENUINELY INDICATED"
+   ],
+   [
+    "VERSION — the third party",
+    "MOTHER ATTENDS AND DOES THE TALKING: 'just give her something so she can sleep before her exams.' ADDRESS JANE DIRECTLY, OFFER PART OF THE CONSULTATION ALONE, decline warmly, explain to both"
+   ],
+   [
+    "CONSENT AND CONFIDENTIALITY AT 17",
+    "In South Australia a 16- or 17-YEAR-OLD CONSENTS TO THEIR OWN TREATMENT AS AN ADULT WOULD. Say it once, with its limit: 'what we talk about STAYS BETWEEN US, UNLESS I'M WORRIED YOU OR SOMEONE ELSE IS AT RISK OF SERIOUS HARM — and if that happened I'D TELL YOU FIRST'"
+   ]
+  ],
+  "findingsLabel": "The stem's negatives, the arithmetic, and the request the station is built around",
+  "must": [
+   "FAIL — Prescribing the benzodiazepine, including 'a few just for exams'.",
+   "FAIL — Refusing with no alternative. Clinically right, communicatively fatal.",
+   "FAIL — No mood or safety screen, because the stem said mood was normal.",
+   "FAIL — 'There's nothing wrong with you' — dismissive, and untrue.",
+   "ASK — How has your mood been in yourself? Any thoughts of harming yourself?",
+   "ASK — On holidays, if you could sleep whenever you liked, would you sleep well?"
+  ],
   "back": {
-   "dx": "Chronic insufficient sleep — behaviourally induced sleep restriction — in a 17-year-old: ~5 hours on school nights (bed 1–2 am, up 6:30), studies and scrolls in bed, 3–4 instant coffees each evening (last ~11 pm, ~380 mg, half still circulating at bedtime), set off by exam stress and persisting after it; catches up to midday at weekends and feels much better (the pattern that says 'not enough sleep', not blood or thyroid); mood normal, no self-harm, no snoring/apnoeas/sleep attacks. 'Nothing wrong with me?' → 'there is something wrong — it just isn't a disease'. Management aim: improve quantity and quality of sleep — (1) sleep hygiene: fixed bed and wake time seven days, bed for sleep only (no phone/laptop/study/TV), dark quiet cool, out of bed if not asleep in 20–30 min, warm shower/milk; (2) sleep diary two weeks (bedtime, sleep onset, hours, quality/10); (3) ★ CBT-I — first line in Australia, more effective than hypnotics and durable — psychologist referral or Australian online programmes; cognitive half (the 'if I don't sleep I'll fail' worry) + behavioural half (stimulus control, relaxation, time-in-bed matching); (4) caffeine: half-life ~5 h, nothing after early afternoon, cut the total, expect a headache; (5) relaxation — mindfulness, breathing, PMR, yoga; (6) lifestyle — daytime exercise, regular meals, no alcohol/smoking/vaping, screens off; (7) named: Sleep Health Foundation fact sheets, headspace (12–25); (8) review 4 weeks with the diary → if no better TSH, FBE, ferritin → sleep study if another disorder is suggested. Temazepam: validate (exhausted, worked for a friend) → decline with reasons (dependence/tolerance/withdrawal, next-day drowsiness for driving and study, not recommended under 18, doesn't fix the cause) → substitute (CBT-I works better and lasts) → contract (four weeks, then we look together). 'Just a few for exams?' → exam time is when grogginess costs most; two weeks is enough to start dependence. 'So you're not going to help me?' → 'I'm not doing the thing that helps for two weeks and causes a problem for two years — everything else starts today.' Safety-net: mood drops, hopelessness, self-harm thoughts, sudden daytime sleep attacks, snoring/apnoeas → sooner. Driving: don't drive sleepy, pull over (P-plater).",
+   "dx": [
+    "**CHRONIC INSUFFICIENT SLEEP — formally BEHAVIOURALLY INDUCED INSUFFICIENT SLEEP SYNDROME. THE SLEEP IS NORMAL IN QUALITY; THERE IS NOT ENOUGH OF IT.** **Use 'SLEEP RESTRICTION' or 'SLEEP DEPRIVATION' with the patient and KEEP THE FORMAL NAME FOR THE EXAMINER.**",
+    "**THE DISCRIMINATING ISSUE: DECLINING THE BENZODIAZEPINE IN A WAY THAT LEAVES HER HOLDING A BETTER PLAN.** **TWO FAILURE MODES SIT EITHER SIDE OF THE PASS. The first is the doctor who PRESCRIBES. The second, and MUCH COMMONER, is the doctor who REFUSES CORRECTLY AND STOPS THERE — 'no, we don't use those, they're addictive.' CLINICALLY RIGHT AND COMMUNICATIVELY FATAL: the patient leaves with nothing, and the examiner marks A FAILURE OF SHARED DECISION-MAKING.**",
+    "**THE PASS IS A TRADE, NOT A REFUSAL. FOUR MOVES: VALIDATE the request · DECLINE WITH REASONS · SUBSTITUTE immediately with the thing that works better · CONTRACT with a date.** **NEVER END ON THE REFUSAL — the sentence after 'no' must be 'WHAT I'M OFFERING INSTEAD WORKS BETTER.'**",
+    "**The reasons, in her language: DEPENDENCE — your body gets used to it, it stops working at the same dose, we increase it, and stopping gives WITHDRAWAL, WORSE SLEEP THAN BEFORE, anxiety, shakiness · NEXT-DAY DROWSINESS, which matters for your DRIVING and your STUDY · NOT RECOMMENDED IN SOMEONE YOUR AGE · and MOST IMPORTANTLY, IT DOESN'T FIX THE CAUSE. You'd still be going to bed at one with four coffees in you.**",
+    "**COVERAGE IS THE CURRENCY. A counselling station is scored on HOW MANY MANAGEMENT COMPONENTS YOU WERE SEEN TO COVER, not on how beautifully you covered one. Missing ONE heading is not a fail; MISSING FOUR IS. Say each one, briefly, and move on.**",
+    "**DO NOT RUSH THE EXPLANATION. The stem gives it THREE MINUTES — that is a FLOOR, NOT A CEILING. A candidate who says 'you've got a sleep problem, now let's talk management' in twenty seconds HAS SKIPPED THE REASONING, THE DEFINITION AND THE EXCLUSIONS — THREE SEPARATELY MARKED THINGS.**",
+    "**SAY WHAT YOU EXCLUDED, AND ON WHAT EVIDENCE: 'you haven't lost weight, you have NO FEVERS OR NIGHT SWEATS, NO LUMPS, NO TRAVEL, your PERIODS ARE NORMAL, you DON'T SNORE OR STOP BREATHING at night, your MOOD IS FINE, and your examination and observations today are ALL NORMAL. THAT IS WHAT LETS ME BE CONFIDENT.'**",
+    "**CBT-I IS FIRST LINE IN AUSTRALIA — MORE EFFECTIVE THAN SLEEPING TABLETS, AND THE BENEFIT LASTS AFTER YOU STOP. Refer to a psychologist under a GP MENTAL HEALTH TREATMENT PLAN; supervised Australian ONLINE programmes if appointments are hard to reach.**",
+    "**CORRECTION — 'we don't have melatonin in Australia' is NOT CORRECT. PROLONGED-RELEASE MELATONIN 2 mg IS REGISTERED HERE for primary insomnia, but ONLY IN PEOPLE AGED 55 AND OVER. In adolescents it is OFF-LABEL, mainly for CIRCADIAN RHYTHM DISORDERS, under specialist advice.** If challenged: **'it would be off-label at 17, and IT IS NOT THE TREATMENT FOR BEHAVIOURALLY INDUCED INSUFFICIENT SLEEP.'** VERIFY.",
+    "**Hypnotic benzodiazepines: EXCEPTIONAL CIRCUMSTANCES ONLY, LOWEST EFFECTIVE DOSE, NO MORE THAN ABOUT 2–4 WEEKS INCLUDING THE TAPER, and NOT RECOMMENDED UNDER 18. South Australia has REAL-TIME PRESCRIPTION MONITORING.** VERIFY. **Kids Helpline 1800 55 1800 · headspace 12–25 · Sleep Health Foundation · healthdirect 1800 022 222.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Hello Jane, how have you been feeling since we last spoke?' · 'I'm sorry — that sounds miserable, especially in Year 12' · ★ 'before I start explaining — anything you were hoping we'd sort out today, or anything you've been worried about?' → temazepam → 'a really good question and I'll answer it properly — can I first tell you what I think is going on?' · ★ 'is it all right if I explain, and then we make a plan together?'"
+     "**Open with a QUESTION, even though the task says 'counsel': 'how have things been since we last spoke — tell me how you've been feeling?'** It buys rapport, gives you a sentence to build on, and **is where the hidden agenda surfaces.**"
     ],
     [
-     "0:30",
-     "1A NAME: 'the most likely cause is a sleep problem — there are breathing types like sleep apnoea, body-clock types, nightmare disorders; yours is sleep restriction, or sleep deprivation — your sleep itself is fine, there just isn't enough of it'"
+     "0:20",
+     "**THE HIGHEST-VALUE SENTENCE IN THE STATION, in the first ninety seconds: 'BEFORE I START EXPLAINING ANYTHING, IS THERE ANYTHING IN PARTICULAR YOU WERE HOPING WE'D SORT OUT TODAY — OR ANYTHING YOU WERE WORRIED ABOUT?'**"
+    ],
+    [
+     "0:40",
+     "**Empathy, then INVITATION: 'that's miserable when you're trying to get through Year 12. IS IT ALL RIGHT IF WE TALK ABOUT WHAT I THINK IS GOING ON, AND THEN MAKE A PLAN TOGETHER?'**"
     ],
     [
      "1:00",
-     "1B DEFINE: 'enough good-quality sleep is a basic requirement — concentration, memory, mood, appetite, immune system; at your age eight to ten hours; bed after one, up at half six, is about five'"
+     "**NAME IT: 'the most likely cause is a SLEEP PROBLEM. Sleep problems come in several types — BREATHING ones like sleep apnoea, BODY-CLOCK ones, and NIGHTMARE disorders. In your case I think it's SLEEP RESTRICTION: YOUR SLEEP ITSELF IS FINE, THERE JUST ISN'T ENOUGH OF IT.'**"
     ],
     [
-     "1:30",
-     "1C REASON: 'it started when your exams started — stressed, up late; sleep problems are often triggered by a stressful stretch and keep going after it, because the pattern is set; and three or four coffees in the evening is still working at bedtime' · 'I'm fine on weekends' → 'that's exactly what we see when the problem is not enough sleep rather than something in the blood or thyroid'"
+     "1:25",
+     "**DEFINE IT: 'enough good-quality sleep is a BASIC REQUIREMENT for your body and mind to work properly — CONCENTRATION, MEMORY, MOOD, APPETITE, IMMUNE SYSTEM. Someone your age needs EIGHT TO TEN HOURS. Going to bed after one and getting up at half past six GIVES YOU ABOUT FIVE.'**"
     ],
     [
-     "2:15",
-     "1D EXCLUDED: 'no weight loss, fevers, sweats, lumps, travel; normal periods; no snoring or breathing pauses; mood fine; normal examination — that's what lets me be confident' · 'nothing wrong with me?' → 'there is something wrong — it just isn't a disease' · 'anaemic? mum said bloods' → not needed now; bloods at review if no better · teach-back: 'if a friend asked tonight what the doctor said?'"
+     "1:55",
+     "**REASON IT — THE MARKS LIVE HERE: 'it started WHEN YOUR EXAMS STARTED. Sleep problems are VERY OFTEN TRIGGERED BY A STRESSFUL PERIOD AND THEN KEEP GOING AFTER THE STRESS HAS PASSED, because THE PATTERN IS SET. The coffee is part of it too — three or four cups in the evening IS STILL WORKING IN YOUR BODY AT BEDTIME.'**"
     ],
     [
-     "3:00",
-     "Aim stated · 2A hygiene, the specifics · 2B diary two weeks · 2C ★ 'CBT for insomnia — in Australia first line, more effective than sleeping tablets, keeps working after you stop; psychologist, or an Australian online programme' · 'what would they do?' → cognitive half / behavioural half"
+     "2:30",
+     "**SAY WHAT YOU EXCLUDED, item by item, from the stem's negatives.** Then **TEACH-BACK: 'just so I know I've explained it clearly — IF A FRIEND ASKED YOU TONIGHT WHAT THE DOCTOR SAID, WHAT WOULD YOU TELL THEM?'**"
     ],
     [
-     "4:45",
-     "2D caffeine: 'the big one for you — hangs around five hours; nothing caffeinated after early afternoon; cut the total; expect a headache' (defensive 'I need it' → no lecture) · 2E relaxation · 2F lifestyle · 2G ★ Sleep Health Foundation, headspace — named · 2H review 4 weeks with the diary → bloods (thyroid, FBE, iron) → sleep study if indicated"
+     "3:15",
+     "**Open the plan with its aim: 'our main aim is to improve the QUALITY AND THE AMOUNT of your sleep. THERE ARE SEVERAL PARTS AND I'LL GO THROUGH THEM ONE AT A TIME.'**"
     ],
     [
-     "6:00",
-     "★ Temazepam, four moves verbatim: VALIDATE · DECLINE — dependence/tolerance/withdrawal, next-day drowsiness (driving, study), not recommended under 18, doesn't fix the cause · SUBSTITUTE — 'not second best; works better and lasts' · CONTRACT — 'four weeks with the diary, then we look at it together' · push 1 'my friend's doctor gave it to her' · push 2 'just a few for exams?' → answered · 'so you're not going to help me?' → answered"
+     "3:25",
+     "**1 SLEEP HYGIENE — NAME SPECIFICS, NOT THE PHRASE: SAME BEDTIME AND SAME WAKE TIME SEVEN DAYS A WEEK · BED ONLY FOR SLEEP, no phone, laptop, television or study in bed · dark, quiet, cool room, pets out · IF YOU'RE NOT ASLEEP IN TWENTY TO THIRTY MINUTES, GET UP, DO SOMETHING BORING IN DIM LIGHT, come back when sleepy.**"
     ],
     [
-     "7:15",
-     "Safety-net: mood drops, hopeless, thoughts of harming yourself, sudden daytime sleep attacks, snoring/breathing pauses → come sooner · ★ 'don't drive when you feel sleepy — pull over' · summary in one breath · 'anything I've missed?'"
+     "3:55",
+     "**2 SLEEP DIARY for two weeks: each night the time you went to bed; each morning roughly when you fell asleep, HOW MANY HOURS, and QUALITY OUT OF TEN.**"
+    ],
+    [
+     "4:10",
+     "**3 CBT-I, SAID TO BE FIRST LINE and better than tablets, with a psychologist or a supervised online programme. 4 CAFFEINE — THE BIG ONE FOR HER: none after EARLY AFTERNOON, total cut right down, and WARN OF A HEADACHE FOR A FEW DAYS if she drops it quickly.**"
+    ],
+    [
+     "4:40",
+     "**5 RELAXATION: mindfulness, slow breathing, progressive muscle relaxation, yoga — free apps for all of them. 6 LIFESTYLE: exercise in the DAYTIME OR AFTERNOON not late evening · regular meals · NO alcohol, smoking or vaping · SCREENS OFF well before bed.**"
+    ],
+    [
+     "5:10",
+     "**7 NAMED SUPPORT — 'support groups' scores nothing: THE SLEEP HEALTH FOUNDATION fact sheets, and HEADSPACE, the free service for people her age.**"
+    ],
+    [
+     "5:25",
+     "**THE MOOD AND SAFETY SCREEN, one sentence, kindly, EVEN THOUGH THE STEM SAYS MOOD IS NORMAL: 'and how has your mood been in yourself? Any thoughts of harming yourself?'** Then **DRIVING: 'don't drive when you feel sleepy — pull over.'**"
+    ],
+    [
+     "5:50",
+     "**THE TABLET, IN FOUR MOVES: VALIDATE, DECLINE WITH REASONS, SUBSTITUTE, CONTRACT.** **'Give me FOUR WEEKS with the diary and the plan. Come back and we'll look at it together, and if it hasn't worked WE THINK AGAIN — BUT WE THINK AGAIN PROPERLY, NOT BY REACHING FOR A TABLET.'**"
+    ],
+    [
+     "6:45",
+     "**Handle the pushbacks: 'just a few for exams' → 'a tablet during exams is EXACTLY WHEN THE NEXT-DAY GROGGINESS WOULD COST YOU MOST.' 'My friend's doctor gave it to her' → 'DIFFERENT PEOPLE, DIFFERENT SITUATIONS — and I can only prescribe what I think is right FOR YOU.' 'So there's nothing wrong with me?' → 'THERE IS SOMETHING WRONG — IT JUST ISN'T A DISEASE.'**"
+    ],
+    [
+     "7:20",
+     "**PROTECT THE LAST MINUTE: red flags, the conditional escalation — bloods then a sleep study IF she doesn't improve — and THE REVIEW DATE AT FOUR WEEKS WITH THE DIARY, 'and if you're struggling before then, COME EARLIER.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Is there anything in particular you were hoping we'd sort out today?' / ★ 'Is it all right if I explain what I think is going on, and then we make a plan together?'",
-    "★ 'In your case I think it's sleep restriction — your sleep is fine, there just isn't enough of it.' / 'Someone your age needs eight to ten hours.' / 'These problems are often triggered by stress and then keep going after the stress has passed.'",
-    "★ 'I've looked for the other causes and not found them — that's what lets me be confident.' / 'So there's nothing wrong with me?' → 'There is something wrong — it just isn't a disease. Not getting enough sleep is a real problem with real effects and a real treatment. I'm not dismissing it.'",
-    "'Bed for sleep only. If you're not asleep in twenty to thirty minutes, get up, do something boring in dim light, and come back when you feel sleepy.'",
-    "★ 'CBT for insomnia is first line — more effective than sleeping tablets, and it keeps working after you stop.' / 'What will the psychologist actually do?' → 'Two halves. The cognitive half works on the thoughts that keep it going — the \"if I don't sleep I'll fail\" worry that itself keeps you awake. The behavioural half teaches stimulus control, relaxation, and matching your time in bed to the sleep you're actually getting.'",
-    "'Caffeine hangs around about five hours, so four cups in the evening is half still circulating at bedtime. Nothing with caffeine after early afternoon.'",
-    "★ 'I can see why you're asking — you're exhausted and you've heard it worked for someone else. But I don't think a sleeping tablet is the right answer for you. It helps for a short time, but it comes with real problems. The main one is dependence — your body gets used to it, it stops working at the same dose, we end up increasing it, and if you try to stop you get withdrawal: worse sleep than before, anxiety, shakiness. There's next-day drowsiness, which matters for driving and study, and these tablets aren't recommended at your age. And most importantly — it doesn't fix the cause.'",
-    "★ 'What I'm offering instead isn't second best. The psychological treatment works better than the tablets do, and it keeps working after you finish.' / ★ 'Give me four weeks with the diary and the plan. Come back and we'll look at it together — and if it hasn't worked we think again, properly, not by reaching for a tablet.'",
-    "'Just a few, to get through exams?' → 'Exam time is exactly when the next-day grogginess would cost you most, and two weeks is long enough to start the dependence problem. What I can do this week is get the diary going, fix the coffee, and get you a psychology appointment quickly.' / 'So you're not going to help me?' → 'I am helping you — I'm just not doing the thing that would help for two weeks and cause a problem for two years. Everything else on that list I will start today.'",
-    "'Come back sooner if your mood drops, if you feel hopeless or have thoughts of harming yourself, if you start falling asleep suddenly during the day, or if anyone tells you that you snore or stop breathing at night.' / ★ 'And please — don't drive when you feel sleepy. Pull over.'"
-   ],
    "pefe": [
-    "Role-player: Jane, 17, Year 12; mother and younger brother (parents separated 2 y); one supermarket shift/week; P-plates, drives to school; bed 1–2 am, up 6:30, studies on the laptop and scrolls in bed; sleeps till midday at weekends and feels much better; 3–4 instant coffees each evening, last ~11 pm, energy drink before tests; no meds/alcohol/vaping/drugs; periods normal; no snoring/apnoeas/sleep attacks; mood fine, netball, friends, no self-harm. Warm, deflated. Drops the temazepam line if asked concerns in the first two minutes, else at ~7 min; pushes twice ('my friend's doctor gave it to her'; 'just a few for exams?') then accepts if reasons + alternative given; 'so you're not going to help me' if refused flat. Defensive once if lectured about coffee. Asks 'what will the psychologist actually do?' or 'is it just talking?'",
-    "Version B — 'I've been taking Mum's temazepam for three weeks, I just want my own script': thank her; ★ do not stop abruptly — taper with a plan via her regular GP; ask dose, frequency, other sedatives/alcohol, driving afterwards, mood and self-harm; no moralising about the source; real-time prescription monitoring applies in SA VERIFY before naming it",
-    "Version C — 'Mum says I snore loudly and stop breathing; I fall asleep in class every day', BMI 34: OSA — sleep study is now the priority; sleep advice still applies; ★ a sleeping tablet is actively unhelpful (relaxes the airway); cross-ref MED-54/66",
-    "Version D — mother in the room, 'just give her something': acknowledge the worry, explain to both; ★ time alone with Jane ('something I offer everyone your age'); in SA at 17 she consents for herself; confidential unless safety concerns; address Jane by name, look at her, answer her questions to her",
-    "Running out of time: drop the detail, not the headings — 'regular hours, bed for sleep only, a diary, a psychologist for CBT, coffee gone after lunch, daytime exercise, the Sleep Health Foundation sheets, four weeks' — then safety-net; a named heading scores, an unfinished paragraph doesn't",
-    "SA: 16–17-year-olds consent for themselves (Consent to Medical Treatment and Palliative Care Act 1995); headspace 12–25; Kids Helpline 1800 55 1800; healthdirect 1800 022 222; TIS 131 450; psychologist via MHTP; Australian online CBT-I programmes (e.g. This Way Up) VERIFY"
+    "**No examination and no investigations at the desk — the stem gives you a normal examination and normal observations.**",
+    "**Bloods ONLY IF SHE DOES NOT IMPROVE: TSH · FBE AND FERRITIN · EUC and LFT · COELIAC SEROLOGY · blood glucose.** **FERRITIN MATTERS MOST IN A MENSTRUATING ADOLESCENT and is the one the source teaching omits.**",
+    "**CORRECTION — the source promises a sleep study up front. MAKE IT CONDITIONAL. POLYSOMNOGRAPHY IS NOT A SCREENING TEST FOR TIREDNESS: reserve it for a FEATURE OF A SPECIFIC SLEEP DISORDER, or FAILURE TO RESPOND to a properly delivered behavioural programme.**",
+    "**Do not miss: DEPRESSION WITH SUICIDAL IDEATION — tiredness in a 17-year-old is a presentation of depression UNTIL YOU HAVE ASKED · NARCOLEPSY, sleep attacks and CATAPLEXY — 'do your knees ever give way when you laugh?' · OBSTRUCTIVE SLEEP APNOEA, and ASK THE PARENT AS WELL AS THE PATIENT · ANAEMIA with heavy periods and pallor · DROWSY DRIVING in a learner or provisional driver · bullying, abuse or an unsafe home.**",
+    "**Avoid: PRESCRIBING TEMAZEPAM · refusing without explaining and without offering an alternative · 'there is nothing wrong with you' · LECTURING ABOUT THE COFFEE INSTEAD OF EXPLAINING THE MECHANISM · ordering a sleep study reflexively · talking for eight minutes without CHECKING HER UNDERSTANDING.**",
+    "**In Version B, the taper: 'please DON'T STOP THEM SUDDENLY; after three weeks that CAN MAKE YOUR SLEEP AND YOUR ANXIETY WORSE. We'll bring them down slowly, with a plan.' Then how much, how long, WHERE THEY CAME FROM, driving, other sedatives, alcohol, mood and self-harm.**",
+    "**SA: GP Mental Health Treatment Plan for subsidised psychology; in MM5, TELEHEALTH PSYCHOLOGY AND SUPERVISED ONLINE CBT-I MATTER MORE THAN A WAITING LIST · headspace and eheadspace · Kids Helpline 1800 55 1800 · ReachOut · Country Health Connect and PATS · TIS National 131 450.**"
    ],
-   "fails": [
-    "Prescribing or promising a benzodiazepine — including 'just a few for exams' ★",
-    "Refusing with no alternative — 'no, they're addictive', then back to sleep hygiene ★",
-    "Never screening mood and self-harm ★",
-    "No safety-net at all ★",
-    "Finishing Task 1 in twenty seconds — skipping the definition, the reasoning and the exclusions (three separately marked components)",
-    "Four minutes on sleep hygiene and never reaching CBT-I, the review date or a named organisation; 'support groups' unnamed",
-    "Skipping the open question so the agenda surfaces at minute seven; lecturing about the coffee; talking to the mother instead of Jane (Version D)"
-   ],
-   "numbers": [
-    "Adolescent sleep need 8–10 h (adults 7–9) · her school-night sleep ~5 h · out of bed after 20–30 min awake · diary 2 weeks · review 4 weeks",
-    "Caffeine half-life ~5 h (3–7) · none within 6 h of bed · instant 60–100 mg, espresso 60–120 mg, 250 mL energy drink ~80 mg · four evening cups ≈ 380 mg, half on board at bedtime",
-    "Hypnotic benzodiazepines: exceptional circumstances, lowest dose, 2–4 weeks max including taper, not recommended <18 VERIFY · prolonged-release melatonin registered ≥55 y, off-label below VERIFY",
-    "Bloods if no improvement: TSH, FBE, ferritin, EUC, LFT, coeliac serology, BSL · then sleep study if another disorder suggested",
-    "Kids Helpline 1800 55 1800 · headspace 12–25 · healthdirect 1800 022 222 · TIS 131 450 · SA: 16–17 consent for themselves"
+   "ddx": [
+    [
+     "**Chronic insufficient sleep (behaviourally induced)** — the answer",
+     "**Late bedtime, FIXED EARLY WAKE, STRESSED TRIGGER, evening caffeine, CATCH-UP SLEEP ON HOLIDAYS**",
+     "**'How many hours do you ACTUALLY get on a school night?'**",
+     "**CLINICAL DIAGNOSIS. Sleep diary confirms. NO TEST REQUIRED**"
+    ],
+    [
+     "**Delayed sleep-wake phase disorder — the great mimic at 17**",
+     "**CANNOT FALL ASLEEP BEFORE 2–3 am EVEN WHEN RELAXED; SLEEPS NORMALLY IF ALLOWED TO WAKE LATE; lifelong pattern; ADOLESCENT PEAK**",
+     "**'On holidays with no alarm, do you sleep well?'**",
+     "**Diary or actigraphy. TIMED MORNING BRIGHT LIGHT, GRADUAL SCHEDULE ADVANCE, specialist input — NOT hygiene alone**"
+    ],
+    [
+     "**Depression — the one you must not miss**",
+     "**ANHEDONIA, HOPELESSNESS, guilt, appetite or weight change, EARLY MORNING WAKING, withdrawal from friends**",
+     "**'How has your mood been? Still enjoying the things you used to?' THEN ASK ABOUT SELF-HARM**",
+     "**SCREEN EVERY TIME, EVEN WHEN THE STEM SAYS MOOD IS NORMAL. GP Mental Health Treatment Plan, headspace** — SAME DAY IF RISK"
+    ],
+    [
+     "**Iron deficiency anaemia**",
+     "**MENSTRUATING ADOLESCENT, HEAVY PERIODS, pallor, RESTLESS LEGS, PICA, vegetarian diet**",
+     "Periods, diet, pallor, koilonychia",
+     "**FBE AND FERRITIN. Treat and find the cause**"
+    ],
+    [
+     "Hypothyroidism · coeliac disease",
+     "Cold intolerance, weight gain, constipation, goitre; or bloating, **loose or fatty stools**, family history",
+     "'Any change in weight, bowels, skin, or the cold?'",
+     "TSH; **coeliac serology ON A GLUTEN-CONTAINING DIET**"
+    ],
+    [
+     "Glandular fever or chronic infection",
+     "Sore throat, fevers, lymphadenopathy, recent illness",
+     "Fever, lumps, sore throat",
+     "FBE and film, EBV serology; hepatitis and HIV serology if indicated"
+    ],
+    [
+     "**Obstructive sleep apnoea**",
+     "**SNORING, WITNESSED PAUSES, GASPING, morning headache, OBESITY, large tonsils**",
+     "**ASK THE PARENT AS WELL AS THE PATIENT**",
+     "**POLYSOMNOGRAPHY — genuinely indicated here** — refer"
+    ],
+    [
+     "**Narcolepsy**",
+     "**IRRESISTIBLE SLEEP ATTACKS, CATAPLEXY with laughter or anger, SLEEP PARALYSIS, hypnagogic hallucinations**",
+     "**'Do your knees ever give way when you laugh?'**",
+     "**Sleep physician; polysomnography with MULTIPLE SLEEP LATENCY TESTING** — refer"
+    ],
+    [
+     "Substance use or medication effect",
+     "**ENERGY DRINKS, PRE-WORKOUT SUPPLEMENTS, cannabis, stimulants, SEDATING ANTIHISTAMINES**",
+     "**'Anything else you take to STAY AWAKE or to GET TO SLEEP?'**",
+     "Non-judgemental enquiry; cease the culprit"
+    ],
+    [
+     "**Benzodiazepine dependence (Version B)**",
+     "**Already taking a parent's temazepam nightly for weeks, or buying it online**",
+     "**How much, how long, SOURCE, other sedatives, alcohol, DRIVING, mood and self-harm**",
+     "**DO NOT STOP ABRUPTLY — supervised taper with her regular GP. Real-time prescription monitoring applies in SA**"
+    ]
    ]
   },
   "source": "Sleep_Restriction_2_Case_Tasks_Script_Notability.pdf (Jane Miller, 17, Year 12 — sleep restriction and the request for temazepam)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Sleep › Sleep_Restriction_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Prescribing or promising a benzodiazepine — including 'just a few, to get through exams'; exam time is when next-day grogginess costs most, and two weeks is enough to start dependence (★)",
-   "FAIL — Refusing with no alternative — 'no, they're addictive' then back to sleep hygiene fails as surely as prescribing; the four moves verbatim: VALIDATE ('you're exhausted and you've heard it worked for someone') → DECLINE with reasons (dependence, tolerance, withdrawal; next-day drowsiness for driving and study; not recommended at her age; it doesn't fix the cause) → SUBSTITUTE ('what I'm offering isn't second best — it works better and keeps working') → CONTRACT (four weeks with the diary, then we look together); 'so you're not going to help me?' → 'I am — I'm just not doing the thing that helps for two weeks and causes a problem for two years' (★)",
-   "FAIL — Never screening mood and self-harm, and no safety-net — 'come back sooner if your mood drops, if you feel hopeless or have thoughts of harming yourself, if you fall asleep suddenly in the day, or if anyone says you snore or stop breathing'; and 'don't drive when you feel sleepy — pull over' (★)",
-   "FAIL — Skipping the open question and the concerns question in the first two minutes because the task says 'counsel' — the temazepam request surfaces then, or at minute seven with no time to answer it; park it explicitly and come back; 'is it all right if I explain what I think is going on, and then we make a plan together?' is the shared-decision-making mark",
-   "FAIL — Finishing Task 1 in twenty seconds — three minutes, four blocks: name it (sleep restriction — 'your sleep is fine, there just isn't enough of it'), define it (eight to ten hours at her age; bed after one, up at six-thirty is five), reason it (exam stress set the pattern, it persists after the stress, the coffee), and say what you excluded and on what evidence; 'there is something wrong — it just isn't a disease'; teach-back",
-   "FAIL — Four minutes on sleep hygiene and never reaching CBT-I — one sentence per heading: hygiene with specifics (bed for sleep only, up after 20–30 minutes awake), a two-week diary, CBT for insomnia named as first line ('more effective than tablets, and it keeps working after you stop'), caffeine ('hangs around five hours — nothing after early afternoon'), relaxation, lifestyle, a NAMED organisation (Sleep Health Foundation, headspace — 'support groups' scores nothing), review at four weeks, bloods then sleep study only if not improving"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Sleep › Sleep_Restriction_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-92",
@@ -57608,7 +57819,6 @@ const EMBEDDED_CARDS = [
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "History then a spoken mental state examination — three versions, and the instruction on the cover is describe the risk, don't just tick it. 'I'm okay, doctor' is not an answer — RE-OPEN with what have your parents noticed, which converts a denial into a history. At about minute four he snaps at a voice, and the question that scores it is 'Who were you speaking to just then?' and one answer is routinely missed: 'I'm not real, like there's a screen in front of me' is depersonalisation, a separate finding under perception.",
   "stem": [
    "Version A — Alex, a young man, is brought to your clinic by his parents, who say he has been acting strangely. Tasks: take a history — 6 minutes — then present your mental state examination — 2 minutes.",
    "Version B — Bruce: catatonic, brought by his parents. Version C — max: homeless, brought by police, with a homicidal plan against a named public figure. Same tasks in all three."
@@ -57617,90 +57827,122 @@ const EMBEDDED_CARDS = [
    "Take a history — 6 minutes",
    "Present your mental state examination to the examiner — 2 minutes"
   ],
-  "time": "Confidentiality, the open question, then RE-OPEN after the denial · what are your parents worried about, and what have they noticed · then context and substances: how are things at home, do you study or work, still enjoy things, and do you smoke, drink, use cannabis or anything else, and how much · then mood, sleep, appetite and risk, and the risk is taken to its end: have you had thoughts of harming yourself or anyone else, ever tried, any plan now, have you prepared anything, a date, a note · then perceptions and the full delusion set: do you hear, see or feel things others don't; who were you talking to and what does it say; do you feel people are against you; is anyone trying to harm you; any special powers; any guilt; and are thoughts being inserted, withdrawn or broadcast · then insight, orientation and judgement: do you think you might be unwell, where are we, what day and time, who am I, and if there were a fire what would you do · then present the mental state examination, keeping the two sentences that cannot be dropped.",
   "back": {
-   "dx": "A PSYCHOTIC ILLNESS WITH ACTIVE SUICIDAL IDEATION AND A PREVIOUS ATTEMPT — and the task is the mental state examination, with two sentences that must not be dropped: 'Active suicidal ideation with a plan and a previous attempt', and 'Engaging with auditory hallucinations'. The model for Alex, read aloud: 'Appearance: a young man in a dark T-shirt wearing sunglasses indoors and two necklaces, a cross and a sword. Stooped, poor eye contact, withdrawn expression; hair dishevelled by the end. Behaviour: initially uncooperative, then agitated and irritable when he appeared to respond to voices, telling them to be quiet; tapping his forehead, a head tremor and fidgeting. Speech: slow, quiet, monotonous, with long pauses. Emotion: mood good; affect flat, restricted and incongruent. Perception: auditory hallucinations — a single voice; no visual. He also described depersonalisation — a screen between himself and the world. Thought: poverty of ideas. Content: active suicidal ideation with a plan, a previous attempt two years ago, no date or note. Persecutory delusion about his parents; grandiose — he must save the world and everyone is jealous of him. No passivity. Insight impaired. Cognition: alert and oriented. Judgement intact on testing.' The model for Bruce: 'Appearance: a young man in a blue hoodie and glasses, unshaven with unkempt hair, holding his hands in front of his face in a prayer position throughout; no eye contact; stooped; withdrawn. Behaviour: withdrawn and initially uncooperative, cooperative towards the end; catatonic — he did not move for the whole consultation, with posturing of his hands. Speech: slow, quiet and monotonous, mostly monosyllabic, with pauses and perseveration on I slept bad last night. Emotion: mood great; affect blunted, restricted and incongruent. Perception: visual and auditory hallucinations — he sees God, who commands him to save everyone. Thought: loosening of associations. Content: a grandiose delusion that he can save everyone by closing his eyes; a persecutory delusion about his parents; suicide and homicide risk not assessed — I'd assess it now, given the command hallucinations. Insight impaired. Cognition: alert but disoriented to place and person — he thought he was in a park; time not established. Judgement impaired. His catatonia and disorientation need an organic cause excluded.' The model for max: 'Appearance: a man in a dark T-shirt with a headset and glasses, unkempt with a beard; tense and stooped, no eye contact, an anxious, fearful expression; sniffing. Behaviour: uncooperative and increasingly agitated, talking back to a voice; rocking with a head tremor — psychomotor agitation. Speech: normal to fast, low volume, stuttering, mumbling and monosyllabic, with poverty of speech. Emotion: mood on TOP of the world; affect restricted and incongruent. Perception: auditory hallucinations — a voice that agrees with his plan. Thought: poverty of ideas. Content: homicidal ideation with a plan to kill a named public figure, endorsed by the voice, and he wants to leave today to act on it; a persecutory delusion that the fbi is trying to harm him; delusions of reference — the TV and radio talk about him; no suicidal ideation. Insight impaired. Cognition: alert, oriented to place and person; time not answered. Judgement not assessed. He is a serious risk to others.' The variant moments. Bruce gives irrelevant answers — 'Bad. I slept bad last night. I walk': one gentle redirect — 'That sounds hard. When you say you slept badly, what kept you awake?' — then move on and report loosening of associations. Bruce's command hallucination: 'You said God wants you to save people. Does God ever tell you to hurt yourself or anyone else? Do you feel you have to do what he says?' and then the question the lecture's candidate forgot: 'Have you had any thoughts of ending your life?' MAX'S homicidal plan: 'You said you need to kill the president. Tell me more — how would you do it? Do you have anything to do it with? When?' and then: 'I'm worried about the safety of other people. I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in.' and when max mumbles through the fire question: 'I know you're upset, max, and you want to go. I'll be quick. If there were a fire in this room, what would you do?' The examiner's follow-up, what would you do now: 'Alex has active suicidal ideation with a plan, a previous attempt and psychotic symptoms, so he isn't safe to go home. I'd offer voluntary admission; if he declines and meets the criteria, a level 1 inpatient treatment order. I'd arrange an organic screen and urine drug screen, a collateral history from his parents with his consent, and referral to the early psychosis service.'",
+   "dx": [
+    "**PSYCHOSIS — history then MSE, in three versions. A — ALEX, brought by his parents: a single commenting voice, persecutory and grandiose delusions, DEPERSONALISATION, and ACTIVE SUICIDAL IDEATION WITH A PLAN and an attempt two years ago. B — BRUCE: CATATONIC, motionless throughout, command hallucinations from God, disoriented. C — MAX: homeless, brought by police, HOMICIDAL IDEATION WITH A PLAN endorsed by a voice.**",
+    "**'I'm okay, doctor' is not the end of the history — it is the start. 'WHAT HAVE YOUR PARENTS NOTICED?' converts the denial into a story, and it is the single move that makes this station work.**",
+    "**THE SUICIDE LADDER IS SCORED RUNG BY RUNG and stopping at 'yes' loses it: ever had thoughts · EVER TRIED, and when · any thoughts recently · any PLAN · prepared anything, a DATE, a NOTE · and thoughts of harming ANYONE ELSE.** → attempt two years ago, has thought about how, no date and no note.",
+    "**RESPOND TO WHAT YOU SEE. At about four minutes he snaps sideways — 'I told you to shut up when I'm talking to the doctor!' — and the scoring line is 'WHO WERE YOU SPEAKING TO JUST THEN?' Then: what does it say, and DOES IT TELL YOU TO DO ANYTHING.**",
+    "**ASK THE FULL DELUSION SET, not one question: persecutory (anyone trying to harm you) · grandiose (special powers or a mission) · reference (TV or radio talking about you) · guilt · and PASSIVITY — thoughts inserted, withdrawn or broadcast.** → his parents want to harm him; he must save the world; everyone is jealous; no passivity.",
+    "**'Sometimes I think I'm not real — like there's a screen in front of me' is DEPERSONALISATION, and it belongs under PERCEPTION in the MSE. Candidates hear it and let it pass.**",
+    "**INSIGHT IS IMPAIRED — he denies being unwell. Recording it as intact because he answered coherently is a scored error.** **Orientation is intact; judgement on the fire question is intact in Alex.**",
+    "**Alex's MSE, with the two sentences you must not drop: 'ACTIVE SUICIDAL IDEATION WITH A PLAN AND A PREVIOUS ATTEMPT' and 'ENGAGING WITH AUDITORY HALLUCINATIONS'.** Also: sunglasses indoors and two necklaces · agitated and irritable when responding to the voice · slow, quiet, monotonous speech · **affect flat, restricted and INCONGRUENT** with a stated 'good' mood · poverty of ideas.",
+    "**BRUCE: CATATONIC — motionless for the whole consultation with hand posturing · perseveration on 'I slept bad last night' · LOOSENING OF ASSOCIATIONS · visual AND auditory hallucinations of God commanding him · DISORIENTED to place and person (he thought he was in a park).** **Catatonia plus disorientation demands an ORGANIC CAUSE BE EXCLUDED, and risk was never assessed — say you would assess it now, given the command hallucinations.**",
+    "**MAX: explore the homicidal plan exactly as you would a suicide plan — HOW, WITH WHAT, WHEN — then act: 'I'm worried about the safety of other people. I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in.'** **A named public figure plus a plan plus a voice endorsing it is a duty-to-warn situation.**"
+   ],
    "plan": [
     [
      "0:00",
-     "CONFIDENTIALITY, THE OPEN QUESTION, THEN RE-OPEN AFTER THE DENIAL: 'what we discuss is confidential unless there's a risk to you or anyone else. WHAT BRINGS YOU IN TODAY?' → 'my parents think I'm crazy.' → 'WHAT ARE YOUR PARENTS WORRIED ABOUT? WHAT HAVE THEY NOTICED?' (Accepting 'I'm okay' and moving on is the trap — THE RE-OPEN IS WHAT CONVERTS A DENIAL INTO A HISTORY.)"
+     "**Confidentiality with its limit, then the open question — and when he says 'I'm okay', RE-OPEN: 'what have your parents noticed?'**"
     ],
     [
      "1:00",
-     "Context and substances: 'How are things at home? Do you study or work? Still enjoy things? Do you smoke, drink, use cannabis or anything else — how much?' (Do not lecture on safe drinking limits mid-station.)"
+     "**Context and substances: home · work or study · still enjoying things · smoking, alcohol, CANNABIS and how much.** No lectures on safe limits mid-station."
     ],
     [
      "3:00",
-     "Mood, sleep, appetite and risk — and take the risk to its end: 'How's your mood? Sleep? Appetite? Have you had thoughts of harming yourself or anyone else? Ever tried? Any plan now? Prepared anything — a date, a note?' (Stopping at 'Yes' is the trap — the mark is plan, preparation, timing, past attempts and harm to others.)"
+     "**Mood, sleep, appetite — note that 'good' mood with a flat affect is INCONGRUENT.**"
+    ],
+    [
+     "3:30",
+     "**THE RISK LADDER, every rung, plus harm to others: thoughts · ever tried and when · recent thoughts · plan · preparation, date, note.**"
     ],
     [
      "4:00",
-     "Perceptions and the full delusion set: 'Do you hear, see or feel things others don't?' → he snaps at the voice → 'Who were you speaking to just then? What does it say? Does it tell you to do things?' then: 'Do you feel people are against you? Is anyone trying to harm you? Any special powers? Any guilt? Are thoughts being put into or taken out of your mind, or broadcast?' → and catch the screen answer as depersonalisation."
+     "**PERCEPTION — and respond to the moment he snaps at the voice: who were you speaking to · what does it say · does it tell you to do anything.**"
+    ],
+    [
+     "4:40",
+     "**THE FULL DELUSION SET: persecutory · grandiose · reference · guilt · passivity — and CATCH the depersonalisation when he offers it.**"
     ],
     [
      "5:30",
-     "Insight, orientation and judgement: 'Do you think you might be unwell? Where are we? What day and time? Who am I? If there were a fire, what would you do?' ('Insight intact because he answered' is the trap — he denies any problem.)"
+     "**Insight, orientation, judgement: do you think you might be unwell · where are we, what day, who am I · the fire question.**"
     ],
     [
      "6:00",
-     "Present the mental state examination — the model for your version, keeping 'Active suicidal ideation with a plan and a previous attempt' and 'Engaging with auditory hallucinations' (see dx)."
+     "**PRESENT THE MSE under headings — describing the risk in full rather than ticking it, and naming that he engaged with the voice.**"
+    ],
+    [
+     "7:30",
+     "**Disposition if asked: not safe to go home · voluntary admission, or a Level 1 order if he declines and meets criteria · organic screen and urine drug screen · collateral from the parents with consent · early psychosis service.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, Version A",
-   "ask": [
-    "'What have your parents noticed?' / 'Who were you speaking to just then?' / 'Does the voice tell you to do things?' / 'Have you prepared anything — a date, a note?' / 'Any thoughts of harming anyone else?' / 'Are thoughts being put into or taken from your mind?' / 'Does the TV or radio talk about you?'",
-    "The MSE phrases: 'Engaging with auditory hallucinations.' / 'Active suicidal ideation with a plan and a previous attempt.' / 'Catatonic — motionless throughout.' / 'Loosening of associations.' / 'Homicidal ideation with a plan.' / and the one most people miss: depersonalisation, under perception.",
-    "Version B — Bruce: the irrelevant answer gets one gentle redirect — 'That sounds hard. When you say you slept badly, what kept you awake?' — then move on and report loosening of associations. / the command hallucination: 'Does God ever tell you to hurt yourself or anyone else? Do you feel you have to do what he says?' / and the question the lecture's candidate forgot: 'Have you had any thoughts of ending your life?' / Bruce's catatonia and disorientation need an organic cause excluded.",
-    "Version C — max: 'You said you need to kill the president. Tell me more — how would you do it? Do you have anything to do it with? When?' then: 'I'm worried about the safety of other people. I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in.' / if he mumbles through the fire question: 'I know you're upset and you want to go. I'll be quick.'",
-    "Examiner: 'What would you do now?' → 'He isn't safe to go home. I'd offer voluntary admission; if he declines and meets the criteria, a level 1 inpatient treatment order. I'd arrange an organic screen and urine drug screen, a collateral history from his parents with his consent, and referral to the early psychosis service.'"
-   ],
    "pefe": [
-    "Role-player: Alex, early 20s. Lives with his parents; he has never worked. He smokes cigarettes and cannabis — 'Whatever I have' — and drinks. For months he has heard one voice that comments on him and interrupts. He believes his parents want to harm him, that he must save the world, and that everyone is jealous of him. Sometimes he feels unreal, as if behind a screen. Two years ago he tried to end his life; recently he has thought about how he would do it, but has not set a date or written a note.",
-    "How to play it: wear sunglasses and two necklaces. Flat, slow, few words; uncooperative at first. At about minute four snap at the voice — 'I told you to shut up when I'm talking to the doctor!' — and become agitated; tap your forehead; shake your head; run your hand through your hair so it's messy. Say nothing about the voice or suicide unless asked.",
-    "Score the doctor on: re-opened after 'I'm okay'; context and substances; mood, sleep and appetite; suicide — ideation, plan, preparation and past attempt, and it is an AUTO-FAIL if not asked; harm to others; the voice explored; the full delusion set; depersonalisation noticed; insight, orientation and judgement; and in the MSE — the necklaces and sunglasses, engaging with voices, incongruent affect, poverty of ideas, and the risk described.",
-    "The opening denial — 'My parents think I'm crazy' / 'I'm okay, doctor' — and accepting it and moving on is the trap. Ask what they have noticed",
-    "Context and substances — Bad at home, not getting along with his parents — never worked — 'I'm not sure' about enjoyment — smokes and drinks — 'Weed, whatever I have'",
-    "Why you do not lecture — A lecture on safe drinking limits mid-station is a named trap — offer it at follow-up and move on",
-    "Mood and sleep — 'GOOD' — 'GREAT, NINE HOURS' — NO CHANGE IN APPETITE. All incongruent with how he looks",
-    "The risk, taken to its end — 'Yes... I did it once, two years ago' — 'I've thought about how I'd do it' — no date, no note. Stopping at 'Yes' is the trap; the mark is plan, preparation, timing and past attempts, plus harm to others",
-    "The moment at minute four — He snaps aside: 'I told you to shut up when I'm talking to the doctor!' → 'Who were you speaking to just then?' → 'It's just this voice'",
-    "The answer routinely missed — 'Sometimes I think I'm not real — like there's a screen in front of me' — depersonalisation, and it belongs under perception as a separate finding",
-    "The delusions — 'THEY'RE JUST JEALOUS OF ME' — 'I NEED TO SAVE THE WORLD', though he doesn't know from what — 'MY PARENTS WANT TO HARM ME' — NO passivity phenomena",
-    "Insight and judgement — 'I'M OKAY, DOCTOR' — and to the fire question, 'I'LL JUST RUN AWAY'. Oriented to place, time and person",
-    "Why insight is impaired — 'Insight intact because he answered' is the trap — he denies any problem, so it is impaired. But judgement here is intact on testing",
-    "What he is wearing — SUNGLASSES INDOORS AND TWO NECKLACES, A CROSS AND A SWORD — and by the end his hair is dishevelled from running his hand through it",
-    "Version C — max — A homicidal plan against a named public figure, endorsed by a voice, and he wants to leave today to act on it"
+    "**Investigations: urine drug screen · FBE, EUC, LFT, TSH, glucose · CT head and consider lumbar puncture where catatonia, disorientation or any organic pointer is present.**",
+    "**Durations: brief psychotic disorder <1 month · schizophreniform 1–6 months · SCHIZOPHRENIA ≥6 months.** VERIFY.",
+    "**Disposition: voluntary admission first; a Level 1 inpatient treatment order if he declines and meets the criteria. Collateral history from the parents WITH HIS CONSENT. Early psychosis service referral.**",
+    "**Numbers: SA mental health triage 13 14 65 · TIS National 131 450 · Lifeline 13 11 14.**",
+    "**BRUCE: catatonia needs an organic cause excluded before it is called psychiatric — bloods, imaging, and consideration of encephalitis. Use ONE gentle redirect for irrelevant answers, then move on and report LOOSENING OF ASSOCIATIONS.**",
+    "**MAX: homicidal ideation with a plan against a named person triggers a duty to protect — inform the team and the police who brought him in, and he does not leave.** **A mumbled non-answer to the fire question is 'judgement not assessed', not 'intact'.**",
+    "**Terms to place correctly: DEPERSONALISATION and derealisation go under PERCEPTION · an ILLUSION is a real stimulus misperceived · COMMAND hallucinations go in both the MSE and the risk statement.**"
    ],
-   "fails": [
-    "★ Accepting 'I'm okay, doctor' and moving on instead of asking what his parents have noticed, which is what opens the story",
-    "★ Stopping the risk at 'yes' — the mark is plan, preparation, timing and previous attempts, plus harm to others, and not asking about suicide at all is an auto-fail",
-    "Missing 'I'm not real, like there's a screen in front of me' — that is depersonalisation and it belongs under perception as a separate finding",
-    "Calling insight intact because he answered the questions, when he denies any problem",
-    "Not asking who he was speaking to when he snapped at the voice; running an incomplete delusion set that omits passivity phenomena; lecturing on safe drinking limits mid-station; and in Bruce's version, never assessing suicide or homicide despite command hallucinations"
-   ],
-   "numbers": [
-    "Brief psychotic disorder under 1 month · schizophreniform 1 to 6 months · schizophrenia 6 months or more · six delusion questions: persecutory, reference, grandiose, guilt, control, and insertion or withdrawal or broadcast",
-    "Two sentences that must not be dropped from the MSE: active suicidal ideation with a plan and a previous attempt, and engaging with auditory hallucinations · catatonia and disorientation need an organic screen · SA mental health triage 13 14 65 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Schizophrenia or a first psychotic episode** — the answer",
+     "**Months of a commenting voice, persecutory and grandiose delusions, depersonalisation, functional decline — never worked, conflict at home**",
+     "**The full delusion set; duration since first symptoms**",
+     "**Admission (voluntary or Level 1); antipsychotic; early psychosis service; collateral with consent**"
+    ],
+    [
+     "**Cannabis-induced psychosis**",
+     "**Daily cannabis, 'whatever I have'; alcohol**",
+     "**Quantity and duration; does the psychosis predate it?**",
+     "**Urine drug screen. Treat both — do not wait to see if it clears**"
+    ],
+    [
+     "**Catatonia with an organic cause** (Bruce)",
+     "**Motionless throughout, posturing, DISORIENTED to place and person**",
+     "**Orientation; fevers, headache, head injury; a full organic screen**",
+     "**Bloods, imaging, exclude encephalitis BEFORE calling it psychiatric**"
+    ],
+    [
+     "**Mania with psychotic features**",
+     "**Elevated mood, reduced need for sleep, pressured speech**",
+     "**Mood and sleep — Alex sleeps nine hours and feels 'good'**",
+     "**Grandiosity without reduced sleep points away from mania**"
+    ],
+    [
+     "Depression with psychotic features",
+     "Low mood, guilt or nihilistic delusions, mood-congruent voices",
+     "Mood, anhedonia, guilt",
+     "**His delusions are persecutory and grandiose, not mood-congruent**"
+    ],
+    [
+     "**Risk to others** (Max)",
+     "**A plan to kill a named public figure, endorsed by a voice, with intent to act TODAY**",
+     "**How, with what, when — asked exactly like a suicide plan**",
+     "**Detain, inform the team and police, duty to protect**"
+    ]
    ]
   },
   "source": "Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability.pdf (Alex, brought in by his parents for acting strangely, with Bruce the catatonic and Max the homeless man with a homicidal plan as the other versions — psychosis history and mental state examination; the denial re-opened with what his parents have noticed, risk taken past 'yes' to plan, preparation, timing and past attempts, the voice caught in the room with 'who were you speaking to just then?', depersonalisation recognised as a separate perceptual finding, the full delusion set including passivity, and three model mental state examinations with the risk described rather than ticked) This card is Version A, Alex; Bruce is PSYCH-61 and Max is PSYCH-62.",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 3 › Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Accepting 'I'm okay, doctor' and moving on instead of asking what his parents have NOTICED, which is what opens the story",
-   "FAIL — AUTO-FAIL: not asking about suicide at all — and stopping the risk at 'yes', when the mark is plan, preparation, timing, a note and previous attempts, plus harm to others. He has a plan and an attempt two years ago, but no date and no note",
-   "FAIL — Not asking who he was speaking to when he snapped at the voice — that is what confirms he is RESPONDING to hallucinations rather than just reporting them. Ask what it says and whether it tells him to do anything",
-   "FAIL — Running an incomplete delusion set — persecutory (his parents want to harm him), grandiose (he must save the world, everyone is jealous), delusions of reference, and PASSIVITY phenomena: thoughts inserted, withdrawn or broadcast, which candidates routinely omit",
-   "FAIL — Missing 'I'm not real, like there's a screen in front of me' — that is depersonalisation, and it belongs under PERCEPTION as a separate finding rather than folded into the delusions",
-   "FAIL — Calling insight intact because he answered the questions, when he denies any problem — and presenting an MSE that drops the two sentences that must not be dropped: 'active suicidal ideation with a plan and a previous attempt', and 'engaging with auditory hallucinations'. Describe what you can see too: sunglasses indoors, the necklaces, flat incongruent affect, poverty of ideas"
-  ]
+   "FAIL — Not asking about suicide. AUTO-FAIL. And stopping at 'yes' without plan, preparation and past attempts.",
+   "FAIL — Accepting 'I'm okay' and moving on. Ask what his parents have NOTICED.",
+   "FAIL — Recording insight as intact because he answered the questions. He denies any problem.",
+   "FAIL — Missing the depersonalisation, or not naming that he ENGAGED WITH the voice.",
+   "ASK — Who were you speaking to just then? Does it tell you to do things?",
+   "ASK — Any thoughts of harming yourself OR ANYONE ELSE? Ever tried? Any plan now?"
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-34",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "History then a spoken mental state examination — three versions, and the cover instruction is explore every theme the patient offers, because each one is a mark. Let the long opening run: interrupting him costs you both the history and the finding, because the expansive speech is itself scored. Two things are buried and easily lost — the hand-washing sits mid-sentence inside the first ritual, and the phobia only appears if you ask whether anything else frightens him. And the monster is an illusion, not a hallucination — there was a stimulus.",
   "stem": [
    "Version C — Andrew, an art student, has been referred by his university counsellor because he is failing his subjects. Tasks: take a history — 6 minutes — then present your mental state examination — 2 minutes.",
    "Version A — Alex: video only, present the MSE — contamination obsessions with six to seven hours of washing a day. Version B — Margaret: history and MSE — obsessional jealousy with an eye-closing ritual."
@@ -57709,90 +57951,118 @@ const EMBEDDED_CARDS = [
    "Take a history — 6 minutes",
    "Present your mental state examination — 2 minutes"
   ],
-  "time": "Confidentiality, then one open question and let him talk · then the obsession and the compulsion: how long has this been going on, what goes through your mind when it isn't perfect, have you tried to stop, what happens when you do, and how much of your day does it take · and ask whether there is anything else you do to calm it, because that is where the second ritual lives · then the magical thinking and the fears: what do you think would happen if you handed in something that wasn't perfect, and is there anything else you're frightened of · then mood, sleep, appetite, risk and the perception screen: how has your mood been, any thoughts of harming yourself or anyone else, and do you ever see or hear things others don't · and follow an odd perception with nightmares or flashbacks to close PTSD · then insight, orientation and judgement: do you think the need for perfection is reasonable, do you think you need help with it, where are we, and if there were a fire what would you do · then present the MSE with five content findings named.",
   "back": {
-   "dx": "OBSESSIVE-COMPULSIVE DISORDER WITH OBSESSIONAL PERFECTIONISM AND CONTAMINATION FEARS, PLUS PERFORMANCE ANXIETY — and the MSE must name five content findings. The model for Andrew, read aloud: 'Appearance: a young man in a black T-shirt wearing sunglasses and a headset indoors, with a tense posture, poor eye contact and an anxious expression. Behaviour: restless but cooperative and engaged, with excessive gesturing and hand-rubbing — psychomotor agitation. Speech: rapid, loud and expansive, with stuttering. Emotion: mood good; affect anxious, restricted and incongruent with the stated mood. Perception: an illusion — while drowsy he saw his cardboard tower as a monster; no hallucinations. Thought: goal-directed, dominated by the need for perfection. Content: no suicidal or homicidal ideation; an obsession that his work isn't perfect, with compulsive redrawing and hand-washing; magical thinking that perfect designs make the world a better place; a phobia of presenting his work. Insight partial. Cognition: alert, oriented. Judgement intact.' The model for Alex: 'Appearance: a young man in a black hoodie wearing sunglasses indoors, hair dishevelled, looking down for most of the consultation, with a fearful, anxious expression and a stooped, tense posture. Behaviour: cooperative, at times distracted, constantly rubbing his hands together and rocking — psychomotor agitation. Speech: increased rate and volume, stuttering and unclear at times. Emotion: mood anxious; affect anxious, congruent and restricted. Perception: no hallucinations. Thought: goal-directed, dominated by contamination. Content: no suicidal or homicidal ideation; obsessions that his hands are dirty, compulsive washing six to seven hours a day, an intrusive sexual obsession about his mother that he knows is untrue, and magical thinking that the world will end if he doesn't wash. Insight good. Cognition: alert, oriented to person; time and place not assessed. Judgement not assessed.' and the sentence candidates miss in Alex's video: 'An intrusive sexual obsession about his mother and uncle, which he knows is untrue and can't stop — this is an obsession rather than an overvalued idea.' The model for Margaret: 'Appearance: a 24-year-old woman in a blue hoodie with glasses, a tense posture, poor eye contact and a frightened, anxious expression. Behaviour: cooperative with good rapport; fidgeting and rocking throughout. Speech: increased rate, normal volume, marked stuttering at times. Emotion: mood sometimes fine, sometimes stressed; affect labile — calm, then suddenly anxious, two or three times — and congruent. Perception: none. Thought: linear. Content: no suicidal or homicidal ideation; obsessional jealousy about her husband's colleague, which she recognises as unfounded; a compulsion of closing her eyes five times, with magical thinking that otherwise he'll come to harm; no delusions. Insight intact. Cognition: alert, oriented. Judgement intact.' Margaret's two key exchanges: 'What do you do when the thought comes?' → 'I close my eyes five times. If I don't, something bad will happen to my husband.' and 'Do you think the worry about his colleague is reasonable?' → 'He's good, nothing's happening. I'm just jealous' — which is what makes it an obsession rather than a delusion. And her sudden anxiety is screened for panic: 'You said it comes out of nowhere. When it happens, what do you feel in your body? Does your heart race? Do you worry about the next one?' The examiner's follow-up on diagnosis and management: 'Obsessive-compulsive disorder with obsessional perfectionism and contamination fears, plus performance anxiety. I'd consider obsessive-compulsive personality disorder, but his distress and resistance favour OCD. Management: CBT with exposure and response prevention under a mental health treatment plan, an SSRI if needed, university support, and screening for depression.'",
+   "dx": [
+    "**OBSESSIVE-COMPULSIVE DISORDER with obsessional PERFECTIONISM and contamination fears, plus a PHOBIA of presenting his work.** Andrew, 20, an art student failing because every drawing is imperfect, torn up and redone.",
+    "**LET THE OPENING RUN. His long, unprompted answer gives you the entire history AND the observation — rapid, loud, EXPANSIVE SPEECH. Interrupting a talkative patient here costs you both.**",
+    "**Define the obsession by RESISTANCE, not content: how long · what goes through your mind when it isn't perfect · HAVE YOU TRIED TO STOP · WHAT HAPPENS WHEN YOU DO · how much of your day does it take?** → anxiety builds and he shakes; all day; he doesn't sleep until it's done.",
+    "**THERE ARE TWO COMPULSIONS AND THE SECOND IS BURIED: 'my hands feel dirty, so I wash them, and the paper gets wet, and I start again.' Ask 'do you do anything else to calm it?' or you will report only half the picture.**",
+    "**MAGICAL THINKING IS ELICITED BY ONE QUESTION: 'what do you think would happen if you handed in something that wasn't perfect?' → 'if my designs are beautiful, the world will be a better place. If not, the world will never be the same.'**",
+    "**AND ONE MORE: 'is there anything else you're frightened of?' → a PHOBIA of presenting his work — a separate content finding that must appear in the MSE.**",
+    "**The tower-monster story is an ILLUSION, not a hallucination — he was drowsy, there WAS a real object, and he corrected it on waking. Follow it with 'any nightmares or flashbacks?' to close PTSD.**",
+    "**Mood 'good — really good' with a visibly anxious face is INCONGRUENT AFFECT. Say so.**",
+    "**Insight is PARTIAL: 'it has to be perfect — that's just me', but 'I need help so I can hand things in'. He resists the thoughts and is distressed by them, which is what separates OCD from obsessive-compulsive PERSONALITY disorder.**",
+    "**Management if asked: CBT with EXPOSURE AND RESPONSE PREVENTION under a mental health treatment plan · an SSRI if needed, at higher dose and over an 8–12 WEEK trial · university support · and screening for depression.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "CONFIDENTIALITY, ONE OPEN QUESTION, AND THEN LET HIM TALK: 'what we discuss is confidential unless there's a risk to you or anyone else. HOW CAN I HELP?' → the long opening about failing and redrawing. (Interrupting a talkative patient is the trap — HIS LONG ANSWER IS THE FINDING AND THE HISTORY.)"
+     "**Confidentiality, open question — then SAY NOTHING while the long answer runs. Note the rate, volume and expansiveness.**"
     ],
     [
      "1:00",
-     "The obsession and the compulsion: 'How long has this been going on? What goes through your mind when it isn't perfect? Have you tried to stop? What happens when you do? How much of your day does it take?' — and 'Do you do anything else to calm it?', which is where the hand-washing lives."
+     "**The obsession: when did it start · what goes through your mind · HAVE YOU TRIED TO STOP and what happens · how much of your day.**"
+    ],
+    [
+     "2:20",
+     "**'Do you do anything else to calm it?' — THE SECOND RITUAL.** Then any other rituals, checking or counting."
     ],
     [
      "3:00",
-     "MAGICAL THINKING AND THE FEARS: 'WHAT DO YOU THINK WOULD HAPPEN IF YOU HANDED IN SOMETHING THAT WASN'T PERFECT?' → the world will never be the same. → 'IS THERE ANYTHING ELSE YOU'RE FRIGHTENED OF?' → THE PHOBIA OF PRESENTING. (Hearing the phobia and not naming it in the MSE is the trap.)"
+     "**THE MAGICAL THINKING QUESTION, then 'anything else you're frightened of?' for the phobia.**"
     ],
     [
      "4:00",
-     "Mood, sleep, risk and perception: 'How has your mood been? Sleep, appetite? Any thoughts of harming yourself or anyone else? Do you ever see or hear things others don't?' → the tower-monster → it is an illusion, not a hallucination. Then 'Any nightmares or flashbacks?' To close PTSD."
+     "**Mood, sleep, appetite — then SUICIDE and harm to others.**"
+    ],
+    [
+     "4:40",
+     "**Perception: do you see or hear things others don't → the tower story. Identify it as an ILLUSION, then close PTSD with nightmares and flashbacks.**"
     ],
     [
      "5:00",
-     "Insight, orientation and judgement: 'Do you think the need for perfection is reasonable? Do you think you need help with it? Where are we? If there were a fire, what would you do?' → it has to be perfect, but he needs help to hand things in — so insight is partial."
+     "**Insight, orientation, judgement: is the need for perfection reasonable · do you think you need help · where are we · the fire question.** Plus drugs, alcohol and family history if time."
     ],
     [
      "6:00",
-     "PRESENT THE MSE (see dx) — with the INCONGRUENT AFFECT, THE EXPANSIVE SPEECH, THE ILLUSION, AND FIVE CONTENT FINDINGS: no risk, the obsession, BOTH COMPULSIONS, the magical thinking, AND THE PHOBIA."
+     "**PRESENT THE MSE: sunglasses and headset indoors · restless, gesturing, hand-rubbing · rapid, loud, expansive, stuttering speech · mood 'good', affect anxious, restricted, INCONGRUENT · an illusion · goal-directed thought · and FIVE content findings — no suicidal ideation, the obsession, the two compulsions, the magical thinking, the phobia · insight partial · oriented · judgement intact.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, Version C",
-   "ask": [
-    "'What happens when you try to push the thought away?' / 'Do you do anything else to calm it?' / 'How much of your day does it take?' / 'What do you think would happen if you didn't?' / 'Is there anything else you're frightened of?' / 'Any nightmares or flashbacks?'",
-    "The MSE phrases: 'Obsessions of..., with compulsive...' / 'Magical thinking that...' / 'A phobia of presenting his work.' / 'An illusion — a real object misperceived.' / 'Affect anxious and incongruent with a stated good mood.' / 'Affect labile and congruent.' / 'Insight good — he recognises it as excessive.'",
-    "Version A — Alex, and the sentence candidates miss: 'An intrusive sexual obsession about his mother and uncle, which he knows is untrue and can't stop — this is an obsession rather than an overvalued idea.' plus six to seven hours of washing a day and magical thinking that the world will end if he doesn't wash.",
-    "Version B — Margaret: 'What do you do when the thought comes?' → 'I close my eyes five times. If I don't, something bad will happen to my husband.' / 'Do you think the worry about his colleague is reasonable?' → 'He's good, nothing's happening. I'm just jealous' — which makes it an obsession, not a delusion. / and the panic screen: 'When it happens, what do you feel in your body? Does your heart race? Do you worry about the next one?'",
-    "Examiner — diagnosis and management: 'Obsessive-compulsive disorder with obsessional perfectionism and contamination fears, plus performance anxiety. I'd consider obsessive-compulsive personality disorder, but his distress and resistance favour OCD. Management: CBT with exposure and response prevention under a mental health treatment plan, an SSRI if needed, university support, and screening for depression.'"
-   ],
    "pefe": [
-    "Role-player: Andrew, 20, first-year art student. Since his first assignment he cannot hand work in: every drawing looks imperfect, so he tears it up and redoes it — sometimes a hundred times. His hands feel dirty; he washes them, the paper gets wet, and he starts again. He believes perfect designs make the world a better place. He is terrified of presenting his work. Once, half asleep, his cardboard tower looked like a black monster. No drugs or alcohol; his mother is 'A bit of a neat freak'.",
-    "HOW TO PLAY IT: WEAR SUNGLASSES AND A HEADSET. FAST, LOUD, TALKATIVE, STUTTERING, HANDS MOVING CONSTANTLY. SAY YOUR MOOD IS 'GOOD', BUT LOOK ANXIOUS THROUGHOUT. GIVE THE FIRST LONG ANSWER WITHOUT BEING ASKED TWICE. If asked about other rituals, checking or counting: 'NO.' If asked whether it is reasonable: 'IT HAS TO BE PERFECT.' If asked whether you need help: 'SO I CAN FINISH THINGS.'",
-    "Score the doctor on: let the opening run; the obsession explored with resistance and anxiety; both compulsions found; time spent; the magical thinking elicited; the phobia elicited; mood and sleep; suicide, which is an AUTO-FAIL if not asked; perception asked and the illusion identified; insight; and in the MSE — incongruent affect, expansive speech, and five content findings named.",
-    "The opening, which you let run — 'My counsellor sent me. I'm failing — every drawing isn't perfect, so I tear it up and redo it, a hundred times. They won't give me extensions any more'",
-    "Why you do not interrupt — His long answer is itself a finding — expansive speech — and it hands you the history",
-    "The obsession — Since his first assignment — 'I get so anxious, I shake, I have to start again' — and resistance: 'I try, it's impossible. The anxiety just builds'",
-    "The second ritual, buried mid-sentence — 'And my hands feel dirty, so I wash them, and the paper gets wet, and I start again' — missing the hand-washing is the named trap",
-    "Time — All day — 'I don't sleep until it's done'",
-    "The magical thinking — 'IF MY DESIGNS ARE BEAUTIFUL, THE WORLD WILL BE A BETTER PLACE. IF NOT, THE WORLD WILL NEVER BE THE SAME' — drawn out by asking what would happen if he handed in something imperfect",
-    "The phobia, only if asked — 'I'M TERRIFIED OF PRESENTING MY WORK TO PEOPLE' — and hearing it without naming it in the MSE is the trap",
-    "Mood and risk — 'GOOD — REALLY GOOD. IT'S JUST THE ASSIGNMENTS' — can't fall asleep until it's perfect — NEVER any thoughts of harm",
-    "The perception — 'Once, half asleep, I saw my tower as a big black monster — then realised it was my model.' Calling it a hallucination is the trap: there was a stimulus, so it is an illusion",
-    "What to ask next — NIGHTMARES OR FLASHBACKS — which closes PTSD after an unusual perception",
-    "Insight and judgement — 'IT HAS TO BE PERFECT — THAT'S JUST ME' BUT 'I NEED HELP SO I CAN HAND THINGS IN' — so insight is PARTIAL. Oriented, and judgement intact",
-    "How he presents — Sunglasses and a headset indoors — fast, loud, talkative, stuttering, hands moving constantly — and he looks anxious while saying his mood is good"
+    "**No examination. The findings are observed during the history.**",
+    "**Time criterion: obsessions or compulsions taking MORE THAN ONE HOUR A DAY, or causing marked distress or impairment — he is failing his degree.** VERIFY.",
+    "**Treatment: CBT with exposure and response prevention first line, under a mental health treatment plan; an SSRI at higher dose than in depression with an 8–12 week trial before judging; liaison with the university for extensions and support; screen for depression.** VERIFY.",
+    "**The separator from obsessive-compulsive PERSONALITY disorder is DISTRESS AND RESISTANCE — his thoughts are unwanted and he fights them.**",
+    "**Term placement: an ILLUSION is a real stimulus misperceived and goes under perception · MAGICAL THINKING and a PHOBIA are thought CONTENT · expansive speech goes under speech, not behaviour.**",
+    "**Variant A (Alex, video only): the sentence candidates miss is the intrusive SEXUAL obsession about a family member, which he knows is untrue and cannot stop — an OBSESSION, not an over-valued idea. He washes 6–7 hours a day.**",
+    "**Variant B (Margaret): the compulsion is closing her eyes five times with magical thinking that otherwise her husband will be harmed; her affect is LABILE and congruent, and her sudden anxiety needs a panic screen — racing heart, and worry about the next episode.**"
    ],
-   "fails": [
-    "★ Interrupting the long opening — the expansive speech is itself a finding, and the answer hands you the history",
-    "★ Missing the hand-washing, which is buried mid-sentence inside the first ritual — ask whether he does anything else to calm it",
-    "Calling the tower-monster a hallucination when there was a stimulus — it is an illusion",
-    "Hearing the phobia of presenting and not naming it in the mental state examination",
-    "Never asking what would happen if he handed in imperfect work, which is what draws out the magical thinking; not asking about suicide, which is an auto-fail; and calling insight intact when he still believes the work has to be perfect — it is partial"
-   ],
-   "numbers": [
-    "OCD time criterion: over 1 hour a day · Alex washes 6 to 7 hours a day · Margaret's ritual is closing her eyes 5 times · five content findings in Andrew's MSE: risk, obsession, both compulsions, magical thinking and the phobia",
-    "SSRI trial 8 to 12 weeks VERIFY · CBT with exposure and response prevention under a mental health treatment plan · an obsession is resisted and recognised as untrue; an overvalued idea is not · resistance and distress favour OCD over obsessive-compulsive personality disorder"
+   "ddx": [
+    [
+     "**Obsessive-compulsive disorder** — the answer",
+     "**Unwanted perfectionism resisted with rising anxiety; redrawing and hand-washing; all day; magical thinking; failing his course**",
+     "**'Have you tried to stop?' and 'do you do anything else?'**",
+     "**CBT with exposure and response prevention; SSRI if needed; university support**"
+    ],
+    [
+     "**Obsessive-compulsive personality disorder**",
+     "**Lifelong perfectionism that feels RIGHT, without resistance or distress, and no rituals**",
+     "**Does the thought feel unwanted, or does it just feel right?**",
+     "**Considered and rejected — his distress and resistance favour OCD**"
+    ],
+    [
+     "**Specific phobia — performance**",
+     "**Terror of presenting his work, separate from the perfectionism**",
+     "**'Is there anything else you're frightened of?'**",
+     "**Name it in the MSE; graded exposure alongside the ERP**"
+    ],
+    [
+     "**Psychosis**",
+     "**True hallucinations or a fixed delusion; ideas of reference**",
+     "**The perception question — and whether there was a real stimulus**",
+     "**Excluded: an ILLUSION while drowsy, corrected on waking, with intact reality testing**"
+    ],
+    [
+     "Depression",
+     "Low mood, anhedonia, hopelessness alongside the impairment",
+     "Mood, sleep, appetite, suicide",
+     "**Screen for it — untreated OCD commonly carries a depressive load**"
+    ],
+    [
+     "Generalised anxiety disorder",
+     "Free-floating worry across many domains without rituals",
+     "Whether the anxiety is tied to the obsession and relieved by the ritual",
+     "Excluded here: the anxiety is obsession-bound and ritual-relieved"
+    ]
    ]
   },
   "source": "OCD_Mental_State_Examination_2_Case_Tasks_Script_Notability.pdf (Andrew, an art student failing because no drawing is ever perfect, with Alex's contamination video and Margaret's obsessional jealousy as the other versions — obsessive-compulsive disorder and the mental state examination; the long opening allowed to run because expansive speech is a finding, the second ritual found by asking what else he does to calm it, the magical thinking drawn out by asking what would happen otherwise, the phobia elicited and then named, the drowsy monster classified as an illusion, and three model mental state examinations with five content findings each)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 3 › OCD_Mental_State_Examination_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Interrupting the long opening — the expansive speech is itself a finding, and the answer hands you the history: failing, tearing up every drawing, redoing it a hundred times",
-   "FAIL — Not asking about RESISTANCE, which is what defines an obsession — 'have you tried to stop?' and 'what happens when you do?'. The anxiety builds and he starts again. Ask how much of the day it takes, because over an hour a day is the criterion",
-   "FAIL — Missing the hand-washing, which is buried mid-sentence inside the first ritual — ask whether he does anything ELSE to calm it, and the second compulsion appears",
-   "FAIL — AUTO-FAIL: not asking about suicide — and skipping the perception screen, which is what produces the tower-monster. Calling that a hallucination is wrong: there was a real stimulus, so it is an ILLUSION",
-   "FAIL — Never asking what would happen if he handed in imperfect work, which is what draws out the magical thinking ('if my designs are beautiful the world will be a better place; if not, it will never be the same') — and never asking whether anything ELSE frightens him, which is what surfaces the phobia",
-   "FAIL — Presenting an MSE that drops the five content findings or the incongruent affect — no suicidal ideation; an obsession of imperfection; compulsive redrawing AND hand-washing; magical thinking; and a phobia of presenting his work. Mood 'good' with an anxious restricted affect is INCONGRUENT, and insight is partial, not intact"
-  ]
+   "FAIL — Interrupting the long opening answer. The expansive speech IS a finding.",
+   "FAIL — Missing the SECOND ritual. The hand-washing is buried mid-sentence.",
+   "FAIL — Calling the monster a hallucination. There was a stimulus — it is an ILLUSION.",
+   "FAIL — Not asking about suicide. AUTO-FAIL.",
+   "ASK — What would happen if you handed in something that wasn't perfect?",
+   "ASK — Is there anything else you're frightened of?"
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-35",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "History then a spoken mental state examination — two versions, and the cover instruction is watch all six minutes, because the affect moves. Ann has a panic attack in the room at about minute three: stay with her, coach the breathing, and then ask permission to carry on — that is both the empathy mark and where you see the labile affect. Two answers must not be misread: 'Sometimes I feel like killing myself' is active ideation without a plan, not passive — and Henry's 'Today' is the safety moment of the whole station.",
   "stem": [
    "Version A — Ann: a woman who recently had a baby presents after her third episode of chest pain; she has been told nothing is wrong.",
    "Version B — henry: a truck driver attends after feeling very unwell at work today. Tasks in both: take a history — 6 minutes — then present your mental state examination — 2 minutes. Variants: 'Is it my heart?' and he wants to go home."
@@ -57801,98 +58071,126 @@ const EMBEDDED_CARDS = [
    "Take a history — 6 minutes",
    "Present your mental state examination — 2 minutes"
   ],
-  "time": "Version A · let her talk, then establish the pattern before reassuring anything: when you have the pain do you get breathless or a racing heart, do you feel something terrible is about to happen, did it start after the birth, and do you worry about having another · and have you changed what you do because of them · then, when the attack happens, stay: you're safe, this will pass, breathe slowly with me · and then are you okay to carry on, I'll keep my questions short · then mood, sleep, risk including the baby, agoraphobia, orientation and judgement · version B · the event first: what happened today, has anything happened before this, and then take your time · then the PTSD features and the risk: do you get nightmares, have you been avoiding driving or that road, have you felt angry or on edge, do you blame yourself, any thoughts of ending your life, how, and when · then stop and act on the answer, and ask whether his wife is safe · then perception and beliefs: do you see or hear things others don't, and do you feel anyone is trying to harm you.",
   "back": {
-   "dx": "VERSION A — panic disorder with agoraphobic avoidance in the postnatal period, with active suicidal ideation and no plan. Version B — post-traumatic stress disorder with active suicidal ideation and a plan for today, plus disclosed violence towards his wife. Ann's model MSE includes a labile affect, pressured speech, and the attack observed in the room; the risk is described as active suicidal ideation without plan or intent, with no ideation towards the baby. Henry's MSE includes an illusion under perception — his photograph misperceived as the dead man's face — guilt, and active suicidal ideation with a plan for today. The things to say in the room. To Ann, during the attack: 'You're safe. This will pass. Breathe slowly with me — in... And out.' then: 'Are you okay to carry on? I'll keep my questions short.' To henry, after 'Today': 'Henry, thank you for telling me. I'm very worried about you. I don't want you to drive or be alone today — I'd like to arrange for you to be seen at the hospital now. Is your wife safe at home?' → 'I slapped her... I'd never do more.' The variants. Ann asks 'Is it my heart?': 'Your heart tests have been normal each time, and what you're describing sounds like panic attacks — they feel exactly like a heart attack, and the symptoms are real. I'll check a few things once more, including your thyroid, and then we can treat the panic.' Henry wants to go home: 'I understand you want to go home. Because you've told me you planned to end your life today, I can't let you drive or go alone. I'd like you to come to hospital with me — and if needed I can use the mental health act to keep you safe.'",
+   "dx": [
+    "**TWO MSE STATIONS OFF ONE SKILL. A — ANN, six weeks postnatal after a third episode of chest pain with normal ambulance ECGs: PANIC DISORDER WITH AGORAPHOBIC AVOIDANCE, and SHE HAS A PANIC ATTACK IN THE ROOM. B — HENRY, a truck driver three months after a man jumped in front of his truck: PTSD WITH ACTIVE SUICIDAL IDEATION, A PLAN, AND A TIMEFRAME OF TODAY.**",
+    "**Ann talks for thirty seconds straight — let her. Then establish the PATTERN, the WORRY and the AVOIDANCE, which are what make the diagnosis: breathless or racing heart · a feeling that something terrible is about to happen · did it start after the birth · DO YOU WORRY ABOUT HAVING ANOTHER · have you changed what you do because of them?** → she has stopped shopping and avoids crowds.",
+    "**WHEN THE ATTACK HAPPENS AT ABOUT THREE MINUTES, STAY WITH HER AND COACH THE BREATHING: 'you're safe. This will pass. Breathe slowly with me — in… and out.' Then 'are you okay to carry on? I'll keep my questions short.'** **The empathy is scored, and it is where you observe a LABILE AFFECT.**",
+    "**THE POSTNATAL MUST-ASK IS 'OR THE BABY?' — thoughts of harming yourself, OR THE BABY.** → **'sometimes I feel like killing myself. Never the baby.' No plan, never tried.**",
+    "**Describe that correctly: it is ACTIVE suicidal ideation WITHOUT plan or attempt — not passive ideation. Getting that wrong in the MSE is a scored error.**",
+    "**Henry opens with a physical symptom — 'my head wanted to explode, everything was spinning' — and the trauma only comes when you ask whether anything has happened before this. Then let him cry and say 'take your time.'**",
+    "**PTSD features, asked as a set: nightmares · AVOIDANCE of driving and that road · anger and being on edge — he has SLAPPED HIS WIFE · and GUILT: 'it's all my fault, even though he jumped.'**",
+    "**THE SAFETY MOMENT: thoughts of ending your life → HOW → 'I want to drive my truck off the bridge' → WHEN → 'TODAY. AT WORK.' STOP THE HISTORY THERE. 'I'm very worried about you. I don't want you to drive or be alone today — I'd like to arrange for you to be seen at the hospital now.'** **Then the second safety question: IS YOUR WIFE SAFE AT HOME?**",
+    "**Henry's perception finding is an ILLUSION, not a hallucination — he woke from a nightmare and saw the man's face beside his bed, then realised it was his own photograph. But 'I think his soul is looking for me' is a separate belief and goes under thought content.**",
+    "**MSE essentials. ANN: fast, stuttering speech; fidgeting and rocking; AFFECT LABILE AND CONGRUENT — calm, then a full panic attack, then settled; active suicidal ideation without plan; no thoughts toward the baby. HENRY: crying, rocking, tapping his head; mood low; ACTIVE SUICIDAL IDEATION WITH A PLAN FOR TODAY; an illusion under perception; guilt and the belief about the soul under content; risk to his wife disclosed.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Version A — let her talk, then establish the pattern: 'How can I help today?' → the thirty-second opening. → 'When you have the pain, do you get breathless or a racing heart? Do you feel something terrible is about to happen? Did it start after the birth? Do you worry about having another? Have you changed what you do because of them?' (Rushing to reassure is the trap — the pattern, worry and avoidance make the diagnosis.)"
+     "**Open question — and LET HER TALK. Then the panic set: breathlessness and palpitations · fear that something terrible is about to happen · onset after the birth · WORRY about the next one · what she has stopped doing.**"
     ],
     [
      "3:00",
-     "The panic attack in the room — stay with her: 'You're safe. This will pass. Breathe slowly with me — in... And out.' → she settles. → 'Are you okay to carry on? I'll keep my questions short.' (This is the empathy mark, and it is where you observe the labile affect.)"
+     "**THE PANIC ATTACK IN THE ROOM: stay with her, coach the breathing, then ask permission to carry on with shorter questions.**"
     ],
     [
      "3:30",
-     "Mood, risk, the baby and the screen: 'How's your mood? Sleep? Any thoughts of harming yourself — or the baby? Are you afraid of crowded places? Where are we? If there were a fire?' → 'Sometimes I feel like killing myself', no plans, never tried, never the baby. (Calling that passive is the trap — it is active ideation without a plan.)"
-    ],
-    [
-     "0:00",
-     "Version B — the event first: 'What happened today? Has anything happened before this?' → crying, the man who jumped. → 'I'm so sorry. Take your time.'"
-    ],
-    [
-     "2:00",
-     "The PTSD features and the risk: 'Do you get nightmares? Have you been avoiding driving or that road? Have you felt angry or on edge? Do you blame yourself? Any thoughts of ending your life? How? When?' → the bridge, and today."
-    ],
-    [
-     "4:00",
-     "STOP AND ACT ON IT — THIS IS THE STATION'S SAFETY MOMENT (see dx): no driving, not alone, hospital now — AND THEN 'IS YOUR WIFE SAFE AT HOME?' after the slap is disclosed."
+     "**Mood, sleep, appetite. Then RISK — harming yourself OR THE BABY — with plan and previous attempts. Then agoraphobia: crowds, lifts, going out alone.**"
     ],
     [
      "5:00",
-     "Perception and beliefs: 'Do you see or hear things others don't? Do you feel anyone is trying to harm you?' → the photograph by the bed, which is an illusion — and 'I think his soul is looking for me'."
+     "**Caffeine, alcohol and drugs; then orientation and the fire question.**"
+    ],
+    [
+     "0:00",
+     "**HENRY — what happened today · has anything happened before this · 'I'm so sorry. Take your time.'**"
+    ],
+    [
+     "2:00",
+     "**PTSD set: nightmares · avoidance of driving and the road · anger and being on edge · self-blame.**"
+    ],
+    [
+     "3:30",
+     "**THE RISK LADDER — and when he says TODAY, stop the history and make him safe. Then ask whether his wife is safe at home.**"
+    ],
+    [
+     "5:00",
+     "**Perception and beliefs: do you see or hear things others don't → the photograph ILLUSION · does anyone seem to be trying to harm you → the soul belief.**"
     ],
     [
      "6:00",
-     "Present the mental state examination for your version — with Ann's labile affect and pressured speech, or Henry's illusion under the perception heading, and in both the risk described rather than ticked."
+     "**PRESENT THE MSE — with the affect described across the whole six minutes, and the risk described rather than ticked.**"
+    ],
+    [
+     "7:30",
+     "**Disposition: Ann — normal cardiac tests quoted back, CBT with exposure, SSRI chosen for breastfeeding, PANDA and CaFHS. Henry — hospital today, not driving, not alone, and his wife's safety addressed.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's runs for Version A and Version B",
-   "ask": [
-    "'Do you worry about having another one?' / 'Have you changed what you do because of them?' / 'You're safe — breathe with me.' / 'Are you okay to carry on? I'll keep my questions short.' / 'Any thoughts of harming yourself or the baby?'",
-    "'Do you relive it — flashbacks, nightmares?' / 'Have you been avoiding driving or that road?' / 'Do you blame yourself?' / 'When were you thinking of doing it?' / 'Is your wife safe at home?'",
-    "The MSE phrases: 'Affect labile and congruent.' / 'An illusion — his photo misperceived as a face.' / 'Active suicidal ideation with a plan for today.' / and for Ann: active suicidal ideation without plan or intent, and no ideation towards the baby.",
-    "The things to say in the room: to henry after 'Today' — 'Thank you for telling me. I'm very worried about you. I don't want you to drive or be alone today — I'd like to arrange for you to be seen at the hospital now.' / if he wants to go home: 'Because you've told me you planned to end your life today, I can't let you drive or go alone. I'd like you to come to hospital with me — and if needed I can use the mental health act to keep you safe.'",
-    "Ann asks 'Is it my heart?': 'Your heart tests have been normal each time, and what you're describing sounds like panic attacks — they feel exactly like a heart attack, and the symptoms are real. I'll check a few things once more, including your thyroid, and then we can treat the panic.'"
-   ],
    "pefe": [
-    "Role-player a — Ann, early 30s: a healthy baby boy six weeks ago; supportive partner; maternity leave; breastfeeding. Three episodes of chest pain, breathlessness and fear of a heart attack; ambulance and ECGs normal. She has stopped going shopping and avoids crowds — though not lifts. Mood anxious; sleep and appetite fine. 'Sometimes I feel like killing myself' — no plan, never tried; never the baby. No alcohol or drugs — she is breastfeeding; one cup of coffee. Play it: talk for thirty seconds straight at the start, fast and stuttering; fidget and rock; have a panic attack at about minute three, then settle and be calm.",
-    "Role-player B — henry, 40s, truck driver, married. Three months ago a man jumped in front of his truck and died. Today, behind the wheel for the first time, he relived it — his head felt like it would explode, everything spun. Nightmares; he wakes seeing the man's face; once saw it by the bed — it was his photo. He believes the man's soul is looking for him. He hasn't driven or used that road. He thinks his wife is cheating and slapped her. He blames himself. He planned to drive his truck off a bridge today. Play it: fast and trailing off at first, crying, rocking, tapping your head, making a spinning gesture.",
-    "Score the doctor on: the key panic and PTSD questions; stayed with Ann through the attack; the baby asked about; suicide asked and described, which is an AUTO-FAIL if not; Henry's 'Today' acted on; the wife's safety; the illusion identified; and in the MSE — labile affect, pressured speech, and the perception placed under the correct heading.",
-    "ANN — the opening — 'I've had these chest pains three times — every time the ambulance says nothing's wrong. Why do I keep getting them?' — thirty seconds straight, fast and stuttering",
-    "The pattern — 'I can't breathe' — 'I feel like I'm having a heart attack and no one can reach me' — since the delivery — 'I don't go out shopping any more, I'm scared of getting another one'",
-    "Why you do not reassure first — Rushing to reassure is the trap — the pattern, the worry and the avoidance are what make the diagnosis",
-    "The attack in the room, at about minute three — 'OH MY GOD... IT'S HAPPENING AGAIN... I FEEL LIKE I'M GOING TO DIE' — then 'IT'S GETTING BETTER NOW' — then calm. Stay with her, coach the breathing, THEN ASK PERMISSION TO CARRY ON",
-    "Ann's risk answer — 'Sometimes I feel like killing myself' — no plans, never tried — and never the baby. Calling this passive is the trap: it is active ideation without a plan",
-    "The postnatal must-ask — 'OR THE BABY?' — asked explicitly, and the answer is never",
-    "HENRY — the event — 'I sat behind the wheel and suddenly my head wanted to explode — everything was spinning' — then, crying: 'I killed someone. Three months ago a man jumped in front of my truck'",
-    "His PTSD features — 'I WAKE AT NIGHT — I SEE HIS FACE' — HASN'T DRIVEN FOR MONTHS — 'IT'S ALL MY FAULT, EVEN THOUGH HE JUMPED' — and today he relived it as if it were happening",
-    "The disclosure about his wife — 'I THINK MY WIFE'S CHEATING. I SLAPPED HER' — which obliges you to ask whether she is safe",
-    "The safety moment — 'I want to drive my truck off the bridge. I was going to do it today.' Moving on after 'Today' is the trap — stop there",
-    "Henry's perception — 'I woke from a nightmare and saw his face beside my bed — then I realised it was my photo' — an illusion — and 'I think his soul is looking for me'",
-    "How each is played — ANN: talks 30 seconds straight, fidgets and rocks, PANICS AT MINUTE THREE, THEN SETTLES. HENRY: fast and trailing off, CRYING, ROCKING, TAPPING HIS HEAD, MAKING A SPINNING GESTURE"
+    "**Ann: her ECGs have been normal three times — quote that back. Add TSH; avoid repeating tests, which feeds the worry.**",
+    "**Henry: no examination in the stem. Consider a urine drug screen and bloods; assess fitness to drive — he must not drive today.**",
+    "**Numbers: panic disorder needs ≥1 MONTH of worry about attacks or a behaviour change · PTSD >1 month · a panic attack peaks within minutes.** VERIFY.",
+    "**Ann's treatment: CBT with interoceptive and situational exposure; an SSRI chosen for breastfeeding safety; avoid benzodiazepines with a baby at home.** **Numbers: PANDA 1300 726 306 · CaFHS 1300 733 606.** VERIFY.",
+    "**Henry's treatment: same-day mental health assessment, admission, trauma-focused therapy once safe; he does not drive and is not left alone.**",
+    "**RISK TO OTHERS: he has slapped his wife. Ask directly whether she is safe, and offer 1800RESPECT 1800 737 732. Believing his wife is cheating on him also needs testing — fixed and unshakeable would be a delusion.**",
+    "**If Ann asks 'is it my heart?': the tests have been normal each time, panic attacks feel exactly like a heart attack, the symptoms are real, and the condition is treatable.** **SA mental health triage 13 14 65 · Lifeline 13 11 14.**"
    ],
-   "fails": [
-    "★ Moving on after Henry says 'today' — that is the station's safety moment, and it means no driving, not alone, and hospital now",
-    "★ Calling 'sometimes I feel like killing myself' passive ideation when it is active ideation without a plan",
-    "Rushing to reassure Ann before establishing the pattern, the worry about another attack, and the avoidance — which are what make the diagnosis",
-    "Not asking about the baby in a postnatal presentation, and not asking whether Henry's wife is safe after he discloses slapping her",
-    "Leaving the room or talking over Ann's panic attack instead of staying, coaching the breathing and asking permission to continue; and filing Henry's photograph as a hallucination when it is an illusion"
-   ],
-   "numbers": [
-    "Panic disorder needs 1 month or more of worry about further attacks or a change in behaviour · PTSD needs over 1 month · Ann has had 3 episodes with normal ECGs · Henry's trauma was 3 months ago and he planned to act today",
-    "CaFHS 1300 733 606 · PANDA 1300 726 306 VERIFY · 1800respect 1800 737 732 VERIFY · SA mental health triage 13 14 65 · an illusion has a real stimulus; a hallucination does not"
+   "ddx": [
+    [
+     "**Panic disorder with agoraphobia** (Ann) — the answer",
+     "**Three unexpected attacks with chest pain, breathlessness and fear of dying; normal ECGs; a month of worry about the next; stopped shopping, avoids crowds**",
+     "**Worry about recurrence AND behaviour change; an attack observed in the room**",
+     "**CBT with graded exposure; SSRI suited to breastfeeding; no benzodiazepines**"
+    ],
+    [
+     "**PTSD with imminent suicide risk** (Henry) — the answer",
+     "**A fatal collision three months ago; flashbacks today behind the wheel, nightmares, avoidance, anger, guilt; a PLAN to drive off a bridge TODAY**",
+     "**'When were you thinking of doing it?' and 'is your wife safe?'**",
+     "**Hospital today; no driving; not left alone; trauma-focused therapy once safe**"
+    ],
+    [
+     "**Cardiac disease**",
+     "**Chest pain, palpitations, breathlessness**",
+     "**The ECGs already done — normal three times**",
+     "**Quote them back. Add TSH; do not keep re-testing**"
+    ],
+    [
+     "**Postnatal depression**",
+     "**Low mood, anhedonia, guilt, thoughts of harming the baby**",
+     "**Mood and the 'or the baby?' question**",
+     "**Screen every postpartum presentation. PANDA, CaFHS**"
+    ],
+    [
+     "**Psychosis**",
+     "**True hallucinations, or a FIXED belief about the wife or the soul**",
+     "**Was there a real stimulus? Does the belief move with evidence?**",
+     "**Henry's face-by-the-bed was an ILLUSION — his own photo. Test the jealousy belief**"
+    ],
+    [
+     "Adjustment disorder",
+     "An identifiable stressor without re-experiencing or avoidance",
+     "The full PTSD set and the duration",
+     "Three months of flashbacks and avoidance takes Henry past this"
+    ]
    ]
   },
   "source": "Panic_and_PTSD_MSE_2_Case_Tasks_Script_Notability.pdf (Ann, six weeks postnatal after a third episode of chest pain with normal ECGs, and Henry, a truck driver three months after a fatal collision — panic disorder with agoraphobic avoidance, and post-traumatic stress disorder with a plan for today; the pattern established before any reassurance, the panic attack in the room stayed with and coached, the baby asked about explicitly, 'sometimes I feel like killing myself' read as active ideation without a plan, Henry's 'today' acted on immediately and his wife's safety asked after the disclosed slap, and the photograph by the bed classified as an illusion)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 3 › Panic_and_PTSD_MSE_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Rushing to reassure Ann before establishing the pattern, the worry about another attack, and the avoidance — which are what make the diagnosis: breathless, racing heart, a sense something terrible is about to happen, did it start after the birth, does she worry about the next one, has she changed what she does",
-   "FAIL — Leaving the room or talking over Ann's panic attack instead of staying, coaching the breathing and asking permission to continue — 'you're safe, this will pass, breathe slowly with me'. The attack itself is a finding: a labile but congruent affect",
-   "FAIL — Calling 'sometimes I feel like killing myself' passive ideation, when it is ACTIVE ideation without a plan — and not asking about the baby in a postnatal presentation, which is the must-ask: 'any thoughts of harming yourself, or the baby?'",
-   "FAIL — AUTO-FAIL: suicide not asked and described — and moving on after Henry says 'today'. That is the station's safety moment: no driving, not alone, hospital now, and the Mental Health Act if he refuses",
-   "FAIL — Not asking whether Henry's wife is safe after he discloses slapping her — risk to others follows disclosed violence, and 1800RESPECT belongs in the plan",
-   "FAIL — Skipping Henry's PTSD features, or putting the photo under the wrong heading — nightmares and waking seeing the man's face, avoiding driving and that road for months, anger and hyperarousal, and self-blame despite the man having jumped. Waking and seeing the face beside the bed, which turned out to be his photo, is an ILLUSION under perception; believing the man's soul is looking for him goes under thought content"
-  ]
+   "FAIL — Not asking about harm to THE BABY as well as to herself.",
+   "FAIL — Calling 'sometimes I feel like killing myself' passive. It is ACTIVE ideation without a plan.",
+   "FAIL — Moving on after Henry says 'today'. That is the station's safety moment.",
+   "FAIL — Not asking whether his wife is safe after he discloses slapping her.",
+   "SAY — You're safe. This will pass. Breathe slowly with me — in, and out.",
+   "ASK — When were you thinking of doing it?"
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-36",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "History then a spoken mental state examination — and the cover instruction is describe what you saw, and what the mask hid. She wears a face mask throughout and will politely refuse to remove it, so the MSE says so: facial expression couldn't be fully assessed because of the mask. The question that makes the diagnosis is 'What do other people say about it?' — her mother thinks it's fine, and that is what establishes a perceived rather than real defect. And she asks for surgery: agreeing to refer is the trap — acknowledge, explain, and offer treatment instead.",
   "stem": [
    "Jane, a young woman wearing a face mask, attends your general practice.",
    "Tasks: take a history — 6 minutes — then present your mental state examination — 2 minutes. Variants: she refuses anything but surgery; and she reveals a plan."
@@ -57901,87 +58199,112 @@ const EMBEDDED_CARDS = [
    "Take a history — 6 minutes",
    "Present your mental state examination — 2 minutes"
   ],
-  "time": "Confidentiality and one open question · then the concern, the rituals and the impact in one block: tell me more, how long, what do others say, how much do you think about it, do you do anything when the thought comes, and how is it affecting your life · ask the rituals as a group, because checking, comparing and camouflage all come in one answer · then mood, sleep, appetite and risk, and describe the risk rather than accepting her phrasing: have you had any thoughts of harming yourself or ending your life, any plans, ever tried, and what stops you · then the screen: do you see or hear things others don't; do people talk about you, and has anyone actually said anything; any worries about your weight or shape; and any other thoughts that keep coming back · then context, insight, orientation and judgement: who is at home, any drugs or alcohol, do you still enjoy things, what do you think would help, where are we, and if there were a fire · then handle the surgery request without dismissing her, and present the MSE with six content findings.",
   "back": {
-   "dx": "BODY DYSMORPHIC DISORDER — a preoccupation with a perceived defect, with checking, comparing and camouflage, poor to absent insight, and suicidal thoughts without plan or attempt. The MSE keeps two sentences: 'Facial expression couldn't be fully assessed because of the mask', and 'Suicidal thoughts without plan or attempt; protective factor her mother'. The six content findings to name: a preoccupation with a perceived defect of the nose; compulsive mirror-checking; comparing herself with others; camouflage with the mask; ideas of reference that her friends mock her, which she concedes no one has said; and suicidal thoughts without plan or attempt with her mother as the protective factor. Insight is poor to absent — she wants the nose fixed rather than the worry treated. Appearance, behaviour and speech: a young woman in a face mask, glasses and a headset; cooperative and engaged but anxious; speech of normal rate and volume with occasional stuttering; mood stressed and affect anxious, restricted and congruent; no hallucinations; thought form linear; alert and oriented; judgement intact on testing. The surgery request, handled without dismissal: 'I can hear how much distress this causes. From what you're describing, surgery is unlikely to take the feeling away — there's treatment for the worry and checking that works better.' Agreeing to refer is the trap. And if she refuses anything but surgery: 'I respect that this is your decision to make. My worry is that people with this kind of distress often feel no better after surgery, and some feel worse. Would you be willing to see a psychologist first, and we can talk again in a few weeks?' if she reveals a plan: 'Thank you for telling me. I'm worried about your safety today. Can we make a plan together, and can I involve your mum? I'd like you to see the mental health team today.'",
+   "dx": [
+    "**BODY DYSMORPHIC DISORDER — a preoccupation with a perceived defect that others do not see, with compulsive checking, comparing and camouflage, and functional collapse.** Jane, 23, in a face mask, convinced her nose is huge; **she was fired because she was getting nothing done.**",
+    "**THE DIAGNOSIS TURNS ON THE OBSERVER'S VIEW: 'WHAT DO OTHER PEOPLE SAY ABOUT IT?' → 'mum thinks it's okay, but it's massive.' That answer establishes the defect is not visible to others, and it sets the INSIGHT rating.**",
+    "**Ask the rituals as a group so you get all three in one answer: 'do you do anything when the thought comes?' → CHECKING in the mirror from every angle · COMPARING herself with friends · CAMOUFLAGE with the mask.**",
+    "**Quantify the preoccupation and the impact: 'how much of your day do you spend thinking about it?' → 24/7. 'How is it affecting your life?' → she lost her job.**",
+    "**THE SUICIDE QUESTION IS DESCRIBED, NOT TICKED: 'sometimes I think about it. It's never that serious — I think about my mum.' Report it as thoughts of ending her life, NO PLAN, NEVER ATTEMPTED, with her MOTHER AS A PROTECTIVE FACTOR.**",
+    "**'My friends talk about my nose and make fun of it' needs the clarifying question: 'HAS ANYONE ACTUALLY SAID ANYTHING?' → 'no, I just feel it.' That separates IDEAS OF REFERENCE from a delusion of reference.**",
+    "**ASK ABOUT WEIGHT AND SHAPE — it excludes an eating disorder, and it is a scored item. → no.**",
+    "**'I'm the most beautiful girl in the world — it's just my nose' sits alongside the preoccupation and belongs in thought content. Insight is POOR TO ABSENT: she wants the nose fixed, not the worry treated.**",
+    "**HANDLE THE SURGERY REQUEST WITHOUT DISMISSING HER: 'I can hear how much distress this causes. From what you're describing, surgery is unlikely to take the feeling away — there's treatment for the worry and the checking that works better.'** **If she refuses anything else: respect that it is her decision, note that many people feel no better after surgery and some feel worse, and ask whether she would see a psychologist first and talk again in a few weeks.**",
+    "**MSE essentials: a face mask, glasses and headset — and SAY THAT FACIAL EXPRESSION COULD NOT BE FULLY ASSESSED BECAUSE OF THE MASK · cooperative, anxious, occasional stuttering · content: preoccupation with a perceived defect, compulsive checking, comparing and camouflage, ideas of reference, no delusions, suicidal thoughts without plan or attempt with her mother protective · INSIGHT POOR TO ABSENT · oriented · judgement intact.**"
+   ],
    "plan": [
     [
      "0:00",
-     "CONFIDENTIALITY AND ONE OPEN QUESTION: 'what we talk about is confidential unless there's a risk to you or someone else. HOW CAN I HELP?' → the nose."
+     "**Confidentiality, open question.** → 'I've been so stressed, and it's all about my nose.'"
     ],
     [
      "1:00",
-     "The concern, the rituals and the impact: 'Tell me more. How long? What do others say? How much do you think about it? Do you do anything when the thought comes? How is it affecting your life?' → 'Mum thinks it's okay, but it's massive', 24/7, the mirror and the comparing and the mask, and the job. (Missing 'Mum thinks it's okay' is the trap — it is the observer's view that makes the diagnosis and the insight rating. And ask the rituals as a group — checking, comparing and camouflage come in one answer.)"
+     "**The concern: how long · WHAT DO OTHER PEOPLE SAY · how much of your day do you think about it.**"
+    ],
+    [
+     "2:00",
+     "**The rituals as a group, then the impact: 'do you do anything when the thought comes?' and 'how is it affecting your life?'**"
     ],
     [
      "3:00",
-     "MOOD, SLEEP, APPETITE AND RISK: 'HOW'S YOUR MOOD? SLEEP? APPETITE? When people feel this bad, sometimes they think about ending their life — HAVE YOU? ANY PLANS? EVER TRIED? WHAT STOPS YOU?' → 'it's never that serious, I think about my mum.' (Stopping at 'never that serious' is the trap — DESCRIBE IT: THOUGHTS, NO PLAN, NO ATTEMPT, PROTECTIVE FACTOR.)"
+     "**Mood, sleep, appetite — then SUICIDE, described in full: thoughts · plans · ever tried · WHAT STOPS YOU.**"
     ],
     [
      "4:30",
-     "The screen: 'Do you see or hear things others don't? Do people talk about you?' → her friends mock her nose → 'Has anyone actually said anything?' → 'No, I just feel it', which makes it ideas of reference rather than a delusion. Then 'Any worries about your weight or shape?' To exclude an eating disorder, and 'Any other thoughts that keep coming back?'"
+     "**The screen: see or hear things others don't · do people talk about you · HAS ANYONE ACTUALLY SAID ANYTHING · any worries about WEIGHT OR SHAPE · any other recurring thoughts.**"
     ],
     [
      "5:00",
-     "Context, insight, orientation and judgement: 'Who's at home? Any drugs or alcohol? Do you still enjoy things? What do you think would help? Where are we? If there were a fire?' → 'Just fix it. Make it smaller.'"
+     "**Context, insight, orientation, judgement: who's at home · drugs and alcohol · still enjoying things · WHAT DO YOU THINK WOULD HELP · where are we · the fire question.**"
     ],
     [
-     "5:30",
-     "HANDLE THE SURGERY REQUEST WITHOUT DISMISSING HER (see dx) — acknowledge the distress, explain why surgery is unlikely to take the feeling away, AND OFFER THE TREATMENT THAT WORKS BETTER."
+     "5:40",
+     "**Handle the surgery request: acknowledge the distress, explain honestly, offer the treatment that works.**"
     ],
     [
      "6:00",
-     "Present the MSE (see dx) — with the mask noted as limiting the examination, the stuttering, and six content findings including the protective factor."
+     "**PRESENT THE MSE — including the two sentences that must survive: the mask limiting assessment of facial expression, and the suicidal thoughts with no plan or attempt and her mother as the protective factor.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run",
-   "ask": [
-    "'What do other people say about it?' / 'How much of the day do you spend thinking about it?' / 'Checking, comparing, covering it?' / 'How is it affecting your life?'",
-    "'HAS ANYONE ACTUALLY SAID ANYTHING?' — which separates ideas of reference from a delusion. / 'ANY WORRIES ABOUT WEIGHT OR SHAPE?' — which excludes an eating disorder. / 'WHAT STOPS YOU FROM ACTING ON THOSE THOUGHTS?'",
-    "'Surgery is unlikely to take this feeling away.' / 'There's treatment for the worry and the checking that works better.' / 'I respect that this is your decision to make... Would you be willing to see a psychologist first, and we can talk again in a few weeks?'",
-    "The MSE phrases: 'Facial expression couldn't be assessed — mask.' / 'A preoccupation with a perceived defect.' / 'Ideas of reference.' / 'Insight poor to absent.' / 'Suicidal thoughts without plan or attempt; protective factor her mother.'",
-    "If she reveals a plan: 'Thank you for telling me. I'm worried about your safety today. Can we make a plan together, and can I involve your mum? I'd like you to see the mental health team today.'"
-   ],
    "pefe": [
-    "Role-player: Jane, 23, lives with her mum. For five or six months she has been convinced her nose is huge; she thinks about it all day, checks it in the mirror from every angle, compares herself with friends and wears a face mask so no one sees it. She was fired because she wasn't getting work done. She thinks she is the most beautiful girl in the world except for her nose. Sometimes she thinks about ending her life, but she thinks of her mum; no plan, never tried. No drugs or alcohol; she still walks her dog.",
-    "HOW TO PLAY IT: WEAR A FACE MASK, GLASSES AND A HEADSET. COOPERATIVE, ANXIOUS, NORMAL SPEED WITH OCCASIONAL STUTTERS. REFUSE POLITELY IF ASKED TO REMOVE THE MASK. KEEP ASKING TO HAVE IT FIXED. If asked whether anyone has actually said anything about your nose: 'NO, I JUST FEEL IT.' If asked about weight or shape: 'NO, DOCTOR.'",
-    "Score the doctor on: the others' view asked; time and rituals; impact; mood, sleep and appetite; suicide described, which is an AUTO-FAIL if not asked; ideas of reference clarified; weight asked; insight; the surgery request handled; and in the MSE — the mask noted, the stuttering, the preoccupation, the compulsions and poor insight.",
-    "The opening — 'I've been so stressed, and it's all about my nose. It's really big' — five or six months",
-    "The question that makes the diagnosis — 'What do other people say about it?' → 'Mum thinks it's okay, but it's massive.' Missing that line is the named trap — it is the observer's view, and it sets both the diagnosis and the insight rating",
-    "Preoccupation and rituals — '24/7' — 'I check it in the mirror from every angle. I compare myself with my friends. I always wear a mask' — checking, comparing and camouflage in one answer if you ask them as a group",
-    "Impact — 'They fired me — I wasn't getting anything done' — and 'None of the boys are interested'",
-    "Mood, sleep, appetite — Stressed — hard to fall asleep because she keeps thinking about her nose — not eating well",
-    "The risk answer, and why you do not stop there — 'Sometimes I think about it. It's never that serious — I think about my mum' — no plans, never tried. Describe it: thoughts, no plan, no attempt, and the protective factor",
-    "The reference question — 'My friends talk about my nose and make fun of it' → 'Has anyone actually said anything?' → 'No — no one's said it, I just feel it'. That is what separates ideas of reference from a delusion",
-    "Why weight is asked — It excludes an eating disorder — and the answer is no",
-    "The other belief — 'Mum thinks it's strange, but I'm the most beautiful girl in the world — it's just my nose'",
-    "Context and insight — Lives with her mum — no drugs or alcohol — still walks her dog — and 'Just fix it. Make it smaller'",
-    "The request — Agreeing to refer for surgery is the trap — acknowledge the distress, explain why surgery is unlikely to help, and offer treatment",
-    "How she presents — A face mask, glasses and a headset — cooperative, anxious, normal speed with occasional stutters — and she politely refuses to remove the mask"
+    "**No physical examination, and do NOT ask her to remove the mask — she will politely refuse, and the refusal itself is a finding.**",
+    "**Numbers: duration 5–6 months · preoccupation 24/7 · insight is graded across three levels (good or fair, poor, absent or delusional).** VERIFY.",
+    "**Treatment: CBT with exposure and response prevention, targeting the checking, comparing and camouflage; an SSRI if needed; mental health treatment plan; screen for depression.** VERIFY.",
+    "**Cosmetic surgery is NOT the treatment — outcomes are typically no better, and often worse. Say it honestly and offer the alternative rather than refusing flatly.**",
+    "**Numbers: Lifeline 13 11 14 · SA mental health triage 13 14 65 · Beyond Blue 1300 22 4636.**",
+    "**If she reveals a PLAN: stop, thank her, make a safety plan together, ask permission to involve her mother, and arrange mental health team review the same day.**",
+    "**Distinguish: BDD preoccupation with a perceived defect · EATING DISORDER concerns about weight and shape — which is why that question is asked · DELUSION OF REFERENCE if she believes people have actually said it · OCD where the obsession is not appearance-focused.**"
    ],
-   "fails": [
-    "★ Missing 'mum thinks it's okay' — the observer's view is what establishes a perceived rather than real defect, and it sets the insight rating",
-    "★ Agreeing to refer her for surgery instead of acknowledging the distress, explaining why it is unlikely to help, and offering treatment",
-    "Stopping at 'it's never that serious' rather than describing the risk: thoughts, no plan, no attempt, and her mother as the protective factor",
-    "Not asking whether anyone has actually said anything about her nose, which is what separates ideas of reference from a delusion",
-    "Forgetting the weight and shape question, which excludes an eating disorder; asking the rituals one at a time rather than as a group; and presenting the mental state examination without noting that the mask limited assessment of her facial expression"
-   ],
-   "numbers": [
-    "Duration 5 to 6 months · preoccupation 24/7 · three insight levels: good or fair, poor, and absent or delusional · six content findings: preoccupation, checking, comparing, camouflage, ideas of reference, and risk with its protective factor",
-    "Surgery often leaves the distress unchanged and sometimes worse · treatment is psychological, with an SSRI if needed · Lifeline 13 11 14 · SA mental health triage 13 14 65"
+   "ddx": [
+    [
+     "**Body dysmorphic disorder** — the answer",
+     "**Five to six months of 24/7 preoccupation with a nose others see as normal; mirror checking, comparing, mask camouflage; lost her job**",
+     "**'What do other people say?' and the ritual group**",
+     "**CBT with exposure and response prevention; SSRI if needed; NOT surgery**"
+    ],
+    [
+     "**Eating disorder**",
+     "**Preoccupation with weight or body shape rather than a specific feature**",
+     "**'Any worries about your weight or shape?' — a scored question**",
+     "**Excluded here. Ask it every time**"
+    ],
+    [
+     "**Delusional disorder / psychosis**",
+     "**A FIXED belief that people have actually commented, or absent insight held with delusional conviction**",
+     "**'Has anyone actually said anything?' → 'no, I just feel it' — ideas, not delusions**",
+     "**Insight is poor but not delusional. Antipsychotic only if it crosses that line**"
+    ],
+    [
+     "**Obsessive-compulsive disorder**",
+     "**Intrusive thoughts with rituals, but not appearance-focused**",
+     "**The content of the obsession**",
+     "**Same treatment family — ERP — but name the disorder correctly**"
+    ],
+    [
+     "**Depression**",
+     "**Low mood, poor sleep and appetite, suicidal thoughts, loss of function**",
+     "**Mood, sleep, appetite, and the described risk**",
+     "**Present here as a comorbidity — treat alongside, and safety-net**"
+    ],
+    [
+     "Social anxiety disorder",
+     "Fear of scrutiny and negative evaluation generally, not a specific perceived defect",
+     "Is the avoidance about the nose, or about people?",
+     "The mask is camouflage for the feature, which points to BDD"
+    ]
    ]
   },
   "source": "Body_Dysmorphic_Disorder_MSE_2_Case_Tasks_Script_Notability.pdf (Jane, 23, in a face mask convinced her nose is huge — body dysmorphic disorder and the mental state examination; the observer's view asked because her mother's opinion is what makes the diagnosis, the rituals asked as a group so checking, comparing and camouflage come in one answer, 'has anyone actually said anything?' separating ideas of reference from a delusion, weight asked to exclude an eating disorder, the risk described with its protective factor rather than accepted at her phrasing, the surgery request answered without dismissal, and the mask named in the MSE as limiting the examination)",
   "drive": "AMC Clinical Notability › Psychiatry › Psych 3 › Body_Dysmorphic_Disorder_MSE_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Missing 'mum thinks it's okay' — the observer's view is what establishes a PERCEIVED rather than real defect, and it sets the insight rating",
-   "FAIL — Not asking for the rituals as a group, or for the time and the impact — checking in the mirror from every angle, comparing herself with friends, and wearing the mask as camouflage; 24/7 preoccupation; and she was fired because she wasn't getting anything done",
-   "FAIL — AUTO-FAIL: not describing the risk — stopping at 'it's never that serious' rather than saying thoughts, no plan, no attempt, and her mother as the protective factor",
-   "FAIL — Not asking whether anyone has ACTUALLY said anything about her nose, which is what separates ideas of reference from a delusion — she feels her friends make fun of it, but nobody has said so",
-   "FAIL — Forgetting the weight and shape question, which excludes an eating disorder — and not asking what she thinks would help, which is where the surgery request appears",
-   "FAIL — Agreeing to refer her for surgery instead of acknowledging the distress, explaining why it is unlikely to help, and offering treatment — 'surgery is unlikely to take this feeling away'. Then keep the two MSE sentences: her facial expression could not be fully assessed because of the mask, and the risk described in full. Insight is poor to absent"
-  ]
+   "FAIL — Missing 'mum thinks it's okay'. The observer's view makes the diagnosis.",
+   "FAIL — Stopping at 'it's never that serious'. Describe it: thoughts, no plan, no attempt, protective factor.",
+   "FAIL — Not asking whether anyone has ACTUALLY said anything about her nose.",
+   "FAIL — Agreeing to refer for surgery. Acknowledge, explain, offer treatment instead.",
+   "ASK — Any worries about your weight or shape?",
+   "SAY — Facial expression could not be fully assessed because of the mask."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-37",
