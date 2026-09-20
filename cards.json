@@ -6243,7 +6243,6 @@
   "id": "MED-11",
   "cat": "med",
   "promptAt": 300,
-  "setting": "Emergency department.",
   "stem": [
    "You are the doctor in the emergency department. James Okafor, 22, has presented with sudden onset chest pain that started while he was exercising today. He is already on oxygen when you enter the cubicle.",
    "Information available: HR 98 · BP 122/74 · RR 22 · SpO2 94% · T 36.8 °C · alert and orientated."
@@ -6253,120 +6252,225 @@
    "Version A: at about five minutes a chest X-ray is provided — explain the X-ray to the patient. Version B: ask the examiner for the physical examination findings you require",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. History stops at 5:00 (the X-ray appears at the prompt whether or not you've finished) · X-ray or PEFE 60–75 s · diagnosis 30–40 s · everything left goes on differentials — the block candidates lose.",
   "back": {
-   "dx": "Primary spontaneous LEFT pneumothorax, no tension — tall slim 22-year-old, daily vaper (since 18, occasional cannabis), rowing machine, no knock. Pain: left, can point to one spot, sudden, sharp stab, 4/10, constant, no radiation, MUCH WORSE ON DEEP BREATH, leaning forward and rest/activity make no difference. PEFE (Version B): trachea midline · reduced expansion L · hyper-resonant L · absent breath sounds L · reduced vocal resonance L · JVP normal, apex undisplaced, no murmur · no calf asymmetry · ECG pending. Hidden agenda: 'Is it my heart? People my age drop dead' — and a Bali trip in three weeks with a learn-to-dive course. The station in one line: say 'pleuritic' out loud, run the whole structure anyway, name the trachea, protect the last two minutes.",
+   "dx": [
+    "**Primary spontaneous pneumothorax** in a tall, thin 22-year-old who vapes — **rupture of a subpleural bleb**, air in the pleural space with no underlying lung disease.",
+    "**Say the conclusion out loud — this is a marked moment**: **'that's a sharp, well-localised pain that came on suddenly and is worse when you breathe in. We call that pleuritic, and it points me towards your lungs and the lining around them rather than your heart. I still need to check both properly.'**",
+    "**The conclusion does not change the structure.** You have narrowed your suspicion; **you have not earned the right to skip the cardiac block.** Run CVS first, in full, **exactly as you would for a 60-year-old with central crushing pain** — that is what would have caught pericarditis, myocarditis or hypertrophic cardiomyopathy if the case had been one of those.",
+    "**The new question in a young person with exertional chest pain: family history of sudden cardiac death** — **anyone who died suddenly and young, or unexpectedly during sport or in their sleep.** Ask it **inside the cardiac block, not at the end with family history**, because the end of the station is where you run out of time.",
+    "**The X-ray script, six steps**: **'this is the X-ray of your chest' → three colours, white is bone, grey is soft tissue, black is air → landmarks: heart, spine, and the windpipe, and say you are checking it sits centrally → the normal side, markings running to the edge and a sharp angle at the base → the abnormal side, lung edge visible with no markings beyond it → name it.** **Comment on the trachea even when it is normal** — that is how you demonstrate you were looking for tension.",
+    "**No radiology language to the patient.** 'A lucency with absent peripheral vascular markings and a visible visceral pleural line' is a correct description and **a failed communication task**. If the film is genuinely poor: **say what you can see, lean on the history, and ask to review the digital image** — that is what a safe doctor does, not a weakness.",
+    "**Tension pneumothorax is a clinical diagnosis: hypotension, trachea deviated away, distended neck veins, hypoxia not correcting on oxygen.** **Immediate needle decompression with a large-bore cannula — 4th or 5th intercostal space, anterior axillary line, with the 2nd space midclavicular line as the traditional alternative — then an intercostal catheter straight away, because decompression is only temporising. Do not wait for an X-ray.** VERIFY against local protocol.",
+    "**Intervention rule: symptomatic or unstable → pleural intervention** — aspiration, or a **small-bore 8–14 French catheter by Seldinger technique in the safe triangle, 5th intercostal space anterior to the mid-axillary line**. Minimally symptomatic and stable → **conservative or ambulatory care with review**. **Led by symptoms and stability rather than size alone — but still measure it and factor it into the conversation.**",
+    "**The counselling is where a 22-year-old's life is actually affected**: **stopping the vaping is the single most effective way to prevent recurrence · recurrence is about 30%, mostly in the first one to two years · no flying until fully resolved on imaging and typically a week beyond · and no scuba diving ever, without definitive surgery.** **Surgical referral** after a second ipsilateral event, a first contralateral event, bilateral disease, a persistent air leak, or a high-risk occupation. **High-flow oxygen speeds reabsorption** in conservative management.",
+    "**The clock is the second discriminator.** **Diagnosis in 30–40 seconds, three differentials with one reason each, then the rest as a rapid list.** **A beautiful forty-second explanation of pleural physiology eats the time the list needed — and the examiner cannot award marks for differentials you did not say.** Safety net: **more breathless, worse pain, feeling faint or a racing heart, or blue lips or fingers → come back or call an ambulance.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Four vitals (BP, pulse, RR, temp) or the online closed statement; WIPE; open question; empathy ONCE, properly"
+     "Face-to-face: **'may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature?'** Online, a closed statement instead: **'I'll take you through to the treatment area and put you on the monitor to check you're stable while we talk.'** **A gate you walk through, not a place to spend thirty seconds.**"
     ],
     [
-     "0:30",
-     "SOCRATES in full — 'is it an area, or can you point to one spot?' — then the THREE named modifiers: deep breath? rest vs activity? leaning forward?"
+     "0:20",
+     "WIPE, confirm identity, open question — then **empathy once, properly**: **'I understand, and I can see this is worrying you. Let me ask you some questions and get you examined; we'll find the cause, and you're in safe hands. I'll come back to your concerns as soon as I know more.'** **Once, then work** — and again only if he becomes newly distressed, which role-players do when the X-ray appears."
     ],
     [
-     "1:30",
-     "Say the conclusion aloud: 'sharp, well-localised, sudden, worse on breathing in — we call that pleuritic; it points me towards your lungs rather than your heart. I still need to check both.'"
+     "0:50",
+     "SOCRATES in full: **where exactly — is it an area, or can you point to one spot · when did it start and what were you doing, sudden or gradual · sharp, dull, heavy, tight or burning · does it go anywhere · out of ten · constant or in waves, and getting worse?**"
     ],
     [
-     "1:45",
-     "CVS block in FULL: SOB/sweating/nausea; BP/DM/lipids/smoking/FHx; cocaine/amphetamines; fever/flu, leaning forward; orthopnoea/PND/oedema/congenital; ever fainted, esp. on exercise; FAMILY HISTORY OF SUDDEN CARDIAC DEATH (ask here, not at the end)"
+     "2:00",
+     "**The three named modifiers — patients rarely volunteer them, and the open question alone gets 'not that I've noticed'**: **does taking a deep breath make it worse · does it change with rest or activity · does leaning forward help at all?**"
     ],
     [
-     "3:00",
-     "Respiratory: calves, travel, immobility, family clots, haemoptysis; WHAT EXERCISE and any knock/tackle; previous pneumothorax self/family; smoke/vape/cannabis; fever/cough/phlegm; 'unlikely at your age but I ask everyone' weight loss/lumps/night sweats"
+     "2:20",
+     "**Say 'pleuritic' out loud**, and say what it points you towards and away from."
     ],
     [
-     "4:00",
-     "GI (heartburn, waterbrash, food), MSK (rash, pressing, twisting), psych (stress, mood); SADMA, PMH, allergies, concerns"
+     "2:40",
+     "**The cardiovascular block, in full, despite his age**: **any breathlessness, sweating or nausea with it · blood pressure, diabetes, cholesterol, smoking, family history of heart disease · any recreational drugs, particularly cocaine or amphetamines · any fever or flu-like illness in the last week or two, and is it better sitting forward · breathless walking or lying flat, waking at night, ankle swelling, any condition you were born with · ever fainted or felt faint, especially during exercise · and any family history of sudden cardiac death?**"
+    ],
+    [
+     "3:40",
+     "Respiratory: **any calf swelling or pain, long flights or car trips, recent surgery or immobility, clotting problems in the family, coughing up blood · what exercise were you actually doing, and did you take any knock or tackle to the chest · ever had a collapsed lung, or anyone in your family · do you smoke, vape or use cannabis · any fever, cough or coloured phlegm · and though it's unlikely at your age, any weight loss, lumps or bumps, night sweats?**"
+    ],
+    [
+     "4:30",
+     "The rest of the sweep, briskly: **any tummy pain, vomiting, heartburn or sour fluid coming up, related to food · any rash on the chest, worse on pressing or twisting · any stress at home or uni, and how's your mood** — then **SADMA, past history, allergies**, and **'is there anything you were particularly worried this might be?'**"
     ],
     [
      "5:00",
-     "BELL — X-ray script, six steps, 60–75 s, trachea named even though normal; answer 'am I going to be alright?' with two reasons (trachea central, BP normal) then finish. Version B: PEFE by named items, interpret the card aloud"
+     "The bell. **Version A — the six-step X-ray script, 60–75 seconds, trachea named.** **Version B — the ten-step examination request**, opening with your reasoning: **'given the pleuritic character I'll go into more detail on the respiratory examination, with a relevant cardiovascular examination alongside it'**, then **expansion, trachea, percussion, auscultation and vocal resonance by name**."
     ],
     [
      "6:15",
-     "Diagnosis 30–40 s plain → three reasons (sharp, pleuritic, X-ray/PEFE) → HCM, PE, infection each with a reason → the rest as a rapid list → drain, admit, repeat X-ray, stop vaping, no flying until healed, no diving ever without surgery, safety-net"
+     "**Diagnosis in 30–40 seconds, no more**: **'a pneumothorax — air collected in your chest cavity, outside the lung, usually because small bubbles on the surface of the lung burst and let air leak out.'** Then **three reasons**: sharp not heavy · worse on deep breathing, which is pleuritic · and the X-ray shows air around the lung with the lung edge visible."
+    ],
+    [
+     "7:00",
+     "**Differentials — three with reasons, then the rest as a list.** Hypertrophic cardiomyopathy, but no family history of sudden death · a clot on the lung, but no travel, immobility or calf symptoms · a chest infection, but no fever or cough. Then name **valve narrowing, heart failure, heart attack, pericarditis, a tear in the main artery, a growth in the lung, shingles, costochondritis, reflux or ulcer, and panic attack** in one sweep."
+    ],
+    [
+     "7:45",
+     "Plan and counselling: **oxygen, analgesia, monitoring · drainage by needle or a small tube between the ribs under local anaesthetic · admission and a repeat film.** Then the three that matter to him: **stop the vaping · no flying until cleared · no diving, ever, without an operation.** Safety net, summarise, check understanding."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Where exactly — an area, or can you point to one spot? When, what were you doing, sudden or gradual? Sharp/dull/heavy/tight/burning? Go anywhere? Out of ten? Constant or waves, worse?",
-    "Anything better or worse? Specifically — does a deep breath make it worse? Change with rest or activity? Does leaning forward help? ★",
-    "SOB, sweating, nausea? BP/diabetes/cholesterol? Smoke? Family heart disease? Cocaine or amphetamines? Fever/chills/flu-like illness? Breathless walking/lying flat, wake at night, ankle swelling, born with a heart condition? Ever fainted, especially during exercise?",
-    "Any family history of sudden cardiac death — anyone who died suddenly and young, during sport or in their sleep? ★",
-    "Calf swelling/pain? Long flights/car trips, surgery, immobility? Clotting problems in the family? Coughed up blood?",
-    "What exercise were you actually doing — and did you take any knock or tackle to the chest? ★",
-    "Ever had a collapsed lung, or anyone in the family? Smoke, vape, cannabis? Fever, cough, coloured phlegm? Weight loss, lumps, night sweats?",
-    "Tummy pain, vomiting, heartburn, sour fluid? Related to food? Rash on the chest, worse on pressing or twisting? Stress at home or uni, mood? Medications, allergies, past history, operations?",
-    "What are you worried it might be?"
-   ],
    "pefe": [
-    "X-ray six lines: (1) 'This is the X-ray of your chest' (2) three shades — white bone, grey soft tissue, black air (3) landmarks — heart, spine, WINDPIPE and whether it's central (4) normal side — markings to the edge, sharp angle at the base (5) abnormal side — lung edge visible, no markings beyond it, air in the space (6) 'that's a pneumothorax'. The finding is ABSENT MARKINGS beyond a visible pleural edge, not blackness — trace apex to costophrenic angle for the subtle apical one",
-    "Poor paper film: 'The print quality makes fine detail difficult — clinically your symptoms and examination point to a left pneumothorax, and that's what I can see at the edge; I'd review the digital image'",
-    "Version B PEFE by name: general appearance/distress/cyanosis/drowsy; vitals on air and on O2; expansion symmetrical? TRACHEA midline or deviated? bruising/focal tenderness? percussion resonant/hyper-resonant/dull? breath sounds present and equal, added sounds, rub? vocal resonance? JVP, apex, S1/S2, murmurs; abdomen; oedema and calf asymmetry; ECG?",
-    "Interpret aloud: reduced expansion + hyper-resonance + absent breath sounds + reduced vocal resonance on the left, trachea midline, BP normal = left pneumothorax without tension; hyper-resonance = air (dull would be fluid/consolidation/haemothorax)",
-    "If the print is poor — 'The print quality makes fine detail difficult — clinically the symptoms and examination point to a left pneumothorax, and that is what I can see at the edge; I would review the digital image'",
-    "What would change everything — Tracheal deviation away, distended neck veins, hypotension — a TENSION pneumothorax is a clinical diagnosis and is decompressed BEFORE any film",
-    "What you would examine — Trachea (central or deviated) · expansion · percussion note · air entry · vocal resonance · JVP · blood pressure"
+    "**Four vital signs before the history** — and ask for **saturations on air as well as on oxygen**, since he is already receiving it.",
+    "**Ask for the trachea by name, in inspection and palpation.** 'Is the trachea midline or deviated?' If you ask only for 'a respiratory examination' you will not be told.",
+    "**If you get one positive, complete the system.** 'Air entry reduced on the left' is a **prompt, not an answer** — expansion, trachea, percussion, auscultation and vocal resonance are **four separate marks**.",
+    "**Interpret the card aloud**: reduced expansion, hyper-resonance, absent breath sounds and reduced vocal resonance on the left with a midline trachea = **a left pneumothorax without tension physiology**. **Hyper-resonance rather than dullness rules out effusion or consolidation.**",
+    "**Erect chest X-ray** — and **trace the whole periphery of both lungs, apices included**. Two things that fool you: **a skin fold has lung markings crossing it**, and **bullous emphysema has an edge concave towards the chest wall**, which is dangerous to drain.",
+    "**ECG and troponin if there is any doubt about the cardiac differentials** — and ask for the ECG even when told it is pending.",
+    "**Lower limbs for oedema and calf asymmetry** — pulmonary embolism stays on the list of every pleuritic chest pain.",
+    "**In the traumatic variant**: large-bore IV access, **group and hold with crossmatch**, FBE and coagulation, erect CXR and consider **CT chest**, a **larger-bore drain rather than a small-bore catheter**, and surgical involvement early."
    ],
-   "fails": [
-    "Shortcutting to lung questions once 'pleuritic' is reached — the structure is the mark",
-    "Never acknowledging the fear, or sympathising after every answer and reaching 5:00 with half a history",
-    "Asking only the open 'better or worse?' and accepting 'nothing really'",
-    "Leaving sudden cardiac death to the end and running out of time",
-    "Not asking what exercise / any knock (separates spontaneous from traumatic)",
-    "Skipping malignancy or psychogenic questions because he's 22",
-    "Not commenting on the trachea (Version B: not asking 'midline or deviated?' — the pass-or-fail question) ★",
-    "Radiology language to a frightened 22-year-old",
-    "Accepting 'air entry reduced on the left' as the whole examination — expansion, trachea, percussion, vocal resonance are four separate marks",
-    "The beautiful 40-second physiology explanation that eats the differential time; never finishing the list ★",
-    "Tension variant: 'I'd get an urgent chest X-ray to confirm' — the sentence that fails the station ★"
-   ],
-   "numbers": [
-    "Signs: reduced expansion · hyper-resonant · absent breath sounds · reduced vocal resonance · trachea midline. Dull instead → effusion, consolidation, haemothorax",
-    "Tension = hypotension + trachea deviated AWAY + distended neck veins → clinical diagnosis, no imaging: needle decompression 4th/5th ICS anterior axillary line (2nd ICS MCL traditional alternative), then intercostal catheter — decompression is temporising",
-    "Drain: safe triangle, 5th ICS anterior to mid-axillary line, small-bore 8–14 Fr; symptomatic or unstable → intervene; otherwise conservative/ambulatory with review",
-    "Recurrence ~30%, mostly within 1–2 years; vaping/smoking cessation is the single best prevention",
-    "Flying: not until resolved, typically a week beyond; diving: never without definitive surgery",
-    "Variant 2 HCM: central tightness on running, eased on stopping, near-syncope, uncle died in sleep at 38, NOT pleuritic → ECG + echo; autosomal dominant, commonest cause of SCD in young athletes; ESM louder on standing/Valsalva, softer on squatting (opposite of AS); ECG LVH, deep narrow Q, TWI; cardiology, no competitive sport, avoid dehydration/nitrates/diuretics, screen first-degree relatives",
-    "Variant 3 traumatic haemopneumothorax: tackle, bruising, focal rib tenderness, DULL base → large-bore IV, G&H/cross-match, FBE, coags, erect CXR ± CT, large-bore tube, surgeons early (ongoing drain loss = theatre), check flail segment and sub-diaphragmatic injury",
-    "Variant 4 pericarditis: two days, central, better leaning forward, worse flat, post-viral, febrile, rub with resonant chest → ECG (saddle STE, PR depression), troponin, inflammatory markers, echo for effusion; NSAID + colchicine, exercise restriction",
-    "Safety-net: more breathless, worse pain, faint, racing heart, blue lips/fingers → 000"
+   "ddx": [
+    [
+     "**Primary spontaneous pneumothorax**",
+     "Tall thin young man; sudden sharp unilateral **pleuritic** pain with breathlessness; smoking or vaping",
+     "**Reduced expansion, hyper-resonance, absent breath sounds, reduced vocal resonance, trachea MIDLINE**",
+     "**Erect chest X-ray.** Manage by symptoms and stability, not size alone — same day"
+    ],
+    [
+     "**Tension pneumothorax**",
+     "The above **plus hypotension, severe distress, distended neck veins, trachea deviated away**",
+     "Blood pressure, trachea, JVP, oxygen not correcting",
+     "**Clinical diagnosis — immediate needle decompression then a chest drain. DO NOT IMAGE FIRST** — emergency"
+    ],
+    [
+     "**Hypertrophic cardiomyopathy**",
+     "Chest tightness, breathlessness, palpitations, **presyncope or syncope during exertion**; **family history of sudden cardiac death**",
+     "The sudden-death question; exertional syncope; **an ejection systolic murmur that increases on standing and Valsalva and decreases on squatting — the opposite of aortic stenosis**",
+     "**ECG then echocardiogram, which is diagnostic.** Cardiology, no competitive sport until cleared, screen first-degree relatives — urgent"
+    ],
+    [
+     "Pericarditis · myocarditis",
+     "Recent viral illness; **pleuritic pain relieved by leaning forward**, worse lying flat; fever; friction rub",
+     "**The leaning-forward question**; fever; rub on auscultation",
+     "ECG — widespread saddle ST elevation with PR depression — troponin, inflammatory markers, echo. **The main competitor on pain character alone** — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Pleuritic pain, breathlessness, calf swelling or pain, immobility, long travel, thrombophilia, haemoptysis",
+     "Calf symptoms and asymmetry; risk factors; tachycardia and hypoxia",
+     "**Wells score, then D-dimer or CTPA. Stays on the list of every pleuritic chest pain** — emergency"
+    ],
+    [
+     "**Traumatic pneumothorax · haemopneumothorax · rib fracture**",
+     "**A tackle or blow during the sport**; chest wall bruising and focal bony tenderness",
+     "**'What exercise were you doing? Did you take a knock?'** — he volunteers it only if asked",
+     "CXR and consider CT. **Dullness rather than hyper-resonance means blood in the pleural space** — urgent"
+    ],
+    [
+     "Acute coronary syndrome · aortic dissection",
+     "Central heavy or tight pain radiating to jaw or arm, sweating, nausea; or sudden tearing pain to the back with unequal blood pressures",
+     "Character and radiation; **cocaine or amphetamine use in the young**; BP in both arms; Marfan phenotype",
+     "ECG and serial troponin; CT aortogram. **Less likely here — sharp, pointable, pleuritic, non-radiating** — emergency"
+    ],
+    [
+     "Aortic stenosis · heart failure · congenital disease",
+     "Exertional pain, breathlessness or syncope with an ejection systolic murmur; or orthopnoea, PND, ankle swelling",
+     "Fainting on exercise; murmur; JVP, apex, oedema",
+     "Echocardiogram, CXR, BNP. **Do not delete a differential by age** — urgent"
+    ],
+    [
+     "Pneumonia · pleurisy · exercise-induced asthma",
+     "Fever, productive cough, focal crackles, **dull** percussion; or wheeze and atopy",
+     "Fever, cough, sputum, focal signs, wheeze",
+     "CXR and inflammatory markers; spirometry with reversibility — same day"
+    ],
+    [
+     "Reflux · oesophageal spasm · peptic ulcer",
+     "Burning retrosternal pain, waterbrash, relation to food, worse lying flat",
+     "**The waterbrash and food-relation questions**; epigastric tenderness",
+     "PPI trial; endoscopy if alarm features. **Never diagnosed before cardiac exclusion**"
+    ],
+    [
+     "Costochondritis · herpes zoster",
+     "Reproducible tenderness, worse on movement or twisting; or **burning dermatomal pain before the rash appears**",
+     "'Is it worse when I press?'; inspect the skin",
+     "Clinical — but **reproducible tenderness never excludes a pneumothorax sitting behind it**. Antivirals within 72 h of the rash"
+    ],
+    [
+     "Panic attack · anxiety",
+     "Situational, palpitations, perioral and finger tingling, dread, hyperventilation",
+     "Stress and mood — **asked at the end, never first**",
+     "**A diagnosis of exclusion. Naming it in a hypoxic patient is a serious error**"
+    ]
    ]
   },
   "source": "Chest_Pain_Pneumothorax_2_Case_Tasks_Script_Notability 2.pdf",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Chest_Pain_Pneumothorax_2_Case_Tasks_Script_Notability 2.pdf",
   "findings": [
    [
-    "Observations (ask for them)",
-    "He is ALREADY ON OXYGEN when you enter — ask what he is on, and for the full set with saturations"
+    "Vital signs, before a word of history",
+    "HR 98 · BP 122/74 · RR 22 · SpO2 94% · T 36.8 · alert and orientated. He is ALREADY ON OXYGEN when you enter — ask what he is on, and for saturations BOTH on air and on oxygen"
    ],
    [
-    "The finding is an absence",
-    "A simple pneumothorax on a good film shows a LUNG EDGE with NO LUNG MARKINGS BEYOND IT — you are looking for what is missing, not for something added"
+    "General appearance",
+    "No respiratory distress, no cyanosis, alert and not drowsy"
    ],
    [
-    "Chest X-ray, Version A at five minutes",
-    "LEFT pneumothorax: visible lung edge, no markings peripheral to it, air in the pleural space; TRACHEA CENTRAL and no mediastinal shift — so NOT a tension"
+    "Respiratory — inspection and palpation",
+    "DECREASED CHEST EXPANSION ON THE LEFT. No chest wall bruising, no focal bony tenderness"
+   ],
+   [
+    "TRACHEA — ask for it BY NAME",
+    "MIDLINE, NOT DISPLACED. Requesting 'a respiratory examination' gets you air entry and percussion and nothing else. This is the single finding you are passed or failed on"
+   ],
+   [
+    "Percussion of both lung fields",
+    "HYPER-RESONANT ON THE LEFT. Hyper-resonance is what tells you AIR rather than fluid or consolidation, which would be DULL"
+   ],
+   [
+    "Auscultation",
+    "BREATH SOUNDS ABSENT ON THE LEFT. No pleural rub"
+   ],
+   [
+    "Vocal resonance",
+    "DECREASED ON THE LEFT"
+   ],
+   [
+    "Cardiovascular, abdomen, lower limbs",
+    "JVP not raised, apex not displaced, S1 and S2 normal, no murmur · abdomen normal · NO leg oedema and NO calf asymmetry — pulmonary embolism is still on the list"
+   ],
+   [
+    "ECG",
+    "PENDING. Ask anyway — it shows you have not abandoned the cardiac differentials, and in the hypertrophic cardiomyopathy variant it is the test that changes the station"
+   ],
+   [
+    "Chest X-ray, version A at the 5-minute prompt",
+    "LEFT pneumothorax — a VISIBLE LUNG EDGE with NO LUNG MARKINGS BEYOND IT, air in the pleural space. TRACHEA CENTRAL. Costophrenic angle sharp on the normal side"
+   ],
+   [
+    "The finding is an ABSENCE, not a blackness",
+    "Absent lung markings beyond a visible thin pleural line. TRACE THE WHOLE PERIPHERY OF BOTH LUNGS, apex to costophrenic angle — the subtle recall film has the pneumothorax AT THE APEX and looks normal at a glance"
+   ],
+   [
+    "Tension variant, mid-station",
+    "BP 84/52 · HR 132 · SpO2 88% on 15 L · DISTENDED NECK VEINS · TRACHEA DEVIATED TO THE RIGHT. Stop the history — this is a CLINICAL diagnosis"
+   ],
+   [
+    "Traumatic variant",
+    "Bruising over the left lower ribs, focal bony tenderness, and DULL percussion at the base — blood in the pleural space, not air"
    ]
   ],
-  "findingsLabel": "Examination and the film — open when you would ask",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "SAY — 'That's a sharp, well-localised pain, worse on breathing in — we call that pleuritic, and it points me towards your lungs rather than your heart' — a marked moment; say the word out loud",
-   "FAIL — Not naming the trachea — in the X-ray script comment on it even when central; in Version B 'is the trachea midline or deviated?' is the pass-or-fail question. If deviated with hypotension: needle decompression, never 'an urgent X-ray to confirm'",
-   "FAIL — Shortcutting to lung questions once 'pleuritic' is reached — run the full cardiovascular block anyway; the structure is the mark",
-   "DO — The three named modifiers after the open question: deep breath? rest versus activity? leaning forward? — patients answer 'nothing really' to the open version",
-   "DO — Sudden cardiac death asked inside the cardiac block, not at the end where it is lost — and 'what exercise, and did you take a knock?', which separates spontaneous from traumatic",
-   "FAIL — Never finishing the differential list — diagnosis in 30–40 seconds, three reasons, three differentials with a reason each, then rattle the rest; this is the block candidates lose"
-  ]
+   "FAIL — Never asking about the trachea. It is the pass-or-fail finding.",
+   "FAIL — Imaging a tensioning patient instead of decompressing immediately.",
+   "FAIL — Deleting the cardiac block because he is 22.",
+   "FAIL — Missing exertional syncope and carrying on with the pneumothorax script.",
+   "ASK — Deep breath worse? Rest or activity? Leaning forward? All three, by name.",
+   "ASK — What exercise were you doing, and did you take a knock to the chest?"
+  ],
+  "v2": true
  },
  {
   "id": "MED-12",
   "cat": "med",
   "promptBell": false,
-  "setting": "Emergency Department.",
   "stem": [
    "Your next patient is a 25-year-old man brought to the Emergency Department with sudden-onset chest tightness and shortness of breath that began while watching a movie at home. He has had similar episodes before and was told nothing was wrong. His parents are separated, he lives alone, works as an accountant, and has been under stress.",
    "Vitals: T 36.7 · HR 96 · BP 126/78 · RR 18 · SpO2 99% RA · alert, anxious."
@@ -6377,98 +6481,212 @@
    "Explain your differential diagnoses to the patient",
    "Explain the pathophysiology of the condition"
   ],
-  "time": "10 minutes. History 6:00 · diagnosis 1:00 · differentials 1:15 · pathophysiology 1:15 · management and close 0:30.",
   "back": {
-   "dx": "Panic attack → PANIC DISORDER with agoraphobic avoidance (Daniel Pike, 25). Peak within 5–10 minutes, settled over half an hour; pounding heart, sweating, dizziness, trembling, PERIORAL AND FINGER TINGLING (hyperventilation fingerprint), derealisation. Five or six attacks over three months, mostly out of the blue (desk, train, supermarket queue); two prior ED visits with normal tests. Three key questions make the diagnosis: fear of dying? worried about another? changed behaviour? (stopped cinema, drives instead of train). Also: 5–6 coffees + energy drinks; 'I'm generally an anxious person' (bait for GAD — screen by criteria, don't relabel). The trap: the psychosocial stem is bait — run a CHEST PAIN history and reach the psychogenic bucket LAST. Hidden agenda: convinced doctors keep missing a heart problem; privately frightened he's going mad.",
+   "dx": [
+    "**Panic attack occurring within a panic disorder**, with **early agoraphobic avoidance**, in a 25-year-old under psychosocial stress.",
+    "**The trap the whole station is built on: the psychosocial detail in the stem is bait.** Candidates who recognise the recall walk in and take a full psychiatric history — mood, sleep, appetite, psychosis screen — **and fail**. **This is a chest pain and shortness of breath presentation. You approach a case from the complaint, not from the diagnosis you remember**, and **psychogenic causes sit at the END of the chest pain list**, which is where you reach them legitimately.",
+    "**Panic attack: an abrupt surge of intense fear or discomfort peaking within minutes — typically under ten — with four or more of thirteen physical symptoms, characteristically including a fear of dying or of losing control.** Name the cluster and the fear of dying; **you are not expected to recite thirteen items**.",
+    "**Panic disorder: recurrent unexpected attacks PLUS, for at least one month, persistent worry about further attacks OR a maladaptive change in behaviour to avoid them.** **Agoraphobia: fear or avoidance of two or more of — public transport, open spaces, enclosed spaces, queues or crowds, being outside the home alone — typically six months or more.**",
+    "**The three key questions, word for word**: **'During the attack, did you feel that you were going to die — were you afraid of dying?' · 'Since then, have you been worried about having another attack?' · 'Have you changed any of your routines or your behaviour because of that worry?'** **Question 1 names the attack; questions 2 and 3 convert it into the disorder.** Without them you cannot justify the diagnosis you are about to give.",
+    "**Do not convert to GAD on 'I'm generally an anxious person.'** **GAD requires excessive, hard-to-control worry about multiple everyday matters for at least six months, with restlessness, fatigue, poor concentration, irritability, muscle tension or sleep disturbance — and prominent discrete physical attacks are NOT a core feature.** The two can coexist; **the attacks define this presentation**.",
+    "**When asked for differentials, give the differentials of the COMPLAINT** — cardiovascular, respiratory, gastrointestinal, musculoskeletal — **not a list of anxiety disorders**. Listing GAD, OCD, PTSD and adjustment disorder is the wrong answer; one or two psychiatric alternatives at the end are fine.",
+    "**The pathophysiology task is the one nobody rehearses.** Patient version: **your body has an alarm system — fight or flight. When it fires you release adrenaline: heart pounding, breathing faster, muscles tense, sweating. In a panic attack the alarm goes off when there is no danger. Then, because you feel you can't breathe, you over-breathe, which blows off carbon dioxide and causes the tingling in your fingers and around your mouth, the dizziness and the unreal feeling. And those sensations feel so much like a heart attack that your brain reads them as proof something terrible is happening — which fires the alarm again. That's the vicious cycle.** **It is real, not imagined — and it is not dangerous.**",
+    "Examiner version if asked technically: **a perceived threat activates the amygdala and sympathetic nervous system, producing a catecholamine surge with tachycardia, raised cardiac output, sweating and tremor. Hyperventilation causes hypocapnia and respiratory alkalosis; cerebral vasoconstriction produces light-headedness and derealisation, and the fall in ionised calcium produces perioral and peripheral paraesthesiae and, if severe, carpopedal spasm. Catastrophic misinterpretation amplifies fear in a positive feedback loop, and repeated attacks produce conditioned anticipatory anxiety and avoidance.**",
+    "Management: **validate and explain — that is itself therapeutic → CBT is first line, with breathing retraining, cognitive work on the catastrophic interpretation, and graded exposure to avoided situations → a GP Mental Health Treatment Plan for subsidised sessions → an SSRI if needed, started low and increased slowly, warning that anxiety can briefly worsen in the first week or two and benefit takes several weeks → AVOID benzodiazepines beyond very short-term use, because of dependence and because they become a safety behaviour that reinforces avoidance → cut caffeine, energy drinks, alcohol and stimulants → GP follow-up and safety-net.** **NEVER say 'there's nothing wrong with you', 'it's all in your head', 'it's just stress, try to relax', or 'your tests are normal so you can go home'** — each is a marked communication failure. SA: **telehealth CBT and online programs matter more where psychology access is limited**; Aboriginal Liaison Officer or a local Aboriginal health service; **Closing the Gap PBS** if an SSRI is started. VERIFY"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals → open question → acknowledge the 'nothing wrong' frustration explicitly → signpost: tightness, then breathing, then rule out important causes"
+     "To the examiner: **'may I have his vital signs — blood pressure, pulse, respiratory rate, oxygen saturation and temperature?'** Then **say he is stable with a mild tachycardia**."
     ],
     [
-     "0:45",
-     "Full pain analysis INCLUDING 'how long did it take to reach its worst?' and how it settled"
+     "0:20",
+     "Open question, then **acknowledge the frustration explicitly — it buys the rapport you need for the diagnosis later**: **'I can hear how worrying this is, especially as it's happened before and you were told nothing was wrong. That's a frustrating place to be. Let's go through it properly and find the cause.'** Then signpost: **chest tightness first, then the breathing, then questions to rule out the important causes.**"
     ],
     [
-     "1:45",
-     "Breathlessness in three questions"
+     "0:50",
+     "Full pain analysis — **and do not skip the trajectory question**: **where exactly · when did it start and how quickly did it come on · HOW LONG DID IT TAKE TO REACH ITS WORST · tight, sharp, heavy or burning · does it go anywhere · out of ten · anything that makes it better or worse, breathing, moving, position, pressing · how long did it last and how did it settle?**"
     ],
     [
-     "2:15",
-     "CVS + RS sweep (note the tingling — use it later); GI, MSK/rash; caffeine/energy drinks QUANTIFIED, drugs, alcohol, recently stopped anything; thyroid symptoms"
+     "2:00",
+     "Breathlessness folded in, **three questions only — do not re-time it**: **what do you mean by shortness of breath — difficulty getting air in, not getting enough, or tightness · anything that made it better or worse · any cough or noisy breathing?**"
     ],
     [
-     "3:45",
-     "ANNOUNCE the negative organic screen out loud, then ask permission to move to the episodes"
+     "2:20",
+     "Cardiovascular and respiratory sweep: **any sweating, nausea, racing heart or dizziness with it · smoking, blood pressure, diabetes, cholesterol, family heart disease · any fever or recent flu-like illness, and is it better sitting up and leaning forward · breathless lying flat, how many pillows, leg swelling, ever fainted especially on exertion · any long travel or sitting still, calf swelling or pain, coughing up blood · any injury to your chest · any fevers, chills, phlegm, weight loss or lumps?** **Note the perioral and finger tingling — it is the fingerprint of hyperventilation, and you will use it in the mechanism.**"
+    ],
+    [
+     "3:20",
+     "GI, musculoskeletal, drugs and endocrine — **the rows candidates drop because 'it's obviously anxiety'**: **any abdominal pain or vomiting, acid or bitter taste, heartburn, relation to eating · worse on moving or pressing, any rash · how much coffee or energy drink in a day, any recreational drugs, how much alcohol, have you recently stopped anything · any weight loss, feeling hot all the time, tremor or loose bowels?**"
     ],
     [
      "4:00",
-     "Characterise: how many, over what period, out of the blue or triggered, what was happening in the film, trembling/choking/unreal"
+     "**Announce the negative organic screen out loud — this is the transition that earns the diagnosis honestly**: **'I've asked about your heart, your lungs, your stomach and your chest wall, and I haven't found anything pointing that way, which is reassuring. Now I'd like to ask about the episodes themselves.'** Then: **how many, over what period · out of the blue or always a trigger · what was happening in the film · any trembling, choking, or a sense things aren't real?**"
     ],
     [
      "4:45",
-     "THE THREE KEY QUESTIONS verbatim → agoraphobia screen → GAD by criteria → stressors → mood → self-harm"
+     "**The three key questions, verbatim and in sequence.** Ask all three. **Question 1 names the attack; 2 and 3 name the disorder.**"
+    ],
+    [
+     "5:15",
+     "**The agoraphobia screen** — places you now avoid, public transport, crowds, queues, being far from home alone, **and whether the avoidance is because you fear an attack there**. Then **the GAD criteria asked properly rather than assumed**, the stressors in one or two questions, mood, and **a brief, calm risk question** — fifteen seconds, matter-of-factly, with a response if positive."
     ],
     [
      "6:00",
-     "Diagnosis: attack, then disorder; 'your symptoms are real'; 'not in your head — in your body' → differentials of CHEST PAIN with why each is less likely (still do ECG, TFTs) → pathophysiology (alarm system, adrenaline, over-breathing/CO2, vicious cycle; peaks ~10 min, not dangerous) → CBT, MHTP, SSRI low and slow if needed, no benzos, cut caffeine, limit tests, safety-net"
+     "Diagnosis, at **both levels**: **'what you've had is a panic attack'** — then the worry and avoidance — **'when that whole pattern is present, we call it panic disorder.'** Then **validate**: **'your symptoms are real. The tests being normal doesn't mean nothing happened.'** If he asks **'is it all in my head?'** — **'no, it's in your body.'**"
+    ],
+    [
+     "7:00",
+     "**Differentials of the complaint, with why each is less likely**: heart attack or angina — 25, no risk factors, not exertional, no radiation, but we'll still do a tracing · clot on the lung — no travel, no leg symptoms, normal oxygen · collapsed lung — no injury · pericarditis — no viral illness, no positional change · **a rhythm disturbance, which is another reason for the tracing** · reflux or ulcer — no heartburn, no meal relation · chest wall — pressing doesn't reproduce it · and **two to check on bloods: thyrotoxicosis, and the caffeine.**"
+    ],
+    [
+     "8:15",
+     "**The pathophysiology, in the patient version** — alarm, adrenaline, over-breathing, the tingling and unreality, then the catastrophic misinterpretation that fires the alarm again. **Check understanding once in the middle, not only at the end**, and draw it if you can."
+    ],
+    [
+     "9:30",
+     "Management and close: **CBT first line with a mental health plan · an SSRI if needed, low and slow · avoid sedatives · cut the coffee right down · ECG and bloods today, and say why you will stop there.** Safety net: **come back if the pattern changes, or you get pain with exercise, faint, or cough up blood.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "Where exactly? When and how quickly? How long did it take to reach its worst? ★ Tight/sharp/heavy/burning? Travel? Out of ten? Better or worse — breathing, moving, position, pressing? How long, how did it settle?",
-    "What do you mean by shortness of breath? Better/worse? Cough, noisy breathing, wheeze?",
-    "Sweating, nausea, racing, dizziness with it? Smoke, BP, DM, lipids, family heart disease? Fever/flu, better leaning forward? Flat/pillows/leg swelling, ever fainted esp. exercise? Long travel/sitting still, calf swelling/pain, haemoptysis? Chest injury? Fevers, chills, phlegm, weight loss, lumps?",
-    "Abdominal pain, vomiting, acid/heartburn, related to eating? Worse on moving or pressing? Rash?",
-    "How much coffee or energy drink a day? ★ Recreational drugs, alcohol? Recently stopped anything? Weight loss, feeling hot, tremor, loose bowels?",
-    "'I've asked about your heart, lungs, stomach and chest wall and haven't found anything pointing that way — now I'd like to ask about the episodes themselves. Is that all right?' ★",
-    "How many, over what period? Out of the blue or a trigger? What was happening in the film? Trembling, choking, things not quite real?",
-    "During the attack, did you feel you were going to die — were you afraid of dying? ★",
-    "Since then, have you been worried about having another attack? ★",
-    "Have you changed any routines or behaviour because of that worry? ★",
-    "Places you avoid — public transport, crowds, queues, shopping centres, far from home alone? Apart from the attacks, excessive hard-to-control worry about everyday things — how long? Restless, tired, irritable, tense, poor sleep? What's been happening at home and work? Mood? Thoughts of harming yourself, or that life isn't worth living?"
-   ],
    "pefe": [
-    "No examination task. Investigations: ECG · FBC, electrolytes/renal, TFTs, glucose · drug screen if indicated — then STOP; 'I don't want to keep repeating tests, because that feeds the worry'",
-    "Differentials of the COMPLAINT, each with why it's less likely: ACS/angina (25, no risk factors, non-exertional, no radiation — still ECG) · PE (no travel, no calf, no haemoptysis, sats normal) · pneumothorax (no injury, normal exam/sats) · pericarditis (no viral illness, no positional change) · arrhythmia (possible — ECG) · reflux/ulcer (no heartburn, no meal relation) · chest wall (pressing doesn't reproduce) · thyrotoxicosis and caffeine (bloods) · GAD possible alongside — the attacks define it",
-    "Technical pathophysiology if asked: amygdala/sympathetic activation → catecholamine surge (tachycardia, ↑CO, sweating, tremor); hyperventilation → hypocapnia, respiratory alkalosis → cerebral vasoconstriction (light-headedness, derealisation), ↓ionised Ca (perioral/peripheral paraesthesiae, carpopedal spasm); catastrophic misinterpretation → positive feedback; conditioned anticipatory anxiety and avoidance → panic disorder → agoraphobia"
+    "**Vital signs first** — and note that normal saturations and observations are part of your evidence, not just a formality.",
+    "**ECG in every chest pain presentation** — it is also a genuine differential test here, because **an arrhythmia such as SVT mimics panic closely and is easy to miss**.",
+    "**Bloods: FBC, electrolytes and renal function, thyroid function, glucose.** **Thyrotoxicosis is the classic organic mimic of anxiety** and must be excluded before you settle.",
+    "**Troponin only if the story or the ECG warrants it.**",
+    "**Urine drug screen where stimulant use is suspected** — asked non-judgementally, and disclosure handled without moralising.",
+    "**Chest X-ray only if a respiratory cause is genuinely in play.**",
+    "**Holter or ambulatory monitoring** if the palpitations are abrupt in onset and offset and an arrhythmia stays on your list.",
+    "**Then stop — and say why out loud.** **'I don't want to keep repeating tests, because that tends to feed the worry rather than settle it.'** Ordering a CT, echocardiogram and Holter 'to be safe' is a listed fail."
    ],
-   "fails": [
-    "Taking a psychiatric history instead of a chest pain history because you recognised the recall ★",
-    "Not acknowledging the 'nothing wrong' frustration",
-    "Skipping time-to-peak",
-    "Hearing the tingling and moving on",
-    "Omitting caffeine/stimulants and thyroid rows",
-    "Not announcing the negative organic screen before switching",
-    "Saying 'probably anxiety' without the three key questions ★",
-    "Relabelling as GAD on 'I'm an anxious person'",
-    "'It's just anxiety' / 'there's nothing wrong' / 'try to relax' — marked communication failures ★",
-    "Differentials given as a list of anxiety disorders",
-    "Prescribing benzodiazepines; repeating investigations"
-   ],
-   "numbers": [
-    "Panic attack: abrupt surge peaking within minutes (typically <10), ≥4 of 13 symptoms, characteristically fear of dying/losing control",
-    "Panic disorder: recurrent unexpected attacks + ≥1 month of worry about further attacks OR maladaptive behaviour change",
-    "Agoraphobia: fear/avoidance of ≥2 of public transport, open spaces, enclosed spaces, queues/crowds, outside home alone; typically 6 months",
-    "GAD: excessive hard-to-control worry about multiple matters ≥6 months with restlessness, fatigue, poor concentration, irritability, tension, sleep disturbance — discrete attacks not a core feature",
-    "Organic mimics: arrhythmia · thyrotoxicosis · hypoglycaemia · asthma · stimulant use or withdrawal",
-    "Management: validate → CBT first line → Mental Health Treatment Plan → SSRI if needed, start low go slow, warn of early worsening → avoid benzodiazepines (dependence, safety behaviour reinforcing avoidance) → cut caffeine/alcohol/stimulants → follow-up",
-    "'Will I have to take tablets forever?' — CBT is first line; medication only if needed and reviewed",
-    "Variant 1 lifelong worrier: panic disorder primary, possible comorbid GAD — name and treat the attacks first, same approach helps both",
-    "Variant 2 snake scene, lifelong fear: specific phobia — triggered attack, similar therapy",
-    "Variant 3 organic swap: pleuritic pain, 16-hour drive, right calf ache, SpO2 93% → Wells, CTPA, treat as PE until proven otherwise"
+   "ddx": [
+    [
+     "**Panic attack ± panic disorder**",
+     "**Peaks within minutes**, fear of dying, tingling, recurrent identical episodes, previous normal workup, psychosocial stress",
+     "**The three key questions**; avoidance; trigger; the symptom cluster",
+     "**A diagnosis of inclusion on criteria — but only after organic exclusion.** ECG and basic bloods normal — same day"
+    ],
+    [
+     "Acute coronary syndrome",
+     "Heavy central pain, radiation, sweating, nausea, exertional",
+     "Risk factors, ECG, troponin",
+     "ECG ± troponin. **Very unlikely at 25 with no risk factors — but ask about stimulants** — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Pleuritic pain, breathlessness, tachycardia, hypoxia, immobility, calf swelling",
+     "Travel, leg symptoms, haemoptysis, **saturations**",
+     "**Wells score, CTPA if likely.** Saturations are 99% here — urgent"
+    ],
+    [
+     "Pneumothorax",
+     "Sudden pleuritic pain and breathlessness in a tall young man",
+     "Trauma, reduced breath sounds, hyper-resonance",
+     "Chest X-ray; examination normal here — urgent"
+    ],
+    [
+     "Pericarditis",
+     "Pleuritic pain **relieved by leaning forward**, recent viral illness",
+     "Fever, friction rub, ECG changes",
+     "ECG, echocardiogram; **no positional relief here** — same day"
+    ],
+    [
+     "**Arrhythmia, e.g. supraventricular tachycardia**",
+     "**Abrupt palpitations with chest tightness, sudden start and stop**",
+     "Rate during the episode; ECG during symptoms",
+     "ECG, Holter monitor — **a genuine mimic of panic symptoms and easy to miss** — same day"
+    ],
+    [
+     "Asthma",
+     "Breathlessness, chest tightness, wheeze, triggers",
+     "Cough, noisy breathing, atopy, diurnal variation",
+     "Spirometry; no wheeze or cough here"
+    ],
+    [
+     "Gastro-oesophageal reflux · peptic ulcer",
+     "Burning, acid taste, relation to meals or lying flat",
+     "Waterbrash, night symptoms",
+     "Trial of therapy; negative here"
+    ],
+    [
+     "Costochondritis · musculoskeletal",
+     "Localised, reproducible on movement or pressure",
+     "Chest wall tenderness",
+     "Clinical; negative here"
+    ],
+    [
+     "**Thyrotoxicosis**",
+     "Palpitations, tremor, heat intolerance, weight loss, anxiety",
+     "Goitre, tremor, tachycardia, lid lag",
+     "**Thyroid function tests — the classic organic mimic of anxiety**"
+    ],
+    [
+     "**Stimulant use or withdrawal**",
+     "Caffeine, energy drinks, amphetamines, cocaine; alcohol or benzodiazepine withdrawal",
+     "**Quantified intake**, recent cessation",
+     "History and urine drug screen where indicated — **five or six coffees a day is certainly contributing** — same day"
+    ],
+    [
+     "Generalised anxiety · specific phobia · adjustment disorder",
+     "Pervasive worry; a fear cued by a specific stimulus; onset within 3 months of an identifiable stressor",
+     "The GAD criteria; **what the trigger actually was**; timeline against the stressor",
+     "**Criteria-based — and they may coexist with panic disorder rather than replace it**"
+    ]
    ]
   },
   "source": "Panic_Attack_2_Case_Tasks_Script_Notability.pdf",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Panic_Attack_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Taking a psychiatric history because you recognised the recall — the psychosocial stem is bait; take a chest pain history and reach the psychogenic block last",
-   "FAIL — Saying 'probably anxiety' without the three key questions: afraid of dying during it? worried about another? changed your routines because of that worry? — never volunteered, and all three are marked",
-   "FAIL — 'There's nothing wrong', 'it's just stress' or 'try to relax' — the role-player withdraws and marks it a fail; the line is 'it's not in your head, it's in your body'",
-   "SAY — 'I've asked about your heart, your lungs, your stomach and your chest wall and haven't found anything pointing that way — now I'd like to ask about the episodes themselves' — announce the negative organic screen before switching",
-   "FAIL — Differentials as a list of anxiety disorders — give the differentials of chest pain with why each is less likely; and don't relabel 'I'm generally an anxious person' as GAD without the criteria",
-   "DO — Quantify caffeine and stimulants, and ask thyroid symptoms — the two organic mimics the examiner will probe; then an ECG, TFTs and baseline bloods, and stop"
-  ]
+   "FAIL — Running a psychiatric history from minute one because you recognised the recall.",
+   "FAIL — Never excluding the killers before naming anxiety.",
+   "FAIL — Missing the three key questions, so the disorder is never earned.",
+   "FAIL — 'There's nothing wrong with you' / 'it's just stress, try to relax.'",
+   "ASK — Felt you were going to die? Worried about another? Changed your routines?",
+   "ASK — How much coffee or energy drink a day? And the thyroid three."
+  ],
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs, before the first question",
+    "T 36.7 · HR 96 · BP 126/78 · RR 18 · SpO2 99% on room air · alert, appears anxious. Stable with a mild tachycardia — SAY SO out loud"
+   ],
+   [
+    "What the history yields — the trajectory",
+    "PEAK WITHIN FIVE TO TEN MINUTES, then settling over about half an hour. NO OTHER CHEST PAIN FOLLOWS THAT COURSE"
+   ],
+   [
+    "What the history yields — the cluster",
+    "Pounding heart · sweating · dizziness · TREMBLING · TINGLING IN THE FINGERS AND AROUND THE MOUTH · a sense that things were not real"
+   ],
+   [
+    "The three key answers, when you ask for them",
+    "'I genuinely thought I was dying — I thought it was a heart attack' · 'I worry about the next one every single day' · 'I've stopped going to the cinema and I drive instead of taking the train'"
+   ],
+   [
+    "The stimulant load",
+    "FIVE OR SIX COFFEES A DAY plus energy drinks when work is busy. No illicit drugs, a few beers on weekends"
+   ],
+   [
+    "ECG",
+    "In EVERY chest pain presentation — and it reassures. Normal here"
+   ],
+   [
+    "Bloods",
+    "FBC · electrolytes and renal function · THYROID FUNCTION · glucose. Troponin ONLY if the story or the ECG warrants it"
+   ],
+   [
+    "Urine drug screen · chest X-ray",
+    "Drug screen where stimulant use is suspected. CXR only if a respiratory cause is genuinely in play"
+   ],
+   [
+    "Then STOP — and say why",
+    "'I don't want to keep testing you unnecessarily — that tends to make the worry worse, not better.' Repeated normal investigations in health anxiety BECOME part of the problem"
+   ],
+   [
+    "Organic-swap variant",
+    "Same stem, but the pain is PLEURITIC, he drove sixteen hours last week, his RIGHT CALF ACHES and SpO2 is 93% — that is a PULMONARY EMBOLISM, and the structure is what protects you"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-13",
