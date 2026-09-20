@@ -19022,9 +19022,8 @@
  {
   "id": "MED-78",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Regional South Australian general practice. No observations recorded. Prompt at 4 minutes to move to examination; a throat photograph is handed over when you request the throat examination.",
   "stem": [
    "Jane Whitmore, 25, retail assistant, has come in with a sore throat and is asking for something stronger for the pain."
   ],
@@ -19034,132 +19033,205 @@
    "Explain your most likely diagnosis, with your reasons, to the patient",
    "Explain your management plan to the patient"
   ],
-  "time": "8 minutes. Surface the request in the first minute · ★ 'one side, both, or all the way across?' · ENT screen · ★ red-flag block: saliva/drooling, ★ 'too painful to swallow, or physically won't go down?', muffled voice, noisy breathing, mouth opening, neck, headache/photophobia/rash · cough, gut, ★ spleen, sexual health · ★ rheumatic fever / ATSI as a named question · examination by component with reasons, ★ 'specifically, is there splenomegaly?' · photograph: describe (unilateral palatal swelling, uvula deviated) then diagnose · quinsy in plain words with three reasons · ★ drainage is the treatment — ED by ambulance today · answer the pain request · safety-net · check-back.",
+  "findings": [
+   [
+    "General appearance",
+    "ALERT, WELL HYDRATED. NO DROOLING, NO STRIDOR, NO RASH"
+   ],
+   [
+    "Vital signs",
+    "T 38.5 · PULSE 96 · BP 122/76 · SpO2 98%. T 38 or over is a Centor feature. No observations are given at the door — YOU MUST ASK"
+   ],
+   [
+    "Ears, nose and sinuses",
+    "Otoscopy NORMAL BOTH EARS — a normal drum with ear pain means REFERRED OTALGIA, not otitis media. Nose and sinuses normal"
+   ],
+   [
+    "Neck",
+    "TENDER ENLARGED RIGHT ANTERIOR CERVICAL NODES. Tender anterior nodes point bacterial; POSTERIOR nodes point to EBV"
+   ],
+   [
+    "Chest, heart, abdomen",
+    "Chest clear, heart sounds normal. ABDOMEN SOFT, NO ORGANOMEGALY — ask for the spleen BY NAME. Omitting it is a documented fail"
+   ],
+   [
+    "The throat PHOTOGRAPH, in two words",
+    "UNILATERAL SWELLING OF THE SOFT PALATE ABOVE THE TONSIL, and THE UVULA IS DEVIATED TO THE OPPOSITE SIDE. That is the reading. Everything else is decoration"
+   ],
+   [
+    "The bedside triad she gives on history",
+    "TRISMUS — 'my jaw feels tight' · MUFFLED VOICE — 'like a hot potato' · IPSILATERAL OTALGIA — right ear aches. Plus TRUE DYSPHAGIA: 'it won't go down, it feels blocked'"
+   ],
+   [
+    "Painful ≠ difficult",
+    "She says 'I can't eat' and STOPS. She only says 'it won't go down, it feels blocked' IF YOU ASK THE DISAMBIGUATING QUESTION. Odynophagia is the sore throat; DYSPHAGIA MEANS OBSTRUCTION"
+   ],
+   [
+    "Her hidden agenda",
+    "SHE IS TERRIFIED OF HOSPITALS — her mother went in and did not come out. Volunteered only if you ask about worries or concerns, and she becomes tearful"
+   ],
+   [
+    "IF THE AIRWAY TURNS",
+    "Drooling, leaning forward, noisy breathing → STOP THE HISTORY. Sit upright, oxygen, nil by mouth, DO NOT INSTRUMENT THE THROAT WITH A SPATULA, emergency call to anaesthetics and ENT, and MedSTAR 1300 13 12 33. Saying this aloud is worth more than any remaining history mark"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the findings and the photograph",
+  "must": [
+   "FAIL — Managing an abscess with oral antibiotics and a three-day review.",
+   "FAIL — Missing airway red flags, or instrumenting the throat when epiglottitis is possible.",
+   "FAIL — Prescribing with no rheumatic fever question, or amoxicillin where EBV is possible.",
+   "FAIL — No safety net, or never answering the request written into the stem.",
+   "ASK — Is the pain on one side, both sides, or all the way across?",
+   "ASK — Is it too painful to swallow, or does food physically not go down?"
+  ],
   "back": {
-   "dx": "Peritonsillar abscess (quinsy). Three days of severe right-sided sore throat (9/10), worse since yesterday, referred otalgia, hot and shivery, true dysphagia (solids won't go down — on soup since yesterday), 'hot potato' muffled voice, trismus (jaw tight opening wide), tender right anterior cervical nodes; no drooling, no stridor. Examiner: alert, hydrated, T 38.5, HR 96, BP 122/76, SpO2 98%, ears/nose/sinuses normal, chest/heart normal, no organomegaly; photograph — unilateral swelling of the soft palate above the tonsil with the uvula deviated to the opposite side. To her: 'the infection in your tonsil has formed a pocket of pus behind it — an abscess is a sac full of pus — pushing your tonsil across; three reasons: one-sided pain, food won't go down, the swelling pushing the little tag across.' Management led by the definitive step: antibiotics alone won't clear pus — ED now by ambulance, ENT today; local anaesthetic, small cut, drainage (dramatically better afterwards), IV antibiotics (benzylpenicillin + metronidazole), IV fluids, strong analgesia. Answer the stem request: regular paracetamol + NSAID now, stronger in hospital, but pain won't settle until drained. Ambulance urgency calibrated honestly ('not an emergency this minute, but today, with people who can look after your breathing'). Hidden agenda: terrified of hospitals — mother died after an admission. Safety-net en route: noisy breathing, can't swallow saliva/drooling → tell the paramedics. Review in a couple of days; recurrent → ENT discusses tonsillectomy.",
+   "dx": [
+    "**Peritonsillar abscess (quinsy)** — **pus between the tonsillar capsule and the superior constrictor**, usually complicating acute tonsillitis. The commonest deep neck space infection of young adults, typically **polymicrobial — Group A Streptococcus plus oral anaerobes**.",
+    "**The sentence that passes this station: A ONE-SIDED THROAT IS A DRAINAGE PROBLEM, NOT AN ANTIBIOTIC PROBLEM.** **Antibiotics do not treat a collection — it has to be drained.**",
+    "**Read the photograph in two words: UNILATERAL SWELLING and UVULAR DEVIATION.** Add the bedside triad you elicited — **trismus, muffled voice, ipsilateral otalgia.**",
+    "**Odynophagia is painful swallowing — that is the sore throat. DYSPHAGIA means food will not pass, which means obstruction.** Candidates lose the station by hearing 'I can't swallow' and recording it as ordinary throat pain.",
+    "**Do now: 1 assess the airway — upright, oxygen if hypoxic, NIL BY MOUTH · 2 refer the SAME VISIT by ambulance to ED for ENT — do not send her home with a script · 3 analgesia — paracetamol 1 g 6-hourly, max 4 g/day, plus ibuprofen 400 mg 8-hourly with food · 4 IV access and fluids · 5 IV antibiotics after cultures.** VERIFY.",
+    "**IV antibiotics: benzylpenicillin 1.2 g IV 6-hourly PLUS metronidazole 500 mg IV 12-hourly**, or IV amoxicillin–clavulanate. **Severe penicillin hypersensitivity: clindamycin 600 mg IV 8-hourly.** **Step down to oral amoxicillin–clavulanate 875+125 mg 12-hourly to complete 5–7 days.** VERIFY.",
+    "**DRAINAGE is the definitive step** — needle aspiration or incision and drainage under local anaesthetic by ENT or an experienced emergency physician. **Either is accepted; the choice is the ENT team's. The principle you must not get wrong is that the collection has to be drained.**",
+    "**A single dose of dexamethasone is often given in practice for oedema and pain but is NOT a firm guideline recommendation — do not lead with it.** **Discuss tonsillectomy with ENT if abscesses recur.** **GP review within 48–72 hours of discharge.**",
+    "**Answer the request in the stem**: **'you came in for better pain relief, and you will get it — regular paracetamol and an anti-inflammatory now, and stronger relief in hospital. But the pain will not settle properly until the pus is drained, which is why I am not just writing a script.'**",
+    "**Safety net, then ask her to repeat it back**: **cannot swallow saliva or drooling · noisy breathing · voice change · neck swelling or stiffness · climbing fever · rash · not improving by 5–7 days · pain up under the left ribs.** **MedSTAR 1300 13 12 33 · PATS for metropolitan ENT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'I can see you've got a sore throat — that's miserable. May I ask some questions so I know exactly what we're treating? ★ And was there something in particular you were hoping we'd do today?' → stronger pain relief → 'that's exactly what we'll organise; let me work out the cause first'"
+     "WIPE, introduce, **and get the agenda on the table in the first minute: 'was there something in particular you were hoping we'd do today?'** The request is written into the stem — surfacing it at seven minutes means you fail. Then **signpost the whole station.**"
     ],
     [
-     "0:45",
-     "★ 'One side, both, or all the way across?' → right · duration (3 days, worse since yesterday) · /10 (9) · radiates to the ear (yes) · better/worse, tried (paracetamol, an hour)"
+     "0:30",
+     "**Lead with the side — the single most discriminating question: IS THE PAIN ON ONE SIDE OF YOUR THROAT, BOTH SIDES, OR ALL THE WAY ACROSS?** Then **how long · sudden or gradual · getting worse · out of ten · burning or dull · DOES IT TRAVEL ANYWHERE, UP INTO YOUR EAR · what makes it better or worse and what have you tried?**"
     ],
     [
-     "1:30",
-     "ENT screen: fever/chills/sweats (hot, shivery) · ear pain/discharge · nasal discharge colour · facial pain/PND · smell · neck lumps (sore on the right)"
+     "1:20",
+     "**ENT screen in one breath: any fevers, chills or sweats · any ear pain or discharge · runny or blocked nose, and WHAT COLOUR, thin and watery or thick · any pain over the cheeks or forehead · any dripping down the back of the throat · any change in smell · any lumps or bumps in the neck?**"
     ],
     [
      "2:00",
-     "★ Red flags: 'can you swallow your own saliva, or are you drooling?' · 'I can't eat' → ★ 'too painful, or does the food physically not go down?' → won't go down · voice muffled? (hot potato) · noisy breathing? · mouth opens fully? (jaw tight) · neck swelling/stiffness · headache, photophobia, rash"
+     "**The red-flag block — the marks live here:** **can you swallow your own saliva, or are you drooling at all · IS IT TOO PAINFUL TO SWALLOW, OR DOES FOOD PHYSICALLY NOT GO DOWN · has your voice changed, does it sound muffled · any noisy breathing or whistling when you breathe in · CAN YOU OPEN YOUR MOUTH FULLY · any swelling or stiffness in your neck · any headache, dislike of bright light, or a rash?**"
     ],
     [
-     "2:45",
-     "Cough (none), SOB/wheeze · nausea/vomiting/diarrhoea · abdominal pain 'especially under the left ribs' · 'two quick sexual health questions I ask everyone' · ★ 'have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? Do you identify as Aboriginal or Torres Strait Islander?' · meds (thyroid/mental health), allergies esp. penicillin, vaccinations, smoking, work"
+     "2:50",
+     "**The lower respiratory block, which people forget: any cough — bringing anything up, what colour · any shortness of breath, wheeze or chest pain?** **Cough drives the diagnosis both ways: its presence supports viral, its absence is a Centor feature.**"
+    ],
+    [
+     "3:10",
+     "**Gut and spleen: any nausea, vomiting or diarrhoea · any tummy pain, PARTICULARLY UP UNDER THE LEFT RIBS · appetite and fluid intake?** Then **permission and two sexual health questions only: are you sexually active, do you use condoms, any oral sex?**"
+    ],
+    [
+     "3:35",
+     "**Rheumatic fever risk — asked as its own named question, never folded into 'any past medical history':** **have you ever been told you had rheumatic fever or rheumatic heart disease · has anyone in your FAMILY, or anyone living in your HOUSEHOLD · and do you identify as Aboriginal or Torres Strait Islander?**"
+    ],
+    [
+     "3:50",
+     "**Background in one sweep: any medical problems · regular medications, ANYTHING FOR YOUR THYROID OR MENTAL HEALTH · allergies, particularly penicillin · vaccinations including influenza and COVID · smoking and alcohol · work · anyone around you unwell, any travel?** Then **ideas, concerns and expectations — and stop.**"
     ],
     [
      "4:00",
-     "★ Examination by component, in order: general — alert/drowsy, hydration, drooling, stridor, rash · vitals esp. temperature · otoscopy · throat — tonsil size, exudate, symmetry, uvular position, palatal bulge, mouth opening · nose/sinuses · cervical nodes anterior + posterior, neck swelling/stiffness · chest · heart · ★ 'specifically, is there splenomegaly?'"
+     "**Request the examination by component, naming what you seek from each:** **general appearance — alert or drowsy, dehydrated, ANY DROOLING OR STRIDOR, any rash · vital signs, particularly TEMPERATURE, plus pulse, blood pressure, respiratory rate and saturations · ears — otoscopy for redness, bulging or discharge · throat — tonsillar size and exudate, SYMMETRY, THE POSITION OF THE UVULA, any palatal bulge, and HOW FAR SHE CAN OPEN HER MOUTH · nose and sinuses — discharge and its character, sinus tenderness · neck — cervical nodes anterior AND posterior, swelling, stiffness · chest — air entry and added sounds · heart — sounds and murmurs · abdomen — AND SPECIFICALLY, IS THERE SPLENOMEGALY?**"
     ],
     [
-     "5:00",
-     "Photograph: ★ 'unilateral swelling of the soft palate above the tonsil; the uvula is deviated to the opposite side' → 'with one-sided pain, referred ear pain, trismus, muffled voice and inability to swallow solids, this is a peritonsillar abscess'"
+     "5:15",
+     "**Describe the photograph before you diagnose:** **1 SYMMETRY FIRST — 'there is a unilateral swelling of the left soft palate above the tonsil', or 'the tonsils are symmetrically enlarged' · 2 UVULA — deviated, or midline · 3 SURFACE — exudate, white spots, a grey confluent membrane, ulceration, or clean erythema only · 4 SURROUNDING MUCOSA — palatal petechiae, erythema, vesicles · 5 THEN COMMIT. Do NOT open with 'the throat looks red and infected' — DESCRIBE, THEN DIAGNOSE.**"
     ],
     [
      "5:30",
-     "To Jane: quinsy in plain words + three reasons · 'can I just have antibiotics and go home?' → validate, ★ 'antibiotics don't get into a collection of pus — it has to be drained' · ED now by ambulance, ENT today · procedure explained (numb, small cut, drain; strong pain relief, IV antibiotics, fluids) · 'will I be put to sleep?' → usually local"
+     "**Explain in plain English WITH THE THREE REASONS: 'the infection in your tonsil has formed a pocket of pus behind it — an abscess is a sac full of pus — and that pocket is pushing your tonsil across. I think that for three reasons: the pain is only on the right, you cannot swallow solids, and there is a swelling on one side pushing the little tag at the back across.'**"
     ],
     [
-     "7:00",
-     "'An ambulance? Is it that bad?' → honest calibration · answer the pain request explicitly · concerns → mother died in hospital: acknowledge, don't rush · safety-net for the paramedics · review in a couple of days; recurrence → ENT and tonsils · summary + 'how would you describe it to your mum?'"
+     "6:15",
+     "**Lead management with the definitive step**: antibiotics alone will not clear an abscess, so **ambulance to ED today for ENT drainage** — then **explain the procedure simply**, answer **'an ambulance? is it that bad?'** proportionately, and **answer the pain request explicitly.**"
+    ],
+    [
+     "7:30",
+     "**Safety net with named red flags**, review in a couple of days, tonsillectomy discussion if recurrent, then **check-back: 'how would you describe this to your mum?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Was there something in particular you were hoping we'd do today?' → 'Understood — better pain relief is exactly what we'll organise. Let me work out what's causing it first, because that changes what will actually help.'",
-    "★ 'Is the pain on one side of your throat, both sides, or all the way across?'",
-    "★ 'Can you swallow your own saliva, or are you drooling at all?' / ★ 'Is it too painful to swallow, or does the food physically not go down?' / 'Has your voice changed — does it sound muffled?' / 'Can you open your mouth fully?'",
-    "★ 'Have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? And do you identify as Aboriginal or Torres Strait Islander?'",
-    "★ 'And specifically, is there splenomegaly?' (never 'I'd like to do an ENT examination')",
-    "★ 'There is a unilateral swelling of the soft palate above the tonsil, and the uvula is deviated to the opposite side.' — describe, then diagnose",
-    "'Jane, I think you have what we call a peritonsillar abscess, or quinsy. The infection in your tonsil has formed a pocket of pus behind it — an abscess is a sac full of pus — and that pocket is pushing your tonsil across. Three reasons: the pain is only on the right, you can't swallow solids, and there's a swelling on one side pushing the little tag at the back across.'",
-    "★ 'Antibiotics on their own will not clear a collection of pus. It has to be drained. So rather than a script and a review, I'm sending you to the emergency department now, by ambulance, so the ENT team can see you today.' / 'They'll numb the area, make a small cut and drain it — most people feel dramatically better straight afterwards.'",
-    "'An ambulance? Is it that bad?' → 'It's not an emergency this minute, but it needs treating today and I'd rather you were with people who can look after your breathing if it changes.' / 'You came in for better pain relief, and you'll get it — paracetamol and an anti-inflammatory now, stronger in hospital — but the pain won't settle until the pus is drained.'",
-    "★ 'On the way, if your breathing becomes noisy, or you can't swallow your own spit and start drooling, tell the paramedics straight away.' / 'Can I check I've explained that clearly — how would you describe it to your mum?'"
-   ],
    "pefe": [
-    "Role-player: Jane, 25, retail assistant, regional SA, flatmate; non-smoker; no meds/allergies/PMHx; not ATSI; no rheumatic fever. Speaks softly, exhausted, mildly irritable at 'pointless' questions, frightened at the word abscess. Says 'I can't eat' and STOPS — reveals 'it won't go down, it feels blocked' only to the precise painful-vs-obstructed question. Hidden agenda: terrified of hospitals — mother went in and didn't come out (tearful) — only if asked about worries/concerns. Marks: 14; automatic fails: managing the abscess with oral antibiotics + review ★ · missing/ignoring airway red flags ★ · antibiotics with no rheumatic fever question ★ · amoxicillin where EBV possible ★ · no safety-net ★",
-    "Examiner findings: alert, well hydrated, no drooling, no stridor, no rash · T 38.5, HR 96, BP 122/76, SpO2 98% · ears normal · nose/sinuses normal · tender enlarged right anterior cervical nodes · chest clear, HS normal · abdomen soft, no organomegaly · photograph: unilateral soft-palate swelling above the tonsil, uvula deviated away",
-    "Quinsy treatment: incision/needle aspiration and drainage by ENT + benzylpenicillin 1.2 g IV 6-hourly with metronidazole 500 mg IV 12-hourly; clindamycin 600 mg IV 8-hourly if severe penicillin allergy VERIFY against current TG · analgesia paracetamol 1 g 4–6 hourly (max 4 g/day), ibuprofen 400 mg tds with food",
-    "Variant 4 — THE AIRWAY TURNS (drooling, leaning forward, noisy breathing): abandon the script — 'I'm going to stop the questions there. Sit upright, stay calm. I am not going to look in your throat with a spatula. Emergency call for anaesthetics and ENT, oxygen, and in our setting MedSTAR retrieval on 1300 13 12 33' — saying it aloud outranks any remaining history mark",
-    "Variant 3 — amoxicillin from after-hours, now a rash: glandular fever, not a true penicillin allergy (get the label right — wrongly recorded allergy limits treatment for life); stop the antibiotic, FBE + EBV serology; ★ no contact/collision sport or heavy lifting 4–6 weeks (splenic rupture); left upper quadrant/left shoulder tip pain or faintness → ED",
-    "SA: ED with ENT (regional hospital → RAH/FMC/Lyell McEwin); SA Ambulance; MedSTAR 1300 13 12 33 if the airway threatens in a remote clinic; review 2–3 days post-drainage; recurrent quinsy → ENT tonsillectomy discussion"
+    "**Ask for the examination by component and say what you are looking for.** 'I'd like to do an ENT examination' earns 'what are you looking for?' and costs you thirty seconds.",
+    "**Ask for the abdomen and say 'specifically, splenomegaly'** — EBV changes advice, work and sport, and **forbids aminopenicillins.**",
+    "**Describe the photograph, then diagnose.** Symmetry → uvula → surface → surrounding mucosa → commit.",
+    "**Investigations: throat swab ONLY where it will change management — principally high rheumatic fever risk.** Routine swabbing does not distinguish carriage from infection. **CT neck if deeper spread is suspected.**",
+    "**If EBV is possible: FBC and blood film for atypical lymphocytes, EBV serology, LFTs — and NO contact or collision sport for 4–6 weeks.** **Never amoxicillin or ampicillin.**",
+    "**Fever and sore throat on carbimazole, clozapine, methotrexate, sulfasalazine or chemotherapy is AGRANULOCYTOSIS until proven otherwise** — cease the drug, same-day FBC, discuss with the prescribing team.",
+    "**Do not instrument the throat when epiglottitis is suspected** — severe odynophagia with a near-normal-looking throat, drooling, stridor, sitting forward. **Upright, oxygen, nil by mouth, anaesthetics and ENT.**"
    ],
-   "fails": [
-    "Managing a peritonsillar abscess with oral antibiotics and a review ★",
-    "Missing or ignoring airway red flags — never saying drooling, one-sided, muffled, mouth opening ★",
-    "Recording 'can't swallow' as ordinary throat pain — never disambiguating painful vs obstructed",
-    "No rheumatic fever question asked as a named question ★",
-    "'I'd like to do an ENT examination' and stopping; not asking for uvular position, trismus, or splenomegaly",
-    "Naming quinsy without the three reasons; leaving the pain request unanswered; over- or under-alarming about the ambulance",
-    "No safety-net ★; capitulating to 'just antibiotics and home'"
-   ],
-   "numbers": [
-    "Centor: Cough absent · Exudate · Nodes tender anterior · Temperature ≥38 °C · here T 38.5, HR 96, pain 9/10, day 3",
-    "Quinsy: drainage + benzylpenicillin 1.2 g IV 6-hourly + metronidazole 500 mg IV 12-hourly; clindamycin 600 mg IV 8-hourly if severe allergy VERIFY",
-    "Analgesia: paracetamol 1 g 4–6 hourly, max 4 g/day · ibuprofen 400 mg tds with food",
-    "EBV: no contact sport 4–6 weeks · never amoxicillin/ampicillin · strep when indicated: phenoxymethylpenicillin 500 mg bd 10 days",
-    "MedSTAR 1300 13 12 33 · review 2–3 days after drainage"
+   "ddx": [
+    [
+     "**Peritonsillar abscess (quinsy)** — the answer",
+     "**Unilateral pain, uvular deviation, trismus, muffled voice, drooling, ipsilateral otalgia**",
+     "Mouth opening, voice quality, ability to swallow saliva, palatal bulge",
+     "**ED/ENT the same day for DRAINAGE; IV antibiotics; CT neck if deeper spread** — emergent"
+    ],
+    [
+     "Viral pharyngitis or tonsillitis",
+     "Bilateral, gradual, **cough and coryza present**, hoarse, afebrile or low fever, no exudate",
+     "Cough, runny nose, sick contacts",
+     "Clinical. COVID/influenza PCR only if it alters isolation or antivirals"
+    ],
+    [
+     "Group A streptococcal tonsillitis",
+     "**Cough ABSENT, tonsillar exudate, tender anterior cervical nodes, T 38 or over**",
+     "All four Centor features; sudden onset; no coryza",
+     "**Antibiotics by rheumatic fever RISK, not by score.** Swab only if it changes management"
+    ],
+    [
+     "**Infectious mononucleosis (EBV)**",
+     "Age 15–25, prolonged malaise, **POSTERIOR nodes**, grey membrane, palatal petechiae, splenomegaly, **rash after amoxicillin**",
+     "Fatigue beyond a week, LUQ pain, contact sport, what antibiotic was taken",
+     "**FBC and film, EBV serology, LFTs. NO contact sport 4–6 weeks** — urgent if LUQ pain"
+    ],
+    [
+     "**Epiglottitis / supraglottitis**",
+     "Rapid onset, **severe odynophagia with a near-normal-looking throat**, drooling, stridor, sitting forward",
+     "**DO NOT force the mouth open or use a spatula**",
+     "**Upright, oxygen, nil by mouth, anaesthetics and ENT, urgent transfer** — emergent"
+    ],
+    [
+     "**Retropharyngeal or parapharyngeal abscess · Ludwig angina**",
+     "**Neck stiffness or torticollis, floor-of-mouth swelling, tongue elevation, dental sepsis**",
+     "Neck movement, submandibular swelling, dental history",
+     "**ED, contrast CT neck, IV antibiotics, surgical drainage** — emergent"
+    ],
+    [
+     "**Lemierre syndrome**",
+     "**Sore throat that improves then relapses with rigors**, unilateral neck pain and swelling, pleuritic chest pain",
+     "Persisting fever beyond a week, septic-looking young adult",
+     "**Blood cultures, contrast CT neck and chest for internal jugular thrombosis** — emergent"
+    ],
+    [
+     "**Drug-induced agranulocytosis**",
+     "**Fever and sore throat on carbimazole, clozapine, methotrexate, sulfasalazine or chemotherapy**",
+     "'Any regular medications, including for your thyroid or mental health?'",
+     "**Cease the drug, SAME-DAY FBC, discuss with the prescribing team** — emergent"
+    ],
+    [
+     "**Meningitis / meningococcal disease**",
+     "Headache, neck stiffness, photophobia, non-blanching rash, rapid deterioration",
+     "The red-flag block",
+     "**Immediate ED — do not delay for investigations** — emergent"
+    ],
+    [
+     "**Head and neck malignancy · scarlet fever · gonococcal pharyngitis · acute HIV**",
+     "**Unilateral sore throat over 3 weeks, referred otalgia, neck lump, smoker, weight loss**; sandpaper rash and strawberry tongue; recent oral sex; fever with widespread rash and mouth ulcers",
+     "Duration, smoking, weight, persistent lump; rash texture; the sexual health screen",
+     "**Urgent ENT for nasendoscopy — not another antibiotic course.** Treat scarlet fever always. Throat NAAT. HIV Ag/Ab with consent"
+    ]
    ]
   },
   "source": "Sore_Throat_2_Case_Tasks_Script_Notability.pdf (Version A — Jane Whitmore, 25, unilateral sore throat requesting painkillers → quinsy)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Sore_Throat_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Alert, well hydrated, NO DROOLING, NO STRIDOR, no rash"
-   ],
-   [
-    "Observations",
-    "T 38.5 · HR 96 · BP 122/76 · SpO2 98%"
-   ],
-   [
-    "Ears, nose, sinuses",
-    "Normal"
-   ],
-   [
-    "Neck",
-    "Tender enlarged right anterior cervical nodes"
-   ],
-   [
-    "Chest and heart",
-    "Chest clear; heart sounds normal"
-   ],
-   [
-    "Abdomen",
-    "Soft, no organomegaly"
-   ],
-   [
-    "Photograph",
-    "Unilateral soft-palate swelling above the tonsil with the uvula deviated away"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Managing the abscess with oral antibiotics and a review — 'antibiotics on their own will not clear a collection of pus; it has to be drained'; ambulance to the emergency department today for the ENT team, IV antibiotics, fluids, strong analgesia (★)",
-   "FAIL — 'Where is the pain?' — she says 'my throat'; 'is it one side, both sides, or all the way across?' is the single most discriminating question in the station; then radiation to the ear",
-   "FAIL — Recording 'I can't eat' as ordinary throat pain — disambiguate out loud: 'is it too painful to swallow, or does the food physically not go down?'; only that precise question gets 'it won't go down, it feels blocked'",
-   "FAIL — Missing or ignoring the airway red-flag block — 'can you swallow your own saliva, or are you drooling?', muffled voice, noisy breathing, can you open your mouth fully (trismus), neck swelling or stiffness; if she drools or breathes noisily, stop, sit her up, no spatula, call anaesthetics and ENT (★)",
-   "FAIL — 'I'd like to do an ENT examination' and stopping — name every component and what you seek: drooling and stridor, temperature, otoscopy, tonsil size, exudate, symmetry, uvular position, palatal bulge, mouth opening, anterior and posterior nodes, and 'specifically, is there splenomegaly?'; and the rheumatic fever question asked by name — you, family, household, Aboriginal or Torres Strait Islander (★)",
-   "DO — Describe the photograph before naming: 'a unilateral swelling of the soft palate above the tonsil, uvula deviated to the opposite side' → quinsy with three reasons in her words; surface the painkiller request in the first minute and answer it inside the plan; safety-net on the way (drooling, noisy breathing); ask what worries her — she is terrified of hospitals"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-79",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice. Findings are supplied on a card so four tasks fit the time. Task 3 is to the EXAMINER (diagnosis + differentials); task 4 is counselling.",
   "stem": [
    "James Coulter, 25, warehouse storeperson, has come in with a sore throat and is asking you for antibiotics. Examination card: T 36.9, HR 76, BP 118/74; well, no drooling or stridor, no rash; watery nasal discharge, normal tympanic membranes, non-tender sinuses, tonsils and pharynx inflamed with no exudate, uvula midline, full mouth opening; no cervical lymphadenopathy; chest clear; abdomen soft, no organomegaly."
   ],
@@ -19169,104 +19241,194 @@
    "Tell the examiner your most likely diagnosis and your differential diagnoses",
    "Counsel the patient on management"
   ],
-  "time": "8 minutes. Surface the antibiotic request in the first minute and defer it fairly · ★ one side or both · ENT screen · ★ red-flag block · ★ cough (present — a viral feature and a Centor feature) · gut/spleen, sexual health · ★ rheumatic fever / ATSI named · read the card, name the four features that make it viral · ★ diagnosis + bucketed differential with reasoning to the examiner · ★ reassure before you refuse; two honest options with benefits and harms; elicit his values; recommend · ★ solve the real problem — medical certificate · analgesia doses · safety-net with named red flags · check-back. He pushes for antibiotics three times.",
+  "findings": [
+   [
+    "The examination CARD, handed to you",
+    "Findings are supplied on a card BECAUSE FOUR TASKS WILL NOT FIT OTHERWISE. Read it, then reason from it"
+   ],
+   [
+    "Vitals",
+    "T 36.9 · HR 76 · BP 118/74 · RR 14 · SpO2 99% room air. AFEBRILE — one Centor feature absent"
+   ],
+   [
+    "General",
+    "WELL, not distressed. NO drooling, NO stridor, NO rash. Hydrated"
+   ],
+   [
+    "ENT",
+    "WATERY NASAL DISCHARGE. Tympanic membranes normal bilaterally. Sinuses non-tender. TONSILS AND PHARYNX INFLAMED, NO EXUDATE. UVULA MIDLINE. Mouth opens fully"
+   ],
+   [
+    "Neck",
+    "NO cervical lymphadenopathy, no neck swelling or stiffness"
+   ],
+   [
+    "Chest, CVS, abdomen",
+    "Equal air entry, no added sounds. S1 S2, no murmur. Abdomen soft, non-tender, NO ORGANOMEGALY"
+   ],
+   [
+    "The four features that make your case",
+    "COUGH PRESENT · WATERY CORYZA · AFEBRILE · NO EXUDATE · and no lymphadenopathy or organomegaly. Name them — the examiner scores the justification, not the length of the list"
+   ],
+   [
+    "His hidden agenda",
+    "HE IS CASUAL WITH NO SICK LEAVE AND IS BEHIND ON RENT. 'I'm not worried about the throat. I'm worried about the rent.' Volunteered only if you ask about concerns or impact — otherwise raised at about six minutes"
+   ],
+   [
+    "He asks three times",
+    "At 1 MINUTE, at 4 MINUTES after the card, and AGAIN after you explain — the third time pushing: 'my mate got them for the same thing and was back at work in two days.' CAVING IN OR REFUSING FLATLY BOTH FAIL"
+   ],
+   [
+    "VARIANT — the answer flips",
+    "'My nan lives with us. She has to have those penicillin needles every month for her heart' — or he identifies as Aboriginal → HIGH ACUTE RHEUMATIC FEVER RISK. THE ANTIBIOTIC ANSWER BECOMES YES, and it must be the FULL TEN DAYS"
+   ]
+  ],
+  "findingsLabel": "The examination card, and what he withholds",
+  "must": [
+   "FAIL — Caving in and writing the script, or refusing flatly and moving on.",
+   "FAIL — Never asking the rheumatic fever question, so the decision has no Australian basis.",
+   "FAIL — Deciding on the Centor score alone, or omitting the cough question entirely.",
+   "FAIL — Giving the medical certificate as an afterthought, or not at all.",
+   "ASK — Was there something in particular you were hoping we'd do today? In the first minute.",
+   "ASK — Rheumatic fever in you, your family, or anyone in your household? And Aboriginal or Torres Strait Islander?"
+  ],
   "back": {
-   "dx": "Viral pharyngitis/tonsillitis: 2–3 days bilateral raw scratchy soreness 5/10, felt warm day one only, clear watery coryza, dry cough, no otalgia; swallows fine (painful only); no red flags; smokes 10/day; casual warehouse worker. Card: afebrile 36.9, inflamed tonsils and pharynx with NO exudate, uvula midline, full mouth opening, NO lymphadenopathy, no organomegaly — four features that favour viral: cough, watery coryza, afebrile, no exudate/nodes. To the examiner — most likely viral pharyngitis/tonsillitis; differentials in order of what you would not miss: bacterial streptococcal tonsillitis; peritonsillar abscess; epiglottitis/deep neck space infection; infectious mononucleosis with splenomegaly; gonococcal/chlamydial pharyngitis; scarlet fever; laryngitis and sinusitis with PND; pneumonia; and in a different patient, drug-induced agranulocytosis or head and neck malignancy. Counselling: reassure first ('this will settle by itself — even bacterial ones do; that's why we're careful, not automatic'); two options — symptoms alone, or symptoms + antibiotic: benefit ~1 day; harms — up to 1 in 10 side effects, resistance, EBV rash with amoxicillin; 'what matters most to you?' → recommend no antibiotic; ★ medical certificate solves the real need (hidden agenda: casual, no sick leave, behind on rent); paracetamol 1 g qid, ibuprofen 400 mg tds with food, fluids, salt-water gargle, rest, cut smoking; safety-net: can't swallow saliva/drooling, noisy breathing, voice change, neck swelling/stiffness, rash, not improving 5–7 days; teach-back. If he won't accept it: delayed prescription (fill only if worse in 3 days) or a Thursday review — a compromise, never a first move.",
+   "dx": [
+    "**Viral pharyngitis or tonsillitis** — self-limiting inflammation of the pharynx and tonsils: **rhinovirus, adenovirus, influenza, SARS-CoV-2, EBV.**",
+    "**The sentence that passes this version: WHEN THE THROAT IS NOT ONE-SIDED, THE ANTIBIOTIC DECISION IS MADE ON ACUTE RHEUMATIC FEVER RISK, NOT ON HOW INFLAMED THE THROAT LOOKS.**",
+    "**Centor: Cough absent · Exudate · Nodes, tender anterior cervical · Temperature 38 or over.** (McIsaac adds age.) **Australian guidance does NOT use the score to drive prescribing** — in a low-ARF-risk population it predicts poorly and encourages over-treatment. **Use the four features to EXPLAIN your reasoning; use rheumatic fever risk to DECIDE.** VERIFY.",
+    "**Antibiotics are indicated for: HIGH RHEUMATIC FEVER RISK · SCARLET FEVER, always, because the complication is already in the skin · SEVERE illness, marked systemic symptoms, severe odynophagia or dysphagia, immunocompromise · a SUPPURATIVE COMPLICATION.** VERIFY.",
+    "**When treating: phenoxymethylpenicillin 500 mg orally 12-hourly for TEN DAYS (child 15 mg/kg up to 500 mg). Adherence a concern → single-dose benzathine benzylpenicillin IM. Non-severe penicillin allergy → cefalexin 1 g 12-hourly for 10 days. Immediate hypersensitivity → azithromycin 500 mg daily for 5 days.** VERIFY. **Never an aminopenicillin where EBV is possible.**",
+    "**Why the full ten days: eradication of the organism, which is what prevents rheumatic fever. Shorter courses relieve symptoms but do not reliably prevent the complication.**",
+    "**The five beats of shared decision making: 1 REASSURE — even bacterial throat infections settle by themselves · 2 OFFER BOTH OPTIONS honestly · 3 BENEFIT — at best about one day less of symptoms · 4 HARM — side effects in up to one in ten, and resistance, 'the antibiotic that stops working when you really need it', plus the EBV rash · 5 ASK HIS VALUES, then recommend.**",
+    "**Meet the real need: the medical certificate is the answer to his actual problem. Deliver it as PART OF THE PLAN, not as a consolation prize at 7:50.**",
+    "**Symptomatic care: regular paracetamol 1 g 4–6 hourly, maximum 4 g/day, and/or ibuprofen 400 mg 8-hourly with food · warm salt-water gargles · lozenges · humidified air · fluids, which are not negotiable even when appetite drops · brief smoking advice, because it prolongs symptoms.** VERIFY.",
+    "**If he will not accept it: 'I can hear this isn't the answer you wanted, and I'm not going to pretend we agree. What I can offer is a DELAYED PRESCRIPTION you only fill if you're worse in three days, or a review appointment on Thursday. Which would you prefer?'** **Offer it as a compromise, never as a first move.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'was there something particular you were hoping we'd do today?' → antibiotics (push 1) → 'you may well be right and I'm not ruling it out — give me three minutes to check a few things, then we decide together what's actually going to help'"
+     "WIPE, introduce, **and surface the agenda in the first minute** — the antibiotic request IS the station. To his first push: **'you may well be right, and I'm not ruling it out. Give me three minutes to check a few things and then we'll decide together what's actually going to help. Is that fair?'**"
     ],
     [
-     "0:45",
-     "★ 'One side, both, or all the way across?' → all over · duration, /10 (5), radiation (no), tried (cold and flu tablets)"
+     "0:40",
+     "**Lead with the side: is the pain on one side, both sides, or all the way across?** → all over. Then **how long · out of ten · does it travel anywhere · what helps · what have you tried?**"
     ],
     [
      "1:20",
-     "ENT: fever (warm day one, not now) · ear pain/discharge · ★ runny nose — clear, watery · facial pain/PND · smell · neck lumps"
+     "**ENT screen: fevers, chills or sweats · ear pain or discharge · runny or blocked nose AND WHAT COLOUR, thin and watery or thick · facial pain · post-nasal drip · change in smell · lumps in the neck?** → **clear watery discharge supports viral, and that single answer carries your reasoning.**"
     ],
     [
-     "1:50",
-     "★ Red flags: saliva/drooling · painful vs won't go down (just painful) · muffled voice (a bit croaky) · noisy breathing · mouth opening · neck swelling/stiffness · headache/photophobia/rash → all no"
+     "2:00",
+     "**The red-flag block, asked in full even though he looks well:** **can you swallow your own saliva, or are you drooling at all · IS IT TOO PAINFUL TO SWALLOW, OR DOES FOOD PHYSICALLY NOT GO DOWN · has your voice changed, does it sound muffled · any noisy breathing or whistling when you breathe in · CAN YOU OPEN YOUR MOUTH FULLY · any swelling or stiffness in your neck · any headache, dislike of bright light, or a rash?**"
     ],
     [
-     "2:30",
-     "★ 'Any cough?' → dry, annoying · SOB/wheeze · nausea/vomiting/diarrhoea · abdominal pain esp. under the left ribs · sexual health, two questions with permission ('is that relevant?' → answer it)"
+     "2:45",
+     "**The lower respiratory block: any cough — bringing anything up, what colour · any shortness of breath, wheeze or chest pain?** → **a dry annoying cough. Its PRESENCE supports viral; its ABSENCE is a Centor feature. Omitting it leaves a hole in your Task 3 reasoning.**"
     ],
     [
-     "3:10",
-     "★ Rheumatic fever — you, family, household; ATSI · meds (thyroid, mental health), penicillin allergy, vaccinations · smoking 10/day · work: casual warehouse, 'can't afford to be off'"
+     "3:05",
+     "**Gut and spleen, then two sexual health questions with permission: nausea, vomiting, diarrhoea · tummy pain, PARTICULARLY UNDER THE LEFT RIBS · sexually active, condoms, oral sex?**"
     ],
     [
-     "4:00",
-     "Read the card aloud, extract the four viral features · push 2 'so can I have them now?' → 'let me tell you what I found first, because it changes the answer'"
+     "3:30",
+     "**Rheumatic fever risk, as its own named question:** **have you ever been told you had rheumatic fever or rheumatic heart disease · has anyone in your FAMILY, or anyone living in your HOUSEHOLD · and do you identify as Aboriginal or Torres Strait Islander?**"
     ],
     [
-     "4:30",
-     "★ To the examiner: most likely viral pharyngitis/tonsillitis · differentials bucketed in order of what I'd not miss · 'I favour viral because: cough, watery coryza, afebrile, no exudate, no nodes or organomegaly'"
+     "3:50",
+     "**Background: medical problems · regular medications INCLUDING THYROID OR MENTAL HEALTH · allergies, particularly penicillin · vaccinations · smoking · work.** Then **ideas, concerns and expectations** → **'I'm not worried about the throat. I'm worried about the rent.'**"
+    ],
+    [
+     "4:20",
+     "**Read the examination card**, then **to the examiner: the diagnosis, then a BUCKETED differential in order of what you would not want to miss** — bacterial strep; quinsy; epiglottitis or deep neck space infection; EBV with splenomegaly; gonococcal or chlamydial pharyngitis; scarlet fever; laryngitis and sinusitis with post-nasal drip; pneumonia; and in a different patient, agranulocytosis or malignancy. **Then justify with the four features you checked.**"
     ],
     [
      "5:30",
-     "★ Reassure before refusing · two honest options, benefits and harms · 'knowing that, what matters most to you?' · recommend · push 3 'my mate was back at work in two days' → two honest reasons, no criticism of anyone · ★ 'the part I can actually fix today: a medical certificate' · doses, fluids, gargle, rest, smoking · safety-net with named red flags and 5–7 day timeframe · 'tell me the two you'd act on first'"
+     "**Counsel in the five beats: reassure · two honest options · benefit of about one day · harms, side effects in up to one in ten and resistance, plus the EBV rash · elicit his values, then recommend.**"
+    ],
+    [
+     "6:45",
+     "**Meet the real need — the medical certificate, as part of the plan** — then **symptomatic care with doses, fluids, gargles, rest, and brief smoking advice.**"
+    ],
+    [
+     "7:30",
+     "**Safety net with named red flags and a timeframe**, then **check-back: 'can you tell me the two you would act on first?'** If he still will not accept it, **offer a delayed prescription or a review appointment.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'You may well be right, and I'm not ruling it out. Give me three minutes to check a few things, and then we'll decide together what's actually going to help. Is that fair?'",
-    "★ 'Is the pain on one side of your throat, both sides, or all the way across?' / ★ 'Is it too painful to swallow, or does the food physically not go down?' / 'Can you swallow your own saliva, or are you drooling at all?' / 'Has your voice changed — does it sound muffled?'",
-    "★ 'Have you, your family, or anyone in your household ever had rheumatic fever or a heart valve problem from it? Do you identify as Aboriginal or Torres Strait Islander?'",
-    "★ To the examiner: 'My most likely diagnosis is viral pharyngitis or tonsillitis. My differentials, in order of what I would not want to miss: bacterial streptococcal tonsillitis; peritonsillar abscess; epiglottitis or another deep neck space infection; infectious mononucleosis with splenomegaly; gonococcal or chlamydial pharyngitis; scarlet fever; laryngitis and sinusitis with post-nasal drip; pneumonia; and in a different patient, drug-induced agranulocytosis or head and neck malignancy. I favour a viral cause because he has a cough and watery coryza, he is afebrile, there is no exudate, and no lymphadenopathy or organomegaly.'",
-    "★ 'James, the good news is this will settle by itself. Even bacterial throat infections settle on their own — that is why we are careful about antibiotics rather than automatic about them.'",
-    "★ 'At best an antibiotic might shorten this by about a day. Against that, up to one person in ten gets side effects — upset stomach, diarrhoea, a rash — and every course makes the bugs more resistant, so the antibiotic is less likely to work when you really need it. And if this were glandular fever, the common antibiotic gives a bad rash.'",
-    "★ 'Knowing all that, what matters most to you here?' → 'My recommendation is that we treat this properly without the antibiotic. Does that feel reasonable?'",
-    "'My mate got them and was back in two days' → 'A fair question — even when it is bacterial the antibiotic only shortens things by about a day; your mate would very likely have got better in the same time.' (never 'the other doctor was wrong')",
-    "★ 'The part I can actually fix today is the work problem — I'll write you a medical certificate.' / 'Paracetamol one gram up to four times a day, and ibuprofen four hundred milligrams three times a day with food; fluids, warm salt-water gargles, rest — cutting the smoking will help it settle faster.'",
-    "★ 'Come straight back if you cannot swallow your saliva, your breathing becomes noisy, your voice changes, or your neck swells or stiffens; a rash; or not improving in five to seven days.' / 'Can you tell me the two you would act on first?' / Won't accept → 'a script you hold and only fill if you're worse in three days — or a review on Thursday; which would you prefer?'"
-   ],
    "pefe": [
-    "Role-player: James, 25, warehouse storeperson, smokes 10/day, lives with partner; no meds/allergies/PMHx; not ATSI; no rheumatic fever. Brisk, impatient; asks for antibiotics at 1 min, again at 4 min after the card, and a third time after the explanation ('my mate…'). Hidden agenda: casual, no sick leave, behind on rent — only if asked about concerns/expectations/impact, else 'look, I just can't afford to be off' at ~6 min. If you cave and prescribe, accepts happily and marks a fail. Automatic fails: prescribing with no rheumatic fever question ★ · amoxicillin where EBV possible ★ · capitulating, or refusing without explanation ★ · no safety-net ★",
-    "Card: T 36.9, HR 76, BP 118/74 · well, no drooling/stridor/rash · watery nasal discharge · TMs normal · sinuses non-tender · tonsils/pharynx inflamed, no exudate · uvula midline, full mouth opening · no cervical nodes · chest clear · no organomegaly · Centor 0–1",
-    "Variant 2 — high rheumatic fever risk ('my nan lives with us, she has the penicillin needles for her heart'; Aboriginal patient): the answer flips — treat: phenoxymethylpenicillin 500 mg bd for 10 days, finishing all ten days is what protects the heart; single IM benzathine penicillin if adherence is hard; Closing the Gap PBS co-payment; follow-up via the Aboriginal health service/ACCHS; ARF/RHD notifiable in SA VERIFY",
-    "Variant 3 — glandular fever after amoxicillin rash: not a true allergy; stop, FBE + EBV serology; no contact sport/heavy lifting 4–6 weeks; LUQ/left shoulder pain or faintness → ED · Variant 4 — airway turns: stop, sit upright, no spatula, oxygen, anaesthetics + ENT, MedSTAR 1300 13 12 33",
-    "Strep when indicated: phenoxymethylpenicillin 500 mg bd 10 days (child 15 mg/kg to 500 mg); allergy — cefalexin 1 g bd 10 days or azithromycin 500 mg daily 5 days VERIFY · delayed prescribing = accepted stewardship strategy (ADDED) — a compromise, never the first move",
-    "SA: medical certificate; Quitline 13 7848; ACCHS/Closing the Gap where relevant; TIS 131 450; MedSTAR 1300 13 12 33",
-    "Strep when indicated — Phenoxymethylpenicillin 500 mg bd 10 days (child 15 mg/kg to 500 mg); allergy — cefalexin 1 g bd 10 days or azithromycin 500 mg daily 5 days VERIFY · delayed prescribing = accepted stewardship strategy (ADDED) — a compromise, never the first move",
-    "SA — Medical certificate; Quitline 13 7848; ACCHS/Closing the Gap where relevant; TIS 131 450; MedSTAR 1300 13 12 33"
+    "**The findings are on a card — read them, then reason from them.** Name the four features that make your case: **cough present, watery coryza, afebrile, no exudate**, plus no lymphadenopathy or organomegaly.",
+    "**Throat swab only where the result would change management — principally high rheumatic fever risk.** Routine swabbing does not distinguish carriage from infection and encourages unnecessary prescribing.",
+    "**COVID or influenza PCR only if it alters isolation or antiviral decisions.**",
+    "**If EBV is on the list: FBC and blood film for atypical lymphocytes, EBV serology, LFTs.** **Never amoxicillin or ampicillin — it causes a widespread rash in most people with glandular fever, and that is NOT a true penicillin allergy.** **Getting that label wrong limits treatment for life.**",
+    "**Splenomegaly in EBV: no contact or collision sport, and no heavy lifting, for 4–6 weeks.** **Left upper quadrant or left shoulder-tip pain, or feeling faint, is an emergency department visit.**",
+    "**Fever and sore throat on carbimazole, clozapine, methotrexate, sulfasalazine or chemotherapy → cease the drug and same-day FBC.**",
+    "**Do not diagnose on the Centor score alone, and do not swab to justify a script you have already decided to write.**"
    ],
-   "fails": [
-    "Capitulating to the antibiotic demand — or refusing flatly without explanation ★",
-    "Prescribing antibiotics with no rheumatic fever / ATSI question asked ★",
-    "Prescribing amoxicillin where glandular fever is possible ★",
-    "No safety-net ★",
-    "A bare differential list with no reasoning; not naming the four features (cough, coryza, afebrile, no exudate/nodes) that make it viral",
-    "Leaving the request to minute seven; skipping the cough question; asking 'where is the pain?' instead of one side or both",
-    "The certificate as an afterthought at 7:50; criticising the mate's doctor; 'just a cold'"
-   ],
-   "numbers": [
-    "Centor: cough absent · exudate · tender anterior nodes · T ≥38 °C · this case 0–1 · antibiotic benefit ~1 day · side effects up to 1 in 10",
-    "Paracetamol 1 g 4–6 hourly max 4 g/day · ibuprofen 400 mg tds with food · review if not improving 5–7 days",
-    "Strep when indicated: phenoxymethylpenicillin 500 mg bd × 10 days · allergy: cefalexin 1 g bd 10 d or azithromycin 500 mg daily 5 d VERIFY",
-    "EBV: no contact sport 4–6 weeks · never amoxicillin/ampicillin",
-    "Quitline 13 7848 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Peritonsillar abscess (quinsy)** — the answer",
+     "**Unilateral pain, uvular deviation, trismus, muffled voice, drooling, ipsilateral otalgia**",
+     "Mouth opening, voice quality, ability to swallow saliva, palatal bulge",
+     "**ED/ENT the same day for DRAINAGE; IV antibiotics; CT neck if deeper spread** — emergent"
+    ],
+    [
+     "Viral pharyngitis or tonsillitis",
+     "Bilateral, gradual, **cough and coryza present**, hoarse, afebrile or low fever, no exudate",
+     "Cough, runny nose, sick contacts",
+     "Clinical. COVID/influenza PCR only if it alters isolation or antivirals"
+    ],
+    [
+     "Group A streptococcal tonsillitis",
+     "**Cough ABSENT, tonsillar exudate, tender anterior cervical nodes, T 38 or over**",
+     "All four Centor features; sudden onset; no coryza",
+     "**Antibiotics by rheumatic fever RISK, not by score.** Swab only if it changes management"
+    ],
+    [
+     "**Infectious mononucleosis (EBV)**",
+     "Age 15–25, prolonged malaise, **POSTERIOR nodes**, grey membrane, palatal petechiae, splenomegaly, **rash after amoxicillin**",
+     "Fatigue beyond a week, LUQ pain, contact sport, what antibiotic was taken",
+     "**FBC and film, EBV serology, LFTs. NO contact sport 4–6 weeks** — urgent if LUQ pain"
+    ],
+    [
+     "**Epiglottitis / supraglottitis**",
+     "Rapid onset, **severe odynophagia with a near-normal-looking throat**, drooling, stridor, sitting forward",
+     "**DO NOT force the mouth open or use a spatula**",
+     "**Upright, oxygen, nil by mouth, anaesthetics and ENT, urgent transfer** — emergent"
+    ],
+    [
+     "**Retropharyngeal or parapharyngeal abscess · Ludwig angina**",
+     "**Neck stiffness or torticollis, floor-of-mouth swelling, tongue elevation, dental sepsis**",
+     "Neck movement, submandibular swelling, dental history",
+     "**ED, contrast CT neck, IV antibiotics, surgical drainage** — emergent"
+    ],
+    [
+     "**Lemierre syndrome**",
+     "**Sore throat that improves then relapses with rigors**, unilateral neck pain and swelling, pleuritic chest pain",
+     "Persisting fever beyond a week, septic-looking young adult",
+     "**Blood cultures, contrast CT neck and chest for internal jugular thrombosis** — emergent"
+    ],
+    [
+     "**Drug-induced agranulocytosis**",
+     "**Fever and sore throat on carbimazole, clozapine, methotrexate, sulfasalazine or chemotherapy**",
+     "'Any regular medications, including for your thyroid or mental health?'",
+     "**Cease the drug, SAME-DAY FBC, discuss with the prescribing team** — emergent"
+    ],
+    [
+     "**Meningitis / meningococcal disease**",
+     "Headache, neck stiffness, photophobia, non-blanching rash, rapid deterioration",
+     "The red-flag block",
+     "**Immediate ED — do not delay for investigations** — emergent"
+    ],
+    [
+     "**Head and neck malignancy · scarlet fever · gonococcal pharyngitis · acute HIV**",
+     "**Unilateral sore throat over 3 weeks, referred otalgia, neck lump, smoker, weight loss**; sandpaper rash and strawberry tongue; recent oral sex; fever with widespread rash and mouth ulcers",
+     "Duration, smoking, weight, persistent lump; rash texture; the sexual health screen",
+     "**Urgent ENT for nasendoscopy — not another antibiotic course.** Treat scarlet fever always. Throat NAAT. HIV Ag/Ab with consent"
+    ]
    ]
   },
   "source": "Sore_Throat_2_Case_Tasks_Script_Notability.pdf (Version B — James Coulter, 25, bilateral sore throat requesting antibiotics → viral pharyngitis)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Sore_Throat_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Card",
-    "T 36.9, HR 76, BP 118/74 · well, no drooling/stridor/rash · watery nasal discharge · TMs normal · sinuses non-tender · tonsils/pharynx inflamed, no exudate · uvula midline, full mouth opening · no cervical nodes · chest clear · no organomegaly · Centor 0–1"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Capitulating to the antibiotic demand, or refusing without explanation — both are automatic fails; 'reassure before you refuse': 'the good news is this will settle by itself — even bacterial throat infections settle on their own, which is why we're careful about antibiotics rather than automatic' (★)",
-   "FAIL — Prescribing antibiotics without the rheumatic fever question asked by name — you, family, household, Aboriginal or Torres Strait Islander — the Australian basis for the decision; and never amoxicillin where glandular fever is possible (★)",
-   "FAIL — Not surfacing the request and the real need in the first minute — 'was there something in particular you were hoping we'd do today?'; he is a casual with no sick leave and behind on rent, and the certificate is the answer to his actual problem, delivered inside the plan, not at 7:50",
-   "DO — Two honest options with benefits and harms: at best a day shorter; up to one in ten get side effects; resistance; the glandular fever rash — then 'knowing that, what matters most to you here?' and recommend; the three pushes ('my mate got them and was back in two days') answered without criticising anyone",
-   "DO — The same history discipline as Version A: 'one side, both, or all the way across?', the airway block, the cough (its presence supports viral — a Centor feature), the spleen; then to the examiner: viral pharyngitis with the four features that favour it, and a bucketed differential in order of what you'd not miss",
-   "FAIL — No safety net — paracetamol and ibuprofen with doses, fluids, salt-water gargles, rest, cut the smoking; back or the emergency department if unable to swallow saliva or drooling, noisy breathing, voice change, neck swelling, rash, or not improving in five to seven days; 'tell me the two you'd act on first' (★)"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Sore_Throat_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-80",
