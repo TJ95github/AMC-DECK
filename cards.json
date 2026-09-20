@@ -6614,7 +6614,6 @@
   "id": "MED-17",
   "cat": "med",
   "promptBell": false,
-  "setting": "You are the Hospital Medical Officer in the Emergency Department of a metropolitan Australian hospital.",
   "stem": [
    "James Whitfield, a 55-year-old man, has presented with the sudden onset of central chest pain that began approximately 20 minutes ago. He is anxious and says his father died of a heart attack.",
    "BP 124/78 · pulse 98 regular · RR 18 · SpO2 98% room air · temp 37.8 °C · BGL 5.6 (exact vitals vary between recalls — the pattern is stable with a low-grade fever)."
@@ -6624,98 +6623,213 @@
    "You will be shown an ECG — give the examiner your overall impression and the key features that support it",
    "Explain your likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Version A — the ECG is handed over after the history (mini-bell / prompt at about 4 minutes in the face-to-face format). Stop the history when the bell goes.",
   "back": {
-   "dx": "Acute pericarditis, most likely viral — the case that looks exactly like an MI until the last SOCRATES question. Central, crushing, sudden, 20 min, constant, 7/10, to left arm and jaw … then BETTER LEANING FORWARD, worse lying flat, sharper on deep breath, flu ten days ago, feverish and tired, no CV risk factors (never smoked, clear check-up). The role-player sits leaning forward clutching his chest — look at him. ECG: rate ~100, sinus, normal PR/QRS, concave ST elevation I, II, V2–V6 (crosses territories), no reciprocal depression except aVR, PR depression. Discriminating behaviour: finish SOCRATES before opening the differential; never say 'definitely not a heart attack' before the troponin.",
+   "dx": [
+    "**Acute pericarditis, most likely viral** — and **never diagnosed without excluding infarction**. Pericarditis and MI are genuinely easy to confuse, which is exactly why you always do **an ECG and always send a troponin**.",
+    "**The three-clue signature: better leaning forward · worse lying flat · a recent flu-like illness.** Absent cardiovascular risk factors are **supportive only — their presence does not exclude pericarditis**. A 55-year-old smoker with hypertension can absolutely have viral pericarditis.",
+    "**The ECG in four words: widespread · concave · no reciprocal change · PR depression.** Widespread means it **crosses territories** — **no single coronary artery supplies I, II and V2 to V6 together**. **Disregard aVR**, where ST depression and PR elevation are expected, not reciprocal.",
+    "**Voltage criteria: more than 1 mm in the limb leads, more than 2 mm in the chest leads.** Saying the numbers earns marks, and it explains why elevation looks more obvious in the chest leads.",
+    "Pericarditis versus MI: **posture changes pericarditic pain and never changes MI pain** · pericarditic pain is **often pleuritic, which is expected rather than exclusionary** · a viral prodrome with fever and fatigue · **concave and widespread versus convex 'tombstone' and territorial with reciprocal depression** · a **friction rub** · troponin normal, **or raised in myopericarditis**.",
+    "To the patient: **'the heart sits inside a thin covering, a bit like a sac. In pericarditis that covering becomes inflamed, and that inflammation is what causes the pain.'** Then **the three reasons — the mark-earning sentence**: the posture, the recent flu, and the tracing.",
+    "**Never over-reassure.** **'It looks much more like pericarditis than a heart attack — but I want to be honest with you: the two can look very similar, and I'm not going to tell you a heart attack is excluded until I have a blood test back.'** That troponin is **why he is managed in hospital rather than general practice**.",
+    "Treatment in two words: **colchicine plus an NSAID**. **Ibuprofen 400–600 mg three times daily with food**, continued until symptoms settle and CRP normalises, then tapered — **aspirin 600–900 mg three times daily if the pericarditis is post-MI**. **Colchicine 0.5 mg twice daily, or once daily under about 70 kg, for 3 months** — it substantially reduces recurrence. **Corticosteroids are not first line; they increase recurrence.** VERIFY",
+    "**Restrict strenuous exercise until symptoms resolve and inflammatory markers normalise**, longer for athletes and for myopericarditis. Causes to know: **viral, the commonest · autoimmune (SLE, rheumatoid) · bacterial and TB · post-MI and Dressler · uraemia · malignancy · radiotherapy · post-cardiac surgery · trauma · drugs**.",
+    "**Tamponade is the emergency: hypotension, raised JVP and muffled heart sounds — Beck's triad — with pulsus paradoxus and rising distress.** Say it out loud: **stop the history, MET call, IV fluids, urgent bedside echocardiogram, cardiology for pericardiocentesis.** SA: as a GP, **refer to the emergency department — you need the troponin now**; **MedSTAR 1300 13 12 33** for retrieval."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals from examiner → 'haemodynamically stable'; wash; intro, confirm name; open question; acknowledge the father's death — 'I'll come back to that'; signpost + consent"
+     "To the examiner, before a word to the patient: **'may I have the vital signs — blood pressure, pulse rate, respiratory rate, oxygen saturation and temperature?'** It is a scoring point in its own right, and it is how you detect tamponade."
     ],
     [
-     "0:45",
-     "SOCRATES to the end — the box is sealed until E: 'anything make it worse? better? — I notice you're sitting forward holding your chest, is it easier like that? and lying flat? deep breath or cough?'"
+     "0:20",
+     "WIPE, introduce, confirm identity. Open question, then **acknowledge the fear and park it**: **'I understand why that's on your mind — I'll come back to that. First, let me ask you some questions about the pain.'** Signpost and gain consent."
     ],
     [
-     "2:00",
-     "Associated + prodrome: cold/flu in last 1–2 weeks, feverish, tired"
+     "0:50",
+     "**SOCRATES, finished before you commit — treat it as a sealed box.** **Where exactly, can you point to it · when did it start, sudden or gradual · what does it feel like, sharp, dull, crushing, tight · does it move anywhere · any shortness of breath, sweating, nausea, palpitations, dizziness, cough or fever · constant or does it come and go · out of ten.** Everything so far screams MI."
     ],
     [
      "2:30",
-     "Kill list in one block: MUST ASK CVS (exertional pain before today, sweating/nausea/doom, tearing to back, arms different, palpitations, blackouts, oedema, orthopnoea/PND) · MUST ASK resp (sudden SOB, haemoptysis, calf pain/swelling, travel/surgery/immobility, fever/cough/sweats/weight loss) · GI (burning, meals, acid, forceful vomiting before pain, black stools) · MSK/skin (injury, lifting, tender on pressing, rash/burning skin) · psych (stress, panic, tingling)"
+     "**The question the station turns on — and the acted clue**: **'is there anything that makes it worse? Anything that makes it better? I notice you're sitting forward and holding your chest — is it easier like that? And what happens if you lie flat? Does it change with a deep breath or a cough?'** Register it, thank him, **and keep going without announcing the diagnosis**."
     ],
     [
-     "3:30",
-     "SADMA (cocaine/amphetamines; anticoagulants), PMHx (DM/HTN/lipids, previous MI, cardiac surgery, autoimmune, cancer, TB, HIV, renal), FHx with age, ICE 'what are you most worried this might be?'"
+     "2:50",
+     "The aetiology question: **'have you been unwell at all in the last week or two — any cold or flu-like symptoms? Have you felt feverish or unusually tired since?'**"
     ],
     [
-     "4:00",
-     "Bell → excuse yourself → ECG in seven steps → impression in four words: widespread · doesn't match a territory · no reciprocal · concave (+ PR depression)"
+     "3:15",
+     "The life-threatening screen, one efficient block: **exertional pain before today, sweating, nausea, a sense of doom · was it ever tearing or going through to your back, any difference between the arms · sudden breathlessness, coughing up blood, calf pain or swelling, long flights or car trips, recent surgery or immobility · fever, productive cough, night sweats, weight loss · any forceful vomiting before the pain started · any injury or heavy lifting, tender to press · any rash or blistering on the chest wall · burning pain related to meals or acid coming up.**"
     ],
     [
-     "5:30",
-     "Diagnosis in plain words + THREE reasons (leans forward, recent flu — most are viral, the tracing) · honest troponin line · long DDx one clause each, killers first · plan: troponin, CXR, echo, FBE/ESR/CRP, admit, colchicine + NSAID, no strenuous exercise · safety-net · summary · questions"
+     "4:30",
+     "SADMA, past and family history: **ever smoked · how much alcohol · any recreational drugs, specifically cocaine or amphetamines · regular medicines, and particularly any blood thinners** — anticoagulants change pericarditis management — **allergies · diabetes, blood pressure, cholesterol, previous heart problems or cardiac surgery, autoimmune disease, cancer, TB exposure, immunosuppression, renal failure · heart attack or sudden death in the family and at what age.** Then **'what are you most worried this might be?'**"
+    ],
+    [
+     "5:15",
+     "Excuse yourself to the patient, then the ECG in **seven steps**: rate → rhythm → P waves → PR → QRS → ST → impression, **with the voltage criteria stated**, ending on **widespread, concave, no reciprocal change, PR depression**."
+    ],
+    [
+     "6:15",
+     "Diagnosis in plain English, then **the three reasons**: the pain is better leaning forward and worse flat; there was a flu-like illness ten days ago and most of these are viral; and the tracing shows the changes we see in this condition rather than the pattern of a heart attack."
+    ],
+    [
+     "7:00",
+     "**'So it's definitely not a heart attack?'** — the honest answer, and the troponin as the reason for admission rather than discharge."
+    ],
+    [
+     "7:30",
+     "Differentials to the patient: **long, specific, one clause each, delivered quickly, life-threatening first.** MI, PE, dissection, pneumothorax, oesophageal rupture — then name heart failure, aortic stenosis, pneumonia, lung cancer, reflux, peptic ulcer, shingles, costochondritis and a psychogenic cause in one sweep."
+    ],
+    [
+     "8:45",
+     "Plan and safety net: **troponin, chest X-ray, inflammatory markers, echocardiogram · colchicine and an NSAID · avoid strenuous exercise.** Return immediately for **much worse or different pain, increasing breathlessness, feeling faint or blacking out, palpitations, high fever, or swelling of the legs or abdomen.** Summarise and check understanding."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Examiner, before I begin — may I have the vital signs: BP, pulse, respiratory rate, oxygen saturation and temperature?",
-    "That sounds very frightening and I can see you're uncomfortable. I'm going to take a history and then examine you so I can come to a diagnosis and make a plan — is that okay?",
-    "Where exactly? When — sudden or gradual? Sharp, dull, crushing, tight? Move anywhere? Constant or comes and goes? Out of ten?",
-    "★ Anything make it worse? Anything make it better? — 'I notice you're sitting forward and holding your chest — is the pain easier when you lean forward like that? And what happens if you lie flat?' Does it change with a deep breath or cough?",
-    "★ Any cold or flu-like symptoms in the last week or two? Felt feverish or unusually tired?",
-    "Exertional chest pain before today? Sweating, nausea, a feeling of doom? Tearing pain through to the back? Pain different in each arm? Palpitations? Blackouts? Leg swelling? Breathless lying flat or waking at night?",
-    "Sudden breathlessness? Coughing up blood? Calf pain or swelling? Long flights, car trips, surgery, time in bed? Fever, productive cough, night sweats, weight loss?",
-    "Burning pain, worse lying down or after meals? Acid coming up? Forceful vomiting before the pain? Black stools? Injury, heavy lifting? Tender when pressed? Rash or blistering? Stress, panic, tingling?",
-    "Smoke? Alcohol? Cocaine or amphetamines? Regular medicines — any blood thinners? Allergies? Diabetes, BP, cholesterol, previous heart problems or surgery, autoimmune disease, cancer, TB, HIV, kidney problems? Family — heart attack or sudden death, and at what age? What are you most worried this might be?",
-    "'So it's definitely not a heart attack?' → 'It looks much more like pericarditis — but the two can look very similar and I won't tell you a heart attack is excluded until the troponin blood test is back. That test is the main reason I'd like to keep you in hospital.'"
-   ],
    "pefe": [
-    "ECG read-out, fixed order: rate ~100 → regular → P before every QRS → PR normal → QRS normal → ST: 'more than 1 mm limb, more than 2 mm chest — elevation in I, II, V2–V6; concave; no reciprocal depression apart from aVR which I disregard; PR segment depression' → 'overall impression acute pericarditis: widespread, doesn't match a single coronary territory, concave, no reciprocal changes'",
-    "aVR pearl: it looks from the opposite direction, so ST depression and PR elevation in aVR are expected, not the reciprocal change of infarction",
-    "Explain: 'the heart sits inside a thin covering, a bit like a sac; in pericarditis that covering becomes inflamed and that is the pain'. Three reasons: better leaning forward/worse flat · flu ten days ago and most cases are viral · the tracing shows the changes of this condition, not a heart attack",
-    "DDx to patient, one clause each: heart attack (tracing pattern; confirm with troponin) · clot on the lung (no leg swelling, travel, surgery; sats normal) · tear in the main blood vessel (not tearing, not to the back) · collapsed lung (no injury, equal breath sounds) · then in one sweep: tear in the food pipe, heart failure, tight valve, chest infection, growth in the lung, reflux, ulcer, shingles, chest-wall cartilage, stress",
-    "Investigations: ECG · troponin (essential — raised = myopericarditis) · echo (effusion, tamponade) · CXR · FBE, ESR, CRP · UEC/LFT/BGL baseline before colchicine/NSAID · cultures if febrile and unwell. Managed in hospital because you need the troponin now",
-    "Treatment: colchicine + NSAID — ibuprofen 400–600 mg TDS with food until symptoms settle and CRP normalises then taper (aspirin 600–900 mg TDS if post-MI), plus gastric protection; colchicine 0.5 mg BD (0.5 mg daily if <70 kg or poorly tolerated) for 3 months VERIFY; no steroids first-line (recurrence); restrict strenuous exercise; admit, serial troponin, cardiology; GP in a week, repeat CRP; complete the colchicine course",
-    "Safety-net: pain much worse or different, increasing SOB, faint/dizzy/blackout, palpitations, high fever, leg or abdominal swelling → back immediately. Tamponade in the station: 'stop, call for help, MET call, IV fluids, urgent bedside echo, cardiology for pericardiocentesis'",
-    "Explain — 'the heart sits inside a thin covering, a bit like a sac; in pericarditis that covering becomes inflamed and that is the pain'. Three reasons: better leaning forward/worse flat · flu ten days ago and most cases are viral · the tracing shows the changes of this condition, not a heart attack",
-    "Investigations — ECG · troponin (essential — raised = myopericarditis) · echo (effusion, tamponade) · CXR · FBE, ESR, CRP · UEC/LFT/BGL baseline before colchicine/NSAID · cultures if febrile and unwell. Managed in hospital because you need the troponin now",
-    "Safety-net — Pain much worse or different, increasing SOB, faint/dizzy/blackout, palpitations, high fever, leg or abdominal swelling → back immediately. Tamponade in the station: 'stop, call for help, MET call, IV fluids, urgent bedside echo, cardiology for pericardiocentesis'"
+    "**Vital signs first** — blood pressure, pulse, respiratory rate, saturations, temperature.",
+    "Ask for signs **by name**; you are given only what you specifically request. **'Specifically, is there a pericardial friction rub?'** — 'any added sounds?' may get you a no.",
+    "The rub: **a superficial scratching or creaking sound, best at the left sternal edge with the patient sitting forward in end-expiration. It is evanescent — it comes and goes.** Highly specific.",
+    "**Pulsus paradoxus** — a fall of more than 10 mmHg in systolic pressure on inspiration. Nice to ask; it is the sign that detects a significant effusion.",
+    "**ECG — essential.** Widespread concave ST elevation with PR depression and no reciprocal change; it also excludes STEMI.",
+    "**Troponin — essential.** It is what excludes MI, and **a raised troponin means myopericarditis**, which changes the risk profile.",
+    "**Echocardiogram — essential.** Pericardial effusion, tamponade physiology, ventricular function.",
+    "**Chest X-ray** — usually normal; excludes pneumonia, pneumothorax and a wide mediastinum, and may show a globular heart with a large effusion.",
+    "**FBE, ESR and CRP** support the diagnosis and monitor response. **UEC, LFT and BGL** as a baseline before colchicine and NSAIDs, and for a uraemic cause. **Blood cultures if febrile and unwell**; autoimmune screen if features suggest it."
    ],
-   "fails": [
-    "Diagnosing MI at 'radiates to the left arm' — never asking relieving factors ★",
-    "Omitting the troponin; saying 'it's definitely not a heart attack' ★",
-    "Not looking at the patient leaning forward; being put off by the pleuritic quality; being talked out of it by risk factors",
-    "A one-word ECG answer; not saying the four words (widespread, no territory, no reciprocal, concave)",
-    "Two differentials only, or over-explaining each; talking over the mini-bell; skipping vitals",
-    "No safety-net, no summary, jargon"
-   ],
-   "numbers": [
-    "ST elevation significant: >1 mm limb leads, >2 mm chest leads · pericarditis ECG: widespread concave elevation + PR depression, aVR reversed, no reciprocal · MI: territorial, convex, reciprocal depression",
-    "Pericarditis vs MI: posture (better forward / none) · pleuritic (often / no) · prodrome (viral, fever / exertional, diaphoresis) · rub (yes / S4, failure) · troponin (normal unless myopericarditis / rise and fall)",
-    "Causes: viral commonest · autoimmune (SLE, RA) · bacterial/TB · post-MI (early or Dressler) · uraemia · malignancy · radiotherapy · post-cardiac surgery · trauma · drugs",
-    "Colchicine 0.5 mg BD × 3 months (0.5 mg daily if <70 kg) · ibuprofen 400–600 mg TDS with PPI · aspirin 600–900 mg TDS if post-MI · no steroids first-line VERIFY",
-    "Tamponade = Beck's triad (hypotension, raised JVP, muffled sounds) + pulsus paradoxus >10 mmHg fall on inspiration → MET call, fluids, echo, pericardiocentesis · myopericarditis = raised troponin, arrhythmia, poor LV → admit, cardiology, no exercise · purulent = high fever, rigors → cultures, IV antibiotics, drainage",
-    "Version B of this station (4-min history + ask examiner + explain) is MED-18 · MedSTAR 1300 13 12 33 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Acute pericarditis**",
+     "**Better leaning forward, worse lying flat** · recent viral illness · fever and fatigue · may be pleuritic",
+     "**Pericardial friction rub** · widespread concave ST elevation with PR depression",
+     "ECG plus the clinical picture; **echo for effusion** — urgent"
+    ],
+    [
+     "**MI / acute coronary syndrome**",
+     "Central crushing pain radiating to arm and jaw · diaphoresis, nausea · CV risk factors",
+     "**Territorial convex ST elevation with reciprocal depression** · troponin rise",
+     "**ECG and serial troponin — always. Never excluded on history alone** — emergency"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, breathlessness, haemoptysis, tachycardia",
+     "Calf swelling or pain; recent travel, surgery, immobility, malignancy",
+     "Wells score → D-dimer or CTPA — emergency"
+    ],
+    [
+     "**Aortic dissection**",
+     "**Tearing pain radiating to the back, maximal at onset**",
+     "Unequal BP in both arms, pulse deficit, wide mediastinum on CXR",
+     "**CT aortogram** — emergency"
+    ],
+    [
+     "Pneumothorax",
+     "Sudden pleuritic pain with breathlessness · trauma · tall thin build",
+     "Reduced air entry and **hyper-resonance** one side; tracheal deviation if tension",
+     "CXR — **clinical diagnosis if tension** — emergency"
+    ],
+    [
+     "Oesophageal rupture",
+     "**Severe pain after forceful vomiting** · very unwell",
+     "Surgical emphysema in the neck",
+     "CXR then CT with contrast — emergency"
+    ],
+    [
+     "Heart failure",
+     "Progressive breathlessness, orthopnoea, PND, leg swelling",
+     "Raised JVP, crackles, peripheral oedema",
+     "CXR, BNP, echocardiogram — urgent"
+    ],
+    [
+     "Aortic stenosis",
+     "Exertional pain, breathlessness, syncope",
+     "Ejection systolic murmur radiating to the carotids, slow-rising pulse",
+     "Echocardiogram — urgent"
+    ],
+    [
+     "Pneumonia",
+     "Fever, productive cough, pleuritic pain",
+     "Focal crackles, bronchial breathing",
+     "CXR, inflammatory markers — urgent"
+    ],
+    [
+     "**Gastro-oesophageal reflux**",
+     "**Also worse lying flat** — but burning, related to meals, with acid regurgitation",
+     "Relief with antacids; no viral prodrome, no fever, no ECG change, no rub",
+     "Trial of a PPI; endoscopy if red flags"
+    ],
+    [
+     "Peptic ulcer",
+     "Epigastric pain related to meals · NSAID use · melaena",
+     "Epigastric tenderness",
+     "H. pylori testing, endoscopy"
+    ],
+    [
+     "Shingles",
+     "**Burning unilateral pain that may precede the rash by days**",
+     "Vesicular rash in a dermatomal distribution",
+     "Clinical; inspect the skin of the chest and back"
+    ],
+    [
+     "Costochondritis · psychogenic",
+     "Localised and reproducible on pressing; or stress, palpitations, tingling, a sense of doom",
+     "Point tenderness over the costal cartilages; otherwise normal examination",
+     "**Diagnoses of exclusion — never first**"
+    ]
    ]
   },
   "source": "Pericarditis.pdf (Version A — history + ECG interpretation + explanation)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › Pericarditis.pdf",
   "must": [
-   "FAIL — Diagnosing MI at 'radiates to the left arm' — finish SOCRATES; relieving factors are the single diagnostic clue in the whole station",
-   "FAIL — Not looking at the patient — he is sitting forward clutching his chest; 'is it easier when you lean forward like that, and what happens lying flat?'",
-   "FAIL — Not saying the four words on the ECG: widespread · doesn't match a territory · no reciprocal changes · concave (PR depression marks the strong candidate)",
-   "FAIL — Saying 'it's definitely not a heart attack' — 'it looks much more like pericarditis, but I won't exclude a heart attack until the troponin is back'; that is why he is admitted",
-   "FAIL — Being put off by the pleuritic quality, or talked out of it by risk factors — neither excludes pericarditis",
-   "DO — Treatment in two words: colchicine plus an NSAID; echo for effusion; escalate for tamponade — hypotension, raised JVP, muffled sounds"
-  ]
+   "FAIL — Diagnosing MI at 'radiates to the left arm and jaw' and stopping there.",
+   "FAIL — Never asking about relieving factors. That single question is the station.",
+   "FAIL — A one-word ECG answer. The systematic read-out is the mark.",
+   "FAIL — 'It's definitely not a heart attack' before the troponin is back.",
+   "ASK — Anything that makes it better? And what happens if you lie flat?",
+   "ASK — Any cold or flu-like illness in the last week or two?"
+  ],
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs, before anything else",
+    "BP 124/78 · pulse 98 regular · RR 18 · SpO2 98% RA · T 37.8 · BGL 5.6. Stable, with a LOW-GRADE FEVER. Exact figures vary between recalls — the PATTERN is what matters"
+   ],
+   [
+    "What the role-player is showing you",
+    "He sits LEANING FORWARD, CLUTCHING HIS CHEST. He is acting the answer before you ask for it — name the observation out loud"
+   ],
+   [
+    "12-lead ECG",
+    "Rate ~100, regular · P waves present before every QRS · PR normal · QRS normal · ST ELEVATION IN I, II, V2, V3, V4, V5 AND V6 — WIDESPREAD, CROSSING TERRITORIES · CONCAVE · NO RECIPROCAL DEPRESSION apart from aVR, which you disregard · PR SEGMENT DEPRESSION"
+   ],
+   [
+    "Voltage criteria — say the numbers",
+    "Limb leads (I, II, III, aVR, aVL, aVF): more than 1 mm, one small square. Chest leads (V1–V6): more than 2 mm, two small squares"
+   ],
+   [
+    "Cardiovascular examination, if you ask",
+    "S1 and S2 normal, no murmur — and a PERICARDIAL FRICTION RUB PRESENT. No raised JVP, apex not displaced, no parasternal heave"
+   ],
+   [
+    "Pulsus paradoxus",
+    "Absent. A fall of more than 10 mmHg in systolic BP on inspiration would mean a significant effusion or TAMPONADE"
+   ],
+   [
+    "Respiratory, abdomen, lower limbs",
+    "Normal — equal air entry, no added sounds, abdomen soft and non-tender, no oedema, no calf swelling"
+   ],
+   [
+    "Troponin",
+    "Sent, not back. NEVER tell the patient or the examiner that a heart attack is excluded before it returns"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-18",
   "cat": "med",
   "promptBell": false,
   "promptAt": 240,
-  "setting": "You are the Hospital Medical Officer in the Emergency Department of a metropolitan Australian hospital.",
   "stem": [
    "James Whitfield, a 55-year-old man, has presented with the sudden onset of central chest pain that began approximately 20 minutes ago. He is anxious and says his father died of a heart attack.",
    "BP 124/78 · pulse 98 regular · RR 18 · SpO2 98% room air · temp 37.8 °C · BGL 5.6."
@@ -6725,92 +6839,214 @@
    "Ask the examiner for the relevant physical examination findings (you will be given findings only if you ask for them specifically)",
    "Explain your likely diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Mini-bell at 4:00 — stop the history immediately. Obtaining the ECG is not your task in this version.",
   "back": {
-   "dx": "Same case as MED-17 — acute viral pericarditis presenting as an MI mimic. Four-minute history means prioritise: intro/consent → complete SOCRATES (relieving factors are the diagnosis) → life-threatening CVS and respiratory screen → GI/MSK only if time. Then PEFE by name: the pericardial friction rub is the mark — 'any added sounds?' may get you 'no'. Findings: no distress, no cyanosis, alert; vitals unchanged; JVP not raised; apex not displaced, no heave; S1 S2 normal, no murmur, PERICARDIAL FRICTION RUB PRESENT; equal air entry; abdomen normal; no oedema; no pulsus paradoxus; ECG pending.",
+   "dx": [
+    "**Acute pericarditis, most likely viral.** Same clinical content as version A — **only the task list and the timing change**. Here the marked tasks are a **4-minute history**, **asking the examiner for findings**, and the explanation.",
+    "**You cannot fit the full structure into four minutes, and you are not expected to.** Priority order: **a proper introduction and consent → a complete pain analysis → the life-threatening cardiovascular and respiratory differentials → gastrointestinal and musculoskeletal, which are the ones to sacrifice.** If the bell goes while you are in the GI or MSK block, you have done a good job.",
+    "**When the bell sounds, stop the history immediately and move on.** Candidates lose whole marked tasks by talking over it.",
+    "**The three-clue signature: better leaning forward · worse lying flat · a recent flu-like illness.** The role-player **sits leaning forward clutching his chest** — he is acting the answer, so name the observation and ask directly.",
+    "**Asking the examiner is its own marked task here.** Excuse yourself first — **'thank you for answering the questions, James. My apologies, I'll just talk to my examiner for a second'** — then ask for **every finding by name**, with no chit-chat.",
+    "**The friction rub must survive any compression of that request.** It is a **superficial scratching or creaking sound at the left sternal edge, with the patient sitting forward in end-expiration, and it is evanescent**. Asking for it by name is the scoring point; **'any added sounds?' may get you a no**.",
+    "The one-breath version if time is very short: **'general appearance and vitals; cardiovascular inspection, palpation and auscultation, and specifically is there a pericardial friction rub; respiratory air entry and added sounds; lower limbs for oedema.'**",
+    "To the patient: **'the heart sits inside a thin covering, and in pericarditis that covering becomes inflamed — that inflammation is what causes the pain.'** Then **the three reasons**: the posture, the recent viral illness, and the examination finding.",
+    "**Never over-reassure**: **'it looks much more like pericarditis than a heart attack, but the two can look very similar and I won't tell you a heart attack is excluded until I have a blood test back.'** Treatment is **colchicine plus an NSAID** — **ibuprofen 400–600 mg three times daily with food**, **colchicine 0.5 mg twice daily for 3 months**; **steroids are not first line and increase recurrence**. VERIFY",
+    "**Tamponade is the emergency: hypotension, raised JVP, muffled heart sounds, pulsus paradoxus.** **Do not keep taking a history from a patient who is obstructing** — **stop, MET call, IV fluids, urgent bedside echo, cardiology for pericardiocentesis.** SA: **MedSTAR 1300 13 12 33** for retrieval; as a GP, **refer to ED because you need the troponin now**."
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals → wash → intro → open question → acknowledge the father → signpost + consent (30 s)"
+     "To the examiner: **'may I have the vital signs — blood pressure, pulse rate, respiratory rate, oxygen saturation and temperature?'** Stable with a low-grade fever."
     ],
     [
-     "0:30",
-     "SOCRATES to the end, including the acted clue (leaning forward) and deep breath/cough; recent flu, fever, fatigue"
+     "0:15",
+     "WIPE, introduce, confirm identity, **signpost and consent in one sentence** — the clock is short and the introduction is still a marked item."
+    ],
+    [
+     "0:40",
+     "**The complete pain analysis, and nothing skipped**: **where exactly · when and how did it start · what does it feel like · does it move anywhere · constant or intermittent · out of ten · and — the one that decides the case — anything that makes it worse, anything that makes it better, does it change with position, with a deep breath or a cough?**"
     ],
     [
      "2:00",
-     "Killers: exertional pain before today, sweating/nausea, tearing to back, palpitations/blackouts, oedema/orthopnoea; sudden SOB, haemoptysis, calf, travel/surgery/immobility, cough/fever"
+     "**Name the acted clue**: **'I notice you're sitting forward and holding your chest — is the pain easier when you lean forward like that? And what happens if you lie flat?'** Then the prodrome: **'have you been unwell in the last week or two — any cold or flu-like symptoms? Feverish, unusually tired?'**"
     ],
     [
-     "3:15",
-     "SADMA (drugs, anticoagulants), PMHx, FHx age; GI/MSK if any time; ICE"
+     "2:30",
+     "**The life-threatening screen — non-negotiable even in four minutes.** Cardiovascular: **exertional pain before today, sweating, nausea, a sense of doom · tearing pain through to the back, any difference between the arms · palpitations, blackouts, leg swelling, orthopnoea.** Respiratory: **sudden breathlessness, coughing up blood, calf pain or swelling, long flights or car trips, recent surgery or immobility, fever with productive cough, night sweats, weight loss.**"
+    ],
+    [
+     "3:30",
+     "GI and musculoskeletal **if the bell has not gone** — these are the ones to sacrifice: **burning pain worse lying down or after meals, acid regurgitation, forceful vomiting before the pain, black stools · injury or heavy lifting, tender to press · any rash or blistering on the chest wall.** Then a fast **SADMA including anticoagulants**, and **'what are you most worried this might be?'**"
     ],
     [
      "4:00",
-     "Bell — 'Thank you James, my apologies, I'll just speak with my examiner' → ten-step PEFE, findings not technique, rub by name, pulsus paradoxus as bonus"
+     "**The mini-bell. Stop mid-sentence if you have to.** Turn to the examiner — **but excuse yourself to the patient first.**"
     ],
     [
-     "5:30",
-     "Diagnosis + three reasons (posture, viral prodrome, rub — ECG pending) · honest troponin line · DDx list killers first · plan + safety-net · summary"
+     "4:15",
+     "**The ten-step request, every finding by name**: **general appearance · vitals · CVS inspection for a raised JVP and visible apex · palpation for displacement and a parasternal heave · auscultation for S1, S2, murmurs, added sounds and specifically a pericardial friction rub · respiratory air entry and added sounds · abdomen · lower limbs for oedema and calf signs · bedside investigations · and pulsus paradoxus.**"
+    ],
+    [
+     "5:45",
+     "Diagnosis in plain English, then **the three reasons** — posture, viral prodrome, and the friction rub on examination."
+    ],
+    [
+     "6:30",
+     "**'So it's definitely not a heart attack?'** — the honest answer, and the troponin as the reason for admission."
+    ],
+    [
+     "7:15",
+     "Differentials: **long, specific, one clause each, life-threatening first** — MI, PE, dissection, pneumothorax, oesophageal rupture — then heart failure, aortic stenosis, pneumonia, lung cancer, reflux, peptic ulcer, shingles, costochondritis and psychogenic named in one sweep."
+    ],
+    [
+     "8:30",
+     "Plan and safety net: **troponin, CXR, inflammatory markers, echocardiogram · colchicine and an NSAID · no strenuous exercise.** Return immediately for **much worse or different pain, increasing breathlessness, feeling faint or blacking out, palpitations, high fever, or leg or abdominal swelling.** Summarise, check understanding."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Examiner, may I have the vital signs — BP, pulse, respiratory rate, saturations, temperature?",
-    "★ Anything make it better? I notice you're sitting forward holding your chest — is it easier like that? What about lying flat? Deep breath or cough?",
-    "★ Any cold or flu-like illness in the last couple of weeks? Feverish, tired?",
-    "One-breath PEFE if short of time: 'Examiner — general appearance and vitals; cardiovascular inspection, palpation and auscultation, and specifically is there a pericardial friction rub; respiratory air entry and added sounds; lower limbs for oedema.' The rub must survive the compression",
-    "Full PEFE order: 1 general — distress, cyanosis, pallor, alert? 2 vitals 3 CVS inspection — JVP raised? apex visible? 4 palpation — apex displaced? parasternal heave? 5 auscultation — S1 S2, murmurs, added sounds, specifically a pericardial friction rub? 6 resp — equal air entry, added sounds? 7 abdomen 8 lower limbs — oedema, calf tenderness? 9 bedside — ECG available? 10 bonus — pulsus paradoxus?",
-    "If asked what a rub is: superficial scratching/creaking, left sternal edge, sitting forward in end-expiration, evanescent — highly specific"
-   ],
    "pefe": [
-    "Raised JVP, hypotension, muffled sounds here = tamponade → stop, MET call, fluids, urgent echo, cardiology for pericardiocentesis",
-    "Diagnosis to patient as MED-17; third reason becomes 'when I listened to your heart I could hear the rubbing sound of the inflamed lining' while the tracing and blood test are pending",
-    "Plan: ECG, troponin, echo, CXR, FBE/ESR/CRP; admit for serial troponin; colchicine + NSAID; restrict exercise; safety-net (pain worse/different, SOB, faint, palpitations, fever, swelling)",
-    "The triad that stops the station — RAISED JVP + HYPOTENSION + MUFFLED HEART SOUNDS = TAMPONADE — stop, MET call, fluids, urgent echo, cardiology for pericardiocentesis"
+    "**Excuse yourself to the patient before turning to the examiner.** It is an etiquette mark and it costs one sentence.",
+    "**Ask for every finding by name — you are given nothing you do not specifically request.** No chit-chat; get straight to the point.",
+    "**'Specifically, is there a pericardial friction rub?'** This is the scoring request of the whole station.",
+    "**Pulsus paradoxus** — a fall of more than 10 mmHg in systolic pressure on inspiration; the sign that detects a significant effusion or tamponade.",
+    "**A raised JVP with muffled heart sounds and hypotension is Beck's triad** — stop and escalate rather than finishing the station.",
+    "**ECG and troponin are both essential** — the ECG excludes STEMI, the troponin excludes MI and detects myopericarditis.",
+    "**Echocardiogram** for effusion, tamponade physiology and ventricular function. **Chest X-ray** — usually normal, excludes pneumonia, pneumothorax and a wide mediastinum.",
+    "**FBE, ESR and CRP** to support the diagnosis and monitor response; **UEC, LFT and BGL** as a baseline before colchicine and NSAIDs."
    ],
-   "fails": [
-    "Talking over the 4-minute bell and never reaching the explanation ★",
-    "Not asking for the friction rub by name ★",
-    "Never asking relieving factors; saying 'definitely not a heart attack'; no troponin in the plan",
-    "Chit-chat with the examiner; asking technique instead of findings; not excusing yourself to the patient first",
-    "Short differential list; no safety-net or summary"
-   ],
-   "numbers": [
-    "4-minute priority order: 1 intro + consent · 2 complete SOCRATES · 3 CVS + respiratory killers · 4 GI/MSK — sacrifice these if the bell beats you",
-    "Two signs that matter: pericardial friction rub (ask by name) · pulsus paradoxus >10 mmHg (effusion/tamponade)",
-    "Colchicine 0.5 mg BD × 3 months · NSAID + PPI · no steroids first-line VERIFY · see MED-17 for the full ECG read-out, DDx table and doses",
-    "MedSTAR 1300 13 12 33 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Acute pericarditis**",
+     "**Better leaning forward, worse lying flat** · recent viral illness · fever and fatigue · may be pleuritic",
+     "**Pericardial friction rub — asked for by name** · widespread concave ST elevation with PR depression",
+     "ECG plus the clinical picture; **echo for effusion** — urgent"
+    ],
+    [
+     "**MI / acute coronary syndrome**",
+     "Central crushing pain radiating to arm and jaw · diaphoresis, nausea · CV risk factors",
+     "**Territorial convex ST elevation with reciprocal depression** · troponin rise",
+     "**ECG and serial troponin — always. Never excluded on history alone** — emergency"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, breathlessness, haemoptysis, tachycardia",
+     "Calf swelling or pain; recent travel, surgery, immobility, malignancy",
+     "Wells score → D-dimer or CTPA — emergency"
+    ],
+    [
+     "**Aortic dissection**",
+     "**Tearing pain radiating to the back, maximal at onset**",
+     "Unequal BP in both arms, pulse deficit, wide mediastinum",
+     "**CT aortogram** — emergency"
+    ],
+    [
+     "Pneumothorax",
+     "Sudden pleuritic pain with breathlessness · trauma · tall thin build",
+     "Reduced air entry and hyper-resonance one side; tracheal deviation if tension",
+     "CXR — clinical diagnosis if tension — emergency"
+    ],
+    [
+     "Oesophageal rupture",
+     "**Severe pain after forceful vomiting** · very unwell",
+     "Surgical emphysema in the neck",
+     "CXR then CT with contrast — emergency"
+    ],
+    [
+     "Heart failure",
+     "Progressive breathlessness, orthopnoea, PND, leg swelling",
+     "Raised JVP, crackles, peripheral oedema",
+     "CXR, BNP, echocardiogram — urgent"
+    ],
+    [
+     "Aortic stenosis",
+     "Exertional pain, breathlessness, syncope",
+     "Ejection systolic murmur to the carotids, slow-rising pulse",
+     "Echocardiogram — urgent"
+    ],
+    [
+     "Pneumonia",
+     "Fever, productive cough, pleuritic pain",
+     "Focal crackles, bronchial breathing",
+     "CXR, inflammatory markers — urgent"
+    ],
+    [
+     "**Gastro-oesophageal reflux**",
+     "**Also worse lying flat** — but burning, related to meals, with acid regurgitation",
+     "Relief with antacids; no viral prodrome, no fever, no rub",
+     "Trial of a PPI; endoscopy if red flags"
+    ],
+    [
+     "Peptic ulcer · shingles",
+     "Epigastric pain with NSAID use or melaena; burning unilateral pain preceding a rash",
+     "Epigastric tenderness; dermatomal vesicles",
+     "H. pylori testing and endoscopy; clinical skin inspection"
+    ],
+    [
+     "Costochondritis · psychogenic",
+     "Localised and reproducible on pressing; or stress, palpitations, tingling",
+     "Point tenderness; otherwise normal examination",
+     "**Diagnoses of exclusion — never first**"
+    ]
    ]
   },
   "source": "Pericarditis.pdf (Version B — 4-minute history + ask examiner + explanation)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › Pericarditis.pdf",
   "findings": [
    [
-    "Heart sounds",
-    "A PERICARDIAL RUB — 'the rubbing sound of the inflamed lining'"
+    "1. General appearance",
+    "Any respiratory distress, cyanosis, pallor? Drowsy or alert? — NO distress, NO cyanosis, not pale, ALERT"
    ],
    [
-    "Observations",
-    "Full set, looking for hypotension and tachycardia"
+    "2. Vital signs",
+    "BP, pulse, respiratory rate, saturations, temperature — UNCHANGED from the start: BP 124/78 · pulse 98 · RR 18 · SpO2 98% · T 37.8"
+   ],
+   [
+    "3. Cardiovascular — inspection",
+    "Raised JVP? Apex beat visible? — NO raised JVP, not visible. A RAISED JVP HERE WOULD MEAN TAMPONADE"
+   ],
+   [
+    "4. Cardiovascular — palpation",
+    "Apex displaced? Parasternal heave? — No, and no"
+   ],
+   [
+    "5. Cardiovascular — auscultation",
+    "S1 and S2 normal? Any murmurs or added sounds? SPECIFICALLY, IS THERE A PERICARDIAL FRICTION RUB? — S1 and S2 normal, no murmur, PERICARDIAL FRICTION RUB PRESENT"
+   ],
+   [
+    "6. Respiratory",
+    "Air entry equal bilaterally? Added sounds? — Equal air entry, NO added sounds"
+   ],
+   [
+    "7. Abdomen",
+    "Swelling, redness, masses, tenderness? — Normal"
+   ],
+   [
+    "8. Lower limbs",
+    "Oedema? Calf swelling or tenderness? — NO oedema, no calf signs"
+   ],
+   [
+    "9. Bedside",
+    "ECG and bedside investigations available? — ECG PENDING. In version B, obtaining the ECG is NOT your task"
+   ],
+   [
+    "10. Bonus sign",
+    "Is there a PULSUS PARADOXUS? — Absent. Not fatal to omit, but it is the sign that detects a significant effusion"
    ]
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Talking over the 4-minute bell and never reaching the explanation — when it sounds, stop; sacrifice GI and MSK, never SOCRATES or the cardiovascular and respiratory killers",
-   "FAIL — Not asking for the pericardial friction rub by name — 'any added sounds?' gets 'no'; you are given only what you request specifically",
-   "FAIL — Never asking relieving factors — 'better leaning forward, worse lying flat' plus the recent flu is the diagnosis",
-   "FAIL — Saying 'definitely not a heart attack' before the troponin",
-   "SAY — 'I say that for three reasons: your pain is better when you lean forward, you've had a recent flu-like illness, and the examination and tracing show the changes of this condition'",
-   "DO — Excuse yourself to the patient, then ask the examiner by name with no chit-chat — the one-breath version if short: appearance and vitals; CVS inspection, palpation, auscultation and the friction rub; respiratory; legs"
-  ]
+   "FAIL — Talking over the mini-bell and never reaching the explanation.",
+   "FAIL — Not asking for the **pericardial friction rub by name**. You get only what you request.",
+   "FAIL — Diagnosing MI before the pain box is closed.",
+   "FAIL — 'It's definitely not a heart attack' before the troponin is back.",
+   "ASK — Anything that makes it better? And what happens if you lie flat?",
+   "ASK — Excuse yourself to the patient before you turn to the examiner."
+  ],
+  "v2": true
  },
  {
   "id": "MED-19",
   "cat": "med",
   "promptBell": false,
   "promptAt": 270,
-  "setting": "General practice / outpatient clinic.",
   "stem": [
    "Lily, a 50-year-old woman, presents with on-and-off chest pain. Her father had a heart attack recently. She is worried she is having a heart attack too.",
    "An ECG has already been done — it will be handed to you approximately 4–5 minutes into the station. Vital signs are provided on request."
@@ -6820,94 +7056,219 @@
    "Interpret the ECG to the patient",
    "Explain your diagnosis and your differential diagnoses, including an explicit response to her concern about a heart attack"
   ],
-  "time": "8 minutes. 0:00–1:00 stability, WIPE, acknowledge the fear · 1:00–5:00 history · 5:00–6:00 ECG read and explained to her · 6:00–7:15 diagnosis, reasons, her concern, management · 7:15–8:00 rapid differential list, summary.",
   "back": {
-   "dx": "Gastro-oesophageal reflux disease — months of on/off burning retrosternal + epigastric pain, 4–5/10, not progressive, doesn't wake her, no radiation, worse lying down, better leaning forward (the planted pericarditis red herring), 'not sure' about food (deliberately vague — keep asking), acid brash YES, water brash YES, regurgitation sometimes; 3–4 coffees a day, a drink most nights, regular ibuprofen for her knee (the modifiable cause); no CV risk factors; father's MI at 78 (ask the age); no alarm features. ECG completely normal (BP 128/78, PR 76, RR 16, SpO2 99%, T 36.7). Discriminating behaviours: ask acid brash and water brash by name; call the ECG normal with confidence; de-escalate her fear with TWO named reasons, never the ECG alone.",
+   "dx": [
+    "**Gastro-oesophageal reflux disease** — chronic, on and off, **burning, retrosternal with an epigastric component**, worse lying flat, better leaning forward, **with acid brash and water brash**, on a background of **coffee, alcohol and regular NSAID use**.",
+    "**The planted red herring: 'better leaning forward, worse lying down' is the classic pericarditis descriptor and it is here on purpose.** It is also entirely consistent with reflux — **lying flat abolishes gravity's protection against acid moving up the oesophagus**. Acknowledge it and keep going rather than announcing a diagnosis.",
+    "**'I'm not sure if it's related to food' is also deliberate** — the case protecting its own difficulty. **Ambiguity is a signal to keep asking.** Probe all three axes: **activity and rest · position · food**.",
+    "**Acid brash and water brash are the two questions that make the diagnosis.** **'Do you get an acidic or bitter taste at the back of your mouth?'** and **'have you noticed your mouth suddenly filling with saliva?'** Both yes.",
+    "**The two-axis rule: pain that tracks with meals and posture is oesophageal; pain that tracks with exertion and rest is cardiac.** On radiation — **cardiac characteristically goes to the arm; oesophageal sits in the epigastrium and may reach the jaw but not the arm.**",
+    "**A normal ECG does not exclude ischaemia** — say it explicitly, to the examiner and in plain words to her. What lets you settle on GORD is **the combination**: chronic non-exertional burning pain, no arm radiation, no cardiac associated symptoms, minimal personal risk factors, positive reflux features and clear triggers — **plus** the normal tracing. **Never let the ECG do the work alone.**",
+    "**Two reasons, always**, when you address her fear: **the tracing is normal, and — more importantly — the character of the pain doesn't fit heart pain**, which is heavy and crushing, exertional, eased by rest and radiating to arm or jaw. Then **offer the cardiovascular risk assessment anyway** — that converts reassurance into partnership.",
+    "**Premature cardiovascular disease means an event before 55 in men and 65 in women.** Her father was **78**, so the family history carries much less weight for her own risk — and **asking the age is the question most candidates forget**. A father who had one at 40–45 would change your threshold considerably.",
+    "Management: **stop the ibuprofen and substitute paracetamol** — the highest-yield step, because prescribing a PPI while she continues the NSAID **treats the smoke and leaves the fire**. Then **cut coffee and alcohol · smaller, more frequent meals · nothing within 3 hours of lying down · elevate the head of the bed 15–20 cm with blocks, not extra pillows · avoid tight clothing**. **A PPI once daily for 4–8 weeks** — esomeprazole 20 mg, pantoprazole 20–40 mg or omeprazole 20 mg, **30–60 minutes before breakfast** — then review and step down to the lowest effective dose. VERIFY",
+    "**Screen the alarm features before you label anything benign: dysphagia · odynophagia · weight loss · melaena · haematemesis · persistent vomiting · anaemia · new onset over 50.** Safety net: **exertional pain, radiation to arm or jaw, sweating, breathlessness or collapse → call 000, don't drive.** Food sticking, vomiting blood, or black tarry stools → urgent review. **Review in 4–6 weeks — failure to respond is itself an indication for endoscopy.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals → wash → intro, confirm name/DOB → purpose + consent → comfort → open question → she volunteers the fear → structured reassuring statement (names the emotion, names the dad, gives a plan, promises to return, asks permission)"
+     "To the examiner: **'before I begin, may I please have the patient's vital signs?'** — BP, pulse, respiratory rate, saturations, temperature. **Verbalise stability even when the stem says vitals are stable.** Every chest pain station earns this."
+    ],
+    [
+     "0:30",
+     "WIPE, confirm name and date of birth, permission and purpose, check she is comfortable — then **the structured reassuring statement, which is a scoring moment**: **'Lily, I completely understand how frightening chest pain can be, especially after what happened to your dad. Let me ask you a few questions, then I'll look at your heart tracing. We'll work out the cause together, and I promise I'll address your concerns and come up with the best plan for you.'**"
     ],
     [
      "1:00",
-     "SOCRATES incl. the night-waking red flag (chronic pain) — probe all three axes: activity/rest, position, food; don't accept 'not sure'"
+     "Block 1, the pain analysis: **where exactly, point with one finger · when did it start, sudden or gradual · what does it feel like, burning, crushing, tight, sharp, tearing · does it travel anywhere, arm, jaw, neck, back · constant or on and off, getting worse · out of ten** — and, because the pain is months old, **does it ever wake you from sleep?**"
     ],
     [
      "2:15",
-     "Cardiac symptom screen (all negative) → every risk factor: HTN, DM, lipids, smoking, alcohol, weight, activity, FHx + 'how old was your father?'"
+     "**Do not accept one answer on aggravating and relieving factors — push all three axes**: **does it come on walking uphill or climbing stairs, and settle with rest · lying flat, bending over, leaning forward · after meals, before meals, large meals, late at night?** Also ask **what she has tried — antacids, peppermint**."
     ],
     [
-     "3:00",
-     "Other CVS (pericarditis — fever/viral/pleuritic; AS; HF; dissection; arrhythmia) → respiratory (pneumonia, PE, pneumothorax, cancer screen doubles as GI alarm screen)"
+     "2:45",
+     "Cardiac symptom screen, asked even though the pain sounds benign: **shortness of breath · nausea or vomiting · sweating or clamminess · palpitations · dizziness, blackouts or collapse · ankle swelling · orthopnoea · waking at night gasping · exercise tolerance.** Their absence is part of your evidence."
+    ],
+    [
+     "3:15",
+     "Cardiovascular risk factors, **every one**: **blood pressure · blood sugar · cholesterol · smoking · alcohol · weight · activity · family history** — and then the question most candidates forget: **'you mentioned your dad — how old was he when it happened?'**"
     ],
     [
      "3:45",
-     "GI block — where it's decided: abdominal pain/N&V → ★ acid or bitter taste? ★ mouth filling with saliva? regurgitation on bending? cough/hoarse/wheeze → alarm features: food sticking, painful swallowing, weight loss, black tarry sticky stools, vomiting blood → PUD discriminators (to the back, dull ache, night pain) → biliary → GORD risks: coffee, spicy/fatty/late meals → ★ medications incl. OTC → rash, worse on pressing/moving, mood/stress; SADMA, PMHx, allergies"
+     "Other cardiac and respiratory causes in one block: **recent viral illness or fever, sharp pain worse on deep breath or coughing** (pericarditis) · **exertional breathlessness or blackouts, known murmur** (aortic stenosis) · **sudden maximal tearing pain through to the back** (dissection) · **sudden breathlessness, haemoptysis, calf pain, long travel, surgery, immobility, the pill or HRT, previous clot, active cancer** (PE) · **fever, cough, sputum** (pneumonia) · **weight loss, appetite, night sweats, hoarse voice, neck lumps** — which also covers your oesophageal and gastric cancer red flags."
+    ],
+    [
+     "4:15",
+     "**Block 6 — where the case is decided.** **Any tummy pain, nausea or vomiting · do you get an acidic or bitter taste at the back of your mouth · has your mouth suddenly filled with saliva · does food or fluid come back up when you bend over or lie down · any chronic dry cough, hoarse voice in the morning, sore throat, night wheeze or dental problems?**"
     ],
     [
      "5:00",
-     "ECG: read systematically, then to Lily in plain words with the honest limit ('one normal tracing doesn't rule out heart disease forever — it's one piece')"
+     "**Alarm features before any reassurance**: **does food stick when you swallow · does it hurt to swallow · any unintentional weight loss · have your bowel motions been black, tarry and sticky** — say it in those words, not 'melaena' and not 'dark stools' — **any vomiting of blood · persistent vomiting · any family history of stomach or oesophageal cancer?** Then the ulcer discriminators: **does it go through to your back, is it a deep dull ache rather than burning, does it wake you at night?**"
+    ],
+    [
+     "5:20",
+     "Triggers and the medication question, which earns marks twice: **do you drink a lot of tea or coffee · spicy, fatty or fried food, chocolate, large meals late at night · are you taking any medications at all, including anything over the counter or from the pharmacy?** **NSAIDs, bisphosphonates, calcium channel blockers, nitrates, anticholinergics, doxycycline and potassium supplements** all cause or worsen reflux."
+    ],
+    [
+     "5:45",
+     "Sweep-up with the time left: **any rash or blistering on your chest or back · is it worse when you move, twist or press on your chest · how has your mood been, any stress at home or work** — then **SADMA, past history, family history, and confirm there is nothing else worrying her**."
     ],
     [
      "6:00",
-     "Four moves: name it → explain the valve → reasons (burning, posture, acid/water brash, coffee/alcohol/ibuprofen) → her concern: two reasons + offer CV risk check → management → safety-net → rapid DDx list → summary"
+     "The ECG: read it **systematically and out loud** — details and calibration, rate, rhythm, P waves, PR, QRS, ST, T, QTc — then **have the courage to call it normal**. Then **explain it to her, not to the examiner**: the headline first, each finding in everyday language, and **honest about the limits** — one normal tracing today does not rule out heart disease forever."
+    ],
+    [
+     "6:45",
+     "Diagnosis: **name it → explain it simply → give your reasons.** **'Normally there's a valve between your food pipe and your stomach that keeps the acid where it belongs. When it doesn't close properly, acid comes back up, and because the food pipe isn't built to handle acid it gets irritated — that irritation is the burning.'** Reasons: the burning quality, the posture relationship, the acid and water brash, and the coffee, alcohol and ibuprofen."
+    ],
+    [
+     "7:15",
+     "**Address the heart-attack concern head-on with two named reasons**, then: **'because your dad had a heart attack, I do want to check your overall heart risk properly with some blood tests and a blood pressure check, so we're looking after that side of things too.'**"
+    ],
+    [
+     "7:45",
+     "**Differentials briskly — coverage beats depth with the clock running.** Heart, pericarditis, stomach ulcer, clot on the lung, collapsed lung, chest infection, gallbladder, chest wall, shingles, stress — one clause each, and keep going until the bell."
+    ],
+    [
+     "8:00",
+     "Plan and safety net: **stop the ibuprofen · lifestyle and bed elevation · a 4–8 week PPI trial · FBC, H. pylori, lipids and glucose · review in 4–6 weeks.** **000 for exertional or radiating pain with sweating, breathlessness or collapse; urgent review for food sticking, vomiting blood or black tarry stools.** Summarise and **check understanding**."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Lily, I completely understand how frightening chest pain can be, especially after what happened to your dad. Let me ask a few questions, then I'll look at your heart tracing. We'll work out the cause together, and I promise I'll come back to your concern. Is that alright?",
-    "Where exactly — point with one finger? Sudden or gradual, when? Burning, crushing, tight, sharp, tearing? Travel anywhere — arm, jaw, neck, back? Constant or on and off, getting worse? Does it ever wake you from sleep? Worse? Better — antacids, peppermint? Out of ten?",
-    "Walking uphill or stairs — and settles with rest? Lying flat, bending, leaning forward? After meals, before, large or late meals? (all three axes, every time)",
-    "SOB, nausea/vomiting, sweating, palpitations, dizziness, blackouts, ankle swelling, orthopnoea, PND, exercise tolerance?",
-    "High blood pressure? Blood sugar? Cholesterol? Smoke, ever? Alcohol per week? Weight? How active? Heart disease in the family — ★ how old was your father when it happened? ('it matters most under 55')",
-    "Fever or viral illness, sharp pain worse on deep breath? Chest pain, breathlessness or blackouts on exertion? Pillows, PND, ankle swelling? Sudden tearing pain to the back? Racing or skipping? Cough, sputum, fever? Sudden SOB, haemoptysis, calf pain, travel, surgery, pill/HRT, previous clot, cancer? Weight loss, appetite, night sweats, hoarse voice, neck lumps?",
-    "★ Do you get an acidic or bitter taste at the back of your mouth? ★ Have you noticed your mouth suddenly filling with saliva? Does food or fluid come back up when you bend or lie down? Chronic dry cough, hoarse in the morning, wheeze at night?",
-    "★ Does food ever stick? Hurt to swallow? Weight loss without trying? Bowel motions black, tarry and sticky like tar? Vomited blood? Persistent vomiting? Family history of stomach or food-pipe cancer?",
-    "Pain through to the back, or a deep dull ache rather than burning? Right upper tummy pain after fatty meals, yellow eyes, pale stools? Tea/coffee — how much? Spicy, fatty, fried, chocolate, late meals? ★ Any medications at all, including over the counter or from the pharmacy? Rash or blistering? Worse when you move, twist or press? Mood, stress at home or work?"
-   ],
    "pefe": [
-    "ECG to the examiner/yourself: details, calibration → rate ~75 → regular → P before every QRS, sinus → PR normal → QRS normal, no Q waves → no ST elevation or depression in any territory → T waves normal → QTc normal → 'a completely normal ECG'. Don't over-read mild concave ST elevation in V5–V6 (benign early repolarisation) as pericarditis",
-    "ECG to Lily: 'this is a tracing of your heart's electrical activity. The good news is it's completely normal — rate about 75, rhythm regular and coming from the right place, and importantly none of the changes we'd expect if the heart muscle wasn't getting enough blood or you were having a heart attack. One honest thing: a normal tracing today doesn't rule out heart disease forever — it's one piece of the picture'",
-    "Diagnosis: 'reflux — a valve between food pipe and stomach that keeps acid where it belongs; when it doesn't close properly acid comes back up and the food pipe, which isn't built for acid, gets irritated — that's the burning'. Reasons: burning quality · posture (acid moves up when gravity isn't helping) · acid taste + mouth filling with saliva are quite specific · coffee, alcohol, ibuprofen",
-    "Her concern — two reasons: (1) tracing normal (2) more important — character doesn't fit heart pain (heavy/crushing, on exertion, eases with rest, to arm/jaw) vs hers (burning, months, not activity-related, changes with position). 'That said, because of your dad I'd like to check your overall heart risk properly — bloods and BP' = partnership",
-    "Management: STOP the ibuprofen (paracetamol; look at the knee) · lifestyle: cut coffee, reduce alcohol, avoid provoking foods/chocolate/peppermint/fizzy drinks, smaller meals, nothing within 3 h of lying down, head of bed up 15–20 cm on blocks, weight, loose clothing · antacid/alginate PRN · PPI once daily 30–60 min before breakfast for 4–8 weeks then step down (esomeprazole 20 mg / pantoprazole 20–40 mg / omeprazole 20 mg) VERIFY · FBC, H. pylori (UBT or stool antigen — withhold PPI 2 weeks) VERIFY, lipids, HbA1c, UEC for absolute CV risk · review 4–6 weeks; no response or alarm features → endoscopy",
-    "Examination to state: CVS, resp, abdomen incl. epigastric tenderness, chest-wall palpation, skin for zoster, BMI, BP",
-    "DDx list to Lily briskly: heart (tracing normal, pain doesn't fit) · sac around the heart (no fever/viral) · stomach ulcer (possible with ibuprofen — usually to the back, dull ache) · clot on lung, collapsed lung, chest infection (no sudden SOB, cough, fever) · gallbladder · chest-wall muscle/joint · shingles (no rash) · stress/anxiety. 'Reflux fits best'"
+    "**Vital signs first**, and say the word stable out loud.",
+    "Examination to request: **cardiovascular and respiratory · abdominal including epigastric tenderness · chest wall palpation for reproducible tenderness · skin inspection for a zoster rash · BMI and blood pressure**.",
+    "**ECG read systematically**: details and calibration → rate → rhythm → P waves → PR → QRS → ST → T → QTc. **Then have the courage to call a normal ECG normal.**",
+    "**Mild concave ST elevation in the lateral and precordial leads is benign early repolarisation**, not pericarditis — which needs widespread elevation across territories, usually PR depression, and a compatible history.",
+    "**A single normal ECG in a pain-free patient does not exclude coronary disease or an evolving ACS.** Say so explicitly.",
+    "**FBC** for iron deficiency anaemia from occult upper GI blood loss — anaemia means endoscopy regardless of other features.",
+    "**H. pylori urea breath test or stool antigen** — withhold the PPI for 2 weeks beforehand to avoid a false negative.",
+    "**Fasting lipids, HbA1c or fasting glucose and U&E** for absolute cardiovascular risk, justified by the family history. **LFTs and upper abdominal ultrasound** only if biliary features.",
+    "**Troponin and serial ECG only if any feature raises suspicion of ACS.** **Upper endoscopy is not first line** — reserve it for alarm features, new onset over 50 with persistent symptoms, or failure of an adequate PPI trial."
    ],
-   "fails": [
-    "Never asking the reflux questions — acid brash and water brash ★",
-    "Reassuring on the ECG alone; 'there's nothing wrong with your heart' / 'it's just reflux' ★",
-    "Abandoning the structure — jumping to GI on 'burning', or locking onto pericarditis on 'better leaning forward'",
-    "Not asking the father's age; skipping alarm features in a 50-year-old; missing the OTC ibuprofen",
-    "Over-reading a normal ECG as pericarditis; not addressing her stated concern explicitly",
-    "Jargon (GORD, retrosternal, melaena); no ambulance threshold; running out of time before the differentials"
-   ],
-   "numbers": [
-    "Premature CVD: first-degree male <55, female <65 · father 78 = not premature · 'melaena' → 'black, tarry, sticky, like tar'",
-    "Two-axis rule: tracks with meals and posture → oesophagus; tracks with exertion and rest → heart. Radiation: arm → cardiac; jaw shared; epigastrium → oesophageal",
-    "PPI trial 4–8 weeks then step down · H. pylori test off PPI 2 weeks · review 4–6 weeks · endoscopy if alarm features, new onset >50 with persistent symptoms, or failed PPI VERIFY",
-    "Drugs that worsen reflux: NSAIDs, bisphosphonates, calcium channel blockers, nitrates, anticholinergics, doxycycline, potassium supplements",
-    "Safety-net: exertional pain, to arm/jaw, sweating, SOB, faint → 000, don't drive · food sticking, vomiting blood, black tarry stools → urgent review · not better in 4–6 weeks → come back",
-    "Version B (28-year-old man, 6-min history, squeezing pain to the jaw, relieved by peppermint tea) is MED-20 · MedSTAR 1300 13 12 33 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Gastro-oesophageal reflux disease**",
+     "Burning, retrosternal and epigastric, **worse lying flat, better upright or leaning forward**; acid brash; water brash; coffee, alcohol, NSAIDs; chronic and non-progressive",
+     "Acid or bitter taste, water brash, regurgitation, nocturnal cough, hoarseness, relation to meals and posture",
+     "**Clinical diagnosis.** Lifestyle change plus a 4–8 week PPI trial confirms it — endoscopy only for alarm features, new onset over 50, or treatment failure"
+    ],
+    [
+     "**Acute coronary syndrome / stable angina**",
+     "Family history of MI; age 50; **exertional onset, relief with rest, crushing quality, radiation to arm or jaw, diaphoresis, nausea, dyspnoea, syncope**",
+     "The exertional axis; ECG changes",
+     "**ECG (normal here) ± troponin. Any doubt → serial ECG, troponin and ED referral.** Stress test or CT coronary angiogram if risk is more than low — **must be excluded first**"
+    ],
+    [
+     "Peptic ulcer disease",
+     "Epigastric pain; **NSAID use**; alcohol",
+     "**Radiation through to the back; a dull deep ache rather than burning; night pain**; relation to meals; melaena, haematemesis",
+     "**H. pylori testing; FBC for anaemia; endoscopy if alarm features. Stop the NSAID** — urgent if bleeding"
+    ],
+    [
+     "Pericarditis",
+     "**Worse lying flat, better sitting forward** — the planted overlap",
+     "**Fever, recent viral illness, sharp pleuritic pain, friction rub**, widespread concave ST elevation with PR depression",
+     "ECG (normal here); **the pain here is burning and chronic, not sharp and recent** — excluded on history plus ECG"
+    ],
+    [
+     "Oesophagitis · oesophageal spasm",
+     "Burning or gripping retrosternal pain; **can mimic angina closely**",
+     "Odynophagia, dysphagia, relation to hot or cold drinks",
+     "Managed as part of the reflux spectrum; endoscopy if persistent or alarm features"
+    ],
+    [
+     "**Oesophageal or gastric malignancy**",
+     "**Age over 50 with chronic upper GI symptoms**",
+     "**Dysphagia, odynophagia, weight loss, anorexia, melaena, haematemesis, anaemia, persistent vomiting, night pain** — all negative here",
+     "**Any present → urgent upper endoscopy.** Do not miss"
+    ],
+    [
+     "Aortic dissection",
+     "Chest pain in a 50-year-old",
+     "**Sudden, maximal at onset, tearing, radiating to the back; BP difference between arms; hypertension**",
+     "**Excluded by the chronic, months-long, mild, non-tearing history** — emergency if suspected"
+    ],
+    [
+     "Pulmonary embolism",
+     "Chest pain",
+     "Sudden dyspnoea, pleuritic pain, haemoptysis, calf swelling, immobility, travel, oestrogen, malignancy",
+     "Wells score — **excluded here by the chronicity and absent risk factors** — emergency if suspected"
+    ],
+    [
+     "Pneumothorax · pneumonia",
+     "Chest pain",
+     "Sudden pleuritic pain with dyspnoea; or fever, cough and sputum",
+     "Excluded on history; CXR if any doubt"
+    ],
+    [
+     "Biliary colic",
+     "Epigastric pain",
+     "RUQ pain after fatty meals, radiation to the right shoulder tip, nausea, jaundice",
+     "Upper abdominal ultrasound, LFTs"
+    ],
+    [
+     "Musculoskeletal · costochondritis · herpes zoster",
+     "Chronic on-and-off chest pain; chest wall pain",
+     "**Worse on movement, twisting or pressing** with reproducible tenderness; or burning pain in a dermatomal band before a vesicular rash",
+     "Examination — **excluded if pressing does not reproduce the pain**; inspect the skin. Zoster: treat within 72 h of the rash"
+    ],
+    [
+     "Anxiety · panic disorder",
+     "Fear of heart disease; recurrent symptoms",
+     "Episodic, minutes long, palpitations, tingling, fear of dying, hyperventilation, stressors",
+     "**A diagnosis of exclusion — never reached before the organic causes are addressed**, and never used to dismiss a proportionate fear"
+    ]
    ]
   },
   "source": "GORD.pdf (Version A — Lily, 50)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › GORD.pdf",
   "must": [
-   "FAIL — Never asking the reflux questions — 'an acidic or bitter taste at the back of your mouth?' and 'your mouth suddenly filling with saliva?' — the commonest reason candidates fail this recall",
-   "FAIL — Abandoning the structure — jumping to GI on 'burning', or locking onto pericarditis on 'better leaning forward', which is planted; run cardiac → respiratory → GI every time and probe all three axes: activity, posture, food",
-   "FAIL — Reassuring on the ECG alone — 'two reasons, always': the tracing is normal AND the character of the pain does not fit heart pain; then offer to check her cardiovascular risk anyway",
-   "FAIL — 'There's nothing wrong with your heart' — an absolute you cannot support; say what the evidence supports",
-   "FAIL — Not asking the father's age — premature CVD is before 55; his was 78, and saying why you asked shows the reasoning",
-   "FAIL — Labelling it benign without the alarm features (dysphagia, weight loss, black tarry stools, vomiting blood), and missing the ibuprofen — stop the NSAID before any PPI"
-  ]
+   "FAIL — Never asking the reflux questions. **Acid brash and water brash** make the diagnosis.",
+   "FAIL — Reassuring on the normal ECG alone. Always give the **second reason**.",
+   "FAIL — Over-reading benign concave ST elevation in V5–V6 as pericarditis.",
+   "FAIL — Skipping the upper GI alarm features before labelling it benign.",
+   "ASK — How old was your father when he had his heart attack?",
+   "ASK — Any medications, **including anything over the counter**? Find the ibuprofen."
+  ],
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs, on request",
+    "BP 128/78 · pulse 76 regular · RR 16 · SpO2 99% RA · T 36.7. Stable — VERBALISE IT even though the stem says vitals are available"
+   ],
+   [
+    "12-lead ECG, handed over at 4–5 minutes",
+    "Details and calibration checked · rate ~75 · REGULAR · P waves present before every QRS, SINUS RHYTHM · PR normal · QRS normal duration, NO pathological Q waves · NO ST elevation or depression in any territory · T waves normal · QTc normal. A COMPLETELY NORMAL ECG"
+   ],
+   [
+    "Focused examination, if you ask for it",
+    "Cardiovascular and respiratory normal · abdomen including EPIGASTRIC TENDERNESS · CHEST WALL PALPATION DOES NOT REPRODUCE THE PAIN · skin inspected, NO zoster rash · BMI not raised · blood pressure normal"
+   ],
+   [
+    "Bloods to request",
+    "FBC for iron deficiency anaemia from occult blood loss · H. PYLORI urea breath test or stool antigen, withholding the PPI for 2 weeks first to avoid false negatives · fasting lipids, HbA1c or fasting glucose and U&E for absolute cardiovascular risk"
+   ],
+   [
+    "Troponin and serial ECG",
+    "ONLY if any feature raises suspicion of ACS. Any positive → IMMEDIATE ED TRANSFER"
+   ],
+   [
+    "Upper endoscopy",
+    "NOT first line here. Indicated for ALARM FEATURES, new onset over age 50 with persistent symptoms, or FAILURE OF AN ADEQUATE PPI TRIAL"
+   ],
+   [
+    "Exercise stress test or CT coronary angiography",
+    "If absolute cardiovascular risk is moderate or high, or if any EXERTIONAL component emerges"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-20",
   "cat": "med",
   "promptBell": false,
   "promptAt": 360,
-  "setting": "General practice.",
   "stem": [
    "A 28-year-old man presents with chest pain for 30 minutes — better now.",
    "Vital signs are stable (stated in the stem). An ECG is provided — normal."
@@ -6916,73 +7277,194 @@
    "Take a history for 6 minutes",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "8 minutes. Six-minute history, then diagnosis and differentials.",
   "back": {
-   "dx": "GORD in a young man whose pain SOUNDS cardiac — squeezing, radiates to the jaw — but with no sweating, no nausea/vomiting, no other MI features, and positive acid/bitter taste, water brash, relief with peppermint tea. Normal ECG. The recall that caused panic: candidates who never ran the GI block were left with 'an MI with no MI symptoms' and froze. Oesophageal pain can reach the jaw — it's the ARM that discriminates towards cardiac. Same structure as MED-19: run cardiac → respiratory → GI every time, and still ask every risk factor.",
+   "dx": [
+    "**Gastro-oesophageal reflux disease — the same diagnosis as version A, in a presentation that looks far more cardiac.** The lesson is identical: **you are approaching chest pain, not the recall.**",
+    "**Why candidates fell apart here:** the pain sounded typical for ischaemia — **squeezing, radiating to the jaw** — but had **none of the accompanying MI features**. Candidates who never asked the GI questions were left with an unexplainable 'MI with no MI symptoms' and froze. **Those who ran the full structure had the diagnosis within their six minutes.**",
+    "**Oesophageal pain can radiate to the jaw. It is the ARM that discriminates towards cardiac.** That single fact rescues this station.",
+    "**Acid brash, water brash and relief with peppermint tea are all positive** — and peppermint is itself a reflux trigger as well as a smooth-muscle relaxant, so its effect is not reassurance about the heart.",
+    "**Overlap is real, in both directions.** Reflux and ischaemia genuinely overlap, and **both can be relieved by glyceryl trinitrate**, which relaxes oesophageal smooth muscle as well as coronary arteries. **Never use 'the antacid helped' or 'the GTN helped' as proof that pain is not cardiac.**",
+    "**A 28-year-old is not automatically low risk.** In a young person with genuinely ischaemic-sounding chest pain, actively consider **cocaine or amphetamine use · familial hypercholesterolaemia · myocarditis and pericarditis · spontaneous pneumothorax · pulmonary embolism · connective tissue disorders with aortic dissection.** **Ask the recreational drug question, non-judgementally, as part of SADMA.**",
+    "**Yes, you still ask every cardiovascular risk factor even when you think you know the recall.** Two practical reasons: **the role-player may have been changed, and the examiner is marking your process, not your recall memory.**",
+    "**The two-axis rule: meals and posture point to the oesophagus; exertion and rest point to the heart.** Cardiac pain is heavy, crushing, exertional, eased by rest, and radiates to the **arm**.",
+    "Management: **stop any NSAID and substitute paracetamol · reduce coffee, alcohol and smoking · smaller meals, nothing within 3 hours of lying down, elevate the head of the bed 15–20 cm with blocks · antacid or alginate for breakthrough · a PPI once daily for 4–8 weeks, 30–60 minutes before breakfast, then review and step down.** VERIFY doses against Therapeutic Guidelines.",
+    "**Screen the alarm features before labelling it benign: dysphagia · odynophagia · weight loss · melaena · haematemesis · persistent vomiting · anaemia.** Safety net: **exertional pain, arm or jaw radiation with sweating, breathlessness or collapse → 000, don't drive.** Food sticking, vomiting blood or black tarry stools → urgent review. **Review in 4–6 weeks**; failure to respond is itself an indication for endoscopy. SA: **healthdirect 1800 022 222**, **TIS National 131 450**."
+   ],
    "plan": [
     [
      "0:00",
-     "Confirm stability quickly (don't dwell) → WIPE → open question → acknowledgement line"
+     "Confirm stability quickly — **the stem states it, so acknowledge and move on; you have six minutes and the history is the whole task**."
+    ],
+    [
+     "0:20",
+     "WIPE, introduce, confirm identity, permission and purpose. Open question, then let him speak."
     ],
     [
      "0:45",
-     "SOCRATES; all three axes — exertion/rest, position, food"
+     "**The full pain analysis, and do not stop when it sounds cardiac**: **where exactly · when did it start, sudden or gradual · what does it feel like · does it travel anywhere · constant or on and off · out of ten · what makes it worse, what makes it better** — **and push all three axes: exertion and rest · position · food.**"
     ],
     [
      "2:00",
-     "Cardiac symptoms (sweating, nausea, SOB, palpitations, syncope) → ALL risk factors incl. FHx with age → ★ recreational drugs (cocaine, amphetamines) asked non-judgementally"
+     "Cardiac symptom screen — **and note that every one is negative, which is itself your evidence**: **shortness of breath · nausea or vomiting · sweating or clamminess · palpitations · dizziness or blackouts · ankle swelling · orthopnoea · exercise tolerance.**"
+    ],
+    [
+     "2:30",
+     "**All the cardiovascular risk factors, even though you think you know the answer**: **blood pressure · blood sugar · cholesterol · smoking · alcohol · weight · activity · family history, and at what age.** Plus the young-person additions: **any recreational drugs, specifically cocaine or amphetamines** — asked non-judgementally — and **any family history of very high cholesterol or sudden death in a young relative.**"
     ],
     [
      "3:15",
-     "Respiratory differentials (PE, pneumothorax — tall/thin/smoker, pneumonia, cancer screen)"
+     "Respiratory and other differentials in one sweep: **sudden breathlessness, coughing blood, calf pain or swelling, long travel, surgery, immobility · fever, cough, sputum · sudden one-sided pleuritic pain, tall lean build · recent viral illness, sharp pain worse on deep breath, better sitting forward · sudden tearing pain through to the back.**"
     ],
     [
      "4:00",
-     "GI: acid/bitter taste, water brash, regurgitation, relation to meals, ★ what relieved it (peppermint), alarm features, PUD, biliary; GORD risk factors; medications incl. OTC"
+     "**The GI block — where the diagnosis lands.** **Any tummy pain, nausea or vomiting · do you get an acidic or bitter taste at the back of your mouth · has your mouth suddenly filled with saliva · does food or fluid come back up when you bend or lie down · any chronic dry cough, morning hoarseness, sore throat or night wheeze · and have you tried anything that helps?** Peppermint tea, antacids."
+    ],
+    [
+     "4:45",
+     "**Alarm features before any reassurance**: **does food stick when you swallow · does it hurt to swallow · any weight loss · have your bowel motions been black, tarry and sticky · have you vomited blood · any persistent vomiting?** Then the ulcer discriminators: **does it go through to the back, is it a deep dull ache, does it wake you at night?**"
     ],
     [
      "5:15",
-     "MSK/rash, mood/stress, SADMA, PMHx, ICE → 6:00 diagnosis + reasons → DDx briskly, killers first → plan (lifestyle, PPI trial, review) → safety-net → summary"
+     "Triggers and medications: **coffee, tea and energy drinks · spicy, fatty or fried food, chocolate, large or late meals · any medications at all, including anything over the counter or from the pharmacy** — NSAIDs, and the others that reduce sphincter tone. Then **SADMA, past history, allergies, and 'is there anything in particular you're worried about?'**"
+    ],
+    [
+     "6:00",
+     "ECG **read systematically and called normal with confidence** — and then the honest caveat: **a normal tracing in a pain-free patient does not exclude heart disease; it is one piece of the picture.**"
+    ],
+    [
+     "6:30",
+     "Diagnosis: **name it → explain the valve and the acid simply → give your reasons** — the acid taste, the water brash, the relief with peppermint, the absence of every accompanying cardiac feature, and the normal tracing."
+    ],
+    [
+     "7:15",
+     "**Address the heart-attack fear directly, with two named reasons** — and add the honest one for a young man: **the tracing is normal, and the pattern of your symptoms fits the food pipe** — while still offering to check risk factors properly."
+    ],
+    [
+     "7:45",
+     "**Differentials briskly — coverage beats depth.** Heart, pericarditis and myocarditis, stomach ulcer, clot on the lung, collapsed lung, chest infection, chest wall, shingles, stress. Then the plan, the **000 threshold and urgent-return criteria**, review in 4–6 weeks, summarise, check understanding."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Tell me more about the pain. Where — point or area? Squeezing, burning, sharp, tearing? Travel anywhere — arm, jaw, back? How long, constant? What were you doing? What made it better — anything you took or drank?",
-    "Any sweating, nausea or vomiting, breathlessness, racing heart, dizziness or blackouts with it?",
-    "High BP, diabetes, cholesterol ever? Smoke? Alcohol? Weight? Heart attacks or strokes in the family — at what age? I ask everyone: any recreational drugs — cocaine, speed, ice?",
-    "Sudden breathlessness, coughing blood, calf pain, travel, previous clots? Fever, cough? Tall and thin, previous collapsed lung?",
-    "★ Acidic or bitter taste at the back of your mouth? ★ Mouth suddenly filling with saliva? Food coming back up? Relation to meals? Food sticking, weight loss, black tarry stools, vomiting blood? Coffee, alcohol, spicy/late meals? Any medications, including over the counter?",
-    "Rash? Worse pressing or twisting? Stress at home or work, mood?"
-   ],
    "pefe": [
-    "No examination task — vitals stated stable, ECG provided normal; state that a normal ECG does not exclude ischaemia and that the history is what settles it",
-    "Diagnosis + reasons: acid taste, water brash, relief with peppermint (relaxes the oesophagus), no sweating/nausea/SOB, no risk factors, normal ECG; 'oesophageal pain can go to the jaw'",
-    "Young-but-not-low-risk list to keep in mind and screen: cocaine/amphetamine coronary spasm, familial hypercholesterolaemia, myocarditis/pericarditis, spontaneous pneumothorax, PE, connective tissue disorder with dissection",
-    "Management as MED-19: lifestyle, antacid PRN, PPI 4–8 weeks, review 4–6 weeks; safety-net with 000 threshold and GI alarm features"
+    "**Confirm stability, briefly** — the stem gives it, so do not spend history time on it.",
+    "**Read the provided ECG systematically even though it is normal**: rate, rhythm, P waves, PR, QRS, ST, T. **Calling a normal ECG normal, with confidence, is the correct answer.**",
+    "**A normal ECG does not exclude ischaemia**, and a young age does not either. **If any ischaemic feature emerges: serial ECGs, troponin, ED referral.**",
+    "Examination: **cardiovascular and respiratory · abdomen for epigastric tenderness · chest wall palpation for reproducible tenderness · skin inspection for a zoster rash · BMI and blood pressure.**",
+    "**FBC** for iron deficiency anaemia; **H. pylori urea breath test or stool antigen**, withholding the PPI for 2 weeks first.",
+    "**Lipids and glucose** — and in a young man with ischaemic-sounding pain, consider **familial hypercholesterolaemia** specifically.",
+    "**Troponin ± serial ECG only if suspicion of ACS.** **Upper endoscopy is not first line** — alarm features, or failure of an adequate PPI trial.",
+    "**Urine drug screen** if the history raises cocaine or amphetamine use."
    ],
-   "fails": [
-    "Never asking the GI questions and freezing on 'an MI with no MI symptoms' ★",
-    "Skipping cardiovascular risk factors or the recreational drug question because 'he's 28'",
-    "Reassuring on the ECG alone; 'there's nothing wrong with your heart'",
-    "Committing to GORD before the cardiac and respiratory screens; jargon; no safety-net"
-   ],
-   "numbers": [
-    "Jaw radiation is shared by cardiac and oesophageal pain; arm radiation discriminates towards cardiac",
-    "Peppermint and GTN both relax oesophageal smooth muscle — relief by either never proves the pain is not cardiac",
-    "PPI trial 4–8 weeks · review 4–6 weeks · endoscopy if alarm features or failed trial VERIFY",
-    "See MED-19 for the full GORD back · MedSTAR 1300 13 12 33 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Gastro-oesophageal reflux disease**",
+     "**Acid brash, water brash, relief with peppermint tea**; posture and meal relationship; no accompanying cardiac features",
+     "The acid taste and water brash asked **by name**; regurgitation; nocturnal cough and hoarseness",
+     "**Clinical diagnosis.** Lifestyle change plus a 4–8 week PPI trial; endoscopy only for alarm features or treatment failure"
+    ],
+    [
+     "**Acute coronary syndrome**",
+     "**Squeezing pain radiating to the jaw** — which sounds cardiac",
+     "**The arm is what discriminates**; exertional trigger, diaphoresis, nausea, dyspnoea, syncope — all absent here",
+     "**ECG (normal) ± troponin. A young age lowers the probability but does not abolish it** — any doubt means serial ECG, troponin and ED referral"
+    ],
+    [
+     "**Cocaine or amphetamine-related chest pain**",
+     "Young patient with ischaemic-sounding pain",
+     "**Ask about recreational drugs non-judgementally in SADMA**; agitation, hypertension, tachycardia",
+     "Urine drug screen; ECG and troponin — **avoid beta-blockade in acute cocaine toxicity**"
+    ],
+    [
+     "Familial hypercholesterolaemia",
+     "Ischaemic-sounding pain in a young person",
+     "Family history of very high cholesterol or sudden death in a young relative; tendon xanthomata, corneal arcus",
+     "Fasting lipids; specialist referral if markedly elevated"
+    ],
+    [
+     "Myocarditis · pericarditis",
+     "Recent viral illness; sharp pleuritic pain, better sitting forward",
+     "Fever, friction rub, widespread concave ST elevation with PR depression, raised troponin",
+     "ECG, troponin, echocardiogram — same day"
+    ],
+    [
+     "Peptic ulcer disease",
+     "Epigastric pain; NSAID use; alcohol",
+     "**Radiation through to the back; deep dull ache; night pain**; melaena, haematemesis",
+     "H. pylori testing; FBC; endoscopy if alarm features. **Stop the NSAID**"
+    ],
+    [
+     "Oesophagitis · oesophageal spasm",
+     "Burning or gripping retrosternal pain that **mimics angina closely**",
+     "Odynophagia, dysphagia, relation to hot or cold drinks",
+     "Part of the reflux spectrum; endoscopy if persistent"
+    ],
+    [
+     "Spontaneous pneumothorax",
+     "**Tall, lean young man**; sudden one-sided pleuritic pain with breathlessness",
+     "Reduced air entry and hyper-resonance; tracheal deviation if tension",
+     "CXR — **clinical diagnosis if tension** — emergency"
+    ],
+    [
+     "Pulmonary embolism",
+     "Pleuritic pain, breathlessness",
+     "Calf swelling, long travel, surgery, immobility, previous clot",
+     "Wells score → D-dimer or CTPA — emergency"
+    ],
+    [
+     "Aortic dissection in connective tissue disease",
+     "Young patient with a Marfanoid habitus",
+     "**Sudden tearing pain to the back; BP difference between arms**; family history",
+     "**CT aortogram** — emergency"
+    ],
+    [
+     "Musculoskeletal · herpes zoster · anxiety",
+     "Reproducible on pressing; burning dermatomal pain before a rash; episodic with tingling and fear of dying",
+     "Chest wall palpation; skin inspection; stressors and mood",
+     "**Diagnoses of exclusion — never before the organic causes are addressed**"
+    ]
    ]
   },
   "source": "GORD.pdf (Version B — 28-year-old man variant recall)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain › GORD.pdf",
   "must": [
-   "FAIL — Never asking the GI questions and freezing on 'an MI with no MI symptoms' — acid brash, water brash, relieved by peppermint tea; oesophageal pain can reach the jaw, it is the arm that discriminates",
-   "FAIL — Skipping cardiovascular risk factors or the recreational drug question because he is 28 — cocaine and amphetamines, familial hypercholesterolaemia; risk factors are a key-point item in every chest pain station",
-   "FAIL — Reassuring on the ECG alone — give the second reason: the character of the pain, and no sweating, nausea or breathlessness with it",
-   "FAIL — 'There's nothing wrong with your heart'",
-   "DO — The courage to call a normal ECG normal — mild concave ST elevation in V5–V6 is early repolarisation, not pericarditis",
-   "DO — Alarm features before you settle on reflux, then a broad rapid differential list until the bell"
-  ]
+   "FAIL — Freezing at 'squeezing, radiates to the jaw' with no MI features to match.",
+   "FAIL — Never asking the reflux questions. That is why candidates fell apart here.",
+   "FAIL — Skipping cardiovascular risk factors because you 'know' the recall.",
+   "FAIL — Treating a 28-year-old as automatically low risk.",
+   "ASK — Acid or bitter taste? Mouth suddenly filling with saliva? Both yes.",
+   "ASK — Recreational drugs, cocaine and amphetamines, non-judgementally in SADMA."
+  ],
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs",
+    "STABLE — stated in the stem. Confirm quickly and DO NOT DWELL; you have six minutes for the history"
+   ],
+   [
+    "12-lead ECG, provided",
+    "NORMAL. Read it systematically anyway — rate, rhythm, P waves, PR, QRS, ST, T — and have the courage to call it normal"
+   ],
+   [
+    "What the history yields — the trap",
+    "SQUEEZING pain RADIATING TO THE JAW, which sounds cardiac — but NO sweating, NO nausea or vomiting, and NO other MI features at all"
+   ],
+   [
+    "What the history yields — the answer",
+    "ACID OR BITTER TASTE in the mouth: YES · WATER BRASH: YES · RELIEVED BY PEPPERMINT TEA: YES"
+   ],
+   [
+    "Focused examination, if you ask",
+    "Cardiovascular and respiratory normal · abdomen for epigastric tenderness · chest wall palpation does not reproduce the pain · skin inspected for a zoster rash"
+   ],
+   [
+    "Alarm features",
+    "Dysphagia, odynophagia, weight loss, melaena, haematemesis, persistent vomiting — ALL NEGATIVE. Ask them anyway before labelling anything benign"
+   ],
+   [
+    "If any ischaemic feature emerges",
+    "Serial ECGs and troponin, and ED referral — a young age lowers the probability of ACS but DOES NOT ABOLISH IT"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-21",
