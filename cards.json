@@ -17772,8 +17772,8 @@
  {
   "id": "MED-68",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "Hospital ward, evening shift. TELEPHONE station — no examiner, no role-player in the room; a card says 'please pick up the telephone'. The nurse on the line is the examiner. Your consultant is unavailable. Management is NOT a task.",
   "stem": [
    "You are the HMO. Blood results have returned on Mr Arthur Nolan, 78, a resident of a nearby aged-care facility, currently an inpatient. Sodium 118 mmol/L (135–145), chloride low, serum osmolality low. Nothing else is given."
   ],
@@ -17782,101 +17782,200 @@
    "Take a history from the nurse",
    "Explain the most likely diagnosis and your differentials to the nurse"
   ],
-  "time": "8 minutes. Name yourself, who and where · ★ conscious state and fitting BEFORE any number · obs · report in colleague register, name what the low osmolality means · orient: admission, PMHx, ★ the whole chart including long-standing drugs, surgery · symptoms · pseudo screen (glucose, TG, protein) said out loud · three volume blocks announced · ★ ask her to EXAMINE him for fluid state · four SIADH cause groups · three-layer explanation · escalate, safety-net, offer to document.",
+  "findings": [
+   [
+    "Conscious state — ASKED BEFORE THE RESULTS",
+    "ALERT AND ORIENTED TO HIS USUAL LEVEL. NO FITTING. A sodium of 118 can seize — discussing the number before you know he is awake fails the safety domain however good the rest is"
+   ],
+   [
+    "Observations",
+    "BP 128/76 · PULSE 78 · RR 16 · SpO2 97% on air · T 36.6. Stable"
+   ],
+   [
+    "Orientation from the nurse",
+    "Admitted THREE DAYS AGO after a FALL at his aged-care facility, no fracture. History: HYPERTENSION, osteoarthritis, mild memory impairment. NO recent surgery. CT head on admission CLEAR"
+   ],
+   [
+    "The medication chart — read in full",
+    "HYDROCHLOROTHIAZIDE · paracetamol · atorvastatin. Nothing changed since admission. SHE NEVER VOLUNTEERS THE THIAZIDE AS A CAUSE — and if you ask only about NEW medications she says 'nothing new since admission' and lets you miss it"
+   ],
+   [
+    "Symptoms",
+    "NO change from his baseline confusion. No drowsiness, headache, dizziness, nausea or vomiting. Unsteady — but that is what brought him in. NO seizure"
+   ],
+   [
+    "Pseudohyponatraemia screen",
+    "GLUCOSE 5.4 · TRIGLYCERIDES NORMAL · TOTAL PROTEIN NORMAL. Say the conclusion out loud: 'then this is a TRUE HYPOTONIC hyponatraemia, not an artefact and not glucose-driven'"
+   ],
+   [
+    "Hypovolaemic block",
+    "NO vomiting or diarrhoea. Eating and drinking normally. No burns or large wounds"
+   ],
+   [
+    "Hypervolaemic block",
+    "NO breathlessness, ONE pillow, no ankle swelling. No jaundice, dark urine or pale stools. Urine output normal — FLUID CHART ROUGHLY BALANCED, about 1400 in and 1300 out"
+   ],
+   [
+    "VOLUME STATUS — the question that decides the station",
+    "'CAN I ASK YOU TO LOOK AT HIM FOR ME?' → MOUTH MOIST, NO POSTURAL DROP, NO OEDEMA, CHEST CLEAR, WEIGHT STABLE = EUVOLAEMIC. SHE WILL NOT OFFER THIS. Volume status is an EXAMINATION finding, and on the telephone the only way to get it is to ask her to examine him"
+   ],
+   [
+    "SIADH cause groups — four questions",
+    "INFECTION: no fever, chills, cough, breathlessness, headache or neck stiffness. MALIGNANCY: no weight loss, lumps, night sweats or cancer history. INTRACRANIAL: did not hit his head, CT clear. POLYDIPSIA: drinking normal for him"
+   ]
+  ],
+  "findingsLabel": "What the nurse gives — and the one thing she withholds",
+  "must": [
+   "FAIL — Discussing a sodium of 118 before asking whether he is alert or has fitted.",
+   "FAIL — Never asking the nurse to assess his fluid state. Volume status is examined, not asked.",
+   "FAIL — Asking only about NEW medications, so the long-standing thiazide is missed.",
+   "FAIL — Saying 'SIADH' and stopping, or changing the drug by telephone instead of escalating.",
+   "ASK — Is he alert and oriented, or drowsy? Has he had any fitting?",
+   "ASK — Can you check his glucose, triglycerides and total protein?"
+  ],
   "back": {
-   "dx": "Drug-induced (thiazide) SIADH → euvolaemic hypotonic hyponatraemia. Na 118, low serum osmolality = true hypotonic (not pseudo; not glucose-driven — glucose 5.4, TG and protein normal). Nurse's examination on request: moist mucosa, no postural drop, no oedema, chest clear, weight stable, fluid chart balanced ~1400/1300 → euvolaemic. Chart: hydrochlorothiazide, paracetamol, atorvastatin — nothing changed since admission (asking only 'new medications' gets 'nothing new' and you miss it). Three-layer explanation: (1) true hypotonic, euvolaemic → SIADH, most likely trigger the thiazide; (2) other SIADH causes — malignancy (lung, lymphoma), infection (pneumonia, TB, meningitis), intracranial (bleed, head injury) — clear CT, no fever/cough/weight loss make them less likely but not excluded on history; (3) outside SIADH — hypothyroidism and adrenal insufficiency (TSH, morning cortisol), hypovolaemic group (losses, poor intake, diuretics), hypervolaemic group (heart, liver, kidney). Confirm with paired serum/urine osmolality + urine sodium. Close: discuss with medical registrar and document — do not change the thiazide over the phone; call back if drowsy, more confused, vomiting, fitting.",
+   "dx": [
+    "**Euvolaemic hypotonic hyponatraemia due to SIADH, most likely drug-induced — the hydrochlorothiazide.** **Almost every AMC hyponatraemia recall lands on SIADH caused by a medication: thiazide, SSRI or carbamazepine.**",
+    "**Pseudo → volume → group.** Rule out pseudohyponatraemia, establish volume status, then run the three volume groups as three labelled blocks. **Volume status is an examination finding, not a history answer** — on the telephone you must ask the nurse for it; in clinic you must say out loud that you would look for it.",
+    "**Explain in THREE LAYERS, not one word. LAYER 1: SIADH, and the drug that triggered it. LAYER 2: the other causes of SIADH — malignancy (lung cancer, lymphoma) · infection (pneumonia, TB, meningitis) · intracranial pathology (bleed, head injury). LAYER 3: the other causes of hyponatraemia — hypothyroidism and adrenal insufficiency, the hypovolaemic group, the hypervolaemic group.** **Saying 'it's SIADH' and stopping is the commonest reason this station scores poorly.**",
+    "**SIADH diagnostic criteria: hyponatraemia with SERUM osmolality under 275 mOsm/kg · URINE osmolality over 100 mOsm/kg · urine sodium over 30–40 mmol/L · clinical euvolaemia · normal thyroid, adrenal and renal function · no diuretic on board.** **Serum low, urine high** is the memory hook.",
+    "**CORRECTION — hyperglycaemia is NOT pseudohyponatraemia.** **High triglycerides and high protein cause a laboratory artefact with a NORMAL serum osmolality. Hyperglycaemia causes a real dilutional hyponatraemia with a HIGH serum osmolality**, because glucose pulls water out of cells. Same screen, different boxes on the algorithm.",
+    "**Hypovolaemic hyponatraemia has a urine sodium UNDER 20** — the kidney is holding on to sodium. **In SIADH the urine sodium is HIGH because the patient is volume replete and there is no stimulus to conserve it.** That contrast separates the two.",
+    "**Register: you are talking to a senior colleague. Use ISBAR and clinical language — hyponatraemia, serum osmolality, euvolaemic, SIADH.** **Translating 'sodium' into 'a salt in your blood' for a registered nurse costs communication marks.**",
+    "**Drugs to name first: THIAZIDES · SSRIs · CARBAMAZEPINE.** Then **ACE inhibitors, NSAIDs, proton pump inhibitors, chemotherapy, MDMA, desmopressin.** **Review the chart with the pharmacist; discuss substitution with the prescriber rather than stopping unilaterally.**",
+    "**Correction: no faster than about 8 mmol/L in 24 hours**, and less in the malnourished, alcohol-dependent, hypokalaemic or those with liver disease. **Faster risks OSMOTIC DEMYELINATION SYNDROME — dysarthria, dysphagia, quadriparesis or a locked-in state, appearing days later and usually irreversible.** VERIFY.",
+    "**Management is NOT a task here — one sentence if asked, then return to the diagnosis.** **Never give normal saline in SIADH: the kidney concentrates the urine above the tonicity of the saline, so salt is excreted and water retained and the sodium falls further.** **Severe and symptomatic: 3% sodium chloride in small boluses to lift by 4–6 mmol/L, then stop.** **MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'This is Dr [name], the HMO covering the ward tonight. Who am I speaking with, and which ward?' → Jackie, RN 4B, bed 12"
+     "**Pick up the phone: 'Hello, this is Dr [name], the HMO covering the ward this evening. WHO AM I SPEAKING WITH, and WHICH WARD are you calling from?'**"
     ],
     [
-     "0:20",
-     "★ 'Before I go through the results — is he alert and oriented, or drowsy or more confused than usual? Any fitting? Latest obs?' → alert at baseline, no fits, BP 128/76 HR 78 RR 16 SpO2 97 T 36.6"
+     "0:15",
+     "**Before the numbers — the scored safety behaviour: 'IS HE ALERT AND ORIENTED, OR IS HE DROWSY OR MORE CONFUSED THAN USUAL? HAS HE HAD ANY FITTING? And can you give me his latest observations — blood pressure, pulse, respiratory rate, saturations and temperature?'** Fifteen seconds, and it banks the domain."
     ],
     [
-     "0:50",
-     "Report as a colleague: Na 118 vs 135–145, significant; chloride low tracks Na; ★ 'serum osmolality is low — this is a true hypotonic hyponatraemia, not an artefact'. If asked what osmolality means: one technical sentence, no lay translation"
+     "0:40",
+     "**Report the results in colleague register**: sodium 118 against 135–145, a significant hyponatraemia · chloride low, which tends to track the sodium · **and the serum osmolality is low, which tells me this is a TRUE HYPOTONIC hyponatraemia rather than a laboratory artefact.** Then ask permission to work through the causes."
     ],
     [
-     "1:30",
-     "Orient: admitted 3 days ago after a fall, no fracture · HTN, OA, mild memory impairment · ★ 'read me the whole chart — everything, including anything started or changed in the last few weeks' → hydrochlorothiazide, paracetamol, atorvastatin · no surgery. Note the thiazide, keep going"
+     "1:20",
+     "**Orient: can you tell me more about him · WHAT IS HE ADMITTED WITH · what does his past medical history include · CAN YOU READ ME HIS MEDICATION CHART, EVERYTHING ON IT INCLUDING ANYTHING STARTED OR CHANGED IN THE LAST FEW WEEKS · and has he had any recent surgery?** Note the thiazide and **deliberately keep going**."
     ],
     [
-     "2:30",
-     "Symptoms (confusion vs baseline, drowsiness, headache, nausea/vomiting, unsteadiness/falls) · ★ pseudo screen: glucose 5.4, TG normal, total protein normal → say aloud 'not pseudohyponatraemia, not glucose-driven — true hypotonic; next I need his fluid state'"
+     "2:00",
+     "**Symptoms: is he confused or more confused than his baseline · any drowsiness · any headache, dizziness, nausea or vomiting · any unsteadiness or falls since admission · HAS HE HAD ANY SEIZURE?**"
     ],
     [
-     "3:30",
-     "Three volume blocks, each announced: 1 losing — vomiting, diarrhoea, intake, burns/wounds · 2 retaining — orthopnoea/pillows, ankle swelling, jaundice/dark urine/pale stools, urine output, fluid balance chart → ~1400 in/1300 out · 3 euvolaemic — cold intolerance, constipation, weight gain"
+     "2:20",
+     "**The pseudohyponatraemia screen: can you check whether there are recent results for his BLOOD GLUCOSE, his TRIGLYCERIDES and his TOTAL PROTEIN?** Then **say the conclusion aloud** — it converts a silent thought into scored reasoning."
     ],
     [
-     "4:45",
-     "★ THE DISCRIMINATING ASK: 'Can I ask you to look at him and tell me what his fluid state looks like — dry mouth/tongue, reduced turgor, postural drop; or ankle oedema, raised JVP, basal crackles? Weight on the chart?' → euvolaemic → say 'that narrows this considerably'"
+     "2:40",
+     "**Block one, losing fluid — announce it: any vomiting or diarrhoea · is he eating and drinking as usual · any burns or large wounds · is he on a fluid tablet?**"
     ],
     [
-     "5:45",
-     "SIADH cause groups, one question each: drugs (have the chart) · infection — fever, cough, SOB, headache, neck stiffness, new drowsiness · malignancy — weight loss, lumps/nodes, night sweats, past cancer · brain — head strike in the fall, imaging → CT clear · 'drinking unusually large volumes?'"
+     "3:10",
+     "**Block two, retaining it: any chest pain or breathlessness, worse lying flat, HOW MANY PILLOWS · any swelling in the legs · any yellowing of the skin or eyes, dark urine or pale stools · has he been passing less urine · DOES HE HAVE A FLUID BALANCE CHART, what are the intake and output?**"
     ],
     [
-     "6:45",
-     "Three-layer explanation (dx + cause; other SIADH causes; non-SIADH causes) · paired serum/urine osmolality + urine Na · 'Hold his morning dose?' → ★ 'I'll discuss with the medical registrar and document tonight rather than change it by phone' · safety-net · 'anything you'd like me to go over again?'"
+     "3:45",
+     "**Block three, euvolaemic: any weather preference, is he intolerant of the cold · any constipation or weight gain?**"
+    ],
+    [
+     "4:00",
+     "**The question candidates never ask: 'CAN I ASK YOU TO LOOK AT HIM FOR ME, and tell me what his fluid state looks like? Are his mouth and tongue dry, is his skin turgor reduced, is there a postural drop when you sit him up? Or the other way — any ankle swelling, raised neck veins, crackles at the bases? And has his weight changed on the chart?'**"
+    ],
+    [
+     "4:40",
+     "**The four SIADH cause groups, one question each: INFECTION — fever, chills, cough, breathlessness, headache, neck stiffness, new drowsiness · MALIGNANCY — weight loss, lumps or nodes, night sweats, previous cancer · INTRACRANIAL — did he hit his head in the fall, has he had imaging · POLYDIPSIA — has anyone noticed him drinking unusually large amounts of water?**"
+    ],
+    [
+     "5:30",
+     "**The three-layer explanation**, then close without straying into management: **'I'll discuss it with the medical registrar and document the plan. Please call me straight away if he becomes drowsy, more confused than his baseline, starts vomiting, or has any fitting. Is there anything you'd like me to go over again?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I go through the results — is he alert and oriented, or drowsy? Has he had any fitting? Can you give me his latest observations?'",
-    "★ 'His sodium is 118, against a range of 135 to 145. The serum osmolality is low, so this is a true hypotonic hyponatraemia.' / 'What does osmolality mean?' → 'Total concentration of dissolved particles — mostly sodium, with glucose and urea. Low sodium with low osmolality means the sodium is genuinely low.'",
-    "★ 'Can you read me his medication chart — everything on it, including anything started or changed in the last few weeks?' (not 'any new medications?')",
-    "'Can you check whether there are recent results for glucose, triglycerides and total protein?' → 'Then this isn't a pseudohyponatraemia — it's a true hypotonic hyponatraemia. Next I need his fluid state.'",
-    "'First, whether he's losing fluid… Second, whether he's retaining it… Third, the euvolaemic causes…' — three blocks, announced",
-    "★ 'Can I ask you to look at him for me and tell me what his fluid state looks like? Dry mucosa and a postural drop — or oedema, raised JVP and basal crackles? And has his weight changed on the chart?'",
-    "'Four quick groups: infection… malignancy… brain — did he hit his head, has he had imaging?… and has anyone noticed him drinking unusually large amounts of water?'",
-    "★ 'He has a true hypotonic hyponatraemia and he's clinically euvolaemic — that points to SIADH, and given his chart the most likely trigger is the thiazide.' Then layer 2 (malignancy, infection, intracranial) and layer 3 (hypothyroid, adrenal, hypovolaemic, hypervolaemic groups)",
-    "'To confirm it I'd like a paired serum and urine osmolality with a urine sodium.'",
-    "'Do you want me to hold his morning fluid tablet?' → ★ 'I'll discuss that with the medical registrar and document a clear plan tonight rather than change it over the phone. Call me straight away if he becomes drowsy, more confused than baseline, starts vomiting, or has any fitting.'"
-   ],
    "pefe": [
-    "Nurse's brief: Jackie Moore RN 4B, brisk, four other patients. Withholds volume status unless you ask her to assess fluid state/hydration/oedema/JVP/turgor — 'how does he look?' gets 'well, no different to yesterday'. Never volunteers the thiazide; 'any new meds?' gets 'nothing new since admission'. Goes cool and marks you down if you talk down to her ('a salt in your blood')",
-    "Findings on request: alert at baseline, no fits · BP 128/76, HR 78, RR 16, SpO2 97 RA, T 36.6 · ★ moist mucosa, no postural drop, no oedema, chest clear, weight stable · fluid chart ~1400 in / 1300 out · glucose 5.4, TG and protein normal · CT head on admission clear · no fever, cough, headache, neck stiffness, weight loss, lumps, cancer history · drinking normal",
-    "Register cheat-sheet — to the nurse: hyponatraemia, serum osmolality, euvolaemic, SIADH. To a patient: 'a mineral, or salt, in your blood', 'a hormone that tells your kidneys to hold on to water'. Wrong register for the listener costs marks in both directions",
-    "Variant — nurse rings back an hour later, he has seized: diagnostic problem → emergency. Attend, MET call, airway/oxygen/monitoring, urgent repeat Na and glucose; symptomatic severe hyponatraemia with seizures → small boluses of 3% NaCl to raise Na 4–6 mmol/L, enough to stop the seizure, then stop; medical registrar + ICU from the outset; afterwards correction ≤8 mmol/L per 24 h (osmotic demyelination). VERIFY regimen against Therapeutic Guidelines and local protocol",
-    "Variant — 3-month cough, 6 kg loss, smoker since 17: 'a low sodium of this kind can be caused by a chemical released by a growth in the lung — it's on my list, CXR this week, CT if it shows anything'",
-    "SA: MedSTAR 1300 13 12 33 if retrieval needed · TIS 131 450"
+    "**Do now: conscious state and observations BEFORE anything else · glucose, triglycerides and total protein · the full medication chart including ceased and recently changed drugs · the fluid balance chart and recent weight trend · and the nurse's volume assessment — JVP, oedema, mucosa, turgor, postural BP.**",
+    "**The confirming test: a PAIRED SERUM AND URINE OSMOLALITY WITH A URINE SODIUM, on the same sample.** Together with a clinical volume assessment, those three results place the patient on the algorithm.",
+    "**Then: UEC and eGFR, LFT, TSH, MORNING CORTISOL.** Directed by history: **chest X-ray, CT brain, septic screen.** **Find an old sodium result — how fast it fell matters more than the number.**",
+    "**The osmolality grid: SERUM NORMAL → pseudohyponatraemia (triglycerides, protein). SERUM HIGH → hyperglycaemia or mannitol. SERUM LOW → true hypotonic hyponatraemia, now assess volume.**",
+    "**If the urine osmolality were LOW (under 100), the kidney is diluting appropriately and this is NOT SIADH** — that points to **primary polydipsia, beer potomania or very low solute intake**, and the treatment is to reduce water intake and improve diet, not to restrict further.",
+    "**Avoid: guessing volume status from the history · giving normal saline in SIADH · correcting too quickly · straying into management when the task did not ask for it.**",
+    "**Do not miss: a seizure or falling conscious state (hypertonic saline territory) · adrenal insufficiency, especially with a high potassium · a lung malignancy in a smoker with SIADH.**"
    ],
-   "fails": [
-    "Discussing a sodium of 118 before asking whether he is alert or has fitted ★",
-    "Never asking the nurse to assess his fluid state — the single commonest failure ★",
-    "Asking only about new medications (misses the long-standing thiazide) ★",
-    "Saying 'SIADH' and offering no differentials ★",
-    "Changing or stopping a medication over the telephone instead of escalating ★",
-    "Hearing the thiazide and stopping the history; not naming what the low osmolality means; running the volume groups without announcing them",
-    "Lay-register explanation to a senior nurse; failing to offer to document and escalate; no safety-net"
-   ],
-   "numbers": [
-    "Na normal 135–145 · severe <125 · here 118 (Version B 120) · serum osmolality <275 mOsm/kg = true hypotonic; normal = pseudo; high = hyperglycaemia",
-    "SIADH: urine osm >100 mOsm/kg, urine Na >30–40, euvolaemic, normal thyroid/adrenal/renal · hypovolaemic hyponatraemia urine Na <20",
-    "Correction ≤8 mmol/L per 24 h · severe symptomatic: 3% NaCl to lift 4–6 mmol/L · SIADH fluid restriction 800–1000 mL/day",
-    "Three drugs first: thiazides · SSRIs · carbamazepine",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**SIADH — the answer**",
+     "**Euvolaemic, serum osmolality low, urine concentrated with a high urine sodium**, normal thyroid, adrenal and renal function",
+     "**Drugs · infection · malignancy · intracranial** — the four cause groups",
+     "**A diagnosis of exclusion once the other groups are cleared. Paired serum and urine osmolality with urine sodium**"
+    ],
+    [
+     "**Thiazide diuretic**",
+     "**Older patient on a thiazide for hypertension**, often within weeks of starting",
+     "**Every antihypertensive BY NAME, not by class**",
+     "**Cease and recheck** — the sodium recovers"
+    ],
+    [
+     "**SSRI or carbamazepine**",
+     "Citalopram, sertraline; carbamazepine for epilepsy, neuralgia or mood",
+     "**Psychotropics and anticonvulsants are routinely forgotten**",
+     "**Cease or substitute in discussion with the prescriber — never abruptly**"
+    ],
+    [
+     "Pseudohyponatraemia · hyperglycaemia",
+     "Lipaemic sample, myeloma; or thirst, polyuria, weight loss",
+     "**Glucose, triglycerides, total protein**",
+     "**Pseudo: serum osmolality NORMAL. Hyperglycaemia: serum osmolality HIGH — correct the sodium for glucose**"
+    ],
+    [
+     "Hypovolaemic — losses, poor intake, diuretics",
+     "Vomiting, diarrhoea, burns, third-spacing, reduced intake",
+     "**Dry mucosa, postural drop, tachycardia**",
+     "**Urine sodium UNDER 20.** Replace with 0.9% saline slowly and stop the diuretic"
+    ],
+    [
+     "Hypervolaemic — heart, liver, kidney",
+     "Oedema, orthopnoea, raised JVP, crackles; jaundice, ascites; frothy urine, reduced output",
+     "Pillows, ankle swelling, jaundice, urine volume",
+     "**Echo and BNP; LFT and coagulation; UEC, eGFR, urine ACR. FLUID RESTRICT — do NOT give saline**"
+    ],
+    [
+     "Hypothyroidism",
+     "Cold intolerance, constipation, weight gain, slowed thought",
+     "Weather preference, bowels, energy",
+     "**TSH and free T4**"
+    ],
+    [
+     "**Adrenal insufficiency**",
+     "**Postural dizziness, pigmentation, weight loss, recent steroid cessation, HIGH POTASSIUM**",
+     "Steroid use and cessation, fatigue, salt craving",
+     "**Morning cortisol, Synacthen test**"
+    ],
+    [
+     "**Malignancy · infection · intracranial — the other SIADH causes**",
+     "**Lung cancer and lymphoma; pneumonia, TB, meningitis; haemorrhage or head injury**",
+     "Weight loss, lumps, night sweats; fever, cough, neck stiffness; head injury",
+     "**CXR, CT brain, septic screen** — and say what each normal result excludes"
+    ],
+    [
+     "Primary polydipsia · beer potomania · low solute intake",
+     "Very large water intake, heavy beer drinking, poor diet",
+     "**Quantify daily intake and diet**",
+     "**Urine osmolality LOW (under 100) — the kidney is diluting appropriately. Last on the list**"
+    ]
    ]
   },
   "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version A — Arthur Nolan, 78, telephone station with the ward nurse)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Discussing a sodium of 118 before asking whether he is alert — 'before I go through the results: is he alert and oriented, or drowsy? any fitting? his latest observations?' — a sodium of 118 can seize, and this is the safety domain (★)",
-   "FAIL — Never asking the nurse to assess his fluid state — 'can I ask you to look at him and tell me what his fluid state looks like? dry mouth, reduced turgor, postural drop — or oedema, raised neck veins, basal crackles? has his weight changed?' — the single commonest failure in the station; she will never offer it (★)",
-   "FAIL — Asking only about new medications — 'read me the whole chart, including anything started or changed'; the thiazide is long-standing and she reads it plainly only when asked for everything (★)",
-   "FAIL — Naming SIADH with no differentials — three layers: SIADH and its likely trigger; the other SIADH causes (malignancy, infection, intracranial); the causes outside SIADH (thyroid, adrenal, hypovolaemic, hypervolaemic) — with a paired serum and urine osmolality and urine sodium to confirm (★)",
-   "FAIL — Changing or stopping the thiazide over the telephone — 'I'll discuss that with the medical registrar and document a plan tonight'; safety-net: call me if drowsy, more confused, vomiting, fitting (★)",
-   "FAIL — The wrong register — she is a senior colleague: 'sodium 118 against 135–145, low osmolality means true hypotonic hyponatraemia', not 'a salt in your blood'; exclude pseudohyponatraemia (glucose, triglycerides, protein) and say the conclusion out loud; hearing the thiazide, note it and keep going"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-69",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, face to face — results-discussion station. Stem reconstructed from the Version B script in the source PDF (only the age, sodium, drugs and format are given).",
   "stem": [
    "A 50-year-old man attends for the results of routine blood tests. He feels completely well. Sodium 120 mmol/L (135–145), serum osmolality low. He takes citalopram for mood and carbamazepine, which he has had for years for nerve pain."
   ],
@@ -17885,86 +17984,182 @@
    "Take a focused history",
    "Explain the most likely diagnosis and your differentials to the patient"
   ],
-  "time": "8 minutes. Why the test, then symptoms (dizziness, confusion, memory, headache, tiredness, balance) · three volume blocks · ★ every medicine — prescribed, over the counter, herbal · five-move patient-register explanation · ★ do NOT tell him to stop the SSRI or the anticonvulsant today — confirm, then plan a substitution with the prescriber.",
+  "findings": [
+   [
+    "The results handed to you",
+    "SODIUM 120 · SERUM OSMOLALITY LOW · URINE SODIUM HIGH · URINE OSMOLALITY HIGH · blood glucose NORMAL · thyroid function NORMAL · eGFR NORMAL · CHEST X-RAY NORMAL · CT BRAIN NORMAL"
+   ],
+   [
+    "Read what you were given, out loud",
+    "THE NORMAL CHEST X-RAY AND CT BRAIN ARE THERE TO CLOSE OFF THE LUNG AND INTRACRANIAL CAUSES OF SIADH. NAME EACH NORMAL RESULT AND SAY WHAT IT EXCLUDES — not mentioning them is a documented fail"
+   ],
+   [
+    "Serum low, urine high",
+    "That is the whole memory hook, and the stem hands it to you. SIADH criteria: serum osm under 275 · URINE OSM OVER 100 · URINE SODIUM OVER 30–40 · euvolaemic · normal thyroid, adrenal and renal function · no diuretic"
+   ],
+   [
+    "The drugs",
+    "CITALOPRAM for mood, and CARBAMAZEPINE which he has had FOR YEARS for nerve pain. Ask for EVERY medicine — prescribed, over the counter, herbal. Asking only about NEW medications misses a drug started years ago"
+   ],
+   [
+    "Symptoms",
+    "HE FEELS COMPLETELY WELL — no dizziness, confusion, memory trouble, headache, tiredness or change in walking or balance. Asymptomatic despite a sodium of 120"
+   ],
+   [
+    "Examination is not a task — say it anyway",
+    "'Although examination is not one of my tasks, I WOULD want to assess his volume status — postural blood pressure, mucous membranes, skin turgor, JVP, peripheral and pulmonary oedema — BECAUSE THAT SINGLE ASSESSMENT DETERMINES WHICH GROUP OF CAUSES I PURSUE'"
+   ],
+   [
+    "VARIANT — the malignancy version",
+    "64 M, smoker, three months of COUGH and 6 kg WEIGHT LOSS, euvolaemic → say it plainly: a low sodium of this kind can be caused by a chemical released by a growth in the lung. NOT telling him he has it — telling him it is on the list, with a CHEST X-RAY THIS WEEK and a CT if it shows anything"
+   ],
+   [
+    "VARIANT — the examiner interrupts",
+    "The nurse calls back an hour later: HE HAS HAD A SEIZURE. This stops being a diagnostic problem. MET call, airway, oxygen, monitoring, urgent repeat sodium and glucose, and SMALL BOLUSES OF 3% SODIUM CHLORIDE to raise the sodium by 4–6 mmol/L — enough to stop the seizure — then STOP, with the registrar and ICU involved from the outset"
+   ]
+  ],
+  "findingsLabel": "The results handed to you, and what each normal one excludes",
+  "must": [
+   "FAIL — Telling him to stop the citalopram or carbamazepine today. Confirm, then plan with the prescriber.",
+   "FAIL — Asking only about NEW medications. The carbamazepine has been running for years.",
+   "FAIL — Naming SIADH with no differentials. Three layers, every time.",
+   "FAIL — Ignoring the normal CXR and CT brain that the stem handed you.",
+   "ASK — Every medicine you take: prescribed, over the counter, and anything herbal.",
+   "ASK — Any dizziness, confusion, memory trouble, headaches, or change in your walking?"
+  ],
   "back": {
-   "dx": "Drug-induced SIADH (citalopram and carbamazepine are both recognised causes) → euvolaemic hypotonic hyponatraemia, Na 120, asymptomatic. Five-move explanation in patient register: sodium is a mineral/salt kept in careful balance → most likely cause is SIADH, 'syndrome of inappropriate secretion of ADH' → ADH tells the kidneys to hold on to water; too much → extra water dilutes the salt → the trigger is his medication, a side effect not his fault → other causes looked for: certain cancers (lung, lymphoma — CXR normal), infections (chest, lining of the brain), problems inside the head (bleed/injury — brain scan normal) → non-SIADH causes: losing fluid (vomiting, diarrhoea, poor intake), fluid tablets, underactive thyroid (ruled out), heart/liver/kidney problems (results and examination don't support). Next step: confirm with paired serum/urine osmolality and urine sodium, then talk to the prescriber — an SSRI stopped abruptly causes discontinuation symptoms, carbamazepine stopped abruptly risks seizures; plan the change, say so aloud.",
+   "dx": [
+    "**Euvolaemic hypotonic hyponatraemia due to SIADH, drug-induced — CITALOPRAM and CARBAMAZEPINE are both recognised causes.**",
+    "**Pseudo → volume → group.** Rule out pseudohyponatraemia, establish volume status, then run the three volume groups as three labelled blocks. **Examination is not a task here, so say out loud that you would still assess volume status and why.**",
+    "**Explain in FIVE MOVES, patient register: 'your blood test shows a low sodium level · sodium is a mineral, or a salt, that your body keeps in careful balance · the most likely cause is SIADH, the syndrome of inappropriate secretion of ADH · ADH is a hormone that tells your kidneys to hold on to water, and in this condition your body makes more than it should, so you hold extra water and that dilutes the salt · in your case the most likely trigger is your medication, and that is a side effect rather than anything you have done wrong.'**",
+    "**Then the layers: other causes of SIADH — certain cancers, particularly lung and lymphoma (your chest X-ray is normal) · infections of the chest or the lining of the brain · problems inside the head such as a bleed or injury (your brain scan is normal).** **Then outside SIADH — losses, fluid tablets, an underactive thyroid (your test rules it out), and heart, liver or kidney problems.**",
+    "**CORRECTION — hyperglycaemia is not pseudohyponatraemia.** **Triglycerides and protein give an artefact with a NORMAL serum osmolality; hyperglycaemia gives a real dilutional hyponatraemia with a HIGH serum osmolality.** His glucose is normal, so neither applies.",
+    "**Do NOT stop an SSRI or an anticonvulsant abruptly.** **Abrupt SSRI cessation causes discontinuation symptoms; abrupt carbamazepine cessation risks seizures.** **Confirm, then plan a substitution with the prescriber — and say that out loud.**",
+    "**Drugs to name first: thiazides · SSRIs · carbamazepine.** Then **ACE inhibitors, NSAIDs, proton pump inhibitors, chemotherapy, MDMA, desmopressin.**",
+    "**Register matters both ways.** To a patient: 'a mineral, or salt, in your blood', 'a hormone that tells your kidneys to hold on to water'. **To a nurse or examiner: hyponatraemia, serum osmolality, euvolaemic, SIADH.** Using the wrong one costs marks in both directions.",
+    "**Do not alarm a well patient.** Not 'your sodium is dangerously low' but **'it is low enough to need sorting out, and here is exactly how.'** He came for a routine check — **ask his ideas, concerns and expectations.**",
+    "**Correction no faster than about 8 mmol/L in 24 hours** — faster risks **osmotic demyelination syndrome**, appearing days later with dysarthria, dysphagia and quadriparesis, usually irreversible. **SIADH fluid restriction is commonly 800–1000 mL/day.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'Before we look at them — what prompted the test?' → routine · 'Any dizziness, confusion, memory trouble, headaches, tiredness, change in walking or balance?' → none, 'which is why I'm puzzled you called me in'"
+     "**'Good morning, I'm Dr [name]. How can I help you today?'** Then, before the results: **'can I ask what prompted the blood test in the first place? And have you been feeling well in yourself?'**"
     ],
     [
-     "1:00",
-     "Result in lay words: 'your sodium is low — sodium is a mineral, or salt, your body keeps in balance in the blood'; it is a true low (osmolality low) rather than a measurement effect; not an emergency in someone well, but it needs a cause"
+     "0:40",
+     "**Symptoms, patient register: any dizziness, confusion, memory trouble, headaches, tiredness, or any change in your walking or balance?** He feels completely well, which is why he is puzzled to be called in."
     ],
     [
-     "1:45",
-     "Three volume blocks announced: losing (vomiting, diarrhoea, intake, burns) · retaining (orthopnoea, ankle swelling, jaundice, urine output) · euvolaemic (cold intolerance, constipation, weight gain)"
+     "1:10",
+     "**The pseudohyponatraemia screen is already answered by the stem** — glucose normal, and the serum osmolality is low. **Say it: this is a true hypotonic hyponatraemia, not an artefact.**"
     ],
     [
-     "3:00",
-     "★ 'Every medicine you take — prescribed, bought over the counter, and anything herbal' → citalopram, carbamazepine for years · SIADH groups: fever/cough/headache/neck stiffness · weight loss/lumps/sweats/past cancer · head injury/imaging · excess water drinking · smoking"
+     "1:30",
+     "**Block one, losing fluid: any vomiting or diarrhoea · eating and drinking as usual · any burns or wounds · any fluid tablets?**"
     ],
     [
-     "4:15",
-     "Examination by name (or findings on screen): fluid state — mucosa, turgor, postural BP, JVP, oedema, chest bases · thyroid · neuro/conscious state · results already held: CXR normal, brain scan normal, TSH normal"
+     "2:00",
+     "**Block two, retaining it: any breathlessness, worse lying flat, how many pillows · any swelling in the legs · any yellowing of the skin or eyes, dark urine or pale stools · passing less urine than usual?**"
+    ],
+    [
+     "2:30",
+     "**Block three, euvolaemic: any weather preference, intolerant of the cold · any constipation or weight gain?** Then **'now the important group — can you tell me EVERY medicine you take: prescribed, bought over the counter, and anything herbal?'** → **citalopram, and carbamazepine for years.**"
+    ],
+    [
+     "3:10",
+     "**The four SIADH cause groups: INFECTION — fever, chills, cough, breathlessness, headache, neck stiffness · MALIGNANCY — weight loss, lumps or bumps, night sweats, any previous cancer, and smoking · INTRACRANIAL — any recent head injury · POLYDIPSIA — are you drinking unusually large amounts of water?**"
+    ],
+    [
+     "3:50",
+     "**Finish the spine: SADMA including ALCOHOL (beer potomania) and recreational drugs (MDMA) · past history of cancer, lung, kidney or adrenal disease, previous low sodium, long-term steroids recently stopped · family history · and his IDEAS, CONCERNS AND EXPECTATIONS**, because he came for a routine check."
+    ],
+    [
+     "4:30",
+     "**Say the volume line even though examination is not a task**, then **name each normal result in the stem and what it excludes**: chest X-ray — lung malignancy; CT brain — intracranial cause; thyroid function — hypothyroidism; eGFR — renal."
     ],
     [
      "5:00",
-     "Five-move explanation: low sodium → SIADH named and spelt out → ADH/water mechanism → medication trigger, 'a side effect rather than anything you have done wrong' → other SIADH causes looked for → non-SIADH causes"
+     "**The five-move explanation in patient register**, then **the layers** — other causes of SIADH, then the causes of hyponatraemia outside SIADH."
     ],
     [
-     "6:45",
-     "★ 'The next step is to confirm it, then talk to whoever prescribes your medicines — we don't stop an antidepressant or an anticonvulsant abruptly; we plan the change.' Paired serum/urine osmolality + urine Na · fluid guidance once confirmed · safety-net: headache, confusion, drowsiness, vomiting, fits → ED"
+     "6:30",
+     "**The next step said plainly: confirm it, and then talk to whoever prescribes your medicines, BECAUSE WE DO NOT STOP AN ANTIDEPRESSANT OR AN ANTICONVULSANT ABRUPTLY — we plan the change.** Safety-net for drowsiness, confusion, vomiting or fitting."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Before we look at them — can I ask what prompted the test in the first place?'",
-    "'Any dizziness, confusion, memory trouble, headaches, tiredness, or any change in your walking or balance?'",
-    "★ 'Can you tell me every medicine you take — prescribed, bought over the counter, and anything herbal?'",
-    "'Your blood test shows a low sodium level. Sodium is a mineral, or a salt, that your body keeps in careful balance in the blood.'",
-    "'The most likely cause is a condition called SIADH — the syndrome of inappropriate secretion of ADH. ADH is a hormone that tells your kidneys to hold on to water. Your body makes more of it than it should, so you hold on to extra water, and that extra water dilutes the salt in your blood.'",
-    "'In your case the most likely trigger is your medication — both citalopram and carbamazepine are recognised causes, and that is a side effect rather than anything you have done wrong.'",
-    "'There are other things that can cause SIADH and I've looked for them: certain cancers, particularly of the lung, and lymphoma — your chest X-ray is normal; infections of the chest or the lining of the brain; and problems inside the head such as a bleed or an injury — your brain scan is normal.'",
-    "'Causes outside SIADH: losing fluid through vomiting, diarrhoea or not drinking enough; fluid tablets; an underactive thyroid, which your test has ruled out; and heart, liver or kidney problems, which your results and examination don't support.'",
-    "★ 'Should I stop them?' → 'Not today. We confirm it first, then I talk to whoever prescribes them — stopping an antidepressant suddenly causes withdrawal symptoms, and stopping carbamazepine suddenly can bring on seizures. We plan the change together.'",
-    "'Come back straight away, or go to the emergency department, if you get a bad headache, become confused or unusually drowsy, start vomiting, or have any fitting.'"
-   ],
    "pefe": [
-    "Given/held: Na 120, serum osmolality low · well, alert · euvolaemic on examination · CXR normal · brain scan normal · TSH normal · no losses, no oedema · no fever, weight loss, lumps, head injury",
-    "Confirmatory: paired serum and urine osmolality, urine sodium (SIADH: urine osm >100, urine Na >30–40) · TSH, morning cortisol · UEC, glucose, lipids, protein · once confirmed: fluid restriction 800–1000 mL/day, and drug substitution planned with the prescriber (psychiatry/GP for the SSRI; neurology/pain for carbamazepine) VERIFY",
-    "Register cheat-sheet — patient: 'a mineral, or salt, in your blood', 'a hormone that tells your kidneys to hold on to water', 'your body holds on to too much water, which dilutes the salt'. Never 'euvolaemic hypotonic hyponatraemia' to him",
-    "Variant — malignancy version (cough 3 months, 6 kg loss, smoker): name the lung as a possible source, CXR this week, CT if abnormal — 'it's on my list, I'm not telling you that you have it'",
-    "Variant — seizure at home: emergency; 3% NaCl by protocol, 4–6 mmol/L lift then stop, ICU/medical registrar, correction ≤8 mmol/L/24 h VERIFY · MedSTAR 1300 13 12 33",
-    "SA: GP-endocrine/physician referral; TIS 131 450"
+    "**The stem already supplies the confirming set: serum osmolality LOW, urine sodium HIGH, urine osmolality HIGH, glucose normal, thyroid normal, eGFR normal, CXR normal, CT brain normal.** **Name each one and say what it excludes.**",
+    "**Say you would still assess volume status** — postural blood pressure, mucous membranes, skin turgor, JVP, peripheral and pulmonary oedema — **because that single assessment determines which group of causes you pursue.**",
+    "**Add a MORNING CORTISOL** — adrenal insufficiency is the one euvolaemic cause the stem has not excluded, especially with a high potassium.",
+    "**If the urine osmolality were LOW (under 100), this is not SIADH** — primary polydipsia, beer potomania or low solute intake, treated by reducing water intake and improving diet.",
+    "**Management is fluid restriction, commonly 800–1000 mL/day, and treating the cause — stop or substitute the drug in discussion with the prescriber.** Second-line: oral sodium chloride or urea, and rarely tolvaptan under specialist care. VERIFY.",
+    "**Never give normal saline in SIADH** — the kidney concentrates the urine above the tonicity of the saline, so the salt is excreted, the water retained, and the sodium falls further.",
+    "**Severe and symptomatic — seizure, falling conscious state, coma: small boluses of 3% sodium chloride to raise the sodium by 4–6 mmol/L, enough to stop the symptoms, then stop and reassess**, with senior and ICU involvement. **Not started on the ward alone.** VERIFY."
    ],
-   "fails": [
-    "Telling him to stop citalopram or carbamazepine today ★",
-    "'SIADH' with no differentials, or a differential list with no non-SIADH layer ★",
-    "Asking 'any medications?' without over-the-counter and herbal — or never linking the two drugs to the sodium",
-    "Reporting the sodium in colleague register (osmolality, euvolaemic) to the patient",
-    "Declaring the diagnosis without offering a confirmatory paired osmolality",
-    "No safety-net for neurological symptoms in a sodium of 120"
-   ],
-   "numbers": [
-    "Na 120 · normal 135–145 · severe <125 · serum osm <275 = true hypotonic",
-    "SIADH: urine osm >100 mOsm/kg · urine Na >30–40 mmol/L · euvolaemic · normal TSH/cortisol/renal",
-    "Fluid restriction 800–1000 mL/day once confirmed · correction ≤8 mmol/L per 24 h",
-    "Drug triad: thiazides · SSRIs · carbamazepine",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**SIADH — the answer**",
+     "**Euvolaemic, serum osmolality low, urine concentrated with a high urine sodium**, normal thyroid, adrenal and renal function",
+     "**Drugs · infection · malignancy · intracranial** — the four cause groups",
+     "**A diagnosis of exclusion once the other groups are cleared. Paired serum and urine osmolality with urine sodium**"
+    ],
+    [
+     "**Thiazide diuretic**",
+     "**Older patient on a thiazide for hypertension**, often within weeks of starting",
+     "**Every antihypertensive BY NAME, not by class**",
+     "**Cease and recheck** — the sodium recovers"
+    ],
+    [
+     "**SSRI or carbamazepine**",
+     "Citalopram, sertraline; carbamazepine for epilepsy, neuralgia or mood",
+     "**Psychotropics and anticonvulsants are routinely forgotten**",
+     "**Cease or substitute in discussion with the prescriber — never abruptly**"
+    ],
+    [
+     "Pseudohyponatraemia · hyperglycaemia",
+     "Lipaemic sample, myeloma; or thirst, polyuria, weight loss",
+     "**Glucose, triglycerides, total protein**",
+     "**Pseudo: serum osmolality NORMAL. Hyperglycaemia: serum osmolality HIGH — correct the sodium for glucose**"
+    ],
+    [
+     "Hypovolaemic — losses, poor intake, diuretics",
+     "Vomiting, diarrhoea, burns, third-spacing, reduced intake",
+     "**Dry mucosa, postural drop, tachycardia**",
+     "**Urine sodium UNDER 20.** Replace with 0.9% saline slowly and stop the diuretic"
+    ],
+    [
+     "Hypervolaemic — heart, liver, kidney",
+     "Oedema, orthopnoea, raised JVP, crackles; jaundice, ascites; frothy urine, reduced output",
+     "Pillows, ankle swelling, jaundice, urine volume",
+     "**Echo and BNP; LFT and coagulation; UEC, eGFR, urine ACR. FLUID RESTRICT — do NOT give saline**"
+    ],
+    [
+     "Hypothyroidism",
+     "Cold intolerance, constipation, weight gain, slowed thought",
+     "Weather preference, bowels, energy",
+     "**TSH and free T4**"
+    ],
+    [
+     "**Adrenal insufficiency**",
+     "**Postural dizziness, pigmentation, weight loss, recent steroid cessation, HIGH POTASSIUM**",
+     "Steroid use and cessation, fatigue, salt craving",
+     "**Morning cortisol, Synacthen test**"
+    ],
+    [
+     "**Malignancy · infection · intracranial — the other SIADH causes**",
+     "**Lung cancer and lymphoma; pneumonia, TB, meningitis; haemorrhage or head injury**",
+     "Weight loss, lumps, night sweats; fever, cough, neck stiffness; head injury",
+     "**CXR, CT brain, septic screen** — and say what each normal result excludes"
+    ],
+    [
+     "Primary polydipsia · beer potomania · low solute intake",
+     "Very large water intake, heavy beer drinking, poor diet",
+     "**Quantify daily intake and diet**",
+     "**Urine osmolality LOW (under 100) — the kidney is diluting appropriately. Last on the list**"
+    ]
    ]
   },
   "source": "Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf (Version B — 50-year-old man, Na 120, citalopram + carbamazepine; stem reconstructed)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Telling him to stop citalopram or carbamazepine today — abrupt SSRI cessation causes discontinuation symptoms, abrupt carbamazepine cessation risks seizures; 'we confirm it first, then I talk to whoever prescribes them and we plan the change'",
-   "FAIL — Asking only about new medicines — 'every medicine you take, prescribed, over the counter and anything herbal'; both drugs are long-standing and both are recognised causes",
-   "SAY — The five moves in patient register: 'sodium is a mineral, or salt, kept in careful balance' → 'SIADH — a hormone that tells your kidneys to hold on to water; your body makes too much, the extra water dilutes the salt' → 'the most likely trigger is your medication, a side effect, not anything you did' → the other SIADH causes checked (lung cancer, lymphoma, infection, head — X-ray and scan normal) → the causes outside SIADH",
-   "FAIL — Saying 'SIADH' and offering no other causes — the differentials are a separate marked item in both versions",
-   "DO — 'What prompted the test in the first place?' then symptoms (confusion, headache, balance, tiredness) and the three volume blocks even though he 'feels completely fine' — you cannot call him euvolaemic without them",
-   "DO — Confirm with a paired serum and urine osmolality and a urine sodium, TSH and cortisol; in the smoker with a three-month cough and weight loss, name the lung and arrange the film this week"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hyponatraemia_SIADH_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-70",
