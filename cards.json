@@ -20658,9 +20658,8 @@
  {
   "id": "MED-76",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. No physical examination and no results — history substitutes for examination. Six minutes of history, two of explanation.",
   "stem": [
    "Mrs Jane Halloran, 47, presents having found a lump in her neck. She noticed it while touching her neck and has been reading about it online. She is very worried."
   ],
@@ -20668,91 +20667,211 @@
    "Take a focused history from the patient (approximately 6 minutes)",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes: 0:00 open + empathy line · 0:30 the lump — number, ★ 'show me exactly where', 'when did you first notice it', growth, four features (hard/tender/skin/mobile) · 1:30 thyroid box (ask despite lateral site) · 2:00 lymphoma + B symptoms · ★ 2:40 top-down cancer screen scalp → stomach — where all four positives live; do NOT stop at the cough · 4:20 infection box (★ toothache/dentist) · 5:10 travel, animals, sexual health, SADMA · 5:40 ICE · 6:00 'several conditions, not one' — ranked, each with its reason, benign and infective included · plan, timeframe, safety-net.",
+  "findings": [
+   [
+    "NO EXAMINATION AND NO RESULTS",
+    "The character of the lump can ONLY be obtained BY ASKING HER TO DESCRIBE IT. That is unusual, and it is a SCORED part of this station. Six minutes of history, two of explanation"
+   ],
+   [
+    "The lump, as she describes it",
+    "ONE lump · RIGHT SIDE, BELOW THE ANGLE OF THE JAW — lateral, not midline · noticed TWO WEEKS AGO · A BIT BIGGER · ROCK HARD · NOT TENDER · SKIN NORMAL · FEELS STUCK DOWN · DOES NOT MOVE ON SWALLOWING"
+   ],
+   [
+    "'CAN YOU SHOW ME EXACTLY WHERE IT IS?'",
+    "THE HIGHEST-YIELD SINGLE QUESTION IN THE STATION, and the only substitute for an examination. MIDLINE → thyroid, thyroglossal, dermoid. LATERAL ALONG STERNOCLEIDOMASTOID → node, branchial cyst, carotid body tumour. LEFT SUPRACLAVICULAR → VIRCHOW'S NODE, Troisier's sign — gastric, oesophageal, pancreatic or lung"
+   ],
+   [
+    "And ask 'WHEN DID YOU FIRST NOTICE IT?'",
+    "NOT 'how long has it been there' — SHE CANNOT ANSWER THAT. She only knows when she found it"
+   ],
+   [
+    "Box 1 thyroid — ALL NEGATIVE, ask anyway",
+    "Does not move on swallowing OR tongue protrusion. No heat or cold intolerance, bowels normal, weight and voice unchanged, no family thyroid disease. YOU ARE EXCLUDING, NOT GUESSING — thirty seconds, and it catches the MIDLINE VARIANT where the lump DOES move on tongue protrusion (thyroglossal duct cyst)"
+   ],
+   [
+    "Box 2 lymphoma — ALL NEGATIVE",
+    "No weight loss, appetite fine, NO lumps elsewhere, not unusually tired, NO night sweats, no fevers, no personal or family cancer. THESE NEGATIVES FEEL WASTED AT THE TIME — they are what you recite as 'relevant negatives', and they are worth marks"
+   ],
+   [
+    "POSITIVE 1 and 2 — buried in the top-down screen",
+    "MOUTH: 'I've had an ULCER INSIDE MY CHEEK FOR A COUPLE OF MONTHS. It won't heal.' SWALLOWING: 'FOOD GETS STUCK sometimes' — and when asked separately, NOT PAINFUL. DYSPHAGIA AND ODYNOPHAGIA ARE DIFFERENT QUESTIONS"
+   ],
+   [
+    "POSITIVE 3 and 4",
+    "LUNG: 'a DRY COUGH for months. No blood. I smoke FIFTEEN A DAY FOR THIRTY YEARS.' TEETH: 'a BAD BACK TOOTH that's been aching for a few weeks. Haven't seen a dentist in a couple of years'"
+   ],
+   [
+    "SHE VOLUNTEERS NONE OF THEM",
+    "A vague 'any other symptoms?' gets 'NOT REALLY'. Each positive must be asked for SPECIFICALLY. If you never ask, you never find them — THAT IS THE POINT OF THE STATION"
+   ],
+   [
+    "Her fear, stated in the first ten seconds",
+    "'I was scratching my neck and there it was. I looked it up online and now I can't sleep. IT'S CANCER, ISN'T IT?' She has NOT told her husband. IF YOU OFFER FALSE REASSURANCE SHE BECOMES MORE ANXIOUS, NOT LESS: 'but you can't actually know that, can you?'"
+   ]
+  ],
+  "findingsLabel": "No examination — the lump's character, and four positives she never volunteers",
+  "must": [
+   "FAIL — Only the thyroid box emptied. Melaena, moles and mouth ulcers never mentioned.",
+   "FAIL — Closing on the first positive. 'You're a smoker with a cough, this is lung cancer.'",
+   "FAIL — False reassurance: 'it's probably just a gland from your tooth, nothing to worry about.'",
+   "FAIL — The buzzer goes with the history still running and no differential given to the patient.",
+   "ASK — Can you show me exactly where it is?",
+   "ASK — Any ulcer or sore in your mouth that hasn't healed?"
+  ],
   "back": {
-   "dx": "Right lateral, hard, fixed, painless, enlarging cervical lymph node (~2 weeks) in a 47-year-old smoker (15/day × 30 years) — four buried positives found only by a systematic top-down screen: (1) dry cough for months (lung cancer), (2) non-healing buccal ulcer for two months (oral SCC), (3) food sticking on swallowing, not painful (oesophageal cancer — ask dysphagia and odynophagia separately), (4) aching back tooth, no dentist for years (dental infection with a reactive node — genuinely on the list, but a hard fixed node is not explained by it). Thyroid box negative (no movement on swallowing/tongue protrusion, no thermal intolerance); B symptoms negative — recite as relevant negatives. Explanation: 'I've been thinking about several conditions and I can't tell you today which it is' → most concerned about a cancer, and why: a gland reacting to a cancer in the lung (cough + smoking), the mouth (the ulcer), or the food pipe (food sticking) → the bad tooth as a real alternative → thyroid, other cancers that travel to the neck (skin, nose, stomach, salivary), throat/sinus/skin infections. Plan: examine properly, bloods, neck ultrasound, urgent specialist referral (ENT); organised today, hear within the week; safety-net — rapid growth, trouble breathing or swallowing → straight back. No false reassurance (she is briefed to push 'but you can't actually know that').",
+   "dx": [
+    "**There is NO single diagnosis, and the case is DESIGNED that way. The answer is a RANKED DIFFERENTIAL LIST with a REASON attached to each item.** **If you leave the station with four findings, you are almost certainly passing.**",
+    "**THE TRAP: candidates who have memorised a recall go looking for ONE finding and ONE diagnosis. This case is written with SEVERAL positives — a smoker with a cough, a mouth ulcer, dysphagia, and a toothache, all in the same patient. The intended effect is PANIC.** **Multiple positives mean your history was BROAD ENOUGH TO FIND THEM — that is the case working as designed, not you going wrong.**",
+    "**THE FOUR BOXES YOU MUST EMPTY IN SIX MINUTES: 1 THYROID — nodule, cyst, goitre, thyroglossal duct cyst, cancer. 2 GENERALISED NODES — lymphoma, AND THE INFECTIONS THAT MIMIC IT. 3 LOCALISED CANCERS, SCALP TO STOMACH — skin, nose, mouth, throat, oesophagus, stomach, lung, salivary. 4 LYMPHADENITIS — ENT, dental and skin infection.** **A neck lump in a 47-year-old is a MALIGNANCY SCREEN wearing the clothes of a lump history.**",
+    "**CORRECTION — HIV, syphilis and EBV are INFECTIVE causes of generalised lymphadenopathy, NOT malignant ones.** Keeping them in the generalised box is a useful memory device, but say it accurately: **'generalised lymphadenopathy — lymphoma, and the infections that mimic it.'**",
+    "**Her description IS the examination: HARD AND FIXED AND PAINLESS WITH NORMAL SKIN → malignancy. TENDER WITH RED WARM SKIN → lymphadenitis. RUBBERY, MOBILE, MULTIPLE → lymphoma. SOFT, FLUCTUANT, SLOW → lipoma, sebaceous cyst, branchial cyst. MOVES ON SWALLOWING → thyroid or thyroglossal; THYROGLOSSAL ALSO MOVES ON TONGUE PROTRUSION.**",
+    "**She asks 'is it cancer?' at minute two — the role-player is BRIEFED to interrupt. 'No, I'm sure it's fine' is UNSAFE and scored as such; 'yes, probably' before the history is worse; ignoring it loses the empathy marks outright.** Say: **'that's exactly the question I'd be asking. I CAN'T ANSWER IT HONESTLY YET — I need to finish these questions, and then I promise I'll tell you straight what I'm thinking and what we do next.'**",
+    "**THIS IS NOT BREAKING BAD NEWS — you have no diagnosis to break. It is EXPLAINING UNCERTAINTY.** Do not adopt a breaking-bad-news structure with a warning shot and grave pauses, or **she will assume the worst has been confirmed.**",
+    "**The delivery structure: 1 SIGNAL THERE IS A LIST, NOT A VERDICT. 2 Name the cancer concern ONCE, gently and EARLY — do not bury it, do not spring it at the end. 3 Give each possibility WITH ITS REASON, IN HER WORDS. 4 INCLUDE THE BENIGN AND INFECTIVE OPTIONS — they are genuinely on the list and they soften the delivery honestly. 5 Say what happens next, with a timeframe.**",
+    "**TWO SENTENCES THAT RAISE YOUR DIFFERENTIAL ABOVE EVERYONE ELSE'S. 'I would also want to exclude TUBERCULOSIS' — scrofula presents as MATTED, PAINLESS, slowly enlarging nodes, often WITHOUT cough or fever, overwhelmingly in overseas-born residents, and it is NOTIFIABLE. 'And A DRUG CAUSE' — PHENYTOIN, CARBAMAZEPINE and ALLOPURINOL can produce lymphadenopathy with rash and eosinophilia.** Neither appears on the standard recall answer.",
+    "**The rule that resolves most of these: a cervical node still present after FOUR TO SIX WEEKS, or HARD, FIXED, OVER 2 cm, or SUPRACLAVICULAR, or in an adult OVER 40 with smoking or alcohol, needs SPECIALIST ASSESSMENT — not another course of antibiotics and not watchful waiting.** **Hoarseness or a mouth ulcer beyond THREE WEEKS → urgent ENT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'tell me about it in your own words' · 'it's cancer, isn't it?' → ★ 'I can imagine how frightening that's been, and I'm not going to guess. I'm going to ask quite a lot of questions, because a lump here can come from several different places — then I'll tell you honestly what I'm thinking.'"
+     "**Open question — 'tell me about it in your own words' — then THE EMPATHY LINE, which costs eight seconds: 'I can imagine how stressful this must have been, particularly after reading about it. Thank you for coming in to get it checked, that was absolutely the right thing to do.'**"
+    ],
+    [
+     "0:20",
+     "**SIGNPOST, or the next six minutes sound scattergun and frightening: 'I'm going to ask you QUITE A LOT OF QUESTIONS, because a lump in the neck can come from SEVERAL DIFFERENT PLACES and I want to work through each of them properly. Then I'll tell you what I'm thinking.'**"
     ],
     [
      "0:30",
-     "The lump: one or more · ★ 'show me exactly where' (right lateral, below the jaw angle — midline vs lateral vs supraclavicular is the only substitute for examination) · ★ 'when did you first notice it?' (not 'how long has it been there') · ever before · bigger · hard/soft · tender · skin · mobile/fixed → rock hard, painless, stuck"
+     "**THE LUMP, four groups: is it ONE lump or several · CAN YOU SHOW ME EXACTLY WHERE IT IS · WHEN DID YOU FIRST NOTICE IT, and have you ever had one before · HAS IT CHANGED, is it getting bigger?**"
+    ],
+    [
+     "1:00",
+     "**Then the four features that replace the examination: WHEN YOU PRESS ON IT, IS IT HARD OR SOFT · IS IT TENDER · ANY CHANGE IN THE SKIN OVER IT, red, warm, broken · DOES IT MOVE FREELY UNDER YOUR FINGERS, OR FEEL STUCK DOWN?** If the flow allows: **'does it change in size when you eat?' (salivary calculus) and 'does it pulsate?' (carotid body tumour).**"
     ],
     [
      "1:30",
-     "Thyroid box despite the lateral site: moves on swallowing? on tongue protrusion? heat/cold intolerance, bowels, weight, voice, family thyroid → all no · lymphoma box: weight loss, appetite, lumps elsewhere (axilla, groin), tiredness, drenching night sweats, fevers, cancer in you/family → all no"
+     "**BOX 1, THYROID — ask even though she pointed laterally: does it MOVE UP AND DOWN WHEN YOU SWALLOW · DOES IT MOVE WHEN YOU POKE YOUR TONGUE OUT · do you feel the cold or the heat more than other people · any change in your bowels · any change in weight or sleep · HAS YOUR VOICE CHANGED · family thyroid problems?**"
+    ],
+    [
+     "2:00",
+     "**BOX 2, LYMPHOMA AND B SYMPTOMS: have you lost weight without trying · how is your appetite · ANY LUMPS OR BUMPS ANYWHERE ELSE, under your arms, in your groin · unusually tired · ANY NIGHT SWEATS, THE KIND THAT SOAK THE SHEETS · any fevers · any cancer in you or the family?** Plus the two almost nobody asks: **'any ITCHING ALL OVER without a rash?' and 'does the lump ACHE AFTER YOU DRINK ALCOHOL?'**"
     ],
     [
      "2:40",
-     "★ Top-down, signposted: 'I'm going to ask about things that might seem unrelated — they help me work out where the lump has come from': changing moles/sun · nosebleeds/one blocked nostril/one blocked ear · ★ mouth ulcer that hasn't healed → YES · sore throat/hoarseness · ★ 'does food stick? and separately, is swallowing painful?' → sticks, not painful · abdominal pain/melaena · ★ cough — dry or productive, haemoptysis, smoking → dry cough months, 15/day 30 y — KEEP GOING · hand numbness/ptosis · cheek swelling/facial weakness"
+     "**BOX 3, the longest block — SIGNPOST AGAIN: 'I'm now going to ask about some things that might seem unrelated to your neck — they help me work out where the lump has come from.' SKIN: any moles or spots on your scalp, face or neck that have CHANGED — bigger, darker, started to bleed · much sun exposure over the years?**"
+    ],
+    [
+     "2:55",
+     "**NOSE AND NASOPHARYNX: any NOSEBLEEDS that keep coming back · IS ONE NOSTRIL BLOCKED ALL THE TIME · ANY HEARING LOSS OR BLOCKED FEELING IN ONE EAR?** **Unilateral serous otitis media in an ADULT is nasopharyngeal carcinoma until excluded.**"
+    ],
+    [
+     "3:10",
+     "**MOUTH: ANY ULCER OR SORE IN YOUR MOUTH THAT HASN'T HEALED · any white or red patches, or loose teeth? THROAT AND LARYNX: a sore throat that won't settle · HOARSE FOR MORE THAN THREE WEEKS · ANY EAR PAIN ON THAT SIDE — referred otalgia is a red flag.**"
+    ],
+    [
+     "3:30",
+     "**OESOPHAGUS, as TWO questions: DOES FOOD STICK WHEN YOU SWALLOW · AND SEPARATELY, IS SWALLOWING PAINFUL · any vomiting or bringing food back up? STOMACH: any pain in your tummy · HAVE YOUR MOTIONS TURNED BLACK OR TARRY?** **Melaena, not fresh blood, is the question that finds gastric cancer.**"
+    ],
+    [
+     "3:50",
+     "**LUNG: any cough, DRY OR PRODUCTIVE · any breathlessness · HAVE YOU EVER COUGHED UP BLOOD · do you smoke, or have you ever? PANCOAST: any NUMBNESS OR PINS AND NEEDLES IN YOUR HAND OR ARM · any DROOPING OF AN EYELID or change in your face? SALIVARY: any swelling in your cheek IN FRONT OF YOUR EAR, does it swell up when you eat · any WEAKNESS ON ONE SIDE OF YOUR FACE?**"
     ],
     [
      "4:20",
-     "Infection box: fevers/chills · ★ toothache, pain chewing, last dentist → bad back tooth, years since a dentist · sore throat/runny nose/ear pain · rashes, cuts, boils on head/neck"
+     "**BOX 4, INFECTION: any fevers or chills · ANY TOOTHACHE, or pain when you chew, WHEN DID YOU LAST SEE A DENTIST · any sore throat, runny nose, ear pain, or mucus running down the back of your throat · any rashes, cuts, bites or boils on your head, face or neck?**"
     ],
     [
      "5:10",
-     "Travel · animals/pets · 'a confidential question I ask everyone — sexually active, protection?' · alcohol · medications"
+     "**EXTRAS: have you travelled anywhere recently · any contact with animals, pets, cats, livestock · and a CONFIDENTIAL question I ask everyone — are you sexually active, and do you use protection?** Then **SADMA: smoking, alcohol, MEDICATIONS, past history.**"
     ],
     [
      "5:40",
-     "ICE: 'what were you most worried this might be, and what were you hoping we'd do today?' → cancer; hasn't told her husband"
+     "**ICE in one breath: 'what had you been worried this might be? Was there something in particular you were hoping we'd do today?'** **Hearing her say 'cancer' FIRST makes the next two minutes considerably easier — you are then CONFIRMING A FEAR rather than introducing one.**"
     ],
     [
      "6:00",
-     "★ 'I've been thinking about several different conditions, and I want to be honest about all of them — I can't tell you today which it is.' Cancer first with reasons: lung (cough + 30 years' smoking), mouth (ulcer), food pipe (food sticking) · ★ the bad tooth — a dental infection alone can swell a gland · thyroid; skin/nose/stomach/salivary cancers; throat/sinus/skin infections · plan: examination, bloods, neck ultrasound, urgent specialist referral · 'how long?' → organised today, hear within the week · safety-net: grows quickly, trouble breathing or swallowing → straight back"
+     "**The differential list, delivered as a LIST NOT A VERDICT, each item with its reason in her words — the lung because of the cough and the smoking, the mouth because of the ulcer, the oesophagus because food is sticking, AND THE TOOTH, which genuinely is on the list.** Then **thyroid, the other head and neck primaries, and infection.**"
+    ],
+    [
+     "7:30",
+     "**VERBALISE THE EXAMINATION you cannot do, then the plan: bloods, NECK ULTRASOUND with guided FNA, chest X-ray, and URGENT ENT REFERRAL.** **Safety-net: rapid growth, breathlessness, voice change or trouble swallowing → seen straight away.** Give **a timeframe and an offer to bring someone with her.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Tell me about it in your own words.' / ★ 'I can imagine how stressful this has been — thank you for coming in to get it checked.' / 'I'm going to ask quite a lot of questions, because a lump here can come from several different places.'",
-    "★ 'Can you show me exactly where it is?' / ★ 'When did you first notice it?' / 'Is it hard or soft? Is it tender? Any change in the skin over it? Does it move freely?'",
-    "'Does it move up and down when you swallow — and when you poke your tongue out?' / 'Do you feel the cold or the heat more than other people?' / 'Any night sweats, the kind that soak the sheets?'",
-    "★ 'I'm going to ask about some things that might seem unrelated to your neck — they help me work out where the lump has come from.'",
-    "★ 'Any ulcer or sore in your mouth that hasn't healed?' / ★ 'Does food stick when you swallow? And separately — is swallowing painful?' / 'Have your motions turned black or tarry?'",
-    "'Any cough — dry or productive? Ever coughed up blood? Do you smoke?' — then keep screening: 'any numbness or pins and needles in your hand? drooping eyelid? swelling in your cheek in front of the ear?'",
-    "★ 'Any toothache, or pain when you chew? When did you last see a dentist?'",
-    "★ 'I've been thinking about several different conditions, and I want to be honest with you about all of them.' / ★ 'I can't tell you today which of these it is, and I don't want to guess.'",
-    "'The one I'm most concerned about is the possibility of a cancer, and I'll tell you why rather than leave you guessing: the lump could be a gland reacting to a cancer in the lung — you've had a cough for months and smoked for thirty years; it could relate to a cancer in the mouth, because of that ulcer; or the food pipe, because food is sticking. But you also told me about the bad tooth — a dental infection on its own can cause a swollen gland, so that's genuinely on my list too.'",
-    "'But you can't actually know that, can you?' → 'No — and I won't pretend to. What I can do is examine you properly, take bloods, get an ultrasound of your neck and have a specialist see you quickly. I'll organise it today and you'll hear from me within the week. If it grows quickly or you have trouble breathing or swallowing before then, come straight back.'"
-   ],
    "pefe": [
-    "Role-player: Jane, 47, office at a fruit-packing company near Berri; married, two teenagers; smoker 15/day × 30 y; 2–3 wines/week; no meds/allergies/PMHx; no FHx cancer or thyroid. Lump found two nights ago, right side below the jaw angle, ~2 weeks, rock hard, non-tender, skin normal, stuck, maybe bigger, no movement on swallowing. Four buried positives given ONLY to the specific question — 'any other symptoms?' gets 'not really'. Frightened, slightly tearful, calmer once there's a plan; false reassurance makes her more anxious: 'but you can't actually know that, can you?'. Hasn't told her husband",
-    "Referral thresholds: node persisting >4–6 weeks, >2 cm, hard, fixed or supraclavicular; age >40 with smoking or alcohol · hoarseness or mouth ulcer >3 weeks → urgent ENT · first imaging neck ultrasound · FNA does not diagnose lymphoma — core or excisional biopsy · no open node biopsy before ENT assessment · reactive node must be re-checked and resolved in 2–4 weeks",
-    "Variant 1 — two findings only (smoker with dry cough + toothache): 'two things on my mind — a gland reacting to a lung cancer, or the bad tooth; hard and fixed concerns me, so I investigate properly rather than treat the tooth and wait'",
-    "Variant 2 — midline, years, lifts on swallowing AND tongue protrusion: thyroglossal duct cyst — 'a remnant from the way the thyroid forms before birth; not a cancer'; TFTs, ultrasound, surgical referral (usually removed to prevent infection). Discriminator: thyroid moves on swallowing but NOT on tongue protrusion",
-    "Variant 3 — 34-year-old, tender node, red warm skin, fever, painful back tooth, 3 days: reactive lymphadenitis from a dental source → urgent dental + antibiotics ★ AND book the 2–4 week review — the node must be proven to resolve · Variant 4 — 61M, painless left supraclavicular lump 3 weeks, indigestion, weight loss: Virchow's node (Troisier's sign) → below the diaphragm (stomach, oesophagus, pancreas) or lung; gastroscopy + neck US with guided FNA + CT staging",
-    "SA: ENT/head-and-neck via RAH/FMC; PATS from the Riverland; Cancer Council SA 13 11 20; Quitline 13 7848; TIS 131 450 · MedSTAR 1300 13 12 33 not needed unless airway"
+    "**There is no examination, so SAY WHAT YOU WOULD DO: the lump by LEVEL, size, consistency, tenderness, mobility, overlying skin, PULSATILITY, and movement on swallowing AND tongue protrusion · ALL cervical levels bilaterally PLUS axillae and groins · thyroid from behind with swallowing, tracheal deviation, PEMBERTON'S SIGN · scalp, face, ears and neck skin · FULL ORAL CAVITY, tongue base, tonsils, floor of mouth, teeth · chest, and abdomen for hepatosplenomegaly · cranial nerves, PARTICULARLY THE FACIAL NERVE if the lump is parotid.**",
+    "**Investigations in order: FBE and film, ESR, CRP, LDH · TSH with free T4 · EBV, HIV and syphilis serology, toxoplasma if indicated · NECK ULTRASOUND — first-line for both thyroid and nodal lumps · CHEST X-RAY · ultrasound-guided FNA · NASENDOSCOPY, the definitive search for a head and neck primary · CT neck, chest and abdomen and gastroscopy for staging or a GI primary.**",
+    "**FNA DOES NOT DIAGNOSE LYMPHOMA — that needs CORE OR EXCISIONAL biopsy.**",
+    "**DO NOT perform an OPEN EXCISIONAL BIOPSY of a cervical node BEFORE ENT assessment when a head and neck primary is possible — it disturbs the tissue planes and can compromise a later neck dissection. Ultrasound-guided FNA and nasendoscopy come first.**",
+    "**Do not miss: a SUPRACLAVICULAR node · a non-healing mouth ulcer · hoarseness beyond three weeks · unilateral nasal or ear symptoms · melaena · haemoptysis · B symptoms · A NODE THAT HAS NOT RESOLVED AFTER TREATING AN OBVIOUS INFECTION.**",
+    "**Avoid: closing on the first positive · reassuring her it is 'just a gland' · attributing everything to the toothache · repeated courses of antibiotics for a persistent node · promising it is not cancer.**",
+    "**If an infective source IS found and treated, the node MUST be re-examined in TWO TO FOUR WEEKS and must have RESOLVED. BOOK THAT REVIEW BEFORE SHE LEAVES.**"
    ],
-   "fails": [
-    "The top-down cancer screen never done — or started after 2:40 and never finished ★",
-    "Closing on one finding (smoker + cough = lung cancer) and stopping — missing the ulcer, the dysphagia and the toothache ★",
-    "False reassurance ★",
-    "No differential list delivered to the patient; the fear never acknowledged ★",
-    "Taking 'a lump in the neck' at face value — never establishing midline vs lateral vs supraclavicular",
-    "Asking 'how long has it been there?'; skipping the thyroid box because she pointed to the side; asking dysphagia and odynophagia as one question",
-    "Treating the toothache and sending her away (Variant 3) without booking the resolution review"
-   ],
-   "numbers": [
-    "8 min: 6 history + 2 explanation · top-down cancer block must START by 2:40 · four boxes: thyroid · generalised nodes · localised cancers · lymphadenitis · four lump features: consistency, tenderness, skin, mobility",
-    "This patient: 47, right lateral, 2 weeks, hard, fixed, painless · 15/day × 30 y = 22.5 pack-years",
-    "Refer: >4–6 weeks · >2 cm · hard/fixed/supraclavicular · >40 + smoking/alcohol · hoarseness or ulcer >3 weeks → urgent ENT",
-    "Neck US first · FNA ≠ lymphoma diagnosis (core/excisional) · no open biopsy before ENT · reactive node re-check 2–4 weeks",
-    "Cancer Council 13 11 20 · Quitline 13 7848 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Metastatic node from a LUNG primary**",
+     "**Chronic cough, SMOKING, haemoptysis**; hard fixed painless node",
+     "Cough character, haemoptysis, pack-years; **hand paraesthesia and ptosis for Pancoast**",
+     "**CXR then CT chest; urgent respiratory referral** — urgent"
+    ],
+    [
+     "**Oral squamous cell carcinoma**",
+     "**NON-HEALING MOUTH ULCER**, white or red patches, loose teeth, smoking and alcohol",
+     "Duration of the ulcer, tobacco, alcohol",
+     "**Urgent ENT referral for nasendoscopy**; examine the full oral cavity — urgent"
+    ],
+    [
+     "**Oesophageal or gastric carcinoma**",
+     "**DYSPHAGIA, odynophagia, abdominal pain, MELAENA**, weight loss; **LEFT SUPRACLAVICULAR node**",
+     "Food sticking AND painful swallowing as separate questions; black stools",
+     "**Gastroscopy; FBE and iron studies; CT staging** — urgent"
+    ],
+    [
+     "**Reactive lymphadenitis — dental, ENT or skin**",
+     "**TENDER node, RED WARM overlying skin, fever, TOOTHACHE, sore throat, boil**",
+     "Toothache, chewing pain, dental hygiene; coryza, ear pain, post-nasal drip; skin breaks",
+     "**Treat the source — then RE-CHECK THE NODE AT 2–4 WEEKS. It MUST resolve**"
+    ],
+    [
+     "**Lymphoma**",
+     "**RUBBERY MOBILE nodes, MULTIPLE sites, B SYMPTOMS, ITCH, ALCOHOL-INDUCED NODAL PAIN**",
+     "Weight, sweats, fever, nodes elsewhere, itch without rash",
+     "**FBE and film, LDH, ESR, CXR; CORE OR EXCISIONAL BIOPSY — FNA IS NOT ADEQUATE** — urgent"
+    ],
+    [
+     "Thyroid nodule, cyst, goitre or carcinoma",
+     "**Midline or paratracheal, MOVES ON SWALLOWING**; hoarseness and rapid growth raise carcinoma",
+     "Swallowing and tongue protrusion, weather preference, bowels, weight, voice, family history",
+     "**TSH, then NECK ULTRASOUND; FNA if suspicious.** Urgent endocrine surgery referral if hard and fixed"
+    ],
+    [
+     "**Nasopharyngeal carcinoma · skin primary · salivary tumour**",
+     "**Recurrent epistaxis, UNILATERAL nasal blockage, UNILATERAL blocked ear**; a CHANGING MOLE on scalp, face or neck; **cheek swelling with FACIAL WEAKNESS**",
+     "Nose and ear symptoms; ABCDE of melanoma and sun exposure; swelling that worsens on eating",
+     "**Urgent ENT nasendoscopy**; skin examination; ultrasound and FNA. **Facial nerve palsy with a parotid lump suggests malignancy** — urgent"
+    ],
+    [
+     "Generalised infection — EBV, HIV, syphilis, toxoplasmosis, CMV",
+     "Fever, fatigue, sore throat, rash, **sexual risk, ANIMAL CONTACT**",
+     "Travel, pets, sexual history asked with permission",
+     "Monospot and EBV serology, HIV, syphilis and toxoplasma serology"
+    ],
+    [
+     "**Tuberculous lymphadenitis (scrofula)**",
+     "**Endemic origin or contact, MATTED PAINLESS nodes, night sweats, weight loss — often WITHOUT cough or fever**",
+     "Country of birth, travel, TB contacts",
+     "**CXR, interferon-gamma release assay, node aspirate for culture. NOTIFIABLE**"
+    ],
+    [
+     "**Drug-induced lymphadenopathy** · benign structural",
+     "**PHENYTOIN, CARBAMAZEPINE, ALLOPURINOL with rash and eosinophilia**; or soft, slow, painless — lipoma, sebaceous cyst, **branchial cyst**, carotid body tumour",
+     "**A medication list takes ten seconds**; pulsatile and mobile side-to-side only",
+     "Withdraw the drug and reassess; ultrasound. **DO NOT BIOPSY A PULSATILE NECK MASS**"
+    ]
    ]
   },
   "source": "Neck_Lump_Six_Minute_History_2_Case_Tasks_Script_Notability.pdf (Jane Halloran, 47 — a lump, a cough, an ulcer and a toothache)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Neck_Lump_Six_Minute_History_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never establishing where — 'can you show me exactly where it is?' is the highest-yield question in the station and the only substitute for an examination: midline, lateral or supraclavicular reorders the whole differential; then the four features by asking — hard or soft, tender, skin change, mobile or stuck; 'when did you first notice it?' never 'how long has it been there?'",
-   "FAIL — Closing on 'smoker with a chronic cough' and stopping — the case is built with four buried positives so that only a systematic candidate finds them: the mouth ulcer that won't heal, food sticking (dysphagia and odynophagia asked separately), the cough and smoking, and the bad back tooth; every positive is a reason to keep going (★)",
-   "FAIL — Never running the top-down cancer screen — scalp and moles, nosebleeds and one blocked nostril or ear, mouth ulcer, hoarseness, dysphagia, abdominal pain and melaena, cough and haemoptysis, hand paraesthesia and ptosis, parotid swelling — signposted, and started by 2:40 or you will not finish it (★)",
-   "FAIL — False reassurance, or never acknowledging the fear — 'it's cancer, isn't it?' in the first ten seconds gets 'I can imagine how frightening that's been, and I'm not going to guess'; false reassurance makes her more anxious: 'but you can't actually know that, can you?' (★)",
-   "FAIL — No differential list delivered to the patient, each with its reason — 'several conditions, not one': lung (cough, smoking), mouth (the ulcer), oesophagus (food sticking), and the dental infection as a genuine benign option; then examination, bloods, neck ultrasound, urgent referral, timeframe and safety-net (★)",
-   "DO — Run the thyroid box despite the lateral site (swallowing and tongue protrusion — it catches the midline variant), the B-symptom box, travel, animals, sexual health with permission; the negatives are your relevant negatives and are worth marks; in the tender-node variant, treating the tooth without booking the 2–4 week review is the fail"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-77",
