@@ -14399,8 +14399,8 @@
  {
   "id": "MED-46",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "You are a general practitioner. Your next patient is Jenny, a 57-year-old woman, who has booked an urgent consultation after she coughed up blood. It happened while she was eating dinner.",
    "Observations from the examiner on request."
@@ -14410,120 +14410,194 @@
    "Ask the examiner for the physical examination findings",
    "Explain your diagnosis and your differentials to the patient"
   ],
-  "time": "8 minutes. 45 s opening · ten history boxes · examination with ENT added · diagnosis with four reasons, then differentials.",
+  "findings": [
+   [
+    "Vital signs, requested first",
+    "RR 16 · SpO2 97% ON ROOM AIR · BP 128/78 · PULSE 84 · T 37.1. Ask for RESPIRATORY RATE AND SATURATION FIRST, then BP, pulse and temperature — 'because she is bleeding and infection is on my list'"
+   ],
+   [
+    "General appearance",
+    "Comfortable, NOT DISTRESSED, NOT PALE. NO CLUBBING. NO CERVICAL OR SUPRACLAVICULAR LYMPHADENOPATHY. No cachexia"
+   ],
+   [
+    "ENT — the system you ADD in this case",
+    "NOSE on speculum examination: NO SOURCE OF BLEEDING. THROAT: no source of bleeding, no visible posterior bleed. NO SINUS TENDERNESS. Say you are adding ENT and say WHY — a posterior nosebleed or a bleeding throat lesion presents exactly like this. Omitting it is a named, scored miss"
+   ],
+   [
+    "Respiratory",
+    "Chest movements SYMMETRICAL, trachea CENTRAL, percussion RESONANT, breath sounds NORMAL with NO added sounds, vocal resonance NORMAL"
+   ],
+   [
+    "Cardiovascular and abdomen",
+    "JVP NOT raised, apex UNDISPLACED, heart sounds dual, NO murmur. Abdomen soft, NO HEPATOMEGALY"
+   ],
+   [
+    "Lower limbs and bedside tests",
+    "CALVES EQUAL, no oedema. ECG SINUS RHYTHM. Spirometry UNAVAILABLE"
+   ],
+   [
+    "THE EXAMINATION IS DESIGNED TO BE NORMAL",
+    "Say it out loud BEFORE you interpret: 'A COMPLETELY NORMAL EXAMINATION DOESN'T REASSURE ME HERE — EARLY TUBERCULOSIS AND A CENTRAL LUNG CANCER CAN BOTH EXAMINE NORMALLY. My diagnosis rests on the history and on imaging.' A NORMAL CHEST X-RAY DOES NOT EXCLUDE LUNG CANCER EITHER"
+   ],
+   [
+    "What she gives only if you ask the right way",
+    "'How much blood?' → 'I don't know, some.' GIVE HER THE ANCHOR — 'a few drops, or a large amount?' → 'ABOUT TWO TEASPOONS.' 'Lost weight?' → 'about five kilos' → ASK OVER WHAT PERIOD → 'THE LAST MONTH OR TWO.' 'Any travel?' → 'MISSIONARY WORK IN CAMBODIA' AND SHE STOPS THERE"
+   ],
+   [
+    "The follow-up that wins the station",
+    "'CAN I ASK WHAT THAT WORK INVOLVED?' → 'I WAS THERE TO HELP SICK PEOPLE.' She will NEVER say she nursed people with tuberculosis. You have to do the joining up yourself"
+   ],
+   [
+    "Her hidden agenda",
+    "HER LATE HUSBAND DIED OF LUNG CANCER and she is convinced this is the same thing. Given only at the end, and only if you ask whether she has any worries or questions"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — a normal examination, and what it does not exclude",
+  "must": [
+   "FAIL — Never excluding lung cancer. It must be named aloud whatever else you conclude.",
+   "FAIL — Never asking travel and sick contacts, then what the work actually involved.",
+   "FAIL — 'I'm sure it's nothing serious.' Reassure about your care, never about the diagnosis.",
+   "FAIL — Continuing a history through a massive bleed, or a plan with no chest X-ray.",
+   "ASK — Did you cough it up, or did you vomit it? And was there any choking beforehand?",
+   "ASK — How much weight, and over what period? Never accept a number without a denominator."
+  ],
   "back": {
-   "dx": "Pulmonary tuberculosis — two teaspoons (~10 mL) of bright red blood with a little phlegm, coughed not vomited, streaks once or twice before; 5 kg over one to two months, appetite down, tired, drenching night sweats, slight cough; missionary work in Cambodia 'to help sick people' (she will never say TB — ask what the work involved); never smoked, no asbestos, one pillow, no clots/thinners/rashes. Examination completely normal (vitals normal, no clubbing/nodes, ENT clear, chest clear) — 'a normal examination doesn't reassure me: early TB and a central lung cancer both examine normally'. Lung cancer must be named aloud (weight loss). Hidden agenda: her late husband died of lung cancer. Three lines that must be said: 'did you cough it up, or vomit it?' · 'any recent travel, contact with people who've been unwell — what did that work involve?' · 'I'm also concerned about the possibility of lung cancer'.",
+   "dx": [
+    "**Pulmonary tuberculosis** — and **lung cancer named aloud beside it.** **Two diagnoses have to leave your mouth in this station.**",
+    "**The four reasons, said as four: she has been in DIRECT CONTACT WITH SICK PEOPLE IN A HIGH-PREVALENCE COUNTRY · she has LOST 5 KG · she has NIGHT SWEATS · she has COUGHED UP BLOOD.**",
+    "**Haemoptysis is the coughing up of blood or blood-stained sputum arising from BELOW THE LARYNX. It is always abnormal and always requires an explanation.**",
+    "**Settle the source BEFORE building a differential list. HAEMOPTYSIS: coughed not vomited, bright red, often frothy, mixed with sputum, alkaline, preceded by a tickle. HAEMATEMESIS: vomited, dark or coffee-ground, mixed with FOOD, acidic, may be followed by melaena, with retching and epigastric pain. NASOPHARYNGEAL: spat or trickled, blood-streaked only, worse on waking, nosebleeds and sinusitis.**",
+    "**'It happened while she was eating dinner' is NOT decoration** — it is there to make you ask whether she vomited it rather than coughed it, and whether she choked.",
+    "**A 57-year-old with haemoptysis and 5 kg of unintentional weight loss has a cancer question attached to her until imaging says otherwise.** **Never-smokers get lung cancer — smoking changes the probability, not the differential.** **Weight-loss red flag: more than 5% of body weight in 6–12 months.**",
+    "**CORRECTION — Horner's syndrome is PTOSIS, MIOSIS and ANHIDROSIS, not facial droop.** Facial droop is a facial nerve palsy and points somewhere else entirely. **Pancoast invades the lower trunk of the brachial plexus at C8 and T1 and the sympathetic chain.**",
+    "**TB workup: CHEST X-RAY in every case · SPUTUM x3 for AFB smear, mycobacterial culture and NUCLEIC ACID AMPLIFICATION (Xpert MTB/RIF also reports rifampicin resistance) · AIRBORNE ISOLATION, negative-pressure room where available, N95 for staff · HIV serology with consent · NOTIFIABLE.** **IGRA and Mantoux support exposure only — they neither diagnose nor exclude active disease.**",
+    "**TB treatment: SIX MONTHS — two months of RIFAMPICIN, ISONIAZID, PYRAZINAMIDE and ETHAMBUTOL, then four months of RIFAMPICIN and ISONIAZID, plus PYRIDOXINE to prevent isoniazid neuropathy.** Counsel: **curable if taken in full · non-infectious within weeks of effective treatment · never stop early, that is how resistance develops · rifampicin turns urine, tears and sweat ORANGE and interacts with the pill · ethambutol can affect vision and colour vision · report jaundice, nausea or dark urine · contacts will be screened.** **In SA, TB treatment is FREE, including for people without Medicare — say so, it is often her first fear.**",
+    "**Massive haemoptysis: more than about 100 mL/hour or 200–600 mL in 24 hours — or ANY volume causing respiratory or haemodynamic compromise.** **ABC, high-flow oxygen, two large-bore cannulae, cross-match, reverse anticoagulation, LIE THE PATIENT WITH THE BLEEDING SIDE DOWN to protect the good lung, urgent bronchoscopy or bronchial artery embolisation.** **MedSTAR 1300 13 12 33 · Cancer Council SA 13 11 20 · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals — RR and SpO2 first, then BP, pulse, temp; open question; the concern statement (safe hands, NOT 'I'm sure it's nothing'); 'please tell me it's not something awful' → 'I can't answer that yet, but I promise I'll tell you exactly what I think before you leave'"
+     "**To the examiner: 'before I start, could I have her vital signs — RESPIRATORY RATE AND OXYGEN SATURATION FIRST, and also blood pressure, pulse and temperature, because she is bleeding and infection is on my list.'** Then **open question.**"
+    ],
+    [
+     "0:20",
+     "**The concern statement, and use all of it: 'I can see how stressful and frightening this must be. I'm going to ask you a few questions and examine you, and I'd like to reassure you that YOU ARE IN SAFE HANDS — we will work out what is causing this.'** To 'please tell me it's not something awful': **'I can't answer that until I've asked you some questions and examined you — but I promise I'll tell you exactly what I think before you leave.'**"
     ],
     [
      "0:45",
-     "The bleed: when, first time, colour, ★ volume with anchors (a few drops or a large amount?), mixed with phlegm; the event: doing what, ★ choking, nosebleed, ★ coughed or vomited"
+     "**Explore the bleed: when exactly · is this the FIRST time · what colour, bright red or darker · HOW MUCH — A FEW DROPS, OR A LARGE AMOUNT · was it mixed with phlegm · how many times, and is it getting worse?**"
     ],
     [
      "1:45",
-     "Cancer block: weight → ★ over what period; appetite, lumps, tired, occupation now AND before, asbestos, cough/SOB/noisy breathing, previous cancer, Pancoast pair (hand numbness/weakness, drooping eyelid/pupil)"
+     "**Explore the EVENT, and the four questions that eliminate the mimics in twenty seconds: WHAT WERE YOU DOING EXACTLY WHEN IT HAPPENED · WAS THERE ANY CHOKING BEFOREHAND · DID YOU NOTICE ANY BLEEDING FROM YOUR NOSE · DID YOU VOMIT ANY BLOOD, OR WAS IT DEFINITELY COUGHED UP?**"
     ],
     [
-     "2:45",
-     "Infection block: fever/chills, ★ night sweats, sore throat/runny nose/facial pain/PND, ★ travel, sick contacts, animals → ★ 'what did that work involved?' → join it up aloud: sick people in a TB-endemic country + 5 kg + sweats + haemoptysis"
+     "2:15",
+     "**The lung cancer block, which must not be skipped: have you lost any weight — HOW MUCH, AND OVER WHAT PERIOD · appetite · lumps or bumps · unusually tired · WHAT IS YOUR OCCUPATION NOW, AND WHAT DID YOU DO BEFORE · ever exposed to ASBESTOS · cough, breathlessness, noisy breathing · ever had cancer anywhere · AND TWO UNUSUAL ONES — any numbness or weakness in your hands, and have you noticed a DROOPING EYELID or a difference in pupil size?**"
     ],
     [
-     "3:45",
-     "Rapid pairs: smoking now/ever; childhood infections/daily phlegm (bronchiectasis); clot (legs, travel, FHx); heart failure (chest pain, exertion, pillows, ankles); blood thinners, bleeding tendency; rashes/joints/haematuria (vasculitis); chest injury; PMHx/meds/allergies/FHx"
+     "3:15",
+     "**The infection block, where the diagnosis lives: any fever or chills · ANY NIGHT SWEATS, waking up drenched · sore throat or runny nose · facial pain or secretions down the back of the throat · HAVE YOU TRAVELLED ANYWHERE RECENTLY · AND HAVE YOU HAD ANY CONTACT WITH PEOPLE WHO HAVE BEEN UNWELL, OR WITH ANIMALS?**"
+    ],
+    [
+     "3:40",
+     "**The follow-up that is worth more than any other sentence in the station: 'CAN I ASK WHAT THAT WORK INVOLVED?'** Then **join it up OUT LOUD: 'so you've been directly caring for unwell people in a country where tuberculosis is common, you've lost five kilograms, you're having night sweats, and now you've coughed up blood.'**"
+    ],
+    [
+     "4:00",
+     "**The remaining systems, fast, as rapid pairs — 'a few quick ones to make sure I'm not missing anything': ever smoked, now or before · repeated chest infections as a child, and daily phlegm volume · leg swelling or pain, long travel, family clots, pleuritic chest pain · chest pain, exertional breathlessness, breathless lying flat, HOW MANY PILLOWS, ankle swelling · blood thinners, family bleeding disorders, easy bruising, frequent nosebleeds · rashes, joint pains, BLOOD IN YOUR URINE · any injury to your chest.** Then **SADMA gaps only.**"
     ],
     [
      "5:00",
-     "Examination request incl. ★ ENT (nasal speculum, throat, posterior bleed, sinus tenderness), clubbing, cachexia, cervical/supraclavicular nodes, respiratory with VR, CVS, hepatomegaly, calves, ECG/spirometry → 'a normal examination doesn't reassure me'"
+     "**Request the examination in the standard sequence WITH ENT ADDED, and say why you are adding it:** general appearance including **pallor, clubbing, cachexia and cervical or supraclavicular nodes** · **ENT — nose on speculum, throat, sinus tenderness** · respiratory in full · cardiovascular aimed at heart failure · abdomen for **hepatomegaly** · lower limbs for calf asymmetry · **ECG and spirometry if available.**"
     ],
     [
-     "6:00",
-     "Diagnosis: TB with four reasons → ★ lung cancer named → differentials one line each with the reason against → answers (curable; airborne — mask today, public health contact tracing; cancer will be checked) → CXR, bloods, sputum ×3, CT → safety-net → 'any worries or questions?' → husband → summary"
+     "6:10",
+     "**Say the normal-examination sentence BEFORE you interpret**, then **the diagnosis with the four reasons**, then **'I'm also concerned about the possibility of lung cancer, mainly because of the weight loss, so I'll check for that too — less likely than the infection, but I'm not going to leave it unchecked.'**"
+    ],
+    [
+     "6:50",
+     "**The differentials, each with a one-line lay explanation AND the reason it is less likely**: bronchiectasis — no childhood infections · COPD — never smoked · heart failure — no orthopnoea, no ankle swelling · clot in the lung — no leg swelling or recent travel · bleeding from nose or throat — nothing found · lupus and the vasculitides — no rashes or joint pains."
+    ],
+    [
+     "7:20",
+     "**The plan and the infection-control sentence nobody says: chest X-ray, bloods, THREE SPUTUM SAMPLES, and a CT chest.** **'Because tuberculosis can spread through the air, I'm going to ask you to wear a mask while you're here, and if it is confirmed the public health team will contact the people close to you and offer them testing — that's routine, and it's for their protection, not because you've done anything wrong.'** Then **safety-net for a large bleed or breathlessness, and ASK WHETHER SHE HAS ANY WORRIES OR QUESTIONS.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Before I start, could I have her vital signs — respiratory rate and oxygen saturation first, and also blood pressure, pulse and temperature, since she is bleeding and infection is on my list.' → 'I can see how stressful and scary this must be. I'm going to ask you a few questions and examine you, and I'd like to reassure you that you are in safe hands — we'll work out what's causing this together.'",
-    "When exactly? First time? Bright red or darker? ★ How much — a small amount like a few drops, or a large amount? Mixed with phlegm? What were you doing exactly? ★ Any choking beforehand? Any bleeding from your nose? ★ Did you vomit any blood, or was it definitely coughed up?",
-    "★ Have you lost any weight lately? → 'How much, and over what period of time?' Appetite? Lumps or bumps? Unusually tired? What's your occupation now — and what did you do before that? Asbestos? Cough, breathlessness, noisy breathing? Ever had cancer? And two unusual ones — numbness or weakness in your hands, and a drooping eyelid or a difference in your pupils?",
-    "Fever or chills? ★ Night sweats — waking up drenched? Sore throat, runny nose, facial pain, secretions down the back of the throat? ★ Have you travelled anywhere recently? Contact with people who've been unwell, or with animals? → ★ 'Can I ask what that work involved?' → 'So you've been directly caring for unwell people in a country where tuberculosis is common, you've lost five kilos, you're getting night sweats, and now you've coughed up blood. Those four things together are important, and I'll come back to them.'",
-    "A few quick ones: ever smoked, now or in the past? Repeated chest infections as a child, phlegm most days? Leg swelling or pain, recent long travel, family clots? Chest pain, breathless on exertion or lying flat — how many pillows? Ankle swelling? Blood thinners? Bleeding disorders, bruising, nosebleeds? Rashes or joint pains? Blood in your urine? Chest injury? Other conditions, medicines, allergies, family?",
-    "★ Examiner: 'General appearance — distress, cyanosis, drowsiness, pallor; clubbing, cachexia, cervical or supraclavicular lymphadenopathy. Because bleeding from the nose or throat is on my list I'd like to add an ENT examination: on speculum examination of the nose, any source of bleeding; on examining the throat, any source of bleeding or visible posterior bleed; any sinus tenderness. Respiratory — symmetrical movements, tracheal position, percussion, breath sounds, added sounds, vocal resonance. Cardiovascular — JVP, apex, S1 S2, murmurs, gallop. Abdomen — swelling, tenderness, hepatomegaly. Lower limbs — calf size difference. ECG, and spirometry if available.' → ★ 'A completely normal examination doesn't reassure me here — early tuberculosis and a central lung cancer can both examine normally, so my diagnosis rests on the history and on imaging.'",
-    "★ 'Jenny, the most likely diagnosis is tuberculosis — a type of lung infection. Four reasons: contact with sick people in a country where TB is common; five kilos lost; night sweats; and coughing up blood. I also want to be honest that I'm concerned about the possibility of lung cancer, mainly because of the weight loss, so I'll check for that too — less likely than the infection, but I won't leave it unchecked.'",
-    "'Isn't TB a Victorian disease?' → still common in many parts of the world, we see it here, and it is curable. 'Will I give it to my grandchildren?' → spreads through the air — mask here today; if confirmed, the public health team will offer testing to people close to you; routine, to protect them. 'Is it cancer?' → 'one of the things I have to rule out, and I will — I'm not going to pretend it isn't on my list. But the picture fits an infection best.'"
-   ],
    "pefe": [
-    "Findings: comfortable, not pale, no clubbing, no nodes · ENT no source of bleeding, no sinus tenderness · chest symmetrical, trachea central, resonant, normal breath sounds, no added sounds, VR normal · JVP not raised, apex undisplaced, dual heart sounds · abdomen soft, no hepatomegaly · calves equal · ECG sinus · spirometry unavailable · vitals RR 16, SpO2 97%, BP 128/78, P 84, T 37.1",
-    "Differentials to the patient with the reason against: bronchiectasis (no childhood infections) · COPD (never smoked) · heart failure (one pillow, no ankle swelling) · PE (no leg swelling, no recent travel) · nose/throat bleed (nothing found) · vasculitis/lupus (no rashes, joints, haematuria) · lung cancer stays ON the list",
-    "Plan today: CXR, FBE/UEC/LFT/CRP/coags, sputum ×3 for AFB smear, culture and NAAT, HIV test with consent, CT chest; mask/airborne precautions today; notifiable if confirmed — SA Health TB Services do contact tracing; safety-net — large volume or breathless → back immediately / 000; review as soon as results are back; Cancer Council SA 13 11 20 if the cancer path opens",
-    "Variant 1 — cancer switch (20/day since 17, hoarse six weeks, never left the country, clubbing + hard fixed left supraclavicular node): warning shot → 'the combination … makes me worried about a growth in the lung — a lung cancer. I don't know that yet' → CXR today, urgent CT, specialist referral, bring someone → questions; Cancer Council SA + lung cancer nurse consultant",
-    "Variant 2 — it was haematemesis (vomited, coffee-grounds with food, epigastric burning, daily ibuprofen, black stools): 'that changes the whole picture — bleeding in the stomach or upper bowel, most likely a peptic ulcer' → observations for shock, FBE/UEC/LFT/coags/group & hold, stop ibuprofen, PPI, urgent gastroscopy VERIFY",
-    "Variant 3 — massive haemoptysis (large volume into a bowl, RR 32, SpO2 88%, BP 92/58, P 124): STOP the history — call for help + ambulance, protect the airway, high-flow O2, two large-bore cannulae, bloods + cross-match, fluid/blood, bleeding side DOWN, reverse anticoagulation, urgent transfer for bronchoscopy or bronchial artery embolisation; rural → MedSTAR 1300 13 12 33 immediately VERIFY · Variant 4 — Pancoast (ulnar-side numbness and hand weakness, ptosis, months of shoulder ache): apex tumour invading lower brachial plexus (C8/T1) and sympathetic chain → Horner's (ptosis, miosis, anhidrosis — NOT 'facial asymmetry'); add Horner's check and C8/T1 upper-limb neuro; urgent CT and referral"
+    "**Run the same sequence every time and ADD the relevant extra system.** The three you add only when relevant are **neurological, thyroid and ENT** — and **haemoptysis is the case where ENT earns its place.**",
+    "**Do now: full observations · MASK HER AND MOVE HER OUT OF THE SHARED WAITING ROOM if TB is on your list, before anything else · CHEST X-RAY, mandatory in every case of haemoptysis · FBE, CRP, U&E, LFT, coagulation profile and INR, group and hold if bleeding is significant · URINALYSIS, which is cheap and screens the pulmonary–renal syndromes.**",
+    "**For TB: sputum x3 for AFB smear, culture and nucleic acid amplification · airborne isolation and N95 · IGRA or Mantoux support exposure only · HIV serology with consent · NOTIFY — the Communicable Disease Control Branch coordinates contact tracing.**",
+    "**For lung cancer: CT CHEST WITH CONTRAST REGARDLESS — do not be reassured by a normal chest X-ray, a meaningful minority are missed on plain film.** Then **bronchoscopy or biopsy, and the lung cancer MDT.**",
+    "**For the rest: CTPA if embolism is suspected · echocardiogram for heart failure · high-resolution CT for bronchiectasis · ANCA, ANA and anti-GBM if vasculitis is on the list.**",
+    "**If Pancoast is suspected, add: Horner's syndrome — ptosis, miosis, anhidrosis — and an upper limb neurological examination testing the C8 and T1 dermatomes and the small muscles of the hand.**",
+    "**She is NOT a candidate for the National Lung Cancer Screening Program — not because of her age, but BECAUSE SHE IS SYMPTOMATIC. Symptomatic patients are investigated, not screened.** (NLCSP: 50–70, 30 or more pack-years, quit within 10 years, asymptomatic.) VERIFY."
    ],
-   "fails": [
-    "'I'm sure it's nothing serious' — false reassurance in a 57-year-old with haemoptysis ★",
-    "Never asking coughed vs vomited, or never asking what the Cambodia work involved ★",
-    "Never naming lung cancer aloud ★",
-    "Weight loss not given a time period; volume without the drops-or-large anchor; choking and nosebleed omitted",
-    "No ENT examination request; dropping cancer/clot/heart questions once TB is suspected",
-    "Naming TB and stopping — no reasons, no differentials with reasons against; no sputum ×3, mask, safety-net; never asking her worries (husband)"
-   ],
-   "numbers": [
-    "2 teaspoons ≈ 10 mL · 5 kg over 1–2 months · weight-loss red flag >5% body weight in 6–12 months · massive haemoptysis >100 mL/h or 200–600 mL/24 h, or any volume with compromise → bleeding side DOWN VERIFY",
-    "TB work-up: sputum ×3 AFB smear, culture, NAAT · CXR ± CT · HIV · N95/airborne isolation · notifiable · treatment 6 months: 2 months RHZE then 4 months RH + pyridoxine VERIFY",
-    "Haemoptysis differentials: TB · lung cancer · bronchiectasis · COPD/bronchitis · pneumonia/abscess · PE · heart failure/mitral stenosis · anticoagulation/bleeding disorder · vasculitis (GPA, Goodpasture) · ENT source · trauma",
-    "Pancoast: C8/T1 (ulnar hand) + Horner's = ptosis, miosis, anhidrosis · hoarseness = recurrent laryngeal nerve",
-    "NLCSP: 50–70, ≥30 pack-years, current or quit within 10 years, asymptomatic only — not for a symptomatic patient VERIFY",
-    "Cancer Council SA 13 11 20 · MedSTAR 1300 13 12 33 · SA Health TB Services · TIS 131 450"
+   "ddx": [
+    [
+     "**Pulmonary tuberculosis** — the answer",
+     "**High-prevalence country, direct care of unwell people, weight loss, night sweats, haemoptysis**",
+     "Fever, drenching night sweats, prolonged cough; **examination may be entirely normal**",
+     "**CXR (upper-lobe change, cavitation) + sputum x3 AFB, culture and NAAT. Airborne isolation, N95. NOTIFIABLE** — urgent"
+    ],
+    [
+     "**Lung cancer**",
+     "Age over 40, smoking, asbestos, weight loss, appetite loss, hoarseness, clubbing — **and it occurs in NEVER-SMOKERS**",
+     "Weight and appetite, lumps, **occupation now AND before**, hoarseness, **Pancoast features**",
+     "**CXR then CT CHEST WITH CONTRAST REGARDLESS. Bronchoscopy or biopsy; MDT** — urgent"
+    ],
+    [
+     "Pneumonia or lung abscess",
+     "Acute fever, pleuritic pain, purulent sputum, focal consolidation",
+     "Fever, chills, rigors, sputum colour, sick or animal contacts",
+     "CXR, FBE, CRP, sputum and blood cultures — urgent"
+    ],
+    [
+     "COPD and chronic bronchitis · bronchiectasis",
+     "Smoking with chronic productive cough; or **recurrent childhood infections with daily large-volume purulent sputum and clubbing**",
+     "Pack-years; childhood pneumonias and **daily sputum volume**",
+     "Spirometry and CXR; HRCT and sputum culture. **NEVER attribute haemoptysis to COPD until cancer is excluded**"
+    ],
+    [
+     "Inhaled foreign body",
+     "**Choking episode**, sudden onset, localised or monophonic wheeze",
+     "**'Any choking before it happened?'**",
+     "CXR; bronchoscopy — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Pleuritic pain, breathlessness, tachycardia, calf swelling, immobility or long travel",
+     "Leg symptoms, travel, previous clots, family history",
+     "**Wells score, then D-dimer or straight to CTPA** — immediate"
+    ],
+    [
+     "Heart failure · mitral stenosis",
+     "**PINK FROTHY sputum**, orthopnoea, PND, ankle oedema, raised JVP, displaced apex",
+     "**Pillows at night**, exertional dyspnoea, murmur",
+     "CXR, ECG, BNP, echocardiogram — urgent"
+    ],
+    [
+     "Anticoagulants · bleeding disorder",
+     "Warfarin, apixaban, rivaroxaban, dabigatran; easy bruising, frequent epistaxis, thrombocytopenia",
+     "Which agent, adherence, recent dose change; bruising, gum bleeding, heavy periods",
+     "INR and coagulation profile, FBE with platelets; consider reversal — urgent"
+    ],
+    [
+     "**Vasculitis and connective tissue disease**",
+     "**Rash, joint pain, sinus symptoms, HAEMATURIA** — granulomatosis with polyangiitis, lupus, Goodpasture",
+     "Rashes, arthralgia, nasal crusting, **blood in the urine**",
+     "**Urinalysis, U&E, ANA, ANCA, anti-GBM; urgent renal and immunology** — urgent"
+    ],
+    [
+     "**Mimics — haematemesis and nasopharyngeal bleeding**",
+     "**Vomited, dark or coffee-ground, food particles, epigastric pain, melaena, NSAIDs**; or nosebleeds, sinusitis, blood-streaking only, worse on waking",
+     "**'Did you vomit it, or cough it up?'** and **'any bleeding from your nose?'** plus the ENT examination",
+     "Gastroscopy pathway, not a respiratory one; ENT examination and nasendoscopy. **STILL order the chest X-ray**"
+    ]
    ]
   },
   "source": "Haemoptysis_2_Case_Tasks_Script_Notability.pdf (Jenny Marsden — TB after missionary work; four variants on the back)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › Haemoptysis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Comfortable, not pale, no clubbing, no nodes"
-   ],
-   [
-    "Observations",
-    "RR 16 · SpO2 97% · BP 128/78 · P 84 · T 37.1"
-   ],
-   [
-    "ENT",
-    "No source of bleeding, no sinus tenderness"
-   ],
-   [
-    "Chest",
-    "Symmetrical, trachea central, resonant, normal breath sounds, NO added sounds, vocal resonance normal"
-   ],
-   [
-    "Cardiovascular",
-    "JVP not raised, apex undisplaced, dual heart sounds"
-   ],
-   [
-    "Abdomen",
-    "Soft, no hepatomegaly"
-   ],
-   [
-    "Legs",
-    "Calves equal"
-   ],
-   [
-    "Bedside tests",
-    "ECG sinus · spirometry unavailable"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Turning 'you're in safe hands' into 'I'm sure it's nothing serious' — the first is empathy, the second is an automatic fail in a 57-year-old with haemoptysis; 'I can't answer that yet, but I promise I'll tell you exactly what I think before you leave'",
-   "FAIL — 'How much blood?' without the anchors — 'a few drops, or a large amount?' gets 'two teaspoons'; then 'did you cough it up, or vomit it?', choking, nosebleed",
-   "FAIL — Accepting 'about five kilos' without 'over what period?' — five kilos in two years is nothing; five in two months is a red flag, and the follow-up question is the mark",
-   "FAIL — Hearing 'missionary work in Cambodia' and moving on — 'can I ask what that work involved?' wins the station; she will never say tuberculosis, and then join the four findings up out loud",
-   "FAIL — Leaving out the ENT examination — nasal speculum, throat, posterior bleed, sinus tenderness — the named addition this case is built around; and say 'a normal examination doesn't reassure me: early TB and a central lung cancer both examine normally'",
-   "FAIL — Naming tuberculosis and never saying 'I'm also concerned about the possibility of lung cancer' — four reasons for TB, cancer named aloud, the rest in plain English; then CXR, sputum ×3, CT, a mask today, and the massive-bleed safety-net"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Respi other › Haemoptysis_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-47",
