@@ -15200,8 +15200,8 @@
  {
   "id": "MED-53",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "Rural South Australian general practice.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Your next patient is Sarah Whitlock, 50, complaining of tiredness.",
    "Practice nurse observations: T 36.6 °C · pulse 88 · BP 118/74 · RR 14 · SpO2 99% · BMI 24."
@@ -15211,86 +15211,200 @@
    "Tell the patient your most likely diagnosis with your reasons, and give your differential diagnoses (2 minutes)",
    "Investigations and management are not your task"
   ],
-  "time": "8 minutes. 0:35 open + concern · 1:45 four questions on the complaint · 5:30 HEMI-AD-COP in one burst, 1–2 questions per letter · 5:50 closure (expendable) · 6:00 hard stop → answer.",
+  "findings": [
+   [
+    "Practice nurse observations",
+    "T 36.6 · PULSE 88 · BP 118/74 · RR 14 · SpO2 99% · BMI 24. All unremarkable — the case is in the history, not the numbers"
+   ],
+   [
+    "Examination",
+    "NOT A TASK in this version. Six minutes of history, then two minutes of diagnosis and differentials. INVESTIGATIONS AND MANAGEMENT ARE NOT YOUR TASK — answering them costs you the differential marks"
+   ],
+   [
+    "The three positives that are the whole case",
+    "HEAVY IRREGULAR PERIODS for the last year — flooding, clots bigger than a fifty-cent piece, six or seven pads on the worst day · EXERTIONAL PALPITATIONS AND BREATHLESSNESS on the stairs · HOT FLUSHES DAY AND NIGHT at 50. NONE is volunteered"
+   ],
+   [
+    "What she gives only on probing",
+    "Pads per day, clot size, flooding onto clothes, never been told she was anaemic, eats red meat two or three times a week. NO bleeding between periods or after intercourse — which is what screens for endometrial pathology"
+   ],
+   [
+    "The hidden agenda",
+    "She is privately frightened this is cancer — a colleague was diagnosed with bowel cancer this year after 'just feeling tired'. Volunteered at about SIX MINUTES only if you never ask what worries her"
+   ],
+   [
+    "Everything else is negative",
+    "No tanning or jaundice · no weather preference, no polyuria, no thirst · weight steady, appetite fine, no lumps, no family cancer · no fevers, no sore throat, married 20 years, no travel · no joint or shoulder stiffness, no headache · mood fine and still enjoying things · bowels normal, no cough, never smoked · no snoring, teacher's aide, days only"
+   ],
+   [
+    "If she asks 'is it cancer?'",
+    "One honest sentence and keep listing: 'I can't rule it out today, and that is exactly why I asked about weight, lumps, night sweats and bleeding. Nothing you have told me points that way, and I'll make sure the tests cover it.' NEVER 'don't worry, you're in good hands' — explicitly unscored"
+   ]
+  ],
+  "findingsLabel": "Observations and what she gives only if asked",
+  "must": [
+   "FAIL — Running out of time before the differentials. At 5:30, stop and start the answer.",
+   "FAIL — Umbrella words. 'Infections, cancers, psychological problems' scores nothing.",
+   "FAIL — Ignoring her opening worry, or a diagnosis with no reasons attached.",
+   "FAIL — Offering investigations or management. They are explicitly not your task.",
+   "ASK — When was your last menstrual period, and have you had any hot flushes?",
+   "ASK — Any recent blood loss — heavy periods, blood in the stool, recent surgery?"
+  ],
   "back": {
-   "dx": "Two things together: menopause transition (irregular cycle — two months apart, sometimes twice a month; hot flushes day and night; drenching night waking) AND iron-deficiency anaemia from heavy menstrual bleeding (flooding, clots bigger than a coin, six or seven pads on the worst day, ibuprofen for the pain) → exertional palpitations and breathlessness on the stairs. Three months, low energy not sleepiness, sleeps fine, rest helps a bit, dropped two shifts. Everything else negative; mum had 'thyroid trouble'; no intermenstrual or post-coital bleeding (asked — the endometrial safety question). The three positives — heavy periods, exertional palpitations/dyspnoea, flushes with an irregular cycle — are the whole case, and candidates who ask periods only inside SADMA at 7:30 never find them. Hidden agenda: a colleague had bowel cancer after 'just feeling tired'.",
+   "dx": [
+    "**Two diagnoses at once: the MENOPAUSE TRANSITION, and IRON DEFICIENCY ANAEMIA secondary to menorrhagia.** Name both.",
+    "**The three reasons, said as one-two-three**: **her periods have become irregular and very heavy over the last year · she has hot flushes and night sweats at fifty · her heart races and she is breathless on the stairs, which is what anaemia does.**",
+    "**This cluster is not scored on the label. It is scored on visible one-by-one exclusion and a long, specific, prioritised list.** Candidates who name the right diagnosis and stop have failed it; candidates who never reached a diagnosis but excluded ten conditions have passed.",
+    "**HEMI-AD-COP — nine letters, two differential groups each: Haemochromatosis and Hepatitis · Endocrine · Malignancy · Infection · Anaemia and Autoimmune · Drugs and Depression · Coeliac/bowel and Cardiopulmonary · OSA and Occupation · Pregnancy and Perimenopause.**",
+    "**Define the vague symptom first: 'sleepy, low in energy, or feverish and unwell?'** Sleepiness sends you down the sleep pathway, low energy down true fatigue, feverish down infection — **getting it wrong misdirects the next four minutes.**",
+    "**Exclude two or three differentials individually, each by ONE finding**: **hypothyroidism — no weather preference, no weight change · depression — mood good, still enjoying things · diabetes — no polyuria, no thirst.**",
+    "**Then rapid-fire the rest until the bell, about six seconds each**: **coeliac disease · bowel cancer · lymphoma · leukaemia · chronic kidney disease · liver disease · haemochromatosis · glandular fever and long COVID · HIV · sleep apnoea · heart failure · medication effect.** **The bell ends the list, not the patient.**",
+    "**Heavy bleeding at 50 is not safely attributed to the menopause transition alone** — the intermenstrual and post-coital bleeding questions are what screen for **endometrial pathology**.",
+    "**Iron deficiency in a man or a postmenopausal woman is GI malignancy until proven otherwise**, and **FOBT is a screening test, not a diagnostic one** — symptomatic patients get **colonoscopy**.",
+    "**Perimenopause is a clinical diagnosis — FSH is unreliable in this age group**, so exclude anaemia and thyroid disease first. **βhCG in any woman of reproductive age.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, name, open question → she says she's worried → ONE sentence, then the set line, then work; 'lots of short questions, some won't seem related, yes or no is fine'"
+     "**'Good morning, I'm Dr [name]. Am I speaking with Sarah Whitlock? Is it alright if I call you Sarah? How can I help you today?'** She will voice the worry in her opening line."
+    ],
+    [
+     "0:15",
+     "**Address the concern ONCE, then never again**: **'I'm sorry to hear that, and I understand your concern. Let me ask you some questions, then examine you, so I can find the cause and make the best plan for you.'** Then the signposting line that buys the whole block: **'I'm going to run through a number of short questions covering different parts of the body. Some won't seem related to tiredness — I'm checking off the causes one by one. Just yes or no is fine.'**"
     ],
     [
      "0:35",
-     "Four questions: ★ 'what do you mean by tiredness — sleepy, low in energy, or feverish?' · how long / every day / worse · better or worse with anything · how is it affecting your life"
+     "**Explore, four questions, sixty seconds: WHAT DO YOU MEAN BY TIREDNESS — SLEEPY, LOW IN ENERGY, OR FEVERISH AND UNWELL? · how long, every day or coming and going, getting worse? · anything that makes it better or worse? · HOW IS IT AFFECTING YOUR LIFE?**"
     ],
     [
      "1:45",
-     "H: tanning, jaundice, dark urine/pale stools, itch · E: weather preference, polyuria, polydipsia · M: weight, appetite, lumps, night sweats, cancer in you/family · I: fever/chills, flu-like/sore throat, 'have you EVER been sexually active', condoms, travel · ★ A: palpitations/exertional SOB, blood loss (heavy periods, PR blood, surgery) → POSITIVE → probe (pads, clots, flooding, previous anaemia/iron, red meat, intermenstrual/post-coital bleeding)"
+     "**H — liver: any tanning or bronzing of the skin? any yellowing of the skin or eyes, dark urine or pale stools? any itching?** Positive → alcohol, transfusions, tattoos, IV drug use, family history of iron overload, joint pain, erectile dysfunction, diabetes."
     ],
     [
-     "3:45",
-     "AD: shoulder/hip stiffness, headaches, joints, rash · D: drugs, medicines incl. OTC, mood, anhedonia, stress · C: greasy stools, PR blood, chest pain, leg swelling, cough/haemoptysis, smoking · O: snoring/gasping, occupation/nights · ★ P: LMP, hot flushes → POSITIVE → note 'is that the change?' and keep moving"
+     "2:05",
+     "**E — endocrine: do you have a weather preference, are you intolerant of cold or of heat? are you passing more urine than usual? any increase in thirst?** Positive → weight, bowels, hair and skin, voice, neck swelling, periods; or blurred vision, thrush, numb feet."
+    ],
+    [
+     "2:25",
+     "**M — malignancy: have you lost any weight without trying? how is your appetite? any lumps or bumps anywhere? any night sweats? any cancer in you or the family?** Positive → quantify the loss in kilograms and months, then a site-specific screen."
+    ],
+    [
+     "2:45",
+     "**I — infection: any fevers or chills? any flu-like illness or sore throat recently? HAVE YOU EVER BEEN SEXUALLY ACTIVE — and do you use condoms? have you travelled anywhere recently?** Never 'are you' sexually active. Travel → where, when, how long, rural or urban, bites, prophylaxis, fresh-water swimming."
+    ],
+    [
+     "3:15",
+     "**A — anaemia and autoimmune: any racing of the heart or shortness of breath on exertion? ANY RECENT BLOOD LOSS — heavy periods, blood in the stool, recent surgery or delivery? any shoulder or hip stiffness, or new headaches? any joint pains or rashes?**"
+    ],
+    [
+     "3:40",
+     "**D — drugs and depression: do you use any drugs? are you on any medicines, including over the counter? HOW HAS YOUR MOOD BEEN? are you still enjoying the things you used to enjoy? any stress at home or at work?** A positive mood screen OBLIGES a risk assessment — self-harm, suicidal thoughts, plans, protective factors."
+    ],
+    [
+     "4:05",
+     "**C — coeliac and cardiopulmonary: any greasy stools? any blood in your bowel motions? any chest pain or swelling in the legs? any cough — have you ever coughed up blood? do you smoke?**"
+    ],
+    [
+     "4:30",
+     "**O — OSA and occupation: has anyone told you that you snore or gasp during sleep? WHAT IS YOUR JOB — do you work night shifts?** The occupation question is how you find the truck driver."
+    ],
+    [
+     "4:50",
+     "**P — pregnancy and perimenopause: WHEN WAS YOUR LAST MENSTRUAL PERIOD? have you had any hot flushes or night sweats?** Ask it INSIDE the differential block, never inside SADMA at 7:30."
+    ],
+    [
+     "5:10",
+     "**Probe the two positives, and only those.** **How many pads or tampons on your heaviest day? Are you passing clots larger than a fifty-cent piece? Do you flood through onto clothes or bedding? Have you ever been told you were anaemic, or been given iron? Do you eat red meat?** Then **any vaginal dryness, or bleeding between periods or after intercourse?**"
     ],
     [
      "5:30",
-     "Closure if time: smoking, alcohol, allergies, PMHx, FHx (mum — thyroid)"
+     "**Closure in one breath, and it is expendable: smoking, alcohol, allergies, other conditions or operations, anything in the family.** Most of SADMA is already done inside the block."
     ],
     [
      "6:00",
-     "Answer: name both → plain explanation → three reasons → three differentials excluded by one finding each (thyroid, depression, diabetes) → rapid-fire the rest until the bell (coeliac, bowel cancer, lymphoma/leukaemia, CKD, liver disease/haemochromatosis, glandular fever/long COVID, HIV, sleep apnoea, heart failure, medication side effects) → 'is it cancer?' in one honest sentence, keep listing"
+     "**Name it, explain it in one line, then the three reasons.** Then **three differentials excluded by one finding each**, then **'I don't have long, so let me list the rest I've been checking through'** — and keep listing until the bell."
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "'Good morning, I'm Dr —. Am I speaking with Sarah Whitlock? How can I help you today?' → 'I'm sorry to hear that, Sarah, and I understand your concern. Let me ask you some questions, then examine you, so I can find the cause and make the best plan for you. Some of my questions will seem unrelated — I'm checking off causes one by one. Yes or no is fine.'",
-    "★ Can you tell me what you mean by tiredness — are you sleepy all the time, low in energy, or feeling feverish and unwell? How long? Every day or comes and goes? Getting worse? Anything that makes it better or worse? How is it affecting your life?",
-    "Any tanning or bronzing of the skin? Yellowing of skin or eyes, dark urine, pale stools, itching? Weather preference — cold or heat? Passing more urine? More thirsty? Weight loss without trying? Appetite? Lumps or bumps? Night sweats? Cancer in you or the family? Fevers or chills? Flu-like illness or sore throat recently? Have you ever been sexually active — condoms? Travel?",
-    "★ Any racing of the heart, or shortness of breath on exertion? Any recent blood loss — heavy periods, blood in the bowel motions, surgery? → 'How many pads on your heaviest day? Clots larger than a fifty-cent piece? Flooding through onto clothes or bedding? Ever told you were anaemic or given iron? Do you eat red meat? Any bleeding between periods or after intercourse? Any vaginal dryness?'",
-    "Shoulder or hip stiffness, new headaches, joint pains, rashes? Drugs? Medicines, including over the counter? Mood — still enjoying the things you used to? Stress at home or work? Greasy stools, blood in the stool? Chest pain, leg swelling? Cough — ever coughed up blood? Smoke? Has anyone told you that you snore or gasp in your sleep? What's your job — nights?",
-    "★ When was your last menstrual period? Have you had any hot flushes? → 'It may well be part of it — let me put it all together'",
-    "★ 'Sarah, I think there are two things happening together. First, you are going through the menopause transition — your ovaries are winding down, which explains the irregular periods, the hot flushes and the broken sleep. Second, because those periods have been so heavy, I think you have become iron deficient and anaemic — low in the iron your blood needs to carry oxygen around the body, which is why you are so flat. One, your periods have become irregular and very heavy over the last year; two, hot flushes and night sweats at fifty; three, your heart races and you get breathless on the stairs, which is what anaemia does.'",
-    "'I did also think about an underactive thyroid — less likely, no weather preference and no weight change. Depression — less likely, your mood is good and you still enjoy things. Diabetes — not passing more urine or thirsty.' → 'I don't have long, so let me tell you the rest I've been checking: coeliac disease, bowel cancer, lymphoma and leukaemia, chronic kidney disease, liver disease and haemochromatosis, glandular fever and long COVID, HIV and other infections, sleep apnoea, heart failure, and medication side effects.' 'So it's not cancer?' → 'I can't rule it out today, and that is exactly why I asked about weight, lumps, night sweats and bleeding. Nothing points that way, and the tests will cover it.'"
-   ],
    "pefe": [
-    "No examination task in Version A (obs in the stem). If an examination request is needed (Version B, 2-min hard stop): general — pallor, jaundice, rash, cachexia · vitals, temperature first · thyroid — goitre/nodule · full lymph node examination · CVS — S1 S2, murmur, added sounds · respiratory — air entry, added sounds · abdomen — hepatosplenomegaly · office tests BSL, dipstick (+ BMI, neck circumference, Mallampati for OSA)",
-    "HEMI-AD-COP: Hepatic/Haemochromatosis · Endocrine (thyroid, diabetes) · Malignancy · Infection · Anaemia · Autoimmune/Drugs · Depression/Drugs · Coeliac/Cardiac/Chest · OSA/Occupation · Pregnancy/Periods — the letters are a memory aid; what's scored is that each system was actively excluded. If challenged: 'a nine-letter checklist so my questioning covers every system rather than being symptom-led.' The old F (chronic fatigue syndrome) was dropped — a diagnosis of exclusion, IOM 2015/NICE criteria, unreachable in 8 min",
-    "Umbrella words ('infections, cancers, psychological') score nothing — name each. No investigations, no iron tablets, no management: every second there is a differential you didn't say",
-    "Harder moments: 'just do a blood test' at 2 min → 'I will — the test I order depends on these answers, let me finish' · tearful → 'take your time, I can see this has been hard' then resume the letter · late agenda ('my sister had leukaemia') → thank, name lymphoma/leukaemia in the list, FBE · 'I don't know' to everything → offer options (more, less, about the same)",
-    "If asked afterwards: FBE, ferritin/iron studies, TFT, UEC/LFT, BSL/HbA1c, coeliac serology, B12/folate; pelvic ultrasound + endometrial assessment if intermenstrual/post-coital bleeding or persistent HMB at 50; menopause symptom management; SA — Country Health Connect; TIS 131 450"
+    "**There is no examination task in this version, and investigations and management are not your task.** Every second spent there is a differential you did not say.",
+    "**If a PEFE is asked for elsewhere in this cluster, the eight-step screen is: general appearance — pallor, jaundice, rash, cachexia · temperature, then the rest of the vitals · thyroid for goitre or nodule · full lymph node survey · S1, S2 and murmurs · air entry and added sounds · hepatosplenomegaly · office tests, BGL and urine dipstick.** **Region plus target, closed-ended, in one sentence.**",
+    "First line for undifferentiated fatigue, if asked: **FBC and film · iron studies including ferritin · ESR and CRP · EUC and eGFR · LFT · TSH · fasting glucose or HbA1c · coeliac serology (tTG IgA with total IgA, while still eating gluten) · βhCG in any woman of reproductive age.** VERIFY against current RACGP guidance before quoting a fixed panel.",
+    "Targeted, only if the history points there: **EBV serology · HIV, hepatitis B and C, syphilis · B12 and folate · vitamin D · CK · three sets of blood cultures · malaria films · CXR · polysomnography · echocardiogram.**",
+    "**Do not miss: fever with a murmur → cultures before antibiotics · headache with visual symptoms over 50 → giant cell arteritis, steroid TODAY · iron deficiency in a man or postmenopausal woman → GI malignancy · sleepiness in a commercial driver → fitness to drive · any woman of reproductive age → βhCG.**",
+    "**CORRECTION — do not diagnose chronic fatigue syndrome in the room.** It needs at least six months of symptoms with post-exertional malaise and exclusion of everything above, and **it is defined by consensus clinical criteria (IOM 2015, NICE), not DSM criteria.**"
    ],
-   "fails": [
-    "Never asking about periods/LMP/hot flushes inside the differential block — reaching the end without them ★",
-    "Accepting 'tired' without defining sleepy vs low energy vs feverish ★",
-    "Not started the answer by 6:00 ★",
-    "Cruising past her opening worry; or spending forty seconds exploring the fear",
-    "Umbrella words; no reasons for the diagnosis; launching into investigations/iron",
-    "Three or four questions on a negative topic (she says 'no, definitely not'); 'don't worry, you're in good hands'"
-   ],
-   "numbers": [
-    "8 min = 6 + 2 (or 4 + 2 + 2) · 1–2 screening questions per letter · 2:00 hard stop in PEFE · 60–90 s for diagnosis + differentials · ~6 s per differential · 3 reasons · 2–3 excluded individually then ≥8 rapid-fire",
-    "HMB: ≥7 pads/day, clots > 50-cent piece, flooding, >7 days · iron deficiency: ferritin <30 microg/L; anaemia Hb <120 g/L (women) VERIFY · menopause transition: cycle variability ≥7 days, then ≥60 days between cycles; menopause = 12 months amenorrhoea VERIFY",
-    "Endometrial red flags at 50: intermenstrual or post-coital bleeding, HMB not responding, risk factors → ultrasound/endometrial sampling VERIFY",
-    "Red flags across the cluster: weight loss · lumps · night sweats · fever · bleeding · sleepiness with a commercial licence",
-    "Version B (James Corrigan OSA, truck driver) → MED-54 · Version C (Amy Deng pregnancy) → MED-55",
-    "TIS 131 450 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Iron deficiency anaemia from menorrhagia** — the answer",
+     "**Heavy irregular periods, flooding, clots**; exertional dyspnoea and palpitations; pallor",
+     "Blood loss question; brittle nails, pica, restless legs",
+     "**FBC and ferritin. In a man or postmenopausal woman, hunt the GI source** — moderate"
+    ],
+    [
+     "**Perimenopause** — the co-diagnosis",
+     "Woman 45–55, **hot flushes**, irregular or heavy periods, broken sleep, mood change",
+     "Hot flushes and cycle questions, vaginal dryness",
+     "**Clinical — FSH is unreliable at this age.** Exclude anaemia and thyroid first"
+    ],
+    [
+     "Hypothyroidism",
+     "Cold intolerance, weight gain, constipation, dry skin, menorrhagia, puffy face",
+     "Weather preference; goitre; slow-relaxing reflexes",
+     "**TSH first**, free T4 if abnormal — low urgency"
+    ],
+    [
+     "**Endometrial pathology**",
+     "**Heavy bleeding at 50**; intermenstrual or post-coital bleeding",
+     "**Bleeding between periods or after intercourse** — the question that makes it unsafe to blame the menopause",
+     "Pelvic ultrasound and endometrial sampling — **not to miss**"
+    ],
+    [
+     "**Bowel cancer**",
+     "PR bleeding, change in bowel habit, **iron deficiency**",
+     "The C-letter questions",
+     "**FOBT is a screening test, not diagnostic — symptomatic patients get colonoscopy** — not to miss"
+    ],
+    [
+     "**Lymphoma or leukaemia**",
+     "Night sweats, weight loss, painless lumps, itch, bone pain, bruising",
+     "Full node survey, hepatosplenomegaly",
+     "**FBC and film, LDH, CXR; urgent haematology** — not to miss"
+    ],
+    [
+     "Coeliac disease",
+     "Greasy stools, bloating, iron or folate deficiency, family history, other autoimmune disease",
+     "Greasy stool question, mouth ulcers",
+     "**tTG IgA with total IgA, while still eating gluten**"
+    ],
+    [
+     "Type 2 diabetes · chronic kidney disease · liver disease · haemochromatosis",
+     "Polyuria and thirst; nocturia, itch, oedema; jaundice, dark urine; **bronzing, joint pain, northern European ancestry**",
+     "E and H letter questions; urine dipstick",
+     "BGL and HbA1c; eGFR and urine ACR; LFT; **transferrin saturation and ferritin, HFE genotype**"
+    ],
+    [
+     "Depression",
+     "Low mood, anhedonia, poor sleep, loss of function",
+     "Mood and anhedonia screen, then the full set",
+     "**A positive screen MANDATES a risk assessment — never omit it** — high if risk"
+    ],
+    [
+     "EBV, post-viral or long COVID · HIV · travel infection · heart failure · endocarditis · PMR and GCA",
+     "Preceding sore throat; unsafe sex or injecting use; recent travel; orthopnoea and oedema; prolonged fever with a murmur; **girdle stiffness with headache and jaw claudication**",
+     "Nodes and splenomegaly; sexual history; travel; pillows; fever plus murmur; **scalp tenderness and VISUAL SYMPTOMS**",
+     "Monospot; HIV Ag/Ab; thick and thin films; BNP and echo; **three sets of cultures before antibiotics**; **ESR and CRP — visual symptoms mean same-day high-dose steroid, BEFORE biopsy**"
+    ]
    ]
   },
   "source": "Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf (Version A — Sarah Whitlock, perimenopause + iron deficiency)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Accepting the word 'tired' without defining it — 'sleepy, low in energy, or feverish?' sends you down three different pathways, and getting it wrong misdirects the next four minutes",
-   "FAIL — Never asking periods, last menstrual period and hot flushes inside the differential block — candidates who leave the P letter to SADMA at 7:30 never find the case; the role-player says nothing",
-   "FAIL — Not escalating once the heavy periods come out — how many pads on the worst day, clots bigger than a coin, flooding, any bleeding between periods or after sex, ever told you were anaemic; and exertional palpitations and breathlessness",
-   "FAIL — Umbrella words — 'infections, cancers and psychological causes' score nothing; name them",
-   "FAIL — Launching into blood tests and iron tablets — management was not the task, and every second there is a differential you did not say",
-   "SAY — Two diagnoses together, menopause transition and iron deficiency anaemia from the heavy periods, with three reasons; then thyroid, depression and diabetes each excluded by one finding, then the rest rapid-fire until the bell; answer 'is it cancer?' honestly in one sentence"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-54",
   "cat": "med",
-  "promptAt": 240,
-  "setting": "Emergency department, regional hospital.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "James Corrigan, 46, presents with six weeks of tiredness.",
    "Observations: T 36.7 °C · pulse 84 · BP 138/86 · RR 16 · SpO2 96% · BMI 34."
@@ -15300,112 +15414,213 @@
    "Ask the examiner for the physical examination findings (2 minutes, hard stop)",
    "Give your diagnosis with reasons and your differential diagnoses (2 minutes)"
   ],
-  "time": "8 minutes: 4 + 2 + 2. The occupation question is where the station lives.",
+  "findings": [
+   [
+    "Observations in the stem",
+    "T 36.7 · PULSE 84 · BP 138/86 · RR 16 · SpO2 96% · BMI 34"
+   ],
+   [
+    "Say the handover line BOTH ways",
+    "'James, give me a moment — I'll speak with my examiner.' Then request it. Then TURN BACK. Forgetting to turn back is a documented trap. THERE IS A HARD STOP AT 2:00"
+   ],
+   [
+    "General appearance",
+    "NO pallor, NO jaundice, NO rash, NOT cachectic"
+   ],
+   [
+    "Vital signs",
+    "T 36.7 · BP 138/86 · pulse 80 · RR 16 · SpO2 96%"
+   ],
+   [
+    "Thyroid",
+    "NORMAL — no goitre, no nodule"
+   ],
+   [
+    "Lymph nodes",
+    "NO LYMPHADENOPATHY on full node examination"
+   ],
+   [
+    "Cardiovascular and respiratory",
+    "S1 and S2 normal, NO MURMUR, no added sounds. Air entry equal, no added sounds"
+   ],
+   [
+    "Abdomen",
+    "NO HEPATOSPLENOMEGALY"
+   ],
+   [
+    "Office tests",
+    "BSL 6.4 · urine dipstick NORMAL"
+   ],
+   [
+    "The three you must ask for in THIS patient",
+    "BMI 34 · NECK CIRCUMFERENCE 44 cm · MALLAMPATI CLASS III. Asking for them is what converts a generic screen into a targeted one"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — the eight-step screen · hard stop at 2:00",
+  "must": [
+   "FAIL — Omitting the driving line. Sleepiness plus a commercial licence is a single-item fail.",
+   "FAIL — Vague requests. 'I'd like to examine the respiratory system' costs you fifteen seconds, six times over.",
+   "FAIL — Running past the 2:00 hard stop in the PEFE and losing the differential block.",
+   "FAIL — Umbrella words, or a diagnosis with no reasons attached.",
+   "ASK — What is your job — do you work night shifts? It is how you find the truck driver.",
+   "ASK — Has anyone told you that you snore or gasp during sleep?"
+  ],
   "back": {
-   "dx": "Obstructive sleep apnoea — sleepiness (not low energy) in a man with BMI 34, neck 44 cm, Mallampati III, BP 138/86, snoring/gasping/witnessed apnoeas and unrefreshing sleep; he is a LONG-HAUL TRUCK DRIVER, revealed only when you ask the occupation question. Sleepiness plus a commercial licence is a single-item fail if the driving line is omitted. Run HEMI-AD-COP in four minutes at one question per letter, keep the O block intact, examination request in region-plus-target closed form with BMI, neck circumference and Mallampati added, then diagnosis with three reasons and the differentials.",
+   "dx": [
+    "**Obstructive sleep apnoea** — the airway closes repeatedly during sleep, so he never gets proper rest despite being in bed all night.",
+    "**The three reasons**: **he is SLEEPY rather than low in energy · his wife says he snores and stops breathing · his BMI is 34 and his blood pressure is up**, with **neck circumference 44 cm and Mallampati class III**.",
+    "**SA — the driving line, and omitting it is a single-item fail**: **'because you drive a truck for a living and you are falling asleep during the day, until this is assessed and treated it is not safe for you to drive, and I am obliged to discuss fitness to drive under the Austroads standards. I will help you get the sleep study quickly.'**",
+    "**The occupation question is the whole trap** — he is a long-haul truck driver, and **you only learn that if you ask what his job is.**",
+    "**Define the vague symptom first: sleepy, low in energy, or feverish?** **Sleepiness rather than low energy is what points at the sleep pathway** rather than true fatigue.",
+    "**4 + 2 + 2, with a HARD STOP at 2:00 in the examination.** Compress the history, keep the nine letters, and protect the final two minutes.",
+    "**Exclude by one finding each**: **hypothyroidism — no weather preference, thyroid examination normal · depression — mood and enjoyment unchanged · diabetes — BSL 6.4 today.**",
+    "**Then the rest, rapid-fire**: **anaemia · chronic kidney disease · heart failure · lymphoma · EBV or post-viral fatigue · HIV · alcohol · medication effect · shift-work sleep disruption.**",
+    "**Request BMI, neck circumference and Mallampati specifically** — a generic screen does not earn the sleep apnoea marks. **Epworth score, then polysomnography referral.**",
+    "**Region plus target, closed-ended, in one sentence** — that is the form of every examination request, and it is what stops the examiner asking 'what are you looking for?'"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open, one-sentence acknowledgement, set line"
+     "Introduce, confirm the name, open question, **address the concern once**, then the signposting line about short questions covering different parts of the body."
     ],
     [
-     "0:30",
-     "★ Define it: sleepy vs low energy vs feverish → SLEEPY → duration, daily, worse, modifiers, impact (dozing at the wheel? falling asleep watching TV?)"
+     "0:25",
+     "**Explore, compressed: sleepy, low in energy, or feverish? · how long, every day, getting worse? · better or worse with anything? · how is it affecting your life?** — he is **SLEEPY**, which is the pathway."
     ],
     [
-     "1:15",
-     "Compressed sweep, one question per letter: H · E (weather, urine, thirst — also asks diabetes at BMI 34) · M · I · A · AD · D (medicines, alcohol, mood) · C · ★ O: 'has anyone told you that you snore or gasp during sleep — do you stop breathing? wake unrefreshed, morning headaches, dry mouth? what's your job — and do you drive for a living?' → truck driver → ★ 'have you ever felt sleepy or nodded off at the wheel?'"
+     "1:45",
+     "**H — liver: any tanning or bronzing of the skin? any yellowing of the skin or eyes, dark urine or pale stools? any itching?** Positive → alcohol, transfusions, tattoos, IV drug use, family history of iron overload, joint pain, erectile dysfunction, diabetes."
+    ],
+    [
+     "2:05",
+     "**E — endocrine: do you have a weather preference, are you intolerant of cold or of heat? are you passing more urine than usual? any increase in thirst?** Positive → weight, bowels, hair and skin, voice, neck swelling, periods; or blurred vision, thrush, numb feet."
+    ],
+    [
+     "2:25",
+     "**M — malignancy: have you lost any weight without trying? how is your appetite? any lumps or bumps anywhere? any night sweats? any cancer in you or the family?** Positive → quantify the loss in kilograms and months, then a site-specific screen."
+    ],
+    [
+     "2:45",
+     "**I — infection: any fevers or chills? any flu-like illness or sore throat recently? HAVE YOU EVER BEEN SEXUALLY ACTIVE — and do you use condoms? have you travelled anywhere recently?** Never 'are you' sexually active. Travel → where, when, how long, rural or urban, bites, prophylaxis, fresh-water swimming."
+    ],
+    [
+     "3:15",
+     "**A — anaemia and autoimmune: any racing of the heart or shortness of breath on exertion? ANY RECENT BLOOD LOSS — heavy periods, blood in the stool, recent surgery or delivery? any shoulder or hip stiffness, or new headaches? any joint pains or rashes?**"
+    ],
+    [
+     "3:40",
+     "**D — drugs and depression: do you use any drugs? are you on any medicines, including over the counter? HOW HAS YOUR MOOD BEEN? are you still enjoying the things you used to enjoy? any stress at home or at work?** A positive mood screen OBLIGES a risk assessment — self-harm, suicidal thoughts, plans, protective factors."
+    ],
+    [
+     "4:05",
+     "**C — coeliac and cardiopulmonary: any greasy stools? any blood in your bowel motions? any chest pain or swelling in the legs? any cough — have you ever coughed up blood? do you smoke?**"
+    ],
+    [
+     "4:30",
+     "**O — OSA and occupation: has anyone told you that you snore or gasp during sleep? WHAT IS YOUR JOB — do you work night shifts?** The occupation question is how you find the truck driver."
+    ],
+    [
+     "4:50",
+     "**P — pregnancy and perimenopause: WHEN WAS YOUR LAST MENSTRUAL PERIOD? have you had any hot flushes or night sweats?** Ask it INSIDE the differential block, never inside SADMA at 7:30."
+    ],
+    [
+     "3:50",
+     "**Closure only if the clock allows** — smoking, alcohol, allergies, other conditions, family history. Most of it is already inside the block."
     ],
     [
      "4:00",
-     "'James, give me a moment — I'll speak with my examiner' → region + target, closed-ended, in order; add BMI, neck circumference, Mallampati; turn back"
+     "**'James, give me a moment — I'll speak with my examiner.'** Then, **region plus target, closed-ended, in this order**: **general appearance — pallor, jaundice, rash, cachexia · vital signs, temperature first · thyroid — goitre or nodule · full lymph node examination · cardiovascular — S1, S2, murmur, added sounds · respiratory — air entry, added sounds · abdomen — hepatosplenomegaly · office tests — BSL and urine dipstick.** Then **'for this patient I would also like his body mass index, neck circumference and Mallampati score.'** **HARD STOP AT 2:00.**"
     ],
     [
      "6:00",
-     "Diagnosis with three reasons (sleepiness with snoring/gasping; BMI 34, neck 44 cm, Mallampati III; blood pressure creeping up) → ★ the driving line → differentials: hypothyroidism, depression, diabetes, anaemia, narcolepsy/shift work, medication/alcohol, heart failure, chronic infection; sleep study referral if asked"
+     "**Turn back to the patient.** Name it, explain it in one line, give **the three reasons**, exclude **hypothyroidism, depression and diabetes by one finding each**, then **rapid-fire the remainder.**"
+    ],
+    [
+     "7:30",
+     "**The driving line — do not leave without it.** Then the sleep study, Epworth, and a review."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ What do you mean by tired — sleepy all the time, low in energy, or feverish and unwell? How long, every day, getting worse? What makes it better or worse? How is it affecting your life — do you find yourself dozing off?",
-    "★ Has anyone told you that you snore, or gasp, or stop breathing in your sleep? Do you wake unrefreshed? Morning headaches or a dry mouth? How many hours do you sleep, and are they regular?",
-    "★ What's your job? → 'long-haul truck driver' → 'How many hours a day are you driving? Have you ever felt sleepy, or nodded off, at the wheel? Any near-misses?'",
-    "Compressed letters: tanning/jaundice? weather preference, urine, thirst? weight change, lumps, sweats? fever, sore throat, sexual history, travel? palpitations, breathless on exertion, blood loss? stiffness, joints, rash? medicines, alcohol — how much, mood? bowels, chest pain, pillows, cough, smoking? (partner, children, stress — brief)",
-    "★ Examiner: 'On general appearance: any pallor, jaundice, rash or cachexia? Vital signs — temperature first, then BP, pulse, RR, saturations. Thyroid: any goitre or nodule? Full lymph node examination: any lymphadenopathy? Cardiovascular: S1 and S2 normal, any murmur or added sounds? Respiratory: air entry equal, added sounds? Abdomen: hepatosplenomegaly? Office tests — BSL and urine dipstick. For this patient I'd also like his BMI, neck circumference and Mallampati score.' → 'Thank you, James, I'm back with you'",
-    "★ 'James, the most likely explanation is obstructive sleep apnoea — during sleep the soft tissues at the back of your throat collapse and block the airway, you briefly stop breathing, and your brain wakes you just enough to start again, dozens of times an hour, so you never get refreshing sleep. Three reasons: you're sleepy rather than just low in energy, and you snore and gasp; your build — the weight and the size of your neck — makes the airway more likely to close; and your blood pressure is creeping up, which sleep apnoea does.'",
-    "★ 'I have to be direct about one thing because it matters for your safety and other people's: with this level of sleepiness and a heavy-vehicle licence, you must not drive until this has been assessed and treated. I know what that means for your income and I'll help you with that — a sleep study can be arranged quickly. I'm also obliged to tell you that you must inform the licensing authority, and if you don't, I have to.'",
-    "'I also thought about an underactive thyroid — less likely, no weather preference; depression — mood is alright and you still enjoy things; diabetes — worth a blood test at your weight but no thirst or urine changes; anaemia; heart failure; medications and alcohol; narcolepsy; and chronic infection.' 'Is it cancer?' → honest one sentence."
-   ],
    "pefe": [
-    "Findings: no pallor/jaundice/rash/cachexia · T 36.7, BP 138/86, P 80, RR 16, SpO2 96% · thyroid normal · no lymphadenopathy · heart normal · chest clear · no hepatosplenomegaly · BSL 6.4 · dipstick normal · BMI 34, neck circumference 44 cm, Mallampati III",
-    "Traps: 'I'd like to examine the respiratory system' → 'what are you looking for?' costs 15 s each time; forgetting to turn back to the patient; not asking BMI/neck/Mallampati; asking the occupation but not the driving question",
-    "If asked next steps: Epworth Sleepiness Scale, STOP-Bang, sleep study (level 1 in-lab or home level 2), CPAP if moderate–severe, weight loss, alcohol reduction, positional therapy; FBE, TFT, HbA1c, lipids, UEC; BP follow-up; fitness-to-drive assessment — Austroads Assessing Fitness to Drive: commercial licence with sleepiness → non-driving until treated and reviewed; SA — notify Service SA/DPTI; sleep service via Country Health Connect/PATS VERIFY",
-    "Version A (Sarah Whitlock) → MED-53 · Version C (Amy Deng) → MED-55"
+    "**Say the handover line both ways** — to the patient before you turn, and back to the patient afterwards. Forgetting the second half is a documented trap.",
+    "**Region plus target, closed-ended, in one sentence.** 'I'd like to examine the respiratory system' earns 'what are you looking for?' and costs fifteen seconds — six times over, that is your whole PEFE.",
+    "**The eight-step screen: general appearance — pallor, jaundice, rash, cachexia · temperature then the rest of the vitals · thyroid · full lymph node survey · S1, S2 and murmurs · air entry and added sounds · hepatosplenomegaly · BGL and urine dipstick.**",
+    "**Then the three that are specific to this patient: BMI, NECK CIRCUMFERENCE and MALLAMPATI SCORE.**",
+    "**2:00 is a hard stop.** Whatever is unasked, stop and start the answer — the differential block is the largest scored domain.",
+    "For OSA: **Epworth score, polysomnography referral, and driving advice.** Ask about **witnessed apnoeas, morning headache, dry mouth, nocturia, and whether he drives for a living.**",
+    "Bedside tests that are part of the station: **blood glucose · urine dipstick · ECG if palpitations, syncope or a murmur.**"
    ],
-   "fails": [
-    "Never asking the occupation — or asking it and omitting the driving line ★",
-    "Not defining sleepy vs low energy ★",
-    "Open examination requests; no BMI/neck/Mallampati; not turning back to the patient ★",
-    "Exceeding the 2-minute PEFE; not started the answer by 6:00",
-    "Diagnosis without three reasons; umbrella-word differentials",
-    "False reassurance; going into CPAP/management detail at the expense of differentials"
-   ],
-   "numbers": [
-    "BMI 34 · neck 44 cm (>40 cm risk) · Mallampati III · BP 138/86 · SpO2 96% · BSL 6.4",
-    "STOP-Bang: Snoring, Tired, Observed apnoea, Pressure, BMI >35, Age >50, Neck >40 cm, male Gender — ≥3 intermediate, ≥5 high · Epworth ≥11 excessive sleepiness · AHI 5–14 mild, 15–29 moderate, ≥30 severe VERIFY",
-    "Austroads commercial standard: OSA with excessive sleepiness → unfit until treated; conditional licence on specialist review; patient obliged to notify; doctor may notify in SA if the patient won't and risk is serious VERIFY",
-    "Sleep study: level 1 laboratory PSG or level 2 home study; CPAP first-line for moderate–severe; mandibular advancement splint for mild VERIFY",
-    "4 + 2 + 2 · one question per letter in the 4-minute version · 2:00 hard stop",
-    "TIS 131 450 · Country Health Connect · PATS"
+   "ddx": [
+    [
+     "**Obstructive sleep apnoea** — the answer",
+     "**Sleepiness rather than low energy**, snoring, witnessed apnoeas, **BMI 34**, hypertension, **commercial driver**",
+     "'Snore or gasp?'; **neck circumference, Mallampati**",
+     "**Epworth; polysomnography referral; DRIVING ADVICE** — moderate"
+    ],
+    [
+     "Hypothyroidism",
+     "Cold intolerance, weight gain, constipation, dry skin",
+     "Weather preference; goitre; slow-relaxing reflexes",
+     "**TSH first** — thyroid examination is normal here"
+    ],
+    [
+     "Type 2 diabetes",
+     "Polyuria, polydipsia, weight loss, thrush, blurred vision",
+     "Two screening questions; **BGL and urine dipstick**",
+     "**BSL 6.4 today makes it less likely.** HbA1c"
+    ],
+    [
+     "Depression",
+     "Low mood, anhedonia, poor sleep, loss of function",
+     "Mood and anhedonia screen",
+     "**A positive screen mandates a risk assessment** — mood is unchanged here"
+    ],
+    [
+     "Anaemia",
+     "Exertional dyspnoea, palpitations, pallor",
+     "Blood loss; pallor",
+     "FBC and ferritin — **no pallor on examination**"
+    ],
+    [
+     "Chronic kidney disease",
+     "Nocturia, itch, oedema, hypertension, **Aboriginal or Torres Strait Islander identity**",
+     "Urine dipstick",
+     "eGFR, urine ACR — moderate"
+    ],
+    [
+     "Heart failure",
+     "Exertional dyspnoea, orthopnoea, ankle swelling",
+     "Pillows, PND, leg swelling",
+     "BNP, ECG, echocardiogram"
+    ],
+    [
+     "Lymphoma or leukaemia",
+     "Night sweats, weight loss, painless lumps, bruising",
+     "**Full node survey, hepatosplenomegaly** — both negative here",
+     "FBC and film, LDH, CXR — **not to miss**"
+    ],
+    [
+     "EBV, post-viral or long COVID · HIV",
+     "Preceding sore throat; unsafe sex or injecting use, night sweats, oral thrush",
+     "Sore throat question; **ever sexually active**",
+     "Monospot; **HIV antigen/antibody, hepatitis B and C, syphilis**"
+    ],
+    [
+     "Alcohol · medication effect · shift-work sleep disorder",
+     "Antihistamines, beta blockers, antidepressants, opioids, steroids, statins; **night shifts, improves on days off**",
+     "The two D questions; the occupation question",
+     "Medication review, alcohol audit, sleep diary and roster review"
+    ]
    ]
   },
   "source": "Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf (Version B — James Corrigan, obstructive sleep apnoea, truck driver)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "No pallor, jaundice, rash or cachexia"
-   ],
-   [
-    "Observations",
-    "T 36.7 · BP 138/86 · P 80 · RR 16 · SpO2 96%"
-   ],
-   [
-    "Thyroid and nodes",
-    "Thyroid normal; no lymphadenopathy"
-   ],
-   [
-    "Heart and chest",
-    "Heart normal; chest clear"
-   ],
-   [
-    "Abdomen",
-    "No hepatosplenomegaly"
-   ],
-   [
-    "The measurements",
-    "BMI 34 · neck circumference 44 cm · Mallampati III"
-   ],
-   [
-    "Bedside tests",
-    "BSL 6.4 · dipstick normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Omitting the driving line — sleepiness plus a commercial licence is a single-item fail: 'with this level of sleepiness you must not drive until this is treated, and I'm obliged to advise you about your licence'",
-   "FAIL — 'I'd like to examine the respiratory system' — earns 'what are you looking for?' and costs fifteen seconds each; region plus target, closed-ended, in order, with a two-minute hard stop, then turn back to him",
-   "DO — Add BMI, neck circumference and Mallampati score to the examination request — 34, 44 cm and class III are the findings",
-   "FAIL — Not defining 'tired' as sleepy versus low energy — SLEEPY sends you to the sleep pathway: snoring, gasping, unrefreshed, dozing at the wheel",
-   "FAIL — Never asking the occupation — the truck is revealed only by that question, and it changes the whole answer",
-   "SAY — 'The most likely explanation is obstructive sleep apnoea — during sleep the soft tissues at the back of your throat collapse and block your breathing' with three reasons; then thyroid, depression and anaemia excluded by one finding each, and the rest listed"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-55",
   "cat": "med",
-  "promptAt": 360,
-  "setting": "General practice.",
+  "v2": true,
+  "promptBell": false,
   "stem": [
    "Amy Deng, 24, presents with six weeks of tiredness. Otherwise well.",
    "Observations normal."
@@ -15414,79 +15629,185 @@
    "Take a focused, relevant history (6 minutes)",
    "Tell the patient your most likely diagnosis with your reasons, and give your differential diagnoses (2 minutes)"
   ],
-  "time": "8 minutes: 6 + 2. The only positive in the whole history is the P letter.",
+  "findings": [
+   [
+    "Observations",
+    "NORMAL. Otherwise well"
+   ],
+   [
+    "Examination",
+    "NOT A TASK. Six minutes of history, then two minutes of diagnosis and differentials"
+   ],
+   [
+    "The only positive in the entire history",
+    "LAST MENSTRUAL PERIOD ABOUT EIGHT WEEKS AGO — 'I've never been regular' / 'I'm not sure. Why?' EVERYTHING ELSE IS NEGATIVE. The station turns on one question"
+   ],
+   [
+    "What supports it once you have it",
+    "Some MORNING NAUSEA and BREAST TENDERNESS — ask for them once the LMP comes back long"
+   ],
+   [
+    "The test",
+    "URINE OR SERUM βhCG. βhCG in ANY woman of reproductive age, whatever else you think is going on"
+   ],
+   [
+    "Why candidates fail this version",
+    "A tired 24-year-old worked up for everything, and she is pregnant. THE P LETTER IS NOT OPTIONAL — and it belongs INSIDE the differential block, not in SADMA at 7:30"
+   ]
+  ],
+  "findingsLabel": "Observations and the single positive · open when you would ask",
+  "must": [
+   "FAIL — Never asking the last menstrual period. The whole station turns on it.",
+   "FAIL — Asking the P letter at 7:30 inside SADMA, after the bell has effectively gone.",
+   "FAIL — A head-to-toe scattergun with no visible differential behind each question.",
+   "FAIL — Umbrella words, or a diagnosis with no reasons attached.",
+   "ASK — When was your last menstrual period? And any hot flushes or night sweats?",
+   "ASK — What do you mean by tiredness — sleepy, low in energy, or feverish and unwell?"
+  ],
   "back": {
-   "dx": "Pregnancy — last period 'about eight weeks ago, I've never been regular', some morning nausea and breast tenderness, everything else negative. Same HEMI-AD-COP sweep; the station tests whether you ask LMP/pregnancy inside the differential block in a young woman rather than at 7:30 (or never). Diagnosis with three reasons, pregnancy test today, then the differentials list; no investigations or management beyond naming the test.",
+   "dx": [
+    "**Pregnancy.** **'The most likely explanation for your tiredness is that you are pregnant'** — and the whole station turns on a single question.",
+    "**The three reasons**: **your last period was around eight weeks ago · you have some morning nausea and breast tenderness · everything else in my questioning has been normal.** Then: **'I'd like to do a pregnancy test today to confirm it.'**",
+    "**βhCG in ANY woman of reproductive age.** This is on the never-omit list alongside a risk assessment after a positive mood screen and driving advice in a sleepy commercial driver.",
+    "**Ask the P letter INSIDE the differential block, not in SADMA at the end.** Candidates who leave periods to closure never find them.",
+    "**HEMI-AD-COP — Haemochromatosis and Hepatitis · Endocrine · Malignancy · Infection · Anaemia and Autoimmune · Drugs and Depression · Coeliac/bowel and Cardiopulmonary · OSA and Occupation · Pregnancy and Perimenopause.** Two screening questions per group, and **move the moment they are negative.**",
+    "**The list is the mark.** Candidates who name the right diagnosis and stop have failed this station repeatedly; candidates who never reached a diagnosis but excluded ten conditions have passed it.",
+    "**Define the vague symptom before anything else: sleepy, low in energy, or feverish and unwell?** The role-player will not volunteer it — **offer the options.**",
+    "**Exclude two or three individually, each by one finding**, then **rapid-fire the rest at about six seconds each** until the bell: **iron deficiency anaemia · hypothyroidism · coeliac disease · EBV and post-viral fatigue · HIV · depression · diabetes · chronic kidney disease · lymphoma and leukaemia · medication effect.**",
+    "**Do not diagnose chronic fatigue syndrome in the room** — it requires at least six months with post-exertional malaise and exclusion of everything above, and **it is defined by consensus clinical criteria (IOM 2015, NICE), not DSM criteria.**",
+    "**Investigations and management are not your task** — every second spent there is a differential you did not say."
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open, one-sentence acknowledgement, set line"
+     "Introduce, confirm the name, **'how can I help you today?'**, then **address the concern once** and give the signposting line about short questions covering different parts of the body."
     ],
     [
      "0:35",
-     "Define tiredness (low energy vs sleepy vs feverish); duration, daily, worse, modifiers, impact"
+     "**Explore, four questions: what do you mean by tiredness — sleepy, low in energy, or feverish? · how long, every day or coming and going, getting worse? · better or worse with anything? · how is it affecting your life?**"
     ],
     [
      "1:45",
-     "HEMI-AD-COP at 1–2 questions per letter — all negative; the I letter includes 'have you ever been sexually active — contraception, condoms?'"
+     "**H — liver: any tanning or bronzing of the skin? any yellowing of the skin or eyes, dark urine or pale stools? any itching?** Positive → alcohol, transfusions, tattoos, IV drug use, family history of iron overload, joint pain, erectile dysfunction, diabetes."
+    ],
+    [
+     "2:05",
+     "**E — endocrine: do you have a weather preference, are you intolerant of cold or of heat? are you passing more urine than usual? any increase in thirst?** Positive → weight, bowels, hair and skin, voice, neck swelling, periods; or blurred vision, thrush, numb feet."
+    ],
+    [
+     "2:25",
+     "**M — malignancy: have you lost any weight without trying? how is your appetite? any lumps or bumps anywhere? any night sweats? any cancer in you or the family?** Positive → quantify the loss in kilograms and months, then a site-specific screen."
+    ],
+    [
+     "2:45",
+     "**I — infection: any fevers or chills? any flu-like illness or sore throat recently? HAVE YOU EVER BEEN SEXUALLY ACTIVE — and do you use condoms? have you travelled anywhere recently?** Never 'are you' sexually active. Travel → where, when, how long, rural or urban, bites, prophylaxis, fresh-water swimming."
+    ],
+    [
+     "3:15",
+     "**A — anaemia and autoimmune: any racing of the heart or shortness of breath on exertion? ANY RECENT BLOOD LOSS — heavy periods, blood in the stool, recent surgery or delivery? any shoulder or hip stiffness, or new headaches? any joint pains or rashes?**"
+    ],
+    [
+     "3:40",
+     "**D — drugs and depression: do you use any drugs? are you on any medicines, including over the counter? HOW HAS YOUR MOOD BEEN? are you still enjoying the things you used to enjoy? any stress at home or at work?** A positive mood screen OBLIGES a risk assessment — self-harm, suicidal thoughts, plans, protective factors."
+    ],
+    [
+     "4:05",
+     "**C — coeliac and cardiopulmonary: any greasy stools? any blood in your bowel motions? any chest pain or swelling in the legs? any cough — have you ever coughed up blood? do you smoke?**"
     ],
     [
      "4:30",
-     "★ P inside the block: 'when was your last menstrual period?' → eight weeks, irregular → probe: nausea (mornings?), breast tenderness, urinary frequency, contraception used, any chance of pregnancy, bleeding/pain (ectopic screen), wanted/planned?"
+     "**O — OSA and occupation: has anyone told you that you snore or gasp during sleep? WHAT IS YOUR JOB — do you work night shifts?** The occupation question is how you find the truck driver."
+    ],
+    [
+     "4:50",
+     "**P — pregnancy and perimenopause: WHEN WAS YOUR LAST MENSTRUAL PERIOD? have you had any hot flushes or night sweats?** Ask it INSIDE the differential block, never inside SADMA at 7:30."
+    ],
+    [
+     "5:10",
+     "**Probe the one positive.** The LMP comes back at about eight weeks — then **any morning nausea? any breast tenderness? any chance you could be pregnant? what contraception are you using?**"
     ],
     [
      "5:30",
-     "Closure: smoking, alcohol, allergies, PMHx, FHx, concerns"
+     "**Closure in one breath if the clock allows** — smoking, alcohol, allergies, other conditions, family history."
     ],
     [
      "6:00",
-     "Diagnosis + three reasons + pregnancy test today → excluded differentials (thyroid, anaemia/iron, depression) with one finding each → rapid-fire the rest (glandular fever, diabetes, coeliac, liver, lymphoma/leukaemia, HIV, sleep, medications) → her reaction/questions honestly and briefly"
+     "**Name it, explain it, give the three reasons**, then **two or three differentials excluded by one finding each**, then **'I don't have long, so let me list the rest I've been checking through'** and keep going until the bell."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "What do you mean by tiredness — sleepy, low in energy, or feverish? How long, every day, worse? Better or worse with anything? How is it affecting your life?",
-    "Tanning, yellowing, dark urine? Weather preference, urine, thirst? Weight, appetite, lumps, night sweats? Fever, sore throat, flu-like illness? Have you ever been sexually active — what contraception, condoms? Travel? Palpitations, breathless on exertion, heavy periods, other bleeding? Stiffness, joints, rash? Medicines, drugs, mood, stress? Bowels, chest pain, cough, smoking? Snoring, job, shifts?",
-    "★ When was your last menstrual period? → 'about eight weeks ago — I've never been regular' → 'Any nausea, particularly in the mornings? Breast tenderness? Passing urine more often? What contraception are you using — any missed pills? Is there any chance you could be pregnant? Any bleeding or tummy pain?'",
-    "'Would a pregnancy be something you'd hoped for, or not?' — asked neutrally, before the diagnosis",
-    "★ 'Amy, the most likely explanation for your tiredness is that you are pregnant. I'm saying that because, one, your last period was around eight weeks ago; two, you have some morning nausea and breast tenderness; and three, everything else in my questioning has been normal. I'd like to do a pregnancy test today to confirm it.'",
-    "'I also thought about an underactive thyroid — less likely, no weather preference or weight change; low iron or anaemia — no heavy periods or palpitations; depression — mood is fine. And the rest I've been checking: glandular fever, diabetes, coeliac disease, liver problems, lymphoma and leukaemia, HIV, sleep problems, and medication effects.'",
-    "'Why?' when asked LMP → 'Tiredness is one of the earliest symptoms of pregnancy, so I ask everyone your age.' If she's upset or pleased — acknowledge, one sentence; the options conversation is a separate consultation",
-    "Summary and invite questions"
-   ],
    "pefe": [
-    "No examination task. If asked: general, vitals, thyroid, nodes, CVS, resp, abdomen; office tests — urine β-hCG, dipstick, BSL",
-    "If the test is positive and time allows: dating by LMP is unreliable (irregular) → early ultrasound; folic acid/iodine; ectopic red flags (pain, bleeding, shoulder-tip pain) → ED; options discussion at a dedicated visit — all options, non-directive; SA — Pregnancy Advisory Centre, MSI, Country Health Connect midwives; TIS 131 450 VERIFY",
-    "Traps: asking periods only in SADMA; not probing once LMP is 8 weeks; assuming the pregnancy is welcome (or not); going into antenatal management instead of finishing the differential list",
-    "Version A → MED-53 · Version B → MED-54"
+    "**No examination task in this version, and investigations and management are not your task.**",
+    "**The one test that follows from the diagnosis: urine or serum βhCG** — and **βhCG in any woman of reproductive age**, whatever else you think is going on.",
+    "**If a PEFE is asked for: general appearance — pallor, jaundice, rash, cachexia · vitals, temperature first · thyroid · full lymph node survey · S1, S2 and murmurs · air entry and added sounds · hepatosplenomegaly · BGL and urine dipstick.** Region plus target, closed-ended, in one sentence.",
+    "First line for undifferentiated fatigue, if asked: **FBC and film · iron studies with ferritin · ESR and CRP · EUC and eGFR · LFT · TSH · fasting glucose or HbA1c · coeliac serology (tTG IgA with total IgA) · βhCG.** VERIFY against current RACGP guidance.",
+    "**Never omit: LMP in any woman of reproductive age · a risk assessment after a positive mood screen · driving advice in a sleepy commercial driver.**"
    ],
-   "fails": [
-    "Not asking LMP/pregnancy inside the differential block — the only positive missed ★",
-    "Not probing once the LMP is eight weeks (nausea, breasts, contraception, chance of pregnancy) ★",
-    "Not started the answer by 6:00; diagnosis without three reasons ★",
-    "Assuming her feelings about a pregnancy; jumping to antenatal advice instead of differentials",
-    "Umbrella words for the rest of the list",
-    "Not naming the pregnancy test today"
-   ],
-   "numbers": [
-    "Tiredness is an early pregnancy symptom (from ~4–6 weeks) · urine β-hCG positive from around the missed period · irregular cycles → date by ultrasound VERIFY",
-    "Ectopic red flags: unilateral pain, bleeding, shoulder-tip pain, dizziness → ED",
-    "Folic acid 400–500 microg (5 mg if high risk) · iodine 150 microg VERIFY",
-    "6 + 2 · P letter inside the block · three reasons",
-    "Pregnancy Advisory Centre SA · healthdirect 1800 022 222 · TIS 131 450",
-    "All other HEMI-AD-COP letters negative — say the list anyway"
+   "ddx": [
+    [
+     "**Pregnancy** — the answer",
+     "**Young woman, LMP about eight weeks ago**, nausea, breast tenderness, everything else normal",
+     "**Last menstrual period — always ask it**",
+     "**Urine or serum βhCG**"
+    ],
+    [
+     "Iron deficiency anaemia",
+     "Menorrhagia, vegetarian diet, exertional dyspnoea, palpitations, pallor",
+     "Blood loss question; brittle nails, pica, restless legs",
+     "FBC and ferritin — moderate"
+    ],
+    [
+     "Hypothyroidism",
+     "Cold intolerance, weight gain, constipation, dry skin, menorrhagia",
+     "Weather preference; goitre",
+     "**TSH first**, free T4 if abnormal"
+    ],
+    [
+     "Coeliac disease",
+     "Greasy stools, bloating, iron or folate deficiency, family history, other autoimmune disease",
+     "Greasy stool question, mouth ulcers",
+     "**tTG IgA with total IgA, while still eating gluten**"
+    ],
+    [
+     "EBV, post-viral fatigue or long COVID",
+     "Preceding sore throat or flu-like illness, cervical nodes, weeks to months of fatigue",
+     "Sore throat question; nodes, **splenomegaly**",
+     "Monospot or EBV serology, FBC and film; **avoid contact sport if splenomegaly**"
+    ],
+    [
+     "**HIV and chronic infection**",
+     "Ever sexually active, unsafe sex, injecting use, night sweats, oral thrush, weight loss",
+     "**'Have you EVER been sexually active?'** — never 'are you'",
+     "**HIV antigen/antibody, hepatitis B and C, syphilis** — not to miss"
+    ],
+    [
+     "**Travel-related infection**",
+     "Recent travel, fever, myalgia, rash — dengue, malaria, typhoid, Ross River virus",
+     "**The travel question is the third infection question for a reason**",
+     "**Thick and thin films ×3, blood cultures, arboviral serology** — not to miss"
+    ],
+    [
+     "Depression",
+     "Low mood, anhedonia, poor sleep, stress, loss of function",
+     "Mood and anhedonia screen, then the full set",
+     "**A positive screen mandates a risk assessment** — high if risk"
+    ],
+    [
+     "Type 2 diabetes · chronic kidney disease",
+     "Polyuria, polydipsia, thrush, blurred vision; nocturia, itch, oedema",
+     "Two E questions; urine dipstick",
+     "BGL and HbA1c; eGFR and urine ACR"
+    ],
+    [
+     "Lymphoma or leukaemia · drugs and alcohol",
+     "Night sweats, weight loss, painless lumps, itch, bruising; antihistamines, antidepressants, opioids, alcohol",
+     "Full node survey and hepatosplenomegaly; the two D questions",
+     "FBC and film, LDH, CXR, **urgent haematology**; medication review"
+    ]
    ]
   },
   "source": "Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf (Version C — Amy Deng, early pregnancy)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Tiredness_and_Fatigue_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Not asking the last menstrual period inside the differential block — 'about eight weeks ago, I've never been regular' is the only positive in the entire history, and it never surfaces from SADMA at 7:30",
-   "FAIL — Not probing once the LMP is eight weeks — nausea, particularly in the mornings? breast tenderness? contraception? any chance you could be pregnant?",
-   "FAIL — Not defining 'tired' first — sleepy, low in energy, or feverish — and running a symptom-led history instead of the nine-letter sweep",
-   "FAIL — Not having started the answer by 6:00 — the partner brief stops you dead there; if you have not begun, you have failed the station",
-   "SAY — 'Amy, the most likely explanation for your tiredness is that you are pregnant. One, your last period was about eight weeks ago; two, morning nausea and breast tenderness; three, everything else in my questioning has been normal. I'd like to do a pregnancy test today'",
-   "FAIL — Umbrella words ('infections, cancers') and drifting into management — three differentials excluded by one finding each, then the rest listed until the bell"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-56",
