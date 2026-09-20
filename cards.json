@@ -7589,8 +7589,8 @@
  {
   "id": "MED-13",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "You are the doctor working in the Emergency Department.",
   "stem": [
    "Jack Mitchell, 40 years old, has presented complaining of chest pain for the last two days. He is a known case of schizophrenia.",
    "Vital signs available from the examiner on request."
@@ -7600,98 +7600,158 @@
    "Explain your most likely diagnosis to the patient",
    "Explain your initial management to the patient"
   ],
-  "time": "8 minutes. Roughly six minutes of history; diagnosis and management share the last two minutes.",
+  "findings": [
+   [
+    "Vital signs from the examiner",
+    "BP 138/86 · PR 82 REGULAR · RR 16 · T 36.8 · SpO2 98% on room air. All within normal limits — HAEMODYNAMICALLY STABLE"
+   ],
+   [
+    "12-lead ECG",
+    "Normal at rest is EXPECTED in stable angina. Look for an old infarct, LVH, and a PROLONGED QTc — antipsychotics prolong it"
+   ],
+   [
+    "Bedside glucose",
+    "Normal. Nobody has checked his sugar or cholesterol in years"
+   ],
+   [
+    "Serial hs-troponin, 0 and 2 hours",
+    "Negative. Ordered because the symptoms are new within 48 hours and he is in the ED. DO NOT discharge on a single negative result"
+   ],
+   [
+    "VERSION — pain at rest volunteered",
+    "This is no longer stable angina. ECG WITHIN 10 MINUTES, IV access, serial troponin, ASPIRIN 300 mg CHEWED, sublingual GTN, analgesia, continuous monitoring, urgent cardiology, admit"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — vitals and bedside tests · open when you would ask",
+  "must": [
+   "FAIL — Not asking about thoughts of harming yourself or anyone else. Single-item fail here.",
+   "FAIL — Diagnostic overshadowing: calling it anxiety or part of his illness, or a thin cardiac workup.",
+   "FAIL — Never asking about pain at rest. Without it, any diagnosis you give is unsupported.",
+   "FAIL — Stopping or changing the risperidone yourself. Recommend and refer, never stop.",
+   "ASK — Do you ever get this pain when you are resting? And how long does the longest last?",
+   "ASK — Family history, smoking, alcohol, diet, exercise, weight. The case was built on them."
+  ],
   "back": {
-   "dx": "Stable angina (ischaemic heart disease) in a man whose cardiometabolic risk is driven by risperidone — central heaviness to the neck, 6/10, brought on by walking and stairs, settles in a few minutes with rest, NEVER at rest, longest episode five minutes. Vitals normal (BP 138/86, PR 82, RR 16, T 36.8, SpO2 98%). Risk load: father MI at 50, pack a day since 20, 6–8 beers most nights, takeaway diet, no exercise, 20 kg gain on risperidone, nobody has checked lipids or sugar in years. Discriminating question: 'do you ever get this pain when you are resting?' — that answer is the diagnosis. Version B: a voice at night and 'people are giving me this pain' — validate, gently decline the belief, carry on. Hidden agenda: frightened of dying like his father; frightened of being dismissed as 'in my head again'.",
+   "dx": [
+    "**Ischaemic heart disease presenting as stable exertional angina** — a narrowed, unruptured plaque, so demand outstrips supply on exertion and settles within minutes of rest. **Say both terms.**",
+    "**The discriminating issue is diagnostic overshadowing, not the angina.** People with severe mental illness die **15 to 20 years earlier**, mostly of cardiovascular disease. Treat his chest pain exactly as you would anyone's.",
+    "The stem names schizophrenia for two reasons: **antipsychotic cardiometabolic risk explaining coronary disease at 40**, and the **three-question psychiatric screen** the examiner is waiting for.",
+    "Three reasons to give him, in plain words: **the character of the pain — central, heavy, to the neck, worse on exertion, better with rest · his risk factors — father's MI at 50, a pack a day, weight, diet, no exercise · the medication that keeps him well raises his heart risk.**",
+    "**Because it is new within 48 hours, do not discharge without excluding ACS.** Classically, new-onset angina within two months sits in the unstable category whatever the pattern — say so and you satisfy either examiner.",
+    "The test that makes the diagnosis is **functional: exercise stress ECG (Bruce protocol, steps every 3 minutes) or stress echo**. **ST depression of 1 mm or more, horizontal or downsloping, is positive.** Add that **CTCA is increasingly first-line**.",
+    "Secondary prevention: **aspirin 100 mg daily** (300 mg stat if ACS suspected), **atorvastatin 40–80 mg nocte**, **GTN spray 400 microg SL, repeat every 5 minutes up to 3 doses**, **metoprolol 25–50 mg BD**.",
+    "**The medication review is the mark most candidates miss.** Risperidone carries a real cardiometabolic burden — **switch via his psychiatrist, to something like aripiprazole; never stop it yourself**, abrupt cessation risks relapse. Metabolic monitoring: **baseline, 3 months, then at least annually**.",
+    "Hold a delusion without colluding or arguing: **'that sounds frightening, and I don't see it the same way you do — but I have no doubt the pain is real and I'm taking it seriously.'** Then add a mental health review to the plan.",
+    "Safety-net verbatim: **'if the pain comes on while you're resting, or lasts more than ten minutes, or comes with sweating, vomiting or breathlessness — call an ambulance on triple zero. Don't drive yourself.'** **Quitline 13 7848.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals from the examiner BEFORE greeting; intro, name, confidentiality statement (unless risk of harm to you or someone else)"
+     "**'Before I start, could I have the vital signs — blood pressure, pulse, respiratory rate, temperature and saturations?'** Then WIPE and the psych habit: **'everything we discuss stays between you and me, unless there's a risk of harm to you or someone else.'** Four seconds, and it unlocks the risk question later."
     ],
     [
      "0:30",
-     "'Tell me more about this pain' — silence; empathy line"
+     "**'Jack, tell me more about this pain'** — then stay quiet. Follow with the empathy line: **'I'm sorry to hear that, and I understand your concern. I'll do my best to find the cause today.'** Both are separately scored."
     ],
     [
      "1:00",
-     "SOCRATES as one fluent run; then the discriminator out loud: pain at rest? longest episode?"
+     "SOCRATES as one fluent run: **where exactly, can you point · what does it feel like, sharp, burning or a heaviness · out of ten · does it travel · constant or coming and going · what brings it on · what makes it better?**"
+    ],
+    [
+     "2:00",
+     "**The question that decides the station, said out loud and unmistakably: 'do you ever get this pain when you are resting — sitting still, or lying in bed at night? And what's the longest one has lasted?'** No rest pain → stable angina. Rest pain, over 20 minutes, or crescendo → ACS."
     ],
     [
      "2:30",
-     "Signpost, then four schizophrenia questions: when diagnosed, treatment, taking it regularly, side effects (weight, postural dizziness, tremor, dry mouth), GP/psychiatrist follow-up"
+     "Signpost, then the four questions for any known condition: **'I noticed you have schizophrenia — can I ask a few quick questions, because it may be relevant to your chest pain?'** → **when were you diagnosed · what treatment, and can you take it regularly · any side effects — weight gain, dizziness on standing, shakiness, dry mouth · do you see your GP and psychiatrist regularly?**"
     ],
     [
-     "3:30",
-     "Three-question screen in order: harm to self or others → hear/see/feel things others don't → anyone trying to harm or control you. Version B: one sentence of validation, note it, move on"
+     "3:15",
+     "**Three questions, not thirty.** **'I ask everyone this — have you had any thoughts of harming yourself, or of harming anyone else?'** → **'do you ever hear, see or feel things that other people don't?'** → **'do you ever feel anyone is trying to harm you, or that someone is controlling you?'** Then get out."
     ],
     [
-     "4:15",
-     "CVS risk factors as one continuous run: family MI/stroke, BP/cholesterol/diabetes, smoking, alcohol, drugs, diet, exercise"
+     "4:00",
+     "Cardiovascular risk factors in one continuous run — **this case was built around them**: **family history of heart attack or stroke · ever told you have high blood pressure, cholesterol or diabetes · smoking, how much and how long · alcohol · recreational drugs · what do you usually eat in a day · any regular exercise?**"
     ],
     [
-     "5:15",
-     "System sweep in one breath: ACS features, pericarditis, heart failure, PE, chest injury/cough, weight loss/lumps, GORD, MSK/rash; other conditions, meds, allergies"
+     "4:45",
+     "The system sweep, rapid fire: **sweating, breathlessness, nausea, palpitations · fever or recent flu-like illness, worse lying flat or better sitting forward · breathless at night, ankle swelling · long travel, calf pain or swelling, haemoptysis · chest injury, cough, phlegm · weight loss, appetite, lumps · tummy pain, vomiting, acid taste, related to meals · any rash, worse on pressing or moving?** Then **SADMA**."
     ],
     [
      "6:00",
-     "Diagnosis: name it, plain-words mechanism, THREE reasons (pain character, risk factors, the antipsychotic); five-second differential insurance line"
+     "Diagnosis in plain words — **a blood tube supplying the heart has narrowed, not blocked** — then **the three reasons**, then the five-second insurance line: **'I did also think about inflammation around the heart, a clot on the lung and reflux, but they don't fit.'**"
     ],
     [
      "7:00",
-     "Management in three headings: find it (ECG + troponin now, stress test ± echo) · protect the heart (aspirin, statin, GTN, Quitline, alcohol, diet, walking) · fix the cause (do NOT stop risperidone; speak to psychiatrist re switch e.g. aripiprazole, mental health review) · 000 safety-net · summary, questions"
+     "Management under **three headings**: tests to confirm it (**ECG now, troponin to exclude a heart attack, then the exercise stress test**) · treatment to protect the heart (**aspirin, statin, spray under the tongue, quitting smoking, alcohol, diet, 30 minutes walking most days**) · **the antipsychotic — don't stop it, I'll speak to your psychiatrist about switching**."
+    ],
+    [
+     "7:40",
+     "Safety-net with **triple zero**, summarise, invite questions. If concerns were never elicited he volunteers it here: **'are you actually going to look into this, or is this going to get put down to my head again?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Before I begin, could I have Jack's vital signs — BP, pulse, respiratory rate, temperature and saturations?",
-    "Everything we talk about stays between you and me — unless there's a risk of harm to you or to someone else. Is that alright?",
-    "Jack, tell me more about this pain. → 'I'm sorry to hear that, and I completely understand your concern. I'll do my best to find the cause today.'",
-    "Point to exactly where? Sharp, burning, or a heaviness? Out of ten? Travel anywhere? Comes and goes or constant? Brings it on? Makes it better?",
-    "★ This next question is important: do you ever get this pain when you are resting — sitting still, or lying in bed at night? And what's the longest one has lasted?",
-    "I saw you have schizophrenia — can I ask a few quick questions? It may actually be relevant to your chest pain. When were you diagnosed? What treatment? Able to take it regularly? Side effects — weight gain, dizzy on standing, shaky hands, dry mouth? See your GP and psychiatrist regularly?",
-    "★ I ask everyone this: any thoughts of harming yourself, or of harming anyone else? Do you ever hear, see or feel things other people don't? Do you ever feel anyone is trying to harm you, or controlling you?",
-    "Version B reply: 'That sounds frightening, and I can hear how distressing it is. I don't see it the same way you do — but I have no doubt the pain is real, and I'm taking it seriously.'",
-    "Anyone in the family had a heart attack or stroke? Ever told high BP, cholesterol or diabetes? Smoke — how much, how long? Alcohol — how much a week? Recreational drugs? What do you usually eat in a day? Any regular exercise?",
-    "With the pain: sweating, SOB, nausea, racing heart? Fever or recent flu-like illness, worse lying flat / better sitting forward? Breathless lying down at night, leg swelling? Long travel, calf pain or swelling? Chest injury, cough, phlegm? Weight loss, appetite, lumps? Tummy pain, vomiting, acid taste, related to eating? Rash, worse on pressing or moving? Other conditions, medications, allergies?"
-   ],
    "pefe": [
-    "No examination task. Ask for vitals only — treat 'just a history station' as the trap; he could be infarcting",
-    "Diagnosis to patient: 'ischaemic heart disease — stable angina. One of the blood tubes supplying your heart has narrowed, not blocked. When you walk the heart needs more oxygen than the narrowed tube can deliver — that shortage is the heaviness. When you rest it settles.' No atherosclerosis / ischaemia / stenosis",
-    "Three reasons: character of the pain (central, heavy, to the neck, exertional, relieved by rest) · risk factors (father at 50, smoking, weight, diet) · the medication he takes for schizophrenia raises heart risk",
-    "Differential insurance line (5 s): 'no sign you're having a heart attack, though we'll check; I also thought about inflammation around the heart, a clot on the lung and reflux — they don't fit'",
-    "Management: FIND — ECG now, troponin (pain new within 48 h), exercise stress ECG (treadmill, faster and steeper every 3 min) often with echo; CT coronary angiography increasingly first-line locally · PROTECT — aspirin, statin, GTN spray for pain, stop smoking (Quitline 13 7848), cut alcohol, diet, build to 30 min walking most days · FIX THE CAUSE — risperidone raises weight, cholesterol, sugar and heart risk; 'I won't change it and you mustn't stop it — stopping suddenly can make you unwell'; speak with psychiatrist about switching (e.g. aripiprazole) + mental health review",
-    "Safety-net: pain at rest, >10 min, or with sweating/vomiting/breathlessness → 000, don't drive. Summary + invite questions",
-    "If the examiner challenges investigations: ECG + serial hs-troponin to exclude ACS because symptoms are new; functional testing (stress ECG/echo) establishes stable angina; CTCA per local pathway"
+    "**Vitals before you greet the patient** — blood pressure, pulse, respiratory rate, temperature and saturations. This man could be infarcting in front of you.",
+    "**12-lead ECG**, and repeat vitals, **BMI and waist**, and **BP in both arms**. A normal resting trace does not exclude stable angina; look for old infarct, LVH and **QTc**.",
+    "**Serial high-sensitivity troponin at 0 and 2 hours** — because he is in the ED with symptoms new within 48 hours. In primary care troponin has little role in assessing stable angina; say which setting you are in.",
+    "**The test that makes the diagnosis: exercise stress ECG or stress echo.** Positive is **ST depression of 1 mm or more, horizontal or downsloping**. **CT coronary angiography is increasingly first-line** in low-to-intermediate risk new chest pain.",
+    "Bloods: **bedside glucose · fasting lipids · HbA1c · FBC, EUC, LFT, TSH**. **Echocardiogram** for structure and function.",
+    "**Do not exercise-stress a patient you have not first cleared of ACS**, and do not discharge on a single negative troponin.",
+    "If he were on **clozapine with a fever**: consider **clozapine-induced myocarditis** — troponin, CRP, ECG, echo, and urgent discussion with his psychiatrist and cardiology."
    ],
-   "fails": [
-    "Never asking about pain at rest and episode duration ★",
-    "Omitting the harm-to-self / harm-to-others question ★",
-    "Saying the pain is stress, anxiety or part of his illness ('it's in my head again')",
-    "Stopping or promising to stop the risperidone; changing it yourself rather than via the psychiatrist",
-    "Chasing a full MSE after the delusion and abandoning the chest pain; colluding with or arguing against the belief",
-    "Skipping vitals; skipping diet and exercise; giving the diagnosis with no reasons; MONA / aspirin-plus-troponin as the whole plan; no stress test named"
-   ],
-   "numbers": [
-    "6 min history · ~1 min diagnosis · ~1 min management · 4 questions per known condition · 3 psych screen questions · 3 reasons · 3–4 differentials in 5 s",
-    "Stress ECG positive: ST depression ≥1 mm horizontal or downsloping; Bruce protocol increments every 3 min VERIFY",
-    "Aspirin 100 mg daily (300 mg stat if ACS) · atorvastatin 40–80 mg nocte · metoprolol 25–50 mg BD · GTN 400 microg SL q5 min up to 3, 000 if pain persists 10 min after first dose · 150 min moderate activity/week VERIFY",
-    "Antipsychotic metabolic monitoring: baseline, 3 months, then at least annually · premature FHx: first-degree male <55, female <65 (father 50) · life-expectancy gap in severe mental illness 15–20 years, mostly cardiovascular",
-    "Variant 1 pain at rest, woke him at 3 am, 30 min → no longer stable angina: ECG within 10 min, IV access, serial hs-troponin, aspirin 300 mg chewed, GTN, analgesia, monitor, urgent cardiology — manage as ACS, keep him in",
-    "Variant 2 'everyone would be better off without me' → stop, explore ideation, plan, intent, means, previous attempts, protective factors; same-day mental health assessment; still finish the chest-pain thread",
-    "Variant 3 'take me off the tablets' / refuses treadmill → don't stop; speak to psychiatrist; respect refusal, explore the worry, still start heart protection · Variant 4 clozapine + fever → clozapine myocarditis (first 2 months): troponin, CRP, ECG, echo, psychiatry + cardiology before any further dose",
-    "Quitline 13 7848 · Ambulance 000 · MedSTAR 1300 13 12 33 · TIS National 131 450"
+   "ddx": [
+    [
+     "**Stable angina / IHD** — most likely",
+     "Central heavy pain to the neck, **exertional, relieved by rest, NO rest pain**, multiple risk factors",
+     "Exertional reproducibility; risk-factor burden; antipsychotic use",
+     "**Resting ECG then exercise stress ECG ± stress echo or CTCA**; lipids, HbA1c, BP — urgent outpatient"
+    ],
+    [
+     "**Acute coronary syndrome** — not to miss",
+     "**Rest pain, crescendo, over 20 minutes**, sweating, nausea, dyspnoea, haemodynamic change",
+     "**'Pain at rest?' 'Longest episode?' 'Getting worse each day?'**",
+     "**ECG within 10 minutes + serial hs-troponin; aspirin; cardiology — emergency**"
+    ],
+    [
+     "**Aortic dissection** — not to miss",
+     "Sudden tearing pain to the back, unequal pulses or BP, hypertension",
+     "**'Did it start suddenly at maximum intensity? Does it go into your back?'**",
+     "**BP in both arms, CT aortogram. Do not anticoagulate first — emergency**"
+    ],
+    [
+     "**Pulmonary embolism** — not to miss",
+     "Pleuritic pain, dyspnoea, calf swelling, immobility (sedentary), clozapine use",
+     "Travel, immobility, calf pain, haemoptysis, tachycardia",
+     "**Wells score, D-dimer or CTPA — emergency**"
+    ],
+    [
+     "Pericarditis",
+     "Sharp, pleuritic, **worse lying flat, better sitting forward**, viral prodrome",
+     "Positional change, fever, rub on auscultation",
+     "ECG — widespread saddle ST elevation, PR depression; echo — urgent"
+    ],
+    [
+     "GORD or oesophageal spasm",
+     "Burning, acid taste, worse lying down or after meals, alcohol and takeaway diet",
+     "Relation to food, waterbrash, nocturnal symptoms",
+     "Trial of PPI — **only after the cardiac cause is excluded**"
+    ],
+    [
+     "Musculoskeletal or costochondritis",
+     "Localised, reproduced by palpation or movement, no exertional pattern",
+     "Point tenderness — **'worse when I press here?'**",
+     "Clinical; simple analgesia. **Tenderness does not exclude ischaemia**"
+    ],
+    [
+     "Panic, anxiety or somatic delusion",
+     "Episodic, hyperventilation, fear of dying; or pain attributed to persecution",
+     "The psych screen questions you have already asked",
+     "**Diagnosis of exclusion only. Never the first answer in a patient with psychosis**"
+    ]
    ]
   },
   "source": "Chest_Pain_Schizophrenia_2_Case_Tasks_Script_Notability.pdf",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Chest_Pain_Schizophrenia_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never asking about pain at rest and the longest episode — 'do you ever get this pain when you are resting?' is the diagnosis; without it stable angina cannot be separated from ACS (★)",
-   "FAIL — Omitting the harm-to-self and harm-to-others question — a single-item fail in any station carrying a psychiatric diagnosis (★)",
-   "SAY — 'That sounds frightening, and I can hear how distressing it is. I don't see it the same way you do, but I have no doubt the pain is real' — neither collude nor argue, then carry on with the chest",
-   "FAIL — Saying the pain is stress, anxiety or part of his illness — he goes flat: 'right, so it's in my head again'",
-   "FAIL — Stopping or promising to stop the risperidone — never stop it; raise the switch (e.g. aripiprazole) through the psychiatrist",
-   "FAIL — Answering management with MONA and stopping — the pass mark is naming the exercise stress test as the key investigation, plus aspirin, statin, GTN, and lifestyle"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Chest_Pain_Schizophrenia_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-14",
