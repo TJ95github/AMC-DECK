@@ -20876,9 +20876,8 @@
  {
   "id": "MED-77",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 120,
-  "setting": "General practice, Kadina, Yorke Peninsula. Examination findings supplied in the stem. Counselling station — two minutes of history restricted to treatments, then five minutes of talking.",
   "stem": [
    "James Whitlock, 27: runny nose for two weeks, getting worse. Known hay fever; mother has asthma. Examination: afebrile, clear watery discharge, enlarged swollen inferior turbinates, respiratory examination normal."
   ],
@@ -20887,95 +20886,215 @@
    "Explain the diagnosis to the patient",
    "Counsel the patient about your immediate and long-term management"
   ],
-  "time": "8 minutes: 2 min treatment-only history (signpost it; he opens with a symptom list — redirect) → five questions: what now · how long/how often · is it helping · what before and did each help · concerns → 45 s diagnosis (name BOTH: rhinitis medicamentosa + hay fever; rebound; reversible) → ★ 'STOP the Otrivin' first, alone, then a pause; warn 1–2 weeks worse → saline/steroid/antihistamine, cost solved → ladder by name → 5-step technique → non-drug → testing THEN immunotherapy 3–5 years → 2-week review, safety-net, summary repeating the stop.",
+  "findings": [
+   [
+    "Examination findings — SUPPLIED IN THE STEM",
+    "AFEBRILE · CLEAR WATERY DISCHARGE · ENLARGED, SWOLLEN INFERIOR TURBINATES · RESPIRATORY EXAMINATION NORMAL. A long stem with the diagnosis and examination already handed over is the exam telling you: DO NOT RE-TAKE A DIAGNOSTIC HISTORY. There is ONE missing piece, you have TWO MINUTES to find it, and the marks live in the management"
+   ],
+   [
+    "READ THE TASK LITERALLY",
+    "It says TREATMENTS TAKEN. It does NOT say risk factors, triggers or symptoms. DO NOT ask about pets, carpets, dust, season, sneezing or itchy eyes. An earlier version allowed a general history; the current wording deliberately does not. Asking anyway burns the two minutes AND signals you cannot follow an instruction"
+   ],
+   [
+    "Q1 — WHAT ARE YOU USING NOW?",
+    "'A spray called OTRIVIN.' Then pin the exposure: HOW LONG, AND HOW OFTEN? → 'ABOUT TWO WEEKS. Both nostrils, THREE OR FOUR TIMES A DAY now.' TWO WEEKS VERSUS THREE DAYS IS THE WHOLE DIAGNOSIS"
+   ],
+   [
+    "Q2 — AND IS IT HELPING?",
+    "'It was BRILLIANT for the first few days — instant. Now it lasts AN HOUR if I'm lucky, and my nose is WORSE THAN BEFORE I EVER STARTED IT.' NO OTHER CAUSE OF RHINITIS BEHAVES LIKE THAT"
+   ],
+   [
+    "Q3 and Q4 — WHAT DID YOU TRY BEFORE, AND DID IT HELP?",
+    "'ANTIHISTAMINE TABLETS first, then a STEROID NASAL SPRAY.' → 'The tablets sorted my EYES out but did NOTHING for my nose. THE STEROID SPRAY ACTUALLY DID WORK — BUT IT WAS EXPENSIVE, SO I STOPPED BUYING IT. That's when I went to the Otrivin.' That sentence tells you the plan is to RESTART that drug more cheaply, not invent a new one"
+   ],
+   [
+    "Q5 — ANY CONCERNS ABOUT THE TREATMENTS?",
+    "TWO hidden concerns, neither volunteered: THE COST ('those sprays add up, I'm saving for a house') and FEAR OF DAMAGE ('my mate said you can wreck your nose with those'). IF YOU NEVER ASK, he raises the damage fear at the very end. BOTH must be answered explicitly"
+   ],
+   [
+    "How he opens, and why you must redirect",
+    "HE LAUNCHES INTO A FULL SYMPTOM LIST — sneezing, itchy eyes, blocked nose — AND KEEPS GOING UNLESS YOU REDIRECT. The role-player is briefed to let the two minutes run out. THE SIGNPOST IS WHAT SAVES THE STATION"
+   ],
+   [
+    "If he cannot name it — PROBE, do not accept vagueness",
+    "'Just something from the chemist.' → IS IT A SPRAY OR A TABLET · COULD YOU DESCRIBE THE BOX, OR IS IT ON YOUR PHONE · DOES THE NAME START WITH OTRI-, DRIX- OR SUD- · AND DOES IT UNBLOCK YOU WITHIN A MINUTE OR TWO? 'Almost instantly' MEANS DECONGESTANT — a steroid spray never works that fast"
+   ],
+   [
+    "CORRECTION — the generic names",
+    "OTRIVIN IS XYLOMETAZOLINE, not oxymetazoline. OXYMETAZOLINE is DRIXINE and VICKS SINEX. SPRAY-TISH is tramazoline. All are imidazoline topical decongestants and management is identical — but DO NOT ASSERT THE WRONG GENERIC. If unsure, say 'A TOPICAL NASAL DECONGESTANT', which is always safe"
+   ],
+   [
+    "SUDAFED IS A DIFFERENT PROBLEM",
+    "Oral PSEUDOEPHEDRINE does NOT cause rebound rhinitis. It causes HYPERTENSION, PALPITATIONS, INSOMNIA and ARRHYTHMIA RISK. If the variant hands you tablets three or four times daily for weeks: CHECK BP AND PULSE, ask about palpitations, headaches and sleep"
+   ]
+  ],
+  "findingsLabel": "The stem gives you everything but one thing — the five questions that find it",
+  "must": [
+   "FAIL — Never saying 'stop the decongestant'. A flawless hay fever plan still fails.",
+   "FAIL — Never finding the spray: two minutes spent on triggers, pets and symptoms.",
+   "FAIL — Accepting 'something from the chemist' and never identifying a decongestant.",
+   "FAIL — Stopping the spray without warning it gets worse first, or ignoring the cost concern.",
+   "ASK — Can I ask what medication you are using now? How long, and how often?",
+   "ASK — Do you have any concerns about the treatments you've been taking?"
+  ],
   "back": {
-   "dx": "Rhinitis medicamentosa (rebound congestion from two weeks of xylometazoline — Otrivin — 3–4 times a day, both nostrils) on a background of allergic rhinitis. Pattern: brilliant for the first few days, now lasts an hour, nose worse than before he started. Treatment history: antihistamine tablets helped eyes not nose; a steroid spray WORKED but he stopped it because of cost (saving for a house) and switched to Otrivin — so the plan is to restart that drug cheaply, not invent a new one. Concerns: cost; 'have I wrecked my nose?' (mate said so) — answer both explicitly: completely reversible. Explain: decongestant squeezes the vessels in the lining — beautiful for 3–5 days, then the lining becomes reliant, each dose wears off into more swelling; three reasons — two weeks, helped then stopped, swollen with clear discharge and no fever (not infection). Immediate: STOP Otrivin outright (tapering prolongs it; one-nostril-at-a-time compromise only if he can't cope), warn 1–2 weeks worse, saline before a daily steroid spray (prescribed, cheaper brand in class), cetirizine 10 mg to cover. Long-term ladder by name: saline → antihistamine (oral cetirizine/loratadine/fexofenadine for eyes, or intranasal azelastine for the nose) → ★ mometasone 2 sprays each nostril daily, preventer not rescue, no immediate relief, up to 2 weeks → Dymista 1 spray bd (bitter) → montelukast if asthma. Five-step technique. Allergen measures. Allergy testing (specific IgE or skin prick) BEFORE immunotherapy (SC or SL, 3–5 years, allergy clinic in Adelaide, PATS). Review 2 weeks not 6, bring the spray.",
+   "dx": [
+    "**RHINITIS MEDICAMENTOSA — rebound nasal congestion from prolonged topical nasal decongestant use — SUPERIMPOSED ON HIS KNOWN ALLERGIC RHINITIS.** **NAME BOTH, in this order: 'you have hay fever, which we already knew — and ON TOP OF THAT you have developed a second problem caused by the spray.'** A candidate who names only the new problem **has answered half the management task.**",
+    "**THE SINGLE-ITEM AUTOMATIC FAIL: if you do not tell him to STOP THE OTRIVIN, you fail — regardless of how good the rest is.** You can deliver a perfect ladder, name every drug, teach flawless technique and arrange immunotherapy, **and still fail, because the presenting problem is a drug the patient is still taking.** **Say it FIRST, say it ALONE, then PAUSE — and say it AGAIN in the summary.**",
+    "**The words matter: 'STOP. NOT CUT DOWN — STOP. That spray is now THE MAIN THING KEEPING YOUR NOSE BLOCKED.'**",
+    "**IMMEDIATELY AFTER, THE WARNING THAT MAKES IT STICK: 'your nose will feel WORSE FOR ONE TO TWO WEEKS. That's the lining recovering. It is expected, it settles, and IT IS THE REASON MOST PEOPLE GIVE UP AND GO BACK TO THE SPRAY — so please don't.'** A patient who is not warned **restarts on day three and the treatment fails.**",
+    "**The mechanism, in one line: the decongestant is a VASOCONSTRICTOR. Used beyond 3–5 DAYS the mucosal vessels become TOLERANT and then DILATE EXCESSIVELY between doses, so each dose WEARS OFF INTO WORSE CONGESTION THAN BEFORE, and he uses it more often.**",
+    "**Three reasons to give him: used it TWO WEEKS, well beyond the safe window · it HELPED AT FIRST AND THEN STOPPED WORKING · the lining is swollen but the DISCHARGE IS CLEAR AND HE HAS NO FEVER, so this is not an infection.** Then **answer the damage fear BEFORE he asks twice: 'this is COMPLETELY REVERSIBLE. The lining recovers once the spray stops. It is NOT permanent damage.'**",
+    "**If he asks to taper: 'tapering just PROLONGS the exposure and most people don't get off it. Stopping outright, WITH A STEROID SPRAY STARTED AT THE SAME TIME to cover you, is the approach that works. If you truly can't manage both nostrils at once, we can STOP ONE SIDE FIRST so you always have an airway.'** **A short oral corticosteroid course exists for severe refractory cases but is NOT first-line and should not be your opening offer.** VERIFY.",
+    "**THE COST CONCERN IS A SCORED ITEM, NOT A COURTESY: 'you mentioned the steroid spray was expensive — that's also WHY IT STOPPED WORKING, because you stopped taking it. There are several brands in that same group and the prices differ a lot. I'LL WRITE YOU A PRESCRIPTION rather than have you buy it over the counter, and I'll choose A CHEAPER OPTION IN THE SAME CLASS.'** **Prescribing an expensive spray and never mentioning cost RECREATES THE PROBLEM.**",
+    "**THE SECOND DISCRIMINATOR IS SPECIFICITY. 'I'll give you some sprays and refer you to a specialist' FAILS a counselling station. ONE NAMED DRUG PER RUNG: saline · CETIRIZINE 10 mg daily or loratadine 10 mg or fexofenadine 180 mg · intranasal AZELASTINE · MOMETASONE 50 microg, TWO SPRAYS EACH NOSTRIL ONCE DAILY · DYMISTA (azelastine + fluticasone propionate) one spray each nostril twice daily · montelukast as an add-on, with the TGA neuropsychiatric warning.**",
+    "**CORRECTION — DOSING AND DURATION. Modern intranasal corticosteroids are ONCE DAILY (mometasone, fluticasone furoate, budesonide); fluticasone propionate and beclometasone may be twice daily initially. If taught 'all nasal steroids are twice a day', DROP IT.** **And IMMUNOTHERAPY IS 3–5 YEARS — six months is only the BUILD-UP PHASE.** **TEST FIRST, THEN DESENSITISE — you cannot desensitise to an unidentified allergen.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE briskly · he launches into sneezing/itchy eyes → ★ 'I can see from your notes you have hay fever, so rather than go back over that, I'd like to spend the next couple of minutes on the treatments you've been using — I suspect that's where the answer is. Is that all right?'"
+     "**Gel, introduce, confirm his name — TEN SECONDS, not thirty. One open question.**"
     ],
     [
-     "0:20",
-     "★ 'What medication are you using now?' → Otrivin · ★ 'how long, and how often?' → 2 weeks, both nostrils, 3–4×/day · 'is it helping?' → brilliant then worse ('a telling pattern — I'll come back to it')"
+     "0:10",
+     "**EMPATHY PLUS THE SIGNPOST, verbatim: 'I'm sorry to hear that, and I can hear how frustrating it is. I can see from your notes you've got HAY FEVER, so rather than go back over all of that, I'd like to spend the next couple of minutes focusing on THE TREATMENTS YOU'VE BEEN USING — because I think that's where the answer is. Is that all right?'** That shows you read the task, gives him permission to talk about DRUGS not symptoms, and explains why you are not asking about his cat."
     ],
     [
-     "1:00",
-     "'What did you try before? Did those help?' → antihistamine tablets: eyes yes, nose no · steroid spray: worked, too expensive, stopped · ★ 'any concerns about the treatments?' → cost; 'have I damaged something?' · 10 s: other meds incl. BP/pain, decongestant tablets?"
+     "0:25",
+     "**Q1, your FIRST question after the signpost — not your third: 'CAN I ASK WHAT MEDICATION YOU ARE USING NOW?' Then 'HOW LONG HAVE YOU BEEN USING IT, AND HOW OFTEN?'**"
+    ],
+    [
+     "0:50",
+     "**Q2: 'AND IS IT HELPING?'** Keep your face neutral, register the rebound pattern, and **complete the history: 'that's a very telling pattern, and I'll come back to it.'**"
+    ],
+    [
+     "1:10",
+     "**Q3 and Q4: 'CAN YOU TELL ME WHAT TREATMENTS YOU TRIED BEFORE THIS?' and 'AND DID THOSE HELP?'**"
+    ],
+    [
+     "1:35",
+     "**Q5: 'DO YOU HAVE ANY CONCERNS ABOUT THE TREATMENTS YOU'VE BEEN TAKING?'** If ten seconds remain: **'any other medicines at all, including anything for blood pressure or pain?' and 'have you been taking any DECONGESTANT TABLETS as well?'**"
     ],
     [
      "2:00",
-     "'Have you heard of nasal sprays causing a rebound effect?' · name both: hay fever hasn't gone away + rhinitis medicamentosa ('inflammation of the nose caused by a medicine') · rebound mechanism · three reasons · ★ 'completely reversible — you haven't done permanent damage'"
+     "**Check understanding first: 'have you heard of nasal sprays causing a REBOUND EFFECT?'** Then **NAME BOTH CONDITIONS, explain the rebound, give the three reasons, and answer the damage fear.** **45 seconds — the marks are in the management, not the explanation.**"
     ],
     [
      "2:45",
-     "★ 'The most important thing, starting today: stop using the Otrivin altogether. Not cut down — stop.' [pause] · ★ 'Your nose will feel worse for one to two weeks — that's the lining recovering; it's why most people give up, so please don't.' · 'wean off?' → no; one-nostril compromise if needed · saline before steroid · daily steroid spray · cetirizine 10 mg daily"
+     "**A single check between diagnosis and management: 'does that make sense so far? Any questions before I go through what we do about it?'** Worth more than a rushed check at 7:50."
+    ],
+    [
+     "2:50",
+     "**THE MOST IMPORTANT SENTENCE IN THE STATION, said first and ALONE: 'the single most important thing I want you to do, starting today, is STOP USING THE OTRIVIN ALTOGETHER. Not cut down — STOP.'** Then **pause.**"
+    ],
+    [
+     "3:05",
+     "**THE REBOUND WARNING, in the same breath.** Then **negotiate if he pushes back — abrupt cessation under steroid cover, with the one-nostril compromise if he truly cannot manage it.**"
     ],
     [
      "3:30",
-     "Cost: 'it's the reason the steroid stopped working — you stopped taking it; I'll write a prescription and pick a cheaper option in the same class; tell me if it's still a problem'"
+     "**The rest of the immediate plan: SALINE spray or wash, used JUST BEFORE the steroid · the INTRANASAL CORTICOSTEROID he already knows works, EVERY SINGLE DAY · a NON-SEDATING ANTIHISTAMINE to cover him while the steroid gets going.**"
     ],
     [
      "4:00",
-     "Ladder by name: 1 saline · 2 antihistamine — oral (cetirizine/loratadine/fexofenadine; fast, good for eyes) or intranasal azelastine (better nose, worse eyes) · 3 ★ mometasone 2 sprays each nostril once daily — preventer not rescue, days to start, 2 weeks for full effect · 4 Dymista 1 spray each nostril bd, bitter · 5 montelukast if asthma emerges"
+     "**THE COST ANSWER — concrete: a prescription rather than over the counter, a cheaper option in the same class, and an offer to look at what is subsidised.**"
+    ],
+    [
+     "4:30",
+     "**THE LADDER BY NAME, one drug per rung, one counselling point each** — and the key teaching on the steroid: **'it gives NO IMMEDIATE RELIEF — a few days to start, UP TO TWO WEEKS for the full benefit. It's a PREVENTER, NOT A RESCUE. That's the single biggest difference between it and the Otrivin.'**"
     ],
     [
      "5:30",
-     "★ Technique, taught: shake · blow nose/saline · look DOWN · opposite hand · aim OUT towards the ear · sniff gently, mouth closed — 'if you taste it you sniffed too hard' (he's been head back, sniffing hard, nosebleeds) · non-drug: pets out of bedroom, mite covers, bedding weekly ≥55 °C, smoke-free house, mask for dust/grain, windows shut and car on recirculate on high-pollen days"
+     "**SPRAY TECHNIQUE — teach the five steps, do not just mention them: SHAKE the bottle · BLOW your nose gently or use saline · BEND YOUR NECK SLIGHTLY FORWARD AND LOOK DOWN, not head back · OPPOSITE HAND, AIM TOWARDS YOUR EAR, never straight up and never at the septum · SNIFF GENTLY with your mouth closed — IF YOU CAN TASTE IT, YOU'VE SNIFFED TOO HARD.**"
+    ],
+    [
+     "6:15",
+     "**Non-drug measures, briefly but say them: pets out of the bedroom · vacuum carpets and mite-resistant covers, BEDDING WEEKLY AT 55 DEGREES OR ABOVE · smoke-free home and car, QUITLINE 13 7848 · a MASK for dust and grain at work · windows shut and car air on recirculate on high-pollen days.**"
     ],
     [
      "6:45",
-     "Testing first (allergen-specific IgE panel or skin prick) → then immunotherapy: purified allergen in increasing doses, injections or sublingual tablets, ~6-month build-up, ★ 3–5 years, allergy clinic in Adelaide, PATS paperwork · safety-net: fever, facial pain, thick/coloured/bloody discharge, nosebleeds, one-sided blockage, loss of smell, wheeze/SOB · ★ review 2 weeks, bring the spray · summary — ★ repeat 'stop the Otrivin'"
+     "**TESTING THEN IMMUNOTHERAPY, in that order: ALLERGEN-SPECIFIC IgE blood test or SKIN PRICK TESTING to identify the trigger · then DESENSITISATION — purified allergen in gradually increasing amounts, INJECTIONS OR TABLETS UNDER THE TONGUE, via an allergy clinic or clinical immunologist, over THREE TO FIVE YEARS, the only treatment that changes the disease.** **PATS for the Adelaide appointment.**"
+    ],
+    [
+     "7:30",
+     "**SAFETY-NET: fever or facial pain · thick, coloured or bloody discharge · nosebleeds · blockage becoming ONE-SIDED · LOSS OF SMELL · wheeze or breathlessness.** Then **REVIEW AT TWO WEEKS, not the usual four to six, because you are withdrawing a drug — 'and bring the spray so I can watch you use it.'** Then **the summary, REPEATING THE STOP.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I can see you have hay fever, so rather than go back over all of that, I'd like to spend the next couple of minutes on the treatments you've been using. Is that all right?'",
-    "★ 'Can I ask what medication you are using now? … How long, and how often? … And is it helping?' / 'What did you try before this? … And did those help?' / ★ 'Do you have any concerns about the treatments you've been taking?'",
-    "Can't name it → 'Is it a spray or a tablet? Describe the box — is it on your phone? Does the name start with Otri-, Drix- or Sud-? Does it unblock you within a minute or two?' → instant = decongestant; a steroid spray never works that fast",
-    "'We already know you have hay fever — but there's a second problem on top of it, caused by the spray. It's called rhinitis medicamentosa — inflammation of the nose caused by a medicine.'",
-    "'Used for more than three to five days, each dose wears off into more swelling than you started with. That's rebound congestion.' / ★ 'This is completely reversible. The lining recovers once the spray stops.'",
-    "★ 'The most important thing, starting today, is to stop using the Otrivin altogether. Not cut down — stop.' / ★ 'Your nose will feel worse for one to two weeks. That's the lining recovering, and it's why most people give up — so please don't.'",
-    "'Couldn't I wean off it slowly?' → 'Tapering prolongs the exposure and most people don't get off it. Stopping outright, with a steroid spray started at the same time to cover you, is what works. If you truly can't manage both nostrils at once, we stop one side first so you always have an airway.'",
-    "'I'll write you a prescription and choose a cheaper option in the same class.' / ★ 'Mometasone, two sprays into each nostril once a day, every day — it's a preventer, not a rescue.' / 'It gives no immediate relief — a few days to start, up to two weeks for the full benefit.'",
-    "★ 'Shake it, blow your nose, look down, opposite hand, aim towards your ear, sniff gently.'",
-    "'We'd test first to find your allergen, then consider desensitisation — injections or tablets under the tongue, over three to five years.' / 'Because we're in Kadina that appointment would be in Adelaide, and I'll complete the travel assistance paperwork.'"
-   ],
    "pefe": [
-    "Role-player: James, 27, warehouse supervisor at a grain depot near Kadina; hay fever since teens; mother asthma; girlfriend, rented carpeted flat, no pets, non-smoker; saving for a house deposit. Opens with a symptom list and keeps going unless redirected. Doesn't volunteer Otrivin or previous treatments until asked. Pushes 'just stop? I can barely breathe' then 'couldn't I wean off?'. If not warned about rebound: 'so it'll be better by tomorrow?'. If only expensive brands named: 'and how much is that one?'. Raises damage fear at the end if never asked. Score: ★ never asked what he's using now = fail; ★ 'stop the Otrivin' omitted = fail",
-    "Stem findings: afebrile, clear watery discharge, enlarged swollen inferior turbinates, chest clear. Decongestant names: Otrivin = xylometazoline · Drixine/Vicks Sinex = oxymetazoline · Spray-Tish = tramazoline · Sudafed = pseudoephedrine (oral)",
-    "Variant 2 — Sudafed tablets 3–4×/day for 3 weeks: NOT rhinitis medicamentosa (rebound is topical imidazolines); oral pseudoephedrine → hypertension, tachyarrhythmia, insomnia, misuse risk — ask palpitations/headache/sleep, check BP and pulse now; still stop it and treat the allergic rhinitis properly",
-    "Variant 3 — refuses to stop ('only thing that lets me sleep'): shared decision-making without capitulating — name the risk ('the spray is no longer treating your blocked nose, it is causing it'), start the steroid now + saline + antihistamine, one-nostril compromise, review at 1 week, document; never prescribe more decongestant, never lecture",
-    "Variant 4 — wheezy at work, night cough: hay fever–asthma link (mother asthmatic) → spirometry, reliever + written action plan if confirmed; thunderstorm asthma advice — stay indoors with windows shut when a spring storm is forecast · Examiner: 'image the sinuses?' → no, CT not indicated in uncomplicated allergic rhinitis · 'oral steroids?' → not first-line; only for severe refractory RM after cessation under INCS cover · 'occasional Otrivin for flights?' → advise against in him (demonstrated dependence); saline + properly dosed INCS instead",
-    "SA: script for a cheaper INCS in class; allergy/clinical immunology clinic Adelaide + PATS; Quitline 13 7848 (household); MedSTAR 1300 13 12 33 not needed"
+    "**The examination is given to you in the stem — do not ask for it again.**",
+    "**Investigations are LONG TERM, not today: ALLERGEN-SPECIFIC IgE (the older term is RAST) for named allergens or a screening panel · SKIN PRICK TESTING. Both are used in Australia.**",
+    "**CT PARANASAL SINUSES IS NOT INDICATED in uncomplicated allergic rhinitis.** Reserve it for **suspected chronic rhinosinusitis — facial pain, purulent discharge, ANOSMIA — or treatment failure.**",
+    "**TOTAL IgE AND BLOOD EOSINOPHILS ARE NOT USEFUL.** **Spirometry if there are any chest symptoms, given the family history of asthma.**",
+    "**If the review at 4–6 weeks shows failure of a nasal steroid, CHECK ADHERENCE AND TECHNIQUE FIRST, before escalating.** The commonest 'treatment failure' is **twice-weekly use, head tipped back, sniffing hard, and a nosebleed.**",
+    "**Repeatedly spraying corticosteroid ONTO THE SEPTUM causes crusting, EPISTAXIS and, rarely, SEPTAL PERFORATION. 'Opposite hand, aim at your ear' is the single instruction that prevents it — and epistaxis is the commonest reason patients abandon the spray.**",
+    "**SA: MM5, Yorke and Northern LHN. Skin prick testing and immunotherapy are Adelaide-based — clinical immunology at the RAH and TQEH. Allergen-specific IgE can be collected locally. PATS beyond 100 km, completed AT REFERRAL, not afterwards.** **Grain dust, hay, canola and stubble burning are live exposures on Yorke Peninsula.**"
    ],
-   "fails": [
-    "Never asking what he is using now ★",
-    "Never saying 'stop the Otrivin' — or burying it halfway down a list, or opening with 'let's cut it down gradually' ★",
-    "'Stop the spray and you'll be fine' — no rebound warning; the patient restarts on day three",
-    "Naming only rhinitis medicamentosa — the task asks for management of both conditions",
-    "'I'll give you some sprays and refer you' — no named drug per rung; recreating his cost barrier with an expensive brand",
-    "'Use it correctly' without the five steps; 'desensitisation takes about six months'; immunotherapy offered without allergy testing first",
-    "Following him into a symptom history and never reaching the drug; a pathophysiology monologue that eats the management time"
-   ],
-   "numbers": [
-    "Topical decongestant max 3–5 days · he has used it 2 weeks · rebound worse 1–2 weeks on stopping · stop abruptly under INCS cover · review 2 weeks (not the usual 4–6)",
-    "Mometasone 50 µg/spray, 2 sprays each nostril once daily · fluticasone furoate 27.5 µg, budesonide 64 µg same regimen · onset days, full effect up to 2 weeks",
-    "Cetirizine 10 mg · loratadine 10 mg · fexofenadine 180 mg daily · azelastine = intranasal antihistamine · Dymista = azelastine + fluticasone propionate, 1 spray each nostril bd · Ryaltris = olopatadine + mometasone",
-    "Technique 5 steps: shake · blow/saline · look down · opposite hand, aim to the ear · sniff gently · testing: allergen-specific IgE or skin prick; no CT · immunotherapy build-up ~6 months, course 3–5 years, SC or SL",
-    "Bedding weekly ≥55 °C · Quitline 13 7848 · PATS for Adelaide"
+   "ddx": [
+    [
+     "**Rhinitis medicamentosa on allergic rhinitis** — the answer",
+     "**Topical decongestant used BEYOND 3–5 DAYS; helped at first, now worse than baseline; escalating frequency**",
+     "**What are you using now, how long, how often, is it helping**",
+     "**STOP the decongestant; cover with an intranasal corticosteroid; warn of 1–2 weeks rebound**"
+    ],
+    [
+     "Acute viral rhinitis",
+     "Clear discharge, recent onset",
+     "Duration and trajectory",
+     "**TWO WEEKS AND WORSENING — a cold IMPROVES by day 10**"
+    ],
+    [
+     "Acute bacterial rhinosinusitis",
+     "Purulent discharge, facial pain, fever, double-worsening",
+     "Temperature, facial pain, discharge colour",
+     "**AFEBRILE, discharge is CLEAR not purulent, no facial pain given**"
+    ],
+    [
+     "Uncontrolled allergic rhinitis alone",
+     "Known hay fever, sneezing, itchy eyes, clear discharge",
+     "Trigger history, seasonality",
+     "**Possible, and it COEXISTS — but it does not explain WORSENING ON TREATMENT**"
+    ],
+    [
+     "**Other drug-induced rhinitis**",
+     "**ASPIRIN and NSAIDs · ACE INHIBITORS · vasodilator antihypertensives · the COMBINED PILL**",
+     "**'Any other medicines, including anything for blood pressure or pain?'**",
+     "Full medication list; withdraw or substitute the agent"
+    ],
+    [
+     "**Oral decongestant misuse**",
+     "**SUDAFED tablets several times daily for weeks; BP raised, palpitations, insomnia**",
+     "**'Have you been taking any decongestant tablets as well?'**",
+     "**NOT rhinitis medicamentosa — it is systemic sympathomimetic effect. CHECK BP AND PULSE; stop it; screen for stimulant misuse**"
+    ],
+    [
+     "Nasal polyps or structural obstruction",
+     "Persistent blockage, ANOSMIA, failure of correct treatment",
+     "Sense of smell; one-sided symptoms",
+     "Consider **if he fails CORRECTLY USED treatment**; ENT referral"
+    ],
+    [
+     "**Sinonasal malignancy**",
+     "**UNILATERAL blockage, BLOODY discharge, ANOSMIA, facial numbness**",
+     "One-sided symptoms, epistaxis",
+     "**Bilateral clear discharge, short history, young — but KEEP THE RED FLAGS IN THE SAFETY-NET**"
+    ],
+    [
+     "**Coexisting undiagnosed asthma**",
+     "**Night cough, WHEEZE with exercise; MOTHER HAS ASTHMA**",
+     "Chest symptoms on direct questioning",
+     "**SPIROMETRY, reliever and a written action plan. THUNDERSTORM ASTHMA advice in spring. Montelukast becomes a reasonable add-on**"
+    ],
+    [
+     "**Failure of adherence and technique, not of the drug**",
+     "**'It didn't work' — used twice a week when bad, head tipped back, sniffing hard, NOSEBLEEDS**",
+     "**Watch him use it; ask HOW, not just whether**",
+     "**CHECK TECHNIQUE BEFORE ESCALATING.** Five steps, aim at the ear"
+    ]
    ]
   },
   "source": "Rhinitis_Medicamentosa_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 27, two weeks of worsening runny nose on Otrivin)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › ENT › Rhinitis_Medicamentosa_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never asking 'what medication are you using now?' — an automatic fail; signpost the treatment-only focus in the first twenty seconds or he keeps describing sneezing and itchy eyes until the two minutes are gone; then duration and frequency (two weeks versus three days is the whole diagnosis), and never accept 'something from the chemist' unidentified (★)",
-   "FAIL — Not saying 'stop the Otrivin' — first, alone, plainly, then a pause, and again in the summary; 'not cut down — stop'; 'let's cut it down gradually' as the opening offer fails (★)",
-   "FAIL — Stopping the spray without the rebound warning — 'your nose will feel worse for one to two weeks; that's the lining recovering, and it's why most people give up and go back to the spray — please don't'; the role-player asks 'so it'll be better by tomorrow?' if you skip it",
-   "FAIL — 'I'll give you some sprays and refer you' — the ladder by name: saline; antihistamine (cetirizine, loratadine, fexofenadine, or intranasal azelastine); steroid spray (mometasone two sprays each nostril daily — a preventer, no immediate relief, up to two weeks); combination (Dymista); add-ons; and answer the cost he raised with a script and a cheaper brand in the same class",
-   "FAIL — Immunotherapy without allergy testing first, or 'desensitisation takes six months' — test (specific IgE or skin prick), then desensitisation, injections or sublingual, three to five years",
-   "DO — 'What did you try before, and did it help?' (the steroid worked but was too expensive — restart it), 'any concerns about the treatments?' (cost, and 'have I damaged my nose?' — completely reversible), the five technique steps taught not mentioned (aim towards the ear, opposite hand, look down, sniff gently), two-week review, safety-net"
-  ]
+  "promptAt": 120
  },
  {
   "id": "MED-78",
