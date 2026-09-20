@@ -20434,9 +20434,8 @@
  {
   "id": "MED-75",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "General practice in Kadina, regional South Australia; you are the GP registrar. A results card is handed to you. Expect a prompt at 5 minutes covering tasks 1 and 2.",
   "stem": [
    "Mr Colin Whitfield, 58, semi-retired farm contractor, returns for the results of blood tests taken a fortnight ago when he attended feeling tired. Hypothyroidism for six years on levothyroxine 100 µg daily; no other regular medication recorded. BP 138/82, HR 76 regular, RR 14, SpO2 98%, T 36.7; he looks well. Results: TSH 2.1 (0.4–4.0), free T4 15 (10–20), total calcium 2.58 (2.15–2.60), albumin 28 (low), corrected calcium 2.82 (HIGH), phosphate 0.68 (low, 0.75–1.50), creatinine 88/eGFR >60, FBE and LFT normal, PTH sent — result not yet available."
   ],
@@ -20446,95 +20445,215 @@
    "Give your most likely diagnosis and your differentials",
    "Explain what happens next"
   ],
-  "time": "8 minutes: results 90 s MAXIMUM (signpost → thyroid in one breath → ★ calcium in four sentences: straight reading normal, stuck to a protein, protein low, corrected is high → check understanding → permission) · history 3½ min in seven blocks: tiredness · ★ stones · bones · groans · moans · ★ cancer · drugs incl. OTC · family/alcohol · ★ ICE before the diagnosis · transition line · four glands, one overactive, usually benign, 'I'm not going to promise you that today' · ★ say the word PTH and what high and low each mean · rest of workup, referral, PATS · fluids, don't cut dairy, avoid diuretics/supplements · safety-net · summary · 'have I missed anything?'",
+  "findings": [
+   [
+    "The results card handed to you",
+    "TSH 2.1 (0.4–4.0) · FREE T4 15 (10–20) — thyroid NORMAL, dose is right · TOTAL CALCIUM 2.58 (2.15–2.60) — LOOKS NORMAL · ALBUMIN 28 g/L, LOW (35–50) · CORRECTED CALCIUM 2.82, HIGH · PHOSPHATE 0.68, LOW (0.75–1.50) · creatinine 88, eGFR above 60 · FBE and LFT normal · PTH SAMPLE SENT, RESULT NOT YET AVAILABLE"
+   ],
+   [
+    "The arithmetic, done out loud",
+    "CORRECTED Ca = total + 0.02 x (40 − albumin) = 2.58 + 0.02 x 12 = 2.82. ABOUT HALF of circulating calcium is bound to albumin, so a LOW albumin lowers the TOTAL without lowering the physiologically active IONISED fraction. READ EVERY LINE OF THE CARD IN THE TWO MINUTES OUTSIDE THE DOOR — saying 'all your bloods are fine' ends the station"
+   ],
+   [
+    "THE PHOSPHATE IS A FREE CLUE",
+    "PTH DRIVES PHOSPHATE OUT IN THE URINE, so primary hyperparathyroidism AND PTHrP-mediated hypercalcaemia both give a LOW phosphate. A HIGH or high-normal phosphate with a high calcium points instead to BONE METASTASES, MYELOMA, VITAMIN D EXCESS or GRANULOMATOUS DISEASE. Saying this marks you as someone who reads the whole panel"
+   ],
+   [
+    "Observations",
+    "BP 138/82 · HR 76 regular · RR 14 · SpO2 98% · T 36.7 · BMI 27. HE LOOKS WELL — so this is an OUTPATIENT problem"
+   ],
+   [
+    "What he gives ONLY on the right question",
+    "STONES: 'a stone about three years ago — WORST PAIN OF MY LIFE', and UP TWICE A NIGHT, thirsty. BONES: hips ache, 'but I've been on tractors forty years'. GROANS: CONSTIPATED, NEW THIS YEAR. MOANS: 'I've been FLAT. Denise has mentioned it.' He does NOT hand over the stone unless you ask about stones or urine, or the constipation unless you ask about bowels"
+   ],
+   [
+    "The cancer block — clean negatives",
+    "WEIGHT STEADY · NO night sweats, fevers or lumps · NO cough or haemoptysis · NEVER SMOKED A DAY. A CLEAN SET OF NEGATIVES HERE IS WHAT MAKES PRIMARY HYPERPARATHYROIDISM THE LIKELY ANSWER RATHER THAN A GUESS"
+   ],
+   [
+    "Drugs and family",
+    "'JUST THE THYROXINE. I DON'T HOLD WITH VITAMINS.' No fluid tablets, no lithium, no calcium or vitamin D, no antacids. No family history of high calcium, stones, neck surgery, or pituitary or pancreatic tumours. Four or five beers Friday, more at harvest — which explains the LOW ALBUMIN"
+   ],
+   [
+    "THE HIDDEN AGENDA",
+    "HIS BROTHER WAYNE DIED LAST YEAR AT 55 OF BOWEL CANCER. He does not raise it in the first six minutes. IF YOU ASK what he was worried about, he tells you and his voice drops. IF YOU NEVER ASK, HE RAISES IT IN THE LAST THIRTY SECONDS — 'it's not cancer, is it?' — when there is no time to deal with it properly"
+   ],
+   [
+    "VERSION B — the dangerous one",
+    "CORRECTED Ca 3.35 · ALP 260 · Hb 96 · ESR 88 · 6 kg WEIGHT LOSS · 40 PACK-YEARS · THORACIC BACK PAIN · DROWSY. PTH SUPPRESSED. MALIGNANCY — PTHrP, bone metastases or myeloma. SAME-DAY IV FLUIDS AND ADMISSION, not a follow-up appointment"
+   ],
+   [
+    "VERSION C — the drug one",
+    "CORRECTED Ca 2.74 · phosphate 1.0 · eGFR 55. On INDAPAMIDE, LITHIUM for bipolar, and CALCIUM 600 mg WITH VITAMIN D. PTH mid-normal to mildly raised. THE DRUG LIST IS THE DIAGNOSIS. Change the diuretic, stop the supplement — BUT NEVER STOP THE LITHIUM YOURSELF"
+   ]
+  ],
+  "findingsLabel": "The results card, what he withholds, and the two harder versions",
+  "must": [
+   "FAIL — Telling him the calcium is normal because the first line of the report says so.",
+   "FAIL — A full stones-bones-groans history with no question about weight, smoking or cough.",
+   "FAIL — Version B handled as a routine follow-up: Ca above 3.0 with drowsiness is admission today.",
+   "FAIL — Advising a low-calcium diet, or false reassurance before the PTH is back.",
+   "ASK — Have you ever passed a kidney stone, or had severe pain in the back or side?",
+   "ASK — What did you think might be causing the tiredness? Anything you're worried about?"
+  ],
   "back": {
-   "dx": "Primary hyperparathyroidism with end-organ disease — corrected calcium 2.82 (total 2.58 + 0.02 × (40 − 28)), phosphate 0.68 low (PTH wastes phosphate — read the whole panel), TSH/T4 normal (dose right, no change), FBE/LFT normal; PTH pending — 'I've already sent that sample, so we won't lose any time'. History: six months of tiredness; ★ renal colic three years ago (overnight at Wallaroo) + nocturia ×2 + thirst; hip ache ('forty years on tractors'); constipation new this year; 'I've been flat' — name low mood as part of the illness, not a weakness; malignancy block clean (weight steady, never smoked, no sweats/lumps/cough); thyroxine only, 'doesn't hold with vitamins'; no FHx of calcium/stones/neck surgery (FHH, MEN 1); beers Friday, more at harvest (explains the low albumin); diet plenty of milk and cheese. Hidden agenda: brother Wayne died of bowel cancer at 55 last year — ask ICE before you explain, then build the explanation around it. Explain: one of four small neck glands behind the thyroid, different job, slightly overactive, pushing calcium out of bone — fits the stone, constipation, thirst, feeling flat; usually benign and treatable; honest middle — 'a couple of other things can raise calcium, one is a cancer somewhere else, which I know you've worried about since your brother'; what makes it less likely: weight steady, never smoked, normal FBE/LFT, no bone pain or lumps. ★ PTH: high → the gland, common, treatable; low → calcium from somewhere else → CXR and further bloods. Workup: vitamin D, magnesium, renal function, 24-h urine calcium, DXA, renal ultrasound (stone history); PTH confirms → endocrinology in Adelaide, PATS via the practice nurse; neck scan only to plan surgery, not to diagnose; some need the gland out, some are watched — decided with the specialist on calcium, kidneys, bone scan. Meanwhile 2–3 L fluids, more in the heat; don't cut dairy; avoid fluid tablets and calcium/vitamin D supplements; safety-net; ring him with the PTH; review two weeks.",
+   "dx": [
+    "**Primary hyperparathyroidism — hypercalcaemia UNMASKED BY A LOW ALBUMIN.** A solitary adenoma in about 85%. **Primary hyperparathyroidism and malignancy together account for about 90% of hypercalcaemia — the first in the community, the second in hospital.**",
+    "**THE DISCRIMINATING ISSUE: explaining a result that LOOKS NORMAL ON THE PAGE but is not — in the patient's language, in under ninety seconds, and then GETTING OUT of the explanation and into the history.** Candidates fail in two OPPOSITE directions: **a physiology tutorial that leaves no time for a single question, or glancing at 'calcium 2.58, normal' and reassuring a man who has hypercalcaemia.**",
+    "**The scripted middle path: NAME THE TEST · NAME THE FLAW IN IT · NAME THE CORRECTED RESULT · CHECK UNDERSTANDING · MOVE.** **'The straight calcium reading looked normal, but a large part of the calcium in your blood is STUCK TO A PROTEIN, and your protein level is low — so that first reading UNDERSTATES it. Once we correct for the protein, your calcium is HIGH.'**",
+    "**Say the mechanism in ONE CLAUSE — 'stuck to a protein' — and no more. No pituitary axis, no vitamin D metabolism, no ionised fractions.** And **never say 'hypercalcaemia' without immediately translating it.**",
+    "**NAME PTH, AND SAY WHAT EACH RESULT MEANS: 'if it's HIGH, it's THE GLAND — common and treatable. If it's LOW, the calcium is coming from SOMEWHERE ELSE, and I'd look for a cause in the chest and the bones with a chest X-ray and further blood tests.'** **'We'll do some more blood tests' is vague and UNMARKABLE — that single exchange is worth more than the entire differential list.**",
+    "**PTH HIGH or INAPPROPRIATELY NORMAL → PTH-DEPENDENT: primary hyperparathyroidism, lithium, FHH. PTH SUPPRESSED → PTH-INDEPENDENT: malignancy, granulomatous disease, vitamin D excess, immobility.**",
+    "**The honest middle on cancer — false reassurance and frightening him sit two words apart. 'It is USUALLY a benign, non-cancerous growth, and it is treatable. But I'm NOT going to promise you that today, because a couple of other things can raise calcium, and I want to RULE THEM OUT properly.'** Then **name the negatives that make it less likely: steady weight, never smoked, normal blood count and liver tests, no bone pain or lumps.**",
+    "**Severity: MILD below 3.0 · MODERATE 3.0–3.5 · SEVERE above 3.5, OR SYMPTOMATIC AT ANY LEVEL.** **Corrected calcium above 3.0, or any confusion, vomiting or drowsiness, means SAME-DAY IV FLUIDS, not a review appointment.**",
+    "**Surgical indications — ANY ONE: symptomatic disease at any severity · corrected calcium MORE THAN 0.25 mmol/L ABOVE the upper limit · AGE UNDER 50 · eGFR BELOW 60, stones or nephrocalcinosis, or 24-h urine calcium above about 10 mmol/day · T-SCORE MINUS 2.5 OR LOWER at any site, or a vertebral fracture.** VERIFY.",
+    "**NEVER RESTRICT DIETARY CALCIUM — it drives PTH HIGHER. Normal intake, generous fluids, 2–3 L a day.** **Correct vitamin D deficiency BEFORE interpreting PTH, because deficiency raises PTH and mimics the picture.** **Do NOT order a sestamibi scan to make the diagnosis — it LOCALISES, it does not diagnose.** **MedSTAR 1300 13 12 33 · PATS for Adelaide appointments · telehealth endocrinology from Kadina.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, DOB · ★ signpost: 'Most of them are reassuring, but there is one I want to go through properly with you — and then I'll need to ask you some questions. Is that alright?' · 'the wife reckoned you'd only get me back in if something was up' → one sentence of acknowledgement, then proceed"
+     "**WIPE, confirm identity, and SIGNPOST THE WHOLE CONSULTATION — this is what buys you the time: 'most of them are reassuring, but there is ONE I want to go through properly with you, and then I'll need to ask you some questions. Is that alright?'** Then **elicit his agenda in one question before you start talking.**"
     ],
     [
-     "0:30",
-     "Thyroid in one breath: 'the TSH tells us whether you're on the right dose — normal, well controlled, T4 normal too, no change to your thyroxine' · 'what's TSH stand for?' → do not take the invitation; one line and move"
+     "0:40",
+     "**MOVE 1, the thyroid IN ONE BREATH: 'the main test we look at is called the TSH — that tells us whether you're on the right dose. Yours is normal, which means your thyroid is well controlled on your current tablet. There's a second hormone called T4 and that's normal too. So NO CHANGE to your thyroxine.'** **If he asks what TSH stands for, DO NOT take the invitation — one clause, then move.**"
     ],
     [
-     "0:55",
-     "★ Calcium in four sentences: 'we measured a mineral called calcium; the straight reading came back normal — but it isn't reliable on its own, because a large part of the calcium is stuck to a protein, and your protein is low, so the reading understates it; we do a calculation that corrects for the protein — and once we do, your calcium is high' · 'so is it normal or isn't it?' → 'the corrected number is the one we go on' · ★ 'is that making sense so far?' · 'not an emergency, you look well, but it needs explaining — may I ask some questions?'"
+     "1:00",
+     "**MOVE 2 and 3, the calcium in FOUR SENTENCES: 'we also measured a mineral called calcium. The straight level came back IN THE NORMAL RANGE — but that measurement ISN'T RELIABLE ON ITS OWN, because a large part of the calcium is STUCK TO A PROTEIN, and if that protein is low, as yours is, the reading comes out FALSELY LOW. So we do a calculation that corrects for it — and once we do, YOUR CALCIUM IS HIGH.'**"
     ],
     [
      "1:40",
-     "Tiredness — two sentences, not two minutes (6 months, done by lunchtime) · ★ stones: 'ever passed a kidney stone, severe back/side pain?' (3 y ago, Wallaroo) · 'passing more urine, up at night?' (×2, thirsty) · bones: aches, fragility fracture, height loss (hips) · groans: constipation (new this year), indigestion/ulcer, nausea/vomiting · moans: mood, memory, concentration, sleep ('flat') → 'that can be part of this picture — not you being difficult'"
+     "**MOVE 4, check and pivot: 'is that making sense so far? It isn't an emergency and you look well, but it does need explaining, and there are a few different reasons it can happen. Is it alright if I ask you some questions to work out which one it is?'** **STOP TALKING AT 2:00.**"
+    ],
+    [
+     "2:00",
+     "**Opening: 'you came in a fortnight ago feeling tired. Tell me about that — how long, and how bad?'** Two sentences, not two minutes."
+    ],
+    [
+     "2:15",
+     "**STONES: have you ever PASSED A KIDNEY STONE, or had severe pain in the back or side · are you PASSING MORE URINE than usual, or getting up at night · are you DRINKING MORE?** **Renal colic plus polyuria makes this END-ORGAN DISEASE, not an incidental finding — and it changes the surgical decision.**"
+    ],
+    [
+     "2:35",
+     "**BONES: any aches in your bones, hips, back · HAVE YOU BROKEN A BONE FROM A SIMPLE FALL · any loss of height?** **GROANS: how are your bowels, any CONSTIPATION · any indigestion or ulcer pain, nausea, vomiting · ever had PANCREATITIS?**"
+    ],
+    [
+     "3:00",
+     "**MOANS: how has your MOOD and CONCENTRATION been · has your wife noticed you being more forgetful or flat?** **Name it back to him as a symptom, not a character flaw — and do not divert into a mental health station.**"
     ],
     [
      "3:15",
-     "★ Cancer block: 'questions I ask everyone with a high calcium' — weight, night sweats/fevers/lumps, cough/haemoptysis, smoking → all clean · drugs incl. OTC: fluid tablets, lithium, calcium/vitamin D, antacids, vitamin A/multivitamins → thyroxine only · FHx: high calcium, stones, parathyroid/neck operation, pituitary/pancreas tumour → no · alcohol (Friday beers, more at harvest) · home/work"
+     "**THE CANCER BLOCK — the one candidates skip, and the one that decides the station: has your WEIGHT changed without trying · any NIGHT SWEATS, fevers or LUMPS · any COUGH or COUGHING BLOOD · DO YOU OR DID YOU SMOKE · any change in bowel or urinary habit · any BONE PAIN, especially in the back?**"
     ],
     [
-     "4:30",
-     "★ ICE before the diagnosis: 'what did you think might be causing the tiredness? anything you've been particularly worried about?' → brother, bowel cancer, 55 → 'I'm sorry about your brother — and I'm glad you told me, because it changes how I explain the next bit' · ★ transition line: 'I've got what I need. Let me tell you what I think is going on and what I'd like to do about it'"
+     "3:45",
+     "**DRUGS: what tablets are you on, INCLUDING ANYTHING OVER THE COUNTER · any FLUID TABLETS · LITHIUM · CALCIUM OR VITAMIN D supplements · antacids · vitamin A or high-dose multivitamins?**"
+    ],
+    [
+     "4:00",
+     "**OTHER CAUSES in three quick questions: any dry cough, breathlessness, rashes or red eyes — SARCOIDOSIS · any kidney trouble · have you been bed-bound or immobile recently · any tremor, sweats or palpitations?**"
+    ],
+    [
+     "4:15",
+     "**FAMILY: anyone with HIGH CALCIUM, KIDNEY STONES, a PARATHYROID OR NECK OPERATION, or a PITUITARY OR PANCREAS TUMOUR?** That screens **MEN 1 and familial hypocalciuric hypercalcaemia.** Then **alcohol, diet, fluid intake, occupation.**"
+    ],
+    [
+     "4:35",
+     "**ICE, BEFORE you give the diagnosis: 'what did you think might be causing the tiredness? IS THERE ANYTHING YOU'RE ESPECIALLY WORRIED ABOUT?'** Then **the transition line even if the history feels unfinished: 'I've got what I need. Let me tell you what I think is going on.'**"
     ],
     [
      "5:10",
-     "Diagnosis: 'one of four small glands in your neck — the parathyroid glands, behind your thyroid but a completely different job — has become slightly overactive and is pushing calcium out of your bones into your blood; that fits the kidney stone, the constipation, the thirst and feeling flat; usually a benign growth, not a cancer, treatable' · 'but you can't be sure' → ★ 'not today, and I'm not going to pretend otherwise' — the honest middle; why cancer is less likely (weight, never smoked, FBE/LFT normal, no bone pain/lumps); 'I want to prove it rather than assume it'"
+     "**The diagnosis, built around what he told you: 'one of FOUR SMALL GLANDS in your neck — the PARATHYROID glands, which sit behind your thyroid but do a COMPLETELY DIFFERENT JOB — has become slightly overactive, and it's pushing calcium OUT OF YOUR BONES into your blood. That fits with the kidney stone, the constipation, the thirst and feeling flat.'**"
     ],
     [
-     "6:15",
-     "★ 'There is one blood test that separates those two possibilities, and it's called PTH. If it's high, it's the gland — common and treatable. If it's low, the calcium is coming from somewhere else and I'd look for a cause in the chest and the bones with a chest x-ray and further blood tests. I've already sent that sample' · alongside: vitamin D, magnesium, kidney function, 24-h urine calcium, bone density scan, renal ultrasound (stone) · PTH confirms → endocrinologist in Adelaide, PATS via the practice nurse · 'an operation?' → some do, some are watched; decided with the specialist on calcium, kidneys, bones; neck scan is for surgical planning, not diagnosis"
+     "6:00",
+     "**Name PTH and both possible results.** Then **the rest of the workup: vitamin D, magnesium, renal function, a 24-HOUR URINE CALCIUM, DXA, and a renal tract ultrasound given the stone.** Then **referral, and the neck-scan answer: 'we don't scan the neck to MAKE the diagnosis, we scan it to PLAN the surgery.'**"
     ],
     [
-     "7:15",
-     "Meanwhile: 2–3 L/day, more in the heat on the property · ★ 'don't cut down on dairy — people assume they should and it makes it worse' · avoid fluid tablets, no calcium/vitamin D supplement without checking · ★ safety-net: very thirsty, vomiting, confused/drowsy, passing much more urine → straight back or ED · 'I'll ring you myself when the PTH is back; see you in two weeks either way' · summary · ★ 'have I missed anything you wanted to ask?'"
+     "7:00",
+     "**Meanwhile: FLUIDS 2–3 L A DAY, more on hot days out on the property · DON'T CUT DOWN ON DAIRY, people assume they should and it makes it worse · avoid fluid tablets · don't start calcium or vitamin D without checking.**"
+    ],
+    [
+     "7:30",
+     "**SAFETY-NET by named symptom: very thirsty, VOMITING, CONFUSED OR DROWSY, or passing much more urine → come straight back or go to the emergency department.** Then **'I'll ring you myself when the PTH is back' — summarise, and 'have I missed anything you wanted to ask?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Most of them are reassuring, but there is one I want to go through properly with you.' / 'The main test we look at is the TSH — that tells us whether you're on the right dose. Yours is normal, which means your thyroid is well controlled on your current tablet.'",
-    "★ 'We also measured a mineral in your blood called calcium. The straight calcium level came back in the normal range — but that measurement isn't reliable on its own, because a large part of the calcium in your blood is stuck to a protein, and if that protein is low, as yours is, the reading comes out falsely low. So we do a calculation that corrects for the protein — and once we do that, your calcium is high.'",
-    "'Hang on — so is it normal or isn't it?' → 'The first number is normal. The corrected number — the one that actually reflects what's in your body — is high. It's the corrected one we go on.' / ★ 'Is that making sense so far?' / 'Is it alright if I ask you some questions to work out which cause it is?'",
-    "★ 'Have you ever passed a kidney stone, or had severe pain in the back or side? Any passing more urine than usual, or getting up at night to go?'",
-    "'How has your mood been? Any trouble with memory or concentration?' → 'Thank you for telling me — that can be part of this picture, and it's not you being difficult.'",
-    "★ 'Now some questions I ask everyone with a high calcium. Has your weight changed without trying? Any night sweats, fevers or lumps? Any cough, or coughing blood? Do you or did you smoke?' / 'What tablets are you on, including anything over the counter — fluid tablets, lithium, calcium or vitamin D, indigestion powders?'",
-    "★ 'What did you think might be causing the tiredness? Is there anything you're especially worried about?' (before the diagnosis) / 'I've got what I need. Let me tell you what I think is going on and what I'd like to do about it.'",
-    "★ 'One of four small glands in your neck — the parathyroid glands, which sit behind your thyroid but do a completely different job — has become slightly overactive, and it's pushing calcium out of your bones into your blood.' / ★ 'It is usually a benign growth, and it is treatable — but I'm not going to promise you that today, because a couple of other things can raise calcium, and one of those is a cancer somewhere else, which I know is what you've been worrying about since your brother.'",
-    "★ 'There is one blood test that separates those two possibilities, and it's called PTH — the hormone those neck glands make. If it's high, it's the gland. If it's low, the calcium is coming from somewhere else and I'd look for a cause in the chest and the bones.' / 'Would I need an operation?' → 'Some people do and some are safely watched with regular blood tests. That decision depends on your calcium, your kidneys and your bone scan, and it's made with the specialist.'",
-    "★ 'Keep your fluids up — two to three litres a day, more on hot days out on the property — and don't cut down on dairy; people assume they should and it actually makes it worse.' / ★ 'If you become very thirsty, start vomiting, get confused or drowsy, or you're passing much more urine, don't wait for the appointment — come straight back or go to the emergency department.' / 'I'll ring you myself when the result is back. Have I missed anything you wanted to ask?'"
-   ],
    "pefe": [
-    "Role-player: Colin, 58, property 20 min outside Kadina, wife Denise, two adult children in Adelaide; seeding/harvest for three neighbours; understated, dry, minimising, watches your face. Levothyroxine only, no supplements ('don't hold with vitamins'), never smoked, 4–5 beers Friday/more at harvest, plenty of milk and cheese. Father MI at 70, mother 84 arthritis, brother Wayne died at 55 of bowel cancer last year. Does not hand over the stone unless asked about stones/urine; constipation only if asked about bowels. Pushes 'so is it normal or isn't it?' once; asks 'is it dangerous?', 'would I need an operation?'; if you lecture physiology: 'you've lost me'; if you use 'cancer' without warning: two-second silence; ★ if you say his calcium is normal he thanks you and stands up to leave — let them fail. Hidden agenda on ICE, else in the last 30 s: 'Doctor — it's not cancer, is it? My brother died of it last year'",
-    "Results card: TSH 2.1, fT4 15, total Ca 2.58, albumin 28, corrected 2.82, PO4 0.68 low, creatinine 88/eGFR >60, FBE/LFT normal, PTH pending. Score out of 14, pass 9; automatic fail: telling him his calcium is normal, or never asking a single cancer question",
-    "Version B — corrected Ca 3.35, weight loss, drowsy: register changes immediately — 'high enough to explain the drowsiness and sickness, and I'm not comfortable sending you home; with the weight loss I need to look in the chest and bones as well as the neck; a drip and scans, this afternoon at the hospital' · 'is it cancer?' → 'one of the things I'm looking for; today's tests will tell us' (never 'no') · stock to feed → help ring someone, cannot wait till Monday · to examiner: admit, IV normal saline, monitor fluids/electrolytes/renal function, no loop diuretic unless overloaded; PTH, PTHrP, SPEP + FLC, ALP, myeloma screen, TSH, vitamin D; CXR, ECG, directed imaging; IV bisphosphonate once rehydrated, dose adjusted for renal function (response 2–4 days), calcitonin if faster needed; transfer to a larger centre, MedSTAR 1300 13 12 33 if deteriorating VERIFY doses against TG",
-    "Version C — corrected 2.74 on indapamide + lithium + a calcium supplement: switch the thiazide, stop the supplement, recheck in a fortnight; ★ 'please don't stop the lithium yourself — I'll speak with your psychiatrist and we decide together'; bones concern → 'a high calcium is doing your bones no favours either; a DXA tells us what you actually need'. ADDED: lithium hypercalcaemia has a high/inappropriately normal PTH and low urinary calcium — mimics both PHPT and FHH; withdraw thiazide and supplement, recheck 2–4 weeks; still up → work up as PHPT; never commit to parathyroid surgery with a thiazide on board",
-    "Rescue line for any variant: 'I don't want to guess at this today. Here is the one test that will tell us, and here is what I'll do with each possible answer'",
-    "SA: endocrinology in Adelaide (RAH/FMC), PATS set up by the practice nurse; Wallaroo Hospital for the stone history; heat/dehydration on a Mid North property is the realistic way he deteriorates before his appointment; MedSTAR 1300 13 12 33 · TIS 131 450"
+    "**No examination required here — say you would examine after the discussion. He looks well, so this is outpatient.**",
+    "**Do now: assess hydration and conscious state · REPEAT corrected calcium with albumin on a FASTING sample, no prolonged tourniquet · PTH, the single discriminating test · phosphate, magnesium, UEC and eGFR, 25-OH VITAMIN D, ALP, FBE, ESR · review and stop contributing drugs · 2–3 L of fluid a day starting today.**",
+    "**Do next: 24-HOUR URINARY CALCIUM and the CALCIUM:CREATININE CLEARANCE RATIO, which excludes FHH · DXA at LUMBAR SPINE, HIP and the DISTAL ONE-THIRD RADIUS — the CORTICAL site preferentially lost in hyperparathyroidism · renal tract ultrasound or CT KUB for stones and nephrocalcinosis · endocrinology referral, telehealth from Kadina · localisation with sestamibi plus neck ultrasound ONLY once the diagnosis is confirmed and surgery is planned.**",
+    "**If PTH is suppressed, the first four tests are: CHEST X-RAY · SERUM AND URINE PROTEIN ELECTROPHORESIS WITH FREE LIGHT CHAINS · ALP · PTHrP.**",
+    "**Acute severe: REHYDRATE FIRST with 0.9% sodium chloride, typically 4–6 L over 24 hours at 200–500 mL/hour, watching for overload in the elderly or in cardiac or renal failure. THEN a bisphosphonate once volume-replete — zoledronic acid 4 mg IV over at least 15 minutes, effect in 2–4 DAYS. Calcitonin for the first 24–48 hours if a faster fall is needed. Corticosteroids for lymphoma, granulomatous disease and vitamin D toxicity. Dialysis for severe hypercalcaemia with renal failure.** VERIFY.",
+    "**FLUIDS BEFORE BISPHOSPHONATE — a bisphosphonate in a volume-depleted patient risks acute kidney injury. And a LOOP DIURETIC is NOT first line; it is only for fluid overload after rehydration.**",
+    "**The ECG shows a SHORT ST SEGMENT AND SHORT QT. The trap: peaked T waves belong to HYPERkalaemia, not this. Remember the QT, not the T-wave shape.** VERIFY."
    ],
-   "fails": [
-    "Telling him his calcium is normal (reading the total line) ★",
-    "Never asking a single cancer question ★",
-    "Answering 'what's TSH stand for?' with a physiology lecture — history starts at three minutes and the cancer block is never reached",
-    "'Almost certainly nothing sinister' before the PTH is back; or leaving him thinking cancer is likely — the two traps sit two words apart",
-    "'We'll do some more blood tests' — vague and unmarkable; not saying PTH and what high and low each mean",
-    "Promising surgery; scanning the neck to make the diagnosis; telling him to cut dairy; ending on 'see you in two weeks' with no named deterioration symptoms",
-    "Skipping ICE so the brother lands in the last thirty seconds; Version B — negotiating a Monday admission or answering 'is it cancer?' with 'no'; Version C — stopping lithium unilaterally"
-   ],
-   "numbers": [
-    "Corrected Ca = measured + 0.02 × (40 − albumin g/L) · here 2.58 + 0.02 × 12 = 2.82 · reference ~2.15–2.60 · mild <3.0 · moderate 3.0–3.5 · severe >3.5 or symptomatic · ★ >3.0 stops being a GP problem",
-    "Phosphate 0.68 low — PTH wastes phosphate · vitamin D >~50 nmol/L before PTH is interpreted · Ca:Cr clearance ratio <0.01 = FHH, the patient you must not operate on · DXA: lumbar spine, hip, distal one-third radius",
-    "Surgical triggers: age <50 · corrected Ca >0.25 above upper limit · eGFR <60 · stones/nephrocalcinosis · osteoporosis or vertebral fracture VERIFY against TG and the treating unit",
-    "Timing: results 90 s max · history 3½ min in seven blocks · dx/plan/safety-net 3 min · prompt at 5 min",
-    "Fluids 2–3 L/day oral; hospital: normal saline first, bisphosphonate after rehydration · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Primary hyperparathyroidism — solitary adenoma in about 85%** — the answer",
+     "**Well patient, MILD calcium, LOW PHOSPHATE, stones, incidental finding**",
+     "Renal colic, fracture, constipation, low mood",
+     "**PTH RAISED OR INAPPROPRIATELY NORMAL**"
+    ],
+    [
+     "**Malignancy — PTHrP-secreting squamous cancer · bone metastases · myeloma · lymphoma**",
+     "**HIGHER calcium, FASTER onset, weight loss, bone pain, ANAEMIA, raised ESR or ALP, smoker**",
+     "Weight, sweats, cough, haemoptysis, back pain, breast and prostate",
+     "**PTH SUPPRESSED → CXR, myeloma screen, PTHrP, imaging** — urgent"
+    ],
+    [
+     "**Thiazide · lithium · calcium and vitamin D excess · calcium-alkali syndrome · vitamin A**",
+     "**The medication list. SUPPLEMENTS ARE OFTEN NOT VOLUNTEERED**",
+     "**The explicit OVER-THE-COUNTER question**",
+     "**Stop the drug, recheck in 2–4 weeks. NEVER STOP LITHIUM UNILATERALLY — ring the psychiatrist**"
+    ],
+    [
+     "**Sarcoidosis · tuberculosis · other granulomatous disease**",
+     "**Dry cough, dyspnoea, ERYTHEMA NODOSUM, UVEITIS, hilar nodes**; TB risk factors",
+     "Respiratory and eye symptoms, travel and contact history",
+     "**PTH suppressed, RAISED 1,25-VITAMIN D, ACE, CXR** — prompt"
+    ],
+    [
+     "Tertiary hyperparathyroidism in CKD · post-transplant",
+     "Known kidney disease, dialysis, long history",
+     "eGFR, phosphate, previous results",
+     "eGFR and PTH trend"
+    ],
+    [
+     "**Familial hypocalciuric hypercalcaemia**",
+     "**LIFELONG mild calcium, ASYMPTOMATIC, positive FAMILY history, NO complications**",
+     "Family history, previous calcium results going back years",
+     "**24-h urine calcium LOW; calcium:creatinine clearance ratio BELOW 0.01. DO NOT OPERATE**"
+    ],
+    [
+     "**Lithium-associated hypercalcaemia**",
+     "**Long-term lithium; PTH HIGH or inappropriately normal WITH a LOW urinary calcium — it MIMICS both primary HPT and FHH**",
+     "Duration of lithium, concurrent thiazide",
+     "**Withdraw the thiazide and supplement, recheck in 2–4 weeks. DO NOT commit to parathyroid surgery while a thiazide is on board**"
+    ],
+    [
+     "Immobilisation · adrenal insufficiency · thyrotoxicosis",
+     "Recent immobility or bed rest; postural drop; tremor, sweats, palpitations",
+     "Recent admission or fracture; weight loss; weather preference",
+     "Mobilise; morning cortisol; TSH"
+    ],
+    [
+     "**Vitamin D deficiency mimicking the picture**",
+     "**Deficiency RAISES PTH and looks like primary hyperparathyroidism**",
+     "25-OH vitamin D level",
+     "**CORRECT VITAMIN D to above about 50 nmol/L BEFORE you interpret PTH**"
+    ],
+    [
+     "Spurious sample",
+     "Prolonged tourniquet, dehydration, non-fasting",
+     "How the sample was taken",
+     "**Repeat corrected calcium on a FASTING sample with no prolonged tourniquet**"
+    ]
    ]
   },
   "source": "Hypercalcaemia_Hyperparathyroidism_2_Case_Tasks_Script_Notability.pdf (Colin Whitfield, 58, Kadina, corrected calcium 2.82, PTH pending)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Electrolytes › Hypercalcaemia_Hyperparathyroidism_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Telling him his calcium is normal — the role-player accepts it, thanks you and stands up to leave; 'the straight reading looked normal — but once we correct it for your protein level, your calcium is high'; and answer 'so is it normal or isn't it?' clearly (★)",
-   "FAIL — Never asking a single cancer question — weight, night sweats, fevers, lumps, cough or haemoptysis, smoking; a clean set of negatives is what makes primary hyperparathyroidism the likely answer rather than a guess (★)",
-   "FAIL — Vague 'more blood tests' — name PTH and say what each result means: 'if it's high, it's the gland — common and treatable; if it's low, the calcium is coming from somewhere else and I'd look in the chest and the bones'; that single exchange is worth more than the whole differential list",
-   "FAIL — Not asking what he was worried about before giving the diagnosis — his brother died of bowel cancer; if you never ask, he raises it in the last thirty seconds; then the honest middle: usually benign and treatable, 'but I'm not going to promise you that today'",
-   "FAIL — Results running past ninety seconds — TSH in one breath ('normal means the dose is right', no physiology when he asks what it stands for), calcium in four sentences, 'is that making sense?', permission to pivot; then stones and urine, bones, bowels, mood — link the stone, the nocturia and the constipation aloud",
-   "FAIL — Ending on 'see you in two weeks' — fluids two to three litres and more in the heat, do not cut down on dairy, no fluid tablets or supplements, and the named deterioration symptoms: very thirsty, vomiting, confused or drowsy, passing much more urine → straight back or the emergency department; 'I'll ring you myself'"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-76",
