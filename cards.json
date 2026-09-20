@@ -16250,8 +16250,8 @@
  {
   "id": "MED-58",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, 90 minutes from Adelaide. You are the GP; a colleague saw her last week and arranged bloods.",
   "stem": [
    "Margaret Hollis, 50, attended a week ago with tiredness. She looked pale; your colleague arranged blood tests. She has returned to discuss the results.",
    "Results: haemoglobin low · MCV low · MCH low · MCHC low · ferritin low · anisocytosis and poikilocytosis on film."
@@ -16262,94 +16262,212 @@
    "Explain your diagnosis and differentials",
    "Outline your management"
   ],
-  "time": "8 minutes, four tasks. Budget 1:30 results · 3:00 history (six questions) · 1:30 diagnosis and differentials · 1:30 management · 0:30 close. Open before you read out numbers. Cause first, iron last. Both scopes. No FOBT.",
+  "findings": [
+   [
+    "The result card",
+    "HAEMOGLOBIN LOW · MCV LOW · MCH LOW · MCHC LOW · FERRITIN LOW · film shows ANISOCYTOSIS and POIKILOCYTOSIS. Reference ranges are printed on the card"
+   ],
+   [
+    "What makes the diagnosis specific",
+    "A LOW MCV ALONE only tells you the anaemia is MICROCYTIC — which includes thalassaemia, sideroblastic anaemia and anaemia of chronic disease. THE LOW FERRITIN is what makes it IRON DEFICIENCY"
+   ],
+   [
+    "Aniso and poikilo — get them the right way round",
+    "ANISOCYTOSIS = variation in SIZE. POIKILOCYTOSIS = variation in SHAPE. A small mark that many candidates drop"
+   ],
+   [
+    "What she gives only if you ask the specific question",
+    "'How is your diet?' → 'healthy and balanced.' 'DO YOU EAT RED MEAT?' → 'yes, three or four times a week.' 'How are your bowels?' → 'fine, doctor.' 'ANY DARK OR BLACK STOOLS?' → 'yes, for about three months.' 'Any medications?' → 'no, nothing.' 'ANYTHING YOU BUY YOURSELF FOR PAIN?' → 'Nurofen for my back, most days'"
+   ],
+   [
+    "The two red flags",
+    "DARK STOOLS FOR THREE MONTHS and SIX KILOGRAMS LOST IN TWO MONTHS. Periods stopped nine months ago and were normal. Bowel screening kit came in the post and is still in a drawer. No family history"
+   ],
+   [
+    "Examination — general appearance and vitals",
+    "PALE with CONJUNCTIVAL PALLOR. Pulse 96, NO POSTURAL DROP"
+   ],
+   [
+    "Examination — cardiovascular",
+    "SOFT EJECTION SYSTOLIC MURMUR — a flow murmur of anaemia"
+   ],
+   [
+    "Examination — abdomen and nodes",
+    "MILD EPIGASTRIC TENDERNESS. No mass, no organomegaly, NO LYMPHADENOPATHY including the left supraclavicular node"
+   ],
+   [
+    "Rectal examination",
+    "MELAENA. Ask for it by name, with consent and a chaperone — candidates routinely omit it"
+   ],
+   [
+    "VERSION — the multiple findings drama",
+    "She is ALSO vegetarian, ALSO had heavy periods before they stopped, AND takes ibuprofen, AND has dark stools and weight loss. Several positives mean you asked good questions. NAME THEM ALL, then choose one and justify it by the red flag"
+   ]
+  ],
+  "findingsLabel": "The result card, what she withholds, and the examination",
+  "must": [
+   "FAIL — Leading the management with iron. Find and treat the cause is the first sentence.",
+   "FAIL — Advising a colonoscopy only. Say BOTH: upper endoscopy AND colonoscopy.",
+   "FAIL — Accepting 'a healthy balanced diet', or accepting 'my bowels are fine'.",
+   "FAIL — Ordering a faecal occult blood test in a symptomatic, already anaemic patient.",
+   "ASK — Do you eat red meat? And have you had any dark or black stools?",
+   "ASK — How much weight, over what period? And anything you buy yourself for pain?"
+  ],
   "back": {
-   "dx": "Iron deficiency anaemia (low Hb, low MCV/MCH/MCHC, low ferritin, aniso- and poikilocytosis) in a post-menopausal woman with two red flags found only on specific questioning: three months of darker stools and 6 kg unintentional weight loss in two months, plus daily over-the-counter ibuprofen, some indigestion, an undone bowel screening kit, and melaena on rectal examination. Concern: gastrointestinal malignancy (colorectal or gastric). Differentials, specific: NSAID-related peptic ulcer (bleeding); low dietary intake (e.g. vegetarian diet without red meat — not her); blood loss from heavy periods, surgery, bleeding episode, frequent donation (not her); malabsorption — coeliac disease, inflammatory bowel disease. Rule: iron deficiency in any man or any post-menopausal woman without an obvious cause → endoscopy AND colonoscopy. The first management sentence is the one that passes: find the cause and treat the cause — refer for both scopes; then stop the NSAID, coeliac serology, iron replacement alongside with the priority stated, recheck, safety net, PATS.",
+   "dx": [
+    "**Iron deficiency anaemia from occult gastrointestinal blood loss — and gastrointestinal malignancy until proven otherwise**, with a bleeding NSAID-related peptic ulcer alongside it.",
+    "**The discriminating issue is whether ruling out cancer is the first thing out of your mouth in the management task, before iron is mentioned at all.** **'I will start you on iron and then arrange a scope' fails the station in that order.**",
+    "**If you can say only one sentence, say this one: 'The first and most important step is to find and treat the cause, which means referring you for both an endoscopy and a colonoscopy.'** That sentence alone passes the management domain.",
+    "**Four causes of iron deficiency: LOW INTAKE · MALABSORPTION · BLOOD LOSS · INCREASED DEMAND.** Every one of those blocks is a scored item, and **vague differentials do not score** — say **'a diet low in iron, for example a vegetarian diet without red meat'**, not 'diet'.",
+    "**The rule: iron deficiency in ANY man or ANY post-menopausal woman with no obvious cause is investigated with BOTH scopes, even when a plausible alternative cause exists.**",
+    "**Explicitly wrong: a therapeutic trial of oral or parenteral iron in place of full investigation · deferring investigation until the haemoglobin responds · FOBT in a symptomatic patient · transfusion in a stable outpatient.** **Acceptable: starting oral iron alongside, provided the priority is stated clearly.**",
+    "**Name the cancer concern with the formula: 'I am concerned about the possibility of a cancer in the bowel or the stomach' — then immediately the reasons: the weight loss, and the dark stools, which mean you are bleeding somewhere.** To 'are you sure?': **'I am not sure, and that is exactly why I want the tests.'** Never deny it.",
+    "**Stop the NSAID and substitute something safer.** **A GASTRIC ulcer is biopsied and re-scoped to confirm healing, because it can be malignant; a DUODENAL ulcer is not.** **H. pylori positive → eradication therapy.**",
+    "**Iron replacement after the cause: oral iron on an empty stomach with vitamin C, away from tea, calcium and antacids; alternate-day dosing improves absorption. IV iron if oral is not tolerated, not absorbed, or replacement must be rapid.** **Recheck FBE and ferritin at about four weeks; continue iron about three months after the haemoglobin normalises.** VERIFY doses.",
+    "**Ferritin is an acute phase reactant — a normal ferritin with a transferrin saturation under about 16% is still iron deficiency.** **Both scopes normal → coeliac serology, then capsule endoscopy or CT enterography.** **PATS for metropolitan travel · Cancer Council SA 13 11 20 · TIS 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, confirm name, ★ 'how can I help you today?' before any numbers; 'I have them in front of me — let's go through them together'"
+     "**Open before you read out a single number**: **'good morning, my name is Dr [name]. Am I speaking with Margaret? How can I help you today?'** Twenty seconds of ordinary conversation is a scored item — **opening with 'your haemoglobin is low' reads as cold.**"
     ],
     [
      "0:20",
-     "Six lines, no more: red cells carry oxygen using haemoglobin, made of iron · 1 total Hb low · 2 cell size decreased · 3 haemoglobin per cell and its concentration low · 4 ferritin (iron store) low · 5 anisocytosis = different sizes · 6 poikilocytosis = abnormal shapes → 'together these confirm iron deficiency anaemia'. No white cells, no platelets."
+     "**The results in SIX LINES and under ninety seconds.** **Red cells carry oxygen using haemoglobin, and haemoglobin is made of iron · your total haemoglobin is low · your red cells are smaller than they should be · there is less haemoglobin in each cell and it is less concentrated · your ferritin, your body's iron store, is low · the cells vary in size, ANISOCYTOSIS, and some have abnormal shapes, POIKILOCYTOSIS.** Then: **'all of these findings together confirm iron deficiency anaemia.'** **Do not explain white cells, platelets or how blood is made.**"
     ],
     [
      "1:30",
-     "Permission; tiredness briefly (low energy, 4–5 months, worse). ★ Six questions: 1 'do you eat red meat?' · 2 surgery, bleeding episodes, donations, LMP and heavy/irregular before stopping · 3 ★ 'any blood in the stools, or dark or black stools?' → darker for 3 months → say it back: 'you may be losing blood in the stomach or bowel' · 4 ★ 'anti-inflammatories — ibuprofen, Nurofen, Voltaren, anything you buy yourself?' + indigestion/heartburn/pain/vomiting · 5 ★ weight loss quantified, appetite, lumps, bowel habit, bowel screening kit, family history · 6 chronic diarrhoea, greasy floating stools, mouth ulcers, joints, shin rash"
+     "**'Is it all right if I ask you a few questions to work out why your iron is low?'** Then the tiredness, briefly: **low energy or feeling sleepy? how long, and is it getting worse?**"
     ],
     [
-     "4:00",
-     "Examination request: conjunctival pallor, koilonychia, angular cheilitis, glossitis; pulse and postural BP; flow murmur; abdominal masses, epigastric tenderness, organomegaly; lymph nodes incl. left supraclavicular; ★ rectal examination with consent and chaperone"
+     "1:50",
+     "**1. Diet — 'DO YOU EAT RED MEAT?'** Never 'how is your diet?' — a vegetarian also has a healthy balanced diet, and the bland answer loses the mark."
+    ],
+    [
+     "2:10",
+     "**2. Obvious blood loss — any recent surgery? any bleeding episodes? any blood donations? WHEN WAS YOUR LAST PERIOD — and BEFORE THEY STOPPED, were they heavy or irregular?** Late anovulatory cycles are often heavy, so do not stop at 'menopause'."
+    ],
+    [
+     "2:35",
+     "**3. Gut blood loss — 'HAVE YOU SEEN ANY BLOOD IN YOUR STOOLS, OR HAD ANY DARK OR BLACK STOOLS?'** Never 'how are your bowels?' — that gets 'fine'. **Say the answer back: 'that tells me you may be losing blood somewhere in your stomach or bowel.'**"
+    ],
+    [
+     "3:00",
+     "**4. Peptic ulcer — are you taking any anti-inflammatory painkillers, ibuprofen, Nurofen, Voltaren, ANYTHING YOU BUY YOURSELF? any indigestion, heartburn or tummy pain? any vomiting?** Asked as 'any medications?' she says none."
+    ],
+    [
+     "3:25",
+     "**5. Bowel cancer — ANY WEIGHT LOSS, HOW MUCH AND OVER HOW LONG? any loss of appetite? any lumps or bumps? any change in your bowel habit? have you done your national bowel cancer screening test? any family history of bowel cancer?** Six kilos in two months is significant; six kilos in two years is not."
+    ],
+    [
+     "3:55",
+     "**6. Malabsorption — any long-term diarrhoea? any greasy pale stools that float or stick to the pan? any mouth ulcers, joint pains or rashes on your shins?**"
+    ],
+    [
+     "4:10",
+     "**Ask for the examination by name**: **conjunctival pallor · koilonychia · angular cheilitis and glossitis · pulse and POSTURAL blood pressure · an ejection systolic flow murmur · abdominal masses and epigastric tenderness · lymph nodes INCLUDING THE LEFT SUPRACLAVICULAR NODE · and a RECTAL EXAMINATION with consent and a chaperone**."
     ],
     [
      "4:30",
-     "★ 'Iron deficiency can have several causes. In your case I am concerned about the possibility of a cancer in the bowel or the stomach. My reasons: you've been losing weight, and you have dark stools, which means you are bleeding somewhere in your stomach or bowel.' → sit with the five-second silence · peptic ulcer named (NSAID) · the other causes specifically · 'the weight loss and dark stools are the two things I cannot ignore'"
+     "**The cancer conversation, in order — gentle opening, concern, THEN reasons.** **'Iron deficiency can have several different causes. But in your case, I am concerned about the possibility of a cancer in the bowel or the stomach. The reasons are that you have been losing weight, and that you have dark stools, which means you are bleeding somewhere.'** **Then sit with the silence.**"
+    ],
+    [
+     "5:00",
+     "**The differentials, specific not vague**: **a bleeding peptic ulcer, made more likely by the anti-inflammatories · a diet low in iron, for example a vegetarian diet without red meat · blood loss from heavy periods, surgery, a bleeding episode or frequent donation · poor absorption, as in coeliac disease or inflammatory bowel disease.** **'But the weight loss and the dark stools are the two things I cannot ignore.'**"
     ],
     [
      "6:00",
-     "★ 'The first and most important step is to find the cause and treat the cause — I'm referring you to a gastroenterologist for both an endoscopy and a colonoscopy' (explain both in lay terms, samples if growth or ulcer) · stop the Nurofen, safer analgesia for the back · further bloods incl. coeliac serology · iron replacement (tablets or infusion) once cause found — may start alongside with priority stated · recheck in a few weeks · urgent referral, PATS for travel · safety net: haematemesis, black tarry stools, chest pain/breathlessness/dizziness at rest → ED"
+     "**Management, and the first sentence is the one that passes: 'the first and most important step is to find the cause and treat the cause. That means referring you for BOTH an endoscopy AND a colonoscopy.'** Then what each camera does and that they will biopsy anything abnormal."
+    ],
+    [
+     "6:45",
+     "**Stop the Nurofen and substitute something safer · coeliac serology, UEC, LFT, thyroid function and a repeat FBE · then replace the iron, tablets or an infusion, and recheck the blood in a few weeks.** Mark the referral **urgent**, and offer **PATS** for the travel."
     ],
     [
      "7:30",
-     "Teach-back: 'what will you tell your husband tonight?' → 'low in iron, bleeding somewhere, two camera tests to find out why'"
+     "**Safety-net verbatim: come back straight away or go to the emergency department if you vomit blood, if your stools become black and tarry, or if you get chest pain, breathlessness or dizziness at rest.** Then **teach-back: 'what will you tell your husband tonight about what we are doing?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'How can I help you today?' — even in a results station",
-    "'Red cells carry oxygen using haemoglobin, and haemoglobin is made of iron.' / 'Your ferritin — your body's iron store — is low.' / 'Anisocytosis means the red cells are of different sizes; poikilocytosis means some have abnormal shapes.' / 'All of these confirm iron deficiency anaemia.'",
-    "'Is it all right if I ask you a few questions to work out why?' / ★ 'Do you eat red meat?' / ★ 'Have you had any dark or black stools?' / ★ 'How much weight, over what period?' / ★ 'Anything you buy yourself for pain or your joints?'",
-    "★ 'In your case, I am concerned about the possibility of…' then the reasons",
-    "'Cancer? I only came about being tired.' → 'I know, and I'm sorry to raise it. I'm not certain — that is exactly why I want the tests. It could also be an ulcer in the stomach, which bleeds, and the Nurofen makes that more likely.'",
-    "★ 'The first and most important step is to find the cause and treat the cause. That means both an endoscopy and a colonoscopy.' / 'Once we have treated the cause, replacing the iron is straightforward.'",
-    "'Can you just give me iron tablets?' → 'We will absolutely replace your iron — but not first. If I top up the iron without finding where it's going, I might make the blood test look better while missing the reason. Find the cause, treat the cause, then replace the iron.'",
-    "Examiner: 'Could you just give her iron instead?' → 'No. A trial of iron in place of investigation would be wrong here, and so would deferring the scopes until her haemoglobin responded. I'm happy to start oral iron at the same time, but the priority is to exclude a gastrointestinal cancer.'",
-    "Variant — multiple findings (vegetarian, heavy periods, ibuprofen, dark stools, weight loss): name them all, then choose the one you will not leave untested and justify it by the red flag",
-    "Variant — 62-year-old man, no cause: 'everything you've told me is normal, and that is precisely why I want to look — in a man there is no monthly blood loss, so unexplained low iron means we look inside the gut at both ends, even when you feel well'"
-   ],
    "pefe": [
-    "Examiner: pale with conjunctival pallor; pulse 96, no postural drop; soft ejection systolic (flow) murmur; mild epigastric tenderness, no mass, no organomegaly, no lymphadenopathy; ★ rectal examination shows melaena",
-    "Investigations: repeat FBE + film if needed, iron studies (ferritin, transferrin saturation — ferritin is an acute phase reactant; normal ferritin with TSAT <~16% is still iron deficiency VERIFY), CRP, UEC, LFT, coeliac serology (tTG-IgA + total IgA), ± B12/folate; then gastroscopy AND colonoscopy — urgent referral; no FOBT in a symptomatic patient; no transfusion in a stable outpatient",
-    "Ulcer pathway: gastric ulcer → biopsy and repeat gastroscopy to confirm healing; duodenal ulcer → no biopsy, does not become malignant; H. pylori testing and eradication; stop NSAID, PPI VERIFY",
-    "Iron replacement: oral ferrous sulfate ~100 mg elemental daily or alternate days (alternate-day dosing improves absorption/tolerance) VERIFY; IV iron (ferric carboxymaltose) if intolerant, malabsorption, rapid replacement needed or pregnancy; recheck FBE/ferritin ~4 weeks; continue ~3 months after Hb normalises VERIFY",
-    "National Bowel Cancer Screening Program 45–74, two-yearly VERIFY — but a symptomatic patient bypasses screening and goes straight to colonoscopy",
-    "SA: urgent GI referral (RAH/QEH/FMC/LMH) · PATS for >100 km VERIFY · Country Health Connect · Cancer Council SA 13 11 20 · TIS 131 450 · healthdirect 1800 022 222"
+    "**Do now: confirm she is haemodynamically stable and not symptomatic at rest — pulse, POSTURAL blood pressure, chest pain, breathlessness · iron studies if not already done, ferritin, serum iron, transferrin saturation · RECTAL EXAMINATION with consent and a chaperone · stop the NSAID and give alternative analgesia.**",
+    "**Ask for the examination by name: **conjunctival pallor · koilonychia · angular cheilitis and glossitis · pulse and POSTURAL blood pressure · an ejection systolic flow murmur · abdominal masses and epigastric tenderness · lymph nodes INCLUDING THE LEFT SUPRACLAVICULAR NODE · and a RECTAL EXAMINATION with consent and a chaperone**.**",
+    "**Refer for UPPER ENDOSCOPY AND COLONOSCOPY. Say both, in that order.** Plus **coeliac serology, UEC, LFT, thyroid function and a repeat FBE.**",
+    "**Do NOT order a faecal occult blood test.** It is a screening test for asymptomatic people; this patient is symptomatic and already anaemic, and **a negative result does not exclude a gastrointestinal source.**",
+    "**What results change management: a lesion at either scope → biopsy, staging CT, multidisciplinary referral · GASTRIC ulcer → biopsy and repeat gastroscopy to confirm healing, because it can be malignant · DUODENAL ulcer → no biopsy needed · H. pylori positive → eradication · both scopes normal → coeliac serology, then capsule endoscopy or CT enterography · haemoglobin not rising after four weeks → non-adherence, continuing loss, or malabsorption.**",
+    "**Coeliac serology must be taken on a GLUTEN-CONTAINING diet.** **National Bowel Cancer Screening Program: kits posted two-yearly to ages 45–74, and 45–49 must request the first kit** — worth asking, but **it does not change your plan here**. VERIFY the current age range.",
+    "**Symptomatic anaemia at rest goes to hospital.** **Transfusion is not indicated in a stable outpatient** — VERIFY thresholds against current national blood authority guidance before quoting a number."
    ],
-   "fails": [
-    "Leading management with iron ('I'll start you on iron and then arrange a scope') ★",
-    "Colonoscopy only, or endoscopy only ★",
-    "Accepting 'healthy and balanced' and never asking about red meat; accepting 'fine' and never asking about dark stools ★",
-    "Ordering FOBT instead of scoping ★",
-    "Opening with 'your haemoglobin is low'; explaining white cells/platelets and never reaching management",
-    "Aniso/poikilo the wrong way round; vague differentials ('diet', 'blood loss'); not naming peptic ulcer; not asking about OTC NSAIDs specifically ('any medications?' → 'no')",
-    "Rushing past her silence after the word cancer; no rectal examination; no safety net; no teach-back"
-   ],
-   "numbers": [
-    "Low MCV alone = microcytic anaemia · low MCV + low ferritin = iron deficiency anaemia (ferritin makes it specific) · aniso = size · poikilo = shape",
-    "Four causes: low intake · malabsorption · blood loss · increased demand",
-    "Rule: iron deficiency in any man or post-menopausal woman without obvious cause → endoscopy + colonoscopy · explicitly wrong: therapeutic iron trial instead of investigation, deferring until Hb responds, FOBT in a symptomatic patient, transfusion in a stable outpatient",
-    "Red flags here: 6 kg in 2 months · dark stools 3 months · daily OTC ibuprofen · undone screening kit · melaena on PR",
-    "Recheck FBE/ferritin ~4 weeks · continue iron ~3 months after Hb normal VERIFY · NBCSP 45–74 two-yearly VERIFY",
-    "PATS · Country Health Connect · Cancer Council SA 13 11 20 · TIS 131 450 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Gastrointestinal malignancy — colorectal or gastric**",
+     "**Age over 50, post-menopausal, DARK STOOLS, WEIGHT LOSS**",
+     "Appetite loss, altered bowel habit, mass, **left supraclavicular node**, family history",
+     "**UPPER ENDOSCOPY AND COLONOSCOPY with biopsy of any lesion** — urgent, two-week referral"
+    ],
+    [
+     "**Bleeding peptic ulcer disease**",
+     "**NSAID use**, epigastric pain, heartburn, dark stools",
+     "Over-the-counter anti-inflammatories, vomiting, epigastric tenderness",
+     "**Gastroscopy with biopsy and H. pylori testing; stop the NSAID** — urgent"
+    ],
+    [
+     "Menstrual blood loss",
+     "Heavy or irregular periods, or heavy cycles **before** menopause",
+     "Flooding, clots, cycle length",
+     "**An adequate explanation only in a pre-menopausal woman — still scope if red flags**"
+    ],
+    [
+     "Increased demand — pregnancy",
+     "Multiple pregnancies with short interpregnancy intervals",
+     "Number and timing, spacing, blood loss at delivery",
+     "Adequate in a young multipara — **still ask the other three causes**"
+    ],
+    [
+     "Inadequate intake",
+     "Vegetarian or vegan diet, low red meat",
+     "**'Do you eat red meat?' — not 'how is your diet?'**",
+     "Dietary history, dietitian referral, supplementation"
+    ],
+    [
+     "Malabsorption — coeliac disease",
+     "Long-term diarrhoea, greasy floating stools, bloating",
+     "Family history, dermatitis herpetiformis, **failure to respond to oral iron**",
+     "**Coeliac serology ON A GLUTEN-CONTAINING DIET; duodenal biopsy**"
+    ],
+    [
+     "Malabsorption — inflammatory bowel disease",
+     "Chronic or bloody diarrhoea, young onset",
+     "Mouth ulcers, joint pain, erythema nodosum, perianal disease",
+     "Faecal calprotectin, colonoscopy with biopsy — same week"
+    ],
+    [
+     "Thalassaemia trait",
+     "Microcytosis with a **normal or high** ferritin; relevant ancestry",
+     "Family history; **disproportionately low MCV for the degree of anaemia**",
+     "Haemoglobin electrophoresis or HPLC. **Not the diagnosis here — the ferritin is low**"
+    ],
+    [
+     "Anaemia of chronic disease",
+     "Chronic inflammation or renal disease",
+     "**Normal or raised ferritin with a low transferrin saturation**",
+     "CRP, UEC. **Ferritin is an acute phase reactant — check transferrin saturation**"
+    ],
+    [
+     "Angiodysplasia and other occult sources",
+     "Older patient, negative scopes, recurrent deficiency",
+     "Recurrent unexplained deficiency after normal endoscopy and colonoscopy",
+     "**Capsule endoscopy or CT enterography after both scopes are negative**"
+    ]
    ]
   },
   "source": "Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf (Version A — Margaret Hollis, 50, iron deficiency anaemia with GI red flags)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Leading the management with iron — 'I'll start you on iron and then arrange a scope', in that order, fails the station; 'the first and most important step is to find the cause and treat the cause' (★)",
-   "FAIL — Advising colonoscopy only, or endoscopy only, or a faecal occult blood test instead of scoping — both scopes, urgent, and no FOBT in a symptomatic patient (★)",
-   "FAIL — Accepting 'healthy and balanced' — ask 'do you eat red meat?'; and accepting 'fine' about her bowels — ask 'any dark or black stools?'; both hidden findings come only to the specific question (★)",
-   "FAIL — Accepting 'no medications' — 'anything you buy yourself for pain or your joints — Nurofen, Voltaren?' finds the daily NSAID; and weight loss quantified: six kilos in two months",
-   "SAY — 'Iron deficiency can have several causes. In your case I am concerned about the possibility of a cancer in the bowel or the stomach — because you've been losing weight and you have dark stools' — then sit with the five-second silence; peptic ulcer named as the differential",
-   "DO — Results in six lines under ninety seconds (aniso = size, poikilo = shape; no white cells or platelets), 'how can I help you today?' before any numbers, rectal examination with consent, stop the NSAID, safety-net for haematemesis and melaena, teach-back"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-59",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice. You are the GP. Version B of the iron-deficiency station — the same results in a pregnant patient whose pregnancy has been uneventful.",
   "stem": [
    "Amy Kaur, 24, is pregnant and attended a week ago with tiredness. She looked pale and bloods were arranged. She has returned for the results.",
    "Results: haemoglobin low · MCV low · MCH low · MCHC low · ferritin low · anisocytosis and poikilocytosis on film. Her pregnancy has been uneventful."
@@ -16360,79 +16478,187 @@
    "Explain your diagnosis and differentials",
    "Outline your management"
   ],
-  "time": "8 minutes, four tasks, same budget as MED-58 (1:30 · 3:00 · 1:30 · 1:30 · 0:30). Same six-line result explanation and the same six questions — plus obstetric interval, number of pregnancies and dietary iron. Do NOT take a full obstetric history: the stem says the pregnancy is uneventful.",
+  "findings": [
+   [
+    "The result card",
+    "IDENTICAL to Version A — haemoglobin low · MCV low · MCH low · MCHC low · FERRITIN LOW · anisocytosis and poikilocytosis on film"
+   ],
+   [
+    "What the stem is telling you",
+    "'HER PREGNANCY HAS BEEN UNEVENTFUL' IS AN INSTRUCTION: DO NOT SPEND THE STATION TAKING AN OBSTETRIC HISTORY. Two questions about number and spacing, one about antenatal screening, and move on"
+   ],
+   [
+    "The cause",
+    "THREE PREGNANCIES IN TWO YEARS, ALL CLOSELY SPACED — increased demand without time to restore stores"
+   ],
+   [
+    "Aniso and poikilo",
+    "ANISOCYTOSIS = variation in SIZE. POIKILOCYTOSIS = variation in SHAPE"
+   ],
+   [
+    "What she is negative for",
+    "NO red flags. Eats red meat. No gut symptoms, no dark stools, no weight loss, no NSAIDs, no malabsorption symptoms. THE OTHER THREE CAUSE GROUPS STILL GET ASKED"
+   ],
+   [
+    "Examination",
+    "Ask by name: conjunctival pallor · koilonychia · angular cheilitis and glossitis · pulse and POSTURAL blood pressure · an ejection systolic flow murmur · abdominal examination · lymph nodes"
+   ],
+   [
+    "The treatment that differs",
+    "INTRAVENOUS IRON is usually preferred — you cannot wait for tablets to work slowly in pregnancy. Recheck the blood afterwards"
+   ]
+  ],
+  "findingsLabel": "The result card and what the stem is telling you",
+  "must": [
+   "FAIL — Taking a full obstetric history. The stem already told you the pregnancy is uneventful.",
+   "FAIL — Skipping the other three cause groups because the pregnancy explains it.",
+   "FAIL — Accepting 'a healthy balanced diet', or accepting 'my bowels are fine'.",
+   "FAIL — Three minutes on the blood picture, so management is never spoken.",
+   "ASK — How many pregnancies, when were they, and did you space them out?",
+   "ASK — Do you eat red meat? And have you had any dark or black stools?"
+  ],
   "back": {
-   "dx": "Iron deficiency anaemia of pregnancy from increased demand: three pregnancies in two years (short inter-pregnancy intervals — stores never rebuilt), on top of the physiological iron cost of each pregnancy; possibly low dietary intake. Same six questions exclude blood loss (no dark stools, no NSAIDs, no bleeding), malabsorption (no coeliac/IBD symptoms) and weight loss red flags. Differentials stated specifically: low dietary iron (e.g. vegetarian diet without red meat), blood loss (previous heavy periods, GI bleeding — dark stools, NSAIDs), malabsorption (coeliac disease, IBD), and — if any red flag or male/post-menopausal — GI malignancy needing both scopes (not indicated here). Management: treat the cause (spacing pregnancies, diet) and replace iron — IV iron is usually preferred in pregnancy when replacement must be rapid; recheck; antenatal team informed.",
+   "dx": [
+    "**Iron deficiency anaemia from increased demand — three pregnancies in two years with no spacing.** In each pregnancy the body builds extra blood and the baby needs a large amount of iron; **if the next pregnancy starts soon after, she begins it already low.**",
+    "**The stem's 'uneventful pregnancy' is an instruction, not background.** Two questions about number and spacing, one about antenatal screening, then move on — **a full obstetric history is the trap.**",
+    "**Still ask all four cause groups**: **LOW INTAKE · MALABSORPTION · BLOOD LOSS · INCREASED DEMAND.** Naming the pregnancy and stopping loses the differential marks.",
+    "**Name the differentials specifically, not vaguely**: **a diet low in iron, for example a vegetarian diet without red meat · blood loss from heavy periods, deliveries, surgery or donation · bleeding in the stomach or bowel from an ulcer or, rarely at her age, a cancer · poor absorption, as in coeliac disease or inflammatory bowel disease.**",
+    "**A low MCV alone is only microcytic anaemia** — which includes thalassaemia, sideroblastic anaemia and anaemia of chronic disease. **The low ferritin is what makes it iron deficiency.**",
+    "**ANISOCYTOSIS = size. POIKILOCYTOSIS = shape.** Getting them the right way round is a small mark most candidates drop.",
+    "**Treatment: INTRAVENOUS IRON is usually preferred in pregnancy, because replacement must be rapid and you cannot wait for tablets to work slowly.** Recheck the blood afterwards.",
+    "**Oral iron, where used: empty stomach with vitamin C, away from tea, calcium and antacids; alternate-day dosing improves absorption and reduces side effects.** **Recheck FBE and ferritin at about four weeks; continue about three months after the haemoglobin normalises.** VERIFY doses against Therapeutic Guidelines.",
+    "**Keep ninety seconds for the results and protect the management block** — this is a four-task, eight-minute station, and **an unspoken management plan scores nothing.**",
+    "**Safety-net: return immediately for vomiting blood, black tarry stools, chest pain, breathlessness at rest, dizziness or fainting.** **Country Health Connect for infusions closer to home · PATS · TIS 131 450 · healthdirect 1800 022 222.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, confirm name, 'how can I help you today?'; 'I have the results — let's go through them together'"
+     "**Open before you read out a number**: **'good morning, my name is Dr [name]. Am I speaking with Amy? How can I help you today?'** It is a scored item even in a results station."
     ],
     [
      "0:20",
-     "Six lines: red cells/haemoglobin/iron · total Hb low · cells smaller · haemoglobin per cell and concentration low · ferritin (store) low · anisocytosis = sizes · poikilocytosis = shapes → 'together these confirm iron deficiency anaemia'"
+     "**The results in six lines, under ninety seconds**: red cells carry oxygen using haemoglobin, made of iron · **total haemoglobin low · red cells smaller than they should be · less haemoglobin in each cell and less concentrated · ferritin, the body's iron store, low · ANISOCYTOSIS, the cells vary in size · POIKILOCYTOSIS, some have abnormal shapes.** Then: **'all of these together confirm iron deficiency anaemia.'**"
     ],
     [
      "1:30",
-     "Permission; tiredness briefly. Six questions: ★ red meat/dietary iron · surgery, bleeding, donations, ★ 'how many pregnancies, and how far apart?' → three in two years · ★ dark/black stools, blood in stool · anti-inflammatories/OTC, indigestion, vomiting (hyperemesis?) · weight change, appetite, lumps, bowel habit, family history · chronic diarrhoea, greasy stools, mouth ulcers, joints, shin rash; antenatal supplements taken?"
+     "**'Is it all right if I ask you a few questions to work out why your iron is low?'** Then the tiredness, briefly: **low energy or feeling sleepy? how long, and is it getting worse?**"
     ],
     [
-     "4:00",
-     "Examination: conjunctival pallor, koilonychia, cheilitis, glossitis; pulse, postural BP; flow murmur; abdomen (fundal height appropriate, no tenderness); no rectal examination unless GI symptoms"
+     "1:50",
+     "**1. Diet — 'DO YOU EAT RED MEAT?'** Never 'how is your diet?' — a vegetarian also has a healthy balanced diet, and the bland answer loses the mark."
+    ],
+    [
+     "2:10",
+     "**2. Obvious blood loss — any recent surgery? any bleeding episodes? any blood donations? WHEN WAS YOUR LAST PERIOD — and BEFORE THEY STOPPED, were they heavy or irregular?** Late anovulatory cycles are often heavy, so do not stop at 'menopause'."
+    ],
+    [
+     "2:35",
+     "**3. Gut blood loss — 'HAVE YOU SEEN ANY BLOOD IN YOUR STOOLS, OR HAD ANY DARK OR BLACK STOOLS?'** Never 'how are your bowels?' — that gets 'fine'. **Say the answer back: 'that tells me you may be losing blood somewhere in your stomach or bowel.'**"
+    ],
+    [
+     "3:00",
+     "**4. Peptic ulcer — are you taking any anti-inflammatory painkillers, ibuprofen, Nurofen, Voltaren, ANYTHING YOU BUY YOURSELF? any indigestion, heartburn or tummy pain? any vomiting?** Asked as 'any medications?' she says none."
+    ],
+    [
+     "3:25",
+     "**5. Bowel cancer — ANY WEIGHT LOSS, HOW MUCH AND OVER HOW LONG? any loss of appetite? any lumps or bumps? any change in your bowel habit? have you done your national bowel cancer screening test? any family history of bowel cancer?** Six kilos in two months is significant; six kilos in two years is not."
+    ],
+    [
+     "3:55",
+     "**6. Malabsorption — any long-term diarrhoea? any greasy pale stools that float or stick to the pan? any mouth ulcers, joint pains or rashes on your shins?**"
+    ],
+    [
+     "4:10",
+     "**The extra block for this version, and only two questions long: HOW MANY PREGNANCIES HAVE YOU HAD? WHEN WERE THEY? DID YOU SPACE THEM OUT, OR DID YOU FALL PREGNANT SOON AFTER EACH DELIVERY?** Plus one on antenatal screening. **Then stop.**"
     ],
     [
      "4:30",
-     "★ 'Amy, the most likely cause is the three pregnancies you've had in the last two years. In each pregnancy your body has to build extra blood, and the baby needs a large amount of iron. We usually suggest waiting a while after a delivery so your stores can rebuild — if the next pregnancy starts soon after, you begin it already low.' Then the specific differentials and why they don't fit."
+     "Ask for the examination by name: **conjunctival pallor · koilonychia · angular cheilitis and glossitis · pulse and POSTURAL blood pressure · an ejection systolic flow murmur · abdominal masses and epigastric tenderness · lymph nodes INCLUDING THE LEFT SUPRACLAVICULAR NODE**."
     ],
     [
-     "6:00",
-     "Management: ★ 'because we can't wait for tablets to work slowly in pregnancy, an iron infusion is usually preferred, and I'll recheck your blood afterwards' · dietary iron and vitamin C, avoid tea/coffee with meals · continue antenatal folate/iodine · inform the antenatal team; delivery planning if Hb low near term · postnatal contraception/spacing conversation · safety net: breathlessness at rest, palpitations, chest pain, bleeding · review after infusion"
+     "5:00",
+     "**The explanation**: **'the most likely cause is the three pregnancies you have had in the last two years. In each pregnancy your body has to build extra blood, and the baby needs a large amount of iron. We usually recommend waiting a while after a delivery so your body can rebuild its stores — if the next pregnancy comes very soon, you start it already low.'**"
+    ],
+    [
+     "5:45",
+     "**The differentials, specific**: a diet low in red meat · blood loss from heavy periods, deliveries, surgery or donation · bleeding in the stomach or bowel from an ulcer or, rarely at her age, a cancer · poor absorption such as coeliac disease or inflammatory bowel disease."
+    ],
+    [
+     "6:30",
+     "**Management: because we cannot wait for tablets to work slowly during pregnancy, AN IRON INFUSION is usually preferred**, and recheck the blood afterwards. Plus dietary advice and antenatal follow-up."
     ],
     [
      "7:30",
-     "Teach-back and summary"
+     "**Safety-net — vomiting blood, black tarry stools, chest pain, breathlessness at rest, dizziness or fainting** — then summarise and check understanding."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'How can I help you today?' / 'Red cells carry oxygen using haemoglobin, and haemoglobin is made of iron.' / 'All of these confirm iron deficiency anaemia.'",
-    "★ 'How many pregnancies have you had, and how far apart?' / ★ 'Do you eat red meat?' / ★ 'Any dark or black stools?' / 'Anything you buy yourself for pain?'",
-    "★ 'The most likely cause is the three pregnancies in two years — each one costs a large amount of iron, and the stores didn't have time to rebuild.'",
-    "★ 'In pregnancy an iron infusion is usually preferred because we can't wait for tablets to work slowly, and I'll recheck your blood afterwards.'",
-    "'Is the infusion safe for the baby?' → 'Yes — intravenous iron is used routinely in the second and third trimesters; the main risk is a reaction during the infusion, which we monitor for, and it avoids the stomach upset of tablets.' VERIFY",
-    "'Will this happen again?' → 'It can — so we'll check your iron after this baby, top it up before you're pregnant again, and talk about spacing.'"
-   ],
    "pefe": [
-    "Expected: pale, conjunctival pallor; mild tachycardia; ± flow murmur; abdomen consistent with dates; no GI findings; no rectal examination indicated",
-    "Investigations: iron studies (ferritin, TSAT), CRP, ± B12/folate, coeliac serology if symptoms or poor response; no scopes in a young woman with an obvious cause and no red flags VERIFY",
-    "IV iron: ferric carboxymaltose from second trimester onward, dose by weight and Hb; oral iron acceptable in first trimester or mild deficiency (alternate-day dosing); recheck Hb/ferritin ~3–4 weeks VERIFY",
-    "Trap: a full obstetric history — the stem states the pregnancy is uneventful; one question on interval/number and one on supplements is enough",
-    "SA: antenatal shared care / midwifery (Yorke and Northern LHN), infusion at the local hospital day unit; TIS 131 450"
+    "**Do now: confirm she is haemodynamically stable and not symptomatic at rest — pulse, postural blood pressure, chest pain, breathlessness.** **Iron studies: ferritin, serum iron, transferrin saturation.**",
+    "Ask for the examination by name: **conjunctival pallor · koilonychia · angular cheilitis and glossitis · pulse and postural blood pressure · an ejection systolic flow murmur · abdominal masses and epigastric tenderness · lymph nodes.**",
+    "**Coeliac serology on a gluten-containing diet, UEC, LFT, thyroid function and a repeat FBE** where the history points there.",
+    "**Intravenous iron is preferred in pregnancy** when replacement must be rapid. **Recheck FBE and ferritin at about four weeks; continue iron about three months after the haemoglobin normalises.** VERIFY preparations and doses.",
+    "**Ferritin is an acute phase reactant — a normal ferritin with a transferrin saturation under about 16% is still iron deficiency.**",
+    "**No scopes are indicated here without red flags** — but **if there were dark stools, weight loss, or no obvious cause, the rule is both endoscopy and colonoscopy, whatever the age.** **FOBT is never the answer in a symptomatic patient.**"
    ],
-   "fails": [
-    "Never asking the number and spacing of pregnancies — the cause is the interval ★",
-    "Leading with iron before asking the six cause questions, or referring for scopes with no red flags ★",
-    "Taking a full obstetric history and never reaching management",
-    "Opening with the numbers; explaining white cells/platelets; aniso/poikilo reversed",
-    "Vague 'diet' differential; no recheck plan; no antenatal team involvement; no spacing conversation"
-   ],
-   "numbers": [
-    "Three pregnancies in two years · same six-line result explanation · same six cause questions + interval",
-    "Four causes: low intake · malabsorption · blood loss · increased demand (pregnancy) — pregnancy = demand",
-    "IV iron preferred in pregnancy when replacement must be rapid VERIFY · recheck ~3–4 weeks · inter-pregnancy interval ideally ≥18 months VERIFY",
-    "TIS 131 450 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Increased demand — back-to-back pregnancies** — the answer",
+     "**Three pregnancies in two years, closely spaced**; no red flags",
+     "Number and timing of pregnancies, spacing, blood loss at delivery",
+     "**Adequate explanation in a young multipara — still ask the other three causes. IV iron**"
+    ],
+    [
+     "Inadequate intake",
+     "Vegetarian or vegan diet, low red meat",
+     "**'Do you eat red meat?' — not 'how is your diet?'**",
+     "Dietary history, dietitian referral, supplementation"
+    ],
+    [
+     "Menstrual blood loss",
+     "Heavy or irregular periods between pregnancies",
+     "Flooding, clots, cycle length",
+     "Adequate explanation in a pre-menopausal woman"
+    ],
+    [
+     "Malabsorption — coeliac disease",
+     "Long-term diarrhoea, greasy floating stools, bloating",
+     "Family history, dermatitis herpetiformis, **failure to respond to oral iron**",
+     "**Coeliac serology ON A GLUTEN-CONTAINING DIET; duodenal biopsy**"
+    ],
+    [
+     "Malabsorption — inflammatory bowel disease",
+     "Chronic or bloody diarrhoea, young onset",
+     "Mouth ulcers, joint pain, erythema nodosum, perianal disease",
+     "Faecal calprotectin, colonoscopy with biopsy — same week"
+    ],
+    [
+     "Bleeding peptic ulcer disease",
+     "NSAID use, epigastric pain, heartburn, dark stools",
+     "Over-the-counter anti-inflammatories, vomiting, epigastric tenderness",
+     "Gastroscopy with biopsy and H. pylori testing; stop the NSAID — urgent"
+    ],
+    [
+     "**Gastrointestinal malignancy**",
+     "**Rare at 24 — but say it, because dark stools and weight loss would change everything**",
+     "Dark stools, weight loss, appetite, bowel habit, family history",
+     "**Endoscopy AND colonoscopy if any red flag appears** — urgent"
+    ],
+    [
+     "Thalassaemia trait",
+     "Microcytosis with a **normal or high** ferritin; relevant ancestry",
+     "Family history; disproportionately low MCV for the degree of anaemia",
+     "Haemoglobin electrophoresis or HPLC. **Not this — the ferritin is low**"
+    ],
+    [
+     "Anaemia of chronic disease",
+     "Chronic inflammation or renal disease",
+     "**Normal or raised ferritin with a low transferrin saturation**",
+     "CRP, UEC; check transferrin saturation"
+    ]
    ]
   },
   "source": "Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf (Version B — Amy Kaur, 24, pregnant; back-to-back pregnancies)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never asking the number and spacing of pregnancies — three in two years is the cause; 'we usually suggest waiting so your stores can rebuild — if the next pregnancy starts soon after, you begin it already low'",
-   "FAIL — Leading with iron before the six cause questions — red meat, bleeding and surgery, dark stools, over-the-counter anti-inflammatories, weight loss and screening, malabsorption — run them briefly even here",
-   "FAIL — Referring for scopes with no red flags — the rule is iron deficiency without an obvious cause; hers has one",
-   "FAIL — Taking a full obstetric history — the stem says the pregnancy is uneventful; every minute there is a mark lost elsewhere",
-   "DO — 'Because we can't wait for tablets to work slowly in pregnancy, an iron infusion is usually preferred, and I'll recheck your blood afterwards'",
-   "DO — Explain the results the same six-line way, then the plan for after this baby: check the iron post-partum, top it up before the next pregnancy, and spacing"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Iron_Deficiency_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-60",
