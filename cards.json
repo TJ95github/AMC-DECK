@@ -3096,7 +3096,6 @@
   "id": "MED-02",
   "cat": "med",
   "promptBell": false,
-  "setting": "Your general practice.",
   "stem": [
    "James Doherty, a 66-year-old man, presents complaining of nervousness.",
    "Background. He is a known case of atrial fibrillation. He was taking flecainide; his cardiologist changed him to amiodarone four weeks ago. He has come today for his blood test results.",
@@ -3107,101 +3106,160 @@
    "Interpret the investigation results for the patient",
    "Explain your diagnosis and your differential diagnoses"
   ],
-  "time": "8 minutes. Roughly 4–4:30 history, 1:30 results, 2:00 diagnosis and differentials.",
   "back": {
-   "dx": "Thyrotoxicosis with INAPPROPRIATE TSH secretion — high T4/T3 with a NORMAL TSH. Two diagnoses, in order: (1) TSH-secreting pituitary adenoma; (2) amiodarone-induced thyroid dysfunction (honest caveat: amiodarone should suppress TSH, and four weeks is early — but TSH can drift back to normal over months, so it stays on the list). The station is built on one mismatch: in thyrotoxicosis the TSH should be suppressed and his is not. Say it to the examiner, and a lay version to the patient. Hidden agenda: wants the amiodarone stopped today; underneath, frightened his heart is getting worse.",
+   "dx": [
+    "**Thyrotoxicosis with inappropriate (non-suppressed) TSH secretion** — lead with a **TSH-secreting pituitary adenoma**, amiodarone second. Two diagnoses, each with its reason.",
+    "His numbers: **TSH 1.8 mIU/L (normal 0.4–4.0) · free T4 28 pmol/L (high 10–20) · free T3 8.9 pmol/L (high 3.5–6.5)**. VERIFY ranges against the printed report, not from memory.",
+    "Thyrotoxicosis = raised circulating hormone whatever the source; hyperthyroidism = the gland itself overproducing. **Both are normally accompanied by a suppressed TSH.** The single exception is secondary (pituitary) disease.",
+    "The five causes of a **normal TSH with a high free T4**: **assay artefact including biotin · sampling error · amiodarone in its late phase · TSH-secreting adenoma · thyroid hormone resistance**.",
+    "Why the adenoma leads: it is the only cause that reliably produces a **non-suppressed TSH with a raised free T4**. And **four weeks is early** — amiodarone thyrotoxicosis usually develops after months.",
+    "CORRECTION — amiodarone is a sequence, not an event: **hyper → hypo → normal**, over months. Transcripts mis-state the third phase as a second hyperthyroid one. **Type 1** = iodine-induced synthesis in an abnormal gland; **type 2** = destructive thyroiditis leaking stored hormone; **colour-flow Doppler separates them**. Thionamide for type 1, corticosteroid for type 2. VERIFY",
+    "Four rungs to the patient, then stop: **the gland in the neck makes hormones → yours are high → a second hormone, TSH, made in the brain, controls it → normally TSH should come down, and yours has not**. No axis, no arrows, never the words **brain tumour**.",
+    "**'Please do not stop the amiodarone — I will speak to your cardiologist myself.'** It is holding his rhythm, and the half-life runs to **weeks or months**, so stopping is slow to help anyway. VERIFY",
+    "No carbimazole today: in an adenoma a thionamide lowers T4 and **drives the TSH higher** without treating the cause; in type 2 the gland is not overproducing at all. **Check cortisol before any thyroid-directed treatment** in pituitary disease.",
+    "SA — SA Pathology locally; ask the laboratory about **repeating on an alternative platform** and biotin interference before imaging. Endocrinology and neurosurgery via **Country Health Connect** to **RAH / FMC / TQEH**; MRI and formal perimetry need transfer, subsidised through **PATS**. Storm or instability: **MedSTAR 1300 13 12 33**. **TIS National 131 450** · **healthdirect 1800 022 222**."
+   ],
    "plan": [
     [
      "0:00",
-     "Confirm ID; 'I have your results and we'll go through them — first, what do you mean by nervous: stressed and on edge, shaking hands, or racing heart?'"
+     "WIPE, confirm name and date of birth, **results face down**. **'I do have your blood results and we will go through them together — but first I would like to understand what has been happening.'**"
     ],
     [
-     "0:45",
-     "Timing, pattern, impact (4 weeks, since the switch — note it, don't close on it)"
+     "0:20",
+     "Block 1, explore the complaint: **what do you mean by feeling nervous — stressed and on edge, shaking in your hands, or your heart racing? · how long · constant or comes and goes · is it getting worse · anything that makes it better or worse · how is it affecting your day-to-day life?**"
     ],
     [
-     "1:30",
-     "AF anchor: how long, adherence, WHY was flecainide changed, side effects, follow-up; complications — racing, chest pain, SOBOE, oedema, TIA/stroke symptoms, anticoagulant"
+     "1:10",
+     "Block 2, the AF anchor: **how long have you had the irregular heartbeat · are you taking the amiodarone regularly, exactly as prescribed · why was the flecainide changed · any side effects since you started · are you having regular follow-up?** The switch is scored — flecainide stops when rhythm control fails or structural or ischaemic disease emerges, so his answer tells you how sick his heart is."
     ],
     [
-     "2:45",
-     "Track 1 thyroid: heat intolerance, bowels, weight loss, sweating, tremor. Track 2 pituitary: headache, blurred vision, side vision, weakness/numbness"
+     "1:50",
+     "Block 3, AF complications: **are you still getting racing of the heart · any chest pain · short of breath on exertion, ankle swelling, waking at night · any weakness or numbness down one side, trouble speaking, or brief loss of vision · are you on a blood thinner?** TIA questions, not stroke questions — he is sitting in front of you talking."
     ],
     [
-     "3:30",
-     "Psychiatry + stimulants: mood, sleep, 'I ask everyone — thoughts of harming yourself or anyone else?', home/stress, tea/coffee, alcohol, substances, cold-and-flu tablets"
+     "2:30",
+     "Block 4, the two tracks. Thyroid: **can you not stand the heat · looser or more frequent bowel motions · any weight loss · do you sweat a lot · any shaking of your hands.** Pituitary: **do you get headaches · any blurred vision or difficulty seeing to the sides · any weakness or numbness anywhere.**"
+    ],
+    [
+     "3:15",
+     "If he asks why you are asking about his head: **'one of the glands that controls the thyroid sits in the brain, and if there is a problem there it can press on the nerves to the eyes. It takes ten seconds to ask and it changes what I do next.'**"
+    ],
+    [
+     "3:25",
+     "Block 5, psychiatry and stimulants — **the block that fails people**: **how has your mood been · how has your sleep been · I ask everybody this, have you had any thoughts of harming yourself or anyone else · who is at home, any stresses · how much tea or coffee · how much alcohol · any other substances or cold and flu tablets · do you take any supplements, particularly biotin?**"
     ],
     [
      "4:30",
-     "Results in FOUR rungs: gland in the neck makes hormones → yours are high → TSH from the brain controls it → when hormones rise TSH should fall; yours stayed normal — that mismatch is what I must explain. 'Does that make sense so far?'"
+     "Task 2, the results in **four rungs** and no more, then **'does that make sense so far?'** If he says 'so is it overactive or not' — **the hormones are too high, but the controller in your brain has not responded the way it should, and that is the unusual part.**"
     ],
     [
      "6:00",
-     "'Two things on my list' — adenoma (usually not cancer), then amiodarone with the honest caveat. Three ready answers: cancer? stop the tablet? what now? Then the rest of the differentials"
+     "Task 3, **two diagnoses in order, each with its reason** — the adenoma first because it explains the pattern, amiodarone second with the honest caveat that it would usually give a **low** TSH. Then the rest of the list: assay artefact, anxiety or panic, phaeochromocytoma, stimulants, and the other thyroid causes that all give a low TSH."
     ],
     [
-     "7:15",
-     "Plan: repeat assay on a different platform (ask about biotin), further hormones incl. cortisol, formal visual fields, pituitary MRI, endocrinology; speak to cardiologist yourself; red flags; phone with the repeat result"
+     "7:00",
+     "The three answers he will demand. **'Is it cancer?'** — usually benign, treatable, not what worries me today. **'Should I stop the tablet?'** — please don't, I will speak to your cardiologist. **'What happens now?'** — repeat the blood test first."
+    ],
+    [
+     "7:30",
+     "Plan and safety net: **repeat assay on a different platform · cortisol and a full pituitary profile · formal visual fields · pituitary MRI · ECG · endocrinology referral**. Come back or go to hospital for **a bad headache, any change in vision, chest pain, breathlessness at rest, or feeling feverish and confused**. Offer to phone with the repeat result yourself."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Can you tell me what you mean by feeling nervous? Stressed and on edge, shaking in your hands, or a racing heart?",
-    "How long? Constant or comes and goes? Getting worse? Anything make it better or worse? How is it affecting your day-to-day life?",
-    "Why was the flecainide changed? Are you taking the amiodarone regularly, exactly as prescribed?",
-    "Still getting racing? Chest pain? Breathless on exertion, ankle swelling? Any weakness/numbness one side, trouble speaking, brief loss of vision? On a blood thinner?",
-    "Heat intolerance? Looser/more frequent bowels? Weight loss? Sweating? Shaking hands?",
-    "Headaches? Blurred vision, or difficulty seeing to the sides? Weakness or numbness anywhere?",
-    "How has your mood been? Your sleep? 'I ask everybody this — any thoughts of harming yourself, or anyone else?'",
-    "Who do you live with, any stresses at home or work?",
-    "How much tea/coffee? Alcohol? Other substances, cold-and-flu tablets? Any supplements — biotin?"
-   ],
    "pefe": [
-    "No examination in this station — results are handed to you",
-    "Investigations to name: repeat TFTs on a different assay platform (artefact/biotin), full pituitary hormone profile including MORNING CORTISOL, formal visual field testing, pituitary MRI; endocrinology referral; discuss with cardiologist",
-    "To the examiner: 'This is thyrotoxicosis with inappropriate TSH secretion' · 'My first investigation is a repeat assay on a different platform'",
-    "Examiner challenge — start carbimazole today? NO: mechanism unknown; if TSH-oma a thionamide lowers T4 and drives TSH higher; if type 2 amiodarone thyroiditis the gland isn't overproducing — thionamide won't help. Repeat assay, involve endocrinology first"
+    "Given in the room, not requested: **TSH 1.8 mIU/L normal · free T4 28 pmol/L high · free T3 8.9 pmol/L high**. Read the TSH first — **TSH tells you which way, free T4 tells you how far**.",
+    "Bedside: **confrontation visual fields**, pulse for rate and rhythm, tremor, sweating, goitre and its tenderness, eye signs.",
+    "**First investigation is a repeat TSH and free T4 on a different assay platform** — having asked about high-dose **biotin**. Not the MRI. Discordant results are commonly artefactual, and it is cheaper and faster than imaging.",
+    "Then **TSH alpha subunit and its molar ratio · SHBG · full pituitary profile including cortisol · formal perimetry · pituitary MRI**.",
+    "**ECG** for rate and rhythm; echocardiogram if the flecainide switch suggests structural or ischaemic disease.",
+    "If the TSH were low instead: **colour-flow Doppler** to separate type 1 from type 2, **TPO and TSH-receptor antibodies**, radionuclide uptake scan.",
+    "Episodic palpitations with headache and sweating: **plasma or 24-hour urinary metanephrines**.",
+    "Amiodarone monitoring worth naming: **TFTs · LFTs · chest X-ray and lung function for new cough or breathlessness · eyes · skin**. VERIFY intervals against Therapeutic Guidelines."
    ],
-   "fails": [
-    "Assuming what 'nervous' means and launching a thyroid history without asking",
-    "Agreeing 'it's just the tablet' — false reassurance that abandons the normal TSH",
-    "Skipping 'why was the flecainide changed?'",
-    "Asking mood and sleep but NOT self-harm — marked down hardest",
-    "Not asking headache and vision (the pituitary track)",
-    "Giving one diagnosis instead of two, in order",
-    "Telling him to stop the amiodarone, or not offering to contact the cardiologist",
-    "Physiology lecture: drawing the axis, saying 'negative feedback'; jargon without 'in plain English'"
-   ],
-   "numbers": [
-    "TSH 1.8 normal · fT4 28 · fT3 8.9 both high · 4 weeks on amiodarone — early for drug-induced thyrotoxicosis",
-    "Thyrotoxicosis requires a LOW TSH — except in pituitary disease",
-    "Amiodarone thyroid phases: hyper → hypo → normal, over months",
-    "Five causes of normal TSH + high T4: assay artefact (biotin), sampling/timing, amiodarone late phase, TSH-secreting adenoma, thyroid hormone resistance",
-    "Before any thyroid-directed treatment in pituitary disease: check cortisol first",
-    "Five history blocks — block 5 is psychiatry",
-    "Variant 1 (early recall): TSH 0.02, 8 months on amiodarone = overt amiodarone-induced thyrotoxicosis; separate type 1 vs 2 with colour-flow Doppler; endocrine + cardiology together before changing the drug",
-    "Variant 2: headaches + clipping door frames = bitemporal field defect → urgent fields, MRI, neurosurgery, cortisol first",
-    "Variant 3: high-dose biotin, no symptoms = artefact; stop, wait days, repeat on different platform — VERIFY washout interval",
-    "'Is it cancer?' — usually benign, treatable, not what I'm worried about today · 'Stop the tablet?' — no, it holds your rhythm; I'll speak to your cardiologist myself",
-    "MedSTAR 1300 13 12 33 · healthdirect 1800 022 222 · TIS 131 450"
+   "ddx": [
+    [
+     "**TSH-secreting pituitary adenoma**",
+     "**Normal or raised TSH with a high free T4** — the only cause that truly explains this pattern",
+     "Headache, blurred vision, **bitemporal field loss**, other pituitary failure",
+     "Repeat TFTs; **alpha subunit and molar ratio**; SHBG; full pituitary profile; formal fields; **pituitary MRI** — urgent"
+    ],
+    [
+     "**Amiodarone-induced thyrotoxicosis**",
+     "The drug is in the stem; iodine load and direct thyrocyte toxicity. **Four weeks is early**",
+     "Duration of therapy, prior thyroid disease, goitre, tenderness",
+     "**Colour-flow Doppler** separates type 1 from type 2; TPO antibodies; **do not stop the drug without cardiology**"
+    ],
+    [
+     "Assay interference or sampling error",
+     "An implausible combination of results in a patient who looks well",
+     "**Biotin supplements**, heterophile antibodies, blood taken soon after a levothyroxine dose",
+     "**Repeat on a different assay platform** — the cheapest step, and the first"
+    ],
+    [
+     "Thyroid hormone resistance",
+     "High hormones with **few thyrotoxic symptoms**; family history; goitre",
+     "Family history, goitre, symptom–biochemistry mismatch",
+     "Alpha subunit ratio, TRH testing, THRB genetic testing — specialist"
+    ],
+    [
+     "Graves · toxic adenoma · toxic multinodular goitre",
+     "All produce thyrotoxicosis — but **all give a low TSH**",
+     "Eye signs, diffuse smooth goitre with a bruit, single or lumpy nodules",
+     "TSH-receptor antibodies; radionuclide uptake scan"
+    ],
+    [
+     "Thyroiditis · exogenous thyroxine",
+     "Painful neck after a viral illness; or thyroxine taken for weight loss",
+     "Tender gland; impalpable gland with no eye signs",
+     "ESR and CRP; low uptake; **low thyroglobulin** in exogenous intake"
+    ],
+    [
+     "Phaeochromocytoma",
+     "Nervousness, palpitations, sweating and AF in one patient",
+     "**Episodic** headache with palpitations and sweating; labile hypertension",
+     "**Plasma or 24-hour urinary metanephrines**"
+    ],
+    [
+     "Anxiety · panic · adjustment disorder",
+     "Situational triggers, worry, poor sleep, recent stressor",
+     "Mood, sleep, stressors, **risk**; place, person or situation",
+     "Clinical assessment — but a **diagnosis of exclusion** while the T4 is high"
+    ],
+    [
+     "Stimulants — caffeine, alcohol, decongestants",
+     "Heavy tea or coffee, binge drinking, pseudoephedrine",
+     "Quantify intake; over-the-counter cold and flu preparations",
+     "History; trial of withdrawal"
+    ],
+    [
+     "Poorly controlled AF itself",
+     "Palpitations reported as 'nervousness'",
+     "Rate, exertional breathlessness, chest pain",
+     "ECG, examination, echocardiogram"
+    ],
+    [
+     "Malignancy or chronic infection",
+     "Weight loss with sweats but a plausible alternative explanation",
+     "Night sweats, anorexia, lumps, cough",
+     "Directed by history; FBE, ESR, imaging"
+    ]
    ]
   },
   "source": "Amiodarone_Thyroid_2_Case_Tasks_Script_Notability.pdf",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Amiodarone_Thyroid_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Assuming what 'nervous' means and launching a thyroid history — the word is TREMOR to one patient, PALPITATIONS to another and ANXIETY to a third, and the differential changes with the answer, so ask first: 'can you tell me what you mean by feeling nervous — do you mean you feel stressed and on edge, that you have shaking in your hands, or that your heart races?' (★)",
-   "FAIL — Asking mood and sleep but not SELF-HARM — the item marked down hardest, worth two marks, and unmissable when the presenting complaint is psychological: 'I ask everybody this — have you had any thoughts of harming yourself, or anyone else?'; the same block covers home, stresses, work, and the stimulant screen (tea, coffee, alcohol, other substances and over-the-counter cold and flu tablets) (★)",
-   "SAY — Name the MISMATCH in FOUR RUNGS and no more, checking understanding at the end, rather than drawing the axis or saying 'negative feedback': 'you have a gland in the front of your neck called the thyroid, and its job is to make hormones; your blood test shows those hormones are HIGHER than they should be; there is a second hormone we measure called TSH, made in the brain, whose job is to control the thyroid; and NORMALLY, WHEN THE THYROID HORMONES GO UP, THE TSH SHOULD COME DOWN — yours has stayed normal, and that mismatch is what I need to explain'; to the examiner it is THYROTOXICOSIS WITH INAPPROPRIATE TSH SECRETION (★)",
-   "FAIL — Giving ONE diagnosis instead of TWO, in order, each with its reason — FIRST a PITUITARY ADENOMA, usually not a cancer, still producing the controlling hormone when it should have switched off, which explains why the TSH has not come down; SECOND amiodarone, which affects the thyroid in several ways, with the honest caveat that with amiodarone you would usually expect the TSH to be LOW and his is normal, although the TSH can come back into range over time — and four weeks is EARLY for drug-induced thyrotoxicosis; then the rest: an ASSAY ARTEFACT, which is why the first investigation is a REPEAT ASSAY ON A DIFFERENT PLATFORM (ask about high-dose BIOTIN), anxiety or panic disorder, phaeochromocytoma, stimulants, and the other thyroid conditions — Graves, thyroiditis, a toxic nodule — all of which would give a LOW TSH, which is why they sit lower (★)",
-   "SAY — 'Please do not stop the amiodarone — I will speak to your cardiologist myself', because it is holding his rhythm and stopping it suddenly could be more dangerous than the thyroid result; and have the other two answers ready, because he reacts sharply to 'growth in the brain' — 'is it cancer?' gets 'these growths are usually benign, they're treatable, and that is not what I'm worried about today', and 'what happens now?' gets the repeat assay, further hormone tests including CORTISOL, formal visual fields and a pituitary MRI; if asked whether you would start carbimazole, the answer is NO — in a TSH-secreting adenoma a thionamide lowers the T4 and drives the TSH higher without treating the cause, and in type 2 amiodarone thyroiditis the gland is not overproducing at all, because stored hormone is leaking out; and CHECK CORTISOL BEFORE any thyroid-directed treatment in pituitary disease (★)",
-   "FAIL — Agreeing 'it's just the tablet' — false reassurance that closes the case prematurely and abandons the one finding that makes the station what it is, so hold BOTH possibilities open; and do not skip the two questions that sit either side of it — WHY THE FLECAINIDE WAS CHANGED, because flecainide is stopped when rhythm control fails or when structural or ischaemic heart disease emerges, so his answer tells you how sick his heart is and it is a scored question; and the PITUITARY TRACK, asked plainly and explained if he queries it ('do you get headaches? Any blurred vision, or difficulty seeing to the sides?' → 'because one of the glands that controls the thyroid sits in the brain, and if there's a problem there it can press on the nerves to the eyes — it takes ten seconds to ask and it changes what I do next'); safety net — a bad headache, any change in vision, chest pain, breathlessness at rest, or feeling feverish and confused; variants — a LOW TSH with high hormones after eight months on amiodarone is overt AMIODARONE-INDUCED THYROTOXICOSIS, separated into type 1 and type 2 by colour-flow Doppler with endocrinology and cardiology together; two months of headaches with clipping door frames means the adenoma is compressing the optic chiasm, making it urgent; and high-dose BIOTIN with no thyrotoxic symptoms at all produces exactly this false pattern, so stop the supplement, wait and repeat on a different platform"
-  ]
+   "FAIL — Reading the free T4 first and calling it hyperthyroidism. The TSH is normal; say **inappropriate** out loud.",
+   "FAIL — One diagnosis. Two, in order, each with its reason.",
+   "FAIL — No psychiatric screen. Mood, sleep, and the risk question.",
+   "FAIL — Stopping the amiodarone yourself. Speak to the cardiologist.",
+   "ASK — What do you mean by nervous: on edge, shaking, or racing heart?",
+   "ASK — Headaches? Trouble seeing to the sides? That earns the adenoma."
+  ],
+  "v2": true
  },
  {
   "id": "MED-03",
   "cat": "med",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "You are a GP. Jenny Alderton, 37, has come in with palpitations and dizziness for three days.",
    "(Version A — shorter stem.)"
@@ -3211,100 +3269,158 @@
    "Interpret the ECG to your examiner",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "8 minutes. 4–5 minutes history, ~30 seconds ECG, remainder diagnosis with a named cause. Ask for vitals before you begin.",
   "back": {
-   "dx": "Atrial fibrillation with rapid ventricular response — vitals BP 118/74, P 128 irregular, RR 16, T 36.6, SpO2 98%: stable but tachycardic. Duration THREE DAYS, CONTINUOUS (>48 h — dictates the whole rhythm-control answer). Hidden clue only if asked about associated symptoms: months of exertional chest tightness and breathlessness up the hill, settling on rest → the named cause is probable ischaemic heart disease, with coffee, alcohol and smoking contributing. Father MI in his fifties. Hidden agenda: 'Is this what my dad had?' and can't afford time off work.",
+   "dx": [
+    "**Atrial fibrillation with a rapid ventricular response**, and in this version **secondary to ischaemic heart disease**. Every recall hands you a cause — a label with no cause is a listed fail.",
+    "AF is disorganised atrial electrical activity replacing coordinated contraction: **an irregularly irregular ventricular response and loss of the P wave**. Atrial flutter is managed identically, so an uncertain read does not change the answer.",
+    "To the patient: **'your heart is beating irregularly because the electrical signals that normally set a steady rhythm have become disorganised — the top chambers quiver instead of squeezing properly, and that is the fluttering you feel.'**",
+    "The cause here: **exertional chest tightness and breathlessness for a few months, settling within a minute of stopping**. Contributing — **four to five coffees a day, two to three wines most nights, ten cigarettes a day**; father had an MI in his fifties.",
+    "Differentials are delivered **as causes**, by system: thyrotoxicosis, hypertension, valvular disease, pericarditis or myocarditis, pulmonary embolism, sepsis, electrolytes, anaemia — then close the palpitations list with **SVT, VT, ectopics, panic disorder, hypoglycaemia**.",
+    "**CHA₂DS₂-VA** — Australia omits the sex category: **C 1 · H 1 · A₂ age ≥75 = 2 · D 1 · S₂ prior stroke or TIA = 2 · V vascular disease 1 · A age 65–74 = 1**. **0 none · 1 consider · ≥2 anticoagulate.** She is **37 with none of these, so her score is 0 and she gets no anticoagulant today** — reassess when the results return.",
+    "Duration: **three days, continuous — beyond 48 hours**. **Unknown duration counts as beyond it too.**",
+    "Rate control first: **metoprolol 25–50 mg BD** or bisoprolol. **Diltiazem and verapamil are contraindicated in reduced ejection fraction**, and **AV nodal blockers are dangerous in pre-excited AF**. VERIFY",
+    "ECG numbers: **one large square 0.2 s · 10 seconds = 50 large squares · QRS count × 6 · normal QRS under 3 small squares (<120 ms)**. ST elevation **≥1 mm in two contiguous leads**; V2–V3 **≥2 mm men ≥40, ≥2.5 mm men <40, ≥1.5 mm women**. **Paroxysmal = self-terminating, usually within 7 days; persistent = beyond 7 days** — a separate box from the 48-hour rule.",
+    "SA — in MM5 the **echo and cardioversion need transfer**: **PATS**, cardiology telehealth in the interim, **MedSTAR 1300 13 12 33** if she destabilises. **Quitline 13 7848** · ambulance **000** · opportunistic AF screening **from age 65** · Closing the Gap PBS co-payment where eligible."
+   ],
    "plan": [
     [
      "0:00",
-     "'Before I begin, could I please have the vital signs?' → name 'tachycardic, irregular, haemodynamically stable' out loud"
+     "To the examiner before you touch anything: **'could I please have the vital signs — blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation?'** Then name it back — **tachycardic with an irregular pulse, but haemodynamically stable**."
     ],
     [
-     "0:20",
-     "WIPE, open question, empathy line. Choose PALPITATIONS as the structure — dizziness in one clarifying question (spinning vs faint; actually fainted?)"
+     "0:30",
+     "WIPE, name, open question, empathy line. **'Tell me more about what's been happening.'** … **'I'm sorry you've been feeling like this. I'll do my best to work out what's causing it and help you today.'**"
     ],
     [
-     "0:45",
-     "Characterise: tap it out; sudden/gradual; constant or comes and goes (3 days continuous); triggers; associated chest pain, SOB, sweating, presyncope"
+     "1:00",
+     "Characterise the palpitations: **can you tap out on the desk what the beat feels like · did it come on suddenly or build up · has it been there constantly for the three days or does it come and go · does anything set it off — coffee, alcohol, exercise, stress?** Irregular tapping is close to diagnostic."
     ],
     [
-     "2:00",
-     "Cause sweep, fast: heart (exertional pain — how long?, orthopnoea, PND, oedema, murmur/BP), lungs (cough, fever, pleuritic pain, calf, travel, snoring), thyroid (weight, heat, tremor, bowels, neck lump), habits (coffee, alcohol, smoking, drugs), PMH/meds/allergies/FHx"
+     "1:45",
+     "Associated symptoms and stability: **with the palpitations do you get chest pain, breathlessness, sweating, or feel like you might black out · and the dizziness — is it a spinning feeling or more like you're about to faint · have you actually fainted?** Dizziness gets **one clarifying question, not its own structure**."
     ],
     [
-     "4:30",
-     "ECG — all seven steps, no pauses: rate (10-second bypass line), rhythm irregularly irregular, no P waves/fibrillatory baseline, PR not measurable, QRS just over 2 small squares, up-sloping ST V2–V3 not pathological, T waves unremarkable → 'AF with rapid ventricular response'"
+     "2:15",
+     "Cause sweep, fast, by system. CVS: **that chest tightness on the hill, how long has it been happening · breathless lying flat, waking at night, ankle swelling · ever been told you have a murmur, high blood pressure, or a heart problem.** RS: **cough, fever, sharp pain on breathing, calf swelling, long travel · do you snore or feel sleepy in the day.** Endocrine: **weight loss, feeling hot when others don't, tremor, loose bowels, a lump in the neck.**"
+    ],
+    [
+     "3:15",
+     "SADMA and family: **how much coffee · how much alcohol · do you smoke · any other drugs · any other medical problems, medications, allergies · any heart problems in the family?** The examiner is scoring the sweep, not the guess."
+    ],
+    [
+     "4:00",
+     "**'Thank you Jenny. Examiner, may I now interpret the ECG?'** Seven steps in order, about 30 seconds, no pauses — and the **rate bypass line first**, then rhythm, which hands you the diagnosis."
+    ],
+    [
+     "4:45",
+     "Hold the read at essential level and commit. If challenged on V2–V3: **up-sloping, the trace ramping into the T wave at a fast rate, not a horizontal or convex injury pattern** — and the thresholds there are age- and sex-dependent."
     ],
     [
      "5:15",
-     "Name it, explain it plainly, then the CAUSE (arteries — chest tightness uphill; caffeine/alcohol/smoking). Differentials delivered as causes: thyroid, hypertension, valve, peri/myocarditis, PE, hormone tumours; also anxiety, hypoglycaemia, anaemia"
+     "Diagnosis in plain words, then **the cause named out loud**: **'I'm concerned this may relate to narrowing of the arteries supplying your heart, because of the chest tightness and breathlessness you get walking uphill. The caffeine, alcohol and smoking are contributing as well.'** Then **'does that make sense?'**"
     ],
     [
-     "7:00",
-     "Safety-net (chest pain, severe SOB, syncope, one-sided weakness/droop → 000), summary, invite questions, answer 'is this what my dad had?'"
+     "6:30",
+     "The rest of the differentials, **given as causes**: an overactive thyroid, high blood pressure, a valve problem, inflammation around the heart, a clot on the lung — and rarely a hormone-producing tumour; plus anxiety, low blood sugar and anaemia."
+    ],
+    [
+     "7:15",
+     "Safety net and close: **chest pain, severe breathlessness, fainting, or weakness or drooping on one side of the face or body → call an ambulance on triple zero**. Summarise, then invite questions — if her concerns were never elicited she will ask **'is this what my dad had?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "Can you tap out on the desk what the beat feels like?",
-    "Did it come on suddenly or build up? Constant for the three days, or comes and goes? ★",
-    "Does anything set it off — coffee, alcohol, exercise, stress?",
-    "With the palpitations — chest pain, breathlessness, sweating, feel like you might black out? ★ (this is where the exertional chest tightness comes out)",
-    "The dizziness — spinning, or like you're about to faint? Have you actually fainted?",
-    "Breathless lying flat, waking at night, ankle swelling? Ever told you have a murmur, high BP, heart problem?",
-    "Cough, fever, sharp pain on breathing, calf swelling, long travel? Snore or sleepy in the day?",
-    "Weight loss, feeling hot when others don't, tremor, loose bowels, neck lump?",
-    "Coffee, alcohol, smoking, other drugs? Other conditions, medications, allergies, heart problems in the family?"
-   ],
    "pefe": [
-    "Vitals from the examiner first: BP 118/74, P 128 irregular, RR 16, T 36.6, SpO2 98% RA",
-    "ECG seven steps in order: rate → rhythm → P waves → PR → QRS → ST → T; impression AF with RVR",
-    "Rate bypass line: 'As the rhythm is irregular, the correct method is to count the QRS complexes across a 10-second strip and multiply by six — may I return to the exact figure?' (ventricular response ~120–140)",
-    "If challenged on V2–V3: up-sloping, ramping into the T wave at a fast rate, not horizontal or convex injury; V2–V3 thresholds are higher and vary with age/sex — would not call an infarct",
-    "Investigations to name: TSH, echo (pump, valves, clot), FBE, EUC, LFT, fasting glucose and lipids",
-    "Rate bypass line — 'As the rhythm is irregular, the correct method is to count the QRS complexes across a 10-second strip and multiply by six — may I return to the exact figure?' (ventricular response ~120–140)",
-    "Investigations to name — TSH, echo (pump, valves, clot), FBE, EUC, LFT, fasting glucose and lipids"
+    "Ask the examiner for **vital signs before you begin** — the irregular pulse is named before you ever touch the ECG.",
+    "**12-lead ECG**, read in **seven steps: rate → rhythm → P waves → PR → QRS → ST → T**, then commit to an impression.",
+    "**The bypass line, verbatim**: **'as the rhythm is irregular, the correct method is to count the QRS complexes across a 10-second strip and multiply by six. Rather than count fifty large squares now, may I proceed and return to the exact rate?'**",
+    "If you name only two investigations, name these: **TSH and echocardiogram**. TSH is mandatory in every new AF.",
+    "The echo answers three management questions at once: **ejection fraction (which drugs are safe), valve status (warfarin or a DOAC), and structural disease**.",
+    "**A transthoracic echo cannot reliably exclude left atrial appendage thrombus** — early cardioversion needs a **transoesophageal echo**.",
+    "Also: **FBC · EUC and creatinine · LFT · coagulation profile · magnesium · fasting glucose or HbA1c · lipids · CXR**. **Troponin only if there are ischaemic symptoms.** Holter or extended monitoring if paroxysmal.",
+    "Stress testing and a BP series where ischaemic heart disease or hypertension is the suspected cause."
    ],
-   "fails": [
-    "Taking the dizziness road (vertigo/presyncope/postural drop) and running out of time",
-    "Not establishing duration and whether continuous ★",
-    "Not eliciting the exertional chest pain ★",
-    "Freezing on the rate step — counting boxes, never recovering ★",
-    "Over-reading up-sloping ST in V2–V3 as infarct",
-    "Giving the label without a named cause ★",
-    "Abandoning the systems sweep because you've already guessed AF"
-   ],
-   "numbers": [
-    "Large square = 0.2 s; 10 seconds = 50 large squares; QRS count × 6",
-    "Normal QRS <3 small squares (<120 ms)",
-    "ST elevation: ≥1 mm in two contiguous leads; V2–V3 ≥2 mm men ≥40, ≥2.5 mm men <40, ≥1.5 mm women",
-    "48 hours = cardioversion safety threshold; unknown duration counts as beyond it",
-    "Paroxysmal = self-terminating, usually within 7 days; persistent = beyond 7 days",
-    "Her CHA₂DS₂-VA = 0 today (37, no risk factors) — reassess once results back, especially if chest pain is ischaemic",
-    "Variant 1 UNSTABLE (BP 84/52, P 165, clammy, chest pain, syncope): stops being counselling — 000/ED, O2 if hypoxic, IV access, troponin/EUC/Mg/FBC, monitoring, urgent synchronised DC cardioversion under sedation",
-    "Quitline 13 7848 · 000"
+   "ddx": [
+    [
+     "**Ischaemic heart disease** · hypertension · valvular (mitral stenosis) · cardiomyopathy · heart failure",
+     "**Exertional chest pain relieved by rest**; BP history; murmur; orthopnoea, PND, oedema",
+     "Exertional symptoms, BP history, murmur, ankle swelling",
+     "**Echocardiogram** — EF, valves, chamber size; stress test; BP series — urgent"
+    ],
+    [
+     "Pericarditis · myocarditis · endocarditis",
+     "Fever, positional pleuritic pain, new murmur, recent viral illness",
+     "Fever, murmur, pain that changes with posture",
+     "ECG, troponin, CRP, blood cultures, echo — **emergency**"
+    ],
+    [
+     "Pulmonary embolism · pneumonia · COPD · obstructive sleep apnoea",
+     "Pleuritic pain, dyspnoea, calf swelling, immobility; snoring, daytime somnolence",
+     "Calf swelling, long travel, cough and fever, snoring",
+     "**Wells score, CTPA**; CXR; sleep study — emergency"
+    ],
+    [
+     "**Thyrotoxicosis** · diabetes · phaeochromocytoma",
+     "Heat intolerance, weight loss despite appetite, tremor, goitre; episodic headache with sweating and severe hypertension",
+     "Heat, weight, tremor, bowels, neck lump",
+     "**TSH — mandatory in every new AF**; HbA1c; metanephrines if suspicious"
+    ],
+    [
+     "Alcohol ('holiday heart') · caffeine · smoking · stimulants · salbutamol · excess thyroxine",
+     "Binge pattern, heavy coffee intake, recreational drug use",
+     "Quantify coffee, alcohol, cigarettes, other drugs",
+     "History; urine drug screen if indicated"
+    ],
+    [
+     "Sepsis of any source",
+     "Fever, a focus of infection, tachycardia out of proportion",
+     "Fever, a source",
+     "Septic screen — **treat the sepsis and AF often reverts** — emergency"
+    ],
+    [
+     "Electrolytes · anaemia · obesity · post-operative · lone AF",
+     "Vomiting, diuretics, pallor, fatigue, recent surgery",
+     "Pallor, recent surgery, weight and waist",
+     "EUC, magnesium, FBC"
+    ],
+    [
+     "SVT · VT · ectopics · panic disorder · hypoglycaemia",
+     "Regular fast rhythm; broad complex; 'skipped beat'; situational anxiety; diabetic on insulin",
+     "**Tap out the rhythm** — regular and fast suggests SVT",
+     "**The ECG in front of you settles most of these**"
+    ]
    ]
   },
   "source": "Atrial_Fibrillation_2_Case_Tasks_Script_Notability.pdf (Version A)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Atrial_Fibrillation_2_Case_Tasks_Script_Notability.pdf",
   "findings": [
    [
-    "Vitals from the examiner first",
-    "BP 118/74, P 128 irregular, RR 16, T 36.6, SpO2 98% RA"
+    "Vital signs, asked before you start",
+    "BP 118/74 · P 128 and IRREGULAR · RR 16 · T 36.6 · SpO2 98% on room air. Haemodynamically stable but tachycardic"
    ],
    [
-    "ECG seven steps in order",
-    "Rate → rhythm → P waves → PR → QRS → ST → T; impression AF with RVR"
+    "12-lead ECG, handed to you",
+    "Ventricular response 120–140 · IRREGULARLY IRREGULAR · NO DISCRETE P WAVES, fibrillatory baseline · PR not measurable · QRS just over two small squares · up-sloping ST in V2–V3 · T waves unremarkable"
+   ],
+   [
+    "Examiner challenge — V2 and V3",
+    "'Are you not concerned?' — UP-SLOPING, the trace ramping into the T wave at a fast rate; not a horizontal or convex injury pattern"
+   ],
+   [
+    "Examiner challenge — the rate",
+    "'What is the rate?' — count QRS complexes across a 10-second strip and multiply by six; describe the response as RAPID rather than quoting one figure"
+   ],
+   [
+    "Unstable variant, if the vitals change",
+    "BP 84/52 · P 165 irregular · clammy, ischaemic chest pain, fainted this morning — this stops being a counselling station"
    ]
   ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
+  "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Not establishing DURATION and whether CONTINUOUS — three days continuous is over 48 hours, and that single fact dictates your entire rhythm-control answer later; 'has it been there constantly for the three days, or does it come and go?' — and if the patient says 'I don't know, I've never felt it before', THAT COUNTS AS OVER 48 HOURS TOO (★)",
-   "FAIL — Not eliciting the EXERTIONAL CHEST PAIN — she is briefed not to volunteer it, it only comes out if you ask about ASSOCIATED SYMPTOMS, and it is the CAUSE you have to name in task 3: tightness and breathlessness walking up the hill for a few months, settling within a minute or two of stopping, never mentioned because she assumed she was unfit (★)",
-   "FAIL — Freezing on the RATE step, which is where candidates lose the station — they stall, start counting boxes, panic and never recover; say the bypass line and move on, because step two hands you the diagnosis: 'as the rhythm is irregular, the correct method is to count the QRS complexes across a 10-second strip and multiply by six — rather than count fifty large squares now, may I proceed and come back to the exact figure? The ventricular response is clearly rapid, in the order of 120 to 140'; then all SEVEN steps in order without pauses — rate, rhythm (IRREGULARLY IRREGULAR), P waves (none, a fibrillatory baseline), PR interval (not measurable, as there are no P waves), QRS, ST segments, T waves — closing with 'my overall impression is ATRIAL FIBRILLATION WITH A RAPID VENTRICULAR RESPONSE' (★)",
-   "FAIL — Giving the LABEL without a NAMED CAUSE — every recall hands you one in the stem or the history (ischaemia, caffeine and alcohol, or untreated hypertension), so find yours and say it back, because a diagnosis without a cause reads as incomplete reasoning: 'atrial fibrillation is usually a sign of something else, so the important question is WHY it has happened to you — given the chest tightness and breathlessness walking uphill, I'm concerned this may relate to narrowing of the arteries supplying your heart, and the caffeine, alcohol and smoking are contributing too'; then the differentials given AS CAUSES — thyrotoxicosis, hypertension, valve disease, pericarditis or infection, pulmonary embolism, and rarely a hormone-producing tumour, with anxiety, hypoglycaemia and anaemia excluded by the tracing itself (★)",
-   "FAIL — Taking the DIZZINESS road and running out of time — palpitations is the structure, because the dizziness road owes the examiner vertigo, presyncope, syncope and a postural drop and you will still be there at the bell; one clarifying question settles it ('is it a spinning feeling, or more like you're about to faint? Have you actually fainted?'); ask for the VITAL SIGNS before you begin, name the irregular pulse before you touch the ECG, characterise the palpitations by asking her to TAP OUT the beat, and sweep the causes by system — cardiac, respiratory, thyroid, then habits and family history — because the examiner is scoring the SWEEP rather than the guess, and the sweep is what produces the cause",
-   "FAIL — Over-reading up-sloping ST in V2–V3 as an infarct — keep the read at essential level and commit, with the defence ready if challenged: 'that elevation is UP-SLOPING, which is the trace ramping into the T wave at a fast rate, rather than a horizontal or convex injury pattern — and the thresholds in V2–V3 are higher than elsewhere and vary with age and sex, so I'd not call an infarct on that'; ST elevation is 1 mm in two contiguous leads, with V2–V3 requiring 2 mm in men 40 and over, 2.5 mm in men under 40 and 1.5 mm in women; a large square is 0.2 seconds so ten seconds is fifty large squares, and a normal QRS is under three small squares; ask about her concerns, because her father had a heart attack in his fifties and she is frightened she has the same thing, and she will not say so unless asked; and the UNSTABLE variant stops being a counselling station altogether — hypotension, a rate of 165, clamminess, ischaemic chest pain and syncope mean an ambulance, oxygen if hypoxic, IV access, bloods including troponin, continuous monitoring and URGENT SYNCHRONISED DC CARDIOVERSION under sedation"
+   "FAIL — Running the dizziness structure. **Palpitations** is the bold complaint.",
+   "FAIL — Freezing on the rate. Say the 10-second bypass line and move to rhythm.",
+   "FAIL — A label with no cause. Name the ischaemic heart disease.",
+   "FAIL — Over-reading up-sloping ST in V2–V3 into an infarct.",
+   "ASK — How long, and has it been continuous? Three days is over **48 hours**.",
+   "ASK — Chest pain or breathlessness walking uphill? She never volunteers it."
   ],
   "versions": {
    "doorStem": "General practice. A woman presents with palpitations. TWO recall versions with different stem lengths and different task weighting — version A is history-weighted and short, version B is a full-page stem that has already done the history for you and is management-weighted.",
@@ -3322,13 +3438,13 @@
    ],
    "note": "Other recalls substitute the cause: coffee/alcohol/smoking, or untreated hypertension, instead of ischaemic heart disease. Every recall version hands you a cause — name it back to the patient; 'you have atrial fibrillation', full stop, is a listed fail. Structure beats recall: sweep CVS → RS → Endocrine → Drugs → Infection → Other and the causes assemble themselves on a stem you have never seen. Teaching-only scenarios in the source (unstable version, thyrotoxic AF, valvular AF, asymptomatic screening AF) are practice cards, not recalls.",
    "thisCard": "A"
-  }
+  },
+  "v2": true
  },
  {
   "id": "MED-04",
   "cat": "med",
   "promptBell": false,
-  "setting": "General practice.",
   "stem": [
    "Same practice. A 55-year-old woman presents with palpitations.",
    "The stem is a full page and already contains the history: heavy coffee, alcohol most nights, some chest pain, and hypertension diagnosed years ago and never followed up. (Version B — long stem; summarised here as the PDF summarises it.)"
@@ -3338,79 +3454,131 @@
    "Explain the diagnosis to the patient",
    "Explain your management plan"
   ],
-  "time": "8 minutes. Management is the predominant assessment area — roughly five minutes for it. Brevity fails this station.",
   "back": {
-   "dx": "Atrial fibrillation with rapid ventricular response, driven by untreated hypertension (years of high pressure stretching the heart), with coffee and alcohol adding to it. CHA₂DS₂-VA = 1 (hypertension) → discuss, and recommend starting anticoagulation; +1 more if the stem gives diabetes, vascular disease or heart failure → 2, anticoagulate without debate. Age doesn't score until 65. Duration unknown/long = treat as >48 h.",
+   "dx": [
+    "**Atrial fibrillation with a rapid ventricular response**, **secondary to untreated hypertension** with caffeine, alcohol and smoking adding to it. **Management is the predominant assessment area — brevity fails this station.**",
+    "Say the cause back to her: **'high blood pressure over years stretches the heart and makes this rhythm much more likely, and the coffee and alcohol are adding to it.'**",
+    "**Pillar 1 — find and treat the cause.** If you name only two investigations, name **TSH and echocardiogram**. The echo answers three questions at once: **pumping strength, valve status, and whether there is clot inside**.",
+    "Alongside it, because **AF is itself cardiovascular disease**: cut back the **coffee and alcohol**, **stop smoking — Quitline 13 7848**, diet, exercise, and treat the **blood pressure, sugar and sleep apnoea** if present.",
+    "**Pillar 2 — stroke risk. Name the score.** **CHA₂DS₂-VA**, the Australian version with the sex category removed: **C 1 · H 1 · A₂ age ≥75 = 2 · D 1 · S₂ prior stroke or TIA = 2 · V 1 · A age 65–74 = 1**. **0 none · 1 consider · ≥2 anticoagulate, no further debate.**",
+    "She scores **1 for hypertension — age does not score until 65 — so: consider, and in practice give**, because the stroke prevented outweighs the bleeding risk. Under the older CHA₂DS₂-VASc she would also have scored for being female, which is exactly why you name the score you are using.",
+    "Which anticoagulant, and **the echo answers it**: **moderate-to-severe mitral stenosis or a mechanical valve = valvular AF → warfarin, INR 2.0–3.0**, DOACs contraindicated. Everything else → **apixaban 5 mg BD** (2.5 mg BD if two of: **age ≥80, weight ≤60 kg, creatinine ≥133 micromol/L**), rivaroxaban 20 mg daily with food, or dabigatran 150 mg BD. VERIFY",
+    "**Pillar 3 — rate first: metoprolol 25–50 mg BD** or bisoprolol; target a resting rate **under about 100**. Diltiazem or verapamil as alternatives but **not in reduced ejection fraction**; digoxin only as an adjunct in sedentary patients or heart failure. VERIFY",
+    "**The 48-hour rule, with its reason said out loud**: fibrillating atria do not empty, clot forms in the left atrial appendage, and restoring coordinated contraction ejects it. **Under 48 h → cardiovert. ≥48 h or unknown → rate control, then either TOE to exclude thrombus or 3 weeks of anticoagulation first — and 4 weeks afterwards regardless.** **Give both pathways even though only one applies.**",
+    "SA — **PATS** for echo and cardioversion transfer from MM5, cardiology telehealth in the interim, **MedSTAR 1300 13 12 33** for retrieval. Warfarin needs reliable INR access in the country, which is a real argument for a **DOAC**. **Ambulance 000**; syncope from arrhythmia triggers a **non-driving period under the Austroads standard** (Registrar of Motor Vehicles)."
+   ],
    "plan": [
     [
      "0:00",
-     "ECG seven steps, no pauses: 10-second rate line → irregularly irregular → no P waves → PR not measurable → QRS narrow-ish → up-sloping ST V2–V3 not pathological → T unremarkable → 'AF with RVR'"
+     "To the examiner: **'could I please have the vital signs — blood pressure, pulse rate, respiratory rate, temperature and oxygen saturation?'** **Unstable — hypotension, ischaemic chest pain, acute heart failure, syncope — and this is no longer a counselling station**: ED, oxygen if hypoxic, IV access, bloods including troponin, EUC, magnesium and FBC, monitoring, **urgent synchronised DC cardioversion**."
     ],
     [
-     "1:00",
-     "Diagnosis plainly: irregular because the electrical signals are disorganised, top chambers quiver; then the CAUSE — untreated blood pressure, plus coffee and alcohol. Differentials as causes: thyroid, valve, peri/myocarditis, PE, hormone tumours; anxiety, hypoglycaemia, anaemia excluded"
+     "0:30",
+     "**'Examiner, may I interpret the ECG?'** Seven steps in order, about 30 seconds: **rate (bypass line) → rhythm, irregularly irregular → no discrete P waves → PR not measurable → QRS borderline → up-sloping ST in V2–V3, not pathological → T waves unremarkable.** Impression: **AF with a rapid ventricular response.**"
     ],
     [
-     "2:30",
-     "Signpost: three parts — find the cause, protect from stroke, treat the beat"
+     "1:15",
+     "Diagnosis to the patient in plain words, **then the cause**: the electrical signals have become disorganised so the top chambers quiver; and **'the main driver here is your blood pressure, which hasn't been treated or followed up'**, with the coffee and alcohol adding to it."
     ],
     [
-     "3:00",
-     "Pillar 1: TSH + echo (pump, valves, clot inside); FBE, EUC, LFT, fasting glucose, lipids; treat the BP; cut coffee and alcohol, stop smoking (Quitline), diet, exercise"
+     "2:00",
+     "**Signpost the plan before you give it**: **'there are three parts — first, some tests to find out why this has happened; second, protecting you from a stroke; and third, treating the irregular beat itself. Is it alright if I go through them in turn?'**"
+    ],
+    [
+     "2:15",
+     "Pillar 1. **'The two most important tests are a blood test for your thyroid and an ultrasound scan of your heart'** — the echo shows **how strongly it pumps, whether any valve is damaged, and whether there is clot inside**. Plus **FBC, kidney function and salts, LFT, coagulation, magnesium, fasting sugar and cholesterol, CXR**. Then the risk factors: **coffee, alcohol, smoking with a Quitline referral, diet, exercise, and treating the blood pressure**."
+    ],
+    [
+     "3:15",
+     "Pillar 2, **and name the score out loud**: **'when the heart beats irregularly the blood doesn't empty properly from the upper chambers and can form a clot; if it travels it causes a stroke. We use a scoring tool called the CHA₂DS₂-VA score'** — then the thresholds, then **her score of 1 for the blood pressure, and the recommendation to start one**. Warfarin versus a newer tablet, **and the echo decides which**."
     ],
     [
      "4:15",
-     "Pillar 2: clot → stroke; name CHA₂DS₂-VA and the thresholds (0 none · 1 consider · ≥2 give); hers = 1 for hypertension → recommend starting; warfarin (regular tests) vs DOAC e.g. apixaban — echo decides: valve problem → warfarin"
+     "Pillar 3. **Rate control now — a beta blocker, metoprolol 25–50 mg BD — to settle the palpitations and the dizziness.** Then **both duration pathways**: **'if it had been present less than two days we could correct the rhythm straight away; because it has been longer — or when we simply don't know — a clot may already have formed, and correcting the rhythm then could push it out and cause a stroke.'**"
     ],
     [
-     "5:45",
-     "Pillar 3: rate control first (beta blocker); rhythm — BOTH duration pathways: <48 h cardiovert now; >48 h or unknown → rate control, anticoagulate, TOE OR 3 weeks anticoagulation, then cardiovert, continue ≥4 weeks after; electrical (sedation, controlled shock) vs pharmacological — echo decides"
+     "5:30",
+     "So the order is: **rate control now → anticoagulate → either a transoesophageal echo to look directly for clot, or three weeks on the blood thinner → then correct the rhythm → and four weeks of anticoagulation afterwards regardless.** Correction is **electrical, briefly asleep under sedation, or medication — flecainide if no structural disease and the EF is preserved, amiodarone if not**."
     ],
     [
-     "7:15",
-     "Safety-net (chest pain, severe SOB, syncope, one-sided weakness/droop → 000); summary; cardiologist; questions"
+     "6:30",
+     "Safety net, in her words: **'if you get chest pain, severe breathlessness, if you faint, or if you notice weakness or drooping on one side of your face or body — call an ambulance on triple zero straight away. Those last ones are stroke symptoms and time matters enormously.'**"
+    ],
+    [
+     "7:00",
+     "Summarise all three pillars in one breath, offer to **write it down**, say you will **involve a heart specialist** and see her with the results, then **'what questions do you have for me?'** If she refuses the blood thinner: acknowledge, offer the DOAC, respect the decision, and **offer to go through the actual numbers and decide together**."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "(History is in the stem) Confirm duration if not stated — 'I've no idea' counts as >48 h",
-    "'Is it alright if I go through the three parts in turn?'",
-    "'What questions do you have for me?'"
-   ],
    "pefe": [
-    "ECG interpretation as MED-03",
-    "Pillar 1 investigations: TSH, transthoracic echo, FBE, EUC, LFT, fasting glucose, lipids",
-    "If pressed on the echo: TTE gives EF, valves, chamber size but cannot reliably exclude LEFT ATRIAL APPENDAGE thrombus — early cardioversion needs a TOE",
-    "Warfarin vs DOAC decided by the echo (valvular AF → warfarin)"
+    "**Vital signs from the examiner before anything else** — this is the step that separates a counselling station from an emergency one.",
+    "**12-lead ECG** read in **seven steps**, then commit. Keep it at essential level: **irregularly irregular with absent P waves cannot be anything except AF**.",
+    "**TSH and echocardiogram** head the workup — name these two if you name no others.",
+    "**Transthoracic echo cannot exclude left atrial appendage thrombus.** Early cardioversion requires a **transoesophageal echo**.",
+    "**FBC · EUC and creatinine · LFT · coagulation profile · magnesium · fasting glucose or HbA1c · lipid profile · CXR.** **Troponin only if ischaemic symptoms.**",
+    "**Renal function before a DOAC** — apixaban drops to 2.5 mg BD on two of age ≥80, weight ≤60 kg, creatinine ≥133 micromol/L. VERIFY",
+    "Blood pressure series to confirm the untreated hypertension, and a full **cardiovascular risk assessment** — AF is cardiovascular disease.",
+    "If asked about bleeding risk: **HAS-BLED identifies and corrects modifiable risks — uncontrolled hypertension, alcohol, NSAIDs, labile INR — it does not withhold anticoagulation.** A high score means closer review, not no treatment."
    ],
-   "fails": [
-    "Finishing management in under two minutes ★",
-    "Not naming CHA₂DS₂-VA and the thresholds — you name it for the examiner's score sheet ★",
-    "Not naming TSH and echo, or omitting risk-factor modification ★",
-    "Not naming rate control, or not explaining the 48-hour rule WITH the reason (pushing a clot out → stroke) ★",
-    "Giving only one duration pathway — give both",
-    "Label without a cause (untreated hypertension) ★",
-    "Saying 'it's about clotting' without the score — the folklore trap"
-   ],
-   "numbers": [
-    "CHA₂DS₂-VA: 0 none · 1 consider · ≥2 give. Age ≥75 = 2; prior stroke/TIA = 2; age 65–74 = 1; hypertension 1. Australian version drops the female-sex point — say which score you're using",
-    "48 h threshold; 3 weeks anticoagulation before cardioversion, ≥4 weeks after",
-    "Metoprolol 25–50 mg BD · apixaban 5 mg BD · warfarin INR 2.0–3.0 — VERIFY",
-    "Opportunistic AF screening from age 65",
-    "Variant 3 'never felt it, you found it on my pulse' — common; assume >48 h; same careful order",
-    "Variant 4 refuses the blood thinner (mother bruised on warfarin) — DOACs don't need tests and are more predictable; her decision, but make it with the full picture: the harm prevented is a stroke; go through the numbers together; can change her mind anytime",
-    "Quitline 13 7848 · 000"
+   "ddx": [
+    [
+     "**Hypertension** · ischaemic heart disease · valvular (mitral stenosis) · cardiomyopathy · heart failure",
+     "**BP diagnosed years ago and never followed up**; exertional chest discomfort; murmur; orthopnoea, PND, oedema",
+     "BP history and current readings, exertional symptoms, murmur",
+     "**Echocardiogram** — EF, valves, chamber size; BP series; stress test — urgent"
+    ],
+    [
+     "Pericarditis · myocarditis · endocarditis",
+     "Fever, positional pleuritic pain, new murmur, recent viral illness",
+     "Fever, murmur, pain that changes with posture",
+     "ECG, troponin, CRP, blood cultures, echo — **emergency**"
+    ],
+    [
+     "Pulmonary embolism · pneumonia · COPD · obstructive sleep apnoea",
+     "Pleuritic pain, dyspnoea, calf swelling, immobility; snoring, daytime somnolence",
+     "Calf swelling, long travel, cough and fever, snoring",
+     "**Wells score, CTPA**; CXR; sleep study — emergency"
+    ],
+    [
+     "**Thyrotoxicosis** · diabetes · phaeochromocytoma",
+     "Heat intolerance, weight loss despite appetite, tremor, goitre; episodic headache with sweating and severe hypertension",
+     "Heat, weight, tremor, bowels, neck lump",
+     "**TSH — mandatory in every new AF**; HbA1c; metanephrines if suspicious"
+    ],
+    [
+     "**Alcohol ('holiday heart') · caffeine · smoking**",
+     "Heavy coffee, alcohol most nights, ten a day — all handed over in this stem",
+     "Quantify intake; binge pattern; other stimulants, salbutamol, excess thyroxine",
+     "History; **lifestyle modification becomes central to the plan**"
+    ],
+    [
+     "Sepsis of any source",
+     "Fever, a focus of infection, tachycardia out of proportion",
+     "Fever, a source",
+     "Septic screen — **treat the sepsis and AF often reverts** — emergency"
+    ],
+    [
+     "Electrolytes · anaemia · obesity · post-operative · lone AF",
+     "Vomiting, diuretics, pallor, fatigue, recent surgery",
+     "Pallor, recent surgery, weight and waist",
+     "EUC, magnesium, FBC"
+    ],
+    [
+     "SVT · VT · ectopics · panic disorder · hypoglycaemia",
+     "Regular fast rhythm; broad complex; 'skipped beat'; situational anxiety; diabetic on insulin",
+     "Regular versus irregular; the tapped rhythm",
+     "**The ECG in front of you settles most of these**"
+    ]
    ]
   },
   "source": "Atrial_Fibrillation_2_Case_Tasks_Script_Notability.pdf (Version B)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Atrial_Fibrillation_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Finishing management in under two minutes — management is the PREDOMINANT assessment area in Version B and you have roughly FIVE minutes for it, so brevity fails this station; signpost the three pillars and then work them ('there are three parts: first, some tests to find out why this has happened; second, protecting you from a stroke; and third, treating the irregular beat itself') — and the role-player is briefed to ask 'is that everything? What actually happens next?' if you stop early (★)",
-   "FAIL — Not naming CHA₂DS₂-VA and the thresholds — there is folklore that saying 'it's about clotting' is enough, and it is not: YOU ARE NAMING THE SCORE FOR THE EXAMINER'S SCORE SHEET, not for the patient; 'we use a scoring tool called the CHA₂DS₂-VA score — it counts age, high blood pressure, diabetes, heart failure, previous stroke and artery disease; TWO OR MORE and we start a blood thinner, ONE and we discuss it and usually still start one, and only ZERO means we hold off', then APPLY it out loud to this patient and say why; age 75 and over scores 2, prior stroke or TIA scores 2, age 65 to 74 scores 1, and age does not score at all until 65 — and the older CHA₂DS₂-VASc also scored a point for female sex, which Australian practice has removed, which is exactly why naming the score you are using matters (★)",
-   "FAIL — Not naming TSH and ECHO, or omitting RISK-FACTOR MODIFICATION — pillar one is find and treat the cause: a THYROID blood test, because an overactive thyroid is a common cause of this rhythm, and an ECHOCARDIOGRAM, which tells you three things at once (pumping strength, valve damage, and clot inside), plus full blood count, kidneys and electrolytes, liver function, fasting glucose and lipids for overall heart risk — and alongside them, cutting right back on coffee and alcohol, stopping smoking with a Quitline referral, diet and exercise, and treating blood pressure or sugar if they turn out high; if pressed on the echo, 'a transthoracic echo gives me ejection fraction, valve status and chamber size, but it cannot reliably exclude thrombus in the left atrial appendage — if I wanted to cardiovert early I'd need a TRANSOESOPHAGEAL echo for that' (★)",
-   "FAIL — Not naming RATE CONTROL, or not explaining the 48-HOUR RULE WITH THE REASON — pillar three is rate first, then rhythm: a BETA BLOCKER to slow the heart and settle the palpitations and dizziness, then 'if it had been present for less than two days we could safely correct the rhythm straight away, but once it has been present MORE THAN 48 HOURS — or when we simply don't know how long — a clot may already have formed, and CORRECTING THE RHYTHM COULD PUSH THAT CLOT OUT AND CAUSE A STROKE'; the reason is the mark, not the number (★)",
-   "FAIL — Giving only ONE duration pathway — give BOTH, even though only one applies, because it demonstrates the knowledge and protects you if your stem says one day instead of three: either a TRANSOESOPHAGEAL ECHO to look directly for clot and cardiovert early, or THREE WEEKS of anticoagulation first — and FOUR WEEKS of anticoagulation afterwards either way; then name the two methods of cardioversion (electrical under brief sedation, or pharmacological) with the echo deciding which; and on anticoagulant choice, warfarin needs regular blood tests while a DOAC such as apixaban does not, with the echo deciding again, because valvular disease makes warfarin the safer choice (metoprolol 25–50 mg BD, apixaban 5 mg BD, warfarin INR 2.0–3.0) (★)",
-   "FAIL — Label without a CAUSE — in Version B the stem hands you UNTREATED HYPERTENSION, diagnosed years ago and never followed up, and you say it back: 'I think the main driver here is your blood pressure, which hasn't been treated or followed up — high blood pressure over years stretches the heart and makes this rhythm much more likely, and the coffee and alcohol are adding to it'; and the same finding scores again in pillar two, because hypertension is a point on the score, so a 55-year-old with hypertension alone reaches ONE — discuss it, and recommend starting a thinner because the stroke benefit outweighs the risk — while any added diabetes, vascular disease or heart failure reaches TWO and you anticoagulate without further debate; close with the SAFETY NET in her words — chest pain, severe breathlessness, fainting, or weakness or drooping on one side of the face or body means calling 000, because those last ones are stroke symptoms and time matters enormously — then summarise and invite questions; if she REFUSES the thinner because her mother bruised on warfarin, do not argue: offer the DOAC, respect the decision, ask to go through the actual numbers together, and say she can change her mind at any time"
+   "FAIL — A thin plan. Three pillars out loud: **cause → clot → arrhythmia**.",
+   "FAIL — Never naming **CHA₂DS₂-VA** and its thresholds. 'We'll consider a blood thinner' scores nothing.",
+   "FAIL — Cardioverting AF of **≥48 hours or unknown duration** without excluding thrombus.",
+   "FAIL — The label with no cause. Name the **untreated hypertension**, coffee and alcohol.",
+   "ASK — Vital signs first. Instability turns this into an emergency station.",
+   "ASK — How long has it been present? **Unknown counts as over 48 hours.**"
   ],
   "versions": {
    "doorStem": "General practice. A woman presents with palpitations. TWO recall versions with different stem lengths and different task weighting — version A is history-weighted and short, version B is a full-page stem that has already done the history for you and is management-weighted.",
@@ -3428,7 +3596,31 @@
    ],
    "note": "Other recalls substitute the cause: coffee/alcohol/smoking, or untreated hypertension, instead of ischaemic heart disease. Every recall version hands you a cause — name it back to the patient; 'you have atrial fibrillation', full stop, is a listed fail. Structure beats recall: sweep CVS → RS → Endocrine → Drugs → Infection → Other and the causes assemble themselves on a stem you have never seen. Teaching-only scenarios in the source (unstable version, thyrotoxic AF, valvular AF, asymptomatic screening AF) are practice cards, not recalls.",
    "thisCard": "B"
-  }
+  },
+  "v2": true,
+  "findings": [
+   [
+    "Vital signs, asked before you start",
+    "Haemodynamically stable, tachycardic, pulse IRREGULAR. Ask for BP, pulse rate, RR, temperature and saturations by name"
+   ],
+   [
+    "12-lead ECG, handed to you",
+    "Rapid ventricular response · IRREGULARLY IRREGULAR · NO DISCRETE P WAVES, fibrillatory baseline · PR not measurable · QRS just over two small squares · up-sloping ST in V2–V3 · T waves unremarkable"
+   ],
+   [
+    "Already given in the long stem",
+    "Heavy coffee · alcohol most nights · smoking · occasional chest discomfort · HYPERTENSION diagnosed years ago and NEVER FOLLOWED UP. The history is handed to you on purpose"
+   ],
+   [
+    "Examiner challenge — the echo",
+    "'A transthoracic echo gives ejection fraction, valve status and chamber size — but it cannot reliably exclude thrombus in the left atrial appendage. Early cardioversion needs a TOE'"
+   ],
+   [
+    "Unstable variant, if the vitals change",
+    "BP 84/52 · P 165 irregular · clammy, ischaemic chest pain, fainted this morning — emergency management, not outpatient counselling"
+   ]
+  ],
+  "findingsLabel": "Examination findings — open only when you would ask the examiner"
  },
  {
   "id": "MED-05",
