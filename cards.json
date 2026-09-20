@@ -13994,8 +13994,8 @@
  {
   "id": "MED-44",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "setting": "General practice, regional South Australia.",
   "stem": [
    "Mr James Halloran, 62, retired shearing contractor from Kadina. BMI 32. Ex-smoker, 40 pack-years, stopped two years ago. Admitted three weeks ago with shortness of breath, worse on stairs and exertion. Cardiology has cleared him. Family history of heart and lung disease. Using Ventolin with minimal effect. Here for his results.",
    "Spirometry: FEV1 1.52 → 1.64 L (predicted 2.60); FVC 2.27 → 2.42 L (3.40); ratio 67 → 68 (predicted 76); change +120 mL, +3%. ABG on room air: pH 7.33 · PaCO2 58 · PaO2 62 · HCO3⁻ 30 · BE +4."
@@ -14004,81 +14004,194 @@
    "Explain the investigations to the patient",
    "Explain your management plan in detail"
   ],
-  "time": "8 minutes. 0:00 open · 0:45 spirometry · 1:50 gas · 2:40 name COPD and check · 3:25 PIVOT to management whether or not you've finished · 6:50 action plan and safety net · 7:45 summarise.",
+  "findings": [
+   [
+    "Spirometry — FEV1",
+    "1.52 → 1.64 L (predicted 2.60). CHANGE +120 mL, +3%"
+   ],
+   [
+    "Spirometry — FVC",
+    "2.27 → 2.42 L (predicted 3.40)"
+   ],
+   [
+    "Spirometry — THE RATIO",
+    "67 → 68, against a PREDICTED 76. REDUCED = OBSTRUCTIVE PATTERN. Say POST-BRONCHODILATOR out loud — the criterion is a POST-bronchodilator FEV1/FVC below 0.70 or below the lower limit of normal"
+   ],
+   [
+    "Spirometry — reversibility",
+    "+120 mL and +3%. The threshold is 200 mL AND 12% FROM BASELINE. FAILS BOTH → NOT significantly reversible → COPD, not asthma"
+   ],
+   [
+    "Blood gas — pH",
+    "7.33 (normal 7.35–7.45). ACIDAEMIC — but only just. CORRECTION: a pH of 7.38 is NORMAL, not acidaemic. Only call it acidaemia below 7.35"
+   ],
+   [
+    "Blood gas — PaCO2",
+    "58 mmHg (normal 35–45). RAISED, and it explains the pH → RESPIRATORY"
+   ],
+   [
+    "Blood gas — BICARBONATE",
+    "30 mmol/L (normal 22–26), base excess +4. THE KIDNEYS HAVE BEEN COMPENSATING, and that only happens slowly — so this is LONG-STANDING, not new. This is the reassuring sentence to pair with the word acidosis"
+   ],
+   [
+    "Blood gas — PaO2",
+    "62 mmHg. LOW oxygen WITH high CO2 = TYPE 2 RESPIRATORY FAILURE. Partially compensated CHRONIC respiratory acidosis"
+   ],
+   [
+    "Do NOT offer home oxygen",
+    "PaO2 62 does NOT meet the threshold. Long-term oxygen needs PaO2 55 mmHg OR LESS (or 59 or less with cor pulmonale or polycythaemia), stable, non-smoking, 15 hours a day or more, and it is arranged by RESPIRATORY SERVICES. Saying so confidently is a mark"
+   ],
+   [
+    "The two numbers NOT in the stem — ask for them",
+    "mMRC BREATHLESSNESS GRADE (grade 2 = walks slower than people the same age; he stops on the stairs, so at least 2) and EXACERBATIONS IN THE PAST 12 MONTHS. They drive the inhaler choice. Asking out loud shows you know what decides treatment"
+   ]
+  ],
+  "findingsLabel": "The spirometry and the gas, read number by number",
+  "must": [
+   "FAIL — Still on the blood gas at five minutes. Hard stop at 3:25 and pivot to the plan.",
+   "FAIL — No written action plan, or a rescue pack handed over with no teach-back.",
+   "FAIL — Inhalers only. Rehab, vaccines, diet and support are half the marks.",
+   "FAIL — Jargon left untailed, or starting an inhaled corticosteroid first line.",
+   "ASK — What have you already been told, and what were you hoping to get out of today?",
+   "ASK — Show me how you use it. Technique matters more than which brand it is."
+  ],
   "back": {
-   "dx": "COPD — fixed airflow obstruction (post-BD ratio 68 vs 76, reversibility 120 mL / 3% fails both thresholds) with a partially compensated chronic respiratory acidosis / type 2 respiratory failure (pH 7.33, PaCO2 58, HCO3 30 = kidneys compensating = long-standing, not new). PaO2 62 does NOT meet the home-oxygen threshold — say so confidently. The trap: Task 1 is 90 seconds that feels like the whole station; Task 2 is five minutes most candidates give ninety seconds. Hidden agenda: his brother ended up on home oxygen and died at 71 — 'am I going to end up dragging a bottle round?' (asked at ~6 min if you never ask what worries him). Never used a spacer, never been watched using the puffer. Snores; mood a bit flat; shearing-shed dust; father MI at 66.",
+   "dx": [
+    "**COPD, confirmed on POST-bronchodilator spirometry, with a partially compensated CHRONIC respiratory acidosis — type 2 respiratory failure.** **Persistent respiratory symptoms with airflow limitation that is not fully reversible.** Emphysema and chronic bronchitis both sit under COPD and **are managed identically.**",
+    "**The single biggest error is reading the result silently and announcing 'you have COPD'. This is a COUNSELLING station: the marks are in the reasoning you SPEAK and the plan you BUILD**, not in a diagnosis most candidates already have from the stem.",
+    "**The discriminator: convert the results into a complete, specific, FIVE-PART plan the patient could act on tonight, WITH a written action plan, a rescue pack and a call-000 threshold.** Candidates fail by spending five of eight minutes on the spirometry and then offering 'a preventer and a specialist referral'.",
+    "**COPD-X: C confirm the diagnosis · O optimise function · P prevent deterioration · D develop support and self-management · X manage eXacerbations.** Recite the five letters and the examiner can see the structure.",
+    "**Four steps on every gas: 1 pH — acidaemic, alkalaemic or normal · 2 PaCO2 — does it explain the pH? if yes, respiratory · 3 bicarbonate and base excess — compensating, or a second problem? · 4 PaO2 — type 1 (low O2 alone) or type 2 (low O2 with high CO2).**",
+    "**Inhalers: keep salbutamol as the RELIEVER, THROUGH A SPACER. Add a long-acting bronchodilator — salmeterol 50 microg BD or tiotropium 18 microg daily. EITHER is acceptable first; say which you chose and why.** **CHECK TECHNIQUE IN THE ROOM.**",
+    "**Do NOT start an inhaled corticosteroid first line** — it raises pneumonia risk. **Add only for 2 or more moderate exacerbations, or 1 or more hospitalisations, in 12 months, or blood eosinophils 0.3 x10^9/L or above.** VERIFY.",
+    "**Prevent: continued abstinence (Quitline 13 7848) plus THREE vaccines, named with intervals — INFLUENZA annually, funded · PNEUMOCOCCAL, one conjugate dose then 23vPPV at 2–12 months, then a second 23vPPV at least 5 years after the first · COVID-19, 65–74 recommended 12-monthly and eligible 6-monthly; 75 and over 6-monthly.** VERIFY against the Handbook.",
+    "**Pulmonary rehabilitation: about EIGHT WEEKS, TWO TO THREE SESSIONS A WEEK** — supervised exercise, inhaler technique, flare-up education, breathing and coughing techniques, dietitian and exercise physiologist, outcome assessment. **Better evidence for breathlessness and quality of life than any third inhaler — say that sentence.**",
+    "**CORRECTION — the 'hypoxic drive' explanation is out of date.** CO2 retention on high-flow oxygen is driven mainly by **worsening ventilation–perfusion matching and the Haldane effect.** Say: **target saturations 88–92% in someone at risk of hypercapnia, and titrate.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, identity, consent; 'two parts — tests, then the plan, and most of our time on the plan'; 'what have you been told, and what were you hoping to get out of today?' → ask what worries him most"
+     "WIPE, **confirm name and date of birth**, consent, and check he is comfortable enough to talk for ten minutes. Then **the agenda question: 'before I start — what have you already been told, and what were you hoping to get out of today?'**"
+    ],
+    [
+     "0:20",
+     "**Signpost, and it buys you the whole eight minutes: 'I'll do this in two parts. First the two tests and what they show. Then we'll spend MOST of our time on the plan — what I'm going to start, what you can do yourself, and what to do on a bad day. Stop me any time.'**"
     ],
     [
      "0:45",
-     "Spirometry: total air out ÷ first-second air = ratio 67 vs ~76 → reduced → obstructive → 'airways narrowed'; after the puffer +120 mL/3% vs ≥200 mL and 12% → not significant → COPD not asthma; say 'post-bronchodilator'"
+     "**Spirometry, three sentences. THE RATIO: 'we measure the total amount of air you can blow out and the amount in the first second, then divide one by the other. Your ratio is 67, and for a man of your age and size we'd expect about 76. It is REDUCED — and a reduced ratio means an OBSTRUCTIVE pattern, which is my way of saying the airways are narrowed.'**"
+    ],
+    [
+     "1:15",
+     "**THE REVERSIBILITY: 'then I look at what happened after the puffer. If the airways open up a lot, that points to asthma — we look for at least 200 MILLILITRES AND 12 PER CENT. Yours improved by 120 millilitres, about 3 per cent, so it is NOT significantly reversible. Put those together and the diagnosis is COPD.'**"
     ],
     [
      "1:50",
-     "Gas: oxygen + carbon dioxide (waste gas); CO2 staying in → mild acid → pH 7.33 vs 7.35–7.45 → respiratory acidosis → IMMEDIATELY the bicarbonate 30 = kidneys compensating slowly = long-standing and settled; PaO2 62 — no oxygen needed"
+     "**The gas, four sentences: 'a sample from an artery that measures the gases in your blood. CARBON DIOXIDE is the waste gas your body makes after it uses oxygen, and your lungs are meant to blow it off. Because your airways are narrowed, some is staying in. It dissolves to make an acid, so your blood is slightly acidic — pH 7.33 where we'd want 7.35 to 7.45. We call that RESPIRATORY ACIDOSIS.'** **Then immediately the reassuring half: 'your BICARBONATE is up at 30 — your kidneys have been quietly correcting this for a long time, which tells me this is long-standing rather than something that has happened this week.'**"
     ],
     [
      "2:40",
-     "Name it: 'COPD — long-term narrowing from years of smoking, far enough along that CO2 is building a little. What does that word mean to you?' → cancer? → not on these tests, same smoking history raises the risk, that's why we keep reviewing → oxygen fear → addressed kindly"
+     "**Name it, then STOP AND CHECK: 'you have COPD — long-term narrowing of the airways, in your case from years of smoking. What does that word mean to you, and what questions has that raised?'** He will ask about cancer or about oxygen. **Answer honestly and briefly, then move.**"
     ],
     [
      "3:25",
-     "Five headings signposted: (1) puffers — Ventolin reliever via SPACER; add salmeterol BD every day; tiotropium if not enough; NO inhaled steroid (say why if asked); 'show me how you use it' (2) fitter and lighter — pulmonary rehab 8 weeks, 2–3/week, content; exercise physiologist; dietitian (BMI 32); rural access: Country Health Connect, telehealth, PATS (3) prevent — stay stopped (Quitline 13 7848 if slips); three vaccines named with intervals: influenza yearly (free), pneumococcal now + a few months + ≥5 years, COVID booster (4) support — Lung Foundation Australia + fact sheets (5) action plan"
+     "**THE PIVOT, whether or not you have finished: 'I don't want to spend the whole appointment on tests, because the plan matters more. There are FIVE parts. The puffers. Getting you fitter and lighter. Stopping it getting worse. Support and education. And what you do on a bad day — the one I most want you to remember.'**"
     ],
     [
-     "6:50",
-     "Written action plan: worse breathing/cough/phlegm than usual = flare-up → reliever 4–8 puffs q3–4 h → prednisolone 50 mg daily × 5 → amoxicillin 500 mg TDS × 5 ONLY if phlegm increased AND changed colour; both boxes today; 000 for sudden severe breathlessness, chest pain, confusion/drowsiness, reliever not lasting 3 h; GP Management Plan; review 4–6 weeks; ★ teach-back"
+     "3:45",
+     "**One, INHALERS: the blue one is a RELIEVER, for the moment, THROUGH A SPACER because far more reaches the lungs. Adding SALMETEROL twice a day, morning and night, whether or not he feels breathless — THAT is the one that changes how far he walks. Tiotropium if that is not enough. 'Before you go, show me how you use them.'**"
+    ],
+    [
+     "4:40",
+     "**Two, OPTIMISE: PULMONARY REHABILITATION — eight weeks, two to three sessions a week, supervised exercise from where he is now, inhaler classes, flare-up education, physiotherapist for breathing and coughing. Plus an EXERCISE PHYSIOLOGIST, because 150 minutes a week is useless advice to a man breathless after five. Plus a DIETITIAN for the BMI of 32 — 'losing some weight will do more for your walking than another inhaler.'** Answer the rural access question: **Country Health Connect, telehealth-supported, PATS for travel.**"
+    ],
+    [
+     "5:40",
+     "**Three, PREVENT: congratulate the abstinence and confirm no slips (Quitline 13 7848), then NAME ALL THREE VACCINES WITH INTERVALS — flu yearly and free; pneumococcal one now, another in a few months, a third at least five years on; COVID booster yearly at his age, eligible six-monthly.** **Reciting 'vaccinations' as one word loses the specificity mark.**"
+    ],
+    [
+     "6:30",
+     "**Four, SUPPORT: Lung Foundation Australia 1800 654 301, printed COPD fact sheets, Lungs in Action.** **Five, the WRITTEN ACTION PLAN — 'I'm writing this down, because nobody remembers it in the moment.'** **Step one: reliever 4–8 puffs every 3–4 hours. Step two: prednisolone 50 mg daily for 5 days. Step three: ONLY if the phlegm has BOTH increased AND changed colour, amoxicillin 500 mg three times daily for 5 days.** Both boxes handed over today."
+    ],
+    [
+     "7:30",
+     "**Call 000 for sudden severe breathlessness, chest pain, confusion or drowsiness, or the reliever no longer lasting three hours — don't drive.** Then **TEACH-BACK: 'can you tell me back what you'd do if your phlegm turned green tomorrow?'** Then **GP Management Plan and Team Care Arrangement, review in 4–6 weeks.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "'I'll do this in two parts — the tests, then the plan, and most of our time goes on the plan. Before I start — what have you already been told, and what were you hoping to get out of today?' → 'And what worries you most?'",
-    "★ 'Your ratio is 67, and we'd expect around 76 — so it is reduced. A reduced ratio means an obstructive pattern; in plain terms your airways are narrowed. After the puffer we look for at least 200 millilitres and 12 per cent; yours is 120 and 3 per cent, so it is not significantly reversible. Narrowing that does not open up with a puffer is what we call COPD. I used the post-bronchodilator ratio, because that is the diagnostic criterion.'",
-    "★ 'Carbon dioxide is the waste gas your lungs are meant to breathe out. Because your airways are narrowed, some is staying in. It dissolves to make an acid, so your blood is slightly acidic — pH 7.33 where we'd want 7.35 to 7.45; we call that respiratory acidosis. Now the useful part: your bicarbonate is up at 30. That is your kidneys compensating, and it only happens slowly — so this is long-standing, not something new and dangerous.'",
-    "'Am I going to end up on oxygen like my brother?' → ★ 'Home oxygen is only for people whose oxygen level is genuinely low, and it's assessed formally by a specialist team. Yours is not at that level. Most of what happens from here depends on the plan we make today.'",
-    "'Is it cancer?' → 'Not on these tests. The same smoking history does raise that risk, which is exactly why I'll keep reviewing you.'",
-    "★ 'Keep the blue Ventolin for symptoms — through a spacer, far more gets into your lungs. I'm adding a long-acting puffer, salmeterol, morning and night every day whether or not you feel breathless — that's the one that changes how far you can walk. Before you go, show me how you use it.' 'Are these steroids?' → 'No — and I'm deliberately not starting an inhaled steroid; that's reserved for people with repeated flare-ups or a particular blood cell raised.'",
-    "★ 'Flu vaccine every year, free for you. Pneumococcal — one now, another in a few months, a third at least five years later. And your COVID booster.' 'Pulmonary rehabilitation has better evidence for your breathlessness than any third puffer.' 'Do I have to go to Adelaide?' → 'Not necessarily — regional and telehealth-supported programmes through Country Health Connect; PATS for travel and accommodation if you do.'",
-    "★ 'Both things have to happen: more phlegm and a colour change. Antibiotics taken when you don't need them stop working when you do. Can you tell me back what you'd do if your phlegm turned green tomorrow?'"
-   ],
    "pefe": [
-    "No examination task — results interpretation and counselling. Inhaler technique check counts as the examination: shake, slow deep breath, hold ~10 s, spacer",
-    "Summary to the examiner: '62-year-old ex-smoker, 40 pack-years, exertional breathlessness, cardiac disease excluded. Post-bronchodilator spirometry: ratio 68 against a lower limit of 76 with only 120 mL and 3% reversibility — fixed airflow obstruction. Gas: partially compensated chronic respiratory acidosis with type 2 respiratory failure. Diagnosis COPD. Started a long-acting bronchodilator with spacer-delivered reliever; referred pulmonary rehabilitation, exercise physiology, dietetics; influenza, pneumococcal and COVID vaccination; written action plan with prednisolone and amoxicillin rescue pack; GP Management Plan, review 4–6 weeks; lung cancer kept under review'",
-    "Variant A — raised TLC, low DLCO: 'those two lines tell me which type of COPD — air trapping and damaged air sacs = emphysema; the other type is chronic bronchitis where phlegm is the main problem; both sit under COPD and we treat them the same way'",
-    "Variant B — still smoking: 'everything else helps; only one thing changes how fast the damage continues, and that's stopping. How do you feel about it? … combination NRT or a tablet plus Quitline 13 7848 roughly trebles the chance; and while you're smoking home oxygen isn't safe or available'",
-    "Variant C — two admissions last year, eosinophils 0.4: the one situation where adding an inhaled steroid is worth it → combination inhaler; trade-off slightly higher pneumonia and thrush risk — rinse after each dose",
-    "Variant D — 'how long have I got?': no number; what changes it — stopped smoking (done), rehab, vaccination; plenty live many years well managed; 'is there something specific behind the question?' · SA: Country Health Connect, PATS, Lung Foundation 1800 654 301, Quitline 13 7848"
+    "**Confirm on the POST-bronchodilator ratio, not the pre.** If challenged: **'a pre-bronchodilator reduction can be reversible and would then be asthma.'**",
+    "**Do now: chest X-ray if not already done, CT if anything focal · FBC for anaemia and polycythaemia, blood EOSINOPHILS · resting oximetry.** **Formal oxygen assessment only if persistently below 92%.** **Alpha-1 antitrypsin level once, especially with a family history.**",
+    "**Ask for the two numbers that choose the inhaler: mMRC grade and exacerbations in the last 12 months.** Neither is in the stem.",
+    "**Screen the comorbidities: osteoporosis (smoking, steroids, inactivity) · anxiety and depression, common and under-treated · cardiovascular risk · obstructive sleep apnoea — he snores and has a BMI of 32, so Epworth and a sleep study.**",
+    "**Cor pulmonale — ankle oedema and a raised JVP — and undiagnosed heart failure coexisting with COPD are the two things not to miss.** **Lung cancer shares the risk factor and the symptoms: a normal film does not exclude it.**",
+    "**Softened claims: MUCOLYTICS are not part of routine care here and are not PBS-listed for COPD. LABA versus LAMA first is a choice, not a rule — say which you chose and why.** VERIFY.",
+    "**Avoid: antibiotics for stable disease · prescribing without checking technique · home oxygen without formal assessment · promising lung function will return to normal.**"
    ],
-   "fails": [
-    "Spending the station on Task 1 — no pivot at 3:25; management given ninety seconds ★",
-    "Offering home oxygen (PaO2 62 doesn't meet the threshold) ★",
-    "Saying 'acidosis' without the compensation point; 'obstructive' without a plain-English tail ★",
-    "Rescue pack without doses, without the two-limb antibiotic trigger, or without teach-back ★",
-    "Letting him think the new inhaler replaces Ventolin; no spacer; no technique check; starting an inhaled corticosteroid",
-    "'Vaccinations' as one word; Lung Foundation not named; never asking what worries him — the oxygen fear lands at 7:30; ignoring rural access"
-   ],
-   "numbers": [
-    "COPD: post-BD FEV1/FVC <0.70 · reversibility ≥200 mL AND ≥12% · this chart: 68 vs 76, +120 mL / +3% · pH 7.35–7.45 · PaCO2 35–45 · HCO3 22–26 · home O2 threshold PaO2 ≤55 mmHg (or ≤59 with cor pulmonale/polycythaemia) · target SpO2 88–92% VERIFY",
-    "Salmeterol 50 microg BD · tiotropium 18 microg daily · ICS only if ≥2 exacerbations or eosinophils ≥0.3 · rehab 8 weeks, 2–3 sessions/week VERIFY",
-    "Action plan: salbutamol 4–8 puffs via spacer q3–4 h · prednisolone 30–50 mg mane × 5 days, no taper · amoxicillin 500 mg TDS × 5 days (or doxycycline) ONLY with increased volume AND colour change · 000 triggers: severe breathlessness, chest pain, confusion/drowsiness, reliever <3 h VERIFY",
-    "Vaccines: influenza yearly (NIP-funded with COPD) · pneumococcal — 13vPCV then 23vPPV at 2–12 months, second 23vPPV ≥5 years (check current schedule) · COVID booster per age/eligibility VERIFY",
-    "Emphysema (↑TLC, ↓DLCO) vs chronic bronchitis — same treatment · GP Management Plan/Team Care Arrangement funds allied health",
-    "Quitline 13 7848 · Lung Foundation Australia 1800 654 301 · Country Health Connect · PATS · TIS 131 450"
+   "ddx": [
+    [
+     "**COPD** — the answer",
+     "**40 pack-years, gradual exertional breathlessness**, chronic cough and sputum, Ventolin barely helping",
+     "Pack-years, sputum, flare-up frequency, mMRC grade",
+     "**Post-bronchodilator ratio under 0.70, not reversible** — routine"
+    ],
+    [
+     "Asthma",
+     "Younger onset, variability, atopy, night and early-morning symptoms",
+     "Diurnal variation, triggers, eczema and hay fever",
+     "**Significant reversibility (200 mL AND 12%), or a peak flow diary.** Argued against here"
+    ],
+    [
+     "**Lung cancer**",
+     "**Weight loss, haemoptysis, hoarseness, a new focal sign, clubbing** — same risk factor, same symptoms",
+     "Weight, appetite, blood in sputum, bone pain",
+     "**Chest X-ray then CT; a normal film does not exclude it** — urgent"
+    ],
+    [
+     "Bronchiectasis",
+     "**Daily large-volume purulent sputum**, recurrent infections since childhood",
+     "Sputum volume in cupfuls, childhood pneumonias",
+     "High-resolution CT chest"
+    ],
+    [
+     "Interstitial lung disease",
+     "Dry cough, fine crackles, clubbing, dust or bird exposure",
+     "**Shearing sheds, dust, no mask** — occupational and hobby history",
+     "**Restrictive spirometry, low DLCO, HRCT** — semi-urgent"
+    ],
+    [
+     "Heart failure or ischaemia",
+     "Orthopnoea, ankle swelling, exertional chest tightness",
+     "Pillows at night, nocturnal breathlessness",
+     "**Already excluded by cardiology in this stem — say so** — urgent if new"
+    ],
+    [
+     "**Obstructive sleep apnoea · obesity and deconditioning**",
+     "**BMI 32, 'Denise says I snore something terrible'**, daytime sleepiness",
+     "Epworth score, partner report of apnoeas",
+     "**Sleep study. Treat ALONGSIDE, not instead of, COPD**"
+    ],
+    [
+     "Anaemia",
+     "Fatigue and pallor",
+     "Bleeding history, diet",
+     "Full blood count"
+    ],
+    [
+     "**Alpha-1 antitrypsin deficiency**",
+     "**Emphysema young, basal, or with little smoking**; family history of early emphysema or liver disease",
+     "Family history",
+     "**Alpha-1 antitrypsin level — check it once**"
+    ],
+    [
+     "Cor pulmonale · osteoporosis · anxiety and depression",
+     "Ankle oedema and raised JVP; fracture risk from smoking, steroids and inactivity; flat mood since the admission",
+     "Oedema, JVP; fracture history; mood screen",
+     "Echocardiogram; DEXA; mood assessment. **Common and under-treated**"
+    ]
    ]
   },
   "source": "COPD_Diagnosis_and_Care_2_Case_Tasks_Script_Notability.pdf (James Halloran — results counselling)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › COPD › COPD_Diagnosis_and_Care_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Spending the station on Task 1 — 90 seconds of work that feels like the whole station; set the alarm at 3:25 and pivot to management whether or not you have finished",
-   "FAIL — Launching into numbers before asking what he's been told and what worries him — the hidden agenda is the oxygen bottle his brother died dragging around; if you never ask, it lands at 7:30",
-   "FAIL — Offering home oxygen — his PaO2 of 62 does not meet the threshold, and saying so confidently is a mark; pair 'acidosis' immediately with the bicarbonate compensation: long-standing, not new",
-   "DO — Signpost five parts, then: keep the blue reliever through a spacer, add a long-acting bronchodilator every day, no inhaled steroid (say why if asked), and 'before you go, show me how you use it'",
-   "DO — Pulmonary rehab with duration and content (better evidence than any third puffer), exercise physiologist and dietitian for the BMI of 32 with the rural access answer, and all three vaccines named with intervals",
-   "FAIL — A rescue pack without the two-limb antibiotic trigger (more phlegm AND a colour change), without the 000 criteria, or without the teach-back — 'tell me back what you'd do if your phlegm turned green tomorrow'"
-  ]
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › COPD › COPD_Diagnosis_and_Care_2_Case_Tasks_Script_Notability.pdf"
  },
  {
   "id": "MED-45",
