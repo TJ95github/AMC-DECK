@@ -18742,9 +18742,8 @@
  {
   "id": "MED-67",
   "cat": "med",
+  "v2": true,
   "promptBell": false,
-  "promptAt": 310,
-  "setting": "Your general practice. Face-to-face station. The role-player is in the room even though there is no history-taking task. Notice on the door: findings are given only if you ask for them specifically.",
   "stem": [
    "Mary Whitfield, a 40-year-old woman, has presented complaining of feeling tired, weight loss over the last few months, night sweats and loss of appetite."
   ],
@@ -18753,119 +18752,203 @@
    "Explain your diagnosis and your differential diagnoses to the patient",
    "Request your further investigations"
   ],
-  "time": "8 minutes (2 reading). Greet the patient first, then turn to the examiner. Frame the examination in one sentence · general, vitals (temperature first), hands, face/mouth · ★ all lymph node chains, then the four node characters · thyroid with the reason · bone tenderness · chest · abdomen — name splenomegaly · bedside tests · examination gate 5:10 · turn to her, warning shot, say the word lymphoma · reasons from your findings, not her stem · differentials by group · investigations in order — FBE, film, excisional biopsy, PET-CT — then the rest.",
+  "findings": [
+   [
+    "General appearance",
+    "THIN AND UNWELL-LOOKING. PALLOR PRESENT. No jaundice, no rash"
+   ],
+   [
+    "Vital signs — temperature FIRST",
+    "T 37.8 · HR 96 regular · BP 118/74 · RR 16 · SpO2 98% on air. Temperature leads because the differential is full of chronic infections, and because a febrile patient with possible marrow failure is NEUTROPENIC SEPSIS until proven otherwise"
+   ],
+   [
+    "Hands",
+    "SCRATCH MARKS PRESENT — pruritus is a recognised feature of lymphoma. CLUBBING PRESENT. ECCHYMOSES over both forearms. No joint swelling. CORRECTION: the sign is ECCHYMOSIS, not chemosis — chemosis is conjunctival oedema and belongs to allergy and thyroid eye disease"
+   ],
+   [
+    "Clubbing — say what it means, and what it does not",
+    "CLUBBING IS NOT A FEATURE OF LYMPHOMA. Say so: 'clubbing is not a lymphoma sign, so it KEEPS AN INTRATHORACIC MALIGNANCY ON MY LIST.' Folding it into your justification scores nothing"
+   ],
+   [
+    "Face and mouth",
+    "CONJUNCTIVAL PALLOR. No gum hypertrophy or bleeding — gum infiltration points to acute MYELOMONOCYTIC LEUKAEMIA, not lymphoma. TONSILS NOT ENLARGED — they are WALDEYER'S RING, lymphoid tissue and a recognised extranodal lymphoma site"
+   ],
+   [
+    "Lymph nodes — ALL CHAINS",
+    "TWO TO THREE ENLARGED CERVICAL NODES. No other group enlarged. Say 'all chains over the whole body — CERVICAL AND SUPRACLAVICULAR, AXILLARY, EPITROCHLEAR, INGUINAL'"
+   ],
+   [
+    "THE FOUR NODE CHARACTERS — the package, not the tick",
+    "RUBBERY · FIXED · NON-TENDER · largest about 3 cm, SKIN NORMAL. IF YOU DO NOT ASK, YOU GET THE FIRST LINE AND NOTHING MORE. Give the reason aloud for at least one: 'I'm asking about tenderness because I want to SEPARATE LYMPHADENITIS FROM LYMPHADENOPATHY'"
+   ],
+   [
+    "Thyroid and bone tenderness",
+    "THYROID NORMAL — ask for it because hyperthyroidism also explains tiredness, sweating and weight loss. BONE TENDERNESS PRESENT over sternum, spine and long bones — that reflects MARROW expansion or infiltration, and is COMMONER IN LEUKAEMIA AND MYELOMA, so it WIDENS your list rather than confirming it"
+   ],
+   [
+    "Chest, and the ABDOMEN",
+    "Air entry equal, no added sounds. Heart sounds dual, no murmur. SPLENOMEGALY ABOUT 4 cm BELOW THE COSTAL MARGIN, no hepatomegaly. 'ANY MASSES?' WILL GET YOU 'NO' — NAME THE SPLEEN. It is one of your three reasons for the diagnosis"
+   ],
+   [
+    "Office tests",
+    "BSL 5.4 · urine dipstick NEGATIVE. Defensible for the tiredness component — but DO NOT let them displace the node characters"
+   ]
+  ],
+  "findingsLabel": "Examiner stage — nothing is volunteered; every line needs asking",
+  "must": [
+   "FAIL — Never saying the word lymphoma to the patient. No euphemisms.",
+   "FAIL — Accepting 'enlarged cervical nodes' without the four characters.",
+   "FAIL — Never naming the spleen, or an unprioritised shotgun investigation list.",
+   "FAIL — Offering fine-needle aspiration as the diagnostic test.",
+   "ASK — Their consistency, mobility, tenderness, and the overlying skin?",
+   "ASK — Specifically, is there hepatomegaly or splenomegaly?"
+  ],
   "back": {
-   "dx": "Lymphoma (Hodgkin or non-Hodgkin) presenting with B symptoms: four months of fatigue, ~7 kg weight loss, drenching night sweats, anorexia, generalised pruritus; examination — pallor, thin and unwell, T 37.8, HR 96, scratch marks, ecchymoses, conjunctival pallor, two to three rubbery, fixed, non-tender cervical nodes (largest ~3 cm, skin normal), bone tenderness, splenomegaly 4 cm, thyroid normal, chest clear. Clubbing is present but is NOT a lymphoma sign — it keeps an intrathoracic malignancy on the list (say so). Reasons to the patient led by your findings: rubbery, fixed, non-tender neck glands (infection glands are tender and mobile), enlarged spleen, scratch marks from the itch — plus her B symptoms. Differentials by group: other cancers — leukaemia (ecchymoses, bone tenderness), lung/bowel/breast; infections — TB, HIV, syphilis, EBV, CMV, toxoplasmosis (some need consent); hyperthyroidism (explains fatigue, sweats, weight loss; thyroid normal today). Investigations in order of priority: FBE, blood film today, excisional node biopsy (architecture, not FNA cells), PET-CT staging (or CT neck/chest/abdomen/pelvis); then LDH, ESR/CRP, HIV and syphilis serology with consent, EBV/CMV/toxoplasma serology, IGRA + CXR, TSH. Febrile neutropenia = emergency: cultures and broad-spectrum antibiotics within one hour.",
+   "dx": [
+    "**Lymphoma** — a malignancy of lymphocytes presenting with **painless lymphadenopathy plus B symptoms**, and here with **splenomegaly and pruritus**.",
+    "**THE DISCRIMINATING ISSUE: justify the diagnosis with YOUR SIGNS, not with the symptoms already printed on the door.** The stem gave you tiredness, weight loss and night sweats — **repeating those back is repeating the question.** **The reasons are: cervical nodes that are RUBBERY, FIXED and NON-TENDER · an ENLARGED SPLEEN · SCRATCH MARKS · and BONE TENDERNESS.**",
+    "**B symptoms: unexplained fever above 38°C · DRENCHING night sweats · loss of MORE THAN 10% of body weight over SIX MONTHS.** The stem hands you four symptoms in one sentence because **there is no history task — the stem is doing the history's job.**",
+    "**TWO LAYERS: run the routine survey, then go BACK THROUGH IT asking for the specific findings.** **'I would do a full lymph node examination, a thyroid examination, a respiratory examination and an abdominal examination' — said in forty seconds, then silence — is complete, correct, and collects NONE of the positives, because none is volunteered.**",
+    "**THE 5:10 GATE. Stop asking for findings at 5:10.** If you are still asking at 5:30 you will not have time to name the diagnosis, group the differentials and prioritise the investigations — **and those three carry more marks than any extra finding you could still collect.**",
+    "**Frame it in your first sentence: 'a general examination with a focus on the HAEMATOLOGICAL SYSTEM, looking for a cause of B SYMPTOMS.'** That tells the examiner you have a hypothesis and **licenses everything unusual you are about to ask for** — bone tenderness, scratch marks, the thyroid.",
+    "**Warning shot, then THE WORD: 'I have finished examining you, and I am afraid I have found some things that concern me. I am concerned about the possibility of A CANCER OF THE LYMPH GLANDS, CALLED LYMPHOMA.'** Then **stop and let it land.** **No 'a blood problem', no 'something serious', no deferring the word to the last ten seconds.**",
+    "**Then the reasons in HER words: 'I found enlarged glands in your neck. They feel RUBBERY, they DO NOT MOVE, and they are NOT SORE — and that combination is what worries me, because GLANDS FROM AN INFECTION ARE USUALLY TENDER AND MOBILE. I also found your SPLEEN is larger than it should be, and I noticed the SCRATCH MARKS from the itching.'**",
+    "**DIFFERENTIALS IN THREE GROUPS, said as three groups — a flat list of eleven scores less. MALIGNANCY: lymphoma, leukaemia, carcinoma of lung, bowel and breast. INFECTION: TB, HIV, syphilis, EBV, CMV, toxoplasmosis. ENDOCRINE AND OTHER: hyperthyroidism, menopause in the older variant, connective tissue disease.**",
+    "**To 'am I going to die?': 'that is exactly the right question, and I will not give you a number I cannot stand behind. Many lymphomas respond very well to treatment, and the tests we arrange now are what will tell us where you stand.'** **And be clear it is NOT YET a diagnosis without tissue.** **Cancer Council SA 13 11 20 · MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Gel; ★ greet the patient first ('I've been asked to examine you and then talk you through what I think — give me a moment with the examiner'); ★ frame: 'a general examination with a focus on the haematological system, looking for a cause of B symptoms — general appearance, hands, face and mouth, all lymph node groups and thyroid, chest, abdomen, bedside tests'"
+     "**Greet HER first — there is a real person in the room and no history task: 'Mary, my name is Dr [name]. I have been asked to examine you and then talk through what I think is going on. Give me a moment with the examiner and I'll come straight back to you.'** Candidates either ignore her for five minutes or start taking a history. **Do neither.**"
     ],
     [
-     "0:40",
-     "General: cachexia, pallor, jaundice, rash · ★ vitals, temperature first, then HR, BP, RR, SpO2 · hands: clubbing, scratch marks, ecchymoses, joint swelling → ★ 'pruritus is a recognised feature of lymphoma' · ★ 'clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list' · face/mouth: conjunctival pallor, gum hypertrophy/bleeding, tonsils"
+     "0:20",
+     "**Frame it to the examiner, naming the system and the reason.** Then **'may I have the general appearance and the vital signs — TEMPERATURE FIRST?'**"
+    ],
+    [
+     "0:50",
+     "**Hands: is there CLUBBING · are there SCRATCH MARKS · are there ECCHYMOSES or petechiae · any joint swelling or redness?** Say why when asked: **'scratch marks — pruritus is a recognised feature of lymphoma.'** Never 'just routine'."
+    ],
+    [
+     "1:20",
+     "**Face and mouth: CONJUNCTIVAL PALLOR · GUM HYPERTROPHY OR BLEEDING · ARE THE TONSILS ENLARGED?**"
     ],
     [
      "2:00",
-     "★ 'A full lymph node examination, all chains over the whole body — cervical and supraclavicular, axillary, epitrochlear, inguinal' → two to three cervical nodes → ★ 'consistency? mobile or fixed? tender? overlying skin? — I ask about tenderness to separate lymphadenitis from lymphadenopathy' → rubbery, fixed, non-tender, 3 cm → 'that is a malignant pattern'; ask anyway if the examiner deflects"
+     "**The sentence the station is built around: 'I would like a FULL LYMPH NODE EXAMINATION, ALL CHAINS, OVER THE WHOLE BODY — cervical and supraclavicular, axillary, epitrochlear and inguinal.'**"
     ],
     [
-     "3:00",
-     "Thyroid with the reason (hyperthyroidism explains tiredness, sweating, weight loss): mass, size, nodularity, tenderness, retrosternal percussion · ★ bone tenderness sternum/spine/long bones · chest: air entry, added sounds, S1 S2, murmur · abdomen: inspection, tenderness, masses, ★ 'specifically hepatomegaly or splenomegaly?' → spleen 4 cm · bedside BSL, dipstick — ★ stop asking at 5:10"
+     "3:30",
+     "**Then the four characters, without pausing: 'could you tell me their CONSISTENCY? Are they MOBILE OR FIXED? Are they TENDER? And is the OVERLYING SKIN normal?'** If the examiner deflects with 'you have already examined them', **ask anyway** — the item is on the mark sheet either way."
+    ],
+    [
+     "4:00",
+     "**Thyroid IN FULL, with the reason: inspection for a visible mass, palpation for size, nodularity and tenderness, PERCUSSION FOR RETROSTERNAL EXTENSION — 'because hyperthyroidism would also explain tiredness, sweating and weight loss.'** Then **'IS THERE ANY BONE TENDERNESS — sternum, spine and long bones?'**"
+    ],
+    [
+     "4:30",
+     "**Chest and abdomen, briefly: air entry equal, added sounds, S1 and S2, any murmur · on inspection any distension or redness, then tenderness, masses, AND SPECIFICALLY IS THERE HEPATOMEGALY OR SPLENOMEGALY?** Then **office tests — blood sugar and urine dipstick.**"
     ],
     [
      "5:10",
-     "Turn the chair fully, lower the voice, eye contact: ★ 'I have finished examining you, and I am afraid I have found some things that concern me. Is it alright if I go through them?' [pause] ★ 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma.' — say the word, stop, let it land"
+     "**STOP ASKING. 'Thank you. May I speak with Mary?'** Turn the chair fully towards her, lower your voice, make eye contact."
     ],
     [
-     "5:45",
-     "★ Reasons led by findings: rubbery, fixed, non-sore neck glands vs infection glands; enlarged spleen; scratch marks — then her tiredness, weight loss, sweats. 'Am I going to die?' → no number you cannot stand behind; many lymphomas respond very well; not yet a diagnosis until a gland is sampled"
+     "5:20",
+     "**Warning shot, then the word, then STOP.** Let the silence sit. **If she asks 'is it cancer?' at any point earlier, answer it — do not defer it: 'I am worried that it might be. Let me finish and then explain properly.'**"
     ],
     [
-     "6:30",
-     "★ Differentials by group: other cancers (leukaemia; lung/bowel/breast less likely), infections (TB, HIV, syphilis, EBV/CMV/toxoplasma — 'some need a blood test and your permission'), overactive thyroid; 'why HIV?' answered"
+     "5:50",
+     "**The reasons — the glands, the spleen, the scratch marks — in plain words, leading with the SIGNS.**"
+    ],
+    [
+     "6:20",
+     "**The differentials by group**, with the HIV answer ready: **'HIV can cause swollen glands, weight loss and sweats, and it is treatable. I test for it in anyone with this picture. I would need your consent, and the result stays confidential.'**"
     ],
     [
      "7:00",
-     "★ To the examiner, in order and slowly: FBE · blood film today · excisional biopsy of a cervical node ('lymphoma is classified on nodal architecture; an aspirate gives cells without architecture') · PET-CT staging (or CT N/C/A/P) · then LDH, ESR, CRP; HIV and syphilis with consent; EBV/CMV/toxoplasma; IGRA + CXR; TSH · febrile neutropenia answer if asked · safety net to Mary (fever, breathlessness, face/neck swelling, bleeding → hospital; specialist phoned; results by phone; someone with you; Cancer Council SA 13 11 20)"
+     "**The investigations IN ORDER, slowly: ONE full blood examination · TWO blood film, today · THREE EXCISIONAL BIOPSY of a cervical node, because LYMPHOMA IS CLASSIFIED ON NODAL ARCHITECTURE and an aspirate gives cells without architecture · FOUR PET–CT for staging.** **Say those four before you say anything else.**"
+    ],
+    [
+     "7:40",
+     "**Then, if invited: LDH, ESR and CRP · HIV and syphilis serology with consent · EBV, CMV and toxoplasma · IGRA and chest X-ray · TSH · hepatitis B before treatment.** **Safety-net: fever, shortness of breath, facial or neck swelling, or any bleeding → straight to hospital.** Offer support and someone to be with her."
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Examiner, a general examination with a focus on the haematological system, looking for a cause of this patient's B symptoms.' / 'Vital signs, temperature first, please.'",
-    "★ 'A full lymph node examination, all chains, over the whole body.' → ★ 'Consistency? Mobile or fixed? Tender? And the overlying skin?' / ★ 'I am asking about tenderness because I want to separate lymphadenitis from lymphadenopathy.'",
-    "'Pruritus is a recognised feature of lymphoma.' / ★ 'Clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list.' CORRECTION",
-    "★ 'Specifically, is there hepatomegaly or splenomegaly?' — 'any masses?' gets 'no'",
-    "★ 'I am afraid I have found some things that concern me.' → ★ 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma.'",
-    "★ 'Glands from an infection are usually tender and mobile; yours are rubbery, they do not move under my fingers, and they are not sore. I also found your spleen — an organ on the left side of your abdomen — is bigger than it should be, and I noticed the scratch marks from the itching.'",
-    "'Why HIV?' → 'Because HIV can cause swollen glands, weight loss and sweats, and it is treatable. I test for it in anyone with this picture. I'd need your consent, and the result stays confidential.'",
-    "★ 'My investigations in order of priority: one, full blood examination; two, a blood film today; three, an excisional biopsy of one of the cervical nodes — lymphoma is classified on nodal architecture, so an aspirate is not enough; four, PET-CT to stage.' Then the rest.",
-    "'If she rings tonight with a fever of 39?' → 'A medical emergency until proven otherwise — present immediately; blood cultures and empirical broad-spectrum antibiotics within one hour; haematology involved; MedSTAR 1300 13 12 33 if retrieval is needed.'",
-    "Jargon check: if she says 'sorry, what does that mean?' — translate lymphadenopathy, splenomegaly, excisional on the spot"
-   ],
    "pefe": [
-    "Examiner holds: pallor, thin, unwell, no jaundice/rash · T 37.8, HR 96 reg, BP 118/74, RR 16, SpO2 98% · hands: scratch marks, clubbing, ecchymoses, no joint swelling · conjunctival pallor, no gum changes, tonsils normal · ★ 2–3 cervical nodes — rubbery, fixed, non-tender, largest ~3 cm, skin normal; no other group · thyroid normal · ★ bone tenderness present · chest clear, HS dual · ★ splenomegaly ~4 cm, no hepatomegaly, no tenderness · BSL 5.4, dipstick negative",
-    "B symptoms: unexplained fever >38°C · drenching night sweats · weight loss >10% over 6 months. Node characters: consistency, mobility/fixation, tenderness, size and overlying skin. Chains: cervical/supraclavicular, axillary, epitrochlear, inguinal.",
-    "Variant — 50-year-old: add pelvic and breast examination (menopause, breast carcinoma on the list); 'menopause would not explain the glands or the spleen'",
-    "Variant — T 38.9, tachycardic, mucosal bleeding, gum hypertrophy, sternal tenderness: acute leukaemia with febrile neutropenia — cultures, empirical broad-spectrum antibiotics within 1 h, urgent FBE/film, haematology now",
-    "Variant — tender mobile nodes, age 24, sore throat, spleen just palpable: infectious mononucleosis — EBV serology, film for atypical lymphocytes, avoid amoxicillin, no contact sport while the spleen is enlarged",
-    "SA: urgent haematology referral (RAH/FMC); excision biopsy via surgical/ENT pathway; PATS; Cancer Council SA 13 11 20 · MedSTAR 1300 13 12 33 · TIS 131 450",
-    "Ask for the other chains — Supraclavicular, axillary, EPITROCHLEAR, inguinal"
+    "**The five findings that are ALWAYS positive here and volunteered by NOBODY: scratch marks · clubbing · enlarged cervical nodes · bone tenderness · splenomegaly.**",
+    "**Do now: FBE · BLOOD FILM, same day · temperature and observations, and if febrile and neutropenic, BLOOD CULTURES AND EMPIRICAL ANTIBIOTICS WITHIN ONE HOUR · UEC, LFT, calcium, urate, LDH · ESR and CRP, TSH, chest X-ray.**",
+    "**Do next: EXCISIONAL LYMPH NODE BIOPSY — the diagnostic test · PET–CT for staging, or CT neck, chest, abdomen and pelvis · bone marrow aspirate and trephine where indicated · HIV and syphilis serology, EBV and CMV serology, IGRA.**",
+    "**Avoid: FINE-NEEDLE ASPIRATION as the sole diagnostic test — it gives cells without architecture · a long unprioritised list against the clock · STEROIDS BEFORE TISSUE DIAGNOSIS, which can render the biopsy uninterpretable · reassuring her that it is probably an infection.**",
+    "**Two examiner challenges, answered: 'why not just aspirate?' — because lymphoma is classified on nodal architecture, and excisional biopsy also provides tissue for immunophenotyping. 'Why LDH?' — it reflects tumour burden and cell turnover and forms part of the prognostic index.** VERIFY the index before quoting it.",
+    "**Do not miss: NEUTROPENIC SEPSIS · SUPERIOR VENA CAVA OBSTRUCTION — facial and arm swelling, distended neck veins, breathlessness worse lying flat · airway or spinal cord compression from bulky disease · TUMOUR LYSIS once treatment starts · an alternative primary hiding behind the word lymphoma.**",
+    "**Prioritisation is the scored behaviour — the handbook explicitly warns against reciting a long list hoping a few will be right.**"
    ],
-   "fails": [
-    "'I would do a full physical examination' — the generic opening that burns thirty seconds ★",
-    "Not asking for all lymph node chains, or accepting 'enlarged cervical nodes' without the four characters ★",
-    "Not specifically naming splenomegaly ★",
-    "Euphemism instead of the word lymphoma ('a blood problem', 'something in your immune system') ★",
-    "Justifying with her stem symptoms only, not your examination findings ★",
-    "Folding clubbing into the lymphoma justification; a shotgun investigation list; FNA instead of excisional biopsy",
-    "Never greeting the patient before turning to the examiner; pushing on without pausing after the word cancer; giving a survival number"
-   ],
-   "numbers": [
-    "B symptoms: weight loss >10% / 6 months · fever >38°C unexplained · drenching night sweats · here: ~7 kg, T 37.8, soaked 2–3 nights/week",
-    "4 node characters: consistency, mobility, tenderness, skin (+ size) · chains: cervical, axillary, epitrochlear, inguinal · largest node ~3 cm · spleen 4 cm",
-    "Examination gate: stop asking at 5:10 · first four investigations: FBE, film, excisional biopsy, PET-CT",
-    "Febrile neutropenia: antibiotics within 1 hour",
-    "MedSTAR 1300 13 12 33 · Cancer Council SA 13 11 20 · TIS 131 450"
+   "ddx": [
+    [
+     "**Hodgkin lymphoma**",
+     "Young adult; **painless RUBBERY cervical node**; B symptoms; **pruritus**; occasionally alcohol-induced nodal pain",
+     "Cachexia, scratch marks, node characters, Waldeyer's ring, **spleen**",
+     "**EXCISIONAL node biopsy — not FNA. CXR, LDH, PET–CT** — days"
+    ],
+    [
+     "**Non-Hodgkin lymphoma**",
+     "Wider age range; more widespread nodes; **extranodal and marrow disease**",
+     "Generalised lymphadenopathy, hepatosplenomegaly, **bone tenderness**, pallor",
+     "Excisional biopsy with immunophenotyping; **marrow aspirate and trephine** — days"
+    ],
+    [
+     "**Leukaemia**",
+     "**Pallor, bruising, infections, BONE TENDERNESS, gum changes**",
+     "**Ecchymoses, gum hypertrophy and bleeding, sternal tenderness, fever**",
+     "**FBE and blood film TODAY; urgent haematology** — same day"
+    ],
+    [
+     "**Lung carcinoma**",
+     "Smoking, cough, haemoptysis; **CLUBBING**; supraclavicular node",
+     "**Clubbing**, chest signs, left supraclavicular node",
+     "Chest X-ray, then CT chest with contrast and tissue diagnosis — urgent"
+    ],
+    [
+     "**Gastric, oesophageal or bowel carcinoma**",
+     "Weight loss, anorexia, anaemia, altered bowels",
+     "**LEFT SUPRACLAVICULAR NODE — Virchow's node, Troisier's sign**; abdominal mass",
+     "Gastroscopy and colonoscopy; CT with contrast — urgent"
+    ],
+    [
+     "**Tuberculosis**",
+     "Country of birth, contacts, chronic cough, night sweats, weight loss",
+     "Fever, cachexia, **MATTED nodes**, chest signs",
+     "Chest X-ray, sputum for AFB and culture, IGRA — days"
+    ],
+    [
+     "**HIV · syphilis**",
+     "Sexual history, **generalised painless lymphadenopathy**",
+     "Oral candidiasis, rash, generalised nodes",
+     "**HIV serology WITH CONSENT**; syphilis serology — days"
+    ],
+    [
+     "EBV · CMV · toxoplasmosis",
+     "Younger; sore throat; **TENDER MOBILE nodes**; mild splenomegaly",
+     "Tonsillar exudate, palatal petechiae, jaundice",
+     "EBV serology, monospot, FBE with **atypical lymphocytes**, LFT. **Avoid amoxicillin; no contact sport**"
+    ],
+    [
+     "Hyperthyroidism · menopause (Version B)",
+     "Tiredness, sweating and weight loss fit — **but lymphadenopathy does not**; or age around 50 with flushes",
+     "**Goitre, tremor, tachycardia, eye signs, brisk reflexes**; atrophic vaginitis on pelvic examination",
+     "**TSH and free T4.** Menopause is clinical — **but it does not explain the glands or the spleen**"
+    ],
+    [
+     "Connective tissue disease · sarcoidosis · drug reaction",
+     "Joint symptoms, rash, dry eyes and mouth; **recent phenytoin, carbamazepine or allopurinol with eosinophilia**",
+     "Joint swelling, rash, erythema nodosum, facial oedema",
+     "ANA, ENA, ACE, chest X-ray; **medication review with FBE and differential**"
+    ]
    ]
   },
   "source": "Lymphoma_PFE_2_Case_Tasks_Script_Notability.pdf (Mary Whitfield, 40, B symptoms — examination from the examiner)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Tiredness › Lymphoma_PFE_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "PALLOR, thin, unwell; no jaundice or rash"
-   ],
-   [
-    "Observations",
-    "T 37.8 · HR 96 regular · BP 118/74 · RR 16 · SpO2 98%"
-   ],
-   [
-    "Hands",
-    "SCRATCH MARKS, clubbing, ecchymoses; no joint swelling"
-   ],
-   [
-    "Face and mouth",
-    "CONJUNCTIVAL PALLOR; no gum changes; tonsils normal"
-   ],
-   [
-    "The nodes",
-    "2-3 CERVICAL NODES — RUBBERY, FIXED, NON-TENDER, largest about 3 cm, overlying skin normal"
-   ],
-   [
-    "Node characters to ask",
-    "Consistency · mobility or fixation · tenderness · size · overlying skin"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — The generic opening ('I would do a full physical examination') — it invites 'what are you looking for?' and burns thirty seconds; name the system and the reason: 'a general examination with a focus on the haematological system, looking for a cause of B symptoms'; greet the patient before turning to the examiner",
-   "FAIL — Accepting 'two to three enlarged cervical nodes' and moving on — the four characters are two marks and come only if you ask: consistency, mobile or fixed, tender, overlying skin; 'I ask about tenderness to separate lymphadenitis from lymphadenopathy'; ask again if the examiner deflects",
-   "FAIL — 'Any masses?' on the abdomen — gets 'no'; splenomegaly must be named specifically, and it is one of your three reasons",
-   "FAIL — The euphemism — 'a blood problem', 'something in your immune system'; turn the chair, lower the voice, warning shot, then 'I am concerned about the possibility of a cancer of the lymph glands, called lymphoma', and let it land",
-   "FAIL — Quoting the stem back as your reasons — lead with what you collected: rubbery, fixed, non-tender glands ('glands from an infection are tender and mobile'), the spleen, the scratch marks; and say 'clubbing is not a lymphoma sign, so it keeps an intrathoracic malignancy on my list'",
-   "FAIL — The shotgun investigation list — the first four in order before anything else: FBE, blood film today, excisional biopsy of a cervical node ('lymphoma is classified on nodal architecture, an aspirate gives cells without it'), PET–CT; then LDH, HIV and syphilis with consent, EBV/CMV/toxo, IGRA and CXR, TSH"
-  ]
+  "promptAt": 310
  },
  {
   "id": "MED-68",
