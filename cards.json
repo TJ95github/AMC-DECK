@@ -24423,9 +24423,8 @@
  {
   "id": "MED-93",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Emergency Department. BSL and ECG already normal (do NOT delete the cardiac/metabolic parts of the history). Examiner withholds the standing BP unless you ask for a postural BP by name; Jane mentions her headaches only to a neurological review question. Version B (15-year-old, collapse at the end of a 100 m run, mother present, online format) on the card.",
   "stem": [
    "Jane, 17, presented after she fainted for 30 seconds while attending a parade. Witnessed by friends, who called an ambulance. BSL and ECG normal."
   ],
@@ -24434,134 +24433,215 @@
    "Ask the examiner for the physical examination findings — given only if you ask specifically",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes: 4 history · 1.5 examination · 2.5 explanation. Vitals/stability · WIPE, acknowledge · ★ confirm complete LOC · ★ seizure screen ×3 · ★ 'is this the first time? describe ALL three episodes' (the diagnosis lives in the earlier ones) · today's context ×5 · ★ prodrome — name its significance aloud · meals/fluids/head injury/fever · after ×3 · CNS review → headache clue: three red-flag questions then back on structure · CVS incl. ★ palpitations before the event · GI · periods/fatigue · alcohol/drugs plainly · meds started/stopped · hyperventilation/stress · PMHx · ★ FHx sudden death · PEFE: ★ 'BP sitting and after three minutes standing — is there a postural drop?' · fundoscopy · murmurs · glucose, ECG, dipstick, β-hCG with consent · ONE diagnosis, three reasons, postural drop as evidence not headline · differentials across ≥4 systems · counter-pressure, fluids, driving, GP for the headaches, safety-net.",
+  "findings": [
+   [
+    "THE TRAP SET IN THE FIRST LINE OF THE STEM",
+    "'BSL AND ECG ARE ALREADY NORMAL' IS BAIT. Candidates read it as 'cardiac and metabolic causes are excluded' AND DELETE THOSE BLOCKS FROM THE HISTORY. A NORMAL ECG DOES NOT EXCLUDE HOCM, CPVT OR AN INTERMITTENT ARRHYTHMIA. A normal glucose two hours later, after a sweet drink, DOES NOT EXCLUDE HYPOGLYCAEMIA AT THE TIME. NEVER SUBTRACT FROM YOUR STRUCTURE — ONLY EVER ADD"
+   ],
+   [
+    "THE FINDING RELEASED ONLY IF YOU ASK BY NAME",
+    "BP 120/80 SITTING → 94/62 STANDING. That is a fall of 26 SYSTOLIC AND 18 DIASTOLIC — a drop of 20 OR MORE SYSTOLIC or 10 OR MORE DIASTOLIC WITHIN 3 MINUTES meets the definition of POSTURAL HYPOTENSION. IF YOU NEVER ASK FOR IT BY NAME, YOU NEVER GET IT"
+   ],
+   [
+    "THREE EPISODES — and the diagnosis lives in the first two",
+    "1 JUMPED OUT OF BED AND RUSHED TO ANSWER THE PHONE · 2 SAW BLOOD, FELT DIZZY, FAINTED · 3 TODAY AT THE PARADE. TWO UNMISTAKABLE REFLEX TRIGGERS. 'Is this the first time?' → 'NO, IT'S THE THIRD TIME' → 'CAN YOU DESCRIBE ALL THREE FOR ME?'"
+   ],
+   [
+    "Today's context",
+    "STANDING 1–2 HOURS · VERY HOT DAY · CROWDED PARADE · EMOTIONAL ATMOSPHERE. Out for 30 SECONDS. She says 'nothing special, just standing' — the detail comes only from the four context questions"
+   ],
+   [
+    "THE PRODROME — the finding that makes it reassuring",
+    "'MY VISION WENT BLURRY AND I FELT LIGHT-HEADED.' Say it back out loud: 'THAT WARNING IS VERY TYPICAL OF A SIMPLE FAINT, AND IT'S REASSURING'"
+   ],
+   [
+    "After: TIRED, NOT CONFUSED",
+    "'Tired, but I KNEW WHERE I WAS.' POST-EVENT FATIGUE IS NORMAL IN VASOVAGAL SYNCOPE. ONLY CONFUSION POINTS TO A SEIZURE. Do not change tack. Pallor is common in reflex syncope and DOES NOT ARGUE AGAINST IT"
+   ],
+   [
+    "THE INCIDENTAL CLUE she volunteers",
+    "'I GET HEADACHES ALL THE TIME AND TAKE NUROFEN.' ADD THREE QUESTIONS — EARLY-MORNING VOMITING, WEIGHT LOSS, FOCAL DEFICIT — AND REQUEST FUNDOSCOPY. THEN RETURN TO YOUR STRUCTURE. Ninety seconds on a headache history and you never finish the syncope structure. Regular analgesia most days raises MEDICATION-OVERUSE HEADACHE — flag it for the GP"
+   ],
+   [
+    "Everything else NEGATIVE",
+    "NO jerking, tongue bite or incontinence · NO chest pain, palpitations or exertional symptoms · NO missed meals, alcohol or drugs · NO medications · CVS, respiratory, abdominal and neurological examination NORMAL · AND NO FAMILY HISTORY OF SUDDEN CARDIAC DEATH — that negative is WHAT LETS YOU BE REASSURING"
+   ],
+   [
+    "VERSION B — the online adaptation, FOUR findings",
+    "15-YEAR-OLD, collapse AT THE END OF A 100 m RUN. Hot day, SKIPPED BREAKFAST, prodrome of dizziness, GIVEN ORAL REHYDRATION SOLUTION, PALE, postural drop. MOTHER PRESENT. Task 2 becomes: TELL THE MOTHER IN LAY LANGUAGE WHAT EXAMINATIONS YOU WOULD PERFORM — findings then appear on a card"
+   ],
+   [
+    "RED FLAGS that force a cardiac pathway",
+    "SYNCOPE DURING EXERTION, not immediately after · SYNCOPE WHILE SUPINE · NO PRODROME · PALPITATIONS IMMEDIATELY BEFORE · FAMILY HISTORY OF SUDDEN CARDIAC DEATH UNDER 40–50 · known structural heart disease · ABNORMAL ECG · SIGNIFICANT INJURY"
+   ]
+  ],
+  "findingsLabel": "The bait in the stem, the finding released only on request, and the multiple-findings trap",
+  "must": [
+   "FAIL — Shrinking the structure because the stem says the ECG and BSL are normal.",
+   "FAIL — Naming postural hypotension as the primary diagnosis for a true syncope.",
+   "FAIL — Only exploring today's episode; the two earlier faints never surface.",
+   "FAIL — Panicking at multiple findings: three co-equal diagnoses and no commitment.",
+   "ASK — Blood pressure sitting and standing — is there a postural drop?",
+   "ASK — Has anyone in your family died suddenly at a young age?"
+  ],
   "back": {
-   "dx": "Vasovagal (reflex) syncope — third episode, each with a textbook trigger and a prodrome: (1) jumped out of bed to answer the phone, (2) the sight of blood, (3) today after 1–2 hours standing still in a hot, packed, exciting parade — blurry vision and light-headedness first, 30 s LOC, went floppy (no jerking/tongue bite/incontinence), tired but oriented after, 'white as a sheet', hip bruise. Chronic headaches on Nurofen (distractor): no morning vomiting, weight loss, nocturnal/positional worsening; fundoscopy normal → refer to GP, medication-overuse flagged. No palpitations, chest pain, SOB; periods regular; no alcohol/drugs; no FHx sudden death. PEFE: BP 120/80 sitting → 94/62 standing (drop 26/18 — name it), pulse 82 reg, neuro/fundi/CVS/RS/abdo normal. Explain: nerves overactive → vessels in the legs widen → blood pools → brain short for seconds → lying flat fixes it. Three reasons: setting (hot, prolonged standing, crowd, excitement); earlier episodes fit classic triggers; clear prodrome. Postural drop = supporting evidence, not the diagnosis (postural hypotension causes dizziness/near-fainting more than true LOC; reflex syncope produces a transient drop). Differentials by system: cardiac (arrhythmia — no palpitations; HOCM — no chest pain/SOB/FHx, had a warning; valve/ischaemia), brain (seizure — friends' account; SOL, bleed, meningitis), chemistry (glucose, sodium), blood (anaemia — periods), drugs/alcohol/medications, panic. Management: lie down legs up or head between knees at the warning; counter-pressure; fluids in heat; don't skip meals; keep calves moving; FBC + pregnancy test today; caution heights/swimming alone; GP 1–2 weeks (headaches, ibuprofen frequency); driving — a triggered, prodromal, standing faint generally doesn't restrict; tell the GP if the pattern changes; return if no warning, supine, exertional, or chest pain/palpitations first. Hidden agenda: brain tumour fear from googling the headaches; the licence.",
+   "dx": [
+    "**VASOVAGAL (REFLEX) SYNCOPE — the commonest cause of transient loss of consciousness in adolescents. Benign, but RECURRENT AND INJURY-PRONE.** **Mechanism in one line: a trigger provokes an ABNORMAL AUTONOMIC REFLEX → VASODILATATION AND VENOUS POOLING IN THE LEGS, with or without BRADYCARDIA → transient GLOBAL CEREBRAL HYPOPERFUSION → LOC → FALLING FLAT RESTORES PERFUSION → rapid complete recovery.**",
+    "**THE DIAGNOSTIC TRIAD: TYPICAL TRIGGER — prolonged standing, heat, crowds, pain, fear, THE SIGHT OF BLOOD, sudden rising, micturition, cough. PRODROME — light-headedness, BLURRED OR GREYING VISION, warmth, nausea, sweating, TINNITUS. RAPID COMPLETE RECOVERY — brief fatigue is normal, CONFUSION IS NOT.**",
+    "**THE DISCRIMINATING ISSUE — THE MULTIPLE-FINDINGS DRAMA. The examination hands you a SECOND positive, and in Version B a THIRD and FOURTH. THIS IS DELIBERATE: extra findings were added SPECIFICALLY TO FAIL CANDIDATES WHO MEMORISED A RECALL AND STOP WORKING ONCE THE FIRST POSITIVE APPEARS.**",
+    "**Candidates then panic and either SWITCH TO THE NEWEST FINDING as the headline, or PRESENT THREE CO-EQUAL DIAGNOSES AND COMMIT TO NONE. BOTH FAIL.** **The correct move: EXTRA FINDINGS MEAN YOUR HISTORY AND EXAMINATION WERE THOROUGH — THAT IS A REWARD. NAME ONE MOST LIKELY PROVISIONAL DIAGNOSIS, THEN LIST THE OTHERS IN ORDER.**",
+    "**WHY VASOVAGAL OUTRANKS THE POSTURAL DROP. POSTURAL HYPOTENSION TYPICALLY CAUSES DIZZINESS OR PRESYNCOPE, NOT TRUE LOSS OF CONSCIOUSNESS — if a postural drop alone caused syncope, EVERY PATIENT ON ANTIHYPERTENSIVES WOULD BE FAINTING REPEATEDLY; they get dizzy, sit down, and recover.**",
+    "**And REFLEX SYNCOPE ITSELF PRODUCES A TRANSIENT AUTONOMIC DISTURBANCE, so a postural drop measured SOON AFTER an episode is often A CONSEQUENCE OF THE REFLEX EVENT RATHER THAN AN INDEPENDENT CAUSE.** **The two earlier episodes have NOTHING TO DO WITH POSTURE.** **Postural hypotension is A DIAGNOSIS OF LAST RESORT, NOT FIRST.**",
+    "**THE SCRIPT — THREE REASONS, THEN THE DROP AS EVIDENCE: 'the most likely cause is VASOVAGAL SYNCOPE — a simple faint. FIRST, where it happened today: a hot day, standing still for a couple of hours, a crowded parade — THAT'S THE CLASSIC SETTING. SECOND, your TWO EARLIER EPISODES FIT THE SAME PATTERN. THIRD, YOU HAD A CLEAR WARNING FIRST. One thing I found is that your blood pressure DROPS A LITTLE WHEN YOU STAND — that FITS WITH, AND SUPPORTS, the same diagnosis.'**",
+    "**BRIEF MYOCLONIC JERKS ARE COMMON IN REFLEX SYNCOPE AND DO NOT MAKE IT A SEIZURE — a few seconds of jerking as she goes down, with immediate recovery, no confusion and no tongue bite, is CONVULSIVE SYNCOPE.**",
+    "**Management to tell her: RECOGNISE THE WARNING AND ACT IMMEDIATELY — lie down and RAISE THE LEGS, or sit with the head between the knees · COUNTER-PRESSURE MANOEUVRES at the first symptom — CROSS THE LEGS AND TENSE THE THIGHS AND BUTTOCKS, GRIP ONE HAND HARD IN THE OTHER AND PULL OUTWARDS, tense the arms · FLUIDS across the day, more in heat · AVOID prolonged motionless standing, hot crowded places, dehydration, alcohol, skipping meals · KEEP THE CALF MUSCLES MOVING if you must stand still.**",
+    "**Drug therapy — midodrine or fludrocortisone — is SPECIALIST-INITIATED and ONLY for FREQUENT, DISABLING, REFRACTORY episodes.** **Liberalise salt ONLY if there is no hypertension or renal or cardiac disease.** **In SA the driver must notify AND THE TREATING DOCTOR HAS A STATUTORY DUTY TO REPORT someone believed unfit — unlike most other states, where reporting is discretionary.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, before I start — BP sitting and standing, pulse rate and rhythm, RR, SpO2, temperature; is she haemodynamically stable?' → 'stable, vitals at the examination stage' → 'thank you, I'll take it she's stable' · WIPE, 'is it alright if I call you Jane?' · 'I can see how worrying that must have been, and you did the right thing coming in'"
+     "**To the examiner: 'may I have her vital signs — BLOOD PRESSURE SITTING AND STANDING, pulse rate and rhythm, respiratory rate, saturation and temperature? IS SHE HAEMODYNAMICALLY STABLE?'** If told to proceed, **'thank you, I'll take it that she is stable' — and move on without losing rhythm.**"
     ],
     [
-     "0:25",
-     "★ 'Did you lose consciousness completely, or were you aware?' → completely · 'your friends were right there — jerky movements? bite your tongue? wet or soil yourself?' → went floppy, no, no · 'that makes a seizure much less likely'"
+     "0:15",
+     "**Introduce, ask how she likes to be addressed, and frame it: 'I can see how worrying this must have been. Let's work through it together — I'll ask you some questions, then check your examination findings, and WE'LL TRY TO FIND OUT WHY THIS KEEPS HAPPENING.'**"
     ],
     [
-     "0:50",
-     "★ 'Is this the first time?' → third · ★ 'can you describe all three episodes for me, starting with the first?' → phone rush from bed; the sight of blood; today"
+     "0:30",
+     "**CONFIRM TRUE SYNCOPE, THEN EXCLUDE SEIZURE — ask even though the stem says 'fainted': DID YOU LOSE CONSCIOUSNESS COMPLETELY, or were you aware of what was going on · YOUR FRIENDS WERE WITH YOU — did they say you had any JERKY MOVEMENTS, did you BITE YOUR TONGUE, did you WET OR SOIL YOURSELF · HOW LONG WERE YOU OUT FOR?**"
     ],
     [
-     "1:35",
-     "Today: doing (standing, watching) · standing how long (1–2 h) · hot? (very) · crowded? (shoulder to shoulder) · emotion (screaming, excited) · change of position (no)"
+     "0:55",
+     "**'IS THIS THE FIRST TIME THIS HAS HAPPENED?' Then 'CAN YOU DESCRIBE ALL THREE EPISODES FOR ME?'** **This is where the diagnosis is actually made — NOT in today's story.**"
     ],
     [
-     "2:00",
-     "★ 'Any warning — light-headed, vision blurry or grey, hot, sweaty, sick, ringing in the ears?' → blurry vision, light-headed → ★ 'that warning is quite typical of a simple faint, and it's actually reassuring' · meals (had all), fluids (plenty), head injury (no), fever/rash (no) · after: 'confused, or just tired?' → tired, oriented · pale (white) · injury (hip bruise)"
+     "1:40",
+     "**TODAY'S CONTEXT: what exactly were you doing at the moment it happened · HOW LONG HAD YOU BEEN STANDING · WAS IT A HOT OR HUMID DAY · WAS IT CROWDED · any STRONG EMOTIONS, FEAR OR PAIN · had you just CHANGED POSITION?**"
     ],
     [
-     "2:35",
-     "Signpost 'before or after the faint' · CNS: headaches → ★ 'yes, all the time, Nurofen' → three questions: morning vomiting? weight loss? wake you at night / worse lying, coughing, straining? → no · 'and no slurred speech, weakness or numbness?' → back on structure"
+     "2:05",
+     "**THE PRODROME QUESTION: 'DID YOU GET ANY WARNING BEFORE YOU FAINTED — LIGHT-HEADEDNESS, YOUR VISION GOING BLURRY OR GREY, FEELING HOT, SWEATY, SICK, OR RINGING IN YOUR EARS?'** Then **missed meals · fluids · head injury beforehand · fever or rash.**"
+    ],
+    [
+     "2:25",
+     "**AFTER: 'when you came round, WERE YOU CONFUSED, OR JUST TIRED?' · did anyone say you LOOKED PALE · DID YOU INJURE YOURSELF IN THE FALL?**"
+    ],
+    [
+     "2:40",
+     "**Signpost the review: 'I'll run through a list of symptoms — for each, tell me if you had it BEFORE OR AFTER the faint.' CNS: any headaches · blurred or double vision · slurred speech · weakness or numbness?**"
+    ],
+    [
+     "2:55",
+     "**The headache positive gets THREE QUESTIONS AND NO MORE: EARLY-MORNING VOMITING · WEIGHT LOSS · any waking at night with headache, or headache WORSE LYING DOWN, COUGHING OR STRAINING.** Then **RETURN TO THE STRUCTURE.**"
     ],
     [
      "3:10",
-     "CVS: chest pain, ★ 'racing or pounding heart, especially just before you fainted?', SOB (exercise/flat/night), ankle swelling, cough · GI · 'periods regular? heavy? more tired than usual?' · 'any alcohol at the parade? recreational drugs?' (plainly) · medications, started/stopped, allergies · breathing fast, tingling, stress · PMHx · ★ 'heart problems, epilepsy or fainting in the family — anyone died suddenly at a young age?'"
+     "**CVS — ask it, ECG or no ECG: any CHEST PAIN · ANY RACING OR POUNDING OF THE HEART, ESPECIALLY JUST BEFORE YOU FAINTED · short of breath at rest, on exertion, LYING FLAT or AT NIGHT · ankle swelling?**"
+    ],
+    [
+     "3:25",
+     "**RESPIRATORY: cough · haemoptysis · pain on breathing in · WHEEZE WITH EXERCISE. GI: nausea or vomiting · tummy pain · BLACK OR BLOODY BOWEL MOTIONS?**"
+    ],
+    [
+     "3:35",
+     "**HAEM AND GYNAE, asked privately and matter-of-factly: ARE YOUR PERIODS REGULAR, AND ARE THEY HEAVY · have you been more tired than usual · IS THERE ANY CHANCE YOU COULD BE PREGNANT?**"
+    ],
+    [
+     "3:45",
+     "**DRUGS, plainly — common and expected in this age group and setting: any ALCOHOL at the parade · any RECREATIONAL DRUGS · any regular medications, or anything STARTED OR STOPPED RECENTLY? PSYCH: were you BREATHING VERY FAST before it happened · any TINGLING in your hands or around your mouth · anything stressful at school or home?**"
+    ],
+    [
+     "3:55",
+     "**PAST HISTORY AND FAMILY: any medical conditions or operations · does anyone in your family have HEART PROBLEMS, EPILEPSY, OR FAINTING LIKE THIS · HAS ANYONE IN YOUR FAMILY DIED SUDDENLY AT A YOUNG AGE?**"
     ],
     [
      "4:00",
-     "PEFE: general — alert, pallor, dehydration, rash, injury · ★ 'BP sitting, and again after three minutes standing — is there a postural drop? pulse rate and rhythm, RR, temp, sats' → 120/80 → 94/62 → 'a fall of 26 systolic and 18 diastolic — she has a postural drop' · neuro: cranial nerves, ★ fundoscopy — papilloedema?, limbs, gait, neck stiffness · CVS: JVP, apex, murmurs (site/timing/radiation if any), peripheral pulses · RS · abdomen · office: glucose, ECG, dipstick, β-hCG with consent"
+     "**Ask the examiner for the examination, NAMING WHAT YOU WANT — and ask for the POSTURAL BLOOD PRESSURE BY NAME.**"
     ],
     [
-     "5:30",
-     "★ One diagnosis: vasovagal syncope — two sentences of mechanism · ★ three reasons · postural drop as supporting evidence · 'is the low BP the real problem?' answered · differentials across heart, brain, chemistry, blood, drugs, psychological"
+     "6:00",
+     "**COMMIT TO ONE DIAGNOSIS with the three-reason script, THEN present the postural drop as SUPPORTING EVIDENCE.** Then **the ranked differentials — and say explicitly that A NORMAL ECG DOES NOT EXCLUDE HOCM OR AN INHERITED ARRHYTHMIA.**"
     ],
     [
-     "7:00",
-     "Practical: lie down legs up / head between knees; counter-pressure manoeuvres; fluids, meals, calf pump · FBC + pregnancy test today · caution heights, ladders, swimming alone · GP 1–2 weeks incl. the headaches and the Nurofen · driving question · 'brain tumour?' answered with the red flags and normal fundoscopy · safety-net: no warning, lying down, exercising, chest pain/palpitations first → straight back · summary · questions"
+     "7:20",
+     "**Management and the SAFETY-NET, said out loud: 'come straight back if you faint WITHOUT ANY WARNING, if it happens WHILE YOU'RE EXERCISING OR LYING DOWN, if you get CHEST PAIN OR A RACING HEART beforehand, if you INJURE YOURSELF, or if the faints BECOME MORE FREQUENT.'** Then **GP follow-up including the headaches and the ibuprofen.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Examiner, may I have the blood pressure sitting and standing — is there a postural drop?' / 'I can see how worrying this must have been for you.'",
-    "★ 'Did you lose consciousness completely, or were you aware of your surroundings?' / ★ 'Is this the first time? … Can you describe all three episodes for me?'",
-    "★ 'Did you get any warning before you fainted — light-headedness, blurry vision, feeling hot or sick?' → ★ 'That warning is typical of a simple faint, and it's reassuring.' / 'Were you confused afterwards, or just tired?'",
-    "'Do you ever vomit first thing in the morning with those headaches? Any weight loss? Do they wake you at night, or get worse when you lie down, cough or strain?' — then back on structure",
-    "'Any racing or pounding of your heart, especially just before you fainted?' / 'Did you have any alcohol at the parade? Any recreational drugs?' / ★ 'Has anyone in your family died suddenly at a young age?'",
-    "'Fundoscopy — is there any papilloedema?' / 'And for bedside tests — a blood sugar level, an ECG, a urine dipstick, and with her consent a urine pregnancy test.'",
-    "★ 'The most likely cause is vasovagal syncope — a simple faint. When you stand still for a long time in a hot, crowded place, some nerves become overactive and widen the blood vessels in your legs, so less blood and oxygen reach your brain for a few seconds, and you black out. Lying flat fixes it straight away — which is why you came round so quickly.'",
-    "★ 'Three reasons: the setting — hot, standing still for hours, crowded and exciting; your earlier episodes fit the same pattern — jumping up to answer the phone and fainting at the sight of blood are textbook triggers; and you had a clear warning first.' / 'Your blood pressure drops a little when you stand — that supports the same diagnosis.' / 'Is the blood pressure the real problem?' → 'Part of the same picture rather than a separate illness — a drop on standing usually makes people dizzy rather than black out completely, so it's supporting evidence rather than the cause.'",
-    "'When you feel the warning, lie down and put your legs up — don't try to walk it off.' / 'Cross your legs and squeeze your thigh and bottom muscles, or grip your hands and pull them apart.' / 'Come back if you faint with no warning, while lying down or exercising, or with chest pain or a racing heart first.'",
-    "'Could this be a brain tumour?' → 'I'm glad you told me — I did check for it: headaches that wake you at night or are worse first thing, morning vomiting, weight loss, weakness or numbness, and changes at the back of the eye. You have none, and your neurological examination is normal — so very unlikely. But two years of headaches needing regular Nurofen deserve proper attention; frequent painkillers can keep headaches going. I'll write to your GP.' / 'Will this stop me getting my licence?' → 'A faint like yours — clear trigger, clear warning, while standing — generally doesn't restrict you. What would change that is fainting with no warning, or sitting or driving, or a heart cause. Tell your GP if the pattern changes, and pull over if you ever feel the warning at the wheel.'"
-   ],
    "pefe": [
-    "Role-player: Jane Kerrison, 17, Year 12, parents and younger brother; social netball; no smoking/alcohol/drugs; Nurofen most weeks for two years of headaches; periods regular; no PMHx/allergies/FHx. Says 'it's the third time' only if asked whether it's happened before; describes all three only if asked; headaches only to a neuro/general symptom question; gives the prodrome clearly if asked; answers only about today if you ask only about today. Hidden agenda (late, or last 30 s): 'Could this be a brain tumour? And will I still be allowed to drive?'. 'It's just a faint' → 'so it'll definitely never happen again?'; physiology >25 s → 'sorry — what does that actually mean?'; no plan → 'so what happens now?'",
-    "Examiner: alert, no pallor/dehydration/rash/injuries · BP 120/80 sitting, 94/62 standing · pulse 82 regular · RR, temp, sats normal · cranial nerves, fundoscopy, limbs, gait normal, no neck stiffness · CVS normal, no murmurs · chest clear · abdomen normal · BSL and ECG normal (stem) · dipstick unavailable",
-    "Version B — 15F, collapsed at the END of a 100 m run, mother present (online): task 2 = describe the examination to the mother in lay language in examination order (looks, colour, alertness, injury; BP lying and standing, pulse rate and regularity, breathing, temperature, oxygen; nerves — face, eyes incl. looking in the back with a light, strength/sensation/reflexes, balance and walking; heart — neck, chest, feel, listen; lungs; tummy; finger-prick sugar and urine) — not 'praecordial palpation, cranial nerves II–XII'. Extras: skipped breakfast, pallor, postural drop → still ONE provisional diagnosis (vasovagal: sprinting on a hot day, missed food and fluid, dizzy/light-headed first), rank hypoglycaemia (normal glucose NOW doesn't exclude it THEN — she had Hydralyte on recovery ADDED) and the postural drop; HOCM addressed and set aside (no chest pain/SOB/FHx, had a warning). ★ Say aloud: syncope DURING exertion = cardiac red flag; at the END/just after = usually reflex (muscle pump stops while vessels are still dilated)",
-    "Variant C — mid-game collapse, no warning, family sudden death: everything changes — admit on a monitor, echo, cardiology; no sport or driving until known; family may need checking",
-    "Scoring 0/1/2 per item: postural BP by name, fundoscopy, murmurs, glucose + ECG requested · one clear provisional diagnosis · ≥3 reasons · postural drop as evidence not diagnosis · differentials across ≥4 systems · counter-pressure · trigger avoidance · driving · safety-net · follow-up",
-    "SA: ED → GP follow-up; headache review; Austroads — reflex syncope with prodrome generally no restriction VERIFY; MedSTAR 1300 13 12 33 not needed"
+    "**Name what you want. GENERAL: alert or drowsy · PALLOR · dehydration · rash · INJURY FROM THE FALL · BMI.** **VITALS: BP LYING OR SITTING AND AGAIN AFTER 3 MINUTES STANDING — IS THERE A POSTURAL DROP · pulse rate AND RHYTHM · respiratory rate, temperature, saturation.**",
+    "**NEURO: cranial nerves · FUNDOSCOPY FOR PAPILLOEDEMA — the examination that follows logically from the chronic headache, and asking for it SHOWS THE EXAMINER YOUR REASONING · tone, power, reflexes, sensation, coordination · gait · neck stiffness.**",
+    "**CVS: JVP · apex beat, DISPLACED OR HEAVING · any MURMURS — and if so SITE, TIMING AND RADIATION · carotid bruits · peripheral pulses.** **RESPIRATORY and ABDOMEN. OFFICE TESTS: BSL, ECG, urine dipstick, and WITH HER CONSENT A URINE PREGNANCY TEST.**",
+    "**Do now: LYING AND STANDING BLOOD PRESSURE — the single highest-yield bedside test here · bedside glucose · 12-LEAD ECG READ YOURSELF for QTc, DELTA WAVE, BRUGADA PATTERN, LVH WITH DEEP T INVERSION, AV BLOCK · assess for injury · FBE and UEC · urine pregnancy test · dipstick.**",
+    "**Do next: USUALLY NOTHING FURTHER. Typical vasovagal syncope is a CLINICAL DIAGNOSIS and does NOT need an echocardiogram, brain imaging, tilt-table testing or a Holter monitor.** **Add tests ONLY FOR A REASON: echo if a MURMUR, EXERTIONAL syncope or FAMILY SUDDEN DEATH · Holter for PALPITATIONS or recurrent unexplained syncope · CT brain ONLY for head injury, focal deficit or headache red flags · iron studies if anaemic.**",
+    "**Do not miss: HOCM and INHERITED ARRHYTHMIA — a normal ECG excludes NEITHER · aortic stenosis · seizure · INTRACRANIAL PATHOLOGY BEHIND THE CHRONIC HEADACHE · HYPOGLYCAEMIA AT THE TIME OF THE EVENT · anaemia · pregnancy · injury sustained in the fall.**",
+    "**Avoid: ordering an undifferentiated panel — NAME SPECIFIC TESTS AND SAY WHY · 'it's just a faint, nothing to worry about' with no safety advice · REASSURING BEFORE YOU HAVE ASKED ABOUT FAMILY SUDDEN DEATH.** **In Version B, PLAIN WORDS TO THE MOTHER: 'I'll look at her neck and chest, feel the chest, and listen to her heart' — not 'a praecordial examination and auscultation for murmurs'.**"
    ],
-   "fails": [
-    "Exploring only today's episode — never asking her to describe all three (the diagnosis lives in the phone rush and the sight of blood)",
-    "Asking for 'vital signs' and accepting one blood pressure — the postural figures are the whole point of the examination task",
-    "Promoting the postural drop to headline diagnosis because it feels objective",
-    "Ticking 'headache: yes' and moving on without the red-flag questions and fundoscopy — or being derailed into a full headache history",
-    "Skipping seizure screen because the stem says 'fainted'; hearing 'tired' and switching to seizure; deleting palpitations/FHx/meals because BSL and ECG are normal",
-    "Avoiding alcohol and drugs because she's 17; six cardiac differentials and no other system",
-    "'Just a faint' with no counter-pressure advice, no safety-net for no-warning/supine/exertional syncope, no plan for the headaches"
-   ],
-   "numbers": [
-    "Postural hypotension: systolic fall ≥20 or diastolic ≥10 within 3 min standing · here 120/80 → 94/62 = 26/18 · pulse 82 · LOC 30 s · third episode · standing 1–2 h",
-    "Reflex syncope typically <1 min; brief myoclonic jerks can occur and don't mean seizure · vasovagal triad: trigger + prodrome + rapid full recovery",
-    "Red flags: during exertion · supine · no prodrome · palpitations first · FHx sudden death <40–50 · abnormal ECG · injury · ECG items: QTc, delta wave, Brugada, LVH + deep TWI, AV block",
-    "Version B: end-of-exertion = reflex; during = cardiac · normal glucose now ≠ no hypo then (oral rehydration given) · skipped breakfast, pallor, postural drop — still one diagnosis",
-    "Counter-pressure: lie down legs up · head between knees · cross legs and tense · grip and pull · FBC + β-hCG today · GP 1–2 weeks"
+   "ddx": [
+    [
+     "**Vasovagal (reflex) syncope** — the answer",
+     "**Prolonged standing, HEAT, CROWD, emotion, SIGHT OF BLOOD, sudden rising; PRODROME; RAPID FULL RECOVERY**",
+     "**DESCRIBE EVERY PRIOR EPISODE; pallor; BRIEF FATIGUE, NOT CONFUSION**",
+     "**CLINICAL DIAGNOSIS — no further cardiac testing needed**"
+    ],
+    [
+     "**Orthostatic hypotension — supporting, not primary**",
+     "**Postural BP drop; dehydration; drugs**",
+     "**Symptoms ON STANDING UP — usually DIZZINESS OR PRESYNCOPE RATHER THAN TRUE SYNCOPE**",
+     "**Postural BP; medication review. A DIAGNOSIS OF LAST RESORT, NOT FIRST**"
+    ],
+    [
+     "**Hypertrophic cardiomyopathy**",
+     "**Syncope DURING EXERTION; FAMILY HISTORY OF SUDDEN DEATH**",
+     "**EJECTION SYSTOLIC MURMUR LOUDER ON VALSALVA; JERKY PULSE; ECG LVH WITH DEEP T INVERSION**",
+     "**ECHOCARDIOGRAM — A NORMAL ECG DOES NOT EXCLUDE IT** — urgent"
+    ],
+    [
+     "**Inherited arrhythmia — long QT, CPVT, Brugada, WPW**",
+     "**PALPITATIONS BEFORE the event; syncope ON EXERTION OR STARTLE; NO PRODROME**",
+     "**Family history of sudden death, DROWNING, or UNEXPLAINED CRASHES**",
+     "**QTc on ECG; Holter; cardiology AND FAMILY SCREENING** — urgent"
+    ],
+    [
+     "Aortic stenosis · ACS · pericarditis · myocarditis",
+     "**Exertional syncope, angina, dyspnoea**; or chest pain with recent viral illness",
+     "Ejection systolic murmur radiating to the carotids; pericardial rub, ECG change",
+     "Echocardiogram; ECG and troponin — urgent"
+    ],
+    [
+     "**Seizure or epilepsy**",
+     "**PROLONGED event**",
+     "**JERKING, TONGUE BITE, INCONTINENCE, POST-ICTAL CONFUSION**",
+     "**Collateral history; EEG if recurrent.** **BRIEF MYOCLONIC JERKS IN REFLEX SYNCOPE ARE NOT A SEIZURE** — same day"
+    ],
+    [
+     "**Space-occupying lesion · intracranial or subarachnoid haemorrhage · meningitis**",
+     "**CHRONIC HEADACHE ON REGULAR ANALGESIA**; head injury; fever and rash",
+     "**EARLY-MORNING VOMITING, WEIGHT LOSS, FOCAL DEFICIT, PAPILLOEDEMA, THUNDERCLAP ONSET**; neck stiffness, photophobia",
+     "**CT or MRI brain; CT with LP if indicated** — EMERGENCY"
+    ],
+    [
+     "**Hypoglycaemia** · electrolyte disturbance · heat exhaustion",
+     "**SKIPPED MEALS (Version B); diabetes therapy**; hot day, heavy exertion, poor intake",
+     "**Sweating, tremor, hunger, confusion, NO SPONTANEOUS RECOVERY WITHOUT GLUCOSE**; cramps, dark urine",
+     "**BEDSIDE BSL AT THE TIME — A LATER NORMAL VALUE DOES NOT EXCLUDE IT.** UEC, calcium, magnesium — IMMEDIATE"
+    ],
+    [
+     "**Anaemia, heavy menstrual bleeding, occult blood loss, pregnancy**",
+     "**PALLOR, fatigue, HEAVY PERIODS**",
+     "Conjunctival pallor, tachycardia",
+     "**FBE, iron studies, URINE PREGNANCY TEST** — same day"
+    ],
+    [
+     "Pneumothorax · exercise-induced bronchoconstriction · drugs · psychogenic",
+     "**Version B — collapse around exercise**; parade or festival setting; fast breathing with tingling",
+     "Pleuritic pain, sudden dyspnoea, UNEQUAL AIR ENTRY, wheeze; 'anything started or stopped recently?'; **EYES HELD CLOSED, prolonged unresponsiveness with NORMAL VITALS**",
+     "Examination, CXR, spirometry; medication review and QTc. **Psychogenic is a DIAGNOSIS OF EXCLUSION**"
+    ]
    ]
   },
   "source": "Syncope_Young_Person_Vasovagal_2_Case_Tasks_Script_Notability.pdf (Jane Kerrison, 17, fainted at a parade — third episode; Version B 15-year-old after a 100 m run) This card is Version A; Version B, the 15-year-old collapsing after a 100 m run in the online format, is MED-249.",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Syncope_Young_Person_Vasovagal_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Alert; no pallor, dehydration, rash or injuries"
-   ],
-   [
-    "Postural blood pressure",
-    "120/80 sitting → 94/62 standing"
-   ],
-   [
-    "Pulse",
-    "82, regular"
-   ],
-   [
-    "Other observations",
-    "Respiratory rate, temperature and saturations normal"
-   ],
-   [
-    "Neurological",
-    "Cranial nerves, fundoscopy, limbs and gait all normal; NO neck stiffness"
-   ],
-   [
-    "Cardiovascular and chest",
-    "Normal, no murmurs; chest clear"
-   ],
-   [
-    "Abdomen",
-    "Normal"
-   ],
-   [
-    "Bedside tests",
-    "BSL and ECG normal; dipstick unavailable"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Exploring only today's episode — 'is this the first time?' → 'the third' → 'can you describe all three for me, starting with the first?'; jumping out of bed to answer the phone and the sight of blood are textbook reflex triggers, and without them you have a hot day and a postural drop and talk yourself into the wrong diagnosis (★★)",
-   "FAIL — Asking for 'vital signs' and accepting one blood pressure — the examiner holds 120/80 sitting and 94/62 standing and releases it only to 'blood pressure sitting, and again after three minutes standing — is there a postural drop?'; then calculate it aloud (a fall of 26/18) (★)",
-   "FAIL — Promoting the postural drop to the headline diagnosis because it feels objective — postural hypotension causes dizziness, not true loss of consciousness, and reflex syncope itself produces a transient drop; commit to vasovagal with three reasons (the setting, the earlier triggers, the prodrome), and use the drop as supporting evidence",
-   "FAIL — Ticking 'headache: yes' and moving on, or being derailed into a full headache history — three red-flag questions (morning vomiting, weight loss, wakes her at night or worse lying, coughing, straining), ask for fundoscopy by name, then back on structure and flag the ibuprofen for the GP; her hidden fear is a brain tumour",
-   "FAIL — Letting the stem shrink the history because 'BSL and ECG are normal' — still ask palpitations just before the faint (would move it to the cardiac pathway), family sudden death, missed meals; ask alcohol and drugs plainly despite her age (a parade is exactly where it matters); periods, and a pregnancy test with consent; confirm complete loss of consciousness and run the seizure screen despite the word 'fainted' in the stem",
-   "DO — Name the prodrome as reassuring out loud; 'tired, or confused?' (fatigue after reflex syncope is normal); differentials across at least four systems (heart, brain, chemistry, blood, drugs, psychological); counter-pressure manoeuvres (lie down legs up, cross legs and squeeze, grip and pull), fluids and meals; heights and swimming; driving generally unrestricted for a triggered faint with warning — tell the GP if the pattern changes; back if no warning, lying, exercising, or palpitations first"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-94",
