@@ -100331,7 +100331,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "Version B of the deranged LFT station — a different patient, no alcohol at all, dyslipidaemia in the stem, and an extra task to explain the results. Fatty liver is a diagnosis of exclusion that sits at the bottom of the list, so lifestyle becomes the only positive ground — and 'My diet is pretty healthy and balanced' scores nothing until you ask for a typical day. One more trap: fatty liver does not cause abdominal pain.",
   "stem": [
    "General practice. A 35-year-old man attends with right upper quadrant pain and to discuss his blood results. AST and ALT are mildly elevated, under twice the upper limit of normal. Triglycerides and cholesterol are raised. He drinks no alcohol.",
    "Tasks: take a history (About 4 minutes) — ask the examiner for the physical examination findings — explain the results to the patient — explain your diagnosis — explain your differential diagnoses."
@@ -100343,85 +100342,206 @@
    "Explain your diagnosis",
    "Explain your differential diagnoses"
   ],
-  "time": "Four minutes of history — liver symptoms and red flags, the alcohol question quantified even though the answer is none, the full risk-factor screen, the pain characterised on its own, and a lifestyle block that demands a typical day · the examination requested by name · then the results explained pad by pad, the diagnosis, and the differentials including a separate cause for the pain",
-  "findingsLabel": "The lifestyle block, and the examination request",
+  "findingsLabel": "The results, the numbers and the examination — open only when you would ask",
   "findings": [
    [
-    "The results, read for her — and for the examiner",
-    "Transaminases under twice the upper limit is a mild rise — inflammation, not severe. Raised triglycerides above 1.7 and cholesterol above 5.5 are the positive ground. AST:ALT under one favours fatty liver, where a ratio above two would have favoured alcohol"
+    "VERSION B — the stem you are in",
+    "35M, RIGHT UPPER QUADRANT ABDOMINAL PAIN. AST AND ALT RAISED, LESS THAN TWICE THE UPPER LIMIT · TRIGLYCERIDES ELEVATED (ref <1.7 mmol/L) · TOTAL CHOLESTEROL ELEVATED (ref <5.5 mmol/L). Tasks: take a history; EXPLAIN THE INVESTIGATION RESULTS TO THE PATIENT; explain your diagnosis and differentials. EVERYTHING IS NEGATIVE — no red flags, no hepatitis risk factors, no surgery, no fever, AND NO ALCOHOL AT ALL. LIFESTYLE QUESTIONS ARE THE ONLY POSITIVE GROUND"
+   ],
+   [
+    "VERSION A — for contrast",
+    "40M attending TO DISCUSS RESULTS, NO PRESENTING COMPLAINT. AST about 95 (ref <40) · ALT about 40–50 (ref <45) · GGT ELEVATED (ref <50) · ALP and bilirubin NEAR NORMAL. ONE BOTTLE OF WINE EVERY NIGHT FOR TWENTY YEARS. Restaurant owner. Examination entirely normal → ALCOHOLIC HEPATITIS, ratio about 2.4"
+   ],
+   [
+    "MAGNITUDE FIRST, THEN RATIO — and quoting the ratio is EXPLICITLY REWARDED",
+    "MILD rise = UNDER ABOUT 5× the upper limit. MARKED = OVER 10×. AST:ALT ABOVE 2 FAVOURS ALCOHOL; BELOW 1 FAVOURS FATTY LIVER OR VIRAL. A VIRAL HEPATITIS WOULD HAVE GIVEN A FAR LARGER RISE — say that out loud as a reason"
+   ],
+   [
+    "THE STANDARD-DRINK ARITHMETIC — getting it wrong undermines an otherwise good station",
+    "A STANDARD DRINK IS 10 g OF ALCOHOL. A 750 mL BOTTLE OF WINE AT 13% IS ABOUT 7.7 STANDARD DRINKS — NOT 12 TO 14. A nightly bottle is ROUGHLY 54 A WEEK. NHMRC: NO MORE THAN 10 STANDARD DRINKS A WEEK AND NO MORE THAN 4 IN A DAY"
+   ],
+   [
+    "THE SEVEN-STEP EXAMINATION REQUEST",
+    "GENERAL APPEARANCE: jaundice, cachexia, SCRATCH MARKS, oedema, and STIGMATA OF CHRONIC LIVER DISEASE such as SPIDER NAEVI AND PALMAR ERYTHEMA · VITAL SIGNS, PARTICULARLY TEMPERATURE · ABDOMEN: inspection for distension and scars; superficial and deep palpation for tenderness and masses, SPECIFICALLY HEPATOMEGALY AND SPLENOMEGALY; PERCUSSION FOR SHIFTING DULLNESS; auscultation for bowel sounds · OFFICE TEST: URINE DIPSTICK FOR BILIRUBIN · ‘I would skip a rectal examination unless there were bowel symptoms’"
+   ],
+   [
+    "A NORMAL EXAMINATION IS A FINDING — say so",
+    "‘The examination is NORMAL, WHICH IS WHAT I WOULD EXPECT AT THIS STAGE — there are NO STIGMATA OF CHRONIC LIVER DISEASE and NO EVIDENCE OF DECOMPENSATION. THAT IS REASSURING BUT IT DOES NOT EXCLUDE ONGOING DAMAGE’"
+   ],
+   [
+    "INVESTIGATIONS — do now and do next",
+    "REPEAT AND EXTEND THE LFT with GGT, ALBUMIN, INR AND A FULL BLOOD COUNT — A LOW PLATELET COUNT IS AN EARLY CLUE TO FIBROSIS · EXCLUDE THE TREATABLE CAUSES: HEPATITIS B SURFACE ANTIGEN AND HEPATITIS C ANTIBODY; IRON STUDIES (FERRITIN AND TRANSFERRIN SATURATION) for haemochromatosis; AUTOIMMUNE SCREEN; COELIAC SEROLOGY; THYROID FUNCTION; CAERULOPLASMIN IF UNDER 40 · METABOLIC WORK-UP: fasting lipids, HbA1c or fasting glucose, blood pressure, WAIST CIRCUMFERENCE and BMI · UPPER ABDOMINAL ULTRASOUND"
+   ],
+   [
+    "What the ultrasound shows in steatosis",
+    "A BRIGHT, ECHOGENIC LIVER returning brighter echoes than the ADJACENT RIGHT KIDNEY, with the deeper structures POORLY SEEN. LOSS OF THE NORMAL HEPATORENAL CONTRAST IS THE FINDING TO NAME"
+   ],
+   [
+    "STAGING THE FIBROSIS — and enzymes do NOT do it",
+    "CALCULATE A FIB-4 SCORE, which combines AGE, TRANSAMINASES AND PLATELET COUNT; TRANSIENT ELASTOGRAPHY (FibroScan) where available. RE-STAGE FIBROSIS PERIODICALLY RATHER THAN REPEATING ENZYMES ALONE. PERSISTENT LOW PLATELETS, LOW ALBUMIN, A RISING INR OR SPLENOMEGALY SUGGEST ESTABLISHED CIRRHOSIS and change follow-up to SURVEILLANCE FOR VARICES AND HEPATOCELLULAR CARCINOMA"
+   ],
+   [
+    "DO NOT MISS, and AVOID",
+    "DO NOT MISS: a MARKED rather than mild rise — THAT IS A DIFFERENT DISEASE · ESTABLISHED CIRRHOSIS — low platelets, low albumin, raised INR, splenomegaly · ALCOHOL WITHDRAWAL RISK if abrupt cessation is advised in a heavy drinker. AVOID: DIAGNOSING FATTY LIVER BEFORE EXCLUDING THE OTHER CAUSES — it is a DIAGNOSIS OF EXCLUSION and EXAMINERS TEST THAT EXPLICITLY · and AVOID LECTURING: use BRIEF INTERVENTION, NOT MORALISING"
    ]
   ],
   "back": {
-   "dx": "NON-ALCOHOLIC FATTY LIVER DISEASE — steatosis with mild steatohepatitis — on a background of dyslipidaemia and a sedentary, high-sugar diet, with the right upper quadrant pain needing its own explanation. The results explained: 'We checked your liver enzymes, which are chemicals that leak out of liver cells when the liver is irritated. Yours are up, but only mildly — less than twice what we expect — so there is inflammation, but not a severe one. We also checked the fat in your blood, cholesterol and triglycerides, and both are higher than we would like. When there is a lot of fat circulating, some of it is stored in the liver, and that stored fat causes the irritation. That condition is called fatty liver.' The reasons spoken: no alcohol at all, so the commonest cause is excluded · dyslipidaemia and a diet and activity pattern that produce it · a mild transaminase rise with AST below ALT, which is the fatty liver pattern · and the other causes excluded on history — no viral risk factors, no medications or supplements, no family history. Differentials: viral hepatitis B and C · drug-induced liver injury including over-the-counter, herbal and gym supplements · autoimmune hepatitis · haemochromatosis and wilson disease · alcohol, excluded but quantified · coeliac disease and thyroid disease as quiet causes of a mild rise · biliary disease · and malignancy kept in mind. For the pain, separately: gallstones and biliary colic, peptic ulcer disease, reflux, and musculoskeletal causes. The plan: hepatitis B and C serology, iron studies, autoimmune screen, fasting glucose or HbA1c, a full lipid profile, TSH, coeliac serology, FBE for platelets, and an abdominal ultrasound that looks for steatosis and for gallstones · staging with a non-invasive fibrosis score such as FIB-4, and transient elastography where available, because enzyme levels do not indicate fibrosis · cardiovascular risk assessed, because that is what kills people with fatty liver · and the lifestyle intervention that is the treatment — gradual weight loss of seven to ten percent, soft drinks out, a dietitian, 150 minutes of moderate activity a week, alcohol kept at none, and statin therapy for the lipids if indicated by risk, which is safe in fatty liver VERIFY. Review in six to twelve weeks with repeat LFTs, and safety-net for jaundice, abdominal swelling, bruising, black stools or confusion.",
+   "dx": [
+    "**VERSION B — FATTY LIVER DISEASE (non-alcoholic steatohepatitis).** A MILD transaminase rise with DYSLIPIDAEMIA and NO ALCOHOL, **after EVERY OTHER CAUSE HAS BEEN EXCLUDED.** **IT IS A DIAGNOSIS OF EXCLUSION AND BELONGS AT THE BOTTOM OF THE LIST, NOT THE TOP.**",
+    "**THE WHOLE APPROACH: A RESULT WITH NO COMPLAINT BECOMES A LIVER CASE — YOU MAKE THE ABNORMAL LFT THE COMPLAINT and run the standard blocks against it.**",
+    "**THE DISCRIMINATING ISSUE: QUOTE YOUR OWN NUMBERS BACK AS REASONS.** **Both diagnoses are GUESSABLE FROM THE STEM. What separates candidates is WHETHER THE REASONING IS SPOKEN.** **A PASS SAYS THREE THINGS: THE MAGNITUDE OF THE RISE AS A MULTIPLE OF THE UPPER LIMIT, THE AST:ALT RATIO, AND THE FACT THAT THE OTHER CAUSES HAVE BEEN ACTIVELY EXCLUDED. A FAIL NAMES THE DISEASE AND STOPS.**",
+    "**NAMING A DIAGNOSIS OF EXCLUSION, verbatim**: **‘Fatty liver disease is what we call a DIAGNOSIS OF EXCLUSION, so I want to be CLEAR ABOUT HOW I GOT THERE. I have ruled out CANCERS of the liver, gallbladder and pancreas; VIRAL infections of the liver; GALLSTONE disease; a SERIOUS DUCT INFECTION, BECAUSE YOU HAVE NO FEVER; and MEDICATIONS. YOU DO NOT DRINK AT ALL. What is LEFT is the MILD ENZYME RISE together with the RAISED CHOLESTEROL AND TRIGLYCERIDES, and that combination points to FAT STORED IN THE LIVER.’**",
+    "**CORRECTION — FATTY LIVER DOES NOT CAUSE ABDOMINAL PAIN.** **Version B pairs a PAIN complaint with a FATTY LIVER diagnosis, WHICH IS A WEAKNESS IN THE CASE DESIGN RATHER THAN A CLINICAL FACT.** If challenged: **‘That is correct, and I agree. Fatty liver disease is USUALLY ASYMPTOMATIC and is NOT A RECOGNISED CAUSE OF ABDOMINAL PAIN. So I would TREAT THE STEATOSIS ON ITS OWN MERITS, but I would CONTINUE TO LOOK FOR A SEPARATE EXPLANATION FOR THE PAIN — BILIARY DISEASE, PEPTIC ULCER DISEASE OR REFLUX — rather than assume the two findings are connected.’**",
+    "**ASK THE SPECIFIC QUESTION, NOT THE POLITE ONE. ‘HOW IS YOUR DIET?’ INVITES ‘HEALTHY AND BALANCED’ AND THE BLOCK SCORES NOTHING.** **The specific question SHOWS THE EXAMINER WHAT YOU ARE SCREENING FOR: in fatty liver ask about A TYPICAL DAY'S FOOD, SUGARY DRINKS AND TAKEAWAY; in iron deficiency ask about RED MEAT; in osteoporosis ask about DAIRY.** **Pressed for a typical day he gives: COFFEE AND A PASTRY, TAKEAWAY AT LUNCH, BIG DINNER LATE, TWO OR THREE SOFT DRINKS A DAY, NO EXERCISE — NO TIME.**",
+    "**QUANTIFY THE ALCOHOL EVEN WHEN THE ANSWER IS NONE — and in Version A the role-player DEFLECTS THE FIRST QUESTION LIGHTLY.** ‘I have a drink most nights — I own a restaurant, it goes with the job.’ **IF THE DOCTOR ACCEPTS THAT AND MOVES ON, THE BRIEF SAYS: DO NOT HELP THEM — MARK IT AS A FAIL.** **The specific follow-up — WHAT do you drink, HOW MUCH, HOW MANY NIGHTS, HOW LONG — is what yields ‘a bottle of wine, most nights, probably every night, for twenty years’.**",
+    "**CONVERT IT OUT LOUD, WITHOUT JUDGEMENT**: **‘Thank you for being straight with me, that helps a great deal. Just so we are working with the same picture: A BOTTLE OF WINE IS ABOUT SEVEN TO EIGHT STANDARD DRINKS, so that is ROUGHLY FIFTY IN A WEEK. The recommended maximum for a healthy adult is TEN A WEEK. I AM NOT SAYING THAT TO MAKE YOU FEEL BAD — IT IS DIRECTLY RELEVANT TO THE RESULT I AM ABOUT TO SHOW YOU.’**",
+    "**CAGE AND AUDIT-C — naming one of these and saying you would use it is a strong answer even without time to run it.** **CAGE: have you ever felt you should CUT DOWN · been ANNOYED by criticism · felt GUILTY about it · needed a drink in the morning (EYE-OPENER). TWO OR MORE POSITIVES SUGGEST PROBLEM DRINKING.** **AUDIT-C is the three-question screen used in Australian general practice: HOW OFTEN you drink, HOW MANY on a typical day, and HOW OFTEN you have SIX OR MORE on one occasion.**",
+    "**NOMENCLATURE, worth a sentence.** **Non-alcoholic fatty liver disease has been REDEFINED INTERNATIONALLY as METABOLIC DYSFUNCTION-ASSOCIATED STEATOTIC LIVER DISEASE (MASLD), with the inflammatory form termed MASH.** **Australian examiners will accept NAFLD, NASH or fatty liver disease; saying ‘FATTY LIVER DISEASE, ALSO CALLED NON-ALCOHOLIC STEATOHEPATITIS OR THE NEWER TERM MASLD’ is SAFE AND SHOWS CURRENCY.**"
+   ],
    "plan": [
     [
-     "0:00",
-     "Bridge from 'I'm here for my results' to the history: 'May I ask a few questions first, so the results make more sense when we get to them?'"
+     "0:00 → 0:40 — opening a station with no complaint",
+     "**THE BRIDGE THAT STOPS IT FEELING AWKWARD: ‘Thank you for coming in to discuss them. I DO have your results here, and I WILL go through them with you. BEFORE I DO, may I ask you a few questions SO THAT THE RESULTS MAKE MORE SENSE WHEN WE GET TO THEM? Then we will look at them together and talk about what they mean. Is that all right?’** **Candidates who sit down and START RECITING ENZYME VALUES LOOK MECHANICAL, and the approach-to-patient domain suffers BEFORE THE CLINICAL CONTENT EVER STARTS. Two sentences of bridging protects that domain AND BUYS YOU PERMISSION to take a history in a station that never asked for a complaint.**"
     ],
     [
-     "0:30",
-     "Liver symptoms and red flags: jaundice, itch, dark urine, pale stools, weight loss, appetite, lumps, tiredness, family history of bowel, liver, pancreatic or stomach cancer."
+     "0:40 → 1:10",
+     "**BLOCK 2 — SYMPTOMS OF LIVER DISEASE.** Any YELLOWING of skin or the whites of your eyes · any ITCHING · has your URINE GONE DARK, or your STOOLS PALE."
     ],
     [
-     "1:15",
-     "The pain characterised on its own — site, onset, character, relation to fatty meals, radiation, nocturnal, relation to food and posture — because it will need a separate explanation."
+     "1:10 → 1:40",
+     "**BLOCK 3 — RED FLAGS AND FAMILY HISTORY.** Weight loss without trying · change in appetite · lumps or bumps · unusually tired · **family history of cancer of the BOWEL, LIVER, PANCREAS OR STOMACH.**"
     ],
     [
-     "2:00",
-     "The alcohol question quantified even though the answer is none, then the risk-factor screen: antibiotics, transfusions, tattoos, injected drugs, travel, occupation and needle-stick, sexual history, medications including over-the-counter, herbal and gym supplements, operations, fever."
+     "1:40 → 2:10 ★ HARD RULE",
+     "**BLOCK 4 — ALCOHOL QUANTIFIED IN STANDARD DRINKS BY 2:10.** Do you drink · how much and how long at that level · what do you drink and what SIZE GLASS · roughly how many NIGHTS a week. **Then CAGE if time.**"
     ],
     [
-     "3:00",
-     "The lifestyle block, demanding a typical day — what he actually eats and drinks from morning to night, sugary drinks, takeaway, exercise, weight trend, family history of diabetes and heart disease, snoring."
+     "2:10 → 3:00",
+     "**BLOCK 4 continued — the rest of ABP FIT NO SEX.** Recent ANTIBIOTICS · BLOOD — transfusions, tattoos, piercings, injected drugs · FOOD — unusual food · TRAVEL · OCCUPATION and any chance of a NEEDLE-STICK · SEXUAL history and condom use · **regular medications INCLUDING OVER-THE-COUNTER, HERBAL OR GYM SUPPLEMENTS.**"
     ],
     [
-     "4:00",
-     "The examination requested by name (see findings)."
+     "3:00 → 3:20",
+     "**BLOCKS 5 TO 7 — GALLBLADDER, SURGERY, FEVER.** ‘Have you ever had PAIN AFTER A LARGE FATTY MEAL?’ · any operations · **‘and any FEVER or shaking chills?’** — **FEVER CLOSES EVERY LIVER BLOCK, NO EXCEPTIONS.**"
     ],
     [
-     "5:00",
-     "Explain the results pad by pad, name fatty liver with its reasons, give the differentials for the liver and separately for the pain, then the investigations, the lifestyle treatment, review and safety-net."
+     "3:20 → 4:00 ★ Version B only",
+     "**BLOCK 8 — LIFESTYLE, and this is the only positive ground in Version B.** A typical day's food, from morning to night · sugary drinks · takeaway · **and do you exercise regularly.**"
+    ],
+    [
+     "4:00 — HARD RULE: HISTORY STOPS",
+     "**Request the examination as the seven-step structure.**"
+    ],
+    [
+     "5:00 → 6:20 — explain the results, NINETY SECONDS MAXIMUM",
+     "**VERSION B: ‘We checked your LIVER ENZYMES, which are CHEMICALS THAT LEAK OUT OF LIVER CELLS WHEN THE LIVER IS IRRITATED. Yours are up, BUT ONLY MILDLY — LESS THAN TWICE WHAT WE EXPECT — and that tells me there is SOME INFLAMMATION in the liver, BUT NOT A SEVERE ONE. The SECOND thing we checked was THE FAT IN YOUR BLOOD. There are two main types, CHOLESTEROL AND TRIGLYCERIDES, and BOTH are higher than we would like. WHEN THERE IS A LOT OF FAT CIRCULATING, SOME OF IT GETS STORED IN THE LIVER, AND THAT STORED FAT CAUSES THE IRRITATION WE ARE SEEING. That condition is called FATTY LIVER.’**"
+    ],
+    [
+     "6:20 → 7:00 — the diagnosis WITH THE NUMBERS AS REASONS",
+     "**VERSION A, for comparison: ‘I am making this diagnosis for THREE reasons. FIRST, you are drinking about a BOTTLE OF WINE A NIGHT, which is roughly SEVEN TO EIGHT STANDARD DRINKS, so around FIFTY IN A WEEK — ABOUT FIVE TIMES THE RECOMMENDED MAXIMUM — and you have done so for TWENTY YEARS. SECOND, I HAVE RULED OUT THE OTHER CAUSES: no viral risk factors, no medications, no gallbladder symptoms, no travel and no family history. THIRD, THE PATTERN OF THE BLOOD TEST ITSELF FITS: the enzymes are ONLY MILDLY RAISED, WHICH IS WHAT ALCOHOL DOES, and THE RATIO BETWEEN THE TWO IS ABOVE TWO, WHICH IS CHARACTERISTIC. A VIRAL HEPATITIS WOULD HAVE GIVEN A FAR LARGER RISE.’**"
+    ],
+    [
+     "7:00 → 8:00",
+     "**Differentials BY BUCKET with the exclusion reasoning, then the plan and safety-net.** **The safety-net, verbatim: ‘Come back sooner if you TURN YELLOW, if your TUMMY SWELLS, if you BRUISE OR BLEED EASILY, if you VOMIT BLOOD OR PASS BLACK STOOLS, or if you BECOME CONFUSED.’**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the alcohol version is decided by a ratio and a number; this one is decided by the lifestyle block, which only exists if you refuse 'healthy and balanced' and ask for a typical day",
-   "ask": [
-    "The bridge: 'May I ask a few questions first, so the results make more sense?'",
-    "The lifestyle question that actually scores: 'Can you describe your diet on a typical day — what you actually eat and drink from morning to night? Any sugary drinks or takeaway? And do you exercise regularly?'",
-    "The explanation: 'When there is a lot of fat circulating, some of it is stored in the liver, and that stored fat causes the irritation.'",
-    "The separation that answers the examiner's challenge: 'Fatty liver is usually asymptomatic and is not a recognised cause of abdominal pain — so I would treat the steatosis on its own merits and keep looking for a separate explanation for the pain.'",
-    "Examiner challenges: 'Fatty liver does not cause abdominal pain — explain yourself' · 'Why did you not ask about lifestyle in the alcohol version?' — because there the ratio and the drinking had already identified a cause · and 'How would you stage this patient?' — FIB-4 and elastography, because enzymes do not indicate fibrosis."
-   ],
    "pefe": [
-    "Role-player: a 35-year-old man with some right upper quadrant discomfort who has come back for his blood results. He drinks no alcohol at all and says so plainly. No viral risk factors, no medications or supplements, no family history of liver disease or cancer. He describes his diet as 'Pretty healthy and balanced' and only gives the pastry, the takeaway, the late dinner, the soft drinks and the absent exercise if pressed for a typical day.",
-    "His questions: 'Is my liver damaged?' · 'Is the pain from the fatty liver?' · and 'Do I need tablets for the cholesterol?' He closes down if lectured about his weight or diet.",
-    "Mark them against these: bridged from results to questions · asked liver symptoms and red flags · characterised the pain separately · quantified alcohol despite the answer · ran the full risk-factor screen including supplements · refused 'Healthy and balanced' and got a typical day · asked exercise and weight trend · requested stigmata, BMI, hepatomegaly, splenomegaly, shifting dullness, Murphy's sign and dipstick by name · explained the results in plain words · named fatty liver with reasons including the ratio · gave differentials for the liver and separately for the pain · ordered the exclusion bloods and an ultrasound · mentioned staging and cardiovascular risk · gave a concrete lifestyle plan without moralising · and reviewed and safety-netted.",
-    "The answer that scores nothing — 'My diet is pretty healthy and balanced, doctor.' Accept that and the block is empty. Press for a typical day and you get coffee and a pastry, takeaway at lunch, a big late dinner, two or three soft drinks a day, and no exercise — 'No time'",
-    "The pain, held separate — Fatty liver is usually asymptomatic and is not a recognised cause of abdominal pain. Treat the steatosis on its own merits and keep looking for the pain — biliary disease, peptic ulcer, reflux — rather than assuming the two findings are connected",
-    "What to ask the examiner for, by name — General appearance — jaundice, cachexia, scratch marks, oedema, stigmata of chronic liver disease such as spider naevi and palmar erythema · vital signs with temperature · BMI and waist circumference · abdomen for distension, scars, tenderness, hepatomegaly and splenomegaly, shifting dullness · Murphy's sign given the pain · urine dipstick for bilirubin"
+    "**MANAGEMENT — VERSION B, FATTY LIVER.** **WEIGHT LOSS IS THE SINGLE MOST EFFECTIVE INTERVENTION — a MODEST SUSTAINED reduction improves STEATOSIS, and a LARGER one can improve INFLAMMATION** · **EXERCISE: regular moderate activity MOST DAYS, INDEPENDENT OF WEIGHT CHANGE** · **DIET: reduce SUGAR-SWEETENED DRINKS, REFINED CARBOHYDRATE and alcohol; MEDITERRANEAN-STYLE pattern** · **TREAT THE METABOLIC DRIVERS: lipids, glucose, blood pressure** · **AVOID HEPATOTOXINS; VACCINATE AGAINST HEPATITIS A AND B if non-immune** · **RE-STAGE FIBROSIS PERIODICALLY rather than repeating enzymes alone.**",
+    "**MANAGEMENT — VERSION A, ALCOHOL.** **BRIEF INTERVENTION: FEEDBACK, RESPONSIBILITY, ADVICE, MENU OF OPTIONS, EMPATHY, SELF-EFFICACY. Agree a SPECIFIC goal.** **ABSTINENCE IS THE TARGET, BUT A HEAVY LONG-TERM DRINKER SHOULD NOT STOP ABRUPTLY WITHOUT SUPPORT — WITHDRAWAL CAN BE DANGEROUS.** **THIAMINE supplementation** VERIFY dose and route against Therapeutic Guidelines · **screen and treat comorbidity: nutrition, mood, sleep, blood pressure** · **vaccinate against hepatitis A and B** · **FOLLOW UP THE LFT TO DEMONSTRATE IMPROVEMENT, WHICH IS ITSELF MOTIVATING.**",
+    "**The alcohol conversation, verbatim**: **‘The most useful thing I can offer today is HELP TO STOP. Because you have been drinking heavily for a long time, I DO NOT WANT YOU TO STOP SUDDENLY ON YOUR OWN — WITHDRAWAL CAN BE DANGEROUS. Let us plan it TOGETHER, and I can involve a SERVICE THAT SUPPORTS PEOPLE THROUGH IT. I will start you on THIAMINE, arrange the blood tests we discussed and an ULTRASOUND, and see you again in A FORTNIGHT. HOW DO YOU FEEL ABOUT WHAT WE HAVE DISCUSSED?’** **The brief says: IF THE DOCTOR MORALISES, BECOMES STERN OR SAYS ‘YOU NEED TO STOP DRINKING’ WITHOUT ASKING HOW HE FEELS ABOUT IT, HE BECOMES DEFENSIVE AND GIVES ONE-WORD ANSWERS.**",
+    "**The hidden agenda in Version A: HIS WIFE HAS BEEN TELLING HIM FOR YEARS THAT HE DRINKS TOO MUCH AND HE HAS BEEN QUIETLY WORRIED SHE IS RIGHT.** **HE WILL NOT SAY THIS UNLESS THE DOCTOR IS NON-JUDGEMENTAL, OR ASKS WHAT HE IS WORRIED ABOUT.** **He starts relaxed and slightly impatient, BECOMES GENUINELY WORRIED ONCE THE WORD CIRRHOSIS IS USED, and asks once: ‘IS MY LIVER DAMAGED?’**",
+    "**Answering ‘is my liver damaged?’ honestly and without catastrophising**: **‘It is a WARNING RATHER THAN A CATASTROPHE. If the inflammation continues over years it leads to SCARRING — CIRRHOSIS — and then the liver STOPS WORKING PROPERLY. At the stage you are at, IT IS LARGELY REVERSIBLE IF THE ALCOHOL STOPS. That is GENUINELY GOOD NEWS.’**",
+    "**Examiner challenge — ‘why did you not ask about lifestyle in Version A?’** → **‘Because FATTY LIVER IS A DIAGNOSIS OF EXCLUSION AND SITS AT THE BOTTOM OF THE LIST. In Version A the ALCOHOL HISTORY AND THE AST:ALT RATIO ABOVE TWO ALREADY IDENTIFIED A CAUSE, so lifestyle WOULD NOT CHANGE MY MANAGEMENT. In Version B there is NO ALCOHOL and there is DYSLIPIDAEMIA IN THE STEM, so lifestyle becomes THE ONLY POSITIVE GROUND and I would spend time on it.’**",
+    "**Examiner challenge — ‘how would you stage this patient?’** → **‘ENZYME LEVELS DO NOT INDICATE FIBROSIS, so I would use a NON-INVASIVE SCORE such as FIB-4, which combines AGE, TRANSAMINASES AND PLATELET COUNT, and where available TRANSIENT ELASTOGRAPHY. Persistent LOW PLATELETS, LOW ALBUMIN, A RISING INR OR SPLENOMEGALY would suggest ESTABLISHED CIRRHOSIS and would change my follow-up to SURVEILLANCE FOR VARICES AND HEPATOCELLULAR CARCINOMA.’**",
+    "**Other practice stems worth running.** **28M BODYBUILDER, AST 400, ALT 120, CREATINE KINASE VERY HIGH → MUSCLE, NOT LIVER — supplements and training. A RAISED AST CAN COME FROM MUSCLE; CHECK CK IF THE STORY FITS.** **52M, mild LFT rise, FERRITIN VERY HIGH, TRANSFERRIN SATURATION 70%, DIABETES → HAEMOCHROMATOSIS.** **45F, mild LFT rise, ANA POSITIVE, RAISED IMMUNOGLOBULINS → AUTOIMMUNE HEPATITIS.** **60M, mild LFT rise, LOW PLATELETS, LOW ALBUMIN, SPLENOMEGALY → ESTABLISHED CIRRHOSIS, NOT ‘JUST FATTY LIVER’.**",
+    "**The 40-second model answer, Version A**: **‘Positives: approximately ONE BOTTLE OF WINE NIGHTLY FOR TWENTY YEARS, around FIFTY STANDARD DRINKS A WEEK; a MILD TRANSAMINASE RISE WITH AN AST:ALT RATIO ABOVE TWO; and a RAISED GGT. Negatives: no jaundice, itch, dark urine or pale stools; no weight loss or family history of cancer; no antibiotics, transfusions, tattoos, injected drugs, travel or sexual risk; no fatty-meal pain, no surgery, NO FEVER; and a COMPLETELY NORMAL EXAMINATION WITH NO STIGMATA OF CHRONIC LIVER DISEASE AND NO ASCITES. Most likely ALCOHOLIC HEPATITIS. Plan: repeat and extend the liver panel with ALBUMIN AND INR, viral serology, iron studies, autoimmune screen, metabolic screen, upper abdominal ultrasound, and FIBROSIS STAGING WITH FIB-4. I would ESCALATE for JAUNDICE, ASCITES, ENCEPHALOPATHY, BLEEDING OR A RISING INR.’**",
+    "SA — **alcohol and other drug support through DRUG AND ALCOHOL SERVICES SOUTH AUSTRALIA and the ALCOHOL AND DRUG INFORMATION SERVICE telephone line** VERIFY current number · **hepatology referral for a country patient goes to the ROYAL ADELAIDE HOSPITAL or FLINDERS MEDICAL CENTRE, with PATS for travel and COUNTRY HEALTH CONNECT for local follow-up** · **a GP MANAGEMENT PLAN AND TEAM CARE ARRANGEMENT give access to a DIETITIAN AND EXERCISE PHYSIOLOGIST — directly relevant in Version B** · **for Aboriginal and Torres Strait Islander patients involve the local ACCHS and check CLOSING THE GAP PBS registration** · **interpreter: TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Accepting 'my diet is pretty healthy and balanced' and moving on — the lifestyle block scores nothing",
-    "★ Attributing the abdominal pain to fatty liver instead of looking for a separate cause",
-    "★ Not quantifying alcohol because the stem says none, or not excluding the viral, drug, autoimmune and metabolic causes before settling on a diagnosis of exclusion",
-    "★ Reading the results as numbers rather than explaining what the enzymes and the lipids mean",
-    "Skipping the examination request for stigmata and organomegaly; no ultrasound; no staging; ignoring cardiovascular risk; moralising about weight so that he closes down"
-   ],
-   "numbers": [
-    "Mild is under 5 times the upper limit, marked is over 10 · here under twice the limit · AST:ALT above 2 favours alcohol, below 1 favours fatty liver · triglycerides should be under 1.7 mmol/L and cholesterol under 5.5 · NHMRC alcohol maximum 10 standard drinks a week and 4 in a day",
-    "Staging with FIB-4 from age, transaminases and platelets, and transient elastography where available VERIFY · treatment is 7-10% gradual weight loss, sugary drinks out, 150 minutes of moderate activity a week, and statins if indicated by cardiovascular risk, which are safe in fatty liver VERIFY · review with repeat LFTs at 6-12 weeks · TIS 131 450 · VERIFY all"
+   "ddx": [
+    [
+     "**Fatty liver disease (NAFLD / NASH / MASLD) — the Version B answer**",
+     "**MILD transaminase rise, DYSLIPIDAEMIA, raised BMI and waist, NO ALCOHOL; usually ASYMPTOMATIC**",
+     "**A TYPICAL DAY'S FOOD, sugary drinks, takeaway, exercise; BMI and waist**",
+     "**A DIAGNOSIS OF EXCLUSION — say so. Ultrasound (LOSS OF HEPATORENAL CONTRAST); FIB-4 and elastography. WEIGHT LOSS IS THE MOST EFFECTIVE TREATMENT.** Routine"
+    ],
+    [
+     "**Alcoholic hepatitis — the Version A answer**",
+     "**MILD rise with AST:ALT ABOVE 2 and a RAISED GGT; heavy long-term intake**",
+     "**QUANTIFY: type, amount, frequency, DURATION — then CONVERT TO STANDARD DRINKS**",
+     "**BRIEF INTERVENTION, SUPPORTED withdrawal, THIAMINE, vaccinate, follow-up LFT. LARGELY REVERSIBLE AT THIS STAGE.** Routine"
+    ],
+    [
+     "Viral hepatitis A, B, C · EBV · CMV",
+     "**A FAR LARGER transaminase rise than either version shows**; travel, transfusions, tattoos, injected drugs, sexual risk",
+     "The full ABP FIT NO SEX block",
+     "**HBsAg and HCV antibody; hepatitis A IgM; EBV and CMV serology.** Soon"
+    ],
+    [
+     "Drug-induced liver injury",
+     "**Antibiotics, PARACETAMOL, statins, methotrexate, HERBAL AND BODYBUILDING SUPPLEMENTS**",
+     "**Medication history INCLUDING OVER-THE-COUNTER, HERBAL AND GYM SUPPLEMENTS — asked by name**",
+     "Withdraw the agent; recheck. Soon"
+    ],
+    [
+     "**Gallstone disease · biliary obstruction · cholangitis**",
+     "**PAIN AFTER A LARGE FATTY MEAL; jaundice with pale stools and dark urine; FEVER AND RIGORS in cholangitis**",
+     "**The fatty-meal question AND THE FEVER QUESTION — fever closes every liver block**",
+     "Ultrasound; LFT pattern (ALP and bilirubin rather than transaminases). **Cholangitis is urgent.** Urgent if febrile"
+    ],
+    [
+     "Hepatocellular carcinoma · cholangiocarcinoma · pancreatic carcinoma · metastases",
+     "**WEIGHT LOSS, appetite change, lumps, fatigue; family history of bowel, liver, pancreatic or stomach cancer**",
+     "The red-flag block",
+     "Ultrasound then CT; AFP if HCC suspected. Urgent"
+    ],
+    [
+     "**Haemochromatosis**",
+     "**Mild LFT rise with DIABETES, arthropathy, fatigue, skin pigmentation**",
+     "Family history; **FERRITIN AND TRANSFERRIN SATURATION**",
+     "**Iron studies then HFE genotyping. TRANSFERRIN SATURATION 70% IS THE GIVEAWAY.** Soon"
+    ],
+    [
+     "**Autoimmune hepatitis · primary biliary cholangitis**",
+     "**Female, other autoimmune disease; ANA POSITIVE, RAISED IMMUNOGLOBULINS** · PBC: ITCH and cholestatic pattern",
+     "Autoimmune history, itch, xanthelasma",
+     "**ANA, smooth muscle antibody, ANTI-MITOCHONDRIAL ANTIBODY, immunoglobulins.** Soon"
+    ],
+    [
+     "Wilson disease · alpha-1 antitrypsin deficiency",
+     "**UNDER 40**; neuropsychiatric features, Kayser–Fleischer rings · early emphysema",
+     "Age; family history; neurological symptoms",
+     "**CAERULOPLASMIN IF UNDER 40**; alpha-1 antitrypsin level. Soon"
+    ],
+    [
+     "Coeliac disease · thyroid disease",
+     "Bloating, diarrhoea, iron deficiency · cold intolerance, weight change, fatigue",
+     "GI and thyroid symptoms",
+     "**COELIAC SEROLOGY; TFTs — both are cheap and on the same form.** Routine"
+    ],
+    [
+     "**Muscle, not liver**",
+     "**A raised AST with a NORMAL or disproportionately low ALT; bodybuilder, intense training, supplements**",
+     "**Training history and supplements; muscle pain**",
+     "**CREATINE KINASE. CHECK IT IF THE STORY FITS — AST IS NOT LIVER-SPECIFIC.** Routine"
+    ],
+    [
+     "**Established cirrhosis**",
+     "**LOW PLATELETS, LOW ALBUMIN, RAISED INR, SPLENOMEGALY** — with only a MILD enzyme rise",
+     "**Platelets and albumin on the panel; spleen on examination**",
+     "**Do NOT call this ‘just fatty liver’. FIB-4 and elastography; surveillance for VARICES AND HCC.** Urgent"
+    ]
    ]
   },
   "source": "Deranged_LFT_Alcohol_or_Fat_2_Case_Tasks_Script_Notability.pdf (VERSION B — a 35-year-old man with right upper quadrant pain, mildly raised transaminases, raised lipids and no alcohol: non-alcoholic fatty liver disease, decided by a lifestyle block that only exists if you ask for a typical day, with the pain held as a separate problem. Carded separately from MED-155, which is Version A, James Petrou with alcoholic hepatitis)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Liver › Deranged_LFT_Alcohol_or_Fat_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Not quantifying alcohol, or getting the arithmetic wrong — 'do you drink?' 'a drink most nights, I own a restaurant' and moving on is a fail (he does not help you); 'what do you drink, roughly how much on those nights, and how many nights a week? and how long at that level?' → 'a bottle of wine; most nights; probably every night, if I'm honest; twenty years'; convert it out loud without judgement: 'a bottle of wine is about seven to eight standard drinks, so that's roughly fifty in a week; the recommended maximum for a healthy adult is ten a week and four in a day; I'm not saying that to make you feel bad — it's directly relevant to the result I'm about to show you' (a 750 mL bottle at 13% is about 7.7 standard drinks, not 12–14; a standard drink is 10 g); Version B is the reverse trap — 'my diet is pretty healthy and balanced' scores nothing if accepted; 'describe what you actually eat and drink from morning to night' → coffee and a pastry, takeaway lunch, a big late dinner, two or three soft drinks a day, no exercise (★)",
-   "FAIL — Moralising, or 'you need to stop drinking' without asking how he feels about it — he closes down and gives one-word answers; non-judgemental, specific follow-up gets honesty; the hidden agenda ('my wife says I drink too much — is that what this is?') surfaces only if you are non-judgemental or ask what he is worried about; the brief intervention: 'the most useful thing I can offer today is help to stop; because you've been drinking heavily for a long time, I don't want you to stop suddenly on your own — withdrawal can be dangerous; let's plan it together, and I can involve a service that supports people through it'; thiamine; 'how do you feel about what we've discussed?' (★)",
-   "FAIL — Naming the diagnosis without the three spoken reasons including magnitude and ratio — Version A (AST ~95, ALT ~40–50, GGT up, ALP and bilirubin near normal): 'the amount and duration — about fifty standard drinks a week for twenty years; I've ruled out the other causes — no viral risk factors, no medications, no gallbladder symptoms, no travel, no family history; and the pattern of the test itself: a mild rise, which is what alcohol does, with a ratio above two — a viral hepatitis would have given a far larger rise' (mild = under 5× the limit, marked = over 10×; AST:ALT >2 favours alcohol; ratio here ~2.4); Version B (35, RUQ pain, AST and ALT under twice the limit, raised triglycerides and cholesterol, no alcohol) → fatty liver / non-alcoholic steatohepatitis, and the extra task to explain the results: 'we measured your liver enzymes — chemicals that leak out of liver cells when the liver is irritated; yours are up, but only mildly — less than twice what we expect — so there is inflammation, but not a severe one; we also checked the fat in your blood — cholesterol and triglycerides — and both are higher than we'd like; when there's a lot of fat circulating, some is stored in the liver, and that stored fat causes the irritation' (★)",
-   "FAIL — Assuming fatty liver explains the abdominal pain — 'fatty liver does not cause abdominal pain; explain yourself' → 'correct, and I agree; fatty liver disease is usually asymptomatic and not a recognised cause of abdominal pain; I'd treat the steatosis on its own merits but continue to look for a separate explanation for the pain — biliary disease, peptic ulcer disease or reflux — rather than assume the two findings are connected'; 'why no lifestyle history in Version A?' → fatty liver is a diagnosis of exclusion at the bottom of the list; the alcohol history and the ratio already identified a cause; in Version B there is no alcohol and dyslipidaemia is in the stem, so lifestyle becomes the only positive ground (★)",
-   "DO — Bridge a station with no complaint ('I do have your results here and I will go through them with you; before I do, may I ask a few questions so the results make more sense when we get to them?'); liver symptoms and red flags (yellowing, itching, dark urine, pale stools; weight loss, appetite, lumps, tiredness; family history of bowel, liver, pancreatic or stomach cancer); the alcohol block; the rest of the risk factors then fever — ABP FIT NO SEX (antibiotics, blood transfusion, piercings/tattoos, food, IV drugs, travel, needle-stick/occupation, sexual history and condoms, medications incl. over-the-counter, herbal and gym supplements), pain after fatty meals, operations, fever or chills; the examination requested by name — general appearance (jaundice, cachexia, scratch marks, oedema, stigmata of chronic liver disease — spider naevi, palmar erythema), temperature, abdomen (distension, scars, tenderness, masses, hepatomegaly, splenomegaly, shifting dullness, bowel sounds), a dipstick for bilirubin; investigations — hepatitis B and C serology, iron studies, an autoimmune screen, lipids and glucose, an ultrasound; staging if asked — enzyme levels don't indicate fibrosis: FIB-4 (age, transaminases, platelets) and transient elastography; low platelets, low albumin, a rising INR or splenomegaly suggest cirrhosis and change follow-up to variceal and HCC surveillance",
-   "SAY — 'We measured your liver enzymes — chemicals that leak out of liver cells when the liver is irritated; yours are up, but only mildly; there's a second thing I look at: the relationship between two of those enzymes; in your case one is more than twice the other, and that pattern is very characteristic of alcohol; the condition is alcoholic hepatitis — inflammation of the liver caused by drinking; in the long run, if the inflammation continues, it leads to scarring — cirrhosis — and at that point the liver stops working properly'; 'is my liver damaged?' → 'a warning rather than a catastrophe; at the stage you're at it is largely reversible if the alcohol stops — that's genuinely good news'; the differentials with a test for each ('fatty liver from cholesterol and weight can look identical; viral hepatitis B and C; medications incl. over-the-counter and herbal; autoimmune; inherited — iron overload or a copper problem; gallstone disease and blockage of the drainage tubes; and I always keep cancers of the liver, gallbladder and pancreas in mind'); safety net ('turn yellow, tummy swells, bruise or bleed easily, vomit blood or black stools, confused'); review in a fortnight; a summary — 'your liver is inflamed, alcohol is the most likely cause, we'll check for the others, and the plan is supported reduction with review in two weeks'; Version B plan — diet and exercise specifics, weight, lipids and glucose, ultrasound, cardiovascular risk"
-  ]
+   "FAIL — Not quantifying the alcohol. ‘Do you drink?’ ‘Yes.’ Moves on.",
+   "FAIL — Naming the disease without the numbers. ‘You have fatty liver.’ Full stop.",
+   "FAIL — Diagnosing fatty liver first, at two minutes, with nothing excluded.",
+   "FAIL — Accepting ‘my diet is healthy and balanced’; or forgetting the fever question; or advising abrupt cessation without support.",
+   "ASK — Can you describe your diet on a typical day — what you actually eat and drink from morning to night? Any sugary drinks or takeaway?",
+   "ASK — What do you drink, roughly how much, how many nights a week — and how long have you been drinking at that level?"
+  ],
+  "v2": true
  },
  {
   "id": "MED-241",
