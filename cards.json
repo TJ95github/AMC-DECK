@@ -32762,9 +32762,8 @@
  {
   "id": "MED-131",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED, Wallaroo Hospital (MM5) — no on-site endoscopy. No vital signs in the stem: ask for them in one sentence, state she is stable, then take the history (the mirror image of the chronic indigestion station — acuity decides). Four lines decide the station: vitals before beginning; 'how many times did you vomit?'; 'any nosebleeds? did you cough up any blood?'; 'are you on any blood thinners?' asked SEPARATELY from the general medication question.",
   "stem": [
    "Margaret Doyle, 72, has vomited blood. She arrived with her partner, who is in the waiting room; both are frightened. No vital signs are given."
   ],
@@ -32773,87 +32772,213 @@
    "Explain your most likely diagnosis, with your reasons, to Margaret",
    "Give your differential diagnoses"
   ],
-  "time": "8 min. ★ 'Before I begin, could I have her BP, pulse, RR and sats — and is she alert and oriented?' → 118/72, 92, 16, 97%, alert → 'she is haemodynamically stable, so I'll proceed' · intro, 'what has happened?' · 'that would frighten anybody — you did exactly the right thing' · ★ five boxes: timing + first ever · character (fresh bright red vs dark, clots) · ★ volume with a scale (streaks / drops / tablespoon / cupful / more) · ★ vomit count + retching first? (once — no repeated retching) · ★ source: nosebleeds? coughed it up? · stability symptoms: dizzy, faint, tired, SOB · ★ six groups: cancers — weight loss (kg/period/intent), appetite, lumps, tiredness, ★ dysphagia/odynophagia, abdominal pain, ★ dark/black stools · ulcer/reflux — heartburn, ★ NSAIDs/aspirin (how much, how long), smoking, alcohol, spicy · liver — jaundice, itch, dark urine/pale stools, swelling, confusion, hepatitis · bleeding — bruising, nosebleeds, gums, FHx · ★ 'I want to ask this separately: any blood thinners — warfarin, apixaban, rivaroxaban, clopidogrel, aspirin?' · PMHx/ops/FHx (sister bowel cancer) · concerns · dx with 'concerning features that raise the possibility of a gastric cancer — not confirmed', reasons in two halves · DDx argued · plan: fasted, IV, bloods, PPI, transfer, stop the Nurofen, safety-net, bring the partner in.",
+  "findings": [
+   [
+    "CONFIRM STABILITY BEFORE YOU SIT — THIS IS THE STATION WHERE IT IS COMPULSORY",
+    "'BEFORE I BEGIN, COULD I HAVE HER BLOOD PRESSURE, PULSE, RESPIRATORY RATE AND OXYGEN SATURATION — AND IS SHE ALERT AND ORIENTED?' → BP 118/72 · P 92 REG · RR 16 · SpO2 97% RA · ALERT. SAY ALOUD: 'SHE IS HAEMODYNAMICALLY STABLE, SO I'LL PROCEED WITH THE HISTORY.' VOMITING BLOOD IS POTENTIALLY LIFE-THREATENING; SIX MONTHS OF INDIGESTION IS NOT"
+   ],
+   [
+    "'I VOMITED BLOOD' IS TWO SYMPTOMS FROM AN UNVERIFIED SOURCE",
+    "SPLIT THE BLOOD FROM THE VOMITING. COUNT THE VOMITS. CLARIFY NOSE, LUNG OR STOMACH BEFORE YOU BUILD A DIFFERENTIAL LIST. Candidates who take the label at face value spend six minutes on a differential for THE WRONG SYMPTOM"
+   ],
+   [
+    "CLARIFY THE SOURCE — two questions, ten seconds",
+    "'HAVE YOU HAD ANY NOSEBLEEDS RECENTLY, OR THIS MORNING?' — A POSTERIOR NOSEBLEED DRAINS DOWN THE THROAT, IS SWALLOWED, AND COMES BACK UP AS 'VOMITED BLOOD'. 'DID YOU COUGH UP ANY BLOOD, AS OPPOSED TO VOMITING IT?' — haemoptysis is coughed, frothy, mixed with sputum"
+   ],
+   [
+    "THE VOMIT COUNT RULES MALLORY-WEISS IN OR OUT",
+    "'HOW MANY TIMES DID YOU VOMIT? DID YOU FEEL SICK OR RETCH FIRST, AND THEN SEE BLOOD — OR WAS IT BLOOD FROM THE VERY FIRST VOMIT?' → 'JUST THE ONCE.' A SINGLE VOMIT ESSENTIALLY EXCLUDES IT. SAY SO WHEN YOU LIST DIFFERENTIALS — THAT IS A REASONING MARK"
+   ],
+   [
+    "CHARACTER AND VOLUME — give her the scale",
+    "'WAS IT FRESH, BRIGHT RED, OR DARK? ANY CLOTS? AND ROUGHLY HOW MUCH — JUST STREAKS, A FEW DROPS, OR A LARGE AMOUNT?' Patients cannot estimate a volume; the scale gets a usable answer. → FRESH RED, NO CLOTS, MODERATE"
+   ],
+   [
+    "WHAT SHE GIVES ON QUESTIONING",
+    "FIRST EPISODE EVER · WEIGHT LOSS · APPETITE LOSS · TIRED · DARK STOOLS in most recalls · CHRONIC IBUPROFEN FOR ARTHRITIS · CURRENT SMOKER · DAILY ALCOHOL · NO DYSPHAGIA. THE 'NO' TO DYSPHAGIA IS WHAT LETS YOU ARGUE OESOPHAGEAL CANCER DOWN TO THIRD"
+   ],
+   [
+    "THE MEDICATION QUESTION IS ASKED TWICE, DELIBERATELY",
+    "FIRST — 'ARE YOU TAKING ANY MEDICATIONS AT ALL?' SECOND, SEPARATELY — 'I WANT TO ASK THIS ONE SEPARATELY: ARE YOU ON ANY BLOOD THINNERS — WARFARIN, APIXABAN, RIVAROXABAN, CLOPIDOGREL, OR ASPIRIN?' PATIENTS ROUTINELY DO NOT THINK OF THESE AS 'MEDICATIONS'. IN A BLEEDING 72-YEAR-OLD, MISSING ONE IS A SAFETY FAILURE"
+   ],
+   [
+    "THE LIVER QUESTIONS — for varices",
+    "'ANY YELLOWING OF YOUR EYES OR SKIN? ANY ITCHING? URINE DARK OR STOOLS PALE? ANY SWELLING OF YOUR TUMMY OR LEGS? ANY CONFUSION? EVER TOLD YOU HAVE LIVER PROBLEMS OR HEPATITIS?' VARICES NAMED WITH NO QUESTIONS ASKED TO SUPPORT OR EXCLUDE THEM IS A LISTED FAIL"
+   ],
+   [
+    "THE STABILITY SYMPTOMS — history or resuscitation?",
+    "'HAVE YOU FELT DIZZY OR LIGHT-HEADED? FAINTED OR NEARLY FAINTED? MORE TIRED OR BREATHLESS THAN USUAL? HEART RACING?' If she says yes to fainting or looks unwell, STOP THE HISTORY, TELL THE EXAMINER, AND ESCALATE"
+   ],
+   [
+    "THE PATTERN AMC KEEPS USING",
+    "ABDOMINAL PAIN → PEPTIC ULCER · INDIGESTION → GASTRIC CANCER ON AN ULCER · DYSPHAGIA → OESOPHAGEAL CANCER · HAEMATEMESIS → GASTRIC CANCER ON AN ULCER · IRON-DEFICIENCY ANAEMIA → GASTRIC CANCER ON AN ULCER. THE RECURRING CONCEPT IS AN ULCER THAT HAS BECOME MALIGNANT, UNMASKED BY RED FLAGS"
+   ]
+  ],
+  "findingsLabel": "Two symptoms from an unverified source — split, count, clarify, and ask about blood thinners twice",
+  "must": [
+   "FAIL — Not confirming haemodynamic stability before starting the history.",
+   "FAIL — Never asking how many times she vomited.",
+   "FAIL — Missing anticoagulants: asking only the general medication question.",
+   "FAIL — Turning it into a resuscitation station: two minutes of ABC, history never completed.",
+   "ASK — Any nosebleed this morning? Did you cough it up or vomit it?",
+   "ASK — Are you on any blood thinners — warfarin, apixaban, clopidogrel, aspirin?"
+  ],
   "back": {
-   "dx": "Gastric cancer on the base of a peptic ulcer (concerning features, not confirmed) — one episode of ~half a cup of bright red haematemesis two hours ago after breakfast, first ever, no repeated retching, no epistaxis/haemoptysis; light-headed since; on the background: 5–6 kg unintentional loss over 2–3 months, poor appetite, exhausted for weeks, gnawing epigastric ache for months, very dark stools, some heartburn, NO dysphagia; Nurofen 2–3/day for years for arthritis (bought OTC — only revealed if asked about anti-inflammatories/painkillers), 10 cigarettes/day, two sherries nightly, spicy food; no liver features, no bleeding tendency, no anticoagulants. Two halves: ulcer risk factors (NSAID, smoking, alcohol) + red flags (weight loss, appetite, tiredness, melaena). #2 benign PUD; #3 oesophageal cancer — argued down on no dysphagia; then oesophagitis, varices (no liver features), Mallory-Weiss (single vomit), bleeding disorders.",
+   "dx": [
+    "**GASTRIC ADENOCARCINOMA ARISING ON THE BASE OF A PEPTIC ULCER.** **She has every peptic ulcer risk factor — CHRONIC IBUPROFEN, SMOKING, DAILY ALCOHOL — and on top of them THE RED FLAGS: WEIGHT LOSS, APPETITE LOSS, FATIGUE and, in most recalls, MELAENA.**",
+    "**THE DISCRIMINATING ISSUE: TREATING 'I VOMITED BLOOD' AS A SINGLE SYMPTOM. IT IS TWO — THE BLOOD AND THE VOMITING — FROM A SOURCE YOU HAVE NOT YET ESTABLISHED. The candidates who pass ask: HOW MANY TIMES DID YOU VOMIT, DID YOU HAVE A NOSEBLEED, DID YOU COUGH IT UP.** **THE SECOND HALF IS THE SEPARATE ANTICOAGULANT QUESTION.**",
+    "**THE DIAGNOSIS DELIVERY: 'Margaret, during our conversation I found some concerning features — what we call RED FLAGS — that RAISE THE POSSIBILITY OF A GASTRIC CANCER, a cancer in the stomach. I WANT TO BE CLEAR THAT THIS IS NOT CONFIRMED.'** **Never 'you have cancer' to a frightened 72-year-old.**",
+    "**THE REASONS IN TWO HALVES: 'FIRST, you have RISK FACTORS FOR AN ULCER — the anti-inflammatory painkiller for a long time, smoking and daily alcohol. SECOND, you have RED FLAGS — you are losing weight, your appetite is not what it was, and you are tired. Together those make me concerned THERE MAY BE A CANCER ON THE BASE OF THAT ULCER.'**",
+    "**REASON THE TOP THREE EXPLICITLY: SECOND, A BENIGN PEPTIC ULCER — 'an ulcer alone can bleed exactly like this' — second NOT first because of the red flags. THIRD, OESOPHAGEAL CANCER — 'LESS LIKELY BECAUSE YOU HAVE HAD NO DIFFICULTY SWALLOWING AT ALL.' ARGUE IT DOWN OUT LOUD.**",
+    "**DIFFERENTIALS 4 TO 6, NAME AND ONE REASON EACH, SIX SECONDS APIECE: OESOPHAGITIS — no heartburn · VARICES — NONE OF THE FEATURES OF LIVER DISEASE · MALLORY-WEISS — 'YOU TOLD ME YOU VOMITED ONLY ONCE' · BLEEDING DISORDERS AND ANTICOAGULANTS — asked, not on any.**",
+    "**CORRECTION — 'PEPTIC ULCERS GET MALIGNANT, DUODENAL ONES DON'T' IS IMPRECISE. PEPTIC ULCER DISEASE IS THE UMBRELLA TERM FOR BOTH. IT IS THE GASTRIC ULCER THAT CARRIES MALIGNANT POTENTIAL AND MUST BE BIOPSIED AND FOLLOWED TO HEALING; DUODENAL ULCERS ARE ESSENTIALLY NEVER MALIGNANT.**",
+    "**'IS IT BECAUSE OF MY ARTHRITIS TABLETS?' — 'They are VERY LIKELY PART OF IT. Anti-inflammatories like Nurofen are ONE OF THE COMMONEST CAUSES OF STOMACH ULCERS, especially long term. I want you to STOP THEM NOW, and we'll find you a safer painkiller.'** **And if she is tearful: 'take your time… NOTHING IS DECIDED TODAY; the camera test gives us the answer. WOULD YOU LIKE ME TO BRING YOUR PARTNER IN?'**",
+    "**IF SHE VOMITS BLOOD AGAIN MID-STATION: 'Examiner, the patient has had a further episode. I would STOP THE HISTORY, REASSESS ABC, REPEAT OBSERVATIONS, ENSURE TWO LARGE-BORE CANNULAE AND ACTIVE CROSSMATCH, COMMENCE AN IV PPI and contact MEDSTAR for urgent retrieval to a centre with endoscopy.'**",
+    "**THE PLAN: TWO LARGE-BORE CANNULAE · FBE, UEC, LFT, COAGULATION, CROSSMATCH · IV PPI · KEEP HER FASTED · URGENT GASTROSCOPY WITH BIOPSY — DIAGNOSTIC AND THERAPEUTIC · STOP THE NSAIDs PERMANENTLY · GLASGOW-BLATCHFORD BEFORE ENDOSCOPY, ROCKALL AFTER.** **SA: Wallaroo has NO ON-SITE ENDOSCOPY — MedSTAR 1300 13 12 33, RFDS, receiving unit at RAH, Flinders or TQEH; activate the local massive transfusion protocol early given limited stock; PATS for her partner.**"
+   ],
    "plan": [
     [
+     "-0:15",
+     "**TO THE EXAMINER BEFORE SITTING: BP, pulse, RR, saturation, level of consciousness — then say 'she is haemodynamically stable, so I'll proceed.'**"
+    ],
+    [
      "0:00",
-     "★ To examiner before sitting: 'Before I begin, could I have her blood pressure, pulse rate, respiratory rate and oxygen saturation, please? And is she alert and oriented?' → 118/72, 92 reg, 16, 97%, alert → 'thank you — she is haemodynamically stable, so I'll proceed with the history' (one sentence; not a resuscitation)"
+     "**WIPE, open question, then RESPOND TO THE FEAR: 'that would frighten anybody, and you did exactly the right thing coming in. YOU ARE IN THE RIGHT PLACE AND WE WILL LOOK AFTER YOU.'**"
     ],
     [
-     "0:30",
-     "'Good morning, I'm Dr —, one of the doctors here in Emergency. Am I speaking with Margaret? Can you tell me what has happened?' → 'That would frighten anybody, and you did exactly the right thing coming in. You're in the right place and we will look after you.'"
+     "0:40",
+     "**TIMING — IT COLLAPSES TO TWO QUESTIONS: 'WHEN EXACTLY DID THIS HAPPEN? IS THIS THE FIRST TIME YOU HAVE EVER VOMITED BLOOD?'** Do not build a chronology that does not exist."
     ],
     [
-     "0:50",
-     "★ Five boxes: 'when exactly? first time ever?' (2 h ago after breakfast; first) · 'fresh bright red, or dark? any clots?' (bright red, no clots) · ★ 'roughly how much — streaks in the vomit, a few drops, a tablespoon, a cupful, more?' (half a cup) · ★ 'how many times did you vomit? did you retch and feel sick first, then see blood?' (once; a bit sick, no repeated retching) · ★ 'any nosebleeds recently? did you cough up any blood, as opposed to vomiting it?' (no, no) · 'dizzy, light-headed, fainted, more tired or short of breath?' (light-headed since; shattered for weeks)"
+     "1:10",
+     "**THE BLOOD: FRESH OR DARK · ANY CLOTS · STREAKS, A FEW DROPS, OR A LARGE AMOUNT?**"
+    ],
+    [
+     "1:50",
+     "**THE VOMITING: HOW MANY TIMES · RETCHING FIRST THEN BLOOD, OR BLOOD FROM THE FIRST VOMIT?**"
+    ],
+    [
+     "2:10",
+     "**THE SOURCE: ANY NOSEBLEEDS · DID YOU COUGH IT UP, AS OPPOSED TO VOMITING IT?**"
+    ],
+    [
+     "2:30",
+     "**STABILITY SYMPTOMS: DIZZY · FAINTED OR NEARLY FAINTED · TIRED OR BREATHLESS · HEART RACING?**"
     ],
     [
      "2:50",
-     "★ Cancers: 'weight loss without trying — how many kilos, over what period?' (5–6 kg, 2–3 mo) · appetite (poor) · lumps · tiredness (very) · ★ 'any difficulty or pain on swallowing, food sticking?' (none — be definite) · 'pain in your tummy?' (gnawing ache, months) · ★ 'dark or black stools?' (very dark) · reflux: heartburn/metallic taste (a bit) · ★ 'any medications, particularly anti-inflammatories or aspirin — how much, how long?' → Nurofen 2–3/day for years (arthritis) · smoking (10/day), alcohol (two sherries nightly), spicy, coffee"
+     "**CANCERS — GENERIC: WEIGHT LOSS, HOW MANY KILOS, OVER WHAT PERIOD, WERE YOU TRYING · appetite · lumps · tiredness. SPECIFIC: DIFFICULTY OR PAIN SWALLOWING · TUMMY PAIN · DARK OR BLACK STOOLS — black and tarry, strong smell, any iron or Pepto-Bismol?**"
     ],
     [
-     "4:30",
-     "Liver block: yellowing, itching, dark urine, pale stools, tummy/leg swelling, confusion, liver trouble/hepatitis → none · bleeding: bruising, recurrent nosebleeds, gums, FHx bleeding disorder → none · ★ 'I want to ask this one separately: are you on any blood thinners — warfarin, apixaban, rivaroxaban, clopidogrel or aspirin?' → no (the mark is for asking) · other conditions (BP, arthritis; cholecystectomy years ago), operations, FHx (sister — bowel cancer) · 'what are you most worried about?'"
+     "3:40",
+     "**ULCER AND REFLUX: heartburn, acid taste, water brash · 'ANY MEDICATIONS AT ALL — PARTICULARLY ANTI-INFLAMMATORIES LIKE NUROFEN, OR ASPIRIN? HOW MUCH, FOR HOW LONG?' · smoking, alcohol, spicy food, coffee.**"
+    ],
+    [
+     "4:20",
+     "**VARICES — THE LIVER QUESTIONS: yellowing · itch · dark urine or pale stools · swelling of tummy or legs · confusion · known liver disease or hepatitis.**"
+    ],
+    [
+     "5:00",
+     "**BLEEDING DISORDERS: easy bruising · recurrent nosebleeds · bleeding gums · prolonged bleeding after cuts · family history.** Then **THE SEPARATE ANTICOAGULANT QUESTION, BY NAME.**"
+    ],
+    [
+     "5:30",
+     "**Other conditions · operations · family history of stomach or bowel problems.** **General GI screen is the block to compress — nausea and vomiting ARE the complaint.**"
     ],
     [
      "6:00",
-     "★ 'Margaret, I've been asking about a number of conditions that cause blood in the vomit. I found some concerning features — red flags — that raise the possibility of a gastric cancer, a cancer in the stomach. I want to be clear that this is not confirmed. Two parts to my thinking. First, you have risk factors for an ulcer: years of that anti-inflammatory painkiller, which can cause ulcers; you also smoke and drink daily. Second, red flags: losing weight, poor appetite, very tired, and dark stools that tell me you've been bleeding. Together those make me concerned there may be a cancer on the base of that ulcer.' · 'is it the arthritis tablets?' → 'very likely part of it' · [quiet — let 3–4 seconds pass]"
+     "**THE DIAGNOSIS: 'concerning features that raise the possibility of a gastric cancer… NOT CONFIRMED' — then THE TWO-HALVES REASONING.**"
     ],
     [
      "6:50",
-     "★ DDx argued: 'second, a peptic ulcer that is not cancerous — an ulcer alone can bleed exactly like this. Third, a cancer in the food pipe — less likely because you've had no difficulty swallowing at all. I also thought about inflammation of the food pipe from reflux; varices — widened vessels from liver disease — and you have none of those features; a tear in the food pipe from repeated vomiting — unlikely because you vomited only once; and bleeding or clotting problems, which you don't have.' · plan: 'the test that gives the answer is a camera into the stomach with small samples. Stay with us, fasted; a drip; bloods; a medicine to reduce the acid; transfer to Adelaide for the camera. ★ Stop the Nurofen from today — we'll find a safer painkiller. If you vomit more blood, feel faint, or your heart races, tell the nurse immediately. Shall I bring your partner in?' · 'am I going to be alright?' → name her stable observations without promising the outcome"
+     "**DIFFERENTIAL 2 WITH ITS REASON, 3 ARGUED DOWN ON NO DYSPHAGIA, then 4 TO 6 — oesophagitis, varices, Mallory-Weiss on the single vomit, bleeding disorders and anticoagulants.**"
+    ],
+    [
+     "7:40",
+     "**The plan in one breath: cannulae, bloods and crossmatch, IV PPI, fasted, URGENT GASTROSCOPY — which from Wallaroo means MEDSTAR RETRIEVAL — and STOP THE IBUPROFEN TODAY.** Then **offer to bring her partner in.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I begin, could I have this patient's blood pressure, pulse rate, respiratory rate and oxygen saturation, please? And is she alert and oriented?' / 'Thank you — she is haemodynamically stable, so I'll proceed with the history.'",
-    "★ 'Was it fresh, bright red blood, or was it dark? Did you see any clots?' / ★ 'Roughly how much: just streaks in the vomit, a few drops, a tablespoon, a cupful, or more than a cupful?' / ★ 'How many times did you vomit? Did you retch or feel sick first, and then see blood?' / ★ 'Have you had any nosebleeds recently? Did you cough up any blood, as opposed to vomiting it?'",
-    "'Any difficulty or pain on swallowing, or food sticking?' / 'Any dark or black stools?' / ★ 'Are you taking any medications, particularly anti-inflammatories or aspirin — how much and for how long?'",
-    "'Any yellowing of your eyes or skin? Itching? Dark urine or pale stools? Swelling of your tummy or legs? Any confusion? Ever been told you have liver trouble or hepatitis?' / ★ 'I want to ask this one separately: are you on any blood thinners — warfarin, apixaban, rivaroxaban, clopidogrel or aspirin?'",
-    "★ 'Margaret, I found some concerning features — red flags — that raise the possibility of a gastric cancer, a cancer in the stomach. I want to be clear that this is not confirmed. There are two parts to my thinking. First, you have risk factors for an ulcer: you've been taking that anti-inflammatory painkiller for years, and it can cause ulcers in the stomach; you also smoke and drink daily. Second, you have red flags: you're losing weight, your appetite is poor, and you're very tired. Together, those make me concerned there may be a cancer on the base of that ulcer.'",
-    "★ 'The second possibility is a peptic ulcer that is not cancerous — an ulcer alone can bleed exactly like this. Third, a cancer in the food pipe — I think that is less likely because you've had no difficulty swallowing at all. I also thought about inflammation of the food pipe from reflux; varices, which are widened blood vessels caused by liver disease, and you have none of the features of that; a tear in the food pipe from repeated vomiting, which is unlikely because you vomited only once; and bleeding or clotting problems, which you don't have.'",
-    "★ 'I want you to stay with us and stay fasted; we'll put a drip in and take bloods, start a medicine to reduce the acid, and arrange transfer to Adelaide for the camera. I want you to stop the Nurofen from today — we'll find you a safer painkiller. If you vomit more blood, feel faint, or your heart races, tell the nurse immediately. Shall I bring your partner in?'",
-    "Variant — bleeds again mid-station: 'Examiner, the patient has had a further episode of haematemesis. I would stop the history here, reassess airway, breathing and circulation, repeat observations, ensure two large-bore cannulae with active crossmatch, commence an intravenous proton pump inhibitor, and contact MedSTAR for urgent retrieval to a centre with endoscopy.' / Varices variant (large volume, yellow eyes, swollen tummy): 'two medicines straight away — one to reduce the pressure in those vessels (terlipressin VERIFY) and an antibiotic (ceftriaxone VERIFY) — and an urgent camera to band them.' / Mallory-Weiss variant (vomited six or seven times, blood only at the end): 'a small tear at the bottom of the food pipe from the force of the retching — usually settles, but I'd still like a camera test to be certain.' / 'Would you stop her aspirin if post-MI?' → 'not automatically — thrombotic risk may outweigh bleeding risk; discuss with cardiology and gastroenterology, cover with a high-dose PPI.'"
-   ],
    "pefe": [
-    "Role-player: Margaret Doyle, 72, retired school secretary, Wallaroo, partner Alan in the waiting room; frightened, apologetic ('didn't want to make a fuss'); quiet when cancer is named — 3–4 seconds. 'Any medications?' → 'just my blood pressure tablet' — Nurofen ONLY on anti-inflammatories/painkillers/anything you buy yourself (mark it missed otherwise — the whole aetiology). Anticoagulant question answered no — the mark is for asking the second, named question. Definite 'just the once' and 'no trouble swallowing at all'. Hidden: sister died of bowel cancer 3 y ago, convinced it's cancer — only if asked concerns, else near the end. 'Am I going to be alright, doctor?' — a good answer names her stable observations without promising an outcome",
-    "Vitals: 118/72 · 92 reg · 16 · 97% RA · alert. No examination in the station. Expected positives: one episode ~120 mL bright red haematemesis, melaena, epigastric ache, weight loss 5–6 kg, poor appetite, fatigue, light-headedness; NSAID, smoker, daily alcohol; no dysphagia, no liver features, no anticoagulants",
-    "Upper GI bleed management: two large-bore cannulae; FBE, UEC (urea:creatinine), LFT, coags, group and crossmatch; IV fluids/blood (restrictive transfusion Hb <70 VERIFY); IV PPI (esomeprazole 80 mg bolus then infusion VERIFY); NBM; Glasgow-Blatchford (0–1 may be outpatient) and Rockall VERIFY; endoscopy within 24 h (urgent if unstable) — no endoscopy at Wallaroo → MedSTAR; stop NSAID; hold anticoagulants/antiplatelets with cardiology input; H. pylori testing at biopsy; varices — terlipressin + ceftriaxone + banding VERIFY; Mallory-Weiss usually self-limiting",
-    "Six differential groups: cancers (gastric, oesophageal) · ulcer/reflux (PUD, oesophagitis, gastritis) · varices (liver block) · Mallory-Weiss (vomit count) · bleeding disorders/anticoagulants · swallowed blood (epistaxis)/haemoptysis (source questions). Dysphagia is the cardinal symptom of oesophageal cancer — its absence ranks it third",
-    "SA: MedSTAR 1300 13 12 33 · Adelaide endoscopy unit · TIS 131 450 · partner in the waiting room — offer to bring him in"
+    "**Do now: CONFIRM HAEMODYNAMIC STABILITY AND REPEAT OBSERVATIONS · TWO LARGE-BORE IV CANNULAE · FBE, UEC, LFT, COAGULATION PROFILE, GROUP AND HOLD OR CROSSMATCH · KEEP HER FASTED FOR ENDOSCOPY.**",
+    "**Do next: HIGH-DOSE IV PROTON PUMP INHIBITOR · URGENT UPPER GI ENDOSCOPY WITH BIOPSY — DIAGNOSTIC AND THERAPEUTIC, with clips or band ligation · RISK SCORES — GLASGOW-BLATCHFORD BEFORE ENDOSCOPY, ROCKALL AFTER · WITHHOLD NSAIDs PERMANENTLY · WITHHOLD OR REVERSE ANTICOAGULANTS AFTER WEIGHING THROMBOTIC RISK · if malignancy confirmed, STAGING CT CHEST, ABDOMEN AND PELVIS then upper GI MDT.** VERIFY PPI regimen and local thresholds.",
+    "**IF VARICES ARE SUSPECTED: TERLIPRESSIN AND IV CEFTRIAXONE BEFORE THE SCOPE, then urgent band ligation.** VERIFY.",
+    "**The liver stigmata to name if asked — showing your varices questions were understood, not recited: JAUNDICE · SPIDER NAEVI in the SVC distribution · PALMAR ERYTHEMA · GYNAECOMASTIA · ASCITES · SPLENOMEGALY · CAPUT MEDUSAE · ASTERIXIS · DUPUYTREN'S CONTRACTURE.**",
+    "**Do not miss / avoid: ★ FAILING TO CONFIRM STABILITY AT THE START · ★ NEVER ASKING HOW MANY TIMES SHE VOMITED · ASKING ONLY THE GENERAL MEDICATION QUESTION · FOBT — NO ROLE, THE BLEEDING IS VISIBLE · SPENDING TWO MINUTES RECITING A RESUSCITATION ALGORITHM IN A HISTORY STATION · RESTARTING NSAIDs 'ONCE SHE IS BETTER'.**",
+    "**What if she destabilises: ABC, oxygen, TWO LARGE-BORE CANNULAE, CROSSMATCH AND BLOOD, IV PPI, URGENT ENDOSCOPY, MedSTAR — BUT THIS STATION DOES NOT ASK FOR IT UNLESS SHE DETERIORATES. The assessed domain is history taking.**",
+    "**SA: WALLAROO HOSPITAL HAS NO ON-SITE ENDOSCOPY OR INTERVENTIONAL GASTROENTEROLOGY — a definitive-care plan from the outset. MedSTAR 1300 13 12 33 · RFDS fixed-wing · RAH, Flinders or TQEH · local massive transfusion protocol early · PATS for the partner · Country Health Connect · TIS National 131 450 · Aboriginal Liaison Officer at the receiving hospital where relevant.**"
    ],
-   "fails": [
-    "★ Never confirming haemodynamic stability; ★ never asking the vomit count; ★ never asking about anticoagulants by name; ★ never naming the possibility of cancer",
-    "Asking only 'any medications?' — the Nurofen never surfaces; asking her to estimate millilitres instead of offering a scale",
-    "Not asking nosebleeds/haemoptysis; skipping the liver block because she 'doesn't look like a drinker' then listing varices anyway",
-    "'You have cancer' without 'possibility'/'not confirmed'; listing differentials without arguing why oesophageal cancer is third, varices unlikely, Mallory-Weiss unlikely",
-    "False reassurance to 'am I going to be alright?'; not stopping the NSAID; no safety-net; forgetting the partner"
-   ],
-   "numbers": [
-    "6 min history · 8 min · vitals 118/72 · 92 · 16 · 97% · one vomit ~half a cup, bright red · 5–6 kg over 2–3 mo · Nurofen 2–3/d for years · 10 cigs/d · 2 sherries/night",
-    "Two large-bore cannulae · FBE, UEC, LFT, coags, crossmatch · IV PPI VERIFY · Hb <70 transfusion VERIFY · Glasgow-Blatchford/Rockall VERIFY · endoscopy within 24 h · terlipressin + ceftriaxone for varices VERIFY",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Gastric cancer on a peptic ulcer** — the answer",
+     "**NSAIDs, SMOKING, ALCOHOL plus WEIGHT LOSS, APPETITE LOSS, FATIGUE, MELAENA; age 72**",
+     "**Pallor, cachexia, epigastric mass, LEFT SUPRACLAVICULAR NODE**",
+     "**Urgent gastroscopy with biopsy** — urgent"
+    ],
+    [
+     "**Peptic ulcer disease (benign)** — differential two",
+     "**Chronic ibuprofen**, epigastric pain, alcohol, smoking, H. pylori",
+     "Epigastric tenderness; often nothing",
+     "**Same gastroscopy — biopsy distinguishes them; H. pylori testing**"
+    ],
+    [
+     "**Oesophageal carcinoma** — differential three",
+     "Age, smoking, alcohol, weight loss — **BUT NO DYSPHAGIA**",
+     "Cachexia, supraclavicular node",
+     "**Gastroscopy. ARGUE IT DOWN OUT LOUD: NO SWALLOWING DIFFICULTY**"
+    ],
+    [
+     "Severe oesophagitis / GORD",
+     "Heartburn, metallic taste, water brash; **NSAIDs and alcohol also cause it**",
+     "Usually nothing",
+     "Gastroscopy; high-dose PPI — semi-urgent"
+    ],
+    [
+     "**Oesophageal varices**",
+     "**LARGE-VOLUME fresh haematemesis; alcohol; JAUNDICE, ITCH, DARK URINE, PALE STOOLS, ASCITES, CONFUSION**",
+     "**The liver stigmata**",
+     "**TERLIPRESSIN AND CEFTRIAXONE; band ligation** — EMERGENCY"
+    ],
+    [
+     "**Mallory-Weiss tear**",
+     "**REPEATED RETCHING OR VOMITING, THEN blood**; alcohol binge, bulimia, hyperemesis",
+     "**The vomit count**",
+     "**SHE VOMITED ONCE — UNLIKELY. Usually self-limiting**"
+    ],
+    [
+     "**Bleeding disorder or anticoagulation**",
+     "**Easy bruising, recurrent epistaxis, bleeding gums, family history; WARFARIN, DOAC, CLOPIDOGREL, ASPIRIN**",
+     "**THE SEPARATE, NAMED ANTICOAGULANT QUESTION**",
+     "Coagulation profile, platelets; **reverse or withhold as indicated** — urgent"
+    ],
+    [
+     "**Swallowed blood from posterior epistaxis**",
+     "**A recent nosebleed — especially on warfarin**",
+     "**'Any nosebleeds this morning?'**",
+     "**Check INR; ENT examination — a whole diagnostic tree excluded in one question**"
+    ],
+    [
+     "Haemoptysis mislabelled",
+     "**Blood COUGHED, frothy, with sputum**",
+     "'Did you cough it up?'; chest signs",
+     "Chest X-ray; respiratory pathway"
+    ],
+    [
+     "**Gastric outlet or duodenal pathology**",
+     "Coffee-ground vomiting, epigastric pain, persistent vomiting",
+     "Succussion splash; dehydration",
+     "Gastroscopy — **coffee-ground vomit is altered blood, not a separate diagnosis**"
+    ]
    ]
   },
   "source": "Haematemesis_2_Case_Tasks_Script_Notability.pdf (Margaret Doyle, 72, one episode of haematemesis on years of OTC Nurofen with weight loss and melaena — gastric cancer on a peptic ulcer)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Haematemesis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never confirming haemodynamic stability — before sitting down: 'could I have her blood pressure, pulse, respiratory rate and saturations, and is she alert?' → then aloud, 'she is haemodynamically stable, so I'll proceed with the history' — one sentence, not a resuscitation (the mirror image of the chronic indigestion station: there you should not open with it, here you must — acuity) (★)",
-   "FAIL — Never asking 'how many times did you vomit?' — 'I vomited blood' is two symptoms, the blood and the vomiting, from a source not yet established; the vomit count rules Mallory-Weiss in or out ('just the once'), and two source questions exclude epistaxis and haemoptysis in ten seconds: 'any nosebleeds? did you cough up any blood, as opposed to vomiting it?' (★)",
-   "FAIL — Never asking about anticoagulants as a second, separate, named question — 'I want to ask this one separately: are you on any blood thinners — warfarin, apixaban, rivaroxaban, clopidogrel or aspirin?'; patients do not classify these as medications; the answer is no, the mark is for asking (★)",
-   "FAIL — Never naming the possibility of cancer, or saying 'you have cancer' — 'I found some concerning features — red flags — that raise the possibility of a gastric cancer, a cancer in the stomach; I want to be clear that this is not confirmed'; reasons in two halves — risk factors for an ulcer (years of the anti-inflammatory, smoking, daily sherry) and red flags (weight loss, poor appetite, tiredness, dark stools = bleeding); when she goes quiet, let three or four seconds pass; 'am I going to be alright?' — name her stable observations without promising an outcome (★)",
-   "FAIL — Asking only 'any medications?' — she says 'just my blood pressure tablet'; the Nurofen (two or three a day for years for her knees, bought over the counter) comes out only on 'anti-inflammatories, painkillers, or anything you buy yourself' — 'this is the whole aetiology of the case'; then 'how much, how often, how long?'; and skipping the liver block (jaundice, itch, dark urine, pale stools, swelling, confusion, hepatitis) because 'she doesn't look like a drinker' — if you name varices you must have asked what excludes them",
-   "DO — Give her a volume scale (streaks, a few drops, a tablespoon, a cupful, more) rather than millilitres; fresh red or dark, clots; timing and first episode; dizzy, faint, tired, breathless; cancers — weight quantified, appetite, lumps, tiredness, dysphagia (be definite — 'no, none at all'), abdominal pain, melaena; reflux; bruising, nosebleeds, gums, family bleeding disorder; differentials argued not listed — benign peptic ulcer second, oesophageal cancer third BECAUSE no dysphagia, varices unlikely BECAUSE no liver features, Mallory-Weiss unlikely BECAUSE a single vomit, bleeding disorders; plan: stay fasted, two large-bore cannulas, FBE, UEC, LFT, coags, crossmatch, IV PPI, transfer to Adelaide for gastroscopy with biopsies, 'stop the Nurofen from today', safety-net (more blood, faint, racing heart → tell the nurse), 'shall I bring your partner in?'; if she bleeds again mid-station, stop the history, ABC, MedSTAR"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-132",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "General practice, Wallaroo (MM5). Four tasks: history (prompt at 4:00), PEFE (findings card), diagnosis + differentials, investigations. Chronic, non-acute — do NOT open with a haemodynamic check (the seconds aren't spare). Two builds of the same recall (Jimmy 58 / Jimmy 50). Three things decide it: define 'indigestion' before any differential; cancer first, ulcer second; and the first words of task 4 are 'upper GI endoscopy with biopsy' — before any blood test, and never FOBT.",
   "stem": [
    "Jimmy, 58 (50 in the earlier build), has come in with indigestion for about six months, getting worse. He used to take Mylanta for it. No vital signs given; comfortable, sitting in the chair."
   ],
@@ -32863,111 +32988,207 @@
    "Explain your most likely diagnosis and your differential diagnoses to Jimmy",
    "Explain the investigations you would arrange, to Jimmy"
   ],
-  "time": "8 min: history to 4:00 · PEFE by 5:30 · diagnosis by 6:30 · investigations by 8:00. Intro, open, acknowledge, bridge · ★ GATE QUESTION at 0:20: 'indigestion means different things — a heartburn, a discomfort, or a bloated feeling?' → burning discomfort, epigastric → SOCRATES: site, /10 (3–4), quality (burning), radiation, first time, constant/intermittent, ★ worse, better/worse ('not really') → ★ 'what about food and eating, or position?' → after eating → ★ 'particular food? how soon after?' (any; straight away) · ★ 'you mentioned Mylanta — is it still helping?' ('used to knock it on the head; now nothing' — antacid failure is itself a red flag) · impact · general GI 20 s: N/V, bloating, wind, D/C, fever · ★ red flags by 2:30: weight loss — ★ kg / period / intentional (4–5 kg, 2 mo, no) · appetite · lumps · tiredness · ★ 'dark or black stools?' (almost black — pause) · ★ 'vomited blood?' · ★ 'difficulty swallowing?' · FHx · 90 s ruthless: night pain, meds incl chemist/NSAIDs/aspirin (none), smoking (15/d, 35 y), alcohol (2–3 beers most nights), spicy/takeaway/coffee, stress (dry season, money), metallic taste/water brash, trauma, jaundice, fatty-meal pain, dairy, ★ chest pain/SOB on exertion, PMHx/ops/FHx (father 'bowel trouble') · ★ PEFE seven named steps incl ★ per rectum (state it, don't ask permission) and ★ lymph nodes incl left supraclavicular · dx: 'concerned about the possibility of a gastric cancer — not confirmed' + reasons · PUD second · groups · ★ 'the most important test is an endoscopy' → FBE + iron studies → stop.",
+  "findings": [
+   [
+    "DO NOT OPEN WITH HAEMODYNAMIC STABILITY HERE",
+    "A CHRONIC SIX-MONTH COMPLAINT IN A GP ROOM, WITH A PATIENT SITTING COMFORTABLY. ASKING FOR VITAL SIGNS BEFORE YOU HAVE SAID HELLO BURNS TIME AND SIGNALS YOU HAVE NOT READ THE STEM. Take vitals within the examination request. CONTRAST HAEMATEMESIS, WHERE IT IS COMPULSORY"
+   ],
+   [
+    "THE SINGLE MOST IMPORTANT LINE IN THE STATION",
+    "'MYLANTA USED TO HELP. NOT ANY MORE.' STOP. ACKNOWLEDGE IT: 'THAT CHANGE IS IMPORTANT — CAN I ASK A FEW QUESTIONS ABOUT THAT?' IT IS A RED FLAG IN ITS OWN RIGHT"
+   ],
+   [
+    "CONVERT THE VAGUE WORD IN THE FIRST THIRTY SECONDS",
+    "'CAN YOU DESCRIBE WHAT YOU MEAN BY INDIGESTION — IS IT A HEARTBURN, A DISCOMFORT, OR FEELING BLOATED?' → 'A BURNING DISCOMFORT, UP HERE.' IT IS NOW A PAIN — site, severity, quality, radiation, timing, BUT FAST"
+   ],
+   [
+    "THE CLOCK REALITY FROM THE RECALLS",
+    "CANDIDATES REACH THE END OF GENERAL GI QUESTIONS AT ABOUT 2:30. THAT LEAVES ROUGHLY 90 SECONDS FOR EVERY DIFFERENTIAL GROUP. RED FLAGS MUST START BY 2:30 — cancer first, then ulcer and reflux, then everything else, WITH CVS LAST"
+   ],
+   [
+    "THE RED FLAGS — THE GENERIC FOUR WILL NOT PASS",
+    "WEIGHT LOSS (amount, period, intentional?) · APPETITE · LUMPS · TIREDNESS — PLUS THE SPECIFIC ONES CANDIDATES OMIT: DARK STOOLS · VOMITING BLOOD · DIFFICULTY SWALLOWING · PERSISTENT VOMITING"
+   ],
+   [
+    "THE EXAMINATION CARD — THREE POSITIVES, AND ONLY THREE",
+    "PALLOR · MELAENA ON PER RECTAL EXAMINATION · A PALPABLE LEFT SUPRACLAVICULAR (VIRCHOW'S) NODE. Vitals unremarkable — A NORMAL BLOOD PRESSURE DOES NOT EXCLUDE CHRONIC BLOOD LOSS. Abdomen otherwise soft and non-tender"
+   ],
+   [
+    "NAME PER RECTUM AND THE NODES AS EXPLICIT STEPS",
+    "'AND I WOULD LIKE TO PERFORM A PER RECTAL EXAMINATION' and 'EXAMINE THE LYMPH NODES, INCLUDING THE LEFT SUPRACLAVICULAR FOSSA.' Omitting PR is a starred fail. DO NOT CLAIM FINDINGS THE CARD DID NOT GIVE — 'I TAKE IT THE REST IS UNREMARKABLE'"
+   ],
+   [
+    "DO NOT SPEND FORTY SECONDS ON LIVER STIGMATA",
+    "THIS IS NOT A VARICES STATION. PALLOR, CACHEXIA AND NODES are the three general-appearance items that matter — 'THE TRIPLE LOSS: LOSS OF WEIGHT, LOSS OF APPETITE, LOSS OF COLOUR — THINK CANCER'"
+   ],
+   [
+    "CVS GOES LAST — BUT IT GOES IN",
+    "'LAST ONE — DO YOU EVER GET ANY CHEST PAIN OR SHORTNESS OF BREATH WITH THIS, OR WHEN YOU EXERT YOURSELF?' ISCHAEMIC HEART DISEASE AS EPIGASTRIC DISCOMFORT IS THE MUST-NOT-MISS NON-GI DIAGNOSIS. PUT IT IN THE SAME BREATH AS SADMA SO IT CANNOT BE DROPPED"
+   ],
+   [
+    "WHAT HE GIVES",
+    "SIX MONTHS · BURNING EPIGASTRIC DISCOMFORT AFTER FOOD · MYLANTA HELPED THEN FAILED · A FEW KILOS UNINTENTIONAL WEIGHT LOSS · DARK STOOLS · CURRENT SMOKER · DAILY ALCOHOL · SPICY AND TAKEAWAY FOOD · STRESS. NO haematemesis, NO dysphagia, NO jaundice, NO chest pain"
+   ]
+  ],
+  "findingsLabel": "The antacid that stopped working, three positives on the card, and endoscopy said first",
+  "must": [
+   "FAIL — Naming any investigation before endoscopy.",
+   "FAIL — Never saying the word cancer: 'something irritating your stomach lining'.",
+   "FAIL — Omitting per rectum from the examination request.",
+   "FAIL — Claiming findings the card did not give — an epigastric mass, Sister Mary Joseph.",
+   "ASK — Any dark stools, vomiting blood, or difficulty swallowing?",
+   "ASK — Examine the lymph nodes, including the left supraclavicular fossa, and per rectum."
+  ],
   "back": {
-   "dx": "Gastric carcinoma on the base of a peptic ulcer (possibility, not confirmed) — six months of progressive burning epigastric discomfort straight after any food, Mylanta that used to work and now does nothing, 4–5 kg unintentional loss over two months, poor appetite, tiredness, almost-black stools, no haematemesis, no dysphagia; smoker 15/day × 35 y, 2–3 beers nightly, spicy/takeaway, stress; no NSAIDs. PEFE: pallor, vitals normal, abdomen soft/non-tender/no masses, ★ melaena on PR, dual heart sounds, ★ palpable left supraclavicular node. Second: peptic ulcer without malignancy ('you've probably had an ulcer for a while — why the Mylanta worked at first — my concern is a cancer developing on it'). Then oesophageal cancer (no dysphagia), GORD, pancreatic, hepatobiliary, food intolerance, medication gastritis, IHD (screened), IBS as exclusion. Investigations: endoscopy with biopsy FIRST, then FBE + iron studies; biopsies cover H. pylori; no FOBT (melaena is visible bleeding — nothing occult to screen).",
+   "dx": [
+    "**GASTRIC ADENOCARCINOMA ARISING ON THE BASE OF A PEPTIC ULCER — not simply 'gastric cancer'.** **The story is a LONG-STANDING ULCER — burning epigastric discomfort after food, initially Mylanta-responsive, classic risk factors — that has now developed MALIGNANT CHANGE: MYLANTA STOPPED WORKING, WEIGHT LOSS, MELAENA, PALLOR, VIRCHOW'S NODE.**",
+    "**THE DISCRIMINATING ISSUE: ENDOSCOPY MUST BE THE FIRST INVESTIGATION OUT OF YOUR MOUTH, AND CANCER MUST BE NAMED CLEARLY AT THE TOP WITHOUT ALARMING HIM.** **Candidates fail in TWO MIRROR-IMAGE WAYS: some SOFTEN THE DIAGNOSIS UNTIL HE NEVER HEARS THE WORD CANCER; others OPEN WITH 'YOU PROBABLY HAVE STOMACH CANCER' and destroy the consultation. THE PASS IS IN THE MIDDLE: NAME IT FIRST, SAY IT IS NOT CONFIRMED, THEN GIVE REASONS.**",
+    "**THE DELIVERY: 'Jimmy, I've been thinking about a number of different causes for your indigestion. In your case I AM CONCERNED ABOUT THE POSSIBILITY OF A GASTRIC CANCER — a cancer in the stomach. I want to be clear that THIS IS NOT CONFIRMED; that is exactly why I want to do a test.'**",
+    "**THE REASONS — DO NOT SKIP THESE: 'this has been going on FOR SIX MONTHS AND IT IS GETTING WORSE; THE MYLANTA THAT USED TO HELP HAS STOPPED WORKING; you have LOST WEIGHT WITHOUT MEANING TO; and your STOOLS HAVE TURNED DARK, which tells me THERE IS BLEEDING SOMEWHERE IN THE STOMACH.'** **On examination: PALLOR, MELAENA, AND A GLAND ABOVE THE LEFT COLLARBONE.**",
+    "**DIFFERENTIAL TWO, SAID OUT LOUD AND WHY IT IS SECOND: 'the second thing this could be is AN ULCER IN THE STOMACH THAT IS NOT CANCEROUS. An ulcer on its own can bleed and cause all of this. I think it's most likely you've had an ulcer for a while, and MY CONCERN IS THAT A CANCER MAY HAVE DEVELOPED ON TOP OF IT.'** **What pushes cancer above it: THE CONSTELLATION OF RED FLAGS PLUS THE SUPRACLAVICULAR NODE.**",
+    "**THEN LIST DIFFERENTIALS 3 TO 9 AS NAMED GROUPS WITHOUT REASONING THEM — REASON ONLY THE TOP TWO: GORD · PANCREATIC DISEASE · BILIARY · LACTOSE OR FOOD INTOLERANCE · DRUG-INDUCED GASTRITIS · ISCHAEMIC HEART DISEASE · IRRITABLE BOWEL SYNDROME LAST — NEVER THE ANSWER WHEN RED FLAGS ARE PRESENT.**",
+    "**THE ENDOSCOPY EXPLAINED — THE FIRST SIX WORDS ARE 'THE MOST IMPORTANT TEST IS AN ENDOSCOPY': 'we pass a THIN, FLEXIBLE TUBE WITH A CAMERA down your food pipe into your stomach, so we can LOOK DIRECTLY AT THE LINING. If we see an ulcer or any abnormal area, we TAKE SMALL SAMPLES — BIOPSIES — and look at them under the microscope. That is what tells us exactly what we are dealing with. We'll also take blood to check whether the bleeding has made you ANAEMIC and whether YOUR IRON IS LOW.'**",
+    "**THE ORDER IS THE MARK: ENDOSCOPY WITH BIOPSY → FBE AND IRON STUDIES → STOP. H. pylori is biopsied at the scope; a urea breath test only if the scope is delayed — ONE LINE. NO FOBT — HE HAS VISIBLE MELAENA; THERE IS NOTHING OCCULT. BARIUM MEAL IS OBSOLETE. EMPIRICAL HIGH-DOSE PPI AS THE ANSWER MAY MASK AND DELAY THE DIAGNOSIS — TREATING IS NOT INVESTIGATING.**",
+    "**THE VARIANTS: 'JUST TELL ME STRAIGHT, DO I HAVE CANCER?' — 'I'll be straight with you. I DON'T KNOW YET, AND I WON'T PRETEND TO. The pattern is concerning enough that cancer is at the TOP OF THE LIST OF THINGS I NEED TO RULE OUT, and that's why I'm arranging an urgent camera test rather than waiting.'** **HE REFUSES THE SCOPE: 'that's your decision and I respect it. Can I ask what worries you about it? … What I'd ask is that YOU DON'T CLOSE THE DOOR ON IT.'**",
+    "**CORRECTION — 'PEPTIC ULCERS TURN MALIGNANT, DUODENAL ONES DON'T' IS IMPRECISE. GASTRIC ULCERS CARRY MALIGNANT POTENTIAL AND MUST BE BIOPSIED AND FOLLOWED TO HEALING; DUODENAL ULCERS ARE ESSENTIALLY NEVER MALIGNANT.** **SA: CATEGORY 1 URGENT GASTROSCOPY — RAH, Flinders or TQEH; the PRACTICE NURSE COMPLETES THE PATS FORM TODAY; Country Health Connect; a cancer care coordinator once diagnosed. SAY 'URGENT, CATEGORY 1' RATHER THAN INVENTING A NUMBER OF WEEKS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Am I speaking with Jimmy? How can I help?' → 'six months, getting worse, Mylanta not working' → 'six months is a long time to put up with something, and you've noticed it changing — you did the right thing coming in. I'll ask a number of questions, then examine you, then we'll talk about what I think.' · ★ 0:20 'Jimmy, indigestion means different things to different people — can you describe what you mean? Is it a heartburn, a discomfort, or a bloated feeling?' → burning discomfort, flat hand over epigastrium"
+     "**WIPE and open — NO VITALS REQUEST AT THE DOOR.** Then **RESPOND TO WHAT HE ACTUALLY SAID: 'six months is a long time to put up with something, and you've noticed it's getting worse — YOU DID THE RIGHT THING COMING IN.'** **No canned 'I understand your concern' if he hasn't expressed one.**"
     ],
     [
-     "0:40",
-     "SOCRATES: where (upper), /10 (3–4), sharp/dull/burning (burning), radiation (none), ★ 'first time in your life?' (yes), constant/on-off, ★ 'getting worse?' (most days now, worse), 'anything better or worse?' ('not really') → ★ 'what about food and eating — or your position?' → after eating → ★ 'particular food? how soon after?' → any meal, straight away · ★ 'you mentioned Mylanta — is it still helping?' → 'used to knock it on the head — now it does nothing' (the hinge) · 'how is it affecting day to day?' (stopped going out for meals)"
+     "0:30",
+     "**THE FOUR BOXES: DESCRIBE — heartburn, discomfort or bloating · TIME IT — six months, getting worse · ALLEVIATING AND AGGRAVATING — after food, and THE MYLANTA · IMPACT.**"
     ],
     [
-     "1:40",
-     "General GI, 20 s: nausea (a bit), vomiting (no), bloating, wind, D/C, fever · ★ 'some questions I ask everybody with tummy symptoms': 'lost weight without trying? ★ how many kilos, over what period, were you trying?' (4–5 kg, couple of months, no) · appetite (poor) · lumps (no) · tiredness (all the time) · ★ 'any dark or black stools?' → (pause) 'almost black' — don't react, keep going · ★ 'ever vomited blood?' (no) · ★ 'difficulty swallowing or food sticking?' (no) · FHx stomach/bowel cancer (father 'bowel trouble', died 71)"
+     "1:20",
+     "**When he says Mylanta has stopped working, STOP AND ACKNOWLEDGE IT: 'that change is important — can I ask a few questions about that?'**"
     ],
     [
-     "3:15",
-     "90 s, ruthless: 'wake you at night?' (sometimes) · acidic/metallic taste, rush of saliva (no) · ★ 'medications, particularly anti-inflammatories or aspirin, anything from the chemist?' (occasional Panadol) · smoking (15/d, 35 y) · alcohol (2–3 beers most nights, more at harvest) · spicy/takeaway/coffee (yes ×3) · stress (dry season, money tight) · abdominal injury, jaundice, pain after fatty meals, dairy (no) · ★ 'last one: any chest pain or shortness of breath, especially on exertion?' (no) · other conditions, surgery (none; no doctor in 4 y; never scoped)"
+     "2:00",
+     "**GENERAL GI, ONE BREATH, TWENTY SECONDS: nausea or vomiting · bloating · passing wind · constipation or diarrhoea · fevers.**"
+    ],
+    [
+     "2:30",
+     "**RED FLAGS START HERE — GENERIC: WEIGHT LOSS, HOW MANY KILOS, OVER WHAT PERIOD, WERE YOU TRYING · APPETITE · LUMPS · TIREDNESS.**"
+    ],
+    [
+     "2:50",
+     "**SPECIFIC — THE ONES PEOPLE MISS: DARK OR BLACK STOOLS — black and tarry, strong smell, any iron or Pepto-Bismol · VOMITED BLOOD · DIFFICULTY SWALLOWING OR FOOD STICKING · PERSISTENT VOMITING.**"
+    ],
+    [
+     "3:20",
+     "**PEPTIC ULCER AND GORD, SHARED RISK FACTORS ASKED ONCE: does it wake you at night · MEDICATIONS, ESPECIALLY ANTI-INFLAMMATORIES OR ASPIRIN · alcohol · smoking · spicy food, coffee · acid or metallic taste · rush of saliva.**"
+    ],
+    [
+     "3:40",
+     "**ONE QUESTION EACH: PANCREAS — blow to the tummy, bores through to the back · LIVER/GALLBLADDER — yellowing, pain after fatty meals · FOOD — dairy.**"
+    ],
+    [
+     "3:50",
+     "**CVS IN THE SAME BREATH AS SADMA: 'last one — any chest pain or shortness of breath with this, or when you exert yourself?'** Then **other conditions, surgery, family history of stomach or bowel cancer.**"
     ],
     [
      "4:00",
-     "★ PEFE, seven named steps: 'general appearance — specifically pallor, cachexia and lymphadenopathy · vital signs — BP, pulse, RR, temperature · a complete abdominal examination — inspection, superficial and deep palpation for tenderness and masses, percussion, auscultation, the groin — ★ and I would like to perform a per rectal examination · a brief cardiovascular examination — S1, S2, murmurs · ★ a lymph node examination including the left supraclavicular fossa · not Cullen's or Grey Turner's — this is not an acute abdomen — and I'll skip respiratory for time' → pale (and thin), vitals normal, abdomen soft non-tender no masses, BS normal, ★ melaena on PR, dual HS no murmurs, ★ palpable left supraclavicular node (do NOT invent an epigastric mass, hepatomegaly or a Sister Mary Joseph nodule — the card gives three findings)"
+     "**PROMPT — MOVE TO THE EXAMINATION WITHOUT BEING ASKED TWICE: vitals — four, not eight · general appearance: PALLOR, CACHEXIA, JAUNDICE · HANDS: koilonychia · LYMPH NODES INCLUDING THE LEFT SUPRACLAVICULAR FOSSA · ABDOMEN: inspection, palpation, masses, organomegaly · 'AND I WOULD LIKE TO PERFORM A PER RECTAL EXAMINATION.'**"
     ],
     [
-     "5:30",
-     "★ 'Jimmy, I've considered a number of different causes for your indigestion today. In your case I am concerned about the possibility of a gastric cancer — a cancer in the stomach. I want to be clear that it is not confirmed; that is exactly why I want to do a test. The reasons: this has gone on six months and is getting worse; the Mylanta that used to help has stopped working; you have lost weight without meaning to; and your stools are dark, which tells me there is bleeding in the stomach. What I think is most likely is that you have had an ulcer in the stomach for some time — that's why the antacid used to help — and that a cancer has developed on it.' · [quiet — count to four; do not fill the silence with 'I'm sure it'll be fine'] · ★ 'the second thing it could be is an ulcer that is not cancerous — an ulcer on its own can bleed and cause all of this' · groups, not reasoned: reflux; pancreas; liver and gallbladder; food intolerance; medication irritation; 'and because it can present exactly like indigestion, I checked your heart'; IBS as a diagnosis of exclusion"
+     "4:40",
+     "**Take the card: PALLOR, MELAENA, VIRCHOW'S NODE — and 'I TAKE IT THE REST IS UNREMARKABLE.'**"
     ],
     [
-     "6:30",
-     "★ 'The most important test is an endoscopy. We pass a thin flexible tube with a camera down your food pipe into your stomach and look directly at the lining. If we see an ulcer or any abnormal area we take small samples — biopsies — and examine them under the microscope, and that is what gives us the answer. Alongside that, blood: a full blood count to see whether the bleeding has made you anaemic, and iron studies. The biopsies will also be checked for a bug called H. pylori that can cause ulcers and cancers, so we don't need a separate breath test. Because we're in Wallaroo I'll refer you urgently to Adelaide and our nurse will sort out the travel scheme paperwork today.' · 'how long? will I be asleep? Adelaide?' → honest; 'I don't know yet, and I'm not going to guess' · ★ safety-net: 'if you vomit blood, the black stools get worse, you feel faint or your heart races — don't wait for the appointment, go straight to the emergency department' · 'is there someone at home with you?' · 'am I going to be alright?' → no false reassurance"
+     "5:00",
+     "**THE DIAGNOSIS: 'I am concerned about the possibility of a gastric cancer… this is NOT CONFIRMED' — THE WORD CANCER BY 5:30.** Then **THE FOUR REASONS plus the three examination findings.**"
+    ],
+    [
+     "6:00",
+     "**DIFFERENTIAL TWO — THE BENIGN ULCER — AND WHY IT IS SECOND.** Then **3 TO 9 AS NAMED GROUPS, NOT REASONED.**"
+    ],
+    [
+     "7:00",
+     "**INVESTIGATIONS — THE FIRST WORDS: 'THE MOST IMPORTANT TEST IS AN ENDOSCOPY' — explained in plain words, then FBE AND IRON STUDIES, then stop.**"
+    ],
+    [
+     "7:45",
+     "**SAFETY-NET AND CLOSE: vomiting blood, fainting, black stools getting worse — come straight in · PATS form today · 'IS THERE SOMEONE AT HOME, OR SOMEONE YOU'D LIKE ME TO PHONE?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Indigestion means different things to different people. Can you describe what you mean? Is it a heartburn, a discomfort, or are you feeling bloated? If you tell me which one, I'll have a much better idea where to look.' / ★ 'What about food and eating — or your position? Is there a particular food that sets it off? How soon after eating does it start?' / ★ 'You said Mylanta used to help. Is it still helping?'",
-    "★ 'Have you lost any weight without trying? How many kilos, over what period — and were you trying to?' / ★ 'Have you noticed any dark or black stools?' / ★ 'Have you ever vomited blood?' / ★ 'Any difficulty swallowing, or food sticking?' / ★ 'Last one — any chest pain or shortness of breath on exertion?'",
-    "★ To examiner: '…a complete abdominal examination — inspection, superficial and deep palpation for tenderness and masses, percussion, auscultation, and the groin — and I would like to perform a per rectal examination. Then a brief cardiovascular examination, and a lymph node examination including the left supraclavicular fossa.'",
-    "★ 'Jimmy, I've considered a number of different causes for your indigestion today. In your case I am concerned about the possibility of a gastric cancer — that's a cancer in the stomach. I want to be clear that it is not confirmed; that is exactly why I want to do a test. The reasons: six months and getting worse; the Mylanta that used to help has stopped working; you've lost weight without meaning to; and your stools are dark, which tells me there is bleeding in the stomach. What I think is most likely is that you have had an ulcer for some time — which is why the antacid used to help — and that a cancer has developed on top of it.'",
-    "★ 'The most important test is an endoscopy. We pass a thin, flexible tube with a camera down your food pipe into your stomach and look directly at the lining. If we see an ulcer or any abnormal area we take small samples — biopsies — and examine them under the microscope, and that is what gives us the answer. Alongside that I'll take blood: a full blood count to see whether the bleeding has made you anaemic, and iron studies. The biopsies will also be checked for H. pylori, so we don't need a separate breath test.'",
-    "'Is it cancer, doctor? Just tell me straight' → ★ 'I'm not going to pretend with you. It is a possibility, and it's the one I'm most concerned about — that's why I'm not waiting. But it is not confirmed, and it could still turn out to be an ulcer with no cancer in it. The only way to know is to look, and I'll arrange that within the next week or two. Is there someone who can come with you?'",
-    "Examiner challenges: FOBT omission → 'FOBT is a screening investigation for occult bleeding in an asymptomatic person. This man has visible melaena and a positive rectal examination, so the bleeding is already established; the test would add nothing and could delay the endoscopy.' / colonoscopy? → 'not initially — symptoms, melaena and the supraclavicular node point to an upper GI source; if gastroscopy is normal and he has confirmed iron-deficiency anaemia, bidirectional endoscopy becomes appropriate.' / H. pylori? → 'biopsies test for it directly; if the scope were delayed, a urea breath test, which is also the test of cure. It matters because it is a risk factor for both PUD and gastric adenocarcinoma.' / 'duodenal ulcers can't turn malignant?' → 'the gastric ulcer carries malignant potential and needs biopsy and confirmation of healing; duodenal ulcers are essentially never malignant.'"
-   ],
    "pefe": [
-    "Role-player: Jimmy Whelan, 58 (or Jimmy, 50, storeman), grain/sheep farmer outside Wallaroo, wife Denise on shifts; laconic, stoic, minimises ('it's probably nothing'); no doctor in 4 y, never scoped; 15/day since his twenties, 2–3 beers most nights, spicy/takeaway; occasional Panadol only; father 'bowel trouble' died 71; dry season, money tight. Gives the Mylanta line in the opening; holds the food clue once; releases red flags one at a time only when asked; ★ pauses before 'dark stools' (the drama of the station). Goes quiet when cancer is named — counts to four; 'Right.' / 'I did wonder.' If you fill the silence with 'I'm sure it'll be fine' → fail. If cancer never named: 'so what do you actually think it is?' / 'is it cancer, doctor? just tell me straight' at ~6–7 min. 'Am I going to be alright?' once. Hidden: has looked it up, frightened it's cancer",
-    "PEFE card (three findings — do not invent others): pallor (thin) · vitals within normal limits · abdomen soft, non-tender, no masses, normal BS · ★ melaena on PR · dual HS, no murmurs · ★ palpable left supraclavicular (Virchow's) node",
-    "Four boxes for a vague complaint: describe it · time it · triggers and relief · impact. Triple loss: weight, appetite, colour (pallor). Weight loss three follow-ups: kilos, period, intentional? Red flags for dyspepsia: weight loss, anaemia/bleeding (melaena, haematemesis), dysphagia, persistent vomiting, epigastric mass, age ≥50–55 new onset, FHx. DDx order: gastric cancer, then PUD — never the reverse with weight loss and melaena at 50+. Task 4: endoscopy with biopsy → FBE + iron studies → stop; H. pylori from biopsies (UBT if delayed; test of cure); no FOBT; CEA/CA19-9 not diagnostic; staging CT after tissue; colonoscopy only if gastroscopy normal with IDA",
-    "Gastric adenocarcinoma risks: H. pylori, smoking, alcohol, salt/smoked/processed food, pernicious anaemia/atrophic gastritis, previous gastric surgery, FHx/CDH1; Virchow's node, Sister Mary Joseph nodule, Krukenberg tumour = advanced. Category 1 endoscopy referral VERIFY timeframe; MDT; PATS",
-    "Variants: A — no melaena on history, melaena only on PR ('bleeding from the stomach can be slow enough you wouldn't notice — that's one reason I want the internal examination') · B — monosyllabic role-player → switch to closed questions, increase pace, don't lose the red-flag block · cardiac impostor (exertional, sweaty, fist on sternum) → ECG, aspirin, hospital today · no-red-flag version with heartburn/metallic taste/water brash → GORD with a low scope threshold at 50 · bloating swap → four boxes, same red flags, same endoscopy",
-    "SA: PATS · Country Health Connect · MedSTAR 1300 13 12 33 · TIS 131 450"
+    "**The examination request, in order: VITAL SIGNS — four · GENERAL APPEARANCE — PALLOR, CACHEXIA, JAUNDICE · HANDS — KOILONYCHIA, which shows you understand the anaemia is chronic · LYMPH NODES, INCLUDING THE LEFT SUPRACLAVICULAR FOSSA · ABDOMEN — inspection, palpation, masses, organomegaly, percussion, auscultation · PER RECTAL EXAMINATION, NAMED AS ITS OWN STEP.**",
+    "**What comes back: PALLOR · MELAENA ON PR · A LEFT SUPRACLAVICULAR (VIRCHOW'S) NODE. NOTHING ELSE. Vitals unremarkable — e.g. 118/74, 88 regular, 16, 36.8.**",
+    "**Do now: UPPER GI ENDOSCOPY WITH BIOPSY — SAY IT FIRST, EVERY TIME · FULL BLOOD EXAMINATION AND IRON STUDIES · explain the test in plain words before you move on.**",
+    "**Do next: UEC, LFT, COAGULATION — pre-procedure baseline · H. PYLORI BY BIOPSY AT THE SCOPE; urea breath test only if the scope is delayed · IF MALIGNANCY CONFIRMED, STAGING CT CHEST, ABDOMEN AND PELVIS, THEN UPPER GI MDT — NOT SAID BEFORE YOU HAVE SAID ENDOSCOPY · ECG IF HE ANSWERS YES TO THE CHEST-PAIN QUESTION · colonoscopy only later if the scope is clear and iron deficiency is confirmed.**",
+    "**The red-flag gate: WITHOUT ALARM FEATURES, a 42-year-old with NSAID-related burning would get TEST-AND-TREAT OR A PPI TRIAL, NOT URGENT ENDOSCOPY. JIMMY IS THROUGH THAT GATE THREE TIMES OVER.**",
+    "**Avoid / do not miss: ★ NAMING ANYTHING BEFORE ENDOSCOPY · FOBT — NO ROLE WITH VISIBLE MELAENA · BARIUM MEAL — OBSOLETE FOR THIS INDICATION · EMPIRICAL HIGH-DOSE PPI AS THE ANSWER · REQUESTING HAEMODYNAMIC STABILITY AT THE DOOR · RUNNING OUT OF TIME BEFORE CVS · FALSE REASSURANCE — 'I don't know yet, and that's why I want the test quickly.'**",
+    "**SA: CATEGORY 1 URGENT GASTROSCOPY via the Yorke and Northern LHN pathway or direct to RAH, Flinders or TQEH · PATS FORM COMPLETED BY THE PRACTICE NURSE TODAY · Country Health Connect · cancer care coordinator once diagnosed · MedSTAR 1300 13 12 33 if he becomes unstable · TIS National 131 450 · Closing the Gap PBS co-payment and ACCHS liaison where relevant.** VERIFY category definitions and PATS thresholds."
    ],
-   "fails": [
-    "★ Naming any investigation before endoscopy (bloods, breath test, especially FOBT); ★ never saying the word cancer; ★ claiming a physical finding not on the card; ★ omitting the per rectal examination",
-    "Opening with a haemodynamic stability check in a chronic outpatient; accepting 'indigestion' without defining it; starting reflux questions in the first minute",
-    "Taking 'nothing makes it worse' at face value; letting 'Mylanta doesn't work any more' pass; 'have you lost weight?' → 'yes' → moving on without kilos/period/intent",
-    "Stopping the history at 'dark stools'; finishing the abdomen and stopping — no chest question; 'a general and abdominal examination, please' (no node, no melaena); asking permission for the PR",
-    "Peptic ulcer first, cancer second/third; 'you have cancer' without 'possibility/not confirmed'; reasoning every differential (90 s — reason the top two, name the rest as groups); filling the silence with reassurance; no safety-net"
-   ],
-   "numbers": [
-    "Clock: 0:20 define the word · 2:30 red flags started · 4:00 history done · 5:30 PEFE · 6:30 diagnosis · 8:00 done · no haemodynamic check",
-    "PEFE positives ×3: pallor · melaena · left supraclavicular node · vitals ×4 to request · four boxes · triple loss · weight loss ×3 follow-ups",
-    "Task 4: endoscopy + biopsy → FBE + iron studies · no FOBT · H. pylori via biopsy/UBT (test of cure) · Category 1 VERIFY · PATS · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Gastric cancer on a peptic ulcer** — the answer",
+     "**6 months, PROGRESSIVE, ANTACID FAILURE, WEIGHT LOSS, MELAENA**",
+     "**PALLOR, CACHEXIA, LEFT SUPRACLAVICULAR NODE**",
+     "**Gastroscopy with biopsy** — urgent"
+    ],
+    [
+     "**Peptic ulcer disease (benign)** — differential two",
+     "**Burning epigastric pain related to food, night waking, NSAID, alcohol, smoking**",
+     "Epigastric tenderness; may be entirely normal",
+     "**Same gastroscopy — biopsy distinguishes them** — urgent here"
+    ],
+    [
+     "GORD / oesophagitis",
+     "**Heartburn, acid or metallic taste, WATER BRASH, worse lying flat**",
+     "Usually no signs",
+     "Gastroscopy; **PPI trial ONLY if no red flags**"
+    ],
+    [
+     "Pancreatic disease",
+     "**Pain boring to the back, relieved sitting forward; alcohol; prior abdominal trauma**",
+     "Epigastric fullness, weight loss, steatorrhoea",
+     "Lipase, CT — **not first-line here**"
+    ],
+    [
+     "Biliary colic / gallbladder",
+     "Episodic RUQ pain after fatty meals, to the right shoulder tip",
+     "Murphy's sign, jaundice",
+     "LFTs and abdominal ultrasound"
+    ],
+    [
+     "Lactose or food intolerance",
+     "Reproducible link to one food; bloating and wind dominate",
+     "Nil",
+     "Elimination trial, hydrogen breath test"
+    ],
+    [
+     "**Medication-induced gastritis or oesophagitis**",
+     "**NSAIDs, aspirin, ALENDRONATE, DOXYCYCLINE, POTASSIUM; symptoms started with the drug**",
+     "Nil",
+     "Stop or substitute; **gastroscopy if red flags**"
+    ],
+    [
+     "**Ischaemic heart disease**",
+     "**EXERTIONAL, radiating, dyspnoea or sweating; vascular risk factors**",
+     "**Nil on abdominal examination — ONE QUESTION COVERS IT**",
+     "**ECG ± troponin — MUST NOT BE MISSED** — emergency if suspected"
+    ],
+    [
+     "Oesophageal cancer",
+     "Progressive dysphagia, weight loss, smoking, reflux",
+     "**NO DYSPHAGIA here**",
+     "Gastroscopy"
+    ],
+    [
+     "**Irritable bowel syndrome — last**",
+     "Long history, bloating, altered bowel habit, **NO red flags, normal weight**",
+     "Nil",
+     "**A diagnosis of exclusion — NEVER THE ANSWER WHEN RED FLAGS ARE PRESENT**"
+    ]
    ]
   },
   "source": "Chronic_Indigestion_Dyspepsia_2_Case_Tasks_Script_Notability.pdf + Chronic_Dyspepsia_Gastric_Cancer_2_Case_Tasks_Script_Notability (1).pdf (Jimmy, 58/50, six months of worsening indigestion with antacid failure, weight loss, melaena and a Virchow's node — gastric cancer on a peptic ulcer)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Chronic_Indigestion_Dyspepsia_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "The card gives THREE findings",
-    "Do not invent others"
-   ],
-   [
-    "General",
-    "PALLOR, thin"
-   ],
-   [
-    "Observations",
-    "Within normal limits"
-   ],
-   [
-    "Abdomen",
-    "Soft, non-tender, no masses, normal bowel sounds"
-   ],
-   [
-    "Rectal examination",
-    "Melaena"
-   ],
-   [
-    "Heart sounds",
-    "Dual, no murmurs"
-   ],
-   [
-    "Neck",
-    "A palpable left supraclavicular node — Virchow's"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Naming any investigation before endoscopy — bloods, a breath test, and especially an FOBT before the word endoscopy is the single most reliable way to fail this station; 'the most important test is an endoscopy — a camera down into the stomach, and if we see anything we take small samples, biopsies'; then FBE and iron studies; FOBT has no role — melaena is visible bleeding, there is nothing occult to screen for; biopsies cover H. pylori so no separate breath test (★)",
-   "FAIL — Never saying the word cancer — 'I am concerned about the possibility of a gastric cancer — a cancer in the stomach; it is not confirmed yet, and that is exactly why I want to do a test'; if he says 'so what do you actually think it is?' at the end, you have already lost the mark; when he goes quiet, count to four — filling the silence with 'but I'm sure it'll be fine' is a fail (★)",
-   "FAIL — Omitting the per rectal examination, or claiming a finding not on the card — 'I would like to perform a per rectal examination' and 'a lymph node examination including the supraclavicular fossae' must be named as steps; the card gives three positives — pallor, melaena on PR, a palpable left supraclavicular node — and nothing else; inventing an epigastric mass, hepatomegaly or a Sister Mary Joseph nodule because they 'fit' is a fail (★)",
-   "FAIL — Accepting the word 'indigestion' — give him examples: 'is it a heartburn, a discomfort, or a bloated feeling?' — that converts the complaint into something SOCRATES can be applied to; and letting 'Mylanta doesn't work any more' pass without comment — antacid failure in six months of dyspepsia is itself a red flag, the hinge of the story: an ulcer that was responding and now is not",
-   "FAIL — Stopping the history when he says 'dark stools' — you now know the answer, but the marks are for having asked the remaining groups: ulcer and reflux (night waking, metallic taste, water brash), medications especially NSAIDs and aspirin, smoking, alcohol, spicy food, coffee, pancreas and biliary (injury, jaundice, fatty meals), food (dairy), and CVS ('any chest pain or breathlessness on exertion?'); red flags must begin by 2:30 and be quantified — 'how many kilos, over what period, were you trying to?'",
-   "DO — Do not open with vital signs (a chronic, non-acute presentation — it wastes history time; ask the four vitals at the examination step); diagnosis with four reasons (six months and worsening, antacid failure, unintended weight loss, dark stools = bleeding); peptic ulcer named as differential 2 with the story ('you've probably had an ulcer for a while, which is why Mylanta worked at first; my concern is a cancer developing on top of it'), the rest as groups; 'I don't know yet, and I'm not going to guess'; urgent Adelaide referral with PATS paperwork today; safety-net: vomiting blood, worsening black stools, faint, racing heart → ED; if the examiner asks about colonoscopy — gastroscopy first, bidirectional only if the scope is normal with confirmed iron deficiency; duodenal ulcers are essentially never malignant, gastric ulcers carry malignant potential and require biopsy and confirmation of healing"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-133",
