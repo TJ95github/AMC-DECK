@@ -32762,9 +32762,8 @@ const EMBEDDED_CARDS = [
  {
   "id": "MED-127",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED. Door sheet: WCC raised, lipase markedly raised, AST/ALT 2–3× ULN, bilirubin normal. Three versions, one patient: A — twelve drinks on Saturday; B1 — known hypertriglyceridaemia (father too); B2 (the 2025 case) — semaglutide six months, 3 kg intentional loss, previous cholecystectomy. Four automatic fails: no cardiac question/ECG; mild transaminase rise called a second disease; weight loss treated as a red flag without asking intent; pancreatitis named with no cause sought.",
   "stem": [
    "Steph Corrigan, 25, presents with severe epigastric pain since last night and repeated vomiting. Results: WCC raised · lipase markedly raised · AST and ALT 2–3× upper limit · bilirubin normal."
   ],
@@ -32773,85 +32772,209 @@ const EMBEDDED_CARDS = [
    "Explain the results and your diagnosis",
    "Give your differentials and management"
   ],
-  "time": "8 min. Stability (118/72, 104, 20, 37.4, 98%) · intro, ★ analgesia first, open · pain: where, /10 (9), ★ three epigastric add-ons — 'through to your back?' (yes), 'sitting forward or curling up help?' (a bit), 'what does food do?' (worse, not eating) · vomits ×5–6, bilious, blood?, bloating/wind/D/C/fever · ★ six cause questions in order: alcohol (standard drinks/week, heavy session?) · gallstones/gallbladder surgery (cholecystectomy 4 y) · medicines — NSAIDs, steroids, diuretics, ★ 'any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' · cholesterol/triglycerides/FHx, calcium · ERCP/trauma · viral illness · ★ cardiac: chest pain/tightness, SOB, sweating, jaw/arm — 'I would like an ECG' · red flags: weight loss → ★ 'was that on purpose?' (yes — the injection), appetite, dysphagia, haematemesis/melaena, lumps, FHx · urinary · SADMA · summarise · explain each result in plain words · dx + CAUSE · DDx · management spoken: admit, fluids (the single most important treatment), analgesia, antiemetic, USS, lipids + Ca, early feeding, no routine antibiotics, stop the GLP-1 and report the reaction.",
+  "findings": [
+   [
+    "THE DIAGNOSIS IS ON THE DOOR SHEET — SO THE MARKS ARE NOT FOR SAYING IT",
+    "WCC RAISED · LIPASE MARKEDLY RAISED · AST AND ALT 2–3× UPPER LIMIT · BILIRUBIN NORMAL. THE MARKS ARE FOR FINDING THE CAUSE, INTERPRETING THE MILDLY ABNORMAL LIVER TESTS CORRECTLY, AND EXPLAINING RESULTS TO A FRIGHTENED 25-YEAR-OLD IN PLAIN ENGLISH"
+   ],
+   [
+    "THE TRAP IN THE RESULTS",
+    "REPORTING THE MILDLY RAISED AST AND ALT AS A SECOND DISEASE. MILD TRANSAMINASE ELEVATION IS EXPECTED IN ACUTE PANCREATITIS. What it DOES do: AN ALT ABOVE ROUGHLY THREE TIMES THE UPPER LIMIT MAKES GALLSTONE PANCREATITIS CONSIDERABLY MORE LIKELY — use it as a POINTER TO THE CAUSE"
+   ],
+   [
+    "THE THREE EPIGASTRIC ADD-ONS TO SICORA",
+    "'DOES IT GO THROUGH TO YOUR BACK?' · 'IS IT BETTER IF YOU SIT FORWARD OR CURL UP?' · 'WHAT DOES FOOD DO TO IT — BETTER, WORSE, OR NO DIFFERENCE?'"
+   ],
+   [
+    "THE SIX CAUSE QUESTIONS — ask all six, every time",
+    "ALCOHOL — 'how much in a usual week, in standard drinks? A heavy session in the last few days?' · GALLSTONES — 'ever told you have gallstones? Gallbladder surgery?' · DRUGS — anti-inflammatories, steroids, AND 'ANY INJECTIONS FOR WEIGHT LOSS OR DIABETES — OZEMPIC, WEGOVY, TRULICITY?' · METABOLIC — HIGH TRIGLYCERIDES, family history, CALCIUM OR PARATHYROID · PROCEDURES AND TRAUMA — a recent ERCP, abdominal injury · INFECTION — recent viral illness, mumps"
+   ],
+   [
+    "VERSION A — alcohol",
+    "'I HAD A BIG NIGHT ON SATURDAY.' → 'HOW MANY STANDARD DRINKS, OVER HOW LONG? HOW MUCH IN A USUAL WEEK? HAVE YOU EVER TRIED TO CUT DOWN?' QUANTIFY IT — 'a big night' is not a history"
+   ],
+   [
+    "VERSION B1 — hypertriglyceridaemia",
+    "KNOWN HIGH CHOLESTEROL AND TRIGLYCERIDES, OR A FAMILY HISTORY, and a GROSSLY ABNORMAL LIPID PANEL. The serum may look LIPAEMIC. Triglycerides above about 11 mmol/L are the usual pancreatitis threshold. VERIFY"
+   ],
+   [
+    "VERSION B2 — the GLP-1 agonist, and TWO DELIBERATE DECOYS",
+    "ON SEMAGLUTIDE FOR MONTHS. 'I'VE LOST 3 kg' — 'WAS THAT ON PURPOSE?' — INTENTIONAL WEIGHT LOSS ON A WEIGHT-LOSS INJECTION IS THE DRUG WORKING, NOT A RED FLAG. 'I ALREADY HAD MY GALLBLADDER OUT' — DO NOT ABANDON THE PANCREAS: STONES CAN SIT IN THE DUCT AFTER CHOLECYSTECTOMY, and THE DRUG ITSELF REMAINS IN PLAY"
+   ],
+   [
+    "ONE CARDIAC QUESTION AND AN ECG — IN EVERY EPIGASTRIC STATION",
+    "'ANY CHEST PAIN OR TIGHTNESS? SHORTNESS OF BREATH? SWEATING? DOES IT GO INTO YOUR JAW OR DOWN YOUR ARM?' Then 'I WOULD LIKE AN ECG.' AN INFERIOR MI PRESENTS AS EPIGASTRIC PAIN AND NAUSEA. Omitting it is a starred fail"
+   ],
+   [
+    "THE SINGLE TEST CANDIDATES FORGET",
+    "EVERY PATIENT WITH ACUTE PANCREATITIS GETS AN ABDOMINAL ULTRASOUND — TO LOOK FOR GALLSTONES AND DUCT DILATATION. Lipase quoted, imaging never mentioned, is a listed fail"
+   ],
+   [
+    "THE SIGNS YOU NAME BUT DO NOT EXPECT",
+    "CULLEN'S SIGN — periumbilical bruising · GREY TURNER'S SIGN — flank bruising. Both reflect RETROPERITONEAL HAEMORRHAGE, are LATE AND UNCOMMON, and carry a POOR PROGNOSIS — name them in your inspection request"
+   ]
+  ],
+  "findingsLabel": "The diagnosis is on the door sheet — the marks are for the cause and the liver tests",
+  "must": [
+   "FAIL — Never asking a cardiac question or requesting an ECG.",
+   "FAIL — Calling the mildly raised AST and ALT a second, separate liver disease.",
+   "FAIL — Naming pancreatitis and never naming a cause.",
+   "FAIL — Recording 3 kg weight loss as a red flag without asking if it was intentional.",
+   "ASK — Any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?",
+   "ASK — How many standard drinks, and any heavy session in the last few days?"
+  ],
   "back": {
-   "dx": "Acute pancreatitis — 9/10 epigastric pain boring through to the back, eased sitting forward, food makes it worse, bilious vomiting ×5–6, lipase markedly raised. Cause by version: A alcohol (twelve drinks Saturday); B1 severe hypertriglyceridaemia (inherited — father); B2 semaglutide — no alcohol, no lipid disorder, gallbladder out four years ago (choledocholithiasis still possible — look), pancreatitis is a recognised uncommon effect of GLP-1 agonists → stop it, report it, 'you haven't done anything wrong'. Mildly raised AST/ALT are expected with pancreatitis and prompt a gallstone look, not a second disease; normal bilirubin suggests the main duct isn't blocked. 3 kg loss was intentional — a therapeutic effect, not a red flag.",
+   "dx": [
+    "**ACUTE PANCREATITIS — acute inflammation of the pancreas from PREMATURE ACTIVATION OF ITS OWN DIGESTIVE ENZYMES, causing AUTODIGESTION of the gland and surrounding tissue. CAUSE BY VERSION: ALCOHOL (A) · HYPERTRIGLYCERIDAEMIA (B1) · GLP-1 AGONIST (B2).**",
+    "**THE DIAGNOSIS NEEDS TWO OF THREE: CHARACTERISTIC PAIN · LIPASE OR AMYLASE AT THREE OR MORE TIMES THE UPPER LIMIT · CHARACTERISTIC IMAGING. LIPASE IS PREFERRED — MORE SPECIFIC AND IT STAYS RAISED LONGER. THE HEIGHT OF THE LIPASE DOES NOT INDICATE SEVERITY.**",
+    "**THE DISCRIMINATING ISSUE: QUALIFY EVERY ABNORMAL NUMBER AND EVERY RED FLAG BEFORE YOU REACT TO IT. Mildly raised transaminases are EXPECTED, NOT A SECOND DISEASE. Three kilograms of weight loss on a weight-loss injection is A THERAPEUTIC EFFECT, NOT A RED FLAG. CANDIDATES FAIL BY TREATING DATA AS CONCLUSIONS.**",
+    "**EXPLAINING THE RESULTS, VERBATIM: 'Steph, the important blood test is an enzyme called LIPASE, which THE PANCREAS MAKES. Yours is VERY HIGH, and together with the type of pain you've described that tells me YOUR PANCREAS IS INFLAMED — acute pancreatitis. Your WHITE CELL COUNT IS UP, which is your body responding. Your LIVER TESTS ARE SLIGHTLY RAISED. THAT IS EXPECTED WITH PANCREATITIS AND DOES NOT MEAN YOU HAVE A SEPARATE LIVER PROBLEM — but it does make me want to CHECK YOUR GALLBLADDER WITH AN ULTRASOUND, because A SMALL STONE SLIPPING DOWN CAN SET THE PANCREAS OFF.'**",
+    "**THE CAUSES, GROUPED — GALLSTONES AND ALCOHOL ACCOUNT FOR ROUGHLY FOUR IN FIVE AUSTRALIAN CASES; THE REST ARE WORTH MARKS PRECISELY BECAUSE MOST CANDIDATES STOP AFTER TWO: TRIGLYCERIDES AND CALCIUM · DRUGS INCLUDING GLP-1 AGONISTS · obstruction, ERCP, trauma · infection · autoimmune · idiopathic.**",
+    "**VERSION B2, THE TWO DECOYS ANSWERED: 'you mentioned losing three kilos — WAS THAT ON PURPOSE? … Right, that's THE INJECTION DOING WHAT IT IS MEANT TO DO, so I'm not treating that as a warning sign. And you've had your gallbladder out, which makes gallstones LESS LIKELY — BUT NOT IMPOSSIBLE, BECAUSE A STONE CAN STILL SIT IN THE TUBE. I also have to be honest: THIS CLASS OF INJECTION CAN ITSELF, UNCOMMONLY, INFLAME THE PANCREAS. It's high on my list and WE WILL NEED TO STOP IT while we sort this out.'**",
+    "**THE GLP-1 AGONIST QUESTION NOW BELONGS IN EVERY ABDOMINAL HISTORY: PANCREATITIS IS A RECOGNISED ADVERSE EFFECT · RAPID WEIGHT LOSS OF ANY CAUSE PROMOTES GALLSTONE FORMATION · they DELAY GASTRIC EMPTYING, which matters peri-operatively. ASK BY BRAND AS WELL AS BY CLASS — patients say 'Ozempic', not 'a GLP-1 receptor agonist'.** VERIFY current PBS criteria.",
+    "**MANAGEMENT: ADMIT · IV ACCESS · AGGRESSIVE FLUID RESUSCITATION WITH A BALANCED CRYSTALLOID — HARTMANN'S — GUIDED BY URINE OUTPUT AND HAEMODYNAMICS · OPIOID ANALGESIA IS APPROPRIATE · antiemetics · oxygen if hypoxic · monitor electrolytes, calcium, glucose. THEN: EARLY ENTERAL NUTRITION RATHER THAN PROLONGED STARVATION · NO ROUTINE PROPHYLACTIC ANTIBIOTICS · score severity at 48 hours · ICU for organ failure.**",
+    "**TREAT THE CAUSE: GALLSTONES — ERCP WITHIN 24 HOURS IF CHOLANGITIS OR PERSISTENT DUCT OBSTRUCTION, and CHOLECYSTECTOMY DURING THE SAME ADMISSION for mild gallstone pancreatitis · ALCOHOL — withdrawal management, THIAMINE, brief intervention, referral · TRIGLYCERIDES — fasting, fibrates, INSULIN INFUSION, plasmapheresis in severe cases · DRUG-INDUCED — STOP THE DRUG AND REPORT THE REACTION to the TGA.** VERIFY.",
+    "**CT IS NOT NEEDED AT PRESENTATION — reserve it for diagnostic uncertainty, or AT 72 HOURS OR LATER TO ASSESS NECROSIS, because EARLIER SCANNING UNDERSTAGES IT. SEVERITY: MODIFIED GLASGOW (IMRIE), RANSON, APACHE II OR BISAP — naming one and scoring at 48 hours is enough; CRP ABOVE 150 AT 48 HOURS suggests severe disease.** **SA: Yorke and Northern hospitals have no ICU — resuscitate and ring MedSTAR 1300 13 12 33 EARLY, not after a local CT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Examiner, may I confirm she is haemodynamically stable — BP, HR, RR, T, sats?' · 'I'm Dr —, am I speaking with Steph? You look like you're in a lot of pain — would you like something for it before we start? Tell me what's been happening.'"
+     "**ED STEM — STABILITY FIRST: BP, heart rate, respiratory rate, temperature, saturation.** Then **WIPE, open question, and acknowledge: 'that sounds really painful — I've got your blood results and I'll go through them with you.'**"
     ],
     [
-     "0:45",
-     "'Show me where. Out of ten? Sharp, or deep and boring? ★ Does it go through to your back? ★ Does sitting forward or curling up make any difference? ★ And what does food do to it — better, worse, no change?' → 9, through to the back, forward helps, hasn't eaten"
+     "0:25",
+     "**Offer analgesia — two questions, then move.** Then **SICORA WITH THE THREE ADD-ONS: through to the back · BETTER SITTING FORWARD · WHAT DOES FOOD DO?**"
     ],
     [
      "1:30",
-     "★ Six causes: 'alcohol — standard drinks in a usual week, any heavy session in the last few days?' · 'ever told you have gallstones, or had surgery on your gallbladder?' (out 4 y) · 'anti-inflammatories, steroids, water tablets? ★ any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' (Ozempic 6 months) · 'high cholesterol or triglycerides — anyone in the family? calcium/parathyroid?' · 'recent camera test of the bile duct, injury to the tummy?' · 'recent viral illness?'"
+     "**UPPER GI: NAUSEA AND VOMITING — how many, what colour · heartburn · difficulty swallowing · early fullness · DO ANTACIDS HELP?**"
     ],
     [
-     "3:00",
-     "★ Cardiac: chest pain/tightness, SOB, sweating, jaw/arm, cough/fever → 'I would like an ECG' · red flags: 'any weight loss?' → 3 kg → ★ 'was that on purpose?' → yes → 'that's the treatment working, not a warning sign' · appetite, dysphagia, haematemesis, melaena, lumps, FHx GI cancer · urinary · smoking, drugs, meds, allergies, PMHx/ops · summarise back"
+     "2:00",
+     "**THE CAUSE BLOCK — ALL SIX: ALCOHOL, QUANTIFIED IN STANDARD DRINKS, AND A RECENT HEAVY SESSION · GALLSTONES OR GALLBLADDER SURGERY · DRUGS — ANTI-INFLAMMATORIES, STEROIDS, AND WEIGHT-LOSS OR DIABETES INJECTIONS BY BRAND · HIGH TRIGLYCERIDES OR CALCIUM PROBLEMS, AND FAMILY HISTORY · A RECENT ERCP OR INJURY · a recent viral illness.**"
     ],
     [
-     "4:30",
-     "★ Results in plain words: lipase — 'an enzyme your pancreas makes; when it's inflamed it leaks into the blood; yours is very high — with this pain, the pancreas is inflamed' · WCC — 'your body's response to inflammation, not necessarily infection' · AST/ALT — 'liver tests only slightly up; expected with pancreatitis, not a separate liver problem — but it makes me want to check for a gallstone' · bilirubin normal — 'reassuring; the main bile tube isn't blocked at the moment'"
+     "3:15",
+     "**THE CARDIAC QUESTION — NEVER OMITTED: chest pain or tightness · breathlessness · SWEATING · jaw or arm · cough or fever.** Then **say 'I WOULD LIKE AN ECG.'**"
+    ],
+    [
+     "3:40",
+     "**GI RED FLAGS: WEIGHT LOSS — AND WAS IT INTENTIONAL · appetite · VOMITING BLOOD · BLACK TARRY STOOLS · lumps · family history of stomach or bowel cancer.** Then **the three KUB questions.**"
+    ],
+    [
+     "4:15",
+     "**If a decoy appears, QUALIFY IT BEFORE REACTING — 'was that on purpose?' — and 'a stone can still sit in the duct after the gallbladder is out.'**"
+    ],
+    [
+     "4:40",
+     "**SADMA and a one-line summary back to her.**"
+    ],
+    [
+     "5:00",
+     "**Ask for the examination if offered: general appearance, jaundice, dehydration · vitals · CULLEN AND GREY TURNER SIGNS · epigastric tenderness, guarding · bowel sounds · chest for effusion.**"
     ],
     [
      "5:30",
-     "★ Dx + cause: A 'acute pancreatitis, most likely caused by alcohol' (without moralising; offer help) · B1 'caused by very high triglycerides — high enough to inflame the pancreas directly; inherited — family should be checked' · B2 'the most likely trigger is the weight-loss injection, and we should stop it' → 'but why? I don't drink, no gallbladder' → 'the two commonest causes don't fit; stones can still form in the duct, so we'll look; the injection can, uncommonly, inflame the pancreas — I can't prove it today but it's high on my list' → 'have I done something wrong?' → 'not at all — an uncommon reaction to a medicine used properly' · DDx: duct stone, perforated ulcer (abdomen not rigid), cholecystitis (no gallbladder), MI (ECG)"
+     "**EXPLAIN THE RESULTS, ONE BY ONE, IN PLAIN ENGLISH — lipase, white cells, AND THE LIVER TESTS AS EXPECTED, NOT A SECOND DISEASE, with the gallbladder ultrasound as the reason.**"
+    ],
+    [
+     "6:15",
+     "**NAME THE CAUSE WITH ITS EVIDENCE: 'the most likely trigger is THE ALCOHOL on Saturday' — or the triglycerides, or the injection.**"
     ],
     [
      "6:45",
-     "★ Management: 'you need to come into hospital: rest the gut, a drip and plenty of fluids — the single most important treatment; strong pain relief; anti-nausea; ultrasound of the bile ducts; more bloods including cholesterol and calcium; regular review over 48 h; ★ eating again as soon as you can tolerate it — starving for days is old practice; ★ no antibiotics unless a specific infection' · B2: stop semaglutide, report the adverse reaction (TGA), discuss a safer option later · B1: fasting, sometimes insulin infusion, then fibrate, low-fat diet, no alcohol · A: alcohol conversation · rural → MedSTAR if severe"
+     "**THE DIFFERENTIALS: GALLSTONE PANCREATITIS · PERFORATED PEPTIC ULCER · BILIARY DISEASE · INFERIOR MYOCARDIAL INFARCTION — HENCE THE ECG · leaking aneurysm in an older patient · lower lobe pneumonia, DKA.**"
+    ],
+    [
+     "7:15",
+     "**THE MANAGEMENT: ADMIT · BALANCED CRYSTALLOID · OPIOID ANALGESIA AND ANTIEMETIC · bloods including CALCIUM AND FASTING TRIGLYCERIDES · ABDOMINAL ULTRASOUND · EARLY FEEDING, NOT STARVATION · NO PROPHYLACTIC ANTIBIOTICS · SEVERITY AT 48 HOURS · treat the cause.**"
+    ],
+    [
+     "7:45",
+     "**Answer her worry, and in Version A a brief, non-judgemental word about alcohol and support.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Does the pain go through to your back? Does sitting forward or curling up make any difference? And what does food do to it — better, worse, or no change?'",
-    "★ 'Alcohol — how much in a usual week, in standard drinks, and any heavy session in the last few days? Have you ever been told you have gallstones, or had surgery on your gallbladder? Any anti-inflammatories, steroids or water tablets? Any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity? High cholesterol or triglycerides — anyone in the family? Any recent camera test of the bile duct, or injury? Any recent viral illness?'",
-    "★ 'Any chest pain or tightness, shortness of breath, sweating, pain to the jaw or arm?' — 'Examiner, I would like an ECG.' / ★ 'Any weight loss? … Was that on purpose?'",
-    "★ 'The important one is an enzyme called lipase, which your pancreas makes — yours is very high. With this pattern of pain, that tells me your pancreas is inflamed: acute pancreatitis. Your white cells are up, which is your body responding. Your liver tests are slightly raised — that is expected with pancreatitis and does not mean a separate liver problem, but it makes me want to check for a gallstone. Your bilirubin is normal, which suggests the main bile tube isn't blocked.'",
-    "B2: ★ 'The two commonest causes are gallstones and alcohol, and neither fits you well — though stones can still form in the tube even after the gallbladder is removed, so we will look. But there is another possibility I have to raise: the weight-loss injection can, uncommonly, inflame the pancreas. I can't prove that today, but it is high on my list, and I think we should stop it while we sort this out.' / 'Have I done something wrong?' → ★ 'Not at all. This is an uncommon reaction to a medicine used properly — it isn't a mistake on your part or anyone else's.'",
-    "A: 'The most likely cause is the alcohol, and I want to explain that without any judgement. A large amount at once can trigger the pancreas to digest itself. The single most useful thing for preventing this again is stopping alcohol, and I'd like to help you with that rather than just tell you to.' / B1: 'Your blood carries a fat called triglyceride — yours is extremely high, high enough to inflame the pancreas directly. Fluids and pain relief first, then we bring the triglycerides down: fasting, sometimes an insulin drip, then a fibrate, a low-fat diet and no alcohol. Your family should be checked.'",
-    "★ 'You need to come into hospital. We'll rest your gut, put a drip in and give you plenty of fluids — that is the single most important treatment. Strong pain relief and something for the nausea. An ultrasound of your gallbladder and ducts, more bloods including cholesterol and calcium, and regular checks over the next two days. We'll start you eating again as soon as you can tolerate it. You won't need antibiotics unless there is a specific infection.'"
-   ],
    "pefe": [
-    "Role-player: Steph, 25, childcare in Port Pirie, lives with partner; semaglutide 6 months via a weight-loss clinic; cholecystectomy 4 y ago; glass of wine a month; non-smoker. Restless, rocks forward, frightened; visibly relieved by early analgesia. Two decoys: 'about three kilos' and nothing more until asked 'was it intentional?'; gallbladder surgery only when asked about gallstones/operations; Ozempic only when injections are named. Upset when the injection is blamed: 'have I done something wrong?', 'will I have to stop it? I've worked so hard'",
-    "Vitals 118/72 · 104 · 20 · 37.4 · 98%. Diagnosis: 2 of 3 — typical pain, lipase ≥3× ULN, imaging; lipase height ≠ severity. Gallstones + alcohol ≈ 80%; ALT >3× ULN points to gallstones; other causes: hypertriglyceridaemia (>11 mmol/L), hypercalcaemia, drugs (GLP-1 agonists, azathioprine, valproate, thiazides, steroids, oestrogens), post-ERCP, trauma, viral (mumps, CMV), autoimmune, idiopathic. Severity: CRP >150 at 48 h VERIFY, SIRS, BISAP/Glasgow; CT at ≥72 h for necrosis, not at presentation; ERCP within 24 h for cholangitis/persistent obstruction; cholecystectomy same admission for mild gallstone pancreatitis",
-    "Management: aggressive IV crystalloid (goal-directed), analgesia (opioids fine), antiemetic, early oral feeding when tolerated (no routine NBM/NG), no prophylactic antibiotics, USS, lipids/Ca, monitor for organ failure, HDU if severe; hypertriglyceridaemic — insulin infusion ± plasmapheresis VERIFY; GLP-1 — cease and report to TGA, do not rechallenge",
-    "Harder variants: rigid abdomen = perforated ulcer → erect CXR, resuscitate, antibiotics, theatre · pancreatitis with jaundice + fever = gallstone pancreatitis with cholangitis → ERCP within 24 h · diabetic with epigastric pain and vomiting → ketones/glucose first (DKA)",
-    "SA: MedSTAR 1300 13 12 33 for severe pancreatitis from a rural site · TIS 131 450 · DASSA for alcohol"
+    "**Do now: IV ACCESS · BALANCED CRYSTALLOID GUIDED BY URINE OUTPUT · OPIOID ANALGESIA AND AN ANTIEMETIC · ECG · bloods — FBC, UEC, CALCIUM, FASTING LIPIDS INCLUDING TRIGLYCERIDES, GLUCOSE, LFT, LIPASE, LDH, ALBUMIN, VBG WITH LACTATE, COAGULATION · ABDOMINAL ULTRASOUND FOR GALLSTONES AND DUCT DILATATION.**",
+    "**What the results mean: LIPASE ≥3× UPPER LIMIT confirms with the pain · A RAISED WHITE COUNT IS EXPECTED · MILDLY RAISED AST/ALT IS EXPECTED — ALT ABOVE ~3× POINTS TO A GALLSTONE CAUSE · HYPOCALCAEMIA and hyperglycaemia are markers of severity.**",
+    "**Imaging: ULTRASOUND FOR EVERY PATIENT. CT ABDOMEN WITH CONTRAST ONLY FOR DIAGNOSTIC UNCERTAINTY OR AT 72 HOURS+ FOR NECROSIS — a swollen, indistinct pancreas with peripancreatic fat stranding.**",
+    "**Then: EARLY ENTERAL NUTRITION as tolerated · NO ROUTINE PROPHYLACTIC ANTIBIOTICS · SEVERITY SCORE AT 48 HOURS · ICU FOR ORGAN FAILURE · ERCP WITHIN 24 HOURS FOR CHOLANGITIS OR PERSISTENT OBSTRUCTION · CHOLECYSTECTOMY SAME ADMISSION FOR MILD GALLSTONE PANCREATITIS · STOP THE CULPRIT DRUG AND REPORT IT.**",
+    "**Complications to name: PANCREATIC NECROSIS AND INFECTED NECROSIS · PSEUDOCYST · ARDS AND PLEURAL EFFUSION · ACUTE KIDNEY INJURY · HYPOCALCAEMIA · SPLENIC VEIN THROMBOSIS · later DIABETES AND EXOCRINE INSUFFICIENCY after recurrent disease.**",
+    "**Do not miss: INFERIOR MYOCARDIAL INFARCTION — ECG AND TROPONIN · PERFORATED PEPTIC ULCER — erect chest X-ray for free gas · CHOLANGITIS — fever, jaundice, RUQ pain · A LEAKING AORTIC ANEURYSM in an older patient · ALCOHOL WITHDRAWAL during admission — THIAMINE BEFORE GLUCOSE.**",
+    "**Avoid: STARVING THE PATIENT FOR A WEEK · PROPHYLACTIC ANTIBIOTICS · CT AT PRESENTATION · treating mild transaminase rise as hepatitis · recording intentional weight loss as a red flag · abandoning pancreatitis because the gallbladder is out.** **SA: MedSTAR 1300 13 12 33 early; TQEH or RAH for ERCP; DASSA for alcohol support; TIS National 131 450.**"
    ],
-   "fails": [
-    "★ No cardiac question or ECG; ★ calling the mild transaminase rise a second disease; ★ treating the 3 kg as a red flag without asking intent; ★ naming pancreatitis with no cause sought",
-    "Generic SOCRATES without the three epigastric add-ons; never asking about weight-loss injections",
-    "Blaming the patient for the drug reaction; keeping her NBM for days; routine antibiotics",
-    "Missing that a stone can still lodge in the duct after cholecystectomy; no lipids/calcium"
-   ],
-   "numbers": [
-    "Lipase ≥3× ULN · 2 of 3 criteria · gallstones + alcohol ≈ 80% · ALT >3× ULN → stones · TG >11 mmol/L · CRP >150 at 48 h severe VERIFY",
-    "CT ≥72 h · ERCP within 24 h if cholangitis/obstruction · cholecystectomy same admission (mild gallstone) · fluids first, early feeding, no routine antibiotics",
-    "Vitals 118/72 · 104 · 20 · 37.4 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Acute pancreatitis** — the answer",
+     "**Severe pain BORING TO THE BACK, BETTER SITTING FORWARD, vomiting, LIPASE ≥3×**",
+     "**THE SIX CAUSE QUESTIONS — alcohol, gallstones, drugs, triglycerides, procedures, infection**",
+     "**Lipase; LFTs; ULTRASOUND IN EVERY CASE** — EMERGENCY"
+    ],
+    [
+     "**Gallstone pancreatitis**",
+     "**ALT ABOVE ~3× UPPER LIMIT; known gallstones; a stone in the duct AFTER cholecystectomy**",
+     "**Gallstone history; jaundice; duct dilatation on ultrasound**",
+     "**Ultrasound; ERCP within 24 h if cholangitis or obstruction**"
+    ],
+    [
+     "**Drug-induced pancreatitis — GLP-1 agonist**",
+     "**Semaglutide, dulaglutide, tirzepatide; INTENTIONAL weight loss**",
+     "**'Any injections for weight loss or diabetes?' — BY BRAND**",
+     "**STOP THE DRUG; report to the TGA**"
+    ],
+    [
+     "**Hypertriglyceridaemia-induced**",
+     "**Known high triglycerides, family history, LIPAEMIC SERUM**",
+     "Lipid history; diabetes; alcohol",
+     "**Fasting lipids; insulin infusion, fibrates, plasmapheresis if severe**"
+    ],
+    [
+     "**Inferior myocardial infarction**",
+     "**Epigastric pain with NAUSEA, SWEATING, BREATHLESSNESS; risk factors**",
+     "**Chest, jaw, arm, sweating, exertion**",
+     "**ECG AND TROPONIN — BEFORE ANYTHING ELSE** — EMERGENCY"
+    ],
+    [
+     "**Perforated peptic ulcer**",
+     "**SUDDEN severe pain, RIGID abdomen, NSAID history**",
+     "Sudden onset, BOARD-LIKE RIGIDITY",
+     "**Erect chest X-ray for free gas; theatre** — EMERGENCY"
+    ],
+    [
+     "Biliary colic and cholecystitis",
+     "Episodic pain after fatty meals, **right shoulder tip**; fever and Murphy positive if inflamed",
+     "Fatty food trigger, radiation, fever",
+     "Ultrasound — stones PLUS wall thickening and fluid — same day if inflamed"
+    ],
+    [
+     "**Leaking abdominal aortic aneurysm**",
+     "**Older smoker, central and back pain, collapse**",
+     "Back pain, syncope, pulsatile mass",
+     "**Bedside ultrasound; theatre** — EMERGENCY"
+    ],
+    [
+     "Peptic ulcer · gastritis · reflux",
+     "Weeks of food-related pain, antacid-responsive; burning worse lying flat",
+     "NSAIDs, alcohol, H. pylori",
+     "**Lipase would not be ≥3× — H. pylori testing, gastroscopy if alarm features**"
+    ],
+    [
+     "Lower lobe pneumonia · DKA · shingles",
+     "Cough and fever; **thirst and polyuria**; a dermatomal band",
+     "Chest examination; **BSL and ketones**; inspect the skin",
+     "Chest X-ray; VBG; antivirals"
+    ]
    ]
   },
   "source": "Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf Versions A/B1/B2 (Steph Corrigan, 25, severe epigastric pain with a markedly raised lipase — pancreatitis from alcohol, triglycerides, or semaglutide)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — No cardiac question and no ECG — 'any chest pain or tightness? shortness of breath? sweating with the pain? does it go to your jaw or arm? cough or fever?' — then to the examiner, 'I would like an ECG'; epigastric pain is a cardiac impostor until proven otherwise (★)",
-   "FAIL — Hearing 'about three kilos' and putting cancer at the top of the list — one question, 'was that on purpose?', converts a red flag into a therapeutic effect ('that's the whole point of the injection'); the station is built to see whether you ask it (★)",
-   "FAIL — Calling the mild transaminase rise a second disease — 'your liver tests are only slightly up; that is expected when the pancreas is inflamed and doesn't mean a separate liver problem — what it does do is make me want to check for a gallstone slipping down the tube'; bilirubin normal → 'the main bile tube isn't blocked at the moment' (★)",
-   "FAIL — Naming pancreatitis with no cause sought — the six cause questions in order: alcohol in standard drinks and 'any heavy session in the last few days?'; gallstones or gallbladder surgery; medicines — anti-inflammatories, steroids, water tablets, and 'any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' (never volunteered); cholesterol or triglycerides and family; calcium; recent ERCP or injury; viral illness (★)",
-   "DO — Stability with the examiner, analgesia offered before anything else, then the three epigastric add-ons each individually scored: 'does it go through to your back? does sitting forward or curling up make a difference? what does food do to it?'; vomits — number, colour, blood; results in plain words — lipase 'an enzyme your pancreas makes; when it's inflamed it leaks into the blood', white cells 'the body's response, not necessarily infection'",
-   "SAY — Version A: alcohol without moralising ('a large amount at once can trigger the pancreas to digest itself; stopping alcohol is the single most useful thing, and I'd like to help you with that rather than just tell you'); B1: triglycerides inflame the pancreas directly — fluids, fasting, sometimes an insulin drip, then a fibrate, low-fat diet, no alcohol, family checked; B2: 'the weight-loss injection can, uncommonly, inflame the pancreas — I can't prove that today but it's high on my list and we should stop it'; 'have I done something wrong?' → 'an uncommon reaction to a medicine used properly'; keep a duct stone alive despite the cholecystectomy; report the reaction; management — admission, generous IV fluids ('the single most important treatment'), strong analgesia, antiemetic, ultrasound of the bile ducts, lipids and calcium, early feeding, no routine antibiotics; jaundice plus fever = cholangitis → ERCP within 24 hours"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-128",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version C of the epigastric pain document (stem reconstructed from the variant lines). The ultrasound shows gallstones that are quiet — do not let them explain the story. The sentence that must come before the prescription: stop the ibuprofen.",
   "stem": [
    "Warren Diggs, 40, presents with epigastric pain for six weeks, worse when he eats; antacids help for an hour or two. He takes ibuprofen daily for back pain. Ultrasound: gallstones present; no wall thickening, no duct dilatation, no inflammation."
   ],
@@ -32860,78 +32983,207 @@ const EMBEDDED_CARDS = [
    "Explain the ultrasound to the patient",
    "Give your diagnosis, differentials and management"
   ],
-  "time": "8 min. Intro, open, concerns · pain: gnawing, 5/10, ★ worse after eating, ★ antacids relieve, through to back? (no), sitting forward? · vomiting, blood · six cause questions incl ★ NSAIDs (2–3 Nurofen most days for months), alcohol, gallstones (known), steroids, GLP-1, lipids · cardiac screen + ECG if any doubt · red flags: weight loss (intent), dysphagia, haematemesis/melaena, anaemia symptoms, FHx · biliary specifics: fatty food, RUQ, shoulder tip, episodic hours-long attacks (no) · SADMA · explain the USS: 'stones sitting there quietly — common, we don't operate on quiet stones' · dx: NSAID-associated peptic (gastric) ulcer with reasons; DDx: GORD, gastritis, functional dyspepsia, biliary colic (doesn't fit), pancreatitis, gastric cancer (age 40, no red flags — low threshold) · ★ management: stop ibuprofen first → PPI → H. pylori test (off PPI 2 weeks) → treat if positive → alarm-feature safety-net → review; endoscopy if not settling/red flags.",
+  "findings": [
+   [
+    "THE TRAP HANDED TO YOU ON PAPER",
+    "ULTRASOUND: GALLSTONES PRESENT; NO WALL THICKENING, NO DUCT DILATATION, NO INFLAMMATION. SEEING 'GALLSTONES' ON THE REPORT AND DIAGNOSING BILIARY COLIC IS THE FAIL. THE STORY DOES NOT FIT AND THE GALLBLADDER IS NOT INFLAMED"
+   ],
+   [
+    "WHY THE STORY DOES NOT FIT",
+    "GALLSTONE PAIN comes on SUDDENLY AFTER FATTY FOOD, LASTS AN HOUR OR TWO, and often goes to the RIGHT SHOULDER. HIS is a GNAWING PAIN THAT HAS BEEN THERE FOR WEEKS, WORSE WHEN HE EATS, AND SETTLES WITH ANTACIDS"
+   ],
+   [
+    "QUANTIFY THE IBUPROFEN",
+    "'I TAKE NUROFEN FOR MY BACK.' → 'HOW MANY A DAY, FOR HOW LONG? DO YOU TAKE THEM WITH FOOD? ANYTHING ELSE — ASPIRIN, STEROIDS, BLOOD THINNERS?' That combination multiplies ulcer and bleeding risk"
+   ],
+   [
+    "WHICH WAY DOES FOOD CHANGE IT?",
+    "'IT'S WORSE AFTER I EAT' → WORSE WITH EATING SUGGESTS A GASTRIC ULCER; RELIEVED BY EATING AND WAKING HIM HUNGRY AT NIGHT SUGGESTS A DUODENAL ULCER. ASK WHICH"
+   ],
+   [
+    "THE ALARM FEATURES — ask every one",
+    "AGE OVER 50 WITH NEW DYSPEPSIA · UNINTENTIONAL WEIGHT LOSS · DIFFICULTY SWALLOWING · PERSISTENT VOMITING · ANAEMIA · EVIDENCE OF BLEEDING — VOMITING BLOOD, BLACK TARRY STOOLS · A MASS. ANY ONE MEANS ENDOSCOPY"
+   ],
+   [
+    "ONE CARDIAC QUESTION AND AN ECG — STILL",
+    "'ANY CHEST PAIN OR TIGHTNESS, BREATHLESSNESS, SWEATING, OR PAIN IN THE JAW OR ARM?' then 'I WOULD LIKE AN ECG.' Every epigastric station, no exceptions"
+   ],
+   [
+    "THE PANCREATIC QUESTIONS STILL BELONG",
+    "DOES IT GO THROUGH TO YOUR BACK · BETTER SITTING FORWARD · HOW MUCH ALCOHOL. Asked and answered no, they are part of how you exclude pancreatitis ALOUD"
+   ],
+   [
+    "QUIET GALLSTONES ARE COMMON AND USUALLY LEFT ALONE",
+    "GALLSTONES ARE FOUND INCIDENTALLY IN A LARGE MINORITY OF ADULTS AND MOST NEVER CAUSE SYMPTOMS. ASYMPTOMATIC GALLSTONES ARE NOT AN INDICATION FOR CHOLECYSTECTOMY"
+   ],
+   [
+    "SAY THREE THINGS ABOUT AN INCIDENTAL REPORT",
+    "THE STONES ARE REAL · THEY ARE NOT CAUSING THIS PROBLEM · AND HERE ARE THE SYMPTOMS THAT WOULD MEAN THEY HAD STARTED TO — sudden severe right-upper pain after food, fever, yellow skin or eyes, dark urine, pale stools"
+   ],
+   [
+    "THE MISTAKE THAT IS A LISTED FAIL",
+    "PRESCRIBING A PROTON PUMP INHIBITOR AND NEVER MENTIONING STOPPING THE NSAID. STOP THE CAUSE, THEN TREAT THE ULCER, THEN TEST FOR H. PYLORI — and discuss an alternative for his back"
+   ]
+  ],
+  "findingsLabel": "Gallstones on the report that explain nothing — and the ibuprofen that explains everything",
+  "must": [
+   "FAIL — Diagnosing biliary colic because the report says 'gallstones'.",
+   "FAIL — Prescribing a PPI and never mentioning stopping the ibuprofen.",
+   "FAIL — Never asking a cardiac question or requesting an ECG.",
+   "FAIL — No alarm-feature screen, so bleeding or weight loss is missed.",
+   "ASK — How many ibuprofen a day, and for how long?",
+   "ASK — Any vomiting blood, black tarry stools, weight loss or trouble swallowing?"
+  ],
   "back": {
-   "dx": "NSAID-associated peptic ulcer disease — six weeks of gnawing epigastric pain, worse after eating, relieved by antacids for an hour or two, daily ibuprofen for months; gallstones on ultrasound are incidental (no wall thickening, no duct dilatation, no inflammation, and the story is not biliary). Explain the ultrasound: 'stones in your gallbladder, but the wall isn't thickened, the tubes aren't blocked and there's no inflammation — these stones are sitting there quietly; very common; we don't operate on quiet stones.' Three things: stop the ibuprofen (the cause — no acid tablet fixes it while it continues), PPI, H. pylori breath/stool test off PPI for two weeks; eradicate if positive; red flags → hospital.",
+   "dx": [
+    "**PEPTIC ULCER DISEASE — NSAID-RELATED, GASTRIC ULCER PATTERN — with INCIDENTAL, ASYMPTOMATIC GALLSTONES.** **A peptic ulcer is a break in the mucosal lining of the stomach or duodenum EXTENDING THROUGH THE MUSCULARIS MUCOSAE, most often caused by HELICOBACTER PYLORI or NSAIDs.**",
+    "**THE DISCRIMINATING ISSUE: QUALIFY THE REPORT BEFORE YOU REACT TO IT. STONES PLUS A FITTING STORY EQUALS BILIARY DISEASE. STONES PLUS A NON-FITTING STORY EQUALS AN INCIDENTAL FINDING. Candidates fail by TREATING DATA AS CONCLUSIONS.**",
+    "**REFUSING THE GALLSTONE TRAP, VERBATIM: 'Warren, the scan DOES SHOW SOME STONES in your gallbladder. BUT I DON'T THINK THEY ARE CAUSING THIS PAIN, and here is why: gallstone pain comes on SUDDENLY AFTER FATTY FOOD, LASTS AN HOUR OR TWO and often goes to the RIGHT SHOULDER. Yours is A GNAWING PAIN that has been there FOR WEEKS, it is WORSE WHEN YOU EAT, and it SETTLES WITH ANTACIDS. THERE IS NO INFLAMMATION OF THE GALLBLADDER ON THE SCAN. That pattern, PLUS THE IBUPROFEN YOU TAKE FOR YOUR BACK, points to AN ULCER IN THE STOMACH.'**",
+    "**THE MECHANISM IN ONE LINE FOR HIM: 'anti-inflammatories like ibuprofen BLOCK THE CHEMICALS THAT PROTECT THE LINING OF THE STOMACH, so the acid starts to wear a small raw patch in it — THAT'S THE ULCER.'** **Technically: NSAIDs INHIBIT COX-1 AND REDUCE PROSTAGLANDIN-MEDIATED MUCOSAL PROTECTION — mucus, bicarbonate, and blood flow.**",
+    "**GASTRIC VERSUS DUODENAL: GASTRIC — pain CLASSICALLY WORSE WITH EATING, and ALWAYS BIOPSIED TO EXCLUDE MALIGNANCY, then RE-SCOPED TO CONFIRM HEALING. DUODENAL — pain RELIEVED BY EATING AND WORST WHEN HUNGRY OR AT NIGHT; usually NOT re-scoped.** **The food pattern is suggestive, not diagnostic — endoscopy decides.**",
+    "**MANAGEMENT, IN ORDER: STOP THE OFFENDING NSAID AND DISCUSS ALTERNATIVES FOR THE BACK PAIN — paracetamol, physiotherapy, activity · START A PROTON PUMP INHIBITOR · TEST FOR H. PYLORI — urea breath test or stool antigen — AND STOP THE PPI BEFOREHAND OR THE TEST IS FALSELY NEGATIVE · advise on alcohol and smoking · SAFETY-NET FOR BLEEDING.**",
+    "**IF H. PYLORI IS POSITIVE: ERADICATION with A PPI PLUS AMOXICILLIN AND CLARITHROMYCIN FOR SEVEN DAYS, then CONFIRM ERADICATION with a repeat breath test at least four weeks after antibiotics.** VERIFY current Therapeutic Guidelines regimen and local resistance advice.",
+    "**ENDOSCOPY IF ANY ALARM FEATURE: AGE OVER 50 WITH NEW DYSPEPSIA · UNINTENTIONAL WEIGHT LOSS · DYSPHAGIA · PERSISTENT VOMITING · ANAEMIA · EVIDENCE OF BLEEDING · A MASS.** **At 40 without alarm features, TEST-AND-TREAT with H. pylori testing plus stopping the NSAID is reasonable — BUT THE ULCER PATTERN WITH REGULAR NSAIDs MAKES A LOW THRESHOLD FOR GASTROSCOPY SENSIBLE.**",
+    "**THE GALLSTONES, HANDLED IN THREE SENTENCES: 'the stones are REAL · they're NOT CAUSING THIS · and if you ever get SUDDEN SEVERE PAIN UNDER THE RIGHT RIBS AFTER FOOD, A FEVER, OR YELLOWING OF YOUR SKIN OR EYES, THAT'S WHEN THEY'VE STARTED TO MATTER.' ASYMPTOMATIC GALLSTONES ARE NOT AN INDICATION FOR CHOLECYSTECTOMY.**",
+    "**IF HE MUST STAY ON AN NSAID: THE LOWEST DOSE FOR THE SHORTEST TIME, WITH PPI GASTROPROTECTION, and avoid combining with aspirin, steroids, SSRIs or anticoagulants.** **SAFETY-NET: VOMITING BLOOD, BLACK TARRY STOOLS, FAINTING, OR SUDDEN SEVERE PAIN WITH A RIGID TUMMY — CALL 000.** **SA: gastroscopy through Wallaroo or TQEH with PATS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open ('six weeks of pain, worse after eating, antacids help'), concerns"
+     "**WIPE, open question, acknowledge: 'six weeks of that is a long time — let's work out what's going on, and I'll go through the scan with you.'**"
     ],
     [
-     "0:40",
-     "Pain: site, character (gnawing), /10 (5), ★ 'what does food do?' (worse), ★ 'do antacids help?' (hour or two), through to back (no), forward (no change), night pain, timing after meals"
+     "0:25",
+     "**SICORA WITH THE THREE ADD-ONS: through to the back · better sitting forward · WHAT DOES FOOD DO — WORSE AFTER EATING, OR BETTER, AND DOES IT WAKE YOU HUNGRY AT NIGHT?**"
     ],
     [
-     "1:30",
-     "Vomiting, haematemesis · ★ six causes: alcohol quantified · gallstones (told — the scan) · ★ 'any anti-inflammatories — Nurofen, Voltaren? how many, how long?' (2–3 most days, months) · steroids · weight-loss injections · lipids/Ca · trauma/ERCP · viral"
+     "1:20",
+     "**UPPER GI: heartburn, reflux · DO ANTACIDS HELP, AND FOR HOW LONG · nausea, vomiting · early fullness · bloating.**"
     ],
     [
-     "2:45",
-     "Cardiac screen (exertional, sweating, jaw/arm) · red flags: weight loss + intent, appetite, dysphagia, ★ melaena/haematemesis, tiredness/dizziness (anaemia), lumps, FHx gastric/bowel cancer · biliary specifics: fatty-food attacks, RUQ, right shoulder blade, hours-long episodes → no · reflux screen (heartburn, water brash) · smoking, coffee, stress · the back pain: cause, other treatments · SADMA · summarise"
+     "1:50",
+     "**THE IBUPROFEN, QUANTIFIED: HOW MANY A DAY · HOW LONG · WITH FOOD · ANY ASPIRIN, STEROIDS, BLOOD THINNERS · ANYTHING ELSE FROM THE CHEMIST?**"
     ],
     [
-     "4:30",
-     "★ Ultrasound: 'There are stones in your gallbladder. But the gallbladder wall is not thickened, the tubes are not blocked and there's no inflammation — so these stones are sitting there quietly. They are very common and we don't operate on quiet stones. And your pain doesn't behave like gallstone pain — that comes in attacks after fatty meals, lasts hours, goes to the shoulder blade.'"
+     "2:20",
+     "**THE ALARM FEATURES: VOMITING BLOOD · BLACK TARRY STOOLS · WEIGHT LOSS — AND WAS IT INTENTIONAL · DIFFICULTY SWALLOWING · PERSISTENT VOMITING · TIREDNESS OR BREATHLESSNESS SUGGESTING ANAEMIA · family history of stomach cancer.**"
     ],
     [
-     "5:30",
-     "★ Dx: 'an ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back' — reasons: weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, quiet gallstones that don't fit · DDx: reflux/gastritis, functional dyspepsia, biliary colic, pancreatitis, gastric cancer (unlikely at 40 without red flags — low threshold for a scope if not settling)"
+     "2:55",
+     "**THE BILIARY QUESTIONS — ASKED SO YOU CAN EXCLUDE ALOUD: SUDDEN ATTACKS AFTER FATTY FOOD · PAIN UNDER THE RIGHT RIBS OR TO THE RIGHT SHOULDER · fever · yellowing · dark urine or pale stools?**"
     ],
     [
-     "6:30",
-     "★ 'Before I give you anything, the most important step is to stop the ibuprofen. That is what has caused the ulcer, and no acid tablet will fix it while you keep taking it. Let's talk about what else we can do for your back — paracetamol, physiotherapy, and a review of why it's been hurting so long.' · PPI (e.g. esomeprazole 20 mg daily 4–8 weeks VERIFY) · ★ H. pylori breath or stool test — 'you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative'; if positive: a week of two antibiotics plus the acid tablet, then a breath test to confirm cure · alcohol, smoking · review 4 weeks; gastroscopy if not settling, if >50, or any alarm feature · ★ 'go straight to hospital if you vomit blood, pass black tarry motions, or the pain suddenly becomes severe'"
+     "3:20",
+     "**THE PANCREATIC QUESTIONS: through to the back, sitting forward, ALCOHOL IN STANDARD DRINKS, any weight-loss or diabetes injections.**"
+    ],
+    [
+     "3:40",
+     "**THE CARDIAC QUESTION, THEN 'I WOULD LIKE AN ECG.'**"
+    ],
+    [
+     "3:55",
+     "**SMOKING, ALCOHOL, other medications, allergies · the back pain itself — what is it, what else has he tried?** Then **a one-line summary.**"
+    ],
+    [
+     "4:20",
+     "**If examination is offered: general appearance, PALLOR · vitals · epigastric tenderness, guarding, rigidity · Murphy sign · masses · lymph nodes including LEFT SUPRACLAVICULAR · rectal examination for MELAENA with consent.**"
+    ],
+    [
+     "5:00",
+     "**EXPLAIN THE ULTRASOUND: 'the scan DOES show stones — BUT I don't think they're causing this, and here's why' — the refusal script, point by point.**"
+    ],
+    [
+     "5:50",
+     "**NAME THE ULCER, with the mechanism in plain words and the link to the ibuprofen.**"
+    ],
+    [
+     "6:20",
+     "**THE DIFFERENTIALS: duodenal versus gastric ulcer · gastritis and reflux · functional dyspepsia · biliary colic — excluded on the story and the scan · pancreatitis · INFERIOR MI — HENCE THE ECG · GASTRIC CANCER, which is why a gastric ulcer is biopsied.**"
+    ],
+    [
+     "7:00",
+     "**THE PLAN, IN ORDER: STOP THE IBUPROFEN AND AGREE AN ALTERNATIVE FOR THE BACK · A PPI · H. PYLORI TESTING, stopping the PPI beforehand · FBC for anaemia · GASTROSCOPY IF ANY ALARM FEATURE OR IF IT FAILS TO SETTLE.**"
+    ],
+    [
+     "7:35",
+     "**THE GALLSTONES IN THREE SENTENCES, then THE BLEEDING SAFETY-NET — vomiting blood, black stools, fainting, sudden severe pain: CALL 000.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'What does food do to it — better, worse, or no change? Do antacids help, and for how long?' / ★ 'Any anti-inflammatories like ibuprofen, Nurofen or Voltaren — how many a day, and for how long?'",
-    "'Does the pain come in attacks an hour or two after fatty food, last a few hours, and go to your right shoulder blade?' / 'Any black tarry motions, vomiting blood, difficulty swallowing, or weight loss you weren't trying for?'",
-    "★ 'There are stones in your gallbladder. But the gallbladder wall is not thickened, the tubes are not blocked and there's no inflammation — so these stones are sitting there quietly. They are very common and we don't operate on quiet stones.'",
-    "★ 'An ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back — weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, and gallstones that are present but not inflamed and do not fit the story.'",
-    "★ 'Before I give you anything, the most important step is to stop the ibuprofen. That is what has caused the ulcer, and no acid tablet will fix it while you keep taking the ibuprofen.' / 'I'll test you for a stomach bacterium called Helicobacter, with a breath test or a stool test — and you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative. If it's positive we treat it with a week of two antibiotics plus the acid tablet.'",
-    "'Go straight to hospital if you vomit blood, pass black tarry motions, or the pain suddenly becomes severe.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): Warren, 40; gnawing epigastric pain six weeks, 5/10, worse after eating, antacids help an hour or two; 2–3 Nurofen daily for months for back pain; no weight loss, no haematemesis, no melaena. USS: gallstones, normal wall, no duct dilatation, no inflammation",
-    "Asymptomatic gallstones: ~10–15% of adults; most never cause symptoms; cholecystectomy only for symptomatic stones or complications (exceptions: porcelain gallbladder, large polyps, certain risk groups) VERIFY. Biliary colic pattern: postprandial (fatty), RUQ/epigastric, radiates to right scapula, 1–6 h, no fever",
-    "PUD: NSAIDs and H. pylori are the two causes; gastric ulcer pain classically worse with food (15–60 min), duodenal 2–5 h after/at night relieved by food. H. pylori testing: urea breath test or stool antigen — off PPI ≥2 weeks and antibiotics ≥4 weeks; eradication 7-day triple therapy (esomeprazole 20 mg + amoxicillin 1 g + clarithromycin 500 mg, all bd; metronidazole 400 mg if penicillin-allergic) VERIFY TG; test of cure ≥4 weeks after antibiotics. PPI 4–8 weeks; gastric ulcers need repeat endoscopy to confirm healing/biopsy. Endoscopy: alarm features at any age; new dyspepsia ≥50 (some say 55–60); NSAID ulcer with continued need → PPI cover, COX-2, review",
-    "Back pain alternatives: paracetamol, physio, exercise, heat, topical NSAID (less systemic), review cause; if NSAID unavoidable — lowest dose, shortest time, PPI co-prescription",
-    "SA: healthdirect 1800 022 222 · gastroenterology via LHN if scope needed"
+    "**Bedside: ECG · vitals · pallor · urine dipstick · BSL. Bloods: FBC for iron-deficiency anaemia, iron studies, UEC, LFT, lipase if pancreatitis is on the list.**",
+    "**H. PYLORI TESTING: UREA BREATH TEST OR STOOL ANTIGEN — STOP THE PPI FOR ABOUT TWO WEEKS BEFOREHAND, and avoid antibiotics or bismuth for four weeks, OR THE TEST IS FALSELY NEGATIVE. Serology cannot confirm active infection or eradication.** VERIFY.",
+    "**GASTROSCOPY for ANY ALARM FEATURE — and for a GASTRIC ULCER, BIOPSY TO EXCLUDE MALIGNANCY AND RE-SCOPE TO CONFIRM HEALING.** A gastric ulcer appears as a crater with a pale, slough-covered base.",
+    "**Management: STOP THE NSAID · PPI — typically for EIGHT WEEKS for a gastric ulcer · H. PYLORI ERADICATION IF POSITIVE — PPI, AMOXICILLIN AND CLARITHROMYCIN FOR 7 DAYS — with confirmation of eradication · ALTERNATIVE ANALGESIA AND PHYSIOTHERAPY FOR THE BACK · stop smoking, moderate alcohol.** VERIFY.",
+    "**Complications: UPPER GI BLEEDING — haematemesis, melaena, anaemia · PERFORATION — sudden severe pain, board-like rigidity, free gas on erect chest X-ray · GASTRIC OUTLET OBSTRUCTION — persistent vomiting of undigested food · penetration into the pancreas.**",
+    "**Do not miss: INFERIOR MYOCARDIAL INFARCTION — ECG · GASTRIC CANCER behind a gastric ulcer · PERFORATION · UPPER GI BLEED — Glasgow-Blatchford score to decide admission.**",
+    "**Avoid: DIAGNOSING BILIARY COLIC FROM THE WORD 'GALLSTONES' · REFERRING ASYMPTOMATIC GALLSTONES FOR CHOLECYSTECTOMY · A PPI WITH THE NSAID CONTINUED · H. pylori testing while on a PPI · reassuring without an alarm-feature screen.** **SA: gastroscopy at Wallaroo or TQEH, PATS for travel; TIS National 131 450.**"
    ],
-   "fails": [
-    "Attributing the pain to the gallstones — the scan is a decoy; recommending cholecystectomy",
-    "Prescribing a PPI without stopping the NSAID first",
-    "Testing for H. pylori while on a PPI (false negative); no test of cure",
-    "No alarm-feature screen; no red-flag safety-net; no scope threshold",
-    "Missing the OTC ibuprofen in the medication history"
-   ],
-   "numbers": [
-    "Gastric ulcer pain 15–60 min after food · duodenal 2–5 h/night · asymptomatic stones ~10–15% of adults",
-    "H. pylori test off PPI 2 wk, antibiotics 4 wk · triple therapy 7 d (esomeprazole 20 + amoxicillin 1 g + clarithromycin 500, all bd) VERIFY · test of cure ≥4 wk · PPI 4–8 wk",
-    "Scope: alarm features any age, new dyspepsia ≥50 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Gastric ulcer — NSAID-related** — the answer",
+     "**Weeks of GNAWING pain, WORSE WITH EATING, ANTACID-RESPONSIVE, DAILY IBUPROFEN**",
+     "**Quantify the NSAID; aspirin, steroids, anticoagulants; the alarm features**",
+     "**Stop the NSAID, PPI, H. pylori test; gastroscopy with BIOPSY** — routine unless bleeding"
+    ],
+    [
+     "**Duodenal ulcer**",
+     "**RELIEVED BY EATING, worst when hungry, WAKES HIM AT NIGHT**",
+     "**'Which way does food change it?'**",
+     "H. pylori testing; PPI; gastroscopy if alarm features"
+    ],
+    [
+     "**Biliary colic — THE TRAP**",
+     "**Stones on ultrasound**",
+     "**Sudden attacks after fatty food, lasting 1–2 hours, to the right shoulder — ABSENT HERE; NO WALL THICKENING OR INFLAMMATION**",
+     "**Stones plus a non-fitting story = AN INCIDENTAL FINDING. No cholecystectomy for asymptomatic stones**"
+    ],
+    [
+     "**Perforated peptic ulcer**",
+     "**SUDDEN severe pain, BOARD-LIKE RIGIDITY, long NSAID history**",
+     "Sudden onset; peritonism",
+     "**Erect chest X-ray for free gas; theatre** — EMERGENCY"
+    ],
+    [
+     "**Upper GI bleed**",
+     "**Haematemesis, melaena, dizziness, anaemia on NSAIDs**",
+     "**'Any vomiting blood or black tarry stools?'**",
+     "**Glasgow-Blatchford; resuscitate; urgent endoscopy** — EMERGENCY"
+    ],
+    [
+     "**Inferior myocardial infarction**",
+     "**Epigastric pain with nausea, sweating, breathlessness; NO antacid response**",
+     "**Chest, jaw, arm, exertion**",
+     "**ECG AND TROPONIN FIRST** — EMERGENCY"
+    ],
+    [
+     "Gastritis and reflux",
+     "Burning, worse lying flat, worse with alcohol and spicy food",
+     "Postural change, reflux symptoms",
+     "Trial of therapy; endoscopy if alarm features"
+    ],
+    [
+     "Acute or chronic pancreatitis",
+     "**Pain through to the back, better sitting forward, alcohol**",
+     "The pancreatic questions",
+     "**Lipase — would be ≥3× in acute pancreatitis**"
+    ],
+    [
+     "**Gastric cancer**",
+     "**Older, WEIGHT LOSS, EARLY SATIETY, vomiting, ANAEMIA**",
+     "**Alarm features**",
+     "**Gastroscopy with biopsy — WHY EVERY GASTRIC ULCER IS BIOPSIED** — urgent"
+    ],
+    [
+     "Functional dyspepsia",
+     "Chronic epigastric discomfort, no structural cause, **no alarm features**",
+     "Normal investigations",
+     "**A diagnosis of exclusion — only after endoscopy or test-and-treat**"
+    ]
    ]
   },
   "source": "Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf Version C (Warren Diggs, 40, six weeks of epigastric pain on daily ibuprofen with incidental gallstones — NSAID peptic ulcer; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Prescribing the acid tablet without first saying stop the ibuprofen — the sentence that must be said before the prescription: 'before I give you anything, the most important step is to stop the ibuprofen; that is what has caused the ulcer, and no acid tablet will fix it while you keep taking it; let's talk about what else we can do for your back — paracetamol, physiotherapy, and a review of why it's been hurting so long'",
-   "FAIL — Blaming the gallstones — 'there are stones in your gallbladder, but the wall is not thickened, the tubes are not blocked and there is no inflammation, so these stones are sitting there quietly; they are very common and we don't operate on quiet stones'; the stones are present but do not fit the story",
-   "DO — The pain: site, gnawing, 5/10, 'what does food do?' (worse), 'do antacids help?' (an hour or two), through to the back (no), sitting forward (no change); vomiting and haematemesis; the six cause questions with alcohol quantified, gallstones ('told — the scan'), 'any anti-inflammatories — ibuprofen, Nurofen, Voltaren?' → two or three Nurofen most days for months for his back",
-   "DO — Cardiac screen (exertional pain, sweating, jaw or arm) and the ECG; red flags with intent qualified — weight loss, appetite, dysphagia, melaena, haematemesis, lumps, family history; SADMA; stability with the examiner at the door",
-   "SAY — 'An ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back' — the reasons: weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, and gallstones that are present but not inflamed",
-   "DO — Three things: stop the ibuprofen; a proton pump inhibitor; test for Helicobacter with a breath or stool test — 'you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative' — and a week of two antibiotics plus the acid tablet if positive; safety-net: vomiting blood, black tarry motions, sudden severe pain and a rigid abdomen (perforation — erect CXR, resuscitate, antibiotics, theatre) → straight to hospital"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-129",
@@ -40989,7 +41241,6 @@ const EMBEDDED_CARDS = [
   "cat": "pe",
   "promptBell": true,
   "promptAt": 390,
-  "setting": "PHYSICAL EXAMINATION — medical outpatient clinic. This is NOT an acute abdomen: the whole point of the station is the examination the acute abdomen station forbids. Three starred items outrank everything else — a MEASURED liver span in centimetres, SHIFTING DULLNESS, and a FLUID THRILL with her own hand in the midline. A candidate who names twenty peripheral signs and never measures a span has failed; a candidate who names six and does all three has passed. Automatic fails: no liver span number; percussing only for tenderness (the acute abdomen habit); a flapping tremor held for three seconds; exposing only to the umbilicus.",
   "stem": [
    "Medical outpatient clinic. A 55-year-old man referred with abdominal swelling over the past three months. He drinks heavily. He is not acutely unwell and his observations are stable and afebrile."
   ],
@@ -40997,71 +41248,111 @@ const EMBEDDED_CARDS = [
    "Perform an abdominal examination, with a running commentary to your examiner",
    "Explain your findings, your diagnosis and your differentials to the examiner"
   ],
-  "time": "WIPE with the DIFFERENT exposure · 'I'll need to see you from the chest down to the hips, so could you take your shirt off and lower your trousers a little?' (spider naevi, gynaecomastia and body hair need the chest) · hands: leukonychia, clubbing, palmar erythema, Dupuytren, palmar creases → FLAPPING TREMOR held 15-30 s ('arms straight out, bend your hands back as if stopping traffic, spread your fingers, hold that') · arms: bruising, scratch marks, spider naevi COUNTED (>5 abnormal, blanch from the centre), proximal power ('lift both arms above your head') · face: scleral icterus, conjunctival pallor, xanthelasma, PAROTIDS in front of and below both ears, glossitis, fetor hepaticus · chest: gynaecomastia, loss of body hair, left supraclavicular node · peripheries done by 3:30 · abdomen: flank fullness, everted umbilicus, caput medusae, no scars, bend down; superficial and deep palpation soft and non-tender · LIVER: radial border of the index finger from the RIF up on each expiration, edge 3 cm below the costal margin, firm, smooth, non-tender, regular; percuss DOWN from above the nipple in the MCL for the upper border (dull at the 5th ICS); span 15 cm, normal 8-12 · spleen from the RIF towards the left costal margin, roll right lateral to confirm, Castell's point; ballotte kidneys · SHIFTING DULLNESS: percuss umbilicus to left flank, mark the dull point with your finger, roll her towards you, WAIT ~30 s, re-percuss = resonant · FLUID THRILL with the patient's own hand edge in the midline · auscultate bowel sounds and for a bruit over liver/epigastrium · to complete: legs, testes with consent and chaperone, rectum, and a formal encephalopathy assessment · explain in plain language, then diagnosis and differentials.",
   "back": {
-   "dx": "Decompensated chronic liver disease with ascites and portal hypertension, most likely alcohol-related cirrhosis: leukonychia, palmar erythema, a Dupuytren contracture, six spider naevi (more than five is abnormal), proximal myopathy, scleral icterus, bilateral parotid enlargement, gynaecomastia and loss of body hair; flank fullness, everted umbilicus and caput medusae; liver edge 3 cm below the costal margin with a span of 15 cm (normal 8-12), spleen 2 cm below the left costal margin with a dull Castell's point, shifting dullness present, fluid thrill present, pitting oedema to the mid-shin. Differentials for the liver disease: viral hepatitis B or C, fatty liver disease, haemochromatosis, autoimmune liver disease, hepatocellular carcinoma. Differentials for the ascites itself: malignancy, right heart failure, nephrotic syndrome. Plan: bloods including coagulation profile and albumin, DIAGNOSTIC ascitic tap for cell count, culture and cytology, ultrasound with Doppler, endoscopic variceal screening, salt restriction with spironolactone and frusemide VERIFY TG, and referral for alcohol support — abrupt unsupported cessation is dangerous, so assess withdrawal risk first. SA: drug and alcohol service, Country Health Connect, PATS for travel to a specialist unit, TIS National 131 450 if an interpreter is needed.",
+   "dx": [
+    "**DECOMPENSATED CHRONIC LIVER DISEASE WITH ASCITES AND PORTAL HYPERTENSION — most likely ALCOHOL-RELATED CIRRHOSIS.** A 55-year-old heavy drinker with three months of abdominal swelling, NOT acutely unwell. **This is the examination the acute abdomen station FORBIDS.**",
+    "**THREE ITEMS ARE THE STATION: the LIVER SPAN measured in centimetres in the mid-clavicular line · the FLUID THRILL · SHIFTING DULLNESS. A candidate who names twenty peripheral signs and never measures a span has failed; one who names six and does all three has passed.**",
+    "**EXPOSE FROM THE CHEST DOWN TO THE HIPS — you need the chest for spider naevi, gynaecomastia and loss of body hair. Exposing only to the umbilicus loses them.**",
+    "**THE FLAPPING TREMOR IS HELD 15–30 SECONDS: arms out, wrists back 'as if stopping traffic', fingers spread. A flap tested for three seconds is a flap you will not see. It indicates HEPATIC ENCEPHALOPATHY — and also occurs in CO2 retention and uraemia.**",
+    "**THE PERIPHERAL SIGNS CANDIDATES OMIT: LEUKONYCHIA · PROXIMAL MYOPATHY ('lift both arms above your head') · PAROTID ENLARGEMENT (in front of and below the ears) · CONSCIOUS LEVEL. Plus palmar erythema, Dupuytren's, SPIDER NAEVI COUNTED (more than FIVE is abnormal, blanching from the centre), scleral icterus, gynaecomastia, loss of body hair, the left supraclavicular fossa. Finish the peripheries by 3:30.**",
+    "**THE LIVER SPAN, NARRATED: from the right iliac fossa up on each expiration with the RADIAL BORDER OF THE INDEX FINGER — edge palpable 3 cm below the costal margin, firm, smooth, non-tender — then PERCUSS DOWN FROM ABOVE THE NIPPLE in the mid-clavicular line for the upper border — dull at the fifth intercostal space — SPAN 15 cm, enlarged; normal 8 to 12.** **If you cannot feel the edge, SAY SO, use the costal margin as the lower border, and still give a number.**",
+    "**SPLEEN FROM THE RIGHT ILIAC FOSSA — a large spleen can reach it, and starting at the umbilicus palpates straight over it. Roll to the right lateral position to confirm, percuss CASTELL'S POINT (dull on inspiration supports splenomegaly), and ballot both kidneys.**",
+    "**SHIFTING DULLNESS IN FOUR STEPS: percuss from the umbilicus out to the flank until dull · KEEP YOUR FINGER ON THAT SPOT · roll him TOWARDS you · WAIT ABOUT THIRTY SECONDS and re-percuss the same point — now resonant. FLUID THRILL: the PATIENT'S OWN HAND edge-down in the MIDLINE to stop the wave travelling through fat, then flick one side and feel the other.**",
+    "**Shifting dullness is MORE SENSITIVE and detects smaller volumes; a fluid thrill is MORE SPECIFIC and suggests a large volume. Ultrasound beats both — but the bedside tests are what tell you to order it.**",
+    "**CLOSE WITH THE THREE OFFERS AND AN AETIOLOGY SCREEN: legs for pitting oedema · external genitalia for TESTICULAR ATROPHY with consent and chaperone · DRE for melaena · a formal encephalopathy assessment. Then the diagnosis, the differentials beyond alcohol (HBV, HCV, fatty liver, haemochromatosis, autoimmune, HCC) and for the ascites itself (malignancy, right heart failure, nephrotic syndrome), and the plan.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'May I have his vital signs — blood pressure, pulse, respiratory rate and temperature?' → 'all within normal limits, afebrile.' WIPE: 'Hello, I'm Dr -. I've been asked to examine your tummy today. I'll start by looking at your hands and your face, then I'll look at your tummy, gently feel it, gently tap on it, and listen with my stethoscope. I'll need to see you from the CHEST down to the HIPS, so could you take your shirt off and lower your trousers a little? Let me wash my hands. Are you in any pain?' → 'No pain. It's just the size of it — my ankles have gone up too.'"
+     "**Vitals, then WIPE — exposure from the CHEST TO THE HIPS, wash hands, ask about pain.**"
     ],
     [
-     "1:00",
-     "Hands and the flap: 'Leukonychia is present; no clubbing; palmar erythema; a Dupuytren contracture of the right ring finger; no pale palmar creases. Could you hold both arms straight out, bend your hands back at the wrists as if stopping traffic, and spread your fingers? Hold that for me.' HOLD 15-30 SECONDS. 'Examiner, after thirty seconds there is no flapping tremor.' → 'what does a flap indicate?' → 'hepatic encephalopathy; I would hold the position fifteen to thirty seconds. It is not specific to the liver — it also occurs in carbon dioxide retention and in uraemia.'"
+     "0:40",
+     "**Hands: LEUKONYCHIA, clubbing, palmar erythema, Dupuytren's, pale creases — then the FLAPPING TREMOR held 15–30 seconds.**"
     ],
     [
-     "2:00",
-     "Arms, face, chest (do not spend more than three minutes here — everything after this is worth more): 'No bruising or scratch marks; I count six spider naevi over the upper chest and arms, which is more than the five that can be normal, and they blanch from the centre. Could you lift both arms above your head?' → 'that's hard work, they feel heavy' → 'there is proximal weakness, consistent with an alcohol-related proximal myopathy.' 'Look up — there is scleral icterus; no conjunctival pallor; no xanthelasma. Feeling in front of and below both ears — bilateral parotid enlargement. Open your mouth and put your tongue out — no glossitis, no fetor hepaticus. Chest — gynaecomastia and loss of body hair. Left supraclavicular fossa — no lymphadenopathy.'"
+     "1:30",
+     "**Arms: bruising, scratches, SPIDER NAEVI COUNTED — then PROXIMAL POWER, arms above the head.**"
+    ],
+    [
+     "2:10",
+     "**Face: SCLERAL ICTERUS, conjunctival pallor, xanthelasma, PAROTIDS, tongue and fetor. Chest: gynaecomastia, loss of body hair, left supraclavicular fossa.**"
     ],
     [
      "3:30",
-     "Abdomen: 'The abdomen is distended with fullness in the flanks, the umbilicus is everted, and there are dilated veins radiating from it — caput medusae. No scars. Bending down to look across — it moves symmetrically with respiration. Superficial palpation of all nine regions — soft, no tenderness, no guarding. Deep palpation — no discrete masses.'"
+     "**Abdominal inspection: distension, FLANK FULLNESS, EVERTED UMBILICUS, CAPUT MEDUSAE, scars. Superficial and deep palpation.**"
     ],
     [
-     "4:15",
-     "THE LIVER SPAN: 'Could you take some deep breaths in and out for me? Starting in the right iliac fossa and moving up towards the costal margin on each expiration, using the radial border of my index finger — the liver edge is palpable three centimetres below the costal margin, firm, smooth, non-tender, with a regular edge. Now percussing downwards from above the nipple in the mid-clavicular line for the upper border — resonant... resonant... dull, at the fifth intercostal space. Measuring between the two, the liver span is fifteen centimetres — enlarged; normal is eight to twelve.' If you cannot feel the edge, SAY SO and still give a number: 'the liver edge is not palpable below the costal margin, so I will take the costal margin as my lower border and measure from there.'"
+     "4:10",
+     "**THE LIVER SPAN: radial border, lower edge on expiration, upper border by percussion down from above the nipple — a NUMBER in centimetres.**"
     ],
     [
-     "5:15",
-     "Spleen and kidneys: 'Palpating for the spleen FROM THE RIGHT ILIAC FOSSA towards the left costal margin on expiration — the spleen is palpable two centimetres below the left costal margin. I'll roll him towards me into the right lateral position and feel again to confirm. Percussing Castell's point in the lowest left intercostal space in the anterior axillary line — it becomes dull on inspiration, supporting splenomegaly. Ballotting both kidneys — not enlarged.' (Starting at the umbilicus means palpating straight over a large spleen.)"
+     "5:10",
+     "**SPLEEN from the right iliac fossa, right lateral to confirm, Castell's point. Ballot the kidneys.**"
     ],
     [
-     "6:00",
-     "THE TWO ASCITES TESTS: 'I'm going to tap on your tummy and then ask you to roll on to your side — is that all right? Percussing from the umbilicus out to the left flank — resonant, resonant, dull here. I'll keep my finger exactly on that spot. Could you roll towards me on to your right side?' WAIT ABOUT THIRTY SECONDS, re-percuss the marked point: 'it is now resonant — shifting dullness is present.' Then: 'one more test — could you place the edge of your own hand firmly down the middle of your tummy? That stops the wave travelling through the fat instead of the fluid. I'll place my hand flat on one side and flick the other... a fluid thrill is present.'"
+     "5:40",
+     "**SHIFTING DULLNESS — mark, roll towards you, wait 30 s, re-percuss.**"
     ],
     [
-     "6:45",
-     "Auscultation and the three offers: 'Bowel sounds present. Listening over the liver and the epigastrium — no bruit. To complete I would examine the legs for pitting oedema, examine the external genitalia for testicular atrophy with consent and a chaperone, perform a digital rectal examination for melaena and haemorrhoids, and formally assess for hepatic encephalopathy.' → 'legs show pitting oedema to the mid-shin.'"
+     "6:10",
+     "**FLUID THRILL with the patient's hand in the midline.**"
     ],
     [
-     "7:15",
-     "Explain, then present: 'The swelling is fluid, not fat or wind — two of the tests I did show that clearly. Fluid builds up when the liver becomes scarred and stiff, so blood can't flow through it easily and the pressure backs up. We call that cirrhosis... The single most important treatment is stopping alcohol completely, because the liver can recover if the damage stops. Stopping suddenly on your own can be dangerous, so I'd like to arrange proper support.' → 'I've tried before.' → 'That's very common, and trying before makes the next attempt more likely to work, not less.' Then the examiner presentation and plan (see dx)."
+     "6:30",
+     "**Bowel sounds, bruit over the liver — then the THREE OFFERS: legs, testes, rectum, and an encephalopathy assessment.**"
+    ],
+    [
+     "7:00",
+     "**Diagnosis, aetiology differentials, ascites differentials, and the plan including alcohol support.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run sheet",
-   "ask": [
-    "'I'll need to see you from the chest down to the hips.' / 'Hold both arms out, bend your hands back, spread your fingers, and hold that.' / 'Could you lift both arms above your head?' / 'Feeling in front of and below both ears — parotid enlargement.' / 'Six spider naevi — more than five is abnormal, and they blanch from the centre.'",
-    "'Fullness in the flanks and an everted umbilicus.' / 'Dilated veins radiating from the umbilicus — caput medusae.' / 'Radial border of the index finger, advancing on each expiration.' / 'Percussing downwards from above the nipple for the upper border.' / 'The liver span is 15 centimetres; normal is 8 to 12.' / 'Palpating for the spleen from the right iliac fossa.'",
-    "'I'll keep my finger exactly on that spot — could you roll towards me?' / 'Could you place the edge of your own hand down the middle of your tummy?' / 'Shifting dullness is present and a fluid thrill is present.' / 'To complete: legs, testes, rectum, and an encephalopathy assessment.'",
-    "Examiner probes: 'why the hand in the midline?' → 'it prevents an impulse being transmitted through subcutaneous fat and giving a false positive.' / 'which is more sensitive?' → 'shifting dullness detects smaller volumes; a fluid thrill is more specific and suggests a large volume VERIFY — neither is as sensitive as ultrasound, which is what I would use to confirm, while a diagnostic tap tells me the cause.' / 'why are you doing tests the acute abdomen station forbids?' → 'because the question is different: there I am looking for peritonism, so I percuss only for tenderness; here I am looking for free fluid and organomegaly in a patient who is not in pain.' / alcohol history → 'quantify in standard drinks per week rather than accept social, ask about morning drinking, withdrawal symptoms and previous attempts, screen with AUDIT-C, and assess withdrawal risk before advising abrupt cessation.'",
-    "If he is confused and flapping → 'hepatic encephalopathy; I would look for a precipitant — infection including spontaneous bacterial peritonitis, gastrointestinal bleeding, constipation, dehydration, electrolyte disturbance and sedating drugs — treat with lactulose titrated to two or three soft stools daily, add rifaximin for recurrent episodes, and avoid sedatives.' VERIFY TG / if the ascites is tender and he is febrile → 'spontaneous bacterial peritonitis, diagnosed by a diagnostic tap: neutrophils above 250 per cubic millimetre is diagnostic regardless of culture VERIFY. Start empirical IV antibiotics immediately rather than wait for the culture, and give albumin to reduce the risk of hepatorenal syndrome.'"
-   ],
    "pefe": [
-    "Role-player: Martin Byrne, 55, former shearing contractor, sitting on an outpatient couch. Three months of abdominal swelling so he cannot fasten his trousers, ankles swollen, no pain, breathless lying flat, arms and shoulders thinner while the belly has grown; wife says his eyes look yellow; dozes off in the afternoons; no haematemesis or melaena. Twenty-five years of heavy drinking — a bottle of rum over two or three days plus beer most nights — but he says 'socially, like anyone' unless asked to walk through a typical WEEK; a nip in the morning steadies him; two failed attempts to stop. No tattoos, injecting drug use, transfusions or overseas travel; no regular medicines, Nurofen for his back. Resigned, a little defensive, engages if you are blunt but kind. Holds the flap position steady with NO flap — and says nothing if released after three seconds, because that is the omission being tested. Arms above the head: 'that's hard work, they feel heavy.' No pain anywhere. Rolls cooperatively and stays there. Asks: 'So what's causing it?' and later 'I've tried to stop before.'",
-    "Numbers: liver span 8-12 cm normal VERIFY (his is 15) — flapping tremor held 15-30 s — more than 5 spider naevi is abnormal — ascitic neutrophils above 250/mm3 = spontaneous bacterial peritonitis VERIFY — serum-ascites albumin gradient >=11 g/L indicates portal hypertension VERIFY — hepatocellular carcinoma surveillance six-monthly — peripheries finished by 3:30, span by 5:30, ascites tests by 6:30. Castell's point: lowest left intercostal space in the anterior axillary line, dull on inspiration with splenomegaly.",
-    "The five commonly omitted peripheral signs the examiner is watching for: flapping tremor (held properly), leukonychia, proximal myopathy, parotid enlargement, and conscious level. The three starred items outrank all of them: a measured span, shifting dullness done properly (mark, roll, WAIT, re-percuss), and a fluid thrill with the patient's own hand in the midline."
+    "**Findings in the scripted run: leukonychia, palmar erythema, Dupuytren's, six spider naevi, proximal weakness, scleral icterus, parotid enlargement, gynaecomastia, loss of body hair, flank fullness, everted umbilicus, caput medusae, liver edge 3 cm with a SPAN OF 15 cm, spleen 2 cm below the left costal margin, SHIFTING DULLNESS and FLUID THRILL present, pitting oedema to mid-shin.**",
+    "**Numbers: liver span 8–12 cm · flapping tremor held 15–30 s · more than 5 spider naevi abnormal · ascitic neutrophils >250/mm³ = SBP · serum-ascites albumin gradient ≥11 g/L indicates portal hypertension · HCC surveillance six-monthly · peripheries by 3:30, span by 5:30, ascites tests by 6:30.** VERIFY.",
+    "**Workup: bloods with COAGULATION PROFILE and ALBUMIN · DIAGNOSTIC ASCITIC TAP for cell count, culture, albumin (SAAG) and cytology · ultrasound with Doppler · endoscopic VARICES screening · salt restriction with SPIRONOLACTONE and FUROSEMIDE · drug and alcohol referral.**",
+    "**QUANTIFY THE ALCOHOL: standard drinks per week, not 'socially' — morning drinking, withdrawal, previous attempts, AUDIT-C — and assess WITHDRAWAL RISK before advising abrupt cessation. Explaining it: 'stopping suddenly on your own can be dangerous, so I'd like to arrange proper support rather than leave you to it.'**",
+    "**HEPATIC ENCEPHALOPATHY (confused, flapping, fetor): look for a PRECIPITANT — infection including SBP, GI bleeding, constipation, dehydration, electrolytes, sedatives — and treat with LACTULOSE to two or three soft stools daily, adding RIFAXIMIN for recurrence; avoid sedatives.**",
+    "**TENDER ASCITES WITH FEVER = SPONTANEOUS BACTERIAL PERITONITIS until proven otherwise: diagnostic tap (neutrophils >250), EMPIRICAL IV ANTIBIOTICS immediately without waiting for culture, and ALBUMIN to reduce hepatorenal risk.** VERIFY.",
+    "**'Why tests the acute abdomen forbids?' → 'because the question is different. In an acute abdomen I am looking for peritonism, so I percuss only for tenderness. Here I am looking for free fluid and organomegaly in a patient who is not in pain.'**"
    ],
-   "fails": [
-    "★ Never measuring a liver span, or hunting silently for an edge you cannot find instead of narrating it and using the costal margin",
-    "★ Percussing only for tenderness — the acute abdomen habit — and never testing shifting dullness or a fluid thrill",
-    "Holding the flapping tremor for three seconds; omitting leukonychia, proximal power, parotids or conscious level",
-    "Exposing only to the umbilicus, so spider naevi, gynaecomastia and loss of body hair are never seen; spending more than three minutes on the peripheries",
-    "Starting splenic palpation at the umbilicus; forgetting the three offers (legs, testes with chaperone, rectum) and the encephalopathy assessment; accepting 'socially' as an alcohol history"
-   ],
-   "numbers": [
-    "3 starred items (span, shifting dullness, fluid thrill) · span 15 cm vs normal 8-12 VERIFY · flap held 15-30 s · >5 spider naevi abnormal · roll and WAIT ~30 s · peripheries by 3:30, span by 5:30, ascites tests by 6:30",
-    "Liver edge 3 cm below the costal margin, upper border dull at the 5th ICS MCL · spleen 2 cm below the left costal margin, Castell's dull on inspiration · SBP neutrophils >250/mm3 VERIFY · SAAG >=11 g/L VERIFY · HCC surveillance 6-monthly · spironolactone + frusemide, salt restriction VERIFY TG"
+   "ddx": [
+    [
+     "**Alcohol-related cirrhosis with ascites and portal hypertension** — the answer",
+     "**Heavy drinking for 25 years; stigmata of chronic liver disease; hepatosplenomegaly; caput medusae; shifting dullness and fluid thrill; oedema**",
+     "**Liver span, shifting dullness, fluid thrill — the three starred items**",
+     "**Ascitic tap, ultrasound, varices screen, diuretics and salt restriction, supported alcohol cessation**"
+    ],
+    [
+     "**Viral hepatitis B or C**",
+     "**Injecting drug use, tattoos, transfusions, country of birth**",
+     "**Risk factors; hepatitis serology**",
+     "**Part of the aetiology screen beyond alcohol**"
+    ],
+    [
+     "**Metabolic dysfunction–associated fatty liver disease; haemochromatosis; autoimmune liver disease**",
+     "**Obesity and diabetes; bronzing, diabetes and arthropathy; other autoimmune disease**",
+     "**Iron studies, autoantibodies, metabolic screen**",
+     "**Named to show the aetiology screen is not just alcohol**"
+    ],
+    [
+     "**Hepatocellular carcinoma**",
+     "**Rapid decompensation, weight loss, a hard irregular liver edge, a hepatic bruit**",
+     "**Liver edge character; bruit over the liver; AFP and imaging**",
+     "**Six-monthly surveillance in established cirrhosis**"
+    ],
+    [
+     "**Malignant ascites**",
+     "**Weight loss, a mass, Virchow's node, known primary; low SAAG with positive cytology**",
+     "**Left supraclavicular fossa; ascitic cytology and SAAG**",
+     "**An ascites differential, separate from the liver differential**"
+    ],
+    [
+     "**Right heart failure; nephrotic syndrome**",
+     "**Raised JVP, oedema, orthopnoea; heavy proteinuria and hypoalbuminaemia**",
+     "**JVP; urine dipstick for protein**",
+     "**The remaining causes of ascites to name**"
+    ]
    ]
   },
   "source": "Chronic_Liver_Disease_1_Study_Notes / _2_Case_Tasks_Script_Notability (1).pdf, Abdo PE folder (Martin Byrne, 55, three months of abdominal swelling on a heavy drinking history — alcohol-related cirrhosis with ascites; the liver span, shifting dullness and fluid thrill, and the five commonly omitted peripheral signs). Distinct from the GI-folder Chronic Liver Disease history stations (MED-149, MED-150)",
@@ -41102,20 +41393,20 @@ const EMBEDDED_CARDS = [
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Never measuring a liver span and giving a number — the three starred items outrank everything else in this station: a candidate who names twenty peripheral signs and never measures a span has FAILED, one who names six and does all three has passed; radial border of the index finger from the right iliac fossa up on each expiration, then percuss DOWNWARDS from above the nipple in the mid-clavicular line for the upper border, and measure between them — 'the liver span is 15 centimetres, enlarged; normal is 8 to 12'; if you cannot feel the edge, narrate it instead of hunting in silence: 'the liver edge is not palpable below the costal margin, so I will take the costal margin as my lower border and measure from there' (★)",
-   "FAIL — Percussing only for tenderness — the acute abdomen habit — and never testing shifting dullness or a fluid thrill; SHIFTING DULLNESS: percuss from the umbilicus out to the left flank, keep your finger exactly on the dull spot, roll him towards you, wait about thirty seconds, re-percuss the same point; FLUID THRILL: 'could you place the edge of your own hand firmly down the middle of your tummy?' — the midline hand stops an impulse being transmitted through subcutaneous fat and giving a false positive; shifting dullness is the more sensitive and detects smaller volumes, a fluid thrill the more specific, and neither matches ultrasound, which is what confirms it (★)",
-   "FAIL — Holding the flapping tremor for three seconds — a flap that is not held long enough is a flap you will not see: 'hold both arms straight out, bend your hands back at the wrists as if stopping traffic, and spread your fingers' for 15 to 30 SECONDS; it is a sign of hepatic encephalopathy and is not liver-specific, also occurring in carbon dioxide retention and uraemia",
-   "FAIL — Omitting the five signs candidates always leave out — leukonychia, proximal power ('could you lift both arms above your head?' → 'that's hard work, they feel heavy' = alcohol-related proximal myopathy), parotid enlargement felt in front of and below both ears, conscious level, and the flapping tremor itself",
-   "FAIL — Exposing only to the umbilicus, so spider naevi, gynaecomastia and loss of body hair are never seen — 'I'll need to see you from the chest down to the hips'; more than FIVE spider naevi is abnormal and they blanch from the centre outwards; and do not spend more than three minutes on the peripheries, because everything from the abdomen on is worth more than everything before it — peripheries by 3:30, span by 5:30, ascites tests by 6:30",
-   "DO — Start splenic palpation in the RIGHT ILIAC FOSSA, never at the umbilicus, because a large spleen can reach it and you will palpate straight over it; Castell's point in the lowest left intercostal space in the anterior axillary line becoming dull on inspiration supports splenomegaly; ballot both kidneys; auscultate for bowel sounds and for a bruit over the liver and epigastrium; then offer the legs for pitting oedema, the external genitalia for testicular atrophy with consent and a chaperone, a rectal examination for melaena and haemorrhoids, and a formal encephalopathy assessment; present as 'decompensated chronic liver disease with ascites and portal hypertension, most likely ALCOHOL-RELATED CIRRHOSIS', with differentials for the liver disease (hepatitis B or C, fatty liver disease, haemochromatosis, autoimmune liver disease, hepatocellular carcinoma) and for the ascites itself (malignancy, right heart failure, nephrotic syndrome); bloods with coagulation profile and albumin, a diagnostic ascitic tap for cell count, culture and cytology, ultrasound with Doppler, endoscopic variceal screening, salt restriction with spironolactone and frusemide, and alcohol support — quantified in standard drinks per week rather than accepting 'socially', with withdrawal risk assessed before advising abrupt cessation"
-  ]
+   "FAIL — Never measuring a liver span in centimetres. It is one of the three items that ARE the station.",
+   "FAIL — Never testing shifting dullness, or doing it without marking, rolling, waiting and re-percussing.",
+   "FAIL — A fluid thrill without the patient's hand in the midline.",
+   "FAIL — Twenty peripheral signs and no liver span. Six signs plus all three key tests passes.",
+   "SAY — The liver span is 15 centimetres; normal is 8 to 12.",
+   "SAY — To complete: legs, testes, rectum, and an encephalopathy assessment."
+  ],
+  "v2": true
  },
  {
   "id": "PE-15",
   "cat": "pe",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "PHYSICAL EXAMINATION + RADIOLOGY — ED. A mannequin torso on the bed and a PERSON IN A CHAIR — and in one recall that person is not the patient, it is his son. One clarifying question at the door costs five seconds and prevents the whole station going wrong. Hands to the mannequin, words to the person; 'does that hurt?' now goes to the EXAMINER. Automatic fails: guessing who the patient is; inventing findings on the mannequin; never asking about FLATUS; skipping inspection because it is a plastic torso (the appendicectomy scar is on the model, and the scar is your cause); saying 'obstruction' without naming a cause.",
   "stem": [
    "Emergency department. A 60-year-old man with abdominal pain and constipation — no bowel motion for two days, vomiting. He had an appendicectomy in his twenties. Observations are stable. Inside the room: a mannequin torso on the bed and a person seated in a chair. An abdominal X-ray is on the wall or handed to you.",
    "The recall variant: the person in the chair is the patient's SON, and the patient is the mannequin."
@@ -41125,66 +41416,107 @@ const EMBEDDED_CARDS = [
    "Explain your findings and your diagnosis to the examiner",
    "Interpret the abdominal X-ray provided"
   ],
-  "time": "DOOR: vitals + 'may I confirm · am I examining the model on the bed, and is this gentleman the patient?' → 'that is his son' · WIPE to whoever is there; in the son variant add 'Examiner, I would confirm the patient's own consent for the examination and for discussing his care with his son' · history WHILE you work: last bowel motion? FLATUS since then? vomiting · how many times and what colour? distension? weight loss or blood? WHAT OPERATIONS? · inspection of the mannequin: no Cullen/Grey Turner, RIF SCAR consistent with an open appendicectomy, distended, no visible peristalsis, no mass, bend down (symmetrical generalised distension) · superficial nine regions: no tenderness, guarding or rigidity; ask the EXAMINER about deep tenderness; 'as there is no tenderness, rebound cannot meaningfully be assessed' · percuss four quadrants: resonant throughout, consistent with gaseous distension · auscultate: 'bowel sounds are present' → 'are they normal?' → 'I report them as present or absent; if abnormal I would describe the character · high-pitched and tinkling in mechanical obstruction, absent in ileus or a late obstruction' · groins AND scrotum for an obstructed hernia; DRE with consent and chaperone · empty or loaded? mass? blood? · THE FILM: supine AXR, confirm identity and date, systematic · dilated loops CENTRAL, valvulae conniventes crossing the FULL width = small bowel, over 3 cm, no gas in the rectum, no free gas, no calcification, bones and lung bases clear → small bowel obstruction · plain-language explanation and drip-and-suck plan.",
   "back": {
-   "dx": "Simple (not strangulated) small bowel obstruction, most likely ADHESIONAL from the previous open appendicectomy — absolute constipation with no flatus, bilious vomiting, generalised symmetrical distension, a soft non-tender resonant abdomen, an empty rectum, and a supine film showing centrally placed dilated loops over 3 cm with valvulae conniventes crossing the full width of the lumen and no rectal gas. Differentials: obstructing malignancy, an obstructed hernia, and in the large bowel a volvulus or faecal impaction. Plan — drip and suck: nil by mouth, IV fluid resuscitation, nasogastric tube, urinary catheter, bloods including a lactate, erect chest X-ray and CT abdomen and pelvis, surgical referral; adhesional obstruction may be given about 48 hours of conservative management if there is no peritonism VERIFY. Operate immediately for: peritonism, fever, tachycardia, a rising lactate, free gas on the erect film, a strangulated hernia, or a caecum beyond about 9 cm. Rural SA: start all of it locally and call MedSTAR 1300 13 12 33 and the receiving unit together; PATS for the family's travel.",
+   "dx": [
+    "**SIMPLE SMALL BOWEL OBSTRUCTION, MOST LIKELY ADHESIONAL** — a 60-year-old with two days of absolute constipation, green vomiting and distension, an APPENDICECTOMY in his twenties, a soft non-tender abdomen, and a film showing dilated central small bowel loops. **A mannequin on the bed, a person in the chair, and a film to read.**",
+    "**CLARIFY THE ROOM IN THE FIRST FIVE SECONDS: 'am I examining the model on the bed, and is this gentleman the patient?' In one recall the person in the chair is the SON and the patient is the mannequin — candidates who rehearsed only one script freeze.**",
+    "**THE SON VARIANT IS A SMALL CHANGE: consent, explanation and history questions go to the SON · the examination goes to the MANNEQUIN · 'does that hurt?' goes to the EXAMINER · and ONE sentence — 'I would confirm the patient's own consent for the examination and for discussing his care with his son.'** **Refusing to speak to the son on confidentiality grounds, or never mentioning consent, both fail.**",
+    "**THE HISTORY WHILE YOU WORK, and flatus is the question: last bowel motion · HAS HE PASSED ANY WIND SINCE (no) · the vomiting — how often and what COLOUR (green, six or seven times) · distension · weight loss or blood · PREVIOUS OPERATIONS. ABSOLUTE CONSTIPATION = no faeces AND no flatus.**",
+    "**INSPECT THE MANNEQUIN PROPERLY: no Cullen, no Grey Turner, a RIGHT ILIAC FOSSA SCAR consistent with an open appendicectomy, symmetrical generalised DISTENSION, no visible peristalsis — and bend down to look across.**",
+    "**DO NOT INVENT FINDINGS: superficial and deep palpation — no tenderness, guarding or mass; 'as there is no tenderness, rebound cannot meaningfully be assessed'; RESONANT throughout, consistent with gaseous distension. Bowel sounds PRESENT — report present or absent; if abnormal, describe the character: HIGH-PITCHED AND TINKLING in mechanical obstruction, ABSENT in ileus or a late obstruction.**",
+    "**GROINS AND RECTUM ARE CAUSES YOU CAN FIND AT THE BEDSIDE: inguinal regions and scrotum for an OBSTRUCTED HERNIA · DRE — empty or loaded, a mass, blood. An EMPTY rectum supports a proximal mechanical obstruction; a LOADED rectum points to faecal impaction, managed very differently.**",
+    "**THE FILM, SYSTEMATICALLY: supine AXR, identity and date — MULTIPLE DILATED LOOPS, CENTRALLY PLACED, with folds crossing the FULL WIDTH — VALVULAE CONNIVENTES — so SMALL BOWEL, over 3 cm · NO GAS IN THE RECTUM · no free gas, no abnormal calcification · bones and lung bases unremarkable. Small bowel obstruction.**",
+    "**NAME A CAUSE, NOT JUST 'OBSTRUCTION': adhesions from the appendicectomy. The soft, non-tender abdomen suggests a SIMPLE rather than strangulated obstruction.**",
+    "**EXPLAIN AND MANAGE: rest the bowel, drip, nasogastric tube — 'quite often it settles by itself over a day or two' — surgical team, transfer if it does not settle or the blood supply is threatened. To the examiner: nil by mouth, IV fluid, NG tube, catheter, bloods with LACTATE, erect CXR and CT abdomen and pelvis, surgical referral, MedSTAR if rural.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature? And may I confirm — am I examining the model on the bed, and is this gentleman the patient?' → 'Observations are stable. That is the patient's son. The patient is the mannequin.' (Guessing here is how the whole station goes wrong.)"
+     "**Vitals — and CLARIFY WHO THE PATIENT IS.**"
     ],
     [
-     "0:30",
-     "WIPE to the son: 'Hello, I'm Dr -, one of the doctors here. Are you Mr Hallam's son? Thank you for coming in, Danny. I've been asked to examine your dad's tummy — I'll look at it, gently feel it, gently tap on it, and listen with my stethoscope at the end. I'll ask you a few questions as I go, because you may know things he hasn't been able to tell us. Is that all right? Examiner — I would confirm the patient's own consent for the examination and for discussing his care with his son. Let me wash my hands.' → 'He has consented. Please continue.'"
+     "0:15",
+     "**WIPE to whoever is in the chair; in the son variant add the one sentence about the patient's own consent. Wash hands.**"
     ],
     [
-     "1:15",
-     "History while you work: 'When did your dad last open his bowels?' → 'Tuesday.' 'And HAS HE PASSED ANY WIND since then?' → 'No — he said that's what's bothering him.' 'What's the vomiting been like — how often, and what colour?' → 'Six or seven times since yesterday. It's gone green.' 'Has his tummy been swollen?' → 'Like a drum.' 'Any weight loss, or blood in the motions?' → 'No.' 'And what operations has he had?' → 'He had his appendix out when he was young.'"
+     "0:50",
+     "**HISTORY while you work: last motion · FLATUS · vomiting frequency and colour · distension · weight loss and blood · OPERATIONS.**"
     ],
     [
-     "2:30",
-     "Inspection of the mannequin — do not skip it: 'Exposing from the xiphisternum to below the umbilicus. No Cullen sign, no Grey Turner sign. There is a RIGHT ILIAC FOSSA SCAR consistent with an open appendicectomy. The abdomen is distended. No visible peristalsis, no obvious mass. Bending down to look across — the distension is symmetrical and generalised.'"
+     "2:00",
+     "**INSPECT THE MANNEQUIN: Cullen, Grey Turner, the RIF SCAR, distension, peristalsis — bend down to look.**"
     ],
     [
-     "3:15",
-     "Palpation, percussion, auscultation without inventing anything: 'Superficial palpation of all nine regions — no tenderness, no guarding, no rigidity. Examiner, is there any tenderness on deep palpation?' → 'No tenderness anywhere.' → 'Deep palpation of all nine regions — no tenderness, no palpable mass. As there is no tenderness, rebound cannot meaningfully be assessed. Percussing all four quadrants — resonant throughout, consistent with gaseous distension, no tenderness on percussion. Auscultating below the umbilicus — bowel sounds are present.' → 'What sort of bowel sounds?' → 'I report them as present or absent. If they were abnormal I would describe the character — high-pitched and tinkling in mechanical obstruction, and absent in ileus or a late, exhausted obstruction.' (Never 'hyperactive'.)"
+     "2:40",
+     "**Palpation of nine regions superficial and deep — NON-TENDER, reported plainly. Ask the examiner about tenderness if the patient is the mannequin.**"
     ],
     [
-     "4:30",
-     "Groins and rectum: 'I would inspect and palpate both inguinal regions and the SCROTUM for a hernia, since an obstructed hernia is a cause I can find at the bedside.' → 'No hernia.' → 'And a digital rectal examination with consent and a chaperone — is the rectum empty or loaded, is there a mass, and is there blood on the glove?' → 'The rectum is empty. No mass, no blood.' → 'An empty rectum supports a mechanical obstruction proximally rather than faecal impaction.'"
+     "3:30",
+     "**Percussion — RESONANT throughout. Bowel sounds PRESENT, with the character answer ready.**"
     ],
     [
-     "5:30",
-     "THE FILM: 'This is a supine plain abdominal radiograph of an adult, marked right, and I would confirm the patient's identity and the date. Reviewing systematically — the bowel gas pattern shows multiple dilated loops which are CENTRALLY placed, with mucosal folds crossing the FULL WIDTH of the lumen, so these are valvulae conniventes and this is small bowel. The loops measure over three centimetres. There is no gas in the rectum. There is no free gas and no abnormal calcification. The solid organ outlines, the bones and the lung bases are unremarkable. The appearances are of small bowel obstruction.'"
+     "4:10",
+     "**GROINS and scrotum for a hernia. DRE — empty or loaded, mass, blood — and INTERPRET IT.**"
     ],
     [
-     "6:45",
-     "Explain to the son, then present: 'There's a blockage in his bowel, Danny. The loops above it have filled with gas and fluid and swollen up, and there's nothing beyond it. Given he had his appendix out years ago, the most likely reason is scar tissue forming bands that kink the bowel — adhesions. The reassuring part is that his tummy is soft and not tender, which suggests the blood supply is still all right.' → 'Does he need an operation?' → 'Possibly, but not necessarily. First we rest the bowel completely — nothing to eat or drink — put a drip in for fluids, and pass a small tube through his nose into his stomach to drain what's building up. That stops the vomiting and takes the pressure off, and quite often the blockage settles by itself over a day or two. The surgical team will see him; if it doesn't settle, or if we become worried about the blood supply, he'd need surgery and we'd transfer him to Adelaide.' Then the examiner presentation and plan (see dx)."
+     "5:00",
+     "**THE FILM: systematic read — small versus large bowel, gas in the rectum, free gas.**"
+    ],
+    [
+     "6:30",
+     "**Plain-language explanation — adhesions, and 'drip and suck' first.**"
+    ],
+    [
+     "7:20",
+     "**Diagnosis, differentials, and the plan including lactate, erect CXR, CT and surgical referral.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run sheet, the son variant",
-   "ask": [
-    "'Am I examining the model, and is this gentleman the patient?' / 'I would confirm the patient's own consent for the examination and for discussing his care.' / 'Has he passed any wind since then?' / 'What operations has he had?'",
-    "'There is a right iliac fossa scar consistent with an open appendicectomy.' / 'The abdomen is distended and resonant but soft and non-tender.' / 'As there is no tenderness, rebound cannot meaningfully be assessed.' / 'High-pitched and tinkling in mechanical obstruction, absent in ileus.' / 'An obstructed hernia is a cause I can find at the bedside.' / 'Is the rectum empty or loaded?'",
-    "Film lines: 'Dilated loops, centrally placed, with folds crossing the full width — valvulae conniventes.' / 'There is no gas in the rectum and no free gas under the diaphragm.' / 'A simple, rather than a strangulated, obstruction.' / 'Nil by mouth, fluids, nasogastric tube, catheter — drip and suck.' Large bowel differs: peripherally placed loops, haustra that do NOT cross the full width, dilated over 6 cm (caecum over 9 cm) VERIFY; an erect film is for air-fluid levels and free gas under the diaphragm; the commonest cause of small bowel obstruction in the developed world is adhesions.",
-    "Variants: the COFFEE-BEAN film → 'a single massively dilated loop with a dense line running through its centre where the two limbs lie against each other — the coffee-bean sign. It arises from the pelvis with its apex towards the left upper quadrant, so this is a sigmoid volvulus. Resuscitate, nil by mouth, and arrange flexible sigmoidoscopic decompression with a flatus tube; peritonism, fever or a raised lactate means ischaemia and theatre. Recurrence is common, so elective sigmoid colectomy is usually discussed.' / loop arising from the right iliac fossa → 'caecal volvulus, in younger patients with a mobile caecum; endoscopic decompression is usually unsuccessful, so management is operative.' / the FAECAL LOADING film → 'mottled faecal material throughout the colon down to the rectum, gas in the rectum, no dilated small bowel loops — faecal loading rather than obstruction, fitting the loaded rectum. Review medications, particularly opioids and anticholinergics, treat with suppositories or an enema and if needed manual evacuation, then a regular bowel regimen, mobility and fluids.' / 'what would make you operate immediately?' → peritonism, fever, tachycardia, rising lactate, free gas, a strangulated hernia, or a caecum beyond about 9 cm."
-   ],
    "pefe": [
-    "Role-player, either role. Role 1 — Ray Hallam, 60, retired grain handler, the patient in the chair. Role 2 — Danny Hallam, the son, reporting about his father, who is the mannequin; worried and a bit impatient, and if the doctor talks only to the mannequin and never to him he SAYS NOTHING, because that omission is the point of the variant. Facts either way: crampy waves of pain for three days, vomited six or seven times since yesterday and it has turned green, no bowel motion since Tuesday and NO FLATUS (only volunteered if asked directly), abdomen like a drum and the belt will not fasten, appendix out at 22 (this is the cause of the whole case), no weight loss, no blood, a normal bowel screening kit a couple of years ago, no regular medicines. Reports NO PAIN on any palpation and does not soften it. Asked about confidentiality in Role 2: 'Dad said it was fine to talk to me.' Asks at some point: 'Does he need an operation?'",
-    "Numbers: small bowel dilated over 3 cm — colon over 6 cm — caecum over 9 cm VERIFY — adhesional obstruction may be given 48 hours of conservative management if there is no peritonism VERIFY — examination finished by 6:00, film read by 7:00. Four cardinal features of obstruction: pain, vomiting, distension and absolute constipation (no faeces AND no flatus — the flatus question is what separates obstruction from constipation).",
-    "Scored behaviours: clarified at the start who the patient was — introduced, explained the four steps, gained consent, mentioned hand hygiene — mentioned the PATIENT'S OWN consent in the son variant — asked about flatus, not just bowel motions — asked about previous operations — inspected the mannequin and named the scar and the distension — bent down and looked across — palpated all nine regions superficially and deeply — percussed four quadrants — auscultated and answered the bowel-sound challenge correctly — requested inguinal regions AND scrotum — requested a rectal examination and interpreted empty versus loaded — read the film systematically and reached small versus large bowel — named a CAUSE, not just 'obstruction' — explained in plain language with a clear plan."
+    "**Given on request: no hernia · rectum EMPTY, no mass, no blood. Observations stable.**",
+    "**Film: dilated central loops with VALVULAE CONNIVENTES, >3 cm, no rectal gas, no free gas → SMALL BOWEL OBSTRUCTION.**",
+    "**Numbers: small bowel dilated >3 cm · colon >6 cm · caecum >9 cm · adhesional obstruction may be managed conservatively for about 48 hours without peritonism · examination finished by 6:00, film read by 7:00.** VERIFY.",
+    "**Large versus small bowel: LARGE bowel is PERIPHERAL, with HAUSTRA that do NOT cross the full width; small bowel is CENTRAL with valvulae conniventes crossing it.**",
+    "**OPERATE IMMEDIATELY FOR: peritonism, fever, tachycardia, a RISING LACTATE, FREE GAS on the erect film, a STRANGULATED HERNIA, or a CAECUM beyond about 9 cm — any of these means it is no longer a simple obstruction.**",
+    "**VARIANT — COFFEE-BEAN FILM: a single massively dilated loop with a dense central line, arising from the PELVIS and pointing to the LEFT UPPER QUADRANT = SIGMOID VOLVULUS → resuscitate, flexible sigmoidoscopic decompression with a flatus tube; theatre if ischaemia is suspected; elective sigmoid colectomy discussed. Arising from the RIGHT ILIAC FOSSA = CAECAL VOLVULUS in a younger patient → operative management.**",
+    "**VARIANT — FAECAL LOADING FILM: mottled faecal material to the rectum with rectal gas and no dilated small bowel, matching a LOADED rectum → review opioids and anticholinergics, suppositories or enema, manual evacuation if needed, then a regular bowel regimen.**"
    ],
-   "fails": [
-    "★ Guessing who the patient is instead of asking one clarifying question at the door; refusing to speak to the son at all on confidentiality grounds, or discussing everything without ever mentioning the patient's consent",
-    "★ Inventing findings on the mannequin — it is not tender, so report that, and ask the examiner about deep tenderness",
-    "Never asking about flatus — absolute constipation means no faeces AND no flatus, and it is what separates obstruction from constipation",
-    "Skipping inspection because it is a plastic torso — the appendicectomy scar is on the model and the scar is your cause; calling bowel sounds 'hyperactive'",
-    "Never requesting the scrotum with the groins; saying 'obstruction' without naming a cause; reading the film unsystematically or missing the absent rectal gas"
-   ],
-   "numbers": [
-    "Small bowel >3 cm · colon >6 cm · caecum >9 cm VERIFY · 4 cardinal features (pain, vomiting, distension, absolute constipation) · valvulae conniventes cross the full width, haustra do not · exam by 6:00, film by 7:00",
-    "Adhesions the commonest cause after previous surgery · 48 h conservative if no peritonism VERIFY · drip and suck: NBM, IV fluids, NGT, catheter, lactate, erect CXR, CT A/P · operate now for peritonism, fever, rising lactate, free gas, strangulated hernia, caecum >9 cm · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Adhesional small bowel obstruction** — the answer",
+     "**Absolute constipation including flatus, green vomiting, distension, previous appendicectomy, soft non-tender resonant abdomen, empty rectum, dilated central SB loops**",
+     "**Flatus, previous operations, the scar, the film**",
+     "**Drip and suck, catheter, lactate, erect CXR, CT, surgical referral**"
+    ],
+    [
+     "**Obstructed or strangulated hernia**",
+     "**An irreducible tender groin or scrotal lump**",
+     "**Inguinal regions and scrotum — a cause found at the bedside**",
+     "**Theatre if strangulated**"
+    ],
+    [
+     "**Obstructing malignancy**",
+     "**Weight loss, blood in the stool, change in bowel habit, an older patient**",
+     "**Weight loss and rectal bleeding questions; DRE for a mass; CT**",
+     "**CT to define; surgical and oncology input**"
+    ],
+    [
+     "**Sigmoid or caecal volvulus**",
+     "**A single massively dilated loop — the COFFEE-BEAN sign**",
+     "**The film — origin of the loop from the pelvis or the RIF**",
+     "**Sigmoidoscopic decompression for sigmoid; operation for caecal**"
+    ],
+    [
+     "**Faecal impaction**",
+     "**A LOADED rectum, mottled faecal material on the film, opioid or anticholinergic use**",
+     "**DRE — empty versus loaded**",
+     "**Enemas, manual evacuation, a regular bowel regimen — very different management**"
+    ],
+    [
+     "**Strangulation or ischaemia**",
+     "**Peritonism, fever, tachycardia, rising lactate, free gas**",
+     "**Tenderness, observations and lactate**",
+     "**Immediate operation — no longer a simple obstruction**"
+    ]
    ]
   },
   "source": "Mannequin_Abdomen_Obstruction_2_Case_Tasks_Script_Notability.pdf (Ray Hallam, 60, two days of absolute constipation with bilious vomiting and a previous appendicectomy — adhesional small bowel obstruction with the supine film; the son-in-the-chair variant, plus sigmoid volvulus and faecal loading films folded in)",
@@ -41225,20 +41557,20 @@ const EMBEDDED_CARDS = [
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Guessing who the patient is instead of asking one clarifying question at the door — five seconds that prevents the entire station going wrong: 'may I confirm — am I examining the model on the bed, and is this gentleman the patient?'; in the son variant, consent, explanation and the history go to the SON, the hands go to the mannequin, 'does that hurt?' goes to the EXAMINER, and one sentence handles confidentiality — 'Examiner, I would confirm the patient's own consent for the examination and for discussing his care with his son'; refusing to speak to the son at all on confidentiality grounds is the other half of the same error",
-   "FAIL — Inventing findings on the mannequin — it is not tender, so report that and ask the examiner: 'superficial palpation of all nine regions, no tenderness, no guarding, no rigidity… Examiner, is there any tenderness on deep palpation?', then 'as there is no tenderness, REBOUND CANNOT MEANINGFULLY BE ASSESSED'; percuss all four quadrants — resonant throughout, consistent with gaseous distension",
-   "FAIL — Never asking about flatus — absolute constipation means no faeces AND no flatus, and it is what separates obstruction from constipation; it is never volunteered, so ask directly ('has he passed any wind since then?') along with when he last opened his bowels, how many vomits and what colour, distension, weight loss or blood in the motions, and PREVIOUS OPERATIONS — the appendicectomy is the cause of the whole case",
-   "FAIL — Skipping inspection because it is a plastic torso — the appendicectomy scar is on the model and the scar is your cause: 'there is a right iliac fossa scar consistent with an open appendicectomy; the abdomen is distended; no visible peristalsis and no obvious mass', plus no Cullen sign and no Grey Turner sign, and bend down to look across for symmetrical generalised distension (★)",
-   "FAIL — Calling bowel sounds 'hyperactive' — report them as present or absent, and describe the character only if abnormal: high-pitched and tinkling in mechanical obstruction, absent in ileus or a late, exhausted obstruction; then ask for both inguinal regions AND the scrotum, because an obstructed hernia is a cause you can find at the bedside, and a rectal examination with consent and a chaperone — an EMPTY rectum supports mechanical obstruction proximally, while a rectum loaded with hard stool means faecal impaction, which is managed very differently (★)",
-   "DO — Read the film systematically and name the CAUSE, not just the word obstruction: 'a supine plain abdominal radiograph of an adult, and I would confirm the patient's identity and the date; multiple dilated loops, CENTRALLY placed, with mucosal folds crossing the FULL WIDTH of the lumen — valvulae conniventes — so this is small bowel, measuring over three centimetres; there is no gas in the rectum, no free gas and no abnormal calcification'; thresholds — small bowel over 3 cm, colon over 6 cm, caecum over 9 cm; 'a simple, rather than a strangulated, small bowel obstruction, most likely ADHESIONAL' from the appendicectomy, with differentials of an obstructing malignancy, a hernia, volvulus and faecal impaction; plan nil by mouth, intravenous fluid, nasogastric tube and catheter — drip and suck — bloods including a lactate, erect chest X-ray and CT abdomen and pelvis, surgical referral, and from Wallaroo MedSTAR and the receiving unit called together; operate immediately for peritonism, fever, tachycardia, a rising lactate, free gas, a strangulated hernia, or a caecum beyond about nine centimetres; a single coffee-bean loop arising from the pelvis with its apex towards the left upper quadrant is a SIGMOID VOLVULUS — flexible sigmoidoscopic decompression and a flatus tube"
-  ]
+   "FAIL — Guessing who the patient is. Ask: 'am I examining the model, and is this gentleman the patient?'",
+   "FAIL — Not asking about FLATUS. No wind separates obstruction from constipation.",
+   "FAIL — Skipping inspection because it is plastic. The scar is on the model, and the scar is your cause.",
+   "FAIL — Inventing tenderness on a mannequin, or calling the bowel sounds 'hyperactive'.",
+   "SAY — Dilated loops, centrally placed, with folds crossing the full width — valvulae conniventes.",
+   "SAY — Nil by mouth, fluids, nasogastric tube, catheter — drip and suck."
+  ],
+  "v2": true
  },
  {
   "id": "PE-16",
   "cat": "pe",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "PHYSICAL EXAMINATION — ED. Hydration is a full structured examination in its own right and is scored SEPARATELY from the abdomen. The single most commonly omitted item in the station is the POSTURAL blood pressure — it is not among the routine observations, so 'the observations are stable' never includes it: ask again, specifically. Then choose ONE dominant complaint for the differential list rather than hunting for a single diagnosis that explains all four symptoms, and offer gastroenteritis as a diagnosis of exclusion with the dangerous mimics named first. Automatic fails: accepting 'stable' and never getting a standing pressure; reporting dry LIPS as dry mucous membranes; skipping the abdominal examination because you expect it to be normal.",
   "stem": [
    "Version A: Emergency department. A 35-year-old man with abdominal pain, fever, vomiting and diarrhoea for two days; observations in the notes. Lying BP 118/76, pulse 92; standing 96/64, pulse 112 — RR 16 — T 37.8.",
    "Version B (February 2026 recall): Emergency department. A patient with vomiting and diarrhoea. Your ONLY task is to assess hydration status and report your findings — same eight minutes for a quarter of the work."
@@ -41248,71 +41580,107 @@ const EMBEDDED_CARDS = [
    "Perform a focused abdominal examination",
    "Explain your diagnosis and differential diagnoses to the examiner"
   ],
-  "time": "DOOR: 'for the hydration assessment may I have the vital signs · and may I have the LYING AND STANDING blood pressures, please?' → fobbed off with 'stable' → ask again: 'may I specifically have the standing blood pressure? A normal lying pressure does not exclude significant volume depletion' → 118/76 lying, 96/64 standing, pulse 92 to 112 = a drop of 22 systolic and 12 diastolic with a compensatory tachycardia · SAY THE TECHNIQUE OUT LOUD: supine rest 5 minutes, systolic by palpation first then auscultation to avoid an auscultatory gap, stand and repeat at ONE and THREE minutes recording the pulse each time, and ask him to say if he feels dizzy · WIPE · hydration items: conscious level, CRT (prolonged at 3 s), skin turgor (the fold tents), pulse volume (low), peripheries warm and dry, sunken eyes, 'could you OPEN YOUR MOUTH for me' · dry mucous membranes and no pooled saliva · charts: fluid balance, urine output, a recorded weight to compare · GRADE it and say what the grade changes: 'moderate dehydration · he needs intravenous rather than oral rehydration' · abdomen in full even though you expect it to be normal: Cullen/Grey Turner, scars, distension, masses, bend down, cough, superficial nine regions, deep (mild generalised crampy discomfort only), no tenderness on percussion, auscultate, groins, DRE with consent and chaperone looking for BLOOD · then 'I will take abdominal pain as the dominant complaint' and the system list.",
   "back": {
-   "dx": "Acute infective gastroenteritis with MODERATE dehydration — postural hypotension (22 systolic / 12 diastolic) with compensatory tachycardia, prolonged capillary refill at 3 seconds, reduced turgor, low-volume pulse, sunken eyes, dry mucous membranes, negative balance of about 1.5 L and poor urine output; abdomen soft and non-tender with only generalised crampy discomfort, and no blood on the rectal examination. Announce ONE dominant complaint — abdominal pain — then: the two other diagnoses that would explain all four symptoms are appendicitis and inflammatory bowel disease; by system — gastrointestinal: diverticulitis, pancreatitis, bowel obstruction, C. difficile colitis, bowel cancer; urinary: pyelonephritis, renal calculus, urinary tract infection; obstetric and gynaecological in a woman: ectopic pregnancy, pelvic inflammatory disease, ovarian torsion; metabolic: diabetic ketoacidosis. Plan: bloods with a lactate, capillary glucose and ketones, urine dipstick, beta-hCG in a woman, IV sodium chloride 0.9% and an antiemetic; NOT antibiotics routinely; stool sample if blood or mucus, prolonged or severe illness, recent antibiotics or hospital, travel, immunosuppression, or a suspected outbreak. Safety-net: return if unable to keep fluids down, blood, severe or localising pain, or no urine output. Public health: exclusion from food handling until 48 hours symptom-free VERIFY.",
+   "dx": [
+    "**ACUTE INFECTIVE GASTROENTERITIS WITH MODERATE DEHYDRATION — a 35-year-old with two days of crampy abdominal pain, fever, vomiting and watery diarrhoea, two workmates affected, a roadhouse meal, dizziness on standing, and a soft non-tender abdomen.** **Three tasks, and hydration is scored SEPARATELY from the abdomen.**",
+    "**HYDRATION IS A FULL, STRUCTURED EXAMINATION IN ITS OWN RIGHT — not two sentences before the abdomen.**",
+    "**ASK FOR THE LYING AND STANDING BLOOD PRESSURES, AND ASK AGAIN IF FOBBED OFF: 'may I specifically have the standing blood pressure? A normal lying pressure does not exclude significant volume depletion.'** **Here: lying 118/76, pulse 92 → standing 96/64, pulse 112 — a drop of 22 systolic and 12 diastolic with a rise in pulse = POSTURAL HYPOTENSION.**",
+    "**SAY THE TECHNIQUE: rest supine five minutes · SYSTOLIC BY PALPATION FIRST, then confirm by auscultation, to avoid an AUSCULTATORY GAP · stand him and repeat at ONE AND THREE MINUTES with the pulse · ask whether he feels dizzy.**",
+    "**THE PERIPHERAL SURVEY, each sign named: alert and orientated · CAPILLARY REFILL prolonged at three seconds · TURGOR reduced, the fold tents · LOW-VOLUME radial pulse · warm dry peripheries · SUNKEN EYES · 'could you OPEN YOUR MOUTH for me?' — DRY mucous membranes, no pooled saliva.**",
+    "**ASK FOR THE CHARTS, THEN GRADE IT: fluid balance chart, urine output and a recorded weight → 'postural hypotension, tachycardia, prolonged capillary refill, reduced turgor, sunken eyes, dry mucosa and reduced urine output — MODERATE DEHYDRATION, and he needs INTRAVENOUS rather than oral rehydration.'**",
+    "**DO THE WHOLE ABDOMINAL EXAMINATION EVEN THOUGH YOU EXPECT IT TO BE NORMAL — and report the normal result as a finding, not an apology: it is what removes APPENDICITIS, OBSTRUCTION and DIVERTICULITIS from the top of the list. Include the groins and a DRE looking specifically for BLOOD.**",
+    "**CHOOSE ONE DOMINANT COMPLAINT rather than hunting for one diagnosis that explains all four symptoms: 'I will take ABDOMINAL PAIN as the dominant complaint.' Gastroenteritis is then offered as a diagnosis of exclusion with the dangerous mimics named.**",
+    "**THE TWO OTHERS THAT EXPLAIN ALL FOUR SYMPTOMS ARE NAMED FIRST: APPENDICITIS and INFLAMMATORY BOWEL DISEASE. Then by system — GI (diverticulitis, pancreatitis, obstruction, C. DIFFICILE, bowel cancer), URINARY (pyelonephritis, calculus, UTI), O&G in a woman (ectopic, PID, torsion), METABOLIC (DKA).**",
+    "**VERSION B — ONE TASK ONLY, hydration: candidates finish in three minutes and stand in silence. USE THE TIME — the full postural technique, every peripheral sign with its normal value, the JVP from the sternal angle, the charts and a weight, the grading, what the grade changes, and the bedside tests: capillary GLUCOSE AND KETONES, urine dipstick, and a PREGNANCY TEST in a woman.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, for the hydration assessment may I have the vital signs — blood pressure, pulse rate, respiratory rate and temperature? And may I have the lying and standing blood pressures, please?' → '118/76, pulse 92, RR 16, temperature 37.8.' → ASK AGAIN: 'Thank you — may I specifically have the standing blood pressure and standing pulse? A normal lying pressure doesn't exclude significant volume depletion.' → 'Standing, 96/64, pulse 112.' → 'The systolic falls by 22 and the diastolic by 12 with a rise in pulse rate — that is postural hypotension and it indicates significant intravascular volume depletion.'"
+     "**Vitals — AND THE LYING AND STANDING BLOOD PRESSURES. Ask again if told 'stable'.**"
     ],
     [
-     "0:45",
-     "The technique, spoken (this paragraph is most of the technique mark, and in Version B most of the spare five minutes): 'I would rest him supine for five minutes and take the pressure, taking the systolic by palpation first and then confirming by auscultation so I do not miss an auscultatory gap. I would then stand him and repeat at one minute and at three minutes, recording the pulse each time, and I would ask him to tell me if he feels dizzy.'"
+     "0:30",
+     "**Name the POSTURAL DROP and the compensatory tachycardia. Describe the technique: supine 5 min, palpatory then auscultatory, 1 and 3 minutes.**"
     ],
     [
-     "1:30",
-     "WIPE: 'Hello, I'm Dr -. I've been asked to check how dehydrated you are and then to examine your tummy. I'll look at your hands and your face, then look at, feel, tap and listen to your tummy. Could you pull your top up and lower your trousers a little? Let me wash my hands. Are you in pain at the moment — would you like anything for it?' → 'It's just crampy. It comes and goes. I feel awful, though — dizzy when I stand up.'"
+     "1:10",
+     "**WIPE: hydration then abdomen explained, exposure, wash hands, analgesia.**"
     ],
     [
-     "2:15",
-     "The hydration examination itself: 'Examiner, he is alert and orientated. May I see your hands? Capillary refill is prolonged at three seconds. Pinching a fold of skin on the forearm — turgor is reduced, the fold tents. The radial pulse is of low volume. The peripheries are warm and dry. Looking at the face — the eyes are sunken. COULD YOU OPEN YOUR MOUTH FOR ME?' → 'It's like sandpaper in there.' → 'The mucous membranes are dry and there is no pooled saliva.' (Dry lips are not dry mucous membranes.)"
+     "1:40",
+     "**HYDRATION: consciousness · capillary refill · turgor · pulse volume · peripheries · sunken eyes · OPEN THE MOUTH — mucous membranes and saliva.**"
     ],
     [
-     "3:15",
-     "The charts and the grade: 'Examiner, may I see the fluid balance chart and the urine output, and does he have a recorded weight I can compare?' → 'Negative balance of about a litre and a half. Urine output has been poor. No weight available.' → 'Putting that together — postural hypotension with a compensatory tachycardia, prolonged capillary refill, reduced turgor, sunken eyes, dry mucous membranes and reduced urine output — this is MODERATE dehydration, and he needs intravenous rather than oral rehydration.'"
+     "2:40",
+     "**Ask for the FLUID BALANCE CHART, URINE OUTPUT and a WEIGHT. GRADE IT — moderate — and say it means IV rehydration.**"
     ],
     [
-     "4:15",
-     "The abdomen in full, despite expecting it to be normal: 'No Cullen sign, no Grey Turner sign, no scars, no distension, no masses. Bending down — it moves symmetrically with respiration. Could you cough for me and tell me if it hurts?' → 'It pulls a bit but it doesn't really hurt.' → 'Superficial palpation of all nine regions, starting away from the pain — soft, no tenderness, no guarding, no rigidity. Deep palpation — mild generalised crampy discomfort only, no localised tenderness, no rebound and no masses. No tenderness on percussion. Auscultating below the umbilicus — bowel sounds are present. I would inspect the inguinal regions for hernias, and I would like a digital rectal examination with consent and a chaperone, looking in particular for BLOOD on the glove.' → 'Groins normal, rectal normal, no blood.' (Report the normal abdomen as a finding, not apologetically — it is what removes appendicitis, obstruction and diverticulitis from the top of the list.)"
+     "3:20",
+     "**Abdomen: Cullen, Grey Turner, scars, distension — bend down. Cough. Superficial and deep palpation — soft, generalised crampy discomfort only.**"
     ],
     [
-     "6:00",
-     "Explain: 'The good news is that your tummy is soft and not tender, which makes something surgical like appendicitis much less likely. I think this is most likely a tummy bug — an infection of the gut, usually viral. What does concern me is how much fluid you've lost: your blood pressure dropped when you stood, your mouth is dry and your skin is slow to spring back. I'd like to put a drip in, give you fluid and something for the sickness, and take some blood tests.' → 'How long will I be here?' → 'A few hours at least, until you can keep fluids down and your blood pressure stays up when you stand.' Safety-net in plain words."
+     "4:40",
+     "**Percussion, bowel sounds, groins, DRE for BLOOD.**"
     ],
     [
-     "7:00",
-     "Present: 'Rather than looking for one diagnosis that explains all four symptoms, I'll take abdominal pain as the dominant complaint...' then the list and the plan (see dx), ending with 'I would not give antibiotics routinely.'"
+     "5:30",
+     "**Plain-language explanation — a tummy bug, the concern is the fluid lost — drip, antiemetic, bloods, and red-flag return advice.**"
     ],
     [
-     "V-B",
-     "VERSION B — filling the spare five minutes, in order and out loud: the full technique for the postural reading; palpatory then auscultatory systolic; readings at one and three minutes with the pulse; symptoms on standing; then EVERY peripheral sign with its normal value stated; then the jugular venous pressure from the sternal angle; then the fluid balance chart, urine output and a weight; then the grading; then what the grade changes. Finish by offering the bedside tests — capillary glucose and ketones, urine dipstick, and a pregnancy test in a woman. Candidates who finish in three minutes and stand in silence lose marks they could have collected."
+     "6:40",
+     "**ONE DOMINANT COMPLAINT, then gastroenteritis as most likely, appendicitis and IBD named, then the system-based list.**"
+    ],
+    [
+     "7:30",
+     "**Plan: bloods with lactate, glucose and ketones, IV sodium chloride, antiemetic — and NO ROUTINE ANTIBIOTICS.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run sheet, Version A, with the Version B filler as the last row",
-   "ask": [
-    "'May I have the lying and standing blood pressures?' / 'A normal lying pressure does not exclude significant volume depletion.' / 'Palpatory first, then auscultatory, to avoid an auscultatory gap.' / 'Repeat at one minute and at three minutes.'",
-    "'Capillary refill is prolonged at three seconds.' / 'Skin turgor is reduced — the fold tents.' / 'Could you open your mouth for me?' / 'May I see the fluid balance chart and the urine output?' / 'This is moderate dehydration, and he needs intravenous rather than oral rehydration.'",
-    "'The abdomen is soft and non-tender throughout.' / 'Looking in particular for blood on the glove.' / 'I will take abdominal pain as the dominant complaint.' / 'I would not give antibiotics routinely.'",
-    "Examiner probes: 'why can turgor mislead?' → 'skin elasticity falls with age, so an older patient can tent without being dehydrated, and an obese patient can have normal turgor while significantly depleted — I would weight the postural blood pressure, the urine output and the mucous membranes more heavily.' / 'how would you rehydrate?' → 'mild — oral rehydration solution in small frequent volumes; the glucose and sodium content matters, so plain water or soft drink is not equivalent. Moderate to severe, or persistent vomiting — IV sodium chloride 0.9%, with a bolus of about 20 mL/kg if shocked VERIFY, then reassessment. Check electrolytes before adding potassium, and reassess the postural blood pressure and urine output rather than working to a fixed volume.' / 'could this be something else entirely?' → 'three that are easy to miss: diabetic ketoacidosis, which is why I want a capillary glucose and ketones; ectopic pregnancy in any woman, which is why I want a beta-hCG; and in an older patient, sepsis from any source, where the only sign may be confusion and a postural drop.'"
-   ],
    "pefe": [
-    "Role-player: Aaron Doyle, 35, shearer. Two days of crampy generalised abdominal pain about 4/10 that moves around, fever, four or five vomits keeping almost nothing down, watery diarrhoea about eight times a day with NO blood; two workmates have the same thing; ate at a roadhouse three days ago; no travel, no recent antibiotics or hospital; has not passed urine since this morning and it was dark; dizzy on standing; very thirsty; no medicines, allergies or operations. Flat and tired, not distressed. VOLUNTEERS the dizziness on standing early — a gift to a candidate who has not thought about the postural blood pressure. Asked to open his mouth: 'it's like sandpaper in there'; if they only look at his lips he says nothing. Coughs — 'it pulls a bit, doesn't really hurt.' No pain on superficial palpation; on deep palpation 'that's just the crampy feeling, nowhere in particular' — never localises, never guards. Worry near the end: 'Do I need to be admitted? I'm meant to be back at work Monday.'",
-    "Numbers: postural drop >=20 mmHg systolic or >=10 mmHg diastolic within three minutes VERIFY — capillary refill under 2 s — supine rest 5 minutes before the lying reading — moderate dehydration 5-10% of body weight VERIFY — resuscitation bolus 20 mL/kg of sodium chloride 0.9% VERIFY — C. difficile: oral vancomycin 125 mg QID for 10 days VERIFY — exclusion from food handling until 48 hours symptom-free VERIFY. Fourteen hydration items: conscious level, CRT, turgor, pulse volume, peripheries, sunken eyes, mucous membranes, pooled saliva, thirst, postural BP, postural pulse, urine output, fluid balance chart, weight.",
-    "Scored behaviours: asked for the STANDING blood pressure — and asked AGAIN when told the observations were stable — described the postural technique fully — reported level of consciousness — CRT, turgor, pulse volume, peripheries — asked him to open his mouth — looked for sunken eyes — asked for the fluid balance chart and urine output — GRADED the dehydration and said what the grade changes — did the whole abdominal examination despite expecting it to be normal — requested groins and a rectal examination mentioning blood — announced ONE dominant complaint before listing differentials — named appendicitis and inflammatory bowel disease near the top — mentioned glucose, ketones and a pregnancy test in a woman — said antibiotics are not routine.",
-    "Fluid balance — Negative by about 1.5 L with poor urine output"
+    "**Vitals: lying BP 118/76, pulse 92 · STANDING BP 96/64, pulse 112 · RR 16 · T 37.8 °C. Fluid balance negative by about 1.5 L, urine output poor, no weight available. Groins normal, DRE normal, no blood.**",
+    "**Numbers: POSTURAL DROP ≥20 mmHg systolic or ≥10 mmHg diastolic within three minutes · capillary refill <2 s · supine rest 5 min before the lying reading · moderate dehydration 5–10% of body weight · resuscitation bolus 20 mL/kg sodium chloride 0.9% · C. difficile oral vancomycin 125 mg QID for 10 days · food handlers excluded until 48 hours symptom-free.** VERIFY.",
+    "**Rehydration: MILD — oral rehydration solution in small frequent volumes (the glucose and sodium matter; water or soft drink is not equivalent). MODERATE to SEVERE or persistent vomiting — IV sodium chloride 0.9%, a bolus of about 20 mL/kg if shocked, then REASSESS; check electrolytes before adding potassium; reassess the postural BP and urine output rather than working to a fixed volume.** VERIFY.",
+    "**Why turgor misleads: elasticity falls with age, so an older patient can tent without being dry, and an obese patient can have normal turgor while depleted — weight the POSTURAL BP, URINE OUTPUT and MUCOUS MEMBRANES more heavily.**",
+    "**Three easy misses: DIABETIC KETOACIDOSIS (capillary glucose and ketones) · ECTOPIC PREGNANCY in any woman (β-hCG) · SEPSIS in an older patient, where the only signs may be confusion and a postural drop.**",
+    "**Safety net: come back if unable to keep anything down, if there is BLOOD, if the pain becomes severe or moves to one spot, or if he STOPS PASSING URINE.**",
+    "**Antibiotics are NOT routine. Stool sample for blood, prolonged symptoms, recent antibiotics or hospitalisation, travel, or public-health reasons.**"
    ],
-   "fails": [
-    "★ Letting 'the observations are stable' stand — the standing pressure is never included in the routine observations, so you must ask for it specifically",
-    "★ Saying nothing about the postural TECHNIQUE, especially in Version B where it is most of the spare five minutes",
-    "Reporting dry lips as dry mucous membranes — ask him to open his mouth",
-    "Listing hydration findings without grading them or saying what the grade changes; skipping the abdominal examination, or reporting a normal abdomen apologetically",
-    "Hunting for one diagnosis that explains all four symptoms instead of announcing a dominant complaint; giving gastroenteritis without naming the dangerous mimics first; giving antibiotics routinely"
-   ],
-   "numbers": [
-    "14 hydration items · postural drop >=20/10 mmHg within 3 min VERIFY · supine rest 5 min · readings at 1 and 3 min · CRT prolonged at 3 s · moderate dehydration 5-10% body weight VERIFY · 1 dominant complaint, 4 complaints given",
-    "Lying 118/76 HR 92, standing 96/64 HR 112 (fall 22/12) · negative balance ~1.5 L · IV NaCl 0.9%, bolus 20 mL/kg if shocked VERIFY · glucose, ketones, dipstick, beta-hCG · no routine antibiotics · C. difficile oral vancomycin 125 mg QID 10 days VERIFY · food-handling exclusion 48 h symptom-free VERIFY"
+   "ddx": [
+    [
+     "**Acute infective gastroenteritis with moderate dehydration** — the answer",
+     "**Two days of crampy pain, fever, vomiting and watery diarrhoea; two workmates affected; a roadhouse meal; postural drop; soft non-tender abdomen**",
+     "**Postural BP, the full hydration survey, and a complete — normal — abdominal examination**",
+     "**IV rehydration, antiemetic, bloods, glucose and ketones; no routine antibiotics**"
+    ],
+    [
+     "**Appendicitis**",
+     "**Migratory pain localising to the RLQ, rebound, percussion tenderness**",
+     "**Localised tenderness — absent here**",
+     "**Named first among the conditions that explain all four symptoms**"
+    ],
+    [
+     "**Inflammatory bowel disease**",
+     "**Bloody diarrhoea, weight loss, recurrent episodes, extraintestinal features**",
+     "**Blood on the DRE glove; duration and recurrence**",
+     "**The other condition that explains all four symptoms**"
+    ],
+    [
+     "**C. difficile colitis; diverticulitis; pancreatitis; obstruction**",
+     "**Recent antibiotics or hospital; LIF pain in an older patient; epigastric pain to the back; distension and absolute constipation**",
+     "**Antibiotic and hospital history; localised tenderness; lipase**",
+     "**The rest of the gastrointestinal bucket**"
+    ],
+    [
+     "**Diabetic ketoacidosis**",
+     "**Vomiting, abdominal pain, dehydration, Kussmaul breathing**",
+     "**Capillary GLUCOSE AND KETONES**",
+     "**The metabolic mimic that must not be missed**"
+    ],
+    [
+     "**Pyelonephritis; ectopic pregnancy or PID in a woman**",
+     "**Loin pain, dysuria, rigors; late period, pelvic pain, discharge**",
+     "**Urine dipstick; β-hCG in any woman**",
+     "**The urinary and O&G buckets**"
+    ]
    ]
   },
   "source": "Gastroenteritis_Hydration_2_Case_Tasks_Script_Notability.pdf, Abdo PE folder (Aaron Doyle, 35, two days of pain, fever, vomiting and diarrhoea — gastroenteritis with moderate dehydration; the postural drop, the fourteen hydration items and one dominant complaint, with the Version B hydration-only recall folded in)",
@@ -41349,20 +41717,20 @@ const EMBEDDED_CARDS = [
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Letting 'the observations are stable' stand — the STANDING pressure is never among the routine observations, so it is never included in that answer, and the postural blood pressure is the single most commonly omitted item in the station: 'may I have the lying and standing blood pressures, please?' and if fobbed off, ask again — 'may I specifically have the standing blood pressure? A normal lying pressure does not exclude significant volume depletion'; a drop of ≥20 mmHg systolic or ≥10 mmHg diastolic within three minutes is positive (★)",
-   "FAIL — Saying nothing about the postural TECHNIQUE, especially in Version B where it is most of the spare five minutes and most of the technique mark: 'I would rest him supine for five minutes and take the pressure, taking the systolic by PALPATION first and then confirming by auscultation so I do not miss an auscultatory gap; I would then stand him and repeat at one minute and at three minutes, recording the pulse each time, and I would ask him to tell me if he feels dizzy'",
-   "FAIL — Reporting dry lips as dry mucous membranes — ask him to open his mouth ('the mucous membranes are dry and there is no pooled saliva'); hydration is a full structured examination in its own right, not two sentences before the abdomen — conscious level, capillary refill, skin turgor tenting, pulse volume, peripheries, sunken eyes, then the FLUID BALANCE CHART, the urine output and a recorded weight to compare",
-   "FAIL — Listing hydration findings without grading them or saying what the grade changes: 'postural hypotension with a compensatory tachycardia, prolonged capillary refill, reduced turgor, sunken eyes and dry mucous membranes, with reduced urine output — that is MODERATE dehydration, and he needs intravenous rather than oral rehydration'; moderate is 5–10% of body weight, a bolus of about 20 mL/kg of sodium chloride 0.9% if shocked, electrolytes checked before adding potassium, and reassessment against the postural pressure and urine output rather than a fixed volume",
-   "FAIL — Skipping the abdominal examination, or reporting a normal abdomen apologetically — it is the finding that REMOVES appendicitis, obstruction and diverticulitis from the top of the list; do the whole thing anyway: Cullen and Grey Turner, bend down to look across, cough, superficial palpation of all nine regions starting away from the pain, deep palpation ('mild generalised crampy discomfort only, no localised tenderness, no rebound and no masses'), percussion, bowel sounds, then the inguinal regions and a rectal examination with consent and a chaperone, looking particularly for BLOOD on the glove",
-   "SAY — Announce ONE DOMINANT COMPLAINT before the list rather than hunting for a single diagnosis that explains all four symptoms: 'I will take abdominal pain as the dominant complaint… my most likely diagnosis is acute infective gastroenteritis with moderate dehydration, and the two other diagnoses that would explain all four symptoms are APPENDICITIS and INFLAMMATORY BOWEL DISEASE'; then by system — gastrointestinal (diverticulitis, pancreatitis, bowel obstruction, C. difficile colitis, bowel cancer), urinary (pyelonephritis, renal calculus, urinary tract infection), obstetric and gynaecological in a woman (ectopic pregnancy, pelvic inflammatory disease, ovarian torsion), metabolic (diabetic ketoacidosis); bloods with a lactate, capillary glucose and ketones, intravenous sodium chloride and an antiemetic, and antibiotics are NOT routine; the three easy to miss are diabetic ketoacidosis, ectopic pregnancy in any woman, and sepsis in an older patient where the only sign may be confusion and a postural drop; safety net — cannot keep anything down, blood, pain becoming severe or moving to one spot, or passing no urine"
-  ]
+   "FAIL — Never taking a POSTURAL blood pressure — the single most commonly omitted item.",
+   "FAIL — Accepting 'the observations are stable'. The standing pressure is never included in that answer.",
+   "FAIL — Looking at the lips instead of asking him to open his mouth. Dry lips are not dry mucous membranes.",
+   "FAIL — Listing hydration findings without GRADING them and saying what the grade changes.",
+   "SAY — A normal lying pressure does not exclude significant volume depletion.",
+   "SAY — I will take abdominal pain as the dominant complaint."
+  ],
+  "v2": true
  },
  {
   "id": "PE-17",
   "cat": "pe",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "PHYSICAL EXAMINATION — hospital ward. A normal screening examination with ONE finding that only appears if you actively test for it: hold both arms out, palms up, eyes closed, and WAIT A FULL TEN SECONDS. Miss the drift and you report a normal examination in a man who has had a TIA. 'Basic' means SCREENING — all four limbs, representative roots, gait at the end; it does not mean an exhaustive examination of one limb and it does not mean cranial nerves. The examiner interrupts three times with skip instructions and you must obey INSTANTLY and say what you are omitting. Automatic fails: examining one limb when the task said basic/screening; arguing with or ignoring a skip; unsafe gait assessment; silence — examining with no commentary.",
   "stem": [
    "Hospital ward. A 54-year-old man admitted after a brief episode of feeling weak and clumsy down one side, which has now resolved. He is alert and comfortable; vital signs stable."
   ],
@@ -41370,72 +41738,107 @@ const EMBEDDED_CARDS = [
    "Perform a basic neurological physical examination with running commentary",
    "State your findings and where you would localise any abnormality"
   ],
-  "time": "DECLARE (15 s): 'I will perform a screening neurological examination of all four limbs · inspection, tone, power, reflexes, screening sensation and coordination · comparing both sides throughout, and I will assess gait at the end if it is safe' · WIPE 35 s + global look: alert and comfortable, speech fluent, face symmetrical, no tremor or involuntary movement, no mobility aid at the bedside · UPPER LIMBS 95 s: inspection, tone (let your arms go floppy), power C5 abduction / C5-6 elbow flexion / C7 extension / C8 grip / T1 finger abduction, biceps + supinator + triceps · THE TEST THAT MAKES THE STATION 15 s: 'hold both arms straight out in front, palms up, close your eyes' and WAIT TEN SECONDS → right arm pronates and sinks → 'there is a pronator drift of the right arm · an upper motor neuron sign, the only abnormality so far; I will pay particular attention to the right side' · LOWER LIMBS 95 s: inspection, tone + ankle clonus, power L2/3 hip flexion, L3/4 knee extension, L5/S1 knee flexion, L4/5 dorsiflexion, L5 great-toe extension, S1/2 plantarflexion, knee and ankle jerks, PLANTARS ('this may feel unpleasant') · SENSATION 60 s: cotton wool demonstrated on the sternum, C5/C6/C8 and L3/L5/S1 with the escalation rule stated · COORDINATION + GAIT 55 s: finger-nose, rapid alternating movements, heel-shin, ask about falls, walk BESIDE him, watch the turn · SUMMARISE 45 s with explicit negatives, then LOCALISE before diagnosing.",
   "back": {
-   "dx": "Normal screening examination in all four limbs EXCEPT a pronator drift of the right arm — a subtle upper motor neuron sign that formal power testing at 5/5 misses. It localises to the LEFT cerebral hemisphere, most likely the corticospinal pathway, and in a man with a transient episode of right-sided weakness that has resolved, the leading diagnosis is a transient ischaemic attack. Say the localisation BEFORE the diagnosis — the localisation is the mark and the diagnosis follows from it. Plan: time-critical even though he looks well — immediate blood glucose, ECG for atrial fibrillation, urgent same-day assessment on the TIA/stroke pathway with brain and carotid imaging, vascular risk factor assessment (BP, lipids, glucose, smoking), antiplatelet or anticoagulant discussed with the stroke service, and do NOT drive until assessed, documented. Completion: cranial nerves, full sensory testing including vibration and proprioception, cardiovascular examination with pulse, heart sounds and BP in both arms, and cognition/speech. If the drift is ABSENT, do not manufacture a finding: 'this is a normal screening neurological examination — a normal examination does not exclude a TIA, because by definition the deficit has resolved, and the urgency of assessment is unchanged.' That sentence scores as well as finding the drift.",
+   "dx": [
+    "**A RIGHT PRONATOR DRIFT — the only abnormality in an otherwise normal four-limb screen — in a 54-year-old man after a brief, resolved episode of right-sided weakness and clumsiness. That LOCALISES TO THE LEFT CEREBRAL HEMISPHERE, and in this history means a TRANSIENT ISCHAEMIC ATTACK until proven otherwise.**",
+    "**DECODE AND DECLARE IN THE FIRST FIFTEEN SECONDS: 'I will perform a SCREENING neurological examination of ALL FOUR LIMBS — inspection, tone, power, reflexes, screening sensation and coordination — COMPARING BOTH SIDES THROUGHOUT, with gait at the end if safe.' 'Basic' means screening — not one limb exhaustively, and not cranial nerves. Declaring it makes brevity read as design rather than omission.**",
+    "**THE GLOBAL LOOK IS FREE MARKS: alert and comfortable, SPEECH FLUENT, FACE SYMMETRICAL, no tremor or involuntary movement, no mobility aid at the bedside.**",
+    "**COMPARE LEFT AGAINST RIGHT MOVEMENT BY MOVEMENT — testing one whole arm and then the other hides asymmetry ninety seconds apart. Upper limbs C5 to T1: shoulder abduction C5, elbow flexion C5/6, extension C7, grip C8, finger abduction T1. Biceps, supinator, triceps.**",
+    "**THE TEST THAT MAKES THE STATION: 'hold both arms straight out, PALMS UP, and CLOSE YOUR EYES' — HELD FOR A FULL TEN SECONDS. The right arm slowly pronates and sinks. Omitting drift because power was 5/5 is the error: DRIFT DETECTS SUBTLE PYRAMIDAL WEAKNESS THAT FORMAL POWER TESTING MISSES, and it takes fifteen seconds.**",
+    "**NAME IT AND CHANGE FOCUS OUT LOUD: 'there is a pronator drift of the right arm. That is an UPPER MOTOR NEURON sign and the only abnormality so far. I will pay particular attention to the right side for the rest of the examination.'**",
+    "**LOWER LIMBS, WITH THE PYRAMIDAL SCREEN: tone and ANKLE CLONUS · hip flexion L2/3, knee extension L3/4, knee flexion L5/S1, dorsiflexion L4/5, great-toe extension L5, plantarflexion S1/2 · knee and ankle jerks · PLANTAR RESPONSES — 'this may feel unpleasant' — among the most informative ten seconds in a possible pyramidal lesion.**",
+    "**SCREENING SENSATION WITH AN ESCALATION RULE: light touch at C5, C6, C8, L3, L5 and S1, compared side to side — 'had any point been abnormal I would have mapped it fully and added vibration and proprioception.' That sentence converts brevity into a deliberate decision. When told 'assume sensation is normal', obey instantly and say what you are omitting.**",
+    "**COORDINATION AND A SAFE GAIT: finger-nose with the arm fully straight, rapid alternating movements, heel-shin — then 'HAVE YOU HAD ANY FALLS OR DIZZINESS?' before walking him to the wall, TURNING and back, WALKING BESIDE HIM.**",
+    "**LOCALISE BEFORE YOU DIAGNOSE, then act: 'a right pronator drift with no other sign localises to the LEFT CEREBRAL HEMISPHERE — the corticospinal pathway — and in this history my leading diagnosis is a TIA.' Time-critical even though he looks well: GLUCOSE now, ECG for AF, same-day TIA pathway with brain and carotid imaging, vascular risk factors, antithrombotic therapy with the stroke service — and NO DRIVING until assessed, documented.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Decode and declare: 'Examiner, I will perform a screening neurological examination of all four limbs — inspection, tone, power, reflexes, screening sensation and coordination — comparing both sides throughout, and I will assess gait at the end if it is safe.' (Silently choosing a scaffold means brevity later reads as omission rather than design.)"
+     "**DECODE AND DECLARE the four-limb screen. WIPE, exposure of arms and legs, consent, ask about pain.**"
     ],
     [
-     "0:15",
-     "WIPE and exposure: 'Hello, I am Dr -, one of the doctors here. I have been asked to examine your nerves — I will look at you, check your arms and legs, test strength, reflexes, sensation and coordination, and then watch you walk. I will need your arms and legs exposed. Please tell me if anything is painful. Is that all right?' Then the global look, which produces no physical act but is free marks: 'alert and comfortable at rest, speech fluent, face symmetrical, no tremor or involuntary movement, no mobility aid at the bedside.'"
+     "0:35",
+     "**Global observation: alert, speech fluent, face symmetrical, no tremor, no aids.**"
     ],
     [
-     "1:00",
-     "Upper limbs, ITPR: 'no wasting, fasciculation, abnormal posture or tremor. Please let your arms go floppy — tone is normal and symmetrical at the wrist, elbow and shoulder. Copy me and don't let me move you — shoulder abduction C5, elbow flexion C5/6, elbow extension C7, grip C8, finger abduction T1. Power is 5 out of 5 and symmetrical from C5 to T1. Biceps, supinator and triceps reflexes are present and symmetrical.'"
+     "0:50",
+     "**Upper limbs: inspection, tone at wrist, elbow and shoulder, POWER C5–T1 compared movement by movement, biceps, supinator, triceps.**"
     ],
     [
-     "2:35",
-     "THE DRIFT: 'Please hold both arms straight out in front of you, palms facing up, and close your eyes. Hold them there for me.' WAIT THE FULL TEN SECONDS in silence. The right arm slowly pronates and sinks. 'Examiner, there is a pronator drift of the right arm. That is an upper motor neuron sign and it is the only abnormality I have found so far. I will pay particular attention to the right side for the remainder of the examination.' (Two or three seconds and the sign never appears — drift detects the pyramidal weakness that 5/5 power testing misses.)"
+     "2:25",
+     "**PRONATOR DRIFT — palms up, eyes closed, TEN FULL SECONDS. Name it, call it UMN, change focus aloud.**"
     ],
     [
-     "2:50",
-     "Lower limbs: 'no wasting, fasciculation or deformity. Please let your legs go floppy — tone is normal, and I am testing for ankle clonus, of which there is none. Hip flexion L2/3, knee extension L3/4, knee flexion L5/S1, dorsiflexion L4/5, great-toe extension L5, plantarflexion S1/2 — power is 5 out of 5 and symmetrical. Knee jerks L3/4 and ankle jerks S1/2 present and symmetrical. Plantar responses — this may feel unpleasant — are downgoing bilaterally.' (Dropping the plantars in a possible pyramidal lesion throws away the most informative ten seconds available.)"
+     "2:40",
+     "**Lower limbs: inspection, tone, ANKLE CLONUS, POWER L2–S2, knee and ankle jerks, PLANTARS.**"
     ],
     [
-     "4:25",
-     "Screening sensation with the escalation rule: 'This is cotton wool, and this is what it feels like on your breastbone. Now please close your eyes and say yes each time you feel it.' (C5 lateral upper arm, C6 thumb, C8 little finger; L3 medial knee, L5 dorsum, S1 lateral foot, each compared left with right.) 'Screening light touch is intact and symmetrical in representative dermatomes in all four limbs. Had any point been abnormal I would have mapped it fully — distal to proximal for a sensory level and root by root for a dermatomal pattern — and added vibration and proprioception.' (Never apologise for screening; state the plan and the escalation rule.)"
+     "4:15",
+     "**Screening sensation in six dermatomes with the ESCALATION RULE — or obey the skip and state the omission.**"
     ],
     [
-     "5:25",
-     "Coordination and gait: 'Touch your nose, then my finger, as quickly and accurately as you can — keep your arm fully straight... now turn your hands over rapidly on your thighs... now the heel of one foot on the opposite knee and run it down the shin. Have you had any falls or dizziness? Good — if you feel safe, please walk to the wall, turn around and walk back; I will walk beside you.' → 'gait is normal, normal base and stride, preserved arm swing, normal turn, no ataxia, foot drop or circumduction.'"
+     "5:15",
+     "**Coordination: finger-nose, rapid alternating movements, heel-shin.**"
     ],
     [
-     "6:20",
-     "Summarise with explicit negatives, LOCALISE, then diagnose, then plan (see dx). Examiner: 'anything you would add to complete your examination?' → cranial nerves, full sensory testing, cardiovascular examination with BP in both arms, cognition and speech."
+     "5:45",
+     "**FALLS QUESTION, then GAIT with a turn, walking beside him.**"
     ],
     [
-     "skips",
-     "The three interruptions — obey INSTANTLY, mid-movement if necessary, and state the omission. ~2 min: 'assume the reflexes are normal' → 'Thank you — I will move on to...' ~4 min: 'assume sensation is normal, move on' → 'Thank you — I will omit sensory testing and move to coordination and gait. For completeness I would have screened light touch in representative dermatomes in all four limbs and mapped fully if any point were abnormal.' ~5:30: 'tell me your findings now' → summarise what you have actually done, then say what remains: 'I had not yet assessed gait; I would want to before completing my assessment.' NEVER say 'can I just finish this?'"
+     "6:10",
+     "**Summary with EXPLICIT NEGATIVES, then LOCALISE — left hemisphere — then DIAGNOSE — TIA.**"
+    ],
+    [
+     "7:00",
+     "**Plan: glucose, ECG, same-day TIA pathway, imaging, risk factors, antithrombotics, no driving. Completion sentence: cranial nerves, full sensory, cardiovascular, cognition and speech.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's six-minute screen plus interpretation",
-   "ask": [
-    "'I will perform a screening neurological examination of all four limbs, comparing both sides throughout.' / 'I would wash my hands, confirm the patient's identity, explain the examination and obtain consent, ensure appropriate exposure and positioning, and offer a chaperone where appropriate.' / 'The patient is alert and comfortable at rest; speech is fluent and the face is symmetrical.'",
-    "'Please let your arms go completely floppy and let me do the work.' / 'Copy me and don't let me move you.' / 'Power is 5 out of 5 and symmetrical from C5 to T1.' / 'Hold both arms out in front, palms up, and close your eyes.' / 'There is a pronator drift on the right — an upper motor neuron sign.' / 'I am testing for ankle clonus.' / 'This may feel a little unpleasant — I am checking the plantar response.'",
-    "'I am screening representative dermatomes, and I would map fully if any point were abnormal.' / 'Have you had any falls? I will walk beside you.' / 'This localises to the left cerebral hemisphere.' / 'A normal examination does not exclude a transient ischaemic attack.' / 'I would complete my assessment with cranial nerves, full sensory testing, and a cardiovascular examination.'",
-    "Variant B — the GIDDINESS stem ('relevant neurological examination' in a 60-year-old): 'Examiner, given giddiness, the relevant components are cranial nerves with particular attention to nystagmus and eye movements, cerebellar testing in the upper and lower limbs, gait and Romberg, a screening limb examination for focal deficit, and a lying and standing blood pressure. I would also ask whether the giddiness is spinning or light-headedness, because that distinction changes the examination.' Trap: a rote four-limb screen with no coordination, gait or postural BP — 'relevant' is an instruction to CHOOSE, and choosing badly is worse than choosing narrowly.",
-    "Variant C — the CONSCIOUS-STATE stem (drowsy patient, formal power impossible): 'I will begin by assessing conscious state using the Glasgow Coma Scale, then pupils, then a limb examination adapted to a patient who cannot cooperate fully.' Score it aloud in components: 'eyes open to voice, E3; confused but using words, V4; localises to a central painful stimulus, M5 — total 12 out of 15, E3 V4 M5.' 'Because power cannot be formally tested I am relying on tone, reflexes, plantar responses and the symmetry of response to a painful stimulus; I would check pupils for size, equality and reaction, and the blood glucose immediately.' Traps: a bare GCS number, and a sternal rub — use a trapezius squeeze or supraorbital pressure and say which. Drift in someone who cannot lift their arms → observe asymmetry of resting posture and of response to a painful stimulus."
-   ],
    "pefe": [
-    "Role-player: Dennis Hale, 54, truck driver admitted overnight. Yesterday afternoon his right arm and leg felt weak and clumsy for about ten minutes, then normal; he feels completely fine and thinks the fuss is unnecessary. Smoker, blood pressure tablets taken 'most days'. Worried about his licence but raises it only if asked what is on his mind: 'Will this stop me driving my truck?' THE ONE ABNORMAL FINDING — if asked to hold both arms out, palms up, eyes closed, the right arm slowly pronates and sinks over about TEN seconds; held only two or three seconds, nothing happens; never asked, the sign never exists and is marked missed. No drift during any other test. The partner also plays the examiner and interrupts three times with skip instructions.",
-    "Numbers: MRC 0-5 — GCS 3-15 in three components — more than 3 beats of clonus is sustained — TEN SECONDS is how long you hold a drift — C5-T1 upper limb, L2-S2 lower limb power, L1-S1 lower limb sensation — 128 Hz for vibration — biceps C5/6, triceps C7, knee L3/4, ankle S1/2.",
-    "To the patient, never the jargon: 'when you held your arms out with your eyes closed, the right one drifted a little, which suggests the signal from the brain to that arm is not quite getting through as it should.' Avoid in front of the patient: pronator drift, upper motor neuron, pyramidal, dysmetria, plantar response. Licence question — do not promise: there are national medical standards for commercial drivers, you will go through them once he is assessed, and in the meantime he must not drive; VERIFY the commercial-vehicle standards in Austroads before quoting a timeframe.",
-    "Pronator drift — POSITIVE on the RIGHT — subtle, and appears only if you specifically test for it"
+    "**Findings: no wasting, normal tone, NO CLONUS, power 5/5 throughout, symmetrical reflexes, DOWNGOING plantars, intact screening sensation, normal coordination and gait — and a RIGHT PRONATOR DRIFT that appears ONLY if tested.**",
+    "**Numbers: MRC 0–5 · GCS 3–15 in three components · >3 beats of clonus is sustained · drift held 10 seconds · C5–T1 upper limb, L2–S2 lower limb power, L1–S1 lower limb sensation · 128 Hz for vibration · biceps C5/6, triceps C7, knee L3/4, ankle S1/2.** VERIFY.",
+    "**The examiner interrupts three times — about 2 min 'assume the reflexes are normal', about 4 min 'assume sensation is normal, move on', about 5:30 'tell me your findings now'. Each time: 'thank you — I will move on to…', stop mid-movement if necessary, and say what remains. NEVER 'can I just finish this?'**",
+    "**IF THE DRIFT IS ABSENT: do not manufacture a finding — 'this is a normal screening neurological examination. A normal examination does not exclude a transient ischaemic attack — by definition the deficit has resolved — and the urgency of assessment is unchanged.' That sentence scores as well as finding the drift.**",
+    "**To the patient, without jargon: 'when you held your arms out with your eyes closed, the right one drifted a little, which suggests the signal from the brain to that arm is not quite getting through as it should.' Avoid 'pronator drift', 'upper motor neuron', 'pyramidal' in front of him.**",
+    "**VARIANT B — GIDDINESS ('relevant' means CHOOSE and JUSTIFY): cranial nerves with NYSTAGMUS and eye movements, cerebellar testing in upper and lower limbs, GAIT AND ROMBERG, a screening limb examination for focal deficit, and a LYING AND STANDING BLOOD PRESSURE — and ask whether it is spinning or light-headedness. A rote four-limb screen that never tests coordination, gait or postural BP chooses badly.**",
+    "**VARIANT C — CONSCIOUS STATE: open with GCS in three components (e.g. E3 V4 M5 = 12), pupils, and BSL immediately; rely on TONE, REFLEXES, PLANTARS and symmetry of response to a painful stimulus — trapezius squeeze or supraorbital pressure, not a sternal rub. Commercial driving: check the Austroads standards before quoting a timeframe.** VERIFY."
    ],
-   "fails": [
-    "★ Examining one limb when the task said basic or screening; adding cranial nerves instead of the four-limb screen",
-    "★ Arguing with or ignoring a skip instruction, or finishing the manoeuvre first",
-    "Never testing pronator drift because power was 5/5, or holding it only two or three seconds so the sign never appears",
-    "Unsafe gait assessment — no falls question, assessed from a chair or across the room, or no turn; dropping the plantars in a screening examination",
-    "Silence — performing the whole examination without commentary; reporting the drift and stopping without localising; manufacturing a finding when the examination is normal"
-   ],
-   "numbers": [
-    "~6 min screen then 1-2 min interpretation · drift held 10 s · 3 skip instructions, obeyed instantly · MRC 0-5 · GCS in 3 components · >3 beats clonus = sustained · 128 Hz vibration",
-    "C5-T1 upper limb · L2-S2 lower limb power · L1-S1 lower limb sensation · biceps C5/6, triceps C7, knee L3/4, ankle S1/2 · localise (left hemisphere) BEFORE naming TIA · glucose, ECG for AF, same-day stroke pathway, no driving"
+   "ddx": [
+    [
+     "**Transient ischaemic attack — left hemisphere** — the answer",
+     "**Ten minutes of right arm and leg weakness and clumsiness, fully resolved; a RIGHT PRONATOR DRIFT; smoker; erratic antihypertensive adherence**",
+     "**Pronator drift held for ten seconds; localisation stated before diagnosis**",
+     "**Glucose, ECG, same-day TIA pathway with brain and carotid imaging, risk factors, antithrombotics, no driving**"
+    ],
+    [
+     "**Minor ischaemic stroke**",
+     "**A persisting deficit or an infarct on imaging despite apparent recovery**",
+     "**Imaging — the clinical picture alone cannot separate them**",
+     "**Same urgent stroke pathway**"
+    ],
+    [
+     "**Hypoglycaemia**",
+     "**A transient focal deficit that resolves with glucose; diabetes or insulin**",
+     "**BEDSIDE GLUCOSE — immediately**",
+     "**The stroke mimic that is checked first**"
+    ],
+    [
+     "**Focal seizure with Todd's paresis**",
+     "**Jerking or loss of awareness before the weakness; post-ictal deficit**",
+     "**Collateral account of the episode**",
+     "**EEG and imaging; changes management and driving advice**"
+    ],
+    [
+     "**Migraine with aura; structural lesion**",
+     "**Spreading sensory or visual aura with headache; progressive rather than transient deficit**",
+     "**Headache history; imaging**",
+     "**Named as mimics; the history and imaging separate them**"
+    ],
+    [
+     "**Cardioembolic source**",
+     "**ATRIAL FIBRILLATION, valvular disease**",
+     "**ECG — and a cardiovascular examination to complete**",
+     "**Anticoagulation discussed with the stroke service if AF is found**"
+    ]
    ]
   },
   "source": "Limb_Neuro_Core_Technique_2_Case_Tasks_Script_Notability.pdf (Dennis Hale, 54, resolved right-sided weakness — a normal four-limb screen with a pronator drift that only appears if held for ten seconds; giddiness and conscious-state variants folded in)",
@@ -41468,13 +41871,14 @@ const EMBEDDED_CARDS = [
   ],
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Examining one limb when the task said basic or screening, or performing the whole examination in SILENCE — both automatic fails; 'basic' means a screening examination of ALL FOUR LIMBS with representative roots and gait at the end, not an exhaustive examination of one limb and not cranial nerves, and you declare the scaffold aloud at the start so that brevity later reads as design rather than omission: 'Examiner, I will perform a screening neurological examination of all four limbs — inspection, tone, power, reflexes, screening sensation and coordination — comparing both sides throughout, and I will assess gait at the end if it is safe' (★)",
-   "FAIL — Arguing with or ignoring a skip instruction, or finishing the manoeuvre first — three interruptions come at roughly 2:00 ('assume the reflexes are normal'), 4:00 ('assume sensation is normal, move on') and 5:30 ('tell me your findings now'), and each is obeyed instantly, stopping mid-movement if necessary, with the omission stated: 'thank you — I will omit sensory testing and move to coordination and gait; for completeness I would have screened light touch in representative dermatomes in all four limbs and mapped fully if any point were abnormal'; never 'can I just finish this?' (★)",
-   "FAIL — Never testing pronator drift because power was 5/5, or holding it only two or three seconds so the sign never appears — drift detects subtle pyramidal weakness that formal power testing MISSES and it takes fifteen seconds, and the role-player only drifts if you hold the full TEN SECONDS: 'hold both arms straight out in front of you, palms facing up, and close your eyes — hold them there for me' → 'Examiner, there is a pronator drift of the right arm; that is an upper motor neuron sign and it is the only abnormality I have found so far, so I will pay particular attention to the right side for the remainder of the examination' (★)",
-   "FAIL — Unsafe gait assessment — no falls question, assessed from a chair or across the room, or no turn: 'have you had any falls or dizziness? … if you feel safe, please walk to the wall, turn around and walk back to me — I will walk beside you', then report base, stride, arm swing, the turn, and the absence of ataxia, foot drop or circumduction (★)",
-   "FAIL — Dropping the plantars in a screening examination — in a patient with a possible pyramidal lesion they are among the most informative ten seconds available ('this may feel a little unpleasant — the plantar responses are downgoing bilaterally'), alongside ankle clonus; and never test one whole arm and then the other, because asymmetry is invisible when the sides are ninety seconds apart — compare each movement left against right before moving on (power C5–T1 above, L2–S2 below)",
-   "SAY — Report the drift and then LOCALISE, because localisation is the mark and the diagnosis follows from it: 'the abnormality is a pronator drift of the right arm — a subtle upper motor neuron sign affecting the right side, which localises to the LEFT CEREBRAL HEMISPHERE, most likely the corticospinal pathway; in the context of a transient episode of right-sided weakness that has now resolved, my leading diagnosis is a TRANSIENT ISCHAEMIC ATTACK'; it is time-critical even though he looks well — immediate blood glucose, ECG for atrial fibrillation, urgent same-day assessment on the TIA or stroke pathway with brain and carotid imaging, vascular risk factors addressed, antiplatelet or anticoagulant discussed with the stroke service, and not to drive until assessed, documented; if the drift is ABSENT do not manufacture a finding — 'this is a normal screening neurological examination; a normal examination does not exclude a transient ischaemic attack, and the urgency of assessment is unchanged' scores as well as finding the drift; to the patient use plain words, never pronator drift, upper motor neuron, pyramidal, dysmetria or plantar response"
-  ]
+   "FAIL — Examining one limb when the task said basic or screening. All four limbs.",
+   "FAIL — Arguing with or ignoring a skip instruction. Obey at once and state the omission.",
+   "FAIL — An unsafe gait assessment: no falls question, or watching from a chair.",
+   "FAIL — Performing the whole examination in silence.",
+   "SAY — Hold both arms out in front, palms up, and close your eyes.",
+   "SAY — A normal examination does not exclude a transient ischaemic attack."
+  ],
+  "v2": true
  },
  {
   "id": "PE-18",
