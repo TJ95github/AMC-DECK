@@ -27523,9 +27523,8 @@
  {
   "id": "MED-107",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Four-minute history, then PEFE from the examiner (findings only for what you NAME — the knees and the fundi are hidden), then explanation. You do not yet know whether this is syncope or falls: the first exploring question decides it. Three contributors; a candidate who memorised the recall finds one.",
   "stem": [
    "Robert, 70, has come in concerned about his recent falls. Nothing further is given."
   ],
@@ -27534,129 +27533,215 @@
    "Ask the examiner for the physical examination findings — given only if you name them specifically",
    "Explain your diagnosis and your differentials to the patient"
   ],
-  "time": "8 minutes, history 4. Vitals from the examiner before you sit · WIPE, open question · concern ONCE ('what if I fall and there's no one there?') → promise, return at the end · ★ 'do you lose consciousness, or are you still aware?' + jerky movements FIRST → say the branch aloud · ★ 'take me through each one' and stop talking (living room bumped / garden tripped / out of bed slipped — three unrelated settings = accumulated risk) · context, trigger, ★ injury · organic screen: neuro (★ 'numbness in both legs' — note, keep going), CVS, GI, vertigo, ★ missed meals · ★ PMHx four questions: when, treatment, adherence ('when I remember'), follow-up/bloods (none), complications (numbness, ★ blurry vision) · five risk domains: home, urinary, ★ MSK ('very bad knee pain'), sensory, drugs/alcohol · geriatric screen if time (memory, mood, support, diet) — NOT SADMA, NOT FHx · PEFE by name: postural BP, ★ fundoscopy + acuity, LL power + sensation, CVS/resp, ★ knees palpate + ROM, TUG, BSL, dipstick, ECG · ★ 'falls usually have multiple causes — I've found three', each linked to falling · risk-factor DDx BEFORE collapse DDx · plan, consequences, personal alarm.",
+  "findings": [
+   [
+    "YOU ARE TOLD ONLY WHAT YOU NAME",
+    "THE KNEES AND THE FUNDI ARE THE TWO FINDINGS THAT SEPARATE A PASS FROM A FAIL — AND YOU ARE TOLD NEITHER UNLESS YOU ASK FOR THEM BY NAME. 'NEUROLOGICAL EXAMINATION' WILL NOT GET YOU THE FUNDI; 'LOWER LIMB EXAMINATION' WILL NOT GET YOU THE KNEE JOINTS"
+   ],
+   [
+    "What the examiner gives on request",
+    "Alert, no pallor · VITALS NORMAL, NO POSTURAL DROP · pulse regular · FUNDOSCOPY: DIABETIC RETINOPATHY · VISUAL ACUITY REDUCED · power normal, BILATERAL GLOVE-AND-STOCKING SENSORY LOSS · CVS and respiratory normal · TENDERNESS IN BOTH KNEE JOINTS · REDUCED RANGE OF MOVEMENT BILATERALLY · TIMED UP AND GO PROLONGED · RANDOM GLUCOSE 15 · glycosuria · ECG sinus"
+   ],
+   [
+    "HE NEVER VOLUNTEERS THE RETINOPATHY — YOU FIND IT",
+    "He mentions blurry vision if asked. THE RETINOPATHY ITSELF ONLY APPEARS IF YOU REQUEST FUNDOSCOPY AND VISUAL ACUITY EXPLICITLY"
+   ],
+   [
+    "THE FORK, ASKED FIRST",
+    "'WHEN YOU FALL, DO YOU LOSE CONSCIOUSNESS, OR ARE YOU STILL AWARE OF YOUR SURROUNDINGS?' → 'I'M ALWAYS AWARE.' SAY THE ANSWER OUT LOUD SO THE EXAMINER HEARS YOU BRANCH: 'SO THESE ARE FALLS RATHER THAN BLACKOUTS'"
+   ],
+   [
+    "THE PATTERN, NOT JUST THE ANSWERS",
+    "THREE FALLS IN THREE UNRELATED SETTINGS — walking in the living room, gardening, slipping getting out of bed — WITH NO POSITIONAL OR ACTIVITY TRIGGER. THAT IS THE SIGNATURE OF MULTIPLE ACCUMULATED RISK FACTORS RATHER THAN A SINGLE MECHANISM. Falls that ALL happen on standing point at postural hypotension instead"
+   ],
+   [
+    "THE CONCERN HE OPENS WITH",
+    "'WHAT IF I FALL AND THERE'S NO ONE THERE TO HELP ME?' ACKNOWLEDGE IT ONCE, WARMLY, AND MOVE — then ANSWER IT CONCRETELY AT THE END with a PERSONAL ALARM, a CHECK-IN ARRANGEMENT, and A PLAN FOR WHAT TO DO IF HE CANNOT GET UP"
+   ],
+   [
+    "THE FOUR DIABETES QUESTIONS deliver two diagnoses in thirty seconds",
+    "WHEN DIAGNOSED — eight or nine years ago · WHAT TREATMENT — metformin · ARE YOU TAKING IT REGULARLY — 'ONLY WHEN I REMEMBER' · REGULAR FOLLOW-UP AND BLOODS — NO · ANY COMPLICATIONS — THE NUMBNESS AND THE BLURRED VISION"
+   ],
+   [
+    "A USEFUL NEGATIVE WORTH SAYING ALOUD",
+    "'THERE WAS NO POSTURAL DROP, AND NO POSITIONAL TRIGGER IN THE HISTORY, SO ORTHOSTATIC HYPOTENSION IS UNLIKELY HERE.' It shows you ACTIVELY EXCLUDED THE COMMONEST REVERSIBLE CAUSE rather than never considering it"
+   ],
+   [
+    "THE GLUCOSE OF 15",
+    "RANDOM GLUCOSE ABOVE 11.1, OR FASTING ABOVE 7.0, IS DIAGNOSTIC OF DIABETES — and in a KNOWN diabetic it CONFIRMS POOR CONTROL. It fits the story: metformin when he remembers, no follow-up, no monitoring bloods"
+   ],
+   [
+    "DO NOT MISS THE FEET",
+    "A DIABETIC WITH SENSORY LOSS NEEDS HIS FEET INSPECTED FOR ULCERATION, DEFORMITY AND CALLUS AT EVERY VISIT, AND A PODIATRY REFERRAL. It is A SEPARATE RISK FROM FALLING and it is easy marks"
+   ]
+  ],
+  "findingsLabel": "Three causes, not one — and the two findings released only if you name them",
+  "must": [
+   "FAIL — Giving one diagnosis. 'You have diabetic neuropathy and that's why you're falling.'",
+   "FAIL — Not asking about loss of consciousness first.",
+   "FAIL — Requesting 'a neurological examination' and never hearing about the knees or the fundi.",
+   "FAIL — Leading the explanation with arrhythmias and brain tumours instead of falls risk factors.",
+   "ASK — Fundoscopy and visual acuity, by name.",
+   "ASK — Palpate the knee joints, and range of movement."
+  ],
   "back": {
-   "dx": "Multifactorial falls driven by uncontrolled type 2 diabetes — THREE causes: (1) diabetic sensory neuropathy (glove-and-stocking, volunteered); (2) osteoarthritis of both knees (tender, reduced ROM — only found if you ask about joint pain and then palpate); (3) diabetic retinopathy with reduced acuity (only found if you request fundoscopy by name — he never mentioned his eyes). Underneath: random glucose 15 (>11.1), metformin 'when I remember', no check-ups. No LOC, no postural drop, TUG prolonged. Three falls in three unrelated settings with no trigger = accumulated risk factors, not one mechanism. Naming one cause = fail with the right diagnosis.",
+   "dx": [
+    "**MULTIFACTORIAL RECURRENT FALLS WITH THREE CONTRIBUTORS: DIABETIC SENSORY (PERIPHERAL) NEUROPATHY · OSTEOARTHRITIS OF BOTH KNEES · DIABETIC RETINOPATHY — all on a background of UNCONTROLLED TYPE 2 DIABETES.**",
+    "**THE DISCRIMINATING ISSUE: WHETHER YOU COMBINE YOUR FINDINGS. THIS CASE IS DELIBERATELY CONSTRUCTED WITH THREE SEPARATE CONTRIBUTORS SO THAT A CANDIDATE WHO HAS MEMORISED 'THE DIABETIC NEUROPATHY CASE' WILL NAME ONE, SOUND CONFIDENT, AND FAIL.** **An examiner who knows the recall is SPECIFICALLY LISTENING for whether you combined them.**",
+    "**THE OPENING SENTENCE, LEARNED VERBATIM: 'the first thing I want to say is that FALLS USUALLY HAVE MORE THAN ONE CAUSE — AND THAT'S CERTAINLY TRUE IN YOUR CASE. I'VE FOUND THREE THINGS THAT ARE EACH ADDING TO YOUR RISK. Let me take you through them.'** **The examiner hears it IN THE FIRST FIVE SECONDS and knows you understand the concept rather than the recall.**",
+    "**THE PATTERN TO REUSE THREE TIMES: NAME IT → EXPLAIN IT IN ONE PLAIN SENTENCE → LINK IT EXPLICITLY TO FALLS.** **NERVES: 'the high sugar has DAMAGED THE NERVES IN YOUR LEGS. WHEN YOU CAN'T FEEL YOUR FEET PROPERLY, IT'S MUCH EASIER TO TRIP.' KNEES: 'OSTEOARTHRITIS causes PAIN AND STIFFNESS, AND THAT MAKES YOU LESS STEADY.' EYES: 'IF YOU CAN'T SEE CLEARLY, YOU DON'T SEE THE STEP OR THE OBSTACLE.'**",
+    "**THEN THE THREAD: 'TWO OF THOSE THREE COME BACK TO THE SAME THING: YOUR DIABETES HASN'T BEEN WELL CONTROLLED. Your sugar today was 15, which is high. GETTING THAT UNDER CONTROL IS THE SINGLE CHANGE THAT PROTECTS YOUR NERVES AND YOUR EYES FROM HERE.'**",
+    "**ORDER MATTERS IN THE DIFFERENTIALS: RISK FACTORS FOR FALLS COME BEFORE THE SYNCOPE DIFFERENTIALS. A candidate who launches into arrhythmias and brain tumours BEFORE MENTIONING LIGHTING AND JOINT PAIN HAS SHOWN THEY ARE STILL THINKING ABOUT BLACKOUTS, NOT FALLS.**",
+    "**BOX 1, SAID FIRST — other falls risk factors checked and absent: balance and inner-ear causes · URINARY, rushing to the toilet at night · HOME ENVIRONMENT, poor lighting, stairs, slippery surfaces, loose rugs, clutter · alcohol, drugs and MEDICATIONS THAT CAUSE DROWSINESS OR LOWER BLOOD PRESSURE · POSTURAL HYPOTENSION.**",
+    "**BOX 2, SAID SECOND — causes of collapse, WITH THE REASON EACH IS UNLIKELY: neurological, cardiac, metabolic, reflex. 'The reason I don't think any of these is the answer is that YOU'VE NEVER LOST CONSCIOUSNESS, your heart rhythm and heart sounds are normal, THERE'S NO POSITIONAL TRIGGER AND NO DROP IN YOUR BLOOD PRESSURE ON STANDING.'**",
+    "**GLOVE-AND-STOCKING LOSS IS CLASSIC FOR DIABETIC NEUROPATHY BUT NOT SPECIFIC. The differential worth naming if pressed: VITAMIN B12 DEFICIENCY — AND METFORMIN ITSELF LOWERS B12 OVER YEARS — ALCOHOL, HYPOTHYROIDISM, CHRONIC KIDNEY DISEASE AND MEDICATION. That is why you check those bloods rather than assuming the diabetes explains everything.**",
+    "**ANSWER HIS ACTUAL WORRY OUT LOUD: A PERSONAL ALARM OR MEDICAL ALERT PENDANT, A CHECK-IN ARRANGEMENT with family or neighbours, and A PLAN FOR WHAT TO DO IF HE CANNOT GET UP.** **If he asks 'am I going to end up in a home?', reframe: THE POINT OF FINDING CAUSES IS THAT MOST OF THEM ARE TREATABLE.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, could I have the vital signs please — BP, pulse, RR, temperature?' → stable · WIPE, sits at an angle · 'how can I help you today?' → three falls in three months, 'what if I fall and there's no one there?' · ★ one warm sentence + promise: 'we'll make a plan about that worry before you leave'"
+     "**Ask the examiner for vitals — blood pressure, pulse, respiratory rate, temperature.** Then **WIPE and an open question.**"
+    ],
+    [
+     "0:15",
+     "**ADDRESS THE CONCERN ONCE, WARMLY, AND MOVE: 'that's a very understandable thing to be worried about. Is it alright if we go through some questions, then I'll examine you and we'll try to find the cause? WE'LL MAKE A PLAN ABOUT THAT WORRY BEFORE YOU LEAVE.'** **The empathy mark is a SINGLE SPECIFIC ACKNOWLEDGEMENT PLUS A PROMISE YOU KEEP — not repeated reassurance that eats the history.**"
     ],
     [
      "0:45",
-     "★ 'The most important thing I need to know first — when you fall, do you lose consciousness, or are you still aware of your surroundings? Any jerky movements, tongue biting, wetting yourself?' → never → 'so these are falls rather than blackouts' (yes → syncope structure)"
+     "**STEP 1, THE FORK FIRST: when you fall, DO YOU LOSE CONSCIOUSNESS, OR ARE YOU STILL AWARE · do you get any JERKY MOVEMENTS?** Then **SAY THE BRANCH OUT LOUD.**"
     ],
     [
-     "1:15",
-     "'First time, or others — how many?' · ★ 'take me through each one' → the longest answer in the station, do not interrupt · 'what were you doing before each?' · 'any activity, place or environment that triggers them?' → none · ★ 'ever injured yourself or broken bones?' → bruises"
+     "1:05",
+     "**IS THIS THE FIRST TIME, HOW MANY · CAN YOU DESCRIBE EACH OF THEM · WHAT WERE YOU DOING EXACTLY BEFORE EACH FALL · IS THERE ANY PARTICULAR ACTIVITY, PLACE OR ENVIRONMENT THAT TRIGGERS THEM · AND WHEN YOU FELL, DID YOU INJURE YOURSELF OR BREAK ANYTHING?**"
     ],
     [
-     "2:00",
-     "Organic screen, fast: slurred speech, weakness, ★ numbness → 'both legs' (note, keep going) · chest pain, SOB, palpitations · N/V, abdo pain · spinning · ★ 'do you miss meals before the falls?'"
+     "1:45",
+     "**STEP 2, THE ORGANIC SCREEN AT THE TIME OF THE FALL. NEURO: slurred speech, weakness, NUMBNESS. CVS: chest pain, shortness of breath, racing of the heart. GI: nausea, vomiting, abdominal pain. VESTIBULAR: any SPINNING sensation when it happens. METABOLIC: DO THE FALLS HAPPEN AFTER YOU'VE MISSED A MEAL?**"
     ],
     [
-     "2:30",
-     "★ PMHx: 'any conditions?' → diabetes → four questions: when (8–9 y), treatment (metformin), ★ 'taking it regularly?' (when I remember), ★ 'regular GP follow-up and blood tests?' (no), ★ 'complications — numbness, blurring of vision?' (bit blurry, 'put it down to age')"
+     "2:20",
+     "**STEP 3, PAST HISTORY AND THE FOUR DIABETES QUESTIONS: WHEN WERE YOU DIAGNOSED · WHAT TREATMENT, AND ARE YOU ABLE TO TAKE IT REGULARLY · ARE YOU HAVING REGULAR FOLLOW-UPS AND BLOOD TESTS · HAVE YOU HAD ANY COMPLICATIONS — ANY NUMBNESS IN YOUR LEGS, OR ANY BLURRING OF YOUR VISION?**"
     ],
     [
-     "3:15",
-     "Five domains: home (single storey, no stairs/pets/slippery, slippers) · urinary (no nocturia/urgency) · ★ MSK 'any joint pain?' → 'very bad knee pain, both' · balance, deformity · sensory (vision — the blur; hearing) · drugs/alcohol (none) · if time: memory, mood (low since the falls), support (wife / daughter Sundays), diet (poor)"
+     "3:00",
+     "**STEP 4, THE FIVE RISK DOMAINS. HOME: describe your home — STAIRS, PETS, SLIPPERY SURFACES, LOOSE RUGS, POOR LIGHTING, AND WHAT FOOTWEAR DO YOU USE? URINARY: do you WAKE IN THE NIGHT to pass urine, any new urgency or frequency?**"
+    ],
+    [
+     "3:20",
+     "**MSK: any JOINT PAIN · any BALANCE problems · any DEFORMITIES in your legs? SENSES: any problems with your VISION OR YOUR HEARING? DRUGS: any other MEDICATIONS, ALCOHOL, OR RECREATIONAL DRUGS?**"
+    ],
+    [
+     "3:40",
+     "**STEP 5, THE GERIATRIC SCREEN ONLY IF TIME REMAINS — four questions, thirty seconds: MEMORY · MOOD · ENOUGH SUPPORT AT HOME · DESCRIBE YOUR DIET.** **Spare time goes here, NOT to SADMA or family history, neither of which earns anything in this case.**"
     ],
     [
      "4:00",
-     "★ PEFE in order: appearance, pallor · postural BP + rhythm · ★ 'a full neurological examination — specifically fundoscopy, visual acuity, and power and sensation in the lower limbs' · CVS S1 S2 murmurs · resp · ★ 'lower limb joints — inspection, I'd like to palpate especially the knees, and the range of movement' · TUG · BSL, dipstick, ECG → retinopathy, acuity reduced, glove-and-stocking loss, knees tender + reduced ROM, TUG prolonged, RBG 15 → 'above 11.1 — poorly controlled'"
+     "**ASK THE EXAMINER, NAMING EVERY ITEM: general appearance — alert or drowsy, pallor · VITALS PLUS A POSTURAL BLOOD PRESSURE · PULSE RHYTHM.**"
+    ],
+    [
+     "4:20",
+     "**FUNDOSCOPY · VISUAL ACUITY — the two nobody asks for.** Then **LOWER LIMB POWER AND SENSATION.**"
+    ],
+    [
+     "4:40",
+     "**CARDIOVASCULAR — S1, S2, MURMURS, ADDED SOUNDS · RESPIRATORY — air entry and added sounds · LOWER LIMB INSPECTION for swelling and deformity.**"
+    ],
+    [
+     "5:00",
+     "**PALPATE THE JOINTS, ESPECIALLY THE KNEES · RANGE OF MOVEMENT OF THE KNEES · TIMED UP AND GO · OFFICE BLOOD SUGAR · URINE DIPSTICK AND ECG.**"
     ],
     [
      "5:30",
-     "★ 'Falls usually have multiple reasons, and in your case I've found three' → NAME IT → one plain sentence → '…and that increases your risk of falling' ×3 → 'and underneath all three, your sugar isn't well controlled — 15 today' · DDx: risk factors first (home, joints, numbness, vision/hearing, urinary, sedating drugs/alcohol, postural drop), then collapse causes (seizure, tumour, TIA/stroke; arrhythmia, IHD, AS; hypoglycaemia, electrolytes; vasovagal) with why not · plan: HbA1c, regular care, diabetes educator, dietitian, podiatry + footwear, ophthalmology, physio strength/balance, OT home, medication review · consequences: head injury/intracranial bleed, hip/wrist fracture → surgery, long rehab · ★ 'we aim to prevent falls by reducing the risk factors' · ★ personal alarm + daughter check-in + how to get up from the floor · review 2 wk"
+     "**THE OPENING SENTENCE — 'falls usually have more than one cause, and I've found three.'**"
+    ],
+    [
+     "5:50",
+     "**THE THREE CAUSES, each NAMED, EXPLAINED IN ONE PLAIN SENTENCE, AND LINKED TO FALLS.** Then **THE THREAD: two of the three come back to the uncontrolled diabetes, and the glucose of 15.**"
+    ],
+    [
+     "6:50",
+     "**BOX 1 — the other falls risk factors you checked and excluded. THEN BOX 2 — the causes of collapse, with the reason each is unlikely.**"
+    ],
+    [
+     "7:20",
+     "**THE PLAN, TREATING EVERY CONTRIBUTOR: diabetes control and adherence, diabetes educator and dietitian, ANNUAL CYCLE OF CARE · PODIATRY AND FOOTWEAR AND DAILY FOOT INSPECTION · physiotherapy for the knees · OPHTHALMOLOGY for the retinopathy and current glasses · OT HOME ASSESSMENT.** Then **ANSWER HIS FEAR: A PERSONAL ALARM, A CHECK-IN ARRANGEMENT, AND WHAT TO DO IF HE CANNOT GET UP.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Examiner, could I have the vital signs please — blood pressure, pulse rate, respiratory rate and temperature?' / 'I'm so sorry to hear that, Robert — that's a very understandable thing to be worried about. Is it alright if we go through some questions, then I'll examine you and we'll try to find the cause together? You're in safe hands, and we'll make a plan about that worry before you leave.'",
-    "★ 'The most important thing I need to know first — when you fall, do you lose consciousness, or are you still aware of your surroundings? Any jerky movements of the arms or legs, biting your tongue, or wetting yourself?' / 'So these are falls rather than blackouts — that helps me.'",
-    "★ 'Please describe them for me — take me through each one.' (then stop talking) / 'Is there any special activity, environment or place that triggers them?' / ★ 'When you fell, have you ever injured yourself or broken any bones?'",
-    "★ 'When were you diagnosed? What treatment are you taking? Are you able to take it regularly? Are you having regular follow-ups with your GP and regular blood tests? And have you had any complications — any numbness in your legs, or any blurring of your vision?'",
-    "★ 'Any joint pain? Any balance problems? Any deformity in your legs?' / 'Do you wake in the night to pass urine, or need to go more urgently or frequently?'",
-    "★ To examiner: 'a full neurological examination please — specifically fundoscopy, visual acuity, and the power and sensation in the lower limbs' / 'the lower limb joints — on inspection any swelling or deformity; I'd like to palpate the joints, especially the knees, and check the range of movement.' / 'A random glucose of 15 is above 11.1, so that confirms his diabetes is poorly controlled.'",
-    "★ 'Falls usually have multiple reasons — and in your case I've found three. Number one — you have a condition called diabetic sensory neuropathy. The high sugar levels have damaged the nerves in your legs, which is why you get the numbness. When you can't feel your feet properly, that increases your risk of falling. Number two — osteoarthritis in your knees, the wear and tear we expect at your age; it causes pain and stiffness, and that increases your risk of falling too. Number three — when I looked into your eyes I found diabetic retinopathy; not seeing clearly also increases the risk of falls. And underneath all three, your sugar isn't well controlled.'",
-    "'There are other things that increase the risk of falls, and I've checked for them — around the home, joint pain, numbness, vision or hearing, needing to rush to the toilet, and medications or alcohol. There are also conditions that can make someone collapse, which I've considered and think less likely — seizures, brain tumours or mini-strokes; irregular rhythms, ischaemic heart disease or a narrowed valve; a drop in blood pressure on standing; low sugar; salt imbalance; simple fainting — because you've never lost consciousness, your rhythm and heart sounds are normal, and your blood pressure doesn't drop when you stand.'",
-    "★ 'The reason we take falls seriously is that a fall can cause a head injury with bleeding inside the skull, or a fracture — often the hip or the wrist — which may mean an operation and a long rehabilitation. So we aim to prevent falls by reducing the risk factors.' / ★ 'You asked what happens if you fall with nobody there — I'd like to organise a personal alarm you can wear, so you can call for help from the floor. Shall we sort that out today?'",
-    "'Am I going to end up in a nursing home?' → 'That's a very natural fear, and I don't think that's where this is heading. The reason I've gone looking for every contributing cause is that most of them can be improved — your sugars, your knees, your glasses, your footwear, your home. People who address these things fall less and stay independent longer.' / challenge on the neuropathy: 'a glove-and-stocking polyneuropathy fits his diabetes but isn't specific — I'd also check B12, which metformin can lower, thyroid and renal function, and ask about alcohol.'"
-   ],
    "pefe": [
-    "Role-player: Robert, 70, retired (postal worker in one version), lives in a single-storey house (wife at home / widowed with daughter Michelle Sundays — briefs differ); worried but composed, slightly embarrassed about the metformin. Gives the three falls in full detail only when asked to describe them ('how many?' → 'three' and nothing more). Numbness volunteered readily. ★ Knee pain ONLY if asked about joints. ★ Blurred vision ONLY if asked about vision or complications. Genuinely surprised at retinopathy: 'I never said anything about my eyes'. If only the neuropathy is explained: 'so that's it, is it? Just the nerves?'. Asks once 'is any of it fixable?' / 'am I going to end up in a home?'. If the fear of falling alone is never revisited: 'but what if nobody's there?'",
-    "PEFE: alert, no pallor · no postural drop, pulse regular · ★ fundoscopy diabetic retinopathy, acuity reduced · LL power normal, ★ glove-and-stocking sensory loss · HS dual, chest clear · no swelling/deformity, ★ both knees tender, reduced ROM · ★ TUG prolonged · ★ random glucose 15 · dipstick glycosuria/unremarkable · ECG SR",
-    "The transferable pattern — four questions for every chronic disease: when · treatment · adherence · follow-up and monitoring · complications. Six history steps: explore the falls → organic screen → PMHx → risk factors → geriatric screen. Organic screen: neuro · CVS · GI · vertigo · missed meals. Risk domains: home · urinary · MSK · sensory · drugs/alcohol. No SADMA, no FHx — not scored",
-    "Variant A — 'actually, I think I do go out for a few seconds': switch to the syncope structure (prodrome, trigger — standing/exertion/head-turn, duration, recovery, witness, tongue/incontinence, FHx sudden cardiac death) → cardiac/reflex/orthostatic/neurological DDx; examination + ECG carry the weight · Examiner 'why do you care about falls in a man with no injuries?' → 'because the next one may not be uninjured' — head injury/intracranial bleed, hip fracture → surgery, rehab, loss of independence; recurrent falls are the strongest predictor of further falls",
-    "Diabetes: random ≥11.1 / fasting ≥7.0 · HbA1c target ~7% (53) VERIFY · metformin adherence, B12 · annual eye, foot, kidney checks · podiatry (neuropathic foot), supportive shoes, no slippers · ophthalmology for retinopathy · physio (Otago-type strength/balance), OT home, HMR · personal alarm (Country Health Connect / My Aged Care)",
-    "SA: My Aged Care 1800 200 422 · Country Health Connect · Diabetes SA · Closing the Gap PBS where relevant · Motor Vehicles Act if vision/neuropathy affects driving"
+    "**In PEFE stations YOU GET ONLY WHAT YOU NAME. The list to say aloud: POSTURAL BP · PULSE RHYTHM · FUNDOSCOPY · VISUAL ACUITY · LOWER LIMB POWER AND SENSATION · PALPATE THE KNEE JOINTS · KNEE RANGE OF MOVEMENT · TIMED UP AND GO · OFFICE GLUCOSE · URINE DIPSTICK · ECG.**",
+    "**Investigations: HbA1c — THE CONTROL FIGURE THE OFFICE GLUCOSE ONLY HINTS AT · UEC AND eGFR for nephropathy AND METFORMIN SAFETY · URINE ALBUMIN:CREATININE RATIO, the third microvascular complication · FBC, VITAMIN B12 AND TFTs for other causes of a peripheral neuropathy · VITAMIN D AND CALCIUM · lipids and blood pressure · knee X-rays only if the osteoarthritis diagnosis is uncertain, THOUGH IT IS LARGELY CLINICAL · CONSIDER DEXA GIVEN FALLS PLUS AGE — FRACTURE RISK, NOT JUST FALL RISK.**",
+    "**THE DIABETES IS THE ENGINE: address adherence HONESTLY — WHY DOES HE FORGET? COST? SIDE EFFECTS? — restart regular review, set an INDIVIDUALISED HbA1c TARGET, refer to a DIABETES EDUCATOR AND DIETITIAN, and arrange the ANNUAL CYCLE OF CARE including RETINAL SCREENING AND FOOT CHECKS.**",
+    "**THE NEUROPATHY: optimise glycaemic control, CORRECT ANY B12 DEFICIENCY, PODIATRY, WELL-FITTING SUPPORTIVE FOOTWEAR, and DAILY FOOT INSPECTION.** **THE KNEES: PARACETAMOL FIRST LINE, TOPICAL NSAIDs, PHYSIOTHERAPY FOR QUADRICEPS STRENGTHENING, weight management, a walking aid if appropriate — and BE CAUTIOUS WITH ORAL NSAIDs IN AN OLDER DIABETIC because of RENAL AND GASTROINTESTINAL RISK.**",
+    "**THE EYES: OPHTHALMOLOGY REFERRAL for the retinopathy, ensure the GLASSES PRESCRIPTION IS CURRENT, and ADVISE AGAINST MULTIFOCAL LENSES WHEN WALKING OUTDOORS OR ON STAIRS.**",
+    "**THE FALLS THEMSELVES: OT HOME ASSESSMENT — lighting, rails, removal of loose rugs, bathroom modification · PHYSIOTHERAPY OR A GROUP STRENGTH AND BALANCE PROGRAMME, which is the single most useful referral combination · MEDICATION REVIEW · VITAMIN D IF DEFICIENT · consider a FALLS CLINIC.**",
+    "**EQUITY: multifactorial falls management ASSUMES ACCESS. Podiatry, physiotherapy, OT home visits and ophthalmology are ALL HARDER TO REACH RURALLY, AND SUPPORTIVE FOOTWEAR COSTS MONEY. NAME THE BARRIER AND PLAN AROUND IT — outreach services, telehealth review, ABORIGINAL HEALTH WORKER involvement, and a GP MANAGEMENT PLAN to subsidise the allied health visits.**"
    ],
-   "fails": [
-    "★ Asking LOC eighth instead of first; never saying the branch aloud",
-    "★ 'How many falls?' → 'three' and moving on — never asking him to describe each, so the no-pattern pattern is missed",
-    "★ Not asking about injuries or fractures",
-    "Hearing 'numbness in both legs' and mentally closing the case — never asking about joint pain, so the knees vanish",
-    "'A neurological examination' without naming fundoscopy — retinopathy never disclosed; never asking to palpate and move the knees",
-    "★ 'Your falls are due to the nerve damage from your diabetes' — one cause; not opening with 'falls usually have multiple causes'; not linking each cause to falling",
-    "Leading the DDx with arrhythmias and brain tumours (thinking syncope, not falls); no consequences, no prevention line, no personal alarm; finishing 90 s early, confident"
-   ],
-   "numbers": [
-    "History 4 min · random glucose ≥11.1 (his 15) · fasting ≥7.0 · no postural drop · glove-and-stocking · TUG ≥12 s prolonged · three causes, never one",
-    "Four chronic-disease questions · five history steps · five risk domains · geriatric screen ×4 (memory, mood, support, diet)",
-    "Consequences: head injury / intracranial bleed · hip and wrist fracture · surgery, prolonged rehab · loss of independence · fear of falling · recurrence",
-    "'We aim to prevent falls by reducing the risk factors' — the closing line of every recurrent-falls station · My Aged Care 1800 200 422"
+   "ddx": [
+    [
+     "**Diabetic sensory neuropathy** — cause 1",
+     "**NUMBNESS IN BOTH LEGS; nine years of poorly controlled diabetes**",
+     "**GLOVE-AND-STOCKING SENSORY LOSS — distal symmetrical polyneuropathy**",
+     "**Optimise control; B12; PODIATRY, FOOTWEAR AND DAILY FOOT INSPECTION**"
+    ],
+    [
+     "**Osteoarthritis of both knees** — cause 2",
+     "**BAD KNEE PAIN; age 70**",
+     "**TENDERNESS IN BOTH KNEE JOINTS AND REDUCED RANGE OF MOVEMENT — ASKED FOR BY NAME**",
+     "**Largely clinical. Paracetamol, topical NSAIDs, QUADRICEPS STRENGTHENING; CAUTION WITH ORAL NSAIDs IN AN OLDER DIABETIC**"
+    ],
+    [
+     "**Diabetic retinopathy** — cause 3",
+     "**BLURRED VISION, mentioned only if asked**",
+     "**FUNDOSCOPY AND VISUAL ACUITY — HE NEVER VOLUNTEERS THE RETINOPATHY, YOU FIND IT**",
+     "**OPHTHALMOLOGY; current glasses; AVOID MULTIFOCALS OUTDOORS AND ON STAIRS**"
+    ],
+    [
+     "**Uncontrolled type 2 diabetes — the engine**",
+     "**Metformin 'when I remember'; NO FOLLOW-UP, NO BLOODS; RANDOM GLUCOSE 15**",
+     "**The four diabetes questions**",
+     "**HbA1c, UEC and eGFR, URINE ACR. Random above 11.1 or fasting above 7.0 IS DIAGNOSTIC**"
+    ],
+    [
+     "**Other causes of glove-and-stocking neuropathy**",
+     "**B12 DEFICIENCY — AND METFORMIN LOWERS B12 OVER YEARS — alcohol, hypothyroidism, CKD, medication**",
+     "Diet, alcohol, duration of metformin",
+     "**FBC, B12, TFTs, UEC — CHECK RATHER THAN ASSUMING THE DIABETES EXPLAINS EVERYTHING**"
+    ],
+    [
+     "Postural hypotension",
+     "Falls on standing; dehydration or drugs",
+     "**NO POSTURAL DROP AND NO POSITIONAL TRIGGER — SAY THIS NEGATIVE ALOUD**",
+     "Lying and standing BP; medication review"
+    ],
+    [
+     "**Hypoglycaemia**",
+     "**Falls after missed meals in a treated diabetic; sulfonylurea or insulin**",
+     "**'Do the falls happen after you've missed a meal?'**",
+     "Bedside glucose, where FOUR IS THE FLOOR; review the agent — IMMEDIATE"
+    ],
+    [
+     "**Cardiac syncope or arrhythmia**",
+     "Loss of consciousness, no warning, palpitations, exertional onset",
+     "**HE IS AWARE THROUGHOUT; heart sounds and rhythm normal**",
+     "**ECG IN EVERY FALLS PATIENT**; Holter and echo if suspected — EMERGENCY"
+    ],
+    [
+     "Seizure · stroke or TIA · intracranial bleed",
+     "Jerking, tongue bite, postictal confusion; focal deficit; **head strike, especially on an anticoagulant**",
+     "The seizure screen; FAST; **'did you injure yourself or break anything?'**",
+     "Collateral history; urgent TIA pathway; **CT HEAD** — EMERGENCY where present"
+    ],
+    [
+     "**Home environment, urinary and medications** · occult fracture",
+     "**Poor lighting, loose rugs, stairs, footwear**; nocturia and rushing; sedatives and antihypertensives; or **hip pain and reduced walking since the last fall**",
+     "The five risk domains; **ask about injury EVERY TIME**",
+     "**OT HOME ASSESSMENT PLUS A STRENGTH AND BALANCE PROGRAMME is the single most useful referral.** Image an occult fracture rather than reassuring"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Diabetic_2_Case_Tasks_Script_Notability.pdf + Recurrent_Falls_2_Case_Tasks_Script_Notability.pdf Case 1 (Robert, 70, three falls in three settings — neuropathy, OA knees, retinopathy on uncontrolled diabetes)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Diabetic_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Observations (on request)",
-    "BP 128/76 · pulse 78 regular · RR 12 · T 36.5"
-   ],
-   [
-    "General",
-    "Alert, no pallor"
-   ],
-   [
-    "Postural blood pressure",
-    "NO postural drop; pulse regular"
-   ],
-   [
-    "Eyes",
-    "DIABETIC RETINOPATHY on fundoscopy; visual ACUITY REDUCED"
-   ],
-   [
-    "Neurological",
-    "Lower limb power normal; GLOVE-AND-STOCKING SENSORY LOSS"
-   ],
-   [
-    "Heart and chest",
-    "Dual heart sounds; chest clear"
-   ],
-   [
-    "Joints",
-    "BOTH KNEES TENDER with reduced range of movement; no swelling or deformity"
-   ],
-   [
-    "Timed up and go",
-    "Prolonged"
-   ],
-   [
-    "Bedside tests",
-    "Random glucose 15 · dipstick glycosuria · ECG sinus rhythm"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Asking about loss of consciousness eighth instead of first — 'the most important question first: when you fall, do you lose consciousness, or are you still aware? any jerky movements?' — then say the branch aloud: 'so these are falls rather than blackouts'; asked tenth, candidates end up running the wrong station",
-   "FAIL — 'How many falls?' → 'three' and moving on — 'can you describe each of them for me?': living room, garden, getting out of bed — three unrelated settings with no trigger is the signature of accumulated risk factors, not one mechanism, and it argues against a postural drop; and never omit 'did you injure yourself or break anything?'",
-   "FAIL — 'Your falls are due to the nerve damage from your diabetes' — one cause is a fail; everyone finds the neuropathy and stops; open with 'falls usually have more than one cause' then three, each NAMED → EXPLAINED in one sentence → LINKED to falling: sensory neuropathy ('when you can't feel the ground you trip'), osteoarthritis of both knees, diabetic retinopathy ('you don't see the step') — two of the three driven by uncontrolled diabetes (random glucose 15, above 11.1 — say so)",
-   "FAIL — Never asking 'any joint pain?' — the knees arrive only to that question; and requesting 'a full neurological examination' — the fundi come only if you ask for fundoscopy by name, the knees only if you ask to palpate them and check range of movement; the four diabetes questions (when, treatment, adherence — 'when I remember', follow-up — none, complications — numbness and blurred vision) are worth two of the three diagnoses in thirty seconds",
-   "FAIL — Leading the differentials with arrhythmias and brain tumours — that signals you are still thinking about blackouts; risk factors for falls first (balance, urinary, home, drugs and alcohol, postural hypotension), collapse causes second, each excluded by a stated reason (never lost consciousness, rhythm normal, no postural drop)",
-   "DO — Acknowledge his fear once and keep the promise: 'what if I fall and nobody's there?' → a personal alarm, a check-in with his daughter, and how to get up safely; the plan (diabetes educator, dietitian, podiatrist and footwear, physio for strength and balance and the knees, ophthalmology, OT home assessment); name the consequence — head injury and hip fracture — and end on the sentence that closes every falls station: 'we aim to prevent falls by reducing the risk factors'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-108",
