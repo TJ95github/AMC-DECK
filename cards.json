@@ -36208,9 +36208,8 @@
  {
   "id": "MED-147",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "Regional SA general practice — a TELEPHONE consultation. The examiner ID-checks you, hands you a phone and leaves the room. Six-minute history, two-minute management. No observations. Two automatic fails: prescribing the antiemetic he asks for; ending the call with advice to attend hospital rather than an arranged emergency transfer. He hides the flatus and the urine, refuses hospital, and gives in only when you name a specific risk in plain language and offer to call the ambulance yourself.",
   "stem": [
    "James Whitlock, 60, has booked a telehealth appointment and is ringing to request a script for vomiting. No observations available."
   ],
@@ -36218,88 +36217,209 @@
    "Take a history from the patient by telephone (6 minutes)",
    "Explain your management plan to the patient (2 minutes)"
   ],
-  "time": "8 min. Sanitise, sit, pick up the handset, don't hunt for a patient · 'Am I speaking with James Whitlock? can I confirm your date of birth?' · 'I need a script' → ★ 'I can hear how miserable this has been — two days of vomiting is exhausting. I'm here to help and I do want to get this sorted. To do that safely I need to ask a few questions first, so whatever I arrange is the right thing for you. Is that all right?' (never promise the script, never argue) · CCVO: when, how many times, worse, ★ 'what colour — has any of it been green?', blood/coffee grounds, ★ keeping fluids down? · triggers briefly · ★ GI screen: pain, bloated, ★ 'are you passing any wind at all?', constipation (no motion 3 days), diarrhoea before, fever · red flags: weight, appetite, lumps, tired, ★ blood in stool BEFORE this, habit · ★ obstruction causes: abdominal surgery (never — so hernia, tumour, volvulus, impaction), groin lump · pancreas/gallbladder: through to back, leaning forward, fatty meal, RUQ, heavy drinking · ★ infection and urine: fever/shivers, travel, flu-like, dysuria, ★ 'how much urine have you passed in the last couple of days?' → none for two days · neuro: headache, rash, photophobia, neck stiffness, vision/weakness/numbness, confusion, falls/head knock · cardiac: chest pain, SOB, dizziness (light-headed standing) · ★ meds and sick-day rules: metformin + an unnamed BP tablet — 'kept taking them?' (yes, every day), NSAIDs · ★ social: who's at home (nobody — wife in Adelaide), can anyone bring you in, driving · 6:00 management: ★ acknowledge the limits of the phone → ★ two concerns in plain words (bowel blocked; no urine for two days — dehydration or kidneys shutting down, worsened by the BP tablet) → why the script isn't the answer → ★ arrange, don't advise: 000, 'or I'll call them myself right now' → NBM, hold metformin and the BP tablet → refusal handled → summary, follow-up.",
+  "findings": [
+   [
+    "THERE IS NO PATIENT IN THE ROOM",
+    "CANDIDATES LOSE THIRTY SECONDS LOOKING FOR ONE. No examination, no exposure, no observations. WHAT REPLACES THEM IS A TELEPHONE IDENTITY CHECK — NAME AND DATE OF BIRTH — BECAUSE ON THE PHONE YOU DO NOT KNOW WHO IS SPEAKING. It may be his wife"
+   ],
+   [
+    "HE OPENS WITH A DEMAND",
+    "'JUST GIVE ME THE TABLETS OR I'LL HANG UP.' DO NOT ARGUE, DO NOT COMPLY: 'JAMES, I CAN HEAR HOW MISERABLE THIS HAS BEEN — TWO DAYS OF VOMITING IS EXHAUSTING. I DO WANT TO SORT THIS OUT. TO DO THAT SAFELY I NEED TO ASK YOU A FEW QUESTIONS FIRST. IS THAT ALL RIGHT?' NEVER PROMISE THE SCRIPT"
+   ],
+   [
+    "WHAT HE TELLS YOU IF YOU ASK",
+    "VOMITING FOR TWO DAYS, several times a day, UNABLE TO KEEP ANYTHING DOWN · NO BOWEL MOTION FOR THREE DAYS · NO URINE PASSED FOR TWO DAYS · no blood in the vomit · NO PREVIOUS ABDOMINAL SURGERY · DIABETIC AND HYPERTENSIVE, ON METFORMIN PLUS A BLOOD PRESSURE TABLET HE CANNOT NAME"
+   ],
+   [
+    "THE QUESTION EVERYBODY FORGOT",
+    "'AND ARE YOU PASSING ANY WIND AT ALL?' When candidates who diagnosed obstruction were asked 'is he passing wind?', ALMOST NONE HAD ASKED. YOU CANNOT DIAGNOSE BOWEL OBSTRUCTION WITHOUT A 'NO' TO FLATUS. ASK IT BY 2:30, IN THE GENERAL SCREEN"
+   ],
+   [
+    "GREEN VOMIT IS THE SINGLE MOST USEFUL ANSWER",
+    "BILIOUS VOMITING MEANS THE OBSTRUCTION IS BEYOND THE AMPULLA — IT COMMITS YOU TO BOWEL OBSTRUCTION. Candidates have reported both green and not-green, so ASK AND USE WHATEVER YOU GET. And 'are you able to keep any fluid down at all?'"
+   ],
+   [
+    "THE SECOND PROBLEM — THE ANURIA",
+    "'I HAVEN'T PASSED ANY URINE FOR TWO DAYS.' TREAT THIS AS AN INDEPENDENT EMERGENCY. Ask about LEG SWELLING, DROWSINESS, and — in a 60-year-old man — POOR STREAM, HESITANCY, SUPRAPUBIC DISCOMFORT: OBSTRUCTIVE UROPATHY IS REVERSIBLE IN MINUTES WITH A CATHETER"
+   ],
+   [
+    "ASK A SICK-DAY QUESTION, NOT A COMPLIANCE QUESTION",
+    "'HAVE YOU KEPT TAKING THEM OVER THE LAST TWO DAYS?' Under sick-day rules a vomiting, dehydrated patient should have STOPPED METFORMIN, SGLT2 INHIBITORS, ACE INHIBITORS OR ARBs, DIURETICS AND NSAIDs. A PATIENT WHO DUTIFULLY KEPT TAKING THEM HAS BEEN HARMED BY HIS OWN ADHERENCE"
+   ],
+   [
+    "'I CAN'T REMEMBER WHAT IT'S CALLED'",
+    "PROMPT WITH CATEGORIES: 'DOES IT END IN -PRIL, OR -SARTAN? IS IT AMLODIPINE? ANY FLUID TABLET?' And 'ANY ANTI-INFLAMMATORY TABLETS, FOR PAIN OR ARTHRITIS, EVEN FROM THE CHEMIST?' — THE TRIPLE WHAMMY"
+   ],
+   [
+    "SIX DIFFERENTIAL GROUPS — do not tunnel",
+    "GI — obstruction, impaction, pancreatitis, cholecystitis, gastroenteritis · INFECTION — fever, urinary, pyelonephritis · NEURO — HEADACHE, RASH, PHOTOPHOBIA, NECK STIFFNESS; VISION, WEAKNESS, FALLS · CARDIAC — CHEST PAIN, BREATHLESSNESS — MI MAY BE PAINLESS IN DIABETES · METABOLIC/RENAL — DKA, AKI · DRUGS"
+   ],
+   [
+    "WHO IS AT HOME WITH YOU?",
+    "It DETERMINES WHETHER AN AMBULANCE OR FAMILY TRANSPORT IS APPROPRIATE — and whether there is someone to talk to with you if he refuses"
+   ]
+  ],
+  "findingsLabel": "A phone call for a script — two emergencies, the flatus question, and an ambulance you arrange",
+  "must": [
+   "FAIL — Prescribing the antiemetic he asked for.",
+   "FAIL — Advising 'you should go to hospital' instead of arranging the transfer.",
+   "FAIL — Never asking about flatus.",
+   "FAIL — Missing the anuria: two days without urine noted and never acted on.",
+   "ASK — Are you passing any wind at all?",
+   "ASK — Have you kept taking your tablets over the last two days?"
+  ],
   "back": {
-   "dx": "Probable bowel obstruction (bilious vomiting ×5–10 over two days, can't keep water down, bloated, cramping, no flatus, no motion for three days; no previous surgery — so hernia, tumour, volvulus or faecal impaction rather than adhesions) with acute kidney injury/anuria (no urine for two days) in a type 2 diabetic on metformin and an unnamed antihypertensive he has kept taking through the illness; light-headed on standing; alone at home; wife in Adelaide. A vomiting tablet wouldn't fix either problem and could mask them; he needs examination, bloods (UEC, VBG/lactate, glucose/ketones), AXR/CT today. Arrange the ambulance (offer to call 000 yourself and pre-notify the hospital), NBM, withhold metformin and the antihypertensive, follow up tomorrow; if he refuses outright — respect, document, three safety instructions, call back in two hours.",
+   "dx": [
+    "**TWO PROBLEMS, NOT ONE. FIRST — BOWEL OBSTRUCTION OR FAECAL IMPACTION: two days of vomiting, unable to keep fluids down, no bowel motion for three days, no flatus. SECOND — ACUTE KIDNEY INJURY: two days of ANURIA, from dehydration with or without a nephrotoxic combination, and OBSTRUCTIVE UROPATHY STILL TO BE EXCLUDED.**",
+    "**DEFINITIONS WORTH SAYING OUT LOUD: ABSOLUTE CONSTIPATION IS NO STOOL AND NO FLATUS — THAT IS THE OBSTRUCTION DEFINITION. ANURIA IS ESSENTIALLY NO URINE OUTPUT AND IS A DIFFERENT, AND ARGUABLY MORE URGENT, PROBLEM FROM THE CONSTIPATION.**",
+    "**THE DISCRIMINATING ISSUE: CONVERTING A REQUEST FOR A PRESCRIPTION INTO AN ARRANGED EMERGENCY TRANSFER — AND ARRANGING IT YOURSELF. Two failures: PRESCRIBING THE ANTIEMETIC; and, subtler and more common, TELLING HIM HE 'SHOULD GO TO HOSPITAL' AND LEAVING IT TO HIM. ON A TELEHEALTH CALL WITH AN ANURIC, VOMITING 60-YEAR-OLD, ADVICE IS NOT A PLAN.**",
+    "**THE SECOND DISCRIMINATOR — DO NOT TUNNEL: everyone recalls this as obstruction. THE CANDIDATE WHO SAYS 'THE URINE CONCERNS ME MORE THAN THE BOWELS' DEMONSTRATES THE REASONING THE STATION IS BUILT TO REWARD.**",
+    "**NAMING BOTH CONCERNS IN PLAIN WORDS: 'James, I have TWO CONCERNS. The first is that you haven't opened your bowels for three days and you can't keep anything down — that can mean SOMETHING IS BLOCKING THE BOWEL, or that HARD STOOL HAS BUILT UP. The second, AND HONESTLY THE ONE THAT WORRIES ME MORE, is that you haven't passed urine for two days. That means either you're VERY DEHYDRATED, or YOUR KIDNEYS HAVE STOPPED WORKING PROPERLY — and THE TABLETS YOU'RE TAKING CAN MAKE THAT WORSE WHEN YOU'RE DEHYDRATED.'**",
+    "**ARRANGING, NOT ADVISING: 'a script for vomiting WOULD NOT FIX EITHER PROBLEM — IT COULD HIDE THEM. I need you seen in an emergency department today. I'd like you to call triple zero — OR IF YOU'D PREFER, I WILL CALL THEM FOR YOU NOW, give them your name, address and what we've discussed, and they'll come to you.'**",
+    "**WHEN HE REFUSES — acknowledge, explain, offer, respect autonomy, document: 'I CAN'T MAKE YOU GO — IT'S YOUR DECISION. But if the bowel is blocked IT CAN BECOME DAMAGED, and if the kidneys have shut down THE SALTS IN YOUR BLOOD CAN RISE TO A LEVEL THAT AFFECTS YOUR HEART. BOTH ARE TREATABLE TODAY AND MUCH HARDER TOMORROW. Is there someone at home I could speak to with you? WHAT WOULD NEED TO CHANGE FOR YOU TO BE WILLING TO GO?'**",
+    "**THE TRIPLE WHAMMY — ACE INHIBITOR OR ARB + DIURETIC + NSAID — VOMITING ADDS A FOURTH HIT, AND CONTINUED METFORMIN ADDS A FIFTH PROBLEM: METFORMIN-ASSOCIATED LACTIC ACIDOSIS. HYPERKALAEMIA IS THE KILLER — GET AN ECG BEFORE THE POTASSIUM RESULT.**",
+    "**BEFORE HE LEAVES THE PHONE: ESTABLISH HE CANNOT KEEP FLUIDS DOWN · FLATUS AND URINE OUTPUT · SCREEN CHEST PAIN, HEADACHE, CONFUSION · WHO IS WITH HIM · ARRANGE TRANSFER · NIL BY MOUTH · WITHHOLD METFORMIN, THE BLOOD PRESSURE TABLET AND ANY ANTI-INFLAMMATORY UNTIL REVIEWED. INSULIN IS ADJUSTED, NOT STOPPED.** VERIFY the sick-day list against Therapeutic Guidelines, Kidney Health Australia and ADS/NDSS resources.",
+    "**DO NOT CALL THE AMBULANCE IN THE FIRST MINUTE — ESCALATING BEFORE YOU CAN SAY WHAT IS WRONG. The task is a six-minute history; COMPLETE IT, THEN ESCALATE.** **SA: 000 for SA Ambulance Service; Wallaroo or Kadina, then Lyell McEwin, TQEH or RAH for surgery or dialysis; MedSTAR 1300 13 12 33; RFDS; healthdirect 1800 022 222 after hours.**"
+   ],
    "plan": [
     [
      "0:00",
-     "(Sanitise, sit, handset.) 'Good morning, my name is Dr —, one of the GPs at the practice. Am I speaking with James Whitlock? Can I just confirm your date of birth? How can I help you today?' → 'vomiting, two days, just send a script' → ★ 'James, I can hear how miserable this has been — two days of vomiting is exhausting. I'm here to help you and I do want to get this sorted. To do that safely I need to ask a few questions first, so whatever I arrange is the right thing for you. Is that all right?' ('fine, be quick')"
+     "**Sanitise hands anyway. 'Am I speaking with James Whitlock? Can I confirm your date of birth?' — NAME AND ONE IDENTIFIER.** Then **'how can I help you today?'**"
     ],
     [
-     "0:45",
-     "CCVO: 'when did it start, how many times since yesterday? getting worse? ★ what colour — has any of it been green? any blood or coffee grounds? are you keeping any fluid down?' → two days; lost count; worse; greenish; no blood; not even water · started after a big/fatty meal? better/worse? (no — move on)"
+     "0:15",
+     "**THE DEMAND: acknowledge, state your purpose, ask permission. DO NOT ARGUE, DO NOT PROMISE THE SCRIPT.**"
     ],
     [
-     "1:45",
-     "★ 'Any tummy pain? are you bloated? ★ are you passing any wind at all? any constipation? any diarrhoea before this started? any fevers?' → cramping; bloated; no wind at all; no motion for three days; no diarrhoea; no fever"
+     "0:40",
+     "**CCVO ON THE VOMIT: when did it start, how many times since yesterday · getting worse · WHAT COLOUR — ANY GREEN · ANY BLOOD OR COFFEE GROUNDS · large amounts or mouthfuls · after a large or fatty meal · CAN YOU KEEP ANY FLUID DOWN?**"
+    ],
+    [
+     "1:40",
+     "**GENERAL GI SCREEN: abdominal pain — where, colicky · bloating · 'AND ARE YOU PASSING ANY WIND AT ALL?' — BY 2:30 · constipation — last bowel motion · diarrhoea before this · fever.**"
     ],
     [
      "2:30",
-     "Red flags: weight loss (none noticed), appetite (can't eat), lumps, tired, ★ 'blood in your stool before this started?', lasting habit change · ★ 'ever had surgery on your abdomen? any lump or swelling in your groin?' → never; no · pancreas/gallbladder: back pain/leaning forward, fatty meal, RUQ, heavy drinking → no"
+     "**OBSTRUCTION RED FLAGS: weight loss, appetite, lumps, tiredness, blood in the stool before this, change in bowel habit. CAUSES: ANY SURGERY ON YOUR ABDOMEN · ANY GROIN LUMP — both negative here, pushing towards tumour, volvulus or impaction.**"
     ],
     [
-     "3:30",
-     "★ 'Any fevers or shivering? recent travel? flu-like symptoms? any pain or burning passing urine? ★ how much urine have you passed in the last couple of days?' → (pause) 'now that you ask — I haven't passed any urine for two days' → 'thank you for telling me — I'll come back to that' (no dramatic reaction) · neuro: headache, rash, light sensitivity, neck stiffness, vision/weakness/numbness, confusion, falls/head knock → no, washed out · cardiac: chest pain/tightness, SOB, dizziness → light-headed standing"
+     "3:10",
+     "**PANCREAS AND GALLBLADDER: pain through to the back, better leaning forward, heavy drinking · after a fatty meal, right rib pain, yellowing.**"
     ],
     [
-     "4:45",
-     "★ 'What medications are you on? any recent change or new tablet? any anti-inflammatories, even from the chemist? ★ have you kept taking your usual tablets over the last two days?' → metformin + a BP tablet he can't name (→ 'look at the box — does it end in -pril, or -sartan? amlodipine? a separate fluid tablet?'); taken every day · ★ 'who is at home with you? could anyone help or bring you in? how are you managing to get about?' → alone; wife in Adelaide; can't drive"
+     "3:40",
+     "**INFECTION: fevers, shivers, travel, flu-like illness, cough, burning urine, ear pain.** Then **URINE — BY 4:10: 'HOW MUCH URINE IN THE LAST TWO DAYS?' → none → difficulty starting, poor stream · LEG SWELLING · drowsiness.**"
+    ],
+    [
+     "4:20",
+     "**NEURO: headache, RASH, light sensitivity, neck stiffness · vision, weakness, confusion · ANY FALLS OR HEAD INJURY. CARDIAC: chest pain or tightness, breathlessness, dizziness, palpitations — PAINLESS MI IN DIABETES.**"
+    ],
+    [
+     "4:55",
+     "**MEDICATIONS: what are you on — prompt -pril, -sartan, amlodipine, fluid tablet · ANY ANTI-INFLAMMATORIES FROM THE CHEMIST · 'HAVE YOU KEPT TAKING THEM OVER THE LAST TWO DAYS?' · any new medication · BLOOD SUGAR READINGS.**"
+    ],
+    [
+     "5:30",
+     "**SOCIAL: WHO IS AT HOME WITH YOU? Is anyone able to bring you in? How are you getting about?**"
     ],
     [
      "6:00",
-     "★ 'James, before I tell you what I think, I want to be honest that there's a limit to what I can be sure of over the phone, because I can't examine you. From what you've told me I have two concerns. The first is that you haven't opened your bowels or passed any wind for three days and you can't keep anything down — that can mean something is blocking the bowel: hard stool built up, which is common at your age; a twist in the bowel, a hernia, or a growth. The second — and honestly the one that worries me more — is that you haven't passed urine for two days. That means either you're very dehydrated, or your kidneys have stopped working properly — and the blood pressure tablet you've kept taking can make that worse when you're dehydrated. There are other things on my mind too — the heart, or an infection — and I can't sort any of them out over the phone. ★ A tablet for the vomiting wouldn't fix either of those problems, and it could mask them.'"
+     "**MANAGEMENT — NAME BOTH CONCERNS IN PLAIN WORDS, and SAY THE URINE WORRIES YOU MORE.**"
     ],
     [
-     "7:00",
-     "★ 'So I don't think it's safe for you to stay at home. You need to be seen in an emergency department today. I'd like you to call triple zero for an ambulance — and if you'd rather, I'll call them myself right now, give them your name and address and tell them what we've discussed. In the meantime don't eat or drink anything, and don't take your metformin or your blood pressure tablet until you've been seen.' · 'I'm not going to hospital — I'll be sat there all day' → ★ 'I hear you, and I can't make you go — it's your decision. But I want you to know what I'm worried about: if the bowel is blocked it can become damaged, and if the kidneys have shut down the salts in your blood can rise to a level that affects the heart. Both are very treatable today and much harder tomorrow. You're on your own and you can't keep water down. What would need to change for you to be willing to go?' → '…you really think it's that bad?' → 'I do. Let me ring the ambulance now — and I'll phone the hospital so they're expecting you.' · ★ summary: 'two days of vomiting, three days without a bowel motion or wind, two days without urine, on metformin and a BP tablet; I'm worried about a blockage and your kidneys; ambulance now, nil by mouth, hold those two tablets, I'll follow up tomorrow'"
+     "6:40",
+     "**WHY NOT A SCRIPT — it would hide both problems. Then ARRANGE: 'I'd like you to call triple zero — OR I WILL CALL THEM FOR YOU NOW.'**"
+    ],
+    [
+     "7:10",
+     "**WHILE HE WAITS: NIL BY MOUTH · STOP METFORMIN, THE BLOOD PRESSURE TABLET AND ANY ANTI-INFLAMMATORY · have someone with him.**"
+    ],
+    [
+     "7:30",
+     "**IF HE REFUSES: respect autonomy, NAME THE RISK — bowel damage, potassium affecting the heart — ask what would change his mind, offer to speak to someone at home, and DOCUMENT.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Am I speaking with James Whitlock? Can I confirm your date of birth?' / ★ 'I'm here to help you, but I need to ask a few questions so what I arrange is the right thing.' / ★ 'What colour is it — has any of it been green?' / ★ 'Are you passing any wind at all?' / ★ 'How much urine have you passed in the last couple of days?'",
-    "★ 'Have you kept taking your usual tablets over the last two days?' / 'Any anti-inflammatories, even from the chemist?' / 'That's all right, plenty of people can't name it — can you look at the box? Does it end in -pril, like perindopril or ramipril? Or in -sartan? Is it amlodipine? Is there a separate fluid tablet?' / ★ 'Who's at home with you?'",
-    "★ 'There's a limit to what I can be certain of on the phone, because I can't examine you.' / ★ 'I have two concerns, and I want to be straight with you about both.' / ★ 'A vomiting tablet wouldn't fix either problem, and it could hide them.'",
-    "★ 'I'd like you to call triple zero — or I'll call them for you right now.' / ★ 'Please don't eat or drink anything, and hold those two tablets until you've been seen.' / ★ 'I can't make you go — but I want you to know what I'm worried about.' / ★ 'What would need to change for you to be willing to go?'",
-    "Refuses outright: 'I respect that it's your decision, and I'm not going to keep pushing. I do want to make sure you know the risks, and I'll write down what we've discussed. Can I ask you to do three things: nothing to eat or drink, hold the metformin and the blood pressure tablet, and call triple zero immediately if you get severe tummy pain, any chest pain, drowsiness, or you vomit blood. Is there anyone I can ring for you? I'll call you back in two hours.' / Drowsy mid-call: 'James, you're sounding quite drowsy and that changes things — I'm stopping the questions and calling an ambulance now. Stay on the line. Can you tell me your address again?' / Examiner 'why not call the ambulance immediately?' → 'The task was a six-minute history, and an ambulance without knowing what is wrong is not a handover. Completing it lets me tell the paramedics and the receiving team this is a man with no flatus for three days, anuria for two, and continued metformin and an antihypertensive through the illness — which changes what happens when he arrives.'"
-   ],
    "pefe": [
-    "Role-player: James Whitlock, 60, retired shearing contractor, Moonta Bay; T2DM + hypertension — metformin and 'a tablet for the blood pressure' he can't name; no surgery; ex-smoker; alone (wife in Adelaide). Grumpy, blunt, impatient — 'is this going to take long?'; wants a script only. Hides flatus and urine — each only to a direct question; the urine answer comes out inside a urinary question. Refuses hospital until a specific risk is named in plain language AND you offer to call the ambulance yourself → 'you really think it's that bad?' → agrees. Offer a script at any point → accepts happily, ends the call — automatic fail. 'You should go to hospital' without arranging it → 'yeah, I'll think about it' and hangs up — fail",
-    "No observations, no examination. Findings by history: bilious vomiting 2 d, no oral intake, cramping, distension, no flatus, no motion 3 d, anuria 2 d, postural light-headedness, continued metformin + antihypertensive",
-    "Sick-day rules (withhold during vomiting/dehydration) VERIFY TG/Kidney Health Australia: metformin (lactic acidosis with AKI), SGLT2 inhibitors (ketoacidosis), ACE inhibitors/ARBs, diuretics, NSAIDs — 'triple whammy' = ACEi/ARB + diuretic + NSAID; insulin adjusted, not stopped; restart 24–48 h after eating and drinking normally. Antihypertensive suffixes: -pril ACEi, -sartan ARB, amlodipine CCB, indapamide/hydrochlorothiazide thiazide. Obstruction without surgery: hernia, tumour, volvulus, faecal impaction; AKI: pre-renal (dehydration, ACEi/ARB), post-renal (retention — obstruction/prostate: ask 'no urine' vs 'can't pass')",
-    "ED work-up expected: UEC/creatinine, K+, VBG/lactate, glucose/ketones, FBE, lipase, LFT, ECG (hyperkalaemia), bladder scan/IDC, erect/supine AXR → CT; IV fluids, NG, surgical review; hold nephrotoxins. Telehealth conduct: identity + one identifier, acknowledge limits, document, arrange (not advise) escalation, pre-notify the hospital, safety-net, follow-up call",
-    "SA: 000 · MedSTAR 1300 13 12 33 · healthdirect 1800 022 222 · TIS 131 450 · timing: flatus by 2:30, urine by 4:10, history ends 6:00, management by 8:00"
+    "**Do now, on the phone: establish HE CANNOT KEEP FLUIDS DOWN · FLATUS AND URINE OUTPUT · screen CHEST PAIN, HEADACHE, CONFUSION · WHO IS WITH HIM · ARRANGE EMERGENCY TRANSFER · NIL BY MOUTH · WITHHOLD METFORMIN, ANTIHYPERTENSIVE AND ANY NSAID.**",
+    "**On arrival: IV ACCESS AND FLUID RESUSCITATION · UEC, FBE, VENOUS BLOOD GAS, LACTATE, GLUCOSE, KETONES, CALCIUM, LIPASE, LFT, CRP · ECG FOR HYPERKALAEMIA AND ISCHAEMIA — BEFORE THE POTASSIUM RESULT · TROPONIN · urinalysis and culture · BLADDER SCAN · ERECT AND SUPINE AXR, THEN CT ABDOMEN AND PELVIS · NG TUBE IF OBSTRUCTED · CATHETER AND STRICT FLUID BALANCE.**",
+    "**Radiology to recognise: SMALL BOWEL OBSTRUCTION — dilated central loops with VALVULAE CONNIVENTES crossing the full width; MULTIPLE AIR-FLUID LEVELS on the erect film · SIGMOID VOLVULUS — the COFFEE-BEAN SIGN · GROSS FAECAL LOADING — impaction, the differential that matters most in an older patient.**",
+    "**Sick-day rules — withheld until eating and drinking normally: METFORMIN — lactic acidosis · SGLT2 INHIBITORS — euglycaemic ketoacidosis · ACE INHIBITORS AND ARBs — loss of glomerular autoregulation · DIURETICS — worsen volume depletion · NSAIDs — afferent arteriolar constriction. INSULIN IS ADJUSTED WITH MORE MONITORING, NOT STOPPED.** VERIFY.",
+    "**Do not miss: HYPERKALAEMIA — ECG first · THE BLADDER SCAN, which can REVERSE THE ANURIA IN MINUTES · STRANGULATED HERNIA — examine the groins · PAINLESS MI IN A DIABETIC · a DIGITAL RECTAL EXAMINATION for impaction · METFORMIN LACTIC ACIDOSIS · DKA.**",
+    "**Avoid: ★ PRESCRIBING AN ANTIEMETIC AND ENDING THE CALL · ★ 'GO TO HOSPITAL IF IT GETS WORSE' INSTEAD OF ARRANGING IT · CALLING THE AMBULANCE BEFORE FINISHING THE HISTORY · TUNNELLING ONTO OBSTRUCTION AND NEVER MENTIONING THE KIDNEYS · FALSE CERTAINTY OVER THE PHONE · arguing with a grumpy patient or repeating the instruction louder.**",
+    "**SA: 000 for SA Ambulance Service · Wallaroo or Kadina (Yorke and Northern LHN), then Lyell McEwin, TQEH or RAH for surgery or dialysis · MedSTAR 1300 13 12 33 · RFDS · PATS afterwards · TIS National 131 450 · healthdirect 1800 022 222 · ACCHS and Aboriginal Liaison Officer where relevant.**"
    ],
-   "fails": [
-    "★ Prescribing the antiemetic; ★ ending with 'you should go to hospital' rather than an arranged transfer (offer to call 000 yourself)",
-    "Diagnosing obstruction without asking about flatus; missing the urine question (inside the urinary block); not asking sick-day medication adherence",
-    "Assuming adhesions with no surgical history; dropping the neurological and cardiac groups because the case 'is' obstruction (painless MI in a diabetic)",
-    "Arranging 'get someone to bring you in' without asking who's at home; delivering 'call an ambulance' without first giving the reasons (produces the refusal)",
-    "Arguing, lecturing, or promising the script to keep him on the line; not acknowledging the limits of the phone; no NBM/withhold instructions; no follow-up"
-   ],
-   "numbers": [
-    "Vomiting 2 d · no motion 3 d · no flatus · no urine 2 d · 000 · MedSTAR 1300 13 12 33 · healthdirect 1800 022 222",
-    "Sick-day withhold: metformin, SGLT2i, ACEi/ARB, diuretics, NSAIDs VERIFY · insulin adjusted not stopped · triple whammy · -pril/-sartan/amlodipine/indapamide",
-    "Flatus by 2:30 · urine by 4:10 · history 6:00 · management 8:00 · call back in 2 h if he refuses"
+   "ddx": [
+    [
+     "**Bowel obstruction**",
+     "**Vomiting, NO STOOL FOR THREE DAYS, NO FLATUS, distension, colicky pain, BILIOUS vomit**",
+     "**Flatus, vomit colour, scars, groin lumps**",
+     "**Erect and supine AXR or CT; NBM, IV fluids, NG tube, surgical review** — EMERGENCY"
+    ],
+    [
+     "**Faecal impaction with overflow**",
+     "**Older patient, no stool for days, opioids or reduced mobility, overflow leakage**",
+     "Bowel habit before, laxatives, mobility",
+     "**DRE, AXR, disimpaction** — urgent"
+    ],
+    [
+     "**Acute kidney injury**",
+     "**TWO DAYS OF ANURIA, vomiting and dehydration, ACEi or ARB, diuretic, NSAID**",
+     "**Urine output, drugs, SICK-DAY RULES, swelling, drowsiness**",
+     "**UEC, VBG, ECG, IV fluids, stop nephrotoxics** — EMERGENCY"
+    ],
+    [
+     "**Obstructive uropathy / retention**",
+     "**Anuria in a 60-year-old man; poor stream, hesitancy, suprapubic discomfort**",
+     "Urinary symptoms before this, prostate history",
+     "**BLADDER SCAN AND CATHETER — decisive and rapidly reversible** — EMERGENCY"
+    ],
+    [
+     "**Hyperkalaemia**",
+     "**Triple whammy plus AKI; palpitations, weakness**",
+     "Drug combination, muscle weakness",
+     "**ECG and potassium; treat before the result if suspected** — EMERGENCY"
+    ],
+    [
+     "**Metformin-associated lactic acidosis · DKA**",
+     "**Metformin continued through dehydration and renal impairment; deep sighing breathing**; or thirst and polyuria before the anuria",
+     "Whether metformin was continued; blood sugar readings",
+     "**VBG, lactate, ketones, UEC; withhold metformin** — EMERGENCY"
+    ],
+    [
+     "**Myocardial infarction**",
+     "**Diabetes, age, vomiting WITH OR WITHOUT CHEST PAIN, breathlessness, sweating**",
+     "The cardiac block",
+     "**ECG and troponin on arrival** — must not miss"
+    ],
+    [
+     "**Raised ICP · meningitis**",
+     "Headache, morning vomiting, deficit, RECENT FALL; or fever, photophobia, neck stiffness, RASH",
+     "The neuro block",
+     "CT head; immediate antibiotics if meningitis suspected — EMERGENCY"
+    ],
+    [
+     "Pyelonephritis · pancreatitis · cholecystitis",
+     "Fever, loin pain, dysuria; or epigastric/RUQ pain, fatty meal, alcohol",
+     "Urinary symptoms; pain site and radiation",
+     "Urine culture; lipase, LFT, ultrasound — urgent"
+    ],
+    [
+     "**Gastroenteritis**",
+     "Diarrhoea first, contacts unwell, short history",
+     "Diarrhoea before onset, contacts",
+     "**Usually clinical — BUT IT DOES NOT EXPLAIN ANURIA AND NO FLATUS**"
+    ]
    ]
   },
   "source": "Telehealth_Vomiting_Obstruction_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 60, telephone request for an antiemetic — bowel obstruction with no flatus, anuria on metformin and an antihypertensive, refusal negotiated)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › Telehealth_Vomiting_Obstruction_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Prescribing the antiemetic he asks for — if you offer a script at any point he accepts immediately and ends the call happy, and it is an automatic fail; 'a vomiting tablet wouldn't fix either problem, and it could hide them'; never promise the script to keep him on the line, and never argue (★)",
-   "FAIL — Ending the call with 'you should go to hospital' rather than an arranged emergency transfer — he says 'yeah, I'll think about it' and hangs up; 'I'd like you to call triple zero — or, if you'd prefer, I'll call them myself right now, give them your name and address and tell them what we've discussed'; ring the hospital so they're expecting him; he refuses once ('I'll be sat there all day') and softens only when you name a specific risk in plain language and offer to call the ambulance yourself (★)",
-   "FAIL — Diagnosing obstruction without ever asking about flatus — 'are you passing any wind at all?' → 'no — nothing'; and 'when did you last open your bowels?' → three days; both come out only when asked directly; vomit colour ('has any of it been green?') is the single most useful answer on the call; qualify red flags with 'before this started'",
-   "FAIL — Missing the urine — the answer arrives inside a urinary question: 'any pain or burning passing urine? how much urine have you passed in the last couple of days?' → 'now that you ask — none for two days'; miss the question and you miss the second diagnosis (AKI); then 'have you kept taking your usual tablets over the last two days?' (sick-day rules, not compliance — metformin and an antihypertensive every day through the illness are part of the problem) and 'any anti-inflammatories, even from the chemist?'",
-   "DO — Telehealth conduct: sanitise, sit, pick up the handset, don't hunt for a patient; introduce, confirm name and one identifier; name his discomfort, state purpose, ask permission ('to do that safely I need to ask a few questions first'); acknowledge the limits ('there's a limit to what I can be certain of on the phone, because I can't examine you'); still run the upper GI, infection, neurological (headache, rash, photophobia, neck stiffness, confusion, head knock) and cardiac groups — a diabetic 60-year-old can have a painless MI; 'who's at home with you?' → alone, wife in Adelaide, can't drive",
-   "SAY — Both concerns in plain words before the instruction ('do not deliver the ambulance line without the reasons'): 'no bowel motion and no wind for three days with vomiting you can't stop can mean something is blocking the bowel — hard stool, a twist, a hernia, or a growth; and — the one that worries me more — no urine for two days means you're very dehydrated or your kidneys have stopped working, and the blood pressure tablet makes that worse when you're dry'; nil by mouth, hold the metformin and the antihypertensive; the refusal handled without lecturing ('I can't make you go — but if the bowel is blocked it can be damaged, and if the kidneys shut down the salts can rise to a level that affects the heart; what would need to change for you to be willing to go?'); if he refuses outright — document, three instructions, red flags, ring back in two hours; if he sounds drowsy — stop and call now; to the examiner, why not call immediately: 'calling without being able to say what is wrong is not a handover'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-148",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "General practice/ED. Four-minute history, PEFE from the examiner, diagnosis + differentials, investigations. The fever answer completes Charcot's triad — if you never ask, you diagnose 'cancer' and fail. Ask the fever question at the end of every liver block. Version A (50 F, epigastric pain, tea-coloured urine, no fever, 6 kg loss, father with colon cancer) is obstructive jaundice without the infection — folded in.",
   "stem": [
    "Colin Harding, 66, presents with abdominal pain and fever. BP 128/76 · HR 104 · RR 20 · T 38.5 · SpO2 97%."
   ],
@@ -36309,112 +36429,201 @@
    "Explain your diagnosis and differential diagnoses to the patient",
    "Explain the further investigations you would arrange"
   ],
-  "time": "8 min. 'May I have his vital signs?' → 'febrile and tachycardic — I'll keep sepsis in mind throughout' · intro, open · pain: where (upper middle), /10 (7), character (deep boring), constant/intermittent, worse, ★ 'through to your back?' (yes), ★ related to eating/any particular food (worse after any food) · ★ urine colour ('dark like tea, all the way through'), ★ 'have your stools gone pale?', N/V, bowels · ★ red flags quantified: weight loss — how much/what period/intentional (5–6 kg/2 months/no), appetite (gone), lumps, tiredness, FHx bowel/liver/pancreas/stomach cancer · liver blocks: yellowing (wife says yellow), itching · alcohol, recent antibiotics, transfusions/tattoos/piercings/IVDU/travel/unusual food, occupation · ★ fatty-meal pain, ★ operations (cholecystectomy 8 y) · ★ 'and have you had any fever or shaking chills? did you measure it?' (38-something at home, 2 days) · PEFE named: jaundice, cachexia, scratch marks, conscious level; vitals esp temperature; abdomen — symmetry/distension/★ scars; tenderness ± guarding/rigidity/rebound; ★ hepatomegaly/splenomegaly, tender edge; ★ shifting dullness; bowel sounds; ★ dipstick bilirubin/blood/protein → jaundiced, unwell, RUQ tenderness, liver 2 cm mildly tender, cholecystectomy scars, dipstick bilirubin + · ★ 'I believe you have acute cholangitis' → the triad → ★ 'I am also concerned about what is blocking those tubes' — pancreas/bile duct/liver cancer, not certain, scan tells · DDx grouped · bloods incl ★ cultures before antibiotics, lipase, coags · ★ imaging ladder USS → CT/MRCP → ERCP · admit, fluids, IV antibiotics, drainage, escalation.",
+  "findings": [
+   [
+    "THE STEM HANDS YOU THE FEVER — 38.5, HR 104",
+    "Version B, the 2025 case: 66-year-old man, ABDOMINAL PAIN AND FEVER. STABILITY FIRST: 'is he haemodynamically stable?' — BP 128/76, so NOT YET REYNOLDS"
+   ],
+   [
+    "WHAT HE GIVES",
+    "FOUR WEEKS OF EPIGASTRIC PAIN RADIATING TO THE BACK, worse with eating, no specific food, on and off · NAUSEA, NO VOMITING · FEVER · WEIGHT LOSS AND LOSS OF APPETITE · JAUNDICE, DARK URINE, PALE STOOLS · PREVIOUS CHOLECYSTECTOMY"
+   ],
+   [
+    "THE EXAMINATION",
+    "JAUNDICED · TEMPERATURE 38.5 · RIGHT UPPER QUADRANT TENDERNESS · LIVER 2 cm BELOW THE COSTAL MARGIN · CHOLECYSTECTOMY SCARS"
+   ],
+   [
+    "CANDIDATES FAILED THE 2025 VERSION BY ANSWERING 'CANCER'",
+    "FEVER 38.5, JAUNDICE AND RIGHT UPPER QUADRANT PAIN ARE CHARCOT'S TRIAD, AND THE REQUIRED ANSWER IS ACUTE CHOLANGITIS. THE CANCER IS THE CAUSE OF THE CHOLANGITIS, NOT THE DIAGNOSIS. CHOLANGITIS SITS AT THE TOP BECAUSE IT IS THE FINDING THAT MUST BE TREATED TODAY"
+   ],
+   [
+    "THE CHOLESTATIC TRIAD",
+    "DARK URINE · PALE STOOLS · JAUNDICE. 'Can you describe the colour of your urine exactly? Is it dark throughout the stream? And have your stools gone pale?' — PALE STOOLS ASKED BY 1:20. Plus ITCHING"
+   ],
+   [
+    "THE FEVER QUESTION IS THE FORK IN THE ROAD",
+    "'AND HAVE YOU HAD ANY FEVER OR SHAKING CHILLS?' — ASKED BEFORE 3:40, CLOSING EVERY LIVER BLOCK. Version A (no fever) is suspected malignant obstruction in general practice; VERSION B IS SEPSIS FROM AN OBSTRUCTED BILIARY TREE — A SAME-DAY ADMISSION WITH ANTIBIOTICS AND DRAINAGE"
+   ],
+   [
+    "QUANTIFY THE WEIGHT LOSS, THEN ACT ON IT",
+    "'HOW MUCH, OVER WHAT PERIOD? WAS ANY OF IT INTENTIONAL?' Then RAISE CANCER EXPLICITLY as a reason in your diagnosis — not a collected fact. And FAMILY HISTORY of bowel, liver, pancreas or stomach cancer"
+   ],
+   [
+    "THE CHOLECYSTECTOMY REFRAMES, IT DOES NOT CLOSE",
+    "'I HAD MY GALLBLADDER OUT YEARS AGO' → STRICTURE, RETAINED OR NEW DUCT STONE, OR TUMOUR. ONLY GALLBLADDER CARCINOMA IS OFF THE LIST"
+   ],
+   [
+    "THE SEVEN-STEP EXAMINATION REQUEST — name the special tests",
+    "GENERAL APPEARANCE — JAUNDICE, CACHEXIA, SCRATCH MARKS, CONSCIOUSNESS · VITALS, PARTICULARLY TEMPERATURE · INSPECTION — SCARS, distension · PALPATION — tenderness, guarding, HEPATOMEGALY, SPLENOMEGALY, IS THE LIVER EDGE TENDER · PERCUSSION FOR SHIFTING DULLNESS · auscultation · URINE DIPSTICK FOR BILIRUBIN. 'ABDOMINAL EXAMINATION PLEASE' IS A GENERIC REQUEST AND LOSES MARKS"
+   ],
+   [
+    "REYNOLDS PENTAD — the escalation",
+    "CHARCOT'S TRIAD PLUS HYPOTENSION AND CONFUSION = SEPTIC CHOLANGITIS. Say the negatives: 'NO HYPOTENSION, NO CONFUSION, SO NO REYNOLDS PENTAD — but I would escalate immediately for either'"
+   ]
+  ],
+  "findingsLabel": "Charcot's triad — name the syndrome first, then name the cause",
+  "must": [
+   "FAIL — Answering 'cancer' with Charcot's triad present and cholangitis never said.",
+   "FAIL — Never asking about fever.",
+   "FAIL — Antibiotics without saying the word drainage.",
+   "FAIL — Opening the investigations with ERCP instead of ultrasound.",
+   "ASK — Have you had any fever or shaking chills?",
+   "ASK — Have your stools gone pale? How much weight, over what period?"
+  ],
   "back": {
-   "dx": "Acute cholangitis secondary to malignant biliary obstruction (Charcot's triad: fever 38.5 with rigors ×2 days, jaundice, RUQ/epigastric pain) on a four-week history of deep boring epigastric pain through to the back worse after any food, tea-coloured urine, pale stools, itch, 5–6 kg unintentional loss over two months with appetite gone — most likely carcinoma of the head of the pancreas, possibly cholangiocarcinoma (bile ducts remain after cholecystectomy) or a hepatic lesion; a retained/new duct stone or a post-cholecystectomy stricture are the benign alternatives. PEFE: jaundiced, unwell, RUQ tenderness without peritonism, liver 2 cm mildly tender, no splenomegaly, no ascites, cholecystectomy scars, dipstick bilirubin positive. Admit today: cultures then IV antibiotics per TG, fluids, bloods, USS first → CT/MRCP → ERCP to look and drain; antibiotics buy time, drainage is the treatment.",
+   "dx": [
+    "**ACUTE CHOLANGITIS, MOST LIKELY SECONDARY TO A MALIGNANT BILIARY OBSTRUCTION — CARCINOMA OF THE HEAD OF THE PANCREAS, CHOLANGIOCARCINOMA, OR A HEPATIC LESION.** **Charcot's triad complete — FEVER, JAUNDICE, RIGHT UPPER QUADRANT PAIN — on a background of WEIGHT LOSS AND APPETITE LOSS.**",
+    "**THE DISCRIMINATING ISSUE: NAME THE SYNDROME, THEN NAME THE CAUSE. THE TRIAD NAMES THE SYNDROME; THE NEXT SENTENCE MUST NAME THE CAUSE — STONE OR TUMOUR. Saying 'cancer' alone is a fail; saying 'cholangitis' without the cause is incomplete.**",
+    "**THE EXACT SENTENCE THAT PASSES: 'Mr Harding, I believe you have a condition called ACUTE CHOLANGITIS. That means there is A BACTERIAL INFECTION IN THE DRAINAGE TUBES THAT CARRY BILE FROM YOUR LIVER. I am saying this because you have THE THREE FEATURES WE LOOK FOR TOGETHER: A FEVER, YELLOW DISCOLOURATION, AND PAIN IN THE UPPER RIGHT SIDE OF YOUR TUMMY.'**",
+    "**THEN THE CAUSE: 'I am also concerned about WHAT IS CAUSING THE BLOCKAGE BEHIND THAT INFECTION, and given your WEIGHT LOSS AND LOSS OF APPETITE, I AM WORRIED ABOUT A CANCER — most likely in the PANCREAS, possibly in the BILE DUCTS OR THE LIVER. This is serious and it NEEDS TREATMENT IN HOSPITAL TODAY.'**",
+    "**THE MECHANISM IN PLAIN WORDS: 'SOMETHING IS BLOCKING THE TUBES that drain bile from your liver — which is WHY YOUR SKIN AND EYES ARE YELLOW, YOUR URINE IS DARK AND YOUR STOOLS ARE PALE — and the bile sitting behind the blockage HAS BECOME INFECTED.'**",
+    "**CORRECTION — A PREVIOUS CHOLECYSTECTOMY DOES NOT REMOVE CHOLANGIOCARCINOMA. It arises from the EPITHELIUM OF THE BILE DUCTS, WHICH REMAIN. If challenged: 'cholecystectomy excludes gallbladder carcinoma and gallbladder-origin disease, but THE INTRAHEPATIC AND EXTRAHEPATIC DUCTS REMAIN, so cholangiocarcinoma stays on my list alongside pancreatic head carcinoma.'**",
+    "**NEVER OFFER 'POST-CHOLECYSTECTOMY SYNDROME' AS YOUR DIAGNOSIS — IT NAMES THE SITUATION, NOT THE CAUSE. Name the cause: STRICTURE, STONE OR TUMOUR.**",
+    "**COURVOISIER'S SIGN, IF PROBED: A PALPABLE, NON-TENDER GALLBLADDER IN A JAUNDICED PATIENT MAKES GALLSTONES UNLIKELY AND POINTS TO MALIGNANT OBSTRUCTION. It CANNOT be elicited here because the gallbladder is out — NAMING IT AND EXPLAINING WHY IT DOES NOT APPLY IS A STRONG ANSWER.**",
+    "**MANAGEMENT: RECOGNISE SEPSIS OUT LOUD · A TO E · large-bore IV access, FLUIDS · BLOOD CULTURES BEFORE ANTIBIOTICS, then EMPIRICAL IV ANTIBIOTICS covering GRAM-NEGATIVE AND ANAEROBIC biliary organisms · FBE, UEC, LFT, INR, CRP, LIPASE, VBG WITH LACTATE · URGENT ULTRASOUND · EARLY BILIARY DRAINAGE BY ERCP — ANTIBIOTICS ALONE DO NOT TREAT AN OBSTRUCTED, INFECTED DUCT · admit under surgery or gastroenterology; nil by mouth, analgesia, antiemetic.** VERIFY regimen.",
+    "**THE DIFFERENTIALS BY BUCKET: CANCER — pancreatic head, cholangiocarcinoma, HCC, liver metastases, ampullary · HEPATOBILIARY — RETAINED OR NEW DUCT STONE, POST-SURGICAL STRICTURE, pancreatitis · INFECTION — viral hepatitis, liver abscess · DRUGS — antibiotic-induced cholestasis, alcohol · OTHER — PSC, PBC, autoimmune hepatitis · and for epigastric pain, ALWAYS PEPTIC ULCER, ACS AND LOWER LOBE PNEUMONIA.** **SA: early discussion with the receiving upper GI unit; ERCP at RAH, Flinders or TQEH; MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Before I begin, may I have his vital signs?' → 128/76, 104, 20, 38.5, 97% → 'he is febrile and tachycardic, so I will keep sepsis in mind throughout' · 'I'm Dr —; am I speaking with Mr Harding? is it all right if I ask some questions? how can I help?' → month of upper pain, hot and shivery, wife says yellow → 'that combination is important and I'm glad you came in'"
+     "**STABILITY FIRST — febrile and tachycardic: 'is he haemodynamically stable?'** Then **WIPE, open question, respond to the concern.**"
     ],
     [
-     "0:45",
-     "Pain: 'where exactly? how bad out of ten? sharp or dull? constant or coming and going, getting worse? ★ does it go through to your back? ★ is it related to eating — any particular food?' → middle, high; 7; deep boring; on and off 4 weeks, more frequent; through to the back; worse after any food"
+     "0:30",
+     "**THE PAIN: where exactly · how bad · sharp or dull · when did it start, constant or coming and going, getting worse · DOES IT GO THROUGH TO YOUR BACK · RELATED TO EATING, ANY PARTICULAR FOOD · better or worse?**"
     ],
     [
-     "1:30",
-     "★ 'Can you describe the colour of your urine? dark throughout the stream? ★ have your stools gone pale?' (tea, all through; very pale) · nausea/vomiting (nausea) · bowels"
+     "1:15",
+     "**URINE AND STOOLS — BY 1:20: 'can you describe the colour of your urine exactly? Is it dark throughout the stream? AND HAVE YOUR STOOLS GONE PALE?'** Then **nausea, vomiting, bloating, bowel habit.**"
     ],
     [
-     "2:00",
-     "★ Red flags quantified: 'lost weight without trying — how much, over what period, any of it intentional?' (5–6 kg, 2 months, no) · appetite (gone) · lumps · tiredness (very) · FHx bowel/liver/pancreas/stomach cancer (none)"
+     "1:40",
+     "**RED FLAGS — QUANTIFY, DO NOT JUST COLLECT: WEIGHT LOSS, HOW MUCH, OVER WHAT PERIOD, INTENTIONAL · appetite · lumps · tiredness · FAMILY HISTORY OF BOWEL, LIVER, PANCREAS OR STOMACH CANCER.**"
     ],
     [
-     "2:45",
-     "Liver blocks: yellowing (wife says), itching (some) · alcohol (2 beers/wk), recent antibiotics, transfusions/tattoos/piercings/IVDU/travel/unusual food (none), occupation (retired electrician) · ★ 'ever had pain after a large fatty meal? ★ any operations, particularly on your abdomen?' (gallbladder out 8 y) · ★ 'and have you had any fever or shaking chills? measured it? anything bring it down?' → hot and shivering 2 days, 38-something · concerns"
+     "2:20",
+     "**HEPATITIS SYMPTOMS: yellowing of skin or eyes · ITCHING. RISK FACTORS, BRIEFLY: alcohol, how much · RECENT ANTIBIOTICS · transfusions, tattoos, piercings, injecting · travel, food · occupation · sexual history.**"
+    ],
+    [
+     "3:00",
+     "**GALLBLADDER: pain after a large fatty meal? SURGICAL HISTORY: 'ANY OPERATIONS, PARTICULARLY ON YOUR ABDOMEN?' → cholecystectomy — keep it.**"
+    ],
+    [
+     "3:30",
+     "**HARD RULE — THE FEVER QUESTION BEFORE 3:40: 'AND HAVE YOU HAD ANY FEVER OR SHAKING CHILLS?'** Then **confusion, dizziness — the Reynolds features.**"
     ],
     [
      "4:00",
-     "★ Examiner: 'general appearance — jaundiced, cachectic, scratch marks, level of consciousness · vital signs, particularly temperature · abdomen — inspection: symmetry with respiration, distension, ★ surgical scars · superficial and deep palpation — tenderness, and if present guarding, rigidity, rebound; masses, specifically ★ hepatomegaly and splenomegaly, is the liver edge tender · percussion — ★ shifting dullness · auscultation · office test — ★ urine dipstick for bilirubin, blood and protein' → jaundiced, unwell, T 38.5, RUQ tenderness, no guarding/rebound, liver 2 cm below the margin mildly tender, no splenomegaly, no shifting dullness, cholecystectomy scars, dipstick bilirubin +"
+     "**HISTORY STOPS. THE SEVEN-STEP REQUEST: general appearance — jaundice, cachexia, SCRATCH MARKS, consciousness · VITALS, PARTICULARLY TEMPERATURE · inspection — SCARS · palpation — tenderness, HEPATOMEGALY, SPLENOMEGALY, IS THE EDGE TENDER · SHIFTING DULLNESS · bowel sounds · DIPSTICK BILIRUBIN.**"
     ],
     [
-     "5:15",
-     "★ 'Mr Harding, I believe you have a condition called acute cholangitis. That means there is a bacterial infection in the tubes that drain bile from your liver. I'm saying that because you have the three things we look for together: a fever, yellow discolouration, and pain in the upper right side of your tummy. ★ I am also concerned about what is blocking those tubes and allowing the infection to build up. Given that you have lost weight without trying and your appetite has gone, I am worried this may be caused by a cancer — most likely in the pancreas, possibly in the bile ducts or the liver. I cannot tell which from examining you, and that is why you need scans. This is serious and you need to be in hospital today.' · [3 s silence] · 'I'm sorry to have to raise that — I want to be straight rather than have you find out later. It is not certain: it could be a stone left behind or a narrowing from your old operation. What is certain is that the infection needs treating today.' · DDx grouped: duct stone or post-operative stricture · pancreatitis (pain to the back) · viral/alcohol/drug hepatitis (nothing points there) · ulcer, reflux, heart, basal pneumonia"
+     "5:00",
+     "**NAME THE SYNDROME — ACUTE CHOLANGITIS — WITH CHARCOT'S TRIAD AS THE REASONS.** Then **NAME THE CAUSE — worried about a cancer, most likely pancreas, possibly bile ducts or liver — with weight loss and appetite as reasons.**"
     ],
     [
-     "6:45",
-     "★ Investigations in order: 'blood — cultures before we start antibiotics, FBC, kidney function, liver tests including clotting, inflammatory markers, and a lipase because the pancreas sits next to the bile duct. Scans — an ultrasound of the upper abdomen first, because the first question is whether the drainage tubes are swollen and whether there is a stone or a mass; then depending on that a CT, an MRCP to map the tubes, and then ERCP — a camera passed down to the drainage opening, which lets us both look and relieve the blockage.' · 'into hospital now; fluids through a drip; IV antibiotics straight after the cultures; surgical and gastroenterology teams today about draining the blockage' · ★ escalation: 'tell the nurses immediately if you feel faint, confused, or the shivering gets worse — the infection spreading into the bloodstream' · summary; 'how long will I be in?'"
+     "6:00",
+     "**THE DIFFERENTIALS IN BUCKETS: retained stone or stricture causing the obstruction · pancreatitis · drug-induced cholestasis · viral hepatitis · for the epigastric pain, PEPTIC ULCER, ACS, LOWER LOBE PNEUMONIA.** Then **'CHOLECYSTECTOMY DOESN'T EXCLUDE CHOLANGIOCARCINOMA.'**"
+    ],
+    [
+     "7:00",
+     "**INVESTIGATIONS IN ORDER: blood cultures, FBE, UEC, LFT with conjugated bilirubin, INR, CRP, lipase, lactate · ULTRASOUND FIRST — 'are the ducts dilated?' · then CT or pancreatic-protocol CT · MRCP · ERCP FOR DRAINAGE AND TISSUE · CA 19-9 AND CEA LAST, as specialist adjuncts.**"
+    ],
+    [
+     "7:40",
+     "**'This is serious and needs treatment in hospital TODAY' — IV antibiotics, drainage, admission — and escalate for HYPOTENSION OR CONFUSION.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Does the pain go through to your back?' / ★ 'Is it related to eating, and does any particular food bring it on?' / ★ 'Can you describe the colour of your urine — is it dark throughout the stream? Have your stools gone pale?' / ★ 'How much weight, over what period, and was any of it intentional?'",
-    "★ 'Have you had any operations, particularly on your abdomen?' / ★ 'And have you had any fever or shaking chills? Did you measure your temperature at home?'",
-    "★ To examiner: '…surgical scars … masses, specifically hepatomegaly and splenomegaly, and is the liver edge tender … percussion for shifting dullness … urine dipstick for bilirubin, blood and protein.'",
-    "★ 'Mr Harding, I believe you have a condition called acute cholangitis. That means there is a bacterial infection in the tubes that drain bile from your liver. I am saying that because you have the three things we look for together: a fever, yellow discolouration, and pain in the upper right side of your tummy.' / ★ 'I am also concerned about what is blocking those tubes and allowing the infection to build up. Given that you have lost weight without trying and your appetite has gone, I am worried this may be caused by a cancer — most likely in the pancreas, possibly in the bile ducts or the liver. I cannot tell which from examining you, and that is why you need scans.'",
-    "★ 'I would start with an ultrasound, because the first question is whether the tubes are swollen.' / ★ 'ERCP lets us both look and relieve the blockage.' / 'Cultures before antibiotics.' / ★ 'Tell the nurses straight away if you feel faint or confused, or the shivering worsens.'",
-    "Version A (afebrile, 50 F, father with colon cancer): 'You have what we call obstructive jaundice. Something is blocking the tubes that drain bile from your liver, which is why your skin and eyes are yellow, your urine is dark and your stools are pale. Three reasons: that combination of findings; the six kilos you have lost without trying; and your father's bowel cancer. I am worried the blockage may be caused by a cancer — most likely the pancreas, possibly the bile ducts or the liver. I cannot tell which without a scan, and I want that urgently. You do not have a fever, which reassures me there is no infection in the tubes at the moment.'",
-    "Examiner challenges: 'post-cholecystectomy syndrome?' → 'a description, not a cause — surgical stricture, a retained or new duct stone, or a new obstructing tumour; with unintentional weight loss and anorexia I am most concerned about the third.' / 'no gallbladder, so cholangiocarcinoma is out?' → 'No — cholecystectomy excludes gallbladder carcinoma; cholangiocarcinoma arises from the bile-duct epithelium, which remains. It stays on my list with carcinoma of the head of the pancreas and a hepatic lesion.' / 'antibiotics and review?' → 'antibiotics alone do not treat an obstructed, infected biliary system — the pressure keeps driving bacteria into the bloodstream; the duct must be decompressed, usually by ERCP, and usually early. Antibiotics buy time; drainage is the treatment.' / antibiotics by name → 'IV empirical Gram-negative and anaerobic biliary cover per Therapeutic Guidelines after cultures, adjusted for renal function and local resistance — and drainage.'"
-   ],
    "pefe": [
-    "Role-player: Colin Harding, 66, retired electrician, married; four weeks of deep boring epigastric pain through to the back, worse after any food; two days hot and shivering (38-something at home) — gives fever ONLY when asked directly; wife says yellow; tea urine, pale stools, itch; 5–6 kg over 2 months unintentional, appetite gone, very tired; nausea; 2 beers/wk; cholecystectomy 8 y (only to a surgical question); no fatty-meal pain; no FHx. Stoic, tired; suspects cancer from reading online — silent 3 s when named, then 'how long have I got?'; if never named, at ~7 min 'is this cancer?'. If you say 'cancer' and never 'cholangitis' → fail behaviour",
-    "PEFE: jaundiced, unwell, T 38.5, HR 104, BP 128/76 · RUQ tenderness, no guarding/rebound · liver 2 cm below costal margin, mildly tender · no splenomegaly · no shifting dullness · cholecystectomy scars · dipstick bilirubin +. Courvoisier (palpable non-tender gallbladder) not elicitable after cholecystectomy",
-    "Charcot's triad → Reynolds' pentad (+ hypotension, altered mental state). Malignant obstruction clues: painless or dull persistent jaundice, weight loss, anorexia, age, pain to the back (pancreatic head), new-onset diabetes, Courvoisier. Investigations: cultures, FBE, UEC, LFT (obstructive: bilirubin, ALP, GGT ↑↑, ALT mild), coags/INR (vitamin K), CRP, lipase, lactate; USS → CT pancreas protocol/MRCP → ERCP with stent/brush cytology; CA19-9 (not diagnostic); EUS-guided biopsy; staging CT; MDT. Management: sepsis bundle, IV antibiotics within 1 h (e.g. amoxicillin + gentamicin ± metronidazole, or piperacillin-tazobactam VERIFY TG), fluids, analgesia, vitamin K if INR up, biliary decompression within 24 h (earlier if severe), then oncological pathway — Whipple if resectable (~20%), stenting/chemotherapy if not; palliative care involvement; Cancer Council 13 11 20",
-    "Version A findings: normal temperature; 6 kg loss over a few months; father colon cancer; obstructive jaundice → urgent USS/CT, LFT/coags/CA19-9, referral within days; no antibiotics needed without fever; safety-net for fever/rigors (cholangitis) · SA: MedSTAR 1300 13 12 33 · TIS 131 450"
+    "**Do now — the septic patient: RECOGNISE SEPSIS OUT LOUD · A TO E · large-bore IV access, FLUID RESUSCITATION · BLOOD CULTURES BEFORE ANTIBIOTICS, then EMPIRICAL IV ANTIBIOTICS for Gram-negative and anaerobic biliary organisms · FBE, UEC, LFT, INR, CRP, LIPASE, VBG WITH LACTATE.** VERIFY regimen against Therapeutic Guidelines.",
+    "**THE IMAGING LADDER — ULTRASOUND FIRST, THEN CLIMB: ULTRASOUND — ARE THE DUCTS DILATED? · CT ABDOMEN, or PANCREATIC-PROTOCOL CT if a mass is suspected · MRCP to map the biliary tree · ERCP — BOTH DIAGNOSTIC AND THE DRAINAGE PROCEDURE, with brushings for tissue. CANDIDATES LOSE MARKS BY OPENING WITH ERCP OR MRCP.**",
+    "**Cholestatic LFT: ALP-DOMINANT WITH CONJUGATED HYPERBILIRUBINAEMIA. Dipstick bilirubin positive — conjugated bilirubin is water-soluble; pale stools because bile isn't reaching the gut.**",
+    "**Then: EARLY BILIARY DRAINAGE BY ERCP · admit under surgery or gastroenterology · nil by mouth, analgesia, antiemetic · tissue diagnosis by ERCP brushings or image-guided biopsy · CA 19-9 AND CEA AS SPECIALIST ADJUNCTS, NOT SCREENING TESTS · UPPER GI MULTIDISCIPLINARY REFERRAL.**",
+    "**Do not miss: SEPTIC SHOCK — REYNOLDS PENTAD · ACUTE PANCREATITIS COEXISTING with the obstruction · COAGULOPATHY FROM PROLONGED CHOLESTASIS — check INR before ERCP · a SECOND PRIMARY in the bowel.**",
+    "**Avoid: REASSURING BEFORE IMAGING · 'POST-CHOLECYSTECTOMY SYNDROME' AS A DIAGNOSIS · OPENING THE INVESTIGATION LIST WITH ERCP · PROMISING A SPECIFIC CANCER SITE YOU CANNOT KNOW CLINICALLY · ANTIBIOTICS WITHOUT DRAINAGE.**",
+    "**SA: a febrile jaundiced patient in a country hospital needs early discussion with the receiving upper GI or gastroenterology unit and retrieval via MedSTAR 1300 13 12 33; ERCP at RAH, FLINDERS OR TQEH; upper GI MDT for suspected malignancy; PATS; Country Health Connect; TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Never asking about fever/rigors — 'cancer' with no cholangitis; or 'cholangitis' with no cause sought",
-    "Accepting 'dark urine' without asking pale stools; not quantifying weight loss or asking intent; missing the cholecystectomy",
-    "'Abdominal examination' without naming scars, hepatomegaly/splenomegaly, shifting dullness, dipstick bilirubin",
-    "'You have cancer' as certainty; or softening until the concern is never named; no pause",
-    "Antibiotics without cultures first; CT/MRCP before ultrasound; no ERCP/drainage; no escalation criteria; not admitting today"
-   ],
-   "numbers": [
-    "History 4 min · vitals 128/76 · 104 · 20 · 38.5 · Charcot's triad / Reynolds' pentad · liver 2 cm mildly tender · 5–6 kg over 2 mo · cholecystectomy 8 y",
-    "Cultures → antibiotics within 1 h VERIFY · USS → CT/MRCP → ERCP within 24 h · obstructive LFTs: bili, ALP, GGT ↑↑ · INR/vit K · CA19-9 not diagnostic · resectable ~20%",
-    "MedSTAR 1300 13 12 33 · Cancer Council 13 11 20 · TIS 131 450"
+   "ddx": [
+    [
+     "**Acute cholangitis** — the syndrome",
+     "**FEVER WITH RIGORS, JAUNDICE, RUQ PAIN — CHARCOT'S TRIAD**",
+     "**Add hypotension and confusion for REYNOLDS PENTAD**",
+     "**Blood cultures, LFT, urgent ultrasound; admit for ANTIBIOTICS AND DRAINAGE** — EMERGENCY"
+    ],
+    [
+     "**Pancreatic head carcinoma** — the likely cause",
+     "**Boring epigastric pain to the back, WEIGHT LOSS, age over 50**",
+     "**Courvoisier's sign (not elicitable post-cholecystectomy), new diabetes, steatorrhoea**",
+     "**Ultrasound then pancreatic-protocol CT** — urgent"
+    ],
+    [
+     "**Cholangiocarcinoma**",
+     "**Obstructive jaundice with weight loss, often painless; PSC as a risk factor**",
+     "**STILL ON THE LIST AFTER CHOLECYSTECTOMY — the ducts remain**",
+     "MRCP, brushings at ERCP — urgent"
+    ],
+    [
+     "Hepatocellular carcinoma · liver metastases",
+     "Cirrhosis or hepatitis B; or a GI primary with hard irregular hepatomegaly",
+     "Chronic liver disease stigmata; bowel symptoms",
+     "Ultrasound, AFP, triple-phase CT or MRI; CT, colonoscopy, CEA — urgent"
+    ],
+    [
+     "**Retained or new duct stone**",
+     "**Colicky pain, previous biliary disease, PRIOR CHOLECYSTECTOMY, fluctuating jaundice**",
+     "Fluctuating jaundice; no weight loss",
+     "**Ultrasound then MRCP; ERCP for extraction** — urgent"
+    ],
+    [
+     "**Post-surgical biliary stricture**",
+     "**Symptoms beginning after cholecystectomy**",
+     "Operative history and timing",
+     "MRCP — urgent"
+    ],
+    [
+     "Pancreatitis",
+     "Boring epigastric pain to the back, vomiting",
+     "Alcohol, gallstones",
+     "Lipase — urgent"
+    ],
+    [
+     "Drug-induced cholestasis",
+     "**Recent antibiotic — AMOXICILLIN–CLAVULANATE, FLUCLOXACILLIN**; itch, bilirubinuria",
+     "Medication history",
+     "Stop the drug, repeat LFT"
+    ],
+    [
+     "Viral hepatitis · liver abscess · PSC · PBC",
+     "Risk factors, travel; fever with a tender liver; UC with itch",
+     "Hepatitis risk factors; IBD history",
+     "Serology; imaging; autoantibodies"
+    ],
+    [
+     "**Epigastric mimics — peptic ulcer, ACS, lower lobe pneumonia**",
+     "Pain without jaundice; exertional pain; cough and fever",
+     "**Always named for epigastric pain**",
+     "**ECG and troponin; chest X-ray as indicated**"
+    ]
    ]
   },
   "source": "Obstructive_Jaundice_Cholangitis_2_Case_Tasks_Script_Notability.pdf (Colin Harding, 66, a month of epigastric pain to the back with jaundice, weight loss and two days of rigors — cholangitis on malignant obstruction; Version A afebrile folded in)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Liver › Obstructive_Jaundice_Cholangitis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "JAUNDICED, unwell"
-   ],
-   [
-    "Observations",
-    "T 38.5 · HR 104 · BP 128/76"
-   ],
-   [
-    "Abdomen",
-    "RUQ TENDERNESS, NO guarding or rebound; LIVER 2 cm below the costal margin and MILDLY TENDER; no splenomegaly; no shifting dullness"
-   ],
-   [
-    "Scars",
-    "CHOLECYSTECTOMY SCARS — so Courvoisier's sign cannot be elicited"
-   ],
-   [
-    "Urine dipstick",
-    "BILIRUBIN present"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking about fever or rigors — the fever answer completes Charcot's triad and is given only when asked directly about fever, temperature or chills; 'and have you had any fever or shaking chills? did you measure it? did anything bring it down?' at the end of every liver block; if you never ask, you diagnose 'cancer' and fail — the role-player will not correct you (★)",
-   "FAIL — Saying 'cancer' as the diagnosis and never 'cholangitis' — the sentence that passes: 'I believe you have acute cholangitis — a bacterial infection in the tubes that drain bile from your liver; I say that because you have the three things we look for together: a fever, yellow discolouration, and pain in the upper right side'; THEN the cause: 'I am also concerned about what is blocking those tubes — given the weight loss and lost appetite, I am worried this may be a cancer, most likely in the pancreas, possibly the bile ducts or the liver; I cannot tell which from examining you, and that is why you need scans'; never 'you have cancer', never so soft the concern is unnamed (★)",
-   "FAIL — 'Just start antibiotics and review' — antibiotics alone do not treat an obstructed, infected biliary system; the pressure behind the block keeps driving bacteria into the bloodstream, so the duct must be decompressed, usually by ERCP, usually early — 'antibiotics buy time; drainage is the treatment'; admit today, cultures before antibiotics, IV fluids, escalation if faint, confused or worse rigors (Reynolds' pentad)",
-   "DO — Vitals at the door ('febrile and tachycardic — I'll keep sepsis in mind throughout'); the pain (upper middle, 7/10, deep boring, through to the back, worse after any food, four weeks and more frequent); 'describe the colour of your urine — dark throughout the stream? have your stools gone pale?'; red flags quantified ('how much, over what period, was any of it intentional?' — five or six kilos, two months, no; appetite gone); yellowing and itching; the liver risk block; 'any operations, particularly on your abdomen?' → cholecystectomy eight years ago (given only if asked)",
-   "DO — Examination by name: jaundice, cachexia, scratch marks, level of consciousness; temperature; scars; tenderness with guarding, rigidity and rebound if present; hepatomegaly and whether tender; splenomegaly; shifting dullness; dipstick for bilirubin; investigations in order — cultures before antibiotics, FBE, UEC, LFTs incl. clotting, CRP, lipase ('the pancreas sits right next to the bile duct'); ultrasound first ('the first question is whether the tubes are swollen and whether there is a stone or a mass'), then CT or MRCP to map, then ERCP 'which lets us both look and relieve the blockage'",
-   "DO — Differentials grouped with reasons: a retained duct stone or a post-surgical stricture rather than a cancer, pancreatitis, viral or alcoholic or drug hepatitis, then ulcer, reflux, cardiac, basal pneumonia; examiner challenges — post-cholecystectomy syndrome is a description not a cause (stricture, retained stone, new tumour); cholecystectomy excludes gallbladder carcinoma, not cholangiocarcinoma — the ducts are still there; Courvoisier's sign is not elicitable after cholecystectomy; Version A (afebrile, 6 kg, father with colon cancer) = obstructive jaundice with cancer as the main concern, 'no fever reassures me there is no infection in the tubes at the moment'; when cancer is named he goes silent for three seconds — fill it with empathy, not more information; 'how long have I got?' — you don't know yet, and you won't guess"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-149",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. THIRD-PARTY history from the husband — the patient is not in the room (do not ask the examiner for her vitals) and consent is given in the stem (acknowledge in one sentence, move on). Six-minute history, then diagnosis and differentials with reasons. The single behaviour that separates pass from fail: re-asking about alcohol despite the stem saying she stopped.",
   "stem": [
    "Mrs Margaret Doyle, 72, not present, was diagnosed with alcohol-related cirrhosis two years ago and has not consumed alcohol since. Her husband, Brian, has come because he has observed memory and behaviour change; she refused to attend. He has authority to discuss her care."
   ],
@@ -36422,87 +36631,201 @@
    "Take a focused history from the husband (6 minutes)",
    "Explain the likely diagnosis and the differentials, with your reasons"
   ],
-  "time": "8 min. 'Am I speaking with Mr Doyle? I understand you have your wife's authority to discuss her care, thank you. How can I help?' → ★ 'I'm so sorry to hear that, and I can hear how worrying it has been. Can I ask a few questions to understand the situation?' · ★ 'what exactly do you mean — doesn't remember things, doesn't recognise you, or behaving oddly?' · onset, constant/intermittent, worse, better/worse · ★ four cirrhosis questions: treatment, ★ taking it as prescribed, follow-up GP/specialist (stopped a year ago) · complications in order — decompensation: jaundice, itch, bruising (yes), tiredness · ★ encephalopathy: sleep reversal (yes), weakness/numbness, balance/walking, vision · SBP/cancer/kidney/lung/bleeding: abdominal pain, N/V, fever, diarrhoea; weight/appetite/lumps; ★ urine output; SOB/cough; haematemesis/melaena → ★ 'her tummy has got bigger' (ascites — offered casually; collect it) · ★ six triggers: 'I know the notes say she stopped — can I just confirm, is she drinking any alcohol at all at the moment?' → beer cans hidden → 'thank you — that took some courage' · new medications, recent illness, ★ constipation (yes), vomiting/diarrhoea/dehydration, (bleeding already asked) · geriatric 30 s: falls, support, diet, ADLs, mood · dx hepatic encephalopathy, plain English, the trigger, ★ DDx in two named groups — cirrhosis complications first, then causes of confusion in an older person · 'is she losing her mind?' → treatable, reversible, not dementia · plan; 'she won't come' → home visit, community nursing, 'you're not doing this alone'.",
+  "findings": [
+   [
+    "THE PATIENT IS NOT IN THE ROOM",
+    "A THIRD-PARTY HISTORY FROM HER HUSBAND, who has authority. DO NOT ASK FOR CONSENT — BUT SAY ONE SENTENCE THAT SHOWS YOU NOTICED: 'I UNDERSTAND YOU HAVE YOUR WIFE'S AUTHORITY TO DISCUSS HER CARE, THANK YOU.' And DO NOT ASK THE HUSBAND FOR HER HAEMODYNAMIC STABILITY — IT LOOKS LIKE A SCRIPT RUNNING WITHOUT THOUGHT"
+   ],
+   [
+    "THE LINE IN THE STEM THAT CANDIDATES BELIEVE",
+    "'SHE HAS NOT CONSUMED ALCOHOL SINCE.' CANDIDATES THEREFORE DO NOT ASK. THE HUSBAND, WHEN ASKED, SAYS HE THINKS SHE IS DRINKING AGAIN — HE HAS FOUND BEER CANS HIDDEN IN THE CUPBOARD. THAT SINGLE FINDING IS THE PRECIPITANT, THE EXPLANATION AND THE MANAGEMENT PLAN. IT COSTS TWO SECONDS AND IT IS THE ENTIRE CASE"
+   ],
+   [
+    "HOW TO RE-ASK WITHOUT CONTRADICTING THE STEM",
+    "'I KNOW FROM THE NOTES THAT SHE STOPPED DRINKING WHEN SHE WAS DIAGNOSED. CAN I JUST CONFIRM WITH YOU — AS FAR AS YOU ARE AWARE, IS SHE DRINKING ANY ALCOHOL AT ALL AT THE MOMENT?' → 'WELL — I THINK SHE MIGHT BE. I FOUND A FEW CANS OF BEER IN THE CUPBOARD'"
+   ],
+   [
+    "EXPLORE WHAT HE ACTUALLY MEANS — offer three options",
+    "'IS IT THAT SHE DOES NOT REMEMBER THINGS, OR THAT SHE DOES NOT RECOGNISE YOU, OR THAT SHE IS BEHAVING ODDLY?' OFFERING CONCRETE OPTIONS IS NOT LEADING — IT SEPARATES FORGETFULNESS, DISORIENTATION AND DISINHIBITION, WHICH POINT IN DIFFERENT DIRECTIONS"
+   ],
+   [
+    "THE EARLIEST RUNG — SLEEP REVERSAL",
+    "'HOW IS HER SLEEP — IS SHE SLEEPING IN THE DAY AND AWAKE AT NIGHT?' ENCEPHALOPATHY RUNS SLEEP REVERSAL → MEMORY → CONFUSION → SLURRED SPEECH AND ATAXIA → COMA. EXPECTING AN UNCONSCIOUS PATIENT IS WHY CANDIDATES MISS THIS DIAGNOSIS"
+   ],
+   [
+    "WHAT HE GIVES",
+    "MEMORY IMPAIRMENT · DAYTIME SLEEPINESS, AWAKE AT NIGHT · INTERMITTENT CONFUSION OVER RECENT WEEKS · ABDOMINAL DISTENSION · BEER CANS IN THE CUPBOARD. No fever, no abdominal pain, no haematemesis or melaena, no fall in urine output, no focal neurology"
+   ],
+   [
+    "THE FOUR CIRRHOSIS QUESTIONS",
+    "WHEN DIAGNOSED · WHAT TREATMENT · IS SHE TAKING IT AS PRESCRIBED · REGULAR FOLLOW-UP. SHE HAS MEMORY PROBLEMS — ASKING WHETHER SHE IS RELIABLY TAKING HER MEDICATION IS A CLINICALLY POINTED QUESTION HERE, AND THE EXAMINER WILL HEAR THE DIFFERENCE"
+   ],
+   [
+    "THE SIX TRIGGERS OF DECOMPENSATION — all six, every time",
+    "ALCOHOL · INFECTION · MEDICATIONS — SEDATIVES, OPIOIDS, NEW DRUGS · CONSTIPATION · BLEEDING — HAEMATEMESIS, MELAENA · DEHYDRATION — including diuretics. ALCOHOL IS THE ONE EVERYBODY ASKS; THE PASS IS MADE UP OF THE OTHER FIVE AS WELL"
+   ],
+   [
+    "COMPLICATIONS — ask them all, don't stop at encephalopathy",
+    "JAUNDICE, ITCH, BRUISING · ENCEPHALOPATHY · SBP — abdominal pain, fever · HCC — WEIGHT LOSS, APPETITE · HEPATORENAL — 'ANY DECREASE IN THE AMOUNT OF URINE SHE PASSES?' · HEPATOPULMONARY — breathlessness · VARICEAL BLEEDING"
+   ],
+   [
+    "THE GERIATRIC SCREEN BELONGS HERE",
+    "FALLS · SUPPORT AT HOME · DIET · DAILY ACTIVITIES · MOOD. FALLS MATTER MORE THAN USUAL — COAGULOPATHY TURNS A SIMPLE FALL INTO AN INTRACRANIAL BLEED, AND A SUBDURAL HAEMATOMA IS ON YOUR DIFFERENTIAL FOR HER CONFUSION"
+   ]
+  ],
+  "findingsLabel": "A husband's account — and the stem fact you must re-ask",
+  "must": [
+   "FAIL — Not re-asking about alcohol because the stem says she stopped.",
+   "FAIL — Expecting coma: encephalopathy dismissed because she is awake and talking.",
+   "FAIL — Asking only about alcohol as a trigger.",
+   "FAIL — Asking the husband for her vital signs.",
+   "ASK — As far as you're aware, is she drinking any alcohol at all at the moment?",
+   "ASK — Is she sleeping in the day and awake at night?"
+  ],
   "back": {
-   "dx": "Hepatic encephalopathy precipitated by a return to alcohol (beer cans hidden in the cupboard) and constipation — a few weeks of fluctuating, worsening forgetfulness (glasses, whether she's eaten; recognises him), day–night sleep reversal, intermittent confusion, in a woman with alcohol-related cirrhosis who has stopped specialist follow-up and may not be taking her tablets; also easy bruising, an enlarging abdomen (ascites), poor intake; no fever, no jaundice, no bleeding, no oliguria. Two differential groups: (1) other cirrhosis complications — spontaneous bacterial peritonitis, hepatocellular carcinoma, hepatorenal and hepatopulmonary syndromes, variceal bleeding; (2) other causes of confusion in an older person — infection (chest/urine), medications/withdrawal, intracranial (subdural after a fall, stroke, tumour), dementia (Alzheimer's, Lewy body), electrolytes/glucose. Usually treatable and often reversible once the trigger is corrected: lactulose, assessment (bloods, abdominal examination, ascitic tap to exclude SBP), alcohol support.",
+   "dx": [
+    "**HEPATIC ENCEPHALOPATHY, PRECIPITATED BY A RETURN TO ALCOHOL, on a background of alcohol-related cirrhosis.** **DECOMPENSATION is the point at which a stable cirrhotic develops ASCITES, ENCEPHALOPATHY, JAUNDICE OR VARICEAL BLEEDING — and THERE IS ALWAYS A PRECIPITANT.**",
+    "**THE DISCRIMINATING ISSUE: RE-ASK THE QUESTION THE STEM HAS ALREADY ANSWERED. THE GENERAL RULE THIS CASE TEACHES: IF A FACT IN THE STEM IS CENTRAL TO YOUR DIAGNOSIS, RECONFIRM IT — STEMS ARE SOMETIMES WRITTEN PRECISELY SO THAT THE ROLE-PLAYER CAN CONTRADICT THEM. Do not re-ask everything — ONLY THE FACTS THAT WOULD CHANGE YOUR ANSWER.**",
+    "**FIVE BOXES THAT STRUCTURE ANY CIRRHOSIS STATION — NAME EACH OUT LOUD: 1 COMPLAINT · 2 CIRRHOSIS HISTORY — the four questions · 3 COMPLICATIONS · 4 THE SIX TRIGGERS · 5 GERIATRIC SCREEN.**",
+    "**TO THE HUSBAND, PLAINLY: 'the most likely explanation is a condition called HEPATIC ENCEPHALOPATHY. When the liver is badly scarred, IT CAN'T CLEAR TOXINS FROM THE BLOOD PROPERLY, and those toxins affect the brain — which is WHY SHE'S SLEEPING IN THE DAY, AWAKE AT NIGHT, FORGETFUL AND CONFUSED. It usually has A TRIGGER, and from what you've told me, THE MOST LIKELY TRIGGER IS THAT SHE HAS STARTED DRINKING AGAIN. THE GOOD NEWS IS THAT IT IS OFTEN REVERSIBLE WHEN THE TRIGGER IS TREATED.'**",
+    "**THE REASONS: THE REVERSED SLEEP PATTERN · THE MEMORY CHANGE · THE INTERMITTENT CONFUSION · THE ABDOMINAL DISTENSION suggesting ascites · AND THE BEER CANS — the precipitant. Say the NEGATIVES too: no fever, no bleeding, no fall in urine, no focal neurology.**",
+    "**THE DIFFERENTIALS IN TWO GROUPS — NOT A FLAT LIST OF TWELVE: OTHER COMPLICATIONS OF CIRRHOSIS — SBP, HEPATOCELLULAR CARCINOMA, HEPATORENAL AND HEPATOPULMONARY SYNDROME · THE CAUSES OF DELIRIUM — SEPSIS, MEDICATION OR WITHDRAWAL, INTRACRANIAL PATHOLOGY INCLUDING TUMOUR AND SUBDURAL HAEMATOMA, DEMENTIA (Alzheimer, Lewy body), and METABOLIC — hypoglycaemia, electrolytes, hypothyroidism, hypoxia, urinary retention, constipation.**",
+    "**WHY SUBDURAL MATTERS HERE: A COAGULOPATHIC PATIENT WHO FALLS MAY HAVE A SUBDURAL HAEMATOMA — hence the falls question in the geriatric screen and CT BRAIN IF THERE ARE FOCAL SIGNS, A FALL, OR THE CONFUSION DOES NOT IMPROVE.**",
+    "**MANAGEMENT: LACTULOSE TITRATED TO TWO OR THREE SOFT STOOLS A DAY · RIFAXIMIN ADDED FOR RECURRENT EPISODES · TREAT THE PRECIPITANT · exclude HYPOGLYCAEMIA — a failing liver cannot maintain glucose · septic screen and DIAGNOSTIC PARACENTESIS if ascites is confirmed · AVOID SEDATIVES AND OPIOIDS.** VERIFY doses.",
+    "**THE ALCOHOL CONVERSATION WITH BOTH OF THEM, WITHOUT JUDGEMENT: ABSTINENCE IS THE SINGLE INTERVENTION THAT CHANGES THE TRAJECTORY · THIAMINE · nutritional support · brief intervention and referral to DASSA · and SHE IS REFUSING TO ATTEND — ask what would help her come in, and whether her husband is safe and coping. WHERE CAPACITY IS IN DOUBT, DECISIONS ARE MADE UNDER AN ADVANCE CARE DIRECTIVE BY A SUBSTITUTE DECISION-MAKER.**",
+    "**A NORMAL LFT DOES NOT REASSURE IN ADVANCED CIRRHOSIS — little functioning liver is left. And if she has just stopped drinking again, watch for WITHDRAWAL AND WERNICKE ENCEPHALOPATHY — THIAMINE BEFORE GLUCOSE.** **SA: DASSA and ADIS; Country Health Connect for community nursing and palliative support; hepatology at the RAH; MedSTAR 1300 13 12 33; TIS National 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Good morning, I'm Dr —. Am I speaking with Mr Doyle? I understand you have your wife's authority to discuss her care, thank you. How can I help you today?' → 'cirrhosis two years ago; acting strangely, memory problems, very worried' → ★ 'I'm so sorry to hear that, and I can hear how worrying it has been. Can I ask you a few questions so I can understand the situation better and work out what's going on?'"
+     "**Identity — 'am I speaking with Mr Doyle?' — then the authority sentence: 'I understand you have your wife's authority to discuss her care, thank you.' NO STABILITY REQUEST.** Then **open question, and 'I'm so sorry — I can see how worrying this is.'**"
     ],
     [
-     "0:40",
-     "★ 'You've told me memory problems and strange behaviour — can you describe exactly what you mean? Is it that she doesn't remember things, or doesn't recognise you, or is behaving oddly?' → forgets glasses/meals, knows him; sleepy all day, up wandering at night · 'when did it start? constant or comes and goes? gradually worse? anything better or worse?' → few weeks, fluctuating, worse"
+     "0:30",
+     "**BOX 1 — EXPLORE WHAT HE MEANS, WITH THREE OPTIONS: doesn't remember things, doesn't recognise you, or behaving oddly? · when did it start · constant or comes and goes · getting worse · anything better or worse?**"
     ],
     [
-     "1:40",
-     "★ 'I know she was diagnosed two years ago — what treatment is she on? is she taking it as prescribed? regular follow-up with her GP and specialist?' → tablets (can't name), not sure she takes them, stopped the specialist a year ago"
+     "1:20",
+     "**BOX 2 — THE FOUR CIRRHOSIS QUESTIONS: when diagnosed · what treatment · IS SHE TAKING IT AS PRESCRIBED — pointed, given her memory · regular follow-up with GP and specialist?**"
     ],
     [
-     "2:20",
-     "Complications: 'any yellowing of skin or eyes? itching? bruising? unusually tired?' (bruises easily) · ★ 'how is her sleep — sleeping in the day and awake at night? any weakness or numbness? balance, walking normally? vision?' · 'abdominal pain? nausea/vomiting? fever or chills? diarrhoea?' (no fever… ★ 'her tummy has got quite a bit bigger') → 'thank you, that's helpful' (collect it — ascites) · 'lost weight or appetite? lumps?' (eats very little) · ★ 'any decrease in the amount of urine she passes?' · 'breathlessness or cough?' · 'vomited blood, black or bloody stools?' → no"
+     "2:00",
+     "**BOX 3 — COMPLICATIONS: yellowing, itch, bruising, tiredness · ENCEPHALOPATHY — 'HOW IS HER SLEEP — IN THE DAY AND AWAKE AT NIGHT?'; weakness, balance, vision.**"
     ],
     [
-     "4:00",
-     "★ Six triggers — alcohol first: 'I'd like to ask about things that can tip someone with liver disease into becoming unwell. I know from the notes that she stopped drinking when she was diagnosed. Can I just confirm with you — as far as you're aware, is she drinking any alcohol at all at the moment?' → 'I think she might be — I found a few cans of beer in the cupboard, I think she's hiding it' → ★ 'thank you for telling me. That took some courage, and it's genuinely important.' · 'any new medications recently? any recent illness or flu-like symptoms? ★ has she been constipated? any vomiting, diarrhoea or trouble keeping fluids down?' → constipated, yes"
+     "2:40",
+     "**SBP — abdominal pain, nausea, fever, diarrhoea · HCC — weight loss, appetite, lumps · HEPATORENAL — 'ANY DECREASE IN THE AMOUNT OF URINE SHE PASSES?' · HEPATOPULMONARY — breathlessness, cough · BLEEDING — vomited blood, black or bloody stools · TUMMY GETTING BIGGER?**"
     ],
     [
-     "5:15",
-     "Geriatric, 30 s: falls (no), support at home (just him), diet (very little), ADLs (he helps more), mood (low) · summarise"
+     "3:30",
+     "**BOX 4 — THE SIX TRIGGERS, AND ALCOHOL RE-ASKED: 'I know from the notes she stopped drinking — can I just confirm, as far as you're aware, is she drinking any alcohol at all at the moment?'**"
+    ],
+    [
+     "3:50",
+     "**When the beer cans come — ACKNOWLEDGE WITHOUT JUDGEMENT, then the other five: INFECTION · NEW MEDICINES, SLEEPING TABLETS, PAINKILLERS · CONSTIPATION — when did she last open her bowels · BLEEDING · DEHYDRATION, fluid tablets.**"
+    ],
+    [
+     "4:40",
+     "**BOX 5 — GERIATRIC SCREEN: ANY FALLS — ESPECIALLY A HEAD STRIKE · support at home · her diet · daily activities · her mood · and how are YOU coping?**"
+    ],
+    [
+     "5:20",
+     "**A one-line summary back, and 'is there anything else worrying you?'**"
     ],
     [
      "6:00",
-     "★ 'Most likely your wife has a condition called hepatic encephalopathy. It's a complication of cirrhosis, which means liver failure. The liver can no longer clear certain toxins out of the blood, and those toxins affect the brain — that's what is causing the memory problems, the confusion and the changes in her sleep and behaviour.' · 'is that permanent? is she losing her mind?' → ★ 'I understand why you'd fear that. This is usually treatable and often reversible once we find and correct what has triggered it. It is not the same thing as dementia, although that's one of the things I'll want to rule out.' · ★ trigger: 'from what you've told me about the beer cans, the most likely trigger is that she has started drinking again — a liver in her condition simply cannot process alcohol. Her constipation may also be contributing, which is why one of the treatments is a laxative.'"
+     "**NAME IT — HEPATIC ENCEPHALOPATHY — in plain words: the liver can't clear toxins, they affect the brain, it usually has a trigger, and the trigger is the drinking. OFTEN REVERSIBLE.**"
     ],
     [
-     "7:00",
-     "★ DDx in two named groups: 'First, other complications of her cirrhosis: an infection in the fluid in her abdomen — spontaneous bacterial peritonitis; a cancer in the liver, commoner with cirrhosis; and conditions where the liver disease affects the kidneys or the lungs; bleeding from swollen veins. Second, the other causes of confusion in an older person: any infection such as chest or urine; medications or withdrawal; a bleed inside the head after a fall, a stroke or a tumour; early dementia — Alzheimer's or Lewy body; and problems with salts or blood sugar.' · plan: she needs to be seen — bloods (LFT, INR, UEC, ammonia not needed, FBE, glucose, cultures), abdominal examination, ascitic tap if fluid to exclude SBP; start lactulose; review medicines; alcohol support · 'she won't come — what do I do?' → ★ 'let's work on that together — a home visit, community nursing; if she becomes drowsy or very confused, ring an ambulance. You are not doing this alone.' — carer support · summary, questions"
+     "6:40",
+     "**THE REASONS, then THE DIFFERENTIALS IN TWO GROUPS — other cirrhosis complications, then causes of delirium, including SUBDURAL AFTER A FALL.**"
+    ],
+    [
+     "7:20",
+     "**The next steps briefly — bloods including glucose, a septic screen, lactulose, treat the trigger — AND AN ALCOHOL CONVERSATION WITH BOTH OF THEM. Ask what would help her agree to come in.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I understand you have your wife's authority to discuss her care, thank you.' / ★ 'I am so sorry to hear that, and I can hear how worrying it has been. Can I ask you a few questions so I can understand the situation better?' / ★ 'Can you describe exactly what you mean by that?'",
-    "★ 'How is her sleep — is she sleeping in the day and awake at night?' / ★ 'Is she taking her medication as prescribed?' / ★ 'Have you noticed any decrease in the amount of urine she passes?'",
-    "★ 'I know the notes say she stopped drinking. Can I just confirm — is she drinking any alcohol at all at the moment?' → ★ 'Thank you for telling me. That took some courage.' / ★ 'Has she been constipated?'",
-    "★ 'The liver can no longer clear certain toxins from the blood, and those toxins affect the brain.' / ★ 'This is usually treatable, and often reversible, once we correct what has triggered it.' / ★ 'I considered other complications of her cirrhosis first, and then the other causes of confusion.' / ★ 'You are not doing this alone.'",
-    "'She will not come. What do I do?' → 'Let us work on that together — a home visit is an option, and I can also arrange community nursing support. If she becomes drowsy or very confused, please ring an ambulance.'"
-   ],
    "pefe": [
-    "Role-player: Brian Doyle, 74, retired carpenter; wife Margaret 72, alcohol-related cirrhosis 2 y; anxious, tired, quietly devoted; exhausted caring alone. Never volunteers the beer cans — only to a direct alcohol question ('the notes say she stopped, so I won't ask' → silence). Volunteers the bigger tummy casually mid-answer. ~6 min voice cracks: 'is she losing her mind, doctor?'; end: 'she won't come in — what do I do?'. If asked for her BP/pulse: 'she is not here, doctor'",
-    "No examination. Findings by proxy: fluctuating forgetfulness with intact recognition, sleep reversal, intermittent confusion, easy bruising, abdominal distension (ascites), constipation, poor intake, low mood, no falls; non-adherence, lost to follow-up; hidden alcohol",
-    "Hepatic encephalopathy: West Haven grades 1–4 (sleep reversal/subtle → lethargy/disorientation → somnolence/confusion → coma); asterixis, fetor; ammonia not required for diagnosis. Six precipitants: alcohol, infection (SBP, UTI, chest), medications (sedatives, opioids, diuretics), constipation, GI bleeding, dehydration/electrolytes (also hypokalaemia, TIPS, HCC). Treatment: identify/treat the trigger; lactulose titrated to 2–3 soft stools/day; rifaximin for recurrence VERIFY; avoid sedatives; nutrition (don't restrict protein); thiamine. SBP: ascitic neutrophils ≥250/mm³ → IV ceftriaxone VERIFY, albumin, prophylaxis. HCC surveillance 6-monthly USS ± AFP. Standard drink 10 g; NHMRC ≤10/week. Cirrhosis follow-up: 6-monthly, varices screening, vaccinations",
-    "Version B (45 M, leg swelling, bruising, restarted wine five glasses/day six months, enlarging abdomen; card: fever, jaundice, ascites, non-tender hepatomegaly, parotid enlargement; results: low albumin, low platelets, raised INR, low Hb, raised WCC/neutrophils) = MED-150 · Carer support: Carer Gateway 1800 422 737 · DASSA/ADIS 1300 13 1340 · Country Health Connect · TIS 131 450"
+    "**Do now: vital signs including temperature · BLOOD GLUCOSE · FBE, UEC, LFT, ALBUMIN, INR, CRP, BLOOD CULTURES, AMMONIA IF AVAILABLE · for confusion, EXCLUDE HYPOGLYCAEMIA, ELECTROLYTE DISTURBANCE, HYPOXIA AND URINARY RETENTION before settling on encephalopathy.**",
+    "**Do next: DIAGNOSTIC PARACENTESIS if ascites — cell count, culture, albumin — THE TEST THAT MAKES OR EXCLUDES SBP · septic screen — urine, chest radiograph · LIVER ULTRASOUND WITH DOPPLER — texture, ascites, PORTAL VEIN PATENCY, focal lesions · CT BRAIN if focal signs, a fall, or the confusion does not improve · gastroscopy for variceal surveillance · SIX-MONTHLY ULTRASOUND FOR HCC SURVEILLANCE.** VERIFY whether AFP is recommended alongside.",
+    "**Stigmata worth naming if examined: SPIDER NAEVI filling from a central arteriole and blanching · PALMAR ERYTHEMA · CAPUT MEDUSAE — portal hypertension · ASTERIXIS · and PAROTID ENLARGEMENT AND DUPUYTREN'S indicate CHRONIC ALCOHOL USE rather than cirrhosis itself. SHIFTING DULLNESS — name the test and describe the method.**",
+    "**Management: LACTULOSE TO 2–3 SOFT STOOLS DAILY; RIFAXIMIN FOR RECURRENT EPISODES; TREAT THE PRECIPITANT · ascites — salt restriction, SPIRONOLACTONE ± FRUSEMIDE, therapeutic paracentesis with ALBUMIN cover, daily weights · varices — non-selective beta blocker or band ligation · ALCOHOL — complete abstinence, thiamine, nutrition, brief intervention, DASSA.** VERIFY.",
+    "**Do not miss: SBP in any cirrhotic who deteriorates, even WITHOUT ABDOMINAL PAIN · VARICEAL BLEEDING as the precipitant · HYPOGLYCAEMIA · SUBDURAL HAEMATOMA after a fall · ALCOHOL WITHDRAWAL AND WERNICKE in someone who has just stopped drinking.**",
+    "**Avoid: SEDATIVES AND OPIOIDS — they precipitate encephalopathy · NSAIDs — they precipitate hepatorenal syndrome · OVER-DIURESIS · ASSUMING A NORMAL LFT EXCLUDES ADVANCED DISEASE · a flat unordered differential list · jargon — 'synthetic function', 'portal hypertension' — to the husband.**",
+    "**SA: DASSA and the Alcohol and Drug Information Service (VERIFY the current number) · Country Health Connect community nursing and palliative support · hepatology and transplant assessment at the RAH · MedSTAR 1300 13 12 33 · PATS · ACCHS and Closing the Gap where relevant · TIS National 131 450 · ADVANCE CARE DIRECTIVE and substitute decision-maker where capacity is in doubt.**"
    ],
-   "fails": [
-    "Asking the examiner for the patient's vitals; spending time establishing consent",
-    "Accepting 'memory problems' without asking what he means; no sleep-reversal question",
-    "★ Not re-asking about alcohol because the stem says she stopped; missing constipation; not using the abdominal distension as ascites in the reasoning",
-    "Leading the differential with dementia; a flat list without the two named groups",
-    "Not answering 'is she losing her mind?' with treatability/reversibility; no plan for a patient who refuses to attend; no carer support"
-   ],
-   "numbers": [
-    "History 6 min · six triggers: alcohol · infection · medications · constipation · bleeding · dehydration · lactulose to 2–3 soft stools/day · SBP ascitic PMN ≥250/mm³",
-    "Encephalopathy order: sleep reversal → memory → confusion → slurred speech/ataxia → coma · standard drink 10 g · NHMRC ≤10/wk · HCC surveillance 6-monthly USS",
-    "Carer Gateway 1800 422 737 · ADIS 1300 13 1340 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Hepatic encephalopathy** — the answer",
+     "**SLEEP REVERSAL, MEMORY CHANGE, INTERMITTENT CONFUSION; cirrhosis; BEER CANS HIDDEN**",
+     "**Re-ask alcohol; sleep pattern; the six triggers**",
+     "**Bloods, ammonia, glucose; lactulose; treat the precipitant**"
+    ],
+    [
+     "**Spontaneous bacterial peritonitis**",
+     "**Ascites; fever, abdominal pain — may be ABSENT**",
+     "Fever, pain, diarrhoea",
+     "**Diagnostic paracentesis — ≥250 neutrophils/mm³**"
+    ],
+    [
+     "**Hepatocellular carcinoma**",
+     "**Weight loss, appetite loss, RUQ pain; SURVEILLANCE NEVER DONE**",
+     "Weight, appetite, lumps",
+     "Ultrasound, AFP, triple-phase CT or MRI"
+    ],
+    [
+     "Hepatorenal · hepatopulmonary syndrome",
+     "**Decreasing urine output**; or breathlessness on standing",
+     "**'Any decrease in the amount of urine she passes?'**; breathlessness",
+     "UEC; oxygen saturation, echo with bubble study"
+    ],
+    [
+     "**Variceal bleeding**",
+     "**Haematemesis, melaena — AND A BLEED IS A TRIGGER FOR ENCEPHALOPATHY**",
+     "Vomited blood, black stools",
+     "FBC, urgent gastroscopy — EMERGENCY"
+    ],
+    [
+     "**Sepsis — urinary, chest, skin**",
+     "Fever, cough, dysuria, cellulitis",
+     "The infection trigger",
+     "Septic screen, cultures"
+    ],
+    [
+     "**Medication or withdrawal**",
+     "**A NEW SLEEPING TABLET, opioids; alcohol withdrawal; WERNICKE**",
+     "**New medicines; timing of last drink**",
+     "**Stop the culprit; THIAMINE BEFORE GLUCOSE**"
+    ],
+    [
+     "**Subdural haematoma**",
+     "**A FALL in a COAGULOPATHIC patient; fluctuating confusion**",
+     "**'Any falls — did she hit her head?'**",
+     "**CT BRAIN** — urgent"
+    ],
+    [
+     "Stroke · intracranial tumour · dementia (Alzheimer, Lewy body)",
+     "Focal deficit; progressive headache; slow progressive decline",
+     "Focal neurology; time course",
+     "CT brain; cognitive assessment once the encephalopathy is treated"
+    ],
+    [
+     "**Metabolic — hypoglycaemia, electrolytes, hypothyroidism, hypoxia, retention, constipation**",
+     "**A failing liver cannot maintain glucose; diuretics; three days without a motion**",
+     "**Last bowel motion; urine output**",
+     "**BSL; UEC; TSH; SpO2; bladder scan — and lactulose treats constipation AND encephalopathy**"
+    ]
    ]
   },
   "source": "Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf Version A (Brian Doyle, 74, third-party history of his wife's confusion and sleep reversal two years after alcohol cirrhosis — hepatic encephalopathy from hidden drinking and constipation)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Liver › Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Not re-asking about alcohol because the stem says she stopped — the single behaviour that separates a pass from a fail; 'I know from the notes that she stopped drinking when she was diagnosed; can I just confirm — as far as you are aware, is she drinking any alcohol at all at the moment?' → 'I found a few cans of beer in the cupboard; I think she's been hiding it'; never volunteered; reconfirm any stem fact central to your diagnosis; 'thank you for telling me — that took some courage' (★)",
-   "FAIL — Asking the examiner for her vital signs or stability — she is not in the room ('she's not here, doctor'); and spending time establishing consent — the stem gives it: 'I understand you have your wife's authority to discuss her care, thank you' in one sentence, then move on",
-   "FAIL — Accepting 'memory problems and strange behaviour' without asking what he means — 'is it that she doesn't remember things, or doesn't recognise you, or is behaving oddly?' (forgets her glasses, knows who he is); 'how is her sleep — sleeping in the day and awake at night?' (sleep reversal); onset, constant or intermittent, worse — without this you cannot separate encephalopathy from dementia, delirium or depression and the differential sounds recited",
-   "FAIL — Leading the differentials with dementia — cirrhosis complications first, and say why ('the case was designed around them'): spontaneous bacterial peritonitis, hepatocellular carcinoma, hepatorenal and hepatopulmonary; then the other causes of confusion in an older person — infection (chest, urine), medications or withdrawal, a bleed after a fall, stroke, tumour, dementia (Alzheimer, Lewy body), electrolytes and glucose",
-   "DO — One sentence of empathy and one of permission (six seconds, the approach domain); the four cirrhosis questions (treatment, adherence — 'not sure she always takes them', follow-up — stopped the specialist a year ago); complications in order — jaundice, itch, bruising (easily), tiredness; encephalopathy (sleep, weakness, balance, vision); SBP, cancer, kidney, lung, bleeding (pain, fever, distension — 'her tummy has got quite a bit bigger', offered casually mid-answer: that is the ascites, use it as a reason; urine output; breathlessness; haematemesis, melaena); the six triggers — alcohol first, then new medications, intercurrent illness, constipation (yes), vomiting or diarrhoea, bleeding; the geriatric screen in thirty seconds (falls, support — 'just me', diet — eats very little, ADLs, mood — low)",
-   "SAY — 'Most likely your wife has hepatic encephalopathy — a complication of cirrhosis, or liver failure; the liver can no longer clear certain toxins from the blood, and those toxins affect the brain — that is the memory problems, the confusion and the change in her sleep; the most likely trigger is that she has started drinking again; the constipation may be contributing, which is why one treatment is a laxative'; 'is she losing her mind?' (voice cracks at six minutes) → 'this is usually treatable and often reversible once we correct the trigger; it is not the same as dementia, though that is something I'll rule out'; she needs to be seen — bloods, abdominal examination, an ascitic tap if there is fluid, lactulose to two or three soft stools; 'she won't come — what do I do?' → a home visit, community nursing, 'you are not doing this alone'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-150",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "General practice/ED. Version B of the chronic liver disease document (reconstructed stem). Four-minute history, examination findings on a card, then explain the results and the diagnosis. The opening statement hands you three findings in one sentence — acknowledge all three aloud before questioning. Four reasons for SBP; confirm with an ascitic tap.",
   "stem": [
    "A 45-year-old man presents with bruising and swelling of his legs. 'I started drinking again about six months ago — about five glasses of wine a day. And my tummy is getting bigger.' Results: albumin low · platelets low · INR raised · haemoglobin low · WCC raised with neutrophilia."
   ],
@@ -36511,85 +36834,199 @@
    "Interpret the examination findings card",
    "Explain the results and your diagnosis"
   ],
-  "time": "8 min. Intro, open → three findings → ★ 'thank you — so there are three things there I want to come back to: the bruising and swelling, the drinking, and the tummy getting bigger' · leg swelling: how long, worse, one/both, how far up, better lying down · bruising: how long, ★ 'only when you knock yourself, or with no injury at all?' (spontaneous = severity) · the same five boxes: cirrhosis known? treatment/adherence/follow-up · decompensation: jaundice, itch, tiredness · encephalopathy: sleep reversal, confusion, tremor · SBP/cancer/kidney/lung/bleeding: abdominal pain, N/V, ★ fever/chills, diarrhoea, weight/appetite, urine output, SOB, haematemesis/melaena · ★ alcohol quantified (5 glasses/day ≈ 50/week for 6 months; previous history), withdrawal symptoms, other triggers (drugs, illness, constipation) · risk factors (viral, IVDU), meds (NSAIDs, paracetamol) · social · card: fever, jaundice, ascites/shifting dullness, non-tender hepatomegaly, parotid enlargement → interpret (non-tender = chronic alcoholic enlargement; parotids = chronic alcohol) · results in plain words, then dx SBP with four reasons → ascitic tap.",
+  "findings": [
+   [
+    "THE RESULTS ARE ON THE STEM",
+    "ALBUMIN LOW · PLATELETS LOW · INR RAISED · HAEMOGLOBIN LOW · WCC RAISED WITH NEUTROPHILIA · LFTs deranged. EXPLAIN EACH ONE IN PLAIN ENGLISH BEFORE THE DIAGNOSIS — IT IS A TASK IN ITS OWN RIGHT"
+   ],
+   [
+    "THE EXAMINATION CARD YOU ARE HANDED",
+    "FEVER · JAUNDICE · ASCITES — 'ascites present' or POSITIVE SHIFTING DULLNESS · HEPATOMEGALY, NON-TENDER · PAROTID ENLARGEMENT. USE EVERY ONE IN YOUR REASONING OUT LOUD — FINDINGS YOU ARE GIVEN BUT NEVER MENTION ARE MARKS YOU NEVER COLLECT"
+   ],
+   [
+    "WHAT HE GIVES — THE TRIGGER",
+    "'I STARTED DRINKING AGAIN ABOUT SIX MONTHS AGO — ABOUT FIVE GLASSES OF WINE A DAY. AND MY TUMMY IS GETTING BIGGER.' QUANTIFY IT IN STANDARD DRINKS — a glass of wine is roughly 1.5 standard drinks, so five glasses is 7–8 a day, over 50 a week against an NHMRC limit of 10"
+   ],
+   [
+    "THE STEP THAT GETS YOU TO SBP",
+    "'LOOKING AT THE TYPE OF WHITE CELL, THE NEUTROPHILS ARE RAISED, AND THAT POINTS TO A BACTERIAL INFECTION.' Candidates explain the white count and stop"
+   ],
+   [
+    "THE BRUISING AND THE SWELLING ARE THE LIVER, NOT THE LEGS",
+    "LOW ALBUMIN → LEG SWELLING AND ASCITES. HIGH INR AND LOW PLATELETS → THE BRUISING. Say the link out loud — it is what turns a list of results into an explanation"
+   ],
+   [
+    "ASK ABOUT FEVER AND ABDOMINAL PAIN — BUT SBP MAY HAVE NEITHER",
+    "'ANY FEVER OR SHIVERS? ANY PAIN IN YOUR TUMMY? ANY DIARRHOEA?' SBP CAN PRESENT WITH ONLY ENCEPHALOPATHY, AKI OR A GENERAL DECLINE — ANY CIRRHOTIC WHO DETERIORATES IS PARACENTESED"
+   ],
+   [
+    "STILL RUN THE COMPLICATIONS AND TRIGGERS",
+    "ENCEPHALOPATHY — sleep reversal, confusion · VARICEAL BLEEDING — haematemesis, melaena, WHICH ALSO EXPLAINS THE LOW HAEMOGLOBIN · HEPATORENAL — urine output · HCC — weight loss · the other five triggers: infection, medications, constipation, bleeding, dehydration"
+   ],
+   [
+    "PAROTID ENLARGEMENT IS A CLUE ABOUT ALCOHOL, NOT ABOUT CIRRHOSIS",
+    "PAROTID ENLARGEMENT AND DUPUYTREN'S CONTRACTURE INDICATE CHRONIC ALCOHOL USE RATHER THAN CIRRHOSIS ITSELF — SAY SO IF ASKED"
+   ],
+   [
+    "DO NOT LET NORMAL-LOOKING ENZYMES REASSURE",
+    "IN ADVANCED CIRRHOSIS ENZYMES MAY BE NORMAL OR ONLY MILDLY RAISED BECAUSE THERE IS LITTLE FUNCTIONING LIVER TISSUE LEFT. The low albumin and high INR are the real markers of liver failure"
+   ],
+   [
+    "NO JARGON TO THE PATIENT",
+    "'SYNTHETIC FUNCTION' AND 'PORTAL HYPERTENSION' SAID TO THE PATIENT LOSE MARKS. PROTEINS, CLOTTING FACTORS, FLUID IN THE ABDOMEN"
+   ]
+  ],
+  "findingsLabel": "Six results in plain English, four findings used aloud, and the specific complication named",
+  "must": [
+   "FAIL — Naming only 'decompensated cirrhosis' without the words spontaneous bacterial peritonitis.",
+   "FAIL — Explaining the white count and never reaching the neutrophils.",
+   "FAIL — Findings on the card never mentioned in the reasoning.",
+   "FAIL — Jargon in the results explanation.",
+   "ASK — Any fever, shivers, tummy pain or diarrhoea?",
+   "ASK — Any vomiting blood or black stools?"
+  ],
   "back": {
-   "dx": "Spontaneous bacterial peritonitis on decompensated alcohol-related cirrhosis — six months back on ~5 glasses of wine a day (≈50 SD/week), new leg oedema, spontaneous bruising, enlarging abdomen; card: fever, jaundice, ascites (shifting dullness), non-tender hepatomegaly (chronic alcoholic enlargement, not acute inflammation/congestion), parotid enlargement (chronic alcohol use); bloods: low albumin (synthetic failure), low platelets (hypersplenism/marrow), raised INR (clotting factor failure → bruising), low Hb, raised WCC with neutrophilia (bacterial infection). Four reasons: fever; neutrophilia; ascites; a clear reason for decompensation — alcohol. Confirm with a diagnostic ascitic tap (PMN ≥250/mm³, culture); admit, IV antibiotics (ceftriaxone VERIFY), albumin, thiamine, withdrawal management, diuretics/salt restriction once stable, alcohol support.",
+   "dx": [
+    "**SPONTANEOUS BACTERIAL PERITONITIS ON A BACKGROUND OF DECOMPENSATED ALCOHOL-RELATED CIRRHOSIS, PRECIPITATED BY A RETURN TO ALCOHOL.** **SBP is BACTERIAL INFECTION OF ASCITIC FLUID WITH NO SURGICAL SOURCE. CONFIRMED BY DIAGNOSTIC PARACENTESIS — ASCITIC NEUTROPHILS AT OR ABOVE 250 CELLS PER CUBIC MILLIMETRE.**",
+    "**THE DISCRIMINATING ISSUE: NAME THE SPECIFIC COMPLICATION, NOT THE GENERAL STATE — and JUSTIFY IT FROM FOUR SEPARATE PIECES OF EVIDENCE: THE FEVER, THE NEUTROPHILIA, THE ASCITES ON EXAMINATION, AND THE RETURN TO ALCOHOL AS THE TRIGGER. 'HE HAS DECOMPENSATED CIRRHOSIS' DESCRIBES THE PATIENT WITHOUT DIAGNOSING HIM.**",
+    "**EXPLAINING THE RESULTS, ONE LINE EACH: ALBUMIN — 'the MAIN PROTEIN YOUR LIVER MAKES, and yours is low — your liver is no longer producing proteins properly' · INR — 'your liver makes the factors that CLOT YOUR BLOOD; it has stopped producing them, so YOUR BLOOD TAKES LONGER TO CLOT' · PLATELETS — 'tiny particles that help clotting, and they're low' · HAEMOGLOBIN — 'carries oxygen, and it's low' · WHITE CELLS — 'part of your immune system, raised, which SUGGESTS AN INFECTION' · NEUTROPHILS — 'that type is raised, which POINTS TO A BACTERIAL INFECTION.'**",
+    "**LINK THEM: 'the low protein is WHY YOUR LEGS ARE SWOLLEN AND FLUID IS COLLECTING IN YOUR TUMMY. The clotting problem and low platelets are WHY YOU'RE BRUISING.'**",
+    "**THE DIAGNOSIS IN ONE BREATH: 'putting all of that together, I am suspecting a condition called SPONTANEOUS BACTERIAL PERITONITIS. That means AN INFECTION IN THE FLUID THAT HAS COLLECTED IN YOUR ABDOMEN because your liver is not working properly. My reasons are: YOU HAVE A FEVER; your WHITE CELLS AND PARTICULARLY YOUR NEUTROPHILS ARE RAISED; on examination you have FLUID IN YOUR ABDOMEN; and you have a clear reason for your liver to have deteriorated — YOU HAVE STARTED DRINKING AGAIN.'**",
+    "**IF THE EXAMINER PUSHES: 'this is DECOMPENSATED CIRRHOSIS PRECIPITATED BY SBP AND BY A RETURN TO ALCOHOL' — NAMING BOTH THE COMPLICATION AND THE TRIGGER. 'Decompensated cirrhosis' IS NOT WRONG, BUT IT IS NOT ENOUGH.**",
+    "**WHY THE PLATELETS ARE LOW: HYPERSPLENISM FROM PORTAL HYPERTENSION. WHY THE HAEMOGLOBIN IS LOW: BLOOD LOSS — ASK ABOUT VARICES — POOR NUTRITION, OR CHRONIC DISEASE. WHY THE ENZYMES MAY BE UNIMPRESSIVE: LITTLE FUNCTIONING LIVER LEFT.**",
+    "**MANAGEMENT: DIAGNOSTIC PARACENTESIS FOR CELL COUNT, CULTURE AND ALBUMIN · IV THIRD-GENERATION CEPHALOSPORIN · IV ALBUMIN TO REDUCE THE RISK OF HEPATORENAL SYNDROME · SECONDARY ANTIBIOTIC PROPHYLAXIS AFTERWARDS · treat the precipitant — ALCOHOL: complete abstinence, THIAMINE, nutrition, brief intervention, DASSA · watch for WITHDRAWAL.** VERIFY agent, dose and prophylaxis locally.",
+    "**THE DIFFERENTIALS: OTHER CIRRHOSIS COMPLICATIONS — hepatorenal syndrome, variceal bleed as the cause of the anaemia, hepatic encephalopathy, HCC · OTHER SOURCES OF SEPSIS — urinary, chest, skin, SECONDARY PERITONITIS from a perforation — a SURGICAL source changes everything · ALCOHOLIC HEPATITIS — fever, jaundice, tender hepatomegaly and a neutrophilia can mimic it · CARDIAC OR RENAL causes of oedema.**",
+    "**ALCOHOL IS THE SINGLE INTERVENTION THAT CHANGES THE TRAJECTORY. Raise it WITHOUT JUDGEMENT, AFTER the diagnosis, and offer support. AVOID NSAIDs — they precipitate hepatorenal syndrome — and sedatives.** **SA: MedSTAR 1300 13 12 33 if he deteriorates; hepatology at the RAH; DASSA; Country Health Connect; TIS National 131 450.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open → 'bruising and swelling in my legs; started drinking again six months ago, five glasses a day; tummy getting bigger' → ★ 'thank you — so there are three things there I want to come back to'"
+     "**WIPE, open question, and respond to the drinking without judgement: 'thank you for being honest with me about that — it helps me work out what's going on.'**"
     ],
     [
-     "0:40",
-     "Swelling: how long, worse, one or both legs, how far up, better lying down, other triggers · ★ bruising: how long, 'only when you knock yourself, or with no injury at all?' (spontaneous), gums/nosebleeds"
+     "0:20",
+     "**EXPLORE: the bruising — where, how easily · the leg swelling — both legs, how long · the tummy — how fast has it grown?**"
+    ],
+    [
+     "0:50",
+     "**THE FOUR CIRRHOSIS QUESTIONS: when diagnosed · treatment · taking it · follow-up.** Then **QUANTIFY THE ALCOHOL — how many glasses, how big, how long — convert to standard drinks.**"
     ],
     [
      "1:30",
-     "Liver: known cirrhosis? treatment, adherence, follow-up · jaundice, itch, tiredness · sleep reversal, confusion, tremor · ★ abdominal pain, N/V, ★ fever/chills, diarrhoea · weight/appetite, lumps · urine output · SOB/cough · haematemesis/melaena"
+     "**COMPLICATIONS — SBP: FEVER OR SHIVERS · ABDOMINAL PAIN · DIARRHOEA. ENCEPHALOPATHY: sleep, confusion, forgetfulness. BLEEDING: VOMITED BLOOD · BLACK STOOLS.**"
+    ],
+    [
+     "2:15",
+     "**HEPATORENAL — passing less urine · HCC — weight loss, appetite · HEPATOPULMONARY — breathlessness · jaundice, itch.**"
     ],
     [
      "2:45",
-     "★ Alcohol: what, how much, how many days, since when, previous pattern and abstinence, withdrawal symptoms in the morning (shakes, sweats), seizures ever; why restarted; other drugs · viral risk (transfusion, tattoos, IVDU), medications incl paracetamol/NSAIDs/herbal · social: who's at home, work, driving, mood · summarise"
+     "**THE OTHER TRIGGERS: infection elsewhere · NEW MEDICINES, PAINKILLERS, ANTI-INFLAMMATORIES · constipation · dehydration.**"
+    ],
+    [
+     "3:15",
+     "**SADMA · social — who is at home · a one-line summary.**"
     ],
     [
      "4:00",
-     "★ Card: 'fever, jaundice, shifting dullness — ascites, non-tender hepatomegaly, parotid enlargement' → 'the liver is enlarged but not tender, which fits chronic alcoholic enlargement rather than acute inflammation or congestion; parotid enlargement reflects chronic alcohol use rather than the liver disease itself; the fever with ascites is what concerns me most'"
+     "**INTERPRET THE CARD — EVERY FINDING, ALOUD: fever · jaundice · ascites / shifting dullness · non-tender hepatomegaly · PAROTID ENLARGEMENT — a sign of chronic alcohol use.**"
     ],
     [
-     "5:00",
-     "★ Results in plain words: 'as you know, you have cirrhosis — the tissue of your liver has been damaged by long-term alcohol. Albumin is the main protein your liver makes and it's low — your liver isn't producing proteins properly. Platelets are tiny particles that help your blood clot, and they're low. Your liver has also stopped making the factors that clot your blood, so your blood takes longer to clot — that's what the INR shows, and it's why you're bruising. Haemoglobin, which carries oxygen, is low. More importantly, your white cells are raised, which means there's an infection somewhere, and the type — the neutrophils — points to a bacterial infection.'"
+     "4:40",
+     "**EXPLAIN THE RESULTS, ONE LINE EACH, IN PLAIN ENGLISH — albumin, INR, platelets, haemoglobin, white cells, AND THE NEUTROPHILS.**"
     ],
     [
-     "6:15",
-     "★ 'That brings me to what I think is going on. I'm suspecting spontaneous bacterial peritonitis — an infection in the fluid that has collected in your abdomen because your liver isn't working properly. Four reasons: you have a fever; your white cells and neutrophils are raised, pointing to a bacterial infection; on examination you have fluid in your abdomen; and you have a clear reason for your liver to have got worse — you've started drinking again. To confirm it we need to take a small sample of that fluid with a needle.' · plan: admit, ascitic tap (cell count, culture, protein), blood cultures, IV antibiotics, IV albumin, thiamine before glucose, monitor for withdrawal (CIWA, diazepam), correct K/Mg, avoid sedatives/NSAIDs, then salt restriction + spironolactone/frusemide, gastroscopy for varices, hepatology; alcohol — honest, non-judgemental, supported cessation; safety-net"
+     "5:40",
+     "**LINK THEM TO HIS SYMPTOMS: low protein → swelling and fluid; clotting factors and platelets → bruising.**"
+    ],
+    [
+     "6:10",
+     "**NAME SBP IN ONE BREATH, WITH THE FOUR REASONS — fever, neutrophilia, ascites, return to alcohol.**"
+    ],
+    [
+     "6:50",
+     "**THE DIFFERENTIALS BRIEFLY — hepatorenal, variceal bleed, encephalopathy, other sepsis, SECONDARY PERITONITIS, alcoholic hepatitis.**"
+    ],
+    [
+     "7:20",
+     "**THE PLAN: admission, A SMALL SAMPLE OF THE TUMMY FLUID to confirm, IV antibiotics and albumin — and the alcohol, offered as support, not a lecture.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Thank you — so there are three things there I want to come back to.' / 'How long have you had the swelling, and is it getting worse? One leg or both? How far up does it come? Better when you lie down?' / ★ 'Does the bruising happen only when you knock yourself, or does it come up with no injury at all?'",
-    "'Any fever or chills? Any tummy pain? Any confusion, or sleeping in the day and awake at night? Any vomiting of blood or black stools? Any change in the amount of urine you pass?' / 'What do you drink, how much each day, and how many days a week — and how long had you been off it before?'",
-    "★ 'Albumin is the main protein your liver makes, and it is low — your liver is no longer producing proteins properly. Platelets are tiny particles that help your blood clot, and they are low. Your liver has also stopped making the factors that clot your blood, so your blood takes longer to clot — that is what the INR shows, and it is why you are bruising. Your white cells are raised, which means there is an infection somewhere, and the neutrophils point to a bacterial infection.'",
-    "★ 'I am suspecting spontaneous bacterial peritonitis — an infection in the fluid that has collected in your abdomen because your liver is not working properly. My reasons are: you have a fever; your white cells and neutrophils are raised; on examination you have fluid in your abdomen; and you have a clear reason for your liver to have got worse — you have started drinking again. To confirm it we need to take a small sample of that fluid with a needle.'",
-    "Examiner 'why is the liver non-tender?' → 'chronic alcoholic enlargement — fatty change and cirrhosis — rather than acute inflammation or congestion, which stretch the capsule and hurt.' / 'what do the parotids signify?' → 'chronic alcohol use — sialadenosis — not the liver disease itself.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 45 M; leg oedema and spontaneous bruising, abdomen enlarging; back on ~5 glasses of wine/day for 6 months; known cirrhosis presumed; volunteers the three findings in the opening line",
-    "Card: fever · jaundice · ascites/positive shifting dullness · hepatomegaly, non-tender · parotid enlargement. Bloods: albumin ↓, platelets ↓, INR ↑, Hb ↓, WCC ↑ with neutrophilia",
-    "SBP: diagnostic paracentesis — ascitic PMN ≥250/mm³ (culture often negative); treat IV ceftriaxone 2 g daily (or cefotaxime) 5 days VERIFY TG; IV albumin 1.5 g/kg day 1 and 1 g/kg day 3 reduces hepatorenal syndrome VERIFY; secondary prophylaxis (norfloxacin/trimethoprim-sulfamethoxazole) VERIFY; beware hepatorenal syndrome, encephalopathy, variceal bleeding. Other decompensation causes: alcoholic hepatitis (Maddrey's DF, prednisolone if severe VERIFY), GI bleed, HCC, portal vein thrombosis. Child-Pugh (bilirubin, albumin, INR, ascites, encephalopathy); MELD",
-    "Alcohol: 5 glasses/day ≈ 7 SD/day ≈ 50/week (NHMRC ≤10); withdrawal risk — thiamine 300 mg IV/IM before glucose VERIFY, diazepam per CIWA, seizures 6–48 h, DTs 48–96 h; never abrupt unsupported cessation at this level; DASSA/ADIS 1300 13 1340; driving/work; family",
-    "SA: admit — MedSTAR 1300 13 12 33 from a rural site if septic · hepatology (RAH/FMC) · TIS 131 450",
-    "Alcohol — 5 glasses/day ≈ 7 SD/day ≈ 50/week (NHMRC ≤10); withdrawal risk — thiamine 300 mg IV/IM before glucose VERIFY, diazepam per CIWA, seizures 6–48 h, DTs 48–96 h; never abrupt unsupported cessation at this level; DASSA/ADIS 1300 13 1340; driving/work; family",
-    "SA — Admit — MedSTAR 1300 13 12 33 from a rural site if septic · hepatology (RAH/FMC) · TIS 131 450"
+    "**Do now: vital signs including temperature · blood glucose · FBE, UEC, LFT, ALBUMIN, INR, CRP, BLOOD CULTURES · DIAGNOSTIC PARACENTESIS — cell count, culture in blood culture bottles at the bedside, albumin for the SAAG — THE TEST THAT MAKES OR EXCLUDES SBP.**",
+    "**Threshold: ASCITIC NEUTROPHILS ≥250 CELLS/mm³ = SBP. A POLYMICROBIAL CULTURE, very high protein or low glucose raises SECONDARY PERITONITIS — a surgical source — and needs imaging.**",
+    "**Treatment: IV THIRD-GENERATION CEPHALOSPORIN · IV ALBUMIN — commonly on day 1 and day 3 — to reduce HEPATORENAL SYNDROME · SECONDARY PROPHYLAXIS after the episode · treat the precipitant.** VERIFY agent, dose and albumin regimen against Therapeutic Guidelines.",
+    "**Then: septic screen — urine, chest X-ray · LIVER ULTRASOUND WITH DOPPLER — portal vein, focal lesions · gastroscopy for varices · HCC SURVEILLANCE six-monthly · ascites — salt restriction, spironolactone ± frusemide once infection is treated · THIAMINE, nutrition, alcohol support.**",
+    "**Do not miss: HEPATORENAL SYNDROME — watch creatinine and urine output · VARICEAL BLEEDING as the cause of the low haemoglobin · HEPATIC ENCEPHALOPATHY triggered by the infection · ALCOHOL WITHDRAWAL during admission · SECONDARY PERITONITIS.**",
+    "**Avoid: STOPPING AT 'DECOMPENSATED CIRRHOSIS' · NSAIDs · SEDATIVES · LARGE-VOLUME PARACENTESIS WITHOUT ALBUMIN COVER · aggressive diuresis during infection and AKI risk · a lecture about alcohol before the diagnosis.**",
+    "**SA: admit; MedSTAR 1300 13 12 33 for a deteriorating patient; hepatology and transplant assessment at the RAH; DASSA and ADIS for alcohol; Country Health Connect; PATS; TIS National 131 450.**"
    ],
-   "fails": [
-    "Not acknowledging the three findings in the opening line; running only a leg-swelling history",
-    "Not asking whether bruising is spontaneous; not asking fever/abdominal pain (the SBP questions)",
-    "Reading the card without interpreting non-tender hepatomegaly and parotid enlargement; reciting results without plain-English meaning",
-    "Naming 'decompensated cirrhosis' without the infection; no ascitic tap; no alcohol withdrawal plan/thiamine",
-    "Moralising about the drinking"
-   ],
-   "numbers": [
-    "History 4 min · 5 glasses/day ≈ 50 SD/wk · SBP PMN ≥250/mm³ · ceftriaxone 5 d VERIFY · albumin 1.5 g/kg d1, 1 g/kg d3 VERIFY",
-    "Thiamine 300 mg before glucose VERIFY · withdrawal seizures 6–48 h, DTs 48–96 h · Child-Pugh: bili, albumin, INR, ascites, encephalopathy · ADIS 1300 13 1340"
+   "ddx": [
+    [
+     "**Spontaneous bacterial peritonitis** — the answer",
+     "**FEVER, NEUTROPHILIA, ASCITES, RETURN TO ALCOHOL**",
+     "**Fever, pain, diarrhoea — BUT MAY HAVE NONE**",
+     "**Diagnostic paracentesis ≥250 neutrophils; IV cephalosporin and albumin** — EMERGENCY"
+    ],
+    [
+     "**Decompensated alcohol-related cirrhosis**",
+     "**Low albumin, high INR, low platelets, ascites, jaundice, bruising**",
+     "The four cirrhosis questions",
+     "**The background — NOT ENOUGH AS THE ANSWER ON ITS OWN**"
+    ],
+    [
+     "**Variceal bleeding**",
+     "**LOW HAEMOGLOBIN; haematemesis, melaena**",
+     "**'Any vomiting blood or black stools?'**",
+     "FBC, urgent gastroscopy — EMERGENCY"
+    ],
+    [
+     "**Hepatorenal syndrome**",
+     "Falling urine output, rising creatinine in advanced cirrhosis",
+     "Urine output",
+     "UEC; **albumin is given to PREVENT it**"
+    ],
+    [
+     "**Hepatic encephalopathy**",
+     "Sleep reversal, confusion — **infection is a trigger**",
+     "Sleep and confusion questions",
+     "Lactulose; treat the infection"
+    ],
+    [
+     "**Alcoholic hepatitis**",
+     "**Recent heavy drinking, FEVER, JAUNDICE, tender hepatomegaly, NEUTROPHILIA — a mimic**",
+     "**Hepatomegaly here is NON-TENDER**",
+     "Maddrey score; specialist input"
+    ],
+    [
+     "**Secondary peritonitis**",
+     "**A SURGICAL SOURCE — perforation, abscess; polymicrobial fluid**",
+     "Sudden severe pain, peritonism",
+     "**CT abdomen; surgical review** — EMERGENCY"
+    ],
+    [
+     "Other sepsis — urinary, chest, skin",
+     "Dysuria, cough, cellulitis",
+     "Infection screen",
+     "Urine, chest X-ray, cultures"
+    ],
+    [
+     "Hepatocellular carcinoma",
+     "Weight loss, RUQ pain, sudden decompensation",
+     "Weight, appetite",
+     "Ultrasound, AFP, CT or MRI"
+    ],
+    [
+     "Cardiac or renal causes of oedema",
+     "Breathlessness, orthopnoea; proteinuria",
+     "Cardiac history; urine dipstick",
+     "Echo; urine protein — **but the liver explains everything here**"
+    ]
    ]
   },
   "source": "Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf §6 Version B (45-year-old man back on wine with bruising, leg swelling, fever and ascites — spontaneous bacterial peritonitis; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Liver › Chronic_Liver_Disease_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Card",
-    "Fever · jaundice · ascites/positive shifting dullness · hepatomegaly, non-tender · parotid enlargement. Bloods: albumin ↓, platelets ↓, INR ↑, Hb ↓, WCC ↑ with neutrophilia"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Not acknowledging the three findings handed over in the opening sentence — 'bruising and swelling in my legs; I started drinking again about six months ago, five glasses of wine a day; and my tummy is getting bigger' — the complaint, the trigger and the ascites in one breath; 'thank you — there are three things there I want to come back to', so the examiner knows you heard them",
-   "FAIL — Asking about the colour of the bruises — it tells you nothing; the one bruising question that matters: 'does it happen only when you knock yourself, or does it come up with no injury at all?' — spontaneous bruising is a severity marker; the swelling: how long, worse, one leg or both, how far up, better lying down",
-   "DO — Four minutes only: the liver history (known cirrhosis, treatment, adherence, follow-up), decompensation symptoms (jaundice, itch, tiredness, sleep reversal, confusion, tremor), SBP (abdominal pain, fever), bleeding (haematemesis, melaena), urine output, breathlessness; alcohol in detail — what, how much (five glasses a day ≈ 35 standard drinks a week against an NHMRC limit of 10), how many days, since when, the previous pattern and abstinence, morning withdrawal symptoms; the other five triggers",
-   "DO — The examination card interpreted aloud: fever, jaundice, shifting dullness (ascites), non-tender hepatomegaly ('chronic alcoholic enlargement rather than acute inflammation or congestion' if asked why non-tender), parotid enlargement ('a sign of chronic alcohol use, not of the liver disease itself')",
-   "SAY — Results in plain words, each named then translated: 'as you know, you have cirrhosis — the tissue of your liver has been damaged by long-term alcohol; albumin is the main protein your liver makes and it is low — your liver is no longer producing proteins properly; platelets help your blood clot and they are low; your liver has also stopped making clotting factors, so your blood takes longer to clot — that is the INR, and why you are bruising; haemoglobin is low; more importantly your white cells are raised, meaning infection, and the neutrophils are raised, pointing to a bacterial one'",
-   "SAY — 'I am suspecting spontaneous bacterial peritonitis — an infection in the fluid that has collected in your abdomen because your liver isn't working properly; four reasons: you have a fever; your white cells and neutrophils are raised; on examination you have fluid in your abdomen; and you have a clear reason for your liver to have got worse — you have started drinking again; to confirm it we take a small sample of that fluid with a needle' (ascitic neutrophils ≥250); admit, cultures, IV antibiotics, albumin, stop alcohol with withdrawal cover, HCC surveillance six-monthly ultrasound; differentials — encephalopathy, HCC, hepatorenal, other sepsis"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-151",
