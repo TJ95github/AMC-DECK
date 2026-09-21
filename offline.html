@@ -29273,9 +29273,8 @@ const EMBEDDED_CARDS = [
  {
   "id": "MED-111",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "General practice. Version C of the generalised body aches stem (reconstructed from the Part 2 §6 variant script — name and vitals reconstructed). The travel history is the station: eight named travel questions — two questions is a fail. The examiner hands over a photograph of the forearm (expanding red ring with central clearing) and states tender axillary lymphadenopathy.",
   "stem": [
    "A 57-year-old woman presents with aches and pains all over her body for the past week. She returned two weeks ago from a holiday in the United States. Observations are normal."
   ],
@@ -29284,91 +29283,219 @@ const EMBEDDED_CARDS = [
    "Physical examination findings will be given to you on a card",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. WIPE, pain, validate · site/pattern briefly (diffuse myalgia, arthralgia, fatigue, ± fever/headache) · ★ TRAVEL HISTORY IN FULL, eight questions: (A) where exactly and how long, activities (B) ★ bushwalking/hiking/camping — tick or insect bites (C) sick or animal contacts (D) drugs, alcohol (E) blood exposure — tattoos, piercings, procedures, transfusion (F) street food, untreated water (G) pre-travel GP — vaccines, malaria tablets (H) sex overseas, condoms · ★ 'did you notice any rash?' → 'I found something on my arm' · fever pattern, headache, neck stiffness, facial droop, palpitations/syncope (carditis), joint swelling (knee) · serious-cause sweep abbreviated · meds/SADMA · card/photo → ★ 'erythema migrans with regional lymphadenopathy in a patient with exposure in an endemic US area — diagnostic of early Lyme disease; treat clinically without waiting for serology, which is often negative in the first weeks' · explain, doxycycline, sun, prevent later joint/heart/nerve complications · DDx · 'can you catch it in Australia?' answered honestly.",
+  "findings": [
+   [
+    "THE CARD",
+    "PHOTOGRAPH OF THE FOREARM SHOWING A TARGET OR BULLSEYE RASH · AXILLARY LYMPHADENOPATHY. Variable across role-players: FEVER, SWEATS, TIREDNESS. Some recalls add HEADACHE"
+   ],
+   [
+    "ERYTHEMA MIGRANS IS NOT ALWAYS A BULLSEYE",
+    "It may be UNIFORMLY RED, BLUE-RED, BLISTERED CENTRALLY, OR MULTIPLE if disseminated. It EXPANDS SLOWLY OVER DAYS, IS USUALLY NEITHER ITCHY NOR PAINFUL, and appears ROUGHLY 3 TO 30 DAYS AFTER THE BITE. ABSENCE OF A RASH DOES NOT EXCLUDE THE DIAGNOSIS — A SUBSTANTIAL MINORITY NEVER DEVELOP ONE"
+   ],
+   [
+    "THE EXAMINER HAS A YES/NO BOX",
+    "DID THIS CANDIDATE TAKE A COMPLETE TRAVEL HISTORY? TWO QUESTIONS WILL NOT TICK IT, EVEN WITH AN OTHERWISE STRONG PERFORMANCE. 'DID YOU GO BUSHWALKING?' AND NOTHING ELSE IS THE AUTOMATIC FAIL"
+   ],
+   [
+    "ALL EIGHT TRAVEL QUESTIONS, OUT LOUD, IN ORDER",
+    "A WHERE EXACTLY AND HOW LONG, AND WHAT ACTIVITIES · B ANY BUSHWALKING OR CAMPING, AND DID YOU NOTICE ANY TICK OR INSECT BITES · C ANY CONTACT WITH SICK PEOPLE OR ANIMALS · D ANY DRUGS, OR MUCH ALCOHOL"
+   ],
+   [
+    "…and the second four",
+    "E ANY EXPOSURE TO BLOOD — TATTOOS, PIERCINGS, MEDICAL OR DENTAL PROCEDURES, TRANSFUSION · F ANY STREET FOOD OR UNTREATED WATER · G DID YOU SEE A GP BEFORE TRAVELLING, VACCINES OR MALARIA TABLETS · H DID YOU HAVE SEX WHILE OVERSEAS, AND DO YOU USE CONDOMS"
+   ],
+   [
+    "ASK ABOUT THE TICK DIRECTLY",
+    "'DID YOU NOTICE A TICK, AND DID YOU PULL IT OFF?' Then advise FREEZE IT, DON'T SQUEEZE IT — an ether-containing spray, or FINE-TIPPED FORCEPS GRASPING CLOSE TO THE SKIN. DO NOT TWIST, BURN OR APPLY CHEMICALS, WHICH PROMOTE REGURGITATION OF GUT CONTENTS"
+   ],
+   [
+    "THREE THINGS TOGETHER MAKE THE DIAGNOSIS",
+    "SHE WAS IN AN AREA WHERE IT OCCURS · SHE WAS BUSHWALKING · AND SHE HAS A CHARACTERISTIC RASH WITH A SWOLLEN GLAND IN THE ARMPIT. Say the three out loud as your reasoning"
+   ],
+   [
+    "TREAT NOW, DO NOT WAIT FOR SEROLOGY",
+    "SEROLOGY IS FREQUENTLY NEGATIVE IN THE FIRST WEEKS. IF ERYTHEMA MIGRANS IS PRESENT WITH A COMPATIBLE EXPOSURE, TREAT IMMEDIATELY"
+   ],
+   [
+    "THE AUSTRALIAN POSITION, HANDLED GENTLY",
+    "LOCALLY ACQUIRED CLASSICAL LYME BORRELIOSIS IS NOT RECOGNISED IN AUSTRALIA — there is no accepted evidence that Borrelia burgdorferi is endemic here, SO A DIAGNOSIS REQUIRES TRAVEL TO AN ENDEMIC REGION. A comparable illness without that exposure is described as DSCATT. ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, OFFER STRUCTURED FOLLOW-UP"
+   ],
+   [
+    "THE AUSTRALIAN DIFFERENTIALS THAT OUTRANK IMPORTED ONES",
+    "In an Australian patient, ROSS RIVER VIRUS and BARMAH FOREST VIRUS — mosquito-borne alphaviruses causing POLYARTHRALGIA, MYALGIA AND PROFOUND FATIGUE LASTING MONTHS — are FAR MORE LIKELY THAN ANY IMPORTED INFECTION. Also Q FEVER from abattoir, farm and livestock exposure, and BRUCELLOSIS in feral-pig hunters"
+   ]
+  ],
+  "findingsLabel": "Version C — the rash on the card, and the eight questions the examiner is counting",
+  "must": [
+   "FAIL — 'Did you go bushwalking?' and nothing else. Two questions do not tick the box.",
+   "FAIL — Waiting for serology before treating a clear erythema migrans.",
+   "FAIL — Sending specimens to a non-accredited 'chronic Lyme' laboratory.",
+   "FAIL — Red flags asked selectively because the story looks infective.",
+   "ASK — Did you notice a tick, and did you pull it off?",
+   "ASK — Where exactly did you go, how long, and what activities did you do?"
+  ],
   "back": {
-   "dx": "Early localised Lyme disease (erythema migrans) — two weeks in Wisconsin visiting her sister, a lot of hiking in the woods, no bite remembered but 'found something on my arm afterwards'; now diffuse aches, fatigue ± low-grade fever, headache; examiner's photo: expanding red ring with central clearing (target/bullseye) on the forearm, tender axillary lymphadenopathy. Diagnosis is clinical: endemic exposure + characteristic rash; serology often negative in the first weeks (two-tier ELISA → Western blot) — do not withhold treatment for it. Doxycycline 100 mg bd for 10–21 days VERIFY; treat now to prevent disseminated disease (arthritis, carditis/heart block, facial palsy/meningitis).",
+   "dx": [
+    "**EARLY LYME DISEASE — infection with BORRELIA BURGDORFERI SENSU LATO, transmitted by IXODES TICKS in endemic regions of NORTH AMERICA, EUROPE AND PARTS OF ASIA, presenting early with ERYTHEMA MIGRANS AND A FLU-LIKE ILLNESS.**",
+    "**THE DISCRIMINATING ISSUE: THE COMPLETE TRAVEL HISTORY. THE EXAMINER HAS A SINGLE YES/NO BOX FOR IT, AND TWO QUESTIONS WILL NOT TICK IT EVEN WITH AN OTHERWISE STRONG PERFORMANCE.**",
+    "**TIE IT TO THE FINDINGS, THREE THINGS TOGETHER: 'I think you most likely have LYME DISEASE. It is a BACTERIAL INFECTION CARRIED BY TICKS. I'm saying that because of THREE THINGS TOGETHER: you were IN AN AREA WHERE IT OCCURS, you were BUSHWALKING, and you have A VERY CHARACTERISTIC RASH ON YOUR FOREARM WITH A SWOLLEN GLAND IN THE ARMPIT. IT RESPONDS WELL TO A COURSE OF ANTIBIOTIC TABLETS.'**",
+    "**TREATMENT: DOXYCYCLINE 100 mg TWICE DAILY FOR ERYTHEMA MIGRANS, usual duration 10 TO 21 DAYS. AMOXICILLIN OR CEFUROXIME if doxycycline is contraindicated — PREGNANCY, OR CHILDREN UNDER 8.** VERIFY against current Therapeutic Guidelines.",
+    "**WARN ABOUT TWO THINGS: PHOTOSENSITIVITY WITH DOXYCYCLINE, and a POSSIBLE JARISCH-HERXHEIMER REACTION IN THE FIRST 24 HOURS.** **DISCUSS WITH INFECTIOUS DISEASES IF THERE IS CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS.**",
+    "**TWO-TIER SEROLOGY — SCREENING EIA, THEN IMMUNOBLOT ON REACTIVE SAMPLES — AT AN AUSTRALIAN ACCREDITED LABORATORY. BUT DO NOT WAIT FOR IT: SEROLOGY IS FREQUENTLY NEGATIVE IN THE FIRST WEEKS, AND A COMPATIBLE EXPOSURE WITH ERYTHEMA MIGRANS IS TREATED CLINICALLY.**",
+    "**DO NOT SEND SPECIMENS TO OVERSEAS OR NON-ACCREDITED LABORATORIES OFFERING 'CHRONIC LYME' PANELS — RESULTS ARE UNVALIDATED AND DRIVE HARMFUL LONG-COURSE ANTIBIOTICS.**",
+    "**THE AUSTRALIAN POSITION: LOCALLY ACQUIRED CLASSICAL LYME BORRELIOSIS IS NOT RECOGNISED HERE, SO THE DIAGNOSIS REQUIRES TRAVEL TO AN ENDEMIC REGION. Patients with a comparable illness WITHOUT that exposure are described under DSCATT — DEBILITATING SYMPTOM COMPLEXES ATTRIBUTED TO TICKS. HANDLE IT GENTLY: ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, AND OFFER STRUCTURED FOLLOW-UP.** VERIFY current SA Health guidance and notifiable status.",
+    "**EIGHT DIFFERENTIAL GROUPS, ANNOUNCED BY NAME — AN UNSPOKEN STRUCTURE SCORES NOTHING: RED FLAGS AND MALIGNANCY · INFECTION · THE ARTHRITIDES · SOFT TISSUE AND MUSCLE · NEUROLOGICAL · ENDOCRINE AND METABOLIC · MEDICATIONS · PSYCHOSOCIAL LAST.** **RED FLAGS ARE UNCONDITIONAL — EVERY AGE, EVERY DURATION, however infective the story looks.**",
+    "**PREVENTION COUNSELLING FOR FUTURE TRAVEL: LONG SLEEVES · PERMETHRIN-TREATED CLOTHING · DEET · DAILY TICK CHECKS INCLUDING SCALP AND GROIN · AND CORRECT TICK REMOVAL — FREEZE IT, DON'T SQUEEZE IT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · pain now · open question · validate · concerns ('is it something I picked up over there?')"
+     "**WIPE, confirm her name, then: 'ARE YOU IN ANY PAIN RIGHT NOW? Would you like something for it before we talk?'** Then **confidentiality and an open question.**"
     ],
     [
-     "0:45",
-     "Aches: where, since when (a week), joints vs muscles, pattern, fatigue, fever/chills, headache, neck stiffness · ★ 'any rash anywhere?' → 'something on my arm' · face droop, palpitations, dizziness/blackouts, swollen joints"
+     "0:20",
+     "**Validate and frame: 'your pain is real and I take it seriously. Let me ask you some questions so I can work out what is going on, and then I'll explain what I think and what we do next.'**"
+    ],
+    [
+     "0:35",
+     "**EXPLORE THE PAIN: WHERE EXACTLY — JOINTS OR MUSCLES, NAME ME TWO OR THREE SPOTS · how long, sudden or gradual, constant or intermittent, getting worse · dull or sharp · does it travel · out of ten at its worst · anything better or worse · HOW IS IT AFFECTING YOUR LIFE?**"
+    ],
+    [
+     "1:15",
+     "**PATTERN: pain at night · worse in the morning or at the end of the day · worse with rest or activity · morning stiffness and HOW LONG.** Then **the MSK screen: SWELLING · REDNESS OR RASHES — and this is where the forearm gets mentioned · stiffness moving the joints · recent injury or trauma.**"
     ],
     [
      "1:45",
-     "★ 'You've just come back from the United States — I'd like to go through that carefully': A where/how long/activities (Wisconsin, 2 wk, sister) · ★ B bushwalking/hiking/camping — tick or insect bites (hiking in the woods; no bite remembered) · C sick/animal contacts · D drugs/alcohol · E blood exposure — tattoos, piercings, medical/dental procedures, transfusion · F street food/untreated water · G saw a GP before travel — vaccines, malaria tablets (no) · H sex overseas, condoms (no)"
+     "**SIGNPOST: 'I'm now going to run through a checklist of possible causes; some questions will sound unrelated, but I ask them of everyone with this problem.'**"
     ],
     [
-     "3:30",
-     "Sweep, brisk: weight loss, sweats, lumps · joints/swelling/psoriasis/FHx · meds/statin · girdle + GCA (age) · neuro · thyroid · mood/sleep briefly · SADMA · 'anything else you were hoping to discuss?'"
+     "1:50",
+     "**GROUP 1, RED FLAGS — UNCONDITIONAL EVEN THOUGH THE STORY LOOKS INFECTIVE: WEIGHT LOSS without trying · appetite · LUMPS OR BUMPS · unusually tired · NIGHT SWEATS SOAKING THE SHEETS · BONE PAIN, PARTICULARLY AT NIGHT.**"
     ],
     [
-     "4:45",
-     "Card/photo → ★ 'This is a target or bullseye lesion — erythema migrans — with regional lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States. That combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks.' · check: temperature, other rashes, cardiac rhythm, CN VII, neck stiffness, joints"
+     "2:10",
+     "**GROUP 2, INFECTION — and then STOP AND DO ALL EIGHT TRAVEL QUESTIONS: any FEVER OR CHILLS · any FLU-LIKE ILLNESS · contact with anyone unwell or with animals · sore throat with swollen glands.**"
     ],
     [
-     "5:45",
-     "★ 'I think you most likely have Lyme disease. It is a bacterial infection carried by ticks. I'm saying that because of three things together: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm along with a swollen gland in your armpit. The good news is it responds well to a course of antibiotic tablets — usually doxycycline, twice a day for two to three weeks. It makes the skin sun-sensitive, so be careful in the sun. If we treat it now, we prevent the later joint, heart and nerve complications.' · DDx: other tick-borne (anaplasmosis, babesiosis, RMSF), viral illness/influenza/COVID, EBV, cellulitis/tinea (ring), drug reaction, reactive arthritis, early RA, fibromyalgia"
+     "2:25",
+     "**TRAVEL A: WHERE EXACTLY DID YOU GO AND HOW LONG WERE YOU THERE? TELL ME ABOUT THE ACTIVITIES YOU DID. TRAVEL B: ANY BUSHWALKING OR CAMPING, AND DID YOU NOTICE ANY TICK OR INSECT BITES?**"
+    ],
+    [
+     "2:45",
+     "**Then DIRECTLY: 'DID YOU NOTICE A TICK, AND DID YOU PULL IT OFF?' — and how did you remove it?**"
+    ],
+    [
+     "2:55",
+     "**TRAVEL C: ANY CONTACT WITH SICK PEOPLE OR ANIMALS WHILE AWAY? TRAVEL D: ANY DRUGS, OR MUCH ALCOHOL? TRAVEL E: ANY EXPOSURE TO BLOOD — TATTOOS, PIERCINGS, MEDICAL OR DENTAL PROCEDURES, TRANSFUSION?**"
+    ],
+    [
+     "3:15",
+     "**TRAVEL F: ANY STREET FOOD OR UNTREATED WATER? TRAVEL G: DID YOU SEE A GP BEFORE TRAVELLING — VACCINES OR MALARIA TABLETS? TRAVEL H: DID YOU HAVE SEX WHILE OVERSEAS, AND DO YOU USE CONDOMS?**"
+    ],
+    [
+     "3:35",
+     "**GROUP 3, THE ARTHRITIDES, quickly: family history of arthritis · deformity · RASHES, SCALY PATCHES OR NAIL CHANGES · fingers changing colour in the cold · mouth ulcers, hair loss, sun sensitivity · recent diarrhoea or discharge · RED OR PAINFUL EYES?**"
+    ],
+    [
+     "3:55",
+     "**GROUP 4, SOFT TISSUE AND MUSCLE: ANY MEDICATIONS AT ALL, INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP · pain and stiffness across both shoulders and hips · struggling to get out of a chair, climb stairs or comb your hair?** Then **the GCA SCREEN given her age: NEW HEADACHE · SCALP TENDERNESS · JAW PAIN ON CHEWING · ANY CHANGE IN VISION.**"
+    ],
+    [
+     "4:20",
+     "**GROUP 5, NEUROLOGICAL — and it matters here because Lyme disseminates: HEADACHES · pins and needles or numbness · weakness · problems with walking or balance · ANY WEAKNESS OF THE FACE · change in speech or vision.** Then **GROUP 6, ENDOCRINE: cold intolerance, constipation, thirst, polyuria.**"
+    ],
+    [
+     "4:50",
+     "**GROUP 8, ANNOUNCED AS LAST: mood · sleep · who is at home and anything stressful · managing daily activities · and the self-harm question in long-standing pain.** Then **SADMA and close.**"
+    ],
+    [
+     "5:40",
+     "**Take the card. DESCRIBE THE RASH RATHER THAN NAMING IT FIRST — an expanding red lesion with central clearing on the forearm, WITH A TENDER AXILLARY NODE.**"
+    ],
+    [
+     "6:00",
+     "**NAME LYME DISEASE WITH THE THREE REASONS TOGETHER.** Then **the differentials by group name, each with a one-clause reason — and in an Australian patient, ROSS RIVER AND BARMAH FOREST FIRST.**"
     ],
     [
      "7:00",
-     "Plan: serology (baseline; repeat convalescent), FBE/LFT, ECG if palpitations/syncope · doxycycline 100 mg bd 10–21 d VERIFY (amoxicillin if pregnant/child <8) · sun protection, take with food/water, upright · Jarisch–Herxheimer warning (worse for 24 h) · safety-net: facial droop, severe headache/neck stiffness, palpitations/faints, swollen knee, spreading rash → same day · review 1–2 wk · notify? (Lyme not notifiable in SA — overseas-acquired; document) · 'friend says you can catch it in Australia' → honest answer"
+     "**THE PLAN: TREAT NOW WITH DOXYCYCLINE, DO NOT WAIT FOR SEROLOGY · two-tier serology at an ACCREDITED AUSTRALIAN LABORATORY · WARN ABOUT PHOTOSENSITIVITY AND THE JARISCH-HERXHEIMER REACTION · PREVENTION COUNSELLING for future travel · SAFETY-NET for CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'You mentioned you've just come back from the United States — I'd like to go through that carefully. Where exactly did you go, and how long were you there? What activities did you do?' / ★ 'Any bushwalking, hiking or camping — and did you notice any tick or insect bites?' / 'Any contact with sick people or animals while you were away?'",
-    "'Did you use any drugs, or drink much alcohol? Any exposure to blood — tattoos, piercings, medical or dental procedures, a transfusion? Any street food or untreated water? Did you see a GP before travelling — any vaccines or malaria tablets? Did you have sex while overseas, and do you use condoms?'",
-    "'Any rash anywhere, even one you thought was a bite? Any fever, headache or stiff neck? Any drooping of the face? Any racing or skipping of the heart, or faints? Any swollen joints, particularly a knee?'",
-    "★ To examiner: 'This is a target or bullseye lesion — erythema migrans — with regional lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States. That combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks.'",
-    "★ 'I think you most likely have Lyme disease — a bacterial infection carried by ticks. Three things together tell me that: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm with a swollen gland in your armpit. It responds well to antibiotic tablets — usually doxycycline, twice a day for two to three weeks. It makes the skin sun-sensitive, so please be careful in the sun. Treating it now prevents the later joint, heart and nerve complications.'",
-    "'A friend told me you can catch Lyme disease in Australia' → ★ 'Classical Lyme disease has not been shown to be acquired within Australia — the ticks that carry it aren't established here. In your case the travel history is what makes the diagnosis. Where people have these symptoms without overseas travel, we take them just as seriously and investigate them properly, but we don't use overseas laboratories whose tests haven't been validated.'",
-    "'Come back straight away if you get a drooping face, a severe headache or stiff neck, palpitations or faints, a swollen knee, or the rash spreads — and expect to feel a little worse for the first day of the antibiotic; that settles.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 57 F, two weeks in Wisconsin visiting her sister, lots of hiking in the woods, no remembered bite, 'found something on my arm afterwards'; nobody sick, no drugs, no tattoos/procedures, normal food, no pre-travel GP, no sex overseas. Diffuse aches and tiredness ~1 week. Volunteers the rash only if asked about rash or bites. Pushes once: 'a friend told me you can catch Lyme in Australia'",
-    "Photo/card: expanding erythematous annular lesion with central clearing on the forearm (erythema migrans, typically ≥5 cm, appears 3–30 days after the bite), tender axillary lymphadenopathy; afebrile or low-grade; joints/neuro/cardiac normal in the base version",
-    "Lyme stages: early localised (EM, flu-like) → early disseminated weeks–months (multiple EM, facial palsy, meningitis, carditis/AV block, migratory arthralgia) → late (mono/oligoarthritis esp knee, encephalopathy, acrodermatitis). Serology: two-tier (EIA → immunoblot), often negative <4 wk; not needed for EM with exposure. Coinfections in Upper Midwest: anaplasmosis, babesiosis",
-    "Treatment VERIFY TG/CDC: doxycycline 100 mg bd 10 d (EM) to 21 d; amoxicillin 500 mg tds 14 d or cefuroxime if doxycycline contraindicated; IV ceftriaxone for neuro/cardiac disease · Jarisch–Herxheimer · single-dose doxycycline 200 mg prophylaxis only within 72 h of an attached endemic tick VERIFY · Australia: no established locally-acquired Lyme; 'Debilitating Symptom Complexes Attributed to Ticks' (DSCATT) framework; Australian tick issues = tick paralysis, Q fever, rickettsial spotted fevers, mammalian meat allergy",
-    "Trap: two travel questions and moving on — the marked item is the full eight; missing the rash question; waiting for serology before treating; dismissing or endorsing Australian Lyme; forgetting sun protection with doxycycline",
-    "SA: notifiable? — Lyme is not on the SA notifiable list; document overseas acquisition · Public Health enquiries 1300 232 272 · MedSTAR 1300 13 12 33 if carditis/heart block from a rural site",
-    "Trap — Two travel questions and moving on — the marked item is the full eight; missing the rash question; waiting for serology before treating; dismissing or endorsing Australian Lyme; forgetting sun protection with doxycycline",
-    "SA — Notifiable? — Lyme is not on the SA notifiable list; document overseas acquisition · Public Health enquiries 1300 232 272 · MedSTAR 1300 13 12 33 if carditis/heart block from a rural site"
+    "**Bedside: temperature, BP, weight, urine dipstick, BSL. INSPECT THE WHOLE SKIN — disseminated lesions are SMALLER AND LESS WELL FORMED than the primary — AND PALPATE ALL NODE GROUPS.**",
+    "**Bloods: FBE, ESR AND CRP, UEC, LFT, TSH, CK, corrected calcium, 25-OH vitamin D.** **TWO-TIER LYME SEROLOGY — SCREENING EIA THEN IMMUNOBLOT — AT AN AUSTRALIAN ACCREDITED LABORATORY.** **Add ARBOVIRUS SEROLOGY, Q FEVER AND BRUCELLOSIS by exposure, and EBV, HEPATITIS AND HIV SEROLOGY where the risk history fits.**",
+    "**TREAT IMMEDIATELY AND DO NOT WAIT FOR THE RESULT when erythema migrans is present with a compatible exposure: DOXYCYCLINE 100 mg TWICE DAILY FOR 10–21 DAYS. AMOXICILLIN OR CEFUROXIME in pregnancy or children under 8.** VERIFY.",
+    "**Do not miss: CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS in early disseminated disease — discuss with INFECTIOUS DISEASES · GIANT CELL ARTERITIS in any patient over 50 with girdle pain and headache · MALIGNANCY, because RED FLAGS ARE UNCONDITIONAL HOWEVER INFECTIVE THE STORY LOOKS.**",
+    "**Avoid: SENDING SPECIMENS TO OVERSEAS OR NON-ACCREDITED LABORATORIES OFFERING 'CHRONIC LYME' PANELS — UNVALIDATED RESULTS THAT DRIVE HARMFUL LONG-COURSE ANTIBIOTICS · ordering ANA, RF or an autoimmune screen as a fishing expedition · saying 'all your tests are normal, so there is nothing wrong'.**",
+    "**Tick removal advice: FREEZE IT, DON'T SQUEEZE IT — an ether-containing spray, or FINE-TIPPED FORCEPS GRASPING CLOSE TO THE SKIN. DO NOT TWIST, BURN OR APPLY CHEMICALS, WHICH PROMOTE REGURGITATION OF GUT CONTENTS.**",
+    "**Prevention for future travel: LONG SLEEVES, PERMETHRIN-TREATED CLOTHING, DEET, DAILY TICK CHECKS INCLUDING SCALP AND GROIN.** **On Yorke Peninsula, Q FEVER is a live differential — abattoir, shearing, livestock and feral-animal exposure — and remember Q FEVER VACCINATION STATUS for at-risk workers.** VERIFY notifiable-conditions status."
    ],
-   "fails": [
-    "★ A two-question travel history — the station is the eight named questions",
-    "Never asking about rash, bites or bushwalking; not linking Wisconsin + woods + ring rash aloud",
-    "Ordering serology and telling her to wait for it before treatment — early serology is often negative",
-    "Not naming doxycycline, its duration, or the sun warning; no red flags for disseminated disease (facial palsy, heart block, meningitis, arthritis)",
-    "Answering the 'Lyme in Australia' question with a flat yes or a dismissive no",
-    "Running the fibromyalgia psychosocial block for six minutes on a patient with an infectious rash"
-   ],
-   "numbers": [
-    "EM appears 3–30 d after the bite · ≥5 cm expanding ring · serology often negative <4 wk · treat clinically",
-    "Doxycycline 100 mg bd 10–21 d VERIFY · amoxicillin 500 mg tds 14 d if contraindicated · prophylaxis 200 mg single dose within 72 h VERIFY · Herxheimer first 24 h",
-    "Eight travel questions: where/how long/activities · hiking/camping/bites · sick/animal contacts · drugs/alcohol · blood exposure · food/water · pre-travel GP · sex/condoms",
-    "SA Public Health 1300 232 272 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Early Lyme disease** — the answer",
+     "**Travel to an ENDEMIC AREA, BUSHWALKING, TICK BITE, ERYTHEMA MIGRANS, REGIONAL LYMPHADENOPATHY, flu-like illness**",
+     "**COMPLETE travel history; inspect the skin; palpate nodes**",
+     "**Two-tier serology at an ACCREDITED AUSTRALIAN LAB — BUT TREAT CLINICALLY IF ERYTHEMA MIGRANS IS PRESENT** — treat now"
+    ],
+    [
+     "**Ross River and Barmah Forest virus**",
+     "**In an AUSTRALIAN patient these are FAR MORE LIKELY than any imported infection — POLYARTHRALGIA, MYALGIA AND PROFOUND FATIGUE LASTING MONTHS**",
+     "Mosquito exposure; domestic travel",
+     "Arbovirus serology — routine"
+    ],
+    [
+     "**Q fever · brucellosis**",
+     "**ABATTOIR, FARM, SHEARING AND LIVESTOCK EXPOSURE — highly relevant on Yorke Peninsula**; brucellosis in FERAL-PIG HUNTERS",
+     "**Occupational and animal contact; Q FEVER VACCINATION STATUS**",
+     "Q fever and brucella serology — routine"
+    ],
+    [
+     "**Other travel-acquired infection**",
+     "**Street food, untreated water, blood exposure, sexual contact overseas**",
+     "**The remaining travel questions — E, F, G AND H**",
+     "Directed by the exposure; malaria films if febrile from an endemic region — treat now if indicated"
+    ],
+    [
+     "**Chronic viral infection — EBV, hepatitis B and C, HIV, long COVID**",
+     "Preceding febrile illness, sore throat, **sexual and injecting risk**, persistent fatigue",
+     "**SECONDARY SYPHILIS AND HIV SEROCONVERSION BOTH CAUSE MYALGIA — keep the sexual history**",
+     "Monospot and EBV serology, hepatitis and HIV serology, FBE, LFT — routine"
+    ],
+    [
+     "**Malignancy — myeloma, leukaemia, lymphoma**",
+     "**Age over 50, BONE PAIN WORSE AT NIGHT, weight loss, ANAEMIA, HYPERCALCAEMIA**",
+     "**RED FLAGS ARE UNCONDITIONAL, HOWEVER INFECTIVE THE STORY LOOKS**",
+     "FBE, ESR, calcium, renal function, **SPEP and free light chains** — URGENT"
+    ],
+    [
+     "**Polymyalgia rheumatica and giant cell arteritis**",
+     "**Age 50 or over with BILATERAL GIRDLE pain and prolonged morning stiffness**",
+     "**New headache, scalp tenderness, jaw claudication, VISUAL CHANGE**",
+     "ESR and CRP; **TREAT FIRST IF ANY GCA FEATURE** — EMERGENCY"
+    ],
+    [
+     "Rheumatoid and other inflammatory arthritis",
+     "Symmetrical small-joint swelling; rash, nail pitting, dactylitis; recent diarrhoea or urethritis",
+     "**SWELLING, NOT JUST PAIN**; nails, eyes, bowels",
+     "RF, anti-CCP, ESR/CRP; targeted serology only — semi-urgent"
+    ],
+    [
+     "Statin myopathy · hypothyroidism · hypercalcaemia · vitamin D deficiency",
+     "Proximal aching with a recent statin; **cold intolerance and constipation**; thirst and polyuria",
+     "Full medication list; thyroid examination; proximal power",
+     "CK; **TSH — HYPOTHYROIDISM CAUSES A TRUE MYOPATHY**; corrected calcium with PTH; 25-OH vitamin D"
+    ],
+    [
+     "**DSCATT** · fibromyalgia · somatic symptom disorder",
+     "**A LYME-LIKE ILLNESS WITHOUT TRAVEL TO AN ENDEMIC REGION**; or widespread pain with no pattern and normal markers",
+     "**Exposure history is what decides this — CLASSICAL LYME IS NOT ACQUIRED IN AUSTRALIA**",
+     "**ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, OFFER STRUCTURED FOLLOW-UP.** Psychosocial assessment ONLY after the organic sweep"
+    ]
    ]
   },
   "source": "Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf §6 Version C (57-year-old woman back from hiking in Wisconsin, bullseye rash and axillary node — early Lyme disease; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Medicine MSK › Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Photo/card",
-    "Expanding erythematous annular lesion with central clearing on the forearm (erythema migrans, typically ≥5 cm, appears 3–30 days after the bite), tender axillary lymphadenopathy; afebrile or low-grade; joints/neuro/cardiac normal in the base version"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — A two-question travel history — the station is the eight named questions: 'you've just come back from the United States — I'd like to go through that carefully': A where, how long, activities (hiking in the woods); B bushwalking, camping, tick or insect bites ('I found something on my arm afterwards'); C sick or animal contacts; D drugs, alcohol; E blood exposure — tattoos, piercings, procedures, transfusion; F street food, untreated water; G pre-travel GP, vaccines, malaria tablets; H sex overseas, condoms (★)",
-   "DO — Aches: where, since when (a week), joints or muscles, pattern, fatigue, fever or chills, headache, neck stiffness; then the serious-cause, joint, nerve and psychosocial groups still run — this is the same consultation shape with a different key clue",
-   "DO — To the examiner, describe before naming: 'this is a target or bullseye lesion — erythema migrans — with regional axillary lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States; that combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks'",
-   "SAY — 'I think you most likely have Lyme disease — a bacterial infection carried by ticks — for three things together: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm with a swollen gland in your armpit'",
-   "SAY — 'It responds well to antibiotic tablets — doxycycline, twice a day for two to three weeks; it makes the skin sun-sensitive; treating now prevents the later joint, heart and nerve complications' (erythema migrans 3–30 days after the bite; doxycycline 100 mg bd for 10–21 days — verify doses)",
-   "DO — If she says 'a friend told me you can catch Lyme disease in Australia': 'classical Lyme disease hasn't been shown to be acquired within Australia — the ticks that carry it aren't established here; in your case the travel history is what makes the diagnosis; people with these symptoms without travel are taken just as seriously and investigated properly, but we don't use overseas laboratories whose tests aren't validated'; safety-net for facial weakness, palpitations, joint swelling"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-112",
@@ -48503,7 +48630,6 @@ const EMBEDDED_CARDS = [
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "HISTORY, EXAMINATION CARD AND MANAGEMENT — rural general practice. THE CASE IS BUILT TO TEMPT 'VIRAL URTI, GO HOME': the card shows a mildly red throat and nothing else, and A MILDLY RED THROAT DOES NOT EXPLAIN A DROWSY CHILD. Interpret the vitals ALOUD as abnormal for age — the interpretation is the mark, not the reading. FOUR AUTOMATIC FAILS: diagnosing tonsillitis or a viral illness and discharging; agreeing to oral antibiotics at home; sending the child by private car without discussion; and NEVER SAYING THE WORD SEPSIS.",
   "stem": [
    "General practice, Wallaroo (nearest ED five minutes, the Women's and Children's in Adelaide two hours by road). NOAH, 18 MONTHS, brought for an urgent appointment by his father with FEVER AND VOMITING FOR 24 HOURS — and the father says he has been 'UNRESPONSIVE'.",
    "Vitals on request: T 39.4 — HR 168 — RR 38 — SpO2 96% air — CAPILLARY REFILL 3 SECONDS — weight 11 kg. History six minutes with a prompt, then the examination card, then two minutes on investigations and management."
@@ -48513,123 +48639,254 @@ const EMBEDDED_CARDS = [
    "Read the examination findings, which are given on a card",
    "Explain your immediate investigations and management to the father (2 minutes)"
   ],
-  "time": "ASK FOR THE OBSERVATIONS FIRST AND SAY WHAT THEY MEAN · 'his heart rate and circulation are ABNORMAL FOR AN 18-MONTH-OLD, so I'll be quick and thorough' · OPEN QUESTION · TIMING OF ALL THREE SYMPTOMS separately and whether each is worsening · the fever measured and whether paracetamol helps · THE VOMIT: any GREEN, any BLOOD, is anything staying down · CLARIFY 'UNRESPONSIVE' IN THREE OPTIONS: sleepy and hard to wake, floppy and not responding, or FITTING · sudden or gradual · THREE SEIZURE QUESTIONS: jerking, eyes rolling up, wet or soiled · THEN THE FEVER SPINE, source by source: ears, nose, drooling, CHANGE IN THE CRY OR VOICE, neck lumps; RASH AND THE GLASS TEST; cough, fast breathing, recession; contacts and travel; diarrhoea, blood in the stool, drawing the legs up; urinary symptoms; and MENINGISM asked as DISLIKE OF BEING PICKED UP, dislike of light, neck stiffness · WELL-BABY QUESTIONS WITH NUMBERS: drinking, WET NAPPIES IN TWELVE HOURS, bowels, alert or drowsy · joints and Kawasaki features · THEN TARGETED BINDSMA · READ THE CARD BACK IN ONE LINE · SAY THE WORD SEPSIS AND SAY HOSPITAL NOW · then the four-part plan in order.",
   "findings": [
    [
-    "Conscious state",
-    "Drowsy but rousable — whimpers on handling — poor eye contact"
+    "★ VITALS ON REQUEST — and READING THEM IS NOT THE MARK, INTERPRETING THEM IS",
+    "T 39.4 °C · HR 168 · RR 38 · SpO2 96% air · CRT 3 s · weight 11 kg. Say it out loud: 'HEART RATE 168 AND CAPILLARY REFILL 3 SECONDS ARE ABNORMAL FOR AN 18-MONTH-OLD' — RCH upper limits are HR 150 and RR 40 for 1–4 years"
    ],
    [
-    "General",
-    "Hot and flushed"
+    "★ THE EXAMINATION CARD AT 6 MINUTES — the designed distractor",
+    "Drowsy, rousable, WHIMPERS ON HANDLING, POOR EYE CONTACT. Hot, flushed. MILD PHARYNGEAL ERYTHEMA, tonsils not enlarged, no exudate. Tympanic membranes normal. NO RASH. No neck stiffness. Fontanelle closed. Chest clear. Abdomen soft. DRY LIPS, REDUCED SKIN TURGOR, CRT 3 s. No joint swelling"
    ],
    [
-    "Throat",
-    "MILD PHARYNGEAL ERYTHEMA — tonsils NOT enlarged, NO exudate"
+    "What the card is FOR",
+    "The drowsiness sits in the HISTORY and the only positive on the card is a mildly red throat. THE CASE IS BUILT TO TEMPT 'viral URTI, go home'"
    ],
    [
-    "Ears",
-    "Tympanic membranes NORMAL"
+    "The history he gives",
+    "Fever two nights, 39 on the ear thermometer, PANADOL HELPS FOR AN HOUR. Vomiting since yesterday, six times, MILKY THEN CLEAR — no green, no blood. NOTHING KEPT DOWN SINCE THIS MORNING. Floppy since about 6 am"
    ],
    [
-    "Skin",
-    "No rash"
+    "★ 'UNRESPONSIVE' CLARIFIED",
+    "'SLEEPY AND FLOPPY. He wakes when I pick him up but he just cries and shuts his eyes.' GRADUAL over the morning. NO jerking, NO eye rolling, NO incontinence — so NOT post-ictal"
    ],
    [
-    "Chest",
-    "Clear"
+    "The soft signs he gives",
+    "Runny nose a few days ago. NO drooling. HIS CRY HAS GONE WEAK AND SQUEAKY. No cough but HE'S BREATHING FAST. No rash. No diarrhoea. HE CRIES WHEN PICKED UP"
    ],
    [
-    "Abdomen",
-    "SOFT, no mass"
+    "★ THE WELL-BABY ANSWERS — only if you ask, and only in numbers",
+    "TWO WET NAPPIES SINCE LAST NIGHT. NOT DRINKING. Drowsy. 'Wees seem normal — but there haven't been many'"
    ],
    [
-    "Hydration and perfusion",
-    "Dry lips — reduced skin turgor — capillary refill 3 seconds"
+    "★ THE TEMPTING RED HERRING",
+    "'He had a FIT WITH A FEVER at 14 months — they said febrile convulsion.' Hearing this and switching to a febrile-convulsion spine is the named trap. NO SEIZURE FEATURES TODAY — say so out loud and stay on sepsis"
    ],
    [
-    "Joints",
-    "No swelling"
+    "Background",
+    "Term. FULLY IMMUNISED including the 18-month doses last month. Growing fine. No medicines, no allergies. Daycare three days a week. Lives with both parents and a 4-year-old sister"
    ],
    [
-    "What the card is doing",
-    "OFFERING YOU A MILDLY RED THROAT AS THE SOURCE — and it does NOT explain a drowsy, floppy child with a refill of three seconds"
+    "★ HIS HIDDEN AGENDA",
+    "He cannot get hold of his wife Jess and THE UTE IS LOADED FOR A JOB — so when the ambulance is raised he says 'I'LL DRIVE HIM, IT'S FIVE MINUTES.' He backs down if you explain WHY"
+   ],
+   [
+    "His three scripted reactions",
+    "'Sepsis? HE'S ONLY GOT A COLD.' · 'CAN'T YOU JUST GIVE HIM ANTIBIOTICS HERE?' · 'IS HE GOING TO DIE?' And if you never mention fluids: 'He won't drink — what about that?'"
+   ],
+   [
+    "If you say 'tonsillitis, go home'",
+    "He replies 'Okay… BUT WHY IS HE SO FLOPPY?' — and the station is marked a FAIL"
+   ],
+   [
+    "VARIANT — purpuric spots on the legs",
+    "MENINGOCOCCAL DISEASE until proven otherwise. CEFTRIAXONE 50 mg/kg INTRAMUSCULARLY RIGHT NOW, before the ambulance; notify SA Health today; household contacts need prophylaxis"
+   ],
+   [
+    "Other practice cards",
+    "Smelly urine and screaming at nappy changes → still sepsis, urosepsis likely, CATHETER urine · jerking for 3 minutes at 6 am then sleepy → a febrile convulsion, BUT drowsy four hours later with these vitals is sepsis or meningitis until proven otherwise · fever SIX days with red eyes, cracked lips and peeling fingers → KAWASAKI (needs ≥5 days), echo and IVIG · unimmunised → Hib, pneumococcal and meningococcal all back on the table, higher urgency"
    ]
   ],
   "back": {
-   "dx": "SEPSIS UNTIL PROVEN OTHERWISE in an 18-month-old — fever 39.4 with tachycardia at 168 (the limit is about 150 between one and four years), tachypnoea, CAPILLARY REFILL OF THREE SECONDS, drowsy and floppy with poor eye contact and a WEAK HIGH-PITCHED CRY, not drinking, and only TWO WET NAPPIES SINCE LAST NIGHT. THE SENTENCE THAT CARRIES THE STATION: 'I am very concerned that Noah has SEPSIS — a serious infection that has spread into his blood and is affecting his whole body. The reasons are his high fever, that he is drowsy and floppy, his heart is racing, his circulation is slow, and he isn't drinking or passing much urine. THE SLIGHTLY RED THROAT DOES NOT EXPLAIN HOW UNWELL HE IS. This needs the hospital, now.' THE PLAN IN FOUR PARTS, NAMING ACTIONS RATHER THAN A REFERRAL: (1) MY NURSE IS CALLING AN AMBULANCE NOW — ring the emergency department so they are ready, and if he needs Adelaide THE RETRIEVAL TEAM COMES TO HIM; (2) the work-up: blood count, INFECTION MARKERS AND A BLOOD CULTURE, a urine sample, possibly a chest X-ray, and ONCE HE IS STABLE possibly a lumbar puncture; (3) ANTIBIOTICS INTO A VEIN WITHIN THE HOUR — AND IF THE AMBULANCE IS DELAYED, THE FIRST DOSE HERE AS AN INJECTION — plus intravenous fluids because he is dry and cannot drink, and paracetamol for comfort; (4) continuous monitoring by the paediatric team. Then honestly: 'he is seriously unwell, but WE'VE CAUGHT IT AND WE'RE STARTING TREATMENT NOW, which is what matters most.' Ask him to ring the mother to meet them there, and stay with the child until the ambulance arrives. IF THE CARD SHOWS PURPURIC SPOTS: meningococcal disease until proven otherwise — CEFTRIAXONE 50 mg/kg INTRAMUSCULARLY RIGHT NOW, BEFORE the ambulance, notify SA Health today, and household contacts need clearance antibiotics. THE FEBRILE CONVULSION AT 14 MONTHS IS A DECOY: there are no seizure features today — say so out loud and STAY ON SEPSIS.",
+   "dx": [
+    "**SEPSIS UNTIL PROVEN OTHERWISE — fever plus altered conscious state plus tachycardia plus prolonged capillary refill plus dehydration, with NO adequate source. THE MILD RED THROAT IS THE DESIGNED DISTRACTOR.**",
+    "**★ THE PASS LINE, said to the father despite the card: 'A MILDLY RED THROAT DOES NOT EXPLAIN A DROWSY, TACHYCARDIC, POORLY PERFUSED CHILD. Fever with drowsiness is sepsis until proven otherwise, and I am sending him to hospital now.'** **Candidates who anchor on the card diagnose tonsillitis and send the child home with paracetamol — the critical error.**",
+    "**The second discriminator is ORDERING, named as ACTIONS: transfer → investigations → antibiotics → fluids → monitoring.** **Opening with 'I would refer to a paediatrician' is a named fail — the referral is HOW they happen, not WHAT you are doing.**",
+    "**DEFINITIONS: SEPSIS is suspected or proven infection with life-threatening organ dysfunction. SEPTIC SHOCK is sepsis with cardiovascular dysfunction — and HYPOTENSION IS LATE IN CHILDREN. Tachycardia, CRT over 2 seconds, cool or mottled peripheries and altered conscious state all come FIRST.**",
+    "**RCH AGE-ADJUSTED LIMITS, so you can say 'abnormal for age': HR under 1 yr 160 · 1–4 yr 150 · 5–11 yr 130. RR under 1 yr 50 · 1–4 yr 40 · 5–11 yr 30. CRT over 2 s is abnormal.** Noah at 168 and 3 seconds ticks every column except rash. VERIFY",
+    "**★ THREE THINGS THE LECTURE SKIPS THAT THE AMC MARKS: 1. FLUID INTAKE AND URINE OUTPUT IN NUMBERS — wet nappies in 12 hours. 2. IMMUNISATION STATUS including pneumococcal and meningococcal — an unimmunised febrile drowsy child changes the antibiotic AND the urgency. 3. A PREVIOUS FEBRILE CONVULSION, which tempts you to call this post-ictal. NO SEIZURE FEATURES TODAY = NOT POST-ICTAL, and saying that out loud is the mark.**",
+    "**THE DIAGNOSIS SENTENCE TO THE FATHER, in his words**: **'I am very concerned that Noah has SEPSIS — a serious infection that has spread into his blood and is affecting his whole body. The reasons are his high fever, that he is drowsy and floppy, his heart is racing, his circulation is slow, and he isn't drinking or passing much urine. The slightly red throat does not explain how unwell he is. This needs the hospital, NOW.'**",
+    "**THE FOUR-PART PLAN. ONE — my nurse is calling an ambulance now, I'll ring the emergency department so they're ready, and if he needs the children's hospital in Adelaide the retrieval team will come to him. TWO — blood count, infection markers and a BLOOD CULTURE, a urine sample, possibly a chest X-ray, and once he's stable possibly a lumbar puncture. THREE — ANTIBIOTICS STRAIGHT INTO A VEIN WITHIN THE HOUR, and IF THE AMBULANCE IS DELAYED I WILL GIVE THE FIRST DOSE HERE AS AN INJECTION, plus IV fluids because he is dry and can't drink, and paracetamol. FOUR — continuous monitoring by the paediatric team. MOST CHILDREN TREATED THIS EARLY DO VERY WELL.**",
+    "**DOSES: CEFTRIAXONE 50 mg/kg (max 2 g) IV or IM once daily — 100 mg/kg (max 4 g) IF MENINGITIS IS SUSPECTED. Benzylpenicillin 60 mg/kg IV if under 3 months, or if only penicillin is available for meningococcal disease. Vancomycin 15 mg/kg if septic shock or MRSA risk. Aciclovir 20 mg/kg 8-hourly if encephalitis is suspected. Fluid bolus 20 mL/kg 0.9% sodium chloride (10 mL/kg if cardiac concern) — 220 mL for Noah. Paracetamol 15 mg/kg, max 1 g.** VERIFY **ANTIBIOTICS WITHIN 60 MINUTES. LP is deferred if drowsy or unstable; ANTIBIOTICS ARE NEVER DEFERRED.**",
+    "**WHEN HE SAYS 'I'LL DRIVE HIM, IT'S FIVE MINUTES'**: **'I know it's close. If Noah gets worse in the car you'd be alone with him at the wheel; in the ambulance a paramedic is with him with oxygen and monitoring the whole way, and they can bypass the waiting room. Please let us do it this way — I'll ring the department now.'** **And when he asks 'is he going to die?': 'he is seriously unwell, but we've caught it and we're starting treatment now, which is what matters most.'** SA: **000 to Wallaroo Hospital (Yorke and Northern LHN)**; **MedSTAR 1300 13 12 33** for retrieval advice and the WCH on-call paediatric consult; **RFDS**; **WCH PICU** is the tertiary destination; **notifiable — meningococcal, invasive pneumococcal and Hib — SA Health CDCB 1300 232 272**; **Aboriginal children have higher rates of invasive disease and rheumatic fever** — involve the ACCHS and Aboriginal Health Practitioner and check the extra NIP doses; **TIS National 131 450**; **Parent Helpline SA 1300 364 100**; **PATS**."
+   ],
    "plan": [
     [
      "0:00",
-     "VITALS FIRST, AND INTERPRET THEM: 'could I have Noah's observations? ... 39.4, heart rate 168, breathing 38, oxygen 96, capillary refill 3 seconds. HIS HEART RATE AND CIRCULATION ARE ABNORMAL FOR AN 18-MONTH-OLD, so I'll be quick and thorough.' Then the open question: 'tell me what's been happening.' → 'fever and vomiting for two days and now he's floppy and won't look at me. I THINK IT'S GASTRO. CAN YOU GIVE HIM SOMETHING?' (Reading the numbers without saying they are abnormal loses the mark.)"
+     "**★ ASK FOR THE VITALS BEFORE YOU GREET ANYONE, AND INTERPRET THEM**: **'could I have Noah's observations, please? … 39.4, heart rate 168, breathing 38, oxygen 96, capillary refill 3 seconds. HIS HEART RATE AND CIRCULATION ARE ABNORMAL FOR HIS AGE, so I'll be efficient.'** **Reading them without comment loses the mark.**"
     ],
     [
-     "0:45",
-     "TIMING OF ALL THREE, SEPARATELY: 'when did the fever, the vomiting and the floppiness EACH start — and is it getting worse?' Then 'have you measured the temperature? Paracetamol — did it help?' Then THE VOMIT: 'any green? Any blood? Is he keeping anything down?'"
+     "0:30",
+     "**Then the father, briefly**: **'hello, I'm Dr ___ — you must be Noah's dad. I can see you're worried. Tell me what's been happening.'** *Fever and vomiting two days, now floppy, 'I think it's gastro, can you give him something?'*"
     ],
     [
-     "1:45",
-     "CLARIFY 'UNRESPONSIVE' — three options, then the seizure questions: 'when you say unresponsive — is he SLEEPY AND HARD TO WAKE, FLOPPY AND NOT RESPONDING, or has he been FITTING?' → 'sleepy and floppy, wakes when I pick him up, cries and shuts his eyes.' Then 'sudden or gradual?' and 'any JERKING? EYES ROLLING UP? WET OR SOILED himself?'"
+     "0:50",
+     "**TIMING OF ALL THREE SYMPTOMS TOGETHER**: **'when did the fever, the vomiting and the floppiness each start — and is it getting worse?'** Two nights, yesterday, 6 am, and worse."
     ],
     [
-     "2:45",
-     "THE FEVER SPINE, hunting the source: ears, runny nose, DROOLING, CHANGE IN THE CRY OR VOICE, neck lumps → 'his cry has gone WEAK AND SQUEAKY'. RASH: 'any spots that don't fade under a glass?' Chest: cough, noisy or fast breathing, recession → 'no cough, but he's breathing fast'. Contacts and travel. GI: diarrhoea, blood, drawing the legs up. URINARY: crying on weeing, smelly urine. MENINGISM WITHOUT THE JARGON: 'does he DISLIKE BEING PICKED UP? Does he turn away from the light? Is his neck stiff?' → 'HE CRIES WHEN I PICK HIM UP.'"
+     "1:15",
+     "**FEVER**: **'have you measured it — how high? Have you given paracetamol or ibuprofen, and did it help?'** 39, Panadol works for an hour."
+    ],
+    [
+     "1:30",
+     "**VOMITING — three questions, and the colour one is non-negotiable**: **'what colour is it — ANY GREEN? Any blood? IS HE KEEPING ANYTHING DOWN?'** Milky then clear, no green, no blood, nothing since this morning."
+    ],
+    [
+     "1:55",
+     "**★ CLARIFY 'UNRESPONSIVE' — do not assume**: **'when you say unresponsive — is he SLEEPY AND HARD TO WAKE, FLOPPY AND NOT RESPONDING, or was he FITTING?'** Sleepy and floppy, wakes and cries then shuts his eyes."
+    ],
+    [
+     "2:15",
+     "**SUDDEN OR GRADUAL, THEN THE THREE SEIZURE QUESTIONS**: **'did it come on suddenly or gradually? Any jerking of the arms or legs? Eyes rolling up? Did he wet or soil himself?'** Gradual; no to all three."
+    ],
+    [
+     "2:40",
+     "**FEVER SPINE — ENT**: **'pulling at his ears? Runny nose? DROOLING? Any change in his voice or cry? Lumps in the neck?'** *Runny nose a few days ago; CRY WEAK AND SQUEAKY.* **Note that — it is a sepsis sign, not an ENT one.**"
+    ],
+    [
+     "3:00",
+     "**RASH — ask for the glass test by name**: **'any rash at all — especially spots that DON'T FADE when you press a glass on them?'** None. **CHEST**: cough, noisy or fast breathing, sucking in under the ribs. *No cough but breathing fast.*"
+    ],
+    [
+     "3:25",
+     "**CONTACTS AND GI**: anyone unwell at home or daycare, travel · diarrhoea, blood in the stool, drawing his legs up. **URINE**: **'crying or upset when he wees or at nappy changes? Smelly urine?'**"
+    ],
+    [
+     "3:50",
+     "**MENINGITIS AND SEPSIS BLOCK**: **'does he dislike being handled or picked up? Does he dislike the light? Is his neck stiff? Is the soft spot bulging?'** *Cries when picked up.* **Neck stiffness is unreliable under 2 and the fontanelle is closed at 18 months — say so.**"
     ],
     [
      "4:15",
-     "WELL-BABY WITH NUMBERS, then the rest: 'is he drinking? HOW MANY WET NAPPIES IN THE LAST TWELVE HOURS? Bowels? Alert or drowsy?' → 'two, and he won't drink.' Then joints and limping, then KAWASAKI features — red eyes, cracked lips, swollen hands or feet. Then targeted BINDSMA: term birth, IMMUNISATIONS UP TO DATE, growth, medicines and allergies, PREVIOUS FITS, who is at home → 'he had a fit with a fever at 14 months' → NAME IT AND MOVE ON: 'that was a febrile convulsion; there are NO seizure features today, so this is different.'"
+     "**★ THE WELL-BABY QUESTIONS, IN NUMBERS**: **'is he drinking? HOW MANY WET NAPPIES IN THE LAST TWELVE HOURS? Bowels? Is he alert and active, or drowsy?'** **TWO wet nappies, not drinking, drowsy.**"
+    ],
+    [
+     "4:40",
+     "**JOINTS AND KAWASAKI, ten seconds each**: swollen or red joints, limping or not weight-bearing · **red eyes, red cracked lips, swollen hands or feet** — and **Kawasaki needs five days of fever; he is on day two.**"
+    ],
+    [
+     "5:00",
+     "**BINDSMA, TARGETED**: term birth · **immunisations up to date including the 18-month doses** · growing and developing well · medicines and allergies · **'has he ever had a fit?'** · who's at home."
+    ],
+    [
+     "5:20",
+     "**★ WHEN THE FEBRILE CONVULSION COMES, NAME IT AND DISMISS IT**: **'that fit last year was a febrile convulsion; there are NO seizure features today, so this is different.'** **Switching to a febrile-convulsion spine here is the named trap.**"
     ],
     [
      "6:00",
-     "READ THE CARD BACK IN ONE LINE: 'so he is DROWSY, whimpers on handling, hot and dry with a capillary refill of three seconds; the only source is a MILDLY RED THROAT; no rash, no neck stiffness, chest and abdomen clear.'"
+     "**TAKE THE CARD AND READ IT BACK IN ONE LINE**: **'so he is drowsy, whimpers on handling, hot and dry with a capillary refill of three seconds; the ONLY source is a mildly red throat; no rash, no neck stiffness, chest and abdomen clear.'**"
     ],
     [
      "6:20",
-     "THE DIAGNOSIS SENTENCE, said plainly to the father (see dx) — fever, drowsiness, racing heart, slow circulation, not drinking or weeing, AND THE RED THROAT DOES NOT EXPLAIN IT. → 'sepsis? He's only got a cold. CAN'T YOU GIVE HIM ANTIBIOTICS HERE?' → 'the antibiotics he needs go INTO A VEIN, with fluids and monitoring, and that needs the hospital team.'"
+     "**★ THE SEPSIS SENTENCE, WITH ITS REASONS** — high fever, drowsy and floppy, racing heart, slow circulation, not drinking or passing urine — **'and the slightly red throat does not explain how unwell he is. This needs the hospital, now.'**"
     ],
     [
      "6:50",
-     "THE FOUR-PART PLAN IN ORDER (see dx), then CONSENT AND CLOSE: 'is that okay with you? Could you ring his mum and ask her to meet you there? I'LL STAY WITH NOAH UNTIL THE AMBULANCE ARRIVES. Do you have any questions?' → 'is he going to die?' → 'he is seriously unwell, but we've caught it and we're starting treatment now, which is what matters most.' (Opening with 'I'll refer him to a paediatrician' is the trap — NAME THE ACTIONS; the referral is how they happen.)"
+     "**Answer 'can't you just give him antibiotics here?'**: **'the antibiotics he needs go into a vein, with fluids and monitoring, and that needs the hospital team.'** Then **THE FOUR-PART PLAN, in order: ambulance and ring ahead · the sepsis work-up named · IV antibiotics within the hour, first dose here as an injection if the ambulance is delayed · IV fluids and paracetamol · continuous monitoring.**"
+    ],
+    [
+     "7:40",
+     "**Handle the ambulance refusal, then close**: the paramedic, oxygen and monitoring, bypassing the waiting room. Answer **'is he going to die?'** honestly and calmly. Then **'could you ring his mum to meet you there? I'll stay with Noah until the ambulance arrives. Any questions?'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, with the card at six minutes",
-   "ask": [
-    "'Heart rate 168 and refill 3 seconds are ABNORMAL FOR HIS AGE.' / 'Sleepy, floppy, or fitting — which one?' / 'Any green? Any blood? Keeping anything down?' / 'How many wet nappies in twelve hours?' / 'Spots that don't fade under a glass?'",
-    "'A MILDLY RED THROAT DOES NOT EXPLAIN A DROWSY CHILD.' / 'I am very concerned that Noah has SEPSIS.' / 'Ambulance now; I'll ring ahead; retrieval comes to him.' / 'Antibiotics into a vein WITHIN THE HOUR — the first dose here if delayed.' / 'Fluids into the vein because he is dry and can't drink.' / 'Children treated this early usually do very well.'",
-    "THE FATHER REFUSES THE AMBULANCE — 'I'LL DRIVE HIM, IT'S FIVE MINUTES' → 'I know it's close. IF NOAH GETS WORSE IN THE CAR YOU'D BE ALONE WITH HIM AT THE WHEEL; in the ambulance a paramedic is with him with oxygen and monitoring the whole way, and they can bypass the waiting room. Please let us do it this way — I'll ring the department now.'",
-    "THE CARD SHOWS PURPURIC SPOTS ON THE LEGS → 'this is MENINGOCOCCAL DISEASE until proven otherwise. I am giving CEFTRIAXONE 50 mg/kg INTO THE MUSCLE RIGHT NOW, BEFORE the ambulance, and I'll notify SA Health today; the people he lives with will need a preventive antibiotic.'",
-    "THE ONLINE VERSION, no card, 'what examination would you do?' → 'general appearance and conscious state on AVPU; vitals and capillary refill; FULL UNDRESS FOR A NON-BLANCHING RASH; fontanelle, neck stiffness, Kernig; ENT — ears and throat; chest — work of breathing and air entry; heart sounds; abdomen and hernial orifices; joints and limbs; hydration — lips, turgor, eyes; and a BEDSIDE GLUCOSE AND URINE DIPSTICK.'"
-   ],
    "pefe": [
-    "Role-player: Mark Reid, 34, farm mechanic, father of Noah, 18 months; wife Jess is at work, daughter Ava is four and at kindy. Fever two nights (39 on the ear thermometer, Panadol helps for an hour), vomiting since yesterday six times, milky then clear, NO green and NO blood, NOTHING KEPT DOWN SINCE THIS MORNING, and DROWSY AND FLOPPY SINCE 6 AM, crying when picked up, with A WEAK SQUEAKY CRY. TWO WET NAPPIES SINCE LAST NIGHT, not drinking. Runny nose a few days ago, no cough but breathing fast, no rash, no diarrhoea. Term, fully immunised including the 18-month shots last month, growing well, no medicines or allergies, ONE FEBRILE CONVULSION AT 14 MONTHS, daycare three days a week. ANXIOUS BUT UNDERESTIMATING — he thinks it is gastro and wants a script, and gets frightened when the doctor says sepsis: 'is he going to die?' HIDDEN AGENDA: he does not want to go to hospital because he cannot get hold of Jess and the ute is loaded for a job — HE SAYS 'I'LL DRIVE HIM' if the ambulance is raised, and backs down if the risk is explained.",
-    "How he answers: WET NAPPIES AND DRINKING ONLY IF ASKED. If the doctor starts without vitals, answer normally and mark it missing. If the doctor says 'tonsillitis' or 'viral, go home': 'okay... BUT WHY IS HE SO FLOPPY?' and mark it a fail. If the doctor never mentions fluids: 'HE WON'T DRINK — WHAT ABOUT THAT?'",
-    "Scored out of 18, 13 to pass: asked for vitals; INTERPRETED THEM AS ABNORMAL FOR AGE; timing of all three symptoms; fever measured and medication; vomiting colour, blood and keeping down; CLARIFIED 'UNRESPONSIVE'; sudden versus gradual; three seizure questions; ENT and red-flag questions; rash and glass test; chest; GI and urinary; meningism questions; WET NAPPIES AND INTAKE IN NUMBERS; immunisation status and previous convulsion; read the card back AND SAID THE RED THROAT DOES NOT EXPLAIN THE PICTURE; SAID 'SEPSIS' AND 'HOSPITAL NOW'; management in order — ambulance and ring ahead, work-up named, IV antibiotics within the hour with the first dose here if delayed, IV fluids, monitoring, paediatric and MedSTAR involvement; and answered 'is he going to die' honestly and calmly. Numbers: CEFTRIAXONE 50 mg/kg (100 mg/kg in meningitis) — SALINE BOLUS 20 mL/kg — paracetamol 15 mg/kg — HEART RATE LIMIT ABOUT 150 between one and four years — CAPILLARY REFILL OVER 2 SECONDS IS POOR PERFUSION — ANTIBIOTICS WITHIN 60 MINUTES — MedSTAR 1300 13 12 33.",
-    "Meningism — NO neck stiffness — fontanelle CLOSED"
+    "**Ask for vitals FIRST and INTERPRET them against age-specific limits.** RCH: HR <1 yr 160 · 1–4 yr 150 · 5–11 yr 130; RR <1 yr 50 · 1–4 yr 40 · 5–11 yr 30; CRT over 2 s abnormal. **Hypotension is LATE.** VERIFY",
+    "**If there is no card (the online version): general appearance and conscious state with AVPU · vitals and capillary refill · FULL UNDRESS for a non-blanching rash · fontanelle, neck stiffness, Kernig's · ears and throat · work of breathing and air entry · heart sounds · abdomen and hernial orifices · joints and limbs · hydration — lips, turgor, eyes · BEDSIDE GLUCOSE and urine dipstick.**",
+    "**IN THE GP ROOM: say 'I am concerned about sepsis' · nurse calls 000 while YOU STAY with the child · oxygen if SpO2 under 92% · IV access, IO after two failed attempts · blood culture and glucose IF ACHIEVABLE WITHOUT DELAY · CEFTRIAXONE 50 mg/kg IV or IM — give IM if there is no IV · 20 mL/kg saline bolus if shocked, then reassess · paracetamol 15 mg/kg · continuous monitoring · ISBAR to ED.**",
+    "**IN ED: FBC, CRP, blood culture, BLOOD GAS AND LACTATE, electrolytes, glucose, urine MCS by CATHETER OR SUPRAPUBIC ASPIRATE in an unwell toddler, CXR if respiratory signs, LP when stable and no contraindication.** **If drowsy → CT or defer the LP — but DO NOT DEFER ANTIBIOTICS.**",
+    "**Empiric IV ceftriaxone ± vancomycin (shock or MRSA risk) ± aciclovir (encephalitis features). Maintenance plus deficit fluids for 5–7% dehydration. Hourly observations and fluid balance. Paediatric team and PICU discussion.**",
+    "**ANTIBIOTICS WITHIN 60 MINUTES — cultures only if they cause no delay.**",
+    "**DO NOT MISS: a non-blanching rash (UNDRESS FULLY) · hypoglycaemia in a vomiting toddler · meningitis WITHOUT neck stiffness in a child under 2 · an unimmunised child · reduced urine output · deterioration in the car park.**",
+    "**AVOID: diagnosing viral URTI or tonsillitis and discharging · oral antibiotics · waiting for tests before antibiotics · sending to ED by private car · opening management with 'refer to a paediatrician' · IBUPROFEN in a dehydrated child.**",
+    "**MENINGOCOCCAL: ceftriaxone 50 mg/kg IM immediately in the GP room, before the ambulance. NOTIFY SA Health — CDCB 1300 232 272. Household contacts need prophylaxis.**",
+    "**KAWASAKI requires fever of 5 days or more** — on day two it is not yet on the table, but say you considered it. **Echo and IVIG 2 g/kg with aspirin if criteria are met.**"
    ],
-   "fails": [
-    "★ Diagnosing tonsillitis or a viral illness and discharging the child",
-    "★ Never saying the word SEPSIS, or agreeing to oral antibiotics at home",
-    "Sending the child by private car without discussing why an ambulance is safer",
-    "Reading the observations without interpreting them as abnormal for age",
-    "Switching to a febrile-convulsion spine because of the fit at 14 months, when there are no seizure features today; opening with 'I'll refer him to a paediatrician' instead of naming the actions; and accepting the mildly red throat as the source"
-   ],
-   "numbers": [
-    "HR over 150 is abnormal at 1-4 years (his is 168) · CAPILLARY REFILL over 2 s = poor perfusion (his is 3) · ANTIBIOTICS WITHIN 60 MINUTES · ceftriaxone 50 mg/kg, and 100 mg/kg for meningitis · saline bolus 20 mL/kg · paracetamol 15 mg/kg",
-    "Weight 11 kg · T 39.4, RR 38, SpO2 96% · two wet nappies in twelve hours and not drinking · purpuric spots mean IM ceftriaxone BEFORE the ambulance, notification to SA Health and clearance antibiotics for household contacts · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Sepsis, any source**",
+     "**Fever + DROWSY + HR 168 + CRT 3 s + poor intake, with the source INADEQUATE to explain it**",
+     "Conscious state, perfusion, urine output — and whether the source explains the picture",
+     "**Full sepsis work-up + IV CEFTRIAXONE 50 mg/kg NOW. 000 to ED.** IMMEDIATE. This is the case"
+    ],
+    [
+     "**Meningitis / encephalitis**",
+     "**Irritable on handling, HIGH-PITCHED CRY, photophobia, neck stiffness (UNRELIABLE under 2), seizures**",
+     "Fontanelle (closed at 18 months), Kernig's, rash",
+     "**LP WHEN STABLE; ceftriaxone 100 mg/kg ± aciclovir. Antibiotics are never deferred for the LP.** IMMEDIATE"
+    ],
+    [
+     "**Meningococcal disease**",
+     "**NON-BLANCHING rash, limb pain, COLD HANDS, rapid decline**",
+     "**The GLASS TEST, asked for by name — and FULL UNDRESS**",
+     "**Ceftriaxone IM immediately in the GP room. NOTIFY SA Health; contacts need prophylaxis.** IMMEDIATE"
+    ],
+    [
+     "**UTI / pyelonephritis**",
+     "**Fever without focus, vomiting, smelly urine, irritable at nappy changes**",
+     "**'Crying when he wees or at nappy changes?'**",
+     "**CATHETER or suprapubic urine in an unwell toddler — MCS before antibiotics IF NO DELAY.** High"
+    ],
+    [
+     "Pneumonia",
+     "**Tachypnoea 38, cough, grunting, recession**",
+     "Chest examination and saturations",
+     "CXR, blood culture. High"
+    ],
+    [
+     "Gastroenteritis with severe dehydration",
+     "Vomiting, reduced nappies — **but DIARRHOEA IS ABSENT and the drowsiness is out of proportion**",
+     "The absence of diarrhoea; degree of drowsiness",
+     "**Glucose and electrolytes — and STILL treat as sepsis.** High"
+    ],
+    [
+     "**Tonsillitis / viral URTI**",
+     "**Mild pharyngeal erythema — the only positive on the card**",
+     "**Ask yourself: DOES THIS SOURCE EXPLAIN THE CONSCIOUS STATE? No.**",
+     "**DO NOT CLOSE THE CASE HERE. This is the designed distractor and the critical error**"
+    ],
+    [
+     "**Post-ictal after febrile convulsion**",
+     "**A previous febrile convulsion at 14 months**; witnessed seizure; gradual recovery",
+     "**The three seizure questions — jerking, eye rolling, incontinence. ALL NEGATIVE TODAY**",
+     "**Exclude it VERBALLY and stay on sepsis. The tempting red herring**"
+    ],
+    [
+     "**Kawasaki disease**",
+     "**Fever ≥ 5 DAYS, conjunctivitis, cracked lips, rash, extremity changes, node**",
+     "**The DAY COUNT — only day two here**",
+     "Echo, IVIG 2 g/kg, aspirin if criteria met. Medium"
+    ],
+    [
+     "Septic arthritis / osteomyelitis",
+     "**Not weight-bearing, swollen or red joint**",
+     "Joint examination; limping",
+     "Ultrasound, aspiration. High"
+    ],
+    [
+     "Intussusception",
+     "**Colicky episodes with PALLOR and leg-drawing**; redcurrant-jelly stool",
+     "The abdominal questions",
+     "Ultrasound. Medium"
+    ],
+    [
+     "DKA, ingestion, non-accidental injury",
+     "**Polyuria and weight loss · pupils and access to medicines · bruising or an inconsistent history**",
+     "**BEDSIDE GLUCOSE in every unwell child**; skin survey; who was caring for him",
+     "BSL, tox screen, senior discussion. **Child Abuse Report Line 13 14 78.** Medium"
+    ]
    ]
   },
   "source": "Paediatric_Sepsis_Fever_Vomiting_Unresponsive_2_Case_Tasks_Script_Notability.pdf (Noah, 18 months, fever and vomiting with a father reporting he is 'unresponsive' — sepsis until proven otherwise; interpreting the vitals aloud, clarifying unresponsive in three options, hunting the source through the fever spine, quantified wet nappies, and saying the red throat does not explain a drowsy child; the ambulance refusal, purpuric-rash and online versions folded in)",
   "drive": "AMC Clinical Notability › Pediatric › Paediatric_Sepsis_Fever_Vomiting_Unresponsive_2_Case_Tasks_Script_Notability.pdf",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "The vitals, the card at six minutes, and how Mark is briefed",
   "must": [
-   "FAIL — Diagnosing tonsillitis or a viral illness and discharging him",
-   "FAIL — Never saying the word SEPSIS, or agreeing to oral antibiotics at home",
-   "FAIL — Sending him by private car without discussing why an ambulance is safer — the father offers 'I'll drive him, it's five minutes'",
-   "SAY — 'A MILDLY RED THROAT DOES NOT EXPLAIN A DROWSY CHILD.'",
-   "SAY — 'Heart rate 168 and refill 3 seconds are ABNORMAL FOR HIS AGE' — interpreting the vitals is the mark, not reading them",
-   "DO — Give the plan in order: ambulance now and ring ahead, sepsis work-up, IV antibiotics WITHIN THE HOUR (first dose here if delayed), IV fluids, monitoring"
-  ]
+   "FAIL — **Diagnosing tonsillitis or a viral illness and discharging.** The single critical error this case is built around.",
+   "FAIL — **Never saying the word 'sepsis'**, or **agreeing to oral antibiotics at home**.",
+   "FAIL — **Sending the child by private car** without discussion, or **waiting for tests before antibiotics**.",
+   "FAIL — **Reading the vitals without interpreting them**, or **never clarifying what 'unresponsive' means**.",
+   "ASK — **When you say unresponsive — is he sleepy and hard to wake, floppy and not responding, or was he fitting?**",
+   "ASK — **How many wet nappies in the last twelve hours, and is he drinking?** — numbers, not adjectives."
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-03",
@@ -102668,7 +102925,6 @@ const EMBEDDED_CARDS = [
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "Version B of the psychosis station — Bruce, brought by his parents, motionless for the whole consultation. The station is run on a patient who barely moves and whose answers do not follow the questions, so the behaviour itself is the finding. The lecture's own candidate forgot the question that matters most here — he has command hallucinations, and nobody asked about harm.",
   "stem": [
    "Psychiatry clinic. Bruce, a young man, is brought in by his parents, who say he has been acting strangely. He sits in a blue hoodie and glasses, unshaven with unkempt hair, holding his hands in front of his face in a prayer position throughout, with no eye contact.",
    "Tasks: take a history (6 minutes) — present your mental state examination to the examiner (2 minutes)."
@@ -102677,92 +102933,122 @@ const EMBEDDED_CARDS = [
    "Take a history (6 minutes)",
    "Present your mental state examination to the examiner (2 minutes)"
   ],
-  "time": "One minute to open, offer confidentiality and RE-OPEN after the denial · two minutes on context and substances, accepting that answers will be monosyllabic and off-topic · a minute on mood, sleep and — critically in this version — risk · ninety seconds on perceptions and the full delusion set, where the command hallucination emerges · thirty seconds on insight, orientation and judgement, which in this version are not normal · then two minutes presenting the MSE",
   "back": {
-   "dx": "PSYCHOSIS WITH CATATONIC FEATURES — a young man, motionless with hand posturing throughout, with visual and auditory hallucinations of God issuing commands, grandiose and persecutory delusions, loosening of associations, impaired insight and judgement, and disorientation to place and person. The MSE is the product and it is presented in order: appearance — blue hoodie and glasses, unshaven, unkempt hair, hands held in a prayer position throughout, no eye contact, stooped, withdrawn expression · behaviour — withdrawn and initially uncooperative, cooperative towards the end, catatonic, motionless for the whole consultation with posturing · speech — slow, quiet, monotonous, mostly monosyllabic, pauses and perseveration · emotion — mood 'Great', affect blunted, restricted and incongruent · perception — visual and auditory hallucinations, seeing God who commands him to save everyone · thought form — loosening of associations · content — a grandiose delusion that he can save everyone by closing his eyes and a persecutory delusion about his parents, with risk to self and others to be assessed now given the command hallucinations · insight impaired · cognition — alert but disoriented to place and person · judgement impaired · and the closing sentence that separates a good presentation from a passable one: the catatonia and disorientation need an organic cause excluded. The differential spans duration and cause — brief psychotic disorder under one month, schizophreniform one to six months, schizophrenia six months or more · substance-induced psychosis, particularly cannabis and stimulants · mood disorder with psychotic features · and organic causes, which in a catatonic disoriented patient move up the list: delirium, infection including encephalitis, metabolic and electrolyte disturbance, intracranial pathology and autoimmune encephalitis. Next steps: a collateral history from the parents with consent, an organic screen and urine drug screen, immediate risk assessment given the command quality, and urgent psychiatric review — with voluntary admission offered first and an inpatient treatment order if he declines and meets the criteria. VERIFY the current SA mental health act process before quoting an order level.",
+   "dx": [
+    "**PSYCHOSIS WITH CATATONIA AND COMMAND HALLUCINATIONS — Version B of the psychosis MSE stem: BRUCE, brought in by his parents, MOTIONLESS FOR THE WHOLE CONSULTATION with his hands held in a prayer position.**",
+    "**CATATONIA PLUS DISORIENTATION DEMANDS AN ORGANIC CAUSE BE EXCLUDED BEFORE THIS IS CALLED PSYCHIATRIC. Say that sentence out loud in the MSE — it is the difference between a described patient and an assessed one.**",
+    "**HIS ANSWERS ARE IRRELEVANT RATHER THAN ABSENT: 'how's your relationship with your parents?' → 'Bad. I slept bad last night. I walk.' USE ONE GENTLE REDIRECT — 'that sounds hard; when you say you slept badly, what kept you awake?' — then move on and REPORT LOOSENING OF ASSOCIATIONS.**",
+    "**HE PERSEVERATES on 'I slept bad last night'. Perseveration and loosening of associations are separate findings and both belong under speech and thought form.**",
+    "**THE HALLUCINATIONS ARE VISUAL AND AUDITORY AND THEY GIVE COMMANDS: he SEES God, who tells him to save everyone. Characterise it: whose voice · what does it say · CAN YOU SEE HIM · DOES HE TELL YOU TO DO THINGS.**",
+    "**THEN THE QUESTION THE LECTURE'S CANDIDATE FORGOT, AND IT IS THE STATION: 'you said God wants you to save people. DOES GOD EVER TELL YOU TO HURT YOURSELF OR ANYONE ELSE? DO YOU FEEL YOU HAVE TO DO WHAT HE SAYS?' Then: 'have you had any thoughts of ending your life?'**",
+    "**Delusions: a GRANDIOSE belief that he can save everyone by closing his eyes, and a PERSECUTORY belief about his parents. Ask the full set — persecutory, grandiose, reference, guilt, passivity.**",
+    "**COGNITION IS ABNORMAL AND IT IS EASY TO MISS: he is ALERT BUT DISORIENTED TO PLACE AND PERSON — HE THOUGHT HE WAS IN A PARK — and time was not established. Reporting him as oriented because he answered is a scored error.**",
+    "**MSE essentials: a blue hoodie and glasses, unshaven, unkempt, HANDS IN A PRAYER POSITION THROUGHOUT, no eye contact, stooped, withdrawn · withdrawn and initially uncooperative, cooperative later, CATATONIC WITH POSTURING · speech slow, quiet, monotonous, mostly monosyllabic, with pauses and perseveration · mood 'great', affect BLUNTED, restricted and INCONGRUENT · visual and auditory hallucinations · LOOSENING OF ASSOCIATIONS · grandiose and persecutory delusions · SUICIDE AND HOMICIDE RISK NOT ASSESSED — and say you would assess it now, given the command hallucinations · insight impaired · alert but disoriented · judgement impaired.**",
+    "**Close with the organic sentence: 'his catatonia and disorientation need an organic cause excluded.' Then the disposition — he is not safe to go home, voluntary admission or a Level 1 order, organic screen and urine drug screen, collateral from the parents with consent, early psychosis service.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Introduce, offer confidentiality with the harm exception, then the open question — and ★ RE-OPEN after the denial: 'What have your parents noticed?' that one question converts a denial into a history."
+     "**Confidentiality with its limit, open question — and when the answers are irrelevant, ONE gentle redirect, then move on.**"
     ],
     [
      "1:00",
-     "Context and substances — home, work or study, enjoyment, smoking, alcohol, cannabis and anything else, and how much. Do not deliver a safe-drinking lecture mid-station."
+     "**Context and substances: home · work or study · still enjoying things · smoking, alcohol, cannabis and how much.**"
+    ],
+    [
+     "2:30",
+     "**Mood, sleep, appetite — and note that 'great' with a blunted affect is INCONGRUENT.**"
     ],
     [
      "3:00",
-     "Mood, sleep and appetite — and note the incongruity when 'Great' arrives from a motionless patient rather than correcting it."
+     "**PERCEPTION, characterised: hear, see or feel things · whose voice · CAN YOU SEE HIM · DOES HE TELL YOU TO DO THINGS.**"
     ],
     [
-     "3:30",
-     "★ Risk, which this version exists to test — thoughts of harming himself or anyone else, ever acted on it, any plan now, anything prepared, a date or a note. Stopping at 'Yes' or never asking at all is the AUTOMATIC FAIL."
+     "3:40",
+     "**THE COMMAND QUESTION: does God ever tell you to hurt yourself or anyone else, and do you feel you have to do what he says. Then the suicide ladder.**"
     ],
     [
-     "4:00",
-     "Perceptions — hearing, seeing or feeling things others do not; who he is speaking to; what it says. Then ★ The command questions: does God tell him to hurt himself or anyone else, and does he feel he has to do what he is told."
+     "4:30",
+     "**The full delusion set: persecutory · grandiose · reference · guilt · passivity.**"
     ],
     [
-     "4:45",
-     "The full delusion set — persecutory, grandiose, guilt, and passivity phenomena: thoughts inserted, withdrawn or broadcast."
-    ],
-    [
-     "5:30",
-     "Insight, orientation and judgement — does he think he might be unwell, where are we, what day and time, who am I, and the fire question. In this version the answers are abnormal and that is the point."
+     "5:20",
+     "**Insight, orientation and judgement — and ESTABLISH PLACE AND PERSON PROPERLY rather than assuming.**"
     ],
     [
      "6:00",
-     "Present the MSE in order (see dx), ending with the risk statement and the organic-exclusion sentence."
+     "**PRESENT THE MSE heading by heading, naming CATATONIA, POSTURING, PERSEVERATION and LOOSENING OF ASSOCIATIONS, and reporting risk as NOT ASSESSED with what you would do now.**"
+    ],
+    [
+     "7:30",
+     "**Close with the organic sentence and the disposition: admission, organic screen and drug screen, collateral with consent, early psychosis service.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the history is slower than Version A because the answers are monosyllabic — budget for the silence rather than filling it, and do not sacrifice the risk block to catch up",
-   "ask": [
-    "The RE-OPEN: 'What have your parents noticed?' — never accept 'I'm okay' and move on.",
-    "The command hallucination block, which is this version's distinguishing question: 'You said God wants you to save people. Does God ever tell you to hurt yourself or anyone else? Do you feel you have to do what he says?' then 'Have you had any thoughts of ending your life?'",
-    "The one gentle redirect for an irrelevant answer, and only one: 'That sounds hard. When you say you slept badly, what kept you awake?' then move on and report loosening of associations.",
-    "The MSE phrases that must not be dropped: 'Catatonic — motionless throughout' · 'Loosening of associations' · 'Affect blunted, restricted and incongruent' · 'Visual and auditory hallucinations — he sees God, who commands him' · 'Disoriented to place and person' · and 'His catatonia and disorientation need an organic cause excluded.'",
-    "The examiner follow-up, 'What would you do now?': collateral from the parents with consent, an organic screen and urine drug screen, immediate risk assessment given the command quality, voluntary admission offered first and an inpatient treatment order if he declines and meets the criteria, and referral to the early psychosis service."
-   ],
    "pefe": [
-    "Role-player: Bruce, a young man in a blue hoodie and glasses, unshaven with unkempt hair. He holds his hands in front of his face in a prayer position for the entire consultation and does not move. No eye contact, stooped, withdrawn. He is initially uncooperative and becomes cooperative towards the end.",
-    "How he answers: slowly, quietly, monosyllabically, with long pauses, and often not to the question asked. He perseverates on 'I slept bad last night'. He reports his mood as 'Great'. He sees God, who tells him to save everyone, and believes he can save everyone by closing his eyes. He believes his parents mean him harm. He thinks he is in a park.",
-    "Mark the doctor on: re-opening after the denial · context and substances · mood, sleep and appetite · suicide asked with ideation, plan, preparation and past attempt, which is an AUTOMATIC FAIL if not asked · harm to others · the voice explored including its command quality · the full delusion set · insight, orientation and judgement · and an MSE that names the posturing, the incongruent affect, the loosening of associations and the risk.",
-    "Sibling cards: PSYCH-33 is version A — Alex, brought by his parents, who snaps at a voice mid-consultation, has active suicidal ideation with a plan and a previous attempt, and describes depersonalisation as a screen in front of the world. PSYCH-62 is version C — max, homeless, brought by police, with a homicidal plan endorsed by a voice. All three run the same six-minute history and then a two-minute MSE, and all three are scored on describing the risk rather than ticking it.",
-    "The answers do not follow the questions — 'How's your relationship with your parents?' — 'Bad. I slept bad last night. I walk.' that is loosening of associations, and it is a finding to report, not a problem to solve. Give one gentle redirect — 'When you say you slept badly, what kept you awake?' — then move on. He perseverates on 'I slept bad last night'",
-    "The catatonia is the headline behaviour — He does not move for the whole consultation, with posturing of the hands in a prayer position. Speech is slow, quiet, monotonous and mostly monosyllabic with long pauses. Mood is reported as 'Great' against a blunted, restricted and incongruent affect",
-    "The hallucinations are visual as well as auditory — He sees God, who commands him to save everyone. That is both modalities, and the command quality is what makes the risk questions urgent rather than routine",
-    "The question the lecture's candidate forgot — 'You said God wants you to save people. Does God ever tell you to hurt yourself or anyone else? Do you feel you have to do what he says?' and then, plainly: 'Have you had any thoughts of ending your life?' In the recalled run, suicide and homicide risk were never assessed — which is exactly why this version exists",
-    "The delusions — Grandiose — he can save everyone by closing his eyes · persecutory — about his parents. Run the whole set anyway: people against him, anyone trying to harm him, special powers, guilt, and thoughts inserted, withdrawn or broadcast",
-    "Orientation and judgement are not normal here — He is alert but disoriented to place and person — he thinks he is in a park — and time is not established. Judgement is impaired. Catatonia with disorientation means an organic cause must be excluded, and saying so is part of the answer"
+    "**ORGANIC SCREEN IS MANDATORY HERE: FBE, EUC, LFT, TSH, glucose, CRP · urine drug screen · CT HEAD, and consider LUMBAR PUNCTURE — autoimmune and infective encephalitis present exactly like this.**",
+    "**Catatonia signs to name: immobility, POSTURING, waxy flexibility, mutism, negativism, echolalia, echopraxia. A lorazepam challenge is the usual first-line treatment and is also diagnostic.** VERIFY.",
+    "**Durations: brief psychotic disorder <1 month · schizophreniform 1–6 months · schizophrenia ≥6 months.** VERIFY.",
+    "**COMMAND HALLUCINATIONS CHANGE THE RISK ASSESSMENT — they belong in both the MSE and the risk statement, and they make admission the default.**",
+    "**Disposition: voluntary admission first; Level 1 inpatient treatment order if he declines and meets the criteria — up to 7 days, psychiatrist review within 24 hours. SA mental health triage 13 14 65.**",
+    "**Complications of catatonia: dehydration, malnutrition, pressure injury, venous thromboembolism, and MALIGNANT CATATONIA with fever and autonomic instability — a medical emergency.**",
+    "**If he falls asleep mid-interview, or fluctuates: think DELIRIUM, HEAD INJURY or INTOXICATION rather than psychiatric illness.**"
    ],
-   "fails": [
-    "★ Never asking about suicide — ideation, plan, preparation and past attempt",
-    "★ Never asking whether the command hallucination tells him to harm himself or anyone else, in a patient who says God instructs him",
-    "★ Recording insight as intact because he answered the questions, when he denies any problem",
-    "Trying to solve the irrelevant answers instead of reporting loosening of associations; spending the station redirecting him; missing the visual modality and reporting auditory hallucinations only; recording orientation as normal without testing place, time and person; presenting an MSE that never names the catatonia; and failing to say that the catatonia and disorientation need an organic cause excluded"
-   ],
-   "numbers": [
-    "Station 8 minutes — 6 minutes history, 2 minutes MSE · 3 versions · 6 delusion questions · brief psychotic disorder under 1 month · schizophreniform 1–6 months · schizophrenia 6 months or more",
-    "SA mental health triage 13 14 65 · TIS National 131 450 · Lifeline 13 11 14 · organic screen and urine drug screen in every first presentation · collateral history from family with consent · early psychosis service referral · voluntary admission offered before any order, with the current SA mental health act process VERIFY"
+   "ddx": [
+    [
+     "**Psychosis with catatonia** — the answer",
+     "**Motionless throughout with hand posturing; visual and auditory hallucinations of God commanding him; grandiose and persecutory delusions; loosening of associations; disoriented to place and person**",
+     "**Catatonic signs named; the command question; orientation actually tested**",
+     "**Admission; ORGANIC SCREEN FIRST; lorazepam challenge; antipsychotic; risk assessed now**"
+    ],
+    [
+     "**Organic catatonia — encephalitis, metabolic, structural**",
+     "**Disorientation, fluctuation, fever, headache, focal signs, abnormal observations**",
+     "**Bloods, CT head, lumbar puncture — not optional with catatonia plus disorientation**",
+     "**Exclude BEFORE calling this psychiatric. This is the sentence that must be said**"
+    ],
+    [
+     "**Delirium**",
+     "**Fluctuating attention and consciousness, acute onset, disorientation**",
+     "**Alertness and attention; he is alert but disoriented**",
+     "**Septic and metabolic screen; treat the cause**"
+    ],
+    [
+     "**Substance-induced psychosis**",
+     "**Cannabis, stimulants; and drugs can precipitate catatonia**",
+     "**Quantity and timing of use; urine drug screen**",
+     "**Screen and treat both**"
+    ],
+    [
+     "**Mood disorder with catatonic features**",
+     "**Severe depression or mania with psychomotor change**",
+     "**Mood, sleep and appetite — 'great' with a blunted affect is incongruent, not elevated**",
+     "**Consider; the treatment of catatonia is the same regardless of the underlying disorder**"
+    ],
+    [
+     "**Risk from command hallucinations**",
+     "**God instructing him to save everyone — and the unasked question of whether he is told to harm**",
+     "**'Does he tell you to hurt yourself or anyone else?'**",
+     "**Never assessed in the lecture's run. Assess it now; it determines the disposition**"
+    ]
    ]
   },
   "source": "Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability (1).pdf Version B (Bruce, brought by his parents, motionless with hand posturing throughout, seeing God who commands him to save everyone — catatonic psychosis with loosening of associations and disorientation, where the recalled candidate never assessed suicide or homicide risk despite the command hallucinations; Version A, Alex, is PSYCH-33 and Version C, Max, is PSYCH-62)",
   "drive": "AMC Clinical Notability › Psychiatry › Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability (1).pdf",
   "must": [
-   "FAIL — AUTO-FAIL: never asking about suicide — ideation, plan, preparation and past attempt. The lecture's own candidate forgot it in exactly this version",
-   "FAIL — Never asking whether the command hallucination tells him to harm himself or anyone else, in a patient who says God instructs him — and whether he feels he HAS to obey. He sees God as well as hearing him, so ask about seeing and feeling too",
-   "FAIL — Arguing with irrelevant answers instead of redirecting once — he perseverates on 'I slept bad last night'; one gentle redirect, then move on and report LOOSENING OF ASSOCIATIONS as the finding",
-   "FAIL — Leaving the catatonia out of the mental state examination — motionless for the whole consultation with posturing of the hands in a prayer position, no eye contact, and a blunted restricted affect incongruent with a stated mood of 'great'",
-   "FAIL — Recording insight as intact because he answered the questions, when he denies any problem — and missing that he is DISORIENTED to place and person, having thought he was in a park, which together with the catatonia means an organic cause must be excluded",
-   "FAIL — Running an incomplete delusion set — grandiose (he can save everyone by closing his eyes), persecutory (his parents), and the passivity questions. Open by introducing yourself with confidentiality and its harm exception, then RE-OPEN after the denial: 'what have your parents noticed?'"
-  ]
+   "FAIL — Not asking about suicide. AUTO-FAIL — and in this version risk was never assessed at all.",
+   "FAIL — Calling catatonia psychiatric without excluding an ORGANIC cause.",
+   "FAIL — Not asking whether God tells him to hurt himself or anyone else.",
+   "FAIL — Reporting him as oriented. He thought he was in a park.",
+   "ASK — Does God ever tell you to hurt yourself or anyone else? Do you feel you have to do what he says?",
+   "SAY — Catatonic — motionless throughout, with posturing of his hands."
+  ],
+  "v2": true
  },
  {
   "id": "PSYCH-62",
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "Version C of the psychosis station — max, homeless, brought by police, with a voice that agrees with his plan to kill a named public figure and every intention of leaving today to act on it. This is the one version where the risk is to someone else, and the station is decided by whether the candidate takes the homicidal ideation past 'Yes' and then says out loud that he is not free to leave.",
   "stem": [
    "Psychiatry clinic. Max, a homeless man, is brought in by police. He wears a dark T-shirt with a headset and glasses, is unkempt with a beard, tense and stooped, with no eye contact and an anxious, fearful expression. He is sniffing, rocking, and talking back to a voice.",
    "Tasks: take a history (6 minutes) — present your mental state examination to the examiner (2 minutes)."
@@ -102771,7 +103057,6 @@ const EMBEDDED_CARDS = [
    "Take a history (6 minutes)",
    "Present your mental state examination to the examiner (2 minutes)"
   ],
-  "time": "A minute to open and RE-OPEN · two minutes on context and substances, which in a homeless man brought by police carries more weight than in the other versions · a minute on mood, sleep and risk, where the homicidal plan emerges and must be taken past 'Yes' · ninety seconds on perceptions and delusions, including delusions of reference · thirty seconds on orientation, pushed through his agitation · then two minutes presenting the MSE and the containment decision",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "findings": [
    [
@@ -102780,83 +103065,119 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "PSYCHOSIS WITH HOMICIDAL IDEATION — a homeless man brought by police, responding to a voice that endorses a plan to kill a named public figure, with persecutory delusions about the fbi and delusions of reference from television and radio. He is a serious risk to others and that sentence belongs in the presentation. The MSE: appearance — dark T-shirt with a headset and glasses, unkempt with a beard, tense and stooped, no eye contact, anxious and fearful, sniffing · behaviour — uncooperative and increasingly agitated, talking back to a voice, rocking with a head tremor, psychomotor agitation · speech — normal to fast, low volume, stuttering, mumbling, monosyllabic, with poverty of speech · emotion — mood 'On TOP of the world', affect restricted and incongruent · perception — auditory hallucinations, a voice that agrees with his plan · thought form — poverty of ideas · content — homicidal ideation with a plan to kill a named public figure, endorsed by the voice, with intent to act today; a persecutory delusion about the fbi; delusions of reference; no suicidal ideation · insight impaired · cognition — alert, oriented to place and person, time not answered · judgement not assessed. The sniffing and the homelessness raise substance-induced psychosis, particularly stimulants, which belongs in the differential alongside a primary psychotic illness by duration — brief psychotic disorder, schizophreniform, schizophrenia — and organic causes. Management is containment first: he is not free to leave, the team and the police who brought him are informed, and the confidentiality exception for risk to others is applied as it was flagged at the start of the consultation. Then: a safe environment with adequate staff, de-escalation before any sedation, an organic screen and urine drug screen, collateral from the police, urgent psychiatric review, and an inpatient treatment order if he declines admission and meets the criteria. Where a named, identifiable third party is at risk, the duty to warn and to inform police is part of the answer — VERIFY the current SA mental health act and disclosure provisions before quoting them. Housing and social work involvement follow once he is safe.",
+   "dx": [
+    "**PSYCHOSIS WITH HOMICIDAL IDEATION, A PLAN, AND A VOICE THAT ENDORSES IT — Version C of the psychosis MSE stem: MAX, homeless, brought in by police, intending to kill a named public figure and wanting to leave today TO ACT ON IT.**",
+    "**EXPLORE A HOMICIDAL PLAN EXACTLY AS YOU WOULD A SUICIDE PLAN: 'you said you need to kill the president. TELL ME MORE — HOW WOULD YOU DO IT? DO YOU HAVE ANYTHING TO DO IT WITH? WHEN?' Anything less is not a risk assessment.**",
+    "**THE VOICE AGREES WITH HIM. A hallucination that endorses a violent plan raises the risk substantially and belongs in both the MSE and the risk statement — characterise it: whose voice, what it says, does it tell him to do things.**",
+    "**ACT WITHIN THE STATION, NOT AFTER IT: 'I'm worried about the safety of other people. I'M NOT ABLE TO LET YOU LEAVE TODAY, and I'll need to share this with the team and the police who brought you in.' A named target with a plan and intent is a duty-to-protect situation.**",
+    "**His delusions: PERSECUTORY — the FBI is trying to harm him — and REFERENCE — the TV and radio talk about him. Ask the full set rather than one question.**",
+    "**HE IS AGITATED AND HE MUMBLES THROUGH THE FIRE QUESTION. Try once, calmly: 'I know you're upset, Max, and you want to go. I'll be quick.' If he still does not answer, REPORT JUDGEMENT AS NOT ASSESSED — recording it as intact is a scored error.**",
+    "**Note what is ABSENT and say so: NO suicidal ideation. Stating the negative shows you asked.**",
+    "**MSE essentials: a dark T-shirt with a headset and glasses, unkempt with a beard, tense and stooped, no eye contact, an ANXIOUS FEARFUL expression, sniffing · uncooperative and increasingly agitated, TALKING BACK TO A VOICE, rocking with a head tremor — PSYCHOMOTOR AGITATION · speech normal to fast, low volume, stuttering, mumbling, monosyllabic with POVERTY OF SPEECH · mood 'on top of the world', affect restricted and INCONGRUENT · auditory hallucinations — a voice that AGREES WITH HIS PLAN · poverty of ideas · content: HOMICIDAL IDEATION WITH A PLAN against a named public figure, endorsed by the voice, with intent to act today; persecutory delusion about the FBI; delusions of reference; no suicidal ideation · insight impaired · alert, oriented to place and person, time not answered · judgement NOT ASSESSED.**",
+    "**Close with the risk statement in plain words: HE IS A SERIOUS RISK TO OTHERS.**",
+    "**Disposition: he does not leave. Inform the team and the police; voluntary admission if he will accept it, otherwise a Level 1 inpatient treatment order; organic screen and urine drug screen; antipsychotic; and social work, because he is homeless.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Introduce and offer confidentiality with the harm exception — which in this version is not a formality, because you will rely on it later. Then the open question, and RE-OPEN if he denies a problem."
+     "**Confidentiality with its limit. Acknowledge the police and that he wants to leave, and say you will be quick.**"
     ],
     [
-     "1:00",
-     "Context and substances — where he is sleeping, how long, who is around him, work, and smoking, alcohol, cannabis, stimulants and anything else with amounts. The sniffing makes this block load-bearing."
+     "0:50",
+     "**Context and substances, briefly — he is agitated and time spent here is time lost.**"
     ],
     [
-     "3:00",
-     "Mood, sleep and appetite — and note 'On TOP of the world' against a fearful presentation as incongruity."
+     "1:30",
+     "**PERCEPTION: hear, see or feel things · whose voice · what does it say · DOES IT TELL YOU TO DO THINGS · and note him talking back to it.**"
     ],
     [
-     "3:30",
-     "★ Risk — thoughts of harming himself, then thoughts of harming anyone else. When the plan arrives, take it past 'Yes': how, with what, when, and whether he intends to act today (see findings)."
+     "2:30",
+     "**THE HOMICIDAL PLAN, explored in full: who · HOW would you do it · DO YOU HAVE ANYTHING TO DO IT WITH · WHEN · have you ever hurt anyone before. Then suicide, and state the negative.**"
     ],
     [
-     "4:15",
-     "Perceptions — who he is speaking to, what the voice says, and whether it tells him to do things. Establish explicitly that the voice endorses the plan."
+     "3:40",
+     "**Delusions: persecutory (the FBI) · reference (TV and radio) · grandiose · passivity.**"
     ],
     [
-     "4:45",
-     "The delusion set — people against him, anyone trying to harm him, special powers, guilt, passivity phenomena, and 'Does the TV or radio talk about you?'"
+     "4:40",
+     "**Mood, sleep, appetite — 'on top of the world' with a restricted affect is INCONGRUENT.**"
     ],
     [
-     "5:30",
-     "Orientation and judgement, pushed through his agitation once and briefly — and ★ The containment sentence said out loud before he tries to leave."
+     "5:10",
+     "**Insight, orientation, judgement — one calm attempt at the fire question, then report it as NOT ASSESSED if unanswered.**"
+    ],
+    [
+     "5:40",
+     "**ACT: tell him he cannot leave today and that you must share this with the team and the police.**"
     ],
     [
      "6:00",
-     "Present the MSE in order, ending with 'He is a serious risk to others' — then the plan: not free to leave, team and police informed, organic and drug screen, urgent psychiatric review, treatment order if he declines."
+     "**PRESENT THE MSE heading by heading, with the risk described in full rather than ticked, and the closing line that he is a serious risk to others.**"
+    ],
+    [
+     "7:30",
+     "**Disposition: police and team informed, admission voluntary or under a Level 1 order, organic and drug screen, antipsychotic, social work for housing.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the confidentiality exception offered in the first thirty seconds is what makes the disclosure to police defensible — skip it at the start and the end of this station becomes much harder to justify",
-   "ask": [
-    "The risk block taken past 'Yes': 'Tell me more — how would you do it? Do you have anything to do it with? When?' and the companion question in every version: 'Any thoughts of harming anyone else?'",
-    "The containment sentence, said plainly: 'I'm worried about the safety of other people. I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in.'",
-    "The line for pushing through agitation without a battle: 'I know you're upset, max, and you want to go. I'll be quick.' then one question.",
-    "The delusion-of-reference question that this version exists to reward: 'Does the TV or radio talk about you?' and the passivity set: 'Are thoughts being put into or taken from your mind, or broadcast?'",
-    "The MSE sentences that must not be dropped: 'Homicidal ideation with a plan' · 'A voice that agrees with his plan' · 'Delusions of reference — the TV and radio talk about him' · 'Psychomotor agitation' · 'Time not answered; judgement not assessed' · and 'He is a serious risk to others.'"
-   ],
    "pefe": [
-    "Role-player: max, a homeless man brought by police. Tense, fearful and increasingly agitated, rocking with a head tremor, sniffing, talking back to a voice. He mumbles and stutters, answers in single words, and wants to leave today to act on his plan.",
-    "He reports his mood as 'On TOP of the world' despite looking frightened. He believes the fbi is trying to harm him and that the television and radio talk about him. The voice agrees with his plan. He has no suicidal ideation. He mumbles through the orientation questions and does not answer on time.",
-    "He is scored the same way as the other versions — re-opening after a denial, context and substances, mood and sleep, suicide asked with ideation and plan as an AUTOMATIC FAIL if omitted, harm to others, the voice explored, the full delusion set, insight and orientation, and an MSE that describes rather than ticks the risk — plus, uniquely here, whether the candidate says he is not free to leave.",
-    "Sibling cards: PSYCH-33 is version A, Alex, brought by his parents, with active suicidal ideation, a plan, a previous attempt and depersonalisation. PSYCH-61 is version B, Bruce, catatonic and motionless with command hallucinations from God and disorientation needing an organic cause excluded. The three are best run back to back, because the history structure is identical and only the risk profile moves — self in a, unassessed in B, and others in C.",
-    "The risk question that defines this version — 'You said you need to kill the president. Tell me more — how would you do it? Do you have anything to do it with? When?' The mark is in the detail: method, means, timing and intent. A candidate who records 'Homicidal ideation' without asking how, with what and when has ticked the box without describing the risk",
-    "The sentence that must be said out loud — 'I'm worried about the safety of other people. I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in.' Stated plainly, not hinted at — and it is the answer to his wanting to leave, not a negotiation",
-    "The voice endorses the plan — Auditory hallucinations of a voice that agrees with what he intends. A voice that confirms a homicidal plan raises the risk rather than explaining it away, and the link between the two belongs in the MSE",
-    "The delusions — Persecutory — the fbi is trying to harm him · delusions of reference — the television and radio talk about him, which is why 'Does the TV or radio talk about you?' Is a standing question in the delusion set. No suicidal ideation in this version",
-    "He mumbles through the orientation questions — Push through it once, briefly and without a battle: 'I know you're upset, max, and you want to go. I'll be quick. If there were a fire in this room, what would you do?' He is oriented to place and person; time is not answered and judgement is not assessed — report both as not established rather than guessing"
+    "**Investigations: urine drug screen — stimulants reproduce this picture · FBE, EUC, LFT, TSH, glucose · CT head if any organic pointer.**",
+    "**DUTY TO PROTECT: a named target with a plan and intent obliges you to inform the team and the police. This is one of the stated limits of confidentiality, and it is explained to him rather than done behind his back.**",
+    "**Disposition: Level 1 inpatient treatment order — up to 7 days, psychiatrist review within 24 hours, with rights to a second opinion and to appeal. SA mental health triage 13 14 65.** VERIFY.",
+    "**Homelessness is part of the management, not background: social work for housing, income and food, and it affects discharge planning entirely.**",
+    "**Say the negatives explicitly — no suicidal ideation, oriented to place and person — because unstated negatives read as unasked questions.**",
+    "**If he becomes threatening: call for help early, do not block the door alone, keep the exit behind you, and use the least restrictive approach that keeps everyone safe.**",
+    "**Terms: report 'judgement NOT ASSESSED' where he did not answer; 'poverty of speech' and 'poverty of ideas' are separate findings under speech and thought form.**"
    ],
-   "fails": [
-    "★ Recording homicidal ideation without asking how, with what and when",
-    "★ Letting him leave, or never saying out loud that he is not free to leave",
-    "★ Never asking about suicide because the presenting risk is to someone else",
-    "★ Not offering confidentiality with its harm exception at the start, then disclosing to police at the end with no foundation for it",
-    "Explaining the homicidal plan away as 'just the voice' rather than treating the endorsement as escalating risk; missing the delusions of reference; guessing at orientation to time or at judgement rather than reporting them as not established; battling him over the orientation questions instead of one brief push; and omitting the substance history in a man who is sniffing"
-   ],
-   "numbers": [
-    "Station 8 minutes — 6 minutes history, 2 minutes MSE · 3 versions · 6 delusion questions · brief psychotic disorder under 1 month · schizophreniform 1–6 months · schizophrenia 6 months or more",
-    "SA mental health triage 13 14 65 · TIS National 131 450 · organic screen and urine drug screen, with stimulants high on the list given the sniffing · collateral from the police who brought him · de-escalation and adequate staff before any sedation · duty to warn and to inform police where a named identifiable third party is at risk, and the current SA mental health act process for an inpatient treatment order — VERIFY both"
+   "ddx": [
+    [
+     "**Psychosis with homicidal ideation and a plan** — the answer",
+     "**A plan to kill a named public figure, endorsed by a voice, with intent to act today; persecutory delusion about the FBI; delusions of reference; agitation and poverty of speech**",
+     "**How, with what, when — and whether the voice endorses it**",
+     "**He does NOT leave. Team and police informed; admission voluntary or Level 1; antipsychotic**"
+    ],
+    [
+     "**Stimulant-induced psychosis**",
+     "**Amphetamine or methamphetamine use produces an identical picture with agitation and persecutory beliefs**",
+     "**Drug history and urine drug screen**",
+     "**Screen and treat. Do not wait to see whether it clears**"
+    ],
+    [
+     "**Mania with psychotic features**",
+     "**'On top of the world', reduced sleep need, pressured speech, grandiosity**",
+     "**Mood, sleep and appetite — his affect is restricted and incongruent with the stated mood**",
+     "**Consider; the disposition is unchanged**"
+    ],
+    [
+     "**Delusional disorder**",
+     "**A circumscribed persecutory system without other psychotic features**",
+     "**The full delusion set and the presence of hallucinations — he has them**",
+     "**Less likely; the hallucinations and disorganisation point to a broader psychosis**"
+    ],
+    [
+     "**Organic psychosis**",
+     "**Head injury, encephalitis, thyroid disease, intoxication**",
+     "**Fevers, headaches, head injury; bloods and imaging as indicated**",
+     "**Screen — homelessness raises the odds of an untreated medical problem**"
+    ],
+    [
+     "**Risk to others — the overriding issue**",
+     "**A named target, a stated plan, intent to act today, and a voice agreeing**",
+     "**The plan explored in full; previous violence**",
+     "**Duty to protect: inform the team and police, and detain under the Act if needed**"
+    ]
    ]
   },
   "source": "Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability (1).pdf Version C (Max, homeless, brought by police, with a voice that endorses his plan to kill a named public figure and intent to leave and act today — the version where the risk is to others, decided by taking the homicidal ideation past 'yes' and saying out loud that he is not free to leave; Version A, Alex, is PSYCH-33 and Version B, Bruce, is PSYCH-61)",
   "drive": "AMC Clinical Notability › Psychiatry › Psychosis_History_and_MSE_2_Case_Tasks_Script_Notability (1).pdf",
   "must": [
-   "FAIL — Recording homicidal ideation without taking it past 'yes' — HOW, with what, WHEN, and whether he intends to act today. He names a public figure and wants to leave in order to do it",
-   "FAIL — Missing that the voice AGREES with his plan — an endorsing or command hallucination is what turns intent into high risk, so ask what it says about the plan. Then the delusions: the FBI trying to harm him, and the TV and radio talking about him",
-   "FAIL — Never asking about suicide because the presenting risk is to someone else — ask both, every time",
-   "FAIL — Not offering confidentiality with its harm exception at the start, then disclosing to police at the end with no foundation for it — the exception is stated up front, and that is what makes the later disclosure legitimate",
-   "FAIL — Letting him leave, or never saying out loud that he is not free to leave — 'I'm worried about the safety of other people; I'm not able to let you leave today, and I'll need to share this with the team and the police who brought you in'",
-   "FAIL — Abandoning orientation and judgement because he is agitated, or leaving the observables out of the MSE — push through once and briefly ('I know you're upset and you want to go, I'll be quick'). He is oriented to place and person but does not answer time; and report the talking back to a voice, the rocking and head tremor as psychomotor agitation, the mumbling and poverty of speech, and a stated mood of 'on top of the world' incongruent with a fearful affect"
-  ]
+   "FAIL — Not exploring the homicidal plan exactly as you would a suicide plan. AUTO-FAIL.",
+   "FAIL — Letting him leave, or not telling the team and the police.",
+   "FAIL — Recording judgement as intact when he mumbled through the fire question.",
+   "FAIL — Missing that the voice ENDORSES the plan — it changes the risk entirely.",
+   "ASK — How would you do it? Do you have anything to do it with? When?",
+   "SAY — I'm not able to let you leave today, and I'll need to share this with the team and the police."
+  ],
+  "v2": true
  },
  {
   "id": "MED-249",
@@ -104231,7 +104552,6 @@ const EMBEDDED_CARDS = [
   "cat": "psych",
   "promptBell": true,
   "promptAt": 360,
-  "setting": "A six-minute history where the stem hands you a decoy. Sam dates everything to 'since the project started', and a candidate who accepts that takes the project as the diagnosis and lands on adjustment disorder. The project is the stressor; the trigger is talking in front of people. The second open question and the trigger question break the story open in the first minute, and the four social-phobia questions — always, judgement, avoidance, reasonable — are the criteria set the examiner is ticking. Her thyroid function is normal and is handed to you in the stem, which is exactly why thyroid still has to be named out loud in the differentials.",
   "stem": [
    "General practice, regional South Australia. Your next patient is Sam, 24, a computer programmer recently made lead project manager, who says she is 'feeling her nerves'. Her thyroid function tests are normal.",
    "She presents daily plans and reports to seniors and to people outside the company. She lives alone, is well supported by friends, takes no medications, drinks two coffees a day, drinks alcohol occasionally, and uses no drugs.",
@@ -104241,77 +104561,120 @@ const EMBEDDED_CARDS = [
    "Take a history — 6 minutes",
    "Explain the most likely diagnosis and the differential diagnoses to the patient"
   ],
-  "time": "0:00-0:45 confidentiality, open question, then the SECOND open question — 'what do you mean by feeling your nerves?' — which is where the story actually starts · 0:45-2:00 the three T's: timing (4-5 months), trigger (talking in front of people, not the project) and toll (sick leave on meeting days, warning emails from her boss) · 2:00-3:30 define the fear and ask the four key questions: crowds versus talking, always, worried what others think, avoidance, and 'do you think the reaction is reasonable?' · 3:30-4:30 rule-outs in context: panic symptoms, generally anxious, how the project is going, trauma, other life changes · 4:30-6:00 six psych questions including an explicit harm question, psychosis screen, HEADS, alcohol, drugs, caffeine and thyroid symptoms · 6:00-8:00 the diagnosis named in full with the reasons mapped onto her, then the differentials with why each is unlikely",
   "back": {
-   "dx": "Social phobia (social anxiety disorder), performance and interactional type, with avoidance and occupational impairment — she panics and stutters every time she has to speak in front of people, fears they will judge her as not good enough, takes sick leave to avoid meetings, knows the reaction is out of proportion, and her work is suffering. Crowds are fine: she went to a concert last week and shops normally, which is the line that separates this from agoraphobia. Duration 4-5 months, so DSM's six months is not yet met — say 'most likely' rather than pretending the criterion is satisfied. Differentials, each with its discriminator: agoraphobia — fear of being unable to escape or get help, and she is comfortable in crowds · specific phobia — confined to a single object or situation, not to being observed · panic disorder — unexpected attacks out of the blue plus worry about the next one, whereas hers are cued only by speaking · generalised anxiety disorder — worry across many domains most days, but she is fine when there is no meeting · post-traumatic stress disorder — a traumatic event with re-experiencing and hyperarousal, absent here · adjustment disorder — the temptation, because of the project; it does not explain a trigger that is specifically being watched and evaluated · major depression — pervasive low mood and anhedonia, absent · substance and caffeine-related anxiety, and thyrotoxicosis — named even though the TFT is normal, because naming them is what is scored.",
+   "dx": [
+    "**SOCIAL PHOBIA (SOCIAL ANXIETY DISORDER) — Sam, 24, a lead project manager who panics presenting and talking to colleagues, takes sick leave on meeting days, and also avoids cafés with colleagues, so this is NOT the performance-only subtype.** Her thyroid function tests are already normal.",
+    "**THE STEM OPENS VAGUELY — 'something's wrong with my nerves' — and firing the six psychological questions at that never finds the storyline. The SECOND OPEN QUESTION comes first: 'can you tell me a bit more about what's been happening?'**",
+    "**THEN THE TRIGGER QUESTION, WHICH IS THE AUTO-FAIL ITEM AND BELONGS IN THE FIRST MINUTE: 'IS THERE ANY PARTICULAR PLACE, PERSON OR SITUATION THAT BRINGS IT ON?' Timing and toll sit either side of it — how long, constant or intermittent, getting worse, and how it is affecting work and life.**",
+    "**DEFINE THE PHOBIA WITH ONE QUESTION, or the diagnosis is unjustified: 'DOES THIS HAPPEN IN CROWDED PLACES TOO — shopping, concerts — OR ONLY WHEN YOU HAVE TO TALK TO PEOPLE, PRESENT, OR BE IN A MEETING?' Concerts and shopping are fine, which excludes agoraphobia.**",
+    "**THE FOUR SOCIAL-PHOBIA KEY QUESTIONS: do you ALWAYS feel anxious in social situations like these · ARE YOU WORRIED ABOUT WHAT OTHERS WILL THINK if they see you anxious · have you been AVOIDING these situations · DO YOU FEEL THIS REACTION IS REASONABLE, or more than it should be?** **The fourth is the one candidates drop.**",
+    "**RULE-OUTS IN CONTEXT, one question each: PANIC — physical symptoms when anxious, chest pain, racing heart · GAD — 'are you generally an anxious person, worrying about lots of things?' ('only on meeting days' rules it out) · PTSD and mood — 'HOW IS THE PROJECT GOING?' · ADJUSTMENT — any other changes in your life.**",
+    "**Then the six psychological questions with the SUICIDE QUESTION IN EXPLICIT WORDS: 'any thoughts of harming or killing yourself, or anyone else?' — 'ending it all' is vague and loses the mark.**",
+    "**HEADS with the organic screen the anxiety cluster expects: who she lives with and whether they are supportive · work stress · still enjoying things · ALCOHOL, DRUGS, PREVIOUS PSYCHIATRIC MEDICATION, AND HOW MUCH COFFEE OR ENERGY DRINKS · HOT OR COLD WEATHER · any change in her sex life.**",
+    "**ON DURATION, BE PRECISE RATHER THAN SILENT: her symptoms began with the project four to five months ago and DSM typically asks for SIX MONTHS. If challenged: 'strictly the criteria ask for six months; she meets every other feature and it is impairing her work now, so my MOST LIKELY diagnosis is social anxiety disorder, which I'd confirm at follow-up.'** VERIFY.",
+    "**NAME IT IN FULL AND GIVE THE REASONS: fear when presenting or talking to colleagues and seniors · worry they will think badly of her · sick leave taken to avoid meetings · she recognises it is excessive · it is affecting her work. THEN THE DIFFERENTIALS EVEN IF YOU NEVER REACHED THEM IN THE HISTORY — agoraphobia, panic disorder, GAD, PTSD, adjustment disorder, caffeine, alcohol or drugs, and thyroid disease, which her normal TFT makes unlikely. YOUR DIFFERENTIALS ARE ALWAYS YOUR DIFFERENTIALS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Confidentiality first, then an open question, then the SECOND open question: 'Can you tell me more — what do you mean by feeling your nerves?' Do not jump to 'how is your mood?' before the cue is found."
+     "**Introduce, ask what to call her, CONFIDENTIALITY (there is no examination, so this replaces WIPE), open question — then THE SECOND OPEN QUESTION.**"
     ],
     [
-     "0:45",
-     "Three T's: how long · constant or comes and goes · any particular place, person or situation that brings it on · how it is affecting work and life. ★ The trigger question is the station."
+     "0:40",
+     "**THE 3 Ts: timing — how long, constant or intermittent, worse · THE TRIGGER QUESTION · the toll on work and life.**"
     ],
     [
      "2:00",
-     "Define it: 'Does this also happen in crowded places — shopping, concerts — or only when you have to talk to people or present?' Then the four: always anxious in those situations · worried what others will think · avoiding them · do you think the reaction is reasonable? ★ The reasonableness question carries the insight mark."
+     "**DEFINE IT: crowded places too, or only when she has to talk, present or be in a meeting?**"
     ],
     [
-     "3:30",
-     "Rule-outs using the stem's own context: panic symptoms (chest pain, racing heart, breathlessness), generally anxious between meetings, how the project itself is going, trauma, other life changes."
+     "2:20",
+     "**THE FOUR KEY QUESTIONS: always anxious socially · worried what others will think · avoiding · is the reaction reasonable.**"
+    ],
+    [
+     "3:00",
+     "**Rule-outs in context: panic (physical symptoms) · GAD (generally anxious) · 'HOW IS THE PROJECT GOING?' and any trauma · adjustment (other changes).**"
     ],
     [
      "4:30",
-     "Six psych questions with an explicit harm question, psychosis screen, HEADS, and SADMA — alcohol, drugs, coffee and energy drinks — plus a thyroid question. ★ Running out of time before drugs and thyroid means they go unnamed in the differentials."
+     "**The six psychological questions: mood · sleep with the type · appetite · SUICIDE AND HARM TO OTHERS IN EXPLICIT WORDS · hallucinations · strange ideas, guilt, special powers, anyone harming or controlling her.**"
+    ],
+    [
+     "5:30",
+     "**HEADS and organic: home and support · work stress · enjoyment · alcohol, drugs, psychiatric medication, COFFEE AND ENERGY DRINKS · HOT OR COLD WEATHER · sex life.**"
     ],
     [
      "6:00",
-     "Name it in full — 'social phobia, also called social anxiety disorder' — give the reasons mapped onto her own answers, then the differentials and why each is unlikely, and close on treatability."
+     "**Name SOCIAL PHOBIA in full with a one-line definition, then the five reasons from her own answers.**"
     ],
     [
      "7:00",
-     "Management if asked: CBT with graded exposure is first line · an SSRI (sertraline or escitalopram) if severe or if CBT is not enough VERIFY · no benzodiazepines, which relieve the moment and keep the fear alive · a workplace plan and reasonable adjustments rather than a certificate excusing every meeting · review at 2 weeks."
+     "**The differentials — including the ones you never had time to ask about — each with a reason, and the normal TFT quoted.**"
+    ],
+    [
+     "7:40",
+     "**Close: 'the good news is that this is very treatable', and offer the plan if the task allows.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "The second open question, verbatim: 'Can you tell me more — what do you mean by feeling your nerves?'",
-    "The trigger question, verbatim: 'Is there any particular place, person or situation that brings it on?' — the answer is talking in front of people, not the project.",
-    "The separating question: 'Does this also happen in crowded places — shopping, concerts — or only when you have to talk to people or present?'",
-    "The insight question that is separately scored: 'Do you think the reaction is reasonable?'",
-    "The naming line: 'Sam, I think you have a condition called social phobia, also called social anxiety disorder' — then the reasons in her own words, and 'it is common, and it is very treatable.'",
-    "If she asks for a certificate to skip meetings: 'I can support you with a plan and a letter for adjustments, but avoiding every meeting keeps the fear going — treatment works by building back up step by step.'"
-   ],
    "pefe": [
-    "Role-player brief — Sam, 24, lead project manager on a project that started 4-5 months ago. She answers vaguely ('just my nerves') until a second open question arrives, and mentions talking in front of people only when asked about a trigger.",
-    "Her answers: comes and goes · trigger is speaking to people · sick leave, boss unhappy · crowds fine, concert last week · anxious every time she has to speak · yes, worried they will think she is not good enough · yes, avoiding · no, she knows it is too much · no physical attack symptoms beyond panicky and stuttering · not generally anxious · project going fine · no trauma · mood stressed but sleep and appetite fine · no thoughts of harm · no psychosis · lives alone, fine · two coffees, rarely alcohol, no drugs.",
-    "She asks at the end: 'So I'm not going mad?' and 'Can it be fixed? My job depends on it.'",
-    "Variants worth rehearsing: she says the project failed and it was her fault — count depression criteria and consider adjustment disorder · she describes chest pain and fear of dying in meetings — cued only is social phobia with panic attacks, unexpected plus worry about the next is panic disorder · she admits drinking to get through events — AUDIT-C, and name alcohol as a coping behaviour and a differential.",
-    "Examiner challenge, 'why not agoraphobia?': 'She goes to concerts and shops without fear; the anxiety is confined to being observed and evaluated when speaking.'"
+    "**No examination. The thyroid function tests are ALREADY NORMAL in the stem — quote them, and still name thyroid disease in the differential list.**",
+    "**Organic screen inside the history: coffee and energy drinks quantified, alcohol used to cope, and the weather-preference question.**",
+    "**Numbers: DSM duration typically ≥6 MONTHS — say 'most likely' where it is shorter · four social-phobia key questions · Better Access psychology up to 10 sessions a calendar year.** VERIFY.",
+    "**Management if asked: psychoeducation — common, treatable, not a weakness · CBT FIRST LINE with graded exposure, challenging the 'they'll judge me' prediction and dropping safety behaviours · SSRI (sertraline, escitalopram, paroxetine) if moderate to severe or CBT is unavailable · lifestyle — cut caffeine, avoid alcohol to cope, exercise · with consent, a staged return plan with her manager · review in 2–4 weeks.** VERIFY.",
+    "**PROPRANOLOL 10–40 mg about an hour before a one-off presentation helps tremor and palpitations in PERFORMANCE-ONLY anxiety — off-label, and not with asthma.** VERIFY. **Sam avoids cafés too, so she is not performance-only.**",
+    "**AVOID: benzodiazepines · telling her to 'just push through' · signing indefinite sick leave, which feeds the avoidance that maintains the disorder.**",
+    "**Do not miss: depression and suicidality in a quiet, avoidant young adult · ALCOHOL USED TO COPE · the guilt about the failed project · and the risk of job loss.** **Numbers: Beyond Blue 1300 22 4636 · Lifeline 13 11 14 · SA mental health triage 13 14 65 · THIS WAY UP and MindSpot 1800 61 44 34.** VERIFY."
    ],
-   "fails": [
-    "★ Taking 'since the project started' as the answer and never asking what actually triggers it",
-    "★ Saying 'you have an anxiety disorder' instead of naming social phobia / social anxiety disorder",
-    "★ Skipping the explicit self-harm and harm-to-others question in the psych screen",
-    "★ Never asking whether she thinks the reaction is reasonable — the insight criterion",
-    "Running out of time before drugs and thyroid, then not naming them in the differentials; giving a certificate that excuses every meeting; recommending a benzodiazepine"
-   ],
-   "numbers": [
-    "Duration 4-5 months against a DSM threshold of six months — say 'most likely' · four social-phobia key questions · three T's: timing, trigger, toll · one question separates it from agoraphobia · TFT normal and still named",
-    "CBT with graded exposure first line · sertraline 25-50 mg mane up to 50-100 mg, or escitalopram 5-10 mg VERIFY · review at 2 weeks, response at 4-6 weeks VERIFY · avoid benzodiazepines · Beyond Blue 1300 22 4636 · Lifeline 13 11 14 · SA mental health triage 13 14 65 · VERIFY all"
+   "ddx": [
+    [
+     "**Social phobia (social anxiety disorder)** — the answer",
+     "**Fear when presenting and talking to colleagues; worry about being judged; sick leave to avoid meetings; also avoids cafés; recognises it as excessive; work impairment**",
+     "**The trigger question, crowds-versus-talking, and the four key questions**",
+     "**CBT with graded exposure; SSRI if moderate–severe; no benzodiazepines; review 2–4 weeks**"
+    ],
+    [
+     "**Agoraphobia**",
+     "**Fear of crowds, transport, queues, being outside the home alone**",
+     "**'Crowds, or only talking to people?' — concerts and shopping are fine**",
+     "**Excluded by one question. Calling it agoraphobia is a listed fail**"
+    ],
+    [
+     "**Panic disorder**",
+     "**UNEXPECTED attacks with physical symptoms, fear of dying, worry about the next one**",
+     "**Physical symptoms when anxious; whether any attack came out of the blue**",
+     "**Cued attacks in social settings are social phobia WITH panic attacks, not panic disorder**"
+    ],
+    [
+     "**Generalised anxiety disorder**",
+     "**Worry about many things, most days, for six months or more**",
+     "**'Are you generally an anxious person?' → 'only on meeting days'**",
+     "**Excluded**"
+    ],
+    [
+     "**Adjustment disorder or depression**",
+     "**Onset with the failed project; guilt, low mood, stopped activities**",
+     "**'How is the project going?' and the depression criteria**",
+     "**Version B of this stem. Count the criteria rather than assuming**"
+    ],
+    [
+     "**Caffeine, alcohol or drugs; hyperthyroidism; avoidant personality or autism**",
+     "**Long days and high caffeine; drinking before events; tremor and heat intolerance; LIFELONG shyness since childhood**",
+     "**Quantify caffeine and alcohol; weather preference; age of onset**",
+     "**TFT already normal — still name it. Onset with this project excludes lifelong traits**"
+    ]
    ]
   },
   "must": [
-   "FAIL — AUTO-FAIL: taking 'since the project started' as the answer and never asking the trigger question — 'is there any particular place, person or situation that brings it on?' in the first minute. Fire the six psych questions at 'my nerves' and the storyline never emerges; a SECOND open question is what breaks the vague opener",
-   "FAIL — AUTO-FAIL: skipping the explicit harm question — 'any thoughts of harming or killing yourself, or anyone else?'. 'Ending it all' is vague and loses the mark",
-   "FAIL — Not asking the four key questions — always anxious in those situations, worried what others will think if they see her anxious, avoiding them, and whether she thinks the reaction is reasonable. The fourth is the one candidates drop",
-   "FAIL — Not asking crowds versus talking, which is the single question that separates this from agoraphobia — she is fine at concerts and shopping, and her fear is of being judged, not of being unable to escape",
-   "FAIL — Giving no rule-outs — panic (physical symptoms and unexpected attacks; hers are cued only), GAD ('are you generally an anxious person?' — only on meeting days), PTSD and context ('how is the project going?'), and adjustment (any other changes). Ask the organic screen too: coffee and energy drinks, alcohol used to cope, and weather preference",
-   "FAIL — Saying 'an anxiety disorder' without naming social phobia or social anxiety disorder, and without the reasons — the fear comes on presenting and talking to colleagues, she worries they will think badly of her, she has taken sick leave to avoid meetings, she knows it is excessive, and it is affecting her work. Her symptoms are only four to five months old against a six-month criterion, so say MOST LIKELY. Name drugs, caffeine and thyroid in the differentials even if time ran out to ask, and finish with 'it is common, and it is very treatable'"
+   "FAIL — Missing the trigger question in the first minute. AUTO-FAIL.",
+   "FAIL — Not asking explicitly about harming or killing herself. 'Ending it all' is vague. AUTO-FAIL.",
+   "FAIL — Calling it agoraphobia or panic disorder. Ask crowds versus only talking.",
+   "FAIL — Naming only 'anxiety disorder', or abbreviating it to GAD.",
+   "ASK — Is there any particular place, person or situation that brings it on?",
+   "SAY — Does this happen in crowded places too, or only when you have to talk to people?"
   ],
   "source": "Social_Phobia_2_Case_Tasks_Script_Notability.pdf (Sam, 24, a lead project manager who panics and stutters presenting to seniors, takes sick leave on meeting days and is comfortable in crowds — a six-minute history plus diagnosis-and-differentials station, thyroid function normal in the stem). Distinct from PSYCH-56, the social-anxiety MSE video station.",
-  "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › Social_Phobia_2_Case_Tasks_Script_Notability.pdf"
+  "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › Social_Phobia_2_Case_Tasks_Script_Notability.pdf",
+  "v2": true
  },
  {
   "id": "OG-92",
@@ -104539,7 +104902,6 @@ const EMBEDDED_CARDS = [
   "cat": "psych",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "A toxicology station played entirely through a frightened father. His question — 'is he going to get brain damage?' — arrives in the first thirty seconds and will keep arriving until it is answered properly, linked to airway and oxygen. Answer it early and in full and the station opens up; say 'we'll get to that' and it becomes a loop that eats the eight minutes. The collateral history is the other half: a breakup, barely sleeping, and twice saying he 'didn't see the point' turn this from a recreational overdose into a presentation that needs a mental health assessment before discharge.",
   "stem": [
    "Emergency department, regional South Australia. Josh, 22, has been brought in after an overdose of MDMA and alprazolam taken at a party overnight. His conscious level has fluctuated — very low on arrival, then GCS 9, then 14 and alert, now 9 again. Liver function tests are raised.",
    "You are speaking to his father, Mark, 52.",
@@ -104550,76 +104912,120 @@ const EMBEDDED_CARDS = [
    "Address his concerns",
    "Explain the investigations and the immediate management"
   ],
-  "time": "0:00-1:00 introduce, open question, empathy, confidentiality, ask for his specific concern — the brain question surfaces here · 1:00-2:00 what, how much, when, and ★ other co-ingestants: alcohol, GHB, other pills; previous use · 2:00-3:30 mental health, previous attempts, suicidal thoughts, mood, sleep, stressors · 3:30-4:30 the brain question answered in full: oxygen, temperature, sodium, honesty · 4:30-7:00 investigations, then management strictly A to B to C, monitoring, the flumazenil decision, the toxicologist, ICU · 7:00-8:00 mental health review before discharge, keeping him informed, empathy, questions",
   "back": {
-   "dx": "Mixed sympathomimetic and sedative overdose — MDMA plus alprazolam — with a fluctuating conscious level and raised transaminases, in a young man whose collateral history discloses a recent breakup, poor sleep, social withdrawal and two passive statements that he 'didn't see the point'. Two things follow. Clinically, the airway is the problem: a GCS that swings between 9 and 14 will not reliably be protected, and the management is supportive in primary-survey order rather than any antidote. Dispositionally, this is not a recreational overdose to be slept off — it requires a mental health assessment before discharge. Complications to have named: hyperthermia and serotonin toxicity, hyponatraemia from ADH release plus large water intake, rhabdomyolysis, seizures, arrhythmia and hypertension from MDMA against sedation and hypotension from alprazolam, and hepatotoxicity, which the raised LFTs already point at. Flumazenil is avoided: reversing the benzodiazepine in a mixed sympathomimetic overdose can precipitate seizures.",
+   "dx": [
+    "**MIXED MDMA AND ALPRAZOLAM OVERDOSE with a FLUCTUATING GCS and raised liver enzymes, and possible DELIBERATE self-poisoning.** You are speaking to his father. **The theme: a fluctuating GCS means he may not protect his airway, and HYPOXIA IS THE PREVENTABLE CAUSE OF BRAIN INJURY — so the answer to the father's question and the management plan are the same thing.**",
+    "**SURFACE THE BRAIN QUESTION EARLY RATHER THAN WAITING FOR IT: after the empathy, ask 'is there anything specific you'd like me to address?' He is briefed to keep asking until it is answered properly.**",
+    "**THE ANSWER, HONEST AND UNGUARANTEED: 'brain injury happens when the brain doesn't get enough oxygen. That's exactly why our first job is keeping his airway open and his oxygen normal — with a breathing tube if needed. We're also watching his temperature and his salt level, which we can treat. If we keep those safe, we don't expect brain injury, and most young people recover fully. I CAN'T GIVE A GUARANTEE, but I will keep you updated at every step.'**",
+    "**THE COLLATERAL HISTORY: what he was doing in the last 24 hours · HOW DO YOU KNOW HE TOOK DRUGS — what, how much, when · COULD HE HAVE TAKEN ANYTHING ELSE, alcohol, other pills, GHB, medicines · previous drug use · past mental health problems · PREVIOUS ATTEMPTS · any recent thoughts of suicide · mood, sleep, stressors — THE BREAKUP · and any vomiting or jaundice before this.**",
+    "**NARRATE THE PRIMARY SURVEY IN ORDER. AIRWAY: his consciousness is going up and down and is lower than usual, so he may not keep his airway open — a breathing tube may be needed. BREATHING: monitor, oxygen if levels drop, ventilate if necessary — AND THIS IS WHERE THE BRAIN ANSWER BELONGS. CIRCULATION: MDMA pushes pulse and pressure up, alprazolam pulls them down, so treat whichever way they go.**",
+    "**WHY THE GCS FLUCTUATES — the list that shows you understand the case: benzodiazepine effect wearing on and off · GHB CO-INGESTION, whose signature is abrupt swings between coma and wakefulness · HYPONATRAEMIA · seizure or post-ictal state · hypoglycaemia · head injury.**",
+    "**MDMA = EVERYTHING UP — heart rate, blood pressure, temperature, agitation, seizures, liver enzymes, CK — AND SODIUM DOWN. ALPRAZOLAM = EVERYTHING DOWN — conscious level and respiratory rate. Saying that in one sentence explains why his observations are unpredictable.**",
+    "**THE ANTIDOTE QUESTION: 'there is an antidote for alprazolam, but it can cause seizures — especially with MDMA — so we usually don't use it. I'm discussing him with a toxicologist.'** **NALOXONE reverses opioids, not benzodiazepines — only if opioid co-ingestion is suspected. NO charcoal (late, and an airway risk). NO beta-blockers for MDMA tachycardia. If he seizes or is agitated, a BENZODIAZEPINE is still the treatment.**",
+    "**THE SUICIDE SCREEN IS NOT OPTIONAL just because this looks recreational: previous attempts, recent thoughts, the breakup — and A MENTAL HEALTH ASSESSMENT BEFORE DISCHARGE, stated as part of the plan.**",
+    "**CONFIDENTIALITY WITH A DEMANDING PARENT: 'I'll share what's needed for his care now; once Josh is awake, he decides what's shared.'** **CORRECTION: an enduring power of attorney covers finances — medical decisions for an adult without capacity sit with a substitute decision-maker or person responsible, and EMERGENCY TREATMENT PROCEEDS WITHOUT CONSENT.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "Introduce, confirm the relationship, open question — 'can you tell me what's happened so far?' — empathy said out loud, confidentiality, and ★ ask for his specific concern, which is where the brain question comes from."
+     "**Introduce, confirm the relationship, open question — 'can you tell me what's happened so far?' — then OVERDO THE EMPATHY, and ask what specifically he wants addressed.**"
     ],
     [
      "1:00",
-     "History from the father: last 24 hours · what, how much, when, and how he knows · ★ anything else — alcohol, other pills, GHB, medicines · previous drug use · any vomiting or yellow skin before this."
+     "**EXPOSURE: last 24 hours · how he knows drugs were taken, what, how much, when · COULD HE HAVE TAKEN ANYTHING ELSE — alcohol, pills, GHB · previous drug use.**"
     ],
     [
      "2:00",
-     "★ Mental health and risk: past mental health problems, previous attempts, suicidal thoughts, mood and sleep, recent stressors. The breakup and the 'didn't see the point' comments change the disposition."
+     "**MENTAL HEALTH: past problems · PREVIOUS ATTEMPTS · recent suicidal thoughts · mood, sleep and stressors including the breakup · vomiting or jaundice beforehand.**"
     ],
     [
-     "3:30",
-     "★ Answer the brain question once and in full: brain injury happens when the brain does not get enough oxygen; the first job is keeping his airway open and his oxygen normal, with a breathing tube if needed; temperature and salt levels are being watched and both are treatable; if those are kept safe we do not expect brain injury and most young people recover fully — no promise, but regular updates."
+     "3:15",
+     "**INVESTIGATIONS: UEC with SODIUM, LFT, INR, CK, blood gas, lactate, FBC · ECG · PARACETAMOL AND ETHANOL LEVELS · CT brain if the GCS is unexplained or there is injury.**"
     ],
     [
-     "4:30",
-     "Investigations in plain words: glucose · ★ sodium, the MDMA-specific one · renal function, LFTs and clotting · CK · venous blood gas · ECG · paracetamol and ethanol levels · CT head if the conscious level stays unexplained."
+     "4:15",
+     "**AIRWAY first, narrated: fluctuating and low GCS, may not protect it, intubation if needed.**"
     ],
     [
-     "5:30",
-     "★ Management in primary-survey order — airway first, because a fluctuating GCS may not be protected, so intubation if he cannot protect it; then breathing with oxygen and ventilatory support; then circulation, treating whichever way blood pressure goes; continuous cardiac, observation and neurological monitoring; active cooling and benzodiazepines if hyperthermic; ICU."
+     "5:00",
+     "**BREATHING — and deliver THE BRAIN ANSWER here, linked to oxygen, temperature and sodium, without a guarantee.**"
+    ],
+    [
+     "6:00",
+     "**CIRCULATION: the opposing toxidromes, treated whichever way the observations go; continuous cardiac monitoring.**"
+    ],
+    [
+     "6:30",
+     "**The antidote question answered with the seizure risk and the toxicologist; ICU or HDU care.**"
     ],
     [
      "7:00",
-     "★ Flumazenil explained, not just refused: it can precipitate seizures in a mixed overdose, so it is avoided, and the toxicologist is involved — Poisons Information 13 11 26. Close on a mental health assessment before discharge, involving Mark in decisions, and time with his son."
+     "**MENTAL HEALTH ASSESSMENT BEFORE DISCHARGE, and harm-reduction and drug service follow-up.**"
+    ],
+    [
+     "7:30",
+     "**Close: return to the brain question once more, promise updates, and invite questions.**"
     ]
    ],
-   "planApprox": false,
-   "ask": [
-    "The opening that stops the loop: 'That's the most important question, so I'll answer it properly in a moment, once I understand a bit more. He's in safe hands.'",
-    "The co-ingestant question, said in full: 'Could he have taken anything else — alcohol, other pills, GHB?'",
-    "The risk question asked of a father: 'Any mental health problems in the past, or times he has tried to harm himself? Any thoughts that he didn't want to be here? Any recent stresses?'",
-    "'Brain injury happens when the brain doesn't get enough oxygen. Our first job is to keep his airway open.' · 'I can't promise, but I'll keep you updated.'",
-    "'MDMA pushes blood pressure up; the Xanax pulls it down.' · 'The antidote can cause seizures with MDMA, so we avoid it — I'm speaking with a toxicologist.'",
-    "Curveballs: 'was this a suicide attempt?' — we don't know yet, the mental health team will talk with him, and what you've told me helps · 'will the police be involved?' — our job is his health; we don't report personal drug use to police · 'can he go home tonight?' — not until awake, stable, observed and seen by the mental health team · he blames the friend — acknowledge the anger, the friend likely saved his life by calling."
-   ],
    "pefe": [
-    "Role-player brief — Mark, 52, a plumber, frightened and exhausted and a little angry at himself. He asks 'is he going to have brain damage?' in his first answer and keeps asking, up to three times, until it is answered properly with the oxygen and airway logic; then he visibly calms and stops.",
-    "His answers: at a party, mate found him collapsed at 3 am · two pills and some Xanax around midnight, probably drinking too, does not know about anything else · has used ecstasy and cannabis before · no diagnosed mental illness, no previous attempts, no regular medicines · girlfriend of two years left him two weeks ago · barely sleeping, in his room all day · twice said he 'didn't see the point' · vomited at the party.",
-    "He asks 'why don't you just give him the antidote?' during the management, and 'can I see him?' near the end. If the doctor promises Josh will be fine, he relaxes — and that is the candidate's error, not a pass.",
-    "Examiner follow-ups, one line each: why avoid beta-blockers — unopposed alpha stimulation may worsen hypertension, and benzodiazepines are first line for sympathomimetic toxicity · why does MDMA cause hyponatraemia — ADH release plus large water intake, worse in young women · is a urine drug screen useful — rarely changes acute management, the clinical toxidrome guides treatment."
+    "**ABCDE: position, suction and airway adjuncts, INTUBATE IF GCS ≤8 OR HE CANNOT PROTECT THE AIRWAY · SpO2 and oxygen to target, ventilate if needed · IV access, cardiac monitor, blood pressure · GCS, pupils, BSL · TEMPERATURE.**",
+    "**Bloods: UEC with SODIUM — the MDMA-specific test · LFT and INR · CK · venous or arterial gas and lactate · FBC · ECG · PARACETAMOL AND ETHANOL LEVELS in every deliberate ingestion · CT brain if the GCS is unexplained or injury is suspected.**",
+    "**Numbers: temperature >39 °C → active cooling; >40 °C → sedation, paralysis and ventilation · symptomatic hyponatraemia (confusion, seizures, coma) → hypertonic saline per protocol whatever the exact value · GCS ≤8 → intubate.** VERIFY.",
+    "**AVOID: FLUMAZENIL (seizures with a pro-convulsant and in benzodiazepine dependence) · activated charcoal (late, airway risk) · BETA-BLOCKERS for MDMA tachycardia · hypotonic fluids if sodium is low · false reassurance.**",
+    "**Naloxone is for OPIOIDS only — give it if opioid co-ingestion is suspected (pinpoint pupils, slow breathing). If he seizes or is agitated, a benzodiazepine remains the treatment despite the co-ingestion.**",
+    "**Numbers: Poisons Information Centre 13 11 26 · MedSTAR 1300 13 12 33 for rural retrieval to an Adelaide ICU · SA mental health triage 13 14 65 · DASSA ADIS 1300 13 1340.**",
+    "**Disposition: observe until consciousness is sustained and vital signs are normal; ICU or HDU while the GCS fluctuates; MENTAL HEALTH ASSESSMENT BEFORE DISCHARGE, with harm-reduction advice and drug and alcohol follow-up.**"
    ],
-   "fails": [
-    "★ Deferring the brain-damage question — 'we'll get to that' — or answering it with 'he'll be fine' or 'we can't say'",
-    "★ Never asking about co-ingestants, especially alcohol and GHB",
-    "★ Missing the mental health and suicidality history, and discharging the idea of a mental health assessment with it",
-    "★ Giving management out of order — IV access or circulation before the airway, with a conscious level swinging between 9 and 14",
-    "Skipping sodium in the investigations; refusing flumazenil without explaining why; forgetting the toxicologist; no updates offered to Mark"
-   ],
-   "numbers": [
-    "Intubate at GCS 8 or below, or if he cannot protect his airway · hyperthermia above 39 degrees, severe above 40 · symptomatic hyponatraemia treated with hypertonic 3% saline · flumazenil avoided · charcoal not indicated here VERIFY",
-    "Poisons Information 13 11 26 · MedSTAR 1300 13 12 33 · SA mental health triage 13 14 65 · Lifeline 13 11 14 · investigations: glucose, sodium, renal function, LFTs, INR, CK, venous gas, ECG, paracetamol and ethanol levels VERIFY"
+   "ddx": [
+    [
+     "**Mixed MDMA and benzodiazepine overdose** — the answer",
+     "**Party last night, fluctuating GCS between 9 and 14, raised liver enzymes, known previous drug use**",
+     "**What, how much, when — and what else**",
+     "**AIRWAY first, intubate if he cannot protect it; supportive care; toxicologist; ICU**"
+    ],
+    [
+     "**GHB co-ingestion**",
+     "**ABRUPT swings between coma and wakefulness — the classic party signature**",
+     "**'Could he have taken anything else — GHB?'**",
+     "**Supportive care and airway protection; it changes nothing about the priorities**"
+    ],
+    [
+     "**MDMA hyponatraemia**",
+     "**Confusion, vomiting, seizures after heavy water intake**",
+     "**SODIUM — the MDMA-specific test**",
+     "**Fluid restriction; hypertonic saline if symptomatic. NO hypotonic fluids**"
+    ],
+    [
+     "**Hyperthermia and serotonin toxicity**",
+     "**Temperature >39 °C, rigidity, clonus, agitation**",
+     "**Temperature, CK, ECG**",
+     "**Active cooling, benzodiazepines; severe → sedation, paralysis, ventilation**"
+    ],
+    [
+     "**Hepatotoxicity, rhabdomyolysis, head injury**",
+     "**Raised LFTs, dark urine, a fall or focal signs**",
+     "**LFT and INR, CK and UEC, examination and CT brain**",
+     "**Check a paracetamol level regardless; fluids for rhabdomyolysis**"
+    ],
+    [
+     "**Deliberate self-poisoning**",
+     "**Recent breakup; previous suicidal ideas; escalating drug use the family could not stop**",
+     "**Previous attempts and recent suicidal thoughts, asked of the father**",
+     "**MENTAL HEALTH ASSESSMENT BEFORE DISCHARGE — never treat this as purely recreational**"
+    ]
    ]
   },
   "must": [
-   "FAIL — AUTO-FAIL: deferring the brain-damage question instead of answering it early and linking it to airway and oxygen — brain injury happens when the brain does not get enough oxygen, which is exactly why the first job is keeping his airway open, with a tube if needed, and why temperature and sodium are watched too",
-   "FAIL — False reassurance ('he'll definitely be fine') or a cold interrogation — 'we don't expect brain injury if we keep those safe, and most young people recover fully; I can't give a guarantee, but I'll keep you updated at every step'. Overdo the empathy, because there is spare time in this station",
-   "FAIL — AUTO-FAIL: narrating circulation before airway — 'first we'll put in a drip'. Strictly airway (position, suction, intubate if the GCS is 8 or under or he cannot protect it), then breathing (oxygen, ventilate if needed), then circulation (MDMA pushes pulse and pressure up, alprazolam pulls them down, so treat whichever way they go)",
-   "FAIL — Not asking about other co-ingestants, especially alcohol and GHB — abrupt swings between coma and wakefulness at a party are GHB's signature. Ask how he knows drugs were taken, what and when, and about previous use",
-   "FAIL — Missing suicidality and the recent stressors in the collateral history — past mental health problems, previous attempts, any recent thoughts of suicide, mood and sleep, and the breakup. Then a mental health assessment before he goes home",
-   "FAIL — Omitting the MDMA-specific tests, or recommending flumazenil — check SODIUM (hyponatraemia from ADH release plus water intake) and CK, plus LFTs, INR, a gas, glucose, an ECG, and paracetamol AND ethanol levels, which are routine in every deliberate ingestion. Explain why flumazenil is avoided rather than just refusing it: seizure risk with a pro-convulsant. No charcoal, no beta-blockers, and discuss with a toxicologist on Poisons Information 13 11 26"
+   "FAIL — Dodging the brain-damage question until he has asked three times. AUTO-FAIL.",
+   "FAIL — Starting management with a drip. AIRWAY, then breathing, then circulation. AUTO-FAIL.",
+   "FAIL — Recommending flumazenil. Seizure risk with a pro-convulsant.",
+   "FAIL — Treating it as recreational and never screening suicide.",
+   "ASK — Could he have taken anything else — alcohol, other pills, GHB, medicines?",
+   "SAY — Brain injury happens when the brain doesn't get enough oxygen — that's why the airway is our first job."
   ],
   "source": "MDMA_Alprazolam_Overdose_2_Case_Tasks_Script_Notability.pdf (Josh, 22, mixed MDMA and alprazolam overdose with a GCS swinging between 9 and 14 and raised LFTs; the whole station is played through his father Mark, whose repeated question about brain damage is the communication task).",
-  "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › MDMA_Alprazolam_Overdose_2_Case_Tasks_Script_Notability.pdf"
+  "drive": "AMC Clinical Notability › Psychiatry › Psych 2 › MDMA_Alprazolam_Overdose_2_Case_Tasks_Script_Notability.pdf",
+  "v2": true
  },
  {
   "id": "PE-103",
