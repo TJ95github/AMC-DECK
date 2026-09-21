@@ -28416,9 +28416,8 @@
  {
   "id": "MED-111",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "General practice. Version C of the generalised body aches stem (reconstructed from the Part 2 §6 variant script — name and vitals reconstructed). The travel history is the station: eight named travel questions — two questions is a fail. The examiner hands over a photograph of the forearm (expanding red ring with central clearing) and states tender axillary lymphadenopathy.",
   "stem": [
    "A 57-year-old woman presents with aches and pains all over her body for the past week. She returned two weeks ago from a holiday in the United States. Observations are normal."
   ],
@@ -28427,91 +28426,219 @@
    "Physical examination findings will be given to you on a card",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. WIPE, pain, validate · site/pattern briefly (diffuse myalgia, arthralgia, fatigue, ± fever/headache) · ★ TRAVEL HISTORY IN FULL, eight questions: (A) where exactly and how long, activities (B) ★ bushwalking/hiking/camping — tick or insect bites (C) sick or animal contacts (D) drugs, alcohol (E) blood exposure — tattoos, piercings, procedures, transfusion (F) street food, untreated water (G) pre-travel GP — vaccines, malaria tablets (H) sex overseas, condoms · ★ 'did you notice any rash?' → 'I found something on my arm' · fever pattern, headache, neck stiffness, facial droop, palpitations/syncope (carditis), joint swelling (knee) · serious-cause sweep abbreviated · meds/SADMA · card/photo → ★ 'erythema migrans with regional lymphadenopathy in a patient with exposure in an endemic US area — diagnostic of early Lyme disease; treat clinically without waiting for serology, which is often negative in the first weeks' · explain, doxycycline, sun, prevent later joint/heart/nerve complications · DDx · 'can you catch it in Australia?' answered honestly.",
+  "findings": [
+   [
+    "THE CARD",
+    "PHOTOGRAPH OF THE FOREARM SHOWING A TARGET OR BULLSEYE RASH · AXILLARY LYMPHADENOPATHY. Variable across role-players: FEVER, SWEATS, TIREDNESS. Some recalls add HEADACHE"
+   ],
+   [
+    "ERYTHEMA MIGRANS IS NOT ALWAYS A BULLSEYE",
+    "It may be UNIFORMLY RED, BLUE-RED, BLISTERED CENTRALLY, OR MULTIPLE if disseminated. It EXPANDS SLOWLY OVER DAYS, IS USUALLY NEITHER ITCHY NOR PAINFUL, and appears ROUGHLY 3 TO 30 DAYS AFTER THE BITE. ABSENCE OF A RASH DOES NOT EXCLUDE THE DIAGNOSIS — A SUBSTANTIAL MINORITY NEVER DEVELOP ONE"
+   ],
+   [
+    "THE EXAMINER HAS A YES/NO BOX",
+    "DID THIS CANDIDATE TAKE A COMPLETE TRAVEL HISTORY? TWO QUESTIONS WILL NOT TICK IT, EVEN WITH AN OTHERWISE STRONG PERFORMANCE. 'DID YOU GO BUSHWALKING?' AND NOTHING ELSE IS THE AUTOMATIC FAIL"
+   ],
+   [
+    "ALL EIGHT TRAVEL QUESTIONS, OUT LOUD, IN ORDER",
+    "A WHERE EXACTLY AND HOW LONG, AND WHAT ACTIVITIES · B ANY BUSHWALKING OR CAMPING, AND DID YOU NOTICE ANY TICK OR INSECT BITES · C ANY CONTACT WITH SICK PEOPLE OR ANIMALS · D ANY DRUGS, OR MUCH ALCOHOL"
+   ],
+   [
+    "…and the second four",
+    "E ANY EXPOSURE TO BLOOD — TATTOOS, PIERCINGS, MEDICAL OR DENTAL PROCEDURES, TRANSFUSION · F ANY STREET FOOD OR UNTREATED WATER · G DID YOU SEE A GP BEFORE TRAVELLING, VACCINES OR MALARIA TABLETS · H DID YOU HAVE SEX WHILE OVERSEAS, AND DO YOU USE CONDOMS"
+   ],
+   [
+    "ASK ABOUT THE TICK DIRECTLY",
+    "'DID YOU NOTICE A TICK, AND DID YOU PULL IT OFF?' Then advise FREEZE IT, DON'T SQUEEZE IT — an ether-containing spray, or FINE-TIPPED FORCEPS GRASPING CLOSE TO THE SKIN. DO NOT TWIST, BURN OR APPLY CHEMICALS, WHICH PROMOTE REGURGITATION OF GUT CONTENTS"
+   ],
+   [
+    "THREE THINGS TOGETHER MAKE THE DIAGNOSIS",
+    "SHE WAS IN AN AREA WHERE IT OCCURS · SHE WAS BUSHWALKING · AND SHE HAS A CHARACTERISTIC RASH WITH A SWOLLEN GLAND IN THE ARMPIT. Say the three out loud as your reasoning"
+   ],
+   [
+    "TREAT NOW, DO NOT WAIT FOR SEROLOGY",
+    "SEROLOGY IS FREQUENTLY NEGATIVE IN THE FIRST WEEKS. IF ERYTHEMA MIGRANS IS PRESENT WITH A COMPATIBLE EXPOSURE, TREAT IMMEDIATELY"
+   ],
+   [
+    "THE AUSTRALIAN POSITION, HANDLED GENTLY",
+    "LOCALLY ACQUIRED CLASSICAL LYME BORRELIOSIS IS NOT RECOGNISED IN AUSTRALIA — there is no accepted evidence that Borrelia burgdorferi is endemic here, SO A DIAGNOSIS REQUIRES TRAVEL TO AN ENDEMIC REGION. A comparable illness without that exposure is described as DSCATT. ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, OFFER STRUCTURED FOLLOW-UP"
+   ],
+   [
+    "THE AUSTRALIAN DIFFERENTIALS THAT OUTRANK IMPORTED ONES",
+    "In an Australian patient, ROSS RIVER VIRUS and BARMAH FOREST VIRUS — mosquito-borne alphaviruses causing POLYARTHRALGIA, MYALGIA AND PROFOUND FATIGUE LASTING MONTHS — are FAR MORE LIKELY THAN ANY IMPORTED INFECTION. Also Q FEVER from abattoir, farm and livestock exposure, and BRUCELLOSIS in feral-pig hunters"
+   ]
+  ],
+  "findingsLabel": "Version C — the rash on the card, and the eight questions the examiner is counting",
+  "must": [
+   "FAIL — 'Did you go bushwalking?' and nothing else. Two questions do not tick the box.",
+   "FAIL — Waiting for serology before treating a clear erythema migrans.",
+   "FAIL — Sending specimens to a non-accredited 'chronic Lyme' laboratory.",
+   "FAIL — Red flags asked selectively because the story looks infective.",
+   "ASK — Did you notice a tick, and did you pull it off?",
+   "ASK — Where exactly did you go, how long, and what activities did you do?"
+  ],
   "back": {
-   "dx": "Early localised Lyme disease (erythema migrans) — two weeks in Wisconsin visiting her sister, a lot of hiking in the woods, no bite remembered but 'found something on my arm afterwards'; now diffuse aches, fatigue ± low-grade fever, headache; examiner's photo: expanding red ring with central clearing (target/bullseye) on the forearm, tender axillary lymphadenopathy. Diagnosis is clinical: endemic exposure + characteristic rash; serology often negative in the first weeks (two-tier ELISA → Western blot) — do not withhold treatment for it. Doxycycline 100 mg bd for 10–21 days VERIFY; treat now to prevent disseminated disease (arthritis, carditis/heart block, facial palsy/meningitis).",
+   "dx": [
+    "**EARLY LYME DISEASE — infection with BORRELIA BURGDORFERI SENSU LATO, transmitted by IXODES TICKS in endemic regions of NORTH AMERICA, EUROPE AND PARTS OF ASIA, presenting early with ERYTHEMA MIGRANS AND A FLU-LIKE ILLNESS.**",
+    "**THE DISCRIMINATING ISSUE: THE COMPLETE TRAVEL HISTORY. THE EXAMINER HAS A SINGLE YES/NO BOX FOR IT, AND TWO QUESTIONS WILL NOT TICK IT EVEN WITH AN OTHERWISE STRONG PERFORMANCE.**",
+    "**TIE IT TO THE FINDINGS, THREE THINGS TOGETHER: 'I think you most likely have LYME DISEASE. It is a BACTERIAL INFECTION CARRIED BY TICKS. I'm saying that because of THREE THINGS TOGETHER: you were IN AN AREA WHERE IT OCCURS, you were BUSHWALKING, and you have A VERY CHARACTERISTIC RASH ON YOUR FOREARM WITH A SWOLLEN GLAND IN THE ARMPIT. IT RESPONDS WELL TO A COURSE OF ANTIBIOTIC TABLETS.'**",
+    "**TREATMENT: DOXYCYCLINE 100 mg TWICE DAILY FOR ERYTHEMA MIGRANS, usual duration 10 TO 21 DAYS. AMOXICILLIN OR CEFUROXIME if doxycycline is contraindicated — PREGNANCY, OR CHILDREN UNDER 8.** VERIFY against current Therapeutic Guidelines.",
+    "**WARN ABOUT TWO THINGS: PHOTOSENSITIVITY WITH DOXYCYCLINE, and a POSSIBLE JARISCH-HERXHEIMER REACTION IN THE FIRST 24 HOURS.** **DISCUSS WITH INFECTIOUS DISEASES IF THERE IS CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS.**",
+    "**TWO-TIER SEROLOGY — SCREENING EIA, THEN IMMUNOBLOT ON REACTIVE SAMPLES — AT AN AUSTRALIAN ACCREDITED LABORATORY. BUT DO NOT WAIT FOR IT: SEROLOGY IS FREQUENTLY NEGATIVE IN THE FIRST WEEKS, AND A COMPATIBLE EXPOSURE WITH ERYTHEMA MIGRANS IS TREATED CLINICALLY.**",
+    "**DO NOT SEND SPECIMENS TO OVERSEAS OR NON-ACCREDITED LABORATORIES OFFERING 'CHRONIC LYME' PANELS — RESULTS ARE UNVALIDATED AND DRIVE HARMFUL LONG-COURSE ANTIBIOTICS.**",
+    "**THE AUSTRALIAN POSITION: LOCALLY ACQUIRED CLASSICAL LYME BORRELIOSIS IS NOT RECOGNISED HERE, SO THE DIAGNOSIS REQUIRES TRAVEL TO AN ENDEMIC REGION. Patients with a comparable illness WITHOUT that exposure are described under DSCATT — DEBILITATING SYMPTOM COMPLEXES ATTRIBUTED TO TICKS. HANDLE IT GENTLY: ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, AND OFFER STRUCTURED FOLLOW-UP.** VERIFY current SA Health guidance and notifiable status.",
+    "**EIGHT DIFFERENTIAL GROUPS, ANNOUNCED BY NAME — AN UNSPOKEN STRUCTURE SCORES NOTHING: RED FLAGS AND MALIGNANCY · INFECTION · THE ARTHRITIDES · SOFT TISSUE AND MUSCLE · NEUROLOGICAL · ENDOCRINE AND METABOLIC · MEDICATIONS · PSYCHOSOCIAL LAST.** **RED FLAGS ARE UNCONDITIONAL — EVERY AGE, EVERY DURATION, however infective the story looks.**",
+    "**PREVENTION COUNSELLING FOR FUTURE TRAVEL: LONG SLEEVES · PERMETHRIN-TREATED CLOTHING · DEET · DAILY TICK CHECKS INCLUDING SCALP AND GROIN · AND CORRECT TICK REMOVAL — FREEZE IT, DON'T SQUEEZE IT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · pain now · open question · validate · concerns ('is it something I picked up over there?')"
+     "**WIPE, confirm her name, then: 'ARE YOU IN ANY PAIN RIGHT NOW? Would you like something for it before we talk?'** Then **confidentiality and an open question.**"
     ],
     [
-     "0:45",
-     "Aches: where, since when (a week), joints vs muscles, pattern, fatigue, fever/chills, headache, neck stiffness · ★ 'any rash anywhere?' → 'something on my arm' · face droop, palpitations, dizziness/blackouts, swollen joints"
+     "0:20",
+     "**Validate and frame: 'your pain is real and I take it seriously. Let me ask you some questions so I can work out what is going on, and then I'll explain what I think and what we do next.'**"
+    ],
+    [
+     "0:35",
+     "**EXPLORE THE PAIN: WHERE EXACTLY — JOINTS OR MUSCLES, NAME ME TWO OR THREE SPOTS · how long, sudden or gradual, constant or intermittent, getting worse · dull or sharp · does it travel · out of ten at its worst · anything better or worse · HOW IS IT AFFECTING YOUR LIFE?**"
+    ],
+    [
+     "1:15",
+     "**PATTERN: pain at night · worse in the morning or at the end of the day · worse with rest or activity · morning stiffness and HOW LONG.** Then **the MSK screen: SWELLING · REDNESS OR RASHES — and this is where the forearm gets mentioned · stiffness moving the joints · recent injury or trauma.**"
     ],
     [
      "1:45",
-     "★ 'You've just come back from the United States — I'd like to go through that carefully': A where/how long/activities (Wisconsin, 2 wk, sister) · ★ B bushwalking/hiking/camping — tick or insect bites (hiking in the woods; no bite remembered) · C sick/animal contacts · D drugs/alcohol · E blood exposure — tattoos, piercings, medical/dental procedures, transfusion · F street food/untreated water · G saw a GP before travel — vaccines, malaria tablets (no) · H sex overseas, condoms (no)"
+     "**SIGNPOST: 'I'm now going to run through a checklist of possible causes; some questions will sound unrelated, but I ask them of everyone with this problem.'**"
     ],
     [
-     "3:30",
-     "Sweep, brisk: weight loss, sweats, lumps · joints/swelling/psoriasis/FHx · meds/statin · girdle + GCA (age) · neuro · thyroid · mood/sleep briefly · SADMA · 'anything else you were hoping to discuss?'"
+     "1:50",
+     "**GROUP 1, RED FLAGS — UNCONDITIONAL EVEN THOUGH THE STORY LOOKS INFECTIVE: WEIGHT LOSS without trying · appetite · LUMPS OR BUMPS · unusually tired · NIGHT SWEATS SOAKING THE SHEETS · BONE PAIN, PARTICULARLY AT NIGHT.**"
     ],
     [
-     "4:45",
-     "Card/photo → ★ 'This is a target or bullseye lesion — erythema migrans — with regional lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States. That combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks.' · check: temperature, other rashes, cardiac rhythm, CN VII, neck stiffness, joints"
+     "2:10",
+     "**GROUP 2, INFECTION — and then STOP AND DO ALL EIGHT TRAVEL QUESTIONS: any FEVER OR CHILLS · any FLU-LIKE ILLNESS · contact with anyone unwell or with animals · sore throat with swollen glands.**"
     ],
     [
-     "5:45",
-     "★ 'I think you most likely have Lyme disease. It is a bacterial infection carried by ticks. I'm saying that because of three things together: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm along with a swollen gland in your armpit. The good news is it responds well to a course of antibiotic tablets — usually doxycycline, twice a day for two to three weeks. It makes the skin sun-sensitive, so be careful in the sun. If we treat it now, we prevent the later joint, heart and nerve complications.' · DDx: other tick-borne (anaplasmosis, babesiosis, RMSF), viral illness/influenza/COVID, EBV, cellulitis/tinea (ring), drug reaction, reactive arthritis, early RA, fibromyalgia"
+     "2:25",
+     "**TRAVEL A: WHERE EXACTLY DID YOU GO AND HOW LONG WERE YOU THERE? TELL ME ABOUT THE ACTIVITIES YOU DID. TRAVEL B: ANY BUSHWALKING OR CAMPING, AND DID YOU NOTICE ANY TICK OR INSECT BITES?**"
+    ],
+    [
+     "2:45",
+     "**Then DIRECTLY: 'DID YOU NOTICE A TICK, AND DID YOU PULL IT OFF?' — and how did you remove it?**"
+    ],
+    [
+     "2:55",
+     "**TRAVEL C: ANY CONTACT WITH SICK PEOPLE OR ANIMALS WHILE AWAY? TRAVEL D: ANY DRUGS, OR MUCH ALCOHOL? TRAVEL E: ANY EXPOSURE TO BLOOD — TATTOOS, PIERCINGS, MEDICAL OR DENTAL PROCEDURES, TRANSFUSION?**"
+    ],
+    [
+     "3:15",
+     "**TRAVEL F: ANY STREET FOOD OR UNTREATED WATER? TRAVEL G: DID YOU SEE A GP BEFORE TRAVELLING — VACCINES OR MALARIA TABLETS? TRAVEL H: DID YOU HAVE SEX WHILE OVERSEAS, AND DO YOU USE CONDOMS?**"
+    ],
+    [
+     "3:35",
+     "**GROUP 3, THE ARTHRITIDES, quickly: family history of arthritis · deformity · RASHES, SCALY PATCHES OR NAIL CHANGES · fingers changing colour in the cold · mouth ulcers, hair loss, sun sensitivity · recent diarrhoea or discharge · RED OR PAINFUL EYES?**"
+    ],
+    [
+     "3:55",
+     "**GROUP 4, SOFT TISSUE AND MUSCLE: ANY MEDICATIONS AT ALL, INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP · pain and stiffness across both shoulders and hips · struggling to get out of a chair, climb stairs or comb your hair?** Then **the GCA SCREEN given her age: NEW HEADACHE · SCALP TENDERNESS · JAW PAIN ON CHEWING · ANY CHANGE IN VISION.**"
+    ],
+    [
+     "4:20",
+     "**GROUP 5, NEUROLOGICAL — and it matters here because Lyme disseminates: HEADACHES · pins and needles or numbness · weakness · problems with walking or balance · ANY WEAKNESS OF THE FACE · change in speech or vision.** Then **GROUP 6, ENDOCRINE: cold intolerance, constipation, thirst, polyuria.**"
+    ],
+    [
+     "4:50",
+     "**GROUP 8, ANNOUNCED AS LAST: mood · sleep · who is at home and anything stressful · managing daily activities · and the self-harm question in long-standing pain.** Then **SADMA and close.**"
+    ],
+    [
+     "5:40",
+     "**Take the card. DESCRIBE THE RASH RATHER THAN NAMING IT FIRST — an expanding red lesion with central clearing on the forearm, WITH A TENDER AXILLARY NODE.**"
+    ],
+    [
+     "6:00",
+     "**NAME LYME DISEASE WITH THE THREE REASONS TOGETHER.** Then **the differentials by group name, each with a one-clause reason — and in an Australian patient, ROSS RIVER AND BARMAH FOREST FIRST.**"
     ],
     [
      "7:00",
-     "Plan: serology (baseline; repeat convalescent), FBE/LFT, ECG if palpitations/syncope · doxycycline 100 mg bd 10–21 d VERIFY (amoxicillin if pregnant/child <8) · sun protection, take with food/water, upright · Jarisch–Herxheimer warning (worse for 24 h) · safety-net: facial droop, severe headache/neck stiffness, palpitations/faints, swollen knee, spreading rash → same day · review 1–2 wk · notify? (Lyme not notifiable in SA — overseas-acquired; document) · 'friend says you can catch it in Australia' → honest answer"
+     "**THE PLAN: TREAT NOW WITH DOXYCYCLINE, DO NOT WAIT FOR SEROLOGY · two-tier serology at an ACCREDITED AUSTRALIAN LABORATORY · WARN ABOUT PHOTOSENSITIVITY AND THE JARISCH-HERXHEIMER REACTION · PREVENTION COUNSELLING for future travel · SAFETY-NET for CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'You mentioned you've just come back from the United States — I'd like to go through that carefully. Where exactly did you go, and how long were you there? What activities did you do?' / ★ 'Any bushwalking, hiking or camping — and did you notice any tick or insect bites?' / 'Any contact with sick people or animals while you were away?'",
-    "'Did you use any drugs, or drink much alcohol? Any exposure to blood — tattoos, piercings, medical or dental procedures, a transfusion? Any street food or untreated water? Did you see a GP before travelling — any vaccines or malaria tablets? Did you have sex while overseas, and do you use condoms?'",
-    "'Any rash anywhere, even one you thought was a bite? Any fever, headache or stiff neck? Any drooping of the face? Any racing or skipping of the heart, or faints? Any swollen joints, particularly a knee?'",
-    "★ To examiner: 'This is a target or bullseye lesion — erythema migrans — with regional lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States. That combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks.'",
-    "★ 'I think you most likely have Lyme disease — a bacterial infection carried by ticks. Three things together tell me that: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm with a swollen gland in your armpit. It responds well to antibiotic tablets — usually doxycycline, twice a day for two to three weeks. It makes the skin sun-sensitive, so please be careful in the sun. Treating it now prevents the later joint, heart and nerve complications.'",
-    "'A friend told me you can catch Lyme disease in Australia' → ★ 'Classical Lyme disease has not been shown to be acquired within Australia — the ticks that carry it aren't established here. In your case the travel history is what makes the diagnosis. Where people have these symptoms without overseas travel, we take them just as seriously and investigate them properly, but we don't use overseas laboratories whose tests haven't been validated.'",
-    "'Come back straight away if you get a drooping face, a severe headache or stiff neck, palpitations or faints, a swollen knee, or the rash spreads — and expect to feel a little worse for the first day of the antibiotic; that settles.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 57 F, two weeks in Wisconsin visiting her sister, lots of hiking in the woods, no remembered bite, 'found something on my arm afterwards'; nobody sick, no drugs, no tattoos/procedures, normal food, no pre-travel GP, no sex overseas. Diffuse aches and tiredness ~1 week. Volunteers the rash only if asked about rash or bites. Pushes once: 'a friend told me you can catch Lyme in Australia'",
-    "Photo/card: expanding erythematous annular lesion with central clearing on the forearm (erythema migrans, typically ≥5 cm, appears 3–30 days after the bite), tender axillary lymphadenopathy; afebrile or low-grade; joints/neuro/cardiac normal in the base version",
-    "Lyme stages: early localised (EM, flu-like) → early disseminated weeks–months (multiple EM, facial palsy, meningitis, carditis/AV block, migratory arthralgia) → late (mono/oligoarthritis esp knee, encephalopathy, acrodermatitis). Serology: two-tier (EIA → immunoblot), often negative <4 wk; not needed for EM with exposure. Coinfections in Upper Midwest: anaplasmosis, babesiosis",
-    "Treatment VERIFY TG/CDC: doxycycline 100 mg bd 10 d (EM) to 21 d; amoxicillin 500 mg tds 14 d or cefuroxime if doxycycline contraindicated; IV ceftriaxone for neuro/cardiac disease · Jarisch–Herxheimer · single-dose doxycycline 200 mg prophylaxis only within 72 h of an attached endemic tick VERIFY · Australia: no established locally-acquired Lyme; 'Debilitating Symptom Complexes Attributed to Ticks' (DSCATT) framework; Australian tick issues = tick paralysis, Q fever, rickettsial spotted fevers, mammalian meat allergy",
-    "Trap: two travel questions and moving on — the marked item is the full eight; missing the rash question; waiting for serology before treating; dismissing or endorsing Australian Lyme; forgetting sun protection with doxycycline",
-    "SA: notifiable? — Lyme is not on the SA notifiable list; document overseas acquisition · Public Health enquiries 1300 232 272 · MedSTAR 1300 13 12 33 if carditis/heart block from a rural site",
-    "Trap — Two travel questions and moving on — the marked item is the full eight; missing the rash question; waiting for serology before treating; dismissing or endorsing Australian Lyme; forgetting sun protection with doxycycline",
-    "SA — Notifiable? — Lyme is not on the SA notifiable list; document overseas acquisition · Public Health enquiries 1300 232 272 · MedSTAR 1300 13 12 33 if carditis/heart block from a rural site"
+    "**Bedside: temperature, BP, weight, urine dipstick, BSL. INSPECT THE WHOLE SKIN — disseminated lesions are SMALLER AND LESS WELL FORMED than the primary — AND PALPATE ALL NODE GROUPS.**",
+    "**Bloods: FBE, ESR AND CRP, UEC, LFT, TSH, CK, corrected calcium, 25-OH vitamin D.** **TWO-TIER LYME SEROLOGY — SCREENING EIA THEN IMMUNOBLOT — AT AN AUSTRALIAN ACCREDITED LABORATORY.** **Add ARBOVIRUS SEROLOGY, Q FEVER AND BRUCELLOSIS by exposure, and EBV, HEPATITIS AND HIV SEROLOGY where the risk history fits.**",
+    "**TREAT IMMEDIATELY AND DO NOT WAIT FOR THE RESULT when erythema migrans is present with a compatible exposure: DOXYCYCLINE 100 mg TWICE DAILY FOR 10–21 DAYS. AMOXICILLIN OR CEFUROXIME in pregnancy or children under 8.** VERIFY.",
+    "**Do not miss: CARDITIS, NEUROLOGICAL INVOLVEMENT OR ARTHRITIS in early disseminated disease — discuss with INFECTIOUS DISEASES · GIANT CELL ARTERITIS in any patient over 50 with girdle pain and headache · MALIGNANCY, because RED FLAGS ARE UNCONDITIONAL HOWEVER INFECTIVE THE STORY LOOKS.**",
+    "**Avoid: SENDING SPECIMENS TO OVERSEAS OR NON-ACCREDITED LABORATORIES OFFERING 'CHRONIC LYME' PANELS — UNVALIDATED RESULTS THAT DRIVE HARMFUL LONG-COURSE ANTIBIOTICS · ordering ANA, RF or an autoimmune screen as a fishing expedition · saying 'all your tests are normal, so there is nothing wrong'.**",
+    "**Tick removal advice: FREEZE IT, DON'T SQUEEZE IT — an ether-containing spray, or FINE-TIPPED FORCEPS GRASPING CLOSE TO THE SKIN. DO NOT TWIST, BURN OR APPLY CHEMICALS, WHICH PROMOTE REGURGITATION OF GUT CONTENTS.**",
+    "**Prevention for future travel: LONG SLEEVES, PERMETHRIN-TREATED CLOTHING, DEET, DAILY TICK CHECKS INCLUDING SCALP AND GROIN.** **On Yorke Peninsula, Q FEVER is a live differential — abattoir, shearing, livestock and feral-animal exposure — and remember Q FEVER VACCINATION STATUS for at-risk workers.** VERIFY notifiable-conditions status."
    ],
-   "fails": [
-    "★ A two-question travel history — the station is the eight named questions",
-    "Never asking about rash, bites or bushwalking; not linking Wisconsin + woods + ring rash aloud",
-    "Ordering serology and telling her to wait for it before treatment — early serology is often negative",
-    "Not naming doxycycline, its duration, or the sun warning; no red flags for disseminated disease (facial palsy, heart block, meningitis, arthritis)",
-    "Answering the 'Lyme in Australia' question with a flat yes or a dismissive no",
-    "Running the fibromyalgia psychosocial block for six minutes on a patient with an infectious rash"
-   ],
-   "numbers": [
-    "EM appears 3–30 d after the bite · ≥5 cm expanding ring · serology often negative <4 wk · treat clinically",
-    "Doxycycline 100 mg bd 10–21 d VERIFY · amoxicillin 500 mg tds 14 d if contraindicated · prophylaxis 200 mg single dose within 72 h VERIFY · Herxheimer first 24 h",
-    "Eight travel questions: where/how long/activities · hiking/camping/bites · sick/animal contacts · drugs/alcohol · blood exposure · food/water · pre-travel GP · sex/condoms",
-    "SA Public Health 1300 232 272 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Early Lyme disease** — the answer",
+     "**Travel to an ENDEMIC AREA, BUSHWALKING, TICK BITE, ERYTHEMA MIGRANS, REGIONAL LYMPHADENOPATHY, flu-like illness**",
+     "**COMPLETE travel history; inspect the skin; palpate nodes**",
+     "**Two-tier serology at an ACCREDITED AUSTRALIAN LAB — BUT TREAT CLINICALLY IF ERYTHEMA MIGRANS IS PRESENT** — treat now"
+    ],
+    [
+     "**Ross River and Barmah Forest virus**",
+     "**In an AUSTRALIAN patient these are FAR MORE LIKELY than any imported infection — POLYARTHRALGIA, MYALGIA AND PROFOUND FATIGUE LASTING MONTHS**",
+     "Mosquito exposure; domestic travel",
+     "Arbovirus serology — routine"
+    ],
+    [
+     "**Q fever · brucellosis**",
+     "**ABATTOIR, FARM, SHEARING AND LIVESTOCK EXPOSURE — highly relevant on Yorke Peninsula**; brucellosis in FERAL-PIG HUNTERS",
+     "**Occupational and animal contact; Q FEVER VACCINATION STATUS**",
+     "Q fever and brucella serology — routine"
+    ],
+    [
+     "**Other travel-acquired infection**",
+     "**Street food, untreated water, blood exposure, sexual contact overseas**",
+     "**The remaining travel questions — E, F, G AND H**",
+     "Directed by the exposure; malaria films if febrile from an endemic region — treat now if indicated"
+    ],
+    [
+     "**Chronic viral infection — EBV, hepatitis B and C, HIV, long COVID**",
+     "Preceding febrile illness, sore throat, **sexual and injecting risk**, persistent fatigue",
+     "**SECONDARY SYPHILIS AND HIV SEROCONVERSION BOTH CAUSE MYALGIA — keep the sexual history**",
+     "Monospot and EBV serology, hepatitis and HIV serology, FBE, LFT — routine"
+    ],
+    [
+     "**Malignancy — myeloma, leukaemia, lymphoma**",
+     "**Age over 50, BONE PAIN WORSE AT NIGHT, weight loss, ANAEMIA, HYPERCALCAEMIA**",
+     "**RED FLAGS ARE UNCONDITIONAL, HOWEVER INFECTIVE THE STORY LOOKS**",
+     "FBE, ESR, calcium, renal function, **SPEP and free light chains** — URGENT"
+    ],
+    [
+     "**Polymyalgia rheumatica and giant cell arteritis**",
+     "**Age 50 or over with BILATERAL GIRDLE pain and prolonged morning stiffness**",
+     "**New headache, scalp tenderness, jaw claudication, VISUAL CHANGE**",
+     "ESR and CRP; **TREAT FIRST IF ANY GCA FEATURE** — EMERGENCY"
+    ],
+    [
+     "Rheumatoid and other inflammatory arthritis",
+     "Symmetrical small-joint swelling; rash, nail pitting, dactylitis; recent diarrhoea or urethritis",
+     "**SWELLING, NOT JUST PAIN**; nails, eyes, bowels",
+     "RF, anti-CCP, ESR/CRP; targeted serology only — semi-urgent"
+    ],
+    [
+     "Statin myopathy · hypothyroidism · hypercalcaemia · vitamin D deficiency",
+     "Proximal aching with a recent statin; **cold intolerance and constipation**; thirst and polyuria",
+     "Full medication list; thyroid examination; proximal power",
+     "CK; **TSH — HYPOTHYROIDISM CAUSES A TRUE MYOPATHY**; corrected calcium with PTH; 25-OH vitamin D"
+    ],
+    [
+     "**DSCATT** · fibromyalgia · somatic symptom disorder",
+     "**A LYME-LIKE ILLNESS WITHOUT TRAVEL TO AN ENDEMIC REGION**; or widespread pain with no pattern and normal markers",
+     "**Exposure history is what decides this — CLASSICAL LYME IS NOT ACQUIRED IN AUSTRALIA**",
+     "**ACKNOWLEDGE THE SYMPTOMS, DECLINE THE UNVALIDATED TEST, OFFER STRUCTURED FOLLOW-UP.** Psychosocial assessment ONLY after the organic sweep"
+    ]
    ]
   },
   "source": "Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf §6 Version C (57-year-old woman back from hiking in Wisconsin, bullseye rash and axillary node — early Lyme disease; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Medicine MSK › Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Photo/card",
-    "Expanding erythematous annular lesion with central clearing on the forearm (erythema migrans, typically ≥5 cm, appears 3–30 days after the bite), tender axillary lymphadenopathy; afebrile or low-grade; joints/neuro/cardiac normal in the base version"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — A two-question travel history — the station is the eight named questions: 'you've just come back from the United States — I'd like to go through that carefully': A where, how long, activities (hiking in the woods); B bushwalking, camping, tick or insect bites ('I found something on my arm afterwards'); C sick or animal contacts; D drugs, alcohol; E blood exposure — tattoos, piercings, procedures, transfusion; F street food, untreated water; G pre-travel GP, vaccines, malaria tablets; H sex overseas, condoms (★)",
-   "DO — Aches: where, since when (a week), joints or muscles, pattern, fatigue, fever or chills, headache, neck stiffness; then the serious-cause, joint, nerve and psychosocial groups still run — this is the same consultation shape with a different key clue",
-   "DO — To the examiner, describe before naming: 'this is a target or bullseye lesion — erythema migrans — with regional axillary lymphadenopathy, in a patient with recent bushwalking exposure in an endemic area of the United States; that combination is diagnostic of early Lyme disease, and I would treat clinically without waiting for serology, which is often negative in the first few weeks'",
-   "SAY — 'I think you most likely have Lyme disease — a bacterial infection carried by ticks — for three things together: you were in an area where it occurs, you were hiking in the woods, and you have a very characteristic rash on your forearm with a swollen gland in your armpit'",
-   "SAY — 'It responds well to antibiotic tablets — doxycycline, twice a day for two to three weeks; it makes the skin sun-sensitive; treating now prevents the later joint, heart and nerve complications' (erythema migrans 3–30 days after the bite; doxycycline 100 mg bd for 10–21 days — verify doses)",
-   "DO — If she says 'a friend told me you can catch Lyme disease in Australia': 'classical Lyme disease hasn't been shown to be acquired within Australia — the ticks that carry it aren't established here; in your case the travel history is what makes the diagnosis; people with these symptoms without travel are taken just as seriously and investigated properly, but we don't use overseas laboratories whose tests aren't validated'; safety-net for facial weakness, palpitations, joint swelling"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-112",
