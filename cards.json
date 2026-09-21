@@ -29523,9 +29523,8 @@
  {
   "id": "MED-116",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "ED, regional SA hospital. Prompt bell at 4:00 → examination request 4:00–6:00 (findings only for what you name), explanation 6:00–8:00. 27, female — pregnancy and pelvic causes live from the first second. Ask stability aloud even though the numbers are on the door.",
   "stem": [
    "Jenna, 27, presents with abdominal pain. BP 110/70 · HR 88 · RR 12 · T 36.5 · SpO2 98% RA.",
    "Version B: day three, 96/58 · 118 · 22 · 38.7, lying very still — pain eased for a while this morning and is now everywhere."
@@ -29535,128 +29534,215 @@
    "Ask the examiner for the physical examination findings — given only for examinations you request by name",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 min. 'Examiner, is my patient haemodynamically stable, and could I have the vital signs?' · intro · open → four-part acknowledgement in one breath (sorry / concerning to me too / I'll ask questions / I'll take good care of you) · 'in pain now? want something?' → nurse, two questions and out · pain in order: where → ★ WHERE DID IT START (periumbilical → RIF) → /10 → sharp/dull → when → constant → worse → radiates → better/worse (car bumps) · four groups as headings: GI (N/V — order vs pain, bloating, flatus, D/C, fever) · red flags (weight, ★ appetite gone, lumps, dizziness, blood/melaena, habit, FHx CRC) · urinary · groin · gynae/sexual with permission (bleeding, discharge, LMP 3 wk regular, sexually active, condoms 'most of the time', STI) · ops/meds/allergies · bell → seven named steps: appearance, postural BP, inspection (respiration, distension, scars, hernia), palpation (max tenderness, guarding, rigidity, rebound, mass), percussion, bowel sounds, inguinal, DRE with consent/chaperone, ★ Rovsing + psoas · ★ pelvic exam with consent + chaperone even though sure (inspection, speculum, bimanual: CMT, uterus, adnexa) · ★ dipstick, βhCG, BSL · name it, explain the appendix, ★ four reasons, grouped DDx with a reason each incl ectopic, plan (NBM, IV, fluids, analgesia, bloods, USS, surgical review), ★ answer 'will I need an operation?' yourself, safety-net.",
+  "findings": [
+   [
+    "THE BLANK STEM IS DELIBERATE",
+    "NO SITE, NO DURATION, NO ASSOCIATED SYMPTOMS — just 'abdominal pain' and the vitals. IT IS TESTING WHETHER YOU HAVE ONE STRUCTURE YOU CAN RUN ON ANY ABDOMINAL PAIN"
+   ],
+   [
+    "FINDINGS ARE GIVEN ONLY FOR EXAMINATIONS YOU REQUEST BY NAME",
+    "EVERY FINDING IS A QUESTION. IF YOU DID NOT ASK FOR IT, YOU DO NOT HAVE IT. Claiming 'there is rebound tenderness' without asking the examiner is a fail in its own right"
+   ],
+   [
+    "THE THREE HISTORY KEY POINTS — every one is scored",
+    "MIGRATION OF THE PAIN · ANOREXIA · NAUSEA OR VOMITING. The examiner's stated position: A CANDIDATE WHO NEVER ASKED ABOUT THESE, BUT FOUND A POSITIVE ROVSING SIGN AND ANNOUNCED 'APPENDICITIS', DOES NOT PASS THE DIAGNOSTIC FORMULATION. THE EXAMINATION CANNOT RESCUE A HISTORY THAT NEVER HAPPENED"
+   ],
+   [
+    "THE QUESTION SHE WILL NOT VOLUNTEER",
+    "'WHERE DID THE PAIN START? WAS IT ALWAYS THERE, OR DID IT BEGIN SOMEWHERE ELSE?' THE ROLE-PLAYER WILL NOT OFFER THE MIGRATION UNLESS ASKED DIRECTLY. ASK IT BEFORE 2:00. And ask 'IS IT WORSE ON MOVEMENT OR COUGHING?' — a yes is PERITONEAL IRRITATION DESCRIBED BY THE PATIENT RATHER THAN ELICITED BY YOUR HAND"
+   ],
+   [
+    "THE APPETITE QUESTION IS WHERE ANOREXIA IS CAPTURED",
+    "It sits in the RED-FLAG AND CANCER SCREEN, and it is THE SINGLE MOST COMMONLY OMITTED KEY POINT IN THIS STATION. ASK IT REGARDLESS OF AGE OR DURATION"
+   ],
+   [
+    "THE PAINKILLER — EXACTLY TWO QUESTIONS",
+    "'ARE YOU IN PAIN RIGHT NOW?' → 'WOULD YOU LIKE SOMETHING FOR THE PAIN?' THEN STOP. Do not ask about allergies, what she has taken, or which analgesic — THAT IS A FIVE-QUESTION DETOUR OUT OF A FOUR-MINUTE HISTORY AND IT COSTS YOU A DIFFERENTIAL GROUP. Role-players are briefed to DISPLAY pain, and offering analgesia SWITCHES OFF THE DISPLAY"
+   ],
+   [
+    "ONE SENTENCE BUYS THE SEXUAL HISTORY",
+    "'I need to ask A FEW PERSONAL QUESTIONS ABOUT YOUR PERIODS AND YOUR SEXUAL HEALTH, BECAUSE SOME CAUSES OF THIS PAIN START IN THAT AREA. Is that all right?' IF YOU RUN OUT OF TIME ANYWHERE, DO NOT RUN OUT OF TIME HERE"
+   ],
+   [
+    "VERSION B — the station changes character",
+    "DAY THREE. BP 96/58 · HR 118 · RR 22 · T 38.7 · LYING VERY STILL, GUARDING, RELUCTANT TO MOVE. PAIN EASED FOR A WHILE THIS MORNING AND IS NOW EVERYWHERE. A CANDIDATE WHO WORKS METHODICALLY THROUGH THE SEXUAL HISTORY AT A PULSE OF 118 HAS FAILED A SAFETY CRITERION, HOWEVER GOOD THE QUESTIONS WERE"
+   ],
+   [
+    "TWO FURTHER VARIANTS",
+    "PREGNANT: appendicitis is THE COMMONEST NON-OBSTETRIC SURGICAL EMERGENCY IN PREGNANCY, and THE PAIN MAY SIT HIGHER as the uterus enlarges — ULTRASOUND FIRST, MRI IF NON-DIAGNOSTIC, DO NOT ORDER CT. CHILD OR ADOLESCENT: same structure, but DO NOT REQUEST A RECTAL EXAMINATION — it does not change management and READS AS UNSAFE PRACTICE"
+   ],
+   [
+    "WHERE THE TIP SITS CHANGES THE EXAMINATION",
+    "RETROCAECAL IS COMMONEST — PSOAS SIGN, FEW ANTERIOR SIGNS. PELVIC IS SECOND — OBTURATOR SIGN, URINARY AND RECTAL SYMPTOMS. This is the answer to 'the abdomen felt almost normal — how could it be appendicitis?' — and it is why A PELVIC APPENDIX GIVES A FALSE POSITIVE ON THE URINARY QUESTIONS"
+   ]
+  ],
+  "findingsLabel": "A blank stem, three scored key points, and findings only if you name them",
+  "must": [
+   "FAIL — Pregnancy never excluded, or a βhCG declined because the period was recent.",
+   "FAIL — Pelvic or rectal examination requested without consent and a chaperone.",
+   "FAIL — Announcing the diagnosis with no reasons.",
+   "FAIL — Not recognising instability in Version B and continuing the history.",
+   "ASK — Where did the pain start? Was it always there?",
+   "ASK — When was your last period, and are they regular?"
+  ],
   "back": {
-   "dx": "Acute appendicitis — pain migrated from periumbilical to RIF overnight, dull → sharp, 6/10, constant, worse, worse over bumps; nausea and one vomit AFTER the pain; anorexia since yesterday; bowels/urine normal; LMP 3 wk, regular, condoms most of the time. PEFE: RIF max tenderness with rebound and percussion tenderness, no guarding/rigidity/mass, BS normal, inguinal and DRE normal, Rovsing +, psoas +; pelvic normal (no CMT, no adnexal tenderness); dipstick negative, βhCG negative, BSL 5.4. Four reasons: migration, anorexia, nausea/vomiting, positive special tests. Version B: perforation with peritonitis and sepsis — 'the pain eased then became generalised' is the appendix perforating; say it aloud; resuscitate while taking the history.",
+   "dx": [
+    "**ACUTE APPENDICITIS. OBSTRUCTION OF THE APPENDICEAL LUMEN — by a FAECOLITH, LYMPHOID HYPERPLASIA IN THE YOUNG, occasionally A TUMOUR IN THE OLDER PATIENT — causes DISTENSION, then VENOUS CONGESTION, MUCOSAL ISCHAEMIA AND BACTERIAL INVASION, and finally GANGRENE AND PERFORATION.** **THAT SEQUENCE IS WHY THE PAIN CHANGES CHARACTER, AND WHY DELAY MATTERS.**",
+    "**THE DISCRIMINATING ISSUE: YOU MUST DIAGNOSE FROM EVIDENCE YOU ACTUALLY COLLECTED, AND YOU MUST SAY THAT EVIDENCE OUT LOUD.** **A candidate who asks all three key points AND THEN SAYS 'IT'S APPENDICITIS' WITHOUT NAMING THEM ALSO LOSES MARKS. THE PASS IS THE REPLAY.**",
+    "**NAME IT, EXPLAIN IT IN TEN SECONDS, THEN GIVE FOUR REASONS: 'most likely you have ACUTE APPENDICITIS. The appendix is A SMALL FINGER-SHAPED POUCH ATTACHED TO THE LARGE BOWEL, on the right lower side. At the moment THAT POUCH IS INFLAMED.'**",
+    "**THEN THE REASONING BLOCK, WHICH IS WHERE THE MARKS ARE: 'FIRST, YOUR PAIN MOVED — it started around your belly button and settled in the right lower side, WHICH IS VERY TYPICAL. SECOND, YOUR APPETITE HAS GONE since yesterday. THIRD, YOU'VE BEEN FEELING SICK AND VOMITED. And FOURTH, when I examined you, THE SPECIFIC TESTS WE USE WERE POSITIVE.'** **It takes FORTY TO FIFTY SECONDS. LET IT — it is worth more than any two differentials you might squeeze in afterwards.**",
+    "**WHY THE PAIN MOVES: it is the VISCERAL-TO-PARIETAL TRANSITION. Early visceral pain is POORLY LOCALISED AND FELT AT THE UMBILICUS; once the inflamed appendix IRRITATES THE PARIETAL PERITONEUM, the pain BECOMES SHARP AND LOCALISED TO THE RIGHT ILIAC FOSSA.**",
+    "**DELIVER THE DIFFERENTIALS IN NAMED GROUPS, NOT AS A FLAT LIST — THE EXAMINER IS MARKING THE SHAPE OF YOUR REASONING AS MUCH AS ITS CONTENT: GI · RENAL AND URINARY · GYNAECOLOGICAL · OBSTETRIC · WALL AND HERNIA · OTHER.** **Four groups, ONE BEST DIFFERENTIAL IN EACH, ONE REASON EACH.**",
+    "**NEVER LEAVE 'AM I GOING TO NEED AN OPERATION?' UNANSWERED: 'VERY LIKELY YES, and the surgical team will see you. IT'S USUALLY KEYHOLE SURGERY AND MOST PEOPLE GO HOME WITHIN A DAY OR TWO.'**",
+    "**CORRECTION — 'WITH A THREE-WEEK LAST PERIOD I WOULDN'T DO A PREGNANCY TEST' IS WRONG. DO THE TEST. A MENSTRUAL HISTORY IS NOT A CONTRACEPTIVE METHOD AND IS NOT A DIAGNOSTIC TEST; WOMEN WITH ECTOPIC PREGNANCIES FREQUENTLY REPORT A RECENT, APPARENTLY NORMAL PERIOD.** If challenged: **'THE LAST MENSTRUAL PERIOD IS UNRELIABLE IN EARLY PREGNANCY, AND A MISSED ECTOPIC IS A PREVENTABLE DEATH.'**",
+    "**CORRECTION — THE ALVARADO SCORE IS NOT IN ROUTINE AUSTRALIAN USE AND IS NOT A DECISION RULE HERE. Its value is AS A CHECKLIST OF THE EIGHT THINGS WORTH ASKING AND FINDING: MIGRATION 1 · ANOREXIA 1 · NAUSEA OR VOMITING 1 · RIF TENDERNESS 2 · REBOUND 1 · TEMPERATURE 37.3 OR ABOVE 1 · LEUCOCYTOSIS 2 · LEFT SHIFT 1.** Say: **'I use the items as an aide-memoire, BUT THE DECISION TO OPERATE IN AUSTRALIA IS CLINICAL, WITH IMAGING AND A SURGICAL REVIEW.'**",
+    "**VERSION B, SAID OUT LOUD AT ABOUT 1:30: 'Examiner, before I continue — SHE IS TACHYCARDIC, HYPOTENSIVE AND FEBRILE WITH A RIGID ABDOMEN, so I'm concerned about A PERFORATED APPENDIX WITH PERITONITIS AND SEPSIS. I would like to START RESUSCITATION NOW: oxygen if needed, TWO LARGE-BORE CANNULAS, BLOOD CULTURES, A FLUID BOLUS, INTRAVENOUS ANTIBIOTICS, NIL BY MOUTH, and an URGENT SURGICAL REVIEW. MAY I CONTINUE WITH A FOCUSED HISTORY WHILE THAT IS HAPPENING?'**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Examiner, before I start — is my patient haemodynamically stable, and could I have the vital signs?' · 'Hello Jenna, I'm Dr —; is it all right if I ask some questions?' · 'what's brought you in?' → ★ 'I'm really sorry to hear that, Jenna. The pain you're describing is concerning to me too. I'll need to ask a few questions to get a better idea, and I promise I'll take good care of you.'"
+     "**TO THE EXAMINER BEFORE YOU SIT: 'is my patient HAEMODYNAMICALLY STABLE, and could I have the vital signs?'** Then **WIPE, compressed, and an open question.**"
     ],
     [
-     "0:40",
-     "'Are you in pain right now? Would you like something for it?' → 'I'll ask the nurse to organise pain relief now and we'll keep going' (no drug/dose/allergy detour)"
+     "0:30",
+     "**RESPOND TO HER OPENING STATEMENT BEFORE ASKING ANYTHING ELSE — four parts, one breath: ACKNOWLEDGE, EMPATHISE, SIGNPOST, CONSENT. 'I'm really sorry to hear that. The pain you're describing IS CONCERNING TO ME TOO. I'll need to ask you a few questions, AND I PROMISE I'LL TAKE GOOD CARE OF YOU.'**"
     ],
     [
-     "1:00",
-     "'Show me where' → ★ 'Where did it start — was it always there, or did it begin somewhere else?' → belly button, moved overnight (do not diagnose aloud) · /10 (6) · sharp/dull (dull → sharper) · when (yesterday late afternoon) · constant · worse · travel (no) · better/worse (nothing; every bump in the car)"
+     "0:45",
+     "**THE PAINKILLER, TWO QUESTIONS ONLY, THEN MOVE.**"
+    ],
+    [
+     "0:55",
+     "**THE PAIN BLOCK: CAN YOU SHOW ME WHERE · AND WHERE DID IT START, WAS IT ALWAYS THERE OR DID IT BEGIN SOMEWHERE ELSE · out of ten · sharp or a dull ache · when exactly · constant or coming and going · better, worse or the same · does it TRAVEL anywhere · ANYTHING THAT MAKES IT BETTER OR WORSE — FOOD, MOVEMENT, POSITION?**"
     ],
     [
      "2:00",
-     "GI as a heading: nausea/vomiting (sick once this morning, after the pain), bloating, wind, D/C, fever ('might have felt hot last night') · ★ 'a few questions I ask everybody with tummy pain': weight loss, ★ appetite (none since yesterday — couldn't face toast), lumps, dizziness, blood/black motions, habit, FHx bowel cancer"
+     "**SAY THE MIGRATION BACK TO HER — 'so the pain MOVED from around your navel down to the right lower side' — then KEEP GOING. DO NOT DIAGNOSE OUT LOUD YET.**"
     ],
     [
-     "2:50",
-     "Waterworks: burning, frequency, blood · groin lump · ★ 'I need to ask a few personal questions about your periods and sexual health, because some causes of this pain start in that area — is that all right?' → bleeding, discharge, LMP + regular (3 wk, regular), sexually active/condoms (one partner, most of the time), STI ever · ops, meds, allergies"
+     "2:10",
+     "**GI GROUP: any NAUSEA OR VOMITING — AND WHICH CAME FIRST, THE PAIN OR THE VOMITING · any BLOATING · ARE YOU PASSING WIND NORMALLY · any DIARRHOEA · CONSTIPATION · FEVERS OR CHILLS?** **Pain first supports appendicitis.**"
+    ],
+    [
+     "2:35",
+     "**RED FLAGS AND CANCER SCREEN, WHERE ANOREXIA IS CAPTURED: any WEIGHT LOSS · HOW HAS YOUR APPETITE BEEN · any LUMPS OR BUMPS · any DIZZINESS OR LIGHT-HEADEDNESS · BLOOD IN THE BOWEL MOTIONS OR BLACK TARRY MOTIONS · change in bowel habit · ANYONE IN THE FAMILY WITH BOWEL CANCER?**"
+    ],
+    [
+     "3:05",
+     "**KIDNEY AND BLADDER: any PAIN OR BURNING passing urine · going MORE OFTEN · any BLOOD in the urine?** **A pelvic appendix IRRITATES THE BLADDER AND CAN GIVE A FALSE POSITIVE — NOTE IT, DO NOT BE CAPTURED BY IT.** Then **GROIN, one question that rules out a whole group: ANY LUMP OR SWELLING IN YOUR GROIN?**"
+    ],
+    [
+     "3:20",
+     "**THE PERMISSION SENTENCE, THEN THE PELVIC BLOCK: any VAGINAL BLEEDING · any DISCHARGE · WHEN WAS YOUR LAST PERIOD, AND ARE THEY REGULAR · ARE YOU SEXUALLY ACTIVE · DO YOU USE CONDOMS · EVER BEEN TOLD YOU HAD A SEXUALLY TRANSMITTED INFECTION?**"
+    ],
+    [
+     "3:50",
+     "**IF THE BELL HAS NOT GONE: any OPERATIONS ON YOUR TUMMY BEFORE · regular medications and allergies. IF YOU ARE AT 3:40 AND HAVE NOT STARTED THE PELVIC BLOCK, SKIP PAST HISTORY, FAMILY HISTORY AND SOCIAL HISTORY ENTIRELY.**"
     ],
     [
      "4:00",
-     "★ Bell → examiner: general appearance · postural BP · inspection — moves with respiration, distension, scars, hernia, bruising · superficial and deep palpation — site of maximal tenderness, guarding, rigidity, rebound, mass · percussion tenderness · bowel sounds · inguinal region · DRE with consent and chaperone · ★ Rovsing and psoas"
+     "**THE EXAMINATION REQUEST, BY NAME. GENERAL APPEARANCE — COMFORTABLE OR DISTRESSED, well or dehydrated, flushed or pale · IS THERE A POSTURAL DROP · INSPECTION: DOES THE ABDOMEN MOVE SYMMETRICALLY WITH RESPIRATION, any distension, scars, visible hernia, CULLEN OR GREY TURNER SIGN?**"
     ],
     [
-     "5:00",
-     "★ 'With the patient's consent and a chaperone present, I'd like to perform a pelvic examination: inspection — rash, lumps, bleeding, discharge; speculum — cervical discharge; bimanual — cervical motion tenderness, uterine size and tenderness, adnexal tenderness or mass' · ★ 'bedside tests — urine dipstick, urinary βhCG, capillary glucose' (LMP unreliable in early pregnancy; a missed ectopic is a preventable death)"
+     "4:40",
+     "**PALPATION: on SUPERFICIAL THEN DEEP palpation, IS THERE TENDERNESS AND WHERE IS IT MAXIMAL · IS THERE GUARDING · IS THERE RIGIDITY · IS THERE REBOUND TENDERNESS · any mass or organomegaly?** Then **PERCUSSION TENDERNESS and BOWEL SOUNDS — present, absent or high-pitched.**"
+    ],
+    [
+     "5:10",
+     "**GROIN AND RECTUM, and TWO NAMED SPECIAL TESTS, NOT THREE: 'I'd like to check ROVSING SIGN. And I'd like to check the PSOAS SIGN.'**"
+    ],
+    [
+     "5:25",
+     "**THE PELVIC EXAMINATION, WITH THE FIXED SENTENCE: 'WITH THE PATIENT'S CONSENT AND WITH A CHAPERONE PRESENT — on inspection any rash, lumps, bleeding or discharge; SPECULUM for discharge from the cervix; and on BIMANUAL, IS THERE CERVICAL MOTION TENDERNESS, what is the uterine size, IS THE UTERUS TENDER, is there ADNEXAL TENDERNESS OR A MASS?'** **You do this because you are performing A COMPLETE AND LOGICAL ASSESSMENT, NOT BECAUSE YOU ARE UNSURE.**"
+    ],
+    [
+     "5:50",
+     "**OFFICE TESTS TO CLOSE: A URINE DIPSTICK, A URINARY βhCG, AND A CAPILLARY BLOOD GLUCOSE.**"
     ],
     [
      "6:00",
-     "★ 'Jenna, most likely you have acute appendicitis. The appendix is a small finger-shaped pouch attached to the large bowel on the right lower side of your tummy, and at the moment it's inflamed.' · 'Is it serious? will I need an operation?' → ★ 'it is something we take seriously, and yes — very likely an operation to remove it; usually keyhole, home within a day or two' · ★ four reasons: pain moved, appetite gone, feeling sick/vomited, specific tests positive"
+     "**NAME IT, EXPLAIN IT IN TEN SECONDS, THEN THE FOUR REASONS.**"
     ],
     [
      "7:00",
-     "DDx in groups with a reason each: pregnancy — ectopic (normal period 3 wk ago, βhCG negative) · gynae — PID/torsion (no discharge, internal exam normal) · urinary — UTI/ureteric stone (no burning/blood, dipstick clear) · bowel — gastroenteritis/mesenteric adenitis (bug gives vomiting first + diarrhoea; neither) · plan: NBM, IV, fluids, analgesia, bloods, USS, surgical team on their way · safety-net: 'if the pain suddenly gets much worse or spreads across your whole tummy, tell the nurse straight away' · questions"
+     "**THE DIFFERENTIALS IN GROUPS, each with one reason it is less likely.** Then **the plan — NIL BY MOUTH, IV ACCESS AND FLUIDS, ANALGESIA AND ANTIEMETIC, BLOODS, ULTRASOUND FIRST, URGENT SURGICAL REFERRAL — and the SAFETY-NET: 'if the pain SUDDENLY GETS MUCH WORSE, SPREADS ACROSS YOUR WHOLE TUMMY, you can't keep fluids down, or you DEVELOP A FEVER OR FEEL FAINT — COME STRAIGHT BACK. DON'T WAIT UNTIL MORNING.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Examiner, before I start — is my patient haemodynamically stable, and could I have the vital signs, please?' / ★ 'I'm really sorry to hear that, Jenna. The pain you're describing is concerning to me too. I'll need to ask you a few questions to get a better idea of what's going on, and I promise I'll take good care of you. Is that all right?'",
-    "★ 'Where did the pain start? Was it always in that spot, or did it begin somewhere else?' / 'On a scale of one to ten, how bad is it? Sharp or a dull ache? There all the time? Getting better or worse? Does it travel anywhere? Anything that makes it better or worse — food, movement, position?'",
-    "'A few questions I ask everybody with tummy pain: any weight loss? How has your appetite been? Lumps or bumps? Dizziness? Blood in the motions or black tarry motions? Change in bowel habit? Anyone in the family with bowel cancer?'",
-    "★ 'I need to ask a few personal questions about your periods and your sexual health, because some causes of this pain start in that area. Is that all right? Any vaginal bleeding or discharge? When was your last period, and are they regular? Are you sexually active, and do you use condoms? Have you ever been told you had a sexually transmitted infection?'",
-    "★ To examiner: '…on superficial and deep palpation — where is the tenderness maximal, is there guarding, is there rigidity, is there rebound tenderness, any mass? … the inguinal region, and with consent and a chaperone a rectal examination? And I'd like Rovsing sign and the psoas sign.' / ★ 'With the patient's consent and with a chaperone present, I would like to perform a pelvic examination … is there cervical motion tenderness, is the uterus of normal size and non-tender, and is there any adnexal tenderness or mass?' / ★ 'Bedside tests — a urine dipstick, a urinary βhCG, and a capillary blood glucose.'",
-    "If pushed on βhCG: 'I would still request it. The last menstrual period is unreliable in early pregnancy, and a missed ectopic is a preventable death, so I test every woman of reproductive age with abdominal pain.'",
-    "★ 'Jenna, most likely you have a condition we call acute appendicitis. The appendix is a small finger-shaped pouch attached to the large bowel, on the right lower side of your tummy. At the moment that pouch is inflamed. There are four reasons I think that: your pain moved — it started around your belly button and settled in the right lower side; your appetite has gone since yesterday; you've been feeling sick and vomited; and when I examined you, the specific tests we use for appendicitis were positive.'",
-    "★ 'It is something we take seriously, and yes — it's very likely you'll need an operation to take the appendix out. It's usually keyhole surgery and most people go home within a day or two. The surgical team will come and talk you through it.' / 'A pregnancy sitting outside the womb — but your period was normal three weeks ago and the pregnancy test is negative. An infection of the womb and tubes, or a twisted ovary — but no discharge and the internal examination was normal. A bladder infection or a stone in the kidney tube — no burning, no blood, urine clear. A stomach bug or inflamed glands — a bug usually gives vomiting first and diarrhoea, and you have neither.'",
-    "'We'll keep you nil by mouth, put a drip in, give you fluids and pain relief, take some blood tests, and arrange an ultrasound. I'm asking the surgical team to come and see you. If at any point the pain suddenly gets much worse or spreads across your whole tummy, tell the nurse straight away.'",
-    "Version B: 'Those observations concern me. I can see you're not well — I'm going to ask a few quick questions and start treatment at the same time.' → examiner: two large-bore cannulas, bloods incl cultures and βhCG, fluid bolus, IV antibiotics, antiemetic, analgesia, NBM, urgent surgical review; 'in a rural site I would be ringing MedSTAR now' · ★ 'the pain that eased and then became generalised — I'm concerned about a perforated appendix with peritonitis and sepsis. Is the abdomen rigid, are bowel sounds absent, is there generalised rebound?' · 'I think the appendix has burst and the infection has spread; fluids and antibiotics now, the surgical team is coming — you'll need an operation today.'"
-   ],
    "pefe": [
-    "Role-player: Jenna, 27, teacher; worried, cooperative, volunteers nothing; holds the RLQ and shifts until analgesia is offered, then settles. Only says 'started around the belly button' if asked WHERE IT STARTED; only mentions the lost appetite if asked. Vomit came after the pain. Asks 'will I need an operation? how long in hospital?' once the diagnosis is named. 'Sorry, what does that mean?' to 'peritonism'/'ectopic'",
-    "PEFE Version A: uncomfortable, well hydrated, no postural drop · moves with respiration, no distension/scars/hernia · ★ RIF maximal tenderness with rebound + percussion tenderness, no guarding/rigidity, no mass · BS normal · inguinal normal · DRE unremarkable · ★ Rovsing +, psoas + · pelvic normal (no CMT, uterus normal, no adnexal tenderness/mass) · dipstick negative, βhCG negative, BSL 5.4",
-    "Three history key points: migration, anorexia, nausea/vomiting after pain. Three peritonism words: guarding, rigidity, rebound. Two named tests: Rovsing + psoas (or obturator). Alvarado 5–6 compatible, 7–8 probable, 9–10 very probable — not an Australian decision rule. Escalate: SBP <100, HR >100, T >38, rigid silent abdomen, positive βhCG with pain",
-    "Version B — day 3 perforated: 96/58, 118, 22, 38.7, lying still; resuscitate while talking (sepsis pathway: cultures, IV antibiotics per TG — e.g. amoxicillin + gentamicin + metronidazole or piperacillin-tazobactam VERIFY, fluids, analgesia, NBM, theatre) · Pregnant variant: tenderness may be higher; USS first, MRI if non-diagnostic, no CT; obstetrics + surgery; SA transfer to WCH · Adolescent with parent: add mesenteric adenitis question (recent sore throat/viral illness); no DRE; ask for time alone if a sexual history is needed",
-    "Investigations: FBE, CRP, UEC, LFT, lipase, βhCG, group and hold, urinalysis/MSU; USS first line (esp women of reproductive age), CT if USS non-diagnostic and not pregnant · management: NBM, IV fluids, analgesia (opioid does not mask signs), antiemetic, prophylactic antibiotics at induction, laparoscopic appendicectomy; interval/non-operative pathways are specialist decisions",
-    "SA: MedSTAR 1300 13 12 33 · WCH for the pregnant patient · TIS 131 450"
+    "**Do now: NIL BY MOUTH · LARGE-BORE IV ACCESS · IV FLUIDS · ANALGESIA AND AN ANTIEMETIC · URINARY βhCG AND DIPSTICK · REFER TO THE SURGICAL TEAM.**",
+    "**Do next: FBE FOR LEUCOCYTOSIS WITH A LEFT SHIFT · CRP, UEC, LFT, LIPASE · GROUP AND HOLD · ULTRASOUND FIRST IN A YOUNG WOMAN, CT IF INCONCLUSIVE · SERIAL ABDOMINAL EXAMINATION IF EQUIVOCAL.** **Ultrasound is first-line in young women, children and pregnancy because it AVOIDS RADIATION — but A NON-VISUALISED APPENDIX DOES NOT EXCLUDE APPENDICITIS.**",
+    "**On CT look for A DILATED, THICK-WALLED APPENDIX WITH SURROUNDING FAT STRANDING — and, if present, FREE FLUID OR EXTRALUMINAL GAS SUGGESTING PERFORATION. On ultrasound, A BLIND-ENDING, NON-COMPRESSIBLE TUBULAR STRUCTURE with adjacent free fluid.**",
+    "**Definitive treatment: LAPAROSCOPIC APPENDICECTOMY AFTER RESUSCITATION — the standard operation in Australia, with SHORTER STAY AND LOWER WOUND INFECTION RATES than open. PERIOPERATIVE IV ANTIBIOTICS for uncomplicated disease; a THERAPEUTIC COURSE for PERFORATED OR GANGRENOUS appendicitis. The usual Australian shape is METRONIDAZOLE PLUS GENTAMICIN, with AMPICILLIN OR AMOXICILLIN added for complicated disease, or AMOXICILLIN–CLAVULANATE where gentamicin is contraindicated.** VERIFY.",
+    "**NON-OPERATIVE MANAGEMENT WITH ANTIBIOTICS ALONE EXISTS FOR SELECTED UNCOMPLICATED CASES, BUT RECURRENCE IS COMMON AND IT IS NOT WHAT YOU OFFER IN THIS STATION. Mention it only if asked, and then say SURGERY REMAINS STANDARD.**",
+    "**Do not miss: ECTOPIC PREGNANCY — THE βhCG · PERFORATION AND PERITONITIS · SEPSIS with tachycardia, fever and confusion · OVARIAN TORSION in sudden severe pain · CAECAL CANCER IN THE OLDER PATIENT.** **Escalation triggers: SYSTOLIC BELOW 100 OR A NARROW PULSE PRESSURE · PULSE ABOVE 100 · TEMPERATURE ABOVE 38 · A RIGID SILENT ABDOMEN · A POSITIVE βhCG WITH PAIN.**",
+    "**Avoid: WAITING FOR IMAGING BEFORE REFERRING · WITHHOLDING ANALGESIA TO 'PRESERVE THE SIGNS', which is outdated and does not mask the signs of an acute abdomen · CT AS THE FIRST SCAN IN A YOUNG WOMAN OR IN PREGNANCY · A RECTAL EXAMINATION IN A CHILD · PROMISING SHE WILL NOT NEED SURGERY.** **From a rural site: REFER EARLY TO THE ON-CALL SURGICAL REGISTRAR AND MAKE THE TRANSFER DECISION BEFORE IMAGING, NOT AFTER. MedSTAR 1300 13 12 33; PATS offered before they ask.**"
    ],
-   "fails": [
-    "Never asking where the pain STARTED — the single most valuable item; never asking appetite or the vomiting-versus-pain order",
-    "Skipping the stability question because the numbers are on the door (in Version B it is the whole station)",
-    "Ninety seconds on allergies/what she took/which drug/dose — a whole differential group unasked; going straight from her sentence to 'when did it start?' with no acknowledgement",
-    "Omitting the gynae/sexual group, or asking it without permission; 'her period was three weeks ago so I wouldn't test' — no βhCG",
-    "A vague 'examine the abdomen' — findings only come for named items; no pelvic exam with consent/chaperone; not naming a special test",
-    "Differentials as a flat list without ectopic, or without a reason each; leaving 'will I need an operation?' to the surgeons",
-    "Version B: taking a leisurely history without starting resuscitation; not naming the eased-then-generalised pain as perforation"
-   ],
-   "numbers": [
-    "Bell 4:00 · examination 4:00–6:00 · explanation 6:00–8:00 · A: 110/70 · 88 · 12 · 36.5 · 98% · B: 96/58 · 118 · 22 · 38.7",
-    "Three history points: migration, anorexia, N/V after pain · three peritonism words · Rovsing + psoas/obturator · Alvarado 5–6 / 7–8 / 9–10",
-    "Escalate: SBP <100, HR >100, T >38, rigid silent abdomen, +βhCG with pain · pregnant: USS → MRI, no CT · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Acute appendicitis** — the answer",
+     "**MIGRATION to the right iliac fossa, ANOREXIA, NAUSEA, low-grade fever, WORSE ON MOVEMENT**",
+     "**The shift question; APPETITE; rebound and percussion tenderness; ROVSING AND PSOAS**",
+     "**Clinical, supported by LEUCOCYTOSIS WITH A LEFT SHIFT and ultrasound or CT** — hours"
+    ],
+    [
+     "**Ectopic pregnancy**",
+     "**MISSED OR ABNORMAL PERIOD, unilateral pain, DARK SCANTY BLEEDING, SHOULDER-TIP PAIN, collapse**",
+     "**Last menstrual period; contraception; light bleeding; POSTURAL DROP**",
+     "**βhCG, THEN TRANSVAGINAL ULTRASOUND. NOTHING ELSE EXCLUDES IT** — IMMEDIATE"
+    ],
+    [
+     "**Ovarian torsion**",
+     "**SUDDEN, SEVERE, UNILATERAL pain with PROMINENT VOMITING; adnexal mass**",
+     "**ABRUPT onset; SEVERITY OUT OF PROPORTION; adnexal tenderness or mass**",
+     "**ULTRASOUND WITH DOPPLER and urgent gynaecology review** — IMMEDIATE"
+    ],
+    [
+     "**Pelvic inflammatory disease**",
+     "**Vaginal discharge, DEEP DYSPAREUNIA, new or multiple partners, NO CONDOMS, fever**",
+     "**Discharge characteristics; sexual history; CERVICAL MOTION AND UTERINE TENDERNESS**",
+     "**Clinical diagnosis with a LOW THRESHOLD; SWABS DO NOT DELAY TREATMENT** — same day"
+    ],
+    [
+     "**Ureteric colic**",
+     "**LOIN TO GROIN, COLICKY, PATIENT CANNOT KEEP STILL, haematuria**",
+     "**Radiation to the groin; RESTLESSNESS; dipstick blood**",
+     "Dipstick, then **NON-CONTRAST CT KUB** — same day"
+    ],
+    [
+     "Urinary tract infection",
+     "Dysuria, frequency, urgency, suprapubic pain",
+     "**Nitrites and leucocytes on dipstick**",
+     "**Midstream urine culture. BEWARE: A PELVIC APPENDIX MIMICS THIS**"
+    ],
+    [
+     "**Mesenteric adenitis**",
+     "**YOUNGER patient, RECENT SORE THROAT OR VIRAL ILLNESS, tenderness that SHIFTS AS SHE MOVES**",
+     "Preceding upper respiratory infection; less localised tenderness",
+     "**A DIAGNOSIS OF EXCLUSION — often only made at operation or on imaging** — observe"
+    ],
+    [
+     "**Obstructed or strangulated hernia**",
+     "**GROIN LUMP, vomiting, NO FLATUS OR BOWEL MOTION**",
+     "**The groin question; COUGH IMPULSE; IRREDUCIBILITY**",
+     "Examination of the hernial orifices; erect chest and abdominal films — IMMEDIATE"
+    ],
+    [
+     "**Caecal or colorectal cancer**",
+     "**OLDER patient, IRON DEFICIENCY, WEIGHT LOSS, CHANGE IN BOWEL HABIT, family history**",
+     "**The cancer screen questions — ASKED WHATEVER THE AGE**",
+     "Colonoscopy; CT if presenting acutely — weeks"
+    ],
+    [
+     "Gastroenteritis · IBD · obstruction · Meckel · **shingles before the rash · DKA**",
+     "Diarrhoea and vomiting; bloody stool and weight loss; vomiting with no flatus; **a dermatomal band of pain with no rash yet**; thirst, polyuria, Kussmaul breathing",
+     "The GI group; **capillary glucose in the office tests**",
+     "Stool studies, imaging, CRP. **CHECK THE GLUCOSE — DKA PRESENTS AS ABDOMINAL PAIN**"
+    ]
    ]
   },
   "source": "Appendicitis_2_Case_Tasks_Script_Notability.pdf (Jenna, 27, RIF pain that started at the umbilicus — acute appendicitis; Version B perforated with sepsis)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Abdo Pain › Appendicitis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Uncomfortable, well hydrated, no postural drop"
-   ],
-   [
-    "Inspection",
-    "Abdomen moves with respiration; no distension, scars or hernia"
-   ],
-   [
-    "Palpation",
-    "RIGHT ILIAC FOSSA MAXIMAL TENDERNESS with REBOUND and PERCUSSION TENDERNESS; NO guarding or rigidity; no mass"
-   ],
-   [
-    "Bowel sounds and groins",
-    "Normal"
-   ],
-   [
-    "Rectal examination",
-    "Unremarkable"
-   ],
-   [
-    "Special tests",
-    "Rovsing positive · psoas positive"
-   ],
-   [
-    "Pelvic",
-    "Normal — no cervical motion tenderness, uterus normal, no adnexal tenderness or mass"
-   ],
-   [
-    "Urine dipstick",
-    "Negative"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Skipping 'is my patient haemodynamically stable, and could I have the vital signs?' because the numbers are on the door — a scored safety behaviour, and in Version B (96/58, 118, 38.7, day three, pain that eased then became generalised) it is the whole station: cannulas, cultures, βhCG, bolus, IV antibiotics, analgesia, NBM, urgent surgical review, and say aloud 'the pain that eased and then spread is the appendix perforating'",
-   "FAIL — Asking only 'where is the pain?' — she points and says nothing more; 'where did it start — was it always there, or did it begin somewhere else?' unlocks the migration from the umbilicus, the single most valuable item in the station; same rule for appetite — only if asked; nausea and vomiting AND their order (after the pain, not before)",
-   "FAIL — Spending ninety seconds on the painkiller — 'are you in pain right now? would you like something for it? I'll ask the nurse to organise that now, and we'll keep going' — two questions and out; but the four-part acknowledgement of her opening sentence is separately marked and costs four seconds",
-   "FAIL — Not requesting the pelvic examination because you're sure, or refusing the pregnancy test because her period was three weeks ago — 'with the patient's consent and a chaperone present, I'd like a pelvic examination: inspection, speculum for cervical discharge, bimanual for cervical motion tenderness, uterine size and tenderness, adnexal tenderness or mass'; 'the last period is unreliable in early pregnancy and a missed ectopic is a preventable death, so I test every woman of reproductive age with abdominal pain'; findings come only for what you name — guarding, rigidity, rebound, percussion tenderness, Rovsing, psoas, inguinal region, rectal with consent",
-   "FAIL — Leaving 'will I need an operation?' unanswered or handing it to the surgeons — answer it in your own words ('very likely, usually keyhole, home within a day or two'), then hand over; the four groups of history said as headings (GI, red flags and cancer, urinary, groin, gynaecological and sexual with permission), the prompt bell at 4:00 means turn to the examiner immediately",
-   "DO — Name it and explain it ('a small finger-shaped pouch attached to the large bowel, inflamed'), then the four reasons (migration, anorexia, nausea and vomiting, the positive specific tests); differentials in groups with a reason each — ectopic (normal period, negative test), PID or torsion (no discharge, normal pelvic exam), UTI or ureteric stone (no burning or blood, clear dipstick), gastroenteritis or mesenteric adenitis (vomiting first and diarrhoea — she has neither); NBM, drip, fluids, analgesia, bloods, ultrasound, surgical referral; safety-net: sudden worsening or spreading pain → tell the nurse; pregnant variant: ultrasound then MRI, no CT, obstetrics and surgery; adolescent: sore throat question, no rectal, time alone for the sexual history"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-117",
