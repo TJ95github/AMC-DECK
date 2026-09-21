@@ -28193,9 +28193,8 @@
  {
   "id": "MED-110",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "General practice. Version B of the generalised body aches stem (reconstructed from the Part 2 §6 variant script — name and vitals reconstructed). Same eight-group sweep as MED-109; the site answer changes everything and the GCA screen is the marked item. A card with ESR/CRP may or may not be provided — if markers are given raised, use them; if not, order them.",
   "stem": [
    "A 72-year-old man presents with aches and pains all over his body for the past few weeks. He is otherwise well. Observations are normal."
   ],
@@ -28204,107 +28203,215 @@
    "Physical examination findings will be given to you on a card",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. WIPE, pain now, validate · site: 'where exactly?' → ★ 'mainly my shoulders — both — and my hips' (the answer that changes everything) · ★ pattern: morning vs evening, rest vs activity, ★ 'how long does the stiffness last?' → 'a good hour and a half' = inflammatory · function: rising from a chair, combing hair, turning in bed, getting out of the car · ★ GCA screen — the marked item: new headache esp temples, scalp tenderness combing hair/on the pillow, jaw pain chewing that eases when stopping, visual change/blurring/diplopia/curtain · red flags: weight loss, appetite, sweats, fever, night bone pain · joints/swelling/rash/family · meds incl statin · neuro · endocrine · psychosocial briefly · SADMA · card → interpret · dx PMR with reasons · DDx: GCA, RA (late-onset/EORA), malignancy/myeloma, hypothyroidism, statin myopathy, fibromyalgia, OA, polymyositis (weakness not pain, CK), infection · plan: bloods + prednisolone 15 mg, response confirms, taper, bone protection, ★ GCA safety-net same day.",
+  "findings": [
+   [
+    "What he gives on questioning",
+    "PAIN IS MAINLY SHOULDERS AND HIPS · WORSE IN THE MORNING · REST MAKES IT WORSE, ACTIVITY EASES IT · STIFFNESS YES · NO swelling, redness or rash · WEIGHT LOSS YES, appetite normal, no lumps, TIRED YES. Some recalls add HEADACHE"
+   ],
+   [
+    "THE PEFE CARD",
+    "ESR AND CRP RAISED · girdle tenderness with PAIN ON MOVEMENT BUT PRESERVED PASSIVE RANGE · no synovitis, no small-joint swelling · TEMPORAL ARTERIES to be examined ON REQUEST · power formally normal despite the difficulty rising"
+   ],
+   [
+    "THE SITE QUESTION IS WHAT SEPARATES THIS FROM FIBROMYALGIA",
+    "SHOULDERS AND HIPS → PMR. EVERYWHERE → FIBROMYALGIA. Do not accept 'all over my body' — ask 'IS IT THE JOINTS OR THE MUSCLES, AND CAN YOU NAME ME TWO OR THREE SPOTS?'"
+   ],
+   [
+    "THE PATTERN PIVOT",
+    "'WORSE IN THE MORNING, BETTER ONCE I GET MOVING' → IMMEDIATELY ASK 'HOW LONG DOES THE STIFFNESS LAST?' 45 TO 60 MINUTES OR MORE, IN SHOULDERS AND HIPS, OVER 50, IS PMR. THEN SCREEN GCA"
+   ],
+   [
+    "THE FOUR QUESTIONS THAT ARE A SINGLE-ITEM FAIL IF OMITTED",
+    "ANY NEW HEADACHE, ESPECIALLY AROUND THE TEMPLES · IS YOUR SCALP TENDER when you comb your hair or lie on the pillow · ANY PAIN IN THE JAW WHEN YOU CHEW that eases when you stop · ANY CHANGE IN YOUR VISION — BLURRING, DOUBLE VISION, OR A CURTAIN COMING ACROSS? UNTREATED GCA CAUSES IRREVERSIBLE BLINDNESS"
+   ],
+   [
+    "A NORMAL TEMPORAL ARTERY DOES NOT EXCLUDE GCA",
+    "The superficial temporal artery may be PROMINENT, THICKENED, BEADED, TENDER OR PULSELESS. LOOK AT AND PALPATE BOTH TEMPLES IN EVERY PMR-PATTERN PATIENT — BUT A NORMAL-FEELING ARTERY DOES NOT EXCLUDE THE DIAGNOSIS"
+   ],
+   [
+    "THE FUNCTIONAL QUESTIONS THAT CONFIRM GIRDLE INVOLVEMENT",
+    "DO YOU STRUGGLE TO GET OUT OF A CHAIR · CLIMB STAIRS · COMB YOUR HAIR? These separate TRUE GIRDLE PAIN AND STIFFNESS from a vague ache — and the power is FORMALLY NORMAL, which is what distinguishes PMR from POLYMYOSITIS"
+   ],
+   [
+    "WEIGHT LOSS AND FATIGUE DO NOT DISCRIMINATE",
+    "THEY OCCUR IN PMR, RA, CHRONIC INFECTION AND MALIGNANCY ALIKE. DO NOT USE THEM TO CHOOSE — and DO NOT ANNOUNCE MALIGNANCY ON A SINGLE RED FLAG. The PATTERN is what discriminates"
+   ],
+   [
+    "THE RESPONSE TO STEROID IS ITSELF DIAGNOSTIC SUPPORT",
+    "A DRAMATIC RESPONSE TO LOW-DOSE PREDNISOLONE WITHIN 3 TO 7 DAYS supports the diagnosis. ABSENCE OF RESPONSE SHOULD MAKE YOU DOUBT IT AND RE-OPEN THE MALIGNANCY QUESTION"
+   ],
+   [
+    "Do not skip the medication question",
+    "STATIN MYOPATHY IS THE COMMONEST MIMIC OF PROXIMAL ACHING IN THIS AGE GROUP. 'ANY MEDICATIONS AT ALL, INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP' — and if a statin, WHEN DID IT START RELATIVE TO THE ACHES, THEN CHECK CK"
+   ]
+  ],
+  "findingsLabel": "Girdle pain over 50 — and the four questions that are a single-item fail",
+  "must": [
+   "FAIL — Missing the GCA screen. Four questions, every patient over 50 with girdle pain.",
+   "FAIL — Accepting 'all over my body' without establishing shoulders and hips.",
+   "FAIL — Announcing malignancy on weight loss and fatigue alone.",
+   "FAIL — Never asking about medications, so statin myopathy is never considered.",
+   "ASK — How long does the morning stiffness last before you loosen up?",
+   "ASK — Any change in your vision — blurring, double vision, or a curtain coming across?"
+  ],
   "back": {
-   "dx": "Polymyalgia rheumatica — bilateral shoulder and hip girdle pain, much worse in the morning, stiffness ~90 min, worse sitting still, eases with movement, age >50, systemically well; no GCA symptoms in the base version (harder variant: 'my scalp is sore when I comb my hair and my jaw aches after a few mouthfuls' → GCA — same-day high-dose steroid, do not wait for biopsy). Explain PMR as inflammation of the tissues around the shoulder and hip joints — bursae and tendon sheaths — NOT 'the immune system attacking the blood vessels in your shoulder' (that conflates it with GCA). Dramatic response to low-dose prednisolone within days helps confirm the diagnosis.",
+   "dx": [
+    "**POLYMYALGIA RHEUMATICA — an INFLAMMATORY condition of people OVER 50 causing BILATERAL SHOULDER AND OFTEN HIP-GIRDLE PAIN with PROLONGED MORNING STIFFNESS, RAISED INFLAMMATORY MARKERS and a RAPID RESPONSE TO LOW-DOSE CORTICOSTEROID.** **IT SHARES A DISEASE SPECTRUM WITH GIANT CELL ARTERITIS.**",
+    "**THE DISCRIMINATING ISSUE: THE DIAGNOSIS IS THE EASY PART. THE MARKED STEP IS KNOWING THAT PMR AND GCA ARE ONE DISEASE SPECTRUM, AND SCREENING FOR THE ONE THAT BLINDS PEOPLE.** **NOT ASKING ABOUT VISION IN A PMR-PATTERN PATIENT IS A SINGLE-ITEM AUTOMATIC FAIL IN MOST EXAMINERS' HANDS.**",
+    "**THE SAFETY-NET, SAID EVEN IF ALL FOUR ANSWERS ARE NEGATIVE: 'this condition is CLOSELY RELATED TO ANOTHER ONE AFFECTING THE ARTERIES AT THE TEMPLES, WHICH CAN AFFECT EYESIGHT. You don't have those symptoms now. BUT IF YOU EVER GET A NEW HEADACHE, JAW PAIN ON CHEWING, OR ANY CHANGE IN VISION, YOU MUST BE SEEN THE SAME DAY — GO TO THE EMERGENCY DEPARTMENT, DON'T WAIT FOR AN APPOINTMENT.'**",
+    "**THE PATTERN IS THE ARGUMENT, NOT THE SYMPTOMS. If challenged 'why not cancer?': 'BECAUSE THE PAIN HAS A CLEAR PATTERN — WORSE AFTER REST, BETTER WITH ACTIVITY, WITH PROLONGED MORNING STIFFNESS CONFINED TO THE SHOULDER AND HIP GIRDLES. WEIGHT LOSS AND FATIGUE OCCUR IN BOTH, SO I HAVE NOT USED THEM TO DISCRIMINATE. IF HE FAILS TO RESPOND TO LOW-DOSE PREDNISOLONE WITHIN A WEEK, I WOULD RE-OPEN THE MALIGNANCY QUESTION.'**",
+    "**EIGHT DIFFERENTIAL GROUPS, ANNOUNCED BY NAME — AN UNSPOKEN STRUCTURE SCORES NOTHING: RED FLAGS AND MALIGNANCY · INFECTION · THE ARTHRITIDES · SOFT TISSUE AND MUSCLE · NEUROLOGICAL · ENDOCRINE AND METABOLIC · MEDICATIONS · PSYCHOSOCIAL LAST.**",
+    "**TREATMENT: PREDNISOLONE 15 mg DAILY, guideline range roughly 12.5–25 mg. EXPECT A DRAMATIC RESPONSE WITHIN 3–7 DAYS. TAPER SLOWLY, USUALLY OVER 12–24 MONTHS. RELAPSE IS COMMON.** **FOR GCA THE DOSE IS 40–60 mg DAILY, with IV METHYLPREDNISOLONE IF THERE IS VISUAL LOSS.** VERIFY against current Therapeutic Guidelines.",
+    "**DO NOT DELAY TREATMENT FOR THE BIOPSY. Temporal artery biopsy STAYS INFORMATIVE FOR A WEEK OR TWO AFTER STARTING STEROID — so if any GCA feature is present, START HIGH-DOSE CORTICOSTEROID AND ARRANGE URGENT OPHTHALMOLOGY OR RHEUMATOLOGY REVIEW THE SAME DAY.**",
+    "**BONE PROTECTION IS PART OF THE PRESCRIPTION, NOT AN AFTERTHOUGHT: CALCIUM AND VITAMIN D, WEIGHT-BEARING EXERCISE, CONSIDER A BISPHOSPHONATE, AND BASELINE BONE DENSITY.** **Then MONITOR BP, GLUCOSE, WEIGHT, MOOD, CATARACT AND INFECTION RISK on long-term steroid.**",
+    "**THE RED FLAGS ARE UNCONDITIONAL AT EVERY AGE: WEIGHT LOSS · NIGHT SWEATS · BONE PAIN ESPECIALLY AT NIGHT · LUMPS OR BUMPS · FEVER OR RIGORS.** **Add in this age group: BONE PAIN WITH ANAEMIA, HYPERCALCAEMIA AND A VERY HIGH ESR IS MYELOMA — and a VERY HIGH ESR IS A MYELOMA CLUE, NOT A PMR CLUE.**",
+    "**RURAL ACCESS MATTERS: rheumatology from MM5 means an outpatient referral to the RAH or Flinders — ASK FOR A TELEHEALTH APPOINTMENT to avoid the drive, and use PATS for travel and accommodation subsidy when an in-person visit is required.** **For ACUTE VISUAL LOSS WITH SUSPECTED GCA: GIVE THE STEROID, THEN PHONE THE ON-CALL OPHTHALMOLOGY REGISTRAR; MedSTAR 1300 13 12 33 if retrieval is needed.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · 'are you in pain right now?' · open question · validate · 'anything you were worried this might be?'"
+     "**WIPE, confirm his name, then: 'ARE YOU IN ANY PAIN RIGHT NOW? Would you like something for it before we talk?'** Then **confidentiality and an open question.**"
     ],
     [
-     "0:45",
-     "★ 'Where exactly is the pain?' → 'mainly my shoulders, both of them, and my hips' · onset (weeks), constant, character, severity · ★ 'how is it affecting your life?' → can't get out of a chair, can't lift arms to dress"
+     "0:20",
+     "**Validate and frame: 'your pain is real and I take it seriously. Let me ask you some questions so I can work out what is going on, and then I'll explain what I think and what we do next.'**"
     ],
     [
-     "1:30",
-     "★ Pattern: 'worse in the morning or the end of the day? worse with rest or activity? ★ how long does the morning stiffness last before you loosen up?' → 'much worse in the morning, sitting still makes it worse, a good hour and a half' · night pain · swelling, rash, trauma"
+     "0:35",
+     "**EXPLORE THE PAIN, SITE FIRST: WHERE EXACTLY — JOINTS OR MUSCLES, NAME ME TWO OR THREE SPOTS · how long, sudden or gradual, constant or intermittent, getting worse · dull or sharp · does it travel · out of ten at its worst · anything better or worse · HOW IS IT AFFECTING YOUR LIFE?**"
     ],
     [
-     "2:15",
-     "★ GCA screen, named: 'any new headache, especially at the temples? is your scalp tender when you comb your hair or lie on the pillow? any pain in your jaw when you chew that eases when you stop? any change in your vision at all — blurring, double vision, a curtain coming across?' → base: no; harder variant: yes"
+     "1:20",
+     "**THE PATTERN QUESTIONS: pain AT NIGHT or waking you · WORSE IN THE MORNING OR AT THE END OF THE DAY · WORSE WITH REST OR WITH ACTIVITY · DO YOU FEEL STIFF IN THE MORNINGS — AND HOW LONG DOES THE STIFFNESS LAST BEFORE YOU LOOSEN UP?**"
     ],
     [
-     "2:45",
-     "Serious causes: weight loss, appetite, lumps, night sweats, fever, bone pain at night · infections/travel · joints: swelling, small joints of hands, deformity, psoriasis, FHx · ★ medications incl statin (myopathy) · weakness vs pain (polymyositis) · neuro · thyroid symptoms · depression screen · SADMA"
+     "1:50",
+     "**THE MSK SCREEN: any SWELLING · REDNESS OR RASHES · stiffness moving the joints · ANY RECENT INJURY, TRAUMA OR ACCIDENT?**"
+    ],
+    [
+     "2:05",
+     "**SIGNPOST THE SWEEP: 'I'm now going to run through a checklist of possible causes; some questions will sound unrelated, BUT I ASK THEM OF EVERYONE WITH THIS PROBLEM.'**"
+    ],
+    [
+     "2:10",
+     "**GROUP 1, RED FLAGS: WEIGHT LOSS without trying, HOW MANY KILOS OVER HOW LONG · appetite · LUMPS OR BUMPS · unusually tired · NIGHT SWEATS SOAKING THE SHEETS · BONE PAIN, PARTICULARLY AT NIGHT.**"
+    ],
+    [
+     "2:30",
+     "**GROUP 2, INFECTION: fever or chills · flu-like illness · HAVE YOU TRAVELLED, overseas or within Australia · contact with anyone unwell OR WITH ANIMALS · TICK OR INSECT BITES · sore throat with swollen glands · and the confidential sexual health question.** **In SA add Q FEVER exposure — abattoir, shearing, livestock.**"
+    ],
+    [
+     "3:00",
+     "**GROUP 3, THE ARTHRITIDES: occupation and heavy work · FAMILY HISTORY OF ARTHRITIS · DEFORMITY in the joints · fingers stiff first thing · RASHES, SCALY PATCHES, NAIL CHANGES · fingers changing colour in the cold · mouth ulcers, hair loss, sun sensitivity · worse after red meat or alcohol · recent diarrhoea or blood in the stools · RED OR PAINFUL EYES?**"
+    ],
+    [
+     "3:30",
+     "**GROUP 4, SOFT TISSUE AND MUSCLE: ANY MEDICATIONS AT ALL, INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP — and if a statin, WHEN DID YOU START IT AND DID THE ACHES BEGIN AFTER · IS THERE PAIN AND STIFFNESS ACROSS BOTH SHOULDERS AND BOTH HIPS · DO YOU STRUGGLE TO GET OUT OF A CHAIR, CLIMB STAIRS, OR COMB YOUR HAIR?**"
+    ],
+    [
+     "3:55",
+     "**THE GCA SCREEN — FOUR QUESTIONS, AND THE STATION TURNS ON THEM: ANY NEW HEADACHE, ESPECIALLY AROUND THE TEMPLES · IS YOUR SCALP TENDER when you comb your hair or lie on the pillow · ANY PAIN IN THE JAW WHEN YOU CHEW THAT EASES WHEN YOU STOP · AND ANY CHANGE IN YOUR VISION AT ALL — BLURRING, DOUBLE VISION, OR A CURTAIN COMING ACROSS?**"
+    ],
+    [
+     "4:15",
+     "**GROUP 5, NEUROLOGICAL: headaches · pins and needles or numbness · WEAKNESS MOVING THE ARMS OR LEGS · problems with walking or balance · change in speech or vision · difficulty concentrating?**"
     ],
     [
      "4:30",
-     "Card/examine: restricted active shoulder abduction, tender proximal muscles, ★ power normal (pain-limited), no synovitis in small joints (mild peripheral synovitis can occur), temporal arteries pulsatile non-tender (base), fundi, ESR/CRP raised, FBE (normocytic anaemia), CK normal, TSH normal, ALP mildly raised is compatible"
+     "**GROUP 6, ENDOCRINE AND METABOLIC: DO YOU FEEL THE COLD MORE THAN OTHERS · constipation, dry skin, hair thinning, weight change · INCREASED THIRST OR PASSING MORE URINE · bone pain, tummy pain, nausea, low mood?**"
     ],
     [
-     "5:30",
-     "★ 'I think you most likely have polymyalgia rheumatica. It is an inflammatory condition that affects the tissues around the shoulder and hip joints, which is why the pain sits in those areas and why you are so stiff in the mornings. It usually responds to a low dose of a steroid tablet — we'd expect you to feel dramatically better within a few days, and that response helps confirm the diagnosis.' · ★ 'It is closely related to another condition affecting the arteries at the temples that can threaten eyesight — you don't have those symptoms now, but if you ever get a new headache, jaw pain on chewing or a change in your vision, you must be seen the same day.' · DDx: GCA, late-onset RA, myeloma/malignancy (protein electrophoresis), hypothyroidism, statin myopathy, polymyositis, fibromyalgia, OA, infection/endocarditis"
+     "4:50",
+     "**GROUP 8, ANNOUNCED AS LAST: mood · sleep and whether he wakes refreshed · who is at home and anything stressful · MANAGING USUAL DAILY ACTIVITIES · and the self-harm question in any long-standing pain.**"
     ],
     [
-     "7:00",
-     "Plan: bloods (ESR, CRP, FBE, UEC, LFT, CK, TSH, Ca, SPEP/urine BJP, RF/anti-CCP, glucose) · prednisolone 15 mg daily VERIFY, review 1 wk — expect ≥70% improvement; poor response → reconsider · slow taper over 12–24 months · bone protection (Ca/vit D, DEXA, bisphosphonate if indicated), BP/glucose monitoring, gastroprotection if needed · ★ same-day GCA red flags → steroids 40–60 mg + urgent referral · driving/function, physio · rheumatology if atypical"
+     "5:20",
+     "**SADMA and close: smoking, alcohol, recreational drugs, allergies, other conditions or surgery, family history · 'is there anything I haven't asked about that you were hoping to discuss today?'**"
+    ],
+    [
+     "6:00",
+     "**Take the card. ASK FOR THE TEMPORAL ARTERIES BY NAME, and for FORMAL POWER TESTING — the power is normal despite the difficulty rising, WHICH IS WHAT SEPARATES PMR FROM POLYMYOSITIS.**"
+    ],
+    [
+     "6:30",
+     "**NAME PMR with the reasons FROM THE PATTERN — girdle distribution, morning stiffness, worse with rest and better with activity, raised markers.** Then **THE GCA SAFETY-NET, said even though today's screen is negative.** Then **the differentials by group name, each with a one-clause reason, and the plan: PREDNISOLONE 15 mg with a review at ONE WEEK, BONE PROTECTION, and RHEUMATOLOGY.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Where exactly is the pain? Is it the joints or the muscles? Can you name me two or three spots where you feel it most?'",
-    "★ 'Is it worse in the morning or at the end of the day? Is it worse with rest or with activity? How long does the stiffness last in the morning before you loosen up?' / 'Do you struggle to get out of a chair, or to comb your hair, or to turn over in bed?'",
-    "★ 'I need to ask about some specific symptoms. Any new headache, especially at the temples? Is your scalp tender when you comb your hair or lie on the pillow? Any pain in your jaw when you chew that eases when you stop? And any change in your vision at all — blurring, double vision, or a curtain coming across?'",
-    "'Any weight loss, appetite change, night sweats, lumps or fevers? Are you on a cholesterol tablet? Is it weakness, or is it pain that stops you?'",
-    "★ 'I think you most likely have polymyalgia rheumatica. It is an inflammatory condition that affects the tissues around the shoulder and hip joints — the bursae and tendon sheaths — which is why the pain sits in those areas and why you are so stiff in the mornings. It usually responds to a low dose of a steroid tablet, and we would expect you to feel dramatically better within a few days — that response helps confirm the diagnosis.'",
-    "★ 'It is closely related to another condition affecting the arteries at the temples that can threaten your eyesight. You don't have those symptoms now — but if you ever get a new headache, jaw pain on chewing, or any change in your vision, you must be seen the same day.'",
-    "Harder variant (scalp sore, jaw aches): 'What you've just told me changes things — those symptoms point to inflammation of the arteries at the temples, giant cell arteritis, which can threaten the sight. I'm starting a high dose of steroid today, before any test results, and arranging urgent blood tests and a specialist review — the biopsy is still useful for a week or two after starting the steroid.'",
-    "If challenged 'isn't PMR a vasculitis?' → 'PMR and giant cell arteritis share a disease spectrum, but PMR itself is a periarticular inflammatory syndrome — bursitis and tenosynovitis around the girdles — rather than a proven vasculitis of the girdle vessels.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 72 M, otherwise well; bilateral shoulder + hip pain and stiffness for weeks, worst in the morning, ~90 min to loosen, eases with movement; can't rise from a chair without arms; no headache/scalp/jaw/vision symptoms in the base version — harder variant volunteers scalp tenderness combing hair and jaw ache after a few mouthfuls when the GCA screen is asked",
-    "Findings to expect: restricted/painful active shoulder abduction, tender proximal muscles, power preserved, no small-joint synovitis (mild peripheral synovitis or pitting oedema can occur), temporal arteries normal (base) · ESR/CRP raised, normocytic anaemia, CK normal, TSH normal · ESR normal in ~10% — CRP more sensitive VERIFY",
-    "Diagnostic frame: age ≥50 · bilateral shoulder ± hip girdle ache >2 weeks · morning stiffness >45 min · raised ESR/CRP · exclusion of RA/malignancy/thyroid/myopathy · rapid response to prednisolone 15 mg (not diagnostic alone). Red flags against PMR: age <50, no morning stiffness, normal markers, peripheral synovitis dominant, weakness rather than pain, weight loss/fever (think malignancy, infection, vasculitis)",
-    "Treatment VERIFY TG: prednisolone 15 mg mane (12.5–25 range) → review 1 wk → taper to 10 mg over 4–8 wk → then 1 mg/month · 12–24 months typical · relapse → back to last effective dose · methotrexate as steroid-sparing (rheumatology) · bone protection from the start (Ca 1300, vit D, DEXA, bisphosphonate if >3 months at ≥7.5 mg or high risk) · GCA: prednisolone 40–60 mg daily immediately, 1 g IV methylprednisolone if visual loss; ESR/CRP, temporal artery biopsy within 1–2 wk (positive biopsy persists after starting), USS halo sign; aspirin per specialist",
-    "Trap: explaining PMR as blood-vessel attack in the shoulders; not asking stiffness DURATION; forgetting the statin question; not screening GCA at all — the marked item; missing bone protection/steroid counselling; delaying steroids in GCA to wait for biopsy",
-    "SA: same-day ophthalmology/rheumatology or MedSTAR 1300 13 12 33 for GCA with visual symptoms from a rural site · steroid card · Country Health Connect physio",
-    "Temporal arteries — NORMAL at baseline — but always examine them",
-    "Caveat — ESR is normal in about 10% — CRP is more sensitive VERIFY"
+    "**Bedside: temperature, BP, weight, urine dipstick, BSL. AND PALPATE BOTH TEMPORAL ARTERIES — prominent, thickened, beaded, tender or pulseless.**",
+    "**Bloods: ESR AND CRP — typically ESR ABOVE 40 mm/h, THOUGH A MINORITY ARE NORMAL · FBE · UEC and LFT · TSH · CK, WHICH IS NORMAL IN PMR AND RAISED IN MYOSITIS · CORRECTED CALCIUM, phosphate, ALP · 25-OH VITAMIN D · glucose or HbA1c.** **If over 50 with bone pain or anaemia, ADD SERUM PROTEIN ELECTROPHORESIS AND SERUM FREE LIGHT CHAINS.**",
+    "**Treatment: ESR AND CRP BEFORE THE STEROID, then a TRIAL OF PREDNISOLONE — a DRAMATIC RESPONSE WITHIN 3–7 DAYS IS STRONG SUPPORTING EVIDENCE. BASELINE GLUCOSE, BP, WEIGHT AND BONE-DENSITY PLANNING BEFORE LONG-TERM STEROID.**",
+    "**IF ANY GCA FEATURE APPEARS: START HIGH-DOSE CORTICOSTEROID AND ARRANGE URGENT OPHTHALMOLOGY OR RHEUMATOLOGY REVIEW THE SAME DAY. DO NOT DELAY TREATMENT FOR THE BIOPSY, WHICH STAYS INFORMATIVE FOR A WEEK OR TWO AFTERWARDS.** **Temporal artery ULTRASOUND OR BIOPSY confirms, but treatment comes first.**",
+    "**Do not miss: GIANT CELL ARTERITIS · MYELOMA, where bone pain with anaemia, hypercalcaemia, renal impairment and a VERY HIGH ESR is the pattern · SEPTIC OR CRYSTAL ARTHRITIS superimposed on chronic pain, where a single hot swollen joint with fever needs ASPIRATION.**",
+    "**Avoid: ordering ANA, RF or an 'autoimmune screen' AS A FISHING EXPEDITION — POOR POSITIVE PREDICTIVE VALUE in an unselected patient, and a weakly positive ANA GENERATES YEARS OF ANXIETY · repeating imaging that has already been normal · saying 'all your tests are normal, so there is nothing wrong'.** **RF AND ANTI-CCP ONLY IF THE PATTERN SUGGESTS RA.**",
+    "**EDUCATE ABOUT GCA BEFORE HE LEAVES THE ROOM.** **Rheumatology from MM5: outpatient referral to the RAH or Flinders, with a TELEHEALTH APPOINTMENT requested and PATS for travel where in-person review is needed. Q FEVER is a live differential on Yorke Peninsula, including VACCINATION STATUS for at-risk workers.**"
    ],
-   "fails": [
-    "Accepting 'all over' — never localising to the girdles, so the whole station is run as fibromyalgia",
-    "★ No GCA screen (headache, scalp, jaw, vision) — the marked item; no same-day safety-net for it",
-    "Not asking morning stiffness duration; not distinguishing weakness (polymyositis) from pain-limited movement",
-    "Explaining PMR as arteries being attacked in the shoulder/hip; promising a cure; no mention of the taper length or bone protection",
-    "Missing statin, thyroid and malignancy (myeloma) from the differentials; not ordering ESR/CRP if no card is given",
-    "In the GCA variant: waiting for biopsy/bloods before starting steroids"
-   ],
-   "numbers": [
-    "PMR: age ≥50 · morning stiffness ≥45–60 min (his ~90) · ESR/CRP raised · prednisolone 15 mg daily VERIFY · response 3–7 d · taper 12–24 mo · review 1 wk",
-    "GCA: prednisolone 40–60 mg daily same day · 1 g IV methylpred if visual loss · biopsy within 1–2 wk of starting VERIFY · ESR often >50",
-    "Bone protection: Ca 1300 mg/d, vit D >50, DEXA, bisphosphonate if ≥7.5 mg for ≥3 mo VERIFY · statin myopathy CK >10× ULN · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Polymyalgia rheumatica** — the answer",
+     "**Age 50 or over, BILATERAL SHOULDER AND HIP GIRDLE pain, MORNING STIFFNESS 45 MINUTES OR MORE, WORSE WITH REST AND BETTER WITH ACTIVITY, weight loss, fatigue, RAISED ESR/CRP**",
+     "**Girdle distribution; difficulty rising from a chair, climbing stairs, combing hair; POWER FORMALLY NORMAL**",
+     "**ESR and CRP; PREDNISOLONE 15 mg with a DRAMATIC RESPONSE IN 3–7 DAYS** — URGENT"
+    ],
+    [
+     "**Giant cell arteritis — the marked step**",
+     "**NEW HEADACHE, SCALP TENDERNESS, JAW CLAUDICATION, VISUAL LOSS OR DIPLOPIA; TENDER OR THICKENED TEMPORAL ARTERY**",
+     "**PALPATE BOTH TEMPLES — BUT A NORMAL-FEELING ARTERY DOES NOT EXCLUDE IT. ASK ABOUT VISION EVERY TIME**",
+     "**ESR/CRP, temporal artery ultrasound or biopsy — BUT TREAT FIRST, 40–60 mg PREDNISOLONE** — EMERGENCY"
+    ],
+    [
+     "**Multiple myeloma · other malignancy**",
+     "**Age over 50, BONE PAIN WORSE AT NIGHT, weight loss, ANAEMIA, HYPERCALCAEMIA, VERY HIGH ESR**",
+     "**Bone tenderness, pallor, nodes.** A VERY HIGH ESR IS A MYELOMA CLUE, NOT A PMR CLUE",
+     "**FBE, ESR, calcium, renal function, SPEP AND SERUM FREE LIGHT CHAINS, CXR** — URGENT"
+    ],
+    [
+     "**Statin or drug-induced myopathy**",
+     "**PROXIMAL ACHING, CRAMPS, DARK URINE, weeks to months after starting or a dose increase**",
+     "**FULL MEDICATION LIST INCLUDING COMPLEMENTARY MEDICINES**",
+     "**CK, renal function, TSH; cessation trial. STOP IF CK EXCEEDS ABOUT 10 TIMES THE UPPER LIMIT** — semi-urgent"
+    ],
+    [
+     "**Polymyositis or dermatomyositis**",
+     "**SYMMETRICAL PROXIMAL WEAKNESS MORE THAN PAIN; HELIOTROPE RASH, GOTTRON PAPULES; dysphagia**",
+     "**TEST POWER FORMALLY — CAN HE RISE FROM A CHAIR UNAIDED? IN PMR THE POWER IS NORMAL**",
+     "**CK, OFTEN VERY HIGH**; ANA and myositis panel, EMG, MRI, muscle biopsy — semi-urgent"
+    ],
+    [
+     "**Rheumatoid arthritis**",
+     "**SYMMETRICAL SMALL-JOINT SWELLING, morning stiffness over an hour, deformity, family history**",
+     "**SWELLING, NOT JUST PAIN; MCP and PIP involvement; nodules**",
+     "RF, anti-CCP, ESR/CRP, hand imaging — semi-urgent"
+    ],
+    [
+     "**Hypothyroid myopathy**",
+     "**COLD INTOLERANCE, CONSTIPATION, dry skin, hair thinning, weight gain**",
+     "Thyroid examination; **DELAYED REFLEX RELAXATION**",
+     "**TSH. IT IS HYPOTHYROIDISM THAT CAUSES A TRUE MYOPATHY WITH RAISED CK — thyrotoxicosis can cause a proximal myopathy but presents with HEAT INTOLERANCE, WEIGHT LOSS AND TREMOR**"
+    ],
+    [
+     "**Hypercalcaemia · vitamin D deficiency**",
+     "**Thirst, polyuria, bone pain, constipation, low mood**; or housebound or covered dress",
+     "Ask about sun exposure",
+     "**Corrected calcium with PTH; 25-OH VITAMIN D, deficient below about 50 nmol/L**"
+    ],
+    [
+     "Chronic or travel-acquired infection",
+     "Preceding febrile illness; **in Australia ROSS RIVER AND BARMAH FOREST VIRUS, Q FEVER from livestock, BRUCELLOSIS**; overseas travel with tick exposure",
+     "**The complete travel history; animal and abattoir exposure**",
+     "Arbovirus and Q fever serology; EBV, hepatitis and HIV serology — treat now if Lyme with erythema migrans"
+    ],
+    [
+     "**Fibromyalgia** · somatic symptom disorder, depression, sleep apnoea",
+     "**Pain EVERYWHERE rather than girdle, NO PATTERN SHIFT, unrefreshing sleep, fibro-fog, NORMAL ESR/CRP**",
+     "**THE SITE QUESTION IS WHAT SEPARATES THEM**; mood, sleep, function",
+     "**No confirmatory test — a diagnosis of exclusion. PSYCHOSOCIAL ASSESSMENT ONLY AFTER GROUPS 1–7 ARE CLEAR**"
+    ]
    ]
   },
   "source": "Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf §6 Version B (72-year-old man, shoulder and hip girdle aches, 90 min morning stiffness — polymyalgia rheumatica with the GCA screen; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Medicine MSK › Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Shoulders",
-    "Restricted and painful active abduction"
-   ],
-   [
-    "Muscles",
-    "TENDER PROXIMAL MUSCLES with POWER PRESERVED — stiffness, not weakness"
-   ],
-   [
-    "Small joints",
-    "No synovitis (mild peripheral synovitis or pitting oedema can occur)"
-   ],
-   [
-    "Bloods",
-    "ESR and CRP RAISED · normocytic anaemia · CK NORMAL · TSH normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — No giant cell arteritis screen — the marked item: 'any new headache, especially at the temples? is your scalp tender when you comb your hair or lie on the pillow? any pain in your jaw when you chew that eases when you stop? any change in your vision — blurring, double vision, a curtain?' — and the same-day safety-net for those symptoms in the explanation; in the harder variant the scalp and jaw come back positive (★)",
-   "DO — 'Where exactly is the pain?' → 'mainly my shoulders, both of them, and my hips' — the site answer changes everything; then pin the pattern: worse in the morning, worse after rest, eases with movement, and 'how long does the morning stiffness last before you loosen up?' → an hour and a half (the threshold that matters is roughly 45–60 minutes in a girdle distribution)",
-   "DO — Still run the serious-cause and infection groups (weight, appetite, lumps, night sweats, bone pain at night; fever, travel), the joint group, medications (statin → CK), nerves, thyroid; the card: restricted active shoulder abduction, tender proximal muscles, power normal but pain-limited, no synovitis, ESR raised",
-   "SAY — 'Polymyalgia rheumatica — an inflammatory condition that affects the tissues around the shoulder and hip joints, which is why the pain sits there and why you're so stiff in the mornings; it usually responds to a low dose of steroid within days, and that response helps confirm it' — never 'the immune system attacks the blood vessels in your shoulder' (that conflates PMR with GCA)",
-   "SAY — 'It is closely related to a condition affecting the arteries at the temples that can threaten eyesight — you don't have those symptoms now, but if you ever get a new headache, jaw pain on chewing or a change in vision, you must be seen the same day'; if the scalp and jaw are positive, that is GCA — high-dose prednisolone today, ESR/CRP, temporal artery biopsy (still useful after starting steroid), urgent referral",
-   "DO — Numbers you must not fumble: PMR age ≥50, prednisolone ~15 mg daily with response in 3–7 days, taper over 12–24 months; GCA 40–60 mg daily; differentials by group with reasons (myeloma, malignancy, RA, statin myopathy, hypothyroidism, fibromyalgia — wrong pattern); plan, review, safety-net"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-111",
