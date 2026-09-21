@@ -113762,7 +113762,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 180,
-  "setting": "A counselling-weighted neurology station where the diagnosis is handed to you in the stem, so none of the marks are in working it out. Task one is an ASKED examination — you request findings from the examiner rather than performing them. The whole station turns on whether the patient leaves believing that you believed him. First sitting ran as a performed examination in the morning and was switched to an asked one that afternoon; some recalls name it functional neuropathy.",
   "stem": [
    "You are the intern (HMO) covering the ward at a metropolitan hospital.",
    "James Whitfield, 37, has come to the Emergency Department today because he is unable to walk. He has had weakness of the right lower limb since a motor vehicle accident two months ago. He was assessed at the time and examination and all imaging were normal.",
@@ -113774,121 +113773,169 @@
    "Explain the diagnosis to the patient",
    "Explain the management plan"
   ],
-  "time": "Thirty seconds to introduce yourself and tell him you will examine first — never three minutes of examiner dialogue with an ungreeted patient · two and a half minutes on the examination request in six blocks · turn back by 3:00 · two and a half minutes on the explanation, which is where the marks are · two minutes on the team · the last thirty seconds on reading material, safety-net and teach-back. Spare time goes to the explanation, never to extra tests.",
-  "findingsLabel": "Ask the examiner — the findings you are given",
+  "findingsLabel": "The examination request and the expected findings — open only when you would ask the examiner",
   "findings": [
    [
-    "General appearance",
-    "Alert and oriented, comfortable at rest. Wheelchair at the bedside."
+    "OPEN WITH THE PATIENT BEFORE YOU TURN TO THE EXAMINER — fifteen seconds, explicitly marked",
+    "‘Hello James, my name is Dr [name], I'm one of the doctors on the ward. I know you've had a difficult morning. I'm going to CHECK A FEW THINGS ABOUT YOUR NERVES AND MUSCLES first, and then I'll COME STRAIGHT BACK and talk you through what's going on and what we're going to do. Give me two minutes.’ Three minutes of examiner dialogue with your back to a patient you never greeted READS AS DISMISSAL — the exact failure this station is built to detect"
    ],
    [
-    "Limb posture",
-    "RIGHT ANKLE HELD FIXED and stiff, resisting movement."
+    "BLOCKS 1 AND 2 — general appearance and gait",
+    "‘Is the patient ALERT OR DROWSY? Are there any WALKING AIDS at the bedside? Do I see any ABNORMAL LIMB POSITION OR POSTURE?’ → Alert and oriented, WHEELCHAIR at the bedside, RIGHT ANKLE HELD IN A FIXED, STIFF POSTURE. ‘Can he walk, and can he walk on his HEELS AND ON HIS TOES?’ → CANNOT WALK UNAIDED, cannot heel- or toe-walk. Note it, but LOOK FOR INCONSISTENCY rather than treating it as localising"
    ],
    [
-    "Gait",
-    "Unable to walk unaided. Cannot heel-walk or toe-walk."
+    "BLOCK 3 — upper and lower limbs, ITPRSC",
+    "‘On inspection, any WASTING, FASCICULATION or TREMOR? TONE at each joint? POWER by myotome out of five? REFLEXES — biceps, triceps, supinator, knee and ankle? SENSATION by dermatome — light touch, pinprick, vibration, proprioception? COORDINATION — finger–nose and heel–shin?’ → NO WASTING (two months of true denervation WOULD show wasting — it does not) · TONE INCREASED AT THE RIGHT ANKLE ONLY · POWER REDUCED AT THE RIGHT ANKLE AND VARIABLE ON REPEAT TESTING · reflexes, sensation, coordination NORMAL"
    ],
    [
-    "Inspection",
-    "No wasting, no fasciculation, no tremor."
+    "BLOCK 4 — cranial nerves, AND FUNDOSCOPY BY NAME even after ‘normal’",
+    "‘Could I just confirm FUNDOSCOPY — and visual acuity, visual fields and pupils?’ → All normal, NO PAPILLOEDEMA. WHY: you are about to tell a patient there is NO BRAIN INJURY, NO TUMOUR AND NO BLEED. PAPILLOEDEMA IS THE ONE BEDSIDE FINDING THAT WOULD MAKE THAT SENTENCE FALSE. Ask for it and you have EARNED the reassurance"
    ],
    [
-    "Tone",
-    "INCREASED AT THE RIGHT ANKLE; normal elsewhere."
+    "BLOCK 5 — HYPERTONIA OBLIGES AN UPPER MOTOR NEURONE SCREEN, out loud",
+    "‘You mentioned increased tone, so I'd like to EXCLUDE AN UPPER MOTOR NEURONE LESION — ANKLE CLONUS, the PLANTAR RESPONSE, and PRONATOR DRIFT.’ → NO CLONUS, PLANTARS DOWNGOING, NO DRIFT. That normality is YOUR PERMISSION TO SAY THE NERVES ARE UNDAMAGED. Skipping it means your reassurance is UNEARNED"
    ],
    [
-    "Power",
-    "Reduced at the right ankle and VARIABLE on repeat testing."
+    "BLOCK 6 — HOOVER'S SIGN, where the station is won",
+    "‘And finally, examiner, I'd like to test HOOVER'S SIGN — HIP EXTENSION ALONE, then again WHILE THE PATIENT FLEXES THE OPPOSITE HIP.’ → POSITIVE: weak hip extension alone becomes STRONG during contralateral hip flexion. EVERYONE ASKS FOR ITPRSC; THE SPECIAL TESTS ARE WHAT SEPARATE A FOUR FROM A SIX. ASKING IS WHAT IS SCORED, even if the answer is ‘not tested’"
    ],
    [
-    "Reflexes",
-    "Normal and symmetrical, arms and legs."
+    "The other positive signs, worth naming if time allows",
+    "HIP ABDUCTOR SIGN — weak hip abduction normalises during abduction of the opposite hip (the leg-equivalent of Hoover) · ENTRAINMENT — a functional tremor takes up the rhythm you tap, or stops · DISTRACTIBILITY — the symptom changes when attention moves elsewhere; VARIABILITY IS A POSITIVE FEATURE, NOT PROOF OF FAKING · GIVE-WAY WEAKNESS — full briefly, then collapses · MIDLINE SENSORY SPLITTING — stops exactly at the midline or a joint line"
    ],
    [
-    "Clonus, plantar response, pronator drift",
-    "NO CLONUS. PLANTARS DOWNGOING. NO DRIFT."
+    "CORRECTION — the direction of the ankle posture",
+    "The source describes the ankle held in DORSIFLEXION while also reporting he CANNOT DORSIFLEX and CANNOT HEEL-WALK — both cannot be true. Fixed functional ankle dystonia is characteristically PLANTARFLEXION WITH INVERSION (equinovarus), consistent with being unable to heel-walk. DESCRIBE BACK WHATEVER THE EXAMINER GIVES YOU and call it ‘A FIXED, STIFF POSTURE AT THE ANKLE’. If challenged: ‘either way the point is that it is FIXED, with NORMAL REFLEXES AND A DOWNGOING PLANTAR, which is NOT AN UPPER MOTOR NEURONE PATTERN.’"
    ],
    [
-    "Sensation and coordination",
-    "Normal throughout."
+    "ZERO INVESTIGATIONS — and have the refusal scripted",
+    "‘Imaging was ALREADY NORMAL after the accident, the diagnosis rests on POSITIVE CLINICAL SIGNS RATHER THAN EXCLUSION, and REPEATING TESTS IN FUNCTIONAL DISORDERS TENDS TO ENTRENCH THE SEARCH FOR STRUCTURAL DAMAGE. I would investigate again ONLY IF THE EXAMINATION CHANGED.’ No repeat MRI, no nerve conduction studies"
    ],
    [
-    "Cranial nerves and fundoscopy",
-    "Normal. No papilloedema."
-   ],
-   [
-    "Hoover's sign",
-    "POSITIVE — or 'not tested'. Asking for it by name is what is scored."
+    "THE NUMBERS",
+    "8 MINUTES: 0.5 intro / 2.5 examination / 2.5 explanation / 2 management / 0.5 close · 6 examination blocks · 6 explanation beats · 5 reassurance statements · 5 team members · 0 investigations · GPMP + TCA up to 5 allied health visits per calendar year VERIFY · Mental Health Treatment Plan up to 10 individual psychology sessions per calendar year VERIFY · healthdirect 1800 022 222. If the examination request finishes early, SPEND THE SPARE MINUTE ON THE EXPLANATION — NEVER ON EXTRA TESTS"
    ]
   ],
   "must": [
-   "FAIL — Explaining the cause as stress or the mind-body connection — the role-player is briefed to go cold, and the station is lost at that sentence",
-   "FAIL — Telling him nothing is wrong, or hedging when he asks 'do you believe me?' instead of answering with the word YES first",
-   "FAIL — Declaring the nerves undamaged without asking for CLONUS, PLANTAR and DRIFT after being told there is hypertonia — and never asking for HOOVER'S SIGN or fundoscopy by name",
-   "FAIL — Introducing yourself only to the examiner — three minutes of examiner dialogue with your back to him reads as dismissal; sit down and greet him first, then turn away for two minutes",
-   "SAY — All five, counted off: your symptoms are real · you are not imagining them · I see a lot of people with this · because there is no damage there is a real chance of getting better · this is not your fault",
-   "SAY — 'The hardware of your body is intact; it is the software that is not running properly at the moment' — then the plan: physiotherapy, occupational therapy, psychology for the DISTRESS not the cause, neurology and GP review, social work, and decline repeat imaging with a reason"
+   "FAIL — Explaining causation psychologically: ‘your mind and body are connected, so stress is producing these symptoms.’",
+   "FAIL — Telling him nothing is wrong: ‘all your tests are normal, so there's nothing to worry about.’",
+   "FAIL — Not answering ‘do you believe me?’ directly — hedging with ‘I'm sure something is going on’; or telling him he is imagining or exaggerating it.",
+   "FAIL — Reassuring after being told of hypertonia without asking for clonus, plantar response and drift.",
+   "ASK — Before I explain — is there anything in particular that's worrying you today?",
+   "ASK — Can I just check — how would you explain to your partner what I've told you today?"
   ],
   "back": {
-   "dx": "FUNCTIONAL NEUROLOGICAL DISORDER — altered voluntary motor function with positive clinical evidence of incompatibility between the symptom and recognised neurological disease, causing significant functional impairment. Diagnosed on POSITIVE SIGNS (Hoover, distractibility, give-way weakness, entrainment, midline sensory splitting), not by exclusion, and current criteria no longer require an identifiable psychological stressor — which is why 'your symptoms are real' is clinically accurate rather than merely kind. Here: fixed dystonic posture at the right ankle with increased tone, variable power and a positive Hoover, against normal reflexes, downgoing plantars, no clonus, no drift, normal sensation, coordination, cranial nerves and fundoscopy. Differentials to be seen excluding on the way: spinal cord compression or cauda equina (sensory level, retention, saddle anaesthesia, upgoing plantars), stroke (sudden onset, upper motor neurone pattern, drift), Guillain-Barré (ascending, areflexic, bulbar or respiratory), multiple sclerosis (relapsing, optic or brainstem involvement), radiculopathy or common peroneal palsy (dermatomal sensory loss, flaccid foot drop), and complex regional pain syndrome as a coexisting rather than alternative diagnosis. FND is NOT malingering or factitious disorder — symptoms are not consciously produced; know the distinction, never voice it, and be especially careful here because the index event was an MVA with a likely open CTP claim. Management is people, not prescriptions: physiotherapy, occupational therapy, psychology for CBT, neurologist and GP review, social work. No repeat imaging and no nerve conduction studies. VERIFY DSM-5-TR wording, MBS item caps and the SA reporting duty.",
+   "dx": [
+    "**FUNCTIONAL NEUROLOGICAL DISORDER — right lower limb weakness with a FIXED FUNCTIONAL ANKLE POSTURE, two months after a motor vehicle accident, in a 37-year-old who is now unable to walk.** **THE DIAGNOSIS IS HANDED TO YOU IN THE STEM — deliberately. It tells you where the marks are: THE DIAGNOSIS IS NOT THE TASK. THE EXPLANATION IS.** **Recalled by some candidates as ‘functional neuropathy’ — the same station; say FUNCTIONAL NEUROLOGICAL DISORDER yourself.**",
+    "**THE SINGLE BEHAVIOUR BEING MARKED: can you tell a patient that his nervous system is UNDAMAGED without him hearing ‘THERE IS NOTHING WRONG WITH YOU’, and WITHOUT REACHING FOR A PSYCHOLOGICAL EXPLANATION?** **CANDIDATES WHO EXPLAIN THE MIND–BODY CONNECTION LOSE THIS STATION. The role-player is briefed to react badly to it — ‘so it IS all in my head’ — crossing his arms and answering in single words from then on.**",
+    "**THE ONE REFRAME THAT CHANGES THE STATION: FND IS DIAGNOSED ON POSITIVE SIGNS — HOOVER, DISTRACTIBILITY, ENTRAINMENT — NOT AS A DIAGNOSIS OF EXCLUSION, and current criteria NO LONGER REQUIRE AN IDENTIFIABLE PSYCHOLOGICAL STRESSOR.** VERIFY against DSM-5-TR **That is precisely why ‘your symptoms are real’ is CLINICALLY ACCURATE RATHER THAN MERELY KIND — and it gives you a defensible answer if the examiner asks how you know it is not multiple sclerosis.**",
+    "**WHY THESE PATIENTS ARRIVE GUARDED — AND WHY THAT IS THE WHOLE STATION.** **Guidance on FND is unusually explicit that patients report poor experiences: they feel they are NOT GIVEN A CHANCE to describe their symptoms, that the doctor DOES NOT BELIEVE THEM, and that clinicians are DETERMINED TO PIN IT ON SOMETHING PSYCHOLOGICAL.** **He has told his story to FOUR DOCTORS. THE EXAMINER IS MARKING HOW YOU SPEAK, NOT WHAT YOU KNOW.**",
+    "**THE SIX BEATS, IN ORDER.** **BEAT 1 — PURPOSE, and the concern question: ‘Thank you for waiting, James. I've finished examining you. Before we talk about it — IS THERE ANYTHING WORRYING YOU?’** **BEAT 2 — WHAT YOU DID AND FOUND: ‘a full nerve examination — the nerves in your arms and legs, and the parts of the brain that control them. What I found is STIFFNESS AND DIFFICULTY MOVING AT YOUR RIGHT ANKLE, and that is what is stopping you walking.’** **BEAT 3 — NAME IT: ‘The neurologist and I both think you have a condition called a FUNCTIONAL NEUROLOGICAL DISORDER — a functional movement problem in your ankle.’**",
+    "**BEAT 4 — THE DISORDERS HE DOES NOT HAVE**: **‘My examination today confirms that THE NERVES AND THE BRAIN ARE NOT DAMAGED. You have NOT HAD A STROKE, there is NO BLEEDING IN THE BRAIN, NO TUMOUR, and NO INJURY TO THE BRAIN OR THE SPINAL CORD FROM YOUR ACCIDENT.’** **SAY WHAT HE DOES HAVE, AND NAME IT, BEFORE YOU SAY WHAT HE DOES NOT HAVE — otherwise the negatives sound like ‘nothing is wrong’.** **And the stroke line matters personally: his MOTHER HAD A STROKE AT 61.**",
+    "**BEAT 5 — THE HARDWARE AND THE SOFTWARE, the analogy the guidelines themselves suggest — use it word for word**: **‘The nerves are there and they are INTACT — they are just NOT WORKING PROPERLY AT THE MOMENT. Think of a COMPUTER: the HARDWARE IS PERFECTLY FINE, but the SOFTWARE ISN'T RUNNING PROPERLY. NOTHING IS BROKEN; the message just isn't getting through. That is why we call it FUNCTIONAL.’** **He softens here: ‘so the wiring's fine but the signal's not getting through?’**",
+    "**BEAT 6 — THE FIVE STATEMENTS, COUNTED ON YOUR FINGERS — the usual failure is saying two and feeling you delivered the block**: **1 ‘The hardware is intact; the software isn't running.’ 2 ‘YOUR SYMPTOMS ARE REAL AND YOU ARE NOT IMAGINING THEM.’ 3 ‘I have made sure you have NOT had a stroke, a bleed or a tumour.’ 4 ‘I SEE A LOT OF PEOPLE WITH THIS SAME PROBLEM.’ 5 ‘Because there is NO DAMAGE, there is a REAL CHANCE OF GETTING BETTER.’** Then **‘THIS IS NOT YOUR FAULT, and we work on it as a team’** — and **check in before the plan.**",
+    "**THE HIDDEN AGENDA — ANSWER IT WITHOUT HEDGING, AND THE FIRST WORD IS YES.** **He is convinced the doctors think he is FAKING IT FOR THE INSURANCE CLAIM — and this MUST be said at some point in every run: early if you ask about concerns, mid-explanation (‘DO YOU ACTUALLY BELIEVE ME?’) if you don't, or at the close.** **‘YES. I DO BELIEVE YOU. Your symptoms are real and you are not imagining them. What I can also tell you is that the structure of your brain and nerves is undamaged — they are simply not working properly at the moment. BOTH OF THOSE THINGS ARE TRUE AT THE SAME TIME.’** **‘I'm sure something is going on’ is HEARD AS A NO.** → *‘Nobody's said that to me before.’*",
+    "**NEVER LET MALINGERING INTO THE CONSULTATION.** **FND is NOT malingering and NOT factitious disorder — the difference is that FND symptoms are NOT CONSCIOUSLY PRODUCED. Know the distinction for the examiner; NEVER VOICE IT TO THE PATIENT.** **It matters especially here: the index event was a MOTOR VEHICLE ACCIDENT, so there may be an OPEN CTP CLAIM, and any hint that you are weighing his honesty destroys the consultation and the mark.** **DO NOT SAY: ‘your mind and body are connected’ · ‘it's stress’ · ‘there's nothing wrong with you’ · ‘it's psychological’ · ‘CONVERSION DISORDER’ — correct in DSM-5-TR, wrong at the bedside.**"
+   ],
    "plan": [
     [
-     "0:00",
-     "Sanitise, sit at eye level, introduce yourself: 'I'm going to check your nerves and muscles first, then come straight back and explain everything. Two minutes.' Do not apologise, and do not skip this to save time."
+     "0:00 → 0:30 ★",
+     "**Sanitise, SIT AT EYE LEVEL, and CONNECT WITH THE PATIENT FIRST — then turn to the examiner. Do not apologise; simply explain and return.** He opens flat and guarded: *‘Fine. Everyone keeps examining me.’*"
     ],
     [
-     "0:30",
-     "The examination request in six blocks (see findings): general appearance → gait including heel and toe walking → ITPRSC in upper and lower limbs → cranial nerves, and ask for fundoscopy by name even if told cranial nerves are normal → clonus, plantar and drift, because hypertonia was reported → Hoover's sign."
+     "0:30 → 3:00",
+     "**THE SIX EXAMINATION BLOCKS, IN ORDER, BY VOICE**: general appearance → gait including heel and toe walking → ITPRSC upper and lower limbs → cranial nerves PLUS FUNDOSCOPY → **the UPPER MOTOR NEURONE SCREEN (clonus, plantar, drift) triggered by the hypertonia** → **HOOVER'S SIGN by name.** **If the examiner gives a vague answer, NAME EXACTLY WHAT YOU WANT TO KNOW.**"
     ],
     [
-     "3:00",
-     "Turn back and sit. 'Before we discuss it — is there anything worrying you?' Then the six beats: purpose of the examination → what you found → name the diagnosis → the disorders he does NOT have (no stroke, no bleed, no tumour, no injury from the accident) → hardware intact, software not running → the five statements, counted."
+     "3:00 → 5:30 ★",
+     "**TURN BACK AND SIT. THE SIX BEATS: purpose + concern question → what you did and found → NAME IT → what he does NOT have (stroke, bleed, tumour, injury) → HARDWARE AND SOFTWARE → the FIVE STATEMENTS on your fingers → check in.** **When he asks ‘do you believe me?’ — YES FIRST.**"
     ],
     [
-     "4:30",
-     "Answer the belief question the moment it comes, with yes as the first word. If it never comes, it will surface at the end — ask for questions before moving to the plan."
+     "5:30 → 7:30",
+     "**THE PLAN AS PEOPLE, NOT A REFERRAL LIST.** **‘We'll be a TEAM looking after you, and we'll do our best to help you improve and get back to normal function.’** Then **FIVE MEMBERS, ONE SENTENCE EACH, IN ORDER.**"
     ],
     [
-     "5:30",
-     "The team, one sentence each: physiotherapist (retrain movement, balance, flexibility) · occupational therapist (home review, aids, daily activities) · psychologist (CBT for the distress, which makes the condition harder to treat — never for the cause) · neurologist and GP (regular review) · social worker (income, work, disability supports)."
+     "The five team members, verbatim",
+     "**PHYSIOTHERAPIST — ‘exercises to RETRAIN THE MUSCLES TO MOVE NORMALLY again, and work on balance, strength and flexibility.’** **OCCUPATIONAL THERAPIST — ‘will look at your HOME AND YOUR DAILY ACTIVITIES, and can provide equipment such as a walking stick or frame for support while we work on this.’** **PSYCHOLOGIST — ‘symptoms like this cause a lot of DISTRESS, and THAT DISTRESS MAKES THE CONDITION HARDER TO TREAT, so we offer a talking therapy called CBT.’** **NEUROLOGIST AND GP — ‘will review you regularly to TRACK YOUR PROGRESS.’** **SOCIAL WORKER — ‘if you need help with income, work or support at home.’**"
     ],
     [
-     "7:00",
-     "Decline repeat imaging with a reason. Written information — FND Australia Support Services, neurosymptoms.org. Safety-net. Teach-back: 'How would you explain this to your partner?'"
+     "PSYCHOLOGY ENTERS ONLY AS TREATMENT OF DISTRESS — never as cause",
+     "**He pushes: ‘WHY DO I NEED A SHRINK IF IT'S A NERVE PROBLEM?’ — he ACCEPTS it if you explain it TREATS THE DISTRESS, NOT THE CAUSE.** **The moment causation becomes psychological, he disengages and the marks go.**"
+    ],
+    [
+     "His two questions at the end",
+     "*‘How long is this going to take?’* → **‘I CAN'T GIVE YOU A DATE, and I DON'T WANT TO PROMISE ONE. What I can tell you is that because there's NO DAMAGE, improvement is REALISTIC, and the people who do best are the ones who START THE PHYSIOTHERAPY EARLY.’** *‘Do I need another scan?’* → **‘I don't think so. Your scans after the accident were normal, and this diagnosis is made FROM THE EXAMINATION rather than from a scan. If anything changes, we'd look again.’** **Offering a scan to end an awkward moment is a named trap.**"
+    ],
+    [
+     "7:30 → 8:00 — close with teach-back",
+     "**Written information — FND AUSTRALIA SUPPORT SERVICES and neurosymptoms.org — the safety-net, and TEACH-BACK: ‘how would you explain to your partner what I've told you today?’** → *‘That the nerves aren't damaged, they're just not working right. And it can get better.’* **Teach-back converts a good explanation into a DEMONSTRATED one.**"
     ]
    ],
-   "ask": [
-    "The examination request is spoken in blocks, and blocks 5 and 6 are what separate you from a candidate reciting a generic neurological examination. If told 'cranial nerves are normal', still ask: 'Could I confirm fundoscopy specifically?' — papilloedema is the one bedside finding that would make your reassurance false.",
-    "Hoover's sign, by name: 'Hip extension tested alone, then again while the patient flexes the opposite hip.' Positive = extension that is weak on direct testing and becomes strong once attention moves to the other leg.",
-    "The six explanation beats in order: purpose → findings → name it → what he does not have → hardware and software → the five statements. Never lead with the negatives.",
-    "Never say: mind and body are connected · it's stress · there's nothing wrong · it's psychological · conversion disorder · a promised timeframe for recovery.",
-    "Mobility aids are genuinely contested — dependence versus deconditioning. Safe position: provide one as a bridge alongside active physiotherapy, with a plan to wean it.",
-    "Fitness to drive: a fixed ankle affecting pedal control must be assessed against Assessing Fitness to Drive, with a reporting duty in SA under the Motor Vehicles Act 1959. VERIFY"
-   ],
    "pefe": [
-    "Role-player: James Whitfield, 37, warehouse supervisor, currently off work. Lives with his partner and a nine-year-old daughter; four steps at the front door. Mother had a stroke at 61 and he is quietly frightened this is the same thing. Starts flat, guarded and slightly impatient — he has told this story to four doctors. Warms only if told his symptoms are real; goes cold and monosyllabic if stress or his mind is offered as the cause.",
-    "Hidden agenda — he is convinced the doctors think he is faking it for the insurance claim. If asked about concerns early he raises it then; otherwise he interrupts mid-explanation with 'Do you actually believe me?', or says it at the close: 'You think I'm making this up for the insurance, don't you?' It is said in every run.",
-    "His questions: how long will this take · do I need another scan · will I need a wheelchair · what about my job · why do I need a psychologist if it's a nerve problem.",
-    "Recall versions — A: ask the examination (current, most common). B: perform it, with cotton wool and a tendon hammer, first sitting morning only; prioritise gait, tone, power, reflexes, plantar and Hoover if short of time. C: named 'functional neuropathy' — same station, use the correct term yourself. D: the belief question as an explicit hidden agenda. E: opens angry, having been dismissed elsewhere — acknowledge without defending the previous clinicians, then run the same six beats.",
-    "Recall discrepancy: the source describes the ankle as held in dorsiflexion while also saying he cannot dorsiflex or heel-walk, which cannot both be true. Fixed functional ankle dystonia is characteristically plantarflexion with inversion. Describe back whatever the examiner gives and call it 'a fixed, stiff posture at the ankle' rather than committing to a direction."
+    "**MANAGEMENT BUCKETS.** **DO NOW: explain the diagnosis properly · CONFIRM HE BELIEVES YOU BELIEVE HIM · refer to physiotherapy and occupational therapy · written information and a support-service name · ASSESS WHETHER HE IS SAFE TO GO HOME — stairs (FOUR STEPS AT THE FRONT DOOR), toilet access (his DAUGHTER has to help him), who is with him.** **DO NEXT: GP review within a week with a GP MANAGEMENT PLAN AND TEAM CARE ARRANGEMENT for subsidised allied health · neurology follow-up · psychology for CBT via a MENTAL HEALTH TREATMENT PLAN · social work for income, carer or disability support.** VERIFY item numbers and session caps.",
+    "**DO NOT MISS**: **a NEW OR CHANGING DEFICIT is NOT to be attributed to FND WITHOUT RE-EXAMINATION** · **FITNESS TO DRIVE — a fixed ankle affecting PEDAL CONTROL must be assessed against Austroads Assessing Fitness to Drive; in South Australia there is a REPORTING DUTY under the Motor Vehicles Act 1959** VERIFY — he says he hasn't driven since the accident and needs to for work · **SCREEN FOR LOW MOOD** (he says ‘I'm just fed up’; ask about self-harm) · **look for COEXISTING COMPLEX REGIONAL PAIN SYNDROME — it changes the physiotherapy plan.**",
+    "**AVOID**: **REPEAT IMAGING AND NERVE CONDUCTION STUDIES** — both were normal and repeating them reinforces the search for damage · **OPIOIDS** · **unqualified BED REST** · **a psychological explanation of CAUSATION** · **PROMISING A TIMEFRAME** for recovery.",
+    "**THE MOBILITY AID QUESTION — be able to argue both sides.** **Aids can FOSTER DEPENDENCE and reinforce the disability; equally, a patient who cannot walk without one will otherwise STAY IN BED, and DECONDITIONING WILL MAKE EVERYTHING WORSE.** **The safe OSCE position: PROVIDE AN AID IF IT KEEPS HIM MOBILE, ALONGSIDE ACTIVE PHYSIOTHERAPY, WITH AN EXPLICIT PLAN TO WEAN IT.** If challenged: **‘I'd provide one as a BRIDGE RATHER THAN AN ENDPOINT, because immobility carries its own risks — and I'd review it with the physiotherapist.’** **He asks: ‘I'm 37. Do I have to use a frame?’**",
+    "**THE DIFFERENTIALS — the diagnosis is given, but you are still expected to show what it is NOT.** **SPINAL CORD COMPRESSION / CAUDA EQUINA — MUST NOT MISS: excluded by NORMAL REFLEXES, DOWNGOING PLANTAR, NO SENSORY LEVEL, NO SPHINCTER DISTURBANCE.** **STROKE — MUST NOT MISS: gradual onset, isolated ankle, drift and plantar normal.** **GUILLAIN–BARRÉ — MUST NOT MISS: reflexes PRESENT AND SYMMETRICAL, not ascending or bilateral.** **MULTIPLE SCLEROSIS: normal cranial nerves and fundoscopy, no prior episodes, imaging normal.** **RADICULOPATHY or COMMON PERONEAL PALSY: sensation intact and non-dermatomal, reflexes normal, tone INCREASED rather than flaccid.** **CRPS: LOOK FOR IT rather than exclude it.**",
+    "**Examiner questions, scripted.** *‘How do you know this is not multiple sclerosis?’* → **‘FND is a POSITIVE diagnosis, not one of exclusion. There is no relapsing history, no optic or brainstem involvement, normal fundoscopy, and the prior imaging was normal — AND I HAVE A POSITIVE HOOVER'S SIGN.’** *‘Is this the same as malingering?’* → **‘No. FND symptoms are NOT CONSCIOUSLY PRODUCED. I would know the distinction but I would NEVER RAISE IT WITH THE PATIENT.’** *‘What is the single most important part of management?’* → **‘THE EXPLANATION. Guidance is explicit that the first step in successful management of functional symptoms is an appropriate explanation from the clinician.’**",
+    "**VARIANT E — THE ANGRY, PREVIOUSLY DISMISSED PATIENT.** *‘Two months of this. Every doctor tells me the scans are clear and sends me home. Why are you going to be any different?’* → **‘That sounds EXHAUSTING, and I'm sorry it's been like that. I'm NOT going to tell you the scans are clear and leave it there — THAT'S NOT AN ANSWER. There IS A NAME for what you have, I can explain WHY THE SCANS LOOK NORMAL, and there IS A PLAN. Can I take you through it?’** **DO NOT DEFEND THE PREVIOUS CLINICIANS, and do not jump to the plan to escape the discomfort. Acknowledge, then the same six beats.**",
+    "**VARIANT D — the compensation claim.** *‘If you write down “functional”, does that mean the insurer thinks I'm making it up?’* → **‘It's a RECOGNISED MEDICAL DIAGNOSIS, and I'll document it as one — including that THE SYMPTOMS ARE GENUINE and that there are POSITIVE EXAMINATION FINDINGS supporting it. What I write describes a REAL CONDITION, NOT A DOUBT ABOUT YOU.’** **NEVER discuss malingering, secondary gain or the claim's merits, even if invited to.**",
+    "**VARIANT B — perform the examination instead** (the first sitting, morning only — changed to an asked examination that afternoon because it couldn't be done in time): **same six blocks with your hands; if short of time prioritise GAIT (heel and toe walking), TONE, POWER, REFLEXES, PLANTAR AND HOOVER'S. Narrate as you go. Do not omit introduction or consent.** **CARD 5 — no diagnosis given: you must BUILD THE POSITIVE CASE YOURSELF (Hoover, distractibility, variability) and EXCLUDE cord compression, stroke and GBS before naming it.**",
+    "SA — **COUNTRY HEALTH CONNECT for community physiotherapy and occupational therapy in the country LHNs** · **PATS for travel to metropolitan neurology or specialist FND services** · **NDIS where impairment is likely to be PERMANENT AND SIGNIFICANT — eligibility in FND is NOT automatic** · **the CTP INSURER, since it followed a motor vehicle accident (ReturnToWorkSA only if work-related)** · **healthdirect 1800 022 222** · **reading: FND Australia Support Services, neurosymptoms.org, Better Health Channel.** **SAFETY-NET: ‘Come back STRAIGHT AWAY if the weakness SPREADS TO THE OTHER LEG OR TO YOUR ARMS, if you LOSE CONTROL OF YOUR BLADDER OR BOWELS, if you develop NUMBNESS AROUND THE BACK PASSAGE, or if your SPEECH, FACE OR SWALLOWING is affected.’**"
    ],
-   "fails": [
-    "★ Explaining causation psychologically — stress, or the mind-body axis",
-    "★ Telling him nothing is wrong, or that all the tests are normal and leaving it there",
-    "★ Failing to answer 'do you believe me?' with a clear yes",
-    "★ Telling him he is imagining or exaggerating the symptoms",
-    "Reassuring that the nerves are undamaged without asking for clonus, plantar and drift after being told about hypertonia; never greeting the patient before three minutes of examiner dialogue; omitting Hoover's sign; ordering repeat imaging or a nerve conduction study to fill an awkward silence; saying conversion disorder; delivering two of the five reassurance statements and moving on; promising a recovery timeframe; running out of time so the plan becomes a rushed list of five professions"
-   ],
-   "numbers": [
-    "37-year-old · 2 months since the MVA · 8 minutes: 0.5 intro / 2.5 examination / 2.5 explanation / 2 management / 0.5 close · 6 examination blocks · 6 explanation beats · 5 reassurance statements · 5 team members · 0 investigations",
-    "Hoover: weak hip extension tested alone, strong during contralateral hip flexion · clonus more than five sustained beats = upper motor neurone · upgoing plantar = Babinski · pronator drift = downward drift with pronation",
-    "GP Management Plan and Team Care Arrangement: up to 5 allied health visits per calendar year VERIFY · Mental Health Treatment Plan: up to 10 individual psychology sessions per calendar year VERIFY · healthdirect 1800 022 222 · Country Health Connect, PATS, NDIS if permanent and significant, ReturnToWorkSA or the CTP insurer · reading: FND Australia Support Services, neurosymptoms.org, Better Health Channel",
-    "Safety-net: weakness spreading to the other leg or the arms · bladder or bowel disturbance · saddle numbness · speech, facial or swallowing change"
-   ],
-   "planApprox": false
+   "ddx": [
+    [
+     "**Functional neurological disorder — the answer (given in the stem)**",
+     "**Onset after a physical trigger; normal imaging; VARIABLE, INCONSISTENT deficit**",
+     "**POSITIVE HOOVER, distractibility, give-way weakness, midline sensory split**",
+     "**Diagnosed on POSITIVE SIGNS, not exclusion. Explanation, then the MDT plan. NO repeat imaging.** Diagnosis given"
+    ],
+    [
+     "**Spinal cord compression / cauda equina**",
+     "**Trauma two months ago; bilateral signs; back pain**",
+     "**Sensory level, urinary retention, SADDLE ANAESTHESIA, hyperreflexia, upgoing plantars**",
+     "**Reflexes normal, plantar down, no sensory level, no sphincter disturbance.** MUST NOT MISS"
+    ],
+    [
+     "**Stroke**",
+     "**Sudden onset; facial or arm involvement; vascular risk factors — his MOTHER had a stroke at 61**",
+     "**UMN pattern, facial droop, dysarthria, pronator drift**",
+     "**Gradual onset, isolated ankle, drift and plantar normal.** MUST NOT MISS"
+    ],
+    [
+     "**Guillain–Barré syndrome**",
+     "**ASCENDING weakness after an infection; AREFLEXIA**",
+     "**Absent reflexes, bulbar or respiratory involvement, autonomic instability**",
+     "**Reflexes PRESENT and symmetrical; not ascending or bilateral.** MUST NOT MISS"
+    ],
+    [
+     "Multiple sclerosis",
+     "**Young adult; relapsing episodes separated in TIME AND SPACE**",
+     "**Optic neuritis, internuclear ophthalmoplegia, UMN signs, Lhermitte**",
+     "**Normal cranial nerves and FUNDOSCOPY; no prior episodes; imaging was normal.** Urgent referral"
+    ],
+    [
+     "Radiculopathy / common peroneal palsy",
+     "**Foot drop after trauma or pressure at the fibular head**",
+     "**L5 dermatomal loss, weak EVERSION, reduced ankle jerk**",
+     "**Sensation intact and NON-dermatomal; reflexes normal; tone INCREASED rather than flaccid.** Routine"
+    ],
+    [
+     "**Complex regional pain syndrome**",
+     "**Post-traumatic limb pain OUT OF PROPORTION, often COEXISTING with FND**",
+     "**Allodynia, swelling, colour and temperature change, trophic skin change**",
+     "**LOOK FOR IT rather than exclude it — it CHANGES THE PHYSIOTHERAPY PLAN.** Routine"
+    ],
+    [
+     "**Malingering / factitious disorder — know it, never voice it**",
+     "Symptoms CONSCIOUSLY produced (malingering: for external gain; factitious: to assume the sick role)",
+     "**FND symptoms are NOT consciously produced**",
+     "**NEVER raise it with the patient — especially with an open CTP claim.** —"
+    ]
+   ]
   },
   "source": "Functional_Neurological_Disorder_Notability.pdf (single document, 16 pages — 37-year-old with right lower limb weakness two months after an MVA, diagnosis given in the stem, asked examination then explanation then management; five documented recall versions folded in)",
-  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Neuro › Functional_Neurological_Disorder_Notability.pdf"
+  "drive": "AMC Clinical Notability › Medicine AMC Clinical › Neuro › Functional_Neurological_Disorder_Notability.pdf",
+  "v2": true
  }
 ]
