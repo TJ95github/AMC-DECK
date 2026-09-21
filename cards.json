@@ -27076,9 +27076,8 @@
  {
   "id": "MED-105",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version D of the recurrent-falls spine (reconstructed stem, older-person Part 2 §7). Examiner: postural BP, CVS, neurological, MSK examination and glucose ALL normal. A completely normal examination is exactly what a resolved TIA looks like — do not file the visual blurring under 'dizziness'.",
   "stem": [
    "A 77-year-old man has come to see you about recurrent falls; the most recent happened while he was working in the garden. Observations are normal."
   ],
@@ -27087,102 +27086,215 @@
    "Ask the examiner for the relevant examination findings",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Same spine: WIPE, concern · ★ LOC ('never') · each fall — ★ garden fall: 'my vision blurred just before, and for a bit afterwards'; 'no chest pain, no sweating, just felt cold' · one fall as he stood up · ★ chase the blur: one eye or both, half the world or all of it, how long, speech/weakness/numbness/face droop with it, resolved fully · exertional context → cardiac questions · injury, long lie · organic screen · PMHx ×4 (vascular risk: BP, lipids, diabetes, AF, smoking) · meds, ★ antiplatelet/anticoagulant · six domains · social/driving → PEFE (postural BP, rhythm/AF, carotid bruits, murmur of AS, full neuro, fundi, glucose, ECG) → all normal → ★ TIA first, cardiac second, postural third → aspirin now, urgent imaging, ★ no driving.",
+  "findings": [
+   [
+    "THE EXAMINATION CARD IS ENTIRELY NORMAL",
+    "NO POSTURAL DROP · CARDIOVASCULAR NORMAL · NEUROLOGICAL NORMAL · MUSCULOSKELETAL NORMAL · GLUCOSE NORMAL. A COMPLETELY NORMAL EXAMINATION IS EXACTLY WHAT A RESOLVED TIA LOOKS LIKE. IT IS NOT REASSURANCE"
+   ],
+   [
+    "THE SENTENCE THE WHOLE STATION TURNS ON",
+    "'THE LAST ONE HAPPENED IN THE GARDEN. MY VISION BLURRED JUST BEFORE I FELL, AND FOR A BIT AFTERWARDS.' Filing transient visual blurring under 'dizziness' AND REASSURING HIM BECAUSE EVERYTHING IS NORMAL IS THE AUTOMATIC FAIL"
+   ],
+   [
+    "The three falls are three different mechanisms",
+    "ONE WAS A TRIP · ONE HAPPENED ON STANDING · ONE IN THE GARDEN WITH THE VISUAL BLURRING. ASK HIM TO TALK YOU THROUGH EACH ONE SEPARATELY — a generic 'what happened?' gets a generic answer and the garden fall never separates out"
+   ],
+   [
+    "What he says that sounds reassuring and is not",
+    "'NO CHEST PAIN, NO SWEATING — I JUST FELT COLD' · 'NO, I NEVER BLACKED OUT.' Absent chest pain DOES NOT EXCLUDE A CARDIAC CAUSE FOR A FALL DURING EXERTION, and absent LOC does not make a transient neurological event benign"
+   ],
+   [
+    "CHASE THE VISUAL SYMPTOM — five questions",
+    "HOW LONG DID IT LAST · ONE EYE OR BOTH · WAS IT BLURRING, OR LOSS OF PART OF THE FIELD, OR A CURTAIN COMING DOWN · ANY SLURRED SPEECH, FACIAL DROOP OR ARM WEAKNESS AT THE SAME TIME · HAS IT HAPPENED BEFORE, EVEN BRIEFLY?"
+   ],
+   [
+    "A FALL DURING EXERTION IS A SECOND RED FLAG",
+    "He was ACTIVE IN THE GARDEN. EXERTIONAL COLLAPSE ALWAYS RAISES THE HEART — aortic stenosis, arrhythmia, ischaemia — SO ASK FOR THE MURMUR BY NAME AND ORDER THE ECG"
+   ],
+   [
+    "The risk-factor screen is otherwise NEGATIVE",
+    "NO PAST HISTORY · NO MEDICATIONS · the six domains empty. THAT EMPTINESS IS NOT A REASON TO RELAX — it is what leaves the visual symptom standing alone as the finding"
+   ],
+   [
+    "THIS IS A TODAY PROBLEM, NOT A NEXT-WEEK ONE",
+    "'IT HAS RECOVERED COMPLETELY, WHICH IS WHY EVERYTHING IS NORMAL NOW, BUT IT IS A WARNING SIGN, AND I WANT YOU ASSESSED TODAY, NOT NEXT WEEK'"
+   ],
+   [
+    "DRIVING IS A SEPARATE MARK AND IT IS ROUTINELY DROPPED",
+    "AFTER A SUSPECTED TIA, NO PRIVATE DRIVING FOR AT LEAST TWO WEEKS, FOUR WEEKS COMMERCIAL, under Austroads. IN SA AND THE NT THE DOCTOR ALSO HAS A LEGAL DUTY TO REPORT AN UNFIT DRIVER — TELL HIM BEFORE YOU REPORT"
+   ],
+   [
+    "STILL NAME THE THIRD CAUSE",
+    "ONE FALL HAPPENED AS HE STOOD UP, SO POSTURAL HYPOTENSION REMAINS PART OF THE PICTURE EVEN WITH A NORMAL POSTURAL BP TODAY — THE DROP IS INTERMITTENT. Three falls, three named mechanisms"
+   ]
+  ],
+  "findingsLabel": "Version D — a normal card, and the one sentence that changes the hour",
+  "must": [
+   "FAIL — Filing the transient visual blurring under 'dizziness' and reassuring him.",
+   "FAIL — Reassuring because the examination is normal. That is what a resolved TIA looks like.",
+   "FAIL — Not asking him to describe each fall separately, so the garden fall never separates out.",
+   "FAIL — No driving advice after a suspected TIA.",
+   "ASK — How long did the blurring last, one eye or both?",
+   "ASK — Any slurred speech, facial droop or arm weakness at the same time?"
+  ],
   "back": {
-   "dx": "Transient ischaemic attack — transient visual blurring around the exertional fall, fully resolved (normal examination is what a resolved TIA looks like) — needs same-day assessment, not next week. Second: cardiac — a fall during exertion always raises arrhythmia/ischaemia/aortic stenosis; 'felt cold' without chest pain does not exclude it. Third: postural hypotension — one fall happened as he stood up, so it stays on the list even though today's measurement is normal. Plan: aspirin now (unless contraindicated), urgent brain and carotid imaging, ECG ± Holter/echo, bloods (FBE, UEC, lipids, glucose/HbA1c), TIA clinic/stroke unit pathway, ★ no private driving for at least 2 weeks (4 weeks commercial) VERIFY Austroads, secondary prevention.",
+   "dx": [
+    "**TRANSIENT ISCHAEMIC ATTACK — LEAD WITH THIS. Then a CARDIAC CAUSE for the fall during exertion, and POSTURAL HYPOTENSION for the fall on standing. THREE FALLS, THREE NAMED MECHANISMS.**",
+    "**THE DISCRIMINATING ISSUE: ESCALATING RATHER THAN REASSURING. THE VISUAL BLURRING IS THE WHOLE STATION.** **A COMPLETELY NORMAL EXAMINATION IS EXACTLY WHAT A RESOLVED TIA LOOKS LIKE — the normality is the expected finding, not the answer.**",
+    "**THE SCRIPT: 'the MOST IMPORTANT THING YOU'VE TOLD ME is the BLURRING OF YOUR VISION AROUND THE TIME OF THAT FALL. That may have been A BRIEF INTERRUPTION TO THE BLOOD SUPPLY OF PART OF THE BRAIN — A MINI-STROKE, or a TRANSIENT ISCHAEMIC ATTACK. It has RECOVERED COMPLETELY, which is why everything is normal now, BUT IT IS A WARNING SIGN, AND I WANT YOU ASSESSED TODAY, NOT NEXT WEEK.'**",
+    "**THEN THE SECOND: 'the second thing is YOUR HEART. YOU FELL WHILE YOU WERE ACTIVE IN THE GARDEN — A FALL DURING EXERTION ALWAYS MAKES ME THINK ABOUT THE HEART, so I want that tracing and possibly AN ULTRASOUND OF THE HEART.'**",
+    "**AND THE THIRD: 'one of your falls happened AS YOU STOOD UP, so A DROP IN BLOOD PRESSURE ON STANDING is likely part of the picture too.'** **A normal postural BP today does not exclude it — THE DROP IS INTERMITTENT.**",
+    "**THEN THE DRIVING, AND SAY YOU ARE SORRY TO HAVE TO: 'PLEASE DON'T DRIVE FOR NOW. After a suspected mini-stroke THE NATIONAL RULES SAY AT LEAST TWO WEEKS OFF THE ROAD, and WE'LL REVIEW IT TOGETHER.'**",
+    "**CHASE THE VISUAL SYMPTOM RATHER THAN RECORDING IT: DURATION · ONE EYE OR BOTH · BLURRING VERSUS FIELD LOSS VERSUS A CURTAIN DESCENDING · ACCOMPANYING SPEECH, FACE OR ARM SYMPTOMS · PREVIOUS EPISODES.** **AMAUROSIS FUGAX — a curtain over one eye — points to the CAROTID CIRCULATION and makes carotid imaging urgent.**",
+    "**ABSENT CHEST PAIN DOES NOT EXCLUDE A CARDIAC CAUSE. 'No chest pain, no sweating, I just felt cold' IS NOT REASSURANCE IN A 77-YEAR-OLD WHO COLLAPSED DURING EXERTION — ASK FOR THE MURMUR OF AORTIC STENOSIS BY NAME AND GET AN ECG.**",
+    "**THE EMPTY RISK-FACTOR SCREEN IS NOT A REASON TO RELAX. No past history and no medications is precisely what LEAVES THE VISUAL SYMPTOM STANDING ALONE AS THE FINDING — and it means you have nothing else to blame the falls on.**",
+    "**FRAME IT AS ALWAYS: 'falls at your age ALMOST NEVER COME FROM ONE SINGLE THING.' But HERE THE ORDER MATTERS — THE TIA GOES FIRST, BECAUSE IT IS THE ONE THAT CHANGES WHAT HAPPENS IN THE NEXT HOUR.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, acknowledge, signpost · concern"
+     "**Say the observations out loud, WIPE, open question, acknowledge.** Then **SIGNPOST THE LONG LIST and ask the agenda question.**"
     ],
     [
      "0:45",
-     "★ LOC → never · each fall: ★ garden — what were you doing, warning → 'vision blurred just before, and for a bit after' · ★ chase it: one or both eyes, one half, curtain, how long, speech/face/arm with it, fully back to normal? · chest pain, palpitations, sweating (no — 'felt cold') · the fall on standing · injury, long lie"
+     "**FALL OR FAINT: did you BLACK OUT, EVEN FOR A SECOND · do you REMEMBER HITTING THE GROUND · any SHAKING OR JERKING, TONGUE BITING, WETTING YOURSELF?**"
     ],
     [
-     "2:00",
-     "Organic screen: weakness, numbness, speech, headache, vertigo · CVS incl exertional symptoms · GI · meals"
+     "1:10",
+     "**CHARACTERISE, AND INSIST ON EACH ONE SEPARATELY: HOW MANY FALLS AND WHEN DID THEY START · TALK ME THROUGH EACH ONE — WHAT WERE YOU DOING AT THE TIME · DID YOU HURT YOURSELF · COULD YOU GET YOURSELF UP?**"
     ],
     [
-     "2:45",
-     "PMHx ×4: hypertension, cholesterol, diabetes, AF, prior stroke/TIA, IHD · meds incl antiplatelet/anticoagulant, recent changes · smoking, alcohol quantified · FHx vascular"
+     "1:45",
+     "**When the garden fall and the visual blurring appear, STOP AND CHASE IT: HOW LONG DID IT LAST · ONE EYE OR BOTH · WAS IT BLURRING, LOSS OF PART OF THE FIELD, OR A CURTAIN COMING DOWN · ANY SLURRED SPEECH, FACIAL DROOP OR ARM WEAKNESS AT THE SAME TIME · HAS ANYTHING LIKE IT HAPPENED BEFORE, EVEN BRIEFLY?**"
+    ],
+    [
+     "2:15",
+     "**THE REST OF THE CNS SCREEN: any weakness or numbness anywhere · trouble swallowing · unsteadiness or veering to one side · headache · any SPINNING sensation?**"
+    ],
+    [
+     "2:35",
+     "**CVS — AND THE EXERTIONAL FALL MAKES THIS MANDATORY: any CHEST PAIN OR TIGHTNESS · PALPITATIONS · more BREATHLESS THAN USUAL, OR WORSE ON EXERTION · ankle swelling · any FAMILY HISTORY OF SUDDEN DEATH?**"
+    ],
+    [
+     "3:00",
+     "**GI and meals: vomiting, diarrhoea, BLACK OR BLOODY MOTIONS · are you EATING REGULARLY?** Then **VASCULAR RISK FACTORS: blood pressure, cholesterol, diabetes, SMOKING, previous stroke or heart trouble.**"
+    ],
+    [
+     "3:25",
+     "**PAST HISTORY with the four questions, then MEDICATIONS INCLUDING ANYTHING FOR SLEEP, PAIN OR FROM THE CHEMIST — AND SPECIFICALLY ANY BLOOD THINNERS — and allergies.**"
     ],
     [
      "3:45",
-     "Six domains: home, urinary, MSK/feet, eyes (recent optometry?), ears, drugs · social, ADLs, memory, mood, ★ driving, fear of falling"
+     "**THE SIX RISK DOMAINS IN ORDER, quickly since they are negative: HOME lighting and hazards · URINARY frequency, urgency, nocturia · MSK joints, balance, feet, FOOTWEAR · SENSES eyes and hearing last checked, BIFOCALS · DRUGS · ALCOHOL, QUANTIFIED.**"
+    ],
+    [
+     "4:20",
+     "**GERIATRIC AND SOCIAL SCREEN: who's at home · who helps · meals · function · memory · mood · weight loss · STILL DRIVING · AFRAID TO MOVE ABOUT SINCE THE FALLS?**"
+    ],
+    [
+     "4:50",
+     "**HARD STOP ON HISTORY. SADMA and family history of stroke and cardiac disease.**"
     ],
     [
      "5:00",
-     "PEFE: appearance · gait, TUG · ★ lying/standing BP 1 and 3 min, ★ pulse rhythm (AF) · CVS: ★ murmur of aortic stenosis, ★ carotid bruits · full neuro incl visual fields, fundi, acuity · LL neuro · glucose · ★ ECG → all normal"
+     "**ASK THE EXAMINER IN ORDER: general appearance, hydration, bruising or injury · GAIT AND TIMED UP AND GO · vitals with LYING AND STANDING BP AT ONE AND THREE MINUTES and PULSE RHYTHM · BEDSIDE GLUCOSE.**"
     ],
     [
-     "6:30",
-     "★ 'The most important thing you've told me is the blurring of your vision around that fall. That may have been a brief interruption to the blood supply of part of the brain — a mini-stroke. It has recovered completely, which is why everything is normal now, but it is a warning sign, and I want you assessed today, not next week.' → aspirin now, urgent brain + neck vessel imaging, heart tracing, bloods · ★ 'you fell while active in the garden — a fall during exertion always makes me think about the heart' → ECG, echo/Holter · postural drop likely part of it · ★ 'please don't drive for now — after a suspected mini-stroke the national rules say at least two weeks off the road' · FAST red flags → 000 · secondary prevention, review"
+     "5:30",
+     "**Then THE NEUROLOGICAL EXAMINATION IN FULL — cranial nerves, VISUAL FIELDS AND VISUAL ACUITY, FUNDOSCOPY, limbs, sensation, coordination, Romberg · CAROTID BRUITS BY NAME · cardiovascular for A MURMUR OF AORTIC STENOSIS and the PULSE RHYTHM FOR AF · lower limb joints and footwear · abdomen and dipstick.**"
+    ],
+    [
+     "6:00",
+     "**LEAD WITH THE TIA, in plain words, with the 'today not next week' line.**"
+    ],
+    [
+     "6:40",
+     "**THEN THE HEART, because of the exertional fall — and THEN the postural drop for the fall on standing. THREE FALLS, THREE MECHANISMS.**"
+    ],
+    [
+     "7:05",
+     "**THE PLAN: ASPIRIN NOW unless contraindicated · URGENT SCAN OF THE BRAIN AND THE VESSELS IN THE NECK · A TRACING OF THE HEART and possibly an echocardiogram · BLOOD TESTS.**"
+    ],
+    [
+     "7:30",
+     "**DRIVING, with the apology and the reason.** Then **RED FLAGS — if any weakness, speech trouble or visual loss comes back and STAYS, CALL AN AMBULANCE — a REVIEW DATE, and TEACH-BACK.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'You said your vision blurred — was it one eye or both? Did part of your vision go, like a curtain? How long did it last? Any trouble speaking, drooping of the face, or weakness in an arm or leg with it? Did it come back to normal completely?'",
-    "'What exactly were you doing in the garden when you fell? Any chest pain, racing of the heart, or sweating? Any breathlessness on exertion normally?'",
-    "★ To examiner: 'the pulse rhythm, a murmur of aortic stenosis, carotid bruits, a full neurological examination including the visual fields and fundi, and an ECG.'",
-    "★ 'The most important thing you've told me is the blurring of your vision around the time of that fall. That may have been a brief interruption to the blood supply of part of the brain — a mini-stroke, or a transient ischaemic attack. It has recovered completely, which is why everything is normal now, but it is a warning sign, and I want you assessed today, not next week.'",
-    "'The second thing is your heart. You fell while you were active in the garden — a fall during exertion always makes me think about the heart, so I want that tracing and possibly an ultrasound of the heart.' / 'One of your falls happened as you stood up, so a drop in blood pressure on standing is likely part of the picture too.'",
-    "★ 'One more thing, and I'm sorry to have to say it — please don't drive for now. After a suspected mini-stroke the national rules say at least two weeks off the road, and we'll review it together.' / 'If you get sudden weakness or drooping of the face, weakness in an arm, or difficulty speaking — face, arm, speech, time — ring 000 straight away.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 77 M, recurrent falls, last one in the garden; 'my vision blurred just before I fell, and for a bit afterwards'; 'no chest pain, no sweating — I just felt cold'; 'never blacked out'; one fall on standing. Examiner: postural BP, CVS, neuro, MSK, glucose all normal",
-    "TIA: focal deficit resolving (classically <1 h, definition now tissue-based), amaurosis fugax/monocular vs homonymous field loss, ABCD2 (age ≥60, BP ≥140/90, clinical, duration, diabetes) — high-risk features → same-day stroke unit/TIA clinic; imaging: CT/MRI brain (DWI) + carotid Doppler/CTA; ECG, Holter, echo; aspirin 300 mg stat then antiplatelet per TG VERIFY; statin, BP; AF → anticoagulate",
-    "Exertional fall DDx: aortic stenosis (ESM, slow-rising pulse), arrhythmia, ischaemia, HOCM — ECG, echo. Postural drop intermittent; stays on the list on history alone",
-    "Trap ★: filing transient visual blurring under 'dizziness' and reassuring because everything is normal today. Trap: aspirin without excluding haemorrhage if imaging is immediately available — in GP, aspirin now is the TG position for suspected TIA VERIFY. Trap: no driving advice",
-    "SA/rural: same-day discussion with stroke team; MedSTAR 1300 13 12 33 if evolving; Austroads private ≥2 wk, commercial ≥4 wk after TIA VERIFY; Motor Vehicles Act notification if he refuses",
-    "Where the answer is — IN THE HISTORY — vision blurred just before the fall and for a while afterwards, no chest pain, no blackout"
+    "**Do now: ASPIRIN 300 mg STAT unless contraindicated · lying and standing BP at 1 and 3 minutes · BEDSIDE GLUCOSE · AN ECG IN EVERY FALLS PATIENT, AND HERE SPECIFICALLY FOR ATRIAL FIBRILLATION · blood pressure recorded properly · injury survey.**",
+    "**URGENT SAME-DAY TIA PATHWAY: CT OR CT ANGIOGRAPHY OF THE BRAIN AND NECK VESSELS · CAROTID IMAGING · ECG with HOLTER IF PAROXYSMAL AF IS SUSPECTED · ECHOCARDIOGRAM given the exertional fall · FBE, UEC, LIPIDS, HbA1c, COAGULATION.**",
+    "**MRI is more sensitive than CT for posterior circulation events — say so if the visual symptom suggests a vertebrobasilar territory.**",
+    "**Do not miss: TIA ITSELF, where the normal examination is the expected finding · ATRIAL FIBRILLATION behind an embolic event · CAROTID STENOSIS, where AMAUROSIS FUGAX makes imaging urgent · AORTIC STENOSIS OR ARRHYTHMIA behind the exertional fall · GIANT CELL ARTERITIS if there is headache, scalp tenderness or jaw claudication with the visual symptom · SUBDURAL after any head strike.**",
+    "**Avoid: REASSURING BECAUSE THE EXAMINATION IS NORMAL · calling the visual blurring 'dizziness' · SENDING HIM HOME TO SEE HOW HE GOES · omitting the driving advice · discharging without addressing BONE HEALTH.**",
+    "**DRIVING: after a suspected TIA, NO PRIVATE DRIVING FOR AT LEAST TWO WEEKS, FOUR WEEKS COMMERCIAL, under Austroads Assessing Fitness to Drive.** **SA AND THE NT ARE THE JURISDICTIONS WHERE THE DOCTOR HAS A LEGAL DUTY TO REPORT an unfit driver to the Registrar of Motor Vehicles; elsewhere it is discretionary. TELL THE PATIENT BEFORE YOU REPORT.** VERIFY.",
+    "**Then the rest of the falls plan, unchanged: BALANCE-CHALLENGING EXERCISE, OT HOME HAZARD ASSESSMENT, OPTOMETRY, BONE HEALTH AND DXA, MY AGED CARE 1800 200 422, and REVIEW.** **Secondary prevention once confirmed: antiplatelet or anticoagulation depending on AF, a STATIN, and BLOOD PRESSURE CONTROL.**"
    ],
-   "fails": [
-    "★ Hearing 'my vision blurred' and not chasing it — the whole station lives in that sentence",
-    "Reassuring him because today's examination is normal — a resolved TIA IS a normal examination",
-    "Missing the exertional context → no cardiac work-up; dismissing postural drop because today's reading is normal",
-    "No aspirin, no same-day imaging pathway, no secondary prevention",
-    "★ No driving advice — further marks lost"
-   ],
-   "numbers": [
-    "Aspirin 300 mg stat unless contraindicated VERIFY TG · TIA driving: private ≥2 wk, commercial ≥4 wk VERIFY Austroads · ABCD2 ≥4 = high risk",
-    "Postural drop ≥20/≥10 within 3 min (normal today, intermittent) · FAST → 000",
-    "MedSTAR 1300 13 12 33 · TIA clinic same day"
+   "ddx": [
+    [
+     "**Transient ischaemic attack** — lead with this",
+     "**TRANSIENT VISUAL BLURRING BEFORE AND AFTER THE FALL, RESOLVING COMPLETELY**; age 77",
+     "**FAST, VISUAL FIELDS, CAROTID BRUIT, AF, BP. A COMPLETELY NORMAL EXAMINATION IS EXPECTED**",
+     "**URGENT SAME-DAY assessment, CT/CTA brain and neck, carotid imaging, ECG, ASPIRIN 300 mg STAT** — EMERGENCY"
+    ],
+    [
+     "**Cardiac syncope — aortic stenosis or arrhythmia**",
+     "**THE FALL HAPPENED DURING EXERTION IN THE GARDEN**",
+     "**Murmur of AORTIC STENOSIS BY NAME, irregular pulse, abnormal ECG; family sudden death**",
+     "**ECG, Holter, ECHOCARDIOGRAM, cardiology** — EMERGENCY"
+    ],
+    [
+     "**Atrial fibrillation**",
+     "An embolic source for the visual event; often intermittent",
+     "**PULSE RHYTHM; ECG, AND HOLTER IF PAROXYSMAL AF IS SUSPECTED**",
+     "**Anticoagulation rather than antiplatelet if confirmed** — urgent"
+    ],
+    [
+     "**Carotid stenosis**",
+     "**AMAUROSIS FUGAX — A CURTAIN OVER ONE EYE — points to the CAROTID circulation**",
+     "**CAROTID BRUITS, asked for by name**",
+     "**CAROTID IMAGING URGENTLY; endarterectomy assessment if severe** — urgent"
+    ],
+    [
+     "**Posterior circulation event**",
+     "**Bilateral visual disturbance, diplopia, ataxia, veering**",
+     "Dysarthria, dysphagia, unsteadiness",
+     "**MRI IS MORE SENSITIVE THAN CT for posterior fossa events** — EMERGENCY"
+    ],
+    [
+     "**Postural hypotension**",
+     "**ONE FALL HAPPENED AS HE STOOD UP**",
+     "**NO POSTURAL DROP TODAY — BUT IT IS INTERMITTENT**",
+     "Lying and standing BP at review; staged rising; hydration — same day"
+    ],
+    [
+     "Mechanical trip and environmental",
+     "**ONE FALL WAS A TRIP**",
+     "Home hazards, lighting, footwear, gait, TIMED UP AND GO",
+     "**OT home hazard assessment; podiatry; balance program**"
+    ],
+    [
+     "**Giant cell arteritis**",
+     "**Visual symptom in a 77-year-old**",
+     "**NEW HEADACHE, SCALP TENDERNESS, JAW CLAUDICATION — ask them**",
+     "**Same-day ESR and CRP, and high-dose steroid if suspected** — EMERGENCY"
+    ],
+    [
+     "Subdural haematoma · hypoglycaemia",
+     "Any head strike, especially on an anticoagulant; or skipped meals",
+     "Progressive headache, drowsiness, gait deterioration; sweating, tremor",
+     "**NON-CONTRAST CT HEAD — low threshold in the elderly.** Bedside BGL, FOUR IS THE FLOOR — EMERGENCY"
+    ],
+    [
+     "Seizure · vestibular or BPPV · anaemia",
+     "**NO LOC, no jerking, no tongue bite, no postictal confusion**; room-spinning on head turning; pallor and fatigue",
+     "The seizure screen; Dix–Hallpike; conjunctival pallor",
+     "Collateral history; Epley; FBE and iron studies"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf §7 Version D (77 M, vision blurred before an exertional garden fall, examination normal — TIA, cardiac, postural; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Postural blood pressure",
-    "Normal"
-   ],
-   [
-    "Cardiovascular",
-    "Normal"
-   ],
-   [
-    "Neurological",
-    "Normal"
-   ],
-   [
-    "Musculoskeletal",
-    "Normal"
-   ],
-   [
-    "Glucose",
-    "Normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — and why they are normal",
-  "must": [
-   "FAIL — Never establishing loss of consciousness — an automatic fail; 'when you went down, did you black out, even for a second? do you remember hitting the floor? any shaking, tongue-biting, wetting yourself?' in the first ninety seconds (★)",
-   "FAIL — Not asking about injury, head strike, or a long lie on the floor (★)",
-   "FAIL — Hearing 'my vision blurred just before I fell, and for a bit afterwards' and filing it under dizziness — the whole station lives in that sentence; a completely normal examination today is exactly what a resolved TIA looks like, and reassuring him because everything is normal is the trap (★)",
-   "SAY — 'The most important thing you've told me is the blurring of your vision around that fall. That may have been a brief interruption to the blood supply of part of the brain — a mini-stroke, a transient ischaemic attack. It has recovered completely, which is why everything is normal now, but it is a warning sign, and I want you assessed today, not next week'",
-   "FAIL — No driving advice — after a suspected TIA at least two weeks off the road for a private licence; 'I'm sorry to have to say it — please don't drive for now, and we'll review it together' (★)",
-   "DO — Aspirin now, urgent brain and neck-vessel imaging, ECG (pulse rhythm — AF), bloods; and the other two causes named: a fall during exertion in the garden always raises the heart (ECG, possibly echo, murmur of aortic stenosis asked for), and a fall on standing raises the postural drop; ask his concern; review, red flags"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-106",
