@@ -31905,9 +31905,8 @@
  {
   "id": "MED-127",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED. Door sheet: WCC raised, lipase markedly raised, AST/ALT 2–3× ULN, bilirubin normal. Three versions, one patient: A — twelve drinks on Saturday; B1 — known hypertriglyceridaemia (father too); B2 (the 2025 case) — semaglutide six months, 3 kg intentional loss, previous cholecystectomy. Four automatic fails: no cardiac question/ECG; mild transaminase rise called a second disease; weight loss treated as a red flag without asking intent; pancreatitis named with no cause sought.",
   "stem": [
    "Steph Corrigan, 25, presents with severe epigastric pain since last night and repeated vomiting. Results: WCC raised · lipase markedly raised · AST and ALT 2–3× upper limit · bilirubin normal."
   ],
@@ -31916,85 +31915,209 @@
    "Explain the results and your diagnosis",
    "Give your differentials and management"
   ],
-  "time": "8 min. Stability (118/72, 104, 20, 37.4, 98%) · intro, ★ analgesia first, open · pain: where, /10 (9), ★ three epigastric add-ons — 'through to your back?' (yes), 'sitting forward or curling up help?' (a bit), 'what does food do?' (worse, not eating) · vomits ×5–6, bilious, blood?, bloating/wind/D/C/fever · ★ six cause questions in order: alcohol (standard drinks/week, heavy session?) · gallstones/gallbladder surgery (cholecystectomy 4 y) · medicines — NSAIDs, steroids, diuretics, ★ 'any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' · cholesterol/triglycerides/FHx, calcium · ERCP/trauma · viral illness · ★ cardiac: chest pain/tightness, SOB, sweating, jaw/arm — 'I would like an ECG' · red flags: weight loss → ★ 'was that on purpose?' (yes — the injection), appetite, dysphagia, haematemesis/melaena, lumps, FHx · urinary · SADMA · summarise · explain each result in plain words · dx + CAUSE · DDx · management spoken: admit, fluids (the single most important treatment), analgesia, antiemetic, USS, lipids + Ca, early feeding, no routine antibiotics, stop the GLP-1 and report the reaction.",
+  "findings": [
+   [
+    "THE DIAGNOSIS IS ON THE DOOR SHEET — SO THE MARKS ARE NOT FOR SAYING IT",
+    "WCC RAISED · LIPASE MARKEDLY RAISED · AST AND ALT 2–3× UPPER LIMIT · BILIRUBIN NORMAL. THE MARKS ARE FOR FINDING THE CAUSE, INTERPRETING THE MILDLY ABNORMAL LIVER TESTS CORRECTLY, AND EXPLAINING RESULTS TO A FRIGHTENED 25-YEAR-OLD IN PLAIN ENGLISH"
+   ],
+   [
+    "THE TRAP IN THE RESULTS",
+    "REPORTING THE MILDLY RAISED AST AND ALT AS A SECOND DISEASE. MILD TRANSAMINASE ELEVATION IS EXPECTED IN ACUTE PANCREATITIS. What it DOES do: AN ALT ABOVE ROUGHLY THREE TIMES THE UPPER LIMIT MAKES GALLSTONE PANCREATITIS CONSIDERABLY MORE LIKELY — use it as a POINTER TO THE CAUSE"
+   ],
+   [
+    "THE THREE EPIGASTRIC ADD-ONS TO SICORA",
+    "'DOES IT GO THROUGH TO YOUR BACK?' · 'IS IT BETTER IF YOU SIT FORWARD OR CURL UP?' · 'WHAT DOES FOOD DO TO IT — BETTER, WORSE, OR NO DIFFERENCE?'"
+   ],
+   [
+    "THE SIX CAUSE QUESTIONS — ask all six, every time",
+    "ALCOHOL — 'how much in a usual week, in standard drinks? A heavy session in the last few days?' · GALLSTONES — 'ever told you have gallstones? Gallbladder surgery?' · DRUGS — anti-inflammatories, steroids, AND 'ANY INJECTIONS FOR WEIGHT LOSS OR DIABETES — OZEMPIC, WEGOVY, TRULICITY?' · METABOLIC — HIGH TRIGLYCERIDES, family history, CALCIUM OR PARATHYROID · PROCEDURES AND TRAUMA — a recent ERCP, abdominal injury · INFECTION — recent viral illness, mumps"
+   ],
+   [
+    "VERSION A — alcohol",
+    "'I HAD A BIG NIGHT ON SATURDAY.' → 'HOW MANY STANDARD DRINKS, OVER HOW LONG? HOW MUCH IN A USUAL WEEK? HAVE YOU EVER TRIED TO CUT DOWN?' QUANTIFY IT — 'a big night' is not a history"
+   ],
+   [
+    "VERSION B1 — hypertriglyceridaemia",
+    "KNOWN HIGH CHOLESTEROL AND TRIGLYCERIDES, OR A FAMILY HISTORY, and a GROSSLY ABNORMAL LIPID PANEL. The serum may look LIPAEMIC. Triglycerides above about 11 mmol/L are the usual pancreatitis threshold. VERIFY"
+   ],
+   [
+    "VERSION B2 — the GLP-1 agonist, and TWO DELIBERATE DECOYS",
+    "ON SEMAGLUTIDE FOR MONTHS. 'I'VE LOST 3 kg' — 'WAS THAT ON PURPOSE?' — INTENTIONAL WEIGHT LOSS ON A WEIGHT-LOSS INJECTION IS THE DRUG WORKING, NOT A RED FLAG. 'I ALREADY HAD MY GALLBLADDER OUT' — DO NOT ABANDON THE PANCREAS: STONES CAN SIT IN THE DUCT AFTER CHOLECYSTECTOMY, and THE DRUG ITSELF REMAINS IN PLAY"
+   ],
+   [
+    "ONE CARDIAC QUESTION AND AN ECG — IN EVERY EPIGASTRIC STATION",
+    "'ANY CHEST PAIN OR TIGHTNESS? SHORTNESS OF BREATH? SWEATING? DOES IT GO INTO YOUR JAW OR DOWN YOUR ARM?' Then 'I WOULD LIKE AN ECG.' AN INFERIOR MI PRESENTS AS EPIGASTRIC PAIN AND NAUSEA. Omitting it is a starred fail"
+   ],
+   [
+    "THE SINGLE TEST CANDIDATES FORGET",
+    "EVERY PATIENT WITH ACUTE PANCREATITIS GETS AN ABDOMINAL ULTRASOUND — TO LOOK FOR GALLSTONES AND DUCT DILATATION. Lipase quoted, imaging never mentioned, is a listed fail"
+   ],
+   [
+    "THE SIGNS YOU NAME BUT DO NOT EXPECT",
+    "CULLEN'S SIGN — periumbilical bruising · GREY TURNER'S SIGN — flank bruising. Both reflect RETROPERITONEAL HAEMORRHAGE, are LATE AND UNCOMMON, and carry a POOR PROGNOSIS — name them in your inspection request"
+   ]
+  ],
+  "findingsLabel": "The diagnosis is on the door sheet — the marks are for the cause and the liver tests",
+  "must": [
+   "FAIL — Never asking a cardiac question or requesting an ECG.",
+   "FAIL — Calling the mildly raised AST and ALT a second, separate liver disease.",
+   "FAIL — Naming pancreatitis and never naming a cause.",
+   "FAIL — Recording 3 kg weight loss as a red flag without asking if it was intentional.",
+   "ASK — Any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?",
+   "ASK — How many standard drinks, and any heavy session in the last few days?"
+  ],
   "back": {
-   "dx": "Acute pancreatitis — 9/10 epigastric pain boring through to the back, eased sitting forward, food makes it worse, bilious vomiting ×5–6, lipase markedly raised. Cause by version: A alcohol (twelve drinks Saturday); B1 severe hypertriglyceridaemia (inherited — father); B2 semaglutide — no alcohol, no lipid disorder, gallbladder out four years ago (choledocholithiasis still possible — look), pancreatitis is a recognised uncommon effect of GLP-1 agonists → stop it, report it, 'you haven't done anything wrong'. Mildly raised AST/ALT are expected with pancreatitis and prompt a gallstone look, not a second disease; normal bilirubin suggests the main duct isn't blocked. 3 kg loss was intentional — a therapeutic effect, not a red flag.",
+   "dx": [
+    "**ACUTE PANCREATITIS — acute inflammation of the pancreas from PREMATURE ACTIVATION OF ITS OWN DIGESTIVE ENZYMES, causing AUTODIGESTION of the gland and surrounding tissue. CAUSE BY VERSION: ALCOHOL (A) · HYPERTRIGLYCERIDAEMIA (B1) · GLP-1 AGONIST (B2).**",
+    "**THE DIAGNOSIS NEEDS TWO OF THREE: CHARACTERISTIC PAIN · LIPASE OR AMYLASE AT THREE OR MORE TIMES THE UPPER LIMIT · CHARACTERISTIC IMAGING. LIPASE IS PREFERRED — MORE SPECIFIC AND IT STAYS RAISED LONGER. THE HEIGHT OF THE LIPASE DOES NOT INDICATE SEVERITY.**",
+    "**THE DISCRIMINATING ISSUE: QUALIFY EVERY ABNORMAL NUMBER AND EVERY RED FLAG BEFORE YOU REACT TO IT. Mildly raised transaminases are EXPECTED, NOT A SECOND DISEASE. Three kilograms of weight loss on a weight-loss injection is A THERAPEUTIC EFFECT, NOT A RED FLAG. CANDIDATES FAIL BY TREATING DATA AS CONCLUSIONS.**",
+    "**EXPLAINING THE RESULTS, VERBATIM: 'Steph, the important blood test is an enzyme called LIPASE, which THE PANCREAS MAKES. Yours is VERY HIGH, and together with the type of pain you've described that tells me YOUR PANCREAS IS INFLAMED — acute pancreatitis. Your WHITE CELL COUNT IS UP, which is your body responding. Your LIVER TESTS ARE SLIGHTLY RAISED. THAT IS EXPECTED WITH PANCREATITIS AND DOES NOT MEAN YOU HAVE A SEPARATE LIVER PROBLEM — but it does make me want to CHECK YOUR GALLBLADDER WITH AN ULTRASOUND, because A SMALL STONE SLIPPING DOWN CAN SET THE PANCREAS OFF.'**",
+    "**THE CAUSES, GROUPED — GALLSTONES AND ALCOHOL ACCOUNT FOR ROUGHLY FOUR IN FIVE AUSTRALIAN CASES; THE REST ARE WORTH MARKS PRECISELY BECAUSE MOST CANDIDATES STOP AFTER TWO: TRIGLYCERIDES AND CALCIUM · DRUGS INCLUDING GLP-1 AGONISTS · obstruction, ERCP, trauma · infection · autoimmune · idiopathic.**",
+    "**VERSION B2, THE TWO DECOYS ANSWERED: 'you mentioned losing three kilos — WAS THAT ON PURPOSE? … Right, that's THE INJECTION DOING WHAT IT IS MEANT TO DO, so I'm not treating that as a warning sign. And you've had your gallbladder out, which makes gallstones LESS LIKELY — BUT NOT IMPOSSIBLE, BECAUSE A STONE CAN STILL SIT IN THE TUBE. I also have to be honest: THIS CLASS OF INJECTION CAN ITSELF, UNCOMMONLY, INFLAME THE PANCREAS. It's high on my list and WE WILL NEED TO STOP IT while we sort this out.'**",
+    "**THE GLP-1 AGONIST QUESTION NOW BELONGS IN EVERY ABDOMINAL HISTORY: PANCREATITIS IS A RECOGNISED ADVERSE EFFECT · RAPID WEIGHT LOSS OF ANY CAUSE PROMOTES GALLSTONE FORMATION · they DELAY GASTRIC EMPTYING, which matters peri-operatively. ASK BY BRAND AS WELL AS BY CLASS — patients say 'Ozempic', not 'a GLP-1 receptor agonist'.** VERIFY current PBS criteria.",
+    "**MANAGEMENT: ADMIT · IV ACCESS · AGGRESSIVE FLUID RESUSCITATION WITH A BALANCED CRYSTALLOID — HARTMANN'S — GUIDED BY URINE OUTPUT AND HAEMODYNAMICS · OPIOID ANALGESIA IS APPROPRIATE · antiemetics · oxygen if hypoxic · monitor electrolytes, calcium, glucose. THEN: EARLY ENTERAL NUTRITION RATHER THAN PROLONGED STARVATION · NO ROUTINE PROPHYLACTIC ANTIBIOTICS · score severity at 48 hours · ICU for organ failure.**",
+    "**TREAT THE CAUSE: GALLSTONES — ERCP WITHIN 24 HOURS IF CHOLANGITIS OR PERSISTENT DUCT OBSTRUCTION, and CHOLECYSTECTOMY DURING THE SAME ADMISSION for mild gallstone pancreatitis · ALCOHOL — withdrawal management, THIAMINE, brief intervention, referral · TRIGLYCERIDES — fasting, fibrates, INSULIN INFUSION, plasmapheresis in severe cases · DRUG-INDUCED — STOP THE DRUG AND REPORT THE REACTION to the TGA.** VERIFY.",
+    "**CT IS NOT NEEDED AT PRESENTATION — reserve it for diagnostic uncertainty, or AT 72 HOURS OR LATER TO ASSESS NECROSIS, because EARLIER SCANNING UNDERSTAGES IT. SEVERITY: MODIFIED GLASGOW (IMRIE), RANSON, APACHE II OR BISAP — naming one and scoring at 48 hours is enough; CRP ABOVE 150 AT 48 HOURS suggests severe disease.** **SA: Yorke and Northern hospitals have no ICU — resuscitate and ring MedSTAR 1300 13 12 33 EARLY, not after a local CT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ 'Examiner, may I confirm she is haemodynamically stable — BP, HR, RR, T, sats?' · 'I'm Dr —, am I speaking with Steph? You look like you're in a lot of pain — would you like something for it before we start? Tell me what's been happening.'"
+     "**ED STEM — STABILITY FIRST: BP, heart rate, respiratory rate, temperature, saturation.** Then **WIPE, open question, and acknowledge: 'that sounds really painful — I've got your blood results and I'll go through them with you.'**"
     ],
     [
-     "0:45",
-     "'Show me where. Out of ten? Sharp, or deep and boring? ★ Does it go through to your back? ★ Does sitting forward or curling up make any difference? ★ And what does food do to it — better, worse, no change?' → 9, through to the back, forward helps, hasn't eaten"
+     "0:25",
+     "**Offer analgesia — two questions, then move.** Then **SICORA WITH THE THREE ADD-ONS: through to the back · BETTER SITTING FORWARD · WHAT DOES FOOD DO?**"
     ],
     [
      "1:30",
-     "★ Six causes: 'alcohol — standard drinks in a usual week, any heavy session in the last few days?' · 'ever told you have gallstones, or had surgery on your gallbladder?' (out 4 y) · 'anti-inflammatories, steroids, water tablets? ★ any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' (Ozempic 6 months) · 'high cholesterol or triglycerides — anyone in the family? calcium/parathyroid?' · 'recent camera test of the bile duct, injury to the tummy?' · 'recent viral illness?'"
+     "**UPPER GI: NAUSEA AND VOMITING — how many, what colour · heartburn · difficulty swallowing · early fullness · DO ANTACIDS HELP?**"
     ],
     [
-     "3:00",
-     "★ Cardiac: chest pain/tightness, SOB, sweating, jaw/arm, cough/fever → 'I would like an ECG' · red flags: 'any weight loss?' → 3 kg → ★ 'was that on purpose?' → yes → 'that's the treatment working, not a warning sign' · appetite, dysphagia, haematemesis, melaena, lumps, FHx GI cancer · urinary · smoking, drugs, meds, allergies, PMHx/ops · summarise back"
+     "2:00",
+     "**THE CAUSE BLOCK — ALL SIX: ALCOHOL, QUANTIFIED IN STANDARD DRINKS, AND A RECENT HEAVY SESSION · GALLSTONES OR GALLBLADDER SURGERY · DRUGS — ANTI-INFLAMMATORIES, STEROIDS, AND WEIGHT-LOSS OR DIABETES INJECTIONS BY BRAND · HIGH TRIGLYCERIDES OR CALCIUM PROBLEMS, AND FAMILY HISTORY · A RECENT ERCP OR INJURY · a recent viral illness.**"
     ],
     [
-     "4:30",
-     "★ Results in plain words: lipase — 'an enzyme your pancreas makes; when it's inflamed it leaks into the blood; yours is very high — with this pain, the pancreas is inflamed' · WCC — 'your body's response to inflammation, not necessarily infection' · AST/ALT — 'liver tests only slightly up; expected with pancreatitis, not a separate liver problem — but it makes me want to check for a gallstone' · bilirubin normal — 'reassuring; the main bile tube isn't blocked at the moment'"
+     "3:15",
+     "**THE CARDIAC QUESTION — NEVER OMITTED: chest pain or tightness · breathlessness · SWEATING · jaw or arm · cough or fever.** Then **say 'I WOULD LIKE AN ECG.'**"
+    ],
+    [
+     "3:40",
+     "**GI RED FLAGS: WEIGHT LOSS — AND WAS IT INTENTIONAL · appetite · VOMITING BLOOD · BLACK TARRY STOOLS · lumps · family history of stomach or bowel cancer.** Then **the three KUB questions.**"
+    ],
+    [
+     "4:15",
+     "**If a decoy appears, QUALIFY IT BEFORE REACTING — 'was that on purpose?' — and 'a stone can still sit in the duct after the gallbladder is out.'**"
+    ],
+    [
+     "4:40",
+     "**SADMA and a one-line summary back to her.**"
+    ],
+    [
+     "5:00",
+     "**Ask for the examination if offered: general appearance, jaundice, dehydration · vitals · CULLEN AND GREY TURNER SIGNS · epigastric tenderness, guarding · bowel sounds · chest for effusion.**"
     ],
     [
      "5:30",
-     "★ Dx + cause: A 'acute pancreatitis, most likely caused by alcohol' (without moralising; offer help) · B1 'caused by very high triglycerides — high enough to inflame the pancreas directly; inherited — family should be checked' · B2 'the most likely trigger is the weight-loss injection, and we should stop it' → 'but why? I don't drink, no gallbladder' → 'the two commonest causes don't fit; stones can still form in the duct, so we'll look; the injection can, uncommonly, inflame the pancreas — I can't prove it today but it's high on my list' → 'have I done something wrong?' → 'not at all — an uncommon reaction to a medicine used properly' · DDx: duct stone, perforated ulcer (abdomen not rigid), cholecystitis (no gallbladder), MI (ECG)"
+     "**EXPLAIN THE RESULTS, ONE BY ONE, IN PLAIN ENGLISH — lipase, white cells, AND THE LIVER TESTS AS EXPECTED, NOT A SECOND DISEASE, with the gallbladder ultrasound as the reason.**"
+    ],
+    [
+     "6:15",
+     "**NAME THE CAUSE WITH ITS EVIDENCE: 'the most likely trigger is THE ALCOHOL on Saturday' — or the triglycerides, or the injection.**"
     ],
     [
      "6:45",
-     "★ Management: 'you need to come into hospital: rest the gut, a drip and plenty of fluids — the single most important treatment; strong pain relief; anti-nausea; ultrasound of the bile ducts; more bloods including cholesterol and calcium; regular review over 48 h; ★ eating again as soon as you can tolerate it — starving for days is old practice; ★ no antibiotics unless a specific infection' · B2: stop semaglutide, report the adverse reaction (TGA), discuss a safer option later · B1: fasting, sometimes insulin infusion, then fibrate, low-fat diet, no alcohol · A: alcohol conversation · rural → MedSTAR if severe"
+     "**THE DIFFERENTIALS: GALLSTONE PANCREATITIS · PERFORATED PEPTIC ULCER · BILIARY DISEASE · INFERIOR MYOCARDIAL INFARCTION — HENCE THE ECG · leaking aneurysm in an older patient · lower lobe pneumonia, DKA.**"
+    ],
+    [
+     "7:15",
+     "**THE MANAGEMENT: ADMIT · BALANCED CRYSTALLOID · OPIOID ANALGESIA AND ANTIEMETIC · bloods including CALCIUM AND FASTING TRIGLYCERIDES · ABDOMINAL ULTRASOUND · EARLY FEEDING, NOT STARVATION · NO PROPHYLACTIC ANTIBIOTICS · SEVERITY AT 48 HOURS · treat the cause.**"
+    ],
+    [
+     "7:45",
+     "**Answer her worry, and in Version A a brief, non-judgemental word about alcohol and support.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Does the pain go through to your back? Does sitting forward or curling up make any difference? And what does food do to it — better, worse, or no change?'",
-    "★ 'Alcohol — how much in a usual week, in standard drinks, and any heavy session in the last few days? Have you ever been told you have gallstones, or had surgery on your gallbladder? Any anti-inflammatories, steroids or water tablets? Any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity? High cholesterol or triglycerides — anyone in the family? Any recent camera test of the bile duct, or injury? Any recent viral illness?'",
-    "★ 'Any chest pain or tightness, shortness of breath, sweating, pain to the jaw or arm?' — 'Examiner, I would like an ECG.' / ★ 'Any weight loss? … Was that on purpose?'",
-    "★ 'The important one is an enzyme called lipase, which your pancreas makes — yours is very high. With this pattern of pain, that tells me your pancreas is inflamed: acute pancreatitis. Your white cells are up, which is your body responding. Your liver tests are slightly raised — that is expected with pancreatitis and does not mean a separate liver problem, but it makes me want to check for a gallstone. Your bilirubin is normal, which suggests the main bile tube isn't blocked.'",
-    "B2: ★ 'The two commonest causes are gallstones and alcohol, and neither fits you well — though stones can still form in the tube even after the gallbladder is removed, so we will look. But there is another possibility I have to raise: the weight-loss injection can, uncommonly, inflame the pancreas. I can't prove that today, but it is high on my list, and I think we should stop it while we sort this out.' / 'Have I done something wrong?' → ★ 'Not at all. This is an uncommon reaction to a medicine used properly — it isn't a mistake on your part or anyone else's.'",
-    "A: 'The most likely cause is the alcohol, and I want to explain that without any judgement. A large amount at once can trigger the pancreas to digest itself. The single most useful thing for preventing this again is stopping alcohol, and I'd like to help you with that rather than just tell you to.' / B1: 'Your blood carries a fat called triglyceride — yours is extremely high, high enough to inflame the pancreas directly. Fluids and pain relief first, then we bring the triglycerides down: fasting, sometimes an insulin drip, then a fibrate, a low-fat diet and no alcohol. Your family should be checked.'",
-    "★ 'You need to come into hospital. We'll rest your gut, put a drip in and give you plenty of fluids — that is the single most important treatment. Strong pain relief and something for the nausea. An ultrasound of your gallbladder and ducts, more bloods including cholesterol and calcium, and regular checks over the next two days. We'll start you eating again as soon as you can tolerate it. You won't need antibiotics unless there is a specific infection.'"
-   ],
    "pefe": [
-    "Role-player: Steph, 25, childcare in Port Pirie, lives with partner; semaglutide 6 months via a weight-loss clinic; cholecystectomy 4 y ago; glass of wine a month; non-smoker. Restless, rocks forward, frightened; visibly relieved by early analgesia. Two decoys: 'about three kilos' and nothing more until asked 'was it intentional?'; gallbladder surgery only when asked about gallstones/operations; Ozempic only when injections are named. Upset when the injection is blamed: 'have I done something wrong?', 'will I have to stop it? I've worked so hard'",
-    "Vitals 118/72 · 104 · 20 · 37.4 · 98%. Diagnosis: 2 of 3 — typical pain, lipase ≥3× ULN, imaging; lipase height ≠ severity. Gallstones + alcohol ≈ 80%; ALT >3× ULN points to gallstones; other causes: hypertriglyceridaemia (>11 mmol/L), hypercalcaemia, drugs (GLP-1 agonists, azathioprine, valproate, thiazides, steroids, oestrogens), post-ERCP, trauma, viral (mumps, CMV), autoimmune, idiopathic. Severity: CRP >150 at 48 h VERIFY, SIRS, BISAP/Glasgow; CT at ≥72 h for necrosis, not at presentation; ERCP within 24 h for cholangitis/persistent obstruction; cholecystectomy same admission for mild gallstone pancreatitis",
-    "Management: aggressive IV crystalloid (goal-directed), analgesia (opioids fine), antiemetic, early oral feeding when tolerated (no routine NBM/NG), no prophylactic antibiotics, USS, lipids/Ca, monitor for organ failure, HDU if severe; hypertriglyceridaemic — insulin infusion ± plasmapheresis VERIFY; GLP-1 — cease and report to TGA, do not rechallenge",
-    "Harder variants: rigid abdomen = perforated ulcer → erect CXR, resuscitate, antibiotics, theatre · pancreatitis with jaundice + fever = gallstone pancreatitis with cholangitis → ERCP within 24 h · diabetic with epigastric pain and vomiting → ketones/glucose first (DKA)",
-    "SA: MedSTAR 1300 13 12 33 for severe pancreatitis from a rural site · TIS 131 450 · DASSA for alcohol"
+    "**Do now: IV ACCESS · BALANCED CRYSTALLOID GUIDED BY URINE OUTPUT · OPIOID ANALGESIA AND AN ANTIEMETIC · ECG · bloods — FBC, UEC, CALCIUM, FASTING LIPIDS INCLUDING TRIGLYCERIDES, GLUCOSE, LFT, LIPASE, LDH, ALBUMIN, VBG WITH LACTATE, COAGULATION · ABDOMINAL ULTRASOUND FOR GALLSTONES AND DUCT DILATATION.**",
+    "**What the results mean: LIPASE ≥3× UPPER LIMIT confirms with the pain · A RAISED WHITE COUNT IS EXPECTED · MILDLY RAISED AST/ALT IS EXPECTED — ALT ABOVE ~3× POINTS TO A GALLSTONE CAUSE · HYPOCALCAEMIA and hyperglycaemia are markers of severity.**",
+    "**Imaging: ULTRASOUND FOR EVERY PATIENT. CT ABDOMEN WITH CONTRAST ONLY FOR DIAGNOSTIC UNCERTAINTY OR AT 72 HOURS+ FOR NECROSIS — a swollen, indistinct pancreas with peripancreatic fat stranding.**",
+    "**Then: EARLY ENTERAL NUTRITION as tolerated · NO ROUTINE PROPHYLACTIC ANTIBIOTICS · SEVERITY SCORE AT 48 HOURS · ICU FOR ORGAN FAILURE · ERCP WITHIN 24 HOURS FOR CHOLANGITIS OR PERSISTENT OBSTRUCTION · CHOLECYSTECTOMY SAME ADMISSION FOR MILD GALLSTONE PANCREATITIS · STOP THE CULPRIT DRUG AND REPORT IT.**",
+    "**Complications to name: PANCREATIC NECROSIS AND INFECTED NECROSIS · PSEUDOCYST · ARDS AND PLEURAL EFFUSION · ACUTE KIDNEY INJURY · HYPOCALCAEMIA · SPLENIC VEIN THROMBOSIS · later DIABETES AND EXOCRINE INSUFFICIENCY after recurrent disease.**",
+    "**Do not miss: INFERIOR MYOCARDIAL INFARCTION — ECG AND TROPONIN · PERFORATED PEPTIC ULCER — erect chest X-ray for free gas · CHOLANGITIS — fever, jaundice, RUQ pain · A LEAKING AORTIC ANEURYSM in an older patient · ALCOHOL WITHDRAWAL during admission — THIAMINE BEFORE GLUCOSE.**",
+    "**Avoid: STARVING THE PATIENT FOR A WEEK · PROPHYLACTIC ANTIBIOTICS · CT AT PRESENTATION · treating mild transaminase rise as hepatitis · recording intentional weight loss as a red flag · abandoning pancreatitis because the gallbladder is out.** **SA: MedSTAR 1300 13 12 33 early; TQEH or RAH for ERCP; DASSA for alcohol support; TIS National 131 450.**"
    ],
-   "fails": [
-    "★ No cardiac question or ECG; ★ calling the mild transaminase rise a second disease; ★ treating the 3 kg as a red flag without asking intent; ★ naming pancreatitis with no cause sought",
-    "Generic SOCRATES without the three epigastric add-ons; never asking about weight-loss injections",
-    "Blaming the patient for the drug reaction; keeping her NBM for days; routine antibiotics",
-    "Missing that a stone can still lodge in the duct after cholecystectomy; no lipids/calcium"
-   ],
-   "numbers": [
-    "Lipase ≥3× ULN · 2 of 3 criteria · gallstones + alcohol ≈ 80% · ALT >3× ULN → stones · TG >11 mmol/L · CRP >150 at 48 h severe VERIFY",
-    "CT ≥72 h · ERCP within 24 h if cholangitis/obstruction · cholecystectomy same admission (mild gallstone) · fluids first, early feeding, no routine antibiotics",
-    "Vitals 118/72 · 104 · 20 · 37.4 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Acute pancreatitis** — the answer",
+     "**Severe pain BORING TO THE BACK, BETTER SITTING FORWARD, vomiting, LIPASE ≥3×**",
+     "**THE SIX CAUSE QUESTIONS — alcohol, gallstones, drugs, triglycerides, procedures, infection**",
+     "**Lipase; LFTs; ULTRASOUND IN EVERY CASE** — EMERGENCY"
+    ],
+    [
+     "**Gallstone pancreatitis**",
+     "**ALT ABOVE ~3× UPPER LIMIT; known gallstones; a stone in the duct AFTER cholecystectomy**",
+     "**Gallstone history; jaundice; duct dilatation on ultrasound**",
+     "**Ultrasound; ERCP within 24 h if cholangitis or obstruction**"
+    ],
+    [
+     "**Drug-induced pancreatitis — GLP-1 agonist**",
+     "**Semaglutide, dulaglutide, tirzepatide; INTENTIONAL weight loss**",
+     "**'Any injections for weight loss or diabetes?' — BY BRAND**",
+     "**STOP THE DRUG; report to the TGA**"
+    ],
+    [
+     "**Hypertriglyceridaemia-induced**",
+     "**Known high triglycerides, family history, LIPAEMIC SERUM**",
+     "Lipid history; diabetes; alcohol",
+     "**Fasting lipids; insulin infusion, fibrates, plasmapheresis if severe**"
+    ],
+    [
+     "**Inferior myocardial infarction**",
+     "**Epigastric pain with NAUSEA, SWEATING, BREATHLESSNESS; risk factors**",
+     "**Chest, jaw, arm, sweating, exertion**",
+     "**ECG AND TROPONIN — BEFORE ANYTHING ELSE** — EMERGENCY"
+    ],
+    [
+     "**Perforated peptic ulcer**",
+     "**SUDDEN severe pain, RIGID abdomen, NSAID history**",
+     "Sudden onset, BOARD-LIKE RIGIDITY",
+     "**Erect chest X-ray for free gas; theatre** — EMERGENCY"
+    ],
+    [
+     "Biliary colic and cholecystitis",
+     "Episodic pain after fatty meals, **right shoulder tip**; fever and Murphy positive if inflamed",
+     "Fatty food trigger, radiation, fever",
+     "Ultrasound — stones PLUS wall thickening and fluid — same day if inflamed"
+    ],
+    [
+     "**Leaking abdominal aortic aneurysm**",
+     "**Older smoker, central and back pain, collapse**",
+     "Back pain, syncope, pulsatile mass",
+     "**Bedside ultrasound; theatre** — EMERGENCY"
+    ],
+    [
+     "Peptic ulcer · gastritis · reflux",
+     "Weeks of food-related pain, antacid-responsive; burning worse lying flat",
+     "NSAIDs, alcohol, H. pylori",
+     "**Lipase would not be ≥3× — H. pylori testing, gastroscopy if alarm features**"
+    ],
+    [
+     "Lower lobe pneumonia · DKA · shingles",
+     "Cough and fever; **thirst and polyuria**; a dermatomal band",
+     "Chest examination; **BSL and ketones**; inspect the skin",
+     "Chest X-ray; VBG; antivirals"
+    ]
    ]
   },
   "source": "Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf Versions A/B1/B2 (Steph Corrigan, 25, severe epigastric pain with a markedly raised lipase — pancreatitis from alcohol, triglycerides, or semaglutide)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — No cardiac question and no ECG — 'any chest pain or tightness? shortness of breath? sweating with the pain? does it go to your jaw or arm? cough or fever?' — then to the examiner, 'I would like an ECG'; epigastric pain is a cardiac impostor until proven otherwise (★)",
-   "FAIL — Hearing 'about three kilos' and putting cancer at the top of the list — one question, 'was that on purpose?', converts a red flag into a therapeutic effect ('that's the whole point of the injection'); the station is built to see whether you ask it (★)",
-   "FAIL — Calling the mild transaminase rise a second disease — 'your liver tests are only slightly up; that is expected when the pancreas is inflamed and doesn't mean a separate liver problem — what it does do is make me want to check for a gallstone slipping down the tube'; bilirubin normal → 'the main bile tube isn't blocked at the moment' (★)",
-   "FAIL — Naming pancreatitis with no cause sought — the six cause questions in order: alcohol in standard drinks and 'any heavy session in the last few days?'; gallstones or gallbladder surgery; medicines — anti-inflammatories, steroids, water tablets, and 'any injections for weight loss or diabetes — Ozempic, Wegovy, Trulicity?' (never volunteered); cholesterol or triglycerides and family; calcium; recent ERCP or injury; viral illness (★)",
-   "DO — Stability with the examiner, analgesia offered before anything else, then the three epigastric add-ons each individually scored: 'does it go through to your back? does sitting forward or curling up make a difference? what does food do to it?'; vomits — number, colour, blood; results in plain words — lipase 'an enzyme your pancreas makes; when it's inflamed it leaks into the blood', white cells 'the body's response, not necessarily infection'",
-   "SAY — Version A: alcohol without moralising ('a large amount at once can trigger the pancreas to digest itself; stopping alcohol is the single most useful thing, and I'd like to help you with that rather than just tell you'); B1: triglycerides inflame the pancreas directly — fluids, fasting, sometimes an insulin drip, then a fibrate, low-fat diet, no alcohol, family checked; B2: 'the weight-loss injection can, uncommonly, inflame the pancreas — I can't prove that today but it's high on my list and we should stop it'; 'have I done something wrong?' → 'an uncommon reaction to a medicine used properly'; keep a duct stone alive despite the cholecystectomy; report the reaction; management — admission, generous IV fluids ('the single most important treatment'), strong analgesia, antiemetic, ultrasound of the bile ducts, lipids and calcium, early feeding, no routine antibiotics; jaundice plus fever = cholangitis → ERCP within 24 hours"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-128",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version C of the epigastric pain document (stem reconstructed from the variant lines). The ultrasound shows gallstones that are quiet — do not let them explain the story. The sentence that must come before the prescription: stop the ibuprofen.",
   "stem": [
    "Warren Diggs, 40, presents with epigastric pain for six weeks, worse when he eats; antacids help for an hour or two. He takes ibuprofen daily for back pain. Ultrasound: gallstones present; no wall thickening, no duct dilatation, no inflammation."
   ],
@@ -32003,78 +32126,207 @@
    "Explain the ultrasound to the patient",
    "Give your diagnosis, differentials and management"
   ],
-  "time": "8 min. Intro, open, concerns · pain: gnawing, 5/10, ★ worse after eating, ★ antacids relieve, through to back? (no), sitting forward? · vomiting, blood · six cause questions incl ★ NSAIDs (2–3 Nurofen most days for months), alcohol, gallstones (known), steroids, GLP-1, lipids · cardiac screen + ECG if any doubt · red flags: weight loss (intent), dysphagia, haematemesis/melaena, anaemia symptoms, FHx · biliary specifics: fatty food, RUQ, shoulder tip, episodic hours-long attacks (no) · SADMA · explain the USS: 'stones sitting there quietly — common, we don't operate on quiet stones' · dx: NSAID-associated peptic (gastric) ulcer with reasons; DDx: GORD, gastritis, functional dyspepsia, biliary colic (doesn't fit), pancreatitis, gastric cancer (age 40, no red flags — low threshold) · ★ management: stop ibuprofen first → PPI → H. pylori test (off PPI 2 weeks) → treat if positive → alarm-feature safety-net → review; endoscopy if not settling/red flags.",
+  "findings": [
+   [
+    "THE TRAP HANDED TO YOU ON PAPER",
+    "ULTRASOUND: GALLSTONES PRESENT; NO WALL THICKENING, NO DUCT DILATATION, NO INFLAMMATION. SEEING 'GALLSTONES' ON THE REPORT AND DIAGNOSING BILIARY COLIC IS THE FAIL. THE STORY DOES NOT FIT AND THE GALLBLADDER IS NOT INFLAMED"
+   ],
+   [
+    "WHY THE STORY DOES NOT FIT",
+    "GALLSTONE PAIN comes on SUDDENLY AFTER FATTY FOOD, LASTS AN HOUR OR TWO, and often goes to the RIGHT SHOULDER. HIS is a GNAWING PAIN THAT HAS BEEN THERE FOR WEEKS, WORSE WHEN HE EATS, AND SETTLES WITH ANTACIDS"
+   ],
+   [
+    "QUANTIFY THE IBUPROFEN",
+    "'I TAKE NUROFEN FOR MY BACK.' → 'HOW MANY A DAY, FOR HOW LONG? DO YOU TAKE THEM WITH FOOD? ANYTHING ELSE — ASPIRIN, STEROIDS, BLOOD THINNERS?' That combination multiplies ulcer and bleeding risk"
+   ],
+   [
+    "WHICH WAY DOES FOOD CHANGE IT?",
+    "'IT'S WORSE AFTER I EAT' → WORSE WITH EATING SUGGESTS A GASTRIC ULCER; RELIEVED BY EATING AND WAKING HIM HUNGRY AT NIGHT SUGGESTS A DUODENAL ULCER. ASK WHICH"
+   ],
+   [
+    "THE ALARM FEATURES — ask every one",
+    "AGE OVER 50 WITH NEW DYSPEPSIA · UNINTENTIONAL WEIGHT LOSS · DIFFICULTY SWALLOWING · PERSISTENT VOMITING · ANAEMIA · EVIDENCE OF BLEEDING — VOMITING BLOOD, BLACK TARRY STOOLS · A MASS. ANY ONE MEANS ENDOSCOPY"
+   ],
+   [
+    "ONE CARDIAC QUESTION AND AN ECG — STILL",
+    "'ANY CHEST PAIN OR TIGHTNESS, BREATHLESSNESS, SWEATING, OR PAIN IN THE JAW OR ARM?' then 'I WOULD LIKE AN ECG.' Every epigastric station, no exceptions"
+   ],
+   [
+    "THE PANCREATIC QUESTIONS STILL BELONG",
+    "DOES IT GO THROUGH TO YOUR BACK · BETTER SITTING FORWARD · HOW MUCH ALCOHOL. Asked and answered no, they are part of how you exclude pancreatitis ALOUD"
+   ],
+   [
+    "QUIET GALLSTONES ARE COMMON AND USUALLY LEFT ALONE",
+    "GALLSTONES ARE FOUND INCIDENTALLY IN A LARGE MINORITY OF ADULTS AND MOST NEVER CAUSE SYMPTOMS. ASYMPTOMATIC GALLSTONES ARE NOT AN INDICATION FOR CHOLECYSTECTOMY"
+   ],
+   [
+    "SAY THREE THINGS ABOUT AN INCIDENTAL REPORT",
+    "THE STONES ARE REAL · THEY ARE NOT CAUSING THIS PROBLEM · AND HERE ARE THE SYMPTOMS THAT WOULD MEAN THEY HAD STARTED TO — sudden severe right-upper pain after food, fever, yellow skin or eyes, dark urine, pale stools"
+   ],
+   [
+    "THE MISTAKE THAT IS A LISTED FAIL",
+    "PRESCRIBING A PROTON PUMP INHIBITOR AND NEVER MENTIONING STOPPING THE NSAID. STOP THE CAUSE, THEN TREAT THE ULCER, THEN TEST FOR H. PYLORI — and discuss an alternative for his back"
+   ]
+  ],
+  "findingsLabel": "Gallstones on the report that explain nothing — and the ibuprofen that explains everything",
+  "must": [
+   "FAIL — Diagnosing biliary colic because the report says 'gallstones'.",
+   "FAIL — Prescribing a PPI and never mentioning stopping the ibuprofen.",
+   "FAIL — Never asking a cardiac question or requesting an ECG.",
+   "FAIL — No alarm-feature screen, so bleeding or weight loss is missed.",
+   "ASK — How many ibuprofen a day, and for how long?",
+   "ASK — Any vomiting blood, black tarry stools, weight loss or trouble swallowing?"
+  ],
   "back": {
-   "dx": "NSAID-associated peptic ulcer disease — six weeks of gnawing epigastric pain, worse after eating, relieved by antacids for an hour or two, daily ibuprofen for months; gallstones on ultrasound are incidental (no wall thickening, no duct dilatation, no inflammation, and the story is not biliary). Explain the ultrasound: 'stones in your gallbladder, but the wall isn't thickened, the tubes aren't blocked and there's no inflammation — these stones are sitting there quietly; very common; we don't operate on quiet stones.' Three things: stop the ibuprofen (the cause — no acid tablet fixes it while it continues), PPI, H. pylori breath/stool test off PPI for two weeks; eradicate if positive; red flags → hospital.",
+   "dx": [
+    "**PEPTIC ULCER DISEASE — NSAID-RELATED, GASTRIC ULCER PATTERN — with INCIDENTAL, ASYMPTOMATIC GALLSTONES.** **A peptic ulcer is a break in the mucosal lining of the stomach or duodenum EXTENDING THROUGH THE MUSCULARIS MUCOSAE, most often caused by HELICOBACTER PYLORI or NSAIDs.**",
+    "**THE DISCRIMINATING ISSUE: QUALIFY THE REPORT BEFORE YOU REACT TO IT. STONES PLUS A FITTING STORY EQUALS BILIARY DISEASE. STONES PLUS A NON-FITTING STORY EQUALS AN INCIDENTAL FINDING. Candidates fail by TREATING DATA AS CONCLUSIONS.**",
+    "**REFUSING THE GALLSTONE TRAP, VERBATIM: 'Warren, the scan DOES SHOW SOME STONES in your gallbladder. BUT I DON'T THINK THEY ARE CAUSING THIS PAIN, and here is why: gallstone pain comes on SUDDENLY AFTER FATTY FOOD, LASTS AN HOUR OR TWO and often goes to the RIGHT SHOULDER. Yours is A GNAWING PAIN that has been there FOR WEEKS, it is WORSE WHEN YOU EAT, and it SETTLES WITH ANTACIDS. THERE IS NO INFLAMMATION OF THE GALLBLADDER ON THE SCAN. That pattern, PLUS THE IBUPROFEN YOU TAKE FOR YOUR BACK, points to AN ULCER IN THE STOMACH.'**",
+    "**THE MECHANISM IN ONE LINE FOR HIM: 'anti-inflammatories like ibuprofen BLOCK THE CHEMICALS THAT PROTECT THE LINING OF THE STOMACH, so the acid starts to wear a small raw patch in it — THAT'S THE ULCER.'** **Technically: NSAIDs INHIBIT COX-1 AND REDUCE PROSTAGLANDIN-MEDIATED MUCOSAL PROTECTION — mucus, bicarbonate, and blood flow.**",
+    "**GASTRIC VERSUS DUODENAL: GASTRIC — pain CLASSICALLY WORSE WITH EATING, and ALWAYS BIOPSIED TO EXCLUDE MALIGNANCY, then RE-SCOPED TO CONFIRM HEALING. DUODENAL — pain RELIEVED BY EATING AND WORST WHEN HUNGRY OR AT NIGHT; usually NOT re-scoped.** **The food pattern is suggestive, not diagnostic — endoscopy decides.**",
+    "**MANAGEMENT, IN ORDER: STOP THE OFFENDING NSAID AND DISCUSS ALTERNATIVES FOR THE BACK PAIN — paracetamol, physiotherapy, activity · START A PROTON PUMP INHIBITOR · TEST FOR H. PYLORI — urea breath test or stool antigen — AND STOP THE PPI BEFOREHAND OR THE TEST IS FALSELY NEGATIVE · advise on alcohol and smoking · SAFETY-NET FOR BLEEDING.**",
+    "**IF H. PYLORI IS POSITIVE: ERADICATION with A PPI PLUS AMOXICILLIN AND CLARITHROMYCIN FOR SEVEN DAYS, then CONFIRM ERADICATION with a repeat breath test at least four weeks after antibiotics.** VERIFY current Therapeutic Guidelines regimen and local resistance advice.",
+    "**ENDOSCOPY IF ANY ALARM FEATURE: AGE OVER 50 WITH NEW DYSPEPSIA · UNINTENTIONAL WEIGHT LOSS · DYSPHAGIA · PERSISTENT VOMITING · ANAEMIA · EVIDENCE OF BLEEDING · A MASS.** **At 40 without alarm features, TEST-AND-TREAT with H. pylori testing plus stopping the NSAID is reasonable — BUT THE ULCER PATTERN WITH REGULAR NSAIDs MAKES A LOW THRESHOLD FOR GASTROSCOPY SENSIBLE.**",
+    "**THE GALLSTONES, HANDLED IN THREE SENTENCES: 'the stones are REAL · they're NOT CAUSING THIS · and if you ever get SUDDEN SEVERE PAIN UNDER THE RIGHT RIBS AFTER FOOD, A FEVER, OR YELLOWING OF YOUR SKIN OR EYES, THAT'S WHEN THEY'VE STARTED TO MATTER.' ASYMPTOMATIC GALLSTONES ARE NOT AN INDICATION FOR CHOLECYSTECTOMY.**",
+    "**IF HE MUST STAY ON AN NSAID: THE LOWEST DOSE FOR THE SHORTEST TIME, WITH PPI GASTROPROTECTION, and avoid combining with aspirin, steroids, SSRIs or anticoagulants.** **SAFETY-NET: VOMITING BLOOD, BLACK TARRY STOOLS, FAINTING, OR SUDDEN SEVERE PAIN WITH A RIGID TUMMY — CALL 000.** **SA: gastroscopy through Wallaroo or TQEH with PATS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open ('six weeks of pain, worse after eating, antacids help'), concerns"
+     "**WIPE, open question, acknowledge: 'six weeks of that is a long time — let's work out what's going on, and I'll go through the scan with you.'**"
     ],
     [
-     "0:40",
-     "Pain: site, character (gnawing), /10 (5), ★ 'what does food do?' (worse), ★ 'do antacids help?' (hour or two), through to back (no), forward (no change), night pain, timing after meals"
+     "0:25",
+     "**SICORA WITH THE THREE ADD-ONS: through to the back · better sitting forward · WHAT DOES FOOD DO — WORSE AFTER EATING, OR BETTER, AND DOES IT WAKE YOU HUNGRY AT NIGHT?**"
     ],
     [
-     "1:30",
-     "Vomiting, haematemesis · ★ six causes: alcohol quantified · gallstones (told — the scan) · ★ 'any anti-inflammatories — Nurofen, Voltaren? how many, how long?' (2–3 most days, months) · steroids · weight-loss injections · lipids/Ca · trauma/ERCP · viral"
+     "1:20",
+     "**UPPER GI: heartburn, reflux · DO ANTACIDS HELP, AND FOR HOW LONG · nausea, vomiting · early fullness · bloating.**"
     ],
     [
-     "2:45",
-     "Cardiac screen (exertional, sweating, jaw/arm) · red flags: weight loss + intent, appetite, dysphagia, ★ melaena/haematemesis, tiredness/dizziness (anaemia), lumps, FHx gastric/bowel cancer · biliary specifics: fatty-food attacks, RUQ, right shoulder blade, hours-long episodes → no · reflux screen (heartburn, water brash) · smoking, coffee, stress · the back pain: cause, other treatments · SADMA · summarise"
+     "1:50",
+     "**THE IBUPROFEN, QUANTIFIED: HOW MANY A DAY · HOW LONG · WITH FOOD · ANY ASPIRIN, STEROIDS, BLOOD THINNERS · ANYTHING ELSE FROM THE CHEMIST?**"
     ],
     [
-     "4:30",
-     "★ Ultrasound: 'There are stones in your gallbladder. But the gallbladder wall is not thickened, the tubes are not blocked and there's no inflammation — so these stones are sitting there quietly. They are very common and we don't operate on quiet stones. And your pain doesn't behave like gallstone pain — that comes in attacks after fatty meals, lasts hours, goes to the shoulder blade.'"
+     "2:20",
+     "**THE ALARM FEATURES: VOMITING BLOOD · BLACK TARRY STOOLS · WEIGHT LOSS — AND WAS IT INTENTIONAL · DIFFICULTY SWALLOWING · PERSISTENT VOMITING · TIREDNESS OR BREATHLESSNESS SUGGESTING ANAEMIA · family history of stomach cancer.**"
     ],
     [
-     "5:30",
-     "★ Dx: 'an ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back' — reasons: weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, quiet gallstones that don't fit · DDx: reflux/gastritis, functional dyspepsia, biliary colic, pancreatitis, gastric cancer (unlikely at 40 without red flags — low threshold for a scope if not settling)"
+     "2:55",
+     "**THE BILIARY QUESTIONS — ASKED SO YOU CAN EXCLUDE ALOUD: SUDDEN ATTACKS AFTER FATTY FOOD · PAIN UNDER THE RIGHT RIBS OR TO THE RIGHT SHOULDER · fever · yellowing · dark urine or pale stools?**"
     ],
     [
-     "6:30",
-     "★ 'Before I give you anything, the most important step is to stop the ibuprofen. That is what has caused the ulcer, and no acid tablet will fix it while you keep taking it. Let's talk about what else we can do for your back — paracetamol, physiotherapy, and a review of why it's been hurting so long.' · PPI (e.g. esomeprazole 20 mg daily 4–8 weeks VERIFY) · ★ H. pylori breath or stool test — 'you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative'; if positive: a week of two antibiotics plus the acid tablet, then a breath test to confirm cure · alcohol, smoking · review 4 weeks; gastroscopy if not settling, if >50, or any alarm feature · ★ 'go straight to hospital if you vomit blood, pass black tarry motions, or the pain suddenly becomes severe'"
+     "3:20",
+     "**THE PANCREATIC QUESTIONS: through to the back, sitting forward, ALCOHOL IN STANDARD DRINKS, any weight-loss or diabetes injections.**"
+    ],
+    [
+     "3:40",
+     "**THE CARDIAC QUESTION, THEN 'I WOULD LIKE AN ECG.'**"
+    ],
+    [
+     "3:55",
+     "**SMOKING, ALCOHOL, other medications, allergies · the back pain itself — what is it, what else has he tried?** Then **a one-line summary.**"
+    ],
+    [
+     "4:20",
+     "**If examination is offered: general appearance, PALLOR · vitals · epigastric tenderness, guarding, rigidity · Murphy sign · masses · lymph nodes including LEFT SUPRACLAVICULAR · rectal examination for MELAENA with consent.**"
+    ],
+    [
+     "5:00",
+     "**EXPLAIN THE ULTRASOUND: 'the scan DOES show stones — BUT I don't think they're causing this, and here's why' — the refusal script, point by point.**"
+    ],
+    [
+     "5:50",
+     "**NAME THE ULCER, with the mechanism in plain words and the link to the ibuprofen.**"
+    ],
+    [
+     "6:20",
+     "**THE DIFFERENTIALS: duodenal versus gastric ulcer · gastritis and reflux · functional dyspepsia · biliary colic — excluded on the story and the scan · pancreatitis · INFERIOR MI — HENCE THE ECG · GASTRIC CANCER, which is why a gastric ulcer is biopsied.**"
+    ],
+    [
+     "7:00",
+     "**THE PLAN, IN ORDER: STOP THE IBUPROFEN AND AGREE AN ALTERNATIVE FOR THE BACK · A PPI · H. PYLORI TESTING, stopping the PPI beforehand · FBC for anaemia · GASTROSCOPY IF ANY ALARM FEATURE OR IF IT FAILS TO SETTLE.**"
+    ],
+    [
+     "7:35",
+     "**THE GALLSTONES IN THREE SENTENCES, then THE BLEEDING SAFETY-NET — vomiting blood, black stools, fainting, sudden severe pain: CALL 000.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'What does food do to it — better, worse, or no change? Do antacids help, and for how long?' / ★ 'Any anti-inflammatories like ibuprofen, Nurofen or Voltaren — how many a day, and for how long?'",
-    "'Does the pain come in attacks an hour or two after fatty food, last a few hours, and go to your right shoulder blade?' / 'Any black tarry motions, vomiting blood, difficulty swallowing, or weight loss you weren't trying for?'",
-    "★ 'There are stones in your gallbladder. But the gallbladder wall is not thickened, the tubes are not blocked and there's no inflammation — so these stones are sitting there quietly. They are very common and we don't operate on quiet stones.'",
-    "★ 'An ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back — weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, and gallstones that are present but not inflamed and do not fit the story.'",
-    "★ 'Before I give you anything, the most important step is to stop the ibuprofen. That is what has caused the ulcer, and no acid tablet will fix it while you keep taking the ibuprofen.' / 'I'll test you for a stomach bacterium called Helicobacter, with a breath test or a stool test — and you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative. If it's positive we treat it with a week of two antibiotics plus the acid tablet.'",
-    "'Go straight to hospital if you vomit blood, pass black tarry motions, or the pain suddenly becomes severe.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): Warren, 40; gnawing epigastric pain six weeks, 5/10, worse after eating, antacids help an hour or two; 2–3 Nurofen daily for months for back pain; no weight loss, no haematemesis, no melaena. USS: gallstones, normal wall, no duct dilatation, no inflammation",
-    "Asymptomatic gallstones: ~10–15% of adults; most never cause symptoms; cholecystectomy only for symptomatic stones or complications (exceptions: porcelain gallbladder, large polyps, certain risk groups) VERIFY. Biliary colic pattern: postprandial (fatty), RUQ/epigastric, radiates to right scapula, 1–6 h, no fever",
-    "PUD: NSAIDs and H. pylori are the two causes; gastric ulcer pain classically worse with food (15–60 min), duodenal 2–5 h after/at night relieved by food. H. pylori testing: urea breath test or stool antigen — off PPI ≥2 weeks and antibiotics ≥4 weeks; eradication 7-day triple therapy (esomeprazole 20 mg + amoxicillin 1 g + clarithromycin 500 mg, all bd; metronidazole 400 mg if penicillin-allergic) VERIFY TG; test of cure ≥4 weeks after antibiotics. PPI 4–8 weeks; gastric ulcers need repeat endoscopy to confirm healing/biopsy. Endoscopy: alarm features at any age; new dyspepsia ≥50 (some say 55–60); NSAID ulcer with continued need → PPI cover, COX-2, review",
-    "Back pain alternatives: paracetamol, physio, exercise, heat, topical NSAID (less systemic), review cause; if NSAID unavoidable — lowest dose, shortest time, PPI co-prescription",
-    "SA: healthdirect 1800 022 222 · gastroenterology via LHN if scope needed"
+    "**Bedside: ECG · vitals · pallor · urine dipstick · BSL. Bloods: FBC for iron-deficiency anaemia, iron studies, UEC, LFT, lipase if pancreatitis is on the list.**",
+    "**H. PYLORI TESTING: UREA BREATH TEST OR STOOL ANTIGEN — STOP THE PPI FOR ABOUT TWO WEEKS BEFOREHAND, and avoid antibiotics or bismuth for four weeks, OR THE TEST IS FALSELY NEGATIVE. Serology cannot confirm active infection or eradication.** VERIFY.",
+    "**GASTROSCOPY for ANY ALARM FEATURE — and for a GASTRIC ULCER, BIOPSY TO EXCLUDE MALIGNANCY AND RE-SCOPE TO CONFIRM HEALING.** A gastric ulcer appears as a crater with a pale, slough-covered base.",
+    "**Management: STOP THE NSAID · PPI — typically for EIGHT WEEKS for a gastric ulcer · H. PYLORI ERADICATION IF POSITIVE — PPI, AMOXICILLIN AND CLARITHROMYCIN FOR 7 DAYS — with confirmation of eradication · ALTERNATIVE ANALGESIA AND PHYSIOTHERAPY FOR THE BACK · stop smoking, moderate alcohol.** VERIFY.",
+    "**Complications: UPPER GI BLEEDING — haematemesis, melaena, anaemia · PERFORATION — sudden severe pain, board-like rigidity, free gas on erect chest X-ray · GASTRIC OUTLET OBSTRUCTION — persistent vomiting of undigested food · penetration into the pancreas.**",
+    "**Do not miss: INFERIOR MYOCARDIAL INFARCTION — ECG · GASTRIC CANCER behind a gastric ulcer · PERFORATION · UPPER GI BLEED — Glasgow-Blatchford score to decide admission.**",
+    "**Avoid: DIAGNOSING BILIARY COLIC FROM THE WORD 'GALLSTONES' · REFERRING ASYMPTOMATIC GALLSTONES FOR CHOLECYSTECTOMY · A PPI WITH THE NSAID CONTINUED · H. pylori testing while on a PPI · reassuring without an alarm-feature screen.** **SA: gastroscopy at Wallaroo or TQEH, PATS for travel; TIS National 131 450.**"
    ],
-   "fails": [
-    "Attributing the pain to the gallstones — the scan is a decoy; recommending cholecystectomy",
-    "Prescribing a PPI without stopping the NSAID first",
-    "Testing for H. pylori while on a PPI (false negative); no test of cure",
-    "No alarm-feature screen; no red-flag safety-net; no scope threshold",
-    "Missing the OTC ibuprofen in the medication history"
-   ],
-   "numbers": [
-    "Gastric ulcer pain 15–60 min after food · duodenal 2–5 h/night · asymptomatic stones ~10–15% of adults",
-    "H. pylori test off PPI 2 wk, antibiotics 4 wk · triple therapy 7 d (esomeprazole 20 + amoxicillin 1 g + clarithromycin 500, all bd) VERIFY · test of cure ≥4 wk · PPI 4–8 wk",
-    "Scope: alarm features any age, new dyspepsia ≥50 · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Gastric ulcer — NSAID-related** — the answer",
+     "**Weeks of GNAWING pain, WORSE WITH EATING, ANTACID-RESPONSIVE, DAILY IBUPROFEN**",
+     "**Quantify the NSAID; aspirin, steroids, anticoagulants; the alarm features**",
+     "**Stop the NSAID, PPI, H. pylori test; gastroscopy with BIOPSY** — routine unless bleeding"
+    ],
+    [
+     "**Duodenal ulcer**",
+     "**RELIEVED BY EATING, worst when hungry, WAKES HIM AT NIGHT**",
+     "**'Which way does food change it?'**",
+     "H. pylori testing; PPI; gastroscopy if alarm features"
+    ],
+    [
+     "**Biliary colic — THE TRAP**",
+     "**Stones on ultrasound**",
+     "**Sudden attacks after fatty food, lasting 1–2 hours, to the right shoulder — ABSENT HERE; NO WALL THICKENING OR INFLAMMATION**",
+     "**Stones plus a non-fitting story = AN INCIDENTAL FINDING. No cholecystectomy for asymptomatic stones**"
+    ],
+    [
+     "**Perforated peptic ulcer**",
+     "**SUDDEN severe pain, BOARD-LIKE RIGIDITY, long NSAID history**",
+     "Sudden onset; peritonism",
+     "**Erect chest X-ray for free gas; theatre** — EMERGENCY"
+    ],
+    [
+     "**Upper GI bleed**",
+     "**Haematemesis, melaena, dizziness, anaemia on NSAIDs**",
+     "**'Any vomiting blood or black tarry stools?'**",
+     "**Glasgow-Blatchford; resuscitate; urgent endoscopy** — EMERGENCY"
+    ],
+    [
+     "**Inferior myocardial infarction**",
+     "**Epigastric pain with nausea, sweating, breathlessness; NO antacid response**",
+     "**Chest, jaw, arm, exertion**",
+     "**ECG AND TROPONIN FIRST** — EMERGENCY"
+    ],
+    [
+     "Gastritis and reflux",
+     "Burning, worse lying flat, worse with alcohol and spicy food",
+     "Postural change, reflux symptoms",
+     "Trial of therapy; endoscopy if alarm features"
+    ],
+    [
+     "Acute or chronic pancreatitis",
+     "**Pain through to the back, better sitting forward, alcohol**",
+     "The pancreatic questions",
+     "**Lipase — would be ≥3× in acute pancreatitis**"
+    ],
+    [
+     "**Gastric cancer**",
+     "**Older, WEIGHT LOSS, EARLY SATIETY, vomiting, ANAEMIA**",
+     "**Alarm features**",
+     "**Gastroscopy with biopsy — WHY EVERY GASTRIC ULCER IS BIOPSIED** — urgent"
+    ],
+    [
+     "Functional dyspepsia",
+     "Chronic epigastric discomfort, no structural cause, **no alarm features**",
+     "Normal investigations",
+     "**A diagnosis of exclusion — only after endoscopy or test-and-treat**"
+    ]
    ]
   },
   "source": "Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf Version C (Warren Diggs, 40, six weeks of epigastric pain on daily ibuprofen with incidental gallstones — NSAID peptic ulcer; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Epigastric_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Prescribing the acid tablet without first saying stop the ibuprofen — the sentence that must be said before the prescription: 'before I give you anything, the most important step is to stop the ibuprofen; that is what has caused the ulcer, and no acid tablet will fix it while you keep taking it; let's talk about what else we can do for your back — paracetamol, physiotherapy, and a review of why it's been hurting so long'",
-   "FAIL — Blaming the gallstones — 'there are stones in your gallbladder, but the wall is not thickened, the tubes are not blocked and there is no inflammation, so these stones are sitting there quietly; they are very common and we don't operate on quiet stones'; the stones are present but do not fit the story",
-   "DO — The pain: site, gnawing, 5/10, 'what does food do?' (worse), 'do antacids help?' (an hour or two), through to the back (no), sitting forward (no change); vomiting and haematemesis; the six cause questions with alcohol quantified, gallstones ('told — the scan'), 'any anti-inflammatories — ibuprofen, Nurofen, Voltaren?' → two or three Nurofen most days for months for his back",
-   "DO — Cardiac screen (exertional pain, sweating, jaw or arm) and the ECG; red flags with intent qualified — weight loss, appetite, dysphagia, melaena, haematemesis, lumps, family history; SADMA; stability with the examiner at the door",
-   "SAY — 'An ulcer in the stomach, most likely caused by the anti-inflammatory tablets you take for your back' — the reasons: weeks of gnawing pain, worse when you eat, relieved by antacids, daily ibuprofen, and gallstones that are present but not inflamed",
-   "DO — Three things: stop the ibuprofen; a proton pump inhibitor; test for Helicobacter with a breath or stool test — 'you'll need to be off the acid tablet for two weeks before that test or it can come back falsely negative' — and a week of two antibiotics plus the acid tablet if positive; safety-net: vomiting blood, black tarry motions, sudden severe pain and a rigid abdomen (perforation — erect CXR, resuscitate, antibiotics, theatre) → straight to hospital"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-129",
