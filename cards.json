@@ -31037,9 +31037,8 @@
  {
   "id": "MED-123",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version D of the young/chronic/atypical set (reconstructed stem). The diagnosis is in the medication history — Panadeine Forte is paracetamol + codeine, started days before the constipation, for a back pain that has already resolved. Variant: vomiting and no flatus = obstruction, not loading — hospital today.",
   "stem": [
    "Elyse Kandel, 20, presents with lower abdominal pain and bloating. She injured her back ten days ago (now settled) and has been taking Panadeine Forte. No bowel motion for six days."
   ],
@@ -31048,118 +31047,213 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 min. Intro, open, concerns · pain: site, character, /10, onset relative to the codeine, ★ nocturnal · ★ stool: last motion (6 d), what it's like when it comes (hard pellets), straining, incomplete emptying, blood, ★ passing wind? (yes → loaded, not obstructed) · ★ vomiting? · usual bowel habit before this · ★ 'every medicine, including anything from the chemist — especially any painkillers' → Panadeine Forte 'a few a day' since the injury → back pain now? (settled) · fluid/fibre/activity (bed rest with the back) · red flags: weight, appetite, fever, blood · IBD screen ×4 · gynae: LMP, pregnancy possible, discharge, pelvic pain · thyroid symptoms, other meds (iron, anticholinergics, opioids elsewhere) · SADMA · examiner: appearance, vitals, abdomen (★ palpable faecal loading LIF, distension, tenderness, BS present), ★ DRE (rectum loaded with hard stool), dipstick, βhCG · dx opioid-induced constipation with reasons · plan: stop codeine → plain paracetamol, macrogol, suppository today, fluids/fibre/mobilise, review; obstruction variant recognised.",
+  "findings": [
+   [
+    "THE DIAGNOSIS IS IN A BRAND NAME",
+    "'I'VE BEEN TAKING PANADEINE FORTE' — PARACETAMOL AND CODEINE. CODEINE IS AN OPIOID, AND OPIOIDS CAUSE CONSTIPATION. THAT IS THE DIAGNOSIS, and the treatment STARTS WITH STOPPING IT. The station tests WHETHER YOU KNOW WHAT IS IN IT"
+   ],
+   [
+    "THE QUESTION THAT FINDS IT",
+    "'WHAT PAINKILLERS HAVE YOU BEEN TAKING — INCLUDING ANYTHING FROM THE CHEMIST?' → 'JUST PANADEINE FORTE FOR MY BACK. A FEW A DAY SINCE I HURT IT.' Name every painkiller, INCLUDING OVER-THE-COUNTER AND CODEINE-CONTAINING"
+   ],
+   [
+    "THE TIMELINE IS THE REASONING",
+    "BACK INJURY TEN DAYS AGO → CODEINE STARTED → NO MOTION FOR SIX DAYS, BEGINNING DAYS AFTER THE CODEINE → BACK PAIN NOW SETTLED. SAY THE SEQUENCE ALOUD — IT IS THE CAUSAL ARGUMENT"
+   ],
+   [
+    "CHARACTERISE THE STOOL",
+    "'NOTHING AT ALL FOR SIX DAYS. WHEN I DO GO IT'S LIKE LITTLE HARD PELLETS.' And the four obstruction questions: VOMITING · DISTENSION · WHEN DID YOU LAST PASS WIND · WHEN DID YOU LAST OPEN YOUR BOWELS"
+   ],
+   [
+    "THE EXAMINATION CARD",
+    "SOFT, MILDLY DISTENDED · PALPABLE FAECAL LOADING IN THE LEFT ILIAC FOSSA · BOWEL SOUNDS PRESENT · RECTUM LOADED WITH HARD STOOL. ASK FOR THE DIGITAL RECTAL EXAMINATION BY NAME, WITH CONSENT AND A CHAPERONE — it is what confirms a loaded rectum"
+   ],
+   [
+    "THE VARIANT THAT CHANGES THE ANSWER",
+    "ADD VOMITING AND NO FLATUS → OBSTRUCTION, NOT CONSTIPATION. 'That changes things. NOT PASSING WIND AND VOMITING SUGGESTS THE BOWEL IS BLOCKED RATHER THAN SIMPLY LOADED, and that needs HOSPITAL ASSESSMENT TODAY, NOT A LAXATIVE'"
+   ],
+   [
+    "STILL EXCLUDE THE BACK",
+    "A BACK INJURY WITH NEW CONSTIPATION raises CAUDA EQUINA. Ask: ANY NUMBNESS BETWEEN THE LEGS OR AROUND THE BACK PASSAGE · ANY TROUBLE PASSING URINE · ANY LEG WEAKNESS. The answers are no — BUT ASKING IS THE MARK"
+   ],
+   [
+    "IN A 20-YEAR-OLD WOMAN, PREGNANCY IS ON THE LIST",
+    "LAST MENSTRUAL PERIOD, AND A URINARY βhCG. Lower abdominal pain and bloating in a woman of reproductive age — the test takes two minutes"
+   ],
+   [
+    "ASK HOW MUCH, AND HOW SHE GETS IT",
+    "HOW MANY A DAY, FOR HOW LONG, WHO PRESCRIBED IT. CODEINE HAS BEEN PRESCRIPTION-ONLY IN AUSTRALIA SINCE FEBRUARY 2018. Paracetamol dose matters too — confirm she has not exceeded 4 g in 24 hours"
+   ],
+   [
+    "THE MISTAKE THAT IS A LISTED FAIL",
+    "TREATING THE CONSTIPATION WITHOUT STOPPING THE OPIOID — MACROGOL PRESCRIBED, CODEINE CONTINUED. STOP THE CAUSE FIRST. THEN THE LAXATIVE"
+   ]
+  ],
+  "findingsLabel": "Version D — the diagnosis is in a brand name, and the cause comes out first",
+  "must": [
+   "FAIL — Treating the constipation without stopping the codeine.",
+   "FAIL — Never asking what painkillers she takes, including from the chemist.",
+   "FAIL — Missing obstruction when vomiting and absent flatus are added.",
+   "FAIL — Accepting 'constipated' without asking when she last passed wind.",
+   "ASK — What painkillers have you been taking, including anything from the chemist?",
+   "ASK — When did you last pass wind? Any vomiting?"
+  ],
   "back": {
-   "dx": "Opioid (codeine)-induced constipation with faecal loading — no motion for six days beginning days after starting Panadeine Forte (paracetamol + codeine 'a few a day'), hard pellets, bloating, LIF loading and a loaded rectum on examination, bowel sounds present, still passing wind, no vomiting; the back pain that prompted the codeine has resolved, so there is no indication to continue. Plan: stop the codeine → plain paracetamol; macrogol; a suppository today to clear the rectum; fluids, fibre, mobilise; review. Variant — vomiting and no flatus = bowel obstruction, not simple loading → hospital today, not a laxative.",
+   "dx": [
+    "**OPIOID-INDUCED CONSTIPATION WITH FAECAL LOADING. The codeine in PANADEINE FORTE — PARACETAMOL WITH CODEINE — slows gut transit by acting on MU-OPIOID RECEPTORS IN THE BOWEL WALL, reducing peristalsis and secretion and increasing fluid absorption, so stools become HARD AND INFREQUENT.**",
+    "**THE DISCRIMINATING ISSUE: KNOWING WHAT IS IN THE BRAND NAME, AND STOPPING THE CAUSE BEFORE PRESCRIBING A LAXATIVE.** **Every version of the young-and-atypical abdomen is failed by taking the complaint at face value — here, prescribing macrogol and never asking what she takes.**",
+    "**THE SCRIPT: 'Elyse, your bowel is loaded with stool, and THE CAUSE IS THE CODEINE IN THE PANADEINE FORTE. Codeine SLOWS THE BOWEL RIGHT DOWN — that's what has caused this. YOUR BACK HAS SETTLED, SO WE STOP IT AND USE PLAIN PARACETAMOL INSTEAD. Then a laxative called MACROGOL to soften things through, and A SUPPOSITORY TODAY TO CLEAR WHAT IS ALREADY SITTING THERE.'**",
+    "**THE FOUR REASONS, READ BACK: NO MOTION FOR SIX DAYS, STARTING DAYS AFTER THE CODEINE BEGAN · HARD PELLET STOOLS · PALPABLE LOADING AND A LOADED RECTUM · and THE BACK PAIN THAT PROMPTED IT HAS ALREADY RESOLVED.**",
+    "**TREATMENT SEQUENCE: STOP OR REDUCE THE CODEINE → switch to SIMPLE ANALGESIA → an OSMOTIC LAXATIVE SUCH AS MACROGOL → add a STIMULANT such as senna or bisacodyl if needed → a SUPPOSITORY OR ENEMA FOR A LOADED RECTUM → fluids, mobility.** **Bulk-forming fibre alone is a POOR CHOICE in opioid constipation — it can worsen bloating in a slowed bowel.** VERIFY.",
+    "**EXPLAIN THE FUTURE: 'OPIOIDS WILL DO THIS AGAIN. If you ever need a codeine-containing medicine in future, START A LAXATIVE AT THE SAME TIME.'** **That sentence turns a one-off fix into prevention, and examiners score it.**",
+    "**THE OBSTRUCTION VARIANT: add VOMITING AND ABSOLUTE CONSTIPATION — NO FLATUS — and the answer changes. 'Not passing wind and vomiting suggests the bowel is BLOCKED RATHER THAN SIMPLY LOADED, and that needs HOSPITAL ASSESSMENT TODAY, NOT A LAXATIVE.'** **A stimulant laxative into an obstructed bowel risks PERFORATION.**",
+    "**CONSTIPATION ALSO CAUSES OVERFLOW: a heavily loaded rectum can present as LIQUID FAECAL LEAKAGE mistaken for diarrhoea. If she reports loose leakage alongside no proper motion, THINK OVERFLOW AND DO NOT GIVE AN ANTIDIARRHOEAL.**",
+    "**THE DIFFERENTIALS BY GROUP: BOWEL OBSTRUCTION · CAUDA EQUINA FROM THE BACK INJURY · PREGNANCY · HYPOTHYROIDISM, HYPERCALCAEMIA AND HYPOKALAEMIA as metabolic causes · IRRITABLE BOWEL WITH CONSTIPATION · and in an older patient, COLORECTAL CANCER.**",
+    "**SAFETY-NET: 'if you start VOMITING, stop passing wind, your tummy becomes very swollen or much more painful, or you notice ANY NUMBNESS BETWEEN THE LEGS, TROUBLE PASSING URINE OR LEG WEAKNESS — come straight back.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open, concerns"
+     "**WIPE, open question, acknowledge: 'six days of that sounds really uncomfortable — let's sort it out.'**"
     ],
     [
-     "0:45",
-     "Pain: site (lower), character, /10, when it began relative to the back injury and the tablets, nocturnal (no) · bloating"
+     "0:25",
+     "**THE PAIN: where, how bad, constant or crampy, getting worse, anything better or worse.**"
     ],
     [
-     "1:30",
-     "★ Bowels: last motion (6 d) · what's it like when you do go (hard pellets) · straining, incomplete emptying · blood/mucus · ★ 'are you passing wind normally?' (yes) · ★ 'any vomiting?' (no) · usual habit before this (daily)"
+     "0:50",
+     "**THE FOUR OBSTRUCTION QUESTIONS: ANY VOMITING · HAS YOUR TUMMY BECOME SWOLLEN · WHEN DID YOU LAST PASS WIND · WHEN DID YOU LAST OPEN YOUR BOWELS?**"
     ],
     [
-     "2:30",
-     "★ 'Every medicine you take, including anything from the chemist — especially any painkillers' → Panadeine Forte, a few a day since the injury → 'that's paracetamol with codeine — how is the back now?' (settled) · fluids, fibre, activity (resting the back) · iron, anticholinergics, other opioids"
+     "1:20",
+     "**CHARACTERISE THE STOOL: what is it like when you go · HARD PELLETS · any blood · any straining · ANY LEAKAGE OF LOOSE STOOL?**"
     ],
     [
-     "3:30",
-     "Red flags: weight loss, appetite, fever, blood · IBD ×4 · gynae: LMP, ★ 'any chance you could be pregnant?', discharge, pelvic pain · thyroid/cold intolerance · FHx · SADMA"
+     "1:45",
+     "**THE MEDICATION QUESTION: 'WHAT PAINKILLERS HAVE YOU BEEN TAKING — INCLUDING ANYTHING FROM THE CHEMIST?'** Then **HOW MANY A DAY, FOR HOW LONG, WHO PRESCRIBED IT, AND WHEN DID THE CONSTIPATION START RELATIVE TO IT?**"
     ],
     [
-     "4:45",
-     "Examiner: appearance, vitals · abdomen — distension, ★ palpable faecal loading (LIF), tenderness, masses, BS · ★ DRE — rectum loaded or empty, stool consistency, anal tone, fissure · dipstick, ★ βhCG → soft, mildly distended, palpable loading LIF, BS present, rectum loaded with hard stool"
+     "2:20",
+     "**SAY THE TIMELINE BACK: 'so the codeine started with the back injury ten days ago, and the constipation began a few days after that.'**"
     ],
     [
-     "5:45",
-     "★ 'Elyse, your bowel is loaded with stool, and the cause is the codeine in the Panadeine Forte. Codeine is a morphine-type painkiller — it slows the bowel right down. Four things tell me that: no motion for six days starting days after the codeine began; hard pellet stools; I can feel the loading and the rectum is full; and the back pain that prompted it has already resolved.' · DDx: simple dietary/immobility constipation, IBS-C, hypothyroidism, pregnancy, IBD (unlikely), obstruction (passing wind, no vomiting — no)"
+     "2:35",
+     "**THE BACK — CAUDA EQUINA SCREEN: is the back pain settled · ANY NUMBNESS BETWEEN THE LEGS OR AROUND THE BACK PASSAGE · ANY TROUBLE PASSING URINE · ANY LEG WEAKNESS OR NUMBNESS?**"
     ],
     [
-     "6:45",
-     "Plan: ★ stop the Panadeine Forte — plain paracetamol if needed (back settled) · ★ macrogol (Movicol) to soften through, daily until regular; ★ a glycerol/bisacodyl suppository today to clear what's there · fluids, fibre, walking · avoid codeine-containing OTC products · review 1 week; safety-net: ★ 'if you start vomiting, stop passing wind, or the pain becomes severe — that suggests the bowel is blocked rather than loaded and needs hospital assessment today, not a laxative'"
+     "3:00",
+     "**GYNAECOLOGICAL: WHEN WAS YOUR LAST PERIOD · any chance of pregnancy · any vaginal bleeding or discharge.**"
+    ],
+    [
+     "3:20",
+     "**METABOLIC AND OTHER: feeling the cold, weight gain, tiredness — thyroid · THIRST AND PASSING MORE URINE — calcium · diet, fluid intake, mobility since the injury · previous bowel problems?**"
+    ],
+    [
+     "3:50",
+     "**RED FLAGS: WEIGHT LOSS · BLOOD IN THE STOOL · family history of bowel cancer or IBD.** Then **SADMA and a one-line summary.**"
+    ],
+    [
+     "4:20",
+     "**EXAMINATION BY NAME: general appearance, hydration · vitals · abdomen — DISTENSION, TENDERNESS, PALPABLE FAECAL LOADING, BOWEL SOUNDS · DIGITAL RECTAL EXAMINATION WITH CONSENT AND A CHAPERONE — IS THE RECTUM LOADED OR EMPTY · brief lower-limb neurology and perianal sensation · URINE DIPSTICK AND βhCG.**"
+    ],
+    [
+     "5:30",
+     "**NAME IT — AND NAME THE CAUSE: 'your bowel is loaded with stool, and the cause is the codeine in the Panadeine Forte.'**"
+    ],
+    [
+     "6:00",
+     "**THE FOUR REASONS, then the plan in order: STOP THE CODEINE, PLAIN PARACETAMOL, MACROGOL, A SUPPOSITORY TODAY, fluids and mobility.**"
+    ],
+    [
+     "6:40",
+     "**THE DIFFERENTIALS BY GROUP, each with a reason: obstruction — she is passing wind, not vomiting · cauda equina — no saddle numbness or urinary symptoms · pregnancy — βhCG · metabolic causes · IBS.**"
+    ],
+    [
+     "7:20",
+     "**PREVENTION: 'opioids will do this again — if you ever need codeine in future, START A LAXATIVE AT THE SAME TIME.'** Then **THE SAFETY-NET, including the cauda equina symptoms, and review in a few days.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'And every medicine you take, including anything from the chemist — especially any painkillers.' / 'That's paracetamol with codeine — how is the back now?'",
-    "★ 'Are you passing wind normally? Any vomiting?' / 'Is there any chance you could be pregnant?'",
-    "★ To examiner: '…palpation for tenderness, masses and any palpable faecal loading … perianal inspection and digital rectal examination — is the rectum loaded or empty?'",
-    "★ 'Elyse, your bowel is loaded with stool, and the cause is the codeine in the Panadeine Forte. The codeine slows the bowel right down — that is what has caused this. Your back has settled, so we stop it and use plain paracetamol instead. Then a laxative called macrogol to soften things through, and a suppository today to clear what is already sitting there.'",
-    "Variant: 'That changes things. Not passing wind and vomiting suggests the bowel is blocked rather than simply loaded, and that needs hospital assessment today, not a laxative.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): Elyse, 20; no motion for six days, bloated, hard pellets; hurt her back ten days ago, taking Panadeine Forte a few times a day; back pain now settled. Card: soft, mildly distended, palpable faecal loading LIF, bowel sounds present, rectum loaded with hard stool",
-    "Opioid-induced constipation: reduced motility, increased tone/sphincter, reduced secretions — dose-related, no tolerance. Panadeine Forte = paracetamol 500 mg + codeine 30 mg (S4; OTC codeine ended in Australia 2018). Management: stop/reduce opioid; osmotic laxative (macrogol) ± stimulant (senna/bisacodyl); suppository/enema for rectal loading; PAMORAs for chronic opioid use (specialist). Avoid bulk-forming alone in opioid constipation. Fibre 25–30 g/day, fluids, exercise VERIFY",
-    "Constipation red flags: age >50 new onset, blood, weight loss, anaemia, FHx CRC, nocturnal symptoms, obstruction (vomiting, absolute constipation, distension) — hospital. Secondary causes: opioids, anticholinergics, iron, calcium, hypothyroidism, hypercalcaemia, pregnancy, diabetes, Parkinson's, pelvic floor dysfunction. Always βhCG in a 20-year-old with lower abdominal pain",
-    "Codeine counselling: also drowsiness, dependence, not for chronic non-cancer pain; ultra-rapid metabolisers; not in breastfeeding · SA: healthdirect 1800 022 222"
+    "**Usually a CLINICAL DIAGNOSIS: abdominal examination and DIGITAL RECTAL EXAMINATION SHOWING A LOADED RECTUM. Office tests: URINE DIPSTICK AND URINARY βhCG in a woman of reproductive age.**",
+    "**Investigations only if indicated: ABDOMINAL X-RAY ONLY IF OBSTRUCTION IS SUSPECTED · UEC, CALCIUM AND TSH IF THE CONSTIPATION IS UNEXPLAINED — hypercalcaemia, hypokalaemia and hypothyroidism all cause it.**",
+    "**Management: STOP OR REDUCE THE CODEINE AND SWITCH TO SIMPLE ANALGESIA — the back pain has resolved anyway · MACROGOL FIRST LINE · add a STIMULANT such as senna or bisacodyl if needed · a SUPPOSITORY OR ENEMA FOR A LOADED RECTUM · fluids, fibre in moderation, and mobility.** VERIFY.",
+    "**For patients who must stay on opioids: prophylactic laxatives from the start, and if refractory, a PERIPHERALLY ACTING MU-OPIOID RECEPTOR ANTAGONIST such as NALOXEGOL, or a combination opioid product with naloxone — specialist or prescriber decision.**",
+    "**Do not miss: BOWEL OBSTRUCTION — vomiting and no flatus change everything · CAUDA EQUINA after a back injury · PREGNANCY · OVERFLOW DIARRHOEA from a loaded rectum · PARACETAMOL OVERDOSE if she has been taking extra tablets for pain.**",
+    "**Avoid: PRESCRIBING A LAXATIVE WHILE CONTINUING THE CODEINE · a stimulant laxative into a suspected obstruction · an antidiarrhoeal for overflow · bulk-forming fibre alone in an opioid-slowed bowel · forgetting to tell her it will recur with future opioids.**",
+    "**Australian context: CODEINE HAS BEEN PRESCRIPTION-ONLY SINCE FEBRUARY 2018, so ask who prescribed it and how often she is getting it — and whether the real problem was undertreated acute back pain that simple analgesia and activity would have managed.**"
    ],
-   "fails": [
-    "Missing the codeine — a medication history that stops at 'paracetamol' or never asks about painkillers",
-    "Not asking flatus and vomiting; a laxative for a patient who is actually obstructed",
-    "No DRE/rectal loading assessment; no βhCG",
-    "Continuing the codeine 'for the back' when the back has settled; fibre alone as the plan",
-    "No safety-net for obstruction"
-   ],
-   "numbers": [
-    "No motion 6 d · onset days after codeine · Panadeine Forte = paracetamol 500 + codeine 30 · passing wind, no vomiting = loaded not obstructed",
-    "Macrogol daily · suppository today · fibre 25–30 g/d VERIFY · review 1 wk · vomiting + no flatus → hospital today",
-    "healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Opioid-induced constipation with faecal loading** — the answer",
+     "**CODEINE STARTED 10 DAYS AGO; NO MOTION FOR SIX DAYS; HARD PELLETS; back pain now settled**",
+     "**'What painkillers — including from the chemist?'; PALPABLE LOADING; LOADED RECTUM ON DRE**",
+     "**Clinical. STOP THE CODEINE, macrogol, suppository**"
+    ],
+    [
+     "**Bowel obstruction**",
+     "**VOMITING, NO FLATUS, distension, colicky pain**",
+     "**'When did you last pass wind?'**",
+     "**Hospital today; erect and supine AXR; NO STIMULANT LAXATIVE** — EMERGENCY"
+    ],
+    [
+     "**Cauda equina syndrome**",
+     "**A back injury with new bowel change**",
+     "**SADDLE NUMBNESS, urinary retention, leg weakness, reduced anal tone**",
+     "**Same-day MRI; neurosurgery** — EMERGENCY"
+    ],
+    [
+     "**Pregnancy**",
+     "Lower abdominal pain and bloating in a woman of reproductive age",
+     "**Last menstrual period**",
+     "**Urinary βhCG — two minutes**"
+    ],
+    [
+     "**Overflow diarrhoea**",
+     "**Liquid leakage despite no proper motion**",
+     "**'Any leakage of loose stool?'**",
+     "**Treat the loading — NEVER AN ANTIDIARRHOEAL**"
+    ],
+    [
+     "Hypothyroidism · hypercalcaemia · hypokalaemia",
+     "Cold intolerance, weight gain; thirst, polyuria; diuretics",
+     "Metabolic history",
+     "TSH; corrected calcium; UEC"
+    ],
+    [
+     "Dehydration and immobility",
+     "**Less mobile since the back injury**, poor fluid intake",
+     "Fluid intake, activity",
+     "Fluids and mobilisation — **contributory, not the main cause**"
+    ],
+    [
+     "Irritable bowel syndrome with constipation",
+     "Chronic pattern, bloating, pain relieved by defaecation, **no alarm features**",
+     "**THIS IS ACUTE AND DRUG-LINKED — not IBS**",
+     "Only if the constipation persists after the opioid is stopped"
+    ],
+    [
+     "Pelvic pathology — ovarian cyst, PID",
+     "Lower abdominal pain, discharge, dyspareunia",
+     "Gynaecological history",
+     "Pelvic examination with consent and chaperone; ultrasound if indicated"
+    ],
+    [
+     "**Colorectal cancer** — older patient",
+     "**Change in habit, weight loss, bleeding, family history**",
+     "Red-flag questions — **asked whatever the age**",
+     "Colonoscopy — **unlikely at 20 with a clear drug cause**"
+    ]
    ]
   },
   "source": "Young_Chronic_Abdomen_2_Case_Tasks_Script_Notability.pdf Version D (Elyse Kandel, 20, six days without a bowel motion on Panadeine Forte for a settled back injury — opioid constipation; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Mid GI › Young_Chronic_Abdomen_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Well, comfortable, not dehydrated; observations normal"
-   ],
-   [
-    "Inspection",
-    "Mild abdominal distension; no scars, no visible peristalsis"
-   ],
-   [
-    "Palpation",
-    "LEFT ILIAC FOSSA FULLNESS — palpable faecal loading, indentable; NO guarding, no rigidity, no mass elsewhere"
-   ],
-   [
-    "Percussion and bowel sounds",
-    "Resonant; BOWEL SOUNDS PRESENT — she is still passing wind, so this is not obstruction"
-   ],
-   [
-    "Rectal examination",
-    "A LOADED RECTUM with HARD STOOL — the finding that makes the diagnosis, and it must be requested"
-   ],
-   [
-    "Groins",
-    "Hernial orifices normal"
-   ],
-   [
-    "Urine dipstick and pregnancy test",
-    "Negative"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking 'every medicine you take, including anything from the chemist — especially any painkillers' — Panadeine Forte is paracetamol plus codeine, a few a day since the back injury, and that IS the diagnosis; if you never name the codeine, you have a constipation station with no cause",
-   "FAIL — Missing the variant that changes the answer — if she also reports vomiting and no flatus: 'not passing wind and vomiting suggests the bowel is blocked rather than simply loaded, and that needs hospital assessment today, not a laxative'; ask 'when did you last pass wind?' and 'any vomiting?' explicitly",
-   "DO — Bowels: last motion (six days), what it's like when you go (hard pellets), straining, incomplete emptying, blood or mucus; when it started relative to the codeine (days after); red flags — weight loss, appetite, fever, blood; the four IBD questions; gynaecological — LMP, 'any chance you could be pregnant?', discharge, pelvic pain; the back injury now settled",
-   "DO — Examiner: appearance and vitals; abdomen — distension, palpable faecal loading in the left iliac fossa, tenderness, masses, bowel sounds present; rectal — loaded with hard stool; dipstick and a pregnancy test",
-   "SAY — 'Elyse, your bowel is loaded with stool, and the cause is the codeine in the Panadeine Forte; codeine is a morphine-type painkiller and it slows the bowel right down'; the reasons: no motion for six days starting days after the codeine began, hard pellet stools, palpable loading and a loaded rectum, and the back pain that prompted it has already resolved",
-   "DO — Plan: stop the Panadeine Forte — plain paracetamol if needed, the back has settled; macrogol (Movicol) to soften things through; a suppository today to clear what is already sitting there; fluids, fibre, mobility; differentials — obstruction, pregnancy, hypothyroidism, IBS, hypercalcaemia; safety-net for vomiting, no wind, worsening distension"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-124",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version E of the young/chronic/atypical set (reconstructed stem). 'Screening is for people without symptoms — you have symptoms.' Age 60, change in habit, weight loss, rectal bleeding, family history: colonoscopy, not another FOBT.",
   "stem": [
    "Ron Falzon, 60, presents with alternating constipation and diarrhoea, 5 kg of unintentional weight loss and some rectal bleeding. His aunt had bowel cancer. He says his screening test last year was normal."
   ],
@@ -31168,90 +31262,207 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 min. Intro, open, concerns (fear of cancer — name it, promise to return) · bowel habit: what changed, since when, alternating pattern, ★ frequency/consistency/calibre (pencil-thin), ★ tenesmus/incomplete emptying, ★ nocturnal · ★ bleeding: colour (bright/dark), mixed in or on the paper/surface, with mucus, how often, how much · ★ weight loss (5 kg, unintended), appetite, fatigue, ★ symptoms of anaemia (SOB, dizziness), fever/night sweats · abdominal pain, bloating, ★ obstructive symptoms · perianal pain/lump (haemorrhoids, fissure — don't stop there) · ★ FHx: who, age at diagnosis, how many relatives, polyps, other cancers (Lynch) · previous colonoscopy/polyps, ★ the FOBT — when, what · IBD, NSAIDs, anticoagulants, smoking, alcohol, red meat/processed meat, diabetes · SADMA · examiner: appearance, pallor, weight/BMI, ★ lymph nodes (left supraclavicular), abdomen (mass, hepatomegaly), ★ DRE (mass, blood on glove), dipstick · dx: suspected colorectal cancer with the six reasons · DDx: IBD, diverticular disease, haemorrhoids/fissure (co-existing), polyps, infection, IBS (no — age and red flags) · plan: FBE/iron/UEC/LFT/CEA, ★ urgent colonoscopy (Category 1, within 30 days VERIFY), CT if obstructive/for staging after diagnosis; don't repeat FOBT; safety-net; family.",
+  "findings": [
+   [
+    "THE SENTENCE THE STATION IS BUILT AROUND",
+    "'MY SCREENING TEST LAST YEAR WAS NORMAL.' The role-player is briefed to INSIST on it. A NORMAL SCREENING TEST LAST YEAR DOES NOT PROTECT A SYMPTOMATIC PATIENT. ACCEPTING IT AS REASSURANCE IS A STARRED FAIL"
+   ],
+   [
+    "FOUR ALARM FEATURES, ALL IN THE STEM",
+    "AGE 60 · A PERSISTENT CHANGE IN BOWEL HABIT — alternating constipation and diarrhoea · 5 kg OF UNINTENTIONAL WEIGHT LOSS · RECTAL BLEEDING. Plus A FAMILY HISTORY — an aunt with bowel cancer"
+   ],
+   [
+    "QUALIFY THE WEIGHT LOSS",
+    "'WAS THE WEIGHT LOSS INTENTIONAL?' → 'NO, NOT ON PURPOSE.' UNINTENTIONAL WEIGHT LOSS IS THE ALARM FEATURE; weight loss from dieting is not"
+   ],
+   [
+    "CORRECT THE MISCONCEPTION KINDLY — the scripted line",
+    "'I'M GLAD YOU MENTIONED THE SCREENING TEST — IT'S GOOD THAT YOU DID IT. But I want to explain why it doesn't settle this. SCREENING TESTS ARE DESIGNED FOR PEOPLE WITH NO SYMPTOMS. YOU HAVE SYMPTOMS. In someone with symptoms, WE GO STRAIGHT TO LOOKING DIRECTLY, WITH A CAMERA TEST'"
+   ],
+   [
+    "WHY THE KIT CAN BE NORMAL WITH A CANCER PRESENT",
+    "The immunochemical faecal occult blood test detects HUMAN HAEMOGLOBIN IN STOOL — tumours BLEED INTERMITTENTLY, so a single negative test does not exclude cancer; and a cancer can DEVELOP in the year since. The NBCSP test is every two years from 45 to 74 — AND ONLY FOR PEOPLE WITHOUT SYMPTOMS"
+   ],
+   [
+    "CHARACTERISE THE BLEEDING",
+    "BRIGHT RED ON THE PAPER OR MIXED IN WITH THE STOOL · DARK OR CLOTS · ANY MUCUS · DOES IT DRIP INTO THE PAN. BLOOD MIXED WITH STOOL, WITH A CHANGE IN HABIT, is more concerning than streaks on the paper with a hard motion — BUT NEITHER IS ATTRIBUTED TO HAEMORRHOIDS IN A 60-YEAR-OLD WITHOUT A COLONOSCOPY"
+   ],
+   [
+    "THE FAMILY HISTORY — get the detail",
+    "WHICH RELATIVE, WHAT AGE AT DIAGNOSIS, ANY OTHER CANCERS IN THE FAMILY — bowel, endometrial, ovarian, stomach. A FIRST-DEGREE RELATIVE UNDER 55, or multiple relatives, raises LYNCH SYNDROME. An aunt is second-degree — ask about the rest of the tree"
+   ],
+   [
+    "THE SYMPTOMS OF ANAEMIA AND OBSTRUCTION",
+    "TIREDNESS, BREATHLESSNESS, DIZZINESS — iron deficiency from occult loss. And COLICKY PAIN, DISTENSION, VOMITING, NOT PASSING WIND — impending obstruction, which turns an urgent referral into an emergency"
+   ],
+   [
+    "THE EXAMINATION",
+    "Pallor · weight · ABDOMINAL MASS · HEPATOMEGALY from metastases · lymphadenopathy including the LEFT SUPRACLAVICULAR NODE · DIGITAL RECTAL EXAMINATION WITH CONSENT AND A CHAPERONE — A LOW RECTAL CANCER CAN BE FELT"
+   ],
+   [
+    "THE COMMUNICATION CHALLENGE",
+    "He came in believing he was cleared. YOU HAVE TO RAISE THE POSSIBILITY OF CANCER WITHOUT DISMISSING WHAT HE DID RIGHT, AND WITHOUT SOFTENING IT INTO SOMETHING HE CAN DEFER. Warning shot, the word, the reason, the plan"
+   ]
+  ],
+  "findingsLabel": "Version E — four alarm features, and a normal screening test that means nothing",
+  "must": [
+   "FAIL — Accepting 'my screening test was normal' as reassurance in a symptomatic patient.",
+   "FAIL — Attributing the bleeding to haemorrhoids without a colonoscopy.",
+   "FAIL — Labelling it irritable bowel syndrome at 60 with weight loss and bleeding.",
+   "FAIL — Never qualifying whether the weight loss was intentional.",
+   "ASK — Was the weight loss on purpose?",
+   "ASK — Which relative had bowel cancer, at what age, and any other cancers in the family?"
+  ],
   "back": {
-   "dx": "Suspected colorectal cancer — age 60, persistent change in bowel habit (alternating), 5 kg unintentional weight loss, rectal bleeding, family history (aunt); a normal FOBT last year does not apply because he now has symptoms (screening ≠ diagnosis; FOBT sensitivity for cancer ~70–80%, less for polyps). Urgent colonoscopy is the investigation; bloods for iron-deficiency anaemia. Haemorrhoids may co-exist and must not be accepted as the explanation. Break the concern honestly: 'I am concerned about the possibility of a bowel cancer' — concerned, not certain; the test gives the answer within weeks.",
+   "dx": [
+    "**SUSPECTED COLORECTAL CANCER until proven otherwise — AGE 60, A PERSISTENT CHANGE IN BOWEL HABIT, 5 kg OF UNINTENTIONAL WEIGHT LOSS, RECTAL BLEEDING, AND A FAMILY HISTORY.** **This warrants URGENT COLONOSCOPY, NOT REPEAT SCREENING.**",
+    "**THE DISCRIMINATING ISSUE: CORRECTING THE SCREENING MISCONCEPTION WITHOUT DISMISSING IT. SCREENING IS FOR THE ASYMPTOMATIC; SYMPTOMS GO STRAIGHT TO COLONOSCOPY. Say the sentence: 'SCREENING IS FOR PEOPLE WITHOUT SYMPTOMS. YOU HAVE SYMPTOMS.'**",
+    "**THE FULL SCRIPT: 'Ron, I'm glad you mentioned the screening test — IT IS GOOD THAT YOU DID IT. But I want to explain why it doesn't settle this. Screening tests are designed for people with NO SYMPTOMS; they look for problems BEFORE THEY CAUSE TROUBLE. You have symptoms — A CHANGE IN YOUR BOWEL HABIT, WEIGHT LOSS YOU DIDN'T INTEND, AND SOME BLEEDING. In someone with symptoms, WE GO STRAIGHT TO LOOKING DIRECTLY, WITH A CAMERA TEST. A normal kit last year DOESN'T CHANGE THAT.'**",
+    "**THEN NAME THE CONCERN, WITH A WARNING SHOT: 'Ron, I need to be honest with you about why I want this done quickly. I AM CONCERNED ABOUT THE POSSIBILITY OF A BOWEL CANCER. I'm not saying you have one — BUT THESE SYMPTOMS TOGETHER ARE EXACTLY THE ONES WE DON'T WAIT ON.'** **Then the five reasons: age · persistent change in habit · unintentional weight loss · bleeding · family history.**",
+    "**WHY A NORMAL FOBT DOES NOT EXCLUDE CANCER: tumours BLEED INTERMITTENTLY, so a single immunochemical test can be negative; A LESION CAN DEVELOP IN THE INTERVAL; and PROXIMAL CANCERS MAY BLEED LESS DETECTABLY. THE TEST IS VALIDATED AS A POPULATION SCREEN, NOT AS A DIAGNOSTIC TEST FOR SYMPTOMS.**",
+    "**ALTERNATING CONSTIPATION AND DIARRHOEA IS A CLASSIC LEFT-SIDED PATTERN — a narrowing lumen causes constipation, then liquid stool leaks past it. RIGHT-SIDED CANCERS more often present with IRON-DEFICIENCY ANAEMIA AND FATIGUE and few bowel symptoms. RECTAL CANCER gives BLEEDING, TENESMUS AND A SENSE OF INCOMPLETE EMPTYING.**",
+    "**IBS IS NOT THE ANSWER: a positive diagnosis ONLY in the absence of alarm features, AND GENERALLY UNDER 50. He has FOUR ALARM FEATURES AND IS 60. Say the exclusion criteria aloud.** **And NEVER ATTRIBUTE RECTAL BLEEDING TO HAEMORRHOIDS IN A 60-YEAR-OLD WITHOUT A COLONOSCOPY — haemorrhoids and cancer COEXIST.**",
+    "**THE FAMILY HISTORY MAY MATTER BEYOND HIM: a FIRST-DEGREE RELATIVE diagnosed UNDER 55, TWO OR MORE RELATIVES on the same side, or associated ENDOMETRIAL, OVARIAN OR GASTRIC CANCERS raise LYNCH SYNDROME — refer to FAMILIAL CANCER SERVICES, and his own children may need earlier colonoscopic surveillance.**",
+    "**MANAGEMENT: FBC AND IRON STUDIES · UEC, LFT · URGENT COLONOSCOPY WITH BIOPSY · STAGING CT CHEST, ABDOMEN AND PELVIS once confirmed · CEA AS A BASELINE for monitoring, NOT AS A DIAGNOSTIC TEST · MRI PELVIS for rectal cancer staging · MULTIDISCIPLINARY MANAGEMENT — surgery, with chemotherapy or radiotherapy according to stage.**",
+    "**SAFETY-NET: impending OBSTRUCTION — colicky pain, distension, vomiting, not passing wind — or HEAVY BLEEDING, DIZZINESS OR FAINTING means THE EMERGENCY DEPARTMENT, NOT THE WAITING LIST.** **SA: urgent colonoscopy referral, usually through TQEH for Yorke Peninsula, with PATS for travel; Cancer Council 13 11 20 for support.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Intro, open · concerns → cancer fear/'screening was normal' → acknowledge, promise to address it"
+     "**WIPE, open question, and let him tell the story — including the screening test. DO NOT CORRECT IT YET.**"
     ],
     [
-     "0:45",
-     "Habit: what's changed and since when (months) · alternating pattern · frequency, consistency, ★ narrower stools · ★ tenesmus/feeling of incomplete emptying · urgency · nocturnal"
+     "0:30",
+     "**THE BOWEL HABIT: WHAT IS NORMAL FOR YOU · WHEN DID IT CHANGE · HOW OFTEN NOW · ALTERNATING — HOW LONG EACH PHASE · any urgency · any SENSE OF INCOMPLETE EMPTYING · has the SHAPE OF THE STOOL changed?**"
     ],
     [
-     "1:45",
-     "★ Bleeding: bright red or dark, on the paper/surface or mixed in, with mucus, how often, clots · perianal pain, lump, itch (haemorrhoids/fissure — note but don't stop)"
+     "1:10",
+     "**THE BLEEDING: BRIGHT RED ON THE PAPER, OR MIXED IN WITH THE STOOL · dark or clots · HOW OFTEN · ANY MUCUS?**"
     ],
     [
-     "2:30",
-     "★ Weight loss (5 kg, unintended, over how long), appetite, fatigue, breathlessness/dizziness (anaemia), fever/sweats · abdominal pain, bloating, ★ vomiting/distension/absolute constipation (obstruction)"
+     "1:35",
+     "**THE WEIGHT: HOW MUCH, OVER HOW LONG — AND WAS IT ON PURPOSE? · appetite · energy.**"
     ],
     [
-     "3:30",
-     "★ FHx: who (aunt), age at diagnosis, other relatives, polyps, endometrial/ovarian/gastric cancers (Lynch) · ★ previous colonoscopy/polyps · ★ 'tell me about the screening test — what was it, when?' (FOBT last year, normal) · IBD, NSAIDs, anticoagulants (bleeding), diabetes · smoking, alcohol, diet, exercise · PMHx, meds, allergies · summarise"
+     "1:55",
+     "**ANAEMIA: TIRED · BREATHLESS ON EXERTION · DIZZY. OBSTRUCTION: COLICKY PAIN · SWELLING · VOMITING · STILL PASSING WIND?**"
     ],
     [
-     "5:00",
-     "Examiner: appearance, ★ pallor, weight/BMI · ★ lymphadenopathy incl left supraclavicular · abdomen — distension, ★ mass, hepatomegaly, tenderness · ★ DRE — mass, blood on the glove, stool colour · dipstick"
+     "2:25",
+     "**OTHER SYMPTOMS: abdominal pain, where · NIGHT SWEATS · any lumps · jaundice or itch · bone pain · cough.**"
     ],
     [
-     "6:00",
-     "★ 'Ron, I am concerned about the possibility of a bowel cancer. Six things make me say that: your age; a change in bowel habit that has persisted; five kilos of weight loss you didn't intend; bleeding from the back passage; a family history; and — importantly — the screening test doesn't apply here: screening is for people without symptoms, and you have symptoms.' · 'concerned, not certain — the test will tell us, and most bowel cancers found this way are treatable' · DDx: inflammatory bowel disease, diverticular disease, polyps, haemorrhoids/fissure (may co-exist — not the whole explanation), infection; IBS is not a diagnosis at 60 with red flags"
+     "2:50",
+     "**THE FAMILY HISTORY IN DETAIL: WHICH RELATIVE · WHAT AGE AT DIAGNOSIS · ANY OTHER BOWEL CANCER IN THE FAMILY · ANY WOMB, OVARIAN OR STOMACH CANCER?**"
     ],
     [
-     "7:00",
-     "Plan: bloods today — FBE, iron studies, UEC, LFT, CEA · ★ urgent colonoscopy referral (Category 1, within 30 days VERIFY) — 'a camera test of the whole bowel with biopsies'; CT colonography if colonoscopy not possible; CT abdomen/pelvis for staging once diagnosed; ★ not another FOBT · safety-net: obstruction symptoms, heavy bleeding, faint → ED · family: first-degree relatives' screening; support (Cancer Council 13 11 20); review with results; PATS for travel"
+     "3:20",
+     "**THE SCREENING TEST — CLARIFY IT: when, WHICH TEST — the mailed kit · the result · ANY PREVIOUS COLONOSCOPY?**"
+    ],
+    [
+     "3:40",
+     "**PAST HISTORY: polyps, IBD, previous cancers · MEDICATIONS — iron, anticoagulants, NSAIDs, aspirin · SMOKING, ALCOHOL, diet, activity.**"
+    ],
+    [
+     "4:10",
+     "**A one-line summary back, and ask what he thinks is going on — THIS IS WHERE HIS CONCERN, OR HIS FALSE REASSURANCE, SURFACES.**"
+    ],
+    [
+     "4:30",
+     "**EXAMINATION BY NAME: general appearance, PALLOR, weight · hands · LYMPH NODES INCLUDING THE LEFT SUPRACLAVICULAR · abdomen — MASS, HEPATOMEGALY, ASCITES, TENDERNESS · DIGITAL RECTAL EXAMINATION WITH CONSENT AND A CHAPERONE — MASS, BLOOD, MELAENA · urine dipstick.**"
+    ],
+    [
+     "5:30",
+     "**CORRECT THE SCREENING MISCONCEPTION — acknowledge, explain, and 'screening is for people without symptoms; you have symptoms.'**"
+    ],
+    [
+     "6:10",
+     "**WARNING SHOT, THEN THE WORD: 'I am concerned about the possibility of a bowel cancer.' Then the five reasons.**"
+    ],
+    [
+     "6:50",
+     "**THE DIFFERENTIALS: diverticular disease · IBD · polyps · haemorrhoids — AND WHY NONE OF THEM CAN BE ASSUMED WITHOUT A COLONOSCOPY · IBS — EXCLUDED BY AGE AND ALARM FEATURES.**"
+    ],
+    [
+     "7:20",
+     "**THE PLAN: FBC, IRON STUDIES, UEC, LFT TODAY · URGENT COLONOSCOPY · staging if confirmed · CEA baseline · PATS for travel · SAFETY-NET for obstruction or heavy bleeding · and 'IF THE FAMILY HISTORY IS STRONGER THAN WE THINK, YOUR CHILDREN MAY NEED EARLIER TESTING TOO.'** Then **pause for his reaction and questions.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Have your motions become narrower? Do you get the feeling you haven't finished — needing to go again straight after?' / ★ 'Is the blood bright red or dark? Is it on the paper, on the surface, or mixed in with the motion? Any mucus?'",
-    "★ 'Who in the family had bowel cancer, and how old were they when it was found? Anyone else — polyps, or cancers of the womb or stomach?' / ★ 'Tell me about the screening test — what was it, and when?'",
-    "★ To examiner: 'pallor; lymph nodes including the left supraclavicular fossa; abdominal mass or enlarged liver; and a rectal examination — any mass, and blood on the glove.'",
-    "★ 'Ron, I am concerned about the possibility of a bowel cancer — concerned, not certain. Your age, a persistent change in bowel habit, five kilos of unintentional weight loss, rectal bleeding, a family history — and screening does not apply, because you have symptoms.' / ★ 'Screening is for people without symptoms. You have symptoms.'",
-    "'The test that answers this is a colonoscopy — a camera examination of the whole bowel with small biopsies — and I'm referring you as urgent, which means within about a month. I'll also check your blood count and iron today. Most bowel cancers found this way are treatable, and the sooner we look the better the options.' / 'If you develop vomiting, can't pass wind, severe pain, heavy bleeding, or feel faint — go to the emergency department.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): Ron, 60; months of alternating constipation/diarrhoea, 5 kg unintended loss, some rectal bleeding, aunt with bowel cancer; insists 'my screening test last year was normal'",
-    "Findings to expect: ± pallor, ± abdominal mass/hepatomegaly, DRE ± rectal mass or blood; FBE — iron-deficiency anaemia",
-    "Red flags for CRC: age ≥50 (younger with FHx), change in habit >6 wk, rectal bleeding, iron-deficiency anaemia, weight loss, abdominal/rectal mass, tenesmus. Referral: Category 1 colonoscopy within 30 days for suspected cancer VERIFY (Cancer Council Optimal Care Pathway). National Bowel Cancer Screening Program: iFOBT every 2 years 45–74 (from 2024) VERIFY; sensitivity for cancer ~70–80%, positive predictive value low — a negative test does not exclude cancer, and symptomatic patients need colonoscopy regardless. Family history categories: one first-degree relative >55 = slightly above average (screen from 45); first-degree <55 or two relatives → colonoscopy every 5 years from 40 or 10 y before youngest VERIFY; aunt = second-degree",
-    "Investigations: FBE, iron studies, UEC, LFT, CEA (baseline, not diagnostic), colonoscopy + biopsy; staging CT chest/abdo/pelvis; MRI rectum for rectal cancer; MDT. Lynch syndrome clues: young onset, endometrial/ovarian/gastric/urothelial cancers in the family",
-    "SA: Cancer Council SA 13 11 20 · PATS for travel to colonoscopy/oncology · Bowel Cancer Australia · TIS 131 450",
-    "Investigations — FBE, iron studies, UEC, LFT, CEA (baseline, not diagnostic), colonoscopy + biopsy; staging CT chest/abdo/pelvis; MRI rectum for rectal cancer; MDT. Lynch syndrome clues: young onset, endometrial/ovarian/gastric/urothelial cancers in the family",
-    "SA — Cancer Council SA 13 11 20 · PATS for travel to colonoscopy/oncology · Bowel Cancer Australia · TIS 131 450"
+    "**Investigations: FBC AND IRON STUDIES — iron deficiency supports occult blood loss · UEC, LFT · URGENT COLONOSCOPY WITH BIOPSY — THE DIAGNOSTIC TEST · STAGING CT CHEST, ABDOMEN AND PELVIS once confirmed · MRI PELVIS for rectal cancer · CEA AS A BASELINE FOR MONITORING, NOT FOR DIAGNOSIS.**",
+    "**If colonoscopy is incomplete or delayed: CT COLONOGRAPHY as an alternative. DO NOT REPEAT A FAECAL OCCULT BLOOD TEST IN A SYMPTOMATIC PATIENT — it cannot exclude cancer and only delays the diagnosis.**",
+    "**Management: URGENT REFERRAL · MULTIDISCIPLINARY TEAM — surgery, with CHEMOTHERAPY OR RADIOTHERAPY according to stage; neoadjuvant chemoradiotherapy is common for rectal cancer · STOMA COUNSELLING where relevant · PSYCHOSOCIAL SUPPORT from the start.**",
+    "**Family: if the pattern suggests hereditary risk — first-degree relative under 55, multiple relatives, associated Lynch cancers — refer to FAMILIAL CANCER SERVICES; MISMATCH-REPAIR TESTING OF THE TUMOUR is now routine and can flag Lynch syndrome.**",
+    "**Do not miss: IMPENDING OBSTRUCTION — colicky pain, distension, vomiting, absolute constipation — an EMERGENCY · PERFORATION · SIGNIFICANT ANAEMIA needing transfusion · LIVER METASTASES — hepatomegaly, jaundice · A SYNCHRONOUS SECOND TUMOUR, which is why the whole colon is examined.**",
+    "**Avoid: ACCEPTING THE NORMAL SCREENING TEST · REPEATING THE FOBT · attributing bleeding to haemorrhoids without colonoscopy · labelling IBS at 60 with alarm features · ordering CEA as a diagnostic test · delivering the word 'cancer' without a warning shot, or so softly that he defers the colonoscopy.**",
+    "**Australia: the NATIONAL BOWEL CANCER SCREENING PROGRAM offers a free immunochemical FOBT EVERY TWO YEARS FROM 45 TO 74 — FOR ASYMPTOMATIC PEOPLE. SA: urgent colonoscopy through TQEH for Yorke Peninsula, PATS for travel, Country Health Connect, CANCER COUNCIL 13 11 20, TIS National 131 450.** VERIFY."
    ],
-   "fails": [
-    "★ Accepting the normal FOBT as reassurance or ordering another one",
-    "Attributing the bleeding to haemorrhoids without characterising it; not asking weight loss intent, tenesmus, stool calibre",
-    "No DRE; no pallor/lymph node/liver examination",
-    "Not naming cancer as the concern, or naming it as a certainty; no urgent colonoscopy pathway; no anaemia bloods",
-    "No family history detail (age at diagnosis, other cancers); no safety-net for obstruction/bleeding"
-   ],
-   "numbers": [
-    "Six reasons: age 60 · persistent habit change · 5 kg unintended loss · rectal bleeding · FHx · symptoms ≠ screening",
-    "Category 1 colonoscopy within 30 d VERIFY · iFOBT 45–74 every 2 y VERIFY, sensitivity ~70–80% · CEA baseline only",
-    "Cancer Council 13 11 20 · PATS · TIS 131 450"
+   "ddx": [
+    [
+     "**Colorectal cancer** — the concern",
+     "**AGE 60, ALTERNATING HABIT, 5 kg UNINTENTIONAL LOSS, RECTAL BLEEDING, FAMILY HISTORY**",
+     "**'Was the weight loss intentional?'; DRE; pallor; mass; hepatomegaly**",
+     "**URGENT COLONOSCOPY; staging CT; CEA baseline. SCREENING DOES NOT APPLY** — URGENT"
+    ],
+    [
+     "**Diverticular disease**",
+     "Altered habit, left iliac fossa pain, bleeding — **common at 60**",
+     "Previous episodes; LIF tenderness",
+     "**Colonoscopy — cannot be assumed without excluding cancer**"
+    ],
+    [
+     "**Inflammatory bowel disease**",
+     "Diarrhoea, blood, mucus, urgency, weight loss",
+     "Extraintestinal features; nocturnal symptoms",
+     "Faecal calprotectin; colonoscopy with biopsies"
+    ],
+    [
+     "**Adenomatous polyps**",
+     "Bleeding, sometimes altered habit",
+     "Previous polyps; family history",
+     "Colonoscopy with polypectomy"
+    ],
+    [
+     "**Haemorrhoids — never assumed**",
+     "Bright red blood on the paper, hard stools, straining",
+     "**DRE and proctoscopy**",
+     "**HAEMORRHOIDS AND CANCER COEXIST — COLONOSCOPY REGARDLESS at 60 with alarm features**"
+    ],
+    [
+     "**Irritable bowel syndrome — excluded**",
+     "Alternating habit, bloating",
+     "**AGE OVER 50, WEIGHT LOSS AND BLEEDING ALL EXCLUDE IT**",
+     "**Say the exclusion criteria aloud**"
+    ],
+    [
+     "Ischaemic colitis",
+     "Crampy left-sided pain with bloody diarrhoea, vascular risk factors",
+     "Acute onset, AF, vascular disease",
+     "CT; colonoscopy once settled"
+    ],
+    [
+     "Anal fissure",
+     "**Pain on defaecation** with bright red blood",
+     "Painful DRE; visible fissure",
+     "Topical treatment — **but still colonoscopy with these alarm features**"
+    ],
+    [
+     "**Lynch syndrome and hereditary risk**",
+     "**First-degree relative under 55, multiple relatives, endometrial, ovarian or gastric cancers**",
+     "**The detailed family tree**",
+     "**Familial cancer services; mismatch-repair testing; earlier surveillance for relatives**"
+    ],
+    [
+     "**Impending large bowel obstruction**",
+     "**Colicky pain, distension, vomiting, not passing wind**",
+     "The four obstruction questions",
+     "**EMERGENCY DEPARTMENT — AXR, CT, surgical review** — EMERGENCY"
+    ]
    ]
   },
   "source": "Young_Chronic_Abdomen_2_Case_Tasks_Script_Notability.pdf Version E (Ron Falzon, 60, altered habit, weight loss, rectal bleeding, family history, 'screening was normal' — suspected colorectal cancer; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Mid GI › Young_Chronic_Abdomen_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Findings to expect",
-    "± pallor, ± abdominal mass/hepatomegaly, DRE ± rectal mass or blood; FBE — iron-deficiency anaemia"
-   ]
-  ],
-  "findingsLabel": "Examiner stage — findings, investigations and what to say · open when you would ask",
-  "must": [
-   "FAIL — Accepting the normal FOBT as reassurance, or ordering another one — 'screening is for people without symptoms; you have symptoms' — age 60, a persistent change in habit, five kilos unintended, rectal bleeding, a family history; a colonoscopy is the investigation, not a repeat screening test (★)",
-   "FAIL — Not saying the word — 'Ron, I am concerned about the possibility of a bowel cancer'; a warning shot, then the reasons, then what happens next; soft language that never names it fails the diagnostic task",
-   "DO — Habit: what's changed and since when (months), the alternating pattern, frequency, consistency, narrower stools, tenesmus and incomplete emptying; bleeding: bright red or dark, on the paper or mixed in, with mucus, how often, clots; perianal pain or lump (haemorrhoids are a diagnosis of exclusion at 60)",
-   "DO — Weight loss (5 kg, unintended, over how long), appetite, fatigue, breathlessness or dizziness (anaemia), fever, sweats; family history — who (aunt), age at diagnosis, other relatives, polyps, endometrial, ovarian or gastric cancers (Lynch); previous colonoscopy or polyps; smoking, alcohol, diet, IBD",
-   "DO — Examiner: appearance, pallor, weight and BMI; lymphadenopathy including the left supraclavicular node; abdomen — distension, mass, hepatomegaly, ascites; rectal examination for a mass and blood; dipstick, glucose",
-   "DO — Plan: FBE and iron studies, LFT, CEA is not a diagnostic test; urgent colonoscopy referral (category 1); CT if a mass is found; explain the differentials honestly — polyp, diverticular disease, IBD, haemorrhoids — 'but with your age and these symptoms, cancer has to be excluded first'; safety-net for heavy bleeding, obstruction symptoms; offer to involve family; expect the pushback 'but my screening was normal' and answer it once"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-125",
