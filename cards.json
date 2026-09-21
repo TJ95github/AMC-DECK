@@ -27299,9 +27299,8 @@
  {
   "id": "MED-106",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version E of the recurrent-falls spine (reconstructed stem, older-person Part 2 §7). Examiner: no postural drop; CVS, MSK, neuro normal; ★ urine dipstick positive for GLUCOSE. Fourth task asks for ONE investigation — HbA1c (or an office capillary glucose if they mean a bedside test).",
   "stem": [
    "A 72-year-old woman has come to see you about recurrent falls. She has hypertension on a 'fluid tablet' and was diagnosed with polymyalgia rheumatica six months ago, taking prednisolone as prescribed under specialist follow-up. She gets up at night to pass urine. Observations are normal."
   ],
@@ -27311,103 +27310,215 @@
    "Explain your diagnosis and differential diagnoses to the patient",
    "Name the one investigation you would order"
   ],
-  "time": "8 minutes. Same spine: WIPE, concern · ★ LOC/seizure screen · each fall, context, injury, long lie · organic screen · ★ PMHx ×4 per condition: hypertension (diuretic — name, timing) · ★ PMR (when, prednisolone dose, adherence, taper, specialist; ★ complications: 'steroids push the sugar up' — thirst, polyuria, weight; ★ GCA screen: new headache, scalp tenderness, jaw pain chewing, visual change) · shoulder/hip stiffness now · six domains → ★ nocturia in the dark · social/driving → PEFE (postural BP, LL neuro, fundi/acuity, MSK shoulders/hips, gait, ★ dipstick) → ★ four numbered causes → HbA1c.",
+  "findings": [
+   [
+    "FOUR TASKS — the fourth is one named investigation",
+    "History · examination findings · diagnosis and differentials · AND ONE INVESTIGATION. Budget for it: running out of time before the fourth task loses a whole domain"
+   ],
+   [
+    "The examination card",
+    "NO POSTURAL DROP · CARDIOVASCULAR NORMAL · MUSCULOSKELETAL NORMAL · NEUROLOGICAL NORMAL · URINE DIPSTICK POSITIVE FOR GLUCOSE. ONE POSITIVE ON THE WHOLE CARD, AND IT IS THE DIPSTICK"
+   ],
+   [
+    "What she gives you",
+    "'I'VE GOT HIGH BLOOD PRESSURE, ON A FLUID TABLET' · 'I WAS DIAGNOSED WITH POLYMYALGIA RHEUMATICA SIX MONTHS AGO AND I TAKE STEROIDS — YES, I TAKE THEM PROPERLY, AND I SEE THE SPECIALIST' · 'NO SHOULDER OR HIP PAIN AT THE MOMENT' · 'I DO GET UP AT NIGHT TO PASS URINE'"
+   ],
+   [
+    "THE GLYCOSURIA HAS TWO READINGS",
+    "IT CAN MEAN DIABETES, OR IT CAN BE A SIDE EFFECT OF THE STEROID — STEROIDS PUSH THE SUGAR UP. Either way, OVER TIME HIGH SUGARS AFFECT THE EYES AND THE NERVES IN THE LEGS, AND BOTH OF THOSE CAUSE FALLS. Her examination is clear TODAY, which is good, BUT YOU STILL TEST FOR IT"
+   ],
+   [
+    "THE DISCRIMINATOR NOBODY VOLUNTEERS",
+    "POLYMYALGIA RHEUMATICA IS ASSOCIATED WITH GIANT CELL ARTERITIS. ASK BY NAME: ANY NEW HEADACHE · ANY SCALP TENDERNESS WHEN YOU BRUSH YOUR HAIR · ANY JAW ACHE WHEN CHEWING · ANY LOSS OR BLURRING OF VISION. Then SAFETY-NET THEM: 'RING ME THE SAME DAY IF ANY OF THOSE START'"
+   ],
+   [
+    "PMR AFFECTS FALLS EVEN WITHOUT CURRENT PAIN",
+    "POLYMYALGIA CAUSES STIFFNESS AND PAIN IN THE HIPS AND SHOULDERS, WHICH MAKES WALKING LESS STEADY AND RISING FROM A CHAIR HARDER. 'No pain at the moment' on treatment DOES NOT DELETE THE MECHANISM"
+   ],
+   [
+    "THE THIAZIDE STAYS ON THE LIST",
+    "'YOUR FLUID TABLET CAN DROP YOUR BLOOD PRESSURE WHEN YOU STAND. IT MEASURED NORMALLY TODAY, BUT THAT DROP COMES AND GOES, SO IT STAYS ON THE LIST.' Assert it WITH the reason, never without"
+   ],
+   [
+    "THE FOURTH CAUSE IS THE SITUATION",
+    "SHE IS GETTING UP AT NIGHT TO PASS URINE, IN THE DARK, STILL HALF ASLEEP. THAT ALONE CAUSES FALLS — and it is the easiest of the four to fix. Nocturia on a diuretic is a mechanism, not a detail"
+   ],
+   [
+    "THE STEROID HAS A SECOND FALLS CONSEQUENCE",
+    "LONG-TERM CORTICOSTEROIDS CAUSE PROXIMAL MYOPATHY AND ACCELERATE BONE LOSS. A FALLER ON SIX MONTHS OF PREDNISOLONE NEEDS BONE PROTECTION ASSESSED, NOT JUST A FALLS PLAN"
+   ],
+   [
+    "The trap in the explanation",
+    "CALLING THE WHOLE CASE 'A SIDE EFFECT OF STEROIDS' AND STOPPING. BUILD THE LIST FROM THE HISTORY INSTEAD — four causes, each tied to something she told you"
+   ]
+  ],
+  "findingsLabel": "Version E — one positive on the card, and the association nobody volunteers",
+  "must": [
+   "FAIL — Calling the whole case a steroid side effect and stopping there.",
+   "FAIL — Missing that PMR is associated with giant cell arteritis.",
+   "FAIL — Going quiet because the examination is normal apart from the dipstick.",
+   "FAIL — Running out of time and never naming the one investigation.",
+   "ASK — Any new headache, scalp tenderness, or jaw ache when chewing?",
+   "ASK — Any loss or blurring of your vision?"
+  ],
   "back": {
-   "dx": "Multifactorial falls in a woman on a diuretic and prednisolone for PMR: (1) diuretic → intermittent postural hypotension (normal today, stays on the list); (2) ★ glycosuria — steroid-induced hyperglycaemia or new diabetes → over time retinopathy and neuropathy, both fall risks; examination clear today, test for it; (3) PMR itself — proximal stiffness and pain in hips/shoulders makes walking less steady; ★ PMR is linked to giant cell arteritis — ask headache, scalp tenderness, jaw claudication, visual loss and safety-net same-day; (4) nocturia in the dark, half asleep (diuretic timing + osmotic diuresis). One investigation: HbA1c (average sugar over 3 months); if the task means a bedside test → random capillary glucose now, then fasting glucose/HbA1c.",
+   "dx": [
+    "**MULTIFACTORIAL RECURRENT FALLS. FOUR CAUSES: THIAZIDE-RELATED POSTURAL HYPOTENSION · STEROID-INDUCED HYPERGLYCAEMIA OR NEW DIABETES · PMR HIP AND SHOULDER STIFFNESS, WITH THE GIANT CELL ARTERITIS VISUAL RISK ALONGSIDE IT · AND NOCTURIA IN THE DARK.**",
+    "**THE DISCRIMINATING ISSUE: HAVING SOMETHING TO SAY WHEN THERE IS ALMOST NOTHING POSITIVE. BUILD THE LIST FROM THE HISTORY, NOT FROM THE CARD.**",
+    "**THE SECOND DISCRIMINATOR: POLYMYALGIA RHEUMATICA IS ASSOCIATED WITH GIANT CELL ARTERITIS. MENTIONING HEADACHE, JAW CLAUDICATION AND VISUAL LOSS — AND SAFETY-NETTING THEM — IS WHAT SEPARATES THIS ANSWER.**",
+    "**THE SCRIPT: 'there ISN'T ONE SINGLE ANSWER HERE, so let me tell you THE THINGS THAT ADD UP. ONE: your FLUID TABLET CAN DROP YOUR BLOOD PRESSURE WHEN YOU STAND. It measured normally today, BUT THAT DROP COMES AND GOES, SO IT STAYS ON THE LIST.'**",
+    "**'TWO: there's SUGAR IN YOUR URINE. That can mean DIABETES, or it can be A SIDE EFFECT OF THE STEROID — STEROIDS PUSH THE SUGAR UP. Over time HIGH SUGARS AFFECT THE EYES AND THE NERVES IN THE LEGS, and BOTH OF THOSE CAUSE FALLS. Your examination is clear today, which is good, BUT I WANT TO TEST FOR IT.'**",
+    "**'THREE: POLYMYALGIA RHEUMATICA CAUSES STIFFNESS AND PAIN IN THE HIPS AND SHOULDERS, WHICH MAKES WALKING LESS STEADY. IT IS ALSO LINKED TO A CONDITION THAT CAN AFFECT THE VISION, so I ALWAYS ASK ABOUT NEW HEADACHES, SCALP TENDERNESS AND JAW PAIN WHEN CHEWING — AND I WANT YOU TO RING ME THE SAME DAY IF ANY OF THOSE START.'**",
+    "**'FOUR: you're GETTING UP AT NIGHT TO PASS URINE, IN THE DARK, STILL HALF ASLEEP. THAT ALONE CAUSES FALLS' — and it is the easiest of the four to fix.**",
+    "**THE FOURTH TASK, ANSWERED PRECISELY: 'the one investigation I would do is an HbA1c, which tells us THE AVERAGE BLOOD SUGAR OVER THE LAST THREE MONTHS. If the task means AN OFFICE TEST rather than a formal investigation, then A RANDOM CAPILLARY BLOOD GLUCOSE HERE IN THE CLINIC, and I'd follow it with A FASTING GLUCOSE OR HbA1c.'**",
+    "**THE STEROID HAS A SECOND FALLS CONSEQUENCE NOBODY MENTIONS: LONG-TERM CORTICOSTEROIDS CAUSE PROXIMAL MYOPATHY AND ACCELERATE BONE LOSS. A faller on six months of prednisolone needs BONE PROTECTION ASSESSED — DXA, CALCIUM AND VITAMIN D, AND ANTIRESORPTIVE THERAPY WHERE INDICATED.**",
+    "**THIAZIDES ALSO CAUSE HYPONATRAEMIA — check UEC. A LOW SODIUM IS ITS OWN FALLS MECHANISM and is easy to miss when the conversation is about the sugar.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, acknowledge, signpost · concern"
+     "**Say the observations out loud, WIPE, open question, acknowledge.** Then **SIGNPOST and ask the agenda question.** **Budget from the start: FOUR TASKS, so history closes at 4 minutes 30.**"
     ],
     [
-     "0:45",
-     "★ LOC, floor, seizure screen → falls · each fall, context (night? on standing?), warning · injury, long lie"
+     "0:40",
+     "**FALL OR FAINT: did you BLACK OUT, EVEN FOR A SECOND · do you REMEMBER HITTING THE GROUND · any SHAKING OR JERKING, TONGUE BITING, WETTING YOURSELF?**"
     ],
     [
-     "1:45",
-     "Organic screen: weakness, numbness, speech, vision (blur), vertigo · CVS · GI · meals · ★ thirst, polyuria, weight change"
+     "1:00",
+     "**CHARACTERISE: HOW MANY AND WHEN · TALK ME THROUGH EACH ONE, what were you doing · DID ANY HAPPEN AS YOU STOOD UP, OR AT NIGHT · any WARNING · DID YOU HURT YOURSELF · COULD YOU GET YOURSELF UP?**"
     ],
     [
-     "2:30",
-     "★ PMHx ×4 per condition — hypertension: when, which fluid tablet, dose, ★ when taken, adherence, follow-up, complications · PMR: when, prednisolone dose and taper, adherence, specialist, ★ 'any headaches, tenderness of the scalp, pain in the jaw when chewing, any change in your vision?' · current shoulder/hip stiffness · bone protection?"
+     "1:30",
+     "**ORGANIC SCREEN: NUMBNESS OR PINS AND NEEDLES IN THE LEGS · weakness · slurred speech · TROUBLE WITH VISION · headache · SPINNING · chest pain, palpitations, breathlessness · vomiting, diarrhoea, black or bloody motions · EATING REGULARLY?**"
+    ],
+    [
+     "2:00",
+     "**PAST HISTORY, THE FOUR QUESTIONS for the hypertension and the PMR: WHEN DIAGNOSED · WHAT TREATMENT · TAKING IT AS PRESCRIBED · REGULAR FOLLOW-UP?**"
+    ],
+    [
+     "2:20",
+     "**THE PMR COMPLICATIONS, WHICH ARE THE DISCRIMINATOR: any HIP OR SHOULDER PAIN OR STIFFNESS NOW, especially in the MORNING · ANY NEW HEADACHE · ANY SCALP TENDERNESS WHEN YOU BRUSH YOUR HAIR · ANY JAW ACHE WHEN CHEWING · ANY LOSS OR BLURRING OF YOUR VISION?**"
+    ],
+    [
+     "2:45",
+     "**THE STEROID QUESTIONS: what dose, and HAS IT BEEN CHANGING · any WEIGHT GAIN, THIRST, PASSING MORE URINE · any BRUISING OR THIN SKIN · have you had a BONE DENSITY SCAN OR CALCIUM AND VITAMIN D?**"
+    ],
+    [
+     "3:05",
+     "**MEDICATIONS, WITH THE CATEGORIES NAMED: anything for SLEEP, for PAIN, or FROM THE CHEMIST · and allergies.**"
+    ],
+    [
+     "3:20",
+     "**THE SIX RISK DOMAINS IN ORDER. HOME: rugs, cords, steps, LIGHTING AT NIGHT, WHERE IS THE TOILET FROM YOUR BED. URINARY: HOW MANY TIMES A NIGHT · frequency, urgency, burning, leaking · WHEN DO YOU TAKE THE FLUID TABLET?**"
     ],
     [
      "3:45",
-     "Six domains: home/lighting/toilet distance · ★ urinary — nocturia, frequency, urgency, dysuria · MSK/feet/footwear · eyes/ears · alcohol quantified, drugs · social, ADLs, memory, mood, driving, fear of falling"
+     "**MSK: joint pain, stiffness, balance, feet, WHAT SHOES INDOORS. SENSES: eyes and hearing last checked, BIFOCALS. ALCOHOL: how much and how often.**"
+    ],
+    [
+     "4:05",
+     "**GERIATRIC AND SOCIAL SCREEN: who's at home · who helps · meals · function · memory · mood · weight loss · STILL DRIVING · AFRAID TO MOVE ABOUT?**"
+    ],
+    [
+     "4:30",
+     "**HARD STOP. ASK THE EXAMINER IN ORDER: general appearance and hydration, bruising or injury · GAIT AND TIMED UP AND GO · vitals with LYING AND STANDING BP AT ONE AND THREE MINUTES and pulse rhythm · BEDSIDE GLUCOSE.**"
     ],
     [
      "5:00",
-     "PEFE: appearance (cushingoid, bruising) · gait, TUG, proximal muscle rise from chair · ★ lying/standing BP 1 and 3 min, rhythm · glucose · LL neuro incl sensation/proprioception · ★ fundi, acuity · shoulders/hips ROM · temporal arteries · CVS/resp · ★ urine dipstick → glycosuria; all else normal"
+     "**Then LOWER LIMB NEUROLOGY including VIBRATION AND PROPRIOCEPTION · VISUAL ACUITY AND FUNDOSCOPY · TEMPORAL ARTERY TENDERNESS AND PULSATILITY BY NAME, given the PMR · PROXIMAL MUSCLE POWER at hips and shoulders · cardiovascular for a MURMUR · lower limb joints and FOOTWEAR · abdomen and URINE DIPSTICK.**"
     ],
     [
-     "6:30",
-     "★ 'There isn't one single answer, so let me tell you the things that add up' → four numbered: fluid tablet/postural drop (intermittent — stays), ★ sugar in the urine — diabetes or the steroid; eyes and nerves over time → test, PMR stiffness + ★ GCA warning symptoms with same-day ring-me instruction, nocturia in the dark · ★ investigation: HbA1c (or capillary glucose now → fasting/HbA1c) · review diuretic timing (morning), night light/bottle by the bed, staged rising · do NOT stop prednisolone · physio, OT · review, red flags"
+     "5:45",
+     "**THE FRAME, THEN FOUR NUMBERED CAUSES — thiazide, sugar, PMR with the GCA warning, and the dark bathroom at night.**"
+    ],
+    [
+     "6:45",
+     "**THE ONE INVESTIGATION, ANSWERED PRECISELY — HbA1c, with the office-test alternative if that is what the task means.**"
+    ],
+    [
+     "7:00",
+     "**THE PLAN: HbA1c and UEC FOR SODIUM · review the timing or dose of the fluid tablet · BONE PROTECTION — DXA, CALCIUM AND VITAMIN D · staged rising · NIGHT LIGHT AND A CLEAR PATH TO THE TOILET · balance exercise and physiotherapy · optometry.**"
+    ],
+    [
+     "7:30",
+     "**THE GCA SAFETY-NET, SPELLED OUT AND SAME-DAY.** Then **the other red flags, a REVIEW DATE, and TEACH-BACK: 'can you tell me back the two things you'll change tonight, and the symptoms you'd ring me about?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'About the polymyalgia — how much prednisolone are you on, and are you taking it exactly as prescribed? Who's following you up? And I always ask three things with that condition: any new headaches, any tenderness of the scalp, any pain in the jaw when you chew — and any change in your vision?'",
-    "'Are you passing more urine than usual, or thirstier? Any weight change? Getting up at night — how many times, and what's the lighting like on the way?'",
-    "★ To examiner: 'lying and standing blood pressure, fundoscopy and visual acuity, lower limb sensation, shoulder and hip range of movement, and a urine dipstick.'",
-    "★ 'There isn't one single answer here, so let me tell you the things that add up. One: your fluid tablet can drop your blood pressure when you stand — it measured normally today, but that drop comes and goes, so it stays on the list. Two: there's sugar in your urine. That can mean diabetes, or it can be a side effect of the steroid — steroids push the sugar up. Over time high sugars affect the eyes and the nerves in the legs, and both of those cause falls.'",
-    "★ 'Three: polymyalgia causes stiffness and pain in the hips and shoulders, which makes walking less steady. It is also linked to a condition that can affect the vision, so I always ask about new headaches, scalp tenderness and jaw pain when chewing — and I want you to ring me the same day if any of those start. Four: you're getting up at night to pass urine, in the dark, still half asleep. That alone causes falls.'",
-    "★ 'The one investigation I would do is an HbA1c, which tells us the average blood sugar over the last three months.' / 'If the task means an office test — a random capillary blood glucose here in the clinic, followed by a fasting glucose or HbA1c.' / 'Please don't stop the prednisolone — stopping suddenly is dangerous; I'll liaise with your specialist.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 72 F, recurrent falls; 'high blood pressure, on a fluid tablet'; 'polymyalgia rheumatica six months ago, on steroids — I take them properly and see the specialist'; 'no shoulder or hip pain at the moment'; 'I do get up at night to pass urine'. Examiner: no postural drop; CVS, MSK, neuro normal; ★ dipstick glucose positive",
-    "Steroid complications to name: hyperglycaemia/diabetes, osteoporosis (bone protection, fracture on falling), myopathy (proximal weakness — another fall mechanism), cataract/glaucoma, hypertension, infection, adrenal suppression (never stop abruptly), bruising/thin skin. GCA: headache, scalp tenderness, jaw claudication, visual loss → same-day high-dose prednisolone + ESR/CRP + temporal artery biopsy VERIFY",
-    "Diabetes thresholds: HbA1c ≥6.5% (48 mmol/mol) · fasting ≥7.0 · random ≥11.1 · glycosuria = renal threshold ~10 mmol/L VERIFY · diuretic → hypokalaemia, hyponatraemia, postural drop, nocturia — give in the morning",
-    "Trap: 'it's all a side effect of the steroids' and stopping — build the list from the history. Trap: missing the PMR–GCA link and its safety-net — the discriminator. Trap: telling her to stop prednisolone",
-    "Bloods: HbA1c, UEC/Na/K, ESR/CRP, FBE, lipids · bone density if not done · OT, physio, night light, Country Health Connect",
-    "Traps: 'it's all a side effect of the steroids' and stopping there — build the list from the history. Missing the PMR–GCA link and its safety-net, which is the discriminator. Telling her to stop prednisolone. Diuretic effects to name: hypokalaemia, hyponatraemia, postural drop, nocturia — give it in the morning."
+    "**Do now: lying and standing BP at 1 and 3 minutes · BEDSIDE GLUCOSE · AN ECG IN EVERY FALLS PATIENT · URINE DIPSTICK — the only positive on the card · TEMPORAL ARTERY EXAMINATION and VISUAL ACUITY given the PMR · PROXIMAL MUSCLE POWER for steroid myopathy · injury survey.**",
+    "**THE ONE INVESTIGATION: HbA1c. If an office test is meant, A RANDOM CAPILLARY GLUCOSE, followed by A FASTING GLUCOSE OR HbA1c.**",
+    "**Then: FBE, UEC WITH SODIUM BECAUSE THIAZIDES CAUSE HYPONATRAEMIA, calcium, magnesium, phosphate, LFTs, TSH · ESR AND CRP, which are your baseline if GCA is ever suspected · VITAMIN B12 AND FOLATE and VITAMIN D · DXA BONE DENSITY, WHICH A FALLER ON SIX MONTHS OF PREDNISOLONE NEEDS REGARDLESS.**",
+    "**IF GIANT CELL ARTERITIS IS SUSPECTED AT ANY POINT: SAME-DAY ESR AND CRP AND HIGH-DOSE CORTICOSTEROID WITHOUT WAITING FOR THE RESULT, plus urgent ophthalmology and temporal artery biopsy. VISUAL LOSS IN GCA IS IRREVERSIBLE.** VERIFY doses.",
+    "**Management: review the TIMING OR DOSE OF THE THIAZIDE with staged rising and adequate fluids · manage the hyperglycaemia with the specialist who prescribes the steroid, and use the LOWEST EFFECTIVE PREDNISOLONE DOSE · BONE PROTECTION with calcium, vitamin D and antiresorptive therapy where indicated · NIGHT LIGHT, A CLEAR PATH TO THE TOILET, AND A BEDSIDE COMMODE OR URINAL for the nocturia.**",
+    "**Then the rest of the multidomain plan: BALANCE-CHALLENGING EXERCISE, THE SINGLE BEST-EVIDENCED INTERVENTION · physiotherapy gait assessment · OT HOME HAZARD ASSESSMENT · OPTOMETRY, AVOIDING BIFOCALS ON STAIRS · MY AGED CARE 1800 200 422 · REVIEW IN 1–2 WEEKS with a GP Management Plan.**",
+    "**Do not miss: GIANT CELL ARTERITIS · STEROID-INDUCED DIABETES · STEROID MYOPATHY AND BONE LOSS · HYPONATRAEMIA from the thiazide · CARDIAC SYNCOPE, so get an ECG · OSTEOPOROSIS, because THE FALLS PLAN IS ONLY HALF THE JOB.** **Avoid: blaming everything on the steroid · reassuring without a plan · stopping the prednisolone yourself · discharging without BONE HEALTH AND DRIVING.**"
    ],
-   "fails": [
-    "Calling the whole case 'a side effect of steroids' — one label; not numbering the causes",
-    "★ Missing the PMR–GCA link: no headache/scalp/jaw/vision questions, no same-day safety-net",
-    "Dismissing postural drop because today's reading is normal; not asking when the diuretic is taken",
-    "Not asking for the dipstick — the glycosuria is the finding the fourth task turns on; naming a panel instead of ONE investigation",
-    "Advising her to stop prednisolone; no home/night measures for the nocturia"
-   ],
-   "numbers": [
-    "HbA1c ≥6.5% (48 mmol/mol) · fasting ≥7.0 · random ≥11.1 · glycosuria renal threshold ~10 VERIFY",
-    "Postural drop ≥20/≥10 within 3 min (normal today) · GCA: same-day steroids, ESR/CRP, biopsy VERIFY · never abrupt prednisolone cessation",
-    "Country Health Connect · My Aged Care 1800 200 422 · MedSTAR 1300 13 12 33",
-    "Bloods to name: HbA1c, UEC with sodium and potassium, ESR/CRP, FBE, lipids · bone density if not done · OT, physio, a night light, Country Health Connect"
+   "ddx": [
+    [
+     "**Thiazide-related postural hypotension**",
+     "**A 'FLUID TABLET' for hypertension; some falls on standing**",
+     "**NO POSTURAL DROP TODAY — BUT THE DROP COMES AND GOES**",
+     "**Review timing or dose; staged rising; RECHECK AFTER ANY CHANGE** — same day"
+    ],
+    [
+     "**Steroid-induced hyperglycaemia or new diabetes**",
+     "**SIX MONTHS OF PREDNISOLONE; GLYCOSURIA ON DIPSTICK**",
+     "Thirst, polyuria, weight change; **high sugars damage THE EYES AND THE NERVES IN THE LEGS**",
+     "**HbA1c — the answer to the fourth task. Fasting glucose; random capillary glucose as an office test**"
+    ],
+    [
+     "**Giant cell arteritis — the discriminator**",
+     "**PMR IS ASSOCIATED WITH IT**",
+     "**NEW HEADACHE, SCALP TENDERNESS, JAW CLAUDICATION, VISUAL LOSS — ASK THEM BY NAME**",
+     "**SAME-DAY ESR AND CRP AND HIGH-DOSE STEROID WITHOUT WAITING; urgent ophthalmology. VISUAL LOSS IS IRREVERSIBLE** — EMERGENCY"
+    ],
+    [
+     "**PMR hip and shoulder stiffness**",
+     "**Stiffness and pain in hips and shoulders makes WALKING LESS STEADY AND RISING FROM A CHAIR HARDER**",
+     "**'No pain at the moment' on treatment DOES NOT DELETE THE MECHANISM**; proximal power, gait, Timed Up and Go",
+     "Physiotherapy, balance program, lowest effective steroid dose"
+    ],
+    [
+     "**Steroid myopathy and bone loss**",
+     "**LONG-TERM CORTICOSTEROIDS cause PROXIMAL MYOPATHY AND ACCELERATE BONE LOSS**",
+     "Difficulty rising from a chair or reaching overhead",
+     "**DXA, calcium and vitamin D, antiresorptive therapy where indicated** — the falls plan is only half the job"
+    ],
+    [
+     "**Nocturia in the dark**",
+     "**GETTING UP AT NIGHT, IN THE DARK, STILL HALF ASLEEP — on a diuretic**",
+     "How many times a night; **WHEN SHE TAKES THE FLUID TABLET**; lighting and distance to the toilet",
+     "**Night light, clear path, bedside commode or urinal; review diuretic timing — THE EASIEST OF THE FOUR TO FIX**"
+    ],
+    [
+     "**Thiazide-induced hyponatraemia**",
+     "A diuretic in an older person",
+     "Confusion, unsteadiness, lethargy",
+     "**UEC — a low sodium is ITS OWN FALLS MECHANISM** — same day"
+    ],
+    [
+     "**Cardiac syncope**",
+     "Fall on exertion, no warning, palpitations",
+     "**Murmur of AORTIC STENOSIS, irregular pulse, abnormal ECG**",
+     "**ECG IN EVERY FALLS PATIENT**; Holter, echocardiogram — EMERGENCY"
+    ],
+    [
+     "Peripheral neuropathy · vision",
+     "**Numbness or pins and needles in the legs**, which high sugars cause; bifocals, uncorrected refraction",
+     "Vibration and proprioception, ankle jerks; **visual acuity and fundoscopy**",
+     "B12 and folate, HbA1c; **OPTOMETRY, AND AVOID BIFOCALS ON STAIRS**"
+    ],
+    [
+     "Home hazards and footwear · TIA · subdural",
+     "Rugs, cords, poor lighting; or transient visual or focal symptoms; or a head strike on an anticoagulant",
+     "Gait, Timed Up and Go, footwear; **FAST and carotid bruits**; progressive headache and drowsiness",
+     "**OT home hazard assessment, podiatry.** Urgent same-day TIA pathway; **NON-CONTRAST CT HEAD** — EMERGENCY where present"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf §7 Version E (72 F on a diuretic and prednisolone for PMR, glycosuria, nocturia — four causes plus one investigation; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Observations",
-    "Normal. Ask for lying and standing BP by name — no postural drop today, which matters because the diuretic makes you expect one"
-   ],
-   [
-    "Cardiovascular",
-    "Normal — no murmur, no arrhythmia"
-   ],
-   [
-    "Musculoskeletal",
-    "Normal — no proximal weakness on the day, shoulders and hips move freely (steroid myopathy and PMR both excluded on examination)"
-   ],
-   [
-    "Neurological",
-    "Normal — gait, Romberg, sensation and reflexes intact"
-   ],
-   [
-    "Urine dipstick",
-    "★ Glucose positive. This is the finding the station turns on — steroid-induced hyperglycaemia, with the nocturia now explained"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never establishing loss of consciousness — an automatic fail; 'when you went down, did you black out, even for a second? do you remember hitting the floor? any shaking, tongue-biting, wetting yourself?' in the first ninety seconds (★)",
-   "FAIL — Not asking about injury, head strike, or a long lie on the floor (★)",
-   "FAIL — Missing the polymyalgia–giant cell arteritis link — no headache, scalp tenderness, jaw pain on chewing or visual change questions, and no same-day safety-net for them; this is the discriminator: 'ring me the same day if any of those start' (★)",
-   "FAIL — Calling the whole case 'a side effect of steroids' and stopping — build the list from the history: the fluid tablet (postural drop comes and goes even if normal today), sugar in the urine (diabetes, or the steroid pushing it up — eyes and nerves both cause falls), PMR stiffness in hips and shoulders making walking unsteady, and nocturia in the dark half asleep",
-   "DO — The one investigation: HbA1c ('average sugar over three months'); if the task means an office test, a random capillary glucose now followed by fasting glucose or HbA1c; PMHx four questions for hypertension (which fluid tablet, dose, when taken) and PMR (adherence, follow-up, current girdle symptoms)",
-   "DO — PEFE incl. cushingoid appearance, bruising, proximal rise from a chair, lying and standing BP at one and three minutes, glucose, dipstick (glycosuria), eyes; meals, thirst, polyuria, weight change in the organic screen; home lighting and toilet distance; review and red flags"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-107",
