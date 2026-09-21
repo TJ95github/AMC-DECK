@@ -27970,9 +27970,8 @@
  {
   "id": "MED-109",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "MM5 rural general practice, routine session. History 5 minutes (prompted at 5:00), then the PEFE card is handed over, then diagnosis and differentials. The card is deliberately reassuring: tenderness in many places with a completely normal joint examination and normal markers — say that combination aloud. Earlier version: 50-year-old woman, 6 minutes of history, no RA concern in the stem.",
   "stem": [
    "Jenny, 40, presents with widespread aches and pains all over her body. Her ESR and CRP are normal. Her mother has rheumatoid arthritis and she is worried she has it too. She has previously been diagnosed with irritable bowel syndrome."
   ],
@@ -27981,125 +27980,215 @@
    "Physical examination findings will be given to you on a card",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. First 30 s: WIPE · ★ 'are you in any pain right now — would you like something for it?' · open question → hostile opener ('nobody listens') → ★ VALIDATE the experience, promise the process, promise NOTHING about the outcome · ★ name the RA agenda and promise to return to it · site: 'joints or muscles?' → 'name me two or three spots' (ask twice, gently, never argue) · duration, onset, constant, character, severity, ★ 'how is this affecting your life?' (early) · ★ PATTERN: night, morning vs evening, rest vs activity, morning stiffness duration → 'makes no difference' = the diagnosis · swelling, rash, trauma · ★ announce EIGHT differential groups aloud, organic first: (1) malignancy (2) infection incl travel/bites/sexual (3) joints/family/psoriasis/Raynaud/gout/reactive (4) muscle/drugs/statin, PMR girdle + GCA screen (5) neuro incl concentration (6) endocrine thyroid/diabetes (7) psychosocial LAST and announced — mood, sleep, home, work, function, one risk question, 45 s (8) SADMA → concerns · card → synthesise, not recite · name fibromyalgia, explain, ★ refute RA with five features she does not have · DDx by group · plan, safety-net, review 4 wk.",
+  "findings": [
+   [
+    "THE PEFE CARD",
+    "TENDERNESS OVER TRAPEZIUS AND MULTIPLE TENDER POINTS · JOINT EXAMINATION ENTIRELY NORMAL WITH FULL RANGE OF MOVEMENT · NO swelling, redness, deformity or rash. ESR AND CRP NORMAL, given in the stem. READ IT AS EVIDENCE: A NORMAL JOINT EXAMINATION IS WHAT LETS YOU SAY FIBROMYALGIA"
+   ],
+   [
+    "THE ROLE-PLAYER IS BRIEFED TO BE FRUSTRATED",
+    "'EVERY DOCTOR TELLS ME NOTHING IS WRONG' · 'I'M SICK OF BEING TOLD IT'S IN MY HEAD.' SHE IS NOT DIFFICULT — SHE IS FRIGHTENED AND UNVALIDATED. THE FIRST THIRTY SECONDS OF YOUR CONSULTATION ARE MARKED"
+   ],
+   [
+    "IF YOU REASSURE BEFORE ASSESSING, YOU LOSE THE STATION",
+    "'I'M SURE IT'S NOTHING SERIOUS' COSTS THE COMMUNICATION MARKS. VALIDATE THE EXPERIENCE, PROMISE THE PROCESS, COMMIT TO NOTHING ABOUT THE OUTCOME"
+   ],
+   [
+    "THE TWO QUESTIONS THAT DECIDE THIS STATION",
+    "THE SITE QUESTION separates PMR (shoulders and hips) from FIBROMYALGIA (everywhere). THE IMPACT QUESTION opens the psychosocial door LEGITIMATELY, EARLY, WITHOUT LABELLING"
+   ],
+   [
+    "'IT'S ALL OVER MY BODY' — do not accept it",
+    "'To help me narrow it down — IS IT THE JOINTS OR THE MUSCLES? AND CAN YOU NAME ME TWO OR THREE SPOTS?' If she is abrasive — 'I DON'T KNOW, DOCTOR' — re-frame, DO NOT ARGUE: 'that's completely fine. JUST POINT TO WHERE IT BOTHERS YOU MOST RIGHT NOW'"
+   ],
+   [
+    "THE FLAT NON-PATTERN IS THE CLUE",
+    "'IT MAKES NO DIFFERENCE — MORNING, NIGHT, REST, ACTIVITY.' NO INFLAMMATORY AND NO MECHANICAL PATTERN. SAY IT BACK LATER AS EVIDENCE: 'YOUR PAIN HAS NO INFLAMMATORY PATTERN'"
+   ],
+   [
+    "HER STATED FEAR IS HANDED TO YOU IN THE STEM",
+    "HER MOTHER HAS RHEUMATOID ARTHRITIS AND SHE IS CONVINCED SHE HAS IT. ACKNOWLEDGE IT EARLY AND PROMISE TO RETURN TO IT — THEN REFUTE IT AT THE END WITH HER OWN FINDINGS, NOT WITH REASSURANCE"
+   ],
+   [
+    "THE IBS IS SUPPORTING EVIDENCE, NOT A DISMISSAL",
+    "IBS IS A FIBROMYALGIA CO-TRAVELLER. NOTE IT, ASK ABOUT BLOOD AND WEIGHT LOSS, AND USE IT LATER AS PART OF THE POSITIVE CASE"
+   ],
+   [
+    "WHAT A STATIN WOULD CHANGE",
+    "'I'VE BEEN ON A CHOLESTEROL TABLET' → 'WHICH ONE, AND WHEN DID IT START RELATIVE TO THE ACHES?' THEN CHECK CK. Asking about medications INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP is how statin myopathy is found"
+   ],
+   [
+    "THE MOTOR VEHICLE ACCIDENT VARIANT",
+    "A PROPORTION OF THESE PATIENTS DATE THEIR WHOLE-BODY PAIN TO A CAR ACCIDENT. That reframes it towards CHRONIC POST-TRAUMATIC PAIN and WHIPLASH-ASSOCIATED DISORDER — and in SA opens a RETURNTOWORKSA OR CTP CLAIM. Ask about trauma INCLUDING A CAR ACCIDENT"
+   ]
+  ],
+  "findingsLabel": "A frustrated patient, a flat non-pattern, and the fear handed to you in the stem",
+  "must": [
+   "FAIL — Dismissing her: 'all your tests are normal, there's nothing wrong', or 'it's stress'.",
+   "FAIL — Labelling fibromyalgia in the first two minutes, before any organic exclusion.",
+   "FAIL — No psychosocial assessment at all in a chronic pain patient.",
+   "FAIL — Front-loading psychology: ten questions on mood at minute two.",
+   "ASK — Is it the joints or the muscles? Can you name me two or three spots?",
+   "ASK — Have you ever had thoughts of harming yourself?"
+  ],
   "back": {
-   "dx": "Fibromyalgia (Version A) — >1 year of constant deep dull ache in neck, shoulders, back, arms, legs (7–8/10), neither inflammatory nor mechanical ('it makes no difference'), few minutes of morning stiffness only, unrefreshing sleep, exhaustion, cognitive 'fog', IBS, two stressors (daughter's final school year, relentless work), reduced function; all organic groups negative; card: tender points at trapezius, occiput, 2nd costochondral, lateral epicondyles, greater trochanters, medial knees with NO swelling/redness/deformity, full painless ROM, normal neuro/thyroid/dipstick; ESR 8, CRP 2, FBE/TSH/CK/Ca normal. Diagnosis of exclusion reached in a defensible order. Hidden agenda: 'do I have what my mother has?' — refute RA with her own findings, not reassurance.",
+   "dx": [
+    "**FIBROMYALGIA — CHRONIC WIDESPREAD MUSCULOSKELETAL PAIN OF AT LEAST THREE MONTHS, IN AT LEAST FOUR OF FIVE BODY REGIONS, with FATIGUE, UNREFRESHING SLEEP AND COGNITIVE CLOUDING, arising from ALTERED CENTRAL PAIN PROCESSING rather than structural joint or muscle disease, AND NOT BETTER EXPLAINED BY ANOTHER CONDITION.**",
+    "**THERE IS NO CONFIRMATORY TEST. It is confirmed by A NORMAL TARGETED WORK-UP PLUS POSITIVE CLINICAL FEATURES.**",
+    "**THE DISCRIMINATING ISSUE: THE PSYCHOSOCIAL BLOCK — TAKEN AFTER THE ORGANIC SWEEP, NEVER INSTEAD OF IT. Candidates who run a beautiful musculoskeletal history and stop there FAIL. Candidates who LEAD with psychology run out of time for groups 1–7 AND CANNOT LOGICALLY REACH THE DIAGNOSIS.**",
+    "**THE ORDER IS NOT COSMETIC: FIBROMYALGIA AND EVERY DSM-5 SOMATIC-SYMPTOM DIAGNOSIS REQUIRE THAT SYMPTOMS ARE NOT BETTER EXPLAINED BY ANOTHER MEDICAL CONDITION — SO THE ORGANIC SWEEP IS A FORMAL PRE-REQUISITE, NOT A COURTESY.**",
+    "**THE VALIDATION LINE, LEARNED VERBATIM: 'I can hear HOW OVERWHELMING THIS HAS BEEN, and I'm sorry you've had that experience with other doctors. YOUR PAIN IS REAL AND I TAKE IT SERIOUSLY. I'm here to help you today — WE WILL LOOK INTO THIS PROPERLY.'**",
+    "**EIGHT DIFFERENTIAL GROUPS, ANNOUNCED BY NAME AS YOU GO — AN UNSPOKEN STRUCTURE SCORES NOTHING: 1 RED FLAGS AND MALIGNANCY · 2 INFECTION · 3 THE ARTHRITIDES · 4 SOFT TISSUE AND MUSCLE · 5 NEUROLOGICAL · 6 ENDOCRINE AND METABOLIC · 7 MEDICATIONS · 8 PSYCHOSOCIAL, LAST.**",
+    "**THE EXPLANATION THAT PASSES: 'you most likely have FIBROMYALGIA. It causes WIDESPREAD PAIN ALL OVER THE BODY WITHOUT ANY STRUCTURAL DAMAGE in the muscles or joints — and I HAVE CHECKED FOR THAT. It is a REAL, RECOGNISED CONDITION in which THE PAIN-SIGNALLING SYSTEM BECOMES OVER-SENSITIVE, so ordinary signals are felt as pain. IT IS NOT IN YOUR HEAD AND IT IS NOT YOUR FAULT.'**",
+    "**THEN REFUTE THE RA FEAR WITH HER OWN FINDINGS: 'I've thought carefully about rheumatoid arthritis BECAUSE YOU WERE WORRIED ABOUT IT. You have NO JOINT SWELLING, NO DEFORMITY, NO PROLONGED MORNING STIFFNESS, your pain is NOT WORSE IN THE MORNING AND NOT BETTER WITH MOVEMENT, and your INFLAMMATORY MARKERS ARE NORMAL.'** Then add honestly: **'FIBROMYALGIA CAN OCCUR ALONGSIDE RHEUMATOID ARTHRITIS, SO IF ANYTHING CHANGES WE WILL REASSESS.'**",
+    "**CORRECTION — WEIGHT LOSS AND FATIGUE ARE NOT SPECIFIC TO CANCER. RA, PMR AND CHRONIC INFECTION ALL CAUSE BOTH. A SINGLE POSITIVE RED FLAG DOES NOT LICENSE YOU TO ANNOUNCE MALIGNANCY — YOU WEIGH THE WHOLE PICTURE.**",
+    "**CORRECTION — the source says syphilis and HIV do not cause body aches. SECONDARY SYPHILIS CLASSICALLY CAUSES GENERALISED ARTHRALGIA AND MYALGIA with fever, a PALM-AND-SOLE RASH and lymphadenopathy; HIV SEROCONVERSION causes a MONONUCLEOSIS-LIKE ILLNESS WITH MYALGIA. KEEP THE SEXUAL HISTORY — IT IS A REAL YIELD.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE · ★ 'are you in any pain right now? would you like something for it before we talk?' ('I'm always in pain — that's the point') · 'tell me in your own words' → 'four doctors, all normal, nobody listens, mum has RA' · ★ 'I can hear how overwhelming this has been, and I'm sorry you've had that experience. Your pain is real and I take it seriously.' · ★ 'thank you for telling me about your mum — I'll ask specifically about RA and come back to it before you leave'"
+     "**WIPE, confirm her name, then TWO QUESTIONS BEFORE ANYTHING ELSE: 'ARE YOU IN ANY PAIN RIGHT NOW? WOULD YOU LIKE SOMETHING FOR IT BEFORE WE TALK?'** Then **confidentiality, and an open question.**"
     ],
     [
-     "0:45",
-     "Site: 'where exactly?' → 'everywhere' → 'joints or muscles?' → 'I don't know' → ★ 'name me two or three spots' → neck, shoulders, back, arms, legs · duration (>1 y), onset (crept), constant, dull/sharp, /10, better/worse (nothing) · ★ 'how is this affecting your life?' → exhausted, cut hours, no friends"
+     "0:20",
+     "**THE VALIDATION LINE, VERBATIM. Then: 'let me ask you some questions so I can work out what is going on, and then I'll explain what I think and what we do next.'**"
     ],
     [
-     "1:45",
-     "★ Pattern: wakes at night? morning or evening? rest or activity? ★ morning stiffness — how long? → 'makes no difference', a few minutes · swelling, redness/rash, injury/trauma/MVA"
+     "0:35",
+     "**EXPLORE THE PAIN, SITE-WEIGHTED: WHERE EXACTLY — JOINTS OR MUSCLES, NAME ME TWO OR THREE SPOTS · how long, sudden or gradual, constant or intermittent, getting worse · dull or sharp · does it travel · out of ten at its worst · anything better or worse · AND HOW IS THIS PAIN AFFECTING YOUR LIFE?**"
     ],
     [
-     "2:20",
-     "★ 'I'm going to run through a checklist of causes — some will sound unrelated' · 'first some serious causes': weight loss, appetite, lumps, night sweats, bone pain at night · 'now infections': fever/chills, flu-like illness, travel, sick/animal contacts, tick/insect bites, sexually active/condoms"
+     "1:30",
+     "**THE PATTERN QUESTIONS: do you get pain AT NIGHT or does it wake you · WORSE IN THE MORNING OR AT THE END OF THE DAY · WORSE WITH REST OR WITH ACTIVITY · do you feel STIFF IN THE MORNINGS, AND HOW LONG does it last?** Then **the MSK screen: any SWELLING · any REDNESS OR RASHES · stiffness moving the joints · ANY RECENT INJURY, TRAUMA OR ACCIDENT, INCLUDING A CAR ACCIDENT?**"
     ],
     [
-     "3:00",
-     "'Now your joints': occupation/repetitive work, ★ FHx arthritis (mum RA), deformity, rash/scaly patches/nail change (psoriatic), fingers change colour in cold (Raynaud), worse after red meat/alcohol (gout), diarrhoea/blood/discharge (reactive/IBD) → IBS · 'now muscles': ★ any medications incl chemist (statin), ★ shoulder + hip girdle stiffness, rising from chair, combing hair, ★ new headache/scalp tenderness/jaw pain chewing/vision (PMR/GCA)"
+     "2:00",
+     "**SIGNPOST THE SWEEP: 'I'm now going to run through a checklist of possible causes; SOME QUESTIONS WILL SOUND UNRELATED, BUT I ASK THEM OF EVERYONE WITH THIS PROBLEM.'**"
+    ],
+    [
+     "2:05",
+     "**GROUP 1, RED FLAGS — UNCONDITIONAL AT EVERY AGE: WEIGHT LOSS without trying, how many kilos over how long · appetite · LUMPS OR BUMPS · unusually tired · NIGHT SWEATS SOAKING THE SHEETS · BONE PAIN, PARTICULARLY AT NIGHT.**"
+    ],
+    [
+     "2:25",
+     "**GROUP 2, INFECTION: any FEVER OR CHILLS · any FLU-LIKE ILLNESS in the last few months · HAVE YOU TRAVELLED anywhere, overseas or within Australia · contact with anyone unwell OR WITH ANIMALS · ANY TICK OR INSECT BITES · sore throat with swollen glands · AND I ASK EVERYONE — ARE YOU SEXUALLY ACTIVE, AND DO YOU USE CONDOMS?**"
+    ],
+    [
+     "2:55",
+     "**GROUP 3, THE ARTHRITIDES: occupation and heavy or repetitive work · FAMILY HISTORY OF ARTHRITIS OF ANY KIND · any DEFORMITY in the joints · fingers stiff first thing · RASHES, SCALY PATCHES OR NAIL CHANGES · fingers CHANGING COLOUR IN THE COLD · mouth ulcers, hair loss, sun sensitivity · worse after RED MEAT OR ALCOHOL · recent DIARRHOEA OR BLOOD IN THE STOOLS · any discharge · RED OR PAINFUL EYES?**"
+    ],
+    [
+     "3:25",
+     "**GROUP 4, SOFT TISSUE AND MUSCLE: ANY MEDICATIONS AT ALL, INCLUDING FROM THE CHEMIST OR HEALTH-FOOD SHOP — and if a statin, WHEN DID YOU START IT, AND DID THE ACHES BEGIN AFTER · is there pain and stiffness ACROSS BOTH SHOULDERS AND BOTH HIPS · do you struggle to GET OUT OF A CHAIR, CLIMB STAIRS, OR COMB YOUR HAIR?**"
     ],
     [
      "3:45",
-     "'A few nerve questions': pins and needles, weakness, walking, speech, vision, ★ concentration → 'fog' (note; use later as fibromyalgia evidence, not a red flag) · 'hormone questions': cold intolerance, constipation, dry skin, hair, weight; thirst, polyuria"
+     "**THE GCA SCREEN, EVEN HERE: any NEW HEADACHE · SCALP TENDERNESS when you brush your hair · PAIN IN THE JAW WHEN CHEWING · ANY CHANGE IN YOUR VISION?**"
     ],
     [
-     "4:15",
-     "★ Psychosocial, announced, 45 s: 'pain that goes on this long affects far more than the body — may I ask how you've been in yourself?' → mood (flat, frustrated), sleep (bad, never refreshed), home (husband, daughter final year), work (relentless), function, ★ 'I ask everyone with long-standing pain — any thoughts of harming yourself?' → never · SADMA: smoking, alcohol (2 glasses/wk), drugs, allergies, PMHx/ops, FHx · 'anything I haven't asked that you were hoping to discuss?'"
+     "3:55",
+     "**GROUP 5, NEUROLOGICAL: headaches · PINS AND NEEDLES OR NUMBNESS · weakness moving the arms or legs · problems with walking or balance · change in SPEECH OR VISION · DIFFICULTY CONCENTRATING?**"
     ],
     [
-     "5:00",
-     "Card → ★ synthesise aloud: 'looks well, afebrile, no rash/cachexia/lymphadenopathy; tenderness at multiple sites but no swelling, no redness, no deformity, full painless ROM; neuro and thyroid normal; ESR 8, CRP 2, FBE/TSH/CK/Ca normal — the combination of widespread tenderness with a normal joint examination and normal inflammatory markers excludes an inflammatory arthritis and supports fibromyalgia'"
+     "4:10",
+     "**GROUP 6, ENDOCRINE AND METABOLIC: DO YOU FEEL THE COLD MORE THAN OTHERS · CONSTIPATION, dry skin, hair thinning, weight change · INCREASED THIRST OR PASSING MORE URINE · bone pain, tummy pain, nausea, low mood?**"
     ],
     [
-     "5:45",
-     "★ Name fibromyalgia · explain: widespread pain without structural damage; pain-signalling system over-sensitive — 'volume dial turned up too high' — also the tiredness, poor sleep, fog and IBS · ★ 'it is a real, recognised medical condition — not in your head and not your fault' · ★ RA refuted with HER findings: swollen joints, >1 h morning stiffness, worse after rest/better with movement, deformity, raised markers — 'you have none of those' — 'the two can occasionally coexist, so if anything changes we look again' · DDx by group with why set aside: cancers (no weight loss/sweats/lumps, FBE normal), infections, other arthritides (psoriatic, gout, reactive, lupus), muscle (no statin, CK normal), PMR (age, not girdle), MS (no neuro), thyroid/Ca normal"
+     "4:30",
+     "**GROUP 8, ANNOUNCED AS THE LAST BLOCK: 'pain that goes on this long AFFECTS FAR MORE THAN THE BODY. May I ask a few questions about HOW YOU'VE BEEN IN YOURSELF?' MOOD · SLEEP, DO YOU WAKE FEELING REFRESHED · WHO IS AT HOME, anything stressful · work or study stress · ARE YOU MANAGING YOUR USUAL DAILY ACTIVITIES · AND I ASK EVERYONE WITH LONG-STANDING PAIN — HAVE YOU EVER HAD THOUGHTS OF HARMING YOURSELF?**"
     ],
     [
-     "7:15",
-     "Plan: ★ graded gentle exercise (start lower than you think), sleep work, psychologist for coping ('not because it's imaginary'), a night-time tablet for pain and sleep, chronic disease management plan → physio/exercise physiologist · safety-net: fever, weight loss, swollen joint, new weakness/numbness · review 4 wk · written info · 'any questions?'"
+     "5:15",
+     "**SADMA AND CLOSE: smoking, alcohol, recreational drugs, allergies, other conditions or surgery, family history · 'IS THERE ANYTHING I HAVEN'T ASKED ABOUT THAT YOU WERE HOPING TO DISCUSS TODAY?'**"
+    ],
+    [
+     "6:00",
+     "**Take the card and SAY WHAT IT MEANS — multiple tender points with AN OTHERWISE ENTIRELY NORMAL JOINT EXAMINATION AND FULL RANGE OF MOVEMENT.**"
+    ],
+    [
+     "6:20",
+     "**NAME FIBROMYALGIA WITH THE 'REAL, RECOGNISED CONDITION' EXPLANATION — pain-signalling system over-sensitive, NOT IN YOUR HEAD, NOT YOUR FAULT.**"
+    ],
+    [
+     "7:00",
+     "**REFUTE THE RA FEAR WITH HER OWN FINDINGS, then the DIFFERENTIALS BY GROUP NAME, each with a one-clause reason it is less likely.** Then **the plan: a TARGETED screen, GRADED EXERCISE, SLEEP, PSYCHOLOGICAL THERAPY, a CHRONIC DISEASE MANAGEMENT PLAN, and the SAFETY-NET.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before we start — are you in any pain right now? Would you like something for it before we talk?' / ★ 'I can hear how overwhelming this has been for you, and I'm sorry you've had that experience with other doctors. Your pain is real and I take it seriously.'",
-    "★ 'Thank you for telling me about your mum — I'll ask specifically about rheumatoid arthritis and I'll come back to it before you leave.' / 'Is it the joints that ache, or the muscles? … Can you name me two or three spots where you feel it most?' / 'How is this pain affecting your life?'",
-    "★ 'Is it worse in the morning or the end of the day? Worse with rest or with activity? Do you feel stiff in the mornings, and roughly how long before you loosen up?'",
-    "★ 'I'm going to run through a checklist of possible causes — some questions will sound unrelated, but I ask them of everyone with this problem. Let me first check some serious causes … now some questions about infections … now about your joints … now your muscles and soft tissues … a few nerve questions … some hormone questions.'",
-    "'Any pain and stiffness across both shoulders and hips? Do you struggle to get out of a chair or comb your hair? Any new headache, scalp tenderness, jaw pain on chewing, or change in vision?' / 'Are you taking any medications at all, including from the chemist?'",
-    "★ 'Jenny, pain that goes on this long affects far more than the body — may I ask a few questions about how you've been in yourself? How has your mood been? Your sleep? Who's at home, and is anything stressful going on? Work? Are you managing your usual activities? And I ask this of everyone with long-standing pain — have you had any thoughts of harming yourself?'",
-    "★ To examiner/aloud: 'There is tenderness in many places, but your joints are not swollen, not red, not deformed, they all move fully and painlessly, and your inflammation tests are normal.'",
-    "★ 'I think the most likely explanation is a condition called fibromyalgia. It causes widespread pain all over the body without any structural damage in the muscles or the joints. The system that carries pain signals becomes over-sensitive — a bit like a volume dial turned up too high, so ordinary signals are felt as pain. That's also why it brings the tiredness, the poor sleep, the foggy concentration and the irritable bowel. It is a real, recognised medical condition. It is not in your head and it is not your fault.'",
-    "★ 'I promised I'd come back to rheumatoid arthritis. In rheumatoid arthritis I would expect swollen joints, stiffness lasting more than an hour in the mornings, pain worse after rest and better with movement, often joint deformity, and raised inflammation in the blood. You have none of those. So I don't think you have rheumatoid arthritis — though the two can occasionally occur together, so if anything changes we will look again.'",
-    "'The most useful treatment is gentle, graded exercise — starting much lower than you think and building slowly. We'll work on your sleep, and I'd like to offer you a psychologist to help with coping — not because the pain is imaginary, but because pain this persistent wears people down. Come back if you get fever, weight loss, a swollen joint, or new weakness or numbness.' / if 'so it's in my head as well?' → 'No. It is a real condition with a physical mechanism; the stress makes it worse, it did not create it.'"
-   ],
    "pefe": [
-    "Role-player: Jenny, 40, office worker, married, daughter in final year of school; frustrated, terse, abrasive at the start ('I'm always in pain, that's the whole point') — softens noticeably if validated; if reassured early ('probably stress') → 'that's exactly what everyone says'. Says 'everywhere' then 'I don't know'; only names sites when asked for two or three. 'Makes no difference' to every pattern question. Never volunteers red flags — all negative. Volunteers the concern in the last minute if never asked: 'I just want to know whether I've got what my mother has'. If explained badly: 'so you're saying it's in my head as well'",
-    "PEFE card: looks well, not cachectic/pale, no rash · T 36.8, P 76, BP 122/78, weight stable · tender: trapezius, occiput, 2nd costochondral junctions, lateral epicondyles, greater trochanters, medial knees · no swelling/redness/deformity, full painless ROM · neuro normal, no lymphadenopathy, thyroid normal, dipstick negative · ESR 8, CRP 2, FBE/TSH/CK/corrected Ca normal",
-    "CORRECTION: do not count tender points — 1990 ACR 11/18 superseded; current: widespread pain in ≥4 of 5 body regions for ≥3 months with the symptom cluster (fatigue, unrefreshing sleep, cognitive symptoms), after exclusion; no confirmatory test · brief morning stiffness of minutes is compatible with fibromyalgia; inflammatory threshold ~45–60 min in a girdle distribution",
-    "Versions B (72 M, polymyalgia rheumatica) and C (57 F back from Wisconsin, Lyme disease) share this stem and spine and are separate cards (MED-110, MED-111). Same eight-group sweep; only the key clue and the diagnosis change",
-    "Treatment (Australian): education + graded aerobic exercise (first line) · sleep hygiene · CBT/psychology · low-dose amitriptyline 10–25 mg nocte VERIFY TG (or duloxetine/pregabalin second line) · avoid opioids · GP management plan/TCA → physio, exercise physiologist · review 4 wk · no further bloods beyond the screen (FBE, ESR/CRP, TSH, CK, Ca, ± vitamin D, ferritin) unless red flags",
-    "SA: Chronic Disease Management Plan items; Better Access psychology; Country Health Connect allied health; healthdirect 1800 022 222"
+    "**Bedside: temperature, BP, weight, URINE DIPSTICK for the haematuria or proteinuria of lupus or vasculitis, BSL.**",
+    "**First-line bloods: FBE, ESR AND CRP, UEC, LFT, TSH, CK, CORRECTED CALCIUM, phosphate, ALP, 25-OH VITAMIN D, glucose or HbA1c.** **If over 50 with bone pain or anaemia, ADD SERUM PROTEIN ELECTROPHORESIS AND SERUM FREE LIGHT CHAINS.** **RF, ANTI-CCP AND ANA ONLY IF THE PATTERN IS INFLAMMATORY.**",
+    "**IF THE SCREEN IS NORMAL, STOP. DO NOT KEEP INVESTIGATING.** **DO NOT ORDER ANA, RF OR AN 'AUTOIMMUNE SCREEN' AS A FISHING EXPEDITION — in an unselected patient these have POOR POSITIVE PREDICTIVE VALUE, and A WEAKLY POSITIVE ANA IN A WELL PATIENT GENERATES YEARS OF ANXIETY AND REFERRALS.**",
+    "**Management: EXPLAIN IT AS A DISORDER OF PAIN REGULATION — THE PAIN-PROCESSING SYSTEM IS TURNED UP TOO HIGH — not a psychiatric diagnosis and not imaginary · GRADED AEROBIC EXERCISE IS THE SINGLE BEST-EVIDENCED TREATMENT: START VERY LOW, BUILD VERY SLOWLY, AND WARN THAT A SHORT FLARE IS NORMAL AND NOT DAMAGE · SLEEP — regular schedule, TREAT SLEEP APNOEA, restrict caffeine and alcohol · CBT OR ACCEPTANCE-BASED THERAPY FOR COPING, NOT BECAUSE THE PAIN IS PSYCHOLOGICAL.**",
+    "**MEDICATION IS ADJUNCTIVE: LOW-DOSE AMITRIPTYLINE AT NIGHT is usual first-line; DULOXETINE an alternative. PREGABALIN IS USED BUT IS NOT PBS-LISTED FOR FIBROMYALGIA.** VERIFY doses against current Therapeutic Guidelines.",
+    "**DO NOT PRESCRIBE LONG-TERM OPIOIDS — THEY WORSEN OUTCOMES AND CAN CAUSE OPIOID-INDUCED HYPERALGESIA.** **DO NOT REPEAT IMAGING THAT HAS ALREADY BEEN NORMAL. DO NOT SAY 'ALL YOUR TESTS ARE NORMAL, SO THERE IS NOTHING WRONG'.**",
+    "**Do not miss: MYELOMA — bone pain with anaemia, hypercalcaemia, renal impairment and A VERY HIGH ESR, which is a MYELOMA CLUE NOT A FIBROMYALGIA CLUE · GIANT CELL ARTERITIS in any girdle pattern · SEPTIC OR CRYSTAL ARTHRITIS SUPERIMPOSED ON CHRONIC PAIN, where a single hot swollen joint with fever needs aspiration.** **STRUCTURED GP CARE with a chronic condition management plan and TEAM CARE ARRANGEMENTS; PLANNED REVIEW RATHER THAN CRISIS VISITS.**"
    ],
-   "fails": [
-    "Reassuring before taking a history ('I'm sure it's nothing serious', 'often just stress') — loses the communication domain and probably the station",
-    "Accepting 'all over my body' — never localising to two or three sites, so PMR vs fibromyalgia cannot later be argued",
-    "Skipping the pattern block or the stiffness duration; not saying 'neither inflammatory nor mechanical' back to the examiner",
-    "Omitting the psychosocial block (not assessed a chronic pain patient — fail) OR starting there and never finishing groups 1–7 (no defensible diagnosis of exclusion — also fail); chasing 'fog' as a neurological red flag and burning a minute",
-    "Reading the card back as a list, or saying 'examination normal' — it is NOT normal, there is tenderness; the sentence that scores is 'abnormal tenderness, normal everything else'",
-    "'Don't worry, you haven't got RA' with no reasons — five named features she lacks is the whole item; never returning to the mother; a diagnosis delivered as 'nothing wrong' or 'psychological'",
-    "No plan beyond a tablet; no safety-net (fever, weight loss, swollen joint, new neuro)"
-   ],
-   "numbers": [
-    "Fibromyalgia: ≥3 months · ≥4 of 5 body regions · no confirmatory test · inflammatory stiffness ≥45–60 min · history hard-stop 5:00 · psychosocial block 45 s · review 4 wk",
-    "Card: ESR 8 · CRP 2 · six paired tender sites · full painless ROM · T 36.8 · BP 122/78",
-    "PMR ≥50 y, prednisolone 15 mg daily, dramatic response 3–7 d, taper 12–24 mo · GCA 40–60 mg daily, biopsy within 1–2 wk of starting VERIFY · Lyme: erythema migrans 3–30 d after bite, doxycycline 100 mg bd 10–21 d VERIFY · statin myopathy: stop if CK >10× ULN · significant weight loss >5% in 6 mo",
-    "Amitriptyline 10–25 mg nocte VERIFY TG · exercise first line · no opioids · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Fibromyalgia** — the answer",
+     "**Pain in FOUR OF FIVE REGIONS FOR OVER THREE MONTHS, NO PATTERN SHIFT, UNREFRESHING SLEEP, FIBRO-FOG, IBS, headache**",
+     "**MULTIPLE TENDER POINTS WITH AN ENTIRELY NORMAL JOINT EXAMINATION AND FULL RANGE OF MOVEMENT**",
+     "**NO CONFIRMATORY TEST. Normal targeted work-up PLUS positive clinical features**"
+    ],
+    [
+     "**Multiple myeloma · leukaemia · lymphoma · bone metastases**",
+     "**Age over 50, BONE PAIN WORSE AT NIGHT, WEIGHT LOSS, fatigue out of proportion, ANAEMIA, HYPERCALCAEMIA**",
+     "Weight, appetite, night sweats, lumps, **BONE TENDERNESS, pallor, nodes**",
+     "**FBE, ESR, CALCIUM, renal function, SPEP AND SERUM FREE LIGHT CHAINS, CXR** — URGENT"
+    ],
+    [
+     "**Polymyalgia rheumatica**",
+     "**Age 50 or over, BILATERAL SHOULDER AND HIP GIRDLE pain, morning stiffness 45 MINUTES OR MORE, WORSE WITH REST, raised ESR/CRP**",
+     "**Girdle distribution; difficulty rising from a chair; THE GCA SCREEN**",
+     "**ESR and CRP; DRAMATIC RESPONSE TO LOW-DOSE PREDNISOLONE WITHIN 3–7 DAYS** — URGENT"
+    ],
+    [
+     "**Giant cell arteritis**",
+     "**NEW HEADACHE, SCALP TENDERNESS, JAW CLAUDICATION, VISUAL LOSS OR DIPLOPIA**",
+     "**PALPATE THE TEMPORAL ARTERIES; ASK ABOUT VISION EVERY TIME**",
+     "**ESR/CRP, temporal artery ultrasound or biopsy — BUT TREAT FIRST** — EMERGENCY"
+    ],
+    [
+     "**Rheumatoid arthritis — her stated fear**",
+     "**Symmetrical SMALL-JOINT SWELLING, morning stiffness over an hour, DEFORMITY, family history**",
+     "**SWELLING, NOT JUST PAIN; MCP and PIP involvement; nodules**",
+     "**RF, anti-CCP, ESR/CRP, hand imaging. REFUTE IT WITH HER OWN FINDINGS, NOT WITH REASSURANCE** — semi-urgent"
+    ],
+    [
+     "Psoriatic · reactive · gout · IBD-related · SLE",
+     "**Rash, NAIL PITTING, dactylitis; recent diarrhoea or urethritis; BEER AND RED-MEAT TRIGGER; PHOTOSENSITIVE RASH, RAYNAUD, ORAL ULCERS**",
+     "**Rash — ASK THREE TIMES** — nails, eyes, bowels, genital discharge",
+     "**TARGETED ONLY: urate, ANA and dsDNA, stool studies, STI screen** — semi-urgent"
+    ],
+    [
+     "**Statin or drug-induced myopathy** · polymyositis",
+     "**PROXIMAL ACHING, CRAMPS, DARK URINE, weeks to months after starting or a dose increase**; or SYMMETRICAL WEAKNESS MORE THAN PAIN with HELIOTROPE RASH and GOTTRON PAPULES",
+     "**FULL MEDICATION LIST INCLUDING COMPLEMENTARY MEDICINES**; test power formally — CAN SHE RISE FROM A CHAIR UNAIDED?",
+     "**CK, renal function, TSH; trial of cessation. STOP THE STATIN IF CK EXCEEDS ABOUT 10 TIMES THE UPPER LIMIT** — semi-urgent"
+    ],
+    [
+     "**Lyme or travel-acquired infection · Australian arboviruses**",
+     "**Overseas travel to an endemic area, BUSHWALKING, TICK BITE, ERYTHEMA MIGRANS**; or in an Australian patient **ROSS RIVER AND BARMAH FOREST VIRUS**, Q FEVER from livestock, brucellosis",
+     "**The COMPLETE travel history; inspect the skin; palpate nodes**",
+     "**Two-tier serology at an ACCREDITED AUSTRALIAN LABORATORY; TREAT CLINICALLY IF ERYTHEMA MIGRANS IS PRESENT** — treat now"
+    ],
+    [
+     "**Chronic viral infection · hypothyroidism · hypercalcaemia · vitamin D deficiency**",
+     "Preceding febrile illness, sore throat, **sexual and injecting risk**; or **COLD INTOLERANCE AND CONSTIPATION**; or thirst, polyuria, low mood; or housebound or covered dress",
+     "**SECONDARY SYPHILIS AND HIV SEROCONVERSION DO CAUSE MYALGIA — KEEP THE SEXUAL HISTORY**; thyroid examination and proximal power",
+     "EBV, hepatitis and HIV serology. **TSH — IT IS HYPOTHYROIDISM THAT CAUSES A TRUE MYOPATHY WITH RAISED CK AND DELAYED REFLEX RELAXATION**; corrected calcium with PTH; 25-OH vitamin D"
+    ],
+    [
+     "Multiple sclerosis · **somatic symptom disorder, depression, obstructive sleep apnoea**",
+     "Numbness, weakness, visual change, relapsing course; or **multiple unexplained symptoms, DISPROPORTIONATE HEALTH ANXIETY, ANHEDONIA, SNORING AND DAYTIME SOMNOLENCE**",
+     "Full neurological examination; mood, sleep, function, previous investigations",
+     "MRI brain and spine. **ONLY AFTER GROUPS 1–7 ARE CLEAR: PHQ-9, STOP-BANG, psychology referral**"
+    ]
    ]
   },
   "source": "Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf (Jenny, 40, widespread aches, normal ESR/CRP, mother with RA, IBS — fibromyalgia, the 2025 recall)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Medicine MSK › Generalised_Body_Aches_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Looks well, not cachectic or pale, no rash"
-   ],
-   [
-    "Observations",
-    "T 36.8 · P 76 · BP 122/78 · weight stable"
-   ],
-   [
-    "Tender points",
-    "Trapezius · occiput · SECOND COSTOCHONDRAL JUNCTIONS · lateral epicondyles · greater trochanters · medial knees"
-   ],
-   [
-    "Joints",
-    "NO swelling, redness or deformity; FULL PAINLESS range of movement"
-   ],
-   [
-    "Neurological, nodes, thyroid",
-    "All normal; urine dipstick negative"
-   ],
-   [
-    "Bloods",
-    "ESR 8 · CRP 2 · FBE, TSH, CK and corrected calcium all NORMAL"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Reassuring about the outcome before taking a history — 'I'm sure it's nothing serious' or 'these things are often just stress' loses the communication domain and probably the station; she becomes more upset ('that's exactly what everyone says'); reassure about the process, never the outcome: 'your pain is real and I take it seriously'; name her agenda (her mother's rheumatoid arthritis) in the first thirty seconds and promise to come back to it; offer analgesia if she's in pain",
-   "FAIL — Accepting 'all over my body' — she is briefed to be vague and mildly obstructive; 'is it the joints that ache, or the muscles?' → 'I don't know' → 'can you name me two or three spots?' — twice, gently, without arguing; without named sites you cannot distinguish PMR from fibromyalgia or justify the diagnosis",
-   "FAIL — Omitting the psychosocial block entirely (you have not assessed a chronic pain patient), or starting the consultation there (you will never finish groups 1–7 and cannot reach a diagnosis of exclusion) — the order fixes both: organic sweep first, then 45 seconds of mood, sleep, home, work, function, and one risk question; not a psychiatry station — no hallucinations, delusions, insight",
-   "FAIL — Not announcing the differential groups aloud — 'let me first check some serious causes … now infections … now your joints … now muscles and soft tissues (girdle stiffness, GCA screen, medications) … a few nerve questions … some hormone questions'; the structure is the mark sheet, and bundling within a group is fine — deletion is not; 'it makes no difference — morning, evening, rest, activity' is the diagnosis: neither inflammatory nor mechanical, and say it back in those words",
-   "FAIL — 'There's nothing wrong with you' or 'it's psychological' ('so you're saying it's in my head as well'); synthesise the card ('tenderness in many places, but a completely normal joint examination with full painless movement, and normal inflammatory markers'); fibromyalgia as real — 'the pain-signalling system has become over-sensitive, like a volume dial turned up too high; it is not in your head and not your fault'; use the fog, unrefreshing sleep and IBS as supporting evidence collected after organic exclusion",
-   "FAIL — 'Don't worry, you haven't got it' — refute rheumatoid arthritis with five features she does not have: no swollen joints, stiffness minutes not an hour, no rest–activity pattern, no deformity, normal inflammatory markers ('the two can occasionally coexist, so we look again if anything changes'); differentials by group with a reason each; plan: graded exercise, sleep, psychologist ('not because the pain is imaginary'), a night-time tablet, care plan for physio; safety-net for fever, weight loss, a swollen joint, new weakness; review in four weeks; don't count tender points to a number"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-110",
