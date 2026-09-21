@@ -26856,9 +26856,8 @@
  {
   "id": "MED-104",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Versions B and B2 of the recurrent-falls spine (reconstructed stems, older-person Part 2 §7). Examiner findings in both: NORMAL postural BP, normal sensation, normal lower limbs. The examination is deliberately normal — the causes are all in the medication list. Do not go quiet.",
   "stem": [
    "A 70-year-old woman has come to see you about recurrent falls. Observations are normal.",
    "Version B: on a 'fluid tablet' and a blood-pressure tablet 'ending in -sartan'; has depression and takes temazepam to sleep; 'numbness in my legs'. Version B2 (2024): on clonidine and a fluid tablet, recently changed by the GP, and amitriptyline instead of temazepam."
@@ -26868,96 +26867,211 @@
    "Ask the examiner for the relevant examination findings",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Same spine: WIPE, concern · ★ LOC/seizure screen · each fall, context, ★ injury, long lie · organic screen → 'numbness in my legs' (subjective; keep going) · ★ PMHx ×4 for EACH condition: hypertension (when, what, adherence, follow-up, complications), depression (control, sleep, who manages it) · ★ MEDS one by one incl anything for sleep, recent changes (B2), timing · six domains (home, urinary, MSK, senses, ★ drugs/alcohol) · social/geriatric → PEFE (lying/standing BP at 1 and 3 min, glucose, LL neuro incl proprioception, gait/TUG, cognition) → all normal → ★ four numbered medication-driven causes, deprescribe slowly, never stop clonidine abruptly.",
+  "findings": [
+   [
+    "THE EXAMINATION IS NORMAL — AND THAT IS THE TEST",
+    "NORMAL POSTURAL BP · NORMAL SENSATION · NORMAL LOWER LIMBS. CANDIDATES GO QUIET BECAUSE THEY HAVE NOTHING LEFT TO SAY. A NORMAL EXAMINATION DOES NOT DELETE A SYMPTOM — the numbness she reports STILL COUNTS"
+   ],
+   [
+    "VERSION B — what she gives you",
+    "'I HAVE NUMBNESS IN MY LEGS' · 'I'M ON A FLUID TABLET AND A BLOOD PRESSURE TABLET ENDING IN -SARTAN' · 'I HAVE DEPRESSION, AND I TAKE TEMAZEPAM TO SLEEP.' The risk-factor screen is otherwise negative"
+   ],
+   [
+    "VERSION B2 — the 2024 swap",
+    "'I'M ON CLONIDINE AND A FLUID TABLET — THE GP CHANGED IT RECENTLY — AND AMITRIPTYLINE INSTEAD OF THE TEMAZEPAM.' IDENTICAL REASONING: BOTH NEW DRUGS CAUSE SEDATION AND POSTURAL HYPOTENSION. DO NOT BE THROWN"
+   ],
+   [
+    "THE DRUG QUESTION MUST NAME THE CATEGORIES",
+    "'ANY MEDICATIONS?' → 'JUST MY BLOOD PRESSURE TABLETS.' ASK SPECIFICALLY ABOUT SLEEP, PAIN, AND ANYTHING FROM THE CHEMIST, or the temazepam never appears. Then NAME THE DRUG, THE DOSE, THE DURATION, AND WHO STARTED IT"
+   ],
+   [
+    "POSTURAL HYPOTENSION STILL GETS NAMED — BUT SAY WHY",
+    "'Your blood pressure was steady WHEN WE MEASURED IT TODAY — but THAT DOESN'T RULE THE PROBLEM OUT, BECAUSE THE DROP IS INTERMITTENT, and you're on TWO TABLETS THAT LOWER BLOOD PRESSURE. At home, getting up quickly first thing, IT CAN FALL FURTHER THAN IT DID HERE.' ASSERTING IT WITHOUT THE REASON SCORES NOTHING"
+   ],
+   [
+    "THE BENZODIAZEPINE IS THE BIGGEST SINGLE ITEM",
+    "'TEMAZEPAM WORKS, BUT IT STAYS IN THE SYSTEM OVERNIGHT AND LEAVES YOU DROWSY AND SLOWER TO REACT — IN SOMEONE YOUR AGE IT ROUGHLY DOUBLES THE CHANCE OF A FALL.' REDUCE SLOWLY RATHER THAN STOP SUDDENLY"
+   ],
+   [
+    "NEVER STOP CLONIDINE ABRUPTLY",
+    "REBOUND HYPERTENSION. In Version B2 this is the single pharmacological trap"
+   ],
+   [
+    "AMITRIPTYLINE IN AN OLDER FALLER",
+    "DROWSINESS, POSTURAL DROP AND ANTICHOLINERGIC EFFECTS — a poor choice. SAY YOU WOULD REVIEW THE INDICATION WITH HER DOCTOR RATHER THAN CEASE IT YOURSELF"
+   ],
+   [
+    "THE FOURTH CAUSE IS THE MOOD ITSELF",
+    "'YOUR MOOD AND YOUR SLEEP ARE TIED TOGETHER — IF THE DEPRESSION ISN'T WELL CONTROLLED YOU'RE AWAKE AT NIGHT AND DROWSY BY DAY, AND THAT ADDS TO THE FALLS.' Screen mood, sleep, AND ask a safe suicide-risk question"
+   ],
+   [
+    "THE THIAZIDE HAS A SECOND CONSEQUENCE",
+    "THIAZIDES CAUSE HYPONATRAEMIA. Check UEC — a low sodium is its own falls mechanism and is easy to miss when the story is about blood pressure"
+   ]
+  ],
+  "findingsLabel": "Versions B and B2 — a normal card, and the drug list that explains everything",
+  "must": [
+   "FAIL — Going quiet because the examination is normal.",
+   "FAIL — 'Any medications?' answered as blood pressure tablets only, and the sleeping tablet never found.",
+   "FAIL — Naming one cause. One tidy label is the commonest way to fail this station.",
+   "FAIL — Ceasing clonidine abruptly, or stopping the amitriptyline yourself.",
+   "ASK — Any medicines at all, including anything for sleep, for pain, or over the counter?",
+   "ASK — Did you hurt yourself? Could you get yourself up?"
+  ],
   "back": {
-   "dx": "Medication-related multifactorial falls with a normal examination: (1) intermittent postural hypotension from diuretic + ARB (B) / clonidine + diuretic (B2) — 'measured normally today, but the drop is intermittent and at home getting up quickly it can fall further, so it stays on my list'; (2) ★ temazepam — persists overnight, drowsy and slow to react, roughly doubles fall risk at her age; B2: amitriptyline — sedating, postural drop, anticholinergic, a poor choice in an older faller; (3) subjective leg numbness — a fall risk in itself even with normal testing; check B12/glucose; (4) depression + poor sleep — awake at night, drowsy by day. Plan: reduce temazepam slowly (not stop), sleep hygiene/CBT-i, review antihypertensive doses and timing with her GP, ★ never stop clonidine abruptly (rebound hypertension), review the amitriptyline indication rather than cease it yourself.",
+   "dx": [
+    "**MULTIFACTORIAL RECURRENT FALLS, MEDICATION-DRIVEN. Name FOUR: POSTURAL HYPOTENSION from two blood-pressure-lowering agents · BENZODIAZEPINE (or TRICYCLIC) SEDATION · THE LEG SYMPTOMS SHE REPORTS · and POORLY CONTROLLED MOOD AND SLEEP.**",
+    "**THE DISCRIMINATING ISSUE: THE EXAMINATION IS NORMAL, AND YOU MUST STILL NAME POSTURAL HYPOTENSION AND THE SYMPTOM SHE REPORTED. Candidates GO QUIET WHEN THE EXAMINER SAYS 'EXAMINATION IS NORMAL' BECAUSE THEY HAVE NOTHING LEFT TO SAY.**",
+    "**A NORMAL EXAMINATION DOES NOT ERASE A SYMPTOM. Say it out loud: 'ALTHOUGH THE TESTING OF THE NERVES IN YOUR LEGS CAME BACK NORMAL, THE FACT THAT YOU FEEL NUMBNESS IN THEM IS ITSELF SOMETHING THAT MAKES FALLS MORE LIKELY, SO I'M NOT DISMISSING IT. I'll CHECK YOUR B12 AND YOUR SUGAR.'**",
+    "**POSTURAL HYPOTENSION WITH A NORMAL TEST IS DEFENSIBLE — BUT ONLY WITH ITS REASON. A SYSTOLIC DROP UNDER 20 mmHg MAKES IT LESS LIKELY BUT DOES NOT EXCLUDE IT, BECAUSE IT IS INTERMITTENT AND DRUG-RELATED. Say why; do not just assert it.**",
+    "**THE BENZODIAZEPINE LINE: 'temazepam works, BUT IT STAYS IN THE SYSTEM OVERNIGHT AND LEAVES YOU DROWSY AND SLOWER TO REACT — IN SOMEONE YOUR AGE IT ROUGHLY DOUBLES THE CHANCE OF A FALL. I'd like to REDUCE IT SLOWLY RATHER THAN STOP IT SUDDENLY, AND WORK ON YOUR SLEEP ANOTHER WAY.'**",
+    "**VERSION B2 PHARMACOLOGY, AND THE TRAP: NEVER STOP CLONIDINE ABRUPTLY — REBOUND HYPERTENSION.** **AMITRIPTYLINE IS ANTICHOLINERGIC AND ORTHOSTATIC and is relatively contraindicated in an elderly faller: 'I'd REVIEW THE INDICATION WITH HER GP OR PSYCHIATRIST RATHER THAN STOP IT ABRUPTLY.'**",
+    "**SOURCE CORRECTION — the source says tricyclics are no longer used in Australia and mirtazapine is used instead. THAT OVERSTATES IT. AUSTRALIAN FIRST-LINE PHARMACOTHERAPY IS AN SSRI; MIRTAZAPINE IS CHOSEN WHEN SEDATION OR APPETITE STIMULATION IS WANTED; TRICYCLICS ARE STILL USED, MOSTLY FOR NEUROPATHIC PAIN AND MIGRAINE PROPHYLAXIS.**",
+    "**THE THIAZIDE'S SECOND CONSEQUENCE IS HYPONATRAEMIA — check UEC. A LOW SODIUM IS ITS OWN FALLS MECHANISM and is easy to miss when the conversation is about blood pressure.**",
+    "**THE FRAME, AS ALWAYS: 'falls at your age ALMOST NEVER COME FROM ONE SINGLE THING — they're SEVERAL SMALL THINGS STACKING UP, and that's GOOD NEWS BECAUSE EACH ONE IS FIXABLE. I'VE FOUND FOUR.'** Then **each cause in plain English, the medical name once, and the link to the falls.**",
+    "**MANAGEMENT IS DEPRESCRIBING, NOT ADDING: HOME MEDICINES REVIEW · taper the benzodiazepine · REDUCE OR STAGGER THE ANTIHYPERTENSIVES · substitute the TCA · and NEVER ADD A SEDATIVE FOR 'BETTER SLEEP'.** **Then BALANCE-CHALLENGING EXERCISE, which is the SINGLE BEST-EVIDENCED INTERVENTION, plus OT home assessment, optometry, and bone health.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, acknowledge, signpost · concern"
+     "**Say the observations out loud, WIPE, open question, acknowledge.** Then **SIGNPOST THE LONG LIST and ask: 'was there anything in particular you were worried this might be?'**"
     ],
     [
      "0:45",
-     "★ LOC, remember floor, seizure screen → falls · each fall, context, warning · ★ injury, long lie"
+     "**FALL OR FAINT: did you BLACK OUT, EVEN FOR A SECOND · do you REMEMBER HITTING THE FLOOR · any SHAKING OR JERKING, TONGUE BITING, WETTING YOURSELF?**"
+    ],
+    [
+     "1:10",
+     "**CHARACTERISE: HOW MANY AND WHEN · TALK ME THROUGH EACH ONE, what were you doing · DID ANY HAPPEN JUST AS YOU STOOD UP · any WARNING — light-headed, spinning, heart racing · DID YOU HURT YOURSELF · COULD YOU GET YOURSELF UP, OR WERE YOU ON THE FLOOR A WHILE?**"
     ],
     [
      "1:45",
-     "Organic screen → 'numbness in my legs' → note; weakness, speech, vision, vertigo · CVS · GI · meals"
+     "**ORGANIC SCREEN: NUMBNESS OR PINS AND NEEDLES IN YOUR LEGS · weakness · slurred speech · trouble with vision · headache · SPINNING · chest pain, palpitations, breathlessness · vomiting, diarrhoea, black or bloody motions · ARE YOU EATING REGULARLY?**"
     ],
     [
-     "2:30",
-     "★ PMHx ×4 for hypertension and depression: when, treatment, adherence, follow-up, complications · ★ meds one at a time: 'a fluid tablet' (name/dose/time), '-sartan', ★ 'anything for sleep?' → temazepam (dose, how long, every night) · B2: clonidine + diuretic 'GP changed it recently', amitriptyline · OTC, allergies"
+     "2:15",
+     "**When the numbness comes, CHASE IT: how long, BOTH LEGS, how far up, any weakness with it — and NAME THE THREE CAUSES YOU ARE THINKING OF: DIABETES, B12 AND ALCOHOL.**"
     ],
     [
-     "3:45",
-     "Six domains: home, urinary (diuretic → nocturia?), MSK/feet, eyes/ears, ★ alcohol quantified, drugs · social, ADLs, memory, ★ mood and sleep, driving, fear of falling"
+     "2:35",
+     "**PAST HISTORY, THE FOUR QUESTIONS for each condition: WHEN DIAGNOSED · WHAT TREATMENT · TAKING IT AS PRESCRIBED · REGULAR FOLLOW-UP?** Then **the complications: hypertension → blurred vision, chest pain, stroke symptoms; depression → MOOD, SLEEP, AND A SAFE SUICIDE-RISK QUESTION.**"
+    ],
+    [
+     "3:05",
+     "**THE MEDICATION QUESTION, WITH THE CATEGORIES NAMED: 'any medicines at all, INCLUDING ANYTHING FOR SLEEP, FOR PAIN, OR ANYTHING YOU BUY OVER THE COUNTER?'** Then **for each: NAME, DOSE, HOW LONG, WHO STARTED IT, AND ANY RECENT CHANGE.**"
+    ],
+    [
+     "3:30",
+     "**THE SIX RISK DOMAINS IN ORDER. HOME: rugs, cords, steps, LIGHTING AT NIGHT, where's the toilet. URINARY: frequency, urgency, NOCTURIA, burning. MSK: joint pain, stiffness, balance, feet, WHAT SHOES INDOORS. SENSES: eyes and hearing last checked, BIFOCALS. DRUGS: already covered. ALCOHOL: do you drink — HOW MUCH AND HOW OFTEN?**"
+    ],
+    [
+     "4:10",
+     "**GERIATRIC AND SOCIAL SCREEN: who's at home · who helps · a typical day's meals · managing showering, dressing, shopping, cooking, money and medicines · MEMORY · MOOD · weight loss · STILL DRIVING · HAVE THE FALLS MADE YOU AFRAID TO MOVE ABOUT?**"
+    ],
+    [
+     "4:45",
+     "**SADMA and a brief family history of stroke, cardiac disease and osteoporosis. HARD STOP ON HISTORY AT FIVE MINUTES.**"
     ],
     [
      "5:00",
-     "PEFE: appearance · gait, TUG, Romberg · ★ lying/standing BP 1 and 3 min, rhythm · glucose · LL neuro incl vibration/proprioception · CN, acuity · CVS/resp · cognition (MMSE if drowsy) · dipstick, ECG → all normal"
+     "**ASK THE EXAMINER IN ORDER: general appearance, hydration, bruising or injury · GAIT AND TIMED UP AND GO · vitals with LYING AND STANDING BP AT ONE AND THREE MINUTES and pulse rhythm · BEDSIDE GLUCOSE.**"
+    ],
+    [
+     "5:30",
+     "**Then LOWER LIMB NEUROLOGY including VIBRATION AND PROPRIOCEPTION and CEREBELLAR SIGNS WITH ROMBERG AND HEEL–SHIN · visual acuity and fundoscopy · cardiovascular for a MURMUR OF AORTIC STENOSIS · lower limb joints and FOOTWEAR · abdomen and urine dipstick · is there a COGNITIVE SCREEN available?**"
+    ],
+    [
+     "6:00",
+     "**WHEN THE FINDINGS COME BACK NORMAL, DO NOT STOP. Deliver the frame, then the four causes — starting with the postural hypotension AND ITS REASON.**"
     ],
     [
      "6:30",
-     "★ 'Falls usually have several causes — I've found four, and most of them are your tablets, which is good news because tablets can be changed' → numbered · ★ 'the bigger one is the sleeping tablet … I'd like to reduce it slowly rather than stop it suddenly and work on your sleep another way' · antihypertensives: review dose and timing, ★ B2 never stop clonidine abruptly · numbness: B12, glucose, not dismissed · mood/sleep review · staged rising, fluids, home safety, physio balance, OT · review, red flags"
+     "**THE SLEEPING TABLET, with the doubling-of-risk line and the slow reduction rather than sudden stop.** Then **THE LEG SYMPTOM, named as real despite normal testing, with B12 and sugar to be checked.**"
+    ],
+    [
+     "7:00",
+     "**THE FOURTH CAUSE — MOOD AND SLEEP TIED TOGETHER — and an offer to review it properly.**"
+    ],
+    [
+     "7:30",
+     "**THE PLAN: HOME MEDICINES REVIEW · taper the benzodiazepine, or review the amitriptyline with her doctor · REDUCE OR STAGGER THE ANTIHYPERTENSIVES, NEVER STOPPING CLONIDINE ABRUPTLY · UEC for sodium, B12, glucose · staged rising, OT home assessment, balance exercise, optometry, bone health.** Then **RED FLAGS, A REVIEW DATE, AND TEACH-BACK.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Any medicines at all — including anything for sleep, for pain, or over the counter? Has anything been started or changed recently?'",
-    "'Your blood pressure was steady when we measured it today — but that doesn't rule the problem out, because the drop is intermittent, and you're on two tablets that lower blood pressure. At home, getting up quickly first thing, it can fall further than it did here. So it stays on my list.'",
-    "★ 'The bigger one is the sleeping tablet. Temazepam works, but it stays in the system overnight and leaves you drowsy and slower to react — in someone your age it roughly doubles the chance of a fall. I'd like to reduce it slowly rather than stop it suddenly, and work on your sleep another way.'",
-    "'Although the testing of the nerves in your legs came back normal, the fact that you feel numbness in them is itself something that makes falls more likely, so I'm not dismissing it — I'll check your B12 and your sugar.'",
-    "'Your mood and your sleep are tied together — if the depression isn't well controlled you're awake at night and drowsy by day, and that adds to the falls. I'd like to review that with you properly.'",
-    "B2: 'Clonidine must never be stopped suddenly — it can send the blood pressure shooting up. I'll talk to your GP about the recent change rather than alter it today.' / 'Amitriptyline is not an ideal tablet in someone who is falling — it causes drowsiness and drops the blood pressure on standing — so I'd like to review why it was chosen with the doctor who prescribed it.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 70 F, recurrent falls, 'numbness in my legs'; B: fluid tablet + '-sartan', depression, temazepam nocte; B2 (2024): clonidine + fluid tablet recently changed, amitriptyline. Examiner both: normal postural BP, normal sensation, normal lower limbs",
-    "Falls-risk drugs (FRIDs): benzodiazepines/Z-drugs, TCAs, antipsychotics, opioids, anticholinergics, antihypertensives (esp. diuretics, α-blockers, clonidine), hypoglycaemics · ≥4 medicines = polypharmacy risk · Beers/STOPP criteria",
-    "Temazepam taper: reduce by ~10–25% every 1–2 weeks, or switch to equivalent diazepam then taper VERIFY TG · CBT-i, sleep hygiene, sleep restriction · clonidine: rebound hypertension on abrupt withdrawal — taper over days–weeks VERIFY · amitriptyline: sedation, orthostasis, anticholinergic, QT — review indication (depression? pain? sleep?)",
-    "Trap: going quiet because the examination is normal — the history already gave you four causes. Trap: stopping tablets yourself in the room; deprescribing is planned, slow, and with the prescriber. Trap: 'normal nerve tests' = 'nothing wrong' — subjective numbness still counts",
-    "Bloods: B12, glucose/HbA1c, UEC/Na, TSH, FBE · Home Medicines Review (HMR) · physio strength and balance · OT · Country Health Connect · My Aged Care",
-    "Where the answer is — NOT in the examination — it is in THE MEDICATION LIST",
-    "Falls-risk drugs to ask about — Benzodiazepines and Z-drugs · TCAs · antipsychotics · opioids · anticholinergics · antihypertensives, especially diuretics, alpha-blockers and clonidine · hypoglycaemics",
-    "Polypharmacy — FOUR OR MORE medicines is itself a risk"
+    "**Do now: lying and standing BP AT 1 AND 3 MINUTES · BEDSIDE GLUCOSE · AN ECG IN EVERY FALLS PATIENT · injury survey · MEDICATION REVIEW ON THE SPOT, identifying the sedatives and the antihypertensives.**",
+    "**Bloods: FBE · UEC WITH SODIUM, BECAUSE THIAZIDES CAUSE HYPONATRAEMIA · calcium, magnesium, phosphate · LFTs · TSH · VITAMIN B12 AND FOLATE and FASTING BGL AND HbA1c for the leg symptoms · vitamin D · DXA BONE DENSITY.**",
+    "**Deprescribing is the treatment: HOME MEDICINES REVIEW · TAPER AND CEASE THE BENZODIAZEPINE — temazepam is a clear fall risk and should be SHORT-TERM ONLY · REDUCE OR STAGGER ANTIHYPERTENSIVES · NEVER STOP CLONIDINE ABRUPTLY, BECAUSE OF REBOUND HYPERTENSION · SUBSTITUTE THE TRICYCLIC rather than ceasing it yourself.**",
+    "**Postural BP management: RISE SLOWLY IN STAGES, SIT ON THE EDGE OF THE BED FIRST · adequate fluid and salt where safe · AVOID LARGE HOT MEALS AND ALCOHOL BEFORE STANDING · compression stockings · MIDODRINE OR FLUDROCORTISONE ONLY UNDER SPECIALIST ADVICE · RECHECK POSTURAL BP AFTER ANY MEDICATION CHANGE.** VERIFY.",
+    "**Then the rest of the multidomain plan: BALANCE-CHALLENGING EXERCISE, the SINGLE BEST-EVIDENCED INTERVENTION · physiotherapy gait assessment and an appropriate aid · OT HOME HAZARD ASSESSMENT with lighting, rails and removal of loose rugs · OPTOMETRY, AVOIDING BIFOCALS ON STAIRS · calcium, vitamin D and antiresorptive therapy if osteoporotic · MY AGED CARE 1800 200 422 · REVIEW IN 1–2 WEEKS with a GP Management Plan.**",
+    "**Do not miss: CARDIAC SYNCOPE, so get an ECG · HYPONATRAEMIA from the thiazide · B12 DEFICIENCY behind the leg symptoms · DEPRESSION WITH SUICIDAL IDEATION, which needs a direct safe question · OSTEOPOROSIS, because THE FALLS PLAN IS ONLY HALF THE JOB · SUBDURAL after any head strike.**",
+    "**Avoid: ADDING A SEDATIVE FOR 'BETTER SLEEP' · stopping antihypertensives without a review plan · CEASING CLONIDINE ABRUPTLY · labelling it 'old age' · reassuring without a plan · discharging without addressing BONE HEALTH AND DRIVING.** **SA and the NT are the jurisdictions where the doctor has a LEGAL DUTY TO REPORT an unfit driver; TELL THE PATIENT BEFORE YOU REPORT.**"
    ],
-   "fails": [
-    "Not asking for sleeping tablets by name, or accepting 'a fluid tablet and a blood pressure tablet' without names, doses, timing and recent changes",
-    "Going silent when the examination is normal; declaring 'no postural drop so that's excluded'",
-    "Naming temazepam alone; missing the antihypertensives, the numbness and the mood/sleep loop as separate causes",
-    "Stopping temazepam abruptly; stopping clonidine abruptly (B2); ceasing amitriptyline yourself instead of reviewing the indication",
-    "No home safety, no physio/OT, no review, no red flags"
-   ],
-   "numbers": [
-    "Postural drop ≥20/≥10 within 3 min (normal today — intermittent) · benzodiazepine ≈ doubles fall risk in older people · polypharmacy ≥4 drugs",
-    "Temazepam taper 10–25% every 1–2 wk VERIFY · clonidine never abrupt — rebound hypertension VERIFY · HMR via GP",
-    "Hypoglycaemia <4.0 · B12, HbA1c, Na, TSH · My Aged Care 1800 200 422"
+   "ddx": [
+    [
+     "**Postural hypotension — name it despite a normal test**",
+     "**TWO BLOOD-PRESSURE-LOWERING AGENTS; some falls on standing**",
+     "**NORMAL POSTURAL BP TODAY — BUT THE DROP IS INTERMITTENT AND DRUG-RELATED**",
+     "**Reduce or stagger the doses; staged rising; RECHECK AFTER ANY MEDICATION CHANGE** — same day"
+    ],
+    [
+     "**Benzodiazepine sedation**",
+     "**TEMAZEPAM NIGHTLY; it stays in the system overnight and ROUGHLY DOUBLES FALL RISK AT HER AGE**",
+     "**'Any medicines INCLUDING ANYTHING FOR SLEEP?' — name, dose, duration, who started it**",
+     "**Home Medicines Review; TAPER SLOWLY, DO NOT STOP SUDDENLY; treat the sleep another way**"
+    ],
+    [
+     "**Clonidine and amitriptyline (Version B2)**",
+     "**RECENT GP CHANGE; both cause SEDATION AND POSTURAL HYPOTENSION**",
+     "Drowsiness; anticholinergic effects; timing of the change against the falls",
+     "**NEVER STOP CLONIDINE ABRUPTLY — REBOUND HYPERTENSION. Review the amitriptyline WITH HER DOCTOR rather than ceasing it yourself**"
+    ],
+    [
+     "**Peripheral neuropathy — the symptom that still counts**",
+     "**NUMBNESS IN BOTH LEGS despite normal testing**",
+     "**Glove-and-stocking loss, ankle jerks, vibration and proprioception — ALL NORMAL HERE**",
+     "**B12 AND FOLATE, BGL and HbA1c. DO NOT DISMISS IT BECAUSE THE EXAMINATION IS NORMAL**"
+    ],
+    [
+     "**Thiazide-induced hyponatraemia**",
+     "**A 'FLUID TABLET' in an older person**",
+     "Confusion, unsteadiness, lethargy",
+     "**UEC — a low sodium is ITS OWN FALLS MECHANISM and is easy to miss** — same day"
+    ],
+    [
+     "**Poorly controlled depression and insomnia**",
+     "**KNOWN DEPRESSION; awake at night, drowsy by day**",
+     "**Mood, sleep, anhedonia, weight — AND A SAFE SUICIDE-RISK QUESTION**",
+     "Review treatment properly; **AN SSRI IS AUSTRALIAN FIRST-LINE; MIRTAZAPINE WHERE SEDATION IS WANTED** — same day if risk"
+    ],
+    [
+     "**Cardiac syncope**",
+     "Fall on exertion, no warning, palpitations, family sudden death",
+     "**Murmur of AORTIC STENOSIS, irregular pulse, abnormal ECG**",
+     "**ECG IN EVERY FALLS PATIENT**; Holter, echocardiogram — EMERGENCY"
+    ],
+    [
+     "**TIA or stroke**",
+     "**TRANSIENT VISUAL BLURRING OR LOSS, weakness, slurred speech — RESOLVING COMPLETELY**",
+     "FAST, visual fields, carotid bruit, AF",
+     "**URGENT SAME-DAY assessment, CT/CTA, carotid imaging, ECG, ASPIRIN 300 mg STAT** — EMERGENCY"
+    ],
+    [
+     "**Subdural haematoma** · hypoglycaemia",
+     "**Any head strike, especially on an anticoagulant**; or skipped meals on a sulfonylurea or insulin",
+     "Progressive headache, drowsiness, GAIT DETERIORATION; sweating, tremor, confusion",
+     "**NON-CONTRAST CT HEAD — LOW THRESHOLD IN THE ELDERLY.** Bedside BGL, where FOUR IS THE FLOOR — EMERGENCY"
+    ],
+    [
+     "Vestibular or BPPV · MSK, senses and environment · anaemia",
+     "Room-spinning on head turning; or **trips, joint pain, POOR FOOTWEAR, RUGS, POOR LIGHTING, BIFOCALS**; or pallor and fatigue",
+     "Dix–Hallpike; gait, TIMED UP AND GO, footwear; conjunctival pallor",
+     "Epley. **OT home hazard assessment, balance program, podiatry, optometry.** FBE and iron studies"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf §7 Versions B and B2 (70 F on diuretic/ARB or clonidine plus temazepam or amitriptyline, normal examination — medication-driven falls; stems reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Postural blood pressure",
-    "NORMAL — no drop"
-   ],
-   [
-    "Sensation",
-    "Normal"
-   ],
-   [
-    "Lower limbs",
-    "Normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — and why they are normal",
-  "must": [
-   "FAIL — Never establishing loss of consciousness — an automatic fail; 'when you went down, did you black out, even for a second? do you remember hitting the floor? any shaking, tongue-biting, wetting yourself?' in the first ninety seconds (★)",
-   "FAIL — Not asking about injury, head strike, or a long lie on the floor (★)",
-   "FAIL — Going quiet because the examination is normal — 'your blood pressure was steady today, but that doesn't rule it out: the drop is intermittent, and you're on two tablets that lower it — at home, getting up quickly first thing, it can fall further than it did here'; a normal postural BP in a patient on a diuretic and a sartan stays on the list",
-   "FAIL — Stopping temazepam abruptly, or ceasing clonidine yourself in the 2024 re-skin — temazepam 'roughly doubles the chance of a fall at your age; I'd like to reduce it slowly rather than stop it suddenly'; clonidine stopped abruptly causes rebound hypertension; amitriptyline in an older faller (drowsiness, postural drop, anticholinergic) — 'I'd review the indication with your doctor', not cease it",
-   "SAY — 'Falls usually have several causes — I've found four, and most of them are your tablets, which is good news because tablets can be changed': the two blood-pressure lowering agents, the sedative, the numbness she feels in her legs (examination normal but the symptom itself raises fall risk — check B12 and sugar), and the depression tied to poor sleep and daytime drowsiness",
-   "DO — PMHx four questions for each condition (when, treatment, adherence, follow-up, complications); the diuretic → nocturia; alcohol quantified; the social screen; PEFE with lying and standing BP at one and three minutes, glucose, lower limb neurology incl. vibration and proprioception; medication review with the prescriber, sleep managed another way, mood review; home safety, review, red flags"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-105",
