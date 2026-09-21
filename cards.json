@@ -25314,9 +25314,8 @@
  {
   "id": "MED-97",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "Emergency Department. Mother on the way. An ECG has already been done — laminated tracing handed over for task 2. The examiner gives the QTc (0.54 s) ONLY if you ask for it. Vitals: BP normal, ★ pulse 50, RR and temperature normal.",
   "stem": [
    "Lily, 15, brought in by ambulance after fainting at school. Her mother is on the way. She has had two previous similar episodes, and an ECG has already been done."
   ],
@@ -25325,112 +25324,211 @@
    "Interpret the ECG to your examiner",
    "Explain your diagnosis and differentials"
   ],
-  "time": "8 minutes: 5 history · ECG · explanation. Register 'pulse 50' at the vitals · speak to Lily, plainly, permission first · ★ confirm LOC · ★ seizure screen ×3 · duration, ★ each episode, ★ 'what were you doing?' → sitting, three times — no reflex/orthostatic explanation · context ×4 · ★ BEFORE — no warning (positive 1) · AFTER ×3 · sweep: CNS, CVS, GI, ★ all medications (acne, allergies, nausea, mood), alcohol/drugs, stress · ★ protect the last 30 s for FAMILY HISTORY — similar episodes (mum faints — positive 2), sudden death, drowning, cot death, congenital deafness · ★ ECG in seven steps aloud → step 7: 'examiner, could you tell me what the QTc is?' → 0.54 → commit · LQTS + three reasons · honest about 'could I die?' · differentials across systems · admit, monitor, K/Mg/Ca/TSH, paediatric cardiology, beta blocker, drugs to avoid · ★ ECG the mother and first-degree relatives · defer sport; no swimming alone.",
+  "findings": [
+   [
+    "READ THE STEM LIKE A CLUE SHEET",
+    "'AN ECG HAS ALREADY BEEN DONE' — STEMS DO NOT MENTION INVESTIGATIONS FOR DECORATION. If the AMC tells you an ECG exists AND ASKS YOU TO INTERPRET IT, THE ABNORMALITY IS ON THAT ECG AND THE HISTORY WILL NOT GIVE YOU THE DIAGNOSIS. Only FIVE minutes of history for a case with almost no positives — BECAUSE THE MARKS ARE DOWNSTREAM"
+   ],
+   [
+    "Vitals on request",
+    "BP NORMAL · PULSE 50 · RESPIRATORY RATE AND TEMPERATURE NORMAL. NOTE THE BRADYCARDIA"
+   ],
+   [
+    "THE ONLY TWO POSITIVES IN THE WHOLE HISTORY",
+    "1 NO WARNING SYMPTOMS BEFORE ANY OF THE THREE EPISODES — and one occurred WHILE SHE WAS SITTING QUIETLY IN CLASS. 2 FAMILY HISTORY: 'MY MUM USED TO FAINT WHEN SHE WAS YOUNGER.' EVERYTHING ELSE IS NEGATIVE. THAT IS THE CASE, NOT A FAILURE OF YOUR HISTORY"
+   ],
+   [
+    "THE SEVEN-STEP ECG READ",
+    "1 RATE — six large squares, about 50, A BRADYCARDIA · 2 RHYTHM regular · 3 P WAVES present and normal before every QRS, SO SINUS BRADYCARDIA · 4 PR INTERVAL normal · 5 QRS normal duration · 6 ST SEGMENTS no elevation or depression · 7 T WAVES AND QT"
+   ],
+   [
+    "THE ONE SENTENCE TO LEARN VERBATIM",
+    "'EXAMINER, I'D NOW LIKE TO CHECK THE T WAVES AND CALCULATE THE CORRECTED QT INTERVAL. COULD YOU TELL ME WHAT THE QTc IS?' → 'THE CORRECTED QT IS 0.54.' THE EXAMINER IS HOLDING THE NUMBER AND WILL HAND IT TO YOU. THAT IS THE ENTIRE DIFFERENCE BETWEEN PASSING AND FAILING"
+   ],
+   [
+    "THE EYEBALL CHECK — and why you still ask",
+    "At normal rates THE QT SHOULD BE LESS THAN HALF THE RR INTERVAL. The classic bedside trick is TO FOLD THE TRACING IN HALF — BUT EXAM ECGs ARE LAMINATED AND YOU CANNOT FOLD THEM, and AT A RATE OF 50 THE HALFWAY RULE IS UNRELIABLE ANYWAY. USE THE EYEBALL CHECK TO RAISE SUSPICION; ASK THE EXAMINER FOR THE NUMBER"
+   ],
+   [
+    "FIVE EXTRA QUESTIONS, HIGHLY SPECIFIC HERE",
+    "HAS IT EVER HAPPENED WHILE EXERCISING, OR SWIMMING? · HAS IT EVER BEEN SET OFF BY A SUDDEN LOUD NOISE — AN ALARM CLOCK, THE PHONE? · ANY MEDICATIONS AT ALL, INCLUDING FOR ACNE, ALLERGIES, NAUSEA OR MOOD? · HAS ANYONE DIED SUDDENLY, DROWNED, OR HAD AN UNEXPLAINED CAR ACCIDENT, ANY COT DEATHS? · IS ANYONE IN YOUR FAMILY DEAF FROM BIRTH?"
+   ],
+   [
+    "The rest of the history",
+    "COMPLETE LOC · NO jerky movements, tongue bite or incontinence · THIRD EPISODE — first in class, second at home, third today in class · JUST SITTING, LISTENING TO THE TEACHER · not hot, not stressed, no prolonged standing, no change of position · NO warning · no missed meals, head injury, fever or rash · NOT confused or tired after, not pale, not injured · neuro, CVS, GI, drugs, psychogenic ALL NEGATIVE"
+   ],
+   [
+    "THE MOTHER IS NOT JUST A RELATIVE",
+    "She is on her way, SHE USED TO FAINT HERSELF, AND SHE HAS NEVER BEEN INVESTIGATED. She is A COLLATERAL HISTORY AND A SCREENING TARGET. Welcome her, CHECK WITH LILY FIRST, then bring her in"
+   ],
+   [
+    "A RARE RECALL, BUT A CHEAP ONE TO PREPARE",
+    "A fixture before the 2020 pause, NOTORIOUS FOR FAILING ALMOST EVERYONE WHO SAT IT. The syncope structure is already built and THE ONLY NEW CONTENT IS THE QT INTERVAL AND ONE SENTENCE. THE CASES WITH THE WORST HISTORICAL PASS RATES ARE THE ONES WHERE PREPARATION BUYS THE MOST"
+   ]
+  ],
+  "findingsLabel": "A near-empty history, seven ECG steps, and the one sentence that decides it",
+  "must": [
+   "FAIL — Not asking for the QTc: silent staring, an attempt to fold laminated paper, then a guess.",
+   "FAIL — Answering 'sick sinus syndrome' on seeing a bradycardia of 50.",
+   "FAIL — Blurting 'this is long QT' with no interpretation. The seven steps are scored.",
+   "FAIL — Wrong primary diagnosis with long QT third in the differential list. That does not rescue it.",
+   "ASK — Examiner, could you tell me what the corrected QT interval is?",
+   "ASK — Has anyone in the family died suddenly, drowned, or had an unexplained accident?"
+  ],
   "back": {
-   "dx": "Congenital long QT syndrome: three syncopal episodes over months, each while seated doing nothing (class, home, class), ~1 min, complete LOC, no jerking/tongue bite/incontinence, ★ never any warning ('I'm fine, then I'm on the floor'), not confused after, not pale, no injury; everything else negative — no chest pain/palpitations/SOB, no medications (none for acne/allergies/nausea/mood), no alcohol/drugs, no stress, no PMHx; ★ mother used to faint when younger and still does sometimes; no sudden deaths, drownings, cot deaths or congenital deafness. Vitals: pulse 50 (bradycardia — note it). ECG in seven steps: rate ~50 (six large squares), regular, P before every QRS → sinus bradycardia, PR normal, QRS normal, ST no elevation/depression, T waves and QT → ★ 'examiner, could you tell me what the QTc is?' → 0.54 s = 540 ms — markedly prolonged (expect <~460 in a girl; >500 high risk) → sinus bradycardia with a significantly prolonged QTc — long QT syndrome. Never try to measure it silently on a laminated tracing (paper-folding unavailable, Bazett under time pressure unrealistic — candidates default to sinus bradycardia/sick sinus and fail; a correct differential does not rescue a wrong primary diagnosis). To Lily: 'after each beat the electrical system takes longer than it should to reset; sometimes it tips the heart into a fast, disorganised rhythm — the heart can't pump, blood doesn't reach the brain, you black out, then it settles, which is why you wake up fine'. Three reasons: the QT on the tracing; mum's fainting (a version runs in families); no warning (cause in the heart, not a simple faint). 'Could I die?' → honest: taken seriously, occasionally dangerous — hence not home; very treatable; finding it today is good news; a tablet (beta blocker) greatly reduces the chance; a list of medicines to avoid. Differentials across systems: other rhythms (too slow, block), muscle/valve, seizure, brain, glucose/salts, PE, reflex/orthostatic (seated, no warning), panic last. Plan: admit on a monitor, K/Mg/Ca/TSH/glucose, paediatric cardiology today, beta blocker likely, QT-prolonging drug list (antibiotics, antiemetics); ★ when mum arrives — with Lily's permission — mum needs an ECG today; screen parents and siblings; sport — defer to the specialists (type-dependent), hold competitive sport, no swimming (some forms triggered by exercise and swimming).",
+   "dx": [
+    "**LONG QT SYNDROME — DELAYED VENTRICULAR REPOLARISATION, seen on the ECG as a prolonged QT interval.** **THE DANGER IS NOT THE LONG QT ITSELF BUT WHAT IT PREDISPOSES TO: TORSADES DE POINTES, a polymorphic ventricular tachycardia. TORSADES CAUSES SYNCOPE WHEN IT SELF-TERMINATES, AND SUDDEN CARDIAC DEATH WHEN IT DOES NOT.**",
+    "**THE DISCRIMINATING ISSUE: THINK OUT LOUD, AND ASK. This station has been failed, repeatedly, BY CANDIDATES WHO KNEW THE ANSWER.** **The QTc CANNOT BE MEASURED BY EYE on a laminated ECG under exam pressure, so the candidate who tries to calculate it privately RUNS DOWN THE CLOCK, PANICS, AND DEFAULTS TO SINUS BRADYCARDIA OR SICK SINUS SYNDROME. BOTH ARE REASONABLE-LOOKING ANSWERS. BOTH ARE WRONG.**",
+    "**WHY THINKING OUT LOUD IS A GENERAL RULE, NOT A TRICK: THE EXAMINER CANNOT SEE YOUR REASONING. If you work silently you are scored on your FINAL ANSWER ALONE, and every intermediate step you performed correctly EARNS NOTHING. IN AN OSCE, UNSPOKEN REASONING IS UNSCORED REASONING — and if you need a number you cannot obtain, ASKING FOR IT IS NOT A WEAKNESS. IT IS THE CORRECT CLINICAL BEHAVIOUR, AND IT IS WHAT THE STATION IS TESTING.**",
+    "**DIAGNOSIS, THEN THREE REASONS: 'ONE, on your heart tracing a measurement called THE QT INTERVAL IS LONGER THAN IT SHOULD BE. TWO, you told me YOUR MUM USED TO FAINT when she was younger, and there is a version of this that RUNS IN FAMILIES. THREE, YOU FAINT WITHOUT ANY WARNING, AND THAT USUALLY MEANS THE CAUSE IS IN THE HEART.'** **NEVER GIVE A DIAGNOSIS WITHOUT ITS REASONS.**",
+    "**A BETTER LAYPERSON EXPLANATION THAN 'YOUR HEART BEATS SLOWER THAN USUAL' — the slow rate is AN ASSOCIATION, NOT THE MECHANISM: 'your heart has an ELECTRICAL SYSTEM that makes it beat. In this condition, after each beat, THE ELECTRICAL SYSTEM TAKES LONGER THAN NORMAL TO RESET. Most of the time that causes no problem — but sometimes it CAN TIP THE HEART INTO A VERY FAST, DISORGANISED RHYTHM, and while that's happening THE HEART CAN'T PUMP PROPERLY, SO YOU BLACK OUT.'**",
+    "**WHERE THE QT IS MEASURED: from the START OF THE QRS COMPLEX to the END OF THE T WAVE — the time the ventricles take to depolarise AND THEN FULLY RECOVER. IT VARIES WITH HEART RATE: SLOWER RATES GIVE LONGER QTs. Since long QT syndrome typically comes WITH A BRADYCARDIA, THE RAW QT IS MISLEADING AND MUST BE RATE-CORRECTED.**",
+    "**CORRECTION — BAZETT'S FORMULA IS QTc = QT DIVIDED BY THE SQUARE ROOT OF THE RR INTERVAL IN SECONDS, NOT BY RR ITSELF. Dividing by RR alone gives a SUBSTANTIALLY DIFFERENT NUMBER, so if you quote the formula, QUOTE IT CORRECTLY.**",
+    "**THRESHOLDS: QTc is generally prolonged ABOVE ABOUT 450 ms IN MEN AND BOYS and 460–470 ms IN WOMEN AND GIRLS; ABOVE 500 ms IS MARKEDLY PROLONGED AND HIGH RISK.** **The source's 'less than 0.40 or 0.44' is A CONSERVATIVE NORMAL RANGE and will not mislead you — AT 0.54 SHE IS UNAMBIGUOUSLY ABNORMAL ON ANY THRESHOLD.**",
+    "**CONGENITAL SUBTYPES BEHAVE DIFFERENTLY: one is typically triggered by EXERCISE, ESPECIALLY SWIMMING; another by EMOTION OR SUDDEN LOUD NOISE; a third by REST OR SLEEP, and is THE SUBTYPE MOST ASSOCIATED WITH BRADYCARDIA.** **She fainted three times SITTING QUIETLY with a resting rate of 50 — A REST-TRIGGERED PATTERN.** A rarer inherited form **combines long QT with CONGENITAL DEAFNESS, which is why you ask about hearing.**",
+    "**ACQUIRED CAUSES — EXCLUDE IN EVERYONE. ELECTROLYTES: LOW POTASSIUM, LOW MAGNESIUM, LOW CALCIUM, check all three. DRUGS, many of them ordinary prescriptions: ANTIPSYCHOTICS, CITALOPRAM AND TRICYCLICS, ONDANSETRON AND DOMPERIDONE, MACROLIDES, FLUOROQUINOLONES, antifungals, SOTALOL AND AMIODARONE, METHADONE. OTHER: HYPOTHYROIDISM, ANOREXIA NERVOSA, hypothermia, raised intracranial pressure, significant bradycardia or heart block.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Vital signs?' → BP normal, pulse 50, RR/temp normal → 'I'll note the bradycardia' · 'Hi Lily, I'm Dr —; I hear your mum's on her way. How can I help?' → third faint, everyone staring, scared · 'I'm so sorry that happened again — that must have been frightening, especially in front of everyone. Is it okay if I ask a few questions so we can find the reason?'"
+     "**To the examiner: blood pressure, pulse rate, respiratory rate and temperature.** Then **WIPE, PITCHED FOR A 15-YEAR-OLD: 'I hear you're waiting for your mum — she's on her way. How can I help you today?'**"
     ],
     [
-     "0:45",
-     "★ 'Did you lose consciousness completely, or were you aware?' → completely · witnessed (whole class, teacher) · ★ 'jerky movements? bite your tongue? wet or soil yourself?' → no ×3"
+     "0:20",
+     "**Empathy, then permission: 'I'm so sorry you fainted again today — that must have been really frightening, ESPECIALLY IN FRONT OF EVERYONE. Is it okay if I ask you a few questions so we can find the reason for these faints?'**"
     ],
     [
-     "1:15",
-     "Duration (~1 min) · first time? (third) · ★ 'describe each episode' → class / home / class · ★ 'what were you actually doing?' → just sitting, listening → register it · hot? stressed? standing long? just stood up? → no ×4"
+     "0:35",
+     "**Confirm and exclude: did you lose consciousness COMPLETELY, or were you AWARE of your surroundings · any JERKY MOVEMENTS · did you BITE YOUR TONGUE · did you WET OR SOIL YOURSELF?**"
     ],
     [
-     "2:00",
-     "★ BEFORE: 'any warning at all — dizzy, sick, sweating, vision going?' → 'never any warning — I'm fine, then I'm on the floor' (positive 1, make a clear note) · meals/fluids (had lunch) · head knock · fever/rash · AFTER: confused or tired (neither) · pale (no) · injured (no — sitting down)"
+     "0:55",
+     "**IS THIS THE FIRST TIME · CAN YOU DESCRIBE EACH EPISODE · WHAT WERE YOU DOING?** Then **the environment sweep: hot day · stressed · standing a long time · change of position?**"
     ],
     [
-     "2:45",
-     "Signpost · CNS: headache, vision, speech, weakness, numbness · CVS: chest pain, ★ racing/fluttering, SOB · GI · alcohol/drugs · ★ 'any medications at all — including anything for acne, allergies, nausea or your mood?' → none · breathing fast/stress → no"
+     "1:35",
+     "**BEFORE: DID YOU GET ANY WARNING BEFORE YOU FAINTED · missed meals and fluids · head injury · fever or rash? AFTER: confused or tired · pale · injured?**"
     ],
     [
-     "4:15",
-     "★ Protected family history: 'has anyone else in your family had episodes like this?' → mum used to faint, still does (positive 2 — pause on it) · 'anyone died suddenly and unexpectedly, or drowned, or an unexplained accident? cot deaths?' · 'is anyone deaf from birth?' → no · PMHx none"
+     "2:05",
+     "**Signpost, then the system buckets, asked once: CNS · CVS · RESPIRATORY · GI · DRUGS AND ALCOHOL · PSYCHOGENIC LAST.** **EXPECT NEGATIVES AND DO NOT LET THEM RATTLE YOU — repeating questions and losing structure means arriving at the ECG FLUSTERED AND SHORT OF TIME.**"
+    ],
+    [
+     "3:00",
+     "**THE FIVE SPECIFIC QUESTIONS: exertional or SWIMMING-triggered episodes · STARTLE triggers, an alarm clock or the phone · ANY MEDICATIONS INCLUDING ACNE, ALLERGY, NAUSEA OR MOOD TREATMENTS · sudden deaths, DROWNINGS, unexplained car accidents, COT DEATHS in the family · ANYONE DEAF FROM BIRTH?**"
+    ],
+    [
+     "4:00",
+     "**THE FAMILY HISTORY QUESTION THAT CLOSES EVERY SYNCOPE HISTORY: 'any family history of similar episodes, or of sudden death?'** Then **FOLLOW IT UP — half the diagnostic evidence is here.**"
+    ],
+    [
+     "4:30",
+     "**Past medical history, then close the history. Five minutes is the allocation and THE MARKS ARE DOWNSTREAM.**"
     ],
     [
      "5:00",
-     "★ ECG, seven steps aloud: rate ~50 (six large squares) · regular · P before every QRS → sinus bradycardia · PR normal (<5 small squares) · QRS normal (<3) · ST — no elevation/depression · ★ 'T waves and QT interval — examiner, I'd like to check the T waves and calculate the corrected QT. Could you tell me what the QTc is?' → 0.54 → '540 ms — markedly prolonged; expect under ~460 in a girl her age; above 500 is high risk — sinus bradycardia with a significantly prolonged QTc: long QT syndrome'"
+     "**Take the ECG and DELIVER ALL SEVEN STEPS OUT LOUD, even if you recognise it instantly. THE INTERPRETATION IS SCORED, NOT JUST THE ANSWER.**"
     ],
     [
-     "6:00",
-     "To Lily: LQTS named; mechanism in her words · ★ three reasons · 'is it serious? could I die?' → honest, then the good news · differentials across systems"
+     "5:40",
+     "**STEP SEVEN — ASK FOR THE QTc, VERBATIM.**"
     ],
     [
-     "7:00",
-     "Plan: monitor, bloods (salts, thyroid), children's heart specialists today, beta blocker likely, medicines to avoid (some antibiotics, anti-sickness) · ★ 'when your mum gets here I'd like to talk to you both — if she's been fainting too she needs a heart tracing herself today; this runs in families, so we'd check parents, brothers and sisters — is that alright with you?' · netball/swimming → defer to the specialists; hold competitive sport, no swimming, especially alone · summary · questions"
+     "5:50",
+     "**The impression: 'SINUS BRADYCARDIA AT 50 WITH A MARKEDLY PROLONGED QTc OF 540 MILLISECONDS. My impression is LONG QT SYNDROME.'**"
+    ],
+    [
+     "6:10",
+     "**SPEAK TO LILY, NOT OVER HER. Name the diagnosis and GIVE THE THREE REASONS.** Then **the plain-language mechanism if there is time.**"
+    ],
+    [
+     "6:45",
+     "**The differentials by bucket, WITH THE NEGATIVES VOICED — here the negatives ARE the reasoning, and unvoiced they make the presentation sound thin.**"
+    ],
+    [
+     "7:15",
+     "**The plan: MONITORED BED · potassium, magnesium and calcium corrected and KEPT HIGH-NORMAL · medication review · echocardiogram · URGENT PAEDIATRIC CARDIOLOGY for BETA BLOCKADE and genetic assessment.**"
+    ],
+    [
+     "7:40",
+     "**THE FAMILY: 'your mum needs an ECG today too' — first-degree relatives get screened, STARTING WITH THE MOTHER.** Then **a WRITTEN LIST OF QT-PROLONGING DRUGS TO AVOID FOR LIFE, and 000 for any further blackout, chest pain or palpitations.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'I'm so sorry that happened again today — that must have been really frightening. Is it okay if I ask you a few questions so we can find the reason for these faints?' / 'Did you lose consciousness completely, or were you aware of what was going on around you?'",
-    "'Can you describe each of the episodes for me?' / ★ 'What were you actually doing when it happened?' / ★ 'Did you get any warning at all — did you know it was about to happen?'",
-    "'Do you take any medications at all — including anything for acne, allergies, nausea or your mood?'",
-    "★ 'Has anyone else in your family had episodes like this? Has anyone died suddenly and unexpectedly, or drowned? Is anyone deaf from birth?'",
-    "'Counting large squares between R waves — about six, so a rate of roughly 50.' / 'P waves present and normal before every QRS, so this is sinus bradycardia.' / ★ 'Examiner, I'd like to check the T waves and calculate the corrected QT interval. Could you tell me what the QTc is?' / ★ '0.54 seconds is 540 milliseconds, which is markedly prolonged.'",
-    "Examiner won't give it: 'The QT runs from the start of the QRS to the end of the T wave, measured in lead II. At normal rates the QT should be less than half the RR — here the T wave extends beyond the halfway point, so it's prolonged. At a rate of 50 the raw QT overstates it, so it must be rate-corrected with Bazett — QT ÷ √RR. My assessment: the corrected QT is prolonged; with recurrent syncope without prodrome and a family history, long QT syndrome.'",
-    "★ 'After each beat, the electrical system takes longer than it should to reset — and that can tip the heart into a fast, disorganised rhythm, so blood doesn't reach the brain and you black out.' / ★ 'Three reasons: the QT measurement on your tracing, your mum's history of fainting, and the fact you faint with no warning.'",
-    "'Is it serious? Could I die from it?' → 'You asked me straight, so I'll answer you straight. It is something we take seriously — occasionally that rhythm can be dangerous, and that's why I don't want you going home while we sort it out. But it's very treatable once we know about it, and finding it today is genuinely good news, because now we can protect you.' (never 'don't worry, it's nothing' → 'then why am I here for the third time?')",
-    "★ 'If your mum's been fainting too, she needs a heart tracing herself today. This runs in families, so we'd usually check parents and any brothers or sisters.' / Mother arrives: 'Lily, is it alright with you if I go through what I've found with your mum here?' — first",
-    "'Netball trials, swimming?' → 'A fair question and I don't want to guess. It depends on which type you have, and the specialists will work that out. Until they've seen you, hold off competitive sport and please don't swim — especially not alone; some forms are triggered by exercise and by swimming in particular. Not a permanent ban — until we know what we're dealing with.'"
-   ],
    "pefe": [
-    "Role-player: Lily, 15, Year 10, mum and younger brother, netball, healthy; never volunteers the absent warning or the family history — the only two positives. Articulate, deadpan, teenage-blunt; engages with a doctor who talks TO her. Always asks 'is it serious? could I die?'; 'don't worry, it's nothing' → 'then why am I here for the third time?'. Jargon (syncope, prodrome, repolarisation, QT interval) → 'what does that mean?'. If mum's screening never mentioned: 'Mum faints too — does that mean she's got it?'. Asks about netball",
-    "Findings: BP normal · pulse 50 · RR/temp normal · ECG sinus bradycardia; normal P, PR, QRS, ST · QTc 0.54 s — only if you ask · bloods to request: K, Mg, Ca, TSH, glucose · ECG all first-degree relatives",
-    "Variant 2 — acquired: erythromycin for a chest infection + days of vomiting: macrolide + hypokalaemia/hypomagnesaemia prolong the QT → check and replace K/Mg/Ca urgently, cease the macrolide, repeat ECG; may be fully reversible — still monitor; still take the family history (drugs unmask predisposition) · Variant 5 — you said 'sinus bradycardia' and the examiner offers 'anything else?': take the lifeline — go back to the T waves and QT, ask for the QTc, revise; a correct differential does not rescue a wrong primary diagnosis",
-    "Measuring it yourself (if asked): QRS onset to T-wave end, lead II or V5; Bazett QTc = QT ÷ √RR (seconds); eyeball QT < half the RR at normal rates — unreliable at 50, which is why you ask for the corrected value · Horner-free ECG checklist: rate = 300 ÷ large squares; PR 3–5 small squares (120–200 ms); QRS <3 small squares",
-    "Treatment: beta blocker (propranolol/nadolol) first line; ICD after arrest or breakthrough syncope on treatment · torsades with a pulse: IV magnesium sulfate, correct K, overdrive pacing or isoprenaline VERIFY · QT-prolonging drugs to avoid: macrolides, some antiemetics (ondansetron, domperidone), antipsychotics, some antihistamines, etc. — give the list · LQT1 exercise/swimming trigger; LQT2 auditory/emotional; LQT3 sleep/rest ADDED VERIFY",
-    "SA: admit paediatric ward on telemetry → WCH paediatric cardiology; ECG the mother in ED today; family screening/genetics via WCH; MedSTAR 1300 13 12 33 for retrieval from a regional site; mature-minor consent — check with Lily before talking to mum",
-    "QTc — 0.54 seconds — given only if you ask",
-    "Family — ECG for all first-degree relatives"
+    "**Do now: 12-LEAD ECG WITH QTc and CONTINUOUS CARDIAC MONITORING FROM ARRIVAL · POTASSIUM, MAGNESIUM AND CALCIUM — correct aggressively and KEEP POTASSIUM IN THE HIGH-NORMAL RANGE · bedside glucose · TSH · FBC · REVIEW EVERY MEDICATION, INCLUDING OVER-THE-COUNTER AND ACNE TREATMENTS.**",
+    "**Do next: PAEDIATRIC CARDIOLOGY REFERRAL — in Australia to an INHERITED HEART DISEASE SERVICE · ECHOCARDIOGRAM to exclude structural disease · serial ECGs, Holter or exercise testing as directed · SCREEN FIRST-DEGREE RELATIVES WITH AN ECG, STARTING WITH THE MOTHER · GENETIC TESTING AND COUNSELLING for the family.**",
+    "**BETA BLOCKERS ARE FIRST-LINE — PROPRANOLOL OR NADOLOL — and reduce arrhythmic events. SPECIALIST-INITIATED.** **An ICD if she has had A CARDIAC ARREST, or SYNCOPE DESPITE BETA BLOCKADE.** VERIFY.",
+    "**IF SHE DETERIORATES INTO TORSADES DE POINTES: PULSELESS → DEFIBRILLATE and follow the arrest algorithm. WITH A PULSE → INTRAVENOUS MAGNESIUM SULFATE IS THE TREATMENT OF CHOICE EVEN WHEN MAGNESIUM IS NORMAL; correct potassium; STOP EVERY QT-PROLONGING DRUG; and INCREASE THE HEART RATE WITH OVERDRIVE PACING OR ISOPRENALINE TO SHORTEN THE QT, since torsades here is PAUSE-DEPENDENT.** **This is why she is on a monitored bed and not in the waiting room.**",
+    "**Avoid: PRESCRIBING QT-PROLONGING DRUGS — check before any new medication, INCLUDING ANTIBIOTICS AND ANTIEMETICS · LETTING ELECTROLYTES RUN LOW · DISCHARGING RECURRENT UNHERALDED SYNCOPE IN A TEENAGER · CLEARING HER FOR COMPETITIVE SPORT OR UNSUPERVISED SWIMMING before specialist assessment.**",
+    "**If asked how you would measure the QT yourself: 'from the START OF THE QRS to the END OF THE T WAVE, in the lead where the T wave ends most clearly — CONVENTIONALLY LEAD II OR V5 — then rate-corrected using BAZETT'S FORMULA, QT DIVIDED BY THE SQUARE ROOT OF THE RR INTERVAL IN SECONDS.'** **Rate from large squares: 300 DIVIDED BY THE NUMBER OF LARGE SQUARES — six squares equals 50.**",
+    "**SA: admit to a MONITORED PAEDIATRIC BED. In MM5, paediatric cardiology means transfer — PATS for stable transfers, MEDSTAR, WHICH INCLUDES A PAEDIATRIC AND NEONATAL RETRIEVAL SERVICE, if unstable.** **Driving: she is 15 and close to a learner's permit. LONG QT IS NOTIFIABLE UNDER AUSTROADS and she will need CARDIOLOGY CLEARANCE — FLAG IT FOR THE FUTURE rather than dwelling on it now.**"
    ],
-   "fails": [
-    "Not asking the examiner for the QTc — trying to measure a laminated tracing silently, panicking, defaulting to sinus bradycardia or sick sinus ★",
-    "Blurting 'long QT' at a glance without the seven-step interpretation (scored separately) ★",
-    "Dropping the family history for time — half the diagnostic evidence, and the reason mum needs an ECG ★",
-    "'Don't worry, it's nothing serious' to 'could I die?' ★",
-    "Forgetting to screen the mother/first-degree relatives; talking over Lily to the parent without her permission",
-    "Treating 'just sitting' as a non-answer; skipping the seizure screen because 'it's obviously a faint'; not asking about warning symptoms (positive 1 lost)",
-    "Guessing at the sport question instead of deferring; no QT-prolonging drug advice; diagnosis without three reasons"
-   ],
-   "numbers": [
-    "QT = QRS onset to T end · Bazett QTc = QT ÷ √RR · prolonged >~450 ms boys/men, ~460–470 girls/women; >500 high risk · Lily 0.54 s = 540 ms",
-    "Rate = 300 ÷ large squares (six = 50) · PR 3–5 small squares (120–200 ms) · QRS <3 small squares · eyeball: QT < half RR at normal rates (unreliable at 50)",
-    "Beta blocker (propranolol/nadolol) first line · ICD after arrest/breakthrough syncope · torsades with a pulse: IV MgSO4, correct K, overdrive pacing/isoprenaline VERIFY",
-    "Bloods: K, Mg, Ca, TSH, glucose · ECG all first-degree relatives · triggers: LQT1 exercise/swimming, LQT2 auditory/emotion, LQT3 sleep ADDED VERIFY",
-    "WCH paediatric cardiology · MedSTAR 1300 13 12 33 · 000"
+   "ddx": [
+    [
+     "**Long QT syndrome** — the answer",
+     "**Recurrent syncope AT REST, NO PRODROME, FAMILY HISTORY, bradycardia, QTc 540 ms**",
+     "**Exertional or swimming triggers, STARTLE triggers, family deafness, sudden deaths and drownings**",
+     "**ECG WITH QTc; electrolytes; cardiology and GENETIC assessment** — ADMIT"
+    ],
+    [
+     "**Sick sinus syndrome or heart block — THE CLASSIC WRONG ANSWER HERE**",
+     "**A bradycardia of 50 tempts you to stop reading**",
+     "**RHYTHM IS REGULAR SINUS WITH NORMAL P WAVES, PR AND QRS — you have not finished reading the ECG**",
+     "ECG, telemetry, Holter"
+    ],
+    [
+     "Other arrhythmias — SVT or VT, Brugada, CPVT",
+     "Palpitations, exertional or startle triggers",
+     "ECG morphology; exercise testing",
+     "Telemetry, Holter, exercise testing"
+    ],
+    [
+     "Structural — hypertrophic cardiomyopathy, aortic stenosis, anomalous coronary, myocarditis",
+     "**No murmur, no exertional pattern, no chest pain**",
+     "Murmur, exertional syncope",
+     "Echocardiogram; examination"
+    ],
+    [
+     "**Acquired long QT — drugs and electrolytes**",
+     "**MACROLIDES, fluoroquinolones, ANTIPSYCHOTICS, ONDANSETRON, sotalol, methadone; LOW K, Mg or Ca; vomiting with poor intake**",
+     "**'Any medications at all, INCLUDING FOR ACNE, ALLERGIES, NAUSEA OR MOOD?'**",
+     "**Stop the drug, replace potassium and magnesium — AND IT IS REVERSIBLE**"
+    ],
+    [
+     "Seizure · stroke · intracranial pathology · meningitis",
+     "**No jerking, tongue bite, incontinence or postictal confusion**; no headache, focal signs, fever or rash",
+     "The seizure screen and CNS bucket",
+     "Neurological examination; imaging and EEG only if indicated"
+    ],
+    [
+     "Hypoglycaemia · electrolyte disturbance · thyroid disease",
+     "**No missed meals, no sweating or tremor beforehand**",
+     "Eating pattern; weather preference",
+     "Bedside glucose; EUC with K, Ca, Mg; **TSH — HYPOTHYROIDISM PROLONGS THE QT**"
+    ],
+    [
+     "Pulmonary embolism",
+     "**No breathlessness, chest pain, calf symptoms or travel — and RARE AT 15 WITHOUT RISK FACTORS**",
+     "The respiratory bucket",
+     "Clinical assessment; imaging only if suspicion arises"
+    ],
+    [
+     "**Vasovagal and orthostatic syncope — the commonest cause of teenage syncope**",
+     "**NO PRODROME, NO TRIGGER, AND SHE WAS SEATED — confidently excluded here**",
+     "The environment sweep and the prodrome question",
+     "History; postural blood pressure"
+    ],
+    [
+     "Anaemia · pregnancy · drugs · psychogenic pseudosyncope or panic",
+     "No hyperventilation or stressor; nothing taken",
+     "FBC; beta-hCG where appropriate",
+     "**PSYCHOGENIC ALWAYS STAYS LAST — a diagnosis of exclusion**"
+    ]
    ]
   },
   "source": "Long_QT_Syndrome_2_Case_Tasks_Script_Notability.pdf (Lily, 15, third faint at school — pulse 50, QTc 0.54)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Long_QT_Syndrome_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Observations",
-    "BP normal · PULSE 50 · respiratory rate and temperature normal"
-   ],
-   [
-    "ECG",
-    "SINUS BRADYCARDIA; normal P wave, PR interval, QRS and ST segments"
-   ],
-   [
-    "Bloods to request",
-    "Potassium, magnesium, calcium, TSH, glucose"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Trying to measure the QTc yourself on a laminated tracing — candidates lose ninety seconds, panic, and default to 'sinus bradycardia' or 'sick sinus syndrome': plausible and wrong; 'examiner, I'd like to check the T waves and calculate the corrected QT — could you tell me what the QTc is?' — the single decisive act of the station; 0.54 s = 540 ms, markedly prolonged, above 500 is high risk (★)",
-   "FAIL — Blurting 'this is long QT' the moment you see the tracing, or stopping at sinus bradycardia — the seven-step interpretation is scored separately from the diagnosis: rate (six large squares, ~50), rhythm, P waves, PR, QRS, ST, then T waves and QT; and a correct differential does not rescue a wrong primary diagnosis — if the examiner offers a second look, take the lifeline and ask for the QTc (★)",
-   "FAIL — Dropping the family history because you ran out of time — it is half the diagnostic evidence and the reason her mother needs an ECG today: 'has anyone else in your family had episodes like this?' (mum used to faint — never volunteered) → sudden death, drowning, unexplained accident, cot death, congenital deafness; protect the last thirty seconds of the history for it (★)",
-   "FAIL — Not asking about warning, or not registering 'just sitting in class' — an almost entirely negative history has two positives, and the absence of a prodrome is one of them; syncope while seated, three times, with no trigger excludes reflex and orthostatic causes before you have seen a tracing; note the pulse of 50 in the vitals as a finding (★)",
-   "FAIL — 'Don't worry, it's nothing serious' when she asks 'could I die?' — she replies 'then why am I here for the third time?'; honest then framed: 'it is something we take seriously — that rhythm can occasionally be dangerous, which is why you're not going home — but it's very treatable, and finding it today is genuinely good news' (★)",
-   "DO — Speak to the 15-year-old directly with permission, not over her; seizure screen despite 'obviously a faint'; diagnosis with three reasons (the QT on the tracing, mum's fainting, no warning); mechanism in her language ('the electrical system takes longer to reset and can tip into a fast disorganised rhythm'); admit on a monitor, K/Mg/Ca/TSH, paediatric cardiology, beta blocker, QT-prolonging drugs to avoid; ECG the mother and siblings today — check with Lily first before talking to her mother; defer the sport question but no swimming alone meanwhile (★)"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-98",
