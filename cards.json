@@ -27746,9 +27746,8 @@
  {
   "id": "MED-108",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Findings on screen or from the examiner (name them). The stroke in the stem asks ONE question: is there residual deficit? Every fall happens on standing and the postural drop confirms it — but say all FOUR causes, including that a man who has had a stroke can have another. Online variant adds 'explain the consequences of recurrent falls'.",
   "stem": [
    "John, 60, has come in complaining of recurrent falls. He has a history of stroke two years ago."
   ],
@@ -27758,128 +27757,215 @@
    "Explain your diagnosis and your differentials to the patient",
    "(Online variant) Explain the consequences of recurrent falls"
   ],
-  "time": "8 minutes. Vitals · WIPE · open question ('four falls — is the stroke happening again?') · concern once · ★ LOC/jerks FIRST → 'falls rather than blackouts' · four falls, ★ describe each (couch, bed, getting up) → ★ ask the trigger question directly: 'does changing position set them off?' → documented positive · ★ injury (bruised hip) · organic screen with THREE positives: ★ residual left arm/leg weakness · ★ SOB gardening (exertional? cough?) · ★ epigastric pain → three questions only: reflux, ★ anti-inflammatories, weight loss → flag for separate review · vertigo, meals · ★ 'did you make a full recovery from the stroke, or are you left with weakness?' · hypertension ×4 (10 y, one tablet daily, adherent, follow-up, complications) · risk domains (two front steps, slippers, balance off since stroke) · geriatric (mood flat, wife Marie) · PEFE: ★ postural BP, rhythm, ★ power/tone/reflexes/plantars/sensation/gait, fundi, CVS/resp, abdomen, TUG, BSL, dipstick, ECG · ★ say the arithmetic aloud (26/24 — positive on BOTH criteria) · ★ four causes → 'don't stop the tablet' + non-drug measures · consequences → prevention line.",
+  "findings": [
+   [
+    "WHY THE STEM MENTIONS THE STROKE",
+    "IT IS NOT BACKGROUND. IT IS A DIRECT INSTRUCTION TO ASK ONE QUESTION: IS THERE ANY RESIDUAL NEUROLOGICAL DEFICIT? Did he make a full recovery, or DOES HE STILL HAVE WEAKNESS OR NUMBNESS DOWN ONE SIDE? Everything else about the stroke is secondary to that question"
+   ],
+   [
+    "The examination findings",
+    "Alert, no pallor · POSTURAL BP SITTING 120/80, STANDING 94/56 · pulse regular · LEFT ARM AND LEFT LEG POWER 3/5, RIGHT SIDE 5/5 · tone, reflexes, plantars and gait CONSISTENT WITH A PREVIOUS STROKE · lower limb sensation INTACT · fundoscopy NO hypertensive retinopathy · CVS and chest normal · MILD EPIGASTRIC TENDERNESS, no mass · TIMED UP AND GO PROLONGED · glucose normal · ECG sinus"
+   ],
+   [
+    "DO THE ARITHMETIC OUT LOUD — under pressure it is easy to fumble",
+    "SYSTOLIC 120 − 94 = A FALL OF 26. DIASTOLIC 80 − 56 = A FALL OF 24. BOTH POSITIVE. Say the numbers AND the conclusion: 'THAT IS A DROP OF 26 SYSTOLIC AND 24 DIASTOLIC — A POSITIVE POSTURAL DROP'"
+   ],
+   [
+    "THE CRITERION IS EITHER VALUE, NOT BOTH",
+    "A sustained fall of 20 mmHg SYSTOLIC OR 10 mmHg DIASTOLIC WITHIN 3 MINUTES OF STANDING. AT LEAST ONE PAST EXAM GAVE A DIASTOLIC-ONLY DROP — A CANDIDATE WHO CHECKS ONLY THE SYSTOLIC WILL CALL IT NEGATIVE. Some references use 15 for the systolic; quote 20 and add that if challenged"
+   ],
+   [
+    "THE PATTERN IS HANDED TO YOU",
+    "FOUR FALLS, EVERY ONE ON CHANGING POSITION — standing up out of the couch, getting out of bed. ASK THE TRIGGER QUESTION DIRECTLY — 'DOES A CHANGE OF POSITION FROM SITTING OR LYING TO STANDING SET THEM OFF?' — WHICH CONVERTS AN INFERENCE INTO A DOCUMENTED POSITIVE"
+   ],
+   [
+    "INTERPRETING 3/5 POWER",
+    "GRADE 3 IS MOVEMENT AGAINST GRAVITY BUT NOT AGAINST RESISTANCE — A SUBSTANTIAL DEFICIT. Say: 'reduced power, 3 out of 5, in the left arm and leg, CONSISTENT WITH RESIDUAL HEMIPARESIS — AND THAT IS ITSELF A MAJOR RISK FACTOR FOR FALLING'"
+   ],
+   [
+    "'I GET SHORT OF BREATH WHEN I'M GARDENING'",
+    "DO NOT SKIP PAST IT. EXERTIONAL DYSPNOEA IN A HYPERTENSIVE WITH PREVIOUS CEREBROVASCULAR DISEASE IS ISCHAEMIA OR HEART FAILURE UNTIL PROVEN OTHERWISE. One extra question — any cough? — then FLAG POSSIBLE ISCHAEMIC HEART DISEASE AND INVESTIGATE IT"
+   ],
+   [
+    "THE EPIGASTRIC PAIN — three questions, no more",
+    "DO YOU GET REFLUX OR HEARTBURN · ARE YOU TAKING ANY ANTI-INFLAMMATORY PAINKILLERS, NUROFEN, VOLTAREN, ASPIRIN · HAVE YOU LOST ANY WEIGHT? In the recalls the answers are NO, NO AND NO. ASK THEM ANYWAY — it is how you would find an OCCULT GI BLEED CAUSING ANAEMIA AND FALLS. FLAG IT AS NEEDING ITS OWN REVIEW"
+   ],
+   [
+    "THE DIFFERENTIAL EVERYBODY OMITS",
+    "CANDIDATES LEAVE STROKE AND TIA OFF THE LIST BECAUSE THE PATIENT HAS ALREADY HAD A STROKE — AS THOUGH A PAST EVENT EXCLUDED A FUTURE ONE. THE OPPOSITE IS TRUE. Say it: 'YOU'VE ALREADY HAD ONE STROKE, WHICH MEANS YOUR RISK OF ANOTHER IS HIGHER, AND THAT IS EXACTLY WHY WE TREAT YOU TO PREVENT IT'"
+   ],
+   [
+    "DO NOT TELL HIM TO STOP THE TABLET",
+    "EVERY CLASS OF ANTIHYPERTENSIVE CAN CONTRIBUTE — diuretics most notoriously, but ACE inhibitors, ARBs and calcium channel blockers as well — SO THE SPECIFIC DRUG MATTERS LESS THAN THE FACT THAT HE IS ON ONE. Say 'I WOULD REVIEW THE DOSE AND TIMING', not 'he is on the wrong tablet'. HE HAS HAD A STROKE AND NEEDS BLOOD PRESSURE CONTROL"
+   ]
+  ],
+  "findingsLabel": "The stroke in the stem is a question — and the drop you must compute aloud",
+  "must": [
+   "FAIL — Finding the postural drop, announcing it, and stopping there.",
+   "FAIL — Omitting stroke and TIA because he has already had one.",
+   "FAIL — Noting 'stroke two years ago' and never asking about residual deficit.",
+   "FAIL — Telling him to stop his blood pressure tablet.",
+   "ASK — Does changing position, from sitting or lying to standing, set them off?",
+   "ASK — Did you make a full recovery, or are you left with any weakness or numbness?"
+  ],
   "back": {
-   "dx": "Multifactorial falls after stroke — FOUR causes: (1) postural hypotension 120/80 → 94/56 (26 systolic, 24 diastolic) — 'I'm confident for two reasons: I found it on examination, and every fall happened as you changed position; the history and the examination agree'; the antihypertensive contributes → review dose and timing, ★ never stop it (secondary prevention); (2) residual left hemiparesis, power 3/5 (movement against gravity, not resistance) — the reason the stroke is in the stem; (3) exertional dyspnoea gardening with hypertension + stroke → possible ischaemic heart disease → investigate; (4) ★ risk of a further stroke/TIA — a previous stroke is the strongest predictor of another, and recurrent stroke can present as falls. Separately: epigastric pain flagged for review (reflux, NSAIDs, weight loss all negative — occult GI bleed/anaemia and cardiac referral in mind).",
+   "dx": [
+    "**FOUR CAUSES. ONE: POSTURAL (ORTHOSTATIC) HYPOTENSION, almost certainly AGGRAVATED BY HIS ANTIHYPERTENSIVE. TWO: RESIDUAL LEFT HEMIPARESIS from the stroke. THREE: POSSIBLE ISCHAEMIC HEART DISEASE. FOUR: THE RISK OF A FURTHER STROKE OR TIA.**",
+    "**THE DISCRIMINATING ISSUE IS NOT FINDING THE POSTURAL DROP — THAT IS HANDED TO YOU. It is whether you DELIVER FOUR CAUSES, REASON EACH FROM BOTH THE HISTORY AND THE EXAMINATION rather than reading findings off a list, and HAVE THE CONFIDENCE TO INCLUDE ANOTHER STROKE IN A MAN WHO HAS ALREADY HAD ONE.**",
+    "**THE REASONING SENTENCE, FOR CAUSE ONE, EVERY TIME: 'I'M CONFIDENT ABOUT IT FOR TWO REASONS. FIRST, I FOUND IT ON EXAMINATION — your blood pressure was 120 over 80 sitting and 94 over 56 standing. AND SECOND, when you described your falls, ALMOST ALL OF THEM HAPPENED AS YOU CHANGED POSITION. THE HISTORY AND THE EXAMINATION AGREE.'** **That is the difference between A CANDIDATE REPORTING A NUMBER AND A CANDIDATE DEMONSTRATING CLINICAL THINKING.**",
+    "**THE SHAPE, FOUR TIMES OVER: NAME IT → EXPLAIN IT IN ONE PLAIN SENTENCE → LINK IT EXPLICITLY TO FALLS — and for cause one, GIVE THE TWO REASONS YOU BELIEVE IT.**",
+    "**CAUSE TWO: 'I also found SOME REMAINING WEAKNESS IN YOUR LEFT ARM AND LEG from your stroke — on testing, the strength there is reduced. THAT WEAKNESS MAKES YOU LESS STEADY ON YOUR FEET AND INCREASES THE RISK OF FALLS.'**",
+    "**CAUSE THREE: 'I'm also concerned about THE SHORTNESS OF BREATH YOU GET WHEN YOU'RE GARDENING. Put together with YOUR BLOOD PRESSURE AND YOUR PREVIOUS STROKE, there's a chance you have SOME NARROWING OF THE ARTERIES SUPPLYING THE HEART, which could be contributing to the falls. I'd like to INVESTIGATE THAT PROPERLY.'**",
+    "**CAUSE FOUR, said honestly: 'HAVING HAD A STROKE MEANS YOU ARE AT HIGHER RISK OF HAVING ANOTHER ONE, OR A MINI-STROKE — AND THOSE CAN CAUSE FALLS TOO. THAT'S NOT TO FRIGHTEN YOU: IT'S EXACTLY WHY WE TREAT YOUR BLOOD PRESSURE AND KEEP YOU ON PREVENTIVE MEDICATION.'**",
+    "**AND THE LOOSE END: 'separately, I want to come back to THE PAIN IN YOUR UPPER TUMMY. It may well be unrelated to the falls, BUT I DON'T WANT TO LEAVE IT, so let's look into that at your next visit.'**",
+    "**THE MEDICATION LINE, STATED FAIRLY AND WITHOUT BLAME: 'your blood pressure tablet is LIKELY CONTRIBUTING, so we'll REVIEW THE DOSE AND THE TIMING — BUT PLEASE DON'T STOP IT YOURSELF, BECAUSE IT'S PROTECTING YOU FROM ANOTHER STROKE.'**",
+    "**THE FOURTH TASK, CONSEQUENCES: HEAD INJURY, INCLUDING BLEEDING AROUND THE BRAIN, PARTICULARLY ON BLOOD-THINNING MEDICATION · FRACTURES, MOST IMPORTANTLY THE HIP, BUT ALSO WRIST AND SPINE, USUALLY MEANING AN OPERATION AND LONG REHABILITATION · LOSS OF INDEPENDENCE, WITH MANY PEOPLE NEVER RETURNING TO THEIR PREVIOUS LEVEL · FEAR OF FALLING, WHICH MAKES PEOPLE MOVE LESS AND GET WEAKER · AND RECURRENCE, BECAUSE HAVING FALLEN IS THE STRONGEST PREDICTOR OF FALLING AGAIN.** Close with: **'WE AIM TO PREVENT FALLS BY REDUCING THE RISK FACTORS — ONE BY ONE, STARTING WITH THE ONES WE'VE FOUND TODAY.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Examiner, may I have the vital signs before I start?' → stable · WIPE · 'what's brought you in?' → four falls, 'is it happening again?' · one warm acknowledgement, then move"
+     "**Ask the examiner for vitals.** Then **WIPE and an open question.** Then **EMPATHY ONCE, SHORT AND SPECIFIC: 'falls are frightening, and it's absolutely right that you've come in.'** **Repeated reassurance in a four-minute history costs you the risk-factor block, WHICH IS WHERE THE MARKS ARE.**"
     ],
     [
      "0:45",
-     "★ 'when you fall, do you lose consciousness, or are you still aware? Any jerky movements?' → never → 'so these are falls rather than blackouts' · 'how many?' → four · ★ 'describe each' → couch, bed, getting up · ★ 'does a change of position — sitting or lying to standing — set them off?' → 'exactly' · ★ 'did you injure yourself or fracture any bones?' → bruised hip"
+     "**THE FORK: when you fall, DO YOU LOSE CONSCIOUSNESS, OR ARE YOU STILL AWARE · any JERKY MOVEMENTS?** Then **SAY THE BRANCH OUT LOUD.**"
+    ],
+    [
+     "1:00",
+     "**HOW MANY FALLS · CAN YOU DESCRIBE EACH OF THEM · WHAT WERE YOU DOING JUST BEFORE · DOES CHANGING POSITION, FROM SITTING OR LYING TO STANDING, SET THEM OFF · AND DID YOU INJURE YOURSELF OR FRACTURE ANY BONES?**"
     ],
     [
      "1:45",
-     "Organic screen: speech (fine now), ★ weakness → left arm and leg still · numbness · chest pain, palpitations, ★ SOB → gardening → 'with exertion, settles with rest? any cough?' · N/V, ★ abdo pain → points to epigastrium → 'reflux or heartburn? ★ any anti-inflammatories — Nurofen, Voltaren, aspirin? weight loss?' → no ×3 → 'I'll come back to that separately' · spinning · missed meals"
+     "**ORGANIC SCREEN. NEURO: slurred speech, WEAKNESS, numbness. CVS: chest pain, racing of the heart, ANY SHORTNESS OF BREATH. GI: nausea, vomiting, ABDOMINAL PAIN. VESTIBULAR: any spinning. METABOLIC: do the falls happen after a missed meal?**"
     ],
     [
-     "3:00",
-     "★ 'You mentioned the stroke — full recovery, or left with weakness, numbness or speech difficulty?' → left side weak, speech back · 'other conditions?' → hypertension: when (10 y), treatment (one tablet mane), adherence (every day), follow-up (yes), complications (heart, eyes)"
+     "2:10",
+     "**When the breathlessness appears, ONE EXTRA QUESTION — ANY COUGH? — then move on and FLAG IT LATER AS ITS OWN PROBLEM.** When the epigastric pain appears, **THE THREE QUESTIONS: REFLUX OR HEARTBURN · ANTI-INFLAMMATORY PAINKILLERS · WEIGHT LOSS.**"
+    ],
+    [
+     "2:30",
+     "**PAST HISTORY, STARTING WITH THE STROKE: 'you mentioned a stroke two years ago — DID YOU MAKE A FULL RECOVERY, OR ARE YOU LEFT WITH ANY WEAKNESS, NUMBNESS OR SPEECH DIFFICULTY?'**"
+    ],
+    [
+     "2:50",
+     "**THEN THE FOUR QUESTIONS FOR THE HYPERTENSION: WHEN DIAGNOSED · WHAT TREATMENT · ARE YOU TAKING IT REGULARLY · REGULAR FOLLOW-UP · AND ANY COMPLICATIONS — any problems with your heart, or any BLURRING OF YOUR VISION?**"
+    ],
+    [
+     "3:15",
+     "**THE RISK DOMAINS. HOME: stairs, slippery surfaces, LIGHTING, loose rugs, clutter, FOOTWEAR, RAILS IN THE BATHROOM. URINARY: NOCTURIA, urgency, frequency. MSK: joint pain, BALANCE PROBLEMS WHICH MAY PERSIST AFTER A STROKE, deformities, numbness. SENSES: vision and hearing. DRUGS: other medications, alcohol, recreational drugs.**"
     ],
     [
      "3:45",
-     "Risk domains: home (two front steps, slippers) · urinary (sleeps through) · MSK (no joint pain), ★ balance ('sometimes that persists after a stroke' — a bit off) · vision/hearing · other meds, alcohol, drugs · geriatric: memory, mood (flat since stroke), support (Marie), diet"
+     "**GERIATRIC SCREEN: MEMORY · MOOD · SUPPORT AT HOME · DIET.**"
     ],
     [
-     "4:45",
-     "★ PEFE: appearance/pallor · ★ postural BP + rhythm · neuro: ★ power upper and lower limbs, tone, reflexes, plantars, sensation, gait · fundi, acuity · CVS/resp · ★ abdomen — epigastric tenderness, mass · TUG, BSL, dipstick, ECG → 120/80 → 94/56; L arm/leg 3/5, R normal, sensation intact; fundi normal; mild epigastric tenderness; TUG prolonged; glucose normal; ECG SR"
+     "4:00",
+     "**ASK THE EXAMINER, NAMING EACH: general appearance — alert, pallor · POSTURAL BLOOD PRESSURE · PULSE RHYTHM · POWER IN THE UPPER AND LOWER LIMBS · TONE, REFLEXES, PLANTARS AND GAIT · SENSATION IN THE LOWER LIMBS.**"
     ],
     [
-     "5:30",
-     "★ Arithmetic aloud: 'a fall of 26 systolic and 24 diastolic — positive on both criteria' · '3 out of 5 = movement against gravity but not against resistance — a significant residual deficit'"
+     "4:40",
+     "**FUNDOSCOPY AND VISUAL ACUITY · cardiovascular — S1, S2, MURMURS, ADDED SOUNDS · respiratory — air entry and added sounds · ABDOMEN FOR EPIGASTRIC TENDERNESS, MASS OR ORGANOMEGALY · TIMED UP AND GO, OFFICE GLUCOSE, URINE DIPSTICK, ECG.**"
     ],
     [
-     "6:00",
-     "★ 'Falls usually have more than one cause, and I've found several' → four, each reasoned · 'should I stop the tablet?' → ★ firm no + review dose/timing + staged rising, fluids, avoid standing fast after a big meal · 'is this another stroke coming?' → honest: nothing today suggests a new stroke, but risk is higher — that's why we treat; FAST → 000 · epigastric pain: look into it separately · risk-factor DDx then collapse DDx · ★ consequences: head injury/intracranial bleed, hip fracture → surgery, rehab, loss of independence, fear of falling, recurrence · ★ 'we aim to prevent falls by reducing the risk factors' → physio, OT, tablet review, cardiac work-up, driving (Austroads, SA notification), summary"
+     "5:20",
+     "**DO THE ARITHMETIC OUT LOUD — 26 SYSTOLIC, 24 DIASTOLIC, BOTH POSITIVE.**"
+    ],
+    [
+     "5:35",
+     "**THE OPENING SENTENCE: 'falls usually have more than one cause, and in your case I've found SEVERAL THINGS CONTRIBUTING.'**"
+    ],
+    [
+     "5:50",
+     "**CAUSE ONE WITH ITS TWO REASONS, and the medication line WITHOUT blame and WITHOUT telling him to stop.**"
+    ],
+    [
+     "6:20",
+     "**CAUSES TWO, THREE AND FOUR — the residual weakness, the possible ischaemic heart disease, and the risk of another stroke.** Then **the loose end: the epigastric pain needs its own review.**"
+    ],
+    [
+     "7:00",
+     "**BOX 1 — other falls risk factors, checked. THEN BOX 2 — causes of collapse, with the reason each is unlikely: 'you've never lost consciousness, your rhythm and heart sounds are normal, AND THE PATTERN FITS THE BLOOD PRESSURE DROP.'**"
+    ],
+    [
+     "7:20",
+     "**THE CONSEQUENCES — head injury, hip fracture, loss of independence, fear of falling, recurrence — then FAST ADVICE AND 000 for any sudden weakness, numbness, speech or visual disturbance.** Then **THE CLOSING LINE: 'we aim to prevent falls by reducing the risk factors.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'When you fall, do you lose consciousness, or are you still aware of your surroundings? Any jerky movements?' / 'So these are falls rather than blackouts.' / ★ 'Does a change of position — from sitting or lying to standing — trigger the falls?' / ★ 'When you fell, did you injure yourself or fracture any bones?'",
-    "'Does the breathlessness come on with exertion and settle with rest? Any cough with it?' / ★ 'Tell me about that pain — any reflux or heartburn with it? Are you taking any anti-inflammatory painkillers — Nurofen, Voltaren, or aspirin? Have you lost any weight?'",
-    "★ 'You mentioned the stroke two years ago — did you make a full recovery, or are you left with any weakness, numbness or difficulty with speech?' / 'Any balance problems — sometimes that persists after a stroke?'",
-    "★ To examiner: 'a postural blood pressure and the pulse rhythm; power in the upper and lower limbs, tone, reflexes, plantars, sensation and gait; fundoscopy and acuity; cardiovascular and respiratory; the abdomen — any epigastric tenderness or mass; a Timed Up and Go, glucose, dipstick and ECG.' / ★ 'That's a fall of 26 millimetres systolic and 24 diastolic on standing — a positive postural drop on both criteria. And power of 3 out of 5 means movement against gravity but not against resistance — a significant residual deficit.'",
-    "★ 'First, your blood pressure drops when you stand up — postural hypotension. I'm confident for two reasons: I found it on examination, and almost every fall you described happened as you changed position. The history and the examination agree. Your blood pressure tablet is likely contributing, so we'll review the dose and timing — but please don't stop it yourself, because it's protecting you from another stroke.' / 'Second, the remaining weakness in your left arm and leg makes you less steady on your feet.'",
-    "'Third, I'm also concerned about the shortness of breath when you garden. With your blood pressure and your previous stroke, there's a chance of narrowing of the arteries supplying the heart, and I'd like to investigate that.' / ★ 'Fourth, and I want to be honest with you: having had a stroke means you're at higher risk of another one, or a mini-stroke, and those can cause falls too. That's not to alarm you — it's exactly why we treat your blood pressure and keep you on preventive medication.' / 'And separately, I don't want to leave that pain in your upper tummy — it may be unrelated, but let's look into it.'",
-    "'Should I stop the blood pressure tablet?' → ★ 'No — please don't stop it. It's doing an important job. I'll review the dose and when you take it, and in the meantime: sit on the edge of the bed for a minute before standing, get up in stages, keep your fluids up, and avoid standing up quickly after a big meal.' / 'Is this another stroke coming? Tell me straight' → 'Nothing today suggests a stroke right now — your examination fits your old one, not a new one. But your risk of another is higher than average, and that's why we keep your blood pressure controlled. Warning signs: face drooping, arm weakness, speech difficulty — ring 000.'",
-    "★ 'A fall can cause a head injury — bleeding around the brain — which can be life-threatening. It can cause fractures, most importantly the hip, which usually means an operation and a long rehabilitation. People often lose independence afterwards. And falls create a fear of falling — people move less, get weaker, and fall more; having fallen is the strongest predictor of falling again. So what we aim to do is prevent falls by reducing the risk factors.'",
-    "Examiner: 'He has already had a stroke — why is stroke still on your list?' → ★ 'Because a previous stroke is the single strongest predictor of a further stroke, and a recurrent stroke or TIA can present as falls rather than as an obvious deficit. Excluding it because he has already had one would be the wrong way round — it is the reason he is on secondary prevention.'"
-   ],
    "pefe": [
-    "Role-player: John, 60, retired storeman, married to Marie, single-storey house with two front steps; straightforward, a bit deflated since the stroke; frightened it means another stroke. Four falls, all on getting up; never LOC; bruised hip once. Residual left arm/leg weakness, speech recovered. Hypertension 10 y, one tablet every morning, adherent, regular GP. SOB gardening volunteered only under CVS questions — if you move on without follow-up, he never raises it again. Points to epigastrium under abdo pain; 'no, no and no' to reflux/NSAIDs/weight loss. Asks once 'should I stop the tablet?' and 'is this another stroke coming?'. Does not volunteer flat mood, balance, or the exact number of falls",
-    "PEFE: alert, no pallor · ★ sitting 120/80 → standing 94/56 · pulse regular · ★ L arm and leg 3/5, R normal, sensation intact · fundi/acuity normal · HS normal, chest clear · mild epigastric tenderness, no mass · TUG prolonged · glucose normal · dipstick negative · ECG SR. Postural drop criterion: ≥20 systolic OR ≥10 diastolic within 3 min (some references 15 systolic; no dispute about the 10) — EITHER is enough",
-    "Variant A — diastolic-only drop: 134/86 → 122/72 = 12 systolic (below), ★ 14 diastolic (above) → positive; this has appeared because candidates check the systolic, see 12, and call it negative — read both numbers every time · Variant B — 'actually I think I do go out for a moment' → syncope structure: prodrome, standing/exertion/head-turn, duration, recovery, witness, tongue/incontinence, FHx sudden cardiac death; examination + ECG carry the weight",
-    "Non-drug measures for postural drop: rise in stages · fluids · avoid large hot meals and alcohol · compression stockings · head-up bed tilt · review all BP-lowering drugs (every antihypertensive class can cause it — adherence does not exonerate the drug) · IHD work-up: ECG, troponin if acute, echo, stress testing, lipids, HbA1c · epigastric pain: FBE (anaemia), H. pylori/endoscopy if persistent, consider cardiac referral · secondary prevention: antiplatelet, statin, BP; check adherence",
-    "MRC power: 0 nil · 1 flicker · 2 moves with gravity eliminated · ★ 3 against gravity not resistance · 4 against some resistance · 5 normal · Case 1 companion (Robert, diabetic) = MED-107",
-    "SA: physio (post-stroke balance), OT home (two front steps, rails), Country Health Connect, stroke secondary-prevention review, Austroads fitness to drive with residual weakness + postural drop + possible IHD — Motor Vehicles Act 1959 notification duty (confirm current requirement) · MedSTAR 1300 13 12 33 if acute stroke"
+    "**Do now: LYING AND STANDING BLOOD PRESSURE, repeated at review · ECG · AND AN ECHOCARDIOGRAM FOR THE EXERTIONAL DYSPNOEA · FBC, BECAUSE ANAEMIA CAUSES BOTH BREATHLESSNESS AND FALLS and is relevant to the epigastric pain · UEC AND eGFR for dehydration, medication effect and electrolytes.**",
+    "**Then: GLUCOSE AND HbA1c, TFTs, VITAMIN B12 · VITAMIN D AND CALCIUM, AND CONSIDER DEXA — FRACTURE RISK, NOT JUST FALL RISK · LIPIDS AND BLOOD PRESSURE CONTROL for secondary stroke prevention · BNP IF AVAILABLE AND A CHEST X-RAY for the dyspnoea, with STRESS TESTING OR CARDIOLOGY REFERRAL considered · IF THE EPIGASTRIC PAIN PERSISTS, H. PYLORI TESTING AND CONSIDERATION OF ENDOSCOPY.**",
+    "**POSTURAL HYPOTENSION: review the antihypertensive — DOSE, TIMING, AND WHETHER THE TARGET IS STILL RIGHT — IN DISCUSSION WITH WHOEVER MANAGES IT. NON-PHARMACOLOGICAL MEASURES FIRST: RISE SLOWLY IN STAGES, SIT ON THE EDGE OF THE BED BEFORE STANDING, ADEQUATE FLUID, AVOID LARGE HOT MEALS AND ALCOHOL, COMPRESSION STOCKINGS, AND RAISING THE HEAD OF THE BED. Review any other drug that lowers blood pressure.**",
+    "**RESIDUAL HEMIPARESIS: PHYSIOTHERAPY for strength, gait and balance retraining · OCCUPATIONAL THERAPY for home assessment, RAILS, BATHROOM MODIFICATION and equipment · an appropriate WALKING AID · consider COMMUNITY STROKE REHABILITATION.**",
+    "**HE IS A SECONDARY PREVENTION PATIENT. CHECK HE IS ACTUALLY ON THE RIGHT THERAPY — AN ANTIPLATELET OR ANTICOAGULANT AS APPROPRIATE, A STATIN, AND BLOOD PRESSURE CONTROL — AND THAT HE IS TAKING IT. FALLS DO NOT SUSPEND THAT; THEY CHANGE HOW YOU DOSE AND TIME IT.**",
+    "**Do not miss: EXERTIONAL BREATHLESSNESS in a hypertensive with previous stroke · SYMPTOMATIC POSTURAL DROP · THE EPIGASTRIC PAIN, which needs its own assessment not dismissal · NEW OR WORSENING FOCAL DEFICIT, SLURRED SPEECH OR VISUAL LOSS, WHICH IS A TIA OR STROKE AND URGENT · ANY HEAD INJURY, especially on antithrombotic therapy · FRACTURE.**",
+    "**Falls generally: OT HOME ASSESSMENT · STRENGTH AND BALANCE PROGRAMME · MEDICATION REVIEW · VITAMIN D IF DEFICIENT · APPROPRIATE FOOTWEAR · PERSONAL ALARM · FALLS-CLINIC REFERRAL IF THEY CONTINUE.** **Equity: STROKE OCCURS EARLIER AND MORE OFTEN AMONG ABORIGINAL AND TORRES STRAIT ISLANDER AUSTRALIANS, and REHABILITATION IS THE INTERVENTION MOST CONSTRAINED BY GEOGRAPHY — name the barrier and plan around it.**"
    ],
-   "fails": [
-    "Finding the postural drop and stopping there; checking only the systolic and calling the drop borderline (or negative in the diastolic-only variant)",
-    "★ Never asking about residual weakness — treating the stroke as background, so cause two is missed",
-    "Skipping past the breathlessness; dropping the epigastric pain entirely (or never asking about anti-inflammatories)",
-    "★ Leaving stroke/TIA off the differentials 'because he's already had one' — backwards; a previous stroke raises the risk",
-    "Telling him to stop his antihypertensive; not offering non-drug measures",
-    "Not asking the change-of-position trigger question directly, so the pattern is never a documented positive; never asking about injury",
-    "No consequences (head injury, hip fracture) and no prevention line — fluent, confident, failed"
-   ],
-   "numbers": [
-    "Postural drop ≥20 systolic OR ≥10 diastolic within 3 min — either alone counts · John 120/80 → 94/56 = 26 / 24 · Variant A 134/86 → 122/72 = 12 / 14 → positive on diastolic",
-    "MRC 3/5 = against gravity, not resistance · four causes: postural drop · residual hemiparesis · possible IHD · further stroke/TIA · epigastric pain ×3 questions: reflux, NSAIDs, weight loss",
-    "Consequences: intracranial bleed · hip/wrist/spine fracture · surgery + prolonged rehab · loss of independence · fear of falling · recurrence · 'we aim to prevent falls by reducing the risk factors'",
-    "FAST → 000 · Austroads after stroke: private ≥4 wk, commercial ≥3 mo VERIFY · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Postural (orthostatic) hypotension** — cause 1",
+     "**EVERY FALL ON CHANGING POSITION; on an antihypertensive**",
+     "**SITTING 120/80 → STANDING 94/56 = 26 SYSTOLIC AND 24 DIASTOLIC. THE CRITERION IS EITHER VALUE**",
+     "**Review dose and timing WITH THE PRESCRIBER; non-drug measures first. DO NOT STOP IT — IT PREVENTS ANOTHER STROKE**"
+    ],
+    [
+     "**Residual hemiparesis from the stroke** — cause 2",
+     "**STROKE TWO YEARS AGO — THE STEM IS ASKING YOU THIS QUESTION**",
+     "**LEFT ARM AND LEG POWER 3/5 — AGAINST GRAVITY BUT NOT RESISTANCE**",
+     "**Physiotherapy for strength, gait and balance; OT home assessment; walking aid; community stroke rehabilitation**"
+    ],
+    [
+     "**Possible ischaemic heart disease** — cause 3",
+     "**EXERTIONAL BREATHLESSNESS WHILE GARDENING, in a hypertensive with previous cerebrovascular disease**",
+     "Any cough; chest pain; palpitations",
+     "**ECG, FBC, UEC, BNP, CHEST X-RAY, ECHOCARDIOGRAM; stress testing or cardiology. FLAG IT AS A SEPARATE PROBLEM, NOT DECONDITIONING** — urgent"
+    ],
+    [
+     "**Further stroke or TIA — the differential everybody omits** — cause 4",
+     "**HAVING HAD ONE STROKE IS THE STRONGEST PREDICTOR OF ANOTHER**",
+     "**New or worsening focal deficit, slurred speech, visual loss**",
+     "**Reinforce secondary prevention; FAST ADVICE AND 000 for sudden weakness, numbness, speech or visual disturbance** — EMERGENCY if new"
+    ],
+    [
+     "**Anaemia from occult GI blood loss**",
+     "**EPIGASTRIC PAIN; breathlessness; any aspirin or anti-inflammatory**",
+     "**REFLUX, ANTI-INFLAMMATORY PAINKILLERS, WEIGHT LOSS — the three questions**",
+     "**FBC and iron studies; H. PYLORI TESTING AND ENDOSCOPY IF IT PERSISTS. ITS OWN REVIEW, NOT FOLDED INTO THE FALLS STORY**"
+    ],
+    [
+     "**Arrhythmia or other cardiac syncope**",
+     "Loss of consciousness, no warning, palpitations",
+     "**HE IS AWARE THROUGHOUT; rhythm and heart sounds normal**",
+     "**ECG IN EVERY FALLS PATIENT**; Holter and echo if suspected — EMERGENCY"
+    ],
+    [
+     "Seizure · brain tumour",
+     "Jerking, tongue bite, postictal confusion; progressive headache",
+     "**No jerking, no LOC**; fundoscopy for papilloedema",
+     "Collateral history; imaging only if indicated"
+    ],
+    [
+     "**Hypoglycaemia · electrolyte disturbance**",
+     "Falls after missed meals; diuretics, vomiting, poor intake",
+     "**'Do the falls happen after a missed meal?'**",
+     "Bedside glucose, FOUR IS THE FLOOR; UEC and eGFR — IMMEDIATE"
+    ],
+    [
+     "Vestibular or cerebellar balance disorder",
+     "Spinning; ataxia; **balance problems MAY PERSIST AFTER A STROKE**",
+     "Vertigo question; gait, Romberg, heel–shin",
+     "Clinical; physiotherapy balance retraining"
+    ],
+    [
+     "**Home environment, senses and medications** · occult fracture",
+     "**Stairs, slippery surfaces, poor lighting, loose rugs, clutter, footwear, no bathroom rails**; sedating drugs; vision and hearing; **or hip pain since a fall**",
+     "The five risk domains; **'did you injure yourself or fracture any bones?'**",
+     "**OT HOME ASSESSMENT PLUS A STRENGTH AND BALANCE PROGRAMME.** Image an occult fracture rather than reassuring"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Post_Stroke_2_Case_Tasks_Script_Notability.pdf + Recurrent_Falls_2_Case_Tasks_Script_Notability.pdf Case 2 (John, 60, four falls on standing two years after a stroke — postural drop 120/80 → 94/56, residual hemiparesis, exertional dyspnoea, risk of further stroke)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Post_Stroke_2_Case_Tasks_Script_Notability (2).pdf",
-  "findings": [
-   [
-    "Observations (on request)",
-    "BP 128/78 seated · pulse 76 regular · RR 14 · T 36.6"
-   ],
-   [
-    "General",
-    "Alert, no pallor"
-   ],
-   [
-    "Postural blood pressure",
-    "SITTING 120/80 → STANDING 94/56 — a drop of 26 systolic and 24 diastolic"
-   ],
-   [
-    "Neurological",
-    "LEFT arm and leg 3/5, RIGHT normal; sensation intact"
-   ],
-   [
-    "Eyes",
-    "Fundi and acuity normal"
-   ],
-   [
-    "Heart and chest",
-    "Heart sounds normal; chest clear"
-   ],
-   [
-    "Abdomen",
-    "Mild epigastric tenderness, no mass"
-   ],
-   [
-    "Timed up and go",
-    "Prolonged"
-   ],
-   [
-    "Bedside tests",
-    "Glucose normal · dipstick negative · ECG sinus rhythm"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never asking about residual deficit — 'did you make a full recovery from the stroke, or are you left with weakness, numbness or difficulty with speech?' is the one question the stroke in the stem is asking; candidates who treat it as background history lose cause two (left arm and leg weakness, 3/5 on examination)",
-   "FAIL — Leaving stroke or TIA off the differentials 'because he's already had one' — backwards: a previous stroke is the single strongest predictor of another, and a recurrent stroke or TIA can present as falls; 'having had one stroke raises the chance of another — which is exactly why we treat you to prevent it', plus the FAST warning signs",
-   "FAIL — Finding the postural drop and stopping there — four causes, each with a reason: postural hypotension ('I found it on examination — 120/80 sitting, 94/56 standing — and almost every fall happened as you changed position: the history and the examination agree'), the residual hemiparesis, the breathlessness on gardening (possible ischaemic heart disease — investigate, don't discard an inconvenient positive), and the risk of a further stroke; and flag the epigastric pain separately (reflux? anti-inflammatories? weight loss?) rather than dropping it",
-   "FAIL — Checking only the systolic and calling the drop borderline — the criterion is ≥20 systolic OR ≥10 diastolic within three minutes, either is enough; say the arithmetic aloud ('a fall of 26 systolic and 24 diastolic — positive on both criteria'); a past exam gave a diastolic-only drop precisely to catch this; 3/5 power = movement against gravity, not resistance",
-   "FAIL — Telling him to stop his antihypertensive — 'please don't stop it, it's protecting you from another stroke; I'll review the dose and timing' plus non-drug measures: rise in stages, sit on the edge of the bed for a minute, fluids, avoid leaping up after a big meal; good adherence does not exonerate the drug — every antihypertensive class can cause a postural drop",
-   "DO — Loss of consciousness first and the branch said aloud; describe each fall and convert the obvious positional pattern into a documented positive by asking the trigger question directly; injuries; PEFE with postural BP, limb power, tone, reflexes, plantars, gait, fundoscopy, epigastric tenderness, TUG, glucose, ECG; the online task — consequences: head injury and intracranial bleed, hip fracture and surgery, loss of independence, fear of falling, recurrence — and the closing line: 'we aim to prevent falls by reducing the risk factors'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-109",
