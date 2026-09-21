@@ -34309,9 +34309,8 @@
  {
   "id": "MED-138",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Cruise ship berthed in Sydney after sailing from New Zealand; you are the ship's medical officer. A different task set: four-minute focused history, then an assessment — directed to the examiner — of whether this patient can be released home. He is furious about being held on board. The 2025 finding: a cannula-site infection photograph handed over on request, which does not by itself prevent discharge.",
   "stem": [
    "A 40-year-old man on a cruise ship berthed in Sydney has been diagnosed with norovirus gastroenteritis. He is insisting on being discharged home."
   ],
@@ -34319,67 +34318,211 @@
    "Take a focused history (4 minutes)",
    "Perform an assessment, directed to the examiner, of whether this patient can be released home"
   ],
-  "time": "8 min. ★ Opening for the approach marks: 'I can hear how frustrating this is — I'd be frustrated too; can I ask what's making you so keen to get home? There may be something I can help with. Whatever you tell me stays between us.' (cat alone at home → 'we can almost certainly arrange for someone to look in on her') · ★ 'when did it start? is it still going? if it has stopped — when was the last symptom?' (the exclusion criterion is time since the last symptom) · count, consistency, ★ blood (would change the diagnosis) · fever/chills, abdominal pain, N/V, dizziness (must be asymptomatic, not just diarrhoea-free) · ★ 'eating and drinking normally and keeping it down?' · ★ immunocompromise: diabetes, cancer, steroids, chemo · ★ 'what treatment did you receive on board?' → IV fluids → the cannula · ★ occupation: food handler, childcare, healthcare (changes the exclusion period, public health duty) · to examiner: appearance/dehydration, vitals incl postural BP, full abdominal examination, ★ 'look at the cannula site' → photo: erythema, swelling, purulent discharge · ★ release criteria stated: no diarrhoea/vomiting for 48 h, afebrile, tolerating oral intake, no dehydration, normal abdomen → release, remove cannula, oral flucloxacillin, mark the edge, GP 48 h / ED if fever or spreading.",
+  "findings": [
+   [
+    "A DIFFERENT TASK SET FROM THE DIARRHOEA HISTORY",
+    "FOUR MINUTES OF FOCUSED HISTORY, THEN AN ASSESSMENT DIRECTED TO THE EXAMINER OF WHETHER HE CAN BE RELEASED HOME. You are the SHIP'S MEDICAL OFFICER, berthed in Sydney after sailing from New Zealand. The diagnosis is already made — THE QUESTION IS DISPOSITION"
+   ],
+   [
+    "HE OPENS ANGRY — AND THE ANGER HAS A REASON",
+    "'I'M FURIOUS. I'VE BEEN STUCK ON THIS SHIP IN THE HARBOUR FOR DAYS.' ACKNOWLEDGE, THEN ASK WHY: 'CAN I ASK WHAT'S MAKING YOU SO KEEN TO GET HOME? THERE MAY BE SOMETHING I CAN HELP WITH.' → 'MY CAT'S AT HOME ON HER OWN.' → 'WE CAN ALMOST CERTAINLY ARRANGE FOR SOMEONE TO LOOK IN ON HER TODAY'"
+   ],
+   [
+    "THE SINGLE MOST IMPORTANT QUESTION",
+    "'WHEN DID IT START? IS IT STILL GOING? IF IT HAS STOPPED, WHEN?' THE EXCLUSION CRITERION IS TIME SINCE THE LAST SYMPTOM"
+   ],
+   [
+    "HE MUST BE ASYMPTOMATIC — NOT JUST FREE OF DIARRHOEA",
+    "COUNT, CONSISTENCY, AND ANY BLOOD — blood would change the diagnosis entirely · FEVER OR CHILLS · ABDOMINAL PAIN · NAUSEA OR VOMITING · DIZZINESS"
+   ],
+   [
+    "TOLERATING ORAL INTAKE IS A DISCHARGE CRITERION IN ITS OWN RIGHT",
+    "'ARE YOU EATING AND DRINKING NORMALLY, AND KEEPING IT DOWN?'"
+   ],
+   [
+    "THE QUESTION WHERE THE 2025 FINDING HIDES",
+    "'WHAT TREATMENT DID YOU RECEIVE ON BOARD?' → INTRAVENOUS FLUIDS. That opens THE CANNULA SITE — which you must then ASK TO INSPECT BY NAME"
+   ],
+   [
+    "TWO QUESTIONS THAT CHANGE THE ANSWER",
+    "IMMUNE STATUS — 'ANY CONDITIONS OR MEDICATIONS AFFECTING YOUR IMMUNE SYSTEM — DIABETES, CANCER, STEROIDS, CHEMOTHERAPY?' — norovirus is PROLONGED AND MORE SEVERE in the immunocompromised. OCCUPATION — 'ARE YOU A FOOD HANDLER, CHILDCARE OR HEALTHCARE WORKER?' — changes the exclusion period and creates a PUBLIC HEALTH DUTY"
+   ],
+   [
+    "THE ASSESSMENT, SPOKEN TO THE EXAMINER",
+    "GENERAL APPEARANCE — does he look well, any DEHYDRATION · VITALS — temperature, pulse, BP INCLUDING POSTURAL, respiratory rate · A FULL ABDOMINAL EXAMINATION — 'I WOULD NOT RELEASE ANYONE WITH ABDOMINAL TENDERNESS' · AND THE CANNULA SITE"
+   ],
+   [
+    "THE CARD THE EXAMINER HANDS YOU IN 2025 — on request",
+    "A PERIPHERAL CANNULA SITE INFECTION: ERYTHEMA, SWELLING AND PURULENT DISCHARGE AT THE INSERTION POINT. IT DOES NOT BY ITSELF PREVENT DISCHARGE IF HE IS WELL"
+   ],
+   [
+    "THE RELEASE CRITERIA — say them as a list",
+    "NO DIARRHOEA AND NO VOMITING FOR 48 HOURS · AFEBRILE · TOLERATING ORAL INTAKE · NO CLINICAL DEHYDRATION · A NORMAL ABDOMINAL EXAMINATION. Some services use 48–72 hours — VERIFY against current SA Health and national guidance"
+   ]
+  ],
+  "findingsLabel": "A disposition station — five release criteria, and the cannula you find by asking",
+  "must": [
+   "FAIL — Never asking when the last symptom was. The criterion is time since last symptom.",
+   "FAIL — Not asking what treatment he had on board, so the cannula is never inspected.",
+   "FAIL — Keeping him on board for a cannula site infection when he is systemically well.",
+   "FAIL — Meeting his anger with rules instead of finding out why he wants to go home.",
+   "ASK — When did the diarrhoea and vomiting last happen?",
+   "ASK — Are you a food handler, or do you work in childcare or healthcare?"
+  ],
   "back": {
-   "dx": "Resolved norovirus gastroenteritis meeting exclusion criteria for release (symptom-free ≥48 h, afebrile, tolerating oral intake, no clinical dehydration, normal abdominal examination) — plus a peripheral cannula-site infection (erythema, swelling, purulent discharge at the insertion point) from the IV fluids given on board: remove the cannula, oral flucloxacillin as for a skin and soft tissue infection, mark the margin, GP review in 48 h, ED if fever, spreading redness or unwell. IV antibiotics only for systemic features (high fever, hypotension, tachycardia, drowsiness) — he has none. Not a reason to keep him on board.",
+   "dx": [
+    "**NOROVIRUS GASTROENTERITIS — RESOLVED — with a PERIPHERAL CANNULA SITE INFECTION from IV fluids given on board.** **The question is not the diagnosis but DISPOSITION: CAN HE BE RELEASED HOME?**",
+    "**THE DISCRIMINATING ISSUE: APPLY DEFINED RELEASE CRITERIA OUT LOUD, FIND THE SECOND PROBLEM BY ASKING WHAT TREATMENT HE HAD, AND DO NOT LET A LOCAL INFECTION BECOME A REASON TO DETAIN A WELL MAN.**",
+    "**THE CRITERIA, SPOKEN TO THE EXAMINER: 'my criteria for release are: NO DIARRHOEA AND NO VOMITING FOR 48 HOURS, AFEBRILE, TOLERATING ORAL INTAKE, NO CLINICAL DEHYDRATION, and A NORMAL ABDOMINAL EXAMINATION.'** VERIFY the exclusion period — 48 hours is standard; some services use 48–72.",
+    "**THE ANSWER TO THE CHALLENGE — 'WOULD YOU STILL RELEASE HIM?': 'YES. He meets the exclusion criteria for norovirus — symptom-free for 48 hours, afebrile, eating and drinking, no dehydration and a normal abdomen. THE CANNULA SITE DOES NEED TREATMENT, BUT THAT IS ORAL ANTIBIOTICS I CAN PRESCRIBE, AND THERE IS NO REASON TO KEEP HIM ON BOARD TO GIVE IT.'**",
+    "**MANAGING THE CANNULA SITE: REMOVE THE CANNULA · START ORAL FLUCLOXACILLIN as for a skin and soft tissue infection · MARK THE EDGE OF THE REDNESS · GP REVIEW IN 48 HOURS, or ED for FEVER, SPREADING REDNESS OR FEELING UNWELL.** **IV ANTIBIOTICS ONLY FOR SYSTEMIC FEATURES — HIGH FEVER, HYPOTENSION, TACHYCARDIA OR DROWSINESS. HE HAS NONE.** VERIFY dose.",
+    "**THE OPENING THAT EARNS THE APPROACH MARKS: 'I can hear how frustrating this is, and I'D BE FRUSTRATED TOO — being held on board past your disembarkation date is really hard. CAN I ASK WHAT'S MAKING YOU SO KEEN TO GET HOME? There may be something I can help with. Whatever you tell me stays between us.'**",
+    "**SOLVE THE REAL PROBLEM: the cat. 'That's a real worry. WE CAN ALMOST CERTAINLY ARRANGE FOR SOMEONE TO LOOK IN ON HER TODAY. Let me ask you a few questions and then I'll tell you EXACTLY WHERE WE STAND.'** **A patient whose real concern is solved stops fighting the process.**",
+    "**WHY THE CRITERIA MATTER: NOROVIRUS IS HIGHLY INFECTIOUS WITH A VERY LOW INFECTIVE DOSE, SPREADS BY THE FAECAL-ORAL ROUTE, AEROSOLISED VOMIT AND CONTAMINATED SURFACES, AND CAUSES OUTBREAKS ON CRUISE SHIPS AND IN AGED CARE. VIRAL SHEDDING CAN CONTINUE AFTER SYMPTOMS STOP — hence the symptom-free window and hand hygiene advice.**",
+    "**IF ANY CRITERION FAILS — ongoing vomiting, fever, dehydration, abdominal tenderness, or blood in the stool — HE STAYS, and blood or tenderness REOPENS THE DIAGNOSIS. IMMUNOCOMPROMISE — prolonged shedding and more severe illness — lowers the threshold to keep him.**",
+    "**DISCHARGE ADVICE: HANDWASHING WITH SOAP AND WATER — ALCOHOL GEL IS LESS EFFECTIVE AGAINST NOROVIRUS · DO NOT PREPARE FOOD FOR OTHERS for at least 48 hours after symptoms stop · clean surfaces with a bleach-based product · and if he is a FOOD HANDLER, CHILDCARE OR HEALTHCARE WORKER, EXCLUSION FROM WORK FOR 48 HOURS AFTER SYMPTOMS RESOLVE, with public health notification of the outbreak per local rules.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "'I'm furious, stuck in the harbour' → ★ 'I can hear how frustrating this is, and I'd be frustrated too — being held on board past your disembarkation date is really hard. Can I ask what's making you so keen to get home? There may be something I can help with. Whatever you tell me stays between us.' → cat alone → 'that's a real worry — we can almost certainly arrange for someone to look in on her today. Let me ask a few questions and then I'll tell you exactly where we stand.'"
+     "**WIPE, then MEET THE ANGER WITH ACKNOWLEDGEMENT, NOT RULES: 'I can hear how frustrating this is, and I'd be frustrated too.'**"
     ],
     [
-     "0:45",
-     "★ 'When did it start? Is it still going? If it has stopped — when exactly was your last episode of diarrhoea or vomiting?' · count, consistency, ★ blood · 'fever or chills? tummy pain? nausea? dizziness?' · ★ 'are you eating and drinking normally and keeping it down?'"
+     "0:15",
+     "**ASK WHY HE WANTS TO GO HOME — with confidentiality — and when the cat comes, OFFER TO SOLVE IT TODAY.**"
     ],
     [
-     "2:00",
-     "★ 'Any medical conditions or medications affecting your immune system — diabetes, cancer, steroids, chemotherapy?' · ★ 'what treatment did you receive on board?' → IV fluids via a cannula (still in? sore?) · ★ 'what do you do for work — food handling, childcare, healthcare?' · anyone else in the cabin unwell · meds, allergies (penicillin) · who's at home"
+     "0:40",
+     "**THE KEY QUESTION: WHEN DID IT START · IS IT STILL GOING · IF IT HAS STOPPED, WHEN WAS THE LAST EPISODE — OF DIARRHOEA AND OF VOMITING?**"
+    ],
+    [
+     "1:10",
+     "**CHARACTER: how many times, consistency — AND ANY BLOOD?**"
+    ],
+    [
+     "1:25",
+     "**ASYMPTOMATIC, NOT JUST DIARRHOEA-FREE: FEVER OR CHILLS · ABDOMINAL PAIN · NAUSEA OR VOMITING · DIZZINESS ON STANDING?**"
+    ],
+    [
+     "1:50",
+     "**ORAL INTAKE: 'ARE YOU EATING AND DRINKING NORMALLY, AND KEEPING IT DOWN? Passing urine normally?'**"
+    ],
+    [
+     "2:10",
+     "**TREATMENT ON BOARD: 'WHAT TREATMENT DID YOU RECEIVE?' → IV fluids → 'WHERE WAS THE DRIP? ANY PAIN, REDNESS OR DISCHARGE THERE NOW?'**"
+    ],
+    [
+     "2:40",
+     "**IMMUNE STATUS: diabetes, cancer, STEROIDS, CHEMOTHERAPY, other immunosuppressants · other medical conditions · allergies — ESPECIALLY PENICILLIN, which matters for flucloxacillin.**"
+    ],
+    [
+     "3:10",
+     "**OCCUPATION AND HOME: FOOD HANDLER, CHILDCARE OR HEALTHCARE WORKER · who is at home · anyone vulnerable there — elderly, pregnant, immunocompromised?**"
+    ],
+    [
+     "3:40",
+     "**A one-line summary back, and 'is there anything else worrying you?'**"
     ],
     [
      "4:00",
-     "★ 'Examiner, before I decide about release I'd like: general appearance — does he look well, any evidence of dehydration? Vital signs — temperature, pulse, BP including a postural BP, respiratory rate. A full abdominal examination, because I would not release anyone with abdominal tenderness. And I'd like to look at the cannula site, since he had intravenous fluids on board.' → photo: erythema, swelling, purulent discharge at the insertion point → describe it"
+     "**TO THE EXAMINER — THE ASSESSMENT: general appearance and HYDRATION · temperature, pulse, BP WITH POSTURAL DROP, respiratory rate · A FULL ABDOMINAL EXAMINATION · AND I WOULD LIKE TO LOOK AT THE CANNULA SITE.**"
+    ],
+    [
+     "5:00",
+     "**Take the findings — and the cannula-site card. DESCRIBE IT: erythema, swelling and purulent discharge at the insertion point.**"
     ],
     [
      "5:30",
-     "★ 'My criteria for release are: no diarrhoea and no vomiting for 48 hours, afebrile, tolerating oral intake, no clinical dehydration and a normal abdominal examination — he meets them.' · challenge 'would you still release him with that cannula site?' → ★ 'Yes. He meets the exclusion criteria for norovirus. The cannula site needs treatment, but that is oral antibiotics I can prescribe, and there is no reason to keep him on board to give it. I would remove the cannula, start flucloxacillin, mark the edge of the redness, and ask him to see his own GP in 48 hours or attend an emergency department if he develops fever, spreading redness or feels unwell. IV antibiotics would be indicated only for systemic features — high fever, hypotension, tachycardia, drowsiness — and he has none.' · public health: notify the ship's outbreak log/port health; hand hygiene (soap and water — alcohol gel is less effective against norovirus), stay off food handling for 48 h after symptoms; the cat"
+     "**STATE THE FIVE RELEASE CRITERIA and tick each one aloud against his findings.**"
+    ],
+    [
+     "6:15",
+     "**THE DECISION: 'YES, I WOULD RELEASE HIM' — and the cannula plan: REMOVE IT, ORAL FLUCLOXACILLIN, MARK THE EDGE, GP IN 48 HOURS. IV ANTIBIOTICS ONLY IF SYSTEMICALLY UNWELL.**"
+    ],
+    [
+     "7:00",
+     "**TO THE PATIENT: you can go home today · hand hygiene with SOAP AND WATER · no food preparation for others for 48 hours · work exclusion if relevant · the cat.**"
+    ],
+    [
+     "7:30",
+     "**SAFETY-NET: FEVER, SPREADING REDNESS, RECURRENT VOMITING OR DIARRHOEA, BLOOD IN THE STOOL, OR FEELING FAINT — SEE A GP OR GO TO AN EMERGENCY DEPARTMENT.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I can hear how frustrating this is, and I'd be frustrated too. Can I ask what's making you so keen to get home? There may be something I can help with. Whatever you tell me stays between us.'",
-    "★ 'When did it start? Is it still going? If it has stopped, when was the last time you had any diarrhoea or vomiting?' / 'Are you eating and drinking normally and keeping it down?' / 'Any conditions or medicines affecting your immune system?' / 'What treatment did you receive on board?' / 'What do you do for work — do you handle food, or work in childcare or healthcare?'",
-    "★ To examiner: 'General appearance and any evidence of dehydration; temperature, pulse, blood pressure including a postural blood pressure, and respiratory rate; a full abdominal examination; and I would like to look at the cannula site, since he tells me he had intravenous fluids on board.'",
-    "★ 'My criteria for release are: no diarrhoea and no vomiting for 48 hours, afebrile, tolerating oral intake, no clinical dehydration and a normal abdominal examination.' / ★ 'Yes, I would still release him … I would remove the cannula, start flucloxacillin, mark the edge of the redness, and ask him to see his own GP in 48 hours or attend an emergency department if he develops fever, spreading redness or feels unwell.'"
-   ],
    "pefe": [
-    "Role-player: 40 M, furious at being held in the harbour; softens when asked why he's keen to get home (cat alone) and when helped; symptoms have stopped ≥48 h; eating and drinking; no fever; had IV fluids on board; not immunocompromised; not a food handler (ask anyway). Examiner hands over the cannula-site photo on request",
-    "Photo: peripheral cannula site with erythema, swelling and purulent discharge at the insertion point — phlebitis/cellulitis. Management: remove cannula, swab, oral flucloxacillin 500 mg qid 5–7 d (cefalexin/clindamycin if allergic) VERIFY TG, mark margin, review 48 h; IV/admission if systemic features, spreading, or purulent thrombophlebitis with a cord",
-    "Norovirus: incubation 12–48 h; symptoms 24–72 h; highly infectious; shedding continues after symptoms — exclusion 48 h symptom-free (some services 48–72 h VERIFY SA Health/national guidance); food handlers, childcare and healthcare workers excluded 48 h after symptoms resolve; soap and water hand hygiene; bleach-based cleaning; outbreak reporting (ships: port health/Department of Agriculture and state health); prolonged/severe in the immunocompromised, elderly, infants",
-    "Discharge criteria in any gastroenteritis: symptom-free window, afebrile, tolerating oral intake, no dehydration (postural BP), normal abdomen, safe home situation, not a public-health risk; document the shared decision"
+    "**Assessment to request: GENERAL APPEARANCE — well or unwell, DEHYDRATION: dry mucosa, reduced skin turgor, sunken eyes · VITAL SIGNS — TEMPERATURE, PULSE, BLOOD PRESSURE INCLUDING A POSTURAL DROP, RESPIRATORY RATE · FULL ABDOMINAL EXAMINATION — tenderness, guarding, distension, bowel sounds · THE CANNULA SITE — BY NAME, because he had IV fluids.**",
+    "**Release criteria: NO DIARRHOEA AND NO VOMITING FOR 48 HOURS · AFEBRILE · TOLERATING ORAL INTAKE · NO CLINICAL DEHYDRATION · NORMAL ABDOMINAL EXAMINATION.** VERIFY — 48 hours standard, some services 48–72.",
+    "**Cannula site infection: REMOVE THE CANNULA · ORAL FLUCLOXACILLIN — cefalexin if non-severe penicillin allergy · MARK THE MARGIN OF ERYTHEMA · GP review in 48 hours. IV ANTIBIOTICS ONLY WITH SYSTEMIC FEATURES — HIGH FEVER, HYPOTENSION, TACHYCARDIA, DROWSINESS.** Consider a swab of the discharge. VERIFY doses against Therapeutic Guidelines.",
+    "**Norovirus facts worth quoting: VERY LOW INFECTIVE DOSE · FAECAL-ORAL, AEROSOLISED VOMIT AND FOMITE SPREAD · short incubation, typically 12–48 hours · usually self-limiting over 1–3 days · SHEDDING PERSISTS AFTER SYMPTOMS STOP · ALCOHOL HAND RUB IS LESS EFFECTIVE THAN SOAP AND WATER.**",
+    "**Do not miss: ONGOING DEHYDRATION or AKI in an older passenger · BLOOD IN THE STOOL, which means it is not norovirus · ABDOMINAL TENDERNESS, which reopens the diagnosis · SYSTEMIC SEPSIS FROM THE CANNULA SITE — rigors, spreading cellulitis, thrombophlebitis · IMMUNOCOMPROMISE, which prolongs illness and shedding.**",
+    "**Avoid: DETAINING A WELL MAN FOR AN INFECTION MANAGEABLE WITH ORAL ANTIBIOTICS · RELEASING HIM WITHOUT DOCUMENTING THE 48-HOUR WINDOW · missing the occupational exclusion for food handlers, childcare and healthcare workers · meeting anger with policy instead of solving the real concern.**",
+    "**Public health: outbreaks on cruise ships are reported through the ship's medical team to the relevant PORT HEALTH AND STATE PUBLIC HEALTH UNIT; occupational exclusion of 48 hours after symptoms for food handlers, childcare and healthcare workers.** VERIFY local notification requirements."
    ],
-   "fails": [
-    "Arguing with the angry passenger or lecturing him; never asking why he wants to get home",
-    "Not asking when the last symptom was — the single exclusion criterion; not asking about oral intake or immunocompromise",
-    "Not asking what treatment he had (missing the cannula), or not asking to look at the site",
-    "Keeping him on board for IV antibiotics for a localised cannula infection; or ignoring it entirely",
-    "Not stating the release criteria explicitly to the examiner; forgetting occupation/public-health duty"
-   ],
-   "numbers": [
-    "Release: symptom-free 48 h (48–72 in some services VERIFY) · afebrile · tolerating oral intake · no dehydration · normal abdomen · incubation 12–48 h · illness 24–72 h",
-    "Cannula infection: remove, flucloxacillin 500 mg qid 5–7 d VERIFY, mark margin, GP 48 h · IV only if systemic",
-    "Soap and water (alcohol gel less effective) · food handlers excluded 48 h post-symptoms · port/state health notification"
+   "ddx": [
+    [
+     "**Norovirus gastroenteritis — resolved** — the diagnosis",
+     "**Cruise ship outbreak setting; watery diarrhoea and vomiting, now stopped**",
+     "**TIME SINCE THE LAST SYMPTOM**; afebrile; eating and drinking",
+     "**Release if all five criteria are met**"
+    ],
+    [
+     "**Peripheral cannula site infection** — the second problem",
+     "**IV fluids on board; ERYTHEMA, SWELLING, PURULENT DISCHARGE at the site**",
+     "**'What treatment did you receive?' — then INSPECT THE SITE BY NAME**",
+     "**Remove cannula, ORAL FLUCLOXACILLIN, mark the margin — NOT a reason to detain**"
+    ],
+    [
+     "**Ongoing norovirus — not yet clear**",
+     "**Vomiting or diarrhoea within 48 hours, fever**",
+     "Last episode timing",
+     "**Stays on board until symptom-free for 48 hours**"
+    ],
+    [
+     "**Dehydration or acute kidney injury**",
+     "**Dizziness, poor intake, reduced urine, POSTURAL DROP**",
+     "Postural BP, mucosa, urine output",
+     "Oral or IV rehydration; **UEC if older or unwell** — not fit for release"
+    ],
+    [
+     "**Bacterial gastroenteritis or dysentery**",
+     "**BLOOD IN THE STOOL, high fever**",
+     "**Any blood?**",
+     "**Blood changes the diagnosis entirely — stool MCS and PCR**"
+    ],
+    [
+     "**Surgical abdomen**",
+     "**Abdominal tenderness, guarding, persistent pain**",
+     "**Full abdominal examination**",
+     "**'I would not release anyone with abdominal tenderness'** — surgical assessment"
+    ],
+    [
+     "**Systemic sepsis from the cannula site · thrombophlebitis**",
+     "**High fever, rigors, tachycardia, hypotension, drowsiness; a tender cord along the vein**",
+     "Vitals; the vein proximal to the site",
+     "**IV antibiotics, blood cultures — and NOT fit for release**"
+    ],
+    [
+     "Prolonged illness in the immunocompromised",
+     "**Steroids, chemotherapy, diabetes, cancer**",
+     "Immune status",
+     "Lower threshold to keep; specialist advice"
+    ],
+    [
+     "**Occupational public health risk**",
+     "**Food handler, childcare or healthcare worker**",
+     "**Occupation question**",
+     "**48-hour work exclusion after symptoms; public health notification**"
+    ],
+    [
+     "Vulnerable household contacts",
+     "Elderly, pregnant or immunocompromised people at home",
+     "Who is at home",
+     "**Hand hygiene with soap and water; surface cleaning with bleach**"
+    ]
    ]
   },
   "source": "01_Diarrhoea_History_Master_2_Case_Tasks_Script_Notability.pdf §7 Variant 2 (40-year-old cruise passenger with resolved norovirus demanding discharge; cannula-site infection photo — release assessment)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › 01_Diarrhoea_History_Master_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Arguing with the angry passenger or lecturing him — 'I can hear how frustrating this is, and I'd be frustrated too; can I ask what's making you so keen to get home? there may be something I can help with — whatever you tell me stays between us' → the cat alone at home → 'that's a real worry; we can almost certainly arrange for someone to look in on her today' (★)",
-   "SAY — The single most important question: 'when did it start? is it still going? if it has stopped — when exactly was your last episode of diarrhoea or vomiting?' — the exclusion criterion is time since the last symptom; then count, consistency, blood (would change the diagnosis entirely); fever, chills, abdominal pain, nausea, vomiting, dizziness — he must be asymptomatic, not just free of diarrhoea; 'are you eating and drinking normally and keeping it down?' (a discharge criterion in its own right)",
-   "SAY — 'Any medical conditions or medications affecting your immune system — diabetes, cancer, steroids, chemotherapy?' (norovirus is prolonged and more severe in the immunocompromised); 'what treatment did you receive on board?' — opens the intravenous fluids answer, which is where the 2025 finding hides; 'are you a food handler, childcare or healthcare worker?' — changes the exclusion period and creates a public health duty",
-   "SAY — To the examiner: 'before I decide about release I'd like general appearance — does he look well, any evidence of dehydration; vital signs including a postural blood pressure; a full abdominal examination, because I would not release anyone with abdominal tenderness; and I'd like to look at the cannula site, since he had intravenous fluids on board'",
-   "SAY — 'My criteria for release are: no diarrhoea and no vomiting for 48 hours, afebrile, tolerating oral intake, no clinical dehydration, and a normal abdominal examination' (48 hours standard; some services 48–72 — verify)",
-   "DO — The 2025 challenge: the cannula site photograph shows erythema, swelling and pus; 'yes, I would still release him — he meets the norovirus exclusion criteria; the site needs treatment, but that is oral flucloxacillin I can prescribe, and there is no reason to keep him on board for it: remove the cannula, mark the edge of the redness, see his GP in 48 hours, ED for fever, spreading redness or feeling unwell'; IV antibiotics only for systemic features — high fever, hypotension, tachycardia, drowsiness — and he has none; four minutes of history only, abbreviated on purpose"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-139",
