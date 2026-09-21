@@ -99449,7 +99449,6 @@
   "cat": "med",
   "promptBell": true,
   "promptAt": 120,
-  "setting": "Version B of the hyperkalaemia station — a different patient and a different answer. The failure here is order of operations: ECG first, repeat second, conclude third. Concluding 'It is just haemolysis' before the ECG is the error that would kill the one patient in fifty where the haemolysis was coincidental.",
   "stem": [
    "You are the doctor on duty. The laboratory has phoned a potassium of 6.1 in a well 44-year-old woman attending for pre-procedure bloods.",
    "Tasks: interpret the result and any further investigation to the examiner — state the likely causes — outline your immediate management — explain the situation to the patient."
@@ -99460,80 +99459,194 @@
    "Outline your immediate management",
    "Explain the situation to the patient"
   ],
-  "time": "A two-minute reading period, then the first sentence decides it — a moderate potassium in a well patient still gets an ECG and observations before anything is concluded · then the laboratory questions · then the repeat sample done properly · and only then the word pseudohyperkalaemia, with what happens if the repeat is also high",
-  "findingsLabel": "What the examiner holds back until you ask",
+  "findingsLabel": "The results, the ECG and the doses — open only when you would ask for them",
   "findings": [
    [
-    "The ECG",
-    "Normal — but only given if you ask for it, and if you never ask for an ECG that is a fail on its own regardless of the total. A potassium of 6.1 is moderate and cannot be ignored even in a well patient"
+    "VERSION A — the sick one",
+    "68M, CKD stage 4, two days of lethargy and GENERALISED MUSCLE WEAKNESS after gastroenteritis. On RAMIPRIL, SPIRONOLACTONE, metformin, atorvastatin. BP 104/62 · PR 52 · RR 16 · SpO2 97% · 36.4°C. POTASSIUM 7.2 (3.5–5.2) · SODIUM 134 · UREA 24.1 (3–8) · CREATININE 312 (60–110) · eGFR 16 · BICARBONATE 16 (22–32) · CORRECTED CALCIUM 2.18"
+   ],
+   [
+    "VERSION B — the well one",
+    "44F, ENTIRELY WELL, routine pre-procedure bloods. Lab PHONES a potassium of 6.1. No symptoms, no relevant medications, NORMAL RENAL FUNCTION, and THE LAB COMMENTS ‘SPECIMEN HAEMOLYSED’. ECG NORMAL. Answer: PSEUDOHYPERKALAEMIA — but the ORDER OF OPERATIONS is the mark: ECG FIRST, REPEAT SECOND, CONCLUDE THIRD"
+   ],
+   [
+    "THE ECG PROGRESSION, in order",
+    "TALL PEAKED, NARROW-BASED, SYMMETRICAL T WAVES appear first → then the P WAVE FLATTENS and the PR INTERVAL LENGTHENS → then the QRS WIDENS → P WAVES ARE LOST ENTIRELY → the widened QRS MERGES WITH THE T WAVE to give a SINE WAVE, which is PRE-TERMINAL. The end point is VF OR ASYSTOLE"
+   ],
+   [
+    "READ IT OUT LOUD IN SIX STEPS — a short ordered read-out beats a list of adjectives",
+    "1 RATE AND RHYTHM — ‘bradycardic at 52, and I cannot clearly identify P waves.’ 2 P WAVES — ‘flattened and of low amplitude.’ 3 PR — ‘prolonged.’ 4 QRS — ‘broad at approximately 130 MILLISECONDS, WITH NO TYPICAL BUNDLE BRANCH MORPHOLOGY.’ 5 T WAVES — ‘tall, NARROW-BASED, SYMMETRICAL and peaked, MOST MARKED IN THE MID-PRECORDIAL LEADS.’ 6 CONCLUSION — ‘these are the changes of SEVERE HYPERKALAEMIA and this patient needs treatment NOW’"
+   ],
+   [
+    "TWO ECG TRAPS",
+    "PEAKED T WAVES ARE NOT SPECIFIC. HYPERACUTE T WAVES OF EARLY STEMI ARE BROAD-BASED AND ASYMMETRICAL; benign early repolarisation gives tall T waves in a well patient. IT IS THE COMPANY THEY KEEP — FLAT P, LONG PR, WIDE QRS — THAT MAKES THE DIAGNOSIS. And A BROAD COMPLEX REGULAR TACHYCARDIA IN A DIALYSIS PATIENT MAY BE HYPERKALAEMIA, NOT VT"
+   ],
+   [
+    "SEVERITY — and the row that overrides all the others",
+    "MILD 5.5–5.9: find the cause, stop the culprit drug, review intake, recheck. MODERATE 6.0–6.4: ECG and monitoring; treat if ANY ECG change or if RISING RAPIDLY. SEVERE ≥6.5: treat IMMEDIATELY, regardless of symptoms. ANY LEVEL WITH ECG CHANGE = TREAT AS SEVERE — THIS ROW OVERRIDES EVERY ROW ABOVE IT"
+   ],
+   [
+    "THE RULE THAT GENERATES THE FOLLOW-UP QUESTION",
+    "ECG CHANGES CORRELATE POORLY WITH THE SERUM LEVEL. A CKD patient may sit at 7.0 with a NEAR-NORMAL ECG because the rise was SLOW; a previously normal patient may develop a SINE WAVE AT 6.2 because the rise was FAST. TREAT THE ECG AND THE RATE OF RISE, NOT THE NUMBER. Equally — A NORMAL ECG AT K 7.2 IS NOT REASSURANCE. IT DOES NOT MEAN YOU CAN WAIT"
+   ],
+   [
+    "STEP 1 · PROTECT — CALCIUM GLUCONATE 10%, 10 mL IV OVER 2–3 MINUTES, with cardiac monitoring",
+    "REPEAT IF THE ECG HAS NOT IMPROVED AFTER ABOUT 5 MINUTES. Indicated whenever there are ECG CHANGES or the patient is HAEMODYNAMICALLY UNSTABLE. ONSET WITHIN MINUTES; EFFECT LASTS ONLY 30–60 MINUTES — IT IS A BRIDGE, NOT A TREATMENT. CALCIUM CHLORIDE gives more elemental calcium but is MORE SCLEROSANT — reserve for CENTRAL ACCESS OR PERI-ARREST"
+   ],
+   [
+    "STEP 2 · SHIFT",
+    "INSULIN 10 UNITS SHORT-ACTING IN 50 mL OF 50% GLUCOSE IV OVER 15–30 MINUTES. ONSET 15–30 min, PEAK AROUND 1 HOUR, LASTS 4–6 HOURS. HYPOGLYCAEMIA IS THE COMMONEST COMPLICATION AND OFTEN OCCURS AFTER THE POTASSIUM HAS BEEN RECHECKED — MONITOR BLOOD GLUCOSE HOURLY FOR AT LEAST 6 HOURS. If the glucose is already high, insulin may be given with LESS OR NO ADDED GLUCOSE — but still monitor. SALBUTAMOL 10–20 mg NEBULISED — onset about 30 minutes, ADDITIVE to insulin; expect tachycardia and tremor; NOT RELIABLE AS SOLE THERAPY, a proportion do not respond. SODIUM BICARBONATE ONLY where there is significant metabolic acidosis — WEAK AND INCONSISTENT EVIDENCE alone"
+   ],
+   [
+    "STEP 3 · REMOVE — and this is the ONLY step that takes potassium out of the body",
+    "HAEMODIALYSIS — DEFINITIVE. Indicated for REFRACTORY OR SEVERE hyperkalaemia, particularly with ANURIA, ESTABLISHED RENAL FAILURE, or ONGOING POTASSIUM RELEASE. LOOP DIURETIC with volume replacement — ONLY useful if the patient IS MAKING URINE and is NOT VOLUME DEPLETED. POTASSIUM BINDERS — SODIUM ZIRCONIUM CYCLOSILICATE and PATIROMER act within hours and are NOW PREFERRED OVER OLDER RESINS. RESONIUM IS SLOW, POORLY EVIDENCED FOR ACUTE USE, AND SHOULD NOT BE RELIED ON AS YOUR ACUTE ANSWER"
    ]
   ],
   "back": {
-   "dx": "PSEUDOHYPERKALAEMIA — potassium released from red cells during collection, not a true elevation — but only concluded after a normal ECG, normal observations and a haemolysed-sample report, and only confirmed by a clean repeat. The opening sentence: 'A potassium of 6.1 is in the moderate range and I cannot ignore it. Even though she is well, I would obtain an ECG and review her observations before I decide anything. I would also ask the laboratory whether the sample was haemolysed, whether there was a delay in processing, and what her platelet and white cell counts were.' then, with a normal ECG and a haemolysed report: 'The most likely explanation is pseudohyperkalaemia. I would repeat the sample with a wider-bore needle, avoiding a prolonged tourniquet and fist clenching, and get it to the laboratory promptly. I would not treat, and I would not cancel her procedure, until I have a clean result. If the repeat is also high, then it is real and I work through renal function, medications and adrenal causes.' The causes to state: sample haemolysis from a small needle, a tight or prolonged tourniquet, fist pumping, or vigorous tube handling · delayed separation or processing, particularly in a cold sample · marked thrombocytosis or leukocytosis releasing potassium in the tube · contamination from an edta tube drawn first · and, if the repeat is genuinely high, the true causes — renal impairment, ACE inhibitors and ARBs, potassium-sparing diuretics, NSAIDs, trimethoprim, salt substitutes, acidosis, and Addison's disease. The contrast with version A is the whole point: there, a potassium of 7.2 with ECG changes in a man with stage 4 CKD on ramipril and spironolactone is protect, shift, remove — calcium gluconate, insulin-dextrose and salbutamol, then dialysis. Here, nothing is given, because treating a false value with insulin in a well woman causes the hypoglycaemia that was the only danger in the room. To the patient: 'One of your blood tests has come back with a high level of a salt called potassium. When that is genuine it can affect the heart's rhythm, which is why I have checked your heart tracing — and it is normal. The laboratory has told me the sample was damaged when it was collected, which releases potassium from the blood cells and makes the result read falsely high. The most likely explanation is that the result is not real, but I am not going to assume that — I would like to repeat the test now, taken more carefully, and your procedure stays on the books unless the repeat says otherwise.'",
+   "dx": [
+    "**TWO THINGS DECIDE THIS STATION.** **FIRST, YOU ASK FOR AN ECG BEFORE YOU FINISH READING THE BLOOD RESULTS — AND YOU SAY SO OUT LOUD.** **SECOND, YOU KNOW THAT CALCIUM DOES NOT LOWER POTASSIUM; IT BUYS YOU THE FIFTEEN MINUTES IN WHICH INSULIN DOES.** **Candidates who recite a drug list without that distinction GET TAKEN APART ON THE FOLLOW-UP QUESTION.**",
+    "**THE SINGLE HIGHEST-SCORING SENTENCE IN THE STATION, said BEFORE you read down the rest of the panel**: **‘Before I interpret these results in full, this potassium is in the SEVERE range and I would ATTACH CARDIAC MONITORING AND OBTAIN A 12-LEAD ECG IMMEDIATELY, and I would ask WHETHER THE SAMPLE WAS HAEMOLYSED.’** **The role-player brief says: if they never ask for an ECG, NEVER GIVE ONE — AND MARK THAT AS A FAIL.**",
+    "**THE THREE JOBS, AND SAY WHICH DRUG DOES WHICH.** **CALCIUM PROTECTS THE HEART. IT DOES NOT LOWER THE POTASSIUM.** **INSULIN AND SALBUTAMOL SHIFT potassium INTO CELLS — they lower the MEASURED level TEMPORARILY but DO NOT REMOVE A SINGLE MILLIMOLE FROM THE BODY.** **ONLY DIALYSIS, DIURESIS AND BINDERS ACTUALLY REMOVE IT.** **PROTECT · SHIFT · REMOVE.**",
+    "**THE QUESTION THAT SEPARATES A PASS FROM A DISTINCTION, AND IT IS ASKED ALMOST EVERY TIME**: *‘Does the calcium lower his potassium?’* → **‘NO. It STABILISES THE MYOCARDIUM against the EFFECT of the potassium — THE SERUM LEVEL IS UNCHANGED. That is why it must ALWAYS be given ALONGSIDE something that actually shifts or removes potassium, NEVER INSTEAD OF IT.’**",
+    "**VERSION A IS MULTIFACTORIAL AND NAMING ONE CAUSE IS THE COMMONEST WEAK ANSWER. THERE ARE FOUR IN FRONT OF YOU**: **‘His STAGE 4 CHRONIC KIDNEY DISEASE sets the BASELINE inability to excrete. His GASTROENTERITIS AND POOR INTAKE have precipitated an ACUTE KIDNEY INJURY ON TOP — the urea of 24 with a creatinine of 312 fits a PRERENAL component. He is on RAMIPRIL AND SPIRONOLACTONE TOGETHER, which is ADDITIVE potassium retention and a well-recognised combination in advanced renal disease. And his BICARBONATE OF 16 tells me he is ACIDOTIC, which SHIFTS POTASSIUM EXTRACELLULARLY.’**",
+    "**THEN ASK BY NAME FOR THE THREE HE WILL NOT VOLUNTEER: OVER-THE-COUNTER ANTI-INFLAMMATORIES, RECENT TRIMETHOPRIM, AND POTASSIUM-BASED SALT SUBSTITUTES.** **The brief says: if asked specifically about anti-inflammatories, HE ADMITS TO IBUPROFEN FOR HIS KNEE. IF NOT ASKED, HE DOES NOT MENTION IT.** **Patients do not think of salt substitutes, ibuprofen or ‘the tablet for my water’ as medications.**",
+    "**THE DRUG SWEEP, as a class list**: **ACE INHIBITORS / ARBs** — ramipril, perindopril, candesartan · **POTASSIUM-SPARING DIURETICS** — spironolactone, eplerenone, amiloride · **NSAIDs** — including over the counter · **TRIMETHOPRIM**, alone or as co-trimoxazole · **HEPARIN** — suppresses aldosterone, INCLUDING PROPHYLACTIC DOSING · **BETA-BLOCKERS** — impair cellular uptake, mainly non-selective · **CALCINEURIN INHIBITORS** — ciclosporin, tacrolimus · **DIGOXIN** in toxicity — blocks the Na/K-ATPase pump · **POTASSIUM SUPPLEMENTS AND SALT SUBSTITUTES.**",
+    "**CAUSES BY MECHANISM — FOUR BUCKETS, AND SPURIOUS ALWAYS COMES FIRST.** **SPURIOUS: haemolysed sample · TIGHT TOURNIQUET OR FIST CLENCHING · delayed processing or a cold sample · MARKED THROMBOCYTOSIS OR LEUCOCYTOSIS (potassium released during clotting — a PLASMA sample rather than SERUM resolves it) · DRIP-ARM CONTAMINATION.** **REDUCED EXCRETION: AKI · CKD · drugs · ADDISON DISEASE and other hypoaldosteronism · TYPE 4 RENAL TUBULAR ACIDOSIS.** **SHIFT OUT OF CELLS: metabolic acidosis · DKA and insulin deficiency · RHABDOMYOLYSIS · TUMOUR LYSIS · burns or crush injury · in vivo haemolysis · digoxin toxicity · SUXAMETHONIUM.** **INCREASED INTAKE: rarely sufficient alone — salt substitutes, supplements, large transfusions of STORED BLOOD, in a patient who already cannot excrete.**",
+    "**ALWAYS ASK THESE THREE.** **1 WAS THE SAMPLE HAEMOLYSED? Check the lab comment BEFORE you commit.** **2 IS THE PATIENT PASSING URINE? ANURIA REMOVES YOUR SLOWEST AND SAFEST ROUTE OF EXCRETION AND MOVES DIALYSIS UP THE LIST.** **3 IS THERE ANYTHING THAT WILL KEEP MAKING IT WORSE? Ongoing rhabdomyolysis, tumour lysis, or a drug still in the system means ONE ROUND OF TREATMENT WILL NOT HOLD.**",
+    "**HYPERKALAEMIA IS OFTEN SILENT UNTIL IT IS LETHAL.** When symptoms occur they are NON-SPECIFIC: generalised muscle weakness, fatigue, paraesthesiae, palpitations, and in severe cases **ASCENDING FLACCID PARALYSIS WITH SPARING OF THE DIAPHRAGM AND CRANIAL NERVES. BRADYCARDIA IS A LATE AND OMINOUS SIGN.** **THE EXAMINATION POINT: YOU CANNOT EXCLUDE HYPERKALAEMIA CLINICALLY — WHICH IS PRECISELY WHY THE ECG COMES FIRST.**"
+   ],
    "plan": [
     [
-     "0:00",
-     "First sentence: the level is moderate and cannot be ignored — ECG and observations before any conclusion, even though she is well."
+     "Reading time — write FIVE things",
+     "**1 ECG + MONITOR NOW, and ask about haemolysis. 2 PROTECT · SHIFT · REMOVE, and which drug does which. 3 Ca gluconate 10% 10 mL · insulin 10 u + 50 mL 50% glucose · salbutamol 10–20 mg neb. 4 STOP ramipril, spironolactone, NSAIDs, trimethoprim. 5 FOUR CAUSES: CKD · AKI on top · ACEi + spironolactone · acidosis.** **SAY UNPROMPTED: hourly BGL for 6 hours · recheck K at 1–2 hours · involve renal and retrieval early.**"
     ],
     [
-     "0:30",
-     "The laboratory questions: haemolysis, processing delay, platelet and white cell counts."
+     "TASK 1a — the opening sentence ★",
+     "**Say it BEFORE reading the rest of the panel. If you read the whole panel first and ask for the ECG at the end, YOU HAVE ALREADY SHOWN YOU DO NOT TREAT THIS AS AN EMERGENCY. The station is effectively decided here — everything after this is CONTENT; this was JUDGEMENT.**"
     ],
     [
-     "1:00",
-     "Read the ECG systematically — rate, P, PR, QRS, T — and state that it is normal, which is what licenses the next step."
+     "TASK 1b — interpret the ECG",
+     "**The six-step read-out. If challenged ‘could the T waves be ischaemic?’ → ‘HYPERACUTE T WAVES OF INFARCTION ARE BROAD-BASED AND ASYMMETRICAL. It is the COMBINATION with FLAT P WAVES, a LONG PR and a WIDE QRS that makes hyperkalaemia the explanation.’**"
     ],
     [
-     "1:45",
-     "Name pseudohyperkalaemia as the most likely explanation, with the mechanism, and list the sample-related causes."
+     "TASK 1c — interpret the biochemistry",
+     "**‘SEVERE hyperkalaemia at 7.2. The creatinine of 312 and eGFR of 16 indicate ADVANCED RENAL IMPAIRMENT, and with a urea of 24 and a UREA-TO-CREATININE PATTERN SUGGESTING A PRERENAL COMPONENT, this looks like ACUTE KIDNEY INJURY ON CHRONIC KIDNEY DISEASE. The bicarbonate of 16 shows a METABOLIC ACIDOSIS, which itself SHIFTS POTASSIUM OUT OF CELLS. The mild hyponatraemia fits VOLUME DEPLETION.’**"
     ],
     [
-     "2:30",
-     "Management: repeat the sample properly, do not treat, do not cancel the procedure — and say what you would do if the repeat is also high, including a medication and renal review."
+     "TASK 2 — the causes, all four at once",
+     "**Then the three you must ask for by name.**"
     ],
     [
-     "3:30",
-     "Explain to the patient in plain words — the effect, not the number — without false reassurance or alarm, and with the repeat and the procedure decision made clear."
+     "TASK 3 — immediate management, said as THREE JOBS",
+     "**PROTECT: calcium gluconate 10%, 10 mL IV over 2–3 min with continuous monitoring, REPEATED AT 5 MIN IF THE ECG HAS NOT IMPROVED; lasts 30–60 min; DOES NOT LOWER THE POTASSIUM.** **SHIFT: 10 units short-acting insulin in 50 mL of 50% glucose over 15–30 min, WITH HOURLY BLOOD GLUCOSE FOR AT LEAST SIX HOURS — HYPOGLYCAEMIA IS THE COMMONEST COMPLICATION AND IS OFTEN DELAYED; plus salbutamol 10–20 mg nebulised, ADDITIVE. Given the bicarbonate of 16, CONSIDER sodium bicarbonate, RECOGNISING THE EVIDENCE IS WEAK.** **REMOVE: he is oliguric with an eGFR of 16, so HAEMODIALYSIS IS DEFINITIVE — involve the renal team AND ARRANGE RETRIEVAL NOW RATHER THAN AFTER FAILED MEDICAL THERAPY.** **Alongside: WITHHOLD ramipril and spironolactone, CAUTIOUSLY restore volume, RECHECK THE POTASSIUM AT 1–2 HOURS on continuous monitoring.**"
+    ],
+    [
+     "TASK 4 — explain to the patient, and NEVER QUOTE THE NUMBER",
+     "**‘Your blood tests show that a SALT called POTASSIUM is MUCH HIGHER than it should be. Potassium is essential — it helps your NERVES AND MUSCLES work — but when it climbs too high IT UPSETS THE ELECTRICAL RHYTHM OF YOUR HEART. Your heart tracing is ALREADY showing some of those changes, WHICH IS WHY I AM TREATING THIS STRAIGHT AWAY RATHER THAN WAITING.’** **Then the three things: ‘CALCIUM FIRST — THAT DOES NOT LOWER THE POTASSIUM, BUT IT PROTECTS YOUR HEART WHILE THE OTHER TREATMENTS WORK. Then INSULIN WITH SUGAR, which drives the potassium OUT OF YOUR BLOODSTREAM AND BACK INTO YOUR CELLS. And a NEBULISER that helps do the same. Then we work on CLEARING IT FROM YOUR BODY.’** **The role-player is briefed: IF YOU USE THE NUMBER 7.2 AT HIM, HE LOOKS BLANK AND SAYS ‘IS THAT BAD?’**"
+    ],
+    [
+     "Then the drugs, and the instruction that matters",
+     "**‘Two of your tablets — THE BLOOD PRESSURE ONE AND THE FLUID ONE — HOLD POTASSIUM IN. I AM STOPPING BOTH TODAY. PLEASE DO NOT RESTART THEM UNTIL WE REVIEW YOU.’**"
+    ],
+    [
+     "His three questions, in order",
+     "*‘Am I going to have a heart attack?’* → **‘NOT A HEART ATTACK IN THE USUAL SENSE — this affects the RHYTHM rather than BLOCKING AN ARTERY. But I DO NOT WANT TO UNDERSTATE IT: at this level the rhythm can become dangerous, and that is exactly why you are on a monitor and why I am treating you BEFORE we have finished all the tests. The good news is that this is VERY TREATABLE, and I am starting now.’** *‘Is it something I did?’* → **‘YOU HAVE NOT DONE ANYTHING WRONG. Being unwell and dehydrated has put extra strain on kidneys that were ALREADY STRUGGLING, and two of your regular tablets hold potassium in.’** *‘Do I have to go to Adelaide?’* → **‘POSSIBLY, YES. If the potassium does not come down, the most effective way to remove it is DIALYSIS, and that means transferring you. I am arranging that conversation NOW rather than waiting, so we are not delayed if you need it. IS THERE SOMEONE YOU WOULD LIKE ME TO CALL?’**"
+    ],
+    [
+     "VERSION B — the order of operations IS the mark",
+     "**‘A potassium of 6.1 is in the MODERATE range and I CANNOT IGNORE IT. Even though she is well, I would obtain an ECG AND REVIEW HER OBSERVATIONS BEFORE I DECIDE ANYTHING. I would also ask the laboratory WHETHER THE SAMPLE WAS HAEMOLYSED, WHETHER THERE WAS A DELAY IN PROCESSING, AND WHAT HER PLATELET AND WHITE CELL COUNTS WERE.’** Then, once the ECG is normal and the haemolysis is confirmed: **‘the most likely explanation is PSEUDOHYPERKALAEMIA. RED CELLS CONTAIN POTASSIUM AT ROUGHLY 25 TIMES THE PLASMA CONCENTRATION, so even modest haemolysis raises the measured value substantially. I would REPEAT THE SAMPLE with a WIDER-BORE NEEDLE, avoiding a PROLONGED TOURNIQUET AND FIST CLENCHING, and get it to the laboratory PROMPTLY. I would NOT TREAT, AND I WOULD NOT CANCEL HER PROCEDURE, until I have a clean result.’** **CANDIDATES SPLIT TWO WAYS AND BOTH FAIL: some treat a haemolysed sample with insulin–dextrose in a well patient; others dismiss it as artefact WITHOUT an ECG or a repeat, AND WOULD MISS A GENUINE RESULT IF THE HAEMOLYSIS WERE COINCIDENTAL.**"
     ]
    ],
-   "planApprox": true,
-   "planNote": "a short station decided by sequence — ECG, then repeat, then conclude — and by refusing to treat a number you have not confirmed",
-   "ask": [
-    "The opening: 'A potassium of 6.1 is in the moderate range and I cannot ignore it — even though she is well, I would obtain an ECG and review her observations before I decide anything.'",
-    "The three laboratory questions: 'Was the sample haemolysed, was there a delay in processing, and what were her platelet and white cell counts?'",
-    "The conclusion, in its place: 'The most likely explanation is pseudohyperkalaemia. I would not treat, and I would not cancel her procedure, until I have a clean result.'",
-    "The conditional that shows judgement: 'If the repeat is also high, then it is real and I work through renal function, medications and adrenal causes.'",
-    "Examiner challenges: 'She is well — why do you want an ECG?' · 'The lab says haemolysed — so it's nothing?' · and 'Would you give calcium?' — no, there are no ECG changes and the value is unconfirmed."
-   ],
    "pefe": [
-    "Role-player and examiner: a well 44-year-old woman who came in for routine bloods before a planned procedure and has been called back. The examiner hands over only the phoned result, holds the ECG until it is requested, and holds the haemolysis comment until the laboratory is asked. If the ECG is never requested it is never given, and that is marked as a fail.",
-    "As the patient she is well and slightly alarmed at being called back. She asks whether her procedure will be cancelled and whether something is wrong with her heart. If the number is quoted at her she looks blank and asks 'Is that bad?'",
-    "Mark them against these: asked for an ECG and observations in the first response · asked whether the sample was haemolysed · asked about processing delay and the cell counts · read the ECG systematically · named pseudohyperkalaemia with the mechanism · described the repeat technique · did not treat and did not cancel the procedure · stated what a high repeat would trigger · explained the effect rather than the number to the patient · and neither falsely reassured nor alarmed her.",
-    "The laboratory — The specimen was reported as haemolysed — held back until you ask. The questions to put to them: was the sample haemolysed, was there a delay in processing, and what were her platelet and white cell counts",
-    "Why haemolysis does this — Red cells contain potassium at many times the plasma concentration, so even modest haemolysis during collection raises the measured value substantially. Marked thrombocytosis or leukocytosis do the same in the tube, which is why the counts matter",
-    "The repeat, done properly — A wider-bore needle, no prolonged tourniquet, no fist clenching, and prompt delivery to the laboratory — with the ECG already done"
+    "**Examiner probes to have ready.** *‘How long does calcium last?’* → **‘30 to 60 minutes. REPEAT IF THE ECG HAS NOT IMPROVED.’** *‘What is the commonest complication of your treatment?’* → **‘HYPOGLYCAEMIA from the insulin — OFTEN DELAYED, hence HOURLY GLUCOSE MONITORING FOR AT LEAST SIX HOURS.’** *‘His ECG is normal at 7.2 — can you wait?’* → **‘NO. A normal ECG DOES NOT EXCLUDE RISK; changes can appear ABRUPTLY. Monitor and treat.’** *‘When is dialysis indicated?’* → **‘REFRACTORY hyperkalaemia, ANURIA or established renal failure, ONGOING POTASSIUM RELEASE, or the other indications for dialysis in acute kidney injury.’**",
+    "**CORRECTION — the digoxin ‘stone heart’ teaching.** **The old teaching that CALCIUM IS CONTRAINDICATED IN DIGOXIN TOXICITY IS NOT SUPPORTED BY CURRENT EVIDENCE AND IS NO LONGER AN ABSOLUTE BAR.** **In digoxin toxicity the DEFINITIVE treatment is DIGOXIN IMMUNE FAB.** **Safe wording: ‘I would give DIGOXIN-SPECIFIC ANTIBODY FRAGMENTS and DISCUSS CALCIUM WITH THE TOXICOLOGIST.’** **And hyperkalaemia in digoxin toxicity is A MARKER OF SEVERITY and an INDICATION for Fab.**",
+    "**VARIANT — THE SINE WAVE.** K 8.4, QRS merging with T, patient DROWSY AND HYPOTENSIVE. → **‘This is PERI-ARREST. Calcium IMMEDIATELY and REPEATED, insulin–dextrose and salbutamol SIMULTANEOUSLY RATHER THAN SEQUENTIALLY, call for help and the ARREST TROLLEY, and DIALYSIS AS AN EMERGENCY.’**",
+    "**VARIANT — DKA, and the one hyperkalaemia you end up TREATING WITH POTASSIUM.** K 5.9, glucose 28, ketones 5.2, pH 7.12. → **‘The TOTAL BODY POTASSIUM IS DEPLETED DESPITE THE HIGH SERUM LEVEL. Once insulin and fluids start, the potassium WILL FALL RAPIDLY. I would follow the DKA protocol and BEGIN POTASSIUM REPLACEMENT ONCE THE LEVEL IS BELOW 5.5 AND THE PATIENT IS PASSING URINE.’**",
+    "**VARIANT — THE WELL DIALYSIS PATIENT.** K 6.9, no symptoms, NORMAL ECG, dialysis due tomorrow. → **‘CHRONIC TOLERANCE means the ECG may be UNREMARKABLE at levels that would be dangerous acutely — BUT THAT IS NOT PERMISSION TO WAIT. I would monitor, treat medically, and BRING THE DIALYSIS SESSION FORWARD.’** **And the related trap: a BROAD COMPLEX REGULAR TACHYCARDIA at 140 in a dialysis patient who missed two sessions is HYPERKALAEMIA MIMICKING VT — CALCIUM FIRST, AND GET HIM DIALYSED.**",
+    "**VARIANT — THE ANGRY PATIENT.** *‘You lot gave me those tablets. Now you're telling me they nearly killed me?’* → **‘That is a FAIR thing to be upset about, and I want to be STRAIGHT with you. BOTH TABLETS WERE PRESCRIBED FOR GOOD REASONS — they protect your heart and your kidneys. WHAT HAS CHANGED is that your kidneys have TAKEN A HIT from being unwell, and at that point THE SAME TABLETS BECOME A PROBLEM. It is NOT that they were the wrong choice; it is that THEY NEED REVIEWING WHEN THINGS CHANGE. I am stopping them today and we will work out a safer plan TOGETHER.’**",
+    "**Other practice stems.** **24M, CRUSH INJURY under a fallen gate for three hours. K 6.8, CK 48,000, dark urine → RHABDOMYOLYSIS. Treat the potassium, then AGGRESSIVE FLUIDS — AND EXPECT IT TO RISE AGAIN as muscle continues to break down.** **62M, lymphoma, 48 h after chemotherapy. K 6.6, phosphate high, calcium LOW, urate high → TUMOUR LYSIS SYNDROME. Hydration, RASBURICASE, involve renal early.** **31F, weight loss, PIGMENTATION, postural dizziness. Na 126, K 6.0, glucose 3.1 → ADDISON DISEASE — THE HYPERKALAEMIA IS A CLUE, NOT THE DIAGNOSIS. Hydrocortisone and fluids.** **78F on ramipril, started TRIMETHOPRIM three days ago for a UTI. K 6.3, creatinine up 40% → DRUG INTERACTION. Stop both, rehydrate, recheck.**",
+    "**The one-line summary to the examiner**: **‘SEVERE hyperkalaemia at 7.2 WITH ECG CHANGES, in the context of ACUTE-ON-CHRONIC KIDNEY INJURY, an ACE INHIBITOR AND SPIRONOLACTONE, and a METABOLIC ACIDOSIS. I would MONITOR, give CALCIUM GLUCONATE, then INSULIN–DEXTROSE AND NEBULISED SALBUTAMOL, WITHHOLD ALL CONTRIBUTING DRUGS, RECHECK AT ONE TO TWO HOURS, and INVOLVE RENAL AND RETRIEVAL EARLY given his eGFR of 16.’**",
+    "**AVOID**: **no glucose monitoring after insulin — say it UNPROMPTED** · **Resonium as the acute answer** · **being reassured by a normal ECG** · **missing the multifactorial picture** · **quoting the number to the patient** · **concluding ‘it is just haemolysis’ BEFORE the ECG — the error that would kill THE ONE PATIENT IN FIFTY WHERE THE HAEMOLYSIS WAS COINCIDENTAL.**",
+    "SA — **in an MM5 setting the practical constraints matter AND ARE WORTH SAYING OUT LOUD.** **POINT-OF-CARE BLOOD GAS ANALYSERS give a potassium IN MINUTES and are often the FASTEST confirmation available — TREAT ON THE ECG WHILE AWAITING THE FORMAL LABORATORY RESULT.** **NEBULISED SALBUTAMOL AND CALCIUM GLUCONATE ARE USUALLY AVAILABLE WHERE INSULIN INFUSION PROTOCOLS AND DIALYSIS ARE NOT.** **DIALYSIS REQUIRES TRANSFER — INVOLVE MedSTAR RETRIEVAL ON 1300 13 12 33 EARLY RATHER THAN AFTER TWO FAILED ROUNDS OF MEDICAL THERAPY, BECAUSE THE TRANSFER TIME, NOT THE DRUG, IS THE RATE-LIMITING STEP.**"
    ],
-   "fails": [
-    "★ Never asking for an ECG — a fail on its own regardless of the total",
-    "★ Concluding 'it is just haemolysis' before the ECG and observations",
-    "★ Treating the unconfirmed value with calcium or insulin-dextrose in a well woman with a normal ECG",
-    "★ Cancelling her procedure on a single haemolysed sample",
-    "Not asking the laboratory about processing delay and cell counts; repeating the sample without changing the technique; quoting 6.1 at the patient instead of explaining what it means; having no plan for a repeat that comes back high"
-   ],
-   "numbers": [
-    "Potassium 6.1 is moderate, and moderate still gets an ECG · red cell potassium is many times the plasma concentration · repeat with a wider-bore needle, no prolonged tourniquet, no fist clenching, prompt delivery · causes of a false value: haemolysis, delayed processing, marked thrombocytosis or leukocytosis, edta contamination VERIFY",
-    "For contrast, version A: potassium 7.2 with ECG changes — calcium gluconate 10% 10 mL over 2-3 minutes, insulin 10 units in 50 mL of 50% glucose with hourly BGL for 6 hours, salbutamol 10-20 mg nebulised, then dialysis VERIFY · none of which is given here · VERIFY all"
+   "ddx": [
+    [
+     "**Spurious — pseudohyperkalaemia. ALWAYS CONSIDER IT FIRST**",
+     "**A WELL patient with an unexpected high potassium; lab comment ‘specimen haemolysed’**",
+     "**Haemolysis · TIGHT TOURNIQUET OR FIST CLENCHING · delayed or cold processing · THROMBOCYTOSIS OR LEUCOCYTOSIS · DRIP-ARM CONTAMINATION**",
+     "**ECG FIRST, THEN REPEAT THE SAMPLE properly, THEN conclude. A PLASMA sample resolves the cell-count cause.** Do not treat until confirmed"
+    ],
+    [
+     "**Acute kidney injury on chronic kidney disease**",
+     "**Diarrhoea, vomiting, poor intake on a background of CKD; lethargy and MUSCLE WEAKNESS**",
+     "**Urea disproportionately raised (PRERENAL); eGFR; URINE OUTPUT**",
+     "**Treat the potassium, restore volume CAUTIOUSLY, withhold nephrotoxins, renal referral. ANURIA MOVES DIALYSIS UP THE LIST.** Emergency"
+    ],
+    [
+     "**Drugs — the commonest reversible cause**",
+     "**ACEi/ARB · SPIRONOLACTONE · NSAIDs · TRIMETHOPRIM · heparin · beta-blockers · calcineurin inhibitors · digoxin · SALT SUBSTITUTES**",
+     "**ASK EACH BY NAME — patients do not count ibuprofen, salt substitutes or ‘the water tablet’ as medications**",
+     "**WITHHOLD EVERY CONTRIBUTOR and tell the patient NOT TO RESTART until reviewed.** Immediate"
+    ],
+    [
+     "**Metabolic acidosis**",
+     "**Bicarbonate low; shifts potassium OUT of cells**",
+     "Bicarbonate on the panel; the clinical context",
+     "Treat the cause; **sodium bicarbonate ONLY if significantly acidotic — WEAK evidence as a potassium-lowering agent alone.** Same admission"
+    ],
+    [
+     "**Rhabdomyolysis**",
+     "**Crush injury, prolonged immobility, DARK URINE, very high CK**",
+     "The mechanism and the urine colour",
+     "**Treat the potassium, then AGGRESSIVE FLUIDS — AND EXPECT IT TO RISE AGAIN as muscle continues to break down.** Emergency"
+    ],
+    [
+     "**Tumour lysis syndrome**",
+     "**48 h after chemotherapy; HIGH phosphate, LOW calcium, HIGH urate**",
+     "Recent chemotherapy, tumour bulk",
+     "Hydration, **RASBURICASE**, involve renal early. Emergency"
+    ],
+    [
+     "**Diabetic ketoacidosis / insulin deficiency**",
+     "**High glucose, ketones, acidosis — with a HIGH serum potassium but DEPLETED total body potassium**",
+     "Glucose, ketones, pH",
+     "**DKA protocol; START POTASSIUM REPLACEMENT once below 5.5 and passing urine. THE ONE HYPERKALAEMIA YOU TREAT WITH POTASSIUM.** Emergency"
+    ],
+    [
+     "**Addison disease / hypoaldosteronism**",
+     "**LOW sodium, HIGH potassium, LOW glucose, PIGMENTATION, postural dizziness, weight loss**",
+     "Pigmentation, postural BP, the electrolyte pattern",
+     "**Short synacthen test; HYDROCORTISONE AND FLUIDS. The hyperkalaemia is a CLUE, NOT THE DIAGNOSIS.** Urgent"
+    ],
+    [
+     "**Digoxin toxicity**",
+     "**Nausea, YELLOW-GREEN VISUAL DISTURBANCE, bradyarrhythmia; hyperkalaemia is a MARKER OF SEVERITY**",
+     "Digoxin level, renal function, interacting drugs",
+     "**DIGOXIN IMMUNE FAB is definitive. Discuss calcium with toxicology — the historical absolute contraindication is now questioned.** Emergency"
+    ],
+    [
+     "Increased intake alone",
+     "**Salt substitutes, supplements, large transfusions of STORED BLOOD**",
+     "Diet and supplement history by name",
+     "**Rarely sufficient alone — only in a patient who ALREADY CANNOT EXCRETE.** Routine"
+    ],
+    [
+     "**Early STEMI — the ECG mimic**",
+     "**Tall T waves that are BROAD-BASED AND ASYMMETRICAL**, chest pain",
+     "**The COMPANY the T waves keep — flat P, long PR, wide QRS point to hyperkalaemia instead**",
+     "Serial ECGs, troponin. **Do not let a tall T wave alone decide either diagnosis.** Emergency"
+    ]
    ]
   },
   "source": "Hyperkalaemia_2_Case_Tasks_Script_Notability.pdf (VERSION B — a well 44-year-old woman with a phoned potassium of 6.1 on pre-procedure bloods: pseudohyperkalaemia from a haemolysed sample, decided by the sequence ECG, repeat, conclude. Carded separately from MED-14, which is Version A, Bernard Hollis with true severe hyperkalaemia)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Chest Pain and Palpitations › Hyperkalaemia_2_Case_Tasks_Script_Notability.pdf",
   "must": [
-   "FAIL — Order of operations: concluding 'it's just haemolysis' before the ECG — the error that would kill the one patient in fifty where the haemolysis was coincidental; ECG first, repeat second, conclude third: 'a potassium of 6.1 is in the moderate range and I cannot ignore it; even though she is well, I would obtain an ECG and review her observations before I decide anything; I would also ask the laboratory whether the sample was haemolysed, whether there was a delay in processing, and what her platelet and white cell counts were'; not asking for an ECG is a fail on its own regardless of the total (★)",
-   "FAIL — Treating, or cancelling her procedure, on a haemolysed sample — once the ECG is normal and the lab reports haemolysis: 'the most likely explanation is pseudohyperkalaemia — potassium released from red cells during collection, not a true elevation; red cells contain potassium at many times the plasma concentration, so even modest haemolysis raises the measured value substantially; I would repeat the sample with a wider-bore needle, avoiding a prolonged tourniquet and fist clenching, and get it to the laboratory promptly; I would not treat, and I would not cancel her procedure, until I have a clean result; if the repeat is also high, then it is real and I work through renal function, medications and adrenal causes' (also thrombocytosis and leucocytosis as causes of spurious elevation) (★)",
-   "FAIL — If it is real, not knowing the three jobs with the drug that does each — PROTECT: calcium gluconate 10%, 10 mL IV over two to three minutes on the monitor, repeated at five minutes if the ECG has not improved — 'this does not lower the potassium; it stabilises the myocardium for 30 to 60 minutes; it must always be given alongside something that shifts or removes, never instead of it' (the question asked almost every time); SHIFT: ten units of short-acting insulin in 50 mL of 50% glucose over 15–30 minutes with hourly blood glucose for at least six hours, said unprompted — 'hypoglycaemia is the commonest complication and is often delayed'; plus salbutamol 10–20 mg nebulised (additive); sodium bicarbonate if acidotic, evidence weak; REMOVE: dialysis is definitive in oliguric renal failure — involve renal and retrieval early, not after failed medical therapy; withhold ramipril, spironolactone, NSAIDs, trimethoprim; recheck the potassium at one to two hours on continuous monitoring (★)",
-   "DO — Read the ECG systematically in order — rate, P, PR, QRS, T: 'the rate is 52 and bradycardic; I cannot clearly identify P waves — flattened and of low amplitude; the PR interval is prolonged; the QRS is broad at around 130 ms without a typical bundle branch morphology; the T waves are tall, narrow-based, symmetrical and peaked, most marked in the mid-precordial leads; taken together these are the changes of severe hyperkalaemia'; 'could the T waves be ischaemic?' → hyperacute T waves of infarction are broad-based and asymmetrical — the combination with flat P waves, a long PR and a wide QRS makes hyperkalaemia the explanation; in Version A read the panel as AKI on CKD (urea 24, creatinine 312, eGFR 16, a prerenal component), metabolic acidosis (HCO3 16 — shifts potassium out of cells), mild hyponatraemia fitting volume depletion; causes are multifactorial — name all four (stage 4 CKD as the baseline; AKI from gastroenteritis and poor intake; ramipril plus spironolactone — additive potassium retention; acidosis) and ask specifically about over-the-counter anti-inflammatories (ibuprofen for his knee, admitted only if asked), recent trimethoprim and potassium-based salt substitutes; 'his ECG had been normal — would you still have treated?' → yes at this level; the well dialysis patient at 6.9 with a normal ECG — chronic tolerance is not permission to wait: monitor, treat, bring dialysis forward",
-   "SAY — To the patient, explain the effect, never the number (quote 7.2 and he says 'is that bad?'): 'your blood tests show a salt called potassium is much higher than it should be; potassium helps your nerves and muscles work, but when it gets too high it upsets the electrical rhythm of your heart — and your heart tracing is already showing that; that is why I am treating it now rather than waiting; three things: calcium first — it does not lower the potassium, it protects your heart while the rest works; then insulin with sugar, which pushes the potassium back into your cells; and a nebuliser that helps do the same; then we work on clearing it from your body — and because your kidneys are not doing that well, you may need dialysis, which means transferring you; two of your tablets — the blood pressure one and the fluid one — hold potassium in; I am stopping both today; please do not restart them until you are reviewed'; 'am I going to have a heart attack?' → 'not a heart attack in the usual sense — this affects the rhythm rather than blocking an artery; but I don't want to understate it: at this level the rhythm can become dangerous, which is exactly why you're on a monitor'; 'is it something I did?' → 'you have not done anything wrong'; 'do I have to go to Adelaide?' → 'possibly — I'm arranging that conversation now rather than waiting; is there someone you'd like me to call?'",
-   "DO — Variants: the sine wave (K 8.4, QRS merging with T, drowsy, hypotensive) → peri-arrest — calcium immediately and repeated, insulin–dextrose and salbutamol simultaneously not sequentially, call for help and the arrest trolley, emergency dialysis; digoxin toxicity (K 6.4, nausea, yellow-green vision) → hyperkalaemia is a marker of severity and the indication for digoxin-specific antibody fragments — avoid calcium as a reflex, discuss with toxicology; DKA (K 5.9, glucose 28, ketones 5.2, pH 7.12) → total body potassium is depleted despite the high serum level — once insulin and fluids start it falls rapidly; follow the DKA protocol and replace potassium once below 5.5 and passing urine — 'the one hyperkalaemia you treat with potassium'; the angry patient ('you lot gave me those tablets — now they nearly killed me?') → 'a fair thing to be upset about; both were prescribed for good reasons — they protect your heart and kidneys; what has changed is that your kidneys have taken a hit from being unwell, and at that point the same tablets become a problem; not the wrong choice — they need reviewing when things change; I'm stopping them today and we'll work out a safer plan together'"
+   "FAIL — No ECG. Interprets the whole panel, discusses causes, never asks for a tracing. This is a fail on its own regardless of everything else.",
+   "FAIL — Describing calcium as lowering the potassium.",
+   "FAIL — Treating acutely and discharging on ramipril and spironolactone; or naming Resonium as the acute potassium-lowering treatment.",
+   "FAIL — Treating a haemolysed sample in a well patient; or dismissing it as artefact without an ECG and a repeat.",
+   "ASK — Before I go through these in full: I would attach cardiac monitoring and obtain a 12-lead ECG immediately.",
+   "ASK — Was the sample reported as haemolysed?"
   ],
   "versions": {
    "doorStem": "A results-interpretation station: a potassium result is handed to you. Tasks are the same in both versions — interpret the results and any further investigation to the examiner → state the likely causes → outline immediate management → explain the situation to the patient. The two versions land on DIFFERENT answers.",
@@ -99551,7 +99664,8 @@
    ],
    "note": "The trap in version B splits candidates two ways and both fail: treating a haemolysed sample with insulin–dextrose in a well patient, or dismissing it as artefact with no ECG and no repeat. ECG first, repeat second, treat only if confirmed. Severity: mild 5.5–5.9 · moderate 6.0–6.4 · severe ≥6.5 · ANY level with ECG change = severe, and that row overrides the rest. A normal ECG at 7.2 is not reassurance. Practice cards in the source (crush injury/rhabdomyolysis, Addison, trimethoprim interaction, tumour lysis, dialysis patient with broad-complex tachycardia) are partner drills, not recalls.",
    "thisCard": "B"
-  }
+  },
+  "v2": true
  },
  {
   "id": "MED-240",
