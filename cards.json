@@ -29747,9 +29747,8 @@
  {
   "id": "MED-117",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED. Version A of the central/periumbilical pain trio (Doug / Marion / Reg — Versions B and C are MED-118 and MED-119). Findings only for what you name; the inguinal region and the rectum are two separate named steps. Four cardinal features of obstruction, four adult causes, and a cause must be named — 'obstruction' with no cause is a fail.",
   "stem": [
    "Doug Harmer, 50, presents to the emergency department with central abdominal pain for several hours."
   ],
@@ -29758,110 +29757,211 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "8 min. ★ 'May I confirm the patient is haemodynamically stable — BP, HR, RR, T, sats?' · intro, offer analgesia, open · pain: site, /10 (8), ★ 'constant, or in waves that build and ease?' (colicky), onset, worse, radiation, better/worse · ★ obstruction block: vomiting — how many, ★ colour ('is any of it green?'), faeculent smell; distension; ★ 'when did you last pass WIND? when did you last open your bowels?' (absolute constipation — patients don't use the word) · ★ cause block: previous abdominal operation (appendicectomy in his 20s), groin lump/hernia, weight loss/PR blood/change in habit (tumour), chronic constipation · ischaemia block: palpitations/AF, MI/stroke/DVT, post-prandial pain and food fear · closure: urinary, rash/injury, smoking/alcohol/drugs/meds (anticoagulants, NSAIDs)/allergies, PMHx/FHx · examiner, seven steps named: appearance, four vitals, inspection (distension, scars, ★ visible peristalsis), palpation (tenderness, guarding, rigidity, rebound, masses), percussion (tympanic/dull), ★ auscultation (present/absent/tinkling), ★ inguinal region and scrotum, ★ DRE — rectum full or empty, dipstick + BSL · dx + CAUSE + layman explanation · grouped DDx · management: drip and suck.",
+  "findings": [
+   [
+    "OPEN WITH STABILITY IN AN ED STEM",
+    "'Before I begin — MAY I CONFIRM THE PATIENT IS HAEMODYNAMICALLY STABLE? Blood pressure, heart rate, respiratory rate, temperature and oxygen saturation.' In a GP stem with a month of symptoms you can skip it. IN AN ED STEM WITH HOURS OF SEVERE PAIN, SKIPPING IT IS NOTICED"
+   ],
+   [
+    "The history findings",
+    "SEVERAL HOURS OF COLICKY CENTRAL PAIN · FOUR EPISODES OF VOMITING, THE LAST TWO BILE-STAINED · ABDOMINAL DISTENSION · HAS NOT PASSED WIND FOR TWO DAYS AND HAS NOT OPENED HIS BOWELS FOR THREE · APPENDICECTOMY IN HIS TWENTIES"
+   ],
+   [
+    "The examination findings, once requested",
+    "ABDOMEN DISTENDED AND GENERALLY TENDER WITH GUARDING · PERCUSSION HYPER-RESONANT · BOWEL SOUNDS ABSENT · RECTUM EMPTY. Negatives: NO GROIN LUMP · no weight loss or rectal bleeding · no urinary symptoms · PULSE REGULAR"
+   ],
+   [
+    "THE FOUR CARDINAL FEATURES — ask each one",
+    "COLICKY CENTRAL PAIN · VOMITING · DISTENSION · ABSOLUTE CONSTIPATION. 'Any constipation?' → 'No' AND MOVING ON MISSES OBSTIPATION. ASK: 'WHEN DID YOU LAST PASS WIND? WHEN DID YOU LAST OPEN YOUR BOWELS?'"
+   ],
+   [
+    "THE ONE VOMITING FOLLOW-UP THAT CHANGES THE DIAGNOSIS",
+    "'WHAT COLOUR IS IT? IS ANY OF IT GREEN? DOES IT SMELL UNPLEASANT, ALMOST LIKE BOWEL MOTION?' FOOD → BILIOUS (GREEN) → FAECULENT MAPS THE BLOCK FROM HIGH TO LOW"
+   ],
+   [
+    "'THE PAIN COMES AND GOES IN WAVES'",
+    "COLIC MEANS A HOLLOW TUBE TRYING TO PUSH PAST A BLOCK — SAY SO OUT LOUD WHEN YOU GIVE REASONS. CONSTANT, SEVERE PAIN IN A SOFT ABDOMEN IS ISCHAEMIA, AND CONSTANT PAIN WITH FEVER AND LOCALISED PERITONISM IS STRANGULATION"
+   ],
+   [
+    "SURGICAL HISTORY IS LIVE DATA",
+    "'ANY OPERATION ON THE ABDOMEN LEAVES SCAR TISSUE INSIDE. THAT SCAR TISSUE IS THE COMMONEST CAUSE OF A BLOCKAGE.' Say it WITHOUT SOUNDING ACCUSATORY — the communication challenge in this version is explaining adhesions from an old operation"
+   ],
+   [
+    "ALWAYS ASK FOR THE GROIN",
+    "HERNIA IS THE SECOND COMMONEST CAUSE AND THE REASON YOU ALWAYS EXAMINE THE GROIN. The examiner WILL NOT VOLUNTEER A LUMP — you get it only when you ask for the inguinal region. Here it is NORMAL, and that negative is part of naming adhesions as the cause"
+   ],
+   [
+    "The ischaemia screen, even here",
+    "'ANY FUNNY RACING OR IRREGULAR BEATING OF YOUR HEART? EVER BEEN TOLD YOU HAVE AN IRREGULAR HEARTBEAT?' · heart attacks, strokes, clots · and the question nobody asks: 'DO YOU GET CRAMPING PAIN AFTER MEALS, AND HAVE YOU BEEN AVOIDING FOOD BECAUSE OF IT?'"
+   ],
+   [
+    "CLAIMING A FINDING YOU NEVER REQUESTED",
+    "DISTENSION, BOWEL SOUNDS, PERCUSSION NOTE AND THE RECTUM EACH HAVE TO BE ASKED FOR. If you did not request it, you do not have it"
+   ]
+  ],
+  "findingsLabel": "Version A — four cardinal features, and obstruction is a mechanism not a diagnosis",
+  "must": [
+   "FAIL — Naming 'bowel obstruction' and stopping, without a cause.",
+   "FAIL — Giving only the X-ray as management, with no resuscitation.",
+   "FAIL — Missing obstipation because he denies 'constipation'.",
+   "FAIL — Withholding analgesia to 'preserve the signs'.",
+   "ASK — When did you last pass wind? When did you last open your bowels?",
+   "ASK — Have you ever had an operation on your abdomen?"
+  ],
   "back": {
-   "dx": "Small bowel obstruction from adhesions (appendicectomy in his twenties) — colicky central pain 8/10, four vomits with the last two green and bitter, distended, no flatus for two days, no motion for three; no groin lump. PEFE: distended, generally tender with guarding, hyper-resonant, bowel sounds absent, appendicectomy scar, no groin lump, rectum empty. Explain adhesions without sounding accusatory: 'bands of scar are normal healing, not a mistake; years later one can kink or squeeze a loop'. Management: drip and suck (NBM, IV fluids, NG tube), analgesia, antiemetic, IDC for fluid balance, bloods, AXR/CT, surgical team; most adhesive SBO settles in 1–2 days; operate if it doesn't or if any sign of strangulation.",
+   "dx": [
+    "**SMALL BOWEL OBSTRUCTION, MOST LIKELY ADHESIONAL — a MECHANICAL BLOCK to the passage of bowel contents, with PROXIMAL DILATATION, FLUID SEQUESTRATION AND VOMITING.**",
+    "**OBSTRUCTION IS NOT A DIAGNOSIS — IT IS A MECHANISM. The examiner WILL ask 'CAUSED BY WHAT?' Have the four ready in order of frequency in an adult: ADHESIONS — MOST COMMON BY A LONG WAY, AND THE ANSWER WHENEVER THERE IS A SCAR · HERNIA — SECOND, AND THE REASON YOU ALWAYS EXAMINE THE GROIN · TUMOUR · VOLVULUS. In children, add INTUSSUSCEPTION.**",
+    "**THE THREE CENTRAL-PAIN EMERGENCIES ARE DIAGNOSED ON QUESTIONS RATHER THAN ON IMAGING. The station tests whether you can distinguish A BLOCKED BOWEL from A STRANGLED BOWEL from A BOWEL LOSING ITS BLOOD SUPPLY — BECAUSE THE TREATMENT OF EACH IS DIFFERENT AND ONE OF THEM CANNOT WAIT FOR A SCAN.**",
+    "**GIVE THE REASONS IN HIS WORDS: the pain COMES IN WAVES, which is the bowel TRYING TO PUSH PAST A BLOCK · the vomiting has TURNED GREEN · his tummy has SWOLLEN · he HASN'T PASSED WIND FOR TWO DAYS · and he had AN APPENDIX OPERATION, which leaves SCAR TISSUE INSIDE — THE COMMONEST CAUSE OF A BLOCKAGE.**",
+    "**WHEN ASKED 'WHAT WOULD YOU DO NEXT?', THE IMAGING IS STEP SEVEN, NOT STEP ONE. THE EIGHT STEPS: NIL BY MOUTH · TWO LARGE-BORE CANNULAE AND BLOODS WITH A LACTATE · IV FLUIDS · NASOGASTRIC TUBE ON FREE DRAINAGE · ANALGESIA AND ANTIEMETIC · CATHETER WITH STRICT FLUID BALANCE · IMAGING · SURGICAL REFERRAL.**",
+    "**WITHHOLDING OPIOID ANALGESIA FOR FEAR OF MASKING SIGNS IS OBSOLETE AND IS NOW SCORED AGAINST YOU. Give analgesia and SAY YOU WILL RE-EXAMINE REGULARLY.**",
+    "**ADHESIONAL OBSTRUCTION WITHOUT STRANGULATION gets a CONSERVATIVE TRIAL — 'DRIP AND SUCK', SERIAL EXAMINATION, REPEAT IMAGING. MOST SETTLE IN 24–48 HOURS.** **A WATER-SOLUBLE CONTRAST STUDY such as Gastrografin down the NG tube both PREDICTS WHICH WILL SETTLE AND HELPS THEM SETTLE — contrast reaching the colon within 24 hours predicts resolution.** VERIFY local protocol.",
+    "**OPERATE FOR STRANGULATION, CLOSED LOOP, PERFORATION, OR FAILURE OF CONSERVATIVE MANAGEMENT.** **The signs of strangulation: CONSTANT PAIN, FEVER, TACHYCARDIA, LOCALISED PERITONISM, A RISING LACTATE → THEATRE.**",
+    "**READ THE FILMS: ERECT FOR AIR-FLUID LEVELS, SUPINE FOR DILATED LOOPS. SMALL BOWEL — VALVULAE CONNIVENTES CROSSING THE FULL WIDTH, a STACKED-COIN appearance, lying CENTRALLY. LARGE BOWEL — HAUSTRA CROSSING ONLY PART OF THE WIDTH, a POUCHED appearance, lying PERIPHERALLY.** **CT abdomen and pelvis with IV contrast is MORE SENSITIVE and gives THE LEVEL, THE CAUSE, AND WHETHER THERE IS ISCHAEMIA.**",
+    "**RURAL SA: Wallaroo and Kadina HAVE NO ON-SITE GENERAL SURGERY OVERNIGHT. Stabilise locally — drip, suck, analgesia, bloods — WHILE YOU RING THE RECEIVING GENERAL SURGICAL REGISTRAR AND MEDSTAR ON 1300 13 12 33. TQEH is the usual metropolitan receiving site for Yorke Peninsula; RFDS for fixed-wing retrieval. RING WHILE THE WORKUP RUNS, NOT AFTER IT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "★ Stability question · 'I'm Dr —, am I speaking with Doug? I can see you're in a lot of pain — would you like something for it before we start? Tell me what's been happening.'"
+     "**ASK FOR STABILITY — IN AN ED STEM IT IS A MARK.** Then **WIPE and an open question.**"
     ],
     [
-     "0:45",
-     "Pain: show me · /10 · ★ 'there all the time, or comes in waves and then eases off?' → waves · when · worse · travels · better/worse"
+     "0:20",
+     "**Acknowledge and signpost; offer analgesia in two questions and move on.**"
+    ],
+    [
+     "0:35",
+     "**THE PAIN, FULL SICORA — but CHARACTER MATTERS MORE HERE THAN ANYWHERE ELSE: 'IS IT THERE ALL THE TIME, OR DOES IT COME IN WAVES AND THEN EASE OFF?'**"
     ],
     [
      "1:30",
-     "★ 'Have you been vomiting? How many times, what colour — is any of it green? Does it smell unpleasant, almost like a bowel motion?' → 4, last two green · 'has your tummy become swollen?' → yes · ★ 'when did you last pass wind? when did you last open your bowels?' → 2 days / 3 days"
+     "**THE OBSTRUCTION BLOCK — FOUR CARDINAL FEATURES. VOMITING: HOW MANY TIMES, WHAT COLOUR, IS ANY OF IT GREEN, DOES IT SMELL FAECULENT? DISTENSION: HAS YOUR TUMMY BECOME SWOLLEN OR BLOATED?**"
+    ],
+    [
+     "2:05",
+     "**ABSOLUTE CONSTIPATION, ASKED THE RIGHT WAY: 'WHEN DID YOU LAST PASS WIND? WHEN DID YOU LAST OPEN YOUR BOWELS?'**"
+    ],
+    [
+     "2:20",
+     "**THE CAUSE BLOCK: 'HAVE YOU EVER HAD AN OPERATION ON YOUR ABDOMEN?' — adhesions · 'ANY LUMP OR SWELLING IN YOUR GROIN, OR EVER BEEN TOLD YOU HAVE A HERNIA?' · 'any WEIGHT LOSS, BLOOD IN YOUR BOWEL MOTIONS OR CHANGE IN BOWEL HABIT?' — tumour · 'any LONG-STANDING CONSTIPATION?' — volvulus, impaction.**"
     ],
     [
      "2:45",
-     "★ Cause: 'ever had an operation on your abdomen?' → appendix in his 20s · 'any lump or swelling in your groin, ever told you have a hernia?' · weight loss, blood in motions, change in habit · long-term constipation · ischaemia: racing/irregular heartbeat, AF, heart attacks/strokes/clots, pain after meals/avoiding food"
+     "**THE ISCHAEMIA BLOCK: 'any FUNNY RACING OR IRREGULAR BEATING OF YOUR HEART? Ever been told you have AN IRREGULAR HEARTBEAT, OR ATRIAL FIBRILLATION? Any HEART ATTACKS, STROKES, OR CLOTS IN THE LEGS? DO YOU GET CRAMPING PAIN AFTER MEALS, AND HAVE YOU BEEN AVOIDING FOOD BECAUSE OF IT?'**"
+    ],
+    [
+     "3:10",
+     "**GI GENERAL AND RED FLAGS: fevers · appetite · blood or black stools · jaundice. In an older patient: 'ARE YOU ON BLOOD THINNERS? DO YOU TAKE ANTI-INFLAMMATORIES?'**"
     ],
     [
      "3:45",
-     "Closure: burning/frequency/haematuria · rash/injury · smoking, alcohol, drugs, ★ medicines incl blood thinners and anti-inflammatories, allergies · PMHx, FHx · summarise back"
+     "**KUB, THREE QUESTIONS: pain or burning passing urine · going more often · blood in the urine.** Then **the non-surgical mimics: THIRST AND POLYURIA for DKA · any RASH IN A BAND for shingles · any trouble passing urine at all for RETENTION.**"
     ],
     [
      "4:30",
-     "★ Examiner, seven steps: appearance (alert, distressed, dehydrated) · four vitals incl temperature · inspection — distended, moves with respiration, scars, ★ visible peristalsis · palpation — tenderness, guarding, rigidity, rebound, masses · percussion — tenderness, resonant or dull · ★ auscultation — present, absent, or high-pitched tinkling · ★ inguinal region and scrotum — any lump · ★ DRE — rectum full or empty · dipstick, BSL → distended, generally tender with guarding, hyper-resonant, BS absent, scar, no groin lump, rectum empty"
+     "**SADMA — smoking, alcohol, drugs, medications, allergies — and a ONE-LINE SUMMARY BACK TO HIM.**"
+    ],
+    [
+     "5:00",
+     "**THE EXAMINATION, REQUESTED BY NAME: general appearance — distressed, dehydrated, lying still or restless · VITALS AND A POSTURAL DROP · INSPECTION for DISTENSION, SCARS AND VISIBLE PERISTALSIS.**"
+    ],
+    [
+     "5:30",
+     "**PALPATION — TENDERNESS AND WHERE, GUARDING, RIGIDITY, REBOUND, ANY MASS · PERCUSSION NOTE, HYPER-RESONANT OR DULL · BOWEL SOUNDS, ABSENT OR TINKLING · THE HERNIAL ORIFICES AND THE GROIN · and with consent and a chaperone, A RECTAL EXAMINATION for an empty rectum or a mass.**"
     ],
     [
      "6:00",
-     "★ 'Doug, your bowel is blocked — a small bowel obstruction — and the most likely cause is scar tissue from your appendix operation. Whenever the inside of the tummy is operated on, the body lays down bands of scar — that's normal healing, not a mistake. Years later one of those bands can kink or squeeze a loop of bowel and nothing gets past. That explains the gripping pain, the vomiting, the swelling and no wind.' · DDx grouped with a reason: other blockage causes — hernia (groin normal), growth (no weight loss/bleeding/habit change), twist; outside blockage — blocked blood supply, pancreatitis, ulcer, kidney stone (pain pattern and clear urine argue against)"
+     "**Bedside: capillary glucose and ketones, urine dipstick, ECG for rhythm.**"
     ],
     [
-     "7:15",
-     "'You stay in hospital. Nothing by mouth, a drip for fluids, a small tube through the nose to drain the stomach — drip and suck. Pain relief, anti-nausea, a catheter to measure fluid balance, bloods and an X-ray/CT of the abdomen, and the surgical team will see you. Most blockages from scar tissue settle in a day or two without an operation. If it doesn't settle, or there's any sign the bowel is being strangled, we operate.' · questions, someone to call"
+     "6:15",
+     "**NAME IT WITH ITS CAUSE — 'a BLOCKAGE IN YOUR SMALL BOWEL, MOST LIKELY FROM SCAR TISSUE LEFT BY YOUR APPENDIX OPERATION' — then the reasons in his words.**"
+    ],
+    [
+     "7:00",
+     "**THE DIFFERENTIALS: obstruction from a HERNIA — groin normal · a TUMOUR — no weight loss or bleeding · a VOLVULUS · then MESENTERIC ISCHAEMIA — pulse regular, pain not out of proportion · pseudo-obstruction · and a RUPTURED AAA in any older person with central pain.**"
+    ],
+    [
+     "7:30",
+     "**THE EIGHT-STEP PLAN, WITH IMAGING AT STEP SEVEN — and tell him plainly: 'we'll put a tube down to rest your bowel and take the pressure off, give you fluids and pain relief, and THE SURGICAL TEAM WILL SEE YOU NOW. Many of these settle without an operation, but some need one.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Examiner, before I begin — may I confirm the patient is haemodynamically stable? Blood pressure, heart rate, respiratory rate, temperature and oxygen saturation.' / 'I can see you're in a lot of pain. Would you like something for it before we start?'",
-    "★ 'Is it there all the time, or does it come in waves and then ease off?' / ★ 'How many times have you vomited, and what colour is it — is any of it green? Does it smell unpleasant, almost like a bowel motion?' / 'Has your tummy become swollen or bloated?'",
-    "★ 'And — this is important — when did you last pass wind? When did you last open your bowels?'",
-    "★ 'Have you ever had an operation on your abdomen? Any lump or swelling in your groin, or have you ever been told you have a hernia? Any weight loss, blood in your bowel motions, or change in your bowel habit?' / 'Any racing or irregular beating of your heart? Do you get cramping pain in your tummy after meals?'",
-    "★ To examiner: 'Inspection — is the abdomen distended, moving with respiration, any scars, any visible peristalsis? … Auscultation — are bowel sounds present, absent, or high pitched and tinkling? The inguinal region and scrotum — any lump or swelling? Digital rectal examination — is the rectum full or empty?'",
-    "★ 'Doug, your bowel is blocked — a small bowel obstruction — and the most likely cause is scar tissue from your appendix operation. Any operation inside the tummy leaves bands of scar tissue — that is normal healing, not a mistake. Years later a band can kink or squeeze a loop of bowel, and nothing gets past.'",
-    "'Nothing by mouth, a drip for fluids, and a small tube through the nose to drain the stomach — we call it drip and suck. Pain relief, something for the nausea, a catheter so we can measure your fluid balance, bloods and an X-ray of the abdomen, and the surgical team will see you. Most blockages caused by scar tissue settle in a day or two without an operation.'"
-   ],
    "pefe": [
-    "Role-player: Doug, 50; colicky central pain 8 h, 8/10; four vomits, last two green; distended; no wind 2 d, no motion 3 d; appendicectomy in his twenties; no groin lump; doesn't volunteer flatus until asked",
-    "PEFE: distended, generally tender with guarding, hyper-resonant, bowel sounds absent, appendicectomy scar, no groin lump, rectum empty",
-    "Four cardinal features: colicky pain · vomiting (bilious → faeculent) · distension · absolute constipation (no flatus). Four adult causes: adhesions · hernia · tumour · volvulus. Small bowel on AXR: valvulae conniventes, full width, central; large bowel: haustra, partial, peripheral; erect film for air-fluid levels. CT abdomen with contrast is the definitive test (transition point, closed loop, ischaemia). Gastrografin challenge: contrast reaching the colon within 24 h predicts non-operative resolution VERIFY",
-    "Eight-step resuscitation — imaging is step seven: NBM · IV access + bloods (FBE, UEC, VBG/lactate, lipase, G&H) · fluids · NG tube · analgesia · antiemetic · IDC · imaging · surgical referral. Strangulation signs: constant pain, peritonism, fever, tachycardia, leucocytosis, raised lactate → theatre. Harder variants: sigmoid volvulus (elderly, gross distension, coffee-bean loop from the pelvis → flexible sigmoidoscopic decompression, surgery if it fails/ischaemia) · ruptured AAA (older smoker, central/back pain, faint, pulsatile mass — stop the history and say so; recognising when to stop is scored) · ischaemic colitis (anticoagulated, crampy left pain, bloody diarrhoea settling — supportive care; thumbprinting is colonic)",
-    "SA: MedSTAR 1300 13 12 33 for a rural site needing theatre · TIS 131 450"
+    "**Do now: NIL BY MOUTH · TWO LARGE-BORE CANNULAE · FBC, UEC, LFT, LIPASE, CRP, VBG WITH LACTATE, GROUP AND HOLD · IV CRYSTALLOID AND POTASSIUM REPLACEMENT · NASOGASTRIC TUBE ON FREE DRAINAGE · ANALGESIA AND ANTIEMETIC · INDWELLING CATHETER WITH STRICT FLUID BALANCE · EARLY SURGICAL REFERRAL.**",
+    "**Do next: ERECT AND SUPINE ABDOMINAL X-RAY — MULTIPLE AIR-FLUID LEVELS ON THE ERECT FILM, DILATED LOOPS ON THE SUPINE · CT ABDOMEN AND PELVIS WITH IV CONTRAST, MORE SENSITIVE, GIVING LEVEL, CAUSE AND ISCHAEMIA · ERECT CHEST X-RAY if perforation is suspected, for GAS UNDER THE DIAPHRAGM.** **In suspected mesenteric ischaemia, GO STRAIGHT TO CT ANGIOGRAPHY.**",
+    "**Definitive: ADHESIONAL WITHOUT STRANGULATION → CONSERVATIVE TRIAL with drip and suck, serial examination and a WATER-SOLUBLE CONTRAST STUDY. OPERATE for STRANGULATION, CLOSED LOOP, PERFORATION, OR FAILURE OF CONSERVATIVE MANAGEMENT.**",
+    "**SIGMOID VOLVULUS: THE COFFEE-BEAN SIGN — a single grossly dilated loop arising from the pelvis with a dense line down the middle. Treated by FLEXIBLE SIGMOIDOSCOPIC DECOMPRESSION first.**",
+    "**CORRECTION — ACUTE MESENTERIC ISCHAEMIA AND ISCHAEMIC COLITIS ARE COMMONLY TAUGHT AS ONE AND ARE NOT. THUMBPRINTING IS A COLONIC SIGN pointing to ISCHAEMIC COLITIS — watershed large bowel, low-flow, crampy left-sided pain with bloody diarrhoea, usually settling with supportive care. For SMALL BOWEL MESENTERIC ISCHAEMIA, DO NOT RELY ON A PLAIN FILM — REQUEST CT ANGIOGRAPHY.**",
+    "**Do not miss: STRANGULATION — fever, tachycardia, localised peritonism, rising lactate · CLOSED-LOOP OBSTRUCTION · A RUPTURED ABDOMINAL AORTIC ANEURYSM in any older person with central pain and shock · ISCHAEMIC BOWEL in a patient whose pain is FAR WORSE THAN THE ABDOMEN LOOKS.**",
+    "**Avoid: WITHHOLDING OPIOID ANALGESIA — OBSOLETE AND SCORED AGAINST YOU · NAMING 'OBSTRUCTION' WITHOUT A CAUSE · GIVING ONLY THE X-RAY AS MANAGEMENT.** **In a rural hospital, ring the receiving unit and MEDSTAR WHILE THE WORKUP RUNS. PATS for planned follow-up travel; Country Health Connect after discharge; TIS National 131 450.**"
    ],
-   "fails": [
-    "Skipping the stability question in an ED stem",
-    "Accepting 'no constipation' — never asking about flatus; not probing vomit colour",
-    "★ Naming obstruction with no cause; never asking about previous surgery or a groin lump",
-    "Not requesting the inguinal region and the rectum as named steps; ★ claiming a finding never requested",
-    "Explaining adhesions as a surgical error; omitting NG tube/drip-and-suck; sending for imaging before resuscitation in a peritonitic patient"
-   ],
-   "numbers": [
-    "Four cardinal features · four adult causes · eight-step resuscitation, imaging step seven · adhesive SBO settles in 1–2 d in most",
-    "AXR: SB valvulae conniventes central full-width; LB haustra peripheral · erect film air-fluid levels · Gastrografin to colon within 24 h predicts resolution VERIFY",
-    "MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Small bowel obstruction — adhesions** — the answer",
+     "**COLICKY CENTRAL PAIN, VOMITING, DISTENSION, NO FLATUS, PREVIOUS SURGERY OR A SCAR**",
+     "**Operations; LAST FLATUS AND MOTION; scar on inspection; absent bowel sounds; empty rectum**",
+     "**Erect and supine AXR; CT WITH CONTRAST FOR LEVEL AND CAUSE** — EMERGENCY"
+    ],
+    [
+     "**Obstruction — hernia**",
+     "**Groin or umbilical lump, worse on straining**",
+     "**IS IT TENDER? IS IT REDUCIBLE?**",
+     "**Examine the groin. IF TENDER AND IRREDUCIBLE — THEATRE, NOT A SCAN** — EMERGENCY"
+    ],
+    [
+     "Obstruction — tumour",
+     "**OLDER patient, WEIGHT LOSS, PR BLEEDING, CHANGE IN HABIT**",
+     "The red-flag block",
+     "CT; COLONOSCOPY ONCE DECOMPRESSED — urgent"
+    ],
+    [
+     "**Obstruction — volvulus**",
+     "**ELDERLY, CONSTIPATED OR INSTITUTIONALISED, GROSS DISTENSION, sudden onset**",
+     "Bowel habit, mobility, laxative use",
+     "**AXR — COFFEE-BEAN SIGN; flexible sigmoidoscopic decompression** — EMERGENCY"
+    ],
+    [
+     "**Acute mesenteric ischaemia**",
+     "**PAIN OUT OF PROPORTION, IRREGULAR PULSE, DARK STOOLS, vascular history**",
+     "**AF, previous emboli, POST-PRANDIAL PAIN, FOOD FEAR**",
+     "**Lactate and VBG; CT ANGIOGRAPHY; vascular and surgical referral** — EMERGENCY"
+    ],
+    [
+     "**Ruptured abdominal aortic aneurysm**",
+     "**SUDDEN CENTRAL OR BACK PAIN, COLLAPSE, PULSATILE MASS, older smoker**",
+     "Back pain, syncope, known aneurysm",
+     "**Bedside ultrasound; THEATRE. DO NOT MISS IN ANY OLDER PERSON WITH CENTRAL PAIN AND SHOCK** — EMERGENCY"
+    ],
+    [
+     "Ischaemic colitis",
+     "**WATERSHED LARGE BOWEL, low-flow; crampy LEFT-SIDED pain with BLOODY DIARRHOEA**",
+     "**THUMBPRINTING — A COLONIC SIGN**",
+     "CT; **usually settles with supportive care, NOT laparotomy**"
+    ],
+    [
+     "Pseudo-obstruction",
+     "Elderly, post-operative or medically unwell; opioids, electrolyte disturbance",
+     "Colonic dilatation without a mechanical block",
+     "Correct electrolytes, stop opioids; decompression"
+    ],
+    [
+     "Pancreatitis · peptic ulcer · gastroenteritis",
+     "**Epigastric pain TO THE BACK; food-related pain; contacts and diarrhoea**",
+     "**Alcohol, gallstones, NSAIDs, contacts**",
+     "**LIPASE; ERECT CXR FOR FREE GAS; stool studies**"
+    ],
+    [
+     "**Non-surgical mimics — DKA, shingles, urinary retention**",
+     "**Thirst and polyuria; a DERMATOMAL BAND of pain before the rash; a palpable bladder**",
+     "**BSL AND KETONES; INSPECT THE SKIN; BLADDER SCAN**",
+     "Treat the cause — **check the glucose in every central-pain station**"
+    ]
    ]
   },
   "source": "Central_Abdominal_Pain_2_Case_Tasks_Script_Notability.pdf Version A (Doug Harmer, 50, colicky central pain, bilious vomiting, no flatus, previous appendicectomy — adhesive small bowel obstruction)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Mid GI › Central_Abdominal_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Inspection",
-    "Distended; appendicectomy scar"
-   ],
-   [
-    "Palpation",
-    "Generally tender WITH GUARDING"
-   ],
-   [
-    "Percussion",
-    "Hyper-resonant"
-   ],
-   [
-    "Bowel sounds",
-    "Absent"
-   ],
-   [
-    "Groins",
-    "No lump"
-   ],
-   [
-    "Rectal examination",
-    "EMPTY rectum"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Naming obstruction with no cause — 'your bowel is blocked, and the most likely cause is scar tissue from your appendix operation'; the cause block is 'have you ever had an operation on your abdomen? any lump in your groin, or been told you have a hernia? weight loss, blood in the motions, change in habit?' (adhesions, hernia, tumour, volvulus) (★)",
-   "FAIL — Accepting 'no constipation' as an answer about bowel habit — the cardinal feature is absolute constipation, failure to pass flatus, and patients don't use that word: 'when did you last pass wind? when did you last open your bowels?' → no wind for two days, no motion for three; and 'is it there all the time, or does it come in waves and then eases off?' — colicky is the diagnosis",
-   "FAIL — Claiming a finding you never requested — seven steps named: appearance and hydration, four vitals, inspection (distension, scars, visible peristalsis), palpation (tenderness, guarding, rigidity, rebound, mass), percussion (resonant or dull), auscultation ('bowel sounds present, absent, or high-pitched and tinkling?'), inguinal region and scrotum, rectal ('is the rectum full or empty?'), dipstick and glucose (★)",
-   "DO — Stability with the examiner before engaging (it is an ED stem — eight seconds), offer analgesia, then the obstruction block: vomits — how many, colour, 'is any of it green? does it smell like a bowel motion?'; swollen or bloated; the ischaemia block even in Version A (irregular heartbeat, AF, clots, post-prandial pain and food avoidance); medicines incl. blood thinners and anti-inflammatories",
-   "SAY — Adhesions without sounding accusatory: 'whenever the inside of the tummy is operated on, the body lays down bands of scar — that is normal healing, not a mistake; years later one of those bands can kink or squeeze a loop of bowel and nothing gets past'; differentials grouped with a reason each (hernia — groin normal; tumour — no weight loss, bleeding or habit change; volvulus; then ischaemia, pancreatitis, ulcer, ureteric stone)",
-   "SAY — Management if asked: 'you stay in hospital; nothing by mouth, a drip, a tube through the nose to drain the stomach — drip and suck; pain relief, anti-nausea, a catheter for fluid balance, bloods, an abdominal X-ray (erect for fluid levels, supine for dilated loops), the surgical team; most scar-tissue blockages settle in a day or two without an operation — if it doesn't settle or there's any sign of strangulation, we operate'; imaging is step seven of the resuscitation, not step one"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-118",
