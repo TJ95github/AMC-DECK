@@ -34527,9 +34527,8 @@
  {
   "id": "MED-139",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Within the first minute he volunteers that he is gay and his male partner has the same symptoms — every candidate received that without digging. Reorder the consultation: sexual history to the front. Three traps in task 2: avoiding the word HIV; testing without consent and a pre-test discussion; saying 'PrEP protects you, so it can't be HIV' (untrue — the reassurance trap the case is built to catch).",
   "stem": [
    "Michael Reid, 32, presents with diarrhoea for two weeks. 'I'm gay, and my boyfriend has exactly the same thing.'"
   ],
@@ -34537,84 +34536,209 @@
    "Take a focused, relevant history (6 minutes)",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 min. Identity, open → disclosure → ★ 'thank you for telling me that so openly — it's directly relevant. I'd like to ask about your bowels, and also about your sexual health, because that may well be part of what's going on. Everything is confidential. Is that all right?' · ★ PrEP first: on it? every day, missed doses? since when, who prescribes? ★ 'last HIV/STI check and did you get the results?' (a month ago, never got them → 'I'll retrieve them today — not the same as a negative') · ★ three boxes — partners (stable? multiple? male/female/both), practices (condoms? oral/anal? receptive/insertive?), risk (previous STIs — chlamydia ×2, gonorrhoea, syphilis; sex under alcohol/drugs; sex work) · say it back · ★ seroconversion: fevers/night sweats, sore throat, glands, rash, mouth ulcers, myalgia · ★ anorectal: pain, discharge, tenesmus, bleeding · generic structure at pace: timing, CCCVO, general GI, travel/contacts, hepatitis + hep A/B vaccination, IBD/coeliac/lactose, other meds, thyroid, red flags · summarise · ★ name HIV as the condition to exclude, reasons, PrEP not absolute, grouped DDx (PrEP side effect, proctitis — chlamydia/gonorrhoea/LGV, enteric STIs — shigella/giardia, hepatitis A, general causes), ★ consent + pre-test discussion (window, repeat 6 and 12 weeks, result in person), three-site STI screen, ★ partner in for the same tests.",
+  "findings": [
+   [
+    "THE PIVOT ARRIVES IN THE FIRST MINUTE",
+    "'I'VE HAD DIARRHOEA FOR ABOUT TWO WEEKS. I'M GAY, AND MY PARTNER HAS EXACTLY THE SAME THING.' DO NOT FILE IT AWAY FOR LATER. TREAT IT AS A SECOND PRESENTING COMPLAINT AND EXPLORE IT IMMEDIATELY. THE ROLE-PLAYER WAS INSTRUCTED TO SAY IT EARLY PRECISELY SO THAT YOU WOULD ACT ON IT"
+   ],
+   [
+    "ONE OF THE HIGHEST FAILURE RATES IN THE ABDOMINAL BLOCK",
+    "NOT FAILED ON KNOWLEDGE. CANDIDATES RUN THE GENERIC DIARRHOEA STRUCTURE, REACH THE SEXUAL HISTORY AT FIVE AND A HALF MINUTES AS QUESTION TEN, ASK TWO SCREENING QUESTIONS, AND NEVER COLLECT THE RISK FACTORS THE WHOLE STATION WAS BUILT AROUND"
+   ],
+   [
+    "THE PIVOT SENTENCE",
+    "'THANK YOU FOR TELLING ME THAT — IT'S DIRECTLY RELEVANT, SO I'D LIKE TO ASK SOME QUESTIONS ABOUT YOUR SEXUAL HEALTH NOW RATHER THAN LATER. EVERYTHING IS CONFIDENTIAL.' Then — 'BEFORE ANYTHING ELSE — ARE YOU TAKING PrEP?'"
+   ],
+   [
+    "PrEP — ADHERENCE, NOT JUST USE",
+    "'ARE YOU TAKING IT EVERY DAY, WITHOUT MISSING DOSES?' EFFICACY IS ADHERENCE-DEPENDENT; 'MOST DAYS' IS NOT PROTECTED. Then WHEN STARTED, WHO PRESCRIBES, LAST HIV AND STI SCREEN AND RESULT, and ANY TUMMY UPSET SINCE STARTING"
+   ],
+   [
+    "THE THREE-BOX SEXUAL HISTORY — at ninety seconds",
+    "PARTNERS — STABLE RELATIONSHIP, MULTIPLE PARTNERS, GENDER · PRACTICES — CONDOMS, ORAL, ANAL, RECEPTIVE OR INSERTIVE · RISK — PREVIOUS STIs, SEX UNDER ALCOHOL OR DRUGS, SEX WORKERS, LAST SCREEN AND RESULT"
+   ],
+   [
+    "WHAT HE GIVES",
+    "ON PrEP, TAKEN DAILY · MULTIPLE PARTNERS · CONDOMLESS ANAL SEX · PREVIOUS CHLAMYDIA, GONORRHOEA AND SYPHILIS · LAST SCREEN A MONTH AGO, RESULT NOT SEEN. SAY IT BACK: 'SO YOU'VE HAD SEVERAL INFECTIONS BEFORE, WHICH TELLS ME YOU'VE HAD EXPOSURES'"
+   ],
+   [
+    "A PENDING RESULT IS NOT A NEGATIVE RESULT",
+    "'MY LAST CHECK WAS A MONTH AGO, I DON'T KNOW THE RESULT' → 'I'LL LOOK THOSE RESULTS UP TODAY'"
+   ],
+   [
+    "THE SEROCONVERSION BLOCK",
+    "'ANY FEVERS, NIGHT SWEATS, SORE THROAT, SWOLLEN GLANDS IN YOUR NECK OR ARMPITS, A RASH, MOUTH ULCERS, OR ACHING MUSCLES ALONG WITH THE DIARRHOEA?' ANY OF THESE WITH DIARRHOEA IN THIS RISK GROUP IS A STRONG ARGUMENT FOR TESTING TODAY"
+   ],
+   [
+    "THE ANORECTAL BLOCK — four questions",
+    "'ANY PAIN IN THE BACK PASSAGE? ANY DISCHARGE? ANY FEELING OF NEEDING TO GO WHEN THERE'S NOTHING THERE? ANY BLEEDING?' TENESMUS WITH DISCHARGE IS PROCTITIS — CHLAMYDIA INCLUDING LGV, GONORRHOEA, HERPES — TREATABLE TODAY AND MISSED IF NEVER ASKED"
+   ],
+   [
+    "THE PARTNER IS A SECOND PATIENT",
+    "'TELL ME ABOUT YOUR PARTNER'S SYMPTOMS. HAS HE BEEN TESTED? IS HE ON PrEP?' Concurrent illness supports a TRANSMISSIBLE CAUSE — shared source, sexually transmissible enteric infection, OR BOTH SEROCONVERTING. And VACCINATION — hepatitis A and B, mpox, doxy-PEP"
+   ]
+  ],
+  "findingsLabel": "A disclosure in the first minute — treat it as a second presenting complaint",
+  "must": [
+   "FAIL — Sexual history left to the end, or reduced to two screening questions.",
+   "FAIL — Never naming HIV, apparently to avoid causing alarm.",
+   "FAIL — Testing for HIV without a pre-test discussion and consent.",
+   "FAIL — Announcing HIV as a diagnosis from the history alone.",
+   "ASK — Are you taking PrEP every day, without missing doses?",
+   "ASK — Any fever, sore throat, rash, swollen glands or mouth ulcers?"
+  ],
   "back": {
-   "dx": "Acute HIV infection to be excluded — two weeks of watery diarrhoea 4–5/day in a man on PrEP with ~fortnightly missed doses, a fluey illness with sore throat, fever, myalgia and a chest rash two weeks ago, persistent cervical lymphadenopathy, mouth ulcers, some anal discharge; risk profile: open relationship, several male partners, condomless receptive anal sex, chlamydia ×2, gonorrhoea, syphilis, chemsex; last screen a month ago with results never seen. Most probable diagnoses are a PrEP side effect or a sexually transmitted enteric infection/proctitis — HIV is first as the diagnosis I most need to exclude because the consequence of missing it is greatest and the seroconversion picture fits. PrEP substantially reduces but does not eliminate risk; breakthrough is described.",
+   "dx": [
+    "**ACUTE HIV INFECTION — SEROCONVERSION ILLNESS — TO BE EXCLUDED, with PrEP SIDE EFFECT, INFECTIVE PROCTITIS AND SEXUALLY TRANSMISSIBLE ENTERIC INFECTION as differentials.** **Acute retroviral syndrome follows HIV acquisition BY TWO TO FOUR WEEKS: FEVER, SORE THROAT, LYMPHADENOPATHY, RASH, MYALGIA, MOUTH ULCERS — and importantly here, DIARRHOEA.**",
+    "**THE DISCRIMINATING ISSUE: TREATING THE DISCLOSURE AS A SECOND PRESENTING COMPLAINT. The sexual history is no longer a two-question screen at the end — IT BECOMES A FULL THREE-BOX HISTORY AT ABOUT NINETY SECONDS, BEFORE IBD, BEFORE COELIAC, BEFORE MEDICATIONS. THE CONTEXT RE-RANKS THE LIST: HIV MOVES FROM TENTH ON THE GENERIC LIST TO FIRST.**",
+    "**THE SECOND DISCRIMINATOR — HOW YOU NAME IT: 'I want to be upfront with you. THE MOST SERIOUS THING I NEED TO RULE OUT IS HIV. I'M NOT TELLING YOU THAT YOU HAVE IT — I'M TELLING YOU IT NEEDS TO BE EXCLUDED, AND HERE IS WHY I'M THINKING ABOUT IT.' CANDIDATES WHO ANNOUNCE A DIAGNOSIS, AND CANDIDATES WHO AVOID THE WORD ALTOGETHER, BOTH LOSE MARKS.**",
+    "**THE REASONS, FROM WHAT HE TOLD YOU: MULTIPLE PARTNERS · CONDOMLESS ANAL SEX · PREVIOUS CHLAMYDIA, GONORRHOEA AND SYPHILIS · A PARTNER WITH IDENTICAL SYMPTOMS · and DIARRHOEA IS A RECOGNISED FEATURE OF THE SEROCONVERSION ILLNESS.**",
+    "**'BUT I'M ON PrEP, SO I CAN'T GET HIV' — 'PrEP IS VERY EFFECTIVE, BUT IT ISN'T ABSOLUTE, AND IT DEPENDS ON TAKING IT CONSISTENTLY. THAT IS EXACTLY WHY I WANT TO TEST.'** **PrEP is TENOFOVIR DISOPROXIL WITH EMTRICITABINE, one tablet daily; COMMONEST SIDE EFFECT GASTROINTESTINAL, usually early and self-limiting; the IMPORTANT SERIOUS ONE IS RENAL.**",
+    "**CORRECTION — the source describes MONTHLY STI checks on PrEP. AUSTRALIAN PRACTICE IS THREE-MONTHLY REVIEW: HIV SEROLOGY, STI SCREENING INCLUDING ANORECTAL AND PHARYNGEAL SWABS, AND RENAL FUNCTION, with baseline renal function before starting.** If challenged: **'standard monitoring is three-monthly HIV and STI screening, with renal function at baseline and periodically; I would confirm against the ASHM PrEP guidelines.'** VERIFY.",
+    "**THE DIFFERENTIALS BY GROUP: INFECTIVE — PROCTITIS from chlamydia INCLUDING LYMPHOGRANULOMA VENEREUM, gonorrhoea or herpes; SEXUALLY TRANSMISSIBLE ENTERIC INFECTIONS — SHIGELLA (SOME MULTIDRUG-RESISTANT), GIARDIA, CAMPYLOBACTER, AMOEBIASIS — spread by oral-anal contact with documented Australian outbreaks among MSM; HEPATITIS A · DRUG — PrEP GI upset · GI — IBD, coeliac, lactose, IBS · ENDOCRINE — hyperthyroidism · colorectal cancer, unlikely at 32 but never omitted.**",
+    "**TESTING WITH CONSENT: PRE-TEST DISCUSSION — WHAT THE TEST IS, THE WINDOW PERIOD, HOW RESULTS ARE GIVEN, CONFIDENTIALITY. FOURTH-GENERATION HIV ANTIGEN/ANTIBODY ASSAY — detects p24 from about 2 weeks; REPEAT AT 6 AND 12 WEEKS IF NEGATIVE INSIDE THE WINDOW; HIV RNA if very early. A NEGATIVE TEST INSIDE THE WINDOW DOES NOT CLOSE THE QUESTION.**",
+    "**THE SEXUAL HISTORY IS ADDED TO THE SPINE, NOT SUBSTITUTED FOR IT — still run timing, CCCVO, general GI, red flags, travel, hepatitis, IBD, coeliac, medications. ASK MATTER-OF-FACTLY: no averted eyes, no 'I'm sorry, I have to ask', NO MORALISING about partners or practices. Say confidentiality ONCE and move on.**",
+    "**SA: HIV, SYPHILIS, GONORRHOEA, CHLAMYDIA, SHIGELLA, GIARDIA AND HEPATITIS A ARE NOTIFIABLE. If positive, EARLY ANTIRETROVIRAL THERAPY — ADELAIDE SEXUAL HEALTH CENTRE (CLINIC 275) or infectious diseases; SHINE SA and telehealth make review workable from the Yorke Peninsula. PARTNER NOTIFICATION WITH SUPPORT — LET THEM KNOW and SA Health contact tracers. NEVER discuss his results with his partner without explicit permission.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Identity, 'what's brought you in?' → disclosure → ★ 'thank you for telling me that so openly — it's directly relevant, so I'd like to ask about your sexual health now rather than later. Everything you tell me here is confidential.'"
+     "**Identity, open question — and when the disclosure comes, THE PIVOT SENTENCE WITH CONFIDENTIALITY, then 'BEFORE ANYTHING ELSE — ARE YOU TAKING PrEP?'**"
     ],
     [
-     "0:50",
-     "★ 'Are you taking PrEP? every day, without missing doses? since when, who prescribes it? ★ when was your last HIV and STI check, and did you get the results?' → ~a year; misses one a fortnight; a month ago, never told → 'I'll look those up today — a test you haven't had a result for isn't the same as a negative'"
+     "0:30",
+     "**PrEP BLOCK: EVERY DAY WITHOUT MISSING DOSES · WHEN STARTED, WHO PRESCRIBES · LAST HIV AND STI SCREEN, AND DID YOU GET THE RESULTS · ANY NAUSEA OR TUMMY UPSET SINCE STARTING?**"
     ],
     [
      "1:30",
-     "★ Partners: 'stable relationship? ever multiple partners? male, female or both?' · practices: 'condoms? oral, anal or both? receptive, insertive or both?' · risk: 'ever diagnosed with an STI? sex under the influence of alcohol or drugs? ever paid for sex?' → open relationship, several men, no condoms with the boyfriend, mostly receptive, chlamydia ×2/gonorrhoea/syphilis, parties · say it back without flinching"
+     "**THE THREE BOXES: STABLE RELATIONSHIP · MULTIPLE PARTNERS · MALE, FEMALE OR BOTH · CONDOMS · ORAL, ANAL OR BOTH, RECEPTIVE OR INSERTIVE · PREVIOUS STIs · SEX UNDER ALCOHOL OR DRUGS.**"
+    ],
+    [
+     "2:15",
+     "**SAY THE RISK BACK: 'so you've had several infections before, which tells me you've had exposures' — and 'I'LL LOOK UP THOSE RESULTS TODAY.'**"
+    ],
+    [
+     "2:30",
+     "**SEROCONVERSION: fevers, night sweats, sore throat, swollen glands, rash, mouth ulcers, aching muscles.**"
     ],
     [
      "2:50",
-     "Timing/CCCVO: 2 wk, constant, 4–5/day, watery, no blood, not nocturnal · general GI: nausea, cramps, no constipation, felt feverish · ★ 'alongside the diarrhoea — fevers or night sweats? sore throat? swollen glands? rash? mouth ulcers? aching muscles?' → sore throat + fluey 2 wk ago, neck glands up, chest rash · ★ 'pain in the back passage? discharge? needing to go when there's nothing there? bleeding?' → some discharge"
+     "**ANORECTAL: pain in the back passage · discharge · TENESMUS · bleeding.**"
     ],
     [
-     "4:00",
-     "Travel/contacts (none; just the partner) · hepatitis symptoms; ★ 'vaccinated against hepatitis A and B?' (not sure) · IBD ×4 (mouth ulcers yes), greasy stools, dairy · other meds/chemist, thyroid · red flags: weight, appetite, lumps, tiredness (bit), blood, FHx · ★ summarise back the whole picture"
+     "3:05",
+     "**THE PARTNER: his symptoms · tested · on PrEP? VACCINATION: hepatitis A and B · mpox · doxycycline after sex?**"
+    ],
+    [
+     "3:25",
+     "**THE SPINE, AT SPEED: timing — onset, constant, NOCTURNAL · CCCVO — count, consistency, BLOOD, volume, odour · general GI — nausea, bloating, abdominal pain, fever.**"
+    ],
+    [
+     "4:10",
+     "**TRAVEL AND CONTACTS · HEPATITIS — yellowing, dark urine · IBD — joints, eyes, rash, mouth ulcers · COELIAC — greasy, floating · LACTOSE · OTHER MEDICATIONS · THYROID.**"
+    ],
+    [
+     "4:50",
+     "**RED FLAGS UNCONDITIONALLY: weight loss, appetite, lumps, tiredness, blood, family history of bowel cancer.**"
+    ],
+    [
+     "5:30",
+     "**A one-line summary back, and 'is there anything you were particularly worried about?'**"
     ],
     [
      "6:00",
-     "★ 'Thank you for being so open — I want to be straight with you. The most serious condition I need to rule out is an HIV infection. I'm not telling you that you have it; it's the thing I most need to exclude, and I want to explain why: diarrhoea can be one of the first symptoms of HIV in the first weeks after someone catches it — often with fever, sore throat, swollen glands and a rash, which is close to what you've described; and the risk factors line up. ★ You're taking PrEP, which is genuinely very good protection — but it isn't one hundred per cent, and it works best taken every single day. It lowers the risk a lot; it doesn't remove it.' · 'but I'm on PrEP — I thought I couldn't get it' → hold the line · DDx grouped: the PrEP itself (nausea, loose stools) · proctitis — chlamydia, gonorrhoea, LGV, herpes · enteric STIs — shigella, giardia · hepatitis A · general: IBD, coeliac, lactose, thyroid, IBS; bowel cancer very unlikely at 32"
+     "**NAME IT AS THE CONDITION TO EXCLUDE: 'the most serious thing I need to rule out is HIV — I'm not telling you that you have it.' Then THE REASONS FROM HIS RISK FACTORS.**"
     ],
     [
-     "7:00",
-     "★ Consent: 'I'd like to do a blood test for HIV today — it looks for the virus and your body's response. There's a window in the first weeks where it can be negative even if someone has been infected, so if it's negative I'll repeat it at six and twelve weeks. The result comes back to me and I'll give it to you in person. It's confidential. Are you happy for me to do that?' · 'how long? will anyone find out?' → answered · three-site screen (anorectal, pharyngeal, urine NAAT), syphilis serology, hepatitis serology/vaccination, stool MCS/PCR (shigella, giardia, campylobacter), UEC (PrEP), FBE · ★ 'I'd like your partner to come in too — he needs the same tests' · partner notification support; do not stop PrEP without advice; SHINE SA/Clinic 275"
+     "6:40",
+     "**'BUT I'M ON PrEP' — very effective, not absolute, adherence-dependent.** Then **the grouped differentials — proctitis including LGV, STEIs like shigella, hepatitis A, the PrEP itself, then the generic list.**"
+    ],
+    [
+     "7:30",
+     "**THE OFFER, WITH CONSENT: a fourth-generation HIV test today with its window period, three-site STI screen, syphilis serology, stool panel, hepatitis serology, renal function — and 'YOUR PARTNER NEEDS TO BE SEEN AND TESTED TOO — CAN WE ARRANGE THAT?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Thank you for telling me that — it's directly relevant, so I'd like to ask about your sexual health now rather than later. Everything you tell me here is confidential.' / ★ 'Are you taking PrEP? And are you taking it every day, without missing doses? When was your last HIV and STI check, and did you get the results?' / 'A test you haven't had a result for isn't the same as a negative.'",
-    "★ 'Are you in a stable relationship? Have you ever had multiple partners? Are your partners male, female or both? Do you use condoms? What kind of sex do you practise — oral, anal or both — receptive, insertive or both? Have you ever been diagnosed with a sexually transmitted infection? Have you ever had sex under the influence of alcohol or drugs? Ever paid for sex?'",
-    "★ 'Alongside the diarrhoea, have you had any fevers or night sweats? A sore throat? Swollen glands? Any rash? Mouth ulcers? Aching muscles?' / 'Any pain in the back passage? Any discharge? Any feeling that you need to go when there's nothing there? Any bleeding?' / 'Are you vaccinated against hepatitis A and B?'",
-    "★ 'The most serious condition I need to rule out is an HIV infection. I'm not telling you that you have it. I'm telling you it's the thing I most need to exclude, and I want to explain why.' / ★ 'Diarrhoea can be one of the first symptoms, in the first few weeks after someone catches it.' / ★ 'PrEP is very good protection, but it isn't absolute, and it works best taken every day.'",
-    "★ 'I'd like to do a blood test for HIV today … There's a window early on when the test can be negative, so I'd repeat it at six and twelve weeks. The result comes back to me and I'll give it to you in person. It's confidential. Are you happy for me to do that?' / ★ 'I'd like your partner to come in as well — he needs the same tests.'",
-    "Examiner 'he's adherent — is HIV really top?' → ★ 'I would not put it at the top as the most probable diagnosis — that is a PrEP side effect or a sexually transmissible enteric infection. I put HIV first as the condition I most need to exclude, because the consequence of missing it is the greatest and the seroconversion picture fits. PrEP substantially reduces risk but does not eliminate it, particularly with intermittent missed doses, and breakthrough infection is described. Testing costs him one blood test.' / 'Should I tell my partner?' → 'He should be tested and he needs to know he may have been exposed. You don't have to do that alone — there are services that notify partners anonymously, and I can help with the conversation. What I can't do is tell him your results without your permission.' / Proctitis variant (tenesmus, mucus, blood, pain): 'that sounds like inflammation of the rectum — proctitis — most often chlamydia or gonorrhoea, sometimes LGV or herpes; I'd examine with consent and a chaperone, take swabs, and start treatment today rather than wait (regimen VERIFY TG).'"
-   ],
    "pefe": [
-    "Role-player: Michael Reid, 32, hospitality supervisor, Adelaide, boyfriend of two years (open); PrEP (TDF/FTC) ~1 year via a sexual health clinic, misses ~1 dose/fortnight; social drinker, MDMA/GHB at parties; chlamydia ×2, gonorrhoea, syphilis (treated); condoms inconsistent, none with boyfriend; receptive and insertive anal, oral. Volunteers the disclosure in sentence one and nothing else — STI history, missed doses and seroconversion symptoms must each be asked. 'Are you sexually active?' alone → 'yes' and stop. Guarded if the doctor is uncomfortable/apologetic; warm if straightforward. Hidden: frightened it's HIV, feels foolish because of PrEP; if HIV named: 'but I'm on PrEP — I thought that meant I couldn't get it'; if never named, at ~7 min 'should I be worried about HIV?'; if told PrEP means he can't have HIV → 'oh good' and let them fail",
-    "No examination task. Seroconversion illness 2–4 weeks after exposure (fever, pharyngitis, lymphadenopathy, maculopapular rash, mucosal ulcers, myalgia, diarrhoea, headache); fourth-generation Ag/Ab assay detects p24 from ~2 weeks; HIV RNA PCR if acute infection suspected; repeat at 6 and 12 weeks (window). PrEP: TDF/FTC daily (on-demand 2-1-1 for MSM); monitoring — HIV Ag/Ab and STI screen 3-monthly, creatinine/eGFR baseline and periodically, hepatitis B status; breakthrough rare with adherence, resistance risk if started during undiagnosed acute infection — do not continue PrEP blindly if HIV suspected; discuss with a sexual health physician",
-    "STI screen for MSM: anorectal + pharyngeal + first-pass urine NAAT (chlamydia/gonorrhoea), syphilis serology, HIV, hepatitis A/B/C serology; enteric STIs — shigella, giardia, campylobacter, amoebiasis; proctitis empirical treatment ceftriaxone + doxycycline (21 days if LGV) VERIFY TG; vaccinate hep A/B, HPV, meningococcal per guidelines. Notifiable in SA: HIV, syphilis, gonorrhoea, chlamydia, shigella, giardia, hepatitis A",
-    "Partner notification: contact tracing services (SHINE SA, Clinic 275, letyouknow.org.au / Drama Downunder resources) · confidentiality — cannot disclose his result to the partner · SA: SHINE SA · Clinic 275 (Adelaide Sexual Health Centre) · TIS 131 450 · PrEP prescriber for review"
+    "**Do now: PRE-TEST DISCUSSION AND CONSENT — what the test is, THE WINDOW PERIOD, how results are given, confidentiality · FOURTH-GENERATION HIV ANTIGEN/ANTIBODY ASSAY · FULL STI SCREEN — SYPHILIS SEROLOGY and NAAT FOR CHLAMYDIA AND GONORRHOEA FROM THREE SITES: ANORECTAL, PHARYNGEAL, URINE · STOOL MCS AND PCR including SHIGELLA, GIARDIA, CAMPYLOBACTER AND AMOEBIASIS · HEPATITIS A IgM, HEPATITIS B AND C SEROLOGY · ORAL REHYDRATION, NO LOPERAMIDE IF FEVER OR BLOOD.**",
+    "**Do next: FBC, CRP, UEC AND CREATININE — PrEP RENAL MONITORING · RETRIEVE THE SCREEN FROM A MONTH AGO — DO NOT ASSUME NEGATIVE · FAECAL CALPROTECTIN AND COELIAC SEROLOGY if not resolving · REPEAT HIV TESTING AT 6 AND 12 WEEKS if negative and the exposure is recent · ANORECTAL SWABS AND EMPIRICAL TREATMENT IF PROCTITIS IS CLINICALLY OBVIOUS · ENSURE THE PARTNER IS ASSESSED AND TESTED.**",
+    "**LGV proctocolitis — severe pain, tenesmus, bloody discharge, systemic upset, almost exclusively in MSM — NEEDS A LONGER DOXYCYCLINE COURSE than uncomplicated chlamydia.** VERIFY duration. **MPOX where there is anorectal pain with a rash or lesions.** VERIFY case definitions.",
+    "**Advanced HIV causes chronic diarrhoea from CRYPTOSPORIDIUM, MICROSPORIDIA, CMV COLITIS AND MAC — NOT THIS CASE, which is seroconversion, but naming the difference shows you know it.**",
+    "**Do not miss: SEROCONVERSION ILLNESS DISMISSED AS 'JUST A VIRUS' · A NEGATIVE TEST INSIDE THE WINDOW READ AS REASSURANCE · PROCTITIS — TREATABLE TODAY · HEPATITIS A — vaccine-preventable and notifiable · THE PARTNER.**",
+    "**Avoid: TESTING WITHOUT A PRE-TEST DISCUSSION AND CONSENT · TELLING HIM PrEP MEANS HE CANNOT HAVE HIV · ANY LANGUAGE IMPLYING JUDGEMENT ABOUT PARTNERS OR PRACTICES · DISCUSSING HIS RESULTS WITH HIS PARTNER WITHOUT EXPLICIT PERMISSION · dropping the generic structure entirely.**",
+    "**SA: Clinic 275 (Adelaide Sexual Health Centre), SHINE SA, telehealth; LET THEM KNOW and SA Health contact tracers for partner notification; PrEP is PBS-subsidised; ACCHS and Closing the Gap co-payment for Aboriginal and Torres Strait Islander patients; TIS National 131 450.**"
    ],
-   "fails": [
-    "'We'll come back to that' — not moving the sexual history to the front; discomfort, apology or judgement (he goes guarded)",
-    "Not asking PrEP adherence; accepting 'last check a month ago' as a negative result",
-    "Missing the seroconversion and anorectal questions; three boxes incomplete (no previous STIs, no practices)",
-    "★ A differential that stops at proctitis/gastroenteritis — HIV never named; ★ testing without consent/pre-test discussion; ★ 'PrEP protects you, so it can't be HIV'",
-    "Not addressing the partner as a second patient; not chasing the unretrieved result; no window-period repeat plan"
-   ],
-   "numbers": [
-    "Seroconversion 2–4 wk after exposure · 4th-gen assay p24 from ~2 wk · repeat 6 and 12 wk · PrEP TDF/FTC daily; 3-monthly HIV/STI, renal function",
-    "Three-site screen: anorectal · pharyngeal · urine + syphilis serology · notifiable SA: HIV, syphilis, gonorrhoea, chlamydia, shigella, giardia, hep A",
-    "SHINE SA · Clinic 275 · TIS 131 450"
+   "ddx": [
+    [
+     "**Acute HIV infection — to be excluded**",
+     "**MSM, condomless anal sex, multiple partners, PREVIOUS STIs, PARTNER ALSO SYMPTOMATIC**",
+     "**Fever, sore throat, rash, lymphadenopathy, mouth ulcers, myalgia; PrEP ADHERENCE**",
+     "**4th-gen Ag/Ab with consent; repeat 6 and 12 weeks; HIV RNA if very early** — TODAY"
+    ],
+    [
+     "**Infective proctitis — chlamydia inc. LGV, gonorrhoea, herpes, syphilis**",
+     "**Receptive anal sex; anorectal PAIN, DISCHARGE, TENESMUS, bleeding**",
+     "**The four anorectal questions**",
+     "**Anorectal NAAT; syphilis serology; empirical treatment if severe** — same day"
+    ],
+    [
+     "**Sexually transmissible enteric infection**",
+     "**Oral-anal contact; PARTNER WITH IDENTICAL SYMPTOMS; abrupt onset**",
+     "**Shigella (some multidrug-resistant), Giardia, Campylobacter, amoebiasis**",
+     "**Stool MCS and PCR. NOTIFIABLE** — same day"
+    ],
+    [
+     "**Hepatitis A**",
+     "**Faecal-oral; not vaccinated; outbreaks among MSM**",
+     "Jaundice, dark urine, itch",
+     "**Hepatitis A IgM; notifiable; vaccinate contacts**"
+    ],
+    [
+     "**PrEP side effect**",
+     "**Tenofovir/emtricitabine — nausea and loose stools EARLY after starting, settling in weeks**",
+     "**Timing relative to starting; improving?**",
+     "**Diagnosis of exclusion. CHECK RENAL FUNCTION — the serious adverse effect is renal**"
+    ],
+    [
+     "Gastroenteritis",
+     "Sick contacts, food source, travel",
+     "Fever, vomiting, cramps, short history",
+     "Stool MCS and PCR"
+    ],
+    [
+     "**Inflammatory bowel disease — not to miss**",
+     "Blood and mucus, NOCTURNAL, weight loss, extra-intestinal features",
+     "Joints, eyes, rashes, mouth ulcers, perianal disease",
+     "Faecal calprotectin, CRP, colonoscopy — same week"
+    ],
+    [
+     "Coeliac disease · lactose intolerance",
+     "Steatorrhoea, weight loss; or dairy trigger",
+     "Floats, sticks, hard to flush; dairy",
+     "tTG-IgA + total IgA on gluten; dietary trial"
+    ],
+    [
+     "Hyperthyroidism",
+     "Heat intolerance, palpitations, weight loss",
+     "Weather preference; racing heart",
+     "TSH, free T4"
+    ],
+    [
+     "**Colorectal cancer — never omitted** · IBS",
+     "Unlikely at 32 with no red flags; or alternating habit, no red flags",
+     "Weight loss, blood, family history",
+     "Colonoscopy if any red flag; **IBS ONLY BY EXCLUSION**"
+    ]
    ]
   },
   "source": "02_Diarrhoea_PrEP_HIV_2_Case_Tasks_Script_Notability.pdf (Michael Reid, 32, two weeks of diarrhoea on PrEP with a seroconversion-like illness and a partner with the same symptoms — HIV to exclude, proctitis and enteric STIs)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › 02_Diarrhoea_PrEP_HIV_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — A differential that stops at proctitis or gastroenteritis, HIV never named — 'the most serious condition I need to rule out is HIV; I'm not telling you that you have it — I'm telling you it's the thing I most need to exclude'; if you never say it, he asks 'should I be worried about HIV?' at seven minutes (★)",
-   "FAIL — 'PrEP protects you, so it can't be HIV' — the reassurance trap the case is built to catch; he says 'oh good' and lets you fail; 'PrEP is very effective, but it isn't absolute, and it works best taken every day — you miss the odd one; it lowers the risk a lot, it doesn't remove it'; to the examiner if challenged: not the most probable diagnosis, but the one I most need to exclude because the consequence of missing it is greatest and the seroconversion picture fits (★)",
-   "FAIL — Testing without a pre-test discussion and consent — 'I'd like to do a blood test for HIV today; it looks for the virus and your body's response; there's a window early on when it can be negative, so if negative I'll repeat it at six and twelve weeks; the result comes back to me and I'll give it to you in person; it's confidential — are you happy for me to do that?'; and 'a test you haven't had a result for isn't the same as a negative' — chase last month's screen today (★)",
-   "FAIL — Saying 'we'll come back to that' when he discloses in the first sentence ('I'm gay and my boyfriend has it too') — you won't, and the station is built on it; 'thank you for telling me that so openly — it's directly relevant, so I'd like to ask about your sexual health now rather than later; everything is confidential'; move the sexual history to the front; any discomfort or apology makes him guarded",
-   "DO — PrEP first ('are you taking it every day without missing doses? since when, who prescribes it? last HIV and STI check, and did you see the results?'); the three boxes — partners (stable? multiple? male, female or both?), practices (condoms? oral, anal or both? receptive, insertive or both?), risk (previous STIs — chlamydia twice, gonorrhoea, syphilis; sex under alcohol or drugs; paid sex) — say the full package back so the examiner hears you register it; seroconversion screen (fever, night sweats, sore throat, glands, rash, mouth ulcers, myalgia — a fluey illness a fortnight ago, glands still up, a chest rash 'heat rash'); anorectal symptoms (pain, discharge, tenesmus, bleeding); then the generic diarrhoea structure and red flags still run",
-   "DO — Differentials grouped: PrEP side effect, proctitis (chlamydia, gonorrhoea, LGV, herpes — 'needing to go with nothing there, mucus, blood, pain' is proctitis not diarrhoea: examine with consent and a chaperone, swab, treat empirically), sexually transmitted enteric infections (shigella, giardia), hepatitis A (vaccination status), then IBD, coeliac, lactose, thyroid, IBS, cancer (very unlikely at 32); three-site swabs plus syphilis serology, stool, renal function on PrEP; 'I'd like your partner to come in too — he needs the same tests'; partner notification can be anonymous, 'I can't tell him your results without your permission'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-140",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. No history-taking task and no examination task — the long stem carries the findings (read it for four things: the antibiotic, the stool description, the absent features, the hydration finding). Three tasks: diagnosis + differentials, investigations with reasons, management. The starred omissions: not saying 'stop the antibiotic'; recommending loperamide; no named red flags and no review interval.",
   "stem": [
    "A 40-year-old man presents with diarrhoea for three days — watery stools six times a day with abdominal cramps, no blood, no travel. Recent bronchitis treated with amoxicillin for five days. Examination: dry mucous membranes, vital signs within normal limits, abdominal examination normal."
   ],
@@ -34623,78 +34747,205 @@
    "Explain the further investigations you would arrange, and why",
    "Explain your management plan to the patient"
   ],
-  "time": "8 min. Identity, ★ 'before I tell you what I think, talk me through what's been happening' (rapport even without a history task), signpost three parts, concerns ('it's not cancer, is it?') · 0:50 ★ 'I'm concerned you may have pseudomembranous colitis' → mechanism in four steps with the word ★ TOXIN (balance of bacteria → antibiotic disturbs → C. difficile overgrows → produces a toxin that inflames the lining) · 'pseudomembranous' explained · ★ second diagnosis: simple antibiotic-associated diarrhoea — the difference matters, the stool test decides · differentials each with a reason from the stem: food/travel infection (no travel, no eating out, no contacts), IBD (no blood/mucus, not nocturnal, 3 days), coeliac (not greasy), lactose (no dairy link), thyroid, other medications, bowel cancer (40, no bleeding/weight/FHx — very unlikely) · 3:20 ★ investigations: stool C. difficile toxin PCR FIRST ('because…') → stool MCS/PCR for other pathogens → FBE + CRP (inflammation) + UEC (he's dry) → faecal calprotectin (IBD screen) → coeliac antibodies (keep eating gluten) → sigmoidoscopy mentioned and deferred · 5:00 ★ management: STOP the antibiotic → oral vancomycin 10 days if confirmed (the paradox answered) → ORS, avoid loperamide → soap and water, bleach → red flags → review 2–3 days.",
+  "findings": [
+   [
+    "NO HISTORY TASK AND NO EXAMINATION TASK",
+    "WHENEVER THE AMC REMOVES HISTORY AND EXAMINATION, THE STEM CARRIES THE FINDINGS — SO IT BECOMES LONG AND IS DELIBERATELY PADDED. READ IT FOR FOUR THINGS ONLY: THE ANTIBIOTIC · THE STOOL DESCRIPTION · THE ABSENT FEATURES — no blood, no travel · THE HYDRATION FINDING. EVERYTHING ELSE IS NOISE"
+   ],
+   [
+    "WHAT THE STEM GIVES",
+    "3 DAYS · WATERY STOOLS SIX TIMES A DAY · ABDOMINAL CRAMPS · NO BLOOD · NO TRAVEL · BRONCHITIS TREATED WITH AMOXICILLIN FOR FIVE DAYS · DRY MUCOUS MEMBRANES · VITAL SIGNS NORMAL · ABDOMEN NORMAL"
+   ],
+   [
+    "THE CASE IS BUILT AROUND 'INVESTIGATIONS AND MANAGEMENT'",
+    "A case whose tasks are investigations and a management plan after an antibiotic is a case about CLOSTRIDIOIDES DIFFICILE, NOT A NUISANCE SIDE EFFECT. Candidates who diagnose plain antibiotic-associated diarrhoea HAVE NOWHERE TO GO WHEN ASKED FOR INVESTIGATIONS AND A PLAN"
+   ],
+   [
+    "THE SPECTRUM — and why candidates talk themselves out of it",
+    "THE EXAM CASE SITS IN THE MILD ROW: NORMAL OBSERVATIONS, A SOFT ABDOMEN, A PATIENT WHO LOOKS WELL. THAT IS EXACTLY WHY CANDIDATES TALK THEMSELVES OUT OF THE DIAGNOSIS"
+   ],
+   [
+    "OPEN WITH A QUESTION EVEN THOUGH THERE IS NO HISTORY TASK",
+    "'BEFORE I TELL YOU WHAT I THINK IS GOING ON — CAN YOU JUST TALK ME THROUGH WHAT'S BEEN HAPPENING, IN YOUR OWN WORDS?' WALKING IN AND DELIVERING THE DIAGNOSIS FINISHES AT SIX MINUTES WITH A PATIENT WHO HAS SAID ONE WORD. APPROACH-TO-PATIENT IS SCORED EXACTLY AS IN A HISTORY STATION"
+   ],
+   [
+    "THE WORD 'TOXIN' MUST APPEAR IN YOUR EXPLANATION",
+    "Because YOU WILL NAME A TOXIN TEST IN THE NEXT TASK. Four steps: ANTIBIOTIC · DISRUPTED NORMAL FLORA · OVERGROWTH OF ONE BUG · TOXIN INFLAMES THE BOWEL"
+   ],
+   [
+    "'SO WHY ARE YOU GIVING ME ANOTHER ANTIBIOTIC?'",
+    "FRAME IT AS CONTAINING AN OVERGROWTH, NOT TREATING AN INFECTION YOU CAUSED: 'ONE PARTICULAR BUG HAS TAKEN OVER; THIS MEDICINE TARGETS THAT BUG SPECIFICALLY'"
+   ],
+   [
+    "'CAN I JUST TAKE SOMETHING TO STOP IT?'",
+    "'I'D AVOID GASTRO-STOP FOR NOW. IF THIS IS THE INFECTION I THINK IT MIGHT BE, SLOWING THE BOWEL DOWN KEEPS THE TOXIN IN CONTACT WITH IT FOR LONGER'"
+   ],
+   [
+    "'I'M ALSO ON SOMAC / NEXIUM'",
+    "PROTON PUMP INHIBITORS BOTH CAUSE DIARRHOEA AND INCREASE C. DIFFICILE RISK. REVIEW WHETHER IT IS STILL NEEDED"
+   ],
+   [
+    "'WILL I GIVE IT TO MY FAMILY?'",
+    "'IT CAN SPREAD. THE SPORES AREN'T KILLED BY ALCOHOL HAND GEL, SO WASH YOUR HANDS WITH SOAP AND WATER, AND CLEAN THE BATHROOM WITH A BLEACH-BASED PRODUCT'"
+   ]
+  ],
+  "findingsLabel": "No history task — read the padded stem for four things, name the toxin, stop the drug",
+  "must": [
+   "FAIL — Never saying 'we will stop the antibiotic' out loud.",
+   "FAIL — Diagnosing only 'antibiotic side effect', with nowhere to go for investigations.",
+   "FAIL — Not naming the stool C. difficile toxin PCR first.",
+   "FAIL — Recommending loperamide for symptom relief.",
+   "ASK — Before I explain — can you talk me through what's been happening?",
+   "ASK — Is there anything you're particularly worried about before I start?"
+  ],
   "back": {
-   "dx": "Pseudomembranous colitis (C. difficile toxin-mediated colitis) 'may have' — three days of profuse watery diarrhoea 6–7/day with cramps starting ~10 days after a five-day amoxicillin course for bronchitis; no blood, no travel, mild dehydration, normal obs and abdomen. Second (and more common): plain antibiotic-associated diarrhoea — settles alone; a stool toxin test tells them apart, and only the first needs specific treatment. Management: stop the antibiotic (chest infection settled), oral vancomycin 125 mg qid 10 days if confirmed (metronidazole alternative for non-severe VERIFY), oral rehydration, no loperamide (prolongs toxin contact, toxic megacolon risk), soap-and-water hand hygiene and bleach cleaning (spores resist alcohol gel), red flags, review 2–3 days. Recurrence ~1 in 5.",
+   "dx": [
+    "**PSEUDOMEMBRANOUS COLITIS — CLOSTRIDIOIDES DIFFICILE TOXIN-MEDIATED COLITIS — said as a condition you are CONCERNED HE MAY HAVE, which the stool test will confirm.** **Named for the YELLOW-WHITE PLAQUES — PSEUDOMEMBRANES — seen at sigmoidoscopy. It is the most severe form of antibiotic-associated diarrhoea.**",
+    "**THE DISTINCTION THE STATION RESTS ON: ANTIBIOTIC-ASSOCIATED DIARRHOEA is ANY loose stool caused by an antibiotic — COMMON, SELF-LIMITING, NO SPECIFIC ORGANISM. PSEUDOMEMBRANOUS COLITIS is THE SPECIFIC, POTENTIALLY LIFE-THREATENING SUBSET caused by C. difficile overgrowth and toxin. ALMOST EVERYONE WHO TAKES AMOXICILLIN GETS THE FIRST; ALMOST NOBODY GETS THE SECOND.**",
+    "**THE SINGLE AUTOMATIC-FAIL OMISSION: NOT SAYING 'WE WILL STOP THE ANTIBIOTIC' OUT LOUD. This belongs to the small family of stations BUILT AROUND STOPPING A DRUG — like the COCP in migraine with aura, or the serotonergic agent in serotonin syndrome. IF YOU DO NOT SAY IT, THE MARKER HAS NOTHING TO TICK.**",
+    "**THE SENTENCE: 'I'M CONCERNED YOU MAY HAVE A CONDITION CALLED PSEUDOMEMBRANOUS COLITIS… and THE FIRST THING WE'RE GOING TO DO IS STOP THE ANTIBIOTIC.'** Then **the mechanism: 'antibiotics kill some of the GOOD BACTERIA in the bowel. That lets ONE PARTICULAR BUG OVERGROW, and it produces A TOXIN — a poison — that INFLAMES THE LINING OF THE BOWEL.'**",
+    "**DIFFERENTIALS, EACH WITH A REASON FROM THE STEM — THIS CASE USUALLY FINISHES EARLY, SO USE THE TIME: 'I don't think this is GASTROENTERITIS — you haven't travelled, eaten out, and nobody around you is unwell. Not IBD — no blood or mucus and it hasn't been going on long. Not COELIAC — your stools aren't greasy or hard to flush. Nothing to suggest BOWEL CANCER — no weight loss, no bleeding, no family history.' SECOND DIAGNOSIS: PLAIN ANTIBIOTIC-ASSOCIATED DIARRHOEA — what you're left with if the toxin test is negative.**",
+    "**CORRECTION — FIRST-LINE IS ORAL VANCOMYCIN, NOT METRONIDAZOLE. The source gives metronidazole for mild-moderate disease. Contemporary guidance: ORAL VANCOMYCIN 125 mg FOUR TIMES DAILY FOR 10 DAYS for an initial episode of any severity; METRONIDAZOLE 400 mg THREE TIMES DAILY FOR 10 DAYS as an alternative in non-severe disease; FIDAXOMICIN particularly for recurrence.** If challenged: **'oral vancomycin 125 milligrams four times daily for ten days first line, confirmed against Therapeutic Guidelines; metronidazole remains an accepted alternative in non-severe disease.'** VERIFY.",
+    "**CORRECTION — IV VANCOMYCIN DOES NOT TREAT C. DIFFICILE. In FULMINANT disease: ORAL OR PER-RECTAL VANCOMYCIN PLUS IV METRONIDAZOLE — the vancomycin must reach the lumen, and IV vancomycin does not. A CLASSIC EXAMINER PROBE.** **The organism is now CLOSTRIDIOIDES, reclassified from Clostridium.**",
+    "**ONSET WINDOW: DURING THE COURSE OR UP TO 8 WEEKS AFTER, most often within about 2 weeks — 'I finished those tablets a fortnight ago' DOES NOT EXCLUDE IT. OTHER RISK FACTORS: AGE OVER 65, HOSPITAL OR AGED-CARE EXPOSURE, PPIs, IMMUNOSUPPRESSION, IBD, PREVIOUS C. DIFFICILE. CLASSIC ANTIBIOTIC: CLINDAMYCIN — plus amoxicillin, ampicillin, cephalosporins and quinolones.**",
+    "**MANAGEMENT ORDER: STOP THE ANTIBIOTIC — SAY IT FIRST · ORAL REHYDRATION — HYDRALYTE OR GASTROLYTE · IF TOXIN POSITIVE, ORAL VANCOMYCIN · WITHHOLD ANTIMOTILITY AGENTS · REVIEW THE PPI · SOAP AND WATER, NOT GEL; BLEACH-BASED BATHROOM CLEANING · REVIEW IN 2–3 DAYS WITH RESULTS.** **Recurrence in about ONE IN FIVE — VANCOMYCIN TAPER, FIDAXOMICIN, OR FAECAL MICROBIOTA TRANSPLANTATION.**",
+    "**SAFETY-NET, NAMED ALOUD: 'come back, or go straight to the emergency department, if you develop A FEVER, SEVERE TUMMY PAIN OR BLOATING, BLOOD IN THE STOOL, if you become DIZZY OR LIGHTHEADED, or you CANNOT KEEP FLUIDS DOWN. Those are the signs this is becoming THE MORE SERIOUS VERSION.'** **'Is it serious?' — 'It CAN be in some people, which is why I want to test and see you again in a couple of days — but you're well in yourself right now, and I expect you'll be fine.'**"
+   ],
    "plan": [
     [
      "0:00",
-     "'I'm Dr —; can I confirm your name and date of birth? Before I tell you what I think is going on, talk me through what's been happening over the last few days.' → 'thank you — I've read your notes and I have a clear picture. I'll explain what I think this is, what tests I want, and what we'll do. Was there anything you were particularly worried about?' ('been reading online — it's not cancer, is it?')"
+     "**Identity, then THE RAPPORT QUESTION: 'before I tell you what I think is going on — can you talk me through what's been happening, in your own words?'** Let him retell the stem."
     ],
     [
-     "0:50",
-     "★ 'I'm concerned you may have a condition called pseudomembranous colitis. Your bowel normally has a large population of harmless bacteria living in balance. When you take an antibiotic, it doesn't only kill the bug causing your chest infection — it disturbs that balance. One particular bug, Clostridioides difficile, can take over and overgrow. That bug produces a toxin — a poison — and it is the toxin that inflames the lining of the bowel and causes the diarrhoea and cramps. It's called pseudomembranous because with a camera we'd see whitish patches on the lining.' · 'is that serious? do I need hospital?' → non-severe form, treatable as an outpatient if the plan is followed"
+     "0:40",
+     "**'Thank you. I'm going to explain what I think it is, what tests I want to do, and what we're going to do about it. IS THERE ANYTHING YOU'RE PARTICULARLY WORRIED ABOUT BEFORE I START?'**"
     ],
     [
-     "2:00",
-     "★ 'The other possibility — and the more common one — is simply that the antibiotic itself has loosened your bowels. That settles by itself. The difference matters, because the first needs specific treatment and the second doesn't, and a stool test tells us which it is.' · DDx with reasons from the stem: food/travel infection (no travel, no eating out, nobody unwell), IBD (no blood/mucus, not nocturnal, only 3 days), coeliac (not greasy/floating), dairy (no link), thyroid (no weight loss/heat), other medications (I'll check — Somac), bowel cancer (at 40 with no bleeding, weight loss or FHx — very unlikely; it stays on the list with any habit change)"
+     "1:00",
+     "**TASK 1 — NAME IT WITH 'MAY HAVE': pseudomembranous colitis — AND THE MECHANISM IN FOUR STEPS, INCLUDING THE WORD TOXIN.**"
     ],
     [
-     "3:20",
-     "★ Investigations, each with 'because': 'the most important test is a stool sample looking for that toxin — a PCR — that confirms or rules out this diagnosis · on the same sample, other bowel infections — viral, bacterial, parasitic · bloods: FBC and CRP for the degree of inflammation; kidney function and salts, because diarrhoea upsets those and you're a bit dry · faecal calprotectin — our best screening test for inflammatory bowel disease · coeliac antibodies — keep eating gluten normally until it's done · there's also a camera test, a sigmoidoscopy, because this condition has a characteristic appearance — I wouldn't do that first; the stool test is simpler and should give the answer'"
+     "1:50",
+     "**SECOND DIAGNOSIS — PLAIN ANTIBIOTIC-ASSOCIATED DIARRHOEA — then THE DIFFERENTIALS, EACH WITH A REASON FROM THE STEM: gastroenteritis, IBD, coeliac, bowel cancer, other drugs including a PPI, thyroid, lactose.**"
     ],
     [
-     "5:00",
-     "★ 'The first and most important thing is that we stop the antibiotic — your chest infection has settled, and it's what triggered this.' · ★ 'If the stool test confirms it, we treat the overgrowth with a medicine that targets that bug — usually vancomycin by mouth for ten days.' · 'antibiotics caused it and you're giving me another one?' → ★ 'I know how that sounds. We're not treating a new infection — one bug has overgrown, and this medicine targets that one bug specifically, so the normal balance can re-establish itself.' · ★ 'Drink plenty — Hydralyte or Gastrolyte is ideal, plain water is fine. Avoid Gastro-Stop or anything that stops diarrhoea for now — if this is the infection I think it might be, slowing the bowel keeps the toxin in contact with it longer.' · ★ 'The germ spreads through spores that alcohol hand gel doesn't kill — wash your hands with soap and water, and clean the bathroom with a bleach-based cleaner.'"
+     "3:10",
+     "**TASK 2 — INVESTIGATIONS, EACH WITH ITS REASON: 'THE MOST IMPORTANT TEST IS A STOOL SAMPLE LOOKING FOR THE TOXIN I MENTIONED.'** Then **stool MCS and PCR panel for other infections.**"
     ],
     [
-     "6:40",
-     "★ 'Come back, or go straight to the emergency department, if you develop a fever, severe tummy pain or bloating, blood in the stool, dizziness or light-headedness, or you can't keep fluids down. Otherwise I'll see you in two to three days — I should have the results — and we'll go through them together.' · address the cancer worry with the reasons · 'when will I hear?' · 'does all of that make sense? what questions do you have?'"
+     "3:50",
+     "**BLOODS — FBC, CRP, UEC, CREATININE, ALBUMIN — 'to see how much inflammation there is, whether the diarrhoea has affected your salts and kidneys, and to help me JUDGE HOW SEVERE THIS IS.'**"
+    ],
+    [
+     "4:20",
+     "**FAECAL CALPROTECTIN for IBD · COELIAC SEROLOGY — 'please DON'T CHANGE YOUR DIET before it's done' · thyroid lower priority · SIGMOIDOSCOPY — MENTIONED, DEFERRED, JUSTIFIED: 'I wouldn't do that first — the stool test is simpler and gives us the answer.'**"
+    ],
+    [
+     "5:10",
+     "**TASK 3 — MANAGEMENT, AND THE FIRST WORDS ARE: 'THE FIRST THING WE'RE GOING TO DO IS STOP THE ANTIBIOTIC.'**"
+    ],
+    [
+     "5:25",
+     "**ORAL REHYDRATION — Hydralyte or Gastrolyte.** Then **'if the toxin test is positive, I'll start a medicine that TARGETS THAT ONE BUG — oral vancomycin for ten days.' Handle 'why another antibiotic?'**"
+    ],
+    [
+     "6:05",
+     "**NO GASTRO-STOP, with the reason · REVIEW ANY PPI · INFECTION CONTROL — SOAP AND WATER, NOT GEL; BLEACH-BASED CLEANING OF THE BATHROOM.**"
+    ],
+    [
+     "6:45",
+     "**REVIEW IN 2–3 DAYS WITH THE RESULTS — by phone if easier.**"
+    ],
+    [
+     "7:00",
+     "**THE SAFETY-NET, ALL FIVE: fever, severe pain or bloating, blood, dizziness, can't keep fluids down.**"
+    ],
+    [
+     "7:30",
+     "**'Does that make sense? WHAT QUESTIONS DO YOU HAVE?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I tell you what I think, can you talk me through what's been happening?' / ★ 'I'm concerned you may have a condition called pseudomembranous colitis.' / ★ 'Your bowel normally has millions of harmless bacteria living in balance. Antibiotics disturb that balance, and one particular bug can overgrow. That bug produces a toxin, and it's the toxin that inflames the bowel lining.'",
-    "★ 'The other, more common possibility is that the antibiotic has simply loosened your bowels. That settles by itself. The difference matters, because the first one needs specific treatment and the second one doesn't — and a stool test tells us which it is.'",
-    "★ 'The most important test is a stool sample looking for that toxin — a PCR. That's what confirms or rules out this diagnosis.' / 'The camera test is there if we need it, but I wouldn't do it first.' / 'Please keep eating gluten normally until the coeliac blood test is done.'",
-    "★ 'The first and most important thing is that we're going to stop the antibiotic.' / 'Antibiotics caused it and you're giving me another antibiotic?' → ★ 'We're not treating a new infection — we're containing one bug that has overgrown, with a medicine that targets that bug specifically, so the normal balance can come back.'",
-    "★ 'I'd avoid Gastro-Stop; slowing the bowel keeps the toxin in contact with it for longer.' / ★ 'Wash your hands with soap and water — alcohol gel doesn't kill the spores.' / ★ 'Come back or go to the emergency department if you get a fever, severe pain or bloating, blood in the stool, dizziness, or can't keep fluids down. I'll see you again in two to three days with the results.'",
-    "Examiner challenges: 'toxin on every post-antibiotic diarrhoea?' → 'No — most is mild and self-limiting. I test where the stool is profuse and watery, with systemic features, in hospital or aged care, in the elderly, or not settling — he meets that threshold.' / 'always severe?' → 'No — a non-severe form with watery diarrhoea, cramps, low-grade fever and normal observations, which is what he has; severe and fulminant sit further along the spectrum.' / 'severe disease?' → 'oral vancomycin; fulminant with ileus or toxic megacolon — oral or per-rectal vancomycin plus IV metronidazole and urgent surgical review; IV vancomycin does not reach the lumen.' / 'finished ten days ago — can it still be that?' → 'yes — during the course or up to eight weeks after, most commonly within two.'"
-   ],
    "pefe": [
-    "Role-player: Peter Doyle, 40, grain handler, Wallaroo, partner and one child; 3 d watery diarrhoea 6–7/day, cramps easing after going, no blood/mucus, nothing at night, thirsty/dry mouth, no vomiting; amoxicillin 5 d for bronchitis finished ~10 d ago (name/duration/indication only if asked separately); Somac for reflux, Panadol; Gastro-Stop ×2 (little help); no travel/eating out/contacts; all other blocks negative. Practical, fed up, wants a plan; anxious at 'colitis'; asks 'antibiotics caused it and you're giving me another antibiotic?' at ~5:30 regardless; 'can I just keep taking the Gastro-Stop?' if loperamide not mentioned. Hidden: reading online, frightened of cancer — 'it's not cancer, is it?' if asked concerns, else at ~6:30",
-    "Findings given: dry mucous membranes; vitals within normal limits; abdomen normal. Severity markers (non-severe here): WCC ≥15, creatinine >1.5× baseline, albumin <30, T >38.5, ileus/megacolon/hypotension = severe/fulminant VERIFY",
-    "C. difficile: onset during the course or up to 8 weeks after (most within 2); risk — any antibiotic (clindamycin, cephalosporins, fluoroquinolones, amoxicillin), PPIs, age, hospital, IBD; test liquid stool only (GDH/toxin/PCR algorithm), do not repeat to prove cure. Treatment VERIFY TG: non-severe — oral vancomycin 125 mg qid 10 d (metronidazole 400 mg tds 10 d alternative); severe — oral vancomycin; fulminant — oral/PR vancomycin + IV metronidazole, surgery; recurrence ~20% → vancomycin taper/fidaxomicin/FMT (specialist); stop offending antibiotic and PPI if possible; no antimotility agents; contact precautions, soap and water, sporicidal (bleach) cleaning; notifiable? (C. difficile is not routinely notifiable in SA — hospital surveillance) VERIFY",
-    "Version B (post-op day 4, 67 F) = MED-141 · SA: MedSTAR 1300 13 12 33 · healthdirect 1800 022 222"
+    "**Investigations IN ORDER, each with its reason: 1 STOOL C. DIFFICILE TOXIN PCR — named first · 2 STOOL MCS AND PCR PANEL · 3 FBC, CRP, UEC, CREATININE, ALBUMIN — severity markers · 4 FAECAL CALPROTECTIN · 5 COELIAC SEROLOGY ON GLUTEN · 6 thyroid function; HIV if indicated — lower priority · 7 FLEXIBLE SIGMOIDOSCOPY — mentioned, deferred.**",
+    "**Testing caveats: ONLY LIQUID OR UNFORMED STOOL IS TESTED · DO NOT REPEAT THE TEST TO PROVE CURE · MANY PEOPLE ARE COLONISED WITHOUT DISEASE.**",
+    "**Treatment of an initial episode: ORAL VANCOMYCIN 125 mg QID × 10 DAYS; METRONIDAZOLE 400 mg TDS × 10 DAYS AS AN ALTERNATIVE IN NON-SEVERE DISEASE; fidaxomicin an alternative. FULMINANT: ORAL OR PR VANCOMYCIN + IV METRONIDAZOLE, URGENT SURGICAL REVIEW — NEVER IV VANCOMYCIN ALONE.** VERIFY.",
+    "**Severity markers: RISING WHITE COUNT · RISING CREATININE · FALLING ALBUMIN · FEVER · HYPOTENSION · ILEUS · COLONIC DILATATION — toxic megacolon.**",
+    "**Do not miss: FULMINANT COLITIS AND TOXIC MEGACOLON — distension, drowsiness, hypotension, no flatus, especially in the elderly · RECURRENCE AFTER TREATMENT · a PPI that is quietly driving risk.**",
+    "**Avoid: ★ NOT STOPPING THE ANTIBIOTIC · LOPERAMIDE · stool MCS offered as the main test · IV vancomycin for severe disease · no safety-net · finishing at five minutes with a silent patient.**",
+    "**SA: stool toxin PCR to SA Pathology, result in 24–48 hours in the Yorke and Northern network — ARRANGE TELEPHONE FOLLOW-UP. Hospital-acquired C. difficile is under SA Health surveillance. Deterioration → on-call medical registrar; shock or suspected toxic megacolon → MedSTAR 1300 13 12 33 or RFDS.**"
    ],
-   "fails": [
-    "Delivering a diagnosis to a patient who hasn't spoken; saying only 'a side effect of your antibiotics' (that is antibiotic-associated diarrhoea, which needs no investigation or management — and the station asked for both)",
-    "Explaining the mechanism without the word toxin; listing tests without 'because'; leading with sigmoidoscopy",
-    "★ Not saying 'stop the antibiotic'; ★ recommending or allowing loperamide; ★ no named red flags and no review interval",
-    "No infection-control advice (soap and water, bleach); not answering the antibiotic paradox; not addressing the cancer worry"
-   ],
-   "numbers": [
-    "Onset during course or ≤8 wk after (most ≤2 wk) · oral vancomycin 125 mg qid 10 d VERIFY · metronidazole 400 mg tds 10 d (non-severe alternative) · fulminant: oral/PR vancomycin + IV metronidazole; never IV vancomycin alone",
-    "Recurrence ~1 in 5 · test liquid stool only · no test of cure · review 2–3 d · soap and water, bleach · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Pseudomembranous colitis (C. difficile)** — the answer",
+     "**Amoxicillin course; WATERY diarrhoea six times a day; cramps; dehydration**",
+     "**The task set is built around investigating and managing it**",
+     "**Stool toxin PCR; STOP THE ANTIBIOTIC; oral vancomycin if positive** — same day"
+    ],
+    [
+     "**Antibiotic-associated diarrhoea** — second",
+     "Same exposure, milder, no systemic features",
+     "**Cannot be distinguished clinically**",
+     "**What you're left with if the toxin test is NEGATIVE**"
+    ],
+    [
+     "**Inflammatory bowel disease — not to miss**",
+     "Diarrhoea with cramps",
+     "**No blood, mucus, nocturnal symptoms, weight loss, extra-intestinal features; SHORT HISTORY**",
+     "Faecal calprotectin — same week"
+    ],
+    [
+     "Coeliac disease",
+     "Diarrhoea",
+     "**No steatorrhoea — stools don't float, stick or resist flushing; no weight loss**",
+     "tTG-IgA + total IgA on gluten"
+    ],
+    [
+     "**Gastroenteritis**",
+     "Watery diarrhoea, cramps",
+     "**No travel, no street food, no sick contacts — the stem gives the negatives explicitly**",
+     "Stool MCS and PCR"
+    ],
+    [
+     "Other infective colitis",
+     "Campylobacter, salmonella, shigella",
+     "**Blood and high fever would be expected**",
+     "Covered by the stool panel — same day"
+    ],
+    [
+     "**Other medications — especially a PPI**",
+     "**Nexium, Somac, metformin, NSAIDs, magnesium antacids, statins**",
+     "**Ask, and name if present — a PPI is frequently planted**",
+     "**Review and stop if not needed**"
+    ],
+    [
+     "Hyperthyroidism",
+     "Chronic diarrhoea with weight loss, heat intolerance",
+     "**Three-day history; no thyroid features**",
+     "TSH"
+    ],
+    [
+     "Lactose intolerance",
+     "Dairy-triggered looseness",
+     "**No dairy relationship described**",
+     "Dietary trial"
+    ],
+    [
+     "**Colorectal cancer — not to miss**",
+     "Change in bowel habit",
+     "**Age 40, three days, no blood, weight loss or family history — unlikely, still named**",
+     "Colonoscopy if flagged"
+    ]
    ]
   },
   "source": "03_Pseudomembranous_Colitis_2_Case_Tasks_Script_Notability.pdf Version A (Peter Doyle, 40, three days of watery diarrhoea after amoxicillin — pseudomembranous colitis: diagnosis, investigations, management)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › 03_Pseudomembranous_Colitis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Not saying 'stop the antibiotic' — 'the first and most important thing is that we are going to stop the antibiotic; your chest infection has settled, so there's no reason to keep taking it, and it's what triggered this'; he will not prompt you (★)",
-   "FAIL — Recommending or permitting loperamide — 'I'd avoid Gastro-Stop for now; if this is the infection, slowing the bowel keeps the toxin in contact with it for longer' (toxic megacolon); he asks 'can I just keep taking the Gastro-Stop?' if you haven't said it (★)",
-   "FAIL — No named red flags and no review interval — 'come back, or go straight to the emergency department, if you develop a fever, severe tummy pain or bloating, blood in the stool, dizziness, or can't keep fluids down; otherwise I'll see you in two to three days with the results' (★)",
-   "FAIL — Saying only 'this is a side effect of your antibiotics' — that is antibiotic-associated diarrhoea, which needs no investigation and no plan, and the station asked for both; 'I'm concerned you may have pseudomembranous colitis' with the four-step mechanism and the word TOXIN ('harmless bacteria in balance → the antibiotic disturbs it → Clostridioides difficile overgrows → it produces a toxin, and the toxin inflames the lining'); then plain antibiotic-associated diarrhoea as the second, more common, possibility — 'a stool test tells us which'; differentials each with a reason drawn from the stem (no travel, no blood or night waking, not greasy, no dairy link, no weight loss, at 40 with no bleeding cancer very unlikely)",
-   "DO — Open and build rapport even without a history task ('before I tell you what I think, can you talk me through what's been happening? anything worrying you particularly?' — he's frightened it's cancer); investigations each with 'because': stool C. difficile toxin PCR FIRST, the same sample for other pathogens, FBE and CRP, UEC (he's dry), faecal calprotectin, coeliac serology (keep eating gluten); sigmoidoscopy mentioned and deferred ('I wouldn't do that first — the stool test is simpler')",
-   "DO — Treatment if confirmed: oral vancomycin ten days; the paradox question at 5:30 ('antibiotics caused it and you're giving me another?') → 'we're not treating a new infection — we're containing one bug that has overgrown, with a medicine that targets that bug specifically'; oral rehydration (Hydralyte); infection control — soap and water, alcohol gel doesn't kill spores, bleach-based cleaner; examiner challenges: onset during the course or up to eight weeks after; non-severe form exists; fulminant = oral or per-rectal vancomycin plus IV metronidazole, never IV vancomycin alone; test liquid stool only, don't repeat to prove cure"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-141",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "Surgical ward; you are the HMO. Version B of the pseudomembranous colitis document (August 2025). No differential task — deliberately; the history must follow the lead point in the stem (the cancer, its treatment, the operation four days ago). Observation chart handed over at five minutes: interpret it to the examiner, then order investigations with reasons. Name C. difficile first — then add the anastomotic leak/collection the source leaves out.",
   "stem": [
    "A 67-year-old woman with known bowel adenocarcinoma underwent bowel resection four days ago and now reports diarrhoea."
   ],
@@ -34703,77 +34954,205 @@
    "Interpret the observation chart to the examiner (given at 5 minutes)",
    "Order your investigations, with reasons"
   ],
-  "time": "8 min. Identity, open, acknowledge · usual diarrhoea questions: started this morning, ★ watery, ★ large volume, 5–6 episodes, blood/mucus, ★ 'feel hot/feverish?' · ★ lead-point block: 'when were you first diagnosed? besides surgery, chemotherapy or radiotherapy? who follows you up?' · ★ 'the last four days: nausea/vomiting? tummy pain — different from the pain you'd expect after surgery? bloated or distended? wound problems? started eating and drinking — keeping it down?' · ★ 'what medications have you been given? which antibiotic, how many days?' (antibiotics since the operation, 5 days, name unknown) · analgesics (opioids/laxatives given?), DVT prophylaxis, other meds · 5:00 chart: ★ RR 14–17 normal · SpO2 97–98% → 94% day 4 · HR high 70s → 112 · T 36.6 → 38.4 day 4 · BP ~120/80 → ~160/110 → 'a deteriorating patient on day four after bowel resection — new fever, new tachycardia, falling saturations, alongside new profuse watery diarrhoea after five days of antibiotics' · ★ investigations with reasons: stool C. difficile toxin PCR · stool MCS/PCR panel · FBE + CRP · UEC + albumin · blood cultures + lactate · ★ CT abdomen/pelvis with contrast — anastomotic leak or collection, discussed with the surgical team · erect CXR · not calprotectin/coeliac here · isolate, contact precautions, soap and water.",
+  "findings": [
+   [
+    "YOU ARE NOT ASKED FOR A DIFFERENTIAL — AND THAT IS DELIBERATE",
+    "THE CONTEXT IS SO SPECIFIC THAT A GENERIC DIARRHOEA DIFFERENTIAL WOULD BE INAPPROPRIATE. YOUR HISTORY MUST FOLLOW THE LEAD POINT IN THE STEM: THE CANCER, ITS TREATMENT, AND THE OPERATION FOUR DAYS AGO"
+   ],
+   [
+    "HISTORY FINDINGS RELEASED",
+    "WATERY STOOLS · LARGE VOLUME · STARTED THIS MORNING · FIVE TO SIX EPISODES · FEVER · ON ANTIBIOTICS FOR FIVE DAYS"
+   ],
+   [
+    "DO NOT ASK FOR HAEMODYNAMIC STABILITY AT THE DOOR",
+    "THE CHART IS COMING AT FIVE MINUTES AND THE EXAMINER WILL REDIRECT YOU. Spend the five minutes on the history the task asks for"
+   ],
+   [
+    "THE OBSERVATION CHART — read the trend, not the box",
+    "RESPIRATORY RATE 14–17 THROUGHOUT — NORMAL · SATURATION 97–98% DAYS 1–3, NOW 94% · HEART RATE HIGH 70s–LOW 80s DAYS 1–2, NOW 112 · TEMPERATURE 36.6–37.4, NOW 38.4 · BLOOD PRESSURE ~120/80 RISING TO ~160/110. STATE THE DIRECTION OF TRAVEL BEFORE THE NUMBER"
+   ],
+   [
+    "THE SYNTHESIS SENTENCE",
+    "'TAKEN TOGETHER THIS IS A DETERIORATING POST-OPERATIVE PATIENT ON DAY FOUR WITH A NEW FEVER, NEW TACHYCARDIA AND FALLING SATURATIONS, IN THE CONTEXT OF NEW PROFUSE WATERY DIARRHOEA AFTER FIVE DAYS OF ANTIBIOTICS'"
+   ],
+   [
+    "HOW AN AUSTRALIAN OBS CHART IS LAID OUT",
+    "RESPIRATORY RATE AND SATURATION AT THE TOP, THEN BLOOD PRESSURE, THEN HEART RATE, THEN TEMPERATURE AT THE FOOT. Each column is one set of observations, left to right. BLOOD PRESSURE CATCHES PEOPLE OUT — EACH READING IS A PAIR OF MARKS, UPPER SYSTOLIC, LOWER DIASTOLIC"
+   ],
+   [
+    "THE MOST IMPORTANT ADDITION IN THIS PAIR",
+    "THE SOURCE TREATS THIS AS A CLOSED C. DIFFICILE CASE. CLINICALLY THAT IS NOT SAFE. NEW LARGE-VOLUME DIARRHOEA ON DAY FOUR AFTER BOWEL RESECTION, WITH FEVER, TACHYCARDIA AND FALLING SATURATIONS, MUST RAISE ANASTOMOTIC LEAK AND INTRA-ABDOMINAL SEPSIS. Diarrhoea is a recognised early symptom of a PELVIC COLLECTION irritating the rectum"
+   ],
+   [
+    "THE LEAD POINT — the cancer and its treatment",
+    "WHEN WERE YOU DIAGNOSED · WHAT TREATMENT BESIDES THE OPERATION — CHEMOTHERAPY, RADIOTHERAPY · WHO FOLLOWS YOU UP. Neutropenic enterocolitis after chemotherapy and radiation proctitis are both live if she has had either"
+   ],
+   [
+    "THE POST-OPERATIVE COMPLICATION QUESTIONS",
+    "NAUSEA AND VOMITING · ABDOMINAL PAIN AND DISTENSION · WOUND PROBLEMS · HAVE YOU STARTED EATING AND DRINKING, AND ARE YOU KEEPING IT DOWN · PASSING WIND · chest symptoms — cough, breathlessness, CALF PAIN"
+   ],
+   [
+    "WHICH ANTIBIOTIC, AND FOR HOW LONG",
+    "FIVE DAYS OF PERI-OPERATIVE OR POST-OPERATIVE ANTIBIOTICS IN HOSPITAL is the C. difficile exposure — and she is OVER 65, IN HOSPITAL, AND POST-OPERATIVE: three more risk factors"
+   ]
+  ],
+  "findingsLabel": "Day four after resection — read the chart as a trend, and name the leak",
+  "must": [
+   "FAIL — Reading the chart box by box with no trend and no synthesis.",
+   "FAIL — Treating it as a closed C. difficile case and never naming anastomotic leak.",
+   "FAIL — Ordering a generic panel: faecal calprotectin and coeliac serology on a post-op patient.",
+   "FAIL — A generic diarrhoea history that never follows the cancer, treatment and operation.",
+   "ASK — Which antibiotic, for how long? Any tummy pain, distension, or vomiting?",
+   "ASK — Besides the operation, have you had chemotherapy or radiotherapy?"
+  ],
   "back": {
-   "dx": "Probable C. difficile colitis in a deteriorating post-operative patient — day 4 after bowel resection for adenocarcinoma (neoadjuvant chemotherapy), five days of antibiotics, new profuse large-volume watery diarrhoea from this morning (5–6 episodes), feverish; chart: new fever 38.4, HR 112, SpO2 94%, BP risen to ~160/110. The safer reasoning names C. difficile first and then insists on excluding an anastomotic leak or intra-abdominal/pelvic collection (day 4 is the classic timing; diarrhoea can be the early sign of a pelvic collection) with contrast CT and surgical discussion, plus a sepsis screen. Isolate with contact precautions and soap-and-water hand hygiene while awaiting the toxin result.",
+   "dx": [
+    "**C. DIFFICILE COLITIS FIRST — five days of antibiotics and new profuse watery stool in hospital — AND ANASTOMOTIC LEAK OR INTRA-ABDOMINAL COLLECTION TO BE EXCLUDED, because her observations are deteriorating on day four, which is the classic timing.**",
+    "**THE DISCRIMINATING ISSUE: INTERPRETING THE CHART AS A TREND, AND RECOGNISING THAT A DETERIORATING PATIENT FOUR DAYS AFTER BOWEL RESECTION IS NOT ONLY A C. DIFFICILE PROBLEM. FEVER, RISING HEART RATE AND FALLING SATURATION ON DAY FOUR IS THE PATTERN OF AN ANASTOMOTIC LEAK UNTIL PROVEN OTHERWISE.**",
+    "**THE SENTENCE THAT SEPARATES COMPETENT FROM EXCELLENT: 'I would name C. difficile first — but I WOULD ALSO WANT TO EXCLUDE AN ANASTOMOTIC LEAK OR AN INTRA-ABDOMINAL COLLECTION, because her observations are deteriorating on day four, which is the classic timing.' THAT SINGLE SENTENCE PROTECTS A REAL PATIENT.**",
+    "**READING THE CHART ALOUD, PARAMETER BY PARAMETER: 'respiratory rate 14 to 17 throughout, NORMAL. Saturation 97–98% on days one to three, FALLEN TO 94% on day four — A NEW AND SIGNIFICANT DOWNWARD TREND. Heart rate high seventies to low eighties, RISEN TO 112 — SHE IS NOW TACHYCARDIC. Temperature 36.6 to 37.4, NOW 38.4 — A NEW FEVER. Blood pressure, reading the upper mark as systolic, has RISEN FROM AROUND 120/80 TO AROUND 160/110.'**",
+    "**STATE THE TREND, THEN THE NUMBER, THEN THE CONCLUSION. 'Heart rate 112, temperature 38.4' WITH NO TREND AND NO SYNTHESIS IS A LISTED FAIL.**",
+    "**WHY A LEAK PRODUCES DIARRHOEA: a PELVIC COLLECTION IRRITATES THE RECTUM, causing frequent loose stools and tenesmus — so new diarrhoea after an anterior resection is NOT ALWAYS INFECTIVE. Falling saturation may be SPLINTING FROM ABDOMINAL PAIN, BASAL ATELECTASIS, PNEUMONIA, PULMONARY EMBOLISM — or SEPSIS.**",
+    "**MATCH THE INVESTIGATIONS TO THE CONTEXT, AND SAY WHAT YOU ARE LEAVING OUT: NOT FAECAL CALPROTECTIN, NOT COELIAC SEROLOGY — appropriate in Version A, INAPPROPRIATE HERE. ORDERING A GENERIC PANEL IN A SPECIFIC CONTEXT IS ITSELF A REASONING ERROR, AND THE EXAMINER IS WATCHING FOR IT.**",
+    "**THE INVESTIGATIONS WITH REASONS: STOOL C. DIFFICILE TOXIN PCR · STOOL MCS AND PCR — also guides infection control · FBC AND CRP · UEC, CREATININE, ALBUMIN — she has been nil by mouth and is losing large-volume stool; RISING CREATININE AND FALLING ALBUMIN ARE C. DIFFICILE SEVERITY MARKERS · BLOOD CULTURES AND VENOUS LACTATE — A SEPSIS SCREEN, EXPECTED OF A HOSPITAL MEDICAL OFFICER · CT ABDOMEN AND PELVIS WITH CONTRAST — LEAK, COLLECTION, COLONIC DILATATION — discussed with the surgical team · ERECT CHEST X-RAY — atelectasis, pneumonia, PE, FREE GAS.**",
+    "**IMMEDIATE ACTIONS BEYOND THE TASK: SINGLE ROOM WITH CONTACT PRECAUTIONS — an easy, specific mark · SOAP AND WATER, NOT ALCOHOL GEL · IV fluids · REVIEW WHETHER THE ANTIBIOTIC IS STILL NEEDED · ESCALATE TO THE SURGICAL TEAM NOW, not after the results · a MET CALL if she meets criteria.**",
+    "**IF C. DIFFICILE IS CONFIRMED: ORAL VANCOMYCIN 125 mg QID × 10 DAYS; if fulminant, ORAL OR PR VANCOMYCIN PLUS IV METRONIDAZOLE — NEVER IV VANCOMYCIN ALONE — with urgent surgical review for toxic megacolon.** VERIFY. **SA: a regional post-op patient deteriorating → MedSTAR 1300 13 12 33.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Identity, 'tell me what's been happening' → acknowledge · diarrhoea: when (this morning), ★ watery, ★ volume (large), episodes (5–6), blood/mucus, urgency, ★ 'do you feel hot or feverish? any shivers?'"
+     "**NO STABILITY REQUEST — the chart is coming. WIPE, identity, open question: 'I hear you've developed some diarrhoea since your operation — can you tell me about it?'**"
     ],
     [
-     "1:15",
-     "★ Lead point: 'when were you first diagnosed with the bowel cancer? besides the surgery, any other treatment — chemotherapy or radiotherapy? who follows you up, and how often?' (6 months; chemo before the op)"
+     "0:25",
+     "**EXPLORE THE DIARRHOEA: when it started — this morning · how many times — five to six · WATERY, LARGE VOLUME · ANY BLOOD · any mucus · effect.**"
     ],
     [
-     "2:15",
-     "★ The last four days: nausea/vomiting · tummy pain — ★ 'different from the pain you'd expect after surgery?' · bloating/distension · passing wind · wound — pain, ooze, redness · ★ 'have you started eating and drinking, and are you keeping it down?' (fluids yesterday, soup today) · urine output · breathing, cough, calf pain"
+     "1:05",
+     "**GENERAL GI — INCLUDING THE POST-OP QUESTIONS: nausea or vomiting · ABDOMINAL PAIN AND DISTENSION · PASSING WIND · FEVER OR SHIVERS · constipation before this?**"
     ],
     [
-     "3:30",
-     "★ 'What medications have you been given? which antibiotic, and how many days?' (since the op, ~5 d, name unknown) · painkillers (opioids), laxatives/aperients (osmotic laxatives cause diarrhoea), PPI, DVT prophylaxis, usual meds · allergies · summarise"
+     "1:40",
+     "**THE LEAD POINT: WHEN WERE YOU DIAGNOSED · WHAT TREATMENT BESIDES THE OPERATION — CHEMOTHERAPY, RADIOTHERAPY · WHO FOLLOWS YOU UP?**"
+    ],
+    [
+     "2:20",
+     "**POST-OPERATIVE COMPLICATIONS: WOUND — pain, redness, discharge · HAVE YOU STARTED EATING AND DRINKING, AND ARE YOU KEEPING IT DOWN · passing urine · COUGH OR BREATHLESSNESS · CALF PAIN OR SWELLING · any drain?**"
+    ],
+    [
+     "3:10",
+     "**MEDICATIONS — ESPECIALLY WHICH ANTIBIOTIC, AND FOR HOW LONG · PPI or other acid suppression · opioids · anticoagulation.**"
+    ],
+    [
+     "3:40",
+     "**If time: sick contacts on the ward · dairy · thyroid — and STOP THERE. No coeliac or IBD screen.**"
+    ],
+    [
+     "4:10",
+     "**Allergies, past history, a one-line summary back to her, and 'is anything worrying you?'**"
     ],
     [
      "5:00",
-     "★ Chart: 'Examiner — respiratory rate 14 to 17 throughout, normal. Oxygen saturation 97–98% on days one to three, falling to 94% on day four. Heart rate high seventies rising to 112 — she is now tachycardic. Temperature 36.6 rising to 38.4 — a new fever on day four. Blood pressure has risen from about 120/80 to about 160/110. My interpretation is a deteriorating patient on day four after bowel resection, with new fever, new tachycardia and falling saturations, alongside new profuse watery diarrhoea after five days of antibiotics.'"
+     "**THE CHART — PARAMETER BY PARAMETER, TREND THEN NUMBER: RR, SATURATION, BP, HEART RATE, TEMPERATURE.**"
+    ],
+    [
+     "5:50",
+     "**THE SYNTHESIS: a deteriorating post-operative patient on day four — new fever, new tachycardia, falling saturations — with new profuse watery diarrhoea after five days of antibiotics.**"
     ],
     [
      "6:15",
-     "★ Investigations with reasons: 'stool C. difficile toxin PCR — antibiotics plus new watery diarrhoea in hospital makes this my leading diagnosis · stool MCS and PCR panel — other enteric pathogens and ward infection control · FBE and CRP — inflammation and severity · UEC, creatinine and albumin — NBM then large losses; also C. difficile severity markers · blood cultures and venous lactate — febrile and tachycardic; sepsis screen · ★ CT abdomen and pelvis with contrast, discussed with the surgical team — to exclude an anastomotic leak or intra-abdominal collection; day four is the classic timing, and diarrhoea can be an early symptom of a pelvic collection · erect chest X-ray — falling saturations · I would not order faecal calprotectin or coeliac serology here — appropriate in an undifferentiated community presentation, not this context' · ★ 'and I would isolate her in a single room with contact precautions and soap-and-water hand hygiene while awaiting the result' · escalate: registrar/surgical team, sepsis pathway, fluids, hold laxatives/opioids review, no antimotility agents"
+     "**NAME C. DIFFICILE FIRST, THEN THE ANASTOMOTIC LEAK SENTENCE.**"
+    ],
+    [
+     "6:40",
+     "**INVESTIGATIONS, EACH WITH ITS REASON: toxin PCR · stool MCS/PCR · FBC, CRP · UEC, creatinine, albumin · BLOOD CULTURES AND LACTATE · CT ABDOMEN AND PELVIS WITH CONTRAST · erect chest X-ray.**"
+    ],
+    [
+     "7:30",
+     "**SAY WHAT YOU ARE LEAVING OUT — no calprotectin, no coeliac serology — and the immediate actions: SINGLE ROOM, CONTACT PRECAUTIONS, IV FLUIDS, SURGICAL TEAM NOW.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I'd like to ask about your bowel condition and the operation. When were you first diagnosed? Besides the surgery, have you had any other treatment — chemotherapy or radiotherapy? Who follows you up, and how often?'",
-    "★ 'Now about the last four days. Any nausea or vomiting? Any tummy pain — and is it different from the pain you'd expect after surgery? Is your tummy bloated or distended? Any problems with the wound? Have you started eating and drinking, and are you keeping it down?' / ★ 'What medications have you been given? Which antibiotic, and how many days?'",
-    "★ To examiner: 'Respiratory rate 14 to 17 throughout, normal. Saturations 97–98% on days one to three, falling to 94% on day four. Heart rate high seventies rising to 112 — now tachycardic. Temperature 36.6 rising to 38.4 — a new fever on day four. Blood pressure risen from about 120/80 to about 160/110. My interpretation is a deteriorating patient on day four after bowel resection, with new fever, new tachycardia and falling saturations, alongside new profuse watery diarrhoea after five days of antibiotics.'",
-    "★ 'Stool C. difficile toxin PCR — antibiotics plus new watery diarrhoea in hospital makes this my leading diagnosis … And I would want a CT abdomen and pelvis with contrast, discussed with the surgical team, because I need to exclude an anastomotic leak or an intra-abdominal collection — day four is the classic timing, and diarrhoea can be an early symptom of a pelvic collection.' / 'I would not order faecal calprotectin or coeliac serology here.' / 'I would isolate her in a single room with contact precautions and soap-and-water hand hygiene while awaiting the result.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 67 F, bowel adenocarcinoma diagnosed 6 months ago, neoadjuvant chemotherapy, resection 4 days ago; watery large-volume diarrhoea from this morning ×5–6, feels hot; antibiotics since the operation ~5 days, name unknown; fluids yesterday, soup today",
-    "Chart: RR 14–17 · SpO2 97–98 → 94% day 4 · HR 70s → 112 · T 36.6 → 38.4 · BP ~120/80 → ~160/110. Post-op day 3–5 DDx for fever + diarrhoea: C. difficile (hospital, antibiotics), anastomotic leak (day 3–7; fever, tachycardia, pain, ileus, diarrhoea, raised CRP), pelvic/intra-abdominal collection, wound infection, pneumonia/atelectasis (SpO2 fall), UTI (IDC), DVT/PE, medication (laxatives, magnesium, antibiotics), overflow around impaction, early enteral feeding intolerance",
-    "C. difficile severity (VERIFY): WCC ≥15, creatinine rise, albumin <30, T >38.5, hypotension, ileus, megacolon → severe/fulminant; treat oral vancomycin ± IV metronidazole; surgical review; stop offending antibiotics where possible; isolate; no loperamide. Anastomotic leak → CT with contrast, NBM, IV antibiotics, surgical team — drainage or re-laparotomy",
-    "Escalation: MET criteria (HR >130, RR >25, SpO2 <90, SBP <90, T >38.5 in some charts) VERIFY local; sepsis bundle; inform the surgical registrar/consultant; document"
+    "**Investigations, WITH THE REASON ATTACHED: STOOL C. DIFFICILE TOXIN PCR — top diagnosis, first test · STOOL MCS AND PCR — other pathogens and ward infection control · FBC, CRP — leucocytosis and rising CRP support BOTH severe C. difficile AND a collection · UEC, CREATININE, ALBUMIN — severity markers and fluid status · BLOOD CULTURES AND VENOUS LACTATE — SEPSIS SCREEN · CT ABDOMEN AND PELVIS WITH CONTRAST — ANASTOMOTIC LEAK, COLLECTION, COLONIC DILATATION · ERECT CHEST X-RAY — atelectasis, pneumonia, PE, free gas.**",
+    "**DELIBERATELY NOT ORDERED: FAECAL CALPROTECTIN · COELIAC SEROLOGY. Say so, and say why — the context makes them irrelevant.**",
+    "**Immediate management: SINGLE ROOM WITH CONTACT PRECAUTIONS · SOAP AND WATER HAND HYGIENE — spores are not killed by alcohol · IV FLUIDS AND ELECTROLYTE REPLACEMENT · review the need for the current antibiotic · STOP ANY ANTIMOTILITY AGENT · URGENT SURGICAL TEAM REVIEW · consider a CTPA if saturation keeps falling without a chest cause.**",
+    "**If confirmed: ORAL VANCOMYCIN 125 mg QID × 10 DAYS. FULMINANT — hypotension, ileus, megacolon: ORAL OR PR VANCOMYCIN + IV METRONIDAZOLE and URGENT SURGICAL REVIEW; colectomy may be needed. NEVER IV VANCOMYCIN ALONE.** VERIFY.",
+    "**Do not miss: ANASTOMOTIC LEAK · PELVIC OR INTRA-ABDOMINAL COLLECTION · TOXIC MEGACOLON · SEPSIS · PULMONARY EMBOLISM in a post-operative cancer patient · NEUTROPENIC ENTEROCOLITIS if she has had recent chemotherapy.**",
+    "**Avoid: READING THE CHART BOX BY BOX · A GENERIC DIARRHOEA PANEL · waiting for the stool result before involving the surgical team · loperamide · calling the rising blood pressure reassuring — it may reflect pain, agitation or early sepsis and needs a reason.**",
+    "**SA: hospital-acquired C. difficile is under SA Health surveillance; in a regional hospital, discuss early with the receiving surgical registrar and MedSTAR 1300 13 12 33 if she deteriorates.**"
    ],
-   "fails": [
-    "A generic community diarrhoea history ignoring the cancer, chemotherapy and operation",
-    "Not asking which antibiotic/how long, oral intake, wound, distension, or pain character",
-    "Reading the chart without interpreting the trend or stating 'deteriorating patient'",
-    "Investigations without reasons; ordering calprotectin/coeliac serology; no CT/leak consideration; no blood cultures/lactate",
-    "No isolation/contact precautions; no escalation to the surgical team"
-   ],
-   "numbers": [
-    "Day 4 post-op · antibiotics 5 d · T 38.4 · HR 112 · SpO2 94% · BP 160/110 · anastomotic leak window day 3–7",
-    "C. difficile severe: WCC ≥15, creatinine ↑, albumin <30, T >38.5 VERIFY · oral vancomycin ± IV metronidazole · CT with contrast + surgical team · contact precautions, soap and water"
+   "ddx": [
+    [
+     "**C. difficile colitis** — named first",
+     "**Five days of antibiotics; NEW PROFUSE WATERY STOOL; fever; OVER 65, IN HOSPITAL, POST-OP**",
+     "**Which antibiotic, how long; PPI**",
+     "**Stool toxin PCR; single room, contact precautions; oral vancomycin if positive** — same day"
+    ],
+    [
+     "**Anastomotic leak — must be excluded**",
+     "**DAY FOUR after bowel resection; NEW FEVER, TACHYCARDIA, FALLING SATURATION**",
+     "**Abdominal pain, distension, peritonism, drain output, wound**",
+     "**CT abdomen and pelvis with contrast; URGENT SURGICAL REVIEW** — EMERGENCY"
+    ],
+    [
+     "**Pelvic or intra-abdominal collection**",
+     "**Diarrhoea and tenesmus from a collection IRRITATING THE RECTUM; fever**",
+     "Pelvic pain, rectal fullness",
+     "**CT; drainage** — urgent"
+    ],
+    [
+     "**Toxic megacolon / fulminant colitis**",
+     "**Distension, pain, ileus, hypotension, drowsiness**",
+     "Abdominal distension, absent bowel sounds",
+     "**AXR or CT; oral/PR vancomycin + IV metronidazole; surgery** — EMERGENCY"
+    ],
+    [
+     "**Sepsis — source to be found**",
+     "**Fever, tachycardia, falling saturation**",
+     "Wound, chest, urine, lines",
+     "**Blood cultures, lactate, source control** — EMERGENCY"
+    ],
+    [
+     "**Pneumonia or basal atelectasis**",
+     "**Falling saturation, post-op splinting**",
+     "Cough, crackles, reduced air entry",
+     "**Erect chest X-ray**"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "**Post-operative cancer patient; tachycardia, falling saturation**",
+     "Calf pain, pleuritic pain, VTE prophylaxis given?",
+     "**CTPA if no chest-film explanation**"
+    ],
+    [
+     "Neutropenic enterocolitis · radiation colitis",
+     "**Recent chemotherapy or pelvic radiotherapy**",
+     "**The lead-point questions on her treatment**",
+     "FBC with differential; CT"
+    ],
+    [
+     "Other infective diarrhoea",
+     "Ward outbreak, norovirus",
+     "Sick contacts on the ward",
+     "Stool MCS and PCR"
+    ],
+    [
+     "Post-operative enteral feed or medication diarrhoea",
+     "Started feeds, laxatives, magnesium",
+     "Feeds and drug chart",
+     "**A diagnosis of exclusion when she is deteriorating**"
+    ]
    ]
   },
   "source": "03_Pseudomembranous_Colitis_2_Case_Tasks_Script_Notability.pdf Version B (67-year-old woman, day 4 after bowel resection for adenocarcinoma, new profuse diarrhoea and a deteriorating chart — C. difficile plus anastomotic leak to exclude; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › 03_Pseudomembranous_Colitis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Ignoring the deteriorating observations — day four after bowel resection with new fever, new tachycardia and falling saturations is a sepsis picture; 'I would also want to exclude an anastomotic leak or intra-abdominal collection, because her observations are deteriorating on day four — the classic timing, and diarrhoea can be an early symptom of a pelvic collection' — CT abdomen and pelvis with contrast discussed with the surgical team, blood cultures and lactate; naming C. difficile alone is a closed answer",
-   "FAIL — Giving a generic diarrhoea differential — you are not asked for one, deliberately; the history must follow the lead point in the stem: 'when were you first diagnosed with the bowel cancer? besides the surgery, any other treatment — chemotherapy or radiotherapy? who follows you up?' — then the last four days",
-   "DO — Diarrhoea: when (this morning), watery, large volume, five to six episodes, blood; nausea and vomiting; tummy pain — 'different from the pain you'd expect after surgery?'; bloating or distension; the wound; 'have you started eating and drinking, and keeping it down?'; 'what medications have you been given? which antibiotic, and how many days?' (five days since the op, name unknown — ask the examiner or the chart)",
-   "DO — Interpret the chart to the examiner in one run: 'respiratory rate 14 to 17 throughout, normal; saturations 97–98% on days one to three, falling to 94% on day four; heart rate high seventies rising to 112 — now tachycardic; temperature 36.6 rising to 38.4 — a new fever on day four; blood pressure risen from about 120/80 to 160/110; my interpretation is a deteriorating patient on day four after bowel resection with new fever, tachycardia and falling saturations, alongside new profuse watery diarrhoea after five days of antibiotics'",
-   "DO — Investigations with reasons: stool C. difficile toxin PCR (antibiotics plus new watery diarrhoea in hospital — the leading diagnosis); stool MCS and PCR panel (other pathogens, ward infection control); FBE and CRP (severity); UEC, creatinine and albumin (nil by mouth, large losses, and C. difficile severity markers); blood cultures and venous lactate (febrile and tachycardic — a sepsis screen); CT abdomen and pelvis; erect chest radiograph for the falling saturations; 'I would not order faecal calprotectin or coeliac serology here — appropriate in the community, not relevant in this context'",
-   "DO — Isolate her in a single room with contact precautions and soap-and-water hand hygiene while awaiting the result; escalate to the surgical registrar now; fluids; stop the antibiotic if no ongoing indication; treat if positive (oral vancomycin); avoid antimotility agents"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-142",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Regional SA general practice. ~4 min history, 2 min examination findings from the examiner, 2 min explanation. Every red flag is NEGATIVE — the patient gives no prompt to think of cancer; the findings outrank the history. Without the rectal examination you get hepatomegaly alone and spend the explanation talking about a big liver with no cause. Consent and chaperone must be said aloud.",
   "stem": [
    "Mrs Margaret Harding, 67, presents with diarrhoea for two weeks. Gastro-Stop from the chemist is not helping — if anything it's worse. Lower abdominal ache."
   ],
@@ -34782,113 +35161,207 @@
    "Ask the examiner for your physical examination findings",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 min. Identity, open → 'two weeks is worth sorting properly — and worsening despite treatment tells me we need the cause, not more symptom relief' · permission · timing, nocturnal, CCCVO (4–5/day, watery, no blood) · pain: where (low, no side), radiation, relation to bowels, ★ tenesmus ('feel you haven't fully emptied, or need to go and nothing comes?' — yes) · general GI · ★ 2:10 red-flag block 'I ask everybody with a change in their bowels': weight loss (how much/how long), appetite, lumps, tiredness, blood/black stools, ★ 'before this, had your bowels changed — more/less often, different shape?', FHx bowel cancer + age, ★ 'done the bowel screening kit?' (never sent it back) → all negative — do not change course · at speed: travel/contacts, meds incl chemist/antibiotics/anticoagulants, IBD ×4, coeliac/lactose, thyroid, alcohol · 3:50 hands off · ★ seven named PEFE steps: appearance (well/unwell, dehydration, pallor, jaundice, cachexia, rash) · vitals + postural BP · neck — thyroid, cervical + supraclavicular nodes · abdomen inspection · palpation (tenderness, masses, ★ organomegaly) → hepatomegaly 4 cm → ★ pursue: smooth or irregular/nodular? tender? pulsatile? · percussion (liver span, shifting dullness), auscultation, groins · ★ 'I would like to perform a digital rectal examination, with the patient's consent and with a chaperone present' → perianal inspection; digital: mass → ★ pursue: cm from the verge, fixed/mobile, proportion of circumference, blood on the glove · dipstick · warning shot → findings → concern → ★ pause → her three questions → plan → DDx → stop loperamide → obstruction safety-net → support.",
+  "findings": [
+   [
+    "THE STATION DECIDED BY THE RECTAL EXAMINATION",
+    "HISTORY — lower abdominal pain, no fever, no vomiting, no travel, no sick contacts; GASTRO-STOP OVER THE COUNTER AND WORSE DESPITE IT. EXAMINATION — HEPATOMEGALY, the liver edge several centimetres below the costal margin, and A RECTAL MASS ON DIGITAL EXAMINATION"
+   ],
+   [
+    "THE RECTAL MASS EXISTS ONLY FOR CANDIDATES WHO ASK",
+    "CANDIDATES WHO STOP AT 'PALPATION — ANY MASSES OR TENDERNESS?' RECEIVE THE HEPATOMEGALY AND NOTHING ELSE, AND GO ON TO EXPLAIN A LARGE LIVER WITH NO IDEA WHY"
+   ],
+   [
+    "THE FULL SENTENCE — consent and chaperone stated aloud",
+    "'I WOULD LIKE TO PERFORM A DIGITAL RECTAL EXAMINATION, WITH THE PATIENT'S CONSENT AND WITH A CHAPERONE PRESENT.' OMITTING CONSENT AND CHAPERONE IS ITSELF A LISTED REASON TO FAIL. It costs four seconds"
+   ],
+   [
+    "WHAT IS CONSPICUOUSLY ABSENT FROM EVERY RECALL",
+    "ANY MENTION OF THE RED-FLAG ANSWERS — which strongly suggests the candidates who wrote it up DID NOT ASK. A TWO-WEEK HISTORY NEVER LICENSES SKIPPING THEM"
+   ],
+   [
+    "A FAILED SYMPTOMATIC TREATMENT IS A RED FLAG IN ITSELF",
+    "'I'VE BEEN TAKING GASTRO-STOP AND IT'S GETTING WORSE.' SAY IT BACK: 'SO IT'S WORSENING DESPITE TREATMENT — THAT TELLS ME WE NEED TO FIND THE CAUSE RATHER THAN KEEP TREATING THE SYMPTOM'"
+   ],
+   [
+    "THE RED-FLAG BLOCK — start at 2:10 whatever is unfinished",
+    "WEIGHT LOSS, QUANTIFIED · APPETITE · LUMPS · TIREDNESS · BLOOD OR BLACK TARRY STOOLS · A CHANGE IN BOWEL HABIT BEFORE THIS · TENESMUS · STOOL CALIBRE · FAMILY HISTORY WITH THE AGE · 'HAVE YOU DONE THE BOWEL SCREENING TEST THAT COMES IN THE POST?' — she is 67, squarely in the programme"
+   ],
+   [
+    "THE LIVER FOLLOW-UPS — once hepatomegaly is released",
+    "'HOW MANY CENTIMETRES BELOW THE COSTAL MARGIN? SMOOTH OR IRREGULAR AND NODULAR? TENDER? PULSATILE? SPLENOMEGALY? ASCITES? JAUNDICE, SPIDER NAEVI, PALMAR ERYTHEMA?' A HARD, IRREGULAR, NON-TENDER LIVER POINTS AT METASTASES. ASKING THIS SEPARATES A CANDIDATE WHO RECEIVED A FINDING FROM ONE WHO EXAMINED A PATIENT"
+   ],
+   [
+    "THE RECTAL FOLLOW-UPS — once the mass is released",
+    "HOW FAR FROM THE ANAL VERGE · FIXED OR MOBILE · WHAT PROPORTION OF THE CIRCUMFERENCE · BLOOD ON THE GLOVE · ANAL TONE"
+   ],
+   [
+    "THE SEVEN-STEP EXAMINATION REQUEST",
+    "GENERAL APPEARANCE — dehydration, pallor, jaundice, cachexia · VITALS WITH POSTURAL BP · NECK — THYROID AND SUPRACLAVICULAR NODES · ABDOMEN — inspection and palpation · percussion and auscultation — liver span, shifting dullness · INGUINAL REGION · DIGITAL RECTAL EXAMINATION — then urine dipstick and glucose"
+   ],
+   [
+    "THE TIME BUDGET",
+    "0:00 intro · 0:40 explore · 1:40 general GI · 2:10 RED FLAGS · 3:10 rest of differentials · 3:50 HANDS OFF THE HISTORY · 4:00 EXAMINATION · 6:00 explanation. IF YOU ARE STILL TAKING A HISTORY AT 4:30 YOU WILL NOT GET TO THE RECTAL EXAMINATION"
+   ]
+  ],
+  "findingsLabel": "A negative history, a large liver, and a mass released only if you ask",
+  "must": [
+   "FAIL — Omitting the cancer red flags because two weeks feels 'acute'.",
+   "FAIL — Not requesting a digital rectal examination.",
+   "FAIL — Requesting a rectal examination without stating consent and a chaperone.",
+   "FAIL — Abandoning the diagnosis because the history is negative.",
+   "ASK — Have you lost weight without trying? Any blood? Done the bowel screening kit?",
+   "ASK — Digital rectal examination, with consent and a chaperone."
+  ],
   "back": {
-   "dx": "Colorectal (rectal) carcinoma with hepatic metastases until proven otherwise — two weeks of worsening watery diarrhoea 4–5/day despite loperamide, dull lower abdominal ache, tenesmus, slightly dry, all red flags negative, never did the screening kit; PEFE: irregular non-tender hepatomegaly 4 cm below the costal margin, no splenomegaly/ascites, and on DRE a firm fixed rectal mass ~6 cm from the anal verge involving half the circumference with blood on the glove. Explain with a warning shot, name the findings, name the concern ('may be a cancer … may have spread to the liver'), pause, never give a prognosis; urgent colonoscopy + biopsy, CT chest/abdomen/pelvis, bloods (FBE, iron, UEC, LFT, coags, CEA baseline), referral today with a follow-up call, stop the Gastro-Stop, obstruction red flags, Cancer Council SA.",
+   "dx": [
+    "**COLORECTAL CARCINOMA WITH HEPATIC METASTASES. A rectal mass palpable on digital examination, with hepatomegaly, in a 67-year-old with a change in bowel habit.** **COLORECTAL VENOUS BLOOD DRAINS THROUGH THE PORTAL VEIN, SO THE LIVER IS THE COMMONEST AND USUALLY THE FIRST SITE OF DISTANT SPREAD — WHICH IS WHY TWO FINDINGS ARE ONE DIAGNOSIS.**",
+    "**THE DISCRIMINATING ISSUE — TWO BEHAVIOURS, BOTH OMISSIONS: ONE, THE RED FLAGS ASKED DESPITE A TWO-WEEK HISTORY — 'THERE ARE SOME QUESTIONS I ASK EVERYBODY WITH A CHANGE IN THEIR BOWELS.' TWO, ASKING FOR THE RECTAL EXAMINATION — the mass is released ONLY ON REQUEST.**",
+    "**THE REASONING THE STATION IS REALLY TESTING: EXAMINATION FINDINGS OUTRANK A NEGATIVE HISTORY. Suppose every red flag came back negative — THE DIAGNOSIS DOES NOT CHANGE. You can feel a mass in her rectum and you can feel her liver. A HISTORY THAT FAILS TO SUPPORT A FINDING DOES NOT CANCEL THE FINDING. And CANCER DOES NOT DECLARE ITS DURATION — the fortnight is when the symptom became annoying enough to bring her in.**",
+    "**THE DELIVERY — WARNING SHOT, THEN PAUSE: 'Mrs Harding, I need to talk to you about what I've found, and I'D RATHER BE STRAIGHT WITH YOU THAN VAGUE. Is that all right? IS THERE ANYONE YOU'D LIKE WITH YOU?' … 'When I examined you, I found TWO THINGS. There is A LUMP IN YOUR BACK PASSAGE, and YOUR LIVER FEELS ENLARGED.' PAUSE. LET HER REACT. DO NOT FILL THE SILENCE.**",
+    "**THEN THE CONCERN, HONESTLY: 'I'M CONCERNED THAT THE LUMP MAY BE A CANCER IN THE BOWEL, AND THAT THE ENLARGED LIVER MAY MEAN IT HAS SPREAD THERE. I CAN'T BE CERTAIN TODAY — I need tests to confirm it — BUT I DON'T WANT TO TELL YOU IT'S NOTHING WHEN I'M WORRIED THAT IT ISN'T.'**",
+    "**THE CONCRETE NEXT STEP: 'I'm going to arrange A CAMERA TEST OF THE BOWEL, URGENTLY, where they can look directly and take a small sample, and A CT SCAN of your chest, tummy and pelvis. I'LL REFER YOU TODAY, AND I'LL RING YOU MYSELF ONCE I HAVE THE DATES. I know that's a great deal to take in. WHAT QUESTIONS DO YOU HAVE?'**",
+    "**WHAT NOT TO SAY: NOT 'IT'S PROBABLY NOTHING'. NOT 'YOU HAVE METASTATIC BOWEL CANCER' — YOU HAVE NO TISSUE DIAGNOSIS. NOT A PROGNOSIS, A STAGE OR A TREATMENT PLAN. AND NOT A DIFFERENTIAL LIST THAT BURIES THE WORD CANCER IN THE MIDDLE — NAME YOUR CONCERN FIRST, CLEARLY, THEN THE ALTERNATIVES.**",
+    "**THE DIFFERENTIALS BY GROUP: GI — colorectal cancer WITHOUT metastasis, with OVERFLOW PAST AN OBSTRUCTING LESION — 'were you constipated before this?'; IBD; ISCHAEMIC COLITIS · INFECTIVE — infective colitis, C. difficile · DRUGS — HER OWN LOPERAMIDE, which may be causing PARADOXICAL OVERFLOW · ENDOCRINE — hyperthyroidism · OTHER — a second intra-abdominal malignancy; BENIGN HEPATOMEGALY — fatty liver, alcohol, right heart failure.**",
+    "**THE OVARIAN TRAP: do not reach for the other famous pelvic-mass station. AN OVARIAN MASS IS FELT IN THE ILIAC FOSSA, NOT IN THE RECTUM — THE SITE OF THE MASS IS THE DISCRIMINATOR.**",
+    "**PLAN: URGENT COLONOSCOPY WITH BIOPSY · CT CHEST, ABDOMEN AND PELVIS FOR STAGING · MRI LIVER AND MRI RECTUM · FBC FOR IRON DEFICIENCY, IRON STUDIES, UEC, LFTs — ALP AND GGT RISE FIRST WITH LIVER METASTASES · CEA AS A BASELINE, NOT A DIAGNOSTIC TEST · COAGULATION, group and hold · STOP THE LOPERAMIDE · COLORECTAL MDT.** **SA: URGENT CATEGORY 1 REFERRAL — suspected colorectal malignancy with a palpable rectal mass, expected within 30 days; PATS; Country Health Connect; CANCER COUNCIL SA 13 11 20; a cancer care coordinator early.** VERIFY category timing."
+   ],
    "plan": [
     [
      "0:00",
-     "Identity, open → ★ 'two weeks is worth sorting out properly, and it's getting worse despite what you've tried — so we need to find the cause rather than keep treating the symptom. I'll ask some questions, examine you, then tell you what I think. Some are personal — is that all right?'"
+     "**WIPE, identity, open question.** Then **acknowledge the failed treatment: 'two weeks is long enough to be worth sorting out properly, and I can hear it's not responding to what you've tried. SOME QUESTIONS ARE QUITE PERSONAL.'**"
     ],
     [
      "0:40",
-     "Timing: 2 wk, constant, worse, not nocturnal · CCCVO: 4–5/day, watery, no blood, not bulky · pain: low, no side, no radiation, relation to defecation, ★ 'do you ever feel you haven't fully emptied, or need to go and nothing comes?' → yes (register, move on)"
+     "**EXPLORE: TIMING — onset, constant, NOCTURNAL · CCCVO — count, consistency, BLOOD, volume, odour · SAY IT BACK: 'worsening despite treatment tells me we need to find the cause.'**"
+    ],
+    [
+     "1:20",
+     "**THE PAIN: site, radiation, RELATION TO OPENING THE BOWELS, TENESMUS — a rectal tumour gives a LOW, DRAGGING DISCOMFORT AND A FEELING OF INCOMPLETE EMPTYING.**"
     ],
     [
      "1:40",
-     "General GI: N/V, bloating (a bit), constipated before (no), fever · ★ 2:10 'there are some questions I ask everybody with a change in their bowels': weight loss — how much/how long (none), appetite (normal), lumps, tiredness (a bit), blood/black stools (no), ★ 'before this, had your bowels changed at all — more often, less often, a different shape?' (no), FHx bowel cancer + age (none), ★ 'have you done the bowel screening test that comes in the post?' (got it, never sent it back)"
+     "**GENERAL GI: nausea, vomiting, bloating, WERE YOU CONSTIPATED BEFORE THIS STARTED, fever.**"
+    ],
+    [
+     "2:10",
+     "**RED FLAGS — START HERE WHATEVER IS UNFINISHED: 'there are some questions I ask everybody with a change in their bowels.' WEIGHT LOSS, HOW MUCH, OVER WHAT PERIOD · APPETITE · LUMPS · TIREDNESS · BLOOD OR BLACK TARRY STOOLS — asked again even after CCCVO.**"
+    ],
+    [
+     "2:45",
+     "**BOWEL HABIT BEFORE THIS — more often, less, A DIFFERENT SHAPE · INCOMPLETE EMPTYING · FAMILY HISTORY — AND HOW OLD · THE BOWEL SCREENING KIT — DID YOU DO IT? · anticoagulants or antiplatelets.**"
     ],
     [
      "3:10",
-     "At speed: travel/contacts · meds incl chemist (perindopril, Gastro-Stop), antibiotics, blood thinners · IBD ×4 · greasy stools, dairy · thyroid · alcohol (glass most nights) · concerns ('I just want it to stop — granddaughter's wedding in three weeks') · 3:50 hands off"
+     "**THE REST AT SPEED: travel, contacts, recent antibiotics or hospital · IBD — joints, eyes, rashes · coeliac · thyroid — hot weather, palpitations · medications including over-the-counter · alcohol.**"
+    ],
+    [
+     "3:50",
+     "**HANDS OFF THE HISTORY.**"
     ],
     [
      "4:00",
-     "★ 'Examiner, I'd like specific findings — yes or no is fine. General appearance — well or unwell? dehydration — dry mucous membranes, skin turgor? pallor, jaundice, cachexia? rashes? · vital signs incl postural BP, RR, sats · neck — thyroid, cervical and supraclavicular nodes · abdomen inspection — moves with respiration, distension, scars, visible masses · palpation — tenderness, guarding, rebound, masses, ★ organomegaly' → 'hepatomegaly, 4 cm below the costal margin' → ★ 'is the edge smooth, or irregular and nodular? tender? pulsatile? splenomegaly, ascites, jaundice?' → irregular, non-tender, no spleen, no ascites · 'percussion — liver span, shifting dullness; bowel sounds; groins — hernias, nodes'"
+     "**THE SEVEN STEPS: general appearance · VITALS WITH POSTURAL BP · THYROID AND SUPRACLAVICULAR NODES · abdomen — inspection and palpation.**"
     ],
     [
-     "5:00",
-     "★ 'And I would like to perform a digital rectal examination, with the patient's consent and with a chaperone present. On inspection of the perianal area — fissures, tags, piles, masses? On digital examination — is there a mass, how far from the anal verge, fixed or mobile, what proportion of the circumference, and is there blood on the glove?' → firm mass → ★ '~6 cm, fixed, half the circumference, blood on the glove' · dipstick (ketones)"
+     "4:40",
+     "**When hepatomegaly is released, THE LIVER FOLLOW-UPS: centimetres, edge, tenderness, pulsatility, spleen, ascites, jaundice.** Then **percussion and auscultation · INGUINAL REGION.**"
+    ],
+    [
+     "5:20",
+     "**'I WOULD LIKE TO PERFORM A DIGITAL RECTAL EXAMINATION, WITH THE PATIENT'S CONSENT AND WITH A CHAPERONE PRESENT.' Perianal inspection, then the mass — DISTANCE FROM VERGE, FIXED OR MOBILE, CIRCUMFERENCE, BLOOD ON THE GLOVE, TONE.**"
+    ],
+    [
+     "5:50",
+     "**Office tests: urine dipstick for ketones, capillary glucose.**"
     ],
     [
      "6:00",
-     "★ Warning shot: 'Mrs Harding, I'd like to talk to you about what I found when I examined you. I'd rather be straight with you than vague — is that all right? Is there anyone you'd like to have with you?' → ★ 'I found two things. There is a lump in your back passage, and your liver is enlarged — I can feel it below your ribs, which I shouldn't normally be able to do.' [★ pause 2–3 s — do not fill it] → ★ 'I'm concerned that the lump may be a cancer in the bowel, and that the enlarged liver may mean it has spread there. I can't be certain today — I need tests to confirm it — but I don't want to tell you it's nothing when I'm worried that it isn't.' · 'but I feel fine, no weight loss' → 'that's true, and it's a good thing — but those symptoms don't always appear early; what I can feel on examination matters more than what the symptoms have shown so far' · 'are you sure?' → 'no, not yet — I'm sure of what I felt, and that it needs investigating quickly' · ★ 'how long have I got?' → 'I genuinely can't answer that, and I'd be doing you a disservice if I guessed — we don't yet know what it is, how big, or whether it has spread; once we have the camera test and the scan the specialist team can talk to you properly'"
+     "**WARNING SHOT, 'IS THERE ANYONE YOU'D LIKE WITH YOU?', THE TWO FINDINGS — then PAUSE.**"
     ],
     [
-     "7:00",
-     "Plan: urgent colonoscopy with biopsy · CT chest/abdomen/pelvis · bloods today (FBE, iron, UEC, LFT, coags, CEA baseline) · ★ 'I'll do the referral this afternoon and ring you myself with the appointment' · DDx honestly: inflammation of the bowel, reduced blood supply, infection, a liver problem itself — 'the tests will sort them out; I'm telling you my main concern because I think you'd want to know' · ★ stop the Gastro-Stop · ★ safety-net: 'very painful or bloated tummy, vomiting, stop passing wind, or blood → sooner or ED' · review in a few days regardless · Cancer Council 13 11 20 — support and transport to Adelaide (PATS) · 'what questions do you have?'"
+     "6:40",
+     "**THE CONCERN — 'may be a cancer… may have spread… I can't be certain today' — then THE CONCRETE NEXT STEP AND 'I'LL RING YOU MYSELF.'**"
+    ],
+    [
+     "7:20",
+     "**The alternatives, briefly and AFTER the concern.** Then **'I know that's a great deal to take in. WHAT QUESTIONS DO YOU HAVE?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'It's getting worse despite treatment, so we need to find the cause rather than keep treating the symptom.' / ★ 'Do you ever feel you haven't fully emptied, or that you need to go and nothing comes?' / ★ 'There are some questions I ask everybody with a change in their bowels.' / ★ 'Before this, had your bowels changed at all — more often, less often, a different shape?' / ★ 'Have you done the bowel screening test that comes in the post?'",
-    "★ To examiner: 'I would like to perform a digital rectal examination, with the patient's consent and with a chaperone present.' / ★ 'Is that liver edge smooth, or irregular and nodular? Is it tender? Is it pulsatile?' / ★ 'How far from the anal verge? Is it mobile or fixed to surrounding tissue? What proportion of the circumference? Is there blood on the glove?'",
-    "★ 'Mrs Harding, I'd like to talk to you about what I found when I examined you. I'd rather be straight with you than vague. Is that all right? Is there anyone you'd like to have with you?' / ★ 'I found two things. There is a lump in your back passage, and your liver is enlarged.' [pause] / ★ 'I'm concerned that the lump may be a cancer in the bowel, and that the enlarged liver may mean it has spread there. I can't be certain today — I need tests to confirm it — but I don't want to tell you it's nothing when I'm worried that it isn't.'",
-    "'But I haven't lost any weight' → ★ 'That's true, and it's a good thing. But those symptoms don't always appear early. What I can feel on examination is more important than what the symptoms have shown so far, and that's why I'm not letting it go.' / 'How long have I got?' → ★ 'I genuinely can't answer that, and I'd be doing you a disservice if I guessed. We don't yet know what it is, how big it is, or whether it has spread. Once we have the camera test and the scan, the specialist team will be able to talk to you properly about treatment. What I can tell you is that this is being taken seriously and it's being done quickly.'",
-    "'I'm going to arrange an urgent camera test of the bowel — a colonoscopy — and a CT scan of your chest, tummy and pelvis. Bloods today. I'll do the referral this afternoon and I'll ring you myself with the appointment. Please stop the Gastro-Stop. Come back sooner, or go to the emergency department, if your tummy becomes very painful or bloated, if you start vomiting, if you stop passing wind, or if you see blood.'",
-    "Examiner challenges: 'every red flag negative — still cancer?' → 'Yes. The examination findings outrank a negative symptom history — a palpable rectal mass with an irregular enlarged liver is metastatic colorectal cancer until proven otherwise; the absence of weight loss and bleeding means the disease has not yet produced those symptoms.' / 'could it be ovarian?' → 'an ovarian mass is felt in the iliac fossa or on bimanual examination, not within the rectum — staging CT would identify an ovarian primary if present.' / 'hepatomegaly unrelated?' → 'possibly — fatty liver, alcohol, right heart failure — but irregular and non-tender favours metastases; characterise on CT/MRI rather than assume.' / 'CEA to diagnose?' → 'No — not sensitive or specific; a baseline for monitoring. Diagnosis is colonoscopy and biopsy.' / obstruction variant (swollen, no wind since yesterday) → distension, bowel sounds, empty ballooned rectum; ED today, NBM, IV, surgical registrar, MedSTAR if deteriorating"
-   ],
    "pefe": [
-    "Role-player: Margaret Harding, 67, retired school administrator, Moonta, husband, two children in Adelaide; perindopril; Gastro-Stop 10 days; glass of wine most nights. Brisk, pleasant, mildly impatient about the ineffective tablets; not worried — assumes a bug, wants something stronger; 'granddaughter's wedding in three weeks' if asked concerns; sheepish about the unreturned kit. Gives nothing unasked; every red flag negative. At the diagnosis: goes quiet, flat, disbelieving — 'but I feel fine, I haven't lost any weight', then 'are you sure?', then 'how long have I got?' (a prognosis or timeframe is marked down)",
-    "PEFE: looks well; mucous membranes slightly dry; no pallor/jaundice; obs normal, no postural drop; thyroid and nodes normal; abdomen soft, non-tender; ★ hepatomegaly 4 cm below costal margin — irregular, non-tender, no splenomegaly, no ascites; bowel sounds normal; groins normal; ★ DRE (only if requested): firm mass ~6 cm from the verge, fixed, ~half the circumference, blood on the glove. Release with consent/chaperone mark only if said aloud",
-    "Rectal cancer: tenesmus, altered habit (diarrhoea/overflow), bleeding, mass on DRE (~half of rectal cancers palpable); liver is the commonest metastatic site (irregular, hard, non-tender hepatomegaly). Work-up: colonoscopy + biopsy (Category 1, ~30 days VERIFY), CT chest/abdo/pelvis, MRI rectum (local staging), MRI liver, FBE/iron/UEC/LFT/coags/CEA baseline; MDT — neoadjuvant chemoradiation for rectal cancer, resection ± liver metastasectomy in selected cases; stoma counselling; Cancer Council SA 13 11 20; PATS for travel to Adelaide; the wedding — honest that timing is uncertain",
-    "Screening: iFOBT 2-yearly 45–74 average risk; moderate risk colonoscopy 5-yearly from 10 y before earliest FHx diagnosis or 50 VERIFY · loperamide stopped — masking, obstruction risk with a stenosing lesion · MedSTAR 1300 13 12 33 if obstruction from a rural site · TIS 131 450",
-    "Consent — The rectal finding is released only if consent and a chaperone are said aloud"
+    "**The examination request and follow-ups: GENERAL APPEARANCE — dehydration, pallor, jaundice, CACHEXIA · VITALS WITH POSTURAL BP · THYROID AND CERVICAL/SUPRACLAVICULAR NODES · ABDOMEN — inspection, palpation, masses, organomegaly; PERCUSS THE LIVER SPAN AND SHIFTING DULLNESS · INGUINAL HERNIAS AND NODES · DIGITAL RECTAL EXAMINATION WITH CONSENT AND CHAPERONE · urine dipstick, capillary glucose.**",
+    "**Do now: FBC — IRON DEFICIENCY ANAEMIA · IRON STUDIES, UEC · LFTs — ALP AND GGT RISE FIRST WITH LIVER METASTASES · COAGULATION, GROUP AND HOLD · CEA — A BASELINE FOR MONITORING, NOT A DIAGNOSTIC TEST · STOOL MCS AND PCR — the cancer does not excuse you from excluding a coexisting infection · STOP THE LOPERAMIDE.**",
+    "**Do next: URGENT COLONOSCOPY WITH BIOPSY — the diagnostic test · CT CHEST, ABDOMEN AND PELVIS WITH CONTRAST — staging; liver metastases appear as MULTIPLE LOW-DENSITY DEPOSITS · MRI LIVER to characterise, MRI RECTUM for local staging · PET-CT if resection of metastases is considered · COLORECTAL MDT.**",
+    "**Do not miss: LARGE BOWEL OBSTRUCTION — distension, obstipation, vomiting, absent flatus · PERFORATION · SYMPTOMATIC ANAEMIA — dyspnoea, angina, syncope · HYPERCALCAEMIA OF MALIGNANCY · A COEXISTING TREATABLE CAUSE OF THE DIARRHOEA.**",
+    "**Avoid: CONTINUING LOPERAMIDE IN AN UNDIAGNOSED CHANGE OF BOWEL HABIT · PROMISING A PROGNOSIS, STAGE OR TREATMENT PLAN · SAYING 'CANCER' AND LEAVING WITHOUT A CONCRETE NEXT STEP AND FOLLOW-UP · DIAGNOSING AN OVARIAN MASS FROM A RECTAL FINDING · 'hepatomegaly, thank you' with no characterisation.**",
+    "**Screening numbers: iFOBT EVERY 2 YEARS FROM 45 TO 74 at average risk; moderate risk — COLONOSCOPY EVERY 5 YEARS FROM 10 YEARS BEFORE THE EARLIEST FAMILY DIAGNOSIS OR AGE 50, WHICHEVER IS EARLIER. A declined or never-returned kit is a meaningful finding at 67.** VERIFY.",
+    "**SA: Yorke and Northern LHN surgical service or RAH, TQEH or Lyell McEwin; URGENT CATEGORY 1; PATS; Country Health Connect; colorectal MDT participates by telehealth; CANCER COUNCIL SA 13 11 20 for support and transport; ACCHS and Aboriginal Liaison Officer where relevant; MedSTAR 1300 13 12 33 or RFDS for obstruction or perforation.**"
    ],
-   "fails": [
-    "Skipping the red-flag block because the history is two weeks; hearing 'Gastro-Stop isn't working' as a minor detail",
-    "★ Stopping the abdominal examination at palpation — no DRE requested; consent and chaperone not said aloud; accepting 'hepatomegaly' and 'a mass' without characterising them",
-    "Explaining a big liver with no cause; a benign label ('a bug') after negative red flags",
-    "No warning shot; filling the silence; false certainty ('you have cancer') or false reassurance; ★ giving a prognosis or stage",
-    "No concrete plan/referral today/follow-up call; not stopping loperamide; no obstruction safety-net; not offering support (Cancer Council, someone with her)"
-   ],
-   "numbers": [
-    "History ~4 min · red flags 2:10 · hands off 3:50 · PEFE 4:00 · explain 6:00 · liver 4 cm, irregular, non-tender · rectal mass ~6 cm from verge, fixed, half circumference, blood on glove",
-    "Category 1 colonoscopy ~30 d VERIFY · CT C/A/P · MRI rectum + liver · CEA baseline only · iFOBT 45–74 2-yearly · moderate risk colonoscopy 5-yearly VERIFY",
-    "Cancer Council SA 13 11 20 · PATS · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Colorectal cancer with liver metastases** — the diagnosis",
+     "**Age 67; NEW change in bowel habit; RECTAL MASS; HEPATOMEGALY; worse despite loperamide**",
+     "**Every red flag; screening history; LIVER AND RECTAL FOLLOW-UPS**",
+     "**Urgent colonoscopy with biopsy; CT CAP staging** — urgent"
+    ],
+    [
+     "**Colorectal cancer with overflow diarrhoea**",
+     "**Obstructing tumour with liquid stool leaking past it; PRECEDING CONSTIPATION**",
+     "**'Were you constipated before this?'; distension, obstipation**",
+     "**AXR if obstruction suspected; same pathway** — urgent"
+    ],
+    [
+     "**Inflammatory bowel disease — not to miss**",
+     "Blood and mucus, nocturnal, extra-intestinal features",
+     "**A SECOND PEAK OCCURS IN LATER LIFE**",
+     "Faecal calprotectin, CRP, colonoscopy — same week"
+    ],
+    [
+     "**Ischaemic colitis — not to miss**",
+     "**Older patient, vascular risk factors, sudden lower abdominal pain with BLOODY diarrhoea**",
+     "**AF, peripheral vascular disease, a hypotensive episode**",
+     "CT abdomen; surgical team — urgent"
+    ],
+    [
+     "Infective colitis · C. difficile",
+     "Fever, contacts, travel; **recent antibiotic or healthcare exposure**",
+     "**All negative in this stem — SAY SO**; always ask about antibiotics",
+     "Stool MCS and PCR; toxin PCR"
+    ],
+    [
+     "**Medication-related — including HER OWN LOPERAMIDE**",
+     "**Metformin, PPIs, NSAIDs, magnesium, laxatives; loperamide causing PARADOXICAL OVERFLOW**",
+     "**Full list including over-the-counter and supermarket products**",
+     "**Rationalise; STOP THE LOPERAMIDE**"
+    ],
+    [
+     "Hyperthyroidism",
+     "Weight loss with preserved appetite; heat intolerance; palpitations",
+     "**A genuine alternative explanation for weight loss**",
+     "TSH, free T4"
+    ],
+    [
+     "**Other malignancy with hepatomegaly**",
+     "Ovarian, pancreatic, gastric, lung primary; lymphoma",
+     "**AN OVARIAN MASS IS FELT IN THE ILIAC FOSSA, NOT THE RECTUM**",
+     "CT CAP; tumour markers — urgent"
+    ],
+    [
+     "**Benign hepatomegaly**",
+     "**Fatty liver, ALCOHOL, right heart failure, haemochromatosis**",
+     "**SMOOTH, TENDER edge; alcohol and cardiac history; stigmata**",
+     "LFTs, ultrasound — **hepatomegaly is not always metastatic**"
+    ],
+    [
+     "**Faecal impaction with overflow**",
+     "**Older patient, constipation before, small frequent leaks, opioids**",
+     "**RECTAL EXAMINATION DISTINGUISHES A LOADED RECTUM FROM TUMOUR**",
+     "Examination; AXR — same day"
+    ]
    ]
   },
   "source": "04_Colorectal_Cancer_Liver_Mets_2_Case_Tasks_Script_Notability.pdf (Margaret Harding, 67, two weeks of diarrhoea worsening on loperamide with every red flag negative — rectal mass and irregular hepatomegaly, colorectal cancer with liver metastases)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Lower GI › 04_Colorectal_Cancer_Liver_Mets_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Looks well; mucous membranes SLIGHTLY DRY; no pallor or jaundice"
-   ],
-   [
-    "Observations",
-    "Normal, NO postural drop"
-   ],
-   [
-    "Thyroid and nodes",
-    "Normal"
-   ],
-   [
-    "Abdomen",
-    "Soft and non-tender"
-   ],
-   [
-    "Liver",
-    "HEPATOMEGALY 4 cm BELOW THE COSTAL MARGIN — IRREGULAR, NON-TENDER; no splenomegaly, no ascites"
-   ],
-   [
-    "Bowel sounds and groins",
-    "Normal"
-   ],
-   [
-    "RECTAL EXAMINATION (only if requested)",
-    "A firm mass about 6 cm from the verge, fixed, occupying about half the circumference, with blood on the glove"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Stopping the abdominal examination at palpation with no digital rectal examination requested — you get hepatomegaly alone and spend the explanation talking about a big liver with no idea what caused it; the rectal mass is released only if a DRE is requested, and consent and chaperone must be said aloud ('I would like to perform a digital rectal examination, with the patient's consent and with a chaperone present') (★)",
-   "FAIL — Skipping the red-flag block because the history is only two weeks — every recall of this case is silent on the red-flag answers, which strongly suggests the candidates never asked; every one is negative and she gives no prompt ('honestly, I just want it to stop — my granddaughter's wedding is in three weeks'); ask them out loud: weight quantified, appetite, lumps, tiredness, blood or black stools, habit change before this, family history with age, 'have you done the bowel screening kit?' (a year ago, never sent back) (★)",
-   "FAIL — Giving a prognosis or a timeframe — 'how long have I got?' → 'I genuinely can't answer that, and I'd be doing you a disservice if I guessed; we don't yet know what it is, how big, or whether it has spread; once we have the camera test and the scan the specialists will talk to you properly'; a stage or a timeframe goes beyond what you can know and is marked down (★)",
-   "DO — Hear 'Gastro-Stop isn't working' as the hinge ('getting worse despite treatment tells me we need to find the cause rather than keep treating the symptom'); the pain characterised and tenesmus asked ('do you ever feel you haven't fully emptied?'); the remaining blocks at speed; hands off the history at four minutes",
-   "DO — Pursue both findings, don't accept them: 'is the liver edge smooth or irregular and nodular? tender? pulsatile?' (irregular, non-tender) and 'how far from the anal verge? fixed or mobile? what proportion of the circumference? blood on the glove?' (six centimetres, fixed, half, blood); the seven examination steps by name incl. supraclavicular nodes, liver span, shifting dullness, groins, dipstick",
-   "SAY — Warning shot ('I'd rather be straight with you than vague — is that all right? is there anyone you'd like with you?'), the two findings, then a two-to-three-second pause you do not fill, then 'I'm concerned the lump may be a cancer in the bowel, and that the enlarged liver may mean it has spread there; I can't be certain today — but I don't want to tell you it's nothing when I'm worried that it isn't'; 'but I feel fine, I haven't lost weight' → 'those symptoms don't always come early; what I can feel matters more than what the symptoms have shown so far'; plan — urgent colonoscopy with biopsy, CT chest, abdomen and pelvis, FBE, iron, LFTs, 'I'll do the referral this afternoon and ring you myself'; differentials named (IBD, ischaemia, infection, a primary liver problem); stop the Gastro-Stop; obstruction safety-net (pain, bloating, vomiting, no wind); Cancer Council 13 11 20; CEA is a baseline, not a diagnostic test; to the examiner — examination findings outrank a negative symptom history"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-143",
