@@ -26637,9 +26637,8 @@
  {
   "id": "MED-103",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version A of the recurrent-falls spine (reconstructed stem from the older-person Part 2 §7 — patient name reconstructed). Examiner findings: bilateral distal sensory loss with loss of proprioception, glucose normal, no postural drop. The alcohol hits three systems plus sedation — name all of them.",
   "stem": [
    "A 70-year-old man has come to see you about three falls over recent months; on one occasion he struck his head and was taken to hospital. Observations are normal."
   ],
@@ -26648,105 +26647,211 @@
    "Ask the examiner for the relevant examination findings",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Same spine as MED-102: WIPE · concern · ★ LOC/seizure screen · describe each fall, ★ head strike → hospital, imaging, anticoagulants, headache/confusion since · injury, long lie · organic screen → ★ 'numbness in both legs' · ★ meals → one meal a day · PMHx ×4 · six domains → ★ ALCOHOL: 'how much, how often' → a bottle of wine every night, always has · family interstate, no help · geriatric screen → PEFE (postural BP, glucose, ★ LL sensation and proprioception, Romberg, cerebellar, gait, head/scalp) → four numbered causes → thiamine, bloods, safe reduction, meals and company.",
+  "findings": [
+   [
+    "The examination card",
+    "SENSORY LOSS IN BOTH LEGS, and in one recall LOSS OF PROPRIOCEPTION · GLUCOSE NORMAL · NO POSTURAL DROP. Everything else normal. THE NORMAL GLUCOSE DOES NOT EXCLUDE AN OVERNIGHT DROP ON ONE MEAL A DAY"
+   ],
+   [
+    "THE FOUR ANSWERS THAT CHANGE THE CASE",
+    "'I HAVE NUMBNESS IN BOTH LEGS' · 'ONE TIME I HIT MY HEAD AND THEY TOOK ME TO HOSPITAL' · 'I HAVE A FULL BOTTLE OF WINE EVERY NIGHT, ALWAYS HAVE' · 'I ONLY EAT ONE MEAL A DAY — I CAN'T BE BOTHERED COOKING AND THERE'S NO ONE TO HELP.' Plus 'MY FAMILY ARE ALL INTERSTATE'"
+   ],
+   [
+    "THE HEAD STRIKE IS NOT A DETAIL",
+    "HE WAS TAKEN TO HOSPITAL. ASK: ANY ANTICOAGULANTS OR ANTIPLATELETS · WAS HE IMAGED · ANY ONGOING HEADACHE, DROWSINESS OR CHANGE IN THINKING SINCE. SUBDURAL HAEMATOMA IN AN OLDER PERSON CAN FOLLOW A TRIVIAL STRIKE WEEKS EARLIER"
+   ],
+   [
+    "QUANTIFY, THEN CONVERT OUT LOUD",
+    "A 750 mL BOTTLE OF WINE IS SEVEN TO EIGHT STANDARD DRINKS. NHMRC GUIDANCE IS NO MORE THAN TEN IN A WHOLE WEEK AND FOUR IN ANY ONE DAY. 'Do you drink?' — 'yes' — AND MOVING ON IS A FAIL"
+   ],
+   [
+    "ALCOHOL HITS THREE SYSTEMS, PLUS SEDATION",
+    "NERVES → ALCOHOLIC SENSORY NEUROPATHY, and when you CANNOT FEEL THE GROUND YOU FALL. CEREBELLUM → ALCOHOLIC CEREBELLAR DEGENERATION, which affects the VERMIS SO GAIT IS AFFECTED MORE THAN LIMBS. NUTRITION → hypoglycaemia and deficiency. AND THE DROWSINESS AT NIGHT ON TOP"
+   ],
+   [
+    "THE SOCIAL SCREEN IS WHERE THIS VERSION IS WON",
+    "LIVES ALONE · FAMILY FAR AWAY · ONE MEAL A DAY. Cutting the social screen for time loses the missed meals IN CONTEXT, the fear of falling, and the driving question"
+   ],
+   [
+    "ADDED — the two screens this version needs",
+    "ELDER ABUSE OR NEGLECT, where isolation appears: 'DO YOU FEEL SAFE AT HOME? IS ANYONE MANAGING YOUR MONEY OR MEDICINES FOR YOU?' And a MOOD AND SAFETY question — a recently bereaved man living alone, drinking a bottle a night, barely eating"
+   ],
+   [
+    "What the examiner is listening for on the neurology",
+    "GLOVE-AND-STOCKING SENSORY LOSS · ABSENT ANKLE JERKS · IMPAIRED VIBRATION AND PROPRIOCEPTION · A POSITIVE ROMBERG, WHICH MEANS SENSORY ATAXIA AND SENDS YOU TO B12 · WIDE-BASED GAIT AND HEEL–SHIN DYSMETRIA for the cerebellar component"
+   ],
+   [
+    "THE TONE THE STATION IS MARKING",
+    "'I'M NOT HERE TO LECTURE YOU, BUT I DO NEED TO BE STRAIGHT WITH YOU, BECAUSE IT EXPLAINS THREE OF THE FOUR THINGS I'VE FOUND.' NAME EVERY MECHANISM WITHOUT SHAMING HIM"
+   ],
+   [
+    "TWO THINGS YOU MUST NOT DO",
+    "DO NOT ADVISE ABRUPT CESSATION — STOPPING SUDDENLY ON THAT AMOUNT CAN BE DANGEROUS. And GIVE THIAMINE BEFORE ANY GLUCOSE"
+   ]
+  ],
+  "findingsLabel": "Version A — the four answers that change the case, and the head strike behind them",
+  "must": [
+   "FAIL — Naming the neuropathy and stopping. Alcohol here hits three systems plus sedation.",
+   "FAIL — Not quantifying the alcohol, or never converting it to standard drinks.",
+   "FAIL — Missing the head strike follow-up: anticoagulants, imaging, ongoing symptoms.",
+   "FAIL — Advising abrupt cessation, or giving glucose before thiamine.",
+   "ASK — How much do you drink, and how often?",
+   "ASK — Did you hurt yourself? Were you on the floor a while?"
+  ],
   "back": {
-   "dx": "Alcohol-related multifactorial falls: (1) alcoholic peripheral neuropathy — numbness and loss of proprioception in both legs ('when you can't feel the ground, you fall'); (2) cerebellar degeneration — unsteady gait; (3) nutrition — one meal a day, nocturnal hypoglycaemia risk; (4) sedation from the alcohol itself at night. Plus social isolation (family interstate, no one to help cook). Glucose normal today and no postural drop do not exonerate — the history carries it. Head strike with hospital attendance: establish imaging, anticoagulation, symptoms since (subdural). Do not lecture; be straight; do NOT advise abrupt cessation; thiamine BEFORE any glucose.",
+   "dx": [
+    "**MULTIFACTORIAL RECURRENT FALLS, ALCOHOL-DRIVEN. Name FOUR causes: ALCOHOLIC SENSORY NEUROPATHY · ALCOHOLIC CEREBELLAR DEGENERATION · HYPOGLYCAEMIA FROM ONE MEAL A DAY · AND NOCTURNAL SEDATION FROM THE ALCOHOL ITSELF.** Plus **the unsafe home and absent supports underneath all of them.**",
+    "**THE DISCRIMINATING ISSUE: LINKING THE ALCOHOL TO THREE SEPARATE MECHANISMS, NOT ONE — AND DOING IT WITHOUT SHAMING HIM.** **Naming the neuropathy and stopping there is the commonest way to lose this version.**",
+    "**THE SCRIPT: 'a bottle of wine is AROUND SEVEN OR EIGHT STANDARD DRINKS — the national guidance is NO MORE THAN TEN IN A WHOLE WEEK. I'm not here to lecture you, but I do need to be straight with you, BECAUSE IT EXPLAINS THREE OF THE FOUR THINGS I'VE FOUND.'**",
+    "**ONE: 'the NUMBNESS AND LOSS OF FEELING IN YOUR LEGS comes from DAMAGE TO THE NERVES — alcoholic neuropathy. WHEN YOU CAN'T FEEL THE GROUND PROPERLY, YOU FALL.' TWO: 'alcohol also affects THE BALANCE CENTRE AT THE BACK OF THE BRAIN — cerebellar degeneration — and it makes you UNSTEADY ON YOUR FEET.' THREE: 'you're eating ONE MEAL A DAY, so your BLOOD SUGAR CAN DROP LOW OVERNIGHT.' FOUR: 'the alcohol itself MAKES YOU DROWSY AT NIGHT, which adds to all of it.'**",
+    "**THE HEAD STRIKE NEEDS ITS OWN THREE QUESTIONS: WAS HE ON AN ANTICOAGULANT OR ANTIPLATELET · WAS HE IMAGED AT THE TIME · ANY ONGOING HEADACHE, DROWSINESS, GAIT DETERIORATION OR COGNITIVE CHANGE SINCE.** **A SUBDURAL HAEMATOMA IN AN OLDER PERSON FOLLOWS A TRIVIAL STRIKE, OFTEN WEEKS EARLIER, AND THE THRESHOLD FOR A CT HEAD IS LOW.**",
+    "**THE PROPRIOCEPTIVE VERSION OF THE CARD MATTERS: LOSS OF PROPRIOCEPTION WITH A POSITIVE ROMBERG IS SENSORY ATAXIA — DORSAL COLUMN OR LARGE-FIBRE NEUROPATHY — AND IT SENDS YOU TO B12 AS WELL AS ALCOHOL. Say both.**",
+    "**TREATMENT SEQUENCE THAT MUST NOT BE REVERSED: THIAMINE BEFORE GLUCOSE IN ANY HEAVY DRINKER. THIAMINE 100 mg ORALLY DAILY FOR PREVENTION; PARENTERAL THIAMINE AND URGENT REFERRAL IF WERNICKE ENCEPHALOPATHY IS SUSPECTED.** VERIFY.",
+    "**DO NOT ADVISE STOPPING SUDDENLY — STOPPING ABRUPTLY ON THAT INTAKE CAN BE DANGEROUS. Offer a PLANNED WITHDRAWAL: 'I'd like to talk about CUTTING DOWN SAFELY, because stopping suddenly on that amount can be dangerous.'** **BRIEF INTERVENTION USING THE 5 As; Drug and Alcohol Services SA; dietitian; LFTs.**",
+    "**THE SOCIAL LAYER IS PART OF THE DIAGNOSIS, NOT A COURTESY: 'I'd also like to arrange SOME HELP WITH MEALS AND SOME COMPANY, BECAUSE DOING THIS ALONE IS MAKING EVERYTHING HARDER.'** **MY AGED CARE 1800 200 422 for meals, personal care and social support; consider a PERSONAL ALARM for someone living alone.**",
+    "**FRAME IT AS ALWAYS: 'falls at your age ALMOST NEVER COME FROM ONE SINGLE THING — they're several small things STACKING UP, and that's GOOD NEWS, BECAUSE EACH ONE IS SOMETHING WE CAN DO SOMETHING ABOUT. I'VE FOUND FOUR.'** Then **each cause in plain English, the medical name once, and the link to the falls.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, acknowledge, signpost the long list · concern (brother's stroke / losing independence)"
+     "**Say the observations out loud, WIPE, open question.** Then **acknowledge, SIGNPOST THE LONG LIST, and ask the agenda question: 'was there anything in particular you were worried this might be?'**"
     ],
     [
      "0:45",
-     "★ LOC, remember the floor, shake/tongue/wet → falls, not faints · number and timeline · ★ 'talk me through each' · ★ the head strike: taken to hospital, scan, told anything, on any blood thinner, headache/vagueness/drowsiness since · injury, long lie"
+     "**FALL OR FAINT, SECOND ALWAYS: did you BLACK OUT, EVEN FOR A SECOND · do you REMEMBER HITTING THE FLOOR · any SHAKING OR JERKING, TONGUE BITING, WETTING YOURSELF?**"
+    ],
+    [
+     "1:10",
+     "**CHARACTERISE: HOW MANY AND WHEN DID THEY START · TALK ME THROUGH EACH ONE, what were you doing · any WARNING · DID YOU HURT YOURSELF IN ANY OF THEM · COULD YOU GET YOURSELF UP, OR WERE YOU ON THE FLOOR A WHILE?**"
+    ],
+    [
+     "1:40",
+     "**CHASE THE HEAD STRIKE PROPERLY: were you ON ANY BLOOD THINNERS AT THE TIME · DID THEY SCAN YOUR HEAD · ANY HEADACHE, DROWSINESS OR TROUBLE THINKING SINCE THEN · has your WALKING GOT WORSE since?**"
     ],
     [
      "2:00",
-     "Organic screen → ★ 'numbness in both legs' (note, keep going) · weakness, speech, vision, vertigo · CVS · GI, melaena · ★ 'eating regularly?' → one meal a day, 'can't be bothered cooking, no one to help'"
+     "**ORGANIC SCREEN, rapid: NUMBNESS OR PINS AND NEEDLES IN YOUR LEGS · weakness · slurred speech · trouble with vision · headache · any SPINNING · chest pain, palpitations, breathlessness · vomiting, diarrhoea, BLACK OR BLOODY MOTIONS · ARE YOU EATING REGULARLY, OR SKIPPING MEALS?**"
     ],
     [
-     "2:45",
-     "PMHx ×4 · meds incl sleep/pain/OTC · allergies"
+     "2:40",
+     "**When the numbness comes, CHASE THE CAUSE rather than recording it: how long, BOTH LEGS, how far up, any WEAKNESS with it — and then ALCOHOL, DIABETES AND B12 as the three causes you are thinking of.**"
     ],
     [
-     "3:15",
-     "Six domains: home/lighting · urinary · MSK/feet · eyes/ears · ★ ALCOHOL — 'do you drink, how much, how often?' → full bottle of wine nightly 'always have' · quantify: 'a bottle is about seven or eight standard drinks; the national guidance is no more than ten in a whole week' · smoking, drugs"
+     "3:00",
+     "**PAST HISTORY, the four questions for anything he names, then MEDICATIONS INCLUDING ANYTHING FOR SLEEP, FOR PAIN, OR FROM THE CHEMIST, and allergies.**"
+    ],
+    [
+     "3:20",
+     "**THE SIX RISK DOMAINS IN ORDER. HOME: rugs, cords, steps, LIGHTING AT NIGHT, where's the toilet. URINARY: frequency, urgency, nocturia, burning. MSK: joint pain, stiffness, balance, feet, WHAT SHOES INDOORS. SENSES: eyes and hearing last checked, BIFOCALS.**"
+    ],
+    [
+     "3:50",
+     "**DRUGS, then ALCOHOL — AND QUANTIFY: 'do you drink? HOW MUCH, AND HOW OFTEN?'** Then **CAGE if the intake is heavy, and CONVERT IT OUT LOUD: 'that's around seven or eight standard drinks a night.'**"
     ],
     [
      "4:15",
-     "Social: ★ 'who's at home, who helps?' → family all interstate · ADLs, memory, mood, weight, driving, fear of falling"
+     "**GERIATRIC AND SOCIAL SCREEN — WHERE THIS VERSION IS WON: WHO'S AT HOME · who helps if you need it · DESCRIBE A TYPICAL DAY'S MEALS · managing showering, dressing, shopping, cooking, money and medicines · any MEMORY trouble · HOW HAS YOUR MOOD BEEN · weight loss · STILL DRIVING · HAVE THE FALLS MADE YOU AFRAID TO MOVE ABOUT?**"
+    ],
+    [
+     "4:50",
+     "**Where isolation and neglect appear, add the two screens: DO YOU FEEL SAFE AT HOME, IS ANYONE MANAGING YOUR MONEY OR MEDICINES FOR YOU · and a MOOD AND SAFETY question.**"
     ],
     [
      "5:00",
-     "PEFE: appearance, nutrition, bruising, scalp · gait, TUG, Romberg, heel–shin, tandem · lying/standing BP · glucose · ★ LL sensation incl vibration and proprioception, reflexes, power · CN, fundi, acuity · CVS, resp · abdomen (liver) · dipstick, ECG → sensory loss + proprioception loss both legs; glucose normal; no postural drop"
+     "**ASK THE EXAMINER IN ORDER: general appearance, hydration, BRUISING OR EVIDENCE OF INJURY · GAIT AND TIMED UP AND GO · vitals with LYING AND STANDING BP AT ONE AND THREE MINUTES and PULSE RHYTHM · BEDSIDE GLUCOSE.**"
     ],
     [
-     "6:30",
-     "★ 'There are four things going on, and I need to be straight with you because the alcohol explains three of them': neuropathy → cerebellar degeneration → nutrition/overnight sugar → sedation · plan: thiamine today, bloods (FBE, MCV, LFT, GGT, UEC, Mg, B12, folate, glucose/HbA1c), ★ 'cutting down safely — stopping suddenly on that amount can be dangerous', meals and company (My Aged Care, Meals on Wheels, social work), OT home visit, physio balance, hip protectors/alarm · CT head if not already done post-strike · driving · review · red flags"
+     "5:30",
+     "**Then LOWER LIMB NEUROLOGY — tone, power, reflexes, SENSATION INCLUDING VIBRATION AND PROPRIOCEPTION, and CEREBELLAR SIGNS WITH ROMBERG, HEEL–SHIN AND TANDEM WALKING · visual acuity and fundoscopy · cardiovascular for a MURMUR OF AORTIC STENOSIS · lower limb joints and FOOTWEAR · abdomen and urine dipstick.**"
+    ],
+    [
+     "6:00",
+     "**THE FRAME, THEN FOUR NUMBERED CAUSES — nerves, cerebellum, sugar, sedation — each in plain English with the link to the falls, pausing to check he is following.**"
+    ],
+    [
+     "6:50",
+     "**ANSWER HIS CONCERN DIRECTLY, then the differentials you are still checking: heart rhythm, B12 and diabetes as other causes of the leg numbness, low salt levels, anaemia, AND THE POSSIBILITY OF A SLOW BLEED AFTER THE HEAD INJURY.**"
+    ],
+    [
+     "7:20",
+     "**THE PLAN: THIAMINE TODAY, BLOODS, ECG · CUTTING DOWN SAFELY RATHER THAN STOPPING SUDDENLY · MEALS AND COMPANY THROUGH MY AGED CARE · OT home assessment with LIGHTING · podiatry and safe footwear.** Then **RED FLAGS, A REVIEW DATE, AND TEACH-BACK: 'can you tell me back the two things you'll change this week?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'When you went down, did you black out at any point, even for a second?' / 'You hit your head that time — did they scan your head at the hospital? Are you on any blood thinners? Any headache, vagueness or drowsiness since?'",
-    "★ 'Do you drink alcohol — and how much, and how often?' / 'A bottle of wine is around seven or eight standard drinks — the national guidance is no more than ten in a whole week.'",
-    "'Are you eating regularly?' / 'Who's at home with you, and who helps if you need a hand?'",
-    "★ To examiner: 'lower limb sensation including vibration and proprioception, Romberg, heel–shin and tandem gait, and the lying and standing blood pressure and a glucose.'",
-    "★ 'I'm not here to lecture you, but I do need to be straight with you, because the alcohol explains three of the four things I've found. One: the numbness and loss of feeling in your legs comes from damage to the nerves — when you can't feel the ground properly, you fall. Two: alcohol also affects the balance centre at the back of the brain, and that makes you unsteady. Three: you're eating one meal a day, so your blood sugar can drop overnight. And four: the alcohol itself makes you drowsy at night.'",
-    "★ 'I'd like to start you on vitamin B1 — thiamine — today, do some blood tests, and talk about cutting down safely, because stopping suddenly on that amount can be dangerous.' / 'I'd also like to arrange some help with meals and some company, because doing this alone is making everything harder.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): 70 M, three falls, one head strike → hospital; 'I have numbness in both legs'; 'I have a full bottle of wine every night, always have'; 'I only eat one meal a day — can't be bothered cooking and there's no one to help'; 'my family are all interstate'. Examiner: bilateral sensory loss + loss of proprioception, glucose normal, no postural drop",
-    "Alcohol falls mechanisms: peripheral neuropathy (sensory ataxia — Romberg +ve) · cerebellar degeneration (gait/truncal ataxia, heel–shin) · malnutrition/hypoglycaemia · sedation/impaired reaction · also hyponatraemia, subdural (head strike + coagulopathy), withdrawal seizures, Wernicke's. Bloods: FBE (macrocytosis), LFT/GGT, UEC/Na/Mg, B12/folate, glucose, INR",
-    "Thiamine 100 mg daily oral (300 mg IV/IM if Wernicke's suspected — confusion, ataxia, ophthalmoplegia) BEFORE glucose VERIFY TG · never abrupt cessation at this intake — supervised reduction / withdrawal management (diazepam-based) VERIFY · AUDIT-C, brief intervention, Drug and Alcohol Services SA / Alcohol and Drug Information Service 1300 13 1340",
-    "Trap: naming the neuropathy and stopping — alcohol hits nerves, cerebellum, nutrition AND sedation. Trap: 'you need to stop drinking' as the plan. Trap: not revisiting the head strike (subdural can declare weeks later)",
-    "SA: My Aged Care 1800 200 422, Meals on Wheels, Country Health Connect OT/social work, DASSA, Motor Vehicles Act notification if unfit to drive"
+    "**Do now: BEDSIDE GLUCOSE — if below 4.0 and conscious, 15 g FAST CARBOHYDRATE and RECHECK AT 15 MINUTES, BUT THIAMINE FIRST IN A HEAVY DRINKER · lying and standing BP at 1 and 3 minutes · AN ECG IN EVERY FALLS PATIENT · INJURY SURVEY including head, hips and wrists · medication review on the spot.**",
+    "**CT HEAD with a low threshold given the earlier head strike — and MANDATORY if he was anticoagulated, or if there is any headache, drowsiness, gait deterioration or cognitive change.**",
+    "**Bloods: FBE, UEC, CALCIUM, MAGNESIUM, PHOSPHATE, LFTs, TSH · VITAMIN B12 AND FOLATE, which the proprioceptive loss makes essential · fasting BGL and HbA1c · vitamin D · DXA, because A FALLER WITH OSTEOPOROSIS IS A HIP FRACTURE WAITING TO HAPPEN.**",
+    "**MRI only if there is diagnostic doubt about the cerebellar signs. A COGNITIVE SCREEN — RUDAS where English is a second language or in Aboriginal and Torres Strait Islander patients.**",
+    "**Alcohol management: BRIEF INTERVENTION USING THE 5 As · THIAMINE 100 mg ORALLY DAILY FOR PREVENTION, PARENTERAL AND URGENT REFERRAL IF WERNICKE IS SUSPECTED · DIETITIAN · LFTs · A PLANNED WITHDRAWAL, NEVER ABRUPT CESSATION · Drug and Alcohol Services SA.** VERIFY.",
+    "**Do not miss: SUBDURAL HAEMATOMA AFTER THE HEAD STRIKE · CARDIAC SYNCOPE, so get an ECG · HYPOGLYCAEMIA, where FOUR IS THE FLOOR · B12 DEFICIENCY behind the proprioceptive loss · OCCULT HIP OR WRIST FRACTURE · ELDER ABUSE OR NEGLECT · OSTEOPOROSIS, because THE FALLS PLAN IS ONLY HALF THE JOB · DEPRESSION in a bereaved man living alone.**",
+    "**Avoid: LECTURING · advising abrupt cessation · GLUCOSE BEFORE THIAMINE · labelling it all 'old age' · reassuring without a plan · discharging without addressing BONE HEALTH AND DRIVING.** **SA and the NT are the jurisdictions where the doctor has a LEGAL DUTY TO REPORT an unfit driver to the Registrar; TELL THE PATIENT BEFORE YOU REPORT.** **Balance-challenging exercise is THE SINGLE BEST-EVIDENCED INTERVENTION.**"
    ],
-   "fails": [
-    "Not establishing LOC; not exploring the head strike (imaging, anticoagulation, symptoms since)",
-    "Accepting 'I drink a bit' without 'how much, how often' — the whole case hides behind quantification",
-    "Naming the neuropathy alone; missing cerebellar, nutrition and sedation as separate numbered causes",
-    "Advising abrupt cessation at a bottle a night; giving glucose before thiamine; moralising instead of being straight",
-    "Skipping the social screen — isolation and no help cooking are the reason for the one meal a day and the lever for the plan"
-   ],
-   "numbers": [
-    "Bottle of wine ≈ 7–8 standard drinks · NHMRC ≤10/week and ≤4/day · thiamine 100 mg daily (300 mg parenteral if Wernicke's) before glucose VERIFY",
-    "Hypoglycaemia <4.0 · postural drop ≥20/≥10 within 3 min (absent here) · Romberg +ve = sensory ataxia",
-    "ADIS 1300 13 1340 · My Aged Care 1800 200 422 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Alcoholic sensory neuropathy**",
+     "**NUMBNESS IN BOTH LEGS with a bottle of wine nightly**",
+     "**GLOVE-AND-STOCKING loss, ABSENT ANKLE JERKS, impaired VIBRATION AND PROPRIOCEPTION**",
+     "**B12 and folate, BGL and HbA1c, LFTs, TFT. Treat the cause; podiatry and a gait aid**"
+    ],
+    [
+     "**Alcoholic cerebellar degeneration**",
+     "**Heavy sustained intake; unsteadiness ON TOP OF the sensory loss**",
+     "**WIDE-BASED GAIT, HEEL–SHIN DYSMETRIA, unable to tandem walk — VERMIS, SO GAIT IS AFFECTED MORE THAN LIMBS**",
+     "Cerebellar signs on examination; **MRI ONLY IF DIAGNOSTIC DOUBT**"
+    ],
+    [
+     "**Hypoglycaemia from one meal a day**",
+     "**ONE MEAL A DAY; alcohol; sweating, tremor, confusion**",
+     "**Bedside BGL — BELOW 4.0 IS DIAGNOSTIC**",
+     "**A NORMAL BGL TODAY DOES NOT EXCLUDE AN OVERNIGHT EPISODE.** Meal support; **THIAMINE BEFORE GLUCOSE** — IMMEDIATE"
+    ],
+    [
+     "**Alcohol sedation at night**",
+     "**Drinking in the evening then getting up in the dark**",
+     "Drowsiness, slowed reactions, timing of the falls",
+     "Brief intervention; **planned reduction, NOT abrupt cessation**"
+    ],
+    [
+     "**Subdural haematoma**",
+     "**A HEAD STRIKE THAT NEEDED HOSPITAL; heavy alcohol use is itself a risk factor**",
+     "**Anticoagulants, imaging at the time, ONGOING HEADACHE, DROWSINESS, GAIT DETERIORATION OR COGNITIVE CHANGE**",
+     "**NON-CONTRAST CT HEAD — LOW THRESHOLD IN THE ELDERLY** — EMERGENCY"
+    ],
+    [
+     "**B12 deficiency**",
+     "**LOSS OF PROPRIOCEPTION WITH A POSITIVE ROMBERG — SENSORY ATAXIA**; poor nutrition",
+     "Dorsal column signs; diet",
+     "**B12 AND FOLATE — say it alongside alcohol, not instead of it**"
+    ],
+    [
+     "Postural hypotension",
+     "Some falls on standing",
+     "**NO POSTURAL DROP ON TODAY'S CARD — but it is INTERMITTENT**",
+     "Lying and standing BP at review; hydration and staged rising"
+    ],
+    [
+     "**Cardiac syncope**",
+     "Fall on exertion, no warning, palpitations, family sudden death",
+     "**Murmur of AORTIC STENOSIS, irregular pulse, abnormal ECG**",
+     "**ECG IN EVERY FALLS PATIENT**; Holter, echocardiogram — EMERGENCY"
+    ],
+    [
+     "**Depression, bereavement and malnutrition**",
+     "**WIFE DIED, LIVES ALONE, FAMILY INTERSTATE, BARELY EATING, DRINKING NIGHTLY**",
+     "**Mood, weight loss, function — AND A SAFE SUICIDE-RISK QUESTION**",
+     "Mental health assessment; dietitian; **MY AGED CARE 1800 200 422** — same day if risk"
+    ],
+    [
+     "**Elder neglect** · home hazards and footwear",
+     "**ISOLATION, no supports, one meal a day**; poor lighting, old slippers",
+     "**'Do you feel safe at home? Is anyone managing your money or medicines?'**; gait, Timed Up and Go",
+     "**OT HOME HAZARD ASSESSMENT, night lighting, rails, podiatry and safe footwear**"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf §7 Version A (70 M, three falls with a head strike, bottle of wine nightly — alcohol neuropathy, cerebellar, nutrition, sedation; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "70-year-old man after three falls, one with a head strike"
-   ],
-   [
-    "Neurological",
-    "Bilateral sensory loss with loss of proprioception — sensory ataxia"
-   ],
-   [
-    "Romberg",
-    "Positive"
-   ],
-   [
-    "Cerebellar signs",
-    "Gait and truncal ataxia, abnormal heel-shin, if a cerebellar picture is being run"
-   ],
-   [
-    "Bloods to ask for",
-    "FBE (MACROCYTOSIS) · LFT and GGT · UEC with sodium and magnesium · B12 and folate · glucose · INR"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never establishing loss of consciousness — an automatic fail; 'when you went down, did you black out, even for a second? do you remember hitting the floor? any shaking, tongue-biting, wetting yourself?' in the first ninety seconds (★)",
-   "FAIL — Not asking about injury, head strike, or a long lie on the floor (★)",
-   "FAIL — Asking 'do you drink?' and accepting a yes — quantify it: 'how much, and how often?' → a full bottle of wine every night, seven or eight standard drinks against a national guide of ten a week; say the number back without a lecture, and ask about meals (one a day) and who helps (family all interstate)",
-   "FAIL — Naming the neuropathy and stopping — alcohol hits three systems plus sedation: 'four things, and I need to be straight with you because the alcohol explains three of them': nerve damage in both legs (alcoholic neuropathy — 'when you can't feel the ground, you fall'), the balance centre at the back of the brain (cerebellar degeneration), low sugar overnight from one meal a day, and the alcohol itself making you drowsy at night",
-   "FAIL — Advising abrupt cessation, or glucose before thiamine — 'stopping suddenly on that amount can be dangerous, so we cut down safely with a plan'; thiamine today, bloods, help with meals and company; the head strike that took him to hospital gets asked about and its imaging confirmed",
-   "DO — PEFE by name: nutrition, bruising, scalp; gait, TUG, Romberg, heel–shin, tandem; lying and standing BP; glucose; lower limb neurology with vibration and proprioception (both lost); ask his concern and answer the stroke question; falls safety at home, review date, red flags"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-104",
