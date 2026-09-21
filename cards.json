@@ -25756,9 +25756,8 @@
  {
   "id": "MED-99",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 300,
-  "setting": "General practice. Vital signs stable (stem) — don't re-ask; ask for ONE thing: a bedside glucose. Version B (2019 recall, current): ECG shows inferior STEMI. Version A (older): ECG normal, hypoglycaemia. Presyncope carries the same differential and risk as syncope — stay on the spine, no falls assessment.",
   "stem": [
    "Mrs Anita Rowe, 44, has come from the shopping centre: she was shopping this morning, felt unwell and was about to fall. Known diabetic on insulin. Vital signs stable."
   ],
@@ -25767,91 +25766,211 @@
    "Interpret the ECG for your examiner",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes: history 5 · ECG 1:15 · explain + close 1:45. WIPE, acknowledge, signpost, ★ bedside glucose · 'complete LOC or aware?' → about to, didn't; focal seizure screen; duration; first · context, ★ no warning (discordant — cardiac up), meals (skipped breakfast), fluids, head knock, fever; after ×3 · ★ diabetes block: diagnosed, adherence and today's dose, dose change, new/OTC/herbal, diet and snacks, home monitoring, hypo awareness, reviews · ★ complications — feet, eyes, kidneys, autonomic (dizzy standing, early satiety, bladder) → link microvascular disease to autonomic neuropathy · system screen incl. ★ 'chest pain — even a little?' (none — a clue in a diabetic), SADMA, exertion today, BP/lipids/FHx, ★ drives · ★ ECG one-breath hand-over: rate, rhythm, P, PR, QRS, axis, ST (elevation II, III, aVF; reciprocal aVL/I), T, Q; V1–V3 posterior; ★ V4R before nitrates · inferior STEMI, time-critical · warning shot · ★ two-part diabetes explanation · differential incl. hypo · ★ aspirin 300 mg chewed + ambulance to PCI · no party, ★ no driving, call family.",
+  "findings": [
+   [
+    "THE HISTORY IS BAIT AND THE EXAMINER BUILT IT DELIBERATELY",
+    "INSULIN · SKIPPED BREAKFAST, 'JUST AN APPLE' · HOURS OF WALKING. EVERYTHING IN THE FIRST FIVE MINUTES POINTS TO A HYPO. THE PASS IS RESERVED FOR THE CANDIDATE WHO READS THE ECG AS THOUGH THE HISTORY HAD NEVER HAPPENED"
+   ],
+   [
+    "ASK FOR A CAPILLARY GLUCOSE ANYWAY",
+    "The stem says vitals are stable, so you need not open with haemodynamic stability. But say once: 'COULD I PLEASE HAVE A BEDSIDE BLOOD GLUCOSE WHILE WE TALK?' Three seconds, it is what any real GP would do, and A NORMAL FIGURE QUIETLY REMOVES HYPOGLYCAEMIA AS THE WHOLE ANSWER BEFORE YOU EVER SEE THE ECG"
+   ],
+   [
+    "VERSION B — the 2019 recall, the one that is out now",
+    "ST ELEVATION IN II, III AND aVF WITH RECIPROCAL ST DEPRESSION IN aVL → ACUTE INFERIOR STEMI. Candidates fail because THEY HAVE ALREADY DECIDED IT IS A HYPO, GLANCE AT THE ECG, AND MISS AN EVOLVING STEMI IN FRONT OF THEM"
+   ],
+   [
+    "VERSION A — the older recall",
+    "SINUS RHYTHM, NO ACUTE CHANGES → HYPOGLYCAEMIA from a missed meal plus unaccustomed exertion on insulin. Candidates failed THE MIRROR IMAGE WAY: THEY CALLED IT A HYPO AND GAVE NO DIFFERENTIAL AT ALL"
+   ],
+   [
+    "The history, IDENTICAL IN BOTH VERSIONS",
+    "PRESYNCOPE LASTING A FEW SECONDS, NO LOSS OF CONSCIOUSNESS · FIRST EPISODE · took her usual insulin, NO DOSE CHANGE, no new medicines · NO WARNING SIGNS BEFORE THE EPISODE · no jerking, no incontinence, no post-event confusion, no injury · NO CHEST PAIN, no breathlessness, no palpitations, no ankle swelling"
+   ],
+   [
+    "'NO CHEST PAIN. NONE AT ALL.'",
+    "IN DIABETES, PAINLESS ISCHAEMIA IS COMMON. ABSENCE OF CHEST PAIN DOES NOT REMOVE ACS — SAY THIS TO THE EXAMINER. Roughly A QUARTER TO A THIRD OF INFARCTS ARE CLINICALLY UNRECOGNISED at the time. 'NO CHEST PAIN' LOWERS THE PROBABILITY; IT NEVER REMOVES IT"
+   ],
+   [
+    "'I had no warning at all'",
+    "FLAG IT INTERNALLY: ABSENT PRODROME ARGUES AGAINST VASOVAGAL AND RAISES CARDIAC CAUSES. ASK FOR THE ECG WITH REAL INTENT"
+   ],
+   [
+    "'WE WALKED FOR HOURS TODAY' — two readings at once",
+    "UNACCUSTOMED EXERTION RAISES HYPOGLYCAEMIA RISK AND IS AN ISCHAEMIC TRIGGER. MENTION BOTH"
+   ],
+   [
+    "WHAT SHE ASKS",
+    "'I'VE GOT A PARTY TONIGHT — CAN I STILL GO?' → 'I'm sorry — NO. You need to go to hospital NOW, BY AMBULANCE, and I'll ring your family.' And 'AM I GOING TO DIE?' → 'This is serious, and IT'S ALSO VERY TREATABLE — the safest thing is exactly what we're doing now'"
+   ],
+   [
+    "SHE LOOKS ENTIRELY WELL AND FEELS BETTER",
+    "The communication challenge is telling a woman who looks fine that SHE IS HAVING A HEART ATTACK, MUST NOT DRIVE, AND IS LEAVING BY AMBULANCE NOW — WITHOUT PANICKING HER AND WITHOUT SOFTENING IT INTO SOMETHING SHE CAN DECLINE"
+   ]
+  ],
+  "findingsLabel": "A history built as bait, and the ECG that must overrule it",
+  "must": [
+   "FAIL — Glancing at the ECG, saying 'looks alright', and diagnosing a hypo.",
+   "FAIL — Naming the infarct correctly and then continuing to counsel. No aspirin, no 000.",
+   "FAIL — Letting her drive herself, or go to the party.",
+   "FAIL — 'It's obviously a hypo', with no differential offered at all.",
+   "ASK — Could I please have a bedside blood glucose while we talk?",
+   "ASK — Any chest pain, tightness or heaviness — even a little?"
+  ],
   "back": {
-   "dx": "Acute inferior STEMI, painless — diabetic autonomic neuropathy. Presyncope after three hours of walking (far more activity than usual), skipped breakfast (an apple), aware throughout, a few seconds, no jerking/incontinence, first time, ★ no warning, not confused, no injury, friend said 'washed out'; diabetes ~2 years on insulin, adherent (took it this morning, slightly offended at the question), no dose change, nothing new/herbal, usually eats and snacks properly, sugars in the 7s, 3-monthly reviews; ★ feet tingle at night, ★ early retinal changes at the last eye check (microvascular disease → painless ischaemia plausible); ★ 'no chest pain at all' (firm); no SOB/palpitations/oedema; non-smoker, occasional wine; BP and cholesterol 'a bit up'; father MI at 58; ★ drove herself here; husband at work. Bedside glucose 6.1 (Version B). ECG: rate ~70, regular sinus, PR normal, QRS narrow, axis normal, ★ ST elevation II, III, aVF with reciprocal ST depression aVL and I (reciprocal change = infarction, not pericarditis/early repolarisation), no Q waves, T upright; examine V1–V3 for posterior extension; ★ right-sided leads (V4R) before any nitrate → 'acute inferior STEMI — a time-critical emergency' (RCA ~80%; ST III > II favours RCA). Warning shot, then: 'your heart tracing shows you are having a heart attack right now'; 'no chest pain' → two-part explanation: diabetes damages the small vessels (blocks → heart attack) AND the nerves carrying pain from the heart → a silent heart attack; 'the tracing tells us more than how you feel'. 'Am I going to die?' → serious and very treatable; the safest thing is what we're doing now. Differential: hypoglycaemia (skipped breakfast, hours of walking — may still be part of it), hyperglycaemia/DKA, arrhythmia/valve, PE, TIA, seizure, electrolytes, dehydration, anaemia, medication — the tracing puts MI at the top. Action: ★ aspirin 300 mg chewed, IV access, monitor with a defibrillator available, oxygen only if SpO2 <93%, V4R before nitrates, ★ 000 to a PCI-capable centre, ECG transmitted ahead, stay with her; no party; ★ no driving today or until cleared (~2 weeks after successful PCI); call the husband; car stays.",
+   "dx": [
+    "**ACUTE INFERIOR ST-ELEVATION MYOCARDIAL INFARCTION PRESENTING AS PRESYNCOPE WITHOUT CHEST PAIN — a 'SILENT' MI. DIABETES CAUSES BOTH THE ACCELERATED CORONARY DISEASE AND THE LOSS OF THE WARNING PAIN.**",
+    "**PRESYNCOPE IS THE PRODROME OF SYNCOPE WITHOUT ACTUAL LOSS OF CONSCIOUSNESS. ITS CAUSES, ITS RISK AND ITS ASSESSMENT ARE THE SAME AS FOR SYNCOPE — IT IS NOT A BENIGN VERSION.** **'I was about to faint but I didn't' DOES NOT SEND YOU DOWN A FALLS PATHWAY.**",
+    "**THE DISCRIMINATING ISSUE: YOU MUST LET THE ECG OVERRULE YOUR HISTORY.** The pass goes to the candidate who **READS THE ECG SYSTEMATICALLY, NAMES AN INFERIOR STEMI WITH ITS RECIPROCAL CHANGE, EXPLAINS WHY THERE IS NO CHEST PAIN, AND THEN ACTS — ASPIRIN, AMBULANCE, NO PARTY.**",
+    "**THE MOMENT YOU SAY STEMI, THE NEXT SENTENCE IS ASPIRIN AND 000.** Naming the infarct correctly and then **continuing to counsel is a fail in its own right.**",
+    "**THE TWO-PART EXPLANATION: 'DIABETES, OVER TIME, DAMAGES THE SMALL BLOOD VESSELS THAT SUPPLY THE HEART. When one suddenly blocks, part of the heart muscle stops getting blood — that's a heart attack. Now you'll ask why you have NO CHEST PAIN, and that's the second part: DIABETES ALSO DAMAGES THE NERVES, INCLUDING THE NERVES THAT CARRY PAIN FROM THE HEART. So instead of pain, the only thing you felt was BEING UNWELL AND ABOUT TO FALL.'**",
+    "**SAY EXPLICITLY THAT BOTH CAN BE TRUE: 'a low blood sugar is very possible given you'd skipped breakfast and walked for hours — AND THAT MAY STILL BE PART OF IT. The tracing is what moves the heart attack to the top of that list.'** **Dropping hypoglycaemia entirely once you see ST elevation is a fail.**",
+    "**THE ECG DRILL, SAID IN THIS ORDER EVERY TIME: rate · rhythm and P waves · PR INTERVAL, AND IMPORTANTLY WHETHER THERE IS HEART BLOCK · QRS width · axis · ST SEGMENTS · T waves · Q waves.** Then: **'I would also look for ST DEPRESSION IN V1–V3 that might indicate POSTERIOR EXTENSION, and I would immediately do RIGHT-SIDED LEADS, PARTICULARLY V4R, to look for RIGHT VENTRICULAR INVOLVEMENT.'**",
+    "**TERRITORIES: INFERIOR II, III, aVF with reciprocal change in I and aVL — RIGHT CORONARY IN ABOUT 80%, circumflex in the rest, and WATCH FOR BRADYCARDIA, AV BLOCK, RV INFARCT AND HYPOTENSION. RIGHT VENTRICULAR — V4R, PROXIMAL RCA, PRELOAD-DEPENDENT SO NITRATES CAN CAUSE PROFOUND HYPOTENSION. POSTERIOR — V7–V9, with TALL R AND ST DEPRESSION IN V1–V3, EASILY MISSED BECAUSE IT LOOKS LIKE ANTERIOR ISCHAEMIA.**",
+    "**STEMI VOLTAGE CRITERIA: new ST elevation at the J point in TWO CONTIGUOUS LEADS — 1 mm OR MORE in all leads other than V2–V3; in V2–V3, 2.5 mm in men UNDER 40, 2 mm in men 40 AND OVER, and 1.5 mm in women.** **RECIPROCAL DEPRESSION STRONGLY SUPPORTS TRUE INFARCTION rather than pericarditis or early repolarisation.** VERIFY.",
+    "**WHY YOU ASK CARDIAC RISK FACTORS: because EVERY LOSS-OF-CONSCIOUSNESS HISTORY INCLUDES A CARDIOVASCULAR SCREEN, NOT BECAUSE YOU KNOW HOW THE RECALL ENDS. IF YOU ONLY START ASKING ABOUT SMOKING, CHOLESTEROL AND FAMILY HISTORY AFTER THE ECG APPEARS, THE EXAMINER CAN SEE YOU WERE RECITING AN ANSWER.**"
+   ],
    "plan": [
     [
      "0:00",
-     "WIPE, DOB, comfortable? · 'I'd like to ask about this morning, look at your heart tracing, and work out the cause together' · 'your friends gave you good advice' · ★ 'could I please have a bedside blood glucose while we talk?' → 6.1"
+     "**WIPE, confirm name and date of birth, check comfort, and SIGNPOST THE WHOLE STATION: 'I'd like to ask about what happened this morning, look at your heart tracing, and then we'll work out the cause together.'**"
     ],
     [
-     "0:40",
-     "'Complete LOC, or aware?' → about to, didn't; heard everything (stay on the syncope spine — no falls assessment) · jerking, one-sided twitching, incontinence → no · duration (seconds) · first time (yes)"
+     "0:20",
+     "**Acknowledge: 'thank you for coming in to get checked — YOUR FRIENDS GAVE YOU VERY GOOD ADVICE.'** Then **ASK FOR THE BEDSIDE GLUCOSE.**"
     ],
     [
-     "1:15",
-     "Doing (hours of walking) · hot, standing long, stood up quickly, upsetting news → no · ★ 'any warning — light-headed, sweaty, shaky, hungry, racing heart, vision greying?' → none ('discordant — carry cardiac forward') · meals (skipped breakfast, an apple), fluids (plenty) · head knock, fever/rash · after: confused (no), injured (no), pale (washed out)"
+     "0:35",
+     "**BLOCK 1, THE EPISODE: did you lose consciousness COMPLETELY, or were you AWARE of your surroundings · any JERKING of the arms or legs, ANY TWITCHING ON ONE SIDE · did you WET OR SOIL YOURSELF · HOW LONG did it last · IS THIS THE FIRST TIME?** **FOCAL SEIZURES CAN OCCUR WITH PRESERVED AWARENESS, so the seizure screen is still worth ten seconds.**"
     ],
     [
-     "2:15",
-     "★ Diabetes block: diagnosed when (2 y) · insulin as prescribed — taken today? (yes, defensive) · dose changed? · new medicines, OTC, supplements, herbal/traditional? · diet, mid-morning/afternoon snacks? · home testing, usual readings (7s) · hypo warning symptoms? · regular reviews/bloods? · ★ complications: numbness/tingling/burning feet, ulcers (tingle at night) · vision, last eye check (early changes) · kidneys · dizzy standing, full quickly after meals, bladder → 'evidence of microvascular disease supports autonomic neuropathy and painless ischaemia'"
+     "1:05",
+     "**BLOCK 2, CONTEXT AND BEFORE: what were you doing just before · was it HOT, had you been STANDING a long time, did it come on when you CHANGED POSITION · any stressful news · DID YOU GET ANY WARNING — light-headed, sweaty, SHAKY, HUNGRY, palpitations, vision greying, ringing in the ears · HAVE YOU MISSED ANY MEALS TODAY, were you drinking enough · any knock to the head · any fever or rash?**"
     ],
     [
-     "3:30",
-     "System screen: headache, weakness, numbness, slurred speech, diplopia, unsteadiness · ★ 'chest pain, tightness or heaviness — even a little?' → none (a clue, not a closed door) · SOB exertion/flat, palpitations, oedema · nausea/vomiting/abdominal pain/melaena · smoke/alcohol/drugs · other meds/allergies · fast breathing/stress · ★ more activity than usual today? (much more) · BP, cholesterol (a bit up), FHx (father MI 58) · ★ 'do you drive, and who's at home?' → drove herself; husband at work"
+     "1:50",
+     "**BLOCK 3, AFTER: were you CONFUSED OR DROWSY, how long before you felt normal · did you INJURE yourself · did anyone say you looked PALE, GREY OR SWEATY?**"
+    ],
+    [
+     "2:10",
+     "**BLOCK 4, THE DIABETES BLOCK: when were you diagnosed · ARE YOU TAKING YOUR INSULIN EXACTLY AS PRESCRIBED, AND DID YOU TAKE IT TODAY · HAS THE DOSE BEEN CHANGED RECENTLY, BY YOU OR YOUR DOCTOR · ANY NEW MEDICINES, OVER-THE-COUNTER PRODUCTS, SUPPLEMENTS OR HERBAL REMEDIES?**"
+    ],
+    [
+     "2:40",
+     "**Then: TALK ME THROUGH WHAT YOU EAT IN A DAY — DO YOU TAKE YOUR MID-MORNING AND MID-AFTERNOON SNACKS · do you test your sugars at home, what are they usually running · DO YOU GET WARNING SYMPTOMS WHEN YOU GO LOW · do you see your GP regularly and have your HbA1c done?**"
+    ],
+    [
+     "3:05",
+     "**COMPLICATIONS — not box-ticking: any NUMBNESS, TINGLING OR BURNING IN YOUR FEET, any ULCERS · any CHANGE OR BLURRING OF VISION, when was your last eye check · any kidney problems on your blood tests · DO YOU GET DIZZY ON STANDING, FEEL FULL VERY QUICKLY AFTER MEALS, OR HAVE BLADDER TROUBLE?**"
+    ],
+    [
+     "3:25",
+     "**Established microvascular disease tells you TWO THINGS AT ONCE: AUTONOMIC NEUROPATHY CAN CAUSE ORTHOSTATIC PRESYNCOPE AND CAN ABOLISH THE PAIN OF MYOCARDIAL ISCHAEMIA. A patient with retinopathy and peripheral neuropathy IS EXACTLY THE PATIENT WHO HAS A PAINLESS INFARCT — SAY THIS WHEN YOU PRESENT.**"
+    ],
+    [
+     "3:35",
+     "**BLOCK 5, SYSTEM SCREEN, QUICK AND COMPLETE. CNS: headache, weakness, numbness, slurred speech, double vision, unsteadiness. CVS: ANY CHEST PAIN, TIGHTNESS OR HEAVINESS — EVEN A LITTLE · breathlessness on exertion or lying flat · RACING OR THUMPING of the heart · ankle swelling.**"
+    ],
+    [
+     "4:05",
+     "**GI: nausea, vomiting, tummy pain, diarrhoea, BLACK OR BLOODY STOOLS. SADMA: smoking, alcohol, recreational drugs, other medications, allergies. PSYCHOGENIC: breathing very fast, stress or panic episodes. EXERTION: MORE PHYSICAL ACTIVITY THAN USUAL TODAY?**"
+    ],
+    [
+     "4:35",
+     "**RISK AND BACKGROUND, IN THEIR PROPER PLACE: blood pressure, cholesterol, weight · ANYONE IN THE FAMILY WITH HEART DISEASE OR A HEART ATTACK AT A YOUNG AGE?** Then **IMPACT: do you drive · who is at home with you?**"
     ],
     [
      "5:00",
-     "★ ECG, one breath: 'rate ~70; regular sinus rhythm, P before every QRS; PR normal, no block; QRS narrow; axis normal; ST elevation in II, III and aVF with reciprocal ST depression in aVL and I; no established Q waves; T upright. I'd examine V1–V3 for posterior extension and obtain right-sided leads, V4R, before any nitrate. Acute inferior STEMI — a time-critical emergency.' · 'which artery?' → RCA ~80% (III > II) · 'why no pain?' → autonomic neuropathy · 'first?' → aspirin 300 mg chewed + ambulance to PCI"
+     "**THE ECG DRILL, OUT LOUD, IN FIXED ORDER — AS IF THE HISTORY HAD NEVER HAPPENED.**"
     ],
     [
      "6:15",
-     "★ Warning shot: 'I need to tell you something important, and I'd like you to hear all of it before you react. Your heart tracing shows that you are having a heart attack right now.' · 'not possible — no chest pain' → ★ two-part diabetes explanation · 'am I going to die?' → serious and very treatable; the safest thing is what we're doing"
+     "**WARNING SHOT, THEN PLAIN WORDS: 'I need to tell you something important, and I want you to hear the whole of it. YOUR HEART TRACING SHOWS THAT YOU ARE HAVING A HEART ATTACK RIGHT NOW.'** Then **THE TWO-PART DIABETES EXPLANATION.**"
     ],
     [
      "7:00",
-     "Differential named (hypo may still be part of it) — 'the tracing moves the heart attack to the top' · ★ chew this aspirin · ★ calling an ambulance to a hospital that can open the vessel; drip, monitor, stay with you, tracing sent ahead · 'the party? my car's outside' → no party; ★ no driving today or until cleared; car stays; 'is there someone I can call — your husband?' · summary · questions"
+     "**WHAT HAPPENS NOW: 'I give you an aspirin to chew, WE CALL AN AMBULANCE, and you go straight to hospital where they can OPEN THAT BLOCKED VESSEL — THE SOONER THAT HAPPENS, THE MORE HEART MUSCLE WE SAVE.'** Then **'tonight's party isn't possible, AND YOU MUST NOT DRIVE. IS THERE SOMEONE I CAN CALL FOR YOU?'**"
+    ],
+    [
+     "7:30",
+     "**THE DIFFERENTIAL SHE MUST STILL HEAR, briefly: a low blood sugar WHICH MAY STILL BE PART OF IT · a high sugar or diabetic emergency · an abnormal rhythm or valve problem · a clot on the lung · a stroke or mini-stroke · a seizure · a salt disturbance · dehydration · anaemia or bleeding · medications or alcohol.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Thank you for coming in — your friends gave you good advice.' / ★ 'Could I please have a bedside blood glucose while we talk?' / 'Did you lose consciousness completely, or were you aware of your surroundings?' / ★ 'Did you get any warning at all?'",
-    "★ 'Are you taking your insulin exactly as prescribed — and did you take it today? Has the dose been changed recently — and any new medicines, supplements, or herbal or traditional remedies? Do you take your mid-morning and mid-afternoon snacks? Do you get warning symptoms when you go low?'",
-    "'Any numbness, tingling or burning in your feet, or ulcers? Any blurring of vision — when was your last eye check? Any kidney problems? Do you get dizzy on standing, feel full very quickly after meals, or have bladder trouble?'",
-    "★ 'Any chest pain, tightness or heaviness — even a little?' / 'Have you done more physical activity than usual today?' / ★ 'Do you drive, and who's at home with you?'",
-    "★ 'Rate, rhythm, P waves, PR, QRS, axis, ST segments, T waves, Q waves.' / ★ 'ST elevation in II, III and aVF, with reciprocal ST depression in aVL — an acute inferior STEMI.' / ★ 'I would obtain right-sided leads, particularly V4R, before giving any nitrate.'",
-    "Examiner: 'which artery?' → 'Most often the right coronary artery — about 80% of inferior infarcts; the circumflex in the rest. ST elevation taller in III than II favours the RCA.' / 'why no chest pain?' → 'Diabetic autonomic neuropathy impairs the afferent pain pathway; painless infarction is well described in diabetes, in women and in older patients.'",
-    "★ 'I need to tell you something important, and I'd like you to hear all of it. Your heart tracing shows that you are having a heart attack right now — the medical name is a myocardial infarction.'",
-    "★ 'Diabetes does two separate things here. First, over years, it damages the small blood vessels that supply the heart muscle — if one suddenly blocks, that part of the muscle stops getting blood, and that is a heart attack. Second, the same diabetes damages the nerves that carry pain from the heart — so instead of chest pain, the only thing you felt was being unwell and about to fall. We call that a silent heart attack, and it's why the tracing tells us more than how you feel.' / 'This is serious, and it is also very treatable — the safest thing possible is what we're doing now.'",
-    "★ 'I'd like you to chew this aspirin. I'm calling an ambulance, and you'll go straight to a hospital that can open the blocked vessel — the sooner that's done, the more heart muscle we save. I'll stay with you, put a drip in, keep you on a monitor, and send your tracing ahead.'",
-    "★ 'I'm sorry — the party isn't possible tonight, and you must not drive: not today, and not until the specialist clears you. Your car can stay here safely. Is there someone I can call — your husband?' / Refuses the ambulance: 'Part of your heart muscle is losing its blood supply right now, and every minute counts. It must be an ambulance rather than your car because the most dangerous moments are the first hours, when the rhythm can go wrong suddenly — the paramedics carry the equipment to fix that. You can decline — I'll respect it — but I'd be failing you if I didn't say plainly that I think it would be a very dangerous choice. Can I call your husband before you decide?'"
-   ],
    "pefe": [
-    "Role-player: Anita, 44, retail admin, married, two teenagers; insulin ~2 years, conscientious and mildly offended at any suggestion otherwise; BP/cholesterol 'a bit up'; father MI at 58; non-smoker; feet tingle at night and early retinal changes — only if asked directly; ★ 'no chest pain at all' — firm, repeated. Brisk and dismissive at first; pushes at 2 min 'it's just my sugar, isn't it? I skipped breakfast' (agree possible, keep going); disbelieves the diagnosis; frightened once explained; 'am I going to die?'; always finishes 'can I still go to the party? my car's outside — I'll drive myself to hospital'. Agree/hesitate/no ambulance = fail; no aspirin = fail",
-    "Examiner: capillary glucose 6.1 (Version B) · ECG: rate ~70, sinus, PR normal, narrow QRS, normal axis, ST elevation II/III/aVF, reciprocal depression aVL/I, no Q, T upright · Version A: ECG SR 78, no acute change; first-aider glucose at the centre 2.7 → hypoglycaemia (insulin, skipped breakfast, hours of walking) — ★ still give the differential (rhythm/artery, orthostatic, dehydration, TIA, seizure, infection, anaemia, salts, medication); eat now, bloods, review insulin/meal timing/snacks on active days — 'it's a hypo' with nothing else fails",
-    "Variant 3 — BP 82/54, pulse 46 after the ECG: RV involvement — lie flat, withhold nitrates, avoid morphine, right-sided leads, cautious IV saline bolus (preload-dependent RV), atropine 600 µg ready, transcutaneous pacing available, escalate — urgent reperfusion/cardiology · Variant 4 — rural SA >2 h from a cath lab: activate MedSTAR 1300 13 12 33/RFDS in parallel, transmit the ECG for remote cardiology, pre-hospital fibrinolysis with weight-adjusted tenecteplase within 30 min under the SA Health STEMI pathway after checking contraindications (recent stroke, bleeding, surgery, uncontrolled hypertension); angiography at 3–24 h, immediately if reperfusion fails",
-    "STEMI: new ST elevation ≥1 mm in two contiguous leads (V2–V3: ≥2 mm men ≥40, ≥2.5 men <40, ≥1.5 women) · inferior II/III/aVF, reciprocal I/aVL · RV V4R · posterior V7–V9 · ECG within 10 min · aspirin 300 mg chewed · ticagrelor 180 mg or clopidogrel 300–600 mg loading · GTN 300–600 µg SL — not in RV infarct, hypotension, bradycardia, PDE5 inhibitor 24–48 h · morphine 2.5–5 mg IV titrated · oxygen only if SpO2 <93% · primary PCI within 90 min FMC (120 if transfer) else fibrinolysis within 30 min VERIFY",
-    "Hypoglycaemia <4.0: 15 g fast carbohydrate, repeat at 15 min; unconscious — glucagon 1 mg IM or 50 mL 50% glucose IV · driving: ~2 weeks off after STEMI with successful PCI (private) VERIFY Austroads",
-    "SA: SA Health STEMI pathway; SA Ambulance 000; PCI centres RAH/FMC/Lyell McEwin; MedSTAR 1300 13 12 33 / RFDS; Registrar of Motor Vehicles"
+    "**Do now: BEDSIDE GLUCOSE · 12-LEAD ECG WITHIN 10 MINUTES OF PRESENTATION, repeated if it evolves · ASPIRIN 300 mg CHEWED unless true allergy · CALL 000 FOR AN AMBULANCE TO A PCI-CAPABLE CENTRE — do not let her drive or take a taxi · IV access, CONTINUOUS MONITORING, DEFIBRILLATOR TO HAND · OXYGEN ONLY IF SpO2 BELOW 93% · repeat blood pressure AND DO V4R.**",
+    "**Do next: NOTIFY THE RECEIVING TEAM DIRECTLY AND TRANSMIT THE ECG · antiplatelet loading — TICAGRELOR 180 mg or CLOPIDOGREL 300–600 mg — and anticoagulation as directed by the receiving centre · troponin, FBE, UEC, CMP, lipids, HbA1c, coagulation, BUT NEVER DELAY REPERFUSION FOR A TROPONIN · analgesia if she has pain — GTN 300–600 microg SL, morphine 2.5–5 mg IV titrated · contact her family.** VERIFY.",
+    "**REPERFUSION NUMBERS: PRIMARY PCI PREFERRED, target FIRST MEDICAL CONTACT TO DEVICE 90 MINUTES OR LESS, up to 120 minutes if transfer is required. If that cannot be met, FIBRINOLYSIS WITHIN 30 MINUTES of first medical contact, then TRANSFER FOR ANGIOGRAPHY AT 3–24 HOURS, or immediately if reperfusion fails. TOTAL ISCHAEMIC TIME DETERMINES MYOCARDIUM SAVED.** VERIFY.",
+    "**RURAL SA: from MM5 or MM6, primary PCI is RARELY REACHABLE INSIDE 120 MINUTES. ACTIVATE MEDSTAR OR THE RFDS EARLY AND IN PARALLEL WITH TREATMENT, NOT AFTER; give PRE-HOSPITAL FIBRINOLYSIS under the SA Health STEMI pathway; and TRANSMIT THE ECG for remote cardiology confirmation.**",
+    "**Do not miss: RIGHT VENTRICULAR INFARCTION — CHECK V4R BEFORE NITRATES · BRADYCARDIA AND COMPLETE HEART BLOCK · POSTERIOR EXTENSION with V1–V3 ST depression · COEXISTING HYPOGLYCAEMIA, because BOTH CAN BE TRUE · driving advice and a clear handover · THAT SHE MAY MINIMISE SYMPTOMS BECAUSE SHE HAS NONE.**",
+    "**Avoid: NITRATES if hypotensive, bradycardic, RV infarct suspected, or a PDE5 INHIBITOR IN THE LAST 24–48 HOURS · routine oxygen with normal saturations · WAITING FOR TROPONIN BEFORE ACTIVATING THE PATHWAY · sending her home to 'see how she goes' · calling it a hypo and stopping there.**",
+    "**EQUITY: WOMEN, OLDER PEOPLE AND PEOPLE WITH DIABETES ARE THE GROUPS MOST LIKELY TO HAVE AN INFARCT WITHOUT CHEST PAIN, AND THEREFORE THE GROUPS MOST LIKELY TO BE SENT HOME.** **Aboriginal and Torres Strait Islander Australians develop ischaemic heart disease younger and die of it at markedly higher rates — A LOW THRESHOLD FOR AN ECG IS GOOD PRACTICE, NOT OVER-INVESTIGATION.** **Closing the Gap PBS co-payment; Aboriginal Liaison Officer early.**"
    ],
-   "fails": [
-    "Reading the ECG correctly and then keeping on counselling — no aspirin, no ambulance, a patient who drives home ★",
-    "Version A: announcing 'it's a hypo' and offering no differential ★",
-    "Treating 'I didn't actually black out' as a falls assessment — trip hazards, footwear, home safety",
-    "Announcing the STEMI without the systematic run-through; not naming the reciprocal change; no V4R before nitrates",
-    "Hearing 'no chest pain' as a closed door; not linking neuropathy/retinopathy to painless ischaemia; skipping the diabetes block (compliance, dose change, herbal, snacks, monitoring)",
-    "Jargon ('inferior STEMI with reciprocal change') or false comfort ('a small issue with your tracing') to the patient; no warning shot",
-    "Re-asking all the vitals; never asking whether she drives or who's at home; agreeing to the party or the car"
-   ],
-   "numbers": [
-    "ECG within 10 min · STEMI ≥1 mm in two contiguous leads (V2–V3 thresholds by age/sex) · inferior II/III/aVF, reciprocal I/aVL · V4R for RV · V7–V9 posterior · RCA ~80% (III > II)",
-    "Aspirin 300 mg chewed · ticagrelor 180 mg or clopidogrel 300–600 mg · GTN 300–600 µg SL (not RV/hypotension/bradycardia/PDE5i) · morphine 2.5–5 mg IV · O2 only if SpO2 <93% VERIFY",
-    "Primary PCI ≤90 min FMC (120 if transfer) else fibrinolysis ≤30 min + angiography 3–24 h · tenecteplase weight-adjusted under the SA STEMI pathway VERIFY",
-    "Hypo <4.0: 15 g fast carb, repeat 15 min · unconscious: glucagon 1 mg IM or 50 mL 50% glucose IV · driving ~2 weeks after successful PCI (private) VERIFY",
-    "000 · MedSTAR 1300 13 12 33 / RFDS · glucose here 6.1 (Version A first-aider 2.7)"
+   "ddx": [
+    [
+     "**Acute coronary syndrome, PAINLESS IN DIABETES** — the answer",
+     "**NO PRODROME, exertion, diabetes, age, risk factors — AND THE ECG**",
+     "**Chest, arm, jaw or EPIGASTRIC discomfort; breathlessness; nausea; sweating**",
+     "**ECG IN 10 MINUTES, serial ECGs, troponin — BUT DO NOT WAIT FOR TROPONIN TO ACT ON ST ELEVATION** — IMMEDIATE"
+    ],
+    [
+     "**Arrhythmia or AV block**",
+     "**Abrupt onset, no warning, palpitations; INFERIOR INFARCTS COMMONLY BLOCK**",
+     "Rate, rhythm, PR interval; syncope on exertion",
+     "**Monitored ECG, telemetry, ATROPINE AND PACING AVAILABLE** — IMMEDIATE"
+    ],
+    [
+     "**Hypoglycaemia**",
+     "**INSULIN, SKIPPED BREAKFAST, UNACCUSTOMED WALKING, sweating and hunger**",
+     "**Dose changes, snacks, HYPO AWARENESS, alcohol**",
+     "**BEDSIDE GLUCOSE NOW — MAY ALREADY HAVE NORMALISED. BGL below 4.0: 15 g fast carbohydrate, repeat at 15 min; if unconscious, GLUCAGON 1 mg IM or 50 mL of 50% glucose IV** — IMMEDIATE"
+    ],
+    [
+     "Hyperglycaemia, DKA or hyperosmolar state",
+     "**Missed insulin, infection, thirst, polyuria, vomiting**",
+     "Illness, SICK-DAY MANAGEMENT",
+     "Glucose, ketones, venous gas, UEC — IMMEDIATE"
+    ],
+    [
+     "Aortic stenosis · HOCM · pulmonary embolism",
+     "Exertional presyncope, murmur, family sudden death; or breathlessness, tachycardia, calf pain, immobility",
+     "Ejection murmur, SLOW-RISING PULSE; hypoxia",
+     "Echocardiogram; Wells score with D-dimer or CTPA — urgent"
+    ],
+    [
+     "Orthostatic hypotension · vasovagal",
+     "**Positional change, prolonged standing, heat, CLEAR PRODROME**",
+     "**POSTURAL BP DROP, dehydration, medications**",
+     "**Lying and standing BP.** In diabetes, consider AUTONOMIC NEUROPATHY plus medications"
+    ],
+    [
+     "TIA or posterior circulation stroke · focal seizure",
+     "**Focal deficit, DIPLOPIA, DYSARTHRIA, ATAXIA, VERTIGO**; or jerking, automatisms, déjà vu, post-event confusion",
+     "Neurological screen, AF, carotid bruit. **PRESERVED AWARENESS DOES NOT EXCLUDE A FOCAL SEIZURE**",
+     "Urgent imaging and TIA pathway — IMMEDIATE. EEG and imaging as outpatient"
+    ],
+    [
+     "**Medication effect or interaction**",
+     "**RECENT INSULIN DOSE CHANGE, new antihypertensive, HERBAL OR TRADITIONAL REMEDY**",
+     "**Every medicine, INCLUDING ANYTHING BOUGHT OR GIVEN**",
+     "Medication review; withhold the offending agent — urgent"
+    ],
+    [
+     "Dehydration · hyponatraemia · adrenal insufficiency · sepsis or gastroenteritis",
+     "Poor intake, diuretics, vomiting, STEROID USE OR WITHDRAWAL; fever, rash, diarrhoea",
+     "Fluid intake, medications, temperature, source",
+     "UEC, CMP, cortisol if suspected; septic screen and fluids — urgent"
+    ],
+    [
+     "Anaemia or occult GI bleed · **diabetic autonomic neuropathy**",
+     "Pallor, fatigue, melaena, NSAID use; or **postural dizziness, EARLY SATIETY, established retinopathy or neuropathy**",
+     "Bowel habit, stool colour; lying and standing BP, other complications",
+     "FBE, iron studies, faecal occult blood. **Autonomic neuropathy is a DIAGNOSIS OF EXCLUSION — AND A WARNING SIGN FOR PAINLESS ISCHAEMIA**"
+    ]
    ]
   },
   "source": "Presyncope_Silent_MI_2_Case_Tasks_Script_Notability.pdf (Anita Rowe, 44, insulin-treated diabetic, 'about to fall' — painless inferior STEMI; Version A hypoglycaemia)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Presyncope_Silent_MI_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Reading the ECG correctly and then continuing to counsel — the single most common fail: no aspirin, no ambulance, and a patient who drives home; 'I'd like you to chew this aspirin; I'm calling an ambulance to a hospital that can open the blocked vessel; I'll put a drip in, keep you on a monitor, stay with you, and send your tracing ahead'; she always finishes with 'my car's outside — I'll drive myself' — agreeing or hesitating fails (★)",
-   "FAIL — Switching to a falls assessment because 'I didn't actually black out' — presyncope carries the same differential and the same risk as syncope; stay on the spine: LOC, focal seizure screen, duration, context, prodrome ('no warning at all' is discordant — carry cardiac causes into the ECG), meals, head injury, confusion, injury (★)",
-   "FAIL — Announcing 'inferior STEMI' without the systematic run-through — rate, rhythm, P, PR, QRS, axis, ST, T, Q in one breath; name the reciprocal depression in aVL and I (what distinguishes infarction from pericarditis); 'I'd examine V1–V3 for posterior extension and obtain right-sided leads, particularly V4R, before any nitrate'; RCA in about 80% (★)",
-   "FAIL — Jargon, or false comfort ('a small issue with your tracing') — warning shot ('I need to tell you something important, and I'd like you to hear all of it') → 'your heart tracing shows you are having a heart attack right now' → the two-part diabetes explanation when she says 'I don't have any chest pain': diabetes damages the small vessels (block → heart attack) and the nerves that carry pain from the heart (→ no pain, a silent heart attack); 'am I going to die?' → serious, and very treatable, and what we're doing now is the safest possible thing",
-   "FAIL — Offering no differential because the answer is obvious — in the older recall the ECG is normal and the glucose 2.7, and candidates fail by saying 'it's a hypo' and nothing else; hypoglycaemia (skipped breakfast, hours of walking — still possibly part of the picture), hyperglycaemia, rhythm, valve, PE, TIA, seizure, salts, dehydration, anaemia, medication",
-   "DO — Ask for a bedside glucose while you talk (don't re-ask the stable vitals); the full diabetes block — compliance and taken today, dose change, new or herbal medicines, diet and snacks, monitoring, reviews — then complications (tingling feet, retinal changes) linked aloud to autonomic neuropathy and painless ischaemia; 'no chest pain at all' in a diabetic is a clue, not a closed door; father's MI at 58; note that she drove herself in; no driving until cleared; offer to call her husband"
-  ]
+  "promptAt": 300
  },
  {
   "id": "MED-100",
