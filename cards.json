@@ -30185,9 +30185,8 @@
  {
   "id": "MED-119",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "ED. Version C of the central/periumbilical trio (reconstructed from the source variant lines). The mismatch is the diagnosis: 10/10 constant unbearable pain and a soft, barely tender abdomen. Say 'pain out of proportion to the examination findings' aloud, take a lactate, request CT angiography, and involve surgery and vascular BEFORE the scan.",
   "stem": [
    "Reg Colman, 60, presents with generalised abdominal pain for a few days, much worse today. Pulse 90, irregular. He reports dark stools."
   ],
@@ -30196,104 +30195,203 @@
    "Ask the examiner for the examination findings",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "8 min. Stability (note the irregular pulse) · intro, analgesia, open · pain: 'all over', ★ 10/10, ★ constant · vomiting once or twice · ★ dark stools → probe: black and tarry or dark red? smell? iron/bismuth? · flatus/motion · ops, groin lump, weight/PR blood/habit · ★ ischaemia block: 'any funny racing or irregular heartbeat — ever told you have atrial fibrillation? heart attacks, strokes, clots in the legs? ★ cramping pain after meals — avoiding food because of it? weight loss?' → 'heart flutters, they mentioned it once; months of pain after eating, eating less, lost ~6 kg' · anticoagulants, NSAIDs, smoking · examiner seven steps → soft, mild tenderness only, BS present, irregularly irregular pulse, no groin lump, dark stool on the glove · ★ 'pain out of proportion' · dx: acute mesenteric ischaemia — embolus from AF on chronic mesenteric stenosis · ranked reasoning · lactate, VBG, CTA, surgery + vascular now.",
+  "findings": [
+   [
+    "THE STEM HANDS YOU TWO OF THE THREE CLUES",
+    "PULSE 90 AND IRREGULAR · DARK STOOLS. The third — PAIN OUT OF PROPORTION TO A SOFT ABDOMEN — only appears once you ask for the examination and SAY THE MISMATCH OUT LOUD"
+   ],
+   [
+    "THE EXAMINATION",
+    "Pain rated 9–10/10, but the ABDOMEN IS SOFT WITH VERY LITTLE TENDERNESS · no peritonism early · IRREGULARLY IRREGULAR PULSE · bowel sounds may be present or reduced. Late: distension, peritonism, shock — BY WHICH POINT THE BOWEL IS DYING"
+   ],
+   [
+    "THE SINGLE MOST IMPORTANT PATTERN IN THE WHOLE ABDOMINAL BLOCK",
+    "SEVERE, CONSTANT PAIN IN A SOFT ABDOMEN. Combine it with an IRREGULAR PULSE and you have MESENTERIC ISCHAEMIA. SAY THE WORDS 'OUT OF PROPORTION' ALOUD — IT IS WHAT CANDIDATES LEAVE OUT"
+   ],
+   [
+    "DISTINGUISH MELAENA FROM ISCHAEMIC BLEEDING",
+    "'My stools have been dark.' → 'BLACK AND TARRY, OR DARK RED? ANY SMELL? ANY MEDICINES LIKE IRON TABLETS?' Melaena points upper GI; DARK RED OR BLOODY STOOL in this setting is a MUCOSA THAT IS LOSING ITS BLOOD SUPPLY"
+   ],
+   [
+    "THE ISCHAEMIA BLOCK — ask all four",
+    "'ANY FUNNY RACING OR IRREGULAR BEATING OF YOUR HEART?' · 'HAVE YOU EVER BEEN TOLD YOU HAVE AN IRREGULAR HEARTBEAT, OR ATRIAL FIBRILLATION?' · 'ANY HEART ATTACKS, STROKES, OR CLOTS IN THE LEGS?' · 'DO YOU GET CRAMPING PAIN IN YOUR TUMMY AFTER MEALS, AND HAVE YOU BEEN AVOIDING FOOD BECAUSE OF IT?'"
+   ],
+   [
+    "FOOD FEAR IS THE CLUE NOBODY ASKS ABOUT",
+    "CHRONIC MESENTERIC ISCHAEMIA produces POST-PRANDIAL PAIN, then FOOD AVOIDANCE AND WEIGHT LOSS — THE BOWEL'S VERSION OF INTERMITTENT CLAUDICATION. A 60-year-old with vascular risk factors, MONTHS of pain after eating and weight loss who now has severe constant pain HAS HAD A CHRONIC STENOSIS THROMBOSE ACUTELY. ASKING MARKS YOU OUT IMMEDIATELY"
+   ],
+   [
+    "ASK ABOUT ANTICOAGULANTS BY NAME",
+    "'ARE YOU ON BLOOD THINNERS?' An irregular heartbeat NOT anticoagulated is the embolic story. Also 'DO YOU TAKE ANTI-INFLAMMATORIES?' in an older patient with dark stools"
+   ],
+   [
+    "ASK FOR STABILITY FIRST IN AN ED STEM",
+    "'May I confirm the patient is HAEMODYNAMICALLY STABLE — blood pressure, heart rate, respiratory rate, temperature and saturation?' In an ED stem with hours of severe pain, SKIPPING IT IS NOTICED"
+   ],
+   [
+    "IMAGING — NOT THE PLAIN FILM",
+    "A PLAIN ABDOMINAL X-RAY IS OFTEN NORMAL EARLY and cannot make this diagnosis. THE INVESTIGATION OF CHOICE IS CT ANGIOGRAPHY. Suspected mesenteric ischaemia needs A CENTRE WITH CT ANGIOGRAPHY AND VASCULAR SURGERY — RETRIEVE EARLY rather than scanning locally and transferring afterwards"
+   ],
+   [
+    "THE LACTATE — useful, but not reassuring when normal",
+    "A RISING LACTATE supports established ischaemia. A NORMAL LACTATE EARLY DOES NOT EXCLUDE IT — the gut can be ischaemic before systemic lactate rises. Do not let a normal VBG delay the CT angiogram"
+   ]
+  ],
+  "findingsLabel": "Version C — severe pain, a soft abdomen, and the words you must say aloud",
+  "must": [
+   "FAIL — Never saying 'pain out of proportion' when the pain is worse than the abdomen looks.",
+   "FAIL — Relying on a plain film or thumbprinting to diagnose small bowel ischaemia.",
+   "FAIL — Never asking about the irregular heartbeat or anticoagulation.",
+   "FAIL — Withholding analgesia 'to preserve the signs'.",
+   "ASK — Any funny racing or irregular beating of your heart? Are you on blood thinners?",
+   "ASK — Do you get cramping pain after meals, and have you been avoiding food?"
+  ],
   "back": {
-   "dx": "Acute mesenteric ischaemia — most likely an embolus from atrial fibrillation (irregularly irregular pulse, 'my heart flutters, they mentioned it once') on a background of chronic mesenteric ischaemia (months of post-prandial pain, food fear, ~6 kg weight loss) that may now have thrombosed. Pain 10/10, constant, generalised, with a soft, only mildly tender abdomen; dark stools (mucosal sloughing). Three things push towards ischaemia over obstruction: pain out of proportion, an embolic source, and chronic post-prandial pain with weight loss. Lactate now (normal early lactate does not exclude it), CT angiography, surgical and vascular teams before the scan, heparin, fluids, NBM, antibiotics.",
+   "dx": [
+    "**ACUTE MESENTERIC ISCHAEMIA — SUDDEN LOSS OF ARTERIAL SUPPLY TO THE SMALL BOWEL, usually AN EMBOLUS FROM THE HEART IN ATRIAL FIBRILLATION, or THROMBOSIS OF AN ALREADY NARROWED ARTERY.** The superior mesenteric artery is the usual culprit. **HIGH MORTALITY, AND TIME IS BOWEL.**",
+    "**THE DISCRIMINATING ISSUE: WHEN THE PAIN IS WORSE THAN THE ABDOMEN LOOKS, SAY 'OUT OF PROPORTION' OUT LOUD. It is a single sentence, it changes the entire plan, and it is what candidates leave out.**",
+    "**THE SENTENCE TO THE EXAMINER: 'what strikes me is THE MISMATCH: Reg is describing SEVERE, CONSTANT PAIN, but the abdomen is SOFT WITH VERY LITTLE TENDERNESS. That PAIN OUT OF PROPORTION TO THE EXAMINATION FINDINGS, in a man with AN IRREGULAR PULSE AND DARK STOOLS, makes me worried about THE BLOOD SUPPLY TO THE BOWEL.'**",
+    "**TO THE PATIENT, PLAINLY: 'Reg, your heart is BEATING IRREGULARLY. When it does that, BLOOD CAN POOL AND FORM A SMALL CLOT, and that clot CAN TRAVEL AND BLOCK ONE OF THE ARTERIES FEEDING THE BOWEL. When the bowel loses its blood supply IT HURTS A GREAT DEAL, BUT THERE IS VERY LITTLE TO FEEL FROM THE OUTSIDE — WHICH IS EXACTLY THE PATTERN YOU HAVE. This is serious and it needs A SPECIAL SCAN OF THE BLOOD VESSELS TODAY.'**",
+    "**WHY THE ABDOMEN IS SOFT: early ischaemia is a VISCERAL, MUCOSAL INJURY — the pain fibres fire, but THE PARIETAL PERITONEUM IS NOT YET INVOLVED, so there is NO GUARDING AND NO REBOUND. PERITONISM ARRIVES WITH TRANSMURAL INFARCTION — BY WHICH POINT THE BOWEL IS ALREADY DYING.**",
+    "**CORRECTION — TWO DIFFERENT DISEASES ARE COMMONLY TAUGHT AS ONE. ACUTE MESENTERIC ISCHAEMIA is SMALL BOWEL, SMA EMBOLUS OR THROMBOSIS, PAIN OUT OF PROPORTION, diagnosed on CT ANGIOGRAPHY, treated by REVASCULARISATION AND RESECTION, with HIGH MORTALITY. ISCHAEMIC COLITIS is LARGE BOWEL at the WATERSHED AROUND THE SPLENIC FLEXURE, LOW-FLOW rather than embolic, CRAMPY LEFT-SIDED PAIN WITH BLOODY DIARRHOEA, THUMBPRINTING on film, and USUALLY SETTLES WITH SUPPORTIVE CARE.**",
+    "**If challenged: 'THUMBPRINTING IS A COLONIC SIGN AND POINTS TO ISCHAEMIC COLITIS. If I suspected acute mesenteric ischaemia of the small bowel I WOULD NOT RELY ON A PLAIN FILM — I WOULD REQUEST CT ANGIOGRAPHY.'**",
+    "**THE THREE CENTRAL-PAIN EMERGENCIES, DISTINGUISHED ON QUESTIONS NOT IMAGING: BLOCKED BOWEL — colicky pain, vomiting, distension, no flatus, a scar. STRANGLED BOWEL — a groin lump that is TENDER AND IRREDUCIBLE. BOWEL LOSING ITS BLOOD SUPPLY — PAIN OUT OF PROPORTION, AF, DARK STOOLS. THE TREATMENT OF EACH IS DIFFERENT AND ONE OF THEM CANNOT WAIT FOR A SCAN.**",
+    "**MANAGEMENT: RESUSCITATE · CORRECT FLUIDS AND ELECTROLYTES · BROAD-SPECTRUM ANTIBIOTICS · SYSTEMIC ANTICOAGULATION WITH HEPARIN · URGENT VASCULAR AND GENERAL SURGICAL REFERRAL · REVASCULARISATION — EMBOLECTOMY, THROMBOLYSIS OR BYPASS — WITH RESECTION OF NON-VIABLE BOWEL AND A PLANNED SECOND-LOOK LAPAROTOMY · then TREAT THE SOURCE: RATE OR RHYTHM CONTROL AND LONG-TERM ANTICOAGULATION FOR AF.** VERIFY.",
+    "**IN ANY OLDER PERSON WITH CENTRAL PAIN AND SHOCK, DO NOT MISS A RUPTURED ABDOMINAL AORTIC ANEURYSM — sudden central or back pain, collapse, a PULSATILE MASS, an older smoker. BEDSIDE ULTRASOUND AND THEATRE.** **SA: no on-site vascular surgery in Yorke Peninsula towns — ring the receiving registrar and MedSTAR 1300 13 12 33 WHILE THE WORKUP RUNS, NOT AFTER IT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Stability — 'pulse 90 and irregular' noted · intro, analgesia, open"
+     "**ED STEM — ASK FOR STABILITY FIRST: BP, heart rate, respiratory rate, temperature and saturation.** Then **WIPE, open question, and acknowledge the severity: 'that sounds very painful, and I want to find out what's causing it quickly.'**"
     ],
     [
-     "0:45",
-     "Pain: all over · ★ 10/10 · ★ constant and unbearable (vs waves) · onset days, worse today · radiation · better/worse"
+     "0:25",
+     "**THE PAIN — CHARACTER MATTERS MORE HERE THAN ANYWHERE: 'IS IT THERE ALL THE TIME, OR DOES IT COME IN WAVES AND THEN EASE OFF?' → constant.** Then **site, onset, how severe, radiation, anything better or worse, and HOW IT HAS CHANGED OVER THE FEW DAYS.** **Colicky central pain that comes in waves is obstruction; CONSTANT SEVERE PAIN IN A SOFT ABDOMEN IS ISCHAEMIA.**"
     ],
     [
      "1:30",
-     "Vomiting (once or twice) · ★ 'your motions have been dark — black and tarry, or dark red? any particular smell? iron tablets or anything with bismuth?' · bloating · flatus, last motion"
+     "**THE OBSTRUCTION BLOCK, ALL FOUR, BECAUSE IT IS YOUR MAIN DIFFERENTIAL: vomiting — how many times, WHAT COLOUR, IS ANY OF IT GREEN, DOES IT SMELL FAECULENT · has your tummy become SWOLLEN · WHEN DID YOU LAST PASS WIND · WHEN DID YOU LAST OPEN YOUR BOWELS?**"
     ],
     [
-     "2:30",
-     "Cause block: previous abdominal surgery, groin lump/hernia, weight loss, PR blood, habit change · ★ ischaemia block: 'any racing or irregular beating of your heart — ever told you have an irregular heartbeat or atrial fibrillation? heart attacks, strokes, clots in the legs? ★ do you get cramping pain in your tummy after meals, and have you been avoiding food because of it?' → flutters; months of post-prandial pain; eating less; ~6 kg lost"
+     "2:00",
+     "**THE DARK STOOLS: 'BLACK AND TARRY, OR DARK RED? ANY SMELL? ANY MEDICINES LIKE IRON TABLETS?'** Then **the cause block: ANY OPERATION ON YOUR ABDOMEN · ANY LUMP OR SWELLING IN YOUR GROIN · weight loss, blood, change in bowel habit.**"
+    ],
+    [
+     "2:40",
+     "**THE ISCHAEMIA BLOCK: ANY FUNNY RACING OR IRREGULAR BEATING OF YOUR HEART · EVER TOLD YOU HAVE ATRIAL FIBRILLATION · ANY HEART ATTACKS, STROKES, OR CLOTS IN THE LEGS?**"
+    ],
+    [
+     "3:05",
+     "**THE QUESTION NOBODY ASKS: 'DO YOU GET CRAMPING PAIN IN YOUR TUMMY AFTER MEALS, AND HAVE YOU BEEN AVOIDING FOOD BECAUSE OF IT? Has your WEIGHT DROPPED?'**"
+    ],
+    [
+     "3:25",
+     "**MEDICATIONS, BY NAME: ARE YOU ON BLOOD THINNERS · DO YOU TAKE ANTI-INFLAMMATORIES · anything for your heart or blood pressure · digoxin?** **An irregular heartbeat NOT on anticoagulation is the embolic story.**"
     ],
     [
      "3:45",
-     "Urinary · rash/injury · smoking, alcohol, ★ meds — blood thinners (on any? missed?), anti-inflammatories · allergies · PMHx (IHD, PVD, hypertension), FHx · summarise"
+     "**GI GENERAL AND RED FLAGS: nausea, appetite, jaundice, heartburn. KUB THREE: burning, frequency, blood in the urine. OTHER: THIRST AND POLYURIA for DKA · BACK PAIN OR FAINTING for aneurysm · a band of pain for shingles.**"
     ],
     [
      "4:30",
-     "★ Examiner, seven steps: appearance · four vitals + ★ pulse rhythm · inspection · palpation — tenderness, guarding, rigidity, rebound, masses · percussion · auscultation · inguinal/scrotum · DRE — ★ colour of stool on the glove · dipstick, BSL → soft, mild tenderness only, BS present, irregularly irregular, no groin lump, dark stool"
+     "**SADMA — SMOKING, alcohol, drugs, allergies — vascular risk factors: BLOOD PRESSURE, CHOLESTEROL, DIABETES, PERIPHERAL VASCULAR DISEASE.** Then **a one-line summary back to him.**"
     ],
     [
-     "5:30",
-     "★ Aloud: 'the pain is out of proportion to the examination findings' · 'Reg, I am worried the blood supply to your bowel has been blocked, most likely by a small clot thrown from your irregular heartbeat. An irregular heartbeat lets blood pool and form a small clot; if that clot travels to an artery feeding the bowel, the bowel is starved of blood — which hurts a great deal even though there is little to feel from outside.' · DDx: bowel obstruction (no distension, BS present), perforated ulcer, pancreatitis, AAA, ischaemic colitis, upper GI bleed (dark stool)"
+     "5:00",
+     "**EXAMINATION, REQUESTED BY NAME: general appearance — comfortable or distressed, pale, sweaty · vitals and PULSE RHYTHM · inspection for distension and scars · PALPATION: WHERE IS THE TENDERNESS, IS THERE GUARDING, RIGIDITY, REBOUND · percussion · BOWEL SOUNDS · HERNIAL ORIFICES · a PULSATILE MASS · rectal examination with consent for blood.**"
     ],
     [
-     "6:45",
-     "★ Ranked reasoning to the examiner: (1) pain out of proportion — 10/10 with a soft abdomen (2) irregularly irregular pulse — an embolic source (3) months of post-prandial pain and weight loss — a narrowed artery that may now have thrombosed → 'I would take a lactate and a venous gas now, request CT angiography, and involve the surgical and vascular teams before the scan rather than after it' · resuscitate: two IVs, fluids, NBM, analgesia, ECG (AF), bloods (FBE, UEC, lipase, coags, troponin, G&H, lactate), IV heparin once bleeding excluded VERIFY, broad-spectrum antibiotics, NG, IDC · rural → MedSTAR"
+     "5:45",
+     "**OFFICE TESTS: ECG FOR AF · capillary glucose and ketones · urine dipstick.** Then **SAY THE MISMATCH OUT LOUD TO THE EXAMINER.**"
+    ],
+    [
+     "6:15",
+     "**NAME IT TO THE PATIENT in plain words — the irregular heartbeat, the clot, the blocked artery, and why there is little to feel from the outside.**"
+    ],
+    [
+     "7:00",
+     "**THE DIFFERENTIALS BY GROUP, each with a reason: bowel obstruction — no colic, no distension, no scar · strangulated hernia — groin normal · RUPTURED AAA — no pulsatile mass, no shock · ischaemic colitis — this is small-bowel pattern · pancreatitis and peptic ulcer · DKA and other mimics.**"
+    ],
+    [
+     "7:30",
+     "**THE PLAN: NIL BY MOUTH, TWO LARGE-BORE CANNULAE, BLOODS INCLUDING A VENOUS GAS AND LACTATE, IV FLUIDS, ANALGESIA AND ANTIEMETIC, HEPARIN, ANTIBIOTICS, URGENT CT ANGIOGRAPHY, VASCULAR AND SURGICAL REFERRAL — and from a rural site, MEDSTAR NOW, NOT AFTER THE SCAN.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Is it there all the time, or does it come in waves?' / ★ 'Black and tarry, or dark red? Any particular smell? Are you taking iron tablets or anything with bismuth in it?'",
-    "★ 'Any funny racing or irregular beating of your heart? Have you ever been told you have an irregular heartbeat or atrial fibrillation? Any heart attacks, strokes or clots in the legs? Do you get cramping pain in your tummy after meals, and have you been avoiding food because of it?'",
-    "★ To examiner: 'the pulse rate and rhythm … on rectal examination, the colour of the stool on the glove.' / ★ 'The pain is out of proportion to the examination findings.'",
-    "★ 'Reg, I am worried the blood supply to your bowel has been blocked, most likely by a small clot thrown from your irregular heartbeat.' / 'An irregular heartbeat lets blood pool and form a small clot. If that clot travels to an artery feeding the bowel, the bowel is starved of blood — which hurts a great deal even though there is little to feel from outside.'",
-    "★ 'Three things push me towards a blocked blood supply rather than a blocked bowel. First, the pain is out of proportion — he describes ten out of ten and the abdomen is soft. Second, his pulse is irregularly irregular, which is a source of clot. Third, he has had post-prandial pain and weight loss for months, so there may already be a narrowed artery that has now thrombosed. I would take a lactate now and request CT angiography, and I would involve the surgical and vascular teams before the scan rather than after it.'"
-   ],
    "pefe": [
-    "Role-player (reconstructed): Reg, 60; constant unbearable generalised pain, 10/10, three days; heart flutters, someone once mentioned an irregular beat; dark motions; months of post-prandial pain, eating less, ~6 kg lost; barely flinches on examination",
-    "PEFE: soft abdomen, mild tenderness only, bowel sounds present, pulse irregularly irregular, no groin lump, dark stool on the glove",
-    "Acute mesenteric ischaemia: SMA embolus (AF, recent MI, valve) ~50%; SMA thrombosis on chronic atherosclerosis (post-prandial pain, food fear, weight loss = 'intestinal angina'); non-occlusive (low flow, vasopressors); mesenteric venous thrombosis (hypercoagulable). Early: pain out of proportion, soft abdomen, gut emptying (vomiting/diarrhoea); late: peritonitis, bloody stool, sepsis, acidosis. Lactate/VBG (normal early does not exclude), leucocytosis, amylase; CT angiography (arterial + venous phase) is the test — plain CT misses it. Management: resuscitation, NBM, IV heparin VERIFY, antibiotics, urgent vascular/surgical review — embolectomy/endovascular revascularisation ± laparotomy with resection of non-viable bowel, second look. Mortality high, rises with delay",
-    "Distinguish ischaemic colitis (older, low-flow/anticoagulated, crampy LEFT-sided pain, bloody diarrhoea, thumbprinting on AXR, usually supportive care) from small bowel ischaemia (CTA, surgery). Dark stool DDx: melaena (upper GI bleed), iron, bismuth — probe",
-    "SA: MedSTAR 1300 13 12 33 — vascular surgery is metropolitan; do not wait for the scan to call · TIS 131 450"
+    "**Do now: NIL BY MOUTH · TWO LARGE-BORE CANNULAE · FBC, UEC, LFT, LIPASE, CRP, VENOUS GAS WITH LACTATE, COAGULATION, GROUP AND HOLD · IV CRYSTALLOID with potassium replacement · ANALGESIA AND ANTIEMETIC · INDWELLING CATHETER WITH STRICT FLUID BALANCE · 12-LEAD ECG FOR AF · EARLY SURGICAL AND VASCULAR REFERRAL.**",
+    "**Imaging: GO STRAIGHT TO CT ANGIOGRAPHY in suspected mesenteric ischaemia. A plain abdominal film is often normal early and cannot make the diagnosis. Erect chest X-ray only if perforation is suspected, looking for gas under the diaphragm.**",
+    "**What the results mean: A RAISED LACTATE AND METABOLIC ACIDOSIS support established ischaemia — BUT A NORMAL LACTATE EARLY DOES NOT EXCLUDE IT. A HIGH WHITE COUNT, RAISED AMYLASE AND RAISED PHOSPHATE may accompany infarction and are non-specific.**",
+    "**Definitive: RESUSCITATE · correct fluids and electrolytes · BROAD-SPECTRUM ANTIBIOTICS · SYSTEMIC HEPARIN · REVASCULARISATION BY EMBOLECTOMY, THROMBOLYSIS OR BYPASS · RESECTION OF NON-VIABLE BOWEL · A PLANNED SECOND-LOOK LAPAROTOMY · then RATE OR RHYTHM CONTROL AND LONG-TERM ANTICOAGULATION.** VERIFY.",
+    "**Do not miss: RUPTURED ABDOMINAL AORTIC ANEURYSM in any older person with central pain and shock · STRANGULATION — fever, tachycardia, localised peritonism, rising lactate · CLOSED-LOOP OBSTRUCTION · ISCHAEMIC BOWEL IN A PATIENT WHOSE PAIN IS FAR WORSE THAN THE ABDOMEN LOOKS.**",
+    "**Avoid: WITHHOLDING OPIOID ANALGESIA FOR FEAR OF MASKING SIGNS — THAT PRACTICE IS OBSOLETE AND IS NOW SCORED AGAINST YOU; give analgesia and say you will re-examine regularly · RELYING ON A PLAIN FILM OR ON THUMBPRINTING for small bowel ischaemia · SCANNING LOCALLY AND THEN TRANSFERRING, which costs the hours that decide whether bowel survives.**",
+    "**SA pathway: Wallaroo and Kadina have NO ON-SITE GENERAL OR VASCULAR SURGERY OVERNIGHT. Stabilise locally while you RING THE RECEIVING REGISTRAR AND MedSTAR 1300 13 12 33. Suspected mesenteric ischaemia needs A CENTRE WITH CT ANGIOGRAPHY AND VASCULAR SURGERY — RETRIEVE EARLY. RFDS for fixed-wing transfer; TIS National 131 450.**"
    ],
-   "fails": [
-    "Missing the mismatch — accepting a soft abdomen as reassurance in a man with 10/10 pain",
-    "Never asking about an irregular heartbeat/AF, post-prandial pain or weight loss; never asking pulse rhythm from the examiner",
-    "Not probing the dark stool; not requesting DRE stool colour",
-    "Ordering a plain CT or AXR instead of CT angiography; waiting for the scan before calling surgery/vascular; treating as SBO with drip-and-suck alone",
-    "No lactate; no anticoagulation discussion; no acknowledgement of the severity to the patient"
-   ],
-   "numbers": [
-    "Pain out of proportion · pulse 90 irregular · 10/10 constant · ~6 kg loss · months of post-prandial pain",
-    "Lactate + VBG now (normal early ≠ excluded) · CT angiography, not plain CT · heparin once bleeding excluded VERIFY · surgery + vascular before the scan",
-    "Embolus ~50% (AF) · thrombosis on chronic stenosis · NOMI · MVT · thumbprinting = colonic · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Acute mesenteric ischaemia** — the answer",
+     "**PAIN OUT OF PROPORTION, IRREGULAR PULSE, DARK STOOLS, vascular history**",
+     "**AF, previous emboli, POST-PRANDIAL PAIN, FOOD FEAR, not anticoagulated**",
+     "**LACTATE AND VBG; CT ANGIOGRAPHY; heparin; vascular and surgical referral** — EMERGENCY"
+    ],
+    [
+     "**Acute-on-chronic mesenteric ischaemia**",
+     "**MONTHS OF PAIN AFTER EATING, FOOD AVOIDANCE, WEIGHT LOSS, then sudden severe constant pain**",
+     "**'Do you get cramping pain after meals, and have you been avoiding food?'**",
+     "**A CHRONIC STENOSIS THAT HAS THROMBOSED ACUTELY — CT angiography, revascularisation** — EMERGENCY"
+    ],
+    [
+     "**Small bowel obstruction — adhesions, hernia, tumour, volvulus**",
+     "**COLICKY central pain, VOMITING, DISTENSION, NO FLATUS, previous surgery or a scar**",
+     "**Last flatus and motion; vomit colour; SCAR ON INSPECTION**",
+     "Erect and supine AXR; CT with contrast for LEVEL AND CAUSE — EMERGENCY"
+    ],
+    [
+     "**Strangulated hernia**",
+     "**Groin or umbilical lump, vomiting**",
+     "**IS IT TENDER? IS IT REDUCIBLE?**",
+     "**TENDER AND IRREDUCIBLE — THEATRE, NOT IMAGING** — EMERGENCY"
+    ],
+    [
+     "**Ruptured abdominal aortic aneurysm**",
+     "**SUDDEN CENTRAL OR BACK PAIN, COLLAPSE, PULSATILE MASS, older smoker**",
+     "Back pain, syncope, known aneurysm",
+     "**BEDSIDE ULTRASOUND; THEATRE. DO NOT MISS in any older person with central pain and shock** — EMERGENCY"
+    ],
+    [
+     "**Ischaemic colitis — a DIFFERENT disease**",
+     "**LARGE BOWEL, WATERSHED AT THE SPLENIC FLEXURE, low-flow; CRAMPY LEFT-SIDED PAIN WITH BLOODY DIARRHOEA**",
+     "**THUMBPRINTING on film or CT — A COLONIC SIGN**",
+     "**USUALLY SETTLES WITH SUPPORTIVE CARE; colonoscopy once settled**"
+    ],
+    [
+     "**Upper GI bleed — peptic ulcer**",
+     "**BLACK TARRY STOOL, epigastric pain, NSAIDs or anticoagulants**",
+     "**'Black and tarry, or dark red?'; ANTI-INFLAMMATORIES AND BLOOD THINNERS**",
+     "FBC, urea, group and hold; **gastroscopy**; erect CXR if perforation suspected"
+    ],
+    [
+     "Acute pancreatitis",
+     "**Epigastric pain radiating to the back, vomiting, alcohol or gallstones**",
+     "Alcohol history, gallstones, lipase",
+     "**Lipase; ultrasound for gallstones**"
+    ],
+    [
+     "**Diabetic ketoacidosis**",
+     "**Abdominal pain with THIRST, POLYURIA, vomiting, Kussmaul breathing**",
+     "**Capillary glucose AND KETONES in the office tests**",
+     "**VBG, ketones, glucose — DKA PRESENTS AS ABDOMINAL PAIN**"
+    ],
+    [
+     "Pseudo-obstruction · shingles before the rash · urinary retention",
+     "Elderly, electrolyte disturbance, opioids; **a dermatomal band of pain**; a palpable bladder",
+     "Electrolytes and medications; **inspect the skin**; bladder scan",
+     "Correct electrolytes, stop culprit drugs; antivirals; catheterise"
+    ]
    ]
   },
   "source": "Central_Abdominal_Pain_2_Case_Tasks_Script_Notability.pdf Version C (Reg Colman, 60, 10/10 generalised pain with a soft abdomen, irregular pulse, dark stools, post-prandial pain and weight loss — acute mesenteric ischaemia; stem reconstructed)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Mid GI › Central_Abdominal_Pain_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Abdomen",
-    "SOFT, mild tenderness only"
-   ],
-   [
-    "Bowel sounds",
-    "Present"
-   ],
-   [
-    "Pulse",
-    "Irregularly irregular"
-   ],
-   [
-    "Groins",
-    "No lump"
-   ],
-   [
-    "Rectal examination",
-    "Dark stool on the glove"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Not saying aloud 'the pain is out of proportion to the examination findings' — ten out of ten, constant and unbearable, and the examiner reports a soft, barely tender abdomen with bowel sounds present; that mismatch IS the diagnosis, and it is the sentence the examiner is listening for (★)",
-   "FAIL — Never asking the ischaemia block — 'any racing or irregular beating of your heart? ever been told you have atrial fibrillation? heart attacks, strokes, clots in the legs? do you get cramping pain after meals, and have you been avoiding food because of it?' → the flutter someone once mentioned, months of post-prandial pain, six kilos lost; and ask for the pulse rhythm by name — irregularly irregular",
-   "FAIL — Not probing the dark stool — 'black and tarry, or dark red? any particular smell? are you taking iron tablets or anything with bismuth?'; dark stool on the glove at the rectal examination",
-   "DO — Stability first, analgesia, the pain characterised (all over, constant — versus waves), vomiting, the obstruction and cause blocks still asked (previous surgery, groin lump, weight loss, PR blood, habit), medicines incl. blood thinners — on any? missed? — and anti-inflammatories; the seven examination steps by name with the rectal",
-   "SAY — 'Reg, I am worried the blood supply to your bowel has been blocked, most likely by a small clot thrown from your irregular heartbeat; an irregular heartbeat lets blood pool and form a small clot; if that clot travels to an artery feeding the bowel, the bowel is starved of blood — which hurts a great deal even though there is little to feel from outside'",
-   "SAY — The ranked reasoning to the examiner: 'three things push me towards a blocked blood supply rather than a blocked bowel: the pain is out of proportion to a soft abdomen; the pulse is irregularly irregular, a source of clot; and months of post-prandial pain with weight loss mean a narrowed artery may now have thrombosed — I would take a lactate now, request CT angiography, and involve the surgical and vascular teams before the scan rather than after it'; thumbprinting is colonic (ischaemic colitis), not this; a ruptured AAA (older smoker, central and back pain, faint, pulsatile mass) means stop taking a history and say so"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-120",
