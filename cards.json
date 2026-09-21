@@ -25533,9 +25533,8 @@
  {
   "id": "MED-98",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 240,
-  "setting": "Regional South Australian ED; you are the resident. Vitals on arrival in the stem. Findings given only if requested specifically — the examiner answers only the question asked ('any added sounds?' → 'no'). Five variants share this stem and differ only in the findings.",
   "stem": [
    "Gary, 40, brought in by his tennis partners after he collapsed on court this morning. BP 110/70, PR 84 regular, RR 12, T 36.5, SpO2 98% RA, GCS 15."
   ],
@@ -25544,134 +25543,215 @@
    "Ask the examiner for the physical examination findings you want — given only if requested specifically",
    "Explain your most likely diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes: 4 history · 2 examination · 15 s diagnosis · 15 s reasons · 35 s differentials · 25 s plan. Vitals/stability · WIPE, acknowledge · ★ complete LOC, duration, first time · ★ seizure screen ×3 · ★ 'any warning at all?' → none — say the deduction aloud · ★ 'mid-point, or had you just stopped?' → mid-rally · heat/meals/fluids (the decoy) · emotion, head injury, fever/rash · after ×3 incl. injuries · signposted CNS · ★ 'any chest pain?' → yes — site, radiation, quality one at a time · ★ SOB · palpitations, oedema, cough/haemoptysis/pleuritic/calf/travel · GI · hyperventilation/stress · SADMA · BP/sugar/lipids in one sentence · murmur/rheumatic fever · ★ FHx sudden death · examination: general, postural BP, pulse character (slow-rising, low volume, narrow PP), neuro; CVS inspection/palpation (JVP, apex displaced/heaving, thrill, heave); ★ 'are there any MURMURS or added sounds?' → site · timing · radiation · A2 · ★ carotid bruits; RS, abdo, limbs; ECG, BSL, dipstick · aortic stenosis in 15 s · trio + murmur · differentials across ≥4 systems · admit, monitor, troponin/serial ECG, echo, cardiology · no tennis, ★ no driving + SA notification · return if recurrent, chest pain, SOB at rest.",
+  "findings": [
+   [
+    "FINDINGS ARE GIVEN ONLY IF YOU ASK FOR THEM SPECIFICALLY",
+    "BP 110/70 · PR 84 REGULAR · RR 12 · T 36.5 · SpO2 98% RA · GCS 15, alert and orientated. Ask for vitals AND 'IS HE HAEMODYNAMICALLY STABLE?' before you sit down"
+   ],
+   [
+    "THE TRAP THAT HAS FAILED REAL CANDIDATES",
+    "A candidate asked 'ARE S1 AND S2 NORMAL?' — 'yes' — and 'ARE THERE ANY ADDED SOUNDS?' — 'no' — AND WAS NEVER TOLD ABOUT THE MURMUR, because THE EXAMINER IS INSTRUCTED TO ANSWER ONLY WHAT IS ASKED. ASK FOR 'MURMURS' BY NAME, then SITE, TIMING, RADIATION"
+   ],
+   [
+    "THE PUBLISHED CRITICAL ERROR",
+    "FAILING TO REQUEST EXAMINATION FOR BOTH CAROTID AND CARDIAC BRUITS"
+   ],
+   [
+    "The murmur, once you ask properly",
+    "EJECTION SYSTOLIC MURMUR, LOUDEST AT THE RIGHT SECOND INTERCOSTAL SPACE, RADIATING TO THE CAROTIDS. Severity signs to ask for: LATE PEAK · SOFT OR ABSENT A2 · SLOW-RISING LOW-VOLUME PULSE · NARROW PULSE PRESSURE · A THRILL"
+   ],
+   [
+    "The rest of the examination",
+    "Alert, NO pallor, NO dehydration, NO rash, NO injury · NO POSTURAL DROP · pulse 84 regular · neurological examination NORMAL · JVP not raised · PROMINENT BUT UNDISPLACED APEX BEAT, forceful — CONCENTRIC HYPERTROPHY, NOT DILATATION · chest clear · abdomen and limbs normal · ECG NORMAL · BSL NORMAL"
+   ],
+   [
+    "A NORMAL ECG DOES NOT EXCLUDE SEVERE AORTIC STENOSIS",
+    "THE ECHOCARDIOGRAM DOES THE WORK"
+   ],
+   [
+    "WHAT HE WILL NOT VOLUNTEER",
+    "THE ROLE-PLAYER IS BRIEFED NOT TO VOLUNTEER THE CHEST TIGHTNESS OR THE BREATHLESSNESS. IF YOU DO NOT ASK, IT DOES NOT EXIST. On asking: HEAVY CENTRAL CHEST PAIN RADIATING TO THE LEFT ARM AND NECK DURING PLAY, plus EXERTIONAL BREATHLESSNESS"
+   ],
+   [
+    "What he does say",
+    "'I BLACKED OUT — I GOT NO WARNING AT ALL' · it happened WHILE PLAYING TENNIS · OUT FOR A FEW MINUTES · FIRST EPISODE · 'MY MATES WERE RIGHT THERE' — use them: jerking, duration, pallor · cholesterol 'HIGH-NORMAL' 3–4 years ago, A RISK FACTOR NOT A DIAGNOSIS"
+   ],
+   [
+    "VERSION B — the hypertensive variant",
+    "IDENTICAL STEM, but BP 158/94 and SIX MONTHS OF BREATHLESSNESS CLIMBING STAIRS. SAME MURMUR. STILL AORTIC STENOSIS — add BP control and cardiovascular risk to the plan, but DO NOT LET THE RAISED BP DRAG YOU INTO A HYPERTENSION STATION"
+   ],
+   [
+    "VERSION C — the family history twist",
+    "Patient aged 28, BROTHER DIED SUDDENLY AT 32. MURMUR LOUDER ON STANDING AND VALSALVA, SOFTER ON SQUATTING. JERKY CAROTID UPSTROKE → HYPERTROPHIC CARDIOMYOPATHY. Screen relatives, avoid competitive sport"
+   ]
+  ],
+  "findingsLabel": "Findings only on request — the murmur you must name, and what he never volunteers",
+  "must": [
+   "FAIL — Asking for 'added sounds' instead of naming murmurs, then never hearing about it.",
+   "FAIL — Accepting 'chest pain' and moving on without site, radiation and quality.",
+   "FAIL — Over-explaining the valve anatomy and never delivering the differential list.",
+   "FAIL — No driving or exertion advice before discharge.",
+   "ASK — Are there any murmurs? Where best heard, what timing, does it radiate?",
+   "ASK — Did you get any warning signs at all before you fell?"
+  ],
   "back": {
-   "dx": "Aortic stenosis (commonest cause at 40: bicuspid valve) — exertional syncope with the triad: collapsed mid-rally chasing a ball, complete LOC 2–3 min, first ever, no jerking/tongue bite/incontinence, ★ no warning at all, warm day but drinking between games and had breakfast (the decoy), clear-headed on waking, looked washed out, grazed elbow; ★ chest pain while playing — left/central, radiating down the left arm and up the neck, heavy 'like a weight' (exertional angina — hold both ACS and AS; you haven't listened yet); ★ more puffed on court this season; no palpitations/oedema/PE features; non-smoker, 6–8 SD/week, no meds; cholesterol high-normal 3–4 years ago, BP normal, no diabetes, no known murmur/rheumatic fever, no FHx sudden death. Examination: no postural drop; pulse 84 regular (ask character — slow-rising/low volume/narrow pulse pressure); neuro normal; JVP not raised; ★ prominent but undisplaced LV impulse (pressure overload, concentric hypertrophy — say so), no thrill; S1 S2 normal; ★ murmur — aortic area (R 2nd ICS), systolic, radiating to the carotids, no separate carotid bruit; chest clear; abdomen normal; no oedema/calf tenderness; ECG, BSL normal (a normal ECG doesn't exclude structural disease → echo). 15-second diagnosis: 'the aortic valve is the gateway between your heart and the main blood tube carrying blood to your body — in your case that gateway has become narrowed'; two reasons: the trio with exercise, the murmur. Differentials by system: heart — MI/blocked artery (ECG normal, troponin), arrhythmia (no palpitations), HOCM, pericarditis, PE; brain — seizure, stroke, bleed, meningitis, SOL; chemistry — glucose, salts; simple — dehydration, heat, standing faint; drugs/alcohol/panic. Plan: admit on a monitor, bloods + serial ECGs (exclude MI), echo, cardiology today; valve replacement if tight — results very good; no tennis or heavy exertion; ★ no driving until cleared — SA notification, done together; return if recurrent, chest pain, SOB at rest; letter for the employer, social work. Hidden agenda: 'am I going to drop dead?' (a colleague's brother); 'will I lose my licence — I drive for work?'.",
+   "dx": [
+    "**SEVERE SYMPTOMATIC AORTIC STENOSIS — obstruction to LEFT VENTRICULAR OUTFLOW at the aortic valve. IN A 40-YEAR-OLD THE USUAL CAUSE IS A BICUSPID AORTIC VALVE; calcific degenerative disease dominates OVER 65; RHEUMATIC DISEASE IS A THIRD CAUSE AND MATTERS IN ABORIGINAL AND TORRES STRAIT ISLANDER PATIENTS.**",
+    "**WHY IT FAINTS: FIXED OUTFLOW OBSTRUCTION PLUS EXERCISE-INDUCED PERIPHERAL VASODILATATION → CARDIAC OUTPUT CANNOT RISE → CEREBRAL HYPOPERFUSION. Sudden, no prodrome, rapid full recovery.**",
+    "**THE TRIAD: EXERTIONAL ANGINA · EXERTIONAL DYSPNOEA · EXERTIONAL SYNCOPE. He has ALL THREE.** **SYMPTOM ONSET IS THE INFLECTION POINT: untreated, mean survival is roughly 5 YEARS WITH ANGINA, 3 YEARS WITH SYNCOPE, 2 YEARS WITH HEART FAILURE.** **SEVERE = valve area BELOW 1.0 cm², mean gradient 40 mmHg OR MORE, peak jet velocity 4.0 m/s OR MORE.**",
+    "**THE DISCRIMINATING ISSUE IS NOT NAMING AORTIC STENOSIS. IT IS TIME DISCIPLINE IN THE LAST TWO MINUTES: candidates who diagnose correctly THEN SPEND 90 SECONDS TEACHING CARDIAC ANATOMY RUN OUT OF TIME AND NEVER DELIVER THE DIFFERENTIAL LIST — WHICH IS AN EXPLICITLY MARKED TASK.**",
+    "**THE STATION GIVES YOU THREE CHANCES TO LOSE IT: 1 ACCEPTING 'CHEST PAIN' WITHOUT EXPLORING IT · 2 ASKING FOR 'ADDED SOUNDS' INSTEAD OF NAMING MURMURS, AND FAILING TO ASK SITE, TIMING, RADIATION AND BOTH CAROTID AND CARDIAC BRUITS · 3 OVER-EXPLAINING THE VALVE.**",
+    "**THE 15-SECOND EXPLANATION, VERBATIM: 'most likely you have a condition called AORTIC STENOSIS. The aortic valve is THE GATEWAY BETWEEN YOUR HEART AND THE MAIN BLOOD TUBE that carries blood and oxygen out to your organs — and in your case THAT GATEWAY HAS BECOME NARROWED.'**",
+    "**THEN JUSTIFY IT IN 15 SECONDS — NEVER ASSERT WITHOUT REASONS: 'FIRST, you have THE WELL-KNOWN TRIO OF SYMPTOMS that goes with it — CHEST PAIN, SHORTNESS OF BREATH, AND BLACKING OUT WITH EXERCISE. SECOND, when I listened to your heart I HEARD AN ABNORMAL SOUND THAT FITS WITH THAT NARROWING.'**",
+    "**MARKS ARE SPREAD THIN ACROSS SIX ASSESSED THINGS — DEPTH IN ONE AREA CANNOT RESCUE AN UNTOUCHED AREA. BETTER TO TOUCH EVERY SYSTEM BRIEFLY THAN TO COMPLETE ONE SYSTEM PERFECTLY. BREADTH SCORES HERE.** Questions you may drop if the clock beats you: **weather preference, long-haul travel, jaundice, detailed occupational history.**",
+    "**ENDOCARDITIS PROPHYLAXIS — an examiner probe. Under current Australian Therapeutic Guidelines, ISOLATED AORTIC STENOSIS ALONE IS NOT AN INDICATION FOR ROUTINE ANTIBIOTIC PROPHYLAXIS before dental procedures. Prophylaxis is reserved for DEFINED HIGH-RISK CONDITIONS — a PROSTHETIC VALVE, PREVIOUS ENDOCARDITIS, specified congenital lesions, and RHEUMATIC HEART DISEASE IN ABORIGINAL AND TORRES STRAIT ISLANDER PATIENTS.** Say: **'I'd check current Therapeutic Guidelines for this patient's specific risk category.'**",
+    "**SA DRIVING: cardiac syncope AND symptomatic severe aortic stenosis make a person NOT FIT TO HOLD AN UNCONDITIONAL LICENCE until the cause is treated and A SPECIALIST CLEARS THEM; commercial standards stricter again. IN SA AND THE NT THE DRIVER MUST NOTIFY AND THE DOCTOR HAS A STATUTORY DUTY TO REPORT to the Registrar of Motor Vehicles — unlike most other states, where reporting is DISCRETIONARY.** VERIFY."
+   ],
    "plan": [
     [
      "0:00",
-     "'Vital signs — BP, pulse, RR, sats, temperature; is he haemodynamically stable?' → stable · WIPE, 'is it alright if I call you Gary?' · 'I know how stressful and concerning this must be — let's go through it together'"
+     "**To the examiner before you sit: blood pressure, pulse rate, respiratory rate, saturation, temperature — AND IS HE HAEMODYNAMICALLY STABLE?**"
     ],
     [
-     "0:25",
-     "★ 'Complete LOC, or aware?' → completely · duration (a few minutes) · ever before (never) · ★ 'your friends were with you — jerky movements? tongue? wet or soil?' → no ×3 → 'that makes a fit much less likely'"
+     "0:15",
+     "**WIPE and acknowledge: 'I know how stressful and concerning this must be. Let's go through a few things together — I'll ask you some questions, then I'll examine you, and WE'LL TRY TO FIND THE CAUSE TOGETHER.'**"
     ],
     [
-     "1:05",
-     "★ 'Did you get any warning at all — dizziness, light-headedness, sweating, nausea, ringing, vision going dark?' → none → 'that's important' (deduction aloud) · ★ 'mid-point, or had you just stopped?' → mid-rally · hot/humid (warm, usual) · standing long · meals (breakfast) · fluids (water between games) · emotion · head injury, fever, rash → no"
+     "0:30",
+     "**CONFIRM IT REALLY IS SYNCOPE: did you lose consciousness COMPLETELY, or were you AWARE of what was going on · HOW LONG were you unconscious · HAS THIS EVER HAPPENED BEFORE?**"
     ],
     [
-     "1:55",
-     "After: confused/drowsy or normal straight away (normal) · pale (washed out) · ★ injuries (elbow graze)"
+     "0:50",
+     "**EXCLUDE SEIZURE — three questions, all must be asked: did your friends say you had any JERKY MOVEMENTS · did you BITE YOUR TONGUE · did you WET OR SOIL YOURSELF?** **The fourth pillar, POST-EVENT CONFUSION, comes in the after block.**"
     ],
     [
-     "2:15",
-     "Signpost 'before or after the collapse' · CNS → no · ★ 'any chest pain?' → yes → 'where exactly? does it travel? what does it feel like?' one at a time → left/central, arm and neck, heavy · ★ SOB — exercise, flat, night? → more puffed this season · palpitations, ankle swelling, cough/haemoptysis/pleuritic/calf/flights/surgery, GI incl. melaena, fast breathing/tingling/stress → no"
+     "1:10",
+     "**THE MONEY QUESTION: 'DID YOU GET ANY WARNING SIGNS AT ALL BEFORE YOU FELL — DIZZINESS, LIGHT-HEADEDNESS, SWEATING, NAUSEA, RINGING IN YOUR EARS, OR YOUR VISION GOING DARK?'** Then **SAY THE DEDUCTION OUT LOUD: 'no warning signs — that makes me think about a cardiac cause.'**"
     ],
     [
-     "3:10",
-     "SADMA: smoke (no), alcohol (6–8/week), drugs (no), meds started/stopped (none), allergies · 'ever been told high BP, high sugar, or high fats?' (one sentence) → cholesterol high-normal · 'a murmur, or rheumatic fever as a child?' · ★ 'family history of heart attacks or strokes — anyone died suddenly at a young age?'"
+     "1:30",
+     "**'WHAT EXACTLY WERE YOU DOING AT THE MOMENT IT HAPPENED — WERE YOU MID-PLAY, OR HAD YOU JUST STOPPED?'** **DURING exertion means obstruction or arrhythmia; AFTER STOPPING is more often reflex.** Then **hot or humid day · standing a long time · missed meals and fluids · anything frightening or emotional · head injury before · fever or rash.**"
+    ],
+    [
+     "2:00",
+     "**DURING AND AFTER: when you came round, were you CONFUSED OR DROWSY, or back to normal straight away · did anyone say you LOOKED PALE OR YOUR LIPS WENT BLUE · DID YOU INJURE YOURSELF — head, face, shoulder, wrist?**"
+    ],
+    [
+     "2:20",
+     "**Signpost the review: 'for each one, tell me if you had it BEFORE OR AFTER the collapse.' CNS: headache · blurred or double vision · slurred speech · weakness or numbness anywhere?**"
+    ],
+    [
+     "2:35",
+     "**CVS — AND EXPLORE THE CHEST PAIN, DO NOT ACCEPT IT: 'ANY CHEST PAIN?' → 'WHERE EXACTLY? DOES IT TRAVEL ANYWHERE? WHAT DOES IT FEEL LIKE?' Then SHORTNESS OF BREATH · RACING OR POUNDING OF THE HEART · ANKLE SWELLING · BREATHLESSNESS LYING FLAT OR WAKING YOU AT NIGHT.**"
+    ],
+    [
+     "3:00",
+     "**RESPIRATORY: cough · haemoptysis · pain worse on breathing in · CALF PAIN OR SWELLING · RECENT LONG FLIGHTS, SURGERY OR IMMOBILITY. GI: nausea or vomiting · tummy pain · BLACK OR BLOODY MOTIONS. ENDOCRINE: ever been told you have diabetes?**"
+    ],
+    [
+     "3:20",
+     "**PSYCH, briefly: breathing very fast before · tingling in hands or around the mouth · anything stressful going on?**"
+    ],
+    [
+     "3:30",
+     "**SADMA AND HISTORY, WITH TWO COMBINED QUESTIONS THAT SAVE THIRTY SECONDS: smoking, alcohol per week, recreational drugs · regular medications AND ANYTHING STARTED OR STOPPED RECENTLY, allergies · 'HAVE YOU EVER BEEN TOLD YOU HAVE HIGH BLOOD PRESSURE, HIGH BLOOD SUGAR, OR HIGH FATS IN YOUR BLOOD?' · 'HAVE YOU EVER BEEN TOLD YOU HAVE A HEART MURMUR, OR HAD RHEUMATIC FEVER AS A CHILD?'**"
+    ],
+    [
+     "3:50",
+     "**FAMILY: any heart attacks or strokes · HAS ANYONE DIED SUDDENLY AT A YOUNG AGE, or had episodes like this?** **Sudden cardiac death under 50 raises HOCM, LONG QT, BRUGADA, ARVC.**"
     ],
     [
      "4:00",
-     "Examination: general — alert, pallor, dehydration, rash, injuries · postural drop · pulse rate, rhythm, ★ character — slow-rising? low volume? narrow pulse pressure? · neuro — cranial nerves, fundoscopy, limbs → all normal, no drop"
+     "**EXAMINATION REQUESTS, NAMED: general appearance · POSTURAL DROP · PULSE CHARACTER, IS IT SLOW-RISING, IS THE PULSE PRESSURE NARROW · neurological · JVP, APEX BEAT DISPLACED OR HEAVING, THRILL IN THE AORTIC AREA, PARASTERNAL HEAVE.**"
     ],
     [
      "4:45",
-     "CVS: inspection — JVP raised? visible apex? scars/stigmata? · palpation — apex displaced? heaving? thrill in the aortic area? parasternal heave? → prominent LV impulse, undisplaced, no thrill → 'pressure overload with concentric hypertrophy' · ★ auscultation: 'S1 and S2 normal? are there any MURMURS or added sounds?' → murmur → ★ 'where best heard? timing — systolic or diastolic? radiate? is A2 soft or absent? ★ any carotid bruits?' → aortic area, systolic, to the carotids → 'an ejection systolic murmur radiating to the carotids' · RS, abdomen, limbs (oedema, calves) · ECG, BSL, dipstick"
+     "**THEN THE MURMUR, BY NAME, WITH THE THREE FOLLOW-UPS — AND BOTH CAROTID AND CARDIAC BRUITS.** Then **respiratory, abdomen, limbs, and the OFFICE TESTS: ECG, blood sugar, urine dipstick.**"
     ],
     [
      "6:00",
-     "★ 15 s: 'most likely aortic stenosis — the aortic valve is the gateway… narrowed' · 15 s reasons: the trio with exercise; the murmur · 'serious?' → 'we take it seriously, but it's very treatable, and you've come to the right place' · 35 s differentials across heart, brain, chemistry, simple, drugs/psych"
+     "**THE 15-SECOND EXPLANATION, THEN THE TWO REASONS. THEN STOP — DO NOT TEACH ANATOMY.**"
     ],
     [
-     "7:15",
-     "Plan: admit on a monitor, bloods and repeat tracings (not a heart attack), echo, cardiologist today; valve replacement if tight, results very good · no tennis/heavy exertion · ★ 'please don't drive until the specialist has cleared you — in SA I'm also required to notify the licensing authority, and I'd rather we do that together' · return if blackout, chest pain, SOB at rest · 'will I play again?' → very often, after treatment; the cardiologist's call · summary · questions"
+     "6:30",
+     "**SPRAY THE DIFFERENTIALS ACROSS SYSTEMS: HOCM, arrhythmia, ACS, pulmonary embolism, aortic dissection, seizure, intracranial pathology, hypoglycaemia, vasovagal and heat, drugs.** Then **SAFETY-NET: STOP TENNIS AND HEAVY EXERTION · NO DRIVING · TRY NOT TO BE ALONE · come straight back for another blackout, chest pain, breathlessness at rest or a racing heart.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Examiner, before I start, may I have the vital signs?' / 'I know how stressful and concerning this must be, Gary. Let's go through it together.' / 'Did you lose consciousness completely, or were you aware of your surroundings?'",
-    "'Did your friends mention any jerky movements, tongue biting, or wetting yourself?' / ★ 'Did you get any warning at all before you fell?' / ★ 'Were you mid-point, or had you just stopped playing?'",
-    "'For each symptom, tell me whether it was before or after the collapse.' / ★ 'Any chest pain?' → 'Where exactly? Does it travel anywhere? What does it feel like?' / ★ 'Have you been short of breath — with exercise, lying flat, or at night?'",
-    "'Have you ever been told you have high blood pressure, high blood sugar, or high fats in your blood?' / 'Ever a heart murmur, or rheumatic fever as a child?' / 'Has anyone in your family died suddenly at a young age?'",
-    "'Pulse — rate, rhythm, and its character: is it slow-rising or low volume, and is the pulse pressure narrow?' / 'On palpation — is the apex beat displaced? Is it heaving? Is there a thrill in the aortic area?' → 'prominent but undisplaced — pressure overload with concentric hypertrophy'",
-    "★ 'On auscultation — are S1 and S2 normal? Are there any murmurs or added sounds?' → ★ 'Where is it best heard? What is its timing? Does it radiate anywhere? Is A2 soft or absent? And are there any carotid bruits?' (the published critical error is failing to ask for both carotid and cardiac bruits)",
-    "★ 'Most likely you have a condition called aortic stenosis. The aortic valve is the gateway between your heart and the main blood tube that carries blood and oxygen to your body — and in your case that gateway has become narrowed.' (15 seconds — no chambers, no great vessels)",
-    "★ 'Two reasons: you have the well-known trio — chest pain, breathlessness and blacking out, all with exercise — and when I listened to your heart I heard an abnormal sound that fits with that narrowing.' / 'It's serious, but it's very treatable, and you've come to the right place.'",
-    "★ 'No tennis, no heavy exertion, and please don't drive until the specialist has cleared you — here in South Australia I'm also required to notify the licensing authority, and I'd rather we do that together.'",
-    "'Am I going to drop dead?' → 'A fair worry. This condition can be dangerous if left alone — exactly why we're admitting you today. But it's one of the most fixable heart problems there is: once the valve is replaced, most people go back to a normal life and life expectancy. The risky thing would be carrying on playing without knowing.' / 'My licence — I drive for work' → 'You can't drive for now — not until the cause is treated and a specialist clears you. Once the valve is fixed, driving is usually restored. A letter for your employer, and our social worker if the time off is a problem.'"
-   ],
    "pefe": [
-    "Role-player: Gary Whitfield, 40, building project manager, Port Pirie; wife, children 9 and 12; social tennis twice a week; non-smoker; 6–7 beers/week; no meds/allergies; cholesterol 'high normal' 3–4 y ago, BP normal, no diabetes/murmur/rheumatic fever; no FHx. Does NOT volunteer chest pain or breathlessness — 'any other symptoms?' → 'not really'; gives one element per question for site/radiation/quality. Over-explained anatomy >20 s → 'sorry doctor, what does that actually mean for me?'; 'nothing to worry about' → 'oh good, so I can play on Thursday?'; no plan → 'so what happens now?'. Hidden agenda late/last 30 s: 'am I going to drop dead? and will I lose my licence — I drive for work'",
-    "Examiner: alert, no pallor/dehydration/rash/injuries · no postural drop · pulse 84 regular (character often 'normal/not assessed' — ask anyway; severe variant → slow-rising) · neuro normal · JVP not raised · prominent LV impulse, apex not displaced, no thrill · S1 S2 normal · murmur: aortic area R 2nd ICS, systolic, radiates to the carotids, no separate carotid bruit · chest clear · abdomen normal · no oedema/calf tenderness · ECG normal · BSL normal · dipstick not available",
-    "Variant B — BP 158/94 + six months exertional dyspnoea: one sentence — 'your blood pressure is also up, adding strain on a heart already working against the valve; we'll treat it — but the valve is the priority' (don't run a hypertension counselling station) · Variant C — 28-year-old, brother died suddenly at 32: HOCM — ★ ask if the murmur changes with manoeuvres (louder on standing/Valsalva, softer on squatting/handgrip — the OPPOSITE of AS, which softens with Valsalva); jerky/bisferiens carotid upstroke; family screening (children, brother); same echo + ECG",
-    "Variant D — the decoy realised: prodrome present, hot day, missed lunch, slow recovery with pallor, normal heart/ECG → vasovagal — explanation changes entirely; counter-pressure, fluids, meals, get up slowly; return if no warning, during exercise, or chest pain. Five variants share this stem — run the structure, let the findings decide",
-    "Severe AS: valve area <1.0 cm², mean gradient ≥40 mmHg, peak velocity ≥4.0 m/s · untreated symptomatic survival: angina ~5 y, syncope ~3 y, heart failure ~2 y · severity signs: late-peaking murmur, soft/absent A2, slow-rising low-volume pulse, narrow pulse pressure, thrill · commonest cause at 40: bicuspid valve · seizure exclusion ×4: jerking, tongue, incontinence, postictal confusion",
-    "SA: Port Pirie ED → cardiology (RAH/FMC) — PATS; echo; Registrar of Motor Vehicles notification (Motor Vehicles Act 1959); MedSTAR 1300 13 12 33 for retrieval; 000"
+    "**Do now: ABC and CONTINUOUS CARDIAC MONITORING · IV access · 12-LEAD ECG looking for LVH WITH STRAIN, LBBB, conduction block, prolonged QT, ischaemic change · BEDSIDE GLUCOSE · SERIAL TROPONIN with repeat ECG to exclude ACS · FBE, UEC WITH CALCIUM AND MAGNESIUM, CRP · ERECT AND SUPINE BP · ASSESS FOR INJURIES SUSTAINED IN THE FALL.**",
+    "**Do next: TRANSTHORACIC ECHOCARDIOGRAM — THE SPECIFIC TEST AND THE ONE THAT MAKES THE DIAGNOSIS: valve area, mean gradient, peak velocity, LVH and ejection fraction, BICUSPID MORPHOLOGY, aortic root · chest X-ray · HOLTER OR INPATIENT TELEMETRY if ECG and echo are unrevealing · CORONARY ANGIOGRAPHY BEFORE VALVE SURGERY · CTPA only if PE is genuinely suspected · brain imaging ONLY for head injury or focal neurology.**",
+    "**AVOID A SHOTGUN PANEL. The published marking notes treat AN UNDIFFERENTIATED BATTERY OF TESTS AS EVIDENCE THAT THE CANDIDATE DOES NOT UNDERSTAND THE CONDITION. Name specific tests and say why.**",
+    "**DO NOT PERFORM AN EXERCISE STRESS TEST — CONTRAINDICATED in symptomatic severe aortic stenosis.** **BE VERY CAUTIOUS WITH GTN, OTHER NITRATES AND VASODILATORS — A PRELOAD-DEPENDENT, FIXED-OUTPUT VENTRICLE CAN DROP ITS BLOOD PRESSURE PRECIPITOUSLY. Avoid aggressive diuresis.**",
+    "**Definitive management: ADMIT for monitoring and EXPEDITED ECHOCARDIOGRAPHY. URGENT CARDIOLOGY — SYMPTOMATIC SEVERE AORTIC STENOSIS IS A CLASS I INDICATION FOR AORTIC VALVE REPLACEMENT. SURGICAL REPLACEMENT IS STANDARD FOR A FIT 40-YEAR-OLD — MECHANICAL VALVE MEANS LIFELONG WARFARIN with an INR target set by valve type and position; BIOPROSTHETIC MEANS LATER RE-OPERATION. TAVI IS RESERVED FOR OLDER OR HIGHER-RISK PATIENTS.** VERIFY.",
+    "**Do not miss: ACUTE CORONARY SYNDROME · VENTRICULAR ARRHYTHMIA OR COMPLETE HEART BLOCK · PULMONARY EMBOLISM · AORTIC DISSECTION · HYPOGLYCAEMIA · INTRACRANIAL HAEMORRHAGE · INJURY FROM THE FALL, including HEAD, CERVICAL SPINE AND WRIST.**",
+    "**Avoid: DISCHARGING BEFORE THE ECHOCARDIOGRAM · premature closure on ACS, because EXERTIONAL SYNCOPE PLUS A MURMUR REFRAMES THE CASE — KEEP BOTH · anchoring on the recall, since SEVERAL RECALLS SHARE THIS STEM AND DIVERGE ON THE FINDINGS · FALSE REASSURANCE. Say instead: 'IT'S SERIOUS BUT VERY TREATABLE, AND WE CAN FIX IT.'** **Advise against competitive and strenuous exertion, INCLUDING TENNIS, until the valve has been assessed.**"
    ],
-   "fails": [
-    "Asking 'any added sounds?' and accepting 'no' — never using the word MURMUR; not asking for carotid and cardiac bruits (the published critical error) ★",
-    "Closing on heat syncope because it was a warm day — the decoy outranked by exertional syncope without prodrome ★",
-    "Running an ACS station on the chest pain and never listening to the heart; or using the normal ECG to exclude structural disease and skipping echo",
-    "Teaching cardiac anatomy in the explanation so the differential task never happens; six cardiac differentials and no other system",
-    "Assuming 'collapse' = syncope; asking only one seizure question; forgetting injuries",
-    "Not establishing DURING vs after exertion; asking BP/sugar/lipids one at a time and running out of clock",
-    "No driving advice/SA notification; no exertion restriction; reassuring and discharging"
-   ],
-   "numbers": [
-    "Vitals: 110/70 · 84 reg · RR 12 · 36.5 · SpO2 98% · LOC 2–3 min · first episode · murmur ESM R 2nd ICS → carotids",
-    "Severe AS: area <1.0 cm² · mean gradient ≥40 mmHg · Vmax ≥4.0 m/s · untreated symptomatic survival: angina ~5 y · syncope ~3 y · HF ~2 y",
-    "Severity signs: late-peaking · soft/absent A2 · slow-rising low-volume pulse · narrow pulse pressure · thrill · commonest cause at 40: bicuspid valve · HOCM: louder with Valsalva/standing (AS softer)",
-    "Timing: 4 history · 2 examination · 15 s dx · 15 s reasons · 35 s DDx · 25 s plan",
-    "Registrar of Motor Vehicles SA · PATS · MedSTAR 1300 13 12 33 · 000"
+   "ddx": [
+    [
+     "**Aortic stenosis** — the answer",
+     "**Syncope ON EXERTION, NO PRODROME, exertional ANGINA and DYSPNOEA, rapid recovery**",
+     "**EJECTION SYSTOLIC MURMUR RADIATING TO THE CAROTIDS; SLOW-RISING PULSE; UNDISPLACED FORCEFUL APEX**",
+     "**TRANSTHORACIC ECHO** — urgent"
+    ],
+    [
+     "**Hypertrophic cardiomyopathy**",
+     "**Same exertional picture in a YOUNGER patient; FAMILY HISTORY OF SUDDEN DEATH**",
+     "**MURMUR LOUDER ON VALSALVA AND STANDING, SOFTER ON SQUATTING; JERKY PULSE**",
+     "**ECG (voltage criteria, deep T inversion) plus ECHO; SCREEN RELATIVES** — urgent"
+    ],
+    [
+     "**Arrhythmia — VT, complete heart block, SVT, long QT, Brugada**",
+     "**ABRUPT onset, no prodrome, PALPITATIONS, family sudden death**",
+     "**'Any racing or pounding of the heart?'; syncope WHILE SEATED OR ASLEEP**",
+     "ECG, telemetry, Holter — urgent"
+    ],
+    [
+     "**Acute coronary syndrome**",
+     "**HEAVY CHEST PAIN RADIATING TO LEFT ARM AND NECK; risk factors**",
+     "Nausea, sweating, PAIN AT REST, DYNAMIC ECG",
+     "**SERIAL ECG AND TROPONIN.** **The same language as AS — you have not diagnosed anything yet** — urgent"
+    ],
+    [
+     "**Pulmonary embolism**",
+     "Sudden dyspnoea and collapse",
+     "**PLEURITIC pain, haemoptysis, CALF SWELLING, immobility, tachycardia, HYPOXIA**",
+     "Wells score → D-dimer or CTPA — urgent"
+    ],
+    [
+     "**Aortic dissection**",
+     "**Severe chest pain RADIATING TO THE BACK OR NECK**",
+     "**TEARING pain, INTER-ARM BP DIFFERENCE, NEW DIASTOLIC MURMUR**",
+     "CT aortogram — urgent"
+    ],
+    [
+     "Vasovagal · orthostatic · carotid sinus",
+     "**Heat, standing, dehydration, missed meals**",
+     "**PRODROME, pallor, sweating, SLOW recovery; POSTURAL BP DROP**",
+     "Clinical plus postural BP"
+    ],
+    [
+     "Seizure · stroke or TIA · intracranial haemorrhage · meningitis · tumour",
+     "**Loss of consciousness for MINUTES**; thunderclap headache; fever and rash",
+     "**Jerking, tongue bite, incontinence, POST-ICTAL CONFUSION**; focal weakness, neck stiffness, early-morning headache",
+     "Collateral history; **NON-CONTRAST CT BRAIN; CT with LP if indicated** — EMERGENCY"
+    ],
+    [
+     "Hypoglycaemia · electrolytes · HEAT EXHAUSTION OR HEAT STROKE · sepsis · endocarditis",
+     "**Missed meals, diabetes medication**; hot day with heavy exertion and poor intake; fever with a new murmur",
+     "**Sweating, tremor, DOES NOT RECOVER WITHOUT GLUCOSE**; cramps, HIGH CORE TEMPERATURE, dark urine; SPLINTER HAEMORRHAGES",
+     "**BEDSIDE BSL** — IMMEDIATE. UEC, Ca, Mg, core temperature; blood cultures and echo"
+    ],
+    [
+     "Drugs · anaemia or occult GI bleed · panic or psychogenic",
+     "**Antihypertensives, diuretics, NITRATES, QT-prolonging drugs, alcohol, STIMULANTS**; pallor and melaena; fast breathing with tingling",
+     "**'Started or stopped anything recently?'**; conjunctival pallor, postural drop; situational trigger",
+     "Medication review and QTc; FBE and iron studies. **Psychogenic is a DIAGNOSIS OF EXCLUSION**"
+    ]
    ]
   },
   "source": "Exertional_Syncope_Aortic_Stenosis_2_Case_Tasks_Script_Notability.pdf (Gary Whitfield, 40, collapsed on the tennis court — aortic stenosis; Variants B–E)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Exertional_Syncope_Aortic_Stenosis_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Alert; no pallor, dehydration, rash or injuries"
-   ],
-   [
-    "Postural blood pressure",
-    "NO postural drop"
-   ],
-   [
-    "Pulse",
-    "84 regular — CHARACTER is often given as 'normal or not assessed', so ASK ANYWAY; in the severe variant it is SLOW-RISING"
-   ],
-   [
-    "Neurological",
-    "Normal"
-   ],
-   [
-    "JVP and apex",
-    "JVP not raised; PROMINENT LV IMPULSE with the apex NOT displaced; no thrill"
-   ],
-   [
-    "Heart sounds",
-    "S1 and S2 normal"
-   ],
-   [
-    "The murmur",
-    "AORTIC AREA, right 2nd intercostal space · SYSTOLIC · RADIATES TO THE CAROTIDS · no separate carotid bruit"
-   ],
-   [
-    "Chest and abdomen",
-    "Chest clear; abdomen normal"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Asking 'any added sounds?' and being told 'no' — the examiner answers only the question asked; use the word 'murmur', then site, timing, radiation, and 'any carotid bruits?'; the published critical error for this case is failing to request examination for both carotid and cardiac bruits (★)",
-   "FAIL — Never asking 'any chest pain?' and 'any shortness of breath?' directly — Gary is briefed not to volunteer either; 'any other symptoms?' gets 'not really'; then explore, don't accept: 'where exactly? does it travel? what does it feel like?' — one element per question; exertional angina and dyspnoea complete the aortic stenosis triad",
-   "FAIL — Hearing 'warm day' and closing on heat syncope — the heat is a decoy placed deliberately in the stem; syncope mid-rally with no warning at all outranks it; ask 'were you mid-point, or had you just stopped?' — during exertion is the cardiac red flag; and don't run an ACS station because the pain sounds ischaemic — you haven't listened to the heart yet",
-   "FAIL — Teaching cardiac anatomy — the four chambers, the great vessels — until the bell; 15 seconds: 'the aortic valve is the gateway between your heart and the main blood tube carrying blood to your body, and that gateway has become narrowed'; 15 seconds of reasons (the trio with exercise, the murmur); 35 seconds of differentials across heart, brain, chemistry, simple causes, drugs and stress — breadth, not six cardiac diagnoses",
-   "FAIL — 'It's nothing to worry about' ('oh good, so I can play on Thursday?'), or finishing without driving — admit on a monitor, troponins and serial ECGs, echocardiogram, cardiology today; valve replacement if tight, results very good; no tennis, no exertion, no driving until cleared — 'in South Australia I'm required to notify the licensing authority, and I'd rather do that with you'; back for another blackout, chest pain, breathlessness at rest",
-   "DO — Vitals then acknowledge his fear; confirm complete loss of consciousness and duration; all three seizure questions (marked individually); injuries; bundle BP/sugar/lipids into one sentence; murmur, rheumatic fever, family sudden death; 'prominent but undisplaced apex = pressure overload' said aloud; a normal ECG does not exclude structural disease — order the echo; run the structure and let the findings decide — in the decoy variant with prodrome, heat and a postural drop, it is vasovagal, not the valve"
-  ]
+  "promptAt": 240
  },
  {
   "id": "MED-99",
