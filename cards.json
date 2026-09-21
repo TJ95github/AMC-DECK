@@ -40345,9 +40345,8 @@
  {
   "id": "MED-167",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "Telephone station — MO on duty, no patient, a desk and a phone; the ward nurse is calling. Four tasks, but resuscitation outranks the printed order: say 'I am treating this as sepsis' and give four instructions with a read-back before listing bloods. Cultures before antibiotics, antibiotics within the hour (don't let specimens delay past ~45 min); ask what the penicillin allergy actually was before naming a drug. Automatic fails: accepting oral trimethoprim; never treating as sepsis; antibiotics before cultures with no caveat; never saying 'catheter-associated'; naming a drug without asking about the allergy.",
   "stem": [
    "Mr Trevor Nolan, 60, known BPH, attended ED two days ago in acute urinary retention; catheterised, catheter removed yesterday. Today he has re-presented exhausted and feverish. T 39.5 · BP 80/50 · tachycardic · saturations low. The ward nurse has telephoned to discuss him."
   ],
@@ -40357,79 +40356,201 @@
    "Discuss your immediate management",
    "Discuss the long-term management (may be held back — offer it once the first three are complete)"
   ],
-  "time": "8 min. 'Dr —, MO on duty — am I speaking with the nurse looking after Mr Nolan? May I take your name?' · 'tell me in your own words what's happened, and his full observations — ★ respiratory rate, conscious state, urine output, allergies' (RR 26, sats 91%, HR 122, 'a bit vague', no urine since morning, penicillin allergy) · ★ dx in both halves, causally: 'a catheter-associated urinary tract infection — seeded when he was catheterised two days ago — that has progressed to sepsis; with 80/50 he may be in septic shock — I'll know once we see the response to fluid'; four reasons: instrumented 48 h ago, 39.5, hypotensive/tachycardic, hypoxic/drowsy · 'we've got oral trimethoprim' → ★ no — 'oral isn't enough, absorption unreliable in shock' · ★ sepsis door first: (1) oxygen to 92–96% (2) two large-bore cannulae (3) 500 mL crystalloid over 15 min then repeat BP and tell me the number (4) obs every 15 min + bladder scan (retention again?) → ★ 'can you read those four back to me?' · investigations in two buckets, before antibiotics: urine MCS — midstream or from the sampling port of a NEW catheter, never the bag; bloods — two sets of blood cultures separate sites, FBE, UEC, CRP, LFT, coags, ★ VBG with lactate, BSL, group and hold; bedside — ECG, CXR ('I won't assume the urine is the only source') · 'no urine since morning' → bladder scan first (620 mL) → recatheterise, specimen from the new catheter, relieves obstruction · ★ 'before I name a drug — what does the chart say about allergies, and what actually happened?' (rash as a teenager → cephalosporin reasonable: IV ceftriaxone; or gentamicin + amoxicillin if no allergy; immediate reaction → no beta-lactams, gentamicin + advice) · within the hour, narrow at 48 h · continuous monitoring, hourly obs, strict fluid balance, hourly urine · ★ 'I'm walking down now and I'll call the registrar myself' · ring me if BP doesn't come up, more confused, stops passing urine · long term: 7 days (10–14 if slow), IV→oral when afebrile, narrow; the prostate — alpha blocker, 5-ARI, urology (TURP) — fewer catheters prevent the next one; no prophylactic antibiotics at insertion/removal · summary, 'anything worrying you I haven't covered?'",
+  "findings": [
+   [
+    "THERE IS NO PATIENT IN THE ROOM",
+    "A DESK AND A TELEPHONE. PICK THE HANDSET UP AND SPEAK FIRST: 'HELLO, THIS IS DR —, THE MEDICAL OFFICER ON DUTY. AM I SPEAKING WITH THE NURSE LOOKING AFTER MR NOLAN? MAY I TAKE YOUR NAME?' IDENTIFY BOTH ENDS"
+   ],
+   [
+    "ASK FOR THE HANDOVER — 30 seconds, scored as communication",
+    "'I HAVE READ HIS NOTES, BUT COULD YOU GIVE ME A QUICK HANDOVER IN YOUR OWN WORDS?' ASK SPECIFICALLY FOR RESPIRATORY RATE, CONSCIOUS STATE AND URINE OUTPUT — THE THREE THE STEM ALMOST ALWAYS OMITS — and ALLERGIES"
+   ],
+   [
+    "READ HIS NUMBERS OUT LOUD IN THE FIRST 30 SECONDS",
+    "T 39.5 — A REAL FEVER · BP 80/50 — MAP (80 + 2×50) ÷ 3 = 60, BELOW THE 65 TARGET · TACHYCARDIC — shock index well above 1 · LOW SATURATION — GIVE OXYGEN, DON'T JUST RECORD IT · EXHAUSTED — ASK ABOUT CONFUSION, often the only red flag in an older man. A BLOOD PRESSURE OF 80/50 WITH A FEVER OF 39.5 IS THE WHOLE STEM"
+   ],
+   [
+    "THE TIMING IS THE DEFINITION",
+    "CAUTI = SYMPTOMS OF URINARY INFECTION WITH A CATHETER IN SITU OR REMOVED WITHIN THE LAST 48 HOURS, NO OTHER SOURCE. HE IS AT 24 HOURS"
+   ],
+   [
+    "'SHOULD I JUST GIVE HIM SOME ORAL ANTIBIOTICS AND WE'LL REVIEW IN THE MORNING?'",
+    "'NO — HIS BLOOD PRESSURE IS 80/50 WITH A TEMPERATURE OF 39.5. I AM TREATING THIS AS SEPSIS. HE NEEDS INTRAVENOUS ACCESS, FLUIDS AND INTRAVENOUS ANTIBIOTICS NOW.' ORAL ANTIBIOTICS IN A HYPOTENSIVE PATIENT — ABSORPTION IS UNRELIABLE"
+   ],
+   [
+    "'HE SEEMS A BIT MUDDLED, BUT HE'S 60'",
+    "'MUDDLED IS IMPORTANT. PLEASE DO A FORMAL CONSCIOUS-STATE ASSESSMENT AND A BLOOD SUGAR, AND TELL ME IF IT CHANGES.' ALTERED MENTAL STATE IS A SEPSIS RED FLAG — DON'T ACCEPT AN EXPLAINING-AWAY"
+   ],
+   [
+    "'WE CAN'T GET A URINE SAMPLE — HE HASN'T PASSED ANYTHING'",
+    "NOTICE THE ANURIA: BLADDER SCAN. IF HE IS IN RETENTION AGAIN, RECATHETERISE AND SEND THE SPECIMEN FROM THE SAMPLING PORT OF THE NEW CATHETER — NEVER THE BAG. IF THE BLADDER IS EMPTY, THAT IS OLIGURIA FROM SHOCK OR OBSTRUCTION HIGHER UP"
+   ],
+   [
+    "'I'VE ALREADY STARTED THE CEFTRIAXONE YOU CHARTED'",
+    "ASK WHAT WAS GIVEN AND WHEN, AND WHETHER BLOOD CULTURES WERE TAKEN BEFORE IT. DO NOT REPEAT A DOSE BLINDLY. And 'DO YOU WANT ME TO CALL THE REGISTRAR?' → 'I WILL CALL THE REGISTRAR MYSELF' — ESCALATION IS YOURS TO OWN"
+   ],
+   [
+    "TELEPHONE RULES",
+    "ONE INSTRUCTION AT A TIME, AND ASK HER TO READ IT BACK · A TIMEFRAME FOR EVERYTHING — 'NOW', 'WITHIN THE HOUR' · SAY YOU ARE COMING: 'I AM WALKING DOWN NOW' · CLOSE THE LOOP: 'CALL ME BACK IMMEDIATELY IF…' · JARGON IS ALLOWED WITH A NURSE — VAGUENESS IS NOT; 'SOME FLUIDS AND SOME ANTIBIOTICS' SCORES NOTHING"
+   ],
+   [
+    "THE VERSIONS",
+    "B — CATHETER STILL IN, CLOUDY OFFENSIVE URINE, CONFUSED → REMOVE OR REPLACE IT, sample from the new one · C — SOFTER NUMBERS (38.4, 105/70, HR 104) → STILL SEPSIS ON RED-FLAG CRITERIA; don't downgrade · D — 'ALLERGIC TO PENICILLIN' → ASK WHAT HAPPENED; rash only → cephalosporin usually acceptable; immediate reaction → avoid beta-lactams, take advice"
+   ]
+  ],
+  "findingsLabel": "A phone and a shocked man — the sepsis door, then the culture door, then the antibiotic door",
+  "must": [
+   "FAIL — Not recognising sepsis: 'urine infection, trimethoprim, review in the morning'.",
+   "FAIL — Antibiotics before cultures.",
+   "FAIL — Never naming the catheter: 'he has urosepsis', full stop.",
+   "FAIL — Prescribing without asking about allergy.",
+   "ASK — Can you confirm his respiratory rate, conscious state, urine output and allergies?",
+   "ASK — Please read that back to me."
+  ],
   "back": {
-   "dx": "Catheter-associated urinary tract infection (catheterised 48 h ago for retention, removed yesterday — within the 48-hour definition) that has progressed to sepsis, possibly septic shock (T 39.5, BP 80/50 → MAP 60, HR 122, RR 26, SpO2 91% RA, vague/drowsy, no urine since morning — bladder scan 620 mL = retention again). Sepsis bundle by phone: oxygen 92–96%, two large-bore IVs, 500 mL crystalloid bolus over 15 min (repeat towards 20 mL/kg with reassessment), obs q15 min, bladder scan → recatheterise (aseptically) and take the urine from the new catheter's port; cultures (urine MCS, two sets blood cultures), FBE/UEC/CRP/LFT/coags/VBG+lactate/BSL/G&H, ECG, CXR; IV antibiotics within 60 min — gentamicin (weight/renal-dosed loading) + amoxicillin, or ceftriaxone if delayed-rash penicillin allergy; avoid all beta-lactams and seek advice if immediate hypersensitivity; escalate — walk down, call the registrar, ICU if not fluid-responsive. Long term: 7 days (10–14 if delayed response), IV→oral when afebrile, narrow at 48 h; treat the BPH (tamsulosin ± finasteride, urology/TURP) — fewer catheters is the single best prevention; no antibiotic prophylaxis at insertion/removal.",
+   "dx": [
+    "**A CATHETER-ASSOCIATED URINARY TRACT INFECTION THAT HAS PROGRESSED TO SEPSIS — CAUSE, THEN CONSEQUENCE, IN ONE BREATH. IF YOU REMEMBER ONE LINE FROM THIS STATION, REMEMBER THAT ONE.**",
+    "**THE THREE NEAR-MISSES: 'UROSEPSIS' — true, but NAMES THE SEPSIS AND HIDES THE CATHETER · 'A URINARY TRACT INFECTION' — names the cause and IGNORES THAT THE MAN IS SHOCKED · 'SEPTIC SHOCK' SAID AS A CERTAINTY — it needs persisting hypotension despite adequate fluid, requiring vasopressors to keep MAP ≥65, plus lactate >2. SAY 'SEPSIS, POSSIBLY SEPTIC SHOCK' AND YOU ARE RIGHT EITHER WAY.** VERIFY definitions.",
+    "**THE DISCRIMINATING ISSUE: TWO GATES, IN ORDER — OPEN THE SEPSIS DOOR BEFORE THE ANTIBIOTIC DOOR, AND THE CULTURE DOOR BEFORE THE ANTIBIOTIC DOOR. The candidate who begins 'I would start gentamicin and amoxicillin' HAS SKIPPED A SHOCKED MAN'S RESUSCITATION AND CONTAMINATED HIS CULTURES. The candidate who begins 'he is septic; two cannulae, fluids, oxygen; then cultures; then antibiotics within the hour' PASSES THE SAME STATION WITH THE SAME DRUGS.**",
+    "**TASK 1, BOTH HALVES, WITH FOUR REASONS: 'Jane, Mr Nolan has a CATHETER-ASSOCIATED URINARY TRACT INFECTION — seeded when he was catheterised two days ago — and it has PROGRESSED TO SEPSIS. With a blood pressure of 80/50 HE MAY ALREADY BE IN SEPTIC SHOCK, and I'll know once I see whether he responds to fluid. Because: HE WAS INSTRUMENTED 48 HOURS AGO; A TEMPERATURE OF 39.5; HE IS HYPOTENSIVE AND TACHYCARDIC; and HE IS HYPOXIC AND FATIGUED — a systemic picture, not a bladder one.'**",
+    "**THE SCRIPT, VERSION A: 'Jane, BEFORE WE GET TO ANTIBIOTICS, I AM TREATING THIS AS SEPSIS. TWO LARGE CANNULAE please, and START A 500 mL BOLUS OF CRYSTALLOID NOW. OXYGEN, aim for 92–96. Then, BEFORE ANY ANTIBIOTIC GOES IN, TWO SETS OF BLOOD CULTURES, A URINE SAMPLE for microscopy and culture, and A VENOUS GAS WITH A LACTATE. As soon as those are taken, INTRAVENOUS ANTIBIOTICS — WITHIN THE HOUR. I AM WALKING DOWN NOW AND I WILL CALL THE REGISTRAR ON THE WAY. Please read that back to me.'**",
+    "**EMPIRICAL ANTIBIOTICS — IV, THERAPEUTIC DOSE, WITHIN THE HOUR, AFTER CULTURES BUT NEVER DELAYED PAST ~45 MINUTES FOR A SPECIMEN: urinary source, no penicillin allergy — GENTAMICIN IV 4–7 mg/kg single loading dose on ideal body weight, adjusted for renal function, PLUS AMOXICILLIN OR AMPICILLIN IV 2 g 6-HOURLY · non-severe allergy — CEFTRIAXONE 2 g IV daily ± gentamicin · immediate or severe allergy — avoid beta-lactams, gentamicin plus ID advice. YOU ARE NOT EXPECTED TO RECALL DOSES — YOU ARE EXPECTED TO SAY INTRAVENOUS, EMPIRICAL, THERAPEUTIC, AFTER CULTURES, WITHIN AN HOUR, NARROWED AT ~48 HOURS.** VERIFY against Therapeutic Guidelines.",
+    "**FLUIDS — BALANCED CRYSTALLOID (Hartmann's or Plasma-Lyte), 500 mL BOLUSES, REASSESSED AFTER EACH, towards 20 mL/kg in the first hour if he keeps responding. The lecture said normal saline; balanced crystalloid is now generally preferred — EITHER IS DEFENSIBLE IF YOU SAY WHY.** VERIFY.",
+    "**DIFFERENTIALS — THE SECOND SOURCE IS WHAT KILLS HIM TOMORROW: OBSTRUCTED INFECTED SYSTEM — anuria, flank pain, no response → IMAGING AND DRAINAGE; ANTIBIOTICS ALONE WILL NOT SAVE IT · ACUTE BACTERIAL PROSTATITIS OR ABSCESS — gentle DRE, NEVER MASSAGE · A NON-URINARY SOURCE — cough, aspiration, CANNULA SITE, PRESSURE AREA, diarrhoea after antibiotics. 'WHILE YOU ARE WITH HIM, PLEASE CHECK HIS CHEST, HIS CANNULA SITE AND HIS HEELS.'**",
+    "**DURATION: 7 DAYS with prompt response; 10–14 IF DELAYED or bacteraemic · IV TO ORAL once afebrile, stable, tolerating oral · NARROW WHEN SENSITIVITIES RETURN · monitor gentamicin levels and renal function if it continues beyond a single dose.** VERIFY. **Avoid: NSAIDs and contrast in AKI · PROPHYLAXIS AT CATHETER INSERTION, REMOVAL OR CHANGE · TREATING ASYMPTOMATIC BACTERIURIA · reciting vasopressor protocols — that's the ICU conversation.**",
+    "**TASK 4 — ONLY 'ONCE HE IS STABLE', AND OFFER IT IF IT ISN'T ASKED: 'the long-term issue is HIS PROSTATE — TREATING IT PROPERLY IS WHAT STOPS THE NEXT CATHETER, AND THE NEXT INFECTION.' TAMSULOSIN 400 microgram daily · FINASTERIDE 5 mg (up to 6 months; halves the PSA) · combination · UROLOGY for TURP. PREVENTION: AVOID UNNECESSARY CATHETERS, INSERT ASEPTICALLY, CLOSED DRAINAGE, REMOVE EARLY.** **SA: SA Health adult sepsis pathway; MedSTAR 1300 13 12 33 EARLY from a country site; ICU at RAH, TQEH or Flinders; DOCUMENT THE TIME CULTURES WERE TAKEN AND ANTIBIOTICS GIVEN — the audited number.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Pick up, sit, pen ready: 'Hello, Dr —, medical officer on duty. Am I speaking with the nurse looking after Mr Nolan? May I take your name?' → Jane · 'I've read his notes — could you tell me in your own words what's happened, and give me his full observations, ★ including respiratory rate, conscious state, urine output and allergies?' → 39.5, 80/50, HR 122, RR 26, sats 91% air, 'a bit vague', little urine, penicillin allergy → 'thank you — particularly the respiratory rate and that he's vague'"
+     "**PICK UP AND SPEAK FIRST: identify yourself, confirm it's his nurse, TAKE HER NAME.** Then **'could you give me a quick handover in your own words?' — ask RR, CONSCIOUS STATE, URINE OUTPUT, ALLERGIES.**"
+    ],
+    [
+     "0:40",
+     "**READ THE NUMBERS BACK OUT LOUD: 39.5, 80/50 — a MAP of 60 — tachycardic, hypoxic, exhausted.** Then **SIGNPOST: 'I'll tell you what I think, then what I need you to do, then what to send.'**"
     ],
     [
      "1:00",
-     "★ 'Here is what I think is going on. Mr Nolan has a catheter-associated urinary tract infection — an infection seeded when he was catheterised two days ago — and that infection has progressed to sepsis. With a blood pressure of 80 over 50 he may already be in septic shock; I'll know that once we see whether he responds to fluid. Four things: instrumented 48 hours ago; temperature 39.5; hypotensive and tachycardic; hypoxic and drowsy — a systemic picture, not a bladder one.' · 'we've got oral trimethoprim — shall I start it?' → ★ 'No — oral is not enough and absorption is unreliable when someone is shocked.'"
+     "**TASK 1 — BOTH HALVES: catheter-associated UTI progressed to sepsis, possibly septic shock — WITH THE FOUR REASONS.**"
     ],
     [
-     "1:45",
-     "★ Sepsis door: 'Before we talk about tests, I am treating this as sepsis and I want a few things started now. One — oxygen, titrate to saturations of 92 to 96. Two — two large-bore cannulae. Three — 500 mL of balanced crystalloid over 15 minutes, then repeat his blood pressure and tell me the number (saline is fine if that's what you have). Four — observations every 15 minutes, and a bladder scan — I need to know whether he's in retention again. ★ Can you read those four back to me?'"
+     "2:00",
+     "**RESUSCITATION, ONE INSTRUCTION AT A TIME: OXYGEN to 92–96 · TWO LARGE CANNULAE · 500 mL CRYSTALLOID BOLUS NOW, reassess.**"
     ],
     [
-     "2:45",
-     "★ Investigations, two buckets, before antibiotics: 'urine — a sample for microscopy, culture and sensitivity; midstream if he can, and if we recatheterise him, from the sampling port of the new catheter, never from the bag. Bloods — two sets of blood cultures from separate sites, FBE, UEC, CRP, LFT, coagulation, ★ a venous gas with a lactate, a blood sugar, and a group and hold. Bedside — an ECG and a chest X-ray, because I don't want to assume the urine is the only source' (cannula site, chest, wounds asked) · 'he hasn't passed urine since this morning' → 'then bladder scan first (620 mL). If there's urine he can't pass — catheterise, take the specimen from the new catheter; that also relieves the obstruction. Don't let the urine hold the antibiotics past about 45 minutes.'"
+     "2:40",
+     "**TASK 2 — CULTURES BEFORE ANTIBIOTICS: two sets of blood cultures · URINE — midstream, or from the SAMPLING PORT OF A NEW CATHETER, NEVER THE BAG · FBE, UEC, CRP, LFT, coag, VBG WITH LACTATE, glucose, group and hold · ECG, dipstick, BLADDER SCAN, CHEST X-RAY.**"
     ],
     [
-     "4:00",
-     "★ 'Before I name a drug — the chart says penicillin allergy. What actually happened?' → 'a rash as a teenager' → 'that's a delayed rash, not an immediate reaction — a cephalosporin is reasonable: please prepare IV ceftriaxone at therapeutic dose; I'll confirm the choice and dose against the guideline when I'm with you. I want it in within the hour, and we'll narrow it when the cultures come back at about 48 hours.' (no allergy → gentamicin loading dose by weight/renal function + IV amoxicillin; 'lips swelled, couldn't breathe' → avoid all beta-lactams, gentamicin + on-call physician/ID advice, flag the allergy) · 'what dose?' → 'IV, empirical, therapeutic dosing, checked against the guideline' (never invent a number) · 'continuous monitoring, hourly observations, strict fluid balance and hourly urine measurement. ★ I am walking down now, and I will call the registrar myself. Ring me immediately if his blood pressure doesn't come up after that fluid, if he becomes more confused, or if he stops passing urine.' ('ICU?' → if not fluid-responsive — vasopressors; discuss with the registrar/ICU)"
+     "3:40",
+     "**TASK 3 — ANTIBIOTICS: 'what is his allergy status, and what happened?' — then IV, empirical, therapeutic dose, WITHIN THE HOUR, not delayed past 45 minutes.**"
+    ],
+    [
+     "4:20",
+     "**MONITORING: obs every 15 minutes, conscious state, STRICT FLUID BALANCE — consider a catheter to measure output — and 'while you're with him, check his chest, his cannula site and his heels.'**"
+    ],
+    [
+     "5:00",
+     "**ESCALATION, OWNED: 'I'm walking down now and I'll call the registrar myself.' ICU if he doesn't respond to fluid.**"
+    ],
+    [
+     "5:30",
+     "**CLOSE THE LOOP: 'please READ THAT BACK to me' · 'CALL ME IMMEDIATELY if his pressure drops further, he becomes more confused, or he stops passing urine.'**"
     ],
     [
      "6:00",
-     "Long term, offered: 'once he's stable — two threads. The infection: seven days of antibiotics if he responds promptly, 10–14 if delayed; IV to oral once afebrile and tolerating intake; narrow when sensitivities return. The prostate — the part that stops it happening again: review anything worsening his outflow, an alpha blocker such as tamsulosin 400 mcg daily, finasteride or a combination if the gland is large; urology for a TURP or a newer endoscopic procedure if medical treatment fails or he re-obstructs. If we treat his prostate properly he shouldn't need catheterising again — and fewer catheters is the single best way to prevent this infection.' (no prophylactic antibiotics at insertion/removal/change) · ★ 'Thanks Jane. To summarise: oxygen, fluids, cultures, antibiotics within the hour, obs every 15 minutes. I'm on my way down and the registrar is being called. Anything you're worried about that I haven't covered?'"
+     "**The differentials briefly: obstructed infected system — scan and drain · prostatitis or abscess · a second source.**"
+    ],
+    [
+     "6:40",
+     "**TASK 4 — 'ONCE HE IS STABLE': the prostate — tamsulosin, finasteride, urology — so he isn't catheterised again.**"
+    ],
+    [
+     "7:30",
+     "**'I'll document the call, the time cultures were taken and the time antibiotics went in.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Am I speaking with the nurse looking after Mr Nolan? May I take your name?' / ★ 'Could I have his full observation set — respiratory rate, conscious state, urine output, allergies?'",
-    "★ 'A catheter-associated urinary tract infection that has progressed to sepsis.' / ★ 'Before we talk about tests, I am treating this as sepsis.' / 'Oral is not enough and absorption is unreliable when someone is shocked.' / ★ 'Can you read those back to me?'",
-    "★ 'Cultures first — but do not let them delay the antibiotic past 45 minutes.' / 'Midstream if he can manage it; if we recatheterise him, take it from the sampling port of the new catheter, never from the bag.' / 'An ECG and a chest X-ray, because I do not want to assume the urine is the only source.'",
-    "★ 'Before I name a drug — what is his allergy, and what actually happened?' / ★ 'I am walking down now, and I will call the registrar myself.' / ★ 'Ring me immediately if the blood pressure does not come up, if he becomes more confused, or if he stops passing urine.'",
-    "Catheter still in situ, cloudy smelly urine → 'Then the catheter comes out. Antibiotics are only transiently effective around a colonised catheter, because the bacteria sit in a biofilm the drug cannot reach. Remove it; if he still needs drainage, insert a new one aseptically and take the specimen from the new catheter's port — not the old bag.' / immediate penicillin allergy → 'That is an immediate hypersensitivity, so I will avoid all beta-lactams — no penicillins and no cephalosporins. I will use gentamicin and take advice from the on-call physician or infectious diseases on the second agent before we give it. Please make sure the allergy is flagged properly in the chart.'"
-   ],
    "pefe": [
-    "Role-player: Jane Coulthard, 34, RN, six years on a busy surgical ward, 7 pm, one nurse short; brisk, practical, respectful; gives full answers to open questions but volunteers nothing — withholds RR 26, sats 91%, 'vague and drowsy', no urine since morning, and the penicillin allergy unless asked. Pushes once early: offers oral trimethoprim (accepting it = fail, uncorrected). Pushes at the antibiotic: 'what dose?' — notes a confidently invented number. Anxious at 4 min if nothing started: 'is there anything you want me to start? he doesn't look well.' At 6 min if never asked: 'the notes say he's allergic to penicillin — does that matter?' 'A rash as a teenager' — or, if you've coped well, 'his lips swelled and he couldn't breathe'. Won't read back unless asked. Bladder scan if asked: 620 mL. IV access: one small hand cannula; saline and Hartmann's available; no cough, cannula site fine, sore over the bladder",
-    "Observations: T 39.5 · BP 80/50 (MAP 60; target ≥65) · HR 122 · RR 26 · SpO2 91% RA · vague · anuric since morning · bladder 620 mL. Catheter-associated = catheter in situ or removed within 48 h. Sepsis red flags: hypotension, RR ≥22, altered mentation (qSOFA ≥2), lactate >2, oliguria",
-    "Sepsis bundle (Sepsis Kills/SA Health VERIFY): oxygen to 92–96%, IV access, cultures (blood ×2 + urine + relevant sites) before antibiotics, lactate, IV antibiotics within 60 min, fluids 500 mL boluses to 20–30 mL/kg reassessing, hourly urine output, escalate (MET criteria); vasopressors (noradrenaline) if MAP <65 after fluid → ICU. Empirical urosepsis antibiotics VERIFY TG: gentamicin 4–7 mg/kg IV loading (renal/weight-adjusted, ideal body weight, single dose then review) + amoxicillin 2 g IV 6-hourly; delayed non-severe penicillin rash → ceftriaxone 1–2 g IV daily acceptable; immediate hypersensitivity → no beta-lactams, gentamicin ± advice (e.g. ciprofloxacin); narrow at 48 h; duration 7 d (10–14 if slow/complicated); no post-treatment culture unless prostatitis; catheter removal if colonised; source control — relieve retention (recatheterise), exclude abscess/obstructing stone (USS/CT if not improving 48–72 h)",
-    "Long term BPH: tamsulosin 400 mcg daily; finasteride 5 mg daily (up to 6 months; halves PSA); combination; urology — TURP/laser/UroLift/Rezum; TWOC planning with alpha blocker; no antibiotic prophylaxis at catheter insertion/removal/change VERIFY. Telephone conduct: identify both ends, structured handover (ISBAR), closed-loop read-back, state you are attending and escalating, document · MedSTAR 1300 13 12 33 (rural)"
+    "**Do now — before anything is prescribed: OXYGEN, target 92–96% · TWO LARGE-BORE CANNULAE · BALANCED CRYSTALLOID 500 mL BOLUSES, reassessed after each, towards 20 mL/kg in the first hour · full observations including RR, CONSCIOUS STATE, GLUCOSE, URINE OUTPUT.**",
+    "**Do next — two buckets: URINE — midstream or from the sampling port of a NEW catheter, NEVER THE BAG, for MCS. BLOOD — TWO SETS OF CULTURES FROM SEPARATE SITES BEFORE ANTIBIOTICS · FBE · UEC · CRP · LFT · coag · VBG WITH LACTATE · glucose · group and hold. BEDSIDE — ECG · dipstick · BLADDER SCAN · CHEST X-RAY for a second source.**",
+    "**Antibiotics within 60 minutes: GENTAMICIN 4–7 mg/kg IV (IBW, renally adjusted) + AMOXICILLIN/AMPICILLIN 2 g IV 6-hourly; non-severe penicillin allergy — CEFTRIAXONE 2 g daily ± gentamicin; severe allergy — gentamicin plus advice.** VERIFY.",
+    "**If the catheter is still in: REMOVE OR REPLACE IT — antibiotics are only transiently effective around a biofilm. If obstructed and infected: DRAINAGE — STENT OR NEPHROSTOMY.**",
+    "**Do not miss: AN OBSTRUCTED INFECTED SYSTEM · A RETAINED OR BLOCKED CATHETER · A SECOND SOURCE — chest, cannula, skin, abdomen, bowel · DETERIORATION AFTER YOU HANG UP — book the reassessment before you end the call.**",
+    "**Avoid: ★ ANTIBIOTICS BEFORE CULTURES · delaying antibiotics for imaging or a difficult sample · ORAL ANTIBIOTICS IN A HYPOTENSIVE PATIENT · NSAIDs and contrast in AKI · antibiotic prophylaxis at catheter insertion, removal or change · treating asymptomatic bacteriuria · reciting septic shock protocols · ending the call with no senior involved.**",
+    "**SA: SA Health adult sepsis pathway; Sepsis Clinical Care Standard (VERIFY version) · MedSTAR 1300 13 12 33 early from Wallaroo or Kadina; RFDS · ICU at RAH, TQEH or Flinders; statewide urology at TQEH · PATS for later urology trips · check renal function carefully before gentamicin in Aboriginal and Torres Strait Islander patients given higher CKD and diabetes prevalence.**"
    ],
-   "fails": [
-    "★ Accepting oral trimethoprim, or never treating as sepsis; following the printed order — two minutes listing bloods while MAP is 60",
-    "★ Antibiotics before cultures without the 45-minute caveat; forgetting lactate or blood cultures; specimen from the bag; assuming the urine is the only source",
-    "★ Never saying 'catheter-associated' ('urosepsis' hides the catheter); asserting septic shock as certain before any fluid",
-    "★ Naming a drug without asking what the allergy was; inventing a dose; naming a penicillin in a documented allergy",
-    "No read-back; four instructions in a monologue; not coming down/escalating; starting with the prostate while he is hypotensive; no summary/check of the nurse's concerns"
-   ],
-   "numbers": [
-    "T 39.5 · BP 80/50 → MAP 60 (target ≥65) · HR 122 · RR 26 · SpO2 91% · bladder 620 mL · catheter-associated = in situ or out ≤48 h",
-    "O2 92–96% · 500 mL boluses toward 20 mL/kg first hour VERIFY · cultures ×2 + urine → antibiotics <60 min (specimens not past 45 min) · gentamicin 4–7 mg/kg + amoxicillin 2 g q6h VERIFY · cultures back ~48 h · duration 7 d (10–14 slow)",
-    "Tamsulosin 400 mcg · finasteride 5 mg (≤6 mo, halves PSA) · no catheter prophylaxis · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**CAUTI progressed to sepsis** — the answer",
+     "**Catheterised 48 h ago; fever 39.5; hypotension; no other source**",
+     "**Cloudy or offensive urine, suprapubic or flank tenderness, confusion, low output**",
+     "**Working diagnosis — urine MCS and blood cultures confirm the organism** — NOW"
+    ],
+    [
+     "**Septic shock**",
+     "**Persisting hypotension despite fluid, lactate >2**",
+     "**Response to the first boluses**",
+     "**'Sepsis, possibly septic shock' — label after fluid; ICU if unresponsive**"
+    ],
+    [
+     "**Obstructed infected system**",
+     "**Anuria, severe flank pain, no response to antibiotics, known stones**",
+     "**Bladder scan; renal ultrasound or CT KUB**",
+     "**Imaging; DRAINAGE — nephrostomy or stent** — NOW"
+    ],
+    [
+     "**Acute bacterial prostatitis / prostatic abscess**",
+     "**Instrumented prostate, fever, obstructive symptoms, exquisitely tender gland**",
+     "**Gentle DRE — NEVER MASSAGE**",
+     "Imaging if not settling; longer course — NOW"
+    ],
+    [
+     "**Recurrent retention**",
+     "**Decatheterised yesterday, unable to pass urine, distended bladder**",
+     "**Bladder scan**",
+     "**Recatheterise, sample from the new catheter; tamsulosin before trial of void**"
+    ],
+    [
+     "**Pneumonia / aspiration**",
+     "**Cough, low saturation, crackles**",
+     "**'Check his chest'**",
+     "**Chest X-ray — never accept the first source offered**"
+    ],
+    [
+     "Cannula-site infection · pressure area",
+     "Recent IV line; immobile",
+     "**'Check his cannula site and his heels'**",
+     "Examine every line and pressure area"
+    ],
+    [
+     "C. difficile or other GI source",
+     "Diarrhoea after recent antibiotics",
+     "Bowel history",
+     "Stool toxin PCR"
+    ],
+    [
+     "**Retained infected catheter** (Version B)",
+     "**Catheter still in, cloudy offensive bag, confusion**",
+     "Catheter status",
+     "**Remove or replace — biofilm; sample from the new catheter**"
+    ],
+    [
+     "Asymptomatic bacteriuria — the non-answer",
+     "Positive culture, patient well",
+     "Symptoms",
+     "**Do not treat** — not this man"
+    ]
    ]
   },
   "source": "Catheter_UTI_Sepsis_2_Case_Tasks_Script_Notability (1).pdf (Trevor Nolan, 60, febrile and hypotensive two days after catheterisation for retention — catheter-associated UTI with sepsis, managed by telephone with the ward nurse)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Urology › Catheter_UTI_Sepsis_2_Case_Tasks_Script_Notability (1).pdf",
-  "must": [
-   "FAIL — Accepting the oral trimethoprim, or never treating this as sepsis — she pushes it once, early; if you accept it she does not correct you; 'no — oral is not enough and absorption is unreliable when someone is shocked'; 'before we talk about tests, I am treating this as sepsis and I want a few things started now' — resuscitation outranks the printed task order (★)",
-   "FAIL — Antibiotics before cultures with no caveat about delay — two buckets before the drugs: urine for MCS (midstream, or from the sampling port of a NEW catheter, never from the bag) and bloods (two sets of blood cultures from separate sites, FBE, UEC, CRP, LFTs, coags, venous gas with LACTATE, glucose, group and hold), plus an ECG and chest X-ray ('I will not assume the urine is the only source' — chest and cannula site earn the considered-other-causes mark); 'do not let the specimens delay the antibiotic past about 45 minutes'; in within the hour; he hasn't passed urine → bladder scan first (620 mL), recatheterise and take the specimen from the new catheter (★)",
-   "FAIL — Never saying 'catheter-associated' — 'urosepsis' hides the catheter; both halves, causally: 'a catheter-associated urinary tract infection — seeded when he was catheterised two days ago — that has progressed to sepsis; with a blood pressure of 80 over 50 he may already be in septic shock, and I'll know once we see whether he responds to fluid' — not asserted as a certainty before fluid; four reasons — instrumented 48 hours ago, 39.5, hypotensive and tachycardic, hypoxic and drowsy ('a systemic picture, not a bladder one') (★)",
-   "FAIL — Naming a drug without asking what the allergy was — 'before I name anything: what does the chart say about allergies, and what actually happened?'; a rash as a teenager = delayed → a cephalosporin such as ceftriaxone is reasonable; lips swelled and couldn't breathe = immediate → no penicillins, no cephalosporins, gentamicin plus advice on the second agent, flag the chart; the allergy is withheld until asked (volunteered at six minutes otherwise); if you don't know the dose, 'intravenous, empirical, therapeutic dosing, checked against the guideline' — a confidently invented number does not score (★)",
-   "DO — Pick up, sit, pen ready; identify both ends ('am I speaking with the nurse looking after Mr Nolan? may I take your name?'); ask for the FULL observation set unprompted — respiratory rate (26), saturations (91% on air), conscious state ('a bit vague' — altered conscious state is a red flag, not 'he's 60'), urine output, allergies — all withheld unless asked; the sepsis door in four instructions — oxygen titrated to 92–96%, two large-bore cannulae, 500 mL crystalloid over 15 minutes then repeat the BP and 'tell me the number', obs every 15 minutes and a bladder scan; take the saline if that's what the ward has — don't argue fluid choice; 'can you read those back to me?' — she will not read back unprompted; MAP = (80 + 100) ÷ 3 = 60, target ≥ 65",
-   "DO — Then gentamicin loading dose by weight and renal function plus IV amoxicillin (or ceftriaxone if the allergy is delayed), narrow at 48 hours; continuous monitoring, hourly obs, strict fluid balance and hourly urine; 'I am walking down now, and I will call the registrar myself'; 'ring me immediately if the pressure does not come up after that fluid, if he becomes more confused, or if he stops passing urine'; catheter still in situ with cloudy urine → it comes out (biofilm — antibiotics only transiently effective around a colonised catheter), new one aseptically if drainage still needed; long-term OFFERED after the first three tasks, never opened with — 7 days (10–14 if slow), IV to oral once afebrile, then the prostate: alpha blocker (tamsulosin), finasteride or a combination if large, urology for TURP if medical treatment fails — 'treating the prostate is what stops the next catheter, and fewer catheters is the single best prevention'; no antibiotic prophylaxis at insertion, removal or change; close with a summary and 'anything worrying you that I haven't covered?'; a monologue with no interaction is a fail"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-168",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Three numbers in the stem do the work: HbA1c 8% (uncontrolled diabetes), BP 150/90 (uncontrolled), atenolol (a recognised cause — but prescribed for his heart). 'Further interventions' means investigate, fix the chronic disease first, then treat the ED — and ask about nitrates BEFORE prescribing a PDE5 inhibitor. Clear fail: PDE5 without the nitrate question; stopping atenolol unilaterally; never defining the complaint; blaming; omitting the psychosocial assessment.",
   "stem": [
    "James Corrigan, 60, presents with erectile dysfunction for a number of months. T2DM diagnosed 5 years ago; MI 4 years ago. Medications: metformin, atenolol. HbA1c 8%. BP today 150/90."
   ],
@@ -40438,84 +40559,205 @@
    "Explain the possible causes to him",
    "Discuss further interventions"
   ],
-  "time": "8 min. Intro, confidentiality → 'things aren't working downstairs' → ★ acknowledge + normalise + warning shot: 'not easy to bring up; common; a medical problem; in most men we find the reason. I need to ask some quite personal questions — about erections, intercourse and masturbation — I ask every man with this problem; tell me if anything's uncomfortable' · ★ define and grade: how long (6 mo), every time, worse · 'getting and keeping an erection, or finishing sooner than you'd like?' · 'able to start intercourse, or does it go before that?' (loses it part-way) · ★ 'still getting early-morning or spontaneous erections? change in sex drive? ★ same difficulty on your own?' (reduced; same libido; same alone → organic) · ★ impact on him and the relationship (wife thinks he's gone off her) · genital/prostatic: bend/curve/lump/pain, LUTS, surgery pelvis/prostate/back · ★ cardiovascular: 'chest pain or breathlessness on exertion?' (puffed on the hill — pursue), claudication; smoking (quit 5 y), alcohol (3–4 beers most nights), exercise, diet, weight, snoring · endocrine (cold, constipation, fatigue; breast enlargement/discharge; headache/vision) · ★ psychosocial: mood (flat), sleep, enjoyment, home (32 y, strained), work; ★ risk question when mood is low · neuro: back pain, ★ numbness (feet numb), weakness, bladder/bowel · meds incl chemist; changes · ★ four questions ×2: diabetes — when, what, ★ 'in an average week how many doses do you miss? most people miss some' (2–3/week — stomach), reviews (none >1 y), complications; MI — when, stent, chest pain since, rehab (2 sessions), cardiologist · causes: vascular explanation without blame — diabetes (8%, missed doses, small vessels then nerves — numb feet), atenolol, MI ('penile arteries are smaller — show trouble first'); hormones, thyroid, penis, prostate, nerves, mood · three boxes: investigate → ★ fix diabetes and BP (matters most; don't stop atenolol — write to the cardiologist; back to rehab) → PDE5 with ★ the nitrate question inside the sentence → GTN spray in the glovebox → rules + teach-back · counselling for both; safety-net (chest pain, priapism >4 h); review 2 wk.",
+  "findings": [
+   [
+    "A CHRONIC-DISEASE STATION WEARING ED CLOTHING",
+    "AMC BUILT THIS CASE WITH A SPECIFIC HbA1c, A SPECIFIC BLOOD PRESSURE AND A SPECIFIC MEDICATION FOR A REASON: HbA1c 8% · BP 150/90 · METFORMIN AND ATENOLOL · MI 4 YEARS AGO. THE CANDIDATE WHO TAKES A GOOD HISTORY AND THEN OFFERS SILDENAFIL HAS ANSWERED THE WRONG QUESTION"
+   ],
+   [
+    "THE WARNING SHOT — do not skip",
+    "'TO SORT THIS OUT PROPERLY I NEED TO ASK YOU SOME QUITE PERSONAL QUESTIONS — ABOUT ERECTIONS, ABOUT INTERCOURSE, AND ABOUT MASTURBATION. THESE ARE QUESTIONS I ASK EVERY MAN WITH THIS PROBLEM. TELL ME IF ANYTHING IS UNCOMFORTABLE. IS THAT ALRIGHT?' FIFTEEN SECONDS OF FRAMING BUYS YOU THE WHOLE HISTORY"
+   ],
+   [
+    "DEFINE IT BEFORE YOU INVESTIGATE — your second question",
+    "'I CAN'T PERFORM ANY MORE, DOCTOR' → 'CAN YOU DESCRIBE WHAT YOU MEAN? IS THE DIFFICULTY GETTING AND KEEPING AN ERECTION, OR IS IT THAT YOU FINISH SOONER THAN YOU WOULD LIKE?' ED IS NOT PREMATURE EJACULATION AND NOT LOW LIBIDO — the management of each is completely different"
+   ],
+   [
+    "THE TWO QUESTIONS CANDIDATES MISS — ask inside the complaint",
+    "'ARE YOU STILL GETTING SPONTANEOUS OR EARLY-MORNING ERECTIONS?' and 'HAVE YOU NOTICED ANY CHANGE IN YOUR SEX DRIVE?' — THE BEDSIDE TEST FOR ANDROGEN DEFICIENCY. BURIED IN A SYSTEMS REVIEW, YOU RUN OUT OF TIME AND NEVER GET TO THEM"
+   ],
+   [
+    "THE QUESTION THAT SPLITS ORGANIC FROM PSYCHOGENIC",
+    "'DO YOU HAVE THE SAME DIFFICULTY ON YOUR OWN, WITH MASTURBATION?' AN ORGANIC PROBLEM DOES NOT KNOW WHO IS IN THE ROOM. Normal alone, failing with the partner → mood, stress, relationship. And SEVERITY: 'ARE YOU ABLE TO START INTERCOURSE AT ALL?'"
+   ],
+   [
+    "THE FOUR QUESTIONS — APPLY TO THE DIABETES AND TO THE INFARCT",
+    "WHEN DIAGNOSED · WHAT TREATMENT — AND 'IN AN AVERAGE WEEK, HOW MANY DOSES DO YOU THINK YOU MISS?' · REGULAR REVIEWS · COMPLICATIONS — numb feet, ulcers, vision, kidneys; ongoing angina, what procedure, CARDIAC REHAB, secondary prevention. AN HbA1c OF 8% ON METFORMIN EITHER MEANS HE ISN'T TAKING IT OR IT ISN'T ENOUGH"
+   ],
+   [
+    "THE HANDED-OVER POSITIVE",
+    "'NOW THAT YOU MENTION IT, MY FEET ARE NUMB.' NAME IT: DIABETIC SENSORY NEUROPATHY — EVIDENCE OF END-ORGAN DAMAGE, WHICH STRENGTHENS THE VASCULAR EXPLANATION. Don't rely on it being the only positive — ask the full structure"
+   ],
+   [
+    "SIX GROUPS, IN THE ORDER YOU'LL SAY THEM",
+    "GENITAL AND PROSTATIC — curvature, lump, pain on erection, LUTS, previous surgery · CARDIOVASCULAR — exertional chest pain, breathlessness, CLAUDICATION · RISK FACTORS — smoking, alcohol, exercise, weight, SNORING · ENDOCRINE — thyroid, BREAST DISCHARGE, HEADACHE, VISION · PSYCHOSOCIAL — mood, sleep, enjoyment, home, work · NEUROLOGICAL — back pain, leg weakness, saddle numbness · DRUGS — started anything new?"
+   ],
+   [
+    "'CAN YOU JUST GIVE ME THE BLUE TABLET?'",
+    "'WE CAN CERTAINLY TALK ABOUT THAT — FIRST I NEED TO ASK TWO THINGS, INCLUDING WHETHER YOU EVER USE A SPRAY OR TABLET UNDER THE TONGUE FOR CHEST PAIN.' MAKE THE NITRATE QUESTION A FIXED PART OF THE SENTENCE IN WHICH YOU FIRST MENTION THE TABLET"
+   ],
+   [
+    "'MY WIFE THINKS I'VE LOST INTEREST IN HER'",
+    "'THAT SOUNDS PAINFUL FOR YOU BOTH. WOULD SHE BE WILLING TO COME ALONG? A LOT OF THIS IS EASIER TO SORT OUT TOGETHER'"
+   ]
+  ],
+  "findingsLabel": "A chronic-disease station in ED clothing — box two matters most, and the nitrate question first",
+  "must": [
+   "FAIL — Prescribing a PDE5 inhibitor without asking about nitrates.",
+   "FAIL — Ignoring the diabetes and blood pressure: a management plan that is just sildenafil.",
+   "FAIL — Stopping the beta-blocker unilaterally.",
+   "FAIL — Never defining the complaint: ED versus premature ejaculation versus low libido.",
+   "ASK — Are you still getting early-morning erections? Any change in your sex drive?",
+   "ASK — Do you ever use a spray or tablet under your tongue for chest pain?"
+  ],
   "back": {
-   "dx": "Organic (vasculogenic + neuropathic + drug-related) erectile dysfunction — six months, progressive, loses the erection part-way, reduced morning erections, preserved libido, same on his own; drivers: poorly controlled T2DM (HbA1c 8%, metformin missed 2–3×/week for GI upset, no review >1 year, numb feet = sensory neuropathy), atenolol (post-MI beta-blocker — do not stop unilaterally), ischaemic heart disease (MI/stent 4 y, rehab abandoned, new exertional breathlessness on the hill — needs cardiac reassessment before PDE5 use), hypertension 150/90, alcohol 3–4 beers nightly, overweight, snoring; mood flat (consequence and amplifier; no self-harm thoughts); relationship strained (wife thinks he's gone off her). Interventions: (1) investigate — morning testosterone ×2 + LH/FSH/prolactin, HbA1c, lipids, TSH, UEC, home/24-h BP; (2) optimise — fix metformin tolerability (XR/with food), add an SGLT2 inhibitor or GLP-1 with CV benefit VERIFY, add an ACE inhibitor once BP confirmed, write to cardiology re atenolol and the exertional symptoms, cardiac rehab, diabetes reviews, weight/exercise/alcohol; (3) ED — sildenafil on demand or tadalafil daily, only after the nitrate check (GTN spray in the glovebox → 24 h/48 h rules, cardiology first), needs stimulation, side effects; vacuum device/intracavernosal injections/urology if unsuitable; couple counselling; safety-net chest pain and priapism; review 2 weeks. Hidden: father died of an MI at 62 — 'does this mean my heart is getting worse?'",
+   "dx": [
+    "**ORGANIC ERECTILE DYSFUNCTION — PREDOMINANTLY VASCULOGENIC — driven by POORLY CONTROLLED TYPE 2 DIABETES WITH ESTABLISHED MICROVASCULAR COMPLICATIONS AND MACROVASCULAR DISEASE, with ATENOLOL AS A LIKELY PHARMACOLOGICAL CONTRIBUTOR.** **Definition: persistent inability to attain or maintain an erection sufficient for satisfactory sexual performance, generally ≥3 MONTHS.**",
+    "**THE KEY CONCEPT — SAY IT OUT LOUD: ERECTION IS A VASCULAR EVENT. Arterial inflow and venous trapping produce it; anything that damages endothelium impairs it. THE PENILE ARTERIES ARE MUCH NARROWER THAN THE CORONARIES AND BECOME SYMPTOMATIC EARLIER — ED CAN BE THE FIRST SYMPTOM OF CARDIOVASCULAR DISEASE, and every man presenting with it earns a cardiovascular risk assessment.**",
+    "**THE DISCRIMINATING ISSUE: THE INTERVENTION BEING TESTED IS OPTIMISING THE DIABETES, THE BLOOD PRESSURE AND THE DRUG REGIMEN — WITH THE ED-SPECIFIC TREATMENT THIRD, AND THE NITRATE CHECK BEFORE ANY PRESCRIPTION. IF YOU DON'T DO THIS COMPONENT, IT IS VERY HARD TO PASS YOU.**",
+    "**THE CAUSES, EXPLAINED WITHOUT BLAME: 'erections depend on healthy blood vessels. The FIRST AND BIGGEST CAUSE is YOUR DIABETES — your sugar's been running at 8, where we aim for around 7, and over time that damages the small blood vessels and later the nerves. THE NUMBNESS IN YOUR FEET IS EVIDENCE IT HAS ALREADY STARTED ELSEWHERE. The SECOND is ONE OF YOUR TABLETS — ATENOLOL is known to cause this. The THIRD is YOUR HEART ATTACK — the arteries supplying an erection are much smaller, so they often show trouble first. WHAT I WANT YOU TO HEAR IS THAT THIS IS A PHYSICAL, TREATABLE PROBLEM — NOT A FAILING ON YOUR PART.'**",
+    "**THREE BOXES — AND SAY BOX TWO MATTERS MOST. BOX 1, TESTS: MORNING TOTAL TESTOSTERONE (8–10 am) WITH LH AND FSH, repeated; prolactin if low · repeat HbA1c, fasting lipids, eGFR and urine ACR, LFT, TSH, FBE · confirm the BP. BOX 2, THE CHRONIC DISEASE: CONFIRM ADHERENCE FIRST · MAXIMISE METFORMIN, ADD AN SGLT2 INHIBITOR — preferred with established CVD · CONFIRM THE BP, ADD AN ACE INHIBITOR · antiplatelet, high-intensity statin, CARDIAC REHAB · weight, exercise, smoking, alcohol — all independently improve erectile function. BOX 3, THE ERECTIONS.**",
+    "**THE ATENOLOL — THE TRAP INSIDE THE TRAP: IT CAN CAUSE ED, AND BETA-BLOCKERS AREN'T FIRST-LINE FOR UNCOMPLICATED HYPERTENSION IN AUSTRALIA. IT DOES NOT FOLLOW THAT YOU STOP IT — he is four years post-infarct and THE BETA-BLOCKER IS THERE FOR THE HEART. 'I'M NOT GOING TO STOP YOUR ATENOLOL ON MY OWN, BECAUSE IT'S PROTECTING YOUR HEART — BUT I'LL WRITE TO YOUR CARDIOLOGIST.' Some substitute a vasodilating beta-blocker — NEBIVOLOL or CARVEDILOL. A SHARED DECISION, PUT IN A LETTER.** VERIFY.",
+    "**BOX 3 — PDE5 INHIBITORS, AFTER THE NITRATE QUESTION: SILDENAFIL on demand ~30–60 min before, once in 24 h, off-patent and inexpensive · TADALAFIL — the only one licensed as a LOW DAILY DOSE · generally NOT PBS-SUBSIDISED for ED — DISCUSS COST · STIMULATION IS STILL REQUIRED · side effects vasodilatory · AN ERECTION OVER FOUR HOURS IS A UROLOGICAL EMERGENCY · rarely sudden visual or hearing loss. Then VACUUM DEVICE (band off within 30 min), INTRACAVERNOSAL ALPROSTADIL, UROLOGY — LATE, NOT EARLY.** VERIFY.",
+    "**THE ABSOLUTE CONTRAINDICATION — ANY NITRATE, IN ANY FORM, INCLUDING A GTN SPRAY OR PATCH: profound, potentially fatal hypotension. 'IF YOU DEVELOP CHEST PAIN, DO NOT USE YOUR SPRAY WITHIN ABOUT 24 HOURS OF SILDENAFIL OR 48 HOURS OF TADALAFIL — CALL AN AMBULANCE AND TELL THE PARAMEDICS YOU'VE TAKEN THE TABLET.' Also caution: alpha-blockers, unstable angina, recent MI, severe AS, heart failure. IF HE CAN'T SAFELY CLIMB TWO FLIGHTS OF STAIRS, HIS FITNESS FOR SEXUAL ACTIVITY NEEDS REVIEW FIRST.** VERIFY intervals.",
+    "**COUNSELLING ISN'T A LAST RESORT: 'I'd also like to offer you and your wife a session with a counsellor — THAT IS NOT A SIGN I THINK THIS IS IN YOUR HEAD; IT'S BECAUSE THIS AFFECTS BOTH OF YOU.' Offer it alongside first-line drugs. 'IS IT PSYCHOLOGICAL?' — 'Psychogenic ED is a diagnosis of exclusion and HIS PICTURE IS ORGANIC — gradual, present in all settings, major vascular risk. BUT MIXED AETIOLOGY IS THE COMMONEST PATTERN.'**",
+    "**CORRECTION — PRIAPISM: aspiration, irrigation and INTRACAVERNOSAL DILUTE PHENYLEPHRINE with BP and pulse monitoring, in consultation with urology — ADRENALINE IS NOT THE STANDARD AGENT.** **Red flags: undiagnosed angina (THE ED IS THE SENTINEL), hypogonadism, prolactinoma, CAUDA EQUINA, depression with suicidal ideation.** **SA: Healthy Male handouts; Diabetes SA and NDSS; GP Management Plan; cardiac rehab via Yorke and Northern LHN; Relationships Australia SA or SHINE SA; MensLine 1300 78 99 78; Closing the Gap for cost.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'I'm Dr —; am I speaking with James? May I call you James? Everything we discuss is completely confidential. What's brought you in?' → 'awkward… things aren't working downstairs' → ★ 'Thank you for telling me — I know that isn't easy to bring up. It's common, it's a medical problem, and in most men we can find the reason and do something about it. Before we go on: to sort this out properly I need to ask some quite personal questions — about erections, intercourse and masturbation. I ask these of every man with this problem. Tell me if anything's uncomfortable. Is that alright?'"
+     "**WIPE, confidentiality, open question — ACKNOWLEDGE: 'I know that's not an easy thing to bring up. It's common, it's medical, and in most men we can find the reason.' Then THE WARNING SHOT.**"
     ],
     [
-     "0:50",
-     "★ Define/grade: 'how long? every time or comes and goes? getting worse?' (6 mo, almost every time, worse) · 'can you describe exactly what you mean — the difficulty getting and keeping an erection, or finishing sooner than you'd like?' (getting and keeping) · 'able to start intercourse at all, or does it go before that?' (starts, loses it part-way) · ★ 'still getting early-morning or spontaneous erections? any change in your sex drive? ★ same difficulty on your own?' (now and then, not like before; same drive; same alone) · ★ 'how is this affecting you, and your relationship?' (wife thinks he's gone off her — 32 years) → 'that sounds hard for you both — I'll come back to that'"
+     "0:45",
+     "**TIMING AND DEFINITION: how long · every time · getting worse · 'DESCRIBE WHAT YOU MEAN — getting and keeping an erection, or finishing sooner?' · ABLE TO START INTERCOURSE AT ALL?**"
     ],
     [
-     "2:20",
-     "Genital/prostatic: bend, curve, lump, pain on erection; LUTS — difficulty, nocturia, dribbling; surgery to prostate/genitals/pelvis/back → no · ★ cardiovascular: 'ever told high sugar, BP, cholesterol? ★ chest pain or breathlessness when you exert yourself? calf pain walking that eases with rest?' → 'puffed going up the hill — put it down to age' → 'that's important and I'll come back to it' · smoking (quit 5 y; pack/day before), alcohol (3–4 beers most nights), exercise (little), diet, weight (few kilos), snoring/unrefreshed (yes)"
+     "1:30",
+     "**ANDROGEN AND ORGANIC SPLIT: MORNING ERECTIONS · SEX DRIVE · SAME DIFFICULTY ALONE? · better or worse — alcohol, tiredness, stress.**"
     ],
     [
-     "3:30",
-     "Endocrine: cold intolerance, constipation, fatigue; breast enlargement/discharge; headaches/vision → no · ★ psychosocial: 'how has your mood been? sleep? still enjoying things? who's at home, how are things between you? work — stress?' → flat; sleep ok; married 32 y, strained → ★ 'when you say flat — any thoughts of harming yourself?' (no — fed up) · neuro: back pain, ★ numbness/tingling in the legs or feet (feet numb for a while), weakness, bladder/bowel control → 'that's relevant' · ★ 'what medications, including anything from the chemist? anything changed?' (metformin, atenolol, a cholesterol tablet, aspirin)"
+     "2:00",
+     "**IMPACT: 'how is this affecting you, and your relationship?'**"
     ],
     [
-     "4:40",
-     "★ Diabetes ×4: 'when diagnosed? what are you taking? ★ in an average week how many doses do you think you miss — most people miss some? regular reviews? complications — the numbness, foot ulcers, blurred vision, kidneys checked?' → 5 y; metformin bd; 'if I'm honest 2–3/week — upsets my stomach'; no review >1 y; numb feet → 'thank you for being straight with me' · ★ MI ×4: 'when? stent? chest pain since? cardiac rehab completed? seeing a cardiologist?' → 4 y, one stent, no pain except the hill, two rehab sessions then stopped"
+     "2:30",
+     "**GENITAL AND PROSTATE: bend, lump, pain on erection · passing urine, nocturia, dribbling · prostate, pelvic or back surgery?** Then **CARDIOVASCULAR: exertional chest pain · breathlessness · CALF PAIN WHEN WALKING?**"
     ],
     [
-     "5:40",
-     "★ Causes, without blame: 'James, erections depend on healthy blood vessels — blood has to flow in quickly and be held there; anything that damages small vessels affects it. First and biggest, your diabetes: your recent test was 8% where we aim for around 7, and missing doses will be part of that. Over years, high sugar damages the small blood vessels and later the nerves — the numbness in your feet tells me that damage has already started elsewhere. Second, one of your tablets — atenolol is known to cause this in some men. Third, your heart attack: the arteries that supply an erection are much smaller than the ones in the heart, so they often show trouble first. I also thought about hormones — a low testosterone level, which I'll test; thyroid; the penis itself — a curvature — or the prostate; nerve or spinal causes; and stress and mood, which are both a cause and a consequence. This is a physical, treatable problem — not a failing on your part.' · 'so it's my fault for skipping the tablets' → ★ 'No — the metformin upset your stomach, and that's a real side effect, not a character flaw. There are ways around it, and that's a problem we can solve together.'"
+     "3:20",
+     "**RISK FACTORS: smoking, alcohol, drugs, exercise, diet, weight, SNORING. ENDOCRINE: cold, constipation, BREAST ENLARGEMENT OR DISCHARGE, HEADACHES OR VISION CHANGE.**"
     ],
     [
-     "6:40",
-     "★ Three boxes: (1) 'tests — a morning testosterone with a couple of related hormones, repeat sugar test, cholesterol, thyroid and kidney tests, and your blood pressure properly — at home over a week or a monitor for a day' · (2) ★ 'and this is the part that matters most: getting the diabetes and blood pressure under control. Tell me what makes the metformin hard to take — there are ways around the stomach upset. Then a second diabetes tablet from a group that also protects the heart and kidneys. Once we confirm the blood pressure, a different type of tablet for that. ★ I'm not going to stop your atenolol on my own — it's protecting your heart — but I'll write to your cardiologist and we'll look together at whether there's a better option, and about that breathlessness on the hill. Back to cardiac rehab, back to regular diabetes reviews; weight, exercise, cutting the beers back helps the diabetes, the heart and the erections all at once' · (3) ★ 'treatment for the erections themselves: sildenafil, taken when you need it, or tadalafil as a small daily dose — sildenafil is off patent, so cheaper. Before I prescribe either: ★ do you ever use a spray, or a tablet you put under your tongue, for chest pain?' → 'a little spray in the glovebox — never used it' → ★ 'that's exactly why I asked. That spray is a nitrate, and taken close together with these tablets it can drop your blood pressure dangerously. It doesn't necessarily mean you can't have the tablet, but we need clear rules and I want to discuss it with your cardiologist first. The rule: if you take one of these tablets, no spray for about a day afterwards — longer with the daily one. Chest pain in that window — call an ambulance and tell them you've taken this tablet. Can you tell me that back?' · 'the tablet needs sexual stimulation to work; headache, flushing, indigestion' · alternatives: vacuum device, injections, urologist · ★ 'I'd like to offer you and your wife a session with a counsellor — not because I think it's in your head, but because it affects both of you' · father at 62 → honest: risk factors treatable, the breathlessness gets checked · review 2 weeks with readings/results · ★ safety-net: chest pain/breathlessness at rest or during sex → stop, ambulance; erection >4 hours → hospital"
+     "3:50",
+     "**PSYCHOSOCIAL: mood · sleep · enjoyment · who's at home, how things are · work stress.** Then **NEUROLOGICAL: back pain, leg numbness or weakness, NUMBNESS AROUND THE BACK PASSAGE, bladder or bowel change.**"
+    ],
+    [
+     "4:20",
+     "**DRUGS: what medications, anything from the chemist, ANYTHING NEW WHEN THIS BEGAN?**"
+    ],
+    [
+     "4:30",
+     "**THE FOUR QUESTIONS — DIABETES: diagnosed · treatment AND 'how many doses do you miss in an average week?' · reviews · complications — FEET, eyes, kidneys. THE INFARCT: angina, procedure, CARDIAC REHAB, secondary prevention.**"
+    ],
+    [
+     "5:15",
+     "**EXPLAIN THE CAUSES: blood vessels · the DIABETES, with the numb feet as evidence · the ATENOLOL · the HEART ATTACK · others considered · 'a physical, treatable problem — not a failing.'**"
+    ],
+    [
+     "6:15",
+     "**THREE BOXES, BOX TWO MOST: tests · diabetes adherence, SGLT2 inhibitor, BP with an ACE inhibitor, secondary prevention, lifestyle · 'I won't stop your atenolol myself — I'll write to your cardiologist.'**"
+    ],
+    [
+     "7:10",
+     "**BOX THREE: 'BEFORE I PRESCRIBE — do you ever use a spray or tablet under your tongue for chest pain?' — then sildenafil or tadalafil, cost, stimulation still needed · counselling for you both.**"
+    ],
+    [
+     "7:40",
+     "**SAFETY-NET: chest pain on exertion or during sex · an erection over four hours · sudden vision or hearing change · a review date.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Thank you for telling me — I know that isn't easy to bring up.' / ★ 'I need to ask some quite personal questions — about erections, intercourse and masturbation. I ask these of every man with this problem.' / ★ 'Can you describe exactly what you mean — getting and keeping an erection, or finishing sooner than you'd like?' / ★ 'Are you able to start intercourse at all?'",
-    "★ 'Are you still getting early-morning erections? Any change in your sex drive?' / ★ 'Do you have the same difficulty on your own?' / ★ 'How is this affecting you — and your relationship?' / 'Do you get any chest pain or breathlessness when you exert yourself? Any pain in your calves when you walk?'",
-    "★ 'Most people miss some doses — in an average week, how many do you think you miss?' / 'Have you had any complications — numbness, foot ulcers, blurred vision, kidneys checked?' / 'When you say your mood is flat — have you had any thoughts of harming yourself?'",
-    "★ 'Erections depend on healthy blood vessels.' / ★ 'The arteries that supply an erection are much smaller than the ones in the heart, so they often show trouble first.' / ★ 'This is a physical, treatable problem — not a failing on your part.' / ★ 'The part that matters most is getting your diabetes and blood pressure controlled.' / ★ 'I'm not going to stop your atenolol on my own — it's protecting your heart — but I'll write to your cardiologist.'",
-    "★ 'Before I prescribe this: do you ever use a spray or a tablet under your tongue for chest pain?' / 'That spray is a nitrate, and taken close together with these tablets it can drop your blood pressure dangerously … if you take the tablet, don't use the spray for about a day afterwards — longer with the daily one. If you get chest pain in that window, call an ambulance and tell them you've taken it. Can you tell me that back?' / ★ 'The tablet doesn't work on its own — you still need sexual stimulation.' / 'If an erection ever lasts more than four hours, that is an emergency — go straight to hospital.'",
-    "Variants: 'just give me the blue pill' → 'We can absolutely talk about that tablet, and I expect it will help. But I'd be doing you a disservice if I only did that: this problem is a warning sign about your blood vessels, and the tablet works far better when the sugar and blood pressure are controlled. So I want to do both — and before I write anything, I need to ask whether you use a spray for chest pain.' / refuses counselling / 'it's my wife's fault' → 'I'm not suggesting the problem is imaginary — I've found clear physical reasons and we're going to treat them. After months of this, most couples have built up worry and misunderstanding on both sides, and that alone can keep the problem going. It's a practical step, not a judgement; the offer stays open.' / examination card (2019) → 'reduced sensation in both feet in a stocking distribution — diabetic sensory neuropathy — and glucose in the urine: both confirm poorly controlled diabetes with end-organ damage, supporting a vascular and neuropathic cause' / younger man, sudden-onset, situational, morning erections preserved, fine alone → 'your body is clearly capable — that points away from a plumbing problem and towards anxiety and pressure, which is extremely common and very treatable; the more you worry about it happening, the more likely it becomes' — mood screen, self-harm question, alcohol/drugs, SSRIs; counselling first, not a PDE5"
-   ],
    "pefe": [
-    "Role-player: James Corrigan, 60, farm machinery mechanic near Kadina, married 32 y to Susan, two adult children; T2DM 5 y (metformin bd — skips 2–3×/week, stomach), MI 4 y (one stent, two rehab sessions then stopped), cholesterol tablet + aspirin (vague), GTN spray in the glovebox never used; ex-smoker (quit 5 y, pack/day), 3–4 beers most nights, little exercise, overweight, snores; no diabetes review >1 y; feet numb for months (unmentioned); father died of an MI at 62. Opens awkward/deflecting with humour; serious if acknowledged + warning shot; guarded and monosyllabic if brisk. Three hidden items released only when asked directly: missed metformin (compliance question), puffed on the hill (exertional question), GTN spray (spray/under-tongue question). PDE5 prescribed without the nitrate question → says nothing, marks fail. Blamed → 'so it's my fault then', arms folded, short answers; recovers only if reframed kindly. Last 90 s if concerns never asked: 'does this mean my heart is getting worse? My father died at sixty-two.'",
-    "No examination in the current version. Stem: HbA1c 8% (target ~7%), BP 150/90 (target <140/90), atenolol. Older version card: stocking-distribution sensory loss both feet; glucose on urinalysis",
-    "ED: ≥3 months; organic clues — gradual onset, consistent, loss of morning erections, same with masturbation; psychogenic — sudden, situational, preserved nocturnal/morning erections. Causes: vascular (diabetes, hypertension, dyslipidaemia, smoking, IHD — ED predicts CV events by 2–5 years), neurogenic (diabetic neuropathy, spinal, pelvic surgery), hormonal (hypogonadism — low libido, morning testosterone ×2 + LH/FSH/prolactin; thyroid), drugs (beta-blockers esp. non-selective/atenolol, thiazides, SSRIs, antiandrogens, alcohol), structural (Peyronie's), psychogenic (depression — cause and consequence; risk screen). PDE5 inhibitors: sildenafil 50 mg on demand 30–60 min before, once/24 h (100 mg max); tadalafil 10–20 mg on demand or 5 mg daily; need stimulation; side effects headache, flushing, dyspepsia, nasal congestion, visual disturbance; ★ absolute contraindication with nitrates (GTN spray/tablets, isosorbide, nicorandil VERIFY) — avoid GTN ~24 h after sildenafil, ~48 h after tadalafil VERIFY; caution recent MI/unstable angina/severe hypotension — cardiac risk stratification (Princeton) before resuming sexual activity; alpha-blocker interaction. Second line: vacuum device (band off within 30 min), intracavernosal alprostadil, urology (implant). Priapism >4 h — aspiration + intracavernosal phenylephrine (not adrenaline)",
-    "Chronic disease: metformin XR/with food for GI upset; SGLT2 inhibitor or GLP-1 RA for CV/renal benefit post-MI VERIFY; ACE inhibitor/ARB for BP in diabetes; statin; cardiac rehab; consider swapping atenolol to a more selective agent (cardiology) — never stop abruptly; OSA assessment (snoring); NHMRC alcohol ≤10/week. MensLine 1300 78 99 78 · Beyond Blue 1300 22 4636 · Quitline 13 7848 · TIS 131 450"
+    "**Examination if permitted: BMI AND WAIST · BP · PERIPHERAL PULSES · PENIS — plaque or curvature · TESTES — size and consistency · GYNAECOMASTIA · LOWER LIMB SENSATION · visual fields · ± DRE.**",
+    "**Do now: absolute CV risk — he is already secondary prevention, so the question is WHETHER IT IS BEING MANAGED TO TARGET · CONFIRM THE BP — repeat, then home or ambulatory · bloods: repeat HbA1c, fasting lipids, eGFR and ACR, LFT, TSH, FBE · MORNING TOTAL TESTOSTERONE (8–10 am) WITH LH AND FSH, repeated; prolactin if low.** VERIFY.",
+    "**Do next — WHERE THE MARKS ARE: DIABETES — HbA1c 8% vs ~7% target; CONFIRM ADHERENCE, MAXIMISE METFORMIN, ADD AN SGLT2 INHIBITOR (CV and renal benefit, no hypoglycaemia; counsel on genital infection and sick-day rules) · BP 150/90 — CONFIRM, THEN ACE INHIBITOR · antiplatelet, high-intensity statin, CARDIAC REHABILITATION, influenza vaccine · LIFESTYLE — weight, exercise, smoking, alcohol.** VERIFY.",
+    "**ED-specific: SILDENAFIL on demand or TADALAFIL daily/on demand — AFTER EXCLUDING NITRATES · VACUUM CONSTRICTION DEVICE · INTRACAVERNOSAL ALPROSTADIL · UROLOGY for failed therapy, Peyronie's, prosthesis · COUPLE COUNSELLING alongside first-line therapy · TESTOSTERONE ONLY IF DEFICIENCY IS CONFIRMED on two samples, after excluding prostate cancer, with PSA and haematocrit monitoring.** VERIFY.",
+    "**Do not miss: UNDIAGNOSED OR PROGRESSIVE CVD — exertional chest pain, claudication; don't prescribe a PDE5 inhibitor into unstable symptoms · HYPOGONADISM · PROLACTINOMA — headache, visual field loss, galactorrhoea · CAUDA EQUINA — same-day emergency · DEPRESSION — ask about self-harm if positive.**",
+    "**Avoid: ★ PDE5 INHIBITOR WITHOUT THE NITRATE QUESTION · ★ STOPPING THE ATENOLOL · ★ A PLAN THAT IS ONLY SILDENAFIL · urology as the first step · counselling offered as a euphemism for 'it's in your head' · blaming the patient for his sugars · forgetting cost · no safety-net.**",
+    "**SA: Healthy Male · Diabetes SA and NDSS · GP Management Plan and TCA for dietitian, diabetes educator, podiatrist · cardiac rehab via Yorke and Northern LHN · PATS for urology or endocrinology at RAH or Flinders · Relationships Australia SA, SHINE SA · MensLine 1300 78 99 78 · Beyond Blue 1300 22 4636 · Quitline 13 7848 · Closing the Gap PBS.**"
    ],
-   "fails": [
-    "Diving into questions without acknowledgement or warning shot (he stays guarded — no compliance, alcohol or concern); never defining the complaint (ED vs premature ejaculation vs low libido); skipping morning erections/libido/masturbation",
-    "Not asking exertional symptoms because the stem says MI; cutting the psychosocial block; no self-harm question when mood is low",
-    "Accepting 'I take my metformin'; blaming ('your sugars are terrible' → arms folded); calling it psychological because he's 60 and stressed",
-    "★ Prescribing a PDE5 inhibitor without asking about nitrates; ★ stopping atenolol unilaterally; management collapsing into 'I'll give you sildenafil' with diabetes/BP mentioned in passing",
-    "No testosterone/lipids/renal/TSH; no couple counselling offer; no safety-net (chest pain during sex, priapism >4 h); no review date; not answering the father-at-62 fear"
-   ],
-   "numbers": [
-    "HbA1c 8% (target ~7) · BP 150/90 (target <140/90) · ED ≥3 months · testosterone morning ×2 + LH/FSH · father MI at 62",
-    "Sildenafil on demand 30–60 min before, once/24 h · tadalafil 5 mg daily option · nitrates absolutely contraindicated — GTN gap ~24 h sildenafil / ~48 h tadalafil VERIFY · priapism >4 h = emergency (phenylephrine, not adrenaline) · vacuum band off ≤30 min",
-    "MensLine 1300 78 99 78 · Beyond Blue 1300 22 4636 · Quitline 13 7848 · review 2 wk"
+   "ddx": [
+    [
+     "**Vasculogenic ED** — the answer",
+     "**Diabetes, prior MI, hypertension, GRADUAL, progressive, present alone and with partner**",
+     "**HbA1c 8%, BP 150/90, absent pulses, NEUROPATHY**",
+     "**Absolute CVD risk; OPTIMISE DIABETES, BP, LIPIDS**"
+    ],
+    [
+     "**Drug-induced — atenolol**",
+     "**Beta-blocker in a post-MI patient**",
+     "Full medication reconciliation",
+     "**DON'T STOP IT — options, cardiologist letter; nebivolol or carvedilol possible**"
+    ],
+    [
+     "**Androgen deficiency**",
+     "**Low libido, ABSENT MORNING ERECTIONS, fatigue, small soft testes, gynaecomastia**",
+     "Testicular size; body hair; breast tissue",
+     "**Two morning testosterone levels with LH and FSH; prolactin if low**"
+    ],
+    [
+     "**Hyperprolactinaemia / pituitary lesion**",
+     "**Headache, visual field loss, galactorrhoea, low testosterone with low-normal LH**",
+     "Visual fields",
+     "Prolactin; pituitary MRI; endocrinology — do not miss"
+    ],
+    [
+     "Thyroid disease",
+     "Cold intolerance, constipation, weight change",
+     "Goitre, reflexes, pulse",
+     "TSH"
+    ],
+    [
+     "**Peyronie's disease**",
+     "**Curvature, palpable plaque, pain on erection; with diabetes and DUPUYTREN'S**",
+     "Examine the shaft; glance at the palms",
+     "Clinical; urology if function impaired"
+    ],
+    [
+     "Prostate disease and its treatment",
+     "LUTS, prostate cancer, prostatectomy, radiotherapy, androgen deprivation",
+     "DRE where appropriate",
+     "PSA only after shared decision"
+    ],
+    [
+     "**Neurogenic — cord, cauda equina, MS, neuropathy**",
+     "**Back pain, leg weakness, SADDLE NUMBNESS, bladder or bowel change**",
+     "Lower limb neurology; perineal sensation",
+     "**Cauda equina — same-day MRI** — EMERGENCY"
+    ],
+    [
+     "**Psychogenic**",
+     "**Sudden, situational, younger; PRESERVED MORNING AND MASTURBATORY ERECTIONS; relationship discord**",
+     "**Mood, sleep, stress, partner**",
+     "**Diagnosis of exclusion — but treat the psychological dimension in every patient**"
+    ],
+    [
+     "**Undiagnosed angina — the sentinel** · substances · OSA, CKD, liver disease",
+     "**Exertional chest tightness never mentioned**; heavy alcohol, opioids, steroids; snoring",
+     "**Chest pain on exertion**; quantify substances",
+     "**Assess and refer BEFORE any ED treatment**; reduce substances; sleep study, eGFR, LFT"
+    ]
    ]
   },
   "source": "Erectile_Dysfunction_2_Case_Tasks_Script_Notability.pdf (James Corrigan, 60, erectile dysfunction with uncontrolled diabetes, a prior MI on atenolol and a GTN spray in the glovebox — causes, chronic disease first, nitrates before a PDE5 inhibitor)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Urology › Erectile_Dysfunction_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Prescribing a PDE5 inhibitor without asking about nitrates — the single safety item of the station; 'before I prescribe either: do you ever use a spray, or a tablet you put under your tongue, for chest pain?' → 'there's a little spray in the glovebox from after the heart attack — never used it' (released only if asked specifically; if you prescribe without asking he says nothing and marks it failed); 'that spray is a nitrate, and taken close together with these tablets it can drop your blood pressure dangerously; it doesn't rule the tablet out, but we need clear rules and I'll discuss it with your cardiologist — no spray for about a day after sildenafil, longer with the daily tadalafil; chest pain in that window → ambulance and tell them you've taken it; can you tell that back to me?' (★)",
-   "FAIL — Stopping the atenolol unilaterally — it is a recognised cause of ED but prescribed here for his heart, not his blood pressure; 'I'm not going to stop your atenolol on my own — it's protecting your heart — but I'll write to your cardiologist and we can look together at whether there's a better option' (★)",
-   "FAIL — Management collapsing into 'I'll give you sildenafil' — read the stem: HbA1c 8% (target ~7), BP 150/90 (target <140/90), atenolol — AMC did not choose those three by accident; 'further interventions' means fix the chronic disease first and treat the ED third; three boxes — investigations (morning testosterone on two occasions with LH and FSH, repeat HbA1c, lipids, TSH, renal function, home or ambulatory BP), then 'the part that matters most: getting the diabetes and blood pressure controlled' (solve the metformin stomach upset, add a second agent with cardiovascular and renal benefit, an ACE inhibitor once the BP is confirmed, back to cardiac rehab and regular diabetes reviews, weight, exercise, cut the beers), then the ED itself (★)",
-   "FAIL — Blaming him ('your sugars are terrible') or calling it psychological because he's 60 and stressed — 'so it's my fault then' → arms folded, short answers for the rest of the station; 'no — the metformin upset your stomach, and that's a real side effect, not a character flaw; there are ways around it'; psychogenic ED is a diagnosis of exclusion and his picture is organic; and never defining the complaint — ED vs premature ejaculation vs reduced libido are managed completely differently (★)",
-   "DO — Acknowledge and warning-shot before the intimate questions ('it is common, it is a medical problem, and in most men we can find the reason and do something about it; I need to ask some quite personal questions — about erections, intercourse and masturbation; I ask these of every man with this problem') — brisk or clinical and he stays guarded and releases none of the three hidden items; define and grade in four questions: 'is it getting and keeping an erection, or finishing sooner than you'd like? can you start intercourse at all? still getting early-morning erections? any change in your sex drive? do you have the same difficulty on your own?' ('same on my own' is the single most discriminating answer — evidence against a purely psychogenic cause; reduced morning erections with preserved libido screens androgens inside the complaint); impact on him AND the relationship ('my wife thinks I've gone off her' — scored, and it earns the couple counselling offer later)",
-   "DO — Genital and prostatic (bend, lump, pain, LUTS, surgery); cardiovascular symptoms asked despite the known MI — 'chest pain or breathlessness when you exert yourself?' → 'puffed going up the hill' (hidden item, released only on an exertional question — possible progressive ischaemia, affects PDE5 safety, back to cardiac rehab), claudication, smoking, alcohol (three or four beers most nights), exercise, weight, snoring; endocrine (cold, constipation, fatigue, galactorrhoea, headache, vision); psychosocial (mood flat → ask the risk question; sleep; who's at home); neurological (back pain, numb feet → diabetic sensory neuropathy, used to support the vascular mechanism); medications incl. OTC; the four diabetes questions with the missed-dose question asked permissively ('most people miss some — in an average week how many do you think you miss?' → two or three, stomach upset, no review in over a year) and four on the infarct (when, stent, chest pain since, rehab — went twice and stopped); the causes without blame ('erections depend on healthy blood vessels; first and biggest, your diabetes — eight per cent where we aim for seven, and high sugar damages small vessels then nerves, and your numb feet tell me that's already started; second, the atenolol; third, your heart attack — the arteries supplying an erection are much smaller than the heart's, so they show trouble first'; then hormones, thyroid, penile and prostatic, spinal, mood); sildenafil on demand (off patent, cheaper) or tadalafil daily, 'the tablet doesn't work on its own — you still need sexual stimulation'; vacuum device, injections, specialist if tablets unsuitable; couple counselling offered 'not because I think it's in your head'; safety-net chest pain at rest or during sex → ambulance, an erection over four hours → hospital (priapism); review two weeks; his father died at 62 — 'does this mean my heart is getting worse?' arrives in the last ninety seconds if concerns are never asked; 2019 card: stocking sensory loss and glycosuria = end-organ damage confirming the vascular-neuropathic mechanism; younger man, sudden onset, situational, morning erections preserved → reassurance and counselling first, not a PDE5 inhibitor"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-169",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice counselling station. The history and examination are done; the dipstick is in the stem. Four tasks: diagnosis with reasons (say cystitis, say bladder, name and exclude pyelonephritis, urethritis and prostatitis even though nobody asked), investigations (urine MCS before the first tablet — every man, every time — plus how to collect it), immediate management (nitrofurantoin SEVEN days, not three or five; the penicillin allergy is a distractor), long-term (reason first, stage one only). Critical errors: antibiotics without MCS; no further investigation advised.",
   "stem": [
    "James Whitlock, 40, previously healthy: pain on passing urine and frequency for two days. No fever, no discharge, no abdominal pain, no vomiting. Allergic to penicillin. Examination: abdomen normal, DRE normal, afebrile. Dipstick: blood trace · leucocytes + · nitrites positive."
   ],
@@ -40525,83 +40767,197 @@
    "Discuss immediate management",
    "Discuss long-term management"
   ],
-  "time": "8 min. 'It's James, isn't it? Before I go through your results — what's been happening? … and ★ is there anything in particular you're worried about?' (hidden: 'is this something I've caught? do I tell my wife?' — name it, park it, return) · ★ 'the condition you have is called cystitis — a urine infection in the bladder' — mechanism — three reasons: symptoms; the dipstick (leucocytes = white cells; nitrites = a chemical the bacteria make — the important one); normal examination · ★ 'I also considered and ruled out three things': pyelonephritis (fever, vomiting, back/side pain), urethritis (usually STI — discharge; none), prostatitis (DRE normal) · the sexual worry → brief sexual history with permission ('one condition can look similar') → 'nothing changes my thinking; I'd rather have asked than assumed' · ★ 'one test today: another urine sample to the laboratory for microscopy, culture and sensitivity — in a man I do this every time' · ★ how to collect (scored): wash hands, clean the tip with the foreskin back, first part into the toilet, midstream into the jar to half full, finish in the toilet, label, pathology today · ★ 'you'll get the antibiotic today — but the sample before the first tablet' · ★ nitrofurantoin qid × 7 days — 'the seven matters; men are treated longer' — with food, brown urine harmless, not a penicillin, change if not sensitive; paracetamol; ★ no Ural (alkaliniser stops nitrofurantoin working); drink normally, don't hold on · ★ two safety-net triggers: no better at 48 h; fever/shakes/vomiting/back pain → same day or ED · ★ long term — reason first: 'urine infections aren't common in men — worth a look, especially if it recurs; not expecting anything sinister' → stage one: today UEC + BSL with the urine; in a few weeks USS kidneys/bladder/prostate with pre- and post-void volumes; 'only if that shows something' → CT/urology; offer the choice · summary; 'anything I haven't covered?'",
+  "findings": [
+   [
+    "THE DIAGNOSIS IS EASY — THE STATION IS WHAT YOU DO NEXT, AND HOW YOU SAY IT",
+    "Everything is in the stem: TWO DAYS OF DYSURIA AND FREQUENCY · NO FEVER, NO DISCHARGE, NO ABDOMINAL PAIN, NO VOMITING · ALLERGIC TO PENICILLIN · abdomen normal, DRE normal, afebrile · DIPSTICK: BLOOD TRACE, LEUCOCYTES +, NITRITES POSITIVE"
+   ],
+   [
+    "THE TWO CRITICAL ERRORS ON THE MARK SHEET",
+    "FAILING TO ARRANGE A URINE MCS BEFORE STARTING ANTIBIOTICS · FAILING TO ADVISE FURTHER INVESTIGATION. EITHER ONE ON ITS OWN FAILS THE STATION, HOWEVER GOOD THE REST WAS"
+   ],
+   [
+    "DON'T LAUNCH INTO THE DIAGNOSIS — ask, then the agenda",
+    "'BEFORE I GO THROUGH THE RESULTS, COULD YOU TELL ME IN YOUR OWN WORDS WHAT'S BEEN HAPPENING?' … 'IS THERE ANYTHING IN PARTICULAR YOU'RE WORRIED ABOUT?' EVERY COUNSELLING STATION HAS A HIDDEN AGENDA — ask early and it's handed to you with six minutes left"
+   ],
+   [
+    "THE HIDDEN AGENDA",
+    "'IS THIS SOMETHING I'VE CAUGHT? DO I NEED TO TELL MY WIFE?' → 'THAT'S A FAIR QUESTION AND I'M GLAD YOU ASKED. THE INFECTION I THINK YOU HAVE ISN'T USUALLY SEXUALLY TRANSMITTED — BUT THERE IS ONE CONDITION THAT CAN LOOK SIMILAR, SO LET ME ASK YOU A FEW PERSONAL QUESTIONS AND WE CAN BE SURE'"
+   ],
+   [
+    "WHY A MAN IS DIFFERENT — the concept the case is built on",
+    "IN A WOMAN YOU TREAT CYSTITIS AND MOVE ON. IN A MAN YOU TREAT IT AND THINK ABOUT WHY — THE LONG MALE URETHRA NORMALLY PROTECTS HIM, SO INFECTION IMPLIES STONES, PROSTATE DISEASE, A STRICTURE, A TUMOUR, INCOMPLETE EMPTYING OR DIABETES"
+   ],
+   [
+    "THE DIPSTICK — what it does and doesn't prove",
+    "NITRITES are produced by bacteria and are the MORE SPECIFIC pad; LEUCOCYTE ESTERASE is the MORE SENSITIVE one. NEITHER REPLACES THE CULTURE IN A MAN"
+   ],
+   [
+    "'CAN'T YOU JUST GIVE ME THE ANTIBIOTICS?'",
+    "'YOU'LL GET THEM TODAY — BUT I NEED THE URINE SAMPLE BEFORE THE FIRST TABLET, BECAUSE ONCE THE ANTIBIOTIC IS IN, THE TEST CAN'T TELL US WHICH BUG IT IS.' SAMPLE FIRST, TABLET SECOND, SAME VISIT"
+   ],
+   [
+    "THE MIDSTREAM TECHNIQUE — THIS IS SCORED",
+    "WASH YOUR HANDS · CLEAN THE TIP, FORESKIN BACK · START PASSING URINE INTO THE TOILET AND LET THE FIRST PART GO · MID-STREAM, HOLD THE JAR IN THE FLOW UNTIL ABOUT HALF FULL · FINISH IN THE TOILET, CLOSE AND LABEL, TO PATHOLOGY TODAY. 'DOES THAT MAKE SENSE?'"
+   ],
+   [
+    "THE PENICILLIN ALLERGY IS A DISTRACTOR",
+    "'WHAT HAPPENED WHEN YOU TOOK PENICILLIN? NITROFURANTOIN ISN'T A PENICILLIN, SO THAT ALLERGY ISN'T A PROBLEM HERE.' Reaching for amoxicillin is the error it's planted to catch"
+   ],
+   [
+    "VERSION B — the reluctant patient",
+    "The role-player is briefed to be SURPRISED AND RELUCTANT when further investigation or urology is raised — BUT TO ACCEPT IT IF YOU HANDLE IT WELL. 'A SCAN AND A SPECIALIST? DO YOU THINK IT'S CANCER?' IS THE SCORED MOMENT"
+   ]
+  ],
+  "findingsLabel": "The diagnosis is easy — culture before the tablet, and investigation raised in stages, reason first",
+  "must": [
+   "FAIL — No urine culture before antibiotics.",
+   "FAIL — Never advising further investigation.",
+   "FAIL — Alarming the patient: 'CT, a camera in the bladder, rule out cancer' in the first sentence.",
+   "FAIL — The female regimen: three or five days instead of seven.",
+   "ASK — Is there anything in particular you're worried about?",
+   "ASK — What happened when you took penicillin?"
+  ],
   "back": {
-   "dx": "Acute uncomplicated cystitis in a man — two days of dysuria and frequency, afebrile, no discharge, no flank/suprapubic pain, normal abdomen and DRE; dipstick nitrites positive + leucocytes + trace blood. Excluded aloud: pyelonephritis (no fever, vomiting, loin pain), urethritis (no discharge; one wife, fifteen years), prostatitis (DRE normal). Culture first (every man), treat today: nitrofurantoin 100 mg qid for 7 days (male regimen; not a penicillin — allergy irrelevant; trimethoprim 300 mg daily or cefalexin second line VERIFY), paracetamol, avoid urinary alkalinisers, normal fluids, review if no better at 48 h; same-day/ED for fever, rigors, vomiting, loin pain. Long term, staged: UEC + BSL today; renal/bladder/prostate ultrasound with post-void residual in 2–4 weeks; CT/urology only if abnormal or recurrent; no PSA during infection (falsely high). Hidden agenda: 'is this something I've caught? would I have to tell my wife?'",
+   "dx": [
+    "**ACUTE CYSTITIS IN A MAN — a bacterial infection of the bladder, which is UNUSUAL IN A MAN AND THEREFORE SIGNIFICANT — to be CULTURED AND THEN INVESTIGATED.** **SAY 'CYSTITIS', NOT THE VAGUE 'A URINE INFECTION' — name the level: bladder, not kidney, urethra or prostate.**",
+    "**THE DISCRIMINATING ISSUE: YOU MUST RAISE FURTHER INVESTIGATION — AND RAISE IT IN STAGES, WITH THE REASON FIRST. THE STATION IS A SQUEEZE: not advising investigation is a critical error; advising it badly — CYSTOSCOPY, CT AND 'CANCER' IN YOUR OPENING SENTENCE — TRIGGERS THE RELUCTANCE THE ROLE-PLAYER IS BRIEFED TO PRODUCE. THE PASS RUNS BETWEEN THE TWO: REASON, THEN STAGE ONE, THEN 'ONLY IF'.**",
+    "**TASK 1 — THREE REASONS, IN ORDER: 'the condition you have is called CYSTITIS — bacteria have got into the bladder and inflamed the wall, which gives you the stinging and the need to go. THREE REASONS: YOUR SYMPTOMS; THE URINE TEST — LEUCOCYTES, white cells from your immune system, and NITRITES, A CHEMICAL THE BACTERIA THEMSELVES PRODUCE; and THE EXAMINATION, which was normal and rules out some other causes.'**",
+    "**THEN THE DIFFERENTIALS, OUT LOUD — scored under diagnosis even though nobody asked: PYELONEPHRITIS — no fever, vomiting or back pain · URETHRITIS — the giveaway is discharge, and he has none (still take a sexual history) · PROSTATITIS — fever, difficulty passing urine, a tender gland; his DRE was normal. EVERY NEGATIVE IN THE STEM EXISTS TO CLOSE A DOOR — SAY WHICH DOOR EACH ONE CLOSES.**",
+    "**TASK 3 — TREATMENT TODAY, WITHOUT WAITING 48 HOURS: NITROFURANTOIN 100 mg ORALLY 6-HOURLY FOR 7 DAYS — 'AND THE SEVEN DAYS IS THE PART TO REMEMBER, BECAUSE MEN ARE TREATED LONGER THAN WOMEN.' WITH FOOD · HARMLESS BROWN URINE — warn him or he'll stop · paracetamol · NO URAL — ALKALINISERS REDUCE NITROFURANTOIN'S ACTIVITY. Alternatives: TRIMETHOPRIM 300 mg DAILY or CEFALEXIN 500 mg BD, 7 days.** VERIFY. **CORRECTION: NITROFURANTOIN IS NOW FIRST LINE; TRIMETHOPRIM HAS MOVED DOWN ON RESISTANCE GROUNDS.**",
+    "**NITROFURANTOIN DOES NOT TREAT PYELONEPHRITIS OR PROSTATITIS — IT CONCENTRATES IN URINE, NOT TISSUE. Avoid below eGFR ~45, at term in pregnancy, and in G6PD deficiency. NOT A PENICILLIN.** VERIFY. **SAFETY-NET: NO IMPROVEMENT IN 48 HOURS — resistant bug; FEVER, SHAKES, VOMITING OR BACK/SIDE PAIN — the kidney; same-day review or ED.**",
+    "**TASK 4 — THE REASON BEFORE THE TESTS, VERBATIM: 'there's one more thing, and I want to say WHY before I say WHAT. URINE INFECTIONS AREN'T COMMON IN MEN — the male plumbing usually protects you. So when one does happen, IT'S WORTH A LOOK, particularly if it happens again. I'M NOT EXPECTING TO FIND ANYTHING SINISTER. I'd do it in stages: TODAY, kidney function and a blood sugar with the urine. IN A FEW WEEKS, AN ULTRASOUND — NO NEEDLES, NO RADIATION. And ONLY IF THAT SHOWS SOMETHING would we go further. MOST MEN NEVER DO.'**",
+    "**IF HE PUSHES BACK: 'I can hear that, and you're right that most of the time this is straightforward. If there is something simple behind it — A SMALL STONE, OR THE BLADDER NOT EMPTYING FULLY — FINDING IT SAVES YOU HAVING THIS AGAIN AND AGAIN. If you'd rather start with just the urine and blood test today, that's reasonable too — BUT I'D WANT TO SEE YOU AFTER THE TREATMENT EITHER WAY. What would you prefer?'** **Four stages exist in your head; ONLY STAGE ONE LEAVES YOUR MOUTH UNPROMPTED.**",
+    "**CORRECTION — THE GUIDELINE TENSION: current Australian guidance RESERVES FORMAL UROLOGICAL EVALUATION FOR RECURRENT INFECTION OR INADEQUATE RESPONSE; the handbook marks 'no investigation' as a critical error. DO BOTH: 'strictly, guidelines reserve formal evaluation for recurrence — but a UTI in a man is uncommon enough that I'd do A BASELINE: renal function, glucose, and an ultrasound with a post-void residual — and RESERVE CYSTOSCOPY AND REFERRAL FOR RECURRENCE, PERSISTENT HAEMATURIA OR AN ABNORMAL SCAN.'**",
+    "**CORRECTIONS ON FOLLOW-UP: NO POST-TREATMENT CULTURE TO PROVE CURE — the only exceptions are PREGNANCY and A MAN WITH PROSTATITIS · NO PSA DURING ACUTE INFECTION — FALSELY RAISED; defer it · REPEAT URINALYSIS AFTER TREATMENT to confirm the blood has cleared — PERSISTENT HAEMATURIA IS A UROLOGY REFERRAL, NOT A REPEAT SCRIPT · ASYMPTOMATIC BACTERIURIA IN A MAN IS NOT TREATED.** **SA: MSU to SA Pathology same day; KUB ultrasound on the Copper Coast; urology at TQEH; PATS.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Good morning, I'm Dr —. It's James, isn't it? Before I go through your results, could you tell me what's been happening?' → 2 d burning, running to the toilet; colleague did a urine test → 'that sounds uncomfortable — I have the result and can tell you what I think. ★ Before I do — is there anything in particular you're worried about?' → 'is this something I've caught? would I have to tell my wife?' → 'thank you for telling me — I'll come back to that properly in a moment'"
+     "**WIPE — and DON'T launch into the diagnosis: 'could you tell me in your own words what's been happening?' Then THE AGENDA: 'anything in particular you're worried about?'**"
     ],
     [
-     "0:50",
-     "★ 'The condition you have is called cystitis — a urine infection in the bladder. Bacteria have got into the bladder and inflamed the wall, and that inflammation causes the stinging and the need to go so often. Three reasons I'm confident: your symptoms; the urine test — leucocytes, white blood cells your immune system sends where there's infection, and nitrites, a chemical the bacteria themselves make — that's the important one; and the examination, which was normal.' · ★ 'I also considered and ruled out three things: pyelonephritis — infection travelled up to the kidney — you'd have a high temperature, vomiting, and pain in the back or side; urethritis — inflammation of the tube urine comes out through, usually sexually transmitted — the give-away is discharge, and you have none; and prostatitis — infection of the gland below the bladder — the internal examination was normal.'"
+     "0:40",
+     "**If the agenda is 'have I caught something?' — acknowledge, and a brief SEXUAL HISTORY: partners, condoms, any discharge even if it settled.**"
     ],
     [
-     "2:10",
-     "★ The worry: 'which brings me to your question. What you have isn't usually sexually transmitted — but one condition can look similar, so with your permission I'd like to ask a few personal questions I ask everyone. Is that alright?' → 'just my wife, fifteen years; no discharge, no sores, never had an infection' → 'that, with no discharge, makes a sexually transmitted infection very unlikely — this isn't something you've caught. I'd rather have asked than assumed.'"
+     "1:10",
+     "**TASK 1 — CYSTITIS, WITH THREE REASONS: symptoms · leucocytes and nitrites translated · normal examination.**"
     ],
     [
-     "3:00",
-     "★ 'One test I need today: another urine sample, to the laboratory for microscopy, culture and sensitivity — they look at it under the microscope, grow the bug to identify it, and tell us which antibiotic will kill it. In a man I do this every time, because urine infections are uncommon in men.' · 'another one? do I wait for the result?' → ★ 'No — you'll get the antibiotic today. But I need the sample before the first tablet, because once the antibiotic is in, the test can't tell us which bug it was.' · ★ how: 'a midstream sample — wash your hands; clean the tip of the penis, foreskin back if you have one; start passing urine into the toilet and let the first part go; then mid-stream hold the jar in the flow until about half full; finish in the toilet; close and label it; drop it at the pathology centre today. Does that make sense?'"
+     "1:50",
+     "**THE DIFFERENTIALS OUT LOUD, each closing a door: pyelonephritis (no fever, vomiting, back pain) · urethritis (no discharge) · prostatitis (normal DRE).**"
     ],
     [
-     "4:15",
-     "★ 'I'm starting the antibiotic today — nitrofurantoin, four times a day for seven days; the seven days is the bit to remember, because men are treated longer than women. Take it with food; don't be alarmed if your urine goes brown — that's the drug, harmless. You mentioned a penicillin allergy — nitrofurantoin isn't a penicillin, so that's not a problem. If the culture shows the bug isn't sensitive, we'll change it. Paracetamol for the discomfort. ★ Leave the Ural-type sachets alone this week — they make the urine less acidic and that stops nitrofurantoin working properly. Drink normally, and don't hold on when you need to go.' ('can I drink on it?' — alcohol not contraindicated but sensible to limit; 'what if it doesn't work?' → next line) · ★ 'Two things bring you back sooner: no improvement after 48 hours; or fever, shakes, vomiting or pain in your back or side — that means it's gone up to the kidney, and I want you seen the same day or at the emergency department.'"
+     "2:40",
+     "**TASK 2 — THE TEST TODAY: 'another urine sample for microscopy, culture and sensitivity — in a man I do this every time.'** Then **THE MIDSTREAM TECHNIQUE, STEP BY STEP, and 'does that make sense?'**"
     ],
     [
-     "5:45",
-     "★ Long term — reason before what: 'One more thing. Urine infections aren't common in men — in women they're routine; in men the plumbing normally protects you, so when one does happen it's worth a look, particularly if it happens again. I'm not expecting to find anything sinister. So, in stages: today, with the urine, your kidney function and blood sugar. In a few weeks, once this settles, an ultrasound of the kidneys, bladder and prostate — no needles, no radiation: you drink so the bladder is full, they scan, you empty it, they scan again to see what's left behind. Only if that shows something would we go further — a CT, or a urologist. Most men never need that. Does that sound reasonable?' · 'a scan? for a water infection? is it serious?' → ★ 'I can hear that, and most of the time this is straightforward. If something simple is behind it — a small stone, or the bladder not emptying fully — finding it now saves you having this again and again. No needles, no radiation. Only if it shows something would we go further. If you'd rather start with just the urine and blood test today, that's reasonable too — but I'd want to see you after the treatment either way. What would you prefer?' · 'dad had prostate trouble — can I have the blood test?' → 'not today — an infection pushes the result up; let this settle, then a proper conversation'"
+     "3:40",
+     "**TASK 3 — TREATMENT TODAY: sample first, tablet second · NITROFURANTOIN FOUR TIMES A DAY FOR SEVEN DAYS · with food, brown urine · 'NOT A PENICILLIN — what happened with the penicillin?' · paracetamol · no Ural · drink normally.**"
     ],
     [
-     "7:15",
-     "★ Recap: 'cystitis — an infection in the bladder. Urine sample today before the first tablet. Nitrofurantoin four times daily for seven days. Back if you're no better in 48 hours, sooner with fever or back pain. Bloods today, ultrasound in a few weeks, and I'll see you after the treatment. Anything I haven't covered?'"
+     "4:40",
+     "**SAFETY-NET BEFORE MOVING ON: not better in 48 hours · fever, shakes, vomiting, back or side pain → same day or ED.**"
+    ],
+    [
+     "5:10",
+     "**TASK 4 — THE REASON BEFORE THE TESTS: 'uncommon in men — the plumbing usually protects you — worth a look; I'm not expecting anything sinister.'**"
+    ],
+    [
+     "5:40",
+     "**STAGE ONE, THEN 'ONLY IF': today kidney function and sugar · in a few weeks an ULTRASOUND — no needles, no radiation, full bladder then empty · only if abnormal, CT or urology — 'most men never need that. Does that sound reasonable?'**"
+    ],
+    [
+     "6:30",
+     "**If he's surprised or reluctant: acknowledge, explain the benefit — a stone, incomplete emptying — offer the choice, and 'I'd want to see you after treatment either way.'**"
+    ],
+    [
+     "7:20",
+     "**SUMMARY AND FOLLOW-UP: I'll ring with the culture and change the antibiotic if needed · repeat the urine test afterwards to check the blood has cleared · 'what questions do you have?'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Before I go through the results — is there anything in particular you're worried about?' / ★ 'The condition you have is called cystitis — a urine infection in the bladder.' / ★ 'Leucocytes are white blood cells; nitrites are a chemical the bacteria make. I also ruled out pyelonephritis, urethritis and prostatitis.'",
-    "'What you have isn't usually sexually transmitted — but one condition can look similar, so with your permission I'd like to ask a few personal questions I ask everyone.' / 'Nothing there changes my thinking, and I'd rather have asked than assumed.'",
-    "★ 'You'll get the antibiotics today — but I need the sample before the first tablet.' / ★ 'A midstream sample: wash your hands, clean the tip with the foreskin back, let the first part go into the toilet, catch the middle until the jar is half full, finish in the toilet, label it, and drop it at pathology today.'",
-    "★ 'Nitrofurantoin, four times a day for seven days — the seven days is the bit to remember, because men are treated longer than women.' / 'Nitrofurantoin isn't a penicillin, so your allergy is fine.' / 'Leave the Ural-type sachets alone this week — they stop it working properly.' / ★ 'Two things bring you back sooner: no improvement after 48 hours; or fever, shakes, vomiting or back or side pain — same-day review or the emergency department.'",
-    "★ 'Urine infections aren't common in men, so it's worth a look. I'm not expecting to find anything sinister. Only if that shows something would we go further — most men never do.' / 'My father had prostate cancer — can I have the blood test?' → 'We can discuss it, but not today: an infection pushes the result up and we'd get a falsely high number that would worry us both for nothing. Let this settle, then we'll have a proper conversation about it.'",
-    "Variant — he volunteers a discharge last week that stopped: 'Thank you — that changes my thinking. A discharge that has settled still counts, and it makes urethritis the more likely diagnosis, which is usually sexually transmitted. I'd like a fuller sexual history, a first-pass urine for chlamydia and gonorrhoea, and to treat you today rather than wait.' (cross to the urethritis pathway — MED-165)"
-   ],
    "pefe": [
-    "Role-player: James Whitlock, 40, warehouse supervisor, married 15 y, two children; non-smoker, 6–7 beers over a weekend; no regular meds; penicillin — a rash as a teenager; rarely sees a doctor; saw another doctor 20 min ago (examined, dipstick). Practical, embarrassed, mildly impatient — wants tablets and back to work. Hidden: 'is this something I've caught? would I have to tell my wife?' — only to an open concerns question; blurts at 6 min otherwise. Scripted reaction to any scan/specialist: 'a scan? for a water infection? that seems like a lot' — calms if reason first/staged/no needles; visibly anxious and stays anxious if you lead with cancer/CT/cystoscopy; never prompts if investigation is never raised (critical error). Pushes once on the culture ('can't you just give me the tablets?') and once on the allergy. Asks: 'four times a day? can I drink on it? what if it doesn't work?'. Dad has diabetes and 'some prostate trouble'",
-    "Findings in the stem: afebrile, abdomen normal, DRE normal; dipstick blood trace, leucocytes +, nitrites +. Sexual history: one partner (wife), no discharge/sores, never an infection",
-    "Male UTI: always culture (uncommon — look for a cause: BPH/incomplete emptying, stones, stricture, diabetes, catheter, anal intercourse, uncircumcised); treat empirically same visit, sample before the first dose; nitrofurantoin 100 mg 6-hourly 7 days (avoid if eGFR <45 VERIFY; not for pyelonephritis/prostatitis — poor tissue penetration); alternatives trimethoprim 300 mg daily 7 d, cefalexin 500 mg 12-hourly 7 d VERIFY TG; women 3 days trimethoprim / 5 days nitrofurantoin or cefalexin; culture 48–72 h — review if no better at 48 h; no test of cure except pregnancy or prostatitis; alkalinisers (Ural) reduce nitrofurantoin efficacy. Investigation after a first male UTI: UEC, glucose, ± PSA later (not during infection — falsely raised), renal tract ultrasound with pre/post-void residual at 2–4 weeks; CT KUB/urology/cystoscopy if abnormal, recurrent, haematuria persists, or >50 with LUTS VERIFY. Prostatitis: fever, perineal/low back pain, tender boggy prostate — 2–4 weeks of a prostate-penetrating agent (trimethoprim/ciprofloxacin) VERIFY",
-    "SA: pathology drop-off today · healthdirect 1800 022 222 · MedSTAR 1300 13 12 33 if septic from a rural site"
+    "**Do now: URINE MCS — BEFORE THE FIRST TABLET, non-negotiable in a man · START EMPIRICAL TREATMENT THE SAME VISIT · UEC AND eGFR — needed before nitrofurantoin anyway · BLOOD GLUCOSE OR HbA1c · SEXUAL HISTORY, and first-pass urine NAAT if any risk even without discharge · MEDICATION REVIEW for anything causing retention.**",
+    "**Treatment: NITROFURANTOIN 100 mg 6-HOURLY × 7 DAYS (man); 5 days in a woman · alternatives TRIMETHOPRIM 300 mg daily or CEFALEXIN 500 mg BD × 7 days · with food, brown urine, avoid eGFR <~45, NOT for pyelo or prostatitis, NOT with alkalinisers.** VERIFY.",
+    "**Who needs a culture: ALL MEN · pregnancy · recurrence · recent antibiotics · treatment failure · pyelonephritis · catheter. THE ONLY EXCEPTION — a non-pregnant, non-recurrent woman with uncomplicated cystitis.**",
+    "**Staged investigation: STAGE 1 today — MCS, UEC/eGFR, glucose, sexual health if indicated · STAGE 2 at 2–4 weeks — KUB ULTRASOUND WITH PRE- AND POST-VOID RESIDUAL, repeat urinalysis, PSA ONLY ONCE SETTLED · STAGE 3 — CT KUB if abnormal · STAGE 4 — urology and flexible cystoscopy.**",
+    "**Do not miss: PYELONEPHRITIS — nitrofurantoin won't treat it · URETHRITIS — ask about discharge even when the stem says none · RETENTION — post-void residual · PERSISTENT HAEMATURIA → urology · RECURRENT INFECTION IN A MAN → formal urological evaluation · drug-induced incomplete emptying — SSRIs, anticholinergics, opioids, antihistamines, decongestants.**",
+    "**Avoid: ★ ANTIBIOTICS BEFORE THE CULTURE · ★ NO FURTHER INVESTIGATION · A 3- OR 5-DAY COURSE · ALKALINISERS WITH NITROFURANTOIN · POST-TREATMENT CULTURE TO PROVE CURE · PSA DURING ACUTE INFECTION · OPENING WITH CYSTOSCOPY AND CT · saying only 'UTI'.**",
+    "**SA: MSU to an SA Pathology centre same day, refrigerate if delayed · SHINE SA for sexual health; chlamydia and gonorrhoea notifiable · KUB ultrasound at most regional sites including the Copper Coast; CT KUB usually Port Pirie or Adelaide · statewide urology at TQEH; PATS · healthdirect 1800 022 222 after hours · check eGFR carefully before nitrofurantoin; Closing the Gap.**"
    ],
-   "fails": [
-    "Skipping the agenda question; saying 'a UTI' without cystitis/bladder; diagnosis without reasons or without excluding pyelonephritis, urethritis, prostatitis",
-    "★ Starting antibiotics without arranging urine MCS; or making him wait 48–72 h for the culture before treatment; not explaining the midstream technique",
-    "The female regimen (3-day trimethoprim / 5-day nitrofurantoin); prescribing a penicillin, or refusing all antibiotics because of the allergy; not naming why Ural is out",
-    "★ Never advising further investigation; or opening with 'CT, camera in the bladder and a specialist' and leaving him frightened",
-    "No 48-hour review trigger; no kidney safety-net; no summary/understanding check; not addressing 'do I tell my wife?' with a brief permissioned sexual history"
-   ],
-   "numbers": [
-    "Nitrofurantoin 100 mg 6-hourly × 7 d (men), 5 d (women) VERIFY · avoid if eGFR <45 · trimethoprim 300 mg daily / cefalexin 500 mg 12-hourly second line · culture 48–72 h · review if no better at 48 h",
-    "Sample before the first tablet · no test of cure except pregnancy/prostatitis · USS with post-void residual 2–4 wk · PSA not during infection · healthdirect 1800 022 222"
+   "ddx": [
+    [
+     "**Acute cystitis** — the answer",
+     "**Dysuria, frequency, urgency, suprapubic ache; NITRITES AND LEUCOCYTES**",
+     "Suprapubic tenderness; no systemic upset",
+     "**Urine MCS, then treat — 7 days** — same day"
+    ],
+    [
+     "**Pyelonephritis**",
+     "**Same symptoms plus FEVER, RIGORS, FLANK PAIN, VOMITING**",
+     "Temperature, renal angle tenderness",
+     "**Excluded here. If present — a different antibiotic; NITROFURANTOIN DOES NOT TREAT IT**"
+    ],
+    [
+     "**Urethritis**",
+     "**Dysuria plus DISCHARGE; new or multiple partners; inconsistent condoms**",
+     "**Ask about discharge even if it settled; sexual history**",
+     "First-pass urine NAAT for chlamydia, gonorrhoea, M. genitalium"
+    ],
+    [
+     "**Prostatitis**",
+     "**Fever, difficulty passing urine, tender gland**",
+     "**DRE — NORMAL HERE**",
+     "Longer course; post-treatment culture IS indicated in prostatitis"
+    ],
+    [
+     "**Calculus · bladder outflow obstruction — BPH, stricture**",
+     "**Colicky loin-to-groin pain, previous stones; hesitancy, poor stream, dribble, incomplete emptying; instrumentation**",
+     "**Colic and obstructive questions; POST-VOID RESIDUAL**",
+     "**Ultrasound with pre- and post-void volumes; CT KUB if suspicion persists** — stage 2"
+    ],
+    [
+     "**Bladder or renal tumour**",
+     "**Persistent haematuria after treatment, smoking, age, weight loss**",
+     "**Repeat urinalysis after the infection clears**",
+     "**Persistent haematuria → urology and cystoscopy** — do not miss"
+    ],
+    [
+     "**Diabetes**",
+     "Thirst, weight change, recurrent infection",
+     "Thirst and weight",
+     "**Glucose or HbA1c today** — stage 1"
+    ],
+    [
+     "**Drug-induced incomplete emptying**",
+     "**SSRIs, anticholinergics, opioids, antihistamines, decongestants**",
+     "**Full medication review including over-the-counter**",
+     "Stop or substitute — stage 1"
+    ],
+    [
+     "Recurrent UTI in a man",
+     "Fourth infection this year",
+     "Frequency of episodes",
+     "**Formal urological evaluation**"
+    ],
+    [
+     "Asymptomatic bacteriuria",
+     "Positive culture, no symptoms",
+     "Symptoms",
+     "**Not treated in a man**"
+    ]
    ]
   },
   "source": "Male_UTI_Cystitis_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 40, two days of dysuria and frequency with a nitrite-positive dipstick — acute cystitis in a man: culture first, treat today for seven days, investigate in stages)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Urology › Male_UTI_Cystitis_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Starting antibiotics without arranging urine MCS — a critical error; and the mirror trap, making him wait for the culture (48–72 hours) — 'you'll get the antibiotic today, but I need the sample before the first tablet, because once the antibiotic is in the test can't tell us which bug it was'; in a man the culture is sent every time ('urine infections are uncommon in men'); he pushes once — 'can't you just give me the tablets?' (★)",
-   "FAIL — Never advising further investigation, or opening with 'you'll need a CT, a camera in the bladder and a specialist' — he is briefed to react ('a scan? for a water infection? that seems like a lot') and to stay anxious if you lead with cancer, CT or cystoscopy; if you never raise it he does not prompt and marks the critical error; reason first, stage one only, the rest as 'only if': 'urine infections aren't common in men — the plumbing usually protects you — so when one happens it's worth a look; I'm not expecting to find anything sinister; today, kidney function and a blood sugar; in a few weeks once this settles, an ultrasound of the kidneys, bladder and prostate — no needles, no radiation, pre- and post-void; only if that shows something would we go further, and most men never do' (★)",
-   "FAIL — Prescribing a penicillin, or refusing all antibiotics because of the allergy — the allergy is a distractor, not an obstacle: 'nitrofurantoin isn't a penicillin, so that's not a problem here'; and the female regimen — three days of trimethoprim or five of nitrofurantoin — in a man it is SEVEN days, and say why ('men are treated longer than women') (★)",
-   "FAIL — Skipping the agenda question — 'before I go through the results, is there anything in particular you're worried about?' at one minute; the hidden concern is 'is this something I've caught? would I have to tell my wife?' (blurted at six minutes otherwise); park it, give the diagnosis, then come back: 'what you have isn't usually sexually transmitted, but one condition can look similar, so with your permission a few personal questions I ask everyone' → one partner, fifteen years, no discharge → 'this isn't something you've caught; I'd rather have asked than assumed'",
-   "SAY — 'Cystitis — a urine infection in the bladder' (not 'a UTI'): bacteria have got in and inflamed the wall, and the inflammation causes the stinging and the frequency; three reasons — your symptoms, the dipstick (leucocytes: white cells your immune system sends where there's infection; nitrites: a chemical the bacteria themselves make), and a normal examination; the differentials excluded aloud even though nobody asked — pyelonephritis (fever, vomiting, back or side pain), urethritis (the give-away is discharge, and you have none), prostatitis (the internal examination was normal); the midstream technique is scored (wash hands, clean the tip with the foreskin back, first part into the toilet, catch the middle half a jar, label, pathology today)",
-   "DO — Nitrofurantoin four times a day for seven days with food, urine may go brown and that's harmless, change it if the culture says so; paracetamol; no Ural this week (alkalinises the urine and stops nitrofurantoin working); drink normally, don't hold on; two safety-net triggers with a timeframe — no better at 48 hours, or fever, shakes, vomiting, back or side pain → same-day review or ED; review after treatment; 'a scan seems like a lot' → offer the choice (urine and bloods today, ultrasound in stages, 'what would you prefer?'); a discharge last week that stopped → still counts, urethritis pathway; 'my father had prostate cancer — can I have the PSA?' → not today, an infection falsely raises it, revisit once settled; avoid nitrofurantoin below eGFR ~45; no post-treatment culture except pregnancy or prostatitis; summarise and 'is there anything I haven't covered?'"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-170",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice. Version A: focused history, the examiner hands you the dipstick card at ~6 min (explain it pad by pad to her), then diagnosis + differentials. Anything in the stem is examinable — four questions each on the cystocele and the HbA1c. Single-item automatic fail: never asking about blood in the urine — it is also what releases her real concern. Version B (James, 62, frightened of prostate cancer after a TV programme, drinking six big glasses of water a day) folded in.",
   "stem": [
    "Jane Whitcombe, 50, presents with urinary frequency. Cystocele diagnosed two years ago. Recent HbA1c 6.1%; not a known diabetic. Afebrile, haemodynamically stable."
   ],
@@ -40610,76 +40966,191 @@
    "The examiner will give you the urine dipstick findings — explain them to the patient",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 min. Intro, comfort, ★ confidentiality → 'it's a women's problem… embarrassing' → ★ normalise + second open question · ★ define: how long (4 d), constant, worse, ★ 'how many times a day?' (10–12), ★ 'up at night — how many?' (2), ★ 'large amount or only a little each time?' (little, needs to go again), better/worse (coffee), impact (exhausted, frightened to be far from a toilet) · ★ FUND + HISPED: sudden urge (yes) → ★ 'when that happens, do you ever leak?' (twice — hadn't wanted to mention), burning (badly), suprapubic ache, hesitancy/intermittency/straining/weak flow/incomplete emptying/dribbling (no) · ★ 'any blood in your urine — even a trace on the paper?' → pink on Tuesday, aunt bladder cancer, tearful → ★ 'thank you — I'll come back to that and answer it properly before you leave; a few safety questions first' · red flags/DDx: weight, appetite, lumps, tiredness, ★ fever/rigors, ★ back/side pain, N/V, stones (self/family), cauda equina in one line (back pain, leg numbness/weakness, saddle numbness, bowels) · fluids: coffee/tea/cola, alcohol, ★ medications incl water tablets, ★ 'how much water a day?', thirst, weight loss, blurred vision · ★ menopause block: LMP (8 mo), flushes, dryness/dyspareunia, lump/dragging, discharge/rash, pregnancy · ★ cystocele ×4 (when, what done — pelvic floor exercises stopped, reviews, problems since); ★ HbA1c ×4 (when, treatment — diet, adherence, reviews, complications) · SADMA · card → ★ pad by pad: white cells (immune cells → infection/inflammation), ★ nitrites (chemical certain bacteria make — confirms bacteria in the bladder), ★ blood + protein (expected with an inflamed lining — 'but I'll recheck once treatment is finished'), glucose/ketones negative · ★ 'cystitis — an infection in the bladder itself, not the kidney' + why; ★ prolapse → incomplete emptying → infection; DDx with reasons: pyelonephritis, stone, bladder growth (why the recheck), diabetes (6.1% not diabetic range), genitourinary syndrome of menopause (treat), overactive bladder · plan: short antibiotic course, analgesia, fluids, MSU to the lab (prolapse), recheck urine, pelvic floor physio, vaginal oestrogen discussion, repeat HbA1c 12 months, review caffeine · safety-net 48 h/fever/back pain/vomiting; any blood → tell me.",
+  "findings": [
+   [
+    "TWO VERSIONS, ONE STRUCTURE",
+    "A — JANE, 50: CYSTOCELE TWO YEARS AGO, HbA1c 6.1%, NOT A KNOWN DIABETIC, afebrile → ACUTE CYSTITIS, predisposed by incomplete emptying. B — JAMES, 62: SAW A TV PROGRAMME ABOUT PROSTATE CANCER AND IS WORRIED → EVERY URINARY SYMPTOM NEGATIVE; HE DRINKS SIX LARGE GLASSES OF WATER A DAY, DELIBERATELY. THAT IS THE DIAGNOSIS"
+   ],
+   [
+    "DEFINE BEFORE YOU DIAGNOSE — the splitting question",
+    "'I JUST GO TO THE TOILET A LOT' → 'ON AN AVERAGE DAY, HOW MANY TIMES?' then 'A LARGE AMOUNT EACH TIME, OR JUST A FEW DROPS?' and 'DO YOU GET UP AT NIGHT — HOW MANY TIMES?' LARGE VOLUMES = POLYURIA (diabetes, fluid, drugs); SMALL VOLUMES = BLADDER OR OUTLET. ASK THE VOLUME BEFORE YOU COMMIT TO A LIST"
+   ],
+   [
+    "PACKAGE EVERY URINARY SYMPTOM — FUND then HISPED",
+    "STORAGE: FREQUENCY · URGENCY · NOCTURIA · DYSURIA. VOIDING: HESITANCY · INTERMITTENCY · STRAINING · POOR STREAM · INCOMPLETE EMPTYING · DRIBBLING. RUN BOTH AS A FIXED SCRIPT — 'ANSWER YES OR NO AND WE'LL MOVE QUICKLY.' ASKING ONLY WHAT THE PATIENT VOLUNTEERED IS A LISTED ERROR"
+   ],
+   [
+    "THE UNCONDITIONAL QUESTIONS",
+    "'HAVE YOU NOTICED ANY BLOOD IN YOUR URINE AT ALL?' — WHATEVER THE AGE · and THE UPPER-VERSUS-LOWER SPLIT: 'ANY FEVER, SHIVERS OR SHAKES? PAIN LOW IN YOUR TUMMY? PAIN IN YOUR BACK OR SIDE? NAUSEA OR VOMITING?' — FOUR QUESTIONS, ALWAYS, BEFORE YOU SAY 'CYSTITIS'"
+   ],
+   [
+    "USE EVERYTHING IN THE STEM — the four questions",
+    "THE CYSTOCELE: WHEN DIAGNOSED, TREATMENT, REVIEWS, COMPLICATIONS — THE BLADDER NO LONGER EMPTIES COMPLETELY, AND RESIDUAL URINE IS THE SUBSTRATE FOR INFECTION. THE HbA1c 6.1%: diet-controlled, follow-up. ANYTHING IN THE STEM IS THERE FOR A REASON"
+   ],
+   [
+    "THE SEX-SPECIFIC BLOCK",
+    "WOMAN: last period · HOT FLUSHES · VAGINAL DRYNESS, DYSPAREUNIA · LUMP OR DRAGGING · discharge or rash · COULD YOU BE PREGNANT? — GENITOURINARY SYNDROME OF MENOPAUSE causes urethral atrophy and recurrent UTI. MAN: discharge · rash or ulcers · mini sexual history · testicular pain"
+   ],
+   [
+    "'I DRINK ABOUT SIX BIG GLASSES OF WATER A DAY — IT'S GOOD FOR YOU'",
+    "QUANTIFY IT, THEN SAY PLAINLY THAT THIS ALONE EXPLAINS HIS SYMPTOMS — AND STILL FINISH THE RED-FLAG QUESTIONS. 'ROUGHLY HOW MUCH WATER DO YOU DRINK A DAY?' IS A ROUTINE QUESTION, NOT AN OPTIONAL ONE. Plus coffee, tea, cola, alcohol, water tablets"
+   ],
+   [
+    "THE DIPSTICK (Version A) — pad by pad",
+    "LEUCOCYTES +++ · NITRITES POSITIVE · BLOOD + · PROTEIN +. NITRITE IS HIGHLY SPECIFIC BUT INSENSITIVE; LEUCOCYTE ESTERASE SENSITIVE BUT NOT SPECIFIC. Nitrite-negative doesn't exclude UTI — Enterococcus, Staph. saprophyticus, Pseudomonas"
+   ],
+   [
+    "VERSION B — NAME THE FEAR IN THE FIRST THIRTY SECONDS",
+    "'THANK YOU FOR TELLING ME YOU'RE WORRIED ABOUT PROSTATE CANCER — THAT IS EXACTLY THE SORT OF THING I WANT TO KNOW. I'LL ASK SOME QUESTIONS, THEN COME BACK TO YOUR CONCERN AND ANSWER IT PROPERLY.' LAUNCHING INTO QUESTIONS AND BEING ASKED 'ARE YOU SURE IT'S NOT CANCER?' AT THE END IS A LISTED FAIL"
+   ],
+   [
+    "IF SHE'S GUARDED — a second open question",
+    "'I CAN SEE THIS IS A SENSITIVE SUBJECT. EVERYTHING YOU TELL ME STAYS BETWEEN US, AND THESE ARE QUESTIONS I ASK EVERYBODY — THERE'S NOTHING YOU COULD SAY THAT WOULD SURPRISE ME. IN YOUR OWN WORDS, WHAT HAS BEEN HAPPENING?'"
+   ]
+  ],
+  "findingsLabel": "Define it, package it, exclude the red flags — then two minutes built from her own findings",
+  "must": [
+   "FAIL — Never asking about haematuria.",
+   "FAIL — Diagnosing cystitis without asking fever, rigors, loin pain and vomiting.",
+   "FAIL — Falsely reassuring about the blood on the dipstick with no repeat test.",
+   "FAIL — Version B: never addressing the stated fear of prostate cancer.",
+   "ASK — How many times a day, a large amount or a few drops, and how many at night?",
+   "ASK — Roughly how much water, tea, coffee and alcohol do you drink a day?"
+  ],
   "back": {
-   "dx": "Acute uncomplicated cystitis — four days of frequency (10–12/day, nocturia ×2), small volumes with immediate re-urge, urgency with urge incontinence ×2, dysuria, suprapubic ache, afebrile, no loin pain/vomiting; dipstick leucocytes 3+, nitrites positive, blood trace, protein trace, glucose/ketones negative. Contributors: cystocele with incomplete emptying (stopped pelvic floor exercises), genitourinary syndrome of menopause (LMP 8 months, flushes, dryness, dyspareunia — unmentioned), caffeine; HbA1c 6.1% = high-risk band, not diabetes (repeat 12 months, lifestyle). Haematuria: expected with an inflamed lining — explain, don't dismiss — recheck urinalysis after treatment; persistent → cystoscopy/imaging (aunt died of bladder cancer — the hidden fear). DDx: pyelonephritis (no fever/loin pain/vomiting), stone (no colic/history), bladder malignancy (hence the recheck), diabetes (below threshold), GSM (contributing), overactive bladder, urethritis. Plan: trimethoprim 300 mg daily 3 days (or nitrofurantoin 5 d/cefalexin 5 d VERIFY), analgesia, fluids, MSU to the lab (complicating prolapse), recheck urine, pelvic floor physiotherapy, vaginal oestrogen, bladder training/caffeine, repeat HbA1c, review 48 h if not improving.",
+   "dx": [
+    "**VERSION A — ACUTE CYSTITIS (lower UTI): infection and inflammation confined to the bladder — dysuria, frequency, urgency, suprapubic discomfort, WITHOUT fever, rigors, flank pain or vomiting — PREDISPOSED BY THE CYSTOCELE through incomplete emptying. VERSION B — FREQUENCY FROM EXCESSIVE FLUID INTAKE: A NORMAL BLADDER HANDLING AN ABNORMAL VOLUME. NOT A DISEASE; A BEHAVIOUR.** **SAY 'CYSTITIS', NOT 'UTI' — the level changes treatment length.**",
+    "**THE DISCRIMINATING ISSUE: THE EXPLANATION CARRIES THE MARKS, AND IT MUST BE BUILT FROM THIS PATIENT'S OWN FINDINGS. Candidates fail not on the history but on THE LAST TWO MINUTES — generic reassurance, jargon, or a diagnosis with no differential. RESERVE TWO FULL MINUTES: FINDINGS → NAMED DIAGNOSIS → WHY IT FITS HER → WHAT ELSE AND WHY NOT → WHAT HAPPENS NEXT.**",
+    "**THE DIPSTICK, PAD BY PAD, IN PATIENT LANGUAGE: 'we found WHITE BLOOD CELLS — the cells your immune system sends to fight infection. Most importantly, we found NITRITES — A CHEMICAL THAT CERTAIN BACTERIA PRODUCE, a very strong sign there really are bacteria in your bladder — THAT'S THE RESULT THAT CONFIRMS IT. We also found A SMALL AMOUNT OF BLOOD AND PROTEIN. I know those sound alarming, but THEY'RE WHAT WE EXPECT WHEN THE BLADDER LINING IS INFLAMED. To be thorough, I'LL RECHECK YOUR URINE ONCE YOU'VE FINISHED THE TREATMENT to make sure the blood has cleared.'**",
+    "**THE DIAGNOSIS, NAMED, AND LINKED TO THE STEM: 'I believe you have CYSTITIS — an infection in the bladder itself, rather than the kidneys — because of the burning and frequency, and NO FEVER OR BACK PAIN tells me it hasn't travelled up. THE PROLAPSE YOU WERE TOLD ABOUT IS RELEVANT: WHEN THE BLADDER DROPS IT DOESN'T EMPTY COMPLETELY, AND URINE THAT SITS THERE IS MORE LIKELY TO BECOME INFECTED. That's probably why this has happened.'**",
+    "**VERSION B — ANSWER THE FEAR WITH NAMED NEGATIVES, NOT WITH COMFORT: 'based on everything you've told me, PROSTATE CANCER IS VERY UNLIKELY TO BE THE CAUSE, and I want to tell you why rather than ask you to take my word for it. When the prostate causes trouble we expect DIFFICULTY STARTING, A WEAK STREAM, STOP-START, DRIBBLING, NOT EMPTYING, GETTING UP AT NIGHT — YOU HAVE NONE OF THOSE. No blood, no weight loss, no pain. WHAT YOU DO HAVE IS SIX LARGE GLASSES OF WATER A DAY — anyone drinking that much would be going often. That on its own explains it.'**",
+    "**THEN, WITHOUT DISMISSING HIM: 'if you'd like, we can talk separately about PROSTATE CANCER SCREENING and what a PSA test can and can't tell you, so you can decide. And if anything changes — blood, a weaker stream, getting up at night, weight loss — come straight back.' 'SHOULDN'T YOU JUST ORDER A PSA?' — 'PSA IS A SHARED DECISION, NOT A REFLEX — BENEFITS AND HARMS, INCLUDING FALSE POSITIVES, OVER-DIAGNOSIS AND BIOPSY.'**",
+    "**GROUPED DIFFERENTIALS: INFECTION — cystitis, PYELONEPHRITIS (no systemic features) · STRUCTURAL — DISTAL URETERIC OR BLADDER STONE (mimics cystitis), PROLAPSE · MALIGNANCY — BLADDER, renal, urothelial (± prostate in men) — 'I won't exclude it on today's findings; I'll repeat the urinalysis after treatment' · ENDOCRINE — DIABETES (HbA1c doesn't support it yet), hypercalcaemia, DI · DRUGS AND STIMULANTS — diuretics, caffeine, alcohol, SGLT2 inhibitors, high water intake · SEX-SPECIFIC — GENITOURINARY SYNDROME OF MENOPAUSE; BPH, prostatitis, urethritis · CNS — overactive bladder, neurogenic bladder, CAUDA EQUINA.**",
+    "**MANAGEMENT — NON-PREGNANT WOMAN WITH CYSTITIS: NITROFURANTOIN 100 mg 6-HOURLY FOR 5 DAYS, or TRIMETHOPRIM 300 mg DAILY FOR 3 DAYS, or CEFALEXIN 500 mg BD FOR 5 DAYS — current guidance favours nitrofurantoin on resistance grounds; KNOW LOCAL RESISTANCE BEFORE CHOOSING TRIMETHOPRIM. A MAN — SAME AGENTS FOR 7 DAYS WITH AN MSU FIRST. SEND AN MSU HERE — SHE HAS AN ANATOMICAL PREDISPOSITION. Analgesia, fluids.** VERIFY every dose against current Therapeutic Guidelines.",
+    "**THE STEM CONDITIONS: CYSTOCELE — POST-VOID RESIDUAL, PELVIC FLOOR PHYSIOTHERAPY, pessary or surgery · consider TOPICAL VAGINAL OESTROGEN for genitourinary syndrome of menopause · HbA1c 6.1% — 'BELOW THE DIAGNOSTIC THRESHOLD OF 6.5%, BUT ABOVE NORMAL — THE HIGH-RISK BAND. LIFESTYLE ADVICE AND REPEAT IN 12 MONTHS; NO GLUCOSE-LOWERING TREATMENT.' Version B — A FLUID AND VOIDING DIARY, reduce intake, review.**",
+    "**SAFETY-NET, OUT LOUD: 'if you develop A FEVER OR SHIVERING, PAIN IN YOUR BACK OR SIDE, VOMITING, or you're NOT IMPROVING IN 48 HOURS, I need to see you the same day or you should go to the emergency department. IF YOU SEE BLOOD AT ANY STAGE, TELL ME.' 'WHY NOT REFER FOR THE BLOOD TODAY?' — 'HAEMATURIA IS EXPECTED IN ACUTE CYSTITIS. I treat, then repeat; IF IT PERSISTS, I REFER FOR IMAGING AND CYSTOSCOPY.'** **SA: MSU to SA Pathology; Country Health Connect pelvic floor physiotherapy; Continence Helpline 1800 33 00 66; MedSTAR 1300 13 12 33 for urosepsis.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'I'm Dr —; am I speaking with Jane? May I call you Jane? Are you comfortable, any pain? ★ Everything we discuss stays confidential. What's brought you in?' → 'a bit embarrassing… a women's problem' → ★ 'That's completely alright — nothing you say will surprise me, and it stays between us; these are questions I ask everyone with this sort of problem. Take your time — in your own words, what's been happening?' → running to the toilet 4 days, stings"
+     "**WIPE, 'are you comfortable, any pain?', confidentiality, open question — and in Version B, NAME THE PROSTATE CANCER FEAR IN THE FIRST THIRTY SECONDS.** If guarded, **the SECOND OPEN QUESTION with normalising.**"
     ],
     [
-     "0:50",
-     "★ Define: 'how long? constant or comes and goes? worse? ★ on an average day, how many times? (10–12) ★ up at night — how many times? (2) ★ when you go, a large amount, or only a small amount each time? (hardly anything, needs to go again) anything better or worse? (coffee) how is it affecting your day and sleep?' (exhausted, frightened to be far from a toilet)"
+     "0:40",
+     "**TIMING: how long · constant or coming and going · getting worse · anything better or worse · effect on day-to-day life and sleep.**"
     ],
     [
-     "2:20",
-     "★ 'I'm going to run through a quick list — some sound unrelated, I ask everybody: do you get a sudden urge? ★ when that happens, do you ever leak?' → hesitates: 'twice this week I didn't make it — hadn't planned to tell you' → 'I'm glad you did — common and treatable' · 'pain, burning or stinging? (badly) pain low in the tummy? (ache) long to start, stops and starts, straining, weaker flow, not emptying, dribbling?' (no) · ★ 'have you noticed any blood in your urine at all — even a trace on the paper?' → tearful: 'pink on the paper on Tuesday — my aunt had bladder cancer — that's really why I came' → ★ 'Thank you for telling me — that's exactly the sort of thing I need to know, and I promise I'll come back to it and answer it properly before you leave. May I finish a few safety questions first?'"
+     "1:20",
+     "**DEFINE IT: 'ON AN AVERAGE DAY, HOW MANY TIMES?' · 'AT NIGHT, HOW MANY?' · 'A LARGE AMOUNT, OR A FEW DROPS?'**"
     ],
     [
-     "3:30",
-     "Red flags/DDx: weight loss, appetite, lumps, tiredness (not sleeping) · ★ fever, shivering, shaking? ★ pain in your back or side? nausea/vomiting? → none · stones — self/family (no) · one line: back pain, numbness/weakness in the legs, numbness around the back passage, bowel change (none)"
+     "2:30",
+     "**SIGNPOST: 'a list of yes-or-no questions about your waterworks.' FUND — frequency, urgency, nocturia, dysuria. HISPED — hesitancy, intermittency, straining, poor stream, incomplete emptying, dribbling.**"
     ],
     [
-     "4:10",
-     "Fluids/drugs/polyuria: coffee/tea/cola (2 coffees), alcohol (glass most nights), ★ medications incl water tablets/chemist (paracetamol), ★ 'roughly how much water a day?' (1.5 L), thirst, weight loss, blurred vision (no) · ★ menopause: LMP (8 months), hot flushes (dreadful), ★ 'any dryness or discomfort down below, or with intercourse?' (very dry, uncomfortable — 'didn't think it was connected'), lump/dragging (by evening), discharge/rash, pregnancy (no) · ★ cystocele ×4: 'when were you told, what was done, check-ups, problems since?' (2 y; pelvic floor exercises — stopped after a few weeks) · ★ HbA1c ×4: 'when found, what treatment, able to stick to it, reviews, complications — numbness in the feet, blurred vision?' (6 mo; diet; attends; none) · smoking (never), allergies, PMHx/ops, FHx (aunt bladder cancer)"
+     "3:20",
+     "**MALIGNANCY: 'ANY BLOOD IN YOUR URINE AT ALL?' · weight loss · appetite · lumps · tiredness.** Then **INFECTION — THE FOUR: fever or shivers · pain low in your tummy · BACK OR SIDE · nausea or vomiting.**"
     ],
     [
-     "5:50",
-     "Card → ★ 'Jane, we tested your urine with a dipstick — a strip that changes colour to show what's in the sample. White blood cells — the cells your immune system sends to fight infection: there's inflammation or infection there. ★ Nitrites — a chemical certain bacteria produce; this is the important one: finding nitrites is a very strong sign there really are bacteria in your bladder — that's the result that confirms it. A small amount of blood and a small amount of protein — I know those sound alarming, and I know the blood is what frightened you. They are exactly what we expect when the lining of the bladder is inflamed — it becomes a little fragile and leaks a small amount. It is not by itself a sign of cancer. But I'm not going to leave it unexplained: ★ I'll recheck your urine after you finish the antibiotics, and if the blood is still there, I'll arrange for a specialist to look into it properly. Glucose and ketones are negative. Does that make sense?' → 'that's what I needed to hear'"
+     "4:00",
+     "**STONES: ever had a kidney stone · pain in waves back to groin. STIMULANTS AND FLUID: coffee, tea, cola · alcohol · water tablets · 'ROUGHLY HOW MUCH WATER A DAY?' DIABETES: thirst, weight loss, blurred vision.**"
     ],
     [
-     "7:10",
-     "★ 'My diagnosis is cystitis — an infection in the bladder itself, not the kidney. It fits the burning, the going often and the sudden urgency, and no fever and no back pain tell me it hasn't gone up to the kidney. ★ The prolapse matters: when the bladder drops it doesn't empty completely, and urine sitting there is more likely to get infected — very likely why this has happened now. I also considered: a kidney infection — no fever, back pain or vomiting; a stone — no colicky pain or history; a growth in the bladder — which is why I'm rechecking the urine rather than leaving the blood unexplained; your sugar level — can cause this, but yours isn't in the diabetic range; changes after menopause — the dryness you described causes urinary symptoms too, and I'd like to treat that; and an overactive bladder. Plan: a short antibiotic course, pain relief, plenty of fluids; the sample to the laboratory because of the prolapse; recheck the urine afterwards; physiotherapy for the pelvic floor; a chat about treatment for the dryness; repeat the sugar test in twelve months; ease off the coffee. ★ If you get a fever or shivering, pain in your back or side, vomiting, or you're not better in 48 hours — same day, or the emergency department. Any blood at any point — tell me. Anything you were hoping we'd cover?'"
+     "4:40",
+     "**SEX-SPECIFIC — WOMAN: last period, hot flushes, vaginal dryness, lump or dragging, discharge or rash, CHANCE OF PREGNANCY. (MAN: discharge, rash or ulcers, sexual history, testicular pain.)** Then **NEUROLOGICAL, ONE LINE: back pain, leg weakness, saddle numbness, bowel change.**"
+    ],
+    [
+     "5:15",
+     "**THE FOUR QUESTIONS ON THE STEM: the CYSTOCELE and the HbA1c.** Then **SADMA, past history, family history — stones, renal disease, urological cancer, diabetes.**"
+    ],
+    [
+     "6:00",
+     "**EXPLAIN THE DIPSTICK, PAD BY PAD — white cells, NITRITES CONFIRM IT, blood and protein expected — and 'I'll recheck after treatment.'**"
+    ],
+    [
+     "7:00",
+     "**THE DIAGNOSIS NAMED AND LINKED TO THE CYSTOCELE (or in B, the fear answered with named negatives, then the water) · grouped differentials, each with why not.**"
+    ],
+    [
+     "7:40",
+     "**The plan and SAFETY-NET: MSU, antibiotic, repeat urinalysis, pelvic floor physio, repeat HbA1c in 12 months — fever, back pain, vomiting, no better in 48 hours, blood.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Everything we discuss today stays confidential.' / ★ 'These are questions I ask everybody with this problem — nothing will surprise me.' / ★ 'On an average day, how many times are you going to the toilet?' / ★ 'Are you passing a large amount, or only a small amount each time?'",
-    "★ 'Do you get a sudden urge — and when that happens, do you ever leak?' / ★ 'Have you noticed any blood in your urine at all — even a trace on the paper?' / ★ 'Thank you for telling me — I will come back to that and answer it properly before you leave.' / ★ 'Any fever, shivering, pain in your back or side, or vomiting?' / 'Roughly how much water do you drink in a day?'",
-    "'When was your last period? Any hot flushes? Any dryness or discomfort down below, or with intercourse? Any sense of a lump or dragging?' / 'You mentioned the prolapse — when were you told, what was done, are you having check-ups, any problems since? And the raised sugar — when was that found, what treatment, are you able to stick to it, are you being reviewed, any complications?'",
-    "★ 'Nitrites are a chemical that bacteria produce — that is the result that confirms it.' / ★ 'A small amount of blood is expected when the bladder lining is inflamed — but I will recheck it after treatment, and if it's still there I'll arrange for a specialist to look into it properly.' / ★ 'You have cystitis — an infection in the bladder, not the kidney.' / ★ 'When the bladder drops it does not empty fully, and urine that sits there gets infected.' / ★ 'If you get a fever, back pain or vomiting, or you are no better in 48 hours, I need to see you the same day.'",
-    "Version B (James, 62, frightened of prostate cancer; large volumes, no LUTS, ~6 big glasses of water a day): 'Thank you for telling me straight away that you're worried about prostate cancer — that's exactly what I want to know. I'll ask a series of questions, then come back to your concern and answer it properly.' → 'roughly how much water do you drink a day?' → the diagnosis → ★ 'Prostate cancer is very unlikely here, and I want to give you my reasons rather than just ask you to trust me. When the prostate is the problem we expect difficulty starting, a weak stream, stopping and starting, dribbling, a feeling of not emptying, and getting up at night — you have none of those. No blood, no weight loss, no pain. What you do have is around six large glasses of water a day; anyone drinking that much would be in the toilet frequently. Cut back to your natural thirst for a fortnight and keep a simple diary.' / 'are you sure it's not cancer?' → 'I can't give a hundred per cent guarantee about anything. Nothing in your story points that way. If you'd like certainty, there's a blood test called PSA — real benefits and real drawbacks, including false alarms and unnecessary biopsies — I'd be happy to book a separate appointment to go through that properly so you can decide. And if anything changes — blood, a weaker stream, waking at night, weight loss — come straight back.' (no blanket reassurance; no reflex PSA)"
-   ],
    "pefe": [
-    "Role-player: Jane Whitcombe, 50, part-time school administrator, Wallaroo, married, two adult children; never smoked; a glass of wine most nights; two coffees; paracetamol; cystocele 2 y (stopped exercises); HbA1c 6.1% six months ago (diet, attends reviews); LMP 8 months, dreadful flushes, dryness/dyspareunia never mentioned; aunt died of bladder cancer. Guarded, arms folded, vague first answer — opens up only after confidentiality/normalising. Never volunteers the incontinence (only to 'do you leak?'), the pink on the paper (only to a blood question), or the aunt. If blood/concerns never asked: last 90 s, tearful — 'there was pink on the paper on Tuesday, and my aunt had bladder cancer — am I going to be alright?'. Settles if the blood is explained as expected AND a recheck is offered; stays anxious with 'don't worry' — 'but it is blood, isn't it?' up to twice",
-    "Dipstick card (~6 min): leucocytes 3+ · nitrite POSITIVE · blood trace/+ · protein trace/+ · glucose negative · ketones negative. Version B: no card",
-    "Definitions: >8 voids/24 h abnormal frequency VERIFY; normal output 1–2 L/day, polyuria >3 L/day; nocturia once at 50 common, 3–4 not. HbA1c ≥6.5% diabetes; 6.0–6.4 high risk → lifestyle, repeat 12 months. Cystitis in a non-pregnant woman VERIFY TG: trimethoprim 300 mg daily 3 d; nitrofurantoin 100 mg 6-hourly 5 d; cefalexin 500 mg 12-hourly 5 d; MSU when complicated (prolapse, recurrent, failure, pregnancy, haematuria); review 48 h if not improving; no routine test of cure. Persistent haematuria after treatment → repeat dipstick/microscopy; >40 with persistent visible/microscopic haematuria + risk → cystoscopy/CT urogram VERIFY. Cystocele → incomplete emptying → recurrent UTI: pelvic floor physiotherapy (Country Health Connect), pessary, surgery if needed; GSM → vaginal oestrogen (also reduces recurrent UTI) VERIFY; overactive bladder → bladder training, caffeine reduction, anticholinergic/mirabegron; urge incontinence — treat infection first, then bladder training",
-    "Polyuria opener variant ('passing much more urine than usual') → thirst, weight loss, blurred vision first: diabetes, hypercalcaemia, diabetes insipidus before cystitis. PSA counselling: shared decision, not reflex; not during infection · Continence Helpline 1800 33 00 66 · MedSTAR 1300 13 12 33 · TIS 131 450"
+    "**Do now: CONFIRM SHE IS SYSTEMICALLY WELL AND AFEBRILE · URINE DIPSTICK — read aloud pad by pad · MSU FOR MCS IF male, pregnant, recurrent, treatment failure, recent antibiotics, catheter, immunosuppressed, unwell — OR AN ANATOMICAL PREDISPOSITION LIKE HERS · PREGNANCY TEST in any woman of reproductive age · analgesia and fluids.**",
+    "**Do next: REPEAT URINALYSIS AFTER TREATMENT to confirm the blood has cleared · POST-VOID RESIDUAL and PELVIC FLOOR PHYSIOTHERAPY for the cystocele · consider TOPICAL VAGINAL OESTROGEN · REPEAT HbA1c OR FASTING GLUCOSE IN 12 MONTHS with lifestyle advice now · Version B: FLUID AND VOIDING DIARY, then review.**",
+    "**Empirical antibiotics — cystitis, non-pregnant woman: NITROFURANTOIN 100 mg 6-hourly × 5 days, or TRIMETHOPRIM 300 mg daily × 3 days, or CEFALEXIN 500 mg BD × 5 days · MAN: same agents × 7 days, MSU first · PREGNANCY: MSU, treat asymptomatic bacteriuria, cefalexin or nitrofurantoin (avoid nitrofurantoin at term; trimethoprim in the first trimester) · PYELONEPHRITIS: MSU and blood cultures; IV and admission if unwell.** VERIFY.",
+    "**Numbers: more than ~8 voids in 24 h is abnormal frequency · normal output ~1–2 L/day, polyuria >3 L/day · nocturia once a night is common over 50; three or four is not · HbA1c ≥6.5% diagnostic; 6.1% is the high-risk band.** VERIFY.",
+    "**Do not miss: PERSISTENT HAEMATURIA AFTER TREATMENT → urology, CT urogram, cystoscopy · FEVER, RIGORS, LOIN PAIN OR VOMITING — this is no longer cystitis · STONE PLUS FEVER — obstructed infected kidney, emergency decompression · RETENTION OR CAUDA EQUINA symptoms.**",
+    "**Avoid: TREATING ASYMPTOMATIC BACTERIURIA except in pregnancy or before urological surgery · URINARY ALKALINISERS WITH NITROFURANTOIN · nitrofurantoin in significant renal impairment and at term · trimethoprim in the first trimester · REASSURING ABOUT BLOOD WITHOUT ARRANGING A REPEAT · jargon — 'leucocyte esterase, nitrites, microscopic haematuria' · a diagnosis with no differential.**",
+    "**SA: MSU to SA Pathology — know local resistance before empirical trimethoprim · urosepsis or an obstructed infected kidney — MedSTAR 1300 13 12 33; RAH, Flinders or Lyell McEwin · PATS for urology or gynaecology · pelvic floor physio via Country Health Connect · National Continence Helpline 1800 33 00 66 · SHINE SA · Quitline 13 7848 — smoking is a bladder cancer risk factor.**"
    ],
-   "fails": [
-    "Closed questions at a vague embarrassed opener — no confidentiality statement, no second open question",
-    "'Going a lot' without a count, nocturia number and volume per void (cannot separate cystitis from polyuria); asking only the symptoms she volunteered — incontinence never elicited",
-    "★ Never asking about blood in the urine; pyelonephritis never excluded aloud; the cancer fear left unanswered or dismissed with 'don't worry' and no recheck",
-    "Leaving the cystocele and HbA1c as decoration; jargon on the dipstick ('leucocyte esterase, microscopic haematuria'); 'UTI' instead of cystitis; a bare list of differentials",
-    "No 48-hour/fever/back-pain safety-net; no plan for the prolapse/GSM/caffeine; Version B — blanket reassurance or reflex PSA"
-   ],
-   "numbers": [
-    ">8 voids/24 h abnormal VERIFY · output 1–2 L/d, polyuria >3 L/d · nocturia 1 common at 50, 3–4 not · HbA1c ≥6.5 diabetes; 6.0–6.4 high risk → repeat 12 mo",
-    "Cystitis (woman): trimethoprim 300 mg daily 3 d · nitrofurantoin 100 mg 6-hourly 5 d · cefalexin 500 mg 12-hourly 5 d VERIFY · man 7 d + MSU always · review 48 h · recheck urine after treatment",
-    "Continence Helpline 1800 33 00 66 · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Acute cystitis** — Version A",
+     "**Dysuria, frequency, urgency, suprapubic ache, days not months; CYSTOCELE; female**",
+     "**Afebrile; NITRITES and leucocytes**",
+     "**Dipstick; MSU as she's predisposed; empirical antibiotic**"
+    ],
+    [
+     "**Excess fluid / stimulants** — Version B",
+     "**Large volumes, no dysuria, no obstructive symptoms, no red flags, DELIBERATE HIGH INTAKE**",
+     "**A COMPLETELY NEGATIVE SYMPTOM PACKAGE; quantified fluid**",
+     "**Fluid and voiding diary; reduce intake and review**"
+    ],
+    [
+     "**Pyelonephritis**",
+     "**Fever, rigors, loin pain, vomiting, unwell**",
+     "Loin tenderness, tachycardia",
+     "MSU always; bloods; longer course ± admission — urgent"
+    ],
+    [
+     "**Distal ureteric / bladder stone**",
+     "**Colicky loin-to-groin pain, haematuria, past or family history**",
+     "Blood out of proportion; pain in waves",
+     "Non-contrast CT KUB; **stone + fever = emergency decompression**"
+    ],
+    [
+     "**Bladder / urothelial cancer**",
+     "**Over 45, SMOKING, painless visible haematuria, weight loss, persistent symptoms despite treatment**",
+     "**Haematuria that doesn't resolve**",
+     "**Repeat urinalysis after treatment; if persistent → urology, CT urogram, cystoscopy** — do not miss"
+    ],
+    [
+     "**Diabetes mellitus**",
+     "**Polyuria with LARGE volumes, thirst, weight loss, raised HbA1c**",
+     "Glucose or ketones on dipstick",
+     "Fasting glucose and repeat HbA1c — **6.1% isn't diagnostic**"
+    ],
+    [
+     "**Genitourinary syndrome of menopause**",
+     "**Amenorrhoea, hot flushes, vaginal dryness, dyspareunia, recurrent UTI**",
+     "Atrophic changes",
+     "Clinical; **topical vaginal oestrogen**"
+    ],
+    [
+     "Pelvic organ prolapse (cystocele)",
+     "**Dragging or bulge, incomplete emptying, recurrent infection**",
+     "Anterior wall bulge on Valsalva",
+     "**Post-void residual; pelvic floor physio, pessary or surgery**"
+    ],
+    [
+     "**BPH / prostate cancer** (men) · urethritis",
+     "**Obstructive symptoms, nocturia, poor stream**; or discharge, new partner",
+     "**HISPED — ALL NEGATIVE IN VERSION B**",
+     "**DRE, PSA AFTER COUNSELLING**; NAAT for urethritis"
+    ],
+    [
+     "Overactive bladder · **neurogenic bladder / cauda equina**",
+     "Urgency-dominant, normal dipstick; **back pain, leg weakness, saddle numbness, bowel change**",
+     "**The one-line neuro screen**",
+     "Bladder training, pelvic floor, then medication; **cauda equina — same-day MRI**"
+    ]
    ]
   },
   "source": "Urinary_Frequency_2_Case_Tasks_Script_Notability.pdf Version A (Jane Whitcombe, 50, four days of frequency with a cystocele, HbA1c 6.1% and pink on the paper — cystitis, the dipstick explained pad by pad; the incontinence and frank-polyuria variants folded in. Version B, James, 62, afraid of prostate cancer, is MED-246)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Urology › Urinary_Frequency_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Never asking about blood in the urine — the single-item automatic fail, and the trigger that releases her real concern: 'have you noticed any blood in your urine at all — even a trace on the paper?' → 'there was pink on the paper on Tuesday; my aunt had bladder cancer; that's really why I came' (tearful); if never asked, she says it in the last ninety seconds; 'thank you for telling me — I will come back to that and answer it properly before you leave' — then finish the safety questions (★)",
-   "FAIL — Dismissing the blood with 'nothing to worry about' and no repeat test, or leaving the cancer fear unanswered — 'a small amount of blood and protein is exactly what we expect when the bladder lining is inflamed — it becomes fragile and leaks; it is not by itself a sign of cancer; but I'm not going to leave it unexplained: I'll recheck your urine after you finish the antibiotics, and if the blood is still there I'll arrange for a specialist to look'; she presses 'but it is blood, isn't it?' up to twice after a poor answer (★)",
-   "FAIL — Recording 'going a lot' as the history — without a count ('on an average day, how many times?' — ten or twelve), a nocturia number (twice) and the volume per void ('a large amount, or only a small amount each time?' — hardly anything, then needing to go again) you cannot separate cystitis from polyuria; Version B (the 62-year-old afraid of prostate cancer) is decided by 'roughly how much water do you drink a day?' → 'six big glasses — I read it's good for you'; and pyelonephritis never excluded — fever, rigors, loin pain, vomiting asked and the negatives stated aloud when giving the diagnosis",
-   "DO — Unlock the guarded patient: a confidentiality statement and a SECOND open question when 'it's a women's problem' is all you get ('nothing you say will surprise me; these are questions I ask everybody'); the full storage and voiding package — 'do you get a sudden urge? and when that happens, do you ever leak?' → 'twice this week I didn't make it; I hadn't planned to tell you' (incontinence is a positive most candidates never elicit); burning, suprapubic ache; hesitancy, weak stream, straining, incomplete emptying, dribbling (all no); cauda equina in one line; caffeine, alcohol, medications incl. diuretics, water intake, thirst, weight loss, blurred vision; the menopause block (LMP eight months, hot flushes, dryness and dyspareunia 'I didn't think that was connected', a dragging feeling by evening, pregnancy); the four questions on each stem condition — the cystocele (two years, told to do pelvic floor exercises, stopped) and the HbA1c 6.1% (six months, diet, reviewed, no complications — the high-risk band, not diabetes: lifestyle and repeat in twelve months)",
-   "SAY — The dipstick pad by pad in plain language: 'a strip that changes colour to show what's in the sample; white blood cells — the cells your immune system sends to fight infection; nitrites — a chemical certain bacteria produce, and this is the important one, the result that confirms bacteria in your bladder; a small amount of blood and protein — expected when the lining is inflamed, and I'll recheck it'; no 'leucocyte esterase' or 'microscopic haematuria'; then 'cystitis — an infection in the bladder itself, not the kidney' (not 'UTI'); 'the prolapse matters: when the bladder drops it doesn't empty completely, and urine sitting there is more likely to become infected — that's very likely why this has happened now'",
-   "DO — Differentials grouped with a reason each: pyelonephritis (no fever, loin pain or vomiting), stone (no colic, no history), bladder growth (which is why the urine is rechecked), diabetes (not in the range), genitourinary syndrome of menopause (contributing — offer treatment), overactive bladder; plan — a short antibiotic course, analgesia, fluids, the sample to the lab because of the prolapse, recheck urine afterwards, pelvic floor physiotherapy, bladder training and review the caffeine for the leaking, repeat HbA1c in twelve months; safety-net with a timeframe (fever, shivering, back or side pain, vomiting, or no better in 48 hours → same day; any blood → tell me); Version B — prostate cancer 'very unlikely, and here are my reasons' built from named negatives (no hesitancy, weak stream, dribbling, incomplete emptying, nocturia, blood, weight loss, pain), the six glasses explain it, a fortnight's diary; 'are you sure?' → no hundred per cent guarantee, PSA has real benefits and real drawbacks — a separate appointment to decide together; blanket reassurance and a reflex PSA are both penalised"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-171",
