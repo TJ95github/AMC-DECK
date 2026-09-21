@@ -32331,9 +32331,8 @@
  {
   "id": "MED-129",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "Regional SA general practice. Six-minute history (warning at 6:00), then diagnosis to the patient with reasons, then differentials to the examiner. No examination, no investigations. Two things must be audible: the upper-GI red flags — melaena, haematemesis, dysphagia — and gastric cancer named as a differential. The reflux screen is written negative on purpose: saying 'GORD' is the commonest single fail.",
   "stem": [
    "James Whitlock, 32, long-haul truck driver, presents with pain in the upper part of his abdomen. T 36.8 · P 78 reg · BP 124/78 · RR 14 · SpO2 98% · BMI 27. Comfortable at rest."
   ],
@@ -32342,90 +32341,213 @@
    "Explain your most likely diagnosis to the patient, with your reasons",
    "Give the examiner your differential diagnoses"
   ],
-  "time": "8 min. 'Could you confirm the patient is haemodynamically stable and give me the vital signs?' · intro, 'comfortable enough to talk?', open · acknowledge, bridge · pain in one breath: site (LUQ/epigastric — don't freeze if he points elsewhere), radiation, /10 (4–5), ★ quality (dull ache, NOT burning), duration (weeks–months), constant/intermittent, worse?, better/worse ('nothing') → ★ 'what about food — any different when you eat?' → worse → ★ two probes: 'particular food — spicy, dairy, bread/pasta, fatty?' (any) and ★ 'how soon after eating?' (within the hour = gastric; 2–3 h/night = duodenal) · ★ red flags signposted: weight loss, appetite, lumps, tiredness, ★ black tarry stools, ★ vomited blood/coffee grounds, ★ dysphagia, FHx stomach/gullet/bowel cancer · ★ group one aloud — reflux/ulcer: heartburn, bitter/metallic taste, water brash, worse lying/bending (all no) · ★ risk factors: 'medications including anything over the counter' (Quick-Eze, Panadol → ★ Nurofen most days), smoking (ex, 20/day, quit 3 y), alcohol (4–5 beers most nights), coffee, night pain · group two — pancreas: through to back, forward, trauma, fever, lipids · group three — liver/gallbladder: jaundice, itch, dark urine/pale stools, fatty-meal attacks, rigors · ★ chest: exertional tightness, SOB, cough, fever · closure: drugs, allergies, PMHx/ops, FHx, ★ 'what were you most worried this might be?' (cancer — mate) · 6:00 dx to James · 7:00 DDx to examiner: gastric malignancy first.",
+  "findings": [
+   [
+    "THE ONE CLUE THE CASE IS BUILT AROUND",
+    "'IT'S WORSE AFTER I EAT.' DO NOT STOP THERE. TWO FOLLOW-UP QUESTIONS: 'IS THERE A PARTICULAR FOOD THAT BRINGS IT ON?' and 'HOW SOON AFTER EATING DOES THE PAIN START?' CANDIDATES WHO ACCEPT THE ANSWER AND MOVE ON END UP UNABLE TO JUSTIFY THEIR DIAGNOSIS"
+   ],
+   [
+    "THE TIMING ANSWER IS DIAGNOSTIC",
+    "PAIN WITHIN THE FIRST HOUR OF EATING, MADE WORSE BY THE MEAL → GASTRIC ULCER — THE ONE THAT CAN BE MALIGNANT. PAIN 2–5 HOURS AFTER A MEAL, AT NIGHT, RELIEVED BY FOOD OR ANTACID → DUODENAL ULCER"
+   ],
+   [
+    "THE CAUSE HE MENTIONS IN PASSING",
+    "'I TAKE NUROFEN FOR MY BACK.' → DOSE, FREQUENCY, DURATION, AND WHETHER HE TAKES IT ON AN EMPTY STOMACH. And 'I TAKE QUICK-EZE FOR IT' → recognise it as an ANTACID; ask whether it helps and how often he needs it"
+   ],
+   [
+    "THE UPPER-GI RED FLAGS — not the lower-GI ones",
+    "BLACK TARRY STOOLS · VOMITING BLOOD OR COFFEE GROUNDS · DIFFICULTY OR PAIN SWALLOWING · PERSISTENT VOMITING OR EARLY FULLNESS · WEIGHT LOSS · family history of stomach cancer · PAIN THAT WAKES HIM. BLEEDING FROM THE STOMACH GOES DOWN AS MELAENA OR UP AS HAEMATEMESIS — ASKING ABOUT FRESH RECTAL BLEEDING IS NOT THE QUESTION THAT FITS THE ANATOMY"
+   ],
+   [
+    "ASK THE EXAMINER BEFORE YOU SIT DOWN",
+    "'BEFORE I BEGIN, COULD YOU TELL ME WHETHER THE PATIENT IS HAEMODYNAMICALLY STABLE, AND GIVE ME HIS VITAL SIGNS?' Ten seconds — it buys a mark and PROTECTS YOU IF THE STATION IS A DISGUISED BLEED"
+   ],
+   [
+    "THREE ANATOMICAL GROUPS — announce them aloud",
+    "1 REFLUX AND PEPTIC ULCER · 2 PANCREAS · 3 LIVER AND GALLBLADDER — then CLOSE WITH THE CHEST. STRUCTURE THAT IS NOT AUDIBLE DOES NOT EXIST"
+   ],
+   [
+    "VERSION A AND B",
+    "A: he points to the LEFT UPPER QUADRANT — open with reflux and peptic ulcer. B: he points to the EPIGASTRIUM — NOTHING IN YOUR STRUCTURE CHANGES; the three groups simply carry equal weight. DO NOT LET THE DIFFERENT POINTING FINGER DERAIL YOU"
+   ],
+   [
+    "THE 15-SECOND CHEST SWEEP — never skip",
+    "'WITH ALL OF THIS, HAVE YOU HAD ANY CHEST PAIN OR TIGHTNESS, ESPECIALLY ON EXERTION? ANY SHORTNESS OF BREATH? ANY COUGH OR FEVER?' ACS AND LOWER LOBE PNEUMONIA BOTH PRESENT AS UPPER ABDOMINAL PAIN AND BOTH ARE FAIL-IF-MISSED"
+   ],
+   [
+    "WHY THE OCCUPATION IS IN THE STEM",
+    "LONG-HAUL DRIVING = IRREGULAR MEALS, NIGHT SHIFTS, CAFFEINE, TAKEAWAY, AND REACHING FOR ANTI-INFLAMMATORIES TO GET THROUGH BACK PAIN. It also means LIMITED ACCESS TO A REGULAR GP — book review AROUND HIS ROSTER, and say so aloud"
+   ],
+   [
+    "THE ODD RECALL — 'A DRINK ACTUALLY SETTLES IT'",
+    "Possibly a transcription error for 'worse with alcohol'. DO NOT ARGUE AND DO NOT VISIBLY STALL. Quantify the intake, then: 'some people find a drink settles it briefly, BUT ALCOHOL DOES IRRITATE THE STOMACH LINING, so I'd still ask you to cut it right back'"
+   ]
+  ],
+  "findingsLabel": "Worse after eating — two follow-ups, upper-GI red flags, and the malignancy you must name",
+  "must": [
+   "FAIL — No upper-GI red flags: never asking about weight, black stools, vomiting blood or swallowing.",
+   "FAIL — A differential of three benign answers with no malignancy offered.",
+   "FAIL — No chest questions in six minutes of abdominal history.",
+   "FAIL — Blaming him: 'you shouldn't have been taking all that Nurofen.'",
+   "ASK — How soon after eating does the pain start?",
+   "ASK — Any black tarry stools, or vomiting blood or coffee grounds?"
+  ],
   "back": {
-   "dx": "NSAID-associated peptic ulcer disease (gastric pattern — pain within the hour of eating) — weeks to months of intermittent dull (not burning) LUQ/epigastric ache 4/10, worse after any food, partially relieved by Quick-Eze, daily ibuprofen for months for back pain, ex-smoker, 4–5 beers nightly; clean negative reflux screen; no red flags; no pancreatic, biliary, cardiac or respiratory features. Most important differential: gastric malignancy — ulcer and cancer are indistinguishable on history; only endoscopy with biopsy separates them. Hidden agenda: a mate's 'stomach trouble' was cancer and he died.",
+   "dx": [
+    "**PEPTIC ULCER DISEASE, MOST LIKELY NSAID-ASSOCIATED — regular Nurofen (ibuprofen) — with HELICOBACTER PYLORI as the other major cause to test for.** **Definition: a break in the mucosa of the stomach or duodenum EXTENDING THROUGH THE MUSCULARIS MUCOSAE, produced by acid and pepsin acting on a mucosa whose defences have been broken — by H. pylori, NSAIDs, or both.**",
+    "**THE DISCRIMINATING ISSUE: NAMING THE DIAGNOSIS IS EASY. THE MARK IS WON OR LOST ON THE SECOND DIFFERENTIAL. You must say, OUT LOUD AND UNPROMPTED, that you considered GASTRIC MALIGNANCY, name the features that made it less likely, and say what you would do to exclude it.** **'Peptic ulcer, reflux and gastritis' is THREE VERSIONS OF THE SAME BENIGN ANSWER and HAS EXCLUDED NOTHING.**",
+    "**THE ANSWER, VERBATIM: 'my most likely diagnosis is PEPTIC ULCER DISEASE, most probably caused by the ANTI-INFLAMMATORY TABLETS. My SECOND THOUGHT, and the one I have DELIBERATELY LOOKED FOR, is A CANCER OF THE STOMACH — ulcers in the stomach can be malignant. AGAINST THAT: he is 32, NO WEIGHT LOSS, NORMAL APPETITE, NO VOMITING OF BLOOD, NO BLACK STOOLS, NO DIFFICULTY SWALLOWING, NO FAMILY HISTORY. I would still confirm with GASTROSCOPY AND BIOPSY if he does not settle.'**",
+    "**CORRECTION — THE SOURCE RECORDING CONTRASTS 'PEPTIC ULCERS' WITH 'DUODENAL ULCERS' AND SAYS THE FIRST CAN BECOME MALIGNANT. PEPTIC ULCER DISEASE IS THE UMBRELLA TERM CONTAINING BOTH. The correct statement: GASTRIC ULCERS CAN BE MALIGNANT OR OVERLIE A MALIGNANCY AND MUST ALWAYS BE BIOPSIED; DUODENAL ULCERS ARE ESSENTIALLY NEVER MALIGNANT.** If challenged: **'peptic ulcer disease covers both sites; IT IS THE GASTRIC ULCER THAT CARRIES MALIGNANT POTENTIAL and needs biopsy and repeat endoscopy.'**",
+    "**EXPLAIN IT WITHOUT BLAME, IN WORDS A TRUCK DRIVER USES: 'the most likely cause is AN ULCER — A RAW PATCH IN THE LINING OF YOUR STOMACH. The Nurofen you've been taking for your back is a VERY COMMON CAUSE — IT STRIPS AWAY THE STOMACH'S PROTECTIVE LAYER. MOST PEOPLE HAVE NO IDEA IT CAN DO THAT.'**",
+    "**DECODE THE AUSTRALIAN BRANDS: QUICK-EZE, MYLANTA, GAVISCON — antacids or alginates · SOMAC — pantoprazole · NUROFEN — ibuprofen, THE CULPRIT · PANADOL — paracetamol, harmless here.** **If you truly do not recognise a brand, ASK THE PATIENT WHAT HE TAKES IT FOR — a legitimate clinical question. ASKING THE EXAMINER IS NOT.**",
+    "**THE FOUR MOVES, IN ORDER: STOP THE IBUPROFEN TODAY · TEST FOR H. PYLORI — urea breath test or faecal antigen · START A PPI · CHECK A FULL BLOOD COUNT FOR ANAEMIA — then review in 4–6 weeks.** **PPI: 4 WEEKS FOR A DUODENAL ULCER, 8 WEEKS FOR A GASTRIC OR NSAID-ASSOCIATED ULCER.**",
+    "**H. PYLORI ERADICATION, 7 DAYS: ESOMEPRAZOLE 20 mg TWICE DAILY + AMOXICILLIN 1 g TWICE DAILY + CLARITHROMYCIN 500 mg TWICE DAILY — dispensed as a combination pack. METRONIDAZOLE 400 mg TWICE DAILY REPLACES AMOXICILLIN IN PENICILLIN ALLERGY. CONFIRM CURE with a urea breath test ≥4 WEEKS AFTER THE ANTIBIOTICS AND ≥2 WEEKS OFF THE PPI. SEROLOGY STAYS POSITIVE AFTER TREATMENT AND CANNOT CONFIRM CURE.** VERIFY.",
+    "**ESCALATE IMMEDIATELY, FROM THE HISTORY ALONE: HAEMATEMESIS OR MELAENA WITH DIZZINESS OR COLLAPSE · SUDDEN SEVERE PAIN WITH A RIGID BOARD-LIKE ABDOMEN — perforation · JAUNDICE WITH FEVER AND RIGORS — cholangitis · CHEST TIGHTNESS WITH SWEATING — ACS. Any of these and THE STATION STOPS BEING A GENERAL PRACTICE HISTORY.**",
+    "**THE DRIVING POINT, IN PROPORTION: UNCOMPLICATED ULCER DISEASE DOES NOT AFFECT A COMMERCIAL LICENCE. It matters only with SYMPTOMATIC ANAEMIA, SYNCOPE OR OPIOID-LEVEL ANALGESIA, under Assessing Fitness to Drive — and SA AND THE NT ARE THE TWO JURISDICTIONS WHERE REPORTING AN UNFIT DRIVER IS A LEGAL DUTY.** **SAFETY-NET: vomiting blood, black stools, or pain that changes — come straight back or call 000.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Before I begin, could you confirm the patient is haemodynamically stable and give me the vital signs?' · 'Good morning James, I'm Dr —. Are you comfortable enough to talk right now? What has brought you in today?' → 'I'm sorry you've been putting up with that, and I can hear it's worrying you. Let's go through it together.'"
+     "**TO THE EXAMINER BEFORE SITTING: HAEMODYNAMICALLY STABLE, AND HIS VITAL SIGNS?**"
+    ],
+    [
+     "0:10",
+     "**WIPE and the four-line opening, including the structure: 'I'd like to ask about this pain, then your digestive system in general, and a few to make sure we're not missing anything serious.'** Then **ONE OPEN QUESTION AND FIVE SECONDS OF SILENCE.**"
+    ],
+    [
+     "0:35",
+     "**EMPATHY AND PARTNERSHIP BEFORE ANY CLOSED QUESTION, then THE AGENDA EARLY: 'was there something in particular you were worried this might be?'**"
     ],
     [
      "0:50",
-     "In one breath: 'show me exactly where … travel anywhere? … out of ten? … burning, gnawing, dull ache? … how long? … constant or comes and goes? … getting worse? … anything better or worse?' → 'nothing, really' → ★ 'what about food — is it any different when you eat?' → worse → ★ 'two things: any particular food — spicy, dairy, bread and pasta, fatty? and how soon after you eat — straight away, or hours later?' → any food, within the hour"
+     "**PAIN: SHOW ME WITH ONE FINGER · out of ten · BURNING, GNAWING, DULL, SHARP, CRUSHING · when did it start, constant or coming and going, getting worse · THROUGH TO YOUR BACK OR UP TO YOUR SHOULDER · ANYTHING BETTER OR WORSE?**"
+    ],
+    [
+     "1:40",
+     "**THE FOOD PROBE: 'IS THERE A PARTICULAR FOOD?' — spicy and alcohol, dairy, bread and pasta, fatty meals · 'HOW SOON AFTER EATING DOES IT START?' · 'DOES IT WAKE YOU AT NIGHT?'**"
     ],
     [
      "2:10",
-     "★ 'I now need to ask some questions to make sure we're not missing anything serious': weight loss without trying, appetite, lumps, tiredness, ★ 'stools turning black or tarry?', ★ 'ever vomited blood, or something like coffee grounds?', ★ 'difficulty or pain swallowing, food sticking?', FHx cancer of stomach/gullet/bowel → all negative"
+     "**GENERAL GI, RAPID-FIRE: nausea, vomiting, bloating, passing wind, diarrhoea, constipation, fever, change in habit.**"
     ],
     [
-     "2:50",
-     "★ 'I'll ask about reflux and ulcers first, because that's what most often causes pain here': heartburn behind the breastbone, bitter/metallic taste, mouth filling with saliva, worse lying flat/bending → all no · ★ 'what medications are you taking, including anything you buy yourself over the counter?' → Quick-Eze, Panadol… 'anything else?' → Nurofen most days for months (write it down visibly; 'does the Quick-Eze help?') · smoked/ever smoked · alcohol how much, how often · coffee, spicy · 'does the pain wake you at night?'"
+     "2:30",
+     "**'I'm going to ask a few questions I ask everybody with this kind of pain' — THE RED FLAGS: WEIGHT LOSS · APPETITE · LUMPS · TIREDNESS · NIGHT SWEATS · BLACK TARRY STOOLS · VOMITING BLOOD OR COFFEE GROUNDS · DIFFICULTY OR PAIN SWALLOWING · EARLY FULLNESS · STOMACH OR BOWEL CANCER IN THE FAMILY.**"
     ],
     [
-     "4:00",
-     "'Next, the pancreas': through to the back, better leaning forward, injury, fever/flu-like illness, high blood fats · 'now liver and gallbladder': yellowing, itching, dark urine/pale stools, ★ 'severe pain after a large fatty meal?', fevers with shaking chills · ★ 'two last ones, because problems in the chest can be felt in the upper tummy': chest pain/tightness esp on exertion, SOB, cough, fever"
+     "3:10",
+     "**GROUP 1, REFLUX AND PEPTIC ULCER: heartburn · acid or metallic taste · WATER BRASH · worse lying flat · 'WHAT MEDICINES, TABLETS OR ANYTHING FROM THE CHEMIST — including things you buy yourself?' — then QUANTIFY THE NUROFEN · alcohol, smoking, coffee, spicy food, stress · previous ulcer · EVER TESTED FOR HELICOBACTER?**"
     ],
     [
-     "5:25",
-     "'Almost done': recreational drugs, allergies, other conditions/operations, family · ★ 'and what were you most worried this might be?' → cancer, the mate"
+     "3:50",
+     "**GROUP 2, PANCREAS: bores through to the back · better leaning forward · abdominal injury · viral illness · high triglycerides · gallstones.** **Alcohol and vomiting already asked — SAY SO rather than repeating.**"
+    ],
+    [
+     "4:10",
+     "**GROUP 3, LIVER AND GALLBLADDER: yellowing · itching · dark urine or pale stools · attacks after fatty meals · fevers with shaking chills · tattoos, injecting, transfusions.**"
+    ],
+    [
+     "4:30",
+     "**HARD CHECKPOINT — THE CHEST SWEEP: chest pain or tightness on exertion · breathlessness · cough or fever.**"
+    ],
+    [
+     "4:45",
+     "**SADMA · past and family history · ONE QUESTION ON HIS WORK: 'how do the long shifts affect your meals — and how is this affecting your driving?'** Then **ideas, concerns, expectations, and a one-line summary.**"
     ],
     [
      "6:00",
-     "★ To James: 'the most likely explanation is a peptic ulcer — a small raw area in the lining of the stomach or the first part of the bowel. The likeliest cause is the Nurofen you take most days for your back: it's an anti-inflammatory, and that group strips away the mucus layer that protects the lining. I say that because the pain sits in the upper tummy, it's a dull ache rather than a burn, it's clearly worse after eating, and the anti-inflammatories are a real risk factor on top of the smoking history and the alcohol. Just as importantly, I looked for the warning signs of anything more serious — weight loss, trouble swallowing, black stools, vomiting blood — and you have none of them. That's why I'm not more worried about the cancer you mentioned. I can't rule it out from a conversation alone, so if things don't settle we look with a camera. I'd also test for a common stomach germ, Helicobacter pylori.' · plan four things: stop the Nurofen (sort the back another way), PPI, H. pylori breath/stool test → 7 days of antibiotics if positive, cut the alcohol; review 4 weeks · ★ safety-net: haematemesis, melaena, sudden severe pain with a hard tummy, faint → ambulance/ED, don't drive"
+     "**TO JAMES, IN PLAIN ENGLISH: the ulcer, the Nurofen as a common cause most people don't know about, WITHOUT BLAME.** Then **the reasons — worse after food, regular ibuprofen, antacid response.**"
     ],
     [
-     "7:00",
-     "★ To examiner: 'My most likely diagnosis is NSAID-associated peptic ulcer disease. My most important differential is a gastric malignancy — gastric ulcers can be malignant and a stomach cancer presents exactly like this, so I would not exclude it on history alone. I would also consider pancreatic and oesophageal cancer. Grouping the rest: upper GI — reflux and gastritis, unlikely given the negative reflux screen; pancreatic — acute and chronic pancreatitis; hepatobiliary — biliary colic, cholecystitis, cholangitis, hepatitis, HCC; outside the abdomen — acute coronary syndrome and left lower lobe pneumonia, both screened for.' · if only one differential: gastric cancer"
+     "6:50",
+     "**TO THE EXAMINER — PEPTIC ULCER FIRST, GASTRIC MALIGNANCY SECOND WITH THE FEATURES AGAINST IT, then oesophageal and pancreatic cancer, GORD, pancreatitis, biliary disease, hepatitis, ACS AND LOWER LOBE PNEUMONIA.**"
+    ],
+    [
+     "7:30",
+     "**IF ASKED: stop the ibuprofen, test for H. pylori, PPI, FBC, review in 4–6 weeks booked around his roster — and the SAFETY-NET for vomiting blood, black stools or a change in the pain.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'What about food — is it any different when you eat?' / ★ 'Two things about that. First, is there a particular food that sets it off — spicy food, dairy, bread and pasta, fatty meals? Second, how soon after you eat does the pain start — straight away, or a few hours later?'",
-    "★ 'Have you noticed your stools turning black or tarry? Have you ever vomited blood, or something like coffee grounds? Any difficulty or pain swallowing, or food sticking? Has anyone in the family had cancer of the stomach, gullet or bowel?'",
-    "★ 'I'm going to ask about reflux and ulcers first, because that is what most often causes pain in this area. Do you get heartburn — a burning behind the breastbone? A bitter or metallic taste at the back of your mouth? Does your mouth ever suddenly fill with saliva? Is it worse lying flat or bending over?' / ★ 'What medications are you taking, including anything you buy yourself over the counter?' (if a brand defeats you: 'what do you take that one for?')",
-    "★ 'Two last ones, because problems in the chest can be felt in the upper tummy. Any chest pain or tightness, especially on exertion? Any shortness of breath, cough or fever?' / ★ 'And what were you most worried this might be?'",
-    "★ 'James, the most likely explanation is a peptic ulcer — a small raw area in the lining of the stomach or the first part of the bowel. The likeliest cause is the Nurofen you take most days for your back: it is an anti-inflammatory, and that group of painkillers strips away the mucus layer that protects the lining … Just as importantly, I looked for the warning signs of anything more serious — weight loss, trouble swallowing, black stools, vomiting blood — and you have none of them. I can't rule cancer out from a conversation alone — that is what the camera test is for.'",
-    "★ To examiner: 'My most likely diagnosis is NSAID-associated peptic ulcer disease. My most important differential is a gastric malignancy — gastric ulcers can be malignant and a stomach cancer presents exactly like this, so I would not exclude it on history alone.'",
-    "Variant B (duodenal timing — 2–3 h after meals, wakes him at 2 am, settles with a sandwich or milk): 'that pattern points to an ulcer in the duodenum rather than the stomach; treatment is the same, and ulcers there do not turn cancerous.' / Variant A (6 kg loss, black stools): 'those two things change my plan — black stools usually mean bleeding in the stomach, and unintentional weight loss always needs explaining; blood count today and an urgent gastroscopy rather than treating and waiting.' / Variant C (exertional, sweaty, fist on sternum): 'James, I need to stop there — pain brought on by exertion and relieved by rest can come from the heart. ECG now, hospital today.' / Variant D ('a drink settles it'): 'a drink can dull it for a while, but alcohol irritates the lining and makes ulcers worse, so cutting down is part of the treatment.'"
-   ],
    "pefe": [
-    "Role-player: James Whitlock, 32, Port Augusta run, married, two young kids; practical, blunt, not medically minded; put it off because stopping work costs money. Flat hand LUQ/epigastric, dull ache 4/10, weeks–months, not positional, worse within the hour of any food, doesn't wake him. Holds the food clue once ('not really' → only on a specific food question). Holds the Nurofen once (Quick-Eze and Panadol first; Nurofen only on 'over the counter' or 'anything else'). Ex-smoker 20/day quit 3 y; 4–5 beers most nights; lots of coffee. All red flags absent. Hidden: frightened of cancer — a mate died; raises it only if asked concerns, else flatly at 6:00: 'it's not cancer, is it?'. Goes quiet when cancer is named; warms if the fear is addressed directly. Pushes: 'so what actually is it?', 'am I going to be all right?'",
-    "No examination or investigations in the station. Vitals normal, BMI 27",
-    "Brand-name trap: Quick-Eze/Mylanta = antacids; Gaviscon = alginate-antacid; Somac = pantoprazole (PPI, not an antacid); Micardis = telmisartan (ARB); Nurofen = ibuprofen — the diagnosis. Gastric ulcer: pain 15–60 min after food, food worsens, can be malignant → biopsy at index scope, PPI 8 weeks, repeat endoscopy 6–8 weeks. Duodenal: 2–5 h after food and at night, relieved by food/antacid, benign, PPI 4 weeks, no repeat scope",
-    "H. pylori eradication (7 days, all bd): esomeprazole 20 mg + amoxicillin 1 g + clarithromycin 500 mg; penicillin allergy — metronidazole 400 mg replaces amoxicillin VERIFY TG. Confirm cure: urea breath test ≥4 weeks after antibiotics, ≥2 weeks off PPI. Scope: any age with alarm features; new dyspepsia from ~50 without them. Alcohol NHMRC ≤10/week, ≤4/day. ACS and lower-lobe pneumonia present as upper abdominal pain — twenty seconds buys the domain",
-    "SA: MedSTAR 1300 13 12 33 · TIS 131 450 · truck driving — no sedating analgesia; fitness to drive unaffected by the ulcer itself"
+    "**Do now: CONFIRM HAEMODYNAMIC STABILITY · EXAMINE THE ABDOMEN for guarding and rebound · DIGITAL RECTAL EXAMINATION FOR MELAENA with consent · ECG IF ANY CHEST SYMPTOM · STOP THE IBUPROFEN TODAY · START A PPI.**",
+    "**Do next: FBE, IRON STUDIES, UEC, LFT, LIPASE · H. PYLORI UREA BREATH TEST OR FAECAL ANTIGEN · REFER FOR GASTROSCOPY IF ALARM FEATURES, AGE OVER 50, OR FAILURE TO SETTLE · REVIEW IN 4–6 WEEKS.**",
+    "**What the results change: H. PYLORI POSITIVE → ERADICATE, then CONFIRM CURE · NEGATIVE WITH NSAID USE → drug-induced ulcer; stop the NSAID, PPI for 8 weeks, PARACETAMOL OR A TOPICAL NSAID instead · MICROCYTIC ANAEMIA → CHRONIC BLOOD LOSS UNTIL PROVEN OTHERWISE; GASTROSCOPY REGARDLESS OF AGE · GASTRIC ULCER AT ENDOSCOPY → MULTIPLE BIOPSIES AND REPEAT GASTROSCOPY AT 6–8 WEEKS · DUODENAL ULCER → no routine repeat.**",
+    "**Doses: ESOMEPRAZOLE 20 mg, OMEPRAZOLE 20 mg or PANTOPRAZOLE 40 mg ONCE DAILY — 4 weeks duodenal, 8 weeks gastric or NSAID-associated. Eradication: PPI BD + AMOXICILLIN 1 g BD + CLARITHROMYCIN 500 mg BD × 7 DAYS; METRONIDAZOLE 400 mg BD if penicillin-allergic.** VERIFY against Therapeutic Guidelines. If pressed on a number: **'I would prescribe according to the current Therapeutic Guidelines — a standard-dose PPI with amoxicillin and clarithromycin for seven days.'**",
+    "**Do not miss: GASTRIC CANCER BEHIND THE ULCER · A SILENT BLEED — check for anaemia · PERFORATION if the pain changes character — ERECT CHEST X-RAY, but A NORMAL FILM DOES NOT EXCLUDE IT; CT IS MORE SENSITIVE · CARDIAC PAIN MASQUERADING AS INDIGESTION.**",
+    "**Avoid: REASSURANCE WITHOUT RED-FLAG QUESTIONS · CONTINUING ANY NSAID · LONG-TERM PPI WITHOUT A DIAGNOSIS · SEROLOGY TO CONFIRM H. PYLORI CURE · ANTIBIOTICS WITHOUT TESTING FIRST.**",
+    "**SA: uncomplicated disease is managed in general practice. If he bleeds or perforates — resuscitate locally and MedSTAR 1300 13 12 33. Elective gastroscopy means Adelaide — PATS for travel and accommodation, Country Health Connect for coordination; Closing the Gap PBS co-payment for eligible patients; TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Saying 'GORD' — the reflux screen is negative on purpose",
-    "Asking only about fresh rectal blood — no melaena/haematemesis/dysphagia questions; never naming gastric cancer as the leading differential",
-    "A medication history without 'anything over the counter' — no Nurofen, no diagnosis, no station",
-    "Asking only 'is it related to food?' — missing the food-type and lag-time probes; freezing when he points to the LUQ",
-    "Finishing the abdomen and stopping — no chest screen; never asking what he's worried about; no safety-net for bleeding/perforation"
-   ],
-   "numbers": [
-    "6 min history · warning 6:00 · 8 min · gastric 15–60 min after food, biopsy, PPI 8 wk, rescope 6–8 wk · duodenal 2–5 h/night, benign, PPI 4 wk",
-    "Eradication 7 d bd: esomeprazole 20 + amoxicillin 1 g + clarithromycin 500 (metronidazole 400 if allergic) VERIFY · UBT ≥4 wk post-antibiotics, ≥2 wk off PPI",
-    "Scope: alarm features any age; new dyspepsia ~≥50 · alcohol ≤10/wk, ≤4/d · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Peptic ulcer disease — NSAID-associated** — the answer",
+     "**Dull epigastric or LUQ ache, PERIODIC, WORSE AFTER MEALS, REGULAR NUROFEN, antacid use, ex-smoker, alcohol**",
+     "**Timing after meals; night pain; antacid response**",
+     "**Stop NSAID, PPI, H. pylori test; gastroscopy if not settling** — routine unless bleeding"
+    ],
+    [
+     "**Gastric cancer — differential two, said aloud**",
+     "**Weight loss, anorexia, early satiety, melaena, dysphagia, family history, age over 50**",
+     "**Anaemia, epigastric mass, LEFT SUPRACLAVICULAR NODE**",
+     "**Gastroscopy with biopsy — NOTHING ELSE EXCLUDES IT** — urgent"
+    ],
+    [
+     "Gastro-oesophageal reflux",
+     "**Burning retrosternal pain, acid taste, WATER BRASH, worse lying flat**",
+     "**ABSENT HERE — SAY SO EXPLICITLY**",
+     "PPI response; scope if alarm features"
+    ],
+    [
+     "**Oesophageal cancer**",
+     "**Progressive dysphagia, solids then liquids, weight loss, smoking, reflux history**",
+     "**Dysphagia is the discriminator**",
+     "Gastroscopy with biopsy — urgent"
+    ],
+    [
+     "**Pancreatitis or pancreatic cancer**",
+     "**Boring pain to the back, relief leaning forward**, vomiting, alcohol; **painless jaundice, weight loss, new diabetes**",
+     "Back pain, jaundice",
+     "Lipase; CT with pancreatic protocol — urgent"
+    ],
+    [
+     "**Biliary colic, cholecystitis, cholangitis**",
+     "**RUQ pain after fatty meals, to the shoulder tip, fever, jaundice**, dark urine, pale stool",
+     "**Murphy sign; CHARCOT TRIAD**",
+     "Ultrasound; LFT — urgent if febrile"
+    ],
+    [
+     "**Acute coronary syndrome — not to miss**",
+     "**Exertional pain, sweating, breathlessness, nausea, risk factors**",
+     "**The question candidates forget in an abdominal station**",
+     "**ECG and troponin — low threshold** — EMERGENCY"
+    ],
+    [
+     "**Lower lobe pneumonia**",
+     "Fever, cough, pleuritic pain, breathlessness",
+     "**Referred upper abdominal pain**",
+     "Chest examination and chest X-ray — urgent"
+    ],
+    [
+     "**Duodenal ulcer — the timing swap**",
+     "**Pain 2–5 HOURS AFTER MEALS, WAKES HIM AT 2 am, RELIEVED BY FOOD**",
+     "**'How soon after eating?'**",
+     "**H. pylori testing; PPI 4 weeks; no repeat scope needed**"
+    ],
+    [
+     "**Perforation or major bleed**",
+     "**Sudden severe pain with a RIGID ABDOMEN; haematemesis or melaena with dizziness**",
+     "**Escalate from the history alone**",
+     "**Erect CXR or CT; resuscitate; MedSTAR** — EMERGENCY"
+    ]
    ]
   },
   "source": "Peptic_Ulcer_Disease_2_Case_Tasks_Script_Notability.pdf (James Whitlock, 32, truck driver with upper abdominal pain worse after eating on daily Nurofen — NSAID peptic ulcer, gastric cancer as the leading differential)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Peptic_Ulcer_Disease_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Saying 'GORD' — the reflux screen (no heartburn, no bitter or metallic taste, no water brash, no positional trigger, a dull ache not a burn) is written negative on purpose, and naming reflux is the commonest single fail in this station; 'a peptic ulcer — a small raw area in the lining of the stomach or the first part of the bowel', with reasons (★)",
-   "FAIL — A medication history that never asks 'including anything you buy yourself over the counter?' — he gives Quick-Eze and Panadol first and does not think of Nurofen as a medication; it only comes out on 'over the counter' or 'anything else'; no Nurofen, no diagnosis, no station (★)",
-   "FAIL — Asking 'any fresh blood in your stools?' and stopping — bleeding this high is melaena or haematemesis: 'have your stools ever gone black and tarry? have you ever vomited blood or coffee grounds? any difficulty swallowing or food sticking?' plus weight, appetite, lumps, fatigue, family history of stomach, gullet or bowel cancer — signposted 'I now need to ask some questions to make sure we're not missing anything serious' (★)",
-   "FAIL — Finishing the abdomen and stopping — 'problems in the chest can be felt in the upper tummy: any chest pain or tightness on exertion? shortness of breath, cough, fever?' — acute coronary syndrome and lower lobe pneumonia are both not-to-miss; twenty seconds buys the domain; if the pain comes on walking up the loading ramp and eases with rest, stop the history — ECG now, hospital today (★)",
-   "FAIL — Accepting 'nothing makes it better or worse' — 'what about food — is it any different when you eat?' → 'now you say it, worse after I eat'; then both probing questions aloud: 'is there a particular food that sets it off — spicy, dairy, bread and pasta, fatty?' (food type separates coeliac, lactose and biliary colic) and 'how soon after eating — straight away or a few hours later?' (within the hour = gastric; 2–5 hours, nocturnal, relieved by food = duodenal, benign)",
-   "DO — Name the three groups aloud as you enter them (reflux and ulcers, then the pancreas — through to the back, better leaning forward, injury, fever, blood fats — then liver and gallbladder — jaundice, itch, dark urine, pale stools, severe pain after a fatty meal, rigors); ask his concern ('it's not cancer, is it?' arrives at six minutes otherwise); to the examiner, the most important differential is gastric malignancy ('ulcer and cancer are indistinguishable on history; only endoscopy with biopsy separates them'), then pancreatic and oesophageal cancer, then the grouped list; plan: stop the NSAID, PPI, H. pylori breath or stool test (off the PPI two weeks first), cut alcohol, review four weeks, low threshold for gastroscopy; safety-net haematemesis, melaena, sudden severe pain, faint — ambulance, don't drive; with alarm features (six kilos, black stools) test-and-treat is abandoned — urgent endoscopy at any age"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-130",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "General practice, Wallaroo (MM5) — endoscopy and ENT are in Adelaide. Six-minute history, then diagnosis with reasons, then differentials. Version B hands you a completely normal examination card after the history — half the cohort softened to 'stricture' and failed. Version C has no red flags: peptic stricture from chronic GORD, with cancer still named second.",
   "stem": [
    "Susan Hartley, 57, presents with new difficulty swallowing.",
    "Versions: A — 6 weeks (or 6 months), worsening; 6 kg unintentional loss; ex-smoker (quit 10 y); alcohol; long reflux history, Mylanta no longer helping; solids only, now on soft food. B — identical plus a normal examination card. C — no red flags; heartburn, metallic taste, water brash, spicy food; not progressive."
@@ -32435,88 +32557,207 @@
    "Explain your most likely diagnosis, with your reasons, to Susan",
    "Give your differential diagnoses"
   ],
-  "time": "8 min. Intro, open · match the reply to what she said (no canned 'I understand your concern' unless she voiced one) · ★ 'hard to swallow, or painful to swallow?' · ★ 'hard to start — cough or choke as you begin? or goes down then sticks? throat or chest?' · ★ 'solid food only, or liquids as well?' (solids = obstructive; both = motility) · duration, first time, daily/intermittent, ★ progressive, foods (bread, meat), impact (soft food, not eating enough) · general GI · ★ red flags: weight loss (6 kg, 2 months, not trying), appetite, lumps, tiredness, night sweats · ★ four cancer sites: throat (persistent sore throat, ★ ear pain, ★ voice change), oesophagus/stomach (haematemesis, melaena), thyroid (neck lump, weather preference), lung (persistent cough, haemoptysis) · reflux: heartburn, metallic taste, water brash, ★ 'have you taken anything — is it still working?' (Mylanta used to help, now nothing) · motility/neuro: weakness, numbness, diplopia, ptosis, tremor, stroke, diabetes · autoimmune: rash, joints, tight skin, dry eyes/mouth · meds · ★ 'do you smoke, or have you EVER smoked?' · alcohol, spicy, coffee · PMHx, FHx · concerns (sister-in-law died of oesophageal cancer) · card → 'a normal examination does not exclude an oesophageal malignancy — my concern is unchanged' · dx, six DDx groups, urgent scope, PATS, dietitian, safety-net.",
+  "findings": [
+   [
+    "THE ONE SENTENCE THAT FAILS HALF THE COHORT",
+    "IN VERSION B THE EXAMINATION CARD IS NORMAL, AND HALF THE CANDIDATES ON THE DAY DOWNGRADED TO 'STRICTURE'. A NORMAL PHYSICAL EXAMINATION DOES NOT EXCLUDE CANCER WHEN RED FLAGS ARE PRESENT. THE ONLY THING THAT TAKES OESOPHAGEAL CANCER OFF THE TOP OF THIS LIST IS A CLEAR ENDOSCOPY"
+   ],
+   [
+    "VERSIONS A AND B — what she gives",
+    "6 WEEKS (or 6 months), on and off, GRADUALLY WORSENING · 6 kg UNINTENTIONAL WEIGHT LOSS · EX-SMOKER, QUIT 10 YEARS · DRINKS ALCOHOL · LONG REFLUX HISTORY, MYLANTA NO LONGER HELPING · SOLID FOOD ONLY STICKS · NOW EATING SOFT FOOD"
+   ],
+   [
+    "VERSION C — the mirror error",
+    "SEVERAL MONTHS OF HEARTBURN, METALLIC TASTE, WATER BRASH, LOTS OF SPICY FOOD · SOLIDS ONLY, NOT PROGRESSIVE · NO RED FLAGS — weight stable, appetite normal, no bleeding. THE CANDIDATE WHO STILL SHOUTS CANCER HAS STOPPED LISTENING. ANSWER: STRICTURE SECONDARY TO CHRONIC GORD, WITH CANCER AS DIFFERENTIAL TWO"
+   ],
+   [
+    "SEPARATE DYSPHAGIA FROM ODYNOPHAGIA FIRST",
+    "'IS IT HARD TO SWALLOW, OR PAINFUL TO SWALLOW?' Patients use the same words for both. The whole history taken without asking whether it hurts is a listed fail"
+   ],
+   [
+    "AXIS ONE — HIGH OR LOW",
+    "'IS IT HARD TO START THE SWALLOW — DO YOU COUGH OR CHOKE AS YOU BEGIN? OR DOES IT GO DOWN AND THEN GET STUCK? AND IF IT STICKS, IS THAT IN YOUR THROAT OR IN YOUR CHEST?' OROPHARYNGEAL = trouble initiating, choking; OESOPHAGEAL = sticks seconds later, points to chest"
+   ],
+   [
+    "AXIS TWO — THE HIGHEST-YIELD QUESTION IN THE STATION",
+    "'DOES IT HAPPEN WITH SOLID FOOD ONLY, OR WITH LIQUIDS AS WELL?' SOLIDS ONLY = OBSTRUCTIVE; SOLIDS AND LIQUIDS FROM THE OUTSET = MOTILITY. ASK IT BY 1:30. Then PROGRESSION"
+   ],
+   [
+    "ANTACID FAILURE IS A RED FLAG",
+    "'MYLANTA DOESN'T HELP ANY MORE.' ACKNOWLEDGE IT EXPLICITLY — A TREATMENT THAT STOPS WORKING IN A CHRONIC UPPER GI COMPLAINT IS A CHANGE THAT NEEDS EXPLAINING. And reflux is a ROUTE TO STRICTURE AND BARRETT'S ADENOCARCINOMA, NOT THE ENDPOINT"
+   ],
+   [
+    "THE CANCER-SPECIFIC RED FLAGS — FOUR SITES, THE ONES CANDIDATES MISS",
+    "OROPHARYNGEAL — SORE THROAT THAT WON'T SETTLE, EAR PAIN, VOICE CHANGE · OESOPHAGEAL/GASTRIC — HAEMATEMESIS, MELAENA · THYROID — NECK LUMP, WEATHER PREFERENCE · LUNG/MEDIASTINAL — COUGH, HAEMOPTYSIS. The generic four alone do not tick the box"
+   ],
+   [
+    "DO NOT DELIVER CANNED EMPATHY",
+    "The recalled openings differ — some role-players volunteer worry, some simply state the problem. DO NOT SAY 'I UNDERSTAND YOUR CONCERN' TO A PATIENT WHO HAS NOT EXPRESSED ONE — THE EXAMINERS HAVE SPECIFICALLY PENALISED THAT. Respond to what she said"
+   ],
+   [
+    "GLOBUS IS NOT DYSPHAGIA",
+    "A SENSATION OF A LUMP IN THE THROAT BETWEEN MEALS, WITH ENTIRELY NORMAL SWALLOWING, is GLOBUS PHARYNGEUS — a different case, and a diagnosis of exclusion after a normal scope"
+   ]
+  ],
+  "findingsLabel": "Three versions — a normal card that changes nothing, and a benign story that changes everything",
+  "must": [
+   "FAIL — Downgrading to stricture because the examination card is normal.",
+   "FAIL — Never asking the cancer-specific red flags at four sites.",
+   "FAIL — Answering 'GORD' in Version C. GORD does not itself cause dysphagia.",
+   "FAIL — Naming a barium swallow as the first test in suspected malignancy.",
+   "ASK — Solid food only, or liquids as well?",
+   "ASK — Is it hard to swallow, or painful to swallow?"
+  ],
   "back": {
-   "dx": "Oesophageal carcinoma until proven otherwise (A/B) — 6 weeks of progressive dysphagia to solids only (goes down then catches at mid-sternum, no choking), on soft food, 6 kg unintentional loss over two months, tired, years of reflux with Mylanta that has stopped working, ex-smoker 20/day quit 10 years, two glasses of wine most nights; no site-specific symptoms from throat, thyroid or lung. Reasons: reflux with antacid failure, progression, weight loss, solids-only pattern. A normal examination (B) changes nothing — early tumours produce no signs. Version C (no red flags, heartburn/metallic taste/water brash/spicy food, not progressive): peptic stricture secondary to chronic GORD — cancer named second, biopsy still required because a malignant stricture can look benign. Hidden agenda: sister-in-law died of oesophageal cancer.",
+   "dx": [
+    "**VERSIONS A AND B — OESOPHAGEAL CARCINOMA: progressive solids-only dysphagia, weight loss, long reflux history with antacid failure, ex-smoker, alcohol. VERSION C — OESOPHAGEAL STRICTURE SECONDARY TO CHRONIC GASTRO-OESOPHAGEAL REFLUX DISEASE — note the wording carefully: NOT 'GORD'.**",
+    "**DEFINITIONS AND TWO AXES, NAMED ALOUD BEFORE LISTING ANYTHING: DYSPHAGIA = DIFFICULTY SWALLOWING; ODYNOPHAGIA = PAIN ON SWALLOWING. AXIS 1: OROPHARYNGEAL VS OESOPHAGEAL. AXIS 2: OBSTRUCTIVE VS MOTILITY.** **If you can say 'THIS IS A LOW, OBSTRUCTIVE DYSPHAGIA' before you name a disease, THE LIST WRITES ITSELF.**",
+    "**THE DISCRIMINATING ISSUE: LETTING A NORMAL EXAMINATION, OR A PLAUSIBLE BENIGN STORY, DISPLACE CANCER FROM THE TOP OF THE LIST WHILE RED FLAGS ARE STILL ON THE TABLE. VERSION B EXISTS PRECISELY TO TEST THIS. THE MIRROR ERROR IS VERSION C, where red flags are GENUINELY ABSENT and the answer is stricture.**",
+    "**VERSIONS A AND B, SCRIPTED: 'Susan, in your case I AM CONCERNED ABOUT THE POSSIBILITY OF A CANCER IN THE FOOD PIPE. I want to be clear IT IS NOT CONFIRMED — that is why I want to arrange a test. My reasons: YOU'VE HAD REFLUX FOR A LONG TIME AND THE MYLANTA HAS STOPPED WORKING, and it is getting worse. YOU HAVE LOST WEIGHT WITHOUT MEANING TO. And your swallowing problem happens ONLY WITH SOLID FOOD — that pattern suggests SOMETHING IS PHYSICALLY BLOCKING THE WAY.'**",
+    "**VERSION B, AFTER THE NORMAL CARD: 'I've examined you and I could not find anything abnormal today. I WANT TO BE HONEST WITH YOU: A NORMAL EXAMINATION DOES NOT RULE OUT A CANCER. EARLY TUMOURS VERY OFTEN CAUSE NO SIGNS AT ALL. My concern is based on your symptoms, AND IT HAS NOT CHANGED.'**",
+    "**VERSION C, SCRIPTED — AND DO NOT OMIT DIFFERENTIAL TWO: 'the most likely cause is NARROWING OF THE FOOD PIPE — A STRICTURE. These are SCARS, caused by LONG-TERM INFLAMMATION FROM ACID. The scarring narrows the pipe, and that is why solid food catches. I DO WANT TO SAY THAT A CANCER OF THE FOOD PIPE IS STILL ON MY LIST AND I HAVE NOT RULED IT OUT — you don't have the warning signs, which is reassuring, BUT THE CAMERA TEST IS WHAT TELLS US FOR CERTAIN.'**",
+    "**WHY 'GORD' IS THE WRONG ANSWER IN C: GORD DOES NOT ITSELF CAUSE DYSPHAGIA. IT CAUSES HEARTBURN, REGURGITATION AND OESOPHAGITIS. WHAT CAUSES THE SWALLOWING DIFFICULTY IS THE STRICTURE — FIBROUS NARROWING AFTER YEARS OF INFLAMMATION. SAY THE MECHANISM, NOT JUST THE PARENT CONDITION. And STILL BIOPSY IT — A MALIGNANT STRICTURE CAN LOOK BENIGN.**",
+    "**SIX NAMED GROUPS, NINE SECONDS EACH: CANCERS — oropharyngeal, oesophageal, thyroid, lung · STRICTURES AND REFLUX · INFECTIONS — pharyngitis, quinsy, candida · MOTILITY — NEUROLOGICAL (stroke, MS, myasthenia, diabetes), AUTOIMMUNE (scleroderma), ACHALASIA · MEDICATIONS · FUNCTIONAL, LAST.** **STROKE IS THE COMMONEST CAUSE OF OROPHARYNGEAL DYSPHAGIA — the neurological group is never 'not relevant'.**",
+    "**MEDICATIONS GET THEIR OWN GROUP: ACE INHIBITORS · SEDATIVES AND ANTIPSYCHOTICS · ANTICHOLINERGICS, SSRIs AND DECONGESTANTS — dry mouth · BISPHOSPHONATES AND DOXYCYCLINE — PILL-INDUCED OESOPHAGITIS, usually with odynophagia. ASK WHETHER THE SWALLOWING TROUBLE STARTED WHEN THE DRUG DID.**",
+    "**FIRST TEST: URGENT GASTROSCOPY WITH BIOPSY. 'BARIUM OBTAINS NO TISSUE. I would use barium first ONLY IF I SUSPECTED A PHARYNGEAL POUCH, where BLIND INTUBATION RISKS PERFORATION.'** **SA: Category 1 referral to an Adelaide upper GI unit — RAH, Flinders or TQEH — with PATS started at this visit; DIETITIAN AND SPEECH PATHOLOGY in the meantime; MedSTAR 1300 13 12 33 if she obstructs completely or aspirates.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'Am I speaking with Susan? How can I help?' → 'food sticking, a few weeks, I'm worried' → 'that does sound worrying, and you were right to come in — I'd like to ask a number of questions to work out what's causing it'"
+     "**WIPE, open question — and RESPOND TO WHAT SHE ACTUALLY SAID: worry if she expressed it, 'thank you for coming in to get this checked' if she didn't.**"
     ],
     [
      "0:40",
-     "★ 'Is it hard to swallow, or painful to swallow?' (hard) · ★ 'hard to start the swallow — cough or choke as you begin? or does it go down and then get stuck — in your throat or your chest?' (goes down, catches mid-sternum) · ★ 'solid food only, or liquids as well?' (solids only; bread and meat worst)"
+     "**DESCRIBE IT: HARD TO SWALLOW, OR PAINFUL · HARD TO START THE SWALLOW, COUGH OR CHOKE AS YOU BEGIN · OR DOES IT GO DOWN AND THEN STICK · THROAT OR CHEST?**"
     ],
     [
-     "1:30",
-     "How long (6 wk) · first time · every day or on and off · ★ 'gradually getting worse?' (definitely) · better/worse, particular foods · impact: 'managing to eat enough?' (soft/mashed food, not enjoying eating)"
+     "1:20",
+     "**THE HIGHEST-YIELD QUESTION: SOLID FOOD ONLY, OR LIQUIDS AS WELL?** Then **progression.**"
     ],
     [
-     "2:10",
-     "General GI: N/V, bloating, bowels, fever · ★ 'some I ask everyone': weight loss — ★ how many kilos, over what period, trying? (6 kg, 2 months, no) · appetite · lumps · tiredness (yes) · night sweats"
+     "1:40",
+     "**TIME IT: how long, first time or before, every day or on and off, GETTING WORSE · anything better or worse, particular food · HAVE YOU CHANGED WHAT YOU EAT · ARE YOU MANAGING TO EAT ENOUGH?**"
     ],
     [
-     "2:50",
-     "★ Four sites: 'sore throat that won't settle? ★ any pain in your ear? ★ any change in your voice?' · 'ever vomited blood, or black tarry stools?' · 'lump in your neck? prefer hot or cold weather more than you used to?' · 'cough that won't go, coughed up blood?' → all no"
+     "2:20",
+     "**GENERAL GI, FAST: nausea, vomiting, regurgitation, pain, bowel habit.**"
     ],
     [
-     "3:40",
-     "Reflux: heartburn (years), acidic/metallic taste (yes), sudden rush of saliva · ★ 'have you taken anything for it, and is it still working?' → 'Mylanta used to help — it doesn't do anything now' → 'thank you, that change matters' · motility: weakness, numbness/pins and needles, blurred/double vision, droopy eyelids, tremor, previous stroke, diabetic · autoimmune: rashes, joint pains, tight skin on the hands, dry eyes/mouth · medications (none regular) · ★ 'do you smoke, or have you ever smoked?' (ever → 20/day, quit 10 y) · alcohol (2 glasses most nights) · spicy, coffee · other conditions, FHx (mother bowel cancer at 70) · ★ 'is there anything particular on your mind?' → sister-in-law"
+     "2:40",
+     "**CANCERS — GENERIC: WEIGHT LOSS, HOW MANY KILOS, OVER WHAT PERIOD, WERE YOU TRYING · appetite · lumps · tiredness · night sweats.**"
     ],
     [
-     "5:30",
-     "(B) Card: general/vitals normal, no lymphadenopathy, no goitre, chest clear, abdomen soft, neuro normal → ★ aloud: 'I note the examination is entirely normal. A normal examination does not exclude an oesophageal malignancy and my concern is unchanged.'"
+     "3:10",
+     "**THE FOUR SITES: OROPHARYNGEAL — SORE THROAT THAT WON'T SETTLE, EAR PAIN, VOICE CHANGE · OESOPHAGEAL/GASTRIC — VOMITED BLOOD, DARK OR BLACK STOOLS · THYROID — LUMP IN THE NECK, HOT OR COLD WEATHER · LUNG — COUGH THAT WON'T GO, COUGHED UP BLOOD.**"
+    ],
+    [
+     "3:50",
+     "**STRICTURES AND REFLUX: heartburn · acidic, metallic or bitter taste · sudden rush of saliva · WHAT HAVE YOU TAKEN FOR IT, AND IS IT STILL WORKING?** Then **INFECTIONS: fevers, sore throat now, PAINFUL swallowing.**"
+    ],
+    [
+     "4:20",
+     "**MOTILITY — NEUROLOGICAL: weakness · numbness · blurring or DOUBLE VISION · DROOPY EYELIDS OR WORSE AT THE END OF THE DAY · tremor or slowing · PREVIOUS STROKE · DIABETES.**"
+    ],
+    [
+     "4:50",
+     "**MOTILITY — AUTOIMMUNE: rashes · joint pains · TIGHTENING OF THE SKIN ON YOUR HANDS · fingers changing colour in the cold · dry eyes or mouth.** Then **achalasia: regurgitating undigested food, chest pain.**"
+    ],
+    [
+     "5:20",
+     "**MEDICATIONS — AND DID IT START WHEN A DRUG DID · SMOKING, ALCOHOL, spicy food, coffee · other conditions · FAMILY HISTORY OF STOMACH OR BOWEL PROBLEMS.**"
+    ],
+    [
+     "5:50",
+     "**Version B: take the normal examination card and SAY ALOUD 'A NORMAL EXAMINATION DOES NOT EXCLUDE A MALIGNANCY; MY CONCERN IS UNCHANGED.'**"
     ],
     [
      "6:00",
-     "★ 'Susan, I've been thinking about a number of conditions that cause difficulty swallowing. In your case I am concerned about the possibility of a cancer in the food pipe. It is not confirmed, and that is exactly why I want to arrange a test. My reasons: reflux for a long time and the Mylanta that used to help has stopped working; it is getting worse; you have lost six kilograms without meaning to; and it happens only with solid food, which suggests something is physically blocking the way rather than a problem with the muscle movement.' · 'but the examination was normal?' → ★ 'you're right, and I want to be honest — I examined you and could not find anything abnormal, but a normal examination does not rule out a cancer; early tumours very often produce no physical signs. My concern comes from your symptoms, and it has not changed.' · DDx in groups, ~9 s each: other cancers pressing on the pipe — throat, thyroid, lung; narrowing from long-standing reflux — a stricture; infections in the throat; movement problems — nerve conditions (stroke, MS, myasthenia, diabetes), immune conditions (scleroderma), achalasia; medications. 'The camera test sorts between them.'"
+     "**THE DIAGNOSIS TO SUSAN, WITH A WARNING SHOT AND THREE REASONS — or in Version C, STRICTURE with cancer named as differential two.**"
     ],
     [
-     "7:15",
-     "★ 'I'll arrange the camera test urgently and refer you to Adelaide today; our nurse will start the travel scheme paperwork. I'd like our dietitian to see you in the meantime. If you reach the point where you cannot swallow your own saliva, if food becomes completely stuck, or if you vomit blood, go straight to the emergency department.' · 'am I going to be alright?' → no false reassurance: 'I don't know yet — that's what the test is for, and I'm not waiting' · questions"
+     "7:00",
+     "**THE GROUPED DIFFERENTIAL LIST, 45 SECONDS: other cancers pressing on the pipe — throat, thyroid, lung · narrowing from reflux · throat infections · movement problems — nerves, immune system, achalasia · medications. 'THE CAMERA TEST IS WHAT SORTS BETWEEN THEM.'**"
+    ],
+    [
+     "7:40",
+     "**THE PLAN: URGENT GASTROSCOPY WITH BIOPSY, FBE AND IRON STUDIES, DIETITIAN, PATS — and the SAFETY-NET: 'come straight back IF YOU CANNOT SWALLOW YOUR SALIVA OR YOU VOMIT BLOOD.'**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'Can you tell me what you mean by difficulty swallowing — is it hard to swallow, or is it painful to swallow?' / ★ 'Is it hard to start the swallow — do you cough or choke as you begin? Or does it go down and then get stuck? And if it sticks, is that in your throat or in your chest?' / ★ 'Does it happen with solid food only, or with liquids as well?'",
-    "★ 'Have you lost weight without trying — how many kilos, over what period?' / ★ 'Have you had a sore throat that won't settle? Any pain in your ear? Has your voice changed?' / 'Any lump in your neck? Do you prefer hot or cold weather more than you used to? Any cough that won't go, or have you ever coughed up blood?'",
-    "★ 'You said Mylanta used to help — is it still working?' / ★ 'Do you smoke, or have you ever smoked?' / 'Any weakness, numbness or pins and needles, blurred or double vision, droopy eyelids, tremor? Any previous stroke? Are you diabetic? Any tightening of the skin on your hands, dry eyes or dry mouth?'",
-    "★ To examiner (Version B): 'I note the examination is entirely normal. A normal examination does not exclude an oesophageal malignancy and my concern is unchanged.'",
-    "★ 'Susan, I am concerned about the possibility of a cancer in the food pipe. It is not confirmed, and that is exactly why I want to arrange a test. My reasons are: you've had reflux for a long time and the Mylanta that used to help has stopped working; it is getting worse; you have lost six kilograms without meaning to; and it happens only with solid food, which suggests something is physically blocking the way rather than a problem with the muscle movement.'",
-    "'But the examination was normal?' → ★ 'You're right, and I want to be honest with you. I examined you and could not find anything abnormal. But a normal examination does not rule out a cancer — early tumours very often produce no physical signs at all. My concern comes from your symptoms, and it has not changed.'",
-    "Version C: 'The most likely cause is a narrowing of the food pipe — a stricture. These are scars caused by long-term inflammation from acid coming up, and they narrow the pipe so solid food catches. A cancer of the food pipe is still on my list and I haven't ruled it out; you don't have the warning signs, which is reassuring, but the camera test is what tells us for certain.' / 'Isn't it just GORD?' → 'GORD is the underlying condition but does not itself cause dysphagia — the swallowing difficulty is from a peptic stricture, a complication of years of reflux. I would still biopsy it, because a malignant stricture can look benign.'",
-    "★ 'If you cannot swallow your own saliva, if food becomes completely stuck, or if you vomit blood, go straight to the emergency department.' / examiner 'why not barium first?' → 'barium obtains no tissue; endoscopy lets me see the lesion and biopsy it in the same sitting — barium first only for a suspected pharyngeal pouch, where blind intubation risks perforation.' / 'nutrition meanwhile?' → 'dietitian review, texture-modified diet, oral supplements, weight monitoring; speech pathology swallow assessment if any aspiration features.'"
-   ],
    "pefe": [
-    "Role-player: Susan Hartley, 57, front office at a Kadina transport yard, lives in Wallaroo with husband Ray; composed, practical, tense — frightened and covering it. Answers only what's asked. 'Do you smoke?' → flat 'No'; 'have you ever smoked?' → '20 a day, gave up 10 years ago'. The Mylanta line delivered with emphasis once — not repeated if missed. Version B: after 'cancer', 'but you said the examination was normal?' then waits in silence — soften = fail. 'Am I going to be alright?' once. Hidden: sister-in-law died of oesophageal cancer 4 years ago — only if asked concerns, else at the very end",
-    "Version B card: general appearance normal, vitals normal, neck — no lymphadenopathy, no goitre, chest clear, abdomen soft non-tender, neuro normal. Version C: no weight loss/appetite change/tiredness, not progressive, heartburn + metallic taste + water brash, lots of spicy food",
-    "Dysphagia logic: oropharyngeal (difficulty initiating, cough/choke, nasal regurgitation — neuro/muscular, pharyngeal pouch) vs oesophageal (sticks after swallowing — throat vs chest); solids only, progressive = mechanical obstruction (cancer, stricture, extrinsic compression); solids and liquids from the start, intermittent = motility (achalasia, spasm, scleroderma); odynophagia = infection (candida, HSV, CMV), pill oesophagitis, ulcerated tumour. Six differential groups: cancers (oesophageal, oropharyngeal, thyroid, lung/mediastinal) · strictures/reflux (peptic, Schatzki, eosinophilic oesophagitis in the young) · infection · neurological motility (stroke, MS, MND, myasthenia, Parkinson's, diabetic neuropathy) · autoimmune (scleroderma, Sjögren) · medications (bisphosphonates, doxycycline, NSAIDs, KCl; anticholinergics)",
-    "Oesophageal cancer risks: adenocarcinoma — GORD/Barrett's, obesity, male; SCC — smoking, alcohol, achalasia, caustic injury. First investigation: gastroscopy with biopsy (Category 1, urgent VERIFY timeframe); barium swallow first only for suspected pharyngeal pouch; CT/PET for staging after tissue; MDT. Peptic stricture: endoscopic dilatation + long-term PPI, biopsy the stricture",
-    "SA: Category 1 referral to an Adelaide upper GI unit · PATS travel/accommodation started at this visit · Country Health Connect · dietitian · MedSTAR 1300 13 12 33 if she obstructs completely or aspirates · TIS 131 450"
+    "**Do now: URGENT UPPER GI ENDOSCOPY WITH BIOPSY — the single investigation that answers the question in Versions A, B and C · FULL BLOOD EXAMINATION AND IRON STUDIES · UEC · ALBUMIN AS A NUTRITIONAL MARKER · DIETITIAN AND SPEECH PATHOLOGY SWALLOW ASSESSMENT for anyone on modified texture.**",
+    "**If a tumour is confirmed: STAGING CT CHEST, ABDOMEN AND PELVIS, then PET AND ENDOSCOPIC ULTRASOUND as the upper GI MDT directs. If a stricture: DILATATION AT ENDOSCOPY PLUS LONG-TERM PPI — AFTER BIOPSY. If oropharyngeal features: URGENT ENT FOR NASENDOSCOPY. If motility is suspected and the scope is clear: BARIUM SWALLOW, THEN MANOMETRY.**",
+    "**Barium appearances worth naming: CANCER — IRREGULAR, ASYMMETRICAL NARROWING WITH SHOULDERED MARGINS, the 'APPLE CORE' · BENIGN PEPTIC STRICTURE — SMOOTH, SYMMETRICAL, TAPERED, NO SHOULDERING · ACHALASIA — DILATED OESOPHAGUS ABOVE A 'BIRD'S BEAK'.**",
+    "**Achalasia: SOLIDS AND LIQUIDS FROM THE OUTSET, progressing slowly over years, REGURGITATION OF UNDIGESTED FOOD, chest pain — BARIUM THEN MANOMETRY, and STILL SCOPE TO EXCLUDE PSEUDOACHALASIA from a tumour at the cardia.**",
+    "**Do not miss: ★ DOWNGRADING TO A BENIGN DIAGNOSIS BECAUSE THE EXAMINATION WAS NORMAL · OROPHARYNGEAL CANCER needing ENT, not gastroenterology · ASPIRATION · COMPLETE OBSTRUCTION — cannot swallow saliva · MALNUTRITION in a woman already on soft food and losing weight.**",
+    "**Avoid: BARIUM SWALLOW INSTEAD OF ENDOSCOPY IN SUSPECTED MALIGNANCY — it obtains no tissue · BLIND OESOPHAGEAL DILATATION WITHOUT HISTOLOGY · A PPI TRIAL AS THE WHOLE PLAN IN SOMEONE WITH RED FLAGS — it delays diagnosis · FALSE REASSURANCE — 'I don't know yet, and that's why I want the camera test quickly.'**",
+    "**SA: CATEGORY 1 URGENT GASTROSCOPY via the Yorke and Northern LHN pathway or direct to RAH, Flinders or TQEH · PATS STARTED AT THIS VISIT · Country Health Connect for home nutrition support · MedSTAR 1300 13 12 33 and RFDS for complete obstruction, aspiration or haematemesis · TIS National 131 450.** VERIFY category waiting times and PATS thresholds."
    ],
-   "fails": [
-    "★ Downgrading the diagnosis because the examination was normal (Version B)",
-    "★ Answering 'GORD' in Version C; ★ never asking solids vs liquids; ★ never asking any cancer-specific question (ear pain and voice change are the two almost nobody asks)",
-    "'Do you smoke?' accepted as a flat no; moving past 'Mylanta doesn't work any more'",
-    "A canned 'I understand your concern' to a patient who never voiced one; false reassurance to 'am I going to be alright?'",
-    "Twelve separate differentials instead of six groups; no safety-net for complete obstruction/aspiration; barium swallow first"
-   ],
-   "numbers": [
-    "6 min history · 8 min station · 6 wk (or 6 mo) progressive · 6 kg unintended over 2 mo · ex-smoker 20/d quit 10 y · 2 glasses wine most nights",
-    "Solids only = obstructive · solids + liquids = motility · odynophagia = different list · four cancer sites · six DDx groups · first test gastroscopy + biopsy; barium only for pharyngeal pouch",
-    "Category 1 scope VERIFY · PATS · MedSTAR 1300 13 12 33 · TIS 131 450"
+   "ddx": [
+    [
+     "**Oesophageal carcinoma** — Versions A and B",
+     "**PROGRESSIVE SOLIDS-ONLY dysphagia, WEIGHT LOSS, age over 50, smoking, alcohol, LONG REFLUX with ANTACID FAILURE**",
+     "**Cachexia, supraclavicular node, hepatomegaly — OFTEN NOTHING AT ALL**",
+     "**Urgent gastroscopy with biopsy. A NORMAL EXAMINATION DOES NOT EXCLUDE IT** — urgent"
+    ],
+    [
+     "**Peptic stricture from chronic reflux** — Version C",
+     "**Years of reflux, NON-PROGRESSIVE, weight maintained, no other red flags**",
+     "Usually normal",
+     "**Gastroscopy with biopsy — MUST EXCLUDE MALIGNANCY — ± dilatation** — semi-urgent"
+    ],
+    [
+     "**Oropharyngeal carcinoma**",
+     "**Difficulty INITIATING, choking, EAR PAIN, VOICE CHANGE, persistent sore throat, smoking and alcohol**",
+     "Neck node, visible lesion",
+     "**URGENT ENT, nasendoscopy, panendoscopy** — urgent"
+    ],
+    [
+     "**Extrinsic compression — thyroid, lung, mediastinum**",
+     "**Neck lump; cough or haemoptysis; hoarseness**",
+     "Goitre, tracheal deviation, chest signs",
+     "TFTs and thyroid ultrasound; CXR then CT chest — urgent"
+    ],
+    [
+     "**Achalasia**",
+     "**SOLIDS AND LIQUIDS FROM THE OUTSET**, regurgitation of undigested food, chest pain, slow course over years",
+     "Usually normal; may be underweight",
+     "**Barium (bird's beak), then manometry; scope to exclude pseudoachalasia**"
+    ],
+    [
+     "**Neurological motility — stroke, MS, myasthenia, Parkinson, diabetes**",
+     "**Prior stroke, weakness, DIPLOPIA, FATIGABLE PTOSIS, tremor**",
+     "Focal neurology, absent gag, dysarthria",
+     "**Neurological examination; speech pathology swallow assessment. STROKE IS THE COMMONEST CAUSE OF OROPHARYNGEAL DYSPHAGIA**"
+    ],
+    [
+     "**Scleroderma / systemic sclerosis**",
+     "**Raynaud's, TIGHT SHINY SKIN OVER FINGERS, telangiectasia, reflux**",
+     "Sclerodactyly, calcinosis",
+     "ANA, anti-centromere, anti-Scl-70; rheumatology"
+    ],
+    [
+     "**Pharyngeal pouch (Zenker)**",
+     "**Regurgitation of undigested food HOURS LATER, halitosis, GURGLING IN THE NECK**, nocturnal cough",
+     "Occasionally a soft neck swelling",
+     "**BARIUM FIRST — BLIND ENDOSCOPY RISKS PERFORATION** — semi-urgent"
+    ],
+    [
+     "Infection — pharyngitis, quinsy, candida",
+     "**ODYNOPHAGIA dominant**, fever, TRISMUS, muffled voice; or inhaled steroids",
+     "Tonsillar swelling, uvular deviation, oral thrush",
+     "Clinical; **urgent ENT for quinsy**; antifungal for candida"
+    ],
+    [
+     "Medication-induced · **functional dysphagia or globus**",
+     "**Onset with a new drug — bisphosphonate, doxycycline, ACE inhibitor, anticholinergic**; or a lump in the throat BETWEEN MEALS with NORMAL swallowing",
+     "Timing against the drug; dry mouth",
+     "**Cease or substitute. Globus is a diagnosis of exclusion AFTER A NORMAL ENDOSCOPY — NEVER THE FIRST ANSWER**"
+    ]
    ]
   },
   "source": "Dysphagia_2_Case_Tasks_Script_Notability.pdf Versions A and B (Susan Hartley, 57, progressive dysphagia to solids with weight loss and antacid failure — oesophageal cancer, with Version B adding a completely normal examination card that must not change the answer; Version C, the no-red-flag peptic stricture, is MED-242)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › GI › Upper GI › Dysphagia_2_Case_Tasks_Script_Notability.pdf",
-  "must": [
-   "FAIL — Downgrading the diagnosis because the examination card is normal (Version B) — half the cohort answered 'stricture' and failed; to the examiner: 'I note the examination is entirely normal; a normal examination does not exclude an oesophageal malignancy and my concern is unchanged'; to Susan after 'but you said the examination was normal?' (compulsory pushback, then silence): 'I want to be honest — that does not rule this out; early tumours very often produce no physical signs'; softening or backtracking here is the fail (★)",
-   "FAIL — Answering 'GORD' in Version C — reflux causes heartburn, regurgitation and oesophagitis, not dysphagia; the diagnosis is a peptic stricture, a fibrous narrowing from years of reflux, 'and I would still biopsy it because a malignant stricture can look benign'; cancer named as differential 2 (★)",
-   "FAIL — Never asking 'does it happen with solid food only, or with liquids as well?' — solids only = obstructive, solids and liquids = motility; with 'is it hard to start the swallow — do you cough or choke as you begin? or does it go down and then stick — in your throat or your chest?' these two answers place the lesion on both axes and carry more weight than the rest of the history (★)",
-   "FAIL — Never asking a cancer-specific question — beyond the generic four (weight quantified — six kilos, over what period, trying?; appetite; lumps; tiredness), the four site sets: throat — 'a sore throat that won't settle? any pain in your ear? any change in your voice?' (the two candidates almost never ask); oesophagus — haematemesis, melaena; thyroid — neck lump, weather preference; lung — persistent cough, haemoptysis (★)",
-   "FAIL — 'Is it hard to swallow, or painful to swallow?' not asked first — odynophagia uses the same words and points to infection, ulceration, pill oesophagitis or an ulcerated tumour; and 'do you smoke?' gets a flat 'no' — 'have you ever smoked?' gets twenty a day, quit ten years ago; respond to what she actually said — a canned 'I understand your concern' to a patient who expressed none is penalised",
-   "DO — Duration (six weeks or months), first time, progressive ('definitely worse'), foods (bread and meat), impact (soft food); 'you said Mylanta used to help — is it still working?' — the antacid-failure line is delivered with emphasis once; the six differential groups by name (cancers at four sites, stricture and reflux, infection, neurological motility incl. stroke, MS, myasthenia, diabetes, autoimmune incl. scleroderma and achalasia, medications); diagnosis: 'I am concerned about the possibility of a cancer in the food pipe; it is not confirmed, and that is exactly why I want to arrange a test' with four reasons (long reflux with antacid failure, progressive, six kilos unintended, solids only); urgent gastroscopy with biopsy (barium first only for a suspected pharyngeal pouch), Adelaide referral with PATS started today, dietitian; safety-net: can't swallow saliva, food completely stuck, vomiting blood → ED; her sister-in-law died of oesophageal cancer — ask her concern; 'am I going to be alright?' without false reassurance"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-131",
