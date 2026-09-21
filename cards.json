@@ -26418,9 +26418,8 @@
  {
   "id": "MED-102",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "Regional SA general practice, standard appointment. Walks in unaided, alert. Vitals in the stem; the postural BP, glucose and dipstick are given only if you ask. Version C is the spine — four causes stack, and the case hands you the first one in the words 'rushing to the toilet'. Aim history 4½ · PEFE 1½ · explanation 2.",
   "stem": [
    "John Halloran, 70, retired farmhand, has come in because he has fallen twice in the last two nights. T 36.9 · HR 82 reg · BP 120/80 sitting · RR 16 · SpO2 97% RA."
   ],
@@ -26429,130 +26428,211 @@
    "Ask the examiner for the relevant physical examination findings — you will not examine the patient",
    "Explain your diagnosis and your differential diagnoses to the patient"
   ],
-  "time": "8 minutes. Open, acknowledge, signpost ('some questions won't seem related — that's deliberate') · ★ concern in minute one (brother's stroke / ending up in a home) · ★ fall vs faint SECOND, always (LOC, remember hitting the floor, shake/tongue/wet) · number, timeline ('never in my life' = acute, 48 h), context (out of bed, hurrying to the toilet — register it, keep the structure), warning ('swimmy'), ★ injury, ★ long lie · organic screen: numbness, weakness, speech, vision, headache, vertigo · chest pain, palpitations, SOB · V/D, melaena · ★ 'eating regularly, or skipping meals?' → skipping tea · PMHx ×4 (conditions, ops, meds incl sleep/pain/OTC, allergies) → nil · ★ six risk domains in order: home (hallway light poor, toilet far end) · urinary (frequency, urgency, nocturia ×3–4, stinging, no blood) · ★ fever/shivers/flank/abdo pain (excludes pyelo) · MSK/feet/footwear (old slippers) · eyes/ears · alcohol QUANTIFIED, smoking, drugs · geriatric/social: who's home, ADLs, memory, mood, weight, driving, ★ fear of falling · stop at 5:00 → PEFE → four numbered causes → answer the stroke by name → DDx still being checked → plan → red flags → teach-back.",
+  "findings": [
+   [
+    "THERE IS NO SINGLE-CAUSE RECURRENT FALLS STATION",
+    "YOUR DIAGNOSIS IS A PACKAGE OF CONTRIBUTING CAUSES, EACH JUSTIFIED BY A HISTORY OR EXAMINATION FINDING. THE STEM NEVER CHANGES ACROSS FIVE RECALLS — ONLY THE FINDINGS DO. ASSUME NOTHING FROM THE VERSION YOU REVISED LAST NIGHT"
+   ],
+   [
+    "VERSION C — the urinary case in this stem",
+    "TWO FALLS IN THE LAST TWO NIGHTS ONLY, ACUTE. FELL RUSHING TO THE TOILET AT NIGHT · NEW FREQUENCY, URGENCY AND NOCTURIA FOR TWO DAYS · SKIPPING THE EVENING MEAL · NO fever, NO flank or abdominal pain. Card: BP 120/80 SITTING, 94/60 STANDING · BGL 4.0 · CVS and neuro normal · SUPRAPUBIC TENDERNESS · URINE NITRITES POSITIVE"
+   ],
+   [
+    "VERSION A — alcohol",
+    "3 falls, some on standing, ONE HEAD STRIKE NEEDING HOSPITAL. NUMBNESS IN BOTH LEGS · A FULL BOTTLE OF WINE NIGHTLY · LIVES ALONE, FAMILY FAR AWAY, ONE MEAL A DAY. Card: SENSORY LOSS BOTH LEGS, sometimes LOSS OF PROPRIOCEPTION; BGL normal; NO postural drop"
+   ],
+   [
+    "VERSION B — medications",
+    "Numbness in legs · THIAZIDE PLUS A SARTAN · major depression, TAKING TEMAZEPAM FOR SLEEP. Card: NORMAL POSTURAL BP, NORMAL SENSATION, NORMAL LOWER LIMBS. The 2024 tweak swaps in CLONIDINE and AMITRIPTYLINE — IDENTICAL REASONING, both cause SEDATION AND POSTURAL HYPOTENSION"
+   ],
+   [
+    "VERSION D — TIA, the one you must not reassure",
+    "77 M, 3 falls. NO loss of consciousness. BLURRING OF VISION BEFORE AND AFTER THE GARDEN FALL · no chest pain, no sweating, felt cold. Card: EVERYTHING NORMAL. LEAD WITH TIA; add a CARDIAC CAUSE for the fall on exertion"
+   ],
+   [
+    "VERSION E — PMR, plus one investigation",
+    "66 F, 4 falls. THIAZIDE · PMR DIAGNOSED 6 MONTHS AGO, ON STEROIDS · NOCTURIA · no current shoulder or hip pain. Card: NO postural drop; CVS, MSK and neuro normal; GLYCOSURIA ON DIPSTICK. Investigation: HbA1c or fasting BGL"
+   ],
+   [
+    "'EVERYTHING IS NORMAL, DOCTOR' — the examiner's trap",
+    "CANDIDATES GO SILENT. A NORMAL EXAMINATION DOES NOT DELETE A SYMPTOM. Explain the history findings as reasons anyway — 'although the sensation in your legs TESTED normally, THE FACT THAT YOU FEEL NUMBNESS IN THEM IS ITSELF SOMETHING THAT MAKES FALLS MORE LIKELY'"
+   ],
+   [
+    "THE FOURTH, INVISIBLE CAUSE in Version C",
+    "'And the fourth thing is SIMPLY THE SITUATION. You're WAKING FROM SLEEP, IT'S DARK, YOU'RE STILL DROWSY, AND YOU'RE HURRYING BECAUSE YOU CAN'T HOLD ON. That combination causes a lot of falls on its own, AND IT'S THE EASIEST ONE TO FIX'"
+   ],
+   [
+    "Two answers that must be chased, not recorded",
+    "'A BOTTLE OF WINE EVERY NIGHT' → QUANTIFY IN STANDARD DRINKS — a 750 mL bottle is 7–8 — then CAGE, and LINK IT TO THE NEUROPATHY, CEREBELLUM, SEDATION AND NUTRITION. 'I TAKE A SLEEPING TABLET' → NAME THE DRUG, DOSE AND DURATION, and say it is a fall risk"
+   ],
+   [
+    "ADDED — two questions worth thirty seconds",
+    "DELIRIUM SCREEN in any acute presentation: 'HAS ANYONE SAID YOU'VE BEEN MORE MUDDLED OR DROWSY THAN USUAL IN THE LAST FEW DAYS?' ELDER ABUSE SCREEN where isolation or neglect appears: 'DO YOU FEEL SAFE AT HOME? IS ANYONE MANAGING YOUR MONEY OR MEDICINES FOR YOU?'"
+   ]
+  ],
+  "findingsLabel": "Five recalls, one stem — the findings change, the structure does not",
+  "must": [
+   "FAIL — Never asking about loss of consciousness. Second question of the station, every time.",
+   "FAIL — Never asking about injury, so the head strike or the anticoagulant is missed.",
+   "FAIL — Missing the TIA: transient visual blurring filed as 'dizziness' and the patient reassured.",
+   "FAIL — Unquantified alcohol. 'Do you drink?' — 'Yes' — and you move on.",
+   "ASK — Did you hurt yourself? Were you on the floor a while?",
+   "ASK — How much do you drink, and how often?"
+  ],
   "back": {
-   "dx": "Multifactorial acute falls — FOUR causes, numbered: (1) symptomatic UTI (48 h frequency, urgency, nocturia, dysuria; suprapubic tenderness; nitrites + leucocytes) — the reason he is rushing at night; (2) postural hypotension 120/80 → 94/60 (26 systolic), likely from reduced intake + infection, no meds; (3) hypoglycaemia border — capillary glucose exactly 4.0 after skipping dinner ('cooking for one's a nuisance, I go to bed early'); (4) the situation — woken from sleep, drowsy, dark hallway, toilet at the far end, hurrying because he can't hold on. Nothing points to stroke: never blacked out, awake the whole way down, speech/vision/strength/sensation normal. Hidden agenda: brother's stroke at 68 — if never asked he interrupts the explanation with 'is this a stroke?'. Naming only the UTI is the single commonest fail.",
+   "dx": [
+    "**MULTIFACTORIAL RECURRENT FALLS. RECURRENT means TWO OR MORE FALLS IN 12 MONTHS.** **A FALL is unintentionally coming to rest on the ground, NOT caused by an overwhelming external force or a major intrinsic event.** **A FALL WITHOUT LOSS OF CONSCIOUSNESS IS NOT SYNCOPE — ESTABLISH THIS IN THE FIRST MINUTE.**",
+    "**THE DISCRIMINATING ISSUE: NAMING EVERY CONTRIBUTING CAUSE — INCLUDING THE ONES THE EXAMINATION DID NOT CONFIRM — AND NEVER COLLAPSING THE CASE INTO A SINGLE LABEL.**",
+    "**CANDIDATES FAIL IN TWO WAYS. They ANCHOR ON THE RECALL THEY MEMORISED AND STOP LOOKING, or they GO QUIET WHEN THE EXAMINER SAYS 'EXAMINATION IS NORMAL', BECAUSE THEY HAVE NOTHING LEFT TO SAY.**",
+    "**THE PASS IS A NUMBERED LIST OF PLAUSIBLE REASONS, EACH ANCHORED TO SOMETHING THE PATIENT ACTUALLY TOLD YOU, delivered warmly and in plain English.**",
+    "**THE FRAME, USED IN EVERY VERSION: 'falls at your age ALMOST NEVER HAVE ONE SINGLE CAUSE — they're usually SEVERAL SMALL THINGS STACKING UP, and that's actually GOOD NEWS, BECAUSE EACH ONE WE CAN DO SOMETHING ABOUT. I'VE FOUND FOUR THINGS IN YOUR CASE. Let me take them one at a time.'**",
+    "**THEN FOR EACH CAUSE, THE SAME THREE-PART MOVE: NAME IT IN PLAIN ENGLISH — 'you have an infection in your water' · GIVE THE MEDICAL NAME ONCE — 'we call this a urinary tract infection' · LINK IT TO THE FALLS — 'and that's why you've been rushing to the toilet at night, WHICH IS WHEN YOU FELL.' Then PAUSE: 'does that make sense so far?'**",
+    "**POSTURAL HYPOTENSION WITH A NORMAL TEST STILL GETS NAMED — BUT SAY WHY, DO NOT JUST ASSERT IT: 'your blood pressure was steady when we checked TODAY, but you're on two tablets that can lower it, and THAT DROP DOESN'T HAPPEN EVERY TIME — it can happen at home when you get up quickly.' A SYSTOLIC DROP UNDER 20 mmHg MAKES IT LESS LIKELY BUT DOES NOT EXCLUDE IT — IT IS INTERMITTENT.**",
+    "**ALCOHOL HITS THREE SYSTEMS, NOT ONE: NERVES — alcoholic sensory neuropathy · CEREBELLUM — alcoholic cerebellar degeneration, VERMIS, SO GAIT IS AFFECTED MORE THAN LIMBS · NUTRITION — and the sedation on top. Say all of them, WITHOUT SHAMING.** **NHMRC: NO MORE THAN 10 STANDARD DRINKS A WEEK AND 4 IN ANY ONE DAY.**",
+    "**SOURCE CORRECTION — the source says tricyclics are no longer used in Australia and mirtazapine is used instead. THAT OVERSTATES IT. AUSTRALIAN FIRST-LINE IS AN SSRI; MIRTAZAPINE IS CHOSEN WHEN SEDATION OR APPETITE STIMULATION IS WANTED; TRICYCLICS ARE STILL USED, MOSTLY FOR NEUROPATHIC PAIN AND MIGRAINE PROPHYLAXIS.** Say: **'AMITRIPTYLINE IS BEST AVOIDED IN AN OLDER PERSON AT RISK OF FALLS; I'd review the indication with her GP or psychiatrist RATHER THAN STOP IT ABRUPTLY.'**",
+    "**The storyline that holds every risk factor: the older man with PROSTATE ENLARGEMENT who gets up FOUR TIMES A NIGHT, has the TOILET DOWNSTAIRS, POOR LIGHTING, A DOG UNDERFOOT, OSTEOARTHRITIC KNEES, weakness and NUMBNESS IN THE LEGS after a stroke, believes wine is good for the heart so has THREE GLASSES EACH EVENING, and takes A TABLET TO SLEEP. RUN THAT PICTURE AND YOU WILL NEVER LEAVE A DOMAIN OUT.**"
+   ],
    "plan": [
     [
      "0:00",
-     "'I can see your observations are stable, so I'll take a history' · WIPE, name · 'tell me what's been happening' · 'that sounds frightening, I'm glad you came in' · ★ 'Falls at your age almost always have a reason, and usually more than one … some questions won't seem related — that's deliberate' · ★ 'anything in particular you were worried this might be?' → brother's stroke → promise a straight answer at the end"
+     "**Say the vitals out loud — 'I can see the observations are stable, so I'll take a history.'** Then **WIPE and the open question.** Then **acknowledge: 'that sounds frightening, and I'm glad you came in — FALLS IN SOMEONE YOUR AGE ALWAYS HAVE A REASON AND USUALLY MORE THAN ONE.'**"
+    ],
+    [
+     "0:25",
+     "**SIGNPOST SO HE TOLERATES A LONG LIST: 'I'm going to ask a fairly long list of questions, SOME OF WHICH WON'T SEEM RELATED TO FALLING. THAT'S DELIBERATE — falls usually come from SEVERAL SMALL THINGS ADDING UP.'** Then **the agenda: 'was there anything in particular you were worried this might be?'**"
     ],
     [
      "0:45",
-     "★ 'When you went down, did you black out or lose consciousness, even for a second?' · 'remember hitting the floor?' · 'shook or jerked, bit your tongue, wet yourself?' → awake the whole way down ('my legs just went')"
+     "**FALL OR FAINT: when you fall, DO YOU EVER BLACK OUT OR LOSE CONSCIOUSNESS, EVEN FOR A SECOND · has anyone seen you SHAKE OR JERK · do you ever BITE YOUR TONGUE OR WET YOURSELF · DO YOU REMEMBER HITTING THE GROUND?**"
     ],
     [
-     "1:15",
-     "How many, since when ('just the two, never before in my life' → acute) · 'talk me through each one — what were you doing?' (out of bed, hurrying to the toilet) · warning: light-headed, spinning, racing, chest tightness → 'a bit swimmy standing' · ★ 'did you hurt yourself?' (bruised hip) · ★ 'could you get yourself up, or were you on the floor a while?'"
+     "1:10",
+     "**CHARACTERISE: HOW MANY FALLS, AND WHEN DID THEY START · TELL ME ABOUT EACH ONE, what were you doing · DID ANY HAPPEN JUST AS YOU STOOD UP · any WARNING — dizziness, light-headedness, spinning, palpitations · DID YOU INJURE YOURSELF IN ANY OF THEM · COULD YOU GET YOURSELF UP, OR WERE YOU ON THE FLOOR A WHILE?**"
     ],
     [
-     "2:00",
-     "Organic screen, closed and fast: numbness/pins and needles, weakness, slurred speech, vision, headache, spinning · chest pain, palpitations, SOB · vomiting/diarrhoea, black or bloody motions · ★ 'are you eating regularly, or skipping meals?' → skipping tea → flag it, come back to it"
+     "1:50",
+     "**ORGANIC SCREEN, rapid yes/no. CNS: numbness or PINS AND NEEDLES in your legs · weakness · SLURRED SPEECH · TROUBLE WITH YOUR VISION · headache · any SPINNING sensation. CVS: chest pain · palpitations · short of breath or WORSE ON EXERTION.**"
     ],
     [
-     "2:45",
-     "PMHx ×4: conditions and who follows them · operations/admissions · ★ medicines including anything for sleep, pain or over the counter · allergies → all nil (bank the time for the risk screen)"
+     "2:20",
+     "**GI: vomiting or diarrhoea · BLACK STOOLS OR BLOOD. MEALS: ARE YOU EATING REGULARLY, OR SKIPPING MEALS?**"
     ],
     [
-     "3:15",
-     "★ Six domains, same order every time: HOME — rugs, cords, steps, night lighting, toilet distance · URINARY — 'you mentioned rushing: more often, more urgently? up at night? burning? blood?' → 2 d of frequency/urgency/nocturia 3–4, stinging, no blood · ★ 'fever, shivers, pain in your tummy or your back?' → none · MSK — joints, balance, feet, indoor footwear (old slippers) · EYES/EARS last checked · ALCOHOL — how much, how often (one beer Sunday), smoking (quit 40s), drugs"
+     "2:35",
+     "**PAST HISTORY, THE FOUR QUESTIONS for each condition: WHEN WERE YOU DIAGNOSED · WHAT TREATMENT · ARE YOU TAKING IT AS PRESCRIBED · REGULAR FOLLOW-UP?** Then **the complications that matter: hypertension → blurred vision, chest pain, stroke symptoms; PMR → hip and shoulder stiffness, HEADACHE AND VISUAL LOSS for giant cell arteritis; depression → mood, sleep, and a safe suicide-risk question.**"
+    ],
+    [
+     "3:10",
+     "**THE SIX RISK DOMAINS, ALWAYS IN THE SAME ORDER SO YOU NEVER DROP ONE. HOME: any RUGS, CORDS, STEPS, POOR LIGHTING, PETS · WHERE'S THE TOILET AT NIGHT? URINARY: do you need to RUSH to the toilet · passing urine more often, OR AT NIGHT · any BURNING · any leaking?**"
+    ],
+    [
+     "3:35",
+     "**MSK: any joint pain, stiffness, or problems with BALANCE OR YOUR FEET · WHAT SHOES DO YOU WEAR INDOORS? SENSES: when were your EYES AND HEARING last checked · BIFOCALS?**"
+    ],
+    [
+     "3:55",
+     "**DRUGS: everything you take, INCLUDING ANYTHING FOR SLEEP OR FROM THE CHEMIST. ALCOHOL: do you drink — HOW MUCH AND HOW OFTEN?**"
     ],
     [
      "4:15",
-     "Geriatric/social: who's at home (alone since Marg died; daughter Adelaide) · ADLs · memory · mood (bit flat) · weight loss · driving (in town) · ★ 'have the falls made you afraid to move about?' → 'nervous getting up in the dark'"
+     "**GERIATRIC AND SOCIAL SCREEN, where Version A is won: WHO'S AT HOME WITH YOU · who helps if you need it · DESCRIBE A TYPICAL DAY'S MEALS · can you shower, dress, shop, cook and manage your money and medicines · ANY MEMORY TROUBLE · how has your MOOD been · any WEIGHT LOSS · ARE YOU STILL DRIVING · HAVE YOU BECOME AFRAID OF FALLING AND STOPPED DOING THINGS?**"
+    ],
+    [
+     "4:45",
+     "**SADMA and a brief family history of stroke, cardiac disease and osteoporosis.** Then **the two added screens where they fit: DELIRIUM in an acute case, ELDER ABUSE where isolation or neglect appears.**"
     ],
     [
      "5:00",
-     "★ PEFE: appearance/hydration/bruising · gait + Timed Up and Go · ★ lying and standing BP at 1 and 3 min, pulse rhythm · ★ bedside glucose · LL neuro incl vibration/proprioception, Romberg, heel–shin · acuity, fundoscopy · CVS (aortic stenosis murmur), resp · LL MSK, feet, footwear · ★ abdomen for suprapubic tenderness/palpable bladder · ★ urine dipstick → 'a postural drop of 26, a glucose right on 4, and a symptomatic UTI'"
+     "**ASK THE EXAMINER IN THIS ORDER: general appearance — hydration, BRUISING OR SIGNS OF INJURY · GAIT, and a TIMED UP AND GO · vitals, and SPECIFICALLY THE LYING AND STANDING BP AT ONE AND THREE MINUTES, and the PULSE RHYTHM · A BEDSIDE BLOOD GLUCOSE.**"
+    ],
+    [
+     "5:40",
+     "**Then LOWER LIMB NEUROLOGY — tone, power, reflexes, SENSATION INCLUDING VIBRATION AND PROPRIOCEPTION, plus CEREBELLAR SIGNS: ROMBERG, HEEL–SHIN AND TANDEM WALKING · FUNDOSCOPY AND VISUAL ACUITY · cardiovascular for MURMURS, PARTICULARLY AORTIC STENOSIS · lower limb MSK with FOOTWEAR · ABDOMEN FOR SUPRAPUBIC TENDERNESS AND RETENTION, and a URINE DIPSTICK · is there a COGNITIVE SCREEN available?**"
     ],
     [
      "6:30",
-     "★ 'Falls at your age almost never come from one single thing — several small things stack up, and that's good news because each one is fixable. I've found four.' Number them, tie each to something he said · ★ answer the brother: 'nothing you've told me and nothing I've found points to a stroke — and here's why' · DDx still being checked: rhythm (ECG today), leg nerves (diabetes, B12), sodium, anaemia, home hazards · plan: MSU + antibiotic today (symptomatic, not asymptomatic bacteriuria), fluids, ECG, bloods · ★ tonight: night light, bottle/urinal by the bed, count to ten on the edge of the bed, eat something · OT home visit, My Aged Care meals · review 48 h · red flags · ★ 'tell me back the two things you'll change tonight'"
+     "**THE NUMBERED-REASONS SCRIPT: the frame, then each cause with plain English, the medical name once, and the link to the falls — pausing to check understanding.**"
+    ],
+    [
+     "7:30",
+     "**THE DIFFERENTIALS YOU ARE KEEPING IN MIND: a drop in blood pressure on standing, heart rhythm problems, the nerves in the legs, the balance centre, low salt levels, and anything at home that's easy to trip on.** Then **SAFETY-NET, REVIEW INTERVAL, AND WHO TO CALL — plus ONE SENTENCE EACH on BONE HEALTH AND DRIVING.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "'Falls at your age almost always have a reason, and usually more than one, so I'm going to ask a fairly long list of questions — some won't seem related to falling, but that's deliberate.' / 'Was there anything in particular you were worried this might be?'",
-    "★ 'When you went down, did you black out or lose consciousness, even for a second? Do you remember hitting the floor? Has anyone told you that you shook or jerked, or did you bite your tongue or wet yourself?'",
-    "'Talk me through each one — what were you doing at the time? Any warning beforehand — light-headed, spinning, heart racing, chest tightness?' / ★ 'Did you hurt yourself? Could you get yourself up, or were you on the floor for a while?'",
-    "★ 'Are you eating regularly, or skipping meals?' / 'Any medicines at all, including anything for sleep, for pain, or anything you buy over the counter?'",
-    "'You mentioned rushing. Are you passing urine more often, or more urgently? Getting up at night? Any burning or stinging? Any blood?' / ★ 'Any fever, shivers, or pain in your tummy or your back?' / 'Do you drink alcohol — how much, and how often?'",
-    "'Who's at home with you, and who helps if you need a hand?' / 'Have the falls made you afraid to move about?'",
-    "★ To examiner: 'the lying and standing blood pressure at one and three minutes, the pulse rhythm, a bedside blood glucose … an abdominal examination for suprapubic tenderness or a palpable bladder, and a urine dipstick.'",
-    "★ 'Falls at your age almost never come from one single thing — they're usually several small things stacking up, and that's actually good news, because each one is something we can do something about. I've found four in your case.' / 'Sitting it was 120 over 80; standing it fell to 94 over 60 — we call it postural hypotension.' / 'Your sugar today was exactly 4, right on the line we call low; overnight without dinner it can drop further.'",
-    "★ 'You mentioned your brother's stroke, and I want to answer that directly. Nothing you've told me and nothing I've found points to a stroke — you never blacked out, your speech, vision, strength and sensation are all normal.' / examiner challenge: 'it would be asymptomatic bacteriuria if he had no symptoms, and I wouldn't treat that — he has new frequency, urgency, dysuria and suprapubic tenderness over 48 hours, so this is a symptomatic infection and I'd treat it while awaiting culture.'",
-    "★ 'A night light in the hallway, a bottle by the bed so you're not making that trip in the dark, and when you get up, sit on the edge of the bed and count to ten before you stand. And please eat something at night.' / 'I want to see you in 48 hours. Come back sooner, or go to the hospital, if you get a fever or shivers, pain in your back or tummy, blood in the urine, if you become confused or drowsy, if you fall again, or if you hit your head or can't get up.' / ★ 'Can you tell me back the two things you'll change tonight?'"
-   ],
    "pefe": [
-    "Role-player: John, 70, retired farmhand, alone in a single-storey house since Marg died 3 y ago; daughter rings Sundays; independent, drives in town; proud, minimising ('I'm alright'); no meds, no PMHx; one beer Sunday; quit smoking 40s. Urinary symptoms given fully but ONLY when asked about waterworks or what he was doing — if never asked, volunteers at ~6 min 'is it normal to be up four times a night?'. Skipped meals only under a direct meals question. Pushes once: 'can't you just give me something for it?'. 'Sorry doctor, what does that mean?' once on jargon",
-    "PEFE: well, hydrated, gait normal · ★ 120/80 sitting → 94/60 standing · 82 reg · ★ capillary glucose 4.0 · LL neuro normal incl proprioception · CVS/resp/MSK normal · ★ suprapubic tenderness · ★ dipstick nitrites + leucocytes. Postural hypotension ≥20 systolic or ≥10 diastolic within 3 min; adult hypoglycaemia <4.0; TUG >12 s abnormal",
-    "Versions A (alcohol, 70 M), B/B2 (medications), D (TIA, 77 M) and E (PMR on steroids) share this spine and are separate cards (MED-103–106). Same stem, different answers → the six-domain screen finds the causes; the numbered multifactorial explanation is the discriminator in all of them",
-    "Treatment: trimethoprim 300 mg nocte 3 d in women / longer in men VERIFY TG · MSU before antibiotic · fluids · 15 g fast carbohydrate then recheck if <4 · staged rising, recheck postural BP at review · OT home assessment · My Aged Care 1800 200 422 · a dipstick alone never diagnoses UTI in an older person — say 'he is symptomatic'",
-    "Examiner challenge 'why treat postural hypotension on no medications?' → 'because it is demonstrated on today's measurement and in his case likely from reduced intake and the infection — treat the reversible causes, teach staged rising, recheck at review'",
-    "SA: Country Health Connect / OT · My Aged Care · Motor Vehicles Act notification if unfit · MedSTAR 1300 13 12 33 if pyelonephritis/sepsis from a rural site"
+    "**WHY THE ORDER SCORES: global, then THE TWO BEDSIDE TESTS THAT MOST OFTEN EXPLAIN A FALL — POSTURAL BP AND GLUCOSE — then the system your history flagged, then everything else. NAMING PROPRIOCEPTION, ROMBERG AND TIMED UP AND GO MARKS YOU AS SOMEONE WHO HAS ASSESSED FALLS BEFORE.**",
+    "**What the findings mean: SYSTOLIC DROP 20 OR DIASTOLIC 10 WITHIN 3 MINUTES = postural hypotension · DISTAL SENSORY LOSS WITH ABSENT ANKLE JERKS = peripheral neuropathy · LOSS OF PROPRIOCEPTION WITH A POSITIVE ROMBERG = SENSORY ATAXIA, CHECK B12 · WIDE-BASED GAIT WITH HEEL–SHIN DYSMETRIA = cerebellar · BGL 4.0 OR BELOW = hypoglycaemia, FOUR IS THE FLOOR · TIMED UP AND GO OVER 12 SECONDS = impaired mobility · SHORTENED EXTERNALLY ROTATED LEG = FRACTURED NECK OF FEMUR UNTIL PROVEN OTHERWISE.**",
+    "**Do now: BEDSIDE GLUCOSE — if below 4.0 and conscious, 15 g FAST CARBOHYDRATE, RECHECK AT 15 MINUTES, then a long-acting carbohydrate. IN A HEAVY DRINKER GIVE THIAMINE BEFORE GLUCOSE · lying and standing BP at 1 and 3 minutes · AN ECG IN EVERY FALLS PATIENT · urine dipstick, and MCS BEFORE ANTIBIOTICS if symptomatic · INJURY SURVEY — head, hips, wrists, skin, with CT HEAD if head strike plus anticoagulation · medication review on the spot.**",
+    "**Do next: FBE, UEC, CALCIUM, MAGNESIUM, PHOSPHATE, LFTs, TSH · FASTING BGL AND HbA1c — the answer to Version E's 'one investigation' · VITAMIN B12 AND FOLATE, vitamin D · urine MCS · Holter or echo if a murmur or exertional symptoms · CT BRAIN for focal signs, head injury or cognitive change, and CAROTID IMAGING IF TIA · DXA — A FALLER WITH OSTEOPOROSIS IS A HIP FRACTURE WAITING TO HAPPEN · formal visual acuity and a cognitive screen, RUDAS where English is a second language or in Aboriginal and Torres Strait Islander patients.**",
+    "**The multidomain plan: HOME MEDICINES REVIEW, taper and cease the benzodiazepine, NEVER STOP CLONIDINE ABRUPTLY because of rebound hypertension · alcohol BRIEF INTERVENTION with THIAMINE 100 mg DAILY and Drug and Alcohol Services SA · symptomatic UTI per Therapeutic Guidelines, TRIMETHOPRIM 300 mg NOCTE, 3 DAYS IN WOMEN, LONGER IN MEN · BALANCE-CHALLENGING EXERCISE, THE SINGLE BEST-EVIDENCED INTERVENTION · OT HOME HAZARD ASSESSMENT with a NIGHT LIGHT ON THE PATH TO THE TOILET and a BEDSIDE URINAL · optometry, and AVOID BIFOCALS ON STAIRS · calcium, vitamin D and antiresorptive therapy if osteoporotic · MY AGED CARE 1800 200 422.** VERIFY doses and UTI duration.",
+    "**Do not miss: CARDIAC SYNCOPE, so GET AN ECG · TIA, same-day pathway · SUBDURAL AFTER A HEAD STRIKE · OCCULT HIP OR WRIST FRACTURE · SEPSIS AND DELIRIUM · HYPOGLYCAEMIA · ELDER ABUSE OR NEGLECT · OSTEOPOROSIS, because THE FALLS PLAN IS ONLY HALF THE JOB.**",
+    "**Avoid: reassuring without a plan · TREATING ASYMPTOMATIC BACTERIURIA · adding a sedative for 'better sleep' · stopping antihypertensives without a review plan · LABELLING EVERYTHING 'OLD AGE' · discharging without addressing BONE HEALTH AND DRIVING.** **SA and the NT are the jurisdictions where the doctor has a LEGAL DUTY TO REPORT an unfit driver. After a TIA, NO PRIVATE DRIVING FOR AT LEAST 2 WEEKS, 4 WEEKS COMMERCIAL. TELL THE PATIENT BEFORE YOU REPORT.**"
    ],
-   "fails": [
-    "★ Never establishing loss of consciousness — the fork of the whole differential tree, listened for in the first 90 seconds",
-    "★ Not asking about injury or a long lie on the floor",
-    "Naming ONE cause ('it's a urine infection') — the commonest fail; causes must be numbered and each tied to something he said",
-    "Forgetting fever and flank pain — the questions that exclude pyelonephritis; accepting 'do you drink?' without quantifying",
-    "Rattling the organic screen so fast you miss 'skipping tea'; cutting the social screen (fear of falling, driving, meals in context)",
-    "PEFE shopping list without lying/standing BP at 1 and 3 min, glucose, abdomen and dipstick — no dipstick, no diagnosis",
-    "Ending at the diagnosis: no antibiotic, ECG, home modification, review date or red flags = fail with the right diagnosis; reassuring before anything is excluded; never answering the brother by name; still in the history at 5:00"
-   ],
-   "numbers": [
-    "Recurrent falls ≥2 in 12 months · postural drop ≥20 / ≥10 mmHg within 3 min · John 120/80 → 94/60 = 26 systolic · adult hypoglycaemia <4.0 (his 4.0) · 15 g fast carbohydrate / 15 min",
-    "TUG >12 s abnormal · NHMRC alcohol ≤10/week, ≤4/day · 7–8 standard drinks in a bottle of wine · thiamine 100 mg daily before glucose in a heavy drinker",
-    "Trimethoprim 300 mg nocte, 3 d women / longer men VERIFY TG · review 48 h · My Aged Care 1800 200 422",
-    "Aspirin 300 mg stat after suspected TIA unless contraindicated · no private driving ≥2 wk (4 wk commercial) after TIA VERIFY Austroads",
-    "History 4½ · PEFE 1½ · explanation 2 · four causes, never one · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Postural hypotension**",
+     "**Falls ON STANDING or getting out of bed; ANTIHYPERTENSIVES, DIURETICS, TCAs, CLONIDINE; dehydration**",
+     "Light-headed on rising; **lying and standing BP at 1 AND 3 MINUTES**",
+     "**A drop under 20 mmHg makes it LESS likely BUT DOES NOT EXCLUDE IT — IT IS INTERMITTENT.** Review drugs and hydration — same day"
+    ],
+    [
+     "**Medication effect**",
+     "**BENZODIAZEPINE, TCA, antipsychotic, opioid, RECENT DOSE CHANGE, polypharmacy**",
+     "**Daytime drowsiness; FULL DRUG LIST INCLUDING OVER THE COUNTER**",
+     "**Home Medicines Review, deprescribe, taper — NEVER STOP CLONIDINE ABRUPTLY** — same day"
+    ],
+    [
+     "**Peripheral neuropathy**",
+     "**NUMBNESS OR PINS AND NEEDLES IN BOTH LEGS; alcohol, diabetes, B12 deficiency**",
+     "**GLOVE-AND-STOCKING loss, ABSENT ANKLE JERKS, impaired VIBRATION AND PROPRIOCEPTION, POSITIVE ROMBERG**",
+     "BGL and HbA1c, **B12 AND FOLATE**, LFTs, TFT. Treat the cause; podiatry and a gait aid"
+    ],
+    [
+     "**Alcohol-related — three mechanisms**",
+     "**HEAVY NIGHTLY INTAKE; sedation; POOR NUTRITION; NEUROPATHY PLUS ATAXIA**",
+     "**QUANTIFIED intake, CAGE, WIDE-BASED GAIT, HEEL–SHIN DYSMETRIA**",
+     "**Brief intervention, THIAMINE BEFORE GLUCOSE, dietitian, planned withdrawal** — same day"
+    ],
+    [
+     "**Hypoglycaemia**",
+     "**SKIPPED OR SINGLE DAILY MEAL; sulfonylurea or insulin; alcohol; sweating, tremor, confusion**",
+     "**Bedside BGL — BELOW 4.0 IS DIAGNOSTIC**",
+     "**A NORMAL BGL NOW DOES NOT EXCLUDE AN EPISODE.** Meal support; review diabetes drugs — IMMEDIATE"
+    ],
+    [
+     "**Urinary tract infection**",
+     "**ACUTE ONSET OVER DAYS; frequency, urgency, NOCTURIA, dysuria; CONFUSION; FALLS RUSHING TO THE TOILET**",
+     "**SUPRAPUBIC TENDERNESS, NITRITES AND LEUCOCYTES**; fever and flank pain suggest pyelonephritis",
+     "**Urine MCS BEFORE antibiotics. Treat SYMPTOMATIC infection; DO NOT TREAT ASYMPTOMATIC BACTERIURIA** — IMMEDIATE"
+    ],
+    [
+     "**TIA or stroke**",
+     "**TRANSIENT VISUAL BLURRING OR LOSS, weakness, slurred speech, facial droop — RESOLVING COMPLETELY**",
+     "**FAST, visual fields, carotid bruit, AF, BP**",
+     "**URGENT SAME-DAY assessment, CT/CTA brain, carotid imaging, ECG, ASPIRIN 300 mg STAT unless contraindicated** — EMERGENCY"
+    ],
+    [
+     "**Cardiac syncope**",
+     "**FALL ON EXERTION, NO WARNING, palpitations, chest pain, FAMILY HISTORY OF SUDDEN DEATH**",
+     "**Murmur of AORTIC STENOSIS, irregular pulse, abnormal ECG**",
+     "**ECG IN EVERY FALLS PATIENT; Holter, echocardiogram, cardiology** — EMERGENCY"
+    ],
+    [
+     "**Subdural haematoma**",
+     "**PREVIOUS HEAD STRIKE, ANTICOAGULANT, progressive headache, drowsiness, COGNITIVE CHANGE**",
+     "Focal signs, reduced GCS, **GAIT DETERIORATION**",
+     "**NON-CONTRAST CT HEAD — LOW THRESHOLD IN THE ELDERLY** — EMERGENCY"
+    ],
+    [
+     "Vestibular or BPPV · MSK and environmental · anaemia, electrolytes, dehydration",
+     "Room-spinning on head turning; or **trips, joint pain, POOR FOOTWEAR, RUGS, CORDS, POOR LIGHTING, PETS**; or black stools, poor intake, diuretics",
+     "Dix–Hallpike; **gait, TIMED UP AND GO, PMR HIP AND SHOULDER STIFFNESS**; pallor, dry mucosae",
+     "Epley. **OT home hazard assessment, physiotherapy balance program, podiatry.** FBE, UEC, calcium, magnesium — **THIAZIDES CAUSE HYPONATRAEMIA**"
+    ]
    ]
   },
   "source": "Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf (John Halloran, 70, two falls in two nights rushing to the toilet — UTI, postural drop, glucose 4.0, dark hallway)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Falls, Dizzy,BPPV › Recurrent_Falls_Older_Person_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "General",
-    "Well, hydrated, gait normal"
-   ],
-   [
-    "Postural blood pressure",
-    "120/80 SITTING → 94/60 STANDING — a drop of 26 systolic (positive: 20 systolic or 10 diastolic within 3 minutes)"
-   ],
-   [
-    "Pulse",
-    "82, regular"
-   ],
-   [
-    "Capillary glucose",
-    "4.0 — the adult hypoglycaemia threshold is under 4.0"
-   ],
-   [
-    "Lower limb neurology",
-    "Normal, INCLUDING proprioception"
-   ],
-   [
-    "Cardiovascular, respiratory, musculoskeletal",
-    "Normal"
-   ],
-   [
-    "Abdomen",
-    "Suprapubic tenderness"
-   ],
-   [
-    "Urine dipstick",
-    "Nitrites and leucocytes positive"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Never establishing loss of consciousness — an automatic fail; it divides the whole differential tree and the examiner listens for it in the first ninety seconds: 'when you went down, did you black out or lose consciousness, even for a second? do you remember hitting the floor? any shaking, tongue-biting, wetting yourself?' (★)",
-   "FAIL — Naming only the urinary tract infection — one tidy label is the single commonest reason candidates fail this station; 'falls at your age almost never come from one thing'; number four causes and tie each to something he said: the UTI (new frequency, urgency, rushing), the postural drop (120/80 → 94/60, 'the swimmy feeling'), the glucose of exactly 4 from skipping tea, and the situation (dark hallway, drowsy, hurrying); and say he is symptomatic, which is why a dipstick justifies treatment in an older man",
-   "FAIL — Not asking about injury or a long lie on the floor — 'did you hurt yourself? could you get yourself up, or were you on the floor for a while?' (★)",
-   "FAIL — Rattling through the organic screen and missing the skipped evening meal — it comes out only under a direct question about eating or meals, and it is the second of the four causes; and forgetting fever and flank pain in the urinary block — they are how you exclude pyelonephritis; quantify alcohol, don't accept 'yes'",
-   "FAIL — A shopping-list examination without the two bedside tests that most often explain a fall — lying and standing BP at one and three minutes, and a glucose; plus the abdomen for suprapubic tenderness and a urine dipstick — without them the case has no diagnosis",
-   "DO — Ask his concern before the history (his brother's stroke) and answer it by name in Task 3 ('nothing you've told me and nothing I've found points to a stroke — you never blacked out, speech, vision, strength and sensation are normal'), keeping differentials in play (rhythm → ECG today, neuropathy, B12, sodium, anaemia); register 'rushing to the toilet' but keep the structure; the six risk domains and the social screen (lives alone since Marg died, fear of the dark hallway, driving); management tonight — antibiotic, fluids, night light, bottle by the bed, count to ten sitting, eat at night, OT, My Aged Care, 48-hour review, red flags, teach-back; if the history isn't done at five minutes, stop and move — a beautiful history with no explanation fails"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-103",
