@@ -25091,9 +25091,8 @@
  {
   "id": "MED-96",
   "cat": "med",
+  "v2": true,
   "promptBell": true,
-  "promptAt": 360,
-  "setting": "Emergency Department. Examination findings on a card after the history (~6 minutes): BP normal, ★ pulse 42 regular, T 36.5, CVS normal, neuro normal, BSL normal. Vitals may be deferred by the examiner to the card.",
   "stem": [
    "Gary, 52, has presented after two episodes of falls. He is concerned about the reason for these falls."
   ],
@@ -25102,104 +25101,215 @@
    "Examination findings will be provided on screen or on a card",
    "Explain your diagnosis and differential diagnoses to the patient"
   ],
-  "time": "8 minutes, ~6 history. Vitals · WIPE · ★ name and answer his concern ('what if nobody's there?') · ★ reconfirm LOC despite the stem · witnessed · ★ seizure screen ×3 · duration, not first time, ★ 'describe each episode' (episode 2: seated on the couch, a thump in the chest, then out) · environment ×4 anyway · BEFORE ×4 — ★ no warning · AFTER ×3 (pale after the first — non-specific) · signpost → CNS → CVS: ★ palpitations → ★ 'fast or irregular? tap it out?' (he can't — the mark is asking; it's why you stay at bradyarrhythmia) → RS, GI, ★ meds/cessations (rate-slowing drugs), psychogenic last, travel/jaundice/thermal, PMHx, ★ FHx sudden death · ★ card: say '42, regular — a significant bradycardia, the key finding' aloud; ask for ECG + monitoring · ★ diagnose BRADYCARDIA, don't name a rhythm; rhythms and reversible causes as 'we don't know yet' · differentials across systems · admit, monitor, ECG, bloods, echo, cardiology · close his loop · ★ driving.",
+  "findings": [
+   [
+    "THE EXAMINATION CARD — read every line",
+    "BLOOD PRESSURE NORMAL · PULSE 42 PER MINUTE, REGULAR · TEMPERATURE 36.5 · CARDIOVASCULAR NORMAL, NO MURMURS · NEUROLOGICAL NORMAL · BLOOD SUGAR NORMAL. ONE NUMBER CARRIES THE ENTIRE STATION, and IT IS EASY TO SKIM PAST BECAUSE EVERYTHING ELSE IS REASSURINGLY NORMAL"
+   ],
+   [
+    "HIS OPENING SENTENCE CONTAINS THE CONCERN",
+    "'I've fallen twice, doctor. I'M REALLY WORRIED, BECAUSE LAST TIME MY DAUGHTER WAS THERE TO HELP ME. WHAT IF IT HAPPENS WHEN THERE'S NO ONE AROUND?' NAME IT BACK AND ANSWER IT — and CLOSE THE LOOP AT THE END. It is a SCORED COMMUNICATION ITEM"
+   ],
+   [
+    "THE QUESTION THAT UNLOCKS THE STATION",
+    "'GARY, CAN YOU PLEASE DESCRIBE EACH OF THE PREVIOUS EPISODES FOR ME?' ROLE-PLAYERS ARE BRIEFED WITH A FULL PARAGRAPH PER EPISODE and will volunteer it in detail ONCE INVITED. Candidates who ask a generic 'what happened?' GET A GENERIC ANSWER AND NEVER REACH THE THUMP"
+   ],
+   [
+    "EPISODE 1 — his account",
+    "'The first time, I WAS GETTING OUT OF BED, and I fell. MY DAUGHTER SAW IT — she said I WAS LOOKING VERY PALE.' Could be orthostatic — BUT THE PALLOR AND COMPLETE LOSS OF CONSCIOUSNESS FIT A LOW-OUTPUT EVENT EQUALLY WELL"
+   ],
+   [
+    "EPISODE 2 — THE DIAGNOSTIC SENTENCE",
+    "'I WAS SITTING ON THE COUCH. I FELT A THUMP IN MY CHEST — A BIG HEAVY BEAT — and then I had the fall.' HE WAS SEATED, SO GRAVITY IS NOT THE EXPLANATION, AND IT WAS PRECEDED BY A PALPITATION. SYNCOPE WHILE SEATED, PRECEDED BY AN ABNORMAL BEAT, IS A CONDUCTION PROBLEM UNTIL PROVEN OTHERWISE"
+   ],
+   [
+    "THE FOLLOW-UP THE CASE IS BUILT AROUND",
+    "When he says YES to racing of the heart, A 'YES' RECORDED AND MOVED PAST SCORES NOTHING. Ask: 'WAS YOUR HEART BEATING FAST, OR BEATING IRREGULARLY? COULD YOU TAP THE RHYTHM OUT ON THE DESK?' HE WILL SAY HE DOESN'T KNOW AND DECLINE TO TAP. THAT IS THE SCRIPTED ANSWER AND IT DOES NOT MATTER — THE MARK IS FOR ASKING"
+   ],
+   [
+    "'NO WARNING AT ALL'",
+    "MOST SYNCOPE ANNOUNCES ITSELF — a few seconds of dizziness, sweating, nausea or greying vision. CARDIAC SYNCOPE CHARACTERISTICALLY DOES NOT. Combined with a rate of 42, THE ABSENT PRODROME IS NOT A SMALL NEGATIVE; IT IS THE FINDING THAT MAKES THE DIAGNOSIS. AND BECAUSE NOTHING IS VOLUNTEERED, YOU ONLY GET IT IF YOU ASK"
+   ],
+   [
+    "THE FOUR FEATURES THAT MAKE IT CARDIAC",
+    "1 NO WARNING SYMPTOMS WHATSOEVER before either episode · 2 PALPITATIONS IMMEDIATELY BEFORE THE SECOND · 3 ONE EPISODE WHILE SITTING ON THE COUCH — not standing, not in heat, no trigger · 4 RESTING PULSE OF 42. ANY ONE IS A RED FLAG. ALL FOUR MAKE THIS A MONITORED BED, NOT A REASSURANCE"
+   ],
+   [
+    "Everything else negative",
+    "COMPLETE LOC, unaware of everything · witnessed BY HIS DAUGHTER BOTH TIMES · A MINUTE OR TWO each · NO jerking, tongue bite or incontinence · NOT CONFUSED AND NOT TIRED afterwards · NO injuries · no chest pain, breathlessness, cough or leg swelling · NO medications and NONE RECENTLY STOPPED · no family history of sudden death"
+   ],
+   [
+    "SAME STRUCTURE, DIFFERENT ENDING",
+    "This is the FOURTH RECALL BUILT ON ONE STRUCTURE. The previous case ended in AORTIC STENOSIS; this one ends in a BRADYARRHYTHMIA. THE CANDIDATE WHO MEMORISES RECALLS FAILS THE VERSION THEY HAVE NOT SEEN; THE CANDIDATE WHO RUNS THE STRUCTURE PASSES ALL OF THEM"
+   ]
+  ],
+  "findingsLabel": "One abnormal number on the card, and the episode description that unlocks it",
+  "must": [
+   "FAIL — Naming a rhythm you cannot see: 'you have complete heart block', from a pulse rate.",
+   "FAIL — Discharging him. 'Everything else is normal, see your GP for a tracing next week.'",
+   "FAIL — Not asking him to describe each episode, so the thump is never elicited.",
+   "FAIL — Recording 'racing heart: yes' and moving on without the fast-or-irregular follow-up.",
+   "ASK — Did you have any warning at all — did you know you were about to go down?",
+   "ASK — Do you take any medications regularly, or have you recently stopped any?"
+  ],
   "back": {
-   "dx": "Bradyarrhythmia causing cardiac syncope — pulse 42 regular; rhythm deliberately not named (sinus bradycardia, sinus node dysfunction, second/third-degree AV block, ischaemic conduction disease all compatible; if pushed: palpitations preceding syncope + resting 42 favour sinus node dysfunction with a tachy–brady pattern — but telemetry before saying so; measure the QT — pause-dependent torsades). Two witnessed blackouts (daughter), 1–2 min each, complete LOC, no jerking/tongue bite/incontinence, back to normal immediately, no injuries: episode 1 getting out of bed, looked very pale (non-specific — don't build vasovagal on it); ★ episode 2 sitting on the couch — 'a thump in my chest, one big heavy beat' — then out; ★ heart racing before the second (can't say fast vs irregular, can't tap it); ★ no warning either time. No chest pain/SOB/oedema, no meds and none stopped (drugs are the commonest reversible cause — beta blockers, verapamil, diltiazem, digoxin), no PMHx/FHx. Card: BP normal, ★ pulse 42 regular, T 36.5, CVS/neuro normal, BSL normal (hypoglycaemia excluded, <4.0 the adult threshold). To Gary: 'genuine blackouts, not trips — bradycardia, the heart beating more slowly than it should; normal 60–100, yours 42; too slow to push enough blood to the brain'; two things: no warning; a thump in the chest while seated (not standing up too quickly). Cause 'we don't know yet from a pulse alone': the natural pacemaker running slow; a block in the wiring; blood supply; medication, underactive thyroid, salt imbalance (the fixable ones) → ECG + monitoring over time. Differentials: seizure (no jerking/tongue/confusion), brain (no headache/focal/fever, normal neuro), PE (no travel/leg swelling/SOB), hypoglycaemia (excluded), vasovagal/orthostatic (no warning; seated), anxiety (no fast breathing; last resort). Plan: admit on a monitor, ECG, TSH, electrolytes, troponin, echo, cardiology; pacemaker if intrinsic. ★ Close his loop: 'you asked what happens if you're alone — that's exactly why I don't want you at home tonight; on a monitor we capture it and know what to fix'. 'Can I go home?' → no; ★ driving — not until assessed; no ladders/machinery/swimming alone.",
+   "dx": [
+    "**CARDIAC SYNCOPE SECONDARY TO A BRADYARRHYTHMIA. BRADYCARDIA IS A RESTING RATE BELOW 60. Syncope occurs because THE RATE IS TOO SLOW TO MAINTAIN CEREBRAL PERFUSION, or because of A PAUSE BETWEEN BEATS.**",
+    "**THE DISCRIMINATING ISSUE: NAME THE SYNDROME, NOT A RHYTHM YOU CANNOT SEE. Faced with syncope and a pulse of 42, the recall-memoriser reaches for a specific label. BUT YOU HAVE A PULSE RATE, NOT A RHYTHM STRIP.**",
+    "**A REGULAR RATE OF 42 IS COMPATIBLE WITH SINUS BRADYCARDIA, SECOND- OR THIRD-DEGREE AV BLOCK, SINUS NODE DISEASE, OR AN ISCHAEMIC CONDUCTION PROBLEM. EVERY ONE CAN CAUSE SYNCOPE. NOTHING IN THE HISTORY OR THE CARD LETS YOU CHOOSE — and he could not even tell you whether his palpitations were fast or irregular.**",
+    "**WHY THE SYNDROME ANSWER IS STRONGER: IT IS DEFENSIBLE FROM THE FINDINGS YOU ACTUALLY HAVE · IT STILL DEMONSTRATES YOU KNOW THE INDIVIDUAL RHYTHMS, BECAUSE YOU LIST THEM · IT NATURALLY JUSTIFIES YOUR INVESTIGATION PLAN · AND IT CANNOT BE WRONG. NAMING COMPLETE HEART BLOCK ON A PULSE RATE CAN.**",
+    "**If the examiner pushes for one answer: 'GIVEN THE PALPITATIONS PRECEDING SYNCOPE TOGETHER WITH A RESTING RATE OF 42, I'D FAVOUR SINUS NODE DYSFUNCTION WITH A TACHY-BRADY PATTERN — BUT I'D WANT THE TELEMETRY BEFORE COMMITTING.'**",
+    "**To the patient: 'you have a condition called BRADYCARDIA, which simply means YOUR HEART IS BEATING MORE SLOWLY THAN IT SHOULD. Your pulse here is 42, where a normal resting rate is 60 TO 100. When the heart beats too slowly, IT CAN'T PUSH ENOUGH BLOOD UP TO THE BRAIN — and that's why you blacked out, WITH NO WARNING, BOTH TIMES.'**",
+    "**Then the causes in plain words: 'there are several reasons a heart can beat too slowly, and WE NEED A TRACING OF YOUR HEART OVER TIME to tell which one. It could be THE HEART'S OWN NATURAL PACEMAKER RUNNING SLOW, or A BLOCK IN THE ELECTRICAL WIRING BETWEEN THE TOP AND BOTTOM OF THE HEART, or A PROBLEM WITH THE BLOOD SUPPLY TO THE HEART.'**",
+    "**CORRECTION — LONG QT IS NOT A CAUSE OF BRADYCARDIA. The source lists it beside sinus bradycardia and heart block. LONG QT CAUSES SYNCOPE THROUGH TORSADES DE POINTES, A POLYMORPHIC VENTRICULAR TACHYCARDIA — THE RATE IS FAST, NOT SLOW.** **The genuine link runs THE OTHER WAY: BRADYCARDIA AND LONG PAUSES ARE TRIGGERS FOR PAUSE-DEPENDENT TORSADES, and some congenital forms are associated with a slow resting rate.**",
+    "**Safe wording: 'the slow regular pulse points to a BRADYARRHYTHMIA — sinus node disease or AV block. I'D ALSO MEASURE THE QT INTERVAL, because the palpitations he describes RAISE THE POSSIBILITY OF AN INTERMITTENT TACHYARRHYTHMIA, and BRADYCARDIA ITSELF CAN PRECIPITATE PAUSE-DEPENDENT TORSADES IN A PROLONGED QT.'**",
+    "**VOICE THE NEGATIVES — THEY ARE THE REASONING. Almost everything here is normal, AND THAT IS THE POINT. 'No jerking, tongue bite or postictal confusion' EXCLUDES SEIZURE. 'No prodrome' EXCLUDES REFLEX SYNCOPE AND MAKES IT CARDIAC. 'No medications taken or ceased' EXCLUDES THE COMMONEST REVERSIBLE CAUSE OF BRADYCARDIA.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Vitals (may be deferred — 'he is stable at present') · WIPE · 'tell me more about the falls' → 'what if it happens when nobody's around?' → ★ 'I completely understand how concerning that must be. I'll do my best to find the cause today so we can prevent it. Is it alright if I ask some questions?'"
+     "**To the examiner: blood pressure, pulse rate, respiratory rate and temperature.** Then **WIPE and the open question: 'I can see you've been having some falls — can you tell me more about them?'**"
+    ],
+    [
+     "0:20",
+     "**DO NOT TALK OVER HIS ANSWER. When he raises the fear of being alone: 'I completely understand how frightening that must be, and it's a very reasonable thing to worry about. I'LL DO MY BEST TO FIND THE CAUSE TODAY SO THAT WE CAN PREVENT THIS HAPPENING AGAIN.'**"
     ],
     [
      "0:40",
-     "★ 'Can you just confirm — did you lose consciousness, or were you aware of your surroundings?' → completely out · witnessed (daughter, both) · ★ 'jerky movements? bite your tongue? wet or soil yourself?' → no ×3"
+     "**RECONFIRM, even though the stem says it: 'can you just confirm for me — DID YOU LOSE CONSCIOUSNESS, or were you AWARE of your surroundings?' Then DID ANYONE WITNESS IT?**"
     ],
     [
-     "1:15",
-     "Duration (1–2 min) · first time? (twice) · ★ 'can you please describe each of the previous episodes for me?' → 1: getting out of bed, went down, very pale · 2: sitting on the couch, a thump in the chest — one big heavy beat — then out · environment anyway: hot/humid, emotion, position change, prolonged standing → no (the first was getting out of bed — orthostatic still live)"
+     "0:55",
+     "**THE SEIZURE SCREEN: any JERKY MOVEMENTS of your arms or legs · did you BITE YOUR TONGUE · did you WET OR SOIL YOURSELF?** Then **HOW LONG WERE YOU UNCONSCIOUS · IS THIS THE FIRST TIME?**"
     ],
     [
-     "2:30",
-     "★ BEFORE: 'any warning at all — dizziness, sweating, nausea, blurred vision?' → 'none, that's what bothers me' (react) · meals/fluids · head injury · fever/rash · AFTER: confused or tired? (neither — back to normal) · injuries (none) · pale (after the first — take it, move on)"
+     "1:20",
+     "**THE UNLOCKING QUESTION — ask him to describe EACH episode separately, and let him talk.**"
     ],
     [
-     "3:15",
-     "Signpost · CNS: headache, vision, speech, weakness, numbness → no · CVS: chest pain (no) · ★ 'any racing of your heart?' → yes, before the second → ★ 'describe that — beating fast, or irregularly? could you tap the rhythm out on the desk?' → 'I don't know', declines → 'that's fine' · SOB, leg swelling, cough → no"
+     "2:15",
+     "**Still complete the ENVIRONMENT sweep, because orthostatic and reflex causes remain live and YOU ARE SCORED ON IT: hot or humid · after a CHANGE OF POSITION · after STRONG EMOTION OR FEAR · PROLONGED STANDING?**"
     ],
     [
-     "4:15",
-     "GI · alcohol (couple/week), drugs · ★ 'medications regularly, or recently stopped any?' → nothing · breathing fast/stress · travel, thermal intolerance, jaundice · PMHx · ★ FHx similar episodes or sudden death, especially young"
+     "2:35",
+     "**BEFORE — FOUR QUESTIONS: DID YOU HAVE ANY WARNING AT ALL, did you know you were about to go down · did you MISS ANY MEALS, were you drinking normally · any HEAD INJURY before it happened · any FEVER OR RASH?**"
     ],
     [
-     "5:30",
-     "★ Card, aloud: 'BP, temperature, CVS and neurological examination normal; glucose normal — hypoglycaemia excluded, threshold <4 in an adult; ★ but the pulse is 42 and regular, a significant bradycardia — I think that's the key finding. Could I have a 12-lead ECG and continuous cardiac monitoring?'"
+     "3:00",
+     "**AFTER — THREE QUESTIONS: when you came round, were you CONFUSED OR JUST TIRED · did you INJURE your head or any other part of you · DID ANYONE SAY YOU LOOKED PALE?** **Record the pallor and MOVE ON — it is common to many causes and does not overturn the cardiac picture.**"
+    ],
+    [
+     "3:25",
+     "**SIGNPOST: 'for the next questions, tell me if you had it BEFORE this happened, AFTER it, or NOT AT ALL — I won't ask twice.' CNS: headache · blurred vision · slurred speech · weakness · numbness.**"
+    ],
+    [
+     "3:45",
+     "**CVS AND RESPIRATORY: chest pain · RACING OF THE HEART · shortness of breath · leg swelling · cough.**"
+    ],
+    [
+     "4:00",
+     "**THE PALPITATION FOLLOW-UP — the whole reason the case exists: 'CAN YOU DESCRIBE IT — WAS YOUR HEART BEATING FAST, OR BEATING IRREGULARLY? COULD YOU TAP THE RHYTHM OUT ON THE DESK FOR ME?'** **The honest conclusion — that you CANNOT CHARACTERISE THE RHYTHM FROM THE HISTORY — is precisely WHY YOUR DIAGNOSIS MUST STAY AT THE LEVEL OF 'BRADYARRHYTHMIA'.**"
+    ],
+    [
+     "4:20",
+     "**GI: nausea, vomiting, abdominal pain. SUBSTANCES: alcohol, how much · recreational drugs · DO YOU TAKE ANY MEDICATIONS REGULARLY, OR HAVE YOU RECENTLY STOPPED ANY?** **Drugs are THE COMMONEST REVERSIBLE CAUSE OF BRADYCARDIA — ask even when the answer is no, or you cannot say they are excluded.**"
+    ],
+    [
+     "4:45",
+     "**THE ADDED THREE — in a six-minute history you should reach these: LONG TRAVEL · WEATHER PREFERENCE · YELLOWING OF THE SKIN.** Then **PSYCHOGENIC LAST: breathing fast before · any stressful news beforehand.**"
+    ],
+    [
+     "5:10",
+     "**PAST AND FAMILY HISTORY: any past medical history I should know about · family history of similar episodes · FAMILY HISTORY OF SUDDEN DEATH?**"
+    ],
+    [
+     "5:40",
+     "**READ THE CARD PROPERLY, LINE BY LINE. The one abnormal value IS the station.**"
     ],
     [
      "6:00",
-     "★ To Gary: genuine blackouts; bradycardia named at the right level; 60–100 vs 42; too slow to push blood to the brain · two things: no warning; the thump while seated · 'what's making it slow?' → ★ 'I can't tell you which one it is yet from a pulse alone' — pacemaker/wiring/blood supply/medication/thyroid/salts; ECG + monitoring will tell · differentials across systems"
+     "**NAME BRADYCARDIA to the patient in plain words, with the reason it caused a blackout — then GIVE THE POSSIBLE RHYTHMS AS CAUSES rather than picking one.** Then **the differentials across systems, with the negatives voiced.**"
     ],
     [
-     "7:00",
-     "'Can I go home and see how it goes?' → no · admit on a monitor, ECG, bloods (thyroid, salts, heart enzymes), echo, cardiology; pacemaker if the heart is running too slowly on its own — works very well · ★ 'you asked what happens if you're on your own — that's exactly why I don't want you at home tonight' · ★ driving — not until assessed, national rules, notification · no ladders/machinery/swimming alone · summary · questions"
+     "7:20",
+     "**ANSWER THE CONCERN HE RAISED AT THE START: 'you asked what happens if you're on your own — THAT'S EXACTLY WHY I WANT YOU ON A HEART MONITOR HERE RATHER THAN AT HOME.'** Then **DRIVING ADVICE, no heights, no machinery, no swimming alone, no ladders.**"
     ]
    ],
-   "planApprox": true,
-   "ask": [
-    "★ 'I completely understand how concerning that must be. I'll do my best to find the cause today so we can prevent this happening again.' / ★ 'Can you just confirm for me — did you lose consciousness, or were you aware of your surroundings?'",
-    "'Did you have any jerky movements of your arms or legs? Did you bite your tongue? Did you wet or soil yourself?' / ★ 'Can you describe each of the previous episodes for me?'",
-    "★ 'Did you have any warning at all — did you know you were about to go down?' / 'When you came round, were you confused, or just tired?' / 'For the next questions, tell me whether you had it before this happened, after it, or not at all.'",
-    "★ 'Can you describe that racing — was it beating fast, or beating irregularly? Could you tap the rhythm out for me?' / ★ 'Do you take any medications regularly, or have you recently stopped any?' / 'Has anyone in your family died suddenly and unexpectedly, especially at a young age?'",
-    "★ 'His pulse is 42 and regular, which is a significant bradycardia — I think that's the key finding. Could I have a 12-lead ECG and continuous cardiac monitoring?'",
-    "★ 'You have a condition called bradycardia, which means your heart is beating more slowly than it should. A normal resting rate is 60 to 100; yours is 42.' / 'When the heart beats too slowly it can't push enough blood up to the brain, and that's why you blacked out.' / 'Two things fit: no warning at all — a simple faint almost always gives a few seconds of dizziness or sweating first — and the thump in your chest while you were sitting down, so it wasn't a matter of standing up too quickly.'",
-    "★ 'I can't tell you which one it is yet from a pulse alone — that's why I want a heart tracing and monitoring.' / 'It can be the heart's own natural pacemaker running slow; a block in the electrical wiring between the top and bottom chambers; a problem with the blood supply; or a medication, an underactive thyroid, or a salt imbalance — and those we can simply fix.'",
-    "'How do you know that?' (if you name a rhythm) — don't. Examiner 'bradycardia isn't a diagnosis': 'I'd call it a bradyarrhythmia causing cardiac syncope. A regular 42 is compatible with sinus bradycardia, sinus node dysfunction, second- or third-degree AV block, or ischaemic conduction disease, and he couldn't characterise the palpitations. If pressed, palpitations preceding syncope with a resting 42 would make me favour sinus node dysfunction with a tachy–brady pattern — but I'd want the ECG and telemetry before telling a patient that. I'd also measure the QT.'",
-    "★ 'You asked what happens if you're on your own — that's exactly why I want you here on a monitor tonight. If it happens again we capture it, and then we know precisely what to fix.' / 'If your heart is running too slowly on its own, the usual treatment is a pacemaker — a small device that stops it dropping below a safe rate — and it works very well.'",
-    "★ 'Please don't drive until the specialists have assessed you — and no ladders, machinery, or swimming alone.' / Refuses admission: 'It's your decision and I won't keep you against your will — but you've blacked out twice with no warning and your heart is running at 42; my worry isn't another fall, it's a pause long enough that someone needs to be there with the equipment. Whatever you decide — no driving, no heights or machinery; ambulance if it happens again, chest pain or severe breathlessness. Can I ask what's making you want to leave?'"
-   ],
    "pefe": [
-    "Role-player: Gary, 52, logistics, lives with his adult daughter (witnessed both). 'What if nobody's there?' in the opening line (part of the stem) — raises it again in the last minute if never answered. Generic 'what happened?' gets 'I just went down, both times' — make them ask per episode. Never volunteers the thump, the absent warning or the racing heart; can't characterise or tap the palpitation (scripted, not obstruction). Always asks to go home near the end. Names a rhythm confidently → 'how do you know that?'. Practical, minimising ('being clumsy'), worried underneath",
-    "Card: BP normal · pulse 42/min regular · T 36.5 · CVS normal · neurological normal · BSL normal → request ECG + telemetry",
-    "Variant 1 — metoprolol doubled six weeks ago + diltiazem: may be the whole explanation — 'don't stop anything yourself; I'll review them with the specialists today'; cease culprits, telemetry, reassess rate before considering pacing · Variant 2 — chest heaviness 2 h, sweaty, nauseated: ★ change gear — inferior MI with AV block; 12-lead within 10 min, IV access, monitoring, troponin, aspirin, urgent cardiology/reperfusion; atropine and pacing available · Variant 3 — cold intolerance, weight gain, tired, constipated: hypothyroidism — TFTs; treating the thyroid usually restores the rate; still monitored",
-    "Unstable bradycardia: atropine 600 µg IV, repeat to max 3 mg; then transcutaneous pacing or isoprenaline/adrenaline infusion VERIFY · definitive: permanent pacemaker · bloods: EUC with K/Ca/Mg, TSH, troponin, FBC; echo · normal resting HR 60–100; bradycardia <60 · hypoglycaemia adult <4.0",
-    "Scoring stars: reconfirmed LOC · seizure screen · each episode separately · warning asked and absence registered · palpitation follow-up (fast/irregular, tap) · meds/cessations · pulse 42 identified aloud · diagnosed bradycardia without naming a rhythm · admitted, ECG · driving advice",
-    "SA: admit regional ED → cardiology/pacing (RAH/FMC/Lyell McEwin); MedSTAR 1300 13 12 33 for retrieval if unstable; Registrar of Motor Vehicles; PATS; 000",
-    "Unstable bradycardia — Atropine 600 µg IV, repeat to max 3 mg; then transcutaneous pacing or isoprenaline/adrenaline infusion VERIFY · definitive: permanent pacemaker · bloods: EUC with K/Ca/Mg, TSH, troponin, FBC; echo · normal resting HR 60–100; bradycardia <60 · hypoglycaemia adult <4.0",
-    "SA — Admit regional ED → cardiology/pacing (RAH/FMC/Lyell McEwin); MedSTAR 1300 13 12 33 for retrieval if unstable; Registrar of Motor Vehicles; PATS; 000"
+    "**Do now: 12-LEAD ECG — rate, rhythm, PR INTERVAL, DEGREE OF AV BLOCK, ESCAPE RHYTHM, QTc, ischaemic changes · CONTINUOUS CARDIAC MONITORING FROM THE MOMENT HE ARRIVES · IV access · bedside glucose · ASSESS PERFUSION — IS HE COMPROMISED AT 42, OR TOLERATING IT?**",
+    "**Bloods: EUC INCLUDING POTASSIUM, CALCIUM AND MAGNESIUM · TSH · FBC · TROPONIN · LFT. Plus ECHOCARDIOGRAM for structural disease and ventricular function, and a FULL MEDICATION REVIEW INCLUDING RECENT CESSATIONS.** **If the ECG is non-diagnostic: HOLTER, and an IMPLANTABLE LOOP RECORDER for infrequent events.**",
+    "**REVERSIBLE CAUSES TO EXCLUDE. DRUGS: BETA BLOCKERS, VERAPAMIL AND DILTIAZEM, DIGOXIN, AMIODARONE, CLONIDINE, SOME EYE DROPS. METABOLIC: HYPERKALAEMIA, HYPOTHERMIA, HYPOTHYROIDISM — hence the weather-preference question — HYPOXIA. CARDIAC AND NEUROLOGICAL: INFERIOR MI, myocarditis, RAISED INTRACRANIAL PRESSURE, obstructive sleep apnoea, infiltrative disease.**",
+    "**PHYSIOLOGICAL bradycardia — athletic conditioning and sleep — DOES NOT CAUSE SYNCOPE, so it does not apply here.**",
+    "**If HAEMODYNAMICALLY COMPROMISED — hypotensive, ischaemic chest pain, acute heart failure or reduced consciousness: ATROPINE 600 MICROGRAM IV, REPEATED TO A MAXIMUM OF 3 mg; then TRANSCUTANEOUS PACING or an ISOPRENALINE OR ADRENALINE INFUSION as a bridge to transvenous pacing, with urgent cardiology.** VERIFY.",
+    "**PERMANENT PACING IS THE DEFINITIVE TREATMENT for symptomatic bradycardia from sinus node disease or high-grade AV block.**",
+    "**Avoid: reassuring and discharging because the examination is otherwise normal · ATTRIBUTING EPISODE 1 TO A POSTURAL DROP AND STOPPING THERE — EPISODE 2 HAPPENED SITTING DOWN · treating physiological bradycardia in a well person, BUT HE IS NOT WELL, HE IS SYNCOPAL.** **ADMIT TO A MONITORED BED. In MM5, telemetry, echo and pacing require transfer — PATS for stable transfers, MedSTAR if unstable.**"
    ],
-   "fails": [
-    "Naming a specific rhythm — 'you have complete heart block' from a pulse rate ★",
-    "Reading down a card of normals and letting the 42 slide past ★",
-    "Finishing without admission and driving advice ★",
-    "Never asking him to describe each episode — a generic 'what happened?' gets 'I just went down'",
-    "Recording 'yes' to palpitations and moving on — no fast-vs-irregular / tap-it-out follow-up",
-    "Building a vasovagal case on the pallor; skipping the environment sweep because you've guessed cardiac; skipping medications because he looks well",
-    "Walking past 'what if nobody's there?' — never answering his stated concern or returning to it at the end"
-   ],
-   "numbers": [
-    "Normal resting HR 60–100 · bradycardia <60 · Gary 42 regular · two episodes, 1–2 min each, both witnessed · hypoglycaemia adult <4.0",
-    "Reversible causes: rate-slowing drugs (β-blockers, verapamil, diltiazem, digoxin) · hypothyroidism · K/Ca/Mg · ischaemia (inferior MI + AV block)",
-    "Unstable: atropine 600 µg IV to max 3 mg → transcutaneous pacing / isoprenaline or adrenaline infusion VERIFY · definitive: permanent pacemaker",
-    "Bloods: EUC K Ca Mg · TSH · troponin · FBC · echo · measure the QT (pause-dependent torsades)",
-    "000 · MedSTAR 1300 13 12 33"
+   "ddx": [
+    [
+     "**Sinus node dysfunction — tachy-brady syndrome**",
+     "**FITS GARY BEST: PALPITATIONS BEFORE SYNCOPE PLUS A RESTING RATE OF 42**; alternating slow and fast rhythms with PAUSES ON CONVERSION",
+     "The palpitation follow-up, even though he cannot characterise it",
+     "**Telemetry, Holter; OFTEN NEEDS A PACEMAKER**"
+    ],
+    [
+     "**AV block — second degree (Mobitz I or II) or COMPLETE**",
+     "**MOBITZ II IS HIGH RISK AND PROGRESSES TO COMPLETE BLOCK**; complete block gives a REGULAR SLOW PULSE, CANNON A WAVES, VARIABLE FIRST HEART SOUND",
+     "PR interval and degree of block on the ECG",
+     "**ECG, telemetry, cardiology; MONITORED BED AND PACING** — EMERGENCY"
+    ],
+    [
+     "Sinus bradycardia",
+     "Sinus node firing slowly. **Often benign — athletes, sleep — and symptomatic only if VERY SLOW OR WITH PAUSES**",
+     "Whether he is perfusing at 42",
+     "ECG; **look for a reversible cause**"
+    ],
+    [
+     "**Bradycardia in ischaemic heart disease**",
+     "**INFERIOR MI CLASSICALLY CAUSES BRADYCARDIA AND AV BLOCK**",
+     "Chest pain — absent here, but STILL TO BE EXCLUDED",
+     "**ECG, TROPONIN** — EMERGENCY"
+    ],
+    [
+     "**Drug-induced bradycardia — the commonest reversible cause**",
+     "**BETA BLOCKERS, VERAPAMIL, DILTIAZEM, DIGOXIN, AMIODARONE, CLONIDINE, EYE DROPS**",
+     "**'Any medications regularly, or recently stopped?' — HE TAKES NONE, WHICH IS WHY ASKING MATTERS**",
+     "**Cease the culprits, monitor — OFTEN NO PACEMAKER IS NEEDED**"
+    ],
+    [
+     "**Hypothyroidism · hyperkalaemia · hypothermia**",
+     "**Weather preference, weight gain, tiredness, constipation**; or CKD with an ACE inhibitor and spironolactone",
+     "**The weather-preference question is on the list FOR THIS REASON**",
+     "**TSH; URGENT POTASSIUM with PEAKED T WAVES AND A BROAD QRS on the ECG** — urgent"
+    ],
+    [
+     "**Long QT with torsades de pointes**",
+     "**NOT A CAUSE OF BRADYCARDIA — it causes syncope through a POLYMORPHIC VENTRICULAR TACHYCARDIA. But BRADYCARDIA AND PAUSES TRIGGER PAUSE-DEPENDENT TORSADES**",
+     "The palpitations raise an intermittent TACHYarrhythmia",
+     "**MEASURE QTc; check K, Mg, Ca and the drug list**"
+    ],
+    [
+     "Structural cardiac disease — cardiomyopathy, aortic stenosis · pericarditis",
+     "**NORMAL CARDIOVASCULAR EXAMINATION, NO MURMUR**; no chest pain or fever",
+     "Murmur characterisation if one appeared",
+     "Echocardiogram"
+    ],
+    [
+     "Seizure · stroke or TIA · intracranial pathology · pulmonary embolism",
+     "**No jerking, tongue bite, incontinence or postictal confusion**; no headache, focal symptoms or fever; **no travel, calf symptoms, breathlessness or cough**",
+     "The seizure screen and the CNS bucket; the added three",
+     "**PE CAN PRESENT WITH PALPITATIONS, WHICH IS WHY YOU ASK**"
+    ],
+    [
+     "Hypoglycaemia · reflex and orthostatic syncope · drugs · psychogenic",
+     "**BLOOD SUGAR NORMAL — the adult threshold is BELOW 4.0**; **NO PRODROME, NO TRIGGER, AND ONE EPISODE WHILE SEATED**; no hyperventilation or stressor",
+     "The environment sweep; the prodrome question",
+     "EUC and electrolytes still to be checked. **PSYCHOGENIC STAYS LAST ON THE LIST REGARDLESS**"
+    ]
    ]
   },
   "source": "Syncope_Bradycardia_2_Case_Tasks_Script_Notability.pdf (Gary, 52, two falls — recurrent syncope with a pulse of 42)",
   "drive": "AMC Clinical Notability › Medicine AMC Clinical › Syncope › Syncope_Bradycardia_2_Case_Tasks_Script_Notability.pdf",
-  "findings": [
-   [
-    "Card",
-    "BP normal · pulse 42/min regular · T 36.5 · CVS normal · neurological normal · BSL normal → request ECG + telemetry"
-   ]
-  ],
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
-  "must": [
-   "FAIL — Reading down a card of normals and letting the 42 slide past — four lines say 'normal' and one says pulse 42 regular; say it aloud and say why it matters ('a significant bradycardia — I think that's the key finding'), and ask for a 12-lead ECG and continuous monitoring (★)",
-   "FAIL — Naming a specific rhythm from a pulse rate — 'you have complete heart block' or 'this is long QT' is a guess dressed as a diagnosis, and he asks 'how do you know that?'; diagnose bradycardia, offer the rhythms as causes (sinus node, AV block, ischaemic conduction disease) plus the reversible ones (medication, thyroid, salts): 'I can't tell you which one it is yet from a pulse alone' (★)",
-   "FAIL — A generic 'so what happened?' — he answers 'I just went down, both times'; 'can you describe each of the previous episodes for me?' opens the whole case: episode 1 getting out of bed, pale; episode 2 SITTING on the couch, a thump in the chest, then out — gravity is not the explanation (★)",
-   "FAIL — Recording 'yes, my heart was racing' and moving on — the palpitations cluster: 'fast, or irregular? could you tap the rhythm out?' — he cannot help you and declines to tap; the mark is for asking, and his inability to characterise it is exactly why the final diagnosis stays at bradyarrhythmia (★)",
-   "FAIL — Sending him home ('can I go home and see how it goes?' is always asked), or finishing without driving advice — admit today on a monitor, ECG, thyroid, salts, troponin, echo, cardiology; a pacemaker if the heart is running slow on its own; 'you asked what happens if you're on your own — that's exactly why I don't want you at home tonight'; no driving pending specialist assessment, no ladders, machinery or swimming alone (★)",
-   "DO — Name his fear in the first sentence and close the loop at the end; reconfirm loss of consciousness despite the stem; seizure screen; 'any warning at all?' and react to the absence (never volunteered — 'that's what bothers me'); confusion vs tiredness; don't build a vasovagal case on the pallor; 'medications regularly, or recently stopped any?' — drugs are the commonest reversible cause and a documented negative is worth as much as a positive; family sudden death; differentials across more than one system"
-  ]
+  "promptAt": 360
  },
  {
   "id": "MED-97",
