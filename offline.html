@@ -68782,7 +68782,6 @@ const EMBEDDED_CARDS = [
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 195,
-  "setting": "History, diagnosis and counselling — rural hospital, and she is crying when you walk in. Four empathy points are scored separately: at the opening, before the diagnosis, before management, and at the end — so it is not one warm sentence, it is four. And there are three forgotten management points that decide the station: investigations then antibiotics, surfactant as an option, and transfer to a tertiary NICU because a rural hospital cannot provide the care. 'He is stable and this is a condition we treat' is honest — 'He'll be fine' is not.",
   "stem": [
    "You are the hospital medical officer at a rural hospital in Wallaroo. Jane, 26, has just delivered a baby boy at 32 weeks. Delivery was uncomplicated, but immediately after birth he developed respiratory distress and was placed in a headbox with 40% oxygen; he is now stable. This is her second pregnancy — the first ended in miscarriage. She is crying and asking to speak to a doctor.",
    "8 minutes: take a focused history from the mother (3 minutes), explain the most likely diagnosis, then explain your immediate management AND COUNSEL HER, ADDRESSING HER CONCERNS. VERSION B: COUNSELLING ONLY, NO HISTORY. VERSION C: she volunteers AN E. COLI URINARY INFECTION AT 14 WEEKS and RUPTURE OF MEMBRANES EIGHT HOURS BEFORE DELIVERY."
@@ -68792,104 +68791,196 @@ const EMBEDDED_CARDS = [
    "Explain the most likely diagnosis to her",
    "Explain your immediate management and counsel her, addressing her concerns"
   ],
-  "time": "EMPATHY, REASSURANCE AND PERMISSION BEFORE ANY QUESTION · 'I'm so sorry this is happening. FIRST, I WANT YOU TO KNOW HE IS STABLE, HE'S IN SAFE HANDS AND WE'RE GIVING HIM THE BEST CARE. May I ask a few questions, then explain?' · THE BREATHING: IS HE COUGHING, IS IT NOISY, OR IS HE WORKING HARD AND STRUGGLING; did it start STRAIGHT AFTER BIRTH or was he fine at first; constant or on and off; worse with feeding or position · PREGNANCY: INFECTIONS OR FEVERS, PARTICULARLY URINE INFECTIONS; high blood sugar or blood pressure; DID YOUR WATERS BREAK EARLY AND HOW LONG BEFORE HE WAS BORN; medicines, alcohol, drugs; tests and scans; AND WERE YOU GIVEN STEROID INJECTIONS BEFORE THE BIRTH · DELIVERY AND AFTER: how many weeks, vaginal or caesarean, complications, DID HE CRY STRAIGHT AWAY AND DID THEY NEED TO HELP HIM BREATHE, ANY MENTION OF A BOWEL MOTION INSIDE THE WOMB, VITAMIN K, ANY DROOLING OR FROTHY SALIVA, ANY TURNING BLUE, alert or sleepy, HAS HE PASSED URINE OR A BOWEL MOTION · THEN THE MOTHER HERSELF: how are you feeling right now, IS ANYONE HERE WITH YOU, and how are you physically · bleeding, pain · THEN THE DIAGNOSIS WITH THE SURFACTANT EXPLANATION AND THE BLAME REMOVED · then TESTS THEN ANTIBIOTICS, oxygen to CPAP to intubation, fluids and expressing, SURFACTANT AS AN OPTION, AND THE TRANSFER FRAMED AS BEST CARE · then PATS, her own fitness to travel, written information, a family meeting with Sam, and a summary ending in empathy.",
   "findings": [
    [
-    "The breathing",
-    "Started straight after birth — grunting with the chest sucking in, oxygen low — constant"
+    "★ THE STEM — a RURAL hospital",
+    "You're the HMO at WALLAROO HOSPITAL (Yorke Peninsula). Jane, 26, has just delivered a boy at 32 WEEKS. Uncomplicated delivery; RESPIRATORY DISTRESS IMMEDIATELY AFTER BIRTH; in a HEADBOX WITH 40% O2; NOW STABLE. Second pregnancy — the first ended in MISCARRIAGE. She is CRYING and asking to speak to a doctor. Tasks: focused history (3 min), explain the diagnosis, explain immediate management and counsel her"
    ],
    [
-    "Gestation and delivery",
-    "32 WEEKS, quick normal vaginal delivery, no forceps — HE CRIED BRIEFLY THEN WENT GRUNTY; RUBBED AND GIVEN OXYGEN, NO TUBE"
+    "Vitals — optional",
+    "'The stem tells me he's stable in 40% oxygen; I'll confirm his current observations with the nursing staff rather than asking you.' Acceptable to ask the examiner for saturations, RR, temperature and glucose"
+   ],
+   [
+    "★ Her opening — and the two questions she asks early",
+    "(crying) 'He CAN'T BREATHE PROPERLY. Why is this happening? I LOST THE FIRST ONE — IS HE GOING TO DIE?' Then: 'IS IT MY FAULT — THE INFECTION?' 'He'll be fine' is FALSE REASSURANCE; 'he is STABLE and this is a condition we TREAT' is honest"
+   ],
+   [
+    "The breathing",
+    "STRAIGHT AFTER BIRTH. 'GRUNTING, his CHEST PULLING IN. They said his oxygen was low.' CONSTANT. He HASN'T FED YET. Onset at birth = RDS / TTN / sepsis; later onset = pneumonia or heart disease"
+   ],
+   [
+    "★ THE PREGNANCY — Version C's positives",
+    "An E. COLI URINE INFECTION AT 14 WEEKS, treated with antibiotics. No diabetes or BP problems. 'My WATERS BROKE ABOUT EIGHT HOURS BEFORE.' No medicines, alcohol or drugs. Scans normal. Antenatal STEROID injections? — 'NO — THERE WASN'T TIME, it all happened so fast.' Not asking about steroids, or not linking the UTI and PROM to infection, is the trap"
+   ],
+   [
+    "Delivery and after",
+    "32 weeks, QUICK NORMAL VAGINAL delivery, no forceps. 'He CRIED A LITTLE then went QUIET AND GRUNTY. They RUBBED HIM and GAVE OXYGEN — NO TUBE.' No meconium in the womb. VITAMIN K given. NOT DROOLING. Not blue now with the oxygen. 'A bit alert.' NOTHING PASSED YET (urine or stool). Heel-prick not due yet (48–72 h)"
+   ],
+   [
+    "The mother herself",
+    "'TERRIFIED. My partner SAM is PARKING THE CAR. I'm SORE BUT OK.' Her own bleeding, blood pressure, Rh status / anti-D and mood are your job too"
+   ],
+   [
+    "★ HER SCRIPTED PROMPTS — if you forget the three points",
+    "Never mention TRANSFER → at the end: 'SO HE'LL STAY HERE WITH ME?' · never mention ANTIBIOTICS or infection → 'COULD THE INFECTION I HAD HAVE GOT INTO HIM?' · never mention SURFACTANT → 'IS THERE ANY MEDICINE FOR HIS LUNGS?' Each prompt is a mark you've already lost"
+   ],
+   [
+    "★ HER PANIC AT THE TRANSFER",
+    "'WHY ADELAIDE? IS IT THAT BAD? CAN I GO WITH HIM?' Frame it as BEST CARE, NOT DETERIORATION. Also: 'Can't you just give the surfactant now?' · 'Will he be on the machine for long?' · 'What if it happens again next time?'"
+   ],
+   [
+    "★ VERSION B — counselling only",
+    "No history. The agenda question is scored: 'before I explain, CAN I CHECK WHAT YOU'VE BEEN TOLD so far, and what you're MOST WORRIED ABOUT?' → 'NOBODY'S TOLD ME ANYTHING. Is he going to die? Is it my fault?'"
+   ],
+   [
+    "Other practice cards",
+    "39 wk, ELECTIVE CAESAREAN, tachypnoea, mild O2, well → TTN: still cultures + antibiotics until sepsis excluded, settles < 72 h · 30 wk on CPAP, SUDDEN DESATURATION and bradycardia → PNEUMOTHORAX: transilluminate, needle, drain · term, DROOLING, CHOKES and goes blue with the first feed → TOF: NG tube coils, NBM, Replogle · term, BLUE, sats 78% NOT improving on 100% O2, no distress → cyanotic CHD: hyperoxia test, prostaglandin · 34 wk, mother GBS+, no intrapartum antibiotics, temp 35.8, MOTTLED → early-onset sepsis · 33 wk, DIABETIC mother, JITTERY → RDS + HYPOGLYCAEMIA: BSL first"
    ]
   ],
   "back": {
-   "dx": "NEONATAL RESPIRATORY DISTRESS SYNDROME — SURFACTANT DEFICIENCY OF PREMATURITY at 32 weeks. NAME IT AND EXPLAIN SURFACTANT CORRECTLY: 'your son most likely has a condition called RESPIRATORY DISTRESS SYNDROME — it's VERY COMMON IN PREMATURE BABIES. INSIDE THE LUNGS ARE MILLIONS OF TINY AIR SACS, AND THEY'RE COATED WITH A SOAPY SUBSTANCE CALLED SURFACTANT THAT STOPS THEM STICKING SHUT AT THE END OF EACH BREATH. BABIES MAKE MOST OF THEIR SURFACTANT IN THE LAST FEW WEEKS OF PREGNANCY, so a baby born at 32 weeks DOESN'T HAVE ENOUGH YET; the air sacs PARTLY COLLAPSE WITH EVERY BREATH and he has to work hard to breathe — THAT'S THE GRUNTING AND THE PULLING-IN OF HIS CHEST.' The 'chest-wall lubricant' explanation is wrong and is a named trap. THEN REMOVE THE BLAME AND REASSURE AGAIN: 'NOTHING YOU DID CAUSED THIS, AND THE MISCARRIAGE ISN'T CONNECTED. BEING BORN EARLY IS THE REASON — and that happens to many women who did everything right. We can treat this, AND MOST PREMATURE BABIES WITH IT DO WELL.' THEN THE MANAGEMENT, AND THE THREE FORGOTTEN POINTS ARE THE STATION. ONE — INVESTIGATIONS, THEN ANTIBIOTICS: 'first, some tests — blood tests INCLUDING A BLOOD CULTURE, a check of his oxygen and sugar levels, and A CHEST X-RAY. THE MAIN REASON FOR THE TESTS IS TO MAKE SURE THERE'S NO INFECTION, BECAUSE INFECTION CAN LOOK EXACTLY LIKE THIS — and given the urine infection and your waters breaking early, WE TAKE THAT SERIOUSLY. SO AS SOON AS THE SAMPLES ARE TAKEN, WE'LL START HIM ON ANTIBIOTICS THROUGH A DRIP, AS A PRECAUTION, AND STOP THEM IF THE TESTS COME BACK CLEAR.' TWO — RESPIRATORY SUPPORT AND FLUIDS, WITH SURFACTANT NAMED AS AN OPTION: continuous oxygen monitoring; 'if his breathing gets harder we can help him in two ways: A SMALL MASK THAT GIVES A GENTLE CONTINUOUS FLOW OF AIR TO HOLD THE AIR SACS OPEN — CALLED CPAP — or, if needed, A TUBE INTO HIS WINDPIPE with a machine to breathe for him. Because breathing is hard work, HE WON'T FEED BY MOUTH YET — fluids and sugar through the drip, AND I'D ENCOURAGE YOU TO START EXPRESSING MILK so it's ready when he can take it. THERE IS ALSO A TREATMENT WHERE THE SPECIALISTS GIVE HIM SURFACTANT — THE VERY SUBSTANCE HE'S SHORT OF — DOWN A THIN TUBE INTO THE LUNGS. It's an option they'll consider, and OFTEN THE TRANSPORT TEAM GIVES IT BEFORE HE TRAVELS.' THREE — TRANSFER, FRAMED AS BEST CARE: 'THE MOST IMPORTANT THING I NEED TO TELL YOU: this condition needs CLOSE, CONTINUOUS MONITORING IN A NEONATAL INTENSIVE CARE UNIT, and it usually takes DAYS TO WEEKS to improve. WE DON'T HAVE THAT UNIT HERE IN WALLAROO. So I'm arranging for the specialist neonatal retrieval team — MedSTAR — to take him to the Women's and Children's Hospital in Adelaide. THAT IS NOT BECAUSE HE'S GETTING WORSE; IT'S SO HE GETS THE BEST POSSIBLE CARE.' THEN HER: 'we'll do everything to keep you together' — travel with him where possible, otherwise as soon as she is fit, with PATS TRAVEL AND ACCOMMODATION SUPPORT for her and Sam; CHECK HER OWN BLEEDING AND BLOOD PRESSURE so she is well enough to go; WRITTEN INFORMATION from the Women's and Children's; A FAMILY MEETING WITH SAM BEFORE THE TEAM ARRIVES; and 'any question, at any hour, ask the nurses to get me.' CLOSE WITH THE SUMMARY AND THE FOURTH EMPATHY POINT: 'a treatable lung condition of prematurity; he's stable; tests, antibiotics as a precaution, support for his breathing, and the specialists may give surfactant; and he's going to the intensive care nursery in Adelaide for the best care, with you close by. I'M SO SORRY YOU'RE GOING THROUGH THIS — YOU'VE DONE NOTHING WRONG.'",
+   "dx": [
+    "**RESPIRATORY DISTRESS SYNDROME OF PREMATURITY (surfactant deficiency; formerly hyaline membrane disease) in a 32-WEEK infant: tachypnoea, GRUNTING, RECESSION, nasal flaring, cyanosis and an oxygen requirement FROM BIRTH; CXR — LOW-VOLUME lungs, diffuse fine GROUND-GLASS opacity, AIR BRONCHOGRAMS. Surfactant is made from ~24 weeks, adequate by ~34–36; incidence rises steeply below 34 weeks. Other risks: maternal diabetes, caesarean without labour, asphyxia, male sex, NO ANTENATAL STEROIDS.**",
+    "**★ THE DISCRIMINATING ISSUE — THE RURAL TRANSFER CONVERSATION, PLUS ANTIBIOTICS AND SURFACTANT. Candidates have FAILED THIS STATION HAVING EXPLAINED RDS PERFECTLY, because they TREATED A RURAL HOSPITAL AS IF IT HAD A NICU. The scored moment: telling a frightened mother that her STABLE baby MUST LEAVE FOR ADELAIDE, framed as BEST CARE, NOT DETERIORATION — and naming the two things everyone forgets: ANTIBIOTICS because sepsis can't be excluded, and SURFACTANT as a treatment option.** **'Because this needs CONTINUOUS CLOSE MONITORING and usually takes DAYS TO WEEKS to improve, he needs a NEONATAL INTENSIVE CARE UNIT — and WE DON'T HAVE ONE HERE. So I'm arranging for the specialist retrieval team to take him to the Women's and Children's in Adelaide. That's NOT BECAUSE HE'S GETTING WORSE — it's so he gets THE BEST POSSIBLE CARE. We'll organise travel and accommodation so you can be with him.'**",
+    "**★ EMPATHY IS SCORED MORE THAN ONCE — AT FOUR POINTS: the OPENING, BEFORE THE DIAGNOSIS, BEFORE MANAGEMENT, and at the CLOSE. Opening: 'I'm so sorry this is happening — I can only imagine how frightening and overwhelming this is straight after the birth. I want to reassure you first: he is STABLE, he is IN SAFE HANDS, and we're giving him the BEST CARE. May I ask a few questions, and then I'll explain?' Opening kindly and then lecturing is a named fail.** **'Is he going to die?' → honest without false promise: 'he is STABLE, this is a condition we TREAT SUCCESSFULLY in most premature babies, and we're watching him minute by minute.'**",
+    "**THE HISTORY — SHORT, LOGICAL, BIRTH-FOCUSED (3 min): the BREATHING (coughing, noisy, or WORKING HARD? from BIRTH or later? constant? worse with FEEDS or POSITION — worse with feeds = CHD or TOF) · PREGNANCY (infections, fevers, UTIs; diabetes, BP; WATERS BROKE EARLY — HOW LONG BEFORE?; medicines, alcohol; scans; ANTENATAL STEROIDS) · DELIVERY (gestation, mode, complications; DID HE CRY — DID THEY NEED TO HELP HIM BREATHE? — this replaces the Apgar; MECONIUM in the liquor) · AFTER (heel-prick, vitamin K, feeds, DROOLING or frothy saliva — TOF, turning BLUE — cyanotic CHD) · WELL-BABY (alert or drowsy, urine and first stool, fever or cold) · THE MOTHER (how she feels, who's with her, bleeding, pain).**",
+    "**★ THE DIAGNOSIS — NAME IT, SURFACTANT IN PLAIN WORDS, LINK TO PREMATURITY, REASSURE AGAIN: 'Jane, I can imagine how hard this is. Your son most likely has RESPIRATORY DISTRESS SYNDROME — VERY COMMON IN PREMATURE BABIES. Inside the lungs are millions of TINY AIR SACS, coated with a SOAPY SUBSTANCE called SURFACTANT that STOPS THEM STICKING SHUT at the end of each breath. Babies make most of their surfactant in the LAST FEW WEEKS OF PREGNANCY, so at 32 weeks he DOESN'T HAVE ENOUGH YET; the air sacs partly collapse with every breath and he has to WORK HARD — that's the GRUNTING and the PULLING-IN of his chest. We can treat this, and MOST PREMATURE BABIES WITH IT DO WELL.'**",
+    "CORRECTION — **the source explains surfactant as 'a fluid that covers the inner layer of the chest wall and the lungs and acts as a lubricant'. WRONG. Surfactant is a PHOSPHOLIPID–PROTEIN mixture made by TYPE II PNEUMOCYTES that LINES THE INSIDE OF THE ALVEOLI and LOWERS SURFACE TENSION so the air sacs stay open. If challenged: 'surfactant reduces ALVEOLAR surface tension; it is NOT a pleural or chest-wall lubricant. Deficiency causes ATELECTASIS — which is why we see low-volume ground-glass lungs, and why exogenous surfactant works.'** **'Is it my fault — the infection? I lost the first one' → 'NO. NOTHING YOU DID CAUSED THIS, and the MISCARRIAGE ISN'T CONNECTED. BEING BORN EARLY is the reason — and that happens to many women who did everything right.'**",
+    "**★ THE THREE FORGOTTEN POINTS, IN ORDER: 1 INVESTIGATIONS, THEN ANTIBIOTICS — 'bloods including a BLOOD CULTURE, his oxygen and sugar levels, and a CHEST X-RAY. The main reason is to make sure there's NO INFECTION, because INFECTION CAN LOOK EXACTLY LIKE THIS — and with the urine infection and your waters breaking early we take that seriously. As soon as the samples are taken we'll START ANTIBIOTICS through a drip AS A PRECAUTION, and STOP THEM if the tests are clear.' 2 SURFACTANT — 'there's a treatment where the specialists give him SURFACTANT — the very substance he's short of — down a THIN TUBE into the lungs. It's an OPTION THEY'LL CONSIDER, often before he travels.' 3 TRANSFER — above.** **'Can't you just give it now?' → it's given by LISA or INSURE, usually by the retrieval team or NICU — don't promise it yourself.**",
+    "**RESPIRATORY SUPPORT, FLUIDS, FEEDS — in plain words: 'we're watching his oxygen continuously. If his breathing gets harder, we can help in two ways: a small mask giving a GENTLE CONTINUOUS FLOW OF AIR to hold the air sacs open — called CPAP — or, if needed, a TUBE INTO HIS WINDPIPE with a machine to breathe for him. He WON'T FEED BY MOUTH YET — fluids and sugar through the drip — and I'd encourage you to START EXPRESSING MILK so it's ready when he can take it.'** **Feeding a baby in distress ('try breastfeeding him') is a named error.**",
+    "**MANAGEMENT — THE AUSTRALIAN DETAIL: WARMTH (incubator/radiant warmer, hat, plastic wrap; 36.5–37.5 °C) · OXYGEN TITRATED TO SpO2 91–95% — never unrestricted high-flow (ROP, BPD) · EARLY NASAL CPAP 5–8 cmH2O first-line; intubate if apnoeic, rising CO2 or failing CPAP · IV access, BSL, 10% DEXTROSE ~60 mL/kg/day day 1 · NBM, minimal handling · blood culture, FBC, CRP, gas, glucose, CXR ± LP if unwell · then IV BENZYLPENICILLIN + GENTAMICIN (dosed by gestation), stop at 36–48 h if cultures negative and well · vitamin K · SURFACTANT (poractant alfa 200 mg/kg first dose) by LISA on CPAP or INSURE if FiO2 > 0.30, or any intubated infant with RDS · call EARLY: WCH neonatal registrar and MedSTAR for retrieval to WCH or Flinders NICU.** VERIFY **Antenatal betamethasone 11.4 mg IM × 2, 24 h apart, 23–34+6 weeks reduces RDS — for the next pregnancy.** VERIFY",
+    "**★ 'CAN I GO WITH HIM?' AND THE CLOSE: 'we'll do everything to KEEP YOU TOGETHER. The team will talk with you about travelling with him where possible; otherwise we'll get you there as soon as you're fit, with TRAVEL AND ACCOMMODATION SUPPORT for you and Sam through the PATIENT ASSISTANCE SCHEME. I'll check on YOU — your bleeding, your blood pressure — so you're well enough to go.' Then written WCH information, a MEETING WITH SAM before the team arrives, 'any question, any time, ask the nurses to get me' — and a SUMMARY WITH FINAL EMPATHY: 'I'm so sorry you're going through this — YOU'VE DONE NOTHING WRONG.'** **VERSION C: 'the infection was treated and eight hours isn't long, so NEITHER CAUSED his lungs to be short of surfactant — being born at 32 weeks did. But both make INFECTION something we take EVEN MORE SERIOUSLY — which is exactly why we start antibiotics straight away.' The plan is UNCHANGED; the findings must still be ACKNOWLEDGED AND LINKED to sepsis risk.** **Complications if asked: air leak, PDA, IVH, NEC, BPD, ROP, infection; most 32-weekers do well; NICU until ~35–36 weeks corrected.** VERIFY SA: **MedSTAR 1300 13 12 33** (neonatal retrieval) · **WCH / Flinders NICU** · **PATS** · **RFDS** · **TIS 131 450**."
+   ],
    "plan": [
     [
      "0:00",
-     "EMPATHY, REASSURANCE, PERMISSION — THE FIRST OF FOUR SCORED EMPATHY POINTS: [sit close, hand the tissues] 'Jane, I'm Dr -, the doctor looking after you and your son. I'M SO SORRY THIS IS HAPPENING — IT MUST BE TERRIFYING SO SOON AFTER THE BIRTH.' → [crying] 'he can't breathe properly. WHY IS THIS HAPPENING? I LOST THE FIRST ONE — IS HE GOING TO DIE?' → 'I can only imagine what you're going through. I want you to know first that HE IS STABLE RIGHT NOW, HE'S IN SAFE HANDS, and we're giving him the very best care. May I ask a few questions, and then I'll explain exactly what's happening and what we're doing?' (Launching into questions without empathy, or answering 'HE'LL BE FINE', are the two traps — 'HE IS STABLE AND THIS IS A CONDITION WE TREAT' is the honest version.)"
+     "**★ EMPATHY #1 — SIT CLOSE, TISSUES, REASSURE FIRST**: **'Jane, I'm Dr ___, the doctor looking after you and your son. I'm so sorry this is happening — it must be terrifying so soon after the birth.'** *(crying) 'He can't breathe properly. I lost the first one — is he going to die?'* → **'I can only imagine what you're going through. I want you to know first: he is stable right now, he's in safe hands, and we're giving him the very best care. May I ask a few questions, then I'll explain exactly what's happening?'**"
     ],
     [
      "0:45",
-     "THE BREATHING: 'when you say he's having trouble — IS HE COUGHING, IS IT NOISY, OR IS HE WORKING HARD, STRUGGLING? Did it start STRAIGHT AFTER BIRTH or was he fine at first? Constant, or on and off? Worse with anything — feeding, lying a certain way?'"
+     "**THE BREATHING — onset and pattern**: **'when you say trouble breathing — is he coughing, is it noisy, or is he working hard and struggling? Did it start straight after birth, or was he fine at first? Constant, or on and off? Worse with feeding or any position?'** *Straight after; grunting, chest pulling in; constant; hasn't fed.*"
     ],
     [
      "1:15",
-     "PREGNANCY — AND THE TWO QUESTIONS THAT CARRY MARKS: 'any infections or fevers in the pregnancy — URINE INFECTIONS? High blood sugar or blood pressure? DID YOUR WATERS BREAK EARLY — HOW LONG BEFORE HE WAS BORN? Any medicines, alcohol or drugs? Were your tests and scans normal? WERE YOU GIVEN STEROID INJECTIONS BEFORE THE BIRTH?' → an E. coli urine infection at 14 weeks, WATERS BROKE ABOUT EIGHT HOURS BEFORE, and NO STEROIDS BECAUSE THERE WASN'T TIME. (Not asking about antenatal steroids, or not linking the UTI and early rupture to infection risk, are both named traps.)"
+     "**★ THE PREGNANCY — infection, PROM, steroids**: **'any infections or fevers in the pregnancy — urine infections? Blood sugar or blood pressure problems? Did your waters break early — how long before the birth? Medicines, alcohol, drugs? Scans normal? Were you given steroid injections before the birth?'** *E. coli UTI at 14 weeks, treated; waters broke about eight hours before; no steroids — no time.*"
     ],
     [
-     "2:00",
-     "DELIVERY AND AFTER: 'how many weeks were you? Vaginal or caesarean, any complications? DID HE CRY STRAIGHT AWAY — DID THEY NEED TO HELP HIM BREATHE? Did they mention HE'D PASSED A BOWEL MOTION INSIDE THE WOMB? Has he had VITAMIN K? Any DROOLING OR FROTHY SALIVA, any TURNING BLUE? Is he alert or sleepy? HAS HE PASSED URINE OR A BOWEL MOTION YET?'"
+     "1:55",
+     "**DELIVERY AND AFTER — resuscitation, meconium, drooling, blue**: **'32 weeks, vaginal — any complications, forceps? Did he cry straight away — did they need to help him breathe? Any mention of a bowel motion inside the womb? Vitamin K? Any drooling or frothy saliva, any turning blue? Alert or sleepy? Passed urine or a bowel motion?'** *Quick, normal; cried a little then grunty; rubbed, oxygen, no tube; no meconium; vitamin K yes; not drooling; not blue now; nothing passed.*"
     ],
     [
      "2:45",
-     "THE MOTHER HERSELF — a scored item candidates drop: 'and HOW ARE YOU FEELING RIGHT NOW, Jane? IS ANYONE HERE WITH YOU? How are you physically — bleeding, pain?' → 'terrified. My partner Sam is parking the car. I'm sore but OK.'"
+     "**THE MOTHER HERSELF**: **'and you, Jane — how are you feeling? Is someone with you? How are you physically — bleeding, pain?'** *'Terrified. Sam's parking. Sore but fine.'*"
     ],
     [
-     "3:15",
-     "The diagnosis — empathy again first, then surfactant in plain words (see dx) → 'Is it because of the infection I had? Because I lost the first one?' / 'Did I do something wrong?' → 'No. Nothing you did caused this, and the miscarriage isn't connected.' then reassure again — the second scored empathy point sits right here."
+     "3:05",
+     "**★ EMPATHY #2 — THEN THE DIAGNOSIS AND SURFACTANT IN PLAIN WORDS**: **'Jane, I can imagine how stressful this is. Your son most likely has respiratory distress syndrome — very common in premature babies. The lungs have millions of tiny air sacs coated with a soapy substance called surfactant, which stops them sticking shut at the end of each breath. Babies make most of it in the last weeks of pregnancy, so at 32 weeks he doesn't have enough yet. The sacs partly collapse with each breath and he has to work hard — that's the grunting and the pulling-in.'** **Never 'a lubricant of the chest wall'.**"
     ],
     [
-     "4:45",
-     "Management, point one and two: tests then antibiotics, then oxygen, CPAP, intubation, fluids, expressing, and surfactant named as an option (see dx) → 'Can't you just give the surfactant now?' / 'Will he be on the machine for long?'"
+     "3:55",
+     "**★ 'IS IT MY FAULT?' — remove the guilt, reassure again**: *'Is it because of the infection? Or because I lost the first one?'* → **'No. Nothing you did caused this, and the miscarriage isn't connected. Being born early is the reason — and that happens to many women who did everything right. We can treat this, and most premature babies with it do well.'**"
+    ],
+    [
+     "4:30",
+     "**★ EMPATHY #3 — THEN POINT ONE: TESTS, THEN ANTIBIOTICS**: **'I know this is a lot. Here's what we're doing. First, tests: bloods including a blood culture, his oxygen and sugar, and a chest X-ray — mainly to make sure there's no infection, because infection can look exactly like this, and with your urine infection and waters breaking early we take that seriously. As soon as the samples are taken, antibiotics through a drip as a precaution — and we stop them if the tests are clear.'**"
+    ],
+    [
+     "5:15",
+     "**BREATHING SUPPORT, FLUIDS, EXPRESSING — then POINT TWO: SURFACTANT**: **'we're monitoring his oxygen continuously. If breathing gets harder, a small mask giving a gentle continuous flow of air to hold the air sacs open — CPAP — or if needed a breathing tube and a machine. He won't feed by mouth yet, so fluids and sugar through the drip — and I'd encourage you to start expressing milk. There's also a treatment where specialists give surfactant itself down a thin tube into the lungs; it's an option they'll consider, often before he travels.'**"
     ],
     [
      "6:00",
-     "MANAGEMENT, POINT THREE — THE TRANSFER, FRAMED AS BEST CARE (see dx) → [panicking] 'TRAVELS? WHERE?' / 'WHY ADELAIDE — IS IT THAT BAD?' / 'CAN I GO WITH HIM?' → 'we'll do everything to keep you together' — then PATS, and checking she is well enough to travel. ('We'll keep him here and see' is the fail, and if you never mention transfer she asks 'SO HE'LL STAY HERE WITH ME?')"
+     "**★ POINT THREE: THE TRANSFER — BEST CARE, NOT DETERIORATION**: *'Travels? Where?'* → **'that's the most important thing I need to tell you. This needs continuous close monitoring in a neonatal intensive care unit, and usually takes days to weeks to improve. We don't have that unit here. So I'm arranging for the specialist retrieval team, MedSTAR, to take him to the Women's and Children's Hospital in Adelaide. That is not because he's getting worse — it's so he gets the best possible care.'**"
+    ],
+    [
+     "6:40",
+     "**'Can I go with him?' — keep them together; her own care; PATS**: **'we'll do everything to keep you together. The team will talk to you about travelling with him where possible; otherwise we'll get you there as soon as you're fit, with travel and accommodation support for you and Sam through the patient assistance scheme. And I'll check on you — your bleeding, your blood pressure — so you're well enough to go.'**"
     ],
     [
      "7:15",
-     "SUPPORT, SUMMARY AND THE FOURTH EMPATHY POINT (see dx): written information, a family meeting with Sam before the team arrives, 'any question at any hour', then the five-part summary ending 'I'M SO SORRY YOU'RE GOING THROUGH THIS — YOU'VE DONE NOTHING WRONG.'"
+     "**★ EMPATHY #4 — SUPPORT AND SUMMARY**: **'I'll give you written information from the Women's and Children's, and I'd like to sit with you and Sam before the team arrives. Any question, any time, ask the nurses to get me. To summarise: a treatable lung condition of prematurity; he's stable; tests, antibiotics as a precaution, breathing support, and the specialists may give surfactant; and he's going to the intensive care nursery in Adelaide for the best care, with you close by. I'm so sorry you're going through this — you've done nothing wrong.'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, the spine case",
-   "ask": [
-    "'I'm so sorry this is happening — I can only imagine how frightening this is.' / 'He is stable, he's in safe hands, and we're giving him the best care.' / 'Is he coughing, is it noisy, or is he working hard to breathe?' / 'Did your waters break early — how long before the birth?' / 'Did he cry straight away — did they need to help him breathe?' / 'Were you given steroid injections before the birth?' / 'And how are you feeling?'",
-    "'A SOAPY SUBSTANCE CALLED SURFACTANT THAT STOPS THE AIR SACS STICKING SHUT.' / 'Babies make most of it in the last few weeks — at 32 weeks he doesn't have enough yet.' / 'NOTHING YOU DID CAUSED THIS — BEING BORN EARLY IS THE REASON.' / 'The miscarriage isn't connected.'",
-    "'As soon as the samples are taken we'll start antibiotics as a precaution.' / 'CPAP — a gentle continuous flow of air to hold the air sacs open.' / 'Surfactant is an option the specialists will consider.' / 'We don't have a neonatal intensive care unit here — so he's going to the women's and children's, not because he's worse, but for the best care.' / 'We'll arrange travel and accommodation for you both.' / 'I'd encourage you to start expressing milk.'",
-    "VERSION B — COUNSELLING ONLY, NO HISTORY: open with empathy and stability, THEN THE AGENDA QUESTION, WHICH IS WHAT THIS VERSION SCORES: 'before I explain, CAN I CHECK WHAT YOU'VE BEEN TOLD SO FAR, AND IS THERE ANYTHING YOU'RE MOST WORRIED ABOUT?' → 'nobody's told me anything. IS HE GOING TO DIE? IS IT MY FAULT?' Then the diagnosis and surfactant as above, then: 'THREE THINGS WE DO NOW, AND ONE BIG THING. Tests then antibiotics as a precaution; oxygen, with CPAP or a breathing tube if he needs it, and fluids through a drip; and the specialists may give him surfactant into the lungs. THE BIG THING: he needs an intensive care nursery, WHICH WE DON'T HAVE HERE, so the retrieval team will take him to the Women's and Children's — FOR THE BEST CARE, NOT BECAUSE HE'S WORSE.'",
-    "VERSION C — THE POSITIVE FINDINGS: 'I had a urine infection at 14 weeks — E. coli — and my waters broke eight hours before he came. DID THAT CAUSE THIS?' → 'thank you for telling me — BOTH ARE IMPORTANT. The infection was treated, and eight hours is not a long time for the waters to be broken, SO NEITHER OF THESE CAUSED HIS LUNGS TO BE SHORT OF SURFACTANT; BEING BORN AT 32 WEEKS DID. BUT BOTH MAKE INFECTION SOMETHING WE TAKE EVEN MORE SERIOUSLY — which is exactly why we'll take blood tests and start antibiotics straight away, rather than waiting for results.' And to the examiner, if asked whether it changes management: 'NO — IT STRENGTHENS THE CASE FOR EMPIRICAL ANTIBIOTICS AFTER CULTURES, and I would ADD A LUMBAR PUNCTURE IF HE SHOWED ANY SIGNS OF SEPSIS; the diagnosis, respiratory support, surfactant option and transfer are unchanged.' (Saying the findings 'DON'T MATTER' is the trap — they do not change the plan, but they MUST be acknowledged and linked to sepsis risk.)"
-   ],
    "pefe": [
-    "Role-player: JANE, 26, A SCHOOLTEACHER IN WALLAROO. You have just delivered your son AT 32 WEEKS after a quick labour; YOUR WATERS BROKE ABOUT EIGHT HOURS BEFORE. YOUR FIRST PREGNANCY ENDED IN MISCARRIAGE AT 10 WEEKS LAST YEAR. You had AN E. COLI URINARY INFECTION AT 14 WEEKS, treated with antibiotics. No diabetes, no blood pressure problems, normal scans, NO STEROID INJECTIONS — NO TIME. The baby CRIED BRIEFLY, THEN GRUNTED; the midwives rubbed him and gave oxygen through a headbox; NO TUBE. HE HAS NOT FED. Your partner SAM IS PARKING THE CAR.",
-    "Emotional register: crying, frightened, guilty. Ask early: 'Is he going to die?' and 'Is it my fault — the infection? I lost the first one.' when transfer is mentioned, panic: 'Why Adelaide? Is it that bad? Can I go with him?' if the doctor never mentions transfer, ask at the end: 'So he'll stay here with me?' if they never mention antibiotics or infection, ask: 'Could the infection I had have got into him?' if they never mention surfactant, ask: 'Is there any medicine for his lungs?'",
-    "Score the doctor: EMPATHY AT THE OPENING; reassurance — STABLE, SAFE HANDS; explored the breathing and its onset; pregnancy infections, PROM, diabetes AND STEROIDS; delivery, resuscitation, meconium; feeding, drooling, blue, alert, urine and stool; ASKED HOW YOU ARE; NAMED RESPIRATORY DISTRESS SYNDROME; SURFACTANT EXPLAINED AS AN AIR-SAC LINING AND LINKED TO PREMATURITY; 'NOT YOUR FAULT'; EMPATHY AGAIN BEFORE MANAGEMENT; tests INCLUDING BLOOD CULTURE AND CHEST X-RAY; ANTIBIOTICS AFTER CULTURES; oxygen to CPAP to intubation; IV fluids, nil by mouth, EXPRESSING; SURFACTANT AS AN OPTION; TRANSFER TO NICU FRAMED AS BEST CARE; PATS, travel AND YOUR OWN CARE; written information and a family meeting; AND A SUMMARY WITH FINAL EMPATHY.",
-    "The baby now — STABLE, IN A HEADBOX WITH 40% OXYGEN — not blue on oxygen, a bit alert, HAS NOT FED, nothing passed yet",
-    "Antenatal steroids — NONE — 'THERE WASN'T TIME, IT ALL HAPPENED SO FAST'. Given only if you ask, and not asking is the named trap",
-    "The infection risk — An E. Coli urinary infection at 14 weeks, treated with antibiotics — and the waters broke about eight hours before delivery",
-    "What those two mean — Neither caused the surfactant deficiency — but both raise the weight you give to sepsis, and you must say so",
-    "The rest of the pregnancy — No diabetes or hypertension, no medicines, alcohol or drugs, SCANS NORMAL",
-    "Meconium, vitamin K, drooling — NO meconium mentioned — VITAMIN K GIVEN — NO drooling or frothy saliva",
-    "Her own history — FIRST PREGNANCY ENDED IN MISCARRIAGE AT 10 WEEKS LAST YEAR — and she believes it may be connected",
-    "The mother now — TERRIFIED, CRYING, GUILTY — partner SAM IS PARKING THE CAR — she is sore but physically okay",
-    "What she will ask — 'Is he going to die?' — 'Is it my fault — the infection? I lost the first one' — and when transfer is mentioned, 'Why Adelaide? Is it that bad? Can I go with him?'",
-    "What she asks if you omit it — No transfer mentioned: 'SO HE'LL STAY HERE WITH ME?' — no antibiotics: 'COULD THE INFECTION I HAD HAVE GOT INTO HIM?' — no surfactant: 'IS THERE ANY MEDICINE FOR HIS LUNGS?'"
+    "**No examination task — observations can be confirmed with nursing staff or asked of the examiner: SpO2, RR, temperature, glucose.**",
+    "**WARMTH: incubator or radiant warmer, hat, plastic wrap; 36.5–37.5 °C. Hypothermia and hypoglycaemia both worsen RDS.**",
+    "**OXYGEN titrated to SpO2 91–95% in the preterm — NOT unrestricted high-flow (retinopathy of prematurity, BPD).** VERIFY",
+    "**EARLY NASAL CPAP 5–8 cmH2O first-line for the preterm with distress; intubate and ventilate if apnoeic, rising CO2, or failing CPAP.** VERIFY",
+    "**IV access; BSL; 10% dextrose ~60 mL/kg/day on day 1; NIL BY MOUTH; minimal handling; vitamin K; expressed breast milk from now.** VERIFY",
+    "**INVESTIGATIONS: blood culture, FBC, CRP, blood gas, glucose, CXR (low volume, ground glass, air bronchograms) ± LP if unwell.**",
+    "**THEN ANTIBIOTICS: IV benzylpenicillin + gentamicin (neonatal dosing by gestation); stop at 36–48 h if cultures negative and well.** VERIFY",
+    "**SURFACTANT: poractant alfa 200 mg/kg first dose, by LISA on CPAP or INSURE if FiO2 > 0.30, or in any intubated infant with RDS — usually by the retrieval team or NICU.** VERIFY",
+    "**TRANSFER: call EARLY — WCH neonatal registrar and MedSTAR 1300 13 12 33 for retrieval to WCH / Flinders NICU. PATS for the family. The mother's own care: bleeding, BP, Rh status and anti-D, mood.**",
+    "**DO NOT MISS: PNEUMOTHORAX on sudden deterioration (transilluminate, needle, drain); SEPSIS (maternal UTI, PROM, GBS); hypoglycaemia; hypothermia. AVOID: feeds in distress, false reassurance, jargon, promising surfactant yourself, forgetting the rural context.**"
    ],
-   "fails": [
-    "★ Missing any of the four scored empathy points — opening, before the diagnosis, before management, and at the end",
-    "★ Forgetting any of the three management points: investigations then antibiotics, surfactant as an option, and transfer to a tertiary NICU",
-    "Saying 'he'll be fine' instead of 'he is stable and this is a condition we treat'",
-    "The 'chest-wall lubricant' explanation of surfactant, or blaming the mother for the infection or the miscarriage",
-    "Launching into questions without empathy; not asking about antenatal steroids; not linking the UTI and early rupture to infection risk; keeping him at the rural hospital to 'see how he goes'; and forgetting PATS, expressing, and the mother's own care"
-   ],
-   "numbers": [
-    "32 WEEKS · surfactant adequate at about 34-36 WEEKS · BETAMETHASONE 11.4 mg IM TWICE, 24 HOURS APART, from 23 to 34+6 WEEKS · temperature 36.5-37.5 · TARGET SpO2 91-95% · CPAP 5-8 cmH2O",
-    "SURFACTANT IF FiO2 ABOVE 0.30 · poractant 200 mg/kg · 10% dextrose about 60 mL/kg/day · BENZYLPENICILLIN PLUS GENTAMICIN, REVIEWED AT 36-48 HOURS · MedSTAR 1300 13 12 33 · Women's and Children's or Flinders NICU · PATS for travel and accommodation VERIFY"
+   "ddx": [
+    [
+     "**Respiratory distress syndrome**",
+     "**< 32–34 weeks, distress FROM BIRTH, GRUNTING, RECESSION, rising FiO2, NO ANTENATAL STEROIDS**",
+     "**CXR — ground glass, air bronchograms, low volume**",
+     "**CPAP, surfactant, NICU.** Now. This is the case"
+    ],
+    [
+     "Transient tachypnoea of the newborn",
+     "**Term / late preterm, CAESAREAN WITHOUT LABOUR, tachypnoea with a mild O2 need, settles < 72 h**",
+     "CXR streaky, fluid in the fissure",
+     "Supportive; treat as RDS/sepsis until clear. Now"
+    ],
+    [
+     "**Early-onset sepsis / pneumonia**",
+     "**Maternal UTI, GBS, PROM, fever, temperature instability, poor perfusion, apnoea**",
+     "**Cultures, FBC, CRP, gas**",
+     "**Benzylpenicillin + gentamicin AFTER cultures.** VERIFY Immediate. **Can't be excluded at birth**"
+    ],
+    [
+     "Pneumothorax",
+     "**SUDDEN deterioration, asymmetric chest, shift**",
+     "Transillumination, CXR",
+     "Needle thoracocentesis, drain. Immediate"
+    ],
+    [
+     "Meconium aspiration",
+     "Meconium-stained liquor, term/post-term, coarse patchy CXR",
+     "Liquor history",
+     "Support; antibiotics; NICU. **Uncommon before 34 weeks**"
+    ],
+    [
+     "Congenital heart disease",
+     "**Cyanosis NOT improving with O2, murmur, weak femorals, worse with feeds**",
+     "Pre/post-ductal sats, hyperoxia test",
+     "Echo; prostaglandin if duct-dependent. VERIFY Urgent"
+    ],
+    [
+     "TOF / oesophageal atresia",
+     "**DROOLING, frothy, CHOKING with feeds, polyhydramnios**",
+     "Pass an NGT — coils in the pouch on CXR",
+     "NBM, Replogle tube, surgical referral. Urgent"
+    ],
+    [
+     "Diaphragmatic hernia / choanal atresia",
+     "Scaphoid abdomen, bowel sounds in the chest / can't pass a nasal catheter, better when crying",
+     "CXR / catheter",
+     "Intubate (no bag-mask) / oral airway. Urgent"
+    ],
+    [
+     "Hypoglycaemia, hypothermia, polycythaemia, anaemia",
+     "Jittery, cold, plethoric or pale",
+     "BSL, temperature, Hb",
+     "Correct. Now"
+    ]
    ]
   },
   "source": "Neonatal_RDS_Rural_Counselling_2_Case_Tasks_Script_Notability.pdf (Jane, 26, whose son was born at 32 weeks in a rural hospital and is in a headbox with 40% oxygen — neonatal respiratory distress syndrome; four separately scored empathy points, antenatal steroids and early rupture asked by name, surfactant explained as the air-sac lining rather than a chest-wall lubricant, the blame removed from the infection and the miscarriage, and the three forgotten management points — investigations then antibiotics, surfactant as an option, and transfer framed as best care; the counselling-only and positive-findings versions folded in)",
   "drive": "AMC Clinical Notability › Pediatric › Neonatal_RDS_Rural_Counselling_2_Case_Tasks_Script_Notability.pdf",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "The stem, and what Jane gives only if asked — no examination task",
   "must": [
-   "FAIL — Missing any of the four scored empathy points — opening, before the diagnosis, before management, and at the end",
-   "FAIL — Forgetting any of the three management points: investigations THEN antibiotics, surfactant as an option, and transfer to a tertiary NICU",
-   "FAIL — Saying 'he'll be fine' instead of 'he is stable and this is a condition we treat'",
-   "FAIL — Explaining surfactant as a chest-wall lubricant, or leaving her holding the blame — 'nothing you did caused this; being born early is the reason'",
-   "SAY — 'Surfactant is a SOAPY SUBSTANCE that stops the tiny air sacs sticking shut at the end of each breath — babies make most of it in the last weeks, so at 32 weeks he doesn't have enough yet.'",
-   "DO — Ask about ANTENATAL STEROIDS, and link the urine infection and the early waters to INFECTION RISK — they don't change the plan, but saying they don't matter is a fail; then cover PATS, expressing and her own bleeding"
-  ]
+   "FAIL — **Forgetting the transfer** — managing a 32-week infant with RDS 'on the ward' in Wallaroo. Rural hospital, no NICU, MedSTAR.",
+   "FAIL — **No antibiotics** — naming RDS and stopping. Cultures first, then antibiotics, because sepsis can't be excluded.",
+   "FAIL — **No surfactant** — never mentioning it as a treatment option.",
+   "FAIL — **Empathy once only**, **false reassurance ('he'll be fine')**, **the 'chest-wall lubricant' explanation**, or **feeding a baby in distress**.",
+   "ASK — **Did your waters break early — how long before the birth? Any infections in the pregnancy? Were you given steroid injections before the birth?**",
+   "ASK — **And how are you feeling right now, Jane? Is anyone here with you? How are you physically?**"
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-46",
@@ -97432,7 +97523,6 @@ const EMBEDDED_CARDS = [
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "'Are you compliant?' Gets 'Yes'. The role-player answers the question asked, and the trigger is only released by the words 'Has he missed any doses recently, even one?' The other two things this station is built on: a full abdominal examination despite an obvious diagnosis, and a dipstick where you say 'Glucose and ketones' — because the examiner asks what you are looking for and gives only what you name.",
   "stem": [
    "Emergency department, Wallaroo hospital, Yorke Peninsula (MM5). Nearest paediatric ICU is the women's and children's in Adelaide, about 160 km, with retrieval via MedSTAR kids. Liam, a 4-year-old boy, is brought in by his father mark with two days of vomiting and diarrhoea. He is a known type 1 diabetic diagnosed 18 months ago, on insulin.",
    "Triage observations are stable and do not need repeating: HR 112, RR 26, BP 96/58, temp 37.4, SpO2 99% on air, weight 16 kg. Tasks: take a focused history from the father, about 4 minutes — ask the examiner for the physical examination findings, given only if you ask specifically, about 2 minutes — explain the most likely diagnosis and your reasons to the father, about 2 minutes."
@@ -97442,7 +97532,6 @@ const EMBEDDED_CARDS = [
    "Ask the examiner for the physical examination findings",
    "Explain the most likely diagnosis and your reasons to the father"
   ],
-  "time": "Twenty seconds to open, using the observations you have already been given rather than repeating them · then vomiting and diarrhoea · then the four diabetes questions with missed doses asked in words, plus polyuria and polydipsia · then the GI differentials and the gastroenteritis screen · then DKA symptoms, well-child questions and triggers · then the infection box · then a full examination request including the abdomen and groin · then three layers, reasons, the trigger without blame, and differentials anyway.",
   "findings": [
    [
     "The two bedside tests, and the trick inside them",
@@ -97454,116 +97543,114 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "Diabetic ketoacidosis in a 4-year-old with established type 1 diabetes, triggered by two missed insulin doses with an intercurrent gastroenteritis — and the station is decided by the wording of the compliance question, a full abdomen despite an obvious diagnosis, and naming ketones on the dipstick. The numbers: bedside glucose 18 to 19 · dipstick glucose 4+ and ketones 3+, with blood ketones 4.2 · DKA is glucose over 11 plus ketones 3 or more plus a pH under 7.3 or bicarbonate under 15 · severity is pH under 7.3 mild, under 7.2 moderate, under 7.1 severe · fluids are 10 mL/kg of 0.9% saline only if shocked, with the deficit replaced over 48 hours and potassium at 40 mmol/L · insulin is 0.05 to 0.1 units/kg/h started an hour after fluids, with no bolus · cerebral oedema occurs 4 to 12 hours in · and MedSTAR kids is 1300 13 12 33 for retrieval to the women's and children's VERIFY all. If the examiner asks for immediate management: 'IV access; venous gas, glucose, blood ketones, electrolytes and full blood count; weigh him; call the paediatric team and MedSTAR kids. If he is shocked, 0.9% saline 10 mL/kg over 30 to 60 minutes; otherwise rehydrate over 48 hours with potassium added once I have a level; insulin infusion 0.05 to 0.1 units per kilo per hour starting an hour after fluids, no bolus; hourly glucose and neuro observations for cerebral oedema.' The variants. Version B hides the diabetes — the stem says only vomiting and diarrhoea, and it appears in past history if you ask: 'Does Liam have any medical conditions, or take any regular medicines?' → 'He's diabetic — on insulin' → and you pivot: 'That's very important, so let me ask about it properly' and run all four questions plus polyuria and polydipsia. The drowsy-child version — 'He's really sleepy, I can hardly wake him' → severity moves the examination to the front: 'I'm going to examine him straight away and ask the nurse to call the paediatric team and MedSTAR kids now. Examiner: consciousness, breathing pattern, capillary refill, blood glucose and ketones first' — and the explanation shortens to one line: DKA, serious, retrieval. If the examiner challenges the abdomen — 'Vitals are stable and you know it's DKA, do you really need it?' → 'Yes. Vomiting with abdominal pain in a child can be appendicitis, intussusception or a strangulated hernia, and DKA can mask or mimic them — so a full abdominal examination and the groin, and I'd re-examine after treatment starts.' and if the father asks to go home — 'I understand; hospital with a small child is hard. But his blood is acidic and he can't keep fluids down; giving insulin at home now, without fluids and monitoring, can be dangerous. He needs the drip today. I'll arrange PATS if he's transferred to Adelaide.' and the close that is worth the last ten seconds: sick-day rules discussed once he is better, not while his father is frightened.",
+   "dx": [
+    "**PAEDIATRIC DIABETIC KETOACIDOSIS — Liam, 4, a known TYPE 1 DIABETIC (diagnosed 18 months ago, twice-daily insulin), brought by his father Mark to Wallaroo ED with TWO DAYS of VOMITING and a day of DIARRHOEA after a camping trip; vitals already taken and stable (HR 112, RR 26, BP 96/58, T 37.4, 16 kg). The trigger: they RAN OUT OF INSULIN and he MISSED TWO DOSES. Tasks: history from the father (~4 min) · examination findings — only if asked specifically (~2 min) · the most likely diagnosis and reasons (~2 min). Version B hides the diabetes in the past history.**",
+    "**OPEN — DON'T REPEAT THE VITALS: 'the nurse has checked his observations and they're stable, which is reassuring — tell me what's been happening' → vomiting since Thursday, now diarrhoea, 'he's diabetic, so I got worried' · 'I'll ask a lot of quick questions; some won't seem related.'**",
+    "**VOMITING AND DIARRHOEA — BRIEFLY: vomiting — when, how often (4–5 a day, worse today), green or blood (no), forceful, KEEPING FLUIDS DOWN (not much now) · diarrhoea — days, number, watery, blood or mucus (3–4 watery, no blood). No chronic-diarrhoea questions on a two-day history.**",
+    "**THE DIABETES — FOUR QUESTIONS, 'MISSED DOSES' IN WORDS: when diagnosed · which insulin and how given · 'are you giving it as instructed — and has he MISSED ANY DOSES recently, even one?' → 'we're always careful… well, we were camping and RAN OUT — he missed the last two' · follow-up (WCH every three months) and previous admissions (none) · active symptoms: THIRST ('drinking heaps') and URINE or BEDWETTING ('wet the bed twice'). 'Are you compliant?' gets 'yes' — the role-player answers only the question asked.**",
+    "**GI DIFFERENTIALS AND THE GASTRO SCREEN: 'has he complained of TUMMY PAIN — where, constant or in waves?' (all over, constant — both a DKA feature and the surgical differential) · screaming in bouts, swollen tummy, GROIN LUMP, RED-JELLY stool (intussusception, hernia) · food reactions · CONTACTS (a cousin's vomiting bug at the campsite), travel, tank water.**",
+    "**DKA SYMPTOMS, WELL-CHILD, TRIGGERS, INFECTION: ALERT, active and playful — or DROWSY, sleepy, FLOPPY? (quiet and tired, but talks and watched TV) · eating — LOLLIES on the trip · BREATHING fast or deep? (a bit fast) · headache (cerebral oedema) · new medicines — STEROIDS? · fever, runny nose, cough, sore throat, EAR pain, smelly or painful URINE, RASH (infection is both a second trigger and a differential) · allergies, immunisations, development, FAMILY HISTORY (his aunt has type 1), who's at home.**",
+    "**ASK FOR THE EXAMINATION — FULL ABDOMEN, THEN GLUCOSE AND KETONES: consciousness (alert, drowsy, hard to rouse), colour, rash, BREATHING PATTERN — deep sighing (KUSSMAUL) · HYDRATION — mucous membranes, tears, turgor, CRT, sunken eyes · ENT and NECK STIFFNESS · chest · ABDOMEN — inspection, palpation for tenderness, guarding, rigidity, masses, organomegaly, bowel sounds · GROIN and scrotum · a finger-prick BLOOD GLUCOSE and a URINE DIPSTICK — 'what are you looking for?' → 'GLUCOSE AND KETONES' → alert but tired, breathing slightly deep, dry lips, CRT 2 s, throat mildly red, mild generalised tenderness without guarding, glucose 18, urine glucose 4+, KETONES 3+ (blood ketones 4.2 if asked).**",
+    "**NAME IT IN THREE LAYERS: 'Mark, I think Liam has DIABETIC KETOACIDOSIS — DKA — a COMPLICATION of the diabetes he already has · when there isn't enough INSULIN, sugar can't get into the cells and BUILDS UP in the blood · the body switches to BURNING FAT, which makes a waste chemical called KETONES · and ketones make the blood ACIDIC — that's the vomiting, the tummy pain, the thirst and the tiredness.' No pancreas lecture.**",
+    "**THE REASONS AND THE TRIGGER — WITHOUT BLAME: diabetes · vomiting with TUMMY PAIN · THIRST and WEEING a lot · sugar 18 · lots of KETONES in the urine · the likely trigger — the TWO MISSED DOSES on the camping trip, with the tummy bug on top · 'so this is my fault?' → 'no — running out on a trip happens to families doing everything right; what matters is you brought him in early.'**",
+    "**DISPOSITION AND DIFFERENTIALS: serious but very treatable — HOSPITAL TODAY for FLUIDS AND INSULIN through a DRIP; speak to the children's specialists in Adelaide about treating here or transferring (MedSTAR Kids) · 'can't we go home with fluids and I'll give his insulin tonight?' → his blood is acidic and he can't keep fluids down; insulin at home now without fluids and monitoring can be dangerous; PATS if transferred · also considered — GASTRO alone, APPENDICITIS, BOWEL BLOCKAGE, a HERNIA, a FOOD REACTION, OTHER INFECTIONS — the examination doesn't point to them, but we'll keep checking · sick-day rules once he's better.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Open in twenty seconds — use the triage observations rather than repeating them, say they are reassuring, and ask what has been happening."
+     "**Introduce; 'the nurse's observations are stable — tell me what's happening'. Don't repeat vitals.**"
     ],
     [
      "0:20",
-     "VOMITING — onset, frequency, worsening, COLOUR INCLUDING GREEN AND BLOOD, forceful, AND WHETHER HE IS KEEPING FLUIDS DOWN."
-    ],
-    [
-     "1:00",
-     "DIARRHOEA BRIEFLY — days, frequency, watery, BLOOD OR MUCUS, amount."
+     "**Vomiting — frequency, trend, green/blood, KEEPING FLUIDS DOWN. Diarrhoea — number, watery, blood.**"
     ],
     [
      "1:20",
-     "The four diabetes questions — with missed doses asked in words — then polyuria and polydipsia."
+     "**Diabetes — diagnosed, insulin, 'MISSED ANY DOSES, even one?', follow-up, admissions; THIRST and URINE/BEDWETTING.**"
     ],
     [
      "2:20",
-     "ABDOMINAL PAIN, THEN THE SURGICAL SCREEN — screaming in bouts, distension, GROIN LUMP, RED JELLY STOOL."
-    ],
-    [
-     "2:50",
-     "THE GASTROENTERITIS SCREEN — food reactions, SICK CONTACTS, travel, new foods, tank water."
+     "**TUMMY PAIN — where, constant or waves; screaming bouts, swelling, groin lump, jelly stool; food; contacts, travel.**"
     ],
     [
      "3:10",
-     "Well-child and triggers — alert versus drowsy, diet change and sweets, deep or fast breathing, headache, new medicines including steroids."
-    ],
-    [
-     "3:40",
-     "THE INFECTION BOX AND THE CLOSE — fever, ENT, ear pain, URINE, rash, recent vaccination · allergies, immunisations, birth and development, FAMILY HISTORY, who is at home."
+     "**ALERT or DROWSY; sweets; BREATHING; headache; STEROIDS; fever, ENT, ears, urine, rash; family history.**"
     ],
     [
      "4:00",
-     "THE EXAMINATION REQUEST — consciousness, colour, BREATHING PATTERN, hydration, ENT and neck, chest."
-    ],
-    [
-     "5:00",
-     "The full abdomen and the groin — inspection, palpation for tenderness guarding rigidity and masses, auscultation, and a hernia check."
-    ],
-    [
-     "5:40",
-     "The two bedside tests, and say 'Glucose and ketones' when asked what you are looking for."
+     "**Exam — consciousness, BREATHING PATTERN, hydration, ENT and neck, chest, FULL ABDOMEN, groin; finger-prick GLUCOSE; dipstick 'GLUCOSE AND KETONES'.**"
     ],
     [
      "6:00",
-     "The three-layer explanation, then the five reasons."
-    ],
-    [
-     "7:00",
-     "Name the trigger without blame, answer 'Is this my fault?', give the differentials anyway, and state the disposition — hospital today, fluids and insulin by drip, and a call to the Adelaide specialists."
+     "**DKA in THREE LAYERS; the reasons; the trigger WITHOUT BLAME; hospital today, drip, specialists; differentials; questions.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the stem splits it 4 minutes history, 2 examination, 2 explanation - the abdomen and the dipstick wording both live in the middle block",
-   "ask": [
-    "The wording that unlocks the case: 'Are you giving it as instructed — and has he missed any doses, even one?' not 'Are you compliant?'",
-    "The two active-symptom questions: 'More thirsty than usual? Passing more urine, wetting the bed?' and the one that is both feature and differential: 'Has he complained of tummy pain — where, constant or in waves?'",
-    "The examination lines: 'A full abdominal examination — inspection, palpation for tenderness, guarding, rigidity, masses; auscultation; the groin.' and 'A finger-prick blood glucose and a urine dipstick — glucose and ketones.'",
-    "The explanation spine: 'DKA — a complication of the diabetes he already has.' · 'Not enough insulin — sugar builds up — the body burns fat and makes ketones — ketones make the blood acidic.' · and 'Easy to do — the point is what we do now.'",
-    "CHALLENGES: 'SO THIS IS MY FAULT?' when the trigger is named · 'CAN WE JUST GO HOME WITH FLUIDS AND I'LL GIVE HIS INSULIN TONIGHT?' · the examiner on whether the abdomen is really needed · 'WHAT IS YOUR IMMEDIATE MANAGEMENT?' · and the drowsy-child version, where the examination moves to the front."
-   ],
    "pefe": [
-    "The examiner gives a finding only if you ask for it specifically, and the dipstick is a trap inside a trap: ask for one and you are asked what you are looking for, and you receive only what you name. Say glucose and ketones. The other deliberate omission is the abdomen — cutting it to 'Soft' because the diagnosis is obvious is exactly what the case is testing.",
-    "Role-player: mark, 34, a grain farmer near Wallaroo. Liam, 4, is his eldest, with type 1 diabetes diagnosed 18 months ago on twice-daily long- and short-acting insulin, reviewed every three months by the WCH diabetes team. They were camping at the weekend, ran out of insulin, and he missed the last two doses; his cousin had a vomiting bug there.",
-    "How he plays it: worried and guilty about the insulin. He says 'We're always careful' and only admits the missed doses if asked directly about missed doses. He answers only what is asked, in short answers. He raises 'So this is my fault?' when the trigger is named, pushes once for going home with fluids, and becomes quiet and looks at the floor if blamed. If the doctor is doing well but has not asked by 3:30 he says 'His tummy's been sore too.'",
-    "THE CHECKLIST: open question with NO VITALS REPEAT · vomiting explored · diarrhoea explored briefly · WHEN DIAGNOSED · TREATMENT · MISSED DOSES ASKED SPECIFICALLY · follow-up and complications · POLYURIA AND POLYDIPSIA · ABDOMINAL PAIN · hernia, intussusception and allergy questions · gastroenteritis contacts and travel · ALERT VERSUS DROWSY · diet change · STEROIDS AND NEW MEDICINES · fever, ENT, urinary symptoms, rash · past history, allergies, immunisations and family history · EXAMINATION COVERING CONSCIOUSNESS, HYDRATION, TEMPERATURE, ENT, CHEST, A FULL ABDOMEN AND THE GROIN · BLOOD GLUCOSE ASKED · DIPSTICK WITH 'GLUCOSE AND KETONES' NAMED · DKA NAMED AS A COMPLICATION OF EXISTING DIABETES · THREE-LAYER EXPLANATION WITHOUT A LECTURE · REASONS LISTED · TRIGGER NAMED WITHOUT BLAME · DIFFERENTIALS STATED · AND HOSPITAL TODAY WITH SPECIALIST INVOLVEMENT.",
-    "The question that releases the trigger — 'Are you giving it as instructed — and has he missed any doses recently, even one?' → 'We're always careful…' and then, only if missed doses are asked about directly: 'We were camping on the weekend and ran out. He missed the last two doses.' Asking 'Are you compliant?' Gets 'Yes' and nothing else",
-    "The four diabetes questions, plus the active symptoms — When was he diagnosed — 18 months ago · what treatment, which insulin, how given — twice daily long-acting and short · given as instructed and any missed doses · regular follow-up and previous complications or admissions — WCH every three months, never admitted · then: 'More thirsty, drinking a lot? Passing more urine, wetting the bed?' → drinking heaps and wet the bed twice, which he never does",
-    "The vomiting and diarrhoea, briefly — VOMITING: onset, frequency, GETTING WORSE, COLOUR AND ANY GREEN OR BLOOD, FORCEFUL, after food, KEEPING FLUIDS DOWN → two days, four or five a day, worse today, NO GREEN OR BLOOD, not keeping much down · DIARRHOEA: days, frequency, WATERY, BLOOD OR MUCUS, large amounts → since yesterday, three or four watery, nothing abnormal. Chronic-diarrhoea questions on a two-day history waste time",
-    "The abdominal pain question — both a DKA feature and the surgical differential — 'Has he complained of tummy pain? Where — constant or in waves?' → all over, sort of constant · then irritable or screaming in bouts, tummy swollen, any lump in the groin, any red jelly-like stool. Forgetting abdominal pain entirely is the trap — and if you are doing well but have not asked by 3:30, the father says 'His tummy's been sore too'",
-    "The gastroenteritis screen and the food questions — Any rash around the mouth or reaction after certain foods · anyone at home or kindy with the same → his cousin had a vomiting bug at the campsite · any travel, new foods, tank water. The cousin is a second trigger, not a reason to stop",
-    "DKA symptoms, well-child questions and other triggers — 'Is he alert, active and playful, or has he been drowsy, sleepy or floppy?' → tired and quieter but still talks and watched TV, not floppy · any change in eating and drinking, lots of sweets or a party → lots of lollies on the trip · breathing fast or deeply → a bit fast · headache · and 'Any new medicines — steroids like prednisolone, anything from the chemist?'",
-    "The infection box — a second trigger and a differential — Fever or chills · runny nose, cough, sore throat, drooling · ear pain · smelly urine or pain passing urine · rash · recent vaccinations · then close with allergies, immunisations, birth growth and development, family history of diabetes thyroid or coeliac, and who is at home. Skipping this because you already have a trigger is the trap — it is on the mark sheet",
-    "The explanation in three layers — 'I think Liam has DIABETIC KETOACIDOSIS, OR DKA — A COMPLICATION OF THE DIABETES HE ALREADY HAS. WHEN THERE ISN'T ENOUGH INSULIN, SUGAR CAN'T GET INTO THE CELLS AND BUILDS UP IN THE BLOOD; THE BODY SWITCHES TO BURNING FAT, WHICH MAKES A WASTE CHEMICAL CALLED KETONES; AND KETONES MAKE THE BLOOD ACIDIC. That's what's causing the vomiting, the tummy pain, the thirst and the tiredness.' A pancreas lecture, or naming only one layer, is the trap",
-    "The reasons, the trigger without blame, and differentials anyway — Reasons: he has diabetes · vomiting with tummy pain · thirst and passing urine · sugar 18 · ketones in the urine · trigger: the two missed doses, with the vomiting bug on TOP · and when he asks 'So this is my fault?': 'No — this happens to families who are doing everything right. Running out on a camping trip happens. What matters is that you brought him in early' · then the differentials anyway: a tummy bug alone, appendicitis, a bowel blockage, a hernia, a food reaction and other infections — none supported by the examination, though you keep checking",
-    "The examination request — and the abdomen is not optional — General appearance and consciousness — alert, drowsy or difficult to rouse · colour, rash, and breathing pattern including deep sighing breaths · hydration — mucous membranes, tears, skin turgor, capillary refill, sunken eyes · ENT and neck stiffness · chest · a full abdomen — inspection for distension, masses and visible peristalsis, palpation for tenderness, guarding, rigidity, masses and organomegaly, auscultation · and the groin and scrotum for a hernia"
+    "**Given: HR 112 · RR 26 · BP 96/58 · T 37.4 · SpO2 99% · 16 kg (don't repeat). On request: alert but tired · pink, no rash · breathing slightly DEEP · dry lips, CRT 2 s, eyes not sunken · throat mildly red, ears normal, no neck stiffness · chest clear · abdomen soft, mild GENERALISED tenderness, no guarding, no masses, normal bowel sounds · no hernia · BLOOD GLUCOSE 18 · dipstick GLUCOSE 4+, KETONES 3+ · blood ketones 4.2.**",
+    "**Numbers: DKA = glucose >11 + ketones ≥3 + venous pH <7.3 or HCO3 <15 · severity pH <7.3 mild, <7.2 moderate, <7.1 severe · fluids: 0.9% saline 10 mL/kg ONLY if shocked, deficit replaced over 48 h, potassium 40 mmol/L once the level is known · insulin 0.05–0.1 units/kg/h starting ONE HOUR after fluids, NO bolus · cerebral oedema risk 4–12 h into treatment · MedSTAR Kids 1300 13 12 33 · WCH.** VERIFY.",
+    "**Role-player: Mark, 34, grain farmer; Liam his eldest. Worried and guilty — says 'we're always careful' and admits the MISSED DOSES only if asked directly about missed doses. Short answers; pushes once for going home with fluids; goes quiet if blamed. If the doctor hasn't asked by 3:30: 'his tummy's been sore too'. When the trigger is named: 'so this is my fault?'. As examiner: findings only when specifically asked; on 'dipstick' asks 'what are you looking for?' and gives only what's named.**",
+    "**VARIANT 1 — VERSION B, DIABETES HIDDEN: 'any medical conditions or regular medicines?' → 'he's diabetic — on insulin' → 'that's very important, so let me ask properly' — diagnosis, insulin, missed doses, follow-up, thirst and urine. VARIANT 2 — 'HE'S REALLY SLEEPY, I CAN HARDLY WAKE HIM': that changes things — examine now, call the paediatric team and MedSTAR Kids; consciousness, breathing pattern, CRT, glucose and ketones first; the explanation shrinks to one line — DKA, serious, retrieval.**",
+    "**VARIANT 3 — 'YOU KNOW IT'S DKA — DO YOU REALLY NEED THE ABDOMEN?': yes — vomiting with abdominal pain can be appendicitis, intussusception or a strangulated hernia, and DKA can mask or mimic them; full abdomen and groin, and re-examine after treatment starts. VARIANT 4 — 'CAN WE JUST GO HOME?': acidic blood, not keeping fluids down, insulin at home now can be dangerous — he needs the drip today; PATS if transferred.**",
+    "**VARIANT 5 — 'WHAT IS YOUR IMMEDIATE MANAGEMENT?': IV access; venous gas, glucose, blood ketones, electrolytes, FBC; weigh him; paediatric team and MedSTAR Kids · if shocked 0.9% saline 10 mL/kg over 30–60 min, otherwise rehydrate over 48 h with potassium added once a level is back · insulin infusion 0.05–0.1 units/kg/h from an hour after fluids, no bolus · hourly glucose and neuro observations for cerebral oedema.**",
+    "**Scoring: open question, no vitals repeat · vomiting and diarrhoea explored · when diagnosed · treatment · MISSED DOSES asked specifically · follow-up · polyuria and polydipsia · abdominal pain · hernia, intussusception, allergy questions · contacts and travel · alert vs drowsy · diet change · steroids · fever, ENT, UTI, rash · close · consciousness, hydration, ENT, chest, FULL abdomen, groin · blood glucose · dipstick 'glucose and ketones' · DKA named as a complication · three-layer explanation · reasons · trigger without blame · differentials · hospital today with specialists.**"
    ],
-   "fails": [
-    "★ Asking 'are you compliant?' instead of 'has he missed any doses, even one?' — the father answers the question asked, and the trigger is never found",
-    "★ Cutting the abdominal examination short because the diagnosis is obvious, or listing everything on the dipstick except ketones",
-    "Forgetting to ask about abdominal pain, which is both a DKA feature and the surgical differential in a vomiting child",
-    "Skipping the infection box because you already have a trigger — infection is both a second trigger and a differential, and it is on the mark sheet",
-    "Blaming the parents, giving a pancreas lecture instead of three plain layers, spending the explanation task on fluid and insulin doses, or sending him home to push fluids"
-   ],
-   "numbers": [
-    "Bedside glucose 18 to 19 · dipstick glucose 4+, ketones 3+, blood ketones 4.2 · DKA = glucose >11 + ketones ≥3 + pH <7.3 or HCO3 <15 · severity: pH <7.3 mild, <7.2 moderate, <7.1 severe · weight 16 kg",
-    "Fluids 10 mL/kg 0.9% saline only if shocked; deficit over 48 hours; potassium 40 mmol/L · insulin 0.05 to 0.1 units/kg/h starting 1 hour after fluids, no bolus · cerebral oedema 4 to 12 hours in, so hourly neuro observations · MedSTAR kids 1300 13 12 33 · WCH · TIS 131 450 · VERIFY all"
+   "ddx": [
+    [
+     "**Diabetic ketoacidosis (mild) triggered by missed insulin ± gastroenteritis** — the answer",
+     "**Known T1DM, two missed doses; vomiting, abdominal pain, polydipsia, bedwetting, deep breathing; glucose 18, ketones 3+**",
+     "**'Missed any doses?'; glucose AND ketones; full abdomen**",
+     "**Hospital today — fluids and insulin by drip, specialists, MedSTAR Kids if transferring; sick-day rules later**"
+    ],
+    [
+     "**Gastroenteritis alone**",
+     "**Vomiting and diarrhoea with a sick contact, normal ketones and glucose control**",
+     "**Glucose and ketones; hydration**",
+     "**Named, but ketones and hyperglycaemia make DKA the diagnosis**"
+    ],
+    [
+     "**Appendicitis**",
+     "**Pain migrating to the RIF, localised tenderness, guarding, fever — can be masked or mimicked by DKA**",
+     "**Full abdominal examination; re-examine after treatment**",
+     "**Surgical review if localising signs**"
+    ],
+    [
+     "**Intussusception; incarcerated hernia; bowel obstruction**",
+     "**Screaming bouts, jelly stool, a mass; a groin lump; bilious vomiting, distension**",
+     "**Targeted questions; abdomen and groin**",
+     "**Urgent surgical review if present**"
+    ],
+    [
+     "**Other infection as a second trigger — UTI, otitis, pneumonia, sepsis**",
+     "**Fever, ear pain, cough, dysuria, rash, drowsiness**",
+     "**The infection box; ENT, chest, urine**",
+     "**Treat the source alongside DKA management**"
+    ],
+    [
+     "**Food reaction; cerebral oedema (complication)**",
+     "**Vomiting after a food, perioral rash; headache, falling GCS, bradycardia during treatment**",
+     "**Food history; headache and conscious-state monitoring**",
+     "**Allergy management; urgent treatment of cerebral oedema (mannitol or hypertonic saline) and senior help**"
+    ]
    ]
   },
   "source": "Paediatric_DKA_2_Case_Tasks_Script_Notability.pdf (Liam, 4, with type 1 diabetes and two days of vomiting and diarrhoea at a rural emergency department — DKA triggered by two insulin doses missed on a camping trip, where the trigger is released only by asking about missed doses in words, the abdomen must be examined fully despite an obvious diagnosis, and the dipstick gives only what you name)",
   "drive": "AMC Clinical Notability › Pediatric › Abdo GI › Paediatric_DKA_2_Case_Tasks_Script_Notability.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Asking 'are you compliant?' instead of 'has he missed any doses, even one?' — the father answers the question asked, and the trigger is never found",
-   "FAIL — Cutting the abdominal examination short because the diagnosis is obvious, or listing everything on the dipstick except ketones",
-   "FAIL — Forgetting to ask about abdominal pain, which is both a DKA feature and the surgical differential in a vomiting child",
-   "FAIL — Skipping the infection box because you already have a trigger — infection is both a second trigger and a differential, and it is on the mark sheet",
-   "FAIL — Blaming the parents, giving a pancreas lecture instead of three plain layers, spending the explanation task on fluid and insulin doses, or sending him home to push fluids",
-   "SAY — Three layers then the reasons: 'not enough insulin, so sugar builds up; the body burns fat and makes KETONES; ketones make the blood ACIDIC' — then diabetes, vomiting with tummy pain, thirst and wetting, sugar 18, ketones on the dipstick"
-  ]
+   "FAIL — Asking 'are you compliant?' instead of 'has he missed any doses, even one?'",
+   "FAIL — Asking for a dipstick without saying 'glucose and ketones'.",
+   "FAIL — Forgetting abdominal pain, or cutting the abdomen to 'soft' because the diagnosis seems obvious.",
+   "FAIL — Blaming the father, or 'go home and push fluids'.",
+   "SAY — DKA — a complication of the diabetes he already has.",
+   "SAY — Not enough insulin — sugar builds up — the body burns fat and makes ketones — ketones make the blood acidic."
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-76",
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "Say the grade, then the ladder. Hedging — 'Moderate to severe, maybe' — scores nothing: commit to the worst feature present and give one sentence of reasons. And the first bullet of management is ondansetron, because fluids without an antiemetic in a vomiting child is the commonest miss. The sister's gastro is offered early to tempt you to stop looking.",
   "stem": [
    "You are a GP in a regional South Australian practice. A 6-month-old boy is brought in by his mother with vomiting and diarrhoea for 24 hours. He is on her lap.",
    "Tasks: take a focused history, 4 minutes — get the examination findings from the examiner — assess and state the degree of dehydration — explain the diagnosis and differentials to the mother — give your management plan. Version A is severe; version B is mild to moderate."
@@ -97575,7 +97662,6 @@ const EMBEDDED_CARDS = [
    "Explain the diagnosis and differentials to the mother",
    "Give your management plan"
   ],
-  "time": "Ask for observations and today's weight before the history, and ask again later if deferred · then vomiting and diarrhoea with the words 'Green', 'Blood' and 'Red jelly' said aloud · then the two differential groups and the well-baby questions · then binds-ma in thirty seconds · then ninety seconds of examination including both groins · then commit to a grade with reasons, explain both differential groups, and give management as numbered bullets.",
   "findings": [
    [
     "Ask for observations and the weight first",
@@ -97591,115 +97677,118 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "GASTROENTERITIS WITH DEHYDRATION IN A 6-MONTH-OLD — severe in version A, mild to moderate in version B — where the marks are in committing to a grade with reasons and giving the fluid ladder in order. The numbers: normal heart rate at 6 months is up to about 160 to 170 with a systolic of about 70 to 105 · capillary refill 2 seconds or less is normal, 3 seconds is moderate to severe, and over 3 seconds is shock · dehydration is mild under 4%, moderate 4 to 6%, and severe at 7% or more — so 8.1 kg falling to 7.3 kg is 10% and severe by definition · ondansetron is 0.15 mg/kg, which is 2 mg for 8 to 15 kg, 4 mg for 15 to 30 kg and 8 mg above 30 kg, and it is used from 6 months · oral rehydration is 5 mL every one to two minutes, or 50 mL/kg over 4 hours, plus 10 mL/kg per stool and 2 mL/kg per vomit · a shock bolus is 20 mL/kg of 0.9% saline · rotavirus vaccine is given at 6 weeks and 4 months · exclusion is 24 hours, or 48 in an outbreak · review at 24 hours · and MedSTAR kids is 1300 13 12 33 VERIFY all. Her three questions and their answers: 'Should I stop breastfeeding?' → no, keep going · 'Can I give him juice or lemonade?' → no, sugary drinks make the diarrhoea worse; Hydralyte is the right one · 'Do we need antibiotics?' → no, this is a virus. And when she pushes back in version A — 'Can't we just do the Hydralyte thing at home? That's what they did with his sister' → 'For his sister, who was alert and drinking, that was right. Liam is drowsy and not keeping fluids in, and at this level a baby can get worse very quickly.' The variants. The ED setting → 'Supervised oral rehydration now: ondansetron, then 5 mL of ORS every minute by syringe with the nurses recording it; if he is not tolerating that within an hour we move to a nasogastric tube at 50 mL/kg over four hours; I'd check a glucose and electrolytes, and if he is shocked at any point, a 20 mL/kg bolus of normal saline. Reassess and REWEIGH at four hours.' The unvaccinated version — 'He hasn't had any vaccinations' → 'Thank you for telling me. Unvaccinated babies can get more severe rotavirus gastro, which fits with today. Once he's better I'd like to talk about catch-up immunisation — the rotavirus drops have an age limit, so we'll check what's still possible. Is there something that's held you back that I can help with?' Do not lecture: note it, link it to severity, and offer the conversation later — judgement here is an approach-to-patient mark. And her hidden agenda is guilt — she believes she gave him the bug by not washing her hands after looking after his sister, and she mentions it only if asked how she is coping, or at the end. The six red flags she leaves with, given as numbers: drowsy or floppy · no wet nappy for six hours · green vomit · blood in the stool · refusing all fluids · a rash that does not fade.",
+   "dx": [
+    "**GASTROENTERITIS WITH SEVERE DEHYDRATION — Liam, 6 months, brought by his mother Sarah: 24 hours of VOMITING then DIARRHOEA; his 3-year-old sister had gastro last week; DROWSY; only TWO WET NAPPIES since yesterday; weight 8.1 kg last week → 7.3 kg today (~10%). HR 165, BP 82 systolic, CRT 3 s. Tasks: history (4 min) · examination findings · state the degree of dehydration · diagnosis and differentials to the mother · management. Version A = severe; Version B = mild-to-moderate.**",
+    "**OPEN — OBSERVATIONS AND WEIGHT FIRST: 'before I ask anything, could I have his observations — temperature, heart rate, breathing, blood pressure, oxygen and TODAY'S WEIGHT?' (asking early scores the hydration-awareness mark, even if deferred) · 'tell me what's been happening since yesterday' · one sentence of empathy.**",
+    "**VOMITING, THEN DIARRHOEA: how many vomits · milk coming back, or any GREEN or yellow-green? any BLOOD? forceful? straight after feeds? · stools — how many, watery or soft, BLOOD or MUCUS, anything like RED JELLY, bulky? Accepting 'milky' without saying 'green' is the commonest silent omission.**",
+    "**THE TWO DIFFERENTIAL GROUPS, THEN THE WELL-BABY QUESTIONS: BOWEL — tummy swollen? LUMP in the groin or scrotum? SCREAMING IN BOUTS then pale or floppy (intussusception)? recent cold or vaccine? solids and food-related vomiting, perioral rash · INFECTION ELSEWHERE — fever, runny nose, cough, noisy breathing, drooling, EAR pulling, unsettled on nappy change or smelly URINE, a RASH that doesn't fade, contacts, travel · 'the sister's gastro fits — and I still want to rule out a few other things' · then the important ones: ALERT or DROWSY? still breastfeeding? HOW MANY WET NAPPIES since yesterday, and WHEN WAS THE LAST?**",
+    "**BINDS-MA IN THIRTY SECONDS — AND THE WEIGHT: vaccinations incl ROTAVIRUS drops · birth and first bowel motion · growth — 'he was 8.1 kg at the nurse last week, 7.3 today — is that a worry?' → 'it IS significant — about TEN PER CENT of his body weight, which tells me how much fluid he's lost; thank you for weighing him' · medicines, allergies, family history.**",
+    "**ASK FOR THE EXAMINATION: undressed on Mum's lap — alert or drowsy, colour, activity, RASH (blanching?) · HYDRATION — fontanelle, eyes, mucous membranes, skin TURGOR, CAPILLARY REFILL, peripheries · ENT (throat, both drums) · chest · abdomen — distension, peristalsis, masses, tenderness, guarding, bowel sounds, both INGUINAL regions and the SCROTUM · urine DIPSTICK and a finger-prick GLUCOSE → Version A: drowsy but rousable, PALE, COOL, MOTTLED, sunken eyes, dry mouth, decreased turgor, CRT 3 s, no rash, ENT/chest/abdomen normal, ketones 2+, glucose 4.1.**",
+    "**STATE THE GRADE — COMMIT, WITH REASONS: Version A — 'taking the findings together — DROWSY, PALE and MOTTLED, reduced turgor, sunken eyes, CRT THREE SECONDS, HR 165, and a TEN PER CENT weight loss — this is SEVERE DEHYDRATION, and I'd treat him as at risk of SHOCK' · Version B — alert, good colour, CRT 2 s, normal HR, but sunken eyes and reduced turgor → MILD-TO-MODERATE, around 4–5%. Commit to the worst feature present.**",
+    "**DIAGNOSIS AND DIFFERENTIALS TO THE MOTHER: 'most likely GASTROENTERITIS — an infection of the bowel from a bug, usually a virus, which is why his sister has it too' · because of vomiting and diarrhoea together, the contact, and a normal tummy, ears, chest and urine · considered — BOWEL problems (a blockage, a section TELESCOPING, a TRAPPED HERNIA — but the tummy is soft, no lump, no green vomit or blood) and INFECTIONS ELSEWHERE (ear, chest, urine, a serious BLOOD infection) · in Version A the drowsiness keeps SEPSIS live — the hospital will check bloods and urine if he doesn't improve quickly with fluids.**",
+    "**MANAGEMENT — VERSION A (SEVERE): HOSPITAL TODAY — call the children's retrieval line (MedSTAR Kids) now · the ladder: an ONDANSETRON wafer to stop the vomiting → fluids by MOUTH in small frequent amounts → if that fails, a fine NASOGASTRIC tube → only then a DRIP; IV fluid straight away if SHOCK (20 mL/kg 0.9% saline) · check SUGAR and SALTS · meanwhile on Mum's lap, keep offering the breast · 'can't we do Hydralyte at home like his sister?' → his sister was alert and drinking; Liam is drowsy and not keeping fluids in, and at this level a baby can worsen quickly.**",
+    "**MANAGEMENT — VERSION B (HOME) AND THE MOTHER: (1) ONDANSETRON — half a 4 mg wafer (2 mg) once, now · (2) PUSH FLUIDS — after 30 minutes, 5 mL oral rehydration solution by syringe every couple of minutes, keep breastfeeding, extra after each vomit or stool; NO juice or lemonade · (3) paracetamol only if feverish · (4) hand-washing; no childcare until 24 hours after the last vomit or stool · (5) RED FLAGS — drowsy or floppy, NO WET NAPPY FOR SIX HOURS, GREEN vomit, BLOOD, refusing all fluids, a rash that doesn't fade · (6) REVIEW TOMORROW · no antibiotics (a virus) · her hidden guilt ('I think I gave it to him') — address it.**"
+   ],
    "plan": [
     [
      "0:00",
-     "INTRODUCE, THEN ASK THE EXAMINER FOR OBSERVATIONS AND TODAY'S WEIGHT BEFORE THE HISTORY — and say you will ask again later if deferred."
+     "**Introduce; ask for OBSERVATIONS and TODAY'S WEIGHT first; 'what's been happening?'; one line of empathy.**"
     ],
     [
-     "0:30",
-     "Open question to the mother, then one sentence that she did the right thing bringing him in."
+     "0:40",
+     "**Vomiting — number, GREEN?, BLOOD?, forceful. Stools — number, watery, BLOOD, MUCUS, RED JELLY.**"
     ],
     [
-     "0:50",
-     "VOMITING — number, APPEARANCE INCLUDING GREEN, BLOOD, FORCE, relation to feeds."
+     "1:30",
+     "**BOWEL group — swelling, groin LUMP, screaming bouts, recent cold/vaccine, solids. INFECTION group — fever, ENT, ears, URINE, non-blanching rash, contacts.**"
     ],
     [
-     "1:20",
-     "DIARRHOEA — number, watery or loose, BLOOD OR MUCUS, RED JELLY, bulky motions."
+     "2:40",
+     "**ALERT or DROWSY; breastfeeding; WET NAPPIES and the LAST one. Rotavirus, birth, GROWTH — register the 10% loss.**"
     ],
     [
-     "1:45",
-     "THE SURGICAL GROUP — distension, GROIN OR SCROTAL LUMP, SCREAMING IN BURSTS WITH PALLOR, recent cold or vaccination · then solids, food-related vomiting and perioral rash."
+     "3:40",
+     "**Exam — consciousness, colour, rash, HYDRATION signs incl CRT, ENT, chest, abdomen with GROINS and SCROTUM, dipstick, GLUCOSE.**"
     ],
     [
-     "2:20",
-     "THE INFECTION GROUP — fever, ENT, EAR PULLING, nappy-change distress and smelly urine, NON-BLANCHING RASH, sick contacts, travel."
-    ],
-    [
-     "3:00",
-     "The well-baby questions — alert or drowsy, feeding, and wet nappies with the time of the last one."
-    ],
-    [
-     "3:30",
-     "Binds-ma in thirty seconds — including rotavirus drops and the recent weight — and name the 10% loss as significant."
-    ],
-    [
-     "4:00",
-     "The examination request, undressed on her lap, with hydration in full and both groins."
+     "5:00",
+     "**State the GRADE with reasons — SEVERE (A) or mild-to-moderate (B).**"
     ],
     [
      "5:30",
-     "Commit to the grade in one sentence with the features that justify it."
+     "**GASTRO with reasons; differentials — bowel group and infection group; sepsis kept live if drowsy.**"
     ],
     [
-     "6:00",
-     "THE DIAGNOSIS AND BOTH DIFFERENTIAL GROUPS IN PLAIN WORDS — bowel problems, then infections elsewhere."
-    ],
-    [
-     "6:45",
-     "Management as numbered bullets — ondansetron first, then oral, then nasogastric, then intravenous — with the disposition stated."
-    ],
-    [
-     "7:30",
-     "Answer the breastfeeding, juice and antibiotic questions, give the six red flags and the review, and summarise."
+     "6:30",
+     "**A: HOSPITAL today — ondansetron → oral → NG → IV; MedSTAR Kids. B: ondansetron, ORS by syringe, red flags, review tomorrow. Guilt addressed; summary.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "five tasks in eight minutes - the history closes at four, and the grade, the differentials and the ladder all have to fit in the second half",
-   "ask": [
-    "THE OPENING REQUEST: 'BEFORE WE START, MAY I HAVE HIS OBSERVATIONS AND TODAY'S WEIGHT?' — the weight is what makes the grade defensible.",
-    "The three words that must be spoken: 'Was any of it green? Any blood?' and 'Anything like red jelly in the nappy?'",
-    "The three that decide the grade: 'Is he alert and playful, or drowsy?' · 'How many wet nappies — and when was the last?' · and 'What did he weigh last time?'",
-    "The commitment and the ladder: 'Taking the findings together, this is severe dehydration.' and 'Fluids by mouth, then by tube, then by drip — in that order.'",
-    "CHALLENGES: 'Can't we just do the Hydralyte thing at home? That's what they did with his sister' · 'SHOULD I STOP BREASTFEEDING?' · 'CAN I GIVE HIM JUICE OR LEMONADE?' · 'DO WE NEED ANTIBIOTICS?' · 'IS THAT A WORRY?' about the weight · and 'I THINK I GAVE IT TO HIM' if you ask how she is coping."
-   ],
    "pefe": [
-    "Examine him undressed on his mother's lap and request hydration in full — fontanelle, eyes, mucous membranes, skin turgor, capillary refill and peripheries — because those are the findings you will quote when you commit to a grade. Do not omit both inguinal regions and the scrotum, and add a urine dipstick and a finger-prick glucose.",
-    "Version A: drowsy but rousable, pale cool and mottled, sunken eyes, dry mouth, decreased turgor, capillary refill 3 seconds, no rash, ENT and chest normal, abdomen soft and non-tender with no hernia, ketones 2+ and glucose 4.1 · version B: miserable but alert, normal colour, sunken eyes, decreased turgor, refill 2 seconds, everything else normal.",
-    "Role-player: Sarah, 29, a bakery worker. Liam is her second child, 6 months, breastfed plus RICE cereal for two weeks. Her three-year-old daughter had gastro last week and got better at home with Hydralyte. She weighed Liam on the bathroom scales this morning at 7.3 kg against 8.1 kg at the nurse last week. She is frightened by how floppy he is but assumes she will be sent home with Hydralyte again.",
-    "HOW SHE PLAYS IT: anxious, speaks fast, TEARS UP WHEN TOLD HE NEEDS HOSPITAL AND CALMS QUICKLY IF THE STEPS ARE EXPLAINED. SHE VOLUNTEERS NOTHING ABOUT THE COLOUR OF THE VOMIT, BLOOD, WET NAPPIES OR THE WEIGHT UNLESS ASKED DIRECTLY — AND IF WET NAPPIES AND DROWSINESS ARE NEVER ASKED ABOUT, SHE SAYS NEAR THE END 'HE HASN'T WEED MUCH TODAY — IS THAT OKAY?' She pushes once on hospital, asks about breastfeeding when management starts, and asks about juice if Hydralyte is never named.",
-    "The three words that must be said aloud — Vomiting: 'Is it the milk coming back, or has any of it been green or yellow-green? Any blood? Is it a small spill or does it come out with force?' · diarrhoea: watery or loose, any blood or mucus, 'Anything like red jelly?', big bulky motions. Asking 'What colour is the vomit?' and accepting 'Milky' without saying green is the commonest silent omission",
-    "The surgical group — Is his tummy swollen · any lump in the groin or scrotum, especially when he cries · does he draw his legs up and scream in bursts, then go pale or floppy · has he had a cold or a vaccination recently · and the food group: have you started solids, does the vomiting follow a particular food, any rash around his mouth",
-    "The infection group — Fever · runny nose, cough, noisy breathing, drooling · pulling at his ears · unsettled when you change his nappy, or smelly urine · any rash, and does it fade when you press it · anyone unwell at home or childcare · any travel",
-    "The well-baby questions that decide the grade — 'Is he alert and playful, or drowsy?' → drowsy, not even crying properly · 'Is he still breastfeeding?' → latches for a minute then stops · 'How many wet nappies since yesterday — and when was the last one?' → two, the last at 7 this morning, and it is now 2 pm. If you never ask these she says near the end 'He hasn't weed much today — is that okay?'",
-    "Diagnostic momentum — the sister is bait — 'His sister had the same thing last week' is offered early to tempt you to stop. Say 'That fits, and I still want to rule out a few other things' and keep going",
-    "Binds-ma in thirty seconds — and the number inside it — VACCINATIONS UP TO DATE INCLUDING THE ROTAVIRUS DROPS · problems around birth OR PASSING THE FIRST BOWEL MOTION · 'ARE YOU HAPPY WITH HIS GROWTH — WHAT DID HE WEIGH LAST TIME?' → 8.1 kg AT THE NURSE LAST WEEK, 7.3 kg TODAY · medical problems, medicines, allergies, family history",
-    "The two differential groups, in plain words — 'Most likely GASTROENTERITIS — an infection of the bowel caused by a bug, usually a virus, which is why his sister has it too. I'm saying that because of the vomiting and diarrhoea together, THE CONTACT AT HOME, and because his tummy, ears, chest and urine are all normal' · THEN GROUP ONE, PROBLEMS IN THE BOWEL: A BLOCKAGE, A SECTION OF BOWEL TELESCOPING INTO ITSELF, OR A TRAPPED HERNIA — against which his tummy is soft, there is no lump, and NO GREEN VOMIT OR BLOOD · AND GROUP TWO, INFECTIONS ELSEWHERE: THE EAR, CHEST, URINE, OR A SERIOUS BLOOD INFECTION. In Version A the drowsiness keeps SEPSIS LIVE — say you will keep it in mind",
-    "Management — ondansetron is bullet one — Version A: hospital today and call the retrieval line now · in ED the ladder is a dissolving ondansetron wafer, then fluids by mouth in small frequent amounts, then a nasogastric tube if that fails, and only then a drip — with intravenous fluid straight away if he shows signs of shock · glucose and electrolytes checked · and 'Keep him on your lap, offer the breast, and I'll stay with you' · version B: ondansetron wafer now · Hydralyte 5 mL by syringe every couple of minutes from half an hour, keep breastfeeding, extra after every vomit or dirty nappy · paracetamol only if feverish · handwashing and no childcare until 24 hours after the last vomit or loose stool · six numbered red flags · and review tomorrow",
-    "The examination request — undressed on mum's lap — General appearance — alert or drowsy, colour, activity, any rash and does it blanch · hydration — fontanelle, eyes, mucous membranes, skin turgor, capillary refill, peripheries · ENT — throat and both eardrums · chest · abdomen — distension, visible peristalsis or masses, palpation, bowel sounds, and both inguinal regions and the scrotum · plus a urine dipstick and a finger-prick glucose"
+    "**Given (Version A): T 37.4 · HR 165 · RR 40 · SBP 82 · SpO2 98% · weight 7.3 kg. Examination: drowsy but rousable · PALE, COOL, MOTTLED · sunken eyes, dry mouth, decreased turgor, CRT 3 s · no rash · ears, throat, chest normal · abdomen soft, non-tender, not distended, no masses, no hernia · dipstick ketones 2+ · glucose 4.1. Version B: HR 130, weight 7.8 kg; miserable but alert, normal colour, sunken eyes, decreased turgor, CRT 2 s, otherwise normal.**",
+    "**Numbers: normal HR at 6 months up to ~160–170 · SBP ~70–105 · CRT ≤2 s normal, 3 s moderate–severe, >3 s shock · mild <4% · moderate 4–6% · severe ≥7% · 8.1 → 7.3 kg = 10% = severe · ondansetron 0.15 mg/kg — 8–15 kg 2 mg, 15–30 kg 4 mg, >30 kg 8 mg, from 6 months · ORS 5 mL every 1–2 min · 50 mL/kg over 4 h · +10 mL/kg per stool, +2 mL/kg per vomit · bolus 0.9% saline 20 mL/kg · rotavirus vaccine 6 weeks and 4 months · exclusion 24 h (48 h in an outbreak) · review 24 h · MedSTAR Kids 1300 13 12 33.** VERIFY.",
+    "**Role-player: Sarah, 29, bakery worker; Liam her second child, breastfed plus rice cereal for two weeks; her daughter had gastro last week and got better at home with Hydralyte; weighed him on the bathroom scales. Frightened by how floppy he is but assumes Hydralyte at home again; tears up at 'hospital', calms when the steps are explained. Volunteers nothing about vomit colour, blood, nappies or weight unless asked. If never asked about nappies or drowsiness: 'he hasn't weed much today — is that okay?'. Hidden agenda: guilt that she passed it on. Asks 'should I stop breastfeeding?' (no) and 'can I give juice or lemonade?' (no — sugary drinks worsen diarrhoea).**",
+    "**VARIANT — ED SETTING: supervised oral rehydration — ondansetron, then 5 mL ORS every minute by syringe with the nurses recording; not tolerating within an hour → nasogastric at 50 mL/kg over four hours; glucose and electrolytes; 20 mL/kg saline bolus if shocked; reassess and reweigh at four hours.**",
+    "**VARIANT — 'HE HASN'T HAD ANY VACCINATIONS' (older recall): unvaccinated babies get more severe rotavirus gastro, which fits today; once he's better, a catch-up conversation — the rotavirus drops have an age limit, the rest can be caught up; 'is there something that's held you back that I can help with?' Don't lecture; link it to severity; offer later.**",
+    "**Examiner may say 'we'll come to the examination later' when you ask for obs early — reply 'thank you, I'll ask again after the history'; the early request still scores.**",
+    "**Scoring: vitals early · said 'green' · said 'blood' and 'jelly' · groin lump · ear, urine, rash, fever · drowsy, wet nappies and the last nappy · rotavirus · 10% loss registered · groins, ears, chest, dipstick, glucose examined · grade stated with reasons · both differential groups named · ondansetron first · oral → NG → IV · retrieval (A) or numbered red flags and 24 h review (B) · guilt addressed · summary.**"
    ],
-   "fails": [
-    "★ Hedging the grade — 'moderate to severe, maybe' scores nothing; commit to the worst feature present and give one sentence of reasons",
-    "★ Giving fluids without ondansetron in a vomiting child, or giving the ladder out of order instead of oral, then nasogastric, then intravenous",
-    "Accepting 'milky' vomit without ever saying the word green, or never asking about blood and red jelly in the nappy",
-    "Stopping the differential because the sister has gastro — the contact is offered early precisely to create diagnostic momentum",
-    "Dismissing a 10% weight loss as 'just fluid', never asking about wet nappies and drowsiness, or omitting the groins and scrotum from the examination"
-   ],
-   "numbers": [
-    "Normal HR at 6 months up to about 160 to 170; systolic about 70 to 105 · capillary refill ≤2 s normal, 3 s moderate to severe, >3 s shock · dehydration mild <4%, moderate 4 to 6%, severe ≥7% · 8.1 kg to 7.3 kg is 10% and severe by definition",
-    "Ondansetron 0.15 mg/kg — 2 mg for 8 to 15 kg, 4 mg for 15 to 30 kg, 8 mg over 30 kg, from 6 months · ORS 5 mL every 1 to 2 minutes, or 50 mL/kg over 4 hours, plus 10 mL/kg per stool and 2 mL/kg per vomit · shock bolus 20 mL/kg 0.9% saline · rotavirus vaccine at 6 weeks and 4 months · exclusion 24 hours, 48 in an outbreak · review at 24 hours · MedSTAR kids 1300 13 12 33 · VERIFY all"
+   "ddx": [
+    [
+     "**Viral gastroenteritis with severe dehydration** — the answer (Version A)",
+     "**Vomiting then watery diarrhoea, a sick contact; drowsy, mottled, CRT 3 s, tachycardia, 10% weight loss**",
+     "**Vomit colour, blood, wet nappies, alertness, weight; hydration signs**",
+     "**Hospital today via MedSTAR Kids; ondansetron → oral → NG → IV; bolus if shocked**"
+    ],
+    [
+     "**Intussusception**",
+     "**Screaming in bouts with pallor, lethargy between, red-currant-jelly stool, bilious vomiting, a mass**",
+     "**'Screaming bouts?', 'red jelly?', abdominal palpation**",
+     "**Ultrasound and surgical referral if features present**"
+    ],
+    [
+     "**Bowel obstruction / malrotation with volvulus; incarcerated hernia**",
+     "**Bilious vomiting, distension, absent stools; a hard groin or scrotal lump**",
+     "**'Any green?'; abdomen; inguinal regions and scrotum**",
+     "**Urgent surgical review**"
+    ],
+    [
+     "**Urinary tract infection**",
+     "**Fever, irritability, vomiting in an infant; smelly urine, unsettled on nappy change**",
+     "**Urine questions; dipstick**",
+     "**Urine culture and antibiotics if positive**"
+    ],
+    [
+     "**Sepsis / meningitis**",
+     "**Drowsiness, mottling, fever or hypothermia, a non-blanching rash, bulging fontanelle**",
+     "**Alertness, rash, fontanelle; kept live in Version A**",
+     "**Bloods, urine, cultures in hospital if not improving quickly**"
+    ],
+    [
+     "**Otitis media / respiratory infection; food intolerance**",
+     "**Ear pulling, fever, cough; vomiting after a particular food, perioral rash**",
+     "**ENT and chest examination; solids history**",
+     "**Treat the source; dietary review**"
+    ]
    ]
   },
   "source": "Paeds_Gastro_Dehydration_2_Case_Tasks_Script_Notability.pdf (a 6-month-old with 24 hours of vomiting and diarrhoea whose weight has fallen from 8.1 to 7.3 kg — gastroenteritis with severe dehydration, where the station is won by asking for the weight, saying the words green, blood and red jelly, committing to a grade with reasons, and starting management with an ondansetron wafer before the fluid ladder)",
   "drive": "AMC Clinical Notability › Pediatric › Abdo GI › Paeds_Gastro_Dehydration_2_Case_Tasks_Script_Notability.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Hedging the grade — 'moderate to severe, maybe' scores nothing; commit to the worst feature present and give one sentence of reasons",
-   "FAIL — Giving fluids without ondansetron in a vomiting child, or giving the ladder out of order instead of oral, then nasogastric, then intravenous",
-   "FAIL — Accepting 'milky' vomit without ever saying the word GREEN, or never asking about blood and red jelly in the nappy",
-   "FAIL — Stopping the differential because the sister has gastro — the contact is offered early precisely to create diagnostic momentum",
-   "FAIL — Dismissing a 10% weight loss as 'just fluid', never asking about wet nappies and drowsiness, or omitting the groins and scrotum from the examination",
-   "DO — Give BOTH differential groups — bowel problems (blockage, telescoping, trapped hernia) and infections elsewhere (ear, chest, urine, blood) — and ask how she is coping; she believes she gave him the bug"
-  ]
+   "FAIL — Never asking whether the vomit was green, or about blood and 'red jelly' in the nappies.",
+   "FAIL — Dismissing the 8.1 → 7.3 kg drop as 'just fluid' — 10% is severe by definition.",
+   "FAIL — Hedging the grade ('moderate to severe, maybe') instead of committing with reasons.",
+   "FAIL — Fluids without an antiemetic — ondansetron is bullet one; or sending a severely dehydrated baby home.",
+   "SAY — Taking the findings together, this is severe dehydration.",
+   "SAY — Fluids by mouth, then by tube, then by drip — in that order."
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-77",
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "The stem says 'Groin' deliberately, and the boy never says 'Testicle' spontaneously. If you do not ask, he does not mention it and you never examine it. The pass line is a scrotal examination requested by name, with position and the cremasteric reflex · the word emergency with a time frame · and an investigation answer that shows reasoning rather than a bare 'No investigations'.",
   "stem": [
    "You are a junior doctor in the emergency department of a regional South Australian hospital. A 13-year-old boy is brought in by his father with sudden pain in the groin that began about two hours ago while playing basketball. He has vomited once. Observations from the examiner on request.",
    "Tasks: take a focused history from the boy and his father, 4 minutes — ask the examiner for the relevant physical examination findings, given only for what you ask, about 2 minutes — explain the most likely diagnosis to the patient and parent, with reasons — state the investigations you would request. 8 minutes."
@@ -97710,7 +97799,6 @@ const EMBEDDED_CARDS = [
    "Explain the most likely diagnosis with reasons",
    "State the investigations you would request"
   ],
-  "time": "Observations first, then SOCRATES on the groin pain including radiation · a mini vomiting history of two questions only, then hernia, appendix and obstruction · then urinary, then the genital questions you must ask yourself · then privacy for the sexual history, musculoskeletal, skin and lymph, previous episodes and pre-operative questions · then two minutes of examination ending in the cremasteric reflex · then the diagnosis with the word emergency and a six-hour clock · then investigations with the reasoning shown.",
   "findings": [
    [
     "What comes back",
@@ -97718,114 +97806,108 @@ const EMBEDDED_CARDS = [
    ]
   ],
   "back": {
-   "dx": "TESTICULAR TORSION IN A 13-YEAR-OLD PRESENTING AS GROIN PAIN — twisting of the spermatic cord on its axis, cutting venous then arterial supply, with a peak incidence at 12 to 18 years and a second peak in neonates, affecting about 1 in 4,000 males under 25. The bell-clapper deformity, where the tunica vaginalis completely surrounds the testis, predisposes to it and is usually bilateral — which is why both sides are fixed at surgery. Pain is often felt in the groin or lower abdomen, and the AMC gives 'Groin' deliberately. The numbers: onset two hours ago against a window of about six · salvage about 90% under 6 hours and under 10% beyond 24 · an absent cremasteric reflex is the most useful sign but is preserved in 10 to 30% of torsions, so it does not exclude · Doppler sensitivity is about 85 to 95% · intranasal fentanyl 1.5 mcg/kg to a maximum of 100 mcg, or IV morphine 0.1 mg/kg · manual detorsion is 'Open book', medial to lateral · consent covers orchidopexy plus or minus orchidectomy with contralateral fixation · and MedSTAR is 1300 13 12 33 for retrieval to the women's and children's VERIFY all. The red flags in any groin-pain history: sudden severe pain in a teenager with nausea or vomiting · onset with exertion, sleep or cold · previous brief episodes that resolved, which is intermittent torsion · pain that has improved after hours, which may be infarction rather than recovery · and any groin pain in a boy where the scrotum has not been examined. Version B is the harder one: ten hours of lower abdominal and groin pain that woke him at 3 am, two vomits, and previous self-limiting episodes months ago — intermittent torsion — with an embarrassed adolescent minimising in front of his father. The opening that works: 'I can see this is uncomfortable to talk about, and I'll keep it quick. Sometimes a problem with the testicle is felt in the tummy — so I need to ask: is there any pain or swelling in the testicles or scrotum? And has this ever happened before, even for a few minutes, and then gone away?' → 'Yeah. It's the right one. It happened twice before, a few months ago — it went away after about half an hour, so I didn't say anything.' The harder explanation: 'It sounds like it has twisted briefly before and untwisted itself. This time it hasn't. Because it's been about ten hours, the chance of saving it is lower than it would have been at two hours, but not zero, and the only way to know is for the surgeon to look. Even if it can't be saved, the other one will be stitched so it can never twist, and one testicle is enough. You did nothing wrong by not mentioning the earlier episodes — but from now on, pain there is something to tell someone straight away.' The examination card in that version adds scrotal oedema and erythema with a reactive hydrocele, and a horizontal lie on the left too — the bell-clapper. And the investigation principle does not change: surgery now, a Doppler only if the surgeon wants it and it does not delay theatre, bloods for the anaesthetist on the way.",
+   "dx": [
+    "**TESTICULAR TORSION — Josh, 13, brought by his father Mark to a regional ED with SUDDEN RIGHT GROIN pain TWO HOURS into a basketball game, 8/10, into the lower tummy, worse walking; ONE VOMIT (not green); LIMPING. HR 110. Tasks: history (4 min) · examination findings — specific findings only for what you ask · diagnosis with reasons · the investigations you'd request. Version B: 10 hours, an embarrassed adolescent who calls it 'just my stomach'.**",
+    "**OPEN — VITALS, THEN SOCRATES: 'show me EXACTLY where' (right groin) · onset — SECONDS, during sport ('it just hit me') · severity, character, RADIATION (lower tummy, testicle?), constant, what's worse (walking) · the father 'thought he'd pulled something.' The role-player won't say 'testicle' — 'groin' is the whole case design.**",
+    "**GI GROUP — TWO VOMITING QUESTIONS ONLY: vomiting — how many, what COLOUR (not green), any BLOOD · bowels, bloating, wind · a LUMP in the groin when he COUGHS (hernia) · did it START AROUND THE BELLY BUTTON and move (appendix)? · appetite · previous abdominal operations. Ten questions on vomiting costs the scrotal examination later.**",
+    "**URINARY, THEN THE TESTICLES — ASKED DIRECTLY: burning, frequency, haematuria, loin pain (no) · 'I need to ask about the TESTICLES, because they sit in the groin — any PAIN or SWELLING in the testicles or scrotum? Redness? Discharge?' → (glances at Dad) '…yeah, it's sore there too' · offer PRIVACY: 'I ask everyone your age a couple of private questions — would Dad mind stepping out?' → never sexually active.**",
+    "**MSK, SKIN, PREVIOUS EPISODES, PRE-OP: LIMPING (yes — and it doesn't exclude torsion) · injury including 'down there', hip pain, fever, heavy training · groin rashes, boils, leg infection (reactive nodes) · 'has anything like this ever happened BEFORE and gone away by itself?' (intermittent torsion — Version B) · LAST ATE (12.30), allergies, medicines, medical problems.**",
+    "**ASK FOR THE EXAMINATION — THE REFLEX BEFORE PREHN'S: general appearance (distressed, pale), hydration, rash · abdomen — distension, masses, tenderness, guarding especially the RIF, bowel sounds · inguinal regions, COUGH IMPULSE · 'with Josh's CONSENT and a CHAPERONE, the SCROTUM': inspection — swelling, redness, discharge; palpation — POSITION (HIGH-RIDING?), LIE (HORIZONTAL?), size, tenderness, masses, the EPIDIDYMIS · the CREMASTERIC REFLEX on EACH side · transillumination · inguinal nodes · HIP — gait and range · urine dipstick → RIGHT testis HIGH-RIDING, HORIZONTAL, swollen, EXQUISITELY TENDER; CREMASTERIC REFLEX ABSENT on the right; abdomen, hernias, hip range, nodes and dipstick normal.**",
+    "**NAME IT — DIRECTLY, BECAUSE IT'S URGENT: 'Josh, Mark — I need to be straight with you. Josh most likely has a TESTICULAR TORSION: the testicle has TWISTED on the cord that supplies its blood, and the twist has CUT OFF THE BLOOD SUPPLY — that's the pain and the vomiting. It's a MEDICAL EMERGENCY — the testicle can be saved if it's untwisted within about SIX HOURS of the pain starting, so we're moving fast.' Speak to Josh, not only to Dad.**",
+    "**THE REASONS, THEN TEN SECONDS OF DIFFERENTIALS: sudden onset DURING SPORT · VOMITED · LIMPING · the right testicle sits HIGHER and lies SIDEWAYS, is very TENDER, and the REFLEX we test by stroking the inner thigh is MISSING on that side · also considered — a TRAPPED HERNIA, APPENDICITIS, a URINE INFECTION, EPIDIDYMO-ORCHITIS / torsion of an appendage, a HIP problem, an infected groin GLAND — none fit.**",
+    "**INVESTIGATIONS — SHOW THE REASONING: 'treatment is time-critical, so when we're confident — and we are — we arrange SURGERY IMMEDIATELY without investigations that would delay it · if there were genuine doubt, a COLOUR DOPPLER ULTRASOUND shows whether blood is getting through · a urine dipstick (done) and the anaesthetist's pre-op bloods — but NOTHING HOLDS UP THE OPERATION' · to the examiner: NIL BY MOUTH, IV access, ANALGESIA (intranasal fentanyl or IV morphine), phoning the PAEDIATRIC SURGEON and MedSTAR now. 'No investigations' alone reads as a refusal or a recall.**",
+    "**THE OPERATION AND HIS QUESTIONS: 'an operation tonight? can't you scan it first?' → yes, tonight; when we're this confident a scan only delays what saves the testicle · the surgeon untwists it; if the blood returns it's kept and STITCHED IN PLACE, and the OTHER SIDE is fixed too; if it's been without blood too long it's REMOVED · 'will I still be able to have kids?' → ONE HEALTHY TESTICLE is enough for normal hormones and fertility · 'will it hurt?' → pain controlled in minutes, asleep for the operation. Consent: orchidopexy ± orchidectomy plus contralateral fixation.**"
+   ],
    "plan": [
     [
      "0:00",
-     "Introduce yourself to both, ask for observations, then ask the boy — not the father — what happened."
+     "**Introduce to Josh and Mark; VITALS; 'show me exactly where'; onset in SECONDS during sport; severity, radiation, worse walking.**"
     ],
     [
-     "0:20",
-     "SOCRATES on the groin pain, with 'Show me exactly where' and radiation asked including into the testicle."
-    ],
-    [
-     "1:00",
-     "THE GI GROUP — TWO VOMITING QUESTIONS ONLY, then bowels and wind, COUGH IMPULSE LUMP, appendicitis migration, appetite, previous surgery."
+     "0:50",
+     "**Vomit — COLOUR and BLOOD only; bowels; groin lump on COUGH; did it start at the belly button; operations.**"
     ],
     [
      "1:40",
-     "THE URINARY GROUP — dysuria, frequency, haematuria, loin pain."
+     "**Urinary; then 'I need to ask about the TESTICLES' — pain, swelling, redness, discharge; offer PRIVACY for the sexual history.**"
     ],
     [
-     "2:00",
-     "The genital questions, asked directly — testicular pain or swelling, redness, discharge."
+     "2:40",
+     "**LIMP; injury, hip, fever; groin skin; PREVIOUS SELF-RESOLVING EPISODES; LAST ATE, allergies, medicines.**"
     ],
     [
-     "2:20",
-     "Ask the father to step out, take the sexual history, and bring him back."
-    ],
-    [
-     "2:50",
-     "MUSCULOSKELETAL, SKIN AND LYMPH — LIMPING, trauma including to the scrotum, hip, fever, training, RASHES OR BOILS · AND PREVIOUS SELF-LIMITING EPISODES."
-    ],
-    [
-     "3:30",
-     "Pre-operative — last food and drink, allergies, medicines, medical problems."
-    ],
-    [
-     "4:00",
-     "THE EXAMINATION — general, abdomen with the right iliac fossa, INGUINAL REGIONS AND COUGH IMPULSE."
-    ],
-    [
-     "4:40",
-     "The scrotum, with consent and a chaperone — inspection, position, lie, tenderness, epididymis, then the cremasteric reflex both sides — then nodes, hip and dipstick."
+     "3:40",
+     "**Exam: abdomen, hernia, then SCROTUM with consent and chaperone — POSITION, LIE, tenderness, CREMASTERIC REFLEX both sides; hip; dipstick.**"
     ],
     [
      "5:40",
-     "Name torsion with its mechanism, say 'Emergency' and give the six-hour window."
+     "**TORSION — twisted cord, blood supply cut — EMERGENCY, ~6 HOURS; the reasons; ten-second differentials.**"
     ],
     [
-     "6:20",
-     "The four reasons, then ten seconds of differentials."
-    ],
-    [
-     "6:50",
-     "Answer the fertility and scan questions, then the investigation reasoning — surgery now, Doppler only if doubt, nothing delays theatre."
-    ],
-    [
-     "7:30",
-     "Nil by mouth, IV access and analgesia, surgeon and retrieval phoned, and a one-line summary spoken to the boy."
+     "6:40",
+     "**Investigations — SURGERY NOW; Doppler only if doubt; nothing delays theatre. NBM, IV, analgesia, surgeon and MedSTAR. Fertility question answered.**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "four tasks in eight minutes - the history closes at four, and the scrotal examination and the investigation reasoning are where the marks concentrate",
-   "ask": [
-    "THE QUESTION THE STATION IS DESIGNED AROUND: 'ANY PAIN OR SWELLING IN THE TESTICLES OR SCROTUM?' — he points to his groin and says 'here' until you ask it.",
-    "The privacy line: 'I ask everyone your age a couple of private questions' — and the one that catches intermittent torsion: 'Has anything like this ever happened before and gone away by itself?'",
-    "The examination request: 'With consent and a chaperone, I'd like to examine the scrotum — position, is it high-riding? Lie, horizontal? Cremasteric reflex both sides?'",
-    "The three sentences that carry the explanation: 'The testicle has twisted on its cord and the blood supply is cut off.' · 'This is a medical emergency — about six hours to save it.' · 'One healthy testicle is enough for normal hormones and fertility.'",
-    "CHALLENGES: 'AN OPERATION TONIGHT? WILL HE LOSE IT? CAN'T YOU SCAN IT FIRST?' → a scan would only delay the operation that saves it; we scan when unsure · 'WILL I STILL BE ABLE TO HAVE KIDS?' · 'WILL IT HURT?' · and in Version B, ten hours in with previous episodes, where the honesty about salvage must not slow you down."
-   ],
    "pefe": [
-    "The examiner gives specific findings only for what you ask, and has a list — so ask for the cremasteric reflex before Prehn's sign or transillumination, because it is the item that decides the mark. Also name consent and a chaperone before the scrotal examination, and do not skip the hernial orifices, the hip and the lymph nodes, which are what let you exclude the differentials out loud.",
-    "The key findings: right testis high-riding with a horizontal lie, swollen and exquisitely tender · cremasteric reflex absent on the right and present on the left · abdomen soft with no hernia and a normal cough impulse · antalgic gait but a full painless hip range · and a normal dipstick. Note that an absent reflex is the most useful sign but is preserved in 10 to 30% of torsions — its presence does not exclude the diagnosis.",
-    "Role-player: Josh, 13, in year 8, plays basketball. Two hours ago mid-game a sudden severe right groin pain, 8/10, sharp, spreading into the lower abdomen, worse walking, with one vomit of food. Limping since. The pain is in his testicle too, but he will not say so unless asked directly — he points and says 'Here'. Never sexually active, no injury, no fever, no urinary symptoms, never happened before in version A. Last ate at 12.30.",
-    "How he plays it: in pain, embarrassed, monosyllabic, glancing at his dad when genital questions come — and opening up if the doctor offers privacy or normalises the question. He asks 'Will I still be able to have kids?' after the diagnosis and 'Will it hurt?' At the end. Mark, the father, 44, an electrician, is worried, assumes a pulled muscle, asks 'An operation tonight?' and 'Can't you scan it first?', and steps out if asked politely. A separate marked item is speaking to Josh, not only to dad.",
-    "The question you have to ask yourself — 'Any pain or swelling in the testicles or scrotum? Any redness or rash there? Any discharge from the penis?' → (Embarrassed, glancing at his father) 'It's… sore down there too, I guess.' He points to the groin and says 'Here', and will not say testicle unless asked directly. The whole case is built on that word",
-    "SOCRATES, with radiation asked in both directions — Show me exactly where · when and what were you doing · seconds or built up · out of ten · sharp or aching · 'Does it go anywhere — into your tummy, your back, your testicle?' · constant · better or worse → right groin, two hours ago at basketball, sudden, 8/10, sharp, radiating into the lower abdomen, constant, worse walking",
-    "Two vomiting questions only — COLOUR AND BLOOD → ONCE, JUST FOOD, NOT GREEN, NO BLOOD. TEN QUESTIONS ON VOMITING HERE COSTS YOU THE SCROTAL EXAMINATION LATER · then the rest of the GI group briefly: diarrhoea, constipation, bloating, passing wind · A LUMP OR SWELLING IN THE GROIN ESPECIALLY WHEN HE COUGHS · DID THE PAIN START AROUND THE BELLY BUTTON AND MOVE · appetite · previous abdominal operations",
-    "The privacy move — '(to father) I ASK EVERYONE HIS AGE A COUPLE OF PRIVATE QUESTIONS — WOULD YOU MIND STEPPING OUT FOR A MOMENT?' → then 'HAVE YOU EVER BEEN SEXUALLY ACTIVE?' → never. Asked in front of his father he shrugs and looks down; asked privately he answers. The father STEPS OUT IF ASKED POLITELY",
-    "The rest of the history in one sweep — URINARY: burning, frequency, HAEMATURIA, loin or back pain · MUSCULOSKELETAL: 'HAVE YOU BEEN LIMPING?' → YES, SINCE IT STARTED — AND A LIMP DOES NOT EXCLUDE TORSION · any fall, knock or injury INCLUDING DOWN THERE · hip pain or stiffness · fever or chills · heavy training · SKIN AND LYMPH: rashes or boils in the groin, infection on the leg · 'HAS ANYTHING LIKE THIS EVER HAPPENED BEFORE AND GONE AWAY BY ITSELF?' · AND PRE-OPERATIVELY: WHEN DID YOU LAST EAT OR DRINK, allergies, medicines, medical problems → LUNCH AT 12.30",
-    "The scrotal items, in the order that scores — Inspection — swelling, redness, discharge · palpation — the position of each testis, is either high-riding · the lie — vertical or horizontal · size, tenderness, masses · the epididymis · 'The cremasteric reflex on each side' · transillumination · inguinal lymph nodes · hip gait and range · urine dipstick. Ask for the reflex before Prehn's sign or transillumination — the examiner has a list, and the reflex is the item that decides the mark",
-    "The diagnosis — mechanism, the word emergency, and the clock — 'He most likely has a testicular torsion. The testicle has twisted around on the cord that supplies its blood, and the twist has cut the blood supply off — that's what's causing the pain and the vomiting. This is a medical emergency: the testicle can be saved if it's untwisted within about six hours of the pain starting, so we need to move quickly'",
-    "The reasons, then ten seconds of differentials — Reasons: sudden onset during sport · vomiting · limping · and on examination the testicle sitting higher and lying sideways, very tender, with the reflex missing on that side · then, briefly: a trapped hernia, appendicitis, a urine infection, an infection of the tube behind the testicle, a hip problem, or an infected gland in the groin — and none of those fit",
-    "The two questions they ask, and the answers — Father: 'An operation? Tonight? Will he lose it? Can't you scan it first?' · boy: 'Will I still be able to have kids?' → 'If the blood supply comes back when it's untwisted, the testicle is kept and stitched in place so it can't twist again, and the surgeon will do the same to the other side. If it's been without blood too long it's removed — and one healthy testicle is enough for normal hormones and fertility. The sooner we go, the better the chance of saving it'",
-    "The investigation answer — show the reasoning — 'Treating this is time-critical, so when we have enough reasons to be confident — and we do — we arrange surgery immediately without investigations that would delay it. If there were genuine doubt, the test that helps is a colour Doppler ultrasound of the testes, which shows whether blood is getting through. I'll do the urine dipstick we have and the pre-operative bloods the anaesthetist needs — but nothing will hold up the operation' · plus: nil by mouth, IV access and analgesia, and phone the paediatric surgeon and MedSTAR now. 'No investigations' alone reads as a refusal or a recall",
-    "The examination request, with consent and a chaperone — General appearance — distressed, pale, alert · hydration, rash · ABDOMEN — distension, masses, visible peristalsis, tenderness and guarding ESPECIALLY THE RIGHT ILIAC FOSSA, bowel sounds · INGUINAL REGIONS — LUMPS AND COUGH IMPULSE · THEN: 'WITH HIS CONSENT AND A CHAPERONE PRESENT, I'D LIKE TO EXAMINE THE SCROTUM'"
+    "**Given: T 37.1 · HR 110 · RR 20 · BP 118/72 · SpO2 99%. On request: distressed, pale, alert · abdomen soft, non-tender, no guarding, bowel sounds normal · no inguinal lump, cough impulse normal · scrotum: right side mildly swollen, no erythema or discharge; RIGHT testis ELEVATED (high-riding) with a HORIZONTAL LIE, swollen, exquisitely tender; left normal lie, non-tender; epididymis not separately palpable on the right · CREMASTERIC REFLEX ABSENT right, present left · transillumination normal · no lymphadenopathy · antalgic gait, full painless hip range · dipstick normal.**",
+    "**Numbers: peak age 12–18 (and neonates) · onset 2 h; window ≈6 h; salvage ~90% within 6 h, <10% beyond 24 h · an absent cremasteric reflex is the most useful sign, but it's preserved in 10–30% of torsions · Doppler sensitivity ≈85–95% · intranasal fentanyl 1.5 microgram/kg (max 100) · IV morphine 0.1 mg/kg · manual detorsion 'open book', medial to lateral · MedSTAR 1300 13 12 33.** VERIFY.",
+    "**Role-player: Josh, 13, Year 8 — in pain, embarrassed, monosyllabic, glances at Dad when genital questions come; opens up if offered privacy or the question is normalised. Points to the groin and says 'here'; admits the testicle is sore ONLY if asked directly. Never sexually active. Asks 'will I still be able to have kids?' and 'will it hurt?'. Mark, 44, electrician — assumes a pulled muscle; asks 'an operation tonight?' and 'can't you scan it first?'; steps out if asked politely.**",
+    "**VERSION B — 10 HOURS, THE EMBARRASSED ADOLESCENT: woke at 3 am with 'tummy pain', vomited twice, 'it's just my stomach' · normalise — 'sometimes a problem with the testicle is felt in the tummy' — ask directly, and ask about PREVIOUS EPISODES → twice before, resolved in half an hour (INTERMITTENT TORSION) · honest without removing hope: at ten hours the chance of saving it is LOWER but not zero, the only way to know is for the surgeon to look, the other side will be fixed, one testicle is enough · he did nothing wrong by not mentioning it — from now on, tell someone straight away · same principle: surgery now; Doppler only if the surgeon wants it and it doesn't delay theatre.**",
+    "**Examiner presentation: 'a 13-year-old with sudden right groin and testicular pain during sport, vomiting and a limp; right testis high-riding and horizontal, exquisitely tender, absent cremasteric reflex — testicular torsion; surgical emergency — nil by mouth, analgesia, urgent paediatric surgery via MedSTAR; Doppler only if doubt, nothing delays theatre.'**",
+    "**Scoring: vitals · SOCRATES with radiation · vomit colour and blood · hernia and cough · appendix migration · urinary · TESTICLES ASKED DIRECTLY · discharge · privacy offered for the sexual history · limping · trauma, hip, fever · skin and nodes · previous episodes · last ate · abdomen and hernia examined · scrotum with consent and chaperone · position and lie · CREMASTERIC REFLEX both sides · hip, nodes, dipstick · 'torsion' and the mechanism · 'emergency' and six hours · reasons · ten-second differentials · investigations with reasoning · NBM, analgesia, surgeon, MedSTAR · fertility question answered · spoke to Josh · summary.**",
+    "**Why limping doesn't reassure: an antalgic gait follows any severe groin or scrotal pain — the full, painless passive hip range is what makes the hip unlikely.**"
    ],
-   "fails": [
-    "★ Never asking about the testicles or scrotum — he says 'groin', points, and never volunteers it, so the examination never happens either",
-    "★ Requesting a scrotal examination without the cremasteric reflex, or asking for Prehn's sign and transillumination ahead of it",
-    "Answering the investigation task with a bare 'no investigations' instead of the reasoning — surgery now because we are confident, Doppler only if genuine doubt, nothing delays theatre",
-    "Taking ten questions of vomiting history and running out of time for the scrotum, or omitting consent and a chaperone",
-    "Failing to say the word emergency with a time frame, letting a limp or a normal cough impulse reassure you, or talking only to the father"
-   ],
-   "numbers": [
-    "Peak age 12 to 18 years, with a neonatal second peak; about 1 in 4,000 males under 25 · onset 2 hours, window about 6 · salvage about 90% under 6 hours, under 10% beyond 24 · cremasteric reflex absent is the most useful sign but preserved in 10 to 30% of torsions · Doppler sensitivity about 85 to 95%",
-    "Intranasal fentanyl 1.5 mcg/kg, max 100 mcg · IV morphine 0.1 mg/kg · manual detorsion 'Open book', medial to lateral · consent: orchidopexy ± orchidectomy plus contralateral fixation, because the bell-clapper deformity is usually bilateral · MedSTAR 1300 13 12 33 · WCH · TIS 131 450 · VERIFY all"
+   "ddx": [
+    [
+     "**Testicular torsion** — the answer",
+     "**Sudden severe pain during activity, vomiting; high-riding, horizontal, exquisitely tender testis; absent cremasteric reflex**",
+     "**Ask about the testicles directly; scrotal examination incl. the cremasteric reflex**",
+     "**Theatre now within the ~6-hour window; Doppler only if genuine doubt; NBM, analgesia, surgeon, MedSTAR**"
+    ],
+    [
+     "**Torsion of a testicular appendage (hydatid of Morgagni)**",
+     "**More gradual onset, pain localised to the upper pole, 'blue dot' sign, cremasteric reflex present**",
+     "**Point tenderness; reflex preserved**",
+     "**If in doubt, surgical exploration — never assume**"
+    ],
+    [
+     "**Epididymo-orchitis**",
+     "**Gradual onset, fever, urinary symptoms, sexual activity; tender epididymis, reflex present, relief on elevation**",
+     "**Onset tempo; urinary and sexual history; cremasteric reflex**",
+     "**Urine testing and antibiotics — only once torsion is excluded**"
+    ],
+    [
+     "**Incarcerated inguinal hernia**",
+     "**Groin lump, cough impulse, obstructive symptoms**",
+     "**Inguinal examination and cough impulse**",
+     "**Urgent surgical review**"
+    ],
+    [
+     "**Appendicitis; urinary tract infection or stone**",
+     "**Periumbilical pain migrating to the RIF, anorexia, RIF tenderness; dysuria, haematuria, loin pain**",
+     "**Pain migration; RIF palpation; urinary questions and dipstick**",
+     "**Named in the ten-second differential with why not**"
+    ],
+    [
+     "**Hip pathology (e.g. SUFE); reactive inguinal lymphadenitis**",
+     "**Painful restricted hip movement in a limping adolescent; groin skin infection with tender nodes**",
+     "**Hip range of movement; skin and nodes**",
+     "**Hip imaging if restricted; treat the source**"
+    ]
    ]
   },
   "source": "Paeds_Testicular_Torsion_2_Case_Tasks_Script_Notability.pdf (Josh, 13, with sudden right groin pain two hours into a basketball game and one vomit — testicular torsion, where the stem says 'groin' deliberately, the boy never says 'testicle' unless asked, the cremasteric reflex is the item that decides the examination mark, and the investigation answer must show reasoning rather than a bare refusal)",
   "drive": "AMC Clinical Notability › Pediatric › Abdo GI › Paeds_Testicular_Torsion_2_Case_Tasks_Script_Notability.pdf",
   "findingsLabel": "Examination findings — open only when you would ask the examiner",
   "must": [
-   "FAIL — Never asking about the testicles or scrotum — he says 'groin', points, and never volunteers it, so the examination never happens either",
-   "FAIL — Requesting a scrotal examination without the cremasteric reflex, or asking for Prehn's sign and transillumination ahead of it",
-   "FAIL — Answering the investigation task with a bare 'no investigations' instead of the reasoning — surgery now because we are confident, Doppler only if genuine doubt, nothing delays theatre",
-   "FAIL — Taking ten questions of vomiting history and running out of time for the scrotum, or omitting consent and a chaperone",
-   "DO — Offer the father a moment outside before the sexual history — 'I ask everyone your age a couple of private questions' — and speak to the boy, not only to Dad",
-   "SAY — 'The testicle has TWISTED ON ITS CORD and the blood supply is cut off. This is an emergency — about SIX HOURS to save it' — then answer the fertility question: one healthy testicle is enough"
-  ]
+   "FAIL — Never asking about the testicles — the boy says 'groin' and will never volunteer them.",
+   "FAIL — Never asking for the cremasteric reflex, or never examining the scrotum (with consent and a chaperone).",
+   "FAIL — Ordering an ultrasound that delays theatre when the clinical picture is clear.",
+   "FAIL — 'No investigations' with no reasoning — or not naming the emergency and the six-hour window.",
+   "ASK — I need to ask about the testicles, because they sit in the groin — any pain or swelling there?",
+   "SAY — The testicle has twisted on its cord and the blood supply is cut off — about six hours to save it."
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-78",
@@ -100901,7 +100983,6 @@ const EMBEDDED_CARDS = [
   "cat": "couns",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "Treat immune thrombocytopenia as a diagnosis of exclusion — in both versions. In version 1 that means asking the malignancy and meningococcal questions, requesting the full node and spleen examination, and saying out loud that you have excluded them. In version 2 it means changing your mind when the card changes — candidates who have already decided walk past two enlarged cervical nodes and diagnose ITP anyway, which is premature closure and is the behaviour the second version exists to expose.",
   "stem": [
    "General practice. A 20-year-old woman has come complaining of a rash on her legs. A photograph in the stem shows a non-blanching purpuric rash over both shins. 8 minutes.",
    "Version 1 — the old recall. History: a flu-like illness last week, nothing else positive. Examination: everything normal, no fever, no lymphadenopathy, no splenomegaly. Diagnosis: immune thrombocytopenia, reached by exclusion.",
@@ -100913,111 +100994,166 @@ const EMBEDDED_CARDS = [
    "Ask the examiner for the physical examination findings",
    "Tell the examiner your diagnosis and your differentials"
   ],
-  "time": "Four minutes of history with a prompt commonly at 4 minutes · ask the malignancy and meningococcal blocks first, not last — the candidate who knows the recall is ITP and runs out of time before the red flags is the specific failure this station was built to catch",
-  "findingsLabel": "Do not decide the diagnosis before the examiner hands you the card",
+  "findingsLabel": "The examination request, and what the card says in each version — open only when you would ask the examiner",
   "findings": [
    [
-    "The photograph is not a shortcut",
-    "The picture is a STILL. It does not tell you whether it was weeping last night, whether it is spreading, or the three questions you must ask regardless: IS IT WARM? IS IT PAINFUL? IS IT ITCHY? A candidate who skips the rash history because there is a photograph HAS NOT TAKEN A HISTORY. And get the observations first: 'BEFORE I START — COULD I HAVE HER OBSERVATIONS, PARTICULARLY HER TEMPERATURE?' FEVER PLUS PURPURA IS MENINGOCOCCAEMIA UNTIL PROVEN OTHERWISE"
+    "THE STEM — and two versions behind it",
+    "A 20-YEAR-OLD WOMAN with a RASH ON HER LEGS; a PHOTOGRAPH shows a NON-BLANCHING PURPURIC RASH over both shins. Tasks: 1 TAKE A HISTORY (prompt commonly at 4 minutes) · 2 ASK THE EXAMINER FOR THE EXAMINATION FINDINGS · 3 TELL THE EXAMINER YOUR DIAGNOSIS AND DIFFERENTIALS. VERSION 1 (the old recall): a flu-like illness last week, examination NORMAL → IMMUNE THROMBOCYTOPENIA, as a diagnosis of exclusion. VERSION 2 (the newer recall): identical — EXCEPT the card reports TWO LARGE LYMPH NODES IN THE NECK → LEUKAEMIA OR LYMPHOMA until proven otherwise. PREPARE BOTH, AND DO NOT DECIDE BEFORE THE EXAMINER HANDS YOU THE CARD"
    ],
    [
-    "The three findings that decide it",
-    "LYMPH NODES — everywhere, not just the neck — for MARROW INFILTRATION BY LEUKAEMIA. SPLEEN. TEMPERATURE. ITP IS A DIAGNOSIS OF EXCLUSION, AND THESE THREE ARE WHAT YOU ARE EXCLUDING. WET PURPURA — petechiae on the palate or buccal mucosa — means MUCOSAL BLEEDING AND A HIGHER BLEEDING RISK, so it fits ITP and it also tells you the risk is not trivial"
+    "STABILITY FIRST, THEN THE PATIENT",
+    "TO THE EXAMINER: ‘Before I start — could I have her OBSERVATIONS, particularly her TEMPERATURE?’ Then: ‘Hello Mary, I'm Dr Shah. I can see you're WORRIED about this rash — tell me what's been happening.’ Most rash patients arrive worried; acknowledge the concern before you interrogate"
    ],
    [
-    "Correction — you cannot diagnose ITP without a blood count",
-    "The source goes straight from a normal examination to a diagnosis. Clinically, IMMUNE THROMBOCYTOPENIA IS DEFINED BY AN ISOLATED LOW PLATELET COUNT with an otherwise normal full blood count and film — HISTORY AND EXAMINATION ALONE CANNOT MAKE IT. THE SENTENCE: 'my working diagnosis is immune thrombocytopenia, BUT I WOULD WANT A FULL BLOOD COUNT AND A BLOOD FILM to confirm an isolated low platelet count before I settled on it — THE FILM IS ALSO WHAT WOULD SHOW ME A LEUKAEMIA.' Examiner challenge 'the task was diagnosis, not investigations' → 'Understood. I'm naming it because ITP is a diagnosis of exclusion AND THE BLOOD FILM IS PART OF THE EXCLUSION — I didn't want to state it more confidently than the information allows'"
+    "DESCRIBING PURPURA — one family, three sizes",
+    "PETECHIAE <2 mm · PURPURA 2 mm–1 cm (the umbrella term) · ECCHYMOSES >1 cm. All are BLEEDING INTO THE SKIN and NON-BLANCHING, because the BLOOD IS OUTSIDE THE VESSELS. Some are obvious on sight (like knowing a bruise won't blanch), but ask the examiner to CONFIRM it — one sentence that shows you know why it matters: ‘Can I confirm that the rash is non-blanching?’"
+   ],
+   [
+    "FLAT VERSUS PALPABLE — a mark the source leaves out",
+    "‘Is the rash FLAT, or is it PALPABLE? That distinction points me towards a PLATELET PROBLEM or towards a VASCULITIS.’ FLAT (macular) purpura → the PLATELETS: immune thrombocytopenia, marrow failure, drugs. PALPABLE purpura — standing proud of the skin → a VASCULITIS: IgA vasculitis, other small-vessel vasculitides"
+   ],
+   [
+    "THE EXAMINATION REQUEST — word for word, in this order",
+    "1 GENERAL APPEARANCE — cachectic? scratch marks? alert, LEVEL OF CONSCIOUSNESS? PALLOR? · 2 VITAL SIGNS — especially TEMPERATURE · 3 THE RASH — non-blanching? flat or palpable? tender? · 4 A FULL LYMPH NODE SURVEY — CERVICAL, SUPRACLAVICULAR, AXILLARY, INGUINAL: ask EARLY and for ALL of them · 5 MOUTH AND THROAT — tonsils, and specifically PETECHIAE ON THE BUCCAL OR PALATAL MUCOSA · 6 NECK STIFFNESS · 7 CARDIOVASCULAR — murmur · 8 RESPIRATORY · 9 ABDOMEN — HEPATOSPLENOMEGALY, tenderness · 10 a full JOINT examination · 11 URINE DIPSTICK — for blood"
+   ],
+   [
+    "WHY EACH OF THE UNUSUAL ONES IS THERE",
+    "LEVEL OF CONSCIOUSNESS — INTRACRANIAL HAEMORRHAGE in ITP · PALLOR — MARROW INFILTRATION by leukaemia · BUCCAL PETECHIAE — WET PURPURA, higher bleeding risk · JOINTS — IgA vasculitis, connective tissue disease · URINE DIPSTICK — the NEPHRITIS of IgA vasculitis. THE THREE THAT DECIDE THE STATION: LYMPH NODES (everywhere, not just the neck), SPLEEN, TEMPERATURE. ITP is a diagnosis of exclusion; THESE THREE ARE WHAT YOU ARE EXCLUDING. Omitting the node survey is the SINGLE COMMONEST REASON THIS STATION IS FAILED"
+   ],
+   [
+    "WHAT THE EXAMINER REPORTS",
+    "VERSION 1: she looks well, not cachectic, alert and oriented, NO PALLOR, no scratch marks, TEMPERATURE NORMAL; rash NON-BLANCHING, FLAT, NON-TENDER; NO LYMPHADENOPATHY anywhere; throat normal but a FEW PETECHIAE ON THE PALATE; no neck stiffness; heart and chest normal; NO HEPATOSPLENOMEGALY; joints normal; URINE DIPSTICK NEGATIVE. VERSION 2: THE SAME, EXCEPT TWO FIRM ENLARGED NODES IN THE CERVICAL CHAIN — and ITP drops to second: it CANNOT be a diagnosis of exclusion when something has NOT been excluded"
+   ],
+   [
+    "CORRECTION — YOU CANNOT DIAGNOSE ITP WITHOUT A BLOOD COUNT",
+    "The source goes straight from a normal examination to a diagnosis of ITP. Clinically, immune thrombocytopenia is defined by an ISOLATED LOW PLATELET COUNT with an otherwise NORMAL FULL BLOOD COUNT AND BLOOD FILM — history and examination alone cannot make it. There's no investigation task, but SAY IT, because it makes the diagnosis defensible: ‘My working diagnosis is immune thrombocytopenia, but I would want a FULL BLOOD COUNT AND A BLOOD FILM to confirm an ISOLATED LOW PLATELET COUNT before I settled on it — THE FILM IS ALSO WHAT WOULD SHOW ME A LEUKAEMIA.’ Challenge — ‘the task was diagnosis, not investigations’ → ‘Understood. I'm naming it because ITP is a diagnosis of exclusion and the blood film is part of the exclusion — I didn't want to state it more confidently than the information allows’"
+   ],
+   [
+    "THE NOMENCLATURE HAS MOVED ON VERIFY",
+    "ITP now stands for IMMUNE THROMBOCYTOPENIA — the older ‘idiopathic thrombocytopenic purpura’ is still widely used and won't be marked wrong, but the current term reflects the understood mechanism. HENOCH–SCHÖNLEIN PURPURA is now IgA VASCULITIS. Use either; knowing both makes you sound current. If the examiner uses the old name, use theirs — neither point is worth arguing"
+   ],
+   [
+    "THE NUMBERS AND RULES",
+    "Petechiae <2 mm · purpura 2 mm–1 cm · ecchymoses >1 cm · all NON-BLANCHING · FLAT → platelets; PALPABLE → vasculitis · three rash questions: WARM? PAINFUL? ITCHY? · ask MALIGNANCY first, then SEPSIS/MENINGITIS · the trigger question: recent flu-like illness — THEN ANY ANTIBIOTICS? · ITP site: BOTH LEGS, symmetrical · IgA vasculitis: LEGS AND BUTTOCKS, palpable · WET PURPURA (mucosal) → higher bleeding risk · rare but feared: INTRACRANIAL HAEMORRHAGE in ITP · FEVER + PURPURA = MENINGOCOCCAEMIA until proven otherwise"
    ]
   ],
   "back": {
-   "dx": "VERSION 1: IMMUNE THROMBOCYTOPENIA · VERSION 2: LEUKAEMIA OR LYMPHOMA UNTIL PROVEN OTHERWISE. THE STATION IS ONE OF THE CLEAREST EXAMPLES OF THE AMC CHANGING A SINGLE EXAMINATION FINDING AND CHANGING THE WHOLE ANSWER — designed to catch people who have MEMORISED THE RECALL RATHER THAN LEARNED THE REASONING. THE FULL DIFFERENTIAL, WITH WHAT SUPPORTS EACH AND HOW TO EXCLUDE IT: IMMUNE THROMBOCYTOPENIA — young woman, recent viral illness, FLAT purpura on both shins, otherwise well; wet purpura in the mouth; no nodes, no spleen; confirmed by FBC showing ISOLATED thrombocytopenia with a normal film · LEUKAEMIA OR LYMPHOMA, NOT TO MISS — lymphadenopathy, splenomegaly, hepatomegaly, pallor, weight loss, night sweats, recurrent infection, bone pain; FBC and FILM, LDH, marrow examination if indicated; URGENT · MENINGOCOCCAEMIA, NOT TO MISS — FEVER, unwell, headache, neck stiffness, photophobia, a RAPIDLY SPREADING rash, tachycardia, hypotension, altered consciousness; clinical diagnosis, blood cultures and IMMEDIATE ANTIBIOTICS, DO NOT WAIT; EMERGENCY · IgA VASCULITIS (HENOCH–SCHÖNLEIN PURPURA) — PALPABLE purpura on legs AND BUTTOCKS, joint pain, abdominal pain, recent URTI; urinalysis for blood and protein, renal function; clinical diagnosis · DRUG-INDUCED — a new medicine or antibiotic in the last few weeks; medication history, stop the drug, FBC · HAEMOLYTIC URAEMIC SYNDROME AND TTP — recent diarrhoea, especially bloody, confusion, reduced urine output, fever, pallor, jaundice, oliguria, neurological signs; FBC and film for FRAGMENTS, UEC, LDH, bilirubin; EMERGENCY · INHERITED BLEEDING DISORDER — lifelong easy bruising, bleeding after dental work, family history, joint or muscle bleeds; coagulation profile and von Willebrand studies · CHRONIC LIVER DISEASE — alcohol, jaundice, pale stools, dark urine, stigmata, splenomegaly; LFTs, coagulation, FBC · VIRAL EXANTHEM — systemically well, other viral features. NOMENCLATURE, WORTH KNOWING BUT NOT WORTH ARGUING ABOUT: ITP NOW STANDS FOR IMMUNE THROMBOCYTOPENIA rather than idiopathic thrombocytopenic purpura, and HENOCH–SCHÖNLEIN PURPURA IS NOW CALLED IgA VASCULITIS — say the current name, and if the examiner uses the old one, use theirs VERIFY. EXPLAINING VERSION 1 TO HER: NAME IT — 'a condition called immune thrombocytopenia, or ITP'. EXPLAIN IT IN TWO SENTENCES — 'your immune system gets triggered, usually by a viral infection like the one you had last week, and it gets a little confused and STARTS ATTACKING THE CLOTTING CELLS IN YOUR BLOOD, called platelets. With fewer of them, small amounts of blood leak under the skin, which is the rash you can see.' THEN GIVE THREE REASONS, WHICH IS SCORED — the TYPE of rash is bleeding under the skin rather than an inflammatory rash · the SITE fits, both legs · and the VIRAL ILLNESS last week is the usual trigger. THEN the blood count caveat. EXPLAINING VERSION 2: SIGNPOST BEFORE YOU FRIGHTEN HER — 'I've found something on examination that I need to be straight with you about, and IT CHANGES WHAT I'M THINKING.' THEN NAME THE CONCERN SENSITIVELY — 'I've found two enlarged glands in your neck. Together with this rash, I'm concerned about the possibility of A CANCER OF THE BLOOD OR THE LYMPH GLANDS — leukaemia or lymphoma. I want to be honest that I DON'T KNOW YET which, or even whether it is that at all.' GIVE THE TWO REASONS, then the rest of the list: 'ITP is still one of them — BUT I CAN'T CALL IT THAT UNTIL I'VE RULED THE SERIOUS THINGS OUT, and the first step is an urgent blood test today.' THEN RUN THE BREAKING-BAD-NEWS SEQUENCE — warning shot, silence, empathy — BECAUSE THIS HAS BECOME A BAD-NEWS STATION WITHOUT THE STEM TELLING YOU SO. HER HIDDEN AGENDA: SHE IS A NURSING STUDENT WHO LOOKED IT UP LAST NIGHT AND HAS READ ABOUT LEUKAEMIA. She is terrified and will not say so unless asked an open question about her concerns — and if nobody asks, she brings it out at about six minutes: 'IS IT LEUKAEMIA? I LOOKED IT UP.' If you tell her it is definitely ITP with no mention of a blood test, she asks 'BUT HOW DO YOU KNOW? WITHOUT A TEST?'",
+   "dx": [
+    "**A NON-BLANCHING PURPURIC RASH ON BOTH SHINS IN A 20-YEAR-OLD — VERSION 1: IMMUNE THROMBOCYTOPENIA; VERSION 2: LEUKAEMIA OR LYMPHOMA.** **TWO VERSIONS, ONE STEM — AND TWO ENLARGED NECK NODES THAT CHANGE THE DIAGNOSIS COMPLETELY.** **History 4 minutes · examination findings from the examiner · diagnosis and differentials · 8 minutes.**",
+    "**THE LESSON THIS STATION TEACHES.** **Candidates who RECOGNISE THE RECALL diagnose ITP in the FIRST THIRTY SECONDS and spend the rest of the station CONFIRMING IT. Then the examination card reports TWO LARGE CERVICAL NODES, and the answer is NO LONGER ITP.** **THE HISTORY AND THE EXAMINATION ARE IDENTICAL IN BOTH VERSIONS. ONLY THE FINDINGS CHANGE.** **One of the clearest examples of the AMC changing a single examination finding to change the whole answer — designed to catch people who MEMORISED THE RECALL rather than LEARNED THE REASONING.**",
+    "**THE DISCRIMINATING ISSUE: TREATING ITP AS A DIAGNOSIS OF EXCLUSION — IN BOTH VERSIONS.** **In VERSION 1 that means ASKING the malignancy and meningococcal questions and REQUESTING the full node and spleen examination, then SAYING OUT LOUD THAT YOU HAVE EXCLUDED THEM.** **In VERSION 2 it means CHANGING YOUR MIND WHEN THE CARD CHANGES. Candidates who have already decided WALK PAST TWO ENLARGED CERVICAL NODES and diagnose ITP anyway — PREMATURE DIAGNOSTIC CLOSURE, the behaviour the second version exists to expose.** **WORK DOWN THE LIST, NOT UP: ITP IS THE LAST STOP, NOT THE FIRST.**",
+    "**THE PHOTOGRAPH IS NOT A SHORTCUT — ASK ABOUT THE RASH ANYWAY.** **The photograph is a STILL. It doesn't tell you whether it was weeping last night, whether it's itchy, painful, warm or spreading. A candidate who skips the rash history because there's a picture HAS NOT TAKEN A HISTORY.** **THREE QUESTIONS REGARDLESS: IS IT WARM? IS IT PAINFUL? IS IT ITCHY?** **Plus where, how long, first time, constant or coming and going, spreading, what makes it better or worse, RAISED OR FLAT, any discharge.**",
+    "**ASK THE RED FLAGS FIRST, NOT LAST — in question order.** **MALIGNANCY — THE MOST IMPORTANT BLOCK, and the one people leave until they run out of time: weight loss · appetite · LUMPS OR BUMPS ANYWHERE · tiredness · NIGHT SWEATS · BONE PAIN · recurrent infections.** **SEPSIS AND MENINGITIS: fever or chills · drowsy · headache · stiff neck · photophobia — A PURPURIC RASH WITH FEVER IS AN EMERGENCY UNTIL PROVEN OTHERWISE.** **The candidate who knows the recall is ITP and diagnoses it WITHOUT ASKING THE MALIGNANCY QUESTIONS is the SPECIFIC FAILURE THIS STATION WAS BUILT TO CATCH.** **Signpost them: ‘I'm going to ask you some questions that may sound unrelated, but I want to make sure I'm not missing anything serious.’**",
+    "**THE REST OF THE FOUR-MINUTE HISTORY.** **IgA VASCULITIS: joint pains · tummy pain · BLOOD IN THE URINE (the triad; commoner in children, but a 20-year-old can have it).** **THE TRIGGER: ‘Any recent FLU-LIKE ILLNESS?’ — and IMMEDIATELY AFTER: ‘Did you take any ANTIBIOTICS OR NEW MEDICINES for it?’ (positive in both ITP and IgA vasculitis; the drug question catches drug-induced thrombocytopenia and drug eruptions).** **BLEEDING ELSEWHERE: nosebleeds · BLEEDING GUMS · heavy periods · blood in stool or urine · headache or dizziness — wet purpura means higher bleeding risk; headache raises intracranial haemorrhage.** **BLEEDING DISORDER: easy bruising before · bleeding after dental work or surgery · family history.** **OTHER: recent DIARRHOEA (HUS) · jaundice, pale stools, dark urine, alcohol (liver disease).** **A full SADMA isn't needed in four minutes — the medication question covers the essential part.**",
+    "**THE SENTENCE THAT DEMONSTRATES IT — VERSION 1**: **‘My working diagnosis is IMMUNE THROMBOCYTOPENIA — and I'm reaching that BY EXCLUSION. She has NO FEVER, so I'm not dealing with meningococcal sepsis. She has NO LYMPHADENOPATHY, NO SPLENOMEGALY and NO PALLOR, so I have NO POSITIVE EVIDENCE of a haematological malignancy, which is what I was MOST CONCERNED ABOUT.’** **Then: the rash is FLAT, not palpable, with no joint pain, abdominal pain or haematuria — against IgA vasculitis; a VIRAL ILLNESS a week ago — the classic trigger; PALATAL PETECHIAE — wet purpura, which fits and tells me her BLEEDING RISK IS NOT TRIVIAL; and a FULL BLOOD COUNT AND FILM to confirm.**",
+    "**EXPLAINING VERSION 1 TO HER.** **NAME IT: ‘Most likely you have a condition called IMMUNE THROMBOCYTOPENIA, or ITP.’** **EXPLAIN IT — TWO SENTENCES, NO MORE: ‘In this condition your IMMUNE SYSTEM gets triggered, usually by a viral infection like the one you had last week, and it gets a little confused and starts ATTACKING THE CLOTTING CELLS in your blood. Those cells are called PLATELETS. With fewer of them, small amounts of blood LEAK UNDER THE SKIN, which is the rash you can see.’** **GIVE YOUR REASONS — SCORED: ‘The TYPE of rash fits — bleeding under the skin rather than an inflammatory rash. The SITE fits — both legs, exactly like yours. And the VIRAL ILLNESS last week is the usual trigger.’** **THEN THE HONESTY: ‘I do want to check a BLOOD COUNT before I'm certain, because there are other causes I want to rule out properly.’**",
+    "**VERSION 2 — THE NODES CHANGE EVERYTHING, AND IT HAS BECOME A BAD-NEWS STATION WITHOUT THE STEM TELLING YOU SO.** **SIGNPOST BEFORE YOU FRIGHTEN HER: ‘Mary, I've found something on examination that I need to be STRAIGHT WITH YOU about, and it CHANGES WHAT I'M THINKING.’** **NAME THE CONCERN SENSITIVELY: ‘I've found TWO ENLARGED GLANDS in your neck. Together with this rash, I'm concerned about the possibility of a CANCER OF THE BLOOD OR THE LYMPH GLANDS — that's LEUKAEMIA OR LYMPHOMA. I want to be honest that I DON'T KNOW YET which, or even whether it is that at all.’** **REASONS: ‘the TYPE of rash — bleeding under the skin, which can happen when the blood cells AREN'T BEING MADE PROPERLY — and the ENLARGED GLANDS, which shouldn't be there.’** **THEN: ‘ITP is still one of the possibilities — but I CAN'T CALL IT THAT UNTIL I'VE RULED THE SERIOUS THINGS OUT, and the first step is an URGENT BLOOD TEST TODAY.’** **Then warning shot, silence, empathy (COUNS-02). Delivered flatly, it fails.**",
+    "**HER HIDDEN AGENDA — SHE'S A NURSING STUDENT, SHE LOOKED IT UP LAST NIGHT, AND SHE'S READ ABOUT LEUKAEMIA.** **She won't say so unless asked an open question about her concerns; if nobody asks, at about six minutes: ‘IS IT LEUKAEMIA? I LOOKED IT UP.’** **ADDRESS THE FEAR DIRECTLY — in version 1, that's exactly what the node, spleen and pallor findings let you speak to honestly, with the blood film as the final check.** **If you tell her it's definitely ITP with no mention of a blood test: ‘BUT HOW DO YOU KNOW? WITHOUT A TEST?’** **Her other questions: ‘So my immune system is attacking my own blood?’ · ‘When? … Today?’ · ‘WILL I HAVE TO STOP PLACEMENT?’**"
+   ],
    "plan": [
     [
-     "0:00",
-     "OBSERVATIONS FIRST, ESPECIALLY TEMPERATURE — then greet her and acknowledge the worry before interrogating."
+     "0:00 → 0:20 · stability, then the patient",
+     "**Ask for observations, particularly TEMPERATURE (36.8, pulse 76, BP 112/70, sats 99%) → acknowledge her worry → open question.**"
     ],
     [
-     "0:30",
-     "CHARACTERISE THE RASH DESPITE THE PHOTO: site, duration, first episode, spreading, RAISED OR FLAT, discharge, and WARM, PAINFUL, ITCHY."
+     "0:20 → 1:15 · the rash — despite the photo",
+     "**Where · how long · first time · spreading · RAISED OR FLAT · discharge · WARM? PAINFUL? ITCHY?**"
     ],
     [
-     "1:15",
-     "MALIGNANCY BLOCK FIRST — weight, appetite, LUMPS AND BUMPS, fatigue, NIGHT SWEATS, bone pain, recurrent infection."
+     "1:15 → 2:00 · MALIGNANCY, then SEPSIS — FIRST ★",
+     "**Weight, appetite, LUMPS OR BUMPS, tiredness, NIGHT SWEATS, bone pain, infections → fever, drowsiness, headache, neck stiffness, photophobia.**"
     ],
     [
-     "1:50",
-     "MENINGOCOCCAL BLOCK — fever, drowsiness, headache, neck stiffness, photophobia."
+     "2:00 → 3:00 · vasculitis, trigger, bleeding",
+     "**Joints, abdomen, haematuria → recent flu-like illness THEN ANTIBIOTICS OR NEW MEDICINES → bleeding elsewhere (gums!), headache → easy bruising, dental bleeding, family history.**"
     ],
     [
-     "2:10",
-     "IgA VASCULITIS — joints, abdomen, haematuria."
+     "3:00 → 3:45 · other, and her concerns",
+     "**Diarrhoea, jaundice, alcohol → ‘IS THERE ANYTHING PARTICULAR WORRYING YOU?’ → address the leukaemia fear.**"
     ],
     [
-     "2:25",
-     "The trigger: recent flu-like illness — and immediately, any antibiotics or new medicines?"
+     "~4:00 · THE EXAMINATION REQUEST",
+     "**General (consciousness, PALLOR) → temperature → rash (non-blanching, flat or palpable, tender) → FULL NODE SURVEY (cervical, supraclavicular, axillary, inguinal) → mouth (BUCCAL/PALATAL PETECHIAE) → neck stiffness → heart, chest → HEPATOSPLENOMEGALY → joints → urine dipstick.** DO NOT DECIDE YOUR DIAGNOSIS BEFORE YOU HEAR THIS."
     ],
     [
-     "2:45",
-     "BLEEDING ELSEWHERE: nose, GUMS, periods, stool, urine, and HEADACHE OR DIZZINESS."
+     "~5:00 · diagnosis and differentials — BY EXCLUSION",
+     "**Version 1: ITP by exclusion, with reasons, FBC and film. Version 2: malignancy to the top, ITP second — then the bad-news sequence.** Work down the list: meningococcaemia → malignancy → vasculitis → drugs → HUS/TTP → bleeding disorder → liver → viral → ITP."
     ],
     [
-     "3:15",
-     "INHERITED BLEEDING DISORDER, then diarrhoea, jaundice and alcohol. AND ASK WHAT IS WORRYING HER — this is where the leukaemia fear lives."
-    ],
-    [
-     "4:00",
-     "REQUEST THE EXAMINATION IN ORDER: appearance, pallor, consciousness · temperature · the rash, non-blanching and flat versus palpable · FULL NODE SURVEY · buccal and palatal petechiae · neck stiffness · CVS · respiratory · HEPATOSPLENOMEGALY · joints · urine dipstick."
-    ],
-    [
-     "5:30",
-     "DIAGNOSIS TO THE EXAMINER, BY EXCLUSION AND OUT LOUD — afebrile so not meningococcal, no nodes or spleen or pallor so no positive evidence of malignancy, flat rather than palpable so against IgA vasculitis."
-    ],
-    [
-     "6:15",
-     "NAME THE FULL BLOOD COUNT AND FILM as part of the exclusion, then the rest of the differential list."
-    ],
-    [
-     "6:45",
-     "EXPLAIN IT TO HER: name it, two sentences of mechanism, THREE REASONS, and the blood test before certainty. ADDRESS THE LEUKAEMIA FEAR DIRECTLY."
+     "~6:30 · explain to her",
+     "**Name it, explain in two sentences, give three reasons, then the honesty about the blood test.**"
     ]
    ],
-   "planApprox": true,
-   "planNote": "the history is prompted at four minutes; the split above is a working one",
-   "ask": [
-    "TO THE EXAMINER, BEFORE ANYTHING: 'Could I have her observations, particularly her temperature?' AND ON THE RASH: 'Can I confirm the rash is non-blanching?' · 'Is the rash flat, or is it palpable? THAT DISTINCTION POINTS ME EITHER TOWARDS A PLATELET PROBLEM OR TOWARDS A VASCULITIS.'",
-    "TO HER, BEFORE THE RED FLAGS: 'I'm going to ask you some questions that may sound unrelated, but I want to make sure I'm not missing anything serious.' AND THE ONE THAT SURFACES THE AGENDA: 'is there anything in particular that's worrying you about this?'",
-    "THE DIAGNOSIS SENTENCE THAT DEMONSTRATES EXCLUSION: 'My working diagnosis is immune thrombocytopenia, and I'm reaching that BY EXCLUSION. She has no fever, so I'm not dealing with meningococcal sepsis. She has NO LYMPHADENOPATHY, NO SPLENOMEGALY AND NO PALLOR, so I have no positive evidence of a haematological malignancy, which is what I was most concerned about.'"
-   ],
    "pefe": [
-    "VERSION 1 CARD: she looks well, not cachectic, alert and oriented, NO PALLOR, no scratch marks · temperature normal · rash NON-BLANCHING, FLAT AND NON-TENDER · NO LYMPHADENOPATHY ANYWHERE · throat normal BUT A FEW PETECHIAE ON THE PALATE · no neck stiffness · heart and chest normal · NO HEPATOSPLENOMEGALY · joints normal · URINE DIPSTICK NEGATIVE.",
-    "VERSION 2 CARD: THE SAME, EXCEPT TWO FIRM ENLARGED NODES IN THE CERVICAL CHAIN. Everything else is unchanged — which is the entire design. The history is identical, the examination request is identical, and only the findings move.",
-    "THE ROLE-PLAYER'S AUTOMATIC FAILS: no malignancy questions · no lymph node examination requested · no temperature · diagnosed ITP without excluding anything · and in version 2, diagnosed ITP despite two enlarged cervical nodes.",
-    "Describing it properly — and the distinction the source omits — PURPURA IS BLEEDING INTO THE SKIN and DOES NOT BLANCH, because the blood is OUTSIDE the vessels. One family, three sizes: PETECHIAE UNDER 2 mm · PURPURA 2 mm TO 1 cm, the umbrella term · ECCHYMOSES OVER 1 cm. ADDED AND WORTH A MARK: FLAT (MACULAR) PURPURA → THINK A PLATELET PROBLEM — immune thrombocytopenia, marrow failure, drugs. PALPABLE PURPURA, standing proud of the skin → THINK A VASCULITIS — IgA vasculitis and other small-vessel disease. Ask the examiner both: 'can I confirm the rash is non-blanching?' and 'is it flat, or is it palpable?'",
-    "The history blocks, and the order is the point — MALIGNANCY FIRST — weight loss, appetite, LUMPS AND BUMPS ANYWHERE, tiredness, NIGHT SWEATS, bone pain, recurrent infections. THEN SEPSIS AND MENINGITIS — fever or chills, drowsy, headache, stiff neck, photophobia. THEN IgA VASCULITIS — joint pains, abdominal pain, blood in the urine. THEN THE TRIGGER: 'any recent flu-like illness?' AND IMMEDIATELY AFTER IT, 'DID YOU TAKE ANY ANTIBIOTICS OR NEW MEDICINES FOR IT?', which catches drug-induced thrombocytopenia. THEN BLEEDING ELSEWHERE — nosebleeds, GUMS, heavy periods, blood in stool or urine, AND HEADACHE OR DIZZINESS, because intracranial haemorrhage is rare but is why ITP is taken seriously. THEN inherited bleeding disorder, then diarrhoea and liver questions",
-    "The examination request — ask in this order and nothing gets dropped — General appearance — cachexia, scratch marks, level of consciousness, pallor · vital signs, especially temperature · the rash — non-blanching, flat or palpable, tender · a full lymph node survey: cervical, supraclavicular, axillary, inguinal, asked for early and by name · mouth and throat, specifically petechiae on the buccal or palatal mucosa · neck stiffness · cardiovascular · respiratory · abdomen for hepatosplenomegaly · a full joint examination · urine dipstick for blood. Omitting the node survey is the single commonest reason this station is failed"
+    "**THE DIFFERENTIALS, WORKED DOWN — and how each is excluded**: **MENINGOCOCCAEMIA — not to miss, EMERGENCY: fever, unwell, headache, neck stiffness, photophobia, rapidly spreading rash; fever, tachycardia, hypotension, altered consciousness → clinical — DO NOT WAIT: blood cultures, IMMEDIATE ANTIBIOTICS · LEUKAEMIA OR LYMPHOMA — not to miss, URGENT: weight loss, night sweats, fatigue, recurrent infection, bone pain; LYMPHADENOPATHY, SPLENOMEGALY, HEPATOMEGALY, PALLOR → FBC AND FILM, LDH, marrow examination if indicated · IgA VASCULITIS (HSP): PALPABLE purpura on legs and buttocks, joint pain, abdominal pain, recent URTI → urinalysis for blood and protein, renal function, clinical diagnosis.**",
+    "**THE DIFFERENTIALS, continued**: **DRUG-INDUCED: a new medicine or antibiotic in the last few weeks → medication history, stop the drug, FBC · HUS / TTP — EMERGENCY: recent (especially BLOODY) DIARRHOEA, confusion, reduced urine output, fever; pallor, jaundice, oliguria, neurological signs → FBC and film (FRAGMENTS), UEC, LDH, bilirubin · BLEEDING DISORDER: lifelong easy bruising, bleeding after dental work, family history; joint or muscle bleeds → coagulation profile, von Willebrand studies · CHRONIC LIVER DISEASE: alcohol, jaundice, pale stools, dark urine; stigmata, splenomegaly → LFTs, coagulation, FBC · VIRAL EXANTHEM: recent viral illness, systemically well → clinical · IMMUNE THROMBOCYTOPENIA — the diagnosis of exclusion: young woman, recent viral illness, flat purpura on both shins, otherwise well; wet purpura in the mouth; NO NODES, NO SPLEEN → FBC shows ISOLATED THROMBOCYTOPENIA, film otherwise normal; soon — urgent if bleeding.**",
+    "**THE WORKED ROLE-PLAY, the exclusion statement (version 1)**: **‘Thank you. My working diagnosis is immune thrombocytopenia, and I'm reaching that by exclusion. She's afebrile and systemically well, so I'm not dealing with meningococcal sepsis. There's no lymphadenopathy, no splenomegaly and no pallor, so I have no positive evidence of a haematological malignancy, which was my main concern. The rash is flat rather than palpable, and she has no joint pain, abdominal pain or haematuria, which argues against IgA vasculitis. She had a viral illness a week ago, which is the classic trigger, and she has palatal petechiae — wet purpura — which fits and also tells me her bleeding risk is not trivial. I would want a full blood count and film to confirm an isolated thrombocytopenia before I settled on it.’**",
+    "**THE ROLE-PLAYER, Mary Dooley, 20** — a second-year NURSING STUDENT in an Adelaide share house, home in Wallaroo at weekends; on the pill, nothing else, non-smoker, drinks very little. **Two days ago noticed dark red dots and a couple of bruise-like patches on both shins; not sore, not itchy, not warm; they don't fade when she presses — ‘I keep pressing it and it stays.’ A few more today, one or two on the thighs.** **When asked: flu-like illness last week (sore throat, runny nose, four days), PARACETAMOL ONLY, NO ANTIBIOTICS; GUMS BLED THIS MORNING brushing — ‘I thought I was brushing too hard’ (only if asked about bleeding elsewhere).** **If you don't ask the weight loss, night sweats or lumps questions, she does NOT volunteer them — the omission needs to be visible.**",
+    "**THE PARTNER'S AUTOMATIC FAILS**: **no malignancy questions · no lymph node examination requested · no temperature · diagnosed ITP without excluding anything · (version 2) diagnosed ITP despite two enlarged cervical nodes.** **Named traps beyond those: skipping the rash history because of the photo · no spleen asked for by name · diagnosis with no reasons (type + site + trigger) · no blood film mentioned · no drug question after the viral illness · version 2 delivered flatly.**",
+    "SA — **an URGENT FBC AND FILM the same day through SA Pathology** · **urgent haematology referral (RAH, Flinders, Lyell McEwin) for version 2, or for ITP with significant bleeding or a very low count** VERIFY · **meningococcaemia → immediate antibiotics and ED; MedSTAR 1300 13 12 33 from a rural site** · **Cancer Council SA 13 11 20 if version 2 progresses** · **TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Diagnoses ITP without asking the malignancy questions or requesting a full node survey — ITP cannot be a diagnosis of exclusion when nothing has been excluded",
-    "★ In version 2, walks past two enlarged cervical nodes and diagnoses ITP anyway — premature diagnostic closure, and the behaviour the second version exists to expose",
-    "Skips the rash history because there is a photograph, or never asks for the temperature in a purpuric rash where fever means meningococcaemia",
-    "No spleen asked for by name, no buccal petechiae, no urine dipstick — or a diagnosis given with no reasons attached",
-    "Version 2 delivered flatly: it has become a bad-news station, so warn, pause and show empathy rather than announcing leukaemia mid-sentence"
-   ],
-   "numbers": [
-    "Petechiae under 2 mm · purpura 2 mm–1 cm, the umbrella term · ecchymoses over 1 cm · all non-blanching, because the blood is outside the vessel · flat purpura → platelets · palpable purpura → vasculitis · ITP site is both legs, symmetrical · IgA vasculitis site is legs and buttocks, palpable · wet purpura means mucosal bleeding and higher risk · the rare but feared complication is intracranial haemorrhage",
-    "PEFE non-negotiables: nodes, spleen, temperature · also ask for consciousness, pallor, buccal petechiae, joints and urine dipstick · confirm with full blood count and blood film · nomenclature: immune thrombocytopenia rather than idiopathic thrombocytopenic purpura, and IgA vasculitis rather than henoch–Schönlein purpura VERIFY"
+   "ddx": [
+    [
+     "**Meningococcaemia — NOT TO MISS**",
+     "**FEVER + PURPURA; unwell, headache, neck stiffness, photophobia, spreading rash**",
+     "**Temperature; conscious level; neck stiffness**",
+     "**Blood cultures and IMMEDIATE ANTIBIOTICS — do not wait.** Emergency"
+    ],
+    [
+     "**Leukaemia or lymphoma — NOT TO MISS; the Version 2 answer**",
+     "**Weight loss, night sweats, fatigue, bone pain; LYMPHADENOPATHY, SPLENOMEGALY, PALLOR**",
+     "**The full node survey; hepatosplenomegaly; pallor**",
+     "**FBC and film, LDH, marrow if indicated.** Urgent"
+    ],
+    [
+     "IgA vasculitis (HSP)",
+     "**PALPABLE purpura, legs and buttocks; joint pain, abdominal pain, haematuria; recent URTI**",
+     "**Flat vs palpable; joints; urine dipstick**",
+     "Urinalysis, renal function; clinical diagnosis. Soon"
+    ],
+    [
+     "Drug-induced thrombocytopenia",
+     "**New medicine or antibiotic in recent weeks**",
+     "**‘Did you take any antibiotics or new medicines?’**",
+     "Stop the drug; FBC. Soon"
+    ],
+    [
+     "**HUS / TTP**",
+     "**Recent bloody diarrhoea; confusion, oliguria, fever**",
+     "Pallor, jaundice, neurological signs",
+     "**FBC and film (fragments), UEC, LDH, bilirubin.** Emergency"
+    ],
+    [
+     "Bleeding disorder · chronic liver disease",
+     "**Lifelong bruising, dental bleeding, family history · alcohol, jaundice**",
+     "Joint bleeds; stigmata of liver disease",
+     "Coagulation profile, von Willebrand studies · LFTs. Routine / soon"
+    ],
+    [
+     "Viral exanthem",
+     "Recent viral illness; systemically well",
+     "Other viral features",
+     "Clinical; serology if indicated. Routine"
+    ],
+    [
+     "**Immune thrombocytopenia — the Version 1 answer, BY EXCLUSION**",
+     "**Young, recent viral illness, FLAT purpura both shins, otherwise well; palatal petechiae**",
+     "**NO nodes, NO spleen, NO pallor, AFEBRILE**",
+     "**FBC and film — ISOLATED thrombocytopenia.** Soon; urgent if bleeding"
+    ]
    ]
   },
   "source": "RASH_05_Purpuric_Rash_ITP_vs_Malignancy_Notability.pdf (AMC Stage 2 OSCE counselling block, document 5 — Mary Dooley, 20, a nursing student with a non-blanching purpuric rash over both shins: two versions of one stem where only the examination card changes, the four-minute history with the malignancy block asked first, the node and spleen survey that decides it, and ITP treated as a diagnosis of exclusion in both versions)",
   "drive": "AMC Clinical Notability › AMC Stage 2 Counselling Block › RASH_05_Purpuric_Rash_ITP_vs_Malignancy_Notability.pdf",
   "must": [
-   "FAIL — AUTO-FAIL: no malignancy questions — weight loss, appetite, lumps, fatigue, night sweats, bone pain; ask them FIRST, before time pressure, and she will not volunteer them",
-   "FAIL — AUTO-FAIL: no full lymph node survey requested — cervical, supraclavicular, axillary, inguinal — and no spleen asked for by name; omitting the node survey is the commonest reason this station is failed",
-   "FAIL — AUTO-FAIL: never asking for the temperature — fever plus purpura is meningococcaemia until proven otherwise",
-   "FAIL — AUTO-FAIL: diagnosing ITP without excluding anything — it is a diagnosis of exclusion, and the full blood count and film are part of the exclusion",
-   "FAIL — AUTO-FAIL: version 2, diagnosing ITP despite two enlarged cervical nodes — premature closure; it has become a bad-news station, so warn, pause and show empathy",
-   "DO — Ask an open question about her concerns — she is a nursing student who looked it up and has barely slept for fear of leukaemia; if you never ask she raises it at about six minutes"
-  ]
+   "FAIL — No malignancy questions asked.",
+   "FAIL — No lymph node examination requested; or no temperature.",
+   "FAIL — Diagnosing ITP without having excluded anything.",
+   "FAIL — In version 2, diagnosing ITP despite two enlarged cervical nodes.",
+   "SAY — My working diagnosis is immune thrombocytopenia, and I'm reaching it by exclusion: afebrile, no lymphadenopathy, no splenomegaly, no pallor — and I'd want a full blood count and film to confirm an isolated low platelet count.",
+   "SAY — Mary, I've found something on examination that I need to be straight with you about, and it changes what I'm thinking."
+  ],
+  "v2": true
  },
  {
   "id": "COUNS-14",
