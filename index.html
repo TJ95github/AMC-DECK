@@ -599,7 +599,7 @@ function updateTimerUI(){
 
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
+const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|[^*\w])\*([^\s*](?:[^*\n]*[^\s*])?)\*(?![*\w])/g,"$1<i>$2</i>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
 function goalHTML(){
