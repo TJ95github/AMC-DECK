@@ -103359,7 +103359,6 @@
   "cat": "couns",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "Say the sum out loud, then turn the graph into something a 26-year-old can act on. The two AUTOMATIC FAILS: calculating reversibility from the percentage-predicted columns instead of the patient's own litres — or announcing it with no arithmetic at all — and, in the normal-chart variant, using a normal spirogram to tell her she does not have asthma.",
   "stem": [
    "General practice, regional South Australia. The practice nurse has already performed pre- and post-bronchodilator spirometry; the report is in front of you. Chloe Nguyen, 26, childcare worker, non-smoker. RR 16, SpO2 98%, afebrile, well at rest.",
    "Five months of cough, wheeze and chest tightness, worse at night and after running. Two courses of antibiotics elsewhere, no benefit. 8 minutes.",
@@ -103370,105 +103369,168 @@
    "Interpret the spirometry to the examiner, showing your reasoning",
    "Explain the result and diagnosis to Chloe and outline initial management"
   ],
-  "time": "Signpost the three parts out loud at the start — it tells the examiner you know there are three tasks · and do not read the chart before speaking to the patient",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "The chart, the four steps and the arithmetic — open only when you would read the report",
   "findings": [
    [
-    "SHE IS WELL AT REST",
-    "RR 16, SpO2 98%, AFEBRILE — AND THE CHART IS THE EXAMINATION. WHAT SHE GIVES WHEN ASKED: the cough COMES AND GOES with good and bad stretches · WAKES HER TWO OR THREE NIGHTS A WEEK, sitting on the edge of the bed · CHEST TIGHT AND WHEEZY FOR TEN MINUTES AFTER JOGGING FOR THE BUS · cold mornings set it off · her partner says SHE WHISTLES ON BREATHING OUT AT NIGHT · ECZEMA AS A CHILD AND HAY FEVER EVERY SPRING, UNTREATED · MOTHER HAS ASTHMA · never smoked or vaped · only the pill, no eye drops, no NSAID problems · NEVER ADMITTED AND NEVER ON STEROID TABLETS."
+    "THE STEM — and three chart versions",
+    "General practice, regional SA; the nurse has already done pre- and post-bronchodilator spirometry. CHLOE NGUYEN, 26, childcare worker, NON-SMOKER; well at rest, RR 16, SpO2 98%, afebrile. FIVE MONTHS of cough, wheeze and chest tightness, WORSE AT NIGHT AND AFTER RUNNING; TWO COURSES OF ANTIBIOTICS elsewhere without benefit. Tasks: 1 FOCUSED HISTORY (~3 min) · 2 INTERPRET THE SPIROMETRY TO THE EXAMINER, SHOWING YOUR REASONING AND YOUR CALCULATION · 3 EXPLAIN THE RESULT AND DIAGNOSIS TO CHLOE IN PLAIN LANGUAGE AND OUTLINE INITIAL MANAGEMENT. VERSION A: FEV1 3.00 → 3.70 L (92% pred at baseline); FVC 4.51 → 4.85 L (114%); RATIO 67% vs a lower limit of 71% · VERSION B BORDERLINE: ratio 59%; FEV1 2.40 → 2.77 L = 370 mL, 15% — both met, but only just · VERSION C THE TRAP: NORMAL spirometry — ratio 78 (LLN 73), FEV1 98% predicted — with classic symptoms"
+   ],
+   [
+    "ORIENTATE TO THE LAYOUT — the layout causes the freeze, not the algorithm",
+    "Every report has the same three columns under different names. REFERENCE: ‘Normal range’, ‘Predicted’, ‘Mean’, ‘LLN’. PRE-BRONCHODILATOR: ‘Baseline’, ‘Actual’, ‘Measured’, ‘Best pre-BD’. POST-BRONCHODILATOR: ‘Post’, ‘Post-BD’, ‘Best post-bronchodilator’. SAY THEM OUT LOUD (eight seconds, and it steadies you): ‘The reference column here is headed NORMAL RANGE, the pre-bronchodilator column BASELINE, and there is a POSTBRONCHODILATOR column with a percentage change.’ Then VALIDITY: ‘at least THREE acceptable manoeuvres with the best two FEV1 and FVC values within 150 MILLILITRES.’ AN INVALID CHART IS NOT A DIAGNOSIS. CHARTS ARE IN LITRES — 200 mL = 0.20 L, and 0.02 L = 20 mL"
+   ],
+   [
+    "THE FOUR STEPS, APPLIED TO VERSION A",
+    "1 RATIO vs its reference or LLN: 67% against a lower limit of 71% → REDUCED → OBSTRUCTIVE. (Normal or raised → not obstructive; go to step 2.) 2 IF NOT OBSTRUCTIVE, FVC vs predicted: not applicable — FVC 114% predicted; a LOW FVC with a normal or high ratio → POSSIBLE RESTRICTION, which spirometry alone CANNOT confirm. 3 REVERSIBILITY: 3.70 − 3.00 = 0.70 L = 700 mL; 0.70 ÷ 3.00 × 100 = 23% → BOTH criteria met. 4 SEVERITY on FEV1 % predicted: baseline 92% → the obstruction is MILD IN DEGREE — but IN ASTHMA, SEVERITY IS GRADED ON SYMPTOM CONTROL AND TREATMENT REQUIRED, NOT ON SPIROMETRY (that grading belongs to COPD)"
+   ],
+   [
+    "REVERSIBILITY — THE FORMULA, AND THE COMMONEST ERROR IN THE STATION",
+    "REVERSIBILITY = (POST − PRE) ÷ PRE × 100, FROM THE PATIENT'S OWN BASELINE LITRES, plus the ABSOLUTE CHANGE IN mL. POSITIVE at ≥12% AND ≥200 mL — BOTH CRITERIA, NOT EITHER — measured 10–15 MINUTES after a rapid-acting bronchodilator. THE ERROR: candidates SUBTRACT THE PERCENTAGE-PREDICTED COLUMNS — here 114 − 92, or the post minus pre % predicted — and announce a confident wrong figure. AUTOMATIC FAIL. Write it out; SAY THE LITRES, THEN THE MILLILITRES, THEN THE PERCENTAGE. ‘It's up 15 per cent, so that's reversible’ WITHOUT checking the millilitres is the other half of the same error"
+   ],
+   [
+    "A GENUINE GUIDELINE DIVERGENCE VERIFY",
+    "The AUSTRALIAN ASTHMA HANDBOOK and Australian practice use ≥12% AND ≥200 mL FROM BASELINE. The ATS/ERS 2022 technical standard instead defines a positive response as a change of MORE THAN 10% OF THE PREDICTED VALUE for FEV1 or FVC. If an examiner raises it: ‘I've used the Australian criterion of 12 per cent and 200 millilitres, which is what the Australian Asthma Handbook specifies. I'm aware the 2022 ATS/ERS standard uses more than 10 per cent of predicted, and BY THAT CRITERION THIS RESPONSE IS ALSO POSITIVE.’ Confirm the current handbook wording before quoting either"
+   ],
+   [
+    "A NORMAL CHART DOES NOT EXCLUDE ASTHMA — Version C",
+    "TO THE EXAMINER: ‘FEV1 4.35 L, 98% predicted; FVC 5.60 L, 104%; ratio 78 against a lower limit of 73 — a NORMAL SPIROGRAM. But normal spirometry DOES NOT EXCLUDE ASTHMA, because the airflow limitation is VARIABLE and she may simply be WELL TODAY. I would NOT reassure her on this result. I'd arrange a TWO-WEEK PEAK FLOW DIARY looking for excess variability, consider FeNO, and refer for BRONCHIAL PROVOCATION TESTING if it remained uncertain.’ TO THE PATIENT: ‘Your test today came back normal — and I want to explain why that DOESN'T mean nothing is wrong. In asthma the narrowing COMES AND GOES. If we happen to test you on a good day, the numbers look fine. So rather than telling you it's all clear, I'd like you to blow into a small meter at home twice a day for a fortnight. IF THE READINGS SWING AROUND, THAT SWING ITSELF IS THE EVIDENCE.’ Using a normal chart to say she hasn't got asthma is an AUTOMATIC FAIL"
+   ],
+   [
+    "VERSIONS B AND D — the borderline and the fixed",
+    "VERSION B: ‘Ratio 59% — clearly obstructive. FEV1 2.40 → 2.77 litres: 370 MILLILITRES, and 0.37 ÷ 2.40 = 15 PER CENT. Thresholds are 200 mL and 12%, so BOTH are met, though NOT BY A WIDE MARGIN. Given a supportive history I'd call this significant reversibility consistent with asthma, and I'm reassured that BOTH criteria — not just one — are satisfied.’ If the examiner says ‘ARE YOU SURE?’, RECALCULATE OUT LOUD rather than changing your answer — the question tests whether your figure came from ARITHMETIC OR A GUESS. VERSION D — the smoker: ‘Ratio 0.54 against a predicted 0.83 — obstructive. FEV1 1.35 → 1.37: 20 MILLILITRES, 1.5% — NEITHER criterion met. With a POST-BRONCHODILATOR RATIO BELOW 0.70 in a long-term smoker, this is FIXED AIRFLOW OBSTRUCTION consistent with COPD, not asthma. At 50% of predicted FEV1, MODERATE airflow limitation. I'd confirm pack-years, and I WOULDN'T WITHHOLD A PREVENTER TRIAL if there were also features of asthma — ASTHMA-COPD OVERLAP is common and worth naming rather than forcing a binary’"
+   ],
+   [
+    "THE HISTORY — variability IS the diagnosis",
+    "PATTERN: ‘Is the cough there ALL THE TIME, or does it COME AND GO? … HOW MANY NIGHTS A WEEK does it wake you? … Does it come on when you RUN, and how long to settle? … Anything that reliably SETS IT OFF — cats, dust, cold air? … Any WHEEZE? … And IS IT ANY BETTER WHEN YOU'RE ON HOLIDAY OR AWAY FROM WORK?’ (the holiday question finds OCCUPATIONAL ASTHMA and takes five seconds — most candidates never ask it). ATOPY AND FAMILY: eczema, hay fever, a wheezy chest as a child; asthma, eczema or hay fever in the family. RISK: smoking and vaping · MEDICATIONS INCLUDING EYE DROPS (beta-blockers) and NSAID/aspirin sensitivity · and the scored one — ‘HAVE YOU EVER BEEN ADMITTED TO HOSPITAL OR INTENSIVE CARE with your breathing, or needed STEROID TABLETS for it?’ Markers of FUTURE SEVERE ATTACKS: previous ICU or intubation, ≥2 oral steroid courses in a year, more than ONE RELIEVER CANISTER A MONTH"
+   ],
+   [
+    "MANAGEMENT — and the reliever-only correction VERIFY",
+    "DO NOW: confirm the chart is VALID · state the interpretation · ASSESS CONTROL AND RISK (daytime symptoms, night waking, reliever use, activity limitation, previous severe attacks) · START A PREVENTER and CHECK TECHNIQUE WITH A SPACER — technique failure is the COMMONEST reason treatment ‘doesn't work’. DO NEXT: a WRITTEN ASTHMA ACTION PLAN, on paper — what to take when well, when worse, and when to seek urgent help · TRIGGER REVIEW (smoking and vaping, pets, dust mite, THUNDERSTORM ASTHMA season, aspirin/NSAIDs, beta-blockers, occupational) · TREAT COEXISTING allergic rhinitis, GORD, obesity, anxiety — RHINITIS CONTROL MEASURABLY IMPROVES ASTHMA CONTROL · REVIEW AT 4–8 WEEKS, then STEP DOWN to the lowest dose that keeps her well · vaccination (influenza annually; check COVID and pneumococcal). CORRECTION: AUSTRALIAN GUIDANCE NO LONGER RECOMMENDS SHORT-ACTING BETA-AGONIST MONOTHERAPY for adults and adolescents — the preferred approach uses an INHALED CORTICOSTEROID-CONTAINING RELIEVER. Verify current Handbook wording before quoting a regimen. AVOID: another course of antibiotics · grading asthma severity from the spirometry number · prescribing without demonstrating the device"
+   ],
+   [
+    "THE NUMBERS",
+    "Reversibility ≥12% AND ≥200 mL, 10–15 MIN after a rapid-acting bronchodilator · (post − pre) ÷ pre × 100 · % predicted = measured ÷ predicted × 100 · charts in litres (200 mL = 0.20 L) · validity: 3 acceptable manoeuvres, best two within 150 mL · VERSION A 3.00 → 3.70 = 700 mL, 23% · VERSION B 2.40 → 2.77 = 370 mL, 15% · practice chart 3.18 → 3.79 = 610 mL, 19% · COPD contrast 1.35 → 1.37 = 20 mL, 1.5% · COPD confirmed by post-BD ratio <0.70, severity on FEV1 % predicted · ASTHMA SEVERITY ON CONTROL, NOT SPIROMETRY · review 4–8 weeks · ATS/ERS 2022 alternative >10% of predicted. ESCALATE URGENTLY: SpO2 falling, unable to complete sentences, SILENT CHEST, prior ICU admission, or increasing reliever use with a falling peak flow"
    ]
   ],
   "back": {
-   "dx": "MILD OBSTRUCTIVE VENTILATORY DEFECT WITH SIGNIFICANT BRONCHODILATOR REVERSIBILITY — CONSISTENT WITH ASTHMA, AND POSSIBLY OCCUPATIONAL. THE THREE PRACTICAL THINGS THAT FINISH THE STATION: THE SPACER — 'used with a spacer, FAR MORE OF THE DOSE REACHES YOUR LUNGS. I'll show you now AND THEN WATCH YOU DO IT, because TECHNIQUE IS THE SINGLE COMMONEST REASON A PUFFER DOESN'T WORK' · A WRITTEN ACTION PLAN — a one-page sheet with WHAT TO TAKE WHEN YOU'RE WELL, WHAT TO CHANGE WHEN YOU'RE GETTING WORSE, AND EXACTLY WHEN TO SEEK URGENT HELP, kept on the fridge · AND TRIGGERS — 'your hay fever matters more than you'd think; TREATING THE NOSE IMPROVES THE CHEST', plus a TWO-WEEK PEAK FLOW DIARY COVERING WORK DAYS AND DAYS OFF, because if work is contributing THAT CHANGES WHAT WE DO. REVIEW IN FOUR TO SIX WEEKS. SAFETY-NET: come back sooner, or go to the emergency department, IF SHE NEEDS THE RELIEVER MUCH MORE OFTEN, IF SHE'S WAKING AT NIGHT MORE, OR IF SHE'S EVER BREATHLESS AT REST OR STRUGGLING TO FINISH A SENTENCE. ON THE JOB: she says 'COULD IT REALLY BE THE JOB? I LOVE THAT JOB' — DO NOT THREATEN IT. 'It might be, and IF IT IS, THE ANSWER USUALLY ISN'T LEAVING — IT'S IDENTIFYING WHAT THE TRIGGER IS AND REDUCING EXPOSURE. Let's find out first.' The centre has GUINEA PIGS AND A RABBIT IN THE TODDLER ROOM and THE CLEANERS USE A STRONG BLEACH SPRAY at the end of shift — both given only if you ask what she is exposed to at work. HER HIDDEN AGENDA: HER GRANDMOTHER DIED OF EMPHYSEMA AND SHE IS QUIETLY FRIGHTENED THIS IS 'THE START OF LUNG DAMAGE'. She will not say so unless asked about worries — and if you never ask, she raises it at about six minutes and marks you down. HER SECOND CONCERN IS STEROIDS, BECAUSE A FRIEND GAINED WEIGHT ON PREDNISOLONE. THE VARIANTS: VERSION B, THE BORDERLINE CHART — ratio 59%, clearly obstructive; FEV1 2.40 TO 2.77 L, WHICH IS 370 MILLILITRES AND 15 PER CENT OF BASELINE. 'The thresholds are 200 millilitres and 12 per cent, SO BOTH ARE MET, THOUGH NOT BY A WIDE MARGIN. Given a supportive history I would call this significant reversibility consistent with asthma, AND I WOULD BE REASSURED BY THE FACT THAT BOTH CRITERIA — NOT JUST ONE — ARE SATISFIED.' IF THE EXAMINER SAYS 'ARE YOU SURE?', RECALCULATE OUT LOUD RATHER THAN CHANGING YOUR ANSWER — THE QUESTION IS TESTING WHETHER YOUR FIGURE CAME FROM ARITHMETIC OR FROM A GUESS. VERSION C, THE NORMAL CHART WITH A CLASSIC HISTORY — FEV1 4.35 L at 98%, FVC 5.60 L at 104%, ratio 78 against a lower limit of 73: 'THIS IS A NORMAL SPIROGRAM. BUT NORMAL SPIROMETRY DOES NOT EXCLUDE ASTHMA — the airflow limitation is VARIABLE, and she may simply be well today. I WOULD NOT REASSURE HER ON THIS RESULT. I'd arrange a TWO-WEEK PEAK FLOW DIARY looking for excess variability, consider FeNO, and refer for BRONCHIAL PROVOCATION TESTING if it remained uncertain.' AND TO THE PATIENT: 'your breathing test today came back normal — AND I WANT TO EXPLAIN WHY THAT DOESN'T MEAN NOTHING IS WRONG. In asthma THE NARROWING COMES AND GOES. If we happen to test you on a good day, the numbers look fine. So rather than telling you it's all clear, I'd like you to blow into a small meter at home twice a day for a fortnight. IF THE READINGS SWING AROUND, THAT SWING ITSELF IS THE EVIDENCE.' VERSION D, THE SMOKER WITH FIXED OBSTRUCTION — ratio 0.54 against a predicted 0.83; FEV1 1.35 TO 1.37 L, WHICH IS 20 MILLILITRES AND 1.5 PER CENT, SO NEITHER CRITERION IS MET. 'With a POST-BRONCHODILATOR RATIO BELOW 0.70 in a long-term smoker, this is FIXED AIRFLOW OBSTRUCTION CONSISTENT WITH COPD, NOT ASTHMA. At 50 per cent of predicted FEV1 this is MODERATE airflow limitation. I would confirm the smoking history in pack-years, AND I WOULD NOT WITHHOLD A PREVENTER TRIAL IF THERE WERE ALSO FEATURES OF ASTHMA — ASTHMA-COPD OVERLAP IS COMMON AND WORTH NAMING RATHER THAN FORCING A BINARY CHOICE.'",
+   "dx": [
+    "**ASTHMA — a MILD OBSTRUCTIVE VENTILATORY DEFECT WITH SIGNIFICANT BRONCHODILATOR REVERSIBILITY (700 mL, 23%) in a 26-year-old non-smoker with five months of nocturnal and exercise-related symptoms and two useless courses of antibiotics.** **THE WHOLE STATION IN ONE LINE: ratio against its lower limit → obstructive; then (post − pre) ÷ pre × 100 AND the change in millilitres; ≥12% AND ≥200 mL = reversible = asthma — then translate it into a PREVENTER, a SPACER, an ACTION PLAN and a REVIEW.**",
+    "**THE DISCRIMINATING ISSUE: SHOWING THE CALCULATION, IN LITRES, OUT LOUD.** **Most candidates can say ‘obstructive with reversibility’. VERY FEW say ‘three point seven minus three point zero is zero point seven litres, that's SEVEN HUNDRED MILLILITRES, and seven hundred over three thousand is TWENTY-THREE PER CENT — so both the volume and the percentage criteria are met.’** **THE EXAMINER IS MARKING THE REASONING, NOT THE CONCLUSION. Saying the sum also PROTECTS YOU ON THE BORDERLINE CHARTS, where a conclusion without arithmetic LOOKS LIKE A GUESS.**",
+    "**THE TWO AUTOMATIC FAILS, AND WHY THEY'RE OPPOSITES.** **ONE — reversibility from the PERCENTAGE-PREDICTED COLUMNS (or announced with no arithmetic): a confident wrong number.** **TWO — using a NORMAL CHART to tell her she hasn't got asthma: a confident wrong reassurance.** **Version C tests whether A NORMAL NUMBER MAKES YOU ABANDON A CLINICAL DIAGNOSIS.**",
+    "**THE HISTORY IS THE DIAGNOSIS — VARIABILITY, PINNED DOWN.** **‘A cough for five months’ accepted and moved past is the classic thin history. QUANTIFY: how many NIGHTS A WEEK, how many times a week ON EXERTION, and how often she reaches for a puffer.** **‘I've had two lots of antibiotics and nothing's helped’ → RECOGNISE THE PATTERN WITHOUT DISPARAGING THE PREVIOUS DOCTOR: ‘That's useful — it tells me this probably ISN'T AN INFECTION AT ALL, and the pattern you're describing fits something quite different.’** **‘It's better when I'm on leave’ → OCCUPATIONAL ASTHMA: what is she exposed to, do symptoms improve on days off and holidays, are colleagues affected? IT CHANGES THE MANAGEMENT, NOT JUST THE LABEL.**",
+    "**EXPLAINING THE GRAPH IN PLAIN ENGLISH — the second half of the station.** **‘The machine measures two things: HOW MUCH AIR YOU CAN BLOW OUT IN TOTAL, and how much you can blow out IN THE FIRST SECOND. Your total is COMPLETELY NORMAL — but the amount you can shift in that first second is LOWER THAN IT SHOULD BE. That tells me THE AIR TUBES IN YOUR LUNGS ARE NARROWER than they should be. The important part is what happened next. The nurse gave you the BLUE RELIEVER puffer, waited a few minutes, and repeated the test — and your first-second reading JUMPED BY 700 MILLILITRES, nearly a quarter better. That's a big change. It means the narrowing ISN'T FIXED DAMAGE; IT OPENS UP. And that opening-up is what points to ASTHMA.’** **Saying ‘obstructive ventilatory defect with a positive bronchodilator response’ TO THE PATIENT is a named trap — she says ‘sorry, what does that mean?’**",
+    "**WHAT ASTHMA IS, AND THE TWO PUFFERS — the line that lands.** **‘Asthma means the airways are SENSITIVE AND INFLAMED. Two things happen: THE LINING GETS SWOLLEN and THE MUSCLE AROUND THE TUBE TIGHTENS. That's why it comes and goes, why it's worse at night, and why running sets it off. So there are TWO DIFFERENT PUFFERS and it matters that you don't mix them up. THE RELIEVER works in minutes — it relaxes the muscle when you're tight. It DOESN'T treat the inflammation. THE PREVENTER contains a small dose of steroid that settles the inflammation over weeks, so the attacks STOP HAPPENING IN THE FIRST PLACE. THE RELIEVER IS THE FIRE EXTINGUISHER; THE PREVENTER STOPS THE FIRES STARTING. Most of the benefit comes from the preventer, and IT ONLY WORKS IF YOU TAKE IT WHEN YOU FEEL WELL.’**",
+    "**PRE-EMPT THE STEROID CONCERN — she is wary before she says so (a friend gained weight on prednisolone).** **‘Steroids though? Isn't that what bodybuilders take?’ → ‘That's a fair thing to ask, and it's A DIFFERENT THING FROM STEROID TABLETS. An INHALED dose is a TINY FRACTION of a tablet dose, and it goes STRAIGHT TO THE AIRWAY rather than round the body. I'll ask you to RINSE YOUR MOUTH after, which prevents hoarseness and thrush. We'd REVIEW IN FOUR TO SIX WEEKS and STEP DOWN to the lowest dose that keeps you well — not just leave you on it indefinitely without looking.’** **‘Do I have to take it forever?’ is a SHARED DECISION, not an instruction. ADDRESS IT BEFORE SHE HAS TO PUSH — adherence is the real long-term issue.**",
+    "**HER HIDDEN AGENDA — HER GRANDMOTHER DIED OF EMPHYSEMA.** **She is quietly frightened this is ‘THE START OF LUNG DAMAGE’, and will NOT say so unless asked what she's worried about or what she thinks is going on. If nobody asks, at about six minutes: ‘Can I ask — IS THIS THE START OF LUNG DAMAGE? My nan had emphysema’ — and marks you down for not eliciting it.** **The answer is in the chart itself: the narrowing OPENS UP, so it is NOT fixed damage.** **She is capable and matter-of-fact, MILDLY FRUSTRATED AT HAVING BEEN FOBBED OFF TWICE — and softens when taken seriously.**",
+    "**THE THREE PRACTICAL THINGS — and ‘I love that job’.** **ONE, THE SPACER: ‘far more of the dose reaches your lungs. I'll SHOW YOU NOW AND THEN WATCH YOU DO IT, because technique is the single commonest reason a puffer doesn't work.’ (Hand her a device without demonstrating and she HOLDS IT UPSIDE DOWN AND WAITS.)** **TWO, THE WRITTEN ACTION PLAN, for the fridge.** **THREE, TRIGGERS AND THE WORK QUESTION: a TWO-WEEK PEAK FLOW DIARY covering work days and days off — the centre has GUINEA PIGS AND A RABBIT in the toddler room and the cleaners use a STRONG BLEACH SPRAY.** **‘Could it really be the job? I love that job’ → ‘It might be, and IF IT IS, THE ANSWER USUALLY ISN'T LEAVING — it's identifying what the trigger is and reducing exposure. Let's find out first.’** **Don't threaten the job.**",
+    "**CLOSE — SAFETY-NET, SUMMARY, TEACH-BACK.** **‘Come back sooner — or go to the emergency department — if you're NEEDING THE RELIEVER MUCH MORE OFTEN, if you're WAKING AT NIGHT MORE, or if you're ever BREATHLESS AT REST or STRUGGLING TO FINISH A SENTENCE.’** **Then summarise: narrowed airways that open up with the puffer, that's asthma; a preventer with a spacer and an action plan; checking whether work plays a part; review in four to six weeks.** **Teach-back: ‘What would you tell your partner tonight?’ → ‘That I've got asthma, there's a BROWN ONE I take every day EVEN WHEN I'M FINE, and a BLUE ONE for emergencies.’**"
+   ],
    "plan": [
     [
-     "0:00",
-     "INTRODUCE AND SIGNPOST THE THREE PARTS — questions first, then the results, then what you think is going on. Leave the report face down."
+     "0:00 → 0:30 · WIPE and signpost the three parts",
+     "**Report face down → ‘I'd like to ask a few questions about the cough first, then go through the results and explain what I think is going on.’** Reading the chart before speaking to her is a named trap."
     ],
     [
-     "0:30",
-     "THE PATTERN: does it come and go · HOW MANY NIGHTS A WEEK · exercise and how long it takes to settle · triggers · wheeze."
+     "0:30 → 3:00 · the focused history ★",
+     "**Comes and goes · NIGHTS PER WEEK · exercise · triggers · wheeze · THE HOLIDAY/DAYS-OFF QUESTION · atopy and family history · smoking and vaping · medications incl. EYE DROPS and NSAIDs · PREVIOUS ICU, INTUBATION, ORAL STEROIDS · what she's worried about (THE GRANDMOTHER).**"
     ],
     [
-     "1:30",
-     "THE HOLIDAY QUESTION — 'is it any better when you're on holiday or away from work?' — and then what she is exposed to at the centre."
+     "3:00 → 4:30 · interpretation to the examiner — don't rush the arithmetic",
+     "**Name the three columns and the validity criteria → RATIO 67 vs LLN 71 → FVC 114% (no restriction) → REVERSIBILITY SPOKEN: 0.70 L, 700 mL, 23%, both criteria → severity mild in degree, but asthma is graded on CONTROL.**"
     ],
     [
-     "2:00",
-     "Atopy and family history · smoking or vaping · medications including eye drops · NSAIDs · and previous ICU or oral steroids."
+     "4:30 → 5:30 · explain the graph in plain English",
+     "**Total normal, first second low → tubes narrower → after the blue puffer it jumped 700 mL → NOT FIXED DAMAGE, IT OPENS UP → that points to asthma; the antibiotics were an easy mistake to make.**"
     ],
     [
-     "2:50",
-     "ASK WHAT SHE IS WORRIED ABOUT — this is where the grandmother's emphysema lives."
+     "5:30 → 6:30 · what asthma is, preventer vs reliever, the steroid concern",
+     "**Swollen lining and tight muscle → fire extinguisher vs stopping the fires → PRE-EMPT the steroid question with the dose comparison, rinsing, and the step-down plan.**"
     ],
     [
-     "3:10",
-     "TO THE EXAMINER: NAME THE THREE COLUMNS and the acceptability criteria."
+     "6:30 → 7:30 · device, action plan, triggers, work",
+     "**SPACER demonstrated AND watched → WRITTEN ACTION PLAN for the fridge → hay fever treated → TWO-WEEK PEAK FLOW DIARY covering work and days off → don't threaten the job.**"
     ],
     [
-     "3:30",
-     "The four steps: ratio 67 against LLN 71, obstructive · FVC 114%, no restriction · 3.00 → 3.70 L = 700 mL = 23%, both criteria met · baseline FEV1 92%, so mild."
-    ],
-    [
-     "4:30",
-     "TRANSLATE THE GRAPH FOR HER, AND NAME ASTHMA — acknowledging that the pattern was easy to mistake for infection."
-    ],
-    [
-     "5:20",
-     "What asthma is — inflammation and muscle — then preventer versus reliever, with the steroid concern pre-empted."
-    ],
-    [
-     "6:20",
-     "THE SPACER, DEMONSTRATED AND THEN WATCHED. Then the written action plan."
-    ],
-    [
-     "7:00",
-     "TRIGGERS AND RHINITIS · THE PEAK FLOW DIARY FOR WORK DAYS AND DAYS OFF · and the reassurance that finding an occupational trigger usually means reducing exposure rather than leaving the job."
-    ],
-    [
-     "7:30",
-     "Review in four to six weeks, explicit red flags, summarise, and teach-back."
+     "7:30 → 8:00 · review, safety-net, summarise, teach-back",
+     "**Review 4–6 weeks → reliever use rising, more night waking, breathless at rest or can't finish a sentence → same-day or ED → summarise → ‘what would you tell your partner tonight?’**"
     ]
    ],
-   "planApprox": true,
-   "planNote": "the history is budgeted at three minutes; the spacer demonstration and the action plan are both separately scored, so protect them",
-   "ask": [
-    "The history set: 'Is the cough there all the time, or does it come and go?' · 'How many nights a week does it wake you?' · 'Is it any better when you're on holiday or away from work?' · 'Have you ever been in hospital or intensive care with your breathing, or needed steroid tablets for it?'",
-    "THE INTERPRETATION SET: 'The reference column is headed X, the pre-bronchodilator column Y, and the post-bronchodilator column Z.' · 'The ratio is reduced against its lower limit, so this is an obstructive pattern.' · 'FEV1 RISES FROM A TO B LITRES — THAT'S C MILLILITRES, AND C OVER A IS D PER CENT OF BASELINE.' · 'Significant reversibility needs at least 200 millilitres and at least 12 per cent — BOTH CRITERIA ARE MET.'",
-    "THE PATIENT SET: 'Your total is normal, BUT WHAT YOU CAN SHIFT IN THE FIRST SECOND IS LOW — your air tubes are narrower than they should be.' · 'After the puffer it jumped by 700 millilitres. SO THE NARROWING ISN'T FIXED DAMAGE — IT OPENS UP.' · 'THE RELIEVER IS THE FIRE EXTINGUISHER; THE PREVENTER STOPS THE FIRES STARTING.' · 'An inhaled dose is a tiny fraction of a tablet dose and goes straight to the airway — AND WE'LL STEP DOWN TO THE LOWEST DOSE THAT KEEPS YOU WELL.' · 'TECHNIQUE IS THE COMMONEST REASON A PUFFER DOESN'T WORK — let me show you, then I'll watch you do it.'"
-   ],
    "pefe": [
-    "The three things she withholds: she was completely well over the Christmas break and for a week in April when the centre was closed · the Guinea pigs and rabbit in the toddler room and the cleaners' bleach spray · and her fear about her grandmother's emphysema. And if you hand her a device without demonstrating, she holds it upside down and waits.",
-    "THE ROLE-PLAYER'S AUTOMATIC FAILS: reversibility calculated by subtracting percentage-predicted values, or announced with no arithmetic at all · and using a normal chart to tell her she does not have asthma.",
-    "Establish the pattern, because the pattern is the diagnosis — Accepting 'a cough for five months' and moving on is the error — VARIABILITY IS THE DIAGNOSIS. 'Is it there all the time, OR DOES IT COME AND GO? HOW MANY NIGHTS A WEEK DOES IT WAKE YOU? What about exercise — DOES IT COME ON WHEN YOU RUN, AND HOW LONG DOES IT TAKE TO SETTLE? Is there anything that reliably sets it off — cats, dust, COLD AIR, a chest infection? Any wheeze or whistling?' AND THEN THE ONE MOST CANDIDATES NEVER ASK: 'IS IT ANY BETTER WHEN YOU'RE ON HOLIDAY OR AWAY FROM WORK?' — WHICH IS WHAT FINDS OCCUPATIONAL ASTHMA. She was completely fine over the Christmas break and hadn't put it together",
-    "The risk questions that get skipped — Atopy — eczema, hay fever, a wheezy chest as a child — and family history. Smoking or vaping. Medications including blood pressure tablets and eye drops, because beta-blocker eye drops are easy to miss, and any problem with aspirin or anti-inflammatories. And the one that is scored: 'Have you ever been admitted to hospital or intensive care with your breathing, or needed steroid tablets for it?' — these are the markers of future life-threatening attacks",
-    "The four steps, with the arithmetic spoken — Step one, the ratio: 67% against a stated lower limit of 71 — reduced, so obstructive. Step two doesn't apply: FVC is 114% of predicted, so nothing suggests restriction. Step three, reversibility: 'FEV1 rises from 3.00 to 3.70 litres. That's an increase of 0.70 litres — 700 millilitres — and 0.70 divided by 3.00 is 23 per cent of her baseline. Significant reversibility requires at least 200 millilitres and at least 12 per cent. Both criteria are met.' Step four, severity: baseline FEV1 92% of predicted, so the obstruction itself is mild. The commonest error in the station is subtracting the percentage-predicted figures — 114 minus 92 — instead of working from her own litres",
-    "Translate the graph, and do not disparage the antibiotics — 'The machine measures two things: HOW MUCH AIR YOU CAN BLOW OUT IN TOTAL, AND HOW MUCH YOU CAN BLOW OUT IN THE FIRST SECOND. Your total is completely normal — but THE AMOUNT YOU CAN SHIFT IN THAT FIRST SECOND IS LOWER THAN IT SHOULD BE, which tells me THE AIR TUBES IN YOUR LUNGS ARE NARROWER THAN THEY SHOULD BE. The nurse gave you the blue reliever, waited, and repeated the test — AND YOUR FIRST-SECOND READING JUMPED BY 700 MILLILITRES, NEARLY A QUARTER BETTER. That means THE NARROWING ISN'T FIXED DAMAGE; IT OPENS UP. And that opening-up is what points to asthma.' On the two failed antibiotic courses: ACKNOWLEDGE THAT THE PATTERN WAS EASY TO MISTAKE FOR INFECTION rather than disparaging the previous doctor",
-    "Preventer versus reliever — and pre-empt the steroid question — 'The lining gets swollen and irritated, and the muscle around the tube tightens up. That's why it comes and goes, why it's worse at night, and why running sets it off. The reliever works in minutes — it relaxes the muscle. It doesn't treat the inflammation. The preventer contains a small dose of steroid that settles the inflammation over weeks. The reliever is the fire extinguisher; the preventer stops the fires starting. Most of the benefit comes from the preventer, and it only works if you take it when you feel well.' Address the steroid concern before she raises it: an inhaled dose is a tiny fraction of a tablet dose, delivered straight to the airway, rinse after use to prevent thrush and hoarseness, and you will step down to the lowest dose that keeps her well",
-    "Orientate to the chart before you calculate — 'The reference column here is headed NORMAL RANGE, the pre-bronchodilator column is headed BASELINE, and there is a POSTBRONCHODILATOR column with a percentage change. I'd also want to confirm the trace was technically acceptable — AT LEAST THREE ACCEPTABLE MANOEUVRES WITH THE BEST TWO FEV1 AND FVC VALUES WITHIN 150 MILLILITRES.' THE LAYOUT, NOT THE ALGORITHM, IS WHAT CAUSES THE FREEZE — NAMING THE THREE COLUMNS TAKES EIGHT SECONDS AND STEADIES YOU"
+    "**THE 40-SECOND MODEL ANSWER TO THE EXAMINER**: **‘Chloe is a 26-year-old NON-SMOKING childcare worker with five months of cough, wheeze and chest tightness WORSE AT NIGHT AND WITH EXERCISE, unresponsive to two courses of antibiotics. She has childhood ECZEMA, spring HAY FEVER, and a MOTHER WITH ASTHMA. No red flags — no weight loss, haemoptysis or fever, NO PREVIOUS ICU ADMISSION, and no oral steroid courses. Her spirometry shows a MILD OBSTRUCTIVE VENTILATORY DEFECT WITH SIGNIFICANT BRONCHODILATOR REVERSIBILITY — FEV1 rising 700 MILLILITRES, 23 PER CENT of baseline, meeting BOTH the 200-millilitre and 12-per-cent criteria. My working diagnosis is ASTHMA. I considered COPD, unlikely in a lifelong non-smoker with reversible obstruction; INDUCIBLE LARYNGEAL OBSTRUCTION, which would not reverse with salbutamol; and GORD or post-nasal drip, which would not produce this chart. My plan is an INHALED CORTICOSTEROID-CONTAINING PREVENTER, technique demonstrated with a SPACER, a WRITTEN ASTHMA ACTION PLAN, SERIAL PEAK FLOWS to screen for occupational triggers, and REVIEW IN FOUR TO EIGHT WEEKS — sooner if reliever use rises or her peak flow falls.’**",
+    "**IF THE EXAMINER PUSHES**: *‘How do you know the test is valid?’* → **three acceptable manoeuvres, best two FEV1 and FVC within 150 mL.** *‘How long after the bronchodilator?’* → **10–15 minutes after a rapid-acting bronchodilator, usually salbutamol via spacer.** *‘What if she'd been a smoker?’* → **consider ASTHMA-COPD OVERLAP; a post-bronchodilator ratio below 0.70 with incomplete reversibility supports fixed obstruction.** *‘What does FeNO add?’* → **it supports EOSINOPHILIC AIRWAY INFLAMMATION and can support the diagnosis where spirometry is normal; it doesn't replace it.** VERIFY threshold",
+    "**THE DIFFERENTIALS BY BUCKET**: **RS — ASTHMA (variable, nocturnal, exercise trigger, atopy, non-smoker, reversible) · COPD (over 40, smoking, FIXED obstruction, productive cough; post-BD ratio <0.70 with reversibility not met) · OCCUPATIONAL ASTHMA (better on days off and holidays; flour, isocyanates, latex, animals, CLEANING PRODUCTS, hairdressing chemicals; SERIAL PEAK FLOWS at and away from work) · INDUCIBLE LARYNGEAL OBSTRUCTION (inspiratory stridor, THROAT tightness, NO response to salbutamol, young woman; INSPIRATORY FLATTENING on the loop; laryngoscopy during symptoms) · BRONCHIECTASIS (large-volume purulent sputum; HRCT).** **CVS — HEART FAILURE, ‘cardiac asthma’ (orthopnoea, PND, oedema; ECG, BNP, echo).** **GI — GORD-associated cough (worse lying flat and after meals; it also WORSENS coexisting asthma).** **DRUGS — ACE INHIBITOR cough; BETA-BLOCKERS INCLUDING EYE DROPS; NSAID/aspirin sensitivity.** **OTHER — post-nasal drip, anxiety/hyperventilation, anaemia.**",
+    "**PARTNER CARDS.** **1 — ratio 67 (LLN 71), FEV1 3.00 → 3.70 L → straightforward asthma; the marks are in the SPOKEN ARITHMETIC.** **2 — ratio 59, FEV1 2.40 → 2.77 L → 370 mL, 15%, both met but narrowly; partner asks ‘ARE YOU SURE?’ to see whether you RECALCULATE OR CRUMBLE.** **3 — ratio 78, FEV1 98% predicted → NORMAL CHART, CLASSIC HISTORY: do you keep investigating?** **4 — ratio 65, FEV1 3.18 → 3.79 L; she volunteers only if asked that she's a HAIRDRESSER and is FINE ON HOLIDAYS → occupational asthma.** **5 — ratio 54, FEV1 1.35 → 1.37 L → 20 mL, 1.5%, not reversible, 58-year-old smoker → can you SAY COPD WITHOUT HEDGING?** **6 — ratio 67 with good reversibility; she mentions being INTUBATED IN ICU AT 19 only if asked directly about previous severe attacks.**",
+    "**THE ROLE-PLAYER, Chloe Nguyen, 26** — childcare worker in Kadina for four years; lives with her partner Sam; jogs occasionally, dropped netball this season because of her chest. **The pill only, no eye drops; childhood eczema, untreated spring hay fever; never admitted for breathing, never had steroid tablets; never smoked or vaped; mother has asthma, brother has eczema.** **HIDDEN, only if asked: completely well over the CHRISTMAS BREAK and a week in April when the centre closed; GUINEA PIGS AND A RABBIT in the toddler room; a strong BLEACH SPRAY used by the cleaners; her NAN DIED OF EMPHYSEMA; she is WARY OF STEROIDS.** **Her lines: ‘So it's asthma? I always thought that was a kids' thing.’ · ‘Steroids though? A friend of mine blew up on them.’ · ‘I've never used one of these. Do I just breathe in?’ · ‘Could it really be the job? I love that job.’** **Global score: did they treat the graph as SOMETHING TO EXPLAIN TO HER, or SOMETHING TO RECITE AT THE EXAMINER? Did they pause and check at least twice?**",
+    "SA — **in an MM5 practice spirometry is usually NURSE-PERFORMED IN-HOUSE, so you may be the person judging whether the trace is acceptable** · **formal lung function laboratories, FeNO and BRONCHIAL PROVOCATION generally require referral to ADELAIDE — PATS may help with travel, and respiratory TELEHEALTH is often faster than a face-to-face appointment** · **preventers are cheaper for eligible patients under the CLOSING THE GAP PBS co-payment; involve an Aboriginal Liaison Officer or the local ACCHS where preferred** · **written action plans attract a chronic disease management item** VERIFY current MBS item numbers rather than quoting one."
    ],
-   "fails": [
-    "★ Calculates reversibility from the percentage-predicted columns — 114 minus 92 — instead of (post − pre) ÷ pre from her own litres",
-    "★ Uses a normal spirogram to exclude asthma, when the airflow limitation is variable and she may simply be well today",
-    "Accepts 'a cough for five months' without establishing variability, night waking and exercise — the pattern is the diagnosis",
-    "Never asks the holiday or days-off question, so occupational asthma is never found, and never asks about previous ICU admission or oral steroid courses",
-    "Prescribes a preventer without addressing the steroid concern, hands over a device without demonstrating it, or ends with no written action plan and no explicit red flags"
-   ],
-   "numbers": [
-    "Reversibility is ≥12% and ≥200 mL, measured 10–15 minutes after a rapid-acting bronchodilator, by (Post − pre) ÷ pre × 100 · % predicted is measured ÷ predicted × 100 · charts are in litres, so 200 mL = 0.20 L · validity: 3 acceptable manoeuvres with the best two within 150 mL · this case 3.00 → 3.70 = 700 mL, 23% · borderline variant 2.40 → 2.77 = 370 mL, 15% · COPD contrast 1.35 → 1.37 = 20 mL, 1.5%",
-    "COPD ratio threshold is below 0.70 post-bronchodilator · review at 4–8 weeks · the ATS/ERS 2022 alternative expresses change as more than 10% of predicted VERIFY · normal spirometry does not exclude asthma — use a two-week peak flow diary, consider FeNO, and refer for bronchial provocation if uncertain"
+   "ddx": [
+    [
+     "**Asthma — the answer (Version A)**",
+     "**Variable symptoms, night waking, exercise trigger, atopy, non-smoker; ratio 67 < LLN 71**",
+     "**700 mL and 23% — both criteria**",
+     "**ICS-containing preventer, spacer, action plan, trigger review, review 4–8 weeks.** VERIFY"
+    ],
+    [
+     "**Borderline reversibility (Version B)**",
+     "**Ratio 59; 370 mL, 15% — both met, narrowly**",
+     "**Recalculate aloud if challenged**",
+     "**Significant reversibility with a supportive history — don't crumble.**"
+    ],
+    [
+     "**Normal spirometry, classic history (Version C)**",
+     "**Ratio 78 (LLN 73), FEV1 98% predicted**",
+     "**Variability — she may simply be well today**",
+     "**DON'T reassure: two-week peak flow diary, FeNO, bronchial provocation.**"
+    ],
+    [
+     "**COPD / fixed obstruction (Version D)**",
+     "**Smoker, ratio 0.54, 20 mL and 1.5% — neither criterion**",
+     "**Post-BD ratio <0.70**",
+     "**COPD — say it without hedging; consider asthma-COPD overlap rather than forcing a binary.**"
+    ],
+    [
+     "**Occupational asthma**",
+     "**Better on days off and holidays; animals, bleach spray, flour, isocyanates, latex**",
+     "**The holiday question — five seconds**",
+     "**Serial peak flows at and away from work; occupational physician.**"
+    ],
+    [
+     "Inducible laryngeal obstruction",
+     "**THROAT tightness, inspiratory stridor, no salbutamol response**",
+     "**Where the tightness sits; inspiratory flattening on the loop**",
+     "Laryngoscopy during symptoms. Soon"
+    ],
+    [
+     "Heart failure · GORD · post-nasal drip",
+     "**Orthopnoea, PND, oedema · heartburn worse lying flat · throat clearing**",
+     "Pillows, reflux timing, nasal symptoms",
+     "ECG, BNP, echo · trial of therapy · treat rhinitis. Semi-urgent"
+    ],
+    [
+     "**Drug causes**",
+     "**ACE inhibitor cough; beta-blockers INCLUDING EYE DROPS; NSAID sensitivity**",
+     "**Full medication list including eye drops**",
+     "**Cease and observe; avoid beta-blockers including topical.**"
+    ],
+    [
+     "**High-risk asthma — future severe attack**",
+     "**Previous ICU or intubation, ≥2 oral steroid courses a year, >1 reliever canister a month**",
+     "**Ask BEFORE writing a prescription**",
+     "**Escalate care and review closely.** Urgent"
+    ]
    ]
   },
   "source": "Spirometry_Reversible_Obstruction_2_Case_Tasks_Script_Notability (2).pdf (AMC Stage 2 OSCE counselling block, Spirometry Counselling — Chloe Nguyen, 26, a childcare worker with five months of cough and wheeze and two failed antibiotic courses: variability as the diagnosis, the holiday question that finds occupational asthma, the reversibility arithmetic spoken as 700 millilitres and 23 per cent of her own baseline, preventer versus reliever with the steroid concern pre-empted, and the spacer demonstrated and then watched)",
   "drive": "AMC Clinical Notability › AMC Stage 2 Counselling Block › Spirometry Counselling › Spirometry_Reversible_Obstruction_2_Case_Tasks_Script_Notability (2).pdf",
   "must": [
-   "FAIL — AUTO-FAIL: calculating reversibility from the percentage-predicted columns — 114 minus 92 — or announcing it with no arithmetic at all; it is (post − pre) ÷ pre, from her own litres",
-   "FAIL — AUTO-FAIL: using a normal spirogram to tell her she does not have asthma — the airflow limitation is variable and she may simply be well today; two-week peak flow diary, FeNO, provocation testing, never reassurance",
-   "SAY — 'FEV1 rises from 3.00 to 3.70 litres — that is 700 millilitres, and 0.70 over 3.00 is 23 per cent of baseline. Significant reversibility needs at least 200 millilitres AND at least 12 per cent. Both are met.'",
-   "FAIL — Accepting 'a cough for five months' without establishing the pattern — variability, nights per week waking, exercise, triggers, and the holiday or days-off question that finds occupational asthma; plus previous ICU admission and oral steroid courses, the markers of future life-threatening attacks",
-   "FAIL — Prescribing a preventer without pre-empting the steroid concern, handing over a device without demonstrating it and watching her use it, or ending with no written action plan and no explicit red flags",
-   "DO — Ask what she is worried it might be — her nan died of emphysema and she thinks this is the start of lung damage; if you never ask she raises it at about six minutes"
-  ]
+   "FAIL — Calculating reversibility from the percentage-predicted columns, or announcing it with no arithmetic at all.",
+   "FAIL — Using a normal chart to tell her she does not have asthma.",
+   "FAIL — A reliever-only plan; or prescribing without demonstrating the spacer and watching her use it; or no written action plan.",
+   "FAIL — Never asking about previous ICU admission, intubation or oral steroid courses before prescribing.",
+   "SAY — FEV1 rises from 3.00 to 3.70 litres — that's 0.70 litres, 700 millilitres, and 0.70 over 3.00 is 23 per cent of baseline. Both the 200 millilitre and 12 per cent criteria are met.",
+   "SAY — The reliever is the fire extinguisher; the preventer stops the fires starting."
+  ],
+  "v2": true
  },
  {
   "id": "COUNS-27",
