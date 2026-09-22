@@ -190,8 +190,10 @@
   .back ul{margin:0;padding-left:18px;font-size:14.5px}
   .back li{margin:3px 0}
   .fail li::marker{color:var(--bad)}
-  .tl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:14px}
-  .tl b{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink-2);white-space:nowrap}
+  .tl{display:grid;grid-template-columns:fit-content(38%) minmax(0,1fr);gap:6px 12px;font-size:14px;line-height:1.5}
+  .tl>b{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink-2);white-space:normal;overflow-wrap:anywhere;min-width:0}
+  .tl>span{min-width:0;white-space:normal;overflow-wrap:anywhere}
+  .tl>span b{font-weight:700;color:var(--ink);white-space:normal}
   .src{font-size:12px;color:var(--ink-3);margin-top:14px;padding-top:10px;border-top:1px dashed var(--line);word-break:break-all}
   .drive{font-size:10px;color:var(--ink-3);opacity:.75;margin-top:4px;word-break:break-all}
   .approx{font-size:12px;color:var(--ink-3);font-weight:400}

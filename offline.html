@@ -190,8 +190,10 @@
   .back ul{margin:0;padding-left:18px;font-size:14.5px}
   .back li{margin:3px 0}
   .fail li::marker{color:var(--bad)}
-  .tl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:14px}
-  .tl b{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink-2);white-space:nowrap}
+  .tl{display:grid;grid-template-columns:fit-content(38%) minmax(0,1fr);gap:6px 12px;font-size:14px;line-height:1.5}
+  .tl>b{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink-2);white-space:normal;overflow-wrap:anywhere;min-width:0}
+  .tl>span{min-width:0;white-space:normal;overflow-wrap:anywhere}
+  .tl>span b{font-weight:700;color:var(--ink);white-space:normal}
   .src{font-size:12px;color:var(--ink-3);margin-top:14px;padding-top:10px;border-top:1px dashed var(--line);word-break:break-all}
   .drive{font-size:10px;color:var(--ink-3);opacity:.75;margin-top:4px;word-break:break-all}
   .approx{font-size:12px;color:var(--ink-3);font-weight:400}
@@ -68987,7 +68989,6 @@ const EMBEDDED_CARDS = [
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 300,
-  "setting": "History, examination request and explanation — general practice, and the photograph already tells you the answer. The station tests whether you can still take a complete rash history: the four differential groups — infective, autoimmune, allergic, purpuric — plus the fever-rash timing question, immunisations and contacts, the well-baby and non-blanching safety questions, a social history for non-accidental injury, and an examination request ending with lymph nodes. This is the framework card for every paediatric rash.",
   "stem": [
    "VERSION A (spine case): general practice, Wallaroo. LIAM, 3 YEARS, brought by his mother Kate with 'A RASH THAT CAME OUT YESTERDAY'. THE PHOTOGRAPH shows SCATTERED RED SPOTS AND SMALL BLISTERS ON THE TRUNK AND FACE, SOME CRUSTED. He is alert and playing. NO VITAL SIGNS ARE GIVEN.",
    "History 5 minutes, examination findings from the examiner 1-2 minutes, then the most likely diagnosis, important differentials and management. VERSION B: AVA, 5, A PURPURIC RASH ON LEGS AND BUTTOCKS for two days WITH TUMMY PAIN AND SORE ANKLES after a 'flu' two weeks ago. VERSION C: NOAH, 14 MONTHS, THREE DAYS OF HIGH FEVER, and today A PINK BLANCHING TRUNK RASH WITH THE FEVER GONE."
@@ -68997,116 +68998,244 @@ const EMBEDDED_CARDS = [
    "Ask the examiner for the relevant physical examination findings",
    "Explain the most likely diagnosis and important differentials to the mother, and outline your management"
   ],
-  "time": "Ask for the observations first · the examiner has them on a card and marks whether you asked · then address the concern and signpost: 'A few rashes look alike early on and one or two are serious, so I'm going to ask a set of questions, some about things that may seem unrelated' · the rash: when first noticed, where it started and where it is now, spreading, what colour, raised, are some of them blisters, any pus or weeping, warm or painful, itchy and worse at night or after a bath · group 1, infective: has he had a fever, and when in relation to the rash; immunisations; anyone at home or childcare unwell, anyone with chickenpox; travel; coryzal symptoms; vomiting or diarrhoea; recent antibiotics; and the well-baby questions · alert, drinking, normal wet nappies · group 2, autoimmune: blood in the stool, greasy stool, sore joints, sore or red eyes, mouth ulcers, cracked lips · group 3, allergic: family asthma, hay fever or eczema; new soaps, creams, sunscreen, foods, medicines or bites; noisy breathing or lip swelling · group 4, purpuric: easy bruising, nosebleeds, bleeding gums, pale, tired, weight loss, lumps · then BINDSMA and the social history, which is the NAI screen and is scored in every rash station · then the examination in structure, ending with spleen and lymph nodes.",
   "findings": [
    [
-    "Observations (ask for them)",
-    "HR 110 — RR 24 — T 37.4 — SpO2 99% — alert and playing"
+    "The photograph — shown outside the room",
+    "SCATTERED RED SPOTS and SMALL BLISTERS on the TRUNK AND FACE, SOME CRUSTED. The child is alert and playing. NO VITAL SIGNS in the stem"
    ],
    [
-    "General",
-    "Alert, well hydrated"
+    "★ VITALS — the examiner has them on a card and marks whether you asked",
+    "HR 110, RR 24, T 37.4, SpO2 99%, ALERT and playing. Skipping them because the child 'looks well' is the named trap — ask BEFORE the history"
    ],
    [
-    "The rash",
-    "Scattered papules, clear vesicles and crusted lesions over trunk, face and scalp — one vesicle on the palate — blanching, not tender"
+    "★ THE EXAMINATION — end with the lymph nodes",
+    "Alert, well hydrated. PAPULES, CLEAR VESICLES and CRUSTED lesions AT DIFFERENT STAGES over TRUNK, FACE and SCALP; ONE VESICLE ON THE PALATE. BLANCHING, NON-TENDER. Throat mildly red; ears, chest, heart normal; NO HEPATOSPLENOMEGALY; joints normal; NO LYMPHADENOPATHY. Stopping after the rash loses the last two boxes"
    ],
    [
-    "Fever-rash timing",
-    "Fever the day before the spots, gone now"
+    "Her opening",
+    "'He came out in spots yesterday and now they're EVERYWHERE — he CAN'T STOP SCRATCHING. I THINK IT'S CHICKENPOX but I JUST WANT TO BE SURE.' Anxious and tired, not angry. Partner Josh works FIFO"
    ],
    [
-    "VERSION B findings",
-    "NON-BLANCHING purpura on LEGS AND BUTTOCKS — BP 98/60 — DIPSTICK BLOOD 1+, NO PROTEIN — mild periumbilical tenderness, SWOLLEN ANKLES, no nodes or organomegaly"
+    "★ IF YOU SAY 'CHICKENPOX' IN THE FIRST MINUTE",
+    "'ARE YOU SURE? HOW DO YOU KNOW IT ISN'T SOMETHING WORSE?' The move: 'it may well be — but a few rashes look alike early on and one or two are serious, so I'm going to ask you a set of questions first'"
+   ],
+   [
+    "The rash — blisters and stages are the diagnosis",
+    "YESTERDAY MORNING, a few on his TUMMY; now CHEST, BACK, FACE, SCALP, 'I think ONE IN HIS MOUTH.' STILL COMING. 'Some are PINK BUMPS, some are like little WATER BLISTERS, some have already SCABBED.' No pus, not warm, not painful. VERY ITCHY day and night, NOT worse in the bath"
+   ],
+   [
+    "★ The infective group — timing, immunisation, contacts, well-baby",
+    "Fever: 'HOT AND GRIZZLY THE DAY BEFORE THE SPOTS — GONE NOW.' Immunisations ALL UP TO DATE, including the 18-month ones. 'His COUSIN HAD CHICKENPOX about TWO WEEKS AGO' (in the 10–21-day window). No travel. Runny nose only. NO ANTIBIOTICS. Alert, drinking fine, nappies normal"
+   ],
+   [
+    "The other three groups — all negative",
+    "AUTOIMMUNE: no blood or greasy stools, joints, red eyes, mouth ulcers, cracked lips. ALLERGIC: dad (Josh) has HAY FEVER; nothing new; NO noisy breathing or lip swelling. PURPURIC: no bruising, nosebleeds, gum bleeding, pallor, weight loss or lumps"
+   ],
+   [
+    "BINDSMA and the social screen",
+    "Term birth, growing and developing well, no medicines or allergies. 'Just the three of us, things are good' — Josh away two weeks in three, managing OK. Childcare lovely, no concerns"
+   ],
+   [
+    "★ HER HIDDEN FACT — the pregnant sister",
+    "Only if you ask about PREGNANT CONTACTS: 'MY SISTER BEC is 30 WEEKS PREGNANT and she WAS HERE YESTERDAY.' If never asked, at the very end: 'OH — SHOULD I BE WORRIED ABOUT MY SISTER?' — a marked miss"
+   ],
+   [
+    "Her other questions",
+    "'WHEN CAN HE GO BACK? I HAVE TO WORK.' 'IS IT MY FAULT for letting him see his cousin?' (if you sound judgemental) · 'Is it dangerous?'"
+   ],
+   [
+    "★ VERSION B — purpura after a cold",
+    "Ava, 5: red-purple spots on the LEGS AND BOTTOM, TUMMY PAIN, SORE ANKLES, a bad cold two weeks ago; spots DON'T FADE. BP 98/60; dipstick BLOOD 1+, no protein; periumbilical tenderness, swollen ankles; no nodes or spleen → HSP: FBC TODAY (exclude ITP/leukaemia), urine and BP for SIX MONTHS"
+   ],
+   [
+    "★ VERSION C — the timing question wins the station",
+    "Noah, 14 months: three days of high fever; this morning the FEVER'S GONE and he's COVERED IN PINK SPOTS; bright, drinking, blanching, immunised → ROSEOLA (HHV-6): no treatment; warn about febrile seizures. Calling it measles, or ordering tests for a well blanching child, is the trap"
+   ],
+   [
+    "Other practice cards",
+    "Fever 4+ days, RED EYES, CRACKED LIPS, swollen hands, one big neck node → KAWASAKI: count the fever days · BRUISES on shins and back, PALE, tired, NODES, 3 cm SPLEEN → LEUKAEMIA: same-day FBC · fever, DROWSY, spots that DON'T FADE, cold hands, CRT 4 s → MENINGOCOCCAEMIA: STOP the history, antibiotic first, MedSTAR · TARGET lesions on the hands after a cold sore → erythema multiforme · itch WORSE AT NIGHT, siblings itchy, finger webs → SCABIES · ANNULAR ring, central clearing, new kitten → TINEA"
    ]
   ],
   "back": {
-   "dx": "VERSION A — VARICELLA (CHICKENPOX). 'A common virus that causes A FEVER AND THEN VERY ITCHY SPOTS that turn into little blisters and then scabs — THE MIX OF NEW SPOTS, BLISTERS AND SCABS TOGETHER IS WHAT MAKES ME CONFIDENT. His cousin's illness two weeks ago fits exactly.' DIFFERENTIALS NAMED: a cold-sore-type virus (HSV), HAND-FOOT-AND-MOUTH DISEASE, and SCHOOL SORES (impetigo) — 'the pattern and the sites don't fit those. And importantly, HE'S ALERT, DRINKING, THE SPOTS FADE WHEN PRESSED AND HE HAS NO BRUISING, so I'm not worried about the serious rashes.' MANAGEMENT: no specific medicine in a healthy child; PARACETAMOL, AND AVOID IBUPROFEN AND ASPIRIN IN CHICKENPOX; cool baths, calamine, SHORT NAILS, loose cotton clothes; EXCLUSION FROM CHILDCARE UNTIL EVERY BLISTER HAS SCABBED, ABOUT FIVE DAYS. THEN THE QUESTION THAT MUST BE ASKED: 'IS ANYONE PREGNANT, A NEWBORN, OR ON TREATMENT THAT WEAKENS THE IMMUNE SYSTEM IN YOUR CIRCLE? THEY SHOULD RING THEIR DOCTOR TODAY' — and if she is not immune, ZOSTER IMMUNOGLOBULIN CAN PROTECT HER IF GIVEN EARLY, WITHIN 96 HOURS AND UP TO 10 DAYS. SAFETY-NET: come straight back or call 000 if he becomes DROWSY, STOPS DRINKING, HAS TROUBLE BREATHING, or ANY SPOT BECOMES RED, SWOLLEN AND PAINFUL, or THE FEVER RETURNS AFTER A FEW DAYS. Give it in writing, and notify SA Health as routine. VERSION B — HENOCH-SCHONLEIN PURPURA: 'inflammation of small blood vessels after a viral infection. IT USUALLY SETTLES, but I need A BLOOD COUNT TODAY to be sure her platelets are normal, and because IT CAN AFFECT THE KIDNEYS we'll CHECK HER URINE AND BLOOD PRESSURE REGULARLY FOR SIX MONTHS.' Emergency return for SEVERE TUMMY PAIN, BLOOD IN THE STOOL, OR A SWOLLEN PAINFUL TESTICLE. Ask: does it blanch, blood in the urine, nosebleeds or bleeding gums, pale or tired, any lumps — and request BLOOD PRESSURE AND A URINE DIPSTICK FOR BLOOD AND PROTEIN by name. VERSION C — ROSEOLA INFANTUM (HHV-6): 'THE TELL-TALE SIGN IS THE FEVER BREAKING JUST AS THE RASH APPEARS.' No treatment, childcare when well — and the one thing to add: THE HIGH FEVER CAN OCCASIONALLY TRIGGER A BRIEF FEBRILE SEIZURE, so lie him on his side, nothing in the mouth, and call 000 if it lasts more than five minutes. THE TRAP IN VERSION C IS CALLING IT MEASLES — he is immunised, there is no cough, coryza or conjunctivitis, AND THE FEVER HAS GONE — or ordering tests on a well, blanching child.",
+   "dx": [
+    "**VARICELLA (CHICKENPOX) — primary varicella-zoster infection: itchy lesions AT MULTIPLE STAGES (papule → vesicle → ruptured → crust) on trunk, face and scalp, ± a palatal vesicle; fever 1–2 days before; a contact in the 10–21-DAY incubation window. INFECTIOUS from 1–2 days before the rash until ALL LESIONS HAVE CRUSTED (~5 days). A WELL, blanching, immunised child.**",
+    "**★ THE DISCRIMINATING ISSUE — COMPLETING THE FOUR-GROUP STRUCTURE AND ASKING THE SAFETY QUESTIONS WHEN THE DIAGNOSIS IS OBVIOUS. Candidates fail by looking at the photo, saying 'chickenpox', and taking a THREE-QUESTION HISTORY. The examiner is scoring whether you RULE OUT MENINGOCOCCAEMIA, ANAPHYLAXIS, KAWASAKI, LEUKAEMIA and NAI in a child whose rash LOOKS BENIGN — and whether you ask the FEVER–RASH TIMING, IMMUNISATION and DROWSY / DRINKING / WET NAPPIES questions OUT LOUD. 'The examiner ticks groups, not brilliance.'** **Script: 'it does look like chickenpox, but a few rashes can look similar early on and some are serious, so I'm going to ask about fevers, breathing, tummy and joints, allergies and bruising — then I'll examine him.'**",
+    "**THE ONE-LINE STRATEGY — IT WORKS FOR EVERY RASH: VITALS → CONCERN → EXPLORE THE RASH → FOUR GROUPS → BINDSMA + SOCIAL → PEFE ENDING IN LYMPH NODES → diagnosis + exclusion + safety-net.** **EXPLORE: TIMING (when, spreading, constant vs coming and going — constant = tinea/psoriasis/infection; on-and-off = eczema/urticaria; spread over HOURS = urgent) · WHAT YOU SEE (site, colour, RAISED or flat, BLISTERS, pus, discharge) · WHAT YOU FEEL (WARM, TENDER = infection; ROUGH like sandpaper = scarlet fever; ITCH WORSE AT NIGHT or after a warm bath = scabies).**",
+    "**★ THE FOUR DIFFERENTIAL GROUPS, IN ORDER, REGARDLESS OF THE PHOTO: 1 INFECTIVE — fever, and ★ 'DID THE FEVER COME BEFORE THE RASH, OR SETTLE WHEN IT CAME OUT?' (fever vanishing as the rash appears = ROSEOLA) · IMMUNISATIONS (unimmunised + fever + rash = MEASLES) · CONTACTS, TRAVEL · ENT, respiratory, GI · ANTIBIOTICS before the rash (EBV–amoxicillin) · ★ ALERT OR DROWSY? DRINKING? WET NAPPIES? (drowsy + not drinking = meningococcaemia — treat before you finish) · older child: headache, neck stiffness, photophobia. 2 AUTOIMMUNE — blood or greasy stools, joints, eyes, mouth ulcers, RED EYES / CRACKED LIPS / NECK LUMP (Kawasaki). 3 ALLERGIC — atopy, new products, foods, medicines, bites, and the three ANAPHYLAXIS red-flag questions: NOISY BREATHING, WHEEZE, LIP/TONGUE SWELLING. 4 PURPURIC — recent viral illness, tummy pain, joints, HAEMATURIA, bleeding, BRUISING, PALLOR, weight loss, LUMPS, night sweats, family bleeding disorders.**",
+    "**SIGNPOST THE GROUPS — it stops the structure sounding robotic: 'I'd like to ask about infections now.' · 'A few questions about his tummy and joints.' · 'Now some questions about allergies.' · 'Finally, some questions about your home situation — I ASK EVERYONE.' The SOCIAL HISTORY IS THE NAI SCREEN, scored in EVERY rash station — 'who's at home, how are things going, any stresses, how is childcare?' — gently, and say why. Omitting it 'because the diagnosis is clear' is a named trap.**",
+    "**THE EXAMINATION REQUEST — IN ORDER: general appearance, HYDRATION (mucous membranes, CRT), temperature, growth chart · RASH INSPECT — distribution, PRIMARY MORPHOLOGY (macule, papule, VESICLE, pustule, wheal, purpura), borders, crust, STAGES · RASH PALPATE — warm, tender, rough, BLANCHING (glass test) · ENT (throat, tonsils, Koplik spots, tongue, drums) · respiratory · cardiovascular · ABDOMEN (splenomegaly) · joints · and ★ FINISH WITH A FULL LYMPH NODE EXAMINATION — NEVER OMIT IT.** **Stage-reading separates HERPES SIMPLEX (GROUPED, ONE STAGE, painful) from CHICKENPOX (SCATTERED, MULTIPLE STAGES, itchy).**",
+    "**★ THE DIAGNOSIS AND DIFFERENTIALS — PLAIN WORDS: 'Kate, Liam has CHICKENPOX. A common virus — a fever first, then very itchy spots that become little BLISTERS and then SCABS. Seeing NEW SPOTS, BLISTERS AND SCABS TOGETHER is what makes me confident, and his cousin's illness fits the timing exactly. I considered a COLD-SORE virus, HAND-FOOT-AND-MOUTH and SCHOOL SORES, but the pattern doesn't fit — and importantly he's ALERT, DRINKING, the SPOTS FADE WHEN PRESSED and there's NO BRUISING, so I'M NOT WORRIED ABOUT THE SERIOUS RASHES.'** **Never 'vesicular exanthem' — 'small blisters', 'a virus'.**",
+    "**MANAGEMENT: no specific medicine for a healthy child · PARACETAMOL 15 mg/kg 4–6-hourly (max 4 doses/24 h) · ★ 'PLEASE AVOID IBUPROFEN AND ASPIRIN with chickenpox' — ibuprofen is associated with INVASIVE GROUP A STREP soft-tissue infection in varicella; aspirin with REYE syndrome · COOL BATHS, CALAMINE, SHORT NAILS, cotton mittens for infants, LOOSE COTTON clothes · fluids · ★ EXCLUSION: HOME UNTIL EVERY BLISTER HAS SCABBED — ABOUT FIVE DAYS ('he can go back tomorrow' is wrong) · NOTIFY SA Health (routine — varicella is notifiable in SA) · written advice.** VERIFY",
+    "**★ CONTACTS — THE PREGNANT SISTER: 'is anyone PREGNANT, a NEWBORN, or on treatment that WEAKENS THE IMMUNE SYSTEM in your circle?' → 'my sister's 30 weeks and was here yesterday' → 'thank you for telling me — she should RING HER DOCTOR or the maternity unit TODAY; if she isn't immune there's an INJECTION THAT CAN PROTECT HER if given early.' ZOSTER IMMUNOGLOBULIN within 96 h (up to 10 days) for non-immune pregnant, neonatal and immunocompromised contacts; UNIMMUNISED WELL contacts can have VARICELLA VACCINE within 3–5 days.** VERIFY **SAFETY-NET: 'come straight back or call 000 if he becomes DROWSY, STOPS DRINKING, has TROUBLE BREATHING, or any spot becomes RED, SWOLLEN AND PAINFUL, or the FEVER COMES BACK after a few days' (secondary strep/staph — cellulitis, necrotising fasciitis; pneumonia; encephalitis/cerebellar ataxia).** **Immunocompromised or neonate → aciclovir and paediatric referral.**",
+    "**THE MUST-NOT-MISS RASHES: MENINGOCOCCAEMIA — the ONLY rash where you STOP THE HISTORY and give an antibiotic first: CEFTRIAXONE 50 mg/kg IV/IM (max 2 g) or BENZYLPENICILLIN 60 mg/kg (max 2.4 g), then MedSTAR · ANAPHYLAXIS — wheeze or lip swelling with wheals: IM ADRENALINE 10 µg/kg (0.01 mL/kg 1:1000, max 0.5 mg) BEFORE questions · KAWASAKI — fever ≥ 5 days + 4 of 5 features; IVIG 2 g/kg + aspirin · LEUKAEMIA — purpura WITH pallor or nodes: same-day FBC · NAI — bruises in a non-mobile infant, patterned marks, an inconsistent story · MEASLES — unimmunised, cough, coryza, conjunctivitis, Koplik spots: isolate, PCR, NOTIFY BY PHONE immediately.** VERIFY **VERSION B (HSP): 'because Ava's rash doesn't fade when pressed, I need a BLOOD COUNT TODAY and her URINE AND BLOOD PRESSURE checked — most likely HSP, but I want to make sure it isn't her platelets'; urine + BP for 6 months; ED for severe abdominal pain, blood in the stool, a painful swollen testis. VERSION C (ROSEOLA): 'three days of fever, then the fever disappearing JUST AS THE RASH CAME OUT — typical of a harmless virus called roseola; no tests needed'; febrile-seizure first aid.** SA: **MedSTAR 1300 13 12 33** · **SA Health CDCB 1300 232 272** (measles by phone) · **CARL 13 14 78** · ACCHS · **TIS 131 450** · exclusion per SA Health 'You've got what?'."
+   ],
    "plan": [
     [
      "0:00",
-     "VITALS FIRST, THEN OPEN AND SIGNPOST — skipping the observations because the child 'looks well' is the first trap, and the examiner marks whether you asked. 'A few rashes can look alike early on and ONE OR TWO ARE SERIOUS, so I'm going to ask a set of questions, some about things that may seem unrelated, then examine Liam and tell you what I think.' (Jumping to 'it's chickenpox' in the first minute earns 'ARE YOU SURE? HOW DO YOU KNOW IT ISN'T SOMETHING WORSE?')"
+     "**★ VITALS FIRST — BEFORE THE HISTORY**: **'hello, I'm Dr ___. You must be Kate, and this is Liam. Before we start, may I ask the examiner for Liam's observations — heart rate, breathing rate, temperature, saturations, and is he alert?'** *110, 24, 37.4, 99%, alert.* **'Thank you — that's reassuring. Kate, tell me what's been happening.'**"
     ],
     [
-     "1:00",
-     "THE RASH: onset, WHERE IT STARTED AND WHERE IT IS NOW, spreading, colour, RAISED OR FLAT, ARE SOME OF THEM BLISTERS, pus or weeping, warm or painful, itchy and worse at night or after a bath. (NOT ASKING ABOUT BLISTERS AND STAGES IS THE TRAP — THE MULTIPLE-STAGE DESCRIPTION IS THE DIAGNOSIS.)"
+     "0:25",
+     "**ADDRESS THE CONCERN — AND SIGNPOST THE STRUCTURE**: *'I think it's chickenpox but I just want to be sure.'* → **'that's very sensible — a few rashes look alike early on and one or two are serious, so I'll ask a series of questions, some may seem unrelated, then examine him and explain.'** **Never 'it's chickenpox' at minute one.**"
     ],
     [
-     "2:15",
-     "GROUP 1, INFECTIVE — with the two marked items: 'HAS HE HAD A FEVER? WHEN, IN RELATION TO THE RASH?' then immunisations, CONTACTS INCLUDING CHICKENPOX, travel, coryza, vomiting or diarrhoea, recent antibiotics, AND 'IS HE ALERT, DRINKING NORMALLY, NORMAL WET NAPPIES?' (Both the fever-rash timing and the drowsy/drinking/nappy questions are separately marked.)"
+     "0:45",
+     "**EXPLORE THE RASH — blisters and stages**: **'when did you first notice it, and where? Is it still spreading? What do the spots look like — flat, raised, any blisters or scabs? Any pus or weeping? Warm or painful? The itch — worse at night or after a warm bath?'** *Yesterday, tummy first, now everywhere including scalp and mouth; pink bumps, water blisters, scabs; no pus; itchy day and night.*"
     ],
     [
-     "3:15",
-     "GROUPS 2, 3 AND 4, RUN AS BLOCKS: AUTOIMMUNE — blood in the poo, greasy poo, sore joints, sore or red eyes, mouth ulcers, cracked lips. ALLERGIC — family atopy, NEW SOAPS, CREAMS, SUNSCREEN, FOODS, MEDICINES OR BITES, NOISY BREATHING OR LIP SWELLING. PURPURIC — EASY BRUISING, NOSEBLEEDS, BLEEDING GUMS, pale, tired, weight loss, lumps."
+     "1:35",
+     "**★ INFECTIVE GROUP — THE FEVER–RASH TIMING**: **'I'd like to ask about infections. Has he had a fever — did it come before the rash, or has it settled since the rash came out?'** *'Hot and grizzly the day before — gone now.'*"
     ],
     [
-     "4:30",
-     "BINDSMA AND THE SOCIAL HISTORY — and omitting it because the diagnosis is obvious is a named trap, because IT IS THE NAI SCREEN AND IS SCORED IN EVERY RASH STATION: 'born at term, any problems? Growing and developing well? Regular medicines or allergies? AND I ASK EVERY FAMILY THIS — who's at home with you, how are things going, any stresses? How is childcare — any concerns?'"
+     "1:55",
+     "**★ IMMUNISATION, CONTACTS — AND THE WELL-BABY THREE**: **'are his immunisations up to date? Anyone unwell at home or childcare — anyone with chickenpox? Any travel? Runny nose, sore throat, cough, vomiting, diarrhoea? Any antibiotics lately? And most importantly — is he alert and himself, drinking normally, normal wet nappies?'** *Up to date; cousin two weeks ago; runny nose only; no antibiotics; himself, drinking, nappies normal.*"
+    ],
+    [
+     "2:35",
+     "**AUTOIMMUNE — signposted**: **'a few questions about his tummy and joints: any blood in the poo, greasy poo, sore joints, sore red eyes, mouth ulcers or cracked lips?'** *No.*"
+    ],
+    [
+     "2:55",
+     "**ALLERGIC — with the anaphylaxis red flags**: **'now allergies: asthma, hay fever or eczema in the family? Any new soap, cream, sunscreen, food, medicine or insect bite before the rash? Any noisy breathing or swelling of the lips or tongue?'** *Josh has hay fever; nothing new; no.*"
+    ],
+    [
+     "3:20",
+     "**PURPURIC — bruising, bleeding, marrow**: **'and bruising or bleeding — easy bruising, nosebleeds, bleeding gums? Is he pale, tired, losing weight, any lumps?'** *None.*"
+    ],
+    [
+     "3:40",
+     "**BINDSMA — AND THE SOCIAL SCREEN, SAID AS ROUTINE**: **'was he born at term, any problems? Growing and developing well? Any medicines or allergies? And I ask every family this — who's at home, how are things going, any stresses? How is childcare — any concerns?'** *All normal; the three of them; Josh away a lot but managing; childcare lovely.*"
+    ],
+    [
+     "4:20",
+     "**★ THE EXAMINATION — ENDING WITH THE LYMPH NODES**: **'I'd like general appearance and hydration; the rash — distribution, papules, vesicles or crusts and at different stages, blanching, warmth, tenderness; throat, mouth and ears; chest and heart; abdomen for liver and spleen; joints; and a full lymph node examination.'** *Mixed-stage lesions trunk, face, scalp; palatal vesicle; blanching; everything else normal; no nodes, no spleen.*"
     ],
     [
      "5:15",
-     "THE EXAMINATION, IN STRUCTURE AND ENDING WITH THE LAST TWO BOXES: 'general appearance and hydration; THE RASH — distribution, whether the lesions are MACULES, PAPULES OR VESICLES, WHETHER THEY ARE AT DIFFERENT STAGES, any crusting or discharge; WHETHER THEY BLANCH; warmth and tenderness; the throat and mouth, ears, chest, heart, ABDOMEN FOR LIVER AND SPLEEN, joints, AND A FULL LYMPH NODE EXAMINATION.' (Stopping after the rash is the trap — LYMPH NODES AND SPLEEN ARE THE LAST TWO BOXES.)"
+     "**★ THE DIAGNOSIS — PLAIN WORDS, THE REASON**: **'Kate, Liam has chickenpox — a common virus: a fever first, then very itchy spots that become little blisters and then scabs. Seeing new spots, blisters and scabs together is what confirms it, and his cousin's illness fits the timing.'** *'Is it dangerous?'* → **'for a healthy child it's usually mild.'**"
+    ],
+    [
+     "5:45",
+     "**THE DIFFERENTIALS — and why you're not worried**: **'I considered a cold-sore virus, hand-foot-and-mouth disease and school sores, but the pattern doesn't fit — and importantly he's alert, drinking, the spots fade when pressed and there's no bruising, so I'm not worried about the serious rashes.'**"
     ],
     [
      "6:15",
-     "Diagnosis in plain words with the stages as the reason, then the differentials and the reassuring negatives (see dx)."
+     "**★ CARE — NO IBUPROFEN, NO ASPIRIN; EXCLUSION UNTIL CRUSTED**: **'for comfort: paracetamol, cool baths, calamine, short nails and loose cotton clothes. Please avoid ibuprofen and aspirin with chickenpox. Keep him home until every blister has scabbed — about five days.'** *'When can he go back? I have to work.'* → **'once every spot has crusted — usually around five days.'**"
     ],
     [
-     "7:00",
-     "MANAGEMENT, THE PREGNANT-CONTACT QUESTION AND THE SAFETY-NET (see dx) → 'MY SISTER'S 30 WEEKS PREGNANT AND SHE WAS HERE YESTERDAY.' Then written information, notification, and a summary. (Ibuprofen, the wrong exclusion period, no pregnant-contact question, or reassurance without safety-netting are the four management traps.)"
+     "6:50",
+     "**★ THE CONTACT QUESTION — find the pregnant sister**: **'is anyone pregnant, a newborn, or on immune-weakening treatment in your circle?'** *'My sister's 30 weeks and was here yesterday.'* → **'thank you — she should ring her doctor or the maternity unit today; if she isn't immune there's an injection that can protect her if given early.'**"
+    ],
+    [
+     "7:25",
+     "**SAFETY-NET, NOTIFICATION, SUMMARY**: **'come straight back or call 000 if he becomes drowsy, stops drinking, has trouble breathing, or any spot becomes red, swollen and painful, or the fever comes back after a few days. I'll give you this in writing and let SA Health know — that's routine. To summarise: chickenpox, he's well, comfort care, home until the spots scab, protect your sister, and you know what to watch for. Any questions?'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, Version A",
-   "ask": [
-    "'May I have the observations from the examiner?' / 'A few rashes look alike early on, AND ONE OR TWO ARE SERIOUS.' / 'DID THE FEVER SETTLE WHEN THE RASH CAME OUT, OR IS IT STILL THERE?' / 'Are some of them blisters — and are some already scabbed?' / 'IS HE ALERT AND HIMSELF, DRINKING NORMALLY, WITH NORMAL WET NAPPIES?' / 'DO THE SPOTS FADE WHEN YOU PRESS ON THEM?' / 'I ASK EVERY FAMILY — WHO'S AT HOME AND HOW ARE THINGS GOING?' / '...AND A FULL LYMPH NODE EXAMINATION.'",
-    "'New spots, blisters and scabs together is what confirms chickenpox.' / 'PLEASE AVOID IBUPROFEN AND ASPIRIN WITH CHICKENPOX.' / 'HOME UNTIL EVERY BLISTER HAS SCABBED — ABOUT FIVE DAYS.' / 'IS ANYONE PREGNANT, NEWBORN OR ON IMMUNE-WEAKENING TREATMENT?' / 'Come straight back or call 000 if he is drowsy, not drinking, or breathing hard — or a spot becomes red, swollen and painful.'",
-    "VERSION B — HENOCH-SCHONLEIN PURPURA: ask 'DO THE SPOTS FADE WHEN YOU PRESS A GLASS ON THEM? Any blood in her wee? Nosebleeds or bleeding gums? Is she pale or tired, any lumps?' Then request BLOOD PRESSURE, A URINE DIPSTICK FOR BLOOD AND PROTEIN, abdomen, joints, nodes, liver and spleen. Explain: 'inflammation of small blood vessels after a viral infection. It usually settles, BUT I NEED A BLOOD COUNT TODAY to be sure her platelets are normal, and BECAUSE IT CAN AFFECT THE KIDNEYS we'll check her urine and blood pressure REGULARLY FOR SIX MONTHS. SEVERE TUMMY PAIN, BLOOD IN THE POO, OR A SWOLLEN PAINFUL TESTICLE needs the emergency department.'",
-    "VERSION C — ROSEOLA: the winning question is 'SO THE RASH APPEARED AS THE FEVER DISAPPEARED?' Then alert and drinking, does it blanch, immunisations. 'This is ROSEOLA — a common, harmless virus in toddlers. THE TELL-TALE SIGN IS THE FEVER BREAKING JUST AS THE RASH APPEARS. No treatment, childcare when he feels well. The one thing to know is that THE HIGH FEVER CAN OCCASIONALLY TRIGGER A BRIEF FEBRILE SEIZURE — lie him on his side, DON'T PUT ANYTHING IN HIS MOUTH, and call 000 if it lasts more than five minutes.' (Calling it measles in an immunised child with no cough, coryza or conjunctivitis and a settled fever, or ordering tests on a well blanching child, are the two traps.)",
-    "THE FOUR GROUPS, AS A CHECKLIST FOR ANY PAEDIATRIC RASH: INFECTIVE — fever and its timing, immunisations, contacts, travel, coryza, gut symptoms, antibiotics, and the well-baby questions. AUTOIMMUNE — bowel, joints, eyes, mouth and lips. ALLERGIC — atopy, new exposures, and the anaphylaxis screen. PURPURIC — bruising, bleeding, pallor, fatigue, weight loss and lumps. THEN BINDSMA AND THE SOCIAL SCREEN."
-   ],
    "pefe": [
-    "Role-player: Kate, 29, a hairdresser in Wallaroo; LIAM, 3, born at term, healthy, IMMUNISED. He came out in spots yesterday; YOU HAVE SEEN CHICKENPOX IN YOUR NEPHEW TWO WEEKS AGO AND SUSPECT IT, but you are tired and want certainty. Partner Josh works FIFO. REGISTER: anxious and tired, NOT ANGRY. IF THE DOCTOR JUMPS TO 'IT'S CHICKENPOX' IN THE FIRST MINUTE: 'ARE YOU SURE? HOW DO YOU KNOW IT ISN'T SOMETHING WORSE?'",
-    "The hidden contact: your sister Bec is 30 weeks pregnant and visited yesterday — mention it only if the doctor asks about pregnant contacts, or volunteer it at the very end: 'Oh — should I be worried about my sister?' Also ask 'When can he go back to childcare? I have to work', and ask 'Is it my fault?' if the doctor sounds judgemental.",
-    "Score them on: ASKED FOR VITALS FIRST; addressed your worry; explored timing, site, BLISTERS and itch; FEVER-RASH TIMING; immunisation; contacts; ALERT, DRINKING AND NAPPIES; the bowel-joints-eyes group; atopy, new products and breathing; THE BRUISING-BLEEDING GROUP; SOCIAL HISTORY WITHOUT JUDGEMENT; an examination request ENDING WITH LYMPH NODES; said chickenpox in plain words; NAMED TWO OR MORE DIFFERENTIALS; paracetamol with NO IBUPROFEN OR ASPIRIN; EXCLUSION UNTIL CRUSTED; ASKED ABOUT PREGNANT OR IMMUNOCOMPROMISED CONTACTS; safety-net for drowsy, not drinking, breathing and secondary infection; and summarised.",
-    "Why that is the diagnosis — LESIONS AT DIFFERENT STAGES TOGETHER — new spots, blisters and scabs at once — IS WHAT MAKES IT CHICKENPOX",
-    "The rest — Throat mildly red; ears, chest, heart and joints normal; NO HEPATOSPLENOMEGALY; NO LYMPHADENOPATHY",
-    "The history — Started yesterday on the tummy, now chest, back, face and scalp with ONE IN THE MOUTH; some water blisters, some scabbed; NO pus, not warm, VERY ITCHY",
-    "Contacts and immunisation — HIS COUSIN HAD CHICKENPOX ABOUT TWO WEEKS AGO — immunisations all up to date",
-    "The other three groups — ALL NEGATIVE — no bowel, joint, eye or mouth symptoms; nothing new applied or eaten; NO bruising or bleeding; father has hay fever",
-    "The hidden contact — HER SISTER IS 30 WEEKS PREGNANT AND VISITED YESTERDAY — given ONLY if you ask about pregnant contacts, or volunteered at the very end as 'OH — SHOULD I BE WORRIED ABOUT MY SISTER?'",
-    "Version C — THE RASH APPEARED AS THE FEVER DISAPPEARED — pink, BLANCHING, child bright and drinking, immunised"
+    "**VITALS FIRST — HR, RR, temperature, SpO2, CRT, alertness. General appearance; HYDRATION (mucous membranes, CRT); growth chart.**",
+    "**RASH — INSPECT: distribution, PRIMARY MORPHOLOGY (macule, papule, vesicle, pustule, wheal, purpura), borders, discharge/crust, STAGES (multiple = varicella; single-stage grouped = HSV).**",
+    "**RASH — PALPATE: warm, tender, rough (sandpaper = scarlet fever), BLANCHING with a glass (non-blanching → meningococcaemia, ITP, HSP, leukaemia, NAI).**",
+    "**ENT: throat, tonsils, KOPLIK SPOTS, tongue (strawberry), tympanic membranes; mouth and palatal lesions. Respiratory; cardiovascular (erythema marginatum → rheumatic fever); ABDOMEN (splenomegaly); joints.**",
+    "**FINISH WITH A FULL LYMPH NODE EXAMINATION — never omit it.**",
+    "**Investigations: NONE for typical varicella. Swab vesicle fluid for VZV/HSV PCR if atypical, immunocompromised or eczema herpeticum. FBC and film for any PURPURA. Throat swab for scarlet fever. MEASLES: PCR + notify by phone immediately (SA Health CDCB).**",
+    "**VARICELLA CARE: paracetamol 15 mg/kg (max 4 doses/24 h); NO IBUPROFEN (invasive GAS), NO ASPIRIN (Reye); cool baths, calamine, short nails, loose cotton; fluids. EXCLUSION until all crusted (~5 days); NOTIFY (routine).** VERIFY",
+    "**CONTACTS: non-immune pregnant, neonatal and immunocompromised → ZOSTER IMMUNOGLOBULIN within 96 h (up to 10 days); unimmunised well contacts → varicella vaccine within 3–5 days.** VERIFY",
+    "**MENINGOCOCCAEMIA: stop the history — ceftriaxone 50 mg/kg IV/IM (max 2 g) or benzylpenicillin 60 mg/kg (max 2.4 g), then MedSTAR. ANAPHYLAXIS: IM adrenaline 10 µg/kg (max 0.5 mg) before questions. KAWASAKI: IVIG 2 g/kg + aspirin.** VERIFY",
+    "**HSP (Version B): FBC today, urine dipstick and BP, then urine + BP surveillance for 6 months. ROSEOLA (Version C): clinical, no tests, febrile-seizure first aid.**"
    ],
-   "fails": [
-    "★ Skipping the observations because the child looks well — the examiner has them on a card and marks whether you asked",
-    "★ Not asking about blisters and stages, when lesions at different stages together IS the diagnosis",
-    "Omitting the social history because the diagnosis is obvious — it is the NAI screen and is scored in every rash station",
-    "Recommending ibuprofen or aspirin in chickenpox, or giving the wrong exclusion period",
-    "Forgetting the fever-rash timing question and the alert/drinking/wet-nappy questions; stopping the examination after the rash instead of finishing with spleen and lymph nodes; and never asking about pregnant, newborn or immunocompromised contacts"
-   ],
-   "numbers": [
-    "Varicella: incubation 10-21 days · infectious from 2 days before the rash until all lesions are crusted · exclusion about 5 days · zoster immunoglobulin within 96 hours, up to 10 days · no ibuprofen or aspirin",
-    "Paracetamol 15 mg/kg · ceftriaxone 50 mg/kg max 2 g · benzylpenicillin 60 mg/kg max 2.4 g · adrenaline 10 microgram/kg IM · KAWASAKI NEEDS FEVER OF 5 DAYS OR MORE · HSP: URINE AND BLOOD PRESSURE FOR 6 MONTHS · MedSTAR 1300 13 12 33, Communicable Disease Control 1300 232 272, CARL 13 14 78"
+   "ddx": [
+    [
+     "**Meningococcaemia**",
+     "**Fever, DROWSY, NOT DRINKING, rapidly spreading NON-BLANCHING rash**",
+     "**Glass test, CRT, cold hands, limb pain**",
+     "**Antibiotic NOW, MedSTAR.** IMMEDIATE"
+    ],
+    [
+     "**Varicella**",
+     "**Itchy lesions AT MULTIPLE STAGES, fever 1–2 d before, a contact 10–21 d ago**",
+     "**Scalp and mouth lesions, crusting**",
+     "**Clinical; swab PCR only if atypical.** Routine + exclusion. This is the case"
+    ],
+    [
+     "Herpes simplex / eczema herpeticum",
+     "**GROUPED vesicles at ONE STAGE, PAINFUL; punched-out erosions in an eczematous child**",
+     "Gingivostomatitis, eye involvement",
+     "Aciclovir if eczema herpeticum or eye. Same day"
+    ],
+    [
+     "Hand, foot and mouth",
+     "**Alert, grey oval vesicles on PALMS/SOLES, mouth ulcers, childcare**",
+     "Refusing to drink",
+     "Clinical; hydration. Routine"
+    ],
+    [
+     "Impetigo",
+     "**HONEY-COLOURED crust; may complicate scratched varicella**",
+     "Spread, fever",
+     "Swab if extensive; treat and cover. Routine + exclusion"
+    ],
+    [
+     "**Measles**",
+     "**UNIMMUNISED, fever, COUGH, CORYZA, CONJUNCTIVITIS, Koplik spots, rash day 4**",
+     "Travel, contacts",
+     "**PCR, isolate, NOTIFY SA Health immediately.** Urgent"
+    ],
+    [
+     "Roseola",
+     "**Rash appears AS a 3-day FEVER RESOLVES, well child**",
+     "**The fever–rash timing question**",
+     "Clinical; reassure. Routine. Version C"
+    ],
+    [
+     "**Kawasaki disease**",
+     "**Fever ≥ 5 d, RED EYES, CRACKED LIPS, strawberry tongue, oedema of hands/feet, neck node, irritable**",
+     "Count the fever days",
+     "**Urgent paediatric referral; IVIG + aspirin.** VERIFY Urgent"
+    ],
+    [
+     "**Urticaria / anaphylaxis**",
+     "**Wheals after food, drug, bite; WHEEZE, LIP SWELLING**",
+     "Airway, breathing",
+     "**IM adrenaline 10 µg/kg.** VERIFY Immediate if systemic"
+    ],
+    [
+     "Scarlet fever / scabies / eczema",
+     "**Rough SANDPAPER rash + strawberry tongue · itch WORSE AT NIGHT, finger webs, family itching · on-and-off itch, atopy, flexures**",
+     "Texture; burrows; distribution",
+     "Penicillin · permethrin whole family · emollient + steroid. Routine"
+    ],
+    [
+     "**HSP / ITP / leukaemia**",
+     "**Palpable purpura legs/buttocks + tummy + joints after a URTI · petechiae in a well child · purpura WITH pallor, nodes, hepatosplenomegaly**",
+     "**BP, urine dipstick; nodes, spleen**",
+     "**FBC and film today; HSP urine + BP 6 months.** Same day / urgent. Version B"
+    ],
+    [
+     "**Non-accidental injury**",
+     "**Bruises in a non-mobile infant, patterned marks, an inconsistent story, delay**",
+     "**The social history — every rash station**",
+     "**CARL 13 14 78; mandatory notification.** Immediate"
+    ]
    ]
   },
   "source": "Paediatric_Rash_Framework_2_Case_Tasks_Script_Notability.pdf (Liam, 3, with a vesicular rash at different stages — varicella, and the framework card for every paediatric rash; observations asked first, blisters and stages established, the fever-rash timing question, the four differential groups run as blocks, the social history as the NAI screen, an examination ending with spleen and lymph nodes, and management with the pregnant-contact question; the Henoch-Schonlein purpura and roseola versions folded in)",
   "drive": "AMC Clinical Notability › Pediatric › Rash › Paediatric_Rash_Framework_2_Case_Tasks_Script_Notability.pdf",
-  "findingsLabel": "Observations, examination and the hidden contact",
+  "findingsLabel": "The photograph, vitals and examination on request, and what Kate gives only if asked",
   "must": [
-   "FAIL — Skipping the observations because the child looks well — the examiner has them on a card and marks whether you asked",
-   "FAIL — Not asking about blisters and stages, when lesions at different stages together IS the diagnosis",
-   "FAIL — Omitting the social history because the diagnosis is obvious — it is the NAI screen and is scored in every rash station",
-   "FAIL — Forgetting the fever-rash timing question and the alert, drinking and wet-nappy questions",
-   "FAIL — Recommending ibuprofen or aspirin in chickenpox, or getting the exclusion period wrong — home until EVERY BLISTER HAS SCABBED, about five days",
-   "DO — Ask 'is anyone PREGNANT, a newborn, or on immune-weakening treatment?' — her sister is 30 weeks and visited yesterday, and she volunteers it only at the very end; and end the examination request with LYMPH NODES and spleen"
-  ]
+   "FAIL — **No vital signs** — straight into questions. The first sentence is 'may I have the observations from the examiner?'",
+   "FAIL — **Skipping groups because the photo is obvious** — a three-question history and 'chickenpox' at minute two.",
+   "FAIL — **Missing the drowsy / drinking / wet-nappy questions**, **the fever–rash timing**, or **immunisation**.",
+   "FAIL — **No social history**, **an examination that forgets the lymph nodes**, **ibuprofen or aspirin**, or **the wrong exclusion period**.",
+   "ASK — **Did the fever come before the rash, or has it settled since the rash came out? Is he alert and himself, drinking normally, normal wet nappies?**",
+   "ASK — **Is anyone pregnant, a newborn, or on immune-weakening treatment in your circle?**"
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-47",
   "cat": "paeds",
   "promptBell": true,
   "promptAt": 300,
-  "setting": "History, examination request and management — general practice. The photograph gives the diagnosis away, so the station is about everything else: the three key nappy questions — diarrhoea, change frequency, new products — and then the discriminating issue, which is whether you hear that the mother is not coping and respond with support rather than a lecture or a neglect label. She says she changes him once overnight 'When I remember' — answer 'Thank you for being honest, that really helps' and come back to it in the social history.",
   "stem": [
    "General practice, Wallaroo. OSCAR, 6 WEEKS, brought by his mother EMMA with A RASH IN THE NAPPY AREA THAT IS 'NOT GOING AWAY'. THE PHOTOGRAPH shows CONFLUENT SHINY ERYTHEMA over the buttocks, inner thighs and pubic area. Baby settled in the pram; no vital signs given.",
    "History 5 minutes, examination findings from the examiner 1 minute, then the most likely diagnosis and management. THE MARCH 2026 SITTING HAD NO EXAMINATION COMPONENT — BE READY FOR EITHER. VERSION B: ECZEMA in a 2-year-old. VERSION C: SEBORRHOEIC DERMATITIS behind the ears at 8 weeks. VERSION D: 'THE CARER SLAPPED HIM' — a 3-year-old with red cheeks."
@@ -69116,106 +69245,220 @@ const EMBEDDED_CARDS = [
    "Ask the examiner for the relevant examination findings",
    "Explain the most likely diagnosis and your management to the mother"
   ],
-  "time": "Vitals, then open · and note the tiredness comment when it comes, to return to it later · the rash: where exactly, and is it anywhere else · scalp, face or neck folds; when it started and whether it is spreading; just redness, or blisters, raw areas or sores; any discharge or white material; warm to touch; more irritable, especially at changes; first time, and what have you tried · then the three key questions: has he had any diarrhoea recently; how often do you change his nappy, day and overnight; any new WIPEs, body wash, cream or nappy brand · then the other groups: other rashes, family atopy, fever, alert or sleepier, feeding and wet nappies, sick contacts, immunisations, and white patches in the mouth for thrush · then feeding, stools, growth and BINDSMA · then the social and mood block, which is the discriminating one: who is at home, how much sleep are you getting, the two screening questions · over the last two weeks have you often felt down, depressed or hopeless, or had little interest or pleasure in things · and do you have anyone who can help with night changes and feeds · then the examination asking specifically about the folds and satellite lesions · then the diagnosis, the four-part plan, the support, and the safety-net.",
   "findings": [
    [
-    "Observations",
-    "T 36.9 — HR 130 — RR 36 — alert and feeding"
+    "The photograph — shown outside the room",
+    "CONFLUENT SHINY ERYTHEMA over the BUTTOCKS, INNER THIGHS and PUBIC AREA. Baby settled in the pram. NO vitals given. (The March 2026 sitting had NO examination component — be ready for either)"
    ],
    [
-    "General and growth",
-    "Alert, well hydrated, afebrile — weight on the 50th centile, tracking"
+    "Vitals — ask first",
+    "T 36.9, HR 130, RR 36, alert, feeding. A severe or infected rash in a 6-week-old can be a SEPTIC BABY"
+   ],
+   [
+    "★ THE EXAMINATION — folds and satellites decide the antifungal",
+    "Alert, well hydrated, afebrile, WEIGHT 50th CENTILE TRACKING. Confluent shiny erythema on buttocks, inner thighs and pubis with ONE SMALL SUPERFICIAL EROSION; FOLDS SPARED; NO SATELLITE lesions, no pustules. MOUTH CLEAR. Scalp and other skin normal. No hepatosplenomegaly, no lymphadenopathy"
+   ],
+   [
+    "★ Her opening — note the tiredness now",
+    "(flat, eyes down) 'He's had this rash on his bottom for THREE WEEKS and it WON'T GO AWAY whatever I put on it. I'M JUST SO TIRED, doctor — HE DOESN'T LET ME SLEEP.' Ignoring the tiredness comment is the trap — note it and come back to it"
    ],
    [
     "The rash",
-    "Confluent shiny erythema over buttocks, inner thighs and pubic area with a small superficial erosion — the folds are spared — no satellite lesions, no pustules"
+    "JUST THE NAPPY AREA — bottom, thighs, front; NOWHERE ELSE. About three weeks, slowly worse. RED AND SHINY, ONE RAW BIT, no blisters, NO WHITE STUFF. 'He SCREAMS WHEN I WIPE HIM.' First time. A chemist cream and Sudocrem 'WHEN I REMEMBER'"
    ],
    [
-    "Mouth",
-    "CLEAR — no thrush"
+    "★ THE THREE KEY QUESTIONS — stool, time, irritant",
+    "DIARRHOEA: 'runny poos for a few days about THREE WEEKS AGO — fine now' (the rash started then). CHANGE FREQUENCY: (looks away) 'three or four times a day. AT NIGHT… ONCE, WHEN I REMEMBER. I'M SO TIRED.' NEW PRODUCTS: 'no, all the same.' Reacting with a LECTURE here is the trap — 'thank you for being honest with me, that really helps' and move on"
+   ],
+   [
+    "The other groups — all negative",
+    "No other rashes. Partner Jake HAD ECZEMA as a child. No fever; alert; feeds every 3 hours; plenty of wet nappies. Nobody sick. The 6-WEEK IMMUNISATIONS ARE DUE NEXT WEEK. NO WHITE PATCHES in the mouth. Breastfed, satisfied, 'the nurse says he's gaining well.' Poos normal, no blood, not greasy. Just little possets. Term, normal delivery, heel-prick normal, no medicines"
+   ],
+   [
+    "★ THE SOCIAL AND MOOD BLOCK — where the station is passed or failed",
+    "Jake is FIFO, AWAY TWO WEEKS IN THREE. 'Maybe FOUR HOURS' SLEEP, BROKEN UP.' Mum's in ADELAIDE; 'I HAVEN'T REALLY ASKED ANYONE.' Asked the two mood questions — (tearful) 'NOT DEPRESSED EXACTLY. FLAT. OVERWHELMED. Some days I DON'T KNOW IF I'M DOING ANY OF IT RIGHT'"
+   ],
+   [
+    "★ HER HIDDEN AGENDA AND HER REACTIONS",
+    "She secretly wonders whether she's a BAD MOTHER. Tearful when someone asks KINDLY how she is. LECTURE her ('you need to change him more') → goes quiet: 'I KNOW. I'M DOING MY BEST.' NEVER asked about sleep, mood or support → at the end: 'SORRY — I'M JUST SO TIRED ALL THE TIME. IS THAT NORMAL?' After the diagnosis: 'IS IT MY FAULT? Because I don't change him enough?' Done right: 'I DIDN'T THINK ANYONE WOULD ASK'"
+   ],
+   [
+    "★ VERSION B — eczema, 2 years",
+    "Six months, ON AND OFF, scratches ALL NIGHT, pharmacy creams failed, DAD HAS ASTHMA AND HAY FEVER; generalised patches, not classic flexural. TWO PILLARS: thick emollient twice daily EVERY day + a steroid ON THE FLARE UNTIL CLEAR; antihistamines DON'T help"
+   ],
+   [
+    "★ VERSION C — seb derm, 8 weeks",
+    "GREASY YELLOW SCALE on a PINK base BEHIND THE EARS, SCALP, eyebrows; 'doesn't bother him at all'; no family eczema; 'is it eczema? is it catching?' → SEBORRHOEIC DERMATITIS: not itchy, not infectious, settles by 6–12 months; soften the scale; no antibiotics"
+   ],
+   [
+    "★ VERSION D — 'the carer slapped him', 3 years",
+    "(furious) 'LOOK AT HIS CHEEKS! I'm going to SUE that daycare.' Fever and runny nose for three days, better; a LACY RASH ON HIS ARMS this morning; no previous daycare concerns. Examination: bright symmetrical cheeks SPARING THE MOUTH, reticular arm rash, NO BRUISING, NO FINGER MARKS → ERYTHEMA INFECTIOSUM. Take the social/NAI history and examine for injury FIRST; then the PREGNANT-CONTACT question"
+   ],
+   [
+    "Other practice cards",
+    "5 months, bright red INTO THE FOLDS, WHITE PATCHES on the tongue, mum has SORE NIPPLES → CANDIDA: treat mouth, nappy area and mum together · 7 months, scaly rash round MOUTH, NAPPY AREA and HANDS, loose stools, FALLING OFF CENTILES → ZINC DEFICIENCY / malabsorption: growth chart and referral, not another barrier cream · 4 months, resistant 'seb derm' with PURPLE DOTS IN THE FOLDS, big tummy → LANGERHANS CELL HISTIOCYTOSIS: liver, spleen, nodes, urgent referral"
    ]
   ],
   "back": {
-   "dx": "IRRITANT NAPPY DERMATITIS — IRRITANT CONTACT DERMATITIS — triggered by the diarrhoea three weeks ago, WITH A MOTHER WHO IS NOT COPING. EXPLAIN IT: 'when WEE AND POO SIT AGAINST THE SKIN for a while, ESPECIALLY AFTER DIARRHOEA, the skin gets OVER-WET AND INFLAMED, and wiping makes it sting. SOMETIMES A YEAST CALLED CANDIDA GROWS ON TOP; I DON'T SEE SIGNS OF THAT TODAY, but it's common and easy to treat if it appears.' THE FOUR-PART PLAN, GIVEN AS A TEAM PLAN: CHANGE — every two hours by day, AT EVERY NIGHT FEED, and straight after every poo; CLEAN — warm water and a soft cloth or fragrance-free wipes, PAT DRY, NO SOAP; BARRIER — A THICK ZINC CREAM AT EVERY SINGLE CHANGE, THICK ENOUGH THAT YOU CAN'T SEE SKIN THROUGH IT, AND LEAVE THE OLD LAYER ON; AIR — nappy off on a towel a few times a day. THEN THE ESCALATION RULE: 'IF THE REDNESS SPREADS INTO THE CREASES OR YOU SEE LITTLE RED DOTS AROUND THE EDGE, WE ADD AN ANTIFUNGAL CREAM UNDERNEATH.' WHEN SHE ASKS 'IS IT MY FAULT? BECAUSE I DON'T CHANGE HIM ENOUGH?' — NEVER SAY YES: 'RASHES LIKE THIS HAPPEN TO LOTS OF BABIES AFTER DIARRHOEA. MORE FREQUENT CHANGES WILL HELP IT HEAL — AND I WANT TO MAKE THAT EASIER FOR YOU, NOT JUST TELL YOU TO DO IT.' THEN THE SUPPORT, WHICH IS THE PART THAT PASSES THE STATION: a HOME VISIT FROM THE CHILD AND FAMILY HEALTH NURSE this week; THE PANDA LINE for parents feeling overwhelmed; 'could your mum come up for a week?'; when the partner is home, HE DOES THE NIGHT CHANGES; and THE 6-WEEK CHECK AND IMMUNISATIONS booked for next week so the rash, the weight and the mother are all reviewed together. SAFETY-NET: come straight back if he has A FEVER, IS SLEEPY OR FEEDING POORLY, or the rash develops SORES, PUS OR BLISTERS, or HASN'T IMPROVED IN A WEEK — and write it all down. VERSION B — ECZEMA: 'the skin barrier is leaky and the immune system over-reacts, so it's dry, inflamed and itchy in cycles; it runs with asthma and hay fever.' TWO THINGS WORK: A THICK MOISTURISER OVER THE WHOLE BODY AT LEAST TWICE A DAY, EVERY DAY, FLARING OR NOT; and A STEROID CREAM — hydrocortisone on the face, slightly stronger on the body — ONCE OR TWICE DAILY UNTIL THE FLARE IS COMPLETELY CLEAR, usually one to two weeks, THEN STOP. ANTIHISTAMINES DON'T HELP THIS ITCH. Soap-free wash, short lukewarm baths, cotton clothes, a WRITTEN ACTION PLAN, review in two weeks — sooner if it WEEPS, CRUSTS, or he has COLD-SORE-LIKE BLISTERS AND IS UNWELL. (The traps are 'steroids are dangerous, use for a week only', prescribing an antihistamine, and not specifying moisturiser frequency.) VERSION C — SEBORRHOEIC DERMATITIS: 'the oil glands are over-active and inflamed, producing GREASY YELLOW SCALE ON A PINK BASE. IT ISN'T ITCHY, ISN'T INFECTIOUS AND ISN'T CAUSED BY ANYTHING YOU'VE DONE; it settles by itself, USUALLY BY SIX TO TWELVE MONTHS.' Soften with baby oil or white soft paraffin, leave an hour, mild shampoo, lift gently with a soft brush; 1% HYDROCORTISONE for a few days if the skin underneath is red and sore; an antifungal shampoo if it persists. THE DIFFERENCE FROM ECZEMA: ECZEMA IS ITCHY, COMES AND GOES, AND RUNS IN FAMILIES. VERSION D — ERYTHEMA INFECTIOSUM: take the abuse concern seriously and DO THE SOCIAL AND NAI SCREEN AND THE INJURY EXAMINATION FIRST — 'any concern that a child has been hurt is something I take seriously and will look into properly.' Ask about fever and coryza this week, alertness, immunisations, OTHER RASH ON THE ARMS OR TRUNK, sick contacts at daycare, home and daycare history. Then: 'BRIGHT SYMMETRICAL ERYTHEMA OF BOTH CHEEKS SPARING THE MOUTH, a RETICULAR RASH ON THE ARMS, NO BRUISING, NO FINGER MARKS, no other injuries' — 'this is SLAPPED CHEEK DISEASE, PARVOVIRUS: a few days of fever and a runny nose, THEN BRIGHT RED CHEEKS — THERE ARE NO MARKS OF A HAND. No treatment; HE CAN GO BACK TO DAYCARE BECAUSE HE'S NO LONGER INFECTIOUS ONCE THE RASH IS OUT. ONE IMPORTANT THING: IS ANYONE IN YOUR FAMILY OR CLOSE CONTACTS PREGNANT? THEY SHOULD SEE THEIR DOCTOR FOR A BLOOD TEST.'",
+   "dx": [
+    "**IRRITANT (CONTACT) NAPPY DERMATITIS — prolonged contact with urine and faeces on over-hydrated skin; friction, soaps and fragrances aggravate. CONVEX SURFACES, FOLDS SPARED; here triggered by DIARRHOEA and INFREQUENT CHANGES. If bright red WITH FOLD INVOLVEMENT, SATELLITE papules/pustules or ORAL THRUSH — CANDIDA superinfection (colonises inflamed skin within days; treat both together). Candida not established today.**",
+    "**★ THE DISCRIMINATING ISSUE — THE MOTHER WHO CHANGES THE NAPPY ONCE A NIGHT IS EXHAUSTED, NOT NEGLIGENT. Every recall includes 'I'm just so tired… he doesn't let me sleep… I only change him once at night.' Candidates who CONCLUDED NEGLECT FAILED; candidates who IGNORED IT AND LECTURED about nappies ALSO SCORED POORLY. The pass: NOTICE, NAME IT KINDLY, ask about SLEEP, MOOD and SUPPORT, SCREEN FOR POSTNATAL DEPRESSION, OFFER CONCRETE HELP — then deliver the change-and-barrier plan AS SOMETHING YOU'LL DO TOGETHER.** **Script: 'Emma, I'm hearing that you're EXHAUSTED and doing this LARGELY ON YOUR OWN. THAT MATTERS AS MUCH AS THE RASH. Can I ask — over the past two weeks, have you felt down, depressed or hopeless? Little interest or pleasure in things? Who's helping at home?'**",
+    "**THE ONE-LINE STRATEGY: VITALS → CONCERN (she's tired — acknowledge it) → EXPLORE THE RASH → THE THREE KEY QUESTIONS → other rashes and atopy → infection and THRUSH → feeding, stools, GROWTH → SOCIAL AND MOOD → PEFE → plain-words diagnosis → BARRIER, CHANGE, AIR, ANTIFUNGAL if needed → SUPPORT and review.** **Open by acknowledging: 'that sounds exhausting — a rash that won't settle and broken nights are hard work in the first six weeks. Let me work out what's causing it, and then we'll fix it together.'**",
+    "**EXPLORE THE RASH — 'ANYWHERE ELSE?' IS MARKED even though the photo shows the nappy area (scalp, face, neck folds, behind the ears → seb derm, eczema, psoriasis): onset and spread · colour · redness vs BLISTERS, RAW AREAS, SORES · DISCHARGE or WHITE MATERIAL (candida) · warm · IRRITABILITY, especially at changes (replaces the itch question at 6 weeks) · first episode · WHAT'S BEEN TRIED. ★ THE THREE KEY QUESTIONS, AS A SET, IN ORDER: DIARRHOEA (stool contact) · CHANGE FREQUENCY, DAY AND NIGHT (contact time) · NEW WIPES, WASH, CREAM, NAPPY BRAND (contact irritants). Then OTHER RASHES and ATOPY · FEVER, ALERTNESS, FEEDING, WET NAPPIES, immunisations · 'any WHITE PATCHES IN HIS MOUTH?' · feeding, WEIGHT, stools (blood, greasy), rash after feeds (CMPA) · BINDSMA.**",
+    "**THE EXAMINATION REQUEST: general, HYDRATION, TEMPERATURE, WEIGHT ON THE GROWTH CHART · the RASH — DISTRIBUTION (CONVEX SURFACES vs INTO THE FOLDS), SATELLITE lesions, pustules, EROSIONS, discharge · the MOUTH for thrush · SCALP, FACE, NECK FOLDS, BEHIND THE EARS, the rest of the skin · ABDOMEN for hepatosplenomegaly and LYMPH NODES (LCH) · the perianal area (streptococcal ring). Not asking about FOLDS AND SATELLITES is the trap — that decides whether you add an antifungal.** **No investigations for a typical irritant rash.**",
+    "**★ THE DIAGNOSIS — PLAIN WORDS, NO BLAME: 'Emma, Oscar has NAPPY RASH — the medical name is irritant contact dermatitis. After the DIARRHOEA, WEE AND POO SITTING ON THE SKIN made it OVER-WET AND INFLAMED, and WIPING STINGS. Sometimes a YEAST called candida grows on top — I don't see signs of that today, but it's common and easy to treat if it appears.'** **★ 'IS IT MY FAULT?' → never 'yes, because you don't change him': 'RASHES LIKE THIS HAPPEN TO LOTS OF BABIES AFTER A TUMMY BUG. Changing him more often is PART OF FIXING IT — and I want to MAKE THAT POSSIBLE FOR YOU, not just tell you to do it.'**",
+    "**THE PLAN — FOUR THINGS, AS A TEAM: 1 CHANGE — CHECK EVERY 2 HOURS BY DAY and AT EVERY NIGHT FEED; change STRAIGHT AFTER EVERY POO · 2 CLEAN — WARM WATER and a soft cloth or fragrance-free wipes, PAT DRY, NO SOAP, NO TALC · 3 BARRIER — a THICK ZINC cream AT EVERY SINGLE CHANGE, 'THICK ENOUGH THAT YOU CAN'T SEE SKIN THROUGH IT' — LEAVE THE OLD LAYER ON · 4 AIR — NAPPY-OFF TIME on a towel a few times a day. Loose, well-fitting disposables. 'If the redness SPREADS INTO THE CREASES or you see LITTLE RED DOTS AROUND THE EDGE, we add an ANTIFUNGAL cream underneath.'** **Candida: CLOTRIMAZOLE 1% 2–3×/day for 7–14 days UNDER the barrier (or nystatin); oral thrush → nystatin drops (miconazole gel not under 6 months per PI); check mum's nipples. Marked inflammation: HYDROCORTISONE 1% bd ≤ 7 days under the barrier — NEVER potent or combination steroid–antifungal creams in the nappy area.** VERIFY",
+    "**★ SUPPORT — THE PART YOU MOST WANT TO HELP WITH: 'you're doing this on very little sleep with your partner away — THAT'S THE PART I MOST WANT TO HELP WITH. I'll arrange a HOME VISIT from the CHILD AND FAMILY HEALTH NURSE this week, and give you the PANDA number — a line for parents feeling overwhelmed. Could YOUR MUM come up for a week? When your partner's home, HE DOES THE NIGHT CHANGES.' EPDS, GP mental-health plan if needed.** **THE 6-WEEK CHECK AND IMMUNISATIONS ARE DUE — book them for the review; WEIGH HIM TODAY.** **SAFETY-NET: 'come straight back if he has a FEVER, is SLEEPY or FEEDING POORLY, or the rash gets SORES, PUS OR BLISTERS, or ISN'T BETTER IN A WEEK.' Review 1–2 weeks; written plan.**",
+    "**DO NOT MISS: ANY infant UNDER 3 MONTHS with FEVER ≥ 38 °C = same-day full SEPTIC SCREEN (blood, urine ± CSF) and empirical IV antibiotics — a nappy rash never changes that rule · a RESISTANT rash with HEPATOSPLENOMEGALY or PURPURA = LANGERHANS CELL HISTIOCYTOSIS · POOR WEIGHT GAIN = malabsorption, ZINC DEFICIENCY or feeding failure · a mother NOT COPING = screen and support TODAY, not 'come back if it gets worse' · an IMMERSION-burn pattern or a story that doesn't fit = NAI.** **AVOID: combination potent steroid/antifungal creams · talc · antiseptic or fragranced wipes · the word NEGLECT · promising it'll clear 'in a day'.**",
+    "**THE VARIANTS. VERSION B — ECZEMA: 'the rash comes and goes, it's itchy and worse at night, and his dad has asthma and hay fever — this is eczema. ANTIHISTAMINES WON'T HELP; the two things that work are a THICK MOISTURISER over the whole body AT LEAST TWICE A DAY, EVERY DAY, and a STEROID CREAM on the flare UNTIL IT'S COMPLETELY CLEAR' (hydrocortisone 1% face; methylprednisolone aceponate 0.1% body); soap-free wash, short lukewarm baths; written action plan.** CORRECTION — **the source teaches steroids 'not more than a week'. Australian guidance (RCH, Eczema Association) is to apply UNTIL THE FLARE IS COMPLETELY CLEAR — commonly 1–2 weeks, sometimes longer — then stop and continue emollients; UNDER-TREATMENT FROM STEROID PHOBIA is why the pharmacy creams failed.** VERIFY **VERSION C — SEB DERM: greasy yellow scale on a pink base, scalp, brows, behind the ears, folds; NOT ITCHY, NOT INFECTIOUS, settles by 6–12 months; soften with oil or soft paraffin, mild shampoo, soft brush; hydrocortisone 1% briefly if inflamed; ketoconazole shampoo if persistent; the difference from eczema: eczema is itchy, relapsing and familial. VERSION D — SLAPPED CHEEK: 'I can see how upset you are, and ANY CONCERN THAT A CHILD HAS BEEN HURT I TAKE SERIOUSLY' — full social and NAI history and an examination for injuries FIRST; then parvovirus B19, no treatment, NO EXCLUSION (infectious BEFORE the rash); 'IS ANYONE PREGNANT?' — < 20 weeks needs serology (fetal anaemia, hydrops).** VERIFY SA: **CaFHS 1300 733 606** (home visits) · **PANDA 1300 726 306** · **MedSTAR 1300 13 12 33** · WCH paediatric registrar · ACCHS and the Aboriginal Maternal and Infant Care program · **CARL 13 14 78** · **TIS 131 450**."
+   ],
    "plan": [
     [
      "0:00",
-     "VITALS, OPEN, AND CATCH THE TIREDNESS: 'may I have Oscar's observations — temperature, heart rate, breathing rate, and is he alert and feeding?' Then: 'Emma, tell me what's been happening.' → 'he's had this rash for three weeks. IT'S NOT GOING AWAY WHATEVER I PUT ON IT. I'M JUST SO TIRED — HE DOESN'T LET ME SLEEP.' → 'THAT SOUNDS EXHAUSTING — a rash that won't settle plus broken nights, six weeks in. Let me work out what's driving this rash, AND WE'LL SORT IT OUT TOGETHER.' (Ignoring the tiredness comment is the first trap — NOTE IT NOW AND RETURN TO IT.)"
+     "**WIPE, VITALS FIRST — soften the voice**: **'hello, I'm Dr ___. You must be Emma, and this is Oscar. May I ask the examiner for his observations — temperature, heart rate, breathing rate, alert and feeding?'** *36.9, 130, 36, alert, feeding.* **'Thank you. Emma, tell me what's been happening.'**"
     ],
     [
-     "1:00",
-     "THE RASH: 'where exactly is it — IS IT ANYWHERE ELSE, LIKE HIS SCALP, FACE OR NECK FOLDS? When did it start, is it spreading? Just redness, or any BLISTERS, RAW AREAS OR SORES? Any discharge or WHITE MATERIAL? Warm to touch? Is he more irritable, ESPECIALLY AT CHANGES? First time? What have you tried?' ('Anywhere else?' is a marked question even though the photograph shows the site.)"
+     "0:20",
+     "**★ SHE MENTIONS THE TIREDNESS — ACKNOWLEDGE IT NOW**: *(flat) 'Three weeks, it won't go away… I'm just so tired, he doesn't let me sleep.'* → **'that sounds exhausting — a rash that won't settle plus broken nights, six weeks in. I'll ask about the rash, his nappies and skin products, his general health and feeding, and about how you're going — then we'll sort it out together.'**"
     ],
     [
-     "2:00",
-     "THE THREE KEY QUESTIONS — and the second one is where the station turns: 'HAS HE HAD ANY DIARRHOEA RECENTLY? HOW OFTEN DO YOU CHANGE HIS NAPPY — DURING THE DAY, AND OVERNIGHT? ANY NEW WIPES, BODY WASH, CREAM, OR A NEW BRAND OF NAPPY?' → 'three or four times a day. At night, ONCE, WHEN I REMEMBER — I'M SO TIRED.' → NO CHANGE IN TONE: 'THANK YOU FOR BEING HONEST WITH ME — THAT REALLY HELPS.' (Reacting with a lecture here loses the station; come back to it in the social history.)"
+     "0:50",
+     "**THE RASH — 'anywhere else?' is marked**: **'where exactly is the rash — and is it anywhere else, his scalp, face, neck folds? When did it start, is it spreading? Just redness, or blisters, raw patches or sores? Any discharge or white material? Warm? Is he more irritable at changes? First time — what have you tried?'** *Nappy area only; three weeks; red, shiny, one raw bit; screams when wiped; chemist cream, Sudocrem when she remembers.*"
     ],
     [
-     "2:45",
-     "THE OTHER GROUPS: other rashes — scalp, behind the ears, neck; FAMILY ATOPY; fever, alert or sleepier, feeding and wet nappies; sick contacts; IMMUNISATIONS; AND 'ANY WHITE PATCHES IN HIS MOUTH OR ON HIS TONGUE?' Then feeding, weight gain, blood or greasy stools, rash after feeds, vomiting, birth, heel-prick, medicines and allergies."
+     "1:45",
+     "**★ THE THREE KEY QUESTIONS — and NO LECTURE**: **'has he had any diarrhoea recently?'** *Three weeks ago.* **'How often do you change his nappy — during the day, and overnight?'** *(looks away) 'Three or four a day. At night… once, when I remember. I'm so tired.'* → **(no change in tone) 'thank you for being honest with me — that really helps. Any new wipes, body wash, cream or nappy brand?'** *No.*"
     ],
     [
-     "4:30",
-     "The social and mood block — the discriminating one, asked warmly and not as an accusation: 'Emma, you've mentioned a couple of times how tired you are. Who's at home with you? How much sleep are you getting? Over the last two weeks, have you often felt down, depressed or hopeless — or had little interest or pleasure in things? Do you have anyone who can help with night changes and feeds?' → tearful: 'Not depressed exactly. Flat. Overwhelmed. Some days I don't know if I'm doing any of it right.' → 'That is a very normal thing to feel six weeks in with no sleep and no help — and it's something I can actually do something about.' (Two screening questions plus a support question, warmly, is the pass.)"
+     "2:35",
+     "**OTHER RASHES, ATOPY, INFECTION, THRUSH**: **'any rashes behind the ears, scalp, neck? Eczema, asthma or hay fever in the family? Any fever? Alert or sleepier? Feeding well, normal wet nappies? Anyone unwell? Any white patches in his mouth or on his tongue?'** *No; Jake had eczema; no fever, alert, feeds 3-hourly, plenty of nappies; no white patches.*"
     ],
     [
-     "5:30",
-     "THE EXAMINATION, WITH THE TWO DECIDING ITEMS NAMED: 'general appearance, hydration and temperature, AND HIS WEIGHT ON THE GROWTH CHART. The rash: DISTRIBUTION — CONVEX SURFACES OR INTO THE FOLDS — ANY SATELLITE SPOTS, PUSTULES, EROSIONS OR DISCHARGE. THE MOUTH FOR THRUSH. Scalp, face, neck folds and behind the ears, and the rest of the skin. Abdomen for liver and spleen, and lymph nodes.' (Not asking about the folds and satellites is the trap — THAT IS WHAT DECIDES WHETHER YOU ADD AN ANTIFUNGAL.)"
+     "3:15",
+     "**FEEDING, GROWTH, STOOLS, BINDSMA**: **'breast or formula? Gaining weight? Any blood in the poo, or greasy pale poos? Rash around the mouth after feeds, vomiting? Born at term, heel prick done? The 6-week immunisations? Medicines or allergies?'** *Breastfed, gaining well; poos normal; possets; term, heel prick normal; needles due next week; none.*"
+    ],
+    [
+     "3:55",
+     "**★ THE SOCIAL AND MOOD BLOCK — WARMLY**: **(leans in) 'Emma, you've mentioned how tired you are. Who's at home with you, and how much sleep are you getting?'** *Jake FIFO two weeks in three; four hours broken; mum in Adelaide.* **'Over the last two weeks, have you often felt down, depressed or hopeless? Or had little interest or pleasure in things you'd normally enjoy?'** *(tearful) 'Flat. Overwhelmed. I don't know if I'm doing any of it right.'*"
+    ],
+    [
+     "4:40",
+     "**Hold it, don't fix it yet**: **'that's a very normal thing to feel six weeks in with no sleep and no help — and it's something I can actually do something about. We'll come back to it in a moment. May I examine Oscar now?'**"
+    ],
+    [
+     "5:00",
+     "**THE EXAMINATION — FOLDS, SATELLITES, MOUTH, GROWTH**: **'general appearance, hydration, temperature, weight on the chart; the rash — convex surfaces or into the folds, satellite spots, pustules, erosions; the mouth for thrush; scalp, face, folds and the rest of the skin; abdomen for liver and spleen; lymph nodes.'** *Afebrile, 50th centile; convex erythema, one small erosion, FOLDS SPARED, NO SATELLITES; mouth clear; rest normal.*"
+    ],
+    [
+     "5:45",
+     "**THE DIAGNOSIS — plain words**: **'Emma, Oscar has nappy rash — irritant dermatitis. After the diarrhoea, wee and poo sitting on the skin made it over-wet and inflamed, and wiping stings. Sometimes a yeast grows on top — not today, but it's easy to treat if it appears.'**"
     ],
     [
      "6:15",
-     "The diagnosis in plain words and the four-part plan — change, clean, barrier, air — with the escalation rule (see dx) → 'Is it because I don't change him enough? Is it my fault?' → never yes."
+     "**★ 'IS IT MY FAULT?' — no blame, a team plan**: **'this happens to lots of babies after a tummy bug. Changing him more often is part of fixing it — and I want to make that possible for you, not just tell you to do it. Four things: check every two hours by day and at every night feed, and straight after a poo; clean with warm water, pat dry, no soap; a thick zinc cream at every change, thick enough that you can't see skin through it; and nappy-off time on a towel a few times a day. If the redness spreads into the creases or little dots appear around the edge, we add an antifungal cream underneath.'**"
     ],
     [
-     "7:00",
-     "THE SUPPORT, THE 6-WEEK CHECK AND THE SAFETY-NET (see dx): the child health nurse home visit, PANDA, asking about her mother coming up, the partner doing night changes when home, immunisations next week, and the return criteria — written down. Then summarise."
+     "7:05",
+     "**★ THE BIGGER THING — SUPPORT, AND THE 6-WEEK CHECK**: **'now the bigger thing. I'll arrange a home visit from the Child and Family Health nurse this week, and give you the PANDA number — a line for parents feeling overwhelmed. Could your mum come up for a week? And when Jake's home, he does the night changes. His 6-week check and immunisations are due — we'll do them next week, and I'll weigh him, check the rash, and check in on you.'** *'I didn't think anyone would ask.'*"
+    ],
+    [
+     "7:40",
+     "**SAFETY-NET AND SUMMARY**: **'come straight back if he has a fever, is sleepy, feeding poorly, or the rash gets sores, pus or blisters, or isn't better in a week. I'll write this down. To summarise: nappy rash from the diarrhoea; change, clean, barrier, air; antifungal if the creases go red; support for you starting this week; review next week. Any questions?'**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the source's eight-minute run, Version A",
-   "ask": [
-    "'Is it anywhere else — scalp, face, neck folds?' / 'Has he had any diarrhoea recently?' / 'How often do you change his nappy — day, and overnight?' / 'Any new WIPEs, body wash, cream or nappy brand?' / 'Any white patches in his mouth or on his tongue?' / 'Thank you for being honest with me — that really helps.'",
-    "'Over the last two weeks, have you often felt down, depressed or hopeless?' / 'Who's helping you at home?' / 'Examiner — convex surfaces or into the folds, any satellite spots or pustules, and the mouth for thrush.'",
-    "'THICK ENOUGH THAT YOU CAN'T SEE SKIN THROUGH IT — AT EVERY CHANGE.' / 'Nappy-off time on a towel a few times a day.' / 'IF IT SPREADS INTO THE CREASES OR DOTS APPEAR AT THE EDGE, WE ADD AN ANTIFUNGAL.' / 'This happens to lots of babies after a tummy bug — I WANT TO MAKE THAT EASIER FOR YOU, NOT JUST TELL YOU TO DO IT.' / 'His 6-week check and immunisations are due — let's do them next week.'",
-    "VERSION B — ECZEMA AT 2: ask whether it is WORSE AT NIGHT OR AFTER A WARM BATH, whether ANYONE ELSE AT HOME ITCHES, fever, joints, gut symptoms, new soaps or foods. Then: 'the skin barrier is leaky and the immune system over-reacts. TWO THINGS WORK: A THICK MOISTURISER OVER HIS WHOLE BODY AT LEAST TWICE A DAY, EVERY DAY, WHETHER OR NOT IT'S FLARING — and A STEROID CREAM, hydrocortisone on the face and slightly stronger on the body, ONCE OR TWICE A DAY UNTIL THE FLARE IS COMPLETELY CLEAR, usually one to two weeks, THEN STOP. ANTIHISTAMINES DON'T HELP THIS ITCH.' Written action plan, review two weeks, sooner if it weeps, crusts, or he has cold-sore-like blisters and is unwell. / VERSION C — SEBORRHOEIC DERMATITIS AT 8 WEEKS: 'GREASY YELLOW SCALE ON A PINK BASE. IT ISN'T ITCHY, ISN'T INFECTIOUS AND ISN'T CAUSED BY ANYTHING YOU'VE DONE; it settles BY SIX TO TWELVE MONTHS.' Baby oil for an hour, mild shampoo, soft brush, 1% hydrocortisone briefly if sore underneath. THE DIFFERENCE FROM ECZEMA IS THAT ECZEMA IS ITCHY, COMES AND GOES, AND RUNS IN FAMILIES.",
-    "VERSION D — 'THE CARER SLAPPED HIM': 'I can see how upset you are, AND ANY CONCERN THAT A CHILD HAS BEEN HURT IS SOMETHING I TAKE SERIOUSLY AND WILL LOOK INTO PROPERLY. To do that well I need to ask you some questions first.' Then fever and coryza this week, alertness, immunisations, ANY OTHER RASH ON THE ARMS OR TRUNK, sick contacts at daycare, home and stresses, how long at daycare and any previous concerns. Examination: 'BRIGHT SYMMETRICAL ERYTHEMA OF BOTH CHEEKS SPARING THE MOUTH, RETICULAR RASH ON THE ARMS, NO BRUISING, NO FINGER MARKS, no other injuries.' Then: 'this is SLAPPED CHEEK DISEASE — parvovirus. THERE ARE NO MARKS OF A HAND. He can go back to daycare because HE'S NO LONGER INFECTIOUS ONCE THE RASH IS OUT. ONE IMPORTANT THING: IS ANYONE IN YOUR FAMILY OR CLOSE CONTACTS PREGNANT? THEY SHOULD SEE THEIR DOCTOR FOR A BLOOD TEST.' (Dismissing the abuse concern without a social history, failing to examine for injuries, or forgetting the pregnant-contact question are the three traps.)"
-   ],
    "pefe": [
-    "Role-player: Emma, 24, first-time mother of Oscar, 6 weeks, in Wallaroo. Partner Jake is FIFO at a mine, away two weeks in three. Your mum is in Adelaide and you haven't asked for help. Normal pregnancy and birth; Oscar is breastfed and gaining weight. He had diarrhoea three weeks ago and the rash started then. You change his nappy 3-4 times by day and once at night. You are getting about four broken hours of sleep.",
-    "Hidden agenda: you feel flat and overwhelmed and secretly wonder whether you are a bad mother. Register: tired, flat, eyes down; become tearful when someone asks kindly how you are. If the doctor lectures you or says anything like 'You need to change him more', go quiet and say 'I know. I'm doing my best.' if the doctor never asks about your sleep, mood or support, volunteer at the end: 'Sorry — I'm just so tired all the time. Is that normal?' and ask 'Is it my fault?' after the diagnosis.",
-    "Score them on: vitals first; ACKNOWLEDGED YOUR TIREDNESS AT THE START; asked 'ANYWHERE ELSE?'; onset, colour, blisters, discharge, irritability; DIARRHOEA; CHANGE FREQUENCY WITHOUT JUDGEMENT; NEW PRODUCTS; other rashes and family atopy; fever, alertness, feeding, wet nappies; THE THRUSH QUESTION; feeding and weight; stools; SLEEP, MOOD WITH TWO SCREENING QUESTIONS, AND SUPPORT; an examination request INCLUDING FOLDS, SATELLITES, MOUTH, OTHER SKIN AND ABDOMEN; a plain-words diagnosis; CHANGE-CLEAN-BARRIER-AIR; the antifungal plan if folds or satellites; DID NOT BLAME YOU; ARRANGED SUPPORT — CaFHS, PANDA, family; THE 6-WEEK CHECK AND IMMUNISATIONS; a safety-net for fever, sleepiness, feeding and sores; and a summary.",
-    "Why folds and satellites matter — Folds spared and no satellites means irritant, not candida — and that decides whether you add an antifungal",
-    "Everything else — Scalp and skin normal; NO hepatosplenomegaly, NO lymphadenopathy",
-    "The three key answers — Diarrhoea for a few days about three weeks ago, when the rash started — changed 3-4 times a day and once overnight 'When I remember' — no new products",
-    "The rash history — Three weeks, slowly worse, nappy area only; RED AND SHINY with ONE RAW SPOT; no blisters or white material; HE SCREAMS WHEN SHE WIPES HIM",
-    "The other groups — ALL NEGATIVE — no other rashes, no fever, alert, feeding 3-hourly with plenty of wet nappies, no sick contacts, NO white patches; father had eczema as a child; 6-WEEK IMMUNISATIONS DUE NEXT WEEK",
-    "If you never ask about her — She volunteers at the end: 'SORRY — I'M JUST SO TIRED ALL THE TIME. IS THAT NORMAL?'",
-    "If you lecture her — She goes quiet and says 'I KNOW. I'M DOING MY BEST' — and the station is lost",
-    "The real finding — Partner is FIFO two weeks in three — four broken hours of sleep — mother in Adelaide and she has not asked for help — 'Not depressed. Flat. Overwhelmed. Some days I don't know if I'm doing any of it right'"
+    "**VITALS first. General appearance, HYDRATION, TEMPERATURE, WEIGHT on the growth chart.**",
+    "**RASH DISTRIBUTION: CONVEX SURFACES with folds spared (irritant) vs INTO THE FOLDS with SATELLITE papules/pustules (candida). Morphology: erythema, papules, pustules, EROSIONS; borders; discharge.**",
+    "**MOUTH for oral thrush. SCALP, FACE, NECK FOLDS, BEHIND THE EARS (seb derm), rest of the skin (eczema, psoriasis). PERIANAL area (streptococcal ring).**",
+    "**ABDOMEN for hepatosplenomegaly and LYMPH NODES — a resistant petechial rash with organomegaly = Langerhans cell histiocytosis.**",
+    "**Investigations: NONE for a typical irritant rash. Skin swab if pustular/crusted; KOH scraping if unsure of candida; if RESISTANT with POOR GROWTH — FBC, zinc, coeliac serology when age-appropriate; refer.**",
+    "**IRRITANT: change 2-hourly by day and at every night feed + after every stool; warm water, pat dry, no soap or talc; THICK ZINC barrier at every change (leave the old layer on); nappy-free time; loose disposables.**",
+    "**CANDIDA: clotrimazole 1% 2–3×/day for 7–14 days UNDER the barrier (or nystatin); oral nystatin drops for thrush (miconazole gel not under 6 months per PI); treat mum's nipples.** VERIFY",
+    "**Marked inflammation: HYDROCORTISONE 1% bd ≤ 7 days under the barrier. NEVER potent or combination steroid–antifungal creams in the nappy area. Secondary bacterial infection: swab, oral cefalexin.** VERIFY",
+    "**FEVER ≥ 38 °C UNDER 3 MONTHS = same-day septic screen (blood, urine ± CSF) and IV antibiotics — WCH paediatric registrar, MedSTAR if unwell.**",
+    "**The MOTHER: EPDS (two screening questions + support), CaFHS home visit, PANDA, family help, GP mental-health plan if needed. Book the 6-WEEK CHECK and IMMUNISATIONS. Review 1–2 weeks.**"
    ],
-   "fails": [
-    "★ Lecturing her when she admits changing him once overnight — she goes quiet, says 'I'm doing my best', and the station is lost",
-    "★ Skipping the sleep, mood and support block, or asking it as an accusation — two screening questions plus a support question, warmly, is the pass",
-    "Answering 'is it my fault?' with yes, instead of normalising it and making the changes easier for her",
-    "Not asking about the folds and satellite lesions, which is what decides whether an antifungal is added",
-    "Ignoring the tiredness comment in the opening; skipping 'anywhere else?' because the photograph shows the site; forgetting the thrush question; and ending without the child health nurse, PANDA, the 6-week check or the safety-net"
-   ],
-   "numbers": [
-    "Change 2-hourly by day plus every night feed · clotrimazole 1% two to three times daily for 7-14 days · hydrocortisone 1% twice daily for no more than 7 days in the nappy area · fever 38 or above under 3 months = septic screen",
-    "6-WEEK CHECK AND IMMUNISATIONS NOW · solids about 6 months · cow's milk as a drink at 12 months · SEBORRHOEIC DERMATITIS RESOLVES BY 6-12 MONTHS · eczema: MOISTURISER TWICE DAILY EVERY DAY, steroid until the flare is CLEAR then stop, NO ANTIHISTAMINES · CaFHS 1300 733 606, PANDA 1300 726 306, MedSTAR 1300 13 12 33, CARL 13 14 78"
+   "ddx": [
+    [
+     "**Irritant nappy dermatitis**",
+     "**CONVEX surfaces, FOLDS SPARED, DIARRHOEA, INFREQUENT CHANGES**",
+     "**Shiny erythema ± erosions**",
+     "**Barrier, change, air; review 1–2 weeks.** Routine. This is the case"
+    ],
+    [
+     "**Candida**",
+     "**BRIGHT RED, FOLDS INVOLVED, SATELLITE papules/pustules, ORAL THRUSH, rash > 3 days**",
+     "**Mouth; maternal nipple thrush**",
+     "**Clotrimazole 1% or nystatin under the barrier.** VERIFY Routine"
+    ],
+    [
+     "Seborrhoeic dermatitis",
+     "**GREASY YELLOW SCALE; scalp, brows, behind ears, neck and nappy folds; NOT ITCHY; 2 weeks–6 months**",
+     "Scalp and folds",
+     "Oil/emollient to soften scale; mild hydrocortisone if inflamed; ketoconazole if persistent. VERIFY Routine. Version C"
+    ],
+    [
+     "Atopic eczema",
+     "**ITCHY (irritable), ON-AND-OFF, cheeks/extensors/trunk in infants, ATOPIC family; nappy area usually SPARED**",
+     "Elsewhere on the body",
+     "Emollient + steroid until clear. Routine. Version B"
+    ],
+    [
+     "Psoriasis",
+     "Sharply demarcated red plaques INCLUDING folds, scalp, nails; family history",
+     "Nail pitting",
+     "Dermatology; mild steroid. Routine"
+    ],
+    [
+     "Bacterial — impetigo, perianal strep, staph",
+     "**Honey crust, pustules, a bright PERIANAL RING, painful stools, fever**",
+     "Swab",
+     "**Cefalexin; the sepsis rule under 3 months.** Same day"
+    ],
+    [
+     "Zinc deficiency / malabsorption",
+     "**PERIORIFICIAL + ACRAL scaly rash, diarrhoea, POOR GROWTH, hair loss**",
+     "**The growth chart**",
+     "Serum zinc, coeliac later; paediatric referral"
+    ],
+    [
+     "Cow's milk protein allergy",
+     "Perianal redness, mucus/blood in stool, vomiting, eczema, colic",
+     "Feeding history",
+     "Elimination (maternal or extensively hydrolysed formula) under advice"
+    ],
+    [
+     "**Langerhans cell histiocytosis**",
+     "**RESISTANT PETECHIAL/PURPURIC seborrhoea-like rash in folds and scalp, HEPATOSPLENOMEGALY, anaemia**",
+     "**Nodes, liver, spleen**",
+     "**Urgent paediatric referral; skin biopsy.** Urgent"
+    ],
+    [
+     "Scabies / HSV / NAI",
+     "**Family itching, burrows · grouped vesicles · IMMERSION-BURN pattern, an inconsistent story**",
+     "Social history",
+     "Treat household · aciclovir · CARL 13 14 78. Same day"
+    ],
+    [
+     "Erythema infectiosum",
+     "**Bright cheeks SPARING THE MOUTH after a febrile URTI, LACY limb rash**",
+     "**No bruising or finger marks; pregnant contacts**",
+     "**No treatment, no exclusion; serology for a pregnant contact < 20 weeks.** Routine. Version D"
+    ]
    ]
   },
   "source": "Infant_Rashes_Nappy_Eczema_SebDerm_SlappedCheek_2_Case_Tasks_Script_Notability.pdf (Oscar, 6 weeks, with three weeks of nappy rash after a diarrhoeal illness — irritant nappy dermatitis in a mother who is not coping; the three key nappy questions, the change-frequency admission met without a lecture, the sleep-mood-support block as the discriminating item, folds and satellites requested to decide the antifungal, and a four-part plan delivered with support rather than blame; the eczema, seborrhoeic dermatitis and slapped-cheek versions folded in)",
   "drive": "AMC Clinical Notability › Pediatric › Rash › Infant_Rashes_Nappy_Eczema_SebDerm_SlappedCheek_2_Case_Tasks_Script_Notability.pdf",
-  "findingsLabel": "Observations, examination and what she is holding back",
+  "findingsLabel": "The photograph, vitals and examination on request, and what Emma gives only if asked",
   "must": [
-   "FAIL — Lecturing her when she admits changing him once overnight — she goes quiet, says 'I'm doing my best', and the station is lost; say 'thank you for being honest with me' and move on",
-   "FAIL — Skipping the sleep, mood and support block, or asking it as an accusation — two screening questions plus a support question, warmly, is the pass",
-   "FAIL — Answering 'is it my fault?' with yes, instead of normalising it and making the changes easier for her",
-   "FAIL — Not asking about the FOLDS and SATELLITE lesions, which is what decides whether an antifungal is added",
-   "DO — Ask the three key nappy questions — recent DIARRHOEA, change frequency by day AND overnight, any new wipes, wash, cream or nappy brand — plus 'is it anywhere else: scalp, face, neck folds?'",
-   "DO — Close with the support, not just the cream: a CaFHS home visit, PANDA 1300 726 306, who can come and help, and bring the six-week check and immunisations into the same visit"
-  ]
+   "FAIL — **Concluding neglect or lecturing the mother** — 'you need to change him more often' in a stern voice, or 'this is neglect'.",
+   "FAIL — **No vital signs / missing the sepsis questions** — fever, alertness, feeding, wet nappies in a 6-week-old.",
+   "FAIL — **Skipping 'anywhere else?' because of the photo**, **missing the three key questions**, or **no thrush question**.",
+   "FAIL — **Potent or combination steroid in the nappy area**, **no growth assessment**, or **forgetting the 6-week check and immunisations**.",
+   "ASK — **Has he had any diarrhoea recently? How often do you change him — day and overnight? Any new wipes, wash, cream or nappy brand?**",
+   "ASK — **Over the last two weeks, have you often felt down, depressed or hopeless — or had little interest or pleasure in things? Who's helping at home?**"
+  ],
+  "v2": true
  },
  {
   "id": "PAEDS-48",
@@ -101160,7 +101403,6 @@ const EMBEDDED_CARDS = [
   "cat": "couns",
   "promptBell": true,
   "promptAt": 270,
-  "setting": "Characterise the rash properly before reaching for a diagnosis — and ask who else at home is itchy. With no photograph and a two-line stem the temptation is to decide early and then ask questions that confirm it. The guesser hears 'Worse on hot showers', says scabies at ninety seconds and spends the rest of the station on permethrin. The screener runs a generic systems review and asks about weight loss and travel before establishing whether the rash is even itchy. Landing on the correct label is worth less than you think.",
   "stem": [
    "General practice. A 25-year-old has come to you with a rash. There is no photograph in the stem.",
    "The only positive feature given is that the rash is worse after hot showers and when using blankets. 8 minutes.",
@@ -101171,116 +101413,187 @@ const EMBEDDED_CARDS = [
    "Take a history from the patient",
    "Explain your diagnosis and differentials to the patient"
   ],
-  "time": "More history time than most stations because there is no examination task — spend it on characterisation · you can reach the end without being certain of the diagnosis and still pass comfortably, provided the history was structured, the red flags were excluded, and the differential list was defensible",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "Characterising a rash you cannot see, and the two pathways — open only when you would use them",
   "findings": [
    [
-    "Characterise first, because the description is your only physical finding",
-    "With no photograph, the patient's account IS the examination, so take it as carefully as one. SITE · DURATION AND FIRST EPISODE · SPREADING · AGGRAVATING AND RELIEVING FACTORS · APPEARANCE, raised or flat, colour, blisters, discharge · AND WARM, PAINFUL, ITCHY. Every differential question afterwards is shaped by this: AN ITCHY RASH HAS A DIFFERENT LIST FROM A PAINFUL ONE, AND A RASH ONLY BETWEEN THE FINGERS HAS A DIFFERENT LIST FROM ONE ON THE TRUNK"
+    "THE STEM — and why it is thin on purpose",
+    "A 25-YEAR-OLD with a RASH. NO PHOTOGRAPH. The ONLY positive feature given: the rash is WORSE AFTER HOT SHOWERS AND WHEN USING BLANKETS. Tasks: 1 TAKE A HISTORY · 2 EXPLAIN YOUR DIAGNOSIS AND DIFFERENTIALS — TO THE PATIENT, not the examiner: plain words, and a reason for each. More history time than most stations, because there is no examination task — spend it on CHARACTERISATION"
+   ],
+   [
+    "ABOUT THIS RECALL VERIFY",
+    "From an OCTOBER 2024 sitting, and GENUINELY INCOMPLETE — very little about what the rash looked like or what the patient volunteered. Candidates came out confused, and the confusion is RECORDED RATHER THAN RESOLVED. BOTH URTICARIA AND SCABIES FIT THE CLUE. Rather than guess which the examiners intended, prepare the STRUCTURE THAT SURVIVES EITHER, then script both endings"
+   ],
+   [
+    "CHARACTERISING A RASH YOU CANNOT SEE — run it in order",
+    "With no photograph, the patient's DESCRIPTION IS YOUR ONLY PHYSICAL FINDING — take it as carefully as an examination: SITE · TIMING (how long, first time, constant or coming and going, spreading) · WORSE / BETTER · APPEARANCE (raised or flat, colour, blisters, weeping or discharge) · WARM? PAINFUL? ITCHY? · and HOW LONG ONE SPOT LASTS. Every differential question afterwards is shaped by this — an itchy rash has a different list from a painful one; a rash only between the fingers a different list from one on the trunk"
+   ],
+   [
+    "THE SINGLE MOST DISCRIMINATING QUESTION — the source leaves it out",
+    "‘If you pick ONE PARTICULAR SPOT and watch it — HOW LONG does that individual spot last before it fades?’ UNDER 24 HOURS, AND IT MOVES AROUND → URTICARIAL WEALS. FIXED, PERSISTS FOR DAYS → NOT URTICARIA: think vasculitis, INFESTATION, eczema, drug eruption. A weal lasting MORE THAN 24 HOURS, leaving BRUISING, or BURNING rather than itching suggests URTICARIAL VASCULITIS and needs further assessment VERIFY"
+   ],
+   [
+    "THE TWO QUESTIONS THAT SPLIT THEM — both are worse in heat",
+    "THE SITE and THE HOUSEHOLD. URTICARIA: itchy, raised, red WEALS, often WIDESPREAD; individual spots come and go within 24 HOURS and move; often after a viral illness, new food, medicine or bite; heat, hot showers, exercise and stress make it worse (CHOLINERGIC urticaria); may come with ANGIO-OEDEMA; atopy common. SCABIES: a MITE infestation (Sarcoptes scabiei) — not an allergy, not a blood infection; intense itch WORSE AT NIGHT AND AFTER HOT SHOWERS; loves the FINGER WEB SPACES, WRIST FLEXURES, elbows, axillae, WAISTBAND, GENITALIA, areolae; BURROWS are pathognomonic but often absent; spread by prolonged SKIN-TO-SKIN contact or BEDDING, linen, clothing; OTHER PEOPLE IN THE HOUSEHOLD ARE USUALLY ITCHY TOO; travel and SHARED ACCOMMODATION are classic"
+   ],
+   [
+    "THE HOUSEHOLD QUESTION — nearly always positive, and almost nobody asks it",
+    "‘Is ANYONE ELSE AT HOME OR AT WORK ITCHY, or has anyone else got a rash?’ The SINGLE MOST USEFUL QUESTION FOR SCABIES. And the travel question in its scabies form: ‘Have you been away — and WHERE DID YOU STAY: hotel, motel, HOSTEL, shared accommodation?’ The role-player does NOT volunteer the housemate or the hostel — BOTH ARE THE POINT OF THE STATION. Never asking about household contacts is an AUTOMATIC FAIL"
+   ],
+   [
+    "ALWAYS ASK — THE AIRWAY QUESTION, in any itchy rash",
+    "‘Any SWELLING OF THE LIPS, TONGUE OR THROAT? Any DIFFICULTY BREATHING OR SWALLOWING? Any LIGHT-HEADEDNESS?’ Urticaria with airway involvement is ANAPHYLAXIS, and missing that question in an urticaria station is NOT RECOVERABLE — automatic fail. Plus the MENINGOCOCCAL screen in every rash station: fever, drowsy, headache, photophobia, neck stiffness"
+   ],
+   [
+    "URTICARIA — MANAGEMENT VERIFY",
+    "IDENTIFY AND AVOID THE TRIGGER where found · AVOID HEAT, hot showers and overheating; cool compresses · a NON-SEDATING ORAL ANTIHISTAMINE, taken REGULARLY rather than as needed (doses above standard may be used in persistent urticaria — specialist-guided) · AVOID ASPIRIN AND NSAIDs, which can aggravate it · REFER if it persists beyond SIX WEEKS (chronic urticaria), or with ANGIO-OEDEMA. Confirm every drug and dose in Therapeutic Guidelines"
+   ],
+   [
+    "SCABIES — MANAGEMENT VERIFY",
+    "TOPICAL PERMETHRIN 5% cream to the WHOLE BODY FROM THE NECK DOWN, LEFT ON OVERNIGHT, REPEATED AFTER ONE WEEK · TREAT EVERY HOUSEHOLD MEMBER AND CLOSE CONTACT ON THE SAME DAY, symptomatic or not (automatic fail if not) · WASH all bedding, towels and clothing in HOT water and DRY HOT; SEAL what can't be washed for several days · ORAL IVERMECTIN is an alternative in crusted scabies, treatment failure, or outbreaks · WARN that the ITCH CAN PERSIST FOR TWO TO FOUR WEEKS after successful treatment — otherwise they'll think it failed. THE ITCH LAGS: on FIRST infestation it starts WEEKS after exposure (an allergic response to the mite); on RE-infestation within DAYS — which is why a patient can insist nothing has changed recently"
+   ],
+   [
+    "CRUSTED SCABIES, AND REMOTE COMMUNITIES VERIFY",
+    "CRUSTED (NORWEGIAN) SCABIES: thick, crusted, hyperkeratotic plaques carrying ENORMOUS NUMBERS OF MITES; in IMMUNOSUPPRESSION, FRAILTY and NEUROLOGICAL IMPAIRMENT; EXTREMELY CONTAGIOUS; ivermectin. Scabies is a significant problem in REMOTE ABORIGINAL COMMUNITIES in Australia, where it drives STREPTOCOCCAL SKIN INFECTION, POST-STREPTOCOCCAL GLOMERULONEPHRITIS and ACUTE RHEUMATIC FEVER. Raising this appropriately is a strong CULTURAL-SAFETY AND PUBLIC-HEALTH mark — do NOT raise it gratuitously; raise it if the patient's circumstances make it relevant"
    ]
   ],
   "back": {
-   "dx": "URTICARIA OR SCABIES — THE ANSWER IS IN THE SITE AND THE HOUSEHOLD. WHEN A STATION GIVES YOU ALMOST NOTHING, THE EXAMINER IS NOT TESTING RECALL; they are testing whether you can CHARACTERISE A COMPLAINT SYSTEMATICALLY AND WORK THROUGH DIFFERENTIALS IN AN ORDER when the answer is not handed to you. THE FULL HISTORY BLOCKS: CHARACTERISE, as above · THE TRIGGER — what were you doing immediately before it started, any new foods, medicines, soaps, detergents, plants, insect bites, and DOES EXERCISE OR STRESS BRING IT ON, which is the cholinergic urticaria question · INFECTION — fever, chills, runny nose, sore throat, cough, AND THE EBV TRAP, a sore throat treated with amoxicillin followed by a rash, a storyline the AMC uses repeatedly · GASTROINTESTINAL — nausea, vomiting, diarrhoea, for enteroviral exanthem and food-related urticaria · MENINGOCOCCAEMIA · TRAVEL AND ACCOMMODATION, including animal contact · SEXUAL HEALTH, because HIV SEROCONVERSION AND SECONDARY SYPHILIS both present with rash and SCABIES IS ALSO SEXUALLY TRANSMISSIBLE · THE HOUSEHOLD · AUTOIMMUNE — diarrhoea and greasy or bloody stools, mouth ulcers, eye problems, joint pain, scaly patches on elbows or scalp, photosensitive rash, hair loss, for coeliac disease, inflammatory bowel disease, psoriasis and lupus · BLEEDING AND MALIGNANCY — easy bruising, family bleeding history, weight loss, night sweats, lumps, because HAEMATOLOGICAL DISEASE CAN PRESENT WITH ALMOST ANY RASH and belongs at the end of every rash list · BACKGROUND — past history, ATOPY, medications, allergies, IMMUNISATIONS, family history. IMMUNISATION HISTORY IS WORTH ASKING EVEN IN AN ADULT: it is cheap, it is on several mark sheets, and almost nobody asks it once the patient is over eighteen. URTICARIA MANAGEMENT: identify and avoid the trigger where one is found · AVOID HEAT, hot showers and overheating, with cool compresses · NON-SEDATING ORAL ANTIHISTAMINE, REGULARLY RATHER THAN AS NEEDED, with doses above standard used in persistent urticaria under specialist guidance · AVOID ASPIRIN AND NSAIDs, WHICH CAN AGGRAVATE IT · REFER if it persists beyond SIX WEEKS (chronic urticaria) or if there is angio-oedema VERIFY. SCABIES MANAGEMENT: TOPICAL PERMETHRIN 5% CREAM, whole body FROM THE NECK DOWN, LEFT ON OVERNIGHT, REPEATED AFTER ONE WEEK · TREAT EVERY HOUSEHOLD MEMBER AND CLOSE CONTACT ON THE SAME DAY, SYMPTOMATIC OR NOT — treating the patient alone is an AUTOMATIC FAIL · WASH ALL BEDDING, TOWELS AND CLOTHING hot and dry hot, sealing what cannot be washed for several days · ORAL IVERMECTIN is an alternative in crusted scabies, treatment failure or outbreaks · AND WARN THAT THE ITCH CAN PERSIST TWO TO FOUR WEEKS AFTER SUCCESSFUL TREATMENT, otherwise they will think it failed VERIFY. CRUSTED SCABIES, ALSO CALLED NORWEGIAN SCABIES: thick, crusted, hyperkeratotic plaques carrying ENORMOUS NUMBERS OF MITES, occurring in immunosuppression, frailty and neurological impairment, EXTREMELY CONTAGIOUS, and a significant problem in REMOTE ABORIGINAL COMMUNITIES IN AUSTRALIA, where scabies is also a driver of streptococcal skin infection and therefore of POST-STREPTOCOCCAL GLOMERULONEPHRITIS AND ACUTE RHEUMATIC FEVER. Raising this appropriately is a strong cultural-safety and public-health mark — raise it if the patient's circumstances make it relevant, NOT GRATUITOUSLY. EXPLAINING SCABIES: 'It's a tiny mite — a small bug — that burrows into the top layer of the skin and causes intense itching and a rash. IT HAS NOTHING TO DO WITH BEING UNCLEAN. It spreads through close contact and through shared bedding and clothing, which is why it moves through households.' THREE REASONS: the SITE, between the fingers and on the wrists · the ITCH WORSE AT NIGHT AND AFTER A HOT SHOWER · and THE HOUSEMATE. THEN THE BIT THAT MATTERS MOST: 'we treat you, AND WE TREAT EVERYONE IN THE HOUSE AT THE SAME TIME — even the ones with no rash. If we don't, it just passes back and forth.' EXPLAINING URTICARIA: 'certain cells in your skin release a chemical called HISTAMINE, which makes small blood vessels leak, and you get these raised itchy patches. It is very common and NOT DANGEROUS IN ITSELF.' THREE REASONS: raised and intensely itchy · EACH INDIVIDUAL ONE COMES AND GOES rather than staying put · heat makes it worse. THEN THE SAFETY-NET: 'if you ever get swelling of your lips, tongue or throat, or you feel short of breath or your throat is tightening, THAT IS AN EMERGENCY — CALL AN AMBULANCE.' HER HIDDEN AGENDA IN BOTH VERSIONS: SHE IS EMBARRASSED AND HALF-BELIEVES THIS MEANS SHE IS DIRTY, and she says so only if asked an open question about her concerns. IF YOU NAME SCABIES WITHOUT IMMEDIATELY SAYING IT IS NOT ABOUT HYGIENE she looks mortified and says 'SO IT'S BECAUSE THE HOUSE IS FILTHY, BASICALLY.' THE HONEST CLOSE WHEN YOU ARE NOT CERTAIN: 'the pattern fits scabies best, and I'd treat on that basis — BUT I WANT TO SEE YOU AGAIN IN TWO WEEKS, because if it isn't settling we'll need to think again.'",
+   "dx": [
+    "**AN ITCHY RASH, WORSE IN THE HEAT — URTICARIA OR SCABIES: THE ANSWER IS IN THE SITE AND THE HOUSEHOLD.** **NO PHOTOGRAPH, ALMOST NO STEM — the station that tests whether you have a STRUCTURE or only a MEMORY.**",
+    "**WHY THIS ONE IS UNCOMFORTABLE — AND WHAT IS ACTUALLY BEING TESTED.** **There is no photograph, the recall is incomplete, and two very different diagnoses fit the same clues. That is SURVIVABLE IF YOU HAVE A RASH STRUCTURE AND FATAL IF YOU DO NOT.** **When a station gives you almost nothing, the examiner is NOT testing recall. They are testing whether you can CHARACTERISE A COMPLAINT SYSTEMATICALLY and work through differentials IN AN ORDER when the answer isn't handed to you.** **You can reach the end WITHOUT BEING CERTAIN and still pass comfortably — PROVIDED the history was structured, the red flags were excluded, and the differential list was defensible. LANDING ON THE CORRECT LABEL IS WORTH LESS THAN YOU THINK.**",
+    "**THE DISCRIMINATING ISSUE: CHARACTERISING THE RASH PROPERLY BEFORE REACHING FOR A DIAGNOSIS — AND ASKING WHO ELSE AT HOME IS ITCHY.** **With no photo and a two-line stem, the temptation is to DECIDE EARLY and ask questions that CONFIRM it. Both failures come from that.** **THE GUESSER — hears ‘worse on hot showers’, says scabies at NINETY SECONDS, spends the rest on permethrin; never establishes the site, never excludes anything.** **THE SCREENER — runs a generic systems review with NO CHARACTERISATION AT ALL; asks about weight loss and travel before establishing whether the rash is even itchy.** **THE PASS — characterises first, works the blocks in order, asks the household question, gives a diagnosis AND a differential list, and says plainly if there is residual uncertainty.**",
+    "**WHY CHARACTERISATION COMES BEFORE DIFFERENTIALS.** **Every differential question you ask afterwards is SHAPED BY WHAT YOU LEARN HERE. Candidates who fire straight into fever, weight loss and travel without establishing WHAT THE RASH IS end up asking a GENERIC SCREEN that fits any patient — and THE EXAMINER NOTICES.** **Open properly: observations → ‘I can see this rash is bothering you — tell me what's been happening’ → ‘IS THERE ANYTHING IN PARTICULAR THAT'S WORRYING YOU about it?’**",
+    "**THE HISTORY, BY BLOCK, IN ORDER.** **CHARACTERISE (the figure — site, timing, worse/better, appearance, warm/painful/itchy, ONE SPOT'S DURATION) → THE TRIGGER: what were you doing immediately before; any new FOODS, MEDICINES, SOAPS, DETERGENTS, plants, INSECT BITES; does EXERCISE or STRESS bring it on? (cholinergic urticaria — heat, exercise and hot showers are DIRECTLY relevant to this stem) → INFECTION: fever, runny nose, sore throat, cough — and THE EBV TRAP (a sore throat treated with AMOXICILLIN followed by a rash; the AMC uses it repeatedly) → GI: nausea, vomiting, diarrhoea → SERIOUS INFECTION: drowsy, headache, photophobia, neck stiffness — EVERY RASH STATION → TRAVEL AND WHERE YOU STAYED; animal contact → SEXUAL HEALTH: HIV seroconversion and SECONDARY SYPHILIS both present with rash, and SCABIES IS SEXUALLY TRANSMISSIBLE → THE HOUSEHOLD → AUTOIMMUNE (coeliac, IBD, psoriasis, SLE) → BLEEDING AND MALIGNANCY (bruising, weight loss, night sweats, lumps — at the end of every rash list, however unlikely) → BACKGROUND.**",
+    "**BACKGROUND — TWO CHEAP QUESTIONS PEOPLE DROP.** **ATOPY — asthma, hay fever, eczema, in her or the family — RAISES THE PRIOR PROBABILITY OF URTICARIA SUBSTANTIALLY; forgetting it is a named trap.** **IMMUNISATION HISTORY — worth asking EVEN IN AN ADULT: cheap, on several mark sheets, and almost nobody asks it once the patient is over eighteen.** **Plus medications, allergies, family history.**",
+    "**IF IT IS SCABIES — EXPLAINING IT, WORD FOR WORD.** **NAME IT: ‘I think what you have is SCABIES.’** **EXPLAIN IT: ‘It's a TINY MITE — a small bug — that BURROWS into the top layer of the skin and causes intense itching and a rash. It has NOTHING TO DO WITH BEING UNCLEAN. It spreads through CLOSE CONTACT and through SHARED BEDDING AND CLOTHING, which is why it moves through households.’** **GIVE YOUR REASONS: ‘because of three things: WHERE IT IS — between your fingers and on your wrists, which is very typical (those little lines are called BURROWS, about as specific as it gets); the itch being WORSE AT NIGHT AND AFTER A HOT SHOWER; and the fact that YOUR HOUSEMATE HAS IT TOO.’** **THE BIT THAT MATTERS MOST: ‘We treat you, and we TREAT EVERYONE IN THE HOUSE AT THE SAME TIME — even the ones with no rash. If we don't, it just passes back and forth.’**",
+    "**HER HIDDEN AGENDA — SHE'S EMBARRASSED AND HALF-BELIEVES THIS MEANS SHE'S DIRTY.** **She only says so if asked an open question about concerns: ‘It's a bit embarrassing, honestly. I keep wondering if people can tell.’** **If you name scabies WITHOUT IMMEDIATELY SAYING IT'S NOT ABOUT HYGIENE, she looks mortified: ‘SO IT'S BECAUSE THE HOUSE IS FILTHY, BASICALLY.’** **Say it explicitly, and she relaxes: ‘Oh. Right. That's a relief, actually.’** **Leaving her believing the diagnosis reflects poor hygiene is an automatic fail.**",
+    "**IF IT IS URTICARIA — EXPLAINING IT, WORD FOR WORD.** **NAME IT: ‘I think what you have is URTICARIA — most people call it HIVES.’** **EXPLAIN IT: ‘It happens when certain cells in your skin release a chemical called HISTAMINE. That makes small blood vessels leak, and you get these raised itchy patches. It is VERY COMMON, and it is NOT DANGEROUS in itself.’** **GIVE YOUR REASONS: ‘the spots are RAISED AND INTENSELY ITCHY, each individual one COMES AND GOES rather than staying put, and HEAT MAKES IT WORSE — which is very typical.’** **THEN THE SAFETY-NET: ‘One thing I do want you to know. If you ever get SWELLING OF YOUR LIPS, TONGUE OR THROAT, or you feel short of breath or your throat is tightening, THAT IS AN EMERGENCY — CALL AN AMBULANCE. It's uncommon, but it's the one thing I'd never want you to sit on.’**",
+    "**THE HONEST CLOSE — residual uncertainty, said plainly**: **‘The pattern fits SCABIES BEST, and I'd treat on that basis — but I want to SEE YOU AGAIN IN TWO WEEKS, because if it isn't settling we'll need to think again.’** **Then the differentials — what else it could be and why each is LESS LIKELY; one diagnosis and nothing else loses the mark.** **‘A dermatological reaction’ is NOT a diagnosis — give a plain-language name, then one sentence of mechanism.** **Safety-net: airway symptoms, fever, spreading, not settling by two weeks (or, for scabies, no better after a month, or looking infected).**"
+   ],
    "plan": [
     [
-     "0:00",
-     "OBSERVATIONS, then open properly: 'I can see this rash is bothering you — tell me what's been happening.'"
+     "1a · open",
+     "**Observations (all normal, afebrile) → open question → ACKNOWLEDGE the itch and the lost sleep → ‘is there anything in particular that's worrying you?’**"
     ],
     [
-     "0:30",
-     "ASK THE CONCERN BEFORE YOU INTERROGATE: 'is there anything in particular that's worrying you about it?'"
+     "1b · CHARACTERISE — before anything else ★",
+     "**Site · timing · worse and better · appearance · WARM, PAINFUL, ITCHY · HOW LONG DOES ONE SPOT LAST.**"
     ],
     [
-     "0:50",
-     "CHARACTERISE IN FULL: site · duration and first episode · spreading · appearance · warm, painful, itchy · aggravating and relieving factors."
+     "1c · red flags",
+     "**Fever, drowsiness, headache, neck stiffness, photophobia · LIPS, TONGUE, THROAT, BREATHING.**"
     ],
     [
-     "1:50",
-     "THE MOST DISCRIMINATING QUESTION: how long does ONE spot last before it fades?"
+     "1d · the blocks",
+     "**Trigger (foods, medicines, soaps, bites, exercise, stress) · infection and the EBV/amoxicillin trap · GI · TRAVEL AND WHERE SHE STAYED · sexual health · THE HOUSEHOLD · autoimmune · malignancy.**"
     ],
     [
-     "2:10",
-     "RED FLAGS: the AIRWAY question, then the meningococcal screen."
+     "1e · background",
+     "**ATOPY · medications · allergies · IMMUNISATIONS · family history.**"
     ],
     [
-     "2:40",
-     "TRIGGERS: new foods, medicines, soaps, detergents, plants, bites · exercise and stress · recent URTI, with the amoxicillin-rash trap in mind · GI symptoms."
+     "2a · name it",
+     "**One plain-language name, then one sentence of mechanism.**"
     ],
     [
-     "3:30",
-     "Travel and where she stayed · sexual health · and the household question."
+     "2b · three reasons",
+     "**Appearance + site + trigger or contact.** A diagnosis with no justification loses the mark."
     ],
     [
-     "4:30",
-     "AUTOIMMUNE SCREEN, then bleeding and malignancy — brief, but present."
+     "2c · differentials",
+     "**What else it could be, and why each is less likely.**"
     ],
     [
-     "5:00",
-     "BACKGROUND: ATOPY, medications, allergies, IMMUNISATIONS, family history."
-    ],
-    [
-     "5:30",
-     "NAME IT IN PLAIN WORDS, one sentence of mechanism — and for scabies, SAY IT IS NOT ABOUT HYGIENE IN THE SAME BREATH."
-    ],
-    [
-     "6:00",
-     "THREE REASONS, WHICH ARE SCORED: appearance, site, and the trigger or the contact."
-    ],
-    [
-     "6:30",
-     "DIFFERENTIALS, AND WHY EACH IS LESS LIKELY — the task says diagnosis AND differentials."
-    ],
-    [
-     "7:00",
-     "Treatment, including the whole household on the same day and the bedding · warn the itch persists 2–4 weeks · safety-net and follow-up · teach-back."
+     "2d · manage and safety-net",
+     "**Scabies: permethrin neck-down overnight, repeat at a week; WHOLE HOUSEHOLD SAME DAY; hot wash and dry; ITCH PERSISTS 2–4 WEEKS; NOT ABOUT HYGIENE. Urticaria: avoid trigger and heat, regular non-sedating antihistamine, no aspirin/NSAIDs, the AIRWAY safety-net, refer beyond six weeks.** Then review and teach-back: **‘what will you tell your housemate?’** → ‘That we've both got scabies, we both need the cream tonight, and I need to wash the entire house.’"
     ]
    ],
-   "planApprox": true,
-   "planNote": "no examination task, so the history block runs longer than usual by design",
-   "ask": [
-    "THE CHARACTERISING SET: 'Whereabouts on your body is it?' · 'Is it raised, so you can feel it standing up from the skin, or is it flat?' · 'Is it warm to touch? Painful? And how bad is the itch?' · AND THE DISCRIMINATOR: 'If you pick one particular spot and watch it — how long does that individual spot last before it fades?'",
-    "THE TWO THAT SPLIT THE DIAGNOSIS: 'Have you been away anywhere in the last couple of months — AND IF SO, WHERE DID YOU STAY?' and 'IS ANYONE ELSE AT HOME OR AT WORK ITCHY, OR GOT A RASH?' PLUS THE ONE YOU CANNOT OMIT: 'Have you had any swelling of your lips, tongue or throat, or any trouble breathing?'",
-    "THE SCABIES EXPLANATION, WITH THE HYGIENE SENTENCE FIRST: 'I want to say straight away that IT HAS NOTHING WHATSOEVER TO DO WITH BEING UNCLEAN. It spreads through close contact and through shared bedding, which is why it travels through households and hostels.' AND THE NON-NEGOTIABLE: 'your housemate and anyone else in the house needs treating ON THE SAME DAY, even if they've got no rash. Otherwise it just goes round in circles.'"
-   ],
    "pefe": [
-    "THERE IS NO EXAMINATION TASK — THE FINDINGS ARE HER DESCRIPTION, AND YOU ONLY GET THEM BY ASKING. VERSION A, SCABIES: three weeks of unbearable itch, MAINLY BETWEEN THE FINGERS AND ON THE WRISTS with some around the waistband · small red bumps, several scratched raw, AND TWO ODD LITTLE WAVY LINES between two fingers, which are burrows · not warm, not painful · FAR WORSE AT NIGHT and after a hot shower or under the doona · INDIVIDUAL SPOTS STAY PUT · FOUR NIGHTS IN A CHEAP HOSTEL IN MELBOURNE SIX WEEKS AGO · HER HOUSEMATE HAS BEEN SCRATCHING FOR A FORTNIGHT.",
-    "VERSION B, URTICARIA: the same stem, but the rash is WIDESPREAD across trunk, arms and thighs, RAISED ITCHY WEALS, and EACH PATCH FADES WITHIN A FEW HOURS AND REAPPEARS ELSEWHERE · worse after hot showers, exercise and stress · A VIRAL ILLNESS A FORTNIGHT AGO · NOBODY ELSE AT HOME IS ITCHY, no travel, no lip, tongue or throat swelling · AND SHE HAS MILD HAY FEVER.",
-    "THE ROLE-PLAYER'S AUTOMATIC FAILS: no characterisation of the rash · never asked about household contacts · no airway question in an itchy rash · treated the patient alone for scabies · left her believing the diagnosis reflects poor hygiene.",
-    "The single most discriminating question, which the source omits — 'If you pick one particular spot and watch it — how long does that individual spot last before it fades?' Under 24 hours and it moves around → urticarial weals. Fixed, persisting for days → not urticaria: think vasculitis, infestation, eczema, drug eruption. And a weal that lasts more than 24 hours, leaves bruising, or burns rather than itches suggests urticarial vasculitis and needs further assessment VERIFY",
-    "The airway question — missing it in an itchy rash is not recoverable — 'ANY SWELLING OF THE LIPS, TONGUE OR THROAT? ANY DIFFICULTY BREATHING OR SWALLOWING? ANY LIGHT-HEADEDNESS?' URTICARIA WITH AIRWAY INVOLVEMENT IS ANAPHYLAXIS. And the meningococcal screen belongs in EVERY rash station: fever or chills, drowsy, headache, photophobia, neck stiffness",
-    "The household question — nearly always positive, and almost nobody asks it — 'IS ANYONE ELSE AT HOME OR AT WORK ITCHY, OR HAS ANYONE ELSE GOT A RASH?' The single most useful question for scabies, and an AUTOMATIC FAIL if omitted. Pair it with TRAVEL AND ACCOMMODATION — 'any travel, and WHERE DID YOU STAY — hotel, motel, hostel, shared accommodation?' — because SHARED BEDDING IS THE CLASSIC ACQUISITION ROUTE. She will not volunteer either the housemate or the hostel",
-    "The two pathways, side by side — URTICARIA: itchy raised red weals, OFTEN WIDESPREAD rather than confined · INDIVIDUAL SPOTS COME AND GO WITHIN 24 HOURS AND MOVE AROUND · often follows a viral illness, a new food, a new medicine or an insect bite · heat, HOT SHOWERS, EXERCISE AND STRESS make it worse, cholinergic urticaria in particular · may be associated with ANGIO-OEDEMA of lips, eyelids or tongue · personal or family ATOPY is common. SCABIES: a mite infestation, SARCOPTES SCABIEI — NOT an allergy and NOT a blood infection · intense itch, WORSE AT NIGHT and after hot showers · LOVES THE FINGER WEB SPACES, wrist flexures, elbows, axillae, waistband, genitalia and areolae · BURROWS are pathognomonic but often absent or invisible · acquired by PROLONGED SKIN-TO-SKIN CONTACT or from bedding, linen and clothing · OTHER PEOPLE IN THE HOUSEHOLD ARE USUALLY ITCHY TOO",
-    "The itch lags — say it out loud — ON FIRST INFESTATION THE ITCH STARTS WEEKS AFTER EXPOSURE, because it is an ALLERGIC RESPONSE TO THE MITE; on re-infestation it starts within days VERIFY. That is why a patient can insist NOTHING HAS CHANGED RECENTLY and still have acquired it in a hostel six weeks ago — and saying it makes the six-week-old travel history make sense to her"
+    "**THE WORKED ROLE-PLAY, the one-spot question and the household**: **‘If you pick one particular bump and watch it — does it fade within a day, or does it stay put?’ → ‘Oh, THEY STAY. They've been there the whole three weeks.’** **‘Have you been away anywhere in the last couple of months — and if so, where did you stay?’ → ‘We went to Melbourne about six weeks ago. Stayed in a CHEAP HOSTEL for four nights.’ → ‘Is anyone else at home or at work itchy, or got a rash?’ → ‘Oh — yeah, actually. MY HOUSEMATE'S BEEN SCRATCHING FOR A FORTNIGHT. I thought she was being dramatic.’ → [THAT IS THE STATION. DO NOT SHOW THAT YOU KNOW.]**",
+    "**THE ROLE-PLAYER — Jess Moran, 25, BOTH VERSIONS.** **An administration assistant sharing a rented Adelaide house with one housemate, TARA; fit, the pill only, no allergies, immunisations up to date, one regular partner.** **VERSION A — SCABIES (default): three weeks of unbearable itch, mainly BETWEEN THE FINGERS AND ON THE WRISTS, a bit round the WAISTBAND; small red bumps, several scratched raw, TWO ODD WAVY LINES between two fingers; not warm, not painful; far worse AT NIGHT and after a HOT SHOWER or UNDER THE DOONA; spots STAY PUT; a cheap Melbourne HOSTEL six weeks ago; TARA scratching for a fortnight; no atopy.** **VERSION B — URTICARIA: WIDESPREAD raised itchy WEALS (trunk, arms, thighs), each patch FADES WITHIN A FEW HOURS and reappears elsewhere; worse after hot showers, EXERCISE and STRESS; a VIRAL ILLNESS a fortnight ago (paracetamol only); nobody else itchy; no travel; NO LIP, TONGUE OR THROAT SWELLING; MILD HAY FEVER.** **Her questions — A: ‘Tara too? Even though she hasn't got a rash?’ · ‘How long till it stops itching?’; B: ‘Is it something I'm allergic to? Will it keep happening?’ · ‘Do I have to take tablets forever?’ · ‘What if my lips swell up?’**",
+    "**THE CARD REPERTOIRE — fail risks and prevention**: **diagnosis before characterisation → run the figure completely first · no household question → ‘is anyone else at home itchy?’ — always · no airway question → lips, tongue, throat, breathing in ANY itchy rash · no meningococcal screen → fever, drowsy, headache, neck, photophobia · no travel or accommodation history → ‘where did you stay’ is the scabies question · diagnosis with no reasons → appearance, site, trigger or contact · no differentials → the task says diagnosis AND differentials · treats patient only → the whole household, same day · doesn't warn about persistent itch → 2–4 weeks after cure · makes the patient feel dirty → say explicitly it is not about hygiene.**",
+    "**THE PARTNER'S AUTOMATIC FAILS**: **no characterisation of the rash · never asked about household contacts · no airway question in an itchy rash · treated the patient alone for scabies · left her believing the diagnosis reflects poor hygiene.** **Tick list highlights: observations · ASKED ABOUT HER CONCERNS · SITE · appearance · WARM/PAINFUL/ITCHY · HOW LONG DOES ONE SPOT LAST · AIRWAY/ANGIO-OEDEMA · meningococcal screen · URTI/GI · new drugs, foods, soaps · TRAVEL AND ACCOMMODATION · ANYONE ELSE AT HOME ITCHY · sexual history · autoimmune · malignancy · ATOPY · immunisations · named in plain words · THREE REASONS · differentials · not about hygiene · WHOLE HOUSEHOLD SAME DAY · bedding · ITCH PERSISTS 2–4 WEEKS · safety-net and follow-up · teach-back.**",
+    "SA — **SHINE SA if a sexual contact is the likely source (scabies is sexually transmissible)** · **for an Aboriginal or Torres Strait Islander patient from a remote community, the ACCHS and public-health follow-up — scabies drives streptococcal skin infection, post-streptococcal glomerulonephritis and rheumatic fever** VERIFY · **ED or ambulance (000) for any airway swelling** · **dermatology referral for chronic urticaria beyond six weeks or suspected urticarial vasculitis** · **TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Diagnosis before characterisation — deciding at ninety seconds and then asking only the questions that confirm it, never establishing the site or excluding anything",
-    "★ Never asks who else at home is itchy, or treats the patient alone for scabies rather than the whole household on the same day",
-    "No airway question in an itchy rash, or no meningococcal screen",
-    "Never asks about travel and where she stayed — the accommodation question is the scabies question, and she will not volunteer the hostel",
-    "Names scabies without saying in the same breath that it is not about hygiene, gives a diagnosis with no reasons, omits the differentials the task asked for, or fails to warn that the itch persists two to four weeks after cure"
-   ],
-   "numbers": [
-    "Urticaria: one spot lasts under 24 hours and migrates · widespread weals · histamine release from virus, food, drug, bite or heat · cholinergic urticaria from heat, exercise, hot showers and stress · red flag is angio-oedema and airway involvement, which is anaphylaxis · treatment is trigger avoidance, cooling and a regular non-sedating antihistamine, avoiding aspirin and NSAIDs · beyond 6 weeks it is chronic urticaria and is referred VERIFY",
-    "Scabies: web spaces, wrists, axillae, waist, genitalia · worse at night and after hot showers · burrows are specific but often absent · spread by skin contact, bedding and clothing · permethrin 5% neck down overnight, repeated at one week · whole household treated the same day · itch persists 2–4 weeks after cure · first infestation itches weeks after exposure, re-infestation within days · crusted scabies in immunosuppression, treated with ivermectin VERIFY"
+   "ddx": [
+    [
+     "**Scabies — Version A**",
+     "**Web spaces, wrists, waistband; worse AT NIGHT and after hot showers; spots PERSIST; burrows; hostel; HOUSEMATE ITCHY**",
+     "**The site and the household**",
+     "**Permethrin 5% neck-down overnight, repeat at 1 week; WHOLE HOUSEHOLD SAME DAY; hot wash; itch persists 2–4 weeks.** VERIFY"
+    ],
+    [
+     "**Urticaria (incl. cholinergic) — Version B**",
+     "**Widespread weals; each fades <24 h and moves; heat, exercise, stress; recent viral illness; atopy**",
+     "**How long does ONE spot last**",
+     "**Avoid trigger and heat; regular non-sedating antihistamine; no aspirin/NSAIDs; refer if >6 weeks.** VERIFY"
+    ],
+    [
+     "**Anaphylaxis / angio-oedema**",
+     "**Urticaria WITH lip, tongue or throat swelling, breathing difficulty, light-headedness**",
+     "**The AIRWAY question — every itchy rash**",
+     "**Emergency — adrenaline, ambulance.** Emergency"
+    ],
+    [
+     "Urticarial vasculitis",
+     "**Weals lasting >24 h, leaving BRUISING, burning rather than itching**",
+     "One-spot duration and what it leaves",
+     "**Further assessment; dermatology.** VERIFY Soon"
+    ],
+    [
+     "**Meningococcaemia**",
+     "**Fever, drowsy, headache, photophobia, neck stiffness; non-blanching rash**",
+     "**Asked in every rash station**",
+     "**Emergency — antibiotics.** Emergency"
+    ],
+    [
+     "Viral exanthem · EBV with amoxicillin",
+     "**Recent URTI; a sore throat treated with AMOXICILLIN then a rash**",
+     "**The infection block**",
+     "Clinical; EBV serology if indicated. Routine"
+    ],
+    [
+     "Contact dermatitis · drug eruption",
+     "**New soap, detergent, plant, medicine**",
+     "**The trigger block**",
+     "Remove the trigger. Routine"
+    ],
+    [
+     "HIV seroconversion · secondary syphilis",
+     "**Sexual risk; rash with systemic features**",
+     "**Sexual history**",
+     "HIV and syphilis serology WITH CONSENT. Soon"
+    ],
+    [
+     "Autoimmune — coeliac, IBD, psoriasis, SLE",
+     "**GI symptoms, mouth ulcers, joints, scaly elbows or scalp, photosensitivity, hair loss**",
+     "The autoimmune block",
+     "Directed tests. Routine"
+    ],
+    [
+     "Haematological disease / malignancy",
+     "**Bruising, bleeding, weight loss, night sweats, lumps**",
+     "**At the end of every rash list, however unlikely**",
+     "FBC and film. Soon"
+    ]
    ]
   },
   "source": "RASH_06_Urticaria_vs_Scabies_Notability.pdf (AMC Stage 2 OSCE counselling block, document 6 — Jess Moran, 25, with an itchy rash worse after hot showers and under blankets and no photograph in the stem: characterising a rash you cannot see, the how-long-does-one-spot-last question that splits weals from everything else, the airway and household questions that cannot be omitted, and both endings scripted with permethrin for the whole house on the same day)",
   "drive": "AMC Clinical Notability › AMC Stage 2 Counselling Block › RASH_06_Urticaria_vs_Scabies_Notability.pdf",
   "must": [
-   "FAIL — AUTO-FAIL: no characterisation of the rash — deciding at ninety seconds and then asking only the questions that confirm it; site, appearance, warm, painful, itchy, all before any differential",
-   "FAIL — AUTO-FAIL: never asking who else at home or at work is itchy — she will not volunteer the housemate, and the omission is meant to stand",
-   "FAIL — AUTO-FAIL: treating her alone for scabies — the whole household and close contacts on the SAME day, symptomatic or not, or it passes back and forth",
-   "FAIL — AUTO-FAIL: leaving her believing the diagnosis reflects poor hygiene — 'so it's because the house is filthy, basically'; say it has nothing to do with being unclean in the same breath as the name",
-   "FAIL — AUTO-FAIL: no airway question in an itchy rash — swelling of lips, tongue or throat, difficulty breathing or swallowing; urticaria with airway involvement is anaphylaxis",
-   "DO — Ask how long ONE spot lasts — under 24 hours and migrating is urticaria, fixed for days is not — then ask where she stayed when she travelled, because the hostel is the exposure and she will not volunteer it"
-  ]
+   "FAIL — No characterisation of the rash before reaching for a diagnosis.",
+   "FAIL — Never asking about household contacts.",
+   "FAIL — No airway question in an itchy rash.",
+   "FAIL — Treating the patient alone for scabies; or leaving her believing the diagnosis reflects poor hygiene.",
+   "SAY — If you pick one particular spot and watch it — how long does that individual spot last before it fades?",
+   "SAY — Is anyone else at home or at work itchy, or has anyone else got a rash?"
+  ],
+  "v2": true
  },
  {
   "id": "COUNS-15",
   "cat": "couns",
   "promptBell": true,
   "promptAt": 240,
-  "setting": "It is not the diagnosis — the laboratory has done that. The station separates on whether five specific packages of words leave your mouth: the drug with dose, route, frequency and duration · the look-back period as a number, with the reasoning · both notifications · both follow-ups with their intervals · and the abstinence rule with its number. 'I'd treat him and trace his contacts' is a fail in a station whose whole purpose is management.",
   "stem": [
    "General practice, rural South Australia. A 25-year-old man attends for the results of a sexual health screen taken last week. 8 minutes, no examination.",
    "Version A — chlamydia positive on first-pass urine NAAT; HIV, syphilis, hepatitis B and gonorrhoea negative. The agenda is 'Is my partner cheating?'",
@@ -101292,89 +101605,156 @@ const EMBEDDED_CARDS = [
    "Counsel the patient regarding management",
    "Address the patient's concerns"
   ],
-  "time": "0:00–1:00 open, invite concerns, check what he already knows · 1:00–2:30 the results, sandwiched · 2:30–6:30 the five key points · 6:30–8:00 the agenda, safety-net, check · if you never invited concerns, the cheating question arrives at 7:20 with no time to handle it, which is how this version is usually lost",
-  "findingsLabel": "Examination findings — open only when you would ask the examiner",
+  "findingsLabel": "The two infections side by side, the regimen and the follow-up — open only when you would use them",
   "findings": [
    [
-    "The sandwich — the ninety seconds that set the tone",
-    "'The GOOD NEWS FIRST: your HIV, syphilis and hepatitis B are all negative. TWO HAVE COME BACK POSITIVE — chlamydia and gonorrhoea. They're two of the commonest sexually transmitted infections, and I want to be clear: BOTH ARE BACTERIAL AND BOTH ARE CURABLE with antibiotics I can give you today. HOW ARE YOU FEELING ABOUT THAT?' THREE WAYS THIS MINUTE GOES WRONG: leading with the positive, after which he stops listening · jargon — 'your NAAT was positive for Neisseria gonorrhoeae' means nothing to him · and NO PAUSE, because THE PAUSE IS WHERE THE AGENDA ARRIVES"
+    "TWO VERSIONS — read the stem for which you are in",
+    "General practice, rural SA. A 25-year-old returns for a sexual health screen. VERSION A: CHLAMYDIA POSITIVE on first-pass urine NAAT; HIV, syphilis, hepatitis B and gonorrhoea NEGATIVE — agenda: ‘IS MY PARTNER CHEATING?’. VERSION B (harder): CHLAMYDIA AND GONORRHOEA POSITIVE; HIV, syphilis, hepatitis B and C negative — the DRUG, the LOOK-BACK and the FOLLOW-UP change. Tasks (both): 1 EXPLAIN THE RESULTS · 2 COUNSEL REGARDING MANAGEMENT · 3 ADDRESS THE CONCERNS"
+   ],
+   [
+    "CHLAMYDIA — the facts the station is built on VERIFY",
+    "USUALLY SILENT — why the look-back is long and why we screen · highest in people under 30 · TEST in a man: FIRST-PASS URINE NAAT (the FIRST PART OF THE STREAM, not the first urine of the day); in a woman: clinician-collected endocervical swab if examined, otherwise SELF-COLLECTED VAGINAL SWAB (first-pass urine least sensitive) · TREATMENT: DOXYCYCLINE 100 mg ORALLY TWICE DAILY FOR 7 DAYS · CONTACT TRACING: 6 MONTHS · TEST OF CURE: NOT routine (pregnancy, rectal infection, persisting symptoms, doubtful adherence) · RE-INFECTION TEST: 3 MONTHS · SA NOTIFICATION: the LABORATORY notifies; the practitioner routinely notifies only if the person is 16 OR YOUNGER"
+   ],
+   [
+    "GONORRHOEA VERIFY",
+    "USUALLY LOUD IN MEN — urethral discharge and dysuria in about 85–90% of penile infections; anal and pharyngeal infection usually SILENT · higher in men who have sex with men, young Aboriginal and Torres Strait Islander people in remote areas, returning travellers — and rising generally · TEST: NAAT PLUS a swab for GONOCOCCAL CULTURE from EVERY infected site, BEFORE antibiotics · TREATMENT: CEFTRIAXONE 500 mg IM STAT in 2 mL of 1% LIGNOCAINE PLUS AZITHROMYCIN 1 g ORALLY STAT (2 g if PHARYNGEAL) · CONTACT TRACING: MINIMUM 2 MONTHS · TEST OF CURE: yes by NAAT, 2 WEEKS after treatment is completed (see the correction) · RE-INFECTION TEST: 3 MONTHS · SA NOTIFICATION: BOTH the laboratory AND the medical practitioner"
+   ],
+   [
+    "WHY AZITHROMYCIN IS ADDED TO CEFTRIAXONE — not to cover chlamydia",
+    "The guideline is explicit: DUAL THERAPY exists to create a PHARMACOLOGICAL BARRIER to the development of wider CEFTRIAXONE RESISTANCE. Reduced susceptibility is emerging in urban Australia, and the PHARYNX — where drug penetration is poor and resistance genes are traded between organisms — is the likeliest site of treatment failure; hence pharyngeal azithromycin 2 g VERIFY"
+   ],
+   [
+    "CULTURE, BEFORE THE INJECTION",
+    "ALWAYS collect gonococcal culture from every infected site BEFORE antibiotics — but NEVER DELAY TREATMENT waiting for the result. Two marks: the request must say ‘GONOCOCCAL CULTURE’, not just ‘culture’ (the organism needs specific media); and the specimen should reach the lab within about 24 HOURS VERIFY. Forgetting culture is a named fail risk"
+   ],
+   [
+    "CORRECTION — THE CO-INFECTION REGIMEN: the one genuinely contested point",
+    "The teaching version is CEFTRIAXONE 500 mg IM PLUS DOXYCYCLINE 100 mg BD × 7 DAYS, dropping azithromycin because it no longer performs well against chlamydia — defensible, and the Australian guideline uses that combination for RECTAL co-infection. But the STRICT first-line regimen for GENITAL GONORRHOEA remains ceftriaxone PLUS AZITHROMYCIN 1 g, and chlamydia first-line remains doxycycline. BOTH READINGS ARE CURRENT — do not assert one as the only answer. SAFE WORDING: ‘For the gonorrhoea, ceftriaxone, five hundred milligrams, an injection into the muscle, mixed with two millilitres of local anaesthetic so it stings less. For the chlamydia, doxycycline, one hundred milligrams, twice a day, for seven days — and the doxycycline also acts as the SECOND AGENT for the gonorrhoea, which is why I'm not adding azithromycin on top’ VERIFY"
+   ],
+   [
+    "BEFORE THE INJECTION — THE QUESTION NOBODY ASKS",
+    "‘Have you ever had a REACTION TO PENICILLIN or any antibiotic?’ Ceftriaxone is a CEPHALOSPORIN. A history of RASH after penicillin is not necessarily a contraindication, but ANAPHYLAXIS to penicillin, or documented CEPHALOSPORIN allergy, means SPECIALIST ADVICE — not a guess at an alternative (alternatives are otherwise not recommended because of resistance) VERIFY. Ask it IN THE SAME BREATH as naming the injection"
+   ],
+   [
+    "CORRECTION — TEST OF CURE IS NARROWER THAN THE TEACHING SUGGESTS VERIFY",
+    "The lecture says test of cure for EVERY case of gonorrhoea, always. The Australian guideline is narrower: TEST OF CURE BY NAAT TWO WEEKS AFTER TREATMENT IS COMPLETED, for each site — PHARYNGEAL, ANAL OR CERVICAL — and especially where NO CULTURE was taken before treatment, the culture showed REDUCED SUSCEPTIBILITY, or a NON-STANDARD regimen was used. URETHRAL INFECTION IN A MAN IS NOT ON THAT LIST. Here it's still easy to justify — and if no culture was collected before the injection, it is squarely indicated"
+   ],
+   [
+    "SOUTH AUSTRALIAN NOTIFICATION — get this right VERIFY",
+    "Under the SOUTH AUSTRALIAN PUBLIC HEALTH ACT 2011 and its notifiable conditions regulations, practitioners and laboratories must notify SA Health of specified conditions. GONORRHOEA — the PRACTITIONER notifies as well as the laboratory. CHLAMYDIA — an exception: the LABORATORY notifies, and the practitioner routinely notifies only where the person is 16 OR YOUNGER (or a point-of-care test not reported by pathology, or a related death). Reporting requirements changed recently — confirm before quoting the detail"
+   ],
+   [
+    "THE NUMBERS VERIFY",
+    "Doxycycline 100 mg BD × 7 days · ceftriaxone 500 mg IM in 2 mL 1% lignocaine · azithromycin 1 g stat (2 g if pharyngeal) · gonococcal conjunctivitis: ceftriaxone 1 g · contact tracing: chlamydia 6 MONTHS, gonorrhoea MINIMUM 2 MONTHS — co-infection uses SIX · NO SEX 7 DAYS, and until partners are treated · REVIEW 1 WEEK · TEST OF CURE 2 WEEKS after treatment completed · RE-INFECTION TEST 3 MONTHS (with HIV and syphilis) · presumptive treatment of contacts within 2 WEEKS"
    ]
   ],
   "back": {
-   "dx": "UNCOMPLICATED GENITAL CHLAMYDIA, WITH GONORRHOEA ADDED IN VERSION B. CHLAMYDIA IS USUALLY SILENT — which is why the look-back window is long and why we screen. GONORRHOEA IS USUALLY LOUD IN MEN, with urethral discharge and dysuria in around 85–90% of penile infections, while ANAL AND PHARYNGEAL INFECTION IS USUALLY SILENT VERIFY. TESTING: FIRST-PASS URINE FOR NAAT in a man — THE FIRST PART OF THE STREAM, NOT THE FIRST URINE OF THE DAY, and the opposite of a midstream specimen · in a woman, a clinician-collected endocervical swab if examined, otherwise a self-collected vaginal swab, with FIRST-PASS URINE THE LEAST SENSITIVE OPTION · plus GONOCOCCAL CULTURE FROM EVERY INFECTED SITE, TAKEN BEFORE ANTIBIOTICS BUT NEVER DELAYING TREATMENT. TWO PRACTICAL POINTS THAT EARN MARKS: the request must say 'GONOCOCCAL CULTURE', not just 'culture', because the organism needs specific media and conditions; and the specimen should reach the laboratory WITHIN ABOUT 24 HOURS VERIFY. WHY AZITHROMYCIN IS ADDED TO CEFTRIAXONE — AND IT IS NOT TO COVER CHLAMYDIA: dual antibiotic treatment exists to CREATE A PHARMACOLOGICAL BARRIER TO WIDER CEFTRIAXONE RESISTANCE. Reduced susceptibility is emerging in urban Australia, and THE PHARYNX — where drug penetration is poor and resistance genes are traded between organisms — IS THE LIKELIEST SITE OF TREATMENT FAILURE, which is also why pharyngeal infection gets AZITHROMYCIN 2 g VERIFY. CORRECTION — THE CO-INFECTION REGIMEN IS THE ONE GENUINELY CONTESTED POINT: the teaching version is CEFTRIAXONE 500 mg IM PLUS DOXYCYCLINE 100 mg BD FOR 7 DAYS, dropping azithromycin because azithromycin no longer performs well against chlamydia, and the Australian guideline uses exactly that combination for RECTAL co-infection. BUT THE STRICT FIRST-LINE REGIMEN FOR GENITAL GONORRHOEA REMAINS CEFTRIAXONE PLUS AZITHROMYCIN 1 g, and chlamydia first-line remains doxycycline. BOTH READINGS ARE CURRENT AND BOTH APPEAR IN PRACTICE — DO NOT ASSERT ONE AS THE ONLY ANSWER. SAFE OSCE WORDING: 'For the gonorrhoea, CEFTRIAXONE 500 mg as an injection into the muscle, mixed with 2 mL of local anaesthetic so it stings less. For the chlamydia, DOXYCYCLINE 100 mg twice a day for seven days — AND THE DOXYCYCLINE ALSO ACTS AS THE SECOND AGENT FOR THE GONORRHOEA, which is why I'm not adding azithromycin on top.' IF CHALLENGED: 'the strict first-line regimen for genital gonorrhoea is ceftriaxone with azithromycin 1 g as a DUAL PHARMACOLOGICAL BARRIER against resistance. Where chlamydia is also confirmed, the guideline's co-infection regimen pairs ceftriaxone with doxycycline instead — which treats the chlamydia properly and still provides two agents. I'd CONFIRM AGAINST THE CURRENT AUSTRALIAN STI MANAGEMENT GUIDELINES and take local sexual health advice if there were any doubt.' ON ALLERGY: a history of rash after penicillin is not necessarily a contraindication, but ANAPHYLAXIS TO PENICILLIN, OR DOCUMENTED CEPHALOSPORIN ALLERGY, MEANS SPECIALIST ADVICE — NOT A GUESS AT AN ALTERNATIVE, because alternatives are otherwise not recommended given resistance VERIFY. CORRECTION — TEST OF CURE IS NARROWER THAN THE TEACHING SUGGESTS: the lecture says test of cure for every case of gonorrhoea always. THE AUSTRALIAN GUIDELINE IS NARROWER — NAAT TWO WEEKS AFTER TREATMENT IS COMPLETED, FOR EACH SITE OF INFECTION (PHARYNGEAL, ANAL OR CERVICAL), AND ESPECIALLY WHERE NO CULTURE WAS TAKEN BEFORE TREATMENT, WHERE CULTURE SHOWED REDUCED SUSCEPTIBILITY, OR WHERE A NON-STANDARD REGIMEN WAS USED. URETHRAL INFECTION IN A MAN IS NOT ON THAT LIST — though here it is still easy to justify, and if no culture was collected before the injection it is squarely indicated VERIFY. NOTIFICATION IN SOUTH AUSTRALIA, UNDER THE PUBLIC HEALTH ACT 2011 AND ITS NOTIFIABLE CONDITIONS REGULATIONS: GONORRHOEA — THE PRACTITIONER NOTIFIES AS WELL AS THE LABORATORY. CHLAMYDIA — AN EXCEPTION APPLIES: the laboratory notifies, and the practitioner routinely notifies ONLY WHERE THE PERSON IS 16 YEARS OR YOUNGER, or for a point-of-care test not reported by a pathology service, or a related death. REPORTING REQUIREMENTS CHANGED RECENTLY — CONFIRM BEFORE QUOTING THE DETAIL VERIFY. PARTNER NOTIFICATION: they should be tested and treated, and PRESUMPTIVE TREATMENT IS CONSIDERED FOR CONTACT IN THE LAST TWO WEEKS · offer to see the partner yourself BUT DO NOT HAND OVER A SECOND PRESCRIPTION. THE FIVE PRACTICE CARDS: A 22-YEAR-OLD WOMAN, chlamydia positive, asymptomatic, asking about fertility — HIDDEN: SHE IS NINE WEEKS PREGNANT AND HAS NOT TOLD YOU, so ask about pregnancy before prescribing, because DOXYCYCLINE IS CONTRAINDICATED and azithromycin plus a test of cure applies instead VERIFY · A 31-YEAR-OLD MAN, gonorrhoea positive on a THROAT swab with urine negative — hidden: he has not told you he has male partners; tests the PHARYNGEAL REGIMEN, AZITHROMYCIN 2 g, test of cure at two weeks, and three-site testing · A MAN TREATED TWO WEEKS AGO WHOSE TEST OF CURE IS STILL POSITIVE — hidden: he had sex with the same untreated partner on day 3; tests distinguishing TREATMENT FAILURE FROM RE-INFECTION and seeking specialist advice rather than repeating the regimen blindly · A 19-YEAR-OLD, gonorrhoea positive, FEBRILE WITH PAINFUL WRISTS AND PUSTULES — DISSEMINATED GONOCOCCAL INFECTION, no longer a GP counselling case: same-day referral, blood cultures, parenteral therapy · A 16-YEAR-OLD with chlamydia WHOSE PARTNER IS 24 — the SAFEGUARDING PIVOT: age of consent, capacity, coercion and mandatory notification obligations, which take priority over everything else VERIFY.",
+   "dx": [
+    "**UNCOMPLICATED GENITAL CHLAMYDIA, WITH GONORRHOEA ADDED IN VERSION B — in a 25-year-old man.** **THE STATION IN ONE LINE: nothing to diagnose — the station is FIVE NAMED KEY POINTS, delivered to a LAYMAN, WITHOUT BLAMING ANYONE.** **A results-explaining station with a HIDDEN AGENDA attached. Both versions are failed THE SAME WAY: VAGUE MANAGEMENT.**",
+    "**THE DISCRIMINATING ISSUE: IT IS NOT THE DIAGNOSIS. IT IS WHETHER FIVE SPECIFIC PACKAGES OF WORDS LEAVE YOUR MOUTH.** **Every candidate knows this needs antibiotics and contact tracing. The station separates on SPECIFICITY: 1 THE DRUG with dose and duration · 2 THE LOOK-BACK as a number · 3 BOTH NOTIFICATIONS (partners, and SA Health) · 4 BOTH FOLLOW-UPS with their intervals · 5 THE ABSTINENCE RULE with its number.** **‘I'd treat him and trace his contacts’ is A FAIL in a station whose whole purpose is management.** **Signpost them in one sentence: ‘Let me take you through what the results mean, the treatment, who else needs to know, what happens next, and then I want to come back to the question you asked me at the start.’**",
+    "**THE SECOND DISCRIMINATOR, IN VERSION A: THE AGENDA — ‘DO YOU THINK MY PARTNER IS CHEATING?’** **Asked EARLY if you invite concerns, LATE if you don't. BOTH EASY ANSWERS FAIL. ‘Probably, yes’ DAMAGES A RELATIONSHIP ON NO EVIDENCE. ‘No, definitely not’ is a claim you CANNOT SUPPORT and is INAPPROPRIATE REASSURANCE.** **THE ANSWER, VERBATIM: ‘That's a fair question and I want to be honest with you. We have NO WAY OF TELLING WHEN THIS WAS PICKED UP, OR WHO HAD IT FIRST. Chlamydia very often causes NO SYMPTOMS AT ALL, so it can sit quietly for a long time before anyone knows it's there. So I CAN'T TELL YOU WHERE IT CAME FROM, AND I'M NOT GOING TO GUESS. What I can do is treat you, and make sure your partner gets tested and treated too.’** **He may press TWICE — REPEAT THE SAME HONEST SENTENCE rather than softening into a guess. ‘I've only ever been with her’ gets the same answer — never ‘then it must have come from her’.**",
+    "**DELIVERING THE RESULTS — THE NINETY SECONDS THAT SET THE TONE: THE SANDWICH.** **NEGATIVES FIRST, then the positives, then ‘curable’, then A PAUSE: ‘I've got your results here. The GOOD NEWS FIRST: your HIV, syphilis and hepatitis B are all NEGATIVE. Two have come back positive — chlamydia and gonorrhoea. They're two of the commonest sexually transmitted infections, and I want to be clear: BOTH ARE BACTERIAL, AND BOTH ARE CURABLE with antibiotics I can give you today. HOW ARE YOU FEELING ABOUT THAT?’** **THE THREE WAYS THIS MINUTE GOES WRONG: LEADING WITH THE POSITIVE (he stops listening) · JARGON (‘your NAAT was positive for Neisseria gonorrhoeae’) · NO PAUSE — and THE PAUSE IS WHERE THE AGENDA USUALLY ARRIVES.**",
+    "**THE DRUG — WITH EVERY PART SAID.** **‘Before I treat you — have you ever had a REACTION TO PENICILLIN or any antibiotic? … Good. For the gonorrhoea, CEFTRIAXONE, FIVE HUNDRED MILLIGRAMS, an INJECTION INTO THE MUSCLE, mixed with a little local anaesthetic so it stings less. I'll also take ANOTHER SWAB BEFORE I GIVE IT, to grow the bacteria and check which antibiotics work — because gonorrhoea is becoming RESISTANT. For the chlamydia, DOXYCYCLINE, ONE HUNDRED MILLIGRAMS, TWICE A DAY, FOR SEVEN DAYS. Finish the whole course.’** **Doxycycline counselling: take it SITTING UP with a full glass of water, DON'T LIE DOWN straight after (oesophageal ulceration), and be careful in the SUN (photosensitivity).** **Trap: ‘antibiotics’, or drugs without doses; forgetting the ALLERGY QUESTION and the CULTURE SWAB — both marked.**",
+    "**THE TWO NOTIFICATIONS — and the window EXPLAINED, not asserted.** **‘Two things about telling other people. First, YOUR PARTNERS. Anyone you've had sex with in the LAST SIX MONTHS needs to be tested and probably treated. For GONORRHOEA ON ITS OWN we'd go back TWO MONTHS, but CHLAMYDIA IS SIX — so we use THE LONGER ONE. You don't have to do it face to face: there's an ANONYMOUS service called LET THEM KNOW. Second, THE HEALTH DEPARTMENT. These infections are NOTIFIED TO SA HEALTH — for public health statistics and contact-tracing support. It does NOT go to your EMPLOYER, your FAMILY or your PARTNER.’** **Trap: one number without the reasoning (the longer window SWALLOWS the shorter); and ‘NOBODY WILL EVER KNOW’ — FALSE. Say what notification IS and what it IS NOT.**",
+    "**THE TWO FOLLOW-UPS AND ABSTINENCE — two tests asking two different questions.** **‘NO SEX FOR SEVEN DAYS after today's treatment — and NOT UNTIL YOUR PARTNERS HAVE BEEN TREATED TOO, otherwise you'll pass it back and forth. I'll see you in ONE WEEK to check you've taken everything and contacted people. Then TWO WEEKS AFTER TREATMENT I'll repeat the gonorrhoea test — a TEST OF CURE, to make sure the antibiotic WORKED. And at THREE MONTHS we'll repeat everything to check for RE-INFECTION, and RECHECK HIV AND SYPHILIS because those tests have a WINDOW PERIOD.’** **Trap: COLLAPSING THE TWO FOLLOW-UPS INTO ONE — test of cure (2 weeks, did it work) and re-infection testing (3 months, has it come back) have SEPARATE BOXES.**",
+    "**THE CLUE TABLE — what each question tests.** **‘Do I have to tell them?’ → partner notification can be ANONYMOUS: ‘You don't have to do it yourself — Let Them Know sends an anonymous message, and SA Health can help too.’** **‘Will this affect having kids?’ → honest and specific: untreated infection can cause EPIDIDYMO-ORCHITIS in men and TUBAL DAMAGE in women; treated now, the risk is very small.** **‘Can I just take the tablets and not come back?’ → defend the follow-up: RESISTANCE in gonorrhoea, and RE-INFECTION if partners aren't treated; then agree a SPECIFIC DATE.** **‘Will anyone find out?’ → BOTH, honestly: the consultation is CONFIDENTIAL, but these infections are NOTIFIED TO SA HEALTH for statistics and public health — not to employer, family or partner.** **‘So the HIV test might change?’ → ‘Very unlikely, but a test can't detect an infection picked up in the last few weeks — that's how the test works, not because I'm worried.’**",
+    "**THREE THINGS THE LECTURE LEAVES OUT** VERIFY: **OFFER PrEP — the guideline says consider HIV pre-exposure prophylaxis for ANYONE diagnosed with gonorrhoea, not only men who have sex with men · VACCINATION — check and offer HEPATITIS A AND B, and HPV catch-up · DOXYCYCLINE AND THE SUN — photosensitivity; upright with water.** **And the red flags to come back for: FEVER, PAIN OR SWELLING IN A TESTICLE (epididymo-orchitis), WORSENING DYSURIA, JOINT PAINS WITH A RASH (disseminated gonococcal infection).** **Must not miss: epididymo-orchitis · PROCTITIS if receptive anal sex · PHARYNGEAL infection if oral sex · DGI · re-infection from an untreated partner.**",
+    "**OPENING — AND INVITE THE CONCERN IN THE FIRST MINUTE.** **‘You've come for the results of the tests we did last week — I have them here. BEFORE I GO THROUGH THEM, is there anything particular on your mind, or anything you were hoping we'd cover?’ → ‘Some of what we'll talk about is quite personal, and I ask everyone the same things. Everything stays between us and your record.’ → ‘Can I ask what you already know about the tests we did?’** **In the role-play he raises the cheating question at 0:40 — PARK IT WITH AN EXPLICIT PROMISE (‘I promise I'll answer it properly — can I go through the results first, and then come straight back to it?’), then ANSWER IT BEFORE YOU CLOSE.** **If you never invite concerns, it lands at 7:20 with no time to handle it — which is how this version is usually lost.**"
+   ],
    "plan": [
     [
-     "0:00",
-     "INTRODUCE AND CONFIRM THE NAME, open question, then INVITE CONCERNS IN THE FIRST MINUTE — this is where the cheating question surfaces, and parking it with an explicit promise is the right move."
+     "0:00 → 1:00 · open, concerns, what he knows",
+     "**Introduce, confirm name → ‘how can I help?’ → INVITE CONCERNS (the cheating question arrives — park it with a promise) → normalise and confidentiality → what does he already know?**"
     ],
     [
-     "0:50",
-     "NORMALISE AND CHECK PRIOR UNDERSTANDING: 'can I ask what you already know about the tests we did?'"
+     "1:00 → 2:30 · results, sandwiched",
+     "**Negatives → both positives in plain words → both CURABLE → PAUSE: ‘how are you feeling?’** If he says ‘I feel filthy’: ‘these are very common infections and they say nothing about you as a person — you did exactly the right thing by getting tested.’"
     ],
     [
-     "1:30",
-     "THE SANDWICH: negatives first · both positives named in plain words · BOTH CURABLE · then PAUSE and ask how he is feeling."
+     "2:30 → 4:00 · BOX 1 — the drug",
+     "**ALLERGY QUESTION → CULTURE SWAB before treatment → ceftriaxone 500 mg IM with lignocaine → doxycycline 100 mg BD × 7 days, finish the course, upright, sun.**"
     ],
     [
-     "2:30",
-     "BOX ONE, THE DRUG: allergy question · culture swab before treatment · ceftriaxone with dose and route · doxycycline with dose, frequency and duration · and the swallowing and sun advice."
+     "4:00 → 5:15 · BOXES 2 AND 3 — the two notifications",
+     "**Partners in the LAST SIX MONTHS, with the reasoning (gonorrhoea two, chlamydia six, use the longer) → LET THEM KNOW, SHINE SA → SA HEALTH notification, what it is and is not.**"
     ],
     [
-     "4:00",
-     "BOX TWO, THE TWO NOTIFICATIONS: six months with the arithmetic said out loud · Let Them Know · and what SA Health notification is and is not."
+     "5:15 → 6:30 · BOXES 4 AND 5 — abstinence and the two follow-ups",
+     "**No sex 7 days AND until partners treated → review 1 week → TEST OF CURE 2 weeks → RE-INFECTION TEST 3 months with HIV and syphilis.**"
     ],
     [
-     "5:15",
-     "BOX THREE AND FOUR: SEVEN DAYS NO SEX and until partners are treated · review at one week · TEST OF CURE AT TWO WEEKS · RE-INFECTION TESTING AT THREE MONTHS with HIV and syphilis rechecked for the window period."
+     "6:30 → 7:20 · THE AGENDA ★",
+     "**Return to it as promised → the honest timing answer → he presses (‘So it might have been me. From before her.’) → ‘It might. Or it might not. The test can't tell us, and I'd rather say that than guess at something that could hurt your relationship. What matters medically is that you're both treated.’**"
     ],
     [
-     "6:30",
-     "THE AGENDA, ANSWERED HONESTLY — and repeated unchanged when he presses."
-    ],
-    [
-     "7:20",
-     "BOX FIVE, EDUCATION AND CLOSE: red flags named specifically · fact sheet · PrEP and vaccination flagged for the review · 'is there anything you'd like me to go over again?'"
+     "7:20 → 8:00 · close",
+     "**Red flags (fever, testicular pain or swelling, worsening dysuria, joint pains with a rash) → fact sheet → condoms and PrEP at review → vaccination → ‘is there anything you'd like me to go over again?’**"
     ]
    ],
-   "planApprox": false,
-   "planNote": "the time budget is the source's own; the five boxes are almost certainly the order of the examiner's sheet",
-   "ask": [
-    "THE OPENING AND THE SANDWICH: 'Before I go through them, is there anything particular on your mind?' · 'The good news first — your HIV, syphilis and hepatitis are negative.' · 'Two came back positive: chlamydia and gonorrhoea.' · 'Both are bacterial, and both are curable.' · 'How are you feeling about that?'",
-    "THE MANAGEMENT SET: 'Have you ever reacted to penicillin or any antibiotic?' · 'I'll take a swab for culture before I treat you.' · 'Anyone in the last six months needs testing and treatment.' · 'There's an anonymous service called Let Them Know.' · 'It's notified to SA Health — not to your employer or your partner.' · 'No sex for seven days, and until your partners are treated.' · 'Two weeks after treatment, a test of cure.' · 'Three months, a re-infection test, and we recheck HIV and syphilis.'",
-    "WHEN HE SAYS 'I FEEL FILTHY': 'I hear that a lot, and I want to say clearly — these are VERY COMMON INFECTIONS AND THEY SAY NOTHING ABOUT YOU AS A PERSON. They're treatable, and YOU DID EXACTLY THE RIGHT THING BY GETTING TESTED.' AND WHEN HE PRESSES ON THE HIV WINDOW: 'a test can't detect an infection picked up in the last few weeks. That's why we repeat it — NOT BECAUSE I'M WORRIED, BUT BECAUSE THAT'S HOW THE TEST WORKS.'"
-   ],
    "pefe": [
-    "THERE IS NO EXAMINATION — THE FINDINGS ARE THE RESULT SHEET AND WHAT HE TELLS YOU WHEN ASKED: a discharge and stinging on passing urine for about a week, still present but less · TWO PARTNERS IN THE LAST SIX MONTHS, his girlfriend of four months and one person before her · vaginal and oral sex only, CONDOMS SOMETIMES, NOT ALWAYS, and not with his girlfriend · no male partners, no injecting drug use · NO PAST STI AND NEVER TESTED BEFORE · no allergies, no regular medications.",
-    "PERSISTING SYMPTOMS CHANGE THE TEST-OF-CURE DECISION, so if he mentions the discharge, ACKNOWLEDGE IT AND PROMISE TO COME BACK TO IT rather than moving straight to treatment. And if you sound judgemental or awkward about the number of partners, HE GOES QUIET AND ANSWERS IN SINGLE WORDS FROM THAT POINT ON.",
-    "THE ROLE-PLAYER'S AUTOMATIC FAILS: he is told his partner has been unfaithful · he is promised nobody will ever know · the drugs are named without doses · or the cheating question is never answered.",
-    "Box one — the drug, with the allergy question and the culture — 'HAVE YOU EVER HAD A REACTION TO PENICILLIN OR ANY ANTIBIOTIC?' asked in the same breath as naming the injection, because CEFTRIAXONE IS A CEPHALOSPORIN. Then: 'I'll TAKE ANOTHER SWAB BEFORE I GIVE IT, to grow the bacteria and check which antibiotics work.' CEFTRIAXONE 500 mg IM IN 2 mL OF 1% LIGNOCAINE for the gonorrhoea · DOXYCYCLINE 100 mg TWICE DAILY FOR 7 DAYS for the chlamydia, taken SITTING UP WITH WATER, not lying down straight after because of OESOPHAGEAL ULCERATION, and careful in the sun VERIFY",
-    "Box two — the two notifications, and the look-back arithmetic — PARTNERS: 'anyone you've had sex with IN THE LAST SIX MONTHS needs testing and probably treatment. FOR GONORRHOEA ON ITS OWN WE'D GO BACK TWO MONTHS, BUT CHLAMYDIA IS SIX — SO WE USE THE LONGER ONE.' Giving the number without the reasoning shows you know one window; giving both shows you know two. AND IT DOES NOT HAVE TO BE FACE TO FACE — LET THEM KNOW sends an anonymous SMS or email, and SHINE SA and Clinic 275 can help by phone from a rural site. THE HEALTH DEPARTMENT: notified to SA HEALTH for statistics and contact-tracing support — 'IT DOES NOT GO TO YOUR EMPLOYER, YOUR FAMILY OR YOUR PARTNER.' NEVER SAY 'NOBODY WILL EVER KNOW'",
-    "Box three and four — abstinence, and two separate follow-ups — No sex for seven days from today, and not until partners are treated, or you pass it back and forth. Then the three appointments: review at one week, to check the course is finished and contacts are sorted · test of cure at two weeks after treatment is completed, asking did the antibiotic work · re-infection testing at three months, asking has it come back, and rechecking HIV and syphilis because those tests have a window period. Collapsing the two follow-ups into one loses a separate box — they are different tests asking different questions",
-    "The agenda — 'Is my partner cheating?' — learn this verbatim — BOTH EASY ANSWERS FAIL. 'Probably, yes' damages a relationship on no evidence; 'no, definitely not' is a claim you cannot support. THE ANSWER: 'That's a fair question and I want to be honest with you. WE HAVE NO WAY OF TELLING WHEN THIS WAS PICKED UP, OR WHO HAD IT FIRST. Chlamydia very often causes NO SYMPTOMS AT ALL, so it can sit quietly for a long time before anyone knows it's there. SO I CAN'T TELL YOU WHERE IT CAME FROM, AND I'M NOT GOING TO GUESS. What I can do is treat you, and make sure your partner gets tested and treated too.' HE WILL PRESS TWICE — REPEAT THE SAME SENTENCE UNCHANGED RATHER THAN SOFTENING INTO A GUESS",
-    "The things the source leaves out, each worth a mark — OFFER PrEP — the guideline says consider HIV pre-exposure prophylaxis for ANYONE DIAGNOSED WITH GONORRHOEA, not only men who have sex with men. VACCINATION — check and offer HEPATITIS A AND B, AND HPV CATCH-UP. AND THE RED FLAGS, SAID SPECIFICALLY: come back sooner for FEVER, PAIN OR SWELLING IN A TESTICLE, worsening pain passing urine, or JOINT PAINS WITH A RASH, which is DISSEMINATED GONOCOCCAL INFECTION"
+    "**PARTNER NOTIFICATION — MAKE IT EASY**: **look back SIX MONTHS in this case, explaining that gonorrhoea alone would have been two · partners should be TESTED AND TREATED, with PRESUMPTIVE TREATMENT considered for contact in the LAST TWO WEEKS · LET THEM KNOW — anonymous SMS or email · SHINE SA and ADELAIDE SEXUAL HEALTH CENTRE (Clinic 275) can help, including by phone from a rural site · OFFER TO SEE THE PARTNER YOURSELF — but DO NOT HAND OVER A SECOND PRESCRIPTION.** VERIFY",
+    "**THE EXAMINER CHALLENGE — the co-infection regimen**: **‘The strict first-line regimen for GENITAL GONORRHOEA is ceftriaxone with AZITHROMYCIN ONE GRAM, as a DUAL PHARMACOLOGICAL BARRIER against resistance. Where chlamydia is ALSO CONFIRMED, the guideline's co-infection regimen pairs ceftriaxone with DOXYCYCLINE instead — which treats the chlamydia properly and STILL PROVIDES TWO AGENTS. I'd confirm against the current Australian STI Management Guidelines and take local sexual health advice if there were any doubt.’** **That answer is SAFE EITHER WAY.** **And test of cure: ‘Because gonorrhoea is becoming harder to treat, I want to check the antibiotic has worked. I'll repeat the test in two weeks — a TEST OF CURE. It's routine for THROAT, BACK-PASSAGE AND CERVICAL infections, and I'd want it here because [NO CULTURE WAS TAKEN / YOUR SYMPTOMS HAVEN'T SETTLED].’**",
+    "**PRACTICE CARDS.** **Card 1 — 22F, chlamydia on a self-collected swab, asks whether she can have children; HIDDEN: NINE WEEKS PREGNANT → ASK ABOUT PREGNANCY BEFORE PRESCRIBING: DOXYCYCLINE IS CONTRAINDICATED; azithromycin plus a test of cure instead.** VERIFY **Card 2 — 31M, gonorrhoea on a THROAT swab, urine negative; hasn't said he has male partners → the PHARYNGEAL regimen (azithromycin 2 g), test of cure at two weeks, and THREE-SITE TESTING.** **Card 3 — treated two weeks ago, test of cure STILL POSITIVE; had sex with the same untreated partner on day 3 → distinguish TREATMENT FAILURE from RE-INFECTION; specialist advice rather than repeating the regimen blindly.** **Card 4 — 19, gonorrhoea, FEBRILE with PAINFUL WRISTS and PUSTULES → DISSEMINATED GONOCOCCAL INFECTION: no longer a GP counselling case — same-day referral, blood cultures, parenteral therapy.** **Card 5 — 16, chlamydia, PARTNER IS 24 → the SAFEGUARDING PIVOT: age of consent, capacity, coercion, MANDATORY NOTIFICATION — these take priority over everything else.** VERIFY",
+    "**THE ROLE-PLAYER, Daniel Hoskin, 25** — a diesel mechanic outside Kadina, share house; tested after a DISCHARGE AND STINGING a week ago (discharge still there, a bit less). **Only if asked: non-smoker, six or seven beers on a Friday, no medications, NO ALLERGIES, no past STI, never tested before; TWO PARTNERS in six months — his girlfriend of four months and one before her; vaginal and oral sex; condoms ‘sometimes, not with my girlfriend’; no male partners, no injecting.** **Embarrassed and quiet; uses ‘filthy’ about himself once. Convinced his girlfriend has been unfaithful and wants you to confirm it — he accepts a guess in EITHER direction warmly, and MARKS YOU DOWN. Goes quiet, single words, if you sound judgemental about the number of partners.** **His questions: ‘Is it going to hurt?’ · ‘Can I drink on them?’ · ‘Do I have to? That's a horrible conversation.’ · ‘Wait — the government gets told? Does it go to work?’ · ‘From today, or from when the tablets finish?’ · ‘Why, if it's cured?’**",
+    "**THE PARTNER'S TICK LIST (16)**: introduced and confirmed the name · open question · INVITED CONCERNS IN THE FIRST MINUTE · checked prior understanding · NEGATIVES BEFORE POSITIVES · named both in plain words · said both CURABLE · PAUSED for a reaction · ALLERGY before ceftriaxone · CULTURE before treatment · both drugs WITH DOSE, ROUTE, DURATION · SIX-MONTH LOOK-BACK WITH THE REASONING · both notifications explained honestly · SEVEN-DAY abstinence · TEST OF CURE AND THREE-MONTH RETEST · answered the agenda WITHOUT BLAMING. **AUTOMATIC FAIL if: he's told his partner has been unfaithful · he's promised nobody will ever know · the drugs are named without doses · the cheating question is never answered.**",
+    "SA — **SHINE SA and the Adelaide Sexual Health Centre (Clinic 275), including phone support for a rural site** · **LET THEM KNOW for anonymous partner notification** · **SA Health notification under the SA Public Health Act 2011** VERIFY · **the Australian STI Management Guidelines and Therapeutic Guidelines as the operative sources** · **ACCHS and Aboriginal Liaison Officer where relevant; TIS National 131 450.**"
    ],
-   "fails": [
-    "★ Vague management — 'I'd give him antibiotics and arrange contact tracing' — in a station whose entire purpose is the specificity of what you say next",
-    "★ Blaming a partner in either direction, or being pushed off the honest timing answer when he presses the second time",
-    "False reassurance about privacy — 'don't worry, nobody will ever know' — instead of naming what notification is and what it is not",
-    "No allergy question before a cephalosporin injection, no culture swab before antibiotics, or the wrong look-back window because gonorrhoea dominated your thinking",
-    "Test of cure and re-infection testing merged into 'I'd see him again', no abstinence advice with a number, or concerns never invited so the agenda lands at 7:20"
-   ],
-   "numbers": [
-    "Doxycycline 100 mg twice daily for 7 days · ceftriaxone 500 mg IM in 2 mL of 1% lignocaine · azithromycin 1 g stat, or 2 g if pharyngeal · gonococcal conjunctivitis ceftriaxone 1 g · contact tracing: chlamydia 6 months, gonorrhoea minimum 2 months · presumptive treatment of contacts within 2 weeks · no sex 7 days · review 1 week · test of cure 2 weeks after treatment completed · re-infection test 3 months VERIFY",
-    "Services and sources: let them know for anonymous partner notification · SHINE SA · Adelaide sexual health centre (Clinic 275), including phone advice for rural GPs · SA health for notification under the public health act 2011 · Australian STI management guidelines and therapeutic guidelines — confirm every dose and window before quoting it"
+   "ddx": [
+    [
+     "**Uncomplicated genital chlamydia — Version A**",
+     "**Usually SILENT; positive first-pass urine NAAT**",
+     "**The agenda: ‘is my partner cheating?’**",
+     "**Doxycycline 100 mg BD × 7 days; trace 6 months; lab notifies; retest 3 months.** VERIFY"
+    ],
+    [
+     "**Chlamydia + gonorrhoea co-infection — Version B**",
+     "**Discharge and dysuria (gonorrhoea is LOUD in men)**",
+     "**Allergy; culture before treatment**",
+     "**Ceftriaxone 500 mg IM + doxycycline 100 mg BD × 7 days (or + azithromycin 1 g); trace SIX months; practitioner notifies; test of cure 2 weeks; retest 3 months.** VERIFY"
+    ],
+    [
+     "Epididymo-orchitis",
+     "**Testicular pain and swelling, fever**",
+     "**The red flags**",
+     "Examination; adjusted regimen; review. Urgent"
+    ],
+    [
+     "Pharyngeal / rectal infection",
+     "**Oral sex; receptive anal sex — often silent**",
+     "**Sexual practices history**",
+     "**Three-site testing; azithromycin 2 g for pharyngeal; test of cure.** Soon"
+    ],
+    [
+     "**Disseminated gonococcal infection**",
+     "**Fever, painful joints (wrists), pustular skin lesions**",
+     "Systemic features",
+     "**Same-day referral, blood cultures, parenteral therapy.** Emergency"
+    ],
+    [
+     "Re-infection vs treatment failure",
+     "**Positive test of cure; sex with an untreated partner**",
+     "**Adherence and partner history**",
+     "**Specialist advice — don't repeat the regimen blindly.** Soon"
+    ],
+    [
+     "**Safeguarding — a minor**",
+     "**Patient 16 or under; an older partner**",
+     "**Age of consent, capacity, coercion**",
+     "**Mandatory notification and child protection take priority.** VERIFY Urgent"
+    ]
    ]
   },
   "source": "STI_01_Gonorrhoea_Chlamydia_Notability.pdf (AMC Stage 2 OSCE counselling block, document 1 — Daniel Hoskin, 25, returning for a sexual health screen result: the sandwich, the five key points delivered with doses and numbers attached, the six-month look-back with its arithmetic said out loud, both notifications and both follow-ups, and the cheating question answered honestly and then repeated unchanged under pressure)",
   "drive": "AMC Clinical Notability › AMC Stage 2 Counselling Block › STI_01_Gonorrhoea_Chlamydia_Notability.pdf",
   "must": [
-   "FAIL — ★ AUTO-FAIL: vague management — 'I'd give him antibiotics and arrange contact tracing'; drug, dose, route, frequency, duration, and every interval as a number",
-   "FAIL — ★ AUTO-FAIL: blaming a partner in either direction, or never answering the cheating question at all — invite concerns in the first minute or it lands at about seven minutes with no time left",
-   "FAIL — ★ AUTO-FAIL: false reassurance about privacy — 'don't worry, nobody will ever know'; confidential to the consultation, notified to SA Health, not to his employer, family or partner",
-   "FAIL — ★ No allergy question before the ceftriaxone injection — and no gonococcal culture before antibiotics, or two months quoted when chlamydia makes the look-back six",
-   "FAIL — Test of cure and re-infection testing merged into 'I'd see him again' — two weeks asks whether it worked, three months asks whether it is back, and each has its own box; plus no sex for seven days and until partners are treated",
-   "SAY — 'We have no way of telling when this was picked up, or who had it first. Chlamydia very often causes no symptoms at all, so it can sit quietly for a long time. I can't tell you where it came from, and I'm not going to guess.'"
-  ]
+   "FAIL — Telling him his partner has been unfaithful — or promising she definitely hasn't.",
+   "FAIL — Promising that nobody will ever know (the infections are notified to SA Health).",
+   "FAIL — Naming the drugs without doses; or ‘antibiotics and contact tracing’ as the whole plan.",
+   "FAIL — Never answering the cheating question.",
+   "SAY — The good news first: your HIV, syphilis and hepatitis are negative. Two have come back positive — chlamydia and gonorrhoea. Both are bacterial, and both are curable. How are you feeling about that?",
+   "SAY — We have no way of telling when this was picked up, or who had it first. So I can't tell you where it came from, and I'm not going to guess. What I can do is treat you, and make sure your partner is tested and treated too."
+  ],
+  "v2": true
  },
  {
   "id": "COUNS-16",
