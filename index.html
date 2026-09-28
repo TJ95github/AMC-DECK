@@ -177,6 +177,9 @@
   .mnem th{width:1%;white-space:nowrap;color:#1d4ed8;font-weight:800;font-size:13.5px;letter-spacing:.02em;padding-left:0}
   .mnem td{color:#12243a;line-height:1.5}
   .mnem td b{color:#1d4ed8}
+  .mnem tr.msub th{padding-left:18px;font-weight:700;font-size:12.5px;color:#2563eb}
+  .mnem tr.msub td{font-size:13.5px;background:#f5f9ff}
+  .mnem tr.msub th,.mnem tr.msub td{border-top:1px dashed #dbeafe}
   .mnem .mnote{font-size:12.5px;color:#3b5573;margin:8px 0 0;line-height:1.45}
   .hl{background:#fff3b0;color:#b00000;font-weight:700;border-radius:3px;padding:0 3px}
   .dx{font-family:Georgia,serif;font-size:18px;line-height:1.4;margin:0}
@@ -673,7 +676,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
-        ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
+        ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
         ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
         ${!V2&&c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
         <h3>Diagnosis</h3>${(()=>{const p=Array.isArray(b.dx)?b.dx.filter(Boolean):points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${escb(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${escb(x)}</li>`).join("")}</ul>`:"");})()}

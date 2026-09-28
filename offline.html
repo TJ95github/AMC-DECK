@@ -177,6 +177,9 @@
   .mnem th{width:1%;white-space:nowrap;color:#1d4ed8;font-weight:800;font-size:13.5px;letter-spacing:.02em;padding-left:0}
   .mnem td{color:#12243a;line-height:1.5}
   .mnem td b{color:#1d4ed8}
+  .mnem tr.msub th{padding-left:18px;font-weight:700;font-size:12.5px;color:#2563eb}
+  .mnem tr.msub td{font-size:13.5px;background:#f5f9ff}
+  .mnem tr.msub th,.mnem tr.msub td{border-top:1px dashed #dbeafe}
   .mnem .mnote{font-size:12.5px;color:#3b5573;margin:8px 0 0;line-height:1.45}
   .hl{background:#fff3b0;color:#b00000;font-weight:700;border-radius:3px;padding:0 3px}
   .dx{font-family:Georgia,serif;font-size:18px;line-height:1.4;margin:0}
@@ -673,7 +676,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
-        ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
+        ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
         ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
         ${!V2&&c.setting?`<h3>How the station runs</h3>${ptlist(c.setting,"",140,320)}`:""}
         <h3>Diagnosis</h3>${(()=>{const p=Array.isArray(b.dx)?b.dx.filter(Boolean):points(b.dx||"");if(!p.length)return "";return `<p class="dxlead">${escb(p[0])}</p>`+(p.length>1?`<ul class="ptl dxp">${p.slice(1).map(x=>`<li>${escb(x)}</li>`).join("")}</ul>`:"");})()}
@@ -75717,7 +75720,105 @@ const EMBEDDED_CARDS = [
    "ASK — Have you used any hormones or steroids that weren't prescribed?",
    "SAY — You can change your documents without surgery or hormones."
   ],
-  "v2": true
+  "v2": true,
+  "mnem": {
+   "title": "Scaffold — Off To Go · HMS Gender · A Happy Family Surely Supports Real Brave Sons",
+   "rows": [
+    [
+     "HISTORY 0:00–4:00",
+     "**Off To Go — HMS Gender** — every word is a section; the ship's name puts the gender questions LAST."
+    ],
+    [
+     "O · Opening",
+     "Offer **your pronouns**, ask **his name and pronouns**, thank him, **confidentiality** · open question · **ASK PERMISSION for sensitive questions**."
+    ],
+    [
+     "T · Timeline",
+     "**Since when he/him?** · living as **Alan everywhere** (home, work, friends)?"
+    ],
+    [
+     "G · Goals",
+     "**What does he want help with today?** (hormones, surgery, documents, support)."
+    ],
+    [
+     "H · HEADSS",
+     "Run the six letters below, then mood and suicide close it out."
+    ],
+    [
+     "  H · Home",
+     "Who's at home · **family's reaction** · **are you SAFE at home?**"
+    ],
+    [
+     "  E · Education / Employment",
+     "Work or study · **living as Alan at work?** · **any discrimination, bullying**."
+    ],
+    [
+     "  A · Activities",
+     "Friends, **support network**, sport, community groups."
+    ],
+    [
+     "  D · Drugs",
+     "Smoking, alcohol, recreational drugs · **NON-PRESCRIBED HORMONES** (testosterone bought online?)."
+    ],
+    [
+     "  S · Sexuality",
+     "Partners **without assuming their gender** · contraception, STI screening · then **BINDING** (how long per day, pain, breathlessness, skin breakdown)."
+    ],
+    [
+     "  S · Suicide / mood",
+     "= the **M** and **S** of HMS ↓"
+    ],
+    [
+     "M · Mood",
+     "Mood · **sleep** · **appetite** · energy, enjoyment."
+    ],
+    [
+     "S · Suicide",
+     "**Thoughts of suicide or self-harm — now and in the past** · plans, attempts, protective factors."
+    ],
+    [
+     "Gender · LAST (3:30)",
+     "**Puberty** — how it felt · **body distress** · **wanting to change those features** · where his feelings sit."
+    ],
+    [
+     "MANAGEMENT 4:00–8:00",
+     "**A Happy Family Surely Supports Real Brave Sons**"
+    ],
+    [
+     "A · Affirm (4:00)",
+     "**Not a mental illness** — the distress and his goals are what we support."
+    ],
+    [
+     "H · Hormones (4:30)",
+     "How to start · effects · **what is permanent** (voice, hair) · **monitoring** (Hb/haematocrit, LFTs, lipids, BP)."
+    ],
+    [
+     "F · Fertility",
+     "**Egg storage BEFORE testosterone** · **testosterone is NOT contraception**."
+    ],
+    [
+     "S · Surgery (5:30)",
+     "The pathway, **honestly** — top surgery, waits, cost."
+    ],
+    [
+     "S · Support",
+     "**Psychology** · **family meeting** · **PFLAG**."
+    ],
+    [
+     "R · Records (6:30)",
+     "Update clinic records **today** · **licence and birth certificate WITHOUT surgery** (SA: letter from doctor or psychologist)."
+    ],
+    [
+     "B · Binding",
+     "**Binding safety** — proper binder, not bandages or tape, <8 h a day, never sleep in it, breaks, stop if short of breath or pain."
+    ],
+    [
+     "S · Safety net (7:15)",
+     "**QLife, Lifeline 13 11 14** · **booked review** · summary · questions."
+    ]
+   ],
+   "note": "Two mnemonics, split at 4:00. Fertility sits right after Hormones on purpose — egg storage has to happen before testosterone starts."
+  }
  },
  {
   "id": "PSYCH-30",
@@ -87801,7 +87902,93 @@ const EMBEDDED_CARDS = [
    "ASK — Can you show me or describe where it is — around the vagina, around the back passage, or up in the groin?",
    "SAY — A lump down below that does not settle needs a sample taken, not another cream."
   ],
-  "v2": true
+  "v2": true,
+  "mnem": {
+   "title": "History scaffold — Old Women Can Always Prolapse · Red Signs Before Her Period",
+   "rows": [
+    [
+     "O · Open",
+     "Acknowledge · **confidentiality** · **permission** before personal questions."
+    ],
+    [
+     "W · Where ★",
+     "**Around the vagina, the back passage, or up in the groin?** — ask FIRST; it deletes two thirds of the list."
+    ],
+    [
+     "C · Characterise",
+     "**When** · constant or comes and goes · **getting bigger** · **PAINFUL?** · **skin changes** · **can you push it back in?** · **worse standing, better lying?** · **impact**."
+    ],
+    [
+     "A · Age decides order",
+     "**Older, painless** → Prolapse first. **Younger, painful** → Red flags and skin first, then Prolapse anyway."
+    ],
+    [
+     "P · Prolapse",
+     "**Don't Stand Up, Bits Inside — Old Mums Have Pushed Forever**: five symptoms, then five risks."
+    ],
+    [
+     "  D · Dragging",
+     "**Dragging or heavy feeling**, worse by evening."
+    ],
+    [
+     "  S · Sex",
+     "**Pain during sex**."
+    ],
+    [
+     "  U · Urine",
+     "**Straining, weak or stop-start stream, incomplete emptying** · **LEAK when you cough or laugh**."
+    ],
+    [
+     "  B · Bowel",
+     "Hard to pass, incomplete emptying · **‘Do you ever have to PRESS to help it out?’**"
+    ],
+    [
+     "  I · Infections",
+     "**Recurrent UTIs**."
+    ],
+    [
+     "  O · Obstetric",
+     "How many babies, vaginal or caesarean · **big babies, long labour, FORCEPS or vacuum, tears or stitches**."
+    ],
+    [
+     "  M · Menopause",
+     "When · oestrogen deficiency · HRT or vaginal oestrogen?"
+    ],
+    [
+     "  H · Hysterectomy",
+     "**Previous pelvic surgery** → vault prolapse."
+    ],
+    [
+     "  P · Pressure",
+     "Raised intra-abdominal pressure: **chronic cough, constipation, heavy lifting, obesity**."
+    ],
+    [
+     "  F · Family",
+     "**Family history**, connective tissue disorders."
+    ],
+    [
+     "R · Red flags ★",
+     "**Weight, appetite, tiredness** · **lumps in your GROIN** · skin: **ulcer, bleeding, ITCH and for how long** · fever, unwell."
+    ],
+    [
+     "S · Sexual",
+     "STI screen — **warts, herpes, syphilis**."
+    ],
+    [
+     "B · Bowel (back passage)",
+     "**Pain, blood, discharge** — perianal abscess, haemorrhoid, anal cancer."
+    ],
+    [
+     "H · Host",
+     "**Diabetes** (abscess, hidradenitis) · **smoking** and **immunosuppression** (vulval cancer)."
+    ],
+    [
+     "P · Period — five Ps by age",
+     "**Menopausal** version for the 52-year-old; standard five Ps in the younger woman."
+    ]
+   ],
+   "note": "Every word is a section. **Painless is NOT reassuring** — cancer is painless. Then examination: **Valsalva** at inspection AND speculum, **inguinal nodes**. Close with the diagnosis AND the **grouped differentials**."
+  }
  },
  {
   "id": "OG-44",
