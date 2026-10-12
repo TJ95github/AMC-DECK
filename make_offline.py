@@ -17,6 +17,16 @@ BOOT = "/* ===================== Boot ===================== */"
 if idx.count(BOOT) != 1:
     raise SystemExit("boot marker not found exactly once in index.html")
 
+# inline card images (c["img"]["src"]) as data URIs so file:// copies still show them
+import base64, mimetypes
+for _c in cards:
+    _i = _c.get("img")
+    if _i and _i.get("src") and not _i["src"].startswith("data:"):
+        _p = os.path.join(HERE, _i["src"])
+        if os.path.exists(_p):
+            _mt = mimetypes.guess_type(_p)[0] or "image/png"
+            _i["src"] = "data:%s;base64,%s" % (_mt, base64.b64encode(open(_p, "rb").read()).decode())
+
 embed = (
     "/* ===================== Embedded deck (offline copy) ===================== */\n"
     "const EMBEDDED_CARDS = "
