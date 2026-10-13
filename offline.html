@@ -96,6 +96,35 @@
   body.hasbk .app{padding-right:calc(70px + env(safe-area-inset-right))}
   @media (max-width:899px){ body.hasbk .app{padding-right:calc(56px + env(safe-area-inset-right))} }
 
+  /* search — find a station by its stem, its diagnosis, its file name or its card number */
+  .search{position:relative;margin:0 0 10px;scroll-margin-top:8px}
+  .search .sbox{display:flex;align-items:center;gap:8px;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:0 5px 0 12px}
+  .search .sbox:focus-within{border-color:var(--ink-3)}
+  .search .sbox svg{flex:none;width:17px;height:17px;stroke:var(--ink-3);fill:none;stroke-width:2.2;stroke-linecap:round}
+  .search input{flex:1;min-width:0;border:0;outline:0;background:none;font-family:inherit;font-size:16px;line-height:1.4;color:var(--ink);padding:11px 0;margin:0;border-radius:0;-webkit-appearance:none;appearance:none}
+  .search input::placeholder{color:var(--ink-3)}
+  .search input::-webkit-search-cancel-button,.search input::-webkit-search-decoration{-webkit-appearance:none;display:none}
+  .search .sx{min-height:36px;width:36px;border-radius:8px;color:var(--ink-3);font-size:21px;line-height:1}
+  .search .sx[hidden]{display:none}
+  .sres{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:8;background:var(--card);border:1.5px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.16);overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;max-height:60vh}
+  .sres[hidden]{display:none}
+  .sres .shead{padding:8px 12px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .sres .snone{padding:14px 12px 16px;font-size:14.5px;color:var(--ink-2)}
+  .sres .smore{padding:10px 12px;font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line)}
+  .sres .sr{display:grid;grid-template-columns:86px minmax(0,1fr);gap:2px 10px;width:100%;text-align:left;padding:9px 12px;border-top:1px solid var(--line);align-items:start}
+  .sres .sr.sel{background:#EEF1EC}
+  @media (hover:hover){ .sres .sr:hover{background:#F3F5F1} }
+  .sres .sid{font-size:12.5px;font-weight:700;color:var(--c,var(--ink));font-variant-numeric:tabular-nums;padding-top:2px;white-space:nowrap}
+  .sres .sid small{display:block;font-weight:500;font-size:11px;color:var(--ink-3);white-space:normal}
+  .sres .sstem{display:block;font-family:Georgia,"Times New Roman",serif;font-size:14.5px;line-height:1.4;color:var(--ink)}
+  .sres .sdx{display:block;font-size:13px;line-height:1.4;color:var(--ink-2);margin-top:3px}
+  .sres .sdx i{font-style:normal;font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
+  .sres mark{background:#fff3b0;color:inherit;border-radius:3px;padding:0 1px}
+  @media (max-width:520px){ .sres .sr{grid-template-columns:70px minmax(0,1fr);padding:9px 10px} }
+  .sban{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#EEF1EC;border:1.5px solid var(--line);border-radius:10px;padding:6px 6px 6px 12px;margin:0 0 12px;font-size:13.5px;color:var(--ink-2)}
+  .sban b{color:var(--ink)}
+  .sban button{flex:none;min-height:36px;padding:6px 12px;border-radius:8px;background:var(--ink);color:#fff;font-size:13px;font-weight:600}
+
   /* filters */
   .filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
   .chip{padding:6px 11px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-size:13px;color:var(--ink-2);display:flex;align-items:center;gap:6px}
@@ -249,7 +278,18 @@
 </style>
 </head>
 <body>
-<div class="app" id="app"></div>
+<div class="app" id="app">
+  <div id="appTop"></div>
+  <div class="search" id="search" role="search">
+    <div class="sbox">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+      <input id="q" type="search" placeholder="Search by stem or diagnosis" aria-label="Search stations by stem or diagnosis" aria-controls="sres" aria-expanded="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+      <button class="sx" id="qx" aria-label="Clear search" hidden>&times;</button>
+    </div>
+    <div class="sres" id="sres" role="listbox" aria-label="Matching stations" hidden></div>
+  </div>
+  <div id="appMain"></div>
+</div>
 <aside class="bk" id="bk" hidden aria-label="Backlog"></aside>
 
 <div class="drawer" id="drawer" aria-hidden="true">
@@ -478,7 +518,7 @@ async function syncNow(quiet){
   if(!quiet) setStatus("Syncing…");
   try{
     const n=await syncPull();
-    if(n){ await save(KEY_PROG,progress); buildCards(); buildQueue(); render(); }
+    if(n){ await save(KEY_PROG,progress); buildCards(); if(!searchOn) buildQueue(); render(); }
     await syncPush();
     setStatus(n?("Synced — "+n+" station"+(n===1?"":"s")+" brought in from your other device"):"Synced");
   }catch(e){ setStatus("Sync failed — "+e.message); }
@@ -512,13 +552,157 @@ function buildCards(){
   const map=new Map(BUILTIN.map(c=>[c.id,c]));
   custom.forEach(c=>{ if(c&&c.id) map.set(c.id,c); });
   cards=[...map.values()];
+  buildIndex();
 }
+
+/* ===================== Search =====================
+   Looks at the card number, the stem, the diagnosis (first diagnosis point on the back) and the source file name.
+   Every word typed must be found somewhere on the card. Results rank: card number, diagnosis headline, stem, rest.
+   The diagnosis is shown in a result only when the stem alone would not have matched, so a stem search does not spoil the card.
+   Opening a result makes the matches the queue; "Back to the deck" puts the previous queue back where it was. */
+let sindex=[], searchQ="", searchOpen=false, searchHits=[], searchRe=null, searchToks=[], searchSel=0;
+let searchOn=false, searchLabel="", searchSaved=null, searchRated=new Set();
+const SEARCH_SHOW=60;
+const _plain=s=>String(s==null?"":s).replace(/\*+/g,"").replace(/\s+/g," ").trim();
+function buildIndex(){
+  sindex=cards.map(c=>{
+    const b=c.back||{}, dx=_plain(Array.isArray(b.dx)?b.dx[0]:b.dx);
+    let head=dx.split(" \u2014 ")[0];
+    if(head.length>90){ const m=head.search(/[.!?](\s|$)/); if(m>=12) head=head.slice(0,m); }
+    const stem=_plain((c.stem||[]).join(" "));
+    const file=_plain(String(c.source||"").replace(/_/g," ").replace(/\.pdf\b/gi,"").replace(/ (?:2 )?Case Tasks(?: Script)?\b/gi,"").replace(/ Notability\b/gi,""));
+    const id=String(c.id||"");
+    return {c,id,idl:id.toLowerCase(),stem,dx,head,file,all:id+" "+stem+" "+dx+" "+file};
+  });
+}
+function runSearch(q){
+  searchToks=String(q||"").trim().toLowerCase().split(/\s+/).filter(t=>/[a-z0-9]/.test(t)).slice(0,8);
+  searchHits=[]; searchRe=null;
+  if(!searchToks.length) return;
+  /* short words must start a word (so "pe" does not light up "inspection"); an "e" also matches "ae"/"oe",
+     so anemia, diarrhea, celiac and pediatric find the Australian spellings */
+  const pats=searchToks.map(t=>(t.length<=3&&/^[a-z0-9]/.test(t)?"\\b":"")+t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&").replace(/['\u2018\u2019]/g,"['\u2018\u2019]").replace(/e/g,"(?:ae|oe|e)"));
+  const res=pats.map(p=>new RegExp(p,"i"));
+  searchRe=new RegExp(pats.join("|"),"gi");
+  const all=s=>res.every(r=>r.test(s));
+  /* within a rank, a whole-word hit beats a word that merely starts with what was typed: "PE" before "penicillin" */
+  const whole=pats.map((p,k)=>new RegExp((/^[a-z0-9]/.test(searchToks[k])&&p.slice(0,2)!=="\\b"?"\\b":"")+p+(/[a-z0-9]$/.test(searchToks[k])?"\\b":""),"i"));
+  const allWhole=s=>whole.every(r=>r.test(s));
+  const hasDigit=searchToks.some(t=>/\d/.test(t)), idq=searchToks.join("").replace(/[^a-z0-9]/g,"");
+  for(const e of sindex){
+    let tier, field=null;
+    if(hasDigit&&(searchToks.every(t=>e.idl.includes(t))||e.idl.replace(/[^a-z0-9]/g,"").indexOf(idq)===0)) tier=0;
+    else if(all(e.head)){ tier=1; field=e.head; }
+    else if(all(e.stem)){ tier=2; field=e.stem; }
+    else if(all(e.dx)){ tier=3; field=e.dx; }
+    else if(all(e.all)){ tier=4; field=e.all; }
+    else continue;
+    if(field!==null) tier+=allWhole(field)?0:0.5;
+    /* which extra lines the result needs: words the stem (and card number) do not contain */
+    const miss=res.filter((r,k)=>!r.test(e.stem)&&!e.idl.includes(searchToks[k]));
+    const showDx=miss.some(r=>r.test(e.dx)), showFile=miss.some(r=>!r.test(e.dx)&&r.test(e.file));
+    searchHits.push({e,tier,showDx,showFile});
+  }
+  searchHits.sort((a,b)=>a.tier-b.tier||a.e.id.localeCompare(b.e.id,undefined,{numeric:true}));
+}
+function _snip(text,max){
+  if(text.length<=max) return text;
+  const m=searchRe?text.search(new RegExp(searchRe.source,"i")):-1;
+  if(m<0||m<max-24) return text.slice(0,max).replace(/\s+\S*$/,"")+"\u2026";
+  let st=Math.max(0,m-Math.floor(max/3)); const sp=text.indexOf(" ",st); if(sp>-1&&sp<m) st=sp+1;
+  const out=text.slice(st,st+max);
+  return "\u2026"+(st+max<text.length?out.replace(/\s+\S*$/,"")+"\u2026":out);
+}
+function _mark(text){
+  if(!searchRe) return esc(text);
+  let out="", last=0, m; searchRe.lastIndex=0;
+  while((m=searchRe.exec(text))){
+    if(m[0]===""){ searchRe.lastIndex++; continue; }
+    out+=esc(text.slice(last,m.index))+"<mark>"+esc(m[0])+"</mark>"; last=m.index+m[0].length;
+  }
+  return out+esc(text.slice(last));
+}
+function paintSearch(){
+  const box=document.getElementById("sres"), inp=document.getElementById("q");
+  document.getElementById("qx").hidden=!searchQ;
+  const open=searchOpen&&!!searchQ.trim();
+  inp.setAttribute("aria-expanded",open?"true":"false");
+  if(!open){ box.hidden=true; box.innerHTML=""; return; }
+  let h="";
+  if(!searchHits.length){
+    h=`<div class="snone">No station matches <b>\u201C${esc(searchQ.trim())}\u201D</b>. Search looks at the stem, the diagnosis, the file name and the card number \u2014 try fewer or shorter words.</div>`;
+  } else {
+    h=`<div class="shead">${searchHits.length} station${searchHits.length===1?"":"s"}</div>`;
+    h+=searchHits.slice(0,SEARCH_SHOW).map((x,i)=>{
+      const e=x.e, cat=CATS[e.c.cat], p=prog(e.id);
+      return `<button class="sr${i===searchSel?" sel":""}" role="option" aria-selected="${i===searchSel}" data-i="${i}" style="--c:${cat?cat.color:"var(--ink-3)"}">
+        <span class="sid">${_mark(e.id)}<small>${cat?cat.name:esc(e.c.cat||"")}${p.last?" \u00b7 "+p.last:""}</small></span>
+        <span><span class="sstem">${_mark(_snip(e.stem,170))}</span>${x.showDx?`<span class="sdx"><i>Diagnosis</i>${_mark(_snip(e.dx,130))}</span>`:""}${x.showFile?`<span class="sdx"><i>File</i>${_mark(_snip(e.file,110))}</span>`:""}</span></button>`;
+    }).join("");
+    if(searchHits.length>SEARCH_SHOW) h+=`<div class="smore">Showing the first ${SEARCH_SHOW} of ${searchHits.length} \u2014 add a word to narrow it down.</div>`;
+  }
+  box.innerHTML=h; box.hidden=false; sizeSearch();
+}
+/* keep the result list inside what is actually visible — on the iPad the keyboard takes half the screen */
+function sizeSearch(){
+  const box=document.getElementById("sres"); if(!box||box.hidden) return;
+  const vv=window.visualViewport, vh=vv?vv.height:window.innerHeight, top=box.getBoundingClientRect().top-(vv?vv.offsetTop:0);
+  box.style.maxHeight=Math.max(170,Math.min(560,Math.round(vh-top-10)))+"px";
+}
+function closeSearch(){ if(!searchOpen) return; searchOpen=false; paintSearch(); }
+function clearSearchBox(){ searchQ=""; searchOpen=false; searchHits=[]; searchRe=null; const inp=document.getElementById("q"); if(inp) inp.value=""; paintSearch(); }
+function openHit(i){
+  const x=searchHits[i]; if(!x) return;
+  if(!searchOn){ searchSaved={queue,idx}; searchRated=new Set(); }
+  searchOn=true; searchLabel=searchQ.trim();
+  queue=searchHits.map(y=>y.e.c); idx=i; flipped=false; resetTimer();
+  searchOpen=false; paintSearch(); document.getElementById("q").blur();
+  render();
+  const b=document.getElementById("sban"); if(b&&b.scrollIntoView) b.scrollIntoView({block:"nearest"});
+}
+/* leave the search results and put the previous queue back at the card it was on */
+function exitSearch(){
+  if(!searchOn) return;
+  const s=searchSaved; searchOn=false; searchSaved=null; searchLabel="";
+  if(s){
+    /* anything rated while searching has been done — drop it from what is still ahead, unless it was marked Again */
+    queue=s.queue.slice(0,s.idx).concat(s.queue.slice(s.idx).filter(c=>!searchRated.has(c.id)||prog(c.id).last==="again"));
+    idx=Math.min(s.idx,queue.length); flipped=false; resetTimer();
+  } else buildQueue();
+  searchRated=new Set(); clearSearchBox();
+}
+(function wireSearch(){
+  const inp=document.getElementById("q"), box=document.getElementById("sres"), wrap=document.getElementById("search");
+  inp.addEventListener("input",()=>{ searchQ=inp.value; searchOpen=!!searchQ.trim(); searchSel=0; runSearch(searchQ); paintSearch(); box.scrollTop=0; });
+  inp.addEventListener("focus",()=>{
+    if(searchQ.trim()){ searchOpen=true; runSearch(searchQ); paintSearch(); }
+    /* touch devices: lift the box to the top so the results are not hidden behind the keyboard */
+    if(window.matchMedia("(pointer:coarse)").matches) setTimeout(()=>{ try{ wrap.scrollIntoView({block:"start"}); }catch(e){} sizeSearch(); },250);
+  });
+  inp.addEventListener("keydown",e=>{
+    const n=Math.min(searchHits.length,SEARCH_SHOW);
+    if(e.key==="ArrowDown"||e.key==="ArrowUp"){
+      if(!searchOpen||!n) return;
+      e.preventDefault(); searchSel=(searchSel+(e.key==="ArrowDown"?1:n-1))%n; paintSearch();
+      const s=box.querySelector(".sr.sel"); if(s&&s.scrollIntoView) s.scrollIntoView({block:"nearest"});
+    }
+    else if(e.key==="Enter"){ e.preventDefault(); if(!searchOpen&&searchQ.trim()){ searchOpen=true; runSearch(searchQ); paintSearch(); } else if(n) openHit(searchSel); }
+    else if(e.key==="Escape"){ e.preventDefault(); if(searchOpen&&searchQ.trim()) closeSearch(); else { clearSearchBox(); inp.blur(); } }
+  });
+  box.addEventListener("click",e=>{ const b=e.target.closest?e.target.closest(".sr"):null; if(b) openHit(+b.dataset.i); });
+  document.getElementById("qx").addEventListener("click",()=>{ clearSearchBox(); inp.focus(); });
+  document.addEventListener("pointerdown",e=>{ if(searchOpen&&!wrap.contains(e.target)) closeSearch(); });
+  if(window.visualViewport) window.visualViewport.addEventListener("resize",sizeSearch);
+  window.addEventListener("resize",sizeSearch);
+})();
+
 function prog(id){ return progress[id]||{reps:0,ease:2.5,interval:0,due:null,last:null,seen:0}; }
 function isDue(c){ const p=prog(c.id); return !p.due || p.due<=today(); }
 function isHard(c){ const p=prog(c.id); return p.last==="again"||p.last==="hard"; }
 function isOk(c){ const p=prog(c.id); return p.last==="good"||p.last==="easy"; }
 
 function buildQueue(){
+  if(searchOn){ searchOn=false; searchSaved=null; searchLabel=""; searchRated=new Set(); clearSearchBox(); }
   let list=cards.filter(c=>catSel.has(c.cat));
   if(mode==="due") list=list.filter(isDue);
   else if(mode==="hard") list=list.filter(isHard);
@@ -539,6 +723,7 @@ function rate(r){
   const d=new Date(); d.setDate(d.getDate()+interval);
   progress[c.id]={reps:p.reps+1,ease,interval,due:interval===0?today():localDay(d),last:r,seen:(p.seen||0)+1,at:new Date().toISOString()};
   save(KEY_PROG,progress); markToday(); syncSoon();
+  if(searchOn) searchRated.add(c.id);
   // Again keeps the card in this session: move it to the end of the queue
   if(r==="again"){ queue.push(queue.splice(idx,1)[0]); }
   else { idx++; }
@@ -596,7 +781,7 @@ function startTimer(){
 }
 function pauseTimer(){ if(timerId){ remaining=Math.max(0,Math.round((endAt-Date.now())/1000)); } clearInterval(timerId); timerId=null; endAt=null; releaseWake(); render(); }
 
-/* Keyboard shortcuts for desktop Chrome: space = start/pause, enter = turn card, 1–4 = rate, ← → = previous/skip */
+/* Keyboard shortcuts for desktop Chrome: space = start/pause, enter = turn card, 1–4 = rate, ← → = previous/skip, / = search */
 document.addEventListener("keydown",e=>{
   if(document.getElementById("drawer").classList.contains("open")) return;
   if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName)) return;
@@ -605,6 +790,7 @@ document.addEventListener("keydown",e=>{
   else if(/^[1-4]$/.test(e.key)&&flipped){ rate(["again","hard","good","easy"][+e.key-1]); }
   else if(e.key==="ArrowLeft"){ const b=document.getElementById("prev"); if(b&&!b.disabled) b.click(); }
   else if(e.key==="ArrowRight"){ const b=document.getElementById("skip"); if(b&&!b.disabled) b.click(); }
+  else if(e.key==="/"){ e.preventDefault(); document.getElementById("q").focus(); }
 });
 function fmt(s){ return String(Math.floor(s/60)).padStart(1,"0")+":"+String(s%60).padStart(2,"0"); }
 function updateTimerUI(){
@@ -649,12 +835,15 @@ function render(){
   let h=examHTML()+`<div class="goal${doneToday()>=dailyGoal()?" done":""}" id="goal">${goalHTML()}</div>`;
   h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile &middot; ${cards.filter(isOk).length} good or easy</div></div>
     <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
+  const hTop=h; h="";
   h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
-  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"?"on":""}">Good &amp; easy</button><button data-mode="all" class="${mode==="all"?"on":""}">All</button></div>`;
+  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button></div>`;
+  if(searchOn) h+=`<div class="sban" id="sban"><span>Search results for <b>\u201C${esc(searchLabel)}\u201D</b> &middot; ${queue.length} station${queue.length===1?"":"s"}</span><button id="sExit">Back to the deck</button></div>`;
 
   const c=queue[idx];
   if(!c){
     const msg = cards.length===0 ? "No stations yet. Open settings to add a block." :
+      searchOn ? "That is the end of the search results. Use Back to the deck to pick up where you were." :
       mode==="due" ? "Nothing due in the selected categories. Switch to All to keep practising, or come back tomorrow." :
       mode==="hard" ? "The hard pile is empty for these categories." :
       mode==="ok" ? "Nothing marked good or easy in these categories yet." : "No stations in the selected categories.";
@@ -667,7 +856,7 @@ function render(){
               timerId?`<button class="btn ghost" id="pause">Pause</button>`:`<button class="btn" id="start">${remaining<phaseTotal()?"Resume":phase==="prep"?"Start 2-minute reading":"Start 8 minutes"}</button>`}
             ${phase==="prep"&&!timerDone?`<button class="btn ghost" id="skipRead">Skip reading — start 8 minutes</button>`:""}
             <button class="btn ghost" id="reset">Reset timer</button>
-            ${opts.study&&!timerDone?`<button class="btn ghost" id="flip">Turn the card now</button>`:""}
+            ${(opts.study||searchOn)&&!timerDone?`<button class="btn ghost" id="flip">Turn the card now</button>`:""}
           </div></div>
         <div class="marks">${opts.prep?"2-minute reading · ":""}${c.promptAt?`Prompt at ${fmt(c.promptAt)} · `:c.promptBell?"Prompt bell at 5:00 · ":""}Two-minute warning at 6:00 · Finish at 8:00${opts.bell?"":" (bells off)"}</div>`;
     const rateHtml=`<div class="rate">
@@ -720,7 +909,8 @@ function render(){
     }
   }
   h+=`<div class="status"><span id="statusMsg">${hasStore?"Progress saves automatically":"Storage unavailable — progress will not persist"}</span><span>${today()}</span></div>`;
-  app.innerHTML=h;
+  document.getElementById("appTop").innerHTML=hTop;
+  document.getElementById("appMain").innerHTML=h;
   app.classList.toggle("hasbar",!!document.getElementById("bar"));
 
   // wire
@@ -737,6 +927,7 @@ function render(){
   on("skip",()=>{ if(idx<queue.length-1){ idx++; flipped=false; resetTimer(); render(); } });
   app.querySelectorAll(".rate button").forEach(b=>b.onclick=()=>rate(b.dataset.r));
   on("gear",openDrawer);
+  on("sExit",()=>{ exitSearch(); render(); });
   updateTimerUI();
   paintBacklog();
 }
