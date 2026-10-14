@@ -143,6 +143,9 @@
   .idn{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
   .stem{font-family:Georgia,"Times New Roman",serif;font-size:17.5px;line-height:1.5;margin:0 0 14px;color:var(--ink)}
   .stem p{margin:0 0 10px}
+  .stem p{white-space:pre-line}
+  .stem p.ver{margin:16px 0 12px;padding:8px 0 2px 12px;border-left:3px solid var(--c,var(--ink-3))}
+  .stem p.ver .vlab{display:block;font-family:-apple-system,system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c,var(--ink));margin-bottom:4px}
   .setting{font-family:Georgia,serif;font-size:14.5px;color:var(--ink-2);margin-bottom:8px}
   .tasks{margin:0 0 6px;padding:0;list-style:none;counter-reset:t}
   .tasks li{position:relative;padding:6px 0 6px 30px;border-top:1px solid var(--line);font-size:15.5px;counter-increment:t}
@@ -809,6 +812,7 @@ function updateTimerUI(){
 
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const stemP=s=>{const m=String(s).match(/^(Version\s+[A-Z0-9]{1,3}(?:\s*\([^)]{1,40}\))?)\s*[—:–-]\s*([\s\S]*)$/);return m?`<p class="ver"><span class="vlab">${esc(m[1])}</span>${esc(m[2])}</p>`:`<p>${esc(s)}</p>`;};
 const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|[^*\w])\*([^\s*](?:[^*\n]*[^\s*])?)\*(?![*\w])/g,"$1<i>$2</i>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
@@ -874,7 +878,7 @@ function render(){
     h+=`<div class="cols"><div class="main"><div class="station" style="--c:${col}">
       <div class="meta"><span class="cat">${CATS[c.cat]?CATS[c.cat].name:c.cat}</span><span class="idn">${esc(c.id)} · ${idx+1} of ${queue.length}${p.seen?` · seen ${p.seen}×`:""}</span></div>`;
     if(!flipped){
-      h+=`<div class="stem">${(c.stem||[]).map(s=>`<p>${esc(s)}</p>`).join("")}</div>
+      h+=`<div class="stem">${(c.stem||[]).map(stemP).join("")}</div>
         <ol class="tasks">${(c.tasks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ol>
         ${c.findings?`<details class="peF"><summary>${esc(c.findingsLabel||"Examination findings — open only when you would ask the examiner")}</summary><table class="peFt">${c.findings.map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</table></details>`:""}
         ${wide?"":timerHtml}`;
