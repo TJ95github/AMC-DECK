@@ -222,6 +222,14 @@
   .mnem th{max-width:38%}
   @media (max-width:640px){.mnem th{white-space:normal;width:32%;min-width:92px;overflow-wrap:anywhere;hyphens:auto}.mnem table{table-layout:fixed}.mnem td{overflow-wrap:anywhere}}
   .mnem .mnote{font-size:12.5px;color:#3b5573;margin:8px 0 0;line-height:1.45}
+  .mnem.interp{border-color:#15803d;background:#f0fdf4}
+  .mnem.interp h3,.mnem.interp th,.mnem.interp td b{color:#166534}
+  .mnem.interp th,.mnem.interp td{border-top-color:#bbf7d0}
+  .mnem.interp tr.msub th{color:#15803d}
+  .mnem.interp tr.msub td{background:#f7fdf9}
+  .mnem.interp tr.msub th,.mnem.interp tr.msub td{border-top-color:#dcfce7}
+  .mnem.interp td{color:#14281c}
+  .mnem.interp .mnote{color:#29573a}
   .cimg{margin:0 0 14px;padding:0}
   .cimg img{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;border:1px solid #cbd5e1;background:#000}
   .cimg figcaption{font-size:12.5px;color:#475569;margin:6px 0 0;line-height:1.45}
@@ -890,6 +898,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.interp&&c.interp.rows&&c.interp.rows.length?`<div class="mnem interp"><h3>${esc(c.interp.title||"Reading the results")}</h3><table>${c.interp.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.interp.note?`<p class="mnote">${escb(c.interp.note)}</p>`:""}</div>`:""}
         ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
         ${c.img&&c.img.src?`<figure class="cimg"><img src="${esc(c.img.src)}" alt="${esc(c.img.alt||"Clinical photograph")}">${c.img.caption?`<figcaption>${escb(c.img.caption)}</figcaption>`:""}</figure>`:""}
         ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}

@@ -222,6 +222,14 @@
   .mnem th{max-width:38%}
   @media (max-width:640px){.mnem th{white-space:normal;width:32%;min-width:92px;overflow-wrap:anywhere;hyphens:auto}.mnem table{table-layout:fixed}.mnem td{overflow-wrap:anywhere}}
   .mnem .mnote{font-size:12.5px;color:#3b5573;margin:8px 0 0;line-height:1.45}
+  .mnem.interp{border-color:#15803d;background:#f0fdf4}
+  .mnem.interp h3,.mnem.interp th,.mnem.interp td b{color:#166534}
+  .mnem.interp th,.mnem.interp td{border-top-color:#bbf7d0}
+  .mnem.interp tr.msub th{color:#15803d}
+  .mnem.interp tr.msub td{background:#f7fdf9}
+  .mnem.interp tr.msub th,.mnem.interp tr.msub td{border-top-color:#dcfce7}
+  .mnem.interp td{color:#14281c}
+  .mnem.interp .mnote{color:#29573a}
   .cimg{margin:0 0 14px;padding:0}
   .cimg img{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;border:1px solid #cbd5e1;background:#000}
   .cimg figcaption{font-size:12.5px;color:#475569;margin:6px 0 0;line-height:1.45}
@@ -890,6 +898,7 @@ function render(){
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
+        ${c.interp&&c.interp.rows&&c.interp.rows.length?`<div class="mnem interp"><h3>${esc(c.interp.title||"Reading the results")}</h3><table>${c.interp.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.interp.note?`<p class="mnote">${escb(c.interp.note)}</p>`:""}</div>`:""}
         ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
         ${c.img&&c.img.src?`<figure class="cimg"><img src="${esc(c.img.src)}" alt="${esc(c.img.alt||"Clinical photograph")}">${c.img.caption?`<figcaption>${escb(c.img.caption)}</figcaption>`:""}</figure>`:""}
         ${c.versions&&c.versions.rows&&c.versions.rows.length?`<div class="vers"><h3>Versions this stem has produced</h3>${c.versions.doorStem?`<p class="door"><b>On the door:</b> ${esc(c.versions.doorStem)}</p>`:""}<table>${c.versions.rows.map(([v,clue,dx])=>`<tr class="${c.versions.thisCard&&v.split(" ")[0]===c.versions.thisCard?"thisv":""}"><th>${escb(v)}</th><td>${escb(clue)}</td><td class="dxc">${escb(dx)}</td></tr>`).join("")}</table>${c.versions.note?`<p class="vnote">${esc(c.versions.note)}</p>`:""}</div>`:""}
@@ -19149,6 +19158,56 @@ const EMBEDDED_CARDS = [
    "ASK — What have you already been told, and what were you hoping to get out of today?",
    "ASK — Show me how you use it. Technique matters more than which brand it is."
   ],
+  "interp": {
+   "title": "Reading the results — spirometry in 4 · ABG in 5",
+   "rows": [
+    [
+     "SPIRO",
+     "Ratio → severity → reversibility → FVC. **Always read the POST-bronchodilator numbers.**"
+    ],
+    [
+     " 1 · Ratio",
+     "FEV1/FVC **below 0.70** (or below LLN) = **obstruction**. Normal or high ratio with a low FVC → think restriction. → **0.68 post: obstructive**"
+    ],
+    [
+     " 2 · Severity",
+     "**Post-BD FEV1 % predicted:** ≥80 mild · 50–79 moderate · 30–49 severe · <30 very severe. → **1.64 / 2.60 = 63%: moderate (GOLD 2)**"
+    ],
+    [
+     " 3 · Reversible?",
+     "Significant = **≥12% AND ≥200 mL.** → **+120 mL (≈8%): not reversible → fixed obstruction = COPD**, not asthma"
+    ],
+    [
+     " 4 · FVC",
+     "Low FVC in obstruction = **air trapping.** Spirometry cannot diagnose restriction — **that needs TLC.** → **2.42 / 3.40 = 71%: reduced, likely trapping**"
+    ],
+    [
+     "ABG",
+     "pH → which value matches → acute or chronic → oxygen → A–a gradient."
+    ],
+    [
+     " 1 · pH",
+     "Below 7.35 acidaemia · above 7.45 alkalaemia. → **7.33: acidaemia**"
+    ],
+    [
+     " 2 · Which matches?",
+     "High CO2 + acid = **respiratory**; low HCO3 + acid = **metabolic.** The value moving the other way is compensation. → **CO2 58 explains it: respiratory acidosis**; HCO3 30 = kidneys compensating"
+    ],
+    [
+     " 3 · Acute or chronic?",
+     "Per 10 mmHg of CO2 above 40: **acute HCO3 +1, pH −0.08 · chronic HCO3 +4, pH −0.03.** → CO2 +18: expect HCO3 ≈ 31 if chronic → **chronic** (pH a touch low — consider acute-on-chronic)"
+    ],
+    [
+     " 4 · Oxygen",
+     "Below 80 = hypoxaemia. **Type 1 = low O2, CO2 normal or low · Type 2 = low O2 + CO2 above 45.** → **PaO2 62 + CO2 58: type 2 (hypercapnic) failure**"
+    ],
+    [
+     " 5 · A–a gradient",
+     "PAO2 ≈ 150 − PaCO2/0.8; gradient = PAO2 − PaO2 (normal ≈ age/4 + 4). Normal = **hypoventilation**; wide = V/Q mismatch, shunt or diffusion. → **77 − 62 = 15: normal → hypoventilation**"
+    ]
+   ],
+   "note": "**Does it fit?** Chronic CO2 retention is usually severe COPD (FEV1 below 50%) — at 63% with BMI 32, ask about **sleep apnoea / obesity hypoventilation** and sedatives. **Oxygen target SpO2 88–92%.** The stem's '+3%' works out at 120 / 1520 ≈ 8% — still not reversible."
+  },
   "back": {
    "dx": [
     "**COPD, confirmed on POST-bronchodilator spirometry, with a partially compensated CHRONIC respiratory acidosis — type 2 respiratory failure.** **Persistent respiratory symptoms with airflow limitation that is not fully reversible.** Emphysema and chronic bronchitis both sit under COPD and **are managed identically.**",
@@ -64319,7 +64378,7 @@ const EMBEDDED_CARDS = [
     ],
     [
      "Look (0:40)",
-     "General appearance · **no pallor · preserved flexed resting cascade** · name the dressing and **LEAVE IT** (and any glass) — 'the surgical team will look underneath'"
+     "General appearance → **the 4 Ps:** **P**ain — in distress? · **P**rotective posture — guarding, cradling the arm? · ★ **P**allor — none · ★ **P**reserved flexed resting cascade — symmetrical · name the dressing and **LEAVE IT** (and any glass) — 'the surgical team will look underneath'"
     ],
     [
      "Feel (1:30)",
@@ -64327,27 +64386,27 @@ const EMBEDDED_CARDS = [
     ],
     [
      "Move = the special test ★ (2:20)",
-     "**'The tendons crossing a volar wound are the flexors — five isolated movements, each named'** — count them on your fingers:"
+     "**'The tendons crossing a volar wound are the flexors — five isolated movements, each named'** — count them on your fingers: ★ **‘Chefs Can't Prep Sushi Properly’** — **C**arpi · **C**ombined · **P**rofundus · **S**uperficialis · **P**ollicis (deep goes to the tip, superficial stops in the middle)"
     ],
     [
      " 1 · Wrist flexion",
-     "→ **FCR / FCU**"
+     "**C**arpi → **FCR / FCU**"
     ],
     [
      " 2 · Fist",
-     "★ **'That is a screening test only — it does not exclude an isolated tendon injury'**"
+     "**C**ombined (FDS + FDP together) → ★ **'That is a screening test only — it does not exclude an isolated tendon injury'**"
     ],
     [
      " 3 · Block the PIPs",
-     "Bend just the tips → **FDP**"
+     "Bend just the tips → **P**rofundus (**FDP**) — deep, so it reaches the tip (DIP)"
     ],
     [
      " 4 · Three fingers flat",
-     "Bend the free middle finger → **FDS**"
+     "Bend the free middle finger → **S**uperficialis (**FDS**) — surface, stops at the middle joint (PIP)"
     ],
     [
      " 5 · Thumb IP ★ (4:10)",
-     "Hold the base, 'bend the tip … and again' → fails → ★ **'The patient is unable to perform that movement, so I am concerned about an injury to that tendon'** — **flexor pollicis longus**"
+     "Hold the base, 'bend the tip … and again' → fails → ★ **'The patient is unable to perform that movement, so I am concerned about an injury to that tendon'** — **P**ollicis → **flexor pollicis longus**"
     ],
     [
      "Nerves (4:40)",
@@ -131158,19 +131217,23 @@ const EMBEDDED_CARDS = [
   ],
   "v2": true,
   "mnem": {
-   "title": "Spirometry — the ratio decides the branch",
+   "title": "History — COFFEE, then HAMS → spirometry: the ratio decides the branch",
    "rows": [
     [
      "Open (0:00)",
      "**Report face down** → ‘I'd like to ask a few questions about the cough first, then go through the results.’"
     ],
     [
-     "History — variability ★ (0:30)",
-     "**Comes and goes?** · ★ **how many nights a week** · exercise · triggers · wheeze · **the holiday / days-off question**"
+     "History — COFFEE ★ (0:30)",
+     "**C**ough pattern — comes and goes? dry? · **O**ften — how many days a week · ★ **F**requency at night — **how many nights a week** · **F**itness — exercise, after running · **E**xposure / triggers — cold air, dust, pets, infections · **E**xpiratory wheeze / whistling"
     ],
     [
-     "Background",
-     "Atopy, family history · smoking, vaping · medications incl. **eye drops, NSAIDs** · ★ **previous ICU, intubation, oral steroids** · **‘what are you worried about?’** (her nan's emphysema)"
+     "then HAMS ★ (2:00)",
+     "★ **H**oliday / days off — better away from work (childcare), school, home? · **A**topy — eczema, hay fever, personal + family history · **M**edicines — **aspirin / NSAIDs, eye drops** · **S**moke / vape exposure · ★ **S**everity history — **ED or hospital, ICU, intubation, oral steroids**"
+    ],
+    [
+     "+ Worry",
+     "**‘What are you worried about?’** (her nan's emphysema) → then turn the report over"
     ],
     [
      "0 · The test (3:00)",
@@ -131209,7 +131272,7 @@ const EMBEDDED_CARDS = [
      "Review 4–6 weeks · reliever rising, more night waking, breathless at rest, can't finish a sentence → same day or ED · summarise · teach-back: ‘what would you tell your partner tonight?’"
     ]
    ],
-   "note": "**Ratio → branch → reversibility spoken in litres.** Fail = reversibility from % predicted, or no arithmetic at all · a normal chart used to rule asthma out · reliever-only plan, no spacer demo, or no written action plan · prescribing without asking about ICU, intubation or oral steroids."
+   "note": "**Ask about COFFEE, then HAMS.** **Ratio → branch → reversibility spoken in litres.** Fail = reversibility from % predicted, or no arithmetic at all · a normal chart used to rule asthma out · reliever-only plan, no spacer demo, or no written action plan · prescribing without asking about ICU, intubation or oral steroids."
   }
  },
  {
