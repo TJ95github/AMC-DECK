@@ -720,6 +720,7 @@ function buildQueue(){
   if(mode==="due") list=list.filter(isDue);
   else if(mode==="hard") list=list.filter(isHard);
   else if(mode==="ok") list=list.filter(isOk);
+  else if(mode==="nothard") list=list.filter(c=>!isHard(c));
   if(opts.shuffle){ for(let i=list.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [list[i],list[j]]=[list[j],list[i]]; } }
   else list.sort((a,b)=>a.id.localeCompare(b.id));
   queue=list; idx=0; flipped=false; resetTimer();
@@ -851,7 +852,7 @@ function render(){
     <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
   const hTop=h; h="";
   h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
-  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button></div>`;
+  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="nothard" class="${mode==="nothard"&&!searchOn?"on":""}">Not hard</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button></div>`;
   if(searchOn) h+=`<div class="sban" id="sban"><span>Search results for <b>\u201C${esc(searchLabel)}\u201D</b> &middot; ${queue.length} station${queue.length===1?"":"s"}</span><button id="sExit">Back to the deck</button></div>`;
 
   const c=queue[idx];
@@ -860,7 +861,8 @@ function render(){
       searchOn ? "That is the end of the search results. Use Back to the deck to pick up where you were." :
       mode==="due" ? "Nothing due in the selected categories. Switch to All to keep practising, or come back tomorrow." :
       mode==="hard" ? "The hard pile is empty for these categories." :
-      mode==="ok" ? "Nothing marked good or easy in these categories yet." : "No stations in the selected categories.";
+      mode==="ok" ? "Nothing marked good or easy in these categories yet." :
+      mode==="nothard" ? "Every station in these categories is in the hard pile." : "No stations in the selected categories.";
     h+=`<div class="empty">${msg}</div>`;
   } else {
     const col=CATS[c.cat]?CATS[c.cat].color:"var(--ink-3)", p=prog(c.id);
