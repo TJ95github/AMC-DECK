@@ -146,6 +146,16 @@
   .stem p{white-space:pre-line}
   .stem p.ver{margin:16px 0 12px;padding:8px 0 2px 12px;border-left:3px solid var(--c,var(--ink-3))}
   .stem p.ver .vlab{display:block;font-family:-apple-system,system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c,var(--ink));margin-bottom:4px}
+  .tested{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 14px;padding:9px 12px;border-radius:10px;background:color-mix(in srgb,var(--c,var(--ink-3)) 12%,transparent);border:1px solid color-mix(in srgb,var(--c,var(--ink-3)) 45%,transparent);font-family:-apple-system,system-ui,sans-serif;font-size:14px;line-height:1.35;color:var(--ink)}
+  .tested b{color:var(--c,var(--ink));font-weight:800;letter-spacing:.02em}
+  .tested .also{font-size:12.5px;color:var(--ink-2)}
+  .stem p.ver.tv{border-left-width:6px;background:color-mix(in srgb,var(--c,var(--ink-3)) 8%,transparent);border-radius:0 8px 8px 0;padding-right:8px}
+  .stem p.ver .vtag{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:999px;font-size:10.5px;letter-spacing:.05em;vertical-align:1px;background:var(--c,var(--ink));color:#fff}
+  .stem p.ver.av .vtag{background:transparent;color:var(--ink-2);border:1px solid var(--line)}
+  .stem p.ver.ov{opacity:.5;border-left-style:dashed}
+  .stem p.ver.ov .vtag{background:transparent;color:var(--ink-3);border:1px solid var(--line)}
+  .stem p.mainv{border-left:6px solid var(--c,var(--ink-3));padding-left:12px;background:color-mix(in srgb,var(--c,var(--ink-3)) 8%,transparent);border-radius:0 8px 8px 0}
+  .tasks li.ov{opacity:.5}
   .setting{font-family:Georgia,serif;font-size:14.5px;color:var(--ink-2);margin-bottom:8px}
   .tasks{margin:0 0 6px;padding:0;list-style:none;counter-reset:t}
   .tasks li{position:relative;padding:6px 0 6px 30px;border-top:1px solid var(--line);font-size:15.5px;counter-increment:t}
@@ -821,7 +831,20 @@ function updateTimerUI(){
 
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const stemP=s=>{const m=String(s).match(/^(Version\s+[A-Z0-9]{1,3}(?:\s*\([^)]{1,40}\))?)\s*[—:–-]\s*([\s\S]*)$/);return m?`<p class="ver"><span class="vlab">${esc(m[1])}</span>${esc(m[2])}</p>`:`<p>${esc(s)}</p>`;};
+const VRE=/^(Version\s+([A-Z0-9]{1,3})(?:\s*\([^)]{1,40}\))?)\s*[—:–-]\s*([\s\S]*)$/;
+const testedOf=c=>{const t=c&&c.tested; if(!t||!Array.isArray(t.v)) return null; return {v:new Set(t.v),also:new Set(t.also||[])};};
+const stemP=(s,T)=>{const m=String(s).match(VRE);
+  if(!m){ return T&&T.v.has("main")?`<p class="mainv">${esc(s)}</p>`:`<p>${esc(s)}</p>`; }
+  const L=m[2]; let cls="ver", tag="";
+  if(T){ if(T.v.has(L)){cls+=" tv";tag=T.v.size>1?"on this card":"tested on this card";} else if(T.also.has(L)){cls+=" av";tag="also on the back";} else {cls+=" ov";tag="other recall";} }
+  return `<p class="${cls}"><span class="vlab">${esc(m[1])}${tag?`<span class="vtag">${tag}</span>`:""}</span>${esc(m[3])}</p>`;};
+const vList=a=>a.length<2?"Version "+a[0]:"Versions "+a.slice(0,-1).join(", ")+" and "+a[a.length-1];
+const testedHTML=c=>{const t=c.tested; if(!t||!Array.isArray(t.v)) return "";
+  const main=t.v[0]==="main", also=(t.also||[]).length?`<span class="also">${vList(t.also)} ${t.also.length>1?"are":"is"} also answered on the back</span>`:"";
+  if(main) return `<div class="tested">Tested on this card: <b>the main stem</b>${also}</div>`;
+  if(t.v.length>1) return `<div class="tested">This card covers <b>${vList(t.v)}</b> — the back answers each${also}</div>`;
+  return `<div class="tested">Tested on this card: <b>${vList(t.v)}</b>${also}</div>`;};
+const taskLi=(t,T)=>{const m=String(t).match(/^Version\s+([A-Z0-9]{1,3})\s*:/); const o=T&&m&&!T.v.has(m[1])&&!T.also.has(m[1]); return `<li${o?' class="ov"':""}>${esc(t)}</li>`;};
 const escb=s=>esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|[^*\w])\*([^\s*](?:[^*\n]*[^\s*])?)\*(?![*\w])/g,"$1<i>$2</i>");
 function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.textContent=m; }
 
@@ -888,8 +911,9 @@ function render(){
     h+=`<div class="cols"><div class="main"><div class="station" style="--c:${col}">
       <div class="meta"><span class="cat">${CATS[c.cat]?CATS[c.cat].name:c.cat}</span><span class="idn">${esc(c.id)} · ${idx+1} of ${queue.length}${p.seen?` · seen ${p.seen}×`:""}</span></div>`;
     if(!flipped){
-      h+=`<div class="stem">${(c.stem||[]).map(stemP).join("")}</div>
-        <ol class="tasks">${(c.tasks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ol>
+      const TV=testedOf(c);
+      h+=`${testedHTML(c)}<div class="stem">${(c.stem||[]).map(x=>stemP(x,TV)).join("")}</div>
+        <ol class="tasks">${(c.tasks||[]).map(t=>taskLi(t,TV)).join("")}</ol>
         ${c.findings?`<details class="peF"><summary>${esc(c.findingsLabel||"Examination findings — open only when you would ask the examiner")}</summary><table class="peFt">${c.findings.map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</table></details>`:""}
         ${wide?"":timerHtml}`;
     } else {
