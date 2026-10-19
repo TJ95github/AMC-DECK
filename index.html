@@ -356,7 +356,7 @@ let BUILTIN = [];
 
 /* ===================== State & storage ===================== */
 const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync", KEY_DAYS="amc_osce_days";
-let progress={}, custom=[], days={}, opts={bell:true, study:false, shuffle:false, prep:true, goal:60, debtFrom:null};
+let progress={}, custom=[], days={}, opts={bell:true, study:false, shuffle:false, prep:true, goal:60, goalFrom:null, debtFrom:null};
 let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
 let timerId=null, remaining=480, timerDone=false, fired={}, phase="station";
 const PREP=120, STATION=480;
@@ -410,7 +410,17 @@ function doneToday(){
   Object.values(progress).forEach(p=>{ if(p&&p.at&&localDay(new Date(p.at))===t) n++; });
   return n;
 }
-function dailyGoal(){ return Math.max(1,parseInt(opts.goal,10)||60); }
+/* Daily target by date. Past days keep the target that applied to them, so the
+   backlog ledger is not rewritten when the target changes. Built-in steps apply
+   on every device; a target typed in settings applies from the day it is typed. */
+const GOAL_STEPS=[["2026-10-20",150]];   /* 60 a day before this, 150 a day from 20 Oct 2026 */
+function goalFor(day){
+  day=day||today(); let g=60, from="";
+  GOAL_STEPS.forEach(([d,v])=>{ if(d<=day&&d>=from){ g=v; from=d; } });
+  if(opts.goalFrom&&opts.goalFrom<=day&&opts.goalFrom>=from&&opts.goal) g=opts.goal;
+  return Math.max(1,parseInt(g,10)||60);
+}
+function dailyGoal(){ return goalFor(today()); }
 
 /* ===================== Backlog =====================
    A day that falls short of the target leaves its shortfall behind, and the
@@ -429,9 +439,9 @@ function backlogInfo(){
   let carried=0, rows=[], ms=dayMs(from), guard=0;
   while(guard++<600){
     const d=localDay(new Date(ms)); if(d>=t) break;
-    const n=days[d]||0;
-    carried=Math.max(0,carried+(g-n));
-    rows.push([d,n,Math.max(0,g-n)]);
+    const n=days[d]||0, gd=goalFor(d);
+    carried=Math.max(0,carried+(gd-n));
+    rows.push([d,n,Math.max(0,gd-n),gd]);
     ms+=86400000;
   }
   const n=doneToday(), todayLeft=Math.max(0,g-n), surplus=Math.max(0,n-g);
@@ -445,7 +455,7 @@ function backlogHTML(b){
   const g=dailyGoal(), clear=b.owed===0;
   const last=b.rows.slice(-7);
   const ticks=(last.length?last:[["",0,0]]).map(r=>{
-    const h=Math.max(2,Math.round(Math.min(1,(r[1]||0)/g)*22));
+    const h=Math.max(2,Math.round(Math.min(1,(r[1]||0)/(r[3]||g))*22));
     return `<i style="height:22px"><span style="height:${h}px"></span></i>`;
   }).join("");
   const lbl=d=>WD[new Date(dayMs(d)).getUTCDay()]+" "+d.slice(8);
@@ -461,7 +471,7 @@ function backlogHTML(b){
       ${b.carried?`<tr><td class="d">Carried in</td><td>from earlier days</td><td class="s">+${b.carried}</td></tr>`:""}
     </table>
     ${b.surplus?`<div class="paid">&minus;${b.surplus} over target today, paying the pile down</div>`:""}
-    ${b.rows.length?`<h4 style="margin-top:12px">Past days</h4><table>${b.rows.slice().reverse().map(r=>`<tr><td class="d">${lbl(r[0])}</td><td>${r[1]} / ${g}</td><td class="s ${r[2]?"":"z"}">${r[2]?"+"+r[2]:"clear"}</td></tr>`).join("")}</table>`:`<p class="hint">Days that fall short start stacking up here from tomorrow.</p>`}
+    ${b.rows.length?`<h4 style="margin-top:12px">Past days</h4><table>${b.rows.slice().reverse().map(r=>`<tr><td class="d">${lbl(r[0])}</td><td>${r[1]} / ${r[3]||g}</td><td class="s ${r[2]?"":"z"}">${r[2]?"+"+r[2]:"clear"}</td></tr>`).join("")}</table>`:`<p class="hint">Days that fall short start stacking up here from tomorrow.</p>`}
     <p class="hint">Days over the target pay the pile down. Wiping the slate starts the count again from today.</p>
     <div class="bkbtn"><button id="bkClear">Wipe the slate</button><button id="bkClose">Close</button></div></div>`;
 }
@@ -1002,7 +1012,7 @@ document.getElementById("bk").addEventListener("click",e=>{
   if(!bkOpen){ bkOpen=true; paintBacklog(); }
 });
 document.getElementById("optGoal").onchange=e=>{
-  opts.goal=Math.min(500,Math.max(1,parseInt(e.target.value,10)||60));
+  opts.goal=Math.min(500,Math.max(1,parseInt(e.target.value,10)||60)); opts.goalFrom=today();
   e.target.value=opts.goal; save(KEY_OPTS,opts); paintGoal();
 };
 ["optPrep","optBell","optStudy","optShuffle"].forEach(id=>document.getElementById(id).onchange=e=>{ opts[id.slice(3).toLowerCase()]=e.target.checked; save(KEY_OPTS,opts); if(id==="optShuffle") buildQueue(); if(id==="optPrep"&&!timerId&&!flipped) resetTimer(); render(); });
