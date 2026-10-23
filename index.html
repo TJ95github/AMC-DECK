@@ -134,6 +134,14 @@
   .modes{display:flex;gap:6px;margin-bottom:12px}
   .modes button{flex:1;padding:8px 6px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);font-size:13.5px;color:var(--ink-2)}
   .modes button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .modes{flex-wrap:wrap}
+  .modes button.hym{flex:1.6 1 0;white-space:nowrap;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px}
+  .modes button.hym .n{font-size:12px;font-weight:600;opacity:.8;font-variant-numeric:tabular-nums}
+  .modes button.hyme{color:#1E8E5A;border-color:#1E8E5A;background:#EEF8F2}
+  .modes button.hymh{color:#C0182B;border-color:#C0182B;background:#FCEEEF}
+  .modes button.hyme.on{background:#1E8E5A;color:#fff;border-color:#1E8E5A}
+  .modes button.hymh.on{background:#C0182B;color:#fff;border-color:#C0182B}
+  @media (max-width:899px){ .modes button.hym{flex:1 1 calc(50% - 3px)} }
 
   /* the station card */
   .station{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 18px 22px;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.03)}
@@ -989,8 +997,11 @@ function isOk(c){ const p=prog(c.id); return p.last==="good"||p.last==="easy"; }
 
 function buildQueue(){
   if(searchOn){ searchOn=false; searchSaved=null; searchLabel=""; searchRated=new Set(); clearSearchBox(); }
+  if((mode==="hyeasy"||mode==="hyhard")&&!catSel.has("hy")) mode="due";   /* left the High yield cluster */
   let list=cards.filter(c=>catSel.has(c.cat));
-  if(mode==="due") list=list.filter(isDue);
+  if(mode==="hyeasy") list=hyCards().filter(isOk);        /* marked High yield EASY (or good/easy) */
+  else if(mode==="hyhard") list=hyCards().filter(isHard); /* marked High yield HARD (or hard/again) */
+  else if(mode==="due") list=list.filter(isDue);
   else if(mode==="hard") list=list.filter(isHard);
   else if(mode==="ok") list=list.filter(isOk);
   else if(mode==="nothard") list=list.filter(c=>!isHard(c));
@@ -1143,7 +1154,7 @@ function render(){
     const hc=hyCards(), aaa=hc.filter(c=>c.hyTier==="AAA").length;
     h+=`<div class="hybar"><span><b>HIGH yield</b> &middot; <span class="tier aaa">AAA</span> ${aaa} &middot; <span class="tier bb">BB</span> ${hc.length-aaa} &middot; ${hc.filter(isHard).length} hard &middot; ${hc.filter(isOk).length} easy/good &middot; ${hc.filter(c=>!prog(c.id).seen).length} not yet turned</span><button id="hyReset">Reset high yield cluster progress</button></div>`;
   }
-  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="nothard" class="${mode==="nothard"&&!searchOn?"on":""}">Not hard</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button></div>`;
+  h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="nothard" class="${mode==="nothard"&&!searchOn?"on":""}">Not hard</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button><button data-mode="hyeasy" class="hym hyme ${mode==="hyeasy"&&!searchOn?"on":""}">High yield EASY<span class="n">${hyCards().filter(isOk).length}</span></button><button data-mode="hyhard" class="hym hymh ${mode==="hyhard"&&!searchOn?"on":""}">High yield HARD<span class="n">${hyCards().filter(isHard).length}</span></button></div>`;
   if(searchOn) h+=`<div class="sban" id="sban"><span>Search results for <b>\u201C${esc(searchLabel)}\u201D</b> &middot; ${queue.length} station${queue.length===1?"":"s"}</span><button id="sExit">Back to the deck</button></div>`;
 
   const c=queue[idx];
@@ -1153,7 +1164,9 @@ function render(){
       mode==="due" ? "Nothing due in the selected categories. Switch to All to keep practising, or come back tomorrow." :
       mode==="hard" ? "The hard pile is empty for these categories." :
       mode==="ok" ? "Nothing marked good or easy in these categories yet." :
-      mode==="nothard" ? "Every station in these categories is in the hard pile." : "No stations in the selected categories.";
+      mode==="nothard" ? "Every station in these categories is in the hard pile." :
+      mode==="hyeasy" ? "Nothing marked High yield EASY yet." :
+      mode==="hyhard" ? "Nothing marked High yield HARD — the high-yield hard pile is empty." : "No stations in the selected categories.";
     h+=`<div class="empty">${msg}</div>`;
   } else {
     const col=CATS[c.cat]?CATS[c.cat].color:"var(--ink-3)", p=prog(c.id);
@@ -1235,7 +1248,9 @@ function render(){
     buildQueue(); render(); });
   app.querySelectorAll(".hybtn button").forEach(b=>b.onclick=()=>rate(b.dataset.hy));
   { const hr=document.getElementById("hyReset"); if(hr) hr.onclick=resetHY; }
-  app.querySelectorAll(".modes button").forEach(b=>b.onclick=()=>{ mode=b.dataset.mode; buildQueue(); render(); });
+  app.querySelectorAll(".modes button").forEach(b=>b.onclick=()=>{ mode=b.dataset.mode;
+    if((mode==="hyeasy"||mode==="hyhard")&&!catSel.has("hy")){ catSelPrev=new Set(catSel); catSel=new Set(["hy"]); }   /* these two open the High yield cluster */
+    buildQueue(); render(); });
   const on=(id,fn)=>{ const el=document.getElementById(id); if(el) el.onclick=fn; };
   on("start",startTimer); on("pause",pauseTimer); on("reset",()=>{resetTimer();render();});
   on("skipRead",skipReading); on("skipRead2",skipReading);
