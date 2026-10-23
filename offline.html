@@ -14,7 +14,7 @@
 <style>
   :root{
     --paper:#F5F6F3; --card:#FFFFFF; --ink:#1B1F22; --ink-2:#4A5158; --ink-3:#8A9198; --line:#DDE1DC;
-    --pe:#1F7A8C; --med:#3B4E9E; --og:#8C2F5B; --paeds:#C7791A; --psych:#3D7A4B; --couns:#5B6673;
+    --pe:#1F7A8C; --med:#3B4E9E; --og:#8C2F5B; --paeds:#C7791A; --psych:#3D7A4B; --couns:#5B6673; --hy:#6B2FB3;
     --ok:#2E7D5B; --warn:#B5541B; --bad:#A63A3A;
     --r:14px;
   }
@@ -268,6 +268,22 @@
   .rate button{padding:12px 4px;border-radius:10px;font-weight:600;font-size:14.5px;color:#fff}
   .rate .again{background:var(--bad)} .rate .hard{background:var(--warn)} .rate .good{background:var(--ok)} .rate .easy{background:#2F6E9E}
   .rate small{display:block;font-weight:400;font-size:11.5px;opacity:.85;margin-top:2px}
+  /* High-yield cluster */
+  .chip.hyc{font-weight:700;letter-spacing:.02em}
+  .chip.hyc.on{background:var(--hy);color:#fff;border-color:var(--hy)} .chip.hyc.on .dot{background:#fff} .chip.hyc.on .n{color:#E9DDF7}
+  .tier{display:inline-block;padding:1px 7px;border-radius:6px;font-size:11.5px;font-weight:800;letter-spacing:.04em;color:#fff;margin-left:6px;vertical-align:1px}
+  .tier.aaa{background:#C0182B} .tier.bb{background:#D9822B}
+  .hyb{border:2px solid var(--hy);border-radius:12px;background:#F6F0FC;padding:10px 12px 12px;margin:0 0 14px}
+  .hyb .hyh{font-size:13px;font-weight:700;color:var(--hy);display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+  .hyb .hyh .last{font-weight:500;color:var(--ink-2)}
+  .hyb ul{margin:6px 0 10px;padding-left:18px;font-size:13px;color:var(--ink-2)} .hyb li{margin:2px 0}
+  .hybtn{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .hybtn button{padding:12px 6px;border-radius:10px;font-weight:800;font-size:15px;color:#fff;letter-spacing:.02em}
+  .hybtn small{display:block;font-weight:500;font-size:11.5px;opacity:.9;margin-top:2px}
+  .hybtn .hye{background:#1E8E5A} .hybtn .hyhd{background:#C0182B}
+  .hybar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;justify-content:space-between;border:1.5px solid var(--hy);background:#F6F0FC;border-radius:12px;padding:8px 12px;margin:-4px 0 12px;font-size:13px;color:var(--ink-2)}
+  .hybar b{color:var(--hy)}
+  .hybar button{min-height:36px;padding:6px 12px;border-radius:9px;border:1.5px solid var(--hy);color:var(--hy);font-weight:700;font-size:13px;background:#fff}
 
   .empty{padding:40px 18px;text-align:center;color:var(--ink-2);background:var(--card);border:1px dashed var(--line);border-radius:var(--r)}
   .row{display:flex;gap:8px;margin-top:12px}
@@ -334,6 +350,7 @@
     <textarea id="importBox" placeholder='[{"id":"MED-01","cat":"med", ...}]'></textarea>
     <div class="row"><button class="btn" id="importBtn">Add stations</button><button class="btn ghost" id="exportBtn">Copy progress JSON</button></div>
     <p id="importMsg"></p>
+    <div class="row"><button class="btn ghost" id="resetHYBtn" style="color:var(--hy);border-color:var(--hy)">Reset high yield cluster progress</button></div>
     <div class="row"><button class="btn ghost" id="resetBtn">Reset all progress</button><button class="btn ghost" id="closeBtn">Close</button></div>
   </div>
 </div>
@@ -346,8 +363,227 @@ const CATS = {
   og:    {name:"Obs & Gynae",   color:"var(--og)"},
   paeds: {name:"Paediatrics",   color:"var(--paeds)"},
   psych: {name:"Psychiatry",    color:"var(--psych)"},
-  couns: {name:"Counselling",   color:"var(--couns)"}
+  couns: {name:"Counselling",   color:"var(--couns)"},
+  hy:    {name:"HIGH yield",    color:"var(--hy)"}
 };
+/* the six source clusters — High yield is a cluster of clones on top of them, studied on its own */
+const BASECATS=Object.keys(CATS).filter(k=>k!=="hy");
+let catSelPrev=null;
+
+/* ===================== High-yield cluster =====================
+   AAA and BB items from the 10 Nov priority list, each mapped to its deck stations by the
+   station-build PDF. Every row clones the original card at load time as cat "hy" with its own
+   id and its own progress, so edits to the original flow through and ratings stay separate.
+   [clone id, original id, tier, list items it answers] */
+const HY_LIST=[["HY-001","PE-55","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI","AAA · Medicine & Surgery · 2. Rectal bleeding"]],
+  ["HY-002","PE-56","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI","BB · Medicine & Surgery · 9. Acute urinary retention"]],
+  ["HY-003","PE-11","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-004","PE-14","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-005","PE-10","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-006","PE-13","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-007","PE-15","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-008","PE-16","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-009","PE-101","AAA",["AAA · Physical exam — systems · 1. Abdominal / GI"]],
+  ["HY-010","PE-07","AAA",["AAA · Physical exam — systems · 2. Respiratory / chest"]],
+  ["HY-011","PE-08","AAA",["AAA · Physical exam — systems · 2. Respiratory / chest"]],
+  ["HY-012","PE-09","AAA",["AAA · Physical exam — systems · 2. Respiratory / chest"]],
+  ["HY-013","PE-102","AAA",["AAA · Physical exam — systems · 2. Respiratory / chest"]],
+  ["HY-014","PE-06","AAA",["AAA · Physical exam — systems · 2. Respiratory / chest"]],
+  ["HY-015","PE-73","AAA",["AAA · Physical exam — systems · 3. Antenatal / obstetric abdomen","AAA · Specific exam cases · 1. Antenatal obstetric examination"]],
+  ["HY-016","PE-74","AAA",["AAA · Physical exam — systems · 3. Antenatal / obstetric abdomen"]],
+  ["HY-017","PE-01","AAA",["AAA · Physical exam — systems · 4. Cardiovascular / BP","BB · Specific exam cases · 6. Cardiovascular examination"]],
+  ["HY-018","PE-04","AAA",["AAA · Physical exam — systems · 4. Cardiovascular / BP"]],
+  ["HY-019","PE-02","AAA",["AAA · Physical exam — systems · 4. Cardiovascular / BP","BB · Specific exam cases · 6. Cardiovascular examination"]],
+  ["HY-020","PE-05","AAA",["AAA · Physical exam — systems · 4. Cardiovascular / BP"]],
+  ["HY-021","PE-03","AAA",["AAA · Physical exam — systems · 4. Cardiovascular / BP"]],
+  ["HY-022","PE-57","AAA",["AAA · Physical exam — systems · 5. Gynae / pelvic / speculum"]],
+  ["HY-023","PE-58","AAA",["AAA · Physical exam — systems · 5. Gynae / pelvic / speculum","AAA · Counselling · 9. Cervical screening test"]],
+  ["HY-024","PE-60","AAA",["AAA · Physical exam — systems · 5. Gynae / pelvic / speculum"]],
+  ["HY-025","PE-59","AAA",["AAA · Physical exam — systems · 5. Gynae / pelvic / speculum"]],
+  ["HY-026","PE-62","AAA",["AAA · Physical exam — systems · 5. Gynae / pelvic / speculum"]],
+  ["HY-027","PE-40","AAA",["BB · Physical exam — systems · 9. Hand / wrist / elbow","AAA · Physical exam — systems · [Dr A] Hand pain"]],
+  ["HY-028","PE-67","AAA",["BB · Physical exam — systems · 10. Thyroid / neck","AAA · Physical exam — systems · [Dr A] Haematologic exam"]],
+  ["HY-029","PE-23","AAA",["BB · Physical exam — systems · 11. Neuro – lower limb","AAA · Physical exam — systems · [M] Ankle / foot / lower leg"]],
+  ["HY-030","PE-80","AAA",["AAA · Physical exam — systems · [M] Head injury / GCS / trauma survey","BB · Specific exam cases · 13. Head injury / GCS assessment"]],
+  ["HY-031","PE-83","AAA",["AAA · Physical exam — systems · [M] Head injury / GCS / trauma survey"]],
+  ["HY-032","PE-84","AAA",["AAA · Physical exam — systems · [M] Head injury / GCS / trauma survey"]],
+  ["HY-033","PE-82","AAA",["AAA · Physical exam — systems · [M] Head injury / GCS / trauma survey"]],
+  ["HY-034","PE-34","AAA",["AAA · Physical exam — systems · [M] Knee","BB · Specific exam cases · 12. Knee examination / knee injury"]],
+  ["HY-035","PE-33","AAA",["AAA · Physical exam — systems · [M] Knee","BB · Specific exam cases · 12. Knee examination / knee injury"]],
+  ["HY-036","PE-103","AAA",["AAA · Physical exam — systems · [M] Knee"]],
+  ["HY-037","PE-29","AAA",["AAA · Physical exam — systems · [M] Ankle / foot / lower leg"]],
+  ["HY-038","MED-219","AAA",["AAA · Physical exam — systems · [M] Ankle / foot / lower leg"]],
+  ["HY-039","MED-218","AAA",["AAA · Physical exam — systems · [M] Ankle / foot / lower leg"]],
+  ["HY-040","MED-214","AAA",["AAA · Physical exam — systems · [M] Ankle / foot / lower leg"]],
+  ["HY-041","PE-50","AAA",["AAA · Physical exam — systems · [M] Eye / fundoscopy / vision"]],
+  ["HY-042","PE-51","AAA",["AAA · Physical exam — systems · [M] Eye / fundoscopy / vision"]],
+  ["HY-043","PE-52","AAA",["AAA · Physical exam — systems · [M] Eye / fundoscopy / vision"]],
+  ["HY-044","PE-53","AAA",["AAA · Physical exam — systems · [M] Eye / fundoscopy / vision"]],
+  ["HY-045","PE-54","AAA",["AAA · Physical exam — systems · [M] Eye / fundoscopy / vision"]],
+  ["HY-046","PE-35","AAA",["AAA · Physical exam — systems · [Dr A] Shoulder exam"]],
+  ["HY-047","PE-45","AAA",["AAA · Physical exam — systems · [Dr A] Shoulder exam"]],
+  ["HY-048","MED-228","AAA",["AAA · Physical exam — systems · [Dr A] Shoulder exam"]],
+  ["HY-049","MED-229","AAA",["AAA · Physical exam — systems · [Dr A] Shoulder exam"]],
+  ["HY-050","PE-68","AAA",["AAA · Physical exam — systems · [Dr A] Haematologic exam"]],
+  ["HY-051","PE-70","AAA",["AAA · Physical exam — systems · [Dr A] Haematologic exam"]],
+  ["HY-052","PE-95","AAA",["AAA · Physical exam — systems · [Dr A] Haematologic exam"]],
+  ["HY-053","PE-71","AAA",["AAA · Physical exam — systems · [Dr A] Haematologic exam"]],
+  ["HY-054","PE-41","AAA",["AAA · Physical exam — systems · [Dr A] Hand pain"]],
+  ["HY-055","MED-226","AAA",["AAA · Physical exam — systems · [Dr A] Hand pain"]],
+  ["HY-056","MED-225","AAA",["AAA · Physical exam — systems · [Dr A] Hand pain"]],
+  ["HY-057","MED-27","AAA",["AAA · Specific exam cases · 2. COPD"]],
+  ["HY-058","MED-44","AAA",["AAA · Specific exam cases · 2. COPD"]],
+  ["HY-059","MED-213","AAA",["AAA · Medicine & Surgery · 1. Peripheral arterial disease"]],
+  ["HY-060","COUNS-37","AAA",["AAA · Medicine & Surgery · 1. Peripheral arterial disease"]],
+  ["HY-061","MED-134","AAA",["AAA · Medicine & Surgery · 3. Biliary colic / acute cholecystitis"]],
+  ["HY-062","MED-32","AAA",["AAA · Medicine & Surgery · 5. Heart failure"]],
+  ["HY-063","MED-244","AAA",["AAA · Medicine & Surgery · 7. Falls in the elderly / postural hypotension"]],
+  ["HY-064","MED-104","AAA",["AAA · Medicine & Surgery · 7. Falls in the elderly / postural hypotension"]],
+  ["HY-065","PAEDS-12","AAA",["AAA · Medicine & Surgery · 11. Inguinal hernia"]],
+  ["HY-066","MED-100","AAA",["AAA · Medicine & Surgery · 13. Pulmonary embolism"]],
+  ["HY-067","MED-206","AAA",["AAA · Medicine & Surgery · 13. Pulmonary embolism"]],
+  ["HY-068","MED-19","AAA",["AAA · Medicine & Surgery · 15. GORD"]],
+  ["HY-069","MED-20","AAA",["AAA · Medicine & Surgery · 15. GORD"]],
+  ["HY-070","MED-82","AAA",["AAA · Medicine & Surgery · 21. Allergic rhinitis"]],
+  ["HY-071","MED-17","AAA",["AAA · Medicine & Surgery · [W] Acute pericarditis"]],
+  ["HY-072","MED-18","AAA",["AAA · Medicine & Surgery · [W] Acute pericarditis"]],
+  ["HY-073","MED-178","AAA",["AAA · Medicine & Surgery · [W] Acute pericarditis"]],
+  ["HY-074","PAEDS-16","AAA",["AAA · Medicine & Surgery · [Dr A] Burn case"]],
+  ["HY-075","PAEDS-89","AAA",["AAA · Medicine & Surgery · [Dr A] Burn case"]],
+  ["HY-076","MED-246","AAA",["AAA · Medicine & Surgery · [Dr A] Urinary complaint / frequency"]],
+  ["HY-077","MED-170","AAA",["AAA · Medicine & Surgery · [Dr A] Urinary complaint / frequency"]],
+  ["HY-078","OG-16","AAA",["AAA · Medicine & Surgery · [Dr A] Urinary complaint / frequency"]],
+  ["HY-079","MED-31","AAA",["AAA · Medicine & Surgery · [Dr A] SOB cluster"]],
+  ["HY-080","MED-33","AAA",["AAA · Medicine & Surgery · [Dr A] SOB cluster"]],
+  ["HY-081","MED-25","AAA",["AAA · Medicine & Surgery · [Dr A] SOB cluster"]],
+  ["HY-082","MED-34","AAA",["AAA · Medicine & Surgery · [Dr A] SOB cluster"]],
+  ["HY-083","MED-253","AAA",["AAA · Medicine & Surgery · [Dr A] Abdominal pain history taking"]],
+  ["HY-084","MED-254","AAA",["AAA · Medicine & Surgery · [Dr A] Abdominal pain history taking"]],
+  ["HY-085","OG-32","AAA",["AAA · Obstetrics & Gynaecology · 1. Abnormal uterine bleeding / HMB"]],
+  ["HY-086","OG-30","AAA",["AAA · Obstetrics & Gynaecology · 1. Abnormal uterine bleeding / HMB"]],
+  ["HY-087","OG-01","AAA",["AAA · Obstetrics & Gynaecology · 4. Hyperemesis gravidarum"]],
+  ["HY-088","OG-12","AAA",["AAA · Obstetrics & Gynaecology · 4. Hyperemesis gravidarum"]],
+  ["HY-089","OG-87","AAA",["AAA · Obstetrics & Gynaecology · [M] Abdominal pain in pregnancy"]],
+  ["HY-090","OG-88","AAA",["AAA · Obstetrics & Gynaecology · [M] Abdominal pain in pregnancy"]],
+  ["HY-091","OG-89","AAA",["AAA · Obstetrics & Gynaecology · [M] Abdominal pain in pregnancy"]],
+  ["HY-092","OG-90","AAA",["AAA · Obstetrics & Gynaecology · [M] Abdominal pain in pregnancy"]],
+  ["HY-093","OG-25","AAA",["AAA · Obstetrics & Gynaecology · [M] Abdominal pain in pregnancy"]],
+  ["HY-094","PSYCH-33","AAA",["AAA · Psychiatry · 1. First-episode psychosis / schizophrenia","AAA · Psychiatry · 5. Schizophrenia relapse / chronic schizophrenia"]],
+  ["HY-095","PSYCH-61","AAA",["AAA · Psychiatry · 1. First-episode psychosis / schizophrenia"]],
+  ["HY-096","PSYCH-62","AAA",["AAA · Psychiatry · 1. First-episode psychosis / schizophrenia"]],
+  ["HY-097","PSYCH-25","AAA",["AAA · Psychiatry · 2. Major depressive disorder"]],
+  ["HY-098","PSYCH-22","AAA",["AAA · Psychiatry · 2. Major depressive disorder"]],
+  ["HY-099","PSYCH-02","AAA",["AAA · Psychiatry · 3. Mental state examination"]],
+  ["HY-100","PSYCH-32","AAA",["AAA · Psychiatry · 3. Mental state examination"]],
+  ["HY-101","PSYCH-36","AAA",["AAA · Psychiatry · 3. Mental state examination"]],
+  ["HY-102","PSYCH-37","AAA",["AAA · Psychiatry · 3. Mental state examination"]],
+  ["HY-103","COUNS-08","AAA",["AAA · Psychiatry · 4. Dementia"]],
+  ["HY-104","PSYCH-24","AAA",["AAA · Psychiatry · 5. Schizophrenia relapse / chronic schizophrenia"]],
+  ["HY-105","PSYCH-15","AAA",["AAA · Psychiatry · 7. Panic disorder"]],
+  ["HY-106","PSYCH-35","AAA",["AAA · Psychiatry · 7. Panic disorder"]],
+  ["HY-107","PSYCH-21","AAA",["AAA · Psychiatry · [W] Electroconvulsive therapy counselling"]],
+  ["HY-108","PAEDS-17","AAA",["AAA · Paediatrics · 1. Foreign body ingestion (coin / button battery)"]],
+  ["HY-109","PAEDS-79","AAA",["AAA · Paediatrics · 12. Functional abdominal pain (child)"]],
+  ["HY-110","PAEDS-60","AAA",["AAA · Paediatrics · [M] Scarlet fever"]],
+  ["HY-111","PAEDS-48","AAA",["AAA · Paediatrics · Tier 3 add-on: pyloric stenosis"]],
+  ["HY-112","COUNS-15","AAA",["AAA · Counselling · 1. Chlamydia / gonorrhoea"]],
+  ["HY-113","COUNS-17","AAA",["AAA · Counselling · 1. Chlamydia / gonorrhoea","AAA · Counselling · 2. STI screening & sexual health counselling"]],
+  ["HY-114","COUNS-16","AAA",["AAA · Counselling · 1. Chlamydia / gonorrhoea","AAA · Counselling · 2. STI screening & sexual health counselling"]],
+  ["HY-115","COUNS-55","AAA",["AAA · Counselling · 3. Migraine"]],
+  ["HY-116","MED-183","AAA",["AAA · Counselling · 3. Migraine"]],
+  ["HY-117","PSYCH-47","AAA",["AAA · Counselling · 5. Smoking cessation"]],
+  ["HY-118","PSYCH-48","AAA",["AAA · Counselling · 5. Smoking cessation"]],
+  ["HY-119","PAEDS-30","AAA",["AAA · Counselling · 6. Childhood obesity"]],
+  ["HY-120","OG-34","AAA",["AAA · Counselling · 9. Cervical screening test"]],
+  ["HY-121","COUNS-52","AAA",["AAA · Counselling · [Dr A] Diabetes counselling"]],
+  ["HY-122","COUNS-24","AAA",["AAA · Counselling · [Dr A] Spirometry counselling"]],
+  ["HY-123","COUNS-26","AAA",["AAA · Counselling · [Dr A] Spirometry counselling"]],
+  ["HY-124","PE-48","BB",["BB · Physical exam — systems · 6. ENT / ear / hearing","BB · Specific exam cases · 14. Ear / ENT examination"]],
+  ["HY-125","PE-91","BB",["BB · Physical exam — systems · 6. ENT / ear / hearing","BB · Specific exam cases · 14. Ear / ENT examination"]],
+  ["HY-126","PE-49","BB",["BB · Physical exam — systems · 6. ENT / ear / hearing"]],
+  ["HY-127","PE-64","BB",["BB · Physical exam — systems · 6. ENT / ear / hearing","BB · Physical exam — systems · 12. Neuro – cerebellar / gait / Parkinson"]],
+  ["HY-128","PE-78","BB",["BB · Physical exam — systems · 7. Breast","BB · Specific exam cases · 3. Breast lump"]],
+  ["HY-129","PE-79","BB",["BB · Physical exam — systems · 7. Breast"]],
+  ["HY-130","PE-86","BB",["BB · Physical exam — systems · 8. Other"]],
+  ["HY-131","PE-81","BB",["BB · Physical exam — systems · 8. Other"]],
+  ["HY-132","PE-87","BB",["BB · Physical exam — systems · 8. Other"]],
+  ["HY-133","PE-44","BB",["BB · Physical exam — systems · 9. Hand / wrist / elbow"]],
+  ["HY-134","PE-43","BB",["BB · Physical exam — systems · 9. Hand / wrist / elbow"]],
+  ["HY-135","PE-39","BB",["BB · Physical exam — systems · 9. Hand / wrist / elbow"]],
+  ["HY-136","PE-30","BB",["BB · Physical exam — systems · 10. Thyroid / neck","BB · Specific exam cases · 10. Thyroid examination / goitre"]],
+  ["HY-137","PE-31","BB",["BB · Physical exam — systems · 10. Thyroid / neck"]],
+  ["HY-138","PE-32","BB",["BB · Physical exam — systems · 10. Thyroid / neck"]],
+  ["HY-139","PE-19","BB",["BB · Physical exam — systems · 11. Neuro – lower limb"]],
+  ["HY-140","PE-21","BB",["BB · Physical exam — systems · 11. Neuro – lower limb"]],
+  ["HY-141","PE-24","BB",["BB · Physical exam — systems · 11. Neuro – lower limb","BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-142","PE-20","BB",["BB · Physical exam — systems · 11. Neuro – lower limb"]],
+  ["HY-143","PE-46","BB",["BB · Physical exam — systems · 11. Neuro – lower limb"]],
+  ["HY-144","PE-27","BB",["BB · Physical exam — systems · 12. Neuro – cerebellar / gait / Parkinson"]],
+  ["HY-145","PE-25","BB",["BB · Physical exam — systems · 12. Neuro – cerebellar / gait / Parkinson"]],
+  ["HY-146","PE-26","BB",["BB · Physical exam — systems · 12. Neuro – cerebellar / gait / Parkinson"]],
+  ["HY-147","PE-18","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-148","PE-22","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-149","PE-42","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-150","PE-17","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-151","PE-28","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-152","PE-38","BB",["BB · Physical exam — systems · 14. Neuro – upper limb"]],
+  ["HY-153","PE-63","BB",["BB · Physical exam — systems · 15. Scrotal / male genital","BB · Specific exam cases · 7. Scrotal swelling / examination"]],
+  ["HY-154","COUNS-30","BB",["BB · Specific exam cases · 4. Hypertension"]],
+  ["HY-155","COUNS-31","BB",["BB · Specific exam cases · 4. Hypertension"]],
+  ["HY-156","COUNS-71","BB",["BB · Specific exam cases · 5. Chest trauma / rib fractures"]],
+  ["HY-157","MED-209","BB",["BB · Specific exam cases · 8. Compartment syndrome","BB · Medicine & Surgery · 6. Cellulitis"]],
+  ["HY-158","MED-113","BB",["BB · Specific exam cases · 8. Compartment syndrome"]],
+  ["HY-159","MED-30","BB",["BB · Specific exam cases · 9. Respiratory examination"]],
+  ["HY-160","COUNS-25","BB",["BB · Specific exam cases · 9. Respiratory examination"]],
+  ["HY-161","MED-145","BB",["BB · Specific exam cases · 16. Diverticulitis"]],
+  ["HY-162","PE-99","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-163","PE-88","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-164","PE-89","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-165","PE-97","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-166","PE-98","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-167","PE-100","BB",["BB · Medicine & Surgery · 4. Medication chart"]],
+  ["HY-168","MED-220","BB",["BB · Medicine & Surgery · 6. Cellulitis"]],
+  ["HY-169","MED-47","BB",["BB · Medicine & Surgery · 8. Community-acquired pneumonia"]],
+  ["HY-170","MED-48","BB",["BB · Medicine & Surgery · 8. Community-acquired pneumonia"]],
+  ["HY-171","PAEDS-68","BB",["BB · Medicine & Surgery · 10. Asthma"]],
+  ["HY-172","PAEDS-03","BB",["BB · Medicine & Surgery · 10. Asthma"]],
+  ["HY-173","MED-08","BB",["BB · Medicine & Surgery · 12. Palpitations"]],
+  ["HY-174","MED-07","BB",["BB · Medicine & Surgery · 12. Palpitations"]],
+  ["HY-175","MED-09","BB",["BB · Medicine & Surgery · 12. Palpitations"]],
+  ["HY-176","MED-164","BB",["BB · Medicine & Surgery · 14. Benign prostatic hyperplasia"]],
+  ["HY-177","MED-116","BB",["BB · Medicine & Surgery · 25. Acute appendicitis"]],
+  ["HY-178","OG-09","BB",["BB · Obstetrics & Gynaecology · 2. Miscarriage (threatened / incomplete)"]],
+  ["HY-179","OG-07","BB",["BB · Obstetrics & Gynaecology · 2. Miscarriage (threatened / incomplete)"]],
+  ["HY-180","OG-11","BB",["BB · Obstetrics & Gynaecology · 2. Miscarriage (threatened / incomplete)"]],
+  ["HY-181","OG-08","BB",["BB · Obstetrics & Gynaecology · 2. Miscarriage (threatened / incomplete)"]],
+  ["HY-182","OG-10","BB",["BB · Obstetrics & Gynaecology · 2. Miscarriage (threatened / incomplete)"]],
+  ["HY-183","OG-02","BB",["BB · Obstetrics & Gynaecology · 3. Pre-eclampsia"]],
+  ["HY-184","OG-26","BB",["BB · Obstetrics & Gynaecology · 3. Pre-eclampsia"]],
+  ["HY-185","PSYCH-34","BB",["BB · Psychiatry · 6. Obsessive-compulsive disorder"]],
+  ["HY-186","PSYCH-14","BB",["BB · Psychiatry · 6. Obsessive-compulsive disorder"]],
+  ["HY-187","PSYCH-06","BB",["BB · Psychiatry · 8. Bipolar mania"]],
+  ["HY-188","PSYCH-10","BB",["BB · Psychiatry · 8. Bipolar mania"]],
+  ["HY-189","PSYCH-04","BB",["BB · Psychiatry · 8. Bipolar mania"]],
+  ["HY-190","PSYCH-18","BB",["BB · Psychiatry · 9. Borderline personality disorder"]],
+  ["HY-191","MED-64","BB",["BB · Psychiatry · 10. Depression in the elderly / pseudodementia"]],
+  ["HY-192","PSYCH-45","BB",["BB · Psychiatry · 13. Alcohol use disorder"]],
+  ["HY-193","PAEDS-65","BB",["BB · Paediatrics · 2. Pertussis"]],
+  ["HY-194","PAEDS-73","BB",["BB · Paediatrics · 2. Pertussis"]],
+  ["HY-195","PAEDS-28","BB",["BB · Paediatrics · 3. Functional constipation / encopresis"]],
+  ["HY-196","PAEDS-91","BB",["BB · Paediatrics · 3. Functional constipation / encopresis"]],
+  ["HY-197","PAEDS-61","BB",["BB · Paediatrics · 4. Viral URTI / recurrent URTI"]],
+  ["HY-198","PAEDS-43","BB",["BB · Paediatrics · 5. Infectious mononucleosis"]],
+  ["HY-199","MED-173","BB",["BB · Paediatrics · 5. Infectious mononucleosis"]],
+  ["HY-200","PAEDS-01","BB",["BB · Paediatrics · 6. Gastroenteritis with dehydration"]],
+  ["HY-201","PAEDS-76","BB",["BB · Paediatrics · 6. Gastroenteritis with dehydration"]],
+  ["HY-202","PAEDS-15","BB",["BB · Paediatrics · 8. ADHD"]],
+  ["HY-203","PAEDS-32","BB",["BB · Paediatrics · 10. Cervical lymphadenitis"]],
+  ["HY-204","MED-245","BB",["BB · Counselling · 4. Renal colic / ureteric calculus"]],
+  ["HY-205","MED-163","BB",["BB · Counselling · 4. Renal colic / ureteric calculus"]],
+  ["HY-206","COUNS-28","BB",["BB · Counselling · 7. Cardiovascular risk assessment / dyslipidaemia"]],
+  ["HY-207","COUNS-27","BB",["BB · Counselling · 7. Cardiovascular risk assessment / dyslipidaemia"]],
+  ["HY-208","COUNS-74","BB",["BB · Counselling · 7. Cardiovascular risk assessment / dyslipidaemia"]],
+  ["HY-209","OG-15","BB",["BB · Counselling · 8. Gestational diabetes"]]];
 
 /* ===================== Built-in stations =====================
    Front: verbatim door stem + tasks only. Back: the brief.
@@ -357,7 +593,7 @@ let BUILTIN = [];
 /* ===================== State & storage ===================== */
 const KEY_PROG="amc_osce_progress", KEY_CUSTOM="amc_osce_custom_cards", KEY_OPTS="amc_osce_opts", KEY_SYNC="amc_osce_sync", KEY_DAYS="amc_osce_days";
 let progress={}, custom=[], days={}, opts={bell:true, study:false, shuffle:false, prep:true, goal:60, goalFrom:null, debtFrom:null};
-let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(Object.keys(CATS));
+let cards=[], queue=[], idx=0, flipped=false, mode="due", catSel=new Set(BASECATS);
 let timerId=null, remaining=480, timerDone=false, fired={}, phase="station";
 const PREP=120, STATION=480;
 const phaseTotal=()=>phase==="prep"?PREP:STATION;
@@ -407,7 +643,7 @@ function examHTML(){
 /* stations rated today, Adelaide time — one per station, however many times it was turned */
 function doneToday(){
   const t=today(); let n=0;
-  Object.values(progress).forEach(p=>{ if(p&&p.at&&localDay(new Date(p.at))===t) n++; });
+  Object.values(progress).forEach(p=>{ if(p&&p.at&&p.last&&localDay(new Date(p.at))===t) n++; });   /* a reset marker has no rating, so it is not a station done */
   return n;
 }
 /* Daily target by date. Past days keep the target that applied to them, so the
@@ -584,8 +820,25 @@ function renderSyncState(){
 function buildCards(){
   const map=new Map(BUILTIN.map(c=>[c.id,c]));
   custom.forEach(c=>{ if(c&&c.id) map.set(c.id,c); });
-  cards=[...map.values()];
+  const base=[...map.values()].filter(c=>c.cat!=="hy");
+  const src=new Map(base.map(c=>[c.id,c]));
+  /* High-yield clones: same station, own id, own progress */
+  const hy=[];
+  HY_LIST.forEach(([id,of,tier,items])=>{ const o=src.get(of); if(o) hy.push(Object.assign({},o,{id,cat:"hy",hyOf:of,hyTier:tier,hyItems:items})); });
+  cards=base.concat(hy);
   buildIndex();
+}
+const isHY=c=>c&&c.cat==="hy";
+const baseCards=()=>cards.filter(c=>!isHY(c));
+const hyCards=()=>cards.filter(isHY);
+/* Reset only the high-yield clones. A dated blank entry, not a deletion, so the reset wins the
+   newest-timestamp merge and a synced device cannot bring the old ratings back. */
+async function resetHY(){
+  if(!confirm("Reset high-yield cluster progress? Only the High yield copies are cleared — your ratings on the original stations are kept.")) return;
+  const at=new Date().toISOString();
+  hyCards().forEach(c=>{ progress[c.id]={reps:0,ease:2.5,interval:0,due:null,last:null,seen:0,at,reset:true}; });
+  await save(KEY_PROG,progress); syncSoon(); buildQueue(); render();
+  setStatus("High-yield cluster progress reset");
 }
 
 /* ===================== Search =====================
@@ -598,7 +851,7 @@ let searchOn=false, searchLabel="", searchSaved=null, searchRated=new Set();
 const SEARCH_SHOW=60;
 const _plain=s=>String(s==null?"":s).replace(/\*+/g,"").replace(/\s+/g," ").trim();
 function buildIndex(){
-  sindex=cards.map(c=>{
+  sindex=cards.filter(c=>!isHY(c)).map(c=>{
     const b=c.back||{}, dx=_plain(Array.isArray(b.dx)?b.dx[0]:b.dx);
     let head=dx.split(" \u2014 ")[0];
     if(head.length>90){ const m=head.search(/[.!?](\s|$)/); if(m>=12) head=head.slice(0,m); }
@@ -860,11 +1113,11 @@ function setStatus(m){ const s=document.getElementById("statusMsg"); if(s) s.tex
 
 function goalHTML(){
   const g=dailyGoal(), n=doneToday(), left=Math.max(0,g-n), pct=Math.min(100,Math.round(n/g*100));
-  const unseen=cards.filter(c=>!(progress[c.id]&&progress[c.id].seen)).length;
+  const bc=baseCards(), unseen=bc.filter(c=>!(progress[c.id]&&progress[c.id].seen)).length;
   return `<div class="g1"><span class="lbl">Today &middot; Adelaide</span><span class="num">${n} <span class="of">/ ${g}</span></span></div>
     <div class="gbar"><i style="width:${pct}%"></i></div>
     <div class="g2"><span class="left">${left?`<b>${left}</b> still to do today`:`Target met &mdash; ${n} done today`}</span>
-    <span>${unseen} never turned &middot; ${cards.length} in the deck</span></div>`;
+    <span>${unseen} never turned &middot; ${bc.length} in the deck</span></div>`;
 }
 function paintGoal(){
   const el=document.getElementById("goal"); if(!el) return;
@@ -881,10 +1134,15 @@ function render(){
   cards.forEach(c=>{ if(!counts[c.cat]) return; counts[c.cat].all++; if(isDue(c)) counts[c.cat].due++; if(isHard(c)) counts[c.cat].hard++; });
 
   let h=examHTML()+`<div class="goal${doneToday()>=dailyGoal()?" done":""}" id="goal">${goalHTML()}</div>`;
-  h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${cards.length} stations · ${cards.filter(isDue).length} due today · ${cards.filter(isHard).length} in the hard pile &middot; ${cards.filter(isOk).length} good or easy</div></div>
+  const bc=baseCards();
+  h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${bc.length} stations · ${bc.filter(isDue).length} due today · ${bc.filter(isHard).length} in the hard pile &middot; ${bc.filter(isOk).length} good or easy</div></div>
     <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
   const hTop=h; h="";
-  h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
+  h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}${k==="hy"?" hyc":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
+  if(catSel.has("hy")){
+    const hc=hyCards(), aaa=hc.filter(c=>c.hyTier==="AAA").length;
+    h+=`<div class="hybar"><span><b>HIGH yield</b> &middot; <span class="tier aaa">AAA</span> ${aaa} &middot; <span class="tier bb">BB</span> ${hc.length-aaa} &middot; ${hc.filter(isHard).length} hard &middot; ${hc.filter(isOk).length} easy/good &middot; ${hc.filter(c=>!prog(c.id).seen).length} not yet turned</span><button id="hyReset">Reset high yield cluster progress</button></div>`;
+  }
   h+=`<div class="modes"><button data-mode="due" class="${mode==="due"&&!searchOn?"on":""}">Due</button><button data-mode="hard" class="${mode==="hard"&&!searchOn?"on":""}">Hard pile</button><button data-mode="ok" class="${mode==="ok"&&!searchOn?"on":""}">Good &amp; easy</button><button data-mode="nothard" class="${mode==="nothard"&&!searchOn?"on":""}">Not hard</button><button data-mode="all" class="${mode==="all"&&!searchOn?"on":""}">All</button></div>`;
   if(searchOn) h+=`<div class="sban" id="sban"><span>Search results for <b>\u201C${esc(searchLabel)}\u201D</b> &middot; ${queue.length} station${queue.length===1?"":"s"}</span><button id="sExit">Back to the deck</button></div>`;
 
@@ -919,7 +1177,7 @@ function render(){
     const wide=window.matchMedia("(min-width:900px)").matches;
 
     h+=`<div class="cols"><div class="main"><div class="station" style="--c:${col}">
-      <div class="meta"><span class="cat">${CATS[c.cat]?CATS[c.cat].name:c.cat}</span><span class="idn">${esc(c.id)} · ${idx+1} of ${queue.length}${p.seen?` · seen ${p.seen}×`:""}</span></div>`;
+      <div class="meta"><span class="cat">${CATS[c.cat]?CATS[c.cat].name:c.cat}${isHY(c)?`<span class="tier ${c.hyTier==="AAA"?"aaa":"bb"}">${c.hyTier}</span>`:""}</span><span class="idn">${esc(c.id)}${isHY(c)?` (${esc(c.hyOf)})`:""} · ${idx+1} of ${queue.length}${p.seen?` · seen ${p.seen}×`:""}</span></div>`;
     if(!flipped){
       const TV=testedOf(c);
       h+=`${testedHTML(c)}<div class="stem">${(c.stem||[]).map(x=>stemP(x,TV)).join("")}</div>
@@ -933,6 +1191,9 @@ function render(){
     const V2=c.v2===true;
     const li=(t)=>`<li${isMust(t)?' class="hl"':''}>${escb(t)}</li>`;
       h+=`<div class="back">
+        ${isHY(c)?`<div class="hyb"><div class="hyh"><span>HIGH yield<span class="tier ${c.hyTier==="AAA"?"aaa":"bb"}">${c.hyTier}</span></span><span class="last">copy of ${esc(c.hyOf)}${p.last?` · last marked ${p.last==="easy"||p.last==="good"?"easy":p.last==="hard"||p.last==="again"?"hard":p.last}`:""}</span></div>
+          <ul>${(c.hyItems||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+          <div class="hybtn"><button class="hye" data-hy="easy">High yield EASY<small>back in ${fmtIv(p,"easy")}</small></button><button class="hyhd" data-hy="hard">High yield HARD<small>back in ${fmtIv(p,"hard")} · hard pile</small></button></div></div>`:""}
         ${c.must&&c.must.length?`<div class="must"><h3>${V2?"Must remember":"6 must remember"}</h3><ol>${c.must.map(m=>`<li>${escb(m)}</li>`).join("")}</ol></div>`:""}
         ${c.interp&&c.interp.rows&&c.interp.rows.length?`<div class="mnem interp"><h3>${esc(c.interp.title||"Reading the results")}</h3><table>${c.interp.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.interp.note?`<p class="mnote">${escb(c.interp.note)}</p>`:""}</div>`:""}
         ${c.mnem&&c.mnem.rows&&c.mnem.rows.length?`<div class="mnem"><h3>${esc(c.mnem.title||"History scaffold")}</h3><table>${c.mnem.rows.map(([k,v])=>/^\s/.test(k)?`<tr class="msub"><th>↳ ${escb(k.trim())}</th><td>${escb(v)}</td></tr>`:`<tr><th>${escb(k)}</th><td>${escb(v)}</td></tr>`).join("")}</table>${c.mnem.note?`<p class="mnote">${escb(c.mnem.note)}</p>`:""}</div>`:""}
@@ -964,7 +1225,16 @@ function render(){
   app.classList.toggle("hasbar",!!document.getElementById("bar"));
 
   // wire
-  app.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{ const k=b.dataset.cat; if(catSel.has(k)&&catSel.size>1) catSel.delete(k); else catSel.add(k); buildQueue(); render(); });
+  app.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{ const k=b.dataset.cat;
+    if(k==="hy"){   /* High yield is studied on its own: switch to it, and back to the previous clusters */
+      if(catSel.has("hy")) catSel=new Set(catSelPrev&&catSelPrev.size?catSelPrev:BASECATS);
+      else { catSelPrev=new Set(catSel); catSel=new Set(["hy"]); }
+    }
+    else if(catSel.has("hy")) catSel=new Set([k]);
+    else if(catSel.has(k)&&catSel.size>1) catSel.delete(k); else catSel.add(k);
+    buildQueue(); render(); });
+  app.querySelectorAll(".hybtn button").forEach(b=>b.onclick=()=>rate(b.dataset.hy));
+  { const hr=document.getElementById("hyReset"); if(hr) hr.onclick=resetHY; }
   app.querySelectorAll(".modes button").forEach(b=>b.onclick=()=>{ mode=b.dataset.mode; buildQueue(); render(); });
   const on=(id,fn)=>{ const el=document.getElementById(id); if(el) el.onclick=fn; };
   on("start",startTimer); on("pause",pauseTimer); on("reset",()=>{resetTimer();render();});
@@ -1044,6 +1314,7 @@ document.getElementById("resetBtn").onclick=async()=>{
   if(!confirm("Reset all ratings and due dates? Stations are kept.")) return;
   progress={}; await save(KEY_PROG,progress); buildQueue(); render(); document.getElementById("importMsg").textContent="Progress reset."; openDrawer();
 };
+document.getElementById("resetHYBtn").onclick=async()=>{ await resetHY(); openDrawer(); };
 document.getElementById("syncConnect").onclick=async()=>{
   const box=document.getElementById("syncTok"), t=(box.value||"").trim();
   if(!t){ document.getElementById("syncState").textContent="Paste a token into the box first."; return; }
