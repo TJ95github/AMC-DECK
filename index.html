@@ -322,6 +322,34 @@
   .app.hasbar{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
   @media (min-width:900px){.bar{display:none}.app.hasbar{padding-bottom:40px}}
   @media (prefers-reduced-motion:reduce){.ring .fg{transition:none}}
+
+  /* standalone station timers (2 / 6 / 8 min) — independent of the card timer */
+  .topbtns{display:flex;gap:8px;flex:none}
+  .iconbtn.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .st{position:fixed;z-index:30;bottom:calc(16px + env(safe-area-inset-bottom));right:calc(10px + env(safe-area-inset-right));width:250px;background:var(--card);border:1.5px solid var(--line);border-radius:16px;box-shadow:0 12px 34px rgba(0,0,0,.18);padding:12px 14px 14px}
+  .st[hidden]{display:none}
+  .st .sth{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+  .st .sth b{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+  .st .sth button{min-height:32px;width:32px;border-radius:8px;font-size:18px;line-height:1;color:var(--ink-2)}
+  .st .stt{font-size:52px;font-weight:700;font-variant-numeric:tabular-nums;text-align:center;line-height:1.05;letter-spacing:.01em}
+  .st .stl{text-align:center;font-size:12px;color:var(--ink-3);margin:2px 0 10px;min-height:16px}
+  .st.warn .stt{color:var(--warn)} .st.done .stt{color:var(--bad)} .st.done .stl{color:var(--bad);font-weight:700}
+  .st .stbar{height:5px;border-radius:3px;background:var(--line);overflow:hidden;margin:0 0 12px}
+  .st .stbar i{display:block;height:100%;width:100%;background:var(--ink);transition:width .25s linear}
+  .st.warn .stbar i{background:var(--warn)} .st.done .stbar i{background:var(--bad)}
+  .st .stp{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
+  .st .stp button{border:1.5px solid var(--line);border-radius:10px;font-weight:700;font-size:15px;background:#fff;color:var(--ink-2)}
+  .st .stp button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+  .st .stc{display:flex;gap:6px} .st .stc .btn{flex:1;padding:10px 8px}
+  .st.mini{width:auto;padding:6px 8px 6px 14px;border-radius:999px;display:flex;align-items:center;gap:8px;cursor:pointer}
+  .st.mini .stfull{display:none} .st:not(.mini) .stmini{display:none}
+  .st .stmini{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+  .st .stmini small{font-size:11px;font-weight:600;color:var(--ink-3);margin-left:6px;letter-spacing:.05em;text-transform:uppercase}
+  .st.mini.warn .stmini{color:var(--warn)} .st.mini.done .stmini{color:var(--bad)}
+  .st.mini .sth{margin:0}
+  .st .sth{cursor:grab;touch-action:none} .st.mini{touch-action:none} .st.drag{cursor:grabbing;transition:none}
+  @media (min-width:900px){ .st{right:auto;left:calc(16px + env(safe-area-inset-left))} }
+  @media (max-width:899px){ .st{bottom:calc(92px + env(safe-area-inset-bottom));right:calc(56px + env(safe-area-inset-right))} }
 </style>
 </head>
 <body>
@@ -338,6 +366,18 @@
   <div id="appMain"></div>
 </div>
 <aside class="bk" id="bk" hidden aria-label="Backlog"></aside>
+
+<div class="st" id="st" hidden role="region" aria-label="Station timers">
+  <div class="stmini" id="stMini">8:00<small>8 min</small></div>
+  <div class="stfull">
+    <div class="sth"><b>Station timer</b><span><button id="stMinBtn" aria-label="Minimise timer" title="Minimise (keeps running)">&minus;</button><button id="stClose" aria-label="Close timer" title="Close and stop">&times;</button></span></div>
+    <div class="stt" id="stT">8:00</div>
+    <div class="stl" id="stL">8-minute station</div>
+    <div class="stbar"><i id="stBar"></i></div>
+    <div class="stp" id="stP"><button data-m="2">2 min</button><button data-m="6">6 min</button><button data-m="8" class="on">8 min</button></div>
+    <div class="stc"><button class="btn" id="stGo">Start</button><button class="btn ghost" id="stReset">Reset</button></div>
+  </div>
+</div>
 
 <div class="drawer" id="drawer" aria-hidden="true">
   <div class="sheet" role="dialog" aria-label="Settings">
@@ -1137,6 +1177,74 @@ function updateTimerUI(){
   if(t2){ t2.textContent=fmt(remaining); bar.className="bar"+(timerDone?" done":phase==="prep"?" read":warn?" warn":""); }
 }
 
+
+/* ===================== Standalone station timers (2 / 6 / 8 min) =====================
+   Separate from the card timer: own state, own interval, lives outside #app so render() never resets it.
+   Bells follow the Bells setting. 8 min warns at 6:00 (two minutes left), like the card timer. */
+let stOpen=false, stMins=8, stLeft=480, stEnd=null, stId=null, stDone=false, stWarned=false, stWake=null;
+function stTotal(){ return stMins*60; }
+function stLabel(){ return stMins===2?"2-minute reading":stMins===6?"6-minute station":"8-minute station"; }
+async function stKeepAwake(){ try{ if("wakeLock" in navigator && !stWake){ stWake=await navigator.wakeLock.request("screen"); stWake.addEventListener("release",()=>{stWake=null;}); } }catch(e){} }
+function stRelease(){ try{ if(stWake){ stWake.release(); stWake=null; } }catch(e){} }
+function stUI(){
+  const el=document.getElementById("st"); if(!el) return;
+  const warn=!stDone&&stMins===8&&stLeft<=120&&stLeft<stTotal();
+  el.classList.toggle("warn",warn); el.classList.toggle("done",stDone);
+  document.getElementById("stT").textContent=fmt(stLeft);
+  document.getElementById("stL").textContent=stDone?"Time — stop":(stId?stLabel()+" · running":(stLeft<stTotal()?stLabel()+" · paused":stLabel()));
+  document.getElementById("stBar").style.width=(100*stLeft/stTotal())+"%";
+  document.getElementById("stMini").innerHTML=fmt(stLeft)+"<small>"+(stDone?"time":stMins+" min")+"</small>";
+  const go=document.getElementById("stGo"); go.textContent=stDone?"Again":stId?"Pause":(stLeft<stTotal()?"Resume":"Start");
+  go.className="btn"+(stId?" ghost":"");
+  document.querySelectorAll("#stP button").forEach(b=>b.classList.toggle("on",+b.dataset.m===stMins));
+  const tb=document.getElementById("stBtn"); if(tb) tb.classList.toggle("on",stOpen);
+}
+function stTick(){
+  if(!stId||stEnd===null) return;
+  stLeft=Math.max(0,Math.round((stEnd-Date.now())/1000));
+  if(stMins===8&&stLeft<=120&&!stWarned){ stWarned=true; beep(880,0.25,2); buzz([150,100,150]); }
+  if(stLeft<=0){ clearInterval(stId); stId=null; stEnd=null; stDone=true; beep(523,0.6,3); buzz([400,120,400,120,400]); stRelease(); }
+  stUI();
+}
+function stStart(){
+  if(stId) return;
+  if(stDone) stReset();
+  if(opts.bell){ try{ audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)(); if(audioCtx.state==="suspended") audioCtx.resume(); }catch(e){} }
+  stEnd=Date.now()+stLeft*1000; stId=setInterval(stTick,250); stKeepAwake(); stUI();
+}
+function stPause(){ if(stId){ stLeft=Math.max(0,Math.round((stEnd-Date.now())/1000)); } clearInterval(stId); stId=null; stEnd=null; stRelease(); stUI(); }
+function stReset(){ clearInterval(stId); stId=null; stEnd=null; stDone=false; stWarned=false; stLeft=stTotal(); stRelease(); stUI(); }
+function stPick(m){ stMins=m; stWarned=false; stReset(); }
+function stShow(open){ stOpen=open; const el=document.getElementById("st"); el.hidden=!open; if(open){ el.classList.remove("mini"); if(el._restore&&!el.style.left) el._restore(); } stUI(); }
+function stToggle(){ const el=document.getElementById("st"); if(stOpen&&el.classList.contains("mini")){ el.classList.remove("mini"); stUI(); return; } stShow(!stOpen); }
+(function(){
+  const el=document.getElementById("st");
+  document.getElementById("stGo").onclick=e=>{ e.stopPropagation(); stId?stPause():stStart(); };
+  document.getElementById("stReset").onclick=e=>{ e.stopPropagation(); stReset(); };
+  document.querySelectorAll("#stP button").forEach(b=>b.onclick=e=>{ e.stopPropagation(); stPick(+b.dataset.m); });
+  document.getElementById("stMinBtn").onclick=e=>{ e.stopPropagation(); el.classList.add("mini"); stUI(); };
+  document.getElementById("stClose").onclick=e=>{ e.stopPropagation(); stReset(); stShow(false); };
+  let moved=false;
+  el.onclick=()=>{ if(moved){ moved=false; return; } if(el.classList.contains("mini")){ el.classList.remove("mini"); stUI(); } };
+  /* drag by the header (or the minimised pill); position remembered per device */
+  const POSK="amc_st_pos";
+  const place=(x,y)=>{ const r=el.getBoundingClientRect(); x=Math.max(4,Math.min(window.innerWidth-r.width-4,x)); y=Math.max(4,Math.min(window.innerHeight-r.height-4,y)); el.style.left=x+"px"; el.style.top=y+"px"; el.style.right="auto"; el.style.bottom="auto"; return [x,y]; };
+  try{ const sp=JSON.parse(localStorage.getItem(POSK)||"null"); if(sp) el.dataset.pos=JSON.stringify(sp); }catch(e){}
+  el.addEventListener("pointerdown",e=>{
+    const onHandle=e.target.closest(".sth")&&!e.target.closest("button") || el.classList.contains("mini");
+    if(!onHandle) return;
+    const r=el.getBoundingClientRect(), dx=e.clientX-r.left, dy=e.clientY-r.top, sx=e.clientX, sy=e.clientY; let last=null;
+    const mv=ev=>{ if(!moved&&Math.hypot(ev.clientX-sx,ev.clientY-sy)<6) return; moved=true; el.classList.add("drag"); last=place(ev.clientX-dx,ev.clientY-dy); };
+    const up=()=>{ document.removeEventListener("pointermove",mv); document.removeEventListener("pointerup",up); document.removeEventListener("pointercancel",up); el.classList.remove("drag");
+      if(last){ const v={x:last[0]/window.innerWidth,y:last[1]/window.innerHeight}; el.dataset.pos=JSON.stringify(v); try{ localStorage.setItem(POSK,JSON.stringify(v)); }catch(err){} } setTimeout(()=>{ if(!el.classList.contains("mini")) moved=false; },0); };
+    document.addEventListener("pointermove",mv); document.addEventListener("pointerup",up); document.addEventListener("pointercancel",up);
+  });
+  el._restore=()=>{ try{ const sp=JSON.parse(el.dataset.pos||"null"); if(sp) place(sp.x*window.innerWidth,sp.y*window.innerHeight); }catch(e){} };
+  window.addEventListener("resize",()=>{ if(!el.hidden&&el.style.left){ const r=el.getBoundingClientRect(); place(r.left,r.top); } });
+  document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"){ if(stId) stKeepAwake(); stTick(); } });
+  stUI();
+})();
+
 /* ===================== Render ===================== */
 const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const VRE=/^(Version\s+([A-Z0-9]{1,3})(?:\s*\([^)]{1,40}\))?)\s*[—:–-]\s*([\s\S]*)$/;
@@ -1181,7 +1289,7 @@ function render(){
   let h=examHTML()+`<div class="goal${doneToday()>=dailyGoal()?" done":""}" id="goal">${goalHTML()}</div>`;
   const bc=baseCards();
   h+=`<div class="top"><div><h1>AMC OSCE station deck</h1><div class="sub">${bc.length} stations · ${bc.filter(isDue).length} due today · ${bc.filter(isHard).length} in the hard pile &middot; ${bc.filter(isOk).length} good or easy</div></div>
-    <button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div>`;
+    <div class="topbtns"><button class="iconbtn${stOpen?" on":""}" id="stBtn" aria-label="Station timers (2, 6, 8 minutes)" title="Station timers">⏱</button><button class="iconbtn" id="gear" aria-label="Settings and progress">⚙</button></div></div>`;
   const hTop=h; h="";
   h+=`<div class="filters">`+Object.entries(CATS).map(([k,v])=>`<button class="chip ${catSel.has(k)?"on":""}${k==="hy"?" hyc":""}" data-cat="${k}" style="--c:${v.color}"><span class="dot"></span>${v.name}<span class="n">${counts[k].all}</span></button>`).join("")+`</div>`;
   if(catSel.has("hy")){
@@ -1296,6 +1404,7 @@ function render(){
   on("skip",()=>{ if(idx<queue.length-1){ idx++; flipped=false; resetTimer(); render(); } });
   app.querySelectorAll(".rate button").forEach(b=>b.onclick=()=>rate(b.dataset.r));
   on("gear",openDrawer);
+  on("stBtn",stToggle);
   on("sExit",()=>{ exitSearch(); render(); });
   updateTimerUI();
   paintBacklog();
